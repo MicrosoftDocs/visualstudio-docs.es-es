@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ea066aa31cbc1f6408ee55c92a5ca761608f534
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667812"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Crear elementos y relaciones en modelos UML
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|
 
 ### <a name="invoke-the-create-method-on-the-owner"></a>Invocar el método Create en el propietario
- El nombre del método tiene el formato: `Create`*tipoposeído* `()`. Por ejemplo:
+ El nombre del método tiene el formato: `Create` *tipoposeído* `()` . Por ejemplo:
 
 ```
 IUseCase usecase1 = linkedPackage.CreateUseCase();
@@ -129,5 +129,5 @@ anElement.Delete();
 
 - También se eliminan todas las formas que lo representan en un diagrama.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [Mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md)

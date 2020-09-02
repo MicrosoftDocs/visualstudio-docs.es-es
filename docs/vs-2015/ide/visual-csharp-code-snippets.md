@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fb84854bd871277f680a753b28c17e3429283928
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646719"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C#
@@ -34,7 +34,7 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 ## <a name="default-code-snippets"></a>Fragmentos de código predeterminados
  Los siguientes fragmentos de código se incluyen en Visual Studio de manera predeterminada.
 
-|Nombre (o acceso directo)|Descripción|Ubicaciones válidas donde se puede insertar el fragmento|
+|Nombre (o acceso directo)|Description|Ubicaciones válidas donde se puede insertar el fragmento|
 |--------------------------|-----------------|---------------------------------------|
 |#if|Crea una directiva [#if](https://msdn.microsoft.com/library/48cabbff-ca82-491f-a56a-eeccd528c7c2) y una directiva [#endif](https://msdn.microsoft.com/library/6a5fca55-5aee-441f-86f6-1c99fbe9ec05).|En cualquier lugar.|
 |#region|Crea una directiva [#region](https://msdn.microsoft.com/library/672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4) y una directiva [#endregion](https://msdn.microsoft.com/library/16099660-91b2-49e5-9646-77f9ef069526).|En cualquier lugar.|
@@ -44,11 +44,11 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 |clase|Crea una declaración de clase.|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|
 |ctor|Crea un constructor para la clase contenedora.|Dentro de una clase.|
 |cw|Crea una llamada a <xref:System.Console.WriteLine%2A>.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
-|do|Crea un bucle [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
+|do|Crea un bucle [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` .|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |else|Crea un bloque [else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |enum|Crea una declaración [enum](https://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|
-|equals|Crea una declaración de método que invalida el método <xref:System.Object.Equals%2A> que se define en la clase <xref:System.Object>.|Dentro de una clase o un struct.|
-|exception|Crea una declaración de una clase que deriva de una excepción (<xref:System.Exception> de manera predeterminada).|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|
+|es igual a|Crea una declaración de método que invalida el método <xref:System.Object.Equals%2A> que se define en la clase <xref:System.Object>.|Dentro de una clase o un struct.|
+|excepción|Crea una declaración de una clase que deriva de una excepción (<xref:System.Exception> de manera predeterminada).|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|
 |for|Crea un bucle [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |foreach|Crea un bucle [foreach](https://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |forr|Crea un bucle [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8) que disminuye la variable de bucle después de cada iteración.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
@@ -60,7 +60,7 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 |iterindex|Crea un par de iterador e indexador "con nombre" mediante una clase anidada.|Dentro de una clase o un struct.|
 |bloquear|Crea un bloque [lock](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |mbox|Crea una llamada a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Puede que tenga que agregar una referencia a System.Windows.Forms.dll.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
-|namespace|Crea una declaración [namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).|Dentro de un espacio de nombres (incluido el espacio de nombres global).|
+|espacio de nombres|Crea una declaración [namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).|Dentro de un espacio de nombres (incluido el espacio de nombres global).|
 |prop|Crea una declaración de [propiedad autoimplementada](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).|Dentro de una clase o un struct.|
 |propfull|Crea una declaración de propiedad con descriptores de acceso get y set.|Dentro de una clase o un struct.|
 |propg|Crea una [propiedad autoimplementada](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) de solo lectura con un descriptor de acceso "set" privado.|Dentro de una clase o un struct.|
@@ -75,5 +75,5 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 |utilizar|Crea una directiva [using](https://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8).|Dentro de un espacio de nombres (incluido el espacio de nombres global).|
 |while|Crea un bucle [while](https://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 
-## <a name="see-also"></a>Vea también
- Los [fragmentos de código](../ide/code-snippets.md) de [las funciones de fragmento de código](../ide/code-snippet-functions.md) [How para: Cree un nuevo fragmento de código con reemplazos ](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338) [parámetros de plantilla](../ide/template-parameters.md) [How para: Use fragmentos de código envolventes ](../ide/how-to-use-surround-with-code-snippets.md) [How para: Restaurar fragmentos de código de refactorización de C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
+## <a name="see-also"></a>Consulte también
+ [Code Snippet Functions](../ide/code-snippet-functions.md) [Fragmentos de código](../ide/code-snippets.md) de funciones de fragmento de código [Cómo: crear un nuevo fragmento de código con parámetros de plantilla de reemplazo](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338) [Template Parameters](../ide/template-parameters.md) [Cómo: usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md) [Cómo: restaurar fragmentos de código de refactorización de C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

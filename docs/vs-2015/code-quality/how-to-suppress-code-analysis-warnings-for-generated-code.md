@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 52caadd7f4dd9349eccb80a366a1458212aba5ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646274"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Cómo: Suprimir advertencias de análisis de código en código generado
@@ -32,6 +32,6 @@ Los compiladores de código administrado suelen generar código que se agrega a 
 
 1. Haga clic con el botón secundario en el proyecto en Explorador de soluciones y, a continuación, haga clic en **propiedades**.
 
-2. Haga clic en **análisis de código**.
+2. Haga clic en **Análisis de código**.
 
 3. Active la casilla **suprimir resultados de código generado** .

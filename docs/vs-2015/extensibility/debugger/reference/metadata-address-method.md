@@ -13,13 +13,13 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 08a70bc02268e5814982f76cd91dc5d2e2e1cac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547096"
 ---
-# <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
+# <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Esta estructura representa la dirección de un método de una clase.  
@@ -44,27 +44,27 @@ public struct METADATA_ADDRESS_METHOD {
   
 ## <a name="terms"></a>Términos  
  tokMethod  
- El identificador del método.  
+ IDENTIFICADOR del método.  
   
- [C++] `_mdToken` es un `typedef` para 32 bits `int`.  
+ [C++] `_mdToken` es un `typedef` para un 32 bits `int` .  
   
  dwOffset  
- El desplazamiento desde el principio de la clase a este método (puede representar el desplazamiento en la tabla vtable).  
+ El desplazamiento de la clase comienza a este método (puede representar el desplazamiento en vtable).  
   
  dwVersion  
- La versión del método (este valor es único para el proveedor de símbolos).  
+ Versión del método (este valor es único para el proveedor de símbolos).  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_METHOD` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).  
+ Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_METHOD` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

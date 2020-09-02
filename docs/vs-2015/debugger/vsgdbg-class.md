@@ -1,5 +1,5 @@
 ---
-title: VsgDbg (clase) | Documentos de Microsoft
+title: VsgDbg (clase) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 053647d48324f056148375bae9268b997ba8721f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145691"
 ---
-# <a name="vsgdbg-class"></a>VsgDbg (Clase)
+# <a name="vsgdbg-class"></a>VsgDbg (clase)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Representa una interfaz para el control mediante programación del componente de aplicación de diagnóstico de gráficos.  
@@ -32,14 +32,14 @@ class VsgDbg;
   
 ### <a name="public-constructors"></a>Constructores públicos  
   
-|NOMBRE|DESCRIPCIÓN|  
+|NOMBRE|Descripción|  
 |----------|-----------------|  
 |[VsgDbg::VsgDbg (Constructor)](../debugger/vsgdbg-vsgdbg-constructor.md)|Construye una instancia de la clase `VsgDbg` y prepara opcionalmente el componente de aplicación de diagnóstico de gráficos para capturar y grabar activamente información de gráficos.|  
 |[VsgDbg::~VsgDbg (Destructor)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)|Destruye una instancia de la clase `VsgDbg`.|  
   
 ### <a name="public-methods"></a>Métodos públicos  
   
-|NOMBRE|DESCRIPCIÓN|  
+|NOMBRE|Descripción|  
 |----------|-----------------|  
 |[AddMessage](../debugger/addmessage.md)|Agrega un mensaje personalizado al HUD (pantalla de visualización frontal) de diagnóstico de gráficos.|  
 |[BeginCapture](../debugger/begincapture.md)|Inicia un intervalo de captura que finalizará con `EndCapture`.|  

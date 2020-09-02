@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d7bb7e0f3dfee3dd1bf3e9b42afd5837a29f6ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646808"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
@@ -53,7 +53,7 @@ Si se usan parámetros en las plantillas, se pueden reemplazar los valores de la
 > [!NOTE]
 > Los parámetros de plantilla distinguen entre mayúsculas y minúsculas.
 
-|Parámetro|DESCRIPCIÓN|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`clrversion`|Versión actual del Common Language Runtime (CLR).|
 |`GUID [1-10]`|GUID utilizado para reemplazar el GUID del proyecto en un archivo de proyecto. Puede especificar hasta 10 GUID únicos (por ejemplo, `guid1)`.|
@@ -123,5 +123,5 @@ namespace $safeprojectname$
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
+## <a name="see-also"></a>Consulte también
+ [Personalización de plantillas](../ide/customizing-project-and-item-templates.md)

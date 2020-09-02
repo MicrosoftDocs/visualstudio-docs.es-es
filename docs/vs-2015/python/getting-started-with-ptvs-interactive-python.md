@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 4fba8bf658a50a7a7e28abace1eb622ab14f5f26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550992"
 ---
 # <a name="getting-started-with-ptvs-interactive-python"></a>Introducción a PTVS: Python interactivo
@@ -23,7 +23,7 @@ Las solicitudes interactivas o los bucles de leer-evaluar-imprimir (REPL) son un
   
  Puede ver estas instrucciones en un breve [vídeo de YouTube](https://www.youtube.com/watch?v=yc2CROtTsC0&index=5&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff).  
   
- En la ventana Entornos de Python, verá una lista de todos los entornos de Python.  Puede seleccionar cualquiera de ellos para abrir una ventana interactiva o REPL.  Si alguna vez ejecutó Python.exe en un símbolo del sistema, ya estará familiarizado con un REPL de Python.  El REPL le pedirá confirmación, y puede escribir código, presione ENTRAR y ver inmediatamente los resultados del código.  Se trata de un contexto de ejecución activo que incluye todos los estados de las ejecuciones, las asignaciones de variables, etc.  Puede hacer referencia a las variables que contienen resultados en envíos posteriores a la confirmación de REPL.  Puede escribir varias líneas de código y ejecutarlas a la vez (por ejemplo, una declaración de método o varias instrucciones).  
+ En la ventana Entornos de Python, verá una lista de todos los entornos de Python.  Puede seleccionar cualquiera de ellos para abrir una ventana interactiva o REPL.  Si alguna vez ejecutó Python.exe en un símbolo del sistema, ya estará familiarizado con un REPL de Python.  El REPL le pedirá confirmación, y puede escribir código, presione ENTRAR y ver inmediatamente los resultados del código.  Se trata de un contexto de ejecución en directo que incluye todo el estado de todas las ejecuciones, asignaciones de variables, etc.  Puede hacer referencia a las variables que contienen los resultados en envíos posteriores a la solicitud de REPL.  Puede escribir varias líneas de código y ejecutarlas a la vez (por ejemplo, una declaración de método o varias instrucciones).  
   
  Cuando empiece a usar una biblioteca nueva, REPL es una manera excelente de probarla.  Puede importar la biblioteca, inspeccionar los subpaquetes, clases y funciones.  Python puede indicarle toda de esta información a través de la función `help()`.  Además, Python Tools para Visual Studio (PTVS) proporciona sugerencias y documentación en función del modelo de código que se usa en el editor, lo que hace sin necesidad de ejecutar la biblioteca.  Cuando ejecute el código, PTVS usará información del tiempo de ejecución de Python para mejorar las sugerencias de PTVS.  
   
@@ -33,6 +33,6 @@ Las solicitudes interactivas o los bucles de leer-evaluar-imprimir (REPL) son un
   
  Puede ver estas instrucciones en un breve [vídeo de YouTube](https://www.youtube.com/watch?v=yc2CROtTsC0&index=5&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff).  
   
-## <a name="see-also"></a>Vea también  
- [Documentación de la wiki](https://github.com/Microsoft/PTVS/wiki/Interactive-REPL)   
+## <a name="see-also"></a>Consulte también  
+ [Documentación de wiki](https://github.com/Microsoft/PTVS/wiki/Interactive-REPL)   
  [Introducción y vídeos Deep Dive de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

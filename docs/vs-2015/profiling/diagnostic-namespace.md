@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157580"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic (Espacio de nombres)
@@ -35,21 +35,21 @@ namespace diagnostic;
   
 ### <a name="classes"></a>Clases  
   
-|nombre|DESCRIPCIÓN|  
+|NOMBRE|Descripción|  
 |----------|-----------------|  
 |[Clase marker_series](../profiling/marker-series-class.md)|Representa un canal de la serie de eventos generados por un único proveedor.|  
 |[Clase span](../profiling/span-class.md)|Define una fase de la aplicación.|  
   
 ### <a name="enumerations"></a>Enumeraciones  
   
-|nombre|DESCRIPCIÓN|  
+|NOMBRE|Descripción|  
 |----------|-----------------|  
 |[Enumeración marker_importance](../profiling/marker-importance-enumeration.md)|Representa el nivel de importancia de un marcador del visualizador de simultaneidad.|  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres:** Concurrency  
+ **Espacio de nombres**: simultaneidad  
   
-## <a name="see-also"></a>Otras referencias  
- [Espacio de nombres de simultaneidad (visualizador de simultaneidad)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+## <a name="see-also"></a>Consulte también  
+ [Espacio de nombres de simultaneidad (Visualizador de simultaneidad)](../profiling/concurrency-namespace-concurrency-visualizer.md)

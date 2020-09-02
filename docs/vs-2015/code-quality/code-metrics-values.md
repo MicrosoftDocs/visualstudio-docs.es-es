@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23dba7b7c29c05b55af2c461f36bdaa4b46b948f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667722"
 ---
 # <a name="code-metrics-values"></a>Valores de métrica de código
@@ -37,7 +37,7 @@ Las métricas de código son un conjunto de medidas de software que proporcionan
 
 - **Profundidad de herencia** : indica el número de definiciones de clase que se extienden a la raíz de la jerarquía de clases. Cuanto más difícil sea la jerarquía, más difícil será entender dónde se definen y/y se redefinen determinados métodos y campos.
 
-- **Acoplamiento de clases** : mide el acoplamiento a clases únicas a través de parámetros, variables locales, tipos de valor devueltos, llamadas a métodos, instancias genéricas o de plantilla, clases base, implementaciones de interfaz, campos definidos en tipos externos y atributo Decora. Un buen diseño de software dicta que los tipos y métodos deben tener una cohesión alta y un acoplamiento bajo. Un acoplamiento alto indica un diseño que es difícil de reutilizar y mantener debido a sus muchas interdependencias en otros tipos.
+- **Acoplamiento de clases** : mide el acoplamiento a clases únicas a través de parámetros, variables locales, tipos de valor devueltos, llamadas a métodos, instancias genéricas o de plantilla, clases base, implementaciones de interfaz, campos definidos en tipos externos y decoración de atributos. Un buen diseño de software dicta que los tipos y métodos deben tener una cohesión alta y un acoplamiento bajo. Un acoplamiento alto indica un diseño que es difícil de reutilizar y mantener debido a sus muchas interdependencias en otros tipos.
 
 - **Líneas de código** : indica el número aproximado de líneas en el código. El recuento se basa en el código IL y, por tanto, no es el número exacto de líneas en el archivo de código fuente. Un recuento muy alto puede indicar que un tipo o un método está intentando realizar demasiado trabajo y debe dividirse. También puede indicar que el tipo o el método pueden ser difíciles de mantener.
 
@@ -51,5 +51,5 @@ Las métricas de código son un conjunto de medidas de software que proporcionan
 
  El código generado para Windows Forms no se pasa por alto porque es código que el desarrollador puede ver y cambiar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

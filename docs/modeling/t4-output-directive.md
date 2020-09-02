@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591819"
 ---
 # <a name="t4-output-directive"></a>Directiva de salida T4
 
-En las plantillas de texto de Visual Studio, la Directiva `output` se usa para definir la extensión de nombre de archivo y la codificación del archivo transformado.
+En las plantillas de texto de Visual Studio, la `output` Directiva se usa para definir la extensión de nombre de archivo y la codificación del archivo transformado.
 
  Por ejemplo, si el proyecto de Visual Studio incluye un archivo de plantilla denominado **MyTemplate.TT** que contiene la siguiente directiva:
 
@@ -68,6 +68,6 @@ En las plantillas de texto de Visual Studio, la Directiva `output` se usa para d
 
  `utf-32`
 
- `0` (valor predeterminado del sistema)
+ `0` (Valor predeterminado del sistema)
 
  Por lo general, se puede usar la cadena WebName o el número de CodePage de cualquiera de las codificaciones devueltas por <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

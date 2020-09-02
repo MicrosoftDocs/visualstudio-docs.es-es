@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Comparar archivos de datos de rendimiento | Microsoft Docs
+title: 'Cómo: Comparar archivos de datos de rendimiento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185938"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Procedimiento Comparación de archivos de datos de rendimiento
+# <a name="how-to-compare-performance-data-files"></a>Cómo: Comparar archivos de datos de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede crear un informe o una vista de comparación ("Diff") para comparar los resultados de dos archivos de datos de generador de perfiles diferentes (.vsp o .vsps). La comparación muestra las diferencias, reducciones de rendimiento y mejoras producidas de una sesión de generación de perfiles a la otra.  
@@ -34,7 +34,7 @@ Puede crear un informe o una vista de comparación ("Diff") para comparar los re
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Para crear una vista de archivos de comparación para un proyecto en el Explorador de rendimiento  
   
-1. En **Explorador de rendimiento**, en **Informes**, seleccione el archivo de informe .vsp o .vsps que desea utilizar como valores de línea base para la comparación.  
+1. En **Explorador de rendimiento**, en **informes**, seleccione el archivo de informe. VSP o. VSPs que desea usar como valores de línea de base para la comparación.  
   
 2. Seleccione los archivos de informe .vsp o .vsps que desea comparar.  
   
@@ -56,6 +56,6 @@ Puede crear un informe o una vista de comparación ("Diff") para comparar los re
   
 1. En el menú **Analizar**, seleccione **Comparar informes de rendimiento**.  
   
-2. En la ventana **Seleccionar archivos de análisis para compararlos**, busque y seleccione el archivo de análisis **Archivo de línea base** (.vsp o .vsps) y el **Archivo de comparación** (.vsp o .vsps).  
+2. En la ventana **seleccionar archivos de análisis para compararlos** , busque y seleccione el archivo de análisis de **archivos de línea de base** (. VSP o. VSPs) y el archivo de **comparación** (. VSP o. VSPs).  
   
-3. Haga clic en **OK**.
+3. Haga clic en **Aceptar**.

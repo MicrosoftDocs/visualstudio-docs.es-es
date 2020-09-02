@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591897"
 ---
 # <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
 
-En una plantilla de texto en tiempo de diseño de Visual Studio, la Directiva `assembly` carga un ensamblado para que el código de plantilla pueda usar sus tipos. El efecto es similar a agregar una referencia de ensamblado en un proyecto de Visual Studio.
+En una plantilla de texto en tiempo de diseño de Visual Studio, la `assembly` Directiva carga un ensamblado para que el código de plantilla pueda usar sus tipos. El efecto es similar a agregar una referencia de ensamblado en un proyecto de Visual Studio.
 
  Para obtener información general sobre cómo escribir plantillas de texto, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
@@ -36,7 +36,7 @@ En una plantilla de texto en tiempo de diseño de Visual Studio, la Directiva `a
 
 - La ruta de acceso absoluta del ensamblado
 
-  Puede usar la sintaxis de `$(variableName)` para hacer referencia a variables de Visual Studio como `$(SolutionDir)`y `%VariableName%` para hacer referencia a variables de entorno. Por ejemplo:
+  Puede usar la `$(variableName)` sintaxis para hacer referencia a variables de Visual Studio como `$(SolutionDir)` y `%VariableName%` para hacer referencia a variables de entorno. Por ejemplo:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -63,7 +63,7 @@ En una plantilla de texto en tiempo de diseño de Visual Studio, la Directiva `a
 
 - El ensamblado contiene el ADSL.
 
-## <a name="msbuild"></a>Usar las propiedades del proyecto en MSBuild y Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Usar las propiedades del proyecto en MSBuild y Visual Studio
  Las macros de Visual Studio como $ (SolutionDir) no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.
 
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myLibFolder`:
@@ -88,6 +88,6 @@ En una plantilla de texto en tiempo de diseño de Visual Studio, la Directiva `a
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Directiva Include T4](../modeling/t4-include-directive.md)

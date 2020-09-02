@@ -1,5 +1,5 @@
 ---
-title: Extraer la refactorización deC#la interfaz () | Microsoft Docs
+title: Extraer interfaz (refactorización, C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667560"
 ---
 # <a name="extract-interface-refactoring-c"></a>Extraer interfaz (Refactorización, C#)
@@ -45,7 +45,7 @@ Extract interface es una operación de refactorización que proporciona una mane
     }
     ```
 
-2. Con el cursor situado en `MethodB` y haga clic en **Extraer interfaz** en el menú **refactorizar** .
+2. Con el cursor colocado en `MethodB` , haga clic en **Extraer interfaz** en el menú **refactorizar** .
 
      Aparece el cuadro de diálogo **Extraer interfaz** .
 
@@ -70,10 +70,10 @@ Extract interface es una operación de refactorización que proporciona una mane
     }
     ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Esta característica solo es accesible cuando el cursor se coloca en la clase, estructura o interfaz que contiene los miembros que desea extraer. Cuando el cursor esté en esta posición, invoque la operación de refactorización extraer interfaz.
 
  Al invocar la interfaz de extracción en una clase o en una estructura, la lista de bases e interfaces se modifica para incluir el nuevo nombre de interfaz. Al invocar la interfaz de extracción en una interfaz, la lista de bases e interfaces no se modifica.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Refactorización (C#)](../csharp-ide/refactoring-csharp.md)

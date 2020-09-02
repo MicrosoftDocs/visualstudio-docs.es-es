@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0415222645dce2f65e91b5b1c55a5a118cc26697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667498"
 ---
 # <a name="refactoring-c"></a>Refactorización (C#)
@@ -45,7 +45,7 @@ La refactorización es el proceso de mejorar el código una vez que se ha escrit
 - [Reordenar refactorización de parámetros (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)
 
 ## <a name="multi-project-refactoring"></a>Refactorización de varios proyectos
- Visual Studio admite la refactorización de varios proyectos para los proyectos que se encuentran en la misma solución. Todas las operaciones de refactorización que corrigen referencias en archivos corrigen esas referencias en todos los proyectos del mismo idioma. Esto funciona con cualquier referencia de proyecto a proyecto. Por ejemplo, si tiene una aplicación de consola que hace referencia a una biblioteca de clases, al cambiar el nombre de un tipo de biblioteca de clases (mediante la operación de refactorización `Rename`), también se actualizan las referencias al tipo de biblioteca de clases en la aplicación de consola.
+ Visual Studio admite la refactorización de varios proyectos para los proyectos que se encuentran en la misma solución. Todas las operaciones de refactorización que corrigen referencias en archivos corrigen esas referencias en todos los proyectos del mismo idioma. Esto funciona con cualquier referencia de proyecto a proyecto. Por ejemplo, si tiene una aplicación de consola que hace referencia a una biblioteca de clases, al cambiar el nombre de un tipo de biblioteca de clases (mediante la `Rename` operación de refactorización), también se actualizan las referencias al tipo de biblioteca de clases en la aplicación de consola.
 
 ## <a name="changes-preview"></a>Vista previa de cambios
  Muchas operaciones de refactorización proporcionan una oportunidad para revisar todos los cambios de referencia que llevaría a cabo una operación de refactorización en el código antes de confirmar dichos cambios. Para estas operaciones de refactorización, aparecerá una opción **vista previa de los cambios de referencia** en el cuadro de diálogo refactorización. Después de seleccionar esa opción y aceptar la operación de refactorización, aparecerá el **cuadro de diálogo vista previa de los cambios** . Tenga en cuenta que el cuadro de diálogo **vista previa de los cambios** tiene dos vistas. La vista inferior mostrará el código con todas las actualizaciones de referencia debido a la operación de refactorización. Si presiona **Cancelar** en el cuadro de diálogo **vista previa de los cambios** , se detendrá la operación de refactorización y no se realizarán cambios en el código.
@@ -58,7 +58,7 @@ La refactorización es el proceso de mejorar el código una vez que se ha escrit
 
  De forma predeterminada, si ejecuta una operación de refactorización sin obtener una vista previa de los cambios de referencia y se detecta un error de compilación en el programa, el entorno de desarrollo muestra este cuadro de diálogo de advertencia.
 
- Si ejecuta una operación de refactorización que tiene habilitados **los cambios de referencia de vista previa** y se detecta un error de compilación en el programa, el entorno de desarrollo mostrará el siguiente mensaje de advertencia en la parte inferior de la **vista previa de los cambios.** , en lugar de mostrar el cuadro de diálogo **Advertencia de refactorización** :
+ Si ejecuta una operación de refactorización que tiene habilitados **los cambios de referencia de vista previa** y se detecta un error de compilación en el programa, el entorno de desarrollo mostrará el siguiente mensaje de advertencia en la parte inferior del cuadro de diálogo **vista previa de los cambios** , en lugar de mostrar el cuadro de diálogo **Advertencia de refactorización** :
 
  **El proyecto o una de sus dependencias no se compilan actualmente. Es posible que las referencias no se actualicen.**
 
@@ -67,9 +67,9 @@ La refactorización es el proceso de mejorar el código una vez que se ha escrit
 ## <a name="error-tolerant-refactoring-and-verification-results"></a>Resultados de la refactorización y comprobación tolerantes a errores
  La refactorización es tolerante a errores. En otras palabras, puede realizar una refactorización en un proyecto que no se puede compilar. Sin embargo, en estos casos, es posible que el proceso de refactorización no actualice las referencias ambiguas correctamente.
 
- El cuadro de diálogo resultados de la **comprobación** puede notificarle si el motor de refactorización detecta errores de compilación o detecta que una operación de refactorización provoca involuntariamente que una referencia de código se enlace con algo diferente de la que estaba enlazada originalmente ( problema de reenlace).
+ El cuadro de diálogo resultados de la **comprobación** puede notificarle si el motor de refactorización detecta errores de compilación o detecta que una operación de refactorización provoca involuntariamente que una referencia de código se enlace con algo diferente de la que estaba enlazada originalmente (problema de reenlace).
 
- Para activar la característica resultados de la comprobación, en el menú **herramientas** , haga clic en **Opciones**. En el cuadro de diálogo **Opciones** , expanda **Editor de texto**y **C#** , a continuación, expanda. Haga clic en **avanzadas** y active la casilla **comprobar resultados de refactorización** .
+ Para activar la característica resultados de la comprobación, en el menú **herramientas** , haga clic en **Opciones**. En el cuadro de diálogo **Opciones** , expanda **Editor de texto**y, a continuación, expanda **C#**. Haga clic en **avanzadas** y active la casilla **comprobar resultados de refactorización** .
 
  El cuadro de diálogo resultados de la **comprobación** distingue la diferencia entre dos tipos de problemas de reenlace.
 
@@ -87,7 +87,7 @@ class Example
 }
 ```
 
- Si utiliza la refactorización para cambiar el nombre `a` a `b`, aparece este cuadro de diálogo. La referencia a la variable a la que se ha cambiado el nombre `a` ahora se enlaza al parámetro que se pasa al constructor en lugar de enlazarse al campo.
+ Si usa la refactorización para cambiar el nombre `a` a `b` , aparece este cuadro de diálogo. La referencia a la variable con el nombre cambiado `a` ahora se enlaza al parámetro que se pasa al constructor en lugar de enlazarse al campo.
 
 ### <a name="references-whose-definition-will-now-become-the-renamed-symbol"></a>Referencias cuya definición se convertirá ahora en el símbolo cuyo nombre ha cambiado
  Este tipo de problema de reenlace se produce cuando una referencia que anteriormente no hacía referencia al símbolo cuyo nombre ha cambiado ahora hace referencia al símbolo cuyo nombre ha cambiado. Por ejemplo, considere el siguiente código:
@@ -104,7 +104,7 @@ class Example
 }
 ```
 
- Si utiliza la refactorización para cambiar el nombre `OtherMethod` a `Method`, aparece este cuadro de diálogo. La referencia en `Main` ahora hace referencia al método sobrecargado que acepta un parámetro `int` en lugar del método sobrecargado que acepta un parámetro `object`.
+ Si usa la refactorización para cambiar el nombre `OtherMethod` a `Method` , aparece este cuadro de diálogo. La referencia en `Main` ahora hace referencia al método sobrecargado que acepta un `int` parámetro en lugar del método sobrecargado que acepta un `object` parámetro.
 
-## <a name="see-also"></a>Vea también
- [Usar el entorno de desarrollo de Visual C# Studio para](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) [restaurar C# fragmentos de código de refactorización](../ide/how-to-restore-csharp-refactoring-snippets.md)
+## <a name="see-also"></a>Consulte también
+ [Usar el entorno de desarrollo de Visual Studio para c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) [Cómo: restaurar fragmentos de código de refactorización de c#](../ide/how-to-restore-csharp-refactoring-snippets.md)

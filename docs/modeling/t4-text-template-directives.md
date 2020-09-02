@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591832"
 ---
 # <a name="t4-text-template-directives"></a>Directivas de plantilla de texto T4
@@ -71,7 +71,7 @@ Normalmente, las directivas son los primeros elementos en un archivo de plantill
 <#@ include file="filePath" #>
 ```
 
-[Directiva T4 CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)
+[T4 CleanUpBehavior (Directiva)](../modeling/t4-cleanupbehavior-directive.md)
 
 ```
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>

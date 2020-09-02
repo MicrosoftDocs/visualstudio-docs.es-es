@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f34422dfd47efdce9bf837f923da0e139a13398
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667922"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generación de código y plantillas de texto T4
@@ -102,7 +102,7 @@ namespace Fabrikam.FirstJob
 
  [Generación de código en tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) La generación de código y otros recursos a partir de un modelo permite actualizar la aplicación actualizando el modelo.
 
- [Generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md) Si ha instalado [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de visualización y modelado, puede asegurarse de que el software generado se mantiene actualizado con los cambios en el modelo.
+ [Generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md) Si ha instalado [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el SDK de visualización y modelado, puede asegurarse de que el software generado se mantiene actualizado con los cambios en el modelo.
 
  [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md) La sintaxis de un archivo de plantilla de texto.
 
@@ -114,5 +114,5 @@ namespace Fabrikam.FirstJob
 
  [Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md) Cómo escribir procesadores de directivas y hosts de plantillas personalizadas para sus propios orígenes de datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md) [generación de código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)

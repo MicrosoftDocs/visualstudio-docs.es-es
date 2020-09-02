@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ded136da4d601fd7c11a10c21aac0c90864bc0bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158130"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica el tipo de memoria para tener acceso.  
+Especifica el tipo de memoria a la que se va a obtener acceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,23 +38,23 @@ enum MemoryTypeEnum {
   
 #### <a name="parameters"></a>Parámetros  
  `MemTypeCode`  
- Accesos a memoria sólo el código.  
+ Solo tiene acceso a la memoria de código.  
   
  `MemTypeData`  
- Memoria de pila o datos de accesos.  
+ Obtiene acceso a datos o a la memoria de la pila.  
   
  `MemTypeStack`  
- Tiene acceso a la pila sólo memoria.  
+ Solo tiene acceso a la memoria de la pila.  
   
  `MemTypeAny`  
- Tiene acceso a cualquier tipo de memoria.  
+ Obtiene acceso a cualquier tipo de memoria.  
   
 ## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración se pasan a la [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) método para limitar el acceso a diferentes tipos de memoria.  
+ Los valores de esta enumeración se pasan al método [IDiaStackWalkHelper:: ReadMemory (](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) para limitar el acceso a diferentes tipos de memoria.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: cvconst.h  
+ Encabezado: cvconst. h  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

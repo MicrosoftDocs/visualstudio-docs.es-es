@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::ParseText | Microsoft Docs
+title: IDebugExpressionContext2::P arseText | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fbd9252663f766035f628946e6aa93b1c00322a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158392"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Analiza una expresión en forma de texto para evaluarlos posteriormente.  
+Analiza una expresión en formato de texto para su posterior evaluación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,33 +50,33 @@ int ParseText( 
   
 #### <a name="parameters"></a>Parámetros  
  `pszCode`  
- [in] La expresión que se puede analizar.  
+ de Expresión que se va a analizar.  
   
  `dwFlags`  
- [in] Una combinación de marcas de la [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) enumeración que controla el análisis.  
+ de Combinación de marcas de la enumeración [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) que controla el análisis.  
   
  `nRadix`  
- [in] La base que se usará al analizar cualquier información numérica en `pszCode`.  
+ de La base que se va a utilizar para analizar cualquier información numérica en `pszCode` .  
   
  `ppExpr`  
- [out] Devuelve el [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objeto que representa la expresión analizada, que está lista para enlace y evaluación.  
+ enuncia Devuelve el objeto [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) que representa la expresión analizada, que está lista para el enlace y la evaluación.  
   
  `pbstrError`  
- [out] Devuelve el mensaje de error si la expresión contiene un error.  
+ enuncia Devuelve el mensaje de error si la expresión contiene un error.  
   
  `pichError`  
- [out] Devuelve el índice de carácter del error en `pszCode` si la expresión contiene un error.  
+ enuncia Devuelve el índice de carácter del error en `pszCode` si la expresión contiene un error.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando se llama a este método, un motor de depuración (DE) debe analizar la expresión y validarlo son correctos. El `pbstrError` y `pichError` parámetros no se pueden rellenar si la expresión no es válida.  
+ Cuando se llama a este método, un motor DE depuración (DE) debe analizar la expresión y validar su exactitud. Los `pbstrError` `pichError` parámetros y se pueden rellenar si la expresión no es válida.  
   
- Tenga en cuenta que no se evalúa la expresión, solo puede analizar. Una llamada posterior a la [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) métodos evalúa la expresión analizada.  
+ Tenga en cuenta que la expresión no se evalúa, solo se analiza. Una llamada posterior a los métodos [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) evalúa la expresión analizada.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para una sencilla `CEnvBlock` objeto que expone el [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaz. En este ejemplo se considera que la expresión que se puede analizar como el nombre de una variable de entorno y se recupera el valor de esa variable.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un `CEnvBlock` objeto simple que expone la interfaz [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) . En este ejemplo se considera que la expresión se va a analizar como el nombre de una variable de entorno y se recupera el valor de esa variable.  
   
 ```cpp#  
 HRESULT CEnvBlock::ParseText(  
@@ -124,7 +124,7 @@ HRESULT CEnvBlock::ParseText(
 }    
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591689"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Procesar plantillas de texto mediante un host personalizado
@@ -44,14 +44,14 @@ string output = engine.ProcessTemplate(templateString, host);
 
  La aplicación debe encontrar y proporcionar la plantilla y debe trabajar con el resultado.
 
- En el parámetro `host`, debe proporcionar una clase que implemente [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). El motor lo vuelve a llamar.
+ En el `host` parámetro, debe proporcionar una clase que implemente [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). El motor lo vuelve a llamar.
 
  El host debe poder registrar errores, resolver referencias a archivos de ensamblado e inclusión, proporciona un dominio de aplicación en el que se pueda ejecutar la plantilla, y llamar el procesador adecuado para cada directiva.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> se define en **Microsoft. VisualStudio. TextTemplating.\*,0. dll**y [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) se define en **Microsoft. VisualStudio. TextTemplating. interfaces.\*. 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> se define en **Microsoft. VisualStudio. TextTemplating. \*.0.dll**y [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) se define en **Microsoft. visualstudio. TextTemplating. interfaces. \*.0.dll**.
 
 ## <a name="in-this-section"></a>En esta sección
- [Tutorial: Creación de un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md) muestra cómo crear un host de plantilla de texto personalizado que hace que la funcionalidad de la plantilla de texto esté disponible fuera de Visual Studio.
+ [Tutorial: crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md) Muestra cómo crear un host de plantilla de texto personalizado que hace que la funcionalidad de la plantilla de texto esté disponible fuera de Visual Studio.
 
 ## <a name="reference"></a>Referencia
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

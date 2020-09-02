@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4042cf58ee34b5f49df601b94e1110f03e0b6f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197558"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Realiza el desenredo de pila y devuelve los resultados en una interfaz de marco de recorrido de pila.  
+Realiza el desenredo de la pila y devuelve los resultados en una interfaz de marco de recorrido de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,21 +35,21 @@ HRESULT execute ( 
   
 #### <a name="parameters"></a>Parámetros  
  `frame`  
- [in] Un [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) objeto que contiene el estado de los registros de marco.  
+ de Un objeto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) que contiene el estado de los registros de fotogramas.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. En la tabla siguiente se muestra los posibles valores devueltos para este método.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. En la tabla siguiente se muestran los posibles valores devueltos para este método.  
   
-|Valor|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|E_DIA_INPROLOG|No se puede ejecutar un marco de pila en el código de prólogo.|  
-|E_DIA_SYNTAX|Analizar el error en el programa de marco.|  
-|E_DIA_FRAME_ACCESS|No se puede a los registros de acceso o la memoria.|  
-|E_DIA_VALUE|Error en el cálculo de un valor (por ejemplo, la división por cero).|  
+|E_DIA_INPROLOG|No se puede ejecutar un marco de pila en código de prólogo.|  
+|E_DIA_SYNTAX|Error de análisis detectado en el programa de marco.|  
+|E_DIA_FRAME_ACCESS|No se puede obtener acceso a los registros o a la memoria.|  
+|E_DIA_VALUE|Error en el cálculo de un valor (por ejemplo, división por cero).|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se llama durante la depuración para desenredar la pila. El [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) objeto es implementado por la aplicación de cliente para recibir actualizaciones de los registros y para proporcionar los métodos usados por la `execute` método.  
+ Se llama a este método durante la depuración para desenredar la pila. El objeto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) se implementa mediante la aplicación cliente para recibir actualizaciones de los registros y para proporcionar métodos utilizados por el `execute` método.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

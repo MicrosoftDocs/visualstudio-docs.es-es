@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 810ebfcfb4cb4354c3df4c0d9892a37ca1624256
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301468"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315166"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -60,7 +60,7 @@ Para mejorar el rendimiento de su servicio en la nube, puede cambiar el número 
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
+1. En **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -90,11 +90,11 @@ Si usa un valor diferente para cada configuración de servicio, no tendrá que u
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
+1. En **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Seleccione la pestaña **Configuración.**
+1. Seleccione la pestaña **Configuración**.
 
     ![Pestaña Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -118,7 +118,7 @@ Si usa un valor diferente para cada configuración de servicio, no tendrá que u
 
     - **Emulador de Microsoft Azure Storage**: si selecciona esta opción, las demás opciones del cuadro de diálogo están deshabilitadas cuando afectan solo a Azure. Seleccione **Aceptar**.
     - **Su suscripción**: si selecciona esta opción, utilice la lista desplegable para seleccionar e iniciar sesión en una cuenta de Microsoft, o bien agregue una cuenta de Microsoft. Seleccione una suscripción de Azure y una cuenta de almacenamiento. Seleccione **Aceptar**.
-    - **Credenciales especificadas manualmente**: escriba el nombre de la cuenta de almacenamiento y la clave principal o secundaria. Seleccione una opción para **Conexión** (se recomienda HTTPS para la mayoría de los escenarios.) Seleccione **Aceptar**.
+    - **Credenciales especificadas manualmente**: escriba el nombre de la cuenta de almacenamiento y la clave principal o secundaria. Seleccione una opción para la **conexión** (se recomienda HTTPS en la mayoría de los escenarios). Seleccione **Aceptar**.
 
 1. Para eliminar una cadena de conexión, selecciónela y seleccione **Quitar configuración**.
 
@@ -152,11 +152,11 @@ Al usar un valor diferente para cada configuración de servicio, no tendrá que 
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
+1. En **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Seleccione la pestaña **Configuración.**
+1. Seleccione la pestaña **Configuración**.
 
     ![Pestaña Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -203,7 +203,7 @@ Puede agregar almacenamiento del sistema de archivos local para cada instancia d
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
+1. En **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 

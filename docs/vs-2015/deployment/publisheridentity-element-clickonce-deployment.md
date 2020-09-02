@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; elemento (implementación ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento publisherIdentity (implementación ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157633"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (implementación ClickOnce)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;elemento publisherIdentity (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Contiene información sobre el editor que firmó este manifiesto de implementación.  
@@ -38,13 +38,13 @@ Contiene información sobre el editor que firmó este manifiesto de implementaci
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
- El `publisherIdentity` elemento es necesario para los manifiestos firmados. En la tabla siguiente se muestra los atributos que el `publisherIdentity` admite el elemento.  
+## <a name="elements-and-attributes"></a>Atributos y elementos  
+ El `publisherIdentity` elemento es necesario para los manifiestos firmados. En la tabla siguiente se muestran los atributos que `publisherIdentity` admite el elemento.  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Necesario. Describe la identidad de la entidad que publicó la aplicación.|  
-|`issuerKeyHash`|Necesario. Contiene el hash SHA-1 de la clave pública del emisor del certificado.|  
+|`name`|Necesario. Describe la identidad de la entidad que publicó esta aplicación.|  
+|`issuerKeyHash`|Necesario. Contiene el hash de SHA-1 de la clave pública del emisor del certificado.|  
   
 #### <a name="parameters"></a>Parámetros  
   
@@ -52,7 +52,7 @@ Contiene información sobre el editor que firmó este manifiesto de implementaci
   
 ## <a name="exceptions"></a>Excepciones  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
   
 ## <a name="requirements"></a>Requisitos  
   

@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 204a1fa452389381dd393adf29b561135849caf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547122"
 ---
-# <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
+# <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esta estructura representa un parámetro de un método o función.  
+Esta estructura representa un parámetro de un método o una función.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,25 +44,25 @@ public struct METADATA_ADDRESS_PARAM {
   
 ## <a name="terms"></a>Términos  
  tokMethod  
- El identificador del método el parámetro forma parte de.  
+ IDENTIFICADOR del método del que forma parte el parámetro.  
   
  tokParam  
- El identificador del parámetro.  
+ Identificador del parámetro.  
   
  dwIndex  
- El índice del parámetro en una lista de parámetros.  
+ Índice del parámetro en una lista de parámetros.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_PARAM` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).  
+ Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_PARAM` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

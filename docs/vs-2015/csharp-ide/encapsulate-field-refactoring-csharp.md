@@ -1,5 +1,5 @@
 ---
-title: Encapsular refactorización de campoC#() | Microsoft Docs
+title: Refactorización de campo encapsulado (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b4f5ddbe7eab925b06584f00b04bed3c74e9811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667572"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsular campo (Refactorización, C#)
@@ -76,7 +76,7 @@ La operación de refactorización **Encapsular campo** permite crear rápidament
 
 5. Presione entrar o haga clic en el botón **Aceptar** .
 
-6. Si ha seleccionado la opción **vista previa de los cambios de referencia** , se abre la ventana **vista previa** de los cambios de referencia. Haga clic en el botón **aplicar** .
+6. Si ha seleccionado la opción **vista previa de los cambios de referencia** , se abre la ventana **vista previa** de los cambios de referencia. Haga clic en el botón **Aplicar**.
 
      El siguiente código de los descriptores de acceso `get` y `set` se muestra en el archivo de código fuente:
 
@@ -98,12 +98,12 @@ La operación de refactorización **Encapsular campo** permite crear rápidament
     Console.WriteLine("width = {0}", mySquare.Width);
     ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  La operación **Encapsular campo** solo es posible cuando el cursor se coloca en la misma línea que la declaración de campo.
 
  En el caso de las declaraciones que declaran varios campos, **Encapsular campo** usa la coma como límite entre los campos e inicia la refactorización en el campo más próximo al cursor y en la misma línea que el cursor. También puede especificar qué campo desea encapsular si selecciona el nombre de dicho campo en la declaración.
 
- El código generado por esta operación de refactorización se modela mediante la característica de fragmentos de código de encapsular campo. Los fragmentos de código son modificables. Para obtener más información, vea [Code Snippets](../ide/code-snippets.md).
+ El código generado por esta operación de refactorización se modela mediante la característica de fragmentos de código de encapsular campo. Los fragmentos de código son modificables. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).
 
-## <a name="see-also"></a>Vea también
- [Refactorizar (C#)](../csharp-ide/refactoring-csharp.md) [fragmentos C# de código Visual](../ide/visual-csharp-code-snippets.md)
+## <a name="see-also"></a>Consulte también
+ [Refactorización (C#)](../csharp-ide/refactoring-csharp.md) [fragmentos de código de Visual c#](../ide/visual-csharp-code-snippets.md)

@@ -1,5 +1,5 @@
 ---
-title: VsgDbg::VsgDbg (Constructor) | Documentos de Microsoft
+title: VsgDbg::VsgDbg (Constructor) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3bd179aea7d961df6145b7af2f074927fcdc3e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157438"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (Constructor)
@@ -31,15 +31,15 @@ VsgDbg(
   
 #### <a name="parameters"></a>Parámetros  
  `bDefaultInit`  
- Es `true` para especificar que el componente de aplicación de diagnóstico de gráficos debe estar preparado para capturar y grabar activamente información de gráficos; es `false` para especificar que la aplicación no se debe preparar para capturar y grabar activamente información de gráficos en este momento.  
+ `true` para especificar que el componente de aplicación de diagnóstico de gráficos debe estar preparado para capturar y grabar activamente información de gráficos; `false` para especificar que la aplicación no debe estar preparada para capturar y grabar activamente información de gráficos en este momento.  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando se llama al constructor con `bDefaultInit` establecido en `true`, el nombre de archivo del archivo de registro de gráficos viene determinada por el modo `DONT_SAVE_VSGLOG_TO_TEMP` y `VSG_DEFAULT_RUN_FILENAME` se definen los símbolos de preprocesador antes `vsgcapture.h` se incluye en la aplicación.  
+ Cuando se llama al constructor con `bDefaultInit` establecido en `true`, el nombre de archivo del archivo de registro de gráficos viene determinado por cómo se hayan definido los símbolos de preprocesador `DONT_SAVE_VSGLOG_TO_TEMP` y `VSG_DEFAULT_RUN_FILENAME` antes de incluir `vsgcapture.h` en la aplicación.  
   
  Cuando se llama al constructor con `bDefaultInit` establecido en `false`, el componente de aplicación de diagnóstico de gráficos se puede preparar para capturar y grabar activamente información de gráficos en otro momento llamando a la función `Init`.  
   
-## <a name="see-also"></a>Vea también  
- [VsgDbg::~VsgDbg (Destructor)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
- [Init](../debugger/init.md)   
+## <a name="see-also"></a>Consulte también  
+ [Vsgdbg (:: ~ Vsgdbg ((destructor)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
+ [Smss](../debugger/init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)   
  [VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)

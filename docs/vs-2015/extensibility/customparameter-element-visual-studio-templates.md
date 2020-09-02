@@ -1,5 +1,5 @@
 ---
-title: CustomParameter (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: CustomParameter ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 59bfec972750a4f893d1cb8b7cf08710bcca761a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555978"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contiene un nombre de parámetro personalizado y un valor que se usará cuando se crea un proyecto o elemento de la plantilla.  
+Contiene un nombre y valor de parámetro personalizado que se usará cuando se cree un proyecto o elemento a partir de la plantilla.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,8 +37,8 @@ Contiene un nombre de parámetro personalizado y un valor que se usará cuando s
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Nombre del parámetro. El formato de los parámetros es $*nombre*$.|  
-|`Value`|Obligatorio. El valor de reemplazo para el parámetro.|  
+|`Name`|Necesario. El nombre del parámetro. El formato de los parámetros es $*Name*$.|  
+|`Value`|Necesario. Valor de reemplazo para el parámetro.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
@@ -47,13 +47,13 @@ Contiene un nombre de parámetro personalizado y un valor que se usará cuando s
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Agrupa los parámetros personalizados que deben pasarse al Asistente de plantilla cuando el asistente realiza sustituciones de parámetros.|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Agrupa los parámetros personalizados que se van a pasar al Asistente para plantillas cuando el asistente realiza reemplazos de parámetros.|  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando una plantilla contiene `CustomParameter` elementos, cada instancia de la `Name` atributo se sustituye por el `Value` atributo en los archivos de proyecto o elemento creados.  
+ Cuando una plantilla contiene `CustomParameter` elementos, cada instancia `Name` se reemplaza por el `Value` atributo en los archivos de proyecto o elemento creados.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo usar varios parámetros personalizados en una plantilla. Cuando se crea un proyecto o elemento de una plantilla con los siguientes parámetros personalizados, todas las instancias de `$color1$` y `$color2$` en la plantilla se reemplazarán los archivos con `Red` y `Blue`, respectivamente.  
+ En el ejemplo siguiente se muestra cómo usar varios parámetros personalizados en una plantilla. Cuando se crea un proyecto o un elemento a partir de una plantilla con los siguientes parámetros personalizados, todas las instancias de `$color1$` y `$color2$` de los archivos de plantilla se reemplazarán por `Red` y `Blue` , respectivamente.  
   
 ```  
 <CustomParameters>  
@@ -62,7 +62,7 @@ Contiene un nombre de parámetro personalizado y un valor que se usará cuando s
 </CustomParameters>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Elemento CustomParameters (plantillas de Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)   
+## <a name="see-also"></a>Consulte también  
+ [CustomParameters ((elemento, plantillas de Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

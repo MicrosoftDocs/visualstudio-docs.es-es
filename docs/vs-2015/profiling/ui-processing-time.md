@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bbed9d8c4725b6bd497377d4a9dee22f2f8573d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145483"
 ---
 # <a name="ui-processing-time"></a>Tiempo de procesamiento de la interfaz de usuario
@@ -29,5 +29,5 @@ Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que
   
  La categoría de procesamiento de la interfaz de usuario es importante para entender la capacidad de respuesta de las aplicaciones de interfaz gráfica de usuario y es conveniente en aplicaciones que dependen de la capacidad de respuesta de la interfaz de usuario. Por ejemplo, si el subproceso de interfaz de usuario en una aplicación alcanza el 100 % de tiempo de procesamiento de la interfaz de usuario, probablemente tenga gran capacidad de respuesta. Sin embargo, si el subproceso de interfaz de usuario emplea tiempo considerable en otras categorías, busque las causas principales y considere la posibilidad de reducir las categorías que no sean de interfaz de usuario en ese subproceso.  
   
-## <a name="see-also"></a>Otras referencias  
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte también  
+ [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

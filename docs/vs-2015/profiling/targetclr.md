@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e4ca52f631b3e2de9c01daab7e6268c42f20268
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145621"
 ---
 # <a name="targetclr"></a>TargetCLR
@@ -36,10 +36,10 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>Opciones necesarias  
  La opción **TargetCLR** solo se puede usar con las opciones **Launch** o **Attach**.  
   
- **Launch:** `AppName`  
+ **Iniciar:**`AppName`  
  Inicia la aplicación especificada y empieza a generar perfiles.  
   
- **Attach:** `PID`  
+ **Asociar:**`PID`  
  Empieza a generar perfiles del proceso especificado.  
   
 ## <a name="example"></a>Ejemplo  

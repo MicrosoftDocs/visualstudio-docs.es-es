@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546907"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
@@ -55,9 +55,9 @@ Esta página le guía a través de la desinstalación de Visual Studio 2015, una
 
 1. En el equipo donde está instalado Visual Studio, abra el símbolo del sistema de Windows.
 
-2. Escriba los parámetros siguientes:
+2. Escriba los siguientes parámetros:
 
-     *DVDRoot* \\<Archivo de instalación\> \</quiet&#124;/passive> [/norestart]/uninstall
+     *DVDRoot* \\ Archivo de instalación de<\> \</quiet&#124;/passive> [/norestart]/Uninstall
 
 ## <a name="roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Reversión a una versión anterior o una versión de Visual Studio
 

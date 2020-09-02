@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c2460b4e8b9e0b9043178989fcf8825815471be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645707"
 ---
 # <a name="working-with-code-metrics-data"></a>Trabajar con datos de métricas de código
@@ -29,7 +29,7 @@ La ventana **resultados de métricas de código** muestra los datos que genera e
 
  Este tema contiene las siguientes secciones:
 
-- [Code Metrics Results Window](../code-quality/working-with-code-metrics-data.md#BKMK_CodeMetricsResultsWindow)
+- [Ventana Resultados de métricas de código](../code-quality/working-with-code-metrics-data.md#BKMK_CodeMetricsResultsWindow)
 
 - [Mostrar resultados de métricas de código](../code-quality/working-with-code-metrics-data.md#BKMK_DisplayingCodeMetricsResults)
 
@@ -41,15 +41,15 @@ La ventana **resultados de métricas de código** muestra los datos que genera e
 
 - [Crear un elemento de trabajo basado en resultados de métricas de código](../code-quality/working-with-code-metrics-data.md#BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results)
 
-## <a name="BKMK_CodeMetricsResultsWindow"></a> Code Metrics Results Window
+## <a name="code-metrics-results-window"></a><a name="BKMK_CodeMetricsResultsWindow"></a> Code Metrics Results Window
  La ventana **resultados de métricas de código** tiene una barra de herramientas en la parte superior y las columnas para mostrar los resultados calculados.
 
 |Columna|Descripción|
 |------------|-----------------|
-|**Jerárquico**|La columna **Hierarchy** contiene una vista de árbol de la jerarquía de código que se puede expandir o contraer para ver el nivel de detalle que se desea. Las columnas restantes muestran los resultados calculados. Puede ocultar u organizar las columnas de resultados como desee.|
-|**Mantenimiento**|La columna de **mantenimiento** contiene un icono además del resultado numérico. Un icono verde indica un grado relativamente alto de mantenimiento. Un icono amarillo indica un grado moderado de mantenimiento. Un icono rojo indica un mantenimiento bajo y un posible problema. Estos indicadores de color se corresponden con las categorías de gravedad que usa la regla de FxCop AvoidUnmaintainableCode. Esta regla desencadena un error si el índice de mantenimiento es inferior a 10, una advertencia si el índice está entre 10 y 20, y ni un error ni una advertencia si el índice es superior a 20. El índice de mantenimiento es una síntesis de tres métricas: complejidad ciclomática, líneas de código y complejidad computacional. Sus valores no se expresan en unidades.|
+|**Hierarchy**|La columna **Hierarchy** contiene una vista de árbol de la jerarquía de código que se puede expandir o contraer para ver el nivel de detalle que se desea. Las columnas restantes muestran los resultados calculados. Puede ocultar u organizar las columnas de resultados como desee.|
+|**Capacidad de mantenimiento**|La columna de **mantenimiento** contiene un icono además del resultado numérico. Un icono verde indica un grado relativamente alto de mantenimiento. Un icono amarillo indica un grado moderado de mantenimiento. Un icono rojo indica un mantenimiento bajo y un posible problema. Estos indicadores de color se corresponden con las categorías de gravedad que usa la regla de FxCop AvoidUnmaintainableCode. Esta regla desencadena un error si el índice de mantenimiento es inferior a 10, una advertencia si el índice está entre 10 y 20, y ni un error ni una advertencia si el índice es superior a 20. El índice de mantenimiento es una síntesis de tres métricas: complejidad ciclomática, líneas de código y complejidad computacional. Sus valores no se expresan en unidades.|
 
-## <a name="BKMK_DisplayingCodeMetricsResults"></a>Mostrar resultados de métricas de código
+## <a name="displaying-code-metrics-results"></a><a name="BKMK_DisplayingCodeMetricsResults"></a> Mostrar resultados de métricas de código
  La ventana Resultados de métricas de código se muestra automáticamente cuando se generan resultados de métricas de código. También puede mostrar la ventana en cualquier momento.
 
 #### <a name="to-display-the-code-metrics-results-window"></a>Para mostrar la ventana Resultados de métricas de código
@@ -66,7 +66,7 @@ La ventana **resultados de métricas de código** muestra los datos que genera e
 
 - Si se han generado resultados de métricas de código, expanda el árbol en la columna **jerarquía** .
 
-## <a name="BKMK_FilteringCodeMetricsResults"></a>Filtrar resultados de métricas de código
+## <a name="filtering-code-metrics-results"></a><a name="BKMK_FilteringCodeMetricsResults"></a> Filtrar resultados de métricas de código
  Puede filtrar los resultados que se muestran en la ventana **resultados de métricas de código** mediante la barra de herramientas de la parte superior. Por ejemplo, puede que desee ver solo los resultados que tienen un índice de mantenimiento inferior a 65.
 
  El cuadro desplegable **filtro** contiene los nombres de las columnas de resultados. Cuando se define un filtro, se agrega a la parte inferior de la lista junto con una sangría. La lista puede contener los últimos diez filtros definidos.
@@ -83,7 +83,7 @@ La ventana **resultados de métricas de código** muestra los datos que genera e
 
 5. Para ver los detalles del resultado, expanda el árbol de jerarquía.
 
-## <a name="BKMK_AddingRemovingandRearrangingDataColumns"></a>Agregar, quitar y reorganizar columnas de datos
+## <a name="adding-removing-and-rearranging-data-columns"></a><a name="BKMK_AddingRemovingandRearrangingDataColumns"></a> Agregar, quitar y reorganizar columnas de datos
  Puede Agregar o quitar columnas de resultados en la ventana **resultados de métricas de código** . Además, puede reorganizar las columnas de resultados para que aparezcan en el orden que desee.
 
 #### <a name="to-remove-a-column"></a>Para quitar una columna
@@ -118,13 +118,13 @@ La ventana **resultados de métricas de código** muestra los datos que genera e
 
 3. Cuando la columna esté colocada donde desee, haga clic en **Aceptar**.
 
-## <a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a>Copiar datos en el portapapeles o Excel
+## <a name="copying-data-to-the-clipboard-or-excel"></a><a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a> Copiar datos en el portapapeles o Excel
  Puede seleccionar y copiar una fila seleccionada de datos de métricas de código en el portapapeles como una cadena de texto que contenga una línea para el nombre y el valor de cada columna de datos. También puede hacer clic en **Abrir lista en Microsoft Excel** para exportar todos los resultados de las métricas de código a una hoja de cálculo de Excel.
 
-## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a>Crear un elemento de trabajo basado en resultados de métricas de código
- Puede crear un elemento de trabajo de [!INCLUDE[esprfound](../includes/esprfound-md.md)] basado en resultados en la ventana **resultados de métricas de código** . Cuando se crea el elemento de trabajo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] escribe automáticamente un título en el campo **título** y datos de métricas de código en la pestaña **historial** .
+## <a name="creating-a-work-item-based-on-code-metric-results"></a><a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Crear un elemento de trabajo basado en resultados de métricas de código
+ Puede crear un [!INCLUDE[esprfound](../includes/esprfound-md.md)] elemento de trabajo basado en resultados en la ventana **resultados de métricas de código** . Cuando se crea el elemento de trabajo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] escribe automáticamente un título en el campo **título** y datos de métricas de código en la pestaña **historial** .
 
- Para obtener más información sobre cómo crear elementos de trabajo, vea [crear un elemento &#91;de&#93;trabajo Redirigido](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).
+ Para obtener más información sobre cómo crear elementos de trabajo, vea [crear un elemento de trabajo &#91;&#93;Redirigido ](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).
 
 #### <a name="to-create-a-work-item-based-on-a-result"></a>Para crear un elemento de trabajo basado en un resultado
 
@@ -146,5 +146,5 @@ La ventana **resultados de métricas de código** muestra los datos que genera e
 
 4. En el menú **archivo** , haga clic en **guardar todo** para guardar el elemento de trabajo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

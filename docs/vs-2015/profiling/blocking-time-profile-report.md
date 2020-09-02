@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147240"
 ---
 # <a name="blocking-time-profile-report"></a>Informe de perfil de bloqueo de tiempo
@@ -34,9 +34,9 @@ Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para la
 ## <a name="blocking-time-report-columns"></a>Columnas del informe de tiempo de bloqueo  
  En la siguiente tabla se muestran las columnas de cada informe de tiempo de bloqueo.  
   
-|Nombre de columna|DESCRIPCIÓN|  
+|Nombre de columna|Description|  
 |-----------------|-----------------|  
-|nombre|El nombre de la función para cada nivel de la pila de llamadas.|  
+|Nombre|El nombre de la función para cada nivel de la pila de llamadas.|  
 |Instancias|El número de instancias de la llamada de bloqueo para el período de tiempo visible.|  
 |Tiempo de bloqueo inclusivo|El tiempo de bloqueo total que se emplea para todas las pilas comprendidas en este nivel del árbol de pila de llamadas. El número inclusivo es la suma del tiempo de bloqueo exclusivo de esta función y el tiempo de bloqueo exclusivo de todos sus nodos secundarios.|  
 |Tiempo de bloqueo exclusivo|El tiempo de bloqueo total que se emplea durante el cual esta función es el nivel más bajo de la pila de llamadas. Una entrada de la pila de llamadas única que tenga un tiempo de bloqueo exclusivo elevado puede ser una función de interés.|  
@@ -44,22 +44,22 @@ Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para la
 |Detalles|Nombre completo de la función. Esto incluye el recuento de líneas cuando está disponible.|  
   
 ### <a name="synchronization"></a>Sincronización  
- En el informe de sincronización se muestran las llamadas responsables de los segmentos que bloquean la sincronización y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [Tiempo de sincronización](../profiling/synchronization-time.md)  
+ En el informe de sincronización se muestran las llamadas responsables de los segmentos que bloquean la sincronización y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [hora de sincronización](../profiling/synchronization-time.md) .  
   
 ### <a name="sleep"></a>Sleep  
- El informe Sleep muestra las llamadas responsables del tiempo de bloqueo atribuido al tiempo que se empleó en modo de suspensión y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [Tiempo de suspensión](../profiling/sleep-time.md).  
+ El informe Sleep muestra las llamadas responsables del tiempo de bloqueo atribuido al tiempo que se empleó en modo de suspensión y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [tiempo de espera](../profiling/sleep-time.md).  
   
 ### <a name="io"></a>E/S  
- En el informe de E/S se muestran las llamadas responsables de los segmentos que bloquean la E/S y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [Tiempo de E/S (vista de subprocesos)](../profiling/i-o-time-threads-view.md).  
+ En el informe de E/S se muestran las llamadas responsables de los segmentos que bloquean la E/S y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [tiempo de e/s (vista de subprocesos)](../profiling/i-o-time-threads-view.md).  
   
 ### <a name="memory-management"></a>Administración de memoria  
  En el informe de administración de memoria se muestran las llamadas responsables de los segmentos que bloquean las operaciones de administración de memoria y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [Tiempo de administración de memoria](../profiling/memory-management-time.md).  
   
 ### <a name="preemption"></a>Adelantamiento  
- El informe de adelantamiento enumera los procesos que adelantaron el proceso actual junto con el número de instancias.  Puede expandir cada proceso para ver los subprocesos específicos que reemplazan los subprocesos del proceso actual y ver un desglose de las instancias de adelantamiento por subproceso. Este informe de bloqueo es menos factible que los otros porque el adelantamiento normalmente viene impuesto en el proceso por el sistema operativo, no por un problema en el código. Para obtener más información, consulte [Tiempo de adelantamiento](../profiling/preemption-time.md).  
+ El informe de adelantamiento enumera los procesos que adelantaron el proceso actual junto con el número de instancias.  Puede expandir cada proceso para ver los subprocesos específicos que reemplazan los subprocesos del proceso actual y ver un desglose de las instancias de adelantamiento por subproceso. Este informe de bloqueo es menos factible que los otros porque el adelantamiento normalmente viene impuesto en el proceso por el sistema operativo, no por un problema en el código. Para obtener más información, consulte [tiempo de adelantamiento](../profiling/preemption-time.md).  
   
 ### <a name="ui-processing"></a>Procesamiento de IU  
- En el informe de procesamiento de IU se muestran las llamadas responsables de los segmentos de bloqueo que bloquean los bloques de procesamiento de IU y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [Tiempo de procesamiento de IU](../profiling/ui-processing-time.md).  
+ En el informe de procesamiento de IU se muestran las llamadas responsables de los segmentos de bloqueo que bloquean los bloques de procesamiento de IU y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, vea tiempo de procesamiento de la [interfaz de usuario](../profiling/ui-processing-time.md).  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 981b37fe1ebaad5e45f0308143ab0384ef1d559b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145606"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
@@ -40,26 +40,26 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="required-options"></a>Opciones necesarias  
  **Sys** requiere una de las opciones siguientes.  
   
- **Launch:** `AppName`  
+ **Iniciar:**`AppName`  
  Inicia el generador de perfiles y la aplicación especificada por `AppName`.  
   
- **Attach:** `PID`  
+ **Asociar:**`PID`  
  Adjunta el generador de perfiles al proceso especificado por `PID`.  
   
 ## <a name="invalid-options"></a>Opciones no válidas  
  Las opciones siguientes no se pueden especificar en la misma línea de comandos que **Sys**.  
   
- **PF**[ **:** `Events`]  
+ **PF**[**:** `Events` ]  
  Establece el evento de muestreo en los errores de página y, opcionalmente, establece el intervalo del muestreo en `Events`. El intervalo PF predeterminado es 10.  
   
- **Timer**[ **:** `Cycles`]  
+ **Temporizador**[**:** `Cycles` ]  
  Establece el evento de muestreo en los ciclos de reloj de procesador y, opcionalmente, establece el intervalo del muestreo en `Cycles`. El intervalo de Timer predeterminado es 10 000 000.  
   
- **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
+ **Contador:** `Name` [`,Reload`[`,FriendlyName`]]  
  Establece el evento de muestreo en el contador de rendimiento de la CPU especificado por `Name` y establece el intervalo de muestreo en `Reload`.  
   
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
- Recopila datos de memoria de .NET. Mediante la opción (**Allocation**) predeterminada, se recopilan datos en cada evento de asignación de memoria. Cuando se especifica el parámetro **Lifetime**, también se recopilan datos en cada evento de recolección de elementos no utilizados.  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ Recopila datos de memoria de .NET. De forma predeterminada (**asignación**), los datos se recopilan en cada evento de asignación de memoria. Cuando se especifica el parámetro **Lifetime** , también se recopilan datos en cada evento de recolección de elementos no utilizados.  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se muestra cómo establecer el evento de muestreo del generador de perfiles en llamadas al sistema y cómo establecer el intervalo de muestreo en 20 llamadas por muestra.  
@@ -69,8 +69,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Sys:20  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)

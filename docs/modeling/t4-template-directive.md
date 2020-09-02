@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591845"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 
-Normalmente, una plantilla de texto T4 de Visual Studio se inicia con una directiva `template`, que especifica cómo se debe procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.
+Normalmente, una plantilla de texto T4 de Visual Studio se inicia con una `template` Directiva, que especifica cómo se debe procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.
 
 Para obtener información general sobre cómo escribir plantillas de texto, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
@@ -34,7 +34,7 @@ Ejemplo:
 
 `compilerOptions="optimize+"`
 
-Los valores válidos son:
+Valores válidos:
 
 Cualquier opción del compilador válida.
 
@@ -48,7 +48,7 @@ Ejemplo:
 
 `culture="de-CH"`
 
-Los valores válidos son:
+Valores válidos:
 
 "", la referencia cultural, que es la predeterminada.
 
@@ -64,11 +64,11 @@ Ejemplo:
 debug="true"
 ```
 
-Los valores válidos son:
+Valores válidos:
 
 `true`
 
-`false` (predeterminado)
+`false` (valor predeterminado)
 
 Si el atributo `debug` es `true`, el archivo de código intermedio contiene información que permite al depurador identificar con más precisión la posición de la plantilla donde se produjo una interrupción o una excepción.
 
@@ -84,11 +84,11 @@ Ejemplo:
 hostspecific="true"
 ```
 
-Los valores válidos son:
+Valores válidos:
 
 `true`
 
-`false` (predeterminado)
+`false` (valor predeterminado)
 
 `trueFromBase`
 
@@ -96,7 +96,7 @@ Si establece el valor de este atributo en `true`, una propiedad denominada `Host
 
 Dado que el tipo de esta propiedad depende del tipo de host, solamente es útil si está escribiendo una plantilla de texto que únicamente trabaja con un host concreto. Es aplicable a [las plantillas en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), pero no a [las plantillas en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Cuando `hostspecific` se `true` y usa Visual Studio, puede convertir `this.Host` a IServiceProvider para tener acceso a las características de Visual Studio. También puede utilizar `Host.ResolvePath(filename)` para obtener la ruta de acceso absoluta de un archivo en el proyecto. Por ejemplo:
+Cuando `hostspecific` es `true` y usa Visual Studio, puede convertir `this.Host` a IServiceProvider para tener acceso a las características de Visual Studio. También puede utilizar `Host.ResolvePath(filename)` para obtener la ruta de acceso absoluta de un archivo en el proyecto. Por ejemplo:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -126,13 +126,13 @@ Ejemplo:
 
 `language="VB"`
 
-Los valores válidos son:
+Valores válidos:
 
-`C#` (predeterminado)
+`C#` (valor predeterminado)
 
 `VB`
 
-El atributo `language` especifica el lenguaje ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) que se va a usar para el código fuente en los bloques de instrucciones y expresiones. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.
+El `language` atributo especifica el lenguaje ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) que se va a usar para el código fuente en los bloques de instrucciones y expresiones. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.
 
 Por ejemplo:
 
@@ -243,9 +243,9 @@ Ejemplo:
 
 `linePragmas="false"`
 
-Los valores válidos son:
+Valores válidos:
 
-`true` (predeterminado)
+`true` (valor predeterminado)
 
 `false`
 
@@ -259,9 +259,9 @@ Ejemplo:
 
 `visibility="internal"`
 
-Los valores válidos son:
+Valores válidos:
 
-`public` (predeterminado)
+`public` (valor predeterminado)
 
 `internal`
 

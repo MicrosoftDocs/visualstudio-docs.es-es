@@ -1,5 +1,5 @@
 ---
-title: 'Error: No tiene permiso para inspeccionar el proceso&#39;identidad s | Documentos de Microsoft'
+title: 'Error: No tiene permiso para inspeccionar la identidad del proceso | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157520"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar el proceso&#39;identidad s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar la identidad del proceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No tiene permiso para inspeccionar la identidad del proceso. Probablemente se deba a la configuración del sistema.  
@@ -44,9 +44,9 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
   
 6. En la lista **Servicios**, haga clic con el botón derecho en **Terminal Services** y después elija **Propiedades**.  
   
-7. En el **propiedades de Terminal Services** ventana, vaya a la **General** pestaña y establezca **tipo de inicio** a **Manual**.  
+7. En la ventana **Propiedades de Servicios de Terminal Server**, vaya a la pestaña **General** y establezca **Tipo de inicio** en **Manual**.  
   
-8. Haga clic en **OK**.  
+8. Haga clic en **Aceptar**.  
   
 9. Reinicie el equipo.  
   
@@ -64,7 +64,7 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
   
 4. En **Escritorio remoto**, seleccione **Permitir que los usuarios se conecten de manera remota a este equipo**.  
   
-5. Haga clic en **OK**.  
+5. Haga clic en **Aceptar**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)

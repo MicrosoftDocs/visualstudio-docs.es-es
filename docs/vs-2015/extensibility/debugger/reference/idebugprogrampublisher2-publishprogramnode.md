@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgramNode | Microsoft Docs
+title: IDebugProgramPublisher2::P ublishProgramNode | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: eac08c35afe407358b7e2d37216dda202c490bd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146311"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Hace que un nodo de programas disponibles para su uso mediante motores de depuración (DEs) y la sesión de depuración manager (SDM).  
+Hace que un nodo de programa esté disponible para que lo usen los motores de depuración (DEs) y el administrador de depuración de sesión (SDM).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,17 +40,17 @@ int PublishProgramNode(
   
 #### <a name="parameters"></a>Parámetros  
  `pProgramNode`  
- [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa para que estén disponibles.  
+ de Un objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el nodo de programa que va a estar disponible.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método permite a los programas consultar la información antes de seleccionar e inicio de depuración.  
+ Este método permite consultar los programas para obtener información antes de seleccionarlos y iniciarlos para la depuración.  
   
- Para quitar un nodo del programa de disponibilidad, llame a la [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) método.  
+ Para quitar un nodo de programa de la disponibilidad, llame al método [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)

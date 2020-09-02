@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646146"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Invocar la transformación de texto en una extensión de VS
@@ -140,8 +140,8 @@ Sample text.
  Puede pasar valores de una plantilla de texto mediante una clase de parámetro que se deriva de <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Temas relacionados
- Para generar texto desde una plantilla de texto preprocesada: llame al método `TransformText()` de la clase generada. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Para generar texto desde una plantilla de texto preprocesada: llame al `TransformText()` método de la clase generada. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Para generar texto fuera de una extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]: defina un host personalizado. Para obtener más información, consulte [procesar plantillas de texto mediante un host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Para generar texto fuera de una [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión: defina un host personalizado. Para obtener más información, consulte [procesar plantillas de texto mediante un host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
  Para generar el código fuente que se puede compilar y ejecutar más adelante: llame al método [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

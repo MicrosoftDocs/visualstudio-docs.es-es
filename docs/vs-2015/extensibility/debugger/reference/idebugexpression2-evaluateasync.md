@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateAsync | Microsoft Docs
+title: 'IDebugExpression2:: EvaluateAsync | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e084152f6215878816739f46dc91fa322cf9c94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158443"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
@@ -42,23 +42,23 @@ int EvaluateAsync(
   
 #### <a name="parameters"></a>Parámetros  
  `dwFlags`  
- [in] Una combinación de marcas de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración que controlan la evaluación de expresiones.  
+ de Combinación de marcas de la enumeración [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que controla la evaluación de expresiones.  
   
  `pExprCallback`  
- [in] Este parámetro siempre es un valor null.  
+ de Este parámetro siempre es un valor null.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Un código de error típico es:  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error. Un código de error típico es:  
   
-|Error|DESCRIPCIÓN|  
+|Error|Descripción|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Se está evaluando la otra expresión, y no se admite la evaluación de expresión simultáneas.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Otra expresión se está evaluando actualmente y no se admite la evaluación de expresiones simultáneas.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método debe devolver inmediatamente después de haberse iniciado la evaluación de expresiones. Cuando la expresión se evalúa correctamente, un [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) debe enviarse a la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) devolución de llamada de evento proporcionados a través de [adjuntar ](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md).  
+ Este método debe volver inmediatamente después de que se haya iniciado la evaluación de la expresión. Cuando la expresión se evalúa correctamente, se debe enviar una [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) a la devolución de llamada del evento [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) como se proporciona mediante [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para una sencilla `CExpression` objeto que implementa el [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un `CExpression` objeto simple que implementa la interfaz [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .  
   
 ```cpp#  
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,  
@@ -74,7 +74,7 @@ HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   

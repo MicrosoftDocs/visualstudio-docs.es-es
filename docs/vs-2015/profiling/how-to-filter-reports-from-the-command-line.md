@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Filtrar informes desde la línea de comandos | Microsoft Docs
+title: 'Cómo: Filtrar informes desde la línea de comandos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db2c9d845af962fc17da1ebd84e8dd5fe6ffadab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146007"
 ---
-# <a name="how-to-filter-reports-from-the-command-line"></a>Procedimiento Filtro de informes desde la línea de comandos
+# <a name="how-to-filter-reports-from-the-command-line"></a>Cómo: Filtrar informes desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al usar las opciones del comando **VSPerfReport**, puede filtrar los informes a un segmento de tiempo específico del archivo de datos de generación de perfiles o restringir los datos a uno o varios procesos o subprocesos. Para obtener más información sobre este comando, vea [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Opciones|DESCRIPCIÓN|  
+|Opciones|Descripción|  
 |-------------|-----------------|  
 |**StartTime:** [*Value*]|Solo muestra los datos recopilados tras el valor (en milisegundos).|  
 |**EndTime:** [*Value*]|Solo muestra los datos recopilados antes del valor (en milisegundos).|  

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5e8f35961813ab39a114d3dd733f415056eb9d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197530"
 ---
-# <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
+# <a name="idiaframedataget_addresssection"></a>IDiaFrameData::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera la parte de la sección de la dirección de código para el marco.  
+Recupera la parte de la sección de la dirección del código para el marco.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,10 +35,10 @@ HRESULT get_addressSection ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve la parte de la sección de la dirección de código para el marco.  
+ enuncia Devuelve la parte de la sección de la dirección del código para el marco.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
