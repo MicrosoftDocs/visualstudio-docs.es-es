@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ed5b181a9e0346cab5225d5f9024f070124186a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576593"
 ---
-# <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
+# <a name="idiasectioncontribget_compiland"></a>IDiaSectionContrib::get_compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una referencia al símbolo compiland que han contribuido en esta sección.  
+Recupera una referencia al símbolo de compilación que ha contribuido a esta sección.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,11 +35,11 @@ HRESULT get_compiland ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa la operación de compilación que han contribuido en esta sección.  
+ enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa la operación de compilación que ha contribuido a esta sección.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

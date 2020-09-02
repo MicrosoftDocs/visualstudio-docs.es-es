@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ffff52722fe27f2761307dcb2acd874d3849fdbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72647019"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas mixtas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Las reglas recomendadas mixtas de Microsoft se centran en los problemas más C++ comunes y críticos de los proyectos que admiten Common Language Runtime, incluidas posibles vulnerabilidades de seguridad, bloqueos de la aplicación y otros errores de diseño y lógica importantes. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos de C++ compatibles con Common Language Runtime. Este conjunto de reglas está diseñado para configurarse con Visual Studio Professional y versiones posteriores.
+Las reglas recomendadas mixtas de Microsoft se centran en los problemas más comunes y críticos en los proyectos de C++ compatibles con Common Language Runtime, incluidas posibles vulnerabilidades de seguridad, bloqueos de la aplicación y otros errores de diseño y lógica importantes. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos de C++ compatibles con Common Language Runtime. Este conjunto de reglas está diseñado para configurarse con Visual Studio Professional y versiones posteriores.
 
 |                                                              Regla                                                              |                                                             Descripción                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -156,7 +156,7 @@ Las reglas recomendadas mixtas de Microsoft se centran en los problemas más C++
 |                                              [C28020](../code-quality/c28020.md)                                               |                                               La expresión no es true en esta llamada                                               |
 |                                              [C28021](../code-quality/c28021.md)                                               |                                           El parámetro que se va a anotar debe ser un puntero                                           |
 |                                              [C28022](../code-quality/c28022.md)                                               |            Las clases de función de esta función no coinciden con las clases de función de la definición de tipo que se usa para definirla.            |
-|                                              [C28023](../code-quality/c28023.md)                                               |         La función que se va a asignar o pasar debe tener un \_Function_class \_ anotación para al menos una de las clases.         |
+|                                              [C28023](../code-quality/c28023.md)                                               |         La función que se va a asignar o pasar debe tener una \_ Function_class \_ anotación para al menos una de las clases.         |
 |                                              [C28024](../code-quality/c28024.md)                                               | El puntero de función al que se asigna se anota con la clase de función, que no está incluida en la lista de clases de función. |
 |                                              [C28039](../code-quality/c28039.md)                                               |                                     El tipo de parámetro real debe coincidir exactamente con el tipo                                      |
 |                                              [C28112](../code-quality/c28112.md)                                               |            Siempre se debe tener acceso a una variable a la que se tiene acceso a través de una función de interbloqueo a través de una función de interbloqueo.            |
@@ -178,7 +178,7 @@ Las reglas recomendadas mixtas de Microsoft se centran en los problemas más C++
 |                                              [C28206](../code-quality/c28206.md)                                               |                                              El operando izquierdo señala a un struct, use '->'                                              |
 |                                              [C28207](../code-quality/c28207.md)                                               |                                                  El operando izquierdo es un struct, use '->'                                                  |
 |                                              [C28209](../code-quality/c28209.md)                                               |                                      La declaración del símbolo tiene una declaración en conflicto                                       |
-|                                              [C28210](../code-quality/c28210.md)                                               |                            Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito                             |
+|                                              [C28220](../code-quality/c28210.md)                                               |                            Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito                             |
 |                                              [C28211](../code-quality/c28211.md)                                               |                                            Se esperaba un nombre de contexto estático para SAL_context                                             |
 |                                              [C28212](../code-quality/c28212.md)                                               |                                             Se esperaba una expresión de puntero para la anotación                                              |
 |                                              [C28213](../code-quality/c28213.md)                                               |            La anotación \_Use_decl_annotations\_ se debe usar para hacer referencia, sin modificación, a una declaración anterior.            |

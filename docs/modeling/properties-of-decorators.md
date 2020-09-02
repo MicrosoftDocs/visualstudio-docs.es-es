@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3374c07cac01104354b2ce41abddbeabbec0a373
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566142"
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
@@ -23,10 +23,10 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="expandcollapse-decorator"></a>Expandir o contraer Decorator
 
-|La propiedad|Descripción|Predeterminado|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |DisplayName|Nombre del elemento Decorator que se mostrará en el diseñador generado.|Expandir decorador de contracción|
-|Name|Nombre del elemento Decorator.|ExpandCollapseDecorator|
+|Nombre|Nombre del elemento Decorator.|ExpandCollapseDecorator|
 |Notas|Notas informales asociadas a este elemento Decorator.|\<none>|
 |HorizontalOffset|Desplazamiento horizontal, en pulgadas, relativo a la posición predeterminada del elemento Decorator. (Solo en formas).|0|
 |VerticalOffset|Desplazamiento vertical, relativo a la posición predeterminada del elemento Decorator, en pulgadas. (Solo en formas).|0|
@@ -36,11 +36,11 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="icon-decorator"></a>Icono Decorator
 
-|La propiedad|Descripción|Predeterminado|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |DefaultIcon|Ruta de acceso del archivo de icono o imagen que se va a mostrar.|\<none>|
 |DisplayName|Nombre del elemento Decorator que se va a mostrar en el diseñador generado.|Icono Decorator|
-|Name|Nombre del elemento Decorator.|IconDecorator|
+|Nombre|Nombre del elemento Decorator.|IconDecorator|
 |Notas|Notas informales asociadas al elemento Decorator.|\<none>|
 |HorizontalOffset|Desplazamiento horizontal, en pulgadas, relativo a la posición predeterminada del elemento Decorator. (Solo en formas).|0|
 |VerticalOffset|Desplazamiento vertical, relativo a la posición predeterminada del elemento Decorator, en pulgadas. (Solo en formas).|0|
@@ -50,13 +50,13 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|La propiedad|Descripción|Predeterminado|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |DefaultText|Texto predeterminado que se va a mostrar.|Etiqueta|
 |DisplayName|Nombre del elemento Decorator que se va a mostrar en el diseñador generado.|Etiqueta|
 |FontSize|Tamaño de fuente para el texto que se muestra en el elemento Decorator.|8|
-|FontStyle|Estilo de fuente para el texto que se muestra en el elemento Decorator.|Regular|
-|Name|Nombre del elemento Decorator.|Etiqueta|
+|FontStyle|Estilo de fuente para el texto que se muestra en el elemento Decorator.|Normal|
+|Nombre|Nombre del elemento Decorator.|Etiqueta|
 |Notas|Notas informales asociadas al elemento Decorator.|\<none>|
 |HorizontalOffset|Desplazamiento horizontal, en pulgadas, relativo a la posición predeterminada del elemento Decorator. (Solo en formas).|0|
 |VerticalOffset|Desplazamiento vertical, relativo a la posición predeterminada del elemento Decorator, en pulgadas. (Solo en formas).|0|

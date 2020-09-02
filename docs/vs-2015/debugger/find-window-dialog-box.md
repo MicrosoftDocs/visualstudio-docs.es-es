@@ -1,5 +1,5 @@
 ---
-title: Ventana cuadro de diálogo Buscar | Documentos de Microsoft
+title: Buscar ventana (Cuadro de diálogo) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,61 +13,61 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 34d6a847f96f548cdf68ed912d23f6a7ee112d54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158479"
 ---
 # <a name="find-window-dialog-box"></a>Cuadro de diálogo Buscar ventana
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilice este cuadro de diálogo para seleccionar una ventana y mostrar sus propiedades o los mensajes. Para mostrar este cuadro de diálogo, elija **Buscar ventana** desde el **Spy** menú.  
+Use este cuadro de diálogo para seleccionar una ventana y mostrar sus propiedades o mensajes. Para mostrar este cuadro de diálogo, seleccione **Buscar ventana** en el menú de **Spy**.  
   
- Las siguientes opciones están disponibles:  
+ Las siguientes configuraciones están disponibles:  
   
  **Herramienta de búsqueda**  
- La herramienta de arrastrar y colocar que se utiliza para seleccionar una ventana.  
+ Herramienta de arrastrar y colocar que se usa para seleccionar una ventana.  
   
- **Ocultar Spy ++**  
- Quita de la ventana principal de Spy ++ y deja el **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones.  
+ **Ocultar Spy + +**  
+ Quita la ventana principal de Spy + + y deja visible el cuadro de diálogo **Buscar ventana** encima de las demás aplicaciones.  
   
- **Identificador**  
- Identificador único de la ventana que se va a buscar.  
+ **Handle**  
+ IDENTIFICADOR único de la ventana que se va a buscar.  
   
- **Título**  
- El texto del título de ventana.  
+ **Caption**  
+ Texto del título de la ventana.  
   
  **Clase**  
- La clase de la ventana.  
+ Clase de la ventana.  
   
  **Estilo**  
- El estilo de la ventana.  
+ Estilo de la ventana.  
   
  **Rect**  
- El rectángulo delimitador de la ventana.  
+ Rectángulo de delimitación de la ventana.  
   
  **Mostrar propiedades o mensajes**  
- Determina si al presionar Aceptar se mostrará el [ventana cuadro de diálogo de propiedades](../debugger/window-properties-dialog-box.md) o abrir un [vista mensajes](../debugger/messages-view.md).  
+ Determina si al presionar Aceptar se mostrará el [cuadro de diálogo Propiedades](../debugger/window-properties-dialog-box.md) de la ventana o se abrirá una [vista mensajes](../debugger/messages-view.md).  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Uso de la herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md)  
- Muestra cómo esta herramienta examina las ventanas para las propiedades o los mensajes.  
+ [Usar la herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md)  
+ Muestra cómo esta herramienta examina las ventanas en busca de propiedades o mensajes.  
   
  [Vista Ventanas](../debugger/windows-view.md)  
- Muestra una vista de árbol de los controles y ventanas disponibles.  
+ Muestra una vista de árbol de las ventanas y los controles disponibles.  
   
  [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.  
+ Explica las vistas de árbol de Spy + + de ventanas, mensajes, procesos y subprocesos.  
   
  [Usar Spy++](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy ++ y explica cómo se puede usar.  
+ Presenta la herramienta Spy + + y explica cómo se puede usar.  
   
- [Cuadro de diálogo Búsqueda de ventana](../debugger/window-search-dialog-box.md)  
- Se usa para encontrar el nodo de una ventana específica en la vista de Windows.  
+ [Cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md)  
+ Se usa para buscar el nodo de una ventana específica en la vista de Windows.  
   
  [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md)  
- Se utiliza para mostrar las propiedades de una ventana seleccionado en Windows Vista.  
+ Se utiliza para mostrar las propiedades de una ventana seleccionada en la vista ventanas.  
   
  [Referencia de Spy++](../debugger/spy-increment-reference.md)  
- Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.
+ Incluye secciones que describen cada menú y cuadro de diálogo de Spy + +.

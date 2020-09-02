@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: b636dd4f3a5c5265231898573bfdf52de2dff84e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197712"
 ---
 # <a name="getting-started-with-ptvs-debugging"></a>Introducción a PTVS: Depurar
@@ -54,6 +54,6 @@ if __name__ == "__main__":
   
  Puede ver estas instrucciones en un breve [vídeo de YouTube](https://www.youtube.com/watch?v=bO7wpzgy74A&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=4).  
   
-## <a name="see-also"></a>Otras referencias  
- [Documentación de la wiki](https://github.com/Microsoft/PTVS/wiki/Debugging)   
+## <a name="see-also"></a>Consulte también  
+ [Documentación de wiki](https://github.com/Microsoft/PTVS/wiki/Debugging)   
  [Introducción y vídeos Deep Dive de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

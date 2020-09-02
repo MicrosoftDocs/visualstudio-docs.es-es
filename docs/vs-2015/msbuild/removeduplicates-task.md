@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73ad829c86305ff4d9a54025467e262d56e24dbc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159242"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (Tarea)
@@ -32,9 +32,9 @@ ms.locfileid: "68159242"
 Quita los elementos duplicados de la colección de elementos especificada.  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `RemoveDuplicates` .  
+ En la siguiente tabla se describen los parámetros de la tarea `RemoveDuplicates`.  
   
-|Parámetro|DESCRIPCIÓN|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Filtered`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene una colección de elementos sin elementos duplicados.|  
 |`Inputs`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Colección de elementos de la que se van a quitar los elementos duplicados.|  
@@ -42,7 +42,7 @@ Quita los elementos duplicados de la colección de elementos especificada.
 ## <a name="remarks"></a>Comentarios  
  Esta tarea no distingue mayúsculas de minúsculas y no compara los metadatos de los elementos al determinar los duplicados.  
   
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [clase base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se usa la tarea `RemoveDuplicates` para quitar los elementos duplicados de la colección de elementos `MyItems`. Cuando la tarea ha finalizado, la colección de elementos `FilteredItems` contiene un elemento.  
@@ -69,7 +69,7 @@ Quita los elementos duplicados de la colección de elementos especificada.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

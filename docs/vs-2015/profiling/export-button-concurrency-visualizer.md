@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1717c17a3a881d138b566f37e07456ded16f22c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197726"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Export (Botón, Visualizador de simultaneidad)
@@ -25,6 +25,6 @@ ms.locfileid: "68197726"
 
 El botón **Exportar** le permite exportar la pila de llamadas como archivo .csv para sus propios registros o para su uso con otra herramienta, como Microsoft Excel.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+ [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

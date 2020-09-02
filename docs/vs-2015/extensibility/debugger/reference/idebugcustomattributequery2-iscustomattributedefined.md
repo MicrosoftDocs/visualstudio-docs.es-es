@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
+title: 'IDebugCustomAttributeQuery2:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6ef6a04d263e322d408bb7d7c95da1929d89010c
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569324"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina si existe un atributo personalizado por su nombre.  
+Determina si un atributo personalizado existe por nombre.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +40,13 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>Parámetros  
  `pszCustomAttributeName`  
- [in] Una cadena que contiene el nombre del atributo personalizado para buscar.  
+ de Cadena que contiene el nombre del atributo personalizado que se va a buscar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve que S_OK si el atributo personalizado se define en este campo, en caso contrario, devuelve S_FALSE.  
+ Devuelve S_OK si el atributo personalizado está definido en este campo; de lo contrario, devuelve S_FALSE.  
   
 ## <a name="remarks"></a>Comentarios  
- Para obtener los bytes del atributo asociados con el atributo personalizado, llame a la [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) método.  
+ Para obtener los bytes de atributo asociados al atributo personalizado, llame al método [getcustomattributebyname (](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

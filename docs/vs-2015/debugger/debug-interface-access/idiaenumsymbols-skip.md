@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e7a6a3f06572392cad2edbf125d0ff6491b508c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563707"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] El número de símbolos en la secuencia de enumeración que se omitirán.  
+ de Número de símbolos de la secuencia de enumeración que se van a omitir.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no hay ningún más símbolos que se omitirán.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve si no hay `S_FALSE` más símbolos para omitir.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

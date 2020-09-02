@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad con la ventana automático en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Compatibilidad con la ventana automático en un servicio de lenguaje heredado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,28 +12,28 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 01d2046d7693b23865555abb06962dead4a435ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157599"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Compatibilidad con la ventana Automático en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-El **automático** ventana muestra expresiones como las variables y parámetros que están en ámbito cuando el programa que se está depurando está en pausa (ya sea debido a un punto de interrupción o una excepción). Las expresiones pueden incluir variables locales o globales y los parámetros que se han cambiado en el ámbito local. El **automático** ventana también puede incluir las creaciones de instancias de una clase, estructura o algún otro tipo. Todo lo que un evaluador de expresiones puede evaluar potencialmente puede mostrarse en el **automático** ventana.  
+La ventana **automático** muestra expresiones como variables y parámetros que están en el ámbito cuando se pausa el programa que se está depurando (ya sea debido a un punto de interrupción o una excepción). Las expresiones pueden incluir variables, locales o globales, y parámetros que se han cambiado en el ámbito local. La ventana **automático** también puede incluir la creación de instancias de una clase, una estructura o algún otro tipo. Cualquier cosa que un evaluador de expresiones pueda evaluar puede mostrarse en la ventana **automático** .  
   
- Managed package framework (MPF) no proporciona compatibilidad directa para la **automático** ventana. Sin embargo, si invalida el <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método, puede devolver una lista de expresiones que se presentará en la **automático** ventana.  
+ Managed Package Framework (MPF) no proporciona compatibilidad directa para la ventana **automático** . Sin embargo, si reemplaza el <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método, puede devolver una lista de expresiones que se van a presentar en la ventana **automático** .  
   
-## <a name="implementing-support-for-the-autos-window"></a>Implementar la compatibilidad de la ventana automático  
- Todo lo que necesita hacer para admitir la **automático** ventana consiste en implementar la <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase. La implementación debe decidir, dada una ubicación en el archivo de origen, las expresiones deben aparecer en el **automático** ventana. El método devuelve una lista de cadenas donde cada cadena representa una única expresión. Un valor devuelto de <xref:Microsoft.VisualStudio.VSConstants.S_OK> indica que la lista contiene expresiones, aunque <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> indica que no hay ninguna expresión para mostrar.  
+## <a name="implementing-support-for-the-autos-window"></a>Implementar la compatibilidad con la ventana automático  
+ Todo lo que necesita para admitir la ventana **automático** es implementar el <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método en la <xref:Microsoft.VisualStudio.Package.LanguageService> clase. La implementación debe decidir, dada una ubicación en el archivo de código fuente, qué expresiones deben aparecer en la ventana **automático** . El método devuelve una lista de cadenas en las que cada cadena representa una sola expresión. Un valor devuelto de <xref:Microsoft.VisualStudio.VSConstants.S_OK> indica que la lista contiene expresiones, mientras <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> que indica que no hay expresiones para mostrar.  
   
- Las expresiones reales devueltas son los nombres de variables o parámetros que aparecen en esa ubicación en el código. Estos nombres se pasan al evaluador para obtener los valores y tipos que se muestran a continuación, en el **automático** ventana.  
+ Las expresiones reales devueltas son los nombres de las variables o los parámetros que aparecen en esa ubicación en el código. Estos nombres se pasan al evaluador de expresiones para obtener los valores y los tipos que se muestran en la ventana **automático** .  
   
 ### <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra una implementación de la <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método que obtiene una lista de expresiones de la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> con el motivo por el análisis del método <xref:Microsoft.VisualStudio.Package.ParseReason>. Cada una de las expresiones se empaqueta como un `TestVsEnumBSTR` que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> interfaz.  
+ En el ejemplo siguiente se muestra una implementación del <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método que obtiene una lista de expresiones del <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método mediante el motivo del análisis <xref:Microsoft.VisualStudio.Package.ParseReason> . Cada una de las expresiones se ajusta como un `TestVsEnumBSTR` que implementa la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> interfaz.  
   
- Tenga en cuenta que el `GetAutoExpressionsCount` y `GetAutoExpression` métodos son métodos personalizados en el `TestAuthoringSink` de objetos y se agregaron para admitir este ejemplo. Representan una manera en que las expresiones de agregado a la `TestAuthoringSink` objeto por el analizador (mediante una llamada a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> método) se puede tener acceso fuera del analizador.  
+ Tenga en cuenta que los `GetAutoExpressionsCount` `GetAutoExpression` métodos y son métodos personalizados en el `TestAuthoringSink` objeto y se agregaron para admitir este ejemplo. Representan una manera en la que se puede tener acceso a las expresiones agregadas al `TestAuthoringSink` objeto por el analizador (llamando al <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> método) fuera del analizador.  
   
 ```csharp  
 using Microsoft.VisualStudio;  

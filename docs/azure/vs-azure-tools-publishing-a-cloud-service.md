@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300964"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313307"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicación de un servicio en la nube mediante Azure Tools
 
@@ -67,11 +67,11 @@ Si la infraestructura back-end de su aplicación es estable, pero los roles web 
 
 ### <a name="requirements-for-using-web-deploy"></a>Requisitos para utilizar Web Deploy
 
-- Solo con fines de **desarrollo y pruebas:** los cambios se realizan directamente en la máquina virtual donde se ejecuta el rol web. Si esta máquina virtual tiene que ser reciclada, se pierden los cambios porque el paquete original que publicó se usa para volver a crear la máquina virtual del rol. Vuelva a publicar la aplicación para obtener los últimos cambios del rol web.
+- **Solo con fines de desarrollo y prueba**: los cambios se realizan directamente en la máquina virtual en la que se está ejecutando el rol Web. Si esta máquina virtual tiene que ser reciclada, se pierden los cambios porque el paquete original que publicó se usa para volver a crear la máquina virtual del rol. Vuelva a publicar la aplicación para obtener los últimos cambios del rol web.
 
 - **Solo se pueden actualizar los roles web**: los roles de trabajo no se pueden actualizar. Además, no puede actualizar `RoleEntryPoint` en `web role.cs`.
 
-- **Solo puede admitir una única instancia de un rol web:** no puede tener varias instancias de ningún rol web en el entorno de implementación. Sin embargo, se admiten varios roles web cada uno con solo una instancia.
+- **Solo puede admitir una única instancia de un rol Web**: no puede tener varias instancias de ningún rol Web en su entorno de implementación. Sin embargo, se admiten varios roles web cada uno con solo una instancia.
 
 - **Habilite las conexiones de Escritorio remoto**: este requisito permite que Web Deploy utilice el usuario y la contraseña para conectar con la máquina virtual e implementar los cambios en el servidor que ejecuta Internet Information Services (IIS). Además, podría necesitar conectar a la máquina virtual para agregar un certificado de confianza a IIS en esta máquina virtual. (Este certificado asegura que la conexión remota de IIS que usa Web Deploy sea segura).
 
@@ -136,10 +136,10 @@ Puede que deba incluir archivos específicos en su paquete de servicio para que 
    c. Elija la referencia que quiere agregar y, después, elija **Aceptar**. La referencia se agrega a la lista en la carpeta **References**.
    d. Abra al menú contextual del ensamblado que agregó y elija **Propiedades**. Aparece la ventana **Propiedades**.
 
-      Para incluir este ensamblado en el paquete de servicio, en la **lista Copiar local** elija **True**.
+      Para incluir este ensamblado en el paquete de servicio, en la **lista copia local** , elija **true**.
 1. En el **Explorador de soluciones** abra el nodo del proyecto al que le falta en ensamblado referenciado.
 
-1. Para agregar el ensamblado al proyecto, abra el menú contextual de la carpeta **References** y luego elija **Agregar referencia**. Aparece el cuadro de diálogo **Agregar referencia.**
+1. Para agregar el ensamblado al proyecto, abra el menú contextual de la carpeta **References** y luego elija **Agregar referencia**. Aparece el cuadro de diálogo **Agregar referencia** .
 
 1. Elija la referencia que quiere agregar y luego elija el botón **Aceptar**.
 

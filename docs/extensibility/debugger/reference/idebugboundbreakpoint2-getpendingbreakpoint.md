@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetPendingBreakpoint ? Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: GetPendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4037cff1e080b4af97dbc56de4802f6f73504649
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735483"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-Obtiene el punto de interrupción pendiente desde el que se creó el punto de interrupción enlazado especificado.
+Obtiene el punto de interrupción pendiente en el que se creó el punto de interrupción enlazado especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ int GetPendingBreakpoint( 
 
 ## <a name="parameters"></a>Parámetros
 `ppPendingBreakpoint`\
-[fuera] Devuelve el objeto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa el punto de interrupción pendiente que se usó para crear este punto de interrupción enlazado.
+enuncia Devuelve el objeto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa el punto de interrupción pendiente que se usó para crear este punto de interrupción enlazado.
 
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
-Un punto de interrupción pendiente se puede considerar como una colección de toda la información necesaria para enlazar un punto de interrupción al código que se puede aplicar a uno o varios programas.
+Un punto de interrupción pendiente puede considerarse como una colección de toda la información necesaria para enlazar un punto de interrupción al código que se puede aplicar a uno o varios programas.
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se muestra `CBoundBreakpoint` cómo implementar este método para un objeto simple que expone el [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un `CBoundBreakpoint` objeto simple que expone la interfaz [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(

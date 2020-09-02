@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 025ba2eb95514efc740d1f8f7b3bf674d6bf237a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645634"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
@@ -61,7 +61,7 @@ Puede buscar y reemplazar texto en el editor de código de Visual Studio y en de
 
  Puede tener acceso a las opciones de reemplazo pulsando el botón siguiente al cuadro de texto **Buscar**. Para realizar un reemplazo puntual, pulse el botón **Reemplazar siguiente** junto al cuadro de texto **Reemplazar**. Para reemplazar todas las coincidencias, pulse el botón **Reemplazar todo**.
 
- Para cambiar el color de resaltado de las coincidencias, pulse el menú **Herramientas**, seleccione **Opciones** y, después, pulse **Entorno** y **Fuentes y colores**. En la lista **Mostrar configuración para**, seleccione **Editor de texto** y, después, en la lista **Mostrar elementos**, seleccione **Buscar resaltado (Extensión)** .
+ Para cambiar el color de resaltado de las coincidencias, pulse el menú **Herramientas**, seleccione **Opciones** y, después, pulse **Entorno** y **Fuentes y colores**. En la lista **Mostrar configuración para**, seleccione **Editor de texto** y, después, en la lista **Mostrar elementos**, seleccione **Buscar resaltado (Extensión)**.
 
 ### <a name="searching-tool-windows"></a>Buscar ventanas de herramientas
  Puede usar el control **Buscar** en ventanas de texto o código, como ventanas de **salida** y ventanas **Resultados de la búsqueda**, al pulsar **Buscar y reemplazar** en el menú **Edición** o (CTRL+F).
@@ -74,10 +74,10 @@ Puede buscar y reemplazar texto en el editor de código de Visual Studio y en de
  Cuando pulse **Buscar todo**, se abre una ventana **Buscar resultados** y se muestran las coincidencias de la búsqueda. Al seleccionar un resultado en la lista se muestra el archivo asociado y se resalta la coincidencia. Si el archivo todavía no está abierto para su edición, se abre en una pestaña de vista previa en el lateral derecho de la pestaña también. Puede usar el control **Buscar** para buscar en la lista **Resultados de la búsqueda**.
 
 ### <a name="creating-custom-search-folder-sets"></a>Creación de conjuntos de carpetas de búsqueda personalizados
- Puede definir un ámbito de búsqueda si hace clic en el botón **Elegir carpetas de búsqueda** (parecido a **...** ) junto al cuadro **Buscar en**. En el cuadro de diálogo **Elegir carpetas de búsqueda**, puede especificar un conjunto de carpetas en el que buscar, y puede guardar la especificación para que pueda volver a usarla más tarde. Puede especificar carpetas de un equipo remoto solo si ha asignado su unidad al equipo local.
+ Puede definir un ámbito de búsqueda si hace clic en el botón **Elegir carpetas de búsqueda** (parecido a **...**) junto al cuadro **Buscar en**. En el cuadro de diálogo **Elegir carpetas de búsqueda**, puede especificar un conjunto de carpetas en el que buscar, y puede guardar la especificación para que pueda volver a usarla más tarde. Puede especificar carpetas de un equipo remoto solo si ha asignado su unidad al equipo local.
 
 ### <a name="creating-custom-component-sets"></a>Creación de conjuntos de componentes personalizados
  Puede definir conjuntos de componentes como su ámbito de búsqueda pulsando el botón **Editar conjunto de componentes personalizado** junto al cuadro **Buscar en**. Puede especificar componentes COM o .NET instalados, proyectos de Visual Studio que se incluyen en la solución o cualquier ensamblado o biblioteca de tipos (.dll, .tlb, .olb, .exe o .ocx). Para buscar referencias, seleccione el cuadro **Buscar en referencias**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)

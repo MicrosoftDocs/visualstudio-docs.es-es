@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs
+title: 'IDebugCustomAttributeQuery:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 392067356cdc50b55ddf99b7342d76e1dcd02b09
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568465"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina si se ha definido el atributo personalizado especificado.  
+Determina si se define el atributo personalizado especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,13 +39,13 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>Parámetros  
  `pszCustomAttributeName`  
- [in] Nombre del atributo personalizado.  
+ de Nombre del atributo personalizado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si el atributo personalizado se define, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`.  
+ Si se define el atributo personalizado, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` .  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **CDebugClassFieldSymbol** objeto que expone el [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugClassFieldSymbol** que expone la interfaz [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) .  
   
 ```cpp#  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
@@ -84,5 +84,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

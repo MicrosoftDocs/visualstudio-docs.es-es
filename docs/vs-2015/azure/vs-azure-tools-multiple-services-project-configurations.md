@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301462"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312748"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración de su proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
 
@@ -41,13 +41,13 @@ Seleccione a qué archivo `ServiceConfiguration.*.cscfg` afectan los cambios. De
 
 Establezca la propiedad **Número de instancias** en el número de instancias que el servicio debe ejecutar para este rol
 
-Establezca la propiedad **Tamaño de VM** en **Extra pequeño**, **Pequeño**, **Mediano**, **Grande** o **Extra grande**.  Para obtener más información, consulte [Tamaños de Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
+Establezca la propiedad **Tamaño de VM** en **Extra pequeño**, **Pequeño**, **Mediano**, **Grande** o **Extra grande**.  Para obtener más información, vea [tamaños de Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Acción de inicio (solo para el rol web)
 
 Establezca esta propiedad para especificar que Visual Studio debería iniciar un explorador web para los extremos HTTP, los extremos HTTPS o ambos al iniciar la depuración.
 
-La opción de punto de conexión **HTTPS** solo está disponible si ya ha definido un punto de conexión HTTPS para su rol. Puede definir un extremo HTTPS en la página de propiedades **Extremos** .
+La opción de **extremo https** solo está disponible si ya ha definido un punto de conexión HTTPS para el rol. Puede definir un extremo HTTPS en la página de propiedades **Extremos** .
 
 Si ya se ha agregado un extremo HTTPS, la opción de extremo HTTPS se habilita de forma predeterminada, y Visual Studio iniciará un explorador para este extremo al comenzar la depuración, además de a un explorador para el extremo HTTP, pero se asume que ambas opciones de inicio están habilitadas.
 
@@ -55,7 +55,7 @@ Si ya se ha agregado un extremo HTTPS, la opción de extremo HTTPS se habilita d
 
 De manera predeterminada, la funcionalidad de diagnóstico está habilitada para el rol web. El proyecto de servicio en la nube de Azure y la cuenta de almacenamiento se establecen para usar el emulador de almacenamiento local. Cuando esté listo para realizar la implementación en Azure, puede seleccionar el botón del generador (**…**) para usar Azure Storage en su lugar. Los datos de diagnóstico se pueden transferir a la cuenta de almacenamiento a petición o a intervalos programados automáticamente. Para obtener más información sobre los diagnósticos de Azure, consulte [Habilitación de Diagnósticos en Azure Cloud Services y Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Página Configuración
+## <a name="settings-page"></a>Página de configuración
 
 En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de sus valores de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](/previous-versions/azure/dn602775(v=azure.11)), en particular, el método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)).
 

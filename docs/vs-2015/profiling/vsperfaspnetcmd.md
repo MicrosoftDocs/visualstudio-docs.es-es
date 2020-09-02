@@ -13,23 +13,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9cb81f17abd1e7891dc3f78a85d6d1276991f070
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145276"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La herramienta de línea de comandos **VSPerfASPNetCmd.exe** le permite generar perfiles de sitios web de ASP.NET sin necesidad de establecer variables de entorno ni reiniciar el equipo. Utilice **VSPerfASPNetCmd.exe** en lugar de [VSPerfCmd](../profiling/vsperfcmd.md) cuando genere perfiles de sitios web de ASP.NET y no necesite la funcionalidad adicional proporcionada por **VSPerCmd**. Para obtener más información sobre [VSPerfASPNetCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md), consulte **Generación rápida de perfiles de sitio web con VSPerfASPNETCmd**. **VSPerfASPNetCmd** es la herramienta de línea de comandos preferida cuando se utiliza el generador de perfiles independiente para generar perfiles de un sitio web de ASP.NET.  
+La herramienta de línea de comandos **VSPerfASPNetCmd.exe** le permite generar perfiles de sitios web de ASP.NET sin necesidad de establecer variables de entorno ni reiniciar el equipo. Utilice **VSPerfASPNetCmd.exe** en lugar de [VSPerfCmd](../profiling/vsperfcmd.md) cuando genere perfiles de sitios web de ASP.NET y no necesite la funcionalidad adicional proporcionada por **VSPerCmd**. Para obtener más información sobre **VSPerfASPNETCmd**, consulte [generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** es la herramienta de línea de comandos preferida cuando se utiliza el generador de perfiles independiente para generar perfiles de un sitio web de ASP.NET.  
   
 ## <a name="syntax"></a>Sintaxis  
  **vsperfaspnetcmd** [/*Opciones*] *Sitio web*  
   
 ## <a name="options"></a>Opciones  
   
-|Opción|DESCRIPCIÓN|  
+|Opción|Descripción|  
 |------------|-----------------|  
 |**/Sample** o **/s**|Genera perfiles de sitios web utilizando el método de muestreo. **/Sample** es el método predeterminado. /Sample no se puede utilizar con **/Trace**.|  
 |**/Trace** o **/t**|Genera perfiles de sitios web utilizando el método de instrumentación. /Trace no se puede utilizar con **/Sample**.|  
@@ -38,9 +38,9 @@ La herramienta de línea de comandos **VSPerfASPNetCmd.exe** le permite generar 
 |**/Output:** `File` o **/o:** `File`|Especifica la ruta de acceso y el nombre del archivo de datos de generación de perfiles (.vsp).|  
 |**/NoWait** o **/n**|Devuelve el símbolo del sistema inmediatamente para que los comandos adicionales se puedan utilizar en la ventana de símbolo del sistema. Para desactivar la generación de perfiles, debe escribir **VSPerfASPNETCmd /Shutdown** en una línea de comandos independiente.|  
 |**/PackSymbols**[:{**on**&#124;**off**}or   **/p**[:{**on**&#124;**off**}|Inserta símbolos (nombres de función y parámetro, etc.) en el archivo de datos de generación de perfiles (.vsp).|  
-|**/Shutdown:** `Website`o   **/d:** `Website`|Desactiva la generación de perfiles. Se utiliza como única opción en una línea de comandos después de utilizar la opción **/NoWait** para empezar a generar perfiles o si el generador de perfiles finaliza inesperadamente. Especifique la misma dirección URL que utilizó en el comando **VSPerfASPNETCmd** original.|  
+|**/Shutdown:** `Website` o **/d:** `Website`|Desactiva la generación de perfiles. Se utiliza como única opción en una línea de comandos después de utilizar la opción **/NoWait** para empezar a generar perfiles o si el generador de perfiles finaliza inesperadamente. Especifique la misma dirección URL que utilizó en el comando **VSPerfASPNETCmd** original.|  
 |`Website`|La dirección URL del sitio web cuyo perfil se va a generar.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+ [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 980c49aafba55e29714d786e492f7bb37a8ca621
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646750"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definiciones de tipos de Visual C++ en el Diseñador de clases
@@ -39,7 +39,7 @@ typedef class coord
 
  `COORD OriginPoint;`
 
- Aunque se puede declarar una definición de tipo sin nombre, el Diseñador de clases no usará el nombre de etiqueta que especifique; usará el nombre que genera la vista de clases. Por ejemplo, la siguiente declaración es válida, pero aparece en la vista de clases y en el Diseñador de clases como un objeto denominado **__unnamed**:
+ Aunque se puede declarar una definición de tipo sin nombre, el Diseñador de clases no usará el nombre de etiqueta que especifique; usará el nombre que genera la vista de clases. Por ejemplo, la siguiente declaración es válida, pero aparece en la Vista de clases y en el Diseñador de clases como un objeto denominado **__unnamed**:
 
 ```
 typedef class coord
@@ -117,7 +117,7 @@ class A {
 
  typedef
 
- Como anteriormente.
+ Igual que el anterior.
 
 ```
 Class B {};
@@ -200,5 +200,5 @@ class A {
 
  -> MyIntVect
 
-## <a name="see-also"></a>Otras referencias
- [Trabajar con el C++ especificador de definición de código Visual (diseñador de clases](../ide/working-with-visual-cpp-code-class-designer.md) ) [(NOTINBUILD)](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+## <a name="see-also"></a>Consulte también
+ [Trabajar con el especificador de definición de código Visual C++ (diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md) [(NOTINBUILD)](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

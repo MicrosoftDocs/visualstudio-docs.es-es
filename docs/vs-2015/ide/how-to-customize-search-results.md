@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 379debcfc1a3c9e6529563ebbf1d4b8f6397dad3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667982"
 ---
 # <a name="how-to-customize-search-results"></a>Cómo: Personalizar los resultados de la búsqueda
@@ -49,5 +49,5 @@ Puede personalizar el modo en que los resultados de la búsqueda aparecen en la 
 
 2. Active la casilla **Incluir contenido en inglés en todas las pestañas de navegación y solicitudes de F1**.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Sugerencias para la búsqueda de texto completo](../ide/full-text-search-tips.md)

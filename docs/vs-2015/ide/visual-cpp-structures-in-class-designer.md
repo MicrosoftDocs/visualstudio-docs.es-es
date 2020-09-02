@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc9c09c5f92c4193d3d3f58c819f4bc0fc9aaebf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646764"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>Estructuras de Visual C++ en el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El Diseñador de clases admite estructuras de C++, que se declaran con la palabra clave `struct`. A continuación se muestra un ejemplo:
+El Diseñador de clases admite estructuras de C++, que se declaran con la palabra clave `struct`. El siguiente es un ejemplo:
 
 ```
 struct MyStructure
@@ -38,7 +38,7 @@ struct MyStructure
 
 |Elemento de código|Vista Diseñador de clases|
 |------------------|-------------------------|
-|`struct StructureName {};`|**StructureName**<br /><br /> Struct|
+|`struct StructureName {};`|**StructureName**<br /><br /> Estructura|
 
-## <a name="see-also"></a>Otras referencias
- [Trabajar con código C++ Visual (Diseñador de clases) ](../ide/working-with-visual-cpp-code-class-designer.md) [Classes y structs ](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)
+## <a name="see-also"></a>Consulte también
+ Trabajar con [clases y Structs](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6) de [código Visual C++ (diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md)

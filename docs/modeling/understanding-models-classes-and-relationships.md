@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565908"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
@@ -22,7 +22,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
  En este tema se explican las características centrales de la definición de DSL.
 
 ## <a name="the-dsl-definition"></a>La definición de DSL
- Al abrir `Dsl\DslDefinition.dsl`, la ventana de Visual Studio se asemeja a la siguiente imagen.
+ Al abrir `Dsl\DslDefinition.dsl` , la ventana de Visual Studio se asemeja a la siguiente imagen.
 
  ![diseñador dsl](../modeling/media/dsl_designer.png)
 
@@ -116,7 +116,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  En la representación XML del modelo, se representa un vínculo de referencia entre dos elementos mediante *monikers.* Es decir, los monikers son nombres que identifican de forma única cada elemento del modelo. El nodo XML de cada elemento del modelo contiene un nodo que especifica el nombre de la relación y el moniker del otro elemento.
 
-## <a name="roles"></a>Roles de
+## <a name="roles"></a>Roles
  Cada relación de dominio tiene dos roles, un rol de origen y un rol de destino.
 
  En la siguiente imagen, la línea entre la clase de dominio del **publicador** y la relación de dominio **PublisherCatalog** es el rol de origen. La línea entre la relación de dominio y la clase de dominio **album** es el rol de destino.
@@ -128,9 +128,9 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
  Cuando se crea una relación en una definición de DSL, se proporcionan los valores predeterminados a los nombres de propiedad y de relación. Sin embargo, puede cambiarlos.
 
 ## <a name="multiplicities"></a>Multiplicidades
- Las multiplicidades especifican el número de elementos que pueden tener el mismo rol en una relación de dominio. En el ejemplo, la configuración de multiplicidad de cero a varios (0..\*) en el rol de **Catálogo** especifica que cualquier instancia de la clase de dominio del **publicador** puede tener tantos vínculos de relación **PublisherCatalog** como desee.
+ Las multiplicidades especifican el número de elementos que pueden tener el mismo rol en una relación de dominio. En el ejemplo, la configuración de multiplicidad de cero a varios (0.. \* ) en el rol de **Catálogo** especifica que cualquier instancia de la clase de dominio del **publicador** puede tener tantos vínculos de relación **PublisherCatalog** como desee.
 
- Configure la multiplicidad de un rol; para ello, escriba en el diagrama o modifique la propiedad `Multiplicity` en la ventana **propiedades** . En la tabla siguiente se describe la configuración de esta propiedad.
+ Configure la multiplicidad de un rol escribiendo en el diagrama o modificando la `Multiplicity` propiedad en la ventana **propiedades** . En la tabla siguiente se describe la configuración de esta propiedad.
 
 |Tipo de multiplicidad|Descripción|
 |-|-|
@@ -148,6 +148,6 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  Una relación derivada especializa su relación base. Las clases de dominio a las que se vincula deben derivarse o ser iguales que las clases vinculadas por la relación base. Cuando se crea un vínculo de la relación derivada en un modelo, se trata de una instancia de las relaciones derivadas y base. En el código del programa, puede navegar hasta el final opuesto del vínculo mediante las propiedades generadas por la base o por la clase derivada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

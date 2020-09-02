@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution ? Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: GetBreakpointResolution | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735577"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Obtiene la resolución de punto de interrupción que describe este punto de interrupción.
+Obtiene la resolución del punto de interrupción que describe este punto de interrupción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ int GetBreakpointResolution( 
 
 ## <a name="parameters"></a>Parámetros
 `ppBPResolution`\
-[fuera] Devuelve el [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfaz que representa uno de los siguientes:
+enuncia Devuelve la interfaz [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) que representa uno de los elementos siguientes:
 
 - Objeto de resolución de punto de interrupción que describe la ubicación en el código donde se ha enlazado un punto de interrupción de código.
 
-- La ubicación de datos donde se ha enlazado un punto de interrupción de datos.
+- Ubicación de datos en la que se ha enlazado un punto de interrupción de datos.
 
 ## <a name="return-value"></a>Valor devuelto
-Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de `BPS_DELETED` punto de interrupción enlazado se establece en (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de punto de interrupción enlazado se establece en `BPS_DELETED` (parte de la enumeración [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Observaciones
-Llame a la [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) método para determinar si la resolución de punto de interrupción es para código o datos.
+Llame al método [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) para determinar si la resolución del punto de interrupción es para el código o los datos.
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se muestra `CBoundBreakpoint` cómo implementar este método para un objeto simple que expone el [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un `CBoundBreakpoint` objeto simple que expone la interfaz [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::GetBreakpointResolution(

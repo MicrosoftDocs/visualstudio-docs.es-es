@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550917"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Introducción a PTVS: Editar código
@@ -34,7 +34,7 @@ from math import sin
   
  Durante la codificación, si usa un identificador que no está enlazado pero que puede encontrarse en las bibliotecas, PTVS ofrece una solución rápida emergente para agregar la instrucción de importación adecuada que necesita.  Por ejemplo, si escribió `cos`, verá que se le ofrece **importar de matemáticas**.  
   
- Puede usar un fragmento de código para generar código.  En el menú Edición, elija IntelliSense y, a continuación, Insertar fragmento de código.  Después elija Python y def.  Llame a la función `make_dot_string` y agregue un parámetro `x`.  Puede agregar aserciones en el archivo en este momento para el desarrollo controlado por pruebas, y verá que PTVS ya ofrece la nueva función en las listas de finalización.  
+ Puede usar un fragmento de código para generar código.  En el menú Edición, elija IntelliSense y, a continuación, Insertar fragmento de código.  Ahora elija Python y, a continuación, Def.  Llame a la función `make_dot_string` y agregue un parámetro `x` .  Puede agregar aserciones en el archivo en este momento para el desarrollo controlado por pruebas, y verá que PTVS ya ofrece la nueva función en las listas de finalización.  
   
 ```python  
 assert make_dot_string(90) == '          o'  
@@ -66,6 +66,6 @@ def main ():
   
  Puede ver estas instrucciones en un breve [vídeo de YouTube](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff).  
   
-## <a name="see-also"></a>Vea también  
- [Documentación de la wiki](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
+## <a name="see-also"></a>Consulte también  
+ [Documentación de wiki](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [Introducción y vídeos Deep Dive de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

@@ -1,5 +1,5 @@
 ---
-title: Ficha, cuadro de diálogo de propiedades de ventana estilos | Documentos de Microsoft
+title: Pestaña Estilos (Cuadro de diálogo Propiedades de la ventana) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,20 +12,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6ddde5bdb6064b7012157c04d156ed225b5763a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197494"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Pestaña Estilos (Cuadro de diálogo Propiedades de la ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Use la **estilos** ficha para mostrar los estilos aplicados a la ventana seleccionada. Para mostrar el [ventana cuadro de diálogo de propiedades](../debugger/window-properties-dialog-box.md), mover el foco a la [Windows Vista](../debugger/windows-view.md) ventana. Seleccione el nodo de una ventana en el árbol y luego elija **propiedades** desde el **vista** menú.  
+Use la pestaña **Estilos** para mostrar los estilos aplicados a la ventana seleccionada. Para mostrar el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md), mueva el foco a la ventana [Vista Ventanas](../debugger/windows-view.md). Seleccione un nodo de ventana en el árbol y, después, elija **Propiedades** en el menú **Vista**.  
   
- Las siguientes opciones están disponibles en el **estilos** pestaña:  
+ En la pestaña **Estilos** están disponibles los valores siguientes:  
   
-|Entrada|DESCRIPCIÓN|  
+|Entrada|Descripción|  
 |-----------|-----------------|  
-|**Estilos de ventana**|Una combinación de la ventana de códigos de estilo y estilos de control, si procede.|  
-|**Estilos extendidos**|Una combinación de códigos de estilo de ventana extendidos.|
+|**Estilos de ventana**|Combinación de códigos de estilo de ventana y estilos de control, si procede.|  
+|**Estilos extendidos**|Combinación de códigos extendidos de estilo de ventana.|

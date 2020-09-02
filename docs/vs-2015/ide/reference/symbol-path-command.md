@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651001"
 ---
 # <a name="symbol-path-command"></a>Ruta de acceso de símbolos (Comando)
@@ -36,7 +36,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Argumentos
  `pathname` Opcional. Lista de rutas de acceso delimitada por puntos y comas para que el depurador busque símbolos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Si no se especifica ningún `pathname`, el comando muestra las rutas de acceso de símbolos actuales.
 
 ## <a name="example"></a>Ejemplo
@@ -53,5 +53,5 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  Comandos de la [ventana comandos](../../ide/reference/command-window.md) de [Visual Studio](../../ide/reference/visual-studio-commands.md)

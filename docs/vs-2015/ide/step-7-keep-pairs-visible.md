@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d7981ca81839cc8d0959cf5ae75c6d9a001d39a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646942"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Paso 7: Mantener visibles los pares
@@ -28,7 +28,7 @@ El juego funciona bien siempre y cuando el jugador elija únicamente parejas de 
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]
 
-     La primera línea de la instrucción `if` que acaba de agregar comprueba si el icono de la primera etiqueta en eligió el jugador es igual que el icono de la segunda etiqueta. Si los iconos son iguales, el programa ejecuta las tres instrucciones entre llaves en C# o las tres instrucciones incluidas en la instrucción `if` en Visual Basic. Las dos primeras instrucciones restablecen las variables de referencia `firstClicked` y `secondClicked` para que ya no realicen el seguimiento de ninguna de las etiquetas. (Puede que reconozca esas dos instrucciones del controlador de eventos tick del temporizador). La tercera instrucción es una instrucción `return`, que indica al programa que omita el resto de las instrucciones del método sin ejecutarlas.
+     La primera línea de la instrucción `if` que acaba de agregar comprueba si el icono de la primera etiqueta en eligió el jugador es igual que el icono de la segunda etiqueta. Si los iconos son iguales, el programa ejecuta las tres instrucciones entre llaves en C# o las tres instrucciones incluidas en la instrucción `if` en Visual Basic. Las dos primeras instrucciones restablecen las variables de referencia `firstClicked` y `secondClicked` para que ya no realicen el seguimiento de ninguna de las etiquetas. (Puede que reconozca esas dos instrucciones del controlador de eventos tick del temporizador). La tercera instrucción es una `return` instrucción, que indica al programa que omita el resto de las instrucciones del método sin ejecutarlas.
 
      Si programa en Visual C#, quizás haya observado que en una parte del código se usa un solo signo de igualdad (`=`), mientras que otras instrucciones usan dos (`==`). Piense por qué se usa `=` en algunos lugares y `==` en otros.
 
@@ -60,6 +60,6 @@ El juego funciona bien siempre y cuando el jugador elija únicamente parejas de 
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al paso siguiente del tutorial, consulte [Paso 8: Agregar un método para comprobar si el jugador ganó](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+- Para ir al siguiente paso del tutorial, vea [paso 8: agregar un método para comprobar si el jugador ganó](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 6: Agregar un temporizador](../ide/step-6-add-a-timer.md).
+- Para volver al paso anterior del tutorial, vea [paso 6: agregar un temporizador](../ide/step-6-add-a-timer.md).

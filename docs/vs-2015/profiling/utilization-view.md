@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145362"
 ---
 # <a name="utilization-view"></a>Vista de utilización
@@ -25,7 +25,7 @@ ms.locfileid: "68145362"
 
 La **Vista de utilización** muestra información acerca de la CPU, la GPU y otros recursos del sistema utilizados por el proceso actual. Muestra el uso de núcleo promedio por el proceso analizado, el proceso inactivo, el proceso del sistema y otros procesos que se ejecutan en el sistema a lo largo del tiempo. No muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico. La vista se genera al dividir el tiempo de generación de perfiles en segmentos de tiempo cortos. Para cada segmento, el gráfico traza el promedio de subprocesos del proceso que se ejecutan en núcleos lógicos durante ese intervalo.  
   
- ![Vista de utilización de CPU](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
+ ![Vista Uso de CPU](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
   
  El gráfico muestra el tiempo (en el eje x) y el promedio de núcleos lógicos que se utilizan en el proceso de destino, el proceso inactivo y el proceso del sistema. (El proceso inactivo muestra núcleos inactivos. El proceso del sistema es un proceso de Windows que puede realizar trabajo en nombre de otros procesos). Los procesos restantes que se ejecutan en el sistema utilizan los núcleos restantes.  
   
@@ -48,9 +48,9 @@ La **Vista de utilización** muestra información acerca de la CPU, la GPU y otr
   
  Si utiliza la GPU mediante C++ AMP o DirectX, quizá le interese identificar el número de motores de GPU en uso o de áreas donde la GPU está inactiva de forma inesperada.  
   
-## <a name="zooming"></a>Zoom  
+## <a name="zooming"></a>Acercar o alejar  
  Para ampliar el gráfico de utilización de CPU o el gráfico de actividad de GPU, seleccione una sección o utilice el control deslizante de zoom sobre el gráfico. La configuración de zoom se conserva cuando se cambia a otras vistas. Para reducir, use el control deslizante de zoom. También puede hacer zoom presionando Ctrl + rueda del mouse.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
- [Vista Núcleos](../profiling/cores-view.md)
+ [Vista de núcleos](../profiling/cores-view.md)

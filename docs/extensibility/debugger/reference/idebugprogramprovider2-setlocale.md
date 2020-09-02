@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::SetLocale ? Microsoft Docs
+title: 'IDebugProgramProvider2:: SetLocale | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dd88eebedc8c6dc5b059cbcd94844ce4191fccc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721776"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
-Establece una configuración regional que se usará para cualquier recurso específico de la configuración regional.
+Establece la configuración regional que se va a usar para los recursos específicos de la configuración regional.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ int SetLocale(
 
 ## <a name="parameters"></a>Parámetros
 `wLangID`\
-[en] Id. de idioma para establecer. Por ejemplo, 1033 para inglés.
+de IDENTIFICADOR de idioma que se va a establecer. Por ejemplo, 1033 para inglés.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

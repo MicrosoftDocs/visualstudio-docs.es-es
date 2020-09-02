@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186000"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Cómo: aplicar automáticamente las claves de producto durante la implementación de Visual Studio
@@ -32,7 +32,7 @@ Puede aplicar la clave de producto mediante programación como parte de un scrip
  `vs_enterprise.exe [any other setup parameters] /ProductKey AAAAABBBBBCCCCCDDDDDDEEEEEE`
 
 ## <a name="apply-the-license-after-installation"></a>Aplicar la licencia después de la instalación
- Puede activar una versión instalada de Visual Studio con una clave de producto mediante la utilidad storePID.exe en los equipos de destino en modo silencioso. StorePID.exe es un programa de utilidad que se instala con Visual Studio en **\<unidad >:\\\Archivos de programa (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
+ Puede activar una versión instalada de Visual Studio con una clave de producto mediante la utilidad storePID.exe en los equipos de destino en modo silencioso. StorePID.exe es un programa de utilidad que se instala con Visual Studio en ** \<drive> : \Archivos de programa \\ (x86) \Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
 
  Ejecute storePID.exe con privilegios elevados, ya sea mediante un agente de System Center o un símbolo con privilegios elevados, seguido de la clave de producto (incluidos los guiones) y el código de producto de Microsoft (MPC). Asegúrese de incluir los guiones en la clave del producto.
 

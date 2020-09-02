@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145557"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn y ThreadOff
@@ -31,7 +31,7 @@ Los subcomandos **ThreadOff** y **ThreadOn** de VSPerfCmd.exe solo están dispon
   
 - **ThreadOn** establece inmediatamente el contador de inicios y paradas de subproceso en 1 y, por tanto, reanuda la generación de perfiles.  
   
-  Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
+  Para obtener más información, consulte [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,13 +47,13 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>Opciones válidas  
  **ThreadOn** y **ThreadOff** se pueden especificar en líneas de comandos que también contienen los subcomandos siguientes.  
   
- **Start:** `Method`  
+ **Inicio:**`Method`  
  Inicializa la sesión de generación de perfiles de línea de comandos y establece el método de generación de perfiles especificado.  
   
  **GlobalOff**&#124;**GlobalOn**  
  Detiene o inicia la generación de perfiles para todos los procesos en una sesión de generación de perfiles de línea de comandos.  
   
- {**ProcessOff**&#124;**ProcessOn**} **:** `TID`  
+ {**ProcessOff**&#124;**processon**} **:**`TID`  
  Detiene o inicia la generación de perfiles para el proceso especificado.  
   
 ## <a name="example"></a>Ejemplo  
@@ -71,8 +71,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)
