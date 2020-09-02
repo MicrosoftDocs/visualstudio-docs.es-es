@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e7de0b3985e09f61fd0c63d1764304b150503883
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657928"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Depurar o deshabilitar el código del proyecto en el Diseñador XAML
@@ -49,7 +49,7 @@ En muchos casos, las excepciones no controladas en el Diseñador XAML pueden deb
 
 2. En el Administrador de tareas de Windows, elija el botón **Finalizar tarea** para cerrar todas las instancias del Diseñador de XAML de Visual Studio que se estén ejecutando actualmente.
 
-     ![Instancias del diseñador XAML en TaskManager](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
+     ![Instancias del diseñador de XAML en el Administrador de tareas](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
 
 3. En Visual Studio, abra la página XAML, que contiene el código o el control que desea depurar.
 
@@ -61,7 +61,7 @@ En muchos casos, las excepciones no controladas en el Diseñador XAML pueden deb
 
 7. En el cuadro de diálogo **Asociar al proceso** , en la lista **Procesos disponibles** , elija **XDesProc.exe**y luego seleccione el botón **Asociar** .
 
-     ![El proceso del diseñador XAML](../designers/media/xaml-attach.png "XAML_Attach")
+     ![El proceso del diseñador de XAML](../designers/media/xaml-attach.png "XAML_Attach")
 
      Este es el proceso para el Diseñador XAML en la primera instancia de Visual Studio.
 
@@ -73,9 +73,9 @@ En muchos casos, las excepciones no controladas en el Diseñador XAML pueden deb
 
 - En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para deshabilitar la ejecución de código del proyecto y volver a cargar el diseñador** .
 
-- Como alternativa, en la barra de herramientas en el Diseñador XAML, elija la opción **Deshabilitar código de proyecto** .
+- Como alternativa, en la barra de herramientas del diseñador XAML, elija el botón **deshabilitar código de proyecto** .
 
-     ![Botón Deshabilitar código de proyecto](../designers/media/xaml-disablecode.png "XAML_DisableCode")
+     ![Botón para deshabilitar el código de proyecto](../designers/media/xaml-disablecode.png "XAML_DisableCode")
 
      Puede alternar el botón de nuevo para volver a habilitar el código del proyecto.
 
@@ -87,5 +87,5 @@ En muchos casos, las excepciones no controladas en el Diseñador XAML pueden deb
     > [!NOTE]
     > Deshabilitar el código del proyecto puede provocar una pérdida de datos en tiempo de diseño. Una alternativa es depurar el código que se ejecuta en el diseñador.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)

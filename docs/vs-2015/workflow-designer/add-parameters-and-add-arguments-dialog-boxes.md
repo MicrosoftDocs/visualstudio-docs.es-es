@@ -12,10 +12,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 975fb1604273f4cda80b9f4ebd098a229d8c52c2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547958"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Cuadros de diálogo Agregar parámetros y Agregar argumentos
@@ -31,7 +31,7 @@ En la tabla siguiente se describen los elementos de la interfaz de usuario (IU) 
 
 |Nombre|Descripción|
 |-|-|
-|**Nombre**|El nombre del argumento.|
+|**Name**|El nombre del argumento.|
 |**Dirección**|Especifica si el argumento representa el flujo de datos en el delegado, fuera del delegado o ambos.|
 |**Tipo**|Nombre del tipo del nuevo argumento.|
 |**Valor**|El valor que se usará para esta instancia del argumento de delegado.|

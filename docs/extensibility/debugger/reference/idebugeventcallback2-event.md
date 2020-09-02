@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Evento ? Microsoft Docs
+title: 'IDebugEventCallback2:: Event | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0b60c09b21d531326e343dddd2f1cc69cfb0e5d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729897"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
-Envía una notificación de eventos de depuración.
+Envía la notificación de eventos de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,33 +53,33 @@ int Event( 
 
 ## <a name="parameters"></a>Parámetros
 `pEngine`\
-[en] Un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objeto que representa el motor de depuración (DE) que envía este evento. Se requiere un DE para rellenar este parámetro.
+de Un objeto [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) que representa el motor de depuración (de) que está enviando este evento. Se requiere un DE para rellenar este parámetro.
 
 `pProcess`\
-[en] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso en el que se produce el evento. Este parámetro es rellenado por el administrador de depuración de sesión (SDM). Un DE siempre pasa un valor nulo para este parámetro.
+de Objeto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) que representa el proceso en el que se produce el evento. Este parámetro se rellena mediante el administrador de depuración de sesión (SDM). Un DE siempre pasa un valor null para este parámetro.
 
 `pProgram`\
-[en] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa en el que se produce este evento. Para la mayoría de los eventos, este parámetro no es un valor nulo.
+de Objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa en el que se produce este evento. Para la mayoría de los eventos, este parámetro no es un valor nulo.
 
 `pThread`\
-[en] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso en el que se produce este evento. Para detener eventos, este parámetro no puede ser un valor nulo, ya que el marco de pila se obtiene de este parámetro.
+de Objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso en el que se produce este evento. Para detener eventos, este parámetro no puede ser un valor null, ya que el marco de pila se obtiene de este parámetro.
 
 `pEvent`\
-[en] Un [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa el evento de depuración.
+de Objeto [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) que representa el evento de depuración.
 
 `riidEvent`\
-[en] GUID que identifica qué interfaz `pEvent` de eventos se va a obtener del parámetro.
+de GUID que identifica la interfaz de eventos que se va a obtener del `pEvent` parámetro.
 
 `dwAttrib`\
-[en] Combinación de indicadores de la enumeración [EVENTATTRIBUTES.](../../../extensibility/debugger/reference/eventattributes.md)
+de Combinación de marcas de la enumeración [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Al llamar a `dwAttrib` este método, el parámetro debe coincidir con el valor devuelto `pEvent` por el [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) método como se llama en el objeto de evento pasado en el parámetro.
+ Al llamar a este método, el `dwAttrib` parámetro debe coincidir con el valor devuelto desde el método [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) como se llama en el objeto de evento pasado en el `pEvent` parámetro.
 
- Todos los eventos de depuración se publican de forma asincrónica, independientemente de si un evento en sí es asincrónico o no. Cuando un DE llama a este método, el valor devuelto no indica si se ha procesado el evento, solo si se ha recibido el evento. De hecho, en la mayoría de las circunstancias, el evento no se ha procesado cuando se devuelve este método.
+ Todos los eventos de depuración se publican de forma asincrónica, independientemente de si un evento es asincrónico o no. Cuando un DE llama a este método, el valor devuelto no indica si se ha procesado el evento, solo si se ha recibido el evento. De hecho, en la mayoría de los casos, el evento no se ha procesado cuando este método devuelve.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

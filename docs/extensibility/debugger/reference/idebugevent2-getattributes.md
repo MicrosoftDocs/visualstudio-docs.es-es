@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2::GetAttributes ? Microsoft Docs
+title: 'IDebugEvent2:: GetAttributes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ffc3fc1b7988401611190fdf09e8041bf0dc5b1a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729946"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
-Obtiene los atributos de este evento de depuración.
+Obtiene los atributos para este evento de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int GetAttribute( 
 
 ## <a name="parameters"></a>Parámetros
 `pdwAttrib`\
-[fuera] Combinación de indicadores de la enumeración [EVENTATTRIBUTES.](../../../extensibility/debugger/reference/eventattributes.md)
+enuncia Combinación de marcas de la enumeración [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz es común a todos los eventos. Este método describe el tipo de evento; por ejemplo, es el evento sincrónico o asincrónico y es un evento de detención.
+ La interfaz [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) es común a todos los eventos. Este método describe el tipo de evento; por ejemplo, es el evento sincrónico o asincrónico y es un evento de detención.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

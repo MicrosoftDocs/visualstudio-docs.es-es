@@ -1,5 +1,5 @@
 ---
-title: MaxFrameworkVersion (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: MaxFrameworkVersion (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194329"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica la versión máxima de .NET Framework que requiere la plantilla. Determina si la plantilla se muestra en el **plantillas** sección de la **Agregar nuevo proyecto** cuadro de diálogo, en función del valor seleccionado en el **deversióndeFrameworkdedestino** cuadro de la **Agregar nuevo proyecto** cuadro de diálogo.  
+Especifica la versión máxima del .NET Framework que requiere la plantilla. Determina si la plantilla se muestra en la sección **plantillas** del cuadro de diálogo **Agregar nuevo proyecto** , en función del valor seleccionado en el cuadro versión de **.NET Framework de destino** del cuadro de diálogo **Agregar nuevo proyecto** .  
   
  \<VSTemplate>  
  \<MaxFrameworkVersion>  
@@ -43,20 +43,20 @@ Especifica la versión máxima de .NET Framework que requiere la plantilla. Dete
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestran en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser el mayor número de versión de .NET Framework que está permitido por la plantilla.  
+ El texto debe ser el número de versión más alto del .NET Framework permitido por la plantilla.  
   
 ## <a name="remarks"></a>Comentarios  
- `MaxFrameworkVersion` es un elemento opcional. El elemento en el `TemplateData` sección del archivo .vstemplate actúa como filtro para el **plantillas** sección de la **Agregar nuevo proyecto** cuadro de diálogo. Solo plantillas cuyos requisitos de .NET Framework son menos de `MaxFrameworkVersion` se mostrarán los valores de elemento, en función del valor seleccionado en el **versión de Target Framework** cuadro de la **Agregar nuevo proyecto**cuadro de diálogo. El `MaxFrameworkVersion` debe omitirse el elemento a menos que sea necesario, para no tener que provocar accidentalmente las plantillas de mostrarse cuando se utilizan con las versiones más recientes de .NET Framework.  
+ `MaxFrameworkVersion` es un elemento opcional. El elemento de la `TemplateData` sección del archivo. vstemplate actúa como un filtro para la sección **plantillas** del cuadro de diálogo **Agregar nuevo proyecto** . Solo se mostrarán las plantillas cuyos requisitos de .NET Framework sean inferiores a `MaxFrameworkVersion` los valores de elemento, según el valor seleccionado en el cuadro **versión de .NET Framework de destino** del cuadro de diálogo **Agregar nuevo proyecto** . Se `MaxFrameworkVersion` debe omitir el elemento a menos que sea necesario, por lo que no se puede hacer que las plantillas se muestren sin darse cuenta cuando se usan con las versiones más recientes del .NET Framework.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra los metadatos de un estándar [!INCLUDE[csprcs](../includes/csprcs-md.md)] plantilla de clase.  
+ En el ejemplo siguiente se muestran los metadatos de una [!INCLUDE[csprcs](../includes/csprcs-md.md)] plantilla de clase estándar.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -75,8 +75,8 @@ Especifica la versión máxima de .NET Framework que requiere la plantilla. Dete
 </VSTemplate>  
 ```  
   
- En este ejemplo, la versión máxima de .NET Framework que requiere la plantilla, representado por `MaxFrameworkVersion`, es 3.5. Se mostrará la plantilla anterior solo cuando se selecciona 3.0 o 3.5 en el **versión de Target Framework** cuadro el **Agregar nuevo proyecto** cuadro de diálogo.  
+ En este ejemplo, la versión máxima de la .NET Framework requerida por la plantilla, representada por `MaxFrameworkVersion` , es 3,5. La plantilla anterior solo se mostrará cuando seleccione 3,0 o 3,5 en el cuadro versión de **.NET Framework de destino** en el cuadro de diálogo **Agregar nuevo proyecto** .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

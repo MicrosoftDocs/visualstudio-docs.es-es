@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 50773821b328ea81381744bc6f32b3907cd1c5bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657922"
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
@@ -31,7 +31,7 @@ Notifica a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que combine los paque
 devenv /updateconfiguration
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ejecuta este comando automáticamente cuando instala un paquete de VSIX. Debe ejecutar `devenv.exe /updateconfiguration` después de revisar los archivos de manera que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] actualice la caché de MEF. Esto le permite evaluar si la corrección es adecuada.
 
 ## <a name="example"></a>Ejemplo
@@ -41,5 +41,5 @@ devenv /updateconfiguration
 Devenv.exe /updateconfiguration
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Personalizar la configuración de desarrollo en](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) los [modificadores de línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) de Visual Studio

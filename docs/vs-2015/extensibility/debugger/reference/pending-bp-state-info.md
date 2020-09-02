@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af22ef2d8a77b8c44b9e494736630480a0614162
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205072"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Contiene información sobre el estado de un punto de interrupción que está listo para enlazar a una ubicación del código.  
+Contiene información sobre el estado de un punto de interrupción que está listo para enlazarse a una ubicación del código.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,22 +42,22 @@ public struct PENDING_BP_STATE_INFO { 
   
 ## <a name="members"></a>Miembros  
  state  
- Un valor de la [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) enumeración que especifica el estado del punto de interrupción pendiente.  
+ Un valor de la enumeración [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) que especifica el estado del punto de interrupción pendiente.  
   
- marcas  
- Una combinación de marcas de la [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) enumeración que especifica si el punto de interrupción está virtualizado.  
+ flags  
+ Combinación de marcas de la enumeración [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) que especifica si el punto de interrupción está virtualizado.  
   
-## <a name="remarks"></a>Comentarios  
- Esta estructura se pasa a la [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) método donde se rellena.  
+## <a name="remarks"></a>Observaciones  
+ Esta estructura se pasa al método [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) donde se rellena.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)   
  [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)   

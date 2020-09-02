@@ -1,5 +1,5 @@
 ---
-title: Comportamiento nuevo o modificado con los adaptadores del Editor | Microsoft Docs
+title: Comportamiento nuevo o cambiado con adaptadores de editor | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194177"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamiento nuevo o modificado con los adaptadores del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si está actualizando el código escrito en versiones anteriores del editor de núcleo de Visual Studio y tiene previsto usar el editor adaptadores (o las correcciones de compatibilidad) en lugar de usar la nueva API, debe tener en cuenta las siguientes diferencias en el comportamiento de los adaptadores de editor en relación con el anterior editor básico.  
+Si está actualizando el código escrito en versiones anteriores del editor principal de Visual Studio y piensa usar los adaptadores del editor (o correcciones de compatibilidad) en lugar de usar la nueva API, debe tener en cuenta las siguientes diferencias en el comportamiento de los adaptadores del editor con respecto al editor principal anterior.  
   
 ## <a name="features"></a>Características  
   
-#### <a name="using-setsite"></a>Uso de SetSite  
- Debe llamar a <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> cuando CoCreate búferes de texto, las vistas de texto y ventanas de código antes de realizar otras operaciones en ellos. Sin embargo, esto no es necesario si usa el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> para crearlos, ya que llaman Create() métodos este servicio <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>.  
+#### <a name="using-setsite"></a>Usar SetSite ()  
+ Debe llamar <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> al crear búferes de texto, vistas de texto y ventanas de código antes de realizar otras operaciones en ellos. Sin embargo, esto no es necesario si utiliza <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> para crearlos, ya que los propios métodos Create () de este servicio llaman a <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A> .  
   
-#### <a name="hosting-ivscodewindow-and-ivstextview-in-your-own-content"></a>Objeto IVsCodeWindow hospedaje y IVsTextView en su propio contenido  
- Puede hospedar tanto <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> en su propio contenido mediante el modo de Win32 o modo WPF. Sin embargo, debe tener en cuenta que existen algunas diferencias en los dos modos.  
+#### <a name="hosting-ivscodewindow-and-ivstextview-in-your-own-content"></a>Hospedaje de IVsCodeWindow y IVsTextView en su propio contenido  
+ Puede hospedar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> en su propio contenido mediante el modo Win32 o el modo WPF. Sin embargo, debe tener en cuenta que hay algunas diferencias en los dos modos.  
   
-##### <a name="using-win32-and-wpf-versions-of-ivscodewindow"></a>Uso de las versiones de Win32 y WPF de objeto IVsCodeWindow  
- Se deriva de la ventana del editor de código <xref:Microsoft.VisualStudio.Shell.WindowPane>, que implementa Win32 anteriores <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaz, así como el nuevo WPF <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> interfaz. Puede usar el <xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsWindowPane%23CreatePaneWindow%2A> método para crear un entorno de hospedaje basados en HWND, o el <xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsUIElementPane%23CreateUIElementPane%2A> método para crear un entorno de hospedaje de WPF. El editor subyacente siempre usa WPF, pero puede crear el tipo de panel de ventana que se adapte a sus requisitos de hospedaje si va a insertar este panel de ventana directamente en su propio contenido.  
+##### <a name="using-win32-and-wpf-versions-of-ivscodewindow"></a>Usar las versiones Win32 y WPF de IVsCodeWindow  
+ La ventana de código del editor se deriva de <xref:Microsoft.VisualStudio.Shell.WindowPane> , que implementa la interfaz Win32 más antigua, así <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> como la nueva <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> interfaz WPF. Puede usar el <xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsWindowPane%23CreatePaneWindow%2A> método para crear un entorno de hospedaje basado en HWND o el <xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsUIElementPane%23CreateUIElementPane%2A> método para crear un entorno de hospedaje de WPF. El editor subyacente siempre usa WPF, pero puede crear el tipo de panel de ventana que mejor se adapte a sus requisitos de hospedaje si va a incrustar este panel de ventana directamente en su propio contenido.  
   
-##### <a name="using-win32-and-wpf-versions-of-ivstextview"></a>Uso de versiones de Win32 y WPF de IVsTextView  
- Puede establecer un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> al modo de Win32 o WPF.  
+##### <a name="using-win32-and-wpf-versions-of-ivstextview"></a>Usar las versiones Win32 y WPF de IVsTextView  
+ Puede establecer en modo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Win32 o en modo WPF.  
   
- Cuando un generador de editores crea una vista de texto, de forma predeterminada se hospeda en un HWND y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> devuelve un HWND. No debe usar este modo para incrustar el editor dentro de un control WPF.  
+ Cuando un generador de editores crea una vista de texto, se hospeda de forma predeterminada dentro de un HWND y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> devuelve un HWND. No debe utilizar este modo para incrustar el editor dentro de un control de WPF.  
   
- Para establecer una vista de texto en modo WPF, debe llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.Initialize%2A> y pase <xref:Microsoft.VisualStudio.TextManager.Interop.TextViewInitFlags3> , uno de la inicialización de marca en el `InitView` parámetro. Puede obtener el <xref:System.Windows.FrameworkElement> mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane.CreateUIElementPane%2A>.  
+ Para establecer una vista de texto en modo WPF, debe llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.Initialize%2A> y pasar <xref:Microsoft.VisualStudio.TextManager.Interop.TextViewInitFlags3> como una de las marcas de inicialización en el `InitView` parámetro. Puede obtener llamando <xref:System.Windows.FrameworkElement> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane.CreateUIElementPane%2A> .  
   
- Modo WPF difiere del modo de Win32 de dos maneras. En primer lugar, la vista de texto puede hospedarse en un contexto WPF. Se puede obtener acceso al panel WPF convirtiendo el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> y llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>. Segundo, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> todavía devuelve un HWND, aunque este HWND se puede utilizar solo para comprobar su posición y establecer el foco en él. No debe usar este HWND para responder a un mensaje WM_PAINT, porque no afectará a cómo el editor pinta la ventana. Este HWND está presente sólo para facilitar la transición hacia el nuevo editor de código por medio de los adaptadores. Se recomienda encarecidamente que no debe utilizar `VIF_NO_HWND_SUPPORT` si el componente requiere un HWND trabajar, debido a las limitaciones en el HWND devuelto desde `GetWindowHandle` mientras se encuentre en este modo.  
+ El modo WPF difiere del modo Win32 de dos maneras. En primer lugar, la vista de texto se puede hospedar en un contexto de WPF. Puede tener acceso al panel de WPF convirtiendo el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> en <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> y llamando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A> . En segundo lugar, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> todavía devuelve un HWND, pero este HWND solo se puede usar para comprobar su posición y establecer el foco en él. No debe usar este HWND para responder a un mensaje de WM_PAINT, ya que no afectará al modo en que el editor pinta la ventana. Este HWND solo está presente para facilitar la transición al nuevo código del editor por medio de los adaptadores. Se recomienda no usar `VIF_NO_HWND_SUPPORT` si el componente requiere que el elemento HWND funcione, debido a las limitaciones del HWND devuelto desde `GetWindowHandle` mientras se encuentra en este modo.  
   
 #### <a name="passing-arrays-as-parameters-in-native-code"></a>Pasar matrices como parámetros en código nativo  
- Existen muchos métodos en el editor de API heredado que tienen parámetros que incluyen una matriz y su recuento. Algunos ejemplos son:  
+ Hay muchos métodos en la API de editor heredada que tienen parámetros que incluyen una matriz y su recuento. Algunos ejemplos son:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.RemoveViewOnlyMarkerTypes%2A>  
   
- Si se llama a estos métodos en código nativo, debe pasar en un solo elemento a la vez. Si pasa más de un elemento, se rechazará la llamada, debido a problemas con la implementación de interoperabilidad primaria.  
+ Si llama a estos métodos en código nativo, debe pasar solo un elemento cada vez. Si se pasa más de un elemento, se rechazará la llamada debido a problemas con la implementación de la interoperabilidad primaria.  
   
- El problema es más complejo con métodos como <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetIgnoreMarkerTypes%2A>. Cada vez que se llama a este método, borra la lista anterior de tipos de marcador omitidos, por lo que no es posible simplemente llamar a este método tres veces con tres tipos diferentes de marcador. La única solución es llamar a este método solo en código administrado.  
+ El problema es más complejo con métodos como <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetIgnoreMarkerTypes%2A> . Cada vez que se llama a este método, borra la lista anterior de tipos de marcador omitidos, por lo que no es posible llamar a este método tres veces con tres tipos de marcadores diferentes. La única solución es llamar a este método solo en código administrado.  
   
 #### <a name="threading"></a>Subprocesos  
- El adaptador de búfer siempre se debe llamar desde el subproceso de interfaz de usuario. El adaptador de búfer es un objeto administrado, lo que significa que omiten la serialización COM que realiza la llamada a él desde el código administrado y la llamada no se efectuará automáticamente al subproceso de interfaz de usuario.  Si el adaptador de búfer que está llamando desde un subproceso en segundo plano, debe usar <xref:System.Windows.Threading.Dispatcher.Invoke%2A> o un método similar.  
+ Siempre debe llamar al adaptador de búfer desde el subproceso de la interfaz de usuario. El adaptador de búfer es un objeto administrado, lo que significa que, al llamar a él desde código administrado, se omitirá el cálculo de referencias COM y la llamada no se calculará automáticamente para el subproceso de interfaz de usuario.  Si llama al adaptador de búfer desde un subproceso en segundo plano, debe usar <xref:System.Windows.Threading.Dispatcher.Invoke%2A> o un método similar.  
   
 #### <a name="lockbuffer-methods"></a>Métodos LockBuffer  
- Todos los métodos de LockBuffer() están en desuso. Algunos ejemplos son:  
+ Todos los métodos LockBuffer () están en desuso. Algunos ejemplos son:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   
@@ -65,8 +65,8 @@ Si está actualizando el código escrito en versiones anteriores del editor de n
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.LockBuffer%2A>  
   
-#### <a name="commit-events"></a>Confirmación de eventos  
- Confirmar no se admiten eventos. Llamar a un método que le informa de estos eventos hace que el método devuelva un código de error.  
+#### <a name="commit-events"></a>Confirmar eventos  
+ No se admiten los eventos de confirmación. La llamada a un método que aconseja para estos eventos hace que el método devuelva un código de error.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>  
   
@@ -75,15 +75,15 @@ Si está actualizando el código escrito en versiones anteriores del editor de n
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUndoRedoClusterWithCommitEvents>  
   
 #### <a name="texteditorevents"></a>TextEditorEvents  
- El <xref:EnvDTE.TextEditorEvents> ya no se activan en Commit(). En su lugar, se activan en cada cambio de texto.  
+ <xref:EnvDTE.TextEditorEvents>Ya no se activa en commit (). En su lugar, se activan en cada cambio de texto.  
   
 #### <a name="text-markers"></a>Marcadores de texto  
- Debe llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker.Invalidate%2A> en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker> objetos cuando se quita de ellos. En versiones anteriores, es necesario solo liberar los marcadores.  
+ Debe llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker.Invalidate%2A> en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker> objetos cuando los quite. En versiones anteriores, solo era necesario liberar los marcadores.  
   
 #### <a name="line-numbers"></a>Números de línea  
- Para una variedad de métodos en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx>, números de línea se corresponden con números de línea de búfer subyacente, los números de línea no ese factor en la esquematización y ajuste de palabra, como en Visual Studio 2008.  
+ En el caso de una variedad de métodos en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx> , los números de línea se corresponden con los números de línea del búfer subyacente, no con los números de línea que se incluyen en la esquematización y el ajuste automático de línea, como en Visual Studio 2008.  
   
- Los métodos afectados incluyen lo siguiente (la lista no es exhaustiva):  
+ Entre los métodos afectados se incluyen los siguientes (la lista no es exhaustiva):  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
@@ -110,30 +110,30 @@ Si está actualizando el código escrito en versiones anteriores del editor de n
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>esquematizar  
- Los clientes de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> verá solo las regiones de esquematización que se agregaron con <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. No podrá visualizarlo regiones ad hoc, porque no se agregan a través de los adaptadores de editor. Del mismo modo, estos clientes no verán agregadas por los lenguajes (incluido C# y C++) que están usando el nuevo editor de código en lugar de los adaptadores de editor de las regiones de esquematización.  
+ Los clientes de verán <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> solo las regiones de esquematización que se agregaron mediante <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A> . No verán regiones ad hoc, porque no se agregan a través de los adaptadores del editor. Del mismo modo, estos clientes no verán las regiones de esquematización agregadas por lenguajes (incluidos C# y C++) que usan el nuevo código del editor en lugar de los adaptadores del editor.  
   
 #### <a name="line-heights"></a>Alto de línea  
- En el nuevo editor de líneas de texto pueden tener distintas alturas, según el tamaño de fuente y transformaciones de línea posibles que pueden mover la línea en relación con otras líneas. El alto de línea devuelto por métodos como <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A> es el alto de una línea con el tamaño de fuente predeterminado sin transformaciones de línea que se aplica. Este alto puede o no refleje el alto de una línea en la vista real.  
+ En el nuevo editor, las líneas de texto pueden tener distintos altos, en función del tamaño de fuente y las transformaciones de línea posibles que puedan trasladar la línea con respecto a otras líneas. El alto de línea devuelto por métodos como <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A> es el alto de una línea usando el tamaño de fuente predeterminado sin aplicar transformaciones de línea. Este alto puede reflejar o no el alto real de una línea en la vista.  
   
 #### <a name="eventing-and-undo"></a>Eventos y deshacer  
- En el nuevo editor de la vista continúa realizar operaciones como la representación y provocar eventos continuamente, incluso cuando un clúster de deshacer está abierto. Este comportamiento es diferente de vistas heredadas, que no llevó a cabo esas operaciones hasta después del cierre del clúster de deshacer.  
+ En el nuevo editor, la vista continúa realizando operaciones como la representación y generación continua de eventos, incluso cuando un clúster para deshacer está abierto. Este comportamiento es diferente del de las vistas heredadas, que no realizaron esas operaciones hasta después del cierre del clúster de deshacer.  
   
 #### <a name="intellisense"></a>IntelliSense  
   
-- El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> método se producirá un error si se pasa en una clase que no implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Ya no se admiten elementos emergentes dibujado por el propietario de Win32 personalizado.  
+- El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> método producirá un error si se pasa una clase que no implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3> . Ya no se admiten los elementos emergentes dibujados por el propietario de Win32.  
   
-#### <a name="smarttags"></a>SmartTags  
- No hay adaptador compatibilidad para las etiquetas inteligentes creadas con, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> interfaces.  
+#### <a name="smarttags"></a>Etiquetas inteligentes  
+ No hay compatibilidad con el adaptador para las etiquetas inteligentes creadas con las <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData> interfaces,, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> .  
   
 #### <a name="dte"></a>DTE  
- <xref:EnvDTE80.IncrementalSearch> no está implementada.  
+ <xref:EnvDTE80.IncrementalSearch> no está implementado.  
   
 ## <a name="unimplemented-methods"></a>Métodos no implementados  
  Algunos métodos no se han implementado en el adaptador de búfer de texto, el adaptador de vista de texto y el adaptador de capa de texto.  
   
 |Interfaz|No implementado|  
 |---------------|---------------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|`Reload(false)` no está implementada.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|`Reload(false)` no está implementado.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.EnumSpans%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetBufferMappingModes%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.GetMarkerData%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.ReleaseMarkerData%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CanReplaceLines%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CopyLineText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.EnumLayerMarkers%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetBaseBuffer%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetLengthOfLine%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetLineCount%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetLineText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetMarkerData%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.LockBufferEx%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.MapLocalSpansToTextOriginatingLayer%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.ReleaseMarkerData%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.ReplaceLines%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.ReplaceLinesEx%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.UnlockBufferEx%2A>|  
@@ -143,5 +143,5 @@ Si está actualizando el código escrito en versiones anteriores del editor de n
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.InvokeInsertionUI%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetHoverWaitTimer%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetViewClassID%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> se implementa en los adaptadores, pero se omite la interfaz de usuario de esquematización.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> se implementa en los adaptadores, pero se omite la interfaz de usuario de esquematización.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> está implementado en los adaptadores, pero la interfaz de usuario de esquematización lo omite.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> está implementado en los adaptadores, pero la interfaz de usuario de esquematización lo omite.|

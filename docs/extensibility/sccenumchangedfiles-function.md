@@ -1,5 +1,5 @@
 ---
-title: Función SccEnumChangedFiles ? Microsoft Docs
+title: Función SccEnumChangedFiles | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700905"
 ---
-# <a name="sccenumchangedfiles-function"></a>Función SccEnumChangedFiles
+# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles función)
 Dada una lista de archivos locales, esta función determina qué archivos son diferentes de las versiones correspondientes en la base de datos de control de código fuente.
 
 ## <a name="syntax"></a>Sintaxis
@@ -37,23 +37,23 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>Parámetros
  pContext
 
-[en] El puntero de contexto del complemento de control de código fuente.
+de Puntero de contexto del complemento de control de código fuente.
 
  hWnd
 
-[en] Identificador de la ventana IDE que el complemento de control de código fuente puede usar como elemento primario para los cuadros de diálogo que proporciona.
+de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
 
- cArchivos
+ cFiles
 
-[en] Número de nombres de `lpFileNames` archivo especificados en la matriz. También especifica el `plIsFileDifferent` tamaño de la matriz.
+de Número de nombres de archivo especificados en la `lpFileNames` matriz. También especifica el tamaño de la `plIsFileDifferent` matriz.
 
  lpFileNames
 
-[en] Matriz de nombres de archivo locales que se pueden comprobar.
+de Matriz de nombres de archivo local que se va a comprobar.
 
  plIsFileDifferent
 
-[adentro, fuera] Matriz de valores que indica el estado de diferencia `cFiles` de cada archivo (la matriz debe tener al menos entradas). Distinto de cero significa que el archivo es diferente.
+[in, out] Matriz de valores que indican el estado de la diferencia de cada archivo (la matriz debe tener al menos `cFiles` entradas). Distinto de cero significa que el archivo es diferente.
 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
@@ -64,4 +64,4 @@ SCCRTN SccEnumChangedFiles(
 |SCC_UNSPECIFIEDERROR|Error genérico.|
 
 ## <a name="see-also"></a>Vea también
-- [Funciones de API de plug-in de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+- [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

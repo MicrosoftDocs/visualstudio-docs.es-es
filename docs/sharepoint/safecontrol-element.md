@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547932"
 ---
 # <a name="safecontrol-element"></a>SafeControl (elemento)
@@ -43,9 +43,9 @@ ms.locfileid: "85547932"
 |**Assembl**|Atributo **xs: String** opcional.<br /><br /> Nombre del ensamblado en el que se define el control ASPX o el elemento Web. De forma predeterminada, este atributo usa el parámetro **$SharePoint. Project. AssemblyFullName $** reemplazable para el nombre del ensamblado. Para obtener más información, vea [parámetros reemplazables](../sharepoint/replaceable-parameters.md).|
 |**IsSafe**|Atributo **xs: Boolean** opcional.<br /><br /> Especifica si el control ASPX o el elemento Web es seguro para que los usuarios que no son de confianza tengan acceso a.|
 |**IsSafeAgainstScript**|Atributo **xs: Boolean** opcional.<br /><br /> Especifica si los usuarios que no son de confianza pueden ver o editar las propiedades del control ASPX o del elemento Web.|
-|**Nombre**|Atributo **xs: String** opcional.<br /><br /> Nombre de esta entrada de control segura en la colección.|
+|**Name**|Atributo **xs: String** opcional.<br /><br /> Nombre de esta entrada de control segura en la colección.|
 |**Espacio de nombres**|Atributo **xs: String** opcional.<br /><br /> Espacio de nombres del control o elemento Web ASPX.|
-|**NombreDeTipo**|Atributo **xs: String** opcional.<br /><br /> Nombre del tipo del control o elemento Web ASPX.|
+|**TypeName**|Atributo **xs: String** opcional.<br /><br /> Nombre del tipo del control o elemento Web ASPX.|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
@@ -56,7 +56,7 @@ ms.locfileid: "85547932"
 |-------------|-----------------|
 |[SafeControls](../sharepoint/safecontrols-element.md)|Representa una colección de controles ASPX y elementos web que se designan como seguros para que cualquier usuario tenga acceso a cualquier página ASPX en el sitio de SharePoint.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Para obtener más información sobre los controles seguros, vea [proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Información de elemento

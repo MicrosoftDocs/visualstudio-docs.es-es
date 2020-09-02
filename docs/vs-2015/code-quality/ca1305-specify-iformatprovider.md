@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 025d76f8e946dd3021141d6736c6b4bd40d57170
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539091"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |Identificador de comprobación|CA1305|
-|Categoría|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa
@@ -61,7 +61,7 @@ ms.locfileid: "85539091"
  Es seguro suprimir una advertencia de esta regla cuando está seguro de que el proveedor de formato o referencia cultural predeterminado es la opción correcta y donde el mantenimiento del código no es una prioridad de desarrollo importante.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente, `BadMethod` se producen dos infracciones de esta regla. `GoodMethod`corrige la primera infracción pasando la referencia cultural de todos los idiomas a <xref:System.String.Compare%2A> y corrige la segunda infracción pasando la referencia cultural actual a <xref:System.String.ToLower%2A> porque `string3` se muestra al usuario.
+ En el ejemplo siguiente, `BadMethod` se producen dos infracciones de esta regla. `GoodMethod` corrige la primera infracción pasando la referencia cultural de todos los idiomas a <xref:System.String.Compare%2A> y corrige la segunda infracción pasando la referencia cultural actual a <xref:System.String.ToLower%2A> porque `string3` se muestra al usuario.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 

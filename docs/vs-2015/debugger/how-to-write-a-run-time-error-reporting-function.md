@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Escribir una función para generar informes de errores en tiempo de ejecución | Documentos de Microsoft
+title: 'Cómo: escribir una función de generación de informes de errores en tiempo de ejecución | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6468e14e3ed588386440e992d9a570e735123bab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65678904"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Procedimiento Escribir una función para generar informes de errores en tiempo de ejecución
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Cómo: Escribir una función para generar informes de errores en tiempo de ejecución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Una función personalizada para la generación de informes de error en tiempo de ejecución debe tener la misma declaración que `_CrtDbgReportW`. Debe devolver un valor de 1 al depurador.  
@@ -67,7 +67,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```  
   
 ## <a name="example"></a>Ejemplo  
- En el siguiente ejemplo se muestra una función de supervisión personalizada más compleja. En este ejemplo, la instrucción swich controla varios tipos de errores, definidos por el parámetro `reportType` de `_CrtDbgReportW`. Puesto que va a sustituir `_CrtDbgReportW`, no puede utilizar `_CrtSetReportMode`. La función debe controlar la salida. El primer argumento variable de esta función toma un número de error en tiempo de ejecución. Para obtener más información, consulte [_RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06).  
+ En el siguiente ejemplo se muestra una función de supervisión personalizada más compleja. En este ejemplo, la instrucción swich controla varios tipos de errores, definidos por el parámetro `reportType` de `_CrtDbgReportW`. Puesto que va a sustituir `_CrtDbgReportW`, no puede utilizar `_CrtSetReportMode`. La función debe controlar la salida. El primer argumento variable de esta función toma un número de error en tiempo de ejecución. Para obtener más información, vea [_RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06).  
   
 ```  
 #include <windows.h>  
@@ -127,5 +127,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Personalización de las comprobaciones nativas en tiempo de ejecución](../debugger/native-run-time-checks-customization.md)

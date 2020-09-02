@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca3f3806f9097082d71dd80e74ccf48cd78c951b
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386893"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introducción a la depuración en Visual Studio 2015
@@ -28,7 +28,7 @@ Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de
  Ha ideado el editor y ha creado parte del código. Ahora, quiere empezar a depurar ese código. En Visual Studio 2015, al igual que en la mayoría de los IDE, hay dos fases de depuración: compilar el código para detectar y resolver errores de proyecto y de compilador; y ejecutar ese código en el entorno para detectar y resolver errores de tiempo de ejecución y dinámicos.
 
 ### <a name="configuring-a-build"></a>Configurar una compilación
- Hay dos tipos básicos de configuración de compilación: **Depuración** y **Versión**. La primera configuración genera un archivo ejecutable más lento y más grande que permite una experiencia de depuración en tiempo de ejecución interactiva y más completa, pero que nunca se debe enviar. La segunda crea un archivo ejecutable más rápido y optimizado, adecuado para enviar (al menos desde la perspectiva del compilador).
+ Hay dos tipos básicos de configuración de compilación: **depuración** y **lanzamiento**. La primera configuración genera un archivo ejecutable más lento y más grande que permite una experiencia de depuración en tiempo de ejecución interactiva y más completa, pero que nunca se debe enviar. La segunda crea un archivo ejecutable más rápido y optimizado, adecuado para enviar (al menos desde la perspectiva del compilador).
 
  La configuración de compilación predeterminada es **Depuración**.
 
@@ -60,7 +60,7 @@ Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de
  ![Resultados de compilación correcta de Visual Studio](../ide/media/vs-ide-gs-debug-success-build.PNG "vs_ide_gs_debug_success_build")
 
 ### <a name="reviewing-the-error-list"></a>Revisar la lista de errores
- Salvo que no haya realizado ninguna modificación en un código que ya se haya compilado correctamente, es probable que tenga un error. Si no está familiarizado con la codificación, probablemente tenga muchos. Los errores a veces son obvios, como un simple error de sintaxis o nombre de variable incorrecto, y a veces son difíciles de entender solo con un código críptico como guía. Para obtener una vista más clara de los problemas, vaya a la parte inferior de la ventana de **salida** de la compilación y haga clic en la pestaña **lista de errores** . Esto le lleva a una vista más organizada de los errores y advertencias del proyecto y también ofrece algunas opciones adicionales.
+ Salvo que no haya realizado ninguna modificación en un código que ya se haya compilado correctamente, es probable que tenga un error. Si no está familiarizado con la codificación, probablemente tenga muchos. Los errores a veces son obvios, como un simple error de sintaxis o nombre de variable incorrecto, y a veces son difíciles de entender solo con un código críptico como guía. Para obtener una vista más clara de los problemas, vaya a la parte inferior de la ventana **Salida** de la compilación y haga clic en la pestaña **Lista de errores**. Se mostrará una vista más organizada de los errores y advertencias del proyecto, que ofrece también algunas opciones adicionales.
 
  ![Salida y lista de errores de Visual Studio 2015](../ide/media/vs-ide-gs-debug-bad-build-error-list.PNG "Vs_ide_gs_debug_bad_build_error_list")
 

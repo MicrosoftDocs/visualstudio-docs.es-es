@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39669e2c1268c2e5d2a294f5b95c314500ead78a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205100"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica las marcas de estado de punto de interrupción pendiente.  
+Especifica las marcas de estado de punto de interrupción pendientes.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,21 +43,21 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
   
 ## <a name="members"></a>Miembros  
  PBPSF_NONE  
- Marcador de posición.  
+ Falso.  
   
  PBPSF_VIRTUALIZED  
- Especifica un virtualizado pendiente de punto de interrupción, que se enlaza cada vez que se carga código nuevo.  
+ Especifica un punto de interrupción virtualizado pendiente, que se va a enlazar cada vez que se cargue código nuevo.  
   
-## <a name="remarks"></a>Comentarios  
- Utilizado para la `flags` miembro de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estructura.  
+## <a name="remarks"></a>Observaciones  
+ Se utiliza para el `flags` miembro de la estructura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

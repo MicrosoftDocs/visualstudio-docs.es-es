@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ce412fdeb8d466708f3231cba14718d13720c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65676638"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly (Tarea)
@@ -39,10 +39,10 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> ge
 |`CompileTargetName`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre del destino de [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] que se usa para generar ensamblados a partir de archivos de código fuente. El valor típico de **CompileTargetName** es **CoreCompile**.|  
 |`CompileTypeName`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el tipo de compilación que realiza el destino especificado por el parámetro **CompileTargetName**. Para el destino **CoreCompile**, este valor es **Compile**.|  
 |`CurrentProject`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso completa del archivo de proyecto de [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] para el proyecto que requiere un ensamblado de destino temporal.|  
-|`GeneratedCodeFiles`|Parámetro opcional de tipo **ITaskItem[]**.<br /><br /> Especifica la lista de archivos de código administrado específicos del lenguaje y generados por la tarea [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
+|`GeneratedCodeFiles`|Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de archivos de código administrado específicos del lenguaje y generados por la tarea [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
 |`IntermediateOutputPath`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el directorio en el que se genera el ensamblado de destino temporal.|  
 |`MSBuildBinPath`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ubicación de **MSBuild.exe**, necesario para compilar el ensamblado de destino temporal.|  
-|`ReferencePath`|Parámetro opcional de tipo **ITaskItem[]**.<br /><br /> Especifica una lista de ensamblados, por ruta de acceso y nombre de archivo, a los que hacen referencia los tipos compilados en el ensamblado de destino temporal.|  
+|`ReferencePath`|Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica una lista de ensamblados, por ruta de acceso y nombre de archivo, a los que hacen referencia los tipos compilados en el ensamblado de destino temporal.|  
 |`ReferencePathTypeName`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el parámetro que usa el parámetro de destino de compilación (**CompileTargetName**) que especifica la lista de referencias del ensamblado (**ReferencePath**). El valor correcto es **ReferencePath**.|  
   
 ## <a name="remarks"></a>Comentarios  
@@ -73,7 +73,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> ge
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)   
  [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   

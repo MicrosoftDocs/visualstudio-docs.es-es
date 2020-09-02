@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
+title: 'IDebugParsedExpression:: EvaluateSync | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6761cd5ec9df67d511ab905e173ac0f286c5ee7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194550"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método evalúa la expresión analizada y, opcionalmente, convierte el resultado a otro tipo de datos.  
+Este método evalúa la expresión analizada y, opcionalmente, convierte el resultado en otro tipo de datos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -52,33 +52,33 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parámetros  
  `dwEvalFlags`  
- [in] Una combinación de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) constantes que controlan cómo se puede evaluar la expresión.  
+ de Combinación de constantes de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que controlan cómo se va a evaluar la expresión.  
   
  `dwTimeout`  
- [in] Especifica el tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
+ de Especifica el tiempo máximo, en milisegundos, que se va a esperar antes de que se devuelva desde este método. Use `INFINITE` para esperar indefinidamente.  
   
  `pSymbolProvider`  
- [in] El proveedor de símbolos, expresado como un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interfaz.  
+ de El proveedor de símbolos, expresado como una interfaz [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .  
   
  `pAddress`  
- [in] La ubicación de ejecución actual dentro de un método, expresado como un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
+ de La ubicación de ejecución actual dentro de un método, expresada como una interfaz [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pBinder`  
- [in] El enlazador, expresado como un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfaz.  
+ de El enlazador, expresado como una interfaz [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .  
   
  `bstrResultType`  
- [in] El tipo de resultado debe convertirse. Este argumento puede ser un valor null.  
+ de Tipo al que se debe convertir el resultado. Este argumento puede ser un valor null.  
   
  `ppResult`  
- [out] Devuelve el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaz que representa los resultados de evaluación.  
+ enuncia Devuelve la interfaz [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa los resultados de la evaluación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El contexto de evaluación de expresión viene dado por `pAddress`, lo que hace posible determinar el método contenedor y, a continuación, el ámbito del idioma de uso de reglas para determinar el valor de los símbolos en la expresión.  
+ El contexto de evaluación de expresión lo proporciona `pAddress` , lo que permite determinar el método contenedor y, a continuación, usar reglas de ámbito de lenguaje para determinar el valor de los símbolos en la expresión.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
