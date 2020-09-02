@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ecec9004506a9bd05d3d773e44bb264af363f96f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670864"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Cómo: Evaluar una expresión XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede evaluar las expresiones XPath con el cuadro de diálogo **Inspección rápida** . La expresión XPath debe ser válida de acuerdo con la recomendación XPath 1.0 de W3C. El contexto XSLT actual (es decir, el nodo `self::node()` en la ventana **variables locales** ) proporciona el contexto de evaluación para la expresión XPath.
+Puede evaluar las expresiones XPath con el cuadro de diálogo **Inspección rápida** . La expresión XPath debe ser válida de acuerdo con la recomendación XPath 1.0 de W3C. El contexto XSLT actual (es decir, el `self::node()` nodo en la ventana **variables locales** ) proporciona el contexto de evaluación para la expresión XPath.
 
  En la siguiente lista se describen las funciones que se admiten al evaluar una expresión XPath:
 
@@ -30,7 +30,7 @@ Puede evaluar las expresiones XPath con el cuadro de diálogo **Inspección ráp
 - No se admiten funciones definidas por el usuario.
 
 > [!NOTE]
-> En el procedimiento siguiente se usan los archivos belowAvg. xsl y Books. xml del tema [Tutorial: depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) .
+> En el procedimiento siguiente se usan los archivos belowAvg. xsl y books.xml del tema [Tutorial: depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) .
 
 ### <a name="to-evaluate-an-xpath-expression"></a>Para evaluar una expresión XPath
 
@@ -46,11 +46,11 @@ Puede evaluar las expresiones XPath con el cuadro de diálogo **Inspección ráp
 
 4. Escriba `./price/text()` en el campo **expresión** del cuadro de diálogo **Inspección rápida** y haga clic en volver a **evaluar**.
 
-     El precio del nodo de libro actual aparece en el cuadro **valor** .
+     El precio del nodo de libro actual aparece en el cuadro **Valor**.
 
-5. Cambie la expresión XPath a `./price/text() < $bookAverage` y haga clic en volver a **evaluar**.
+5. Cambie la expresión XPath a `./price/text() < $bookAverage` y haga clic en **Actualizar**.
 
-     El cuadro **valor** muestra que la expresión XPath se evalúa como `true`.
+     El cuadro **Valor** muestra que la expresión XPath se evalúa como `true`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)

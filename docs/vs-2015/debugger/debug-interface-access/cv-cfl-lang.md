@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c1fabdb202d51b85eb2983360bdfd02757f7649
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699359"
 ---
-# <a name="cvcfllang"></a>CV_CFL_LANG
+# <a name="cv_cfl_lang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica el lenguaje de código fuente de la aplicación o un módulo vinculado.  
+Especifica el idioma del código fuente de la aplicación o del módulo vinculado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -51,62 +51,62 @@ typedef enum CV_CFL_LANG { 
   
 ## <a name="elements"></a>Elementos  
  CV_CFL_C  
- Es de lenguaje C.  
+ El idioma de la aplicación es C.  
   
  CV_CFL_CXX  
- Idioma de la aplicación es C++.  
+ El lenguaje de la aplicación es C++.  
   
  CV_CFL_FORTRAN  
- Idioma de la aplicación es FORTRAN.  
+ El lenguaje de aplicación es FORTRAN.  
   
  CV_CFL_MASM  
- Idioma de la aplicación es Microsoft Macro Assembler.  
+ El idioma de la aplicación es Microsoft macro Assembler.  
   
  CV_CFL_PASCAL  
- Idioma de la aplicación es Pascal.  
+ El idioma de la aplicación es Pascal.  
   
  CV_CFL_BASIC  
- Lenguaje de la aplicación es BASIC.  
+ El idioma de la aplicación es básico.  
   
  CV_CFL_COBOL  
- Idioma de la aplicación es COBOL.  
+ El idioma de la aplicación es COBOL.  
   
  CV_CFL_LINK  
- Aplicación es un módulo generada por el vinculador.  
+ La aplicación es un módulo generado por el enlazador.  
   
  CV_CFL_CVTRES  
- Aplicación es un módulo de recursos con la herramienta CVTRES puede convertido.  
+ La aplicación es un módulo de recursos convertido con la herramienta CVTRES.  
   
  CV_CFL_CVTPGD  
- Aplicación es un módulo POGO optimizado generado con la herramienta CVTPGD.  
+ La aplicación es un módulo con optimización POGO generado con la herramienta CVTPGD.  
   
  CV_CFL_CSHARP  
- Lenguaje es C#.  
+ El lenguaje de la aplicación es C#.  
   
  CV_CFL_VB  
- Idioma de la aplicación es Visual Basic.  
+ El idioma de la aplicación es Visual Basic.  
   
  CV_CFL_ILASM  
- Idioma de la aplicación es el ensamblado de lenguaje intermedio (es decir, el ensamblado de Common Language Runtime (CLR)).  
+ El lenguaje de aplicación es un ensamblado de lenguaje intermedio (es decir, un ensamblado de Common Language Runtime (CLR)).  
   
  CV_CFL_JAVA  
- Idioma de la aplicación es Java.  
+ El lenguaje de la aplicación es Java.  
   
  CV_CFL_JSCRIPT  
- Idioma de la aplicación es Jscript.  
+ El lenguaje de la aplicación es JScript.  
   
  CV_CFL_MSIL  
- Idioma de la aplicación es un desconocido Microsoft Intermediate Language (MSIL), posiblemente un resultado del uso de la [/LTCG (generación de código de tiempo de vínculo)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) cambie.  
+ El lenguaje de aplicación es un lenguaje intermedio de Microsoft (MSIL) desconocido, posiblemente como resultado del uso del modificador [/LTCG (generación de código en tiempo de vínculo)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) .  
   
  CV_CFL_HLSL  
- Idioma de la aplicación es el lenguaje de sombreado de alto nivel.  
+ El idioma de la aplicación es el idioma del sombreador de alto nivel.  
   
-## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración se devuelven mediante una llamada a la [Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) método.  
+## <a name="remarks"></a>Observaciones  
+ Los valores de esta enumeración son devueltos por una llamada al método [IDiaSymbol:: get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: cvconst.h  
+ Encabezado: cvconst. h  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

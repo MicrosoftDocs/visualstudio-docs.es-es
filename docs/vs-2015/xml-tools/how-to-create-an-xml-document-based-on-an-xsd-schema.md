@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9e48c48d6711a1eb21157122d13790e22688855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670945"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Cómo: Crear un documento XML basado en un esquema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedimiento Crear un documento XML basado en un esquema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La característica **generar XML de ejemplo** genera un archivo XML de ejemplo basado en el archivo de esquema XML (XSD).
+La característica **Generar XML de ejemplo** genera un archivo XML de ejemplo a partir del archivo de esquema XML (XSD).
 
  Puede usar esta opción en los escenarios siguientes:
 
@@ -27,7 +27,7 @@ La característica **generar XML de ejemplo** genera un archivo XML de ejemplo b
 
 - Confirmar que el esquema hace aquello que estaba previsto.
 
-  La característica **generar XML de ejemplo** solo está disponible en los elementos globales y requiere un conjunto de esquemas XML válido.
+  La característica **Generar XML de ejemplo** solo está disponible en los elementos globales y requiere un conjunto de esquemas XML válido.
 
   Esta característica suele generar documentos XML válidos. Sin embargo, si el esquema contiene uno o varios de los siguientes elementos, la muestra podría no ser válida:
 
@@ -45,7 +45,7 @@ La característica **generar XML de ejemplo** genera un archivo XML de ejemplo b
 
 1. Siga los pasos descritos en [Cómo: crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic con el botón secundario en el elemento global `PurchaseOrder`. Seleccione **generar XML de ejemplo**.
+2. En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic con el botón derecho en el elemento global `PurchaseOrder`. Seleccione **Generar XML de ejemplo**.
 
      Al seleccionar esta opción, se generará el archivo PurchaseOrder.xml con el contenido XML de ejemplo siguiente y se abrirá en el Editor XML:
 
@@ -76,5 +76,5 @@ La característica **generar XML de ejemplo** genera un archivo XML de ejemplo b
     </PurchaseOrder>
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Trabajo con datos XML](../xml-tools/working-with-xml-data.md)

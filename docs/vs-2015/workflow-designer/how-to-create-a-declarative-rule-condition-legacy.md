@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849335"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Cómo: Crear una condición de regla declarativa (Heredado)
@@ -63,5 +63,5 @@ En este tema se describe cómo declarar una condición de regla usando [!INCLUDE
 
      Para obtener información sobre cómo usar el cuadro de diálogo **seleccionar condición** , vea [seleccionar condición (cuadro de diálogo) (heredado)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Actividades de flujo de trabajo heredadas](../workflow-designer/legacy-workflow-activities.md) [usar el ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) [mediante la actividad IfElseBranchActivity](https://msdn2.microsoft.com/library/bb628465.aspx) [usar la actividad de replicador](https://msdn2.microsoft.com/library/bb628544.aspx) [mediante el](https://msdn2.microsoft.com/library/bb628552.aspx) cuadro de [diálogo Editor de condiciones de reglas de actividad (heredado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) cuadro de diálogo [seleccionar condición (heredado](../workflow-designer/select-condition-dialog-box-legacy.md) ) [uso de condiciones en flujos de trabajo](https://msdn2.microsoft.com/library/bb628447.aspx)

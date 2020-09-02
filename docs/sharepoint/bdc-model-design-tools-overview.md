@@ -1,5 +1,5 @@
 ---
-title: Información general de las herramientas de diseño del modelo BDC | Microsoft Docs
+title: Información general sobre herramientas de diseño del modelo BDC | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,65 +24,65 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387726"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64827949"
 ---
-# <a name="bdc-model-design-tools-overview"></a>Introducción a las herramientas de diseño de modelo BDC
-  Puede diseñar un modelo de conectividad de datos profesionales (BDC) mediante el Diseñador de BDC, el **detalles del método de BDC** ventana y el **Explorador de BDC**.
+# <a name="bdc-model-design-tools-overview"></a>Introducción a las herramientas de diseño del modelo BDC
+  Puede diseñar un modelo de conectividad a datos profesionales (BDC) mediante el diseñador de BDC, la ventana **detalles del método de BDC** y el explorador de **BDC**.
 
- El **Explorador de BDC** le permite examinar el modelo, buscar en el modelo y definir los descriptores de tipo.
+ El **Explorador de BDC** permite examinar el modelo, buscar en el modelo y definir los descriptores de tipos.
 
 ## <a name="bdc-designer"></a>Diseñador de BDC
- El Diseñador de BDC le permite definir las entidades en el modelo y organizar visualmente sus relaciones entre sí. Use el Diseñador de BDC para realizar las tareas siguientes:
+ El diseñador de BDC permite definir las entidades en el modelo y organizar visualmente sus relaciones entre sí. Use el diseñador de BDC para realizar las siguientes tareas:
 
 - Agregar entidades al modelo.
 
-- Quitar las entidades del modelo.
+- Quitar entidades del modelo.
 
 - Definir relaciones entre entidades.
 
-  Para abrir el Diseñador de BDC, haga doble clic en el archivo de modelo en el proyecto, o abra el menú contextual para el archivo de modelo y, a continuación, elija **abrir**. Agregar una entidad al modelo arrastrando o copiando una **entidad** desde el **cuadro de herramientas** hasta el diseñador. Para crear una asociación entre dos entidades, elija el **asociación** en controlar la **cuadro de herramientas**, elija la primera entidad y, a continuación, elija la segunda entidad.
+  Para abrir el diseñador de BDC, haga doble clic en el archivo de modelo del proyecto o abra el menú contextual del archivo de modelo y, a continuación, elija **abrir**. Agregue una entidad al modelo arrastrando o copiando una **entidad** desde el **cuadro de herramientas** hasta el diseñador. Para crear una asociación entre dos entidades, elija el control **Asociación** en el **cuadro de herramientas**, elija la primera entidad y, a continuación, elija la segunda entidad.
 
-## <a name="bdc-method-details-window"></a>Ventana Detalles del método de BDC
- Use la **detalles del método de BDC** ventana para definir los parámetros, las instancias y descriptores de filtro de un método.
+## <a name="bdc-method-details-window"></a>Ventana detalles del método de BDC
+ Utilice la ventana **detalles del método de BDC** para definir los parámetros, las instancias y los descriptores de filtro de un método.
 
- Puede generar rápidamente métodos Finder, buscador específico, Creator, Updater y Deleter en el **detalles del método de BDC** ventana. Cuando se generan estos métodos, Visual Studio agrega los metadatos, como parámetros, las instancias y descriptores de tipo para el método. Puede modificar estos metadatos para satisfacer su escenario concreto.
+ Puede generar rápidamente el buscador, el buscador específico, el creador, el actualizador y los métodos de eliminación en la ventana **detalles del método de BDC** . Cuando se generan estos métodos, Visual Studio agrega metadatos, como los parámetros, las instancias y los descriptores de tipos, al método. Puede modificar estos metadatos para satisfacer su escenario específico.
 
- Para abrir el **detalles del método de BDC** ventana, en la barra de menús, elija **vista** > **Other Windows** > **detalles del método de BDC** .
+ Para abrir la ventana **detalles del método de BDC** , en la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC**de Windows.
 
- Para ver los métodos en el **detalles del método de BDC** ventana, seleccione la entidad en el Diseñador de BDC. Los métodos de la entidad seleccionada aparecen en la **detalles del método de BDC** ventana. Si no elige una entidad en el Diseñador de BDC, el **detalles del método de BDC** ventana no muestra ninguna información.
+ Para ver los métodos en la ventana **detalles del método de BDC** , elija la entidad en el diseñador de BDC. Los métodos de la entidad seleccionada aparecen en la ventana **detalles del método de BDC** . Si no elige una entidad en el diseñador de BDC, la ventana **detalles del método de BDC** no muestra ninguna información.
 
- Expandir o contraer nodos en el **detalles del método de BDC** ventana para definir parámetros, las instancias y descriptores de filtro. Use la **Explorador de BDC** para definir descriptores de tipo.
+ Expanda o contraiga los nodos en la ventana **detalles del método de BDC** para definir los parámetros, las instancias y los descriptores de filtro. Use el **Explorador de BDC** para definir los descriptores de tipo.
 
 ## <a name="bdc-explorer"></a>Explorador de BDC
- El **Explorador de BDC** muestra los elementos que conforman el modelo. Para abrir el **Explorador de BDC**, en la barra de menús, elija **vista** > **Other Windows** > **Explorador de BDC**. Para examinar el modelo, expanda los nodos en el **Explorador de BDC**. Cada nodo representa un elemento en el XML del archivo del modelo.
+ El **Explorador de BDC** muestra los elementos que componen el modelo. Para abrir el **Explorador de BDC**, en la barra de menús, elija **Ver**  >  **otro**  >  **Explorador de BDC**de Windows. Para examinar el modelo, expanda los nodos en el **Explorador de BDC**. Cada nodo representa un elemento en el XML del archivo de modelo.
 
- Mientras selecciona los nodos en el **Explorador de BDC**, aparecen las propiedades de cada nodo que elija en la **propiedades** ventana. Muchas de estas propiedades corresponden a atributos en el archivo de modelo. Puede buscar el modelo mediante el cuadro de búsqueda en la parte superior de la **Explorador de BDC**.
-
-> [!NOTE]
-> El **Explorador de BDC** no muestra los identificadores, propiedades personalizadas, cadenas localizadas, grupos de asociaciones, acciones, descriptores de filtro, listas de control de acción y los valores de parámetro predeterminados.
-
-### <a name="define-type-descriptors"></a>Definir descriptores de tipo
- Use la **Explorador de BDC** para definir descriptores de tipo. El Explorador de BDC le permite definir un descriptor de tipo una vez y, a continuación, volver a usar ese descriptor de tipo en otro lugar en el modelo. Para lograr esto, copie un descriptor de tipos y péguelo en cualquier otro parámetro o descriptor de tipos.
+ A medida que selecciona nodos en el **Explorador de BDC**, las propiedades de cada nodo que elija aparecen en la ventana **propiedades** . Muchas de estas propiedades corresponden a los atributos del archivo de modelo. Puede buscar en el modelo mediante el cuadro de búsqueda situado en la parte superior del **Explorador de BDC**.
 
 > [!NOTE]
-> Los cambios realizados en un descriptor de tipos original no afectan a las copias de ese descriptor de tipos.
+> El **Explorador de BDC** no muestra los identificadores, las propiedades personalizadas, las cadenas localizadas, los grupos de asociaciones, las acciones, los descriptores de filtro, las listas de control de acciones y los valores de parámetro predeterminados.
 
- Para obtener más información, vea [Cómo: Definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+### <a name="define-type-descriptors"></a>Definir descriptores de tipos
+ Use el **Explorador de BDC** para definir los descriptores de tipo. El explorador de BDC permite definir un descriptor de tipo una vez y, a continuación, volver a usar ese descriptor de tipos en otro lugar del modelo. Para ello, copie un descriptor de tipo y péguelo en cualquier otro parámetro o descriptor de tipo.
+
+> [!NOTE]
+> Los cambios en un descriptor de tipo original no afectan a las copias de ese descriptor de tipos.
+
+ Para obtener más información, vea [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
-- [Cómo: Agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [Cómo: Agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Cómo: Agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Cómo: Agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Cómo: Agregar un método Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Cómo: Agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)
+- [Cómo: crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md)
+- [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)
 - [Crear una asociación entre entidades](../sharepoint/creating-an-association-between-entities.md)
-- [Tutorial: Crear una lista externa en SharePoint con datos profesionales](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
+- [Tutorial: crear una lista externa en SharePoint con datos económicos](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
 - [Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
-- [Creación de un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Diseñar un modelo de conectividad de datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
