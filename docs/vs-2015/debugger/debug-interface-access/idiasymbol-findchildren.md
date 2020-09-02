@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a09a62a2e6b94dbccda3afce4bdd286270149c15
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150034"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera a los elementos secundarios del símbolo.  
+Recupera los elementos secundarios del símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,26 +38,26 @@ HRESULT findChildren ( 
   
 #### <a name="parameters"></a>Parámetros  
  `symtag`  
- [in] Especifica las etiquetas de símbolo de los elementos secundarios que se puede recuperar, tal como se define en el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md). Establecido en `SymTagNull` todos los elementos secundarios van a recuperar.  
+ de Especifica las etiquetas de símbolos de los elementos secundarios que se van a recuperar, tal como se define en la [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md). Se establece en `SymTagNull` para todos los elementos secundarios que se van a recuperar.  
   
  `name`  
- [in] Especifica el nombre de los elementos secundarios van a recuperar. Establecido en `NULL` todos los elementos secundarios van a recuperar.  
+ de Especifica el nombre de los elementos secundarios que se van a recuperar. Se establece en `NULL` para todos los elementos secundarios que se van a recuperar.  
   
  `compareFlags`  
- [in] Especifica las opciones de comparación que se aplica a la coincidencia de nombres. Los valores de la [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md) enumeración puede usarse por sí solo o en combinación.  
+ de Especifica las opciones de comparación aplicadas a la coincidencia de nombres. Los valores de la enumeración [namesearchoptions (](../../debugger/debug-interface-access/namesearchoptions.md) se pueden usar solos o en combinación.  
   
  `ppResult`  
- [out] Devuelve un [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) recupera el objeto que contiene una lista de los símbolos secundarios.  
+ enuncia Devuelve un objeto [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contiene una lista de los símbolos secundarios recuperados.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si se ha encontrado al menos un elemento secundario del símbolo, o devuelve `S_FALSE` si no se encuentra ningún elemento secundario; en caso contrario, devuelve un código de error.  
+ Devuelve `S_OK` si se encontró al menos un elemento secundario del símbolo, o devuelve `S_FALSE` si no se encuentra ningún elemento secundario; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método es idéntico a llamar a la [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md) método con este símbolo como primer parámetro.  
+ Este método es idéntico a llamar al método [IDiaSession:: findchildren (](../../debugger/debug-interface-access/idiasession-findchildren.md) con este símbolo como primer parámetro.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
+ [Enumeración Symtagenum (](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession:: Findchildren (](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Enumeración NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)

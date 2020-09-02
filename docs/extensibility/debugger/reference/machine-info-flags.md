@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS Microsoft Docs
+title: MACHINE_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b74955d65ff34c4787de03c3b03383fe7eb702cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714521"
 ---
 # <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
-Se utiliza para describir una máquina.
+Se usa para describir un equipo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ public enum enum_MACHINE_INFO_FLAGS { 
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
- Indica que los servicios de terminal están disponibles.
+ Indica que los servicios de Terminal Server están disponibles.
 
 ## <a name="remarks"></a>Observaciones
- Se utiliza `Flags` como miembro de la estructura [MACHINE_INFO.](../../../extensibility/debugger/reference/machine-info.md)
+ Se usa como `Flags` miembro de la estructura [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

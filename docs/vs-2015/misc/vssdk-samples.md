@@ -8,10 +8,10 @@ ms.assetid: 6aefb510-64cd-4a16-882b-58ada1db02bf
 caps.latest.revision: 17
 manager: jillfra
 ms.openlocfilehash: 3ad69fe4909e358c395c7cd8a4abfea3f3003161
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844799"
 ---
 # <a name="vssdk-samples"></a>Muestras de VSSDK
@@ -21,5 +21,5 @@ El sitio oficial para obtener ejemplos de extensibilidad de Visual Studio es el 
   
  También hay disponible un ejemplo de IronPython. Se integra con el [proyecto IronPython Studio](https://ironpythonstudio.codeplex.com/) en el sitio web de CodePlex.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

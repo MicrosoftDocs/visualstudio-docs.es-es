@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184086"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89219769"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guía de productividad para Visual Studio
 
@@ -24,7 +24,7 @@ Para obtener información sobre métodos abreviados de teclado útiles, vea [Mé
 
 Ahorre tiempo indagando en los menús mediante búsquedas rápidas de todo lo que necesite, como, por ejemplo, comandos, opciones de configuración, documentación y opciones de instalación. Vea los métodos abreviados de teclado de los comandos en los resultados de la búsqueda en Visual Studio para que pueda memorizarlos más fácilmente. 
 
-- **Usar código ficticio con la lista de tareas**. Si no tiene requisitos suficientes para completar alguna parte del código, use la opción Lista de tareas para realizar un seguimiento de los comentarios de código que usan tokens tales como `TODO` y `HACK` (o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida en el código. Para más información, consulte el artículo sobre el [uso de la lista de tareas](../ide/using-the-task-list.md.).
+- **Usar código ficticio con la lista de tareas**. Si no tiene requisitos suficientes para completar alguna parte del código, use la opción Lista de tareas para realizar un seguimiento de los comentarios de código que usan tokens tales como `TODO` y `HACK` (o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida en el código. Para más información, consulte el artículo sobre el [uso de la lista de tareas](../ide/using-the-task-list.md).
 
 - **Usar accesos directos del Explorador de soluciones**. Si no está familiarizado con Visual Studio, estos accesos directos le resultarán útiles y le ahorrarán tiempo mientras se pone al día con un nuevo código base. Para ver la lista completa de accesos directos, consulte [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
 

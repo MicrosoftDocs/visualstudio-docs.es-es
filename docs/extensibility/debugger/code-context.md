@@ -1,5 +1,5 @@
 ---
-title: Contexto de código ? Microsoft Docs
+title: Contexto de código | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +11,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6424c1182f30b1bbfe6c166209b94afb7ec45549
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739156"
 ---
-# <a name="code-context"></a>Contexto del código
-En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, un contexto de **código:**
+# <a name="code-context"></a>Contexto de código
+En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración, un **contexto de código**:
 
-- Proporciona una abstracción de una posición en el código como se conoce al motor de depuración (DE). Para la mayoría de las arquitecturas en tiempo de ejecución actuales, un contexto de código se puede considerar como una dirección en la secuencia de instrucciones de un programa. Para los lenguajes no tradicionales, donde el código puede no estar representado por instrucciones, un contexto de código puede estar representado por otros medios.
+- Proporciona una abstracción de una posición en el código tal y como lo conoce el motor DE depuración (DE). Para la mayoría de las arquitecturas en tiempo de ejecución de hoy en día, un contexto de código puede considerarse una dirección en el flujo de instrucciones de un programa. En el caso de los lenguajes no tradicionales, donde el código no se puede representar mediante instrucciones, un contexto de código puede representarse por otros medios.
 
-- Describe la posición actual en la secuencia de ejecución del programa que está depurando.
+- Describe la posición actual en la secuencia de ejecución del programa que se está depurando.
 
-- Sólo existe cuando un programa se ha detenido en un punto de interrupción.
+- Solo existe cuando un programa se ha detenido en un punto de interrupción.
 
 - Tiene un contexto de documento asociado.
 
-- Se implementa mediante un [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfaz.
+- Se implementa mediante una interfaz [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) .
 
 ## <a name="see-also"></a>Vea también
 - [Contexto del documento](../../extensibility/debugger/document-context.md)

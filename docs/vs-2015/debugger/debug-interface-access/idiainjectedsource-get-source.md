@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 856d0111e65b51b798dfe44a324c58c4db5457fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192420"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera los bytes de código de origen.  
+Recupera los bytes del código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,16 +37,16 @@ HRESULT get_source ( 
   
 #### <a name="parameters"></a>Parámetros  
  `cbData`  
- [in] El número de bytes que representa el tamaño del búfer de datos.  
+ de Número de bytes que representa el tamaño del búfer de datos.  
   
  `pcbData`  
- [out] Devuelve el número de bytes que representa los bytes devueltos. Si `data` es `NULL`, a continuación, `pcbData` es el número total de bytes de datos disponibles.  
+ enuncia Devuelve el número de bytes que representa los bytes devueltos. Si `data` es `NULL` , `pcbData` es el número total de bytes de datos disponibles.  
   
  `data[]`  
- [out] Un búfer que se va a rellenar con los bytes de origen.  
+ enuncia Búfer que se va a rellenar con los bytes de origen.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670312"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
@@ -21,7 +21,7 @@ ms.locfileid: "72670312"
 
 Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual Studio de forma más rápida y eficaz. Para obtener más información sobre los métodos abreviados de teclado más frecuentes, vea [Sugerencias y trucos de Visual Studio](../ide/tips-and-tricks-for-visual-studio.md). Para obtener una lista más completa, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) y [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
- En este tema, se incluyen las siguientes secciones:
+ Este tema incluye las siguientes secciones:
 
  [Obtener acceso a Visual Studio Tools](../ide/productivity-tips-for-visual-studio.md#BKMK_Access)
 
@@ -35,7 +35,7 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
  [Administrar archivos, barras de herramientas y ventanas](../ide/productivity-tips-for-visual-studio.md#BKMK_Managing)
 
-## <a name="BKMK_Access"></a> Obtener acceso a Visual Studio Tools
+## <a name="accessing-visual-studio-tools"></a><a name="BKMK_Access"></a> Obtener acceso a Visual Studio Tools
  Puede tener acceso más fácilmente al Símbolo del sistema para desarrolladores o a otra herramienta si lo ancla a la pantalla Inicio o a la barra de tareas.
 
 1. En la pantalla Inicio, escriba `Visual Studio Tools` y pulse la tecla Entrar.
@@ -60,7 +60,7 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
 3. Pulse **Anclar a Inicio** o **Anclar a la barra de tareas**.
 
-## <a name="BKMK_Writing"></a> Escribir código
+## <a name="writing-code"></a><a name="BKMK_Writing"></a> Escribir código
  Escriba código más rápidamente con las características siguientes.
 
 - **Usar aplicaciones de ejemplo**. Puede acelerar el desarrollo de aplicaciones si descarga e instala aplicaciones de ejemplo desde la galería de código de MSDN. También puede obtener información sobre una tecnología o un concepto de programación determinado si descarga y explora un Sample Pack para esa área.
@@ -81,19 +81,19 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
      Figura 1: etiquetas inteligentes de error
 
-     ![Sugerencias de error de etiquetas inteligentes](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
+     ![Sugerencias de error de etiquetas inteligentes](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
      Los cuadros rojos sugieren formas de refactorizar el código.
 
      Figura 2: etiquetas inteligentes de refactorización
 
-     ![Sugerencias para refactorizar etiquetas inteligentes](../ide/media/productivity-redsmarttags.png "|::ref2::|")
+     ![Sugerencias para refactorizar etiquetas inteligentes](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
 
 - **Mostrar y editar la definición de un elemento de código**. Puede mostrar y editar rápidamente el módulo en el que se define un elemento de código, como un miembro, una variable o un valor local.
 
-     Para abrir una definición en una ventana emergente, resalte el elemento y, después, pulse las teclas Alt+F12, o abra el menú contextual del elemento y pulse **Ver la definición**. Para abrir una definición en una ventana de código diferente, abra el menú contextual del elemento de código y, después, pulse **Ir a definición**.
+     Para abrir una definición en una ventana emergente, resalte el elemento y, a continuación, elija las teclas Alt + F12, o abra el menú contextual del elemento y, a continuación, elija Ver la **definición**. Para abrir una definición en una ventana de código diferente, abra el menú contextual del elemento de código y, después, pulse **Ir a definición**.
 
-## <a name="BKMK_Navigating"></a> Navegar dentro del código
+## <a name="navigating-within-your-code"></a><a name="BKMK_Navigating"></a> Navegar dentro del código
  Puede usar diversas técnicas para buscar determinadas ubicaciones del código e ir a ellas con más rapidez.
 
 - **Establecer marcadores en líneas de código**. Puede usar marcadores para navegar rápidamente a líneas de código concretas de un archivo.
@@ -104,9 +104,9 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
      Para tener acceso a esta característica, en la barra de menús, pulse **Editar**, **Navegar a**.
 
-- **Examinar la estructura general del código**. En el **Explorador de soluciones**, puede buscar y examinar clases y sus tipos y miembros en los proyectos. También puede buscar símbolos, ver la jerarquía de llamadas de un método, buscar referencias de símbolos y realizar otras tareas. Si elige un elemento de código en el **Explorador de soluciones**, el archivo asociado se abre en una pestaña **Vista previa** y el cursor se desplaza al elemento en el archivo. Para obtener más información, vea [Ver la estructura del código](../ide/viewing-the-structure-of-code.md).
+- **Examinar la estructura general del código**. En el **Explorador de soluciones**, puede buscar y examinar clases y sus tipos y miembros en los proyectos. También puede buscar símbolos, ver la jerarquía de llamadas de un método, buscar referencias de símbolos y realizar otras tareas. Si elige un elemento de código en el **Explorador de soluciones**, el archivo asociado se abre en una pestaña **Vista previa** y el cursor se desplaza al elemento en el archivo. Para obtener más información, vea [ver la estructura del código](../ide/viewing-the-structure-of-code.md).
 
-## <a name="BKMK_Finding"></a> Buscar elementos más rápido
+## <a name="finding-items-faster"></a><a name="BKMK_Finding"></a> Buscar elementos más rápido
  Puede buscar comandos, archivos y opciones en el IDE, además de filtrar el contenido de las ventanas de herramientas para mostrar solo la información pertinente para la tarea actual.
 
 - **Filtrar el contenido de las ventanas de herramientas**. Puede buscar dentro del contenido de muchas ventanas de herramientas, como el **Cuadro de herramientas**, la ventana **Propiedades** y el **Explorador de soluciones**, pero mostrar únicamente los elementos cuyos nombres contengan los caracteres que especifique.
@@ -117,16 +117,16 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
      Figura 3: lista de resultados de Inicio rápido para `new project`
 
-     ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity-quicklaunch.png "|::ref3::|")
+     ![Resultados de inicio rápido para 'nuevo proyecto'](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
      **Inicio rápido** muestra vínculos al cuadro de diálogo **Nuevo proyecto**, al cuadro de diálogo **Agregar nuevo elemento** y a la página Proyectos y soluciones del cuadro de diálogo **Opciones**, entre otros. Los resultados de Inicio rápido también pueden incluir archivos de proyecto y ventanas de herramientas.
 
-## <a name="BKMK_Debugging"></a> Depurar código
+## <a name="debugging-code"></a><a name="BKMK_Debugging"></a> Código de depuración
  La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pueden ayudarle a acelerar el proceso.
 
-- **Probar la misma página, aplicación o sitio en exploradores diferentes**. Cuando depura código, puede cambiar fácilmente entre los exploradores web instalados, incluido [Inspector de página (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), sin tener que abrir el cuadro de diálogo **Explorar con**. Puede usar la lista **Depurar destino**, que se encuentra en la barra de herramientas **Estándar** junto al botón **Iniciar depuración**, para comprobar rápidamente qué explorador está usando mientras depura o ve páginas.
+- **Probar la misma página, aplicación o sitio en exploradores diferentes**. Cuando depura código, puede cambiar fácilmente entre los exploradores web instalados, incluido [Inspector de página (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), sin tener que abrir el cuadro de diálogo **Explorar con**. Puede usar la lista **destino de depuración** , que se encuentra en la barra de herramientas **estándar** junto al botón **iniciar depuración** , para comprobar rápidamente el explorador que está usando mientras depura o ve páginas.
 
-     ![Selección de opciones de depuración del explorador web](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
+     ![Seleccionar opciones de depuración de explorador Web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
 - **Establecer puntos de interrupción temporales**. Puede crear un punto de interrupción temporal en la línea actual de código e iniciar el depurador simultáneamente. Al llegar a esa línea de código, el depurador activa el modo de interrupción. Vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md) para obtener más información.
 
@@ -140,22 +140,22 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
      Para agregar una Información sobre datos, el depurador debe estar en modo de interrupción. Coloque el cursor en la variable y elija el botón de anclaje en la información sobre datos que aparece. Cuando se detiene la depuración, aparece un icono azul de anclaje en el archivo de código fuente junto a la línea de código que contiene la variable. Si apunta al icono azul, aparece el valor de la variable de la sesión de depuración más reciente.
 
-- **Borrar la ventana Inmediato**. Para borrar el contenido de la [ventana Inmediato](../ide/reference/immediate-window.md) en tiempo de diseño, escriba `>cls` o `>Edit.ClearAll`.
+- **Borrar la ventana Inmediato**. Puede borrar el contenido de la [ventana inmediato](../ide/reference/immediate-window.md) en tiempo de diseño escribiendo `>cls` o `>Edit.ClearAll`
 
-     Para obtener más información sobre los comandos adicionales, vea [Alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+     Para obtener más información sobre los comandos adicionales, vea [alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-## <a name="BKMK_Managing"></a> Administrar archivos, barras de herramientas y ventanas
+## <a name="managing-files-toolbars-and-windows"></a><a name="BKMK_Managing"></a> Administrar archivos, barras de herramientas y ventanas
  En cualquier momento, puede trabajar en varios archivos de código y desplazarse entre varias ventanas de herramientas mientras desarrolla una aplicación. Para organizarse, utilice las sugerencias siguientes.
 
 - **Mantener los archivos que usa con frecuencia visibles en el editor**. Puede anclar archivos en el lado izquierdo del cuadro de la pestaña de modo que sigan siendo visibles independientemente de cuántos archivos haya abiertos en el editor.
 
-     Para anclar un archivo, pulse la pestaña del archivo y, después, seleccione el botón **Alternar estado de anclaje**.
+     Para anclar un archivo, elija la pestaña del archivo y, a continuación, elija el botón **alternar estado de anclaje** .
 
-- **Mover documentos y ventanas a otros monitores**. Si utiliza más de un monitor al desarrollar aplicaciones, puede trabajar en algunas partes de la aplicación más fácilmente si mueve a otro monitor los archivos que están abiertos en el editor. También puede mover las ventanas de herramientas, por ejemplo las ventanas del depurador, a otro monitor y acoplar en una pestaña las ventanas de documentos y de herramientas para crear «pilas». Para obtener más información, vea [Cómo: Organizar y acoplar ventanas](../misc/how-to-arrange-and-dock-windows.md).
+- **Mover documentos y ventanas a otros monitores**. Si utiliza más de un monitor al desarrollar aplicaciones, puede trabajar en algunas partes de la aplicación más fácilmente si mueve a otro monitor los archivos que están abiertos en el editor. También puede mover las ventanas de herramientas, por ejemplo las ventanas del depurador, a otro monitor y acoplar en una pestaña las ventanas de documentos y de herramientas para crear «pilas». Para obtener más información, consulte [Cómo: organizar y acoplar ventanas](../misc/how-to-arrange-and-dock-windows.md).
 
      También puede administrar los archivos más fácilmente si crea otra instancia del **Explorador de soluciones** y la mueve a otro monitor. Para crear otra instancia del **Explorador de soluciones**, abra un menú contextual en el **Explorador de soluciones** y pulse **Nueva vista del Explorador de soluciones**.
 
-- **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: Cambiar fuentes y colores en Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: cambiar fuentes y colores en el editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Métodos abreviados de teclado para comandos de uso frecuente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Procedimientos para: personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md)

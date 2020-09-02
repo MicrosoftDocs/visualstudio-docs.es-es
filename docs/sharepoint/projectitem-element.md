@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536882"
 ---
 # <a name="projectitem-element"></a>ProjectItem (elemento)
@@ -68,12 +68,12 @@ ms.locfileid: "85536882"
 
 ## <a name="element-information"></a>Información de elemento
 
-|Propiedad.|Value|
+|Propiedad|Value|
 |-|-|
 |**Espacio de nombres**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|
 |**Archivo de validación**|ProjectItemModelSchema. xsd|
 |**Puede estar vacío**|No|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 [Esquema de elemento de proyecto de SharePoint rseference](../sharepoint/sharepoint-project-item-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: La estructura del archivo [Content_types].xml Microsoft Docs
+title: Estructura del archivo [Content_types]. XML | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699019"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Estructura del archivo [Content_types].xml
-Contiene información sobre los tipos de contenido de un paquete VSIX. Visual Studio usa el archivo [Content_Types].xml para instalar el paquete, pero no instala el archivo en sí.
+Contiene información sobre los tipos de contenido de un paquete VSIX. Visual Studio usa el archivo [Content_Types]. XML para instalar el paquete, pero no instala el propio archivo.
 
 > [!NOTE]
-> Aunque este tema solo se aplica a los archivos [Content_Type].xml que se usan en paquetes VSIX, el tipo de archivo [Content_Types].xml forma parte del estándar *Open Packaging Conventions (OPC).* Para obtener más información, consulte [OPC: un nuevo estándar para empaquetar](https://msdn.microsoft.com/magazine/cc163372.aspx) los datos en el sitio Web de MSDN.
+> Aunque este tema se aplica únicamente a los archivos [Content_Type]. XML que se usan en los paquetes VSIX, el tipo de archivo [Content_Types]. XML forma parte del estándar de *convenciones de empaquetado abierto (OPC)* . Para obtener más información, consulte [OPC: un nuevo estándar para empaquetar los datos](https://msdn.microsoft.com/magazine/cc163372.aspx) en el sitio web de MSDN.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
  En las secciones siguientes se describe el elemento raíz y sus atributos y elementos secundarios.
@@ -33,15 +33,15 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|`Types`|Contiene elementos secundarios que enumeran los tipos de archivo en el paquete VSIX.|
+|`Types`|Contiene elementos secundarios que enumeran los tipos de archivo del paquete VSIX.|
 
 ### <a name="attributes"></a>Atributos
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`Xmlns`|(Requerido.) La ubicación del esquema utilizado para este archivo [Content_Types].xml.|
+|`Xmlns`|(Obligatorio). La ubicación del esquema utilizado para este archivo [Content_Types]. Xml.|
 
-### <a name="attribute-name-attribute"></a>•Nombre del atributo ? Atributo
+### <a name="attribute-name-attribute"></a>{Nombre de atributo} Atribui
 
 | Value | Descripción |
 | - | - |
@@ -52,7 +52,7 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|`Default`|Describe un tipo de contenido en el paquete VSIX. Cada tipo de archivo del `Default` paquete debe tener su propio elemento.|
+|`Default`|Describe un tipo de contenido en el paquete VSIX. Todos los tipos de archivo del paquete deben tener su propio `Default` elemento.|
 
 ### <a name="attributes"></a>Atributos
 
@@ -61,30 +61,30 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 |`Extension`|La extensión de nombre de archivo de un archivo en el paquete VSIX.|
 |`ContentType`|Describe el tipo de contenido asociado a la extensión de nombre de archivo.|
 
-### <a name="attribute-name-attribute"></a>•Nombre del atributo ? Atributo
- Visual Studio reconoce `ContentType` los siguientes `Extension` valores para los tipos asociados.
+### <a name="attribute-name-attribute"></a>{Nombre de atributo} Atribui
+ Visual Studio reconoce los siguientes `ContentType` valores para los `Extension` tipos asociados.
 
-|Extensión|ContentType|
+|Comprobación de actualización|ContentType|
 |---------------|-----------------|
 |txt|text/plain|
-|pkgdef|text/plain|
+|archivo pkgdef|text/plain|
 |Xml|text/xml|
 |vsixmanifest|text/xml|
-|htm o html|text/html|
-|Rtf|aplicación/rtf|
+|htm o HTML|text/html|
+|RTF|aplicación/RTF|
 |pdf|aplicación/pdf|
 |GIF|image/gif|
-|jpg o jpeg|imagen/jpg|
+|jpg o JPEG|imagen/jpg|
 |tiff|image/tiff|
-|vsix|aplicación/zip|
-|zip|aplicación/zip|
+|vsix|aplicación/código postal|
+|zip|aplicación/código postal|
 |dll|application/octet-stream|
-|todos los demás tipos de archivos|application/octet-stream|
+|todos los demás tipos de archivo|application/octet-stream|
 
 ## <a name="example"></a>Ejemplo
 
 ### <a name="description"></a>Descripción
- El siguiente archivo [Content_Types].xml describe un paquete VSIX típico.
+ El siguiente archivo [Content_Types]. XML describe un paquete VSIX típico.
 
 ### <a name="code"></a>Código
 
@@ -99,7 +99,7 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 </Types>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Referencia del esquema de extensión 1.0 de VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: Un nuevo estándar para empaquetar sus datos](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [Referencia del esquema de extensión VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [OPC: un nuevo estándar para empaquetar los datos](https://msdn.microsoft.com/magazine/cc163372.aspx)

@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetContainer ? Microsoft Docs
+title: 'IDebugField:: GetContainer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728907"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
@@ -41,13 +41,13 @@ int GetContainer(
 
 ## <a name="parameters"></a>Parámetros
 `ppContainerField`\
-[fuera] Devuelve el contenedor representado por el [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaz.
+enuncia Devuelve el contenedor tal como lo representa la interfaz [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) .
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Si este campo no tiene un `ppContainerField` contenedor, el devuelto será un valor nulo.
+ Si este campo no tiene un contenedor, el devuelto será `ppContainerField` un valor null.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

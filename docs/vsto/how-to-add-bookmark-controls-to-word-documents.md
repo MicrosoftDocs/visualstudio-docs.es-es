@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547256"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Cómo: agregar controles Bookmark a documentos de Word
@@ -38,7 +38,7 @@ ms.locfileid: "85547256"
 
   Para obtener más información sobre <xref:Microsoft.Office.Tools.Word.Bookmark> los controles, vea [Bookmark (control](../vsto/bookmark-control.md)).
 
-## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a>Agregar controles Bookmark en tiempo de diseño
+## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Agregar controles Bookmark en tiempo de diseño
  Hay varias maneras de agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en un proyecto de nivel de documento en tiempo de diseño:
 
 - Desde el **Cuadro de herramientas**de Visual Studio.
@@ -65,7 +65,7 @@ ms.locfileid: "85547256"
 
 3. Seleccione el texto u otros elementos que desee incluir en el marcador.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
      Si no desea conservar el nombre de marcador predeterminado, puede cambiar el nombre en la ventana **Propiedades** .
 
@@ -77,7 +77,7 @@ ms.locfileid: "85547256"
 
 3. En el cuadro de diálogo **Marcador** , escriba el nombre del nuevo marcador y haga clic en **Agregar**.
 
-## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Agregar controles Bookmark en tiempo de ejecución en un proyecto de nivel de documento
+## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Agregar controles Bookmark en tiempo de ejecución en un proyecto de nivel de documento
  Puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> mediante programación al documento en tiempo de ejecución con métodos de la propiedad <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de la clase `ThisDocument` en el proyecto. Hay dos sobrecargas de método que puede usar para agregar un control <xref:Microsoft.Office.Tools.Word.Bookmark> de las maneras siguientes:
 
 - Agregar un <xref:Microsoft.Office.Tools.Word.Bookmark> en un intervalo especificado.
@@ -96,7 +96,7 @@ ms.locfileid: "85547256"
     > [!NOTE]
     > Si desea crear un control <xref:Microsoft.Office.Tools.Word.Bookmark> desde un <xref:Microsoft.Office.Interop.Word.Bookmark>existente, use el método <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> y pase el <xref:Microsoft.Office.Interop.Word.Bookmark>existente.
 
-## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Agregar controles Bookmark en tiempo de ejecución en un proyecto de complemento de VSTO
+## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Agregar controles Bookmark en tiempo de ejecución en un proyecto de complemento de VSTO
  Puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> mediante programación a cualquier documento abierto en tiempo de ejecución a través de un complemento de VSTO. Para ello, genere un elemento host <xref:Microsoft.Office.Tools.Word.Document> basado en un documento abierto y, a continuación, use métodos de la propiedad <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de este elemento host. Hay dos sobrecargas de método que puede usar para agregar un control <xref:Microsoft.Office.Tools.Word.Bookmark> de las maneras siguientes:
 
 - Agregar un <xref:Microsoft.Office.Tools.Word.Bookmark> en un intervalo especificado.
@@ -125,7 +125,7 @@ ms.locfileid: "85547256"
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

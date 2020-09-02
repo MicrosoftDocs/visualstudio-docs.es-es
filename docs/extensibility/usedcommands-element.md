@@ -1,5 +1,5 @@
 ---
-title: Elemento UsedCommands (Elemento UsedCommands) Microsoft Docs
+title: Elemento UsedCommands | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698749"
 ---
 # <a name="usedcommands-element"></a>UsedCommands (Elemento)
-El elemento UsedCommands agrupa elementos UsedCommand y otras agrupaciones UsedCommands.
+El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones UsedCommands.
 
- El elemento UsedCommands es opcional. Si no llama a comandos definidos fuera del paquete, no tiene que incluir esta sección en el archivo .vsct.
+ El elemento UsedCommands es opcional. Si no llama a comandos definidos fuera del paquete, no tiene que incluir esta sección en el archivo. Vsct.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ El elemento UsedCommands agrupa elementos UsedCommand y otras agrupaciones UsedC
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|El comando que implementa otro código.|
+|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|Comando implementado por otro código.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d89c0dcad23a91ec6057311b9afde7d6d4702772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656762"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensajes de error en el Diseñador de flujo de trabajo
@@ -36,7 +36,7 @@ Este tema describe los tipos de mensaje de error que se pueden encontrar al trab
 
    Las expresiones no válidas y las restricciones de validación no satisfechas no impiden la compilación del flujo de trabajo. La compilación del flujo de trabajo se ha realizado correctamente, pero se produce <xref:System.Activities.InvalidWorkflowException> en tiempo de ejecución. Si hay errores en el archivo XAML, se produce un error en la compilación.
 
-   Dentro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cuando se carga un flujo de trabajo, sus errores se muestran en el **lista de errores**. Para navegar a la actividad que es el origen del error, haga doble clic en el error en el **lista de errores**.
+   Dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , cuando se carga un flujo de trabajo, sus errores se muestran en el **lista de errores**. Para navegar a la actividad que es el origen del error, haga doble clic en el error en el **lista de errores**.
 
 ### <a name="expression-errors"></a>Errores de expresión
  Un círculo rojo con un signo de exclamación junto a la expresión indica que esta no es válida. Al mantener el mouse sobre este icono aparece una información sobre herramientas donde se describe el origen del error. En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], haga clic en la expresión para ver la línea que subraya el origen del error. Al mantener el mouse sobre el texto, aparece una información sobre herramientas que describe el origen del error.

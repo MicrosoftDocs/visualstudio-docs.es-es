@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238548"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
@@ -37,7 +37,7 @@ Una de las aplicaciones principales de DSL es generar código de programa, archi
 
 El resto de esta información general es un tutorial que presenta las operaciones básicas de creación y uso de un lenguaje específico de dominio en Visual Studio.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 Para definir un DSL, debe tener instalados los siguientes componentes:
 
@@ -119,7 +119,7 @@ Puede ejecutar la solución DSL en cuanto la cree. Posteriormente, puede modific
 
 3. En la instancia experimental de Visual Studio, abra el archivo de modelo denominado **Test** desde **Explorador de soluciones**.
 
-     \- O bien
+     \- o -
 
      Haga clic con el botón secundario en el proyecto de depuración, elija **Agregar**y, a continuación, haga clic en **elemento**. En el cuadro de diálogo **Agregar elemento** , seleccione el tipo de archivo de su DSL.
 
@@ -171,7 +171,7 @@ Al cambiar un archivo de modelo, verá los cambios correspondientes en los archi
 
 3. Haga clic en **transformar todas las plantillas** en la barra de herramientas de **Explorador de soluciones**.
 
-     \- O bien
+     \- o -
 
      Haga clic con el botón secundario en las plantillas que desee regenerar y, a continuación, haga clic en **Ejecutar herramienta personalizada**.
 
@@ -407,7 +407,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 2. Vuelva a compilar cualquier DSL experimental u otras extensiones experimentales de Visual Studio que desee usar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)

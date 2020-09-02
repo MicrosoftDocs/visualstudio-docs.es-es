@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238821"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de radio
@@ -108,7 +108,7 @@ ms.locfileid: "88238821"
 
 1. Seleccione el <xref:Microsoft.Office.Tools.Excel.Chart> control en el diseñador y cambie las siguientes propiedades en la ventana **propiedades** .
 
-    |Propiedad|Valor|
+    |Propiedad|Value|
     |--------------|-----------|
     |**Nombre**|**Gráfico de gráficos**|
     |**HasLegend**|**false**|
@@ -132,28 +132,28 @@ ms.locfileid: "88238821"
 
 2. En la pestaña **controles comunes** del **cuadro de herramientas**, arrastre un control botón de **radio** al control de usuario y cambie las siguientes propiedades.
 
-   | Propiedad | Valor |
+   | Propiedad | Value |
    |----------|------------------|
    | **Nombre** | **columnChart** |
    | **Texto** | **Gráfico de columnas** |
 
 3. Agregue un segundo botón de radio al control de usuario y cambie las siguientes propiedades.
 
-   | Propiedad | Valor |
+   | Propiedad | Value |
    |----------|---------------|
    | **Nombre** | **barChart** |
    | **Texto** | **Gráfico de barras** |
 
 4. Agregue un tercer botón de radio al control de usuario y cambie las siguientes propiedades.
 
-   | Propiedad | Valor |
+   | Propiedad | Value |
    |----------|----------------|
    | **Nombre** | **lineChart** |
    | **Texto** | **Gráfico de líneas** |
 
 5. Agregue un cuarto botón de radio al control de usuario y cambie las siguientes propiedades.
 
-   |Propiedad|Valor|
+   |Propiedad|Value|
    |--------------|-----------|
    |**Nombre**|**areaBlockChart**|
    |**Texto**|**Gráfico de bloques de áreas**|
@@ -249,5 +249,5 @@ ms.locfileid: "88238821"
 
 - Cambiar el formato de una hoja de cálculo mediante las casillas. Para obtener más información, vea [Tutorial: cambiar el formato de una hoja de cálculo mediante controles de casilla](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)

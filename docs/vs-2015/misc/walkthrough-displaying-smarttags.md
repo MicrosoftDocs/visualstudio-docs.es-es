@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Mostrar etiquetas inteligentes | Documentos de Microsoft'
+title: 'Tutorial: Mostrar SmartTags | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,14 +10,14 @@ ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
 ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436514"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64805583"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Tutorial: Mostrar etiquetas inteligentes
-Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [Tutorial: Mostrar sugerencias de bombilla](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Las etiquetas inteligentes son etiquetas de texto que se expanden para mostrar un conjunto de acciones. Por ejemplo, en un proyecto de Visual Basic o Visual C#, aparece una línea roja debajo de una palabra cuando cambia el nombre de un identificador como un nombre de variable. Cuando mueve el puntero sobre el subrayado, se muestra un botón junto al puntero. Si hace clic en el botón, se muestra una acción sugerida, por ejemplo, **Cambiar nombre de IsRead a IsReady**. Si hace clic en la acción, todas las referencias a **IsRead** en el proyecto cambian su nombre a **IsReady**.  
   
@@ -26,10 +26,10 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
 > [!NOTE]
 > Otros tipos de etiquetas pueden implementarse de forma similar.  
   
- El siguiente tutorial muestra cómo crear una etiqueta inteligente que aparece en la palabra actual y tiene dos acciones sugeridas: **Convertir a mayúsculas** y **convertir a minúsculas**.  
+ El siguiente tutorial muestra cómo crear una etiqueta inteligente que aparece en la palabra actual y le sugiere dos acciones: **Convertir a mayúsculas** y **Convertir a minúsculas**.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
- Para seguir este tutorial, debe instalar el SDK de Visual Studio. Para obtener más información, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
+ Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto de Managed Extensibility Framework (MEF)  
   
@@ -55,7 +55,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
   
 1. Agregue un archivo de clase y asígnele el nombre `TestSmartTag`.  
   
-2. Agregue las siguientes importaciones:  
+2. Agregue las importaciones siguientes:  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
@@ -180,7 +180,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
   
      Debe aparecer un botón junto al puntero.  
   
-5. Al hacer clic en el botón, se deben mostrar dos acciones sugeridas: **Convertir a mayúsculas** y **convertir a minúsculas**. Si hace clic en la primera acción, todo el texto de la palabra actual se debe convertir a mayúsculas. Si hace clic en la segunda acción, todo el texto de la palabra actual se debe convertir a minúsculas.  
+5. Al hacer clic en el botón, deben aparecer dos acciones sugeridas: **Convertir a mayúsculas** y **Convertir a minúsculas**. Si hace clic en la primera acción, todo el texto de la palabra actual se debe convertir a mayúsculas. Si hace clic en la segunda acción, todo el texto de la palabra actual se debe convertir a minúsculas.  
   
-## <a name="see-also"></a>Vea también  
- [Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>Consulte también  
+ [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
