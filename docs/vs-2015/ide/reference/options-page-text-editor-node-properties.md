@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62dddacaea1846c8e5d5da404ad7a16fde90f209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662412"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de opciones, Propiedades de nodo Editor de texto
@@ -29,7 +29,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
 ## <a name="general"></a>General
  `DTE.Properties("TextEditor", "General")`
 
-|Nombre de elemento de propiedad|Valor|DESCRIPCIÓN|
+|Nombre de elemento de propiedad|Value|Descripción|
 |------------------------|-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Si es `True`, al presionar escape cuando hay elementos seleccionados, el punto de inserción se desplaza al lugar donde se inició la acción que creó la selección. `False` desplaza el punto de inserción al otro extremo de la selección.|
 |DragNDropTextEditing|Get/Set (Boolean)|Determina si se puede arrastrar una porción de texto seleccionado desde una ubicación a otra en el documento para operaciones de copiar, cortar y pegar.|
@@ -48,7 +48,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
 
  Las opciones del editor `PlainText` afectan a la configuración del editor cuando se editan archivos de texto. Cada lenguaje de programación y paquete de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tienen su propia configuración específica del **Editor de texto**. Por ejemplo, para ver o cambiar la configuración del editor de [!INCLUDE[csprcs](../../includes/csprcs-md.md)], utilice `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Para la configuración del editor de **Script SQL**, use `DTE.Properties("TextEditor", "SQL ")`.
 
-|Nombre de elemento de propiedad|Valor|DESCRIPCIÓN|
+|Nombre de elemento de propiedad|Value|Descripción|
 |------------------------|-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Determina si una lista de miembros disponible aparece de forma automática cuando un usuario escribe un punto a continuación de una referencia a una variable.|
 |AutoListParams|Get/Set (Boolean)|Determina si se muestra automáticamente una descripción de una lista de argumentos cuando el usuario escribe "(" después de un nombre de función.|
@@ -58,12 +58,12 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
 |WordWrapGlyphs|Get/Set (Boolean)|Muestra un glifo al final de una línea; esto indica que la línea se ajusta a la línea siguiente.|
 |EnableLeftClickForURLs|Get/Set (Boolean)|Determina si el editor subraya las URL y permite efectuar un solo clic con el botón primario del mouse para saltar a la URL del explorador web registrado en el sistema.|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina el estilo de sangría: Default, Smart o None.|
-|TabSize|Get/Set (Long)|Representa el número de espacios a los que equivale un tabulador. Si se selecciona un entero fuera del intervalo de 1 a 60 (incluidos), se producirá un error.|
+|TabSize|Get/Set (Long)|Representa el número de espacios que coinciden con una tabulación. Si se establece un entero fuera del intervalo comprendido entre 1 y 60 (incluido), se produce un error.|
 |InsertTabs|Get/Set (Boolean)|Si es `True`, se utilizan caracteres de tabulación al aplicar sangría.|
 |IndentSize|Get/Set (Long)|Representa el número de espacios a los que equivale un nivel de sangría. Si se selecciona un valor entero fuera del intervalo de 1 a 60 (incluidos), se producirá un error.|
 |ShowLineNumbers|Get/Set (Boolean)|Determina si en la vista de un documento en el editor principal muestra los números de línea en el margen izquierdo.|
 |ShowNavigationBar|Get/Set (Boolean)|Determina si aparecen listas desplegables y botones en la parte superior de las ventanas del editor.|
 |CutCopyBlankLines|Get/Set (Boolean)|Corta o copia las líneas en blanco cuando están seleccionadas.|
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Controlar la configuración de opciones](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [determinar los nombres de elementos de propiedades en las páginas de opciones](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [Página opciones, página Opciones propiedades de nodo de entorno](../../ide/reference/options-page-environment-node-properties.md) [, propiedades de nodo fuentes y colores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

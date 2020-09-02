@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onInsertText ? Microsoft Docs
+title: 'IDebugDocumentTextEvents2:: onInsertText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce03984d199fd404b7430b5342a06b51801af2e4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731481"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
-Notifica al paquete de depuración que el texto se ha insertado en el documento.
+Notifica al paquete de depuración que se ha insertado texto en el documento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,10 +43,10 @@ int onInsert( 
 
 ## <a name="parameters"></a>Parámetros
 `pos`\
-[en] Estructura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica dónde se insertó el texto.
+de Estructura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica dónde se insertó el texto.
 
 `dwNumToInsert`\
-[en] Especifica el número de caracteres de texto que se insertaron.
+de Especifica el número de caracteres de texto que se insertaron.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

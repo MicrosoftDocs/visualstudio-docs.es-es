@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb21495954801d55c1db0bb9156a813ab73db683
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687088"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referencia de tareas de MSBuild para WPF
@@ -57,7 +57,7 @@ El proceso de compilación de Windows Presentation Foundation (WPF) amplía Micr
  Comprueba, actualiza o quita identificadores únicos (UID) para buscar todos los elementos de [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] incluidos en los archivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de origen.  
   
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- Agrega el elemento **\<hostInBrowser />** al manifiesto de aplicación (*nombreproyecto*.exe.manifest) cuando se compila un proyecto [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)].  
+ Agrega el **\<hostInBrowser />** elemento al manifiesto de aplicación (*projectname*. exe. manifest) cuando [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] se compila un proyecto.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

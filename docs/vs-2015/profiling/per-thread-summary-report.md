@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195511"
 ---
 # <a name="per-thread-summary-report"></a>Informe de resumen por subproceso
@@ -25,12 +25,12 @@ ms.locfileid: "68195511"
 
 Este gráfico de barras muestra la proporción de tiempo que cada subproceso no oculto invierte en cada categoría de actividad durante el intervalo de tiempo visible actualmente. "Ejecución" significa que se está ejecutando el subproceso, todas las demás categorías significan que el subproceso está esperando algo.  
   
-## <a name="see-also"></a>Otras referencias  
- [Tiempo de ejecución (Vista Subprocesos)](../profiling/execution-time-threads-view.md)   
- [Tiempo de E/S (Vista Subprocesos)](../profiling/i-o-time-threads-view.md)   
- [Tiempo de administración de la memoria](../profiling/memory-management-time.md)   
+## <a name="see-also"></a>Consulte también  
+ [Tiempo de ejecución (vista de subprocesos)](../profiling/execution-time-threads-view.md)   
+ [Tiempo de e/s (vista de subprocesos)](../profiling/i-o-time-threads-view.md)   
+ [Tiempo de administración de memoria](../profiling/memory-management-time.md)   
  [Tiempo de adelantamiento](../profiling/preemption-time.md)   
  [Tiempo de suspensión](../profiling/sleep-time.md)   
  [Hora de sincronización](../profiling/synchronization-time.md)   
  [Tiempo de procesamiento de la interfaz de usuario](../profiling/ui-processing-time.md)   
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+ [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: Cuando el punto de interrupción es el cuadro de diálogo posicionamiento | Documentos de Microsoft
+title: Cuadro de diálogo Al visitar un punto de interrupción | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a7cd140a22c435df0875c089a69476d3e1e61cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149412"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Al visitar un punto de interrupción (Cuadro de diálogo)
@@ -35,13 +35,13 @@ Con este cuadro de diálogo, es posible personalizar la acción que ocurre cuand
   
 ## <a name="uielement-list"></a>Lista de UIElement  
  **Imprimir un mensaje**  
- Imprime un mensaje con la sintaxis de DebuggerDisplay. Para obtener más información, consulte [utilizando el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
+ Imprime un mensaje con la sintaxis de DebuggerDisplay. Para obtener más información, vea [Usar el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
   
  Este cuadro de texto también admite palabras clave especiales (como $ADDRESS), que se pueden utilizar por sí solas o dentro de las llaves de una expresión DebuggerDisplay. Las palabras clave disponibles se muestran en el cuadro de diálogo.  
   
  **Continuar la ejecución**  
  Este control solo se habilita cuando se selecciona **Imprimir un mensaje**. Cuando este control está seleccionado, se puede utilizar un punto de interrupción como punto de seguimiento para hacer un seguimiento la ejecución de programas, en lugar de interrumpirla cuando se visita la ubicación.  
   
-## <a name="see-also"></a>Vea también  
- [Uso de puntos de interrupción](../debugger/using-breakpoints.md)   
+## <a name="see-also"></a>Consulte también  
+ [Usar puntos de interrupción](../debugger/using-breakpoints.md)   
  [Usar el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

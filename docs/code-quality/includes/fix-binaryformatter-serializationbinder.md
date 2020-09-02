@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 557d811e2eeaf926cb958471d214fc23c50a25f2
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87471587"
 ---
 - En su lugar, use un serializador seguro y **no permita que un atacante especifique un tipo arbitrario para deserializar**. Para obtener más información, vea las [alternativas preferidas](/dotnet/standard/serialization/binaryformatter-security-guide#preferred-alternatives).

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Producto&gt; (elemento, arranque) | Microsoft Docs'
+title: '&lt;&gt;Elemento Product (arranque) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747454"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; (elemento, arranque)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Elemento Product (arranque)
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.
 
 ## <a name="syntax"></a>Sintaxis
@@ -138,14 +138,14 @@ ProductCode
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos y atributos
- El `Product` elemento es necesario en un archivo de producto. Tiene el siguiente atributo.
+ El `Product` elemento es obligatorio en un archivo de producto. Tiene el siguiente atributo.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`ProductCode`|Un identificador único para el producto.|
+|`ProductCode`|Identificador único del producto.|
 
 ## <a name="example"></a>Ejemplo
- El ejemplo de código siguiente muestra un archivo de producto completo para la instalación de .NET Framework.
+ En el ejemplo de código siguiente se muestra un archivo de producto completo para instalar el .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -249,5 +249,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a68fbab2486cba00fdc4f24c7092c207a85b815
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151522"
 ---
-# <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
+# <a name="idiasymbolget_isreturnvalue"></a>IDiaSymbol::get_isReturnValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Especifica si la variable contiene un valor devuelto.  
@@ -32,10 +32,10 @@ HRESULT get_isReturnValue(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si la variable contiene un valor devuelto.  
+ enuncia Un puntero a un `BOOL` valor de que especifica si la variable contiene un valor devuelto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690216"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
@@ -45,7 +45,7 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 |win:Verbose|Bajo|  
 |Mayor que win:verbose|Bajo|  
   
-### <a name="series-name"></a>Nombre de serie  
+### <a name="series-name"></a>Nombre de la serie  
  El nombre de la tarea del evento se usa para el nombre de la serie. El nombre de la serie está vacío si no se definió ninguna tarea para el evento.  
   
 ### <a name="category"></a>Categoría  
@@ -81,7 +81,7 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 |5|Bajo|  
 |Todos los demás valores|Bajo|  
   
-### <a name="series-name"></a>Nombre de serie  
+### <a name="series-name"></a>Nombre de la serie  
  Utilice el campo de evento `cvSeries`, una cadena, para controlar el nombre de la serie que el visualizador de simultaneidad proporciona a un evento EventSource.  
   
 ### <a name="category"></a>Categoría  
@@ -96,5 +96,5 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 > [!NOTE]
 > Para usar SpanID para anidar intervalos, permita que se superpongan en el mismo subproceso o no permita que se inicien en un subproceso terminen en otro.  
   
-## <a name="see-also"></a>Vea también  
- [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)
+## <a name="see-also"></a>Consulte también  
+ [Marcadores del Visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)

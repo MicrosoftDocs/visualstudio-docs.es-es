@@ -1,5 +1,5 @@
 ---
-title: Biblioteca de controles (código administrado) Web | Microsoft Docs
+title: Biblioteca de controles Web (código administrado) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688175"
 ---
 # <a name="web-control-library-managed-code"></a>Biblioteca de controles Web (código administrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La plantilla de proyecto Biblioteca de controles Web crea un archivo DLL. Como la biblioteca de clases es un archivo DLL, no se puede ejecutar directamente. Deberá crear una página de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que incruste el control. Para obtener más información, consulte [plantilla Biblioteca de controles Web](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
+La plantilla de proyecto Biblioteca de controles Web crea un archivo DLL. Como la biblioteca de clases es un archivo DLL, no se puede ejecutar directamente. Deberá crear una página de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que incruste el control. Para obtener más información, vea [plantilla de biblioteca de controles Web](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Para depurar una biblioteca de controles web (método 1)  
   
@@ -47,9 +47,9 @@ La plantilla de proyecto Biblioteca de controles Web crea un archivo DLL. Como l
   
 1. Cree el proyecto de aplicación host y el proyecto de control web en la misma solución.  
   
-2. En **el Explorador de soluciones**, haga clic en la aplicación host y elija **Agregar referencia**.  
+2. En **Explorador de soluciones**, haga clic con el botón secundario en la aplicación host y elija **Agregar referencia**.  
   
 3. Agregue una referencia al proyecto de control Web.  
   
-## <a name="see-also"></a>Vea también  
- [Aplicaciones web de ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)
+## <a name="see-also"></a>Consulte también  
+ [Aplicaciones Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)

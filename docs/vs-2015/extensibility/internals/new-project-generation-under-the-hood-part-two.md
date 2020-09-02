@@ -1,5 +1,5 @@
 ---
-title: 'Generación de nuevos proyectos: Internamente, la segunda parte | Documentos de Microsoft'
+title: 'Nueva generación de proyectos: en el capó, parte dos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687480"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generación de nuevos proyectos: Aspectos técnicos (parte 2)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En [nueva generación de proyectos: Internamente, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.  
+En [nueva generación de proyectos: en el capó, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo se rellena el cuadro de diálogo **nuevo proyecto** . Supongamos que ha seleccionado una **aplicación Windows de Visual C#**, ha rellenado los cuadros de texto **nombre** y **Ubicación** y ha hecho clic en Aceptar.  
   
 ## <a name="generating-the-solution-files"></a>Generar los archivos de solución  
- Elegir una plantilla de aplicación dirige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] descomprimir y abrir el archivo .vstemplate correspondiente y para iniciar una plantilla para interpretar los comandos XML de este archivo. Estos comandos crean proyectos y elementos de proyecto en la solución nueva o existente.  
+ Al elegir una plantilla de aplicación [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se dirige a descomprimir y abrir el archivo. vstemplate correspondiente, así como iniciar una plantilla para interpretar los comandos XML de este archivo. Estos comandos crean proyectos y elementos de proyecto en la solución nueva o existente.  
   
- La plantilla desempaqueta los archivos de origen, llama a las plantillas de elemento de la misma carpeta zip que contiene el archivo .vstemplate. La plantilla copia estos archivos en el nuevo proyecto, personalizarlos según corresponda. Para obtener información general de plantillas de proyecto y elemento, vea [NIB: Plantillas de Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
+ La plantilla desempaqueta los archivos de origen, denominados plantillas de elementos, de la misma carpeta. zip que contiene el archivo. vstemplate. La plantilla copia estos archivos en el nuevo proyecto y los personaliza en consecuencia. Para obtener información general sobre las plantillas de proyecto y de elemento, vea [NIB: plantillas de Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Reemplazo de parámetros de plantilla  
- Cuando la plantilla copia una plantilla de elementos a un nuevo proyecto, sustituye los parámetros de plantilla con cadenas para personalizar el archivo. Un parámetro de plantilla es un símbolo (token) especial que se va precedido y seguido por un signo de dólar, por ejemplo, $date$.  
+ Cuando la plantilla copia una plantilla de elemento en un nuevo proyecto, reemplaza los parámetros de plantilla por cadenas para personalizar el archivo. Un parámetro de plantilla es un token especial precedido y seguido de un signo de dólar, por ejemplo, $date $.  
   
- Echemos un vistazo a una plantilla de elemento de proyecto típica. Extraer y examine Program.cs en la carpeta de 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip Program Files\Microsoft Visual Studio.  
+ Echemos un vistazo a una plantilla de elemento de proyecto típica. Extraiga y examine Program.cs en la carpeta archivos de Programa\microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.  
   
 ```  
 using System;  
@@ -47,7 +47,7 @@ namespace $safeprojectname$
 }  
 ```  
   
- Si crea un nuevo proyecto de aplicación de Windows denominado Simple, la plantilla reemplaza el `$safeprojectname$` parámetro con el nombre del proyecto.  
+ Si crea un nuevo proyecto de aplicación de Windows denominado simple, la plantilla reemplaza el `$safeprojectname$` parámetro por el nombre del proyecto.  
   
 ```  
 using System;  
@@ -63,10 +63,10 @@ namespace Simple
 }  
 ```  
   
- Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../../ide/template-parameters.md).  
+ Para obtener una lista completa de los parámetros de plantilla, vea [parámetros de plantilla](../../ide/template-parameters.md).  
   
-## <a name="a-look-inside-a-vstemplate-file"></a>Una mirada a una. Archivo VSTemplate  
- Un archivo .vstemplate básico tiene este formato  
+## <a name="a-look-inside-a-vstemplate-file"></a>Un aspecto dentro de un. Archivo VSTemplate  
+ Un archivo. vstemplate básico tiene este formato  
   
 ```  
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
@@ -77,9 +77,9 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- Analizamos la \<TemplateData > sección la [nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Las etiquetas en esta sección se utilizan para controlar la apariencia de la **nuevo proyecto** cuadro de diálogo.  
+ Examinamos la \<TemplateData> sección de la [nueva generación de proyectos: en el capó, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Las etiquetas de esta sección se utilizan para controlar la apariencia del cuadro de diálogo **nuevo proyecto** .  
   
- Las etiquetas en el \<TemplateContent > sección control de la generación de nuevos proyectos y elementos de proyecto. Este es el \<TemplateContent > sección del archivo en la carpeta \Archivos 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip de Visual Studio \Program Files\Microsoft cswindowsapplication.vstemplate.  
+ Las etiquetas de la \<TemplateContent> sección controlan la generación de nuevos proyectos y elementos de proyecto. Esta es la \<TemplateContent> sección del archivo cswindowsapplication. vstemplate de la carpeta \Archivos de Programa\microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip  
   
 ```  
 <TemplateContent>  
@@ -113,26 +113,26 @@ namespace Simple
 </TemplateContent>  
 ```  
   
- El \<proyecto > etiqueta controla la generación de un proyecto y el \<ProjectItem > etiqueta controla la generación de un elemento de proyecto. Si el parámetro ReplaceParameters es true, la plantilla va a personalizar todos los parámetros de plantilla en el archivo de proyecto o elemento. En este caso, todos los elementos de proyecto personalizados, excepto Settings.settings.  
+ La \<Project> etiqueta controla la generación de un proyecto y la \<ProjectItem> etiqueta controla la generación de un elemento de proyecto. Si el parámetro ReplaceParameters es true, la plantilla personalizará todos los parámetros de plantilla en el archivo o elemento de proyecto. En este caso, se personalizan todos los elementos de proyecto, excepto Settings. Settings.  
   
- El parámetro TargetFileName especifica el nombre y ruta de acceso relativa del archivo de proyecto resultante o elemento. Esto le permite crear una estructura de carpetas para el proyecto. Si no especifica este argumento, el elemento de proyecto tendrá el mismo nombre que la plantilla de elemento de proyecto.  
+ El parámetro TargetFileName especifica el nombre y la ruta de acceso relativa del archivo o elemento de proyecto resultante. Esto le permite crear una estructura de carpetas para el proyecto. Si no especifica este argumento, el elemento de proyecto tendrá el mismo nombre que la plantilla de elemento de proyecto.  
   
- La estructura de carpetas de aplicación de Windows resultante tendrá este aspecto:  
+ La estructura de carpetas de aplicaciones de Windows resultante tiene el siguiente aspecto:  
   
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
- El primer y único \<proyecto > etiquetas en las lecturas de plantilla:  
+ La primera y única \<Project> etiqueta de la plantilla lee:  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  
 ```  
   
- Esto indica a la plantilla de proyecto nuevo para crear el archivo de proyecto Simple.csproj copiando y personalizar el windowsapplication.csproj de elemento de plantilla.  
+ Esto indica a la nueva plantilla de proyecto que cree el archivo de proyecto. csproj simple copiando y personalizando el elemento de plantilla archivo WindowsApplication. csproj.  
   
-### <a name="designers-and-references"></a>Los diseñadores y referencias  
- Puede ver en el Explorador de soluciones que la carpeta Propiedades está presente y contiene los archivos que esperaba. Pero ¿qué proyecto hace referencia y dependencias de archivo del diseñador, como Resources.Designer.cs a Resources.resx y Form1.Designer.cs a Form1.cs?  Estos se configuran en el archivo Simple.csproj cuando se genera.  
+### <a name="designers-and-references"></a>Diseñadores y referencias  
+ Puede ver en el Explorador de soluciones que la carpeta propiedades está presente y contiene los archivos esperados. Pero ¿qué ocurre con las referencias de proyecto y las dependencias de archivo de diseñador, como Resources.Designer.cs a Resources. resx y Form1.Designer.cs a Form1.cs?  Estos se configuran en el archivo. csproj simple cuando se genera.  
   
- Este es el \<ItemGroup > desde Simple.csproj que crea las referencias del proyecto:  
+ Este es el \<ItemGroup> de simple. csproj que crea las referencias del proyecto:  
   
 ```  
 <ItemGroup>  
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>  
 ```  
   
- Puede ver que se trata de las referencias del seis proyecto que aparecen en el Explorador de soluciones. Esta es una sección de otro \<ItemGroup >. Se han eliminado muchas líneas de código para mayor claridad. Esta sección hace Settings.Designer.cs depende Settings.Settings creado por:  
+ Puede ver que estas son las seis referencias de proyecto que aparecen en el Explorador de soluciones. Esta es una sección de otra \<ItemGroup> . Se han eliminado muchas líneas de código para mayor claridad. En esta sección se hace que Settings.Designer.cs dependa de Settings. Settings:  
   
 ```  
 <ItemGroup>  
@@ -155,6 +155,6 @@ namespace Simple
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Generación de nuevos proyectos: Aspectos técnicos (parte 1)](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

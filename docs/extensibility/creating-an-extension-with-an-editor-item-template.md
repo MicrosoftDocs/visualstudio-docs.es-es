@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903844"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Crear una extensión con una plantilla de elemento de editor
@@ -26,7 +26,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 ## <a name="create-a-classifier-extension"></a>Crear una extensión de clasificador
  La plantilla de elemento clasificador de editor crea un clasificador de editor que colorea el texto correspondiente (en este caso, todo) en cualquier archivo de texto.
 
-1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `TestClassifier`. Haga clic en **Aceptar**.
+1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `TestClassifier`. Haga clic en **OK**.
 
 2. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. Vaya al nodo **extensibilidad** de Visual C# y seleccione **clasificador de editor**. Deje el nombre de archivo predeterminado (*EditorClassifier1.CS*).
 
@@ -36,7 +36,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 
     - *EditorClassifier1ClassificationDefinition.CS* contiene la `EditorClassifier1ClassificationDefinition` clase.
 
-    - *EditorClassifier1Format.CS* contiene la `EditorClassifier1Format` clase.
+    - *EditorClassifier1Format.CS* contiene la `EditorClassifier1Format`  clase.
 
     - *EditorClassifier1Provider.CS* contiene la `EditorClassifier1Provider` clase.
 
@@ -47,7 +47,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 ## <a name="create-a-text-relative-adornment-extension"></a>Crear una extensión de adornos relativa a texto
  La plantilla de gráfico de texto del editor crea un elemento gráfico relativo al texto que decora todas las instancias del carácter de texto ' a ' mediante un cuadro que tiene un contorno rojo y un fondo azul. Es relativo al texto porque el cuadro siempre superpone los caracteres "a", incluso cuando se mueven o se cambian de formato.
 
-1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `TestAdornment`. Haga clic en **Aceptar**.
+1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `TestAdornment`. Haga clic en **OK**.
 
 2. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. Vaya al nodo **extensibilidad** de Visual C# y seleccione **gráfico de texto del editor**. Deje el nombre de archivo predeterminado (*TextAdornment1.CS/VB*).
 
@@ -67,7 +67,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para crear una extensión de elemento gráfico de ventanilla mediante la plantilla de elemento gráfico de la ventanilla de editor
 
-1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `ViewportAdornment`. Haga clic en **Aceptar**.
+1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `ViewportAdornment`. Haga clic en **OK**.
 
 2. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. Vaya al nodo **extensibilidad** de Visual C# y seleccione **elemento gráfico**de la ventanilla del editor. Deje el nombre de archivo predeterminado (*ViewportAdornment1.CS/VB*).
 
@@ -84,7 +84,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 
 ### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Para crear una extensión de margen mediante la plantilla de margen del editor
 
-1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `MarginExtension`. Haga clic en **Aceptar**.
+1. En el cuadro de diálogo **nuevo proyecto** , expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el panel **plantillas** , seleccione **Proyecto VSIX**. En el cuadro **Nombre** , escriba `MarginExtension`. Haga clic en **OK**.
 
 2. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. Vaya al nodo **extensibilidad** de Visual C# y seleccione **margen del editor**. Deje el nombre de archivo predeterminado (EditorMargin1.cs/vb).
 
@@ -96,5 +96,5 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 
 4. Compile este proyecto e inicie la depuración. Aparece la instancia experimental. Si abre un archivo de texto, se muestra un margen verde con las palabras **Hello EditorMargin1** debajo de la barra de desplazamiento horizontal.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

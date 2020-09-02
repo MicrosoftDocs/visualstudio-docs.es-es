@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 7ca84f1edfc3290fe53e00a5b7f8c85f07b0c66b
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624180"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedimiento Migración y publicación de una aplicación web a un servicio en la nube de Azure desde Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedimiento: para migrar y publicar una aplicación web en un servicio en la nube de Azure desde Visual Studio
 
 Para aprovechar los servicios de hospedaje y la escalabilidad de Azure, puede migrar e implementar la aplicación web en un servicio en la nube de Azure. Solo se requieren cambios mínimos. En este artículo se trata solo cómo implementar solo en Cloud Services; para App Service, vea [Implementación de una aplicación web en Azure App Service](/azure/app-service/app-service-deploy-local-git).
 
@@ -38,7 +38,7 @@ Para aprovechar los servicios de hospedaje y la escalabilidad de Azure, puede mi
 
 Las advertencias o errores que se producen indican problemas que se deben corregir antes de realizar implementaciones en Azure, como los ensamblados que faltan.
 
-Si compila la aplicación, la ejecuta localmente mediante el emulador de proceso o la publica en Azure, puede que aparezca el error: "La ruta de acceso especificada, el nombre de archivo o ambos son demasiado largos". Este error indica que la longitud del nombre completo de proyecto de Azure excede de 146 caracteres. Para corregir el problema, mueva la solución a una carpeta diferente con una ruta de acceso más corta.
+Si compila la aplicación, la ejecuta localmente mediante el emulador de proceso o la publica en Azure, puede que aparezca el error: "La ruta de acceso o el nombre de archivo especificados, o ambos, son demasiado largos". Este error indica que la longitud del nombre completo de proyecto de Azure excede de 146 caracteres. Para corregir el problema, mueva la solución a una carpeta diferente con una ruta de acceso más corta.
 
 Para obtener más información sobre cómo tratar las advertencias como errores, consulte [Configuración de un proyecto de servicio en la nube de Azure con Visual Studio](vs-azure-tools-configuring-an-azure-project.md).
 
@@ -47,20 +47,20 @@ Para obtener más información sobre cómo tratar las advertencias como errores,
 1. En el **Explorador de soluciones** de Visual Studio, haga clic con el botón derecho en el proyecto de servicio en la nube agregado y seleccione **Establecer como proyecto de inicio**.
 1. Seleccione **Depurar > Iniciar depuración** (F5) para iniciar el entorno de depuración de Azure. Este entorno proporciona específicamente la emulación de varios servicios de Azure.
 
-### <a name="use-an-azure-sql-database-for-your-application"></a>Uso de una instancia de SQL Database Azure para su aplicación
+### <a name="use-an-azure-sql-database-for-your-application"></a>Uso de una base de datos de Azure SQL para su aplicación
 
 Si tiene una cadena de conexión para la aplicación web que usa una instancia local de SQL Server Database, debe migrar la base de datos a Azure SQL Database en su lugar y actualizar la cadena de conexión. Para obtener instrucciones con este proceso, consulte los temas siguientes:
 
 - [Migración de una base de datos de SQL Server a una instancia de SQL Database en la nube](/azure/sql-database/sql-database-cloud-migrate)
-- [Uso de .NET (C#) con Visual Studio para conectarse a una instancia de Azure SQL Database y consultarla](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
+- [Uso de .NET (C#) con Visual Studio para conectarse a una base de datos de Azure SQL y consultarla](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
 
 ## <a name="publish-the-application-to-azure-cloud-service"></a>Publicación de la aplicación en un Servicio en la nube de Azure
 
 1. Cree el servicio en la nube y las cuentas de almacenamiento necesarias en la suscripción de Azure según se describe en [Preparación para publicar o implementar una aplicación de Azure desde Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. En Visual Studio, haga clic con el botón derecho en el proyecto de aplicación y seleccione **Publicar en Microsoft Azure...** (que es distinto del comando "Publicar...").
-1. En la ventana **Publicar aplicación de Azure** que aparece, inicie sesión mediante la cuenta de la suscripción de Azure y seleccione **Siguiente >** .
+1. En la ventana **Publicar aplicación de Azure** que aparece, inicie sesión mediante la cuenta de la suscripción de Azure y seleccione **Siguiente >**.
 1. En la pestaña **Configuración > Configuración común**, seleccione el servicio en la nube de destino en la lista desplegable **Servicio en la nube**, junto con las configuraciones y el entorno elegidos.
-1. En **Configuración > Configuración avanzada**, seleccione la cuenta de almacenamiento que desea usar y después seleccione **Siguiente >** .
+1. En **Configuración > Configuración avanzada**, seleccione la cuenta de almacenamiento que desea usar y después seleccione **Siguiente >**.
 1. En **Diagnósticos**, seleccione si desea enviar información a Application Insights.
 1. Seleccione **Siguiente >** para ver un resumen y después seleccione **Publicar** para iniciar la implementación.
 1. Visual Studio abre una ventana de registro de actividad donde puede realizar un seguimiento del progreso:
@@ -82,8 +82,8 @@ En la tabla siguiente se proporciona información detallada sobre cómo iniciar 
 | Aplicación web ASP.NET<br/>(incluidos MVC 2, MVC 3 y MVC 4) | Seleccione la dirección URL en la pestaña **Implementación** del **registro de actividad de Azure**. |
 | Aplicación web ASP.NET vacía | Si tiene una página `.aspx` predeterminada en la aplicación, seleccione la dirección URL en la pestaña **Implementación** del **registro de actividad de Azure**. Para navegar a otra página distinta, escriba una dirección URL con el siguiente formato en un explorador: `<deployment_url>/<page_name>.aspx` |
 | Aplicación de Silverlight<br/>Aplicación de negocios de Silverlight<br/>Aplicación de navegación de Silverlight | Navegue hasta la página específica de la aplicación con el siguiente formato de dirección URL: `<deployment_url>/<page_name>.aspx` |
-| Aplicación del servicio de WCF<br/>Aplicación de servicio de flujo de trabajo de WCF | Establezca el archivo `.svc` como la página de inicio del proyecto de servicio WCF. A continuación, vaya a `<deployment_url>/<service_file>.svc`. |
-| Entidades dinámicas de ASP.NET<br/>Linq to SQL de datos dinámicos de ASP.NET | Actualice la cadena de conexión como se describe en la siguiente sección. A continuación, vaya a `<deployment_url>/<page_name>.aspx`. Para Linq to SQL, debe usar una instancia de Azure SQL Database. |
+| Aplicación de servicio de WCF<br/>Aplicación de servicio de flujo de trabajo WCF | Establezca el archivo `.svc` como la página de inicio del proyecto de servicio WCF. A continuación, vaya a `<deployment_url>/<service_file>.svc`. |
+| Entidades dinámicas de ASP.NET<br/>Linq to SQL de datos dinámicos de ASP.NET | Actualice la cadena de conexión como se describe en la siguiente sección. A continuación, vaya a `<deployment_url>/<page_name>.aspx`. Para Linq to SQL, debe usar una base de datos de Azure SQL. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Actualizar una cadena de conexión para Entidades dinámicas de ASP.NET
 
@@ -119,8 +119,8 @@ Las aplicaciones que se pueden migrar y publicar en Cloud Services deben usar un
 | Silverlight | Aplicación de negocios de Silverlight |
 | Silverlight | Aplicación de navegación de Silverlight |
 | WCF | Aplicación de servicio de WCF |
-| WCF | Aplicación de servicio de flujo de trabajo de WCF |
-| Flujo de trabajo | Aplicación de servicio de flujo de trabajo de WCF |
+| WCF | Aplicación de servicio de flujo de trabajo WCF |
+| Flujo de trabajo | Aplicación de servicio de flujo de trabajo WCF |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -1,5 +1,5 @@
 ---
-title: Depurar código administrado | Microsoft Docs
+title: Depuración de código administrado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,16 +22,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691447"
 ---
 # <a name="debugging-managed-code"></a>Depurar código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En esta sección se tratan problemas y técnicas de depuración comunes para aplicaciones administradas, o aplicaciones escritas en lenguajes basados en Common Language Runtime, como Visual Basic, C# y C++. Las técnicas descritas a continuación son técnicas de alto nivel. Para obtener más información, consulte [con el depurador](../debugger/debugger-basics.md).  
+En esta sección se tratan problemas y técnicas de depuración comunes para aplicaciones administradas, o aplicaciones escritas en lenguajes basados en Common Language Runtime, como Visual Basic, C# y C++. Las técnicas descritas a continuación son técnicas de alto nivel. Para obtener más información, vea [usar el depurador](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Mensajes de diagnóstico en la ventana de resultados](../debugger/diagnostic-messages-in-the-output-window.md)  
@@ -43,13 +43,13 @@ En esta sección se tratan problemas y técnicas de depuración comunes para apl
  [Instrucciones Stop en Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
  Describe la instrucción `Stop`, que proporciona una alternativa al establecimiento de un punto de interrupción. También se proporciona código de ejemplo, junto con comparaciones entre las instrucciones `Stop` y `End`, así como entre las instrucciones `Stop` y `Assert`.  
   
- [Tutorial: Depuración un formulario Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [Tutorial: Depuración de un formulario Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)  
  Ofrece instrucciones paso a paso para crear un Windows Form y para depurar dicho formulario. Un Windows Form, un componente estándar de una aplicación para Windows administrada, es una de las aplicaciones administradas más comunes. En este tutorial se utiliza Visual C# y Visual Basic, pero normalmente las técnicas para crear un formulario Windows Forms con C++ son similares.  
   
- [Depurar el método OnStart](../debugger/how-to-debug-the-onstart-method.md)  
+ [Depuración en el método OnStart](../debugger/how-to-debug-the-onstart-method.md)  
  Proporciona ejemplos de código que permiten depurar el método `OnStart` de un servicio de Windows administrado. Para depurar el método `OnStart` de un servicio de Windows, se deben agregar algunas líneas de código para simular el servicio.  
   
- [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
+ [Depuración en modo mixto](../debugger/debugging-mixed-mode-applications.md)  
  Analiza la depuración de aplicaciones en modo mixto. Esto significa cualquier aplicación que combine código nativo con código administrado.  
   
  [Error: No se puede depurar porque un depurador del kernel está habilitado en el sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
@@ -58,7 +58,7 @@ En esta sección se tratan problemas y técnicas de depuración comunes para apl
  [Optimización y depuración JIT](../debugger/jit-optimization-and-debugging.md)  
  Describe los efectos de la optimización de JIT en la depuración.  
   
- [Depurar LINQ y DLINQ](../debugger/debugging-linq.md)  
+ [Depuración de LINQ y DLINQ](../debugger/debugging-linq.md)  
  Analiza las técnicas para depurar consultas LINQ.  
   
  [Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)  
@@ -74,20 +74,20 @@ En esta sección se tratan problemas y técnicas de depuración comunes para apl
  [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  Describe una opción del vinculador que agrega <xref:System.Diagnostics.DebuggableAttribute> a código escrito con C++. Este atributo es necesario para utilizar características de depuración como la asociación con C++.  
   
- [Depurar aplicaciones de servicios de Windows](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
+ [Depuración de aplicaciones de servicios de Windows](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  Proporciona consideraciones sobre la depuración de aplicaciones de servicios de Windows, como la configuración, la asociación al proceso, la depuración del código del método `OnStart` y el método Main del servicio, el establecimiento de puntos de interrupción y el uso del Administrador de control de servicios para iniciar, detener, pausar y continuar el servicio.  
   
- [Depurar y generar perfiles](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [Depuración y generación de perfiles](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  Explica la depuración de las aplicaciones de .NET Framework y los requisitos de configuración.  
   
- [Depurar scripts y aplicaciones web](../debugger/debugging-web-applications-and-script.md)  
+ [Depuración de scripts y aplicaciones web](../debugger/debugging-web-applications-and-script.md)  
  Describe problemas y técnicas de depuración comunes que pueden aparecer en la depuración de scripts y aplicaciones Web.  
  Describe las nuevas características de depuración agregadas en esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Depurar la página principal](../debugger/debugging-in-visual-studio.md)  
  Proporciona vínculos a secciones más amplias de la documentación relativa a la depuración. Incluye: novedades del depurador, configuración y preparación, puntos de interrupción, control de excepciones, editar y continuar, depurar código administrado, depurar proyectos de Visual C++, depurar COM y ActiveX, depurar archivos DLL, depurar SQL y las referencias a la interfaz de usuario.  
   
-## <a name="see-also"></a>Vea también  
- [Tutorial: Controles de depuración personalizado Windows Forms en tiempo de diseño](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+## <a name="see-also"></a>Consulte también  
+ [Tutorial: depurar controles de Windows Forms personalizados en tiempo de diseño](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)

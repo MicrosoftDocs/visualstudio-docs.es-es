@@ -14,10 +14,10 @@ caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3252ea7cada8261a97832e4e621849e0fb0c91e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543720"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
@@ -118,7 +118,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
 - [Portar, migrar y actualizar proyectos de Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
-- [IDE de Visual Studio](./ide/visual-studio-ide.md)
+- [IDE de Visual Studio](./ide/visual-studio-ide.md)
 
 - [Extensibilidad en Visual Studio](./extensibility/extensibility-in-visual-studio.md)
 

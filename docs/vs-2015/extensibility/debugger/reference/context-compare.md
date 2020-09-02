@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a9cf283cf7239b5ed74e38ca534538a286a477c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179968"
 ---
-# <a name="contextcompare"></a>CONTEXT_COMPARE
+# <a name="context_compare"></a>CONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Especifica los criterios para comparar dos contextos de memoria.  
@@ -57,44 +57,44 @@ public enum enum_CONTEXT_COMPARE { 
   
 ## <a name="members"></a>Miembros  
  CONTEXT_EQUAL  
- Busque el primer contexto de memoria en la lista que es igual que el contexto de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que sea igual al contexto de memoria de destino.  
   
  CONTEXT_LESS_THAN  
- Busque el primer contexto de memoria en la lista que es menor que el contexto de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que sea menor que el contexto de memoria de destino.  
   
  CONTEXT_GREATER_THAN  
- Busque el primer contexto de memoria en la lista que es mayor que el contexto de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que sea mayor que el contexto de memoria de destino.  
   
  CONTEXT_LESS_THAN_OR_EQUAL  
- Busque el primer contexto de memoria en la lista que es menor o igual que el contexto de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que sea menor o igual que el contexto de memoria de destino.  
   
  CONTEXT_GREATER_THAN_OR_EQUAL  
- Busque el primer contexto de memoria en la lista que es mayor o igual que el contexto de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que sea mayor o igual que el contexto de memoria de destino.  
   
  CONTEXT_SAME_SCOPE  
- Busque el primer contexto de memoria en la lista que se encuentra en el mismo ámbito que el contexto de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que está en el mismo ámbito que el contexto de memoria de destino.  
   
  CONTEXT_SAME_FUNCTION  
- Busque el primer contexto de memoria en la lista que se encuentra en la misma función que el ámbito de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que está en la misma función que el ámbito de la memoria de destino.  
   
  CONTEXT_SAME_MODULE  
- Busque el primer contexto de memoria en la lista que se encuentra en el mismo módulo que el contexto de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que se encuentra en el mismo módulo que el contexto de memoria de destino.  
   
  CONTEXT_SAME_PROCESS  
- Busque el primer contexto de memoria en la lista que se encuentra en el mismo proceso que el contexto de la memoria de destino.  
+ Busque el primer contexto de memoria de la lista que se encuentre en el mismo proceso que el contexto de memoria de destino.  
   
 ## <a name="remarks"></a>Comentarios  
- Se pasa como argumento a la [comparar](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) método.  
+ Se pasa como argumento al método [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) .  
   
- Estos valores se usan para buscar el primer contexto de la memoria en una lista que cumple los criterios de comparación especificado. Un contexto de la memoria se proporciona una lista de contextos de memoria compararse a sí mismo frente a través de la `IDebugMemoryContext2::Compare` método. El primer contexto de memoria en la lista para que el operador de comparación es `true` , a continuación, se devuelve.  
+ Estos valores se utilizan para buscar el primer contexto de memoria de una lista que cumpla los criterios de comparación especificados. A un contexto de memoria se le asigna una lista de contextos de memoria que se van a comparar a través del `IDebugMemoryContext2::Compare` método. El primer contexto de memoria de la lista para la que se devuelve el operador de comparación `true` .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+ [Comparar](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195610"
 ---
 # <a name="modules-view"></a>Vista Módulos
@@ -29,13 +29,13 @@ En la vista Módulos se enumeran los módulos de los datos de generación de per
   
  Expanda o contraiga el nombre del módulo para mostrar o cerrar la vista de los datos de rendimiento del módulo.  
   
- Para agregar o quitar columnas, haga clic con el botón derecho en la ventana del informe y, a continuación, seleccione **Agregar o quitar columnas**. Puede ordenar los datos si hace clic en el nombre de una columna. Para obtener más información, vea [Cómo: Personalizar las columnas de la vista Informes](../profiling/how-to-customize-report-view-columns.md).  
+ Para agregar o quitar columnas, haga clic con el botón derecho en la ventana del informe y, a continuación, seleccione **Agregar o quitar columnas**. Puede ordenar los datos si hace clic en el nombre de una columna. Para obtener más información, vea [Cómo: personalizar las columnas de la vista de informe](../profiling/how-to-customize-report-view-columns.md).  
   
  Las columnas que están disponibles en la vista Módulos dependen del método de generación de perfiles (muestreo o instrumentación) usado para recopilar los datos y de si los datos de memoria de .NET se han recopilado en la ejecución de generación de perfiles.  
   
-## <a name="see-also"></a>Vea también  
- [Vista Módulos](../profiling/modules-view-sampling-data.md)   
- [Vista Módulos](../profiling/modules-view-instrumentation-data.md)   
- [Vista Módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Vista Módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>Consulte también  
+ [Vista módulos](../profiling/modules-view-sampling-data.md)   
+ [Vista módulos](../profiling/modules-view-instrumentation-data.md)   
+ [Vista módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Vista módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vista Módulos](../profiling/modules-view-contention-data.md)
