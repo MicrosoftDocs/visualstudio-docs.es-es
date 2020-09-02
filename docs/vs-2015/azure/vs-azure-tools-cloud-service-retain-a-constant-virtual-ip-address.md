@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 525b5fe8f2726ab1f7f2ff80abf7bc06937a7a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964273"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Conservación de una dirección IP virtual constante para un servicio en la nube de Azure
@@ -37,11 +37,11 @@ Puede especificar la configuración de implementación en el **Asistente para pu
 
     ![Página de inicio de sesión de Publicar aplicación de Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. En la pestaña **Configuración común**, compruebe que el nombre del servicio en la nube en el que está implementando, el **entorno**, la **configuración de compilación** y la **configuración del servicio** son todos correctos.
+4. En la pestaña **configuración común** , compruebe que el nombre del servicio en la nube en el que está implementando, el **entorno**, la **configuración de compilación**y la configuración del **servicio** son todos correctos.
 
     ![Pestaña Configuración común de Publicar aplicación de Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. En la pestaña **Configuración avanzada**, compruebe que la **etiqueta de implementación** y la **cuenta de almacenamiento** son correctas. Compruebe que la casilla **Eliminar implementación en caso de error** está desactivada y compruebe que la casilla **Actualización de implementación**. Desactive la casilla **Eliminar implementación en caso de error** para asegurarse de que no se pierda la dirección VIP si se produce un error durante la implementación. Seleccione la casilla **Actualización de implementación** para asegurarse de que no se elimine la implementación y de que no se pierda la dirección VIP al volver a publicar la aplicación. 
+5. En la pestaña **Configuración avanzada**, compruebe que la **etiqueta de implementación** y la **cuenta de almacenamiento** son correctas. Compruebe que la casilla **Eliminar implementación en caso de error** está desactivada y compruebe que la casilla **Actualización de implementación**. Al desactivar la casilla **eliminar implementación en caso de error** , se asegura de que no se pierda la dirección VIP si se produce un error durante la implementación. Seleccione la casilla **Actualización de implementación** para asegurarse de que no se elimine la implementación y de que no se pierda la dirección VIP al volver a publicar la aplicación. 
 
     ![Pestaña Configuración avanzada de Publicar aplicación de Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 
@@ -54,4 +54,4 @@ Puede especificar la configuración de implementación en el **Asistente para pu
     ![Página de resumen de Publicar aplicación de Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
-- [Uso del Asistente Publicar aplicaciones de Azure de Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)
+- [Uso del Asistente Publicar aplicación de Azure de Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)

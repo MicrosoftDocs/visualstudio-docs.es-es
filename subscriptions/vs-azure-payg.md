@@ -8,10 +8,10 @@ ms.date: 04/15/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo configurar la cuenta Pago por uso de Azure.
 ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85902893"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Suscripciones de Desarrollo/pruebas - Pago por uso de Azure

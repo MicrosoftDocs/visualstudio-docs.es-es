@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986058"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalización y localización de las soluciones de Excel
-  Esta sección contiene información sobre las consideraciones especiales de las soluciones de Microsoft Office Excel que se vayan a ejecutar en equipos que tengan una configuración de Windows distinta del inglés. La mayoría de los aspectos de globalización y localización de las soluciones de Microsoft Office son los mismos que se pueden encontrar cuando se crean otros tipos de soluciones mediante Visual Studio. Para obtener información general, consulte [globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md).
+  Esta sección contiene información sobre consideraciones especiales para las soluciones de Microsoft Office Excel que se vayan a ejecutar en equipos que tengan una configuración distinta del inglés para Windows. La mayoría de los aspectos de globalización y localización de las soluciones de Microsoft Office son los mismos que se pueden encontrar cuando se crean otros tipos de soluciones mediante Visual Studio. Para obtener información general, consulte [globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md).
 
  De manera predeterminada, los controles de host de Microsoft Office Excel funcionan correctamente en cualquier configuración regional de Windows, siempre y cuando todos los datos que se pasan o manipulan con código administrado tengan el formato correcto de inglés (Estados Unidos). En proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], este comportamiento se controla mediante Common Language Runtime (CLR).
 
@@ -47,7 +47,7 @@ ms.locfileid: "72986058"
  Aún debe asegurarse de que cualquier parte del código que interactúa con el texto del documento sigue coincidiendo con el idioma del texto y que los marcadores, rangos con nombre y otros campos de visualización se adaptan a cualquier nuevo formato del documento de Office necesario para ajustarse a diferentes gramáticas y longitud de texto. Para plantillas de documentos que contienen relativamente poco texto, es posible que considere la posibilidad de almacenar el texto en archivos de recursos y, a continuación, cargar el texto en tiempo de ejecución.
 
 ### <a name="text-direction"></a>Dirección del texto
- En Excel, puede establecer una propiedad de la hoja de cálculo para representar el texto de derecha a izquierda. Los controles host, o cualquier control que tenga una propiedad `RightToLeft`, que se coloca en el diseñador coinciden automáticamente con esta configuración en tiempo de ejecución. Word no tiene una configuración de documento para texto bidireccional (solo tiene que cambiar la alineación del texto), por lo que los controles no se pueden asignar a esta configuración. En su lugar, debe establecer la alineación del texto para cada control. Es posible escribir código para recorrer todos los controles y hacer que representen el texto de derecha a izquierda.
+ En Excel, puede establecer una propiedad de la hoja de cálculo para representar el texto de derecha a izquierda. Los controles host, o cualquier control que tenga una `RightToLeft` propiedad, que se colocan en el diseñador automáticamente coinciden con esta configuración en tiempo de ejecución. Word no tiene una configuración de documento para texto bidireccional (solo tiene que cambiar la alineación del texto), por lo que los controles no se pueden asignar a esta configuración. En su lugar, debe establecer la alineación del texto para cada control. Es posible escribir código para recorrer todos los controles y hacer que representen el texto de derecha a izquierda.
 
 ### <a name="change-culture"></a>Cambiar referencia cultural
  Su código de personalización de nivel de documento normalmente comparte el subproceso de la interfaz de usuario principal de Excel, de modo que cualquier cambio que realice a la referencia cultural del subproceso afecta a todo lo demás que se está ejecutando en dicho subproceso; el cambio no se limita a la personalización.
@@ -55,7 +55,7 @@ ms.locfileid: "72986058"
  Los controles de Windows Forms se inicializan antes de que se inicien los complementos de VSTO de nivel de aplicación por la aplicación host. En estas situaciones, se debe cambiar la referencia cultural antes de establecer los controles de la interfaz de usuario.
 
 ## <a name="install-the-language-packs"></a>Instalar los paquetes de idioma
- Si tiene una configuración distinta del inglés para Windows, puede instalar los paquetes de idiomas [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para ver los mensajes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] en el mismo idioma que Windows. Si algún usuario final ejecuta sus soluciones con una configuración distinta del inglés para Windows, deben tener el paquete de idioma correcto para ver los mensajes en tiempo de ejecución en el mismo idioma que Windows. Los paquetes de idioma de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] están disponibles en el [centro de descarga de Microsoft](https://www.microsoft.com/download).
+ Si tiene una configuración distinta del inglés para Windows, puede instalar los paquetes de idiomas [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para ver los mensajes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] en el mismo idioma que Windows. Si algún usuario final ejecuta sus soluciones con una configuración distinta del inglés para Windows, deben tener el paquete de idioma correcto para ver los mensajes en tiempo de ejecución en el mismo idioma que Windows. Los [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] paquetes de idioma están disponibles en el [centro de descarga de Microsoft](https://www.microsoft.com/download).
 
  Además, los paquetes de idioma de .NET Framework redistribuibles son necesarios para mensajes de ClickOnce. Los paquetes de idioma de .NET Framework están disponibles en el [centro de descarga de Microsoft](https://www.microsoft.com/download).
 

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51515339c24ea8a0507c47d0399cde9e423f71a0
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382138"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procedimientos para establecer una zona de seguridad para una aplicación ClickOnce
@@ -32,7 +32,7 @@ Al establecer permisos de seguridad de acceso del código para una aplicación C
 
 1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
 
-2. Haga clic en la pestaña **Seguridad**.
+2. Haga clic en la pestaña **Security** (Seguridad).
 
 3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** .
 
@@ -42,7 +42,7 @@ Al establecer permisos de seguridad de acceso del código para una aplicación C
 
 5. En la lista desplegable **Zona desde la que se instalará la aplicación** , seleccione una zona de seguridad.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

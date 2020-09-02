@@ -8,10 +8,10 @@ ms.date: 02/23/2020
 ms.topic: how-to
 description: Conozca cómo para aprovechar los precios especiales de Azure DevTest disponibles para los clientes con Contrato Enterprise.
 ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903135"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta de Contrato Enterprise de Azure DevTest

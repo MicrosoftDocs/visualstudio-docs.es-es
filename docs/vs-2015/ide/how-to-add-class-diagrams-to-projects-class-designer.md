@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1a0d10dabdace7ef7ab3805a59b892548cf6556
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645518"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)
@@ -28,7 +28,7 @@ Para diseñar, editar y refactorizar clases y otros tipos, agregue un diagrama d
 
 ### <a name="to-add-a-blank-class-diagram-to-a-project"></a>Para agregar un diagrama de clases en blanco a un proyecto
 
-1. En el Explorador de soluciones, haga clic con el botón secundario del mouse en el nombre del proyecto. Después, elija **Agregar nuevo elemento** o **Agregar**, **Nuevo elemento**.
+1. En el Explorador de soluciones, haga clic con el botón secundario en el nombre del proyecto. Después, elija **Agregar nuevo elemento** o **Agregar**, **Nuevo elemento**.
 
 2. En la lista de plantillas, seleccione el **Diagrama de clases**. En los proyectos de Visual C++, busque esta plantilla bajo **Plantillas** y después bajo **Utilidad**.
 
@@ -38,7 +38,7 @@ Para diseñar, editar y refactorizar clases y otros tipos, agregue un diagrama d
 
 ### <a name="to-add-a-class-diagram-based-on-existing-types"></a>Para agregar un diagrama de clase basado en tipos existentes
 
-1. En el Explorador de soluciones, abra el menú contextual del archivo de clases y elija **Ver diagrama de clases**.
+1. En Explorador de soluciones, abra el menú contextual del archivo de clase y, a continuación, elija **ver diagrama de clases**.
 
      o bien
 
@@ -46,9 +46,9 @@ Para diseñar, editar y refactorizar clases y otros tipos, agregue un diagrama d
 
 ### <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Para mostrar los contenidos de un proyecto completo en un diagrama de clases
 
-1. En el Explorador de soluciones o en la Vista de clases, haga clic con el botón derecho en el proyecto y elija **Vista**; después, elija **Ver diagrama de clases**.
+1. En Explorador de soluciones o Vista de clases, haga clic con el botón derecho en el proyecto y elija **Ver**; después, elija **ver diagrama de clases**.
 
      Se crea un diagrama de clases que se rellena automáticamente.
 
-## <a name="see-also"></a>Vea también
- [Cómo: crear tipos mediante diseñador de clases](../ide/how-to-create-types-by-using-class-designer.md) [Cómo: ver tipos existentes (diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md) [diseñar clases y tipos (diseñador de clases)](../ide/designing-classes-and-types-class-designer.md) [Ver tipos y relaciones (diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md) [trabajar con diagramas de clases ( Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: crear tipos mediante diseñador de clases](../ide/how-to-create-types-by-using-class-designer.md) [Cómo: ver tipos existentes (diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md) [diseñar clases y tipos (diseñador de clases)](../ide/designing-classes-and-types-class-designer.md) [Ver tipos y relaciones (diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md) [trabajar con diagramas de clases (diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)

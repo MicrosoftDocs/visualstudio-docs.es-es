@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a998246f514f13a575f6a7fef850f9f705f92553
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645533"
 ---
 # <a name="hosting-process-vshostexe"></a>Proceso de alojamiento (vshost.exe)
@@ -34,7 +34,7 @@ El proceso de hospedaje es una característica de Visual Studio que mejora el re
  Se puede especificar una aplicación como aplicación de confianza parcial en la [página Seguridad](../ide/reference/security-page-project-designer.md) del **Diseñador de proyectos**. Para depurar una aplicación de confianza parcial se requiere una inicialización especial del dominio de aplicación. El proceso de hospedaje controla esta inicialización.
 
 ## <a name="design-time-expression-evaluation"></a>Evaluación de expresiones en tiempo de diseño
- La evaluación de expresiones en tiempo de diseño le permite probar el código de la ventana **Inmediato** sin tener que ejecutar la aplicación. El proceso de hospedaje ejecuta este código durante la evaluación de expresiones en tiempo de diseño. Para obtener más información, consulte [Ventana Inmediato](../ide/reference/immediate-window.md).
+ La evaluación de expresiones en tiempo de diseño le permite probar el código de la ventana **Inmediato** sin tener que ejecutar la aplicación. El proceso de hospedaje ejecuta este código durante la evaluación de expresiones en tiempo de diseño. Para obtener más información, consulte [ventana inmediato](../ide/reference/immediate-window.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Depurar y el proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md) [Cómo: deshabilitar el proceso de hospedaje dominios de](../ide/how-to-disable-the-hosting-process.md) [aplicación](https://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8) [inmediatos](../ide/reference/immediate-window.md)

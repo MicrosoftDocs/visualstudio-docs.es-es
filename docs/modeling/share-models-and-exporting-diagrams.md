@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591923"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Compartir modelos y exportar diagramas
 En Visual Studio, puede compartir modelos y diagramas con sus compañeros de diversas formas.
 
- Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver qué ediciones de Visual Studio admiten esta característica, consulte [Compatibilidad de ediciones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="working-on-a-model-as-a-team"></a>Trabajar en un modelo como equipo
  Los usuarios de Visual Studio pueden crear y editar modelos, diagramas de dependencia y gráficos dirigidos.
@@ -30,7 +30,7 @@ En Visual Studio, puede compartir modelos y diagramas con sus compañeros de div
  Para obtener sugerencias sobre la organización de modelos en un proyecto grande o mediano, vea [estructura de la solución de modelado](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Leer y revisar modelos
- Los miembros del equipo que usan algunas versiones de Visual Studio (que no pueden crear modelos) pueden leer modelos, diagramas de modelado y gráficos dirigidos, pero no pueden modificarlos.  Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Los miembros del equipo que usan algunas versiones de Visual Studio (que no pueden crear modelos) pueden leer modelos, diagramas de modelado y gráficos dirigidos, pero no pueden editarlos.  Para ver qué ediciones de Visual Studio admiten esta característica, consulte [Compatibilidad de ediciones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Un diagrama de dependencia solo se puede abrir dentro del modelo en el que se creó. Por tanto, para proporcionar acceso a un diagrama, debe proporcionar acceso a todos los archivos del proyecto de modelado, o bien a las copias de estos.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Microsoft Docs
+title: 'IDebugMessageEvent2:: GetMessage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14eb540962db3a806273d5c76facb7f9bf25dee7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685897"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtiene el mensaje que se mostrará.  
+Obtiene el mensaje que se va a mostrar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -49,24 +49,24 @@ int GetMessage( 
   
 #### <a name="parameters"></a>Parámetros  
  `pMessageType`  
- [out] Devuelve un valor de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeración que describe el tipo del mensaje.  
+ enuncia Devuelve un valor de la enumeración [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) que describe el tipo del mensaje.  
   
  `pbstrMessage`  
- [out] Devuelve el mensaje.  
+ enuncia Devuelve el mensaje.  
   
  `pdwType`  
- [out] Devuelve el tipo del mensaje, utilizando las convenciones de Win32 `MessageBox` función. Consulte la [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) función para obtener más información.  
+ enuncia Devuelve el tipo del mensaje mediante las convenciones de la función de Win32 `MessageBox` . Vea la función [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) para obtener más información.  
   
  `pbstrHelpFileName`  
- [in, out] Devuelve el nombre de archivo de ayuda. Puede ser un null (C++) o (C#) valor vacío si no hay ningún archivo de ayuda.  
+ [in, out] Devuelve el nombre del archivo de ayuda. Puede ser un valor null (C++) o vacío (C#) si no hay ningún archivo de ayuda.  
   
  `pdwHelpId`  
- [in, out] Devuelve el identificador de ayuda. Puede ser 0 si no hay ninguna ayuda asociada a este mensaje.  
+ [in, out] Devuelve el identificador de ayuda. Puede ser 0 si no hay ayuda asociada a este mensaje.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)   
  [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)

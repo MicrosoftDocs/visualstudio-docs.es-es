@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe77e8cb0f21789c7311d9c337b3b973c4dd44f9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645514"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases)
@@ -37,5 +37,5 @@ Puede usar formas de comentario para anotar diagramas de clases. Una forma de co
 
 2. Haga clic en la nueva forma de comentario en el diagrama y escriba el texto que quiera.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Trabajar con diagramas de clases (diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md) [trabajar con diagramas de clases (diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md) [Cómo: personalizar los diagramas de clases (diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)

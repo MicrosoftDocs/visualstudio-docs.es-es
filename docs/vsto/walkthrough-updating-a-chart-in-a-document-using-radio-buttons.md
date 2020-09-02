@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Actualizar un gráfico en un documento utilizando botones de radio'
+title: 'Tutorial: actualizar un gráfico en un documento mediante botones de radio'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62981054"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en un documento utilizando botones de radio
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Tutorial: actualizar un gráfico en un documento mediante botones de radio
   En este tutorial se demuestra cómo usar los botones de radio en una personalización de nivel de documento para Microsoft Office Word a fin de ofrecer a los usuarios la opción de seleccionar estilos de gráfico en el documento.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "62981054"
 
 - Cambiar el estilo del gráfico cuando se selecciona una opción.
 
-  Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Word en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
+  Para ver el resultado como un ejemplo completado, vea el ejemplo de controles de Word en [ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -49,75 +49,75 @@ ms.locfileid: "62981054"
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1. Cree un proyecto de documento de Word con el nombre **Mis opciones de gráfico**. En el asistente, seleccione **crear un nuevo documento**. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Cree un proyecto de documento de Word con el nombre **mis opciones de gráfico**. En el asistente, seleccione **crear un nuevo documento**. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **Mis opciones de gráfico** proyecto a **el Explorador de soluciones**.
+     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el proyecto **mis opciones de gráfico** a **Explorador de soluciones**.
 
 ## <a name="add-a-chart-to-the-document"></a>Agregar un gráfico al documento
 
 ### <a name="to-add-a-chart"></a>Para agregar un gráfico
 
-1. En el documento de Word que se hospeda en el Diseñador de Visual Studio, en la cinta de opciones, haga clic en el **insertar** ficha.
+1. En el documento de Word que se hospeda en el diseñador de Visual Studio, en la cinta de opciones, haga clic en la pestaña **Insertar** .
 
-2. En el **texto** grupo, haga clic en el **Insertar objeto** botón desplegable y haga clic en **objeto**.
+2. En el grupo **texto** , haga clic en el botón desplegable **Insertar objeto** y haga clic en **objeto**.
 
-     El **objeto** abre el cuadro de diálogo.
+     Se abrirá el cuadro de diálogo **objeto** .
 
-3. En el **tipo de objeto** lista el **crear nuevo** ficha, seleccione **gráfico de Microsoft Graph** y, a continuación, haga clic en **Aceptar**.
+3. En la lista **tipo de objeto** de la pestaña **crear nuevo** , seleccione **Microsoft Graph gráfico** y, a continuación, haga clic en **Aceptar**.
 
-     Se agrega un gráfico al documento en el punto de inserción y el **hoja de datos** ventana aparece con algunos datos de forma predeterminada.
+     Un gráfico se agrega al documento en el punto de inserción y la ventana **hoja** de datos aparece con algunos datos predeterminados.
 
-4. Cerrar la **hoja de datos** ventana para aceptar los valores predeterminados en el gráfico y haga clic dentro del documento para mover el foco fuera del gráfico.
+4. Cierre la ventana de la **hoja** de documentos para aceptar los valores predeterminados del gráfico y haga clic dentro del documento para desplazarse fuera del gráfico.
 
-5. Haga clic en el gráfico y, a continuación, haga clic en **formato de objeto**.
+5. Haga clic con el botón secundario en el gráfico y, a continuación, haga clic en **formato de objeto**.
 
-6. En el **diseño** pestaña de la **formato de objeto** cuadro de diálogo, seleccione **cuadrado** y haga clic en **Aceptar**.
+6. En la pestaña **diseño** del cuadro de diálogo **formato de objeto** , seleccione **cuadrado** y haga clic en **Aceptar**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Agregar un control de usuario al proyecto
  De manera predeterminada, los botones de radio de un documento no se excluyen mutuamente. Puede hacer que funcionen correctamente si los agrega a un control de usuario y luego escribe código para controlar la selección.
 
 ### <a name="to-add-a-user-control"></a>Para agregar un control de usuario
 
-1. Seleccione el **Mis opciones de gráfico** proyecto **el Explorador de soluciones**.
+1. Seleccione el proyecto **mis opciones de gráfico** en **Explorador de soluciones**.
 
 2. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-3. En el **Agregar nuevo elemento** cuadro de diálogo, haga clic en **Control de usuario**, nombre del control **ChartOptions** y haga clic en **agregar**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , haga clic en **control de usuario**, asigne al control el nombre **ChartOptions** y haga clic en **Agregar**.
 
 ### <a name="to-add-windows-form-controls-to-the-user-control"></a>Para agregar controles de Windows Forms al control de usuario
 
-1. Si el control de usuario no está visible en el diseñador, haga doble clic en **ChartOptions** en **el Explorador de soluciones**.
+1. Si el control de usuario no está visible en el diseñador, haga doble clic en **ChartOptions** en **Explorador de soluciones**.
 
-2. Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre el primer **botón de Radio** controlar al control de usuario y cambie las siguientes propiedades.
+2. En la pestaña **controles comunes** del **cuadro de herramientas**, arrastre el primer control de botón de **radio** al control de usuario y cambie las siguientes propiedades.
 
-    |Propiedad|Valor|
+    |Propiedad|Value|
     |--------------|-----------|
-    |**Name**|**columnChart**|
+    |**Nombre**|**columnChart**|
     |**Texto**|**Gráfico de columnas**|
 
-3. Agregue un segundo **botón de Radio** al usuario controlar y cambiar las propiedades siguientes.
+3. Agregue un segundo **botón de radio** al control de usuario y cambie las siguientes propiedades.
 
-    |Propiedad|Valor|
+    |Propiedad|Value|
     |--------------|-----------|
-    |**Name**|**barChart**|
+    |**Nombre**|**barChart**|
     |**Texto**|**Gráfico de barras**|
 
-4. Agregue un tercer **botón de Radio** al usuario controlar y cambiar las propiedades siguientes.
+4. Agregue un tercer **botón de radio** al control de usuario y cambie las siguientes propiedades.
 
-    |Propiedad|Valor|
+    |Propiedad|Value|
     |--------------|-----------|
-    |**Name**|**lineChart**|
+    |**Nombre**|**lineChart**|
     |**Texto**|**Gráfico de líneas**|
 
-5. Agregar un cuarto **botón de Radio** al usuario controlar y cambiar las propiedades siguientes.
+5. Agregue un cuarto **botón de radio** al control de usuario y cambie las siguientes propiedades.
 
-    |Propiedad|Valor|
+    |Propiedad|Value|
     |--------------|-----------|
-    |**Name**|**areaBlockChart**|
-    |**Texto**|**Gráfico de áreas bloque**|
+    |**Nombre**|**areaBlockChart**|
+    |**Texto**|**Gráfico de bloques de áreas**|
 
 ## <a name="add-references"></a>Agregar referencias
- Para obtener acceso al gráfico desde el control de usuario en un documento, debe tener una referencia a la `Microsoft.Office.Interop.Graph` ensamblado del proyecto.
+ Para tener acceso al gráfico desde el control de usuario en un documento, debe tener una referencia al `Microsoft.Office.Interop.Graph` ensamblado en el proyecto.
 
 ### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>Para agregar una referencia al ensamblado Microsoft.Office.Interop.Graph
 
@@ -125,14 +125,14 @@ ms.locfileid: "62981054"
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-2. En el **.NET** ficha, seleccione **Microsoft.Office.Interop.Graph** y haga clic en **Aceptar**. Seleccione la versión 14.0.0.0 del ensamblado.
+2. En la pestaña **.net** , seleccione **Microsoft. Office. Interop. Graph** y haga clic en **Aceptar**. Seleccione la versión 14.0.0.0 del ensamblado.
 
 ## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>Cambiar el estilo del gráfico cuando se selecciona un botón de radio
  Para que los botones funcionen correctamente, cree un evento público en el control de usuario, agregue una propiedad para establecer el tipo de selección y cree un procedimiento para el evento `CheckedChanged` de cada uno de los botones de radio.
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Para crear un evento y una propiedad en un control de usuario
 
-1. En **el Explorador de soluciones**, haga clic en el control de usuario y, a continuación, haga clic en **ver código**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el control de usuario y, a continuación, haga clic en **Ver código**.
 
 2. Agregue código para crear un evento `SelectionChanged` y la propiedad `Selection` de la clase `ChartOptions`.
 
@@ -161,24 +161,24 @@ ms.locfileid: "62981054"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]
 
-5. En C#, debe agregar controladores de eventos para los botones de radio. Puede agregar el código al constructor `ChartOptions`, debajo de la llamada a `InitializeComponent`. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. En C#, debe agregar controladores de eventos para los botones de radio. Puede agregar el código al constructor `ChartOptions`, debajo de la llamada a `InitializeComponent`. Para obtener información sobre cómo crear controladores de eventos, consulte [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]
 
 ## <a name="add-the-user-control-to-the-document"></a>Agregar el control de usuario al documento
- Cuando se compila la solución, el nuevo control de usuario se agrega automáticamente a la **cuadro de herramientas**. A continuación, puede arrastrar el control desde el **cuadro de herramientas** al documento.
+ Al compilar la solución, el nuevo control de usuario se agrega automáticamente al **cuadro de herramientas**. A continuación, puede arrastrar el control desde el **cuadro de herramientas** hasta el documento.
 
 ### <a name="to-add-the-user-control-your-document"></a>Para agregar el control de usuario al documento
 
-1. En el menú **Compilar** , haga clic en **Compilar solución**.
+1. En el menú **Compilar**, haga clic en **Compilar solución**.
 
-     El **ChartOptions** control de usuario se agrega a la **cuadro de herramientas**.
+     El control de usuario **ChartOptions** se agrega al **cuadro de herramientas**.
 
-2. En **el Explorador de soluciones**, haga clic en **ThisDocument.vb** o **ThisDocument.cs**y, a continuación, haga clic en **Diseñador de vistas**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument. VB** o **ThisDocument.CS**y, a continuación, haga clic en **Ver diseñador**.
 
-3. Arrastre el `ChartOptions` controlar desde la **cuadro de herramientas** al documento.
+3. Arrastre el `ChartOptions` control desde el **cuadro de herramientas** al documento.
 
-     En el **propiedades** ventana, el nombre del control que se ha agregado al documento `ChartOptions1`.
+     En la ventana **propiedades** , asigne al control el nombre que acaba de agregar al documento  `ChartOptions1` .
 
 ## <a name="change-the-chart-type"></a>Cambiar el tipo de gráfico
  Cree un controlador de eventos para cambiar el tipo de gráfico según la opción que se seleccione en el control de usuario.
@@ -194,7 +194,7 @@ ms.locfileid: "62981054"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]
 
-## <a name="test-the-application"></a>Probar la aplicación
+## <a name="test-the-application"></a>Prueba de la aplicación
  Ahora puede probar el documento para asegurarse de que el estilo del gráfico se actualiza correctamente al seleccionar un botón de radio.
 
 ### <a name="to-test-your-document"></a>Para probar el documento
@@ -208,11 +208,11 @@ ms.locfileid: "62981054"
 ## <a name="next-steps"></a>Pasos siguientes
  A continuación, podría realizar las siguientes tareas:
 
-- Usar un botón para rellenar un cuadro de texto. Para obtener más información, vea [Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
+- Usar un botón para rellenar un cuadro de texto. Para obtener más información, vea [Tutorial: mostrar texto en un cuadro de texto de un documento mediante un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
-- Cambiar el formato por medio de la selección de un estilo de un cuadro combinado. Para obtener más información, vea [Tutorial: Cambiar formato de documento utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Cambiar el formato por medio de la selección de un estilo de un cuadro combinado. Para obtener más información, vea [Tutorial: cambiar el formato de un documento mediante controles de casilla](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Vea también
-- [Tutoriales para Word](../vsto/walkthroughs-using-word.md)
-- [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)
+## <a name="see-also"></a>Consulte también
+- [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
+- [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

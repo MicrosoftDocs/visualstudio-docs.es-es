@@ -1,5 +1,5 @@
 ---
-title: Cómo desencadenar suspender, reanudar y en segundo plano de los eventos para las aplicaciones de Windows Store
+title: Cómo desencadenar eventos de suspensión, reanudación y en segundo plano para aplicaciones de la tienda Windows
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685938"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Cómo desencadenar eventos de suspensión, reanudación y en segundo plano para aplicaciones de la Tienda Windows en Visual Studio
@@ -30,10 +30,10 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
  También se describe cómo depurar **tareas en segundo plano**. Las tareas en segundo plano te permiten realizar algunas operaciones en un proceso de segundo plano, aunque la aplicación no se esté ejecutando. Puedes utilizar el depurador para poner la aplicación en modo de depuración y, sin iniciar la interfaz de usuario, iniciar y depurar la tarea en segundo plano.
 
- Para obtener más información sobre la Administración de la duración de los procesos y las tareas en segundo plano, consulta [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Para obtener más información sobre la administración de la duración del proceso y las tareas en segundo plano, vea [iniciar, reanudar y multitarea](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
-## <a name="BKMK_In_this_topic"></a> En este tema
- [Desencadenar eventos de la Administración de la duración de los procesos](#BKMK_Trigger_Process_Lifecycle_Management_events)
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> En este tema
+ [Desencadenar eventos de administración de duración del proceso](#BKMK_Trigger_Process_Lifecycle_Management_events)
 
  [Desencadenar tareas en segundo plano](#BKMK_Trigger_background_tasks)
 
@@ -41,11 +41,11 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
 - [Desencadenar una tarea en segundo plano cuando la aplicación no se está ejecutando](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)
 
-  [Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)
+  [Desencadenar eventos de administración de duración del proceso y tareas en segundo plano desde una aplicación instalada](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)
 
-  [Diagnosticar errores de activación de tareas en segundo plano](#BKMK_Diagnosing_background_task_activation_errors)
+  [Diagnóstico de errores de activación de tareas en segundo plano](#BKMK_Diagnosing_background_task_activation_errors)
 
-## <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Desencadenar eventos de la Administración de la duración de los procesos
+## <a name="trigger-process-lifetime-management-events"></a><a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Desencadenar eventos de la Administración de la duración de los procesos
  Windows puede suspender la aplicación cuando el usuario cambia a otra aplicación o cuando Windows entra en estado de baja energía. Puedes responder al evento `Suspending` para guardar los datos pertinentes de la aplicación y del usuario en el almacenamiento persistente, y para liberar recursos. Cuando una aplicación se reanuda del estado **suspendido** , entra en el estado de **ejecución** y sigue desde el punto donde se suspendió. Puedes responder al evento `Resuming` para restaurar o actualizar el estado de la aplicación, y para reclamar recursos.
 
  Aunque Windows intenta mantener en la memoria tantas aplicaciones suspendidas como sea posible, puede finalizar la tuya si no hay suficientes recursos para conservarla en la memoria. También un usuario podría cerrar tu aplicación de forma explícita. No hay ningún evento especial que indique que un usuario ha cerrado una aplicación.
@@ -58,12 +58,12 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
 3. En la barra de herramientas **Ubicación de depuración** , elige el evento que desees desencadenar:
 
-     ![Suspender, reanudar, terminar y tareas en segundo plano](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Suspensión, reanudación, terminación y tareas en segundo plano](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
 
      Observa que **Suspender y apagar** cierra la aplicación y finaliza la sesión de depuración.
 
-## <a name="BKMK_Trigger_background_tasks"></a> Desencadenar tareas en segundo plano
- Aunque no esté en ejecución, cualquier aplicación puede registrar una tarea en segundo plano para responder a determinados eventos del sistema. Las tareas en segundo plano no pueden ejecutar código que actualice directamente la interfaz de usuario. En cambio, muestran información al usuario con las actualizaciones de imágenes y distintivos, y las notificaciones. Para obtener más información, vea [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Desencadenar tareas en segundo plano
+ Aunque no esté en ejecución, cualquier aplicación puede registrar una tarea en segundo plano para responder a determinados eventos del sistema. Las tareas en segundo plano no pueden ejecutar código que actualice directamente la interfaz de usuario. En cambio, muestran información al usuario con las actualizaciones de imágenes y distintivos, y las notificaciones. Para obtener más información, consulte [compatibilidad de la aplicación con las tareas en segundo plano](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e) .
 
  Desde el depurador, puedes desencadenar eventos que inician tareas en segundo plano de tu aplicación.
 
@@ -72,7 +72,7 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
  La forma más realista de desencadenar un evento de tarea en segundo plano es hacerlo cuando la aplicación no se está ejecutando. Sin embargo, también es posible desencadenarlo en una sesión de depuración estándar.
 
-### <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Desencadenar un evento de tarea en segundo plano desde una sesión de depuración estándar
+### <a name="trigger-a-background-task-event-from-a-standard-debug-session"></a><a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Desencadenar un evento de tarea en segundo plano desde una sesión de depuración estándar
 
 1. Establece un punto de interrupción en el código de la tarea en segundo plano que quieras depurar.
 
@@ -80,9 +80,9 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
 3. En la lista de eventos de la barra de herramientas **Ubicación de depuración** , elige la tarea en segundo plano que desees iniciar.
 
-     ![Suspender, reanudar, terminar y tareas en segundo plano](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Suspensión, reanudación, terminación y tareas en segundo plano](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
 
-### <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Desencadenar una tarea en segundo plano cuando la aplicación no se está ejecutando
+### <a name="trigger-a-background-task-when-the-app-is-not-running"></a><a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Desencadenar una tarea en segundo plano cuando la aplicación no se está ejecutando
 
 1. Establece un punto de interrupción en el código de la tarea en segundo plano que quieras depurar.
 
@@ -94,11 +94,11 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
     - Para proyectos de Visual C# y Visual Basic, elige **No iniciar, pero depurar mi código al empezar**.
 
-         ![C&#35;&#47;propiedad de aplicación de inicio de depuración VB](../debugger/media/dbg-csvb-dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![Propiedad de la aplicación de inicio de depuración de C#/VB](../debugger/media/dbg-csvb-dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
     - Para los proyectos de JavaScript y Visual C++, elige **No** en la lista **Iniciar aplicación** .
 
-         ![C&#43;&#43;&#47;propiedad de depuración de aplicaciones de VB iniciar](../debugger/media/dbg-cppjs-dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![Propiedad de depuración de la aplicación de inicio de C++/VB](../debugger/media/dbg-cppjs-dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. Presiona **F5** para poner la aplicación en modo de depuración. Ten en cuenta que la lista **Proceso** de la barra de herramientas **Ubicación de depuración** muestra el nombre del paquete de la aplicación, para indicar que estás en modo de depuración.
 
@@ -106,14 +106,14 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
 5. En la lista de eventos de la barra de herramientas **Ubicación de depuración** , elige la tarea en segundo plano que desees iniciar.
 
-     ![Suspender, reanudar, terminar y tareas en segundo plano](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Suspensión, reanudación, terminación y tareas en segundo plano](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
 
-## <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada
+## <a name="trigger-process-lifetime-management-events-and-background-tasks-from-an-installed-app"></a><a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada
  Utiliza el cuadro de diálogo Depurar aplicación instalada para cargar una aplicación que ya esté instalada en el depurador. Por ejemplo, puedes depurar una aplicación instalada desde la Tienda Windows o depurar una aplicación si tienes los archivos de origen de la aplicación pero no tienes un proyecto de Visual Studio para ella. El cuadro de diálogo Depurar aplicación instalada te permite iniciar una aplicación en modo de depuración en el equipo de Visual Studio o en un dispositivo remoto, o establecer que la aplicación se ejecute en modo de depuración pero no iniciarla. Consulta la sección **Iniciar una aplicación instalada en el depurador** de las versiones de [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) o [Visual C++, Visual C# y Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) de **Iniciar una sesión de depuración** para obtener más información.
 
  Una vez cargada la aplicación en el depurador, puedes usar cualquiera de los procedimientos descritos más arriba.
 
-## <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnosticar errores de activación de tareas en segundo plano
+## <a name="diagnosing-background-task-activation-errors"></a><a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnosticar errores de activación de tareas en segundo plano
  Los registros de diagnóstico del Visor de eventos de Windows de la infraestructura de segundo plano contienen información detallada que puedes utilizar para diagnosticar y solucionar problemas de errores de tareas en segundo plano. Para ver el registro:
 
 1. Abra la aplicación Visor de eventos.
@@ -124,5 +124,5 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
 4. Elige el registro **Diagnóstico** .
 
-## <a name="see-also"></a>Vea también
- [Probar aplicaciones de Store con Visual Studio](../test/testing-store-apps-with-visual-studio.md) [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [ciclo de vida de aplicación](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming, procesos y tareas](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+## <a name="see-also"></a>Consulte también
+ [Probar aplicaciones de la tienda con Visual Studio](../test/testing-store-apps-with-visual-studio.md) [depurar aplicaciones en Visual Studio ciclo de vida de](../debugger/debug-store-apps-in-visual-studio.md) la [aplicación](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [iniciar, reanudar y multitarea](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

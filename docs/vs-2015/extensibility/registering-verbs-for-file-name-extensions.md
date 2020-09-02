@@ -1,5 +1,5 @@
 ---
-title: Registro de verbos para extensiones de nombre de archivo | Microsoft Docs
+title: Registrando verbos para las extensiones de nombre de archivo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,21 +11,21 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685267"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registro de verbos para extensiones de nombre de archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La asociación de una extensión de nombre de archivo con una aplicación generalmente tiene una acción preferida que se produce cuando un usuario hace doble clic en un archivo. Esta preferencia acción esté vinculada a un verbo, abierto por ejemplo, al que corresponde a la acción.  
+La Asociación de una extensión de nombre de archivo con una aplicación generalmente tiene una acción preferida que se produce cuando un usuario hace doble clic en un archivo. Esta acción preferida está vinculada a un verbo, como Open, que corresponde a la acción.  
   
- Puede registrar los verbos que están asociados con un identificador de programación (ProgID) para una extensión mediante el uso de la clave de Shell que se encuentran en HKEY_CLASSES_ROOT\\*progid*\shell. Para obtener más información, consulte [tipos de archivo](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Puede registrar verbos que están asociados a un identificador de programación (ProgID) para una extensión mediante la clave de Shell ubicada en HKEY_CLASSES_ROOT \\ *ProgID*\Shell. Para obtener más información, vea [tipos de archivo](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
-## <a name="registering-standard-verbs"></a>Registro de verbos estándares  
- El sistema operativo reconoce los siguientes verbos estándares:  
+## <a name="registering-standard-verbs"></a>Registrar verbos estándar  
+ El sistema operativo reconoce los siguientes verbos estándar:  
   
 - Abrir  
   
@@ -33,16 +33,16 @@ La asociación de una extensión de nombre de archivo con una aplicación genera
   
 - Reproducir  
   
-- Imprimir  
+- Impresión  
   
 - Vista previa  
   
-  Siempre que sea posible, registre un verbo estándar. La opción más común es el verbo Open. Use el verbo de edición solo si hay una diferencia clara entre abrir el archivo y edite el archivo. Por ejemplo, al abrir un archivo .htm lo muestra en el explorador, mientras que la edición de un archivo .htm inicia un editor de HTML. Los verbos estándar están localizados con la configuración regional del sistema operativo.  
+  Siempre que sea posible, registre un verbo estándar. La opción más común es el verbo abierto. Utilice el verbo Edit solo si hay una diferencia clara entre abrir el archivo y editar el archivo. Por ejemplo, al abrir un archivo. htm, se muestra en el explorador, mientras que al editar un archivo. htm se inicia un editor HTML. Los verbos estándar se localizan con la configuración regional del sistema operativo.  
   
 > [!NOTE]
-> Al registrar los verbos estándar, no establezca el valor predeterminado para abrir la clave. El valor predeterminado contiene la cadena de presentación en el menú. El sistema operativo proporciona esta cadena para los verbos estándar.  
+> Al registrar verbos estándar, no establezca el valor predeterminado de la clave abierta. El valor predeterminado contiene la cadena de presentación en el menú. El sistema operativo proporciona esta cadena para los verbos estándar.  
   
- Archivos de proyecto se deben registrar para iniciar una nueva instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cuando un usuario abre el archivo. El ejemplo siguiente muestra el registro de un verbo estándar para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] proyecto.  
+ Los archivos de proyecto se deben registrar para iniciar una nueva instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cuando un usuario abre el archivo. En el ejemplo siguiente se muestra un registro de verbo estándar para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] proyecto de.  
   
 ```  
 [HKEY_CLASSES_ROOT\.csproj]  
@@ -73,7 +73,7 @@ La asociación de una extensión de nombre de archivo con una aplicación genera
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""  
 ```  
   
- Para abrir un archivo en una instancia existente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], registre una clave de DDEEXEC. El ejemplo siguiente muestra el registro de un verbo estándar para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] archivo. cs.  
+ Para abrir un archivo en una instancia existente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , registre una clave DDEEXEC. En el ejemplo siguiente se muestra un registro de verbo estándar para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] archivo. cs.  
   
 ```  
 [HKEY_CLASSES_ROOT\.cs]  
@@ -108,10 +108,10 @@ La asociación de una extensión de nombre de archivo con una aplicación genera
 ```  
   
 ## <a name="setting-the-default-verb"></a>Establecer el verbo predeterminado  
- El verbo predeterminado es la acción que se ejecuta cuando un usuario hace doble clic en un archivo en el Explorador de Windows. El verbo predeterminado es el verbo especificado como el valor predeterminado para HKEY_CLASSES_ROOT\\*progid*\Shell clave. Si se especifica ningún valor, el verbo predeterminado es el primer verbo especificado en HKEY_CLASSES_ROOT\\*progid*\Shell lista de claves.  
+ El verbo predeterminado es la acción que se ejecuta cuando un usuario hace doble clic en un archivo en el explorador de Windows. El verbo predeterminado es el verbo especificado como valor predeterminado para la clave HKEY_CLASSES_ROOT \\ *ProgID*\Shell. Si no se especifica ningún valor, el verbo predeterminado es el primer verbo especificado en la lista de claves de HKEY_CLASSES_ROOT \\ *ProgID*\Shell.  
   
 > [!NOTE]
-> Si va a cambiar el verbo predeterminado para una extensión en una implementación en paralelo, considere el impacto en la instalación y desinstalación. Durante la instalación, se sobrescribe el valor predeterminado original.  
+> Si tiene previsto cambiar el verbo predeterminado de una extensión en una implementación en paralelo, tenga en cuenta el impacto en la instalación y la eliminación. Durante la instalación, se sobrescribe el valor predeterminado original.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Administración de asociaciones de archivos en paralelo](../extensibility/managing-side-by-side-file-associations.md)

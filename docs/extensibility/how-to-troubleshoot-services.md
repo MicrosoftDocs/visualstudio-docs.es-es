@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234957"
 ---
 # <a name="how-to-troubleshoot-services"></a>Cómo: solucionar problemas de servicios
@@ -56,7 +56,7 @@ if (log == null) return;
 
    2. No se asigna ningún GUID explícitamente a la interfaz. Por lo tanto, el sistema crea un GUID predeterminado para un objeto según sea necesario.
 
-3. Asegúrese de que el VSPackage que solicita el servicio se ha puesto en el sitio. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]localiza un VSPackage después de construirlo y antes de llamar a <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
+3. Asegúrese de que el VSPackage que solicita el servicio se ha puesto en el sitio. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] localiza un VSPackage después de construirlo y antes de llamar a <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
     Si tiene código en un constructor VSPackage que necesita un servicio, muévalo al `Initialize` método.
 
@@ -66,7 +66,7 @@ if (log == null) return;
 
     Si una ventana de herramientas hospeda un control de usuario o cualquier otro contenedor de control, el contenedor se colocará en el modelo de componentes de Windows y no tendrá acceso a ningún [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] servicio. Puede llamar <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> a para obtener un proveedor de servicios de VSPackage desde un contenedor de control.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 - [Lista de servicios disponibles](../extensibility/internals/list-of-available-services.md)
 - [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)
 - [Aspectos básicos del servicio](../extensibility/internals/service-essentials.md)
