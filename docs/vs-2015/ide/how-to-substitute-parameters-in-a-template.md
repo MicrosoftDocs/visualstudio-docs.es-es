@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe49c928ca3de318410eba56afeae6f4329efed3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670658"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Cómo: Sustituir parámetros en una plantilla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede reemplazar parámetros de plantilla (como los nombres de clase y los espacios de nombres) al crear un archivo basado en una plantilla. Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).
+Puede reemplazar parámetros de plantilla (como los nombres de clase y los espacios de nombres) al crear un archivo basado en una plantilla. Para obtener una lista completa de los parámetros de plantilla, vea [parámetros de plantilla](../ide/template-parameters.md).
 
 ## <a name="procedure"></a>Procedimiento
  Puede reemplazar parámetros de los archivos de una plantilla cada vez que se cree un proyecto basado en esa plantilla. En este procedimiento se explica cómo crear una plantilla que reemplace el nombre de un espacio de nombres por el nombre del proyecto seguro al crear un proyecto nuevo con la plantilla.
@@ -46,5 +46,5 @@ Puede reemplazar parámetros de plantilla (como los nombres de clase y los espac
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear plantillas de proyecto y elemento plantillas de](../ide/creating-project-and-item-templates.md) [plantilla](../ide/template-parameters.md) de [Visual Studio referencia de esquema de plantilla](../extensibility/visual-studio-template-schema-reference.md) [elemento ProjectItem (plantillas de elementos de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

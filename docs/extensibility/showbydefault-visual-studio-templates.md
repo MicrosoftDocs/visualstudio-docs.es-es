@@ -1,5 +1,5 @@
 ---
-title: Elemento ShowByDefault (Plantillas de Visual Studio)
+title: ShowByDefault (elemento, plantillas de Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700108"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (Plantillas de Visual Studio)
-Si `false`, especifica que la plantilla solo se mostrará en el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento, plantillas de Visual Studio)
+Si `false` es, especifica que la plantilla solo se mostrará en el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
 
- \<VSTemplate \<> TemplateData> \<> ShowByDefault
+ \<VSTemplate> \<TemplateData>
+ \<ShowByDefault>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -84,6 +85,6 @@ Si `false`, especifica que la plantilla solo se mostrará en el [TemplateGroupID
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+- [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)

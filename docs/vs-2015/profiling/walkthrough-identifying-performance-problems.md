@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Identificar problemas de rendimiento | Documentos de Microsoft'
+title: 'Tutorial: identificar problemas de rendimiento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695015"
 ---
-# <a name="walkthrough-identifying-performance-problems"></a>Tutorial: Identificar problemas de rendimiento
+# <a name="walkthrough-identifying-performance-problems"></a>Tutorial: identificar problemas de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial se muestra cómo generar perfiles de una aplicación para identificar problemas de rendimiento.  
@@ -128,7 +128,7 @@ En este tutorial se muestra cómo generar perfiles de una aplicación para ident
   
      Se iniciará el **Bloc de notas** con un nuevo archivo que contiene una lista de personas de PeopleTrax. Si espera, le resultará más fácil identificar el procedimiento de exportación de datos de la generación de perfiles.  
   
-6. Cierre el **Bloc de notas** y después cierre la aplicación **PeopleTrax**.  
+6. Cierre **el Bloc de notas**y, a continuación, cierre la aplicación **PeopleTrax** .  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] genera un informe de sesión de rendimiento (*.vsp).  
   
@@ -158,7 +158,7 @@ En este tutorial se muestra cómo generar perfiles de una aplicación para ident
   
    Cuando vuelva a ejecutar la aplicación, observará que el rendimiento ha mejorado de manera clara. Se recomienda que ejecute de nuevo la sesión de generación de perfiles, aunque haya mejoras de rendimiento visibles para el usuario. Es importante revisar los datos después de corregir un problema por si el primer problema ocultaba algún otro.  
   
-## <a name="see-also"></a>Vea también  
- [Temas de introducción](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>Consulte también  
+ [Información general](../profiling/overviews-performance-tools.md)   
  [Introducción](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (Formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7,/Zi,/ZI (formato de información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

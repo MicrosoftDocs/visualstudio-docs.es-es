@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d6fb8cb5b3cfa7aa741db4e49dc7c2b3e1daee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192351"
 ---
-# <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
+# <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el número de columna de origen basado en uno donde la expresión o instrucción finaliza.  
+Recupera el número de columna de origen basado en uno en el que finaliza la expresión o instrucción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,13 +35,13 @@ HRESULT get_columnNumberEnd ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el número de columna donde finaliza la expresión o instrucción. Si el valor es cero, la información de final de la columna no está presente.  
+ enuncia Devuelve el número de columna donde finaliza la expresión o instrucción. Si el valor es cero, la información de finalización de la columna no está presente.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- El valor de columna devuelto por este método es un byte en la línea a la posición de desplazamiento después del último carácter de la instrucción en la línea.  
+## <a name="remarks"></a>Observaciones  
+ El valor de columna devuelto por este método es un desplazamiento de bytes en la línea a la posición posterior al último carácter de la instrucción de la línea.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

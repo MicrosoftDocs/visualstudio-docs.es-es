@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 644676393a606dfd7fbf6aa400a625dce2db3697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656892"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Crear proyectos de flujo de trabajo heredados
@@ -35,11 +35,11 @@ En esta sección se describe cómo crear proyectos de flujo de trabajo con [!INC
 ## <a name="in-this-section"></a>En esta sección
  [Cómo: Crear proyectos de flujo de trabajo (heredado)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
 
- [Cómo: Crear aplicaciones de consola de flujos de trabajo secuenciales (heredado)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
+ [Cómo: Crear aplicaciones de consola de flujos de trabajo secuenciales (Heredado)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
 
- [Cómo: Crear una biblioteca de flujos de trabajo secuenciales (heredado)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
+ [Cómo: Crear una biblioteca de flujos de trabajo secuenciales (Heredado)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
 
- [Cómo: Crear una biblioteca de actividades de flujo de trabajo (heredado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
+ [Cómo: Crear una biblioteca de actividades de flujo de trabajo (Heredado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
 
  [Cómo: Crear aplicaciones de consola de flujos de trabajo de máquina de estados (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
 
@@ -47,9 +47,9 @@ En esta sección se describe cómo crear proyectos de flujo de trabajo con [!INC
 
  [Cómo: Crear un proyecto de flujo de trabajo vacío (heredado)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
 
- [Cómo: Configurar las propiedades de proyectos de flujo de trabajo (heredado)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
+ [Cómo: Configurar las propiedades de proyectos de flujo de trabajo (Heredado)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
 
- [Cómo: Agregar un nuevo elemento a un proyecto de flujo de trabajo (heredado)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
+ [Agregar un nuevo elemento a un proyecto de flujo de trabajo (Heredado)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Vistas de flujo de trabajo secuenciales (heredadas)](../workflow-designer/sequential-workflow-views-legacy.md) [ventanas de flujo de trabajo de Visual Studio (heredado)](../workflow-designer/visual-studio-workflow-windows-legacy.md)

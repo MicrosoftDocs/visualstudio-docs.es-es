@@ -1,5 +1,5 @@
 ---
-title: Motor de depuración (Debug Engine) Microsoft Docs
+title: Motor de depuración | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739065"
 ---
 # <a name="debug-engine"></a>Motor de depuración
-Un motor de depuración (DE) funciona con el intérprete o el sistema operativo para proporcionar servicios de depuración como control de ejecución, puntos de interrupción y evaluación de expresiones. El DE es responsable de supervisar el estado de un programa que se está depurando. Para lograr esto, la DE utiliza los métodos que están disponibles para él en el tiempo de ejecución admitido, ya sea desde la CPU o desde las API proporcionadas por el tiempo de ejecución.
+Un motor DE depuración (DE) funciona con el intérprete o el sistema operativo para proporcionar servicios de depuración, como el control de ejecución, los puntos de interrupción y la evaluación de expresiones. El DE es responsable de supervisar el estado de un programa que se está depurando. Para ello, el método DE usa los métodos que están disponibles en el tiempo de ejecución admitido, ya sea de la CPU o de las API proporcionadas por el tiempo de ejecución.
 
- Por ejemplo, Common Language Runtime (CLR) proporciona mecanismos para supervisar un programa en ejecución a través de las interfaces ICorDebugXXX. Un DE que admite CLR usa las interfaces ICorDebugXXX adecuadas para realizar un seguimiento de un programa de código administrado que se está depurando. A continuación, comunica cualquier cambio de estado al administrador de depuración [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de sesión (SDM), que reenvía dicha información al IDE.
-
-> [!NOTE]
-> Un motor de depuración tiene como destino un tiempo de ejecución específico, es decir, el sistema en el que se ejecuta el programa que se está depurando. CLR es el tiempo de ejecución del código administrado y el tiempo de ejecución de Win32 es para aplicaciones nativas de Windows. Si el lenguaje que crea puede tener [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] como destino uno de estos dos tiempos de ejecución, ya proporciona los motores de depuración necesarios. Todo lo que tiene que implementar es un evaluador de expresiones.
-
-## <a name="debug-engine-operation"></a>Funcionamiento del motor de depuración
- Los servicios de supervisión se implementan a través de las interfaces DE y pueden hacer que el paquete de depuración pase entre diferentes modos operativos. Para obtener más información, consulte [Modos operativos](../../extensibility/debugger/operational-modes.md). Normalmente, solo hay una implementación DE por entorno en tiempo de ejecución.
+ Por ejemplo, el Common Language Runtime (CLR) proporciona mecanismos para supervisar un programa en ejecución a través de las interfaces ICorDebugXXX. Un DE que admite CLR usa las interfaces de ICorDebugXXX adecuadas para realizar un seguimiento de un programa de código administrado que se está depurando. A continuación, comunica cualquier cambio de estado al administrador de depuración de la sesión (SDM), que reenvía la información al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
 > [!NOTE]
-> Aunque hay implementaciones DE independientes [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]para Transact-SQLTransact-SQL y , VBScript y [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] comparten una sola DE.
+> Un motor de depuración tiene como destino un tiempo de ejecución específico, es decir, el sistema en el que se ejecuta el programa que se está depurando. CLR es el tiempo de ejecución para el código administrado y el tiempo de ejecución de Win32 es para las aplicaciones Windows nativas. Si el lenguaje creado puede tener como destino uno de estos dos tiempos de ejecución, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ya proporciona los motores de depuración necesarios. Todo lo que tiene que implementar es un evaluador de expresiones.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]la depuración permite que los motores de depuración se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ejecuten de dos maneras: en el mismo proceso que el shell o en el mismo proceso que el programa de destino que se está depurando. Este último formulario suele producirse cuando el proceso que se está depurando es en realidad un script que se ejecuta bajo un intérprete. El motor de depuración debe tener un conocimiento íntimo del intérprete para supervisar el script. En este caso, el intérprete es en realidad un tiempo de ejecución; los motores de depuración son para implementaciones en tiempo de ejecución específicas. Además, la implementación de una única DE se puede dividir entre los límites del proceso y de la máquina (por ejemplo, la depuración remota).
+## <a name="debug-engine-operation"></a>Operación del motor de depuración
+ Los servicios DE supervisión se implementan a través DE las interfaces DE y pueden hacer que el paquete de depuración pase de un modo operativo a otro. Para obtener más información, vea [modos operativos](../../extensibility/debugger/operational-modes.md). Normalmente solo hay una implementación DE para cada entorno en tiempo de ejecución.
 
- El DE expone [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] las interfaces de depuración. Toda la comunicación es a través de COM. Si el DE se carga en proceso, fuera de proceso o en otro equipo, no afecta a la comunicación de componentes.
+> [!NOTE]
+> Aunque hay implementaciones independientes de de Transact-SQL y [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] , VBScript y [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] comparten un único de.
 
- El DE funciona con un componente de evaluador de expresiones para permitir que la DE de ese tiempo de ejecución determinado comprenda la sintaxis de las expresiones. El DE también funciona con un componente de controlador de símbolos para tener acceso a la información de depuración simbólica generada por el compilador de lenguaje. Para obtener más información, consulte Evaluador de [expresiones](../../extensibility/debugger/expression-evaluator.md) y Proveedor de [símbolos](../../extensibility/debugger/symbol-provider.md).
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración permite que los motores de depuración se ejecuten de una de estas dos maneras: en el mismo proceso que el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell o en el mismo proceso que el programa de destino que se está depurando. Esta última forma normalmente se produce cuando el proceso que se está depurando es realmente un script que se ejecuta en un intérprete. El motor de depuración debe tener un conocimiento profundo del intérprete para poder supervisar el script. En este caso, el intérprete es realmente un tiempo de ejecución; los motores de depuración son para implementaciones en tiempo de ejecución específicas. Además, la implementación de un único DE se puede dividir entre los límites del proceso y del equipo (por ejemplo, la depuración remota).
+
+ El DE expone las [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaces de depuración. Toda la comunicación se realiza a través de COM. Si el DE se carga en proceso, fuera de proceso o en otro equipo, no afecta a la comunicación de componentes.
+
+ DE funciona con un componente del evaluador de expresiones para permitir que el de ese tiempo de ejecución concreto comprenda la sintaxis de las expresiones. El DE también trabaja con un componente de controlador de símbolos para tener acceso a la información de depuración simbólica generada por el compilador del lenguaje. Para obtener más información, consulte [evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md) y [proveedor de símbolos](../../extensibility/debugger/symbol-provider.md).
 
 ## <a name="see-also"></a>Vea también
 - [Componentes del depurador](../../extensibility/debugger/debugger-components.md)

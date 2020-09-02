@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b042c9d389a1639b4a898f8d091fbd1832e56e25
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670281"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accesibilidad para personas con discapacidades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. En los temas siguientes se proporciona información acerca de las características, los productos y los servicios que permiten a Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ser más accesible para las personas con discapacidades.
+Microsoft tiene el compromiso de que todas las personas puedan utilizar fácilmente sus productos y servicios. En los temas siguientes se proporciona información acerca de las características, los productos y los servicios que permiten a Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ser más accesible para las personas con discapacidades.
 
 - [Características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 

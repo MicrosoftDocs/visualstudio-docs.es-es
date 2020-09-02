@@ -1,5 +1,5 @@
 ---
-title: Preparar la depuración ASP.NET | Documentos de Microsoft
+title: Preparando la depuración de ASP.NET | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b8ddc642fda143743e312fa1915087d553938a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696111"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Preparar la depuración en ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta sección describe cómo configurar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para depurar un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] o aplicación WCF.  
+En esta sección se describe cómo configurar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para depurar una [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicación de o WCF.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)  
@@ -41,7 +41,7 @@ Esta sección describe cómo configurar [!INCLUDE[vsprvs](../includes/vsprvs-md.
  [Requisitos previos para la depuración remota de aplicaciones web](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Enumera los requisitos necesarios para la depuración de aplicaciones Web en un servidor remoto.  
   
- [Cómo: Configurar IIS en Windows Server 2003](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [Cómo: configurar IIS en Windows Server 2003](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  Explica los pasos de configuración especiales necesarios para depurar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
  [Cómo: Depuración de un servicio WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -51,9 +51,9 @@ Esta sección describe cómo configurar [!INCLUDE[vsprvs](../includes/vsprvs-md.
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Explica cómo solucionar los problemas comunes e incluye mensajes de error.  
   
-## <a name="see-also"></a>Vea también  
- [Depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md)   
+## <a name="see-also"></a>Consulte también  
+ [Depurar scripts y aplicaciones Web](../debugger/debugging-web-applications-and-script.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)   
- [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
+ [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md)   
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Configuración de IIS y ASP.NET](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
+ [Configuración de ASP.NET e IIS](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247650"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: crear un elemento Web para SharePoint
@@ -42,7 +42,7 @@ En este tutorial se muestran las tareas siguientes:
     > [!NOTE]
     > Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
@@ -214,7 +214,7 @@ Muestre y oculte los empleados que no son administradores seleccionando un eleme
 
      Todos los empleados aparecen en el elemento web.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Cómo: crear un elemento](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 569254c9df668c7755116f37a819fe65a3ecaa59
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670459"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
@@ -36,7 +36,7 @@ ms.locfileid: "72670459"
 
 Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el contenido de Ayuda que se instala en el equipo para ajustarlo a sus necesidades de desarrollo de software.
 
- Para administrar el contenido en el equipo local, debe iniciar sesión con una cuenta que tenga permisos administrativos. Además, es posible que no pueda administrar contenido local si trabaja en un entorno empresarial, ya que los administradores del sistema podrían tomar esas decisiones por su organización. Para obtener más información, vea la [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).
+ Para administrar el contenido en el equipo local, debe iniciar sesión con una cuenta que tenga permisos administrativos. Además, es posible que no pueda administrar contenido local si trabaja en un entorno empresarial, ya que los administradores del sistema podrían tomar esas decisiones por su organización. Para obtener más información, vea la [Guía del administrador del visor de ayuda](../ide/help-viewer-administrator-guide.md).
 
 ## <a name="changing-the-content-installation-source"></a>Cambiar el origen de instalación del contenido
  De forma predeterminada, el Visor de Ayuda instala contenido mediante el uso de un servicio en línea de Microsoft como el origen. En general, no debería cambiar el origen del contenido a menos que trabaje en un entorno empresarial para el que un administrador del sistema ya instaló contenido en otra ubicación.
@@ -46,13 +46,13 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
 1. En la pestaña **Administrar contenido**, pulse el botón de opción **Disco**.
 
     > [!NOTE]
-    > La opción **Disco** no estará disponible si el administrador impide modificar el origen de instalación del contenido. Para obtener más información, vea la [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).
+    > La opción **Disco** no estará disponible si el administrador impide modificar el origen de instalación del contenido. Para obtener más información, vea la [Guía del administrador del visor de ayuda](../ide/help-viewer-administrator-guide.md).
 
 2. Realice uno de estos pasos:
 
     - Escriba la ruta de un archivo MSHA o la URL de un punto de conexión de servicio.
 
-    - Haga clic en el botón Examinar ( **...** ) para desplazarse hasta un archivo .msha.
+    - Haga clic en el botón Examinar (**...**) para desplazarse hasta un archivo .msha.
 
     - En la lista, seleccione la entrada que se usó más recientemente.
 
@@ -100,7 +100,7 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
  La barra de estado indica cuándo hay disponibles actualizaciones para el contenido instalado.
 
 > [!IMPORTANT]
-> Si quiere que el Visor de Ayuda busque automáticamente actualizaciones en línea, debe abrir el cuadro de diálogo **Opciones del Visor** y, después, seleccione la casilla **Conectarse para comprobar actualizaciones de contenido**.
+> Si quiere que el Visor de Ayuda busque automáticamente actualizaciones en línea, debe abrir el cuadro de diálogo **Opciones del Visor** y luego activar la casilla **Conectarse para comprobar actualizaciones de contenido**.
 
 #### <a name="to-update-local-content"></a>Para actualizar el contenido local
 
@@ -124,5 +124,5 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
 
 3. Pulse el botón **Cerrar** cuando el contenido se termine de mover.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)

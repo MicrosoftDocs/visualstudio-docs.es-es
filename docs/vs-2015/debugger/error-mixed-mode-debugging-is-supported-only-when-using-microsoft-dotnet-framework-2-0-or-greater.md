@@ -1,5 +1,5 @@
 ---
-title: 'Error: Depuración en modo mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 o superior | Documentos de Microsoft'
+title: 'Error: El modo de depuración mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 o superior | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0bf0557db3fd4ecc58e81d2b88e8c700c2f3bae0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697401"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Error: El modo de depuración mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 o superior
@@ -32,5 +32,5 @@ Para depurar código nativo y administrado, debe tener la versión 2.0, 3.0 de [
   
 - Actualice [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a la versión 2.0, 3.0, 3.5 o 4.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Configurar las herramientas remotas en el dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
