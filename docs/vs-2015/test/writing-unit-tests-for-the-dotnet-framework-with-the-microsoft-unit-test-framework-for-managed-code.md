@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f02c3fe2e3d8fa67cb8a996ba14dddce7b1a3a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657066"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft código administrado
@@ -26,7 +26,7 @@ En esta sección [Tutorial: crear y ejecutar pruebas unitarias para código admi
 
  [Usar las clases Assert](../test/using-the-assert-classes.md)
 
- [Cómo: Crear una prueba unitaria controlada por datos](../test/how-to-create-a-data-driven-unit-test.md)
+ [Cómo: crear una prueba unitaria controlada por datos](../test/how-to-create-a-data-driven-unit-test.md)
 
  [Pruebas unitarias para métodos genéricos](../test/unit-tests-for-generic-methods.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Motor de depuración de registro personalizado | Microsoft Docs
+title: Registrando un motor de depuración personalizado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9cf06e881034b980b8e40e095779007b3c7fa6f6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703606"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registro de un motor de depuración personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-El motor de depuración debe registrarse como un generador de clases sigue las convenciones de COM, así como registrar con Visual Studio a través de la subclave del registro de Visual Studio.  
+El motor de depuración debe registrarse como un generador de clases según las convenciones de COM y registrarse en Visual Studio a través de la subclave del registro de Visual Studio.  
   
 > [!NOTE]
-> Encontrará un ejemplo de cómo registrar un motor de depuración en el ejemplo TextInterpreter, que se compiló como parte de la [Tutorial: Creación de un motor de depuración mediante ATL COM](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+> Un ejemplo de cómo registrar un motor de depuración se puede encontrar en el ejemplo TextInterpreter, que se genera como parte del [Tutorial: compilar un motor de depuración con ATL com](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
-## <a name="dll-server-process"></a>Proceso de servidor de DLL  
- Normalmente, un motor de depuración se implementa en su propio archivo DLL como un servidor COM. Esto significa que el motor de depuración debe registrar el CLSID de su generador de clases con COM para Visual Studio pueda acceder a él. A continuación, el motor de depuración debe registrarse con el propio Visual Studio con el fin de establecer las propiedades (lo que se conoce como métricas) la depuración admite del motor. La variedad de métricas que se escriben en la subclave del registro de Visual Studio para el motor de depuración depende de las características que admite el motor de depuración.  
+## <a name="dll-server-process"></a>Proceso de servidor DLL  
+ Normalmente, un motor de depuración se implementa en su propio archivo DLL como un servidor COM. Esto significa que el motor de depuración debe registrar el CLSID de su generador de clases con COM para que Visual Studio pueda acceder a él. Después, el motor de depuración debe registrarse con Visual Studio para establecer las propiedades (también conocidas como métricas) que admite el motor de depuración. La elección de las métricas que se escriben en la subclave del registro de Visual Studio para el motor de depuración depende de las características que admite el motor de depuración.  
   
- [Aplicaciones auxiliares de SDK para depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) describe no solo las ubicaciones del registro necesarias registrar un motor de depuración; también se describe la biblioteca dbgmetric.lib, que contiene una serie de funciones útiles y declaraciones para desarrolladores de C++ que hacen que manipular el registro sea más fácil.  
+ Las [aplicaciones auxiliares de SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) describen no solo las ubicaciones del registro necesarias para registrar un motor de depuración; también se describe la biblioteca dbgmetric. lib, que contiene una serie de funciones y declaraciones útiles para los desarrolladores de C++ que facilitan la manipulación del registro.  
   
 ### <a name="example"></a>Ejemplo  
- El siguiente es un ejemplo típico (del ejemplo TextInterpreter) que muestra cómo usar el `SetMetric` (desde dbgmetric.lib), la función para registrar un motor de depuración con Visual Studio. También se definen las métricas que se pasan en dbgmetric.lib.  
+ A continuación se muestra un ejemplo típico (del ejemplo TextInterpreter) que muestra cómo usar la `SetMetric` función (de dbgmetric. lib) para registrar un motor de depuración con Visual Studio. Las métricas que se pasan también se definen en dbgmetric. lib.  
   
 > [!NOTE]
-> TextInterpreter es un motor de depuración básica; no implementa — y, por tanto, no se registra, todas las demás características. Un motor de depuración más completado tendría una lista completa de `SetMetric` llamadas o su equivalente, uno para cada característica, el motor de depuración admite.  
+> TextInterpreter es un motor de depuración básico; no implementa y, por lo tanto, no registra ninguna otra característica. Un motor de depuración más completo tendría una lista completa de `SetMetric` llamadas o su equivalente, una para cada característica que el motor de depuración admite.  
   
 ```  
 // Define base registry subkey to Visual Studio.  
@@ -50,7 +50,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Creación de un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
- [Aplicaciones auxiliares de SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Tutorial: Creación de un motor de depuración mediante ATL COM](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)
+## <a name="see-also"></a>Consulte también  
+ [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
+ [Aplicaciones auxiliares de SDK para depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Tutorial: crear un motor de depuración mediante ATL COM](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)

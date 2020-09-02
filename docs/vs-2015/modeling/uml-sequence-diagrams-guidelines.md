@@ -24,13 +24,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850124"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>Diagramas de secuencia UML: Instrucciones
+# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una interacción. Una interacción es una secuencia de mensajes entre instancias típicas de clases, componentes, subsistemas o actores.
@@ -40,21 +40,21 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-topic"></a>En este tema
- [Usar diagramas de secuencia UML](#Using)
+ [Uso de diagramas de secuencia UML](#Using)
 
  [Pasos básicos para dibujar diagramas de secuencia](#BasicSteps)
 
- [Crear y usar diagramas de secuencia simples](#Simple)
+ [Creación y uso de diagramas de secuencia sencillos](#Simple)
 
- [Clases y lifelines](#ClassesAndLifelines)
+ [Clases y líneas de vida](#ClassesAndLifelines)
 
- [Crear secuencias de interacción reutilizables](#Multiple)
+ [Creación de secuencias de interacciones reutilizables](#Multiple)
 
- [Contraer grupos de línea de vida](#Collapse)
+ [Contracción de grupos de líneas de vida](#Collapse)
 
- [Describir estructuras de control con fragmentos](#Fragments)
+ [Descripción de estructuras de control con fragmentos](#Fragments)
 
-## <a name="Using"></a>Usar diagramas de secuencia UML
+## <a name="using-uml-sequence-diagrams"></a><a name="Using"></a> Usar diagramas de secuencia UML
  Puede usar diagramas de secuencia para una variedad de propósitos en distintos niveles de detalle del programa. Las ocasiones típicas para dibujar un diagrama de secuencia son las siguientes:
 
 - Si tiene un diagrama de casos de uso que resuma los usuarios del sistema y sus objetivos, puede dibujar diagramas de secuencia para describir cómo interactúan los componentes principales del sistema para cumplir el objetivo de cada caso de uso. Para obtener más información, vea [diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md).
@@ -73,13 +73,13 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 #### <a name="lifelines-and-types"></a>Líneas de vida y tipos
  Las líneas de vida que dibuja en un diagrama de secuencia pueden representar instancias típicas de los componentes o clases en el sistema. Puede crear líneas de vida a partir de los tipos y tipos a partir de las líneas de vida, así como mostrar los tipos en diagramas de clases UML y diagramas de componentes UML. Para obtener más información, vea [clases y lifelines](#ClassesAndLifelines).
 
-#### <a name="parameter-types"></a>Tipos de parámetros
+#### <a name="parameter-types"></a>Tipos de parámetro
  También puede describir en un diagrama de clases UML los tipos de parámetros y valores devueltos que se usaron en los mensajes enviados entre las líneas de vida.
 
 #### <a name="use-case-details"></a>Detalles del caso de uso
  Un caso de uso representa el objetivo de un usuario, junto con una secuencia de pasos para lograr el objetivo. La secuencia de pasos se puede describir de varias maneras. Una opción es dibujar un diagrama de secuencia que muestra las interacciones entre los usuarios y los principales componentes del sistema. Para obtener más información, vea [diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Pasos básicos para dibujar diagramas de secuencia
+## <a name="basic-steps-for-drawing-sequence-diagrams"></a><a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de secuencia
  Para obtener una lista completa de los elementos de los diagramas de secuencia, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md).
 
 > [!NOTE]
@@ -97,7 +97,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
     Aparece un nuevo diagrama de secuencia con el cuadro de herramientas **Diagrama de secuencia** . El cuadro de herramientas contiene los elementos y conectores necesarios.
 
-   ![Partes de un diagrama de secuencia](../modeling/media/uml-sequence.png "UML_Sequence")
+   ![Elementos de un diagrama de secuencia](../modeling/media/uml-sequence.png "UML_Sequence")
 
 #### <a name="to-draw-a-sequence-diagram"></a>Para dibujar un diagrama de secuencia
 
@@ -115,7 +115,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 3. Para mostrar un mensaje que procede de un origen de eventos desconocido (9) o que difunde a destinatarios desconocidos (10), dibuje un mensaje asincrónico desde o hacia el espacio en blanco del diagrama. Estos mensajes se denominan *mensajes encontrados* (9) y *mensajes perdidos* (10).
 
     > [!NOTE]
-    > Para mover un grupo de las línea de vida que han perdido o encontrado mensajes, siga estos pasos para seleccionar las línea de vida antes de moverlas: dibuje un rectángulo alrededor de esas línea de vida o mantenga presionada la tecla **Ctrl** mientras hace clic en cada línea de vida. Si usa **seleccionar todo** o **Ctrl**+a para seleccionar todas las **línea de vida** y, a continuación, moverlas, los mensajes perdidos o encontrados que estén adjuntos a estas Lifeline no se moverán. En este caso, podrá mover estos mensajes por separado.
+    > Para mover un grupo de las línea de vida que han perdido o encontrado mensajes, siga estos pasos para seleccionar las línea de vida antes de moverlas: dibuje un rectángulo alrededor de esas línea de vida o mantenga presionada la tecla **Ctrl** mientras hace clic en cada línea de vida. Si usa **seleccionar todo** o **Ctrl** + **a** para seleccionar todas las línea de vida y, a continuación, moverlas, los mensajes perdidos o encontrados que estén adjuntos a estas Lifeline no se moverán. En este caso, podrá mover estos mensajes por separado.
 
 4. Dibuje diagramas de secuencia para cada mensaje principal dirigido al mismo componente o sistema.
 
@@ -144,7 +144,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
   - Haga clic con el botón secundario en la línea de vida y, a continuación, elija **crear clase**.
 
-     O bien,
+     o bien
 
   - Seleccione la línea de vida, presione **F4**y, a continuación, en la ventana **propiedades** , establezca la propiedad **tipo** en un tipo existente o especifique el nombre de un nuevo tipo. Haga clic con el botón secundario en la etiqueta del mensaje y elija **crear operación**.
 
@@ -169,7 +169,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
      Haga clic con el botón secundario en la interacción y, a continuación, haga clic en **cortar**. Haga clic con el botón secundario en el paquete y, a continuación, haga clic en **pegar**.
 
-## <a name="Simple"></a>Crear y usar diagramas de secuencia simples
+## <a name="creating-and-using-simple-sequence-diagrams"></a><a name="Simple"></a> Crear y usar diagramas de secuencia simples
  La forma más simple y más difundida de diagrama de secuencia contiene solo líneas de vida y mensajes. Un diagrama de este tipo permite mostrar claramente una secuencia típica de las interacciones entre los objetos del diseño o entre el sistema y sus usuarios. Esto suele ser suficiente para ayudarle a debatir y transmitir el diseño.
 
  Estas son algunas consideraciones cuando dibuja un diagrama de secuencia sencillo.
@@ -179,7 +179,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
 - Use la herramienta **sincrónica** para describir una interacción en la que el remitente espera a que el receptor devuelva una respuesta (3).
 
-     Al final de la repetición de ejecución, se mostrará un **<\<> flecha >** . Indica la devolución del control al remitente.
+     **<\<return>>** Al final de la incidencia de ejecución se mostrará una flecha. Indica la devolución del control al remitente.
 
 - Use la herramienta **asincrónica** para describir una interacción en la que el remitente puede continuar inmediatamente sin tener que esperar al receptor (4).
 
@@ -256,13 +256,13 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
 - Algunas líneas de vida pueden controlar más de un tipo de tarea. Debería ser fácil encontrar una frase sucinta que describa las responsabilidades de cada línea de vida y resuma el trabajo que realiza en respuesta a cada mensaje que recibe.
 
-## <a name="ClassesAndLifelines"></a>Clases y lifelines
+## <a name="classes-and-lifelines"></a><a name="ClassesAndLifelines"></a> Clases y lifelines
  Las líneas de vida de los diagramas de secuencia muestran instancias de clases o interfaces de componentes. Puede designar una línea de vida de dos maneras:
 
 |**Para este propósito**|**Usar este formato**|
 |--------------------------|-------------------------|
-|Instancia anónima de un tipo.<br /><br /> Úselo si tiene solo una línea de vida de cada tipo.|*typeName*|
-|Instancia con nombre de un tipo.<br /><br /> Úselo si desea mostrar una secuencia que implica más de una instancia del mismo tipo.|*objectName*:*typeName*|
+|Instancia anónima de un tipo.<br /><br /> Úselo si tiene solo una línea de vida de cada tipo.|*nombreDeTipo*|
+|Instancia con nombre de un tipo.<br /><br /> Úselo si desea mostrar una secuencia que implica más de una instancia del mismo tipo.|*objectname*:*TypeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Crear líneas de vida a partir de tipos
  Puede crear nuevas líneas de vida de las clases que ya definió, por ejemplo, en un diagrama de clases.
@@ -332,7 +332,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 ### <a name="creating-classes-for-parameters"></a>Crear clases para los parámetros
  Puede incluir parámetros en los mensajes de un diagrama de secuencia. Puede usar un diagrama de clases UML para describir los tipos de parámetros.
 
-## <a name="Multiple"></a>Crear secuencias de interacción reutilizables
+## <a name="creating-reusable-interaction-sequences"></a><a name="Multiple"></a> Crear secuencias de interacción reutilizables
  Puede usar un diagrama independiente para describir una secuencia que contiene los detalles que desea separar o que es común entre varios diagramas.
 
  Puede crear un rectángulo de uso de interacción (12) en un diagrama que apunte a los detalles en otro diagrama.
@@ -372,7 +372,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
 - Haga clic con el botón secundario en el mensaje que desea desplace y, a continuación, haga clic en **cambiar a diagrama**.
 
-  Visual Studio:
+  Visual Studio:
 
   - Reemplaza con un uso de interacción el mensaje seleccionado y sus mensajes secundarios.
 
@@ -391,7 +391,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 ### <a name="creating-a-placeholder-with-an-interaction-use"></a>Crear un marcador de posición con un uso de interacción
  Puede crear un uso de interacción sin vincularlo a otro diagrama. Se puede usar como marcador de posición para una parte de la secuencia cuyos detalles todavía se van a trabajar. Use el nombre del uso de interacción para indicar el resultado que desea.
 
-## <a name="Collapse"></a>Contraer grupos de línea de vida
+## <a name="collapsing-groups-of-lifelines"></a><a name="Collapse"></a> Contraer grupos de línea de vida
  Puede contraer un conjunto de líneas de vida juntas, de modo que el grupo aparezca como una sola línea de vida. Esto le ayudará a visualizar un grupo de objetos como un solo componente. Se ocultan los mensajes y usos de interacción entre las líneas de vida de un grupo contraído. Se muestran los mensajes y las secuencias de interacción que incluyen otras líneas de vida.
 
 #### <a name="to-collapse-a-group-of-lifelines-together"></a>Para contraer un grupo de líneas de vida juntos
@@ -416,7 +416,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
     > [!NOTE]
     > Se perderá el nombre del grupo, junto con todos los vínculos del grupo a los comentarios o elementos de trabajo.
 
-## <a name="Fragments"></a>Describir estructuras de control con fragmentos
+## <a name="describing-control-structures-with-fragments"></a><a name="Fragments"></a> Describir estructuras de control con fragmentos
  Puede usar fragmentos combinados (13) para definir bucles, bifurcaciones y el procesamiento simultáneo en un diagrama de secuencia. Como alternativa, considere la posibilidad de usar en su lugar un diagrama de actividad. El diagrama de actividad no es tan útil al mostrar mensajes entre actores, pero en algunos casos es mejor al mostrar bucles, bifurcaciones y simultaneidad.
 
  Para obtener una lista completa de los tipos de fragmentos, vea [describir el flujo de control con fragmentos en diagramas de secuencia de UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).
@@ -442,5 +442,5 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
 5. Para agregar nuevos mensajes a un fragmento, use las herramientas de mensajes o copiar y pegar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md) [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de casos de uso de UML:](../modeling/uml-use-case-diagrams-reference.md) referencia [diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md) diagramas de [componentes de UML:](../modeling/uml-component-diagrams-reference.md) vídeo de referencia: [esbozar interacciones mediante diagramas de secuencia](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

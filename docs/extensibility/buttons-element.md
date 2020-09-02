@@ -1,5 +1,5 @@
 ---
-title: Elemento de los botones (Buttons Element) Microsoft Docs
+title: Buttons (elemento) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739920"
 ---
-# <a name="buttons-element"></a>Elemento Buttons
-Elementos [Button](../extensibility/button-element.md) de grupos, que representan comandos individuales.
+# <a name="buttons-element"></a>Buttons, elemento
+Agrupa los elementos de [botón](../extensibility/button-element.md) , que representan comandos individuales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,20 +37,20 @@ Elementos [Button](../extensibility/button-element.md) de grupos, que representa
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Buttons](../extensibility/buttons-element.md)|Elementos De botón de grupos.|
+|[Buttons, elemento](../extensibility/buttons-element.md)|Agrupa los elementos de botón.|
 |[Elemento Button](../extensibility/button-element.md)|Define un comando con el que el usuario puede interactuar.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Comandos](../extensibility/commands-element.md)|Representa la colección de comandos de la barra de herramientas de VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos de la barra de herramientas de VSPackage.|
 
 ## <a name="example"></a>Ejemplo
 
@@ -66,6 +66,6 @@ Elementos [Button](../extensibility/button-element.md) de grupos, que representa
 </Buttons>
 ```
 
-## <a name="see-also"></a>Consulte también
-- [Cómo VSPackages agregan elementos de interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>Vea también
+- [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

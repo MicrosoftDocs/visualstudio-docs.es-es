@@ -1,5 +1,5 @@
 ---
-title: Abordar las cuestiones de PPP2 ? Microsoft Docs
+title: Direccionar PPP Issues2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -9,49 +9,49 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740107"
 ---
-# <a name="address-dpi-issues"></a>Abordar problemas de PPP
-Un número cada vez mayor de dispositivos se envían con pantallas de "alta resolución". Estas pantallas suelen tener más de 200 píxeles por pulgada (ppi). Trabajar con una aplicación en estos equipos requerirá que el contenido se escale verticalmente para satisfacer las necesidades de ver el contenido a una distancia de visualización normal para el dispositivo. A partir de 2014, el objetivo principal para las pantallas de alta densidad son los dispositivos informáticos móviles (tabletas, computadoras portátiles y teléfonos).
+# <a name="address-dpi-issues"></a>Problemas de PPP de direcciones
+Un número cada vez mayor de dispositivos se envía con pantallas de "alta resolución". Estas pantallas suelen tener más de 200 píxeles por pulgada (PPP). Al trabajar con una aplicación en estos equipos, será necesario que el contenido se escale verticalmente para satisfacer las necesidades de visualización del contenido con una distancia de visualización normal para el dispositivo. A partir de 2014, el destino principal de las pantallas de alta densidad son los dispositivos informáticos móviles (tabletas, portátiles de concha y teléfonos).
 
-Windows 8.1 y superior contiene varias características para permitir que estas máquinas funcionen con pantallas y entornos donde la máquina está conectada a pantallas de alta densidad y densidad estándar al mismo tiempo.
+Windows 8.1 y versiones posteriores contienen varias características que permiten a estas máquinas trabajar con pantallas y entornos en los que la máquina está conectada a las pantallas de alta densidad y densidad estándar al mismo tiempo.
 
-- Windows puede permitirle escalar contenido al dispositivo mediante la opción "Hacer texto y otros elementos más grandes o más pequeños" (disponible desde Windows XP).
+- Windows puede permitir el escalado de contenido al dispositivo con la opción "hacer que el texto y otros elementos sean mayores o menores" (disponible desde Windows XP).
 
-- Windows 8.1 y versiones posteriores escalarán automáticamente el contenido de la mayoría de las aplicaciones cuando se muevan entre pantallas de densidades de píxeles diferentes. Cuando la pantalla principal es de alta densidad (200% de escala) y la pantalla secundaria es de densidad estándar (100%), Windows reducirá automáticamente el contenido de la ventana de la aplicación en la pantalla secundaria (1 píxel mostrado por cada 4 píxeles representados por la aplicación).
+- Windows 8.1 y versiones posteriores escalarán automáticamente el contenido de la mayoría de las aplicaciones para que sean coherentes cuando se muevan entre las pantallas de densidades de píxeles diferentes. Cuando la pantalla principal es de alta densidad (escala del 200%) y la pantalla secundaria es la densidad estándar (100%), Windows escalará automáticamente el contenido de la ventana de la aplicación hacia abajo en la pantalla secundaria (1 píxel se muestra por cada 4 píxeles representado por la aplicación).
 
-- Windows establecerá de forma predeterminada la escala correcta para la densidad de píxeles y la distancia de visualización de la pantalla (Windows 7 y versiones posteriores, configurables por EL OEM).
+- Windows usará de forma predeterminada el escalado adecuado para la densidad de píxeles y la distancia de visualización de la pantalla (Windows 7 y posterior, configurable por el OEM).
 
-- Windows puede escalar automáticamente contenido hasta un 250 % en dispositivos nuevos que superen los 280 ppp (a partir de Windows 8.1 S14).
+- Windows puede escalar automáticamente el contenido hasta el 250% en dispositivos nuevos que superen los 280 PPP (desde Windows 8.1 S14).
 
-  Windows tiene una manera de tratar con el escalado vertical de la interfaz de usuario para aprovechar el aumento del recuento de píxeles. Una aplicación opta por este sistema declarándose "consciente del sistema DPI." Las aplicaciones que no lo hacen son escaladas verticalmente por el sistema. Esto puede dar lugar a una experiencia de usuario "difusa" en la que toda la aplicación está uniformemente estirada en píxeles. Por ejemplo:
+  Windows tiene una forma de tratar con el escalado vertical de la interfaz de usuario para aprovechar el aumento de los recuentos de píxeles. Una aplicación participa en este sistema declarando "reconocimiento de PPP del sistema". El sistema escala verticalmente las aplicaciones que no lo hacen. Esto puede dar lugar a una experiencia de usuario "aproximada" en la que toda la aplicación se ajusta uniformemente. Por ejemplo:
 
   ![Problemas de PPP borrosos](../extensibility/media/dpi-issues-fuzzy.png "Problemas de PPP borrosos")
 
-  Visual Studio opta por ser compatible con el escalado de PPP y, por lo tanto, no está "virtualizado".
+  Visual Studio opta por ser compatible con el ajuste de escala de PPP y, por tanto, no está "virtualizado".
 
-  Windows (y Visual Studio) aprovechan varias tecnologías de interfaz de usuario, que tienen diferentes formas de tratar con los factores de escalado establecidos por el sistema. Por ejemplo:
+  Windows (y Visual Studio) aprovechan varias tecnologías de interfaz de usuario, que tienen diferentes formas de tratar con los factores de escala establecidos por el sistema. Por ejemplo:
 
-- WPFWPF mide los controles de forma independiente del dispositivo (unidades, no píxeles). WPFWPF UI escala automáticamente para el PPP actual.
+- WPF mide los controles de una manera independiente del dispositivo (unidades, no píxeles). La interfaz de usuario de WPF se escala automáticamente para los PPP actuales.
 
-- Todos los tamaños de texto, independientemente del marco de la interfaz de usuario, se expresan en puntos, por lo que el sistema trata como independiente de PPP. El texto de Win32, WinForms y WPF ya se escala correctamente cuando se dibuja en el dispositivo de visualización.
+- Todos los tamaños de texto independientemente del marco de interfaz de usuario se expresan en puntos, por lo que el sistema los trata como independientes de PPP. El texto en Win32, WinForms y WPF ya se escala correctamente cuando se dibuja en el dispositivo de pantalla.
 
-- Los cuadros de diálogo y ventanas de Win32/WinForms tienen medios para habilitar el diseño que cambia de tamaño con texto (por ejemplo, a través de paneles de cuadrícula, flujo y diseño de tabla). Esto permite evitar ubicaciones de píxeles codificadas de forma rígida que no se escalan cuando se aumentan los tamaños de fuente.
+- Los cuadros de diálogo de Win32/WinForms y las ventanas tienen medios para habilitar el diseño que cambia de tamaño con texto (por ejemplo, a través de los paneles de diseño de tabla, cuadrícula, flujo y cuadrícula). Permiten evitar ubicaciones de píxeles codificadas de forma rígida que no se escalan cuando se aumentan los tamaños de fuente.
 
-- Los iconos proporcionados por el sistema o los recursos basados en métricas del sistema (por ejemplo, SM_CXICON y SM_CXSMICON) ya se han ampliado.
+- Los iconos proporcionados por el sistema o los recursos basados en métricas del sistema (por ejemplo, SM_CXICON y SM_CXSMICON) ya se han escalado verticalmente.
 
-## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Win32 más antiguo (GDI, GDI+) y la interfaz de usuario basada en WinForms
-Aunque WPFWPF ya es compatible con PPP, gran parte de nuestro código basado en Win32/GDI no se escribió originalmente teniendo en cuenta el conocimiento de PPP. Windows ha proporcionado API de escalado de PPP. Las correcciones para los problemas de Win32 deben usarlos de forma coherente en todo el producto. Visual Studio ha proporcionado una biblioteca de clases auxiliares para evitar duplicar la funcionalidad y garantizar la coherencia en todo el producto.
+## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Interfaz de usuario de Win32 (GDI, GDI+) anterior y basada en WinForms
+Aunque WPF ya tiene un alto reconocimiento de PPP, gran parte de nuestro código basado en Win32/GDI no se escribió originalmente con reconocimiento de PPP. Windows ha proporcionado API de escala de PPP. Las correcciones de problemas de Win32 deberían utilizarlos de forma coherente en todo el producto. Visual Studio proporciona una biblioteca de clases auxiliares para evitar la duplicación de la funcionalidad y garantizar la coherencia en todo el producto.
 
 ## <a name="high-resolution-images"></a>Imágenes de alta resolución
-Esta sección es principalmente para los desarrolladores que extienden Visual Studio 2013. Para Visual Studio 2015, use el servicio de imágenes integrado en Visual Studio. También puede encontrar que necesita admitir o apuntar a muchas versiones de Visual Studio y, por lo tanto, el uso del servicio de imágenes en 2015 no es una opción, ya que no existe en versiones anteriores. Esta sección también es para ti entonces.
+Esta sección es principalmente para desarrolladores que amplían Visual Studio 2013. Para Visual Studio 2015, use el servicio de imágenes que está integrado en Visual Studio. También es posible que tenga que admitir y dirigir muchas versiones de Visual Studio y, por tanto, usar el servicio de imágenes en 2015 no es una opción, ya que no existe en versiones anteriores. Esta sección también es para usted.
 
-## <a name="scaling-up-images-that-are-too-small"></a>Escalar imágenes demasiado pequeñas
-Las imágenes que son demasiado pequeñas se pueden escalar verticalmente y representarse en GDI y WPF mediante algunos métodos comunes. Las clases auxiliares de PPP administrados están disponibles para los integradores internos y externos de Visual Studio para abordar iconos de escalado, mapas de bits, imágenes e listas de imágenes. Los c/C++helpernativos nativos basados en Win32 están disponibles para escalar HICON, HBITMAP, HIMAGELIST y VsUI::GdiplusImage. El escalado de un mapa de bits normalmente solo requiere un cambio de una línea después de incluir una referencia a la biblioteca auxiliar. Por ejemplo:
+## <a name="scaling-up-images-that-are-too-small"></a>Escalado vertical de imágenes demasiado pequeñas
+Las imágenes que son demasiado pequeñas se pueden escalar verticalmente y representar en GDI y WPF mediante algunos métodos comunes. Las clases auxiliares de PPP administradas están disponibles para los integradores internos y externos de Visual Studio para tratar los iconos de escalado, mapas de bits, imagestrips y ImageList. Las aplicaciones auxiliares nativas de C/C++ y basadas en Win32 están disponibles para escalar HICON, HBITMAP, HIMAGELIST y VsUI:: GdiplusImage. El escalado de un mapa de bits normalmente solo requiere un cambio de una línea después de incluir una referencia a la biblioteca auxiliar. Por ejemplo:
 
 ```cpp
 (Unmanaged) VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
@@ -61,51 +61,51 @@ Las imágenes que son demasiado pequeñas se pueden escalar verticalmente y repr
 (WinForms) DpiHelper.LogicalToDeviceUnits(ref image);
 ```
 
-El escalado de una lista de imágenes depende de si la lista de imágenes se ha completado en tiempo de carga o se anexa en tiempo de ejecución. Si se completa en `LogicalToDeviceUnits()` tiempo de carga, llame con la lista de imágenes como lo haría con un mapa de bits. Cuando el código necesite cargar un mapa de bits individual antes de componer la lista de imágenes, asegúrese de escalar el tamaño de imagen de la lista de imágenes:
+El escalado de un ImageList depende de si el ImageList está completo en el momento de la carga o se anexa en tiempo de ejecución. Si se completa en tiempo de carga, llame a `LogicalToDeviceUnits()` con el ImageList como lo haría con un mapa de bits. Cuando el código necesite cargar un mapa de bits individual antes de crear el ImageList, asegúrese de escalar el tamaño de la imagen del ImageList:
 
 ```csharp
 imagelist.ImageSize = DpiHelper.LogicalToDeviceUnits(imagelist.ImageSize);
 ```
 
-En el código nativo, las dimensiones se pueden escalar al crear la lista de imágenes de la siguiente manera:
+En código nativo, las dimensiones se pueden escalar al crear el ImageList de la manera siguiente:
 
 ```cpp
 ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::LogicalToDeviceUnitsY(16), ILC_COLOR32|ILC_MASK, nCount, 1);
 ```
 
-Las funciones de la biblioteca permiten especificar el algoritmo de cambio de tamaño. Al escalar las imágenes que se van a colocar en las listas de imágenes, asegúrese de especificar el color de fondo que se utiliza para la transparencia, o utilice la escala NearestNeighbor (que provocará distorsiones al 125% y 150%).
+Las funciones de la biblioteca permiten especificar el algoritmo de cambio de tamaño. Al ajustar el tamaño de las imágenes que se van a colocar en ImageList, asegúrese de especificar el color de fondo que se utiliza para la transparencia, o bien use el escalado de NearestNeighbor (lo que provocará distorsiones en 125% y 150%).
 
-Consulte <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> la documentación en MSDN.
+Consulte la <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> documentación de en MSDN.
 
-En la tabla siguiente se muestran ejemplos de cómo se deben escalar las imágenes en los factores de escala de PPP correspondientes. Las imágenes descritas en naranja denotan nuestra práctica recomendada a partir de Visual Studio 2013 (escalado de 100%-200% PPP):
+En la tabla siguiente se muestran ejemplos de cómo se deben escalar las imágenes en los factores de escala de PPP correspondientes. Las imágenes que se describen en naranja indican nuestro procedimiento recomendado a partir de Visual Studio 2013 (ajuste de escala del 100%-200% de PPP):
 
 ![Escalado de problemas de PPP](../extensibility/media/dpi-issues-scaling.png "Escalado de problemas de PPP")
 
 ## <a name="layout-issues"></a>Problemas de diseño
-Los problemas de diseño comunes se pueden evitar principalmente manteniendo los puntos en la interfaz de usuario escalados y relativos entre sí en lugar de mediante el uso de ubicaciones absolutas (específicamente, en unidades de píxeles). Por ejemplo:
+Los problemas de diseño comunes se pueden evitar principalmente si se mantienen los puntos en la interfaz de usuario escalados y se relacionan entre sí, en lugar de usar ubicaciones absolutas (concretamente, en unidades de píxeles). Por ejemplo:
 
-- Las posiciones de diseño/texto deben ajustarse para tener en cuenta las imágenes escaladas.
+- Las posiciones de diseño/texto deben ajustarse para tener en cuenta las imágenes de escalado vertical.
 
-- Las columnas de las cuadrículas deben tener anchos ajustados para el texto escalado vertical.
+- Las columnas de las cuadrículas deben ajustarse a los anchos del texto escalado verticalmente.
 
-- Los tamaños codificados de forma rígida o el espacio entre los elementos también tendrán que ampliarse. Los tamaños que se basan solo en dimensiones de texto suelen estar bien, ya que las fuentes se escalan automáticamente.
+- También será necesario escalar verticalmente los tamaños o el espacio codificados entre los elementos. Los tamaños basados solo en las dimensiones de texto suelen ser correctos, ya que las fuentes se escalan verticalmente de forma automática.
 
-  Las funciones auxiliares están disponibles en la <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> clase para permitir el escalado en los ejes X e Y:
+  Las funciones auxiliares están disponibles en la <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> clase para permitir el escalado en el eje X e y:
 
-- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (las funciones permiten escalar en el eje X/Y)
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (las funciones permiten el escalado en el eje X/Y)
 
-- espacio int á DpiHelper.LogicalToDeviceUnitsX (10);
+- int Space = DpiHelper. LogicalToDeviceUnitsX (10);
 
-- int height á VsUI::DpiHelper::LogicalToDeviceUnitsY(5);
+- int height = VsUI::D piHelper:: LogicalToDeviceUnitsY (5);
 
-  Hay sobrecargas LogicalToDeviceUnits para permitir el escalado de objetos como Rect, Point y Size.
+  Hay sobrecargas de LogicalToDeviceUnits para permitir el escalado de objetos como Rect, Point y size.
 
-## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Uso de la biblioteca/clase DPIHelper para escalar imágenes y diseño
-La biblioteca auxiliar de PPP de Visual Studio está disponible en formularios nativos y administrados y otras aplicaciones pueden usarla fuera del shell de Visual Studio.
+## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Uso de la biblioteca o la clase DPIHelper para escalar imágenes y diseños
+La biblioteca auxiliar de PPP de Visual Studio está disponible en formularios nativos y administrados y se puede usar fuera de Visual Studio Shell por otras aplicaciones.
 
-Para usar la biblioteca, vaya a los ejemplos de [extensibilidad de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) de Visual Studio y clone el ejemplo de alta DPI_Images_Icons.
+Para usar la biblioteca, vaya a los [ejemplos de extensibilidad de VSSDK de Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples) y Clone el ejemplo de alta DPI_Images_Icons.
 
-En los archivos de origen, incluya *VsUIDpiHelper.h* y llame a las funciones estáticas de `VsUI::DpiHelper` la clase:
+En archivos de código fuente, incluya *VsUIDpiHelper. h* y llame a las funciones estáticas de la `VsUI::DpiHelper` clase:
 
 ```cpp
 #include "VsUIDpiHelper.h"
@@ -116,19 +116,19 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```
 
 > [!NOTE]
-> No utilice las funciones auxiliares en variables estáticas de nivel de módulo o de clase. La biblioteca también utiliza estáticas para la sincronización de subprocesos y es posible que se encuentre con problemas de inicialización de pedidos. Convierta esas estáticas en variables miembro no estáticas o envuélvalas en una función (para que se construyan en el primer acceso).
+> No utilice las funciones auxiliares en las variables estáticas en el nivel de módulo o de clase. La biblioteca también utiliza estáticas para la sincronización de subprocesos y puede que se produzcan problemas de inicialización de orden. Convierta esos valores estáticos en variables miembro no estáticas o ajústelos en una función (para que se construyan en el primer acceso).
 
-Para tener acceso a las funciones auxiliares de PPP desde código administrado que se ejecutará dentro del entorno de Visual Studio:
+Para tener acceso a las funciones auxiliares de PPP desde código administrado que se ejecutará en el entorno de Visual Studio:
 
-- El proyecto de consumo debe hacer referencia a la versión más reciente de Shell MPF. Por ejemplo:
+- El proyecto de consumo debe hacer referencia a la versión más reciente del shell MPF. Por ejemplo:
 
     ```csharp
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- Asegúrese de que el proyecto tiene referencias a **System.Windows.Forms**, **PresentationCore**y **PresentationUI**.
+- Asegúrese de que el proyecto tiene referencias a **System. Windows. Forms**, **PresentationCore**y **PresentationUI**.
 
-- En el código, use el **Microsoft.VisualStudio.PlatformUI** espacio de nombres y llame a las funciones estáticas de DpiHelper clase. Para los tipos admitidos (puntos, tamaños, rectángulos, etc.), se proporcionan funciones de extensión que devuelven nuevos objetos escalados. Por ejemplo:
+- En el código, use el espacio de nombres **Microsoft. VisualStudio. PlatformUI** y llame a las funciones estáticas de la clase DpiHelper. En el caso de los tipos admitidos (puntos, tamaños, rectángulos, etc.), se proporcionan funciones de extensión que devuelven nuevos objetos escalados. Por ejemplo:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -138,20 +138,20 @@ Para tener acceso a las funciones auxiliares de PPP desde código administrado q
 
     ```
 
-## <a name="dealing-with-wpf-image-fuzziness-in-zoomable-ui"></a>Tratar con el difuso de imágenes de WPF en la interfaz de usuario ampliable
-En WPFWPF, WPFWPF cambia el tamaño automáticamente de los mapas de bits para el nivel de zoom de PPP actual mediante un algoritmo bicúbico de alta calidad (predeterminado), que funciona bien para imágenes o capturas de pantalla grandes, pero es inapropiado para los iconos de elementos de menú porque introduce el difusor percibido.
+## <a name="dealing-with-wpf-image-fuzziness-in-zoomable-ui"></a>Tratar con la aproximación de imagen de WPF en la interfaz de usuario de zoom
+En WPF, WPF cambia el tamaño de los mapas de bits automáticamente para el nivel de zoom de PPP actual mediante un algoritmo bicúbico de alta calidad (valor predeterminado), que funciona bien para imágenes o capturas de pantallas grandes, pero no es apropiado para los iconos de elementos de menú porque introduce una aproximación aproximada.
 
 Recomendaciones:
 
-- Para la ilustración de <xref:System.Windows.Media.BitmapScalingMode> imágenes de logotipos y banners, se podría utilizar el modo de cambio de tamaño predeterminado.
+- En el material gráfico de imagen de logotipo y banners, <xref:System.Windows.Media.BitmapScalingMode> se podría usar el modo de cambio de tamaño predeterminado.
 
-- Para los elementos de menú <xref:System.Windows.Media.BitmapScalingMode> y las imágenes de iconografía, se debe utilizar cuando no causa que otros artefactos de distorsión eliminen el mareo (al 200% y al 300%).
+- En el caso de los elementos de menú y las imágenes Iconografía, <xref:System.Windows.Media.BitmapScalingMode> debe usarse cuando no provoque que otros artefactos de distorsión eliminen la aproximación (en 200% y 300%).
 
-- Para niveles de zoom grandes no múltiplos del 100% (por ejemplo, 250% o 350%), escalado de imágenes de iconografía con resultados bicúbicos en una interfaz de usuario difusa y lavada. Un mejor resultado se obtiene escalando primero la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%) y escalando con bicúbico desde allí. Consulte Caso especial: preescalado de imágenes de WPF para grandes niveles de PPP para obtener más información.
+- En el caso de los niveles de zoom grandes no múltiplos del 100% (por ejemplo, 250% o 350%), el escalado de imágenes de iconografía con resultados bicúbicos en una interfaz de usuario de descoloración aproximada. Para obtener un mejor resultado, escale primero la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%). y el escalado con bicúbico desde allí. Vea caso especial: preescalar imágenes de WPF para niveles de PPP grandes para obtener más información.
 
-  El DpiHelper clase en el Microsoft.VisualStudio.PlatformUI espacio de nombres proporciona un miembro <xref:System.Windows.Media.BitmapScalingMode> que se puede usar para el enlace. Permitirá que el shell de Visual Studio controle el modo de escalado de mapa de bits en todo el producto de forma uniforme, en función del factor de escalado de PPP.
+  La clase DpiHelper del espacio de nombres Microsoft. VisualStudio. PlatformUI proporciona un miembro <xref:System.Windows.Media.BitmapScalingMode> que se puede usar para el enlace. Permite que el shell de Visual Studio controle el modo de escalado de mapa de bits en el producto uniformemente, en función del factor de escala de PPP.
 
-  Para usarlo en XAML, agrega:
+  Para usarlo en XAML, agregue:
 
 ```xaml
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
@@ -160,22 +160,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 
 ```
 
-El shell de Visual Studio ya establece esta propiedad en ventanas y cuadros de diálogo de nivel superior. La interfaz de usuario basada en WPF que se ejecuta en Visual Studio ya la heredará. Si la configuración no se propaga a los elementos concretos de la interfaz de usuario, se puede establecer en el elemento raíz de la interfaz de usuario XAML/WPF. Los lugares donde esto sucede incluyen ventanas emergentes, en elementos con padres de Win32 y ventanas de diseño que se ejecutan fuera de proceso, como Blend.
+El shell de Visual Studio ya establece esta propiedad en los cuadros de diálogo y las ventanas de nivel superior. La interfaz de usuario basada en WPF que se ejecuta en Visual Studio ya la hereda. Si el valor no se propaga a las partes concretas de la interfaz de usuario, se puede establecer en el elemento raíz de la interfaz de usuario de XAML o WPF. Entre los lugares en los que esto ocurre se incluyen elementos emergentes, elementos con elementos primarios de Win32 y ventanas del diseñador que se ejecutan fuera de proceso, como Blend.
 
-Algunas interfazes de usuario pueden escalar independientemente del nivel de zoom de PPP del conjunto de sistemas, como el editor de texto de Visual Studio y los diseñadores basados en WPF (WPF Desktop y Windows Store). En estos casos, DpiHelper.BitmapScalingMode no debe utilizarse. Para corregir este problema en el editor, el equipo IDE creó una propiedad personalizada denominada RenderOptions.BitmapScalingMode. Establezca ese valor de propiedad en HighQuality o NearestNeighbor en función del nivel de zoom combinado del sistema y la interfaz de usuario.
+Algunas interfaces de usuario se pueden escalar independientemente del nivel de zoom de PPP establecido en el sistema, como el editor de texto de Visual Studio y los diseñadores basados en WPF (WPF Desktop y la tienda Windows). En estos casos, no se debe usar DpiHelper. BitmapScalingMode. Para corregir este problema en el editor, el equipo del IDE creó una propiedad personalizada titulada RenderOptions. BitmapScalingMode. Establezca el valor de la propiedad en HighQuality o NearestNeighbor según el nivel de zoom combinado del sistema y la interfaz de usuario.
 
-## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Caso especial: preescalado de imágenes WPF para grandes niveles de PPP
-Para niveles de zoom muy grandes que no son múltiplos del 100% (por ejemplo, 250%, 350%, etc.), escalar imágenes de iconografía con resultados bicúbicos en una interfaz de usuario difusa y lavada. La impresión de estas imágenes junto con texto nítido es casi como la de una ilusión óptica. Las imágenes parecen estar más cerca del ojo y desenfocadas en relación con el texto. El resultado de la escala en este tamaño aumentado se puede mejorar primero escalando la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%) y escalando con bicúbico al resto (un 50% adicional).
+## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Caso especial: escalar imágenes de WPF para niveles de PPP grandes
+En el caso de niveles de zoom muy grandes que no son múltiplos del 100% (por ejemplo, 250%, 350%, etc.), el escalado de imágenes de iconografía con resultados bicúbicos en una interfaz de usuario de decoloración aproximada. La impresión de estas imágenes junto con el texto nítido es prácticamente similar a la de una ilusión óptica. Las imágenes parecen estar más cerca del ojo y de centrarse en relación con el texto. El resultado de la escala con este tamaño ampliado se puede mejorar escalando primero la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%). y el escalado con bicúbico al resto (un 50% adicional.
 
-A continuación se muestra un ejemplo de las diferencias en los resultados, donde la primera imagen se escala con el algoritmo de doble escala mejorado 100%->200%->250%, y la segunda solo con bicúbico 100%->250%.
+A continuación se presenta un ejemplo de las diferencias en los resultados, donde la primera imagen se escala con el algoritmo de doble escala 100%->200%->250%, y el segundo solo con bicúbico 100%->250%.
 
-![Ejemplo de doble escalado de problemas de PPP](../extensibility/media/dpi-issues-double-scaling-example.png "Ejemplo de doble escalado de problemas de PPP")
+![Ejemplo de doble escala de problemas de PPP](../extensibility/media/dpi-issues-double-scaling-example.png "Ejemplo de doble escala de problemas de PPP")
 
-Para permitir que la interfaz de usuario use este doble escalado, el marcado XAML para mostrar cada Image elemento tendrá que modificarse. En los ejemplos siguientes se muestra cómo usar el doble escalado en WPFWPF en Visual Studio mediante la biblioteca DpiHelper y Shell.12/14.
+Para habilitar la interfaz de usuario para que use este escalado doble, es necesario modificar el marcado XAML para mostrar cada elemento de imagen. En los siguientes ejemplos se muestra cómo usar el escalado doble en WPF en Visual Studio con la biblioteca DpiHelper y el shell. 12/14.
 
-Paso 1: Preescale la imagen al 200%, 300%, y así sucesivamente usando NearestNeighbor.
+Paso 1: ajustar el tamaño de la imagen a 200%, 300% y así sucesivamente con NearestNeighbor.
 
-Preajuste la escala de la imagen mediante un convertidor aplicado en un enlace o con una extensión de marcado XAML. Por ejemplo:
+Ajuste el tamaño de la imagen mediante un convertidor aplicado en un enlace o con una extensión de marcado XAML. Por ejemplo:
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />
@@ -186,7 +186,7 @@ Preajuste la escala de la imagen mediante un convertidor aplicado en un enlace o
 
 ```
 
-Si la imagen también necesita ser temática (la mayoría, si no todos, debería), el marcado puede usar un convertidor diferente que primero realiza el tema de la imagen y, a continuación, el escalado previo. El marcado puede <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter> <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter>usar o , dependiendo de la salida de conversión deseada.
+Si también es necesario que la imagen tenga el mismo nombre (la mayoría, si no todos, deberían), el marcado puede utilizar un convertidor diferente que primero realiza la imagen y, a continuación, el escalado previo. El marcado puede utilizar <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter> o <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter> , dependiendo de la salida de conversión deseada.
 
 ```xaml
 <vsui:DpiPrescaleThemedImageSourceConverter x:Key="DpiPrescaleThemedImageSourceConverter" />
@@ -203,17 +203,17 @@ Si la imagen también necesita ser temática (la mayoría, si no todos, debería
 </Image>
 ```
 
-Paso 2: Asegúrese de que el tamaño final es correcto para el DPI actual.
+Paso 2: asegurarse de que el tamaño final es correcto para el PPP actual.
 
-Dado que WPFWPF escalará la interfaz de usuario para el PPP actual mediante el BitmapScalingMode propiedad establecida en el UIElement, un Image control con una imagen preescalado como su origen se verá dos o tres veces mayor de lo que debería. Las siguientes son un par de maneras de contrarrestar este efecto:
+Dado que WPF escalará la interfaz de usuario para los PPP actuales mediante el conjunto de propiedades BitmapScalingMode en el UIElement, un control de imagen que use una imagen preajustada como su origen tendrá una apariencia de dos o tres veces mayor de lo que debería. A continuación se muestran un par de formas de contrarrestar este efecto:
 
-- Si conoce la dimensión de la imagen original al 100%, puede especificar el tamaño exacto del control Image. Estos tamaños reflejarán el tamaño de la interfaz de usuario antes de aplicar el escalado.
+- Si conoce la dimensión de la imagen original en 100%, puede especificar el tamaño exacto del control de imagen. Estos tamaños reflejarán el tamaño de la interfaz de usuario antes de aplicar el escalado.
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />
     ```
 
-- Si no se conoce el tamaño de la imagen original, un LayoutTransform se puede utilizar para reducir la escala del objeto Image final. Por ejemplo:
+- Si no se conoce el tamaño de la imagen original, se puede usar una LayoutTransform para reducir verticalmente el objeto de imagen final. Por ejemplo:
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >
@@ -225,10 +225,10 @@ Dado que WPFWPF escalará la interfaz de usuario para el PPP actual mediante el 
     </Image>
     ```
 
-## <a name="enabling-hdpi-support-to-the-weboc"></a>Habilitación de la compatibilidad con HDPI en el WebOC
-De forma predeterminada, los controles WebOC (como el control WebBrowser en WPFWPF o la interfaz IWebBrowser2) no habilitan la detección y compatibilidad con HDPI. El resultado será un control incrustado con contenido de pantalla que es demasiado pequeño en una pantalla de alta resolución. A continuación se describe cómo habilitar la compatibilidad con PPP altos en una instancia WebOC específica.
+## <a name="enabling-hdpi-support-to-the-weboc"></a>Habilitación de la compatibilidad con HDPI con WebOC
+De forma predeterminada, los controles WebOC (como el control WebBrowser en WPF o la interfaz IWebBrowser2) no habilitan la detección y compatibilidad con HDPI. El resultado será un control incrustado con contenido para mostrar que es demasiado pequeño en una pantalla de alta resolución. A continuación se describe cómo habilitar la compatibilidad con PPP alta en una instancia específica de WebOC Web.
 
-Implemente la interfaz IDocHostUIHandler (consulte el artículo de MSDN en [el IDocHostUIHandler:](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85))
+Implemente la interfaz IDocHostUIHandler (vea el artículo de MSDN en [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):
 
 ```idl
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }
 ```
 
-Opcionalmente, implemente la interfaz ICustomDoc (consulte el artículo de MSDN en [el ICustomDoc:](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85))
+Opcionalmente, implemente la interfaz ICustomDoc (vea el artículo de MSDN en [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):
 
 ```idl
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),
@@ -318,7 +318,7 @@ public interface ICustomDoc
 }
 ```
 
-Asocie la clase que implementa IDocHostUIHandler con el documento de WebOC. Si ha implementado la interfaz ICustomDoc anterior, tan pronto como la propiedad de documento de WebOC sea válida, conviéstela en un ICustomDoc y llame al método SetUIHandler, pasando la clase que implementa IDocHostUIHandler.
+Asocie la clase que implementa IDocHostUIHandler con el documento de WebOC. Si ha implementado la interfaz ICustomDoc anterior, tan pronto como la propiedad del documento de WebOC es válida, conviértala en un ICustomDoc y llame al método SetUIHandler, pasando la clase que implementa IDocHostUIHandler.
 
 ```csharp
 // "this" references that class that owns the WebOC control and in this case also implements the IDocHostUIHandler interface
@@ -327,7 +327,7 @@ customDoc.SetUIHandler(this);
 
 ```
 
-Si NO implementó la interfaz ICustomDoc, tan pronto como la propiedad de documento de WebOC sea válida, `SetClientSite` deberá convertirla en un IOleObject y llamar al método, pasando la clase que implementa IDocHostUIHandler. Establezca el indicador DOCHOSTUIFLAG_DPI_AWARE en el DOCHOSTUIINFO pasado a la `GetHostInfo` llamada al método:
+Si no implementó la interfaz ICustomDoc, tan pronto como la propiedad del documento de WebOC sea válida, deberá convertirla en un IOleObject y llamar al `SetClientSite` método, pasando la clase que implementa IDocHostUIHandler. Establezca la marca de DOCHOSTUIFLAG_DPI_AWARE en el DOCHOSTUIINFO que se pasa a la `GetHostInfo` llamada al método:
 
 ```csharp
 public int GetHostInfo(DOCHOSTUIINFO info)
@@ -340,13 +340,13 @@ public int GetHostInfo(DOCHOSTUIINFO info)
 }
 ```
 
-Esto debe ser todo lo que necesita para obtener el control WebOC para admitir HPDI.
+Esto debería ser todo lo que necesita para obtener el control WebOC para admitir HPDI.
 
 ## <a name="tips"></a>Sugerencias
 
-1. Si cambia la propiedad document del control WebOC, es posible que deba volver a asociar el documento con la clase IDocHostUIHandler.
+1. Si cambia la propiedad de documento en el control WebOC, puede que tenga que volver a asociar el documento con la clase IDocHostUIHandler.
 
-2. Si lo anterior no funciona, hay un problema conocido con el WebOC no recoger el cambio al indicador DPI. La forma más confiable de arreglar esto es alternar el zoom óptico del WebOC, lo que significa dos llamadas con dos valores diferentes para el porcentaje de zoom. Además, si se requiere esta solución alternativa, puede ser necesario realizarla en cada llamada de navegación.
+2. Si el anterior no funciona, existe un problema conocido con el WebOC que no recoge el cambio en la marca de PPP. La forma más confiable de corregirlo es alternar el zoom óptico del WebOC, lo que significa dos llamadas con dos valores diferentes para el porcentaje de zoom. Además, si se requiere esta solución alternativa, podría ser necesario realizarla en cada llamada de navegación.
 
     ```csharp
     // browser2 is a SHDocVw.IWebBrowser2 in this case

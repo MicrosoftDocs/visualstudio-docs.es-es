@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 84c7a173bf0b7f5b3dc2187c0c8574819b2317a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176902"
 ---
 # <a name="message-markers"></a>Marcadores de mensaje
@@ -26,6 +26,6 @@ Un marcador de mensaje representa el resultado del registro. Un mensaje es una c
 ## <a name="message-aggregation-markers"></a>Marcadores de agregación de mensajes  
  En ocasiones, los mensajes aparecen tan cerca unos de otros en el visualizador de simultaneidad que no se pueden extraer individualmente. Cuando esto ocurre, se muestra un *marcador de agregación de mensajes* que representa los mensajes subyacentes. Al colocar el puntero en uno de estos iconos, se muestra información sobre el número de mensajes subyacentes que se representan. Para ver los mensajes, amplíe la imagen.  Si amplía completamente y sigue recibiendo un marcador de agregación, puede ver los mensajes subyacentes en el [Informe de marcadores](../profiling/markers-report.md).  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)   
  [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)

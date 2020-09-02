@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192858"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Uso de varios procesadores para compilar proyectos
@@ -34,13 +34,13 @@ MSBuild puede aprovechar las ventajas de los sistemas que tienen varios procesad
  En las compilaciones en paralelo, los errores y excepciones pueden producirse en momentos diferentes que en una compilación no paralela, y cuando un proyecto no se compila, las demás compilaciones de proyectos continúan. Si se producen errores en un proyecto, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] no detendrá la compilación de proyectos que se está ejecutando en paralelo. Los demás proyectos seguirán compilándose hasta que terminen correctamente o con errores. Sin embargo, si se ha habilitado <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A>, no se detendrá ninguna compilación aunque se produzca un error.  
   
 ## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Archivos de proyecto (.vcproj) y solución (.sln) de Visual C++  
- Los archivos de proyecto (.vcproj) y los archivos de solución (.sln) de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] se pueden pasar a [MSBuild Task](../msbuild/msbuild-task.md). Para los proyectos de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], se llama a VCWrapperProject y, a continuación, se crea el proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] interno. Para las soluciones de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], se crea un SolutionWrapperProject y, a continuación, se crea el proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] interno. En ambos casos, el proyecto resultante se trata igual que cualquier otro proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ Los [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] archivos de proyecto (. vcproj) y de solución (. sln) se pueden pasar a la [tarea MSBuild](../msbuild/msbuild-task.md). Para los proyectos de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], se llama a VCWrapperProject y, a continuación, se crea el proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] interno. Para las soluciones de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], se crea un SolutionWrapperProject y, a continuación, se crea el proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] interno. En ambos casos, el proyecto resultante se trata igual que cualquier otro proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="multi-process-execution"></a>Ejecución con varios procesos  
  Casi todas las actividades relacionadas con la compilación requieren que el directorio actual permanezca constante a lo largo del proceso de compilación para evitar errores relacionados con la ruta de acceso. Por consiguiente, los proyectos no se pueden ejecutar en subprocesos diferentes de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] porque haría que se crearan varios directorios.  
   
  Para evitar este problema y habilitar al mismo tiempo las compilaciones para varios procesadores, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utiliza el "aislamiento de procesos". Mediante el aislamiento de procesos, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pueden crear un máximo de `n` procesos, donde `n` es el número de procesadores disponibles en el sistema. Por ejemplo, si [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] compila una solución en un sistema que tiene dos procesadores de impresión, sólo se crean dos procesos de compilación. Estos procesos se reutilizan para compilar todos los proyectos de la solución.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

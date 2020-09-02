@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849820"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
@@ -44,7 +44,7 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
  De forma predeterminada, los eventos de CLR se recopilan solo cuando se genera el perfil de un proceso administrado, porque normalmente son innecesarios para procesos nativos.  En algunos casos (por ejemplo, cuando un proceso nativo hospeda CLR), es posible que tenga que recopilar los eventos de CLR para un proceso nativo.  Si es así, seleccione la casilla **Recopilar procesos nativos**.  
   
 ### <a name="disable-rundown-events"></a>Deshabilitación de eventos de detención  
- CLR genera eventos de dos proveedores: tiempo de ejecución y detención.  Si desea recopilar eventos de tiempo de ejecución CLR, pero desea evitar la recopilación de eventos de detención, active la casilla **Deshabilitar eventos de detención**.  De este modo se reduce el tamaño del archivo de seguimiento generado por la recopilación, pero algunas pilas podrían no resolverse. Para obtener más información, vea [CLR ETW Providers](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) (Proveedores de ETW de CLR).  
+ CLR genera eventos de dos proveedores: tiempo de ejecución y detención.  Si desea recopilar eventos de tiempo de ejecución CLR, pero desea evitar la recopilación de eventos de detención, active la casilla **Deshabilitar eventos de detención**.  De este modo se reduce el tamaño del archivo de seguimiento generado por la recopilación, pero algunas pilas podrían no resolverse. Para obtener más información, vea [proveedores ETW de CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) .  
   
 ### <a name="sample-events"></a>Eventos de muestras  
  Puede usar eventos de ejemplo para recopilar pilas de llamadas que están asociadas a la ejecución de subprocesos. Estos eventos se recopilan aproximadamente una vez por milisegundo para los subprocesos que se ejecutan en el proceso actual. Si deshabilita la recopilación de eventos de ejemplo, se reduce el tamaño del seguimiento recopilado, pero no se podrán ver las pilas de llamadas que están asociadas a la ejecución de subprocesos.  
@@ -84,8 +84,8 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
   
 - Un archivo de seguimiento del Visualizador de simultaneidad (*.CVTrace)  
   
-  Los dos archivos de registro de seguimiento de eventos almacenan los datos de seguimiento sin procesar, y los dos archivos del Visualizador de simultaneidad almacenan los datos procesados.  Los archivos de registro de seguimiento de eventos sin formato no se utilizan normalmente una vez procesado un seguimiento.  Al activar la casilla **Eliminar archivos de registro de seguimiento de eventos (ETL) tras el análisis** se reduce la cantidad de datos de seguimiento que se almacenan en el disco.  
+  Los dos archivos de registro de seguimiento de eventos almacenan los datos de seguimiento sin procesar, y los dos archivos del Visualizador de simultaneidad almacenan los datos procesados.  Los archivos de registro de seguimiento de eventos sin formato no se utilizan normalmente una vez procesado un seguimiento.  Al activar la casilla **eliminar archivos de registro de seguimiento de eventos (ETL) tras el análisis,** se reduce la cantidad de datos de seguimiento que se almacenan en el disco.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Solo mi código](../profiling/just-my-code-threads-view.md)   
- [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)
+ [Marcadores del Visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento Assembly (Extensión del Asistente para plantillas de Visual Studio) Microsoft Docs
+title: Assembly (elemento, extensión del Asistente para plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43f5adb8abc17f0509fb58263f307e5051af85dc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740065"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (extensión del asistente para plantillas de Visual Studio)
-Especifica el nombre o el nombre seguro `IWizard` del ensamblado que implementa la interfaz.
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly (elemento, extensión del Asistente para plantillas de Visual Studio)
+Especifica el nombre o el nombre seguro del ensamblado que implementa la `IWizard` interfaz.
 
- \<VSTemplate \<> WizardExtension> \<> de ensamblados
+ \<VSTemplate>
+\<WizardExtension>
+\<Assembly>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,18 +47,18 @@ Especifica el nombre o el nombre seguro `IWizard` del ensamblado que implementa 
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene los elementos de registro para personalizar el asistente de plantilla.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene los elementos de registro para personalizar el Asistente para plantillas.|
 
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- Este texto especifica el ensamblado `IWizard` que implementa la interfaz. Este nombre de ensamblado debe especificarse como un nombre de ensamblado completo. Por ejemplo, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
+ Este texto especifica el ensamblado que implementa la `IWizard` interfaz. Este nombre de ensamblado debe especificarse como un nombre de ensamblado completo. Por ejemplo, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
 
 ## <a name="remarks"></a>Observaciones
  `Assembly` es un elemento secundario obligatorio de `WizardExtension`.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestran los [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] metadatos de la plantilla de proyecto estándar para una aplicación de Windows.
+ En el ejemplo siguiente se muestran los metadatos de la plantilla de proyecto estándar para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación Windows.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -88,6 +90,6 @@ Especifica el nombre o el nombre seguro `IWizard` del ensamblado que implementa 
 
 ## <a name="see-also"></a>Vea también
 
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Cómo: Usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)

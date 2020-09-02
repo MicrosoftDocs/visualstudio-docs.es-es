@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ddadcb0fbd772a5638bf6023b8cf6c18fbd270d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670853"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Cómo: Examinar el Modelo de contenido de los nodos mediante la vista de Modelo de contenido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tema se describe cómo explorar los nodos mediante la [vista modelo de contenido](../xml-tools/content-model-view.md).
+En este tema se explica cómo explorar los nodos mediante la [vista Modelo de contenido](../xml-tools/content-model-view.md).
 
 ### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para crear un nuevo archivo XSD y mostrar el elemento raíz en el vista Modelo de contenido
 
@@ -29,9 +29,9 @@ En este tema se describe cómo explorar los nodos mediante la [vista modelo de c
 
 3. Copie el código de ejemplo del esquema XML del [esquema XML de ejemplo: esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md) y péguelo para reemplazar el código que se agregó al nuevo archivo XSD de forma predeterminada.
 
-4. Seleccione el elemento `purchaseOrder` en el explorador de esquemas haciendo clic con el botón secundario en el elemento `purchaseOrder` en el editor XML y seleccionando **Mostrar en el explorador XML**.
+4. Seleccione el `purchaseOrder` elemento en el explorador de esquemas haciendo clic con el botón secundario `purchaseOrder` en el elemento en el editor XML y seleccionando **Mostrar en el explorador XML**.
 
-5. Haga clic con el botón secundario en el `purchaseOrder` en el explorador XML y seleccione **Mostrar en la vista modelo de contenido**.
+5. Haga clic con el botón derecho en `purchaseOrder` dentro del Explorador XML y seleccione **Mostrar en la vista Modelo de contenido**.
 
      La vista Modelo de contenido muestra el elemento `purchaseOrder` en la superficie de diseño.
 
@@ -43,4 +43,4 @@ En este tema se describe cómo explorar los nodos mediante la [vista modelo de c
 
 8. Haga clic en el botón **Mostrar documentación** de la barra de herramientas XSD para alternar documentación. También puede hacer clic con el botón secundario en la superficie de diseño para ver la documentación.
 
-9. Rick: haga clic en el nodo `purchaseOrder` y seleccione **generar XML de ejemplo** para ver el documento de instancia XML.
+9. Rick: haga clic en el `purchaseOrder` nodo y seleccione **generar XML de ejemplo** para ver el documento de instancia XML.

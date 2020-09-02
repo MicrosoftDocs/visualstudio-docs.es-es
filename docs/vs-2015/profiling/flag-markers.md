@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e531d2d2a41cc9ceaa3b6ba39c6d77a166cfae83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193681"
 ---
 # <a name="flag-markers"></a>Marcadores de marca
@@ -38,7 +38,7 @@ Marcadores que muestran categorías
 ## <a name="alerts"></a>Alertas  
  Una alerta es una marca de color rojo que representa un evento de aplicación crítico, como una excepción.  Esta es una alerta:  
   
- ![Marcador de alerta del visualizador de simultaneidad](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![El marcador de alerta del visualizador de simultaneidad](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 Un marcador de alerta  
   
 ## <a name="aggregation-flags"></a>Marcas de agregación  
@@ -49,6 +49,6 @@ Un marcador de alerta
  ![Agregar marcas que muestren cuatro niveles de importancia](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Marcas de agregación por nivel de importancia  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)   
  [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)

@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702380"
 ---
 # <a name="client-side-script-debugging"></a>Depuración de secuencias de comandos en el cliente
@@ -38,7 +38,7 @@ El depurador de Visual Studio proporciona un entorno de depuración completo par
 ## <a name="manually-or-automatically-attaching-to-script"></a>Asociar a script manual o automáticamente  
  Para empezar a depurar el script en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], el depurador debe asociarse al script que se desea depurar. Esto se puede realizar manual o automáticamente.  
   
- Puede establecer una asociación manualmente utilizando la interfaz del depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para elegir un proceso de script en ejecución al que desee asociarse. Para obtener más información, vea [Cómo: Asociación a script](../debugger/how-to-attach-to-script.md).  
+ Puede establecer una asociación manualmente utilizando la interfaz del depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para elegir un proceso de script en ejecución al que desee asociarse. Para obtener más información, consulta [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
   
  El depurador se asocia automáticamente al script cuando se produce una de las siguientes situaciones:  
   
@@ -62,9 +62,9 @@ El depurador de Visual Studio proporciona un entorno de depuración completo par
   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
-## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+## <a name="see-also"></a>Consulte también  
+ [Depuración de aplicaciones ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitaciones de la depuración de scripts](../debugger/limitations-on-script-debugging.md)   
  [Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
- [Ventana Inmediato](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Ventana inmediato](../ide/reference/immediate-window.md)   
+ [Información general sobre la depuración y el seguimiento de aplicaciones AJAX](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
