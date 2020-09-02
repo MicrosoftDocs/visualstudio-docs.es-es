@@ -1,5 +1,5 @@
 ---
-title: Proyectos Web | Documentos de Microsoft
+title: Proyectos Web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,24 +11,24 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f2994c219dd1aadf7f5b9bc833eb7867baede9a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144346"
 ---
 # <a name="web-projects"></a>Proyectos web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un sistema de proyectos Web es un sistema de proyecto que crea proyectos Web. Los proyectos Web a su vez crean aplicaciones Web. Puede programar una página Web mediante lenguajes de programación tradicionales, tales como [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)], para recopilar y procesar información de un usuario, almacenarlo en una base de datos y así sucesivamente. Las páginas Web con código asociado se denominan inteligentes páginas Web.  
+Un sistema de proyectos web es un sistema de proyectos que crea proyectos Web. Los proyectos web a su vez crean aplicaciones Web. Puede programar una página web mediante lenguajes de programación tradicionales, como [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] , para recopilar y procesar información de un usuario, almacenarla en una base de datos, etc. Las páginas web con código asociado se denominan páginas web inteligentes.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Conceptos básicos](../../extensibility/internals/web-project-essentials.md)  
- Presenta los elementos importantes [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyectos Web.  
+ [Essentials](../../extensibility/internals/web-project-essentials.md)  
+ Presenta los elementos importantes de los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyectos Web.  
   
- [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)  
- Presenta información general de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyectos de sitios Web. Un proyecto de sitio Web genera un archivo ejecutable para cada página Web inteligente. Se generan archivos ejecutables adicionales de los archivos de código fuente en la carpeta /bin.  
+ [Compatibilidad del sitio web](../../extensibility/internals/web-site-support.md)  
+ Presenta una introducción a los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyectos de sitios Web. Un proyecto de sitio web genera un archivo ejecutable para cada página web inteligente. Los archivos ejecutables adicionales se generan a partir de los archivos de código fuente en la carpeta/App_Code.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Proyectos](../../extensibility/internals/projects.md)  
- Describe cómo extender el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sistema de proyectos.
+ Describe cómo extender el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sistema del proyecto.

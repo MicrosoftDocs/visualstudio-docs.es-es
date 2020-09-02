@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198360"
 ---
 # <a name="span-class"></a>span (Clase)
@@ -35,7 +35,7 @@ class span;
   
 ### <a name="public-constructors"></a>Constructores públicos  
   
-|nombre|DESCRIPCIÓN|  
+|NOMBRE|Descripción|  
 |----------|-----------------|  
 |[span::span (Constructor)](../profiling/span-span-constructor.md)|Inicializa una nueva instancia de la clase `span`.|  
 |[span::~span (Destructor)](../profiling/span-tilde-span-destructor.md)|Destruye el objeto de `span` y libera sus recursos.|  
@@ -46,7 +46,7 @@ class span;
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres:** Concurrency::diagnostic  
+ **Espacio de nombres**: Concurrency::diagnostic  
   
-## <a name="see-also"></a>Otras referencias  
- [diagnostic (Espacio de nombres)](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Consulte también  
+ [Espacio de nombres de diagnóstico](../profiling/diagnostic-namespace.md)

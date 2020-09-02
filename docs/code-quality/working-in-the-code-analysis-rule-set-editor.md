@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893312"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjuntos de reglas de análisis de código
@@ -29,7 +29,7 @@ En la tabla siguiente se muestran las opciones de gravedad:
 |Error|Genera un error en el **lista de errores** y también en el momento de la compilación.|
 |Información|Genera un mensaje en el **lista de errores**.|
 |Hidden|La infracción no es visible para el usuario. No obstante, el IDE recibe una notificación de la infracción.|
-|None|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
+|Ninguno|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
 
 El editor muestra las reglas en una estructura de árbol que agrupa las reglas por un campo de conjunto de reglas que especifique. Para agregar o quitar reglas de un conjunto de reglas, realice uno o varios de los pasos siguientes:
 
@@ -71,7 +71,7 @@ En la tabla siguiente se describen los campos de un conjunto de reglas:
 |-----------|-----------------|
 |**Id**|El identificador de la regla.|
 |**Categoría**|Además de su pertenencia en conjuntos de reglas, las reglas de análisis de código también se agrupan por categoría. Para obtener más información, vea [advertencias de análisis de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Nombre**|Título de la regla.|
+|**Name**|Título de la regla.|
 |**Espacio de nombres**|Espacio de nombres de la regla.|
 |**Tipo de destino**|Indica si la regla es para el código nativo, administrado o de base de datos.|
 |**Acción**|Acción que se realiza cuando se infringe la regla en una ejecución de análisis de código. Puede editar el campo de **acción** .|

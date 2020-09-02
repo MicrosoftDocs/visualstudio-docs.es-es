@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893351"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analizadores de FxCop en Visual Studio
@@ -22,7 +22,7 @@ Microsoft creó un conjunto de analizadores, denominado [Microsoft. CodeAnalysis
 
 Puede instalar estos analizadores FxCop como un paquete NuGet o como una extensión VSIX en Visual Studio. Para obtener información sobre las ventajas y desventajas de cada uno, vea [paquete NuGet frente a extensión VSIX](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension).
 
-## <a name="nuget-package"></a>Paquete de NuGet
+## <a name="nuget-package"></a>Detección de
 
 ::: moniker range=">=vs-2019"
 

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159230"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Resolver ensamblados en tiempo de diseño
@@ -39,5 +39,5 @@ Cuando se agrega una referencia a un ensamblado mediante la pestaña .NET del cu
   
  El paquete de destino que ahora se distribuye con .NET Framework SDK incluye una lista de todos los ensamblados en tiempo de ejecución de esa versión de Framework, llamada lista de redistribuciones (redist). Esto hace imposible que el sistema de compilación resuelva los tipos con una versión equivocada del ensamblado.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)

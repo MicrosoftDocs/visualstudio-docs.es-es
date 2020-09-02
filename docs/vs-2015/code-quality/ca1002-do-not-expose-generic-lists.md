@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6fcc4ae2a07eb7b1f155d6c65020e2c1a9ddc9f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546853"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: No exponer listas genéricas
@@ -36,7 +36,7 @@ ms.locfileid: "85546853"
  Un tipo contiene un miembro visible externamente que es un <xref:System.Collections.Generic.List%601?displayProperty=fullName> tipo, devuelve un <xref:System.Collections.Generic.List%601?displayProperty=fullName> tipo o cuya firma incluye un <xref:System.Collections.Generic.List%601?displayProperty=fullName> parámetro.
 
 ## <a name="rule-description"></a>Descripción de la regla
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>es una colección genérica diseñada para el rendimiento y no para la herencia. <xref:System.Collections.Generic.List%601?displayProperty=fullName>no contiene miembros virtuales que facilitan el cambio del comportamiento de una clase heredada. Las colecciones genéricas siguientes están diseñadas para la herencia y deben exponerse en lugar de <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> es una colección genérica diseñada para el rendimiento y no para la herencia. <xref:System.Collections.Generic.List%601?displayProperty=fullName> no contiene miembros virtuales que facilitan el cambio del comportamiento de una clase heredada. Las colecciones genéricas siguientes están diseñadas para la herencia y deben exponerse en lugar de <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 

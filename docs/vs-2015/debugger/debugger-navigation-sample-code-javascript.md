@@ -1,5 +1,5 @@
 ---
-title: Depurador de código de ejemplo de navegación (JavaScript) | Documentos de Microsoft
+title: Código de ejemplo de navegación del depurador (JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6102fd8eace3db19e44a0214ce7ce98278b53eea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198208"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>Código de ejemplo de navegación del depurador (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El código de este tema es el archivo de ejemplo para el [controlar la ejecución en una sesión de depuración (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) tema.  
+El código de este tema es el archivo de ejemplo para la [ejecución del control en un tema de la sesión de depuración (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) .  
   
-## <a name="defaultjs-sample-code"></a>código de ejemplo default.js  
+## <a name="defaultjs-sample-code"></a>Código de ejemplo de default.js  
   
 ```javascript  
 // For an introduction to the Blank template, see the following documentation:  

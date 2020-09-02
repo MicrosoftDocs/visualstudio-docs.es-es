@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594661"
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
@@ -29,13 +29,13 @@ Las plantillas de texto de Visual Studio proporcionan una manera útil de genera
 - Genere algunos de los archivos de código a partir de plantillas de texto. Para obtener más información, vea [generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) y [¿cuál es la mejor manera de empezar a escribir una plantilla?](#starting).
 
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Generar archivos en tiempo de ejecución, pasar datos a la plantilla
- En tiempo de ejecución, mi aplicación genera archivos de texto, como informes, que contienen una mezcla de texto y datos estándar. Deseo evitar escribir cientos de instrucciones de `write`.
+ En tiempo de ejecución, mi aplicación genera archivos de texto, como informes, que contienen una mezcla de texto y datos estándar. Deseo evitar escribir cientos de `write` instrucciones.
 
 - Agregue una plantilla de texto en tiempo de ejecución al proyecto. Esta plantilla crea una clase en el código, en la que se pueden crear instancias y usar para generar texto. Puede pasar datos a él en los parámetros del constructor. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 - Si desea generar a partir de plantillas que solo están disponibles en tiempo de ejecución, puede usar plantillas de texto estándar. Si está escribiendo una extensión de Visual Studio, puede invocar el servicio de plantillas de texto. Para obtener más información, consulte [invocar la transformación de texto en una extensión de vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). En otros contextos, puede usar el motor de plantillas de texto. Para obtener más información, vea <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Use la Directiva \<#@parameter# > para pasar parámetros a estas plantillas. Para obtener más información, consulte [la Directiva de parámetros T4](../modeling/t4-parameter-directive.md).
+     Use la \<#@parameter#> Directiva para pasar parámetros a estas plantillas. Para obtener más información, consulte [la Directiva de parámetros T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Leer otro archivo de proyecto de una plantilla
  Para leer un archivo del mismo proyecto de Visual Studio que la plantilla:
@@ -48,7 +48,7 @@ Las plantillas de texto de Visual Studio proporcionan una manera útil de genera
 
 Si los métodos ya existen, por ejemplo, en las clases de .NET:
 
-- Use la Directiva \<#@assembly# > para cargar el ensamblado y use \<#@import# > para establecer el contexto del espacio de nombres. Para obtener más información, vea [Directiva de importación T4](../modeling/t4-import-directive.md).
+- Use la \<#@assembly#> Directiva para cargar el ensamblado y use \<#@import#> para establecer el contexto del espacio de nombres. Para obtener más información, vea [Directiva de importación T4](../modeling/t4-import-directive.md).
 
    Si usa con frecuencia el mismo conjunto de directivas de ensamblado e importación, considere la posibilidad de escribir un procesador de directivas. En cada plantilla, puede invocar el procesador de directivas, que puede cargar los ensamblados y los archivos del modelo y establecer el contexto del espacio de nombres. Para obtener más información, vea [crear procesadores de directivas de plantillas de texto T4 personalizadas](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
@@ -56,13 +56,13 @@ Si va a escribir los métodos usted mismo:
 
 - Si está escribiendo una plantilla de texto en tiempo de ejecución, escriba una definición de clase parcial que tenga el mismo nombre que la plantilla de texto en tiempo de ejecución. Agregue los métodos adicionales a esta clase.
 
-- Escriba un bloque de control de características de clase `<#+ ... #>` en el que pueda declarar métodos, propiedades y clases privadas. Cuando se compila la plantilla de texto, se transforma en una clase. Los bloques de control estándar `<#...#>` y el texto se transforman en un único método, y los bloques de características de clase se insertan como miembros independientes. Para obtener más información, vea [bloques de control de plantillas de texto](../modeling/text-template-control-blocks.md).
+- Escriba un bloque `<#+ ... #>` de control de características de clase en el que pueda declarar métodos, propiedades y clases privadas. Cuando se compila la plantilla de texto, se transforma en una clase. Los bloques de control estándar `<#...#>` y el texto se transforman en un único método, y los bloques de características de clase se insertan como miembros independientes. Para obtener más información, vea [bloques de control de plantillas de texto](../modeling/text-template-control-blocks.md).
 
    Los métodos definidos como características de clase también pueden incluir bloques de texto incrustados.
 
-   Considere la posibilidad de colocar características de clase en un archivo independiente que puede `<#@include#>` en uno o varios archivos de plantilla.
+   Considere la posibilidad de colocar características de clase en un archivo independiente que puede incluir `<#@include#>` en uno o varios archivos de plantilla.
 
-- Escriba los métodos en un ensamblado independiente (biblioteca de clases) y llámelos desde la plantilla. Use la Directiva `<#@assembly#>` para cargar el ensamblado y `<#@import#>` para establecer el contexto del espacio de nombres. Tenga en cuenta que, para volver a generar el ensamblado durante la depuración, es posible que tenga que detener y reiniciar Visual Studio. Para obtener más información, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).
+- Escriba los métodos en un ensamblado independiente (biblioteca de clases) y llámelos desde la plantilla. Use la `<#@assembly#>` Directiva para cargar el ensamblado y `<#@import#>` para establecer el contexto del espacio de nombres. Tenga en cuenta que, para volver a generar el ensamblado durante la depuración, es posible que tenga que detener y reiniciar Visual Studio. Para obtener más información, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Generar muchos archivos a partir de un esquema de modelo
  Si suele generar archivos a partir de modelos que tienen el mismo esquema XML o de base de datos:
@@ -78,7 +78,7 @@ Si va a escribir los métodos usted mismo:
      Para obtener más información, vea [Introducción con lenguajes específicos de dominio](../modeling/getting-started-with-domain-specific-languages.md) y [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Obtención de datos de Visual Studio
- Para usar los servicios proporcionados en Visual Studio, establezca el atributo `hostSpecific` y cargue el ensamblado `EnvDTE`. Por ejemplo:
+ Para usar los servicios proporcionados en Visual Studio, establezca el `hostSpecific` atributo y cargue el `EnvDTE` ensamblado. Por ejemplo:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -94,19 +94,19 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Ejecutar plantillas de texto en el proceso de compilación
 
-- Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
+- Para obtener más información, vea [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="more-general-questions"></a>Preguntas más generales
 
-### <a name="starting"></a>¿Cuál es la mejor manera de empezar a escribir una plantilla de texto?
+### <a name="what-is-the-best-way-to-start-writing-a-text-template"></a><a name="starting"></a> ¿Cuál es la mejor manera de empezar a escribir una plantilla de texto?
 
 1. Escriba un ejemplo concreto del archivo generado.
 
-2. Convertirlo en una plantilla de texto insertando la Directiva de `<#@template #>` y las directivas y el código necesarios para cargar el archivo de entrada o el modelo.
+2. Convertirlo en una plantilla de texto insertando la `<#@template #>` Directiva y las directivas y el código necesarios para cargar el archivo de entrada o el modelo.
 
 3. Reemplace progresivamente partes del archivo por bloques de expresiones y de código.
 
-### <a name="what-is-a-model"></a>¿Qué es un "modelo"?
+### <a name="what-is-a-model"></a>¿Qué es un “modelo”?
 
 - La entrada leída por la plantilla. Podría estar en un archivo o en una base de datos. Puede tratarse de XML, de un dibujo de Visio o de un lenguaje específico de dominio (DSL), o de un modelo UML, o de texto sin formato. Podría distribuirse en varios archivos. Normalmente, más de una plantilla Lee un modelo.
 

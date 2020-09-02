@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985624"
 ---
 # <a name="ribbon-designer"></a>Diseñador de la cinta de opciones
@@ -62,7 +62,7 @@ ms.locfileid: "72985624"
 
   Si ya tiene un elemento **cinta (diseñador visual)** de otro proyecto, puede volver a usarlo en el proyecto actual mediante el cuadro de diálogo **Agregar elemento existente** .
 
-## <a name="DesigningRibbonLayout"></a>Diseñar una cinta de opciones
+## <a name="design-a-ribbon"></a><a name="DesigningRibbonLayout"></a> Diseñar una cinta de opciones
  Hay tres maneras de abrir el diseñador de la cinta de opciones:
 
 - En **Explorador de soluciones**, haga doble clic en el archivo de código de la cinta de opciones.
@@ -96,7 +96,7 @@ ms.locfileid: "72985624"
 
    No se pueden arrastrar controles de una pestaña a otra en la cinta de opciones. Si desea trasladar un control a otra pestaña, debe usar el comando **cortar** para quitar el control de una pestaña y, a continuación, pegar el control en otra pestaña. Si corta el control y lo pega, el controlador de eventos deja de funcionar. Puede volver a conectar el controlador de eventos en la ventana **propiedades** . Para obtener más información, vea [ventana Propiedades](../ide/reference/properties-window.md).
 
-### <a name="AddTabToRibbon"></a>Agregar pestañas personalizadas a la cinta de opciones
+### <a name="add-custom-tabs-to-the-ribbon"></a><a name="AddTabToRibbon"></a> Agregar pestañas personalizadas a la cinta de opciones
  Hay tres maneras de agregar una pestaña personalizada a la cinta de opciones:
 
 - Agregue una pestaña desde el **cuadro de herramientas**.
@@ -130,79 +130,79 @@ ms.locfileid: "72985624"
 
  Para obtener más información sobre cómo personalizar una pestaña integrada, consulte [Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md).
 
-### <a name="AddGroupsToTab"></a>Agregar grupos a una pestaña
+### <a name="add-groups-to-a-tab"></a><a name="AddGroupsToTab"></a> Agregar grupos a una pestaña
  Los grupos organizan lógicamente los controles en la cinta de opciones. Agregar grupos a pestañas. Agregue todos los demás controles al grupo.
 
-### <a name="AddControlsToGroups"></a>Agregar controles a grupos
+### <a name="add-controls-to-groups"></a><a name="AddControlsToGroups"></a> Agregar controles a grupos
  Agregue uno o varios controles a un grupo. En la tabla siguiente se describe cada control.
 
 |Control|Descripción|
 |-------------|-----------------|
 |**Box**|Contenedor que organiza los controles de un grupo. Puede agregar cualquier control a un cuadro excepto un separador, un grupo o una pestaña. Un cuadro puede ser horizontal o vertical.|
-|**Button**|Un botón que inicia una acción. Puede Agregar un botón a un grupo, un grupo de botones, una lista desplegable, una galería, un menú o un botón de expansión.|
+|**Botón**|Un botón que inicia una acción. Puede Agregar un botón a un grupo, un grupo de botones, una lista desplegable, una galería, un menú o un botón de expansión.|
 |**ButtonGroup**|Un grupo que contiene uno o varios botones, botones de alternancia, menús, botones de expansión y galerías. Puede Agregar un grupo de botones a un grupo o un menú.|
 |**CheckBox**|Cuadro que se selecciona o se desactiva para activar o desactivar una opción.|
-|**ComboBox**|Cuadro de edición con un cuadro de lista asociado. Los usuarios pueden escribir o seleccionar su elección. El cuadro muestra la selección actual. Utilice la propiedad <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> para agregar y quitar elementos en tiempo de ejecución antes o después de cargar la cinta de opciones en la aplicación de Office.|
-|**Plegable**|Una lista de elementos que el usuario puede seleccionar. El usuario no puede escribir un nuevo elemento en una lista desplegable.<br /><br /> Use la propiedad <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> para agregar elementos a la lista. Puede Agregar y quitar elementos en tiempo de ejecución.<br /><br /> Use la propiedad <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> para agregar botones a la lista. Sin embargo, no puede agregar ni quitar botones en tiempo de ejecución después de cargar la cinta de opciones en la aplicación de Office.|
+|**ComboBox**|Cuadro de edición con un cuadro de lista asociado. Los usuarios pueden escribir o seleccionar su elección. El cuadro muestra la selección actual. Utilice la <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> propiedad para agregar y quitar elementos en tiempo de ejecución antes o después de cargar la cinta de opciones en la aplicación de Office.|
+|**DropDown**|Una lista de elementos que el usuario puede seleccionar. El usuario no puede escribir un nuevo elemento en una lista desplegable.<br /><br /> Utilice la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propiedad para agregar elementos a la lista. Puede Agregar y quitar elementos en tiempo de ejecución.<br /><br /> Utilice la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propiedad para agregar botones a la lista. Sin embargo, no puede agregar ni quitar botones en tiempo de ejecución después de cargar la cinta de opciones en la aplicación de Office.|
 |**EditBox**|Cuadro en el que el usuario puede escribir texto.|
-|**Galería**|Menú que presenta una matriz o cuadrícula de opciones visuales desde las que los usuarios pueden seleccionar. Puede controlar el diseño de las selecciones en el menú. Use las propiedades <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> y <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> para especificar el número de filas y columnas que mostrarán los elementos y botones de la galería.|
-|**Etiqueta**|Texto que puede usar para identificar controles en la cinta de opciones.|
-|**Menu**|Lista desplegable que puede contener cualquiera de los controles siguientes:<br /><br /> -Botón<br />-Casilla<br />-Galería<br />-Menú<br />-Botón de expansión<br />-Botón de alternancia<br />-Separador<br /><br /> Para agregar un control a un menú en el diseñador de la cinta de opciones, haga clic en la flecha hacia abajo del menú para exponer la superficie de diseño del menú. A continuación, puede arrastrar los controles de la cinta de opciones desde el **cuadro de herramientas** hasta el menú. Para organizar los controles, arrástrelos hasta las posiciones deseadas.<br /><br /> Para agregar controles al <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> después de cargar la cinta de opciones en la aplicación de Office, debe establecer la propiedad <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> en **true** antes de que se cargue la cinta de opciones. Para obtener información sobre cómo hacerlo, vea [información general sobre el modelo de objetos de la cinta](../vsto/ribbon-object-model-overview.md).|
-|**Separator**|Barra fina utilizada para separar los elementos de una lista. Cuando se agrega a un grupo, la barra es vertical. Cuando se agrega a un menú, la barra es horizontal.|
+|**Galería**|Menú que presenta una matriz o cuadrícula de opciones visuales desde las que los usuarios pueden seleccionar. Puede controlar el diseño de las selecciones en el menú. Use las <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propiedades y <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> para especificar el número de filas y columnas que mostrarán los elementos y botones de la galería.|
+|**Label**|Texto que puede usar para identificar controles en la cinta de opciones.|
+|**Menú**|Lista desplegable que puede contener cualquiera de los controles siguientes:<br /><br /> -Botón<br />-Casilla<br />-Galería<br />-Menú<br />-Botón de expansión<br />-Botón de alternancia<br />-Separador<br /><br /> Para agregar un control a un menú en el diseñador de la cinta de opciones, haga clic en la flecha hacia abajo del menú para exponer la superficie de diseño del menú. A continuación, puede arrastrar los controles de la cinta de opciones desde el **cuadro de herramientas** hasta el menú. Para organizar los controles, arrástrelos hasta las posiciones deseadas.<br /><br /> Para agregar controles a <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> después de cargar la cinta de opciones en la aplicación de Office, debe establecer la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propiedad en **true** antes de que se cargue la cinta de opciones. Para obtener información sobre cómo hacerlo, vea [información general sobre el modelo de objetos de la cinta](../vsto/ribbon-object-model-overview.md).|
+|**Separador**|Barra fina utilizada para separar los elementos de una lista. Cuando se agrega a un grupo, la barra es vertical. Cuando se agrega a un menú, la barra es horizontal.|
 |**SplitButton**|Botón con un menú asociado. Un botón de expansión puede contener cualquiera de los controles siguientes:<br /><br /> -Botón<br />-Casilla<br />-Galería<br />-Menú<br />-Botón de expansión<br />-Botón de alternancia<br />-Separador<br /><br /> Al igual que el menú, el botón de expansión tiene su propia superficie de diseño. Sin embargo, a diferencia de un menú, solo puede actualizar los elementos de un botón de expansión antes de que se cargue la cinta de opciones en la aplicación de Office. Para obtener información sobre cómo actualizar los elementos de un botón de expansión, vea [información general sobre el modelo de objetos de la cinta](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Botón que aparece presionado o no presionado.|
 
-## <a name="HandleEventsSetProperties"></a>Controlar eventos y establecer propiedades
+## <a name="handle-events-and-setting-properties"></a><a name="HandleEventsSetProperties"></a> Controlar eventos y establecer propiedades
  El diseñador de la cinta de opciones le permite establecer las propiedades del control en tiempo de diseño mediante la ventana **propiedades** . Además, la cinta de opciones expone un modelo de objetos fuertemente tipados que se puede usar para obtener y establecer las propiedades de los controles de la cinta de opciones en tiempo de ejecución.
 
  Puede hacer doble clic en cualquier control del diseñador para abrir un controlador de eventos para el evento predeterminado del control. Puede crear controladores de eventos para todos los demás eventos de control mediante la ventana **propiedades** .
 
- Los eventos y las propiedades de la cinta de opciones se encuentran en el espacio de nombres <xref:Microsoft.Office.Tools.Ribbon>. El elemento **cinta (diseñador visual)** agrega automáticamente una referencia a este ensamblado en el proyecto e inserta la instrucción **using** o **Imports** correspondiente en la parte superior del archivo de código de la cinta de opciones.
+ Los eventos y las propiedades de la cinta de opciones se encuentran en el <xref:Microsoft.Office.Tools.Ribbon> espacio de nombres. El elemento **cinta (diseñador visual)** agrega automáticamente una referencia a este ensamblado en el proyecto e inserta la instrucción **using** o **Imports** correspondiente en la parte superior del archivo de código de la cinta de opciones.
 
  Para obtener información sobre cómo controlar los eventos de la cinta y establecer las propiedades de los controles de la cinta de opciones en tiempo de ejecución, vea [información general sobre el modelo de objetos Ribbon](../vsto/ribbon-object-model-overview.md).
 
-## <a name="CustomizingMicrosoftOfficeButton"></a>Personalizar la vista backstage
+## <a name="customize-backstage-view"></a><a name="CustomizingMicrosoftOfficeButton"></a> Personalizar la vista backstage
  Puede usar el diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en la pestaña **archivo** . Este menú se denomina vista backstage.
 
- No se pueden colocar controles antes o después de los controles integrados mediante el diseñador de la cinta de opciones. Un control integrado es un control que ya aparece en la vista backstage. Si desea colocar los controles antes o después de los controles integrados, debe usar el XML de la cinta de opciones. Para obtener más información acerca de **la cinta (XML)** , vea [XML de la cinta](../vsto/ribbon-xml.md). Para obtener más información sobre cómo personalizar la vista backstage, vea [Introducción a la vista backstage de office 2010 para desarrolladores](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) y [Personalización de la vista backstage de Office 2010 para desarrolladores](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
+ No se pueden colocar controles antes o después de los controles integrados mediante el diseñador de la cinta de opciones. Un control integrado es un control que ya aparece en la vista backstage. Si desea colocar los controles antes o después de los controles integrados, debe usar el XML de la cinta de opciones. Para obtener más información acerca de **la cinta (XML)**, vea [XML de la cinta](../vsto/ribbon-xml.md). Para obtener más información sobre cómo personalizar la vista backstage, vea [Introducción a la vista backstage de office 2010 para desarrolladores](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) y [Personalización de la vista backstage de Office 2010 para desarrolladores](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon_2010](../vsto/includes/appliesto-ribbon-2010-md.md)]
 
  Para obtener información sobre cómo agregar controles a la vista backstage, vea [Cómo: agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
-## <a name="Accessibility"></a>Accesibilidad en el diseñador de la cinta de opciones
+## <a name="accessibility-in-the-ribbon-designer"></a><a name="Accessibility"></a> Accesibilidad en el diseñador de la cinta de opciones
  Puede usar métodos abreviados de teclado para trasladar controles en el diseñador de la cinta de opciones. Algunos métodos abreviados de teclado se aplican a todos los controles y algunos solo se aplican a los controles que tienen menús.
 
  En la tabla siguiente se muestran los métodos abreviados de teclado que se aplican a todos los controles.
 
 |Acción|Método abreviado de teclado|
 |------------|-----------------------|
-|Mueva un control antes del control anterior en la lista.|**Ctrl**+**arriba**<br /><br /> **Ctrl**+**izquierda**|
-|Mueve un control después del siguiente control de la lista.|**Ctrl**+**abajo**<br /><br /> **Ctrl**+**derecha**|
-|Mueva la selección de un control a otro en el mismo grupo. En un panel desplegable, desplazarse entre el control primario y los controles del panel desplegable.|**Los**<br /><br /> **Vertical**|
-|Recorrer en iteración hacia delante todos los controles.|**Tabulación**|
+|Mueva un control antes del control anterior en la lista.|**Ctrl** + **Subir**<br /><br /> **Ctrl** + **Izquierda**|
+|Mueve un control después del siguiente control de la lista.|**Ctrl** + **Abajo**<br /><br /> **Ctrl** + **Derecha**|
+|Mueva la selección de un control a otro en el mismo grupo. En un panel desplegable, desplazarse entre el control primario y los controles del panel desplegable.|**Up** (Arriba)<br /><br /> **Bajar**|
+|Recorrer en iteración hacia delante todos los controles.|**Pestaña**|
 |Iterar hacia atrás a través de todos los controles.|**Mayús**+**Tabulador**|
 |Eliminar el control o conjunto de controles seleccionado.|**Eliminar**|
-|Copiar los controles seleccionados.|**Ctrl**+**C**|
-|Cortar los controles seleccionados.|**Ctrl**+**X**|
-|Pegar controles del portapapeles.|**Ctrl**+**V**|
-|Seleccione el **cuadro de herramientas**.|**Ctrl**+**Alt**+**X**|
+|Copiar los controles seleccionados.|**Ctrl** + **C**|
+|Cortar los controles seleccionados.|**Ctrl** + **X**|
+|Pegar controles del portapapeles.|**Ctrl** + **V**|
+|Seleccione el **cuadro de herramientas**.|**Ctrl** + **Alt** + **X**|
 |Seleccione el componente primario.|**Esc**|
 
- En la tabla siguiente se muestran los métodos abreviados de teclado que se aplican solo al menú Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>y <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>.
+ Los métodos abreviados de teclado que se aplican solo al menú Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> y <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> se muestran en la tabla siguiente.
 
 |Acción|Método abreviado de teclado|
 |------------|-----------------------|
-|Seleccione el control primario si el panel desplegable está abierto y hay un control seleccionado en el panel desplegable.|**Izquierda**|
-|Cierre el panel desplegable si el panel desplegable está abierto y está seleccionado control primario.|**Izquierda**|
-|Abra el panel desplegable.|**Derecha**|
-|Seleccione el primer control del panel desplegable si el panel desplegable está abierto.|**Derecha**|
+|Seleccione el control primario si el panel desplegable está abierto y hay un control seleccionado en el panel desplegable.|**Left**|
+|Cierre el panel desplegable si el panel desplegable está abierto y está seleccionado control primario.|**Left**|
+|Abra el panel desplegable.|**Right**|
+|Seleccione el primer control del panel desplegable si el panel desplegable está abierto.|**Right**|
 |Cerrar un panel desplegable.|**Esc**|
 
 ## <a name="see-also"></a>Vea también
 
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
-- [XML de la cinta](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
 - [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)

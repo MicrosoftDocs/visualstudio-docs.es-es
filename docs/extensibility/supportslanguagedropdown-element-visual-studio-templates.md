@@ -1,5 +1,5 @@
 ---
-title: Elemento SupportsLanguageDropDown (Plantillas de Visual Studio) Microsoft Docs
+title: SupportsLanguageDropDown ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1230b493fe746a272cf4ca4cffe9d197afd8ba1b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699468"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio)
-Especifica si la plantilla de elemento web es idéntica para varios idiomas y si la opción **Idioma** está habilitada en el cuadro de diálogo **Agregar nuevo elemento.**
+Especifica si la plantilla de elementos Web es idéntica para varios idiomas y si la opción de **idioma** está habilitada en el cuadro de diálogo **Agregar nuevo elemento** .
 
- \<VSTemplate \<> TemplateData> \<SupportsLanguageDropDown>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsLanguageDropDown>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,17 +51,17 @@ Especifica si la plantilla de elemento web es idéntica para varios idiomas y si
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe `true` `false`ser o , que indica si la opción **Idioma** está disponible en el cuadro de diálogo **Agregar nuevo elemento.**
+ El texto debe ser `true` o `false` , lo que indica si la opción de **idioma** está disponible en el cuadro de diálogo **Agregar nuevo elemento** .
 
 ## <a name="remarks"></a>Observaciones
  `SupportsLanguageDropDown` es un elemento opcional. El valor predeterminado es `false`.
 
- El `SupportsLanguageDropDown` elemento solo está disponible para plantillas de elementos web.
+ El `SupportsLanguageDropDown` elemento solo está disponible para las plantillas de elementos Web.
 
- Si el valor de este `true`elemento se establece en , la plantilla de elemento es idéntica para todos los lenguajes de programación y la opción **Idioma** está habilitada en el cuadro de diálogo **Agregar nuevo elemento.** Esta opción le permite elegir el lenguaje de programación del nuevo elemento que desea crear a partir de la plantilla.
+ Si el valor de este elemento está establecido en `true` , la plantilla de elemento es idéntica para todos los lenguajes de programación y la opción **Language** está habilitada en el cuadro de diálogo **Agregar nuevo elemento** . Esta opción permite elegir el lenguaje de programación del nuevo elemento que se va a crear a partir de la plantilla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se especifica que se muestre la opción desplegable **Idioma.**
+ En el ejemplo siguiente se especifica que se muestra la opción de lista desplegable de **idioma** .
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -86,4 +87,4 @@ Especifica si la plantilla de elemento web es idéntica para varios idiomas y si
 
 ## <a name="see-also"></a>Vea también
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+- [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

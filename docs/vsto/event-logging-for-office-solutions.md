@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951949"
 ---
 # <a name="event-logging-for-office-solutions"></a>Registro de eventos para soluciones de Office
@@ -32,9 +32,9 @@ ms.locfileid: "62951949"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Para leer el registro de eventos en Windows Server 2003 y Windows XP
 
-1. En el Panel de control, abra **Herramientas administrativas**.
+1. En el panel de control, Abra **herramientas administrativas**.
 
-2. Abra el **Visor de eventos**.
+2. Inicie **visor de eventos**.
 
 3. En la lista de registros de eventos, seleccione **Aplicación**.
 
@@ -48,15 +48,15 @@ ms.locfileid: "62951949"
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Para leer el registro de eventos en Windows 7, Windows Vista y Windows Server 2008
 
-1. En el Panel de control, abra **Herramientas administrativas**.
+1. En el panel de control, Abra **herramientas administrativas**.
 
-2. Abra el **Visor de eventos**.
+2. Inicie **visor de eventos**.
 
 3. Expanda **Registros de Windows**.
 
 4. En la lista de registros de eventos, seleccione **Aplicación**.
 
-5. En el menú **Acción** , haga clic en **Filtrar registro actual**.
+5. En el menú **Acción**, haga clic en **Filtrar registro actual**.
 
 6. En la lista **Origen del evento** , seleccione **VSTO 4.0**.
 
@@ -74,12 +74,12 @@ ms.locfileid: "62951949"
 
   Una vez desinstalada la solución de Office, los mensajes de excepción permanecen en el registro de eventos.
 
-  Para mostrar o registrar los mensajes de excepción cuando se ejecuta una solución de Office, consulte [proyectos de Office depurar](../vsto/debugging-office-projects.md) y [proyectos de Office depurar](../vsto/debugging-office-projects.md).
+  Para mostrar o registrar mensajes de excepción cuando se está ejecutando una solución de Office, vea Depurar [proyectos de Office](../vsto/debugging-office-projects.md) y [depurar proyectos de Office](../vsto/debugging-office-projects.md).
 
 ### <a name="localization"></a>Localización
  El lenguaje del mensaje de excepción se determina según el idioma de Visual Studio Tools para Office Runtime. Por ejemplo, si el equipo del usuario final tiene instalado el paquete de idioma japonés, el mensaje de excepción se escribe en el registro de eventos en japonés.
 
-## <a name="disable-the-event-logger"></a>Deshabilitar al registrador de eventos
+## <a name="disable-the-event-logger"></a>Deshabilitar el registrador de eventos
  De forma predeterminada, el registrador de eventos está habilitado cuando se instalan o desinstalan las soluciones de Office. Puede deshabilitar el registrador de eventos estableciendo la variable de entorno VSTO_EVENTLOGDISABLED en "1" (uno).
 
 ### <a name="to-disable-the-event-log"></a>Para deshabilitar el registro de eventos
@@ -98,4 +98,4 @@ ms.locfileid: "62951949"
 
 ## <a name="see-also"></a>Vea también
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
-- [Solución de problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Solucionar problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)

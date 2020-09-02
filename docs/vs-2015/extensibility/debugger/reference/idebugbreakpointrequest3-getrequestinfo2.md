@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3::GetRequestInfo2 | Microsoft Docs
+title: 'IDebugBreakpointRequest3:: GetRequestInfo2 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d01d1b5e3aef83d948f058dfbf5dbdbb4c7cb782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158795"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
@@ -42,18 +42,18 @@ int GetRequestInfo2(
   
 #### <a name="parameters"></a>Parámetros  
  `dwFields`  
- [in] Una combinación de marcas de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeración que determina qué campos de `pBPRequestInfo` deben rellenarse.  
+ de Combinación de marcas de la enumeración [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que determinan los campos de que `pBPRequestInfo` se van a rellenar.  
   
  `bBPRequestInfo`  
- [out] El [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructura que deben rellenarse.  
+ enuncia Estructura de [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) que se va a rellenar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Puede encontrar más información en esta solicitud que se devuelve desde el [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) método.  
+ Hay más información en esta solicitud que la que devuelve el método [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)   
  [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   

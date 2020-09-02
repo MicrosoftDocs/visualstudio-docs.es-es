@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985612"
 ---
 # <a name="ribbon-overview"></a>Información general sobre la cinta
@@ -103,12 +103,12 @@ ms.locfileid: "72985612"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>Seleccionar las cintas que se van a mostrar en tiempo de ejecución
  Dado que un proyecto puede contener más de una cinta, puede seleccionar qué cinta se mostrará en tiempo de ejecución.
 
- Para seleccionar la cinta que se va a mostrar en tiempo de ejecución, invalide el método `CreateRibbonExtensibilityObject` en la clase `ThisAddin`, `ThisWorkbook`o `ThisDocument` del proyecto y devuelva la cinta que desea mostrar. En el ejemplo siguiente se comprueba el valor de un campo denominado `myCondition` y se devuelve la cinta de opciones adecuada.
+ Para seleccionar la cinta que se va a mostrar en tiempo de ejecución, invalide el `CreateRibbonExtensibilityObject` método en la `ThisAddin` `ThisWorkbook` clase, o `ThisDocument` del proyecto y devuelva la cinta que desea mostrar. En el ejemplo siguiente se comprueba el valor de un campo denominado `myCondition` y se devuelve la cinta de opciones adecuada.
 
 > [!NOTE]
 > La sintaxis usada en este ejemplo devuelve una cinta de opciones que se creó mediante el elemento **cinta (diseñador visual)** . La sintaxis para devolver una cinta de opciones que se crea mediante un elemento de **cinta (XML)** es ligeramente diferente. Para obtener más información sobre cómo devolver un elemento **cinta (XML)** , vea [XML de la cinta](../vsto/ribbon-xml.md)de opciones.
 
- Agregue el código siguiente:
+ Agregue el siguiente código:
 
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs#1)]
@@ -130,5 +130,5 @@ ms.locfileid: "72985612"
 |[Cómo: agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Muestra cómo agregar controles al menú que se abre al hacer clic en el **archivo**.|
 |[Cómo agregar un selector de cuadro de diálogo a un grupo de la cinta de opciones](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Muestra cómo agregar un selector de cuadro de diálogo a cualquier grupo en una cinta de opciones.|
 |[Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Muestra cómo personalizar la cinta de opciones de modo avanzado mediante la exportación de la cinta de opciones del diseñador al XML de la cinta.|
-|[XML de la cinta](../vsto/ribbon-xml.md)|Explica cómo puede personalizar una cinta de opciones mediante XML de la cinta de opciones.|
+|[Ribbon XML](../vsto/ribbon-xml.md)|Explica cómo puede personalizar una cinta de opciones mediante XML de la cinta de opciones.|
 |[Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Muestra cómo crear una pestaña personalizada de la cinta de opciones mediante el elemento **cinta (XML)** .|

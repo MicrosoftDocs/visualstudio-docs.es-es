@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1d3b981002ebefb1644baa580b7f9ecc181cc16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198524"
 ---
-# <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
+# <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera la parte de la sección de la dirección de memoria donde comienza un bloque.  
@@ -35,7 +35,7 @@ HRESULT get_addressSection ( 
   
 #### <a name="parameters"></a>Parámetros  
  pRetVal  
- [out] Devuelve la parte de la sección de la dirección de memoria donde comienza un bloque.  
+ enuncia Devuelve la parte de la sección de la dirección de memoria donde comienza un bloque.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
@@ -48,6 +48,6 @@ DWORD seg;
 pLine->get_addressSection( &seg );  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)

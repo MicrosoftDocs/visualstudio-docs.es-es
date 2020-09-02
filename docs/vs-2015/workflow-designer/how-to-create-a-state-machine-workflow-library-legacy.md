@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3cff5d6aaa28915524b7699affdf41d3bebef4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663379"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Cómo: Crear un biblioteca de flujos de trabajo de equipo de estado (Heredado)
@@ -27,7 +27,7 @@ Siga estos pasos para crear un proyecto de biblioteca de flujos de trabajo de eq
 
 1. Inicie Visual Studio.
 
-2. En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -36,7 +36,7 @@ Siga estos pasos para crear un proyecto de biblioteca de flujos de trabajo de eq
     > [!NOTE]
     > La opción predeterminada en [!INCLUDE[vs2010](../includes/vs2010-md.md)] es **.NET Framework 4**. Esta opción se usa para crear aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] y no usa el diseñador heredado.
 
-4. En el **Panel tipos de proyecto** , seleccione C# visual o Visual Basic (en **otros lenguajes**) y, a continuación, seleccione **flujo de trabajo**.
+4. En el panel **tipos de proyecto** , seleccione Visual C# o Visual Basic (en **otros lenguajes**) y, a continuación, seleccione **flujo de trabajo**.
 
 5. En el panel **plantillas** , seleccione **biblioteca de flujos de trabajo de equipo de estado**.
 
@@ -46,7 +46,7 @@ Siga estos pasos para crear un proyecto de biblioteca de flujos de trabajo de eq
 
      Si desea crear un directorio de soluciones para el proyecto, active la casilla **Crear directorio para la solución** y escriba un nombre en el cuadro Nombre de la **solución** .
 
-8. Haga clic en **Aceptar**.
+8. Haga clic en **OK**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Creación de flujos de trabajo de [equipo de estado](https://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d) proyectos de [flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md)

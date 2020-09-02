@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 76667c04370c371eefe40878b950c3f6cf24aabd
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157616"
 ---
-  **Se aplica a:** La información de este tema se aplica a VSTO agregar\-en proyectos para PowerPoint. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Se aplica a:** La información de este tema se aplica a los proyectos de complemento de VSTO \- para PowerPoint. Para obtener más información, consulte [características disponibles por aplicación y tipo de proyecto de Office](../../vsto/features-available-by-office-application-and-project-type.md).

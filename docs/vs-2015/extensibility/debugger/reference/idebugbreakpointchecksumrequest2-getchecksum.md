@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Documentos de Microsoft
+title: 'IDebugBreakpointChecksumRequest2:: getChecksum (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bff00b5cbe0d59d3c7515d0a384746cd9303097c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158833"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera la suma de comprobación de documento para una solicitud de punto de interrupción según el identificador único del algoritmo de suma de comprobación para usar.  
+Recupera la suma de comprobación del documento para una solicitud de punto de interrupción dado el identificador único del algoritmo de suma de comprobación que se va a usar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,16 +40,16 @@ public int GetChecksum(
   
 #### <a name="parameters"></a>Parámetros  
  `guidAlgorithm`  
- [in] Identificador único del algoritmo de suma de comprobación.  
+ de Identificador único del algoritmo de suma de comprobación.  
   
  `pChecksumData`  
- [out] Suma de comprobación de documento para la solicitud de punto de interrupción.  
+ enuncia Suma de comprobación de documento para la solicitud de punto de interrupción.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra una función que comprueba si la suma de comprobación de un documento, que se va a enlazar, coincide con uno de la interfaz de usuario.  
+ En el ejemplo siguiente se muestra una función que comprueba si la suma de comprobación de un documento, que está a punto de enlazarse, coincide con una de la interfaz de usuario.  
   
 ```cpp#  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
@@ -103,5 +103,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

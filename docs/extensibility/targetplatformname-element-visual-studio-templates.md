@@ -1,5 +1,5 @@
 ---
-title: Elemento TargetPlatformName (Plantillas de Visual Studio) Microsoft Docs
+title: TargetPlatformName (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699265"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName (Elemento, Plantillas de Visual Studio)
@@ -65,5 +65,5 @@ Especifica la plataforma a la que está orientada la plantilla del proyecto. Est
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+- [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
