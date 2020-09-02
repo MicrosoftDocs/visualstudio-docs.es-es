@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543772"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn &gt; (elemento, desarrollo de Office en Visual Studio)
@@ -57,16 +57,16 @@ ms.locfileid: "85543772"
  El elemento `addin` tiene los siguientes elementos secundarios.
 
 ### <a name="entrypoints"></a>entryPoints
- Obligatorio. El elemento **entryPoints** se describe en [&#60;elemento entryPoints&#62; &#40;el desarrollo de Office en Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Necesario. El elemento **entryPoints** se describe en [&#60;elemento entryPoints&#62; &#40;el desarrollo de Office en Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
-### <a name="update"></a>actualización
- Obligatorio. El elemento **Update** se describe en [&#60;update&#62; elemento &#40;el desarrollo de Office en Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
+### <a name="update"></a>update
+ Necesario. El elemento **Update** se describe en [&#60;update&#62; elemento &#40;el desarrollo de Office en Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
 
 ### <a name="postactions"></a>postActions
  Opcional. El elemento **Postactions** se describe en [&#60;las acciones de&#62; de elementos &#40;el desarrollo de Office en Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
 
 ### <a name="application"></a>application
- Obligatorio. El elemento **Application** se describe en [&#60;aplicación&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).
+ Necesario. El elemento **Application** se describe en [&#60;aplicación&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento
 
@@ -190,7 +190,7 @@ ms.locfileid: "85543772"
 </vstav3:addIn>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)

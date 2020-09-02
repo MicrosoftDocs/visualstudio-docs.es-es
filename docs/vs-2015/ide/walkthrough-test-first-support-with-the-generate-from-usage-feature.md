@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f40ed5f3070f177d1c914495f78a223364d64ae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662671"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la característica de generación a partir del uso
@@ -67,17 +67,17 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
     > [!NOTE]
     > IntelliSense proporciona ahora dos alternativas para la finalización de instrucciones de IntelliSense: el *modo de finalización* y el *modo de sugerencia*. Use el modo de sugerencia para situaciones en que se usan clases y miembros antes de definirlos. Cuando se abre una ventana de IntelliSense, puede presionar CTRL+ALT+BARRA ESPACIADORA para alternar entre el modo de finalización y el modo de sugerencia. Vea [Using IntelliSense](../ide/using-intellisense.md) para obtener más información. El modo de sugerencia le ayudará cuando escriba `Automobile` en el paso siguiente.
 
-3. Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una nueva instancia de una clase denominada `Automobile`, como se muestra en las siguientes ilustraciones. Aparece un subrayado ondulado que indica un error en tiempo de compilación y aparece una etiqueta inteligente bajo el nombre de tipo. La ubicación exacta de la etiqueta inteligente varía en función de si usa [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)].
+3. Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una nueva instancia de una clase denominada `Automobile`, como se muestra en las siguientes ilustraciones. Aparece un subrayado ondulado que indica un error en tiempo de compilación y aparece una etiqueta inteligente bajo el nombre de tipo. La ubicación exacta de la etiqueta inteligente varía, en función de si usa [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)].
 
      ![Subrayado de etiqueta inteligente en Visual Basic](../ide/media/genclass-underlinevb.png "GenClass_UnderlineVB") Visual Basic
 
-     ![Subrayado de etiqueta&#35; inteligente en C](../ide/media/genclass-underline.png "GenClass_Underline") VisualC#
+     ![Subrayado de etiqueta inteligente en C&#35;](../ide/media/genclass-underline.png "GenClass_Underline") Visual C #
 
 4. Sitúe el puntero del mouse sobre la etiqueta inteligente para ver un mensaje de error que indica que ningún tipo denominado `Automobile` se ha definido todavía. Haga clic en la etiqueta inteligente o presione CTRL +. (CTRL+punto) para abrir el menú contextual Generar a partir del uso, como se muestra en las ilustraciones siguientes.
 
      ![Menú contextual de etiqueta inteligente en Visual Basic](../ide/media/genclass-smartvb.png "GenClass_SmartVB") Visual Basic
 
-     ![Menú contextual de etiqueta inteligente&#35; en C](../ide/media/genclass-smartcs.png "GenClass_SmartCS") VisualC#
+     ![Menú contextual de etiqueta inteligente en C&#35;](../ide/media/genclass-smartcs.png "GenClass_SmartCS") Visual C #
 
 5. Ahora tiene dos opciones. Puede hacer clic en **Generar 'Class Automobile'** para crear un nuevo archivo en el proyecto de prueba y rellenarlo con una clase vacía denominada `Automobile`. Se trata de una forma rápida de crear una nueva clase en un nuevo archivo que tiene los modificadores de acceso predeterminados en el proyecto actual. También puede hacer clic en **Generar nuevo tipo** para abrir el cuadro de diálogo **Generar nuevo tipo** . Esto proporciona opciones que incluyen colocar la clase en un archivo existente y agregar el archivo a otro proyecto.
 
@@ -106,7 +106,7 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
      ![Menú contextual generar propiedad en Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB") Visual Basic
 
-     ![Menú contextual generar propiedad en&#35; C](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") VisualC#
+     ![Menú contextual generar propiedad en C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") Visual C #
 
 ### <a name="to-locate-the-source-code"></a>Para buscar el código fuente
 
@@ -175,5 +175,5 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
      ![Resultados de pruebas superados](../ide/media/testspassed.png "TestsPassed") Resultados de pruebas ventana
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Generar a partir del uso](../misc/generate-from-usage.md) [escribir código](../ide/writing-code-in-the-code-and-text-editor.md) [mediante](../ide/using-intellisense.md) [la prueba unitaria de IntelliSense del código](../test/unit-test-your-code.md)

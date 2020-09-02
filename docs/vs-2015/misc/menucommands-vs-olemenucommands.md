@@ -12,19 +12,19 @@ ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
 ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624451"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands frente a OleMenuCommands
-Puede crear comandos de menú mediante la derivación desde <xref:System.ComponentModel.Design.MenuCommand> o desde <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto y la implementación de los controladores de eventos adecuado. En la mayoría de los casos puede usar <xref:System.ComponentModel.Design.MenuCommand>, como hace la plantilla de proyecto de VSPackage, pero en ocasiones puede que deba usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+Puede crear comandos de menú mediante la derivación de un <xref:System.ComponentModel.Design.MenuCommand> objeto o de uno <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , e implementar los controladores de eventos adecuados. En la mayoría de los casos puede usar <xref:System.ComponentModel.Design.MenuCommand>, como hace la plantilla de proyecto de VSPackage, pero en ocasiones puede que deba usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
  Los comandos que un VSPackage hace que estén disponibles para el IDE deben ser visibles y estar habilitados para que un usuario pueda usarlos. Cuando los comandos se crean en un archivo .vsct usando la plantilla de proyecto del paquete de Visual Studio, son visibles y están habilitados de forma predeterminada. La definición de algunos marcadores de comandos, como `DynamicItemStart`, puede cambiar el comportamiento predeterminado. La visibilidad, el estado habilitado y otras propiedades de un comando también pueden cambiarse en el código en tiempo de ejecución mediante el acceso al objeto <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> asociado con el comando.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
- Para seguir este tutorial, debe instalar el SDK de Visual Studio. Para obtener más información, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
+ Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="template-locations-for-the-visual-studio-package-template"></a>Ubicaciones de plantillas para la plantilla del paquete de Visual Studio  
  Puede encontrar la plantilla de paquete de Visual Studio en el cuadro de diálogo **Nuevo proyecto** en **Visual Basic/Extensibilidad**, **C#/Extensibilidad**u **Otros tipos de proyectos/Extensibilidad**.  
@@ -32,7 +32,7 @@ Puede crear comandos de menú mediante la derivación desde <xref:System.Compone
 ## <a name="creating-a-command"></a>Creación de un comando  
  Todos los comandos, los grupos de comandos, los menús, las barras de herramientas y las ventanas de herramientas se definen en el archivo .vsct. Para obtener más información, consulta [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Si va a crear un VSPackage mediante la plantilla de paquete, seleccione **Comando de menú** para crear un archivo .vsct y definir un comando de menú predeterminado. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Si va a crear un VSPackage mediante la plantilla de paquete, seleccione **Comando de menú** para crear un archivo .vsct y definir un comando de menú predeterminado. Para obtener más información, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 #### <a name="to-add-a-command-to-the-ide"></a>Para agregar un comando al IDE  
   
@@ -49,7 +49,7 @@ Puede crear comandos de menú mediante la derivación desde <xref:System.Compone
    </GuidSymbol>
    ```
       
-    Los atributos `name` de los elementos `GuidSymbol` y `IDSymbol` proporcionan el par GUID:ID para cada nuevo menú, grupo o comando. El valor `guid` representa un conjunto de comandos que se define para el VSPackage. Puede definir varios conjuntos de comandos. Cada par de GUID:ID debe ser único.  
+    Los atributos `name` de los elementos `GuidSymbol` y `IDSymbol` proporcionan el par GUID:ID para cada nuevo menú, grupo o comando. El valor `guid` representa un conjunto de comandos que se define para el VSPackage. Puede definir varios conjuntos de comandos. Cada par GUID:ID debe ser único.  
   
 4. En la sección [Botones](../extensibility/buttons-element.md) , cree un elemento [Button](../extensibility/button-element.md) para definir el comando, como se muestra en el ejemplo siguiente.  
   
@@ -115,9 +115,9 @@ Puede crear comandos de menú mediante la derivación desde <xref:System.Compone
    </CommandPlacements>
    ```
       
-      La creación de varias ubicaciones de comando que tienen los mismos GUID:ID y tienen diferentes objetos primarios hace que un menú aparezca en varias ubicaciones. Para obtener más información, consulte el elemento [CommandPlacements](../extensibility/commandplacements-element.md) .  
+      La creación de varias ubicaciones de comando que tienen los mismos GUID:ID pero diferentes objetos primarios hace que un menú aparezca en varias ubicaciones. Para obtener más información, consulte el elemento [CommandPlacements](../extensibility/commandplacements-element.md) .  
   
-    Para obtener más información acerca de los grupos de comandos y la relación jerárquica, consulte [creación de grupos reutilizables de botones](../extensibility/creating-reusable-groups-of-buttons.md).  
+    Para obtener más información sobre los grupos de comandos y los controles primarios, vea [crear grupos reutilizables de botones](../extensibility/creating-reusable-groups-of-buttons.md).  
   
    En este punto, el comando será visible en el IDE, pero no tendrá ninguna función. Si la plantilla de paquete ha creado el comando, tendrá de forma predeterminada un controlador de clic que muestre un mensaje.  
   
@@ -134,7 +134,7 @@ Puede crear comandos de menú mediante la derivación desde <xref:System.Compone
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
-     La plantilla de paquete de Visual Studio proporciona dos colecciones, `GuidList` y `PkgCmdIDList`, para retener los GUID y los id. de comandos. Se rellenan automáticamente para los comandos que agrega la plantilla, pero para los comandos que agrega manualmente, también deberá agregar la entrada de id. a la clase `PkgCmdIdList` .  
+     La plantilla de paquete de Visual Studio proporciona dos colecciones, `GuidList` y `PkgCmdIDList`, para retener los GUID y los ids. de comandos. Se rellenan automáticamente para los comandos que agrega la plantilla, pero para los comandos que agrega manualmente, también deberá agregar la entrada de id. a la clase `PkgCmdIdList` .  
   
      Como alternativa, puede rellenar el objeto <xref:System.ComponentModel.Design.CommandID> con el valor de cadena sin procesar del GUID y el valor entero del id.  
   
@@ -179,7 +179,7 @@ Puede crear comandos de menú mediante la derivación desde <xref:System.Compone
   
     El objeto `EventHandler` recibe el nombre de un método que se llama cuando se consulta el estado del comando de menú.  
   
-2. Implemente el método de controlador de estado de consulta para el comando. El parámetro `object` `sender` se puede convertir en un objeto <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , que se usa para establecer los distintos atributos del comando de menú, incluido el texto. En la tabla siguiente se muestran las propiedades de la clase <xref:System.ComponentModel.Design.MenuCommand> (de la que se deriva la clase MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ) que corresponden a las marcas <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> .  
+2. Implemente el método de controlador de estado de consulta para el comando. El `object` `sender` parámetro se puede convertir en un <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto, que se usa para establecer los distintos atributos del comando de menú, incluido el texto. En la tabla siguiente se muestran las propiedades de la clase <xref:System.ComponentModel.Design.MenuCommand> (de la que se deriva la clase MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ) que corresponden a las marcas <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> .  
   
    |Propiedad MenuCommand|Marca OLECMDF|  
    |--------------------------|------------------|  
@@ -197,7 +197,7 @@ Puede crear comandos de menú mediante la derivación desde <xref:System.Compone
 ### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>Control de comandos mediante la interfaz IOleCommandTarget  
  Para el código que usa la interfaz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> directamente, el VSPackage debe implementar los métodos <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> de la interfaz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> . Si el VSPackage implementa una jerarquía de proyectos, los métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> de la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> se deben implementar en su lugar.  
   
- Los métodos <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> están diseñados para recibir un único `GUID` de conjunto de comandos y una matriz de ids. de comando como entrada. Se recomienda que los VSPackages sean totalmente compatibles con este concepto de varios ids. en una llamada. Sin embargo, siempre y cuando no se llame a un VSPackage desde otros VSPackages, se puede suponer que la matriz de comandos contiene un único id. de comando porque los métodos <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> se ejecutan en un orden bien definido. Para obtener más información sobre el enrutamiento, consulte [enrutamiento de comandos en VSPackages](../extensibility/internals/command-routing-in-vspackages.md).  
+ Los métodos <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> están diseñados para recibir un único `GUID` de conjunto de comandos y una matriz de ids. de comando como entrada. Se recomienda que los VSPackages sean totalmente compatibles con este concepto de varios ids. en una llamada. Sin embargo, siempre y cuando no se llame a un VSPackage desde otros VSPackages, se puede suponer que la matriz de comandos contiene un único id. de comando porque los métodos <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> se ejecutan en un orden bien definido. Para obtener más información sobre el enrutamiento, vea [enrutamiento de comandos en VSPackages](../extensibility/internals/command-routing-in-vspackages.md).  
   
  Para el código que usa la interfaz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> directamente para el control de comandos, debe implementar el método <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> en el VSPackage como se indica a continuación para controlar comandos.  
   
@@ -251,6 +251,6 @@ Puede crear comandos de menú mediante la derivación desde <xref:System.Compone
   
 - Si el `GUID` y el id. de comando coinciden con el par GID:ID que usa el comando en el archivo .vsct, se ejecuta el código que está asociado con el comando y se devuelve <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)   
  [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)

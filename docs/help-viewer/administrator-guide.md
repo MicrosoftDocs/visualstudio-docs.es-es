@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825122"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 
 El Visor de Ayuda permite administrar instalaciones locales de ayuda para los entornos de red con o sin acceso a Internet. El contenido de la Ayuda local se configura en cada equipo. De forma predeterminada, los usuarios deben tener derechos de administrador para actualizar la instalación de Ayuda local.
 
-Si el entorno de red permite a los clientes obtener acceso a Internet, puede usar el ejecutable de **Help Content Manager** para implementar el contenido de Ayuda local desde Internet. Para obtener más información sobre la sintaxis de la línea de comandos de *HlpCtntMgr.exe*, vea [Argumentos de línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md).
+Si el entorno de red permite a los clientes tener acceso a Internet, puede usar el ejecutable de **Help Content Manager** para implementar el contenido de la ayuda local desde Internet. Para obtener más información sobre *HlpCtntMgr.exe* sintaxis de la línea de comandos, vea [argumentos de la línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md).
 
 Para obtener más información sobre la creación de contenido, la creación de un punto de conexión de servicio de intranet y otros tipos similares de actividades, vea [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md) (SDK del Visor de Ayuda).
 
@@ -35,13 +35,13 @@ Si no tiene acceso a Internet en el entorno de red, el Visor de Ayuda puede impl
 
 ## <a name="deploy-local-help-content-from-the-internet"></a>Implementación de contenido de Ayuda local desde Internet
 
-Puede usar **Help Content Manager** (*HlpCtntMgr.exe*) para implementar el contenido de la Ayuda local desde Internet en los equipos cliente. Utilice la sintaxis siguiente:
+Puede usar **Help Content Manager** (*HlpCtntMgr.exe*) para implementar el contenido de la Ayuda local desde Internet en los equipos cliente. Use la sintaxis siguiente:
 
 ```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
-Para obtener más información sobre la sintaxis de la línea de comandos de *HlpCtntMgr.exe*, vea [Argumentos de línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md).
+Para obtener más información sobre *HlpCtntMgr.exe* sintaxis de la línea de comandos, vea [argumentos de la línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md).
 
 Requisitos:
 
@@ -78,7 +78,7 @@ Requisitos:
 - Los usuarios deben tener derechos de administrador para actualizar, agregar o quitar el contenido de la Ayuda local después de su instalación.
 
     > [!TIP]
-    > Si los usuarios no tienen derechos de administrador, es recomendable deshabilitar la pestaña **Administrar contenido** en el Visor de Ayuda. Para obtener más información, vea [Invalidaciones de Help Content Manager](../help-viewer/behavior-overrides.md).
+    > Si los usuarios no tienen derechos de administrador, es recomendable deshabilitar la pestaña **Administrar contenido** en el Visor de Ayuda. Para obtener más información, consulte [invalidaciones de Help Content Manager](../help-viewer/behavior-overrides.md).
 
 Advertencias:
 
@@ -114,7 +114,7 @@ A continuación, debe empaquetar el contenido para poder implementarlo en los eq
 
 #### <a name="to-package-the-content"></a>Para empaquetar el contenido
 
-1. Cree una carpeta para copiar el contenido para su posterior implementación. Por ejemplo:  *C:\VSHelp*.
+1. Cree una carpeta para copiar el contenido para su posterior implementación. Por ejemplo: *C:\VSHelp*.
 
 2. Abra *cmd.exe* con permisos de administrador.
 
@@ -124,13 +124,13 @@ A continuación, debe empaquetar el contenido para poder implementarlo en los eq
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
-     Por ejemplo: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`.
+     Por ejemplo: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>Implementación del contenido
 
 1. Cree un recurso compartido de red y copie el contenido de Ayuda en esa ubicación.
 
-     Por ejemplo, copie el contenido de *c:\VSHelp* en *\\\miServidor\VSHelp*.
+     Por ejemplo, copie el contenido de *C:\VSHelp* en * \\ \myserver\VSHelp*.
 
 2. Cree un archivo *.bat* que contendrá el script de implementación para el contenido de Ayuda. Puesto que el cliente podría tener un bloqueo de lectura en cualquiera de los archivos que se estén eliminando como parte de la inserción, debe cerrar el cliente antes de insertar las actualizaciones. Por ejemplo:
 
@@ -140,11 +140,11 @@ A continuación, debe empaquetar el contenido para poder implementarlo en los eq
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3. Ejecute el archivo *.bat* en los equipos locales en los que quiera instalar el contenido de Ayuda.
+3. Ejecute el archivo *. bat* en los equipos locales en los que desea instalar el contenido de la ayuda.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Argumentos de línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md)
+- [Argumentos de la línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md)
 - [Invalidaciones de Help Content Manager](../help-viewer/behavior-overrides.md)
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)
 - [SDK del Visor de Ayuda](../extensibility/internals/microsoft-help-viewer-sdk.md)

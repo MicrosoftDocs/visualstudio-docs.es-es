@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825420"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
@@ -31,20 +31,20 @@ ms.locfileid: "67825420"
 
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.  
   
- En este tema se describen los aspectos específicos del hospedaje de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que deben tenerse en cuenta al personalizar los proyectos y los archivos .targets que se carguen y se compilen en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le ayudarán a garantizar que las características de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como IntelliSense y la depuración funcionan para el proyecto personalizado.  
+ En este tema se describen los aspectos específicos del hospedaje de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]en [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que deben tenerse en cuenta al personalizar los proyectos y los archivos .targets que se carguen y se compilen en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le ayudarán a garantizar que las características de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como IntelliSense y la depuración funcionan para el proyecto personalizado.  
   
- Para obtener información sobre proyectos de C++, vea [Archivos de proyecto](/cpp/build/reference/project-files).  
+ Para obtener información sobre proyectos de C++, consulte [Project Files](/cpp/build/reference/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Extensiones de nombre de archivo de los proyectos  
- MSBuild.exe reconoce cualquier extensión de nombre de archivo de proyecto que coincida con el patrón .*proj. Sin embargo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solamente reconoce un subconjunto de estas extensiones de nombre de archivo de proyecto, que determinan el sistema de proyectos específico del lenguaje que cargará el proyecto. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no dispone de ningún sistema de proyectos independiente del lenguaje basado en [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ MSBuild.exe reconoce cualquier extensión de nombre de archivo de proyecto que coincida con el patrón .*proj. Sin embargo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solamente reconoce un subconjunto de estas extensiones de nombre de archivo de proyecto, que determinan el sistema de proyectos específico del lenguaje que cargará el proyecto. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no dispone de ningún sistema de proyectos independiente del lenguaje basado en [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .  
   
- Por ejemplo, el sistema de proyectos de [!INCLUDE[csprcs](../includes/csprcs-md.md)] carga archivos .csproj, pero [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no puede cargar ningún archivo .xxproj. Un archivo de proyecto para archivos de origen en un lenguaje arbitrario debe usar la misma extensión que los archivos de proyecto de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)] que se van a cargar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Por ejemplo, el sistema de proyectos de [!INCLUDE[csprcs](../includes/csprcs-md.md)] carga archivos .csproj, pero [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no puede cargar ningún archivo .xxproj. Un archivo de proyecto para archivos de origen en un lenguaje arbitrario debe utilizar la misma extensión que los archivos de proyecto de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)] que se van a cargar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="well-known-target-names"></a>Nombres de destino conocidos  
- Al hacer clic en el comando **Compilar** en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se ejecutará el destino predeterminado del proyecto. A menudo, este destino también se denomina `Build`. Al elegir el comando **Recompilar** o **Limpiar** , se intentará ejecutar un destino del mismo nombre en el proyecto. Al hacer clic en **Publicar** , se ejecutará un destino denominado `PublishOnly` en el proyecto.  
+ Al hacer clic en el comando **Compilar** en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , se ejecutará el destino predeterminado del proyecto. A menudo, este destino también se denomina `Build`. Al elegir el comando **Recompilar** o **Limpiar** , se intentará ejecutar un destino del mismo nombre en el proyecto. Al hacer clic en **Publicar** , se ejecutará un destino denominado `PublishOnly` en el proyecto.  
   
 ## <a name="configurations-and-platforms"></a>Configuraciones y plataformas  
- Las configuraciones se representan en los proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mediante propiedades agrupadas en un elemento `PropertyGroup` que contiene un atributo `Condition`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examina estas condiciones para crear una lista de las configuraciones y plataformas del proyecto que se van a mostrar. Para extraer correctamente esta lista, las condiciones deben tener un formato similar al siguiente:  
+ Las configuraciones se representan en los proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mediante propiedades agrupadas en un elemento `PropertyGroup` que contiene un atributo `Condition` . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examina estas condiciones para crear una lista de las configuraciones y plataformas del proyecto que se van a mostrar. Para extraer correctamente esta lista, las condiciones deben tener un formato similar al siguiente:  
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
@@ -52,10 +52,10 @@ Condition=" '$(Configuration)' == 'Release' " 
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- Con este fin, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examina las condiciones en `PropertyGroup`, `ItemGroup`, `Import`, la propiedad y los elementos.  
+ Con este fin,[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examina las condiciones en `PropertyGroup`, `ItemGroup`, `Import`, la propiedad y los elementos.  
   
 ## <a name="additional-build-actions"></a>Acciones de compilación adicionales  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite cambiar el nombre de los tipos de elemento de un archivo en un proyecto con la propiedad **Acción de compilación** de la ventana [Propiedades de archivo](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). Los nombres de tipo de elemento`Compile`, `EmbeddedResource`, `Content`y `None` siempre se muestran en este menú, junto con otros nombres de tipo de elemento ya presentes en el proyecto. Para garantizar que los nombres de los tipos de elemento personalizados siempre estén disponibles en este menú, puede agregarlos a un tipo de elemento denominado `AvailableItemName`. Por ejemplo, al agregar lo siguiente al archivo de proyecto, se agregará el tipo personalizado `JScript` a este menú para todos los proyectos que lo importen:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite cambiar el nombre del tipo de elemento de un archivo en un proyecto con la propiedad **acción de compilación** de la ventana Propiedades del [archivo](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) . Los nombres de tipo de elemento`Compile`, `EmbeddedResource`, `Content`y `None` siempre se muestran en este menú, junto con otros nombres de tipo de elemento ya presentes en el proyecto. Para garantizar que los nombres de los tipos de elemento personalizados siempre estén disponibles en este menú, puede agregarlos a un tipo de elemento denominado `AvailableItemName`. Por ejemplo, al agregar lo siguiente al archivo de proyecto, se agregará el tipo personalizado `JScript` a este menú para todos los proyectos que lo importen:  
   
 ```  
 <ItemGroup>  
@@ -64,12 +64,12 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
-> Algunos nombres de tipo de elemento son específicos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pero no se muestran en esta lista desplegable.  
+> Algunos nombres de tipo de elemento son específicos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , pero no se muestran en esta lista desplegable.  
   
 ## <a name="in-process-compilers"></a>Compiladores activos  
- Cuando sea posible, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] intentará utilizar la versión activa del compilador de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] con el fin de mejorar el rendimiento. (No es aplicable a [!INCLUDE[csprcs](../includes/csprcs-md.md)]). Para que esto funcione correctamente, se deben cumplir las condiciones siguientes:  
+ Cuando sea posible, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] intentará utilizar la versión activa del compilador de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] con el fin de mejorar el rendimiento. (No aplicable a [!INCLUDE[csprcs](../includes/csprcs-md.md)] ). Para que esto funcione correctamente, se deben cumplir las condiciones siguientes:  
   
-- En un destino del proyecto, debe haber una tarea denominada `Vbc` para los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+- En un destino del proyecto, debe haber una tarea denominada `Vbc` para los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .  
   
 - El parámetro `UseHostCompilerIfAvailable` de la tarea debe tener el valor true.  
   
@@ -122,21 +122,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Las expresiones condicionales en los elementos siempre se omiten al decidir si el elemento debe mostrarse en el Explorador de soluciones.  
   
 ## <a name="debugging"></a>Depuración  
- Para buscar e iniciar el ensamblado de salida y asociar el depurador, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] necesita que las propiedades `OutputPath`, `AssemblyName` y `OutputType` estén definidas correctamente. El depurador no podrá realizar la asociación si el proceso de compilación no hiciera que el compilador generase un archivo .pdb.  
+ Para buscar e iniciar el ensamblado de salida y asociar el depurador, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] necesita que las propiedades `OutputPath`, `AssemblyName`y `OutputType` estén definidas correctamente. El depurador no podrá realizar la asociación si el proceso de compilación no hiciera que el compilador generase un archivo .pdb.  
   
 ## <a name="design-time-target-execution"></a>Ejecución del destino en tiempo de diseño  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] intenta ejecutar los destinos con algunos nombres cuando carga un proyecto. Estos destinos incluyen `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` y `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ejecuta estos destinos para que el compilador pueda inicializarse con el fin de proporcionar IntelliSense, el depurador pueda inicializarse y las referencias mostradas en el Explorador de soluciones puedan resolverse. Si estos destinos no están presentes, el proyecto se cargará y se compilará correctamente pero la experiencia en tiempo de diseño de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no será totalmente funcional.  
   
-## <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
- Para editar directamente un proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], puede abrir el archivo del proyecto en el editor XML de Visual Studio.  
+## <a name="editing-project-files-in-visual-studio"></a><a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+ Para editar directamente un proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , puede abrir el archivo del proyecto en el editor XML de Visual Studio.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Para descargar y editar un archivo de proyecto en Visual Studio  
   
 1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Descargar el proyecto**.  
   
-     El proyecto aparecerá marcado como **(no disponible)** .  
+     El proyecto aparecerá marcado como **(no disponible)**.  
   
-2. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y seleccione **Editar\<Archivo de proyecto>** .  
+2. En **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y, a continuación, elija **Editar \<Project File> **.  
   
      El archivo de proyecto se abrirá en el Editor XML de Visual Studio.  
   
@@ -145,7 +145,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y, a continuación, elija **Volver a cargar el proyecto**.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense y validación  
- Al utilizar el editor XML para modificar archivos de proyecto, los archivos de esquema de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] administran la validación e IntelliSense. Estos archivos se instalan en la caché del esquema, que se encuentra en *\<directorio de instalación de Visual Studio >* \Xml\Schemas\1033\MSBuild.  
+ Al utilizar el editor XML para modificar archivos de proyecto, los archivos de esquema de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] administran la validación e IntelliSense. Se instalan en la caché de esquema, que se encuentra en *\<Visual Studio installation directory>* \Xml\Schemas\1033\MSBuild.  
   
  Los tipos básicos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] se definen en Microsoft.Build.Core.xsd y los tipos comunes utilizados por [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se definen en Microsoft.Build.CommonTypes.xsd. Para personalizar los esquemas con el fin de disponer de IntelliSense y de la validación para los nombres de tipo de elemento, propiedades y tareas personalizados, puede editar Microsoft.Build.xsd o crear su propio esquema que incluya los esquemas CommonTypes o Core. Si crea su propio esquema, tendrá que dirigir el editor XML para que lo busque mediante la ventana **Propiedades** .  
   
@@ -156,7 +156,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Algunos destinos definidos en Microsoft.Common.targets tienen nombres acabados en `OutputGroups` o `OutputGroupDependencies`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] llama a estos destinos para obtener listas específicas de las salidas del proyecto. Por ejemplo, el destino `SatelliteDllsProjectOutputGroup` crea una lista de todos los ensamblados satélite que creará una compilación. Características como la publicación, la implementación y las referencias entre proyectos utilizan estos grupos de resultados. Los proyectos que no los definen se cargarán y compilarán en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pero es posible que algunas características no funcionen correctamente.  
   
 ## <a name="reference-resolution"></a>Resolución de referencias  
- La resolución de referencias es el proceso de utilizar los elementos de referencia almacenados en un archivo del proyecto para buscar los ensamblados reales. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debe desencadenar una resolución de referencias para que se muestren las propiedades detalladas de cada referencia en la ventana **Propiedades**. En la lista siguiente se describen los tres tipos de referencias y cómo se resuelven.  
+ La resolución de referencias es el proceso de utilizar los elementos de referencia almacenados en un archivo del proyecto para buscar los ensamblados reales. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debe desencadenar una resolución de referencias para que se muestren las propiedades detalladas de cada referencia en la ventana **Propiedades** . En la lista siguiente se describen los tres tipos de referencias y cómo se resuelven.  
   
 - Referencias de ensamblado:  
   
@@ -166,7 +166,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.  
 
-  - `ResolvedFrom`, establecido en "{TargetFrameworkDirectory}" si se ha resuelto en el directorio de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+  - `ResolvedFrom`, establecido en "{TargetFrameworkDirectory}" si se ha resuelto en el directorio de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 - Referencias COM:  
   
@@ -181,13 +181,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  Para las compilaciones periódicas en Visual Studio, no se aplica la comprobación de actualización rápida y el proyecto se compilará como si se invocara la compilación en un símbolo del sistema.  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Extender el proceso de compilación de Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: extender el proceso de compilación de Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Iniciar una compilación desde el IDE](../msbuild/starting-a-build-from-within-the-ide.md)   
- [Registrar las extensiones de .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
+ [Registrar extensiones del .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)   
  [Elemento Property (MSBuild)](../msbuild/property-element-msbuild.md)   
  [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)   
- [Csc (tarea)](../msbuild/csc-task.md)   
- [Tarea Vbc](../msbuild/vbc-task.md)
+ [CSC (tarea)](../msbuild/csc-task.md)   
+ [VBC (tarea)](../msbuild/vbc-task.md)

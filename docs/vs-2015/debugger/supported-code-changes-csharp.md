@@ -1,5 +1,5 @@
 ---
-title: Admite los cambios de código (C#) | Documentos de Microsoft
+title: Cambios de código admitidos (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823537"
 ---
 # <a name="supported-code-changes-c"></a>Cambios admitidos en el código (C#)
@@ -47,7 +47,7 @@ Editar y continuar controla la mayoría de los tipos de cambios de código dentr
 - Agregar una directiva `foreach`, `using` o `lock` en torno a la instrucción activa.  
   
 ## <a name="unsafe-code"></a>Código no seguro  
- Los cambios en el código no seguro tienen las mismas limitaciones que los cambios en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que esté dentro de un método que contiene el `stackalloc` operador.  
+ Los cambios en el código no seguro tienen las mismas limitaciones que los cambios en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que esté incluido en un método que contiene el operador `stackalloc`.  
   
 ## <a name="exceptions"></a>Excepciones  
  Editar y continuar admite cambios en los bloques `catch` y `finally`, pero no se permite agregar un bloque `catch` o `finally` en la instrucción activa.  
@@ -59,7 +59,7 @@ Editar y continuar controla la mayoría de los tipos de cambios de código dentr
   
   - Capturar una variable que no se ha capturado antes.  
 
-  - Cambiar el tipo de expresión de consulta (por ejemplo, seleccionar un = > Seleccionar nuevo {A = un};)  
+  - Cambiar el tipo de expresión de consulta (por ejemplo, seleccione a => seleccionar nuevo {A = a};)  
 
   - Quitar un `where` que contiene una instrucción activa.  
 
@@ -75,16 +75,16 @@ Editar y continuar controla la mayoría de los tipos de cambios de código dentr
   
 - Depuración de un volcado de Dr. Watson.  
   
-- Edición de código tras una excepción no controlada, cuando el "**desenredar la pila de llamadas en las excepciones no controladas**" no está seleccionada.  
+- Editar código después de una excepción no controlada, cuando no se selecciona la opción "**desenredar la pila de llamadas en excepciones no controladas**".  
   
 - Depuración de una aplicación incrustada en tiempo de ejecución.  
   
-- Depurar una aplicación que tiene **adjuntar a** en lugar de ejecutar la aplicación eligiendo **iniciar** desde el **depurar** menú.  
+- Depurar una aplicación que se ha **asociado a** en lugar de ejecutar la aplicación eligiendo **iniciar** en el menú **depurar** .  
   
 - Depuración de código optimizado.  
   
 - Depurar una versión anterior del código cuando no ha sido posible generar una nueva versión debido a errores de compilación.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Editar y continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

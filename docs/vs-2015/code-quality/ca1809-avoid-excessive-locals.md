@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d39c8d9d09cf457738df87e3c2e6e109f7bc1696
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543863"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitar las variables locales excesivas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidExcessiveLocals|
 |Identificador de comprobación|CA1809|
-|Categoría|Microsoft. performance|
+|Category|Microsoft. performance|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825096"
 ---
 # <a name="help-content-manager-overrides"></a>Invalidaciones de Help Content Manager
@@ -31,11 +31,11 @@ Puede modificar el comportamiento predeterminado del Visor de Ayuda y las caract
 
 ### <a name="registry-key-values"></a>Valores de la clave del Registro
 
-|Valor de la clave del Registro|Tipo|Datos|DESCRIPCIÓN|
+|Valor de la clave del Registro|Tipo|data|Descripción|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|cadena|\<dirección URL HTTP del punto de conexión de servicio\>|Define un punto de conexión de servicio único.|
+|NewContentAndUpdateService|string|\<http URL for service endpoint\>|Define un punto de conexión de servicio único.|
 |UseOnlineHelp|dword|`0` para especificar Ayuda local, `1` para especificar Ayuda en línea|Define el valor predeterminado de la Ayuda en línea o sin conexión.|
-|OnlineBaseUrl|cadena|\<dirección URL HTTP del punto de conexión de servicio\>|Define un punto de conexión F1 único.|
+|OnlineBaseUrl|string|\<http URL for service endpoint\>|Define un punto de conexión F1 único.|
 |OnlineHelpPreferenceDisabled|dword|`0` para habilitar o `1` para deshabilitar la opción de preferencia de Ayuda en línea|Deshabilita la opción de preferencia de Ayuda en línea.|
 |DisableManageContent|dword|`0` para habilitar o `1` para deshabilitar la pestaña **Administrar contenido** en el Visor de Ayuda|Deshabilite la pestaña **Administrar contenido**|
 |DisableFirstRunHelpSelection|dword|`0` para habilitar o `1` para deshabilitar las características de ayuda que se configuran la primera vez que se inicia Visual Studio.|Deshabilita la instalación de contenido en el primer inicio de Visual Studio.|
@@ -56,13 +56,13 @@ Puede modificar el comportamiento predeterminado del Visor de Ayuda y las caract
 
 Los dos comportamientos siguientes pueden controlarse mediante el establecimiento de valores de la clave del Registro en el Editor del Registro.
 
-|Tarea|Clave del Registro|Valor|Datos|
+|Tarea|Clave del Registro|Value|data|
 |----------|-----|------|----|
 |Invalidar la prioridad de trabajos del servicio BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (en un equipo de 64 bits)\Microsoft\Help\v2.3|BITSPriority|**foreground**, **high**, **normal** o **low**|
 |Apuntar al almacén de contenido local en un recurso compartido de red|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Guía del administrador del Visor de Ayuda](../help-viewer/administrator-guide.md)
-- [Argumentos de línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md)
+- [Guía del administrador del visor de ayuda](../help-viewer/administrator-guide.md)
+- [Argumentos de la línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md)
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)

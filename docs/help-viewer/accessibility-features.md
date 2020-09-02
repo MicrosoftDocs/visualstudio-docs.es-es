@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825131"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Características de accesibilidad del Visor de Ayuda
-Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Este tema incluye información sobre las características, productos y servicios que permiten que el Visor de Ayuda de Microsoft sea accesible para los usuarios con una amplia gama de opciones.
+Microsoft tiene el compromiso de que todas las personas puedan utilizar fácilmente sus productos y servicios. Este tema incluye información sobre las características, productos y servicios que permiten que el Visor de Ayuda de Microsoft sea accesible para los usuarios con una amplia gama de opciones.
 
 ## <a name="keyboard-access"></a>Acceso mediante el teclado
 Puede acceder a todas las características del Visor de Ayuda mediante el teclado. Para obtener más información, vea [Teclas de método abreviado (Visor de Ayuda)](../help-viewer/shortcut-keys.md).
@@ -33,7 +33,7 @@ Puede cambiar el ancho de las ventanas de exploración o de documento poniendo e
 ## <a name="help-viewer-position"></a>Posición del Visor de Ayuda
 Puede mover el Visor de Ayuda arrastrando su barra de título a un lugar diferente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)
 - [Teclas de método abreviado (Visor de Ayuda)](../help-viewer/shortcut-keys.md)

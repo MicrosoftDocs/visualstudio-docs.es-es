@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824898"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos y avanzados en expresiones de búsqueda
 
-Puede usar operadores lógicos y operadores de búsqueda avanzados para refinar la búsqueda del contenido de Ayuda en el **Visor de Ayuda**.
+Puede usar operadores lógicos y operadores de búsqueda avanzada para refinar la búsqueda del contenido de la ayuda en el **visor de ayuda**.
 
 ## <a name="logical-operators"></a>Operadores lógicos
 
 Los operadores lógicos especifican cómo se deben combinar varios términos de búsqueda en una consulta de búsqueda. En la siguiente tabla se muestran los operadores lógicos AND, OR, NOT y NEAR.
 
-|Para buscar|Usar|Ejemplo|Resultado|
+|Para buscar|Use|Ejemplo|Resultado|
 |-------------------|---------|-------------|------------|
 |Ambos términos en el mismo artículo|AND|dib AND paleta|Temas que contienen "dib" y "paleta".|
 |Cualquier término en un artículo|O|trama OR vector|Temas que contienen "trama" o "vector".|
 |El primer término sin el segundo término en el mismo artículo|NOT|"sistema operativo" NOT DOS|Temas que contienen "sistema operativo", pero no "DOS".|
-|Ambos términos, próximos entre sí en un artículo|CERCA_DE|usuario NEAR kernel|Temas que contienen "usuario" cerca de "kernel".|
+|Ambos términos, próximos entre sí en un artículo|NEAR|usuario NEAR kernel|Temas que contienen "usuario" cerca de "kernel".|
 
 > [!IMPORTANT]
 > Debe escribir los operadores lógicos con todas las letras en mayúsculas para que el motor de búsqueda los reconozca.
@@ -40,7 +40,7 @@ Los operadores lógicos especifican cómo se deben combinar varios términos de 
 
 Los operadores de búsqueda avanzada refinan la búsqueda de contenido. Para ello, especifican en qué parte de un artículo se debe buscar el término de búsqueda. En esta tabla se describen los cuatro operadores de búsqueda avanzada que hay disponibles.
 
-|Para buscar|Usar|Ejemplo|Resultado|
+|Para buscar|Use|Ejemplo|Resultado|
 |-------------------|---------|-------------|------------|
 |Un término en el título del artículo|`title:`|`title:binaryreader`|Temas que contienen "binaryreader" en sus títulos.|
 |Un término en un ejemplo de código|`code:`|`code:readdouble`|Temas que contienen "readdouble" en un ejemplo de código.|
@@ -66,7 +66,7 @@ Puede usar el operador `code:` para buscar contenido sobre cualquiera de los dis
 > [!NOTE]
 > El operador `code:` solamente busca contenido que esté marcado con una etiqueta de lenguaje de programación, en lugar de contenido marcado genéricamente como código.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo: Buscar temas](../help-viewer/find-topics.md)
+- [Cómo: buscar temas](../help-viewer/find-topics.md)
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)

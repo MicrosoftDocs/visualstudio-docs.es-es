@@ -1,5 +1,5 @@
 ---
-title: 'Convertir: Tipos de otros tipos de sistema de proyecto de SharePoint'
+title: 'Convertir: tipos de sistema de proyectos de SharePoint en otros tipos'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,41 +13,41 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 40ea60a8df5bc0bcd033c60a83d742ed3249cc53
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66835996"
 ---
-# <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Convertir entre tipos de sistema de proyectos de SharePoint y otros tipos de proyecto de Visual Studio
-  En algunos casos podría tener un objeto en el sistema del proyecto de SharePoint y desea usar las características de un objeto correspondiente en el modelo de objetos de automatización de Visual Studio o el modelo de objetos de integración, o viceversa. En estos casos, puede usar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método del servicio del proyecto de SharePoint para convertir el objeto en un modelo de objetos diferentes.
+# <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Convertir entre tipos de sistema de proyectos de SharePoint y otros tipos de proyectos de Visual Studio
+  En algunos casos, es posible que tenga un objeto en el sistema de proyectos de SharePoint y desee usar las características de un objeto correspondiente en el modelo de objetos de automatización de Visual Studio o el modelo de objetos de integración, o viceversa. En estos casos, puede utilizar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método del servicio de proyecto de SharePoint para convertir el objeto en un modelo de objetos diferente.
 
- Por ejemplo, podría tener un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objeto, pero desea usar métodos que solo están disponibles en un <xref:EnvDTE.Project> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objeto. En este caso, puede usar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método para convertir el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> a un <xref:EnvDTE.Project> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.
+ Por ejemplo, podría tener un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objeto, pero desea utilizar métodos que solo están disponibles en un <xref:EnvDTE.Project> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objeto o. En este caso, puede usar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método para convertir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> en <xref:EnvDTE.Project> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> .
 
- Para obtener más información sobre el modelo de objetos de automatización de Visual Studio y el modelo de objetos de integración de Visual Studio, consulte [información general del modelo de programación de SharePoint de extensiones](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
+ Para obtener más información sobre el modelo de objetos de automatización de Visual Studio y el modelo de objetos de integración de Visual Studio, vea [información general del modelo de programación de extensiones de herramientas de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
 
 ## <a name="types-of-conversions"></a>Tipos de conversiones
- En la tabla siguiente se enumera los tipos que este método se puede convertir entre el sistema del proyecto de SharePoint y los otros modelos de objetos de Visual Studio.
+ En la tabla siguiente se enumeran los tipos que este método puede convertir entre el sistema de proyectos de SharePoint y los otros modelos de objetos de Visual Studio.
 
-|Tipo de sistema de proyecto de SharePoint|Tipos correspondientes en los modelos de objetos de automatización e integración|
+|Tipo de sistema de proyectos de SharePoint|Tipos correspondientes en los modelos de objetos de integración y automatización|
 |------------------------------------|-------------------------------------------------------------------------|
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>|<xref:EnvDTE.Project><br /><br /> o<br /><br /> Cualquier interfaz en el modelo de objetos de integración de Visual Studio que se implementa mediante el objeto COM subyacente para el proyecto. Estas interfaces incluyen <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> (o una interfaz derivada), y <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. Para obtener una lista de las interfaces principales que se implementan los proyectos, vea [componentes principales del proyecto de modelo](../extensibility/internals/project-model-core-components.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.IMappedFolder><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>|<xref:EnvDTE.ProjectItem><br /><br /> o<br /><br /> Un<xref:System.UInt32> valor (también denominado VSITEMID) que identifica el miembro del proyecto en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> que lo contiene. Este valor puede pasarse a la *itemid* parámetro de algunas <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> métodos.|
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>|<xref:EnvDTE.Project><br /><br /> or<br /><br /> Cualquier interfaz del modelo de objetos de integración de Visual Studio implementada por el objeto COM subyacente para el proyecto. Estas interfaces incluyen <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> (o una interfaz derivada), y <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> . Para obtener una lista de las interfaces principales que implementan los proyectos, vea [Project Model Core Components](../extensibility/internals/project-model-core-components.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.IMappedFolder><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>|<xref:EnvDTE.ProjectItem><br /><br /> or<br /><br /> Un <xref:System.UInt32> valor (también denominado VSITEMID) que identifica el miembro del proyecto en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> que lo contiene. Este valor se puede pasar al parámetro *Itemid* de algunos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> métodos.|
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo de código siguiente se muestra cómo usar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método para convertir un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objeto a un <xref:EnvDTE.Project>.
+ En el ejemplo de código siguiente se muestra cómo utilizar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método para convertir un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objeto en <xref:EnvDTE.Project> .
 
  [!code-csharp[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs#2)]
  [!code-vb[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb#2)]
 
  Para este ejemplo se necesita:
 
-- Una extensión del sistema del proyecto de SharePoint que tiene una referencia a la *EnvDTE.dll* ensamblado. Para obtener más información, consulte [extender el sistema de proyecto de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
+- Extensión del sistema de proyectos de SharePoint que tiene una referencia al ensamblado de *EnvDTE.dll* . Para obtener más información, vea [extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
-- Código que registra el `projectService_ProjectAdded` método para controlar la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> eventos de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto. Como ejemplo, vea [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+- Código que registra el `projectService_ProjectAdded` método para controlar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> evento de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto. Para obtener un ejemplo, vea [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Usar el servicio de proyecto de SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
-- [Cómo: Recuperar el servicio de proyecto de SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
-- [Información general del modelo de programación de SharePoint de extensiones](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Cómo: recuperar el servicio de proyecto de SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Información general sobre el modelo de programación de extensiones de herramientas de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

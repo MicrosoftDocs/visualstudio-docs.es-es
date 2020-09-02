@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Usar el visualizador de árboles WPF | Documentos de Microsoft
+title: Procedimiento Uso del visualizador de árboles de WPF | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 381dc45351ae03e615afbdd31239869e3dba8e4e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825434"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedimiento Usar el visualizador de árboles de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. Para obtener más información sobre los árboles visuales, vea [árboles en WPF](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Para obtener más información acerca de las propiedades de dependencia, consulte [información general sobre las propiedades de dependencia](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
+Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. Para obtener más información sobre los árboles visuales, vea [Árboles en WPF](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Para obtener más información sobre las propiedades de dependencia, vea [Introducción a las propiedades de dependencia](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
   
- Al abrir el visualizador de árboles de WPF, verá dos paneles: el **árbol Visual** a la izquierda y la **propiedades de** _nombre_ **:**  _Tipo_ panel de la derecha. Seleccione cualquier objeto en el **árbol Visual** panel y el **propiedades de** _nombre_ **:** _tipo_ panel es actualiza automáticamente para mostrar las propiedades de ese objeto.  
+ Al abrir el visualizador de árboles de WPF, verá dos paneles: el **Árbol visual** a la izquierda y las **Propiedades de** _Nombre_ **:** _Tipo_ a la derecha. Al seleccionar cualquier objeto en el panel **Árbol visual**, el panel **Propiedades de** _Nombre_ **:** _Tipo_ se actualizará automáticamente para mostrar las propiedades de dicho objeto.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Para abrir el visualizador de árboles de WPF  
   
@@ -53,7 +53,7 @@ Puede usar el visualizador de árboles de WPF para explorar el árbol visual de 
 
 ### <a name="to-search-the-properties-list"></a>Para buscar en la lista de propiedades  
   
-- En el **propiedades de** _nombre_ **:** _tipo_ panel, escriba la cadena de la que desea buscar en el **filtrar**cuadro.  
+- En el panel **propiedades de** _nombre_**:**_tipo_ , escriba la cadena que desea buscar en el cuadro de **filtro** .  
   
   El visualizador de árboles de WPF buscará inmediatamente las propiedades que coincidan con la cadena que ha escrito; ahora, la lista solo muestra las propiedades que coinciden con la cadena que ha escrito. Escriba más caracteres si desea buscar una coincidencia más precisa.  
 
@@ -63,8 +63,8 @@ Puede usar el visualizador de árboles de WPF para explorar el árbol visual de 
   
 - Haga clic en el icono **Cerrar** situado en la esquina superior derecha del cuadro de diálogo.  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Utilizar un visualizador](../misc/how-to-use-a-visualizer.md)   
- [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: usar un visualizador](../misc/how-to-use-a-visualizer.md)   
+ [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
  [Árboles en WPF](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)   
  [Información general sobre las propiedades de dependencia](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)
