@@ -1,5 +1,5 @@
 ---
-title: Procesar el Administrador de depuración | Microsoft Docs
+title: Administrador de depuración de procesos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 186b9601b0146b64edba07ec8470bd86fd0a0a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153681"
 ---
 # <a name="process-debug-manager"></a>Administrador de depuración del proceso
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-El Administrador de depuración del proceso (PDM) es un componente de Visual Studio que administra programas y procesos, dejándolos disponibles para la sesión de depuración manager y los motores de depuración.  
+Process Debug Manager (PDM) es un componente de Visual Studio que administra programas y procesos, que los pone a disposición del administrador de depuración de la sesión y los motores de depuración.  
   
- El PDM administra todos los procesos que se pueden depurar. Para poder ser depurados, un programa debe registrarse con el PDM. Esto se realiza en el momento en que se inicia el programa, ya sea un puerto o un motor de depuración.  
+ PDM administra todos los procesos que se pueden depurar. Para que se pueda depurar, se debe registrar un programa con el PDM. Esto se hace en el momento en que se inicia el programa, ya sea mediante un puerto o un motor de depuración.  
   
-## <a name="see-also"></a>Vea también  
- [Procesos](../../extensibility/debugger/processes.md)   
+## <a name="see-also"></a>Consulte también  
+ [Procese](../../extensibility/debugger/processes.md)   
  [Motor de depuración](../../extensibility/debugger/debug-engine.md)   
- [Puertos](../../extensibility/debugger/ports.md)   
+ [Puerto](../../extensibility/debugger/ports.md)   
  [Programas](../../extensibility/debugger/programs.md)   
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md)

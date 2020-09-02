@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d471a73205383f0f23c5016872712a3ba2c578d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153620"
 ---
-# <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
+# <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica cómo interpretar un identificador de proceso en el [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura.  
+Especifica cómo interpretar un identificador de proceso en la estructura de [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,21 +43,21 @@ public enum enum_AD_PROCESS_ID {
   
 ## <a name="members"></a>Miembros  
  AD_PROCESS_ID_SYSTEM  
- Id. de proceso es un identificador de sistema. Use la `ProcessId.dwProcessId` campo de la [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura.  
+ El identificador de proceso es un identificador de sistema. Utilice el `ProcessId.dwProcessId` campo de la estructura de [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) .  
   
  AD_PROCESS_ID_GUID  
- Id. de proceso es un GUID. Use la `ProcessId.guidProcessId` campo de la `AD_PROCESS_ID` estructura.  
+ El ID. de proceso es un GUID. Use el `ProcessId.guidProcessId` campo de la `AD_PROCESS_ID` estructura.  
   
-## <a name="remarks"></a>Comentarios  
- Utilizado para la `ProcessIdType` miembro de la [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura para identificar el tipo de identificador de proceso que se encuentra en la estructura. Determina cómo se interpretan los `ProcessId` union en la estructura.  
+## <a name="remarks"></a>Observaciones  
+ Se usa para el `ProcessIdType` miembro de la estructura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) para identificar el tipo de identificador de proceso contenido en la estructura. Determina cómo se interpreta la `ProcessId` Unión en la estructura.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

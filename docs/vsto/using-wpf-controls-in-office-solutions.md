@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189752"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles de WPF en soluciones de Office
@@ -106,7 +106,7 @@ Para obtener más información sobre los problemas de arquitectura y diseño rel
 
 - [Interoperabilidad de WPF y Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
-- [Controles de Windows Forms y controles equivalentes de WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Windows Forms controles y controles equivalentes de WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Para obtener más información sobre cómo agregar controles de WPF a los controles de formularios y formularios Windows Forms en Visual Studio en tiempo de diseño, vea los temas siguientes:
 

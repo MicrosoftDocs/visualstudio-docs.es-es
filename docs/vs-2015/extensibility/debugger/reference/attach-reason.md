@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c66894fe0515b28037bbb2a19715fa09cbf9fa62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153586"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
+# <a name="attach_reason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica la razón para el motor de depuración (DE) para asociar a un nodo de programa.  
+Especifica el motivo por el que el motor de depuración (DE) se debe adjuntar a un nodo de programa.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,25 +45,25 @@ public enum enum_ATTACH_REASON { 
   
 ## <a name="members"></a>Miembros  
  ATTACH_REASON_AUTO  
- Adjuntar el proceso está en modo de depuración.  
+ Asociar porque el proceso está actualmente en modo de depuración.  
   
  ATTACH_REASON_LAUNCH  
- Adjuntar porque se ha iniciado el proceso.  
+ Adjunte porque se ha iniciado el proceso.  
   
  ATTACH_REASON_USER  
- Adjuntar debido a una solicitud de usuario.  
+ Adjunte debido a una solicitud de usuario.  
   
 ## <a name="remarks"></a>Comentarios  
- Estos valores se usan como un parámetro a la [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) y [adjuntar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) métodos.  
+ Estos valores se usan como parámetro para los métodos [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) y [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [Asociar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+ [Incluir](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Adjuntar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

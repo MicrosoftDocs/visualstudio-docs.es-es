@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189729"
 ---
 # <a name="migration-activity-designers"></a>Diseñadores de actividades de migración
@@ -29,16 +29,16 @@ Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
 - [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)
 
-- [Usar los diseñadores de actividad](control-flow-activity-designers.md)
+- [Utilizar los diseñadores de actividades](control-flow-activity-designers.md)
 
-- [Messaging](../workflow-designer/messaging-activity-designers.md)
+- [Mensajería](../workflow-designer/messaging-activity-designers.md)
 
 - [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 
-- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+- [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
 - [Transacción](../workflow-designer/transaction-activity-designers.md)
 
 - [Colección](../workflow-designer/collection-activity-designers.md)
 
-- [Control de errores](../workflow-designer/error-handling-activity-designers.md)
+- [Tratamiento de errores](../workflow-designer/error-handling-activity-designers.md)
