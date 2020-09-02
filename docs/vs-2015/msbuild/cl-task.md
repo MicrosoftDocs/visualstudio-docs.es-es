@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698635"
 ---
 # <a name="cl-task"></a>CL (Tarea)
@@ -49,7 +49,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Parámetro String opcional.  
   
-   Una lista de opciones de la línea de comandos. Por ejemplo, "/*option1* /*option2* /*option#*". Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea.  
+   Una lista de opciones de la línea de comandos. Por ejemplo, "/*Opción1*  / *opción2*  / *opción #*". Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea.  
   
    Para obtener más información, consulte [Opciones del compilador](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
@@ -79,15 +79,15 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **NoListing** - *\<none>*  
+  - **Nolista** - *\<none>*  
   
-  - **AssemblyCode** - **/FA**  
+  - **AssemblyCode**  -  **/FA**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **AssemblyAndMachineCode**  -  **/FAC**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **AssemblyAndSourceCode**  -  **/FAS**  
   
-  - **All** - **/FAcs**  
+  - **Todo**  -  **/FAcs**  
   
     Para obtener más información, consulte las opciones **/FA**, **/FAc**, **/FAs** y **/FAcs** en [/FA, /Fa (Archivo de lista)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
@@ -99,13 +99,13 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Default** -                          *\<none>*  
+  - **Predeterminada** -                          *\<none>*  
   
-  - **StackFrameRuntimeCheck** -  **/RTCs**  
+  - **StackFrameRuntimeCheck**  -  **/RTCS**  
   
-  - **UninitializedLocalUsageCheck** - **/RTCu**  
+  - **UninitializedLocalUsageCheck**  -  **/RTCu**  
   
-  - **EnableFastChecks** -                          **/RTC1**  
+  - **EnableFastChecks**  -                           **/RTC1**  
   
     Para obtener más información, consulte [/RTC (Comprobaciones de errores de tiempo de ejecución)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
@@ -131,7 +131,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, detecta algunas saturaciones de búfer que sobrescriben la dirección de retorno, una técnica común para aprovechar código que no impone restricciones de tamaño de búfer.  
   
-   Para obtener más información, consulte [/GS (Comprobación de seguridad del búfer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
+   Para obtener más información, consulte [/GS (comprobación de seguridad del búfer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
   
 - **BuildingInIDE**  
   
@@ -147,11 +147,11 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Cdecl** - **/Gd**  
+  - **Cdecl**  -  **/GD**  
   
-  - **FastCall** -                          **/Gr**  
+  - **FastCall**  -                           **/Gr**  
   
-  - **StdCall** -                          **/Gz**  
+  - **Stdcall**  -                           **/Gz**  
   
     Para obtener más información, consulte [/Gd, /Gr, /Gv, /Gz (Convención de llamada)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
   
@@ -163,11 +163,11 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Default** - *\<none>*  
+  - **Predeterminada** - *\<none>*  
   
-  - **CompileAsC** - **/TC**  
+  - **CompileAsC**  -  **/TC**  
   
-  - **CompileAsCpp** - **/TP**  
+  - **CompileAsCpp**  -  **/TP**  
   
     Para obtener más información, consulte [/Tc, /Tp, /TC, /TP (Especificar el tipo del archivo de origen)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
   
@@ -179,17 +179,17 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **false** - *\<none>*  
+  - **es** - *\<none>*  
   
-  - **true** - **/clr**  
+  - **true**  -  **/CLR**  
   
-  - **Pure** - **/clr:pure**  
+  - **Puro**  -  **/clr: Pure**  
   
-  - **Safe** - **/clr:safe**  
+  - **Safe**  -  **/clr: Safe**  
   
-  - **OldSyntax** -   **/CLR: oldSyntax**  
+  - **OldSyntax**  -  **/clr: oldSyntax**  
   
-    Para obtener más información, consulte [/clr (Compilación de Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+    Para obtener más información, vea [/CLR (Common Language Runtime Compilation)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 - **CreateHotpatchableImage**  
   
@@ -207,11 +207,11 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **OldStyle** - **/Z7**  
+  - **OldStyle**  -  **/Z7**  
   
-  - **ProgramDatabase** -   **/Zi**  
+  - **ProgramDatabase**  -  **/Zi**  
   
-  - **EditAndContinue** -   **/Zi**  
+  - **EditAndContinue**  -  **/Zi**  
   
     Para obtener más información, consulte [/Z7, /Zi, /ZI (Formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
   
@@ -239,9 +239,9 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **StreamingSIMDExtensions** - **/arch:SSE**  
+  - **StreamingSIMDExtensions**  -  **/Arch: SSE**  
   
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**  
+  - **StreamingSIMDExtensions2**  -  **/Arch: SSE2**  
   
     Para obtener más información, consulte [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
@@ -261,7 +261,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Para obtener más información, consulte [/analize (Análisis de código)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
   
-- **ErrorReporting**  
+- **Errorreporting,**  
   
    Parámetro String opcional.  
   
@@ -269,13 +269,13 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **None** - **/errorReport:none**  
+  - **Ninguno**  -  **/errorreport: ninguno**  
   
-  - **Prompt** - **/errorReport:prompt**  
+  - **Preguntar**  -  **/errorreport: prompt**  
   
-  - **Queue** - **/errorReport:queue**  
+  - **Cola**  -  de **/errorreport: Queue**  
   
-  - **Send** - **/errorReport:send**  
+  - **Enviar**  -  **/errorreport: enviar**  
   
     Para obtener más información, consulte [/errorReport (Informar de errores de compilador interno)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
@@ -287,13 +287,13 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **false** - *\<none>*  
+  - **es** - *\<none>*  
   
-  - **Async** - **/EHa**  
+  - **Async**  -  **/EHA**  
   
-  - **Sync** - **/EHsc**  
+  - **Sincronizar**  -  **/EHsc**  
   
-  - **SyncCThrow** - **/EHs**  
+  - **SyncCThrow**  -  **/EHS**  
   
     Para obtener más información, consulte [/EH (Modelo de control de excepciones)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
   
@@ -313,11 +313,11 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Neither** - *\<none>*  
+  - **Había** - *\<none>*  
   
-  - **Size** - **/Os**  
+  - **Tamaño**  -  de **/Os**  
   
-  - **Speed** - **/Ot**  
+  - **Velocidad**  -  de **/OT**  
   
     Para obtener más información, consulte [/Os, /Ot (Favorecer código pequeño, favorecer código rápido)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
   
@@ -337,11 +337,11 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Precise** - **/fp:precise**  
+  - **Preciso**  -  **/FP: precise**  
   
-  - **Strict** - **/fp:strict**  
+  - **Estricto**  -  **/FP: STRICT**  
   
-  - **Fast** - **/fp:fast**  
+  - **Rápido**  -  **/FP: Fast**  
   
     Para obtener más información, consulte [/fp (Especificar comportamiento de punto flotante)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
@@ -363,7 +363,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
 - **ForcedUsingFiles**  
   
-   Parámetro **String[]** opcional.  
+   Parámetro **String []** opcional.  
   
    Hace que el preprocesador procese uno o varios archivos **#using** especificados.  
   
@@ -395,19 +395,19 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
 - **InlineFunctionExpansion**  
   
-   Parámetro **String** opcional.  
+   Parámetro de **cadena** opcional.  
   
    Especifica el nivel de expansión de funciones insertadas para la compilación.  
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Default** - *\<none>*  
+  - **Predeterminada** - *\<none>*  
   
-  - **Disabled** - **/Ob0**  
+  - **Deshabilitado**  -  **/Ob0**  
   
-  - **OnlyExplicitInline** - **/Ob1**  
+  - **OnlyExplicitInline**  -  **/Ob1**  
   
-  - **AnySuitable** - **/Ob2**  
+  - **AnySuitable**  -  **/OB2**  
   
     Para obtener más información, consulte [/Ob (Expansión de funciones insertadas)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
@@ -437,15 +437,15 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
 - **ObjectFileName**  
   
-   Parámetro **String** opcional.  
+   Parámetro de **cadena** opcional.  
   
    Especifica un nombre de archivo objeto (.obj) o un directorio que se utilizará en lugar del predeterminado.  
   
-   Para obtener más información, consulte [/Fo (Nombre del archivo objeto)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
+   Para obtener más información, vea [/FO (nombre del archivo objeto)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
   
 - **ObjectFiles**  
   
-   Parámetro **String[]** opcional.  
+   Parámetro **String []** opcional.  
   
    Una lista de los archivos objeto.  
   
@@ -473,27 +473,27 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Para obtener más información, consulte [/openmp (Habilitar la compatibilidad con OpenMP 2.0)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
   
-- **Optimization**  
+- **Optimización**:  
   
-   Parámetro **String** opcional.  
+   Parámetro de **cadena** opcional.  
   
    Especifica diversas optimizaciones de código para la velocidad y el tamaño.  
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Disabled** - **/Od**  
+  - **Deshabilitado**  -  **/OD**  
   
-  - **MinSpace** - **/O1**  
+  - **MinSpace**  -  **/O1**  
   
-  - **MaxSpeed** - **/O2**  
+  - **MaxSpeed**  -  **/O2**  
   
-  - **Full** - **/Ox**  
+  - **Completo**  -  **/OX**  
   
-    Para obtener más información, consulte [/O (Opciones) (Optimizar código)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
+    Para obtener más información, vea [opciones/o (optimizar código)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
   
 - **PrecompiledHeader**  
   
-   Parámetro **String** opcional.  
+   Parámetro de **cadena** opcional.  
   
    Crear o utilizar un archivo de encabezado precompilado (.pch) durante la compilación.  
   
@@ -501,15 +501,15 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **NotUsing** - *\<none>*  
   
-  - **Create** - **/Yc**  
+  - **Crear**  -  **/YC**  
   
-  - **Use** - **/Yu**  
+  - **Usar**  -  **/Yu**  
   
     Para obtener más información, consulte [/Yc (Crear archivo de encabezado precompilado)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) y [/Yu (Utilizar el archivo de encabezado precompilado)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Consulte también los parámetros **PrecompiledHeaderFile** y **PrecompiledHeaderOutputFile** en esta tabla.  
   
 - **PrecompiledHeaderFile**  
   
-   Parámetro **String** opcional.  
+   Parámetro de **cadena** opcional.  
   
    Especifica un nombre de archivo de encabezado precompilado para crear o utilizar.  
   
@@ -517,7 +517,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
 - **PrecompiledHeaderOutputFile**  
   
-   Parámetro **String** opcional.  
+   Parámetro de **cadena** opcional.  
   
    Especifica un nombre de ruta de acceso a un encabezado precompilado en lugar de utilizar el nombre de ruta de acceso predeterminado.  
   
@@ -591,13 +591,13 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **MultiThreaded** - **/MT**  
+  - **Multiproceso**  -  **/MT**  
   
-  - **MultiThreadedDebug** - **/MTd**  
+  - **MultiThreadedDebug**  -  **/MTD**  
   
-  - **MultiThreadedDLL** - **/MD**  
+  - **MultiThreadedDLL**  -  **/MD**  
   
-  - **MultiThreadedDebugDLL** - **/MDd**  
+  - **MultiThreadedDebugDLL**  -  **/Mdd**  
   
     Para obtener más información, consulte [/MD, / MT, /LD (Utilizar la biblioteca en tiempo de ejecución)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
   
@@ -647,17 +647,17 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Default** - **/Zp1**  
+  - **Valor predeterminado**  -  **/Zp1**  
   
-  - **1Byte** - **/Zp1**  
+  - **1Byte**  -  **/Zp1**  
   
-  - **2Bytes** - **/Zp2**  
+  - **2Bytes**  -  **/Zp2**  
   
-  - **4Bytes** - **/Zp4**  
+  - **4Bytes**  -  **/Zp4**  
   
-  - **8Bytes** - **/Zp8**  
+  - **8Bytes**  -  **/Zp8**  
   
-  - **16Bytes** - **/Zp16**  
+  - **16Bytes**  -  **/Zp16**  
   
     Para obtener más información, consulte [/Zp (Alineación de miembros de Struct)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
   
@@ -679,11 +679,11 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
 - **TreatSpecificWarningsAsErrors**  
   
-   Parámetro **String[]** opcional.  
+   Parámetro **String []** opcional.  
   
    Trata la lista especificada de advertencias del compilador como errores.  
   
-   Para obtener más información, consulte la opción **/we**`n` en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Para obtener más información, vea la opción **/We** `n` en [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/We,/wo,/WV,/WX (nivel de advertencia)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWarningAsError**  
   
@@ -741,17 +741,17 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **TurnOffAllWarnings** - **/W0**  
+  - **TurnOffAllWarnings**  -  **/W0**  
   
-  - **Level1** - **/W1**  
+  - **Level1**  -  **/W1**  
   
-  - **Level2** - **/W2**  
+  - **Level2**  -  **/W2**  
   
-  - **Level3** - **/W3**  
+  - **Level3**  -  **/W3**  
   
-  - **Level4** - **/W4**  
+  - **Level4**  -  **/W4**  
   
-  - **EnableAllWarnings** - **/Wall**  
+  - **EnableAllWarnings**  -  **/Wall**  
   
     Para obtener más información, consulte la opción **/W**_n_ en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
@@ -801,7 +801,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Para obtener más información, consulte los parámetros **TLogReadFiles** y **TLogWriteFiles** en esta tabla.  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

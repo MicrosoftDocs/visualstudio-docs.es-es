@@ -1,5 +1,5 @@
 ---
-title: Atributo y elemento BuildOnLoad (Plantillas de Visual Studio)
+title: Atributo y elemento BuildOnLoad (plantillas de Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739959"
 ---
 # <a name="buildonload-attribute-and-element"></a>Atributo y elemento BuildOnLoad
 
-Especifica si se va a compilar el proyecto inmediatamente después de crearlo. **BuildOnLoad** es un atributo y un elemento.
+Especifica si se debe compilar el proyecto inmediatamente después de su creación. **BuildOnLoad** es un atributo y un elemento.
 
 Jerarquía de elementos:
 
@@ -33,7 +33,7 @@ Jerarquía de elementos:
     <BuildOnLoad>
 ```
 
-## <a name="element-syntax"></a>Sintaxis de elementos
+## <a name="element-syntax"></a>Sintaxis de los elementos
 
 ```xml
 <BuildOnLoad> true/false </BuildOnLoad>
@@ -47,7 +47,7 @@ Jerarquía de elementos:
 
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto para el elemento **BuildOnLoad.** El texto debe `true` `false`ser o , que indica si se va a compilar el proyecto inmediatamente después de crearlo.
+Se requiere un valor de texto para el elemento **BuildOnLoad** . El texto debe ser `true` o `false` , lo que indica si se va a compilar el proyecto inmediatamente después de su creación.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -55,7 +55,7 @@ Se requiere un valor de texto para el elemento **BuildOnLoad.** El texto debe `t
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestran los metadatos de una plantilla de C- cuando se utiliza **BuildOnLoad** como elemento:
+En el ejemplo siguiente se muestran los metadatos de una plantilla de C# cuando se usa **BuildOnLoad** como elemento:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -82,9 +82,9 @@ En el ejemplo siguiente se muestran los metadatos de una plantilla de C- cuando 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Elemento BuildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
-- [Elemento TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [TemplateContent (elemento)](../extensibility/templatecontent-element-visual-studio-templates.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301024"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89311396"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Herramientas y técnicas de depuración para ayudarle a escribir código de mayor calidad
 

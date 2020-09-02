@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657641"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular un caso de uso a documentos y diagramas
@@ -74,14 +74,14 @@ Puede vincular un caso de uso de un diagrama de casos de uso a otro diagrama o d
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular un documento compartido, elemento de OneNote o página web
 
-1. Obtenga la dirección URL del elemento compartido. Esto puede ser, por ejemplo, una ruta de acceso de archivo de red que empieza por ' \\ \\ ', o una página web o una dirección URL de SharePoint que empieza por ' http://', o un vínculo a una sección, página o párrafo de OneNote que empieza por ' OneNote: '.
+1. Obtenga la dirección URL del elemento compartido. Esto puede ser, por ejemplo, una ruta de acceso de archivo de red que empieza \\ \\ por ' ', una página web o una dirección URL de SharePoint que empieza por ' http://', o un vínculo a una sección, página o párrafo de OneNote que empieza por ' OneNote: '.
 
 2. En el cuadro de herramientas, haga clic en **artefacto** y, a continuación, haga clic en el diagrama de casos de uso.
 
 3. Con el nuevo artefacto seleccionado, escriba o pegue la dirección URL en la propiedad de **hipervínculo** .
 
     > [!NOTE]
-    > Si desea proporcionar una ruta de acceso de archivo, es mejor elegir un archivo en un área de trabajo común (empezando por ' \\ \\ ') o un archivo dentro de la solución de Visual Studio. Esto garantizará que la ruta de acceso del archivo seguirá siendo válida en el sistema de otro miembro del equipo o si se mueve la solución. Para agregar un documento, como un documento de Word, a la solución, haga clic con el botón secundario en la solución en Explorador de soluciones, seleccione **Agregar** y, a continuación, haga clic en **elemento existente**.
+    > Si desea proporcionar una ruta de acceso de archivo, es mejor elegir un archivo en un área de trabajo común (a partir de ' \\ \\ ') o en un archivo de la solución de Visual Studio. Esto garantizará que la ruta de acceso del archivo seguirá siendo válida en el sistema de otro miembro del equipo o si se mueve la solución. Para agregar un documento, como un documento de Word, a la solución, haga clic con el botón secundario en la solución en Explorador de soluciones, seleccione **Agregar** y, a continuación, haga clic en **elemento existente**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md) [diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md) [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [crear modelos para la aplicación](../modeling/create-models-for-your-app.md)

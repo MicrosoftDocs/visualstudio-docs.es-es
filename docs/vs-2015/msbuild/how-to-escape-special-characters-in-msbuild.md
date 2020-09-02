@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Utilizar caracteres de escape especiales en MSBuild | Microsoft Docs'
+title: Procedimiento Usar caracteres de escape especiales en MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94fc8d858e2db9bd1e00bb8770cf52672a900ab0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178347"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Cómo: Utilizar caracteres de escape especiales en MSBuild
@@ -26,7 +26,7 @@ ms.locfileid: "68178347"
 
 Ciertos caracteres tienen un significado especial en archivos del proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Algunos ejemplos de estos caracteres son los signos de punto y coma (;) y los asteriscos (*). Para obtener una lista completa de estos caracteres especiales, consulte [Caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md).  
   
- Para utilizar estos caracteres especiales con su significado literal en un archivo del proyecto, es preciso especificarlos con la sintaxis %*xx*, en que *xx* representa el valor hexadecimal ASCII del carácter.  
+ Para usar estos caracteres especiales como literales en un archivo de proyecto, se deben especificar con la sintaxis%*XX*, donde *XX* representa el valor hexadecimal ASCII del carácter.  
   
 ## <a name="msbuild-special-characters"></a>Caracteres especiales de MSBuild  
  Un ejemplo de dónde se utilizan los caracteres especiales se encuentra en el atributo `Include` de las listas de elementos. Por ejemplo, la siguiente lista de elementos declara dos elementos: `MyFile.cs` y `MyClass.cs`.  
@@ -45,6 +45,6 @@ Ciertos caracteres tienen un significado especial en archivos del proyecto de [!
   
 - Utilice la notación %*xx* en lugar del carácter especial, en que *xx* representa el valor hexadecimal del carácter ASCII. Por ejemplo, para usar un asterisco (*) como un carácter literal, utilice el valor `%2A`.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
- [Elementos de](../msbuild/msbuild-items.md) [MSBuild](msbuild.md)
+ [Elementos de ](msbuild.md) [MSBuild](../msbuild/msbuild-items.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41d3ef0efd4c9eb8eab16bd12cc79f8df1449d65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670689"
 ---
 # <a name="how-to-specify-build-events-c"></a>Cómo: Especificar eventos de compilación (C#)
@@ -37,7 +37,7 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
 
 1. En el **Explorador de soluciones**, seleccione el proyecto para el que quiere especificar el evento de compilación.
 
-2. En el menú **Proyecto**, haga clic en **Propiedades**.
+2. En el menú **Proyecto** , haga clic en **Propiedades**.
 
 3. Seleccione la pestaña **Eventos de compilación**.
 
@@ -49,12 +49,12 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
 5. En el cuadro **Línea de comandos del evento posterior a la compilación**, especifique la sintaxis del evento de compilación.
 
     > [!NOTE]
-    > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat.  Por ejemplo, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. En el cuadro **Ejecutar el evento posterior a la compilación**, especifique en qué condiciones se ejecuta el evento posterior a la compilación.
 
     > [!NOTE]
-    > Para agregar una sintaxis más larga o para seleccionar cualquier macro de compilación desde el [cuadro de diálogo Línea de comandos del evento anterior/posterior a la compilación](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), haga clic en el botón de puntos suspensivos ( **...** ) para mostrar un cuadro de edición.
+    > Para agregar sintaxis larga o para seleccionar cualquier macro de compilación del [cuadro de diálogo línea de comandos del evento anterior/posterior a la](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)compilación, haga clic en el botón de puntos suspensivos (**...**) para mostrar un cuadro de edición.
 
      La sintaxis del evento de compilación puede incluir cualquier comando que sea válido en un símbolo del sistema o en un archivo .bat. El nombre de un archivo por lotes debe ir precedido por `call` para garantizar que todos los comandos posteriores se ejecuten.
 
@@ -75,7 +75,7 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
 
 1. Cree una aplicación de consola para el comando. Desde el menú **Archivo**, pulse **Nuevo** y, después, haga clic en **Proyecto**.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** , haga clic en **Windows** y, después, haga clic en la plantilla **Aplicación de consola**. Dé un nombre al proyecto `ChangeOSVersionCS`.
+2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**, haga clic en **Windows** y, después, haga clic en la plantilla **Aplicación de consola**. Dé un nombre al proyecto `ChangeOSVersionCS`.
 
 3. En Program.cs, agregue la línea siguiente a las demás instrucciones `using` de la parte superior del archivo:
 
@@ -137,7 +137,7 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
 
     El comando toma dos argumentos: la ruta del manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente Projectname.publish), y la nueva versión de sistema operativo.
 
-5. Compile el proyecto. En el menú **Compilar** , haga clic en **Compilar solución**.
+5. Compile el proyecto. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 6. Copie el archivo .exe en un directorio como `C:\TEMP\ChangeOSVersionVB.exe`.
 
@@ -147,7 +147,7 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
 
 1. Cree una aplicación Windows para que se publique el proyecto. Desde el menú **Archivo**, pulse **Nuevo** y, después, haga clic en **Proyecto**.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** , haga clic en **Windows** y, después, haga clic en la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `CSWinApp`.
+2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**, haga clic en **Windows** y, después, haga clic en la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `CSWinApp`.
 
 3. Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.
 
@@ -163,7 +163,7 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. En el Diseñador de proyectos, haga clic en la pestaña **Eventos de compilación** y haga clic en el botón **Edición posterior a la compilación**.
+6. En el diseñador de proyectos, haga clic en la pestaña **eventos de compilación** y haga clic en el botón **Edición posterior a la compilación** .
 
 7. En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:
 
@@ -183,5 +183,5 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Vea también
- [Página eventos de compilaciónC#,](../ide/reference/build-events-page-project-designer-csharp.md) [cuadro de diálogo línea de comandos](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) del diseñador de proyectos () evento anterior o posterior a la compilación [Cómo: especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [compilar y generar](../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>Consulte también
+ [Página eventos de compilación,](../ide/reference/build-events-page-project-designer-csharp.md) [cuadro de diálogo línea de comandos](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) del diseñador de proyectos (C#) eventos anteriores o posteriores a la compilación [Cómo: especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [compilar y generar](../ide/compiling-and-building-in-visual-studio.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547815"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizar términos preferidos
@@ -26,11 +26,11 @@ ms.locfileid: "85547815"
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1726: usar términos preferidos](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|UsePreferredTerms|
 |Identificador de comprobación|CA1726|
-|Categoría|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Cambio problemático|Problemático: cuando se desencadena en ensamblados<br /><br /> Sin interrupción: cuando se desencadena en parámetros de tipo|
 
 ## <a name="cause"></a>Causa

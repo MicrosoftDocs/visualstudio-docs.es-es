@@ -1,5 +1,5 @@
 ---
-title: '&lt;compatibleFrameworks&gt; elemento (implementación ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento compatibleFrameworks (implementación ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,13 +16,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef54062bd74c9395e187503dd12db1c0cd70d822
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675417"
 ---
-# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; elemento (implementación ClickOnce)
+# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;elemento compatibleFrameworks (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identifica las versiones de .NET Framework en las que se puede instalar y ejecutar esta aplicación.  
@@ -43,28 +43,28 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 </ compatibleFrameworks>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
- El `compatibleFrameworks` elemento es necesario para los manifiestos de implementación que tienen como destino el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] en tiempo de ejecución proporcionado por [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] o una versión posterior. El `compatibleFrameworks` elemento contiene uno o varios `framework` elementos que especifican las versiones de .NET Framework en el que se puede ejecutar esta aplicación. El [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] en tiempo de ejecución ejecutará la aplicación en la primera disponible `framework` en esta lista.  
+## <a name="elements-and-attributes"></a>Atributos y elementos  
+ El `compatibleFrameworks` elemento es necesario para los manifiestos de implementación que tienen como destino el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tiempo de ejecución proporcionado por [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] o posterior. El `compatibleFrameworks` elemento contiene uno o más `framework` elementos que especifican las versiones .NET Framework en las que se puede ejecutar esta aplicación. El [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tiempo de ejecución ejecutará la aplicación en la primera disponible `framework` en esta lista.  
   
- En la tabla siguiente se enumera el atributo que el `compatibleFrameworks` admite el elemento.  
+ En la tabla siguiente se muestra el atributo que el `compatibleFrameworks` elemento admite.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`S` `upportUrl`|Opcional. Especifica una dirección URL donde se puede descargar la versión de .NET Framework compatible preferida.|  
+|`S` `upportUrl`|Opcional. Especifica una dirección URL en la que se puede descargar la versión de .NET Framework compatible preferida.|  
   
 ## <a name="framework"></a>marco de trabajo  
- Obligatorio. En la tabla siguiente se enumera los atributos que el `framework` admite el elemento.  
+ Necesario. En la tabla siguiente se enumeran los atributos que `framework` admite el elemento.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`targetVersion`|Obligatorio. Especifica el número de versión de .NET Framework de destino.|  
-|`profile`|Obligatorio. Especifica el perfil de .NET Framework de destino.|  
-|`supportedRuntime`|Obligatorio. Especifica el número de versión del tiempo de ejecución asociada con el destino es .NET Framework.|  
+|`targetVersion`|Necesario. Especifica el número de versión del .NET Framework de destino.|  
+|`profile`|Necesario. Especifica el perfil de la .NET Framework de destino.|  
+|`supportedRuntime`|Necesario. Especifica el número de versión del tiempo de ejecución asociado a la .NET Framework de destino.|  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
   
 ## <a name="example"></a>Ejemplo  
- El siguiente ejemplo de código muestra un `compatibleFrameworks` elemento en un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de implementación. Esta implementación se puede ejecutar en el [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)]. También puede ejecutar en el [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] porque es un superconjunto de la [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)].  
+ En el ejemplo de código siguiente se muestra un `compatibleFrameworks` elemento en un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de implementación. Esta implementación se puede ejecutar en el [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] . También se puede ejecutar en [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] porque es un superconjunto de [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] .  
   
 ```  
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">  
@@ -75,5 +75,5 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 </compatibleFrameworks>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Manifiesto de la implementación ClickOnce](../deployment/clickonce-deployment-manifest.md)

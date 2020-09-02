@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef861d13387c013659e5e4c1714680b71896858c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657863"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
@@ -46,7 +46,7 @@ Este cuadro de diálogo permite definir la configuración del proyecto de [!INCL
  **No** Desactiva la generación del archivo de registro de compilación.
 
 ## <a name="build-timing"></a>Tiempo de compilación
- **Sí** Activa el control de tiempo de compilación. Si se selecciona, se muestra en la ventana de salida el tiempo que se tarda en completar la compilación. Para más información, vea [Ventana de salida](../../ide/reference/output-window.md).
+ **Sí** Activa el control de tiempo de compilación. Si se selecciona, se muestra en la ventana de salida el tiempo que se tarda en completar la compilación. Para más información, consulte [Ventana Resultados](../../ide/reference/output-window.md).
 
  **No** Desactiva el tiempo de compilación.
 
@@ -69,5 +69,5 @@ Este cuadro de diálogo permite definir la configuración del proyecto de [!INCL
 
  **Mostrar todos los archivos** Configura **Explorador de soluciones** para mostrar los archivos del proyecto y los archivos del disco en la carpeta del proyecto.
 
-## <a name="see-also"></a>Otras referencias
- [CompilarC++ c/programas](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) [referencia de c/C++ Building](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
+## <a name="see-also"></a>Consulte también
+ [Compilar programas de c/C++](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) [referencia de compilación de c/c++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

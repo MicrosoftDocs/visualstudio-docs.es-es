@@ -1,5 +1,5 @@
 ---
-title: Implementar aplicaciones de Windows Store
+title: Implementar aplicaciones de la tienda Windows
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177474"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Implementar aplicaciones de la Tienda Windows desde Visual Studio
@@ -32,7 +32,7 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
 - Cuando el destino es un dispositivo remoto, Visual Studio copia los archivos necesarios en el equipo remoto y registra la aplicación en ese dispositivo.
 
-  Implementación es automática cuando se depura la aplicación desde Visual Studio mediante el uso de la **Iniciar depuración** opción (teclado: F5) o el **iniciar sin depurar** opción (teclado: CTRL + F5). También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
+  La implementación es automática cuando se depura la aplicación desde Visual Studio mediante la opción **Iniciar depuración** (teclado: F5) o la opción **Iniciar sin depurar** (teclado: CTRL + F5). También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
 
 - Pruebas ad hoc en un equipo local o remoto.
 
@@ -40,7 +40,7 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
 - Implementación de una aplicación que se depurará cuando la inicie otra aplicación u otro método.
 
-## <a name="BKMK_In_this_topic"></a> En este tema
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> En este tema
  En este tema, puede aprender lo siguiente:
 
  [Cómo implementar una aplicación de la Tienda Windows](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,18 +49,18 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
  [Opciones de implementación](#BKMK_Deployment_options)
 
-## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Cómo implementar una aplicación de la Tienda Windows
+## <a name="how-to-deploy-a-windows-store-app"></a><a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Cómo implementar una aplicación de la tienda Windows
  La implementación manual de una aplicación es un proceso simple:
 
 1. Si implementa a un dispositivo remoto, especifique el nombre o la dirección IP del dispositivo en la página de proyecto de la propiedad del proyecto de inicio de la aplicación. Los pasos necesarios se mencionan más adelante dentro de este tema.
 
 2. En la barra de herramientas de Visual Studio del depurador, seleccione el destino de la implementación en la lista desplegable que hay junto al botón **Iniciar depuración** .
 
-     ![Ejecutar en el equipo Local](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
+     ![Ejecución en la máquina local](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
 3. En el menú **Compilar** , elija **Implementar**
 
-## <a name="BKMK_How_to_specify_a_remote_device"></a> Cómo especificar un dispositivo remoto
+## <a name="how-to-specify-a-remote-device"></a><a name="BKMK_How_to_specify_a_remote_device"></a> Cómo especificar un dispositivo remoto
  **Requisitos previos**
 
  Para implementar una aplicación en un dispositivo remoto:
@@ -87,7 +87,7 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
    **Cómo especificar el dispositivo remoto en una página de proyecto de JavaScript o Visual C++**
 
-   ![C&#43; &#43; propiedades para la depuración remota del proyecto](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")
+   ![Propiedades del proyecto de C++ para la depuración remota](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")
 
 5. Elige **Depurador remoto** en la lista **Depurador para iniciar** .
 
@@ -95,16 +95,16 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
    **Cómo especificar el dispositivo remoto en una página de proyecto de Visual C# y Visual Basic**
 
-   ![Administra las propiedades del proyecto para la depuración remota](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")
+   ![Propiedades de proyectos administrados para la depuración remota](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")
 
 7. Elige **Equipo remoto** en la lista **Dispositivo de destino** .
 
 8. Escribe el nombre de red del dispositivo remoto en el cuadro **Equipo remoto** o haz clic en **Buscar** para elegir el dispositivo en el cuadro de diálogo **Seleccionar conexión del depurador remoto** .
 
-## <a name="BKMK_Deployment_options"></a> Opciones de implementación
+## <a name="deployment-options"></a><a name="BKMK_Deployment_options"></a> Opciones de implementación
  Puede establecer las siguientes opciones de implementación en la página de propiedades de depuración del proyecto de inicio.
 
- **Permitir bucle invertido de red** por motivos de seguridad, un [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] no se permite realizar llamadas de red en el dispositivo está instalado en aplicación que está instalada en la manera estándar. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar su aplicación a la [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], debe probarla sin la exención.
+ **Permitir bucle invertido de red** Por motivos de seguridad, una [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicación que se instala de forma estándar no puede realizar llamadas de red al dispositivo en el que está instalada. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar su aplicación a la [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], debe probarla sin la exención.
 
  Para quitar la exención de bucle invertido de red en la aplicación:
 
@@ -112,11 +112,11 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
 - En JavaScript y en la página de propiedades de depuración, establezca el valor de **Permitir bucle invertido de red** en **No**.
 
-  **No iniciar, pero depurar mi código al empezar (C# y VB) o iniciar aplicación (JavaScript y C++)** para configurar la implementación para iniciar automáticamente una sesión de depuración cuando se inicia la aplicación:
+  **No iniciar, pero depurar mi código al iniciar (C# y VB)/Iniciar aplicación (JavaScript y C++)** Para configurar la implementación para que inicie automáticamente una sesión de depuración cuando se inicie la aplicación:
 
 - En C# y en la página de depuración de VB, active la casilla **No iniciar, pero depurar mi código al empezar** .
 
 - En JavaScript y en la página de propiedades de depuración, establezca el valor de **Iniciar aplicación** en **Sí**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ejecutar aplicaciones desde Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

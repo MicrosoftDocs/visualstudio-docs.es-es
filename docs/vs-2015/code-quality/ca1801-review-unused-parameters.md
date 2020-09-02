@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547789"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
@@ -28,11 +28,11 @@ ms.locfileid: "85547789"
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1801: revisar los parámetros no usados](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |Identificador de comprobación|CA1801|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: Si cambia el miembro para usar el parámetro dentro de su cuerpo.<br /><br /> Problemático: Si quita el parámetro y es visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Causa
