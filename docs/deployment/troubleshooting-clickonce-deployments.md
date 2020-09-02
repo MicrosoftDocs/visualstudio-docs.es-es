@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235178"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solución de problemas de implementaciones de ClickOnce
@@ -30,7 +30,7 @@ Este tema le ayuda a diagnosticar y resolver los problemas más comunes con las 
 
  En la mayoría de los casos, una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se descargará en el equipo de un usuario y se ejecutará sin problemas. Sin embargo, hay algunos casos en los que los problemas de configuración del servidor web o de la aplicación pueden provocar problemas imprevistos.
 
-## <a name="deployment-considerations"></a>Consideraciones de la implementación
+## <a name="deployment-considerations"></a>Consideraciones sobre las implementaciones
 
  [Cómo: establecer una ubicación de archivo de registro personalizada para los errores de implementación de ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
 
@@ -60,4 +60,4 @@ Este tema le ayuda a diagnosticar y resolver los problemas más comunes con las 
 
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
-- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

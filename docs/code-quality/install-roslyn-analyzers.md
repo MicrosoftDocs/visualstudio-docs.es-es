@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89091456"
 ---
-# <a name="install-third-party-analyzers"></a>Instalar analizadores de terceros
+# <a name="install-third-party-analyzers"></a>Instalación de analizadores de terceros
 
 Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platform (*Roslyn*). Estos analizadores siempre están activados. Puede instalar analizadores adicionales como paquetes NuGet o como extensiones de Visual Studio en archivos *VSIX* .
 

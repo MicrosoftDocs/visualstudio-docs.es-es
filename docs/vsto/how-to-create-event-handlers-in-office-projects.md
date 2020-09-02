@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538312"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Cómo: crear controladores de eventos en proyectos de Office
@@ -50,7 +50,7 @@ ms.locfileid: "85538312"
 
      Visual Studio completa automáticamente la línea de código, crea el controlador de eventos y mueve el punto de inserción al controlador de eventos recién creado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
 - [Tutorial: programar contra eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Compilar soluciones de Office](../vsto/building-office-solutions.md)

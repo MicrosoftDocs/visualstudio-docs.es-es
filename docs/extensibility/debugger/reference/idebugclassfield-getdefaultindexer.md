@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer ? Microsoft Docs
+title: 'IDebugClassField:: GetDefaultIndexer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734421"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
 ```
 
 ## <a name="parameters"></a>Parámetros
-`pbstrIndexer`[fuera] Devuelve una cadena que contiene el nombre del indizador predeterminado.
+`pbstrIndexer` enuncia Devuelve una cadena que contiene el nombre del indizador predeterminado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK o devuelve S_FALSE si no hay ningún indizador predeterminado. De lo contrario, devuelve un código de error.
+ Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay ningún indizador predeterminado. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El indizador predeterminado de una clase es `Default` la propiedad que se marca como la propiedad para los accesos de matriz. Esto es [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]específico de . Este es un ejemplo de un [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] indexador predeterminado declarado y cómo se utiliza.
+ El indizador predeterminado de una clase es la propiedad que se marca como la `Default` propiedad para los accesos de matriz. Esto es específico de [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] . A continuación se muestra un ejemplo de un indizador predeterminado declarado en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] y cómo se usa.
 
 ```vb
 Imports System.Collections;

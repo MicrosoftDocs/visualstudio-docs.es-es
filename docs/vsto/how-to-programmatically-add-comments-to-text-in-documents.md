@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538118"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Cómo: agregar comentarios al texto en documentos mediante programación
@@ -46,6 +46,6 @@ ms.locfileid: "85538118"
 ## <a name="robust-programming"></a>Programación sólida
  Para cambiar las iniciales del usuario que Word agrega a los comentarios, use la propiedad <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: quitar todos los comentarios de documentos mediante programación](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Elemento host de documento](../vsto/document-host-item.md)

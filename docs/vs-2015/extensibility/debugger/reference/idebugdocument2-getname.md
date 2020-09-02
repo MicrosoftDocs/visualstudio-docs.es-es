@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Microsoft Docs
+title: 'IDebugDocument2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09456b20faf4d5f5ea09baa55e0a7fd78a19a95c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186645"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
@@ -42,17 +42,17 @@ int GetName( 
   
 #### <a name="parameters"></a>Parámetros  
  `gnType`  
- [in] Un valor de la [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeración que determina el tipo de nombre para devolver.  
+ de Un valor de la enumeración [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) que determina el tipo de nombre que se va a devolver.  
   
  `pbstrFileName`  
- [out] Devuelve una cadena que contiene el nombre del documento.  
+ enuncia Devuelve una cadena que contiene el nombre del documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- Este método, por ejemplo, puede devolver el nombre del documento como un título o como un nombre de archivo o incluso parte de un nombre de archivo.  
+## <a name="remarks"></a>Observaciones  
+ Por ejemplo, este método puede devolver el nombre del documento como título o como un nombre de archivo o incluso parte de un nombre de archivo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c40aca343821f26213ee9e609a341918b9a7ba9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187317"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Determina si se permite la búsqueda de información de depuración desde archivos .dbg.  
+Determina si se permite la información de depuración de los archivos. dbg.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,10 +32,10 @@ HRESULT RestrictDBGAccess();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cualquier valor devuelto distinto `S_OK` para evitar que se busca información de depuración desde archivos .dbg.  
+ Cualquier valor devuelto distinto de `S_OK` para evitar la búsqueda de información de depuración de archivos. dbg.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

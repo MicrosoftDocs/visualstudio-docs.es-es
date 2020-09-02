@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 281d9dc18ae1d0550ba844e58d4e39c3723c8dfb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538156"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Cómo: asignar esquemas a documentos de Word en Visual Studio
@@ -57,12 +57,12 @@ ms.locfileid: "85538156"
 
 8. Asigne un alias o haga clic en **Aceptar** para agregar el esquema sin un alias.
 
-9. Haga clic en **Aceptar**.
+9. Haga clic en **OK**.
 
      Se abre la ventana **estructura XML** .
 
 10. Arrastre los elementos desde la ventana **estructura XML** hasta los lugares del documento donde desea que se creen los controles correspondientes.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [Esquemas y datos XML en personalizaciones de nivel de documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

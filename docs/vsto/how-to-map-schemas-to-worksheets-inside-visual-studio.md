@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538143"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Cómo: asignar esquemas a hojas de cálculo en Visual Studio
@@ -55,7 +55,7 @@ ms.locfileid: "85538143"
 
 7. Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abrir**.
 
-8. Haga clic en **Aceptar**.
+8. Haga clic en **OK**.
 
      El esquema se representa en la ventana de **código fuente XML** . En el proyecto, <xref:System.Data.DataSet> se genera un tipo basado en el esquema y <xref:System.Windows.Forms.BindingSource> se crea un.
 

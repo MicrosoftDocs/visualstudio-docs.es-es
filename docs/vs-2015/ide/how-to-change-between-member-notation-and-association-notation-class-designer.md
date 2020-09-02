@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6a9a15b7284c647cb115c34b5655bdcaa7402ce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663566"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Cómo: Cambiar entre notación de miembro y notación de asociación (Diseñador de clases)
@@ -46,5 +46,5 @@ En el Diseñador de clases, puede cambiar el modo en que el diagrama de clase re
 
      La línea de asociación desaparece y la propiedad se muestra en el compartimiento correspondiente dentro de su forma de tipo en el diagrama.
 
-## <a name="see-also"></a>Vea también
- [Cómo: crear la herencia entre tipos (diseñador de clases)](../ide/how-to-create-inheritance-between-types-class-designer.md) [Cómo: ver la herencia entre tipos (diseñador de clases)](../ide/how-to-view-inheritance-between-types-class-designer.md) [ver tipos y relaciones (diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md) [Cómo: visualizar una asociación de colecciones (diseñador de clases) ](../ide/how-to-visualize-a-collection-association-class-designer.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: crear la herencia entre tipos (diseñador de clases)](../ide/how-to-create-inheritance-between-types-class-designer.md) [Cómo: ver la herencia entre tipos (diseñador de clases)](../ide/how-to-view-inheritance-between-types-class-designer.md) [ver tipos y relaciones (diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md) [Cómo: visualizar una asociación de colecciones (diseñador de clases)](../ide/how-to-visualize-a-collection-association-class-designer.md)

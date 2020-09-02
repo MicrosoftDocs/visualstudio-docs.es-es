@@ -1,5 +1,5 @@
 ---
-title: Variante de formato de destino de representación de 16 BPP | Microsoft Docs
+title: Variante de formato de destino de la presentación 16 bpp| Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157572"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp (Representar variante de formato de destino)
@@ -47,7 +47,7 @@ Establece el formato de píxeles en DXGI_FORMAT_B5G6R5_UNORM para todos los obje
  Como el formato B5G6R5 no tiene ningún canal alfa, el contenido alfa no se conserva con esta variante. Si la presentación de su aplicación requiere un canal alfa en el objetivo de presentación, no puede simplemente cambiar al formato B5G6R5.  
   
 ## <a name="example"></a>Ejemplo  
- El **16bpp Render Target Format** variante se puede reproducir para objetivos de presentación creados utilizando `CreateTexture2D` mediante código similar al siguiente:  
+ La variante de **formato de destino de representación 16 BPP** se puede reproducir para los destinos de representación creados mediante el uso de `CreateTexture2D` código como el siguiente:  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  

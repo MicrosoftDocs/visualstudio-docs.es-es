@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb759faff99b641f24df87f73bc1d3d52b6635cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663559"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Cómo: Configurar proyectos para múltiples plataformas de destino
@@ -31,7 +31,7 @@ ms.locfileid: "72663559"
 
 1. En el menú **Compilar**, haga clic en **Configuration Manager**.
 
-2. En el cuadro **Plataforma de soluciones activas**, seleccione la plataforma que quiere establecer como destino de la solución o seleccione **\<Nuevo>** para crear una plataforma. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compilará la aplicación para que tenga como destino la plataforma que se establece como la plataforma activa en el cuadro de diálogo **Configuration Manager**.
+2. En el cuadro **Plataforma de soluciones activas**, seleccione la plataforma que quiere establecer como destino de la solución o seleccione **\<New>** para crear una plataforma. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compilará la aplicación para que tenga como destino la plataforma que se establece como la plataforma activa en el cuadro de diálogo **Configuration Manager**.
 
 ## <a name="removing-a-platform"></a>Quitar una plataforma
  Si se da cuenta de que no necesita una plataforma, puede quitarla mediante el cuadro de diálogo Configuration Manager. Esta acción quitará todas las configuraciones de soluciones y proyectos que haya configurado para esa combinación de configuración y destino.
@@ -40,7 +40,7 @@ ms.locfileid: "72663559"
 
 1. En el menú **Compilar**, haga clic en **Configuration Manager**.
 
-2. En el cuadro **Plataforma de soluciones activas**, seleccione **\<Editar>** . Se abre el cuadro de diálogo **Editar plataformas de solución**.
+2. En el cuadro **Plataforma de soluciones activas**, seleccione **\<Edit>** . Se abre el cuadro de diálogo **Editar plataformas de solución**.
 
 3. Haga clic en la plataforma que quiera quitar y haga clic en **Quitar**.
 
@@ -63,5 +63,5 @@ ms.locfileid: "72663559"
 
    Se puede tener una plataforma de nivel de solución establecida, por ejemplo, en [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] y no tener ningún proyecto dentro de esa solución que tenga como destino la misma plataforma. También se pueden tener varios proyectos en la solución, cada uno de ellos con diferentes plataformas de destino. Se recomienda que, si tiene una de estas situaciones, cree una configuración con un nombre descriptivo para evitar confusiones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md) [Descripción](../ide/understanding-build-configurations.md) [de las configuraciones de compilación compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

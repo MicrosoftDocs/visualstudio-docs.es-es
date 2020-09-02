@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893273"
 ---
 # <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
@@ -61,7 +61,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 2. En el cuadro de diálogo **nuevo archivo** , seleccione la categoría **General** de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
-3. Selecciona **Open** (Abrir).
+3. seleccione **Open**(Abrir).
 
    El nuevo archivo *. ruleset* se abre en el editor de conjuntos de reglas.
 

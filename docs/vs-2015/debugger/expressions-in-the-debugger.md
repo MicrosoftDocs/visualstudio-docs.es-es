@@ -1,5 +1,5 @@
 ---
-title: Expresiones en el depurador ? Microsoft Docs
+title: Expresiones en el depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301420"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315036"
 ---
 # <a name="expressions-in-the-debugger"></a>Expresiones en el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Uso de funciones intrínsecas del depurador para mantener el estado  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Usar funciones intrínsecas del depurador para mantener el estado  
  Las funciones intrínsecas del depurador proporcionan una manera de llamar a determinadas funciones de C/C++ en expresiones sin cambiar el estado de la aplicación.  
   
  Funciones intrínsecas del depurador:  
@@ -110,7 +110,7 @@ int main()
 |Área|Funciones intrínsecas|  
 |----------|-------------------------|  
 |**Longitud de la cadena**|strlen, wcslen, strnlen, wcsnlen|  
-|**Comparación de cadenas**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
+|**Comparación de cadena**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
 |**Búsqueda de cadena**|strchr, wcschr, strstr, wcsstr|  
 |**Win32**|GetLastError(), TlsGetValue()|  
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Estas funciones requieren el proceso que se depura para ejecutarse en Windows 8. La depuración de archivos de volcado de memoria generados por un dispositivo con Windows 8 también requiere que el equipo de Visual Studio ejecute Windows 8. Sin embargo, si depura un dispositivo con Windows 8 de forma remota, el equipo de Visual Studio puede ejecutar Windows 7.|  

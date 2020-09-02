@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95a537c703d4afd68bb291205e0c7da8d9b8fc59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143013"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica por qué se inició el proceso para la depuración.  
+Especifica la razón por la que se inició el proceso para la depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -49,30 +49,30 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>Parámetros  
  DEBUG_REASON_ERROR  
- Se produjo un error no especificado (Esto se usa como una condición predeterminada cuando ninguno de los otros motivos de ajuste).  
+ Se produjo un error no específico (se usa como condición predeterminada cuando no cabe ninguna de las otras razones).  
   
  DEBUG_REASON_USER_LAUNCHED  
- Se inició el proceso a petición del usuario.  
+ El proceso se inició en la solicitud del usuario.  
   
  DEBUG_REASON_USER_ATTACHED  
- El proceso de ejecución ya se ha adjuntado a por el usuario.  
+ El usuario ha adjuntado el proceso que ya se está ejecutando.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- El proceso se adjunta automáticamente a cuando se inició.  
+ El proceso se adjuntó automáticamente al iniciarse.  
   
  DEBUG_REASON_CAUSALITY  
- El proceso se inició debido a un *Just-In-Time* eventos de depuración (JIT).  
+ El proceso se ha iniciado debido a un evento de depuración *Just-in-Time* (JIT).  
   
-## <a name="remarks"></a>Comentarios  
- Devuelve el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.  
+## <a name="remarks"></a>Observaciones  
+ Se devuelve desde el método [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

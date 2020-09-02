@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143678"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Vista Punteros de instrucción (IP): datos de muestreo de memoria de .NET
@@ -25,16 +25,16 @@ La vista Punteros de instrucción para los datos de generación de perfiles de a
   
  Solo se muestran los valores exclusivos.  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre de proceso**|Nombre del proceso.|  
+|**Nombre del proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|El nombre del módulo que contiene la instrucción.|  
 |**Ruta de acceso del módulo**|La ruta de acceso del módulo que contiene la instrucción.|  
-|**Archivo de código fuente**|El archivo de origen que contiene el nombre de la instrucción.|  
+|**Archivo de origen**|El archivo de origen que contiene el nombre de la instrucción.|  
 |**Nombre de la función**|Nombre de la función.|  
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
-|**Dirección de la función**|La dirección de inicio de la función.|  
+|**Dirección de función**|La dirección de inicio de la función.|  
 |**Línea de inicio del origen**|Número de línea inicial en el archivo de origen donde se realizó la asignación.|  
 |**Línea de finalización del origen**|Número de línea final en el archivo de origen donde se realizó la asignación.|  
 |**Carácter de inicio en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde se realizó la asignación.|  
@@ -45,5 +45,5 @@ La vista Punteros de instrucción para los datos de generación de perfiles de a
 |**Bytes exclusivos**|Número de bytes de memoria asignados durante la generación de perfiles que ha asignado la instrucción.|  
 |**Porcentaje de bytes exclusivos**|Porcentaje de todos los bytes de memoria asignados durante la generación de perfiles que ha asignado la instrucción.|  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)

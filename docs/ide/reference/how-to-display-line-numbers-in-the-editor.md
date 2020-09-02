@@ -1,6 +1,6 @@
 ---
 title: Visualización de los números de línea del código
-ms.date: 03/28/2019
+ms.date: 08/28/2020
 ms.topic: how-to
 helpviewer_keywords:
 - line numbers, displaying
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6e0c50ab41f3d18458c736e48b0a4360b8b286
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 02d26a452315f144e52a78d7fcea737d39052f59
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770359"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89091478"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Procedimiento Visualización de los números de línea en el editor
 
@@ -32,8 +32,8 @@ Puede mostrar u ocultar la numeración de las líneas del código.
 
    ![Opción para mostrar los números de línea en el editor de VS](../../ide/reference/media/line-numbers-option.png)
 
-> [!TIP]
-> Los números de línea no se agregan al código; solo sirven de referencia. Si quiere imprimir los números de línea, en el cuadro de diálogo **Imprimir**, active la casilla **Incluir números de línea**.
+> [!NOTE]
+> Los números de línea no se agregan al código; solo sirven de referencia.
 
 ## <a name="see-also"></a>Vea también
 

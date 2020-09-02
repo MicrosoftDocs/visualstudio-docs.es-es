@@ -1,5 +1,5 @@
 ---
-title: UsedCommands (elemento) | Documentos de Microsoft
+title: Elemento UsedCommands | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba37458e0f8abca27047574170ab8aa3cc7a44ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186292"
 ---
 # <a name="usedcommands-element"></a>UsedCommands (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-UsedCommands (elemento) agrupa elementos UsedCommand y otras agrupaciones UsedCommands.  
+El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones UsedCommands.  
   
- UsedCommands (elemento) es opcional. Si no se llama comandos definidos fuera de su paquete, no es necesario incluir en esta sección en el archivo .vsct.  
+ El elemento UsedCommands es opcional. Si no llama a comandos definidos fuera del paquete, no tiene que incluir esta sección en el archivo. Vsct.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,21 +40,21 @@ UsedCommands (elemento) agrupa elementos UsedCommand y otras agrupaciones UsedCo
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|El comando que se implementa por otro código.|  
+|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|Comando implementado por otro código.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos (por ejemplo, los elementos de menú, menús, barras de herramientas y cuadros combinados) que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE).|  
+|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos (por ejemplo, elementos de menú, menús, barras de herramientas y cuadros combinados) que un VSPackage proporciona al entorno de desarrollo integrado (IDE).|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -66,6 +66,6 @@ UsedCommands (elemento) agrupa elementos UsedCommand y otras agrupaciones UsedCo
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [UsedCommand (elemento)](../extensibility/usedcommand-element.md)   
+## <a name="see-also"></a>Consulte también  
+ [Elemento UsedCommand](../extensibility/usedcommand-element.md)   
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

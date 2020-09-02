@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress::GetAddress | Documentos de Microsoft
+title: 'IDebugAddress:: GetAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4d3263ca020f491e0c1cf20ee49792cacfbc362
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186689"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Devuelve una estructura que describe un objeto y su ubicación dentro de su ámbito o el contenedor.  
+Devuelve una estructura que describe un objeto y su ubicación dentro de su ámbito o contenedor.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +40,13 @@ int GetAddress(
   
 #### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [in, out] Un [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura que se rellena mediante este método.  
+ [in, out] [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura rellenada por este método.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura se pasa a este método, que, a continuación, se rellena con la información adecuada. Cómo se interpreta esta información depende del tipo de información que se devuelve como el propio controlador de símbolos. Consulte [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) para obtener más detalles.  
+ La estructura de [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) se pasa a este método, que, a su vez, la rellena con la información adecuada. La forma en que se interpreta esta información depende del tipo de información devuelta y del propio controlador de símbolos. Consulte [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) para obtener más detalles.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

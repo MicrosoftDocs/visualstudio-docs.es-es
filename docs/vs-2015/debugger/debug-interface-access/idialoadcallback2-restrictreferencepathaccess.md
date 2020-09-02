@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce0f2b896b60a13635818249e9faf552f3070828
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187309"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Determina si se permite la búsqueda de un archivo .pdb en la ruta de acceso donde se encuentra el archivo .exe.  
+Determina si se permite buscar un archivo. pdb en la ruta de acceso donde se encuentra el archivo. exe.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,10 +32,10 @@ HRESULT RestrictReferencePathAccess();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cualquier código de retorno distinto `S_OK` para evitar que busca un archivo .pdb en la ruta de acceso donde se encuentra el archivo .exe.  
+ Cualquier código de retorno distinto de `S_OK` para evitar buscar un archivo. pdb en la ruta de acceso donde se encuentra el archivo. exe.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
