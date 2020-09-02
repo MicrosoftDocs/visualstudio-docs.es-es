@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar una dependencia a un paquete VSIX | Documentos de Microsoft
+title: 'Cómo: agregar una dependencia a un paquete VSIX | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,26 +14,26 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 997c0df133b72d69dfb4e69de53a1b77e1a0965c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697505"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Procedimiento Agregar una dependencia a un paquete VSIX
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Adición de una dependencia a un paquete VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede configurar una implementación de paquete VSIX que instala las dependencias que no están presentes en el equipo de destino. Para ello, incluyen las dependencias VSIX en el archivo source.extension.vsixmanifest.  
+Puede configurar una implementación de paquetes VSIX que instale las dependencias que no estén ya presentes en el equipo de destino. Para ello, incluya las dependencias de VSIX en el archivo source. Extension. vsixmanifest.  
   
 #### <a name="to-add-a-dependency"></a>Para agregar una dependencia  
   
-1. Abra el archivo source.extension.vsixmanifest en el **diseño** vista. Vaya a la **dependencias** ficha y haga clic en **New**.  
+1. Abra el archivo source. Extension. vsixmanifest en la vista de **diseño** . Vaya a la pestaña **dependencias** y haga clic en **nuevo**.  
   
-2. Para agregar una extensión instalada: en el **agregar nuevas dependencias** cuadro de diálogo, seleccione **extensión instalada** y, después, en el **nombre**, seleccione una extensión en la lista.  
+2. Para agregar una extensión instalada: en el cuadro de diálogo **Agregar nueva dependencia** , seleccione **extensión instalada** y, a continuación, para el **nombre**, seleccione una extensión de la lista.  
   
-3. Para agregar otra extensión VSIX que no está instalado:: en el **agregar nuevas dependencias** cuadro de diálogo, seleccione **archivo en el sistema de archivos** y, a continuación, utilice el **examinar** botón para seleccionar el archivo VSIX.  
+3. Para agregar otra VSIX que no está instalada:: en el cuadro de diálogo **Agregar nueva dependencia** , seleccione **archivo en el sistema de archivos** y, a continuación, use el botón **examinar** para seleccionar el VSIX.  
   
-## <a name="see-also"></a>Vea también  
- [Referencia de esquema 1.0 de extensión VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+## <a name="see-also"></a>Consulte también  
+ [Referencia del esquema de extensión VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Preparación de las extensiones para la implementación de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

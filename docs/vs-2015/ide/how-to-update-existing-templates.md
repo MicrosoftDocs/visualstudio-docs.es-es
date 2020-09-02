@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Actualizar plantillas existentes | Microsoft Docs
+title: 'Cómo: actualizar plantillas existentes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b56cf11057957b0eb99fc065ed26af10d8adfbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670585"
 ---
-# <a name="how-to-update-existing-templates"></a>Procedimiento Actualización de plantillas existentes
+# <a name="how-to-update-existing-templates"></a>Cómo: Actualizar plantillas existentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después de crear una plantilla y comprimir los archivos en un archivo .zip, es posible que desee modificarla. Puede hacerlo al cambiar los archivos de la misma de forma manual o al exportar una nueva plantilla de un proyecto basado en la plantilla.
@@ -45,7 +45,7 @@ Después de crear una plantilla y comprimir los archivos en un archivo .zip, es 
 
 #### <a name="to-manually-update-an-existing-template"></a>Para actualizar manualmente una plantilla existente
 
-1. Busque el archivo .zip que contiene la plantilla. De forma predeterminada, este archivo se encuentra en \Mis Documentos\visual Studio *versión*\My Exported templates \\.
+1. Busque el archivo .zip que contiene la plantilla. De forma predeterminada, este archivo se encuentra en \Mis Documentos\visual Studio *versión*\My Exported templates \\ .
 
 2. Extraiga el archivo .zip.
 
@@ -53,7 +53,7 @@ Después de crear una plantilla y comprimir los archivos en un archivo .zip, es 
 
 4. Abra, modifique y guarde el archivo XML .vstemplate para controlar el comportamiento actualizado o los nuevos archivos. Para obtener más información sobre el esquema .vstemplate, vea [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas de Visual Studio). Para obtener más información sobre lo que se puede parametrizar en los archivos de código fuente, vea [parámetros de plantilla](../ide/template-parameters.md) .
 
-5. Seleccione los archivos de la plantilla, haga clic con el botón secundario, haga clic en **Enviar a**y, a continuación, haga clic en **carpeta comprimida (en zip)** . Los archivos seleccionados se comprimen en un archivo .zip.
+5. Seleccione los archivos de la plantilla, haga clic con el botón secundario, haga clic en **Enviar a**y, a continuación, haga clic en **carpeta comprimida (en zip)**. Los archivos seleccionados se comprimen en un archivo .zip.
 
 6. Coloque el nuevo archivo .zip en el mismo directorio que el antiguo.
 
@@ -61,7 +61,7 @@ Después de crear una plantilla y comprimir los archivos en un archivo .zip, es 
 
 8. Inicie (como administrador) una instancia de la Símbolo del sistema para desarrolladores (en el menú Inicio, en **Visual Studio 2010/Visual Studio Tools/símbolo del sistema para desarrolladores**).
 
-9. Ejecute el comando siguiente: `devenv /installvstemplates`.
+9. Ejecute el siguiente comando: `devenv /installvstemplates`.
 
-## <a name="see-also"></a>Vea también
- [Personalizar plantillas](../ide/customizing-project-and-item-templates.md) [crear plantillas de proyecto y de elemento plantillas de](../ide/creating-project-and-item-templates.md) [Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [los parámetros de plantilla](../ide/template-parameters.md) de referencia de esquemas [How a: crear Starter Kits](../ide/how-to-create-starter-kits.md)
+## <a name="see-also"></a>Consulte también
+ [Personalización](../ide/customizing-project-and-item-templates.md) [de plantillas crear plantillas de proyecto y de elemento plantillas de](../ide/creating-project-and-item-templates.md) [Visual Studio referencia de esquemas](../extensibility/visual-studio-template-schema-reference.md) [Template Parameters](../ide/template-parameters.md) [de plantilla de referencia cómo: crear Starter kits](../ide/how-to-create-starter-kits.md)

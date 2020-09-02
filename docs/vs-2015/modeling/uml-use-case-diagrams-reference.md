@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbea61c2a26b1dc81487365ef8fc3f320ac95943
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657305"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagramas de casos de uso de UML: Referencia
@@ -46,23 +46,23 @@ En Visual Studio, un *Diagrama de casos de uso* resume quién usa la aplicación
 
 |**Forma**|**Element**|**Descripción y propiedades principales**|
 |---------------|-----------------|-----------------------------------------|
-|1|**Agente**|Representa un usuario, organización o sistema externo que interactúa con la aplicación o el sistema. Un actor es una clase de tipo.<br /><br /> -   **ruta de acceso** de la imagen: la ruta de acceso del archivo de una imagen que se debe usar en lugar del icono de actor predeterminado. El icono debe ser un archivo de recursos incluido en el proyecto de Visual Studio.|
-|2|**Caso de uso**|Representa las acciones realizadas por uno o varios actores para conseguir un objetivo determinado. Un caso de uso es una clase de tipo.<br /><br /> -   **asuntos** : el subsistema en el que aparece el caso de uso.|
+|1|**Actor**|Representa un usuario, organización o sistema externo que interactúa con la aplicación o el sistema. Un actor es una clase de tipo.<br /><br /> -   **Ruta de acceso** de la imagen: la ruta de acceso del archivo de una imagen que se debe usar en lugar del icono de actor predeterminado. El icono debe ser un archivo de recursos incluido en el proyecto de Visual Studio.|
+|2|**Caso de uso**|Representa las acciones realizadas por uno o varios actores para conseguir un objetivo determinado. Un caso de uso es una clase de tipo.<br /><br /> -   **Sujetos** : el subsistema en el que aparece el caso de uso.|
 |3|**Asociación**|Indica que un actor forma parte de un caso de uso.|
-|4|**Subsistema o componente**|El sistema o la aplicación en los que se está trabajando (o parte de él). Puede ser cualquier cosa, desde una red de gran tamaño hasta una única clase de una aplicación.<br /><br /> Los casos de uso admitidos por un sistema o componente aparecen dentro de su rectángulo. Para aclarar el ámbito del sistema, puede resultar útil mostrar algunos casos de uso fuera del rectángulo.<br /><br /> El tipo de un subsistema de un diagrama de casos de uso es básicamente el mismo que el de un componente de un diagrama de componentes.<br /><br /> **se crea una instancia de -    indirectamente** ; si es false, el sistema en ejecución tiene uno o más objetos que se corresponden directamente con este subsistema. Si es true, el subsistema es una construcción del diseño que solo aparece en el sistema en ejecución a través de la creación de instancias de los elementos que lo conforman.|
+|4|**Subsistema o componente**|El sistema o la aplicación en los que se está trabajando (o parte de él). Puede ser cualquier cosa, desde una red de gran tamaño hasta una única clase de una aplicación.<br /><br /> Los casos de uso admitidos por un sistema o componente aparecen dentro de su rectángulo. Para aclarar el ámbito del sistema, puede resultar útil mostrar algunos casos de uso fuera del rectángulo.<br /><br /> El tipo de un subsistema de un diagrama de casos de uso es básicamente el mismo que el de un componente de un diagrama de componentes.<br /><br /> -   **Se crea una instancia de indirectamente** ; si es false, el sistema en ejecución tiene uno o más objetos que se corresponden directamente con este subsistema. Si es true, el subsistema es una construcción del diseño que solo aparece en el sistema en ejecución a través de la creación de instancias de los elementos que lo conforman.|
 
 ### <a name="structuring-use-cases"></a>Estructuración de casos de uso
- ![Casos de uso con include, Extend y generalización](../modeling/media/uml-ucovstructure.png "UML_UCOvStructure")
+ ![Casos de uso con relación de inclusión, extensión y generalización](../modeling/media/uml-ucovstructure.png "UML_UCOvStructure")
 
 |Forma|**Element**|Descripción|
 |-----------|-----------------|-----------------|
 |5|**Inclui**|Un caso de uso de inclusión llama o invoca al caso de uso incluido. La inclusión se usa para mostrar cómo se divide un caso de uso en pasos más pequeños. El caso de uso incluido se encuentra en el extremo con la punta de flecha.<br /><br /> Tenga en cuenta que el diagrama no muestra el orden de los pasos. Puede usar un diagrama de actividades, un diagrama de secuencia u otro documento para describir estos detalles.|
-|6|**Allá**|Un caso de uso de extensión agrega objetivos y pasos al caso de uso extendido. Las extensiones solamente funcionan en ciertas condiciones. El caso de uso extendido se encuentra en el extremo con la punta de flecha.<br /><br /> Tenga en cuenta que en el diagrama no se muestran las circunstancias exactas en las que se aplica la extensión; puede registrar esas circunstancias en un comentario o en otro documento.|
+|6|**Extender**|Un caso de uso de extensión agrega objetivos y pasos al caso de uso extendido. Las extensiones solamente funcionan en ciertas condiciones. El caso de uso extendido se encuentra en el extremo con la punta de flecha.<br /><br /> Tenga en cuenta que en el diagrama no se muestran las circunstancias exactas en las que se aplica la extensión; puede registrar esas circunstancias en un comentario o en otro documento.|
 |7|**Herencia**|Relaciona un elemento especializado y un elemento generalizado. El elemento generalizado se encuentra en el extremo con la punta de flecha.<br /><br /> Un caso de uso especializado hereda los objetivos y actores de su generalización y puede agregar objetivos más específicos y los pasos para llevarlos a cabo.<br /><br /> Un actor especializado hereda los casos de uso, los atributos y las asociaciones de su generalización y puede agregar más elementos.|
-|8|**Pendiente**|Indica que el diseño del origen depende del diseño del destino.|
-|9|**Comentario**|Se usa para agregar notas generales al diagrama.|
-|10|**Artefacto**|Un artefacto proporciona un vínculo a otro diagrama o documento y se crea arrastrando un archivo desde el Explorador de soluciones. Se puede vincular mediante una relación de dependencia a otro elemento del diagrama. Un artefacto se usa normalmente para vincular un caso de uso a un diagrama de secuencia, una página de OneNote, un documento de Word o una presentación de PowerPoint que describe el caso de uso en detalle. El documento puede ser un elemento de la solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o un documento en una ubicación compartida, como un sitio de SharePoint.<br /><br /> -   **hipervínculo**. dirección URL o ruta de acceso del diagrama o documento.<br /><br /> Haga doble clic en un artefacto para abrir la página web o el archivo al que está vinculado.|
+|8|**Dependencia**|Indica que el diseño del origen depende del diseño del destino.|
+|9|**Comment**|Se usa para agregar notas generales al diagrama.|
+|10|**Artefacto**|Un artefacto proporciona un vínculo a otro diagrama o documento y se crea arrastrando un archivo desde el Explorador de soluciones. Se puede vincular mediante una relación de dependencia a otro elemento del diagrama. Un artefacto se usa normalmente para vincular un caso de uso a un diagrama de secuencia, una página de OneNote, un documento de Word o una presentación de PowerPoint que describe el caso de uso en detalle. El documento puede ser un elemento de la solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o un documento en una ubicación compartida, como un sitio de SharePoint.<br /><br /> -   **Hipervínculo**. dirección URL o ruta de acceso del diagrama o documento.<br /><br /> Haga doble clic en un artefacto para abrir la página web o el archivo al que está vinculado.|
 |11 (no se muestra)|**Paquetes**|Los casos de uso, actores y subsistemas pueden incluirse dentro de paquetes. Las formas paquete no aparecen en el diagrama, pero puede establecer la propiedad **LinkedPackage** del diagrama. Los elementos que cree posteriormente en el diagrama se colocarán dentro del paquete. Para obtener más información, vea [definir paquetes y espacios de nombres](../modeling/define-packages-and-namespaces.md).|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md) [Editar modelos y diagramas](../modeling/edit-uml-models-and-diagrams.md) UML [diagramas de secuencia UML:](../modeling/uml-sequence-diagrams-reference.md) referencia [diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes](../modeling/uml-component-diagrams-reference.md) de UML: referencia [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md)

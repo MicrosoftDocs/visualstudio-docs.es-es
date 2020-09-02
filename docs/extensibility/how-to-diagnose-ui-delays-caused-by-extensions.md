@@ -7,13 +7,13 @@ ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
 ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849146"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Cómo: diagnosticar retrasos de la interfaz de usuario causados por extensiones
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Cómo: Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
 
 Cuando la interfaz de usuario deja de responder, Visual Studio examina la pila de llamadas del subproceso de la interfaz de usuario, empezando por la hoja y trabajando hacia la base. Si Visual Studio determina que un marco de pila de llamadas pertenece a un módulo que forma parte de una extensión instalada y habilitada, muestra una notificación.
 
@@ -43,7 +43,7 @@ Para diagnosticar un retraso de la interfaz de usuario, primero debe identificar
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Reiniciar VS con el registro de actividades
 
-Visual Studio puede generar un "registro de actividad" que proporciona información útil al depurar un problema. Para activar el registro de actividad en Visual Studio, abra Visual Studio con la opción de línea de comandos `/log`. Una vez que Visual Studio se inicia, el registro de actividad se almacena en la siguiente ubicación:
+Visual Studio puede generar un "registro de actividad" que proporciona información útil al depurar un problema. Para activar el registro de actividad en Visual Studio, abra Visual Studio con la `/log` opción de línea de comandos. Una vez que Visual Studio se inicia, el registro de actividad se almacena en la siguiente ubicación:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -71,7 +71,7 @@ Para detener la recopilación de seguimiento, basta con usar el botón **detener
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Examinar el registro de actividad para obtener el identificador de retraso
 
-Como se mencionó anteriormente, puede encontrar el registro de actividad en *%APPDATA%\Microsoft\VisualStudio\<vs_instance_id > \ActivityLog.XML*. Cada vez que Visual Studio detecta un retraso de la interfaz de usuario de la extensión, escribe un nodo en el registro de actividad con `UIDelayNotifications` como origen. Este nodo contiene cuatro fragmentos de información sobre el retraso de la interfaz de usuario:
+Como se mencionó anteriormente, puede encontrar el registro de actividad en *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml*. Cada vez que Visual Studio detecta un retraso de la interfaz de usuario de la extensión, escribe un nodo en el registro de actividad con `UIDelayNotifications` como origen. Este nodo contiene cuatro fragmentos de información sobre el retraso de la interfaz de usuario:
 
 - El identificador de retraso de la interfaz de usuario, un número secuencial que identifica de forma única un retraso de la interfaz de usuario en una sesión de VS
 - El identificador de sesión, que identifica de forma única la sesión de Visual Studio de inicio a cerrar
@@ -102,7 +102,7 @@ A continuación, abra el archivo de seguimiento. Para ello, puede usar la misma 
 A continuación, seleccione el archivo de seguimiento en el panel izquierdo y ábralo eligiendo **abrir** en el menú contextual.
 
 > [!NOTE]
-> De forma predeterminada, PerfView genera un archivo zip. Al abrir *Trace. zip*, se descomprime automáticamente el archivo y se abre el seguimiento. Para omitir esto, desactive el cuadro **zip** durante la recopilación de seguimiento. Sin embargo, si planea transferir y usar seguimientos en diferentes equipos, se recomienda encarecidamente no desactivar el cuadro **zip** . Sin esta opción, los archivos PDB necesarios para los ensamblados Ngen no se adjuntarán al seguimiento y, por tanto, los símbolos de los ensamblados Ngen no se resolverán en el equipo de destino. (Vea [esta entrada de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obtener más información sobre los archivos PDB para los ensamblados Ngen).
+> De forma predeterminada, PerfView genera un archivo zip. Al abrir *trace.zip*, descomprime automáticamente el archivo y abre el seguimiento. Para omitir esto, desactive el cuadro **zip** durante la recopilación de seguimiento. Sin embargo, si planea transferir y usar seguimientos en diferentes equipos, se recomienda encarecidamente no desactivar el cuadro **zip** . Sin esta opción, los archivos PDB necesarios para los ensamblados Ngen no se adjuntarán al seguimiento y, por tanto, los símbolos de los ensamblados Ngen no se resolverán en el equipo de destino. (Vea [esta entrada de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obtener más información sobre los archivos PDB para los ensamblados Ngen).
 
 La PerfView puede tardar varios minutos en procesar y abrir el seguimiento. Una vez que el seguimiento está abierto, aparece una lista de las distintas "vistas" en él.
 
@@ -111,14 +111,14 @@ La PerfView puede tardar varios minutos en procesar y abrir el seguimiento. Una 
 En primer lugar, usaremos la vista de **eventos** para obtener el intervalo de tiempo del retraso de la interfaz de usuario:
 
 1. Abra la vista **eventos** seleccionando `Events` nodo en el seguimiento y eligiendo **abrir** en el menú contextual.
-2. En el panel izquierdo, seleccione "`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`".
-3. Presione entrar.
+2. Seleccione " `Microsoft-VisualStudio/ExtensionUIUnresponsiveness` " en el panel izquierdo.
+3. Presione Entrar.
 
-Se aplica la selección y todos los eventos de `ExtensionUIUnresponsiveness` se muestran en el panel derecho.
+La selección se aplica y todos los `ExtensionUIUnresponsiveness` eventos se muestran en el panel derecho.
 
 ![Seleccionar eventos en la vista eventos](media/perfview-event-selection.png)
 
-Cada fila del panel derecho corresponde a un retraso de la interfaz de usuario. El evento incluye un valor de "ID. de retraso" que debe coincidir con el ID. de retraso del registro de actividad del paso 6. Como `ExtensionUIUnresponsiveness` se desencadena al final del retraso de la interfaz de usuario, la marca de tiempo del evento (aproximadamente) marca la hora de finalización del retraso de la interfaz de usuario. El evento también contiene la duración del retraso. Podemos restar la duración de la marca de tiempo final para obtener la marca de tiempo de Cuándo se inició el retraso de la interfaz de usuario.
+Cada fila del panel derecho corresponde a un retraso de la interfaz de usuario. El evento incluye un valor de "ID. de retraso" que debe coincidir con el ID. de retraso del registro de actividad del paso 6. Dado que `ExtensionUIUnresponsiveness` se desencadena al final del retraso de la interfaz de usuario, la marca de tiempo del evento (aproximadamente) marca la hora de finalización del retraso de la interfaz de usuario. El evento también contiene la duración del retraso. Podemos restar la duración de la marca de tiempo final para obtener la marca de tiempo de Cuándo se inició el retraso de la interfaz de usuario.
 
 ![Calcular el intervalo de tiempo de retraso de la interfaz de usuario](media/ui-delay-time-range.png)
 
@@ -137,7 +137,7 @@ Al abrir la vista **pilas de tiempo de subprocesos** , elija el proceso **devenv
 En la vista de **pilas de tiempo de subproceso** , en la parte superior izquierda de la página, puede establecer el intervalo de tiempo en los valores calculados en el paso anterior y presionar **entrar** para que las pilas se ajusten a ese intervalo de tiempo.
 
 > [!NOTE]
-> Determinar qué subproceso es el subproceso de interfaz de usuario (Inicio) puede ser intuitivo si la colección de seguimiento se inicia después de que Visual Studio ya esté abierto. Sin embargo, los primeros elementos de la pila del subproceso de interfaz de usuario (Inicio) son siempre los archivos DLL del sistema operativo más probables (*ntdll. dll* y *Kernel32. dll*) seguidos de `devenv!?` y, a continuación, `msenv!?`. Esta secuencia puede ayudar a identificar el subproceso de la interfaz de usuario.
+> Determinar qué subproceso es el subproceso de interfaz de usuario (Inicio) puede ser intuitivo si la colección de seguimiento se inicia después de que Visual Studio ya esté abierto. Sin embargo, los primeros elementos de la pila del subproceso de interfaz de usuario (Inicio) son siempre los archivos DLL del sistema operativo más probables (*ntdll.dll* y *kernel32.dll*) seguidos de `devenv!?` y, a continuación, `msenv!?` . Esta secuencia puede ayudar a identificar el subproceso de la interfaz de usuario.
 
  ![Identificación del subproceso de inicio](media/ui-delay-startup-thread.png)
 
@@ -156,4 +156,4 @@ PerfView tiene instrucciones detalladas en el menú **ayuda** que puede usar par
 También puede usar los nuevos Analizadores estáticos de Visual Studio para extensiones (paquete NuGet [aquí](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), que proporcionan instrucciones sobre los procedimientos recomendados para escribir extensiones eficientes. Vea una lista de [analizadores de vs SDK](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) y [analizadores de subprocesos](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
 
 > [!NOTE]
-> Si no puede solucionar la falta de respuesta debido a las dependencias en las que no tiene control (por ejemplo, si la extensión tiene que llamar a servicios de VS sincrónicos en el subproceso de la interfaz de usuario), nos gustaría conocerlo. Si es miembro de nuestro programa de Partners de Visual Studio, puede ponerse en contacto con nosotros enviando una solicitud de soporte técnico para desarrolladores. De lo contrario, use la herramienta "Notificar un problema" para enviar sus comentarios e incluir `"Extension UI Delay Notifications"` en el título. También debe incluir una descripción detallada del análisis.
+> Si no puede solucionar la falta de respuesta debido a las dependencias en las que no tiene control (por ejemplo, si la extensión tiene que llamar a servicios de VS sincrónicos en el subproceso de la interfaz de usuario), nos gustaría conocerlo. Si es miembro de nuestro programa de Partners de Visual Studio, puede ponerse en contacto con nosotros enviando una solicitud de soporte técnico para desarrolladores. De lo contrario, use la herramienta "Notificar un problema" para enviar sus comentarios e incluirlos `"Extension UI Delay Notifications"` en el título. También debe incluir una descripción detallada del análisis.

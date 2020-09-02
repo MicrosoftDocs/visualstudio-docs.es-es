@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017132"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Tutorial: creación de un flujo de trabajo con formularios de asociación e iniciación
@@ -167,7 +168,7 @@ ms.locfileid: "86017132"
 
 2. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento** mostrar el cuadro de diálogo **Agregar nuevo elemento** .
 
-3. En la vista de árbol del cuadro de diálogo, expanda **Visual C#** o **Visual Basic** (dependiendo del lenguaje del proyecto), expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
+3. En la vista de árbol del cuadro de diálogo, expanda **Visual C#** o **Visual Basic**  (dependiendo del lenguaje del proyecto), expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
 4. En la lista de plantillas, elija la plantilla **formulario de inicio de flujo de trabajo** .
 

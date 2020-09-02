@@ -1,5 +1,5 @@
 ---
-title: 'Error: No se admite la depuración en modo mixto para los procesos IA64 | Documentos de Microsoft'
+title: 'Error: No se admite la depuración en modo mixto de procesos IA64 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33dfa4fb7a303b02121098b0e517f95d6e40f586
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697443"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Error: No se admite la depuración en modo mixto de procesos IA64
@@ -32,5 +32,5 @@ El depurador [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no permite depurar có
   
 - Compile una versión de 32 bits de su aplicación para la depuración.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Configurar las herramientas remotas en el dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

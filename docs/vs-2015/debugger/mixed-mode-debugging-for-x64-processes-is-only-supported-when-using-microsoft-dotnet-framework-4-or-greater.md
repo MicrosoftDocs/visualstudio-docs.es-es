@@ -1,5 +1,5 @@
 ---
-title: Modo mixto depuración para x64 procesos solo se admite cuando se usa Microsoft.NET Framework 4 o posterior | Microsoft Docs
+title: El modo de depuración mixto para procesos x64 solo se admite cuando se usa Microsoft .NET Framework 4 o posterior | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,26 +17,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e974269cccb65db66ee59735f7acc5de494e2106
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697831"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>El modo de depuración mixto para procesos x64 solo se admite cuando se usa Microsoft .NET Framework 4 o posterior
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-.NET Framework versiones anteriores a 4 no proporcionan compatibilidad para la depuración en modo mixto de x64 procesa. Esto significa que no puede pasar de código administrado a código nativo, o de código nativo a código administrado, mientras está depurando.  
+Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad para la depuración en modo mixto de procesos x64. Esto significa que no puede pasar de código administrado a código nativo, o de código nativo a código administrado, mientras está depurando.  
   
 ### <a name="workarounds"></a>Soluciones  
   
 - Actualice el proyecto para usar Microsoft .NET Framework 4 o posterior.  
   
-     -O bien-  
+     -o bien-  
   
      Depurar el código administrado y el código nativo en sesiones de depuración independientes.  
   
-     -O bien-  
+     -o bien-  
   
      Depurar el código mixto como un proceso de 32 bits, tal y como se describe en los procedimientos siguientes.  
   
@@ -58,7 +58,7 @@ ms.locfileid: "65697831"
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Consulte [configurar la depuración de SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Vea [Configurar la depuración de Transact-SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219782"
 ---
 # <a name="use-code-analyzers"></a>Usar analizadores de código
@@ -66,7 +66,7 @@ En la tabla siguiente se muestran las diferentes opciones de gravedad:
 | Advertencia | `warning` | Las infracciones aparecen como *advertencias* en el lista de errores y en la salida de la compilación de línea de comandos, pero no provocan errores en las compilaciones. | El código infractor se subraya con un subrayado ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento. |
 | Información | `suggestion` | Las infracciones aparecen como *mensajes* en el lista de errores y no en todos los resultados de la compilación de línea de comandos. | El código infractor se subraya con un subrayado ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento. |
 | Hidden | `silent` | No es visible para el usuario. | No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE. |
-| None | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
+| Ninguno | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
 | Valor predeterminado | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
 
 La siguiente captura de pantalla del editor de código muestra tres infracciones diferentes con diferentes niveles de gravedad. Observe el color de la línea ondulada y el cuadrado pequeño coloreado en la barra de desplazamiento de la derecha.
@@ -395,7 +395,7 @@ En un proyecto de .NET Core, si agrega una referencia a un proyecto que tiene an
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de los analizadores de código en Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar un error del analizador de código](https://github.com/dotnet/roslyn-analyzers/issues)

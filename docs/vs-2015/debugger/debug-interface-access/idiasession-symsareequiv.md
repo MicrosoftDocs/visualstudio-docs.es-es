@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba8c77d7d97da75ce82fcbe732db64acf633b8af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150218"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
@@ -36,14 +36,14 @@ HRESULT symsAreEquiv ( 
   
 #### <a name="parameters"></a>Parámetros  
  `symbolA`  
- [in] La primera [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que se usa en la comparación.  
+ de Primer objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) usado en la comparación.  
   
  `symbolB`  
- [in] El segundo `IDiaSymbol` objeto que se usa en la comparación.  
+ de Segundo objeto que se `IDiaSymbol` usa en la comparación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve si los símbolos son equivalentes, `S_OK`; en caso contrario, devuelve `S_FALSE`, los símbolos no son equivalentes. En caso contrario, devuelve un código de error.  
+ Si los símbolos son equivalentes, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` , los símbolos no son equivalentes. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -15,10 +15,10 @@ caps.latest.revision: 85
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 631a180789f5fff373799b78222c25a50ab32912
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657099"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
@@ -28,7 +28,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
 
  Este tema contiene las siguientes secciones:
 
- [Prepare el tutorial](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)
+ [Preparación del tutorial](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)
 
  [Crear un proyecto de prueba unitaria](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)
 
@@ -47,7 +47,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
   [Utilice pruebas unitarias para mejorar el código](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
 
 > [!NOTE]
-> En este tutorial se utiliza el marco de pruebas unitarias de Microsoft para código administrado. El Explorador de pruebas también puede ejecutar pruebas de marcos de pruebas unitarias de terceros, que tienen adaptadores para el Explorador de pruebas. Para obtener más información, consulte [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)
+> En este tutorial se utiliza el marco de pruebas unitarias de Microsoft para código administrado. El Explorador de pruebas también puede ejecutar pruebas de marcos de pruebas unitarias de terceros, que tienen adaptadores para el Explorador de pruebas. Para obtener más información, vea [instalar marcos de pruebas unitarias de terceros](../test/install-third-party-unit-test-frameworks.md) .
 
 > [!NOTE]
 > Para obtener información sobre cómo ejecutar pruebas desde una línea de comandos, vea [Tutorial: Utilizar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).
@@ -56,7 +56,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
 
 - El proyecto del banco. Consulte [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md).
 
-## <a name="BKMK_Prepare_the_walkthrough"></a> Preparar el tutorial
+## <a name="prepare-the-walkthrough"></a><a name="BKMK_Prepare_the_walkthrough"></a> Prepare el tutorial
 
 1. Abra Visual Studio.
 
@@ -64,7 +64,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
 
     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
-3. En **Plantillas instaladas**, haga clic en **Visual C#** .
+3. En **Plantillas instaladas**, haga clic en **Visual C#**.
 
 4. En la lista de tipos de aplicación, haga clic en **Biblioteca de clases**.
 
@@ -84,7 +84,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
 
 8. Guarde el archivo como BankAccount.cs
 
-9. En el menú **Compilar** , haga clic en **Compilar solución**.
+9. En el menú **Compilar**, haga clic en **Compilar solución**.
 
    Ahora tiene un proyecto denominado Bank que contiene código fuente para realizar pruebas y las herramientas necesarias para ello. El espacio de nombres de Bank, **BankAccountNS**, contiene la clase pública **BankAccount**cuyos métodos probará en los procedimientos siguientes.
 
@@ -107,14 +107,14 @@ public void Debit(double amount)
 
 ```
 
-## <a name="BKMK_Create_a_unit_test_project"></a> Crear un proyecto de prueba unitaria
+## <a name="create-a-unit-test-project"></a><a name="BKMK_Create_a_unit_test_project"></a> Crear un proyecto de prueba unitaria
  **Requisito previo**: siga los pasos del procedimiento [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).
 
 #### <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria
 
-1. En el menú **Archivo** , elija **Agregar**y, a continuación, elija **Nuevo proyecto...** .
+1. En el menú **Archivo** , elija **Agregar**y, a continuación, elija **Nuevo proyecto...**.
 
-2. En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C#** y, a continuación, elija **Prueba**.
+2. En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C#** y, después, elija **Prueba**.
 
 3. En la lista de plantillas, seleccione **Proyecto de prueba unitaria**.
 
@@ -128,7 +128,7 @@ public void Debit(double amount)
 
 6. En el cuadro de diálogo del Administrador de referencia, expanda **Solución** y active el elemento **Bank** .
 
-## <a name="BKMK_Create_the_test_class"></a> Crear la clase de prueba
+## <a name="create-the-test-class"></a><a name="BKMK_Create_the_test_class"></a> Crear la clase de prueba
  Se necesita una clase de prueba para comprobar la clase `BankAccount` . Se puede utilizar UnitTest1.cs, generado por la plantilla de proyecto, pero se debe asignar al archivo y a la clase nombres más descriptivos. Podemos hacer esto en un solo paso cambiando el nombre del archivo en el Explorador de soluciones.
 
  **Cambiar el nombre de un archivo de clase**
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;
 ```
 
-### <a name="BKMK_Test_class_requirements"></a> Requisitos de la clase de prueba
+### <a name="test-class-requirements"></a><a name="BKMK_Test_class_requirements"></a> Requisitos de la clase de prueba
  Los requisitos mínimos para una clase de prueba son los siguientes:
 
 - El atributo `[TestClass]` se requiere en el marco de pruebas unitarias para código administrado de Microsoft para cualquier clase que contenga métodos de prueba unitaria que desee ejecutar en el Explorador de pruebas.
@@ -172,7 +172,7 @@ using BankAccountNS;
 
   Puede tener otras clases de un proyecto de prueba unitaria que no tengan el atributo `[TestClass]` y puede tener otros métodos de clases de prueba que no tengan el atributo `[TestMethod]` . Puede utilizar estos otros métodos y clases en sus métodos de prueba.
 
-## <a name="BKMK_Create_the_first_test_method"></a> Crear el primer método de prueba
+## <a name="create-the-first-test-method"></a><a name="BKMK_Create_the_first_test_method"></a> Crear el primer método de prueba
  En este procedimiento, se escribirán métodos de prueba unitaria para comprobar el comportamiento del método `Debit` de la clase `BankAccount` . El método se muestra más arriba.
 
  Al analizar el método en pruebas, se determina que hay al menos tres comportamientos que deben comprobarse:
@@ -213,7 +213,7 @@ using BankAccountNS;
 
    El método es bastante sencillo. Se configura un nuevo objeto `BankAccount` con un saldo inicial y después se retira una cantidad válida. Se utiliza el marco de pruebas unitarias de Microsoft para el método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> de código administrado, para comprobar que el saldo de cierre es el esperado.
 
-### <a name="BKMK_Test_method_requirements"></a> Requisitos del método de prueba
+### <a name="test-method-requirements"></a><a name="BKMK_Test_method_requirements"></a> Requisitos del método de prueba
  Un método de prueba debe cumplir los siguientes requisitos:
 
 - El método se debe señalar con el atributo `[TestMethod]` .
@@ -222,7 +222,7 @@ using BankAccountNS;
 
 - El método no puede tener parámetros.
 
-## <a name="BKMK_Build_and_run_the_test"></a> Compilar y ejecutar la prueba
+## <a name="build-and-run-the-test"></a><a name="BKMK_Build_and_run_the_test"></a> Compilar y ejecutar la prueba
 
 #### <a name="to-build-and-run-the-test"></a>Para compilar y ejecutar la prueba
 
@@ -234,10 +234,10 @@ using BankAccountNS;
 
 3. En este caso, la prueba no se completa correctamente. El método de prueba se mueve al grupo **Pruebas no superadas** . Seleccione el método en el Explorador de pruebas para ver los detalles en la parte inferior de la ventana.
 
-## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrija el código y vuelva a ejecutar las pruebas
+## <a name="fix-your-code-and-rerun-your-tests"></a><a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrija el código y vuelva a ejecutar las pruebas
  **Analizar los resultados de pruebas**
 
- El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro <strong>Expected\<*XXX*></strong>) y lo que se ha recibido realmente (el parámetro **Actual\<*YYY*>** ). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.
+ El resultado de la prueba contiene un mensaje que describe el error. En el caso del `AreEquals` método, el mensaje muestra lo que se esperaba (el parámetro<strong>esperado \<*XXX*> </strong>) y lo que se recibió realmente (el parámetro **real \<*YYY*> ** ). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.
 
  Un nuevo examen del código Debit muestra que la prueba unitaria ha logrado encontrar un error. La cantidad retirada se agrega al saldo de cuenta en lugar de ser restarse.
 
@@ -249,7 +249,7 @@ using BankAccountNS;
 m_balance += amount;
 ```
 
- with
+ con
 
 ```csharp
 m_balance -= amount;
@@ -257,9 +257,9 @@ m_balance -= amount;
 
  **Vuelva a ejecutar la prueba**
 
- En el Explorador de pruebas, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde y la prueba se mueve al grupo de **Pruebas superadas** .
+ En el explorador de pruebas, elija **ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde y la prueba se mueve al grupo de **Pruebas superadas** .
 
-## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utilice pruebas unitarias para mejorar el código
+## <a name="use-unit-tests-to-improve-your-code"></a><a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Usar pruebas unitarias para mejorar el código
  En esta sección se describe cómo un proceso iterativo de análisis, el desarrollo de pruebas unitarias y la refactorización pueden servirle de ayuda para que el código de producción sea más compacto y eficaz.
 
  **Analizar los problemas**
@@ -301,7 +301,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. Establecer `debitAmount` en un número mayor que el del saldo.
 
-   **Ejecutar las pruebas**
+   **Ejecución de las pruebas**
 
    Ejecutar los dos métodos con valores diferentes para `debitAmount` muestra que las pruebas controlan los casos restantes de manera adecuada. Ejecutar las tres pruebas confirma que todos casos del análisis original están cubiertos correctamente.
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 501b7f040cb841d19c06ccc8fe7615a5b4a5e70d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657344"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Cómo: Generar plantillas desde otras plantillas mediante secuencias de escape
@@ -25,7 +25,7 @@ Puede crear una plantilla de texto que cree otra plantilla de texto como salida 
 
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Para generar una plantilla de texto desde una plantilla de texto
 
-- Use la barra diagonal inversa (\\) como carácter de escape para generar las etiquetas de marcado necesarias dentro de la plantilla de texto para las directivas, instrucciones, expresiones y características de clase en un archivo de plantilla de texto independiente.
+- Use la barra diagonal inversa ( \\ ) como carácter de escape para generar las etiquetas de marcado necesarias dentro de la plantilla de texto para las directivas, instrucciones, expresiones y características de clase en un archivo de plantilla de texto independiente.
 
     ```
     \<#@ directive \#>
@@ -35,7 +35,7 @@ Puede crear una plantilla de texto que cree otra plantilla de texto como salida 
     ```
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se utilizan caracteres de escape para generar una plantilla de texto a partir de una plantilla de texto. La Directiva `output` establece el tipo de archivo de destino en el tipo de archivo de plantilla de texto (. TT).
+ En el ejemplo siguiente se utilizan caracteres de escape para generar una plantilla de texto a partir de una plantilla de texto. La `output` Directiva establece el tipo de archivo de destino en el tipo de archivo de plantilla de texto (. TT).
 
 ```csharp
 \<#@ output extension=".tt" \#>

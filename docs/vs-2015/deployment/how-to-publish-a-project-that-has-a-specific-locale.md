@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Publicar un proyecto que tiene una configuración regional específica | Documentos de Microsoft
+title: 'Cómo: publicar un proyecto que tiene una configuración regional específica | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,19 +22,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697604"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedimiento Publicar un proyecto que tenga una configuración regional específica
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Cómo: Publicar un proyecto que tiene una configuración regional específica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No es raro que una aplicación contenga componentes con diferentes configuraciones regionales. En este escenario, crearía una solución con varios proyectos para después publicar diferentes proyectos para cada configuración regional. En este procedimiento se muestra cómo usar una macro para publicar el primer proyecto en una solución usando la configuración regional 'en'. Si quiere intentar este procedimiento con una configuración regional que no sea 'en', asegúrese de establecer `localeString` de manera que coincida con la configuración regional que está usando (por ejemplo, 'de' o 'de-DE').  
   
 > [!NOTE]
-> Cuando se usa esta macro, la ubicación de publicación debe ser una dirección URL o un recurso compartido UNC (Convención de nomenclatura universal) válidos. Además, Internet Information Services (IIS) debe estar instalado en el equipo. Para instalar IIS, en el menú **Inicio**, haga clic en **Panel de control**. Haga doble clic en **Agregar o quitar programas**. En **Agregar o quitar programas**, haga clic en **Agregar o quitar componentes de Windows**. En el **Asistente para componentes de Windows**, active la casilla **Internet Information Services (IIS)** en la lista **Componentes**. Haga clic en **Finalizar** para cerrar el asistente.  
+> Cuando se usa esta macro, la ubicación de publicación debe ser una dirección URL o un recurso compartido UNC (Convención de nomenclatura universal) válidos. Además, Internet Information Services (IIS) debe estar instalado en el equipo. Para instalar IIS, en el menú **Inicio**, haga clic en **Panel de control**. Haga doble clic en **Agregar o quitar programas**. En **Agregar o quitar programas**, haga clic en **Agregar o quitar componentes de Windows**. En el **Asistente para componentes de Windows**, active la casilla **Internet Information Services (IIS)** en la lista **Componentes**. A continuación, haga clic en **Finalizar** para cerrar el asistente.  
   
 ### <a name="to-create-the-publishing-macro"></a>Para crear la macro de publicación  
   
@@ -152,20 +152,20 @@ No es raro que una aplicación contenga componentes con diferentes configuracion
   
 4. Publique PublishLocales usando el IDE de Visual Studio.  
   
-     En **el Explorador de soluciones**, seleccione PublishLocales. En el menú **Proyecto**, seleccione **Propiedades**. En el Diseñador de proyectos, en el **publicar** , especifique una ubicación de publicación de **http://localhost/PublishLocales**y, a continuación, haga clic en **publicar ahora**.  
+     En **Explorador de soluciones**, seleccione PublishLocales. En el menú **Proyecto**, seleccione **Propiedades**. En el diseñador de proyectos, en la página **publicar** , especifique una ubicación de publicación de **http://localhost/PublishLocales** y, a continuación, haga clic en **publicar ahora**.  
   
      Cuando la página web de publicación aparezca, ciérrela. (En este paso, solo tiene que publicar el proyecto, no tiene que instalarlo).  
   
-5. Publique PublishLocales de nuevo invocando la macro en la ventana del símbolo del sistema de Visual Studio. Para ver la ventana de símbolo del sistema, en el **vista** menú, elija **Other Windows** y, a continuación, haga clic en **ventana de comandos**, o presione CTRL + ALT + A. En la ventana de símbolo del sistema, escriba `macros`; Autocompletar proporcionará una lista de macros disponibles. Seleccione la macro siguiente y presione ENTRAR:  
+5. Publique PublishLocales de nuevo invocando la macro en la ventana del símbolo del sistema de Visual Studio. Para ver la ventana del símbolo del sistema, en el menú **Ver** , seleccione **otras ventanas** y, a continuación, haga clic en **ventana comandos**o presione Ctrl + Alt + A. En la ventana del símbolo del sistema, escriba `macros` ; Autocompletar proporcionará una lista de macros disponibles. Seleccione la macro siguiente y presione ENTRAR:  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6. Cuando el proceso de publicación se realiza correctamente, generará el mensaje que indica "Publicación realizada correctamente para PublishLocales\PublishLocales.vbproj. El idioma de publicación era 'en'". Haga clic en **Aceptar** en el cuadro de mensaje. Cuando la página web de publicación aparezca, haga clic en **Instalar**.  
+6. Cuando el proceso de publicación se realiza correctamente, generará el mensaje que indica "Publicación realizada correctamente para PublishLocales\PublishLocales.vbproj. El idioma de publicación era ' en '. Haga clic en **Aceptar** en el cuadro de mensaje. Cuando la página web de publicación aparezca, haga clic en **Instalar**.  
   
 7. Mire en C:\Inetpub\wwwroot\PublishLocales\en. Deberá ver los archivos instalados, como los manifiestos, setup.exe y el archivo de la página web de publicación, además del archivo DLL de recursos localizados. (De forma predeterminada ClickOnce anexa una extensión .deploy a los archivos EXE y DLL; puede quitar esta extensión después de la implementación).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Entorno de desarrollo de macros](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
  [Ventana Explorador de macros](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Cómo: Editar y crear Macros mediante programación](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Cómo: editar y crear macros mediante programación](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

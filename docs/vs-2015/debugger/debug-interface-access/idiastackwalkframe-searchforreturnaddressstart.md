@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2d34c4f10679d6f0702dead5352ddf088704b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150178"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Busca el marco de pila especificado para una dirección de retorno en o cerca de la dirección especificada.  
+Busca en el marco de pila especificado una dirección de devolución en la dirección especificada o cerca de ella.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,17 +37,17 @@ HRESULT searchForReturnAddressStart ( 
   
 #### <a name="parameters"></a>Parámetros  
  `frame`  
- [in] Un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el marco de pila actual.  
+ de Objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa el marco de pila actual.  
   
  `startAddress`  
- [in] Una dirección de memoria virtual desde el que se va a comenzar la búsqueda.  
+ de Dirección de memoria virtual desde la que se va a empezar a buscar.  
   
  `returnAddress`  
- [out] Devuelve la función más cercana remite que `startAddress`.  
+ enuncia Devuelve la dirección de devolución de la función más cercana a `startAddress` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537337"
 ---
 # <a name="setwefprocessid-method"></a>Método Setwefprocessid (
@@ -37,7 +37,7 @@ HRESULT SetWefProcessId(
 ## <a name="return-value"></a>Valor devuelto
  Un valor HRESULT que indica si el método se ha completado correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Se debe llamar a este método después de crear el proceso de contenido de WEF, pero antes de que se ejecute cualquier contenido de WEF.
 
  Si desea que el entorno de desarrollo asocie un depurador al proceso de contenido de WEF, el entorno debe realizar esta operación en la implementación de este método.

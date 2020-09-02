@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848167"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
@@ -40,18 +40,18 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
   
  Para obtener más información, vea:  
   
- [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
+ [Cómo: elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)  
   
  [Recopilar datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Cómo: establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Inicie  
+## <a name="launch"></a>Launch  
  Esta configuración le permite seleccionar de una lista de binarios y especificar el orden de inicio de los binarios.  
   
  Para obtener más información, consulte [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md)  
   
-## <a name="sampling"></a>Muestreo  
+## <a name="sampling"></a>muestreo  
  Estos valores le permiten seleccionar el intervalo de muestreo y de eventos de muestra cuando se utiliza el muestreo como método de generación de perfiles. Un evento de muestra se utiliza para recopilar datos de generación de perfiles en el intervalo especificado. Por ejemplo, si el evento de muestra es de ciclos de reloj y el intervalo de muestreo está establecido en 10.000.000, los datos de generación de perfiles se recopilan una vez cada 10 millones de ciclos de reloj. Los siguientes cuatro tipos de eventos de muestra están disponibles:  
   
 - Ciclos de reloj: para problemas relacionados con la CPU  
@@ -64,7 +64,7 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
   
 - Se pueden especificar eventos de muestra adicionales en función de los contadores de rendimiento disponibles  
   
-  Para obtener más información, consulte [Cómo: Elegir eventos de muestra](../profiling/how-to-choose-sampling-events.md)  
+  Para obtener más información, vea [Cómo: elegir eventos de muestreo.](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>Binary  
  Esta configuración le permite especificar si desea reubicar el binario instrumentado. Por ejemplo, si genera perfiles de My.DLL y decide no reubicar el binario instrumentado, se crea una copia de seguridad de My.DLL denominada My.Orig.DLL. Posteriormente, se modifica My.DLL insertando sondeos para recopilar datos. Si decide reubicar el binario instrumentado, no se cambia el nombre del binario original y el binario instrumentado se copia en la ubicación especificada para su uso durante la instrumentación.  
@@ -79,9 +79,9 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
   
  Para obtener más información, vea:  
   
- [Cómo: Generar perfiles de código de JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
+ [Cómo: generar perfiles de código JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
- [Cómo: Especificar comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
+ [Cómo: especificar comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
 ## <a name="cpu-counters"></a>Contadores de CPU  
  Esta configuración permite recopilar datos sobre los contadores de rendimiento de CPU cuando se utiliza el método de generación de perfiles de instrumentación. Los contadores de rendimiento móviles están disponibles independientemente del fabricante o del diseño de la CPU. Los eventos de la plataforma son específicos para el diseño y fabricante de la CPU. Para obtener más información acerca de los contadores de rendimiento del procesador, consulte la documentación del procesador específica.  
@@ -93,7 +93,7 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
   
  Para obtener más información, vea:  
   
- [Cómo: Recopilar datos de Seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
+ [Cómo: recopilar datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
  [VSPerfReport](../profiling/vsperfreport.md).  
   
@@ -102,16 +102,16 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
   
  Para obtener más información, consulte [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
-## <a name="advanced"></a>Avanzadas  
+## <a name="advanced"></a>Avanzado  
  Esta configuración permite agregar opciones al proceso de instrumentación mediante la especificación de una o más opciones de la herramienta de generación de perfiles de línea de comandos [VSInstr](../profiling/vsinstr.md). También puede especificar la versión de Common Runtime de la que quiere generar perfiles cuando utiliza más de una versión de la aplicación.  
   
  Para obtener más información, vea:  
   
- [Cómo: Especificar el tiempo de ejecución de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Cómo: especificar el tiempo de ejecución de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
- [Cómo: Especificar opciones de instrumentación adicional](../profiling/how-to-specify-additional-instrumentation-options.md)  
+ [Cómo: especificar opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Información general](../profiling/overviews-performance-tools.md)   
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)

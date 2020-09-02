@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238847"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registro de un servicio de lenguaje heredado 2
@@ -87,7 +87,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|
 |(Es el valor predeterminado).|REG_SZ|ResID|El nombre para mostrar localizado de esta página de opciones. El nombre puede ser texto literal, o # `nnn` , donde `nnn` es un identificador de recurso de cadena en el archivo dll satélite del VSPackage especificado.|
 |Paquete|REG_SZ|*GUID*|GUID del VSPackage que implementa esta página de opciones.|
-|Page|REG_SZ|*GUID*|GUID de la página de propiedades que se va a solicitar del VSPackage mediante una llamada al <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. Si esta entrada del registro no está presente, la clave del registro describe un nodo, no una página.|
+|Página|REG_SZ|*GUID*|GUID de la página de propiedades que se va a solicitar del VSPackage mediante una llamada al <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. Si esta entrada del registro no está presente, la clave del registro describe un nodo, no una página.|
 
 ### <a name="example"></a>Ejemplo
 
@@ -237,5 +237,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollo de un servicio de lenguaje heredado](../../extensibility/internals/developing-a-legacy-language-service.md)
