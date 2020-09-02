@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e7dfc2b1137b30a03425f663d70e12c528dad39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657411"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Herencia de clases de datos (Object Relational Designer)
@@ -28,7 +28,7 @@ Al igual que otros objetos, las clases de [!INCLUDE[vbtecdlinq](../includes/vbte
 ## <a name="inheritance-properties"></a>Propiedades de herencia
  En la tabla siguiente se muestran las propiedades de herencia y sus descripciones:
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |Propiedad Discriminator|La propiedad (asignada a la columna) que determina a qué clase pertenece el registro actual.|
 |Valor de discriminador de clase base|El valor (en la columna designada como la propiedad Discriminator) que determina que un registro es de la clase base.|
@@ -40,7 +40,7 @@ Al igual que otros objetos, las clases de [!INCLUDE[vbtecdlinq](../includes/vbte
 |Tema|Descripción|
 |-----------|-----------------|
 |[Cómo: Configurar la herencia mediante Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Describe cómo configurar las clases de entidad que usan la herencia de tabla única mediante el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
-|[Tutorial: Crear clases de LINQ to SQL mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Proporciona instrucciones paso a paso sobre cómo configurar las clases de entidad que usan la herencia de tabla única mediante el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
+|[Tutorial: crear clases de LINQ to SQL mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Proporciona instrucciones paso a paso sobre cómo configurar las clases de entidad que usan la herencia de tabla única mediante el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [LINQ to SQL herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [Tutorial: crear clases de LINQ to SQL (Object Relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [Tutorial: crear clases LINQ to SQL con la herencia de tabla única (object relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md) [Introducción](https://msdn.microsoft.com/library/db8a557a-fef8-4f4f-bb91-8cff7250ee25)

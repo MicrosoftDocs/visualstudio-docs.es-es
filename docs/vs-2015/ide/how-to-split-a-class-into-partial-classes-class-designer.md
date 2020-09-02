@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e93ebc58e4e9b6092921e4155fe3d821bb552c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670717"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Cómo: Dividir una clase en clases parciales (Diseñador de clases)
@@ -24,7 +24,7 @@ ms.locfileid: "72670717"
 
 Puede dividir la declaración de una clase o estructura entre varias declaraciones mediante la palabra clave `Partial` en Visual Basic o la palabra clave `partial` en Visual C#. Puede usar todas las declaraciones parciales que quiera en todos los archivos de código fuente que quiera o en un archivo de código fuente, pero todas las declaraciones deben estar en el mismo ensamblado y en el mismo espacio de nombres.
 
- Las clases parciales son útiles en varias situaciones. Por ejemplo, cuando trabaja en proyectos grandes, separar una clase en más de un archivo permite que pueda trabajar en ella más de un programador. Cuando trabaja con código generado por Visual Studio, puede cambiar la clase sin tener que volver a crear el archivo de origen. (Los ejemplos de código generados por Visual Studio incluyen código de contenedor de Windows Forms y servicio Web). Así, puede crear código que use clases generadas automáticamente sin necesidad de modificar el archivo creado por Visual Studio.
+ Las clases parciales son útiles en varias situaciones. Por ejemplo, cuando trabaja en proyectos grandes, separar una clase en más de un archivo permite que pueda trabajar en ella más de un programador. Cuando trabaja con código generado por Visual Studio, puede cambiar la clase sin tener que volver a crear el archivo de origen. (Ejemplos de código que genera Visual Studio incluyen código de contenedor de servicio Web y Windows Forms). Por tanto, puede crear código que use clases generadas automáticamente sin tener que modificar el archivo creado por Visual Studio.
 
  Hay dos tipos de métodos parciales. En Visual C#, se denominan declarativo y de implementación. En Visual Basic, se denominan de declaración e implementación.
 
@@ -33,7 +33,7 @@ Puede dividir la declaración de una clase o estructura entre varias declaracion
  Los siguientes ejemplos dividen la definición de la clase `Employee` en dos declaraciones, cada una de las cuales define otro procedimiento. Las dos definiciones parciales de los ejemplos podrían estar en un archivo de origen o en dos archivos distintos.
 
 > [!NOTE]
-> Visual Basic usa definiciones de clase parcial para separar el código generado por Visual Studio del código creado por el usuario. El código se divide en archivos de código fuente distintos. Por ejemplo, el **Diseñador de Windows Forms`Form` define clases parciales para controles como** . No debe modificar el código generado en estos controles.
+> Visual Basic usa definiciones de clase parcial para separar el código generado por Visual Studio del código creado por el usuario. El código se divide en archivos de código fuente distintos. Por ejemplo, el **Diseñador de Windows Forms`Form` define clases parciales para controles como **. No debe modificar el código generado en estos controles.
 
  Para obtener más información sobre los tipos parciales en Visual Basic, vea [Partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448).
 
@@ -75,5 +75,5 @@ public partial class Employee
 }
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Clases y métodos](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1) parciales parciales ( [tipo)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334) Partial ( [método)C# (referencia)](https://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137) [partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)
+## <a name="see-also"></a>Consulte también
+ [Clases y métodos](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1) parciales parciales ( [tipo)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334) Partial ( [método) (referencia de C#)](https://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137) [partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)

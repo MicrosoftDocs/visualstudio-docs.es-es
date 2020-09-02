@@ -1,5 +1,5 @@
 ---
-title: Ampliación y personalización de la herramienta Windows | Microsoft Docs
+title: Extender y personalizar ventanas de herramientas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,41 +12,41 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204543"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Ampliación y personalización de ventanas de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio proporciona varios tipos diferentes de windows, por ejemplo las ventanas de herramientas, ventanas de documento y ventanas de diálogo. Otras ventanas como la ventana Propiedades, la ventana de salida y la ventana Lista de tareas, son tipos de ventanas de herramientas.  
+Visual Studio proporciona varios tipos diferentes de ventanas, por ejemplo, ventanas de herramientas, ventanas de documentos y ventanas de cuadro de diálogo. Otras ventanas, como el ventana Propiedades, la ventana de salida y la ventana de Lista de tareas, son tipos de ventanas de herramientas.  
   
 ## <a name="tool-windows"></a>Ventanas de herramientas  
- Ventanas de herramientas de Visual Studio son ventanas normalmente de solo lectura que no están basados en archivos. En esto se diferencian de las ventanas de documento, que muestran archivos en modo de lectura y escritura. Las ventanas **Cuadro de herramientas**, **Explorador de soluciones**, **Propiedades** y el **Explorador web** son ejemplos de ventanas de herramientas.  
+ Las ventanas de herramientas de Visual Studio suelen ser ventanas de solo lectura que no están basadas en archivos. En esto se diferencian de las ventanas de documento, que muestran archivos en modo de lectura y escritura. Las ventanas **Cuadro de herramientas**, **Explorador de soluciones**, **Propiedades** y el **Explorador web** son ejemplos de ventanas de herramientas.  
   
- Para obtener información sobre cómo crear una ventana de herramientas simple, consulte [adición de una ventana de herramientas](../extensibility/adding-a-tool-window.md).  
+ Para obtener información sobre cómo crear una ventana de herramientas simple, vea [Agregar una ventana de herramientas](../extensibility/adding-a-tool-window.md).  
   
- Para registrar una ventana de herramientas con Visual Studio, consulte [registrando una ventana de herramientas](../extensibility/registering-a-tool-window.md).  
+ Para registrar una ventana de herramientas con Visual Studio, consulte [registrar una ventana de herramientas](../extensibility/registering-a-tool-window.md).  
   
- Las ventanas de herramientas son de instancia única de forma predeterminada, lo que significa que solo una instancia de la ventana de herramientas puede estar abierta a la vez. Cuando se abre una ventana de herramientas de instancia única, permanece abierta hasta que se cierra el IDE. Cuando se cierra una ventana de herramientas de instancia única, se cambia solo su visibilidad. También puede crear ventanas de herramientas de varias instancias, de forma que varias instancias de la ventana puedan abrir simultáneamente. Consulte [creación de una ventana de herramientas de instancias múltiples](../extensibility/creating-a-multi-instance-tool-window.md) para obtener más información.  
+ Las ventanas de herramientas son de instancia única de forma predeterminada, lo que significa que solo una instancia de la ventana de herramientas puede estar abierta a la vez. Cuando se abre una ventana de herramientas de instancia única, permanece abierta hasta que se cierra el IDE. Al cerrar una ventana de herramientas de una sola instancia, solo cambia la visibilidad. También puede crear ventanas de herramientas de varias instancias, de forma que varias instancias de la ventana puedan abrir simultáneamente. Vea [crear una ventana de herramientas de varias instancias](../extensibility/creating-a-multi-instance-tool-window.md) para obtener más información.  
   
- Ventanas de herramientas pueden ser *dinámica*, lo que significa que están visibles siempre que se aplica su contexto de interfaz de usuario relacionado. El uso de la visibilidad automática puede reducir la cantidad de ventanas en el IDE. Para obtener más información, consulte [abriendo una ventana de herramientas dinámica](../extensibility/opening-a-dynamic-tool-window.md).  
+ Las ventanas de herramientas pueden ser *dinámicas*, lo que significa que están visibles cada vez que se aplica su contexto de interfaz de usuario relacionado. El uso de la visibilidad automática puede reducir la cantidad de ventanas en el IDE. Para obtener más información, consulte [abrir una ventana de herramientas dinámica](../extensibility/opening-a-dynamic-tool-window.md).  
   
  Las ventanas de herramientas se pueden acoplar, ser flotantes o con pestañas en el marco del documento. El IDE proporciona el marco de ventana de herramientas y se usa para controlar el tamaño, la ubicación, el estado de acoplamiento y otras propiedades persistentes. El panel de la ventana de herramientas muestra el contenido. La ubicación y tamaño predeterminados se aplican solo cuando la ventana de herramientas se abre por primera vez; después se guarda el estado de la ventana de herramientas.  
   
  Los paneles de la ventana de herramientas pueden hospedar controles de usuario WPF y admiten barras de herramientas. Puede invalidar la propiedad <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> para devolver el identificador del control hospedado.  
   
- Puede agregar muchas características distintas a las ventanas de herramientas. Por ejemplo, puede agregar una barra de herramientas: [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menú contextual: [Adición de un menú contextual en una ventana de herramientas](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Puede agregar un control de búsqueda que le permite buscar elementos dentro de la ventana de herramientas: [Adición de búsqueda a una ventana de herramientas](../extensibility/adding-search-to-a-tool-window.md).  
+ Puede Agregar muchas características diferentes a las ventanas de herramientas. Por ejemplo, puede Agregar una barra de herramientas: [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menú contextual: [Agregar un menú contextual en una ventana de herramientas](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Puede Agregar un control de búsqueda que le permita buscar elementos dentro de la ventana de herramientas: [Agregar una búsqueda a una ventana de herramientas](../extensibility/adding-search-to-a-tool-window.md).  
   
- Puede suscribirse a eventos de ventana de herramienta: [Suscripción a un evento](../extensibility/subscribing-to-an-event.md).  
+ Puede suscribirse a eventos de la ventana de herramientas: [suscribirse a un evento](../extensibility/subscribing-to-an-event.md).  
   
-## <a name="extending-existing-tool-windows"></a>Ampliación de Windows existentes de herramienta  
- Puede agregar información acerca de la ventana de herramientas a un nuevo **opciones** página y una nueva configuración en el **propiedades** página, escribir en el **lista de tareas** y **salida**  windows. Para obtener más información, consulte [extender las propiedades, lista de tareas, salida y las opciones de Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) y [extender las propiedades, lista de tareas, salida y las opciones de Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
+## <a name="extending-existing-tool-windows"></a>Extender las ventanas de herramientas existentes  
+ Puede agregar información sobre la ventana de herramientas a una nueva página de **Opciones** y un nuevo valor en la página de **propiedades** , escribir en las ventanas de **lista de tareas** y de **salida** . Para obtener más información, consulte [extensión de las propiedades, lista de tareas, salida y ventanas de opciones](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) , y [extensión de las propiedades, lista de tareas, salida y ventanas de opciones](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
   
 ## <a name="modal-dialog-boxes"></a>Cuadros de diálogo modales  
- En una extensión de Visual Studio debe crear cuadros de diálogo modales derivando desde <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, que le permite controlar ellos y el resto de la interfaz de usuario. Para más información, consulte . [Creación y administración de cuadros de diálogo modales](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
+ En una extensión de Visual Studio, debe crear cuadros de diálogo modales derivándolo de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName> , lo que le permite controlarlos y el resto de la interfaz de usuario. Para obtener más información, consulte el elemento . [Crear y administrar cuadros de diálogo modales](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Creación de una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)

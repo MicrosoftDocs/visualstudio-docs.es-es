@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537389"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento Update (desarrollo de Office en Visual Studio)
@@ -43,7 +43,7 @@ ms.locfileid: "85537389"
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`enabled`|Obligatorio. Establezca habilitado en uno de los siguientes valores:<br /><br /> -   **true** para comprobar si hay actualizaciones.<br />-   **false** para evitar la comprobación de actualizaciones.|
+|`enabled`|Necesario. Establezca habilitado en uno de los siguientes valores:<br /><br /> -   **true** para comprobar si hay actualizaciones.<br />-   **false** para evitar la comprobación de actualizaciones.|
 
  El elemento `update` tiene los siguientes elementos secundarios.
 
@@ -54,8 +54,8 @@ ms.locfileid: "85537389"
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`maximumAge`| Obligatorio. Establezca este valor en un entero.|
-|`unit`|Obligatorio. Establezca `unit` en uno de los valores siguientes:<br /><br /> -   **después**<br />-   **durante**<br />-   **próximas**|
+|`maximumAge`| Necesario. Establezca este valor en un entero.|
+|`unit`|Necesario. Establezca `unit` en uno de los valores siguientes:<br /><br /> -   **horas**<br />-   **días**<br />-   **próximas**|
 
 ## <a name="example-of-always-checking-for-updates"></a>Ejemplo de comprobación de actualizaciones siempre
 
@@ -81,7 +81,7 @@ ms.locfileid: "85537389"
 </vstav3:update>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)

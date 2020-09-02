@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef5ccc0cf432a5c6782b76c4623bfdc55f66a8b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538560"
 ---
 # <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
@@ -27,7 +27,7 @@ Esta sección es una referencia de los mensajes de error generados por la herram
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |[CA0001](ca0001.md)|Se inició una excepción en la herramienta de análisis de código administrado que no indica una condición de error esperada.|
 |[CA0051](ca0051.md)|No se seleccionaron reglas.|

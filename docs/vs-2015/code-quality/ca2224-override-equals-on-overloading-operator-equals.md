@@ -17,20 +17,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538641"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Invalidar Equals al sobrecargar operadores de igualdad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
 |Identificador de comprobación|CA2224|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa
@@ -50,7 +50,7 @@ ms.locfileid: "85538641"
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Ejemplos de definiciones de igualdad incoherentes
 
 ### <a name="description"></a>Descripción
- En el ejemplo siguiente se muestra un tipo con definiciones de igualdad incoherentes. `BadPoint`cambia el significado de igualdad proporcionando una implementación personalizada del operador de igualdad, pero no invalida de <xref:System.Object.Equals%2A> modo que se comporta de forma idéntica.
+ En el ejemplo siguiente se muestra un tipo con definiciones de igualdad incoherentes. `BadPoint` cambia el significado de igualdad proporcionando una implementación personalizada del operador de igualdad, pero no invalida de <xref:System.Object.Equals%2A> modo que se comporta de forma idéntica.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]

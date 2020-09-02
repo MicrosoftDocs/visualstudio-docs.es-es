@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 436a8614c18c296c072d91116143306d898f0436
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538858"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evitar los miembros estáticos en tipos visibles a través de COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |Identificador de comprobación|CA1407|
-|Categoría|Microsoft. Interoperability|
+|Category|Microsoft. Interoperability|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537883"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Cómo: agrupar filas en una hoja de cálculo mediante programación
@@ -58,7 +58,7 @@ ms.locfileid: "85537883"
     > [!NOTE]
     > Para desagrupar filas, llame al <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)
 - [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)

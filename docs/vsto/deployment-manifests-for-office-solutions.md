@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547555"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifiestos de implementación para soluciones de Office
@@ -27,7 +27,7 @@ ms.locfileid: "85547555"
 
  El desarrollo de Office en Visual Studio usa el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] esquema de manifiesto de implementación definido en la referencia de [manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  El archivo de manifiesto de implementación para las soluciones de Office identifica la versión actual y otras opciones de implementación. Hace referencia al manifiesto de aplicación y describe la versión actual de la solución y todos los archivos de en la solución.
 
 ## <a name="file-name-syntax"></a>Sintaxis de los nombres de archivo

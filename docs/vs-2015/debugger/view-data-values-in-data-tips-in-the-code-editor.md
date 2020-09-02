@@ -1,5 +1,5 @@
 ---
-title: Ver los valores de datos en sugerencias de datos en el editor de código | Documentos de Microsoft
+title: Ver valores de datos en sugerencias de datos en el editor de código | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700106"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Ver valores de datos en sugerencias de datos en el editor de código
@@ -33,7 +33,7 @@ ms.locfileid: "65700106"
 
 La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución.  
   
- En [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], información sobre datos se puede anclar en una ubicación específica en un archivo de origen, o puede flotar encima de todo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows.  
+ En [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] , la información sobre herramientas se puede anclar a una ubicación específica en un archivo de código fuente o puede flotar encima de todas las [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ventanas.  
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>Para mostrar la Información sobre datos solo en modo de interrupción  
   
@@ -44,15 +44,15 @@ La Información sobre datos es una manera útil de ver información sobre las va
    > [!NOTE]
    > Las informaciones sobre datos siempre se evalúan en el contexto en el que se suspende la ejecución, y no en el que el cursor se mantiene sobre un elemento. Si mantiene el cursor sobre una variable en otra función con el mismo nombre que una variable que está en el contexto actual, el valor de la variable de la otra función se mostrará como el valor de la variable del contexto actual.  
   
-2. La Información sobre datos desaparece al quitar el puntero del mouse. Para anclar la información sobre datos de modo que permanezca abierta, haga clic en el **anclar a origen** icono, o  
+2. La Información sobre datos desaparece al quitar el puntero del mouse. Para anclar la información sobre la información de forma que permanezca abierta, haga clic en el icono **anclar al origen** .  
   
-   - Haga doble clic en una variable, a continuación, haga clic en **anclar a origen**.  
+   - Haga clic con el botón derecho en una variable y luego haga clic en **anclar al origen**.  
   
      La Información sobre datos se cierra cuando la sesión de depuración finaliza.  
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>Desanclar la Información sobre datos y dejar que flote  
   
-- En una información sobre datos anclada, haga clic en el **Desanclar del origen** icono.  
+- En una información sobre información anclada, haga clic en el icono **desanclar del origen** .  
   
      El icono pasa a la posición desanclada. La Información sobre datos flota ahora sobre las ventanas abiertas. La Información sobre datos que flota se cierra cuando la sesión de depuración finaliza.  
   
@@ -64,22 +64,22 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
 ### <a name="to-close-a-datatip"></a>Para cerrar una Información sobre datos  
   
-- Coloque el puntero del mouse sobre una información sobre datos y, a continuación, haga clic en el **cerrar** icono.  
+- Coloque el puntero del mouse sobre una información sobre información y haga clic en el icono **cerrar** .  
   
 ### <a name="to-close-all-datatips"></a>Para cerrar toda la Información sobre datos  
   
-- En el **depurar** menú, haga clic en **borrar todas las sugerencias de datos**.  
+- En el menú **depurar** , haga clic en **borrar toda la información sobre herramientas**.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Para cerrar toda la información sobre datos de un archivo concreto  
   
-- En el **depurar** menú, haga clic en **borrar todos los información sobre datos anclada a** *archivo*.  
+- En el menú **depurar** , haga clic en **borrar toda la información sobre herramientas anclada al** *archivo*.  
   
 ## <a name="expanding-and-editing-information"></a>Expandir y editar información  
  Con la Información sobre datos, se puede expandir una matriz, una estructura o un objeto para ver sus miembros. También se puede editar el valor de una variable de una Información sobre datos.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Para expandir una variable y ver sus elementos  
   
-- En una información sobre datos, coloque el puntero del mouse sobre el **+** inicio de sesión que precede al nombre de variable.  
+- En una información sobre información, coloque el puntero del mouse sobre el **+** signo que precede al nombre de la variable.  
   
      La variable se expande y se muestran sus elementos en forma de árbol.  
   
@@ -101,48 +101,48 @@ La Información sobre datos es una manera útil de ver información sobre las va
      La Información sobre datos permanecerá transparente mientras mantenga presionada la tecla CTRL.  
   
 ## <a name="visualizing-complex-data-types"></a>Visualizar tipos de datos complejos  
- Si aparece un icono de lupa junto a un nombre de variable en una información sobre datos, uno o varios [crear los visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md) están disponibles para las variables de ese tipo de datos. Los visualizadores se pueden utilizar para mostrar la información de manera más significativa, normalmente de forma gráfica.  
+ Si aparece un icono de lupa junto a un nombre de variable en una información sobre datos, uno o varios [visualizadores personalizados de creación](../debugger/create-custom-visualizers-of-data.md) están disponibles para las variables de ese tipo de datos. Los visualizadores se pueden utilizar para mostrar la información de manera más significativa, normalmente de forma gráfica.  
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Para ver el contenido de una variable mediante un visualizador  
   
 - Haga clic en el icono de lupa para seleccionar el visualizador predeterminado del tipo de datos.  
   
-     -o bien-  
+     o bien  
   
      Haga clic en la flecha emergente junto al visualizador para seleccionar una lista emergente de visualizadores adecuados para el tipo de datos.  
   
      Un visualizador muestra la información.  
   
 ## <a name="adding-information-to-a-watch-window"></a>Agregar información a una ventana Inspección  
- Si desea seguir examinando una variable, puede agregar la variable a la **inspección** ventana desde una información sobre datos.  
+ Si desea seguir viendo una variable, puede Agregar la variable a la ventana **inspección** desde una información sobre información.  
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>Para agregar una variable a la ventana Inspección  
   
-- Haga clic en una información sobre datos y, a continuación, haga clic en **Agregar inspección**.  
+- Haga clic con el botón secundario en una información sobre información y luego haga clic en **Agregar inspección**.  
   
-     La variable se agrega a la **inspección** ventana. Si usa una versión que admite varias **inspección** windows, la variable se agrega a **Inspección 1.**  
+     La variable se agrega a la ventana **inspección** . Si usa una edición que admite varias ventanas **inspección** , la variable se agrega a la **inspección 1.**  
   
 ## <a name="importing-and-exporting-datatips"></a>Importar y exportar Información sobre datos  
  Puede exportar Información sobre datos a un archivo XML, que puede compartir con un colega o modificar con un editor de texto.  
   
 #### <a name="to-export-datatips"></a>Para exportar información sobre datos  
   
-1. En el menú Depurar, haga clic en **exportar información sobre datos**.  
+1. En el menú Depurar, haga clic en **exportar información sobre herramientas**.  
   
-     El **exportar información sobre datos** aparece el cuadro de diálogo.  
+     Aparece el cuadro de diálogo **exportar información sobre herramientas** .  
   
-2. Usar técnicas de archivo estándar para navegar hasta la ubicación donde desea guardar el archivo XML, escriba un nombre para el archivo en el **nombre de archivo** cuadro y, a continuación, haga clic en **Aceptar**.  
+2. Use las técnicas de archivo estándar para ir a la ubicación en la que desea guardar el archivo XML, escriba un nombre para el archivo en el cuadro **nombre de archivo** y, a continuación, haga clic en **Aceptar**.  
   
 #### <a name="to-import-datatips"></a>Para importar información sobre datos  
   
-1. En el menú Depurar, haga clic en **importar información sobre datos**.  
+1. En el menú Depurar, haga clic en **Importar información sobre herramientas**.  
   
-     El **importar información sobre datos** aparece el cuadro de diálogo.  
+     Aparece el cuadro de diálogo **Importar información sobre herramientas** .  
   
 2. Utilice el cuadro de diálogo para buscar el archivo XML que desea abrir y haga clic en **Aceptar**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Cómo: Utilice el cuadro de diálogo Inspección rápida](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
- [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: Cambiar el formato numérico de Windows del depurador](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Cómo: utilizar el cuadro de diálogo Inspección rápida](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Cómo: Cambiar el formato numérico de las ventanas del depurador](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
