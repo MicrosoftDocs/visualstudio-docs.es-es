@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665836"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
@@ -39,12 +39,12 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 ## <a name="kinds-of-windows"></a>Tipos de ventanas
 
 ### <a name="tool-and-document-windows"></a>Ventanas de herramientas y documentos
- El IDE incluye dos tipos básicos de ventanas, las *ventanas de herramientas* y las *ventanas de documento*. Entre las ventanas de herramientas están el Explorador de soluciones, el Explorador de servidores, la Ventana de salida, la Lista de errores, los Diseñadores, las ventanas del depurador, etc. Las ventanas de documento contienen archivos de código fuente, archivos de texto arbitrarios, archivos de configuración, etc. Las ventanas de herramientas se pueden cambiar de tamaño y arrastrar por la barra de título. Las ventanas de documento se pueden arrastrar por su pestaña. Haga clic con el botón secundario en la pestaña o la barra de título para establecer otras opciones en la ventana.
+ El IDE incluye dos tipos básicos de ventanas, las *ventanas de herramientas* y las *ventanas de documento*. Entre las ventanas de herramientas están el Explorador de soluciones, el Explorador de servidores, la Ventana de salida, la Lista de errores, los Diseñadores, las ventanas del depurador, etc. Las ventanas de documento contienen archivos de código fuente, archivos de texto arbitrarios, archivos de configuración, etc. Las ventanas de herramientas se pueden cambiar de tamaño y arrastrar por la barra de título. Las ventanas de documento se pueden arrastrar mediante la pestaña. Haga clic con el botón derecho en la barra de título o pestaña para establecer otras opciones en la ventana.
 
- El menú **Ventana** muestra las opciones para acoplar, hacer flotante y ocultar ventanas en el IDE. Haga clic con el botón derecho en una pestaña de ventana o en la barra de título para ver las opciones adicionales de esa ventana concreta. Puede mostrar más de una instancia de determinadas ventanas de herramientas a la vez. Por ejemplo, puede mostrar más de una ventana del explorador web y crear instancias adicionales de algunas ventanas de herramientas eligiendo **Nueva ventana** en el menú **Ventana** .
+ El menú **ventana** muestra las opciones para acoplar, flotar y ocultar ventanas en el IDE. Haga clic con el botón derecho en una pestaña de ventana o en la barra de título para ver las opciones adicionales de esa ventana concreta. Puede mostrar más de una instancia de determinadas ventanas de herramientas a la vez. Por ejemplo, puede mostrar más de una ventana del explorador web y crear instancias adicionales de algunas ventanas de herramientas eligiendo **Nueva ventana** en el menú **Ventana** .
 
 ### <a name="preview-tab-document-windows"></a>Ficha Vista previa (ventanas de documento)
- En la ficha Vista previa, puede ver los archivos en el editor sin abrirlos. Puede obtener una vista previa de los archivos eligiéndolos en el **Explorador de soluciones**, al depurar los archivos paso a paso por instrucciones, con Ir a definición y cuando se desplaza por los resultados de la búsqueda. La vista previa de los archivos aparece en una ficha en el lado derecho de la ficha de documento. El archivo se abre para su edición si lo modifica o elige la opción **Abrir**.
+ En la ficha Vista previa, puede ver los archivos en el editor sin abrirlos. Puede obtener una vista previa de los archivos si los elige en **Explorador de soluciones**, durante la depuración al ir a los archivos, con ir a definición y al examinar los resultados de una búsqueda. La vista previa de los archivos aparece en una ficha en el lado derecho de la ficha de documento. El archivo se abre para su edición si lo modifica o elige la opción **Abrir**.
 
 ### <a name="tab-groups"></a>Grupos de pestañas
  Los grupos de pestañas mejoran su capacidad de administrar un área de trabajo reducida mientras trabaja con dos o más documentos abiertos en el IDE. Puede organizar varias ventanas de documento y ventanas de herramientas en grupos de pestañas horizontales o verticales e intercambiar documentos de un grupo a otro.
@@ -53,7 +53,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
  Cuando tiene que ver o editar dos ubicaciones a la vez en un documento, puede dividir las ventanas. Para dividir el documento en dos secciones con desplazamiento independiente, haga clic en **Dividir** en el menú **Ventana** . Haga clic en **Quitar división** en el menú **Ventana** para restaurar la vista única.
 
 ### <a name="toolbars"></a>Barras de herramientas
- Se pueden organizar las barras de herramientas arrastrando o utilizando el cuadro de diálogo **Personalizar** . Para obtener más información sobre cómo ubicar y personalizar las barras de herramientas, vea [Cómo: Personalizar menús y barras de herramientas en Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Se pueden organizar las barras de herramientas arrastrando o utilizando el cuadro de diálogo **Personalizar** . Para obtener más información sobre cómo colocar y personalizar las barras de herramientas, vea [Cómo: personalizar menús y barras](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)de herramientas.
 
 ## <a name="arranging-and-docking-windows"></a>Organizar y acoplar ventanas
  Tanto las ventanas de documento como las ventanas de herramientas se pueden *acoplar*para que ocupen una posición dentro del marco de ventana del IDE o floten como una ventana independiente del IDE. Las ventanas de herramientas se pueden acoplar en cualquier lugar dentro del marco del IDE; algunas ventanas de herramientas se pueden acoplar como ventanas con fichas en el marco del editor. Las ventanas de documento se pueden acoplar dentro del marco del editor y se pueden anclar en su posición actual en el orden de tabulación. Puede acoplar varias ventanas flotantes juntas para que compartan espacio sobre el IDE o fuera de él. Las ventanas de herramientas también se pueden ocultar o minimizar.
@@ -77,14 +77,14 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
   Las ventanas de herramientas y de documento se pueden organizar arrastrándolas, mediante los comandos del menú **Ventana** y haciendo clic con el botón derecho en la barra de título de la ventana que se desea organizar.
 
 > [!NOTE]
-> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Acoplar ventanas
  Al hacer clic y arrastrar la barra de título de una ventana de herramientas o la pestaña de una ventana de documento, aparece un rombo de guía. Durante la operación de arrastre, cuando el cursor del ratón se encuentra sobre una de las flechas del rombo, aparece un área sombreada que muestra dónde se acoplará la ventana al soltar el botón del ratón.
 
  Para mover una ventana acoplable sin ajustarla en su lugar, presione la tecla Ctrl mientras arrastra la ventana.
 
- Para devolver una ventana de herramientas o una ventana de documento al punto de acoplamiento más reciente, presione **CTRL** mientras hace doble clic en la barra de título o en la pestaña de la ventana.
+ Para devolver una ventana de herramientas o una ventana de documento a su ubicación acoplada más reciente, presione **Ctrl** mientras hace doble clic en la barra de título o en la pestaña de la ventana.
 
  La siguiente ilustración muestra el rombo de guía para las ventanas de documento que solo se pueden acoplar dentro del marco de edición:
 
@@ -94,11 +94,11 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
  Rombo de guía para las ventanas de herramientas
 
- ![Rombos guía de la ventana de herramientas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+ ![Rombos de guía de ventanas de herramientas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
 
  La siguiente ilustración muestra como se acopla el Explorador de soluciones en una nueva ubicación, lo que se muestra en el área sombreada azul:
 
- ![Acoplar Explorador de soluciones en una nueva posición](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
+ ![Acoplar el Explorador de soluciones en una nueva posición](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
 
 ### <a name="closing-and-auto-hiding-tool-windows"></a>Cerrar y ocultar automáticamente las ventanas de herramientas
  Puede cerrar una ventana de herramientas haciendo clic en la X situada en la esquina superior derecha de la barra de título. Para volver a abrir la ventana, utilice su comando de menú o un método abreviado de teclado. Las ventanas de herramientas admiten una característica denominada Ocultar automáticamente, lo que hace que una ventana se deslice fuera de la vista cuando se utiliza una ventana diferente. Cuando una ventana se oculta automáticamente, su nombre aparece en una pestaña situada en el borde del IDE. Para utilizar la ventana de nuevo, haga clic sobre la pestaña para que vuelva a aparecer la ventana.
@@ -106,7 +106,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
  ![Ocultar automáticamente](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
-> Para establecer si Ocultar automáticamente se aplica a las ventanas de herramientas por separado o como grupos acoplados, active o desactive la opción **El botón Ocultar automáticamente afecta solo a las ventanas de herramientas activas** en el cuadro de diálogo **Opciones** . Para obtener más información, consulta [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).
+> Para establecer si Ocultar automáticamente funciona en ventanas de herramientas individualmente o como grupos acoplados, Active o desactive **Ocultar automáticamente botón afecta solo a las ventanas de herramientas activas** en el cuadro de diálogo **Opciones** . Para obtener más información, consulte [General, entorno, opciones (cuadro de diálogo)](../ide/reference/general-environment-options-dialog-box.md).
 
 > [!NOTE]
 > Las ventanas de herramientas que tienen habilitada la opción Ocultar automáticamente pueden deslizarse temporalmente en la vista cuando la ventana tiene el foco. Para volver a ocultar la ventana, seleccione un elemento fuera de la ventana actual. Cuando la ventana pierde el foco, vuelve a desaparecer.
@@ -149,7 +149,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
 1. Agregue un nuevo proyecto **Base de datos de SQL Server** a la solución.
 
-2. Haga clic con el botón secundario en el proyecto nuevo en el Explorador de soluciones y elija **Ver en el explorador de objetos**. Esto muestra la ventana **Explorador de objetos de SQL Server** , desde donde puede obtener acceso a tablas, vistas y otros objetos de su base de datos. Puede hacer que esta ventana flote o dejarla acoplada. Ajuste las otras ventanas de herramientas como quiera. Si quiere, puede agregar una base de datos real, pero no es necesario para este tutorial.
+2. Haga clic con el botón derecho en el proyecto nuevo en el Explorador de soluciones y elija **Ver en el explorador de objetos**. Esto muestra la ventana **Explorador de objetos de SQL Server** , desde donde puede obtener acceso a tablas, vistas y otros objetos de su base de datos. Puede hacer que esta ventana flote o dejarla acoplada. Ajuste las otras ventanas de herramientas como quiera. Si quiere, puede agregar una base de datos real, pero no es necesario para este tutorial.
 
 3. Cuando el diseño sea de su agrado, pulse **Ventana > Guardar diseño de ventana** en el menú principal. Llame a este diseño "Proyecto de BD". (En este proyecto no pondremos un diseño de modo de depuración).
 
@@ -163,13 +163,13 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
      Si tiene una configuración de varios monitores en el trabajo y un portátil en casa, puede crear diseños optimizados para cada máquina.
 
-     Nota: si aplica un diseño de varios monitores en un sistema de un solo monitor, las ventanas flotantes que colocó en el segundo monitor aparecerán ocultas detrás de la ventana de Visual Studio. Puede traer estas ventanas al frente presionando Alt + Tab. Si posteriormente abre Visual Studio con varios monitores, puede restaurar las ventanas a sus posiciones especificadas volviendo a aplicar el diseño.
+     Nota: si aplica un diseño de varios monitores en un sistema de un solo monitor, las ventanas flotantes que colocó en el segundo monitor aparecerán ocultas detrás de la ventana de Visual Studio. Para llevar estas ventanas al frente, presione Alt + Tab. Si luego abre Visual Studio con varios monitores, puede restaurar las ventanas a sus posiciones especificadas volviendo a aplicar el diseño.
 
 ##### <a name="manage-and-roam-your-layouts"></a>Administrar y transmitir los diseños
 
 1. Puede quitar, cambiar el nombre o reordenar el diseño personalizado pulsando **Ventana > Administrar diseños de ventana**. Si mueve un diseño, el enlace de teclado se ajusta automáticamente para reflejar la nueva posición en la lista. Los enlaces no se pueden modificar de otra forma, por lo que se puede almacenar un máximo de 10 diseños a la vez.
 
-     ![Administrar diseños de ventana](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+     ![Administrar los diseños de la ventana](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 
      Para recordar el método abreviado de teclado que está asignado a cada diseño, pulse **Ventana > Aplicar diseño de ventana**.
 
@@ -181,5 +181,5 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 |-----------|-----------------|
 |[Tipos de ventanas](../misc/kinds-of-windows.md)|Describe las diferencias entre las ventanas de herramientas y las ventanas de documento en el IDE.|
 |[Cómo: Organizar y acoplar ventanas](../misc/how-to-arrange-and-dock-windows.md)|Describe cómo acoplar las ventanas, ocultarlas de forma automática y disponerlas en mosaico, así como la manera de restablecer el diseño de las ventanas.|
-|[Cómo: moverse por el IDE de Visual Studio](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Describe cómo puede recorrer las ventanas abiertas del IDE, por orden de uso. También describe cómo puede ir a documentos concretos.|
+|[Cómo: moverse por el IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Describe cómo puede recorrer las ventanas abiertas del IDE, por orden de uso. También describe cómo puede ir a documentos concretos.|
 |[Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contiene información sobre las combinaciones de opciones de configuración y cómo estas opciones afectan a los diseños de ventanas, los métodos abreviados de teclado y otros elementos del IDE.|

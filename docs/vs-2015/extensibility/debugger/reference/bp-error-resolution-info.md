@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 246cdc245d6b6828eee7cd60e1aa94c487b77905
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153544"
 ---
-# <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
+# <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Describe la resolución de un punto de interrupción de error, incluida la ubicación, el programa y subproceso.  
+Describe la resolución de un punto de interrupción de error, incluidas la ubicación, el programa y el subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,34 +50,34 @@ public struct BP_ERROR_RESOLUTION_INFO { 
   
 ## <a name="members"></a>Miembros  
  `dwFields`  
- Una combinación de valores de la [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumeración que especifica qué campos de esta estructura se rellenan.  
+ Combinación de valores de la enumeración [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) que especifica los campos de esta estructura que se rellenan.  
   
  `bpResLocation`  
- El [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) unión, que especifica la ubicación de la resolución de punto de interrupción.  
+ [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Unión, que especifica la ubicación de resolución del punto de interrupción.  
   
  `pProgram`  
- El [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa la aplicación en el que se produjo el error de punto de interrupción.  
+ El objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa la aplicación en la que se produjo el error de punto de interrupción.  
   
  `pThread`  
- El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso en el que se ejecuta la aplicación que generó el error de punto de interrupción.  
+ El objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso en el que se está ejecutando la aplicación que generó el error de punto de interrupción.  
   
  `bstrMessage`  
- Una cadena que contiene cualquier advertencia o mensaje de error resultante de la resolución de este error.  
+ Cadena que contiene cualquier advertencia o mensaje de error resultante de esta resolución de errores.  
   
  `dwType`  
- Un valor de la [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) enumeración que especifica el tipo de error de punto de interrupción.  
+ Un valor de la enumeración [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) que especifica el tipo de error de punto de interrupción.  
   
-## <a name="remarks"></a>Comentarios  
- Esta estructura se devuelve desde el [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) método.  
+## <a name="remarks"></a>Observaciones  
+ Esta estructura se devuelve desde el método [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   

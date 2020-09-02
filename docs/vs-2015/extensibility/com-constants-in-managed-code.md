@@ -1,5 +1,5 @@
 ---
-title: Constantes de COM en código administrado | Microsoft Docs
+title: Constantes COM en código administrado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,18 +11,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f502f8ac10c28ff8c25433792ab60caf6ee05bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184435"
 ---
 # <a name="com-constants-in-managed-code"></a>Constantes de COM en código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Managed Package Framework (MPF) hace que algunas constantes COM estándares que esté disponible para código administrado. Estas constantes se muestran a continuación para su referencia.  
+El marco de trabajo de paquetes administrados (MPF) hace que algunas constantes COM estándar estén disponibles para el código administrado. Estas constantes se enumeran a continuación para su referencia.  
   
-## <a name="boolean-hresult-values"></a>Valores HRESULT booleano  
+## <a name="boolean-hresult-values"></a>Valores HRESULT booleanos  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
@@ -128,5 +128,5 @@ Managed Package Framework (MPF) hace que algunas constantes COM estándares que 
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Control de errores y valores devueltos](../extensibility/error-handling-and-return-values.md)

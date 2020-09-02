@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704349"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores del Visualizador de simultaneidad
@@ -63,7 +63,7 @@ En el visualizador de simultaneidad, los marcadores son iconos que representan l
 ## <a name="markers-from-eventsource"></a>Marcadores de EventSource  
  El visualizador de simultaneidad también puede mostrar eventos EventSource.  Para obtener más información, consulte [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Marcadores de marca](../profiling/flag-markers.md)   
  [Marcadores de mensaje](../profiling/message-markers.md)   
  [Marcadores de intervalo](../profiling/span-markers.md)   

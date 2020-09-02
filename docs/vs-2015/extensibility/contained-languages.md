@@ -1,5 +1,5 @@
 ---
-title: Contenidos de lenguajes | Microsoft Docs
+title: Idiomas contenidos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0920999eee7460c8bf697e245bae55a3641b8e18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184282"
 ---
 # <a name="contained-languages"></a>Lenguajes incluidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-*Contenidos de lenguajes* son lenguajes contenidos en otros lenguajes. Por ejemplo, HTML en [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] páginas pueden contener [!INCLUDE[csprcs](../includes/csprcs-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] secuencias de comandos. Una arquitectura de doble lenguaje es necesaria para el editor de archivos .aspx proporcionar IntelliSense, colores y otras características de edición para el código HTML y el lenguaje de scripting.  
+Los *idiomas contenidos* son idiomas incluidos en otros lenguajes. Por ejemplo, HTML en [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] páginas puede contener [!INCLUDE[csprcs](../includes/csprcs-md.md)] [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] scripts o. Se necesita una arquitectura de dos idiomas para que el editor de archivos. aspx proporcione IntelliSense, coloración y otras características de edición para HTML y para el lenguaje de scripting.  
   
 ## <a name="implementation"></a>Implementación  
- La interfaz más importante que debe implementar para los lenguajes contenidos es la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz. Esta interfaz se implementa mediante cualquier lenguaje que se puede hospedar dentro de un idioma principal. Proporciona acceso a Coloreador del servicio de lenguaje, filtro de vista de texto e Id. de servicio de idioma principal. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> le permite crear un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz. Los pasos siguientes muestran cómo implementar un lenguaje contenido:  
+ La interfaz más importante que debe implementar para los lenguajes contenidos es la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz. Esta interfaz se implementa mediante cualquier lenguaje que se pueda hospedar dentro de un lenguaje principal. Proporciona acceso al coloreador del servicio de lenguaje, al filtro de la vista de texto y al identificador del servicio de lenguaje principal. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>Permite crear una <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz. En los pasos siguientes se muestra cómo implementar un lenguaje contenido:  
   
-1. Use `QueryService()` para obtener el idioma de Id. de servicio y el identificador de interfaz de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.  
+1. Utilice `QueryService()` para obtener el identificador del servicio de lenguaje y el identificador de interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> .  
   
-2. Llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> método para crear un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz. Pasar un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz, uno o varios [identificadores de elemento](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>) y un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfaz.  
+2. Llame al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> método para crear una <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz. Pase una <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz, uno o varios [identificadores de elemento](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>) y una <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfaz.  
   
-3. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfaz, que es el objeto de coordinador del búfer de texto, proporciona los servicios básicos que se necesitan para asignar ubicaciones en un archivo principal en el búfer del lenguaje secundario.  
+3. La <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfaz, que es el objeto Coordinador de búfer de texto, proporciona los servicios básicos necesarios para asignar las ubicaciones de un archivo principal en el búfer del lenguaje secundario.  
   
-     Por ejemplo, en un solo archivo .aspx, el archivo principal incluye el ASP, HTML y todo el código que se encuentra. Sin embargo, el búfer secundario, incluye sólo el código independiente, junto con las definiciones de clase, para hacer que el búfer secundario de un archivo de código válido. El Coordinador de búfer controla el trabajo de coordinación de las ediciones de un búfer a otro.  
+     Por ejemplo, en un único archivo. aspx, el archivo principal incluye ASP, HTML y todo el código que contiene. Sin embargo, el búfer secundario incluye solo el código contenido, junto con las definiciones de clase, para convertir el búfer secundario en un archivo de código válido. El Coordinador del búfer controla el trabajo de coordinar las ediciones de un búfer al otro.  
   
-4. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> método, que es el idioma principal, indica que el Coordinador de búfer dentro de su búfer de texto se asigna al texto correspondiente en el búfer secundario.  
+4. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> método, que es el lenguaje principal, indica al Coordinador del búfer qué texto de su búfer se asigna al texto correspondiente en el búfer secundario.  
   
-     El idioma que se pasa en una matriz de los <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> estructura, que actualmente solo incluye un elemento principal y un intervalo secundario.  
+     El lenguaje pasa en una matriz de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> estructura, que actualmente solo incluye un intervalo principal y otro secundario.  
   
-5. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> método y el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> método proporciona la asignación de principal a un búfer secundario y viceversa.
+5. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> método y el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> método proporcionan la asignación del búfer principal al secundario y viceversa.

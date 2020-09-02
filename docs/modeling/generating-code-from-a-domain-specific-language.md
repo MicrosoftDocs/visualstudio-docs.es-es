@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596585"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generar código a partir de lenguajes específicos de dominio
 
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona una manera eficaz de generar código, documentos, archivos de configuración y otros artefactos a partir de los datos representados en los modelos. Con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], puede crear un conjunto de clases que representen los datos y puede escribir sus plantillas de texto en clases cuyos nombres y propiedades reflejen los datos.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona una manera eficaz de generar código, documentos, archivos de configuración y otros artefactos a partir de los datos representados en los modelos. Con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , puede crear un conjunto de clases que representen los datos y puede escribir plantillas de texto en clases cuyos nombres y propiedades reflejen los datos.
 
 Por ejemplo, Fabrikam tiene un archivo XML de nombres de clientes y direcciones de correo electrónico. Sus desarrolladores crean un modelo en el que el cliente es una clase, con el nombre de las propiedades y el correo electrónico. Escriben varias plantillas de texto para procesar los datos, incluido este fragmento que genera una tabla de todos los clientes como parte de una página HTML:
 
@@ -28,15 +28,15 @@ Por ejemplo, Fabrikam tiene un archivo XML de nombres de clientes y direcciones 
 <# } #>  </table>
 ```
 
-Cuando se procesa la base de datos del cliente, el archivo XML se lee en el almacén de modelos. Un *procesador de directivas*, creado mediante [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], hace que la clase Customer esté disponible para el código de la plantilla de texto. Muchas plantillas de texto se pueden ejecutar en el mismo almacén.
+Cuando se procesa la base de datos del cliente, el archivo XML se lee en el almacén de modelos. Un *procesador de directivas*, creado con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , hace que la clase Customer esté disponible para el código de la plantilla de texto. Muchas plantillas de texto se pueden ejecutar en el mismo almacén.
 
-Las plantillas de texto son esenciales para [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Se usan para generar el código fuente para los elementos del modelo de dominio, así como para el VSPackage y los controles que se usan para integrar las herramientas con Visual Studio.
+Las plantillas de texto son esenciales para [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] . Se usan para generar el código fuente para los elementos del modelo de dominio, así como para el VSPackage y los controles que se usan para integrar las herramientas con Visual Studio.
 
-En esta sección se describen algunas de las formas de crear, modificar y depurar plantillas de texto que se usan en [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+En esta sección se describen algunas de las formas de crear, modificar y depurar plantillas de texto que se usan en [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] .
 
-## <a name="in-this-section"></a>Esta sección
+## <a name="in-this-section"></a>En esta sección
 
-[Obtener acceso a los modelos desde plantillas de texto](../modeling/accessing-models-from-text-templates.md)\
+[Acceder a los modelos desde plantillas de texto](../modeling/accessing-models-from-text-templates.md)\
 Proporciona información básica sobre cómo hacer referencia a lenguaje específico de dominio en plantillas de texto.
 
 [Tutorial: depurar una plantilla de texto que tiene acceso a un modelo](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)\
@@ -55,7 +55,7 @@ Proporciona la sintaxis de las directivas de plantilla de texto y los bloques de
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-[Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
+[Generación de código en tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 Explica el proceso de transformación de plantillas de texto.
 
 [Generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md)\

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189623"
 ---
 # <a name="accessibility-in-office-projects"></a>Accesibilidad en proyectos de Office
@@ -74,7 +74,7 @@ En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen co
 
  Para obtener más información sobre los paneles de acciones y los paneles de tareas personalizados, vea [información general del panel de acciones](../vsto/actions-pane-overview.md) y [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
-### <a name="display-modes"></a>Modos de presentación
+### <a name="display-modes"></a>Modos de pantalla
 
 Visual Studio tiene las siguientes limitaciones relacionadas con los modos de presentación:
 
@@ -84,7 +84,7 @@ Visual Studio tiene las siguientes limitaciones relacionadas con los modos de pr
 
 Puede usar el ampliador para superar estas limitaciones. La lupa es una utilidad de visualización de Windows que crea una ventana independiente que muestra una parte ampliada de la pantalla.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)

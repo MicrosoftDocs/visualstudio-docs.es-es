@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87a27cdb6b278a01434662017e05e5dca38b8c9d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665855"
 ---
 # <a name="customizing-the-editor"></a>Personalizar el editor
@@ -33,5 +33,5 @@ Puede personalizar el formato, las pestañas, las fuentes y los colores, Intelli
 
  [Cómo: administrar los modos del editor](../ide/how-to-manage-editor-modes.md) Explica cómo usar los modos de pantalla completa y espacios virtuales.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Escribir](../ide/writing-code-in-the-code-and-text-editor.md) [marcadores de configuración de código en código](../ide/setting-bookmarks-in-code.md) [General, entorno, opciones (cuadro de diálogo](../ide/reference/general-environment-options-dialog-box.md) ) [documentos, entorno, opciones (cuadro de diálogo](../ide/reference/documents-environment-options-dialog-box.md) ) [fuentes y colores, entorno, opciones (cuadro de diálogo)](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

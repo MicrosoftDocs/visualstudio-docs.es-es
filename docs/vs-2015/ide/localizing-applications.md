@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7fa9aa7a4a19ebd5ae45ee84364e71043a28f6be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651460"
 ---
 # <a name="localizing-applications"></a>Localizar aplicaciones
@@ -37,7 +37,7 @@ ms.locfileid: "72651460"
  [Idiomas de los recursos neutros para la localización](../ide/neutral-resources-languages-for-localization.md) Presenta la clase <xref:System.Resources.NeutralResourcesLanguageAttribute>, que especifica la referencia cultural de los recursos incluidos en el ensamblado principal de una aplicación.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Introducción a las aplicaciones internacionales basadas en el .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Describe los conceptos relacionados con el desarrollo de software para un mercado internacional mediante Visual Basic o C#visual.
+ [Introducción a las aplicaciones internacionales basadas en el .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Describe los conceptos relacionados con el desarrollo de software para un mercado internacional mediante Visual Basic o Visual C#.
 
  [Globalizar Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) Proporciona vínculos a páginas sobre la creación de aplicaciones Windows que admiten varias referencias culturales.
 

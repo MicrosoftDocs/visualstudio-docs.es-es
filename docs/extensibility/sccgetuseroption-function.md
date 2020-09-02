@@ -1,5 +1,5 @@
 ---
-title: Función SccGetUserOption ? Microsoft Docs
+title: Función SccGetUserOption | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700688"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption (Función)
@@ -35,15 +35,15 @@ SCCRTN SccGetUserOption(
 #### <a name="parameters"></a>Parámetros
  pContext
 
-[en] El puntero de contexto del complemento de control de código fuente.
+de Puntero de contexto del complemento de control de código fuente.
 
- nOpción
+ nOption
 
-[en] Opción para recuperar (consulte Comentarios para ver las posibles opciones).
+de Opción para recuperar (vea la sección Comentarios para ver las posibles opciones).
 
  lpVal
 
-[fuera] Valor asociado a la opción.
+enuncia Valor asociado a la opción.
 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
@@ -59,7 +59,7 @@ SCCRTN SccGetUserOption(
 
 |Opción de usuario|Descripción|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina si el usuario desea desproteger la versión local de los archivos. `lpVal`se `SCC_USEROPT_COLV_YES` asigna (el usuario desea desproteger los archivos locales) o `SCC_USEROPT_COLV_NO`.|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina si el usuario desea desproteger la versión local de los archivos. `lpVal` se asigna `SCC_USEROPT_COLV_YES` (el usuario desea desproteger los archivos locales) o `SCC_USEROPT_COLV_NO` .|
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: Proporcionar deshacer a diseñadores | Microsoft Docs
+title: Proporcionar compatibilidad con la deshacer para diseñadores | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,98 +11,98 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675340"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Compatibilidad de la característica Deshacer en los diseñadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Normalmente los diseñadores, editores, al igual que deben admitir las operaciones de deshacer para que los usuarios pueden invertir sus recientes cambios al modificar un elemento de código.  
+Los diseñadores, como los editores, normalmente necesitan admitir las operaciones de deshacer para que los usuarios puedan invertir sus cambios recientes al modificar un elemento de código.  
   
- Mayoría de los diseñadores implementada en Visual Studio tiene soporte para deshacer automáticamente proporcionada por el entorno.  
+ La mayoría de los diseñadores implementados en Visual Studio tienen soporte de deshacer automáticamente proporcionado por el entorno.  
   
- Implementaciones de diseñador que necesitan para proporcionar compatibilidad con la característica de reversión:  
+ Implementaciones de diseñador que necesitan proporcionar compatibilidad con la característica de deshacer:  
   
-- Proporcionar deshacer la administración mediante la implementación de la clase base abstracta <xref:System.ComponentModel.Design.UndoEngine>  
+- Proporcionar administración de deshacer mediante la implementación de la clase base abstracta <xref:System.ComponentModel.Design.UndoEngine>  
   
-- Admiten la persistencia de suministro y CodeDOM al implementar el <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> y <xref:System.ComponentModel.Design.IComponentChangeService> clases.  
+- Proporcione persistencia y compatibilidad con CodeDOM implementando las <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> <xref:System.ComponentModel.Design.IComponentChangeService> clases y.  
   
-  Para obtener más información sobre cómo escribir los diseñadores que utilizan [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], consulte [ampliar compatibilidad en tiempo de diseño](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Para obtener más información sobre cómo escribir diseñadores mediante [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , vea [extender la compatibilidad en tiempo de diseño](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
-  El [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] proporciona una infraestructura de deshacer de forma predeterminada por:  
+  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]Proporciona una infraestructura de deshacer predeterminada mediante:  
   
-- Proporcionar las implementaciones de administración a través de deshacer la <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> y <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> clases.  
+- Proporcionar implementaciones de administración de deshacer a través de las <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> clases y.  
   
-- Proporciona persistencia y la compatibilidad de CodeDOM a través de la predeterminada <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> y <xref:System.ComponentModel.Design.IComponentChangeService> implementaciones.  
+- Proporcionar persistencia y compatibilidad con CodeDOM a través de las implementaciones predeterminadas <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> de y <xref:System.ComponentModel.Design.IComponentChangeService> .  
   
-## <a name="obtaining-undo-support-automatically"></a>Obtener soporte para deshacer automáticamente  
- Cualquier creado en el diseñador [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] es compatible con la fase de reversión automática y completa if, el diseñador:  
+## <a name="obtaining-undo-support-automatically"></a>Obtener soporte técnico para deshacer automáticamente  
+ Cualquier diseñador creado en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tiene compatibilidad de deshacer automática y completa si, el diseñador:  
   
-- Hace uso de un <xref:System.Windows.Forms.Control> en función de clase para la interfaz de usuario.  
+- Hace uso de una <xref:System.Windows.Forms.Control> clase basada en para su interfaz de usuario.  
   
-- Emplea el sistema de análisis y generación de código estándar basado en CodeDOM para la persistencia y la generación de código.  
+- Emplea el sistema de análisis y generación de código basado en CodeDOM estándar para la generación y persistencia de código.  
   
-     Para obtener más información sobre cómo trabajar con la compatibilidad de CodeDOM de Visual Studio, consulte [generación de código fuente dinámico y la compilación](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Para obtener más información sobre cómo trabajar con la compatibilidad de CodeDOM de Visual Studio, vea [generación y compilación de código fuente dinámico](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb) .  
   
-## <a name="when-to-use-explicit-designer-undo-support"></a>Cuándo usar Deshacer diseñador explícita  
- Los diseñadores deben proporcionar su propia administración de deshacer si usan una interfaz gráfica de usuario que se conoce como un adaptador de vista, distinta de la proporcionada por <xref:System.Windows.Forms.Control>.  
+## <a name="when-to-use-explicit-designer-undo-support"></a>Cuándo usar la compatibilidad con la deshacer explícita del diseñador  
+ Los diseñadores deben proporcionar su propia administración de deshacer si utilizan una interfaz de usuario gráfica, que se conoce como adaptador de vista, aparte de la proporcionada por <xref:System.Windows.Forms.Control> .  
   
- Un ejemplo de esto podría crear un producto con una interfaz de diseño gráfica basada en web en lugar de un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en función de la interfaz gráfica.  
+ Un ejemplo de esto podría ser la creación de un producto con una interfaz de diseño gráfico basada en Web en lugar de una [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] interfaz gráfica basada en.  
   
- En tales casos, sería necesario registrar este adaptador de vista con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mediante <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>y proporciona la administración de la fase de reversión explícita.  
+ En tales casos, es necesario registrar este adaptador de vista con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mediante y <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute> proporcionar administración de deshacer explícita.  
   
- Los diseñadores deben proporcionar CodeDOM y persistencia de soporte técnico si no usan el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporcionado en el modelo de generación de código la <xref:System.CodeDom> espacio de nombres.  
+ Los diseñadores deben proporcionar compatibilidad con CodeDOM y persistencia si no usan el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelo de generación de código proporcionado en el <xref:System.CodeDom> espacio de nombres.  
   
-## <a name="undo-support-features-of-the-designer"></a>Compatibilidad con características del Diseñador de deshacer  
- El SDK del entorno proporciona implementaciones predeterminadas de las interfaces necesarias para proporcionar soporte técnico que se puede utilizar los diseñadores que no utilizan de deshacer <xref:System.Windows.Forms.Control> en función de las clases para sus interfaces de usuario o el modelo de persistencia y CodeDOM estándar.  
+## <a name="undo-support-features-of-the-designer"></a>Características de soporte para deshacer del diseñador  
+ El SDK de entorno proporciona implementaciones predeterminadas de las interfaces necesarias para proporcionar compatibilidad con la deshacer que pueden usar los diseñadores que no usan <xref:System.Windows.Forms.Control> clases basadas en sus interfaces de usuario o el modelo CodeDom y de persistencia estándar.  
   
- El <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> clase se deriva de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] <xref:System.ComponentModel.Design.UndoEngine> clase mediante la implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> clase para administrar las operaciones de deshacer.  
+ La <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> clase se deriva de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] <xref:System.ComponentModel.Design.UndoEngine> clase utilizando una implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> clase para administrar las operaciones de deshacer.  
   
- Visual Studio proporciona la siguiente funcionalidad para deshacer diseñador:  
+ Visual Studio proporciona la siguiente característica para deshacer el diseñador:  
   
-- Funcionalidad de deshacer vinculada entre varios diseñadores.  
+- Funcionalidad de deshacer vinculada en varios diseñadores.  
   
-- Unidades secundarias dentro de un diseñador pueden interactuar con sus elementos primarios mediante la implementación <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> en <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.  
+- Las unidades secundarias dentro de un diseñador pueden interactuar con sus elementos primarios implementando <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> en <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> .  
   
-  El SDK del entorno proporciona compatibilidad con CodeDOM y persistencia proporcionando:  
+  El SDK de entorno proporciona compatibilidad con CodeDOM y persistencia proporcionando:  
   
-- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> como un implementaciones de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> como implementaciones del <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
-  Un <xref:System.ComponentModel.Design.IComponentChangeService> proporcionada por el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'' host de diseño.  
+  <xref:System.ComponentModel.Design.IComponentChangeService>Proporcionado por el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host de diseño ' '.  
   
-## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>Uso de las características del SDK de entorno para proporcionar soporte para deshacer  
+## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>Uso de las características del SDK de entorno para proporcionar compatibilidad con la deshacer  
  Para obtener soporte para deshacer, un objeto que implementa un diseñador debe:  
   
-- Crear una instancia e inicializar una instancia de la <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> clase con válido <xref:System.IServiceProvider> implementación.  
+- Cree instancias e inicialice una instancia de la <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> clase con una <xref:System.IServiceProvider> implementación válida.  
   
-- Esto <xref:System.IServiceProvider> clase debe proporcionar los siguientes servicios:  
+- Esta <xref:System.IServiceProvider> clase debe proporcionar los siguientes servicios:  
   
   - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
   - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
-       Los diseñadores que utilizan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serialización de CodeDOM se puede optar por usar <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> proporcionado con el [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] como su implementación de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
+       Los diseñadores [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usan la serialización CodeDom pueden optar por usar <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> proporcionados con [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] como su implementación de <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> .  
   
-       En este caso, el <xref:System.IServiceProvider> clase proporcionada para el <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> constructor debe devolver este objeto como una implementación de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> clase.  
+       En este caso, la <xref:System.IServiceProvider> clase proporcionada al <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> constructor debe devolver este objeto como una implementación de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> clase.  
   
   - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
-       Los diseñadores que utilizan el valor predeterminado <xref:System.ComponentModel.Design.DesignSurface> proporcionada por el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host de diseño se garantiza que tiene una implementación predeterminada de la <xref:System.ComponentModel.Design.IComponentChangeService> clase.  
+       Se garantiza que los diseñadores que usan el valor predeterminado <xref:System.ComponentModel.Design.DesignSurface> proporcionado por el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host de diseño tienen una implementación predeterminada de la <xref:System.ComponentModel.Design.IComponentChangeService> clase.  
   
-  Los diseñadores que implementan un <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> mecanismo en función de deshacer automáticamente realiza un seguimiento de cambios si:  
+  Los diseñadores que implementan un <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> mecanismo de deshacer basado en realizan automáticamente un seguimiento de los cambios si  
   
-- Los cambios de propiedad se realizan a través del <xref:System.ComponentModel.TypeDescriptor> objeto.  
+- Los cambios en las propiedades se realizan a través del <xref:System.ComponentModel.TypeDescriptor> objeto.  
   
-- <xref:System.ComponentModel.Design.IComponentChangeService> los eventos se generan manualmente cuando se confirma un cambio que se puede deshacer.  
+- <xref:System.ComponentModel.Design.IComponentChangeService> los eventos se generan manualmente cuando se confirma un cambio que se pueden deshacer.  
   
-- Modificación en el diseñador se creó en el contexto de un <xref:System.ComponentModel.Design.DesignerTransaction>.  
+- La modificación en el diseñador se creó en el contexto de un <xref:System.ComponentModel.Design.DesignerTransaction> .  
   
-- El diseñador decide crear explícitamente mediante cualquiera de unidades de deshacer de la unidad de deshacer estándar proporcionada por una implementación de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> o la implementación específica de Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, que se deriva de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> y también proporciona un implementación de ambos <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.  
+- El diseñador elige crear explícitamente las unidades de deshacer mediante la unidad de deshacer estándar que proporciona una implementación de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> o la implementación específica de Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> , que deriva de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> y también proporciona una implementación de <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [Ampliar compatibilidad en tiempo de diseño](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Ampliar la compatibilidad en tiempo de diseño](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cf6016b2c12fd5ebe7cfb76c14c776508d99d2db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651479"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
@@ -36,7 +36,7 @@ Especifica la ubicación y el tipo de archivo asociado que proporciona informaci
 
  `format` Opcional. Tipo de archivo asociado utilizado para la localización. Utilice `messagebundle` para especificar el uso de paquetes de mensajes definidos por los metadatos de Open Ajax. El formato recomendado es `messagebundle`. Sin embargo, este formato no se admite en Microsoft Ajax ni en archivos .winmd. Utilice `vsdoc` para especificar el formato de localización estándar de .NET Framework utilizado por Microsoft Ajax y Windows en tiempo de ejecución. Este atributo es opcional. `vsdoc` es el formato predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  El elemento `<loc>` debe aparecer al principio del archivo, en la misma sección que el elemento `<reference>`. Las reglas de uso del elemento `<loc>` son iguales que las del elemento `<reference>`. Para obtener más información, vea la sección "directivas de referencias" en [IntelliSense para JavaScript](../ide/javascript-intellisense.md).
 
  Visual Studio procesa un único elemento `<loc>` para cada archivo .js. Si hay varios elementos `<loc>` presentes, solo se utiliza un solo elemento `<loc>`. El comportamiento para determinar qué elemento `<loc>` se va a utilizar no está definido.
@@ -101,5 +101,5 @@ function illuminate(a)
 
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte también
+ [Comentarios de la documentación XML](../ide/xml-documentation-comments-javascript.md)

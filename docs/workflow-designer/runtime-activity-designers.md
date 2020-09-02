@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 366a590daefa2fae33b3e76959444ad7fc9d2504
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875493"
 ---
 # <a name="runtime-activity-designers"></a>Diseñadores de actividades de tiempo de ejecución
@@ -25,7 +25,7 @@ Los diseñadores de actividades de tiempo de ejecución se utilizan para hacer p
 
  [Mensajería](../workflow-designer/messaging-activity-designers.md)
 
- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transacción](../workflow-designer/transaction-activity-designers.md)
 
@@ -33,6 +33,6 @@ Los diseñadores de actividades de tiempo de ejecución se utilizan para hacer p
 
  [Tratamiento de errores](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Utilizar los diseñadores de actividades](control-flow-activity-designers.md)

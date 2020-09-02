@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 63d405b0e62735c0c1e3d7bb716ea2db29bc19fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651576"
 ---
 # <a name="in-source-suppression-overview"></a>Información general sobre supresiones en código fuente
@@ -29,7 +29,7 @@ La supresión en el código fuente es la capacidad de suprimir u omitir las infr
  No debe usar supresiones en el origen en las compilaciones de versión para evitar que los metadatos de supresión en el código fuente se envíen accidentalmente. Debido al costo de procesamiento de la supresión en el código fuente, el rendimiento de la aplicación también se puede degradar incluyendo los metadatos de supresión en el código fuente.
 
 > [!NOTE]
-> No tiene que codificar manualmente estos atributos. Para obtener más información, vea [Cómo: suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). El elemento de menú no está disponible C++ para el código.
+> No tiene que codificar manualmente estos atributos. Para obtener más información, vea [Cómo: suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). El elemento de menú no está disponible para el código de C++.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (atributo)
  Al hacer clic con el botón secundario en una advertencia de análisis de código en el **lista de errores** y, a continuación, hacer clic en **suprimir mensajes**, se agrega un atributo **SuppressMessage** en el código o en el archivo de supresiones global del proyecto.
@@ -52,7 +52,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 ```
 
- Dónde:
+ Donde:
 
 - **Categoría de regla** : la categoría en la que se define la regla. Para obtener más información sobre las categorías de reglas de análisis de código, vea [análisis de código para advertencias de código administrado](../code-quality/code-analysis-for-managed-code-warnings.md).
 
@@ -64,13 +64,13 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **Ámbito** : el destino en el que se va a suprimir la advertencia. Si no se especifica el destino, se establece en el destino del atributo. Entre los ámbitos admitidos se incluyen los siguientes:
 
-  - Module
+  - Módulo
 
   - Espacio de nombres
 
-  - Recurso
+  - Resource
 
-  - Type
+  - Tipo
 
   - Miembro
 
@@ -123,5 +123,5 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="global-suppression-file"></a>Archivo de supresión global
  El archivo de supresión global mantiene las supresiones que son supresiones de nivel global o supresiones que no especifican un destino. Por ejemplo, las supresiones para las infracciones de nivel de ensamblado se almacenan en este archivo. Además, algunas supresiones de ASP.NET se almacenan en este archivo porque la configuración de nivel de proyecto no está disponible para el código subyacente de un formulario. Una supresión global se crea y se agrega al proyecto la primera vez que se selecciona la opción **en el archivo de supresión del proyecto** del comando **suprimir mensajes** en la ventana de lista de errores. Para obtener más información, vea [Cómo: suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  <xref:System.Diagnostics.CodeAnalysis>

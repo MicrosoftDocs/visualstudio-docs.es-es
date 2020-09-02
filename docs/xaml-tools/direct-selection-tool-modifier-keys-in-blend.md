@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0931eef87bce1a942e9c8740d248d213f1b778a4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332308"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras de la herramienta Selección directa en Blend para Visual Studio
@@ -33,7 +33,7 @@ En la tabla siguiente se muestran los accesos directos que puede usar para modif
 |Seleccionar un segmento y curvarlo para que pase por la posición del puntero|Desplazar el puntero sobre un segmento de un trazado, mantener presionada la tecla **Alt** y arrastrar el segmento|![Seleccionar un segmento y curvarlo para que pase por la posición del puntero](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Puntero para convertir un segmento|
 |Ajustar un extremo de una tangente de manera independiente del otro extremo|Seleccionar directamente un punto o un segmento, mantener presionada la tecla **Alt** y arrastrar un extremo de la tangente|![Ajustar un extremo de una tangente de manera independiente del otro extremo](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> Puntero para convertir una tangente|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Teclas modificadoras de la mesa de trabajo](../xaml-tools/artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras de la herramienta Pluma](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

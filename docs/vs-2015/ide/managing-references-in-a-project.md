@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1f2f3c26d89616f083c218c6b11610fe5e329a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651315"
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
@@ -37,7 +37,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 
  Para agregar una referencia, haga clic con el botón derecho en el nodo Referencias del Explorador de soluciones y elija **Agregar referencia**. Para obtener más información, consulta [Procedimiento para agregar o quitar referencias mediante el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
- ![Adición de una referencia en Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "|::ref1::|")
+ ![Adición de una referencia en Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")
 
  Puede hacer referencia a los siguientes tipos de componentes/servicios:
 
@@ -63,7 +63,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 
  Si determina que el SDK de extensión al que la aplicación hace referencia no es compatible, debe realizar los pasos siguientes:
 
-1. Consulte el nombre del proyecto que está provocando el error. La plataforma de destino del proyecto se indica entre paréntesis junto al nombre del mismo. Por ejemplo, **MyProjectName (Windows 8.1)** significa que el proyecto **MyProjectName** tiene como destino la versión de la plataforma [!INCLUDE[win81](../includes/win81-md.md)].
+1. Consulte el nombre del proyecto que está provocando el error. La plataforma de destino del proyecto se indica entre paréntesis junto al nombre del mismo. Por ejemplo, **MyProjectName (Windows 8.1)** significa que el proyecto **MyProjectName** está destinado a la versión de la plataforma [!INCLUDE[win81](../includes/win81-md.md)].
 
 2. Vaya al sitio del proveedor del SDK de extensión no compatible e instale la versión del SDK de extensión con dependencias que son compatibles con la versión de la plataforma a la que está destinada su proyecto.
 
@@ -79,7 +79,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 
 5. Haga clic con el botón derecho en el nodo **Referencias** en el proyecto que produjo el error y elija **Agregar referencia**.
 
-6. Haga clic en la pestaña **Windows** y, a continuación, en la subpestaña **Extensiones** y, a continuación, desactive las casillas de los antiguos SDK de extensión y active las casillas de los nuevos SDK de extensión. Haga clic en **Aceptar**.
+6. Haga clic en la pestaña **Windows** y, a continuación, en la subpestaña **extensiones** y, a continuación, desactive las casillas de los SDK de extensión antiguos y active las casillas de los nuevos SDK de extensión. Haga clic en **Aceptar**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Agregar una referencia en tiempo de diseño
  Cuando hace una referencia a un ensamblado de su proyecto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] busca el ensamblado en las siguientes ubicaciones:
@@ -94,7 +94,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 > Todos los proyectos de Visual Studio contienen una referencia implícita a `System.Core`, aun cuando `System.Core` se quite de la lista de referencias.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Referencias a componentes compartidos en tiempo de ejecución
- En tiempo de ejecución, los componentes deben estar en la ruta de acceso de salida del proyecto o en la [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Si el proyecto contiene una referencia a un objeto que no está en una de estas ubicaciones, debe copiar la referencia a la ruta de acceso de salida del proyecto al compilar el proyecto. La propiedad <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indica si es necesario realizar esta copia. Si el valor es **True**, la referencia se copia al directorio del proyecto al compilar el proyecto. Si el valor es **False**, la referencia no se copia.
+ En tiempo de ejecución, los componentes deben estar en la ruta de acceso de salida del proyecto o en la [caché de ensamblados global](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Si el proyecto contiene una referencia a un objeto que no está en una de estas ubicaciones, debe copiar la referencia a la ruta de acceso de salida del proyecto al compilar el proyecto. La propiedad <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indica si es necesario realizar esta copia. Si el valor es **True**, la referencia se copia al directorio del proyecto al compilar el proyecto. Si el valor es **False**, la referencia no se copia.
 
  Si implementa una aplicación que contiene una referencia a un componente personalizado registrado en la GAC, el componente no se implementará con la aplicación, independientemente de la configuración de <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> . En versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se podía establecer la propiedad <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> en una referencia para asegurarse de que se implementase el ensamblado. Ahora se debe agregar manualmente el ensamblado en la carpeta \Bin. Esto somete todo el código personalizado a escrutinio, reduciendo el riesgo de que se publique código personalizado con el que no esté familiarizado.
 
@@ -106,9 +106,9 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
  Para obtener más información, consulte [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 ## <a name="project-to-project-references"></a>Referencias entre proyectos
- Las referencias entre proyectos son referencias a proyectos que contienen ensamblados. Puede crearlas en la pestaña **Proyecto** . Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.
+ Las referencias entre proyectos son referencias a proyectos que contienen ensamblados; se crean mediante la pestaña **proyecto** . Visual Studio puede encontrar un ensamblado cuando se proporciona una ruta de acceso al proyecto.
 
- Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá el mensaje [Advertencia: la dependencia "archivo" del proyecto "proyecto" no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia "archivo"](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).
+ Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Cuando se produce este conflicto, verá un mensaje como [ADVERTENCIA: la dependencia ' archivo ' del proyecto ' proyecto ' no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia ' archivo](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md)'. Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.
@@ -116,5 +116,5 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 ## <a name="file-references"></a>Referencias de archivo
  Las referencias de archivo son referencias directas a ensamblados fuera del contexto de un proyecto de Visual Studio. Puede crearlas en la pestaña **Examinar** del **Administrador de referencias**. Use una referencia de archivo cuando solo tenga un ensamblado o un componente, y no disponga del proyecto que lo crea como salida.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) [programar con ensamblados](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6) [Cómo: agregar o quitar referencias mediante el administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

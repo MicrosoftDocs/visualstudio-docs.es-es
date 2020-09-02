@@ -1,5 +1,5 @@
 ---
-title: SccRemove (función) | Documentos de Microsoft
+title: Función SccRemove | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 62974f585fe164c7ccf7ea21a19d22939d806d73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199969"
 ---
 # <a name="sccremove-function"></a>SccRemove (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta función elimina los archivos del sistema de control de código fuente.  
+Esta función elimina archivos del sistema de control de código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,42 +40,42 @@ SCCRTN SccRemove(
   
 #### <a name="parameters"></a>Parámetros  
  pvContext  
- [in] La estructura de contexto de complemento de control de origen.  
+ de Estructura de contexto del complemento de control de código fuente.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
+ de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.  
   
- nFiles  
- [in] Número de archivos especificados en el `lpFileNames` matriz.  
+ N archivos  
+ de Número de archivos especificados en la `lpFileNames` matriz.  
   
  lpFileNames  
- [in] Matriz de nombres de ruta de acceso local completa de archivos que se va a quitar.  
+ de Matriz de nombres de ruta de acceso local completa de los archivos que se van a quitar.  
   
  lpComment  
- [in] El comentario que se aplicará a cada archivo que se va a quitar.  
+ de Comentario que se va a aplicar a cada archivo que se va a quitar.  
   
  Opciones  
- [in] Marcas de comando (sin usar).  
+ de Marcas de comando (sin usar).  
   
  pvOptions  
- [in] Opciones de específicas del complemento de control de código fuente.  
+ de Opciones específicas del complemento de control de código fuente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Value|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|Eliminación fue correcta.|  
+|SCC_OK|Eliminación correcta.|  
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  
 |SCC_E_OPNOTSUPPORTED|El sistema de control de código fuente no admite esta operación.|  
-|SCC_E_ISCHECKEDOUT|No se puede quitar un archivo porque un usuario actualmente tiene desprotegido.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
-|SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
+|SCC_E_ISCHECKEDOUT|No se puede quitar un archivo porque un usuario tiene desprotegido.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
+|SCC_E_NOTAUTHORIZED|El usuario no tiene permiso para realizar esta operación.|  
 |SCC_E_NONSPECIFICERROR|Error no específico; no se quitó el archivo.|  
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta función quita los archivos del sistema de control de código fuente, pero no los elimina de la unidad de disco duro local del usuario.  
+ Esta función quita los archivos del sistema de control de código fuente, pero no Los elimina del disco duro local del usuario.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Error: Ejecución de Transact-SQL finalizó sin depuración | Documentos de Microsoft'
+title: 'Error: La ejecución de Transact-SQL finalizó sin depuración | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681071"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Error: La ejecución de Transact-SQL finalizó sin depuración
@@ -43,14 +43,14 @@ Este error se produce cuando se intenta depurar un procedimiento Transact-SQL o 
   
   Para corregir este error, es posible que necesite:  
   
-- Comprobar la configuración de los permisos. Para obtener más información, vea [Cómo: Establecer permisos de SQL Server para la depuración](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Comprobar la configuración de los permisos. Para obtener más información, vea [Cómo: para establecer permisos de depuración para SQL Server](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
 - Asegurarse de que la depuración de SQL esté correctamente configurada.  
   
 - Consultar al administrador de bases de datos o de la red.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Configurar la depuración de SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Cómo: Establecer permisos de SQL Server para la depuración](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
- [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
+ [Cómo: establecer permisos de SQL Server para la depuración](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

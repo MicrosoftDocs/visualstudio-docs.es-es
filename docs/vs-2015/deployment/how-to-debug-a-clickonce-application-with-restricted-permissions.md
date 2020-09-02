@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar una aplicación ClickOnce con permisos restringidos | Documentos de Microsoft
+title: 'Cómo: depurar una aplicación ClickOnce con permisos restringidos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d60f88c4d1532a03922f12f21bb9b455ef5d84d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153796"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedimiento Depurar una aplicación ClickOnce con permisos restringidos
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Cómo: Depurar una aplicación ClickOnce con permisos restringidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con permisos de plena confianza, por lo que no verá las mismas excepciones de seguridad al depurar una aplicación ClickOnce que las que podría ver el usuario final al ejecutarlo con permisos restringidos.  
@@ -41,7 +41,7 @@ Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con p
   
 3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** y haga clic en el botón de la opción **Aplicación de confianza parcial** .  
   
-4. Haga clic en el botón **Avanzada** .  
+4. Haga clic en el botón **Avanzadas** .  
   
 5. Active la casilla **Depurar esta aplicación con el conjunto de permisos seleccionados** y haga clic en **Aceptar**.  
   
@@ -55,14 +55,14 @@ Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con p
   
 3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** y haga clic en el botón de la opción **Aplicación de confianza parcial** .  
   
-4. Haga clic en el botón **Avanzada** .  
+4. Haga clic en el botón **Avanzadas** .  
   
 5. Active la casilla **Depurar esta aplicación con el conjunto de permisos seleccionados** y haga clic en **Aceptar**.  
   
 6. En el cuadro de texto **Depurar esta aplicación como si se hubiera descargado de la siguiente dirección URL** , indique una dirección URL o una ruta de acceso a la red.  
   
-## <a name="see-also"></a>Vea también  
- [Procedimientos: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

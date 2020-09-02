@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea06d8e007e2df88cb46c2f0e6dd4a79ebe711b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153629"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
+# <a name="ad_process_id"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica el identificador de proceso, que puede ser un identificador de sistema o un GUID.  
+Especifica el identificador de proceso, que puede ser un identificador del sistema o un GUID.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -48,16 +48,16 @@ public struct AD_PROCESS_ID {
   
 ## <a name="members"></a>Miembros  
  `ProcessIdType`  
- Un valor de la [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeración que especifica cómo interpretar la `ProcessId` union (o, para código administrado, qué miembro de la estructura para tener acceso a).  
+ Un valor de la enumeración [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) que especifica cómo interpretar la `ProcessId` Unión (o, en el código administrado, a qué miembro de la estructura se va a obtener acceso).  
   
  dwProcessId  
- El identificador de proceso como un valor desde el sistema.  
+ El identificador de proceso como un valor del sistema.  
   
  guidProcessId  
  El identificador de proceso como un GUID.  
   
  dwUnused  
- El relleno.  
+ Acolcha.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta estructura se pasa a los métodos siguientes:  
@@ -70,20 +70,20 @@ public struct AD_PROCESS_ID {
   
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
-  Y se devuelve desde los métodos siguientes:  
+  Y se devuelven desde los métodos siguientes:  
   
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)   

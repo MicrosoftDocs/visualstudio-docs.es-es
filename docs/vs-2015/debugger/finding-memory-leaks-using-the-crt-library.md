@@ -1,5 +1,5 @@
 ---
-title: Buscar pérdidas de memoria mediante la biblioteca de CRT | Microsoft Docs
+title: Buscar pérdidas de memoria con la biblioteca de CRT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,10 +31,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682421"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Buscar pérdidas de memoria con la biblioteca de CRT
@@ -121,7 +121,7 @@ Object dump complete.
   
   Hay otros dos tipos de bloques de memoria que no aparecen nunca en los informes de pérdida de memoria. Un *bloque libre* es un bloque de memoria que se ha liberado. Eso significa que no está perdida, por definición. Un *bloque omitido* es memoria que se ha marcado explícitamente para excluirla del informe de pérdida de memoria.  
   
-  Estas técnicas funcionan para la memoria asignada mediante la función `malloc` de CRT estándar. Si el programa asigna memoria mediante C++ `new` operador, sin embargo, es posible que solo verá el archivo y número de línea donde la implementación global `operator new` llamadas `_malloc_dbg` en el informe de pérdida de memoria. Dado que ese comportamiento no es muy útil, puede cambiarlo para informar de la línea que realizó la asignación mediante el uso de una macro que tiene este aspecto: 
+  Estas técnicas funcionan para la memoria asignada mediante la función `malloc` de CRT estándar. Sin embargo, si el programa asigna memoria mediante el operador de C++, es `new` posible que solo vea el archivo y el número de línea donde se encuentra la implementación de `operator new` llamadas globales `_malloc_dbg` en el informe de pérdida de memoria. Dado que ese comportamiento no es muy útil, puede cambiarlo para informar de la línea que realizó la asignación mediante una macro similar a la siguiente: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -133,7 +133,7 @@ Object dump complete.
 #endif
 ```  
   
-Ahora puede reemplazar el `new` operador mediante el uso de la `DBG_NEW` macro en el código. En las compilaciones de depuración, se usa una sobrecarga de global `operator new` que toma parámetros adicionales para el tipo de bloque, el archivo y el número de línea. Esta sobrecarga de `new` llamadas `_malloc_dbg` para registrar la información adicional. Cuando usas `DBG_NEW`, informa de la pérdida de memoria muestra el nombre de archivo y número de línea donde se asignaron los objetos perdidos. En las compilaciones comerciales, usa el valor predeterminado `new`. (No se recomienda crear una macro de preprocesador denominada `new`, o cualquier otra palabra clave del lenguaje.) Este es un ejemplo de la técnica:  
+Ahora, puede reemplazar el operador `new` mediante la macro `DBG_NEW` en el código. En las compilaciones de depuración, se usa una sobrecarga de global `operator new` que toma parámetros adicionales para el tipo de bloque, el archivo y el número de línea. Esta sobrecarga de `new` llama `_malloc_dbg` a para registrar la información adicional. Cuando se usa `DBG_NEW` , los informes de pérdida de memoria muestran el nombre de archivo y el número de línea donde se asignaron los objetos perdidos. En las compilaciones comerciales, usa el valor predeterminado `new` . (No se recomienda crear una macro de preprocesador denominada `new` o cualquier otra palabra clave del lenguaje). A continuación se muestra un ejemplo de la técnica:  
   
 ```cpp  
 // debug_new.cpp
@@ -163,7 +163,7 @@ void main() {
 }
 ```  
   
-Al ejecutar este código en el depurador en Visual Studio, la llamada a `_CrtDumpMemoryLeaks` genera un informe en el **salida** ventana que tiene un aspecto similar al siguiente:  
+Al ejecutar este código en el depurador de Visual Studio, la llamada a `_CrtDumpMemoryLeaks` genera un informe en la ventana de **salida** que tiene un aspecto similar al siguiente:  
   
 ```Output  
 Detected memory leaks!
@@ -174,7 +174,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-Esto indica que la asignación perdida estaba en la línea 20 del debug_new.cpp.  
+Esto indica que la asignación filtrada se encontraba en la línea 20 de debug_new. cpp.  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>Establecer puntos de interrupción en un número de asignación de memoria  
  El número de asignación de memoria le indica cuándo se asignó un bloque de pérdida de memoria. Un bloque con un número de asignación de memoria de 18, por ejemplo, es el decimoctavo bloque de memoria asignado durante la ejecución de la aplicación. El informe de CRT cuenta todas las asignaciones de bloques de memoria durante la ejecución. Esto incluye las asignaciones de la biblioteca CRT y otras bibliotecas como MFC. Por consiguiente, un bloque con un número de asignación de memoria de 18 puede no ser el decimoctavo bloque de memoria asignado por el código. Normalmente, no lo será.  
@@ -187,11 +187,11 @@ Esto indica que la asignación perdida estaba en la línea 20 del debug_new.cpp.
   
 2. Cuando la aplicación se interrumpe en el punto de interrupción, la ventana **Inspección** .  
   
-3. En el **inspección** ventana, escriba `_crtBreakAlloc` en el **nombre** columna.  
+3. En la ventana **Inspección**, escriba `_crtBreakAlloc` en la columna **Nombre**.  
   
     Si está utilizando la versión DLL de subprocesamiento múltiple de la biblioteca CRT (la opción /MD), incluya el operador de contexto: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4. Presione **RETORNO**.  
+4. Presione **entrar**.  
   
     El depurador evalúa la llamada y coloca el resultado en la columna **Valor** . Este valor será –1 si no se han definido puntos de interrupción sobre asignaciones de memoria.  
   
@@ -199,15 +199,15 @@ Esto indica que la asignación perdida estaba en la línea 20 del debug_new.cpp.
   
    Después de establecer un punto de interrupción en un número de asignación de memoria, puede continuar con la depuración. Debe ejecutar el programa bajo las mismas condiciones que la ejecución anterior, de modo que el orden de asignación de memoria no cambie. Cuando el programa se interrumpe en la asignación de memoria especificada, puede usar la ventana **Pila de llamadas** y otras ventanas de depurador para determinar las condiciones en las que se asignó la memoria. A continuación, puede continuar la ejecución para observar qué le ocurre al objeto y determinar por qué no se desasigna correctamente.  
   
-   También podría resultar útil definir un punto de interrupción de datos sobre el objeto. Para obtener más información, consulta [Using Breakpoints](../debugger/using-breakpoints.md).  
+   También podría resultar útil definir un punto de interrupción de datos sobre el objeto. Para obtener más información, vea [usar puntos de interrupción](../debugger/using-breakpoints.md).  
   
-   También puede establecer puntos de interrupción de asignación de memoria en el código. Existen dos modos para hacer esto:  
+   También puede establecer puntos de interrupción de asignación de memoria en el código. Existen dos formas de hacerlo:  
   
 ```  
 _crtBreakAlloc = 18;  
 ```  
   
- O bien  
+ o:  
   
 ```  
 _CrtSetBreakAlloc(18);  
@@ -262,7 +262,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 ## <a name="false-positives"></a>Falsos positivos  
  En algunos casos, `_CrtDumpMemoryLeaks` puede ofrecer indicaciones falsas de pérdidas de memoria. Esto podría ocurrir si se usa una biblioteca que marca las asignaciones internas como _NORMAL_BLOCK en lugar de como `_CRT_BLOCK`o `_CLIENT_BLOCK`. En tal caso, `_CrtDumpMemoryLeaks` no puede distinguir entre las asignaciones del usuario y las asignaciones de la biblioteca internas. Si los destructores globales de las asignaciones de biblioteca se ejecutan después del punto donde se llamó a `_CrtDumpMemoryLeaks`, cada asignación interna de la biblioteca se notifica como pérdida de memoria. Las versiones de la Biblioteca de plantillas estándar anteriores a Visual Studio .NET, hacían que `_CrtDumpMemoryLeaks` notificase pérdidas de memoria falsas, pero esto se ha solucionado en versiones más recientes.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Detalles del montón de depuración de CRT](../debugger/crt-debug-heap-details.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)
