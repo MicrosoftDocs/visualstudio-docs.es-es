@@ -11,43 +11,43 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184370"
 ---
 # <a name="command-handling"></a>Control de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El editor puede definir nuevos comandos. Normalmente, los comandos se muestran en un menú, en una barra de herramientas, o en un menú contextual.  
+El editor puede definir nuevos comandos. Los comandos se muestran normalmente en un menú, en una barra de herramientas o en un menú contextual.  
   
- Para obtener más información sobre cómo definir comandos y menús, consulte [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Para obtener más información sobre cómo definir comandos y menús, vea [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- Un servicio de lenguaje puede controlar qué menús contextuales se muestran en el editor, interceptando la <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeración. Como alternativa, puede controlar el menú contextual de una base por marcador. Para obtener más información, consulte [comandos importantes para los filtros de servicio de lenguaje](../extensibility/internals/important-commands-for-language-service-filters.md).  
+ Un servicio de lenguaje puede controlar qué menús contextuales se muestran en el editor mediante la interceptación de la <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeración. Como alternativa, puede controlar el menú contextual en función de cada marcador. Para obtener más información, vea [comandos importantes para filtros del servicio de lenguaje](../extensibility/internals/important-commands-for-language-service-filters.md).  
   
-## <a name="adding-commands-to-the-editor-context-menu"></a>Adición de comandos en el menú contextual del Editor  
- Para agregar un comando al menú contextual, primero debe definir un conjunto de comandos de menú que pertenecen a un grupo específico. El siguiente ejemplo se tomó del archivo .vsct generado como parte del tutorial [Tutorial: Agregar características a un Editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+## <a name="adding-commands-to-the-editor-context-menu"></a>Agregar comandos al menú contextual del editor  
+ Para agregar un comando al menú contextual, primero debe definir un conjunto de comandos de menú que pertenezcan a un grupo específico. El siguiente ejemplo se toma del archivo. Vsct que se genera como parte del tutorial tutorial [: agregar características a un editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Guid del menú = "guidCustomEditorCmdSet" id = "IDMX_RTF" prioridad = "0 x 0000" type = "Context" >  
+ \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
- \<Guid del elemento primario = "guidCustomEditorCmdSet" id = "0" / >  
+ \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
- \<Cadenas >  
+ \<Strings>  
   
- \<ButtonText > menú contextual de CustomEditor\</ButtonText >  
+ \<ButtonText>Menú contextual de CustomEditor\</ButtonText>  
   
  \<CommandName>CustomEditorContextMenu\</CommandName>  
   
  \</Strings>  
   
- \</ Menú >  
+ \</Menu>  
   
- \</ Menús >  
+ \</Menus>  
   
- El texto anterior agrega un comando de menú contextual con el texto **menú contextual de CustomEditor**. El GUID del menú es que los del conjunto de comandos que se crea con este editor, y el tipo es "Contexto".  
+ En el texto anterior se agrega un comando de menú contextual con el **menú contextual texto CustomEditor**. El GUID de menú es el del conjunto de comandos que se crea con este editor y el tipo es "context".  
   
- También puede usar comandos predefinidos que no es necesario que se definen en el archivo .vsct. Por ejemplo, si examina el archivo EditorPane.cs generado por la plantilla de paquete de Visual Studio, puede encontrar que un conjunto de comandos predefinidos, tales como <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> definido por <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, que se tratan en los controladores de comandos, como el método onSelectAll.  
+ También puede usar comandos predefinidos que no es necesario definir en el archivo. Vsct. Por ejemplo, si examina el archivo EditorPane.cs generado por la plantilla de paquete de Visual Studio, verá que un conjunto de comandos predefinidos, como <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> definido por <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> , se controla en controladores de comandos como el método onSelectAll.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

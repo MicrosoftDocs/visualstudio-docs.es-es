@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816948"
 ---
 # <a name="invalid-character-javascript"></a>Carácter no válido (JavaScript)
@@ -34,7 +34,7 @@ Ha compuesto un identificador con un carácter (o caracteres) que el compilador 
   
 - Evite el uso de caracteres que no formen parte de la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definición de idioma.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Variable](../../javascript/variables-javascript.md)   
  [Caracteres especiales](../../javascript/advanced/special-characters-javascript.md)   
- [Tipos de datos](../../javascript/data-types-javascript.md)
+ [Tipo de datos](../../javascript/data-types-javascript.md)

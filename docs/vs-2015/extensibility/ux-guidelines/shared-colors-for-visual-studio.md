@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154575"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
@@ -25,22 +25,22 @@ En este artículo se describen los elementos de interfaz de usuario comunes y lo
 
 Asegúrese de usar correctamente los nombres de token:
 
-- **Usar nombres de token en función de la función, no en el color en Sí.** Los colores comunes compartidos están asociados a elementos específicos de la interfaz y solo están destinados para características iguales o similares. Por ejemplo, no vuelva a usar el color de un cuadro combinado presionado para una animación de progreso de giro solo porque le gusta el color. Las funciones del cuadro combinado y de la animación son diferentes, y si se cambia el color asociado con el cuadro combinado, ya no puede ser un color adecuado para el elemento de animación. Un uso coherente del color ayuda a orientar a los usuarios y evitar confusiones.
+- **Usar nombres de token basados en función, no en el color en sí.** Los colores comunes compartidos están asociados a elementos específicos de la interfaz y solo están destinados para características iguales o similares. Por ejemplo, no vuelva a usar el color de un cuadro combinado presionado para una animación de progreso de giro solo porque le gusta el color. Las funciones del cuadro combinado y de la animación son diferentes, y si se cambia el color asociado con el cuadro combinado, ya no puede ser un color adecuado para el elemento de animación. Un uso coherente del color ayuda a orientar a los usuarios y evitar confusiones.
 
-- **Usar colores de fondo y texto en la combinación correcta.** Los colores de fondo destinados para usarse con texto tendrán un color de texto asociado. No use colores de texto que no sean los que se especifican para el fondo. Si no hay un color de texto asociado, no use ese color de fondo para cualquier superficie en la que tiene pensado mostrar texto. Otras combinaciones de colores de fondo y de texto pueden dar lugar a una interfaz ilegible.
+- **Usar colores de fondo y de texto en la combinación correcta.** Los colores de fondo destinados para usarse con texto tendrán un color de texto asociado. No use colores de texto que no sean los que se especifican para el fondo. Si no hay un color de texto asociado, no use ese color de fondo para cualquier superficie en la que tiene pensado mostrar texto. Otras combinaciones de colores de fondo y de texto pueden dar lugar a una interfaz ilegible.
 
-- **Usar colores de control que son adecuados para su ubicación.** En determinados estados, algunos controles de Visual Studio no tienen colores de borde y de fondo independientes. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.
+- **Usar colores de control adecuados para su ubicación.** En determinados estados, algunos controles de Visual Studio no tienen colores de borde y de fondo independientes. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.
 
 > [!IMPORTANT]
-> No use tokens que se encuentran en las categorías "Página de inicio" o "Cider".
+> No use los tokens que se encuentran en las categorías "página de inicio" o "Cider".
 
 ## <a name="command-structures"></a>Estructuras de comandos
 
-### <a name="BKMK_CommandMenus"></a> Menús
+### <a name="menus"></a><a name="BKMK_CommandMenus"></a> Restringi
 
-Los menús pueden aparecer en varios lugares dentro de Visual Studio: la barra de menú principal, insertada en el documento o ventanas de herramientas, o en el botón derecho en diversas ubicaciones en todo el IDE. Las implementaciones de menús asociados con otros elementos de la interfaz de usuario se describen en la sección del elemento respectivo. Se debe usar siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. Sin embargo, en algunas ocasiones podría no tener acceso a los menús estándar de Visual Studio. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros menús de Visual Studio.
+Los menús pueden aparecer en varios lugares de Visual Studio: en la barra de menús principal, insertados en ventanas de documento o de herramientas, o al hacer clic con el botón derecho en diversas ubicaciones del IDE. Las implementaciones de menús asociados con otros elementos de la interfaz de usuario se describen en la sección del elemento respectivo. Se debe usar siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. Sin embargo, en algunas ocasiones podría no tener acceso a los menús estándar de Visual Studio. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros menús de Visual Studio.
 
-![Revisión de menús](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+![Revisión de menús](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")
 
 Use…
 - siempre que necesite crear un menú personalizado.
@@ -54,7 +54,7 @@ el color de fondo por sí solo. Use siempre la combinación de primer plano y fo
 
 Los títulos de menú constan de un fondo, un borde y el texto del título, así como un glifo opcional, que suele usarse cuando el menú se encuentra en una barra de comandos.
 
-![Revisión de título de menú](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+![Revisión de título de menú](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")
 
 Use…
 cada vez que cree un título de menú personalizado.
@@ -72,11 +72,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Título de menú predeterminado](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")
+  ![Título de menú predeterminado](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")
 
   **Título de menú**
 
-  Fondo
+  Información previa
 
   None
 
@@ -84,7 +84,7 @@ No use…
 
   `Environment.CommandBarTextActive`
 
-  ![Título de menú con glifo predeterminado](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")
+  ![Título de menú con glifo predeterminado](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")
 
   **Título de menú con glifo**
 
@@ -96,7 +96,7 @@ No use…
 
   None
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -104,11 +104,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Título de menú al mantener el mouse](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")
+  ![Título de menú al mantener el mouse](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")
 
   **Título de menú**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarMouseOverBackgroundBegin`
 
@@ -118,7 +118,7 @@ No use…
 
   `Environment.CommandBarTextHover`
 
-  ![Título de menú con glifo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")
+  ![Título de menú con glifo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")
 
   **Título de menú con glifo**
 
@@ -130,7 +130,7 @@ No use…
 
   `Environment.CommandBarBorder`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -138,11 +138,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Título de menú presionado](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")
+  ![Título de menú presionado](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")
 
   **Título de menú**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarMenuBackgroundGradientBegin`
 
@@ -152,7 +152,7 @@ No use…
 
   `Environment.CommandBarTextActive`
 
-  ![Título de menú con glifo presionado](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")
+  ![Título de menú con glifo presionado](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")
 
   **Título de menú con glifo**
 
@@ -174,11 +174,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Título de menú con glifo deshabilitado](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")
+  ![Título de menú con glifo deshabilitado](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")
 
   **Título de menú con glifo**
 
-  Fondo
+  Información previa
 
   None
 
@@ -198,7 +198,7 @@ No use…
 
 Un elemento de menú individual se compone del texto del menú y un icono opcional, una casilla o un glifo de submenú. Su color de fondo y de texto cambian al mantener el puntero. Este token de color es un par de primer plano y fondo.
 
-![Revisión de los elementos de menú](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+![Revisión de elementos de menú](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")
 
 Use…
 para cualquier lista desplegable que se inicia desde una barra de menús o una barra de comandos.
@@ -216,11 +216,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Menú predeterminado](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")
+  ![Menú predeterminado](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")
 
-  **Menu**
+  **Menú**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarMenuBackgroundGradientBegin`
 
@@ -246,13 +246,13 @@ No use…
 
   `Environment.CommandBarMenuSeparator`
 
-  Sombra
+  Shadow
 
   `Environment.DropShadowBackground`
 
-  ![Menú activado](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")
+  ![Menú activado](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")
 
-  **Activadas**
+  **Activada**
 
   Marca de verificación
 
@@ -262,9 +262,9 @@ No use…
 
   `Environment.CommandBarSelectedIcon`
 
-  ![Menú seleccionado](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")
+  ![Menú seleccionado](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")
 
-  **seleccionado**
+  **Selected**
 
   Fondo de icono
 
@@ -274,7 +274,7 @@ No use…
 
   `Environment.CommandBarSelectedBorder`
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -282,11 +282,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Mantener el mouse del menú](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")
+  ![Menú al mantener el mouse](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")
 
   **Elemento de menú**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarMenuItemMouseOver`
 
@@ -298,9 +298,9 @@ No use…
 
   `Environment.CommandBarMenuMouseOverSubmenuGlyph`
 
-  ![Al mantener el mouse de menú activado](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")
+  ![Menú activado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")
 
-  **Activadas**
+  **Activada**
 
   Marca de verificación
 
@@ -310,9 +310,9 @@ No use…
 
   `Environment.CommandBarHoverOverSelectedIcon`
 
-  ![Al mantener el mouse de menú seleccionado](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")
+  ![Menú seleccionado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")
 
-  **seleccionado**
+  **Selected**
 
   Fondo de icono
 
@@ -330,7 +330,7 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Menú deshabilitado](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")
+  ![Menú deshabilitado](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")
 
   Elemento de menú
 
@@ -342,9 +342,9 @@ No use…
 
   `Environment.CommandBarMenuSubmenuGlyph`
 
-  ![Menú deshabilitado activado](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")
+  ![Menú deshabilitado activado](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")
 
-  Activado
+  Activada
 
   Marca de verificación
 
@@ -360,9 +360,9 @@ La barra de comandos puede aparecer en varios lugares del IDE de Visual Studio, 
 
 En general, use siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. El uso del mecanismo estándar, garantiza que todos los detalles visuales se mostrarán correctamente y que los elementos interactivos se comportarán de forma coherente con otros controles de barra de comandos de Visual Studio. Sin embargo, si necesita crear su propia barra de comandos, asegúrese de diseñarla correctamente mediante los siguientes nombres de token.
 
-![Límite de barra de comandos](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
+![Límite de barra de comandos](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303-018_CommandBarRedline")
 
-![Límite de botón de desbordamiento](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+![Límite de botón de desbordamiento](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
 
 Use…
 en lugares donde se necesita una barra de comandos insertada pero no se puede usar la implementación estándar de barra de comandos de Visual Studio.
@@ -376,7 +376,7 @@ No use…
 
 Un grupo de la barra de comandos se compone de un conjunto relacionado de controles de barra de comandos y puede incluir cualquier número de botones, botones de expansión, menús desplegables, cuadros combinados o menús. Los colores de dichos controles se regulan mediante nombres de token independientes y se describen individualmente en esta guía. Se usa una línea divisoria para dividir un grupo de la barra de comandos en subgrupos relacionados.
 
-![Límite de grupo de la barra de comandos](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+![Límite de grupo de la barra de comandos](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303-020_CommandBarGroupRedline")
 
 Use…
 en lugares donde se necesita una barra de comandos insertada pero no se puede usar la implementación estándar de barra de comandos de Visual Studio.
@@ -386,13 +386,13 @@ No use…
 
 - para los componentes de barra de comandos distintos de aquellos para los que se especifican nombres de los token.
 
-  **Predeterminado** (no hay otros estados)
+  **Predeterminado** (ningún otro Estado)
 
   Elemento
 
   Nombre del token: Category.color
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarGradientBegin`
 
@@ -414,9 +414,9 @@ No use…
 
 #### <a name="command-icons"></a>Iconos de comando
 
-![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
+![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303-021_CommandIconRedline1")
 
-![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303-022_CommandIconRedline2")
 
 Use…
 para los botones que se colocarán en una barra de comandos.
@@ -434,11 +434,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Icono predeterminado de comandos](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")
+  ![Icono de comando predeterminado](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")
 
   **Valor predeterminado**
 
-  Fondo
+  Información previa
 
   N/D (se hereda del fondo de la barra de comandos)
 
@@ -450,11 +450,11 @@ No use…
 
   N/D
 
-  ![Comando predeterminado del icono seleccionado](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")
+  ![Icono de comando predeterminado seleccionado](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")
 
-  **seleccionado**
+  **Selected**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarSelected`
 
@@ -466,7 +466,7 @@ No use…
 
   `Environment.CommandBarSelectedBorder`
 
-  **Al mantener el mouse y teclado con foco**
+  **Al mantener el puntero y teclado con foco**
 
   Componente
 
@@ -474,11 +474,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Mantener el mouse el icono de comando](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")
+  ![Icono de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")
 
-  **Estándar al mantener el mouse**
+  **Estándar al mantener el puntero**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarMouseOverBackgroundBegin`
 
@@ -492,11 +492,11 @@ No use…
 
   `Environment.CommandBarBorder`
 
-  ![Comando de desplazamiento del icono seleccionado](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")
+  ![Icono de comandos al mantener el mouse seleccionado](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")
 
-  **Seleccionado al mantener el mouse**
+  **Seleccionado al mantener el puntero**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarHoverOverSelected`
 
@@ -508,7 +508,7 @@ No use…
 
   `Environment.CommandBarHoverOverSelectedIconBorder`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -516,11 +516,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Icono de comando presionado](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")
+  ![Icono de comando presionado](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")
 
   **Icono de comando presionado**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarMouseDownBackgroundBegin`
 
@@ -542,11 +542,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Icono de comando deshabilitado](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")
+  ![Icono de comando deshabilitado](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")
 
   **Icono de comando deshabilitado**
 
-  Fondo
+  Información previa
 
   N/D (se hereda del fondo de la barra de comandos)
 
@@ -558,12 +558,12 @@ No use…
 
   N/D
 
-#### <a name="BKMK_CommandComboBox"></a> Cuadro combinado
+#### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> Cuadro combinado
 
 > [!IMPORTANT]
 > Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color que se encuentran en [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
-![Límite de cuadro combinado](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
+![Límite de cuadro combinado](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
 
 Use…
 - al crear cuadros combinados personalizados.
@@ -583,11 +583,11 @@ Use…
 
   Nombre del token: Category.color
 
-  ![Campo de entrada de cuadro combinado](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")
+  ![Campo de entrada de cuadro combinado](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")
 
   **Campo de entrada**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxBackground`
 
@@ -603,11 +603,11 @@ Use…
 
   Sin separador
 
-  ![Desplegable del cuadro combinado&#45;presionado el botón](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")
+  ![Botón desplegable de&#45;de cuadro combinado](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   N/D (se hereda)
 
@@ -615,11 +615,11 @@ Use…
 
   `Environment.ComboBoxGlyph`
 
-  ![Cuadro combinado&#47;drop&#45;lista desplegable](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")
+  ![Cuadro combinado&#47;lista desplegable&#45;](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")
 
   **Lista desplegable**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxPopupBackgroundBegin`
 
@@ -633,7 +633,7 @@ Use…
 
   `Environment.ComboBoxPopupBorder`
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -641,11 +641,11 @@ Use…
 
   Nombre del token: Category.color
 
-  ![Campo de entrada de cuadro combinado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")
+  ![Campo de entrada de cuadro combinado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")
 
   **Campo de entrada**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxMouseOverBackgroundBegin`
 
@@ -663,11 +663,11 @@ Use…
 
   `Environment.ComboBoxMouseOverSeparator`
 
-  ![Cuadro combinado&#47;drop&#45;hacia abajo del botón de desplazamiento](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")
+  ![Cuadro combinado&#47;soltar&#45;botón abajo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxButtonMouseOverBackground`
 
@@ -675,7 +675,7 @@ Use…
 
   `Environment.ComboBoxMouseOverGlyph`
 
-  ![Cuadro combinado&#47;drop&#45;hacia abajo en la lista al mantener el mouse](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")
+  ![Cuadro combinado&#47;quitar&#45;lista desplegable al mantener el mouse](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")
 
   **Lista desplegable**
 
@@ -691,19 +691,19 @@ Use…
 
   `Environment.ComboBoxItemMouseOverBorder`
 
-  **Centrado**
+  **Focused**
 
   Componente
 
   Elemento
 
-  Nombre del token: Color.Category
+  Nombre del token: Color.category
 
-  ![Campo entrada de cuadro combinado enfocado](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")
+  ![Campo de entrada de cuadro combinado enfocado](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")
 
   **Campo de entrada**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxFocusedBackground`
 
@@ -719,11 +719,11 @@ Use…
 
   `Environment.ComboBoxFocusedButtonSeparator`
 
-  ![Cuadro combinado&#47;drop&#45;hacia abajo del botón enfocado](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")
+  ![Cuadro combinado&#47;colocar&#45;botón abajo centrado](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxFocusedButtonBackground`
 
@@ -731,19 +731,19 @@ Use…
 
   `Environment.ComboBoxFocusedGlyph`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
   Elemento
 
-  Nombre del token: Color.Category
+  Nombre del token: Color.category
 
-  ![Campo entrada de cuadro combinado presionado](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")
+  ![Campo entrada de cuadro combinado presionado](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")
 
   **Campo de entrada**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxMouseDownBackground`
 
@@ -759,11 +759,11 @@ Use…
 
   `Environment.ComboBoxMouseDownSeparator`
 
-  ![Cuadro combinado&#47;drop&#45;presionado el botón presionado](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")
+  ![Cuadro combinado&#47;soltar&#45;botón abajo presionado](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxButtonMouseDownBackground`
 
@@ -773,11 +773,11 @@ Use…
 
   **Deshabilitado**
 
-  ![Campo entrada de cuadro combinado deshabilitado](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")
+  ![Campo entrada de cuadro combinado deshabilitado](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")
 
   **Campo de entrada**
 
-  Fondo
+  Información previa
 
   `Environment.ComboBoxDisabledBackground`
 
@@ -793,11 +793,11 @@ Use…
 
   Sin separador
 
-  ![Cuadro combinado&#47;drop&#45;presionado el botón deshabilitado](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")
+  ![Cuadro combinado&#47;quitar&#45;botón abajo deshabilitado](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   None
 
@@ -805,12 +805,12 @@ Use…
 
   `Environment.ComboBoxDisabledGlyph`
 
-#### <a name="BKMK_CommandDropDown"></a> Lista desplegable
+#### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> Lista desplegable
 
 > [!IMPORTANT]
 > Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color que se encuentran en [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
-![Quitar&#45;hacia abajo línea roja](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
+![Colocar&#45;abajo hacia abajo](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
 
 Use…
 al crear controles de lista desplegable personalizados.
@@ -828,11 +828,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;hacia abajo del campo de selección](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")
+  ![Quitar&#45;campo de selección hacia abajo](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")
 
   **Campo de selección**
 
-  Fondo
+  Información previa
 
   `Environment.DropDownBackground`
 
@@ -848,11 +848,11 @@ No use…
 
   Sin separador
 
-  ![Quitar&#45;presionado el botón](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")
+  ![Botón desplegable&#45;](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   None
 
@@ -860,11 +860,11 @@ No use…
 
   `Environment.DropDownGlyph`
 
-  ![Quitar&#45;lista desplegable](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")
+  ![Quitar&#45;lista desplegable](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")
 
   **Lista desplegable**
 
-  Fondo
+  Información previa
 
   `Environment.DropDownPopupBackgroundBegin`
 
@@ -878,11 +878,11 @@ No use…
 
   `Environment.DropDownPopupBorder`
 
-  Sombra
+  Shadow
 
   `Environment.DropShadowBackground`
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -890,11 +890,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;campo de selección al mantener el mouse hacia abajo](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")
+  ![Quitar&#45;campo de selección hacia abajo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")
 
   **Campo de selección**
 
-  Fondo
+  Información previa
 
   `Environment.DropDownMouseOverBackgroundBegin`
 
@@ -912,11 +912,11 @@ No use…
 
   `Environment.DropDownButtonMouseOverSeparator`
 
-  ![Quitar&#45;hacia abajo del botón de desplazamiento](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")
+  ![Desplazar&#45;botón abajo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   `Environment.DropDownButtonMouseOverBackground`
 
@@ -924,7 +924,7 @@ No use…
 
   `Environment.DropDownMouseOverGlyph`
 
-  ![Quitar&#45;hacia abajo en la lista al mantener el mouse](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")
+  ![Quitar&#45;lista desplegable al mantener el mouse](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")
 
   **Lista desplegable**
 
@@ -940,7 +940,7 @@ No use…
 
   `Environment.ComboBoxItemMouseOverBorder`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -948,11 +948,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;hacia abajo del campo de selección presionada](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")
+  ![Quitar&#45;campo de selección hacia abajo presionado](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")
 
   **Campo de selección**
 
-  Fondo
+  Información previa
 
   `Environment.DropDownMouseDownBackground`
 
@@ -968,11 +968,11 @@ No use…
 
   `Environment.DropDownButtonMouseDownSeparator`
 
-  ![Quitar&#45;presionado el botón presionado](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")
+  ![Botón desplegable&#45;presionado](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   `Environment.DropDownButtonMouseDownBackground`
 
@@ -988,9 +988,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;hacia abajo del campo de selección deshabilitado](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")
+  ![Quitar&#45;campo de selección hacia abajo deshabilitado](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")
 
-  Fondo
+  Información previa
 
   `Environment.DropDownDisabledBackground`
 
@@ -1006,9 +1006,9 @@ No use…
 
   Sin separador
 
-  ![Quitar&#45;presionado el botón deshabilitado](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")
+  ![Botón desplegable&#45;deshabilitado](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")
 
-  Fondo
+  Información previa
 
   N/D
 
@@ -1020,7 +1020,7 @@ No use…
 
 Los botones de expansión comparten muchos nombres de token con otros controles de barra de comandos como, por ejemplo, botones, menús y texto de la barra de comandos. Todos los nombres de token de acciones y botones desplegables necesarios se repiten aquí para su comodidad. Las listas desplegables de botón de expansión son implementaciones de la barra de comandos [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
-![Límite de botón de división](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+![Límite de botón de expansión](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")
 
 Use…
 si crea un botón de expansión personalizado.
@@ -1038,11 +1038,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Botón de expansión](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")
+  ![Botón de expansión](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")
 
-  **Botón de expansión (valor predeterminado)**
+  **Botón de expansión (predeterminado)**
 
-  Fondo
+  Información previa
 
   None
 
@@ -1062,7 +1062,7 @@ No use…
 
   N/D
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -1070,11 +1070,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Botón de expansión al mantener el mouse](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")
+  ![Botón de expansión al mantener el mouse](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")
 
-  **Botón de expansión (al mantener el mouse)**
+  **Botón de expansión (al mantener el puntero)**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarMouseOverBackgroundBegin`
 
@@ -1096,7 +1096,7 @@ No use…
 
   `Environment.CommandBarSplitButtonSeparator`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -1104,11 +1104,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Botón de expansión presionado](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")
+  ![Botón de expansión presionado](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")
 
   **Botón de expansión (presionado)**
 
-  Fondo
+  Información previa
 
   `Environment.CommandBarMouseDownBackgroundBegin`
 
@@ -1138,11 +1138,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Botón de expansión deshabilitado](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")
+  ![Botón de expansión deshabilitado](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")
 
   **Botón de expansión (deshabilitado)**
 
-  Fondo
+  Información previa
 
   N/D
 
@@ -1165,7 +1165,7 @@ No use…
 #### <a name="more-options-and-overflow-buttons"></a>Botones "Más opciones" y "Desbordamiento"
  El botón "Más opciones" se usa cuando un grupo de la barra de comandos se puede personalizar al agregar o quitar botones relacionados de barra de comandos. El botón "Desbordamiento" aparece cuando una barra de comandos se trunca debido a la falta de espacio horizontal y, al hacer clic en él, muestra un menú que contiene los botones de la barra de comandos que no pueden mostrarse. Los colores para estos dos botones están controlados por el mismo conjunto de nombres de token.
 
- ![Límite de más opciones](../../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303 058_MoreOptionsRedline")
+ ![Límite de Más opciones](../../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303-058_MoreOptionsRedline")
 
  Use…
 para los botones "Más opciones" o "Desbordamiento" personalizados.
@@ -1181,15 +1181,15 @@ para los botones que no tienen una función similar a la de los botones "Más op
 
  Nombre del token: Category.color
 
- ![Más opciones](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")
+ ![Más opciones](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")
 
  **Más opciones**
 
- ![Botón de desbordamiento](../../extensibility/ux-guidelines/media/0303-060-overflow.png "0303 060_Overflow")
+ ![Botón de desbordamiento](../../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")
 
- **desbordamiento**
+ **Desbordamiento**
 
- Fondo
+ Información previa
 
  `Environment.CommandBarOptionsBackground`
 
@@ -1197,7 +1197,7 @@ para los botones que no tienen una función similar a la de los botones "Más op
 
  `Environment.CommandBarOptionsGlyph`
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -1205,15 +1205,15 @@ para los botones que no tienen una función similar a la de los botones "Más op
 
  Nombre del token: Category.color
 
- ![Más opciones al mantener el mouse](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")
+ ![Más opciones al mantener el mouse](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")
 
  **Más opciones**
 
- ![Desbordamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303 062_OverflowOptions")
+ ![Desbordamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")
 
- **desbordamiento**
+ **Desbordamiento**
 
- Fondo
+ Información previa
 
  `Environment.CommandBarOptionsMouseOverBackgroundBegin`
 
@@ -1223,7 +1223,7 @@ para los botones que no tienen una función similar a la de los botones "Más op
 
  `Environment.CommandBarOptionsMouseDownGlyph`
 
- **Presionado**
+ **Pressed**
 
  Componente
 
@@ -1231,15 +1231,15 @@ para los botones que no tienen una función similar a la de los botones "Más op
 
  Nombre del token: Category.color
 
- ![Más opciones presionado](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")
+ ![Más opciones presionado](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")
 
  **Más opciones**
 
- ![Desbordamiento presionado](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303 064_OverflowPressed")
+ ![Desbordamiento presionado](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")
 
- **desbordamiento**
+ **Desbordamiento**
 
- Fondo
+ Información previa
 
  `Environment.CommandBarOptionsMouseDownBackgroundBegin`
 
@@ -1257,11 +1257,11 @@ para los botones que no tienen una función similar a la de los botones "Más op
 ### <a name="document-window-frame"></a>Marco de ventana de documento
  Las ventanas de documento pueden estar acopladas en el IDE o flotantes como una ventana independiente. Si una ventana de documento está flotante fuera del IDE, aun así se encuentra en el cuadro de un documento y su fondo, borde, texto y sus colores de pestaña son los mismos que cuando forma parte del IDE. Sin embargo, el documento se encuentra dentro de un marco que tiene su propio fondo, borde y colores de texto. Cuando las ventanas de herramientas se acoplan en el cuadro del documento, heredan el comportamiento y el color de los nombres de token de ventana de documento para sus pestañas.
 
- ![Límite de ventana de documento acoplada](../../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303 065_DockedDocumentWindowRedline")
+ ![Límite de ventana de documento acoplado](../../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")
 
- **Ventana de documento acoplado**
+ **Ventana de documento acoplada**
 
- ![Límite de la ventana de documento flotante](../../extensibility/ux-guidelines/media/0303-066-floatingdocumentwindowredline.png "0303 066_FloatingDocumentWindowRedline")
+ ![Límite de ventana de documento flotante](../../extensibility/ux-guidelines/media/0303-066-floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")
 
  **Ventana de documento flotante**
 
@@ -1281,7 +1281,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Documento: acoplado o flotante
 
- Fondo
+ Información previa
 
  Depende del tipo de documento
 
@@ -1293,11 +1293,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  `Environment.ToolWindowBorder`
 
- ![Marco enfocado](../../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 067_FrameFocused")
+ ![Marco enfocado](../../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303-067_FrameFocused")
 
  **Marco: flotante, con foco**
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowFloatingFrame`
 
@@ -1319,11 +1319,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Se establece en transparente
 
- ![Marco no enfocado](../../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")
+ ![Marco no enfocado](../../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")
 
  **Marco: flotante, sin foco**
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowFloatingFrameInactive`
 
@@ -1345,7 +1345,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Se establece en transparente
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -1353,7 +1353,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Marco enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")
+ ![Marco enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")
 
  **Marco: flotante, con foco**
 
@@ -1369,7 +1369,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  `Environment.RaftedWindowButtonHoverActiveBorder`
 
- ![Marco no enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303 070_FrameUnfocusedHover")
+ ![Marco no enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303-070_FrameUnfocusedHover")
 
  **Marco: flotante, sin foco**
 
@@ -1385,7 +1385,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  `Environment.RaftedWindowButtonHoverInactiveBorder`
 
- **Presionado**
+ **Pressed**
 
  Componente
 
@@ -1393,7 +1393,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Marco enfocado presionado](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")
+ ![Marco enfocado presionado](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")
 
  **Marco: flotante, con foco**
 
@@ -1412,7 +1412,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 ### <a name="document-tabs"></a>Pestañas de documentos
  Las pestañas de documentos se colocan en el canal de pestañas para indicar los documentos que están abiertos actualmente, así como el documento actual activo o seleccionado. Las ventanas de herramientas también se pueden acoplar en el canal de pestañas de documentos si el usuario las coloca allí. En este caso, usan los mismos colores de pestaña que las ventanas de documento. Si va a crear interfaz de usuario que desea que siempre coincida con los colores de las ventanas de documento (lo que incluye las actualizaciones de temas o si se instalan nuevos temas), entonces haga referencia a estos tokens de color.
 
- ![Límite de pestaña de documento](../../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303 072_DocumentTabRedline")
+ ![Límite de pestaña de documento](../../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303-072_DocumentTabRedline")
 
  Use…
 en cualquier lugar donde cree interfaz de usuario que quiere hacer coincidir con las pestañas de documentos y que seleccione automáticamente actualizaciones de tema o nuevos colores de tema.
@@ -1425,9 +1425,9 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
 - La pestaña seleccionada representa el documento que se muestra actualmente en el cuadro de documento. Una pestaña seleccionada tiene un borde de documento que se extiende por todo el borde superior del cuadro de documento.
 
-- Las pestañas en segundo plano corresponden a cualquier pestaña de documento que no sea la pestaña seleccionada actualmente. Una vez que se hace clic en una de ellas, se convierte en la pestaña seleccionada y adopta todos los colores de fondo, borde y texto de los nombres de token.
+- Las pestañas de fondo son cualquier pestaña de documento que no sea la pestaña seleccionada actualmente. Una vez que haga clic en ella, se convertirán en la pestaña seleccionada y adquirirán todos los colores de fondo, borde y texto de los nombres de token.
 
-  ![Límite de pestaña de documento abierto](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")
+  ![Límite de pestaña de documento abierto](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")
 
   Use…
   al crear pestañas de documentos personalizadas.
@@ -1438,7 +1438,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 - para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.
 
 #### <a name="selected-tab"></a>Pestaña seleccionada
- **Centrado**
+ **Focused**
 
  Componente
 
@@ -1446,11 +1446,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Pestaña seleccionada enfocada](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")
+ ![Pestaña seleccionada enfocada](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")
 
- **Pestaña de documento seleccionada, centrado**
+ **Pestaña de documento seleccionada, con foco**
 
- Fondo
+ Información previa
 
  `Environment.FileTabSelectedGradientTop`
 
@@ -1478,11 +1478,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Pestaña seleccionada no enfocada](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")
+ ![Pestaña seleccionada no enfocada](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")
 
  **Pestaña de documento seleccionada, sin foco**
 
- Fondo
+ Información previa
 
  `Environment.FileTabInactiveGradientTop`
 
@@ -1505,11 +1505,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 #### <a name="background-tab"></a>Pestaña en segundo plano
  **Valor predeterminado**
 
- ![Pestaña en segundo plano](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")
+ ![Pestaña en segundo plano](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")
 
  **Valor predeterminado de pestaña en segundo plano**
 
- Fondo
+ Información previa
 
  `Environment.FileTabBackground`
 
@@ -1523,13 +1523,13 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Se establece en el mismo color que el fondo.
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
- ![Pestaña en segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")
+ ![Pestaña en segundo plano al mantener el puntero](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")
 
- **Pestaña en segundo plano al mantener el mouse**
+ **Pestaña en segundo plano al mantener el puntero**
 
- Fondo
+ Información previa
 
  `Environment.FileTabHotGradientTop`
 
@@ -1549,7 +1549,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
 La pestaña de vista previa aparece en la parte derecha del canal de pestañas de documentos cuando el usuario hace clic en un elemento de la ventana de herramientas del Explorador de soluciones. Funciona como una vista previa del documento y también proporciona al usuario la posibilidad de mantener el documento abierto en la parte izquierda del canal de pestañas de documentos. Solo se puede abrir una pestaña de vista previa a la vez. Las pestañas de vista previa tienen tanto el estado seleccionado como en segundo plano al igual que las pestañas abiertas y, además, pueden estar con y sin foco en su estado activo.
 
-![Límite de pestaña de vista previa](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+![Límite de pestaña de vista previa](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")
 
 Use…
 en cualquier parte donde cree vista previa provisional y quiere hacer coincidir algún elemento con el color de la pestaña de vista previa actual.
@@ -1559,7 +1559,7 @@ No use…
 
 - para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.
 
-  **Pestaña de vista previa seleccionada: Centrado**
+  **Pestaña de vista previa seleccionada: con foco**
 
   Componente
 
@@ -1567,11 +1567,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Pestaña de vista previa enfocada](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")
+  ![Pestaña de vista previa enfocada](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")
 
   **Pestaña de vista previa con foco**
 
-  Fondo
+  Información previa
 
   `Environment.FileTabProvisionalSelectedActive`
 
@@ -1589,7 +1589,7 @@ No use…
 
   `Environment.FileTabProvisionalSelectedActiveBorder`
 
-  **Pestaña de vista previa seleccionada: Sin foco**
+  **Pestaña de vista previa seleccionada: sin foco**
 
   Componente
 
@@ -1597,11 +1597,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Pestaña de vista previa sin foco](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")
+  ![Pestaña de vista previa no enfocada](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")
 
   **Pestaña de vista previa sin foco**
 
-  Fondo
+  Información previa
 
   `Environment.FileTabProvisionalSelectedInactive`
 
@@ -1617,7 +1617,7 @@ No use…
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
-  **Pestaña de vista previa en segundo plano: Valor predeterminado**
+  **Pestaña de vista previa en segundo plano: predeterminada**
 
   Componente
 
@@ -1625,11 +1625,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Pestaña de vista previa en segundo plano](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")
+  ![Pestaña de vista previa en segundo plano](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")
 
-  **Pestaña de fondo de pestaña de vista previa**
+  **Pestaña en segundo plano de la pestaña de vista previa**
 
-  Fondo
+  Información previa
 
   `Environment.FileTabProvisionalInactive`
 
@@ -1643,7 +1643,7 @@ No use…
 
   Se establece en el mismo color que el fondo.
 
-  **Pestaña de vista previa en segundo plano: Al mantener el mouse**
+  **Pestaña de vista previa en segundo plano: al mantener el puntero**
 
   Componente
 
@@ -1651,11 +1651,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Pestaña de vista previa en segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")
+  ![Pestaña de vista previa en segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")
 
-  **Pestaña de vista previa pestaña en segundo plano al mantener el mouse**
+  **Pestaña en segundo plano de la pestaña de vista previa al mantener el puntero**
 
-  Fondo
+  Información previa
 
   `Environment.FileTabProvisionalHover`
 
@@ -1673,7 +1673,7 @@ No use…
 
 El botón de desbordamiento de documento se muestra si hay uno o varios documentos abiertos, independientemente de si hay espacio vertical en la configuración actual para que quepan todas las pestañas de documentos. En el menú desplegable de desbordamiento de documento, que está controlado por los colores de **CommandBarMenu** (consulte [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), se muestra una lista de todos los documentos abiertos (visibles y ocultos) y los cambios de glifo de desbordamiento según si se muestran todos los documentos abiertos en el canal de pestañas.
 
-![Límite de desbordamiento](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+![Límite de desbordamiento](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
 
 Use…
 si crea un botón de desbordamiento de documento personalizado.
@@ -1691,11 +1691,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")
+  ![Desbordamiento](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")
 
   **Botón de desbordamiento de documento**
 
-  Fondo
+  Información previa
 
   `Environment.DocWellOverflowButtonBackground`
 
@@ -1707,7 +1707,7 @@ No use…
 
   N/D
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -1715,11 +1715,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Desbordamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")
+  ![Desbordamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")
 
-  **Botón de desbordamiento de documento al mantener el mouse**
+  **Botón de desbordamiento de documento al mantener el puntero**
 
-  Fondo
+  Información previa
 
   `Environment.DocWellOverflowButtonMouseOverBackground`
 
@@ -1731,7 +1731,7 @@ No use…
 
   `Environment.DocWellOverflowButtonMouseOverBorder`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -1739,11 +1739,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Desbordamiento presionado](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")
+  ![Desbordamiento presionado](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")
 
-  **Presiona el botón de desbordamiento de documento**
+  **Botón de desbordamiento de documento presionado**
 
-  Fondo
+  Información previa
 
   `Environment.DocWellOverflowButtonMouseDownBackground`
 
@@ -1758,7 +1758,7 @@ No use…
 ## <a name="tool-windows"></a>Ventanas de herramientas
  No es necesario replicar las ventanas de herramientas, porque las proporciona el entorno de Visual Studio. Sin embargo, quizá prefiera aprovechar los colores que se usan en las ventanas de herramientas para que la interfaz de usuario se muestre siempre coherente con esta parte del entorno de Visual Studio.
 
- ![Límite de ventana de herramienta](../../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303 087_ToolWindowRedline")
+ ![Límite de ventana de herramientas](../../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303-087_ToolWindowRedline")
 
  Use…
 en cualquier lugar donde cree interfaz de usuario que desea que coincida con la ventana de herramientas.
@@ -1769,7 +1769,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 ### <a name="tool-window-frame"></a>Marco de ventana de herramientas
  Las ventanas de herramientas de Visual Studio se usan para diversas tareas y pueden estar en uno de varios estados diferentes. Si una ventana de herramientas está abierta, se puede asignar a cualquiera de los cuatro lados del área del documento. Estas ventanas también pueden flotar fuera del IDE, lo que permite reubicarlas en cualquier lugar dentro de la pantalla del usuario. Las ventanas flotantes siempre se colocan arriba del IDE. Por último, las ventanas de herramientas se pueden acoplar como ventanas de documento y aparecen como una pestaña en el cuadro de documento. Las ventanas de herramientas que se han acoplado como ventanas de documento se colorean en parte mediante los nombres de token de ventana de documento.
 
- ![Límite del marco de ventana de herramientas](../../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303 088_ToolWindowFrameRedline")
+ ![Límite de marco de ventana de herramienta](../../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")
 
  Use…
 en cualquier lugar donde cree interfaz de usuario que desea que coincida con la ventana de herramientas.
@@ -1777,7 +1777,7 @@ en cualquier lugar donde cree interfaz de usuario que desea que coincida con la 
  No use…
 para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.
 
- **Acoplado**
+ **Directo**
 
  Componente
 
@@ -1785,9 +1785,9 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Ventana de herramientas acoplada](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")
+ ![Ventana de herramientas acoplada](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowBackground`
 
@@ -1795,7 +1795,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  `Environment.ToolWindowBorder`
 
- **Flotante: centrado**
+ **Flotante, con foco**
 
  Componente
 
@@ -1803,9 +1803,9 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Ventana de herramientas enfocada](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")
+ ![Ventana de herramientas enfocada](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowBackground`
 
@@ -1813,7 +1813,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  `Environment.MainWindowActiveDefaultBorder`
 
- **Flotante: sin foco**
+ **Flotante, sin foco**
 
  Componente
 
@@ -1821,9 +1821,9 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Ventana de herramientas no enfocado](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")
+ ![Ventana de herramientas no enfocada](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowBackground`
 
@@ -1834,7 +1834,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 ### <a name="tool-window-title-bar"></a>Barra de título de la ventana de herramientas
  El borde de la barra de título no es realmente un borde, sino una línea gruesa en la parte superior de la barra de título. No tiene un nombre de token para su estado sin foco.
 
- ![Límite de barra de título de ventana de herramientas](../../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303 092_ToolWindowTitleBarRedline")
+ ![Límite de barra de título de ventana de herramienta](../../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")
 
  Use…
 en cualquier lugar donde cree interfaz de usuario que desea que coincida con la ventana de herramientas.
@@ -1842,7 +1842,7 @@ en cualquier lugar donde cree interfaz de usuario que desea que coincida con la 
  No use…
 para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.
 
- **Centrado**
+ **Focused**
 
  Componente
 
@@ -1850,11 +1850,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Barra de título enfocado](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")
+ ![Barra de título enfocada](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")
 
  **Barra de título con foco**
 
- Fondo
+ Información previa
 
  `Environment.TitleBarActiveGradientBegin`
 
@@ -1882,11 +1882,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Barra de título no enfocado](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")
+ ![Barra de título no enfocada](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")
 
- **Barra de título no enfocado**
+ **Barra de título sin foco**
 
- Fondo
+ Información previa
 
  `Environment.TitleBarInactiveGradientBegin`
 
@@ -1906,7 +1906,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
 #### <a name="title-bar-buttons"></a>Botones de la barra de título
 
-![Límite de botón de barra de título](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
+![Límite de botón de la barra de título](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")
 
 Use…
 para los botones que aparecen en la interfaz de usuario que usa los tokens de color de las barras de título de la ventana de herramientas.
@@ -1924,11 +1924,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Botón enfocado la barra de título](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")
+  ![Botón de la barra de título enfocado](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")
 
-  **Centrado**
+  **Focused**
 
-  Fondo
+  Información previa
 
   N/D
 
@@ -1940,11 +1940,11 @@ No use…
 
   N/D
 
-  ![Botón sin foco de la barra de título](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")
+  ![Botón de la barra de título no enfocado](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")
 
   **Sin foco**
 
-  Fondo
+  Información previa
 
   N/D
 
@@ -1956,7 +1956,7 @@ No use…
 
   N/D
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -1964,11 +1964,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Botón de barra de título enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")
+  ![Botón de la barra de título enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")
 
-  **Centrado**
+  **Focused**
 
-  Fondo
+  Información previa
 
   `Environment.ToolWindowButtonHoverActive`
 
@@ -1980,11 +1980,11 @@ No use…
 
   `Environment.ToolWindowButtonHoverActiveBorder`
 
-  ![No enfocado al mantener el mouse del botón de la barra de título](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")
+  ![Botón de la barra de título no enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")
 
   **Sin foco**
 
-  Fondo
+  Información previa
 
   `Environment.ToolWindowButtonHoverInactive`
 
@@ -1996,7 +1996,7 @@ No use…
 
   `Environment.ToolWindowButtonHoverInactiveBorder`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -2004,11 +2004,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Botón enfocado y presionado de la barra de título](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")
+  ![Botón de la barra de título enfocado y presionado](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")
 
-  **Centrado**
+  **Focused**
 
-  Fondo
+  Información previa
 
   `Environment.ToolWindowButtonDown`
 
@@ -2020,11 +2020,11 @@ No use…
 
   `Environment.ToolWindowButtonDownBorder`
 
-  ![Botón de barra de título no enfocado y presionado](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")
+  ![Botón de la barra de título no enfocado y presionado](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")
 
   **Sin foco**
 
-  Fondo
+  Información previa
 
   `Environment.ToolWindowButtonDown`
 
@@ -2037,7 +2037,7 @@ No use…
   `Environment.ToolWindowButtonDownBorder`
 
 ### <a name="tool-window-tabs"></a>Pestañas de ventana de herramientas
- ![Límite de pestaña de ventana de herramienta](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303 102_ToolWindowTabRedline")
+ ![Límite de pestaña de ventana de herramientas](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303-102_ToolWindowTabRedline")
 
  Use…
 en cualquier lugar donde cree interfaz de usuario que desea que coincida con la ventana de herramientas.
@@ -2053,11 +2053,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Pestaña de ventana de herramientas enfocado](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")
+ ![Pestaña de ventana de herramientas enfocada](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")
 
  **Pestaña de ventana de herramienta seleccionada, con foco**
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowTabSelectedTab`
 
@@ -2077,11 +2077,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Pestaña de ventana de herramientas no enfocado](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")
+ ![Pestaña de ventana de herramientas no enfocada](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")
 
  **Pestaña de ventana de herramienta seleccionada, sin foco**
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowTabSelectedTab`
 
@@ -2103,11 +2103,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Pestaña en segundo plano de ventana de herramienta](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")
+ ![Pestaña de ventana de herramientas en segundo plano](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")
 
  **Pestaña de ventana de herramientas en segundo plano**
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowTabGradientBegin`
 
@@ -2131,11 +2131,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Pestaña de fondo de ventana de herramientas al mantener el mouse](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")
+ ![Pestaña de ventana de herramientas en segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")
 
- **Pestaña de ventana de herramientas en segundo plano al mantener el mouse**
+ **Pestaña de ventana de herramientas en segundo plano al mantener el puntero**
 
- Fondo
+ Información previa
 
  `Environment.ToolWindowTabMouseOverBackgroundBegin`
 
@@ -2156,7 +2156,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
  Se establece en el mismo color que el fondo.
 
 ### <a name="auto-hide-tabs"></a>Pestaña de ocultación automática
- ![Auto&#45;ocultar límite](../../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303 107_AutoHideRedline")
+ ![Auto&#45;ocultar la función de la roja](../../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303-107_AutoHideRedline")
 
  Use…
 en cualquier lugar donde cree interfaz de usuario que desea que coincida con las pestañas de ventana de herramientas de ocultación automática.
@@ -2172,11 +2172,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Auto&#45;ocultar la ficha](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")
+ ![Ficha ocultar auto&#45;](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")
 
  **Pestaña de ocultación automática predeterminada**
 
- Fondo
+ Información previa
 
  `Environment.AutoHideTabBackgroundBegin`
 
@@ -2190,7 +2190,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  `Environment.AutoHideTabBorder`
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -2198,11 +2198,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
  Nombre del token: Category.color
 
- ![Auto&#45;ocultar la ficha al mantener el mouse](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")
+ ![Ficha ocultar auto&#45;al mantener el mouse](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")
 
- **Pestaña de ocultación automática al mantener el mouse**
+ **Pestaña de ocultación automática al mantener el puntero**
 
- Fondo
+ Información previa
 
  `Environment.AutoHideTabMouseOverBackgroundBegin`
 
@@ -2232,7 +2232,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
 - "Deshabilitado" significa que la función de búsqueda se ha desactivado para el contexto actual.
 
-  ![Límite de cuadro de búsqueda](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")
+  ![Límite de cuadro de búsqueda](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")
 
   Use…
   al diseñar un cuadro de búsqueda personalizado.
@@ -2242,7 +2242,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
 - para elementos que no desea que siempre coincidan con la interfaz de usuario de búsqueda.
 
-  **Centrado**
+  **Focused**
 
   Componente
 
@@ -2250,11 +2250,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   Nombre del token: Category.color
 
-  ![Campo de entrada de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")
+  ![Campo de entrada de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")
 
   **Campo de entrada**
 
-  Fondo
+  Información previa
 
   `SearchControl.FocusedBackground`
 
@@ -2270,11 +2270,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   `SearchControl.FocusedDropDownSeparator`
 
-  ![Botón de acción de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")
+  ![Botón de acción de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")
 
   **Botón de acción**
 
-  Fondo
+  Información previa
 
   None
 
@@ -2294,11 +2294,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   N/D
 
-  ![Lista de búsqueda&#45;hacia abajo del botón enfocado](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")
+  ![Botón desplegable de&#45;de búsqueda centrado](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   `SearchControl.FocusedDropDownButton`
 
@@ -2318,11 +2318,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   Nombre del token: Category.color
 
-  ![Campo de entrada de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")
+  ![Campo de entrada de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")
 
   **Campo de entrada activo**
 
-  Fondo
+  Información previa
 
   `SearchControl.SearchActiveBackground`
 
@@ -2342,7 +2342,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   **Campo de entrada inactivo**
 
-  Fondo
+  Información previa
 
   `SearchControl.Unfocused`
 
@@ -2358,11 +2358,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   `SearchControl.DropDownSeparator`
 
-  ![Botón de acción de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")
+  ![Botón de acción de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")
 
   **Botón de acción**
 
-  Fondo
+  Información previa
 
   N/D
 
@@ -2382,11 +2382,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   N/D
 
-  ![Lista de búsqueda&#45;presionado el botón sin foco](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")
+  ![Botón de&#45;de la lista desplegable de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   `SearchControl.UnfocusedDropDownButton`
 
@@ -2398,7 +2398,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   `SearchControl.UnfocusedDropDownButtonBorder`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -2406,11 +2406,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   Nombre del token: Category.color
 
-  ![Presiona el botón de acción de búsqueda](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
+  ![Botón de acción de búsqueda presionado](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
 
   **Botón de acción**
 
-  Fondo
+  Información previa
 
   `SearchControl.ActionButtonMouseDown`
 
@@ -2422,11 +2422,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   `SearchControl.ActionButtonMouseDownBorder`
 
-  ![Lista de búsqueda&#45;presionado el botón presionado](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")
+  ![Botón desplegable de búsqueda&#45;presionado](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   `SearchControl.MouseDownDropDownButton`
 
@@ -2446,11 +2446,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   Nombre del token: Category.color
 
-  ![Resaltado de campo de entrada de búsqueda](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")
+  ![Campo de entrada de búsqueda resaltado](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")
 
   **Campo de entrada con texto resaltado**
 
-  Fondo
+  Información previa
 
   `SearchControl.Selection`
 
@@ -2474,11 +2474,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   Nombre del token: Category.color
 
-  ![Campo de entrada de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")
+  ![Campo de entrada de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")
 
   **Campo de entrada**
 
-  Fondo
+  Información previa
 
   `SearchControl.Disabled`
 
@@ -2494,11 +2494,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   `SearchControl.DropDownSeparator`
 
-  ![Botón de acción de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")
+  ![Botón de acción de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")
 
   **Botón de acción**
 
-  Fondo
+  Información previa
 
   None
 
@@ -2510,11 +2510,11 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
   None
 
-  ![Lista de búsqueda&#45;presionado el botón deshabilitado](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")
+  ![Botón desplegable Buscar&#45;deshabilitado](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")
 
   **Botón desplegable**
 
-  Fondo
+  Información previa
 
   None
 
@@ -2530,7 +2530,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
 
 El menú desplegable del cuadro de búsqueda puede ser ligeramente más complejo que otros menús desplegables en Visual Studio. Las secciones de "búsquedas sugeridas" y "opciones de búsqueda" pueden aparecer solas o juntas en el menú y cada una de ellas se colorea por separado. Además, estas secciones están separadas por una línea cuando aparecen juntas y un borde rodea todo el menú desplegable.
 
-![Lista de búsqueda&#45;hacia abajo línea roja](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+![&#45;de la lista desplegable de búsqueda](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")
 
 Use…
 - si crea una lista desplegable de búsqueda personalizada.
@@ -2542,7 +2542,7 @@ Use…
 
 - en cualquier combinación de primer plano y fondo distinta de la especificada.
 
-  **Predeterminado (no hay otros Estados)**
+  **Predeterminado (no hay otros estados)**
 
   Elemento
 
@@ -2556,7 +2556,7 @@ Use…
 
   `SearchControl.PopupSectionHeaderSeparator`
 
-  Sombra
+  Shadow
 
   `Environment.DropShadowBackground`
 
@@ -2568,11 +2568,11 @@ Use…
 
   Nombre del token: Category.color
 
-  ![Búsqueda sugerida](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")
+  ![Búsqueda sugerida](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")
 
   **Búsquedas sugeridas**
 
-  Fondo
+  Información previa
 
   `SearchControl.PopupItemsListBackgroundGradientBegin`
 
@@ -2582,15 +2582,15 @@ Use…
 
   `SearchControl.PopupItemText`
 
-  ![Casilla de verificación de búsqueda](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")
+  ![Casilla de verificación de búsqueda](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")
 
   **Opciones de búsqueda (casilla)**
 
-  ![Las opciones de búsqueda](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")
+  ![Opciones de búsqueda](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")
 
   **Opciones de búsqueda (vínculo)**
 
-  Fondo
+  Información previa
 
   `SearchControl.PopupSectionBackgroundGradientBegin`
 
@@ -2614,7 +2614,7 @@ Use…
 
   `SearchControl.PopupSectionHeaderText`
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -2622,11 +2622,11 @@ Use…
 
   Nombre del token: Category.color
 
-  ![Búsqueda sugerida al mantener el mouse](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")
+  ![Búsqueda sugerida al mantener el mouse](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")
 
   **Búsquedas sugeridas**
 
-  Fondo
+  Información previa
 
   `SearchControl.PopupControlMouseOverBackgroundGradientBegin`
 
@@ -2640,15 +2640,15 @@ Use…
 
   `SearchControl.PopupControlMouseOverBorder`
 
-  ![Casilla de verificación de búsqueda al mantener el mouse](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")
+  ![Casilla de verificación de búsqueda al mantener el mouse](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")
 
   **Búsquedas sugeridas (casilla)**
 
-  ![Las opciones al mantener el puntero de búsqueda](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")
+  ![Opciones de búsqueda al mantener el mouse](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")
 
   **Opciones de búsqueda**
 
-  Fondo
+  Información previa
 
   `SearchControl.PopupControlMouseOverBackgroundGradientBegin`
 
@@ -2666,7 +2666,7 @@ Use…
 
   `SearchControl.PopupControlMouseOverBorder`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -2674,11 +2674,11 @@ Use…
 
   Nombre del token: Category.color
 
-  ![Búsqueda sugerida presionada](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")
+  ![Búsqueda sugerida presionada](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")
 
   **Búsquedas sugeridas (casilla)**
 
-  ![Buscar opciones presionado](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")
+  ![Opciones de búsqueda presionadas](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")
 
   **Opciones de búsqueda**
 
@@ -2706,10 +2706,10 @@ Use…
 
   `SearchControl.PopupButtonMouseDownText`
 
-### <a name="hyperlink"></a>Hipervínculo
+### <a name="hyperlink"></a>Hyperlink
  El hipervínculo es un control que no tiene un par de primer plano y fondo. En todos los casos, use el color de hipervínculo de primer plano, que se muestre adecuadamente en fondos oscuros, grises y blancos. Si no usa el token de color para el control de hipervínculo, verá el color predeterminado del sistema para el estado Presionado, que parpadeará en rojo. Esa es la señal de que no se está usando el token de color correcto del entorno para el control.
 
- ![Límite de hipervínculo](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303 133_HyperlinkRedline")
+ ![Límite de hipervínculo](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303-133_HyperlinkRedline")
 
  Use…
 si es necesario crear un hipervínculo personalizado.
@@ -2725,13 +2725,13 @@ para elementos que no sean un hipervínculo.
 
  Nombre del token: Category.color
 
- ![Hipervínculo predeterminado](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 134_Hyperlink")
+ ![Hipervínculo predeterminado](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303-134_Hyperlink")
 
  Primer plano (texto)
 
  `Environment.PanelHyperlink`
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -2739,13 +2739,13 @@ para elementos que no sean un hipervínculo.
 
  Nombre del token: Category.color
 
- ![Hipervínculo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 135_HyperlinkHover")
+ ![Hipervínculo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")
 
  Primer plano (texto)
 
  `Environment.PanelHyperlinkHover`
 
- **Presionado**
+ **Pressed**
 
  Componente
 
@@ -2753,7 +2753,7 @@ para elementos que no sean un hipervínculo.
 
  Nombre del token: Category.color
 
- ![Hipervínculo presionado](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 136_HyperlinkPressed")
+ ![Hipervínculo presionado](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")
 
  Primer plano (texto)
 
@@ -2767,7 +2767,7 @@ para elementos que no sean un hipervínculo.
 
  Nombre del token: Category.color
 
- ![Hipervínculo deshabilitado](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")
+ ![Hipervínculo deshabilitado](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")
 
  Primer plano (texto)
 
@@ -2776,7 +2776,7 @@ para elementos que no sean un hipervínculo.
 ### <a name="infobar"></a>Barra de información
  Las barras de información se usan para proporcionar más información sobre un determinado contexto y siempre se muestran en la parte superior de una ventana de documento o una ventana de herramientas.
 
- ![Límite de barra de](../../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303 138_InfobarRedline")
+ ![Límite de barra de información](../../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303-138_InfobarRedline")
 
  Use…
 al crear barras de información personalizadas.
@@ -2790,11 +2790,11 @@ para elementos de interfaz de usuario que no sean similares a una barra de infor
 
  Nombre del token: Category.color
 
- ![Infobar](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
+ ![Barra de información](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
 
- **Infobar**
+ **Barra de información**
 
- Fondo
+ Información previa
 
  `Environment.InfoBackground`
 
@@ -2807,14 +2807,14 @@ para elementos de interfaz de usuario que no sean similares a una barra de infor
  `Environment.ToolWindowBorder`
 
 ### <a name="scroll-bar"></a>Barra de desplazamiento
- Las barras de desplazamiento reciben el estilo del entorno de Visual Studio y no es necesario aplicarles un tema. Sin embargo, puede decidir desea aprovechar los colores utilizados en las barras de desplazamiento para que la interfaz de usuario se muestre siempre coherente con esta parte del entorno de Visual Studio.
+ Las barras de desplazamiento reciben el estilo del entorno de Visual Studio y no es necesario aplicarles un tema. Sin embargo, puede decidir que desea aprovechar los colores que se usan en las barras de desplazamiento para que la interfaz de usuario siempre parezca coherente con esta parte del entorno de Visual Studio.
 
- ![Límite de barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")
+ ![Límite de barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")
 
  Use…
 si crea interfaz de usuario que quiere hacer coincidir con las barras de desplazamiento de Visual Studio.
 
- No use … para cualquier cosa que no desea que siempre coincida con la interfaz de usuario de la barra de desplazamiento.
+ No usar... para cualquier elemento que no desee que siempre coincida con la interfaz de usuario de la barra de desplazamiento.
 
  **Valor predeterminado**
 
@@ -2824,9 +2824,9 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  Nombre del token: Category.color
 
- ![Barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")
+ ![Barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")
 
- **Barra de desplazamiento**
+ **Desplazamiento**
 
  Barra de desplazamiento
 
@@ -2836,11 +2836,11 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  `Environment.ScrollBarThumbBackground`
 
- ![Flecha de barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 142_ScrollbarArrow")
+ ![Flecha de barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")
 
  **Flecha de desplazamiento**
 
- Fondo
+ Información previa
 
  `Environment.ScrollBarArrowBackground`
 
@@ -2850,7 +2850,7 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  `Environment.ScrollBarArrowGlyph`
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -2858,9 +2858,9 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  Nombre del token: Category.color
 
- ![Barra de desplazamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")
+ ![Barra de desplazamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")
 
- **Barra de desplazamiento**
+ **Desplazamiento**
 
  Barra de desplazamiento
 
@@ -2870,11 +2870,11 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  `Environment.ScrollBarThumbMouseOverBackground`
 
- ![Flecha de desplazamiento de la barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303 144_ScrollbarArrowHover")
+ ![Flecha de barra de desplazamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")
 
  **Flecha de desplazamiento**
 
- Fondo
+ Información previa
 
  `Environment.ScrollBarArrowMouseOverBackground`
 
@@ -2884,7 +2884,7 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  `Environment.ScrollBarArrowGlyphMouseOver`
 
- **Presionado**
+ **Pressed**
 
  Componente
 
@@ -2892,9 +2892,9 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  Nombre del token: Category.color
 
- ![Presiona la barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")
+ ![Barra de desplazamiento presionada](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")
 
- **Barra de desplazamiento**
+ **Desplazamiento**
 
  Barra de desplazamiento
 
@@ -2904,11 +2904,11 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  `Environment.ScrollBarThumbPressedBackground`
 
- ![Flecha presionada la barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")
+ ![Flecha de la barra de desplazamiento presionada](../../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")
 
  **Flecha de desplazamiento**
 
- Fondo
+ Información previa
 
  `Environment.ScrollBarArrowPressedBackground`
 
@@ -2918,11 +2918,11 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-### <a name="BKMK_TreeView"></a> Vista de árbol
+### <a name="tree-view"></a><a name="BKMK_TreeView"></a> Vista de árbol
 
 Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explorador de servidores y la Vista de clases, implementan un esquema organizativo jerárquico cuyos colores se controlan mediante los nombres de colores de la categoría TreeView. Todos los elementos de una vista de árbol tienen colores de fondo y de texto. Los elementos que tienen elementos secundarios anidados también tienen glifos que indican si el elemento está expandido o contraído.
 
-![Límite de la vista de árbol](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+![Límite de vista de árbol](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
 
 Use…
 en cualquier lugar en el que es necesario implementar una vista organizativa jerárquica.
@@ -2940,9 +2940,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Vista de árbol](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")
+  ![Vista de árbol](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")
 
-  Fondo
+  Información previa
 
   `TreeView.Background`
 
@@ -2958,7 +2958,7 @@ No use…
 
   None
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -2966,9 +2966,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Mantener el mouse en la vista de árbol](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")
+  ![Vista de árbol al mantener el mouse](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")
 
-  Fondo
+  Información previa
 
   `TreeView.Background`
 
@@ -2984,7 +2984,7 @@ No use…
 
   None
 
-  **Arrastre sobre**
+  **Al arrastrar por encima**
 
   Componente
 
@@ -2992,9 +2992,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Árbol de la vista dragover](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")
+  ![Vista de árbol al arrastrar](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")
 
-  Fondo
+  Información previa
 
   `TreeView.DragOverItem`
 
@@ -3010,7 +3010,7 @@ No use…
 
   None
 
-  **seleccionado**
+  **Selected**
 
   Componente
 
@@ -3018,11 +3018,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Centrados la vista de árbol](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")
+  ![Vista de árbol enfocada](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")
 
-  **Centrado**
+  **Focused**
 
-  Fondo
+  Información previa
 
   `TreeView.SelectedItemActive`
 
@@ -3038,11 +3038,11 @@ No use…
 
   `TreeView.FocusVisualBorder`
 
-  ![Sin foco de la vista de árbol](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")
+  ![Vista de árbol no enfocada](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")
 
   **Sin foco**
 
-  Fondo
+  Información previa
 
   `TreeView.SelectedItemInactive`
 
@@ -3058,7 +3058,7 @@ No use…
 
   None
 
-  **Mantener el mouse seleccionado**
+  **Al mantener el puntero sobre la selección**
 
   Componente
 
@@ -3066,11 +3066,11 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Enfocada al mantener el mouse de vista de árbol](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")
+  ![Vista de árbol enfocada al mantener el mouse](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")
 
-  **Centrado**
+  **Focused**
 
-  Fondo
+  Información previa
 
   `TreeView.SelectedItemActive`
 
@@ -3086,11 +3086,11 @@ No use…
 
   Ninguno`TreeView.FocusVisualBorder`
 
-  ![Vista no enfocada al mantener el mouse de árbol](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")
+  ![Vista de árbol no enfocada al mantener el mouse](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")
 
   **Sin foco**
 
-  Fondo
+  Información previa
 
   `TreeView.SelectedItemInactive`
 
@@ -3107,7 +3107,7 @@ No use…
   None
 
 ### <a name="button-controls"></a>Controles de botón
- ![Límite de control de botón](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 155_ButtonControlRedline")
+ ![Límite de control de botón](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")
 
  Use…
 para los botones del cuadro de documento que quiere integrar con los temas de Visual Studio (claro, oscuro, azul o un tema de contraste alto del sistema).
@@ -3123,7 +3123,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
 
  Nombre del token: Category.color
 
- ![Botón](../../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")
+ ![Botón](../../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")
 
  Botón
 
@@ -3141,7 +3141,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
 
  Nombre del token: Category.color
 
- ![Botón deshabilitado](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")
+ ![Botón deshabilitado](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")
 
  Botón
 
@@ -3151,7 +3151,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
 
  `CommonControls.ButtonBorderDisabled`
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -3159,7 +3159,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
 
  Nombre del token: Category.color
 
- ![Botón de desplazamiento](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")
+ ![Botón al mantener el mouse](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")
 
  Botón
 
@@ -3169,7 +3169,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
 
  `CommonControls.ButtonBorderHover`
 
- **Presionado**
+ **Pressed**
 
  Componente
 
@@ -3177,7 +3177,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
 
  Nombre del token: Category.color
 
- ![Botón presionado](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")
+ ![Botón presionado](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")
 
  Botón
 
@@ -3187,7 +3187,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
 
  `CommonControls.ButtonBorderPressed`
 
- **Centrado**
+ **Focused**
 
  Componente
 
@@ -3195,7 +3195,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
 
  Nombre del token: Category.color
 
- ![Botón enfocado](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")
+ ![Botón enfocado](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")
 
  Botón
 
@@ -3206,7 +3206,7 @@ para los botones que se mostrarán con un fondo personalizado que no forma parte
  `CommonControls.ButtonBorderFocused`
 
 ### <a name="check-box-controls"></a>Controles de casilla
- ![Límite de casilla de verificación](../../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303 161_CheckboxRedline")
+ ![Límite de casilla de verificación](../../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303-161_CheckboxRedline")
 
  Use…
 para los controles de casilla incluidos en el cuadro de documento.
@@ -3222,9 +3222,9 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  Nombre del token: Category.color
 
- ![Casilla de verificación](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")
+ ![casilla](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")
 
- Fondo
+ Información previa
 
  `CommonControls.CheckBoxBackground`
 
@@ -3232,7 +3232,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  `CommonControls.CheckBoxBorder`
 
- Text
+ Texto
 
  `CommonControls.CheckBoxText`
 
@@ -3248,9 +3248,9 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  Nombre del token: Category.color
 
- ![Casilla de verificación deshabilitada](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")
+ ![Casilla de verificación deshabilitada](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")
 
- Fondo
+ Información previa
 
  `CommonControls.CheckBoxBackgroundDisabled`
 
@@ -3258,7 +3258,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  `CommonControls.CheckBoxBorderDisabled`
 
- Text
+ Texto
 
  `CommonControls.CheckBoxTextDisabled`
 
@@ -3266,7 +3266,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  `CommonControls.CheckBoxGlyphDisabled`
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -3274,9 +3274,9 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  Nombre del token: Category.color
 
- ![Casilla de verificación al mantener el mouse](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")
+ ![Casilla de verificación al mantener el mouse](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")
 
- Fondo
+ Información previa
 
  `CommonControls.CheckBoxBackgroundHover`
 
@@ -3284,7 +3284,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  `CommonControls.CheckBoxBorderHover`
 
- Text
+ Texto
 
  `CommonControls.CheckBoxTextHover`
 
@@ -3292,7 +3292,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  `CommonControls.CheckBoxGlyphHover`
 
- **Presionado**
+ **Pressed**
 
  Componente
 
@@ -3300,9 +3300,9 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  Nombre del token: Category.color
 
- ![Casilla de verificación presionada](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")
+ ![Casilla de verificación presionada](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")
 
- Fondo
+ Información previa
 
  `CommonControls.CheckBoxBackgroundPressed`
 
@@ -3310,7 +3310,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  `CommonControls.CheckBoxBorderPressed`
 
- Text
+ Texto
 
  `CommonControls.CheckBoxTextPressed`
 
@@ -3318,7 +3318,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  `CommonControls.CheckBoxGlyphPressed`
 
- **Centrado**
+ **Focused**
 
  Componente
 
@@ -3326,9 +3326,9 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  Nombre del token: Category.color
 
- ![Casilla de verificación centrado](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")
+ ![Casilla de verificación enfocada](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")
 
- Fondo
+ Información previa
 
  `CommonControls.CheckBoxBackgroundFocused`
 
@@ -3336,7 +3336,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
  `CommonControls.CheckBoxBorderFocused`
 
- Text
+ Texto
 
  `CommonControls.CheckBoxTextFocused`
 
@@ -3346,7 +3346,7 @@ para cualquier interfaz de usuario que no sea un control de casilla.
 
 ### <a name="drop-boxcombo-box-controls"></a>Controles de cuadro combinado o lista desplegable
 
-![Quitar&#45;abajo&#47;límite de cuadro combinado](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
+![Colocar&#45;abajo&#47;cuadro combinado de la roja](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
 
 Use…
 para las listas desplegables y cuadros combinado que forman parte del cuadro de documento.
@@ -3364,9 +3364,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;abajo&#47;cuadro combinado](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")
+  ![Quitar&#45;&#47;cuadro combinado](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")
 
-  Fondo
+  Información previa
 
   `CommonControls.ComboBoxBackground`
 
@@ -3374,7 +3374,7 @@ No use…
 
   `CommonControls.ComboBoxBorder`
 
-  Text
+  Texto
 
   `CommonControls.ComboBoxText`
 
@@ -3398,9 +3398,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;abajo&#47;deshabilitado del cuadro combinado](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")
+  ![Quitar&#45;inferior&#47;cuadro combinado deshabilitado](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")
 
-  Fondo
+  Información previa
 
   `CommonControls.ComboBoxBackgroundDisabled`
 
@@ -3408,7 +3408,7 @@ No use…
 
   `CommonControls.ComboBoxBorderDisabled`
 
-  Text
+  Texto
 
   `CommonControls.ComboBoxTextDisabled`
 
@@ -3424,7 +3424,7 @@ No use…
 
   `CommonControls.ComboBoxGlyphBackgroundDisabled`
 
-  **Al mantener el mouse**
+  **Al mantener el puntero**
 
   Componente
 
@@ -3432,9 +3432,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;abajo&#47;cuadro combinado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")
+  ![Desplegable&#45;&#47;cuadro combinado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")
 
-  Fondo
+  Información previa
 
   `CommonControls.ComboBoxBackgroundHover`
 
@@ -3442,7 +3442,7 @@ No use…
 
   `CommonControls.ComboBoxBorderHover`
 
-  Text
+  Texto
 
   `CommonControls.ComboBoxTextHover`
 
@@ -3458,7 +3458,7 @@ No use…
 
   `CommonControls.ComboBoxGlyphBackgroundHover`
 
-  **Presionado**
+  **Pressed**
 
   Componente
 
@@ -3466,9 +3466,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;abajo&#47;presionada del cuadro combinado](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")
+  ![Desplegable&#45;&#47;cuadro combinado presionado](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")
 
-  Fondo
+  Información previa
 
   `CommonControls.ComboBoxBackgroundPressed`
 
@@ -3476,7 +3476,7 @@ No use…
 
   `CommonControls.ComboBoxBorderPressed`
 
-  Text
+  Texto
 
   `CommonControls.ComboBoxTextPressed`
 
@@ -3492,7 +3492,7 @@ No use…
 
   `CommonControls.ComboBoxGlyphBackgroundPressed`
 
-  **Centrado**
+  **Focused**
 
   Componente
 
@@ -3500,9 +3500,9 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;abajo&#47;cuadro combinado enfocado](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")
+  ![Descartar&#45;&#47;cuadro combinado enfocado](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")
 
-  Fondo
+  Información previa
 
   `CommonControls.ComboBoxBackgroundFocused`
 
@@ -3510,7 +3510,7 @@ No use…
 
   `CommonControls.ComboBoxBorderFocused`
 
-  Text
+  Texto
 
   `CommonControls.ComboBoxTextFocused`
 
@@ -3534,17 +3534,17 @@ No use…
 
   Nombre del token: Category.color
 
-  ![Quitar&#45;abajo&#47;entrada de texto de cuadro combinado](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")
+  ![Colocar&#45;abajo&#47;entrada de texto de cuadro combinado](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")
 
   Resaltar
 
   `CommonControls.ComboBoxTextInputSelection`
 
-  **Presionado: vista de elemento de lista**
+  **Presionado: vista de elementos de lista**
 
-  ![Quitar&#45;abajo&#47;vista de lista del cuadro combinado](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")
+  ![Quitar&#45;abajo&#47;vista de lista de cuadro combinado](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")
 
-  Fondo
+  Información previa
 
   `CommonControls.ComboBoxListBackground`
 
@@ -3581,7 +3581,7 @@ No use…
 ### <a name="tabular-data-grid-controls"></a>Controles de datos tabulares (cuadrícula)
  Los controles de datos tabulares, también conocidos como controles de cuadrícula, son controles comunes de Visual Studio que se pueden usar para presentar grandes cantidades de datos en varias columnas. Los controles estándar de datos tabulares están en varias ubicaciones de Visual Studio: la ventana de herramientas Lista de errores, los informes de IntelliTrace y la vista de montón de memoria, entre otros. Use siempre los controles de datos tabulares estándar que se proporcionan. En raras ocasiones, podría no tener acceso a los controles estándar de datos tabulares. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros controles de datos tabulares de Visual Studio.
 
- ![Datos tabulares &#40;control de cuadrícula&#41; límite](../../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303 197_TabularDataGridControlRedline")
+ ![Control de cuadrícula de &#40;de datos tabulares&#41; línea roja](../../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")
 
  Use…
 para controles tabulares o de cuadrícula.
@@ -3592,7 +3592,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 #### <a name="column-headers"></a>Encabezados de columna
  Los encabezados de columna constan de un fondo, un borde, el texto del título y un glifo opcional que suele usarse cuando se ordena una cuadrícula por esa columna.
 
- Estado
+ State
 
  Elemento
 
@@ -3600,7 +3600,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 
  Valor predeterminado
 
- Fondo
+ Información previa
 
  `Header.Default`
 
@@ -3618,7 +3618,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 
  Al mantener el puntero
 
- Fondo
+ Información previa
 
  `Header.MouseOver`
 
@@ -3636,7 +3636,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 
  Presionado
 
- Fondo
+ Información previa
 
  `CommonControls.CheckBoxBackgroundPressed`
 
@@ -3655,7 +3655,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 #### <a name="list-view-items"></a>Elementos de vista lista
  Los elementos de vista de lista constan de un fondo y el contenido. El contenido puede ser texto, un icono o ambos.
 
- Estado
+ State
 
  Elemento
 
@@ -3663,7 +3663,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 
  Valor predeterminado
 
- Fondo
+ Información previa
 
  Transparente
 
@@ -3677,7 +3677,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 
  Seleccionado (activo)
 
- Fondo
+ Información previa
 
  `TreeView.SelectedItemActive`
 
@@ -3691,7 +3691,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 
  Seleccionado (inactivo)
 
- Fondo
+ Información previa
 
  `TreeView.SelectedItemInactive`
 
@@ -3707,7 +3707,7 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
 
 El Diseñador de manifiestos se creó para que resulte más fácil editar el archivo de manifiesto en los proyectos de Windows 8 y Windows Phone 8. Aunque no hay ningún marco compartido disponible para su consumo, es conveniente que haga coincidir el diseño y los colores de las pestañas de navegación u orientación con la estructura general. Para obtener más información sobre el diseño, vea [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-![Límite de diseñador de manifiestos](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+![Límite de diseñador de manifiestos](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")
 
 Use…
 - para los diseñadores que son similares al Diseñador de manifiestos.
@@ -3719,7 +3719,7 @@ No use…
 
 - para cualquier interfaz de usuario que no tenga la misma estructura que el Diseñador de manifiestos.
 
-  Estado
+  State
 
   Componente
 
@@ -3731,7 +3731,7 @@ No use…
 
   Pestaña
 
-  Fondo
+  Información previa
 
   `ManifestDesigner.TabActive`
 
@@ -3741,13 +3741,13 @@ No use…
 
   Panel de descripción
 
-  Fondo
+  Información previa
 
   `ManifestDesigner.DescriptionPane`
 
   Página de contenido
 
-  Fondo
+  Información previa
 
   `ManifestDesigner.Background`
 
@@ -3759,24 +3759,24 @@ No use…
 
   Sin seleccionar
 
-  Tab
+  Pestaña
 
-  Fondo
+  Información previa
 
   `ManifestDesigner.Tab.Inactive`
 
   Al mantener el puntero
 
-  Tab
+  Pestaña
 
-  Fondo
+  Información previa
 
   `ManifestDesigner.Tab.Mouseover`
 
 ## <a name="tagging"></a>Etiquetado
  Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras clave de búsqueda con fines de seguimiento. Por ejemplo, los desarrolladores y los administradores de proyectos pueden usar Team Foundation Server (TFS) para etiquetar elementos de trabajo. Las tablas siguientes proporcionan nombres de colores para la etiqueta en sí y el glifo del "icono de cerrar" que aparecen en los estados Al desplazar el puntero y Seleccionado.
 
- ![Límite de etiquetado](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 176_TaggingRedline")
+ ![Límite de etiquetado](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")
 
  Use…
 para la interfaz de usuario que admite el etiquetado.
@@ -3795,7 +3795,7 @@ para cualquier otro tipo de interfaz de usuario.
 
  **Valor predeterminado**
 
- Fondo
+ Información previa
 
  `Tag.Background`
 
@@ -3803,11 +3803,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  `Tag.Background`
 
- ![Al mantener el mouse de etiqueta](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")
+ ![Etiqueta al mantener el mouse](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
- Fondo
+ Información previa
 
  `Tag.HoverBackground`
 
@@ -3815,11 +3815,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  `Tag.HoverBackgroundText`
 
- ![Etiqueta presionada](../../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")
+ ![Etiqueta presionada](../../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")
 
- **Presionado**
+ **Pressed**
 
- Fondo
+ Información previa
 
  `Tag.PressedBackground`
 
@@ -3827,11 +3827,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  `Tag.PressedBackgroundText`
 
- ![Etiqueta seleccionada](../../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303 180_TagSelected")
+ ![Etiqueta seleccionada](../../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")
 
- **seleccionado**
+ **Selected**
 
- Fondo
+ Información previa
 
  `Tag.SelectedBackground`
 
@@ -3848,11 +3848,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  Nombre del token: Category.color
 
- ![Etiqueta &#40;glifo&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")
+ ![&#40;de glifo&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")
 
  **Predeterminado (valor predeterminado de etiqueta)**
 
- Fondo
+ Información previa
 
  N/D
 
@@ -3860,7 +3860,7 @@ para cualquier otro tipo de interfaz de usuario.
 
  `Tag.TagHoverGlyph`
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -3868,11 +3868,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  Nombre del token: Category.color
 
- ![Etiqueta &#40;glifo&#41; al mantener el mouse](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")
+ ![&#40;de glifo&#41; al mantener el mouse](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")
 
- **Al mantener el mouse (valor predeterminado de etiqueta)**
+ **Al mantener el puntero (valor predeterminado de etiqueta)**
 
- Fondo
+ Información previa
 
  `Tag.TagHoverGlyphHoverBackground`
 
@@ -3884,7 +3884,7 @@ para cualquier otro tipo de interfaz de usuario.
 
  `Tag.TagHoverGlyphHoverBorder`
 
- **Presionado**
+ **Pressed**
 
  Componente
 
@@ -3892,11 +3892,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  Nombre del token: Category.color
 
- ![Etiqueta &#40;glifo&#41; presiona](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")
+ ![&#41; presionado &#40;de glifo de etiqueta](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")
 
  **Presionado (valor predeterminado de etiqueta)**
 
- Fondo
+ Información previa
 
  `Tag.TagHoverGlyphPressedBackground`
 
@@ -3908,7 +3908,7 @@ para cualquier otro tipo de interfaz de usuario.
 
  `Tag.TagHoverGlyphPressedBorder`
 
- **Etiqueta seleccionada o glifo predeterminado**
+ **Etiqueta seleccionada o valor predeterminado de glifo**
 
  Componente
 
@@ -3916,11 +3916,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  Nombre del token: Category.color
 
- ![Etiqueta seleccionada](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")
+ ![Etiqueta seleccionada](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")
 
  **Predeterminado (etiqueta seleccionada)**
 
- Fondo
+ Información previa
 
  N/D
 
@@ -3928,7 +3928,7 @@ para cualquier otro tipo de interfaz de usuario.
 
  `Tag.TagSelectedGlyph`
 
- **Etiqueta seleccionada o glifo al mantener el mouse**
+ **Etiqueta seleccionada o al mantener el puntero sobre el glifo**
 
  Componente
 
@@ -3936,11 +3936,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  Nombre del token: Category.color
 
- ![Etiqueta seleccionada al mantener el mouse](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")
+ ![Etiqueta seleccionada al mantener el mouse](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")
 
- **Al mantener el mouse (etiqueta seleccionada)**
+ **Al mantener el puntero (etiqueta seleccionada)**
 
- Fondo
+ Información previa
 
  `Tag.TagSelectedGlyphHoverBackground`
 
@@ -3960,11 +3960,11 @@ para cualquier otro tipo de interfaz de usuario.
 
  Nombre del token: Category.color
 
- ![Etiqueta seleccionada presionada](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")
+ ![Etiqueta seleccionada presionada](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")
 
  **Presionado (etiqueta seleccionada)**
 
- Fondo
+ Información previa
 
  `Tag.TagSelectedGlyphPressedBackground`
 
@@ -3978,11 +3978,11 @@ para cualquier otro tipo de interfaz de usuario.
 
 ## <a name="shell"></a>Shell
 
-### <a name="background"></a>Fondo
+### <a name="background"></a>Información previa
 
 El fondo del entorno consta de dos niveles. El nivel inferior es un color sólido que cubre todo el IDE. El nivel superior se encuentra debajo del área de comandos y entre los canales de ocultación automática de la ventana de herramientas en los extremos izquierdo y derecho del IDE. A partir de Visual Studio 2013, los niveles de fondo superior e inferior se establecen en el mismo color en los temas claro y oscuro.
 
-![Límite de fondo del shell](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+![Límite de fondo del shell](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303-187_ShellBackgroundRedline")
 
 Use…
 para los lugares que quiere hacer coincidir con el fondo del entorno de Visual Studio.
@@ -4000,7 +4000,7 @@ No use…
 
   Nivel inferior
 
-  Fondo
+  Información previa
 
   `Environment.EnvironmentBackground`
 
@@ -4012,9 +4012,9 @@ No use…
 
   Nivel superior
 
-  Fondo
+  Información previa
 
-  *Delimitadores de degradado establecido en el mismo valor de color en los temas de Visual Studio 2013 Light y oscuro.*
+  *Los delimitadores de degradado se establecen en el mismo valor de color en los temas claro y oscuro de Visual Studio 2013.*
 
   `Environment.EnvironmentBackgroundGradientBegin`
 
@@ -4028,12 +4028,12 @@ No use…
 
 Para los fondos del área de comandos se usan dos conjuntos de nombres de token: un conjunto para la ubicación donde se coloca la barra de menús y uno para la ubicación donde se colocan las barras de comandos. Un grupo individual de la barra de comandos tiene sus propios valores de color de fondo, que se describen con más detalle en la sección "Barra de comandos". El texto de la barra de menús y la barra de comandos se describe en las secciones de barra de menús y barra de comandos, respectivamente.
 
-![Límite de shell de comandos](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+![Límite de shell de comandos](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303-188_CommandShelfRedline")
 
 Use…
 - para las áreas donde se colocan menús o barras de herramientas.
 
-- con el fondo correcto /? primer plano.
+- con la combinación de nombre de token en segundo plano/? primer plano correcta.
 
 No use…
 para áreas que no sean similares a un área de comandos.
@@ -4046,9 +4046,9 @@ para áreas que no sean similares a un área de comandos.
 
   Barra de menús
 
-  Fondo
+  Información previa
 
-  *Delimitadores de degradado establecido en el mismo valor de color en los temas de Visual Studio 2013 Light y oscuro.*
+  *Los delimitadores de degradado se establecen en el mismo valor de color en los temas claro y oscuro de Visual Studio 2013.*
 
   `Environment.CommandShelfHighlightGradientBegin`
 
@@ -4058,9 +4058,9 @@ para áreas que no sean similares a un área de comandos.
 
   Barra de comandos
 
-  Fondo
+  Información previa
 
-  *Delimitadores de degradado establecido en el mismo valor de color en los temas de Visual Studio 2013 Light y oscuro.*
+  *Los delimitadores de degradado se establecen en el mismo valor de color en los temas claro y oscuro de Visual Studio 2013.*
 
   `Environment.CommandShelfBackgroundGradientBegin`
 
@@ -4071,7 +4071,7 @@ para áreas que no sean similares a un área de comandos.
 ## <a name="toolbox"></a>Cuadro de herramientas
  El cuadro de herramientas es una de las ventanas de herramientas comunes que se usa con más frecuencia en Visual Studio. Es esencialmente un control de árbol con un tema y un estilo especial aplicado.
 
- ![Cuadro de herramientas de línea roja](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303 189_ToolboxRedline")
+ ![Límite de cuadro de herramientas](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303-189_ToolboxRedline")
 
  Use…
 al diseñar una ventana de herramientas que desea que siempre sea coherente con el cuadro de herramientas del shell.
@@ -4087,15 +4087,15 @@ para cualquier elemento que no sea similar a la interfaz de usuario del cuadro d
 
  Nombre del token: Category.color
 
- ![Nodo primario de cuadro de herramientas](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")
+ ![Nodo primario de cuadro de herramientas](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")
 
  **Nodo primario**
 
- ![Nodo secundario de cuadro de herramientas](../../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")
+ ![Nodo secundario de cuadro de herramientas](../../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")
 
  **Nodo secundario**
 
- Fondo
+ Información previa
 
  `Environment.ToolboxContent`
 
@@ -4117,7 +4117,7 @@ para cualquier elemento que no sea similar a la interfaz de usuario del cuadro d
 
  `Environment.ToolboxContent`
 
- **Al mantener el mouse**
+ **Al mantener el puntero**
 
  Componente
 
@@ -4125,11 +4125,11 @@ para cualquier elemento que no sea similar a la interfaz de usuario del cuadro d
 
  Nombre del token: Category.color
 
- ![Nodo secundario de cuadro de herramientas al mantener el mouse](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")
+ ![Nodo secundario de cuadro de herramientas al mantener el mouse](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")
 
- **Mantener el mouse del cuadro de herramientas en el nodo secundario**
+ **Al mantener el puntero sobre el cuadro de herramientas en el nodo secundario**
 
- Fondo
+ Información previa
 
  `Environment.ToolboxContentMouseOver`
 
@@ -4145,7 +4145,7 @@ para cualquier elemento que no sea similar a la interfaz de usuario del cuadro d
 
  Solo elementos individuales
 
- **seleccionado**
+ **Selected**
 
  Componente
 
@@ -4153,15 +4153,15 @@ para cualquier elemento que no sea similar a la interfaz de usuario del cuadro d
 
  Nombre del token: Category.color
 
- ![Nodo primario de cuadro de herramientas enfocado](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")
+ ![Nodo primario de cuadro de herramientas enfocado](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")
 
  **Nodo primario con foco**
 
- ![Nodo secundario de cuadro de herramientas enfocado](../../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")
+ ![Nodo secundario de cuadro de herramientas enfocado](../../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")
 
  **Nodo secundario con foco**
 
- Fondo
+ Información previa
 
  `TreeView.SelectedItemActive`
 
@@ -4185,15 +4185,15 @@ para cualquier elemento que no sea similar a la interfaz de usuario del cuadro d
 
  De categoría [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 
- ![Nodo primario de cuadro de herramientas no enfocado](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")
+ ![Nodo primario de cuadro de herramientas no enfocado](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")
 
  **Nodo primario sin foco**
 
- ![Nodo secundario de cuadro de herramientas no enfocado](../../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")
+ ![Nodo secundario de cuadro de herramientas no enfocado](../../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")
 
  **Nodo secundario sin foco**
 
- Fondo
+ Información previa
 
  `TreeView.SelectedItemInactive`
 

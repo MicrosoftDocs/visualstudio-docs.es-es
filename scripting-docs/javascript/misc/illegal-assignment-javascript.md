@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9dc3436412fc75fc2879ad855a369f8207e0ae49
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816961"
 ---
 # <a name="illegal-assignment-javascript"></a>Asignación no válida (JavaScript)
@@ -28,5 +28,5 @@ Ha intentado asignar un valor a un identificador de solo lectura. No se puede as
   
 - No asigne valores a los identificadores de solo lectura.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Operador de asignación (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

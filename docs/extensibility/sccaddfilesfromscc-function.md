@@ -1,5 +1,5 @@
 ---
-title: Función SccAddFilesFromSCC ? Microsoft Docs
+title: Función SccAddFilesFromSCC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701285"
 ---
-# <a name="sccaddfilesfromscc-function"></a>Función SccAddFilesFromSCC
-Esta función agrega una lista de archivos del control de código fuente al proyecto abierto actualmente.
+# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC función)
+Esta función agrega una lista de archivos del control de código fuente al proyecto actualmente abierto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,39 +41,39 @@ SCCRTN SccAddFilesFromSCC(
 ### <a name="parameters"></a>Parámetros
  pContext
 
-[en] El puntero de contexto del complemento de control de código fuente.
+de Puntero de contexto del complemento de control de código fuente.
 
  hWnd
 
-[en] Identificador de la ventana IDE que el complemento de control de código fuente puede usar como elemento primario para los cuadros de diálogo que proporciona.
+de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
 
  lpUser
 
-[adentro, fuera] El nombre de usuario (hasta SCC_USER_SIZE, incluido el terminador nulo).
+[in, out] El nombre de usuario (hasta SCC_USER_SIZE, incluido el terminador nulo).
 
  lpAuxProjPath
 
-[adentro, fuera] Cadena auxiliar que identifica el `SCC_PRJPATH_`proyecto (hasta SIZE, incluido el terminador nulo).
+[in, out] Cadena auxiliar que identifica el proyecto (hasta el `SCC_PRJPATH_` tamaño, incluido el terminador nulo).
 
- cArchivos
+ cFiles
 
-[en] Número de archivos `lpFilePaths`dados por .
+de Número de archivos especificados por `lpFilePaths` .
 
  lpFilePaths
 
-[adentro, fuera] Matriz de nombres de archivo para agregar al proyecto actual.
+[in, out] Matriz de nombres de archivo que se va a agregar al proyecto actual.
 
  lpDestination
 
-[en] La ruta de destino donde se van a escribir los archivos.
+de Ruta de acceso de destino donde se van a escribir los archivos.
 
  lpComment
 
-[en] El comentario que se aplicará a cada uno de los archivos que se van a agregar.
+de Comentario que se va a aplicar a cada uno de los archivos que se van a agregar.
 
  pbResults
 
-[adentro, fuera] Matriz de indicadores que se establecen para indicar el éxito (no cero o TRUE) o `cFiles` error (cero o FALSE) para cada archivo (el tamaño de la matriz debe ser al menos largo).
+[in, out] Matriz de marcas que se establecen para indicar que se ha realizado correctamente (distinto de cero o TRUE) o error (cero o FALSE) para cada archivo (el tamaño de la matriz debe ser al menos `cFiles` largo).
 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
@@ -81,10 +81,10 @@ SCCRTN SccAddFilesFromSCC(
 |Value|Descripción|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|El proyecto no está abierto.|
-|SCC_E_OPNOTPERFORMED|La conexión no es al mismo proyecto especificado por`lpAuxProjPath.`|
-|SCC_E_NOTAUTHORIZED|El usuario no está autorizado a actualizar la base de datos.|
+|SCC_E_OPNOTPERFORMED|La conexión no está en el mismo proyecto que especifica `lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|El usuario no está autorizado para actualizar la base de datos.|
 |SCC_E_NONSPECIFICERROR|Error desconocido.|
 |SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 
 ## <a name="see-also"></a>Vea también
-- [Funciones de API de plug-in de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+- [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

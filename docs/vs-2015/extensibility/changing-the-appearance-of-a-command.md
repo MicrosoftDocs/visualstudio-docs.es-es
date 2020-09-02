@@ -13,30 +13,30 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184507"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Cambio de la apariencia de un comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. Por ejemplo, es posible que desee un comando que parecen diferentes cuando no está disponible. Puede hacer que los comandos disponibles o no está disponible, ocultar o mostrar, o comprobar o anule su selección en el menú.  
+Puede enviar comentarios al usuario mediante el cambio de la apariencia de un comando. Por ejemplo, puede que desee que un comando tenga un aspecto diferente cuando no esté disponible. Puede hacer que los comandos estén disponibles o no, ocultarlos o mostrarlos, o bien activarlos o desactivarlos en el menú.  
   
  Para cambiar la apariencia de un comando, realice una de estas acciones:  
   
-- Especifica las marcas apropiadas en la definición de comando en el archivo de la tabla de comandos.  
+- Especifique las marcas adecuadas en la definición de comando en el archivo de tabla de comandos.  
   
-- Use el <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
+- Use el <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> servicio.  
   
-- Implemente el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz y modificar los objetos de comando sin procesar.  
+- Implemente la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz y modifique los objetos de comando sin formato.  
   
-  Los pasos siguientes muestran cómo buscar y actualizar la apariencia de un comando mediante Managed Package Framework (MPF).  
+  En los pasos siguientes se muestra cómo buscar y actualizar el aspecto de un comando mediante Managed Package Framework (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Para cambiar la apariencia de un comando de menú  
   
-1. Siga las instrucciones de [modificación del texto de un comando de menú](../extensibility/changing-the-text-of-a-menu-command.md) para crear un elemento de menú denominado `New Text`.  
+1. Siga las instrucciones que aparecen en el artículo sobre cómo [cambiar el texto de un comando de menú](../extensibility/changing-the-text-of-a-menu-command.md) para crear un elemento de menú denominado `New Text` .  
   
 2. En el archivo ChangeMenuText.cs, agregue la siguiente instrucción using:  
   
@@ -50,7 +50,7 @@ Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. P
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4. En el archivo ChangeMenuText.cs, reemplace el código en el método ShowMessageBox con lo siguiente:  
+4. En el archivo ChangeMenuText.cs, reemplace el código del método método ShowMessageBox por lo siguiente:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -61,7 +61,7 @@ Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. P
     }  
     ```  
   
-5. Obtener el comando que desea actualizar desde la <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> de objetos y, a continuación, establecer las propiedades adecuadas en el objeto de comando. Por ejemplo, el siguiente método hace que el comando especificado desde un VSPackage establecer disponible o no está disponible. El código siguiente hace que el elemento de menú denominado `New Text` no está disponible después de que se ha hecho clic.  
+5. Obtenga el comando que desea actualizar del <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> objeto y, a continuación, establezca las propiedades adecuadas en el objeto de comando. Por ejemplo, el siguiente método hace que el comando especificado de un conjunto de comandos VSPackage esté disponible o no disponible. El código siguiente hace que el elemento de menú denominado `New Text` no esté disponible después de hacer clic en él.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -82,12 +82,12 @@ Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. P
   
 6. Compile la solución y comience la depuración. Debería aparecer la instancia experimental de Visual Studio.  
   
-7. En el **herramientas** menú, haga clic en el **ChangeMenuText invocar** comando. En este momento es el nombre del comando **ChangeMenuText invocar**, por lo que el controlador de comandos no llama a ChangeMyCommand().  
+7. En el menú **herramientas** , haga clic en el comando **invocar ChangeMenuText** . En este punto, el nombre de comando es **Invoke ChangeMenuText**, por lo que el controlador de comandos no llama a ChangeMyCommand ().  
   
-8. En el **herramientas** ahora debería ver el menú **nuevo texto**. Haga clic en **nuevo texto**. El comando ahora debería aparecer atenuado.  
+8. En el menú **herramientas** , ahora debería ver el **nuevo texto**. Haga clic en **nuevo texto**. El comando debería aparecer ahora atenuado.  
   
-## <a name="see-also"></a>Vea también  
- [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)   
+## <a name="see-also"></a>Consulte también  
+ [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)   
+ [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md)   
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

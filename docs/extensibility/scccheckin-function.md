@@ -1,5 +1,5 @@
 ---
-title: Función SccCheckin (SccCheckin) Microsoft Docs
+title: Función SccCheckin | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701184"
 ---
-# <a name="scccheckin-function"></a>Función SccCheckin
-Esta función comprueba los archivos previamente desprotegidos en el sistema de control de código fuente, almacenando los cambios y creando una nueva versión. Esta función se llama con un recuento y una matriz de nombres de los archivos que se van a proteger.
+# <a name="scccheckin-function"></a>SccCheckin función)
+Esta función protege los archivos desprotegidos previamente en el sistema de control de código fuente, almacenando los cambios y creando una nueva versión. Se llama a esta función con un recuento y una matriz de nombres de los archivos que se van a proteger.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,54 +39,54 @@ SCCRTN SccCheckin (
 ### <a name="parameters"></a>Parámetros
  pvContext
 
-[en] La estructura de contexto del complemento de control de código fuente.
+de Estructura de contexto del complemento de control de código fuente.
 
  hWnd
 
-[en] Identificador de la ventana IDE que el complemento SCC puede usar como elemento primario para los cuadros de diálogo que proporciona.
+de Identificador de la ventana del IDE que el complemento SCC puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
 
- nArchivos
+ N archivos
 
-[en] Número de archivos seleccionados para registrarse.
+de Número de archivos seleccionados que se van a proteger.
 
  lpFileNames
 
-[en] Matriz de nombres de ruta local completos de los archivos que se van a proteger.
+de Matriz de nombres de ruta de acceso local completa de los archivos que se van a proteger.
 
  lpComment
 
-[en] Comentario que se aplicará a cada uno de los archivos seleccionados que se van a registrar. Este parámetro `NULL` es si el complemento de control de código fuente debe solicitar un comentario.
+de Comentario que se va a aplicar a cada uno de los archivos seleccionados que se van a proteger. Este parámetro es `NULL` si el complemento de control de código fuente debe solicitar un comentario.
 
- fOptions
+ Opciones
 
-[en] Marcas de comando, `SCC_KEEP_CHECKEDOUT`0 o .
+de Marcas de comandos, ya sea 0 o `SCC_KEEP_CHECKEDOUT` .
 
  pvOptions
 
-[en] Opciones específicas del complemento SCC.
+de Opciones específicas del complemento SCC.
 
 ## <a name="return-value"></a>Valor devuelto
  Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
 |Value|Descripción|
 |-----------|-----------------|
-|SCC_OK|El archivo se ha registrado correctamente.|
-|SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|
-|SCC_E_ACCESSFAILURE|Se ha producido un problema al acceder al sistema de control de código fuente, probablemente debido a problemas de red o contención. Se recomienda un reintento.|
-|SCC_E_NONSPECIFICERROR|Fallo inespecífico. El archivo no se registró.|
-|SCC_E_NOTCHECKEDOUT|El usuario no ha traído el archivo, por lo que no puede registrarlo.|
-|SCC_E_CHECKINCONFLICT|No se pudo realizar el registro porque:<br /><br /> - Otro usuario se `bAutoReconcile` ha registrado por delante y era falso.<br /><br /> o bien<br /><br /> - La fusión automática no se puede hacer (por ejemplo, cuando los archivos son binarios).|
-|SCC_E_VERIFYMERGE|El archivo se ha fusionado automáticamente, pero no se ha registrado en pendiente de verificación del usuario.|
-|SCC_E_FIXMERGE|El archivo se ha fusionado automáticamente, pero no se ha registrado debido a un conflicto de combinación que debe resolverse manualmente.|
-|SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|
+|SCC_OK|El archivo se protegió correctamente.|
+|SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo el control de código fuente.|
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
+|SCC_E_NONSPECIFICERROR|Error no específico. No se protegió el archivo.|
+|SCC_E_NOTCHECKEDOUT|El usuario no ha desprotegido el archivo, por lo que no puede protegerlo.|
+|SCC_E_CHECKINCONFLICT|No se pudo realizar la protección porque:<br /><br /> -Otro usuario ha protegido de antemano y `bAutoReconcile` era false.<br /><br /> o bien<br /><br /> : No se puede realizar la combinación automática (por ejemplo, cuando los archivos son binarios).|
+|SCC_E_VERIFYMERGE|El archivo se combinó automáticamente, pero no se protegió en la comprobación de usuario pendiente.|
+|SCC_E_FIXMERGE|El archivo se ha fusionado mediante combinación automática, pero no se ha protegido debido a un conflicto de fusión mediante combinación que se debe resolver manualmente.|
+|SCC_E_NOTAUTHORIZED|El usuario no tiene permiso para realizar esta operación.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de la finalización.|
 |SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 |SCC_E_FILENOTEXIST|No se encontró el archivo local.|
 
 ## <a name="remarks"></a>Observaciones
- El comentario se aplica a todos los archivos que se están protegiendo. El argumento comment `null` puede ser una cadena, en cuyo caso el complemento de control de código fuente puede solicitar al usuario una cadena de comentario para cada archivo.
+ El comentario se aplica a todos los archivos que se protegen. El argumento comment puede ser una `null` cadena, en cuyo caso el complemento de control de código fuente puede solicitar al usuario una cadena de comentario para cada archivo.
 
- Al `fOptions` argumento se le puede `SCC_KEEP_CHECKEDOUT` dar un valor de la marca para indicar la intención del usuario de proteger el archivo y volver a desprotegerlo.
+ El `fOptions` argumento puede tener un valor de la `SCC_KEEP_CHECKEDOUT` marca para indicar la intención del usuario para comprobar el archivo y desprotegerlo de nuevo.
 
 ## <a name="see-also"></a>Vea también
-- [Funciones de API de plug-in de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+- [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

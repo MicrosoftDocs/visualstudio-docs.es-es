@@ -1,5 +1,5 @@
 ---
-title: '&lt;Paquete&gt; (elemento, arranque) | Microsoft Docs'
+title: '&lt;&gt;Elemento Package (arranque) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745760"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; (elemento, arranque)
-El `Package` es el elemento de nivel superior XML dentro de un archivo de paquete.
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;&gt;Elemento Package (arranque)
+El `Package` elemento es el elemento XML de nivel superior dentro de un archivo de paquete.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -141,16 +141,16 @@ El `Package` es el elemento de nivel superior XML dentro de un archivo de paquet
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos y atributos
- El `Package` elemento es necesario. Tiene los siguientes atributos.
+ El elemento `Package` es obligatorio. Tiene los siguientes atributos.
 
 | Atributo | Descripción |
 |--------------------| - |
-| `Culture` | Obligatorio. Define la referencia cultural para este paquete, que determina el idioma que se usará. Este atributo es una clave en el `Strings` elemento, que se enumera las cadenas específicas de referencias culturales para nombres de producto y los mensajes de error durante la instalación. |
-| `Name` | Obligatorio. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con el `Name` y `Culture` establecer propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`. |
-| `LicenseAgreement` | Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato ( *.txt*) o formato de texto enriquecido. ( *.rtf*) |
+| `Culture` | Necesario. Define la referencia cultural para este paquete, que determina el idioma que se va a utilizar. Este atributo es una clave del `Strings` elemento, que enumera las cadenas específicas de la referencia cultural para los nombres de producto y los mensajes de error durante la instalación. |
+| `Name` | Necesario. Nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con las `Name` `Culture` propiedades y establecidas para que coincidan con las `Name` `Culture` propiedades y de `Package` . |
+| `LicenseAgreement` | Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia para el usuario final (CLUF).  Este archivo puede ser texto sin formato (*. txt*) o formato de texto enriquecido. (*. rtf*) |
 
 ## <a name="example"></a>Ejemplo
- El ejemplo de código siguiente muestra un archivo de paquete completo para la redistribución de .NET Framework 2.0.
+ En el ejemplo de código siguiente se muestra un archivo de paquete completo para redistribuir el .NET Framework 2,0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -187,5 +187,5 @@ El `Package` es el elemento de nivel superior XML dentro de un archivo de paquet
 </Package>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
