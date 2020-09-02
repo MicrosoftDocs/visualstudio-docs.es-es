@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 18da0471b1ac62f0e61b303c60b46c15cdc2e428
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539014"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: No codificar las cadenas específicas de configuración regional
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |Identificador de comprobación|CA1302|
-|Categoría|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

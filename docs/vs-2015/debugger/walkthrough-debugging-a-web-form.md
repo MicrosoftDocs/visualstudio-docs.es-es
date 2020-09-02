@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depurar un formulario Web Forms | Documentos de Microsoft'
+title: 'Tutorial: depurar un formulario web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e46169728c10d696f8dd99eb6459b9fcf081cb45
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704932"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Tutorial: Depurar un formulario web
@@ -36,9 +36,9 @@ ms.locfileid: "65704932"
 Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], también conocidas como formularios Web Forms. También muestra cómo iniciar y detener la ejecución, establecer puntos de interrupción y examinar variables en la ventana **Inspección**.  
   
 > [!NOTE]
-> Para completar este tutorial, debe tener privilegios de administrador en el equipo servidor. De forma predeterminada, el proceso de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe o w3wp.exe, se ejecuta como un proceso de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Para depurar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], debe tener privilegios de administrador en el equipo en el que se ejecute [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Para obtener más información, consulte [requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md).  
+> Para completar este tutorial, debe tener privilegios de administrador en el equipo servidor. De forma predeterminada, el proceso de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe o w3wp.exe, se ejecuta como un proceso de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Para depurar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], debe tener privilegios de administrador en el equipo en el que se ejecute [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Para obtener más información, vea [Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md).  
   
- Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-create-the-web-form"></a>Para crear el formulario Web Forms  
   
@@ -50,13 +50,13 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 3. En el panel **Plantillas**, haga clic en **Sitio web ASP.NET**.  
   
-4. En el **ubicación** línea, haga clic en **HTTP** en la lista y, en el cuadro de texto, escriba **http://localhost/WebSite**.  
+4. En la línea **Ubicación**, haga clic en **HTTP** en la lista y, en el cuadro de texto, escriba **http://localhost/WebSite** .  
   
 5. En la lista **Lenguaje**, haga clic en **Visual C#** o en **Visual Basic**.  
   
 6. Haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea un nuevo proyecto y muestra el código fuente HTML predeterminado. También crea un nuevo directorio virtual denominado **Sitio web** bajo el **Sitio web predeterminado** de IIS.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea un proyecto y muestra el código fuente HTML predeterminado. También crea un nuevo directorio virtual denominado **Sitio web** bajo el **Sitio web predeterminado** de IIS.  
   
 7. Haga clic en la ficha **Diseño** en el margen inferior.  
   
@@ -70,7 +70,7 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 11. Haga doble clic en el control de botón que colocó.  
   
-     Esto le llevará a la página de códigos: Default.aspx.cs para C# o Default.aspx.vb para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. El cursor debe estar en la función `Button1_Click` .  
+     Esto le lleva a la página de códigos: Default.aspx.cs para C# o Default.aspx.vb para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. El cursor debe estar en la función `Button1_Click` .  
   
 12. Agregue a la función `Button1_Click` las siguientes líneas de código:  
   
@@ -146,7 +146,7 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 1. En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede adjuntar el depurador a un proceso en ejecución. Para lograr una depuración más efectiva, compile el archivo ejecutable como una versión de depuración con archivos de símbolos (PDB).  
   
-2. En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo para establecer de nuevo un punto de interrupción en la línea que ha agregado:   
+2. En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo para establecer de nuevo un punto de interrupción en la línea que ha agregado:  
   
     ```  
     ' Visual Basic  
@@ -160,7 +160,7 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
      El formulario Web Forms empieza a ejecutarse en Internet Explorer, pero el depurador no está asociado.  
   
-4. Establezca una asociación al proceso de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Para obtener más información, consulte [depurar aplicaciones Web implementadas](../debugger/debugging-deployed-web-applications.md).  
+4. Establezca una asociación al proceso de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Para obtener más información, vea [Depuración de aplicaciones web implementadas](../debugger/debugging-deployed-web-applications.md).  
   
 5. En Internet Explorer, haga clic en el botón del formulario.  
   
@@ -168,5 +168,5 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 6. Cuando finaliza la depuración, en el menú **Depurar**, haga clic en **Detener depuración**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)

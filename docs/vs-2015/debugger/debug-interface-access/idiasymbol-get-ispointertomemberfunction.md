@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 610b2d93814af81995787879008e52059bb3567a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151506"
 ---
-# <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
+# <a name="idiasymbolget_ispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Especifica si este símbolo es un puntero a una función miembro.  
@@ -32,10 +32,10 @@ HRESULT get_isPointerToMemberFunction(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si este símbolo es un puntero a una función miembro.  
+ enuncia Un puntero a un `BOOL` que especifica si este símbolo es un puntero a una función miembro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

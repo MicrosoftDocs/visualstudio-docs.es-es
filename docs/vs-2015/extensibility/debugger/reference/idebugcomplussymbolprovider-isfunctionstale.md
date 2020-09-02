@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionStale | Documentos de Microsoft
+title: 'IDebugComPlusSymbolProvider:: IsFunctionStale | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cbd4601acd7ec6323776a7ffd37933ff31d93574
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176735"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina si la función en la dirección de depuración especificado se considera obsoleta.  
+Determina si la función en la dirección de depuración especificada se considera obsoleta.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,13 +38,13 @@ int IsFunctionStale(
   
 #### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [in] La dirección de depuración que se representa mediante un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz. Esta dirección debe ser un METHOD_ADDRESS.  
+ de Dirección de depuración representada por una interfaz [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Esta dirección debe ser una METHOD_ADDRESS.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve si la función se considera obsoleta, `S_OK`. Devuelve si la función no está obsoleta, `S_FALSE`.  
+ Si la función se considera obsoleta, devuelve `S_OK` . Si la función no está obsoleta, devuelve `S_FALSE` .  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugSymbolProvider** que expone la interfaz [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::IsFunctionStale(  
@@ -90,5 +90,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

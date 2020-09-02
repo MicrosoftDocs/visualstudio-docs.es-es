@@ -1,5 +1,5 @@
 ---
-title: Ampliación de las opciones y configuración de usuario | Microsoft Docs
+title: Extender la configuración y las opciones de usuario | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05e82002a01e15b26e84e7805b0ee092868eef5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204441"
 ---
 # <a name="extending-user-settings-and-options"></a>Ampliación de configuración y opciones de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, hay dos formas principales para conservar las preferencias del usuario. El **herramientas / opciones** páginas permiten a los usuarios definir sus propios valores para muchos tipos diferentes de configuración general y específicos del idioma. Configuración de usuario permite a los usuarios especificar las propiedades generales de configuración de Visual Studio. Para obtener más información acerca de las páginas de opciones, consulte [opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md). Para obtener más información acerca de la configuración de usuario, consulte [soporte técnico para la configuración de usuario](../extensibility/internals/support-for-user-settings.md).  
+En Visual Studio hay dos maneras principales de mantener las preferencias del usuario. Las páginas **herramientas/opciones** permiten a los usuarios establecer sus propios valores para muchos tipos diferentes de opciones de configuración, tanto generales como específicas del lenguaje. La configuración de usuario permite a los usuarios especificar propiedades generales de configuración de Visual Studio. Para obtener más información acerca de las páginas de opciones, vea [Opciones y páginas](../extensibility/internals/options-and-options-pages.md)de opciones. Para obtener más información sobre la configuración de usuario, consulte compatibilidad con la [configuración de usuario](../extensibility/internals/support-for-user-settings.md).  
   
  [Creación de una página de opciones](../extensibility/creating-an-options-page.md)  
  Explica cómo crear una página de opciones.  
@@ -38,4 +38,4 @@ En Visual Studio, hay dos formas principales para conservar las preferencias del
  Explica cómo obtener los servicios disponibles desde el almacén de configuración.  
   
  [Escritura en el almacén de configuración de usuario](../extensibility/writing-to-the-user-settings-store.md)  
- Explica cómo se escriben en el almacén de configuración de usuario.
+ Explica cómo escribir en el almacén de configuración de usuario.

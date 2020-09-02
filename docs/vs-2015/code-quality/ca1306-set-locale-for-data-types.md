@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: edd1d6a7623f96f03403883ee2585d245414bb3b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539027"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Establecer configuración regional de tipos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |Identificador de comprobación|CA1306|
-|Categoría|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

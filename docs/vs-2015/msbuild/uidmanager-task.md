@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703693"
 ---
 # <a name="uidmanager-task"></a>UidManager (Tarea)
@@ -37,7 +37,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.UidManager> comprueba, actualiza o 
 |Parámetro|Descripción|  
 |---------------|-----------------|  
 |`IntermediateDirectory`|Parámetro **String** opcional.<br /><br /> Especifica el directorio que se utiliza para hacer una copia de seguridad de los archivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de origen que especifica el parámetro **MarkupFiles**.|  
-|`MarkupFiles`|Parámetro obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica los archivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de origen que se van a incluir para los procesos de comprobación, actualización o eliminación del UID.|  
+|`MarkupFiles`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica los archivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de origen que se van a incluir para los procesos de comprobación, actualización o eliminación del UID.|  
 |`Task`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la tarea de administración del UID que desea realizar. Las opciones válidas son **Activar**, **Actualizar** o **Quitar**.|  
   
 ## <a name="example"></a>Ejemplo  
@@ -57,7 +57,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.UidManager> comprueba, actualiza o 
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)   
  [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   

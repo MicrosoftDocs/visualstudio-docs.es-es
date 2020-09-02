@@ -1,5 +1,5 @@
 ---
-title: GetScheduledTasksForDebugger (método) | Microsoft Docs
+title: Método GetScheduledTasksForDebugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4ac6fa753be7672f1e698bda231bd11217c10d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152733"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger (Método)
@@ -26,7 +26,7 @@ Recupera una matriz de todas las tareas programadas.
   
  **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
+ Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,7 +38,7 @@ Recupera una matriz de todas las tareas programadas.
  Una matriz de todas las tareas programadas. Cada tarea se está ejecutando o ha terminado de ejecutarse.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método no es seguro para subprocesos y no deben usarse simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler> debe llamarse desde un depurador sólo cuando el depurador ha suspendido todos los demás subprocesos.  
+ Este método no es seguro para subprocesos y no debe usarse simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler> que se debe llamar desde un depurador solo cuando el depurador ha suspendido todos los demás subprocesos.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Clase TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

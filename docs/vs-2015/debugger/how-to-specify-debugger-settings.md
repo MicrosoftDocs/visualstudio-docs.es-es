@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especifique la configuración del depurador | Documentos de Microsoft
+title: Procedimiento Especificar la configuración del depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0d5818186fed4570d2b1fc7065d413e0a5a07d1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703616"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedimiento Especificación de la configuración del depurador
@@ -47,8 +47,8 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se pueden especificar diversas 
   
 4. Active o desactive las opciones que desee. Presione F1 para obtener ayuda sobre estas opciones.  
   
-## <a name="see-also"></a>Vea también  
- [General, Depuración, Opciones (Cuadro de diálogo)](../debugger/general-debugging-options-dialog-box.md)   
- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
- [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
+## <a name="see-also"></a>Consulte también  
+ [General, depuración, opciones (cuadro de diálogo)](../debugger/general-debugging-options-dialog-box.md)   
+ [Editar y continuar, depuración, opciones (cuadro de diálogo)](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md)   
  [Macros comunes para propiedades y comandos de compilación](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)

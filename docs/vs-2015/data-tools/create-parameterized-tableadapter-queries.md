@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 560587e70365a485c3391a0623b959f88d417698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671064"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Crear consultas parametrizadas de TableAdapter
@@ -34,7 +34,7 @@ Cree consultas de TableAdapter parametrizadas en el Diseñador de DataSet. Tambi
 > Al construir una consulta parametrizada, utilice la notación de parámetros que es específica de la base de datos con la que se va a codificar. Por ejemplo, los orígenes de datos de Access y Oledb usan el signo de interrogación “?” para denotar los parámetros, por lo que la cláusula WHERE tendría esta apariencia: `WHERE City = ?`.
 
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la ayuda, en función de la configuración activa o de la edición que esté usando. Para cambiar la configuración, vaya al menú **herramientas** y seleccione **importar y exportar configuraciones**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la ayuda, en función de la configuración activa o de la edición que esté usando. Para cambiar la configuración, vaya al menú **herramientas** y seleccione **importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="create-a-parameterized-tableadapter-query"></a>Crear una consulta parametrizada de TableAdapter
 
@@ -75,7 +75,7 @@ Cree consultas de TableAdapter parametrizadas en el Diseñador de DataSet. Tambi
 
     Se agregan al formulario un control para especificar los valores del parámetro y un botón **Cargar**, en un control <xref:System.Windows.Forms.ToolStrip>.
 
-   Los parámetros de TableAdapter pueden tener asignados valores NULL cuando se desea consultar los registros que no tienen ningún valor actual. Por ejemplo, considere la siguiente consulta que tiene un parámetro `ShippedDate` en su cláusula `WHERE`:
+   Los parámetros de TableAdapter pueden tener asignados valores NULL cuando se desea consultar los registros que no tienen ningún valor actual. Por ejemplo, considere la siguiente consulta que tiene un `ShippedDate` parámetro en su `WHERE` cláusula:
 
    ```sql
    SELECT CustomerID, OrderDate, ShippedDate
@@ -93,10 +93,10 @@ Si se tratara de una consulta en un TableAdapter, podría consultar todos los pe
 
 1. En el **Diseñador de DataSet**, seleccione la consulta TableAdapter que necesita aceptar valores de parámetro null.
 
-2. En la ventana **propiedades** , seleccione **parámetros**. A continuación, presione el botón de puntos suspensivos ( **...** ) para abrir el editor de la **colección de parámetros**.
+2. En la ventana **propiedades** , seleccione **parámetros**. A continuación, presione el botón de puntos suspensivos (**...**) para abrir el editor de la **colección de parámetros**.
 
-3. Seleccione el parámetro que permite valores NULL y establezca la propiedad **AllowDBNull** en `true`.
+3. Seleccione el parámetro que permite valores NULL y establezca la propiedad **AllowDBNull** en `true` .
 
 ## <a name="see-also"></a>Vea también
 
-- [Llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [Rellenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

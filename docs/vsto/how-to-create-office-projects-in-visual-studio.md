@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547568"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Cómo: crear proyectos de Office en Visual Studio

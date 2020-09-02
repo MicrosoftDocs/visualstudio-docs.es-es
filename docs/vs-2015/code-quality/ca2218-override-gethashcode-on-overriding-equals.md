@@ -16,27 +16,27 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538806"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Invalidar el método GetHashCode al invalidar el método Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |Identificador de comprobación|CA2218|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa
  Un tipo público invalida pero no <xref:System.Object.Equals%2A?displayProperty=fullName> invalida <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descripción de la regla
- <xref:System.Object.GetHashCode%2A>Devuelve un valor, basado en la instancia actual, que es adecuado para algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:
+ <xref:System.Object.GetHashCode%2A> Devuelve un valor, basado en la instancia actual, que es adecuado para algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ ms.locfileid: "85538806"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Tipos que implementan<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Tipos que implementan <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, proporcione una implementación de <xref:System.Object.GetHashCode%2A> . Para un par de objetos del mismo tipo, debe asegurarse de que la implementación devuelve el mismo valor si la implementación de <xref:System.Object.Equals%2A> devuelve `true` para el par.
@@ -101,7 +101,7 @@ ms.locfileid: "85538806"
 
  [CA2231: Sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

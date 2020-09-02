@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703734"
 ---
 # <a name="signfile-task"></a>SignFile (Tarea)
@@ -47,7 +47,7 @@ Firma un archivo determinado con el certificado especificado.
 |`TargetFrameworkVersion`|La versión de .NET Framework la que se utiliza para el destino.|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [Task Base (Clase)](../msbuild/task-base-class.md).  
+ Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [clase base de tarea](../msbuild/task-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se utiliza la tarea `SignFile` para firmar los archivos especificados en la colección de elementos `FilesToSign` con el certificado definido por la propiedad `Certificate`.  
@@ -70,7 +70,7 @@ Firma un archivo determinado con el certificado especificado.
 ```  
   
 > [!NOTE]
-> La huella digital del certificado es el hash SHA-1 del certificado. Para obtener más información, vea el artículo sobre cómo [obtener el hash SHA-1 de un certificado de entidad de certificación raíz de confianza](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
+> La huella digital del certificado es el hash SHA-1 del certificado. Para obtener más información, consulte [obtener el hash SHA-1 de un certificado de CA raíz de confianza](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se utiliza la tarea `Exec` para firmar los archivos especificados en la colección de elementos `FilesToSign` con el certificado definido por la propiedad `Certificate`. Puede utilizar esto para firmar archivos de Windows Installer durante el proceso de generación.  
@@ -93,6 +93,6 @@ Firma un archivo determinado con el certificado especificado.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

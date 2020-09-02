@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread | Microsoft Docs
+title: 'IDebugThread2:: GetLogicalThread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f430ea7ba69ca55bc76543d853396e22b193cf02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153059"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Motores de depuración no implementan este método.  
+Los motores de depuración no implementan este método.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,13 +42,13 @@ int GetLogicalThread( 
   
 #### <a name="parameters"></a>Parámetros  
  `pStackFrame`  
- [in] Un [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa el marco de pila.  
+ de Un objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa el marco de pila.  
   
  `ppLogicalThread`  
- [out] Devuelve un `IDebugLogicalThread2` interfaz que representa el subproceso lógico asociado. Una implementación del motor de depuración debe establecerlo en un valor null.  
+ enuncia Devuelve una `IDebugLogicalThread2` interfaz que representa el subproceso lógico asociado. Una implementación del motor de depuración debe establecerlo en un valor null.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Depurar las implementaciones de motor siempre devuelven `E_NOTIMPL`.  
+ Las implementaciones del motor de depuración siempre devuelven `E_NOTIMPL` .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 890d9c5b1673a9af4acabf8262a76e2840ede8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150886"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] El número de orígenes insertados en la secuencia de enumeración que se omitirán.  
+ de Número de orígenes insertados en la secuencia de enumeración que se va a omitir.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si hay insertados no hay más orígenes para omitir.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve si no hay `S_FALSE` más orígenes insertados para omitir.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

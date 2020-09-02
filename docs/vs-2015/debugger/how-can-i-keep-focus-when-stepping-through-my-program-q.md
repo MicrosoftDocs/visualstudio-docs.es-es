@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 416e17c95290643873f52f71ec892514d183b6d0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704559"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Cómo mantener el foco mientras se recorre el programa
@@ -38,7 +38,7 @@ Descripción
 ## <a name="solution"></a>Soluciones  
  Si dispone de un segundo equipo, utilice la función de depuración remota. Puede ejecutar el programa en el equipo remoto mientras ejecuta el depurador en el equipo host. Para obtener más información, vea [Cómo: seleccionar un equipo remoto](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-## <a name="see-also"></a>Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>Consulte también  
+ [Preguntas más frecuentes sobre depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
  [Asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)

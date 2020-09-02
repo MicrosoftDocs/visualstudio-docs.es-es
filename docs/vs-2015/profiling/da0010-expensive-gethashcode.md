@@ -15,26 +15,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af234cd130d06c2a76c5ddbc958a67eb064d9128
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547581"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode consume muchos recursos
+# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode que consume muchos recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [DA0010: GetHashCode percaro](/visualstudio/profiling/da0010-expensive-gethashcode).  
 
-|Elemento|Value|  
+|Elemento|Valor|  
 |-|-|  
 |Identificador de regla|DA0010|  
-|Category|Uso de .NET Framework|  
+|Categoría|Uso de .NET Framework|  
 |Métodos de generación de perfiles|Muestreo<br /><br /> Memoria de .NET|  
-|Message|Las funciones GetHashCode deben consumir pocos recursos y no asignar ninguna memoria. Reduzca la complejidad de la función de código hash si es posible.|  
+|Mensaje|Las funciones GetHashCode deben consumir pocos recursos y no asignar ninguna memoria. Reduzca la complejidad de la función de código hash si es posible.|  
 |Tipo de mensaje|Advertencia|  
   
-## <a name="cause"></a>Causa  
+## <a name="cause"></a>Motivo  
  Las llamadas al método GetHashCode del tipo constituyen una proporción considerable de los datos de generación de perfiles o el método asigna memoria.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

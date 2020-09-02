@@ -1,5 +1,5 @@
 ---
-title: Función SccGetVersion ? Microsoft Docs
+title: Función SccGetVersion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a563a7d1d65dc4c6564abd4e337242eea1aa9924
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700673"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion (Función)
-Esta función obtiene el número de versión de la API de complemento de Control de código fuente compatible con el complemento de control de código fuente.
+Esta función obtiene el número de versión de la API del complemento de control de código fuente compatible con el complemento de control de código fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ LONG SccGetVersion(void);
  Ninguno.
 
 ## <a name="return-value"></a>Valor devuelto
- Tipo `LONG` de datos que contiene el número de versión de la API de complemento de Control de código fuente compatible:
+ Un `LONG` tipo de datos que contiene el número de versión de la API del complemento de control de código fuente compatible:
 
 |WORD|Descripción|
 |----------|-----------------|
@@ -40,7 +40,7 @@ LONG SccGetVersion(void);
 |LOWORD|Versión secundaria|
 
 ## <a name="remarks"></a>Observaciones
- Por ejemplo, si un complemento de control de código fuente admite la versión 1.3 de la API de complemento de Control de código fuente, esta función devolvería 0x0103.
+ Por ejemplo, si un complemento de control de código fuente admite la versión 1,3 de la API del complemento de control de código fuente, esta función devolverá 0x0103.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

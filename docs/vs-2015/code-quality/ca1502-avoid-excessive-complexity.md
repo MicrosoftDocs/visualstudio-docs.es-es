@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547841"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar una complejidad excesiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |Identificador de comprobación|CA1502|
-|Categoría|Microsoft. mantenibilidad|
+|Category|Microsoft. mantenibilidad|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa
@@ -57,7 +57,7 @@ ms.locfileid: "85547841"
 
 - Número de bifurcaciones (como `if` , `while` y `do` )
 
-- Número de `case` instrucciones en un`switch`
+- Número de `case` instrucciones en un `switch`
 
   En los ejemplos siguientes se muestran métodos que tienen diferentes complejidades de ciclomática.
 

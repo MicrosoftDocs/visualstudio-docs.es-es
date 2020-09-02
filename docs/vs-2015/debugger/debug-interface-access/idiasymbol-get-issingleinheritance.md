@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 70b99b852175febe448e7b821070261d6abda4b9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151455"
 ---
-# <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
+# <a name="idiasymbolget_issingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica si el `this` puntero apunta a un miembro de datos con la herencia única.  
+Especifica si el `this` puntero apunta a un miembro de datos con herencia única.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,10 +32,10 @@ HRESULT get_isSingleInheritance(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si el `this` puntero apunta a un miembro de datos con la herencia única.  
+ enuncia Un puntero a un `BOOL` que especifica si el `this` puntero apunta a un miembro de datos con herencia única.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

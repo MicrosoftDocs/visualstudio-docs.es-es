@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8fa72fb88358d4c60f7bccb77dcbd9e76d148b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153448"
 ---
-# <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
+# <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Describe la ubicación de desplazamiento de un punto de interrupción en una función en el código.  
@@ -35,24 +35,24 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET { 
   
 ## <a name="members"></a>Miembros  
  `bstrContext`  
- El contexto del punto de interrupción, normalmente un nombre de método o una función como se muestra en una pila de llamadas.  
+ Contexto del punto de interrupción, normalmente un nombre de método o función tal y como se ha detectado en una pila de llamadas.  
   
  `pFuncPos`  
- El [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) objeto que describe el nombre de la función y la posición relativa desde el principio de la función.  
+ El objeto [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) que describe el nombre de la función y la posición relativa desde el principio de la función.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura es un miembro de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estructura como parte de una unión.  
+ Esta estructura es miembro de la estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una Unión.  
   
- El `pFuncPos` miembro indica dónde se establecerá el punto de interrupción de función.  
+ El `pFuncPos` miembro indica dónde establecer el punto de interrupción de la función.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

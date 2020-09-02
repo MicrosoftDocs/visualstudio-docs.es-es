@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Documentos de Microsoft
+title: 'IDebugStackFrame2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d370670ed86ee3484243fe5dc7cfdd8ea64be084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153140"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtiene el idioma asociado a este marco de pila.  
+Obtiene el lenguaje asociado a este marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,10 +42,10 @@ int GetLanguageInfo ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrLanguage`  
- [out] Devuelve el nombre del lenguaje que implementa el método asociado a este marco de pila.  
+ enuncia Devuelve el nombre del lenguaje que implementa el método asociado a este marco de pila.  
   
  `pguidLanguage`  
- [out] Devuelve el `GUID` del lenguaje. Para el [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] idiomas, por ejemplo, la siguiente puede devolver:  
+ enuncia Devuelve el `GUID` del idioma. Para los [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] lenguajes, por ejemplo, se puede devolver lo siguiente:  
   
 - `guidVBScriptLang`  
   
@@ -60,7 +60,7 @@ int GetLanguageInfo ( 
 - `guidScriptLang`  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar el método OnStart | Documentos de Microsoft
+title: Procedimiento para la depuración del método OnStart | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 391b906889dcbe422f7ec227b1d375be82e7ac91
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700167"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Procedimiento Depuración del método OnStart
@@ -47,7 +47,7 @@ Se puede depurar un servicio de Windows si se inicia el servicio y se asocia el 
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3. Seleccione **Sí, depurar \<nombre del servicio**.  
+3. Seleccione **Sí, depurar \<service name>.**  
   
 4. En la ventana del depurador Just-In-Time, seleccione la versión de Visual Studio que quiere usar para la depuración.  
   
@@ -55,6 +55,6 @@ Se puede depurar un servicio de Windows si se inicia el servicio y se asocia el 
   
 5. Una nueva instancia de Visual Studio se inicia y la ejecución se detiene en el método `Debugger.Launch()` .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar código administrado](../debugger/debugging-managed-code.md)

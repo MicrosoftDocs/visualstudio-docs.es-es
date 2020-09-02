@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 485945f235a9161b6dc0584f7018c6f03c6024f5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537662"
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Cómo: recuperar los caracteres inicial y final de los intervalos mediante programación

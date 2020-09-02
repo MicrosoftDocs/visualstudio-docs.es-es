@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249182"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Cómo: configurar el ámbito de análisis de código activo para código administrado
@@ -74,7 +74,7 @@ Si Visual Studio detecta que 200 MB o menos de memoria del sistema está disponi
 
 ![Texto de alerta que minimiza el ámbito de análisis](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Suspensión automática de la característica](./automatic-feature-suspension.md)
 - [Solicitud de característica del modo de ahorro de energía](https://github.com/dotnet/roslyn/issues/38429)

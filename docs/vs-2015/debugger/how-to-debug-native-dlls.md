@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar archivos DLL nativos | Documentos de Microsoft
+title: 'Cómo: depurar archivos DLL nativos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,17 +24,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702678"
 ---
-# <a name="how-to-debug-native-dlls"></a>Procedimiento Depurar archivos DLL nativos
+# <a name="how-to-debug-native-dlls"></a>Cómo: Depurar DLL nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Cuando se depura un archivo DLL, se puede iniciar la depuración desde:  
   
@@ -50,18 +50,18 @@ ms.locfileid: "65702678"
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Para especificar un archivo ejecutable para la sesión de depuración  
   
-1. En **el Explorador de soluciones**, seleccione el proyecto que crea el archivo DLL.  
+1. En **Explorador de soluciones**, seleccione el proyecto que crea el archivo dll.  
   
-2. Desde el **vista** menú, elija**páginas de propiedades**.  
+2. En el menú **Ver** , elija**páginas de propiedades**.  
   
-3. En el **páginas de propiedades** cuadro de diálogo, abra el **propiedades de configuración** carpeta y seleccione el **depuración** categoría.  
+3. En el cuadro de diálogo **páginas de propiedades** , abra la carpeta **propiedades de configuración** y seleccione la categoría **depuración** .  
   
-4. En el **comando** cuadro, especifique el nombre de ruta de acceso para el contenedor. Por ejemplo, C:\Archivos de programa\MiAplicación\MIAPLIC.EXE.  
+4. En el cuadro **comando** , especifique el nombre de la ruta de acceso del contenedor. Por ejemplo, C:\Archivos de programa\MiAplicación\MIAPLIC.EXE.  
   
-5. En el **argumentos de comando** , especifique los argumentos necesarios para el archivo ejecutable.  
+5. En el cuadro **argumentos del comando** , especifique los argumentos necesarios para el ejecutable.  
   
-   Si no especifica el archivo ejecutable en el _proyecto_**páginas de propiedades** cuadro de diálogo, el [ejecutable para el cuadro de diálogo de sesión de depuración](../debugger/executable-for-debugging-session-dialog-box.md) aparece al iniciar la depuración.  
+   Si no especifica el archivo ejecutable en el cuadro de diálogo**páginas de propiedades** del _proyecto_, el [cuadro de diálogo ejecutable para la sesión de depuración](../debugger/executable-for-debugging-session-dialog-box.md) aparece cuando se inicia la depuración.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)

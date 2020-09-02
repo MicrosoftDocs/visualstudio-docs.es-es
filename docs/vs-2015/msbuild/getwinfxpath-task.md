@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da32f0bfce9edf652e19df6b68bc51ed92624d80
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699008"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath (Tarea)
@@ -59,7 +59,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directori
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)   
  [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo | Documentos de Microsoft
+title: 'IDebugThread2:: EnumFrameInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: efda31daae198befbda35803ef71e1d0322e9bbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153081"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
@@ -44,21 +44,21 @@ int EnumFrameInfo ( 
   
 #### <a name="parameters"></a>Parámetros  
  `dwFieldSpec`  
- [in] Una combinación de marcas de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeración que especifica qué campos de la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructuras son para rellenarlo. Especifique el `FIF_FUNCNAME_FORMAT` marca para dar formato al nombre de función en una sola cadena.  
+ de Combinación de marcas de la enumeración [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica los campos de las estructuras [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) que se van a rellenar. Especifique la `FIF_FUNCNAME_FORMAT` marca para dar formato al nombre de la función en una sola cadena.  
   
  `nRadix`  
- [in] Base usada para dar formato a la información numérica en el enumerador.  
+ de Base usada para dar formato a la información numérica en el enumerador.  
   
  `ppEnum`  
- [out] Devuelve un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) objeto que contiene una lista de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructuras que describen el marco de pila.  
+ enuncia Devuelve un objeto [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que contiene una lista de estructuras [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) que describe el marco de pila.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Los marcos del subproceso se enumeran en orden, con el fotograma actual enumerado en primer lugar y el más antiguo enumerado por última vez.  
+ Los fotogramas del subproceso se enumeran en orden, con el fotograma actual enumerado primero y el fotograma más antiguo enumerado en último lugar.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)   

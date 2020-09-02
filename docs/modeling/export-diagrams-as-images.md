@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547607"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imágenes
 
 En Visual Studio, puede guardar diagramas de modelado en formatos de solo lectura para poder compartirlos con las partes interesadas, los usuarios o los miembros del equipo del proyecto que no usen la misma versión de Visual Studio.
 
-Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué ediciones de Visual Studio admiten esta característica, consulte [Compatibilidad de ediciones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Copiar un diagrama o parte de un diagrama en otra aplicación
 
@@ -40,7 +40,7 @@ Para ver qué ediciones de Visual Studio admiten esta característica, vea [comp
 
 3. En el cuadro de diálogo **guardar el archivo como** , guarde el archivo como un archivo de **documento XPS ( \* . XPS)** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
 - [Compartir modelos y exportar diagramas](../modeling/share-models-and-exporting-diagrams.md)

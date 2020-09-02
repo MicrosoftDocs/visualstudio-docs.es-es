@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849232"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Cómo: Utilizar el Editor de expresiones
 El Editor de expresiones es un control de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que se utiliza en muchas actividades de flujo de trabajo como un medio para especificar y evaluar estas expresiones. El Editor de expresiones proporciona una experiencia de edición IDE completa, que incluye IntelliSense, el uso de distintos colores, ParamInfo y subrayados ondulados de errores, entre otras características. El compilador valida la expresión una vez se ha escrito. Si la expresión no es válida, se muestra un icono de error. El editor también puede abrirse como un cuadro de diálogo del **Editor de expresiones** .
 
- Las expresiones son valores literales o de código de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] enlazadas a argumentos o propiedades. Contienen elementos de valor (p. ej. variables, constantes, literales, propiedades) que se combinan con operaciones para proporcionar un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa que no importa las mayúsculas y minúsculas, la comparación se realiza utilizando un signo igual ("=") en lugar de ("= ="), los operadores booleanos son las palabras "and" y "or" en lugar de los símbolos "&#124;&#124;& &" y "", y no se utiliza **nada** en lugar de **null**. Para obtener más información sobre las expresiones y los operadores de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y para algunos ejemplos, vea [operadores y expresiones en Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
+ Las expresiones son valores literales o de código de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] enlazadas a argumentos o propiedades. Contienen elementos de valor (p. ej. variables, constantes, literales, propiedades) que se combinan con operaciones para proporcionar un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa que no importa las mayúsculas y minúsculas, la comparación se realiza utilizando un signo igual ("=") en lugar de ("= ="), los operadores booleanos son las palabras "and" y "or" en lugar de los símbolos "&&" y "&#124;&#124;", y no se utiliza **nada** en lugar de **null**. Para obtener más información sobre las expresiones y los operadores en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y para algunos ejemplos, vea [operadores y expresiones en Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
 
  El **Editor de expresiones** se comporta de la siguiente manera:
 
@@ -45,7 +45,7 @@ El Editor de expresiones es un control de [!INCLUDE[wfd1](../includes/wfd1-md.md
 
 3. Haga clic en el editor de expresiones de la izquierda en el diseñador de actividades para la actividad <xref:System.Activities.Statements.Assign>.
 
-     Las cadenas de marca de agua gris **\<a >** y **\<escriba una expresión de VB >** son las cadenas de texto predeterminadas para los editores de expresiones en la actividad <xref:System.Activities.Statements.Assign>.
+     Las cadenas de marca de agua gris **\<To>** y **\<Enter a VB Expression>** son las cadenas de texto predeterminadas para los editores de expresiones en la <xref:System.Activities.Statements.Assign> actividad.
 
 4. Escriba su expresión. Si escribe una cadena, asegúrese de colocar comillas dobles en torno a la cadena. Si decide enlazar el argumento de expresión a una variable, no ponga las comillas dobles.
 
@@ -53,5 +53,5 @@ El Editor de expresiones es un control de [!INCLUDE[wfd1](../includes/wfd1-md.md
 
      Una forma alternativa de escribir o modificar una expresión es hacer clic en los puntos suspensivos junto al nombre de la propiedad en la cuadrícula de propiedades. Se abrirá el cuadro de diálogo **Editor de expresiones** como.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

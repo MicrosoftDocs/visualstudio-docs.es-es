@@ -34,10 +34,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 705b1a5992d1a3e7931c316c713d46e7e8c7f72e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657770"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documentos, Entorno, Opciones (Cuadro de diálogo)
@@ -46,7 +46,7 @@ ms.locfileid: "72657770"
 Use esta página del cuadro de diálogo **Opciones** para controlar la visualización de documentos en el entorno de desarrollo integrado (IDE) y administrar los cambios externos de los documentos y archivos. Puede tener acceso a este cuadro de diálogo haciendo clic en **Opciones** en el menú **Herramientas** y, después, seleccionar **Documentos** en el nodo **Entorno**. Si **Documentos** no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
 
 > [!NOTE]
-> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  **Reusar la ventana de documento activa si se guardó** Cuando está seleccionada, cierra su documento actual si se ha guardado y abre un nuevo documento en la misma ventana. Si el documento actual no se ha guardado, permanece abierto y el documento nuevo se abre en una ventana independiente. Cuando esta opción se desactiva, los documentos nuevos siempre se abren en ventanas independientes.
 
@@ -69,11 +69,11 @@ Use esta página del cuadro de diálogo **Opciones** para controlar la visualiza
 > [!NOTE]
 > Seleccione esta opción para habilitar el comando **Ver en el explorador** del menú **Archivo** para los documentos web que no están incluidos en la aplicación web activa.
 
- **\<** *n* **> elementos guardados en el proyecto de archivos varios** Especifica el número de archivos que se va a conservar en la carpeta **Archivos varios** del **Explorador de soluciones**. Estos archivos se muestran incluso si ya no están abiertos en un editor. Puede especificar cualquier número entero de 0 a 256. El número predeterminado es 0.
+ ** \<** *n* **> elementos guardados en el proyecto archivos varios** especifica el número de archivos que se van a conservar en la carpeta **va** de **Explorador de soluciones**. Estos archivos se muestran incluso si ya no están abiertos en un editor. Puede especificar cualquier número entero de 0 a 256. El número predeterminado es 0.
 
  Por ejemplo, si establece esta opción en 5 y tiene 10 archivos varios abiertos, cuando cierre los 10 archivos, los primeros 5 se seguirán mostrando en la carpeta **Archivos varios**.
 
  **Guardar documentos como Unicode cuando no se puedan guardar los datos en la página de códigos** Seleccione esta opción para provocar que los archivos que contienen información no compatible con la página de códigos seleccionada se guarden como Unicode de manera predeterminada.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Cuadro de diálogo Opciones de entorno](../../ide/reference/environment-options-dialog-box.md) [archivos varios](../../ide/reference/miscellaneous-files.md) [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)

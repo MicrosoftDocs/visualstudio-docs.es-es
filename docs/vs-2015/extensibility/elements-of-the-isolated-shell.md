@@ -1,5 +1,5 @@
 ---
-title: Elementos del Shell aislado | Microsoft Docs
+title: Elementos del shell aislado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,64 +11,64 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204610"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementos de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede modificar la configuración del registro, configuración de tiempo de ejecución y punto de entrada de la aplicación de la aplicación de shell aislado y su .vsct, .pkgdef, and.pkgundef archivos.  
+Puede modificar la configuración del registro, la configuración de tiempo de ejecución y el punto de entrada de la aplicación de Shell aislado, así como los archivos. Vsct,. pkgdef y. pkgundef.  
   
-## <a name="registry-settings"></a>Configuración de registro  
- El .pkgdef y los archivos .pkgundef modifican la configuración del registro para la aplicación de shell aislado. Cuando se ejecuta la aplicación, la configuración del registro se define en la siguiente secuencia:  
+## <a name="registry-settings"></a>Configuración del Registro  
+ Los archivos. pkgdef y. pkgundef modifican la configuración del registro de la aplicación de Shell aislado. Cuando se ejecuta la aplicación, la configuración del registro se define en la secuencia siguiente:  
   
- Cuando se ejecuta la aplicación, la configuración del registro se define en la siguiente secuencia:  
+ Cuando se ejecuta la aplicación, la configuración del registro se define en la secuencia siguiente:  
   
-1. Se crea la clave del registro para la aplicación.  
+1. Se crea la clave del registro de la aplicación.  
   
-2. El registro se actualiza desde el archivo .pkgdef de la aplicación mediante la definición de las entradas y las claves especificadas.  
+2. El registro se actualiza a partir del archivo. pkgdef de la aplicación mediante la definición de las claves y entradas especificadas.  
   
-3. Para cada paquete que forma parte de la aplicación, se actualiza el registro desde el archivo .pkgdef de ese paquete. Cada paquete se define en el archivo .pkgdef de la aplicación mediante el \Packages $ $RootKey\\{*vsPackageGuid*} clave para el paquete.  
+3. Para cada paquete que forma parte de la aplicación, el registro se actualiza a partir del archivo. pkgdef de ese paquete. Cada paquete se define en el archivo. pkgdef de la aplicación mediante la clave $RootKey $ \Packages \\ {*vsPackageGuid*} para el paquete.  
   
-4. El registro se actualiza desde el AppEnvConfig.pkgdef y BaseConfig.pkgdef en el *ruta de instalación del SDK de Visual Studio*\Common7\IDE\ShellExtensions\Platform directory. Estos archivos forman parte de Visual Studio y también parte del paquete redistribuible de Visual Studio Shell (modo aislado).  
+4. El registro se actualiza desde AppEnvConfig. pkgdef y BaseConfig. pkgdef en el directorio \Common7\IDE\ShellExtensions\Platform de la *ruta de instalación de Visual Studio SDK*. Estos archivos forman parte de Visual Studio y también forman parte del paquete redistribuible de Visual Studio Shell (modo aislado).  
   
-5. El registro se actualiza desde el archivo .pkgundef de la aplicación mediante la eliminación de entradas y las claves especificadas.  
+5. El registro se actualiza desde el archivo. pkgundef de la aplicación mediante la eliminación de las claves y entradas especificadas.  
   
-## <a name="run-time-settings"></a>Configuración de tiempo de ejecución  
- Cuando un usuario inicia la aplicación de shell aislado, llama el punto de entrada de inicio de Visual Studio shell. Configuración de la aplicación se define cuando se inicia la aplicación, como se indica a continuación:  
+## <a name="run-time-settings"></a>Configuración en tiempo de ejecución  
+ Cuando un usuario inicia la aplicación de Shell aislado, llama al punto de entrada de inicio de Visual Studio Shell. La configuración de la aplicación se define cuando se inicia la aplicación, como se indica a continuación:  
   
-1. El shell de Visual Studio comprueba el registro de aplicación para determinadas claves. Si se especifica la configuración de una clave en la llamada al punto de entrada de inicio, ese valor reemplaza el valor en el registro.  
+1. Visual Studio Shell comprueba el registro de la aplicación en busca de claves específicas. Si el valor de una clave se especifica en la llamada al punto de entrada de inicio, ese valor reemplaza el valor del registro.  
   
-2. Si el registro ni la entrada de punto de parámetro especifica el valor de una configuración y luego se usa el valor predeterminado para la configuración.  
+2. Si no se especifica el valor de un valor en el registro ni en el parámetro de punto de entrada, se usa el valor predeterminado de la configuración.  
   
-   Cuando un usuario inicia la aplicación desde la línea de comandos, todos los modificadores de línea de comandos se pasan en el shell de Visual Studio, que se trata de la misma manera que hace de Devenv. Para obtener más información acerca de los modificadores de Devenv, consulte [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md) y [modificadores de línea de comandos para Devenv para el desarrollo de VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Para obtener más información acerca de cómo se registra un paquete para los modificadores de línea de comandos, consulte [agregar modificadores de línea de comandos](../extensibility/adding-command-line-switches.md).  
+   Cuando un usuario inicia la aplicación desde la línea de comandos, todos los modificadores de línea de comandos se pasan al shell de Visual Studio, que los trata de la misma manera que lo hace devenv. Para obtener más información sobre los modificadores de devenv, vea [modificadores de línea de comandos de devenv](../ide/reference/devenv-command-line-switches.md) y [modificadores de la línea de comandos de devenv para el desarrollo de VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Para obtener más información sobre cómo se registra un paquete para los modificadores de la línea de comandos, vea [agregar modificadores de línea de comandos](../extensibility/adding-command-line-switches.md).  
   
-## <a name="the-start-entry-point"></a>El punto de entrada de inicio  
- El archivo Appenvstub.dll contiene puntos de entrada para tener acceso a la shell aislado. Cuando se inicia la aplicación, llama el punto de entrada de inicio de Appenvstub.dll.  
+## <a name="the-start-entry-point"></a>El punto de entrada inicial  
+ El archivo Appenvstub.dll contiene puntos de entrada para tener acceso al shell aislado. Cuando se inicia la aplicación, llama al punto de entrada de inicio de Appenvstub.dll.  
   
- Puede cambiar el comportamiento de la aplicación cambiando el valor del último parámetro que se pasa al punto de entrada de inicio. Para obtener más información, consulte [aislado Shell entrada punto parámetros (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md).  
+ Puede cambiar el comportamiento de la aplicación cambiando el valor del último parámetro que se pasa al punto de entrada de inicio. Para obtener más información, vea [parámetros de punto de entrada de Shell aislado (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md).  
   
-## <a name="the-vsct-file"></a>El archivo. Archivo de Vsct  
- El archivo .vsct le permite especificar qué elementos de interfaz de usuario de Visual Studio estándares están disponibles en la aplicación. Para obtener más información, consulte [. Archivos Vsct](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md).  
+## <a name="the-vsct-file"></a>El. Archivo Vsct  
+ El archivo. Vsct permite especificar qué elementos de interfaz de usuario de Visual Studio estándar están disponibles en la aplicación. Para obtener más información, vea [. Archivos Vsct](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md).  
   
-## <a name="the-pkgundef-file"></a>El archivo. Archivo Pkgundef  
- Cuando la aplicación se instala en un equipo en el que ya está instalado Visual Studio, se realiza una copia de las entradas del registro de Visual Studio para la aplicación. De forma predeterminada, la aplicación utiliza los VSPackages que ya están instalados en el equipo. El archivo .pkgundef le permite excluir las entradas del registro con el fin de quitar los elementos específicos del shell de Visual Studio o las extensiones de la aplicación. Para obtener más información, consulte [. Archivos Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
+## <a name="the-pkgundef-file"></a>El. Archivo Pkgundef  
+ Cuando la aplicación se instala en un equipo en el que Visual Studio ya está instalado, se realiza una copia de las entradas del registro de Visual Studio para la aplicación. De forma predeterminada, la aplicación usa VSPackages que ya están instalados en el equipo. El archivo. pkgundef permite excluir las entradas del registro para quitar elementos concretos del shell o las extensiones de Visual Studio de la aplicación. Para obtener más información, vea [. Archivos Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
   
- El archivo .pkgundef le permite excluir las entradas del registro con el fin de quitar los elementos específicos del shell de Visual Studio o las extensiones de la aplicación. Para obtener más información, consulte [. Archivos Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
+ El archivo. pkgundef permite excluir las entradas del registro para quitar elementos concretos del shell o las extensiones de Visual Studio de la aplicación. Para obtener más información, vea [. Archivos Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
   
- El conjunto de GUID que se pueden excluir del paquete se enumeran en [paquete GUID de características de Visual Studio](../extensibility/package-guids-of-visual-studio-features.md).  
+ El conjunto de GUID de paquete que puede excluir se muestra en [GUID de paquete de características de Visual Studio](../extensibility/package-guids-of-visual-studio-features.md).  
   
-## <a name="the-pkgdef-file"></a>El archivo. Archivo pkgdef  
- El archivo .pkgdef le permite definir las entradas del registro para la aplicación que se establecen cuando se instala la aplicación. Para obtener una descripción del archivo .pkgdef y una lista de entradas del registro que utiliza el shell de Visual Studio, consulte [. Archivos pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
+## <a name="the-pkgdef-file"></a>El. Archivo Pkgdef  
+ El archivo. pkgdef permite definir entradas del registro para la aplicación que se establecen cuando se instala la aplicación. Para obtener una descripción del archivo. pkgdef y una lista de entradas del registro que usa Visual Studio Shell, vea [. Archivos Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
 ## <a name="substitution-strings"></a>Cadenas de sustitución  
- Se enumeran las cadenas de sustitución utilizadas en los archivos .pkgdef y .pkgundef en [utilizan las cadenas de sustitución de. Pkgdef y. Archivos Pkgundef](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
+ Las cadenas de sustitución usadas en los archivos. pkgdef y. pkgundef se enumeran en [cadenas de sustitución usadas en. Pkgdef y. Archivos Pkgundef](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
   
 ## <a name="other-settings"></a>Otras configuraciones  
- Si la aplicación de shell aislado depende Microsoft.VisualStudio.GraphModel.dll, deberá agregar la siguiente redirección de enlace al archivo .config de la aplicación Shell aislado:  
+ Si la aplicación de Shell aislado depende de Microsoft.VisualStudio.GraphModel.dll, debe agregar el siguiente redireccionamiento de enlace al archivo. config de la aplicación de Shell aislado:  
   
 ```  
 <dependentAssembly>  

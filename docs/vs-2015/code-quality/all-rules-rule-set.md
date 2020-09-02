@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e4cc53b623003fce3c47b7230650ae5a92e3c335
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671150"
 ---
 # <a name="all-rules-rule-set"></a>Conjunto de reglas Todas las reglas
@@ -23,4 +23,4 @@ El conjunto de reglas todas las reglas contiene todas las reglas para código na
 
 1. [Análisis de código para advertencias de C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
 
-2. [Análisis de código de las advertencias de código administrado](../code-quality/code-analysis-for-managed-code-warnings.md)
+2. [Análisis de código para advertencias de código administrado](../code-quality/code-analysis-for-managed-code-warnings.md)

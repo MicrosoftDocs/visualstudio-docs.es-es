@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca69acebc9710bc18cba39ea9998bf90d2bf5767
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151649"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera la información de número de línea para las líneas contenidas en un intervalo de direcciones virtual especificado (VA).  
+Recupera la información del número de línea para las líneas contenidas en un intervalo de direcciones virtuales (VA) especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,16 +37,16 @@ HRESULT findLinesByVA ( 
   
 #### <a name="parameters"></a>Parámetros  
  `va`  
- [in] Especifica la dirección como un jefe  
+ de Especifica la dirección como un VA.  
   
  `length`  
- [in] Especifica el número de bytes del intervalo de direcciones para cubrir con esta consulta.  
+ de Especifica el número de bytes del intervalo de direcciones que se va a cubrir con esta consulta.  
   
  `ppResult`  
- [out] Devuelve un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contiene una lista de la línea de todos los números que regulan el intervalo de direcciones especificado.  
+ enuncia Devuelve un objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contiene una lista de todos los números de línea que cubren el intervalo de direcciones especificado.  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra una función que obtiene todos los números de línea incluidos en una función mediante la dirección virtual de la función y la longitud.  
+ En este ejemplo se muestra una función que obtiene todos los números de línea contenidos en una función utilizando la dirección virtual y la longitud de la función.  
   
 ```cpp#  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
@@ -64,6 +64,6 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
