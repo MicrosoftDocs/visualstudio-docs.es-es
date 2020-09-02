@@ -12,27 +12,27 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 22943d3049ff0e24d00c7c29750e7dcd0efaf846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158363"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Jerarquías en Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE) muestra un proyecto como un *jerarquía*. En el IDE, una jerarquía es un árbol de nodos, donde cada nodo tiene un conjunto de propiedades asociadas. Un *jerarquía del proyecto* es un contenedor que contiene elementos de proyecto, las relaciones de los elementos y las propiedades asociadas y los comandos.
+El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno de desarrollo integrado (IDE) muestra un proyecto como una *jerarquía*. En el IDE, una jerarquía es un árbol de nodos, donde cada nodo tiene un conjunto de propiedades asociadas. Una *jerarquía de proyecto* es un contenedor que contiene los elementos del proyecto, las relaciones de los elementos y las propiedades y los comandos asociados de los elementos.
 
- En [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], administrar las jerarquías de proyecto mediante el uso de la interfaz de la jerarquía, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz redirige los comandos que se invoca desde elementos de proyecto a la ventana de jerarquía adecuada en lugar del controlador de comandos estándar.
+ En [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , las jerarquías de proyecto se administran mediante la interfaz de la jerarquía de, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . La <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz redirige los comandos que se invocan desde los elementos de proyecto a la ventana de jerarquía adecuada en lugar del controlador de comandos estándar.
 
 ## <a name="project-hierarchies"></a>Jerarquías de proyecto
- Cada jerarquía del proyecto contiene elementos que puede ver y editar. Estos elementos varían según el tipo de proyecto. Por ejemplo, un proyecto de base de datos podría contener los procedimientos almacenados, vistas de base de datos y tablas de base de datos. Por otro lado, un proyecto de lenguaje de programación, probablemente incluya archivos de origen y archivos de recursos para los mapas de bits y cuadros de diálogo. Las jerarquías se pueden anidar, que proporciona cierta flexibilidad adicional cuando se crea una jerarquía de proyectos.
+ Cada jerarquía de proyecto contiene elementos que puede ver y editar. Estos elementos varían según el tipo de proyecto. Por ejemplo, un proyecto de base de datos podría contener procedimientos almacenados, vistas de base de datos y tablas de base de datos. Un proyecto de lenguaje de programación, por otro lado, probablemente incluirá archivos de código fuente y archivos de recursos para los mapas de bits y los cuadros de diálogo. Las jerarquías se pueden anidar, lo que proporciona una flexibilidad adicional al crear una jerarquía de proyecto.
 
- Cuando se crea un nuevo tipo de proyecto, el tipo de proyecto controla el conjunto completo de los elementos que se pueden editar en ella. Sin embargo, los proyectos pueden contener elementos para los que no tienen compatibilidad de edición. Por ejemplo, los proyectos de Visual C++ pueden contener archivos HTML, aunque Visual C++ no proporciona ningún editor personalizado para el tipo de archivo HTML.
+ Cuando se crea un nuevo tipo de proyecto, el tipo de proyecto controla el conjunto completo de elementos que se pueden editar en él. Sin embargo, los proyectos pueden contener elementos para los que no son compatibles con la edición. Por ejemplo, los proyectos de Visual C++ pueden contener archivos HTML, aunque Visual C++ no proporciona ningún editor personalizado para el tipo de archivo HTML.
 
- Las jerarquías de administran la persistencia de los elementos que contienen. La implementación de la jerarquía debe controlar las propiedades especiales que afectan a la persistencia de los elementos dentro de la jerarquía. Por ejemplo, si los elementos representan objetos en un repositorio en lugar de archivos, la implementación de la jerarquía debe controlar la persistencia de esos objetos. El propio IDE dirige la jerarquía para guardar los elementos de acuerdo con la entrada del usuario, pero el IDE no controla las acciones necesarias para guardar los elementos. En su lugar, el proyecto está en el control.
+ Las jerarquías administran la persistencia de los elementos que contienen. La implementación de la jerarquía debe controlar cualquier propiedad especial que afecte a la persistencia de los elementos dentro de la jerarquía. Por ejemplo, si los elementos representan objetos en un repositorio en lugar de archivos, la implementación de la jerarquía debe controlar la persistencia de esos objetos. El propio IDE dirige la jerarquía para guardar los elementos conforme a los datos proporcionados por el usuario, pero el IDE no controla ninguna acción necesaria para guardar dichos elementos. En su lugar, el proyecto se encuentra en el control.
 
- Cuando un usuario abre un elemento en un editor, la jerarquía que controla el elemento está seleccionada y se convierte en la jerarquía activa. La jerarquía seleccionada determina el conjunto de comandos disponibles para que actúe en el elemento. Seguimiento de foco del usuario de esta manera, permite la jerarquía reflejar el contexto del usuario actual.
+ Cuando un usuario abre un elemento en un editor, la jerarquía que controla ese elemento se selecciona y se convierte en la jerarquía activa. La jerarquía seleccionada determina el conjunto de comandos disponibles para actuar sobre el elemento. El seguimiento del foco del usuario de esta manera permite que la jerarquía refleje el contexto actual del usuario.
 
-## <a name="see-also"></a>Vea también
- [Tipos de proyecto](../../extensibility/internals/project-types.md) [selección y moneda en el IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md) [muestras de VSSDK](../../misc/vssdk-samples.md)
+## <a name="see-also"></a>Consulte también
+ Selección de [tipos de proyecto](../../extensibility/internals/project-types.md) [y moneda en los ejemplos de VSSDK del IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md) [VSSDK Samples](../../misc/vssdk-samples.md)

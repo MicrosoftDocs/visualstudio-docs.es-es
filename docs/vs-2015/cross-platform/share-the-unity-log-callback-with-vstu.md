@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: b58d693980ffc55ccfe613d52e868bccca9908b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145731"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Compartir la devolución de llamada de registro de Unity con VSTU
@@ -47,5 +47,5 @@ public class LogCallbackHook
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Ejemplo: generación de archivos del proyecto](../cross-platform/customize-project-files-created-by-vstu.md)
+## <a name="see-also"></a>Consulte también  
+ [Ejemplo: generación de archivos de proyecto](../cross-platform/customize-project-files-created-by-vstu.md)

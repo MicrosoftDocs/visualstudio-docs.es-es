@@ -1,5 +1,5 @@
 ---
-title: Acerca de Microsoft Spy ++ | Documentos de Microsoft
+title: Acerca de Microsoft Spy ++ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 437ef1f72d3b766a0fc59d602af814a64b735c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157546"
 ---
 # <a name="about-microsoft-spy"></a>Acerca de Microsoft Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilice este cuadro de diálogo para mostrar la versión, copyright, la propiedad y otra información acerca de Spy ++.
+Use este cuadro de diálogo para mostrar los derechos de autor, la versión, la propiedad y otra información sobre Spy ++.

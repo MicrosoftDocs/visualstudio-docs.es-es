@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear una. Archivo de Vsct | Documentos de Microsoft
+title: 'Cómo: crear un. Archivo Vsct | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,55 +11,55 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a2483c000bb7c9446ac51bb94ef4006a7b2ac89f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158344"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Procedimiento Crear un archivo .Vsct
+# <a name="how-to-create-a-vsct-file"></a>Creación de un archivo .Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y Visual Studio Command Table.  
+Hay varias maneras de crear un archivo de configuración de tabla de comandos de Visual Studio (. Vsct) basado en XML.  
   
-- Puede crear un nuevo VSPackage se muestra en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plantilla de paquete.  
+- Puede crear un nuevo VSPackage en la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plantilla de paquete.  
   
-- Puede usar el compilador de configuración de tabla de comando basado en XML, Vsct.exe, para generar un archivo desde un archivo .ctc existente.  
+- Puede usar el compilador de configuración de tabla de comandos basado en XML, Vsct.exe, para generar un archivo a partir de un archivo. CTC existente.  
   
-- Puede usar Vsct.exe para generar un archivo .vsct a partir de un archivo .cto existente.  
+- Puede usar Vsct.exe para generar un archivo. Vsct a partir de un archivo. CTO existente.  
   
-- Puede crear manualmente un nuevo archivo de vsct.  
+- Puede crear un nuevo archivo. Vsct de forma manual.  
   
-  En este tema se explica cómo crear manualmente un nuevo archivo de vsct.  
+  En este tema se explica cómo crear manualmente un nuevo archivo. Vsct.  
   
-### <a name="to-manually-create-a-new-vsct-file"></a>Para crear manualmente un nuevo archivo de vsct  
+### <a name="to-manually-create-a-new-vsct-file"></a>Para crear manualmente un nuevo archivo. Vsct  
   
 1. Inicie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-2. En el **archivo** menú, elija **New**y, a continuación, haga clic en **archivo**.  
+2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Archivo**.  
   
-3. En el **plantillas** panel, haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.  
+3. En el panel **plantillas** , haga clic en **archivo XML** y, a continuación, haga clic en **abrir**.  
   
-4. En el **vista** menú, haga clic en **ventana propiedades** para mostrar las propiedades del archivo XML.  
+4. En el menú **Ver** , haga clic en **ventana Propiedades** para mostrar las propiedades del archivo XML.  
   
-5. En el **propiedades** ventana, haga clic en el botón Examinar (...) en la propiedad de esquemas.  
+5. En la ventana **propiedades** , haga clic en el botón Examinar (...) de la propiedad esquemas.  
   
-6. En la lista de esquemas XSD, seleccione el esquema vsct.xsd. Si no está en la lista, haga clic en **agregar** y, a continuación, busque el archivo en una unidad local. Haga clic en **Aceptar** cuando haya terminado.  
+6. En la lista de esquemas XSD, seleccione el esquema Vsct. xsd. Si no está en la lista, haga clic en **Agregar** y, a continuación, busque el archivo en una unidad local. Cuando haya terminado, haga clic en **Aceptar** .  
   
-7. En el archivo XML, escriba `<CommandTable` y, a continuación, presione la tecla TAB. Cerrar la etiqueta escribiendo `>`.  
+7. En el archivo XML, escriba `<CommandTable` y, a continuación, presione TAB. Cierre la etiqueta escribiendo `>` .  
   
-     Esto crea un archivo .vsct básica.  
+     Esto crea un archivo. Vsct básico.  
   
-8. Rellenar los elementos del archivo XML que desea agregar, de acuerdo con la [VSCT esquema](../../extensibility/vsct-xml-schema-reference.md). Para obtener más información, consulte [Authoring. Archivos Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. Rellene los elementos del archivo XML que desea agregar, de acuerdo con el [esquema VSCT](../../extensibility/vsct-xml-schema-reference.md). Para obtener más información, consulte [creación. Archivos Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 ## <a name="compiling-the-code"></a>Compilar el código  
- Basta con agregar un archivo .vsct a un proyecto no hace que se compile. Debe incorporarlo en el proceso de compilación.  
+ Simplemente agregar un archivo. Vsct a un proyecto no hace que se compile. Debe incorporarlo en el proceso de compilación.  
   
-### <a name="to-add-a-vsct-file-to-project-compilation"></a>Para agregar un archivo .vsct a la compilación del proyecto  
+### <a name="to-add-a-vsct-file-to-project-compilation"></a>Para agregar un archivo. Vsct a la compilación del proyecto  
   
-1. Abra el archivo de proyecto en el editor. Si se carga el proyecto, primero debe descargarlo.  
+1. Abra el archivo de proyecto en el editor. Si el proyecto está cargado, debe descargarlo primero.  
   
-2. Agregar un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) que contiene un elemento VSCTCompile, tal como se muestra en el ejemplo siguiente.  
+2. Agregue un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) que contenga un elemento VSCTCompile, tal y como se muestra en el ejemplo siguiente.  
   
     ```xml  
     <ItemGroup>  
@@ -70,9 +70,9 @@ Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y
   
     ```  
   
-     Siempre debe establecerse en el elemento ResourceName `Menus.ctmenu`.  
+     El elemento ResourceName siempre debe establecerse en `Menus.ctmenu` .  
   
-3. Si el proyecto contiene un archivo .resx, agregar un elemento EmbeddedResource que contiene un elemento MergeWithCTO, tal como se muestra en el ejemplo siguiente.  
+3. Si el proyecto contiene un archivo. resx, agregue un elemento EmbeddedResource que contenga un elemento MergeWithCTO, como se muestra en el ejemplo siguiente.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.resx">  
@@ -84,19 +84,19 @@ Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y
   
      Este marcado debe ir dentro del elemento ItemGroup que contiene recursos incrustados.  
   
-4. Abra el archivo de paquete, normalmente denominado *ProjectName*Package.cs o *ProjectName*Package.vb, en el editor.  
+4. Abra el archivo de paquete, normalmente denominado *ProjectName*package.cs o *projectname*package. VB, en el editor.  
   
-5. Agregue un atributo ProvideMenuResource a la clase de paquete, tal como se muestra en el ejemplo siguiente.  
+5. Agregue un atributo ProvideMenuResource a la clase package, tal como se muestra en el ejemplo siguiente.  
   
     ```csharp  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     ```  
   
-     El primer valor del parámetro debe coincidir con el valor del atributo ResourceName que define en el archivo de proyecto.  
+     El primer valor de parámetro debe coincidir con el valor del atributo ResourceName que definió en el archivo de proyecto.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Creación. Archivos Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
- [Tabla de comandos de Visual Studio (. Archivos Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Procedimientos: Crear una. Archivo de Vsct desde una existente. Archivos de CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
- [Procedimientos: Crear una. Archivo de Vsct desde una existente. Archivo de director de tecnología](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
+ [Tabla de comandos de Visual Studio (. Archivos de Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Cómo: crear un. Archivo Vsct de un existente. Archivo CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
+ [Cómo: crear un. Archivo Vsct de un existente. Archivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
  [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

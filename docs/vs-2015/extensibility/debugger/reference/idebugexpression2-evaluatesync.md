@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Microsoft Docs
+title: 'IDebugExpression2:: EvaluateSync | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 602a823e4066aff40d1f6271a20b480bb4a92f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158433"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método evalúa la expresión de forma sincrónica.  
+Este método evalúa la expresión sincrónicamente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,30 +46,30 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parámetros  
  `dwFlags`  
- [in] Una combinación de marcas de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración que controlan la evaluación de expresiones.  
+ de Combinación de marcas de la enumeración [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que controla la evaluación de expresiones.  
   
  `dwTimeout`  
- [in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
+ de Tiempo máximo, en milisegundos, que se va a esperar antes de que se devuelva desde este método. Use `INFINITE` para esperar indefinidamente.  
   
  `pExprCallback`  
- [in] Este parámetro siempre es un valor null.  
+ de Este parámetro siempre es un valor null.  
   
  `ppResult`  
- [out] Devuelve el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que contiene el resultado de la evaluación de expresiones.  
+ enuncia Devuelve el objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que contiene el resultado de la evaluación de la expresión.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Algunos códigos de error típicos son:  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error. Algunos códigos de error típicos son:  
   
-|Error|DESCRIPCIÓN|  
+|Error|Descripción|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Se está evaluando la otra expresión, y no se admite la evaluación de expresión simultáneas.|  
-|E_EVALUATE_TIMEOUT|Evaluación de tiempo de espera.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Otra expresión se está evaluando actualmente y no se admite la evaluación de expresiones simultáneas.|  
+|E_EVALUATE_TIMEOUT|Se agotó el tiempo de espera de la evaluación.|  
   
 ## <a name="remarks"></a>Comentarios  
- Para la evaluación sincrónica, no es necesario enviar un evento a Visual Studio tras la finalización de la evaluación.  
+ En el caso de la evaluación sincrónica, no es necesario volver a enviar un evento a Visual Studio cuando se completa la evaluación.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para una sencilla `CExpression` objeto que implementa el [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un `CExpression` objeto simple que implementa la interfaz [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .  
   
 ```cpp#  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  
@@ -116,7 +116,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

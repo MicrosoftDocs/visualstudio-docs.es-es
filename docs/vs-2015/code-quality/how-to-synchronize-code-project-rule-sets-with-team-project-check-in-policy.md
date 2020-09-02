@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3c6e7550940f9d2efa5ca228123310f1b861ee76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651599"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Cómo: Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo
@@ -35,7 +35,7 @@ La configuración de análisis de código para los proyectos de código se sincr
 
 1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
-2. Haga clic en **análisis de código**.
+2. Haga clic en **Análisis de código**.
 
 3. En la lista **ejecutar este conjunto de reglas** , haga clic en el conjunto de reglas de la Directiva de inserción en el repositorio.
 
@@ -45,9 +45,9 @@ La configuración de análisis de código para los proyectos de código se sincr
 
 2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
-3. Haga clic en **análisis de código**.
+3. Haga clic en **Análisis de código**.
 
-4. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse... >** .
+4. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse...>** .
 
 5. En el cuadro de diálogo **abrir** , especifique el archivo de conjunto de reglas de la Directiva de protección.
 
@@ -65,6 +65,6 @@ La configuración de análisis de código para los proyectos de código se sincr
 
 5. Abra el cuadro de diálogo Propiedades del proyecto de código y muestre la página **análisis de código** .
 
-6. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse... >** .
+6. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse...>** .
 
 7. En el cuadro de diálogo **abrir** , especifique el archivo de conjunto de reglas.

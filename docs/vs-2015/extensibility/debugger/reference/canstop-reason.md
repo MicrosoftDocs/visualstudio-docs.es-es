@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 277164ea3dfcdabbe24622bb5148ebd75d54f8c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561857"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
+# <a name="canstop_reason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Se usa para determinar si un programa puede detener la ejecución después de alcanzar un punto concreto en la ejecución.  
+Se utiliza para determinar si un programa puede detener la ejecución después de alcanzar un punto determinado en la ejecución.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,18 +46,18 @@ public enum enum_CANSTOP_REASON { 
  Especifica el punto de entrada del programa determinado.  
   
  CANSTOP_STEPIN  
- Especifica la ejecución paso a paso en una función.  
+ Especifica la ejecución paso a paso de una función.  
   
 ## <a name="remarks"></a>Comentarios  
- Se pasa como argumento a la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método confirmar con la sesión de depuración Manager (SDM) si es aceptable para detenerse después de alcanzar el punto de entrada del programa o después de la ejecución paso a paso en una función o método.  
+ Se pasa como argumento al método [GetReason (](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) para confirmar con el administrador de depuración de sesión (SDM) si es correcto detenerse después de alcanzar el punto de entrada del programa o después de entrar en una función o un método.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

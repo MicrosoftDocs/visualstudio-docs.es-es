@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 23b991efaa32e2c1886e6e0cd64bb9d6181190d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187045"
 ---
 # <a name="assignculture-task"></a>AssignCulture (Tarea)
@@ -34,7 +34,7 @@ Esta tarea acepta una lista de elementos que puede contener una cadena de identi
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `AssignCulture`.  
   
-|Parámetro|DESCRIPCIÓN|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AssignedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene la lista de elementos recibidos en el parámetro `Files`, con una entrada de metadatos `Culture` agregada a cada elemento.<br /><br /> Si el elemento entrante del parámetro `Files` ya contiene una entrada de metadatos `Culture`, se usa la entrada de metadatos original.<br /><br /> La tarea solo asigna una entrada de metadatos `Culture` si el nombre de archivo contiene un identificador de referencia cultural válido. El identificador de referencia cultural debe estar entre los dos últimos puntos en el nombre de archivo.|  
 |`AssignedFilesWithCulture`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene el subconjunto de los elementos del parámetro `AssignedFiles` que tienen una entrada de metadatos `Culture`.|  
@@ -42,8 +42,8 @@ Esta tarea acepta una lista de elementos que puede contener una cadena de identi
 |`CultureNeutralAssignedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene la misma lista de elementos que se produce en el parámetro `AssignedFiles`, pero se ha quitado la referencia cultural del nombre de archivo.<br /><br /> La tarea solo quita la referencia cultural del nombre de archivo si es un identificador de referencia cultural válido.|  
 |`Files`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica la lista de archivos con nombres de referencia cultural incluidos a los que se asignará una referencia cultural.|  
   
-## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Observaciones  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [clase base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se ejecuta la tarea `AssignCulture` con la recopilación de objetos `ResourceFiles`.  
@@ -80,6 +80,6 @@ Esta tarea acepta una lista de elementos que puede contener una cadena de identi
 |`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (sin metadatos adicionales)|  
 |`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (` (sin metadatos adicionales)|  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

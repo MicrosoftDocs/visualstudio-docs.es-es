@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac4e3bf3c5dfa20729fe2270121b7649041d9e59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159608"
 ---
 # <a name="instrumentation-method-data-views"></a>Vistas de datos del método de instrumentación
@@ -57,5 +57,5 @@ Esta sección contiene información de referencia para las vistas y los informes
  [Vistas de datos de contención de recursos](../profiling/resource-contention-data-views.md)  
  Información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de contención de subprocesos.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Descripción de los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)

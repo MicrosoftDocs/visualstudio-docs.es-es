@@ -13,13 +13,13 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f558dc11f4f338cd370442bf9feaed419ce29411
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547603"
 ---
-# <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
+# <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Esta estructura representa un elemento de matriz dentro de una matriz.  
@@ -42,24 +42,24 @@ public struct METADATA_ADDRESS_ARRAYELEM {
   
 ## <a name="terms"></a>Términos  
  tokMethod  
- El identificador de la matriz de este elemento es una parte de.  
+ IDENTIFICADOR de la matriz de la que forma parte este elemento.  
   
- [C++] `_mdToken` es un `typedef` para 32 bits `int`.  
+ [C++] `_mdToken` es un `typedef` para un 32 bits `int` .  
   
  dwIndex  
- El índice de este elemento dentro de la matriz.  
+ Índice de este elemento dentro de la matriz.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_ARRAYELEM` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).  
+ Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_ARRAYELEM` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

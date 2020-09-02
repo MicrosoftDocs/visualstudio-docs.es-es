@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145657"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Vista Llamador y destinatario: datos de muestreo de memoria de .NET
@@ -31,7 +31,7 @@ La vista Llamador y destinatario muestra datos de la generación de perfiles de 
   
  Haga doble clic en una fila de función de llamador o destinatario para hacer que esa fila sea la función actual.  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
 |**Nombre de proceso**|Nombre del proceso.|  
@@ -52,8 +52,8 @@ La vista Llamador y destinatario muestra datos de la generación de perfiles de 
 |**Bytes exclusivos**|-   En la función actual, el número de bytes de memoria asignados por la función en la ejecución de la generación de perfiles. Este número no incluye la memoria asignada por las funciones a las que llamó la función actual.<br />-   En una función de llamador, el número de bytes exclusivos de la función actual generados por llamadas de la función de llamador.<br />-   En una función de destinatario, el número de bytes asignados por las instancias de la función generadas por llamadas de la función actual. El número no incluye los bytes asignados por las funciones a las que llamó la función de destinatario.|  
 |**Porcentaje de bytes exclusivos**|El porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|  
   
-## <a name="see-also"></a>Otras referencias  
- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
- [Vista Llamador y destinatario: datos de instrumentación de memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)   
- [Vista Llamador y destinatario: datos de instrumentación](../profiling/caller-callee-view-instrumentation-data.md)
+## <a name="see-also"></a>Consulte también  
+ [Cómo: personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Vista llamador y destinatario: datos de instrumentación de memoria de red](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Vista llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)   
+ [Vista llamador y destinatario: datos de instrumentación](../profiling/caller-callee-view-instrumentation-data.md)

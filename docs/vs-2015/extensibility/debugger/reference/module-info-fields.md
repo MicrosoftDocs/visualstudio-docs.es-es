@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b80235f4ae769acbe3c61ad4b597898ee774d6a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547330"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica las marcas de la información de depuración del módulo.  
+Especifica las marcas para la información del módulo de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -65,59 +65,59 @@ public enum enum_MODULE_INFO_FIELDS { 
   
 ## <a name="members"></a>Miembros  
  MIF_NONE  
- Inicializar o usar ninguno de los campos de la estructura.  
+ Inicializar/usar ninguno de los campos de la estructura.  
   
  MIF_NAME  
- Inicializar o usar el `m_bstrName` campo el [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estructura.  
+ Inicialice o use el `m_bstrName` campo de la estructura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .  
   
  MIF_URL  
- Inicializar o usar el `m_bstrUrl` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_bstrUrl` campo en la `MODULE_INFO` estructura.  
   
  MIF_VERSION  
- Inicializar o usar el `m_bstrVersion` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_bstrVersion` campo en la `MODULE_INFO` estructura.  
   
  MIF_DEBUGMESSAGE  
- Inicializar o usar el `m_bstrDebugMessage` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_bstrDebugMessage` campo en la `MODULE_INFO` estructura.  
   
  MIF_LOADADDRESS  
- Inicializar o usar el `m_addrLoadAddress` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_addrLoadAddress` campo en la `MODULE_INFO` estructura.  
   
  MIF_PREFFEREDADDRESS  
- Inicializar o usar el `m_addrPreferredLoadAddress` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_addrPreferredLoadAddress` campo en la `MODULE_INFO` estructura.  
   
  MIF_SIZE  
- Inicializar o usar el `m_dwSize` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_dwSize` campo en la `MODULE_INFO` estructura.  
   
  MIF_LOADORDER  
- Inicializar o usar el `m_dwLoadOrder` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_dwLoadOrder` campo en la `MODULE_INFO` estructura.  
   
  MIF_TIMESTAMP  
- Inicializar o usar el `m_TimeStamp` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_TimeStamp` campo en la `MODULE_INFO` estructura.  
   
  MIF_URLSYMBOLLOCATION  
- Inicializar o usar el `m_bstrUrlSymbolLocation` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_bstrUrlSymbolLocation` campo en la `MODULE_INFO` estructura.  
   
  MIF_FLAGS  
- Inicializar o usar el `m_dwModuleFlags` campo el `MODULE_INFO` estructura.  
+ Inicializar/usar el `m_dwModuleFlags` campo en la `MODULE_INFO` estructura.  
   
  MIF_ALLFIELDS  
- Inicializar o usar todos los campos en el `MODULE_INFO` estructura.  
+ Inicialice o utilice todos los campos de la `MODULE_INFO` estructura.  
   
 ## <a name="remarks"></a>Comentarios  
- Estos valores se pasan como argumento a la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método para indicar qué campos de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estructura deben inicializarse.  
+ Estos valores se pasan como un argumento al método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) para indicar qué campos de la estructura de [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) se van a inicializar.  
   
- Estos valores también se usan en el `MODULE_INFO` estructura para indicar qué campos se usan y válido.  
+ Estos valores también se usan en la `MODULE_INFO` estructura para indicar qué campos se usan y son válidos.  
   
- Estas marcas se pueden combinar con un bit a bit `OR`.  
+ Estas marcas se pueden combinar con una operación bit a bit `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

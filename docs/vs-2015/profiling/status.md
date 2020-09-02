@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157784"
 ---
-# <a name="status"></a>Situación
+# <a name="status"></a>Estado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La opción **Status** de VSPerfCmd.exe muestra información sobre el estado del generador de perfiles y los procesos de los que actualmente se está generando el perfil.  
@@ -32,7 +32,7 @@ VSPerfCmd.exe /Status
 #### <a name="parameters"></a>Parámetros  
  None  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  La opción **Status** muestra la siguiente información de estado para el generador de perfiles.  
   
  **Nombre del archivo de salida**  
@@ -44,7 +44,7 @@ VSPerfCmd.exe /Status
  **Procesos máximos**  
  El número máximo de procesos de los que se puede generar perfiles al mismo tiempo y el número de procesos actualmente activos.  
   
- **Máximo de subprocesos**  
+ **Número máximo de subprocesos**  
  El número máximo de subprocesos de los que se pueden generar perfiles de una vez.  
   
  **Número de búferes**  
@@ -55,10 +55,10 @@ VSPerfCmd.exe /Status
   
  La opción **Status** muestra la siguiente información de estado para cada proceso del que actualmente se generan perfiles.  
   
- **Process**  
+ **Proceso**  
  Nombre del proceso del que se generan perfiles.  
   
- **Identificador del proceso**  
+ **Id. del proceso**  
  Identificador del sistema del proceso.  
   
  **Número de subprocesos**  
@@ -73,8 +73,8 @@ VSPerfCmd.exe /Status
  **Usuarios con derechos de acceso al monitor**  
  Enumera los nombres de los usuarios que tienen acceso al generador de perfiles. Se puede conceder acceso a usuarios adicionales mediante la opción **Admin** de VSPerfCmd.exe  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)

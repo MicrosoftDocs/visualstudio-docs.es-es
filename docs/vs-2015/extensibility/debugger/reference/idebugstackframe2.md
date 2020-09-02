@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae9cad7102fb9a82deb43b2c8820ef52e77deeed
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547008"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esta interfaz representa un único marco de pila en una pila de llamadas en un subproceso en particular.  
+Esta interfaz representa un marco de pila único en una pila de llamadas de un subproceso determinado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,13 +31,13 @@ IDebugStackFrame2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El motor de depuración (DE) implementa esta interfaz para representar un marco de pila.  
+ El motor DE depuración (DE) implementa esta interfaz para representar un marco de pila.  
   
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Llame a [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) para recuperar un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaz. Llame a [siguiente](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) para recuperar un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructura que contiene el `IDebugStackFrame2` interfaz.  
+## <a name="notes-for-callers"></a>Notas para llamadores  
+ Llame a [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) para recuperar una interfaz [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) . Llame a [Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) para recuperar una estructura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) que contiene la `IDebugStackFrame2` interfaz.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- La tabla siguiente muestran los métodos de `IDebugStackFrame2`.  
+ En la tabla siguiente se muestran los métodos de `IDebugStackFrame2` .  
   
 |Método|Descripción|  
 |------------|-----------------|  
@@ -45,22 +45,22 @@ IDebugStackFrame2 : IUnknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Obtiene el contexto del documento para este marco de pila.|  
 |[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Obtiene el nombre del marco de pila.|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Obtiene una descripción del marco de pila.|  
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Obtiene una representación de dependiente de la máquina del intervalo de direcciones físicas asociado con un marco de pila.|  
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Obtiene un contexto de evaluación para realizar la evaluación de expresiones dentro del contexto actual de un marco de pila y subproceso.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Obtiene el idioma asociado a un marco de pila.|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Obtiene una descripción de las propiedades asociadas con un marco de pila.|  
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumerador para la pila de las propiedades de marco.|  
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Obtiene una representación dependiente del equipo del intervalo de direcciones físicas asociadas a un marco de pila.|  
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Obtiene un contexto de evaluación para realizar la evaluación de expresiones en el contexto actual de un marco de pila y un subproceso.|  
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Obtiene el lenguaje asociado a un marco de pila.|  
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Obtiene una descripción de las propiedades asociadas a un marco de pila.|  
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumerador para las propiedades del marco de pila.|  
 |[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Obtiene el subproceso asociado a un marco de pila.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta interfaz se obtiene solo cuando se ha detenido el programa que se está depurando en un punto de interrupción (ya sea causado por un punto de interrupción establecido por el usuario o una excepción). Desde esta interfaz, se puede obtener el contexto de una expresión para evaluar expresiones, se puede devolver una lista de registros o pueden obtener y examinar la pila de llamadas.  
+ Esta interfaz se obtiene solo cuando el programa que se está depurando se ha detenido en un punto de interrupción (ya sea debido a un punto de interrupción del conjunto de usuarios o una excepción). Desde esta interfaz, se puede obtener un contexto de expresión para evaluar las expresiones, se puede devolver una lista de registros o se puede obtener y examinar la pila de llamadas.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)

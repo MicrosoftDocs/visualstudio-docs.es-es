@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Terminate | Documentos de Microsoft
+title: 'IDebugProgram2:: Terminate | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4673259e4a8ca0d4354037efbc35b63bedfcbc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146348"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
@@ -37,13 +37,13 @@ int Terminate();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Si es posible, el programa se termina y descarga desde el proceso; en caso contrario, el motor de depuración (DE) llevará a cabo cualquier limpieza necesaria.  
+ Si es posible, el programa se terminará y se descargará del proceso. de lo contrario, el motor DE depuración (DE) realizará cualquier limpieza necesaria.  
   
- Este método o el [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) se llama al método por el IDE, normalmente en respuesta al usuario Detener depuración todas. La implementación de este método Idealmente, debería, finalizar el programa dentro del proceso. Si esto no es posible, el DE debe evitar que el programa se ejecute más en este proceso (y realizar cualquier limpieza necesaria). Si el `IDebugProcess2::Terminate` se llamó al método por el IDE, todo el proceso se terminará después el `IDebugProgram2::Terminate` se llama al método.  
+ El IDE llama a este método o al método [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) , normalmente en respuesta al usuario que detiene toda la depuración. La implementación de este método debería, idealmente, terminar el programa dentro del proceso. Si esto no es posible, el DE debe evitar que el programa se ejecute más en este proceso (y realice cualquier limpieza necesaria). Si el `IDebugProcess2::Terminate` IDE llamó al método, todo el proceso finalizará en algún momento después de `IDebugProgram2::Terminate` llamar al método.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

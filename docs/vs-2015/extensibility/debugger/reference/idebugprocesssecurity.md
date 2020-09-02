@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity | Documentos de Microsoft
+title: IDebugProcessSecurity | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 836b971963587aa89440c6e023ee255612d2a087
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187942"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-`IDebugProcessSecurity` se implementa mediante un proveedor de puerto para advertir al usuario que no es seguro asociar al proceso.  
+`IDebugProcessSecurity` lo implementa un proveedor de puerto para advertir al usuario de que la asociación al proceso no es segura.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -29,25 +29,25 @@ IDebugProcessSecurity : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- La tabla siguiente muestran los métodos de `IDebugProcessSecurity`.  
+ En la tabla siguiente se muestran los métodos de `IDebugProcessSecurity` .  
   
-|Método|DESCRIPCIÓN|  
+|Método|Descripción|  
 |------------|-----------------|  
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Obtiene el nombre de usuario desde el proveedor del puerto.|  
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Advierte al usuario que no es seguro asociar al proceso de depuración.|  
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Obtiene el nombre de usuario del proveedor del puerto.|  
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Advierte que un usuario que se asocia al proceso de depuración no es seguro.|  
   
 ## <a name="remarks"></a>Comentarios  
- Implemente esta interfaz para mostrar una advertencia y permitir que el usuario pueda cancelar si el proceso al que va a asociar puede considerarse no seguro.  
+ Implemente esta interfaz para mostrar una advertencia y permitir que el usuario cancele si el proceso al que se va a adjuntar se puede considerar no seguro.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
- [Puertos](../../../extensibility/debugger/ports.md)   
+## <a name="see-also"></a>Consulte también  
+ [Puerto](../../../extensibility/debugger/ports.md)   
  [Proveedores de puertos](../../../extensibility/debugger/port-suppliers.md)   
- [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

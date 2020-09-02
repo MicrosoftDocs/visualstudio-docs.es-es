@@ -1,5 +1,5 @@
 ---
-title: Personalización de Windows de código mediante la API heredada | Microsoft Docs
+title: Personalización de ventanas de código mediante la API heredada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,25 +11,25 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f15c649b8d857d2e920bb957e5975d296749cb86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62556142"
 ---
-# <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalización de Windows de código mediante la API heredada
+# <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalización de las ventanas de código mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Una ventana de código es un objeto de ventana de documento que admita una o varias vistas de texto. Las características exactas de una ventana de código dependen del servicio de lenguaje asociado. En el modo de interfaz de múltiples documentos (MDI), la ventana de código es el marco MDI secundario.  
+Una ventana de código es un objeto de ventana de documento que admite una o varias vistas de texto. Las características exactas de una ventana de código dependen del servicio de lenguaje asociado. En el modo de interfaz de múltiples documentos (MDI), la ventana de código es el marco secundario MDI.  
   
- Ventanas de código se controlan mediante servicios de lenguaje, y cada servicio de lenguaje puede proporcionar su propio administrador de ventanas de código. Esto permite que el servicio de lenguaje agregar sus propios elementos gráficos a la ventana de código, como subrayados ondulados, colores y mucho más. Para obtener más información sobre cómo crear una ventana principal, consulte [crear instancias del Editor por Core con la API heredada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
+ Los servicios de lenguaje controlan las ventanas de código y cada servicio de lenguaje puede proporcionar su propio administrador de ventanas de código. Esto permite al servicio de lenguaje agregar sus propios elementos gráficos a la ventana de código, como subrayados ondulados, coloración, etc. Para obtener más información sobre cómo crear una ventana principal, vea [crear una instancia del editor principal mediante la API heredada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
   
- Una ventana de código es un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que tiene una vista de texto y cualquier elemento gráfico situado en el objeto. Cuando se crea la ventana de código durante la creación de instancias del núcleo del editor, el servicio de lenguaje puede adjuntar un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> a la ventana de código, como se muestra en la siguiente ilustración.  
+ Una ventana de código es un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que tiene una vista de texto y cualquier elemento gráfico que esté en el objeto. Al crear la ventana de código durante la creación de instancias del editor principal, el servicio de lenguaje puede adjuntar un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> a la ventana de código, como se muestra en la siguiente ilustración.  
   
  ![Gráfico de CodeWindow](../extensibility/media/vscodewindow.gif "objeto vscodewindow")  
-Ventana Código  
+Ventana de código  
   
- El servicio de lenguaje implementa el Administrador de ventanas de código y es responsable de administrar los elementos gráficos, como una barra desplegable. La ventana de código llama a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> método durante la inicialización de la ventana de código. Cuando se realiza esta llamada, el servicio de lenguaje puede agregar una barra desplegable o una barra de botones (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) a la ventana de código.  
+ El servicio de lenguaje implementa el administrador de ventanas de código y es responsable de administrar los elementos gráficos, como una barra desplegable. La ventana de código llama al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> método durante la inicialización de la ventana de código. Cuando se realiza esta llamada, el servicio de lenguaje puede Agregar una barra desplegable o una barra de botones ( <xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient> ) a la ventana de código.  
   
 ## <a name="in-this-section"></a>En esta sección  
  `Customizing Code Windows by Using the Legacy API`  
@@ -38,13 +38,13 @@ Ventana Código
  [Cómo: Hospedar un editor en otro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Explica cómo hospedar un segundo editor dentro de una ventana del editor.  
   
- [Cómo: Desencadenar eventos cuando el editor pierde el enfoque](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
- Explica cómo asociar una vista de documento a un objeto de datos del documento.  
+ [Cómo: Desencadenar eventos cuando el editor pierde el foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ Explica cómo adjuntar una vista de documento a un objeto de datos de documento.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [El Editor básico de creación de instancias mediante la API heredada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
+ [Crear instancias del editor principal mediante la API heredada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
  [Acceso a la vista de texto mediante la API heredada](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

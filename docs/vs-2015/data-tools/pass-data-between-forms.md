@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e14165ba2111f40898c00b3d01950425c042070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652908"
 ---
 # <a name="pass-data-between-forms"></a>Pasar datos de un formulario a otro
@@ -51,7 +51,7 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
 
 - Pasar datos de un formulario a otro.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para completar las tareas de este tutorial, necesitará:
 
 - Acceso a la base de datos de ejemplo Northwind.
@@ -74,13 +74,13 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
 
 1. En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
 4. En la página **Elegir un modelo de base de datos**, compruebe que se ha especificado **Conjunto de datos** y haga clic en **Siguiente**.
 
-5. En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:
+5. En la página **elegir la conexión de datos** , realice una de las acciones siguientes:
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
@@ -144,13 +144,13 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
     > [!NOTE]
     > Compruebe que la sintaxis de los parámetros sea correcta para su base de datos. Por ejemplo, en Microsoft Access, la cláusula WHERE tendría el siguiente aspecto: `WHERE CustomerID = ?`.
 
-6. Haga clic en **Siguiente**.
+6. Haga clic en **Next**.
 
-7. En **rellenar un nombre de DataTableMethod**, escriba `FillByCustomerID`.
+7. En **rellenar un nombre de DataTableMethod**, escriba `FillByCustomerID` .
 
 8. Desactive la opción **Devolver un DataTable** y haga clic en **Siguiente**.
 
-9. Haga clic en **Finalizar**.
+9. Haga clic en **Finalizar**
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Cree un método en Form2 para pasar datos a
 
@@ -180,7 +180,7 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
      [!code-csharp[VbRaddataDisplaying#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs#2)]
      [!code-vb[VbRaddataDisplaying#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb#2)]
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 #### <a name="to-run-the-application"></a>Para ejecutar la aplicación
 
@@ -195,5 +195,5 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
 
 - Agregar funcionalidad para guardar los datos de nuevo en la base de datos. Para obtener más información, vea [guardar datos en la base de datos](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

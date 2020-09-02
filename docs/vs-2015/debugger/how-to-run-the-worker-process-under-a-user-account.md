@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ejecutar el proceso de trabajo en una cuenta de usuario | Documentos de Microsoft
+title: 'Cómo: ejecutar el proceso de trabajo en una cuenta de usuario | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157867"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedimiento Ejecutar un proceso de trabajo en una cuenta de usuario
@@ -34,7 +34,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
   
 ## <a name="procedure"></a>Procedimiento  
   
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Para ejecutar aspnet_wp.exe en una cuenta de usuario  
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Para ejecutar aspnet_wp.exe en una cuenta de usuario  
   
 1. Abra el archivo machine.config, ubicado en el equipo en la carpeta CONFIG, en la ruta de acceso en la que instaló el motor en tiempo de ejecución.  
   
@@ -77,7 +77,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
   
     Aparecerá el cuadro de diálogo **Seleccionar usuarios, equipos o grupos** .  
   
-10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: Nombredominio\nombreusuario.  
+10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: nombreDeDominio\nombreDeUsuario.  
   
 11. En el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** , dé al usuario **Control total**y, a continuación, haga clic en **Aceptar** para cerrar el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** .  
   
@@ -85,5 +85,5 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
   
 13. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Propiedades de los archivos ASP.NET temporales** .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
 [Depuración ASP.NET: Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)  

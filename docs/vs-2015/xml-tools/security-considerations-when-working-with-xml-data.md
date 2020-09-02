@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 491e8cf8f9441180e66259ed295e04e8a1a90493
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656131"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Consideraciones de seguridad al trabajar con datos XML
@@ -24,7 +24,7 @@ En este tema se describen los aspectos de seguridad que debe conocer al trabajar
 ## <a name="xml-editor"></a>Editor XML
  El Editor XML se basa en el Editor de texto de Visual Studio. Depende de las clases <xref:System.Xml> y <xref:System.Xml.Xsl> para controlar muchos de los procesos XML.
 
-- Las transformaciones XSLT se ejecutan en un nuevo dominio de aplicación. Las transformaciones XSLT están en *espacio aislado*. es decir, la Directiva de seguridad de acceso del código del equipo se utiliza para determinar los permisos restringidos en función de dónde se encuentra la hoja de estilos XSLT. Por ejemplo, las hojas de estilos de una ubicación de Internet tienen los permisos más restringidos, mientras que las hojas de estilos que se copian en el disco duro se ejecutan con plena confianza.
+- Las transformaciones XSLT se ejecutan en un nuevo dominio de aplicación. Estas transformaciones son de *espacio aislado*; es decir, se utiliza la directiva de seguridad de acceso del código del equipo para determinar los permisos restringidos según donde se encuentre la hoja de estilos XSLT. Por ejemplo, las hojas de estilos de una ubicación de Internet tienen los permisos más restringidos, mientras que las hojas de estilos que se copian en el disco duro se ejecutan con plena confianza.
 
 - La clase <xref:System.Xml.Xsl.XslCompiledTransform> se utiliza para compilar el XSLT al lenguaje intermedio de Microsoft con el fin de acelerar el rendimiento durante la ejecución.
 
@@ -41,5 +41,5 @@ En este tema se describen los aspectos de seguridad que debe conocer al trabajar
 
 - El evaluador de expresiones XSLT se carga mediante el motor de depuración administrado. Este motor asume que todo el código se ejecuta desde el equipo local del usuario. En consecuencia, la clase <xref:System.Xml.Xsl.XslCompiledTransform> descarga el archivo XSLT en el equipo local del usuario. La posibilidad de que ocurra un aumento en los privilegios de ejecución se mitiga con la ejecución de todas las transformaciones XSLT en un nuevo dominio de aplicación con permisos restringidos
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Dominios de aplicación](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

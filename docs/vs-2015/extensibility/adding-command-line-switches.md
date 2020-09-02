@@ -1,5 +1,5 @@
 ---
-title: Adición de modificadores de línea de comandos | Microsoft Docs
+title: Agregando modificadores de la línea de comandos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e28a3f303849458a407b212d3aad1a8c198f6d25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562281"
 ---
 # <a name="adding-command-line-switches"></a>Adición de modificadores de la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede agregar modificadores de línea de comandos que se aplican a su VSPackage, cuando se ejecuta devenv.exe. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del modificador y sus propiedades. En este ejemplo, se agrega el conmutador MySwitch para una subclase de VSPackage llamado **AddCommandSwitchPackage** sin argumentos y con el VSPackage que se cargan automáticamente.  
+Puede agregar modificadores de la línea de comandos que se aplican a su VSPackage cuando se ejecuta devenv.exe. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del modificador y sus propiedades. En este ejemplo, se agrega el modificador mySwitch para una subclase de VSPackage denominada **AddCommandSwitchPackage** sin argumentos y el VSPackage se carga automáticamente.  
   
 ```csharp  
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]  
 ```  
   
- Los parámetros con nombre se muestran en la tabla siguiente  
+ Los parámetros con nombre se muestran en la tabla siguiente.  
   
  Argumentos  
- El número de argumentos para el conmutador. Puede ser "*", o una lista de argumentos.  
+ El número de argumentos para el modificador. Puede ser "*", o una lista de argumentos.  
   
  DemandLoad  
- Cargar el VSPackage automáticamente si se establece en 1, en caso contrario, se establece en 0.  
+ Cargue el VSPackage automáticamente si se establece en 1; de lo contrario, establézcalo en 0.  
   
  HelpString  
- La Ayuda de cadena o identificador de recurso de la cadena para mostrar con **devenv /?**.  
+ Cadena de ayuda o identificador de recurso de la cadena que se va a mostrar con **devenv/?**.  
   
- Name  
- El conmutador.  
+ Nombre  
+ Modificador.  
   
  PackageGuid  
- El GUID del paquete.  
+ Identificador único global (GUID) del paquete.  
   
- El primer valor de argumentos es normalmente 0 o 1. Un valor especial de ' *' puede usarse para indicar que el resto de la línea de comandos completo es el argumento. Esto puede ser útil para escenarios donde un usuario debe pasar una cadena de comandos del depurador de depuración.  
+ El primer valor de arguments es normalmente 0 o 1. Se puede usar un valor especial de ' * ' para indicar que todo el resto de la línea de comandos es el argumento. Esto puede ser útil para depurar escenarios en los que un usuario debe pasar una cadena de comandos del depurador.  
   
- Es el valor DemandLoad `true` (1) o `false` (0) indica que se debe cargar automáticamente el VSPackage.  
+ El valor de DemandLoad es `true` (1) o `false` (0) indica que el VSPackage debe cargarse automáticamente.  
   
- ¿El valor de HelpString es el identificador de recurso de la cadena que aparece en el devenv /? Presentación de la Ayuda. Este valor debe estar en el formulario "#nnn" donde nnn es un entero. El valor de cadena en el archivo de recursos debe acabar con un carácter de nueva línea.  
+ El valor de HelpString es el identificador de recurso de la cadena que aparece en devenv/? Pantalla de ayuda. Este valor debe tener el formato "#nnn", donde nnn es un entero. El valor de cadena del archivo de recursos debe terminar en un carácter de nueva línea.  
   
- El valor de nombre es el nombre del conmutador.  
+ El valor de Name es el nombre del modificador.  
   
  El valor de PackageGuid es el GUID del paquete que implementa este modificador. El IDE usa este GUID para buscar el VSPackage en el registro al que se aplica el modificador de línea de comandos.  
   
-## <a name="retrieving-command-line-switches"></a>Recuperando los modificadores de línea de comandos  
- Cuando se carga el paquete, puede recuperar los modificadores de línea de comandos mediante los pasos siguientes.  
+## <a name="retrieving-command-line-switches"></a>Recuperar modificadores de la línea de comandos  
+ Una vez cargado el paquete, puede recuperar los modificadores de la línea de comandos completando los pasos siguientes.  
   
-1. En el VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementación, llamada `QueryService` en <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> para obtener el <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfaz.  
+1. En la implementación del VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> , llame a `QueryService` en <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> para obtener la <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfaz.  
   
-2. Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> para recuperar los modificadores de línea de comandos que el usuario especificado.  
+2. Llame <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> a para recuperar los modificadores de la línea de comandos especificados por el usuario.  
   
-   El código siguiente muestra cómo averiguar si se ha especificado el modificador de línea de comandos MySwitch por el usuario:  
+   En el código siguiente se muestra cómo averiguar si el modificador de la línea de comandos mySwitch lo ha escrito el usuario:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  
@@ -74,11 +74,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
 ```  
   
- Es su responsabilidad para comprobar los modificadores de línea de comandos cada vez que se carga el paquete.  
+ Es su responsabilidad comprobar los modificadores de la línea de comandos cada vez que se carga el paquete.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
- [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)   
+ [Modificadores de línea de comandos de devenv](../ide/reference/devenv-command-line-switches.md)   
  [Utilidad CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
  [Archivos .Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

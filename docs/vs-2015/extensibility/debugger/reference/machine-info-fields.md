@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cce5300a795922162f2e0b979e553f4235ceacc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147449"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica qué tipo de información que se va a recuperar de una máquina concreta.  
+Especifica qué tipo de información se va a recuperar para un equipo determinado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,29 +45,29 @@ public enum enum_MACHINE_INFO_FIELDS { 
   
 ## <a name="members"></a>Miembros  
  MCIF_NAME  
- Inicializar o usar el `bstrName` campo en la estructura.  
+ Inicializar/usar el `bstrName` campo en la estructura.  
   
  MCIF_FLAGS  
- Inicializar o usar el `Flags` campo en la estructura.  
+ Inicializar/usar el `Flags` campo en la estructura.  
   
  MIF_ALL  
- Inicializar o usar todos los campos de la estructura.  
+ Inicialice o utilice todos los campos de la estructura.  
   
 ## <a name="remarks"></a>Comentarios  
- Estos valores se pasan a la [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) método para indicar qué miembros de la [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) estructura deben inicializarse.  
+ Estos valores se pasan al método [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) para indicar qué miembros de la estructura de [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) se van a inicializar.  
   
- También se usa en el `Fields` miembro de la `MACHINE_INFO` estructura para indicar qué campos se usan y válido.  
+ También se usa en el `Fields` miembro de la `MACHINE_INFO` estructura para indicar qué campos se usan y son válidos.  
   
- Estas marcas se pueden combinar con un bit a bit `OR`.  
+ Estas marcas se pueden combinar con una operación bit a bit `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

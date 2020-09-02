@@ -1,5 +1,5 @@
 ---
-title: Asociación y desasociación a un programa | Microsoft Docs
+title: Adjuntar y desasociar a un programa | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,44 +12,44 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146445"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Asociación a un programa y desasociación
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Asociar al depurador requiere el envío de la secuencia correcta de métodos y eventos con los atributos adecuados.  
+Para adjuntar el depurador es necesario enviar la secuencia correcta de métodos y eventos con los atributos adecuados.  
   
 ## <a name="sequence-of-methods-and-events"></a>Secuencia de métodos y eventos  
   
-1. El Administrador de depuración de la sesión (SDM) llama a la [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método.  
+1. El administrador de depuración de sesión (SDM) llama al método [AutoAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  
   
-    Según el modelo de proceso del motor DE depuración, el `IDebugProgramNodeAttach2::OnAttach` método devuelve uno de los métodos siguientes, que determina lo que sucede a continuación.  
+    Según el modelo de proceso del motor DE depuración (DE), el `IDebugProgramNodeAttach2::OnAttach` método devuelve uno de los siguientes métodos, que determina lo que ocurre a continuación.  
   
-    Si `S_FALSE` se devuelve, el motor de depuración se haya asociado correctamente al programa. En caso contrario, el [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md) método se llama para completar el proceso de conexión.  
+    Si `S_FALSE` se devuelve, el motor de depuración se ha adjuntado correctamente al programa. De lo contrario, se llama al método [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) para completar el proceso de asociación.  
   
-    Si `S_OK` se devuelve es la DE que se cargue en el mismo proceso que el SDM. El SDM realiza las siguientes tareas:  
+    Si `S_OK` se devuelve, el de se va a cargar en el mismo proceso que el SDM. El SDM realiza las siguientes tareas:  
   
-   1. Las llamadas [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obtener la información del motor de la DE.  
+   1. Llama a [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obtener la información del motor de de.  
   
-   2. Crea conjuntamente la DE.  
+   2. Crea el DE.  
   
-   3. Las llamadas [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+   3. Llama a [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-2. Los envíos DE un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) en el SDM con un `EVENT_SYNC` atributo.  
+2. El DE envía un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) al SDM con un `EVENT_SYNC` atributo.  
   
-3. Los envíos DE un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) en el SDM con un `EVENT_SYNC` atributo.  
+3. El DE envía un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) al SDM con un `EVENT_SYNC` atributo.  
   
-4. Los envíos DE un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) en el SDM con un `EVENT_SYNC_STOP` atributo.  
+4. El DE envía un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) al SDM con un `EVENT_SYNC_STOP` atributo.  
   
-   Cuando se desasocia un programa es un sencillo proceso de dos pasos, como se indica a continuación:  
+   Desasociar de un programa es un proceso sencillo y de dos pasos, como se indica a continuación:  
   
-5. Las llamadas SDM [Detach](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
+5. El SDM llama a [detach](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
   
-6. Los envíos DE un [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
+6. El DE envía un [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

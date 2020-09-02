@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases | Microsoft Docs
+title: 'IDebugBinder3:: GetAllAliases | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc2075ccc37d280640f7559b1454990ee6684f25
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555753"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
@@ -44,16 +44,16 @@ int GetAllAliases(
   
 #### <a name="parameters"></a>Parámetros  
  `uRequest`  
- [in] El número máximo de alias para devolver (especifica la longitud de la matriz pasada en `ppAliases`).  
+ de Número máximo de alias que se van a devolver (especifica la longitud de la matriz pasada a `ppAliases` ).  
   
  `ppAliases`  
- [in, out] Matriz que se rellena con los alias (si se trata de un valor null y `uRequest` es 0, se devolverá el recuento de los alias que pueden devolverse mediante `puFetched`).  
+ [in, out] Matriz para rellenar los alias (si se trata de un valor NULL y `uRequest` es 0, devolverá el recuento de alias que se pueden devolver `puFetched` ).  
   
  `puFetched`  
- [out] Devuelve el número de alias obtenido.  
+ enuncia Devuelve el número de alias obtenidos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

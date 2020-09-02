@@ -1,5 +1,5 @@
 ---
-title: Ver comandos de menú | Microsoft Docs
+title: Comandos del menú Ver | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6f8efd65c60b28c0ba50419770351d62cb615dec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146474"
 ---
 # <a name="view-menu-commands"></a>Comandos del menú Ver
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El **vista** menú proporciona comandos para controlar la Spy ++ interfaz de usuario.  
+En el menú **Ver** se proporcionan comandos para controlar la interfaz de usuario de Spy++.  
   
  **Fuente**  
- Se abre el **fuente** cuadro de diálogo, donde puede seleccionar una fuente para su uso en la vista actual de Spy ++.  
+ Abre el cuadro de diálogo **fuente** , donde puede seleccionar una fuente para usarla en la vista actual de Spy + +.  
   
- **Toolbar**  
+ **Barra de herramientas**  
  Oculta o muestra la barra de herramientas.  
   
  **Barra de estado**  
  Oculta o muestra la barra de estado.  
   
  **Propiedades**  
- Se abre el **propiedades** cuadro de diálogo de la vista activa.
+ Abre el cuadro de diálogo **propiedades** de la vista activa.

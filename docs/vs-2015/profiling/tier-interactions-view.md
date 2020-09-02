@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145544"
 ---
 # <a name="tier-interactions-view"></a>Interacciones de capas (Vista)
@@ -39,9 +39,9 @@ La generación de perfiles de interacción de capas proporciona información adi
   
 ## <a name="master-pane"></a>Panel principal  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
-|**Nombre**|-   Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />-   Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|  
+|**Name**|-   Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />-   Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|  
 |**Base de datos**|El nombre de la base de datos (solo filas de conexión de base de datos).|  
 |**Recuento**|El número total de solicitudes generadas por el proceso, la página web o la conexión de base de datos.|  
 |**Tiempo total transcurrido**|El tiempo total dedicado a ejecutar cualquier solicitud del proceso, la página web o la conexión de base de datos.|  
@@ -51,7 +51,7 @@ La generación de perfiles de interacción de capas proporciona información adi
   
 ## <a name="database-connection-details-pane"></a>Panel Detalles de conexión de la base de datos  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Texto de comando**|La consulta SQL de la solicitud.|  
 |**Número de consultas**|El número de veces que se ejecutó la consulta.|  

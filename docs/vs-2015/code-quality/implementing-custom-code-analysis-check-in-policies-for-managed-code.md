@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1cf759e01e5f152f2220124c90f145bfbbe3c01d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651583"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de protección de análisis de código personalizadas para el código administrado
@@ -39,7 +39,7 @@ Una directiva de protección de análisis de código especifica un conjunto de r
 
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para crear la carpeta de control de versiones para el conjunto de reglas de la Directiva de inserción en el repositorio
 
-1. En [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], expanda el nodo proyecto de equipo y, a continuación, haga clic en **control de código fuente**.
+1. En [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] , expanda el nodo proyecto de equipo y, a continuación, haga clic en **control de código fuente**.
 
 2. En el panel **carpetas** , haga clic con el botón secundario en el proyecto de equipo y, a continuación, haga clic en **nueva carpeta**.
 
@@ -47,7 +47,7 @@ Una directiva de protección de análisis de código especifica un conjunto de r
 
 #### <a name="to-create-the-check-in-policy-rule-set"></a>Para crear el conjunto de reglas de la Directiva de inserción en el repositorio
 
-1. En el menú **archivo** , seleccione **nuevo**y, a continuación, haga clic en **archivo**.
+1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Archivo**.
 
 2. En la lista **categorías** , haga clic en **General**.
 
@@ -82,7 +82,7 @@ Una directiva de protección de análisis de código especifica un conjunto de r
 
 3. En la lista **Directiva de protección** , haga doble clic en **análisis de código**y asegúrese de que la casilla **aplicar análisis de código para código administrado** está activada.
 
-4. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Select conjunto de reglas de > de control de código fuente**.
+4. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Select Rule Set from Source Control>** .
 
 5. Escriba la ruta de acceso del archivo del conjunto de reglas de la Directiva de protección en el control de versiones.
 
@@ -112,10 +112,10 @@ Una directiva de protección de análisis de código especifica un conjunto de r
 
 4. Si es necesario, haga clic en las opciones adecuadas en las listas **configuración** y **plataforma** .
 
-5. Para ejecutar el análisis de código cada vez que se compila el proyecto de código con la configuración especificada, active la casilla **Habilitar análisis de código al compilar (define la constante CODE_ANALYSIS)** .
+5. Para ejecutar el análisis de código cada vez que se compila el proyecto de código con la configuración especificada, active la casilla **Habilitar análisis de código al compilar (define CODE_ANALYSIS constante)** .
 
 6. Para omitir el código en los componentes de otras empresas, active la casilla **suprimir resultados de código generado** .
 
-7. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse... >** .
+7. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse...>** .
 
 8. Especifique la versión local del archivo de conjunto de reglas de la Directiva de inserción en el repositorio.

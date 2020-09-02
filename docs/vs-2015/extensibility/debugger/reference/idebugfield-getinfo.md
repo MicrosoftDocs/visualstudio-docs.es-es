@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetInfo | Microsoft Docs
+title: 'IDebugField:: GetInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4b4b17242d1d2098c085acae0b88c91ecfb5441
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547772"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método obtiene que se puede mostrar información sobre el campo.  
+Este método obtiene información que se pueda mostrar sobre el campo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,14 +42,14 @@ int GetInfo(
   
 #### <a name="parameters"></a>Parámetros  
  `dwFields`  
- [in] Una combinación de [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) constantes que selecciona la información que se mostrará. Si el campo representa un símbolo, esto suele ser el nombre de símbolo y el tipo.  
+ de Combinación de constantes de [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) que selecciona la información que se va a mostrar. Si el campo representa un símbolo, suele ser el nombre y el tipo de símbolo.  
   
  `pFieldInfo`  
- [out] Devuelve la información de la proporcionada [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estructura.  
+ enuncia Devuelve la información de la estructura de [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) proporcionada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)

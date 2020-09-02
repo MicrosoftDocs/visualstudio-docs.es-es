@@ -1,5 +1,5 @@
 ---
-title: 'Error: Error en una comprobación de seguridad porque el servicio de administración IIS no respondió | Documentos de Microsoft'
+title: 'Error: Error de una comprobación de seguridad debido a la falta de respuesta del servicio de administración de IIS | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65eb724d14123292a0694623bf46859f8a3966f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197090"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Error: Error de una comprobación de seguridad debido a la falta de respuesta del servicio de administración de IIS
@@ -34,7 +34,7 @@ Este error se produce cuando el servicio de administración de IIS no responde. 
   
 - Reinstale IIS mediante el subprograma **Agregar o quitar programas** del Panel de control.  
   
-- -o bien-  
+- o bien  
   
 - Quite IIS del equipo mediante el subprograma Agregar o quitar programas del Panel de control. Si el problema persiste tras quitar IIS, compruebe el Registro y asegúrese de que la siguiente clave ya no existe:  
   
@@ -42,7 +42,7 @@ Este error se produce cuando el servicio de administración de IIS no responde. 
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
     ```  
   
-     -o bien-  
+     o bien  
   
 - Deshabilite el servicio de administración de IIS mediante el subprograma Herramientas administrativas del Panel de control. Esto deshabilitará IIS en el equipo.  
   
@@ -50,5 +50,5 @@ Este error se produce cuando el servicio de administración de IIS no responde. 
   
      Para obtener más información, consulte la documentación de IIS.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Retroceder o avanzar en la memoria | Documentos de Microsoft
+title: Procedimiento Retroceso o avance en la memoria | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157856"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Procedimiento Retroceso o avance en la memoria
@@ -51,7 +51,7 @@ Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la 
   
 - Haga clic en la flecha situada en la parte superior o inferior de la barra de desplazamiento vertical.  
   
-## <a name="see-also"></a>Vea también  
- [Ventana Memoria](../debugger/memory-windows.md)   
- [Procedimientos: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)   
+## <a name="see-also"></a>Consulte también  
+ [Ventanas de memoria](../debugger/memory-windows.md)   
+ [Cómo: usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)   
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

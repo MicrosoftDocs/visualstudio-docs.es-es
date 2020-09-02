@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Abrir la vista mensajes desde Buscar ventana | Documentos de Microsoft
+title: Procedimiento Apertura de una vista Mensajes desde Buscar ventana | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,45 +13,45 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157886"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Procedimiento Apertura de la vista Mensajes desde la ventana Buscar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le resultará cómodo utilizar el **Buscar ventana** cuadro de diálogo para seleccionar una ventana de destino y, a continuación, abra una vista de mensajes de esa ventana.  
+Es posible que le resulte cómodo usar el cuadro de diálogo **Buscar ventana** para seleccionar una ventana de destino y luego abrir una vista Mensajes de esa ventana.  
   
-### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Para abrir una ventana de vista de mensajes mediante el cuadro de diálogo Buscar ventana  
+### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Para abrir una ventana de una vista Mensajes mediante el cuadro de diálogo Buscar ventana  
   
-1. Organizar las ventanas para que estén visibles Spy ++ y la ventana de destino.  
+1. Organice las ventanas de modo que se puedan ver la ventana de Spy++ y la ventana de destino.  
   
-2. Desde el **Spy** menú, elija **Buscar ventana**.  
+2. En el menú de **Spy**, seleccione **Buscar ventana**.  
   
-     El [cuadro de diálogo Buscar ventana](../debugger/find-window-dialog-box.md) se abre.  
+     Se abre el [Cuadro de diálogo Buscar ventana](../debugger/find-window-dialog-box.md).  
   
-3. Desde el **Windows** pestaña, arrastre el **herramienta de búsqueda** a través de la ventana de destino. A medida que arrastra la herramienta, el **Buscar ventana** cuadro de diálogo muestra los detalles de la ventana seleccionada.  
+3. En la pestaña **Ventanas**, arrastre la **Herramienta de búsqueda** a la ventana de destino. Al arrastrar la herramienta, el cuadro de diálogo **Buscar ventana** muestra detalles sobre la ventana seleccionada.  
   
      -O bien-  
   
-     Si tiene el identificador de la ventana que desea examinar (por ejemplo, si se copian desde el depurador), puede escribirla en el **controlar** cuadro de texto.  
+     Si tiene el identificador de la ventana que quiere examinar (por ejemplo, copiado del depurador), puede escribirlo en el cuadro de texto **Identificador**.  
   
-4. En **mostrar**, seleccione **mensajes**.  
+4. En **Mostrar**, seleccione **Mensajes**.  
   
 5. Haga clic en **Aceptar**.  
   
-     Un espacio en blanco [vista mensajes](../debugger/messages-view.md) abre la ventana y un **mensajes** menú se agrega a la barra de herramientas de Spy ++.  
+     Se abre una ventana en blanco de una [Vista Mensajes](../debugger/messages-view.md) y se agrega un menú **Mensajes** a la barra de herramientas de Spy++.  
   
-6. Desde el **mensajes** menú, elija **opciones de registro**.  
+6. En el menú **Mensajes**, seleccione **Opciones de registro**.  
   
-     El [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md) se abre.  
+     Se abre el [Cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md).  
   
-7. Seleccione las opciones para los mensajes que desea mostrar.  
+7. Seleccione las opciones de los mensajes que quiere mostrar.  
   
-8. Presione **Aceptar** para empezar a mensajes de registro.  
+8. Presione **Aceptar** para empezar a registrar mensajes.  
   
-     Dependiendo de las opciones seleccionadas, los mensajes comenzará a transmitir en la ventana activa de la vista de mensajes.  
+     En función de las opciones seleccionadas, los mensajes comienzan a transmitirse a la ventana de la vista Mensajes activa.  
   
-9. Cuando tenga suficientes mensajes, elija **detener el registro** desde el **mensajes** menú.
+9. Cuando tenga suficientes mensajes, seleccione **Detener registro** en el menú **Mensajes**.

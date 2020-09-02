@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91a4a50ecc745c0b56167d6a5dbb1932af7ed2bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145420"
 ---
 # <a name="understanding-sampling-data-values"></a>Introducción a los valores de datos de muestreo
@@ -52,6 +52,6 @@ El método de generación de perfiles de *muestreo* de las herramientas de gener
 ## <a name="exclusive-percent"></a>Porcentaje de exclusivas  
  El porcentaje del número total de muestras exclusivas de la generación de perfiles que son muestras exclusivas de la función o el rango de datos.  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)   
  [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

@@ -1,5 +1,5 @@
 ---
-title: Conceptos básicos del depurador | Documentos de Microsoft
+title: Conceptos básicos del depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1228b75b1e0e579012f0c2a04a100cb615ae1687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145702"
 ---
 # <a name="debugger-basics"></a>Conceptos básicos del depurador
@@ -60,5 +60,5 @@ El depurador de Visual Studio permite observar el comportamiento del programa en
  [Seguridad del depurador](../debugger/debugger-security.md)  
  Describe procedimientos de seguridad para el depurador.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)
