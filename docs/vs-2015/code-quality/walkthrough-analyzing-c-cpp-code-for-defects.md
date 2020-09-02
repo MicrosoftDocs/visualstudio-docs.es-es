@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: analizarC++ código C en busca de defectos | Microsoft Docs'
+title: 'Tutorial: analizar código de C/C++ para detectar defectos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c822dbcc6a1ece2040da22a3442dd584c3926d97
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272438"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en previsión de defectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tutorial se muestra cómo analizar CC++ /code para detectar posibles defectos de código mediante la herramienta de análisis deC++ código para C/Code.  
+En este tutorial se muestra cómo analizar código de C/C++ para detectar posibles defectos de código mediante la herramienta de análisis de código para código C/C++.  
   
- En este tutorial, se recorre el proceso de usar el análisis de código para analizar elC++ código C/para detectar posibles defectos de código.  
+ En este tutorial, se recorre el proceso de usar el análisis de código para analizar el código de C/C++ en busca de posibles defectos de código.  
   
  Deberá completar los pasos siguientes:  
   
@@ -38,7 +38,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
   
 - Anote el código fuente para mejorar el análisis del defecto de código.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Prerrequisitos  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
@@ -48,7 +48,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
   
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>Para ejecutar el análisis de defectos de código en código nativo  
   
-1. Abra la solución demo en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Abra la solución demo en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      La solución demo ahora rellena **Explorador de soluciones**.  
   
@@ -64,7 +64,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
   
 5. Haga clic en **Análisis de código**.  
   
-6. Active la casilla **Habilitar análisis de código paraC++ C/al compilar** .  
+6. Haga clic en la casilla **Habilitar análisis de código para C/C++ al compilar** .  
   
 7. Vuelva a generar el proyecto CodeDefects.  
   
@@ -74,13 +74,13 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
   
 1. En el menú **Ver** , haga clic en **Lista de errores**.  
   
-     Según el perfil de desarrollador elegido en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], es posible que tenga que señalar a **otras ventanas** en el menú **Ver** y, a continuación, hacer clic en **lista de errores**.  
+     Según el perfil de desarrollador elegido en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , es posible que tenga que señalar a **otras ventanas** en el menú **Ver** y, a continuación, hacer clic en **lista de errores**.  
   
 2. En el **lista de errores**, haga doble clic en la siguiente ADVERTENCIA:  
   
      ADVERTENCIA C6230: conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.  
   
-     El editor de código muestra la línea que causó la advertencia en la función `bool``ProcessDomain()`. Esta advertencia indica que se está usando un HRESULT en una instrucción ' if ' en la que se espera un resultado booleano.  
+     El editor de código muestra la línea que causó la advertencia en la función `bool``ProcessDomain()` . Esta advertencia indica que se está usando un HRESULT en una instrucción ' if ' en la que se espera un resultado booleano.  
   
 3. Corrija esta advertencia mediante la macro SUCCEEDED. El código debe ser similar al código siguiente:  
   
@@ -100,7 +100,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
   
 ### <a name="to-treat-warning-as-an-error"></a>Para tratar la advertencia como un error  
   
-1. En el archivo bug. cpp, agregue la siguiente instrucción `#pragma` al principio del archivo para tratar la advertencia C6001 como un error:  
+1. En el archivo bug. cpp, agregue la siguiente `#pragma` instrucción al principio del archivo para tratar la advertencia C6001 como un error:  
   
     ```  
     #pragma warning (error: 6001)  
@@ -126,7 +126,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
   
 3. Haga clic en **Análisis de código**.  
   
-4. Active la casilla **Habilitar análisis de código paraC++ C/al compilar** .  
+4. Active la casilla **Habilitar análisis de código para C/C++ al compilar** .  
   
 5. Vuelva a generar el proyecto Annotations.  
   

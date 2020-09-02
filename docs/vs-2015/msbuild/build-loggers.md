@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160433"
 ---
 # <a name="build-loggers"></a>Registradores de compilación
@@ -44,12 +44,12 @@ Los registradores proporcionan un método para personalizar el resultado de la c
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>Respuesta a los valores verbosity del registrador  
- En algunos casos, es posible que solo se desee registrar información de un evento si el modificador **/verbosity** de MSBuild.exe contiene un determinado valor. En este ejemplo, el controlador de eventos <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> solo registra un mensaje si la propiedad <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, que se establece mediante el modificador **/verbosity**, es igual a <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`.  
+ En algunos casos, es posible que solo se desee registrar información de un evento si el modificador **/verbosity** de MSBuild.exe contiene un determinado valor. En este ejemplo, el <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> controlador de eventos solo registra un mensaje si la <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> propiedad, que es establecida por el modificador **/verbosity** , es igual a <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>Especificación de un registrador  
- Cuando el registrador se compila en un ensamblado, es necesario indicar a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que utilice dicho registrador durante las compilaciones. Esto se realiza utilizando el modificador **/logger** con MSBuild.exe. Para obtener más información sobre los modificadores disponibles para MSBuild.exe, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
+ Cuando el registrador se compila en un ensamblado, es necesario indicar a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que utilice dicho registrador durante las compilaciones. Esto se hace mediante el modificador **/Logger** con MSBuild.exe. Para obtener más información sobre los modificadores disponibles para MSBuild.exe, vea [referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
   
  La siguiente línea de comandos compila el proyecto `MyProject.csproj` y utiliza la clase de registrador implementada en `SimpleLogger.dll`. El modificador **/nologo** oculta la pancarta y el mensaje de copyright y el modificador **/noconsolelogger** deshabilita el registrador de consola de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] predeterminado.  
   
@@ -65,7 +65,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>DESCRIPCIÓN  
+### <a name="description"></a>Descripción  
  El ejemplo siguiente contiene el código completo del registrador.  
   
 ### <a name="code"></a>Código  
@@ -75,7 +75,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>DESCRIPCIÓN  
+### <a name="description"></a>Descripción  
  El ejemplo siguiente muestra cómo implementar un registrador que escribe el registro en un archivo en lugar de mostrarlo en la ventana de la consola.  
   
 ### <a name="code"></a>Código  
@@ -83,6 +83,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>Comentarios  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)

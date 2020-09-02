@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Elegir métodos de recopilación | Microsoft Docs
+title: 'Cómo: Elegir métodos de recolección | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199805"
 ---
-# <a name="how-to-choose-collection-methods"></a>Procedimiento Elección de métodos de recopilación
+# <a name="how-to-choose-collection-methods"></a>Cómo: Elegir métodos de recolección
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] admiten tres métodos de recopilación de datos de rendimiento: muestreo, instrumentación y simultaneidad. También puede utilizar el método de muestreo o de instrumentación para recopilar datos de duración y de asignación de memoria de .NET.  
@@ -37,7 +37,7 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs
   
 - En la primera página del asistente, seleccione una de las siguientes opciones:  
   
-|Opción|DESCRIPCIÓN|  
+|Opción|Descripción|  
 |------------|-----------------|  
 |**Muestreo de la CPU**|Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU.|  
 |**Instrumentación**|Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida.|  
@@ -96,7 +96,7 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs
   
 3. Haga clic en **Simultaneidad**.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+ [Descripción de los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
  [Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)

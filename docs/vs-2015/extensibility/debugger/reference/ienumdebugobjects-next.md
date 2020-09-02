@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::Next | Microsoft Docs
+title: 'IEnumDebugObjects:: Next | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 51978f3e77cc2c02768860ae91e9db7d0cff2495
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160951"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
@@ -44,17 +44,17 @@ int Next(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
+ [in] Número de elementos que se van a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
   
  `rgelt`  
- [in, out] Matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) elementos que deben rellenarse.  
+ [in, out] Matriz de elementos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que se va a rellenar.  
   
  `pceltFetched`  
- [out] Devuelve el número de elementos realmente devueltos en `rgelt`.  
+ enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

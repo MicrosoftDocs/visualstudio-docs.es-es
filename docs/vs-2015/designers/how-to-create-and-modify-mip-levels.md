@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99d2b07a64781929962ff37823ddcbf219598331
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664480"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Cómo: Crear y modificar niveles de MIP
@@ -44,5 +44,5 @@ En este documento se muestra cómo usar el **Editor de imágenes** para generar 
 > [!NOTE]
 > Si no necesita modificar el contenido de los niveles de MIP individuales (como haría para lograr determinados efectos), se recomienda que genere los mapas MIP desde la textura de origen en tiempo de compilación. Esto ayuda a garantizar que los niveles de MIP permanezcan sincronizados con la textura de origen, ya que las modificaciones realizadas en un nivel de MIP no se propagan automáticamente a otros niveles. Para obtener más información sobre cómo generar mapas MIP en tiempo de compilación, vea [Cómo: Exportar una textura que contiene mapas MIP](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md)

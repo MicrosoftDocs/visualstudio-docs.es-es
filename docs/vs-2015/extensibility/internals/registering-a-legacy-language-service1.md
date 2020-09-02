@@ -1,5 +1,5 @@
 ---
-title: Registrar una función de lenguaje heredado1 | Documentos de Microsoft
+title: Registrando un lenguaje heredado Service1 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d78050f455e83b43dc114ad80fc084dc5604103
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188867"
 ---
-# <a name="registering-a-legacy-language-service"></a>Registrar un servicio de lenguaje heredado
+# <a name="registering-a-legacy-language-service"></a>Registro de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En managed package framework (MPF), el servicio de lenguaje es ofrecido por un VSPackage (consulte [VSPackages](../../extensibility/internals/vspackages.md)) y se registra con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mediante la adición de entradas y claves del registro. Este proceso de registro se realiza en parcialmente durante la instalación y parcialmente en tiempo de ejecución.  
+En Managed Package Framework (MPF), el servicio de lenguaje es ofrecidos por un VSPackage (vea [VSPackages](../../extensibility/internals/vspackages.md)) y se registra con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] agregando claves y entradas del registro. Este proceso de registro se realiza en parte durante la instalación y en parte en tiempo de ejecución.  
   
 ## <a name="register-the-language-service-by-using-attributes"></a>Registrar el servicio de lenguaje mediante atributos  
- Los siguientes atributos se usan para registrar un servicio de lenguaje.  
+ Los atributos siguientes se usan para registrar un servicio de lenguaje.  
   
 - <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
   
@@ -35,10 +35,10 @@ En managed package framework (MPF), el servicio de lenguaje es ofrecido por un V
   
 - <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
   
-  A continuación se explican estos atributos  
+  Estos atributos se explican a continuación.  
   
 ### <a name="provideserviceattribute"></a>ProvideServiceAttribute  
- Este atributo registra el servicio de lenguaje como un servicio.  
+ Este atributo registra el servicio de lenguaje como servicio.  
   
 ### <a name="example"></a>Ejemplo  
   
@@ -57,7 +57,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute  
- Este atributo registra el servicio de lenguaje específicamente como un servicio de lenguaje. Permite establecer las opciones que especifican las características que ofrece el servicio de lenguaje. El ejemplo muestra un subconjunto de las opciones que puede proporcionar un servicio de lenguaje. Para obtener el conjunto completo de opciones de servicio de lenguaje, consulte <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>.  
+ Este atributo registra el servicio de lenguaje específicamente como un servicio de lenguaje. Permite establecer las opciones que especifican las características que ofrece el servicio de lenguaje. En el ejemplo se muestra un subconjunto de las opciones que un servicio de lenguaje puede proporcionar. Para obtener el conjunto completo de opciones del servicio de lenguaje, vea <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> .  
   
 ### <a name="example"></a>Ejemplo  
   
@@ -82,7 +82,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute  
- Este atributo asocia el servicio de lenguaje con una extensión de archivo. Siempre que se carga un archivo con esa extensión, en cualquier proyecto, el servicio de lenguaje está iniciado y utilizar para mostrar el contenido del archivo.  
+ Este atributo asocia su servicio de lenguaje a una extensión de archivo. Cada vez que se carga un archivo con esa extensión, en cualquier proyecto se inicia el servicio de lenguaje y se usa para mostrar el contenido del archivo.  
   
 ### <a name="example"></a>Ejemplo  
   
@@ -101,7 +101,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute  
- Este atributo registra una ubicación del código que se obtienen las plantillas de expansión o fragmento de código. Esta información se usa por la **Explorador de fragmentos de código** y por el editor cuando se inserta un fragmento de código en el archivo de origen.  
+ Este atributo registra una ubicación de la que se obtienen la expansión de código o las plantillas de fragmento de código. El **Explorador de fragmentos de código** y el editor usan esta información cuando se inserta un fragmento de código en el archivo de código fuente.  
   
 ### <a name="example"></a>Ejemplo  
   
@@ -127,10 +127,10 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute  
- Este atributo registra una página de propiedades que se mostrará en el **opciones** cuadro de diálogo en el **Editor de texto** categoría. Utilice uno de estos atributos para cada página que se mostrará para el servicio de lenguaje. Si necesita organizar sus páginas en una estructura de árbol, utilice atributos adicionales para definir cada nodo del árbol.  
+ Este atributo registra una página de propiedades que se mostrará en el cuadro de diálogo **Opciones** en la categoría **Editor de texto** . Use uno de estos atributos para cada página que se va a mostrar para el servicio de lenguaje. Si necesita organizar las páginas en una estructura de árbol, use atributos adicionales para definir cada nodo del árbol.  
   
 ### <a name="example"></a>Ejemplo  
- En este ejemplo muestra dos páginas de propiedades, **opciones** y **sangría**y un nodo que contiene la segunda página de propiedades.  
+ En este ejemplo se muestran dos páginas de propiedades, **Opciones** y **sangría**, y un nodo que contiene la segunda página de propiedades.  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;  
@@ -162,10 +162,10 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="proffer-the-language-service-at-runtime"></a>Ofrecer el servicio de lenguaje en tiempo de ejecución  
- Cuando se carga el paquete de idioma, debe indicar a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que el servicio de lenguaje está listo. Para ello proffering el servicio. Esto se hace en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método. Además, debe iniciar un temporizador que llama a su servicio de lenguaje durante los períodos de inactividad, por lo que se pueden realizar el análisis en segundo plano. Este temporizador inactivo también se usa para actualizar las propiedades del documento si ha implementado alguna a través de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase. Para admitir un temporizador, debe implementar el paquete el <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> interfaz (solo la <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> método debe implementarse totalmente; los métodos restantes pueden devolver los valores predeterminados).  
+ Cuando se cargue el paquete de idioma, debe indicar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que el servicio de lenguaje está listo. Para ello, proffering el servicio. Esto se hace en el método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>. Además, debe iniciar un temporizador que llame al servicio de lenguaje durante períodos de inactividad, de modo que se pueda realizar el análisis en segundo plano. Este temporizador inactivo también se utiliza para actualizar las propiedades del documento si ha implementado a través de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase. Para admitir un temporizador, el paquete debe implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> interfaz (solo <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> es necesario implementar completamente el método; los métodos restantes pueden devolver valores predeterminados).  
   
 ### <a name="example"></a>Ejemplo  
- En este ejemplo se muestra un enfoque típico para proffering un servicio y proporcionar un temporizador inactivo.  
+ Este ejemplo muestra un enfoque típico para profferingr un servicio y proporcionar un temporizador inactivo.  
   
 ```csharp  
   

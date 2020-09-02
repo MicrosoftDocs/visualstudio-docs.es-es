@@ -29,6 +29,8 @@ ms.locfileid: "78263114"
 Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask` `TaskFactory`.  El nombre del elemento es el nombre del parámetro.  Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<ParameterGroup>
+ \<Parameter>
 
 ## <a name="syntax"></a>Sintaxis
 

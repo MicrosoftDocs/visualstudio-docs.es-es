@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235035"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
@@ -76,7 +76,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
      Los buenos puntos de partida para la depuración son el constructor y el método de inicialización. También puede establecer puntos de interrupción en el área que desea evaluar, como un comando de menú. Para habilitar los puntos de interrupción, debe ejecutar en el depurador.
 
-    1. En el menú **Proyecto**, haga clic en **Propiedades**.
+    1. En el menú **Proyecto** , haga clic en **Propiedades**.
 
     2. En el cuadro de diálogo **páginas de propiedades** , seleccione la pestaña **depurar** .
 
@@ -111,7 +111,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
 1. En el caso de código administrado, asegúrese de que las rutas de acceso de referencia son correctas.
 
-   1. En el menú **Proyecto**, haga clic en **Propiedades**.
+   1. En el menú **Proyecto** , haga clic en **Propiedades**.
 
    2. Seleccione la pestaña **referencias** en el cuadro de diálogo **páginas de propiedades** y asegúrese de que todas las rutas de acceso son correctas. Como alternativa, puede usar la **Examinador de objetos** para buscar los objetos a los que se hace referencia.
 
@@ -125,4 +125,4 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
 ## <a name="see-also"></a>Consulte también
 - [VSPackages](../extensibility/internals/vspackages.md)
-- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

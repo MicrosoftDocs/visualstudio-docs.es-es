@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72e5f82fa3ca4b7ca909ee07e5b77a31b3e20879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650971"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista de tareas, Entorno, Opciones (Cuadro de diálogo)
@@ -44,7 +44,7 @@ Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentar
 
  Mostrar nombres de archivo solo cuando se selecciona, la columna **archivo** de la **lista de tareas** muestra solo los nombres de los archivos que se van a editar, no sus rutas de acceso completas.
 
-## <a name="tokens"></a>tokens
+## <a name="tokens"></a>Tokens
  Al insertar un comentario en el código cuyo texto comienza con un token de la **Lista de tokens**, la **Lista de tareas** mostrará el comentario como nueva entrada cada vez que se abra el archivo para su edición. Haga clic en la entrada **Lista de tareas** para saltar directamente a la línea de comentario del código. Para obtener más información, consulte [Usar la Lista de tareas](../../ide/using-the-task-list.md).
 
  Lista de tokens muestra una lista de tokens y permite agregar o quitar tokens personalizados. Los tokens de comentarios distinguen entre mayúsculas y minúsculas en Visual C# y Visual C++, pero no en Visual Basic.
@@ -65,5 +65,5 @@ Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentar
 > [!NOTE]
 > No puede eliminar el token de comentario predeterminado ni cambiar su nombre, pero puede cambiar su nivel de prioridad.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Usar el lista de tareas](../../ide/using-the-task-list.md) [establecer marcadores en el cuadro de](../../ide/setting-bookmarks-in-code.md) [diálogo Opciones de entorno](../../ide/reference/environment-options-dialog-box.md) de código

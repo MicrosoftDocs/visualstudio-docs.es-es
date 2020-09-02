@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160863"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Vista Módulos: datos de muestreo de memoria de .NET
@@ -25,7 +25,7 @@ La vista Módulos de los datos de asignación de memoria de .NET recopilados con
   
  Los números de línea del archivo de origen de las instrucciones que asignan memoria se enumeran bajo el nodo de función y las direcciones de las instrucciones que realizan la asignación se enumeran bajo el nodo de línea. Los valores inclusivos y exclusivos siempre son los mismos para los datos de línea y de instrucción.  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Name**|El nombre del módulo, función, número de línea o dirección de instrucción.|  
 |**Id. de proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
@@ -43,8 +43,8 @@ La vista Módulos de los datos de asignación de memoria de .NET recopilados con
 |**Bytes exclusivos**|-   Para una función, el número total de bytes asignados por la función. El número no incluye los bytes asignados en las funciones llamadas por esta función.<br />-   Para un módulo, la suma de bytes exclusivos que fueron asignados por las funciones del módulo.<br />-   Para una línea o instrucción, el número total de objetos asignados por esta línea o instrucción.|  
 |**Porcentaje de bytes exclusivos**|El porcentaje de todos los bytes que se asignaron durante la generación de perfiles que son bytes exclusivos del módulo, función, línea o instrucción.|  
   
-## <a name="see-also"></a>Otras referencias  
- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
- [Vista Módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Vista Módulos](../profiling/modules-view-sampling-data.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Vista módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Vista módulos](../profiling/modules-view-sampling-data.md)   
  [Vista Módulos](../profiling/modules-view-instrumentation-data.md)

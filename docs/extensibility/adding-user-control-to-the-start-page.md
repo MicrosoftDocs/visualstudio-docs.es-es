@@ -14,10 +14,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 8000c6cc067f61a64c71b8c8ac4f5c0176504cd4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903387"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Agregar control de usuario a la página de inicio
@@ -143,7 +143,7 @@ Para que este control esté disponible para el proyecto de la página de inicio,
 
 2. En la pestaña **proyectos** , seleccione **WebUserControl** y, a continuación, haga clic en **Aceptar**.
 
-3. En el menú **Compilar** , haga clic en **Compilar solución**.
+3. En el menú **Compilar**, haga clic en **Compilar solución**.
 
     Al compilar la solución, el control de usuario estará disponible para IntelliSense para otros archivos de la solución.
 
@@ -189,7 +189,7 @@ Para que este control esté disponible para el proyecto de la página de inicio,
 
     Se debe mostrar la página de inicio personalizada. Si desea cambiar cualquier archivo, debe cerrar la instancia experimental, realizar los cambios, copiar y pegar los archivos modificados y, a continuación, volver a abrir la instancia experimental para ver los cambios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Controles de contenedor de WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
 - [Tutorial: agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

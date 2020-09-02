@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Modificar el punto de pivote de un modelo 3D | Microsoft Docs
+title: 'Cómo: Modificar el punto de pivote de un modelo 3D | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: baeae2af825edc6a0032445288de7311b1ab1ae1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664404"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Procedimiento Modificación del punto de pivote de un modelo 3D
+# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Cómo: Modificar el punto de pivote de un modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Editor de modelos para modificar el *punto de pivote* de un modelo 3D. El punto de pivote es el punto en el espacio que define el centro matemático del objeto para la rotación y la escala.
@@ -32,7 +32,7 @@ En este documento se muestra cómo usar el Editor de modelos para modificar el *
 
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>Para modificar el punto de pivote de un modelo 3D
 
-1. Comience con un modelo 3D existente, como el que se describe en [How a: Cree un modelo 3D básico ](../designers/how-to-create-a-basic-3-d-model.md).
+1. Comience con un modelo 3D existente, como el que se describe en [How to: Create a Basic 3D Model](../designers/how-to-create-a-basic-3-d-model.md).
 
 2. Cambie al modo de pivote. En la barra de herramientas **Modo del Editor de modelos** haga clic en el botón **Modo de pivote** para activar este modo. Aparece un cuadro alrededor del botón **Modo de pivote** para indicar que el Editor de modelos está ahora en modo de pivote. En el modo de pivote, operaciones como la traslación afectan al punto de pivote del objeto en lugar de a la estructura del objeto en el espacio global.
 
@@ -49,5 +49,5 @@ En este documento se muestra cómo usar el Editor de modelos para modificar el *
 
    ![Modelo de una casa que tiene un punto de pivote modificado](../designers/media/digit-modified-model.png "Digit-Modified-Model")
 
-## <a name="see-also"></a>Vea también
- [Cómo: Crear un modelo 3D básico ](../designers/how-to-create-a-basic-3-d-model.md) el [Editor de modelos](../designers/model-editor.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: crear un editor de modelos de modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md) [Model Editor](../designers/model-editor.md)

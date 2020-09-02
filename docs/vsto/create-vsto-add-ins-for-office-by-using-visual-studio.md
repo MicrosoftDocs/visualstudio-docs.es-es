@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986159"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Crear complementos de VSTO para Office con Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "72986159"
  Para obtener la información más reciente acerca del desarrollo de Office, vea el [Centro para desarrolladores de Microsoft Office](https://developer.microsoft.com/office/docs).
 
 ## <a name="in-this-section"></a>En esta sección
-- [Introducción &#40;al desarrollo de Office en Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Introducción &#40;desarrollo de Office en Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 
  Proporciona vínculos a información acerca de cómo configurar un equipo de desarrollo para crear soluciones de Office, cómo empezar a crear soluciones de Office y novedades del desarrollo de Office en Visual Studio.
 
@@ -53,7 +53,7 @@ ms.locfileid: "72986159"
 
  Proporciona información acerca de cómo automatizar Excel, crear soluciones de Excel y comprender los problemas de globalización específicos de Excel.
 
-- [Soluciones de InfoPath](infopath-solutions.md)
+- [soluciones de InfoPath](infopath-solutions.md)
 
  Proporciona información sobre cómo crear plantillas de formulario y complementos de VSTO para InfoPath.
 
@@ -73,7 +73,7 @@ ms.locfileid: "72986159"
 
  Proporciona información sobre cómo automatizar Visio y crear complementos de VSTO de Visio.
 
-- [Soluciones de Word](word-solutions.md)
+- [soluciones para Word](word-solutions.md)
 
  Proporciona información acerca de cómo automatizar Word y crear soluciones de Word.
 
@@ -97,15 +97,15 @@ ms.locfileid: "72986159"
 
  Proporciona vínculos a aplicaciones de ejemplo y temas que proporcionan instrucciones paso a paso para realizar tareas habituales.
 
-- [Desarrollo de &#40;Office de referencia general en Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
+- [Referencia general &#40;desarrollo de Office en Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
 
  Proporciona vínculos a información detallada sobre los ensamblados de interoperabilidad primarios, los manifiestos, los elementos de la interfaz de usuario y los mensajes de error de Office.
 
-- [Desarrollo de &#40;Office de referencia administrada en Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
+- [Referencia administrada &#40;desarrollo de Office en Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
 
  Proporciona vínculos a información acerca de los tipos y espacios de nombres de API que se usan en los proyectos de Office para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y los tipos que se usan en los proyectos de Office destinados a la .NET Framework 3,5, consulte la siguiente sección de referencia en la documentación de Visual Studio 2008: [2007 referencia administrada del sistema](managed-reference-office-development-in-visual-studio.md).
 
-- [Referencia &#40;de la API no administrada desarrollo de Office en Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Referencia de la API no administrada &#40;desarrollo de Office en Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Contiene vínculos a información sobre las interfaces COM que se pueden usar para realizar acciones como cargar y descargar complementos de VSTO administrados en las aplicaciones de Office.
 
@@ -118,4 +118,4 @@ ms.locfileid: "72986159"
 
 - [Desarrollo de aplicaciones en Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Contiene vínculos a temas que explican cómo puede usar Visual Studio para diseñar, desarrollar, depurar e implementar aplicaciones Web, servicios Web XML y aplicaciones cliente tradicionales.
 
-- [Programación de .NET Framework en Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Describe el desarrollo de aplicaciones con el .NET Framework en Visual Basic y C#visual.
+- [Programación de .NET Framework en Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Describe el desarrollo de aplicaciones con el .NET Framework en Visual Basic y Visual C#.

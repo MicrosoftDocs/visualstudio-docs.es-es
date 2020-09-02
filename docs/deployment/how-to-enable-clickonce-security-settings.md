@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382437"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Cómo: Habilitar la configuración de seguridad para aplicaciones ClickOnce
@@ -34,7 +34,7 @@ La seguridad de acceso del código de las aplicaciones ClickOnce debe estar habi
 
 1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2. Haga clic en la pestaña **Seguridad**.
+2. Haga clic en la pestaña **Security** (Seguridad).
 
 3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** .
 
@@ -47,7 +47,7 @@ La seguridad de acceso del código de las aplicaciones ClickOnce debe estar habi
 
 1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2. Haga clic en la pestaña **Seguridad**.
+2. Haga clic en la pestaña **Security** (Seguridad).
 
 3. Desactive la casilla **Habilitar la configuración de seguridad de ClickOnce** .
 

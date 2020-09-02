@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382f0ad34e8f3bf5188429733851003402e8ba1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650979"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>Pestañas y ventanas, Entorno, Opciones (Cuadro de diálogo)
@@ -23,5 +23,5 @@ ms.locfileid: "72650979"
 
 Utilice esta página para establecer opciones sobre cómo se comportan las ventanas con pestañas en el panel del editor y cómo se comportan las ventanas de herramientas. Para obtener más información, consulte [How to: Arrange and Dock Windows](../../misc/how-to-arrange-and-dock-windows.md) (Procedimiento para organizar y acoplar ventanas).
 
-## <a name="see-also"></a>Otras referencias
- [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>Consulte también
+ [Opciones de entorno (cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)

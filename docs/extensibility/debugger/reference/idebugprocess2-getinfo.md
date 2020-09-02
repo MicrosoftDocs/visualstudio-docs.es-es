@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetInfo ? Microsoft Docs
+title: 'IDebugProcess2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f437c1a15b136d08ea7e57987c346844044228c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724027"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
@@ -43,10 +43,10 @@ int GetInfo(
 
 ## <a name="parameters"></a>Parámetros
 `Fields`\
-[en] Una combinación de valores de la [enumeración PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) que especifica qué campos del `pProcessInfo` parámetro se deben rellenar.
+de Combinación de valores de la enumeración [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) que especifica qué campos del `pProcessInfo` parámetro se van a rellenar.
 
 `pProcessInfo`\
-[fuera] Una [estructura PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) que se rellena con una descripción del proceso.
+enuncia [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) estructura que se rellena con una descripción del proceso.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

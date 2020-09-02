@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Exportar un sombreador | Microsoft Docs
+title: 'Cómo: Exportar un sombreador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2225ce416fed4e97e998a50f70a0dc4c25908476
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664466"
 ---
-# <a name="how-to-export-a-shader"></a>Procedimiento Exportar un sombreador
+# <a name="how-to-export-a-shader"></a>Cómo: Exportar un sombreador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Diseñador de sombras para exportar un sombreador del lenguaje DGSL (Directed Graph Shader Language) para poder usarlo en la aplicación.
@@ -30,9 +30,9 @@ En este documento se muestra cómo usar el Diseñador de sombras para exportar u
 
 #### <a name="to-export-a-shader"></a>Para exportar un sombreador
 
-1. En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo **Gráfico de sombreador visual (.dgsl)** .
+1. En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo **Gráfico de sombreador visual (.dgsl)**.
 
-     Si no tiene ningún archivo **Gráfico de sombreador visual (.dgsl)** para abrirlo, cree uno tal como se explica en [Cómo: Cree un sombreador de color básico ](../designers/how-to-create-a-basic-color-shader.md).
+     Si no tiene un archivo **gráfico de sombreador visual (. DGSL)** para abrir, cree uno como se describe en [Cómo: crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md).
 
 2. En la barra de herramientas del **Diseñador de sombras**, seleccione **Avanzadas**, **Exportar**, **Exportar como**. Se muestra el cuadro de diálogo **Exportar sombreador**.
 
@@ -48,5 +48,5 @@ En este documento se muestra cómo usar el Diseñador de sombras para exportar u
 
 4. En el cuadro combinado **Nombre de archivo**, especifique un nombre para el sombreador exportado y, después, pulse el botón **Guardar**.
 
-## <a name="see-also"></a>Vea también
- [Cómo: Crear un sombreador de color básico ](../designers/how-to-create-a-basic-color-shader.md) [Diseñador de sombras](../designers/shader-designer.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: crear un diseñador de sombras de sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md) [Shader Designer](../designers/shader-designer.md)
