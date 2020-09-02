@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b090e85005ffcab6498adb6f85885cd86c9813fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150193"
 ---
-# <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
+# <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Establece el valor de un registro.  
@@ -36,14 +36,14 @@ HRESULT put_registerValue ( 
   
 #### <a name="parameters"></a>Parámetros  
  `index`  
- [in] Un valor de la [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md) enumeración que especifica el registro para escribir en.  
+ de Un valor de la enumeración de [enumeración CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) que especifica el registro en el que se va a escribir.  
   
  `NewVal`  
- [in] El nuevo valor del registro.  
+ de Nuevo valor de registro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [Enumeración CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

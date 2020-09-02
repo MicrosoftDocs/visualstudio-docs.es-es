@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9199ea7a74f92fec5d26c1b2a3e178224780f9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204262"
 ---
 # <a name="groups-element"></a>Elemento Groups
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contiene entradas que definen los grupos de comandos de un paquete VSPackage.  
+Contiene entradas que definen los grupos de comandos de un VSPackage.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,22 +37,22 @@ Contiene entradas que definen los grupos de comandos de un paquete VSPackage.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[Group (Elemento)](../extensibility/group-element.md)|Representa un grupo de comandos única.|  
-|[Groups (Elemento)](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos de un paquete VSPackage.|  
+|[Elemento Group](../extensibility/group-element.md)|Representa un solo grupo de comandos.|  
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos de un VSPackage.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[Commands (Elemento)](../extensibility/commands-element.md)|Representa la colección de comandos en la barra de herramientas de VSPackage.|  
+|[Commands, elemento](../extensibility/commands-element.md)|Representa la colección de comandos de la barra de herramientas de VSPackage.|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -64,6 +64,6 @@ Contiene entradas que definen los grupos de comandos de un paquete VSPackage.
 </Groups>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547282"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapas de código mediante la edición de los archivos DGML
@@ -36,7 +36,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
 > [!NOTE]
 > Para crear mapas de código, debe tener Visual Studio Enterprise Edition. Cuando se edita el mapa de código en Visual Studio, los atributos y elementos de DGML que no se usan se eliminan al guardar el archivo .dgml. Visual Studio también crea automáticamente elementos de código cuando se agregan nuevos vínculos manualmente.  Al guardar el archivo .dgml, los atributos que agregara a un elemento se podrían reorganizar en orden alfabético.
 
-## <a name="group-code-elements"></a><a name="OrganizeNodes"></a>Elementos de código de grupo
+## <a name="group-code-elements"></a><a name="OrganizeNodes"></a> Elementos de código de grupo
  Puede agregar nuevos grupos o convertir los nodos existentes en un grupo.
 
 1. Abra el archivo .dgml en un editor XML o de texto.
@@ -77,7 +77,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
 
     Para obtener más información sobre el `Category` atributo, vea [asignar categorías a elementos de código y vínculos](#AssignCategories).
 
-## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a>Cambiar el estilo del mapa
+## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a> Cambiar el estilo del mapa
  Si desea cambiar el color de fondo y el color de borde del gráfico, edite el archivo .dgml del mapa. Para cambiar el estilo de los elementos de código y los vínculos, vea [cambiar el estilo de elementos de código y vínculos](#Highlight).
 
 1. Abra el archivo .dgml en un editor XML o de texto.
@@ -105,7 +105,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
     </DirectedGraph>
     ```
 
-## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a>Cambiar el estilo de elementos de código y vínculos
+## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a> Cambiar el estilo de elementos de código y vínculos
 
 ### <a name="CreateCustomStyles"></a>
  Puede aplicar estilos personalizados a los siguientes elementos de código:
@@ -149,7 +149,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
     Foreground="ColorNameOrHexadecimalValue"
     ```
 
-     Iconos
+     Icono
 
     ```xml
     Icon="IconFilePathLocation"
@@ -286,29 +286,29 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
 
     Esta expresión usa la sintaxis de la forma de Backus-Naur (BNF) siguiente:
 
-    \<Expression>:: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124;\<Number>
+    \<Expression> :: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
     \<BinaryExpression>::= \<Expression> \<Operator>\<Expression>
 
-    \<UnaryExpression>::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-"\<Expression>
+    \<UnaryExpression> ::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
 
-    \<Operator>:: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "y" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> :: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "y" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings>:: = \<MemberBindings> &#124; \<MemberBinding> "."\<MemberBinding>
+    \<MemberBindings> :: = \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>
 
-    \<MemberBinding>:: = \<MethodCall> &#124;\<PropertyGet>
+    \<MemberBinding> :: = \<MethodCall> &#124; \<PropertyGet>
 
-    \<MethodCall>::= \<Identifier> "(" \<MethodArgs> ")"
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet>:: = (Identificador)
+    \<PropertyGet> :: = (Identificador)
 
-    \<MethodArgs>:: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124;\<empty>
+    \<MethodArgs> :: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    \<Identifier>::= [^. ]*
+    \<Identifier> ::= [^. ]*
 
-    \<Literal>:: = literal de cadena de comillas simples o dobles
+    \<Literal> :: = literal de cadena de comillas simples o dobles
 
-    \<Number>:: = cadena de dígitos con separador decimal opcional
+    \<Number> :: = cadena de dígitos con separador decimal opcional
 
     Puede especificar varios `<Condition/>` elementos, que deben ser true para aplicar el estilo.
 
@@ -435,7 +435,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
 </DirectedGraph>
 ```
 
-## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a>Asignar propiedades a elementos de código y vínculos
+## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a> Asignar propiedades a elementos de código y vínculos
  Los elementos de código y los vínculos se pueden organizar asignándoles propiedades. Por ejemplo, puede seleccionar elementos de código que tengan propiedades concretas para que pueda agruparlos, cambiar su estilo u ocultarlos.
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>Para asignar una propiedad a un elemento de código
@@ -480,7 +480,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
     </Properties>
     ```
 
-## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a>Asignar categorías a elementos de código y vínculos
+## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a> Asignar categorías a elementos de código y vínculos
  Las siguientes secciones muestran cómo se pueden organizar los elementos de código mediante categorías y cómo se pueden crear categorías jerárquicas con las que podrá organizar los elementos de código y agregar atributos a categorías secundarias mediante herencia.
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>Para asignar una categoría a un elemento de código
@@ -551,7 +551,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
 
      En este ejemplo, el fondo de `MyFirstNode` es verde porque su atributo `Category` hereda el atributo `Background` de `MyParentCategory`.
 
-## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a>Vincular documentos o direcciones URL a elementos de código y vínculos
+## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a> Vincular documentos o direcciones URL a elementos de código y vínculos
  Si desea vincular documentos o direcciones URL a elementos de código o vínculos, edite el archivo .dgml del mapa y agregue un atributo `Reference` al elemento `<Node/>` —para elementos de código— o el elemento `<Link/>` —para un vínculo—. Después, puede abrir y ver ese contenido del elemento de código o vínculo. El atributo `Reference` especifica la ruta de acceso del contenido. Puede tratarse de una ruta de acceso absoluta o de una ruta de acceso relativa a la ubicación del archivo .dgml.
 
 > [!CAUTION]

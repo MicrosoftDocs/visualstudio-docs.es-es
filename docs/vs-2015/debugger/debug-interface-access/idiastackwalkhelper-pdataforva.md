@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5af921caa989d7279bb9f52751c452d91045cf3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150082"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Devuelve el bloque de datos PDATA asociado con la dirección virtual.  
+Devuelve el bloque de datos de PDATA asociado a la dirección virtual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,24 +38,24 @@ HRESULT pdataForVA( 
   
 #### <a name="parameters"></a>Parámetros  
  `va`  
- [in] Especifica la dirección virtual de los datos que se va a obtener.  
+ de Especifica la dirección virtual de los datos que se van a obtener.  
   
  `cbData`  
- [in] El tamaño de datos en bytes para obtener.  
+ de Tamaño de los datos en bytes que se van a obtener.  
   
  `pcbData`  
- [out] Devuelve el tamaño real de los datos en bytes que se obtuvo.  
+ enuncia Devuelve el tamaño real de los datos en bytes obtenidos.  
   
  `pbData`  
- [in, out] Un búfer que se rellena con los datos solicitados. El valor no puede ser `NULL`.  
+ [in, out] Búfer que se rellena con los datos solicitados. El valor no puede ser `NULL`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún PDATA para la dirección especificada. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- PDATA (la sección denominada ".pdata") de una operación de compilación contiene información sobre el control de excepciones de funciones.  
+ PDATA (la sección denominada ". PDATA") de una operación de compilación contiene información sobre el control de excepciones para las funciones.  
   
- El autor sabe es la cantidad de datos que se devuelve por lo que el llamador no tiene ninguna necesidad de solicitar la cantidad de datos está disponible. Por lo tanto, es aceptable para una implementación de este método para devolver un error si el `pbData` parámetro es `NULL`.  
+ El autor de la llamada sabe cuántos datos se van a devolver, por lo que el autor de la llamada no tiene necesidad de solicitar la cantidad de datos disponibles. Por lo tanto, es aceptable que una implementación de este método devuelva un error si el `pbData` parámetro es `NULL` .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

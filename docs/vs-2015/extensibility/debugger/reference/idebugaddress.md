@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress | Documentos de Microsoft
+title: IDebugAddress | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb6344885e9e30c056982b15b8323eef3ef467b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165189"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esta interfaz representa la dirección de un elemento. Se devuelve el controlador de símbolos.  
+Esta interfaz representa la dirección de un elemento. Lo devuelve el controlador de símbolos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -33,26 +33,26 @@ IDebugAddress : IUnknown
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
  Un proveedor de símbolos implementa esta interfaz para representar una dirección de un objeto.  
   
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Muchos métodos en muchas interfaces devuelven esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para llamadores  
+ Muchos métodos de muchas interfaces devuelven esta interfaz.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  Esta interfaz implementa el método siguiente:  
   
-|Método|DESCRIPCIÓN|  
+|Método|Descripción|  
 |------------|-----------------|  
-|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Recupera un [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura que describe un objeto y su ubicación.|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Recupera una estructura de [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) que describe un objeto y su ubicación.|  
   
 ## <a name="remarks"></a>Comentarios  
- El proveedor de símbolos devuelve esta interfaz para representar un objeto y su ubicación dentro de un ámbito determinado (por ejemplo, función, método o clase). Esta interfaz se devuelve desde y pasada a métodos distintos de la expresión y el proveedor de símbolos evaluador. Normalmente, el proveedor de símbolos es la única entidad que se debe interpretar el contenido de esta interfaz.  
+ El proveedor de símbolos devuelve esta interfaz para representar un objeto y su ubicación dentro de un ámbito determinado (por ejemplo, función, método o clase). Esta interfaz se devuelve desde y se pasa a varios métodos del proveedor de símbolos y del evaluador de expresiones. Normalmente, el proveedor de símbolos es la única entidad que necesita interpretar el contenido de esta interfaz.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

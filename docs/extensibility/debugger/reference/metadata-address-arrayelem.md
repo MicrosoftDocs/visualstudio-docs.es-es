@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_ARRAYELEM Microsoft Docs
+title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 67e39eb8b03dd6f75ac39155bd744e03084beb0b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714549"
 ---
 # <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
@@ -45,20 +45,20 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ## <a name="members"></a>Miembros
 
 `tokMethod`\
-El identificador de la matriz de la que forma parte este elemento.
+IDENTIFICADOR de la matriz de la que forma parte este elemento.
 
-[C++] `_mdToken` es `typedef` un para un `int`32-bit .
+[C++] `_mdToken` es un `typedef` para un 32 bits `int` .
 
 `dwIndex`\
-El índice de este elemento dentro de la matriz.
+Índice de este elemento dentro de la matriz.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura forma parte de la unión en `DEBUG_ADDRESS_UNION` la estructura `ADDRESS_KIND_ARRAYELEM` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando se establece el `dwKind` campo de la estructura en (un valor de la [enumeración ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
+Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_ARRAYELEM` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: sh.h
+Encabezado: SH. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

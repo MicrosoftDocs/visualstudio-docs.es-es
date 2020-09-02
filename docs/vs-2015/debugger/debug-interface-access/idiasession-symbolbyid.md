@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac409edcee7657e724822d1a72737c3142d8d93e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150208"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
@@ -36,21 +36,21 @@ HRESULT symbolById ( 
   
 #### <a name="parameters"></a>Parámetros  
  `id`  
- [in] Identificador único.  
+ de Identificador único.  
   
  `ppSymbol`  
- [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recupera el objeto que representa el símbolo.  
+ enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo recuperado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- El identificador especificado es un valor único utilizado internamente por el SDK de DIA para todos los símbolos que sea única.  
+## <a name="remarks"></a>Observaciones  
+ El identificador especificado es un valor único que usa internamente el SDK de DIA para que todos los símbolos sean únicos.  
   
- Este método puede usarse, por ejemplo, para recuperar el símbolo que representa el tipo de otro símbolo (vea el ejemplo).  
+ Este método se puede utilizar, por ejemplo, para recuperar el símbolo que representa el tipo de otro símbolo (vea el ejemplo).  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo recupera una [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el tipo de símbolo de otro. En este ejemplo se muestra cómo usar el `symbolById` método en la sesión. Un enfoque más sencillo es llamar a la [Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) método para recuperar el símbolo de tipo directamente.  
+ En este ejemplo se recupera un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el tipo de otro símbolo. En este ejemplo se muestra cómo utilizar el `symbolById` método en la sesión. Un enfoque más sencillo es llamar al método [IDiaSymbol:: GET_TYPE](../../debugger/debug-interface-access/idiasymbol-get-type.md) para recuperar el símbolo de tipo directamente.  
   
 ```cpp#  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  
@@ -66,7 +66,7 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846153"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Usar el diseñador de actividad Legacy
@@ -46,7 +46,7 @@ En este tema se describe cómo usar el diseñador de actividad en [!INCLUDE[wfd1
 ## <a name="configuring-an-activity"></a>Configurar una actividad
  Aunque el diseñador de actividades esté activo, puede utilizar el explorador de propiedades para configurar las propiedades enumeradas en la siguiente tabla.
 
-|La propiedad|Comentarios|
+|Propiedad|Comentarios|
 |--------------|--------------|
 |**Name**|Nombre de la actividad.|
 |**Clase base**|Clase base de la que deriva la actividad. La clase base predeterminada es [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx). En la ventana **propiedades** , haga clic en los puntos suspensivos **[...]** de la **clase base** para seleccionar otra clase base en el [cuadro de diálogo examinar y seleccionar un tipo .net (heredado)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
@@ -56,5 +56,5 @@ En este tema se describe cómo usar el diseñador de actividad en [!INCLUDE[wfd1
 ## <a name="adding-child-activities"></a>Agregar actividades secundarias
  Puede arrastrar actividades secundarias del cuadro de herramientas hasta la actividad que esté diseñando. Puede configurar cada una de las actividades secundarias con el explorador de propiedades.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Desarrollo de actividades de flujo de trabajo](https://msdn2.microsoft.com/library/ms734413.aspx) [creación](https://msdn2.microsoft.com/library/bb675228.aspx) de actividades personalizadas actividades de [flujo de trabajo heredadas](../workflow-designer/legacy-workflow-activities.md) actividades [personalizadas ejemplos](https://msdn2.microsoft.com/library/bb472471.aspx) [Cómo: crear una biblioteca de actividades de flujo de trabajo (heredada)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [mediante el diseñador de flujo de trabajo heredado](../workflow-designer/using-the-legacy-workflow-designer.md)
