@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ec07e71e57c0b3875d690773b7ff2618269b8f4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250002"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
@@ -132,7 +132,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 
  Para obtener instrucciones detalladas para IIS, vea [Cómo especificar tipos de documentos adicionales para la compresión http](https://support.microsoft.com/help/234497).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)

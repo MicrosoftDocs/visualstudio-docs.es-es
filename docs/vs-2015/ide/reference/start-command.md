@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a216e053a08662da5da04206c780fb4455e9ec09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663493"
 ---
 # <a name="start-command"></a>Iniciar (Comando)
@@ -35,7 +35,7 @@ Debug.Start [address]
 ## <a name="arguments"></a>Argumentos
  `address` Opcional. Dirección en la que el programa suspende la ejecución, similar a un punto de interrupción en el código fuente. Este argumento solo es válido en el modo de depuración.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Cuando se ejecuta, el comando **Iniciar** realiza una operación RunToCursor en la dirección especificada.
 
 ## <a name="example"></a>Ejemplo
@@ -45,5 +45,5 @@ Debug.Start [address]
 >Debug.Start
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md) [ventana comandos](../../ide/reference/command-window.md) [Buscar/comando cuadro](../../ide/find-command-box.md) de comandos de [Visual Studio alias de comandos](../../ide/reference/visual-studio-command-aliases.md)

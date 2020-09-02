@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8fc2af704ab587480913c51cdbc593e6cc0f483a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663469"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Cómo agregar actividades al cuadro de herramientas
@@ -21,11 +21,11 @@ Las actividades se pueden agregar al **cuadro de herramientas** de la solución 
 
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Para agregar una actividad desde su proyecto actual
 
-1. Agregue una nueva actividad personalizada al proyecto de flujo de trabajo actual. [!INCLUDE[crabout](../includes/crabout-md.md)] agregar una nueva actividad personalizada al proyecto, vea [Cómo: agregar un nuevo elemento a un proyecto de flujo de trabajo](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1. Agregue una nueva actividad personalizada al proyecto de flujo de trabajo actual. [!INCLUDE[crabout](../includes/crabout-md.md)] Cómo agregar una nueva actividad personalizada al proyecto, vea [Cómo: agregar un nuevo elemento a un proyecto de flujo de trabajo](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
 2. Agregue lógica personalizada a su actividad.
 
-3. Compile el proyecto. Si la compilación se realizó correctamente, se muestra una nueva categoría en el **cuadro de herramientas** denominada "\<*nombre del proyecto*>" con la actividad personalizada incluida en esa categoría.
+3. Compile el proyecto. Si la compilación se realizó correctamente, se muestra una nueva categoría en el **cuadro de herramientas** denominada " \<*project name*> " con la actividad personalizada incluida en esa categoría.
 
     > [!NOTE]
     > Si se restablece el cuadro de herramientas, las actividades personalizadas se quitarán, incluso si la solución se compila de nuevo. Para volver a rellenar el cuadro de herramientas con actividades personalizadas después de que se haya restablecido, reinicie [!INCLUDE[vs2010](../includes/vs2010-md.md)].
@@ -40,13 +40,13 @@ Las actividades se pueden agregar al **cuadro de herramientas** de la solución 
 
 1. Abra una solución que contenga al menos un proyecto de flujo de trabajo y un proyecto de biblioteca de actividades personalizado u otro proyecto de flujo de trabajo que defina una actividad personalizada.
 
-2. Compile ambos proyectos. Si las compilaciones se realizaron correctamente, se muestra una nueva categoría en el **cuadro de herramientas** denominada "\<*nombre del proyecto*>" con la actividad personalizada incluida en esa categoría.
+2. Compile ambos proyectos. Si las compilaciones se realizaron correctamente, se muestra una nueva categoría en el **cuadro de herramientas** denominada " \<*project name*> " con la actividad personalizada incluida en esa categoría.
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Para agregar una actividad al cuadro de herramientas desde un ensamblado
 
 1. Abra una solución de flujo de trabajo.
 
-2. En el menú **herramientas** , seleccione **elegir elementos del cuadro de herramientas.** .
+2. En el menú **herramientas** , seleccione **elegir elementos del cuadro de herramientas..**..
 
 3. En el cuadro de diálogo **elegir elementos del cuadro de herramientas** , seleccione la pestaña **componentes de System. Activities** y, a continuación, haga clic en **examinar...** para desplazarse al ensamblado que contiene la actividad personalizada que desea agregar.
 
@@ -58,5 +58,5 @@ Las actividades se pueden agregar al **cuadro de herramientas** de la solución 
 
 6. La actividad personalizada aparece en el **cuadro de herramientas** en la categoría que tenía el foco antes de que se agregara el elemento. Por ejemplo, si la categoría **General** se seleccionó en el **cuadro de herramientas** antes de agregar el elemento del cuadro de herramientas, la actividad aparece en la categoría **General** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)

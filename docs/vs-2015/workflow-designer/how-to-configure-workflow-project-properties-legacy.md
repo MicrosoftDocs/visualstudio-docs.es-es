@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663434"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Cómo: Configurar las propiedades de proyectos de flujo de trabajo (Heredado)
@@ -29,11 +29,11 @@ Siga estos pasos para ver o modificar las propiedades asociadas a proyectos de f
 
 1. Si **Explorador de soluciones** ventana no está visible, seleccione **Explorador de soluciones** en el menú **Ver** .
 
-2. En el **Explorador de soluciones**, seleccione un proyecto.
+2. En **Explorador de soluciones**, seleccione un proyecto.
 
 3. Si la ventana **propiedades** no está visible, seleccione **ventana Propiedades** en el menú **Ver** .
 
 4. En la ventana **propiedades** del proyecto, vea y modifique las propiedades que desee cambiar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md)

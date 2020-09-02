@@ -21,16 +21,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249979"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Tutorial: Implementación manual de una aplicación ClickOnce
 Si no puede usar Visual Studio para implementar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, o si necesita usar características de implementación avanzadas, como la implementación de aplicaciones de confianza, debe usar la herramienta de línea de comandos *Mage.exe* para crear los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos. En este tutorial se describe cómo crear una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación mediante la versión de línea de comandos (*Mage.exe*) o la versión gráfica (*MageUI.exe*) de la herramienta de generación y edición de manifiestos.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  Este tutorial tiene algunos requisitos previos y opciones que debe elegir antes de compilar una implementación.
 
 - Instale *Mage.exe* y *MageUI.exe*.
@@ -192,7 +192,7 @@ Si no puede usar Visual Studio para implementar la [!INCLUDE[ndptecclick](../dep
 ## <a name="next-steps"></a>Pasos siguientes
  Cuando necesite implementar una nueva versión de la aplicación, cree un nuevo directorio con el nombre de la nueva versión (por ejemplo, 1.0.0.1) y copie los nuevos archivos de aplicación en el nuevo directorio. A continuación, debe seguir los pasos anteriores para crear y firmar un nuevo manifiesto de aplicación y actualizar y firmar el manifiesto de implementación. Tenga cuidado de especificar la misma versión superior tanto en el *Mage.exe* como en las `-New` `-Update` llamadas, ya que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo actualiza las versiones superiores, con el entero más a la izquierda más significativo. Si usó *MageUI.exe*, puede actualizar el manifiesto de implementación abriéndolo, seleccionando la pestaña **referencia** de la aplicación, vaya al botón **seleccionar manifiesto** y, a continuación, seleccione el manifiesto de aplicación actualizado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5126b3dc45d33471080ae154e06f4a327e21fef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663436"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Cómo: Cambiar la opción de ejecución paso a paso de depuración (Heredado)
@@ -37,9 +37,9 @@ En este tema se describe cómo cambiar la opción de ejecución paso a paso de d
 
 2. Abra un proyecto de flujo de trabajo heredado existente o cree un nuevo proyecto que use actividades simultáneas y que tenga como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
-3. En el menú **flujo de trabajo** del [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado, seleccione **depurar**y, a continuación, elija **Opciones de ejecución paso a paso**.
+3. En el menú **flujo de trabajo** del heredado [!INCLUDE[wfd2](../includes/wfd2-md.md)] , elija **depurar**y, a continuación, elija **Opciones de ejecución paso a paso**.
 
 4. Seleccione **instancia** o **rama**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Depurar flujos de trabajo heredados](../workflow-designer/debugging-legacy-workflows.md) [Opciones de versión de depuración (heredado)](../workflow-designer/debug-stepping-options-legacy.md)
