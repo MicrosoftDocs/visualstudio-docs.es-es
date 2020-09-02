@@ -1,5 +1,5 @@
 ---
-title: Depuración de aplicaciones de ASP.NET y AJAX | Documentos de Microsoft
+title: Depurar aplicaciones ASP.NET y AJAX | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686743"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Depurar aplicaciones de ASP.NET y AJAX
@@ -46,14 +46,14 @@ Depurar las aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] es
  [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)  
  Se explica por qué Sólo mi código se debe habilitar para depurar excepciones de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Información general sobre la depuración y el seguimiento de aplicaciones AJAX](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Explica algunas técnicas y herramientas que pueden ayudarle a depurar su código AJAX.  
   
  [IntelliTrace](../debugger/intellitrace.md)  
  Depure el código con más rapidez mediante IntelliTrace para registrar y revisar un historial del estado de la aplicación sin reiniciar la aplicación con tanta frecuencia. Puede ver información sobre los eventos y las llamadas que se producen durante la ejecución de la aplicación e iniciar la depuración desde esos puntos en el tiempo. Requiere Visual Studio Ultimate.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md)   
- [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
+ [Depurar scripts y aplicaciones Web](../debugger/debugging-web-applications-and-script.md)   
+ [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Fundamentos de la depuración: Ventana registros | Documentos de Microsoft'
+title: 'Fundamentos de la depuración: ventana registros | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5c9380ccc9a21270da3c5832222976e4c7121e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686713"
 ---
-# <a name="debugging-basics-registers-window"></a>Fundamentos de la depuración: Ventana registros
+# <a name="debugging-basics-registers-window"></a>Fundamentos de la depuración: ventana Registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La ventana **Registros** solo está disponible si está habilitada la depuración de nivel de dirección en el cuadro de diálogo **Opciones**, nodo **Depuración**.  
@@ -45,7 +45,7 @@ La ventana **Registros** solo está disponible si está habilitada la depuració
   
  Para más información sobre cómo mostrar la ventana **Registros**, consulte [Using the Registers Window](../debugger/how-to-use-the-registers-window.md) (Uso de la ventana Registros).  
   
- Cuando observa la **registra** ventana, podrá ver entradas como en este ejemplo:  
+ Al mirar en la ventana **registros** , verá entradas como este ejemplo:  
   
 ```  
 EAX = 003110D8  
@@ -58,6 +58,6 @@ EAX = 003110D8
 ## <a name="register-groups"></a>Grupos de registros  
  Por motivos de claridad, los registros se organizan en grupos en la ventana **Registros**. Si hace clic con el botón derecho en la ventana **Registros**, aparecerá un menú contextual con una lista de grupos que puede mostrar u ocultar según su conveniencia.  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: usar la ventana registros](../debugger/how-to-use-the-registers-window.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)
