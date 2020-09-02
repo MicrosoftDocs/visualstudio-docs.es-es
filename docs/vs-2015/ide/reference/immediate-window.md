@@ -16,13 +16,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3177c92713f6fdeb9b9b8a47a0da38608714174d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651283"
 ---
-# <a name="immediate-window"></a>Inmediato (ventana)
+# <a name="immediate-window"></a>Ventana Inmediato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.
@@ -30,7 +30,7 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
  Puede usar esta ventana para emitir comandos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] individuales. Entre los comandos disponibles se incluye `EvaluateStatement`, que puede usarse para asignar valores a variables. La ventana **Inmediato** también admite IntelliSense.
 
 ## <a name="displaying-the-values-of-variables"></a>Mostrar los valores de las variables
- Esta ventana puede resultar particularmente útil al depurar una aplicación. Por ejemplo, para comprobar el valor de una variable `varA`, usar el [comando Imprimir](../../ide/reference/print-command.md):
+ Esta ventana puede resultar particularmente útil al depurar una aplicación. Por ejemplo, para comprobar el valor de una variable `varA` , puede usar el [comando Imprimir](../../ide/reference/print-command.md):
 
 ```
 >Debug.Print varA
@@ -45,7 +45,7 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
  Ambas versiones de este comando devolverán el valor de la variable `varA`.
 
 > [!NOTE]
-> Para emitir un comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en la ventana **Inmediato**, el comando debe ir precedido de un signo mayor que (>). Para escribir varios comandos, cambie a la ventana **Comando**.
+> Para emitir un comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en la ventana **Inmediato**, el comando debe ir precedido de un signo mayor que (>). Para especificar varios comandos, cambie a la ventana de **comandos** .
 
 ## <a name="design-time-expression-evaluation"></a>Evaluación de expresiones en tiempo de diseño
  Puede usar la ventana **Inmediato** para ejecutar una función o subrutina en tiempo de diseño.
@@ -70,7 +70,7 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
 
 2. En el menú **Depurar**, haga clic en **Ventanas** y en **Inmediato**.
 
-3. Escriba `?MyFunction(2)` en la ventana **Inmediato** y presione Entrar.
+3. Escriba `?MyFunction(2)` en la ventana **inmediato** y presione Entrar.
 
     La ventana **Inmediato** ejecutará `MyFunction` y mostrará `4`.
 
@@ -84,7 +84,7 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
 ## <a name="entering-commands"></a>Escribir comandos
  Debe escribir el signo mayor que (>) al emitir comandos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en la ventana **Inmediato**. Use las teclas FLECHA ARRIBA y FLECHA ABAJO para desplazarse por los comandos ejecutados anteriormente.
 
-|Tarea|Soluciones|Ejemplo|
+|Tarea|Solución|Ejemplo|
 |----------|--------------|-------------|
 |Evaluar una expresión.|Empezar la expresión con un signo de interrogación (?).|`? a+b`|
 |Entrar temporalmente en el modo Comando mientras está en el modo Inmediato (para ejecutar un único comando).|Escribir el comando, precedido de un signo mayor que (>).|`>alias`|
@@ -122,5 +122,5 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
 
 2. Haga doble clic en el área de texto de la ventana **Salida** y seleccione o anule la selección de **Mensajes de excepción**.
 
-## <a name="see-also"></a>Vea también
- [Desplazarse por el código con la](../../debugger/navigating-through-code-with-the-debugger.md) [ventana de comandos](../../ide/reference/command-window.md) del depurador depurar en los [conceptos básicos del depurador](../../debugger/debugger-basics.md) [de Visual Studio](../../debugger/debugging-in-visual-studio.md) [Tutorial: depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md) [alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [mediante normal Expresiones en Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
+## <a name="see-also"></a>Consulte también
+ [Desplazarse por el código con la](../../debugger/navigating-through-code-with-the-debugger.md) [ventana de comandos](../../ide/reference/command-window.md) del depurador depurar en los [conceptos básicos del depurador](../../debugger/debugger-basics.md) [de Visual Studio](../../debugger/debugging-in-visual-studio.md) [Tutorial: depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md) [alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [mediante expresiones regulares en Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

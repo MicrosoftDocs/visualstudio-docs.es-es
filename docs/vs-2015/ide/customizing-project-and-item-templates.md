@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd88191baf15837a7862fc447471744977bdf60b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665872"
 ---
 # <a name="customizing-project-and-item-templates"></a>Personalizar plantillas de proyectos y de elementos
@@ -32,20 +32,20 @@ Una vez que se han creado las plantillas de proyecto y elemento, puede personali
 
 - Pasar parámetros personalizados en una plantilla para reemplazar los valores existentes.
 
-     Para más información, vea [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).
+     Para obtener más información, vea [Cómo: sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).
 
 - Personalizar los asistentes que crean proyectos a partir de plantillas.
 
      Para obtener más información, vea [How to: Use Wizards with Project Templates](../extensibility/how-to-use-wizards-with-project-templates.md) (Cómo: Usar asistentes con plantillas de proyectos).
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)
 
  [Cómo: Solucionar problemas de plantillas](../ide/how-to-troubleshoot-templates.md)
 
- [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
+ [Cómo: crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
 
- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+ [Cómo: crear plantillas de elementos](../ide/how-to-create-item-templates.md)
 
  [Cómo: Crear Starter Kits](../ide/how-to-create-starter-kits.md)
 

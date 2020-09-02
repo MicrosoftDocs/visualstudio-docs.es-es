@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189202"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Generar perfiles del rendimiento de las aplicaciones de SharePoint
@@ -49,7 +49,7 @@ Puede analizar el rendimiento de esfuerzo de las aplicaciones mediante la creaci
 
 Figura 1: ejemplo de resultados de pruebas de carga
 
-![Ejecutando vista de gráficos de prueba de carga](../sharepoint/media/load-webgraphs.png "Vista de gráficos de prueba de carga en ejecución")
+![Vista de gráficos de prueba de carga en ejecución](../sharepoint/media/load-webgraphs.png "Vista de gráficos de prueba de carga en ejecución")
 
 Las pruebas de rendimiento web simulan el modo en que un usuario final puede interactuar con una aplicación de SharePoint. Puede crear pruebas de rendimiento web grabando solicitudes HTTP en una sesión del explorador o mediante la **grabadora de pruebas de rendimiento web**. Las solicitudes web aparecen en el **Editor de pruebas de rendimiento web** una vez finalizada la sesión del explorador. A continuación, puede depurar los resultados en el **visor de resultados de pruebas de rendimiento web**. También puede generar manualmente las pruebas de rendimiento web mediante el **Editor de pruebas de rendimiento web**.
 
@@ -63,8 +63,8 @@ Las pruebas de IU codificadas controlan automáticamente la aplicación de Share
 |-----------|-----------------|
 |[Tutorial: generar perfiles de una aplicación de SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Muestra cómo realizar un análisis de Perfil de muestreo en una aplicación de SharePoint.|
 |[Ejecutar pruebas de rendimiento en la aplicación antes del lanzamiento](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Describe cómo crear pruebas de carga, que le ayudarán a realizar pruebas de esfuerzo de las aplicaciones de SharePoint.|
-|[Hacer una prueba unitaria del código](../test/unit-test-your-code.md)|Describe cómo buscar errores lógicos en el código mediante pruebas unitarias.|
-|[Probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Describe cómo probar la interfaz de usuario de las aplicaciones de SharePoint.|
+|[Prueba unitaria del código](../test/unit-test-your-code.md)|Describe cómo buscar errores lógicos en el código mediante pruebas unitarias.|
+|[Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Describe cómo probar la interfaz de usuario de las aplicaciones de SharePoint.|
 
 ## <a name="see-also"></a>Vea también
 

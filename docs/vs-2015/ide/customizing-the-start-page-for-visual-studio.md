@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665848"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Personalizar la página principal de Visual Studio
@@ -31,7 +31,7 @@ Hay varias formas predeterminadas de personalizar la página principal de Visual
 
 ## <a name="customizing-the-default-start-page"></a>Personalizar la página principal predeterminada
 
-1. En la barra de menús, elija **Herramientas**, **Opciones**.
+1. En la barra de menús, elija **herramientas**, **Opciones**.
 
 2. Expanda **Entorno** y después elija **Inicio**.
 
@@ -52,7 +52,7 @@ Hay varias formas predeterminadas de personalizar la página principal de Visual
 
          Consulte [Crear su propia página de inicio](../misc/creating-your-own-start-page.md).
 
-2. En la barra de menús, elija **Herramientas**, **Opciones**.
+2. En la barra de menús, elija **herramientas**, **Opciones**.
 
 3. Expanda **Entorno** y después elija **Inicio**.
 
@@ -61,5 +61,5 @@ Hay varias formas predeterminadas de personalizar la página principal de Visual
 > [!NOTE]
 > Si un error de una página principal personalizada hace que Visual Studio se bloquee, inicie Visual Studio en modo seguro y después establezca que se use la página principal predeterminada. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Crear su propia página de inicio](../misc/creating-your-own-start-page.md)

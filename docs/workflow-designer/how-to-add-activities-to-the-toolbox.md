@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815830"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Cómo agregar actividades al cuadro de herramientas
@@ -58,6 +58,6 @@ Las actividades se pueden agregar al **cuadro de herramientas** de la solución 
 
 6. La actividad personalizada aparece en el **cuadro de herramientas** en la categoría que tenía el foco antes de que se agregara el elemento. Por ejemplo, si la categoría **General** se seleccionó en el **cuadro de herramientas** antes de agregar el elemento del cuadro de herramientas, la actividad aparece en la categoría **General** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Usar el Diseñador de flujo de trabajo](developing-applications-with-the-workflow-designer.md)

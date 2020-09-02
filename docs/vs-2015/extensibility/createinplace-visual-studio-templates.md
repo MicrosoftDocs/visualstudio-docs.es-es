@@ -14,19 +14,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184237"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guarde el proyecto en la ubicación especificada.  
+Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o bien realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guardar el proyecto en la ubicación especificada.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<CreateInPlace>  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -46,16 +46,16 @@ Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros e
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`. Si `true`, se crea el proyecto y se realiza el reemplazo de parámetros en la ubicación especificada en el **nuevo proyecto** cuadro de diálogo. Si `false`, se realiza el reemplazo de parámetros en una ubicación temporal y, a continuación, se copia el proyecto en la ubicación especificada.  
+ El texto debe ser `true` o `false`. Si `true` es, se crea el proyecto y el reemplazo de parámetros se realiza en la ubicación especificada en el cuadro de diálogo **nuevo proyecto** . Si `false` es, el reemplazo de parámetros se realiza en una ubicación temporal y el proyecto se copia en la ubicación especificada.  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  `CreateInPlace` es un elemento opcional. El valor predeterminado es `true`.  
   
 ## <a name="example"></a>Ejemplo  
@@ -86,6 +86,6 @@ Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros e
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Consulte también  
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

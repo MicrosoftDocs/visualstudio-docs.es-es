@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ddff6130e2243d10c00cefec160d057516d60932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153279"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Proporciona la razón que no está enlazado a un punto de interrupción.  
+Proporciona la razón por la que se desenlaza un punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,27 +47,27 @@ public enum enum_BP_UNBOUND_REASON { 
   
 ## <a name="members"></a>Miembros  
  BPUR_UNKNOWN  
- El motivo es desconocido.  
+ La razón es desconocida.  
   
  BPUR_CODE_UNLOADED  
- El código que contiene el punto de interrupción se ha descargado.  
+ Se ha descargado el código que contiene el punto de interrupción.  
   
  BPUR_BREAKPOINT_REBIND  
- Se han vuelto a enlazar el punto de interrupción en una ubicación diferente. Esto puede ocurrir después de editar y continuar con las operaciones cuando se mueve el punto de interrupción o cuando el punto de interrupción se enlaza a un archivo con una ruta de acceso que ya no es válido.  
+ El punto de interrupción se ha reenlazado a una ubicación diferente. Esto puede ocurrir después de las operaciones de editar y continuar cuando se mueve el punto de interrupción, o cuando el punto de interrupción se enlaza a un archivo con una ruta de acceso que ya no es válida.  
   
  BPUR_ BREAKPOINT_ERROR  
- El punto de interrupción se determina como error después de que está enlazado. Esto sucede a los puntos de interrupción administrados cuyas condiciones ya no son válidos.  
+ El punto de interrupción se determina como erróneo una vez enlazado. Esto sucede con los puntos de interrupción administrados cuyas condiciones ya no son válidas.  
   
 ## <a name="remarks"></a>Comentarios  
- Devuelto por la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.  
+ Devuelto por el método [GetReason (](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

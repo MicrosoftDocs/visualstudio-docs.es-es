@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199945"
 ---
 # <a name="overriding-toolsversion-settings"></a>Invalidar el valor de la versión de herramientas
@@ -97,7 +97,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
       MSBuildToolsPath:    C:\Windows\Microsoft.NET\Framework\v2.0.50727  
     ```  
   
-## <a name="order-of-precedence"></a>Orden de prioridad  
+## <a name="order-of-precedence"></a>Orden de precedencia  
  El orden de prioridad, del más alto al más bajo, que se usa para determinar `ToolsVersion` es:  
   
 1. El atributo `ToolsVersion` en la tarea de MSBuild que se usa para compilar el proyecto, si existe.  
@@ -114,7 +114,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     2. La versión de las herramientas predeterminada en el archivo MSBuild.exe.config.  
   
-    3. La versión de las herramientas predeterminada en el registro. Para obtener más información, vea [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md).  
+    3. La versión de las herramientas predeterminada en el registro. Para obtener más información, vea [configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md).  
   
 6. Si no se establece la variable de entorno `MSBUILDLEGACYDEFAULTTOOLSVERSION`, entonces se usan los pasos siguientes:  
   
@@ -126,8 +126,8 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4. De otro modo, use el `ToolsVersion` actual.  
   
-## <a name="see-also"></a>Otras referencias  
- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)  [Compatibilidad con múltiples versiones (multi-targeting)]  
+## <a name="see-also"></a>Consulte también  
+ [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
  [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md)

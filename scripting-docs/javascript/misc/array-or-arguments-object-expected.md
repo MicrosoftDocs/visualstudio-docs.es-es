@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 266eed585f1d45e15c084e424d441220f6e671ee
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815778"
 ---
 # <a name="array-or-arguments-object-expected"></a>Se esperaba un objeto de argumentos o matriz
@@ -28,7 +28,7 @@ No proporcionó una matriz como argumento. Este error solo se aplica al método 
   
 - Especifique un `Array` objeto de **argumentos** o como el segundo argumento.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)   
  [Apply (método, Function)](../../javascript/reference/apply-method-function-javascript.md)   
  [Funciones](../../javascript/functions-javascript.md)

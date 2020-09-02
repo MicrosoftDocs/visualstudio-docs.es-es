@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3af2451efdea5ac3f71ae17fc5919e9f443e86db
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815765"
 ---
 # <a name="label-not-found"></a>No se encuentra la etiqueta
@@ -30,7 +30,7 @@ Hizo referencia a una etiqueta que no existe. Las etiquetas se pueden usar para 
   
 - Asegúrese de que todas las referencias de etiqueta se realicen en las etiquetas definidas en el ámbito actual (esto incluye las definiciones hacia delante).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Instrucción con etiqueta](../../javascript/reference/labeled-statement-javascript.md)   
  [Switch (instrucción)](../../javascript/reference/switch-statement-javascript.md)   
  [Break (instrucción)](../../javascript/reference/break-statement-javascript.md)   

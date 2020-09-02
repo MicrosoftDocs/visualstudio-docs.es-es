@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::Siguiente ? Microsoft Docs
+title: 'IEnumDebugObjects:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 99b2bc35b63a4e97f888365f1d11231ae620b69c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716341"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
@@ -45,13 +45,13 @@ int Next(
 
 ## <a name="parameters"></a>Parámetros
 `celt`\
-[in] Número de elementos que se van a recuperar. También especifica el tamaño `rgelt` máximo de la matriz.
+[in] Número de elementos que se van a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.
 
 `rgelt`\
-[adentro, fuera] Matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) elementos que se van a rellenar.
+[in, out] Matriz de elementos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que se va a rellenar.
 
 `pceltFetched`\
-[fuera] Devuelve el número de `rgelt`elementos devueltos realmente en .
+enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.

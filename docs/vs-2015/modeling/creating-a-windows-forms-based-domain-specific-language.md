@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cea3b76575e1da2e846e230580c6cfa50ef9b207
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651262"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico del dominio (DSL), en lugar de utilizar un diagrama DSL. En este tema se explica cómo enlazar un Windows Form a un DSL mediante el SDK de visualización y modelado de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico del dominio (DSL), en lugar de utilizar un diagrama DSL. En este tema se explica cómo enlazar un Windows Form a un DSL mediante el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de visualización y modelado.
 
- ![DSL&#45;WPF&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") Instancia de DSL, que muestra una interfaz de usuario de Windows Forms y el explorador de modelos.
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") Instancia de DSL, que muestra una interfaz de usuario de Windows Forms y el explorador de modelos.
 
 ## <a name="creating-a-windows-forms-dsl"></a>Creación de un Windows Forms DSL
  La plantilla DSL del **Diseñador de WinForm mínima** crea un DSL mínimo que puede modificar para satisfacer sus propios requisitos.
@@ -43,7 +43,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
    2. Compile y ejecute el ejemplo (**Ctrl + F5**).
 
-   3. En la instancia experimental de Visual Studio, abra el archivo `Sample` en el proyecto de depuración.
+   3. En la instancia experimental de Visual Studio, abra el `Sample` archivo en el proyecto de depuración.
 
         Tenga en cuenta que se muestra en un control de Windows Forms.
 
@@ -51,22 +51,22 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
         Agregue algunos elementos en el formulario o en el explorador y observe que aparecen en la otra pantalla.
 
-   En la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tenga en cuenta los siguientes puntos acerca de la solución DSL:
+   En la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , tenga en cuenta los siguientes puntos acerca de la solución DSL:
 
 - `DslDefinition.dsl` no contiene elementos de diagrama. Esto se debe a que no usará diagramas DSL para ver modelos de instancia de este DSL. En su lugar, enlazará un Windows Form al modelo y los elementos del formulario mostrarán el modelo.
 
-- Además de los proyectos de `Dsl` y `DslPackage`, la solución contiene un tercer proyecto denominado `UI.` proyecto de**interfaz de usuario** contiene la definición de un control de Windows Forms. `DslPackage` depende de `UI` y `UI` depende de `Dsl`.
+- Además de los `Dsl` proyectos de y `DslPackage` , la solución contiene un tercer proyecto denominado `UI.` **UI** Project que contiene la definición de un control de Windows Forms. `DslPackage` depende de `UI` y `UI` depende de `Dsl` .
 
-- En el proyecto de `DslPackage`, `UI\DocView.cs` contiene el código que muestra el control de Windows Forms que se define en el proyecto de `UI`.
+- En el `DslPackage` proyecto, `UI\DocView.cs` contiene el código que muestra el control Windows Forms que se define en el `UI` proyecto.
 
-- El proyecto `UI` contiene un ejemplo de trabajo de un control de formulario enlazado con el DSL. Sin embargo, no funcionará cuando haya cambiado la definición de DSL. El proyecto `UI` contiene:
+- El `UI` proyecto contiene un ejemplo de trabajo de un control de formulario enlazado con el DSL. Sin embargo, no funcionará cuando haya cambiado la definición de DSL. El `UI` proyecto contiene:
 
-  - Una clase de Windows Forms denominada `ModelViewControl`.
+  - Una clase de Windows Forms denominada `ModelViewControl` .
 
-  - Un archivo denominado `DataBinding.cs` que contiene una definición parcial adicional de `ModelViewControl`. Para ver su contenido, en **Explorador de soluciones**, abra el menú contextual del archivo y elija **Ver código**.
+  - Un archivo denominado `DataBinding.cs` que contiene una definición parcial adicional de `ModelViewControl` . Para ver su contenido, en **Explorador de soluciones**, abra el menú contextual del archivo y elija **Ver código**.
 
 ### <a name="about-the-ui-project"></a>Acerca del proyecto de interfaz de usuario
- Al actualizar el archivo de definición de DSL para definir su propio DSL, tendrá que actualizar el control en el proyecto de `UI` para mostrar el DSL. A diferencia de los proyectos de `Dsl` y `DslPackage`, el proyecto de `UI` de ejemplo no se genera a partir de `DslDefinitionl.dsl`. Puede Agregar archivos. TT para generar el código si lo desea, aunque no se trata en este tutorial.
+ Al actualizar el archivo de definición de DSL para definir su propio DSL, tendrá que actualizar el control en el `UI` proyecto para mostrar el DSL. A diferencia de `Dsl` los `DslPackage` proyectos de y, el `UI` proyecto de ejemplo no se genera a partir de `DslDefinitionl.dsl` . Puede Agregar archivos. TT para generar el código si lo desea, aunque no se trata en este tutorial.
 
 ## <a name="updating-the-dsl-definition"></a>Actualización de la definición de DSL
  En este tutorial se usa la definición de DSL siguiente.
@@ -79,18 +79,18 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
 2. Eliminar **ExampleElement**
 
-3. Cambie el nombre de la clase de dominio **ExampleModel** a `Farm`.
+3. Cambie el nombre de la clase de dominio **ExampleModel** a `Farm` .
 
      Proporcione propiedades de dominio adicionales denominadas `Size` de tipo **Int32**y `IsOrganic` de tipo **Boolean**.
 
     > [!NOTE]
-    > Si elimina la clase de dominio raíz y, a continuación, crea una nueva raíz, tendrá que restablecer la propiedad de clase raíz del editor. En el **Explorador de DSL**, seleccione **Editor**. A continuación, en el ventana Propiedades, establezca la **clase raíz** en `Farm`.
+    > Si elimina la clase de dominio raíz y, a continuación, crea una nueva raíz, tendrá que restablecer la propiedad de clase raíz del editor. En el **Explorador de DSL**, seleccione **Editor**. A continuación, en el ventana Propiedades, establezca la **clase raíz** en `Farm` .
 
 4. Use la herramienta de **clase de dominio con nombre** para crear las clases de dominio siguientes:
 
-    - `Field`: proporcione una propiedad de dominio adicional denominada `Size`.
+    - `Field` : Proporcione una propiedad de dominio adicional denominada `Size` .
 
-    - `Animal`: en el ventana Propiedades, establezca el **modificador de herencia** en **abstract**.
+    - `Animal` : En el ventana Propiedades, establezca el **modificador de herencia** en **abstract**.
 
 5. Use la herramienta de **clase de dominio** para crear las clases siguientes:
 
@@ -98,9 +98,9 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
     - `Goat`
 
-6. Utilice la herramienta **herencia** para que `Goat` y `Sheep` hereden de `Animal`.
+6. Use la herramienta **herencia** para crear `Goat` y `Sheep` heredar de `Animal` .
 
-7. Use la herramienta de **incrustación** para incrustar `Field` y `Animal` en `Farm`.
+7. Use la herramienta de **incrustación** para insertar `Field` y `Animal` debajo de `Farm` .
 
 8. Tal vez desee ordenar el diagrama. Para reducir el número de elementos duplicados, use el comando **traer subárbol aquí** en el menú contextual de los elementos hoja.
 
@@ -120,7 +120,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
      Se abre la ventana **Orígenes de datos**.
 
-     Elija **Agregar nuevo origen de datos**. Se abrirá el **Asistente para configuración de orígenes de datos**.
+     Elija **Agregar nuevo origen de datos**. Se abre el **Asistente para la configuración de orígenes de datos** .
 
 2. Elija **objeto**, **siguiente**.
 
@@ -148,22 +148,22 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
     Aparece un conjunto de controles, uno para cada propiedad. Las propiedades de la relación no generan controles.
 
-5. Elimine **farmBindingNavigator**. Esto también se genera automáticamente en el diseñador de `FarmControl`, pero no es útil para esta aplicación.
+5. Elimine **farmBindingNavigator**. También se genera automáticamente en el `FarmControl` Diseñador, pero no es útil para esta aplicación.
 
-6. Mediante el cuadro de herramientas, cree dos instancias de **DataGridView**y asígneles un nombre `AnimalGridView` y `FieldGridView`.
+6. Mediante el cuadro de herramientas, cree dos instancias de **DataGridView**y asígneles un nombre `AnimalGridView` y `FieldGridView` .
 
    > [!NOTE]
    > Un paso alternativo es arrastrar los elementos animales y campos desde la ventana orígenes de datos hasta el control. Esta acción crea automáticamente cuadrículas de datos y enlaces entre la vista de cuadrícula y el origen de datos. Sin embargo, este enlace no funciona correctamente para los DSL. Por lo tanto, es mejor crear manualmente las cuadrículas de datos y los enlaces.
 
 7. Si el cuadro de herramientas no contiene la herramienta **ModelingBindingSource** , agréguela. En el menú contextual de la pestaña **datos** , elija **elegir elementos**. En el cuadro de diálogo **elegir elementos del cuadro de herramientas** , seleccione **ModelingBindingSource** en la **pestaña .NET Framework**.
 
-8. Mediante el cuadro de herramientas, cree dos instancias de **ModelingBindingSource**y asígneles un nombre `AnimalBinding` y `FieldBinding`.
+8. Mediante el cuadro de herramientas, cree dos instancias de **ModelingBindingSource**y asígneles un nombre `AnimalBinding` y `FieldBinding` .
 
 9. Establezca la propiedad **DataSource** de cada **ModelingBindingSource** en **farmBindingSource**.
 
      Establezca la propiedad **DataMember** en **animales** o **campos**.
 
-10. Establezca las propiedades **DataSource** de `AnimalGridView` en `AnimalBinding` y de `FieldGridView` en `FieldBinding`.
+10. Establezca las propiedades **DataSource** de `AnimalGridView` en `AnimalBinding` y de  `FieldGridView` en `FieldBinding` .
 
 11. Ajuste el diseño del control de la granja de servidores a su gusto.
 
@@ -239,7 +239,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
 1. En la vista de diseño de FarmControl.cs, seleccione un campo simple como nombre, tamaño o IsOrganic.
 
-2. En el ventana Propiedades, expanda **DataBindings** y Abra **(avanzado)** .
+2. En el ventana Propiedades, expanda **DataBindings** y Abra **(avanzado)**.
 
      En el cuadro de diálogo **formato y enlace avanzado** , en **modo de actualización del origen de datos**, seleccione **OnPropertyChanged**.
 
@@ -251,7 +251,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
 1. En la vista de diseño de FarmControl.cs, use el cuadro de herramientas para crear un botón en el formulario.
 
-    Edite el nombre y el texto del botón, por ejemplo, para `New Sheep`.
+    Edite el nombre y el texto del botón, por ejemplo, a `New Sheep` .
 
 2. Abra el código subyacente del botón (por ejemplo, haciendo doble clic en él).
 
@@ -323,7 +323,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
  Sin embargo, este código no establece un nombre predeterminado para el nuevo elemento. No ejecuta ninguna combinación personalizada que haya definido en las directivas de combinación de **elementos** del DSL y no ejecuta ningún código de combinación personalizado que pueda haberse definido.
 
- Por lo tanto, se recomienda usar <xref:Microsoft.VisualStudio.Modeling.ElementOperations> para crear nuevos elementos. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
+ Por lo tanto, se recomienda utilizar <xref:Microsoft.VisualStudio.Modeling.ElementOperations> para crear nuevos elementos. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md) [escribir código para personalizar un](../modeling/writing-code-to-customise-a-domain-specific-language.md) [SDK de modelado de lenguaje específico de dominio para Visual Studio-lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
