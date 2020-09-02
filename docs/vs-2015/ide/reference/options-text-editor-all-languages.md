@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ebe2da1dec9917a792f3e4e02516a79cff605c80
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662399"
 ---
 # <a name="options-text-editor-all-languages"></a>Opciones, Editor de texto, Todos los lenguajes
@@ -38,12 +38,12 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
  Se muestra una marca atenuada cuando se ha seleccionado una opción en las páginas de opciones generales para algunos lenguajes de programación, pero no para otros.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="statement-completion"></a>Finalización de instrucciones
- Lista de miembros automática cuando está seleccionada, IntelliSense muestra las listas emergentes de miembros, propiedades, valores o métodos disponibles a medida que escribe en el editor. Pulse cualquier elemento de la lista emergente para insertarlo en el código. Al seleccionar esta opción se habilita la opción **Ocultar miembros avanzados**.
+ Lista de miembros automática cuando está seleccionada, IntelliSense muestra las listas emergentes de miembros, propiedades, valores o métodos disponibles a medida que escribe en el editor. Elija cualquier elemento de la lista emergente para insertarlo en el código. Al seleccionar esta opción se habilita la opción **Ocultar miembros avanzados**.
 
- Ocultar miembros avanzados cuando se selecciona, acorta las listas de finalización de instrucciones emergentes mostrando solo los elementos que se usan con más frecuencia. Los demás elementos se filtran en la lista.
+ Ocultar miembros avanzados cuando se selecciona, acorta las listas de finalización de instrucciones emergentes mostrando solo los elementos que se usan con más frecuencia. Los demás elementos se extraen de la lista.
 
  Información de parámetros cuando se selecciona, la sintaxis completa para la declaración o el procedimiento actual se muestra en el punto de inserción del editor, con todos sus parámetros disponibles. El siguiente parámetro que se puede asignar aparecerá en negrita.
 
@@ -62,15 +62,15 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
  Desactive esta casilla si prefiere no mostrar estos indicadores.
 
 > [!NOTE]
-> Estas flechas de aviso no se agregan al código ni se imprimen. Sólo sirven como referencia.
+> Estas flechas de aviso no se agregan al código ni se imprimen. Solo sirven como referencia.
 
  Aplicar comandos cortar o copiar a líneas en blanco si no hay ninguna selección esta opción establece el comportamiento del editor cuando se coloca el punto de inserción en una línea en blanco, no se selecciona nada y, a continuación, se copia o se corta.
 
 - Cuando se selecciona esta opción, se copia o se corta la línea en blanco. Si después ejecuta Pegar, se inserta una línea en blanco nueva.
 
-- Cuando esta opción está desactivada, el comando Cortar quita las líneas en blanco. En cambio, los datos del Portapapeles se conservan. Por lo tanto, si después usa el comando Pegar, se pega el contenido copiado en último lugar en el Portapapeles. Si no se ha copiado nada antes, no se pega nada.
+- Cuando esta opción está desactivada, el comando Cortar quita las líneas en blanco. En cambio, los datos del Portapapeles se conservan. Por lo tanto, si después usa el comando Pegar, se pega el contenido copiado en último lugar en el Portapapeles. Si previamente no se ha copiado nada, no se pegará nada.
 
-  Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la línea no está en blanco. Si no se selecciona nada, se copia o se corta la línea completa. Si se pega después, se pega el texto de toda la línea y el carácter de fin de línea.
+  Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la línea no está en blanco. Si no se selecciona nada, se copia o se corta la línea entera. Si se pega después, se pega el texto de toda la línea y el carácter de fin de línea.
 
 > [!TIP]
 > Con el fin de poder mostrar indicadores para los espacios, tabuladores y fines de la línea, y distinguir así las líneas con sangría de las que están completamente en blanco, en el menú **Edición** seleccione **Opciones avanzadas** y pulse **Ver espacios en blanco**.
@@ -79,11 +79,11 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
  Números de línea cuando se selecciona, aparece un número de línea junto a cada línea de código.
 
 > [!NOTE]
-> Estos números de línea no se agregan al código ni se imprimen. Sólo sirven como referencia.
+> Estos números de línea no se agregan al código ni se imprimen. Solo sirven como referencia.
 
- Habilitar la navegación de direcciones URL con un solo clic cuando se selecciona, el cursor del mouse cambia a una mano cuando pasa por encima de una dirección URL en el editor. Puede hacer clic en la dirección URL para mostrar la página indicada en el explorador web.
+ Habilitar la navegación de direcciones URL con un solo clic cuando se selecciona, el cursor del mouse cambia a una mano cuando pasa por encima de una dirección URL en el editor. Puede hacer clic en la dirección URL para abrir la página indicada en el explorador web.
 
  Barra de navegación cuando está seleccionada, muestra la **barra de navegación** en la parte superior del editor de código. Sus listas desplegables **Objetos** y **Miembros** le permiten elegir un objeto determinado en su código, seleccionar desde sus miembros e ir a la declaración del miembro seleccionado en el Editor de código.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Opciones, editor de texto, todos los lenguajes, pestañas](../../ide/reference/options-text-editor-all-languages-tabs.md) [General, entorno, opciones (cuadro de diálogo](../../ide/reference/general-environment-options-dialog-box.md) ) [mediante IntelliSense](../../ide/using-intellisense.md)

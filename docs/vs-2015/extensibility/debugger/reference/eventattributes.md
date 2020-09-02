@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Documentos de Microsoft
+title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3026845be9aa6623d6c5cd42406385e8c5c2a11e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149372"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
@@ -59,33 +59,33 @@ public enum enum_EVENTATTRIBUTES { 
  Indica que el evento es sincrónico; responder por medio de [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
   
  EVENT_STOPPING  
- Indica que se trata de un evento de detención. Se debe combinar con `EVENT_ASYNCHRONOUS` o `EVENT_SYNCHRONOUS`.  
+ Indica que se trata de un evento de detención. Debe combinarse con `EVENT_ASYNCHRONOUS` o `EVENT_SYNCHRONOUS` .  
   
  EVENT_ASYNC_STOP  
  Indica un evento de detención asincrónica. Actualmente no hay ningún evento de este tipo. Esta marca es solo un marcador de posición.  
   
  EVENT_SYNC_STOP  
- Indica un evento de detención sincrónica (una combinación de `EVENT_SYNCHRONOUS` y `EVENT_STOPPING`). Este valor se usa un motor de depuración (DE) cuando envía un evento de detención. La respuesta se realiza mediante una llamada a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [paso](../../../extensibility/debugger/reference/idebugprogram2-step.md), o [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+ Indica un evento de detención sincrónica (una combinación de `EVENT_SYNCHRONOUS` y `EVENT_STOPPING` ). Un motor DE depuración (DE) utiliza este valor cuando envía un evento de detención. La respuesta se realiza por medio de una llamada a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)o [continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
  EVENT_IMMEDIATE  
- Indica un evento que se envía de forma inmediata y sincrónicamente al IDE. Esta marca se combina con otras marcas como `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, o `EVENT_SYNC_STOP` para indicar el tipo de evento y el hecho de que se conoce el mecanismo de respuesta (si existe).  
+ Indica un evento que se envía inmediatamente y de forma sincrónica al IDE. Esta marca se combina con otras marcas como `EVENT_ASYNCHRONOUS` , `EVENT_SYNCHRONOUS` o `EVENT_SYNC_STOP` para indicar el tipo de evento y el hecho de que se conoce el mecanismo de respuesta (si existe).  
   
  EVENT_EXPRESSION_EVALUATION  
- El evento es el resultado de evaluación de expresiones.  
+ El evento es el resultado de la evaluación de la expresión.  
   
 ## <a name="remarks"></a>Comentarios  
- Estos valores se pasan en el `dwAttrib` parámetro de la [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) método.  
+ Estos valores se pasan en el `dwAttrib` parámetro del método de [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .  
   
- Estos valores se pueden combinar con un bit a bit `OR`.  
+ Estos valores se pueden combinar con una operación bit a bit `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

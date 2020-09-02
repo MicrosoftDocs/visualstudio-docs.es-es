@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a53faf8c9395867b570909ac4d34cf329da12c6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149456"
 ---
-# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+# <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una marca que indica si el símbolo corresponde a la *símbolo de definición intervalo* para el componente de la etiqueta de una variable de puntero en el código compilado para un acelerador de AMP de C++. El símbolo de intervalo de definición es la ubicación de una variable para un intervalo de direcciones.  
+Recupera una marca que indica si el símbolo corresponde al símbolo de *intervalo de definición* para el componente de etiqueta de una variable de puntero en el código compilado para un acelerador de C++ amp. El símbolo de intervalo de definición es la ubicación de una variable para un intervalo de direcciones.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,10 +32,10 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Un puntero a un `BOOL` que indica si el símbolo se corresponde con el símbolo de intervalo de definición.  
+ enuncia Un puntero a un `BOOL` que indica si el símbolo corresponde al símbolo de intervalo de definición.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Las extensiones de trasvase de registros | Microsoft Docs
+title: Extensiones de envío | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,53 +13,53 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150787"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Suministro de extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Nota**: La Galería de Visual Studio se está reemplazando por Visual Studio Marketplace. Consulte la versión más reciente de este tema para obtener más información.
+**Nota**: la galería de Visual Studio se está reemplazando por el Visual Studio Marketplace. Consulte la versión más reciente de este tema para obtener más información.
 
-Cuando haya terminado de desarrollar la extensión, puede instalarla en otros equipos, compartirlo con sus amigos y compañeros de trabajo o publicarlo en la Galería de Visual Studio. En esta sección se explican todas las cosas que debe hacer para publicar y mantener su extensión: trabajar con archivos .vsix, publicar, localizar y actualizar.
+Una vez que haya terminado de desarrollar la extensión, puede instalarla en otras máquinas, compartirla con sus amigos y compañeros o publicarla en la galería de Visual Studio. En esta sección se explican todas las cosas que debe hacer para publicar y mantener la extensión: trabajar con archivos. vsix, publicar, localizar y actualizar.
 
-## <a name="working-with-vsix-extensions"></a>Trabajar con las extensiones VSIX
- Puede crear un extensiones VSIX creando un proyecto de VSIX en blanco y, a continuación, agregar plantillas de elementos diferentes al mismo. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).
+## <a name="working-with-vsix-extensions"></a>Trabajar con extensiones VSIX
+ Puede crear una extensión VSIX mediante la creación de un proyecto VSIX en blanco y, a continuación, agregarle distintas plantillas de elementos. Para obtener más información, vea [plantilla de Proyecto VSIX](../extensibility/vsix-project-template.md).
 
- Puede usar el formato VSIX para empaquetar las plantillas de proyecto, los componentes de plantillas, paquetes VSPackage, Managed Extensibility Framework (MEF), de elemento **cuadro de herramientas** controles, ensamblados y tipos personalizados (Esto incluye las páginas de inicio personalizada). El formato VSIX usa la implementación basada en archivos. Para obtener más información acerca de los paquetes VSIX, vea [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+ Puede usar el formato VSIX para empaquetar plantillas de proyecto, plantillas de elementos, VSPackages, componentes de Managed Extensibility Framework (MEF), controles del **cuadro de herramientas** , ensamblados y tipos personalizados (esto incluye páginas de inicio personalizadas). El formato VSIX usa la implementación basada en archivos. Para obtener más información sobre los paquetes VSIX, vea [anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
- El formato VSIX no es compatible con la instalación de fragmentos de código. No admite algunos otros escenarios como la escritura a la caché de ensamblados Global (GAC) o en el registro del sistema. Si tiene que escribir en la GAC o en el registro en la instalación, debe usar al instalador de Windows. Para obtener más información, consulte [preparar las extensiones para Windows Installer implementación](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
+ El formato VSIX no admite la instalación de fragmentos de código. Tampoco admite otros escenarios, como la escritura en la caché de ensamblados global (GAC) o en el registro del sistema. Si tiene que escribir en la GAC o en el registro de la instalación, debe usar el Windows Installer. Para obtener más información, consulte [preparación de extensiones para la implementación de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
-## <a name="publishing-your-extension-to-the-visual-studio-gallery"></a>Publicar la extensión en la Galería de Visual Studio
- Puede distribuir la extensión a otras personas simplemente por correo el archivo .vsix o poner en un servidor. Pero es la mejor manera de obtener el código en manos de mucha gente colocarlo en la [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Las extensiones de la Galería de Visual Studio están disponibles para usuarios de Visual Studio a través de **extensiones y actualizaciones**. Para más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+## <a name="publishing-your-extension-to-the-visual-studio-gallery"></a>Publicación de la extensión en la galería de Visual Studio
+ Puede distribuir la extensión a otras personas simplemente enviándoles el archivo. vsix o colocando en un servidor. Pero la mejor manera de obtener el código en manos de muchos usuarios es colocarlo en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Las extensiones de la galería de Visual Studio están disponibles para los usuarios de Visual Studio a través **de extensiones y actualizaciones**. Para obtener más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
- Para obtener un ejemplo completo que muestra cómo cargar una extensión en la Galería de Visual Studio, consulte [Tutorial: Publicación de una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
+ Para ver un ejemplo completo que muestra cómo cargar una extensión en la galería de Visual Studio, consulte [Tutorial: publicar una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 
 ## <a name="private-galleries"></a>Private Galleries
- Desarrollar controles, plantillas y herramientas, puede compartirlos con su organización puedan verlas en una galería privada de la intranet. Para más información, vea [Private Galleries](../extensibility/private-galleries.md) (Galerías privadas).
+ A medida que desarrolla controles, plantillas y herramientas, puede compartirlos con su organización si los publica en una galería privada de la intranet. Para obtener más información, vea [galerías privadas](../extensibility/private-galleries.md).
 
 ## <a name="localizing-your-extension"></a>Localización de la extensión
- Si va a liberar su extensión en distintas configuraciones regionales, considere la posibilidad de localizarla. Para obtener una explicación de lo que implica, consulte [localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md).
+ Si tiene previsto publicar la extensión en distintas configuraciones regionales, considere la posibilidad de localizarla. Para obtener una explicación de lo que implica, consulte [localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md).
 
-## <a name="updating-and-versioning-your-extension"></a>La extensión de control de versiones y actualización
- Después de haber publicado su extensión, llegará un momento en que necesite para actualizarlo. Para averiguar cómo actualizar una extensión que se ha publicado en la Galería de Visual Studio, consulte [Cómo: Actualizar una extensión](../extensibility/how-to-update-a-visual-studio-extension.md).
+## <a name="updating-and-versioning-your-extension"></a>Actualización y control de versiones de la extensión
+ Después de publicar la extensión, habrá una hora en la que necesita actualizarla. Para obtener información sobre cómo actualizar una extensión Publicada en la galería de Visual Studio, consulte [Cómo: actualizar una extensión](../extensibility/how-to-update-a-visual-studio-extension.md).
 
- Puede establecer la extensión para admitir varias versiones de Visual Studio. Para obtener más información, consulte [que admiten varias versiones de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).
+ Puede establecer la extensión para que admita varias versiones de Visual Studio. Para obtener más información, vea [compatibilidad con varias versiones de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Título|DESCRIPCIÓN|
+|Title|Descripción|
 |-----------|-----------------|
-|[Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Explica cómo usar la plantilla de proyecto VSIX para instalar una plantilla de proyecto personalizado.|
+|[Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Explica cómo usar la plantilla de Proyecto VSIX para instalar una plantilla de proyecto personalizada.|
 |[Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Describe los componentes de un paquete VSIX.|
-|[Plantilla de proyecto de VSIX](../extensibility/vsix-project-template.md)|Proporciona instrucciones paso a paso sobre cómo empaquetar y publicar una extensión.|
-|[Adaptación de paquetes VSIX](../extensibility/localizing-vsix-packages.md)|Explica cómo proporcionar el texto localizado para el proceso de instalación mediante el uso de archivos extension.vsixlangpack.|
-|[Cómo: Actualizar una extensión](../extensibility/how-to-update-a-visual-studio-extension.md)|Describe cómo actualizar una extensión en el sistema y cómo implementar una actualización en una extensión de Visual Studio existente.|
-|[Cómo: Agregar una dependencia a un paquete VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Describe cómo agregar referencias a paquetes de implementación de VSIX.|
+|[Plantilla de proyecto de VSIX](../extensibility/vsix-project-template.md)|Proporciona instrucciones paso a paso acerca de cómo empaquetar y publicar una extensión.|
+|[Adaptación de paquetes VSIX](../extensibility/localizing-vsix-packages.md)|Explica cómo proporcionar texto localizado para el proceso de instalación mediante archivos. vsixlangpack de extensión.|
+|[Cómo actualizar una extensión](../extensibility/how-to-update-a-visual-studio-extension.md)|Describe cómo actualizar una extensión en el sistema y cómo implementar una actualización en una extensión de Visual Studio existente.|
+|[Adición de una dependencia a un paquete VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Describe cómo agregar referencias a los paquetes de implementación de VSIX.|
 |[Preparación de las extensiones para la implementación de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Explica cómo implementar la extensión con Windows Installer.|
 |[Firma de paquetes VSIX](../extensibility/signing-vsix-packages.md)|Explica cómo firmar paquetes VSIX.|
 |[Galerías privadas](../extensibility/private-galleries.md)|Explica cómo crear galerías privadas para las extensiones.|
-|[Compatibilidad con varias versiones de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Muestra cómo tener soporte técnico de su extensión de varias versiones de Visual Studio.|
+|[Compatibilidad con varias versiones de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Muestra cómo hacer que la extensión admita varias versiones de Visual Studio.|

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onRemoveText | Microsoft Docs
+title: 'IDebugDocumentTextEvents2:: onRemoveText | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1ff2f3685250d9a4f6cbad9c1341a5e17b0641b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149339"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Notifica el paquete de depuración que se ha quitado el texto del documento.  
+Notifica al paquete de depuración que se ha quitado el texto del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,14 +42,14 @@ int onRemoveText( 
   
 #### <a name="parameters"></a>Parámetros  
  `pos`  
- [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica que se quitó el texto.  
+ de Estructura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica dónde se ha quitado el texto.  
   
  `dwNumToRemove`  
- [in] Especifica el número de caracteres de texto que se quitaron.  
+ de Especifica el número de caracteres de texto que se han quitado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

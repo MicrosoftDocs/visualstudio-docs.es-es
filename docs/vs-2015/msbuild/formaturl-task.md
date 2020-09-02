@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bb870bcc3c4297d5d1b403176f931f75e418d423
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149709"
 ---
 # <a name="formaturl-task"></a>FormatUrl (Tarea)
@@ -30,16 +30,16 @@ ms.locfileid: "68149709"
 Convierte una dirección URL en un formato de dirección URL correcto.  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `FormatUrl` .  
+ En la siguiente tabla se describen los parámetros de la tarea `FormatUrl`.  
   
-|Parámetro|DESCRIPCIÓN|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`InputUrl`|Parámetro `String` opcional.<br /><br /> Especifica la dirección URL a la que se va a aplicar formato.|  
 |`OutputUrl`|Parámetro de salida `String` opcional.<br /><br /> Especifica la dirección URL con formato.|  
   
-## <a name="remarks"></a>Comentarios  
- Además de tener los parámetros que se enumeran en la tabla, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Observaciones  
+ Además de tener los parámetros que se enumeran en la tabla, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [clase base TaskExtension](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

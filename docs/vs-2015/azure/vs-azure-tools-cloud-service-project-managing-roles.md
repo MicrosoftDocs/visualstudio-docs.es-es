@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 63258f74f295078828d9af2f1f6d8fc2d500b8da
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624505"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Administración de roles en servicios en la nube de Azure con Visual Studio
@@ -48,7 +48,7 @@ Los pasos siguientes le explican cómo quitar un rol web o un rol de trabajo de 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Nueva incorporación de un rol a un proyecto de servicio en la nube de Azure
 Si quita un rol del proyecto de servicio en la nube pero posteriormente decide volver a agregarlo al proyecto, solo se agregarán la declaración del rol y los atributos básicos como, por ejemplo, los extremos y la información de diagnóstico. No se agrega ningún recurso o referencia adicional al archivo `ServiceDefinition.csdef` ni al archivo `ServiceConfiguration.cscfg`. Si quiere agregar esta información, tiene que volver a agregarla manualmente en estos archivos.
 
-Por ejemplo, es posible que quite un rol de servicio web y más adelante decida agregarlo de nuevo a la solución. Si lo hace, se produce un error. Para evitar este error, tiene que agregar de nuevo el elemento `<LocalResources>` que se muestra en el siguiente código XML al archivo `ServiceDefinition.csdef`. Use el nombre del rol de servicio web que volvió a agregar al proyecto como parte del nombre del atributo para el elemento **\<LocalStorage>** . En este ejemplo el nombre del rol de servicio web es **WCFServiceWebRole1**.
+Por ejemplo, es posible que quite un rol de servicio web y más adelante decida agregarlo de nuevo a la solución. Si lo hace, se produce un error. Para evitar este error, tiene que agregar de nuevo el elemento `<LocalResources>` que se muestra en el siguiente código XML al archivo `ServiceDefinition.csdef`. Use el nombre del rol de servicio Web que ha agregado al proyecto como parte del atributo de nombre del **\<LocalStorage>** elemento. En este ejemplo el nombre del rol de servicio web es **WCFServiceWebRole1**.
 
 ```xml
 <WebRole name="WCFServiceWebRole1">

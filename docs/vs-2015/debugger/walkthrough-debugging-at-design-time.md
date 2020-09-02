@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depuración en tiempo de diseño | Documentos de Microsoft'
+title: 'Tutorial: depurar en tiempo de diseño | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,16 +24,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149429"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Tutorial: Depuración en tiempo de diseño
+# <a name="walkthrough-debugging-at-design-time"></a>Tutorial: Depurar en tiempo de diseño
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar Visual Studio **inmediato** ventana para ejecutar una función o subrutina mientras la aplicación no se está ejecutando. Si la función o subrutina contiene un punto de interrupción, Visual Studio interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Esta característica se denomina depuración en tiempo de diseño.  
+Puede usar la ventana **inmediato** de Visual Studio para ejecutar una función o subrutina mientras la aplicación no se está ejecutando. Si la función o subrutina contiene un punto de interrupción, Visual Studio interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Esta característica se denomina depuración en tiempo de diseño.  
   
  El siguiente procedimiento muestra cómo puede utilizar esta característica.  
   
@@ -65,22 +65,22 @@ Puede usar Visual Studio **inmediato** ventana para ejecutar una función o subr
   
 2. Establezca un punto de interrupción en la línea `s="Add BreakPoint Here"`.  
   
-3. Escriba lo siguiente en el **inmediato** ventana: `?MyFunction<enter>`  
+3. Escriba lo siguiente en la ventana **inmediato** : `?MyFunction<enter>`  
   
 4. Compruebe que se ha alcanzado el punto de interrupción, y que la pila de llamadas es exacta.  
   
-5. En el **depurar** menú, haga clic en **continuar**y compruebe que está todavía en modo de diseño.  
+5. En el menú **depurar** , haga clic en **continuar**y compruebe que todavía está en modo de diseño.  
   
-6. Escriba lo siguiente en el **inmediato** ventana: `?MyFunction<enter>`  
+6. Escriba lo siguiente en la ventana **inmediato** : `?MyFunction<enter>`  
   
-7. Escriba lo siguiente en el **inmediato** ventana: `?MySub<enter>`  
+7. Escriba lo siguiente en la ventana **inmediato** : `?MySub<enter>`  
   
-8. Compruebe que el punto de interrupción y examinar el valor de la variable estática `i` en el **variables locales** ventana. Debería tener el valor de 3.  
+8. Compruebe que ha alcanzado el punto de interrupción y examine el valor de variable estática `i` en la ventana **variables locales** . Debería tener el valor de 3.  
   
 9. Compruebe que la pila de llamadas es exacta.  
   
-10. En el **depurar** menú, haga clic en **continuar**y compruebe que está todavía en modo de diseño.  
+10. En el menú **depurar** , haga clic en **continuar**y compruebe que todavía está en modo de diseño.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)

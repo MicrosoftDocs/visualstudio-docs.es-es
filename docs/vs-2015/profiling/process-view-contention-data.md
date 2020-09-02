@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180230"
 ---
 # <a name="process-view---contention-data"></a>Vista Proceso: datos de contención
@@ -27,7 +27,7 @@ La vista Proceso muestra datos de contención de los procesos y subprocesos que 
   
  En la siguiente tabla se explican los valores de las columnas de la tabla de vista Proceso.  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Hora de inicio**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el inicio del proceso o subproceso.|  
 |**Tiempo de bloqueo**|El tiempo total durante el cual no se pudieron ejecutar las funciones del proceso o subproceso.|  
@@ -41,6 +41,6 @@ La vista Proceso muestra datos de contención de los procesos y subprocesos que 
 |**Name**|El nombre del proceso o subproceso.|  
 |**Id. único**|Un identificador generado por el generador de perfiles que es único para el proceso o subproceso.|  
   
-## <a name="see-also"></a>Otras referencias  
- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Proceso](../profiling/process-view.md)

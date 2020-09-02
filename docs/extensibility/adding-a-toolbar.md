@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904072"
 ---
 # <a name="add-a-toolbar"></a>Agregar una barra de herramientas
@@ -89,5 +89,5 @@ En este tutorial se muestra cómo agregar una barra de herramientas al IDE de Vi
 
 7. Ahora debería ver la barra de herramientas como un icono a la derecha del icono Buscar en archivos. Al hacer clic en el icono, debería ver un cuadro de mensaje que dice **ToolbarTestCommandPackage. Dentro de IDEToolbar. ToolbarTestCommand. MenuItemCallback ()**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

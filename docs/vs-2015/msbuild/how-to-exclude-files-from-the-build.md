@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Excluir archivos de la compilación | Microsoft Docs
+title: 'Cómo: Excluir archivos de la compilación | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821614"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Procedimiento Excluir archivos de la compilación
+# <a name="how-to-exclude-files-from-the-build"></a>Cómo: Excluir archivos de la compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En un archivo de proyecto puede utilizar comodines para incluir todos los archivos de un directorio o un conjunto de directorios anidado como entradas para una compilación. Sin embargo, puede haber un archivo en el directorio o un directorio en el conjunto anidado de directorios que no quiera incluir como entrada para una compilación. Puede excluir explícitamente ese archivo o directorio de la lista de entradas. También puede haber un archivo en un proyecto que solo quiera incluir bajo determinadas condiciones. Se pueden declarar explícitamente las condiciones para incluir un archivo en una compilación.  
@@ -125,6 +125,6 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Elementos](../msbuild/msbuild-items.md)   
  [MSBuild](msbuild.md) [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md)

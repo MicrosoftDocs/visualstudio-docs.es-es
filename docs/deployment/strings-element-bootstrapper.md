@@ -1,5 +1,5 @@
 ---
-title: '&lt;Cadenas&gt; (elemento, arranque) | Microsoft Docs'
+title: '&lt;&gt;Elemento Strings (arranque) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747411"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; (elemento, arranque)
-Define las cadenas localizadas para los nombres de productos, nombres de paquete y los mensajes de error de instalación.
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;&gt;Elemento Strings (arranque)
+Define las cadenas localizadas para los nombres de producto, los nombres de paquete y los mensajes de error de instalación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,19 +40,19 @@ Define las cadenas localizadas para los nombres de productos, nombres de paquete
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos y atributos
- El `Strings` es un elemento secundario de la `Package` elemento. No tiene atributos.
+ El `Strings` elemento es un elemento secundario del `Package` elemento. No tiene atributos.
 
 ## <a name="string"></a>String
- El `String` es un elemento secundario de la `Strings` elemento. Un `Strings` elemento puede tener uno o más `String` elementos.
+ El `String` elemento es un elemento secundario del `Strings` elemento. Un `Strings` elemento puede tener uno o más `String` elementos.
 
  `String` tiene el siguiente atributo.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`Name`|Obligatorio. El nombre de la cadena.|
+|`Name`|Necesario. Nombre de la cadena.|
 
 ## <a name="example"></a>Ejemplo
- El ejemplo de código siguiente especifica todas las cadenas en inglés para el instalador de .NET Framework.
+ En el ejemplo de código siguiente se especifican todas las cadenas en inglés para el instalador de .NET Framework.
 
 ```xml
 <Strings>
@@ -73,5 +73,5 @@ Define las cadenas localizadas para los nombres de productos, nombres de paquete
 </Strings>
 ```
 
-## <a name="see-also"></a>Vea también
-- [\<Paquete > elemento](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Consulte también
+- [\<Package> Element](../deployment/package-element-bootstrapper.md)

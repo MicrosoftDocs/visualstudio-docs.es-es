@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6f0c13e5ea8778ca91c30383287aaad6e965bb65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149595"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (Tarea)
@@ -34,7 +34,7 @@ Genera un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/nd
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea `GenerateDeploymentManifest`.  
   
-|Parámetro|DESCRIPCIÓN|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`AssemblyName`|Parámetro `String` opcional.<br /><br /> Especifica el campo `Name` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, el nombre se deduce de los parámetros `EntryPoint` o `InputManifest`. Si no se puede deducir el nombre, la tarea muestra un error.|  
 |`AssemblyVersion`|Parámetro `String` opcional.<br /><br /> Especifica el campo `Version` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, la tarea utiliza el valor "1.0.0.0".|  
@@ -42,7 +42,7 @@ Genera un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/nd
 |`DeploymentUrl`|Parámetro `String` opcional.<br /><br /> Especifica la ubicación de actualización para la aplicación. Si no se especifica este parámetro, no se definirá ninguna ubicación de actualización para la aplicación. Sin embargo, si el parámetro `UpdateEnabled` es `true`, se debe especificar la ubicación de actualización. El valor especificado debe ser una dirección URL o ruta de acceso UNC completa.|  
 |`Description`|Parámetro `String` opcional.<br /><br /> Especifica una descripción opcional para la aplicación.|  
 |`DisallowUrlActivation`|Parámetro `Boolean` opcional.<br /><br /> Especifica si la aplicación debe ejecutarse automáticamente cuando se abre mediante una dirección URL. Si este parámetro es `true`, la aplicación solo se puede iniciar desde el menú Inicio. El valor predeterminado de este parámetro es `false`. Este valor solo se aplica cuando el valor del parámetro `Install` es `true`.|  
-|`EntryPoint`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Indica el punto de entrada para el manifiesto del ensamblado generado. En un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], este valor especifica el manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> En [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], la [tarea GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) requería un parámetro `EntryPoint` para generar un manifiesto de aplicación. (Los manifiestos de ensamblado o nativos no necesitan el parámetro `EntryPoint`). Este requisito se exigía con el error de compilación: "MSB3185: No se especificó EntryPoint para el manifiesto."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] no emite este error cuando no se especifica el parámetro de tarea `EntryPoint`. En su lugar, la etiqueta \<customHostSpecified> se inserta como etiqueta secundaria de \<entryPoint>; por ejemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Puede agregar dependencias de DLL al manifiesto de aplicación siguiendo estos pasos:<br /><br /> 1.  Resuelva las referencias del ensamblado con una llamada a <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Pase el resultado de la tarea anterior y el propio ensamblado a <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Pase las dependencias a través del parámetro `Dependencies` a <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
+|`EntryPoint`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Indica el punto de entrada para el manifiesto del ensamblado generado. En un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], este valor especifica el manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> En [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], la [tarea GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) requería un parámetro `EntryPoint` para generar un manifiesto de aplicación. (Los manifiestos de ensamblado o nativos no requieren `EntryPoint` ). Este requisito se aplicó con el error de compilación: "MSB3185: no se especificó EntryPoint para el manifiesto".<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] no emite este error cuando no se especifica el parámetro de tarea `EntryPoint`. En su lugar, la \<customHostSpecified> etiqueta se inserta como un elemento secundario de la \<entryPoint> etiqueta, por ejemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Puede agregar dependencias de DLL al manifiesto de aplicación siguiendo estos pasos:<br /><br /> 1. resuelva las referencias de ensamblado con una llamada a <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> .<br />2. Pase el resultado de la tarea anterior y el propio ensamblado a <xref:Microsoft.Build.Tasks.ResolveManifestFiles> .<br />3. Pase las dependencias mediante el `Dependencies` parámetro a <xref:Microsoft.Build.Tasks.GenerateApplicationManifest> .|  
 |`ErrorReportUrl`|Parámetro opcional [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Especifica la dirección URL de la página web que se muestra en los cuadros de diálogo durante las instalaciones ClickOnce.|  
 |`InputManifest`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica un documento XML de entrada que sirve de base para el generador de manifiestos. De este modo, los datos estructurados, como las definiciones personalizadas del manifiesto, pueden reflejarse en el manifiesto de salida. El elemento raíz del documento XML debe ser un nodo de ensamblado en el espacio de nombres asmv1.|  
 |`Install`|Parámetro `Boolean` opcional.<br /><br /> Especifica si la aplicación es una aplicación instalada o se trata de una aplicación que únicamente está disponible en línea. Si este parámetro es `true`, la aplicación se instalará en el menú Inicio del usuario y se podrá eliminar a través del cuadro de diálogo Agregar o quitar programas. Si este parámetro es `false`, la aplicación está destinada para su uso en línea desde una página web. El valor predeterminado de este parámetro es `true`.|  
@@ -63,10 +63,10 @@ Genera un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/nd
 |`UpdateUnit`|Parámetro `String` opcional.<br /><br /> Especifica las unidades del parámetro `UpdateInterval`. Este parámetro puede tener los valores siguientes:<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Este parámetro solo se aplica cuando los valores de los parámetros `Install` y `UpdateEnabled` son ambos `true`.|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de los parámetros de la clase Task, vea [Task Base (Clase)](../msbuild/task-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de los parámetros de la clase Task, vea [Task base class](../msbuild/task-base-class.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Tareas](../msbuild/msbuild-tasks.md)   
- [GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md)   
- [SignFile (Tarea)](../msbuild/signfile-task.md)   
+ [GenerateApplicationManifest (tarea)](../msbuild/generateapplicationmanifest-task.md)   
+ [SignFile (tarea)](../msbuild/signfile-task.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

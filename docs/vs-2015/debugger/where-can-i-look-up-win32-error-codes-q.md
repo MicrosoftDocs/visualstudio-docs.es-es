@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d403315a2320589f69174109d55c8726ffd5f673
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149397"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Dónde buscar códigos de error de Win32
@@ -38,6 +38,6 @@ El archivo WINERROR.H, situado en el directorio INCLUDE de la instalación prede
 0x80000004,hr  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>Consulte también  
+ [Preguntas más frecuentes sobre depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)

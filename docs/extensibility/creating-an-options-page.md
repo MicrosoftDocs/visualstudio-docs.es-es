@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903814"
 ---
 # <a name="create-an-options-page"></a>Crear una página de opciones
@@ -245,7 +245,7 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
     ```
 
-     Este código llama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> a para crear o recuperar una `OptionPageGrid` instancia. `OptionPageGrid`llama <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> a para cargar sus opciones, que son propiedades públicas.
+     Este código llama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> a para crear o recuperar una `OptionPageGrid` instancia. `OptionPageGrid` llama <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> a para cargar sus opciones, que son propiedades públicas.
 
 2. Ahora, agregue una plantilla de elemento de comando personalizada denominada **MyToolsOptionsCommand** para mostrar el valor. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >  **Extensibility** y seleccione **comando personalizado**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *MyToolsOptionsCommand.CS*.
 
@@ -266,6 +266,6 @@ En este tutorial se crea una página de herramientas/opciones simple que utiliza
 
      Un cuadro de mensaje muestra el valor actual de `OptionInteger` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md)

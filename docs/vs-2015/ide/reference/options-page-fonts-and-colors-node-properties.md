@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23aa4eff3339ad3cd3ab7d4106745dc6fa83df34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662426"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Página de opciones, Propiedades de nodo Fuentes y colores
@@ -29,19 +29,19 @@ En este documento se describen las propiedades de fuente y color de una ventana 
 ## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Editor de texto o Impresora o Cuadros de diálogo y Ventanas de herramientas
  `DTE.Properties("FontsAndColors", "TextEditor")`
 
- O bien
+ o bien
 
  `DTE.Properties("FontsAndColors", "Printer")`
 
- O bien
+ o bien
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
-|Nombre de elemento de propiedad|Valor|DESCRIPCIÓN|
+|Nombre de elemento de propiedad|Value|Descripción|
 |------------------------|-----------|-----------------|
 |FontFamily|Get/Set (String)|Nombre de la fuente que se va a usar, por ejemplo, "Courier New".|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Valor <xref:EnvDTE.vsFontCharSet> que especifica el tipo de juego de caracteres que se va a usar, como hebreo o ruso.|
 |FontSize|Get/Set (Short)|Tamaño de fuente que se va a usar, en puntos. Por ejemplo, 10 o 12.|
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Controlar la configuración](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [de opciones determinar los nombres de elementos de propiedades en las páginas de opciones](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [Página opciones, página Opciones propiedades de nodo de entorno](../../ide/reference/options-page-environment-node-properties.md) [, propiedades del nodo editor de texto](../../ide/reference/options-page-text-editor-node-properties.md)

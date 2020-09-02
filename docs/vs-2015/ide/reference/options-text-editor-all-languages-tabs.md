@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4cb670ab52e321f15c5b009c66ca40623409f10a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662384"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opciones, editor de texto, todos los lenguajes, pestañas
@@ -39,9 +39,9 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
  Si están seleccionadas diferentes opciones en las páginas de opciones de pestañas para lenguajes de programación determinados, entonces el mensaje "Los valores de la sangría para formatos de texto individuales están en conflicto entre sí" se muestra para las distintas opciones de **sangría**; y se muestra el mensaje "Los valores del tabulador para formatos de texto individuales están en conflicto entre sí" para las distintas opciones del **tabulador**. Por ejemplo, este recordatorio se muestra si la opción **Sangría inteligente** está seleccionada para Visual Basic, pero **Sangría de bloques** está seleccionada para Visual C++.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="indenting"></a>Aplicar sangría
+## <a name="indenting"></a>Sangrías
  Ninguno cuando se selecciona, no se aplica sangría a las líneas nuevas. El punto de inserción se coloca en la primera columna de una nueva línea.
 
  Bloquear cuando se selecciona, se aplica sangría automáticamente a las nuevas líneas. El punto de inserción se coloca en el mismo punto inicial que la línea anterior.
@@ -51,13 +51,13 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
  Por ejemplo, a las líneas que aparecen entre una llave inicial ( { ) y una llave de cierre ( } ) se les puede aplicar automáticamente una sangría equivalente a una posición de tabulación adicional con respecto a la posición de las llaves alineadas.
 
 ## <a name="tabs"></a>Tabulaciones
- Tamaño de tabulación establece la distancia en espacios entre las tabulaciones. El valor predeterminado es de cuatro espacios.
+ Tamaño de tabulación Establece la distancia en espacios entre las tabulaciones. El valor predeterminado es cuatro espacios.
 
- Tamaño de sangría establece el tamaño en espacios de una sangría automática. El valor predeterminado es de cuatro espacios. Se insertan caracteres de tabulación, caracteres de espacio o ambos, para llenar el tamaño especificado.
+ Tamaño de sangría Establece el tamaño en espacios de una sangría automática. El valor predeterminado es cuatro espacios. Se insertarán caracteres de tabulación, de espacio o ambos para rellenar el tamaño especificado.
 
  Insertar espacios cuando se selecciona, las operaciones de sangría insertan solo caracteres de espacio, no caracteres de TABULAción. Si el **Tamaño de sangría** se establece en 5, por ejemplo, se insertarán cinco caracteres de espacio cada vez que se presione la tecla TAB o el botón **Aumentar sangría** en la barra de herramientas **Formato**.
 
- Mantener tabulaciones cuando se selecciona, las operaciones de sangría insertan tantos caracteres de TABULAción como sea posible. Cada carácter de tabulación rellena el número de espacios especificado en **Tamaño de tabulación**. Si el **Tamaño de sangría** no es un múltiplo par del **Tamaño de tabulación**, se agregan caracteres de espacio en blanco para igualar la diferencia.
+ Mantener tabulaciones cuando se selecciona, las operaciones de sangría insertan tantos caracteres de TABULAción como sea posible. Cada carácter de TABULAción rellena el número de espacios especificado en **tamaño de tabulación**. Si el **Tamaño de sangría** no es un múltiplo par del **Tamaño de tabulación**, se agregan caracteres de espacio en blanco para igualar la diferencia.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Opciones, editor de texto, todos los lenguajes](../../ide/reference/options-text-editor-all-languages.md) [General, entorno, opciones (cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

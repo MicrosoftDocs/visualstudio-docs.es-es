@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6d527b00e8cbfe6a6f4ad5d112a23e46d4edb8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149572"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (Tarea)
@@ -32,9 +32,9 @@ ms.locfileid: "68149572"
 Recupera la ruta de acceso a [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
- En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkSdkPath`.  
+ En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkSdkPath` .  
   
-|Parámetro|DESCRIPCIÓN|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`FrameworkSdkVersion20Path`|Parámetro de salida de solo lectura `String` opcional.<br /><br /> Devuelve la ruta de acceso al SDK de .NET versión 2.0, si está presente. De lo contrario, devuelve `String.Empty`.|  
 |`FrameworkSdkVersion35Path`|Parámetro de salida de solo lectura `String` opcional.<br /><br /> Devuelve la ruta de acceso al SDK de .NET versión 3.5, si está presente. De lo contrario, devuelve `String.Empty`.|  
@@ -42,7 +42,7 @@ Recupera la ruta de acceso a [!INCLUDE[winsdklong](../includes/winsdklong-md.md)
 |`Path`|Parámetro de salida `String` opcional.<br /><br /> Contiene la ruta de acceso al SDK de .NET más reciente, si hay alguna versión. De lo contrario, devuelve `String.Empty`.|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [clase base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se usa la tarea `GetFrameworkSdkPath` para almacenar la ruta de acceso a [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] en la propiedad `SdkPath`.  
@@ -60,6 +60,6 @@ Recupera la ruta de acceso a [!INCLUDE[winsdklong](../includes/winsdklong-md.md)
 </Project>  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

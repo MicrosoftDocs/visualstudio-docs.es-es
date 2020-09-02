@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad con categorías de configuración | Documentos de Microsoft
+title: Compatibilidad con categorías de configuración | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,14 +11,14 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689092"
 ---
 # <a name="support-for-settings-categories"></a>Compatibilidad con categorías de configuración
-Una categoría de configuración consta de un grupo de opciones que personalizan el entorno de desarrollo integrado (IDE). Por ejemplo, la configuración puede controlar el diseño de las ventanas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y el contenido de los menús. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Una categoría de configuración consta de un grupo de opciones que personalizan el entorno de desarrollo integrado (IDE). Por ejemplo, la configuración puede controlar el diseño de las ventanas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y el contenido de los menús. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  En el menú **Herramientas** , haga clic en **Importar y exportar configuraciones** para iniciar el **Asistente para importar y exportar configuraciones**. El asistente ofrece tres opciones: exportar, importar o restablecer la configuración. Por ejemplo, si selecciona exportar, se abre la página del asistente **Elija la configuración para exportar** .  
   
@@ -51,7 +51,7 @@ Una categoría de configuración consta de un grupo de opciones que personalizan
 > El nombre canónico no aparece en una interfaz de usuario. Se usa para asociar un nombre legible con la categoría de configuración, como si se tratase de un identificador de programación (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Atributo de la categoría de configuración  
- El <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina la asignación de categorías a los puntos de una configuración personalizada en el **importar y exportar configuraciones** asociando una categoría con el VSPackage que lo proporciona. Observe el fragmento de código siguiente:  
+ <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>Determina la asignación de categorías a los puntos de configuración personalizados en el **Asistente para importar y exportar configuraciones** mediante la Asociación de una categoría con el VSPackage que la proporciona. Observe el fragmento de código siguiente:  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
@@ -60,8 +60,8 @@ Una categoría de configuración consta de un grupo de opciones que personalizan
   
  En el **Asistente para importar y exportar configuraciones**, el punto de configuración tiene el nombre My Settings. Cuando se selecciona el punto de configuración, aparece la descripción **Various Options**. El nombre y la descripción del punto de configuración se toman de recursos de cadena localizada.  
   
-## <a name="see-also"></a>Vea también  
- [Creación de una página de opciones](../extensibility/creating-an-options-page.md)   
- [Muestras de VSSDK](../misc/vssdk-samples.md)   
+## <a name="see-also"></a>Consulte también  
+ [Crear una página de opciones](../extensibility/creating-an-options-page.md)   
+ [Ejemplos de VSSDK](../misc/vssdk-samples.md)   
  [Estado de VSPackage](../misc/vspackage-state.md)   
  [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

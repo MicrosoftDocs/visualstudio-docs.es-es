@@ -1,5 +1,5 @@
 ---
-title: 'Preparación de la depuración: C#, F#y tipos de proyecto de Visual Basic | Microsoft Docs'
+title: 'Preparación de la depuración: tipos de proyecto de C#, F # y Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,24 +24,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195319"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparación de la depuración: Tipos de proyectos de C#, F# y Visual Basic
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparación de la depuración: Tipos de proyectos de C#, F# y Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En los temas de esta sección se describe cómo se depuran los tipos de proyectos de C#, F# y [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] creados mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Tenga en cuenta que se han agrupado en esos tipos de proyecto que crean archivos DLL como resultado [depurar proyectos DLL](../debugger/debugging-dll-projects.md) debido a las características comunes que comparten.  
+ Tenga en cuenta que esos tipos de proyecto que crean archivos DLL como resultado se han agrupado en [Depurar proyectos DLL](../debugger/debugging-dll-projects.md) debido a las características comunes que comparten.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Valores de propiedades recomendados](../debugger/managed-debugging-recommended-property-settings.md)  
  En esta sección se describen los valores recomendados de las propiedades relacionadas con la depuración para proyectos de C#, F# y Visual Basic.  
   
- [Aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  
+ [Aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  
  Describe un proyecto de aplicación para Windows y proporciona instrucciones para realizar la depuración, modificar la configuración predeterminada de Debug e iniciar la aplicación fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y asociarla con el depurador.  
   
  [Proyectos de consola](../debugger/debugging-preparation-console-projects.md)  
@@ -57,5 +57,5 @@ En los temas de esta sección se describe cómo se depuran los tipos de proyecto
  [Depurar código administrado](../debugger/debugging-managed-code.md)  
  Explica problemas y técnicas de depuración comunes de aplicaciones escritas en código administrado.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)
