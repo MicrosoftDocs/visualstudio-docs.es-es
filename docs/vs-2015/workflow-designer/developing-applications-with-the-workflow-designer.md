@@ -18,14 +18,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848300c54800e229ee1f487fc415bad45d982a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656824"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Desarrollar aplicaciones con el Diseñador de flujo de trabajo
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] es un diseñador visual y un depurador para la creación gráfica y depuración de aplicaciones de [!INCLUDE[wf](../includes/wf-md.md)] en el [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] que se hospeda en el entorno de desarrollo de [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Le permite crear una aplicación de flujo de trabajo compuesta, una biblioteca de actividades o un servicio de [!INCLUDE[indigo1](../includes/indigo1-md.md)] mediante el uso de plantillas y diseñadores de actividades. [!INCLUDE[crabout](../includes/crabout-md.md)] flujos de trabajo, vea [el &#91;Windows Workflow Foundation .NET Framework&#93;4](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] es un diseñador visual y un depurador para la creación gráfica y depuración de aplicaciones de [!INCLUDE[wf](../includes/wf-md.md)] en el [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] que se hospeda en el entorno de desarrollo de [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Le permite crear una aplicación de flujo de trabajo compuesta, una biblioteca de actividades o un servicio de [!INCLUDE[indigo1](../includes/indigo1-md.md)] mediante el uso de plantillas y diseñadores de actividades. [!INCLUDE[crabout](../includes/crabout-md.md)] los flujos de trabajo, consulte el [Windows Workflow Foundation &#91; .NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
 
  A continuación se indican diversas características de diseño nuevas que diferencia esta versión nueva de [!INCLUDE[wfd2](../includes/wfd2-md.md)] de las versiones anteriores de [!INCLUDE[wfd2](../includes/wfd2-md.md)]:
 
@@ -43,7 +43,7 @@ ms.locfileid: "72656824"
 
 - El hospedar a [!INCLUDE[wfd2](../includes/wfd2-md.md)] fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se simplifica enormemente si se compara con versiones anteriores y esto requiere ahora unas pocas líneas de código.
 
-- La nueva actividad <xref:System.Activities.Statements.Flowchart> y su [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) le permiten visualizar el flujo del programa mediante el estilo de modelado de diagramas de flujo familiar.
+- La nueva <xref:System.Activities.Statements.Flowchart> actividad y su [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) le permiten visualizar el flujo del programa mediante el estilo de modelado de diagramas de flujo familiar.
 
 - Las actividades de mensajería se han mejorado, lo cual le permite escribir servicios de [!INCLUDE[indigo1](../includes/indigo1-md.md)] totalmente declarativos (sin código).
 
@@ -56,10 +56,10 @@ ms.locfileid: "72656824"
 
  [Depurar flujos de trabajo con el diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) Describir cómo realizar los procedimientos de depuración tradicionales, así como depurar expresiones y XAML.
 
- [Diseñador de flujo de trabajo ayuda](../workflow-designer/workflow-designer-ui-help.md) de la interfaz de usuario Contiene temas de la ayuda contextual para los cuadros de diálogo proporcionados por [!INCLUDE[wfd1](../includes/wfd1-md.md)], así como instrucciones sobre las características del shell del diseñador, los métodos abreviados de teclado y los mensajes de error.
+ [Diseñador de flujo de trabajo ayuda](../workflow-designer/workflow-designer-ui-help.md) de la interfaz de usuario Contiene temas de ayuda contextual para los cuadros de diálogo proporcionados por [!INCLUDE[wfd1](../includes/wfd1-md.md)] , así como instrucciones sobre las características del shell del diseñador, los métodos abreviados de teclado y los mensajes de error.
 
- [Desarrollo de aplicaciones de flujo de trabajo que tienen como destino el marco .net 3,0 o .net 3,5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md) Contiene instrucciones sobre cómo usar el diseñador heredado que tiene como destino el [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o el [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+ [Desarrollo de aplicaciones de flujo de trabajo que tienen como destino el marco .net 3,0 o .net 3,5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md) Contiene instrucciones sobre cómo usar el diseñador heredado que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
- [Ejemplos&#93; del diseñador de &#91;hospedaje de WF](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d) En este ejemplo se muestra cómo crear el diseño de WPF para que contenga el diseñador.
+ [&#91;ejemplos de WF de Rehospedamiento de diseñador&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d) En este ejemplo se muestra cómo crear el diseño de WPF para que contenga el diseñador.
 
  [Diseñadores de actividad personalizados](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075) Esta sección contiene ejemplos de actividades que utilizan diseñadores personalizados para su presentación en el diseñador de flujo de trabajo.

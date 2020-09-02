@@ -15,10 +15,10 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b1b4846bcceba2325da1c835b59a48e651190a1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852119"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Soporte técnico para Visual Studio SDK
@@ -41,12 +41,12 @@ Hay varias opciones de soporte técnico disponibles para los clientes que tienen
  El [Visual Studio Marketplace](https://marketplace.visualstudio.com/) es el lugar para las extensiones y el código de ejemplo. Puede encontrar herramientas que mejoren la productividad y la experiencia del usuario con Visual Studio, aplicaciones de ejemplo que muestran cómo usar VSPackages y el Managed Extensibility Framework (MEF) y otros tipos de ejemplos.  
   
 ### <a name="codeplex"></a>Codeplex  
- [CodePlex](https://www.codeplex.com/) es el sitio web de hospedaje del proyecto de código abierto de Microsoft. Puede usar CodePlex para crear y compartir nuevos proyectos, contribuir a proyectos existentes o usar las aplicaciones en el sitio y proporcionar comentarios. Todos los PowerToys (y su documentación) que se incluyeron en las versiones anteriores del [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ahora están disponibles en CodePlex.  
+ [CodePlex](https://www.codeplex.com/) es el sitio web de hospedaje del proyecto de código abierto de Microsoft. Puede usar CodePlex para crear y compartir nuevos proyectos, contribuir a proyectos existentes o usar las aplicaciones en el sitio y proporcionar comentarios. Todos los PowerToys (y su documentación) que se incluyeron con versiones anteriores de [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ahora están disponibles en Codeplex.  
   
 ## <a name="included-support"></a>Compatibilidad incluida  
   
 ### <a name="visual-studio-product-support"></a>Soporte técnico de Visual Studio  
- Se incluye algún soporte técnico con la compra de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] productos. Para obtener más información, consulte [compatibilidad con Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene a un equipo de soporte técnico dedicado para responder a las preguntas sobre la extensibilidad de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Se incluye algún soporte técnico con la compra de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] productos. Para obtener más información, consulte [compatibilidad con Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene a un equipo de soporte técnico dedicado para responder a preguntas acerca de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibilidad.  
   
 ### <a name="msdn-subscription-support"></a>Compatibilidad con las suscripciones a MSDN  
  Los paquetes de suscripción a MSDN también pueden incluir cierta compatibilidad. Para obtener más información, consulte [compatibilidad con suscriptores de MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
@@ -61,9 +61,9 @@ Hay varias opciones de soporte técnico disponibles para los clientes que tienen
 > [!NOTE]
 > No se puede usar el soporte técnico Standard para la consulta o para obtener consejos.  
   
- Se pueden enviar preguntas sobre soporte técnico Premier ofertas junto con el programa VSIP a [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Se pueden enviar preguntas sobre el nuevo programa de ventajas para asociados a [advantg@microsoft.com](mailto:advantg@microsoft.com).  
+ Se pueden enviar preguntas sobre soporte técnico Premier ofertas junto con el programa VSIP a [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com) . Se pueden enviar preguntas sobre el nuevo programa de ventajas para asociados a [advantg@microsoft.com](mailto:advantg@microsoft.com) .  
   
  Puede encontrar información sobre las solicitudes de soporte técnico individuales en cada [solicitud de soporte técnico](https://support.microsoft.com/oas/default.aspx?gprid=3040).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Hable con nosotros](../ide/talk-to-us.md)

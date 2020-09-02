@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162330"
 ---
 # <a name="logging-in-msbuild"></a>Registro de MSBuild
@@ -24,7 +24,7 @@ ms.locfileid: "68162330"
 El registro proporciona una manera de supervisar el progreso de una compilación. El registro captura los eventos, los mensajes, las advertencias y los errores de compilación en un archivo de registro.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)  
+ [Obtención de registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)  
  Describe los diferentes aspectos del registro de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Registradores de compilación](../msbuild/build-loggers.md)  

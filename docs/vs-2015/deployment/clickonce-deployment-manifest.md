@@ -1,5 +1,5 @@
 ---
-title: Manifiesto de implementación ClickOnce | Microsoft Docs
+title: Manifiesto de implementación de ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190470"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifiesto de la implementación ClickOnce
@@ -30,19 +30,19 @@ Un manifiesto de implementación es un archivo XML que describe una implementaci
   
  Los manifiestos de implementación tienen los siguientes elementos y atributos.  
   
-|Elemento|DESCRIPCIÓN|Atributos|  
+|Elemento|Descripción|Atributos|  
 |-------------|-----------------|----------------|  
-|[\<assembly> Element](../deployment/assembly-element-clickonce-deployment.md)|Necesario. Elemento de nivel superior.|`manifestVersion`|  
-|[\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)|Necesario. Identifica el manifiesto de aplicación para esta aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<description> Element](../deployment/description-element-clickonce-deployment.md)|Necesario. Identifica la información de la aplicación utilizada para crear una presencia de shell y el elemento **Agregar o quitar programas** en el Panel de control.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
-|[\<deployment> Element](../deployment/deployment-element-clickonce-deployment.md)|Opcional. Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
-|[\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Necesario. Identifica las versiones de .NET Framework en las que se puede instalar y ejecutar esta aplicación.|`SupportUrl`|  
-|[\<dependency> Element](../deployment/dependency-element-clickonce-deployment.md)|Necesario. Identifica la versión de la aplicación que se va a instalar para la implementación y la ubicación del manifiesto de aplicación.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
-|[\<publisherIdentity> Element](../deployment/publisheridentity-element-clickonce-deployment.md)|Requerido para los manifiestos firmados. Contiene información sobre el editor que firmó este manifiesto de implementación.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<Signature> Element](../deployment/signature-element-clickonce-deployment.md)|Opcional. Contiene la información necesaria para firmar digitalmente este manifiesto de implementación.|None|  
-|[\<customErrorReporting> Element](../deployment/customerrorreporting-element-clickonce-deployment.md)|Opcional. Especifica un URI que se va a mostrar cuando se produce un error.|URI|  
+|[Elemento \<assembly>](../deployment/assembly-element-clickonce-deployment.md)|Necesario. Elemento de nivel superior.|`manifestVersion`|  
+|[Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-deployment.md)|Necesario. Identifica el manifiesto de aplicación para esta aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
+|[Elemento \<description>](../deployment/description-element-clickonce-deployment.md)|Necesario. Identifica la información de la aplicación utilizada para crear una presencia de shell y el elemento **Agregar o quitar programas** en el Panel de control.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
+|[Elemento \<deployment>](../deployment/deployment-element-clickonce-deployment.md)|Opcional. Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
+|[Elemento \<compatibleFrameworks>](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Necesario. Identifica las versiones de .NET Framework en las que se puede instalar y ejecutar esta aplicación.|`SupportUrl`|  
+|[Elemento \<dependency>](../deployment/dependency-element-clickonce-deployment.md)|Necesario. Identifica la versión de la aplicación que se va a instalar para la implementación y la ubicación del manifiesto de aplicación.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
+|[Elemento \<publisherIdentity>](../deployment/publisheridentity-element-clickonce-deployment.md)|Requerido para los manifiestos firmados. Contiene información sobre el editor que firmó este manifiesto de implementación.|`Name`<br /><br /> `issuerKeyHash`|  
+|[Elemento \<Signature>](../deployment/signature-element-clickonce-deployment.md)|Opcional. Contiene la información necesaria para firmar digitalmente este manifiesto de implementación.|Ninguno|  
+|[Elemento \<customErrorReporting>](../deployment/customerrorreporting-element-clickonce-deployment.md)|Opcional. Especifica un URI que se va a mostrar cuando se produce un error.|Identificador URI|  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  El archivo de manifiesto de implementación identifica una implementación de aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], incluida la versión actual y otras configuraciones de implementación. Hace referencia al manifiesto de aplicación, que describe la versión actual de la aplicación y todos los archivos contenidos en la implementación.  
   
  Para obtener más información, consulta [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
@@ -120,5 +120,5 @@ Un manifiesto de implementación es un archivo XML que describe una implementaci
 </Signature></asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

@@ -73,7 +73,7 @@ En esta sección se comparan las dos maneras de integrar en el control de códig
 
 - El VSPackage no se limita a un modelo de control de código fuente determinado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control de código fuente](../../extensibility/internals/source-control.md)
 - [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Creación de un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)

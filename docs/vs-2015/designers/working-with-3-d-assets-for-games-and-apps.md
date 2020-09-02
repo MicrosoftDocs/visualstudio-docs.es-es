@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e181500beefd32dffb9c0e8a7572a198cc9ff1f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852196"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Trabajar con activos 3D para juegos y aplicaciones
@@ -51,9 +51,9 @@ En este documento, se describen las herramientas de [!INCLUDE[vsprvs](../include
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Description|
 |-----------|-----------------|
 |[Trabajar con texturas e imágenes](../designers/working-with-textures-and-images.md)|Describe cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con imágenes y texturas.|
 |[Trabajar con modelos 3D](../designers/working-with-3-d-models.md)|Describe cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con modelos 3D.|
 |[Trabajar con sombreadores](../designers/working-with-shaders.md)|Describe cómo usar el Diseñador de sombras de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear y modificar efectos de sombreador personalizados.|
-|[Usar activos 3D en un juego o una aplicación](../designers/using-3-d-assets-in-your-game-or-app.md)|Describe cómo usar activos creados mediante el Editor de imágenes, el Editor de modelos o el Diseñador de sombras en su juego o aplicación.|
+|[Uso de activos 3D en el juego o la aplicación](../designers/using-3-d-assets-in-your-game-or-app.md)|Describe cómo usar activos creados mediante el Editor de imágenes, el Editor de modelos o el Diseñador de sombras en su juego o aplicación.|

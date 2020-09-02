@@ -15,10 +15,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852216"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Enlace de métodos abreviados de teclado a elementos de menú
@@ -52,16 +52,16 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
   
 1. Abra el archivo. Vsct para el paquete.  
   
-2. Cree una sección de `<KeyBindings>` vacía después del `<Commands>` si aún no está presente.  
+2. Cree una `<KeyBindings>` sección vacía después de `<Commands>` si aún no está presente.  
   
    > [!WARNING]
    > Para obtener más información sobre los enlaces de teclado, vea [KeyBinding](../extensibility/keybinding-element.md).  
   
-    En la sección `<KeyBindings>`, cree una entrada `<KeyBinding>`.  
+    En la `<KeyBindings>` sección, cree una `<KeyBinding>` entrada.  
   
-    Establezca los atributos `guid` y `id` en los del comando que desea invocar.  
+    Establezca los `guid`  `id` atributos y en los del comando que desea invocar.  
   
-    Establezca el atributo `mod1` en **control**, **Alt**o **Shift**.  
+    Establezca el `mod1` atributo en **control**, **Alt**o **Shift**.  
   
     La sección KeyBindings debe tener un aspecto similar al siguiente:  
   
@@ -73,18 +73,18 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
   
    ```  
   
-   Si el método abreviado de teclado requiere más de dos claves, establezca los atributos `mod2` y `key2`.  
+   Si el método abreviado de teclado requiere más de dos claves, establezca los `mod2` `key2` atributos y.  
   
    En la mayoría de los casos, no se debe usar **Shift** sin un segundo modificador, ya que si se presiona, la mayoría de las claves alfanuméricas se escriben con una letra mayúscula o un símbolo.  
   
    Los códigos de tecla virtual permiten tener acceso a las teclas especiales que no tienen un carácter asociado, por ejemplo, las teclas de función y la tecla **retroceso** . Para obtener más información, consulte [códigos de tecla virtual](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
-   Para que el comando esté disponible en el editor de Visual Studio, establezca el atributo `editor` en `guidVSStd97`.  
+   Para que el comando esté disponible en el editor de Visual Studio, establezca el `editor` atributo en `guidVSStd97` .  
   
-   Para que el comando esté disponible solo en un editor personalizado, establezca el atributo `editor` en el nombre del editor personalizado generado por la plantilla de paquete de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] al crear el VSPackage que incluye el editor personalizado. Para buscar el valor del nombre, busque en la sección `<Symbols>` para un nodo `<GuidSymbol>` cuyo atributo `name` termine en "`editorfactory`". Este es el nombre del editor personalizado.  
+   Para que el comando esté disponible solo en un editor personalizado, establezca el `editor` atributo en el nombre del editor personalizado generado por la plantilla de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] paquete al crear el VSPackage que incluye el editor personalizado. Para buscar el valor del nombre, busque en la `<Symbols>` sección un `<GuidSymbol>` nodo cuyo `name` atributo termine en " `editorfactory` ." Este es el nombre del editor personalizado.  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se enlaza el método abreviado de teclado CTRL + ALT + C a un comando denominado `cmdidMyCommand` en un paquete denominado `MyPackage`.  
+ En este ejemplo se enlaza el método abreviado de teclado CTRL + ALT + C a un comando denominado `cmdidMyCommand` en un paquete denominado `MyPackage` .  
   
 ```  
 <CommandTable>  
@@ -101,11 +101,11 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
 ```  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se enlaza el método abreviado de teclado CTL + B a un comando denominado `cmdidBold` en un proyecto denominado `TestEditor`. El comando solo está disponible en el editor personalizado y no en otros editores.  
+ En este ejemplo se enlaza el método abreviado de teclado CTL + B a un comando denominado `cmdidBold` en un proyecto denominado `TestEditor` . El comando solo está disponible en el editor personalizado y no en otros editores.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)

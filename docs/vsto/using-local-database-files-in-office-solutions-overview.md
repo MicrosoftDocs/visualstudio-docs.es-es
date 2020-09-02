@@ -15,31 +15,31 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62982247"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Usar archivos de base de datos local en información general sobre soluciones de Office
-  Puede incluir un archivo de base de datos, como SQL Server Express (*.mdf*) archivo o Microsoft Office Access (*.mdb*) archivo en la solución de Office. Esto permite a los usuarios finales mantener una base de datos local en situaciones donde no es necesario, por ejemplo, en una solución de inventario local que se usa en un único equipo mantiene una base de datos centralizada.
+  Puede incluir un archivo de base de datos, como un archivo SQL Server Express (*. MDF*) o un archivo de acceso Microsoft Office (*. mdb*), en la solución de Office. Esto permite a los usuarios finales mantener una base de datos local en situaciones en las que no es necesario mantener una base de datos centralizada, por ejemplo, en una solución de inventario local que se utiliza en un solo equipo.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="import-the-database-file-into-a-project"></a>Importar el archivo de base de datos en un proyecto
- Para importar el archivo de base de datos en el proyecto, utilice el **Asistente para configuración de origen de datos** para crear un origen de datos basado en el archivo de base de datos. El asistente agrega el archivo de base de datos y un conjunto de datos con tipo al proyecto.
+ Para importar el archivo de base de datos en el proyecto, use el Asistente para la **configuración de orígenes de datos** para crear un origen de datos basado en el archivo de base de datos. El asistente agrega el archivo de base de datos y un conjunto de datos con tipo al proyecto.
 
 ## <a name="deploy-the-database-file"></a>Implementar el archivo de base de datos
- El **Asistente para configuración de origen de datos** utiliza una ruta de acceso relativa para crear conexiones en el archivo de base de datos local. Esto le permite copiar la solución de un equipo a otro si mantiene las posiciones relativas de los archivos.
+ El **Asistente** para la configuración de orígenes de datos usa una ruta de acceso relativa para crear conexiones con el archivo de base de datos local. Esto le permite copiar la solución de un equipo a otro si mantiene las posiciones relativas de los archivos.
 
- Si implementa la solución en un servidor y, a continuación, distribuye el documento a cada usuario final, también manualmente debe distribuir el archivo de base de datos e instalarlo en la misma posición relativa al documento. Esto significa que el usuario final no se puede mover el documento a una nueva ubicación en su equipo, a menos que también se mueve el archivo de base de datos.
+ Si implementa la solución en un servidor y, a continuación, distribuye el documento a cada usuario final, también debe distribuir manualmente el archivo de base de datos e instalarlo en la misma posición relativa al documento. Esto significa que el usuario final no puede mover el documento a una nueva ubicación en su equipo, a menos que también mueva el archivo de base de datos.
 
-## <a name="local-database-files-and-caching-the-dataset"></a>Archivos de base de datos local y el almacenamiento en caché el conjunto de datos
- En las soluciones de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede almacenar en caché conjuntos de datos en el documento al marcar la instancia de conjunto de datos con el atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>. Al agregar el archivo de base de datos al proyecto mediante el uso de la **Asistente para configuración de origen de datos**, un conjunto de datos con tipo se agrega automáticamente al proyecto. Es raro tener aplicar <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> a este conjunto de datos, porque los datos ya son locales en el equipo del usuario. Para obtener más información, consulte [almacenar en caché datos](../vsto/caching-data.md).
+## <a name="local-database-files-and-caching-the-dataset"></a>Archivos de base de datos local y almacenamiento en caché del conjunto de datos
+ En las soluciones de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede almacenar en caché los conjuntos de valores del documento marcando la instancia de DataSet con el atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> . Al agregar el archivo de base de datos al proyecto mediante el **Asistente para la configuración de orígenes de datos**, se agrega automáticamente un conjunto de datos con tipo al proyecto. Rara vez es necesario aplicar <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> a este conjunto de datos, ya que los datos ya son locales en el equipo del usuario. Para obtener más información, vea [almacenar datos en caché](../vsto/caching-data.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
-- [Almacenar datos en caché](../vsto/caching-data.md)
+- [Datos de caché](../vsto/caching-data.md)

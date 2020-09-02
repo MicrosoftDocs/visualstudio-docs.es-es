@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545579"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
@@ -45,7 +45,7 @@ En este tutorial se muestra cómo agregar una propiedad de seguimiento a un mode
 
 - En la ventana **propiedades** , cuando la propiedad Tracking está en el estado de usuario actualizado por, su valor se muestra en negrita.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para poder iniciar este tutorial, primero debe instalar estos componentes:
 
 |Producto|Vínculo de descarga|
@@ -59,7 +59,7 @@ En este tutorial se muestra cómo agregar una propiedad de seguimiento a un mode
 
 #### <a name="to-create-the-project"></a>Para crear el proyecto
 
-1. Cree un proyecto de Diseñador de lenguaje específico de dominio. Asígnale el nombre `TrackingPropertyDSL`.
+1. Cree un proyecto de Diseñador de lenguaje específico de dominio. Asígnele el nombre `TrackingPropertyDSL`.
 
 2. En el **Asistente para diseñador de lenguaje específico de dominio**, establezca las siguientes opciones:
 
@@ -724,7 +724,7 @@ En este tutorial se muestra cómo agregar una propiedad de seguimiento a un mode
 
 1. En el menú **Compilar**, haga clic en **Recompilar solución**.
 
-2. En el menú **Depurar**, haga clic en **Iniciar depuración**.
+2. En el menú **Depurar** , haga clic en **Iniciar depuración**.
 
      La compilación experimental de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] abre la solución de **depuración** , que contiene un archivo de prueba vacío.
 

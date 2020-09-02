@@ -1,5 +1,5 @@
 ---
-title: '&lt;documento&gt; elemento (desarrollo de Office en Visual Studio)'
+title: '&lt;Document &gt; (elemento, desarrollo de Office en Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63000024"
 ---
-# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;documento&gt; elemento (desarrollo de Office en Visual Studio)
-  El `document` elemento de la `vstov4` espacio de nombres almacena información específica de la personalización para las personalizaciones de nivel de documento.
+# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;Document &gt; (elemento, desarrollo de Office en Visual Studio)
+  El `document` elemento del `vstov4` espacio de nombres almacena información específica de la personalización para las personalizaciones de nivel de documento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,14 +37,14 @@ ms.locfileid: "63000024"
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`solutionId`|Obligatorio. El GUID que usa Visual Studio Tools para Office runtime para identificar de forma única una solución de nivel de documento. Este valor se almacena como la propiedad de documento personalizada _AssemblyLocation. Para obtener más información, consulte [información general de las propiedades de documento personalizada](../vsto/custom-document-properties-overview.md).|
+|`solutionId`|Necesario. GUID que usa el Visual Studio Tools para Office Runtime para identificar de forma única una solución de nivel de documento. Este valor se almacena como _AssemblyLocation propiedad de documento personalizada. Para obtener más información, vea [información general sobre las propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md).|
 
  `document` no tiene elementos secundarios.
 
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento
 
 ### <a name="description"></a>Descripción
- En el ejemplo de código siguiente se ilustra la `document` elemento en una solución de Office de nivel de documento implementada mediante el uso de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
+ En el ejemplo de código siguiente se muestra el `document` elemento en una solución de Office de nivel de documento implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Este ejemplo de código forma parte de un ejemplo más grande proporcionado en los [manifiestos de aplicación para las soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Código
 
@@ -53,7 +53,7 @@ ms.locfileid: "63000024"
   solutionId="73e" />
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)

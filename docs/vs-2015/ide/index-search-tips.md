@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7994f1c0c7281fc9902e15a3fd60293905abc4f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670450"
 ---
 # <a name="index-search-tips"></a>Sugerencias para la búsqueda en el índice
@@ -60,5 +60,5 @@ Puede encontrar información en el índice mediante el uso de palabras clave. En
 
      Por ejemplo, si ha escrito el gerundio "Building", pruebe a crearlo en su lugar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Sugerencias para la búsqueda de texto completo](../ide/full-text-search-tips.md) [Buscar información](../ide/locate-information.md)

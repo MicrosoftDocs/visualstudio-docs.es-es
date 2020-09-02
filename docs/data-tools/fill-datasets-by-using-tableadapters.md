@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282441"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Rellenar conjuntos de datos mediante TableAdapters
@@ -52,7 +52,7 @@ Los TableAdapters son componentes generados por el diseñador que se conectan a 
 
 ![Flujo de datos de una aplicación cliente](../data-tools/media/clientdatadiagram.gif)
 
-Aunque los TableAdapters están diseñados con el **Diseñador de DataSet**, las clases de TableAdapter no se generan como clases anidadas de <xref:System.Data.DataSet> . Se encuentran en espacios de nombres independientes que son específicos de cada conjunto de información. Por ejemplo, si tiene un conjunto de `NorthwindDataSet` objetos denominado, los TableAdapters asociados a <xref:System.Data.DataTable> s en el `NorthwindDataSet` se encontrarían en el espacio de `NorthwindDataSetTableAdapters` nombres. Para tener acceso a un TableAdapter determinado mediante programación, debe declarar una nueva instancia del TableAdapter. Por ejemplo:
+Aunque los TableAdapters están diseñados con el **Diseñador de DataSet**, las clases de TableAdapter no se generan como clases anidadas de  <xref:System.Data.DataSet> . Se encuentran en espacios de nombres independientes que son específicos de cada conjunto de información. Por ejemplo, si tiene un conjunto de `NorthwindDataSet` objetos denominado, los TableAdapters asociados a  <xref:System.Data.DataTable> s en el `NorthwindDataSet` se encontrarían en el espacio de `NorthwindDataSetTableAdapters` nombres. Para tener acceso a un TableAdapter determinado mediante programación, debe declarar una nueva instancia del TableAdapter. Por ejemplo:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -89,7 +89,7 @@ La clase TableAdapter no es un tipo .NET. Esto significa que no se puede buscar 
 
 A continuación se muestran los métodos y las propiedades de TableAdapters que se usan habitualmente:
 
-|Miembro|Descripción|
+|Member|Descripción|
 |------------|-----------------|
 |`TableAdapter.Fill`|Rellena la tabla de datos asociada del TableAdapter con los resultados del comando del TableAdapter `SELECT` .|
 |`TableAdapter.Update`|Vuelve a enviar los cambios a la base de datos y devuelve un entero que representa el número de filas afectadas por la actualización. Para obtener más información, vea [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -126,12 +126,12 @@ La clase TableAdapterManager no es un tipo .NET. Por lo tanto, no se puede busca
 
 A continuación se muestran los métodos y las propiedades de la clase que se usan con frecuencia `TableAdapterManager` :
 
-|Miembro|Descripción|
+|Member|Descripción|
 |------------|-----------------|
 |Método `UpdateAll`|Guarda todos los datos de todas las tablas de datos.|
-|Propiedad `BackUpDataSetBeforeUpdate`|Determina si se va a crear una copia de seguridad del conjunto de archivos antes de ejecutar el `TableAdapterManager.UpdateAll` método. Booleano.|
+|Propiedad`BackUpDataSetBeforeUpdate`|Determina si se va a crear una copia de seguridad del conjunto de archivos antes de ejecutar el `TableAdapterManager.UpdateAll` método. Booleano.|
 |*TableName* `TableAdapter` propiedad|Representa un TableAdapter. El TableAdapterManager generado contiene una propiedad para cada `TableAdapter` que administra. Por ejemplo, un conjunto de DataSet con una tabla Customers y Orders genera con un TableAdapterManager que contiene `CustomersTableAdapter` `OrdersTableAdapter` las propiedades y.|
-|Propiedad `UpdateOrder`|Controla el orden de los comandos de inserción, actualización y eliminación individuales. Establézcalo en uno de los valores de la `TableAdapterManager.UpdateOrderOption` enumeración.<br /><br /> De forma predeterminada, `UpdateOrder` se establece en **InsertUpdateDelete**. Esto significa que las inserciones, las actualizaciones y las eliminaciones se realizan para todas las tablas del conjunto de DataSet.|
+|Propiedad`UpdateOrder`|Controla el orden de los comandos de inserción, actualización y eliminación individuales. Establézcalo en uno de los valores de la `TableAdapterManager.UpdateOrderOption` enumeración.<br /><br /> De forma predeterminada, `UpdateOrder` se establece en **InsertUpdateDelete**. Esto significa que las inserciones, las actualizaciones y las eliminaciones se realizan para todas las tablas del conjunto de DataSet.|
 
 ## <a name="security"></a>Seguridad
 

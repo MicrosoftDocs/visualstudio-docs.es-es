@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca6207d22d82e607fa589f944230b36b46e633c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670360"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param&gt; (JavaScript)
@@ -40,7 +40,7 @@ Especifica información de documentación de un parámetro en una función o un 
 #### <a name="parameters"></a>Parámetros
  `name` Obligatorio. Nombre del parámetro.
 
- `type` Opcional. Tipo de datos del parámetro. El tipo puede ser uno de los siguientes:
+ `type` Opcional. El tipo de datos del parámetro. El tipo puede ser uno de los siguientes:
 
 - Un tipo de lenguaje ECMAScript de la especificación de ECMAScript 5, como `Number` y `Object`.
 
@@ -62,7 +62,7 @@ Especifica información de documentación de un parámetro en una función o un 
 
   `elementMayBeNull` Opcional. Si `type` es `Array`, especifica si los elementos de la matriz se pueden establecer en NULL. Establézcalo en `true` para indicar que los elementos de la matriz se pueden establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.
 
-  `locid` Opcional. Identificador de la información de localización sobre el parámetro. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el elemento [\<loc>](../ide/loc-javascript.md).
+  `locid` Opcional. Identificador de la información de localización sobre el parámetro. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el [\<loc>](../ide/loc-javascript.md) elemento.
 
   `parameterArray` Opcional. Especifica si el parámetro documentado se puede repetir en la llamada de función, similar a los parámetros repetidos que se admiten en la función `String.format`. Establézcalo en `true` para indicar que el parámetro se puede repetir; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.
 
@@ -72,10 +72,10 @@ Especifica información de documentación de un parámetro en una función o un 
 
   `description` Opcional. Descripción del parámetro.
 
-## <a name="remarks"></a>Comentarios
- El único atributo obligatorio es `name`. Todos los demás atributos son opcionales.
+## <a name="remarks"></a>Observaciones
+ El único atributo obligatorio es `name`. El resto de atributos son opcionales.
 
- Los elementos utilizados para anotar funciones, como [\<summary >](../ide/summary-javascript.md), [\<param >](../ide/param-javascript.md) [y \<returns >, se](../ide/returns-javascript.md)deben colocar en el cuerpo de la función antes de cualquier instrucción.
+ Los elementos utilizados para anotar funciones, como [\<summary>](../ide/summary-javascript.md) , [\<param>](../ide/param-javascript.md) y, [\<returns>](../ide/returns-javascript.md) se deben colocar en el cuerpo de la función antes de cualquier instrucción.
 
  Si hay varios elementos `<param>` que tienen el mismo nombre, se utiliza uno de los elementos `<param>` y se omiten los elementos redundantes. El comportamiento que determina qué elemento se utiliza no está definido. Si `name` hace referencia a un parámetro inexistente, se omite el elemento.
 
@@ -107,5 +107,5 @@ function calculate(a) {
 
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte también
+ [Comentarios de la documentación XML](../ide/xml-documentation-comments-javascript.md)
