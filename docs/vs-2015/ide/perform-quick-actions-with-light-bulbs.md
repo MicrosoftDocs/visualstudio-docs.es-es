@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670353"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Realizar acciones rápidas con las bombillas
@@ -21,7 +21,7 @@ ms.locfileid: "72670353"
 
 Las bombillas son una nueva característica de productividad en Visual Studio 2015. Son los iconos que aparecen en el editor de Visual Studio en los que puede hacer clic para realizar acciones rápidas, incluida la refactorización de corrección de errores. Las bombillas centran la asistencia de corrección de errores y refactorización en un solo punto focal, que suele estar en la misma línea en que escribe.
 
- ![Icono pequeño de bombilla](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")
+ ![Icono pequeño de una bombilla](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")
 
  En C# y Visual Basic, verá una bombilla si hay una flecha en zigzag de color rojo y Visual Studio tiene una sugerencia para corregir el problema. Por ejemplo, si tiene un error que se indica mediante una flecha en zigzag de color rojo, aparecerá una bombilla cuando haya disponibles correcciones para ese error. En C++, cuando agregue una función nueva a un archivo de encabezado, verá una bombilla que ofrece crear una implementación de código auxiliar de esa función. Para cualquier lenguaje, un tercero puede proporcionar diagnósticos y sugerencias, por ejemplo, como parte de un SDK, y las bombillas de Visual Studio se encenderán siguiendo esas reglas.
 
@@ -41,4 +41,4 @@ Las bombillas son una nueva característica de productividad en Visual Studio 20
 ## <a name="to-do-a-refactoring"></a>Para hacer una refactorización
  Puede seguir haciendo refactorizaciones haciendo clic con el botón derecho para mostrar el menú contextual, pero también puede presionar Ctrl + . para mostrar las opciones de refactorización. En la ilustración siguiente, se ofrece la refactorización Extraer método tras presionar Ctrl + . en algún punto de la línea que contiene la llamada `Math.Abs`:
 
- ![Bombilla que muestra las opciones de refactorización](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
+ ![Bombilla mostrando opciones de refactorización](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")

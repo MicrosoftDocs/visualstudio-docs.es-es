@@ -1,5 +1,5 @@
 ---
-title: Usar conjuntos de reglas para especificar C++ las reglas que se deben ejecutar | Microsoft Docs
+title: Usar conjuntos de reglas para especificar las reglas de C++ que se van a ejecutar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,16 +10,16 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: ff105af1d817613b324e1158130457eb906c753f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277856"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar las reglas C++ que se van a ejecutar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], puede crear y modificar un conjunto de *reglas* personalizado para satisfacer las necesidades específicas del proyecto asociadas con el análisis de código. Para crear un conjunto C++ de reglas personalizado, un proyectoC++ de C/debe estar abierto en el IDE de Visual Studio. A continuación, se abre un conjunto de reglas estándar en el editor de conjuntos de reglas y, a continuación, se agregan o quitan reglas específicas y, opcionalmente, se cambia la acción que se produce cuando el análisis de código determina que se ha infringido una regla.  
+En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] , puede crear y modificar un conjunto de *reglas* personalizado para satisfacer las necesidades específicas del proyecto asociadas con el análisis de código. Para crear un conjunto de reglas personalizado de C++, un proyecto de C/C++ debe estar abierto en el IDE de Visual Studio. A continuación, se abre un conjunto de reglas estándar en el editor de conjuntos de reglas y, a continuación, se agregan o quitan reglas específicas y, opcionalmente, se cambia la acción que se produce cuando el análisis de código determina que se ha infringido una regla.  
   
  Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nombre de archivo. El conjunto de reglas personalizado se asigna automáticamente al proyecto.  
   
@@ -37,7 +37,7 @@ En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](
   
      \- o -  
   
-   - Elija **\<examinar... >** para especificar un conjunto de reglas existente que no está en la lista.  
+   - Elija esta opción **\<Browse...>** para especificar un conjunto de reglas existente que no esté en la lista.  
   
 4. Elija **abrir** para mostrar las reglas en el editor de conjuntos de reglas.  
   
@@ -63,7 +63,7 @@ En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](
   
 - Para contraer las reglas de todos los grupos, elija **contraer todo**.  
   
-- Para cambiar el campo por el que se agrupan las reglas, elija el campo en la lista **Agrupar por** . Para mostrar las reglas sin agrupar, elija **\<ninguno >** .  
+- Para cambiar el campo por el que se agrupan las reglas, elija el campo en la lista **Agrupar por** . Para mostrar las reglas desagrupadas, elija **\<None>** .  
   
 - Para agregar o quitar campos en columnas de regla, elija **Opciones de columna**.  
   

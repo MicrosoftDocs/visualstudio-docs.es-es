@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670593"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Cómo desbloquear Visual Studio
@@ -50,7 +50,7 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 ### <a name="updating-stale-licenses"></a>Actualizar licencias obsoletas
  Es posible que haya visto el mensaje siguiente donde se indica que su licencia de Visual Studio se está quedando obsoleta.
 
- ![Cuadro de diálogo de información de usuario de Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
+ ![Cuadro de diálogo de información de usuario de Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
 
  Este mensaje indica que, aunque es posible que la licencia aún sea válida, el token de licencia que usa Visual Studio para mantener actualizada la suscripción no se ha actualizado y ha quedado obsoleto debido a uno de los siguientes motivos:
 
@@ -70,7 +70,7 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 
 1. Renovar su suscripción. Para obtener más información sobre su licencia actual, vaya a Archivo > Configuración de la cuenta y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo.
 
-2. Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista Todas las cuentas, en el lado izquierdo del cuadro de diálogo Archivo > Configuración de la cuenta. Para ello, haga clic en el vínculo “Agregar una cuenta...” .
+2. Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista Todas las cuentas, en el lado izquierdo del cuadro de diálogo Archivo > Configuración de la cuenta. Para ello, haga clic en el vínculo “Agregar una cuenta...” que se mostrará.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)

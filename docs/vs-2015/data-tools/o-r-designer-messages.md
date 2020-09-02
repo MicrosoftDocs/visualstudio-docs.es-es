@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0be3049718a97455ecce2b2df2f95c730a303110
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657354"
 ---
 # <a name="or-designer-messages"></a>Mensajes de Object Relational Designer
@@ -22,13 +22,13 @@ ms.locfileid: "72657354"
 En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con Object Relational Designer.
 
 ## <a name="in-this-section"></a>En esta sección
- [No se puede crear una asociación \<nombre de asociación>; la propiedad aparece dos veces](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [No se puede crear una \<association name> lista de propiedades de asociación dos veces](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [No se puede crear una asociación \<nombre de asociación>; los tipos de propiedad no coinciden](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [No se puede crear una asociación \<association name> ; los tipos de propiedad no coinciden](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
- [El cambio del tipo devuelto de un método DataContext no se puede deshacer](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
+ [No se puede deshacer el cambio del tipo de valor devuelto de un método DataContext](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [No se ha podido recuperar información de esquema del objeto de base de datos \<nombre de objeto>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [No se pudo recuperar información de esquema del objeto de base de datos \<object name>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -40,9 +40,9 @@ En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con 
 
  [Los objetos que va a agregar al diseñador usan una conexión de datos diferente a la que está usando el diseñador](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [No se puede eliminar la propiedad \<nombre de propiedad](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [No se puede eliminar la propiedad \<property name>](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [No se puede eliminar la propiedad \<nombre de propiedad> porque participa en la asociación \<nombre de asociación>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [No se puede eliminar la propiedad \<property name> porque participa en la asociación \<association name>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 

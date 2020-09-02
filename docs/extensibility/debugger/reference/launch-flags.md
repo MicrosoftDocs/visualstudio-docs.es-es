@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS de la casa de la casa de Microsoft Docs
+title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714719"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
-Especifica los indicadores de inicio de depuración.
+Especifica las marcas de inicio de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `LAUNCH_DEBUG`\
-Inicia el proceso para la depuración.
+Inicia el proceso de depuración.
 
 `LAUNCH_NODEBUG`\
 Inicia el proceso sin depurarlo.
 
 `LAUNCH_ENABLE_ENC`\
-DESUSO, NO UTILIZAR.
+EN DESUSO, NO USE.
 
 `LAUNCH_MERGE_ENV`\
 Inicia el proceso y combina el entorno con el host de inicio.
 
 ## <a name="remarks"></a>Observaciones
-Estos valores se pasan como argumento al método [LaunchSuspended.](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+Estos valores se pasan como argumento al método [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) .
 
-Estas banderas se pueden `OR`combinar con un bit a bit .
+Estas marcas se pueden combinar con una operación bit a bit `OR` .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

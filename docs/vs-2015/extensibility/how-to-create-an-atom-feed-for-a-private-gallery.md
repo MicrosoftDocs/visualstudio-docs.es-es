@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un átomo fuentes de distribución para una galería privada | Documentos de Microsoft
+title: 'Cómo: crear una fuente Atom para una galería privada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204210"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedimiento Crear una fuente Atom para una galería privada
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Creación de una fuente Atom para una galería privada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como una galería privada. Para más información, vea [Private Galleries](../extensibility/private-galleries.md) (Galerías privadas).  
+Puede crear una fuente Atom (RSS) en una ubicación de la intranet que contenga extensiones y agregar la fuente a **extensiones y actualizaciones** como una galería privada. Para obtener más información, vea [galerías privadas](../extensibility/private-galleries.md).  
   
-## <a name="creating-an-atom-feed"></a>Creación de un subcomponente de fuente  
- Para crear una fuente como una galería privada Atom, primero se recopile sus extensiones (archivos .vsix) en una carpeta. Si desea que se puede organizarlos en subcarpetas. También necesitará los siguientes recursos:  
+## <a name="creating-an-atom-feed"></a>Crear una fuente Atom  
+ Para crear una fuente Atom como una galería privada, primero debe recopilar las extensiones (archivos. vsix) en una carpeta. Puede organizarlos en subcarpetas si lo desea. También necesitará los siguientes recursos:  
   
-- Un archivo atom.xml que pone a disposición las extensiones como galería privada. Para obtener información sobre cómo conectar el archivo atom.xml **extensiones y actualizaciones**, consulte [galerías privadas](../extensibility/private-galleries.md).  
+- Un archivo atom.xml que hace que las extensiones estén disponibles como una galería privada. Para obtener información sobre cómo conectar el archivo de atom.xml a **extensiones y actualizaciones**, vea [galerías privadas](../extensibility/private-galleries.md).  
   
-- Una carpeta que contiene los archivos de imagen que se han extraído de las extensiones (por ejemplo, capturas de pantalla). El archivo atom.xml contiene vínculos relativos a estas imágenes para que estén disponibles en **extensiones y actualizaciones**.  
+- Una carpeta que contiene los archivos de imagen extraídos de las extensiones (por ejemplo, capturas de pantalla). El archivo atom.xml contiene vínculos relativos a estas imágenes para que estén disponibles en **extensiones y actualizaciones**.  
   
-  Por ejemplo, suponga que haya recopilado las siguientes dos extensiones en una carpeta:  
+  Por ejemplo, suponga que ha recopilado las dos extensiones siguientes en una carpeta:  
   
-- Template_Wizard_239.vsix, que es una plantilla de proyecto VSIX vacía.  
+- Template_Wizard_239. vsix, que es una plantilla de proyecto de VSIX vacía.  
   
-- SelectionHighlight.vsix, que es una herramienta para resaltar todas las instancias de una palabra seleccionada.  
+- SelectionHighlight. vsix, que es una herramienta para resaltar todas las instancias de una palabra seleccionada.  
   
-  El contenido del archivo atom.xml podría parecerse al ejemplo siguiente:  
+  El contenido del archivo atom.xml sería similar al ejemplo siguiente:  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   
@@ -73,7 +73,7 @@ Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que co
   
 ```  
   
- Tenga en cuenta que las etiquetas de dos vínculo hacen referencia a las capturas de pantalla en la carpeta de imágenes generada.  
+ Tenga en cuenta que las dos etiquetas de vínculo hacen referencia a las capturas de pantalla de la carpeta de imágenes generada.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Galerías privadas](../extensibility/private-galleries.md)

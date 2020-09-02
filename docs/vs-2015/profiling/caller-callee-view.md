@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176636"
 ---
 # <a name="callercallee-view"></a>Llamador y destinatario (vista)
@@ -38,11 +38,11 @@ La vista Llamador y destinatario muestra información de generación de perfiles
   
  En la parte central de la vista Informes, puede hacer doble clic en cualquiera de las funciones que se enumeran en las otras dos partes de la vista para seleccionar una función diferente para que sea la función actual. La vista Informes se actualiza automáticamente para reflejar los cambios.  
   
- Puede ordenar los datos si hace clic en los nombres de las columnas. Se pueden agregar columnas adicionales a la vista Llamador y destinatario. Para obtener más información, consulte [Cómo Personalizar las columnas de la vista Informes](../profiling/how-to-customize-report-view-columns.md).  
+ Puede ordenar los datos si hace clic en los nombres de las columnas. Se pueden agregar columnas adicionales a la vista Llamador y destinatario. Para obtener más información, vea [Cómo: personalizar las columnas de la vista de informe](../profiling/how-to-customize-report-view-columns.md).  
   
-## <a name="see-also"></a>Vea también  
- [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)   
- [Vista Llamador y destinatario: datos de instrumentación](../profiling/caller-callee-view-instrumentation-data.md)   
- [Vista Llamador y destinatario: datos de instrumentación de memoria de .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Vista Llamador y destinatario: datos de muestreo de memoria de .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Vista Llamador y destinatario: datos de contención](../profiling/caller-callee-view-contention-data.md)
+## <a name="see-also"></a>Consulte también  
+ [Vista llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)   
+ [Vista llamador y destinatario: datos de instrumentación](../profiling/caller-callee-view-instrumentation-data.md)   
+ [Vista llamador y destinatario: datos de instrumentación de memoria de red](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Vista llamador y destinatario: datos de muestreo de memoria de .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Vista llamador y destinatario: datos de contención](../profiling/caller-callee-view-contention-data.md)

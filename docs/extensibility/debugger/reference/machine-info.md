@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO Microsoft Docs
+title: MACHINE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714547"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
-Describe una máquina en particular.
+Describe un equipo determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ public struct MACHINE_INFO { 
 
 ## <a name="members"></a>Miembros
  `Fields`\
- Una combinación de indicadores de la [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) enumeración que especifican qué campos de la estructura se inicializan.
+ Combinación de marcas de la enumeración [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) que especifican qué campos de la estructura se inicializan.
 
  `bstrName`\
  Nombre de la máquina. Equivalente a llamar a [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
 
  `Flags`\
- Una combinación de indicadores de la [enumeración MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) que describe los atributos de la máquina.
+ Combinación de marcas de la enumeración [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) que describe los atributos de la máquina.
 
 ## <a name="remarks"></a>Observaciones
- Esta estructura se devuelve mediante una llamada a la [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) método.
+ Esta estructura es devuelta por una llamada al método [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
