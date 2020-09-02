@@ -1,5 +1,5 @@
 ---
-title: Inspeccionar las propiedades XAML durante la depuración | Documentos de Microsoft
+title: Inspeccionar las propiedades XAML durante la depuración | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423858"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspeccionar las propiedades XAML durante la depuración
@@ -31,8 +31,8 @@ Puede obtener una vista en tiempo real del código XAML en ejecución con **Árb
 |Tipo de aplicación|Sistema operativo y herramientas|  
 |-----------------|--------------------------------|  
 |Aplicaciones de Windows Presentation Foundation (4.0 y versiones posteriores)|Windows 7 y versiones posteriores|  
-|Aplicaciones de la Tienda Windows y de Windows Phone 8.1|Windows 10 y versiones posteriores, con el [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|  
-|Aplicaciones Windows universales|Windows 10 y versiones posteriores, con el [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|  
+|Aplicaciones de la Tienda Windows y de Windows Phone 8.1|Windows 10 y versiones posteriores, con el [SDK de Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|  
+|Aplicaciones universales de Windows|Windows 10 y versiones posteriores, con el [SDK de Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Inspeccionar elementos en Live Visual Tree  
  Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y un botón. Al hacer clic en el botón, se agrega otro elemento a la lista. Los elementos con números pares se muestran en color gris, mientras que los elementos con números impares se muestran de color amarillo.  
@@ -76,27 +76,27 @@ private void button_Click(object sender, RoutedEventArgs e)
 }  
 ```  
   
- Compile la solución y comience la depuración. La configuración de compilación debe ser Depurar, no Liberar. Para más información sobre las configuraciones de compilación, consulte [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).  
+ Compile la solución y comience la depuración. La configuración de compilación debe ser Depurar, no Liberar. Para obtener más información sobre las configuraciones de compilación, vea Descripción de las [configuraciones de compilación](../ide/understanding-build-configurations.md)).  
   
- Cuando aparezca la ventana, haga clic un par de veces en el botón **Agregar elemento**. Verá algo parecido a esto:  
+ Cuando aparezca la ventana, haga clic un par de veces en el botón **Agregar elemento**. Deberíamos ver algo parecido a lo siguiente:  
   
- ![Ventana principal de la aplicación](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")  
+ ![Ventana principal de la aplicación](../debugger/media/livevisualtree-app.png "LiveVIsualTree: aplicación")  
   
- Abra ahora el **Live Visual Tree** ventana (**depurar / Windows / Live Visual Tree**, o búsquela en el lado izquierdo del IDE). Arrástrela de su posición de acoplamiento, de modo que podamos ver esta ventana junto con la ventana **Live Properties**. En la ventana **Árbol visual dinámico**, expanda el nodo **ContentPresenter**. Debe contener nodos para el botón y el cuadro de lista. Expanda el cuadro de lista (y luego **ScrollContentPresenter** e **ItemsPresenter**) para buscar los elementos del cuadro de lista. La ventana debe ser similar a la que se muestra a continuación:  
+ Ahora abra la ventana del **árbol visual activo** (**depurar/Windows/árbol visual activo**o encontrarla en el lado izquierdo del IDE). Arrástrela de su posición de acoplamiento, de modo que podamos ver esta ventana junto con la ventana **Live Properties**. En la ventana **Árbol visual dinámico**, expanda el nodo **ContentPresenter**. Debe contener nodos para el botón y el cuadro de lista. Expanda el cuadro de lista (y luego **ScrollContentPresenter** e **ItemsPresenter**) para buscar los elementos del cuadro de lista. La ventana debe ser similar a la que se muestra a continuación:  
   
- ![ListBoxItems en el árbol Visual](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree ListBoxItems")  
+ ![ListBoxItems en el Árbol visual dinámico](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-elementos ListBoxItem")  
   
  Vuelva a la ventana de la aplicación y agregue algunos elementos más. Debería ver más elementos del cuadro de lista en **Live Visual Tree**.  
   
- Ahora echemos un vistazo a las propiedades de uno de los elementos del cuadro de lista. Seleccione el primer elemento del cuadro de lista de **Live Visual Tree** y haga clic en el icono **Mostrar propiedades** de la barra de herramientas. Debería aparecer **Live Property Explorer**. Tenga en cuenta que el **contenido** campo es «Item1» y el **en segundo plano** campo es **#ffffffe0** (amarillo claro). Vuelva a **Live Visual Tree** y seleccione el segundo elemento del cuadro de lista. El **Live Property Explorer** debe mostrar que el **contenido** campo es «Item2» y el **en segundo plano** campo es **#ffd3d3d3** (gris claro ).  
+ Ahora echemos un vistazo a las propiedades de uno de los elementos del cuadro de lista. Seleccione el primer elemento del cuadro de lista de **Live Visual Tree** y haga clic en el icono **Mostrar propiedades** de la barra de herramientas. Debería aparecer **Live Property Explorer**. Tenga en cuenta que el campo de **contenido** es "Item1" y el campo de **fondo** es **#FFFFFFE0** (amarillo claro). Vuelva a **Live Visual Tree** y seleccione el segundo elemento del cuadro de lista. El **Explorador de propiedades activo** debe mostrar que el campo de **contenido** es "Item2" y el campo de **fondo** es **#FFD3D3D3** (gris claro).  
   
- La estructura real del XAML tiene muchos elementos que probablemente no le interesen, y si no conoce bien el código tal vez tenga que perder bastante tiempo navegando por el árbol para encontrar lo que está buscando. Por lo que la **Live Visual Tree** tiene un par de métodos que permiten usar la interfaz de usuario de la aplicación que le ayudarán a encontrar el elemento que desea examinar.  
+ La estructura real del XAML tiene muchos elementos que probablemente no le interesen, y si no conoce bien el código tal vez tenga que perder bastante tiempo navegando por el árbol para encontrar lo que está buscando. Por lo tanto, el **árbol visual dinámico** tiene un par de formas que permiten usar la interfaz de usuario de la aplicación para ayudarle a encontrar el elemento que desea examinar.  
   
  **Habilitar la selección en la aplicación en ejecución**. Puede habilitar este modo al seleccionar el botón situado más a la izquierda de la barra de herramientas de **Live Visual Tree**. Con este modo activado puede seleccionar un elemento de interfaz de usuario en la aplicación; **Live Visual Tree** (y **Live Property Viewer**) se actualiza automáticamente para mostrar el nodo en el árbol correspondiente a dicho elemento y sus propiedades.  
   
  **Mostrar adornos de diseño en la aplicación en ejecución**. Puede habilitar este modo al seleccionar el botón que está justo a la derecha del botón Habilitar selección. Cuando la opción **Mostrar adornos de diseño** está activada, la ventana de la aplicación muestra líneas horizontales y verticales a lo largo de los límites del objeto seleccionado para que pueda ver lo que alinea, así como rectángulos que muestran los márgenes. Por ejemplo, active **Habilitar selección** y **Mostrar diseño**, y seleccione el bloque de texto **Agregar elemento** en la aplicación. Debería ver el nodo del bloque de texto en **Live Visual Tree** y las propiedades del bloque de texto en **Live Property Viewer**, así como las líneas horizontales y verticales en los límites del bloque de texto.  
   
- ![LivePropertyViewer en DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")  
+ ![LivePropertyViewer en DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")  
   
  **Obtener una vista previa de la selección**. Puede habilitar este modo seleccionando el tercer botón de la izquierda en la barra de herramientas de Live Visual Tree. Este modo muestra el XAML donde se ha declarado el elemento, siempre y cuando tenga acceso al código fuente de la aplicación. Seleccione **Habilitar selección** y **Obtener una vista previa de la selección** y, luego, seleccione el botón de nuestra aplicación de prueba. Se abre el archivo MainWindow.xaml en Visual Studio y se coloca el cursor en la línea en la que se define el botón.  
   
@@ -105,8 +105,8 @@ private void button_Click(object sender, RoutedEventArgs e)
   
 1. Inicie la aplicación **TestXaml** en la configuración Liberar. No puede adjuntar a un proceso que se está ejecutando en una configuración **Depurar**.  
   
-2. Abra una segunda instancia de Visual Studio y haga clic en **depurar / asociar al proceso**. Busque **TestXaml.exe** en la lista de procesos disponibles y haga clic en **Adjuntar**.  
+2. Abra una segunda instancia de Visual Studio y haga clic en **depurar/asociar al proceso**. Busque **TestXaml.exe** en la lista de procesos disponibles y haga clic en **Adjuntar**.  
   
 3. La aplicación comienza a ejecutarse.  
   
-4. En la segunda instancia de Visual Studio, abra el **Live Visual Tree** (**depurar / Windows / Live Visual Tree**). Debería ver los elementos de interfaz de usuario **TestXaml** y debería poder manipularlos como lo hizo al depurar directamente la aplicación.
+4. En la segunda instancia de Visual Studio, abra el **árbol visual dinámico** (**depurar/Windows/árbol visual dinámico**). Debería ver los elementos de interfaz de usuario **TestXaml** y debería poder manipularlos como lo hizo al depurar directamente la aplicación.

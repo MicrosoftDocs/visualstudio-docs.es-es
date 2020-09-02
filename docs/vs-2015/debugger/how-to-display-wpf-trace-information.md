@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Mostrar información de seguimiento WPF | Microsoft Docs
+title: Procedimiento para presentar información de seguimiento de WPF | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537969"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Procedimiento Presentación de información de seguimiento de WPF
@@ -49,7 +49,7 @@ ms.locfileid: "62537969"
   
      Aparecerá un control de lista desplegable en la columna Configuración, al lado de **Enlace de datos** o de la categoría en la que haya hecho clic.  
   
-8. Haga clic en la lista desplegable y seleccione el tipo de información de seguimiento que desea ver: **Todos los**, **críticos**, **Error**, **advertencia**, **información**, **detallado**, o **ActivityTracing**.  
+8. Haga clic en la lista desplegable y seleccione el tipo de información de seguimiento que quiere ver: **All**, **Critical**, **Error**, **Warning**, **Information**, **Verbose** o **ActivityTracing**.  
   
      **Critical** solo habilita la traza de los eventos críticos.  
   
@@ -87,5 +87,5 @@ ms.locfileid: "62537969"
   
 8. Haga clic en **Aceptar**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar WPF](../debugger/debugging-wpf.md)

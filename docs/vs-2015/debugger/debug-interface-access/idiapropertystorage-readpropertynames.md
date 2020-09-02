@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f6d3ac520a396b5207767a3fec0913c801c287
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537425"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera correspondiente para los nombres de cadena según identificadores de propiedad.  
+Recupera los nombres de cadena correspondientes para los identificadores de propiedad especificados.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,19 +37,19 @@ HRESULT ReadPropertyNames (
   
 #### <a name="parameters"></a>Parámetros  
  `cpropid`  
- [in] Número de identificadores de propiedad en `rgpropid`.  
+ de Número de identificadores de propiedad en `rgpropid` .  
   
  `rgpropid`  
- [in] Matriz de identificadores de propiedad que se va a obtener los nombres (`PROPID` se define en el archivo WTypes.h como un `ULONG`).  
+ de Matriz de identificadores de propiedad para los que se van a obtener los nombres ( `PROPID` se define en WTypes. h como un `ULONG` ).  
   
  `rglpwstrName`  
- [in, out] Matriz de nombres de propiedad para los identificadores de propiedad especificado. La matriz debe estar previamente asignada para contener el número solicitado de nombres de propiedad y debe ser capaz de contener al menos `cpropid``BSTR` cadenas.  
+ [in, out] Matriz de nombres de propiedad para los identificadores de propiedad especificados. La matriz debe estar asignada previamente para contener el número solicitado de nombres de propiedad y debe poder contener al menos `cpropid``BSTR` cadenas.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Los nombres de propiedad devuelta deben ser liberados (mediante una llamada a la `SysFreeString` función) cuando ya no son necesarios.  
+ Los nombres de propiedad devueltos deben liberarse (llamando a la `SysFreeString` función) cuando ya no se necesiten.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

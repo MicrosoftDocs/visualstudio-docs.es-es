@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05e1f2360b3257e44fde1af8be3554dd7fd95115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537190"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -30,18 +30,18 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```  
   
 #### <a name="parameters"></a>Parámetros  
- Ninguna  
+ None  
   
 ## <a name="valid-options"></a>Opciones válidas  
  Para habilitar la generación de perfiles en otra sesión, la opción **CrossSession** debe especificarse con la opción **Start**. También debe especificarse **CrossSession** en todos los comandos **VSPerfCmd Attach** y **Detach** posteriores.  
   
- **Start:** `Method`  
+ **Inicio:**`Method`  
  La opción **Start** inicializa el generador de perfiles en el método de generación de perfiles especificado.  
   
  **Attach:** _PID_[**,**_PID_]  
  Inicia la generación de perfiles de los procesos especificados.  
   
- **Detach**[**:**_PID_[,_PID_]]  
+ **Detach**[ **:** _PID_[,_PID_]]  
  Detiene la generación de perfiles de los procesos especificados.  
   
 ## <a name="example"></a>Ejemplo  
@@ -52,8 +52,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession
 VSPerfCmd.exe /Attach:12345 /CS  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)

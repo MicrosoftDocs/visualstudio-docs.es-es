@@ -1,5 +1,5 @@
 ---
-title: Ejecución paso a paso en modo de interrupción | Microsoft Docs
+title: Paso a paso en modo de interrupción | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,22 +13,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 482d7131692c1e22483c80f4b4bb22e07a6caf1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423366"
 ---
 # <a name="stepping-in-break-mode"></a>Escalonado en modo de interrupción
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-El siguiente describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:  
+A continuación se describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:  
   
 ## <a name="stepping-process"></a>Proceso de ejecución paso a paso  
   
-1. Llame a [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) con [STEPKIND](../../extensibility/debugger/reference/stepkind.md) y [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) argumentos al ejecutar un paso.  
+1. Llame a [IDebugProgram2:: Step](../../extensibility/debugger/reference/idebugprogram2-step.md) con los argumentos [STEPKIND](../../extensibility/debugger/reference/stepkind.md) y [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) para ejecutar un paso.  
   
-2. Cuando finalice el paso, enviar un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) como un evento de detención.  
+2. Cuando finalice el paso, envíe un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) como evento de detención.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

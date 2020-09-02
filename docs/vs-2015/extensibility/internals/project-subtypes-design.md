@@ -1,5 +1,5 @@
 ---
-title: Diseño de subtipos de proyecto | Documentos de Microsoft
+title: Diseño de subtipos de proyecto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,84 +11,84 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62430554"
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Subtipos de proyecto permiten a los VSPackages ampliar proyectos basados en Microsoft Build Engine (MSBuild). El uso de agregación permite reutilizar la mayor parte del sistema del proyecto principal administrada implementada en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] aún sigue personalizar el comportamiento de un escenario determinado.  
+Los subtipos de proyecto permiten a los VSPackages extender proyectos basados en el Microsoft Build Engine (MSBuild). El uso de la agregación permite volver a utilizar la mayor parte del sistema de proyectos administrados principal implementado en todavía [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] personalizar el comportamiento de un escenario determinado.  
   
- Los siguientes temas detallan el diseño básico y la implementación de subtipos de proyecto:  
+ En los temas siguientes se detalla el diseño y la implementación básicos de los subtipos de proyecto:  
   
-- Diseño de subtipo de proyecto.  
+- Diseño del subtipo de proyecto.  
   
-- Agregación de varios nivel.  
+- Agregación de varios niveles.  
   
-- Interfaces admitidas.  
+- Interfaces auxiliares.  
   
-## <a name="project-subtype-design"></a>Diseño de subtipo de proyecto  
- La inicialización de un subtipo de proyecto se logra agregando principal <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objetos. Esta agregación permite un subtipo de proyecto reemplazar o mejorar la mayoría de las capacidades del proyecto base. Subtipos de proyecto obtención la primera oportunidad de controlar las propiedades mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, mediante los comandos <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>y administración de elemento de proyecto mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. También pueden ampliar los subtipos de proyecto:  
+## <a name="project-subtype-design"></a>Diseño del subtipo de proyecto  
+ La inicialización de un subtipo de proyecto se logra agregando los <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objetos y principales <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> . Esta agregación permite a un subtipo de proyecto invalidar o mejorar la mayoría de las capacidades del proyecto base. Los subtipos de proyecto obtienen la primera oportunidad de controlar las propiedades mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , los comandos que usan <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> , y la administración de elementos de proyecto mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> . Los subtipos de proyecto también pueden extender:  
   
-- Objetos de configuración del proyecto.  
+- Objetos de configuración de proyecto.  
   
 - Objetos dependientes de la configuración.  
   
-- Examinar independientes de la configuración de objetos.  
+- Objetos de exploración independientes de la configuración.  
   
-- Objetos de automatización de proyecto.  
+- Objetos de automatización del proyecto.  
   
-- Colecciones de propiedades de automatización de proyecto.  
+- Colecciones de propiedades de automatización del proyecto.  
   
-  Para obtener más información sobre la extensibilidad de subtipos de proyecto, vea [propiedades y métodos extendidos por subtipos de proyecto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Para obtener más información sobre la extensibilidad por subtipos de proyecto, vea [propiedades y métodos extendidos por subtipos de proyecto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Archivos de directivas  
- El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno proporciona un ejemplo de extender el sistema de proyectos base con un subtipo de proyecto en su implementación de archivos de directivas. Un archivo de directiva permite el modelado de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno mediante la administración de características que incluyen el Explorador de soluciones, **Agregar proyecto** cuadro de diálogo, **Agregar nuevo elemento** cuadro de diálogo y el  **Propiedades** cuadro de diálogo. El subtipo de directiva invalida y mejora estas características a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> implementaciones.  
+ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno proporciona un ejemplo de cómo extender el sistema de proyectos base con un subtipo de proyecto en su implementación de archivos de directivas. Un archivo de directiva permite la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] forma del entorno mediante la administración de características que incluyen el cuadro de diálogo explorador de soluciones, **Agregar proyecto** , **Agregar nuevo elemento** y el cuadro de diálogo **propiedades** . El subtipo de directiva invalida y mejora estas características a través <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> de las `IOleCommandTarget` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> implementaciones de y.  
   
 ##### <a name="aggregation-mechanism"></a>Mecanismo de agregación  
- Mecanismo de agregación de subtipo de proyecto del entorno es compatible con varios niveles de agregación, lo que permite un subtipo de avanzada que se implementa en más flavoring un proyecto característico. Además, los objetos auxiliares de un proyecto de subtipo, como <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>, están diseñados para permitir varios niveles de disposición en capas. De acuerdo con las restricciones de COM y COM reglas de agregación, subtipos de proyecto y los proyectos de base deben programarse de forma cooperativa para permitir el subtipo interno o el proyecto base participar correctamente las llamadas a métodos de delegación y la administración de recuentos de referencias . Es decir, el proyecto que se agregan debe programarse para admitir la agregación.  
+ El mecanismo de agregación de subtipos de proyecto del entorno admite varios niveles de agregación, lo que permite que se implemente un subtipo avanzado mediante la aplicación de un proyecto calificado. Además, los objetos auxiliares de un subtipo de proyecto, como <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> , están diseñados para permitir varios niveles de capas. Teniendo en cuenta las restricciones de las reglas de agregación COM y COM, los subtipos de proyecto y los proyectos base deben programarse de forma cooperativa para permitir que el subtipo interno o el proyecto base participen correctamente en la delegación de llamadas a métodos y la administración de recuentos de referencias. Es decir, el proyecto que se va a agregar tiene que programarse para admitir la agregación.  
   
- La siguiente ilustración muestra una representación esquemática de una agregación de subtipo de proyecto de varios niveles.  
+ En la ilustración siguiente se muestra una representación esquemática de una agregación de subtipos de proyecto de varios niveles.  
   
- ![Gráfico de projectflavor multinivel de Visual Studio](../../extensibility/internals/media/vs-multilevelprojectflavor.gif "VS_MultilevelProjectFlavor")  
-Subtipo de proyecto de varios niveles  
+ ![Gráfico Visual Studio multilevel projectflavor](../../extensibility/internals/media/vs-multilevelprojectflavor.gif "VS_MultilevelProjectFlavor")  
+Subtipo de proyecto de multinivel  
   
- Una agregación de subtipo de proyecto de varios niveles se compone de tres niveles, un proyecto de base, que se agrega un subtipo de proyecto y, después, agregan aún más un subtipo de proyecto avanzadas. En la ilustración se centra en algunas de las interfaces auxiliares que se proporcionan como parte de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] arquitectura de subtipo de proyecto.  
+ Una agregación de subtipos de proyecto de nivel múltiple consta de tres niveles: un proyecto base, que se agrega mediante un subtipo de proyecto, y se agrega posteriormente mediante un subtipo de proyecto avanzado. La ilustración se centra en algunas de las interfaces auxiliares que se proporcionan como parte de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] arquitectura del subtipo de proyecto.  
   
 ##### <a name="deployment-mechanisms"></a>Mecanismos de implementación  
- Entre otros muchos del sistema del proyecto base funcionalidades mejoradas mediante un subtipo de proyecto son mecanismos de implementación. Un subtipo de proyecto influye en mecanismos de implementación mediante la implementación de interfaces de configuración (como <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) que se recuperan llamando a QueryInterface en <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. En un escenario donde el subtipo de proyecto y el subtipo de proyecto avanzada agregan implementaciones de configuración diferente, el proyecto base llama a `QueryInterface` en el subtipo de proyecto avanzada `IUnknown`. Si el subtipo interno del proyecto contiene la implementación de configuración que está solicitando el proyecto de base para los delegados de subtipo de proyecto avanzada para la implementación proporcionada por el subtipo de proyecto interno. Como un mecanismo para conservar el estado de nivel de agregación de uno a otro, se implementan todos los niveles de subtipos de proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> conservar la compilación no relacionadas con datos XML en los archivos del proyecto. Para obtener más información, consulte [conservar datos en el archivo de proyecto de MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> se implementa como un mecanismo para recuperar los extensores de automatización de los subtipos de proyecto.  
+ Entre muchas de las funcionalidades del sistema de proyecto base mejoradas por un subtipo de proyecto se encuentran los mecanismos de implementación. Un subtipo de proyecto influye en los mecanismos de implementación mediante la implementación de interfaces de configuración (como <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ) que se recuperan llamando a QueryInterface en <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> . En un escenario en el que tanto el subtipo de proyecto como el subtipo de proyecto avanzado agregan implementaciones de configuración diferentes, el proyecto base llama `QueryInterface` a en el subtipo de proyecto avanzado `IUnknown` . Si el subtipo de proyecto interno contiene la implementación de configuración que el proyecto base está solicitando, el subtipo de proyecto avanzado delega en la implementación proporcionada por el subtipo de proyecto interno. Como mecanismo para conservar el estado de un nivel de agregación a otro, todos los niveles de subtipos de proyecto implementan <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> para conservar los datos XML relacionados sin compilación en los archivos de proyecto. Para obtener más información, vea [guardar datos en el archivo de proyecto de MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> se implementa como un mecanismo para recuperar los extensores de automatización de los subtipos de proyecto.  
   
- La siguiente ilustración se centra en la implementación de extensores de automatización, el objeto de exploración de la configuración de proyecto en particular, utilizan subtipos de proyecto para ampliar el sistema del proyecto base.  
+ La siguiente ilustración se centra en la implementación del extensor de automatización, el objeto de exploración de configuración del proyecto en concreto, que usan los subtipos de proyecto para extender el sistema del proyecto base.  
   
- ![Gráfico de VS Project Project Auto Extender](../../extensibility/internals/media/vs-projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
-Extensor de automatización del subtipo de proyecto.  
+ ![Gráfico VS Project Project Auto Extender](../../extensibility/internals/media/vs-projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
+Extensor de automatización de subtipos de proyecto.  
   
- Subtipos de proyecto pueden ampliar aún más el sistema de proyectos base al extender el modelo de objetos de automatización. Estos se definen como parte del objeto de automatización DTE y se usan para extender el objeto de proyecto, el `ProjectItem` objeto y el `Configuration` objeto. Para obtener más información, vea [extender el modelo de objetos del proyecto Base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  
+ Los subtipos de proyecto pueden ampliar aún más el sistema del proyecto base extendiendo el modelo de objetos de automatización. Se definen como parte del objeto de automatización DTE y se utilizan para extender el objeto de proyecto, el `ProjectItem` objeto y el `Configuration` objeto. Para obtener más información, vea [extender el modelo de objetos del proyecto base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  
   
-## <a name="multi-level-aggregation"></a>Agregación de varios nivel  
- Una implementación de subtipo de proyecto que contiene un subtipo de proyecto de nivel inferior debe programarse de forma cooperativa para permitir que el subtipo de proyecto interno funcionar correctamente. Incluye una lista de las responsabilidades de programación:  
+## <a name="multi-level-aggregation"></a>Agregación de varios niveles  
+ Una implementación de subtipo de proyecto que contiene un subtipo de proyecto de nivel inferior debe programarse de forma cooperativa para permitir que el subtipo de proyecto interno funcione correctamente. Una lista de responsabilidades de programación incluye:  
   
-- El <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementación del subtipo de proyecto que se ajuste el subtipo interno debe delegar en el <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementación de subtipo interno del proyecto para ambos <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> métodos.  
+- La <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementación del subtipo de proyecto que está ajustando el subtipo interno debe delegar a la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementación del subtipo de proyecto interno para los <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> métodos y.  
   
-- El <xref:EnvDTE80.IInternalExtenderProvider> implementación del subtipo de proyecto de contenedor debe delegar a la de su subtipo interno del proyecto. En concreto, la implementación de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> debe obtener la cadena de nombres de subtipo interno del proyecto y, a continuación, concatenar las cadenas desea agregar como extensores.  
+- La <xref:EnvDTE80.IInternalExtenderProvider> implementación del subtipo de proyecto contenedor debe delegar en el de su subtipo de proyecto interno. En concreto, la implementación de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> necesita obtener la cadena de nombres del subtipo de proyecto interno y, a continuación, concatenar las cadenas que desea agregar como objetos extender.  
   
-- El <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> debe crear una instancia de la implementación de un subtipo de proyecto contenedor la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objeto de su interior subtipo de proyecto y mantenerlo como un delegado privado, ya que sólo el objeto de configuración del proyecto del proyecto base directamente sabe que el contenedor existe el objeto de configuración del subtipo de proyecto. El subtipo de proyecto externo puede elegir inicialmente interfaces de configuración desea controlar directamente y, a continuación, delegar el resto de la implementación del subtipo interno del proyecto de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- La <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implementación de un subtipo de proyecto contenedor debe crear una instancia del <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objeto de su subtipo de proyecto interno y mantenerlo como delegado privado, ya que solo el objeto de configuración de proyecto del proyecto base sabe directamente que existe el objeto de configuración de subtipo de proyecto de contenedor. El subtipo de proyecto externo puede elegir inicialmente interfaces de configuración que desea controlar directamente y delegar el resto en la implementación del subtipo de proyecto interno de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A> .  
   
-## <a name="supporting-interfaces"></a>Interfaces admitidas  
- El proyecto de base delega las llamadas a admitir interfaces agregadas por un subtipo de proyecto para ampliar los diversos aspectos de su implementación. Esto incluye la ampliación de los objetos de configuración de proyecto y varios objetos del explorador de propiedades. Estas interfaces se recuperan mediante una llamada a `QueryInterface` en `punkOuter` (un puntero a la `IUnknown`) del agregador de subtipo de proyecto más externo.  
+## <a name="supporting-interfaces"></a>Interfaces auxiliares  
+ El proyecto base delega las llamadas a las interfaces auxiliares agregadas por un subtipo de proyecto para extender varios aspectos de su implementación. Esto incluye la extensión de objetos de configuración de proyecto y varios objetos de explorador de propiedades. Estas interfaces se recuperan llamando a `QueryInterface` en `punkOuter` (un puntero a `IUnknown` ) del agregador de subtipos de proyecto más externo.  
   
 |Interfaz|Subtipo de proyecto|  
 |---------------|---------------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>|Permite que el subtipo de proyecto para:<br /><br /> -Proporcione una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>.<br />-Controlar el lanzamiento del depurador, ya que permite el subtipo de proyecto proporcionar su propia implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>.<br />-Deshabilitar la evaluación de expresiones en tiempo de diseño al tratar de forma adecuada el `DBGLAUNCH_DesignTimeExprEval` mayúsculas en su implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.QueryDebugLaunch%2A>.|  
-|<xref:EnvDTE80.IInternalExtenderProvider>|Permite que el subtipo de proyecto para:<br /><br /> -Ampliar la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> del proyecto para agregar o quitar propiedades de configuración independientes del proyecto.<br />-Extender el objeto de automatización de proyecto (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) del proyecto.<br /><br /> Los valores de propiedad anteriores se toman de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumeración.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>|Permite que el subtipo de proyecto asignar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> objeto según el objeto de exploración de la configuración de proyecto.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBrowseObject>|Permite que el subtipo de proyecto asignar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> o `VSITEMID` objeto, dado el objeto de exploración de la configuración de proyecto.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|Permite que el subtipo de proyecto conservar los datos XML estructurado arbitrarios al archivo de proyecto (.vbproj o .csproj). Estos datos no son visibles para MSBuild.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|Permite que el subtipo de proyecto para:<br /><br /> -Agregue nuevas propiedades de MSBuild que se deben conservar.<br />-Quitar propiedades innecesarias de MSBuild.<br />-Query para un valor actual de una propiedad de MSBuild.<br />-Cambiar el valor actual de una propiedad de MSBuild.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>|Permite que el subtipo de proyecto:<br /><br /> -Proporcione una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> .<br />-Controlar el inicio del depurador permitiendo que el subtipo de proyecto proporcione su propia implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> .<br />-Deshabilite la evaluación de expresiones en tiempo de diseño controlando correctamente el `DBGLAUNCH_DesignTimeExprEval` caso en su implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.QueryDebugLaunch%2A> .|  
+|<xref:EnvDTE80.IInternalExtenderProvider>|Permite que el subtipo de proyecto:<br /><br /> -Extienda el <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> del proyecto para agregar o quitar propiedades independientes de la configuración del proyecto.<br />-Extienda el objeto de automatización del proyecto ( <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> ) del proyecto.<br /><br /> Los valores de propiedad anteriores se toman de la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumeración.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>|Permite que el subtipo de proyecto se asigne de nuevo al <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> objeto dado el objeto de exploración de configuración del proyecto.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBrowseObject>|Permite que el subtipo de proyecto se asigne de nuevo al <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> `VSITEMID` objeto o, dado el objeto de exploración de configuración del proyecto.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|Permite que el subtipo de proyecto conserve los datos estructurados XML arbitrarios en el archivo de proyecto (. vbproj o. csproj). Estos datos no son visibles para MSBuild.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|Permite que el subtipo de proyecto:<br /><br /> -Agregue las nuevas propiedades de MSBuild que se van a conservar.<br />-Quitar propiedades innecesarias de MSBuild.<br />: Consulta para obtener un valor actual de una propiedad de MSBuild.<br />-Cambiar el valor actual de una propiedad de MSBuild.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

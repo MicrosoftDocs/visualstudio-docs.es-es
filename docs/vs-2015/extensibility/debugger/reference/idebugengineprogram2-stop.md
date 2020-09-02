@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::Stop | Microsoft Docs
+title: 'IDebugEngineProgram2:: Stop | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb74cb2940a91bbc64fa4a06f28d07a828357fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431490"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
@@ -37,13 +37,13 @@ int Stop();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se llama cuando este programa se está depurando en un entorno de varios programa. Cuando se recibe un evento de detención desde otro programa, este método se llama en este programa. La implementación de este método debe ser asincrónica; es decir, no todos los subprocesos deben detenerse antes de que devuelve este método. La implementación de este método puede ser tan sencilla como llamar a la [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) método en este programa.  
+ Se llama a este método cuando este programa se está depurando en un entorno de varios programas. Cuando se recibe un evento de detención de algún otro programa, se llama a este método en este programa. La implementación de este método debe ser asincrónica; es decir, no es necesario detener todos los subprocesos antes de que este método devuelva. La implementación de este método puede ser tan simple como llamar al método [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) en este programa.  
   
- Ningún evento de depuración se envía como respuesta a este método.  
+ No se envía ningún evento de depuración como respuesta a este método.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4546c3be480349f3e2cb36f483fa8711bc2ac49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434222"
 ---
 # <a name="gpu-activity-graph"></a>Gráfico de actividad de GPU
@@ -30,5 +30,5 @@ El gráfico de actividad de GPU en el visualizador de simultaneidad muestra el n
   
  El color blanco indica la disponibilidad de los motores de DirectX no utilizados en el sistema. Estos motores están disponibles para su proceso si puede encontrar más oportunidades de explotarlos. Algunos motores solo pueden utilizarse para determinados tipos de tareas.  
   
-## <a name="see-also"></a>Vea también  
- [Vista de uso](../profiling/utilization-view.md)
+## <a name="see-also"></a>Consulte también  
+ [Vista Utilización](../profiling/utilization-view.md)

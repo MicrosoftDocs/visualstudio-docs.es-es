@@ -1,5 +1,5 @@
 ---
-title: Editar y continuar en el cuadro de diálogo de mensaje de Error | Documentos de Microsoft
+title: Cuadro de diálogo Editar y continuar mensaje de error | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,32 +20,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5437ef982309ef8595f08283f2685e93d346e764
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428305"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Editar y continuar (Cuadro de diálogo de mensaje de error)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este cuadro de diálogo aparece cuando se depura en un lenguaje que admite Editar y continuar, pero **editar y continuar** no está disponible para el tipo de cambios de código que ha realizado. El mensaje de error incluido en el cuadro proporciona una explicación más detallada. Entre las posibles razones para que aparezca este cuadro de diálogo se incluyen:  
+Este cuadro de diálogo aparece cuando se depura en un lenguaje que admite editar y continuar, pero **Editar y continuar** no está disponible para el tipo de cambios de código realizados. El mensaje de error incluido en el cuadro proporciona una explicación más detallada. Entre las posibles razones para que aparezca este cuadro de diálogo se incluyen:  
   
 - Se intentó editar código administrado cuando estaba habilitada la depuración no administrada. Editar y continuar no funciona con la depuración en modo mixto.  
   
 - Se intentó editar código de SQL Server.  
   
-- Se intentó editar código mientras se depuraba un volcado de memoria de Dr. un volcado de Dr. Watson.  
+- Se intentó editar código durante la depuración de un volcado de Dr. Watson.  
   
-- Se intentó editar código después de que se produjo una excepción no controlada y la opción "**desenredar la pila de llamadas en las excepciones no controladas**" no se ha seleccionado.  
+- Se intentó editar código después de que se produjera una excepción no controlada y no se seleccionó la opción "**desenredar la pila de llamadas en excepciones no controladas**".  
   
 - Se intentó editar código mientras se depuraba una aplicación incrustada en tiempo de ejecución.  
   
-- Se intentó editar código en un programa que asoció, en lugar de a partir de la **depurar** menú.  
+- Se intentó editar código en un programa al que se adjuntó en lugar de iniciarse en el menú **depurar** .  
   
 - Se intentó editar código optimizado.  
   
-- Se intentó editar código administrado cuando el destino es una aplicación de 64 bits. Si desea utilizar la opción Editar y continuar, deberá establecer el destino en x86. (*Proyecto* **propiedades**, **compilar** ficha, **compilador avanzada** configuración.).  
+- Se intentó editar código administrado cuando el destino es una aplicación de 64 bits. Si desea utilizar la opción Editar y continuar, deberá establecer el destino en x86. (*Project* **Propiedades**del proyecto, pestaña **compilar** , configuración de **compilador avanzada** ).  
   
 - Se intentó editar código en un ensamblado que se modificó durante la depuración y se ha vuelto ha cargar.  
   
@@ -56,8 +56,8 @@ Este cuadro de diálogo aparece cuando se depura en un lenguaje que admite Edita
 - Se intentó editar código mientras se estaba ejecutando.  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
- **OK**  
+ **OK (CORRECTO)**  
  Sale del cuadro de diálogo y cancela el intento de edición inmediatamente anterior.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Cambios admitidos en el código (C++)](../debugger/supported-code-changes-cpp.md)

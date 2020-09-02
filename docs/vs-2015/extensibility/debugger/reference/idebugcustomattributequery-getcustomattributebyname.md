@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft Docs
+title: 'IDebugCustomAttributeQuery:: Getcustomattributebyname (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ff58df26391c3c3fe312f9268f905b4f4f15b858
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538208"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
@@ -43,19 +43,19 @@ int GetCustomAttributeByName(
   
 #### <a name="parameters"></a>Parámetros  
  `pszCustomAttributeName`  
- [in] Nombre del atributo personalizado.  
+ de Nombre del atributo personalizado.  
   
  `ppBlob`  
- [in, out] Matriz de bytes que contiene los datos del atributo personalizado.  
+ [in, out] Matriz de bytes que contiene los datos de atributos personalizados.  
   
  `pdwLen`  
- [out] Longitud en bytes de la `ppBlob` parámetro.  
+ enuncia Longitud en bytes del `ppBlob` parámetro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Si el atributo personalizado no existe, devuelve `S_FALSE`. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Si el atributo personalizado no existe, devuelve `S_FALSE` . De lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **CDebugClassFieldSymbol** objeto que expone el [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugClassFieldSymbol** que expone la interfaz [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) .  
   
 ```cpp#  
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(  
@@ -92,5 +92,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

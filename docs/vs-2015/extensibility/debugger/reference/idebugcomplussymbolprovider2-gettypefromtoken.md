@@ -12,10 +12,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fa5e258390040fc70c0538c929a166984c3a7b0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540585"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
@@ -57,7 +57,7 @@ int GetTypeFromToken(
  enuncia Devuelve el tipo representado por [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, `S_OK`devuelve; de lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugSymbolProvider** que expone la interfaz [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
@@ -88,5 +88,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

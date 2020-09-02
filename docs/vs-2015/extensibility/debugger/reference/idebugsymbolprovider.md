@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b760b106992b200576258ab6becb1ae3849b8f3a
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420932"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esta interfaz representa un proveedor de símbolos que proporciona los símbolos y tipos, devolverlos como campos.  
+Esta interfaz representa un proveedor de símbolos que proporciona símbolos y tipos y los devuelve como campos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,38 +31,38 @@ IDebugSymbolProvider : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Un proveedor de símbolos debe implementar esta interfaz para proporcionar símbolos y escriba la información a un evaluador de expresiones.  
+ Un proveedor de símbolos debe implementar esta interfaz para proporcionar información de símbolos y tipos a un evaluador de expresiones.  
   
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Esta interfaz se obtiene mediante el uso de COM `CoCreateInstance` función (por proveedores de símbolos no administrado) o cargando adecuado administrados ensamblado de código y crear instancias del proveedor de símbolos según la información encontrada en ese ensamblado. El motor de depuración crea el proveedor de símbolos para que funcione en coordinación con el evaluador de expresiones. Vea el ejemplo de un enfoque para crear una instancia de esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para llamadores  
+ Esta interfaz se obtiene utilizando la función de COM `CoCreateInstance` (para los proveedores de símbolos no administrados) o cargando el ensamblado de código administrado adecuado y creando una instancia del proveedor de símbolos basándose en la información que se encuentra en ese ensamblado. El motor de depuración crea una instancia del proveedor de símbolos para trabajar en coordinación con el evaluador de expresiones. Vea el ejemplo de un enfoque para crear una instancia de esta interfaz.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- La tabla siguiente muestran los métodos de `IDebugSymbolProvider`.  
+ En la tabla siguiente se muestran los métodos de `IDebugSymbolProvider` .  
   
-|Método|DESCRIPCIÓN|  
+|Método|Descripción|  
 |------------|-----------------|  
-|`Initialize`|En desuso. No usar.|  
-|`Uninitialize`|En desuso. No usar.|  
+|`Initialize`|Desusado. No utilizar.|  
+|`Uninitialize`|Desusado. No utilizar.|  
 |[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Obtiene el campo que contiene la dirección de depuración.|  
-|`GetField`|En desuso. No usar.|  
+|`GetField`|Desusado. No utilizar.|  
 |[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Asigna una posición de documento en una matriz de direcciones de depuración.|  
 |[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Asigna un contexto de documento en una matriz de direcciones de depuración.|  
 |[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Asigna una dirección de depuración en un contexto de documento.|  
 |[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtiene el lenguaje usado para compilar el código en la dirección de depuración.|  
-|`GetGlobalContainer`|En desuso. No usar.|  
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtiene el campo que representa el nombre completo del método.|  
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtiene el tipo de campo de clase que representa el nombre completo de clase.|  
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Crea un enumerador para los espacios de nombres asociado a la dirección de depuración.|  
+|`GetGlobalContainer`|Desusado. No utilizar.|  
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtiene el campo que representa un nombre de método completo.|  
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtiene el tipo de campo de clase que representa un nombre de clase completo.|  
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Crea un enumerador para los espacios de nombres asociados a la dirección de depuración.|  
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Asigna un nombre de símbolo a un tipo de símbolo.|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtiene la dirección de depuración que sigue a una dirección de depuración especificado en un método.|  
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtiene la dirección de depuración que sigue a una dirección de depuración determinada en un método.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta interfaz asigna las posiciones de documento en las direcciones de depuración y viceversa.  
+ Esta interfaz asigna posiciones de documento en direcciones de depuración y viceversa.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -105,5 +105,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

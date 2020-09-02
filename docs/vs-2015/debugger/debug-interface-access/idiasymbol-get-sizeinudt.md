@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 147368e19bb1bcc1ccaa0bf94823df2e3f73a4be
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428370"
 ---
-# <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
+# <a name="idiasymbolget_sizeinudt"></a>IDiaSymbol::get_sizeInUdt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el tamaño de un miembro de un tipo definido por el usuario.  
@@ -32,10 +32,10 @@ HRESULT get_sizeInUdt(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `DWORD` que especifica el tamaño del miembro.  
+ enuncia Un puntero a un `DWORD` que especifica el tamaño del miembro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

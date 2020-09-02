@@ -1,5 +1,5 @@
 ---
-title: '&lt;Cadenas&gt; (elemento, arranque) | Microsoft Docs'
+title: '&lt;&gt;Elemento Strings (arranque) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421530"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; (elemento, arranque)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;&gt;Elemento Strings (arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Define las cadenas localizadas para los nombres de productos, nombres de paquete y los mensajes de error de instalación.  
+Define las cadenas localizadas para los nombres de producto, los nombres de paquete y los mensajes de error de instalación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,20 +42,20 @@ Define las cadenas localizadas para los nombres de productos, nombres de paquete
 </Strings>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
- El `Strings` es un elemento secundario de la `Package` elemento. No tiene atributos.  
+## <a name="elements-and-attributes"></a>Atributos y elementos  
+ El `Strings` elemento es un elemento secundario del `Package` elemento. No tiene atributos.  
   
 ## <a name="string"></a>String  
- El `String` es un elemento secundario de la `Strings` elemento. Un `Strings` elemento puede tener uno o más `String` elementos.  
+ El `String` elemento es un elemento secundario del `Strings` elemento. Un `Strings` elemento puede tener uno o más `String` elementos.  
   
  `String` tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. El nombre de la cadena.|  
+|`Name`|Necesario. Nombre de la cadena.|  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo de código siguiente especifica todas las cadenas en inglés para el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] instalador.  
+ En el ejemplo de código siguiente se especifican todas las cadenas en inglés para el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] instalador.  
   
 ```  
 <Strings>  
@@ -76,5 +76,5 @@ Define las cadenas localizadas para los nombres de productos, nombres de paquete
 </Strings>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [\<Package> Element](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Consulte también  
+ [Elemento \<Package>](../deployment/package-element-bootstrapper.md)

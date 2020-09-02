@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eec94a5a02eda8fe9b1b3bf8f76f5050ab1e020
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423873"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
@@ -36,16 +36,16 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>Parámetros  
  `index`  
- [in] Índice o nombre de la [IDiaTable](../../debugger/debug-interface-access/idiatable.md) va a recuperar. Si se usa una variante de entero, debe estar en el intervalo de 0 a `count`-1, donde `count` es devuelto por la [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-get-count.md) método.  
+ de Índice o nombre del [IDiaTable](../../debugger/debug-interface-access/idiatable.md) que se va a recuperar. Si se usa una variante de entero, debe estar en el intervalo de 0 a `count` -1, donde `count` es el valor devuelto por el método [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) .  
   
  `table`  
- [out] Devuelve un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objeto que representa la tabla deseada.  
+ enuncia Devuelve un objeto [IDiaTable](../../debugger/debug-interface-access/idiatable.md) que representa la tabla deseada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Si se especifica una variante de cadena, la cadena de nombres de una tabla determinada. El nombre debe ser uno de los nombres de tabla como se define en [constantes (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).  
+ Si se especifica una variante de cadena, la cadena asigna un nombre a una tabla determinada. El nombre debe ser uno de los nombres de tabla, tal y como se define en las [constantes (Debug interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -57,8 +57,8 @@ IDiaTable* pTable;
 pEnumTables->Item( var, &pTable );  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
+ [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
  [Constantes (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a24513e5d047501417e4c61285662f7167241e3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414664"
 ---
 # <a name="stepkind"></a>STEPKIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica el tipo de paso de ejecución paso a paso.  
+Especifica el tipo de paso para la ejecución paso a paso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,24 +50,24 @@ public enum enum_STEPKIND { 
  Pasos en una función.  
   
  STEP_OVER  
- Pasos a través de una función.  
+ Pasos para una función.  
   
  STEP_OUT  
- Sale de una función paso a paso.  
+ Sale de una función.  
   
  STEP_BACKWARDS  
- Retroceder a una función.  
+ Retrocede en una función.  
   
 ## <a name="remarks"></a>Comentarios  
- Se pasa como argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.  
+ Se pasa como argumento al método [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

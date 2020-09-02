@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue | Microsoft Docs
+title: IDebugCustomViewer::D isplayValue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bda4c60e9164ae195c0e3ba49893b1a818c66f14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421377"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método se llama para mostrar el valor especificado.  
+Se llama a este método para mostrar el valor especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,26 +46,26 @@ int DisplayValue(
   
 #### <a name="parameters"></a>Parámetros  
  `hwnd`  
- [in] Ventana primaria  
+ de Ventana primaria  
   
  `dwID`  
- [in] Identificador de los visores personalizados que admiten más de un tipo.  
+ de IDENTIFICADOR de los visores personalizados que admiten más de un tipo.  
   
  `pHostServices`  
- [in] Reservado. Siempre se establece en null.  
+ [in] Reservado. Siempre se establece en NULL.  
   
  `pDebugProperty`  
- [in] Interfaz que puede usarse para recuperar el valor que se mostrará.  
+ de Interfaz que se puede utilizar para recuperar el valor que se va a mostrar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- La visualización es "modal" en que este método crea la ventana es necesaria, mostrar el valor, esperar la entrada y cerrar la ventana, todos antes de devolver al llamador. Esto significa que el método debe controlar todos los aspectos de mostrar el valor de propiedad, desde la creación de una ventana de salida a la espera de entrada del usuario, para destruir la ventana.  
+ La presentación es "modal" en que este método creará la ventana necesaria, mostrará el valor, esperará la entrada y cerrará la ventana antes de volver al llamador. Esto significa que el método debe controlar todos los aspectos de la visualización del valor de la propiedad, desde la creación de una ventana para la salida hasta la espera de la entrada del usuario, para destruir la ventana.  
   
- Que se pueden cambiar el valor en el determinado [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) objeto, puede usar el [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) método, si el valor se puede expresar como una cadena. En caso contrario, es necesario crear una interfaz personalizada, exclusivo para el evaluador de expresiones de esta implementación `DisplayValue` método, en el mismo objeto que implementa el `IDebugProperty3` interfaz. Esta interfaz personalizada podría proporcionar métodos para cambiar los datos de un tamaño arbitrario o complejidad.  
+ Para admitir el cambio del valor en el objeto [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) determinado, puede usar el método [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) , si el valor se puede expresar como una cadena. De lo contrario, es necesario crear una interfaz personalizada, exclusiva para el evaluador de expresiones `DisplayValue` que implementa este método, en el mismo objeto que implementa la `IDebugProperty3` interfaz. Esta interfaz personalizada proporcionaría métodos para cambiar los datos de un tamaño o complejidad arbitrarios.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

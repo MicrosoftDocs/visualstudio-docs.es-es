@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperty | Microsoft Docs
+title: 'IDebugProcessQueryProperties:: QueryProperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72f91d6cf8554567807e958ae9a32b93f9228c8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537672"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Consultas de este método para un valor de propiedad especificado al proceso de depuración.  
+Este método consulta un valor de propiedad especificado del proceso de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,7 +38,7 @@ int QueryProperty(
   
 #### <a name="parameters"></a>Parámetros  
  `dwPropType`  
- [in] Definición de la propiedad de consulta. Los valores son:  
+ de Definición de la propiedad consultada. Los valores son:  
   
 - PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -47,13 +47,13 @@ int QueryProperty(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
   `pvarPropValue`  
-  [out] El valor de la propiedad.  
+  [out] Valor de la propiedad.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se usa en contadas ocasiones.  
+ Rara vez se usa este método.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

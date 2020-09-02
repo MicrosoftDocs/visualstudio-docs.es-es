@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: LoadSymbolsFromCallback | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 108d50788992eb8316811bb5d9c7d327c3d62eda
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540603"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cargas de depuración de símbolos mediante el método de devolución de llamada especificadas.  
+Carga los símbolos de depuración mediante el método de devolución de llamada especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -51,31 +51,31 @@ int LoadSymbolsFromCallback(
   
 #### <a name="parameters"></a>Parámetros  
  `ulAppDomainID`  
- [in] Identificador del dominio de aplicación.  
+ de Identificador del dominio de aplicación.  
   
  `guidModule`  
- [in] Identificador único del módulo.  
+ de Identificador único del módulo.  
   
  `pUnkMetadataImport`  
- [in] Objeto que contiene los metadatos de símbolos.  
+ de Objeto que contiene los metadatos de símbolos.  
   
  `pUnkCorDebugModule`  
- [in] Objeto que implementa el [ICorDebugModule (interfaz)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ de Objeto que implementa la [interfaz ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
- [in] Nombre del módulo.  
+ de Nombre del módulo.  
   
  `bstrSymSearchPath`  
- [in] Ruta de acceso para buscar el archivo de símbolos.  
+ de Ruta de acceso para buscar el archivo de símbolos.  
   
  `pCallback`  
- [in] Objeto que representa el método de devolución de llamada.  
+ de Objeto que representa el método de devolución de llamada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugSymbolProvider** que expone la interfaz [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  
@@ -168,5 +168,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

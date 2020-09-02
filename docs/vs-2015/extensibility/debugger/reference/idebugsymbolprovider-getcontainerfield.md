@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetContainerField | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85c25d0d601ef3264a1fbd22f9cdbc2e40f31402
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546881"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
@@ -42,15 +42,15 @@ int GetContainerField(
   
 #### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [in] La dirección representada por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
+ de La dirección representada por una interfaz [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `ppContainerField`  
- [out] Devuelve un campo de contenedor representado por un [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaz.  
+ enuncia Devuelve un campo contenedor representado por una interfaz [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434233"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn y GlobalOff
@@ -33,7 +33,7 @@ Las opciones **GlobalOff** y **GlobalOn** de VSPerfCmd.exe pausan y reanudan la 
   
 - **GlobalOn** establece inmediatamente el contador de inicio/parada global en 1 y, en consecuencia, reanuda la generación de perfiles.  
   
-  Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
+  Para obtener más información, consulte [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,24 +46,24 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>Parámetros  
- Ninguna  
+ None  
   
 ## <a name="valid-options"></a>Opciones válidas  
  **GlobalOn** y **GlobalOff** se pueden especificar en líneas de comandos que también contienen las siguientes opciones.  
   
- **Start:** `Method`  
+ **Inicio:**`Method`  
  Inicializa la sesión del generador de perfiles de línea de comandos y establece el método de generación de perfiles especificado.  
   
- **Launch:** `AppName`  
+ **Iniciar:**`AppName`  
  inicia la aplicación especificada y comienza la generación de perfiles con el método de muestreo.  
   
- **Attach:** `PID`  
+ **Asociar:**`PID`  
  Inicia la generación de perfiles del proceso especificado.  
   
- {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
+ {**ProcessOff**&#124;**processon**} **:**`PID`  
  Detiene o inicia la generación de perfiles para el proceso especificado.  
   
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:**`TID`  
  Detiene o inicia la generación de perfiles para el proceso especificado (solo método de instrumentación).  
   
 ## <a name="example"></a>Ejemplo  
@@ -84,8 +84,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)

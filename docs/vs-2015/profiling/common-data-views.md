@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 708bb96beab51fa69910deef40dc468a1fd21058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421413"
 ---
 # <a name="common-data-views"></a>Vistas de datos comunes
@@ -43,7 +43,7 @@ Esta sección contiene información de referencia acerca de las vistas e informe
  [Vista Líneas](../profiling/lines-view.md)  
  Describe la vista y el informe Líneas. Las columnas de datos dependen del método de generación de perfiles.  
   
- [Vista Punteros de instrucciones (IP)](../profiling/instruction-pointers-ips-view.md)  
+ [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view.md)  
  Describe la vista y el informe Puntero de instrucción (IP). Las columnas de datos dependen del método de generación de perfiles.  
   
  [Vista Proceso](../profiling/process-view.md)  

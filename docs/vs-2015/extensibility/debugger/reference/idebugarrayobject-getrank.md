@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetRank | Documentos de Microsoft
+title: 'IDebugArrayObject:: Getrank (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf9700e2c3b29561229999506ed789a2e3d6e52e
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423678"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
@@ -40,13 +40,13 @@ int GetRank(
   
 #### <a name="parameters"></a>Parámetros  
  `pdwRank`  
- [out] Devuelve el rango.  
+ enuncia Devuelve el rango.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Use la [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) método para recuperar el tamaño de cada dimensión del objeto de matriz.  
+ Use el método [getdimensions (](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) para recuperar el tamaño de cada dimensión del objeto de matriz.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

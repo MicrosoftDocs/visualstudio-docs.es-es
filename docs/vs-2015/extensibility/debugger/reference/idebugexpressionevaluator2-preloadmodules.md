@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules | Microsoft Docs
+title: IDebugExpressionEvaluator2::P reloadModules | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d6d7236f19032fa0767a050ac84afe4b4e1585f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540256"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
@@ -39,16 +39,16 @@ int PreloadModules (
   
 #### <a name="parameters"></a>Parámetros  
  `pSym`  
- [in] Proveedor de símbolos para el que se cargarán previamente los módulos.  
+ de Proveedor de símbolos para el que se cargarán previamente los módulos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método opcional se utiliza al realizar una asociación de proceso de hospedaje. Proporciona una oportunidad de "calentamiento" como parte de la operación de adjuntar lo EE.  
+ Este método opcional se usa cuando se realiza una asociación de proceso de hospedaje. Proporciona la oportunidad de EE. "preparación" como parte de la asociación.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **ExpressionEvaluatorPackage** objeto que expone el [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **ExpressionEvaluatorPackage** que expone la interfaz [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) .  
   
 ```cpp#  
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules  
@@ -76,5 +76,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

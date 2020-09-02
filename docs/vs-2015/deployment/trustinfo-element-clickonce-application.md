@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento trustInfo (aplicación ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -24,13 +24,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420084"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicación ClickOnce)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;&gt;elemento trustInfo (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Describe los permisos de seguridad mínimos necesarios para que la aplicación se ejecute en el equipo cliente.  
@@ -69,42 +69,42 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 </trustInfo>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Atributos y elementos  
  El elemento `trustInfo` es obligatorio y se encuentra en el espacio de nombres `asm.v2` . No tiene atributos y contiene los elementos siguientes.  
   
-## <a name="security"></a>seguridad  
- Obligatorio. Este elemento es un elemento secundario del elemento `trustInfo` . Contiene el elemento `applicationRequestMinimum` y no tiene atributos.  
+## <a name="security"></a>security  
+ Necesario. Este elemento es un elemento secundario del elemento `trustInfo` . Contiene el elemento `applicationRequestMinimum` y no tiene atributos.  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- Obligatorio. Este elemento es un elemento secundario del elemento `security` y contiene los elementos `PermissionSet`, `assemblyRequest`y `defaultAssemblyRequest`. Este elemento no tiene atributos.  
+ Necesario. Este elemento es un elemento secundario del elemento `security` y contiene los elementos `PermissionSet`, `assemblyRequest`y `defaultAssemblyRequest`. Este elemento no tiene atributos.  
   
 ## <a name="permissionset"></a>PermissionSet  
- Obligatorio. Este elemento es un elemento secundario del elemento `applicationRequestMinimum` y contiene el elemento `IPermission` . Este elemento tiene los atributos siguientes.  
+ Necesario. Este elemento es un elemento secundario del elemento `applicationRequestMinimum` y contiene el elemento `IPermission` . Este elemento tiene los atributos siguientes.  
   
 - `ID`  
   
-     Obligatorio. Identifica el conjunto de permisos. Este atributo puede ser cualquier valor. Se hace referencia al id. en los atributos `defaultAssemblyRequest` y `assemblyRequest` .  
+     Necesario. Identifica el conjunto de permisos. Este atributo puede ser cualquier valor. Se hace referencia al id. en los atributos `defaultAssemblyRequest` y `assemblyRequest` .  
   
 - `version`  
   
-     Obligatorio. Identifica la versión del permiso. Normalmente, este valor es `1`.  
+     Necesario. Identifica la versión del permiso. Normalmente, este valor es `1`.  
   
 ## <a name="ipermission"></a>IPermission  
  Opcional. Este elemento es un elemento secundario del elemento `PermissionSet` . El elemento `IPermission` identifica totalmente una clase de permiso en el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. El elemento `IPermission` tiene los atributos siguientes, pero puede tener atributos adicionales que corresponden a las propiedades de la clase de permiso. Para obtener la sintaxis de un permiso concreto, vea los ejemplos enumerados en el archivo Security.config.  
   
 - `class`  
   
-     Obligatorio. Identifica la clase de permiso por nombre seguro. Por ejemplo, el siguiente código identifica el tipo `FileDialogPermission` .  
+     Necesario. Identifica la clase de permiso por nombre seguro. Por ejemplo, el siguiente código identifica el tipo `FileDialogPermission` .  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 - `version`  
   
-     Obligatorio. Identifica la versión del permiso. Normalmente, este valor es `1`.  
+     Necesario. Identifica la versión del permiso. Normalmente, este valor es `1`.  
   
 - `Unrestricted`  
   
-     Obligatorio. Identifica si la aplicación necesita una concesión sin restricciones de este permiso. Si es `true`, la concesión del permiso es incondicional. Si es `false`, o si este atributo no está definido, se restringe según los atributos específicos del permiso definidos en la etiqueta `IPermission` . Seleccione los permisos siguientes:  
+     Necesario. Identifica si la aplicación necesita una concesión sin restricciones de este permiso. Si es `true`, la concesión del permiso es incondicional. Si es `false`, o si este atributo no está definido, se restringe según los atributos específicos del permiso definidos en la etiqueta `IPermission` . Seleccione los permisos siguientes:  
   
     ```  
     <IPermission  
@@ -124,18 +124,18 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
 - `permissionSetReference`  
   
-     Requerido. Identifica el identificador del conjunto de permisos que es el permiso predeterminado. El conjunto de permisos se declara en el elemento `PermissionSet` .  
+     Necesario. Identifica el identificador del conjunto de permisos que es el permiso predeterminado. El conjunto de permisos se declara en el elemento `PermissionSet` .  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Opcional. Identifica los permisos para un ensamblado concreto. Este elemento es un elemento secundario del elemento `applicationRequestMinimum` y tiene los atributos siguientes.  
   
 - `Name`  
   
-     Obligatorio. Identifica el nombre del ensamblado.  
+     Necesario. Identifica el nombre del ensamblado.  
   
 - `permissionSetReference`  
   
-     Obligatorio. Identifica el identificador del conjunto de permisos que requiere este ensamblado. El conjunto de permisos se declara en el elemento `PermissionSet` .  
+     Necesario. Identifica el identificador del conjunto de permisos que requiere este ensamblado. El conjunto de permisos se declara en el elemento `PermissionSet` .  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
  Opcional. Este elemento es un elemento secundario del elemento `security` y contiene el elemento `requestedExecutionLevel` . Este elemento no tiene atributos.  
@@ -145,7 +145,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
 - `Level`  
   
-     Obligatorio. Indica el nivel de seguridad que está solicitando la aplicación. Los valores posibles son:  
+     Necesario. Indica el nivel de seguridad que está solicitando la aplicación. Los valores posibles son:  
   
      `asInvoker`, que no solicita ningún permiso adicional. Este nivel no requiere solicitudes de confianza adicionales.  
   
@@ -164,7 +164,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
  Todos los permisos solicitados con `defaultAssemblyRequest` y `assemblyRequest` se concederán sin preguntar al usuario si el manifiesto de implementación tiene una licencia de confianza válida.  
   
- Para obtener más información sobre la elevación de permisos, consulte [proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md). Para obtener más información sobre la implementación de directivas, vea [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Para obtener más información sobre la elevación de permisos, vea [proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md). Para obtener más información sobre la implementación de directivas, vea [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="examples"></a>Ejemplos  
  Los siguientes tres ejemplos de código ilustran los elementos `trustInfo` para las zonas de seguridad denominadas predeterminadas (Internet, LocalIntranet y FullTrust) para su uso en un manifiesto de aplicación de la implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
@@ -270,6 +270,6 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 </trustInfo>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)

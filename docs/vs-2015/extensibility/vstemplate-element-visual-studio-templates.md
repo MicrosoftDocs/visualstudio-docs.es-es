@@ -1,5 +1,5 @@
 ---
-title: VSTemplate (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: VSTemplate (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,16 +13,16 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8219f12eed091858a43c2bd5092b8b06f8320bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422917"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contiene todos los metadatos acerca de la plantilla de proyecto, la plantilla de elemento o el starter kit de.  
+Contiene todos los metadatos sobre la plantilla de proyecto, la plantilla de elemento o el Starter Kit.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,14 +41,14 @@ Contiene todos los metadatos acerca de la plantilla de proyecto, la plantilla de
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Type`|Identifica la plantilla como una plantilla de proyecto o una plantilla de elemento. Este atributo puede tener un valor de `Project` o `Item`.|  
-|`Version`|Especifica un número de versión para la plantilla. Las plantillas en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] tiene un `Version` valor del atributo `3.0.0`.|  
+|`Type`|Identifica la plantilla como una plantilla de proyecto o una plantilla de elemento. Este atributo puede tener un valor de `Project` o `Item` .|  
+|`Version`|Especifica un número de versión para la plantilla. Las plantillas de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] tienen un `Version` valor de atributo de `3.0.0` .|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica los datos que clasifican la plantilla y define cómo se muestra en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica los datos que categorizan la plantilla y define cómo se muestran en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica el contenido de la plantilla.|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Elemento opcional.|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Elemento opcional.|  
@@ -57,10 +57,10 @@ Contiene todos los metadatos acerca de la plantilla de proyecto, la plantilla de
  Ninguno.  
   
 ## <a name="remarks"></a>Comentarios  
- El `VSTemplate` elemento es el elemento raíz de los archivos .vstemplate.  
+ El `VSTemplate` elemento es el elemento raíz de los archivos. vstemplate.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación.  
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -86,6 +86,6 @@ Contiene todos los metadatos acerca de la plantilla de proyecto, la plantilla de
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

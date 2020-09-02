@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft Docs
+title: IDebugProcessEx2::D Etach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b79f1f80f9b6849c37fc9b6c4c8669f1397f0227
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538153"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método informa al proceso que una sesión ya no está depurando el proceso.  
+Este método informa al proceso de que una sesión ya no está depurando el proceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +40,13 @@ int Detach(
   
 #### <a name="parameters"></a>Parámetros  
  `pSession`  
- [in] Un valor que identifica de forma única la sesión para desasociar este proceso de.  
+ de Valor que identifica de forma única la sesión de la que se va a desasociar este proceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- La interfaz pasa `pSession` se tratarán solo como una cookie, un valor que identifica el Administrador de sesión de depuración que originalmente asociado a este proceso; ninguno de los métodos en la interfaz proporcionado son funcional.  
+ La interfaz que se pasa `pSession` se trata únicamente como una cookie, un valor que identifica de forma única el administrador de depuración de la sesión que se adjuntó originalmente a este proceso; ninguno de los métodos de la interfaz proporcionada es funcional.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

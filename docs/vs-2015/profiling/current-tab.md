@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b3c901803d8ab2b35624d185e62588c72a3586ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537149"
 ---
 # <a name="current-tab"></a>Pestaña actual
@@ -27,5 +27,5 @@ Si hace clic en la pestaña **Actual**, puede ver una pila de llamadas (si está
   
  En la pestaña **Actual** también se muestra información sobre los segmentos de actividad de DirectX, marcadores y acceso de E/S.  Para los segmentos de actividad de DirectX, se muestra información sobre la forma en que la cola de hardware procesa los paquetes DMA.  Para los marcadores, se muestra información sobre la descripción y el tipo de marcador.  Para el acceso de E/S, se muestra información sobre el archivo y el número de bytes leídos o escritos.  
   
-## <a name="see-also"></a>Vea también  
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte también  
+ [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

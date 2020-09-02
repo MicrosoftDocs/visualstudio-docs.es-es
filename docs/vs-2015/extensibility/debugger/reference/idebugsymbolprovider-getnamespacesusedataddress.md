@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetNamespacesUsedAtAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c25ea68130f546ea90216c831d321e6498af12a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421296"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método crea un enumerador para los espacios de nombres asociado a la dirección de depuración.  
+Este método crea un enumerador para los espacios de nombres asociados a la dirección de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,17 +42,17 @@ int GetNamespacesUsedAtAddress(
   
 #### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [in] La dirección de depuración.  
+ de Dirección de depuración.  
   
  `ppEnum`  
- [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para los espacios de nombres.  
+ enuncia Devuelve un enumerador [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) para los espacios de nombres.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Puede haber anidada de varios espacios de nombres asociados con una dirección de depuración determinado, por ejemplo, los espacios de nombres o varios `using` instrucciones.  
+ Puede haber varios espacios de nombres asociados a una dirección de depuración determinada, por ejemplo, espacios de nombres anidados o varias `using` instrucciones.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

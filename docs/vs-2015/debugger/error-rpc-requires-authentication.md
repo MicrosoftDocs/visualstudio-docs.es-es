@@ -1,5 +1,5 @@
 ---
-title: 'Error: RPC requiere autenticación | Documentos de Microsoft'
+title: 'Error: RPC requiere autenticación | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dbf0c2d13668dbf380f326ee3a49e0389815a8fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535741"
 ---
 # <a name="error-rpc-requires-authentication"></a>Error: RPC requiere autenticación
@@ -30,10 +30,10 @@ El depurador de Visual Studio no se puede conectar al equipo remoto. Hay una dir
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-1. Ejecute `\` *windir*`\system32\regedt32.exe`  
+1. Ejecute `\`*windir*`\system32\regedt32.exe`.  
   
 2. Busque y elimine `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
   
 3. Reinicie el equipo para que el cambio del Registro surta efecto.  
   
-4. Si el problema persiste, póngase en contacto con su administrador de dominio sobre la **configuración del equipo -> plantillas administrativas - > sistema -> Remote llamada a procedimiento -> restricciones para los clientes RPC no autenticadas** grupo configuración de directiva.
+4. Si el problema persiste, póngase en contacto con el administrador del dominio sobre la configuración de la Directiva de grupo **configuración del equipo->plantillas administrativas->>de llamada a procedimiento remoto->**

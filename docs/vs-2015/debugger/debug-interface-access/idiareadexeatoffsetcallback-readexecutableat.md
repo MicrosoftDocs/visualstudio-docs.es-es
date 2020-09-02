@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ac5452437ab6fdec3eb68baf46aeeab8434df4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538868"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lee el número especificado de bytes a partir del desplazamiento especificado desde un archivo ejecutable.  
+Lee el número especificado de bytes a partir del desplazamiento especificado a partir de un archivo ejecutable.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,20 +38,20 @@ HRESULT ReadExecutableAt ( 
   
 #### <a name="parameters"></a>Parámetros  
  fileOffset  
- [in] El desplazamiento en el archivo ejecutable al comenzar la lectura.  
+ de Desplazamiento del archivo ejecutable que se va a empezar a leer.  
   
  cbData  
- [in] Número de bytes que se leen.  
+ de Número de bytes que se van a leer.  
   
  pcbData  
- [out] Devuelve el número de bytes leídos.  
+ enuncia Devuelve el número de bytes leídos.  
   
  data[]  
- [in, out] Una matriz que se rellena con los bytes leídos del archivo.  
+ [in, out] Matriz que se rellena con bytes leídos del archivo.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método es invocado por el código de soporte técnico DIA para cargar los bytes de datos de una aplicación ejecutable mediante un desplazamiento de archivo absoluta. Se llama a este método de apoyo del [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método.  
+ El código de soporte de DIA llama a este método para cargar bytes de datos de un ejecutable mediante un desplazamiento de archivo absoluto. Se llama a este método en la compatibilidad del método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

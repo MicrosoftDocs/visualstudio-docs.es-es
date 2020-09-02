@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs
+title: 'IDebugBreakpointChecksumRequest2:: IsChecksumEnabled | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ec878a08e6f22a461eee95f31db7fa2a1bc97886
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431568"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
@@ -38,10 +38,10 @@ public int IsChecksumEnabled(
   
 #### <a name="parameters"></a>Parámetros  
  `pfChecksumEnabled`  
- [out] Devuelve TRUE si la suma de comprobación está habilitada; en caso contrario, devuelve FALSE.  
+ enuncia Devuelve TRUE si la suma de comprobación está habilitada; de lo contrario, devuelve FALSE.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

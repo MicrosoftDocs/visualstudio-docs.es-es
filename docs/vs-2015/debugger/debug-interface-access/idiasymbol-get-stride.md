@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3eb93749a3190bf2468c8d12e1ca906dc40f0cbd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428227"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el intervalo de la matriz o matriz strided.  
+Recupera el intervalo de la matriz o matriz muy progresada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,10 +32,10 @@ HRESULT get_stride(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `DWORD` que contiene el intervalo.  
+ enuncia Un puntero a un `DWORD` que contiene el intervalo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

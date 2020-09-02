@@ -1,5 +1,5 @@
 ---
-title: 'Error: Error de autenticación de Kerberos | Documentos de Microsoft'
+title: 'Error: Error de autenticación Kerberos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535648"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Error: Error de autenticación Kerberos
@@ -42,7 +42,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - Kerberos está deshabilitado en el controlador de dominio.  
   
-  Si la autenticación Kerberos no está disponible, cambie la cuenta que se usa para ejecutar el Monitor de depuración remota de Visual Studio. Para conocer el procedimiento, consulte [Error: El servicio de Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+  Si la autenticación Kerberos no está disponible, cambie la cuenta que se usa para ejecutar el Monitor de depuración remota de Visual Studio. Para conocer el procedimiento, vea [Error: Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
   Si ambos equipos están conectados al mismo dominio y todavía aparece este mensaje, compruebe que DNS en el equipo de destino está resolviendo correctamente el nombre del equipo host del depurador. Vea el procedimiento siguiente.  
   
@@ -62,6 +62,6 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 5. Compare los valores de la dirección IP.  
   
-## <a name="see-also"></a>Vea también  
- [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Consulte también  
+ [Errores y solución de problemas de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
