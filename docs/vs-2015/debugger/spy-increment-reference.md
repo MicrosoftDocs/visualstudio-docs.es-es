@@ -1,5 +1,5 @@
 ---
-title: Referencia de Spy ++ | Documentos de Microsoft
+title: Referencia de Spy++ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,32 +13,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3402eefb480efe2ec1d82b9f689f94235c2934a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148125"
 ---
 # <a name="spy-reference"></a>Referencia de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Consulte las secciones que se enumeran a continuación para obtener descripciones de cada Spy ++ menú y cuadro de diálogo:  
+En las secciones siguientes encontrará las descripciones de los menús y los cuadros de diálogo de Spy++:  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Comandos de menú](../debugger/menu-commands.md)  
- Describe los comandos disponibles en cada menú de Spy ++.  
+ Describe los comandos disponibles en cada menú de Spy + +.  
   
  [Cuadro de diálogo Fuente](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
- Se usa para configurar la fuente de caracteres que se usa en una ventana de vistas de Spy ++.  
+ Se usa para configurar la fuente de caracteres utilizada en una ventana de vistas de Spy + +.  
   
  [Herramientas de búsqueda para las vistas de Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Cuadros de diálogo que se usa para buscar un nodo específico en una ventana de vistas de Spy ++.  
+ Cuadros de diálogo usados para buscar un nodo específico en una ventana de vistas de Spy + +.  
   
  [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md)  
- Se utiliza para mostrar las propiedades de una ventana seleccionado en Windows Vista.  
+ Se utiliza para mostrar las propiedades de una ventana seleccionada en la vista ventanas.  
   
  [Cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md)  
- Se utiliza para seleccionar qué mensajes se muestran en la vista mensajes.  
+ Se usa para seleccionar los mensajes que aparecen en la vista mensajes.  
   
  [Cuadro de diálogo Propiedades del mensaje](../debugger/message-properties-dialog-box.md)  
  Se utiliza para mostrar las propiedades de un mensaje seleccionado en la vista mensajes.  
@@ -50,11 +50,11 @@ Consulte las secciones que se enumeran a continuación para obtener descripcione
  Se utiliza para mostrar las propiedades de un subproceso seleccionado en la vista de subprocesos.  
   
  [Otros cuadros de diálogo](../debugger/other-dialog-boxes.md)  
- Se usa para mostrar información acerca del programa de Spy ++.  
+ Se usa para mostrar información sobre el programa Spy + +.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Usar Spy++](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy ++ y explica cómo se puede usar.  
+ Presenta la herramienta Spy + + y explica cómo se puede usar.  
   
  [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.
+ Explica las vistas de árbol de Spy + + de ventanas, mensajes, procesos y subprocesos.

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ab202ed97ce2056313eb661d51d7150bb9689829
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664422"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Cómo: Modelar un terreno en 3D
@@ -27,7 +27,7 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
 
 - Selección de caras y puntos
 
-- Trasladar selecciones
+- Traducir selecciones
 
 - Usar la herramienta **Subdividir cara**
 
@@ -38,7 +38,7 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
 
  Cuando termine, el modelo debe tener este aspecto:
 
- ![escena&#45;3D que muestra un modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+ ![3&#45;D escena que muestra un modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
 
  Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.
 
@@ -66,9 +66,9 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
 
    El modelo de terreno está completado. Este es el modelo final de nuevo, con sombreado Phong aplicado:
 
-   ![escena&#45;3D que muestra un modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+   ![3&#45;D escena que muestra un modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
 
    Puede usar este modelo de terreno para mostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de degradado basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editor de modelos](../designers/model-editor.md)

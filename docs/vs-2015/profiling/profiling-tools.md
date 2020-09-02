@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686220"
 ---
 # <a name="profiling-tools"></a>Herramientas de generación de perfiles
@@ -25,7 +25,7 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
   
  Revise el resumen en la parte inferior para ver qué herramientas están disponibles para su tipo de proyecto (por ejemplo, escritorio, UWP, ASP.NET).  
   
- Puede obtener acceso a las herramientas de generación de perfiles mediante **Depurar/Windows/Mostrar herramientas de diagnóstico** para usar las herramientas durante la sesión de depuración, o mediante **Depurar/Generador de perfiles de rendimiento...** para realizar un análisis de rendimiento preciso.  Consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md) para obtener más información sobre los diferentes enfoques.  
+ Puede obtener acceso a las herramientas de generación de perfiles mediante **Depurar/Windows/Mostrar herramientas de diagnóstico** para usar las herramientas durante la sesión de depuración, o mediante **Depurar/Generador de perfiles de rendimiento...** para realizar un análisis de rendimiento preciso.  Consulte [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecución de herramientas de ejecución de perfiles con o sin el depurador) para obtener más información sobre los diferentes enfoques.  
   
  ![DebugDiagnosticsToolsMenu](../profiling/media/debugdiagnosticstoolsmenu.png "DebugDiagnosticsToolsMenu")  
   
@@ -36,17 +36,17 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
 ## <a name="memory-usage"></a>Uso de memoria  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta **Uso de memoria** . La herramienta le permite realizar instantáneas del montón de memoria nativo y administrado. Puede usar esta herramienta con aplicaciones de escritorio, aplicaciones universales de Windows y aplicaciones ASP.NET. La herramienta **Uso de memoria** se puede ejecutar desde la ventana **Herramientas de diagnóstico** durante la depuración (**Depurar/Windows/Mostrar herramientas de diagnóstico**) o fuera del depurador (**Depurar/Generador de perfiles de rendimiento...**). Consulte [Uso de memoria](../profiling/memory-usage.md) y [Memory Usage without Debugging](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Uso de memoria sin depuración) para obtener más información.  
+ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta **uso de memoria** . La herramienta le permite realizar instantáneas del montón de memoria nativo y administrado. Puede usar esta herramienta con aplicaciones de escritorio, aplicaciones universales de Windows y aplicaciones ASP.NET. La **herramienta uso de memoria** se puede ejecutar desde la ventana herramientas de **diagnóstico** durante la depuración (depurar **/ventanas/Mostrar herramientas de diagnóstico**) o fuera del depurador (**depurar/generador de perfiles de rendimiento...**). Vea  [uso de memoria y](../profiling/memory-usage.md) [uso de memoria sin depuración](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) para obtener más información.  
   
 ## <a name="cpu-usage"></a>Uso de CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar el código C++, C#/VB y JavaScript.  Puede usar esta herramienta con aplicaciones de escritorio y aplicaciones universales de Windows, así como con aplicaciones de Azure App Services. La herramienta **Uso de CPU** se puede ejecutar desde la ventana **Herramientas de diagnóstico** durante la depuración (**Depurar/Windows/Mostrar herramientas de diagnóstico**) o fuera del depurador (**Depurar/Generador de perfiles de rendimiento...**). Consulte [Uso de CPU](../profiling/cpu-usage.md) .  
+ La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar el código C++, C#/VB y JavaScript.  Puede usar esta herramienta con aplicaciones de escritorio y aplicaciones universales de Windows, así como con aplicaciones de Azure App Services. La **herramienta uso de CPU** se puede ejecutar desde la ventana herramientas de **diagnóstico** durante la depuración (depurar **/ventanas/Mostrar herramientas de diagnóstico**) o fuera del depurador (**depurar/generador de perfiles de rendimiento...**). Consulte [uso de CPU](../profiling/cpu-usage.md) para obtener más información.  
   
 ## <a name="performance-explorer"></a>Explorador de rendimiento  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  
   
- El **Explorador de rendimiento** (**Depurar/Generador de perfiles/Explorador de rendimiento**) le permite usar muchas herramientas diferentes, incluidas **Muestreo de la CPU**,  **Instrumentación**, **Asignación de memoria de .NET**, y **Contención de recursos**. Puede usar las herramientas del Explorador de rendimiento con aplicaciones de escritorio y aplicaciones ASP.NET, pero no aplicaciones universales de Windows. Para obtener más información, consulta [Explorador de rendimiento](../profiling/performance-explorer.md).  
+ El **Explorador de rendimiento** (**Depurar/Generador de perfiles/Explorador de rendimiento**) le permite usar muchas herramientas diferentes, incluidas **Muestreo de la CPU**,  **Instrumentación**, **Asignación de memoria de .NET**, y **Contención de recursos**. Puede usar las herramientas del Explorador de rendimiento con aplicaciones de escritorio y aplicaciones ASP.NET, pero no aplicaciones universales de Windows. Para obtener más información, consulte [Performance Explorer](../profiling/performance-explorer.md) (Explorador de rendimiento).  
   
 ## <a name="gpu-usage"></a>Uso de GPU  
  ![DiagGPUUsage](../profiling/media/diaggpuusage.png "DiagGPUUsage")  
@@ -96,5 +96,5 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|sí para HTML, no para XAML|No|  
 |[Memoria de JavaScript](../profiling/javascript-memory.md)|No|sí para HTML, no para XAML|No|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDE de Visual Studio](../ide/visual-studio-ide.md)

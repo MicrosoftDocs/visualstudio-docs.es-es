@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a79caca18c7813605ff851eea6bda642e6300a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645614"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organización jerárquica de recursos para la localización
@@ -43,11 +43,11 @@ En Visual Studio, los recursos adaptados (datos como cadenas e imágenes adecuad
 
   La mejor forma de almacenar sus recursos es generalizarlos tanto como sea posible. Eso significa almacenar cadenas localizadas, imágenes y demás en archivos de recursos para referencias culturales neutras en lugar de referencias culturales específicas siempre que sea posible. Por ejemplo, si dispone de recursos para la referencia cultural francés belga ("fr-BE") y los recursos que hay inmediatamente antes son los recursos de reserva en inglés, puede producirse un problema cuando alguien use su aplicación en un sistema configurado para la referencia cultural francés canadiense. El sistema buscará un ensamblado satélite para "fr-CA", sin encontrarlo, y cargará el ensamblado principal que contiene el recurso de reserva, que es el inglés, en lugar de cargar los recursos en francés. En la imagen siguiente se muestra este escenario no deseable.
 
-  ![Solo recursos específicos](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
+  ![Sólo recursos específicos](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
 
   Si sigue la práctica recomendada de situar tantos recursos como sea posible en un archivo de recursos neutro para la referencia cultural "fr", el usuario francocanadiense no vería los recursos marcados para la referencia cultural "fr-BE", sino cadenas en francés. La situación siguiente muestra este escenario preferible.
 
   ![Gráfico NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
 
-## <a name="see-also"></a>Vea también
- [Idiomas de los recursos neutros para la seguridad de la localización](../ide/neutral-resources-languages-for-localization.md) [y los ensamblados satélite localizados](../ide/security-and-localized-satellite-assemblies.md) [localizar aplicaciones](../ide/localizing-applications.md) [globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md) [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para Windows Forms Globalización](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de páginas Web ASP.net](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+## <a name="see-also"></a>Consulte también
+ [Idiomas de los recursos neutros para la seguridad de la localización](../ide/neutral-resources-languages-for-localization.md) [y ensamblados satélite localizados](../ide/security-and-localized-satellite-assemblies.md) [localizar aplicaciones](../ide/localizing-applications.md) [globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md) [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de Windows Forms](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de páginas Web ASP.net](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

@@ -1,5 +1,5 @@
 ---
-title: Habilitación de características de depuración en Visual C++ (-D_DEBUG) | Microsoft Docs
+title: Habilitar las características de depuración en Visual C++ (-D_DEBUG) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,13 +26,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cffa8592c2048c6c6b39eee5c4ca654c41448933
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686702"
 ---
-# <a name="enabling-debug-features-in-visual-c-ddebug"></a>Habilitar las características de depuración en Visual C++ (/D_DEBUG)
+# <a name="enabling-debug-features-in-visual-c-d_debug"></a>Habilitar las características de depuración en Visual C++ (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], las características de depuración, como las aserciones, se habilitan al compilar el programa con el símbolo **_DEBUG** definido. Puede definir **_DEBUG** de dos maneras:  
@@ -45,6 +45,6 @@ En [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], las características de depurac
   
   La configuración de depuración de un programa MFC debe vincular con la versión de depuración de la biblioteca MFC. Los archivos de encabezado de MFC determinan la versión correcta de la biblioteca MFC con la que se debe vincular a partir de los símbolos que haya definido, como **_DEBUG** y **_UNICODE**. Para obtener información detallada, vea [Versiones de la biblioteca MFC](https://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e).  
   
-## <a name="see-also"></a>Vea también  
- [Depuración de código nativo](../debugger/debugging-native-code.md)   
+## <a name="see-also"></a>Consulte también  
+ [Depurar código nativo](../debugger/debugging-native-code.md)   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

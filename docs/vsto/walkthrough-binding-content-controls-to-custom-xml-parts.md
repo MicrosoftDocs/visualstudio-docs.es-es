@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544448"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Tutorial: enlazar controles de contenido a elementos XML personalizados
@@ -61,7 +61,7 @@ ms.locfileid: "85544448"
 
 1. Cree un proyecto de documento de Word con el nombre **EmployeeControls**. Cree un nuevo documento para la solución. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]abre el nuevo documento de Word en el diseñador y agrega el proyecto **EmployeeControls** a **Explorador de soluciones**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el nuevo documento de Word en el diseñador y agrega el proyecto **EmployeeControls** a **Explorador de soluciones**.
 
 ## <a name="add-content-controls-to-the-document"></a>Agregar controles de contenido al documento
  Cree una tabla que contenga tres tipos diferentes de controles de contenido donde el usuario pueda ver o modificar la información sobre un empleado.
@@ -148,7 +148,7 @@ ms.locfileid: "85544448"
 
      Se abrirá el diseñador de esquemas.
 
-4. En **Explorador de soluciones**, abra el menú contextual de **Employees. xsd**y, a continuación, elija **Ver código**.
+4. En **Explorador de soluciones**, abra el menú contextual de  **Employees. xsd**y, a continuación, elija  **Ver código**.
 
 5. Reemplace el contenido del archivo **Employees. xsd** por el esquema siguiente.
 
@@ -225,7 +225,7 @@ ms.locfileid: "85544448"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Para agregar un elemento XML personalizado al documento
 
-1. En **Explorador de soluciones**, abra el menú contextual de **ThisDocument.CS** o **ThisDocument. VB**y, a continuación, elija **Ver código**.
+1. En **Explorador de soluciones**, abra el menú contextual de  **ThisDocument.CS** o **ThisDocument. VB**y, a continuación, elija **Ver código**.
 
 2. Agregue las siguientes declaraciones a la clase `ThisDocument`. Este código declara varios objetos que utilizará para agregar un elemento XML personalizado al documento.
 
@@ -316,7 +316,7 @@ ms.locfileid: "85544448"
 
 - Utilice los controles de contenido para proteger elementos de un documento. Para obtener más información, consulte [Cómo: proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de contenido](../vsto/content-controls.md)
 - [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)

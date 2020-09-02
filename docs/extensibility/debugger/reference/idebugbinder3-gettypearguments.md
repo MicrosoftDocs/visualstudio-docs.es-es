@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments ? Microsoft Docs
+title: 'IDebugBinder3:: Gettypearguments (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735691"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
@@ -47,22 +47,22 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Parámetros
 `skip`\
-[en] Número de campos que se deben omitir antes de obtener tipos de argumento.
+de Número de campos que se van a omitir antes de obtener los tipos de argumento.
 
 `count`\
-[en] El número de campos de argumento que se `ppFields` va a devolver (también especifica el tamaño de la matriz).
+de El número de campos de argumento que se van a devolver (también especifica el tamaño de la `ppFields` matriz).
 
 `ppFields`\
-[adentro, fuera] Matriz de campos que se rellenará al devolver este método.
+[in, out] Una matriz de campos que se rellenarán cuando se devuelva este método.
 
 `pFetched`\
-[fuera] \(opcional) El número de campos de tipo de argumento realmente devueltos.
+[out] \( opcional) el número de campos de tipo de argumento devueltos realmente.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El número de tipos de argumento se puede obtener de antemano con [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+ El número de tipos de argumento se puede obtener con antelación con [gettypeargumentcount (](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

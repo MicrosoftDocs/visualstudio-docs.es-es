@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985723"
 ---
 # <a name="office-development-samples"></a>Ejemplos de desarrollo de Office
@@ -28,7 +28,7 @@ ms.locfileid: "72985723"
 
 ## <a name="office-development-samples"></a>Ejemplos de desarrollo de Office
 
-|Ejemplo|Descripción|
+|Muestra|Descripción|
 |------------|-----------------|
 |Ejemplo de datos maestros y detalles de Excel|Muestra cómo recuperar datos de una base de datos relacional o un archivo XML y usarlos en Excel.|
 |Ejemplo de técnicas de protección de documentos de Excel|Muestra diversas técnicas que se pueden usar para proteger los componentes estructurales de una hoja de cálculo para impedir que los usuarios eliminen accidentalmente los controles o cambien partes importantes del documento de la solución.|
@@ -40,5 +40,5 @@ ms.locfileid: "72985723"
 |Ejemplo de administrador de la interfaz de usuario|Muestra cómo crear una personalización de la cinta de opciones, un panel de tareas personalizado y un área de formulario personalizada para Outlook implementando interfaces de extensibilidad en un complemento de VSTO. Todas las instancias de la cinta de opciones, el panel de tareas y el área de formulario pueden comunicarse correctamente entre sí.|
 |Ejemplo de interoperabilidad de VSTO y VBA|Muestra cómo llamar a un método en una personalización de nivel de documento para Excel desde el código de Visual Basic para Aplicaciones (VBA) del libro.<br /><br /> Este ejemplo solo está disponible en línea.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)

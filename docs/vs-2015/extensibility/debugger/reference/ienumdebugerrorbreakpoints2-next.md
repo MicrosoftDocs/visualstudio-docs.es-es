@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2::Next | Documentos de Microsoft
+title: 'IEnumDebugErrorBreakpoints2:: Next | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6cc6e27fc5e6ac5ad380a3168f55dd810fd9dcb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199672"
 ---
 # <a name="ienumdebugerrorbreakpoints2next"></a>IEnumDebugErrorBreakpoints2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Devuelve el siguiente conjunto de elementos de la enumeración.  
+Devuelve el conjunto de elementos siguiente de la enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,17 +44,17 @@ int Next(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
+ [in] Número de elementos que se van a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
   
  `rgelt`  
- [in, out] Matriz de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) elementos que deben rellenarse.  
+ [in, out] Matriz de elementos [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) que se va a rellenar.  
   
  `pceltFetched`  
- [out] Devuelve el número de elementos realmente devueltos en `rgelt`.  
+ enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

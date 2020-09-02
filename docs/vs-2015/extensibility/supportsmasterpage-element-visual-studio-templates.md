@@ -1,5 +1,5 @@
 ---
-title: SupportsMasterPage (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: SupportsMasterPage ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 051bde61132d286c3941a12c2e970aa2019fc0b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160471"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica si o no la **seleccionar la página maestra** tiene activada la casilla de verificación el **Agregar nuevo elemento** cuadro de diálogo.  
+Especifica si está habilitada o no la casilla **seleccionar página maestra** en el cuadro de diálogo **Agregar nuevo elemento** .  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<SupportsMasterPage>  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -46,22 +46,22 @@ Especifica si o no la **seleccionar la página maestra** tiene activada la casil
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica los datos que clasifican la plantilla y define cómo se muestra en el **nuevo proyecto** o **nuevo elemento** cuadro de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica los datos que categorizan la plantilla y define cómo se muestran en el cuadro de diálogo **nuevo proyecto** o **nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, lo que indica si el **seleccionar la página maestra** tiene activada la casilla de verificación el **Agregar nuevo elemento** cuadro de diálogo.  
+ El texto debe ser `true` o `false` , lo que indica si la casilla **seleccionar página maestra** está habilitada o no en el cuadro de diálogo **Agregar nuevo elemento** .  
   
 ## <a name="remarks"></a>Comentarios  
  `SupportsMasterPage` es un elemento opcional. El valor predeterminado es `false`.  
   
- El `SupportsMasterPage` elemento solo está disponible para plantillas de elementos Web.  
+ El `SupportsMasterPage` elemento solo está disponible para las plantillas de elementos Web.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra los metadatos de un proyecto Web que incluye compatibilidad para una página maestra.  
+ En el ejemplo siguiente se muestran los metadatos de un proyecto web que incluye compatibilidad con una página maestra.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -85,6 +85,6 @@ Especifica si o no la **seleccionar la página maestra** tiene activada la casil
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

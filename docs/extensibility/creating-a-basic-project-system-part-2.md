@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2b9d5ce673e0ee44e888905239c12251241015ab
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903823"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creación de un sistema de proyectos básico, parte 2
@@ -156,7 +156,7 @@ Mediante el uso de una plantilla de Visual Studio (archivo *. vstemplate* ) en l
 
 2. Expanda el nodo **proyectos y soluciones** y, a continuación, seleccione **compilar y ejecutar**.
 
-3. Establezca el nivel de detalle de la salida de la **compilación del proyecto de MSBuild** en **normal**. Haga clic en **Aceptar**.
+3. Establezca el nivel de detalle de la salida de la **compilación del proyecto de MSBuild** en **normal**. Haga clic en **OK**.
 
 4. Vuelva a generar el proyecto SimpleProject.
 
@@ -462,7 +462,7 @@ La página de propiedades que se crea en esta sección le permite modificar y gu
 
 7. Visual Studio llama al generador de proyectos para crear un proyecto mediante la plantilla de Visual Studio. El nuevo archivo *Program.CS* se abre en el editor de código.
 
-8. Haga clic con el botón secundario en el nodo del proyecto en **Explorador de soluciones**y, a continuación, haga clic en **propiedades**. Se muestra el cuadro de diálogo **Páginas de propiedades**.
+8. Haga clic con el botón secundario en el nodo del proyecto en **Explorador de soluciones**y, a continuación, haga clic en **propiedades**. Aparece el cuadro de diálogo **Páginas de propiedades**.
 
     ![Página de propiedades de proyecto simple](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
 

@@ -1,5 +1,5 @@
 ---
-title: Código de comentarios en un servicio de lenguaje heredado ? Microsoft Docs
+title: Comentario de código en un servicio de lenguaje heredado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709435"
 ---
-# <a name="comment-code-in-a-legacy-language-service"></a>Código de comentarios en un servicio de lenguaje heredado
-Los lenguajes de programación suelen proporcionar un medio para anotar o comentar el código. Un comentario es una sección de texto que proporciona información adicional sobre el código, pero se omite durante la compilación o interpretación.
+# <a name="comment-code-in-a-legacy-language-service"></a>Código de comentario en un servicio de lenguaje heredado
+Los lenguajes de programación proporcionan normalmente un medio para anotar o comentar el código. Un comentario es una sección de texto que proporciona información adicional sobre el código, pero que se omite durante la compilación o la interpretación.
 
- Las clases de marco de paquete administrado (MPF) proporcionan compatibilidad para comentar y quitar los comentarios del texto seleccionado.
+ Las clases de Managed Package Framework (MPF) proporcionan compatibilidad para comentar y quitar comentarios del texto seleccionado.
 
 ## <a name="comment-styles"></a>Estilos de comentario
-Hay dos estilos generales de comentario:
+Hay dos estilos generales de Comentario:
 
 1. Comentarios de línea, donde el comentario está en una sola línea.
 
-2. Bloquear comentarios, donde el comentario puede incluir varias líneas.
+2. Los comentarios de bloque, donde el comentario puede incluir varias líneas.
 
-Los comentarios de línea suelen tener un carácter inicial (o caracteres), mientras que los comentarios de bloque tienen caracteres inicial y final. Por ejemplo, en C-, un `//`comentario de línea `/*` comienza con `*/`, y un comentario de bloque comienza con y termina con .
+Los comentarios de línea suelen tener un carácter de inicio (o caracteres), mientras que los comentarios de bloque tienen caracteres de inicio y fin. Por ejemplo, en C#, un Comentario de línea comienza con y `//` un Comentario de bloque comienza con `/*` y finaliza con `*/` .
 
-Cuando el usuario selecciona el comando Selección de **comentarios** en <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> el menú <xref:Microsoft.VisualStudio.Package.Source> **Editar** > **avanzada,** el comando se enruta al método de la clase. Cuando el usuario selecciona el comando **Anular comentario**selección <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> , el comando se enruta al método.
+Cuando el usuario selecciona la **selección de comentarios** del comando en el menú **Editar**  >  **Opciones avanzadas** , el comando se enruta al <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> método en la <xref:Microsoft.VisualStudio.Package.Source> clase. Cuando el usuario selecciona el comando sin **marcar la selección**, el comando se enruta al <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> método.
 
-## <a name="support-code-comments"></a>Comentarios del código de soporte
- Puede hacer que su servicio de lenguaje `EnableCommenting` admita <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> comentarios de código mediante el parámetro con nombre del archivo . Esto establece <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> propiedad de la clase. Para obtener más información acerca de cómo establecer características de servicio de lenguaje, vea [Registrar un servicio](../../extensibility/internals/registering-a-legacy-language-service1.md)de lenguaje heredado .
+## <a name="support-code-comments"></a>Comentarios de código de soporte
+ Puede hacer que su servicio de lenguaje admita los comentarios de código por medio del `EnableCommenting` parámetro con nombre de <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Esto establece la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> propiedad de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. Para obtener más información sobre la configuración de las características del servicio de lenguaje, consulte [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
- También debe invalidar <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> el método <xref:Microsoft.VisualStudio.Package.CommentInfo> para devolver una estructura con los caracteres de comentario para el idioma. Los caracteres de comentario de línea de estilo de C-style son el valor predeterminado.
+ También debe invalidar el <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> método para devolver una <xref:Microsoft.VisualStudio.Package.CommentInfo> estructura con los caracteres de comentario para su idioma. Los caracteres de comentario de línea de estilo C# son el valor predeterminado.
 
 ### <a name="example"></a>Ejemplo
- Este es un ejemplo <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> de implementación del método.
+ A continuación se muestra un ejemplo de implementación del <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> método.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -63,4 +63,4 @@ namespace MyLanguagePackage
 
 ## <a name="see-also"></a>Vea también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
-- [Registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)
+- [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)

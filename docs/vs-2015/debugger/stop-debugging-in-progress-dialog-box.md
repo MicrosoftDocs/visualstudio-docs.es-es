@@ -1,5 +1,5 @@
 ---
-title: Detener la depuración en el cuadro de diálogo de progreso | Microsoft Docs
+title: Detener depuración en curso (cuadro de diálogo) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fc4b72987be726ab06aeb92a0e3eec2a338949e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684947"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Detener depuración en curso (cuadro de diálogo)
@@ -38,8 +38,8 @@ Este cuadro de diálogo aparece cuando el depurador intenta detener una sesión 
  Puede esperar a que los procesos se desasocien y desaparezca este cuadro de diálogo, o utilizar el botón **Detener ahora** para forzar la finalización inmediata.  
   
  **Detener ahora**  
- Haga clic en este botón para detener la sesión de depuración inmediatamente. Uso de **detener ahora**finalizará en lugar de separar los procesos que se está depurados. Si está depurando procesos del sistema y utiliza **Detener ahora** para finalizarlos podrían producirse efectos inesperados y no deseados.  
+ Haga clic en este botón para detener la sesión de depuración inmediatamente. El uso de **Stop Now**finalizará en lugar de desasociar los procesos que se están depurando. Si está depurando procesos del sistema y utiliza **Detener ahora** para finalizarlos podrían producirse efectos inesperados y no deseados.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Desasociar programas](https://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)

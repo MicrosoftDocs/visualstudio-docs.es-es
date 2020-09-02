@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Compilar un proyecto que tiene recursos | Microsoft Docs'
+title: Procedimiento Compilar un proyecto que tiene recursos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686515"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Cómo: Compilar un proyecto que tiene recursos
@@ -79,8 +79,8 @@ Si está compilando versiones adaptadas de un proyecto, todos los elementos de l
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
 [MSBuild](msbuild.md)  
  [GenerateResource (tarea)](../msbuild/generateresource-task.md)   
- [Csc (tarea)](../msbuild/csc-task.md)   
+ [CSC (tarea)](../msbuild/csc-task.md)   
  [Resgen.exe (generador de archivos de recursos)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

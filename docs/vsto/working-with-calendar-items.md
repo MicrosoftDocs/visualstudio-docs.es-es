@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008734"
 ---
 # <a name="work-with-calendar-items"></a>Trabajar con elementos de calendario
@@ -30,14 +30,14 @@ ms.locfileid: "63008734"
 
 |Tarea|Procedimiento|
 |----------|---------------|
-|Crear una cita y agregar destinatarios.|[Cómo: Crear citas mediante programación](../vsto/how-to-programmatically-create-appointments.md)|
-|Eliminar una instancia de una cita periódica.|[Cómo: Eliminar citas mediante programación](../vsto/how-to-programmatically-delete-appointments.md)|
-|Crear una carpeta de calendario y agregar un elemento de cita.|[Cómo: Crear un calendario personalizado mediante programación](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
-|Crear una convocatoria de reunión y enviarla.|[Cómo: Crear mediante programación una convocatoria de reunión](../vsto/how-to-programmatically-create-a-meeting-request.md)|
+|Crear una cita y agregar destinatarios.|[Cómo: crear citas mediante programación](../vsto/how-to-programmatically-create-appointments.md)|
+|Eliminar una instancia de una cita periódica.|[Cómo: eliminar citas mediante programación](../vsto/how-to-programmatically-delete-appointments.md)|
+|Crear una carpeta de calendario y agregar un elemento de cita.|[Cómo: crear un calendario personalizado mediante programación](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
+|Crear una convocatoria de reunión y enviarla.|[Cómo: crear una convocatoria de reunión mediante programación](../vsto/how-to-programmatically-create-a-meeting-request.md)|
 
- Para obtener más información sobre las tareas de Outlook y el modelo de objetos de Outlook, consulte [información general sobre el modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md).
+ Para obtener más información sobre las tareas de Outlook y el modelo de objetos de Outlook, vea [Introducción al modelo de objetos](../vsto/outlook-object-model-overview.md)de Outlook.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con elementos de contacto](../vsto/working-with-contact-items.md)
 - [Trabajar con carpetas](../vsto/working-with-folders.md)
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903223"
 ---
 # <a name="attach-to-the-program"></a>Adjuntar al programa
@@ -68,5 +68,5 @@ Una vez que haya registrado los programas con el puerto adecuado, debe adjuntar 
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
-- [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md)
-- [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Adjuntar](../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+- [Adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md)

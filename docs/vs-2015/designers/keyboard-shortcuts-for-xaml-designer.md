@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46adab828eea0ffb821147ba9c711634e1899a85
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664314"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Métodos abreviados de teclado para el Diseñador XAML
@@ -26,7 +26,7 @@ Los métodos abreviados de teclado en el Diseñador XAML pueden agilizar el trab
 
 |**Para realizar esta acción**|**Haga esto**|
 |--------------------------------|-----------------|
-|Crear un elemento|Presione CTRL+N|
+|Creación de un elemento|Presione CTRL+N|
 |Duplicar un elemento|Mantenga presionada la tecla Alt y presione una tecla de dirección.|
 |Modificar el texto de un control|Presione F2 (presione Esc para salir)|
 |Seleccionar un elemento único|Presione Tab para seleccionar elementos en el orden en que aparecen en el documento (también puede seleccionar elementos mediante las teclas de dirección).|
@@ -49,5 +49,5 @@ Los métodos abreviados de teclado en el Diseñador XAML pueden agilizar el trab
 |Bloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|CTRL + L|
 |Desbloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|MAYÚS + CTRL + L|
 
-## <a name="see-also"></a>Vea también
- [Crear una UI usando el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+## <a name="see-also"></a>Consulte también
+ [Tutorial: Crear una UI usando el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

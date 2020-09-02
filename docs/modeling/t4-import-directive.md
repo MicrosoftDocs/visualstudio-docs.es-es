@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591871"
 ---
 # <a name="t4-import-directive"></a>Directiva de importación T4
 
-En los bloques de código de una plantilla de texto T4 de Visual Studio, la Directiva `import` permite hacer referencia a los elementos de otro espacio de nombres sin proporcionar un nombre completo. Es el equivalente de `using` en C# o `imports` en [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
+En los bloques de código de una plantilla de texto T4 de Visual Studio, la `import` directiva le permite hacer referencia a los elementos de otro espacio de nombres sin proporcionar un nombre completo. Es el equivalente de `using` en C# o `imports` en [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
 Para obtener información general sobre cómo escribir plantillas de texto T4, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
@@ -49,6 +49,6 @@ The file contains: <#=  fileContent #>
 
 - El espacio de nombres de DSL
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Directiva de ensamblado T4](../modeling/t4-assembly-directive.md)
