@@ -18,40 +18,40 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900507"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Implementación de ClickOnce en Windows Vista
 
-Creación de aplicaciones en Visual Studio para Control de cuentas de usuario (UAC) en Windows Vista normalmente genera un manifiesto incrustado, como datos binarias codificados XML en archivo ejecutable de la aplicación.  Aplicaciones ClickOnce y COM sin registro requieren un manifiesto externo, por lo que Visual Studio genera un archivo para estos proyectos que contiene los datos UAC en lugar de un manifiesto incrustado. Para las implementaciones de ClickOnce y COM sin registro, Visual Studio usa la información de un archivo denominado *app.manifest* para generar información de manifiesto de UAC externo. Todos los demás casos, Visual Studio incrusta los datos UAC en el archivo ejecutable de la aplicación.
+La compilación de aplicaciones en Visual Studio para el control de cuentas de usuario (UAC) en Windows Vista normalmente genera un manifiesto incrustado, codificado como datos XML binarios en el archivo ejecutable de la aplicación.  ClickOnce y las aplicaciones COM sin registro requieren un manifiesto externo, por lo que Visual Studio genera un archivo para estos proyectos que contienen los datos de UAC en lugar de un manifiesto incrustado. En el caso de las implementaciones de ClickOnce y COM sin registro, Visual Studio usa información de un archivo denominado *app. manifest* para generar información externa del manifiesto de UAC. En todos los demás casos, Visual Studio incrusta los datos de UAC en el archivo ejecutable de la aplicación.
 
 Visual Studio proporciona las siguientes opciones para la generación de manifiestos:
 
-- Use un manifiesto incrustado. Incrustar datos de UAC en el archivo ejecutable de la aplicación y ejecute como un usuario normal.
+- Usar un manifiesto incrustado. Inserte los datos de UAC en el archivo ejecutable de la aplicación y ejecútelo como usuario normal.
 
-   Se trata de la configuración predeterminada (a menos que use ClickOnce). Este valor es compatible con la forma habitual en que funciona Visual Studio en Windows Vista, con la generación de una instancia interna y externa manifiesto mediante `AsInvoker`.
+   Esta es la configuración predeterminada (a menos que use ClickOnce). Esta configuración admite la manera habitual en la que Visual Studio funciona en Windows Vista, con la generación de un manifiesto interno y externo mediante `AsInvoker` .
 
-- Use un manifiesto externo. Generar un manifiesto externo mediante *app.manifest*.
+- Use un manifiesto externo. Genere un manifiesto externo mediante *app. manifest*.
 
-   Esto genera únicamente el manifiesto externo mediante el uso de la información de *app.manifest*. Al publicar una aplicación mediante ClickOnce o COM sin registro, Visual Studio agrega *app.manifest* al proyecto y, a continuación, agrega esta opción.
+   Esto genera solo el manifiesto externo mediante la información de *app. manifest*. Al publicar una aplicación mediante ClickOnce o COM sin registro, Visual Studio agrega *app. manifest* al proyecto y, a continuación, agrega esta opción.
 
-- Usar ningún manifiesto. Crear la aplicación sin un manifiesto.
+- No usar ningún manifiesto. Cree la aplicación sin un manifiesto.
 
-   Este enfoque también es conocido como *virtualización*. Use esta opción para la compatibilidad con las aplicaciones existentes de versiones anteriores de Visual Studio.
+   Este enfoque también se conoce como *Virtualización*. Use esta opción para la compatibilidad con las aplicaciones existentes de versiones anteriores de Visual Studio.
 
-  Las nuevas propiedades están disponibles en el **aplicación** página del Diseñador de proyectos (proyectos de Visual C# solo) y en el formato de archivo de proyecto de MSBuild.
+  Las nuevas propiedades están disponibles en la página **aplicación** del diseñador de proyectos (solo para proyectos de Visual C#) y en el formato de archivo de proyecto de MSBuild.
 
-  El método para configurar la generación del manifiesto de UAC en el IDE de Visual Studio difiere según el tipo de proyecto (Visual C# o Visual Basic).
+  El método para configurar la generación de manifiestos de UAC en el IDE de Visual Studio difiere según el tipo de proyecto (Visual C# o Visual Basic).
 
-  * Para obtener información sobre cómo configurar proyectos de Visual C# para la generación de manifiestos, consulte [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).
+  * Para obtener información sobre la configuración de proyectos de Visual C# para la generación de manifiestos, vea [Página de aplicación, diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-  * Para obtener información sobre cómo configurar proyectos de Visual Basic para la generación de manifiestos, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+  * Para obtener información sobre cómo configurar proyectos de Visual Basic para la generación de manifiestos, vea [Página de aplicación, diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
-## <a name="see-also"></a>Vea también
-- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>Consulte también
+- [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Permisos de usuario y Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
 - [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; elemento (implementación ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento publisherIdentity (implementación ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62927544"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (implementación ClickOnce)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;elemento publisherIdentity (implementación ClickOnce)
 Contiene información sobre el editor que firmó este manifiesto de implementación.
 
 ## <a name="syntax"></a>Sintaxis
@@ -36,12 +36,12 @@ Contiene información sobre el editor que firmó este manifiesto de implementaci
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos y atributos
- El `publisherIdentity` elemento es necesario para los manifiestos firmados. En la tabla siguiente se muestra los atributos que el `publisherIdentity` admite el elemento.
+ El `publisherIdentity` elemento es necesario para los manifiestos firmados. En la tabla siguiente se muestran los atributos que `publisherIdentity` admite el elemento.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`name`|Obligatorio. Describe la identidad de la entidad que publicó la aplicación.|
-|`issuerKeyHash`|Obligatorio. Contiene el hash SHA-1 de la clave pública del emisor del certificado.|
+|`name`|Necesario. Describe la identidad de la entidad que publicó esta aplicación.|
+|`issuerKeyHash`|Necesario. Contiene el hash de SHA-1 de la clave pública del emisor del certificado.|
 
 #### <a name="parameters"></a>Parámetros
 
@@ -49,7 +49,7 @@ Contiene información sobre el editor que firmó este manifiesto de implementaci
 
 ## <a name="exceptions"></a>Excepciones
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="requirements"></a>Requisitos
 

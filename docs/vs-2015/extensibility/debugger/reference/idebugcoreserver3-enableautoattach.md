@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
+title: 'IDebugCoreServer3:: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 45362c9456b99d6cec0af01dcb29844d02363a27
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569800"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Habilita la asociación automática para los motores de depuración especificado.  
+Habilita la Asociación automática para los motores de depuración especificados.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,22 +46,22 @@ int EnableAutoAttach(
   
 #### <a name="parameters"></a>Parámetros  
  `rgguidSpecificEngines`  
- [in] Matriz de GUID para cada motor de depuración que se va a marcar como asociar en automático.  
+ de Matriz de GUID de cada motor de depuración que se va a marcar como asociación automática.  
   
  `celtSpecificEngines`  
- [in] El número de motores especificado en `rgguidSpecificEngines`.  
+ de El número de motores especificado en `rgguidSpecificEngines` .  
   
  `pszStartPageUrl`  
- [in] La dirección URL de inicio a usar al adjuntar en automático.  
+ de Dirección URL de inicio que se va a usar al adjuntar automáticamente.  
   
  `pbstrSessionID`  
- [out] Identificador de la sesión que estaba conectado a la automática.  
+ enuncia IDENTIFICADOR de la sesión que se adjuntó automáticamente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error. Un código de error es `E_AUTO_ATTACH_NOT_REGISTERED`, lo que indica que el generador de clases auto-attach no se ha registrado.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error. Un código de error es `E_AUTO_ATTACH_NOT_REGISTERED` , que indica que el generador de clases de asociación automática no se ha registrado.  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando se inicia un programa asociado con la dirección URL especificada, los motores de depuración especificado se inicia automáticamente y se adjuntan.  
+ Cuando se inicia un programa asociado a la dirección URL especificada, los motores de depuración especificados se inician y adjuntan automáticamente.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

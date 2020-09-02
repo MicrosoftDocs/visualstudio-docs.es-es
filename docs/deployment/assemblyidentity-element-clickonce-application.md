@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
+title: '&lt;assemblyIdentity &gt; (elemento, aplicación ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900672"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; elemento (aplicación ClickOnce)
-Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación.
+# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity &gt; (elemento, aplicación ClickOnce)
+Identifica la aplicación implementada en una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,20 +40,20 @@ Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../deploymen
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos y atributos
- El `assemblyIdentity` elemento es necesario. No contiene elementos secundarios y tiene los siguientes atributos.
+ El elemento `assemblyIdentity` es obligatorio. No contiene elementos secundarios y tiene los atributos siguientes.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`Name`|Obligatorio. Identifica el nombre de la aplicación.<br /><br /> Si `Name` contiene caracteres especiales, como las comillas simples o dobles, es posible que no activa la aplicación.|
-|`Version`|Obligatorio. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|
-|`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes de la `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública que se usa para firmar el catálogo debe ser 2048 bits o superior.<br /><br /> Aunque al firmar un ensamblado es opcional pero recomendado, este atributo es necesario. Si un ensamblado está firmado, debe copiar un valor de un ensamblado autofirmado o usar un valor "ficticio" de todos los ceros.|
-|`processorArchitecture`|Obligatorio. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|
-|`language`|Obligatorio. Identifica los códigos de idioma de dos partes (por ejemplo, `en-US`) del ensamblado. Este elemento está en el `asmv2` espacio de nombres. Si no se especifica, el valor predeterminado es `neutral`.|
+|`Name`|Necesario. Identifica el nombre de la aplicación.<br /><br /> Si `Name` contiene caracteres especiales, como comillas simples o dobles, puede que la aplicación no se active.|
+|`Version`|Necesario. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|
+|`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública que se usa para firmar el catálogo debe ser de 2048 bits o superior.<br /><br /> Aunque se recomienda la firma de un ensamblado, pero es opcional, este atributo es obligatorio. Si un ensamblado está sin firmar, debe copiar un valor de un ensamblado autofirmado o usar un valor "ficticio" de todos los ceros.|
+|`processorArchitecture`|Necesario. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para windows de 32 bits, `IA64` para Windows de 64 bits y `Itanium` para procesadores Itanium de Intel 64 bits.|
+|`language`|Necesario. Identifica los códigos de idioma de dos partes (por ejemplo, `en-US` ) del ensamblado. Este elemento está en el `asmv2` espacio de nombres. Si no se especifica, el valor predeterminado es `neutral` .|
 
 ## <a name="examples"></a>Ejemplos
 
 ### <a name="description"></a>Descripción
- En el ejemplo de código siguiente se ilustra un `assemblyIdentity` elemento en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).
+ En el ejemplo de código siguiente se muestra un `assemblyIdentity` elemento en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. Este ejemplo de código forma parte de un ejemplo más grande proporcionado en el [manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).
 
 ### <a name="code"></a>Código
 
@@ -67,6 +67,6 @@ Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../deploymen
   type="win32" />
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
-- [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)
+- [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)

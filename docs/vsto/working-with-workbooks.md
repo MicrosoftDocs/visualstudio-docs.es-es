@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62814693"
 ---
 # <a name="work-with-workbooks"></a>Trabajar con libros
@@ -25,21 +25,21 @@ ms.locfileid: "62814693"
 
 |Tarea|Procedimiento|
 |----------|---------------|
-|Crear un libro nuevo.|[Cómo: Crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)|
-|Abrir un libro específico.|[Cómo: Abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)|
-|Cerrar un libro específico y guardar los cambios.|[Cómo: Cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)|
-|Guardar los libros en formatos de Excel o en formato XML.|[Cómo: Guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)|
+|Crear un libro nuevo.|[Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)|
+|Abrir un libro específico.|[Cómo: abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)|
+|Cerrar un libro específico y guardar los cambios.|[Cómo: cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)|
+|Guardar los libros en formatos de Excel o en formato XML.|[Cómo: guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)|
 |Pasar el foco al libro actual o a un libro diferente.|
-|[Cómo: Proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md)|
-|Obtener una colección de archivos de libro utilizados recientemente.|[Cómo: Lista de usados recientemente mediante programación los archivos de libro](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
-|Abrir archivos de texto como libros.|[Cómo: Abrir archivos de texto mediante programación como libros](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
+|[Cómo: proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md)|
+|Obtener una colección de archivos de libro utilizados recientemente.|[Cómo: mostrar los archivos de libro usados recientemente mediante programación](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
+|Abrir archivos de texto como libros.|[Cómo: abrir archivos de texto como libros mediante programación](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
 
- Para obtener más información acerca de las tareas de Excel y el modelo de objetos de Excel, vea [información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md).
+ Para obtener más información sobre las tareas de Excel y el modelo de objetos de Excel, vea [información general](../vsto/excel-object-model-overview.md)sobre el modelo de objetos de Excel.
 
  En algunos casos, los métodos con los que lleva a cabo estas tareas en los complementos de VSTO son distintos de los métodos con los que las lleva a cabo en las personalizaciones de nivel de documento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Trabajar con rangos](../vsto/working-with-ranges.md)
-- [Utilizar controles de Windows Forms en hojas de cálculo de Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)
+- [Usar controles de Windows Forms en hojas de cálculo de Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)

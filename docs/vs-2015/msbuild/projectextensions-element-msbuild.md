@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551263"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
@@ -32,7 +32,7 @@ ms.locfileid: "62551263"
 Permite que los archivos del proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] contengan información no relativa a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] omitirá cualquier contenido de un elemento `ProjectExtensions`.  
   
  \<Project>  
- \<ProjectExtensions >  
+ \<ProjectExtensions>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,10 +46,10 @@ Permite que los archivos del proyecto [!INCLUDE[vstecmsbuild](../includes/vstecm
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
 ### <a name="attributes"></a>Atributos  
- Ninguna  
+ Ninguno  
   
 ### <a name="child-elements"></a>Elementos secundarios  
- Ninguna  
+ Ninguno  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
@@ -75,6 +75,6 @@ Permite que los archivos del proyecto [!INCLUDE[vstecmsbuild](../includes/vstecm
 </ProjectExtensions>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)  
+## <a name="see-also"></a>Consulte también  
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576413"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Designa los tipos de código thunk.  
+Designa tipos de código thunk.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,32 +43,32 @@ typedef enum THUNK_ORDINAL { 
   
 ## <a name="elements"></a>Elementos  
  THUNK_ORDINAL_NOTYPE  
- Thunk estándar.  
+ Código thunk estándar.  
   
  THUNK_ORDINAL_ADJUSTOR  
- Un `this` código thunk ajustador.  
+ `this`Código thunk del Ajustador.  
   
  THUNK_ORDINAL_VCALL  
  Código thunk de llamada virtual.  
   
  THUNK_ORDINAL_PCODE  
- Código thunk de código.  
+ Código thunk de P-Code.  
   
  THUNK_ORDINAL_LOAD  
- Código thunk de carga de retraso.  
+ Código thunk de carga retrasada.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Código thunk de cama elástica incremental (un código thunk de cama elástica se usa para hacer rebotar la llamadas desde el espacio de memoria de uno a otro).  
+ Código thunk de Trampoline incremental (un código thunk de Trampoline se usa para rebotar las llamadas de un espacio de memoria a otro).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- Código thunk cama elástica de punto de bifurcación.  
+ Punto de bifurcación Trampoline thunk.  
   
 ## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración se devuelven en una llamada a la [Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) método.  
+ Los valores de esta enumeración se devuelven desde una llamada al método [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: cvconst.h  
+ Encabezado: cvconst. h  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

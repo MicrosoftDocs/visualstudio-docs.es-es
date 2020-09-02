@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6112a4580a68a98407723afab1ec3310d0f1cca9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62574806"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
@@ -36,21 +36,21 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>Parámetros  
  `index`  
- [in] El índice de la entrada de tabla en el intervalo de 0 a `count`-1, donde `count` devuelto por la [Idiatable](../../debugger/debug-interface-access/idiatable-get-count.md)método.  
+ de Índice de la entrada de tabla en el intervalo comprendido entre 0 y `count` -1, donde `count` es devuelto por el método [IDiaTable:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md).  
   
  `element`  
- [out] Devuelve un `IUnknown` objeto que representa la entrada de la tabla especificada.  
+ enuncia Devuelve un `IUnknown` objeto que representa la entrada de la tabla especificada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Una tabla representa una colección de objetos. En función de esos objetos, se puede convertir el parámetro de elemento en la interfaz adecuada. Por ejemplo, si una tabla contiene [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objetos, a continuación, se puede convertir el parámetro de elemento en el `IDiaSegment` interfaz.  
+ Una tabla representa una colección de objetos. Dependiendo de estos objetos, el parámetro de elemento se puede convertir en la interfaz adecuada. Por ejemplo, si una tabla contiene objetos [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) , el parámetro Element se puede convertir a la `IDiaSegment` interfaz.  
   
- Es un enfoque más común para llamar a la `QueryInterface` método en el [IDiaTable](../../debugger/debug-interface-access/idiatable.md) interfaz para la interfaz de enumerador correspondiente y use métodos específicos del enumerador para tener acceso al contenido de la tabla. Consulte la [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfaz para obtener un ejemplo.  
+ Es un enfoque más común llamar al `QueryInterface` método en la interfaz [IDiaTable](../../debugger/debug-interface-access/idiatable.md) para la interfaz del enumerador adecuada y usar los métodos específicos del enumerador para tener acceso al contenido de la tabla. Vea la interfaz [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) para obtener un ejemplo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [IDiaTable:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

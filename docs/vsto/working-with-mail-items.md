@@ -16,27 +16,27 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815439"
 ---
 # <a name="work-with-mail-items"></a>Trabajar con elementos de correo
-  La <xref:Microsoft.Office.Interop.Outlook.MailItem> clase contiene los métodos y las propiedades que se usa para realizar tareas con mensajes de correo electrónico.
+  La <xref:Microsoft.Office.Interop.Outlook.MailItem> clase contiene los métodos y las propiedades que se usan para realizar tareas con mensajes de correo electrónico.
 
 |Tarea|Procedimiento|
 |----------|---------------|
-|Crear un mensaje de correo electrónico.|[Cómo: Crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)|
-|Enviar un mensaje de correo electrónico.|[Cómo: Enviar correo electrónico](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|
-|Responder a mensajes de correo electrónico nuevo con una acción personalizada.|[Cómo: Realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|
-|Guardar datos adjuntos.|[Cómo: Guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|
-|Agregar datos adjuntos|[Cómo: Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|
-|Recorrer en iteración todos los mensajes no leídos.|[Cómo: Recuperar los mensajes no leídos de la Bandeja de entrada mediante programación](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|
+|Cree un mensaje de correo electrónico.|[Cómo: crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)|
+|Enviar un mensaje de correo electrónico.|[Cómo: enviar correo electrónico mediante programación](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|
+|Responder a los nuevos mensajes de correo electrónico con una acción personalizada.|[Cómo: realizar acciones al recibir un mensaje de correo electrónico mediante programación](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|
+|Guardar datos adjuntos.|[Cómo: guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|
+|Agregar datos adjuntos|[Cómo: adjuntar archivos a elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|
+|Recorrer en iteración todos los mensajes no leídos.|[Cómo: recuperar mensajes sin leer de la bandeja de entrada mediante programación](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|
 
- Para obtener más información sobre las tareas de Outlook y el modelo de objetos de Outlook, consulte [información general sobre el modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md).
+ Para obtener más información sobre las tareas de Outlook y el modelo de objetos de Outlook, vea [Introducción al modelo de objetos](../vsto/outlook-object-model-overview.md)de Outlook.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con elementos de contacto](../vsto/working-with-contact-items.md)
 - [Trabajar con carpetas](../vsto/working-with-folders.md)
 - [Trabajar con elementos de calendario](../vsto/working-with-calendar-items.md)

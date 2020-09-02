@@ -1,5 +1,5 @@
 ---
-title: Referencia a ClickOnce | Microsoft Docs
+title: Referencia de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,17 +16,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900331"
 ---
 # <a name="clickonce-reference"></a>Referencia a ClickOnce
-Las páginas siguientes describen la estructura de los archivos XML que se utiliza para representar las aplicaciones ClickOnce.
+En las páginas siguientes se describe la estructura de los archivos XML utilizados para representar aplicaciones ClickOnce.
 
 ## <a name="in-this-section"></a>En esta sección
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
 
  Enumera y describe los elementos y atributos que componen un manifiesto de aplicación.
 
@@ -36,23 +36,23 @@ Las páginas siguientes describen la estructura de los archivos XML que se utili
 
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
 
- Enumera los elementos de archivo de paquete y del producto.
+ Enumera los elementos de archivo de producto y paquete.
 
  [Referencia de la API no administrada de ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)
 
- Las listas de API públicas no administradas de dfshim.dll.
+ Muestra las API públicas no administradas de dfshim.dll.
 
 ## <a name="reference"></a>Referencia
 
 ## <a name="related-sections"></a>Secciones relacionadas
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
 
- Proporciona información conceptual detallada sobre la implementación ClickOnce.
+ Proporciona información conceptual detallada sobre la implementación de ClickOnce.
 
 <xref:System.Deployment.Application>
 
- Proporciona vínculos para hacer referencia a la documentación de las clases públicas que admiten ClickOnce en código administrado.
+ Proporciona vínculos a la documentación de referencia de las clases públicas que admiten ClickOnce dentro del código administrado.
 
- [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
+ [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
 
- Proporciona tutoriales y cómo-a la que realizar tareas de ClickOnce.
+ Proporciona tutoriales y procedimientos que realizan tareas de ClickOnce.

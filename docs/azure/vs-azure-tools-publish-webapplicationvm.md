@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572290"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (script de Windows PowerShell)
@@ -33,79 +33,79 @@ Publish-WebApplicationVM
 ### <a name="configuration"></a>Configuración
 La ruta de acceso al archivo de configuración JSON que describe los detalles de la implementación.
 
-| Alias | ninguna |
+| Alias | None |
 | --- | --- |
-| ¿Obligatorio? |true |
+| ¿Necesario? |true |
 | Posición |con nombre |
-| Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |None |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 Nombre de la suscripción de Azure en la que desea crear la máquina virtual.
 
-| Alias | ninguna |
+| Alias | None |
 | --- | --- |
-| ¿Obligatorio? |False |
+| ¿Necesario? |false |
 | Posición |con nombre |
 | Valor predeterminado |Utiliza la primera suscripción en el archivo de suscripción |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-Ruta de acceso al paquete de implementación web para publicar en la máquina virtual. Puede crear este paquete mediante el Asistente de publicación web en Visual Studio. Vea [Cómo: Creación de un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
+Ruta de acceso al paquete de implementación web para publicar en la máquina virtual. Puede crear este paquete mediante el Asistente de publicación web en Visual Studio. Consulte [Cómo crear un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
 
-| Alias | ninguna |
+| Alias | None |
 | --- | --- |
-| ¿Obligatorio? |False |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |None |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
 Si es true, permite el uso de certificados que no están firmados por una entidad de certificación raíz de confianza.
 
-| Alias | ninguna |
+| Alias | None |
 | --- | --- |
-| ¿Obligatorio? |False |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |False |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |false |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ### <a name="vmpassword"></a>VMPassword
 Credenciales de la cuenta para la máquina virtual. Ejemplo: -VMPassword @{Name = "admin"; Password = "contraseña"}
 
-| Alias | ninguna |
+| Alias | None |
 | --- | --- |
-| ¿Obligatorio? |False |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |None |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
 Credenciales para la base de datos SQL en Azure. Ejemplo: -DatabaseServerPassword @{Name = "admin"; Password = "contraseña"}
 
-| Alias | ninguna |
+| Alias | None |
 | --- | --- |
-| ¿Obligatorio? |False |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |None |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Si es true, imprimir mensajes del script a la secuencia de salida.
 
-| Alias | ninguna |
+| Alias | None |
 | --- | --- |
-| ¿Obligatorio? |False |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |False |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |false |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ## <a name="remarks"></a>Comentarios
 Para obtener una explicación completa de cómo usar el script para crear entornos de desarrollo y pruebas, consulte [Usar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas](vs-azure-tools-publishing-using-powershell-scripts.md).
