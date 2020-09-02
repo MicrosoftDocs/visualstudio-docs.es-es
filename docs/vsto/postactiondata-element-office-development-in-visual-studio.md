@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541874"
 ---
 # <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento postActionData (desarrollo de Office en Visual Studio)
@@ -51,7 +51,7 @@ ms.locfileid: "85541874"
 </vstav3:postActionData>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)

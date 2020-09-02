@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar un Control ActiveX | Documentos de Microsoft
+title: Procedimiento Depuración de un control ActiveX | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,17 +26,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704464"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedimiento Depuración de un control ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Para depurar el control ActiveX, debe especificar un contenedor (ejecutable) en el que ejecutar el control.  
   
@@ -44,7 +44,7 @@ NOTA]
   
 1. En el Explorador de soluciones, seleccione el proyecto.  
   
-2. Desde el **vista** menú, elija **páginas de propiedades**.  
+2. En el menú **Ver**, seleccione **Páginas de propiedades**.  
   
 3. En el cuadro de diálogo **Páginas de propiedades del proyecto**, abra la carpeta **Propiedades de configuración** y seleccione **Depuración**.  
   
@@ -58,8 +58,8 @@ NOTA]
   
      Si no especifica ningún contenedor en el cuadro de diálogo **Páginas de propiedades del proyecto**, puede especificarlo al iniciar la depuración. Cuando se selecciona un comando de ejecución para iniciar la depuración, aparece el [cuadro de diálogo Archivo ejecutable para sesión de depuración](../debugger/executable-for-debugging-session-dialog-box.md). Especifique el nombre de la ruta de acceso del contenedor en el cuadro de diálogo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Controles ActiveX](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [Probar propiedades y eventos con un contenedor de prueba](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
- [Depuración de COM y ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Depuración COM y ActiveX](../debugger/com-and-activex-debugging.md)   
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)

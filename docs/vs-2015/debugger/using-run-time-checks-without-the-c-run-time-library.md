@@ -1,5 +1,5 @@
 ---
-title: Uso de tiempo de ejecución comprueba sin la biblioteca de tiempo de ejecución de C | Microsoft Docs
+title: Uso de comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,16 +28,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1eefddd21817360736b9f20f74ca3dc8a83683fe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684019"
 ---
-# <a name="using-run-time-checks-without-the-c-run-time-library"></a>Utilizar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C
+# <a name="using-run-time-checks-without-the-c-run-time-library"></a>Uso de comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si vincula el programa sin la biblioteca de tiempo de ejecución de C, utilizando **/NODEFAULTLIB**y desea utilizar comprobaciones en tiempo de ejecución, debe vincular el programa con RunTmChk.lib.  
+Si vincula el programa sin la biblioteca en tiempo de ejecución de C, mediante **/NODEFAULTLIB**, y quiere utilizar las comprobaciones en tiempo de ejecución, debe vincular el programa con RunTmChk.lib.  
   
  `_RTC_Initialize` inicializa el programa para las comprobaciones en tiempo de ejecución. Si no vincula el programa con la biblioteca en tiempo de ejecución de C, debe comprobar si el programa se ha compilado con las comprobaciones de errores en tiempo de ejecución antes de llamar a `_RTC_Initialize`, tal como:  
   
@@ -69,5 +69,5 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
   
  Una vez instalada la función de generación de informes de errores predeterminada, puede instalar otras funciones del mismo tipo con `_RTC_SetErrorFuncW`. Para obtener más información, vea [_RTC_SetErrorFuncW](https://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Cómo: Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)

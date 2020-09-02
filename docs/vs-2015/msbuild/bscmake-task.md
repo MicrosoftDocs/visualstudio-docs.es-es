@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ed246255fc20b9660d24f234767fdeb451102f8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684546"
 ---
 # <a name="bscmake-task"></a>BscMake (Tarea)
@@ -34,21 +34,21 @@ ms.locfileid: "65684546"
 IMPORTANTE]
 > El IDE de Visual Studio ya no utiliza bscmake. Desde Visual Studio Desde Visual Studio 2008, la información de examen y de símbolos se almacena automáticamente en un archivo .sdf en la carpeta de soluciones.  
   
- Ajusta la herramienta Utilidad de mantenimiento de información de examen de Microsoft (bscmake.exe).  La herramienta bscmake.exe genera un archivo de información de examen (.bsc) a partir de archivos de explorador de origen (.sbr) que se crean durante la compilación. Use el **Examinador de objetos** para ver un archivo .bsc. Para más información, vea [Referencia de BSCMAKE](https://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13).  
+ Ajusta la herramienta Utilidad de mantenimiento de información de examen de Microsoft (bscmake.exe).  La herramienta bscmake.exe genera un archivo de información de examen (.bsc) a partir de archivos de explorador de origen (.sbr) que se crean durante la compilación. Use el **Examinador de objetos** para ver un archivo .bsc. Para obtener más información, vea [referencia de BSCMAKE](https://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13).  
   
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea **BscMake**. La mayoría de los parámetros de tarea corresponden a una opción de línea de comandos.  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones especificada en la línea de comando. Por ejemplo, "/*option1* /*option2* /*option#*". Use este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **BscMake**.<br /><br /> Para más información, vea las opciones en [Opciones de BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
-|**OutputFile**|Parámetro **String** opcional.<br /><br /> Especifica un nombre de archivo que invalida el nombre de archivo de salida predeterminado.<br /><br /> Para más información, vea la opción **/o** en [Opciones de BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
-|**PreserveSBR**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, fuerza una compilación no incremental. Una compilación no incremental completa tiene lugar independientemente de si existe o no un archivo .bsc, y evita que se trunquen los archivos .sbr.<br /><br /> Para más información, vea la opción **/n** en [Opciones de BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
-|**Sources**|Parámetro opcional de tipo **ITaskItem[]**.<br /><br /> Define una matriz de elementos de archivo origen de MSBuild que las tareas pueden consumir y emitir.|  
-|**SuppressStartupBanner**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia. <br /><br /> Para más información, vea la opción **/NOLOGO** en [Opciones de BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
-|**TrackerLogDirectory**|Parámetro **String** opcional.<br /><br /> Especifica el directorio de registro de seguimiento.|  
+|**AdditionalOptions**|Parámetro de **cadena** opcional.<br /><br /> Una lista de opciones especificada en la línea de comando. Por ejemplo, "/*Opción1*  / *opción2*  / *opción #*". Use este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **BscMake**.<br /><br /> Para obtener más información, vea las opciones en [Opciones de BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
+|**ArchivoDeSalida**|Parámetro de **cadena** opcional.<br /><br /> Especifica un nombre de archivo que invalida el nombre de archivo de salida predeterminado.<br /><br /> Para obtener más información, vea la opción **/o** en [Opciones de BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
+|**PreserveSBR**|Parámetro **booleano** opcional.<br /><br /> Si es `true`, fuerza una compilación no incremental. Una compilación no incremental completa tiene lugar independientemente de si existe o no un archivo .bsc, y evita que se trunquen los archivos .sbr.<br /><br /> Para obtener más información, vea la opción **/n** en [Opciones de BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
+|**Sources**|Parámetro opcional **ITaskItem []** .<br /><br /> Define una matriz de elementos de archivo origen de MSBuild que las tareas pueden consumir y emitir.|  
+|**SuppressStartupBanner**|Parámetro **booleano** opcional.<br /><br /> Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia. <br /><br /> Para obtener más información, vea la opción **/nologo** en [Opciones de BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
+|**TrackerLogDirectory**|Parámetro de **cadena** opcional.<br /><br /> Especifica el directorio de registro de seguimiento.|  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

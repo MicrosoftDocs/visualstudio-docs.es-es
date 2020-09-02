@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::LoadSymbols ? Microsoft Docs
+title: 'IDebugEngine3:: LoadSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7963d39601a0d3a90ca2daa7632902d7aa506de8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730802"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
@@ -39,10 +39,10 @@ int LoadSymbols();
  Ninguno.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario devuelve código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
- Esto carga símbolos de depuración para todos los módulos a los que hace referencia este motor de depuración. Los símbolos se cargan solo si aún no se han cargado. Los símbolos se buscan en las rutas establecidas por una llamada a [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).
+ De esta forma se cargan símbolos de depuración para todos los módulos a los que hace referencia este motor de depuración. Los símbolos solo se cargan si aún no se han cargado. Los símbolos se buscan en las rutas de acceso establecidas por una llamada a [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).
 
 ## <a name="see-also"></a>Vea también
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)

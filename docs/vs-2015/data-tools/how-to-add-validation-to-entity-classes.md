@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a68b0314f3c64ce9196b8d48a78844bc81990a92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665994"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedimiento para agregar validación a clases de entidad
@@ -33,7 +33,7 @@ ms.locfileid: "72665994"
 
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Para validar los datos mientras se modifican los valores de una columna
 
-1. Abra o cree un nuevo archivo de clases de LINQ to SQL (archivo **. dbml** ) en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
+1. Abra o cree un nuevo archivo de clases de LINQ to SQL (archivo **. dbml** ) en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
 
 2. En Object Relational Designer, haga clic con el botón secundario en la clase para la que desea agregar la validación y, a continuación, haga clic en **Ver código**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "72665994"
 
    2. Busque el método de**cambio** **en**_COLUMNNAME_para la columna a la que desea agregar la validación.
 
-   3. Se agrega un método `On`*COLUMNNAME* `Changing` a la clase parcial.
+   3. `On` *COLUMNNAME* `Changing` Se agrega un método COLUMNNAME a la clase parcial.
 
    4. Agregue el código siguiente para comprobar, en primer lugar, que se ha especificado un valor y, a continuación, para asegurar que el valor especificado para la columna es aceptable para la aplicación. El argumento `value` contiene el valor propuesto, por lo que debe agregar la lógica para confirmar que es un valor válido:
 
@@ -82,9 +82,9 @@ ms.locfileid: "72665994"
 
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Para validar datos durante la actualización de una clase de entidad
 
-1. Abra o cree un nuevo archivo de clases de LINQ to SQL (archivo **. dbml** ) en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
+1. Abra o cree un nuevo archivo de clases de LINQ to SQL (archivo **. dbml** ) en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
 
-2. Haga clic con el botón secundario en un área vacía de Object Relational Designer y haga clic en **Ver código**.
+2. Haga clic con el botón derecho del mouse en un área vacía de Object Relational Designer y, a continuación, haga clic en **Ver código**.
 
     El Editor de código se abre con una clase parcial para `DataContext`.
 
@@ -96,7 +96,7 @@ ms.locfileid: "72665994"
 
    2. Haga clic en **Actualizar**_nombredeclasedeentidad_.
 
-   3. Una `Update` método*nombredeclasedeentidad* se agrega a la clase parcial.
+   3. Un `Update` método *nombredeclasedeentidad* se agrega a la clase parcial.
 
    4. Obtenga acceso a los valores de la columna mediante el argumento `instance`, como se muestra en el código siguiente:
 
@@ -109,9 +109,9 @@ ms.locfileid: "72665994"
 
       Para proyectos de C#:
 
-   5. Dado C# que los proyectos no generan automáticamente los controladores de eventos, puede usar IntelliSense para crear el método `Update`*className* parcial.
+   5. Dado que los proyectos de C# no generan automáticamente los controladores de eventos, puede usar IntelliSense para crear el `Update` método parcial *className* .
 
-   6. Escriba `partial` y, a continuación, un espacio para obtener acceso a la lista de métodos parciales disponibles. Haga clic en el método de actualización de la clase a la que desee agregar validación. El código siguiente es similar al código que se genera al seleccionar un método parcial `Update`*className* :
+   6. Escriba `partial` y, a continuación, un espacio para obtener acceso a la lista de métodos parciales disponibles. Haga clic en el método de actualización de la clase a la que desee agregar validación. El código siguiente es similar al código que se genera al seleccionar un `Update` método parcial *className* :
 
       ```csharp
       partial void UpdateCLASSNAME(CLASSNAME instance)
@@ -124,5 +124,5 @@ ms.locfileid: "72665994"
       }
       ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [LINQ to SQL herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [validar datos](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

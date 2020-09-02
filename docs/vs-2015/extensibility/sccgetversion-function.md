@@ -1,5 +1,5 @@
 ---
-title: SccGetVersion (función) | Documentos de Microsoft
+title: Función SccGetVersion | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4e548f1f2b82a97206cdf41174a8c1c7d61e885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200048"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta función obtiene el número de versión de la API de complemento de Control de código fuente compatibles con el complemento de control de código fuente.  
+Esta función obtiene el número de versión de la API del complemento de control de código fuente compatible con el complemento de control de código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,15 +34,15 @@ LONG SccGetVersion(void);
  Ninguno.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Un `LONG` tipo de datos que contiene el número de versión de la API de complemento de Control de origen compatibles:  
+ Un `LONG` tipo de datos que contiene el número de versión de la API del complemento de control de código fuente compatible:  
   
-|WORD|DESCRIPCIÓN|  
+|WORD|Descripción|  
 |----------|-----------------|  
 |HIWORD|Versión principal|  
 |LOWORD|Versión secundaria|  
   
-## <a name="remarks"></a>Comentarios  
- Por ejemplo, si un complemento de control de origen es compatible con la versión 1.3 de la API de complemento de Control de origen, esta función debería devolver 0 x 0103.  
+## <a name="remarks"></a>Observaciones  
+ Por ejemplo, si un complemento de control de código fuente admite la versión 1,3 de la API del complemento de control de código fuente, esta función devolverá 0x0103.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

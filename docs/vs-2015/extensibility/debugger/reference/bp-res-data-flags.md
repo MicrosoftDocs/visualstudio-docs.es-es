@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68d1c0705ae7d27bf281f5d65e9385228cd36bc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153345"
 ---
-# <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
+# <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica si se está emulando el punto de interrupción de datos o implementadas en hardware.  
+Especifica si el punto de interrupción de datos se está emulando o implementando en el hardware.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,15 +44,15 @@ public enum enum_BP_RES_DATA_FLAGS { 
  Especifica que se está emulando el punto de interrupción de datos.  
   
 ## <a name="remarks"></a>Comentarios  
- Utilizado para la `dwFlags` miembro de la [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) estructura.  
+ Se utiliza para el `dwFlags` miembro de la estructura [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

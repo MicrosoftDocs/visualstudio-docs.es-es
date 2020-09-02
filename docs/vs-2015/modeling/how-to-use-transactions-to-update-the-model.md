@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd66c62d74bfe63d8376b5520b42cb20c8c0a3a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651607"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Cómo: Usar transacciones para actualizar el modelo
@@ -21,12 +21,12 @@ ms.locfileid: "72651607"
 
 Las transacciones garantizan que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan se pueden confirmar o revertir como una sola unidad.
 
- Cada vez que el código de programa modifica, agrega o elimina cualquier elemento del almacén en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de visualización y modelado, debe hacerlo dentro de una transacción. Debe haber una instancia activa de <xref:Microsoft.VisualStudio.Modeling.Transaction> asociada al almacén cuando se produce el cambio. Esto se aplica a todos los elementos del modelo, las relaciones, las formas, los diagramas y sus propiedades.
+ Cada vez que el código de programa modifica, agrega o elimina cualquier elemento del almacén en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de visualización y modelado, debe hacerlo dentro de una transacción. Debe haber una instancia activa de <xref:Microsoft.VisualStudio.Modeling.Transaction> asociada con el almacén cuando se produce el cambio. Esto se aplica a todos los elementos del modelo, las relaciones, las formas, los diagramas y sus propiedades.
 
  El mecanismo de transacción le ayuda a evitar Estados incoherentes. Si se produce un error durante una transacción, se revierten todos los cambios. Si el usuario realiza un comando Deshacer, cada transacción reciente se trata como un solo paso. El usuario no puede deshacer partes de un cambio reciente, a menos que los coloque explícitamente en transacciones independientes.
 
 ## <a name="opening-a-transaction"></a>Abrir una transacción
- El método más práctico para administrar una transacción es con una instrucción `using` que se incluye en una instrucción `try...catch`:
+ El método más práctico para administrar una transacción es con una instrucción que se incluye `using` en una `try...catch` instrucción:
 
 ```
 Store store; ...
@@ -52,13 +52,13 @@ catch (Exception ex)
 }
 ```
 
- Si se produce una excepción que impide el `Commit()` final durante los cambios, el almacén se restablecerá a su estado anterior. Esto le ayuda a asegurarse de que los errores no salen del modelo en un estado incoherente.
+ Si se produce una excepción que impide el final `Commit()` durante los cambios, el almacén se restablecerá a su estado anterior. Esto le ayuda a asegurarse de que los errores no salen del modelo en un estado incoherente.
 
- Puede realizar cualquier número de cambios dentro de una transacción. Puede abrir transacciones nuevas dentro de una transacción activa. Las transacciones anidadas deben confirmarse o revertirse antes de que finalice la transacción contenedora. Para obtener más información, vea el ejemplo de la propiedad <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>.
+ Puede realizar cualquier número de cambios dentro de una transacción. Puede abrir transacciones nuevas dentro de una transacción activa. Las transacciones anidadas deben confirmarse o revertirse antes de que finalice la transacción contenedora. Para obtener más información, vea el ejemplo de la <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> propiedad.
 
- Para que los cambios sean permanentes, debe `Commit` la transacción antes de que se elimine. Si se produce una excepción que no se detecta dentro de la transacción, el almacén se restablecerá a su estado anterior a los cambios.
+ Para que los cambios sean permanentes, debe realizar `Commit` la transacción antes de que se elimine. Si se produce una excepción que no se detecta dentro de la transacción, el almacén se restablecerá a su estado anterior a los cambios.
 
-## <a name="rolling-back-a-transaction"></a>Deshacer una transacción
+## <a name="rolling-back-a-transaction"></a>Revertir una transacción
  Para asegurarse de que el almacén permanece en o se revierte a su estado anterior a la transacción, puede usar cualquiera de estas tácticas:
 
 1. Genera una excepción que no se detecta dentro del ámbito de la transacción.
@@ -92,7 +92,7 @@ catch (Exception ex)
 
  Esto es especialmente útil para transferir información entre reglas.
 
-## <a name="transaction-state"></a>Estado de la transacción
+## <a name="transaction-state"></a>Estado de las transacciones
  En algunos casos, debe evitar propagar un cambio si el cambio se debe a deshacer o rehacer una transacción. Esto puede ocurrir, por ejemplo, si escribe un controlador de valores de propiedad que puede actualizar otro valor en el almacén. Dado que la operación de deshacer restablece todos los valores del almacén a sus Estados anteriores, no es necesario calcular los valores actualizados. Use este código:
 
 ```

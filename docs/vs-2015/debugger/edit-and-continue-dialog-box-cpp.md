@@ -1,5 +1,5 @@
 ---
-title: Editar y continuar (C++) del cuadro de diálogo | Microsoft Docs
+title: Cuadro de diálogo Editar y continuar (C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efd6d9a6628c5d5052d2195e08074e7688a71f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704159"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Cuadro de diálogo Editar y continuar (C++)
@@ -34,5 +34,5 @@ Editar y continuar no pudo aplicar los cambios realizados en el código nativo. 
   
  Puede editar el código para corregir el error durante la depuración, detener la depuración y corregir el código, o ignorar el error y continuar con la depuración. Si sigue sin realizar la corrección, los cambios de código no se aplicarán inmediatamente.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

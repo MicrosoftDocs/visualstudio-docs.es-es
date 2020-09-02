@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683011"
 ---
 # <a name="msbuild-reference"></a>Referencia de MSBuild
@@ -29,7 +29,7 @@ ms.locfileid: "65683011"
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] es el sistema de compilación para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Los siguientes vínculos conducen a temas que contienen información de referencia de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)  
  Describe los elementos XML que constituyen el formato de archivo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)  
@@ -44,7 +44,7 @@ ms.locfileid: "65683011"
  [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  Describe las propiedades reservadas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md)  
+ [Propiedades comunes del proyecto de MSBuild](../msbuild/common-msbuild-project-properties.md)  
  Describe las propiedades de proyecto que son comunes a todos los tipos de proyecto, así como propiedades que son utilizadas a menudo por determinados tipos de proyecto.  
   
  [Elementos comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-items.md)  
@@ -53,7 +53,7 @@ ms.locfileid: "65683011"
  [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md)  
  Describe los argumentos y los modificadores que se pueden utilizar con archivos .exe de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Archivos .Targets](../msbuild/msbuild-dot-targets-files.md)  
+ [. Archivos de destino](../msbuild/msbuild-dot-targets-files.md)  
  Describe el archivo .Targets que se incluye en [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Metadatos de elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md)  

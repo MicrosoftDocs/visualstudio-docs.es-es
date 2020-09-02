@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 318ae5314fe8a33e2c421c9532dafc08ceee3ca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651758"
 ---
 # <a name="how-to-print-class-diagrams-class-designer"></a>Cómo: Imprimir diagramas de clases (Diseñador de clases)
@@ -32,5 +32,5 @@ También puede imprimir un diagrama de clase mediante la función de impresión 
 
      Se imprimirá el diagrama de clases completo. Tenga en cuenta que puede que tenga que ajustar la configuración en el cuadro de diálogo Configurar página para imprimir en un tamaño adecuado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: copiar elementos del diagrama de clases en un documento de Microsoft Office (diseñador de clases)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md) [Cómo: exportar diagramas de clases como imágenes (diseñador de clases)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

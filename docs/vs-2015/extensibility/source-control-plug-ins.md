@@ -1,5 +1,5 @@
 ---
-title: Los complementos de Control de origen | Microsoft Docs
+title: Complementos de control de código fuente | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,63 +11,63 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5a99ebdf2366ce6a60a6a724afc7d742db7150f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705803"
 ---
 # <a name="source-control-plug-ins"></a>Complementos de control de código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La sección de referencia de SDK de complemento de Control de código fuente contiene la especificación de interfaz completa que permite a los sistemas de control de origen que se integra con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Especifica la sintaxis y semántica de los distintos tipos de datos y funciones que debe implementar el complemento de control de código fuente para interactuar con el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE).  
+La sección de referencia del SDK del complemento de control de código fuente contiene la especificación completa de la interfaz que permite integrar los sistemas de control de código fuente con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Especifica la sintaxis y la semántica de las distintas funciones y tipos de datos que el complemento de control de código fuente debe implementar para interactuar con el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entorno de desarrollo integrado (IDE).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)  
- Enumera las funciones que deben implementarse mediante el complemento de control de código fuente con el fin de cumplir con la API de complemento de Control de código fuente.  
+ Enumera las funciones que debe implementar el complemento de control de código fuente para poder cumplir con la API del complemento de control de código fuente.  
   
  [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)  
- Describe funciones que el complemento de control de código fuente que se utiliza para pasar información de vuelta en el IDE mientras se ejecutan algunos comandos.  
+ Describe las funciones que usa el complemento de control de código fuente para devolver información al IDE mientras se ejecutan determinados comandos.  
   
- [Enumeradores](../extensibility/enumerators.md)  
- Enumera los tipos de datos del enumerador en la API de complemento de Control de origen que debe conocer el complemento de control de código fuente.  
+ [Enumerators](../extensibility/enumerators.md)  
+ Enumera los tipos de datos de enumerador de la API del complemento de control de código fuente que debe conocer el complemento de control de código fuente.  
   
- [Marcadores de capacidad](../extensibility/capability-flags.md)  
- Describe el `SCC_CAP_xxx` marcadores, que se indican las capacidades del proveedor.  
+ [Marcas de capacidad](../extensibility/capability-flags.md)  
+ Describe las `SCC_CAP_xxx` marcas, que indican las capacidades de un proveedor.  
   
  [Marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)  
- Enumera las marcas que son útiles en el contexto de comandos concretos.  
+ Muestra las marcas que son útiles en el contexto de comandos concretos.  
   
  [Códigos de error](../extensibility/error-codes.md)  
- Enumera los valores de error comunes devueltos por las funciones como `SCCTRN`.  
+ Enumera los valores de error comunes devueltos por las funciones como `SCCTRN` .  
   
  [Cadenas utilizadas como claves para buscar un complemento de control de código fuente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)  
- Describe las teclas de acceso del registro para buscar el control de código fuente complemento.  
+ Describe las claves para tener acceso al registro para buscar el complemento de control de código fuente.  
   
  [Archivo MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)  
- Describe un archivo de cliente que contiene información opaca para el IDE, pero que está usando el complemento de control de código fuente para buscar la solución o proyecto bajo control de versiones.  
+ Describe un archivo del lado cliente que contiene información opaca para el IDE, pero que usa el complemento de control de código fuente para buscar la solución o el proyecto en el control de versiones.  
   
  [Procedimientos recomendados para implementar un complemento de control de código fuente](../extensibility/best-practices-for-implementing-a-source-control-plug-in.md)  
- Proporciona una colección de los recordatorios técnicas importante recordar mientras implementa la API de complemento de Control de código fuente.  
+ Proporciona una colección de recordatorios técnicos importantes que se deben recordar mientras se implementa la API del complemento de control de código fuente.  
   
  [Restricciones en las longitudes de cadena](../extensibility/restrictions-on-string-lengths.md)  
- Describe las limitaciones en la API de complemento de Control de código fuente en las longitudes de cadenas usadas en distintas funciones.  
+ Describe las limitaciones de la API del complemento de control de código fuente en las longitudes de las cadenas usadas en varias funciones.  
   
  [Glosario](../extensibility/source-control-plug-in-glossary.md)  
- Proporciona los términos útiles y sus definiciones para leer la documentación del SDK de complemento de Control de origen.  
+ Proporciona términos útiles y sus definiciones para leer la documentación del SDK del complemento de control de código fuente.  
   
- [Cómo: Desactivar advertencias de compatibilidad para complementos de control de código fuente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Desactivación de advertencias de compatibilidad para complementos de control de código fuente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Describe cómo deshabilitar las advertencias.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Ejemplo de complemento de Control de código fuente](https://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
- Proporciona un ejemplo de la funcionalidad de complemento de control de código fuente.  
+ [Ejemplo de complemento de control de código fuente](https://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ Proporciona una muestra de la funcionalidad del complemento de control de código fuente.  
   
  [Guía de pruebas para los complementos de control de código fuente](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
- Describe los procedimientos de pruebas relacionadas con un complemento de control de código fuente.  
+ Describe los procedimientos de prueba relacionados con un complemento de control de código fuente.  
   
  [Creación de un complemento de control de código fuente](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Describe cómo crear un complemento de control de origen que proporciona funcionalidad de control de código fuente mientras se está utilizando el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfaz de usuario de control de código fuente (UI).  
+ Describe cómo crear un complemento de control de código fuente que proporciona funcionalidad de control de código fuente mientras se usa la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfaz de usuario de control de código fuente (UI).  
   
  [Referencia de Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)  
  Presenta una lista de temas de referencia.

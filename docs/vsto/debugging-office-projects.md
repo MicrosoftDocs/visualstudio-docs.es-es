@@ -18,14 +18,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189701"
 ---
 # <a name="debug-office-projects"></a>Depurar proyectos de Office
-  Puede depurar proyectos de Office con las mismas herramientas de Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que usa para otros proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Las características del depurador[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , como la capacidad para insertar puntos de interrupción y ver variables en la ventana **Variables locales** , también están disponibles cuando se depuran proyectos de Office. Para obtener más información sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] herramientas de depuración, vea [depurar en Visual Studio](../debugger/debugger-feature-tour.md).
+  Puede depurar proyectos de Office con las mismas herramientas de Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que usa para otros proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Las características del depurador[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , como la capacidad para insertar puntos de interrupción y ver variables en la ventana **Variables locales** , también están disponibles cuando se depuran proyectos de Office. Para obtener más información sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] las herramientas de depuración, vea [depurar en Visual Studio](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Para simplificar la depuración, cierre todas las instancias abiertas de la aplicación de Office antes de compilarla y depurarla.
@@ -35,7 +35,7 @@ ms.locfileid: "73189701"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="start-and-stop-the-debugger"></a>Iniciar y detener el depurador
- Puede empezar a depurar un proyecto de Office de la misma manera que inicia la depuración de otros proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]; por ejemplo, puede presionar la tecla **F5** . Cuando se inicia la depuración de un proyecto de complemento de VSTO, se inicia un nuevo proceso para la aplicación de Office de destino y se carga el complemento de VSTO.
+ Puede empezar a depurar un proyecto de Office de la misma manera que inicia la depuración [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] de otros proyectos; por ejemplo, puede presionar la tecla **F5** . Cuando se inicia la depuración de un proyecto de complemento de VSTO, se inicia un nuevo proceso para la aplicación de Office de destino y se carga el complemento de VSTO.
 
  Al iniciar la depuración de un proyecto de nivel de documento, el documento o libro se abre en un nuevo proceso de Word o Excel.
 
@@ -51,7 +51,7 @@ ms.locfileid: "73189701"
  Si desea depurar el complemento de VSTO empleando una versión diferente de Office (2013 o 2016), abra el **Diseñador de proyectos**y, en la ficha **Depurar** , elija el botón de opción **Iniciar programa externo** . A continuación, busque la ubicación del ejecutable de la aplicación de Office apropiada.
 
 ## <a name="f10-and-f11-behavior"></a>Comportamiento de F10 y F11
- Cuando se inicia la depuración de un proyecto de Office, **F10** y **F11** no tienen el mismo comportamiento que cuando se inicia la depuración de otros Visual Basic o C# proyectos. En los proyectos de Visual Basic o C#, el depurador se detiene en la función principal; en los proyectos de Office, Visual Studio no tiene control sobre la función principal de la aplicación de Office. Sin embargo, durante la depuración, **F10** y **F11** tienen las mismas funciones que en C# los proyectos de Visual Basic y.
+ Al iniciar la depuración de un proyecto de Office, **F10** y **F11** no tienen el mismo comportamiento que cuando se inicia la depuración de otros proyectos de Visual Basic o C#. En los proyectos de Visual Basic o C#, el depurador se detiene en la función principal; en los proyectos de Office, Visual Studio no tiene control sobre la función principal de la aplicación de Office. Sin embargo, durante la depuración, **F10** y **F11** tienen las mismas funciones que en los proyectos de Visual Basic y C#.
 
 ## <a name="display-exceptions"></a>Mostrar excepciones
  Debido al modo en que el código administrado interactúa con el código no administrado, Visual Studio no muestra los errores que producen las aplicaciones de Microsoft Office. Por ejemplo, si un complemento de VSTO creado con las herramientas de desarrollo de Office en Visual Studio produce una excepción, la aplicación Microsoft Office continuará sin mostrar un error. Para ver estos errores, configure el depurador para que se interrumpa al aparecer excepciones de Common Language Runtime. Para obtener más información, vea [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).
@@ -95,7 +95,7 @@ ms.locfileid: "73189701"
 
  Si desea mostrar cada error en un cuadro de mensaje, cree una variable de entorno denominada `VSTO_SUPPRESSDISPLAYALERTS` y establézcala en 0 (cero). Para suprimir los mensajes, puede eliminar la variable de entorno o establecerla en 1 (uno).
 
- Si desea escribir los errores en un archivo de registro, cree una variable de entorno denominada `VSTO_LOGALERTS` y establézcala en 1 (uno). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea el archivo de registro en la carpeta que contiene el manifiesto de implementación del complemento de VSTO o en la carpeta que contiene el documento o libro asociado con la personalización. Si se produce un error, el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea el archivo de registro en la carpeta *% temp%* local. Para complementos de VSTO de nivel de aplicación, el nombre predeterminado es *nombre de complemento*.vsto.log. Para los proyectos de nivel de documento, el nombre del archivo de registro es *nombre de documento*.*extensión*.log, por ejemplo, ExcelWorkbook1.xlsx.log. Para detener el registro de errores, elimine la variable de entorno o establézcala en 0 (cero).
+ Si desea escribir los errores en un archivo de registro, cree una variable de entorno denominada `VSTO_LOGALERTS` y establézcala en 1 (uno). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea el archivo de registro en la carpeta que contiene el manifiesto de implementación del complemento de VSTO o en la carpeta que contiene el documento o libro asociado con la personalización. Si se produce un error, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea el archivo de registro en la carpeta *% temp%* local. Para complementos de VSTO de nivel de aplicación, el nombre predeterminado es *nombre de complemento*.vsto.log. Para los proyectos de nivel de documento, el nombre del archivo de registro es *nombre de documento*.*extensión*.log, por ejemplo, ExcelWorkbook1.xlsx.log. Para detener el registro de errores, elimine la variable de entorno o establézcala en 0 (cero).
 
 ## <a name="see-also"></a>Vea también
 

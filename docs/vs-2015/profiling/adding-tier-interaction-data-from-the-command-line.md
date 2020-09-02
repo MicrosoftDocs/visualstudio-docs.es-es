@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705832"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
@@ -32,13 +32,13 @@ La generación de perfiles de interacción de capas proporciona información adi
   
  La generación de perfiles de interacción de capas se puede recopilar usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] y [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
- **Recopilación de datos de TIP en un equipo remoto**  
+ **Recopilar datos de TIP en un equipo remoto**  
   
- Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs\_profiler\_**_\<plataforma>_**\_**_\<lenguaje>_**.exe** de la carpeta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Herramientas remotas para Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+ Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs \_ Profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** de la carpeta _% VSInstallDir%_**\team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Herramientas remotas para Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  **Informes TIP**  
   
- Los datos de interacción de capas solo se pueden ver en el IDE de [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]. Los informes de interacción de capas basados en archivos a través de [VSPerfReport](../profiling/vsperfreport.md) no están disponibles.  
+ Los datos de interacción de capas solo se pueden ver en el IDE de [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]. Los informes de interacción de capas basados en archivos no están disponibles en [VSPerfReport](../profiling/vsperfreport.md) .  
   
 ## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Agregar datos de interacción de capas con VSPerfCmd  
  La herramienta de línea de comandos VSPerfASPNETCmd le permite tener acceso a la funcionalidad completa disponible en las herramientas de generación de perfiles. Para agregar la interacción de capas a los datos de generación de perfiles recopilados mediante VSPerfCmd, debe usar la utilidad **VSPerfCLREnv** para establecer y quitar las variables de entorno que activan los datos de interacción de capas. Las opciones que especifique y los procedimientos necesarios para recopilar datos dependen del tipo de aplicación con que esté generando perfiles.  
@@ -79,7 +79,7 @@ La generación de perfiles de interacción de capas proporciona información adi
    vsperfclrenv /off  
    ```  
   
-   Para obtener más información, consulte [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md).  
+   Para obtener más información, vea [generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md).  
   
 ### <a name="profiling-services"></a>Generar perfiles para servicios  
  Para generar perfiles para servicios, incluidas las aplicaciones [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], utilice la opción **VSPerfClrEnv /GlobalInteractionOn** para establecer las variables de entorno y la opción **VSPerfClrEnv /GlobalInteractionOff** para quitarlas.  
@@ -140,9 +140,9 @@ La generación de perfiles de interacción de capas proporciona información adi
   
     Para obtener más información, consulte uno de los temas siguientes:  
   
-    [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
-    [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)  
+    [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Agregar datos de interacción de capas con VSPerfASPNETCmd  
  La herramienta de línea de comandos VSPerfASPNETCmd le permite generar perfiles fácilmente para aplicaciones web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. En comparación con la herramienta de línea de comandos **VSPerfCmd**, tiene menos opciones, no debe establecerse ninguna variable de entorno y no es necesario reiniciar el equipo. Estas características de VSPerfASPNETCmd hacen que la recopilación de datos de interacción de capas sea extraordinariamente sencilla.  
@@ -153,4 +153,4 @@ La generación de perfiles de interacción de capas proporciona información adi
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- Para obtener más información sobre VSPerfASPNETCmd, consulte [Generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+ Para obtener más información sobre VSPerfASPNETCmd, consulte [generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

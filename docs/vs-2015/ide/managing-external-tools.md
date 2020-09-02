@@ -58,10 +58,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a9ebda81f013f42aeac23c9c0a8cc5a0a41f5f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651349"
 ---
 # <a name="managing-external-tools"></a>Administrar herramientas externas
@@ -85,10 +85,10 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
 6. Editor de configuración de servicios WCF: permite crear y modificar opciones de configuración para servicios WCF.
 
 > [!WARNING]
-> Puede que aparezca una lista diferente de herramientas externas, según la edición de Visual Studio que tenga instalada y el perfil de configuración que haya aplicado. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Puede que aparezca una lista diferente de herramientas externas, según la edición de Visual Studio que tenga instalada y el perfil de configuración que haya aplicado. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="adding-new-tools"></a>Agregar nuevas herramientas
- Puede agregar una herramienta externa al menú **Herramientas**. Abra el cuadro de diálogo **Herramientas externas**, haga clic en **Agregar** y rellene la información. Por ejemplo, la entrada siguiente hace que el Explorador de Windows se abra en el directorio del archivo que tiene abierto actualmente en Visual Studio:
+ Puede agregar una herramienta externa al menú **Herramientas**. Abra el cuadro de diálogo **herramientas externas** , haga clic en **Agregar**y, a continuación, rellene la información. Por ejemplo, la entrada siguiente hace que el Explorador de Windows se abra en el directorio del archivo que tiene abierto actualmente en Visual Studio:
 
 1. Título: Abrir ubicación del archivo
 
@@ -102,7 +102,7 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
 > [!NOTE]
 > La barra de estado del IDE muestra las variables Línea actual y Columna actual para indicar dónde se encuentra el punto de inserción en el Editor de código activo. La variable Texto actual devuelve el texto o el código seleccionado en dicha ubicación.
 
-|Name|Argumento|Descripción|
+|Nombre|Argumento|Descripción|
 |----------|--------------|-----------------|
 |Ruta de acceso del elemento|$(ItemPath)|Nombre de archivo completo del archivo actual (unidad + ruta de acceso + nombre de archivo).|
 |Directorio del elemento|$(ItemDir)|Directorio del archivo actual (unidad + ruta de acceso).|
@@ -115,11 +115,11 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
 |Directorio de destino|$(TargetDir)|Directorio del elemento que se va a compilar.|
 |Nombre de destino|$(TargetName)|Nombre de archivo del elemento que se va a compilar.|
 |Extensión de destino|$(TargetExt)|Extensión del nombre de archivo del elemento que se va a compilar.|
-|Directorio binario|$(BinDir)|Ubicación final del archivo binario que se va a compilar (definida como unidad + ruta de acceso). Por ejemplo: **\\...\Mis documentos\Visual Studio \<Versión>\\<NombreDeProyecto\>\bin\debug**|
+|Directorio binario|$(BinDir)|Ubicación final del archivo binario que se va a compilar (definida como unidad + ruta de acceso). Por ejemplo:** \\ . ..\Mis documentos\Visual Studio \<Version> \\<nombreDeProyecto \> \bin\debug**|
 |Directorio del proyecto|$(ProjDir)|Directorio del proyecto actual (unidad + ruta de acceso).|
 |Nombre de archivo del proyecto|$(ProjFileName)|Nombre de archivo del proyecto actual (unidad + ruta de acceso + nombre de archivo).|
 |Directorio de la solución|$(SolutionDir)|Directorio de la solución actual (unidad + ruta de acceso).|
 |Nombre de archivo de la solución|$(SolutionFileName)|Nombre de archivo de la solución actual (unidad + ruta de acceso + nombre de archivo).|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Herramientas de compilación de C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

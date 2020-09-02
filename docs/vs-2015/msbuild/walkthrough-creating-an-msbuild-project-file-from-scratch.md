@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un archivo del proyecto de MSBuild desde el principio | Microsoft Docs'
+title: 'Tutorial: Crear un archivo de proyecto de MSBuild desde cero | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682361"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo del proyecto de MSBuild desde el principio
@@ -56,7 +56,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 1. En el símbolo del sistema, vaya a la carpeta en que quiere crear la aplicación, por ejemplo, \My Documents\ o \Desktop\\.  
   
-2. Escriba **md HelloWorld** para crear una subcarpeta denominada \HelloWorld\\.  
+2. Escriba **md HelloWorld** para crear una subcarpeta denominada \HelloWorld\\ .  
   
 3. Escriba **cd HelloWorld** para cambiar a la nueva carpeta.  
   
@@ -173,7 +173,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 #### <a name="to-build-the-application"></a>Para compilar la aplicación  
   
-1. En el símbolo del sistema, escriba **msbuild helloworld.csproj /t:Build**.  
+1. En el símbolo del sistema, escriba **msbuild HelloWorld. csproj/t: Build**.  
   
      Esto genera el destino Build del archivo del proyecto Helloworld al llamar al compilador de Visual C# para crear la aplicación Helloworld.  
   
@@ -184,7 +184,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
 > [!NOTE]
 > Puede ver más detalles sobre la compilación aumentando el nivel de detalle. Para establecer el nivel de detalle en "detailed", escriba cualquiera de estos comandos en el símbolo del sistema:  
 >   
-> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **MSBuild HelloWorld. csproj/t: Build/verbosity: Detailed**  
   
 ## <a name="adding-build-properties"></a>Agregar propiedades de compilación  
  Puede agregar propiedades de compilación al archivo del proyecto para controlar mejor la compilación. Agregue ahora estas propiedades:  
@@ -260,11 +260,11 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 #### <a name="to-test-the-build-properties"></a>Para probar las propiedades de compilación  
   
-1. En el símbolo del sistema, escriba **msbuild helloworld.csproj /t:Build**.  
+1. En el símbolo del sistema, escriba **msbuild HelloWorld. csproj/t: Build**.  
   
      De este modo se crea la carpeta \Bin\ y, a continuación, se llama al compilador de Visual C# para crear la aplicación MSBuildSample y colocarla en dicha carpeta.  
   
-2. Para comprobar que se ha creado la carpeta \Bin\ y que contiene la aplicación MSBuildSample, escriba **dir Bin**.  
+2. Para comprobar que se ha creado la carpeta \Bin\ y que contiene la aplicación MSBuildSample, escriba **dir bin**.  
   
 3. Escriba **Bin\MSBuildSample** para probar la aplicación.  
   
@@ -335,31 +335,31 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 #### <a name="to-test-the-build-targets"></a>Para probar los destinos de compilación  
   
-1. En el símbolo del sistema, escriba **msbuild helloworld.csproj /p:AssemblyName=Greetings**.  
+1. En el símbolo del sistema, escriba **msbuild HelloWorld. csproj/p: AssemblyName = Greetings**.  
   
-     Como no utilizó el modificador **/t** para establecer el destino explícitamente, MSBuild ejecutará el destino Build predeterminado. El modificador **/p** invalida la propiedad `AssemblyName` y le da el nuevo valor, `Greetings`. Esto hace que se cree una nueva aplicación, Greetings.exe, en la carpeta \Bin\.  
+     Dado que no ha utilizado el modificador **/t** para establecer explícitamente el destino, MSBuild ejecuta el destino de compilación predeterminado. El modificador **/p** invalida la `AssemblyName` propiedad y le da el nuevo valor, `Greetings` . Esto hace que se cree una nueva aplicación, Greetings.exe, en la carpeta \Bin\.  
   
-2. Para comprobar que la carpeta \Bin\ contiene la aplicación MSBuildSample y la nueva aplicación Greetings, escriba **dir Bin**.  
+2. Para comprobar que la carpeta \Bin\ contiene la aplicación MSBuildSample y la nueva aplicación Greetings, escriba **dir bin**.  
   
 3. Escriba **Bin\Greetings** para probar la aplicación Greetings.  
   
      El mensaje **Hello, world!** debe mostrarse.  
   
-4. Escriba **msbuild helloworld.csproj /t:clean** para eliminar la aplicación MSBuildSample.  
+4. Escriba **msbuild HelloWorld. csproj/t: Clean**para eliminar la aplicación MSBuildSample.  
   
      Esto ejecuta la tarea Clean para quitar la aplicación que tiene el valor de propiedad `AssemblyName` predeterminado, `MSBuildSample`.  
   
-5. Escriba **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings** para eliminar la aplicación Greetings.  
+5. Escriba **msbuild HelloWorld. csproj/t: Clean/p: AssemblyName = Greetings**para eliminar la aplicación Greetings.  
   
      Esto ejecuta la tarea Clean para quitar la aplicación que tiene el valor de propiedad **AssemblyName** dado, `Greetings`.  
   
-6. Para comprobar que la carpeta \Bin\ está ahora vacía, escriba **dir Bin**.  
+6. Para comprobar que la carpeta \Bin\ está ahora vacía, escriba **dir bin**.  
   
 7. Escriba **msbuild**.  
   
      Aunque no se especifica un archivo del proyecto, MSBuild crea el archivo helloworld.csproj porque solo hay un archivo del proyecto en la carpeta actual. Esto hace que se cree la aplicación MSBuildSample en la carpeta \Bin\.  
   
-     Para comprobar que la carpeta \Bin\ contiene la aplicación MSBuildSample, escriba **dir Bin**.  
+     Para comprobar que la carpeta \Bin\ contiene la aplicación MSBuildSample, escriba **dir bin**.  
   
 ## <a name="building-incrementally"></a>Compilar de forma incremental  
  Puede indicar a MSBuild que cree un destino sólo si los archivos de código fuente o los archivos de destino de los que depende el destino han cambiado. MSBuild utiliza la marca de tiempo de un archivo para determinar si ha cambiado.  
@@ -383,11 +383,11 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
     </Target>  
     ```  
   
-2. Escriba **msbuild /v:d** en el símbolo del sistema para probar el destino Build.  
+2. Pruebe el destino de compilación escribiendo **msbuild/v: d** en el símbolo del sistema.  
   
      Recuerde que helloworld.csproj es el archivo del proyecto predeterminado y que Build es el destino predeterminado.  
   
-     El modificador **/v:d** especifica una descripción detallada del proceso de compilación.  
+     El modificador **/v: d** especifica una descripción detallada del proceso de compilación.  
   
      Se deben mostrar estas líneas:  
   
@@ -477,9 +477,9 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
 </Project>  
 ```  
   
-## <a name="whats-next"></a>Pasos adicionales  
+## <a name="whats-next"></a>Pasos siguientes  
  Visual Studio puede realizar automáticamente gran parte del trabajo que se muestra en este tutorial. Para obtener información sobre cómo utilizar Visual Studio para crear, editar, compilar y probar archivos del proyecto de MSBuild, consulte [Tutorial: Cómo utilizar MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
 [Información general sobre MSBuild](msbuild.md)  
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)

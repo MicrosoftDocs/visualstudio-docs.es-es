@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c5fd73eb64c79ac9476c0036b9f2d709294d178
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704593"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Cómo depurar funciones de la API de Windows
@@ -43,8 +43,8 @@ Si desea depurar una función de la API de Windows que tiene símbolos de NT car
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Para obtener el nombre representativo, vea [ver nombres representativos](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Para obtener el nombre representativo, vea [Ver nombres representativos](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
-## <a name="see-also"></a>Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>Consulte también  
+ [Preguntas más frecuentes sobre depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)

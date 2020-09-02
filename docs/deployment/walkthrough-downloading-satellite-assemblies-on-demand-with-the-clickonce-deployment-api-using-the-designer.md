@@ -1,5 +1,5 @@
 ---
-title: Descargar ensamblados satélite a petición mediante el Diseñador de ClickOnce
+title: Descargar ensamblados satélite a petición mediante el diseñador ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,16 +21,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263412"
 ---
-# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.
 
- Como se describe en [localizar aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md), puede incluir varios ensamblados satélite para varias referencias culturales en el mismo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. De forma predeterminada, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] descargará todos los ensamblados satélite en su implementación en el equipo cliente, aunque un cliente individual probablemente solo requiera un único ensamblado satélite.
+ Como se describe en [localizar aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md), puede incluir varios ensamblados satélite para varias referencias culturales en la misma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. De forma predeterminada, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] descargará todos los ensamblados satélite en su implementación en el equipo cliente, aunque un cliente individual probablemente solo requiera un único ensamblado satélite.
 
  En este tutorial se demuestra cómo marcar los ensamblados satélite como opcionales y descargar únicamente el ensamblado que necesite un equipo cliente para la configuración de su referencia cultural actual.
 
@@ -39,7 +39,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 ### <a name="to-mark-satellite-assemblies-as-optional"></a>Para marcar los ensamblados satélite como opcionales
 
-1. Compilar el proyecto. Esto generará los ensamblados satélite para todas las referencias culturales a las que vaya a realizar la localización.
+1. Compile el proyecto. Esto generará los ensamblados satélite para todas las referencias culturales a las que vaya a realizar la localización.
 
 2. Haga clic con el botón derecho en el nombre del proyecto en el Explorador de soluciones y, a continuación, haga clic en **Propiedades**.
 
@@ -47,9 +47,9 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 4. Seleccione la casilla **Mostrar todos los archivos** para que se muestren los ensamblados satélite. De forma predeterminada, todos los ensamblados satélite se incluirán en la implementación y estarán visibles en este cuadro de diálogo.
 
-     El nombre de los ensamblados satélite tiene la siguiente forma: *\<isoCode\ApplicationName.resources.dll*, donde \<isoCode> es un identificador de idioma en formato RFC 1766.
+     Un ensamblado satélite tendrá un nombre con el formato * \<isoCode>\ApplicationName.resources.dll*, donde \<isoCode> es un identificador de idioma en formato RFC 1766.
 
-5. Haga clic en **Nuevo** en la lista **Grupo de descarga** para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite japonés, especificaría el nombre del grupo de descarga `ja-JP`.
+5. Haga clic en **Nuevo** en la lista **Grupo de descarga** para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite en japonés, debe especificar el nombre del grupo de descarga `ja-JP` .
 
 6. Cierre el cuadro de diálogo **Archivos de aplicación**.
 
@@ -67,17 +67,17 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 2. En la parte inferior de la ficha, haga clic en **Ver eventos de aplicaciones**.
 
-3. Agregue las siguientes importaciones al principio del archivo *ApplicationEvents.VB*.
+3. Agregue las siguientes importaciones al principio del archivo *ApplicationEvents. VB* .
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
-4. Agregue el código siguiente a la clase `MyApplication` .
+4. Agregue el siguiente código a la clase `MyApplication` .
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
 
 ## <a name="next-steps"></a>Pasos siguientes
  En un entorno de producción, probablemente tenga que quitar la línea en los ejemplos de código que establece <xref:System.Threading.Thread.CurrentUICulture%2A> en un valor específico, porque los equipos cliente tendrán el valor correcto establecido de forma predeterminada. Cuando la aplicación se ejecute en un equipo cliente japonés, por ejemplo, <xref:System.Threading.Thread.CurrentUICulture%2A> será `ja-JP` de forma predeterminada. Establecerlo mediante programación es una buena manera de probar los ensamblados satélite antes de implementar la aplicación.
 
-## <a name="see-also"></a>Vea también
-- [Tutorial: Descargar ensamblados satélite a petición con la API de implementación de ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
+## <a name="see-also"></a>Consulte también
+- [Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [Localización de aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md)

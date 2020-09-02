@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fa8b438727160bb5a752643f7ef9791ca5e09245
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682135"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator (Tarea)
@@ -35,8 +35,8 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o v
 |Parámetro|Descripción|  
 |---------------|-----------------|  
 |`OutputPath`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso del directorio de salida. Si la ruta de acceso no es una ruta absoluta, se trata como si fuese una ruta relativa al directorio raíz del proyecto.|  
-|`OutputResourcesFile`|Parámetro de salida obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica la ruta de acceso y el nombre del archivo .resources generado. Si la ruta de acceso no es una ruta absoluta, el archivo .resources se genera respecto al directorio raíz del proyecto.|  
-|`ResourcesFiles`|Parámetro obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica uno o más recursos que se van a insertar en el archivo .resources generado.|  
+|`OutputResourcesFile`|Parámetro de salida obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la ruta de acceso y el nombre del archivo .resources generado. Si la ruta de acceso no es una ruta absoluta, el archivo .resources se genera respecto al directorio raíz del proyecto.|  
+|`ResourcesFiles`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica uno o más recursos que se van a insertar en el archivo .resources generado.|  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente, se genera un archivo .resources con un solo recurso .bmp. El recurso .bmp se genera en un directorio que es relativo al directorio raíz del proyecto.  
@@ -55,7 +55,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o v
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)   
  [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   

@@ -1,5 +1,5 @@
 ---
-title: Format Specifiers in C# | Microsoft Docs
+title: Especificadores de formato en C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682485"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C\#
@@ -54,7 +54,7 @@ Si tiene el siguiente código:
 }
 ```
 
-Agregue la variable `my_var1` a la ventana Inspección (durante la depuración, **Debug / Windows / Watch / Watch 1**) y establezca la visualización en formato hexadecimal (en la ventana **Inspección** , haga clic en la variable y seleccione **Presentación hexadecimal**). Ahora la ventana **Inspección** muestra que contiene el valor 0x0065. Para ver el valor expresado como entero decimal en lugar de como entero hexadecimal, en la columna Nombre, agregue el especificador de formato de carácter **, d**. La columna Valor muestra ahora el valor decimal 101
+Agregue la variable `my_var1` a la ventana Inspección (durante la depuración, **Debug / Windows / Watch / Watch 1**) y establezca la visualización en formato hexadecimal (en la ventana **Inspección** , haga clic en la variable y seleccione **Presentación hexadecimal**). Ahora la ventana **inspección** muestra que contiene el valor 0x0065. Para ver el valor expresado como entero decimal en lugar de como entero hexadecimal, en la columna Nombre, agregue el especificador de formato de carácter **, d**. La columna Valor muestra ahora el valor decimal 101
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 
@@ -70,10 +70,10 @@ La siguiente tabla muestra los especificadores de formato de C# que reconoce el 
 |h|Entero hexadecimal|61541|0x0000F065|
 |nq|cadena sin comillas|"Mi Cadena"|Mi Cadena|
 |hidden|Muestra todos los miembros públicos y no públicos|Muestra los miembros públicos|Muestra todos los miembros|
-|raw|Muestra el elemento tal como aparece en el nodo de elemento sin formato. Válido solo en objetos de servidor proxy.|Diccionario\<T >|Vista sin formato del diccionario\<T >|
-|results|Puede usar con una variable de un tipo que implementa IEnumerable o IEnumerable\<T >, normalmente es el resultado de una expresión de consulta. Solo muestra los miembros que contienen el resultado de la consulta.|Muestra todos los miembros.|Muestra los miembros que cumplan las condiciones de la consulta.|
+|raw|Muestra el elemento tal como aparece en el nodo de elemento sin formato. Válido solo en objetos de servidor proxy.|Diccionario\<T>|Vista sin formato del Diccionario\<T>|
+|results|Se usa con una variable de un tipo que implementa IEnumerable o IEnumerable \<T> , normalmente el resultado de una expresión de consulta. Solo muestra los miembros que contienen el resultado de la consulta.|Muestra todos los miembros.|Muestra los miembros que cumplan las condiciones de la consulta.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)
 - [Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

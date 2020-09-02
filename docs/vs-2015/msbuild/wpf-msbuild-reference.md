@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a940cf371373d23d98ce8f89005197ee3ea7c309
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687069"
 ---
 # <a name="wpf-msbuild-reference"></a>Referencia de MSBuild para WPF
@@ -30,7 +30,7 @@ ms.locfileid: "65687069"
 Windows Presentation Foundation (WPF) amplía Microsoft Build Engine (MSBuild) con compatibilidad de compilación adicional que se documenta en esta sección.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Archivos .Targets](../msbuild/wpf-dot-targets-files.md)  
+ [. Archivos de destino](../msbuild/wpf-dot-targets-files.md)  
  Describe los archivos .Targets de WPF  
   
  [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)  
@@ -51,5 +51,5 @@ Windows Presentation Foundation (WPF) amplía Microsoft Build Engine (MSBuild) c
  <xref:Microsoft.Build.Tasks.Windows>  
  Un ensamblado de ventana de la tarea de compilación.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

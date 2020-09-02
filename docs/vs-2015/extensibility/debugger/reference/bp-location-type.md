@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb8074317e52b43806a61d6486c53d7409333e2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153403"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Especifica el tipo de ubicación del punto de interrupción para una solicitud de punto de interrupción.  
@@ -69,16 +69,16 @@ public enum enum_BP_LOCATION_TYPE { 
   
 ## <a name="members"></a>Miembros  
  BPLT_NONE  
- No especifica que no hay ninguna ubicación de punto de interrupción.  
+ No especifica ninguna ubicación de punto de interrupción.  
   
  BPLT_FILE_LINE  
- Especifica el tipo de ubicación del punto de interrupción como una línea del archivo.  
+ Especifica el tipo de ubicación del punto de interrupción como una línea de archivo.  
   
  BPLT_FUNC_OFFSET  
  Especifica el tipo de ubicación del punto de interrupción como un desplazamiento de función.  
   
  BPLT_CONTEXT  
- Especifica el tipo de ubicación del punto de interrupción como contexto.  
+ Especifica el tipo de ubicación del punto de interrupción como un contexto.  
   
  BPLT_STRING  
  Especifica el tipo de ubicación del punto de interrupción como una cadena.  
@@ -93,10 +93,10 @@ public enum enum_BP_LOCATION_TYPE { 
  Especifica el tipo de ubicación del punto de interrupción como una línea de código fuente.  
   
  BPLT_CODE_FUNC_OFFSET  
- Especifica el tipo de ubicación del punto de interrupción como un desplazamiento de la función de código.  
+ Especifica el tipo de ubicación del punto de interrupción como desplazamiento de función de código.  
   
  BPLT_CODE_CONTEXT  
- Especifica el tipo de ubicación del punto de interrupción como un contexto de código.  
+ Especifica el tipo de ubicación del punto de interrupción como contexto de código.  
   
  BPLT_CODE_STRING  
  Especifica el tipo de ubicación del punto de interrupción como una cadena de código.  
@@ -108,26 +108,26 @@ public enum enum_BP_LOCATION_TYPE { 
  Especifica el tipo de ubicación del punto de interrupción como una cadena de datos.  
   
  BPLT_TYPE_MASK  
- Especifica una máscara de bits, por lo que se puede extraer el tipo de punto de interrupción fuera el valor.  
+ Especifica una máscara de bits, de modo que el tipo de punto de interrupción se puede extraer del valor.  
   
  BPLT_LOCATION_TYPE_MASK  
- Especifica una máscara de bits, por lo que se puede extraer el tipo de ubicación de punto de interrupción fuera el valor.  
+ Especifica una máscara de bits, de modo que el tipo de ubicación del punto de interrupción se puede extraer del valor.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasado como parámetro a la [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) método.  
+ Se pasa como un parámetro al método [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) .  
   
- Un tipo de ubicación de punto de interrupción se compone de un tipo de punto de interrupción y un tipo de ubicación. Esto significa que un tipo de ubicación de punto de interrupción nunca es simplemente un tipo de punto de interrupción (por ejemplo, `BPT_CODE`) o un tipo de ubicación (por ejemplo, `BPLT_FILE_LINE`). Las constantes predefinidas para todos los tipos de ubicación de punto de interrupción actualmente admitidos se incluyen en esta enumeración (`BPLT_CODE_FILE_LINE` a través de `BPLT_DATA_STRING`).  
+ Un tipo de ubicación de punto de interrupción se compone de un tipo de punto de interrupción y un tipo de ubicación. Esto significa que un tipo de ubicación de punto de interrupción nunca es simplemente un tipo de punto de interrupción (por ejemplo, `BPT_CODE` ) o un tipo de ubicación (por ejemplo, `BPLT_FILE_LINE` ). Las constantes predefinidas para todos los tipos de ubicación de puntos de interrupción admitidos actualmente se incluyen en esta enumeración ( `BPLT_CODE_FILE_LINE` a `BPLT_DATA_STRING` ).  
   
- `BPT_CODE` y `BPT_DATA` son miembros de la [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeración.  
+ `BPT_CODE` y `BPT_DATA` son miembros de la enumeración [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento ProjectTemplateLink (plantillas de Visual Studio) | Microsoft Docs
+title: ProjectTemplateLink (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681315"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink (Elemento, Plantillas de Visual Studio)
@@ -29,7 +29,7 @@ Especifica la ruta de acceso al archivo .vstemplate de un proyecto en una planti
  \<TemplateContent>  
  \<ProjectCollection>  
  \<ProjectTemplateLink>  
--o bien-  
+o bien  
 \<VSTemplate>  
  \<TemplateContent>  
  \<ProjectCollection>  
@@ -51,8 +51,8 @@ Especifica la ruta de acceso al archivo .vstemplate de un proyecto en una planti
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`ProjectName`|Atributo opcional.<br /><br /> Especifica el nombre de cada proyecto individual en una plantilla de varios proyectos. El **nuevo proyecto** cuadro de diálogo no puede asignar nombres a proyectos individuales.|  
-|`CopyParameters`|Permite que todas las variables de la plantilla de grupo principal se copien en cada una de las plantillas vinculadas.<br /><br /> Los parámetros de las plantillas vinculadas tienen un prefijo `"$ext_*$"`. Por ejemplo, si se encuentra en la plantilla del grupo primario el parámetro `$projectname$` tiene un valor **ExampleProject1**, cuando la plantilla vinculada obtiene su turno para ejecutarse, adquiere un parámetro `$ext_projectname$`, que es una copia de la `$projectname$`parámetro desde la plantilla del grupo primario.<br /><br /> Esto permite que las plantillas vinculadas compartan algunos parámetros comunes, para que estos solo se tengan que crear en la plantilla del grupo primario.<br /><br /> Este atributo es opcional y se establece de forma automática en `false` cuando no se incluye.<br /><br /> Apareció por primera vez en Visual Studio 2013 Update 2. Para hacer referencia a la versión correcta del producto, consulte [que hacen referencia a ensamblados ofrecidas en Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`ProjectName`|Atributo opcional.<br /><br /> Especifica el nombre de cada proyecto individual en una plantilla de varios proyectos. El cuadro de diálogo **nuevo proyecto** no puede asignar nombres a proyectos individuales.|  
+|`CopyParameters`|Permite que todas las variables de la plantilla de grupo principal se copien en cada una de las plantillas vinculadas.<br /><br /> Los parámetros de las plantillas vinculadas tienen un prefijo `"$ext_*$"`. Por ejemplo, si en la plantilla del grupo primario el parámetro `$projectname$` tiene un valor **ExampleProject1**, cuando la plantilla vinculada obtiene su turno para ejecutarse, adquiere un parámetro `$ext_projectname$` , que es una copia del `$projectname$` parámetro de la plantilla del grupo primario.<br /><br /> Esto permite que las plantillas vinculadas compartan algunos parámetros comunes, para que estos solo se tengan que crear en la plantilla del grupo primario.<br /><br /> Este atributo es opcional y se establece de forma automática en `false` cuando no se incluye.<br /><br /> Apareció por primera vez en Visual Studio 2013 Update 2. Para hacer referencia a la versión correcta del producto, consulte Reference [assemblies Delivered in the Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
@@ -69,8 +69,8 @@ Especifica la ruta de acceso al archivo .vstemplate de un proyecto en una planti
   
  Este texto especifica la ruta de acceso al archivo .vstemplate de la plantilla.  
   
-## <a name="remarks"></a>Comentarios  
- Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El elemento `ProjectTemplateLink` se utiliza para especificar la ubicación del archivo .vstemplate para uno de los proyectos de la plantilla. El archivo .vstemplate de una plantilla de varios proyectos contiene un elemento `ProjectTemplateLink` para cada proyecto de la plantilla. Para obtener más información sobre las plantillas de varios proyectos, vea [Cómo: Crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md).  
+## <a name="remarks"></a>Observaciones  
+ Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El elemento `ProjectTemplateLink` se utiliza para especificar la ubicación del archivo .vstemplate para uno de los proyectos de la plantilla. El archivo .vstemplate de una plantilla de varios proyectos contiene un elemento `ProjectTemplateLink` para cada proyecto de la plantilla. Para obtener más información sobre las plantillas de varios proyectos, vea [Cómo: crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Ejemplo  
  Este ejemplo muestra un archivo .vstemplate raíz simple de varios proyectos. En este ejemplo, la plantilla contiene dos proyectos, `My Windows Application` y `My Class Library`. El atributo `ProjectName` del elemento `ProjectTemplateLink` establece el nombre que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debe asignar a este proyecto. Si el atributo `ProjectName` no existe, se utiliza el nombre del archivo .vstemplate como nombre del proyecto.  
@@ -97,7 +97,7 @@ Especifica la ruta de acceso al archivo .vstemplate de un proyecto en una planti
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
- [Cómo: Crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)   
+ [Cómo: crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b381d7fd342a2e56bcf0c90cb52bd4912444113
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651450"
 ---
 # <a name="locate-information"></a>Encontrar información
@@ -21,12 +21,12 @@ ms.locfileid: "72651450"
 
 El Visor de Ayuda proporciona diversas maneras de buscar información en la Ayuda. En función del tipo de información que busque, algunas estrategias podrían ser más eficaces que otras.
 
-|Para obtener información sobre|Consulte|
+|Para obtener información sobre|Probar|
 |----------------------------|---------|
 |Un elemento de la interfaz de usuario|La tecla F1|
 |Otros temas que se encuentran en la misma área de la tabla de contenido que el tema actual|El botón **Mostrar tema en contenido** en la barra de herramientas|
 |Una característica o tecnología|Índice|
-|Elementos del lenguaje como métodos y eventos|Buscar|
+|Elementos del lenguaje como métodos y eventos|Search|
 
 ## <a name="in-this-section"></a>En esta sección
  [Sugerencias para la búsqueda de texto completo](../ide/full-text-search-tips.md)

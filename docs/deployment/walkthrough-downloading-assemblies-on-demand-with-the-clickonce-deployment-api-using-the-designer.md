@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a8c5def5c4ebdf8f34efef50dca8dc4656bbd7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263439"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados a petición con la API mediante el Diseñador de implementación de ClickOnce
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: descargar ensamblados a petición con la API de implementación de ClickOnce mediante el diseñador
 De forma predeterminada, todos los ensamblados incluidos en una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se descargan la primera vez que se ejecuta la aplicación, aunque podría haber partes de la aplicación usadas por un pequeño sector de los usuarios. En tal caso, es probable que quiera descargar un ensamblado solo cuando cree uno de sus tipos. En el siguiente tutorial se muestra cómo marcar determinados ensamblados en la aplicación como “opcionales” y cómo descargarlos usando clases en el espacio de nombres <xref:System.Deployment.Application> cuando los solicita Common Language Runtime.
 
 > [!NOTE]
@@ -37,7 +37,7 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
 
 ### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Para crear un proyecto que use un ensamblado a petición con Visual Studio
 
-1. Cree un proyecto de Windows Forms en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Archivo** , apunte a **Agregar**y haga clic en **Nuevo proyecto**. Elija un proyecto **Biblioteca de clases** en el cuadro de diálogo y asígnele el nombre `ClickOnceLibrary`.
+1. Cree un proyecto de Windows Forms en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Archivo** , seleccione **Agregar**y haga clic en **Nuevo proyecto**. Elija un proyecto **Biblioteca de clases** en el cuadro de diálogo y asígnele el nombre `ClickOnceLibrary`.
 
    > [!NOTE]
    > En Visual Basic, se recomienda modificar las propiedades del proyecto para cambiar el espacio de nombres raíz de este proyecto a `Microsoft.Samples.ClickOnceOnDemand` o al espacio de nombres que quiera. Para que resulte más sencillo, los dos proyectos de este tutorial están en el mismo espacio de nombres.
@@ -67,7 +67,7 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
     [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
     [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]
 
-## <a name="mark-assemblies-as-optional"></a>Marque los ensamblados como opcionales
+## <a name="mark-assemblies-as-optional"></a>Marcar los ensamblados como opcionales
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Para marcar ensamblados como opcionales en la aplicación ClickOnce con Visual Studio
 
@@ -79,11 +79,11 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
 
 4. Expanda el cuadro desplegable **Grupo** y seleccione **Nuevo**. Escriba el nombre `ClickOnceLibrary` como nuevo nombre del grupo.
 
-5. Siga publicando la aplicación como se describe en [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Siga publicando la aplicación como se describe en [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Para marcar ensamblados como opcionales en la aplicación ClickOnce con la Herramienta de generación y edición de manifiestos: cliente gráfico (MageUI.exe)
 
-1. Cree su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se manifiesta como se describe en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Cree los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos tal y como se describe en [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 2. Antes de cerrar MageUI.exe, seleccione la pestaña que contiene el manifiesto de aplicación de su implementación y, en esa pestaña, seleccione la pestaña **Archivos** .
 
@@ -97,6 +97,6 @@ Para probar el ensamblado a petición:
 
 2. Cuando aparezca el formulario principal, pulse el <xref:System.Windows.Forms.Button>. Debería ver una cadena en una ventana de cuadro de mensaje que dice “Hello, World!”.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:System.Deployment.Application.ApplicationDeployment>

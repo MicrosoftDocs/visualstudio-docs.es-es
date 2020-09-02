@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5300af2bc011cb6ae5255d2d55aa425ca9f1925
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875922"
 ---
 # <a name="primitives-activity-designers"></a>Diseñadores de actividades primitivas
@@ -34,6 +34,6 @@ Los diseñadores de actividades de tipos primitivos se usan para crear y configu
 
  [Tratamiento de errores](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Utilizar los diseñadores de actividades](control-flow-activity-designers.md)

@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683939"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
@@ -41,14 +41,14 @@ El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma
   
  En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.  
   
-|Atributo|Resultado que aparece en la columna **Valor**|  
+|Atributo|La salida aparece en la columna **valor** )|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Se utiliza en un tipo con campos `x` y `y`.|`x = 5 y = 18`|  
 |La sintaxis del parámetro`[DebuggerDisplay("String value is {getString()}")]`puede variar según el lenguaje. Por consiguiente, utilícela con cuidado.|`String value is [5, 6, 6]`|  
   
  `DebuggerDisplay` también puede aceptar parámetros con nombre.  
   
-|Parámetros|Finalidad|  
+|Parámetros|Propósito|  
 |----------------|-------------|  
 |`Name`, `Type`|Estos parámetros afectan a las columnas **Nombre** y **Tipo** de las ventanas de variables. (Se pueden establecer en cadenas mediante la misma sintaxis que el constructor). El uso excesivo o incorrecto de estos parámetros puede generar resultados confusos.|  
 |`Target`, `TargetTypeName`|Especifica el tipo de destino cuando se utiliza el atributo en el nivel de ensamblado.|  
@@ -179,5 +179,5 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [mejorar la depuración con los atributos de visualización del depurador](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+## <a name="see-also"></a>Consulte también  
+ [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [mejorar la depuración con los atributos de presentación del depurador](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

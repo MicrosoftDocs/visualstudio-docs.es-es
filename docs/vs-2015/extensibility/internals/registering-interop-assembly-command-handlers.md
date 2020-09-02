@@ -1,5 +1,5 @@
 ---
-title: Registrar controladores de comandos de ensamblado de interoperabilidad | Microsoft Docs
+title: Registrando controladores de comandos de ensamblado de interoperabilidad | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,28 +12,28 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705811"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registro de controladores de comandos de ensamblado de interoperabilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Debe registrar un VSPackage con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para que el entorno de desarrollo integrado (IDE) enruta sus comandos correctamente.  
+Un VSPackage debe registrarse con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para que el entorno de desarrollo integrado (IDE) enrute sus comandos correctamente.  
   
- El registro se puede actualizar mediante la edición manual o mediante un archivo de registrador (.rgs). Para obtener más información, consulta [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ El registro se puede actualizar mediante la edición manual o mediante un archivo de registrador (. RGS). Para obtener más información, consulta [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
- Managed Package Framework (MPF) proporciona esta funcionalidad a través de la <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> clase.  
+ El marco de trabajo de paquetes administrados (MPF) proporciona esta funcionalidad a través de la <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> clase.  
   
- [Referencia de formato de tabla del comando](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) los recursos se encuentran en archivos DLL de interfaz de usuario de satélite no administrado.  
+ Los recursos de [referencia de formato de tabla de comandos](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) se encuentran en archivos dll satélite no administrados.  
   
-## <a name="command-handler-registration-of-a-vspackage"></a>Registro del controlador de comando de un paquete VSPackage  
- Un VSPackage que actúa como un controlador para la interfaz de usuario (UI)-en función de comandos requiere una entrada del registro con el nombre del VSPackage `GUID`. Esta entrada del registro especifica la ubicación del archivo de recursos de la interfaz de usuario de VSPackage y el recurso de menú dentro de ese archivo. La entrada del registro en sí se encuentra en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<versión >* \Menus, donde  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], por ejemplo 9.0.  
+## <a name="command-handler-registration-of-a-vspackage"></a>Registro del controlador de comandos de un VSPackage  
+ Un VSPackage que actúa como controlador para comandos basados en la interfaz de usuario (UI) requiere una entrada del registro denominada después del VSPackage `GUID` . Esta entrada del registro especifica la ubicación del archivo de recursos de la interfaz de usuario del VSPackage y el recurso de menú dentro de dicho archivo. La propia entrada del registro se encuentra en HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, donde *\<Version>* es la versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , por ejemplo 9,0.  
   
 > [!NOTE]
-> La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versión >* puede reemplazarse por una alternativa raíz cuando el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell se ha inicializado. Para obtener más información acerca de la ruta de acceso raíz, consulte [Installing VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+> La ruta de acceso raíz de HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* se puede invalidar con una raíz alternativa cuando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se inicializa el shell. Para obtener más información acerca de la ruta de acceso raíz, consulte [Installing VSPackages With Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>La entrada del registro de recursos CTMENU  
  La estructura de la entrada del registro es:  
@@ -44,19 +44,19 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>  
 ```  
   
- \<*GUID*> es el `GUID` de VSPackage en el formulario {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
+ \<*GUID*> es el `GUID` del VSPackage con el formato {xxxxxx-XXXX-XXXX-XXXX-XXXXXXXXX}.  
   
- *\<Información de recursos >* consta de tres elementos separados por comas. Estos elementos son, en orden:  
+ *\<Resource Information>* consta de tres elementos separados por comas. Estos elementos son, en orden:  
   
- \<*Ruta de acceso al archivo DLL de recursos*>, \< *Id. de recurso de menú*>, \< *menú versión*>  
+ \<*Path to Resource DLL*>, \<*Menu Resource ID*>, \<*Menu Version*>  
   
- En la tabla siguiente se describe los campos de \< *información del recurso*>.  
+ En la tabla siguiente se describen los campos de \<*Resource Information*> .  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|\<*Ruta de acceso al archivo DLL de recursos*>|Se trata de la ruta de acceso completa a la DLL que contiene el recurso de menú de recursos o se deja en blanco, que indica que del VSPackage DLL de recursos es que se usará (como se especifica en la subclave paquetes donde se registra el VSPackage del propio).<br /><br /> Se suele dejar en blanco este campo.|  
-|\<*Id. de recurso de menú*>|Es el identificador de recurso de la `CTMENU` recursos que contiene todos los elementos de interfaz de usuario para el VSPackage como compilado a partir de un [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) archivo.|  
-|\<*Versión de menú*>|Se trata de un número que se utiliza como una versión para el `CTMENU` recursos. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Este valor se utiliza para determinar si necesita volver a combinar el contenido de la `CTMENU` recursos con su memoria caché de todos los `CTMENU` recursos. Se desencadena un volver a combinar ejecutando el comando de instalación de devenv.<br /><br /> Este valor inicialmente se establece en 1 e incrementa después de cada cambio en el `CTMENU` recursos y antes de que ocurra el volver a combinar.|  
+|\<*Path to Resource DLL*>|Esta es la ruta de acceso completa a la DLL de recursos que contiene el recurso de menú o se deja en blanco, lo que indica que se va a usar el archivo DLL de recursos del VSPackage (tal y como se especifica en la subclave Packages donde se registra el VSPackage).<br /><br /> Es más personalizado dejar este campo en blanco.|  
+|\<*Menu Resource ID*>|Este es el identificador de recurso del `CTMENU` recurso que contiene todos los elementos de la interfaz de usuario para el VSPackage compilados a partir de un archivo [. Vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) .|  
+|\<*Menu Version*>|Se trata de un número que se usa como versión para el `CTMENU` recurso. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utiliza este valor para determinar si es necesario recombinar el contenido del `CTMENU` recurso con su memoria caché de todos los `CTMENU` recursos. Para desencadenar una recombinación, se ejecuta el comando de configuración de devenv.<br /><br /> Este valor debe establecerse inicialmente en 1 e incrementarse después de cada cambio en el `CTMENU` recurso y antes de que se produzca la recombinación.|  
   
 ### <a name="example"></a>Ejemplo  
  Este es un ejemplo de un par de entradas de recursos:  
@@ -68,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Comandos y menús que utilizan ensamblados de interoperabilidad](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
+## <a name="see-also"></a>Consulte también  
+ [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comandos y menús que usan ensamblados de interoperabilidad](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541640"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Cómo: configurar la seguridad de la lista de inclusión
@@ -55,10 +55,10 @@ ms.locfileid: "85541640"
     |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Deshabilitada**|
-    |**MyComputer**|**Enabled**|
-    |**LocalIntranet**|**Enabled**|
-    |**TrustedSites**|**Enabled**|
+    |**UntrustedSites**|**Deshabilitado**|
+    |**MyComputer**|**Habilitado**|
+    |**LocalIntranet**|**Habilitado**|
+    |**TrustedSites**|**Habilitado**|
 
      De forma predeterminada, **Internet** tiene el valor **AuthenticodeRequired** y **UntrustedSites** tiene el valor **Disabled**.
 
@@ -113,7 +113,7 @@ ms.locfileid: "85541640"
 
     |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Deshabilitada**|
+    |**UntrustedSites**|**Deshabilitado**|
     |**Internet**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -170,11 +170,11 @@ ms.locfileid: "85541640"
 
     |Subclave de valor de cadena|Value|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Deshabilitada**|
-    |**Internet**|**Deshabilitada**|
-    |**MyComputer**|**Deshabilitada**|
-    |**LocalIntranet**|**Deshabilitada**|
-    |**TrustedSites**|**Deshabilitada**|
+    |**UntrustedSites**|**Deshabilitado**|
+    |**Internet**|**Deshabilitado**|
+    |**MyComputer**|**Deshabilitado**|
+    |**LocalIntranet**|**Deshabilitado**|
+    |**TrustedSites**|**Deshabilitado**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Para deshabilitar la lista de inclusión mediante programación
 

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332234"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Métodos abreviados de teclado de Blend para Visual Studio
@@ -35,7 +35,7 @@ ms.locfileid: "85332234"
 
 |Para hacer esto|Haga esto|
 |----------------|-------------|
-|Cambiar entre los documentos abiertos|**Ctrl** + **Pestaña**|
+|Cambiar entre los documentos abiertos|**Ctrl**+**Tab**|
 |Guardar el documento activo|**Ctrl** + **S**|
 |Guardar todos los documentos|**Ctrl** + **Desplazamiento** + **S**|
 |Cerrar el documento activo|**Ctrl** + **W**|

@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541796"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visual Studio especializada.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Antes de poder iniciar este procedimiento, Instale estos componentes:
 
@@ -65,7 +65,7 @@ Antes de poder iniciar este procedimiento, Instale estos componentes:
    > [!NOTE]
    > Si ve un mensaje que le avisa de que no desea ejecutar plantillas de texto de orígenes que no son de confianza, haga clic en **Aceptar**. Puede establecer que este mensaje no vuelva a aparecer.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Páginas del Asistente para Diseñador DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> Páginas del Asistente para Diseñador DSL
  Puede dejar algunos de los campos sin modificar con respecto a sus valores predeterminados. Sin embargo, asegúrese de establecer el campo de extensión de archivo.
 
 ### <a name="solution-settings-page"></a>Página de configuración de la solución
@@ -116,7 +116,7 @@ De forma predeterminada, se crea un nombre formado por los nombres de empresa y 
 
  Para obtener más información sobre los nombres seguros, vea [crear y utilizar ensamblados con nombre seguro](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

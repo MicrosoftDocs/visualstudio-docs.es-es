@@ -1,5 +1,5 @@
 ---
-title: 'Error: No se puede ir automáticamente al servidor | Documentos de Microsoft'
+title: 'Error: No se puede ir automáticamente al servidor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8dcb8fa757f1cccf2f3aef6c2520e0c61da0b9f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682681"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Error: No se puede depurar paso a paso por instrucciones el servidor automáticamente
@@ -44,6 +44,6 @@ El error reza como sigue:
   
 - Se instaló una versión de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] después de instalar Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] debe instalarse antes que Visual Studio. Use el **Panel de control**de Windows, **Programas y características** para reparar su instalación de Visual Studio.  
   
-## <a name="see-also"></a>Vea también  
- [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Consulte también  
+ [Errores y solución de problemas de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

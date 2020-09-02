@@ -1,5 +1,5 @@
 ---
-title: SccQueryChanges (función) | Documentos de Microsoft
+title: Función SccQueryChanges | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: baa6059a1668be5507994921cb96ac3ed1cfd5fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200013"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta función enumera una lista de archivos, que proporciona información sobre los cambios de nombre para cada archivo a través de una función de devolución de llamada especificada.  
+Esta función enumera una lista determinada de archivos y proporciona información sobre los cambios de nombre de cada archivo a través de una función de devolución de llamada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,34 +38,34 @@ SCCRTN SccQueryChanges(
   
 #### <a name="parameters"></a>Parámetros  
  pContext  
- [in] El puntero de contexto de complemento de control de código fuente.  
+ de Puntero de contexto del complemento de control de código fuente.  
   
- nFiles  
- [in] Número de archivos en `lpFileNames` matriz.  
+ N archivos  
+ de Número de archivos de la `lpFileNames` matriz.  
   
  lpFileNames  
- [in] Matriz de nombres de archivo para obtener información acerca de.  
+ de Matriz de nombres de archivo de los que se va a obtener información.  
   
  pfnCallback  
- [in] Función de devolución de llamada para llamar para cada nombre de archivo en la lista (consulte [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obtener más información).  
+ de Función de devolución de llamada a la que se llama para cada nombre de archivo de la lista (vea [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obtener más información).  
   
  pvCallerData  
- [in] Valor que se pasa sin cambios a la función de devolución de llamada.  
+ de Valor que se pasará sin modificar a la función de devolución de llamada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Value|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
 |SCC_OK|El proceso de consulta se completó correctamente.|  
-|SCC_E_PROJNOTOPEN|No se ha abierto el proyecto en control de código fuente.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
-|SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado o general.|  
+|SCC_E_PROJNOTOPEN|El proyecto no se ha abierto en el control de código fuente.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
+|SCC_E_NONSPECIFICERROR|Se produjo un error no especificado o general.|  
   
 ## <a name="remarks"></a>Comentarios  
- Son los cambios que se consulta al espacio de nombres: en concreto, el cambio de nombre, agregar y quitar un archivo.  
+ Los cambios que se están consultando son el espacio de nombres: específicamente, el cambio de nombre, la adición y la eliminación de un archivo.  
   
-## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Consulte también  
+ [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
  [Códigos de error](../extensibility/error-codes.md)

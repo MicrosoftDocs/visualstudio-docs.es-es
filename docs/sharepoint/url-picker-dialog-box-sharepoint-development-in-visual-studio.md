@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo Selector de URL (desarrollo de SharePoint)
+title: Selector de URL (cuadro de diálogo) (desarrollo de SharePoint)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,43 +16,43 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66261940"
 ---
-# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Cuadro de diálogo Selector de URL (desarrollo de SharePoint en Visual Studio)
-  En el cuadro de diálogo Selector de URL, puede elegir archivos como archivos de página maestra o archivos de imagen que se encuentran en el proyecto o en el servidor local que ejecuta SharePoint.
+# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Selector de URL (cuadro de diálogo) (desarrollo de SharePoint en Visual Studio)
+  En el cuadro de diálogo Selector de URL, puede elegir archivos como archivos de la página maestra o archivos de imagen que se encuentran en el proyecto o en el servidor local que ejecuta SharePoint.
 
- Este cuadro de diálogo aparece cuando tiene la opción de elegir un archivo para establecer una propiedad. Puede abrir este cuadro de diálogo eligiendo el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado junto a varias propiedades en el **propiedades** ventana. El botón de puntos suspensivos también aparece como un IntelliSense prompt al asignar valores a ciertos atributos en el **origen** la vista del diseñador.
+ Este cuadro de diálogo aparece cuando tiene la opción de elegir un archivo para establecer una propiedad. Para abrir este cuadro de diálogo, puede elegir el botón de puntos suspensivos (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")) junto a varias propiedades en la ventana **propiedades** . El botón de puntos suspensivos también aparece como un símbolo del sistema de IntelliSense cuando se asignan valores a ciertos atributos en la vista **código fuente** del diseñador.
 
 ## <a name="uielement-list"></a>Lista de UIElement
- **Las carpetas de proyecto** muestra una lista de las carpetas definidas en el proyecto o en el servidor local que ejecuta SharePoint. Elija el botón de expansión para mostrar las subcarpetas.
+ **Carpetas de proyecto** Muestra una lista de las carpetas definidas en el proyecto o en el servidor local que ejecuta SharePoint. Elija el botón de expansión para mostrar las subcarpetas.
 
- Expanda el **proyecto** nodo para elegir los archivos del proyecto. Para que aparezca como seleccionable en el cuadro de diálogo, los archivos del proyecto deben cumplir los siguientes criterios:
+ Expanda el nodo del **proyecto** para elegir archivos en el proyecto. Para que aparezca como seleccionable en el cuadro de diálogo, los archivos del proyecto deben cumplir los siguientes criterios:
 
-- El archivo debe incluirse en una carpeta asignada.
+- El archivo debe estar incluido en una carpeta asignada.
 
-- El archivo debe agregarse al paquete de solución.
+- El archivo debe agregarse al paquete de la solución.
 
-- No se encuentra el archivo en otro proyecto.
+- No se puede encontrar el archivo en otro proyecto.
 
-  Si desea hacer referencia a archivos que no cumplen estos criterios, deberá especificar la ruta de acceso del archivo manualmente.
+  Si desea hacer referencia a archivos que no cumplen estos criterios, debe escribir la ruta de acceso del archivo manualmente.
 
-  Expanda el **Server** nodo para elegir los archivos que se encuentran en el servidor local que ejecuta SharePoint. Para que aparezca como seleccionable en el cuadro de diálogo, estos archivos deben cumplir los siguientes criterios:
+  Expanda el nodo del **servidor** para elegir los archivos que se encuentran en el servidor local que ejecuta SharePoint. Para que aparezca como seleccionable en el cuadro de diálogo, estos archivos deben cumplir los siguientes criterios:
 
-- El archivo debe encontrarse en una de las siguientes carpetas asignadas: **Imágenes**, **diseños**, o **ControlTemplates**.
+- El archivo debe estar ubicado en una de las siguientes carpetas asignadas: **images**, **layouts**o **ControlTemplates**.
 
-- No se encuentra el archivo en la base de datos de contenido de SharePoint.
+- No se puede encontrar el archivo en la base de datos de contenido de SharePoint.
 
-  Si desea hacer referencia a archivos que no cumplen estos criterios, deberá especificar la ruta de acceso del archivo manualmente.
+  Si desea hacer referencia a archivos que no cumplen estos criterios, debe escribir la ruta de acceso del archivo manualmente.
 
-  **Contenido de la carpeta** muestra una lista de archivos en la carpeta seleccionada. Elija un archivo y, a continuación, elija el **Aceptar** botón para cerrar el cuadro de diálogo y enviar su selección al proceso que lo llamó.
+  **Contenido de la carpeta** Muestra una lista de los archivos de la carpeta seleccionada. Elija un archivo y, a continuación, elija el botón **Aceptar** para cerrar el cuadro de diálogo y enviar la selección al proceso que lo llamó.
 
-  **Archivos de tipo** le permite elegir entre una lista de archivos que son adecuados para la tarea que se va a realizar.
+  **Archivos de tipo** Permite elegir entre una lista de archivos adecuados para la tarea que se está llevando a cabo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [Crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Crear controles reutilizables para elementos Web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

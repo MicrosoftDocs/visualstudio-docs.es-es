@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: deb4ce7c464e8518faff55957e1873ef1cd92c39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153370"
 ---
-# <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
+# <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica la condición asociada con el número de pase de punto de interrupción que hace que el punto de interrupción se activan.  
+Especifica la condición asociada al recuento de pasos de punto de interrupción que hace que se active el punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,28 +47,28 @@ public enum enum_BP_PASSCOUNT_STYLE { 
   
 ## <a name="members"></a>Miembros  
  BP_PASSCOUNT_NONE  
- No especifica que ningún estilo de recuento de pase de punto de interrupción.  
+ Especifica que no hay ningún estilo de número de pasadas de punto de interrupción.  
   
  BP_PASSCOUNT_EQUAL  
- Establece el estilo de recuento de pase de punto de interrupción para que sea igual. El punto de interrupción se desencadena cuando el número de veces que se visita el punto de interrupción es igual que el contador de pasos.  
+ Establece el estilo de recuento de pasadas de punto de interrupción en Equal. El punto de interrupción se desencadena cuando el número de veces que se alcanza el punto de interrupción es igual al número de pasos.  
   
  BP_PASSCOUNT_EQUAL_OR_GREATER  
- Establece el estilo de recuento de pase de punto de interrupción en el igual o mayor. El punto de interrupción se desencadena cuando el número de veces que se visita el punto de interrupción es igual o mayor que el recuento de pass.  
+ Establece el estilo de recuento de pasadas de punto de interrupción en igual o mayor. El punto de interrupción se desencadena cuando el número de veces que se alcanza el punto de interrupción es igual o mayor que el número de pasos.  
   
  BP_PASSCOUNT_MOD  
- Especifica un módulo de recuento de pasos. Por ejemplo, si el contador de pasos es del tipo `BP_PASSCOUNT_MOD` y el valor de recuento de pass es 4, se activa el punto de interrupción cada vez que el recuento de visitas sea un múltiplo de 4.  
+ Especifica un recuento de pases de módulo. Por ejemplo, si el recuento de pasos es del tipo `BP_PASSCOUNT_MOD` y el valor del recuento de pasos es 4, el punto de interrupción se desencadena cada vez que el número de llamadas es múltiplo de 4.  
   
 ## <a name="remarks"></a>Comentarios  
- Utilizado para la `stylePassCount` miembro de la [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estructura que a su vez es miembro de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras.  
+ Se utiliza para el `stylePassCount` miembro de la estructura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que, a su vez, es miembro de las estructuras [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   

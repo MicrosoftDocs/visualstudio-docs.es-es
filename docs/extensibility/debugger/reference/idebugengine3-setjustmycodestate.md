@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState ? Microsoft Docs
+title: 'IDebugEngine3:: SetJustMyCodeState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730673"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
-Este método indica al motor de depuración acerca de la información de estado JustMyCode.
+Este método indica al motor de depuración sobre la información de estado JustMyCode.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,19 +45,19 @@ int SetJustMyCodeState(
 
 ## <a name="parameters"></a>Parámetros
 `fUpdate`\
-[en] Distinto de`TRUE`cero ( ) para`FALSE`actualizar la información actual, cero ( ) para restablecer toda la información (ignorando cualquier cosa previamente establecida).
+de Distinto de cero ( `TRUE` ) para actualizar la información actual, cero ( `FALSE` ) para restablecer toda la información (omitiendo todo lo establecido anteriormente).
 
 `dwModules`\
-[en] Número de estructuras de información en`rgJMCSpec.`
+de Número de estructuras de información en `rgJMCSpec.`
 
 `rgJMCSpec`\
-[en] Matriz de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) estructuras que se va a utilizar.
+de Matriz de estructuras [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) que se va a usar.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
- JustMyCode es el concepto de depurar solo el código que pertenece a un usuario e ignorar todo el código intermedio, como el código del sistema, incluso si el código fuente está disponible para ese código del sistema.
+ JustMyCode es el concepto de depurar solo el código que pertenece a un usuario y omitir todo el código intermedio, como el código del sistema, incluso si el código fuente está disponible para ese código del sistema.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

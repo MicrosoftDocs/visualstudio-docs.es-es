@@ -1,5 +1,5 @@
 ---
-title: 'Advertencia de seguridad: El depurador debe ejecutar un comando que no se confía | Microsoft Docs'
+title: 'Advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a29ba026f9b3c2b8839d474c2d0833eb79f7ffd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683298"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza
@@ -39,13 +39,13 @@ Este cuadro de diálogo de advertencia aparece cuando utiliza un servidor de ori
  Cuadro de texto  
  Comando del archivo .pdb que se va a ejecutar.  
   
- Run  
+ Ejecutar  
  Permite que se ejecute el comando.  
   
  No ejecutar  
  Detiene la ejecución del comando y la descarga del archivo del servidor de origen.  
   
-## <a name="see-also"></a>Vea también  
- [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+## <a name="see-also"></a>Consulte también  
+ [Especificar archivos de código fuente y símbolos (. pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Servidor de origen](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)
