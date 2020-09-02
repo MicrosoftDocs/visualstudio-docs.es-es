@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4cf6ff2f1484255fc6c535ce764a5c6335161b44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151668"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera los números de línea en la operación de compilación especificado y los identificadores de archivo de origen.  
+Recupera los números de línea dentro de los identificadores de archivo de código fuente y de compilación especificados.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,18 +37,18 @@ HRESULT findLines ( 
   
 #### <a name="parameters"></a>Parámetros  
  `compiland`  
- [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa la operación de compilación. Utilice esta interfaz como un contexto en el que se va a buscar los números de línea.  
+ de Un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa la operación de compilación. Utilice esta interfaz como contexto en el que buscar los números de línea.  
   
  `file`  
- [in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa el archivo de origen en el que se va a buscar los números de línea.  
+ de Objeto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representa el archivo de código fuente en el que se van a buscar los números de línea.  
   
  `ppResult`  
- [out] Devuelve un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) recupera el objeto que contiene una lista de los números de línea.  
+ enuncia Devuelve un objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contiene una lista de los números de línea recuperados.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

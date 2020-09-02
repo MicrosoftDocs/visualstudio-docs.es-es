@@ -1,5 +1,5 @@
 ---
-title: Elemento CommandName (Elemento CommandName) Microsoft Docs
+title: CommandName (elemento) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739748"
 ---
-# <a name="commandname-element"></a>Elemento CommandName
-El `CommandName` elemento especifica el texto que aparece en la categoría de teclado en el cuadro de diálogo **Opciones** y en la lista **Comandos** del cuadro de diálogo **Personalizar.**
+# <a name="commandname-element"></a>CommandName (elemento)
+El `CommandName` elemento especifica el texto que aparece en la categoría teclado del cuadro de diálogo **Opciones** y en la lista **comandos** del cuadro de diálogo **personalizar** .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ El `CommandName` elemento especifica el texto que aparece en la categoría de te
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Strings](../extensibility/strings-element.md)|Agrupa elementos de `ButtonText` `CommandName`texto, como y .|
+|[Elemento Strings](../extensibility/strings-element.md)|Agrupa los elementos de texto, como `ButtonText` y `CommandName` .|
 
 ## <a name="see-also"></a>Vea también
-- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

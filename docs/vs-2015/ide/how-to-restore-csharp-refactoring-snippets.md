@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ae3f1d74a482192d3782aaa87baa816694abcf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670787"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Cómo: Restaurar miniprogramas de refactorización de C#
@@ -56,5 +56,5 @@ Las operaciones de refactorización de C# dependen de fragmentos de código situ
 
 6. Haga clic en **Abrir** en el cuadro de diálogo **Directorio de fragmentos de código** y, después, haga clic en **Aceptar** en el Administrador de fragmentos de código.
 
-## <a name="see-also"></a>Otras referencias
- [C# ](../ide/visual-csharp-code-snippets.md) [Fragmentos de código](../ide/code-snippets.md) de [refactorización deC#código Visual ()](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>Consulte también
+ [Fragmentos de código](../ide/code-snippets.md) de refactorización de [fragmentos de código de Visual c#](../ide/visual-csharp-code-snippets.md) [(C#)](../csharp-ide/refactoring-csharp.md)

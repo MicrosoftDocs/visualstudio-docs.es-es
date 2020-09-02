@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2 ? Microsoft Docs
+title: IDebugExpressionEvaluationCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 35e57e361b59e76e187617b5e528b219e8e47897
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729560"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
-Esta interfaz es enviada por el motor de depuración (DE) al administrador de depuración de sesión (SDM) cuando se completa la evaluación de expresiones asincrónicas.
+El motor DE depuración (DE) envía esta interfaz al administrador de depuración de la sesión (SDM) cuando se completa la evaluación de la expresión asincrónica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,28 +29,28 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- La DE implementa esta interfaz para notificar la finalización de una evaluación de expresión iniciada por una llamada a [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz debe implementarse en el mismo objeto que esta interfaz. El SDM utiliza [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz.
+ El DE implementa esta interfaz para notificar la finalización de una evaluación de expresión iniciada por una llamada a [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). La interfaz [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) debe implementarse en el mismo objeto que esta interfaz. El SDM usa [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz.
 
-## <a name="notes-for-callers"></a>Notas para las personas que llaman
- El DE crea y envía este objeto de evento para informar de la finalización de una evaluación de expresión. El evento se envía mediante la función de devolución de llamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando se adjunta al programa que se está depurando.
+## <a name="notes-for-callers"></a>Notas para llamadores
+ Crea y envía este objeto de evento para notificar la finalización de una evaluación de expresión. El evento se envía mediante la función de devolución de llamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando se adjunta al programa que se está depurando.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- En la tabla siguiente `IDebugExpressionEvaluationCompleteEvent2`se muestran los métodos de .
+ En la tabla siguiente se muestran los métodos de `IDebugExpressionEvaluationCompleteEvent2` .
 
 |Método|Descripción|
 |------------|-----------------|
 |[GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)|Obtiene la expresión original.|
-|[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|Obtiene el resultado de la evaluación de expresiones.|
+|[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|Obtiene el resultado de la evaluación de la expresión.|
 
 ## <a name="remarks"></a>Observaciones
  El DE debe enviar este evento, independientemente de si la evaluación se realizó correctamente o no.
 
- Si la evaluación no `DEBUG_PROPINFO_VALUE` `DEBUG_PROPINFO_ATTRIB` se realizó correctamente, los indicadores y no se establecerán en la [estructura DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) que `IDebugExpressionEvaluationCompleteEvent2` devuelve [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto se crea por el DE y devuelto en el caso si se produce un error en la evaluación).
+ Si la evaluación no se realizó correctamente, `DEBUG_PROPINFO_VALUE` las `DEBUG_PROPINFO_ATTRIB` marcas y no se establecerán en la estructura [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) devuelta por [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (el objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) crea el objeto y se devuelve en el `IDebugExpressionEvaluationCompleteEvent2` evento si se produjo un error en la evaluación).
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

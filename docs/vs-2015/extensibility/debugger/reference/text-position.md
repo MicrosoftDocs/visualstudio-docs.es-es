@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 210435231f98c19c16715817e2403f95da3d1f43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204832"
 ---
-# <a name="textposition"></a>TEXT_POSITION
+# <a name="text_position"></a>TEXT_POSITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Describe la ubicación de línea y columna en el texto dado.  
+Describe la ubicación de línea y columna en el texto especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,13 +42,13 @@ public struct TEXT_POSITION { 
   
 ## <a name="members"></a>Miembros  
  dwLine  
- Índice de línea en el archivo de código fuente.  
+ Índice de la línea del archivo de código fuente.  
   
  dwColumn  
- Desplazamiento de carácter de línea.  
+ Desplazamiento de caracteres en la línea.  
   
-## <a name="remarks"></a>Comentarios  
- Esta estructura se usa en el [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) y [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estructuras.  
+## <a name="remarks"></a>Observaciones  
+ Esta estructura se usa en las estructuras [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) y [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .  
   
  Esta estructura se rellena mediante una llamada a los métodos siguientes:  
   
@@ -73,16 +73,16 @@ public struct TEXT_POSITION { 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
- [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
+ [Getsourcerange (](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)   
  [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)   
  [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)   

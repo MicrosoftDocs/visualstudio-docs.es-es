@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: establecer propiedades de análisis de código paraC++ proyectos de C | Microsoft Docs'
+title: 'Cómo: establecer propiedades de análisis de código para proyectos de C/C++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,10 +20,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b2fb3cb81b49fd4b8cc83e0548110d2025c7488d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277986"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Cómo: Establecer propiedades de análisis de código para proyectos de C/C++
@@ -38,7 +38,7 @@ Puede configurar las reglas que utiliza la herramienta de análisis de código p
  La lista de **configuración** y la lista de **plataformas** le permiten aplicar una configuración de análisis de código diferente a distintas combinaciones de plataforma y configuración de proyecto. Por ejemplo, puede dirigir el análisis de código para aplicar un conjunto de reglas al proyecto para las compilaciones de depuración y un conjunto diferente para las compilaciones de versión.  
   
 ## <a name="enabling-code-analysis"></a>Habilitar el análisis de código  
- Puede decidir si desea habilitar el análisis de código para el proyecto seleccionando **Habilitar análisis de código paraC++ C/en la compilación**. En combinación con la lista de **configuración** , puede, por ejemplo, decidir deshabilitar el análisis de código para las compilaciones de depuración y habilitarlo para las compilaciones de versión.  
+ Puede decidir si desea habilitar el análisis de código para el proyecto seleccionando **Habilitar análisis de código para C/C++ al compilar**. En combinación con la lista de **configuración** , puede, por ejemplo, decidir deshabilitar el análisis de código para las compilaciones de depuración y habilitarlo para las compilaciones de versión.  
   
  Si el proyecto contiene código administrado, puede decidir si desea habilitar o deshabilitar el análisis de código seleccionando **Habilitar análisis de código al compilar**.  
   

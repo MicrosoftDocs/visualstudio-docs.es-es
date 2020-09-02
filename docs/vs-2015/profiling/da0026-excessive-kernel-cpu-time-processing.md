@@ -1,5 +1,5 @@
 ---
-title: 'DA0026: Procesamiento excesivo de tiempo de CPU en modo kernel | Microsoft Docs'
+title: 'DA0026: Tiempo de procesamiento excesivo de la CPU de kernel | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,24 +14,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152672"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Procesamiento excesivo de tiempo de CPU en modo kernel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id. de regla | LISTA DE TAREAS |  
-| Categoría | Uso de herramientas de generación de perfiles |  
+Identificador de regla | TODO |  
+| Categoría | Uso de Herramientas de generación de perfiles |  
 | Método de generación de perfiles | Muestreo |  
-| Mensaje | Se midió una cantidad relativamente alta de tiempo de CPU de modo kernel. Considere la posibilidad de investigar el origen con el muestreo de SysCall habilitado.|  
+| Mensaje | Se midió una cantidad relativamente alta de tiempo de CPU en modo kernel. Considere la posibilidad de investigar el origen con el muestreo de SysCall habilitado.|  
 | Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Causa  
+## <a name="cause"></a>Motivo  
  El tiempo de CPU proporcional que se ejecutó en modo kernel superó la cantidad de tiempo invertido en modo usuario. Considere la posibilidad de volver a generar perfiles y muestrear el número de llamadas del sistema (syscall) para determinar la causa de los tiempos de ejecución elevados del modo kernel.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

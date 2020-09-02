@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e2db8596c1c16f5c9fb54a8c7c867b06e997b7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657708"
 ---
 # <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
@@ -35,7 +35,7 @@ Debug.EvaluateStatement text
 ## <a name="arguments"></a>Argumentos
  `text` Obligatorio. Instrucción que se va a evaluar.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  La ventana que se usa para escribir el comando **EvaluateStatement** determina si el signo igual (=) se interpreta como operador de comparación o como operador de asignación.
 
  En la ventana **Comandos**, un signo igual (=) se interpreta como un operador de comparación. Por lo tanto, por ejemplo, si los valores de las variables `a` y `b` son diferentes, entonces el comando
@@ -60,5 +60,5 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a+b)
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Comando Imprimir](../../ide/reference/print-command.md) comandos de [Visual Studio comandos](../../ide/reference/visual-studio-commands.md) de la [ventana comandos](../../ide/reference/command-window.md) [Buscar/comando cuadros](../../ide/find-command-box.md) de comandos de [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847806"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Captura de información de gráficos mediante programación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.  
@@ -29,7 +29,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   
 - Llame a `CaptureCurrentFrame`cuando un problema de representación sea difícil de anticipar y de capturar en pruebas manuales, pero se puede predecir mediante programación usando información sobre el estado de la aplicación en tiempo de ejecución.  
   
-## <a name="CaptureDX11_2"></a> Captura mediante programación en Windows 8.1  
+## <a name="programmatic-capture-in-windows-81"></a><a name="CaptureDX11_2"></a> Captura mediante programación en Windows 8.1  
  En esta parte del tutorial se explica la captura mediante programación en aplicaciones que usan la API DirectX 11.2 en Windows 8.1, que emplea el método de captura robusta. Para obtener información sobre cómo utilizar la captura mediante programación en aplicaciones que utilicen versiones anteriores de DirectX en Windows 8.0, vea [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) más adelante en este tutorial.  
   
  Esta sección muestra cómo realizar estas tareas:  
@@ -58,13 +58,13 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
     ```  
   
     > [!IMPORTANT]
-    > No incluya el archivo de encabezado vsgcapture.h (que admite la captura mediante programación en Windows 8.0 y versiones anteriores) para efectuar la captura mediante programación en las aplicaciones de Windows 8.1. Este encabezado es incompatible con DirectX 11.2. Si este archivo se incluye después de incluir el encabezado d3d11_2. h, el compilador emite una advertencia. Si vsgcapture. h se incluye antes d3d11_2. h, la aplicación no se iniciará.  
+    > No incluya el archivo de encabezado vsgcapture.h (que admite la captura mediante programación en Windows 8.0 y versiones anteriores) para efectuar la captura mediante programación en las aplicaciones de Windows 8.1. Este encabezado es incompatible con DirectX 11.2. Si este archivo se incluye después de incluir el encabezado d3d11_2.h, el compilador emite una advertencia. Si vsgcapture.h se incluye antes que d3d11_2.h, la aplicación no se iniciará.  
   
     > [!NOTE]
     > Si tiene instalada la versión del SDK de DirectX de junio de 2010 en su equipo y la ruta de acceso de inclusión de su proyecto contiene `%DXSDK_DIR%includex86`, muévalo al final de la ruta de acceso de inclusión. Haga lo mismo para la ruta de la biblioteca.  
   
-#### <a name="windows-phone-81"></a>Windows Phone 8,1  
- Dado que el SDK de Windows Phone 8,1 no incluye el encabezado DXProgrammableCapture. h, deberá definir la interfaz de `IDXGraphicsAnalysis` para poder usar los métodos `BeginCapture()` y `EndCapture()`. Incluya los demás encabezados tal y como se describe en la sección anterior.  
+#### <a name="windows-phone-81"></a>Windows Phone 8.1  
+ Dado que el SDK de Windows Phone 8,1 no incluye el encabezado DXProgrammableCapture. h, deberá definir la `IDXGraphicsAnalysis` interfaz usted mismo para poder usar los `BeginCapture()` `EndCapture()` métodos y. Incluya los demás encabezados tal y como se describe en la sección anterior.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Cómo definir la interfaz IDXGraphicsAnalysis  
   
@@ -85,7 +85,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
  Antes de poder capturar información gráfica desde DirectX 11.2, debe obtener la interfaz de depuración DXGI.  
   
 > [!IMPORTANT]
-> Al usar la captura mediante programación, debe ejecutar la aplicación en diagnóstico de gráficos (Alt + F5 en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) o en la [herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md).  
+> Al usar la captura mediante programación debe seguir ejecutando la aplicación en diagnóstico de gráficos (Alt+F5 en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) o bajo la [Herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Cómo obtener la interfaz IDXGraphicsAnalysis  
   
@@ -129,7 +129,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
     ...  
     ```  
   
-## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="programmatic-capture-in-windows-80-and-earlier"></a><a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  Esta parte del tutorial explica la captura mediante programación en aplicaciones para Windows 8.0 y versiones anteriores que usan la API DirectX 11.1, que emplea el método de captura heredada. Para obtener información sobre cómo utilizar la captura mediante programación en aplicaciones que utilicen DirectX 11.2 en Windows 8.1, vea [Captura mediante programación en Windows 8.1](#CaptureDX11_2) más arriba en este tutorial.  
   
  Esta parte muestra las tareas siguientes:  
@@ -182,7 +182,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   
    Si no realiza este paso, el nombre del archivo será default.vsglog. Si no define `DONT_SAVE_VSGLOG_TO_TEMP`, la ubicación del archivo estará relacionada con el directorio temporal; de lo contrario, estará relacionada con el directorio de trabajo u otra ubicación si ha especificado un nombre de archivo absoluto.  
   
-  En el caso de las aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], la ubicación del directorio temporal es específica de cada usuario y aplicación, y normalmente se encuentra en una ubicación como C:\Users\\*nombreDeUsuario*\AppData\Local\Packages\\*nombre de familia de paquete*\TempState\\. En el caso de las aplicaciones de escritorio, la ubicación del directorio temporal es específica de cada usuario y normalmente se encuentra en una ubicación como C:\Users\\*nombreDeUsuario*\AppData\Local\Temp\\.  
+  En el caso de las [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicaciones, la ubicación del directorio temporal es específica para cada usuario y aplicación, y normalmente se encuentra en una ubicación como C:\Users \\ *nombreDeUsuario*\AppData\Local\Packages \\ *paquete Family nombre*\TempState \\ . En el caso de las aplicaciones de escritorio, la ubicación del directorio temporal es específica de cada usuario y normalmente se encuentra en una ubicación como C:\Users \\ *nombreDeUsuario*\AppData\Local\Temp \\ .  
   
 > [!NOTE]
 > Para escribir una ubicación concreta, debe tener permisos para escribir en esa ubicación; de lo contrario, se produce un error. Tenga en cuenta que las aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] son más restringidas que las aplicaciones de escritorio en cuanto a dónde pueden escribir datos y es posible que requieran configuración adicional para escribir en determinadas ubicaciones.  
@@ -196,9 +196,9 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
 ## <a name="next-steps"></a>Pasos siguientes  
  Este tutorial le ha mostrado cómo capturar información de gráficos mediante programación. El paso siguiente puede ser:  
   
-- Aprender cómo analizar la información de gráficos capturada utilizando la herramienta Diagnóstico de gráficos. Vea [información general](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Aprender cómo analizar la información de gráficos capturada utilizando la herramienta Diagnóstico de gráficos. Vea [Información general](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Tutorial: capturar información de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
- [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
+ [Capturar información de gráficos](../debugger/capturing-graphics-information.md)   
  [Herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md)

@@ -1,5 +1,5 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION Microsoft Docs
+title: INTERCEPT_EXCEPTION_ACTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc44a4fc5264566468777749d5732662ba81ed6d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715066"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
-Especifica qué acciones se deben realizar al interceptar excepciones.
+Especifica las acciones que se deben realizar al interceptar excepciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,15 +45,15 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 ## <a name="parameters"></a>Parámetros
 
 `IEA_INTERCEPT`\
-Permite interceptar la excepción actual. Este es el único valor admitido en la actualidad y debe especificarse.
+Habilita la interceptación de la excepción actual. Este es el único valor que se admite en la actualidad y debe especificarse.
 
 ## <a name="remarks"></a>Observaciones
-Estos valores se pasan al método [InterceptCurrentException.](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
+Estos valores se pasan al método [interceptcurrentexception (](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4fea9e3fb1d5b4d27b1d520ac2ab036747f73d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657630"
 ---
 # <a name="link-model-elements-and-work-items"></a>Vincular elementos de modelo con elementos de trabajo
@@ -63,21 +63,21 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 > [!WARNING]
 > Ya debe estar conectado al control de código fuente TFS (SCC) para crear o vincular a un elemento de trabajo. Si intenta abrir una conexión a un SCC TFS diferente, Visual Studio cierra automáticamente la solución actual. Asegúrese de que ya está conectado al SCC apropiado antes de intentar crear o vincular a un elemento de trabajo. En las versiones posteriores de Visual Studio, los comandos de menú no están disponibles si no está conectado a un SCC.
 
-- [Conectarse a un proyecto de equipo](#ConnectTFS)
+- [Conéctese a un proyecto de equipo](#ConnectTFS)
 
-- [Vincular un elemento de modelo a un nuevo elemento de trabajo](#LinkNew)
+- [Vincular un elemento del modelo a un nuevo elemento de trabajo](#LinkNew)
 
-- [Vincular un elemento de modelo a un elemento de trabajo existente](#LinkExisting)
+- [Vincular un elemento del modelo a un elemento de trabajo existente](#LinkExisting)
 
-- [Ver los elementos de trabajo vinculados a un elemento del modelo](#OpenWorkItem)
+- [Ver elementos de trabajo vinculados a un elemento de modelo](#OpenWorkItem)
 
 - [Ver elementos de modelo vinculados a un elemento de trabajo](#ViewLinkedModels)
 
-- [Eliminar vínculos entre elementos del modelo y elementos de trabajo](#RemoveLinks)
+- [Eliminar los vínculos entre los elementos del modelo y los elementos de trabajo](#RemoveLinks)
 
 - [Solución de problemas](#Troubleshooting)
 
-## <a name="ConnectTFS"></a>Conectarse a un proyecto de equipo
+## <a name="connect-to-a-team-project"></a><a name="ConnectTFS"></a> Conectarse a un proyecto de equipo
  Para crear, ver o quitar vínculos, primero debe conectarse a su proyecto de equipo.
 
 1. En el menú **Equipo** , elija **Administrar conexiones** para mostrar la ventana de Team Explorer.
@@ -86,7 +86,7 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 
 3. En **Team Explorer**, elija el proyecto donde desea crear, vincular o ver elementos de trabajo.
 
-## <a name="LinkNew"></a>Vincular un elemento de modelo a un nuevo elemento de trabajo
+## <a name="link-a-model-element-to-a-new-work-item"></a><a name="LinkNew"></a> Vincular un elemento de modelo a un nuevo elemento de trabajo
 
 1. Asegúrese de que está conectado a la instancia TFS que quiere utilizar.
 
@@ -101,7 +101,7 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 > [!WARNING]
 > Ya debe estar conectado al control de código fuente TFS (SCC) para crear o vincular a un elemento de trabajo. Si intenta abrir una conexión a un SCC TFS diferente, Visual Studio cierra automáticamente la solución actual. Asegúrese de que ya está conectado al SCC apropiado antes de intentar crear o vincular a un elemento de trabajo. En las versiones posteriores de Visual Studio, los comandos de menú no están disponibles si no está conectado a un SCC.
 
-## <a name="LinkExisting"></a>Vincular un elemento de modelo a un elemento de trabajo existente
+## <a name="link-a-model-element-to-an-existing-work-item"></a><a name="LinkExisting"></a> Vincular un elemento de modelo a un elemento de trabajo existente
  Cuando enlace elementos de modelo a elementos de trabajo, empiece por el elemento de modelo, no por el elemento de trabajo.
 
 1. Asegúrese de que está conectado a la instancia TFS que quiere utilizar.
@@ -125,7 +125,7 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 > [!WARNING]
 > Ya debe estar conectado al control de código fuente TFS (SCC) para crear o vincular a un elemento de trabajo. Si intenta abrir una conexión a un SCC TFS diferente, Visual Studio cierra automáticamente la solución actual. Asegúrese de que ya está conectado al SCC apropiado antes de intentar crear o vincular a un elemento de trabajo. En las versiones posteriores de Visual Studio, los comandos de menú no están disponibles si no está conectado a un SCC.
 
-## <a name="OpenWorkItem"></a>Ver los elementos de trabajo vinculados a un elemento del modelo
+## <a name="view-work-items-linked-to-a-model-element"></a><a name="OpenWorkItem"></a> Ver los elementos de trabajo vinculados a un elemento del modelo
 
 1. En **Team Explorer**, asegúrese de que esté conectado al proyecto de equipo en el que están vinculados los elementos de trabajo al elemento de modelo.
 
@@ -134,7 +134,7 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
     > [!NOTE]
     > Solo aparecerán los elementos de trabajo del servidor actualmente conectado. Si no ve ningún elemento de trabajo, asegúrese de que está conectado al servidor correcto en **Team Explorer**.
 
-## <a name="ViewLinkedModels"></a>Ver elementos de modelo vinculados a un elemento de trabajo
+## <a name="view-model-elements-linked-to-a-work-item"></a><a name="ViewLinkedModels"></a> Ver elementos de modelo vinculados a un elemento de trabajo
  Puede ver los elementos y los diagramas de modelado vinculados a un elemento de trabajo en Visual Studio Team Services y en Team Foundation Server 2012 o posterior. Por ejemplo, un elemento de trabajo se puede vincular a modelos de clases que muestren el diseño de las nuevas clases que se van a implementar.
 
 1. En **Team Explorer**, asegúrese de que esté conectado al proyecto de equipo en el que están vinculados los elementos de modelo al elemento de trabajo.
@@ -144,9 +144,9 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 
 2. Abra el elemento de trabajo y elija **Vínculos**. En **Vínculo de modelo**, abra el menú contextual del elemento de modelo vinculado. Elija **Abrir elemento vinculado**.
 
-     ![Abrir el elemento de modelo vinculado desde un elemento de trabajo](../modeling/media/workitem-openlinkedmodelelement.png "WorkItem_OpenLinkedModelElement")
+     ![Elemento de modelo vinculado abierto de un elemento de trabajo](../modeling/media/workitem-openlinkedmodelelement.png "WorkItem_OpenLinkedModelElement")
 
-## <a name="RemoveLinks"></a>Eliminar vínculos entre elementos del modelo y elementos de trabajo
+## <a name="delete-links-between-model-elements-and-work-items"></a><a name="RemoveLinks"></a> Eliminar vínculos entre elementos del modelo y elementos de trabajo
  Para quitar un elemento de trabajo vinculado, empiece por el elemento del modelo. De este modo se quita correctamente el vínculo recíproco entre ese elemento de modelo y el elemento de trabajo. Si comienza por el elemento de trabajo, el vínculo recíproco del elemento de modelo al elemento de trabajo no se eliminará.
 
 1. En el diagrama de modelado o en el **Explorador de modelos UML**, abra el menú contextual del elemento de modelo.
@@ -157,14 +157,14 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 
     1. Elija **Propiedades**y, después, **Elementos de trabajo** , donde aparece el número de elementos de trabajo vinculados.
 
-    2. En la propiedad **Elementos de trabajo** , elija el botón de puntos suspensivos **[…]** .
+    2. En la propiedad **Elementos de trabajo** , elija el botón de puntos suspensivos **[…]**.
 
         > [!NOTE]
         > Solo aparecen los elementos de trabajo del servidor actual. Si la lista está vacía pero el número de elementos de trabajo no es cero, asegúrese de que la conexión se ha establecido con el servidor correcto en **Team Explorer**.
 
 3. En **Quitar vínculos a elementos de trabajo**, desactive los elementos seleccionados que desea desvincular. Elija **Aceptar**.
 
-## <a name="Troubleshooting"></a>Solución
+## <a name="troubleshooting"></a><a name="Troubleshooting"></a> Solucionar problemas
 
 |**Problema**|**Causa posible**|**Resolución**|
 |---------------|------------------------|--------------------|
@@ -173,5 +173,5 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 |El elemento de trabajo no tiene los elementos de modelo vinculados que esperaba.|Un elemento de trabajo muestra un elemento de capa vinculado solo si el vínculo se creó desde el elemento de trabajo. Si su equipo no usa [!INCLUDE[esprscc](../includes/esprscc-md.md)], se usará la ruta de acceso local de los diagramas para crear los vínculos. Si el proyecto de modelado y sus diagramas están en [!INCLUDE[esprscc](../includes/esprscc-md.md)], todos los miembros del equipo que tengan acceso al proyecto pueden ver los elementos vinculados en los elementos de trabajo.|Intente actualizar el elemento de trabajo.|
 |Al eliminar un vínculo a un elemento de modelo desde un elemento de trabajo, el vínculo del elemento de modelo al elemento de trabajo no se elimina.||Elimine el vínculo al elemento de trabajo a partir del elemento de modelo.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [crear modelos para la aplicación](../modeling/create-models-for-your-app.md)

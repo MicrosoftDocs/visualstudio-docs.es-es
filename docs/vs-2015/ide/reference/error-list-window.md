@@ -17,17 +17,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 35be5ddeedf0b081fa94e399f294151e73a157ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657738"
 ---
 # <a name="error-list-window"></a>Lista de errores (ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 NOTA]
-> La Lista de errores muestra información sobre un mensaje de error específico. Puede copiar el número de error o el texto de la cadena de error de la ventana de salida. Para mostrar la ventana de salida, presione Ctrl+Alt+O. Vea [Ventana de salida](../../ide/reference/output-window.md).
+> La Lista de errores muestra información sobre un mensaje de error específico. Puede copiar el número de error o el texto de la cadena de error de la ventana de salida. Para mostrar la ventana de salida, presione Ctrl+Alt+O. Vea [ventana de salida](../../ide/reference/output-window.md).
 
  La ventana **Lista de errores** permite desarrollar aplicaciones de forma más rápida. Por ejemplo, puede realizar las tareas siguientes:
 
@@ -47,10 +47,10 @@ NOTA]
 
   Puede seleccionar las pestañas **Errores**, **Advertencias** y **Mensajes** para ver diferentes niveles de información.
 
-  Para ordenar la lista, haga clic en cualquier encabezado de columna. Para ordenar de nuevo por otra columna, mantenga presionada la tecla MAYÚS y haga clic en otro encabezado de columna. Para seleccionar las columnas que se muestran y las que están ocultas, seleccione **Mostrar columnas** en el menú contextual. Si desea cambiar el orden en el que se muestran las columnas, arrastre cualquier encabezado de columna hacia la izquierda o la derecha.
+  Para ordenar la lista, haga clic en cualquier encabezado de columna. Para ordenar de nuevo por otra columna, mantenga presionada la tecla MAYÚS y haga clic en otro encabezado de columna. Para seleccionar las columnas que se muestran y las que están ocultas, seleccione **Mostrar columnas** en el menú contextual. Para cambiar el orden en que se muestran las columnas, arrastre cualquier encabezado de columna hacia la izquierda o la derecha.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar su configuración, haga clic en **Herramientas/Importar y exportar configuraciones**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar su configuración, haga clic en **Herramientas/Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="error-list-filters"></a>Filtros de la lista de errores
  Hay dos tipos de filtro en dos listas desplegables, una en el lado derecho de la barra de herramientas y otra a la izquierda de la barra de herramientas. La lista desplegable del lado izquierdo de la barra de herramientas especifica el conjunto de archivos de código que se va a usar (**Toda la solución**, **Documentos abiertos**, **Proyecto actual** o **Documento actual**).
@@ -70,14 +70,14 @@ NOTA]
 
    La lista que se muestra en el lado derecho de la barra de herramientas especifica si se muestran los errores desde la compilación (los errores resultantes de una operación de compilación), desde IntelliSense (los errores detectados antes de ejecutar una compilación) o desde ambos.
 
-## <a name="search"></a>Buscar
+## <a name="search"></a>Search
  Use el cuadro de texto **Lista de errores de búsqueda** en el lado derecho de la barra de herramientas **Lista de errores** para buscar errores específicos en la lista de errores. Puede buscar en cualquier columna visible de la lista de errores. Los resultados de la búsqueda siempre se ordenan en función de la columna que tenga prioridad de ordenación en lugar de la consulta o el filtro aplicado. Si presiona la tecla **Esc** mientras el foco está en la **Lista de errores**, se borra el término de búsqueda y los resultados filtrados de la búsqueda. También puede hacer clic en la **X** que se muestra en el lado derecho del cuadro de texto para borrarlos.
 
-## <a name="save"></a>Save
+## <a name="save"></a>Guardar
  Puede copiar la lista de errores y guardarla en un archivo. Seleccione los errores que quiere copiar, haga clic con el botón derecho en la selección y, después, seleccione **Copiar** en el menú contextual. Después puede pegar los errores en un archivo. Si pega los errores en una hoja de cálculo de Excel, los campos aparecen como columnas diferentes.
 
 ## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario
- Gravedad muestra los distintos tipos de entradas de **lista de errores** (**error**, **mensaje**, **ADVERTENCIA**, **Advertencia (activa)** , **Advertencia (inactiva)** .
+ Gravedad muestra los distintos tipos de entradas de **lista de errores** (**error**, **mensaje**, **ADVERTENCIA**, **Advertencia (activa)**, **Advertencia (inactiva)**.
 
  Código muestra el código de error.
 

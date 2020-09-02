@@ -14,16 +14,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b6e74caa9eedd42e25339d62f5837ccfe82d001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204380"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de estado de archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración se utiliza en el [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y `POPLISTFUNC` función de devolución de llamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).  
+El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración la usan [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y la `POPLISTFUNC` función de devolución de llamada (vea [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -52,52 +52,52 @@ enum SccStatus {
   
 ## <a name="members"></a>Miembros  
  SCC_STATUS_INVALID  
- No se pudo obtener el estado; No confíe en él.  
+ No se pudo obtener el estado. no se base en él.  
   
  SCC_STATUS_NOTCONTROLLED  
- Archivo no está bajo control de código fuente.  
+ El archivo no está bajo control de código fuente.  
   
  SCC_STATUS_CONTROLLED  
- Archivo está bajo control de código fuente.  
+ El archivo está bajo control de código fuente.  
   
  SCC_STATUS_CHECKEDOUT  
  Desprotegido por el usuario actual en el disco local.  
   
  SCC_STATUS_OUTOTHER  
- Archivo está desprotegido por otro usuario.  
+ El archivo está desprotegido por otro usuario.  
   
  SCC_STATUS_OUTEXCLUSIVE  
- Archivo está desprotegido en exclusiva.  
+ El archivo está desprotegido en exclusiva.  
   
  SCC_STATUS_OUTMULTIPLE  
- Archivo está desprotegido por más de un usuario.  
+ El archivo está desprotegido por más de un usuario.  
   
  SCC_STATUS_OUTOFDATE  
- El archivo no es la más reciente.  
+ El archivo no es el más reciente.  
   
  SCC_STATUS_DELETED  
- Se eliminó el archivo del proyecto.  
+ El archivo se ha eliminado del proyecto.  
   
  SCC_STATUS_LOCKED  
- El archivo está bloqueado; No hay versiones más permitidas.  
+ El archivo está bloqueado; no se permiten más versiones.  
   
  SCC_STATUS_MERGED  
- Archivo se ha combinado pero todavía no se ha corregido y comprobado.  
+ El archivo se ha combinado pero aún no se ha corregido o comprobado.  
   
  SCC_STATUS_SHARED  
- Archivo se comparte entre proyectos.  
+ El archivo se comparte entre proyectos.  
   
  SCC_STATUS_PINNED  
- Archivo se comparte en una versión explícita.  
+ El archivo se comparte con una versión explícita.  
   
  SCC_STATUS_MODIFIED  
- Archivo ha sido modificado, interrumpido o infringido.  
+ El archivo se ha modificado, interrumpido o infringido.  
   
  SCC_STATUS_OUTBYUSER  
- Archivo está desprotegido por el usuario actual.  
+ El archivo está desprotegido por el usuario actual.  
   
  SCC_STATUS_NOMERGE  
- Archivo nunca se puede mezclar con y no debe guardarse antes de una operación GET.  
+ El archivo nunca se puede combinar con y no es necesario guardarlo antes de una obtención.  
   
  SCC_STATUS_RESERVED_1  
  Reservado para uso interno.  
@@ -105,7 +105,7 @@ enum SccStatus {
  SCC_STATUS_RESERVED_2  
  Reservado para uso interno.  
   
-## <a name="see-also"></a>Vea también  
- [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Consulte también  
+ [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

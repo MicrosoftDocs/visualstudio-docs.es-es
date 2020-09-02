@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30b13610cc59b8a0225e52abf47f9a4f2cc97d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657578"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Administrar modelos y diagramas con control de versiones
@@ -28,7 +28,7 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
 > [!IMPORTANT]
 > Sea prudente cuando varios usuarios trabajen en el mismo proyecto de modelado. Descubra cómo puede [organizar modelos en proyectos grandes o medianos](../modeling/structure-your-modeling-solution.md).
 
-## <a name="ModelingProjects"></a>Archivos en un proyecto de modelado
+## <a name="files-in-a-modeling-project"></a><a name="ModelingProjects"></a> Archivos en un proyecto de modelado
  En un proyecto de modelado pueden trabajar varios usuarios al mismo tiempo, siempre que lo hagan en archivos diferentes.
 
  Para evitar o resolver conflictos entre los cambios realizados por diferentes usuarios, es importante comprender cómo se almacena el modelo en los archivos.
@@ -42,9 +42,9 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
   - **DiagramName.classdiagram.layout** : si se elimina este archivo, las formas seguirán apareciendo en el diagrama, pero perderán sus tamaños y posiciones. Cada archivo de diseño depende de un archivo de diagrama. Para verlo, haga clic en [+] junto al archivo de diagrama en el Explorador de soluciones.
 
 > [!NOTE]
-> Es importante mantener la coherencia entre los archivos. Por ejemplo, si se usa control de código fuente para revertir los cambios en un archivo .uml, al mismo tiempo se deben deshacer los cambios correspondientes en los archivos .*diagram y .layout. Elementos representados en un. \*diagram archivo se perderá si no se representan también en un archivo. UML.
+> Es importante mantener la coherencia entre los archivos. Por ejemplo, si se usa control de código fuente para revertir los cambios en un archivo .uml, al mismo tiempo se deben deshacer los cambios correspondientes en los archivos .*diagram y .layout. Elementos representados en un. \* el archivo de diagrama se perderá si no se representa también en un archivo. UML.
 
-## <a name="Shared"></a>Trabajar en proyectos de modelado compartidos
+## <a name="working-on-shared-modeling-projects"></a><a name="Shared"></a> Trabajar en proyectos de modelado compartidos
  Para minimizar los conflictos al trabajar simultáneamente en diferentes partes de un proyecto:
 
 - Divida el proyecto de modelado en paquetes que representen las distintas áreas de trabajo. Mueva todo el modelo a los paquetes, en lugar de dejarlo en el modelo raíz. Para obtener más información, vea [definir paquetes y espacios de nombres](../modeling/define-packages-and-namespaces.md).
@@ -70,7 +70,7 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
     > [!NOTE]
     > Si un archivo está abierto cuando se realiza una operación **Get**y la operación da como resultado cambios locales, se le pedirá que vuelva a cargar el archivo. En este caso, haga clic en **No**y, después, vuelva a cargar el proyecto completo. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto de modelado, haga clic en **Descargar el proyecto**y, luego, haga clic en **Volver a cargar el proyecto**.
 
-### <a name="Exclusive"></a>Cambios que requieren acceso exclusivo al modelo
+### <a name="changes-requiring-exclusive-access-to-the-model"></a><a name="Exclusive"></a> Cambios que requieren acceso exclusivo al modelo
  Antes de realizar los siguientes tipos de cambios, asegúrese de que tiene un bloqueo de desprotección en todo el proyecto.
 
 - Eliminar o cambiar el nombre de elementos a los que se hace referencia desde otros paquetes.
@@ -96,7 +96,7 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
     > [!NOTE]
     > No se puede mover el archivo a un proyecto diferente.
 
-## <a name="Merging"></a>Combinar los cambios en los diagramas y archivos de modelo
+## <a name="merging-changes-in-model-files-and-diagrams"></a><a name="Merging"></a> Combinar los cambios en los diagramas y archivos de modelo
  Después de que varios usuarios trabajen en un modelo al mismo tiempo, [!INCLUDE[esprscc](../includes/esprscc-md.md)] le solicitará que combine los cambios en los archivos de modelo. Si se trabaja en proyectos independientes, tal como se describe en las secciones anteriores, se evitarán la mayoría de combinaciones. Normalmente, los conflictos restantes se pueden combinar automáticamente de forma segura. Los siguientes tipos de cambios no deberían causar ninguna dificultad:
 
 - Tipos de líneas de vida. Cuando se agrega una línea de vida a una interacción (diagrama de secuencia), su tipo se almacena en el modelo raíz, a menos que la línea de vida se crease a partir de un tipo existente.
@@ -107,5 +107,5 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
 
 - Eliminar o cambiar el nombre de elementos a los que únicamente se hace referencia desde su propio paquete.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Analizar y modelar arquitecturas](../modeling/analyze-and-model-your-architecture.md) [compartir modelos y exportar diagramas](../modeling/share-models-and-exporting-diagrams.md)

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f1dfe6971d4e5c57af0f350b9978a0081761f5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151822"
 ---
-# <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
+# <a name="idiasegmentget_addresssection"></a>IDiaSegment::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el número de sección que se asigna a este segmento.  
@@ -35,10 +35,10 @@ HRESULT get_addressSection ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el número de sección que se asigna a este segmento.  
+ enuncia Devuelve el número de sección que se asigna a este segmento.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

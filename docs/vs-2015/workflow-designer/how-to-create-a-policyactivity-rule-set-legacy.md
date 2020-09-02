@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f8599348d204d149f3e28d17d681941ddf476b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849318"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Cómo: Crear un conjunto de reglas para PolicyActivity (Heredado)
@@ -36,15 +36,15 @@ En este tema se describe cómo crear un conjunto de reglas de actividades de dir
 
 2. Haga clic en la propiedad **RuleSetReference** .
 
-3. Siga uno de los procedimientos que se describen a continuación:
+3. Realice una de las siguientes acciones:
 
     - Haga clic en el **RuleSetReference** de puntos suspensivos **[...]** y, a continuación, seleccione un conjunto de reglas existente en el [cuadro de diálogo Seleccionar conjunto de reglas (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md). A continuación, vaya al paso 10.
 
-         O bien,
+         o bien
 
     - Escriba un nombre para un conjunto de reglas. Haga clic en el **RuleSetReference** de puntos suspensivos **[...]** y, a continuación, seleccione **Editar** en el [cuadro de diálogo Seleccionar conjunto de reglas (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
 
-         O bien,
+         o bien
 
     - Escriba un nombre para un conjunto de reglas. Expanda la propiedad **RuleSetReference** y seleccione los puntos suspensivos **[...]** en la propiedad de **definición ruleset** .
 
@@ -60,7 +60,7 @@ En este tema se describe cómo crear un conjunto de reglas de actividades de dir
 
 8. Haga clic de nuevo en **Agregar regla** para agregar otra regla.
 
-9. Cuando termine, haga clic en **Aceptar**.
+9. Cuando haya terminado, haga clic en **Aceptar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) cuadro de [diálogo Seleccionar conjunto de reglas (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [cuadro de diálogo Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [uso de la actividad directiva actividades de](https://msdn2.microsoft.com/library/bb675229.aspx) [flujo de trabajo heredadas](../workflow-designer/legacy-workflow-activities.md)

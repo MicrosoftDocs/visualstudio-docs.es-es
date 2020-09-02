@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 820f4ac8b154579664e01b12aa8146e4668cc17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670676"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Cómo: Especificar eventos de compilación (Visual Basic)
@@ -144,7 +144,7 @@ Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. En el Diseñador de proyectos, vaya a la pestaña **Compilar** y haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.
+6. En el diseñador de proyectos, vaya a la pestaña **compilar** y haga clic en el botón **eventos de compilación** para abrir el cuadro de diálogo **eventos de compilación** .
 
 7. En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:
 
@@ -164,5 +164,5 @@ Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Vea también
- [Administrar propiedades de compilación](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [, página compilar, diseñador de proyectos (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Página publicar,](../ide/reference/publish-page-project-designer.md) [cuadro de diálogo línea de comandos del evento anterior/posterior a la compilación del](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) diseñador de proyectos [Cómo: especificar eventos de compilaciónC#() ](../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>Consulte también
+ [Administrar propiedades de compilación](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [, página compilar, diseñador de proyectos (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Página publicar,](../ide/reference/publish-page-project-designer.md) [cuadro de diálogo línea de comandos del evento anterior/posterior a la compilación del](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) diseñador de proyectos [Cómo: especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md)

@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151078"
 ---
 # <a name="create-an-android-native-activity-app"></a>Crear una aplicación de Android Native Activity
@@ -23,29 +23,29 @@ ms.locfileid: "68151078"
 
 Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataforma, Visual Studio 2015 puede usarse para crear aplicaciones de Android Native Activity completamente funcionales. El kit de desarrollo nativo (NDK) de Android es un conjunto de herramientas que le permite implementar la mayor parte de su aplicación para Android mediante código de C/C++ puro. El código Java JNI actúa como adherencia para permitir que el código C/C++ interactúe con Android. El NDK de Android introdujo la capacidad para crear aplicaciones Native Activity con la API de Android Level 9. El código Native Activity se usa para crear aplicaciones de juegos y gráficos avanzados que usan Unreal Engine u OpenGL. Este tema le guiará en el proceso de creación de una aplicación Native Activity sencilla que usa OpenGL. Existen temas adicionales que abordan el ciclo de vida de desarrollador al completo incluida la edición, la compilación, la depuración y la implementación de código Native Activity.  
   
- [Requisitos](#req)   
- [Crear un nuevo proyecto de Native Activity](#Create)   
+ [Satisfacer](#req)   
+ [Crear un nuevo proyecto de actividad nativa](#Create)   
  [Compilar y ejecutar la aplicación predeterminada Native Activity de Android](#BuildHello)  
   
-## <a name="req"></a> Requisitos  
+## <a name="requirements"></a><a name="req"></a> Requisitos  
  Antes de crear una aplicación de Android Native Activity, asegúrese de que cumple todos los requisitos del sistema y de que tiene instalada la opción Visual C++ para el desarrollo móvil multiplataforma en Visual Studio 2015. Para obtener más información, consulta [Instalar Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Asegúrese de que las herramientas de terceros y SDK necesarios estén incluidos en la instalación y que está instalado el emulador de Microsoft Visual Studio para Android.  
   
-## <a name="Create"></a> Crear un nuevo proyecto de Native Activity  
+## <a name="create-a-new-native-activity-project"></a><a name="Create"></a> Crear un nuevo proyecto de actividad nativa  
  En este tutorial, primero debe crear un nuevo proyecto de Android Native Activity y, a continuación, compilar y ejecutar la aplicación predeterminada en el emulador de Visual Studio para Android.  
   
 #### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
 1. Abra Visual Studio. En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
-2. En el cuadro de diálogo **Nuevo proyecto** , debajo de **Plantillas**, elija **Visual C++** , **Multiplataforma**y luego elija la plantilla **Aplicación de Native-Activity (Android)** .  
+2. En el cuadro de diálogo **Nuevo proyecto** , debajo de **Plantillas**, elija **Visual C++**, **Multiplataforma**y luego elija la plantilla **Aplicación de Native-Activity (Android)** .  
   
-3. Ponga a la aplicación un nombre como `MyAndroidApp`y luego elija **Aceptar**.  
+3. Asigne a la aplicación un nombre como `MyAndroidApp`y luego elija **Aceptar**.  
   
-    ![Crear un proyecto de actividad nativa](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Cree un proyecto native-activity](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
     Visual Studio crea la solución nueva y abre el Explorador de soluciones.  
   
-    ![Proyecto de actividad nativa en el Explorador de soluciones](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Proyecto native-activity en el Explorador de soluciones](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
    La nueva solución de aplicaciones Native Activity de Android incluye dos proyectos:  
   
@@ -53,14 +53,14 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
   
 - **MyAndroidApp.Packaging** crea el archivo .apk para la implementación en un emulador o dispositivo Android. Este contiene los recursos y el archivo AndroidManifest.xml donde se establecen las propiedades del manifiesto. También contiene el archivo build.xml que controla el proceso de compilación de Ant. Se establece como proyecto de inicio de manera predeterminada para que se pueda implementar y ejecutar directamente desde Visual Studio.  
   
-## <a name="BuildHello"></a> Compilar y ejecutar la aplicación predeterminada Native Activity de Android  
+## <a name="build-and-run-the-default-android-native-activity-app"></a><a name="BuildHello"></a> Compilar y ejecutar la aplicación de Android Native Activity predeterminada  
  Compile y ejecute la aplicación generada por la plantilla para comprobar su instalación y configuración. Para realizar esta prueba inicial, ejecute la aplicación en uno de los perfiles de dispositivo que instala el emulador de Visual Studio para Android. Si prefiere probar la aplicación en otro destino, cargue el emulador de destino o conecte el dispositivo a su equipo.  
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>Para compilar y ejecutar la aplicación Native Activity predeterminada  
   
-1. Si aún no está seleccionada, elija la opción **x86** en la lista desplegable **Plataformas de solución** .  
+1. Si aún no está seleccionado, elija **x86** en la lista desplegable **plataformas de solución** .  
   
-     ![Selección de x86 en el menú desplegable Plataformas de solución](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
+     ![Selección de x86 en la lista desplegable Plataformas de solución](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
      Si la lista **Plataformas de solución** no aparece, elija **Plataformas de solución** en la lista desplegable **Agregar o quitar botones** y luego elija la plataforma.  
   

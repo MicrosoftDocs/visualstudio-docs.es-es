@@ -1,5 +1,5 @@
 ---
-title: Elemento Assembly (Plantillas de Visual Studio) Microsoft Docs
+title: Assembly (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740036"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (plantillas de Visual Studio)
+# <a name="assembly-element-visual-studio-templates"></a>Assembly (elemento, plantillas de Visual Studio)
 Especifica información sobre un ensamblado, que la plantilla utiliza para agregar una referencia de ese ensamblado a los proyectos.
 
- \<VSTemplate \<> TemplateContent \< \<> \<referencias> referencia> ensamblado>
+ \<VSTemplate> \<TemplateContent>
+ \<References>
+ \<Reference>
+ \<Assembly>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,10 +72,10 @@ Especifica información sobre un ensamblado, que la plantilla utiliza para agreg
 ## <a name="remarks"></a>Observaciones
  `Assembly` es un elemento secundario obligatorio de `Reference`.
 
- Los `Reference` `References,` elementos , y `Assembly` solo se pueden utilizar `Type` en `Item`archivos *.vstemplate* que tengan un valor de atributo de .
+ Los `Reference` `References,` elementos, y `Assembly` solo se pueden usar en los archivos *. vstemplate* que tienen un `Type` valor de atributo de `Item` .
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo `TemplateContent` siguiente se muestra el elemento de una plantilla de elemento. Este XML agrega referencias a los ensamblados *System.dll* y *System.Data.dll.*
+ En el ejemplo siguiente se muestra el `TemplateContent` elemento de una plantilla de elemento. Este XML agrega referencias a los ensamblados de *System.dll* y *System.Data.dll* .
 
 ```
 <TemplateContent>
@@ -93,5 +96,5 @@ Especifica información sobre un ensamblado, que la plantilla utiliza para agreg
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento de botón ? Microsoft Docs
+title: Elemento Button | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739931"
 ---
 # <a name="button-element"></a>Elemento Button
@@ -39,30 +39,30 @@ Define un elemento con el que el usuario puede interactuar. Los botones pueden s
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Necesario. GUID del identificador de comando GUID/ID.|
-|id|Necesario. ID del identificador de comando GUID/ID.|
+|guid|Necesario. GUID del identificador del comando GUID/ID.|
+|id|Necesario. IDENTIFICADOR del identificador del comando GUID/ID.|
 |priority|Opcional. Valor numérico que especifica la prioridad.|
-|type|Opcional. Un valor enumerado que especifica el tipo de botón.<br /><br /> Si no se da, utiliza Button.<br /><br /> Botón<br /> Un comando estándar que aparece en las barras de herramientas (normalmente como un botón icónico), menús y menús contextuales.<br /><br /> MenuButton<br /> Elemento de menú que no ejecuta un comando, pero genera otro menú.<br /><br /> SplitDropDown<br /> Controles, como los botones Deshacer y Rehacer de la barra de herramientas estándar de Microsoft Word.|
-|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|type|Opcional. Valor enumerado que especifica el tipo de botón.<br /><br /> Si no se especifica, usa el botón.<br /><br /> Botón<br /> Comando estándar que aparece en las barras de herramientas (normalmente como un botón de iconos), menús y menús contextuales.<br /><br /> MenuButton<br /> Un elemento de menú que no ejecuta un comando, pero genera otro menú.<br /><br /> SplitDropDown<br /> Controles, como los botones deshacer y rehacer de la barra de herramientas estándar de Microsoft Word.|
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento primario](../extensibility/parent-element.md)|Opcional. El elemento primario del botón.|
-|[Elemento Icono](../extensibility/icon-element.md)|Opcional. El icono asociado con el botón.|
-|[Elemento de indicador de comando](../extensibility/command-flag-element.md)|Necesario. Los valores CommandFlag válidos para un Button son los siguientes.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - PredeterminadoInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DinámicaVisibilidad<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> - NoPersonalizar<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> - Picto<br /><br /> - PostExec<br /><br /> - ProfferedCmd<br /><br /> - RoutetoDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> - TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> - TextOnly|
-|[Elemento Strings](../extensibility/strings-element.md)|Necesario. El elemento secundario [ButtonText](../extensibility/buttontext-element.md) debe definirse.|
+|[Elemento primario](../extensibility/parent-element.md)|Opcional. Elemento primario del botón.|
+|[Elemento Icon](../extensibility/icon-element.md)|Opcional. Icono asociado al botón.|
+|[Elemento de marca de comando](../extensibility/command-flag-element.md)|Necesario. Los valores válidos de CommandFlag para un botón son los siguientes.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> -Nocustomizate<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -PICT<br /><br /> -Postexec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -Textchanges al<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -TextOnly|
+|[Elemento Strings](../extensibility/strings-element.md)|Necesario. Se debe definir el [elemento ButtonText](../extensibility/buttontext-element.md) secundario.|
 |Anotación|Comentario opcional.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Buttons](../extensibility/buttons-element.md)|Elementos De botón de grupos.|
+|[Buttons, elemento](../extensibility/buttons-element.md)|Agrupa los elementos de botón.|
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se define un botón en un archivo *.vsct.*
+ En el ejemplo siguiente se define un botón en un archivo *. Vsct* .
 
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -76,5 +76,5 @@ Define un elemento con el que el usuario puede interactuar. Los botones pueden s
 </Button>
  ```
 
-## <a name="see-also"></a>Vea también
-- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte también
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
