@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f783161865092f714955b65e6f2fa4791741cbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664288"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
@@ -135,7 +135,7 @@ namespace LinqToXmlDataBinding {
 ```
 
 ### <a name="comments"></a>Comentarios
- Para conocer el código fuente XAML asociado para esos controladores, vea [Código fuente de L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md).
+ Para el origen XAML asociado para estos controladores, vea el [código fuente de L2DBForm. Xaml](../designers/l2dbform-xaml-source-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Tutorial: ejemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md) [L2DBForm. Xaml código fuente](../designers/l2dbform-xaml-source-code.md)

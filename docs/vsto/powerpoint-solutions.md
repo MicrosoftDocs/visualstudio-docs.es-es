@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985665"
 ---
 # <a name="powerpoint-solutions"></a>Soluciones de PowerPoint
   Visual Studio ofrece plantillas de proyecto que puede usarse para crear complementos de VSTO para Microsoft Office Outlook. Los complementos de VSTO se pueden usar para automatizar PowerPoint, ampliar las características de PowerPoint o personalizar la interfaz de usuario (UI) de PowerPoint.
 
- Para obtener más información sobre los complementos de VSTO, vea Introducción a [la programación de complementos](getting-started-programming-vsto-add-ins.md) de VSTO y [arquitectura de complementos de](architecture-of-vsto-add-ins.md)VSTO. Si no está familiarizado con la programación con Microsoft Office, consulte Introducción al [desarrollo de &#40;Office&#41;en Visual Studio](getting-started-office-development-in-visual-studio.md).
+ Para obtener más información sobre los complementos de VSTO, vea Introducción a [la programación de complementos](getting-started-programming-vsto-add-ins.md) de VSTO y [arquitectura de complementos de](architecture-of-vsto-add-ins.md)VSTO. Si no está familiarizado con la programación con Microsoft Office, consulte Introducción [&#40;desarrollo de Office en Visual Studio&#41;](getting-started-office-development-in-visual-studio.md).
 
  [!INCLUDE[appliesto_pptallapp](includes/appliesto-pptallapp-md.md)]
 
@@ -42,11 +42,11 @@ ms.locfileid: "72985665"
 
 - Agregar formas a una diapositiva o cambiar las formas de una diapositiva.
 
-  Para tener acceso al modelo de objetos de PowerPoint desde un complemento de VSTO, use el campo `Application` de la clase `ThisAddIn` en el proyecto. El campo `Application` devuelve un objeto de [aplicación](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) que representa la instancia actual de PowerPoint. Para obtener más información, vea [Complementos de VSTO de programas](programming-vsto-add-ins.md).
+  Para tener acceso al modelo de objetos de PowerPoint desde un complemento de VSTO, use el `Application` campo de la `ThisAddIn` clase en el proyecto. El `Application` campo devuelve un objeto de [aplicación](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) que representa la instancia actual de PowerPoint. Para obtener más información, vea [Complementos de VSTO de programas](programming-vsto-add-ins.md).
 
-  Cuando se llama al modelo de objetos de PowerPoint, se usan los tipos que se proporcionan en el ensamblado de interoperabilidad primario de PowerPoint. El ensamblado de interoperabilidad primario actúa como un puente entre el código administrado del complemento de VSTO y el modelo de objetos COM de PowerPoint. Todos los tipos del ensamblado de interoperabilidad primario de PowerPoint se definen en el espacio de nombres [Microsoft. Office. Interop. PowerPoint](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) . Para obtener más información sobre los ensamblados de interoperabilidad primarios, vea [información general &#40;&#41; ](office-solutions-development-overview-vsto.md) sobre el desarrollo de soluciones de Office y [ensamblados de interoperabilidad primarios](office-primary-interop-assemblies.md)
+  Cuando se llama al modelo de objetos de PowerPoint, se usan los tipos que se proporcionan en el ensamblado de interoperabilidad primario de PowerPoint. El ensamblado de interoperabilidad primario actúa como un puente entre el código administrado del complemento de VSTO y el modelo de objetos COM de PowerPoint. Todos los tipos del ensamblado de interoperabilidad primario de PowerPoint se definen en el espacio de nombres [Microsoft. Office. Interop. PowerPoint](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) . Para obtener más información sobre los ensamblados de interoperabilidad primarios, vea [información general sobre el desarrollo de soluciones de office &#40;VSTO&#41;](office-solutions-development-overview-vsto.md) y [ensamblados de interoperabilidad primario](office-primary-interop-assemblies.md)
 
-## <a name="WordOMDocumentation"></a>Usar la documentación del modelo de objetos de PowerPoint
+## <a name="use-the-powerpoint-object-model-documentation"></a><a name="WordOMDocumentation"></a> Usar la documentación del modelo de objetos de PowerPoint
  Para obtener información completa sobre el modelo de objetos de PowerPoint, puede consultar la referencia del ensamblado de interoperabilidad primario (PIA) de PowerPoint y la referencia del modelo de objetos VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Referencia de ensamblado de interoperabilidad primario
@@ -70,14 +70,14 @@ ms.locfileid: "72985665"
 
  Para obtener más información sobre cómo personalizar la interfaz de usuario de PowerPoint y otras aplicaciones Microsoft Office, consulte [Personalización](office-ui-customization.md)de la interfaz de usuario de Office.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: crear el primer complemento de VSTO para PowerPoint](walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 - [Introducción a la programación de complementos de VSTO](getting-started-programming-vsto-add-ins.md)
-- [Información general sobre &#40;el desarrollo de soluciones de Office VSTO&#41;](office-solutions-development-overview-vsto.md)
-- [Arquitectura de complementos VSTO](architecture-of-vsto-add-ins.md)
+- [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](office-solutions-development-overview-vsto.md)
+- [Architecture of VSTO Add-ins](architecture-of-vsto-add-ins.md)
 - [Cómo: crear proyectos de Office en Visual Studio](how-to-create-office-projects-in-visual-studio.md)
 - [Complementos de VSTO de programa](programming-vsto-add-ins.md)
 - [Escribir código en soluciones de Office](writing-code-in-office-solutions.md)
-- [Ensamblados de interoperabilidad primarios de Office](office-primary-interop-assemblies.md)
+- [ensamblados de interoperabilidad primarios de Office](office-primary-interop-assemblies.md)
 - [Personalización de la interfaz de usuario de Office](office-ui-customization.md)
 - [PowerPoint 2010 en el desarrollo de Office](/previous-versions/office/developer/office-2010/ff604967(v=office.14))

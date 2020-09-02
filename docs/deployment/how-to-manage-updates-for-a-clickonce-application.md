@@ -20,14 +20,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382359"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedimientos para administrar actualizaciones de aplicaciones ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como desarrollador, tiene mucha flexibilidad a la hora de especificar Cuándo y cómo se realizan las comprobaciones de actualización, si las actualizaciones son obligatorias y dónde debe buscar actualizaciones la aplicación.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como desarrollador, tiene mucha flexibilidad a la hora de especificar Cuándo y cómo se realizan las comprobaciones de actualización, si las actualizaciones son obligatorias y dónde debe buscar actualizaciones la aplicación.
 
  Puede configurar la aplicación para que compruebe las actualizaciones automáticamente antes de que se inicie la aplicación o a intervalos establecidos después de que se inicie la aplicación. Además, puede especificar una versión mínima requerida; es decir, se instala una actualización si la versión del usuario es anterior a la versión requerida.
 

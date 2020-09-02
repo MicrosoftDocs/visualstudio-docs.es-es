@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17cd398468bd1640e50f6a58004905cfdf6c2ff0
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382151"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedimientos para establecer permisos personalizados para una aplicación ClickOnce
@@ -29,7 +29,7 @@ Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/
 
 1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2. Haga clic en la pestaña **Seguridad**.
+2. Haga clic en la pestaña **Security** (Seguridad).
 
 3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** .
 
@@ -48,6 +48,6 @@ Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/
     > [!NOTE]
     > Puede usar el método `ToXml` de un conjunto de permisos para generar el código XML del manifiesto de la aplicación. Por ejemplo, para generar el XML del conjunto de permisos <xref:System.Security.Permissions.EnvironmentPermission> , llame al método <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

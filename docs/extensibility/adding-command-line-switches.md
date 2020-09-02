@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903475"
 ---
 # <a name="add-command-line-switches"></a>Agregar modificadores de la línea de comandos
@@ -29,12 +29,12 @@ Puede agregar modificadores de la línea de comandos que se aplican a su VSPacka
 
  Los parámetros con nombre se muestran en las siguientes descripciones.
 
-|NOMBRE|Descripción|
+|Nombre|Descripción|
 |-|-|
 | Argumentos | El número de argumentos para el modificador. Puede ser "*", o una lista de argumentos. |
 | DemandLoad | Cargue el VSPackage automáticamente si se establece en 1; de lo contrario, establézcalo en 0. |
 | HelpString | Cadena de ayuda o identificador de recurso de la cadena que se va a mostrar con **devenv/?**. |
-| NOMBRE | Modificador. |
+| Nombre | Modificador. |
 | PackageGuid | Identificador único global (GUID) del paquete. |
 
  El primer valor de arguments es normalmente 0 o 1. Se puede usar un valor especial de ' * ' para indicar que todo el resto de la línea de comandos es el argumento. Esto puede ser útil para depurar escenarios en los que un usuario debe pasar una cadena de comandos del depurador.
@@ -67,7 +67,7 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 
  Es su responsabilidad comprobar los modificadores de la línea de comandos cada vez que se carga el paquete.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)

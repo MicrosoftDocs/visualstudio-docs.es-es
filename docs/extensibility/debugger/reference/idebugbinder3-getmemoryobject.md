@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject ? Microsoft Docs
+title: 'IDebugBinder3:: GetMemoryObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735720"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
@@ -45,13 +45,13 @@ int GetMemoryObject(
 
 ## <a name="parameters"></a>Parámetros
 `pField`\
-[en] Especifica para qué campo se obtiene el objeto de memoria.
+de Especifica el campo para el que se va a obtener el objeto de memoria.
 
 `uConstant`\
-[en] Representa una dirección de memoria o un valor para un valor constante.
+de Representa una dirección de memoria o un valor para un valor constante.
 
 `ppObject`\
-[fuera] Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa la memoria a la que está enlazado este objeto.
+enuncia [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa la memoria a la que está enlazado este objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

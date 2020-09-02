@@ -28,7 +28,7 @@ El programa de instalación intenta configurar estos requisitos previos de forma
 > [!IMPORTANT]
 > El programa de instalación del emulador comprueba si se cumplen los requisitos previos para la ejecución del emulador de Visual Studio para Android. Si esos requisitos no se cumplen, se muestran una serie de advertencias, pero no se exigirá su cumplimiento.
 
-## <a name="Checklist"></a> Lista de comprobación rápida
+## <a name="quick-checklist"></a><a name="Checklist"></a> Lista de comprobación rápida
 
 Esta lista de comprobación rápida muestra los requisitos para la ejecución del emulador de Visual Studio para Android. Para obtener información más detallada, vea las secciones posteriores de este tema.
 

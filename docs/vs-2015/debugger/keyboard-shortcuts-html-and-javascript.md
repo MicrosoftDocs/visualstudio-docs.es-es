@@ -1,5 +1,5 @@
 ---
-title: Métodos abreviados (HTML y JavaScript) de teclado | Documentos de Microsoft
+title: Métodos abreviados de teclado (HTML y JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199682"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Métodos abreviados de teclado (HTML y JavaScript)
@@ -31,7 +31,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ## <a name="general-shortcuts"></a>Métodos abreviados generales  
  Estos métodos abreviados funcionan en todas las herramientas de las aplicaciones de la Tienda con HTML y JavaScript.  
   
-|.|Acceso directo|  
+|Acción|Acceso directo|  
 |------------|--------------|  
 |Actualizar aplicación de Windows|Ctrl+Mayús+R|  
 |Reiniciar aplicación de Windows|Ctrl+Mayús+F5|  
@@ -41,7 +41,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ## <a name="javascript-console-shortcuts"></a>Métodos abreviados de Consola JavaScript  
  Use estos métodos abreviados en la ventana Consola JavaScript.  
   
-|.|Acceso directo|  
+|Acción|Acceso directo|  
 |------------|--------------|  
 |Ejecutar un comando de la consola|Entrar|  
 |Cerrar la consola|Esc|  
@@ -50,7 +50,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ## <a name="dom-explorer-shortcuts"></a>Métodos abreviados del Explorador DOM  
  Use estos métodos abreviados en el Explorador DOM.  
   
-|.|Acceso directo|  
+|Acción|Acceso directo|  
 |------------|--------------|  
 |Seleccionar elemento|Ctrl+B|  
 |Alternancia entre mostrar y ocultar cuadros de resaltado de página web al usar **Seleccionar elemento**|Ctrl+Mayús+I|  
@@ -59,6 +59,6 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |Aumentar en 1 el valor CSS seleccionado|Flecha arriba|  
 |Reducir en 1 el valor CSS seleccionado|Flecha abajo|  
   
-## <a name="see-also"></a>Vea también  
- [Inicio rápido: Depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
+## <a name="see-also"></a>Consulte también  
+ [Inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

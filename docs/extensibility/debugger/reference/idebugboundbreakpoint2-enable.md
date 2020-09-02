@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Habilitar ? Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: enable | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ed933b1abf67fbe357462e86d54b23e3b19fa548
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735567"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
@@ -42,13 +42,13 @@ int Enable( 
 
 ## <a name="parameters"></a>Parámetros
 `fEnable`\
-[en] Establézcalo`TRUE`en no cero`FALSE`( ) para habilitar o en cero ( ) para deshabilitar el punto de interrupción.
+de Se establece en un valor distinto de cero ( `TRUE` ) para habilitar o en cero ( `FALSE` ) para deshabilitar el punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
-Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de `BPS_DELETED` punto de interrupción enlazado se establece en (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de punto de interrupción enlazado se establece en `BPS_DELETED` (parte de la enumeración [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se muestra `CBoundBreakpoint` cómo implementar este método para un objeto simple que expone el [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un `CBoundBreakpoint` objeto simple que expone la interfaz [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591793"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
@@ -141,11 +141,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Cómo usar los bloques de control
- Todo el código de todos los bloques de control estándar y de expresiones de una única plantilla (incluido el código de las plantillas incluidas) se combina para formar el método `TransformText()` del código generado. (Para obtener más información sobre cómo incluir otras plantillas de texto con la Directiva de `include`, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md)).
+ Todo el código de todos los bloques de control estándar y de expresiones de una única plantilla (incluido el código de las plantillas incluidas) se combina para formar el método `TransformText()` del código generado. (Para obtener más información sobre cómo incluir otras plantillas de texto con la `include` Directiva, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md)).
 
  Cuando utilice bloques de control, debe tener en cuenta las siguientes consideraciones:
 
-- **Idioma**. En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información sobre la Directiva de `template`, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md)).
+- **Idioma**. En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información acerca de la `template` Directiva, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md)).
 
      El lenguaje que usa en los bloques de control no tiene nada que ver con el lenguaje o el formato del texto que genera en una plantilla de texto. Puede generar C# usando el código Visual Basic o viceversa.
 

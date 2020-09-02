@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03cacd8de574de92002b44b237cd84c22e761eaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645572"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
@@ -27,16 +27,16 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
 
  La sintaxis básica es la siguiente:
 
- \<*ruta de acceso a*> \HlpCtntmgr.exe/Operation \<*argumento*>/catalogname \<*nombre*>/locale \<*configuración regional*>/SourceUri \< *. MSHA ruta de acceso o dirección URL* 0
+ \<*path to*>\HlpCtntmgr.exe/Operation \<*argument*> /catalogname \<*name*> /locale \<*locale*> /SourceUri \<*.msha path or URL*>
 
  Para obtener más información sobre la sintaxis de la línea de comandos de HlpCtntMgr.exe, vea [Argumentos de línea de comandos para Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
  Para obtener más información sobre la creación de contenido, la creación de un extremo de servicio de intranet y otros tipos similares de actividades, consulte el SDK del Visor de Ayuda.
 
 ## <a name="deploying-local-help-content-from-the-internet"></a>Implementación de contenido de Ayuda local desde Internet
- Puede utilizar el servicio de paquete de contenido de MSDN para distribuir el contenido de la Ayuda local desde Internet a los equipos cliente. Utilice la sintaxis siguiente:
+ Puede utilizar el servicio de paquete de contenido de MSDN para distribuir el contenido de la Ayuda local desde Internet a los equipos cliente. Use la sintaxis siguiente:
 
- \\<*ruta_de_acceso_a*>\v2.2\HlpCtntmgr.exe /operation \<*nombre*> /catalogname \<*nombre_del_catálogo*> /locale \<*configuración_regional*>
+ \\<*ruta de acceso a* # C0\v2.2\HlpCtntmgr.exe/Operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 
  Para obtener más información sobre la sintaxis de la línea de comandos de HlpCtntMgr.exe, vea [Argumentos de línea de comandos para Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
@@ -127,9 +127,9 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
 
 4. Escriba lo siguiente:
 
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nombre_de_carpeta*>\ /y /e /k /o
+     XCOPY%SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*> \/y/e/k/o
 
-     Por ejemplo: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`.
+     Por ejemplo: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
 
 ### <a name="deploying-the-content"></a>Implementación del contenido
 
@@ -201,5 +201,5 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
 
 3. Ejecute el archivo bat en los equipos locales en los que desee instalar el contenido de Ayuda.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Argumentos de la línea de comandos para Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md) [invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md)

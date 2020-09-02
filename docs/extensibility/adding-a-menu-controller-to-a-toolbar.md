@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903524"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Agregar un controlador de menú a una barra de herramientas
@@ -222,6 +222,6 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
     Aparece un cuadro de diálogo con el mensaje **seleccionado elemento de controlador de menú 3**. Tenga en cuenta que el mensaje se corresponde con el texto del botón del controlador de menús. El botón controlador de menú muestra ahora **MC elemento 3**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 648f84b106dab7aa6e38cc3e45e59162a216a875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160135"
 ---
-# <a name="getnametype"></a>GETNAME_TYPE
+# <a name="getname_type"></a>GETNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica el tipo de nombre de archivos que se va a recuperar.  
+Especifica el tipo de nombre de los archivos que se van a recuperar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -53,38 +53,38 @@ public enum enum_GETNAME_TYPE { 
   
 ## <a name="members"></a>Miembros  
  GN_NAME  
- Especifica un nombre descriptivo del documento o del contexto.  
+ Especifica un nombre descriptivo del documento o contexto.  
   
  GN_FILENAME  
- Especifica la ruta de acceso completa del documento o del contexto.  
+ Especifica la ruta de acceso completa del documento o contexto.  
   
  GN_BASENAME  
- Especifica un nombre de archivo base en lugar de una ruta de acceso completa del documento o del contexto.  
+ Especifica un nombre de archivo base en lugar de una ruta de acceso completa del documento o contexto.  
   
  GN_MONIKERNAME  
- Especifica un nombre único del documento o el contexto en el formulario de un moniker.  
+ Especifica un nombre único del documento o contexto en forma de moniker.  
   
  GN_URL  
- Especifica un nombre de la dirección URL del documento o del contexto.  
+ Especifica un nombre de dirección URL del documento o contexto.  
   
  GN_TITLE  
- Especifica un título del documento, si existe alguno.  
+ Especifica el título del documento, si existe.  
   
  GN_STARTPAGEURL  
- Obtiene la dirección URL de página inicial para los procesos.  
+ Obtiene la dirección URL de la página de inicio de los procesos.  
   
 ## <a name="remarks"></a>Comentarios  
- Estos valores se pasan como parámetros a la [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), y [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) métodos para especificar qué tipo de nombre para devolver.  
+ Estos valores se pasan como parámetros a los métodos [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)y [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) para especificar el tipo de nombre que se va a devolver.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
- [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   
+ [GetName (](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
+ [GetName (](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   
  [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)

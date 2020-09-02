@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::LaunchSuspended | Microsoft Docs
+title: 'IDebugPortEx2:: LaunchSuspended | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c5e57c003257650f5ca60d4a7c3d9becea3e776
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188451"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
@@ -54,38 +54,38 @@ int LaunchSuspended( 
   
 #### <a name="parameters"></a>Parámetros  
  `pszExe`  
- [in] El nombre del archivo ejecutable que se iniciará. Esto puede ser una ruta de acceso completa o relativa al directorio de trabajo especificado en el `pszDir` parámetro.  
+ de Nombre del ejecutable que se va a iniciar. Puede ser una ruta de acceso completa o relativa al directorio de trabajo especificado en el `pszDir` parámetro.  
   
  `pszArgs`  
- [in] Los argumentos para pasar al ejecutable. Puede ser un valor null si no hay ningún argumento.  
+ de Argumentos que se van a pasar al archivo ejecutable. Puede ser un valor NULL si no hay ningún argumento.  
   
  `pszDir`  
- [in] El nombre del directorio de trabajo usando el archivo ejecutable. Puede ser un valor null si no se requiere ningún directorio de trabajo.  
+ de Nombre del directorio de trabajo utilizado por el ejecutable. Puede ser un valor NULL si no se requiere ningún directorio de trabajo.  
   
  `bstrEnv`  
- [in] Bloque de entorno de cadenas terminadas en null, seguido de un terminador NULL adicional.  
+ de Bloque de entorno de cadenas terminadas en null, seguido de un terminador NULL adicional.  
   
  `hStdInput`  
- [in] Identificador de un flujo de entrada alternativo. Puede ser 0 si no se requiere la redirección.  
+ de Identificador de un flujo de entrada alternativo. Puede ser 0 si no se requiere redirección.  
   
  `hStdOutput`  
- [in] Identificador de un flujo de salida alternativos. Puede ser 0 si no se requiere la redirección.  
+ de Identificador de un flujo de salida alternativo. Puede ser 0 si no se requiere redirección.  
   
  `hStdError`  
- [in] Identificador de un flujo de salida de error alternativa. Puede ser 0 si no se requiere la redirección.  
+ de Identificador de un flujo de salida de error alternativo. Puede ser 0 si no se requiere redirección.  
   
  `ppPortProcess`  
- [out] Devuelve un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa el proceso iniciado.  
+ enuncia Devuelve un objeto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa el proceso iniciado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método debería iniciar el proceso, por lo que TI está suspendida y no se está ejecutando ningún código. El [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) método se llama para reanudar el proceso.  
+ Este método debe iniciar el proceso para que se suspenda y no se ejecute ningún código. Se llama al método [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) para reanudar el proceso.  
   
- También se puede iniciar un programa desde un motor de depuración. Para obtener más información, consulte [iniciar un programa](../../../extensibility/debugger/launching-a-program.md).  
+ Un programa también se puede iniciar desde un motor de depuración. Para obtener más información, vea [iniciar un programa](../../../extensibility/debugger/launching-a-program.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)   

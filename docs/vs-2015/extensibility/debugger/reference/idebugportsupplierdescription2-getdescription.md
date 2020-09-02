@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierDescription2::GetDescription | Documentos de Microsoft
+title: 'IDebugPortSupplierDescription2:: GetDescription | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17fbc0e42168f993aff4f0d9ce76116802d65f53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188211"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera la descripción y los metadatos de descripción para el proveedor del puerto.  
+Recupera los metadatos de Descripción y descripción para el proveedor del puerto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +40,13 @@ public int GetDescription(
   
 #### <a name="parameters"></a>Parámetros  
  `pdwFlags`  
- [out] Marcas de metadatos para la descripción.  
+ enuncia Marcas de metadatos para la descripción.  
   
  `pbstrText`  
- [out] Descripción del proveedor del puerto.  
+ enuncia Descripción del proveedor del puerto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

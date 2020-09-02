@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41c3fd765977a1f92f5cf125bb64bb7f5b0cd2cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664300"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Métodos abreviados de teclado en Blend
@@ -21,9 +21,9 @@ ms.locfileid: "72664300"
 
 Métodos abreviados del proyecto
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
-|Crear un proyecto nuevo|CTRL+MAYÚS+N|
+|Creación de un nuevo proyecto|CTRL+MAYÚS+N|
 |Abrir un proyecto o una solución (no un sitio)|CTRL+MAYÚS+O|
 |Cerrar una solución|CTRL+MAYÚS+C|
 |Guardar una copia de la solución o el sitio|CTRL+MAYÚS+P|
@@ -34,7 +34,7 @@ Métodos abreviados del proyecto
 
 ## <a name="document-shortcuts"></a>Métodos abreviados del documento
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
 |Cambiar entre los documentos abiertos|CTRL+TAB|
 |Guardar el documento activo|CTRL+S|
@@ -44,18 +44,18 @@ Métodos abreviados del proyecto
 |Deshacer la última acción|CTRL+Z|
 |Rehacer la última acción deshecha|CTRL+Y o CTRL+MAYÚS+Z|
 |Crear una anotación en tiempo de diseño|CTRL+MAYÚS+T|
-|Cut|CTRL+X|
+|Cortar|CTRL+X|
 |Copiar|CTRL+C|
-|Paste|CTRL+V|
-|Eliminar|SUPRIMIR|
+|Pegar|CTRL+V|
+|Eliminar|Delete|
 |Buscar texto (sólo vista XAML o editor de JavaScript)|CTRL+F|
 |Buscar la siguiente aparición de texto (sólo vista XAML o editor de JavaScript)|F3 o CTRL+H|
 
 ## <a name="object-shortcuts"></a>Métodos abreviados de objetos
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
-|Crear un nuevo elemento|CTRL+N|
+|Creación de un elemento|CTRL+N|
 |Duplicar un objeto|Mantener presionada la tecla ALT y arrastrar el objeto|
 |Cambiar el valor primario de un objeto|Arrastrar el objeto sobre un panel de diseño y presionar ALT|
 |Modificar el texto de un control|F2 (ESC para salir)|
@@ -75,7 +75,7 @@ Métodos abreviados del proyecto
 |Agrupar objetos en un panel de diseño|CTRL+G|
 |Desagrupar objetos|CTRL+MAYÚS+G|
 |Traer al frente el objeto seleccionado|CTRL+MAYÚS+]|
-|Traer adelante|CTRL+]|
+|Traer adelante|CTRL +]|
 |Enviar atrás el objeto seleccionado|CTRL+MAYÚS+'|
 |Enviar atrás|CTRL+'|
 |Crear un control de usuario con los objetos seleccionados (WPF)|F8|
@@ -94,7 +94,7 @@ Métodos abreviados del proyecto
 
 ## <a name="view-shortcuts"></a>Métodos abreviados de vistas
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
 |Cambiar entre las vistas **Diseño**, **Código** y **Dos paneles**|F11|
 |Acercar en la mesa de trabajo|CTRL+SIGNO IGUAL|
@@ -110,7 +110,7 @@ Métodos abreviados del proyecto
 
 ## <a name="workspace-shortcuts"></a>Métodos abreviados del área de trabajo
 
-|Para|Haga esto|
+|Para hacer esto|Haga esto|
 |----------------|-------------|
 |Cambiar entre las áreas de trabajo **Animación** y **Diseño**|CTRL+F11|
 |Mostrar u ocultar el panel **Activos**|CTRL+PUNTO|

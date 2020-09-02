@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646827"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configuración sincronizada en Visual Studio
@@ -26,7 +26,7 @@ Al usar la misma cuenta de personalización para iniciar sesión en Visual Studi
 ## <a name="synchronized-settings"></a>Configuración sincronizada
  De forma predeterminada, se sincroniza la siguiente configuración.
 
-- La configuración de desarrollo (Deberá seleccionar un conjunto de opciones la primera vez que ejecute Visual Studio, aunque puede cambiar la selección en cualquier momento. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)).
+- La configuración de desarrollo (Deberá seleccionar un conjunto de opciones la primera vez que ejecute Visual Studio, aunque puede cambiar la selección en cualquier momento. Para obtener más información, vea [personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)).
 
 - Las siguientes opciones de las páginas **Herramientas &#124; Opciones**:
 
@@ -40,11 +40,11 @@ Al usar la misma cuenta de personalización para iniciar sesión en Visual Studi
 
   - Todos los valores de la página de opciones **Entorno**, **Inicio**
 
-  - Todos los valores de las páginas de opciones **Editor de texto**
+  - Todas las configuraciones de las páginas de opciones del **Editor de texto**
 
 - Todos los valores de las páginas de opciones Diseñador XAML
 
-- Los alias de comandos definidos por el usuario. Para obtener más información sobre cómo se definen los alias de comandos, consulte [Alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+- Los alias de comandos definidos por el usuario. Para obtener más información sobre cómo definir los alias de comandos, vea [alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
 - Diseños de ventana definidos por el usuario en la página **Ventana &#124; Administrar diseños de ventana**
 
@@ -57,5 +57,5 @@ Al usar la misma cuenta de personalización para iniciar sesión en Visual Studi
 > [!WARNING]
 > La configuración no se sincroniza entre Visual Studio 2013 y Visual Studio 2015. La primera vez que abra Visual Studio 2015, se migra la configuración desde Visual Studio 2013, pero no se puede volver a migrar a Visual Studio 2013 después de eso.
 
-## <a name="see-also"></a>Otras referencias
- [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
+## <a name="see-also"></a>Consulte también
+ [Personalización del IDE](../ide/personalizing-the-visual-studio-ide.md)

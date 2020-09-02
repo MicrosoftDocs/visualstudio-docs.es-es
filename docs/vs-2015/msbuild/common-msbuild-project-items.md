@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160406"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
@@ -34,10 +34,10 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 ### <a name="reference"></a>Referencia  
  Representa una referencia de ensamblado (administrada) del proyecto.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
 |HintPath|Cadena opcional. Ruta de acceso absoluta o relativa del ensamblado.|  
-|nombre|Cadena opcional. Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|  
+|NOMBRE|Cadena opcional. Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|  
 |FusionName|Cadena opcional. Especifica el nombre de fusión sencillo o seguro del elemento.<br /><br /> Cuando este atributo está presente se ahorra tiempo, ya que no es necesario abrir el archivo de ensamblado para obtener el nombre de fusión.|  
 |SpecificVersion|Booleano opcional. Especifica si solo se debe hacer referencia a la versión del nombre de fusión.|  
 |Alias|Cadena opcional. Cualquier alias de la referencia.|  
@@ -46,9 +46,9 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 ### <a name="comreference"></a>COMReference  
  Representa una referencia a un componente COM (no administrado) del proyecto.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
-|nombre|Cadena opcional. El nombre para mostrar del componente.|  
+|NOMBRE|Cadena opcional. El nombre para mostrar del componente.|  
 |GUID|Cadena opcional. GUID del componente, con el formato {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Cadena opcional. Parte principal del número de versión del componente. Por ejemplo, "5" si el número de versión completo es "5.46".|  
 |VersionMinor|Cadena opcional. Parte secundaria del número de versión del componente. Por ejemplo, "46" si el número de versión completo es "5.46".|  
@@ -59,31 +59,31 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 ### <a name="comfilereference"></a>COMFileReference  
  Representa una lista de las bibliotecas de tipos que se pasan al destino ResolvedComreference.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
 |WrapperTool|Cadena opcional. Nombre de la herramienta contenedor que se usa en el componente, por ejemplo, "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Representa un archivo de manifiesto nativo o una referencia a este archivo.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
-|nombre|Cadena necesaria. Nombre base del archivo de manifiesto.|  
+|NOMBRE|Cadena necesaria. Nombre base del archivo de manifiesto.|  
 |HintPath|Cadena necesaria. Ruta de acceso relativa del archivo de manifiesto.|  
   
 ### <a name="projectreference"></a>ProjectReference  
  Representa una referencia a otro proyecto.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
-|nombre|Cadena opcional. Nombre para mostrar de la referencia.|  
+|NOMBRE|Cadena opcional. Nombre para mostrar de la referencia.|  
 |Proyecto|Cadena opcional. GUID de la referencia, con el formato {12345678-1234-1234-1234-1234567891234}.|  
 |Package|Cadena opcional. Ruta de acceso del archivo de proyecto al que se hace referencia.|  
   
 ### <a name="compile"></a>Compile  
  Representa los archivos de código fuente para el compilador.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |AutoGen|Booleano opcional. Indica si el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ha generado el archivo para el proyecto.|  
@@ -94,7 +94,7 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Representa los recursos que se van a incrustar en el ensamblado generado.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
@@ -108,7 +108,7 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 ### <a name="content"></a>Contenido  
  Representa archivos que no están compilados en el proyecto pero que podrían incrustarse o publicarse junto con él.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
@@ -123,7 +123,7 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 ### <a name="none"></a>None  
  Representa archivos que no deberían tener ningún rol en el proceso de compilación.  
   
-|Nombre del elemento|DESCRIPCIÓN|  
+|Nombre del elemento|Descripción|  
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
@@ -142,5 +142,5 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 ### <a name="import"></a>Importar  
  Representa los ensamblados cuyos espacios de nombres debe importar el compilador [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
-## <a name="see-also"></a>Otras referencias  
- [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md)
+## <a name="see-also"></a>Consulte también  
+ [Propiedades comunes del proyecto de MSBuild](../msbuild/common-msbuild-project-properties.md)

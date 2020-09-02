@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903437"
 ---
 # <a name="add-icons-to-menu-commands"></a>Agregar iconos a comandos de menú
@@ -81,6 +81,6 @@ Los comandos pueden aparecer en los menús y las barras de herramientas. En las 
 
 8. Pruebe el icono. Compile la solución y comience la depuración. En la instancia experimental, busque el comando. Debería mostrar el icono que ha agregado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)

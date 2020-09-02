@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985693"
 ---
 # <a name="outlook-object-model-overview"></a>Información general del modelo de objetos de Outlook
@@ -51,7 +51,7 @@ ms.locfileid: "72985693"
 
 - <xref:Microsoft.Office.Interop.Outlook.ContactItem>
 
-### <a name="application-object"></a>Application (objeto)
+### <a name="application-object"></a>Objeto de aplicación
  El objeto <xref:Microsoft.Office.Interop.Outlook.Application> representa la aplicación Outlook y es el objeto de nivel superior en el modelo de objetos de Outlook. Algunos de los miembros más importantes de este objeto son:
 
 - El método [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) , que puede usar para crear un nuevo elemento, como un mensaje de correo electrónico, una tarea o una cita.
@@ -60,10 +60,10 @@ ms.locfileid: "72985693"
 
 - La propiedad <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> , que puede usar para acceder a las ventanas que muestran el contenido de un elemento único, como una solicitud de reunión o mensaje de correo electrónico.
 
-  Para obtener una instancia del objeto <xref:Microsoft.Office.Interop.Outlook.Application>, use el campo de la aplicación de la clase `ThisAddIn` en el proyecto. Para obtener más información, vea [Complementos de VSTO de programas](../vsto/programming-vsto-add-ins.md).
+  Para obtener una instancia del <xref:Microsoft.Office.Interop.Outlook.Application> objeto, use el campo de la aplicación de la `ThisAddIn` clase en el proyecto. Para obtener más información, vea [Complementos de VSTO de programas](../vsto/programming-vsto-add-ins.md).
 
 > [!NOTE]
-> Para ayudar a evitar las advertencias de seguridad al usar las propiedades y los métodos que están bloqueados por la protección del modelo de objetos de Outlook, obtenga objetos de Outlook desde el campo de la aplicación de la clase `ThisAddIn`. Para obtener más información, vea [consideraciones de seguridad específicas para soluciones de Office](../vsto/specific-security-considerations-for-office-solutions.md).
+> Para ayudar a evitar las advertencias de seguridad al usar las propiedades y los métodos que están bloqueados por la protección del modelo de objetos de Outlook, obtenga objetos de Outlook desde el campo de la aplicación de la `ThisAddIn` clase. Para obtener más información, vea [consideraciones de seguridad específicas para soluciones de Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
 ### <a name="explorer-object"></a>Objeto Explorer
  El objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> representa una ventana que muestra el contenido de una carpeta que contiene elementos como mensajes de correo electrónico, tareas o citas. El objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> incluye métodos y propiedades que puede usar para modificar la ventana, así como eventos que se generan cuando cambia la ventana.
@@ -94,7 +94,7 @@ ms.locfileid: "72985693"
 
  Microsoft. Office. Interop. Outlook. OlDefaultFolders. olFolderInbox corresponde a la carpeta **bandeja de entrada** de Outlook.
 
- Para obtener un ejemplo en el que se muestra cómo obtener acceso a una <xref:Microsoft.Office.Interop.Outlook.Folder> predeterminada y crear una nueva <xref:Microsoft.Office.Interop.Outlook.Folder>, consulte [Cómo: crear elementos de carpeta personalizados mediante programación](../vsto/how-to-programmatically-create-custom-folder-items.md).
+ Para obtener un ejemplo en el que se muestra cómo obtener acceso a un valor predeterminado <xref:Microsoft.Office.Interop.Outlook.Folder> y crear un nuevo <xref:Microsoft.Office.Interop.Outlook.Folder> , vea [Cómo: crear elementos de carpeta personalizados mediante programación](../vsto/how-to-programmatically-create-custom-folder-items.md).
 
 ### <a name="mailitem-object"></a>Objeto MailItem
  El objeto <xref:Microsoft.Office.Interop.Outlook.MailItem> representa un mensaje de correo electrónico. Los objetos<xref:Microsoft.Office.Interop.Outlook.MailItem> normalmente están en carpetas, como **Bandeja de entrada**, **Elementos enviados**y **Bandeja de salida**. <xref:Microsoft.Office.Interop.Outlook.MailItem> expone propiedades y métodos que se pueden usar para crear y enviar mensajes de correo electrónico.
@@ -116,7 +116,7 @@ ms.locfileid: "72985693"
 
  Para obtener un ejemplo en el que se muestra cómo crear un nuevo contacto, consulte [Cómo: agregar una entrada a contactos de Outlook mediante programación](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Para obtener un ejemplo en el que se muestra cómo buscar un contacto existente, consulte [Cómo: buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md).
 
-## <a name="refdoc"></a>Usar la documentación del modelo de objetos de Outlook
+## <a name="use-the-outlook-object-model-documentation"></a><a name="refdoc"></a> Usar la documentación del modelo de objetos de Outlook
  Para obtener información completa sobre el modelo de objetos de Outlook, puede consultar la referencia del ensamblado de interoperabilidad primario (PIA) de Outlook y la referencia del modelo de objetos VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Referencia de ensamblado de interoperabilidad primario
@@ -127,7 +127,7 @@ ms.locfileid: "72985693"
 ### <a name="vba-object-model-reference"></a>Referencia del modelo de objetos de VBA
  La referencia del modelo de objetos de VBA documenta el modelo de objetos de Outlook tal como se expone al código de Visual Basic para Aplicaciones (VBA). Para obtener más información, vea [Referencia del modelo de objetos de Outlook 2010](/office/vba/api/overview/Outlook/object-model).
 
- Todos los objetos y miembros de la referencia del modelo de objetos de VBA corresponden a tipos y miembros del PIA de Outlook. Por ejemplo, el objeto inspector de la referencia del modelo de objetos VBA corresponde al objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> del PIA de Outlook. Aunque la referencia del modelo de objetos VBA proporciona ejemplos de código para la mayoría de las propiedades, métodos y eventos, debe traducir el código VBA de esta referencia a Visual Basic o Visual C# si quiere usarlo en un proyecto de complemento de VSTO de Outlook creado con Visual Studio.
+ Todos los objetos y miembros de la referencia del modelo de objetos de VBA corresponden a tipos y miembros del PIA de Outlook. Por ejemplo, el objeto inspector de la referencia del modelo de objetos VBA corresponde al <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto del Pia de Outlook. Aunque la referencia del modelo de objetos VBA proporciona ejemplos de código para la mayoría de las propiedades, métodos y eventos, debe traducir el código VBA de esta referencia a Visual Basic o Visual C# si quiere usarlo en un proyecto de complemento de VSTO de Outlook creado con Visual Studio.
 
 ### <a name="related-topics"></a>Temas relacionados
 

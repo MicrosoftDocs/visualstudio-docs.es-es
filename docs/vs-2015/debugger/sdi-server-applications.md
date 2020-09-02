@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148147"
 ---
 # <a name="sdi-server-applications"></a>Aplicaciones de servidor SDI
@@ -34,6 +34,6 @@ Si está depurando una aplicación de servidor SDI, debe especificar `/Embedding
 ## <a name="finding-the-command-line-arguments-property"></a>Encontrar la propiedad Argumentos de la línea de comandos  
  Para tener acceso al cuadro de diálogo Páginas de propiedades de *proyecto*, haga clic con el botón derecho en el proyecto desde el Explorador de soluciones y después elija Propiedades en el menú contextual. Para buscar la propiedad Argumentos de la línea de comandos, haga clic en la ficha Depurar y vaya a Opciones de inicio.  
   
-## <a name="see-also"></a>Vea también  
- [Depuración de COM y ActiveX](../debugger/com-and-activex-debugging.md)   
- [Cómo: Depuración de servidores COM](../debugger/how-to-debug-com-servers.md)
+## <a name="see-also"></a>Consulte también  
+ [Depuración COM y ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Cómo: depurar servidores COM](../debugger/how-to-debug-com-servers.md)

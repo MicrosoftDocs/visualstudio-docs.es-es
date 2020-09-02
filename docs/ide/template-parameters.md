@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169370"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
@@ -50,7 +50,7 @@ En la tabla siguiente se muestran los parámetros de plantilla reservados que se
 |Parámetro|Descripción|
 |---------------|-----------------|
 |clrversion|Versión actual del Common Language Runtime (CLR).|
-|ext_*|Agrega el prefijo `ext_` a cualquier parámetro para hacer referencia a las variables de la plantilla principal. Por ejemplo: `ext_safeprojectname`.|
+|ext_*|Agrega el prefijo `ext_` a cualquier parámetro para hacer referencia a las variables de la plantilla principal. Por ejemplo, `ext_safeprojectname`.|
 |guid[1-10]|GUID utilizado para reemplazar el GUID del proyecto en un archivo de proyecto. Puede especificar hasta 10 GUID únicos (por ejemplo, `guid1`).|
 |itemname|El nombre del archivo en el que se usa el parámetro.|
 |machinename|Nombre del equipo actual (por ejemplo, Equipo01).|
@@ -60,12 +60,12 @@ En la tabla siguiente se muestran los parámetros de plantilla reservados que se
 |safeitemname|Igual que `itemname`, pero con todos los caracteres no seguros y los espacios reemplazados por caracteres de subrayado.|
 |safeitemrootname|Igual a `safeitemname`.|
 |safeprojectname|Nombre especificado por el usuario al crear el proyecto, tras quitar todos los caracteres no seguros y los espacios.|
-|hora|Hora actual en el formato DD/MM/AAAA 00:00:00.|
+|time|Hora actual en el formato DD/MM/AAAA 00:00:00.|
 |specifiedsolutionname|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `specifiedsolutionname` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `specifiedsolutionname` está en blanco.|
 |userdomain|Dominio del usuario actual.|
 |username|Nombre de usuario actual.|
 |webnamespace|Nombre del sitio web actual. Este parámetro se usa en la plantilla de formulario web para garantizar que los nombres de clase sean únicos. Si el sitio web está en el directorio raíz del servidor web, este parámetro de plantilla se resuelve como el directorio raíz del servidor web.|
-|año|Año actual en formato AAAA.|
+|year|Año actual en formato AAAA.|
 
 > [!NOTE]
 > Los parámetros de plantilla distinguen entre mayúsculas y minúsculas.
@@ -117,7 +117,7 @@ En el archivo *.vstemplate* de la plantilla de proyecto, incluya el atributo `Re
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Sustituir parámetros en una plantilla](how-to-substitute-parameters-in-a-template.md)
 - [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)

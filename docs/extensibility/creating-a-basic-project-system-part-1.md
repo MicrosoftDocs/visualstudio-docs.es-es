@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903426"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Crear un sistema de proyectos básico, parte 1
@@ -55,7 +55,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
 
 - Implementar la sustitución de parámetros de plantilla básica.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
  También debe descargar el código fuente de [Managed Package Framework para los proyectos de](https://github.com/tunnelvisionlabs/MPFProj10). Extraiga el archivo en una ubicación que sea accesible para la solución que va a crear.
@@ -520,7 +520,7 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  Durante la construcción de la instancia, la `ProjectNode` clase base carga *Resources.imagelis.bmp*, en las que se utilizan habitualmente 16 x 16 mapas de bits de *Resources\imagelis.bmp*. Esta lista de mapas de bits se pone a disposición de `SimpleProjectNode` como `ImageHandler.ImageList` . `SimpleProjectNode`anexa el mapa de bits del nodo de proyecto a la lista. El desplazamiento del mapa de bits del nodo de proyecto en la lista de imágenes se almacena en caché para su uso posterior como valor de la `ImageIndex` propiedad pública. Visual Studio usa esta propiedad para determinar qué mapa de bits se debe mostrar como el icono del nodo de proyecto.
+  Durante la construcción de la instancia, la `ProjectNode` clase base carga *Resources.imagelis.bmp*, en las que se utilizan habitualmente 16 x 16 mapas de bits de *Resources\imagelis.bmp*. Esta lista de mapas de bits se pone a disposición de `SimpleProjectNode` como `ImageHandler.ImageList` . `SimpleProjectNode` anexa el mapa de bits del nodo de proyecto a la lista. El desplazamiento del mapa de bits del nodo de proyecto en la lista de imágenes se almacena en caché para su uso posterior como valor de la `ImageIndex` propiedad pública. Visual Studio usa esta propiedad para determinar qué mapa de bits se debe mostrar como el icono del nodo de proyecto.
 
 ## <a name="test-the-custom-project-node-icon"></a>Probar el icono del nodo de proyecto personalizado
  Pruebe el generador de proyectos para ver si crea una jerarquía de proyecto que tenga el icono de nodo de proyecto personalizado.
@@ -601,9 +601,9 @@ Templates
 
 3. Examine los valores de los `nameSpace` `className` parámetros y.
 
-   - `nameSpace`se proporciona el valor del \<RootNamespace> elemento en el archivo de plantilla de proyecto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . En este caso, el valor es `MyRootNamespace`.
+   - `nameSpace` se proporciona el valor del \<RootNamespace> elemento en el archivo de plantilla de proyecto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . En este caso, el valor es `MyRootNamespace`.
 
-   - `className`se proporciona el valor del nombre del archivo de código fuente de la clase, sin la extensión de nombre de archivo. En este caso, el primer archivo que se va a copiar en la carpeta de destino es *AssemblyInfo.CS*; por lo tanto, el valor de className es `AssemblyInfo` .
+   - `className` se proporciona el valor del nombre del archivo de código fuente de la clase, sin la extensión de nombre de archivo. En este caso, el primer archivo que se va a copiar en la carpeta de destino es *AssemblyInfo.CS*; por lo tanto, el valor de className es `AssemblyInfo` .
 
 4. Quite el punto de interrupción y presione **F5** para continuar con la ejecución.
 
@@ -636,4 +636,4 @@ Templates
 
     ![Comando de proyecto simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   ¡Enhorabuena! Ha implementado un sistema de proyectos administrado básico.
+   Felicidades. Ha implementado un sistema de proyectos administrado básico.

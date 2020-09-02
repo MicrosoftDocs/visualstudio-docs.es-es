@@ -1,5 +1,5 @@
 ---
-title: SccWillCreateSccFile (función) | Documentos de Microsoft
+title: Función SccWillCreateSccFile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb0df475098a0fb0675327cece6dd9c643a0c4d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147962"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta función determina si el complemento de control de código fuente admite la creación de la MSSCCPRJ. Archivo de control de código fuente para cada uno de los archivos indicados.  
+Esta función determina si el complemento de control de código fuente admite la creación de MSSCCPRJ. Archivo SCC para cada uno de los archivos especificados.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,29 +37,29 @@ SCCRTN SccWillCreateSccFile(
   
 #### <a name="parameters"></a>Parámetros  
  pContext  
- [in] El puntero de contexto de complemento de control de código fuente.  
+ de Puntero de contexto del complemento de control de código fuente.  
   
- nFiles  
- [in] El número de nombres de archivo incluidos en el `lpFileNames` de matriz, así como la longitud de la `pbSccFiles` matriz.  
+ N archivos  
+ de El número de nombres de archivo incluidos en la `lpFileNames` matriz, así como la longitud de la `pbSccFiles` matriz.  
   
  lpFileNames  
- [in] Una matriz de nombres de archivo completo para comprobar (matriz debe ser asignada por llamador).  
+ de Una matriz de nombres de archivo completos que se van a comprobar (el llamador debe asignar la matriz).  
   
  pbSccFiles  
- [in, out] Matriz en la que se va a almacenar los resultados.  
+ [in, out] Matriz en la que se almacenan los resultados.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Valor|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
 |SCC_OK|Correcto.|  
 |SCC_E_INVALIDFILEPATH|Una de las rutas de acceso de la matriz no es válida.|  
 |SCC_E_NONSPECIFICERROR|Error no específico.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta función se invoca con una lista de archivos para determinar si el complemento de control de código fuente proporciona soporte técnico en el MSSCCPRJ. Archivo de control de código fuente para cada uno de los archivos indicados (para obtener más información sobre la MSSCCPRJ. Archivo de control de código fuente, consulte [MSSCCPRJ. Archivo de SCC](../extensibility/mssccprj-scc-file.md)). Pueden declarar los complementos de control de código fuente si tienen la capacidad de crear MSSCCPRJ. Archivos CCF declarando `SCC_CAP_SCCFILE` durante la inicialización. El complemento devuelve `TRUE` o `FALSE` por archivo en el `pbSccFiles` matriz para indicar cuál de los archivos indicados tiene MSSCCPRJ. Soporte técnico de SCC. Si el complemento devuelve un código de éxito de la función, se respetan los valores de la matriz de devolución. En caso de error, se omite la matriz.  
+ Se llama a esta función con una lista de archivos para determinar si el complemento de control de código fuente proporciona compatibilidad en MSSCCPRJ. Archivo SCC para cada uno de los archivos especificados (para obtener más información sobre MSSCCPRJ). Archivo SCC, vea [MSSCCPRJ. Archivo SCC](../extensibility/mssccprj-scc-file.md)). Los complementos de control de código fuente pueden declarar si tienen la capacidad de crear MSSCCPRJ. Archivos SCC declarando `SCC_CAP_SCCFILE` durante la inicialización. El complemento devuelve `TRUE` o `FALSE` por archivo de la `pbSccFiles` matriz para indicar cuál de los archivos especificados tiene MSSCCPRJ. Compatibilidad con SCC. Si el complemento devuelve un código de éxito de la función, se respetan los valores de la matriz devuelta. En caso de error, se omite la matriz.  
   
-## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Consulte también  
+ [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [Archivo MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

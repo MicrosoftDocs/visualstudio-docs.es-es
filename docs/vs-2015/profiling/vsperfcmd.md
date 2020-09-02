@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148221"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -33,7 +33,7 @@ VSPerfCmd [/U] [/options]
   
  En las tablas siguientes se describen las opciones de la herramienta **VSPerfCmd.exe**.  
   
-|Opción|DESCRIPCIÓN|  
+|Opción|Descripción|  
 |------------|-----------------|  
 |**U**|Se escribe la salida de la consola redirigida como Unicode. Esta debe ser la primera opción especificada.|  
 |[Start](../profiling/start.md) **:** `mode`|Inicia el servicio de generación de perfiles en el modo especificado.|  
@@ -41,7 +41,7 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Habilita la generación de perfiles en las sesiones de Windows. Úselo solo con **Start**, **Attach** o **Launch**.|  
 |[User](../profiling/user-vsperfcmd.md) **:** [`domain\`]`username`|Permite que la cuenta especificada tenga acceso al servicio de generador de perfiles. Úselo solo con **Start**.|  
 |[WaitStart](../profiling/waitstart.md)[ **:** `n`]|Espera a que el registrador de recolección de datos se inicialice. Si se especifica `n`, **VSPerfCmd** esperará a lo sumo `n` segundos. Si no se especifica `n`, **VSPerfCmd** esperará indefinidamente. Esto facilita el uso de **VSPerfCmd** como parte de un proceso por lotes.|  
-|[Counter](../profiling/counter.md) **:** `cfg`|Cuando se usa el método de generación de perfiles de muestreo, especifica un contador de CPU y el número de eventos que se usará como intervalo de muestreo. Puede muestrear solo un valor de contador.<br /><br /> Cuando se usa el método de generación de perfiles de instrumentación, especifica un contador de CPU que se recopila en cada punto de instrumentación. Úselo solo con **Start:** `Trace`, **Attach** o **Launch**.|  
+|[Counter](../profiling/counter.md) **:** `cfg`|Cuando se usa el método de generación de perfiles de muestreo, especifica un contador de CPU y el número de eventos que se usará como intervalo de muestreo. Puede muestrear solo un valor de contador.<br /><br /> Cuando se usa el método de generación de perfiles de instrumentación, especifica un contador de CPU que se recopila en cada punto de instrumentación. Úselo solo con **Start:** `Trace` , **Attach**o **Launch**.|  
 |[QueryCounters](../profiling/querycounters.md)|Muestra una lista de contadores de CPU válidos para la máquina actual.|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|Especifica un evento de contador de rendimiento de Windows que se incluirá con datos de marca de perfil. Úselo solo con **Start**.|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Especifica el intervalo de tiempo (en milisegundos) entre los eventos de recopilación de datos de contadores de rendimiento de Windows. Úselo con **WinCounter**.|  
@@ -52,17 +52,17 @@ VSPerfCmd [/U] [/options]
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|Detiene la recopilación de datos, pero no finaliza la sesión de generación de perfiles.|  
 |[ProcessOn](../profiling/processon-and-processoff.md) **:** `pid`|Reanuda la recopilación de datos para el proceso especificado después de que la generación de perfiles se haya pausado mediante una llamada a **VSPerfCmdProcessOff**.|  
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Detiene la recopilación de datos para el proceso especificado.|  
-|[ThreadOn y ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Reanuda la generación de perfiles para el proceso especificado después de que esta se haya pausado mediante una llamada a **VSPerfCmdThreadOff**. Use **ThreadOn** solo al generar perfiles con el método de instrumentación.|  
-|[ThreadOn y ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Pausa la generación de perfiles para el subproceso especificado. Use **ThreadOff** solo al generar perfiles con el método de instrumentación.|  
+|[ThreadOn and ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Reanuda la generación de perfiles para el proceso especificado después de que esta se haya pausado mediante una llamada a **VSPerfCmdThreadOff**. Use **ThreadOn** solo al generar perfiles con el método de instrumentación.|  
+|[ThreadOn and ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Pausa la generación de perfiles para el subproceso especificado. Use **ThreadOff** solo al generar perfiles con el método de instrumentación.|  
 |[Mark](../profiling/mark.md) **:** _MarkNum_[ **,** _MarkText_ **]**|Inserta una marca en el archivo de datos de generación de perfiles, con un texto opcional.|  
   
 ## <a name="sampling-method-options"></a>Opciones del método de muestreo  
  Las siguientes opciones solo están disponibles cuando se usa el método de generación de perfiles de muestreo.  
   
-|Opción|DESCRIPCIÓN|  
+|Opción|Descripción|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Executable*|Inicia la aplicación específica y empieza a generar perfiles.|  
-|[Args](../profiling/args.md) **:** *Arguments*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
+|[Launch](../profiling/launch.md) **:** *Ejecutable*|Inicia la aplicación específica y empieza a generar perfiles.|  
+|[Args](../profiling/args.md) **:** *Argumentos*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
 |[Consola](../profiling/console.md)|Inicia el comando especificado en una nueva ventana del símbolo del sistema.|  
 |[Attach](../profiling/attach.md) **:** *PID*[ **,** _PID_]|Inicia la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso.|  
 |[Detach](../profiling/detach.md)[ **:** _PID_[,_PID_]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  
@@ -71,7 +71,7 @@ VSPerfCmd [/U] [/options]
 ### <a name="sampling-interval-options"></a>Opciones del intervalo de muestreo  
  Las opciones siguientes especifican el tipo y la duración de los intervalos de muestreo. El valor predeterminado es **Timer**. También puede especificar un contador de CPU como intervalo mediante la opción **Counter**. Estas opciones solo se pueden especificar con **Launch** o con la primera opción **Attach** de una sesión de generación de perfiles.  
   
-|Opción|DESCRIPCIÓN|  
+|Opción|Descripción|  
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[ **:** _n_]|Muestrea en cada error de página número n (valor predeterminado: 10).|  
 |[Sys](../profiling/sys-vsperfcmd.md)[ **:** _n_]|Muestrea en cada llamada del sistema número n (valor predeterminado: 10).|  
@@ -82,9 +82,9 @@ VSPerfCmd [/U] [/options]
   
  Las opciones de administración deben ejecutarse en un símbolo del sistema que se ejecute con credenciales administrativas.  
   
-|Opción|DESCRIPCIÓN|  
+|Opción|Descripción|  
 |------------|-----------------|  
-|**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|Permite o deniega al usuario o grupo especificados el acceso a los servicios de generación de perfiles.<br /><br /> `Right` puede ser:<br /><br /> CrossSession: concede al usuario acceso al servicio para realizar la generación de perfiles entre sesiones.<br /><br /> SampleProfiling: concede al usuario acceso al controlador para habilitar la generación de perfiles de muestreo. También se usa para tener acceso a la información de transición del núcleo durante la generación de perfiles de seguimiento.<br /><br /> FullAccess: concede al usuario acceso de tipo CrossSession y SampleProfiling.|  
+|**Administración: seguridad** \<**ALLOW&#124;DENY**> *Derecha*[ *derecha*] \<*User*&#124;*Group*>|Permite o deniega al usuario o grupo especificados el acceso a los servicios de generación de perfiles.<br /><br /> `Right` puede ser:<br /><br /> CrossSession: concede al usuario acceso al servicio para realizar la generación de perfiles entre sesiones.<br /><br /> SampleProfiling: concede al usuario acceso al controlador para habilitar la generación de perfiles de muestreo. También se usa para tener acceso a la información de transición del núcleo durante la generación de perfiles de seguimiento.<br /><br /> FullAccess: concede al usuario acceso de tipo CrossSession y SampleProfiling.|  
 |**Admin:Security, List**|Muestra el estado actual de los servicios de generación de perfiles y enumera los permisos de usuario.|  
 |**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Inicia, detiene, instala o desinstala el componente del servicio de generación de perfiles (service) o el controlador de dispositivos de modo de núcleo (driver).|  
 |**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Habilita o deshabilita el inicio automático del servicio de generación de perfiles (service) o el controlador de dispositivos de modo de núcleo (driver) después de reiniciar.|  
@@ -92,7 +92,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  La opción **VSPerfCmd /Driver** ahora está obsoleta. Use la opción **VsPerfCmdAdmin** para esta funcionalidad.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
