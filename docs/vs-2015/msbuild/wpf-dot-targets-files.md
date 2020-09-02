@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2839cce2a49eb4be8e72f370fe60be3d81529da1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687142"
 ---
 # <a name="wpf-targets-files"></a>Archivos .Targets de WPF
@@ -30,7 +30,7 @@ ms.locfileid: "65687142"
 
 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] extiende la herramienta [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] agregando un conjunto de tareas específicas de [!INCLUDE[TLA2#tla_wpf](../includes/tla2sharptla-wpf-md.md)] que se combinan en un archivo .targets especial, **Microsoft.WinFX.targets**. Este archivo combina el conjunto de tareas de [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] que se necesitan para compilar un proyecto de [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] en [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)].  
   
-## <a name="see-also"></a>Vea también  
- [Archivos .Targets](../msbuild/msbuild-dot-targets-files.md)   
+## <a name="see-also"></a>Consulte también  
+ [. Archivos de destino](../msbuild/msbuild-dot-targets-files.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [Compilar una aplicación de WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

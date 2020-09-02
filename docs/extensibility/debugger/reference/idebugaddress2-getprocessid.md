@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress2::GetProcessID ? Microsoft Docs
+title: 'IDebugAddress2:: Getprocessid (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 94873e9a9c05a0c5e9253ce53240ab6b4ca39064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736577"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
-Recupera el identificador del proceso que posee el objeto representado por esta [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) interfaz.
+Recupera el identificador del proceso que posee el objeto representado por esta interfaz [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ int GetProcessID (
 
 ## <a name="parameters"></a>Parámetros
 `pProcID`\
-[fuera] El ID del proceso.
+enuncia IDENTIFICADOR del proceso.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

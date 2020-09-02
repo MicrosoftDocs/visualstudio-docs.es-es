@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904025"
 ---
 # <a name="create-a-settings-category"></a>Crear una categoría de configuración
@@ -37,7 +37,7 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
 
 2. Abra el archivo *VSPackage. resx* y agregue estos tres recursos de cadena:
 
-    |NOMBRE|Valor|
+    |Nombre|Value|
     |----------|-----------|
     |106|Mi categoría|
     |107|Mi configuración|
@@ -96,7 +96,7 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
 
 3. En la vista de árbol del panel izquierdo, expanda **mi categoría** y, a continuación, haga clic en **mi página de cuadrícula**.
 
-4. Cambie el valor de **OptionFloat** a 3,1416 y **OptionInteger** a 12. Haga clic en **Aceptar**.
+4. Cambie el valor de **OptionFloat** a 3,1416 y **OptionInteger** a 12. Haga clic en **OK**.
 
 5. En el menú **Herramientas**, haga clic en **Importar y exportar configuraciones**.
 
@@ -137,7 +137,7 @@ Para iniciar este tutorial, primero debe completar la primera sección de la [P�
 
 11. Cierre el archivo de configuración sin cambiarlo.
 
-12. En el menú **herramientas** , haga clic en **Opciones**, expanda **mi categoría**, haga clic en **mi página de cuadrícula** y, a continuación, cambie el valor de **OptionFloat** a 1,0 y **OptionInteger** a 1. Haga clic en **Aceptar**.
+12. En el menú **herramientas** , haga clic en **Opciones**, expanda **mi categoría**, haga clic en **mi página de cuadrícula** y, a continuación, cambie el valor de **OptionFloat** a 1,0 y **OptionInteger** a 1. Haga clic en **OK**.
 
 13. En el menú **herramientas** , haga clic en **importar y exportar configuraciones**, seleccione **importar la configuración de entorno seleccionada**y, a continuación, haga clic en **siguiente**.
 

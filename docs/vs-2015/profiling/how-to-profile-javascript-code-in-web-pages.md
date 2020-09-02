@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Generar perfiles de código de JavaScript en páginas web | Microsoft Docs
+title: 'Cómo: Generar perfiles de código de JavaScript en páginas web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688146"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedimiento Generar perfiles de código de JavaScript en páginas Web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Cómo: Generar perfiles de código de JavaScript en páginas web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las herramientas de generación de perfiles de[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pueden recopilar datos de rendimiento del código JavaScript que se ejecuta en un aplicación web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , una página web arbitraria o una aplicación JavaScript usando el método de generación de perfiles de instrumentación.  
@@ -34,7 +34,7 @@ Las herramientas de generación de perfiles de[!INCLUDE[vsprvs](../includes/vspr
 > [!WARNING]
 > Para generar perfiles de JavaScript en aplicaciones de la Tienda Windows, consulte uno de los siguientes temas:  
 > 
-> - [Tiempo de función de JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [tiempo de función de JavaScript en un dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+> - Temporización de [funciones JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [de control de tiempo de función de JavaScript en un dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [Analizar los datos de control de tiempo de función de JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
@@ -42,7 +42,7 @@ Las herramientas de generación de perfiles de[!INCLUDE[vsprvs](../includes/vspr
   
  Cuando se especifica la generación de perfiles de JavaScript, se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se ejecuta en el servidor.  
   
-- Para una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se ejecuta en el servidor.  
+- Para una aplicación web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se ejecuta en el servidor.  
   
 - Para una página web arbitraria, se genera el perfil del código JavaScript que se ejecuta en el explorador.  
   
@@ -80,7 +80,7 @@ Las herramientas de generación de perfiles de[!INCLUDE[vsprvs](../includes/vspr
   
     2. Active la casilla **Generar perfiles de JavaScript** y, después, haga clic en **Siguiente**.  
   
-6. En la cuarta página del asistente, haga clic en **Finalizar** para iniciar la aplicación web en el explorador.  
+6. En la cuarta página del asistente, haga clic en **Finalizar** para iniciar la página web en el explorador.  
   
 7. Ejecute la funcionalidad de la que desea generar perfiles.  
   

@@ -1,5 +1,5 @@
 ---
-title: Implementación de Comandos (Command Implementation) Microsoft Docs
+title: Implementación de comandos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7a536120c81c154cf894717a2af6a4e048d56e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709581"
 ---
-# <a name="command-implementation"></a>Implementación del comando
+# <a name="command-implementation"></a>Implementación de comandos
 Para implementar un comando en un VSPackage, debe realizar las siguientes tareas:
 
-1. En el archivo *.vsct,* configure un grupo de comandos y, a continuación, agréguele el comando. Para obtener más información, vea Archivos de tabla de [comandos de Visual Studio (.vsct).](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+1. En el archivo *. Vsct* , configure un grupo de comandos y, a continuación, agregue el comando a él. Para obtener más información, vea [archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 2. Registre el comando con Visual Studio.
 
@@ -29,7 +29,7 @@ Para implementar un comando en un VSPackage, debe realizar las siguientes tareas
 En las secciones siguientes se explica cómo registrar e implementar comandos.
 
 ## <a name="register-commands-with-visual-studio"></a>Registrar comandos con Visual Studio
- Si el comando va a aparecer en <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> un menú, debe agregar el a su VSPackage y usar como un valor el nombre del menú o su identificador de recurso.
+ Si el comando va a aparecer en un menú, debe agregar el <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> a su VSPackage y usarlo como valor, ya sea el nombre del menú o su identificador de recurso.
 
 ```
 [ProvideMenuResource("Menus.ctmenu", 1)]
@@ -39,7 +39,7 @@ En las secciones siguientes se explica cómo registrar e implementar comandos.
 
 ```
 
- Además, debe registrar el <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>comando con el archivo . Puede obtener este servicio <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> mediante el método si el <xref:Microsoft.VisualStudio.Shell.Package>VSPackage se deriva de .
+ Además, debe registrar el comando con <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> . Puede obtener este servicio mediante el <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> método si el VSPackage se deriva de <xref:Microsoft.VisualStudio.Shell.Package> .
 
 ```
 OleMenuCommandService mcs = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -54,42 +54,42 @@ if ( null != mcs )
 ```
 
 ## <a name="implement-commands"></a>Implementar comandos
- Hay varias maneras de implementar comandos. Si desea un comando de menú estático, que es un comando que siempre aparece <xref:System.ComponentModel.Design.MenuCommand> de la misma manera y en el mismo menú, cree el comando utilizando como se muestra en los ejemplos de la sección anterior. Para crear un comando estático, debe proporcionar un controlador de eventos que sea responsable de ejecutar el comando. Dado que el comando siempre está habilitado y visible, no es necesario proporcionar su estado a Visual Studio. Si desea cambiar el estado de un comando en función de determinadas <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> condiciones, puede crear el comando como una instancia `QueryStatus` de la clase y, en su constructor, proporcionar un controlador de eventos para ejecutar el comando y un controlador para notificar a Visual Studio cuando cambie el estado del comando. También puede <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementar como parte de una clase <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> de comando o, puede implementar si está proporcionando un comando como parte de un proyecto. Las dos interfaces <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> y la clase tienen métodos que notifican a Visual Studio de un cambio en el estado de un comando y otros métodos que proporcionan la ejecución del comando.
+ Hay varias maneras de implementar comandos. Si desea un comando de menú estático, que es un comando que siempre aparece de la misma manera y en el mismo menú, cree el comando con <xref:System.ComponentModel.Design.MenuCommand> como se muestra en los ejemplos de la sección anterior. Para crear un comando estático, debe proporcionar un controlador de eventos que sea responsable de ejecutar el comando. Dado que el comando está siempre habilitado y visible, no es necesario proporcionar su estado a Visual Studio. Si desea cambiar el estado de un comando en función de ciertas condiciones, puede crear el comando como una instancia de la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> clase y, en su constructor, proporcionar un controlador de eventos para ejecutar el comando y un `QueryStatus` controlador para notificar a Visual Studio cuando cambia el estado del comando. También puede implementar <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> como parte de una clase de comando o, puede implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> si proporciona un comando como parte de un proyecto. Las dos interfaces y la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> clase tienen métodos que notifican a Visual Studio de un cambio en el estado de un comando y otros métodos que proporcionan la ejecución del comando.
 
- Cuando se agrega un comando al servicio de comandos, se convierte en uno de una cadena de comandos. Cuando implemente los métodos de notificación de estado y ejecución para el comando, tenga cuidado de proporcionar solo para ese comando en particular y pasar todos los demás casos a los demás comandos de la cadena. Si no pasa el comando (normalmente <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>devolviendo ), Visual Studio puede dejar de funcionar correctamente.
+ Cuando se agrega un comando al servicio de comandos, se convierte en una cadena de comandos. Cuando implemente los métodos de notificación de estado y ejecución para el comando, tenga cuidado de proporcionar solo para ese comando concreto y pasar todos los demás casos a los demás comandos de la cadena. Si no puede pasar el comando (normalmente devolviendo <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED> ), Visual Studio puede dejar de funcionar correctamente.
 
 ## <a name="querystatus-methods"></a>Métodos QueryStatus
- Si está implementando <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> método o el método, busque el GUID del conjunto de comandos al que pertenece el comando y el identificador del comando. Siga estas instrucciones:
+ Si va a implementar el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método o el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> método, compruebe el GUID del conjunto de comandos al que pertenece el comando y el identificador del comando. Siga estas instrucciones:
 
-- Si no se reconoce el GUID, la <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>implementación de cualquiera de los métodos debe devolver .
+- Si no se reconoce el GUID, la implementación de ambos métodos debe devolver <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP> .
 
-- Si la implementación de cualquiera de los métodos reconoce el GUID <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>pero no ha implementado el comando, el método debe devolver .
+- Si la implementación de cualquier método reconoce el GUID pero no ha implementado el comando, el método debe devolver <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED> .
 
-- Si la implementación de cualquiera de los métodos reconoce el GUID y el comando, `prgCmds` el método debe <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> establecer el campo command-flags de cada comando (en el parámetro) mediante las siguientes marcas:
+- Si la implementación de cualquier método reconoce el GUID y el comando, el método debe establecer el campo de marcas de comandos de cada comando (en el `prgCmds` parámetro) mediante las <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> marcas siguientes:
 
   - `OLECMDF_SUPPORTED`: Se admite el comando.
 
   - `OLECMDF_INVISIBLE`: El comando no debe estar visible.
 
-  - `OLECMDF_LATCHED`: El comando está activado y parece haber sido activado.
+  - `OLECMDF_LATCHED`: El comando se alterna y parece estar activado.
 
   - `OLECMDF_ENABLED`: El comando está habilitado.
 
-  - `OLECMDF_DEFHIDEONCTXTMENU`: El comando debe estar oculto si aparece en un menú contextual.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: El comando debe ocultarse si aparece en un menú contextual.
 
-  - `OLECMDF_NINCHED`: El comando es un controlador de menú y no está habilitado, pero su lista de menú desplegable no está vacía y todavía está disponible. (Esta bandera rara vez se utiliza.)
+  - `OLECMDF_NINCHED`: El comando es un controlador de menú y no está habilitado, pero la lista de menús desplegables no está vacía y sigue estando disponible. (Esta marca se usa con poca frecuencia).
 
-- Si el comando se definió en `TextChanges` el archivo *.vsct* con la marca, establezca los siguientes parámetros:
+- Si el comando se definió en el archivo *. Vsct* con la `TextChanges` marca, establezca los parámetros siguientes:
 
-  - Establezca `rgwz` el elemento `pCmdText` del parámetro en el nuevo texto del comando.
+  - Establezca el `rgwz` elemento del `pCmdText` parámetro en el nuevo texto del comando.
 
-  - Establezca `cwActual` el elemento `pCmdText` del parámetro en el tamaño de la cadena de comandos.
+  - Establezca el `cwActual` elemento del `pCmdText` parámetro en el tamaño de la cadena de comando.
 
 Además, asegúrese de que el contexto actual no es una función de automatización, a menos que el comando esté diseñado específicamente para controlar las funciones de automatización.
 
-Para indicar que admite un <xref:Microsoft.VisualStudio.VSConstants.S_OK>comando determinado, devuelva . Para todos los <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>demás comandos, devuelva .
+Para indicar que se admite un comando determinado, devuelva <xref:Microsoft.VisualStudio.VSConstants.S_OK> . Para el resto de comandos, devuelva <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED> .
 
-En el ejemplo `QueryStatus` siguiente, el método primero se asegura de que el contexto no es una función de automatización y, a continuación, busca el GUID del conjunto de comandos y el identificador de comando correctos. El comando en sí se establece para ser habilitado y soportado. No se admiten otros comandos.
+En el ejemplo siguiente, el `QueryStatus` método se asegura primero de que el contexto no es una función de automatización y, a continuación, busca el GUID del conjunto de comandos y el ID. de comando correctos. El propio comando se establece para habilitarse y admitirse. No se admite ningún otro comando.
 
 ```csharp
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -111,9 +111,9 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```
 
 ## <a name="execution-methods"></a>Métodos de ejecución
- La implementación del método es similar a la `Exec` implementación del `QueryStatus` método. En primer lugar, asegúrese de que el contexto no es una función de automatización. A continuación, pruebe el GUID y el identificador de comando. Si no se reconoce el GUID <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>o el identificador de comando, devuelva .
+ La implementación del `Exec` método es similar a la implementación del `QueryStatus` método. En primer lugar, asegúrese de que el contexto no es una función de automatización. A continuación, compruebe el GUID y el identificador de comando. Si no se reconoce el GUID o el identificador de comando, se devuelve <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED> .
 
- Para controlar el comando, <xref:Microsoft.VisualStudio.VSConstants.S_OK> ejecútelo y devuelva si la ejecución se realiza correctamente. El comando es responsable de la detección y notificación de errores; por lo tanto, devuelva un código de error si se produce un error en la ejecución. En el ejemplo siguiente se muestra cómo se debe implementar el método de ejecución.
+ Para controlar el comando, ejecútelo y devuelva <xref:Microsoft.VisualStudio.VSConstants.S_OK> si la ejecución se realiza correctamente. El comando es responsable de la detección de errores y la notificación. por lo tanto, devuelve un código de error si se produce un error en la ejecución. En el ejemplo siguiente se muestra cómo se debe implementar el método de ejecución.
 
 ```csharp
 public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -133,6 +133,6 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo VSPackages agregan elementos de interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Cómo agrega VSPackages los elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

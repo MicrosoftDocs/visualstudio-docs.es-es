@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904127"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Agregar una barra de herramientas a una ventana de herramientas
@@ -113,5 +113,5 @@ En este tutorial se muestra cómo agregar una barra de herramientas a una ventan
 
 3. En la barra de herramientas, haga clic en el icono para mostrar el mensaje **TWTestCommandPackage dentro de TWToolbar. TWTestCommand. MenuItemCallback ()**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md)

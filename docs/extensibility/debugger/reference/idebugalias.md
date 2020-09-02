@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias ? Microsoft Docs
+title: IDebugAlias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f2ceb87277460f65e52c35f02e7fbbd01da1101a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736516"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
-> En Visual Studio 2015, esta forma de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte Evaluadores de [expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y Ejemplo de evaluador de [expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> En Visual Studio 2015, esta manera de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte [evaluadores](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) de expresiones CLR y [ejemplo de evaluador de expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Representa un alias numérico para una variable. Un alias es simplemente un nombre diferente para una variable.
 
@@ -34,26 +34,26 @@ IDebugAlias : IUnknown
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
  El evaluador de expresiones (EE) implementa esta interfaz para admitir alias numéricos para variables.
 
-## <a name="notes-for-callers"></a>Notas para las personas que llaman
-- [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) crea un alias para un objeto determinado. Para buscar alias, utilice [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md) o [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md).
+## <a name="notes-for-callers"></a>Notas para llamadores
+- [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) crea un alias para un objeto determinado. Para buscar alias, use [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md) o [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md).
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- Los métodos siguientes `IDebugAlias` se definen en la interfaz.
+ Los métodos siguientes se definen en la `IDebugAlias` interfaz.
 
 |Método|Descripción|
 |------------|-----------------|
-|[Getobject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|Obtiene el objeto al que hace referencia este alias.|
+|[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|Obtiene el objeto al que hace referencia este alias.|
 |[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|Obtiene el nombre de alias.|
 |[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|Recupera una `ICorDebugValue` interfaz que proporciona acceso a la información de código administrado sobre este objeto (solo código administrado).|
-|[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Marca este alias como que ya no se utiliza.|
+|[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Marca este alias como que ya no se usa.|
 
 ## <a name="remarks"></a>Observaciones
- Un alias es un número decimal en forma de cadena seguido del carácter de la clase, por ejemplo, 1001.
+ Un alias es un número decimal en forma de cadena seguido del carácter #, por ejemplo, 1001 #.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: ee.h
+ Encabezado: EE. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

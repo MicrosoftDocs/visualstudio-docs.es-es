@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Utilizar comprobaciones nativas en tiempo de ejecución | Documentos de Microsoft
+title: Procedimiento Uso de comprobaciones nativas en tiempo de ejecución | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,10 +42,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b50dda3e31e27fa5d177c3b0ba2790babd2a660f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685854"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedimiento Uso de comprobaciones nativas en tiempo de ejecución
@@ -63,9 +63,9 @@ En Visual C++, puede realizar [runtime_checks](https://msdn.microsoft.com/librar
   
 - Pérdida de datos en una asignación a una variable corta.  
   
-  Si utiliza **/RTC** con una generación optimizada (**/O**), obtendrá un error del compilador. Si utiliza un pragma `runtime_checks` en una versión optimizada, el pragma no surte ningún efecto.  
+  Si utiliza **/RTC** con una generación optimizada ( **/O**), obtendrá un error del compilador. Si utiliza un pragma `runtime_checks` en una versión optimizada, el pragma no surte ningún efecto.  
   
-  Cuando se depura un programa con las comprobaciones en tiempo de ejecución habilitadas, la acción predeterminada es la de que el programa se detenga y se interrumpa su depuración cuando se produzca un error en tiempo de ejecución. Puede cambiar este comportamiento predeterminado para cualquier comprobación en tiempo de ejecución. Para obtener más información, consulte [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).  
+  Cuando se depura un programa con las comprobaciones en tiempo de ejecución habilitadas, la acción predeterminada es la de que el programa se detenga y se interrumpa su depuración cuando se produzca un error en tiempo de ejecución. Puede cambiar este comportamiento predeterminado para cualquier comprobación en tiempo de ejecución. Para obtener más información, vea [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).  
   
   Los siguientes procedimientos describen cómo habilitar las comprobaciones en tiempo de ejecución nativas en una versión de depuración y cómo modificar el comportamiento de la comprobación en tiempo de ejecución nativa.  
   
@@ -83,7 +83,7 @@ En Visual C++, puede realizar [runtime_checks](https://msdn.microsoft.com/librar
   
 - Utilice la directiva pragma `runtime_checks` .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [Comprobar errores en tiempo de ejecución](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)

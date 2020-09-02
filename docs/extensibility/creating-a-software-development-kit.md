@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904115"
 ---
 # <a name="create-a-software-development-kit"></a>Crear un kit de desarrollo de software
@@ -27,7 +27,7 @@ Hay dos tipos de SDK:
 
 En las secciones siguientes se describe la infraestructura general de los SDK y cómo crear un SDK de la plataforma y un SDK de extensión.
 
-## <a name="platform-sdks"></a>SDK de la plataforma
+## <a name="platform-sdks"></a>SDK de plataforma
 
 Los SDK de la plataforma son necesarios para desarrollar aplicaciones para una plataforma. Por ejemplo, el [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK es necesario para desarrollar aplicaciones para [!INCLUDE[win81](../debugger/includes/win81_md.md)] .
 
@@ -135,7 +135,7 @@ Los SDK de extensión tienen el siguiente diseño de instalación:
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-En el archivo *SDKManifest.xml* se describe cómo debe usar Visual Studio el SDK. Este es un ejemplo:
+En el archivo *SDKManifest.xml* se describe cómo debe usar Visual Studio el SDK. A continuación se muestra un ejemplo:
 
 ```
 <FileList>
@@ -195,7 +195,7 @@ La lista siguiente proporciona los elementos del archivo:
 
 16. Referencia de archivo: se especifica solo para las referencias que contienen controles o son archivos winmd nativas. Para obtener información sobre cómo especificar si una referencia contiene controles, vea [especificar la ubicación de los elementos del cuadro de herramientas](#ToolboxItems) a continuación.
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Especificar la ubicación de los elementos del cuadro de herramientas
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> Especificar la ubicación de los elementos del cuadro de herramientas
 
 El elemento **ToolBoxItems** del esquema *SDKManifest.xml* especifica la categoría y la ubicación de los elementos del cuadro de herramientas en los SDK de la plataforma y de la extensión. En los siguientes ejemplos se muestra cómo especificar ubicaciones diferentes. Esto es aplicable a las referencias de WinMD o DLL.
 
@@ -267,7 +267,7 @@ El elemento **ToolBoxItems** del esquema *SDKManifest.xml* especifica la categor
     </File>
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: crear un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Tutorial: crear un SDK mediante C# o Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

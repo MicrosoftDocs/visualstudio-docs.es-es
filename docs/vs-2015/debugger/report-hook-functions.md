@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a492a1db8b65cad74d02cec0f43bf0c81461730
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687507"
 ---
 # <a name="report-hook-functions"></a>Funciones de enlace de informe
@@ -41,16 +41,16 @@ Una función de enlace de informe, instalada mediante [_CrtSetReportHook](https:
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- El puntero que se pasa a **_CrtSetReportHook** es de tipo **_CRT_REPORT_HOOK**, tal como se define en CRTDBG. H:  
+ El puntero que se pasa a **_CrtSetReportHook** del tipo **_CRT_REPORT_HOOK**, según se define en CRTDBG.H:  
   
 ```  
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- Cuando la biblioteca en tiempo de ejecución llama a la función de enlace, el argumento *nRptType*contiene la categoría del informe (**_CRT_WARN**, **_CRT_ERROR** o **_CRT_ASSERT**), *szMsg* contiene un puntero a una cadena de mensaje de informe completamente ensamblada y *retVal* especifica si `_CrtDbgReport` debería continuar con la ejecución normal después de generar el informe o bien iniciar el depurador. Un valor cero en *retVal* permite continuar la ejecución, un valor 1 inicia el depurador.  
+ Cuando la biblioteca en tiempo de ejecución llama a la función de enlace, el argumento *nRptType*contiene la categoría del informe ( **_CRT_WARN**, **_CRT_ERROR** o **_CRT_ASSERT**), *szMsg* contiene un puntero a una cadena de mensaje de informe completamente ensamblada y *retVal* especifica si `_CrtDbgReport` debería continuar con la ejecución normal después de generar el informe o bien iniciar el depurador. Un valor cero en *retVal* permite continuar la ejecución, un valor 1 inicia el depurador.  
   
  Si el enlace se encarga de procesar completamente el mensaje en cuestión, de forma que no se requiera ningún informe posterior, debería devolver **TRUE**. Si devuelve **FALSE**, `_CrtDbgReport` informará del mensaje como es habitual.  
   
-## <a name="see-also"></a>Vea también  
- [Creación de funciones de enlace de depuración](../debugger/debug-hook-function-writing.md)   
+## <a name="see-also"></a>Consulte también  
+ [Escritura de funciones de enlace de depuración](../debugger/debug-hook-function-writing.md)   
  [Ejemplo crt_dbg2](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

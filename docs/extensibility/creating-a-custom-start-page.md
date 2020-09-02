@@ -10,10 +10,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903676"
 ---
 # <a name="creating-a-custom-start-page"></a>Crear una página de inicio personalizada
@@ -85,7 +85,7 @@ No establezca la instancia principal de Visual Studio para ejecutar la página d
 
 - Después de probar la página de inicio y de que se encuentre estable, use la opción **personalizar la página de inicio** del cuadro de diálogo **Opciones** para seleccionarla como página de inicio en la instancia principal de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [Agregar control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)

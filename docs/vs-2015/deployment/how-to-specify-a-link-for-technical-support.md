@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especifique un vínculo para soporte técnico | Documentos de Microsoft
+title: 'Cómo: especificar un vínculo para soporte técnico | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,18 +22,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148112"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Procedimiento Especificar un vínculo para soporte técnico
+# <a name="how-to-specify-a-link-for-technical-support"></a>Cómo: Especificar un vínculo para soporte técnico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, el **dirección URL de soporte** propiedad identifica una página Web o recurso compartido de archivos donde los usuarios pueden ir para obtener información acerca de la aplicación. Esta propiedad es opcional; Si se proporciona, se mostrará la dirección URL en la entrada de la aplicación **agregar o quitar programas** cuadro de diálogo.  
+Al publicar una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, la propiedad de la **dirección URL de soporte** identifica una página web o un recurso compartido de archivos en el que los usuarios pueden ir para obtener información acerca de la aplicación. Esta propiedad es opcional; Si se proporciona, la dirección URL se mostrará en el cuadro de diálogo **Agregar o quitar programas** de entrada de la aplicación.  
   
- El **dirección URL de soporte** propiedad puede establecerse en el **publicar** página de la **Diseñador de proyectos**.  
+ La propiedad **dirección URL de soporte** se puede establecer en la página **publicar** del **Diseñador de proyectos**.  
   
 ### <a name="to-specify-a-support-url"></a>Para especificar una dirección URL de soporte técnico  
   
@@ -41,12 +41,12 @@ Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicació
   
 2. Haga clic en la pestaña **Publicar**.  
   
-3. Haga clic en el **opciones** botón para abrir el **opciones de publicación** cuadro de diálogo.  
+3. Haga clic en el botón **Opciones** para abrir el cuadro de diálogo **Opciones de publicación** .  
   
-4. Haga clic en **descripción**.  
+4. Haga clic en **Descripción**.  
   
-5. En el **dirección URL de soporte** , escriba una ruta de acceso completa a un recurso compartido UNC, página Web o sitio Web.  
+5. En el campo **dirección URL de soporte técnico** , escriba una ruta de acceso completa a un sitio web, una página web o un recurso compartido UNC.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Procedimientos: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -30,10 +30,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fba5032860e21bbd323b8e49d5f32ab9b6f90540
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688129"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Determinar qué llamada genera el error cuando se llama a una función varias veces
@@ -51,7 +51,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
   
  Ahora sabe que la función produjo un error en la llamada nº 101. Si restablece el punto de interrupción con un número de llamadas de 101 y ejecuta el programa otra vez, éste se detiene en la llamada a `CnvtV` que causó el error.  
   
-## <a name="see-also"></a>Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Establecimiento de puntos de interrupción](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+## <a name="see-also"></a>Consulte también  
+ [Preguntas más frecuentes sobre depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
+ [Establecer puntos de interrupción](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)

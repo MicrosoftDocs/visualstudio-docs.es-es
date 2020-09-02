@@ -13,10 +13,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d63d4dcd6e3b7a3b81504b485ee710779cef3c13
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688536"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
@@ -31,39 +31,39 @@ IDebugStackFrame3 : IDebugStackFrame2
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El motor de depuración (DE) implementa esta interfaz en el mismo objeto que implementa el [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interfaz para admitir excepciones interceptadas.  
+ El motor DE depuración (DE) implementa esta interfaz en el mismo objeto que implementa la interfaz [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) para admitir excepciones interceptadas.  
   
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Llame a [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) en un `IDebugStackFrame2` interfaz para obtener esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para llamadores  
+ Llame a [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) en una `IDebugStackFrame2` interfaz para obtener esta interfaz.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  Además de los métodos heredados de [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md), `IDebugStackFrame3` expone los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Controla una excepción para el marco de pila actual antes de cualquier control de excepciones.|  
-|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Devuelve un contexto de código si se produce un desenredo de pila.|  
+|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Controla una excepción para el marco de pila actual antes de cualquier control de excepciones regular.|  
+|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Devuelve un contexto de código si se produjera un desenredado de la pila.|  
   
-## <a name="remarks"></a>Comentarios  
- Una excepción interceptada significa que un depurador puede procesar una excepción antes de llamar a las rutinas de control de excepciones normales por el tiempo de ejecución. Interceptar esencialmente una excepción, se hace que el tiempo de ejecución fingir que hay presente incluso cuando no hay un controlador de excepciones.  
+## <a name="remarks"></a>Observaciones  
+ Una excepción interceptada significa que un depurador puede procesar una excepción antes de que el tiempo de ejecución llame a las rutinas de control de excepciones normales. La interceptación de una excepción esencialmente significa que el tiempo de ejecución Imagine que hay un controlador de excepciones presente incluso cuando no existe.  
   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) se llama durante todos los eventos de devolución de llamada de excepción normal (la única excepción a esto es si está depurando código de modo mixto (administrado y código no administrado), en cuyo caso no se puede interceptar la excepción durante la devolución de llamada de oportunidad como último). Si no implementa la DE `IDebugStackFrame3`, o la DE devuelve un error de IDebugStackFrame3::`InterceptCurrentException` (como `E_NOTIMPL`), a continuación, el depurador va a controlar la excepción con normalidad.  
+ Se llama a [interceptcurrentexception (](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) durante todos los eventos de devolución de llamada de excepción normales (la única excepción es si se depura código de modo mixto (código administrado y no administrado), en cuyo caso no se puede interceptar la excepción durante la devolución de llamada de última oportunidad). Si DE no implementa `IDebugStackFrame3` , o de devuelve un error de IDebugStackFrame3:: `InterceptCurrentException` (como `E_NOTIMPL` ), el depurador controlará la excepción con normalidad.  
   
- Al interceptar una excepción, el depurador puede permitir al usuario realizar cambios en el estado del programa que se está depurando y, a continuación, reanudar la ejecución en el punto donde se produjo la excepción.  
+ Al interceptar una excepción, el depurador puede permitir al usuario realizar cambios en el estado del programa que se está depurando y, a continuación, reanudar la ejecución en el punto en el que se produjo la excepción.  
   
 > [!NOTE]
-> Interceptar las excepciones pueden solo en código administrado, es decir, en un programa que se ejecuta en Common Language Runtime (CLR).  
+> Las excepciones interceptadas solo se permiten en código administrado, es decir, en un programa que se ejecuta en Common Language Runtime (CLR).  
   
- Un motor de depuración indica que es compatible con las excepciones interceptadas estableciendo "metricExceptions" en un valor de 1 en tiempo de ejecución mediante el uso de la `SetMetric` función. Para obtener más información, consulte [aplicaciones auxiliares de SDK para depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ Un motor de depuración indica que admite la interceptación de excepciones estableciendo "metricExceptions" en un valor de 1 en tiempo de ejecución mediante la `SetMetric` función. Para obtener más información, vea [aplicaciones auxiliares de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
- [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Consulte también  
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [Asistentes de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

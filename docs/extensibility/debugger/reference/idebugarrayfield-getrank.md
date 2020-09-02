@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank ? Microsoft Docs
+title: 'IDebugArrayField:: Getrank (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736312"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
@@ -41,13 +41,13 @@ int GetRank(
 
 ## <a name="parameters"></a>Parámetros
 `pdwRank`\
-[fuera] Devuelve el rango.
+enuncia Devuelve el rango.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El rango de una matriz corresponde al número de dimensiones. En C++ y C, las matrices multidimensionales son realmente matrices de matrices y, `GetRank` por lo tanto, se pueden considerar solo una matriz unidimensional (y el método siempre devuelve 1). En [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], por otro lado, las matrices multidimensionales se manejan de manera diferente y el `GetRank` rango de dicha matriz refleja el número de dimensiones (y el método siempre devuelve el número de dimensiones).
+ El rango de una matriz se corresponde con el número de dimensiones. En C++ y C#, las matrices multidimensionales son realmente matrices de matrices y, por tanto, se pueden considerar solo una matriz unidimensional (y el `GetRank` método siempre devuelve 1). Por [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] otro lado, las matrices multidimensionales se tratan de forma diferente y el rango de una matriz de este tipo refleja el número de dimensiones (y el `GetRank` método siempre devuelve el número de dimensiones).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

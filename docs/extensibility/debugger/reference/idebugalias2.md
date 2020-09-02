@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias2 ? Microsoft Docs
+title: IDebugAlias2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00e13da257c5477b3834ebb85bf6d481fe699362
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736355"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
-> En Visual Studio 2015, esta forma de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte Evaluadores de [expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y Ejemplo de evaluador de [expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> En Visual Studio 2015, esta manera de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte [evaluadores](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) de expresiones CLR y [ejemplo de evaluador de expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Representa un alias numérico para una variable y permite a un evaluador de expresiones (EE) obtener el dominio de aplicación para el alias.
+ Representa un alias numérico para una variable y permite que un evaluador de expresiones (EE) obtenga el dominio de aplicación para el alias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,21 +30,21 @@ IDebugAlias2 : IDebugAlias
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Esta interfaz se implementa mediante el motor de depuración administrado (DE).
+ Esta interfaz se implementa mediante el motor DE depuración administrada (DE).
 
 ## <a name="methods"></a>Métodos
- Además de los métodos de la [interfaz IDebugAlias,](../../../extensibility/debugger/reference/idebugalias.md) esta interfaz implementa el método siguiente:
+ Además de los métodos de la interfaz [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) , esta interfaz implementa el método siguiente:
 
 |Método|Descripción|
 |------------|-----------------|
 |[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|Recupera el identificador del dominio de aplicación.|
 
 ## <a name="remarks"></a>Observaciones
- Un alias es un número decimal en forma de cadena seguido del carácter de la clase, por ejemplo, 1001.
+ Un alias es un número decimal en forma de cadena seguido del carácter #, por ejemplo, 1001 #.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Ee.h
+ Encabezado: EE. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

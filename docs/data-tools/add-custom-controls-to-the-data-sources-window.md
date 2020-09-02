@@ -16,10 +16,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283078"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
@@ -60,7 +60,7 @@ Para agregar o quitar controles de la lista de controles disponibles para los el
     > [!NOTE]
     > Si el control que desea seleccionar no aparece en el cuadro **controles asociados** , debe agregar el control a la lista. Para obtener más información, vea [Agregar controles asociados](#add-associated-controls).
 
-6. Haga clic en **OK**.
+6. Haga clic en **Aceptar**.
 
 7. En la ventana **orígenes de datos** , haga clic en un elemento del tipo de datos al que acaba de asociar uno o varios controles y, a continuación, haga clic en el menú desplegable del elemento.
 
