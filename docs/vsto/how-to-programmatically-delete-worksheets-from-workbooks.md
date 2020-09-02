@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38aa92ae1c320ae9eb5ad4bdb1e43b761048661f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547139"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Cómo: eliminar hojas de cálculo de libros mediante programación
@@ -64,7 +64,7 @@ ms.locfileid: "85547139"
      [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](working-with-worksheets.md)
 - [Cómo: ocultar hojas de cálculo mediante programación](how-to-programmatically-hide-worksheets.md)
 - [Cómo: trasladar hojas de cálculo dentro de libros mediante programación](how-to-programmatically-move-worksheets-within-workbooks.md)

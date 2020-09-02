@@ -1,5 +1,5 @@
 ---
-title: 'Error: el servidor Web no encontró el recurso solicitado | Microsoft Docs'
+title: 'Error: El servidor web no pudo encontrar el recurso solicitado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 555bb56ee84b7bc48f6b6453c11daef366f97e49
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845116"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Error: El servidor Web no pudo encontrar el recurso solicitado
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Error: El servidor web no pudo encontrar el recurso solicitado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Por motivos de seguridad, IIS ha devuelto un error genérico.  
@@ -34,6 +34,6 @@ Por motivos de seguridad, IIS ha devuelto un error genérico.
   
  Para obtener más información acerca de cómo solucionar problemas de IIS, vea [Gestión y administración de IIS](https://www.iis.net/learn/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Herramienta de seguridad UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

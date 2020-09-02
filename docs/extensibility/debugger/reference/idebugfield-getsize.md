@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetSize ? Microsoft Docs
+title: 'IDebugField:: se obtiene | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9f19a914de2e74613e987753c8062215fd0d0403
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728810"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
@@ -41,7 +41,7 @@ int GetSize(
 
 ## <a name="parameters"></a>Parámetros
 `pdwSize`\
-[fuera] Devuelve el tamaño.
+enuncia Devuelve el tamaño.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

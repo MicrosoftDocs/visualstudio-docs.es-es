@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547087"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Cómo: guardar libros mediante programación
@@ -82,7 +82,7 @@ ms.locfileid: "85547087"
 ## <a name="robust-programming"></a>Programación sólida
  Si se cancela interactivamente cualquiera de los métodos que guardan o copian el libro se produce un error en tiempo de ejecución en el código. Por ejemplo, si el procedimiento llama al <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método, pero no deshabilita los mensajes de Excel, y el usuario hace clic en **Cancelar** cuando se le solicita, Excel genera un error en tiempo de ejecución.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [Elemento host del libro](../vsto/workbook-host-item.md)
 - [Cómo: cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)

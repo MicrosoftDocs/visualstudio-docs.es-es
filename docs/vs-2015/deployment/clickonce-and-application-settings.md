@@ -16,47 +16,47 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8e1ffe6d6f32cfad137d5890715a5a0032a29d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696689"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce y configuración de la aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Configuración de la aplicación para Windows Forms facilita crear, almacenar y mantener aplicaciones personalizadas y las preferencias del usuario en el cliente. El siguiente documento describe cómo funcionan los archivos de configuración de aplicación en una aplicación ClickOnce y cómo ClickOnce migra la configuración cuando el usuario realiza una actualización a la siguiente versión.  
+La configuración de la aplicación para Windows Forms facilita la creación, el almacenamiento y el mantenimiento de las preferencias de usuario y aplicación personalizadas en el cliente. En el documento siguiente se describe cómo funcionan los archivos de configuración de la aplicación en una aplicación ClickOnce y cómo ClickOnce migra la configuración cuando el usuario se actualiza a la versión siguiente.  
   
- La siguiente información se aplica solo para el proveedor de configuración de aplicación predeterminado, el <xref:System.Configuration.LocalFileSettingsProvider> clase. Si se proporciona un proveedor personalizado, ese proveedor determinará cómo almacena sus datos y cómo actualiza la configuración entre versiones. Para obtener más información sobre los proveedores de configuración de aplicación, consulte [Application Settings Architecture](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ La información siguiente solo se aplica al proveedor de configuración de la aplicación predeterminado, la <xref:System.Configuration.LocalFileSettingsProvider> clase. Si proporciona un proveedor personalizado, ese proveedor determinará cómo almacena sus datos y cómo actualiza su configuración entre versiones. Para obtener más información sobre los proveedores de configuración de la aplicación, consulte [arquitectura de configuración](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)de la aplicación.  
   
 ## <a name="application-settings-files"></a>Archivos de configuración de la aplicación  
- Configuración de la aplicación consume los dos archivos: *aplicación*. exe.config y user.config, donde *aplicación* es el nombre de la aplicación de Windows Forms. el archivo User.config se crea en el cliente la primera vez que la aplicación almacena la configuración de ámbito de usuario. *aplicación*. exe.config, por el contrario, existirá antes de la implementación si define los valores predeterminados para la configuración. Visual Studio incluirá este archivo automáticamente cuando se usa su **publicar** comando. Si crea su aplicación ClickOnce mediante Mage.exe o MageUI.exe, debe asegurarse de que este archivo se incluye con la aplicación de otros archivos al rellenar el manifiesto de aplicación.  
+ La configuración de la aplicación consume dos archivos: *app*.exe.config y user.config, donde *App* es el nombre de la aplicación Windows Forms. user.config se crea en el cliente la primera vez que la aplicación almacena la configuración de ámbito de usuario. Por el contrario, la *aplicación*.exe.config existirá antes de la implementación si se definen los valores predeterminados para la configuración. Visual Studio incluirá este archivo automáticamente al usar el comando **publicar** . Si crea su aplicación ClickOnce con Mage.exe o MageUI.exe, debe asegurarse de que este archivo está incluido en los otros archivos de la aplicación al rellenar el manifiesto de aplicación.  
   
- En aplicaciones no implementadas con ClickOnce, una aplicación Windows Forms *aplicación*. archivo exe.config se almacena en el directorio de la aplicación, mientras que el archivo user.config se almacena en el usuario **Documents and Settings**  carpeta. En una aplicación ClickOnce, *aplicación*. exe.config se encuentra en el directorio de la aplicación dentro de la caché de la aplicación ClickOnce y user.config reside en el directorio de datos de ClickOnce para esa aplicación.  
+ En una Windows Forms aplicaciones no implementadas mediante ClickOnce, el archivo de la *aplicación.exe.config de la aplicación* se almacena en el directorio de la aplicación, mientras que el archivo user.config se almacena en la carpeta **Documents and Settings** del usuario. En una aplicación ClickOnce, *app*.exe.config vive en el directorio de la aplicación dentro de la caché de la aplicación clickonce y user.config reside en el directorio de datos de ClickOnce para esa aplicación.  
   
- Independientemente de cómo implementar la aplicación, configuración de la aplicación garantiza el acceso de lectura seguro a *aplicación*. exe.config y acceso de lectura y escritura seguro a user.config.  
+ Independientemente de cómo implemente su aplicación, la configuración de la aplicación garantiza el acceso de lectura seguro a la.exe.config de la *aplicación* y el acceso de lectura y escritura seguro a user.config.  
   
- En una aplicación ClickOnce, el tamaño de los archivos de configuración utilizado por la configuración de la aplicación está restringido por el tamaño de la caché de ClickOnce. Para obtener más información, consulte [información general sobre la memoria caché de ClickOnce](../deployment/clickonce-cache-overview.md).  
+ En una aplicación ClickOnce, el tamaño de los archivos de configuración que usa la configuración de la aplicación está restringido por el tamaño de la caché de ClickOnce. Para obtener más información, vea [información general sobre la caché ClickOnce](../deployment/clickonce-cache-overview.md).  
   
-## <a name="version-upgrades"></a>Actualizaciones de versión  
- Igual que todas las versiones de una aplicación ClickOnce está aislada de todas las demás versiones, la configuración de la aplicación para una aplicación ClickOnce está aislada de la configuración de otras versiones también. Cuando el usuario realiza una actualización a una versión posterior de la aplicación, configuración de la aplicación compara configuración más reciente (con el número mayor) de la versión con los ajustes proporcionados con la versión actualizada y combina la configuración en un nuevo conjunto de archivos de configuración.  
+## <a name="version-upgrades"></a>Actualizaciones de versiones  
+ Del mismo modo que cada versión de una aplicación ClickOnce está aislada de todas las demás versiones, la configuración de la aplicación para una aplicación ClickOnce se aísla también de la configuración de otras versiones. Cuando el usuario se actualiza a una versión posterior de la aplicación, la configuración de la aplicación compara la configuración de la versión más reciente (con el número más alto) con la configuración proporcionada con la versión actualizada y combina la configuración en un nuevo conjunto de archivos de configuración.  
   
- En la tabla siguiente se describe cómo la configuración de la aplicación decide qué opciones de configuración para copiar.  
+ En la tabla siguiente se describe cómo la configuración de la aplicación decide qué configuración se va a copiar.  
   
 |Tipo de cambio|Acción de actualización|  
 |--------------------|--------------------|  
-|Se agregó a la configuración *aplicación*. exe.config|La nueva configuración se combina con la versión actual *aplicación*. exe.config|  
-|Configuración quitó *aplicación*. exe.config|La configuración antigua se quita de la versión actual *aplicación*. exe.config|  
-|Valor predeterminado de la configuración ha cambiado; configuración local sigue establecida en predeterminado original en el archivo user.config|La configuración se combina en el archivo user.config de la versión actual con el nuevo valor predeterminado como el valor|  
-|Valor predeterminado de la configuración ha cambiado; configuración establecida en no predeterminado en el archivo user.config|La configuración se combina en el archivo user.config de la versión actual con el valor no predeterminado que se conservan|  
+|Configuración agregada a la *aplicación*.exe.config|La nueva configuración se combina en la *aplicación* de la versión actual.exe.config|  
+|Configuración quitada de la *aplicación*.exe.config|La configuración anterior se quita de la *aplicación* de la versión actual.exe.config|  
+|Se ha cambiado el valor predeterminado de la configuración; la configuración local todavía está establecida en el valor predeterminado original en user.config|La configuración se combina en el user.config de la versión actual con el nuevo valor predeterminado como el valor.|  
+|Se ha cambiado el valor predeterminado de la configuración; establecer en no predeterminado en user.config|La configuración se combina en la user.config de la versión actual con el valor no predeterminado conservado|  
   
- Si ha creado su propia configuración de la aplicación de clase de contenedor y desea personalizar la lógica de actualización, puede invalidar el <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> método.  
+ Si ha creado su propia clase contenedora de configuración de la aplicación y desea personalizar la lógica de actualización, puede invalidar el <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> método.  
   
-## <a name="clickonce-and-roaming-settings"></a>ClickOnce y configuración de Roaming  
- ClickOnce no funciona con la configuración de roaming, que permite que el archivo de configuración para siga todas las máquinas en una red. Si necesita la configuración de roaming, necesita implementar un proveedor de configuración de aplicación que almacena la configuración a través de la red, o desarrollar sus propias clases de configuración personalizada para almacenar la configuración en un equipo remoto. Para obtener más información en los proveedores de configuración, consulte [Application Settings Architecture](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+## <a name="clickonce-and-roaming-settings"></a>Configuración de ClickOnce y roaming  
+ ClickOnce no funciona con la configuración de itinerancia, lo que permite que el archivo de configuración le siga entre los equipos de una red. Si necesita una configuración de itinerancia, debe implementar un proveedor de configuración de la aplicación que almacene la configuración a través de la red, o bien desarrollar sus propias clases de configuración personalizadas para almacenar la configuración en un equipo remoto. Para obtener más información sobre los proveedores de configuración, consulte [arquitectura de configuración](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)de la aplicación.  
   
-## <a name="see-also"></a>Vea también  
- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Introducción a la configuración de la aplicación](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
- [ClickOnce Cache Overview](../deployment/clickonce-cache-overview.md)   
+## <a name="see-also"></a>Consulte también  
+ [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Información general de configuración de la aplicación](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
+ [Información general sobre caché ClickOnce](../deployment/clickonce-cache-overview.md)   
  [Obtener acceso local o remoto a los datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

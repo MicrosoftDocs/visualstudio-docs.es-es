@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c795e978de3911b3c5e815583c32e878fd7b173
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696912"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
@@ -39,7 +39,7 @@ ms.locfileid: "65696912"
 
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.  
   
-## <a name="BKMK_In_this_topic"></a> En este tema  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> En este tema  
  [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [La macro TRACE](#BKMK_The_TRACE_macro)  
@@ -64,7 +64,7 @@ Si está depurando un programa MFC, estas técnicas de depuración pueden result
   
   - [Compilar una aplicación MFC con la información de depuración para los módulos seleccionados](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
-## <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
+## <a name="afxdebugbreak"></a><a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC proporciona una función especial, [AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) , para incluir puntos de interrupción en el código fuente:  
   
 ```  
@@ -84,7 +84,7 @@ _asm int 3
   
  [En este tema](#BKMK_In_this_topic)  
   
-## <a name="BKMK_The_TRACE_macro"></a> La macro TRACE  
+## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> La macro TRACE  
  Para mostrar mensajes desde el programa en la [Ventana de salida](../ide/reference/output-window.md)del depurador, se puede utilizar la macro [ATLTRACE](https://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) o la macro [TRACE](https://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) de MFC. Al igual que las [aserciones](../debugger/c-cpp-assertions.md), las macros de seguimiento sólo están activas en la versión de depuración del programa y desaparecen al compilarse en la versión de lanzamiento.  
   
  Los siguientes ejemplos muestran algunas de las formas en las que se puede utilizar la macro **TRACE** . Al igual que `printf`, la macro **TRACE** puede utilizar varios argumentos.  
@@ -117,10 +117,10 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [En este tema](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Memory_leak_detection_in_MFC"></a> Detectar pérdidas de memoria en MFC  
+## <a name="detecting-memory-leaks-in-mfc"></a><a name="BKMK_Memory_leak_detection_in_MFC"></a> Detectar pérdidas de memoria en MFC  
  MFC proporciona clases y funciones para detectar memoria asignada que no se desasigna nunca.  
   
-### <a name="BKMK_Tracking_memory_allocations"></a> Realizar un seguimiento de las asignaciones de memoria  
+### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Realizar un seguimiento de las asignaciones de memoria  
  En MFC, se puede utilizar la macro [DEBUG_NEW](https://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) en lugar del operador **new** para ayudar a localizar pérdidas de memoria. En la versión de depuración del programa, `DEBUG_NEW` registra el nombre de archivo y número de línea para cada objeto que asigna. Cuando se compila una versión de lanzamiento de programa, `DEBUG_NEW` se resuelve como una simple operación **new** sin la información de nombre de archivo y número de línea. De este modo, el rendimiento de la versión de lanzamiento no disminuye.  
   
  Si no desea volver a escribir todo el programa para utilizar `DEBUG_NEW` en lugar de **new**, puede definir esta macro en los archivos de código fuente:  
@@ -135,7 +135,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [En este tema](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Enabling_memory_diagnostics"></a> Habilitar diagnósticos de memoria  
+### <a name="enabling-memory-diagnostics"></a><a name="BKMK_Enabling_memory_diagnostics"></a> Habilitar diagnósticos de memoria  
  Para poder utilizar los servicios de diagnóstico de memoria, se debe habilitar la traza con diagnósticos.  
   
  **Para habilitar o deshabilitar los diagnósticos de memoria**  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
   [En este tema](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Taking_memory_snapshots"></a> Tomar instantáneas de la memoria  
+### <a name="taking-memory-snapshots"></a><a name="BKMK_Taking_memory_snapshots"></a> Tomar instantáneas de la memoria  
   
 1. Cree un objeto [CMemoryState](https://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) y llame a la función miembro [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . Esto crea la primera instantánea de memoria.  
   
@@ -191,13 +191,13 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Observe que las instrucciones de comprobación de memoria están enmarcadas por bloques `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** , de modo que solo se compilan en versiones de depuración del programa.  
+    Tenga en cuenta que las instrucciones de comprobación de memoria están entre corchetes `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) /  bloques **#endif** de modo que solo se compilan en versiones de depuración del programa.  
   
     Ahora que ha detectado una pérdida de memoria, puede usar otra función miembro [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , que le ayudará a buscarla.  
   
    [En este tema](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Viewing_memory_statistics"></a> Ver estadísticas de memoria  
+### <a name="viewing-memory-statistics"></a><a name="BKMK_Viewing_memory_statistics"></a> Ver estadísticas de memoria  
  La función [CMemoryState::Difference](https://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) examina dos objetos de estado de memoria y detecta cualquier objeto no desasignado del montón entre los estados inicial y final. Después de tomar instantáneas de la memoria y compararlas mediante `CMemoryState::Difference`, puede llamar a [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) para obtener información sobre los objetos que no se han desasignado.  
   
  Considere el ejemplo siguiente:  
@@ -232,8 +232,8 @@ Total allocations: 67 bytes
   
  [En este tema](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Taking_object_dumps"></a> Realizar volcados de memoria de objetos  
- En un programa MFC, puede usar [CMemoryState:: DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.  
+### <a name="taking-object-dumps"></a><a name="BKMK_Taking_object_dumps"></a> Realizar volcados de memoria de objetos  
+ En un programa MFC, puede usar [CMemoryState::DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para volcar una descripción de todos los objetos en el montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.  
   
 > [!NOTE]
 > Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
@@ -278,7 +278,7 @@ Phone #: 581-0215
   
  [En este tema](#BKMK_In_this_topic)  
   
-#### <a name="BKMK_Interpreting_memory_dumps"></a> Interpretar volcados de memoria  
+#### <a name="interpreting-memory-dumps"></a><a name="BKMK_Interpreting_memory_dumps"></a> Interpretar volcados de memoria  
  Examine el siguiente volcado de memoria de objetos con mayor detalle:  
   
 ```  
@@ -361,7 +361,7 @@ Phone #: 581-0215
   
  [En este tema](#BKMK_In_this_topic)  
   
-#### <a name="BKMK_Customizing_object_dumps"></a> Personalizar volcados de memoria de objetos  
+#### <a name="customizing-object-dumps"></a><a name="BKMK_Customizing_object_dumps"></a> Personalizar volcados de memoria de objetos  
  Si se deriva una clase de [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), puede reemplazarse la función miembro `Dump` para ofrecer información adicional cuando se utiliza [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para realizar un volcado de memoria de objetos en la [Ventana de salida](../ide/reference/output-window.md).  
   
  La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión ( **<<** para enviar datos a un `CDumpContext`.  
@@ -416,18 +416,18 @@ pMyPerson->Dump( afxDump );
   
  [En este tema](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reducir el tamaño de una configuración de compilación de MFC  
+## <a name="reducing-the-size-of-an-mfc-debug-build"></a><a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reducir el tamaño de una configuración de compilación de MFC  
  La información de depuración para una aplicación MFC extensa puede ocupar un gran espacio en disco. Puede utilizar uno de estos procedimientos para reducir el tamaño:  
   
-1. Volver a generar las bibliotecas MFC usando la [/Z7, / Zi, /ZI (formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opción, en lugar de **/Z7**. Estas opciones compilan un único archivo de base de datos de programa (PDB) que contiene información de depuración para toda la biblioteca, lo que permite reducir información redundante y ahorrar espacio.  
+1. Recompile las bibliotecas MFC con la opción [/Z7, /Zi, /ZI (Formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8), en lugar de **/Z7**. Estas opciones compilan un único archivo de base de datos de programa (PDB) que contiene información de depuración para toda la biblioteca, lo que permite reducir información redundante y ahorrar espacio.  
   
-2. Recompile las bibliotecas MFC sin información de depuración (ninguna [/Z7, / Zi, /ZI (formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opción). En este caso, la falta de información de depuración impide utilizar la mayoría de los servicios del depurador dentro del código de la biblioteca MFC, pero, como estas bibliotecas ya están depuradas, eso no constituye ningún problema.  
+2. Recompile las bibliotecas MFC sin información de depuración; sin la opción [/Z7, /Zi, /ZI (Formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8). En este caso, la falta de información de depuración impide utilizar la mayoría de los servicios del depurador dentro del código de la biblioteca MFC, pero, como estas bibliotecas ya están depuradas, eso no constituye ningún problema.  
   
 3. Compile su propia aplicación con información de depuración solo para los módulos seleccionados como se describe a continuación.  
   
    [En este tema](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Compilar una aplicación MFC con la información de depuración para los módulos seleccionados  
+### <a name="building-an-mfc-app-with-debug-information-for-selected-modules"></a><a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Compilar una aplicación MFC con la información de depuración para los módulos seleccionados  
  Compilar módulos seleccionados con las bibliotecas de depuración de MFC permite utilizar la ejecución paso a paso y otros servicios de depuración en esos módulos. Este procedimiento utiliza los modos de depuración y de lanzamiento del archivo MAKE de Visual C++, por lo que hace necesarios los cambios descritos en los pasos siguientes (y también "recompilar todo" cuando se requiere compilar una versión de lanzamiento completa).  
   
 1. En el Explorador de soluciones, seleccione el proyecto.  
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
 3. Primero, se creará la configuración para un nuevo proyecto.  
   
-   1. En el cuadro de diálogo **\<Proyecto> Páginas de propiedades**, haga clic en el botón **Administrador de configuración**.  
+   1. En el cuadro de diálogo ** \<Project> páginas de propiedades** , haga clic en el botón **Configuration Manager** .  
   
-   2. En el [cuadro de diálogo Administrador de configuración](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>** .  
+   2. En el [cuadro de diálogo Administrador de configuración](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localice el proyecto en la cuadrícula. En la columna **configuración** , seleccione **\<New...>** .  
   
    3. En el [cuadro de diálogo Nueva configuración del proyecto](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .  
   
@@ -478,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6. Haga clic en los valores de **Formato de la información de depuración** y seleccione la opción deseada (normalmente **/ZI**) para la información de depuración.  
   
-   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++** , categoría **Encabezados precompilados**).  
+   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie la opción **crear o usar encabezados precompilados** en el cuadro de diálogo ** \<Project> propiedades** (carpeta**propiedades de configuración** , subcarpeta **C/C++** , categoría **encabezados precompilados** ).  
   
 7. En el menú **Compilar** , seleccione **Compilar** para recompilar los archivos del proyecto que no estén actualizados.  
   
@@ -486,5 +486,5 @@ pMyPerson->Dump( afxDump );
   
    [En este tema](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar en Visual C++](../debugger/debugging-native-code.md)

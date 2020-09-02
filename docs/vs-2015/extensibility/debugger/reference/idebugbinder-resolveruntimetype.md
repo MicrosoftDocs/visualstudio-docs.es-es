@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
+title: 'IDebugBinder:: ResolveRuntimeType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69b1418c76e01b87bcd6d992a82ce58287e79ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192295"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método determina el tipo de tiempo de ejecución de un objeto.  
+Este método determina el tipo en tiempo de ejecución de un objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,18 +42,18 @@ int ResolveRuntimeType(
   
 #### <a name="parameters"></a>Parámetros  
  `pObject`  
- [in] El [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) resolverse.  
+ de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que se va a resolver.  
   
  `ppResolved`  
- [out] Devuelve el tipo del objeto como un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ enuncia Devuelve el tipo del objeto como [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- El tipo de tiempo de ejecución de un objeto no se conoce en tiempo de compilación de siempre. Por ejemplo, usar el polimorfismo, un argumento puede pasarse a una función como su clase base, por ejemplo, una clase de botón. El argumento real podría ser una clase derivada, como una clase de botón de radio.  
+## <a name="remarks"></a>Observaciones  
+ No siempre se conoce el tipo en tiempo de ejecución de un objeto en tiempo de compilación. Por ejemplo, con el polimorfismo, un argumento se puede pasar a una función como su clase base, como una clase de botón. El argumento real puede ser una clase derivada, como una clase de botón de radio.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

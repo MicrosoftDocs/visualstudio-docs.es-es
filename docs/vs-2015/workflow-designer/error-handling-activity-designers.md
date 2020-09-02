@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b829f98597afb6ab1430d61022306ec840decb12
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656740"
 ---
 # <a name="error-handling-activity-designers"></a>Diseñadores de actividades de control de errores
 Los diseñadores de actividades de control de errores se utilizan para administrar el control de errores en [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Los temas en esta sección ofrecen orientación sobre cómo utilizar los diseñadores de actividades y de plantillas de [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
 ## <a name="in-this-section"></a>En esta sección
- Volver a [producir](../workflow-designer/rethrow-activity-designer.md) Se utiliza para crear y configurar una actividad de <xref:System.Activities.Statements.Rethrow>.
+ Volver a [producir](../workflow-designer/rethrow-activity-designer.md) Se utiliza para crear y configurar una <xref:System.Activities.Statements.Rethrow> actividad.
 
- [Producir](../workflow-designer/throw-activity-designer.md) Se utiliza para crear y configurar una actividad de <xref:System.Activities.Statements.Throw>.
+ [Producir](../workflow-designer/throw-activity-designer.md) Se utiliza para crear y configurar una <xref:System.Activities.Statements.Throw> actividad.
 
- [TryCatch](../workflow-designer/trycatch-activity-designer.md) Se utiliza para crear y configurar una actividad de <xref:System.Activities.Statements.TryCatch>.
+ [TryCatch](../workflow-designer/trycatch-activity-designer.md) Se utiliza para crear y configurar una <xref:System.Activities.Statements.TryCatch> actividad.
 
 ## <a name="reference"></a>Referencia
 

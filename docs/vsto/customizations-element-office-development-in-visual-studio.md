@@ -1,5 +1,5 @@
 ---
-title: '&lt;personalizaciones&gt; elemento (desarrollo de Office en Visual Studio)'
+title: '&lt;elemento Customizations &gt; (desarrollo de Office en Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445510"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64789999"
 ---
-# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;personalizaciones&gt; elemento (desarrollo de Office en Visual Studio)
+# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;elemento Customizations &gt; (desarrollo de Office en Visual Studio)
   El elemento `customizations` del espacio de nombres `vstov4` contiene toda la información sobre la instalación y carga de cada solución de Office.
 
 ## <a name="syntax-for-document-level-customizations"></a>Sintaxis para las personalizaciones de nivel de documento
@@ -64,7 +64,7 @@ ms.locfileid: "63445510"
  El elemento `customizations` tiene el siguiente elemento secundario:
 
 ### <a name="customization"></a>Personalización
- Obligatorio. El `customization` elemento en el `vstov4` espacio de nombres se define en [ &#60;personalización&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Necesario. El `customization` elemento del `vstov4` espacio de nombres se define en el [ elemento&#62; de personalización de&#60;&#40;el desarrollo de Office en Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="example-of-a-document-level-customization"></a>Ejemplo de una personalización de nivel de documento
 
@@ -72,7 +72,7 @@ ms.locfileid: "63445510"
  En el ejemplo de código siguiente se muestra el elemento `customizations` para una personalización de nivel de documento.
 
 > [!NOTE]
-> Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
+> Este ejemplo de código forma parte de un ejemplo más grande proporcionado en los [manifiestos de aplicación para las soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Código
 
@@ -89,7 +89,7 @@ ms.locfileid: "63445510"
 ## <a name="example-of-a-vsto-add-in"></a>Ejemplo de un complemento de VSTO
 
 ### <a name="description"></a>Descripción
- En el ejemplo de código siguiente se ilustra la `customizations` (elemento) para un complemento de VSTO. Este es un complemento de VSTO para Outlook que incluye áreas de formulario. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
+ En el ejemplo de código siguiente se muestra el `customizations` elemento para un complemento de VSTO. Este es un complemento de VSTO para Outlook que incluye áreas de formulario. Este ejemplo de código forma parte de un ejemplo más grande proporcionado en los [manifiestos de aplicación para las soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Código
 
@@ -121,7 +121,7 @@ ms.locfileid: "63445510"
 </vstov4:customizations>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)

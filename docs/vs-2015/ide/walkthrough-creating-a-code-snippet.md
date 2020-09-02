@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845579"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Tutorial: Crear un fragmento de código
@@ -91,7 +91,7 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
 ### <a name="adding-description-and-shortcut-fields"></a>Agregar campos de descripción y de acceso directo
 
-1. Los campos de descripción proporcionan más información sobre el fragmento de código cuando se visualiza en el Administrador de fragmentos de código. El acceso directo es una etiqueta que los usuarios pueden escribir con el fin de insertar el fragmento de código. Edite el fragmento de código que ha agregado; para ello, abra el archivo `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
+1. Los campos de descripción proporcionan más información sobre el fragmento de código cuando se visualiza en el Administrador de fragmentos de código. El acceso directo es una etiqueta que los usuarios pueden escribir con el fin de insertar el fragmento de código. Edite el fragmento de código que ha agregado; para ello, abra el archivo `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` .
 
 2. Agregue elementos Author y Description al elemento Header y rellénelos.
 
@@ -126,7 +126,7 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
 ### <a name="to-add-references-and-imports"></a>Para agregar referencias e importaciones
 
-1. Con los fragmentos de Visual Basic puede Agregar una referencia a un proyecto mediante el elemento References y agregar una declaración de importaciones mediante el elemento Imports. (Los fragmentos de código de otros lenguajes no tienen esta característica). Por ejemplo, si cambia `Console.WriteLine` en el ejemplo de código a `MessageBox.Show`, puede que necesite agregar el ensamblado System. Windows. Forms. dll al proyecto.
+1. Con los fragmentos de Visual Basic puede Agregar una referencia a un proyecto mediante el elemento References y agregar una declaración de importaciones mediante el elemento Imports. (Los fragmentos de código de otros lenguajes no tienen esta característica). Por ejemplo, si cambia `Console.WriteLine` en el ejemplo de código a `MessageBox.Show` , es posible que necesite agregar el ensamblado System.Windows.Forms.dll al proyecto.
 
 2. Abra el fragmento de código.
 
@@ -261,5 +261,5 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
     ```
 
-## <a name="see-also"></a>Vea también
- [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>Consulte también
+ [Referencia de esquema de fragmentos de código](../ide/code-snippets-schema-reference.md)

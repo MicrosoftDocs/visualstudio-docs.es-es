@@ -9,10 +9,10 @@ caps.latest.revision: 8
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657188"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
@@ -41,7 +41,7 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos utilizados para establecer un orden de llamada
- Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, consulte [Estructura de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, vea [anatomía de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Para los ensamblados
  Se llama a AssemblyInitialize y AssemblyCleanup inmediatamente después de que se carga el ensamblado e inmediatamente antes de que se descargue.
@@ -64,7 +64,7 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos utilizados para identificar clases y métodos de prueba
- Cada clase de prueba debe tener el atributo TestClass y todos los métodos de prueba deben tener el atributo TestMethod. Para obtener más información, consulte [Estructura de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Cada clase de prueba debe tener el atributo TestClass y todos los métodos de prueba deben tener el atributo TestMethod. Para obtener más información, vea [anatomía de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -124,6 +124,6 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

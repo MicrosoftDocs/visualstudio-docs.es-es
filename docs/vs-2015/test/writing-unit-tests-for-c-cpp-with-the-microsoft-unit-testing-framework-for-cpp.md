@@ -9,10 +9,10 @@ caps.latest.revision: 16
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b6f358f43dcace230e1d58773e58be011d9033e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657087"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escribir pruebas unitarias para C/C++ con el Framework de pruebas unitarias de Microsoft para C++
@@ -60,7 +60,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
     - `Assert` contiene diversas funciones estáticas que puede usar para comprobar el resultado de una prueba.
 
-    - El parámetro `LINE_INFO()` es opcional. En los casos donde no hay ningún archivo PDB, permite al ejecutor de pruebas identificar la ubicación de un error.
+    - El `LINE_INFO()` es opcional. En los casos donde no hay ningún archivo PDB, permite al ejecutor de pruebas identificar la ubicación de un error.
 
     - También puede escribir métodos de instalación y limpieza de prueba. Para obtener más información, abra la definición de la macro `TEST_METHOD` y lea los comentarios sobre CppUnitTest.h
 
@@ -72,7 +72,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
     2. Compile la solución de Visual Studio.
 
-    3. En el Explorador de pruebas, elija **Ejecutar todas**.
+    3. En el explorador de pruebas, elija **ejecutar todo**.
 
     4. Para investigar cualquier prueba con más detalle en el Explorador de pruebas:
 
@@ -82,12 +82,12 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
         3. En el menú contextual para una prueba, elija **Depurar prueba seleccionada** para ejecutar la prueba en el depurador.
 
-## <a name="walkthrough"></a> Tutorial: Desarrollar una DLL no administrada con el Explorador de pruebas
+## <a name="walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a> Tutorial: Desarrollar una DLL no administrada con el Explorador de pruebas
  Puede adaptar este tutorial para desarrollar su propio archivo DLL. Los principales pasos son los siguientes:
 
-1. [Crear un proyecto de prueba nativo](#unitTestProject). Las pruebas se crean en un proyecto independiente del archivo DLL que se está desarrollando.
+1. [Cree un proyecto de prueba nativo](#unitTestProject). Las pruebas se crean en un proyecto independiente del archivo DLL que se está desarrollando.
 
-2. [Crear un proyecto DLL](#createDllProject). Este tutorial crea un nuevo archivo DLL, pero el procedimiento para probar una DLL existente es similar.
+2. [Cree un proyecto dll](#createDllProject). Este tutorial crea un nuevo archivo DLL, pero el procedimiento para probar una DLL existente es similar.
 
 3. [Hacer visibles para las pruebas las funciones DLL](#coupleProjects).
 
@@ -101,9 +101,9 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
 8. [Aislar las unidades de los recursos externos](https://msdn.microsoft.com/library/hh549174.aspx). Normalmente, un archivo DLL depende de otros componentes del sistema que está desarrollando, como otros archivos DLL, bases de datos o subsistemas remotos. Es útil probar cada unidad aislada de sus dependencias. Los componentes externos pueden ralentizar las pruebas. Durante el desarrollo, los demás componentes podrían no estar completos.
 
-### <a name="unitTestProject"></a> Crear un proyecto de prueba unitaria nativo
+### <a name="create-a-native-unit-test-project"></a><a name="unitTestProject"></a> Crear un proyecto de prueba unitaria nativo
 
-1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
+1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
 
      En el cuadro de diálogo, expanda **Instalado**, **Plantillas**, **Visual C++** y **Prueba**.
 
@@ -111,13 +111,13 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
      En este tutorial, el proyecto de prueba se llama `NativeRooterTest`.
 
-     ![Crear un proyecto&#43; &#43; de prueba unitaria de C](../test/media/utecpp01.png "C++ utecpp01")
+     ![Crear un proyecto de prueba unitaria de C&#43;&#43; ](../test/media/utecpp01.png "C++ utecpp01")
 
 2. En el nuevo proyecto, inspeccione **unittest1.cpp**.
 
-     ![Proyecto de prueba con&#95;clase de prueba&#95;y método de prueba](../test/media/utecpp2.png "UteCpp2")
+     ![Proyecto de prueba con clase de&#95;de prueba y método de&#95;de prueba](../test/media/utecpp2.png "UteCpp2")
 
-     Tenga en cuenta que:
+     Tenga en lo siguiente:
 
     - Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
 
@@ -140,7 +140,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
          Tenga en cuenta que la clase `Assert` proporciona varios métodos estáticos que puede usar para comprobar los resultados de los métodos de prueba.
 
-    2. En el menú **Prueba** , elija **Ejecutar** , **Todas las pruebas**.
+    2. En el menú **prueba** , elija **Ejecutar** , **todas las pruebas**.
 
          La prueba se compila y ejecuta.
 
@@ -150,23 +150,23 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
          ![Explorador de pruebas unitarias con una prueba superada](../test/media/utecpp04.png "UteCpp04")
 
-### <a name="createDllProject"></a> Crear un proyecto de DLL no administrado
+### <a name="create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> Crear un proyecto de DLL no administrado
 
 1. Cree un proyecto de **Visual C++** usando la plantilla **Proyecto Win32** .
 
      En este tutorial, el proyecto se llama `RootFinder`.
 
-     ![Crear un proyecto&#43; &#43; de C Win32](../test/media/utecpp05.png "C++ utecpp05")
+     ![Crear un proyecto de C&#43;&#43; Win32](../test/media/utecpp05.png "C++ utecpp05")
 
 2. Seleccione **DLL** y **Exportar símbolos** en el asistente para aplicaciones Win32.
 
      La opción **Exportar símbolos** genera una cómoda macro que puede utilizar para declarar métodos exportados.
 
-     ![Asistente&#43; &#43; para proyectos de C establecido para dll y exportar símbolos](../test/media/utecpp06.png "UteCpp06")
+     ![Asistente para proyectos de C&#43;&#43; set para DLL y exportar símbolos](../test/media/utecpp06.png "UteCpp06")
 
 3. Declare una función exportada en el archivo .h principal:
 
-     ![Nuevo proyecto de código DLL y archivo. h con macros de API](../test/media/utecpp07.png "UteCpp07")
+     ![Nuevo proyecto de código DLL y archivo .h con macros de API](../test/media/utecpp07.png "UteCpp07")
 
      El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).
 
@@ -180,19 +180,19 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
     }
     ```
 
-### <a name="coupleProjects"></a> Acoplar el proyecto de prueba al proyecto DLL
+### <a name="couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> Acoplar el proyecto de prueba al proyecto DLL
 
 1. Agregue el proyecto DLL a las referencias del proyecto de prueba:
 
    1. Abra las propiedades del proyecto de prueba y elija **Propiedades comunes**, **Framework y Referencias**.
 
-        ![Marco&#43; &#43; de trabajo &#45; y referencias de las propiedades del proyecto de C](../test/media/utecpp08.png "UteCpp08")
+        ![C&#43;&#43; propiedades del proyecto &#45; marco de trabajo y referencias](../test/media/utecpp08.png "UteCpp08")
 
    2. Elija **Agregar nueva referencia**.
 
         En el cuadro de diálogo **Agregar referencia** , seleccione el proyecto DLL y elija **Agregar**.
 
-        ![&#43; &#43; Propiedades &#45; del proyecto de C agregar nueva referencia](../test/media/utecpp09.png "UteCpp09")
+        ![C&#43;&#43; propiedades del proyecto &#45; agregar nueva referencia](../test/media/utecpp09.png "UteCpp09")
 
 2. En el archivo .cpp de prueba unitaria principal, incluya el archivo .h del código DLL:
 
@@ -224,13 +224,13 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
     La nueva prueba aparece en el Explorador de pruebas.
 
-5. En el Explorador de pruebas, elija **Ejecutar todas**.
+5. En el explorador de pruebas, elija **ejecutar todo**.
 
-    ![Prueba básica del &#45; explorador de pruebas unitarias superada](../test/media/utecpp10.png "UteCpp10")
+    ![Se superó el explorador de pruebas unitarias &#45; prueba básica](../test/media/utecpp10.png "UteCpp10")
 
    Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
 
-### <a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
+### <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
 
 1. Agregue una nueva prueba:
 
@@ -251,11 +251,11 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
     >
     >  Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.
 
-2. Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.
+2. Compile la solución y, en el explorador de pruebas, elija **ejecutar todo**.
 
      Se produce un error en la nueva prueba.
 
-     ![Error de RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Se produce un error RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Compruebe que todas las pruebas producen un error inmediatamente después de escribirlas. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.
@@ -279,16 +279,16 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
     }
     ```
 
-4. Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.
+4. Compile la solución y, en el explorador de pruebas, elija **ejecutar todo**.
 
      Ambas pruebas quedan superadas.
 
-     ![Prueba de intervalo &#45; del explorador de pruebas unitarias superada](../test/media/utecpp12.png "UteCpp12")
+     ![Prueba de intervalo del explorador de pruebas unitarias &#45; superada](../test/media/utecpp12.png "UteCpp12")
 
     > [!TIP]
     > Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.
 
-### <a name="debug"></a> Depurar una prueba fallida
+### <a name="debug-a-failing-test"></a><a name="debug"></a> Depurar una prueba fallida
 
 1. Agregue otra prueba:
 
@@ -330,7 +330,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
      Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del Explorador de pruebas.
 
-     ![Error de las pruebas negativerangetests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![Se ha producido un error en las pruebas NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 4. Para ver por qué se produce el error, revise la función:
 
@@ -358,12 +358,12 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
 6. Ahora, todas las pruebas pasan.
 
-     ![Todas las pruebas se superan](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Todas las pruebas se realizan correctamente](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
 > [!TIP]
 > Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-pequeño") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
-### <a name="refactor"></a> Refactorizar el código sin cambiar las pruebas
+### <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Refactorizar el código sin cambiar las pruebas
 
 1. Simplifique el cálculo central en la función SquareRoot:
 
@@ -384,7 +384,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- **Aislamiento.** La mayoría de las DLL dependen de otros subsistemas, como bases de datos y otros archivos DLL. Estos componentes a menudo se desarrollan en paralelo. Para permitir la realización de pruebas unitarias mientras los demás componentes no están disponibles, debe sustituir mock o
+- **Lati.** La mayoría de las DLL dependen de otros subsistemas, como bases de datos y otros archivos DLL. Estos componentes a menudo se desarrollan en paralelo. Para permitir la realización de pruebas unitarias mientras los demás componentes no están disponibles, debe sustituir mock o
 
 - **Pruebas de comprobación de la compilación.** Puede realizar pruebas en el servidor de compilación de su equipo a intervalos establecidos. Esto garantiza que no se producen errores cuando se integra el trabajo de varios miembros del equipo.
 
@@ -392,5 +392,5 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 
      También puede asignar un nivel mínimo de cobertura de código.
 
-## <a name="see-also"></a>Vea también
- [Agregar pruebas unitarias a C++ aplicaciones existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [mediante Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [información general sobre la interoperabilidad de código administrado y no administrado tutorial sobre](https://msdn.microsoft.com/library/ms973872.aspx) la [depuración de código nativo](../debugger/debugging-native-code.md) [: Crear y usar una biblioteca de vínculos dinámicos (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [importar y exportar](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+## <a name="see-also"></a>Consulte también
+ [Agregar pruebas unitarias a aplicaciones de C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [con Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [información general sobre la interoperabilidad de código administrado y no administrado tutorial sobre](https://msdn.microsoft.com/library/ms973872.aspx) [la depuración de código nativo](../debugger/debugging-native-code.md) [Tutorial: crear y usar una biblioteca de vínculos dinámicos (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [importar y exportar](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

@@ -19,14 +19,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 77bb2c7abb49dbf6fe973ebc80f8340000e4afbd
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846004"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Usar el diseñador de flujo de trabajo de máquina de estados heredado
-Al crear un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tiene como destino el [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o el [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], puede usar la **aplicación de consola de flujos** de trabajo de equipo de estado o la plantilla de proyecto heredada **biblioteca de flujos de trabajo de equipo de estado** . Si elige una de estas plantillas de proyecto de máquina de estados, el diseñador de máquina de estados se presenta como la interfaz de usuario del diseñador de flujo de trabajo heredada. Para obtener información acerca de las plantillas de proyecto de equipo de estado heredado, consulte [Cómo: crear aplicaciones de consola de flujos de trabajo de equipo de estado (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) y [Cómo: crear una biblioteca de flujos de trabajo de equipo de estado (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+Al crear un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o, puede usar la aplicación de consola de flujos de trabajo de equipo de estado [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] o la plantilla de proyecto heredada **biblioteca de flujos de trabajo de equipo de estado** . **State Machine Workflow Console Application** Si elige una de estas plantillas de proyecto de máquina de estados, el diseñador de máquina de estados se presenta como la interfaz de usuario del diseñador de flujo de trabajo heredada. Para obtener información acerca de las plantillas de proyecto de equipo de estado heredado, consulte [Cómo: crear aplicaciones de consola de flujos de trabajo de equipo de estado (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) y [Cómo: crear una biblioteca de flujos de trabajo de equipo de estado (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
  Un flujo de trabajo de equipo de estado está compuesto por un conjunto de estados. Se designa un estado como estado inicial. Cada estado puede recibir un conjunto de eventos determinado. En función de un evento, se puede realizar una transición a otro estado. El flujo de trabajo de equipo de estado puede tener un estado final. Cuando se realiza una transición al estado final, el flujo de trabajo termina.
 
@@ -57,5 +57,5 @@ Al crear un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLUDE[
 >
 > Para abrir la **ventana esquema del documento** , en el menú **Ver** , seleccione **otras ventanas**y, a continuación, seleccione **esquema del documento**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: crear aplicaciones de consola de flujos de trabajo de equipo de estado (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) [Cómo: crear un flujo de trabajo de equipo de estado biblioteca de flujos de trabajo de equipo de estado (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [State Machine Workflows](https://msdn2.microsoft.com/library/bb628601.aspx) [usar](https://msdn2.microsoft.com/library/bb628612.aspx) la actividad StateActivity usar la actividad [StateInitializationActivity](https://msdn2.microsoft.com/library/bb675253.aspx) [usar la actividad StateFinalizationActivity](https://msdn2.microsoft.com/library/bb675278.aspx) [usar la actividad SetStateActivity](https://msdn2.microsoft.com/library/bb628469.aspx) [mediante la actividad EventDrivenActivity](https://msdn2.microsoft.com/library/bb628466.aspx)

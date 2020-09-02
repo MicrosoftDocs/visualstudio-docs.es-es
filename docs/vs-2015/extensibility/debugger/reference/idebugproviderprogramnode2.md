@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2 | Documentos de Microsoft
+title: IDebugProviderProgramNode2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a81668d5c45dd4b3363821972914e3f9dc10266a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692212"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
@@ -31,28 +31,28 @@ IDebugProviderProgramNode2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El motor de depuración (DE) implementa esta interfaz en el mismo objeto que implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) para admitir la serialización de interfaces en los límites del proceso.  
+ El motor DE depuración (DE) implementa esta interfaz en el mismo objeto que implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) para admitir las interfaces de serialización a través de los límites del proceso.  
   
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Llame a [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) en un `IDebugProgramNode2` interfaz para obtener esta interfaz. Si no se puede obtener esta interfaz, la DE no admite el cálculo de referencias de interfaces.  
+## <a name="notes-for-callers"></a>Notas para llamadores  
+ Llame a [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) en una `IDebugProgramNode2` interfaz para obtener esta interfaz. Si no se puede obtener esta interfaz, el DE no admite el cálculo de referencias de interfaces.  
   
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos en orden vtable  
  Esta interfaz implementa el método siguiente:  
   
 |Método|Descripción|  
 |------------|-----------------|  
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Obtiene una interfaz especificada a través de los límites del proceso.|  
   
-## <a name="remarks"></a>Comentarios  
- Esta interfaz se implementa cuando se ejecuta la DE en un espacio de proceso independiente desde el programa que se está depurando: por ejemplo, cuando se ejecuta la DE en el espacio de procesos de Visual Studio en lugar del espacio de proceso del programa que se está depurando.  
+## <a name="remarks"></a>Observaciones  
+ Esta interfaz se implementa cuando el DE se ejecuta en un espacio de proceso independiente desde el programa que se está depurando: por ejemplo, cuando el DE se está ejecutando en el espacio de proceso de Visual Studio en lugar de en el espacio de proceso del programa que se está depurando.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
- [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Consulte también  
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
