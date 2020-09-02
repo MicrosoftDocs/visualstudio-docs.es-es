@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbafba72829a5dff8dd5665b6271088a3f9339db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663875"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>Propiedades dinámicas de la clase XAttribute
@@ -27,5 +27,5 @@ En esta sección se describen las propiedades dinámicas de <xref:System.Xml.Lin
 |-----------|-----------------|
 |[Valor](../designers/value-xattribute-dynamic-property.md)|Obtiene o establece el valor del atributo XML.|
 
-## <a name="see-also"></a>Vea también
- [propiedades dinámicas de la clase XElement](../designers/xelement-class-dynamic-properties.md) <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> [LINQ to XML propiedades dinámicas](../designers/linq-to-xml-dynamic-properties.md)
+## <a name="see-also"></a>Consulte también
+ <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>Propiedades dinámicas de la [clase XElement](../designers/xelement-class-dynamic-properties.md) de [LINQ to XML propiedades dinámicas](../designers/linq-to-xml-dynamic-properties.md)

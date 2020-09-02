@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c794d79d62fc580001efc5cf16993d4ac5fef48b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663845"
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml (Propiedad dinámica de XElement)
@@ -32,8 +32,8 @@ elem.Xml
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto
  Un <xref:System.String> que representa el contenido XML sin formato del elemento.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Esta propiedad es equivalente al método <xref:System.Xml.Linq.XNode.ToString%28System.Xml.Linq.SaveOptions%29> de la clase <xref:System.Xml.Linq.XNode?displayProperty=fullName>, con el parámetro `SaveOptions` establecido en <xref:System.Xml.Linq.SaveOptions>.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Valor](../designers/value-xelement-dynamic-property.md) de [las propiedades dinámicas de la clase XElement](../designers/xelement-class-dynamic-properties.md)

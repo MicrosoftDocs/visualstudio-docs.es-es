@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48ff478964d88d1f2008043d399c879291730011
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663830"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Propiedades dinámicas de la clase XElement
@@ -23,14 +23,14 @@ En esta sección se describen las propiedades dinámicas de la clase <xref:Syste
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Tema|DESCRIPCIÓN|
+|Tema|Descripción|
 |-----------|-----------------|
-|[Attribute](../designers/attribute-xelement-dynamic-property.md)|Obtiene un indizador que se usa para el atributo que se corresponde con un nombre expandido especificado.|
+|[Atributo](../designers/attribute-xelement-dynamic-property.md)|Obtiene un indizador que se usa para el atributo que se corresponde con un nombre expandido especificado.|
 |[Element](../designers/element-xelement-dynamic-property.md)|Obtiene un indizador que se usa para recuperar el elemento secundario que se corresponde con un nombre expandido especificado.|
 |[Elements](../designers/elements-xelement-dynamic-property.md)|Obtiene un indizador que se usa para recuperar los elementos secundarios del elemento actual que coinciden con un nombre expandido especificado.|
 |[Descendants](../designers/descendants-xelement-dynamic-property.md)|Obtiene un indizador que se usa para recuperar todos los descendientes del elemento actual que coinciden con un nombre expandido especificado.|
 |[Valor](../designers/value-xelement-dynamic-property.md)|Obtiene o establece el contenido de un elemento.|
 |[Xml](../designers/xml-xelement-dynamic-property.md)|Obtiene la representación XML sin formato de un elemento.|
 
-## <a name="see-also"></a>Otras referencias
- [propiedades dinámicas de la clase XAttribute](../designers/xattribute-class-dynamic-properties.md) <xref:System.Xml.Linq.XElement?displayProperty=fullName> [LINQ to XML propiedades dinámicas](../designers/linq-to-xml-dynamic-properties.md)
+## <a name="see-also"></a>Consulte también
+ <xref:System.Xml.Linq.XElement?displayProperty=fullName>Propiedades dinámicas de la [clase XAttribute](../designers/xattribute-class-dynamic-properties.md) de [LINQ to XML propiedades dinámicas](../designers/linq-to-xml-dynamic-properties.md)

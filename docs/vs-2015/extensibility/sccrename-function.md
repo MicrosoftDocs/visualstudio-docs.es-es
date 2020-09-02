@@ -1,5 +1,5 @@
 ---
-title: SccRename (función) | Documentos de Microsoft
+title: Función SccRename | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e78975acab0bf30f1f188cdd7b6454fd6e74ce6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143721"
 ---
 # <a name="sccrename-function"></a>SccRename (Función)
@@ -37,33 +37,33 @@ SCCRTN SccRename(
   
 #### <a name="parameters"></a>Parámetros  
  pvContext  
- [in] La estructura de contexto de complemento de control de origen.  
+ de Estructura de contexto del complemento de control de código fuente.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
+ de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.  
   
  lpFileName  
- [in] El nombre de archivo completo del archivo que se va a cambiar el nombre.  
+ de Nombre de archivo completo del archivo cuyo nombre se va a cambiar.  
   
  lpNewName  
- [in] El nombre completo de nuevo. Si la ruta de acceso del directorio es diferente, el archivo ha movido de un subdirectorio a otro.  
+ [in] Nuevo nombre completo. Si la ruta de acceso del directorio es diferente, el archivo se ha despasado de un subdirectorio a otro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Valor|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|La operación de cambio de nombre que se completó correctamente.|  
-|SCC_E_PROJNOTOPEN|El proyecto no está abierto en el control de código fuente.|  
+|SCC_OK|Operación de cambio de nombre completada correctamente.|  
+|SCC_E_PROJNOTOPEN|El proyecto no está abierto bajo control de código fuente.|  
 |SCC_E_FILENOTCONTROLLED|El archivo no está bajo control de código fuente.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
 |SCC_E_NOTAUTHORIZED|El usuario no está autorizado para completar esta operación.|  
 |SCC_E_COULDNOTCREATEPROJECT|No se pudo crear el proyecto como parte del proceso de cambio de nombre.|  
 |SCC_E_OPNOTPERFORMED|No se realizó la operación.|  
-|SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado o general.|  
+|SCC_E_NONSPECIFICERROR|Se produjo un error no especificado o general.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta función puede utilizarse para cambiar el nombre de un archivo o moverlo desde una ubicación a otra en el sistema de control de código fuente. El complemento de control de origen no debe intentar tener acceso al archivo en disco. Es responsabilidad del IDE para cambiar el nombre del archivo local.  
+ Esta función se puede usar para cambiar el nombre de un archivo o moverlo de una ubicación a otra en el sistema de control de código fuente. El complemento de control de código fuente no debe intentar tener acceso al archivo en el disco. Es responsabilidad del IDE cambiar el nombre del archivo local.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

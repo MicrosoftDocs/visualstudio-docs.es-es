@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3fc786e4d99d1eaff4a8b152ea9496ce8400ff1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663852"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;field&gt; (JavaScript)
@@ -66,13 +66,13 @@ Especifica la información de documentación, incluida una descripción, para un
 
   `helpKeyword` Opcional. Palabra clave de la Ayuda de F1.
 
-  `locid` Opcional. Identificador de la información de localización sobre el campo. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en la etiqueta [\<loc>](../ide/loc-javascript.md).
+  `locid` Opcional. Identificador de la información de localización sobre el campo. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en la [\<loc>](../ide/loc-javascript.md) etiqueta.
 
   `value` Opcional. Especifica el código que se debe evaluar para uso de IntelliSense en lugar del propio código de función. Para `<field>`, este atributo se admite para las funciones constructoras, pero no para los literales de objeto. Puede utilizar este atributo para proporcionar información de tipos cuando el tipo de campo es indefinido. Por ejemplo, puede usar `value=’1’` para tratar el tipo de campo como un número.
 
   `description` Opcional. Descripción del campo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  El atributo `name` es obligatorio cuando se documenta un campo en una función constructora. Para todos los demás escenarios, todos los atributos del elemento `<field>` son opcionales.
 
  Cuando se documenta una función constructora, el elemento `<field>` debe aparecer inmediatamente antes de la declaración de campo. El atributo `name` debe coincidir con el nombre de campo que se utiliza en el código fuente. Para los miembros de objeto, se puede omitir el atributo `name` si el elemento `<field>` aparece inmediatamente antes de la declaración de miembro de objeto.
@@ -141,5 +141,5 @@ new calculator().f.   // Completion list for a Number.
 
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte también
+ [Comentarios de la documentación XML](../ide/xml-documentation-comments-javascript.md)

@@ -24,10 +24,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143764"
 ---
 # <a name="msbuild-conditional-constructs"></a>Construcciones condicionales de MSBuild
@@ -79,8 +79,8 @@ ms.locfileid: "68143764"
 </Project>  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)   
- [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
+ [Elemento otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419686756fb996a44cb6355a9776cc08baed576d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663882"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>Enlace de datos WPF con LINQ to XML
@@ -23,10 +23,10 @@ En esta sección se proporciona información sobre cómo utilizar LINQ to XML co
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Tema|DESCRIPCIÓN|
+|Tema|Descripción|
 |-----------|-----------------|
-|[Información general de enlace de datos WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|Presenta las características de enlace de datos dinámicos proporcionadas por el espacio de nombres <xref:System.Xml.Linq> y explica cómo se pueden usar esas características como origen de datos para los componentes de la interfaz de usuario en WPF.|
-|[Propiedades dinámicas de LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)|Proporciona información de referencia acerca de las propiedades dinámicas expuestas por las clases <xref:System.Xml.Linq.XAttribute> y <xref:System.Xml.Linq.XElement>.|
+|[Información general sobre el enlace de datos de WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|Presenta las características de enlace de datos dinámicos proporcionadas por el espacio de nombres <xref:System.Xml.Linq> y explica cómo se pueden usar esas características como origen de datos para los componentes de la interfaz de usuario en WPF.|
+|[LINQ to XML propiedades dinámicas](../designers/linq-to-xml-dynamic-properties.md)|Proporciona información de referencia acerca de las propiedades dinámicas expuestas por las clases <xref:System.Xml.Linq.XAttribute> y <xref:System.Xml.Linq.XElement>.|
 |[Ejemplo de enlace de datos WPF mediante LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)|Proporciona un ejemplo de WPF que enlaza los componentes de la interfaz de usuario con un origen de datos XML.|
 
 ## <a name="reference"></a>Referencia
@@ -36,5 +36,5 @@ En esta sección se proporciona información sobre cómo utilizar LINQ to XML co
 
  <xref:System.Xml.Linq.XAttribute>
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Programación avanzada de LINQ to XML](https://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)

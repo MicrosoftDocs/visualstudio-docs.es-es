@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816129"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>La compilación condicional está desactiva
@@ -39,6 +39,6 @@ Intentó usar una variable de compilación condicional sin activar primero la co
 ## <a name="see-also"></a>Vea también  
  [Compilación condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variables de compilación condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onPrivacidad](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@ifPrivacidad](../../javascript/reference/at-if-statement-javascript.md)   
- [@setPrivacidad](../../javascript/reference/at-set-statement-javascript.md)
+ [@cc_on Privacidad](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if Privacidad](../../javascript/reference/at-if-statement-javascript.md)   
+ [@set Privacidad](../../javascript/reference/at-set-statement-javascript.md)
