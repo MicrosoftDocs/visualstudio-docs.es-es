@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 372159a7405eb7a350aa55c55cf0c7e582dc98e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668357"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
@@ -29,8 +29,8 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
 |Tipo de propiedad de dominio|Descripción|
 |--------------------------|-----------------|
 |**Estándar** (predeterminado)|Propiedad de dominio que se guarda en el *almacén* y se serializa en el archivo.|
-|**Previamente**|Propiedad de dominio de solo lectura que no se guarda en el almacén, pero que se calcula a partir de otros valores.<br /><br /> Por ejemplo, `Person.Age` podría calcularse a partir de `Person.BirthDate`.<br /><br /> Debe proporcionar el código que realiza el cálculo. Normalmente, el valor se calcula desde otras propiedades de dominio. Sin embargo, también puede usar recursos externos.|
-|**Almacenamiento personalizado**|Propiedad de dominio que no se guarda directamente en el almacén, pero que puede ser get y set.<br /><br /> Debe proporcionar los métodos que obtienen y establecen el valor.<br /><br /> Por ejemplo, `Person.FullAddress` podría almacenarse en `Person.StreetAddress`, `Person.City` y `Person.PostalCode`.<br /><br /> También puede tener acceso a recursos externos, por ejemplo, para obtener y establecer los valores de una base de datos.<br /><br /> El código no debe establecer valores en el almacén cuando `Store.InUndoRedoOrRollback` sea true. Vea [transacciones y establecedores personalizados](#setters).|
+|**Calculadas**|Propiedad de dominio de solo lectura que no se guarda en el almacén, pero que se calcula a partir de otros valores.<br /><br /> Por ejemplo, `Person.Age` podría calcularse a partir de `Person.BirthDate` .<br /><br /> Debe proporcionar el código que realiza el cálculo. Normalmente, el valor se calcula desde otras propiedades de dominio. Sin embargo, también puede usar recursos externos.|
+|**Almacenamiento personalizado**|Propiedad de dominio que no se guarda directamente en el almacén, pero que puede ser get y set.<br /><br /> Debe proporcionar los métodos que obtienen y establecen el valor.<br /><br /> Por ejemplo, `Person.FullAddress` podría almacenarse en `Person.StreetAddress` , `Person.City` y `Person.PostalCode` .<br /><br /> También puede tener acceso a recursos externos, por ejemplo, para obtener y establecer los valores de una base de datos.<br /><br /> El código no debe establecer valores en el almacén cuando `Store.InUndoRedoOrRollback` es true. Vea [transacciones y establecedores personalizados](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Proporcionar el código para una propiedad de almacenamiento calculada o personalizada
  Si establece el tipo de una propiedad de dominio en almacenamiento calculado o personalizado, tiene que proporcionar métodos de acceso. Al compilar la solución, un informe de errores le indicará lo que es necesario.
@@ -45,7 +45,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
 
 3. Haga clic en **transformar todas las plantillas** en la barra de herramientas de **Explorador de soluciones**.
 
-4. En el menú **Compilar** , haga clic en **Compilar solución**.
+4. En el menú **Compilar**, haga clic en **Compilar solución**.
 
      Recibe el mensaje de error siguiente: "*YourClass* no contiene una definición para Get*supropiedad*".
 
@@ -56,11 +56,11 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
     > [!NOTE]
     > Este archivo se genera a partir de DslDefinition. DSL. Si edita este archivo, los cambios se perderán la próxima vez que haga clic en **transformar todas las plantillas**. En su lugar, agregue el método requerido en un archivo independiente.
 
-6. Cree o abra un archivo de clase en una carpeta independiente, por ejemplo, CustomCode \\*YourDomainClass*. cs.
+6. Cree o abra un archivo de clase en una carpeta independiente, por ejemplo, CustomCode \\ *YourDomainClass*. cs.
 
      Asegúrese de que el espacio de nombres es el mismo que en el código generado.
 
-7. En el archivo de clase, escriba una implementación parcial de la clase de dominio. En la clase, escriba una definición para el método de `Get` que falta, similar al ejemplo siguiente:
+7. En el archivo de clase, escriba una implementación parcial de la clase de dominio. En la clase, escriba una definición para el `Get` método que falta, similar al ejemplo siguiente:
 
     ```
     namespace Company.FamilyTree
@@ -70,7 +70,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
     }  }
     ```
 
-8. Si establece **Kind** en **Custom Storage**, también tendrá que proporcionar un método `Set`. Por ejemplo:
+8. Si establece **Kind** en el **almacenamiento personalizado**, también tendrá que proporcionar un `Set` método. Por ejemplo:
 
     ```
     void SetAgeValue(int value)
@@ -79,13 +79,13 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
             System.DateTime.Today.Year - value; }
     ```
 
-     El código no debe establecer valores en el almacén cuando `Store.InUndoRedoOrRollback` sea true. Vea [transacciones y establecedores personalizados](#setters).
+     El código no debe establecer valores en el almacén cuando `Store.InUndoRedoOrRollback` es true. Vea [transacciones y establecedores personalizados](#setters).
 
 9. Compile y ejecute la solución.
 
 10. Pruebe la propiedad. Asegúrese de intentar **Deshacer** y **rehacer**.
 
-## <a name="setters"></a>Transacciones y establecedores personalizados
+## <a name="transactions-and-custom-setters"></a><a name="setters"></a> Transacciones y establecedores personalizados
  En el método Set de la propiedad de almacenamiento personalizado, no es necesario abrir una transacción, porque normalmente se llama al método dentro de una transacción activa.
 
  Sin embargo, también se podría llamar al método Set si el usuario invoca deshacer o rehacer, o si se revierte una transacción. Cuando <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> es true, el método Set debe comportarse de la siguiente manera:
@@ -111,5 +111,5 @@ void SetAgeValue(int value)
 
  Para obtener más información acerca de las transacciones, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md) [propiedades de propiedades de dominio](../modeling/properties-of-domain-properties.md) [definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md)

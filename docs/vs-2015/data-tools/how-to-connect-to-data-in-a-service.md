@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9bfa6c776e3a2137f751d4253feb0239811d95a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654686"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Cómo: Conectarse a los datos en un servicio
@@ -56,7 +56,7 @@ Conecte la aplicación a los datos devueltos desde un servicio ejecutando el [As
 
 5. Haga clic en **Aceptar** para agregar una referencia de servicio al proyecto.
 
-6. Haga clic en **Finalizar**.
+6. Haga clic en **Finalizar**
 
      El origen de datos se agrega a la ventana **Orígenes de datos**.
 
@@ -66,5 +66,5 @@ Conecte la aplicación a los datos devueltos desde un servicio ejecutando el [As
 
 - Seleccione un elemento de la ventana **orígenes de datos** y arrástrelo hasta un formulario para crear controles enlazados. Para obtener más información, vea [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles de WPF a un servicio de datos de WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [Windows Communication Foundation servicios y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

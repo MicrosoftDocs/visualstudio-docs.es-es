@@ -1,49 +1,50 @@
 ---
-title: IDebugPortPicker::SetSite | Microsoft Docs
-ms.date: 11/04/2016
+title: 'IDebugPortPicker:: SetSite | Microsoft Docs'
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker::SetSite
 ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
-author: gregvanl
+caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 6cd0b91491be365a4686265bd698717219df0afb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188406"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
-Establece el proveedor de servicios.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintaxis
-
-```cpp
-HRESULT SetSite(
-   IServiceProvider * pSP
-);
-```
-
-```csharp
-public int SetSite(
-   IServiceProvider pSP
-);
-```
-
-#### <a name="parameters"></a>Parámetros
- `pSP`
-
- [in] Referencia a la interfaz del proveedor de servicios.
-
-## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
-
-## <a name="remarks"></a>Comentarios
- Este método se llamará antes de llamar a ningún otro método.
-
-## <a name="see-also"></a>Vea también
-- [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)
+Establece el proveedor de servicios.  
+  
+## <a name="syntax"></a>Sintaxis  
+  
+```cpp#  
+HRESULT SetSite(  
+   IServiceProvider * pSP  
+);  
+```  
+  
+```csharp  
+public int SetSite(  
+   IServiceProvider pSP  
+);  
+```  
+  
+#### <a name="parameters"></a>Parámetros  
+ `pSP`  
+ de Referencia a la interfaz del proveedor de servicios.  
+  
+## <a name="return-value"></a>Valor devuelto  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+  
+## <a name="remarks"></a>Comentarios  
+ Se llamará a este método antes de llamar a otros métodos.  
+  
+## <a name="see-also"></a>Consulte también  
+ [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281614"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
@@ -39,7 +39,7 @@ Durante este tutorial aprenderá a:
 
 - Agregue métodos para tener acceso directamente a la base de datos y realizar inserciones, actualizaciones y eliminaciones.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -120,7 +120,7 @@ En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y 
     |Nombre|Texto|
     |----------|----------|
     |`InsertButton`|**Insertar**|
-    |`UpdateButton`|**Update**|
+    |`UpdateButton`|**Actualizar**|
     |`DeleteButton`|**Eliminar**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Para agregar código para insertar nuevos registros en la base de datos
@@ -150,7 +150,7 @@ En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y 
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 - Seleccione **F5** para ejecutar la aplicación.
 

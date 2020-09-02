@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651871"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Cómo: Localizar y organizar plantillas de proyectos y de elementos
@@ -40,7 +40,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
 
   Por ejemplo, el directorio siguiente contiene las plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] correspondientes al inglés:
 
-  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+  C: \\ *directoriodeinstalacióndevisualstudio*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
 ### <a name="custom-templates"></a>Plantillas personalizadas
  De manera predeterminada, las plantillas personalizadas se encuentran en:
@@ -82,7 +82,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
 
 6. Ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-7. En el menú **Archivo** , haga clic en **Nuevo**y, a continuación, haga clic en **Proyecto**.
+7. En el menú **Archivo**, haga clic en **Nuevo** y, después, en **Proyecto**.
 
 8. Compruebe que la categoría Office aparece en el cuadro de diálogo **Nuevo proyecto**, en el panel **Tipos de proyecto**, bajo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
 
@@ -121,7 +121,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
 
 2. Coloque todas las plantillas de esta categoría en la nueva carpeta.
 
-3. En el menú **Archivo** , haga clic en **Nuevo**y, a continuación, haga clic en **Proyecto**.
+3. En el menú **Archivo**, haga clic en **Nuevo** y, después, en **Proyecto**.
 
 4. Compruebe que la categoría HelloWorld aparece bajo [!INCLUDE[csprcs](../includes/csprcs-md.md)] en el panel **Tipos de proyecto** del cuadro de diálogo **Nuevo proyecto**.
 
@@ -166,11 +166,11 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
 
 5. Guarde y cierre el archivo .vstemplate.
 
-6. Seleccione los archivos de la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpetas comprimidas (en zip)** . Los archivos se comprimen en un archivo .zip.
+6. Seleccione los archivos de la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpetas comprimidas (en zip)**. Los archivos se comprimen en un archivo .zip.
 
 7. Elimine los archivos de plantilla extraídos y el archivo .zip de plantilla antiguo.
 
 8. Coloque el nuevo archivo .zip en el directorio que contenía el archivo .zip eliminado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Personalizar plantillas plantillas de](../ide/customizing-project-and-item-templates.md) [Visual Studio referencia de esquema](../extensibility/visual-studio-template-schema-reference.md) de plantillas [NumberOfParentCategoriesToRollUp (plantillas de Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) [Cómo: crear plantillas de proyecto](../ide/how-to-create-project-templates.md) [Cómo: crear plantillas de elementos](../ide/how-to-create-item-templates.md)

@@ -11,16 +11,16 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 789d9f97958b9662db5f792f28a75c0f6b46a8c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188147"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Proporciona compatibilidad con la configuración regional para un proveedor de puerto.  
+Proporciona compatibilidad con la configuración regional para un proveedor de puertos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -29,23 +29,23 @@ IDebugPortSupplierLocale2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Un proveedor de puerto personalizado implementa esta interfaz para establecer la configuración regional.  
+ Un proveedor de Puerto personalizado implementa esta interfaz para establecer la configuración regional.  
   
 ## <a name="methods"></a>Métodos  
- La tabla siguiente muestran los métodos de **IDebugPortSupplierLocale2**.  
+ En la tabla siguiente se muestran los métodos de **IDebugPortSupplierLocale2**.  
   
-|Método|DESCRIPCIÓN|  
+|Método|Descripción|  
 |------------|-----------------|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Establece la configuración regional para el proveedor del puerto.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Establece la configuración regional del proveedor del puerto.|  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Portpriv.h  
+ Encabezado: Portpriv. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
- [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Consulte también  
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

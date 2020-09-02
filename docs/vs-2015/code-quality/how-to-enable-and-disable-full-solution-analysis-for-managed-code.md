@@ -12,19 +12,19 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 72b27bf9dcc1f0ee8a222ac701f2ffae4fc68614
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646289"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de la solución completa para código administrado
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Cómo: Habilitar y deshabilitar el análisis de una solución completa para código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
 > Este tema solo se aplica a Visual Studio 2015 Update 3 RC y versiones posteriores.
 
- El *análisis completo* de la solución es una característica de Visual Studio que le permite elegir si ve problemas de análisis de código C# solo en archivos visuales o Visual Basic abiertos en la solución, o en archivos C# Visual Basic visuales abiertos y cerrados en el solución.
+ El *análisis completo* de la solución es una característica de Visual Studio que le permite elegir si ve problemas de análisis de código solo en archivos abiertos de Visual c# o Visual Basic en la solución, o en archivos abiertos y cerrados de Visual c# o en Visual Basic de la solución.
 
  Aunque ser capaz de ver todos los problemas de todos los archivos es útil, puede resultar molesto e incluso ralentizar Visual Studio si la solución es muy grande o tiene muchos archivos.  Para limitar el número de problemas que se muestran y mejorar el rendimiento de Visual Studio, puede deshabilitar el análisis completo de la solución. Puede volver a habilitar fácilmente esta característica si lo desea.
 
@@ -32,7 +32,7 @@ NOTA]
 
 1. En el menú principal de Visual Studio, elija **herramientas** &#124; **Opciones** para ver el cuadro de diálogo **Opciones** .
 
-2. En el cuadro de diálogo **Opciones** , **Elija editor** &#124; **C#** de texto o **básico** &#124; **avanzado**.
+2. En el cuadro de diálogo **Opciones** , **Elija Editor de texto** &#124; **C#** o **básico** &#124; **avanzado**.
 
 3. Active la casilla habilitar el análisis de la **solución completa** para habilitar el análisis completo de la solución o desactive la casilla para deshabilitarlo. Elija el botón **Aceptar** cuando haya terminado.
 
@@ -53,6 +53,6 @@ NOTA]
  ![Texto de alerta que suspende el análisis completo de la solución](../code-quality/media/fsa-alert.png "FSA_Alert")
 
 ## <a name="additional-details"></a>Detalles adicionales
- De forma predeterminada, el análisis completo de la solución está habilitado para C#Visual Basic y deshabilitado para visual.
+ De forma predeterminada, el análisis completo de la solución está habilitado para Visual Basic y deshabilitado para Visual C#.
 
  Visual Studio Update 3 RC incluye un motor mejorado de diagnóstico de analizador de código v2 que reduce significativamente el uso de memoria y reduce el tiempo de CPU al estado de inactividad, incluso si está habilitado el análisis completo de la solución.

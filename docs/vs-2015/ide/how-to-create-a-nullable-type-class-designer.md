@@ -13,18 +13,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 438f84a172c7e0a2d0dc957c578adc568a46495f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668155"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. Esto es habitual en las bases de datos, donde es posible que algunos campos no tengan asignado ningún valor. Por ejemplo, se podría asignar un valor nulo a un campo de base de datos para indicar que aún no se le ha asignado ningún valor.
 
- Un *tipo que acepta valores NULL* es un tipo de valor que se amplía para que acepte el intervalo normal de valores para ese tipo y además un valor nulo. Por ejemplo, a un valor NULL de `Int32`, también conocido como Nullable\<Int32>, se le puede asignar cualquier valor comprendido entre -2147483648 y 2147483647, o se le puede asignar un valor nulo. A un valor Nullable\<bool> se le pueden asignar los valores `True`, `False` o nulo (ningún valor).
+ Un *tipo que acepta valores NULL* es un tipo de valor que se amplía para que acepte el intervalo normal de valores para ese tipo y además un valor nulo. Por ejemplo, a un tipo que admite valores NULL de `Int32`, también conocido como Nullable\<Int32>, se le puede asignar cualquier valor comprendido entre -2147483648 y 2147483647, o bien un valor NULL. A un tipo Nullable\<bool> se le pueden asignar los valores `True`, `False` o NULL (ningún valor).
 
  Los tipos que aceptan valores NULL son instancias de la estructura <xref:System.Nullable%601>. Cada instancia de un tipo que acepta valores NULL tiene dos propiedades públicas de solo lectura, `HasValue` y `Value`:
 
@@ -81,5 +81,5 @@ Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. E
 
 5. Haga clic con el botón derecho en la forma de clase y haga clic en **Detalles de clase**. Puede ver o modificar las propiedades del nuevo tipo en la ventana **Detalles de clase**.
 
-## <a name="see-also"></a>Vea también
- <xref:System.Nullable%601> [tipos que aceptan valores](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) null [con tipos que aceptan valores NULL](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [Cómo: identificar tipos de](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [valor](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6) que aceptan valores NULL de tipos que aceptan valores NULL
+## <a name="see-also"></a>Consulte también
+ <xref:System.Nullable%601>[Tipos que aceptan](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) valores NULL [usar tipos que aceptan valores NULL](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [Cómo: identificar tipos de](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [valores](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6) que aceptan valores NULL de tipos que aceptan valores NULL

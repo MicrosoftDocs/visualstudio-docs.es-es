@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: afff9e06c4333f4910e22e963d24090c1d1e4c6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651329"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad de IDE
@@ -26,10 +26,10 @@ ms.locfileid: "72651329"
  Además, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] admite los diseños de teclado Dvorak, que hacen que los caracteres que se escriben con más frecuencia estén más accesibles. También puede personalizar las teclas de método abreviado predeterminadas disponibles con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obtener más información, vea [Identificar y personalizar métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editores, cuadros de diálogo y ventanas de herramientas
- De manera predeterminada, los cuadros de diálogo y las ventanas de herramientas en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usan el mismo tamaño de fuente y los mismos colores que el sistema operativo. La configuración del color del marco del IDE, los cuadros de diálogo, las barras de herramientas y las ventanas de herramientas se basan en una combinación de colores: clara u oscura. Puede cambiar el tema del color actual en [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md).
+ De manera predeterminada, los cuadros de diálogo y las ventanas de herramientas en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usan el mismo tamaño de fuente y los mismos colores que el sistema operativo. La configuración del color del marco del IDE, los cuadros de diálogo, las barras de herramientas y las ventanas de herramientas se basan en una combinación de colores: clara u oscura. Puede cambiar el tema de color actual en el [cuadro de diálogo general, entorno, opciones](../../ide/reference/general-environment-options-dialog-box.md).
 
  También puede mostrar ventanas emergentes en la vista Código del editor. Estas ventanas pueden indicarle los miembros disponibles en el objeto actual y los parámetros para completar una función o instrucción. Estas ventanas pueden resultar útiles si tiene dificultades para escribir. En cambio, interfieren con el foco del editor de código, que puede ser problemático para algunos usuarios. Puede desactivar estas ventanas abriendo el cuadro de diálogo Opciones y desactivar **Lista de miembros automática** e **Información de parámetros** en el **Editor de texto**, **Todos los lenguajes**, página **General** en el cuadro de diálogo **Opciones**. Para obtener más información, vea [Cómo: Establecer opciones generales del editor](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).
 
@@ -50,7 +50,7 @@ ms.locfileid: "72651329"
 
      Para cambiar el tamaño de fuente del texto en un editor, pulse **Editor de texto**.
 
-     Para cambiar el tamaño de fuente del texto en ventanas de herramientas basadas en texto, pulse **[Todas las ventanas de herramientas de texto]** .
+     Para cambiar el tamaño de fuente del texto en ventanas de herramientas basadas en texto, pulse **[Todas las ventanas de herramientas de texto]**.
 
      Para cambiar el tamaño de fuente del texto de información sobre herramientas en un editor, pulse **Información sobre herramientas del editor**.
 
@@ -96,7 +96,7 @@ ms.locfileid: "72651329"
 
 2. En el cuadro de diálogo **Personalizar**, seleccione la pestaña **Comandos**.
 
-3. Seleccione **Barra de herramientas** y, después, pulse el nombre de la barra de herramientas que contiene el botón para el que intenta mostrar el texto.
+3. Seleccione **barra de herramientas** y, a continuación, elija el nombre de la barra de herramientas que contiene el botón para el que desea mostrar texto.
 
 4. En la lista, seleccione el comando que intenta cambiar.
 
@@ -110,5 +110,5 @@ ms.locfileid: "72651329"
 
 2. Junto a **Nombre**, inserte un nuevo título para el botón seleccionado.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Características de accesibilidad de los recursos de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md) [para diseñar aplicaciones accesibles](../../ide/reference/resources-for-designing-accessible-applications.md)

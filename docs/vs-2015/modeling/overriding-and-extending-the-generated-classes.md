@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 16a09a5b0f5e534d310092036b8e7eb1d4c344d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668475"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Invalidar y ampliar clases generadas
@@ -29,7 +29,7 @@ La definición de DSL es una plataforma en la que se puede crear un eficaz conju
 ### <a name="overriding-methods-in-a-partial-class"></a>Reemplazar métodos en una clase parcial
  Las definiciones de clase parcial permiten definir una clase en más de un lugar. Esto permite separar el código generado del código que se escribe. En el código escrito manualmente, puede invalidar las clases heredadas por el código generado.
 
- Por ejemplo, si en la definición de DSL define una clase de dominio denominada `Book`, puede escribir código personalizado que agregue métodos de invalidación:
+ Por ejemplo, si en la definición de DSL define una clase de dominio denominada `Book` , puede escribir código personalizado que agregue métodos de invalidación:
 
  `public partial class Book`
 
@@ -55,25 +55,25 @@ La definición de DSL es una plataforma en la que se puede crear un eficaz conju
 
  No obstante, puede invalidar estos métodos estableciendo la marca **Generate Double derived** para la clase de dominio. Esto hace que se generen dos clases, una de las cuales es una clase base abstracta de la otra. Todas las definiciones de método y propiedad están en la clase base y solo el constructor está en la clase derivada.
 
- Por ejemplo, en la biblioteca de ejemplo. DSL, la clase de dominio `CirculationBook` tiene la propiedad `Generates``Double Derived` establecida en `true`. El código generado para esa clase de dominio contiene dos clases:
+ Por ejemplo, en la biblioteca de ejemplo. DSL, la `CirculationBook` clase de dominio tiene la `Generates``Double Derived` propiedad establecida en `true` . El código generado para esa clase de dominio contiene dos clases:
 
 - `CirculationBookBase`, que es un abstracto y que contiene todos los métodos y propiedades.
 
-- `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo por sus constructores.
+- `CirculationBook`, que se deriva de `CirculationBookBase` . Está vacío, salvo por sus constructores.
 
-  Para invalidar cualquier método, cree una definición parcial de la clase derivada, como `CirculationBook`. Puede invalidar los métodos generados y los métodos heredados del marco de modelado.
+  Para invalidar cualquier método, cree una definición parcial de la clase derivada como `CirculationBook` . Puede invalidar los métodos generados y los métodos heredados del marco de modelado.
 
   Puede usar este método con todos los tipos de elemento, incluidos los elementos del modelo, las relaciones, las formas, los diagramas y los conectores. También puede invalidar métodos de otras clases generadas. Algunas clases generadas como ToolboxHelper siempre se derivan de Double.
 
 ### <a name="custom-constructors"></a>Constructores personalizados
  No se puede invalidar un constructor. Incluso en clases derivadas dobles, el constructor debe estar en la clase derivada.
 
- Si desea proporcionar su propio constructor, puede establecer `Has Custom Constructor` para la clase de dominio en la definición de DSL. Al hacer clic en **transformar todas las plantillas**, el código generado no incluirá un constructor para esa clase. Incluirá una llamada al constructor que falta. Esto genera un informe de errores al compilar la solución. Haga doble clic en el informe de errores para ver un Comentario en el código generado que explica lo que debe proporcionar.
+ Si desea proporcionar su propio constructor, puede hacerlo estableciendo `Has Custom Constructor` la clase de dominio en la definición de DSL. Al hacer clic en **transformar todas las plantillas**, el código generado no incluirá un constructor para esa clase. Incluirá una llamada al constructor que falta. Esto genera un informe de errores al compilar la solución. Haga doble clic en el informe de errores para ver un Comentario en el código generado que explica lo que debe proporcionar.
 
  Escriba una definición de clase parcial en un archivo que sea independiente de los archivos generados y proporcione el constructor.
 
 ### <a name="flagged-extension-points"></a>Puntos de extensión marcados
- Un punto de extensión marcado es un lugar en la definición de DSL en el que puede establecer una propiedad o una casilla para indicar que va a proporcionar un método personalizado. Los constructores personalizados son un ejemplo. Otros ejemplos incluyen el establecimiento del `Kind` de una propiedad de dominio en el almacenamiento calculado o personalizado o el establecimiento de la marca **is Custom** en un generador de conexiones.
+ Un punto de extensión marcado es un lugar en la definición de DSL en el que puede establecer una propiedad o una casilla para indicar que va a proporcionar un método personalizado. Los constructores personalizados son un ejemplo. Otros ejemplos incluyen el establecimiento `Kind` de la propiedad de un dominio en el almacenamiento calculado o personalizado o el establecimiento de la marca **is Custom** en un generador de conexiones.
 
  En cada caso, al establecer la marca y volver a generar el código, se producirá un error de compilación. Haga doble clic en el error para ver un comentario que explica lo que debe proporcionar.
 

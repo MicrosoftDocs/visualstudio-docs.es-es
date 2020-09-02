@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5f8568edc636955558ec93b55c0aedebf0065d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651836"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
@@ -47,5 +47,5 @@ De manera predeterminada, todas las opciones de configuración de compilación a
 
      En el menú **Compilar**, **Administrador de configuración** ahora está disponible y las listas **Configuración** y **Plataforma** están visibles en el Diseñador de proyectos.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [compilar y generar](../ide/compiling-and-building-in-visual-studio.md)

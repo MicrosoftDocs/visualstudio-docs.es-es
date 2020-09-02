@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5f5d8bb92b80942a95528a0b2e4c7e64bbfafc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668138"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Cómo: Crear y editar configuraciones
@@ -121,7 +121,7 @@ Se pueden crear configuraciones de compilación para una solución. Por ejemplo,
 
 2. En la lista desplegable **Configuración de soluciones activas**, seleccione la configuración que quiera.
 
-3. En el panel **Contextos del proyecto**, para cada proyecto, seleccione la **Configuración** y la **Plataforma** que quiera, y seleccione si quiere que sea de **Compilación** o **Implementación**.
+3. En el **Panel contextos del proyecto** , para cada proyecto, seleccione la **configuración** y la **plataforma** que desee y seleccione si desea **compilarlo** y si desea **implementarlo** .
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Descripción de las configuraciones](../ide/understanding-build-configurations.md) [de compilación compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [NIB cómo: modificar las propiedades y los valores de configuración del proyecto](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

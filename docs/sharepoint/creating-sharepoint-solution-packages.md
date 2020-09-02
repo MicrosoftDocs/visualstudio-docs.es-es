@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74876069"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Crear paquetes de soluciones de SharePoint
@@ -26,16 +26,16 @@ ms.locfileid: "74876069"
 ## <a name="packaging-tools"></a>Herramientas de empaquetado
  Puede usar el **Diseñador de paquetes** para personalizar el paquete y generar el manifiesto. Puede incluir elementos de proyecto de SharePoint, configurar si se debería restablecer el servidor web y establecer el tipo de servidor de implementación. Para obtener más información, vea [Cómo: agregar y quitar características y elementos de un paquete mediante el diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).
 
- Como alternativa, puede usar el **Explorador de empaquetado** para modificar las características y los elementos del archivo de paquete ( *. wsp*). Para obtener más información, vea [Cómo: agregar y quitar características y elementos de un paquete mediante el explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
+ Como alternativa, puede usar el **Explorador de empaquetado** para modificar las características y los elementos del archivo de paquete (*. wsp*). Para obtener más información, vea [Cómo: agregar y quitar características y elementos de un paquete mediante el explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
 
- Puede usar Visual Studio y MSBuild para crear archivos de paquete ( *. wsp*) para implementar la solución de SharePoint. Este proceso genera los archivos de manifiesto necesarios para la implementación de SharePoint. Para obtener más información, vea [Cómo: crear un paquete de solución de SharePoint mediante tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
+ Puede usar Visual Studio y MSBuild para crear archivos de paquete (*. wsp*) para implementar la solución de SharePoint. Este proceso genera los archivos de manifiesto necesarios para la implementación de SharePoint. Para obtener más información, vea [Cómo: crear un paquete de solución de SharePoint mediante tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
 
 ## <a name="package-designer-options"></a>Opciones del diseñador de paquetes
  En la tabla siguiente se muestran las propiedades que se pueden personalizar en los paquetes de SharePoint con el **Diseñador de paquetes**.
 
 |Propiedad del Diseñador de paquetes|Descripción del valor predeterminado|
 |-------------------------------|------------------------------------|
-|Name|Obligatoria. El nombre predeterminado del paquete se establece en *projectname*.|
+|Nombre|Necesario. El nombre predeterminado del paquete se establece en *projectname*.|
 |Restablecer WebServer|Opcional. Seleccione esta opciones si desea reiniciar el servidor Web después de instalar el archivo *. wsp* en el servidor de SharePoint.|
 |Tipo de servidor de implementación|Opcional. Representa el tipo de servidor que hospeda el paquete. Si no se establece, el valor predeterminado será WebFrontend.<br /><br /> ApplicationServer: describe un servidor que hospeda servicios.<br /><br /> WebFrontend: describe un servidor que hospeda sitios Web.|
 |Elementos de la solución|Todos los elementos y las características de proyecto de SharePoint que se pueden agregar al paquete.|
@@ -48,13 +48,13 @@ ms.locfileid: "74876069"
 
 |Destino|Descripción|
 |------------|-----------------|
-|BeforeLayout|El destino que realiza las tareas inmediatamente antes de que los archivos se copien en un directorio intermedio. Puede modificar los archivos antes de crear un archivo de paquete ( *. wsp*).|
+|BeforeLayout|El destino que realiza las tareas inmediatamente antes de que los archivos se copien en un directorio intermedio. Puede modificar los archivos antes de crear un archivo de paquete (*. wsp*).|
 |AfterLayout|El destino que realiza las tareas inmediatamente después de que los archivos se copien en un directorio intermedio.|
 
  Para obtener más información, [Cómo: personalizar un paquete de solución de SharePoint mediante destinos de MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).
 
 ## <a name="packaging-architecture"></a>Arquitectura de empaquetado
- Los pasos siguientes se producen al crear un paquete de SharePoint ( *. wsp*) en Visual Studio.
+ Los pasos siguientes se producen al crear un paquete de SharePoint (*. wsp*) en Visual Studio.
 
 1. Los paquetes y las características se validan para asegurarse de que la estructura física y semántica del paquete es correcta.
 
@@ -69,7 +69,7 @@ ms.locfileid: "74876069"
 6. Los archivos del directorio intermedio se agregan al archivo *. wsp* .
 
 ## <a name="package-folder-structure"></a>Estructura de carpetas de los paquetes
- Al empaquetar el proyecto de SharePoint, se crea un archivo *. wsp* en la carpeta *SolutionFolder\bin\\\<BuildConfiguration >* . Por ejemplo, si la solución está en *C:\Visual Studio 2013 \ Projects\ListDefinition1* y la configuración de compilación se establece en release, el archivo *. wsp* se encuentra en *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
+ Al empaquetar el proyecto de SharePoint, se crea un archivo *. wsp* en la carpeta *SolutionFolder\bin \\ \<BuildConfiguration> * Por ejemplo, si la solución está en *C:\Visual Studio 2013 \ Projects\ListDefinition1* y la configuración de compilación se establece en release, el archivo *. wsp* se encuentra en *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

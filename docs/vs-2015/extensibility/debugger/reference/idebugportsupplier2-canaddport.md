@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::CanAddPort | Microsoft Docs
+title: 'IDebugPortSupplier2:: CanAddPort | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4ec078650446d3511ed9c5bdc8ee3ec0191487d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188350"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
@@ -37,11 +37,11 @@ int CanAddPort();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve si se puede agregar el puerto, `S_OK`; en caso contrario, devuelve `S_FALSE` para indicar que no hay puertos se pueden agregar a este proveedor del puerto.  
+ Si se puede Agregar el puerto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` para indicar que no se pueden agregar puertos a este proveedor de puertos.  
   
-## <a name="remarks"></a>Comentarios  
- Llame a este método antes de llamar a la [agregar puerto](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) método, ya que el último método crea el puerto, así como agregarlo, que podría ser una operación lenta.  
+## <a name="remarks"></a>Observaciones  
+ Llame a este método antes de llamar al método [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) , ya que el último método crea el puerto y lo agrega, lo que podría ser una operación que consume mucho tiempo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

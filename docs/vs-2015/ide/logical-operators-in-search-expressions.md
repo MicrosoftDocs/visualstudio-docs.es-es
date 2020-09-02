@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d56f2dfc2924008a6be293fe1498f0ffe32abaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651437"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operadores lógicos en expresiones de búsqueda
@@ -27,12 +27,12 @@ Con los operadores lógicos puede restringir la búsqueda de contenido mediante 
 > [!IMPORTANT]
 > Debe escribir los operadores lógicos con todas las letras en mayúsculas para que el motor de búsqueda los reconozca.
 
-|Para buscar|Usar|Ejemplo|Resultado|
+|Para buscar|Use|Ejemplo|Resultado|
 |-------------------|---------|-------------|------------|
 |Ambos términos en el mismo tema|AND|dib AND paleta|Temas que contienen "dib" y "paleta".|
 |Cualquier término en un tema|O|trama OR vector|Temas que contienen "trama" o "vector".|
 |El primer término sin el segundo en el mismo tema|NOT|"sistema operativo" NOT DOS|Temas que contienen "sistema operativo", pero no "DOS".|
-|Ambos términos muy próximos en un tema|CERCA_DE|usuario NEAR kernel|Temas que contienen "usuario" cerca de "kernel".|
+|Ambos términos muy próximos en un tema|NEAR|usuario NEAR kernel|Temas que contienen "usuario" cerca de "kernel".|
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Sugerencias para la búsqueda de texto completo](../ide/full-text-search-tips.md) [Buscar información](../ide/locate-information.md)

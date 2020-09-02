@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b8038acf2aef8c34d07e7f21543a597ad7b96fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572996"
 ---
-# <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
+# <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el valor de un registro especificado tal como está almacenado en el marco de pila.  
+Recupera el valor de un registro especificado como almacenado en el marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,14 +36,14 @@ HRESULT get_registerValue(
   
 #### <a name="parameters"></a>Parámetros  
  `registerIndex`  
- [in] Uno de los [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md) valores de enumeración.  
+ de Uno de los valores de enumeración de la [enumeración CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) .  
   
  `pRetVal`  
- [out] Valor almacenado en el registro.  
+ enuncia Valor almacenado en el registro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
  [Enumeración CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

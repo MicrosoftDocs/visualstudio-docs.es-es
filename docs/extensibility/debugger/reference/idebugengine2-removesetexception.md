@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveSetException ? Microsoft Docs
+title: 'IDebugEngine2:: RemoveSetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0e811ce2e387c299ff3655799bf35185c1d2029b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730922"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
-Quita la excepción especificada para que el motor de depuración ya no la controle.
+Quita la excepción especificada para que el motor de depuración ya no la administre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,15 +41,15 @@ int RemoveSetException( 
 
 ## <a name="parameters"></a>Parámetros
 `pException`\
-[en] Estructura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) que describe la excepción que se va a quitar.
+de Estructura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) que describe la excepción que se va a quitar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- La excepción que se quita debe haber sido establecida previamente por una llamada anterior a la [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) método.
+ La excepción que se va a quitar se debe haber establecido previamente mediante una llamada anterior al método [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
 
- Para quitar todas las excepciones de conjunto a la vez, llame a la [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) método.
+ Para quitar todas las excepciones set a la vez, llame al método [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

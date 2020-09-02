@@ -11,10 +11,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f3e030facd8c70aec4fdc480b01c90ee4c0acda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188389"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
@@ -29,19 +29,19 @@ IDebugPortPicker : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Esta interfaz se implementa mediante proveedores de puertos. Un proveedor de puerto define su selector de puerto para exponerlo como un CLSID y elige el `metricPortPickerCLSID` métrica en el CLSID expuesto.  
+ Esta interfaz la implementan los proveedores de puertos. Un proveedor de puertos define su selector de puerto al exponerlo como un CLSID y apuntar `metricPortPickerCLSID` a la métrica en el CLSID expuesto.  
   
 ## <a name="methods"></a>Métodos  
- La tabla siguiente muestran los métodos de `IDebugPortPicker`.  
+ En la tabla siguiente se muestran los métodos de `IDebugPortPicker` .  
   
-|Método|DESCRIPCIÓN|  
+|Método|Descripción|  
 |------------|-----------------|  
 |[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|Muestra el cuadro de diálogo especificado que permite al usuario seleccionar un puerto.|  
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Establece el proveedor de servicios.|  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Msdbg.h  
+ Encabezado: Msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

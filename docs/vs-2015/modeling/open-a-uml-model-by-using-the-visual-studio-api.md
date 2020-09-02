@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 694f10fb0af440513331aa6e76dbf9a59a16d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668509"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Abrir un modelo UML mediante la API de Visual Studio
@@ -29,10 +29,10 @@ También se pueden abrir modelos y diagramas en la interfaz de usuario de Visual
 
 - Puede abrir un modelo en modo de solo lectura. Para obtener más información, vea [leer un modelo UML en el código del programa](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Showing"></a>Abrir modelos y diagramas en Visual Studio
+## <a name="opening-models-and-diagrams-in-visual-studio"></a><a name="Showing"></a> Abrir modelos y diagramas en Visual Studio
  Para abrir un modelo en la interfaz de usuario, use la API estándar de Visual Studio `EnvDTE.DTE`. Existen dos conversiones útiles que pueden realizarse en elementos de proyecto de modelado:
 
-- Si el proyecto es un proyecto de modelado y se carga en el AppDomain actual, `EnvDTE.Project` se puede convertir a `IModelingProject`, y viceversa.
+- `EnvDTE.Project` se puede convertir a y desde `IModelingProject` , si el proyecto es un proyecto de modelado y si el proyecto se carga en el AppDomain actual.
 
 - Si el elemento es un diagrama de UML, `EnvDTE.ProjectItem` se puede convertir a `IDiagramContext`, y viceversa.
 
@@ -115,5 +115,5 @@ foreach (ProjectItem item in project.ProjectItems)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Programar con la API de UML](../modeling/programming-with-the-uml-api.md) [ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

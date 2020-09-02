@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75406727"
 ---
 # <a name="xslt-profiler"></a>Generador de perfiles XSLT
@@ -30,5 +30,5 @@ El generador de perfiles XSLT es una herramienta de generador de perfiles de an�
 > [!NOTE]
 > La apariencia de algunas pantallas en estos documentos quizá sea distinta en Visual Studio 2010 ya que a partir de Visual Studio 2008 se cambiaron algunos elementos viduales.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Tutorial: Generador de perfiles XSLT](../xml-tools/walkthrough-xslt-profiler.md)

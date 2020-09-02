@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b5ebe4e38878df209ab6065b1dbca88cd8404b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655304"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de capas
@@ -60,7 +60,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
    > [!NOTE]
    > Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).
 
-5. Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en *bin\\* . Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .
+5. Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en *bin\\*. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Agregar un validador de capas a un VSIX independiente
  Si desea crear un VSIX que contenga validadores de capas, comandos y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores. Para obtener información sobre otros tipos de extensión de modelado, vea [ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md).
@@ -71,7 +71,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 
 2. Identifique o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**. Si tiene que agregar un proyecto VSIX, siga estos pasos:
 
-    1. En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#** , **Extensibilidad**, **Proyecto VSIX**.
+    1. En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#**, **Extensibilidad**, **Proyecto VSIX**.
 
     2. En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.
 
@@ -81,11 +81,11 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 
     2. En el cuadro de diálogo **Agregar nuevo activo** , establezca:
 
-         **Tipo** = **Microsoft.VisualStudio.MefComponent**
+         **Tipo**  =  de **Microsoft. VisualStudio. MefComponent**
 
-         **Origen** = **Un proyecto de la solución actual**
+         **Origen**  =  de **Proyecto en la solución actual**
 
-         **Proyecto** = *El proyecto validador*
+         **Proyecto**  =  de *su proyecto de validador*
 
 4. También debe agregarse como validación de capas:
 
@@ -93,11 +93,11 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 
     2. En el cuadro de diálogo **Agregar nuevo activo** , establezca:
 
-         **Tipo** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Esta no es una de las opciones de la lista desplegable. Debe escribirla desde el teclado.
+         **Tipo**  =  de **Microsoft. VisualStudio. ArchitectureTools. layer. validator**. Esta no es una de las opciones de la lista desplegable. Debe escribirla desde el teclado.
 
-         **Origen** = **Un proyecto de la solución actual**
+         **Origen**  =  de **Proyecto en la solución actual**
 
-         **Proyecto** = *El proyecto validador*
+         **Proyecto**  =  de *su proyecto de validador*
 
 5. Vuelva al proyecto de validación de capas y agregue las siguientes referencias de proyecto:
 
@@ -121,7 +121,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 
      Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .
 
-## <a name="programming"></a> Programar la validación
+## <a name="programming-validation"></a><a name="programming"></a> Programación de la validación
  Para definir una extensión de validación de capas, defina una clase que tenga las siguientes características:
 
 - El formato general de la declaración será similar al siguiente:
@@ -190,7 +190,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 
   Los vínculos entre las capas y los elementos del código tienen la categoría "Representa".
 
-## <a name="debugging"></a> Depurar la validación
+## <a name="debugging-validation"></a><a name="debugging"></a> Depuración de validación
  Para depurar la extensión de validación de capas, presione CTRL+F5. Se abre una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . En esta instancia, abra o cree un modelo de capas. Este modelo debe estar asociado a código y debe tener al menos una dependencia.
 
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Probar con una solución que contiene dependencias
@@ -217,7 +217,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 ### <a name="deploying-a-validation-extension"></a>Implementar una extensión de validación
  Para instalar la extensión de validación en un equipo en el que está instalado una versión adecuada de Visual Studio, abra el archivo VSIX en el equipo de destino. Para instalarla en un equipo en el que está instalado [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] , debe extraer manualmente el contenido de VSIX en una carpeta Extensions. Para obtener más información, vea [implementar una extensión de modelo de capas](../modeling/deploy-a-layer-model-extension.md).
 
-## <a name="example"></a> Example code
+## <a name="example-code"></a><a name="example"></a> Código de ejemplo
 
 ```csharp
 using System;
@@ -278,5 +278,5 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ampliar diagramas de capas](../modeling/extend-layer-diagrams.md)

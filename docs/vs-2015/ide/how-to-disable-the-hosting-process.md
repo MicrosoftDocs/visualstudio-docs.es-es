@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667974"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Cómo: Deshabilitar el proceso de alojamiento
@@ -28,7 +28,7 @@ Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso 
 
 1. Abra un proyecto ejecutable en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Los proyectos que no generan archivos ejecutables (por ejemplo, proyectos de biblioteca de clases o de servicio) no tienen esta opción.
 
-2. En el menú **Proyecto**, haga clic en **Propiedades**.
+2. En el menú **Proyecto** , haga clic en **Propiedades**.
 
 3. Haga clic en la pestaña **Depurar**.
 
@@ -44,5 +44,5 @@ Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso 
 
 - No está disponible la depuración de confianza parcial.
 
-## <a name="see-also"></a>Otras referencias
- [La depuración y el proceso de hospedaje del proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md) [(vshost. exe)](../ide/hosting-process-vshost-exe.md) se [compilan durante el desarrollo](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6) de la aplicación
+## <a name="see-also"></a>Consulte también
+ [La depuración y el proceso de hospedaje del proceso de](../debugger/debugging-and-the-hosting-process.md) hospedaje [(vshost.exe)](../ide/hosting-process-vshost-exe.md) se [compilan durante el desarrollo](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6) de la aplicación
