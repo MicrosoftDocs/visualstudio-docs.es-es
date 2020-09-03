@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668076"
 ---
 # <a name="how-to-create-item-templates"></a>Cómo: Crear plantillas de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En los pasos del [primer procedimiento](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) de este tema se muestra cómo crear una plantilla de elementos mediante el asistente **Exportar plantilla**. Si la plantilla consta de varios archivos, vea [Cómo: Crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md).
+En los pasos del [primer procedimiento](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) de este tema se muestra cómo crear una plantilla de elementos mediante el asistente **Exportar plantilla**. Si la plantilla consta de varios archivos, vea [Cómo: crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md).
 
  El asistente hace gran parte del trabajo de creación de la plantilla básica, pero en muchos casos deberá modificar manualmente el archivo .vstemplate después de haber exportado la plantilla. Por ejemplo, si quiere que el elemento aparezca en el cuadro de diálogo **Agregar nuevo elemento** de un proyecto de aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], tendrá que efectuar unos pasos adicionales. El [segundo procedimiento](#to-enable-the-item-template-to-be-used-in-a-store-project) de este tema le ayudará a realizar dicha tarea.
 
@@ -38,7 +38,7 @@ En los pasos del [primer procedimiento](#to-add-a-custom-project-item-template-t
 
 2. Agregue un elemento al proyecto y modifíquelo si lo desea.
 
-3. Modifique el archivo de código para indicar dónde debe aplicarse el reemplazo de parámetros. Para más información, vea [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Modifique el archivo de código para indicar dónde debe aplicarse el reemplazo de parámetros. Para obtener más información, vea [Cómo: sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4. En el menú **Archivo**, haga clic en **Exportar plantilla**.
 
@@ -50,10 +50,10 @@ En los pasos del [primer procedimiento](#to-add-a-custom-project-item-template-t
 
 8. Escriba el nombre del archivo de icono, la imagen de vista previa, el nombre de la plantilla y la descripción de la misma y haga clic en **Finalizar**.
 
-     Los archivos de la plantilla se agregan a un archivo .zip y se copian en cualquier directorio especificado en el cuadro de diálogo. La ubicación predeterminada es la carpeta **..\Users\\<nombreDeUsuario\>\Documents\Visual Studio \<Version>\My Exported Templates\\** .
+     Los archivos de la plantilla se agregan a un archivo .zip y se copian en cualquier directorio especificado en el cuadro de diálogo. La ubicación predeterminada es **. \Users \\<nombredeusuario \> \Documents\Visual Studio \<Version> \My Exported templates \\ ** Folder.
 
     > [!WARNING]
-    > En versiones anteriores de Visual Studio, la ubicación predeterminada era **..\Users\\<nombreDeUsuario\>\Documents\Visual Studio \<Version>\Templates\ItemTemplates**.
+    > En versiones anteriores de Visual Studio, la ubicación predeterminada es **. \Users \\<nombredeusuario \> \Documents\Visual Studio \<Version> \Templates\ItemTemplates**.
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Para permitir que la plantilla de elementos se use en un proyecto de tienda
 
@@ -67,7 +67,7 @@ En los pasos del [primer procedimiento](#to-add-a-custom-project-item-template-t
 
     Un proyecto de tienda Windows 8.1 de C++ usa un valor de `WinRT-Native-6.3`. Para tipos de proyecto de Windows 10 y otros, vea [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).
 
-    El ejemplo siguiente muestra el contenido completo de un archivo .vstemplate después de agregar la línea de código XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Este ejemplo es específico de los proyectos de C#. Puede modificar los elementos \<ProjectType > y \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> para especificar otros tipos de lenguajes y proyectos.
+    El ejemplo siguiente muestra el contenido completo de un archivo .vstemplate después de agregar la línea de código XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Este ejemplo es específico de los proyectos de C#. Puede modificar los \<ProjectType> elementos y \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> para especificar otros tipos de lenguaje y proyecto.
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -157,5 +157,5 @@ En los pasos del [primer procedimiento](#to-add-a-custom-project-item-template-t
 
 8. Copie el archivo .zip y péguelo en la ubicación de la plantilla de elementos del usuario. En Visual Studio 2015, el directorio predeterminado es ..\Users\\<nombreDeUsuario\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Para más información, vea Cómo: Localizar y organizar plantillas de proyectos y de elementos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md) [Cómo: crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md) [referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669654"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Exportar diagramas UML a archivos de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede exportar un documento UML de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a una imagen que esté bajo control del programa. Por ejemplo, quizá le interesa hacerlo como parte de la generación de documentos automática.
+Puede exportar un documento UML desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a una imagen que esté bajo control del programa. Por ejemplo, quizá le interesa hacerlo como parte de la generación de documentos automática.
 
  Si desea exportar un documento a una imagen manualmente, puede copiar y pegar las formas de un diagrama en otros programas como Word. También puede imprimir documentos en formato XPS. Para obtener más información, vea [exportar diagramas como imágenes](../modeling/export-diagrams-as-images.md).
 
@@ -141,5 +141,5 @@ namespace SaveToImage
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Exportar diagramas como imágenes](../modeling/export-diagrams-as-images.md) [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

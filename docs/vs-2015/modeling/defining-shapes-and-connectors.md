@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8304e573f64671936eee2ce922b904b41187aad2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669857"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definir formas y conectores
@@ -21,7 +21,7 @@ ms.locfileid: "72669857"
 
 Hay varios tipos básicos de formas que puede usar para mostrar información en un diagrama en un lenguaje específico de dominio (DSL).
 
-## <a name="shapeTypes"></a>Tipos básicos de formas y conectores
+## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> Tipos básicos de formas y conectores
  Un diagrama DSL muestra una colección de *formas* intervinculadas por líneas o *conectores*.  Normalmente, aunque no siempre:
 
 - Las formas son la representación visible de los elementos del modelo.
@@ -45,5 +45,5 @@ Hay varios tipos básicos de formas que puede usar para mostrar información en 
 |Calles|Las calles dividen un diagrama en segmentos horizontales o verticales. La calle siempre permanece debajo de las demás formas del diagrama.<br /><br /> Normalmente, los elementos de modelo de la calle tienen elementos primarios en la raíz del modelo, y los demás elementos tienen elementos primarios en ellos. Para ver un ejemplo, cree un DSL con la plantilla de solución Task Flow (Flujo de tareas).|
 |Conectores|Normalmente, las líneas que se dibujan entre las formas representan relaciones de referencia. Puede establecer las opciones para que un conector sea recto o rectilíneo, y para que tenga diferentes tipos de punta de flecha.|
 
-## <a name="shapeInheritance"></a>Herencia de formas
+## <a name="shape-inheritance"></a><a name="shapeInheritance"></a> Herencia de formas
  Una forma puede heredar de otra forma. Sin embargo, las formas deben ser del mismo tipo. Por ejemplo, de una forma geométrica solo puede heredar otra forma geométrica. Las formas heredadas tienen los compartimientos y los elementos Decorator de su forma base. Los conectores pueden heredar de otros conectores.

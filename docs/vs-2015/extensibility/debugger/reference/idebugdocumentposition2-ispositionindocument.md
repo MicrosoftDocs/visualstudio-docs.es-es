@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::IsPositionInDocument | Microsoft Docs
+title: 'IDebugDocumentPosition2:: IsPositionInDocument | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7950f091d34d03222044455be671e15f5297a747
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200283"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina si la posición del documento se encuentra en el documento especificado.  
+Determina si la posición del documento está contenida en el documento especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,14 +40,14 @@ int IsPositionInDocument( 
   
 #### <a name="parameters"></a>Parámetros  
  `pDoc`  
- [in] El [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objeto que representa el candidato de documento que contiene.  
+ de El objeto [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que representa el candidato del documento contenedor.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se utiliza principalmente en establecer puntos de interrupción [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfaces. Como se carguen documentos, la posición del punto de interrupción se llama para determinar si el documento contiene esta posición.  
+ Este método se utiliza principalmente en el establecimiento de puntos de interrupción en interfaces [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) . A medida que se cargan los documentos, se llama a la posición del punto de interrupción para determinar si el documento contiene esta posición.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

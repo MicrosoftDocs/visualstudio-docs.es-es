@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b25b47b5b711f09334501ed21abf06cb66402b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669741"
 ---
 # <a name="domain-path-syntax"></a>Sintaxis de las rutas de dominio
@@ -27,9 +27,9 @@ Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elemen
 
  Una ruta de dominio adopta el formato siguiente:
 
- *RelationshipName. PropertyName/! Role*
+ *NombreRelación.NombrePropiedad/!Rol*
 
- ![Relación de referencia de CommentReferencesSubjects](../modeling/media/dsl-reference.png "dsl_reference")
+ ![Relación de referencia CommentReferencesSubjects](../modeling/media/dsl-reference.png "dsl_reference")
 
  La sintaxis atraviesa el árbol del modelo. Por ejemplo, la relación de dominio **CommentReferencesSubjects** de la ilustración anterior tiene un rol **asuntos** . La ruta de acceso Segment **/! Subjectt** especifica que la ruta de acceso finaliza en los elementos a los que se accede a través del rol de **sujetos** .
 
@@ -39,5 +39,5 @@ Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elemen
 
  El nombre que use para el salto elemento-vínculo es el valor de `Property Name` del rol. El nombre que use para el salto vínculo-elemento es el nombre del rol de destino.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)

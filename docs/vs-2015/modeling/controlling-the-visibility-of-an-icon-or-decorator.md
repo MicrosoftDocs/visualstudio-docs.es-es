@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 49cecff999e0155209ba58c20c0d623b15d63698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667829"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlar la visibilidad de un icono o un objeto Decorator
@@ -62,13 +62,13 @@ Un elemento *Decorator* es un icono o una línea de texto que aparece en una for
 
 1. Agregue una propiedad de dominio calculado a la clase de dominio. En la ventana **propiedades** , establezca los valores siguientes:
 
-     **IsBrowsable =** `False` **: oculta la propiedad del usuario** .
+     **IsBrowsable =** `False` **-Esto oculta la propiedad del usuario**    
 
-     **Kind =** `Calculated` **: Esto significa que se proporcionará código que calcula su valor** .
+     **Kind =** `Calculated` **: Esto significa que se proporcionará código que calcula su valor**    
 
      **Nombre** , por ejemplo **DecoratorControl**
 
-     @No__t_1 de **tipo** `Boolean`
+     **Automáticamente** = `Boolean`
 
      Para obtener más información, consulte [propiedades de almacenamiento calculado y personalizado](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -80,7 +80,7 @@ Un elemento *Decorator* es un icono o una línea de texto que aparece en una for
 
     3. En **propiedad de filtro**, seleccione la propiedad de control **DecoratorControl**.
 
-    4. En **entradas de visibilidad**, escriba `True`.
+    4. En **entradas de visibilidad**, escriba `True` .
 
 3. Haga clic en **transformar todas las plantillas** en la barra de herramientas explorador de soluciones.
 
@@ -107,5 +107,5 @@ Un elemento *Decorator* es un icono o una línea de texto que aparece en una for
 
 8. Vuelva a generar y ejecutar la solución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md) [establecer una imagen de fondo en un diagrama](../modeling/setting-a-background-image-on-a-diagram.md) [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md) [escribir código para personalizar un lenguaje específico del dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

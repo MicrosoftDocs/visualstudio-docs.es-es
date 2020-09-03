@@ -1,0 +1,142 @@
+- name: 'Se esperaba ''{'''
+  href: expected-left-curly-brace.md
+- name: 'Se esperaba un identificador, una cadena o un número'
+  href: expected-identifier-string-or-number.md
+- name: Se esperaba una función
+  href: function-expected.md
+- name: Se esperaba VBArray
+  href: vbarray-expected.md
+- name: Se esperaba 'catch'
+  href: expected-catch.md
+- name: No se puede asignar al resultado de una función
+  href: cannot-assign-to-a-function-result.md
+- name: Error de sintaxis (JavaScript)
+  href: syntax-error-javascript.md
+- name: Se esperaba un objeto de expresión regular
+  href: regular-expression-object-expected.md
+- name: False (Windows Script Technologies)
+  href: false-windows-script-technologies.md
+- name: 'Se esperaba ''}'''
+  href: expected-right-curly-brace.md
+- name: Se esperaba un objeto enumerador
+  href: enumerator-object-expected.md
+- name: El número de dígitos fraccionarios está fuera del intervalo
+  href: the-number-of-fractional-digits-is-out-of-range.md
+- name: Se esperaba un objeto de fecha
+  href: date-object-expected.md
+- name: Comentario sin terminar
+  href: unterminated-comment.md
+- name: '''continue'' no puede estar fuera del bucle'
+  href: can-t-have-continue-outside-of-loop.md
+- name: Se esperaba un objeto JavaScript
+  href: javascript-object-expected.md
+- name: 'Se esperaba '':'''
+  href: expected-colon.md
+- name: Se debe asignar un valor entero positivo finito a la longitud de la matriz
+  href: array-length-must-be-assigned-a-finite-positive-number.md
+- name: Se esperaba "@end"
+  href: expected-at-end.md
+- name: Número no válido
+  href: invalid-number.md
+- name: La precisión está fuera del intervalo
+  href: the-precision-is-out-of-range.md
+- name: No se esperaba un cuantificador (JavaScript)
+  href: unexpected-quantifier-javascript.md
+- name: No se puede asignar a 'this'
+  href: cannot-assign-to-this.md
+- name: La función no tiene un objeto prototipo válido
+  href: function-does-not-have-a-valid-prototype-object.md
+- name: Las funciones setter deben tener un argumento
+  href: setter-functions-must-have-one-argument.md
+- name: Carácter no válido (JavaScript)
+  href: invalid-character-javascript.md
+- name: Excepción producida y no detectada
+  href: exception-thrown-and-not-caught.md
+- name: Se esperaba un número
+  href: number-expected.md
+- name: El uso de una palabra reservada para uso futuro para un identificador no es válido
+  href: the-use-of-a-future-reserved-word-for-an-identifier-is-invalid.md
+- name: Throw debe ir seguido de una expresión en la misma línea de código fuente
+  href: throw-must-be-followed-by-an-expression-on-the-same-source-line.md
+- name: Asignación no válida (JavaScript)
+  href: illegal-assignment-javascript.md
+- name: '''default'' solo puede aparecer una vez en una instrucción ''switch''.'
+  href: default-can-only-appear-once-in-a-switch-statement.md
+- name: Se esperaba '=' (JavaScript)
+  href: expected-equal-javascript.md
+- name: El URI que se desea codificar contiene un carácter no válido
+  href: the-uri-to-be-encoded-contains-an-invalid-character.md
+- name: Se esperaba "-"
+  href: expected-minus.md
+- name: Intervalo no válido en el juego de caracteres (JavaScript)
+  href: invalid-range-in-character-set-javascript.md
+- name: Se esperaba un identificador (JavaScript)
+  href: expected-identifier-javascript.md
+- name: Se esperaba una constante
+  href: expected-constant.md
+- name: Identificador no definido
+  href: undefined-identifier.md
+- name: Acceso denegado
+  href: access-is-denied.md
+- name: 'Se esperaba "\]"'
+  href: expected-right-square-bracket.md
+- name: Se esperaba 'while '
+  href: expected-while.md
+- name: Se esperaba '@'
+  href: expected-at.md
+- name: Etiqueta redefinida
+  href: label-redefined.md
+- name: No se encuentra la etiqueta
+  href: label-not-found.md
+- name: Error de sintaxis en expresión regular (JavaScript)
+  href: syntax-error-in-regular-expression-javascript.md
+- name: Se esperaba '(' (JavaScript)
+  href: expected-left-parenthesis-javascript.md
+- name: Se esperaba un dígito hexadecimal
+  href: expected-hexadecimal-digit.md
+- name: Se esperaba un objeto
+  href: object-expected.md
+- name: Referencia circular en el argumento de valor no admitida
+  href: circular-reference-in-value-argument-not-supported.md
+- name: La compilación condicional está desactiva
+  href: conditional-compilation-is-turned-off.md
+- name: Se esperaba 'var'
+  href: expected-var.md
+- name: Constante de cadena sin terminar (JavaScript)
+  href: unterminated-string-constant-javascript.md
+- name: Se esperaba una cadena
+  href: string-expected.md
+- name: Argumento reemplazante no válido
+  href: invalid-replacer-argument.md
+- name: '''with'' no está disponible en ECMA 327 Compact Profile'
+  href: with-not-available-in-the-ecma-327-compact-profile.md
+- name: Resumen de operadores (JavaScript)
+  href: operator-subtractsummary-javascript.md
+- name: Se esperaba un objeto miembro
+  href: object-member-expected.md
+- name: True (Palabra clave)
+  href: true-keyword.md
+- name: El objeto no es compatible con esta propiedad ni con este método
+  href: object-doesn-t-support-this-property-or-method.md
+- name: Se esperaba un booleano
+  href: boolean-expected.md
+- name: Se esperaba ';'
+  href: expected-semicolon.md
+- name: Se esperaba ')' (JavaScript)
+  href: expected-right-parenthesis-javascript.md
+- name: Se esperaba un objeto de argumentos o matriz
+  href: array-or-arguments-object-expected.md
+- name: Se esperaba ')' en la expresión regular (JavaScript)
+  href: expected-right-parenthesis-in-regular-expression-javascript.md
+- name: 'Se esperaba "\]" en la expresión regular (JavaScript)'
+  href: expected-right-square-bracket-in-regular-expression-javascript.md
+- name: La longitud de la matriz debe ser un entero positivo finito
+  href: array-length-must-be-a-finite-positive-integer.md
+- name: '''break'' no puede estar fuera del bucle'
+  href: can-t-have-break-outside-of-loop.md
+- name: El uso de una palabra clave para un identificador no es válido
+  href: the-use-of-a-keyword-for-an-identifier-is-invalid.md
+- name: '''return'' instrucción fuera de función'
+  href: return-statement-outside-of-function.md
+- name: El URI que se desea descodificar no tiene una codificación válida
+  href: the-uri-to-be-decoded-is-not-a-valid-encoding.md

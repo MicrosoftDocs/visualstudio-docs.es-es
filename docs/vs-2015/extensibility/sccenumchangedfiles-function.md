@@ -1,5 +1,5 @@
 ---
-title: SccEnumChangedFiles (función) | Microsoft Docs
+title: Función SccEnumChangedFiles | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 00ef98c93f02aa8e8a1b4ea53f1998d0ab6713a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200128"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles (Función)
@@ -38,27 +38,27 @@ SCCRTN SccEnumChangedFiles(
   
 #### <a name="parameters"></a>Parámetros  
  pContext  
- [in] El puntero de contexto de complemento de control de código fuente.  
+ de Puntero de contexto del complemento de control de código fuente.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
+ de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.  
   
  cFiles  
- [in] Número de nombres de archivo especificado en el `lpFileNames` matriz. También especifica el tamaño de `plIsFileDifferent` matriz.  
+ de Número de nombres de archivo especificados en la `lpFileNames` matriz. También especifica el tamaño de la `plIsFileDifferent` matriz.  
   
  lpFileNames  
- [in] Matriz de nombres de archivo local para comprobar.  
+ de Matriz de nombres de archivo local que se va a comprobar.  
   
  plIsFileDifferent  
- [in, out] Matriz de valores que indican el estado de la diferencia de cada archivo (matriz debe tener al menos `cFiles` entradas). Distinto de cero significa que el archivo es diferente.  
+ [in, out] Matriz de valores que indican el estado de la diferencia de cada archivo (la matriz debe tener al menos `cFiles` entradas). Distinto de cero significa que el archivo es diferente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Valor|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|Operación se completó correctamente.|  
+|SCC_OK|Operación completada correctamente.|  
 |SCC_UNSPECIFIEDERROR|Error genérico.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

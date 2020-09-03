@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b8b0683024e2881f76bb6c54d9420d351fced08a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668730"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
@@ -34,7 +34,7 @@ ms.locfileid: "72668730"
 Devenv permite establecer diversas opciones para el entorno de desarrollo integrado (IDE), así como compilar, depurar e implementar proyectos, desde la línea de comandos. Utilice estos modificadores para ejecutar el IDE desde un script o un archivo .bat (por ejemplo, un script de compilación nocturna) o para iniciar el IDE con una configuración determinada.
 
 > [!NOTE]
-> Para las tareas relacionadas con la compilación, se recomienda usar MSBuild en lugar de devenv. Para obtener más información, vea [Referencia de la línea de comandos](../../msbuild/msbuild-command-line-reference.md).
+> Para las tareas relacionadas con la compilación, se recomienda usar MSBuild en lugar de devenv. Para obtener más información, vea [referencia de la línea de comandos](../../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Debe ejecutar devenv como administrador para poder usar los modificadores [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).
@@ -68,7 +68,7 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 ## <a name="devenv-switches"></a>Modificadores de devenv
  Utilice los modificadores de línea de comandos siguientes para mostrar el IDE y realizar la tarea descrita.
 
-|Modificador de la línea de comandos|DESCRIPCIÓN|
+|Modificador de la línea de comandos|Descripción|
 |-------------------------|-----------------|
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|Inicia el IDE y ejecuta el comando especificado.|
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|Carga un archivo ejecutable de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] bajo el control del depurador. Este modificador no está disponible para los archivos ejecutables de [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Para obtener más información, vea [Iniciar automáticamente un proceso en el depurador](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
@@ -76,7 +76,7 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] y registra toda la actividad en el archivo de registro.|
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) o `/r`|Compila y ejecuta la solución especificada.|
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Compila y ejecuta la solución especificada, minimiza el IDE cuando se ejecuta la solución y cierra el IDE una vez finalizada la ejecución de la solución.|
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Hace que el IDE use las variables de entorno PATH, INCLUDE y LIB para la compilación de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] en lugar de la configuración especificada en la sección Directorios de VC++ de las opciones de **Proyectos** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Establecer la ruta de acceso y las variables de entorno para compilar desde la línea de comandos](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4).|
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Hace que el IDE use las variables de entorno PATH, INCLUDE y LIB para la compilación de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] en lugar de la configuración especificada en la sección Directorios de VC++ de las opciones de **Proyectos** del cuadro de diálogo **Opciones**. Para obtener más información, vea [establecer la ruta de acceso y las variables de entorno para las compilaciones de línea de comandos](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Abre los archivos especificados en una instancia en ejecución de esta aplicación. Si no hay ninguna instancia en ejecución, iniciará una nueva instancia con un diseño de ventanas simplificado.|
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Inicia una instancia del IDE de Visual Studio sin cargar el complemento especificado.|
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en modo seguro y solo carga el entorno y los servicios predeterminados, así como las versiones de paquetes de terceros suministradas.|
@@ -85,14 +85,14 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 
  Utilice los modificadores de la línea de comandos siguientes para realizar la tarea descrita. Estos modificadores de la línea de comandos no muestran el IDE.
 
-|Modificador de la línea de comandos|DESCRIPCIÓN|
+|Modificador de la línea de comandos|Descripción|
 |-------------------------|-----------------|
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|Muestra ayuda para los modificadores de devenv en la **ventana de símbolo del sistema**.<br /><br /> **Devenv /?**|
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Compila la solución o el proyecto especificado según la configuración de la solución especificada.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)|Elimina los archivos creado por el comando de compilación, sin afectar a los archivos de código fuente.<br /><br /> **Devenv myproj.csproj /clean**|
 |[/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)|Compila la solución, junto con los archivos necesario para la implementación, según la configuración de soluciones.<br /><br /> **Devenv myproj.csproj /deploy**|
 |[/Diff](../../ide/reference/diff.md)|Compara dos archivos.  Toma cuatro parámetros: SourceFile, TargetFile, SourceDisplayName (opcional), TargetDisplayName (opcional).|
-|[/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Registra las plantillas de proyecto o elemento incluidas en *\<VisualStudioInstallDir>* \Common7\IDE\ProjectTemplates o *\<VisualStudioInstallDir>* \Common7\IDE\ItemTemplates para que se pueda obtener acceso a ellas a través de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**.<br /><br /> **Devenv /InstallVSTemplates**|
+|[/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Registra las plantillas de proyecto o elemento que se encuentran en *\<VisualStudioInstallDir>* \Common7\IDE\ProjectTemplates o *\<VisualStudioInstallDir>* \Common7\IDE\ItemTemplates para que se pueda obtener acceso a ellas a través de los cuadros de diálogo **nuevo proyecto** y **Agregar nuevo elemento** .<br /><br /> **Devenv /InstallVSTemplates**|
 |[/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)|Permite especificar un archivo para recibir los errores al compilar.<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
 |[/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)|Proyecto que se va a compilar, limpiar o implementar. Solo se puede utilizar este modificador si también se ha indicado el modificador /build, /rebuild, /clean o /deploy.|
 |[/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)|Especifica la configuración de proyecto que se va a compilar o implementar. Solo se puede utilizar este modificador si también se ha indicado el modificador /project.|
@@ -101,5 +101,5 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 |[/Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|Notifica a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que combine los paquetes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en el sistema y compruebe la caché de MEF para detectar cualquier cambio.|
 |[/Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|Actualiza el archivo de solución especificado y todos sus archivos de proyecto, o el archivo de proyecto especificado, a los formatos actuales de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para estos archivos.|
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

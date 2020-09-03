@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547594"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restricciones de validación para modelos UML
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Ejecutar una restricción de validación
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> Ejecutar una restricción de validación
  A efectos de prueba, ejecute los métodos de validación en modo de depuración.
 
 #### <a name="to-test-the-validation-constraint"></a>Para probar la restricción de validación
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Los atributos `Export` y `ValidationMethod` correctos están adjuntados a los métodos de validación.
 
-    - `ValidationCategories.Menu`se incluye en el argumento para el `ValidationMethod` atributo y se compone de otros valores mediante el operador lógico or (&#124;).
+    - `ValidationCategories.Menu` se incluye en el argumento para el `ValidationMethod` atributo y se compone de otros valores mediante el operador lógico or (&#124;).
 
     - Los parámetros de todos los atributos `Import` y `Export` son válidos.
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Evaluación de la restricción
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> Evaluación de la restricción
  El método de validación debe determinar si la restricción de validación que desea aplicar es true o false. Si es true, no debería hacer nada. Si es false, debería notificar un error utilizando los métodos proporcionados por el parámetro `ValidationContext` .
 
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Coordinación de varias validaciones
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> Coordinación de varias validaciones
  Cuando se invoca la validación, por ejemplo, a través de un usuario desde un menú de diagrama, cada método de validación se aplica a cada elemento del modelo. Esto significa que, en una única invocación del marco de validación, el mismo método se puede aplicar muchas veces a distintos elementos.
 
  Esto presenta un problema para las validaciones que se encargan de las relaciones entre elementos. Puede escribir una validación que se inicie, por ejemplo, en un caso de uso y recorra las relaciones de **include** para comprobar que no hay ningún bucle. Sin embargo, cuando el método se aplica a cada caso de uso de un modelo que tiene muchos vínculos **include** , es probable que procese repetidamente las mismas áreas del modelo.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Obtiene un valor.|
 |`Context.GetValue<T>()`|Obtiene un valor del tipo especificado.|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalación y desinstalación de una extensión
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalación y desinstalación de una extensión
  Puede instalar una extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en su propio equipo y en otros equipos.
 
 #### <a name="to-install-an-extension"></a>Para instalar una extensión

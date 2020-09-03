@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281882"
 ---
 # <a name="pass-data-between-forms"></a>Pasar datos de un formulario a otro
@@ -47,7 +47,7 @@ Las tareas ilustradas en este tutorial incluyen:
 
 - Pasar datos de un formulario a otro.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -152,13 +152,13 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
     > [!NOTE]
     > Compruebe que la sintaxis de los parámetros sea correcta para su base de datos. Por ejemplo, en Microsoft Access, la cláusula WHERE tendría el siguiente aspecto: `WHERE CustomerID = ?`.
 
-6. Haga clic en **Siguiente**.
+6. Haga clic en **Next**.
 
 7. En **rellenar un nombre de DataTableMethod**, escriba `FillByCustomerID` .
 
 8. Desactive la opción **Devolver un DataTable** y haga clic en **Siguiente**.
 
-9. Haga clic en **Finalizar**.
+9. Haga clic en **Finalizar**
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Cree un método en Form2 para pasar datos a
 
@@ -184,7 +184,7 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-app"></a>Ejecución la aplicación
+## <a name="run-the-app"></a>Ejecución de la aplicación
 
 - Presione **F5** para ejecutar la aplicación.
 

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 115c0e733716994ba463eada938f8ff908612d0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547763"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Los métodos APTCA deben llamar solo a métodos APTCA
@@ -40,9 +40,9 @@ ms.locfileid: "85547763"
 
  Cuando el atributo APTCA está presente en un ensamblado de plena confianza y el ensamblado ejecuta código en otro ensamblado que no permite llamadores parcialmente confiables, es posible que se produzca un ataque de seguridad. Si dos métodos `M1` y `M2` cumplen las condiciones siguientes, los llamadores malintencionados pueden usar el método `M1` para omitir la petición de vínculo de plena confianza implícita que protege `M2` :
 
-- `M1`es un método público declarado en un ensamblado de plena confianza que tiene el atributo APTCA.
+- `M1` es un método público declarado en un ensamblado de plena confianza que tiene el atributo APTCA.
 
-- `M1`llama a un método `M2` fuera `M1` del ensamblado de.
+- `M1` llama a un método `M2` fuera `M1` del ensamblado de.
 
 - `M2`el ensamblado de no tiene el atributo APTCA y, por lo tanto, no debe ser ejecutado por ni en nombre de llamadores que sean de confianza parcial.
 

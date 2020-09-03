@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669708"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modificar diagramas de secuencia usando la API de UML
@@ -120,7 +120,7 @@ public void Execute (IMenuCommand command)
 
 - `ISequenceDiagram.UpdateShapePositions()` ajusta las posiciones de las formas que se han insertado o colocado recientemente, y sus formas vecinas.
 
-- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` vuelve a dibujar el diagrama entero. Puede usar el parámetro para especificar la reubicación de las líneas de vida, los mensajes o ambos.
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` vuelve a dibujar todo el diagrama. Puede usar el parámetro para especificar la reubicación de las líneas de vida, los mensajes o ambos.
 
   Esto es especialmente importante al insertar nuevos elementos o mover los elementos existentes, ya que no estarán en las posiciones correctas en el diagrama hasta que se realice una de estas operaciones. Tan solo necesita llamar una vez a una de estas operaciones al final de una serie de cambios.
 
@@ -246,7 +246,7 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
 
  La mayoría del resto de problemas se producen por puntos de inserción desalineados, que hacen que los nuevos mensajes o fragmentos se crucen con otros. Los síntomas pueden ser que no se lleve a cabo ningún cambio o se produzca una excepción. La excepción podría no producirse hasta que se realice la operación `UpdateShapePositions()` o `Layout()`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Microsoft. VisualStudio. UML. Interactions](/previous-versions/dd493373(v=vs.140))
 - [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

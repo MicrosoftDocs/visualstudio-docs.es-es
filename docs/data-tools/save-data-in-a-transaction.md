@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281635"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 
 En este tutorial se muestra cómo guardar los datos en una transacción mediante el <xref:System.Transactions> espacio de nombres. En este tutorial, creará una aplicación Windows Forms. Utilizará el Asistente para la configuración de orígenes de datos para crear un conjunto de datos para dos tablas en la base de datos de ejemplo Northwind. Agregará controles enlazados a datos a un formulario de Windows Forms y modificará el código para que el botón Guardar de BindingNavigator actualice la base de datos dentro de un TransactionScope.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -122,7 +122,7 @@ En la primera tabla colocada en el formulario, el código se agrega de forma pre
 
 1. Seleccione el botón **Guardar** en **CustomersBindingNavigator** (el botón con el icono de disquete).
 
-2. Reemplace el método `CustomersBindingNavigatorSaveItem_Click` con el código siguiente:
+2. Reemplace el método `CustomersBindingNavigatorSaveItem_Click` por el código siguiente:
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]
@@ -165,7 +165,7 @@ El orden para conciliar los cambios a los datos relacionados es el siguiente:
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 Presione **F5** para ejecutar la aplicación.
 

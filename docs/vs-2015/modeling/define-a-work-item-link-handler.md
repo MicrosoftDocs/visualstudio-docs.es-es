@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669936"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir un controlador de vínculos de elementos de trabajo
@@ -34,9 +34,9 @@ Puede crear una extensión de integración de Visual Studio que responda cuando 
 
 1. Cree un proyecto de biblioteca de clases, ya sea agregándolo a una solución VSIX existente o creando una nueva solución.
 
-    1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
+    1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
 
-    2. En **plantillas instaladas**, expanda **Visual C#**  o **Visual Basic**y, a continuación, en la columna central, haga clic en **biblioteca de clases**.
+    2. En **plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, en la columna central, haga clic en **biblioteca de clases**.
 
     3. Establezca **Solución** para indicar si desea crear una nueva solución o agregar un componente a una solución VSIX que ya tiene abierta.
 
@@ -44,13 +44,13 @@ Puede crear una extensión de integración de Visual Studio que responda cuando 
 
 2. A menos que la solución ya contenga uno, cree un proyecto VSIX.
 
-    1. En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto**.
+    1. En **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **nuevo proyecto**.
 
     2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Extensibilidad**. En la columna central, elija **Proyecto VSIX**.
 
 3. Establezca el proyecto VSIX como proyecto de inicio de la solución.
 
-    - En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.
+    - En Explorador de soluciones, en el menú contextual del Proyecto VSIX, elija **establecer como proyecto de inicio**.
 
 4. En **source. Extension. vsixmanifest**, en **contenido**, agregue el proyecto de biblioteca de clases como componente MEF.
 
@@ -60,11 +60,11 @@ Puede crear una extensión de integración de Visual Studio que responda cuando 
 
     3. En la pestaña **Activos** , elija **Nuevo**y, en el cuadro de diálogo, establezca:
 
-         **Tipo** = **Componente MEF**
+         **Tipo**  =  de **Componente MEF**
 
-         **Origen** = **Un proyecto de la solución actual**
+         **Origen**  =  de **Proyecto en la solución actual**
 
-         **Proyecto** = *Su proyecto de biblioteca de clases*
+         **Proyecto**  =  de *Su proyecto de biblioteca de clases*
 
 ## <a name="defining-the-work-item-link-handler"></a>Definir el controlador de vínculos de elementos de trabajo
  Realice todas las tareas siguientes en el proyecto de biblioteca de clases.
@@ -82,12 +82,12 @@ Puede crear una extensión de integración de Visual Studio que responda cuando 
 
  `System.ComponentModel.Composition`
 
- `System.Drawing`: utilizado por el código de ejemplo
+ `System.Drawing` : utilizado por el código de ejemplo
 
- Si no puede encontrar una de estas referencias en la pestaña **.net** del cuadro de diálogo **Agregar referencia** , use la pestaña examinar para encontrarla en la carpeta \Archivos de programa\Microsoft Visual Studio [versión] \Common7\IDE\PrivateAssemblies \\.
+ Si no puede encontrar una de estas referencias en la pestaña **.net** del cuadro de diálogo **Agregar referencia** , use la pestaña examinar para encontrarla en \Archivos de programa\Microsoft Visual Studio [versión] \Common7\IDE\PrivateAssemblies \\ .
 
 ### <a name="import-the-work-item-namespace"></a>Importar el espacio de nombres de elemento de trabajo
- En las **referencias**del proyecto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], agregue referencias a los siguientes ensamblados:
+ En las [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **referencias**del proyecto, agregue referencias a los siguientes ensamblados:
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-     **Solución de problemas**: Si no se inicia una nueva [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], asegúrese de que el Proyecto VSIX está establecido como proyecto de inicio de la solución.
+     **Solución de problemas**: Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia un nuevo, asegúrese de que el Proyecto VSIX esté establecido como proyecto de inicio de la solución.
 
 2. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra o cree un proyecto de modelado, y abra o cree un diagrama de modelado.
 
@@ -191,7 +191,7 @@ namespace WorkItems
 ## <a name="about-the-work-item-handler-code"></a>Acerca del código del controlador de elementos de trabajo
 
 ### <a name="listening-for-new-work-items"></a>Escuchar nuevos elementos de trabajo
- `OnWorkItemCreated` se invoca cuando el usuario decide crear un nuevo elemento de trabajo que se va a vincular a elementos del modelo. El código puede inicializar los campos de elementos de trabajo. El elemento de trabajo se presenta a continuación al usuario, que puede actualizar los campos y guardar el elemento de trabajo. El vínculo a un elemento del modelo no se crea hasta que el elemento de trabajo se ha guardado correctamente.
+ `OnWorkItemCreated` se llama a cuando el usuario decide crear un nuevo elemento de trabajo que se va a vincular a los elementos del modelo. El código puede inicializar los campos de elementos de trabajo. El elemento de trabajo se presenta a continuación al usuario, que puede actualizar los campos y guardar el elemento de trabajo. El vínculo a un elemento del modelo no se crea hasta que el elemento de trabajo se ha guardado correctamente.
 
 ```
 public void OnWorkItemCreated(
@@ -206,7 +206,7 @@ public void OnWorkItemCreated(
 ```
 
 ### <a name="listening-for-link-creation"></a>Realizar escuchas para la creación de vínculos
- `OnWorkItemLinked` se invoca inmediatamente después de crear un vínculo. Se invoca cuando el vínculo es a un nuevo elemento de trabajo o un elemento existente. Se llama una vez por cada elemento de trabajo.
+ `OnWorkItemLinked` se llama justo después de crear un vínculo. Se invoca cuando el vínculo es a un nuevo elemento de trabajo o un elemento existente. Se llama una vez por cada elemento de trabajo.
 
 ```
 public void OnWorkItemLinked
@@ -224,7 +224,7 @@ public void OnWorkItemLinked
 > Para que este ejemplo funcione, debe agregar una referencia de proyecto a `System.Drawing.dll` e importar el espacio de nombres `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Sin embargo, estas adiciones no son necesarias para otras implementaciones de `OnWorkItemLinked`.
 
 ### <a name="listening-for-link-removal"></a>Realizar escuchas para la eliminación de vínculos
- `OnWorkItemRemoved` se invoca una vez inmediatamente antes de que se elimine cada vínculo de elementos de trabajo. Si se elimina un elemento del modelo, se quitarán todos sus vínculos.
+ `OnWorkItemRemoved` se llama una vez antes de que se elimine cada vínculo de elemento de trabajo. Si se elimina un elemento del modelo, se quitarán todos sus vínculos.
 
 ```
 public void OnWorkItemRemoved
@@ -295,7 +295,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
   Para obtener más información sobre las referencias, vea [adjuntar cadenas de referencia a elementos del modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Microsoft. TeamFoundation. WorkItemTracking. Client. WorkItemStore](/previous-versions/visualstudio/visual-studio-2013/bb179850(v=vs.120))
 - [Vincular elementos de modelo con elementos de trabajo](../modeling/link-model-elements-and-work-items.md)

@@ -1,5 +1,5 @@
 ---
-title: SccGetEvents (función) | Microsoft Docs
+title: Función SccGetEvents | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d975570334aeab7c6709db92f3240a8e8d06b131
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200109"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents (Función)
@@ -37,31 +37,31 @@ SCCRTN SccGetEvents (
   
 #### <a name="parameters"></a>Parámetros  
  pvContext  
- [in] La estructura de contexto de complemento de control de origen.  
+ de Estructura de contexto del complemento de control de código fuente.  
   
  lpFileName  
- [in, out] Búfer donde el complemento de control de código fuente coloca el nombre de archivo devuelto (máximo de caracteres _MAX_PATH).  
+ [in, out] Búfer en el que el complemento de control de código fuente coloca el nombre de archivo devuelto (hasta _MAX_PATH caracteres).  
   
  lpStatus  
- [in, out] Devuelve el código de estado (consulte [código de estado de archivo](../extensibility/file-status-code-enumerator.md) posibles valores).  
+ [in, out] Devuelve el código de estado (vea el [código de estado de archivo](../extensibility/file-status-code-enumerator.md) para ver los posibles valores).  
   
  pnEventsRemaining  
- [in, out] Devuelve el número de entradas que quedan en la cola después de esta llamada. Si este número es grande, el llamador puede decidir llamar el [SccQueryInfo](../extensibility/sccqueryinfo-function.md) para obtener toda la información a la vez.  
+ [in, out] Devuelve el número de entradas que quedan en la cola después de esta llamada. Si este número es grande, el llamador puede decidir llamar a [SccQueryInfo](../extensibility/sccqueryinfo-function.md) para obtener toda la información de una vez.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Valor|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|Obtener eventos correctos.|  
-|SCC_E_OPNOTSUPPORTED|No se admite esta función.|  
+|SCC_OK|Los eventos se obtienen correctamente.|  
+|SCC_E_OPNOTSUPPORTED|Esta función no se admite.|  
 |SCC_E_NONSPECIFICERROR|Error no específico.|  
   
-## <a name="remarks"></a>Comentarios  
- Esta función se invoca durante el procesamiento inactivo para ver si ha habido las actualizaciones de estado para los archivos bajo control de código fuente. El complemento de control de código fuente mantiene el estado de todos los archivos que conoce y cada vez que un cambio de estado se indica mediante el complemento, el estado y el archivo asociado se almacenan en una cola. Cuando `SccGetEvents` se llama, la parte superior se recupera el elemento de la cola y se devuelve. Esta función está restringida para devolver información previamente almacenado en caché única y debe tener un procesamiento muy rápido (es decir, no de lectura del disco o pide al sistema de control de origen para el estado); en caso contrario, el rendimiento del IDE puede comenzar a degradar.  
+## <a name="remarks"></a>Observaciones  
+ Se llama a esta función durante el procesamiento inactivo para ver si ha habido actualizaciones de estado para los archivos bajo control de código fuente. El complemento de control de código fuente mantiene el estado de todos los archivos que conoce y, cada vez que el complemento indica un cambio de estado, el estado y el archivo asociado se almacenan en una cola. Cuando `SccGetEvents` se llama a, se recupera y se devuelve el elemento superior de la cola. Esta función está restringida para devolver solo información almacenada previamente en la memoria caché y debe tener un procesamiento muy rápido (es decir, no se lee el disco o se solicita el estado al sistema de control de código fuente); de lo contrario, es posible que el rendimiento del IDE empiece a degradarse.  
   
- Si no hay ninguna actualización de estado para el informe, el complemento de control de código fuente almacena una cadena vacía en el búfer señalado por `lpFileName`. En caso contrario, el complemento almacena el nombre de ruta de acceso completa del archivo para que la información de estado ha cambiado y devuelve el código de estado adecuado (uno de los valores que se detallan en [código de estado de archivo](../extensibility/file-status-code-enumerator.md)).  
+ Si no hay ninguna actualización de estado para el informe, el complemento de control de código fuente almacena una cadena vacía en el búfer señalado por `lpFileName` . De lo contrario, el complemento almacena el nombre completo de la ruta de acceso del archivo para el que ha cambiado la información de estado y devuelve el código de estado adecuado (uno de los valores detallados en el [código de estado de archivo](../extensibility/file-status-code-enumerator.md)).  
   
-## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Consulte también  
+ [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [Código de estado de archivo](../extensibility/file-status-code-enumerator.md)

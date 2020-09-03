@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bb4351d6b95c7aee929274135454ecf7aa91574
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669339"
 ---
 # <a name="xslt-default-templates"></a>Plantillas predeterminadas XSLT
@@ -23,5 +23,5 @@ Se usa una plantilla predeterminada durante el procesamiento XSLT si no hay ning
 
  El depurador XSLT ahora muestra el código de las plantillas predeterminadas XSLT. Cuando se ejecuta paso a paso una transformación XSLT, si se usa una plantilla predeterminada, el depurador muestra la plantilla predeterminada en una ventana. Esto permite analizar el código de la plantilla predeterminada y establecer puntos de interrupción en las instrucciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)

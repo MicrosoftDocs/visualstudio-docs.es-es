@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bc8946d62f47291a6e0e3f26032589bfdf0de16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669365"
 ---
 # <a name="xml-snippets"></a>Fragmentos de código XML
@@ -38,7 +38,7 @@ El editor XML ofrece una característica, denominada *fragmentos XML*, que permi
 </xs:element>
 ```
 
- Los fragmentos se pueden insertar de dos maneras. El comando **Insertar fragmento** inserta el fragmento de código XML en la posición del cursor. El comando **rodear con** ajusta el fragmento de código XML alrededor del texto seleccionado. Ambos comandos están disponibles en el submenú **IntelliSense** del menú **edición** o en el menú contextual del editor.
+ Los fragmentos se pueden insertar de dos maneras. El comando **Insertar fragmento** inserta el fragmento XML en la posición del cursor. El comando **Delimitar con** ajusta el fragmento XML alrededor del texto seleccionado. Ambos comandos están disponibles en el submenú **IntelliSense** del menú **edición** o en el menú contextual del editor.
 
  Para obtener más información, vea [Cómo: usar fragmentos de código XML](../xml-tools/how-to-use-xml-snippets.md).
 
@@ -52,5 +52,5 @@ El editor XML ofrece una característica, denominada *fragmentos XML*, que permi
 
  Para obtener más información, vea [Cómo: crear fragmentos de código XML](../xml-tools/how-to-create-xml-snippets.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editor XML](../xml-tools/xml-editor.md)

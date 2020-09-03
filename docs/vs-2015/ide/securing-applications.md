@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c590c88894c930f04caf0f7e8afd4eee298f077a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669943"
 ---
 # <a name="securing-applications"></a>Proteger aplicaciones
@@ -29,7 +29,7 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
 
  [Procedimientos recomendados para la seguridad](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Proporciona información sobre las características y los procedimientos de seguridad disponibles al trabajar en Visual C++.
 
- [NO está en la compilación: seguridad yC# programación (y Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) proporciona información sobre los tres aspectos principales de seguridad C# para Visual Basic y desarrolladores: privilegios, aplicaciones web y configuración de Visual Studio.
+ [No está en la compilación: seguridad y programación (C# y Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) Proporciona información sobre los tres principales problemas de seguridad para los desarrolladores de Visual Basic y C#: privilegios, aplicaciones web y el programa de instalación de Visual Studio.
 
 ## <a name="securing-mobile-applications"></a>Proteger aplicaciones móviles
  A medida que aumenta la popularidad de los dispositivos móviles, la seguridad de la información y de los datos en estos dispositivos se está convirtiendo en una cuestión de mayor importancia.
@@ -56,5 +56,5 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
 
  [Windows Forms Security](https://msdn.microsoft.com/library/932d438a-5285-46d8-a958-8c93d0ad6cae) Proporciona una descripción general de la implementación de seguridad en formularios Windows Forms.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Seguridad](../ide/security-in-visual-studio.md)

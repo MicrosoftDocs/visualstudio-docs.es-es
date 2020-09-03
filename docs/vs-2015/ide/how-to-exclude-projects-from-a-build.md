@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffa2b0fd8cab35fc73031d3ead8a5803558c2c07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667942"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Cómo: Excluir proyectos de una compilación
@@ -43,7 +43,7 @@ Para compilar una solución no es necesario compilar todos los proyectos que con
 
 1. En la barra de menús, elija **Compilar**, **Administrador de configuración**.
 
-2. En la lista **Configuración de soluciones activas**, pulse **\<Nueva>** .
+2. En la lista **Configuración de soluciones activas**, elija **\<New>** .
 
 3. En el cuadro **Nombre**, escriba un nombre para la configuración de soluciones.
 
@@ -55,5 +55,5 @@ Para compilar una solución no es necesario compilar todos los proyectos que con
 
 7. En la barra de menús, elija **Compilación**, **Recompilar solución**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [Cómo: crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md) [Cómo: compilar varias configuraciones simultáneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)

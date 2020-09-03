@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667116"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para obtener más información sobre la compatibilidad con plataformas de 64 bits en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Aplicaciones de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para obtener más información sobre la compatibilidad con la plataforma de 64 bits en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , vea [aplicaciones de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
 
 ## <a name="deploying-a-64-bit-application"></a>Implementar una aplicación de 64 bits
  Los temas siguientes tratan sobre la implementación de aplicaciones de 64 bits.
@@ -35,7 +35,7 @@ ms.locfileid: "72667116"
 ## <a name="configuring-projects-as-64-bit-applications"></a>Configurar los proyectos como aplicaciones de 64 bits
  Los temas siguientes tratan sobre la configuración de proyectos que se van a compilar en aplicaciones de 64 bits.
 
-- [Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)
+- [Cómo: configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>Depurar una aplicación de 64 bits
  La función Editar y continuar no funciona cuando [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] se ejecuta en un sistema operativo Windows de 64 bits. Los temas siguientes tratan sobre la depuración de aplicaciones de 64 bits.
@@ -46,5 +46,5 @@ ms.locfileid: "72667116"
 
 - [Usar archivos de volcado de memoria](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>Otras referencias
- [Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)

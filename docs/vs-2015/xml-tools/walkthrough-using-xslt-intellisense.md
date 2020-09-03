@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b65f2279270be0d5baef16d6d06e35a7fb0b854
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669541"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Usar XSLT de IntelliSense
+# <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Uso de XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los valores de algunos atributos.
@@ -162,5 +162,5 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
 
      Observe cómo la lista de prefijos ha aparecido en los atributos `stylesheet-prefix` y `result-prefix` del elemento `xsl:namespace-alias`.
 
-## <a name="see-also"></a>Vea también
- [Características de IntelliSense del Editor XML](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>Consulte también
+ [Características de IntelliSense del editor XML](../xml-tools/xml-editor-intellisense-features.md)

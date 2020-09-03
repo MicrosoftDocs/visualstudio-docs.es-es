@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cc49b096bc22a7f95ee1a95e7cbd0b1f2f8603cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669433"
 ---
 # <a name="xml-editor"></a>Editor XML
@@ -72,5 +72,5 @@ El Editor XML se basa en el [!INCLUDE[msCoName](../includes/msconame-md.md)] Edi
 
  [Referencia de estándares XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Proporciona información sobre las tecnologías XML, como XML, definición de tipo de documento (DTD), lenguaje de definición de esquemas XML (XSD) y XSLT.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

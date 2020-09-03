@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Add ? Microsoft Docs
+title: 'IDebugMemoryContext2:: Add | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a21fa2ec6d48bb1d6bf17bbc0d2ebf0d90a25a9f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727481"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
@@ -44,10 +44,10 @@ int Add(
 
 ## <a name="parameters"></a>Parámetros
 `dwCount`\
-[en] El valor que se va a agregar al contexto actual.
+de Valor que se va a agregar al contexto actual.
 
 `ppMemCxt`\
-[fuera] Devuelve un nuevo [iDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto.
+enuncia Devuelve un nuevo objeto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
@@ -55,7 +55,7 @@ int Add(
 ## <a name="remarks"></a>Observaciones
  Un contexto de memoria es una dirección, por lo que agregar un valor a una dirección genera una nueva dirección que requiere una nueva interfaz de contexto.
 
- Este método siempre debe producir un nuevo contexto, incluso si la dirección resultante está fuera del espacio de memoria asociado a este contexto. La única excepción a esto es si no se `ppMemCxt` puede asignar memoria para el nuevo contexto o si es un valor nulo (que es un error).
+ Este método siempre debe generar un nuevo contexto, incluso si la dirección resultante está fuera del espacio de memoria asociado a este contexto. La única excepción es si no se puede asignar memoria para el nuevo contexto o si `ppMemCxt` es un valor null (que es un error).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

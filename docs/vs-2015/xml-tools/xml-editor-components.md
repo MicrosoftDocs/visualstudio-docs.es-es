@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbbe5e1590cdc32f19c6c9131af629f97a75a6b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669480"
 ---
 # <a name="xml-editor-components"></a>Componentes del Editor XML
@@ -33,5 +33,5 @@ En esta sección se describen las ventanas y los cuadros de diálogo del Editor 
 ## <a name="related-sections"></a>Secciones relacionadas
  [Cómo: establecer opciones generales del editor](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2) Describe cómo establecer la configuración general, como la visualización, la finalización de instrucciones, etc.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editor XML](../xml-tools/xml-editor.md)

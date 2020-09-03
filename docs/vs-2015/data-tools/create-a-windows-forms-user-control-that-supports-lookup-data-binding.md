@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48891f82667270f04af49c60122c63f8d3a943f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668774"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos de búsqueda
@@ -114,7 +114,7 @@ Cuando muestra datos en formularios Windows Forms, puede elegir controles existe
 
 1. En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
@@ -160,7 +160,7 @@ Cuando muestra datos en formularios Windows Forms, puede elegir controles existe
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Para crear controles enlazados en el Windows Form
 
-- Arrastre el nodo **Orders** desde la ventana **orígenes de datos** hasta Windows Forms y compruebe que el control **LookupBox** se usa para mostrar los datos de la columna `CustomerID`.
+- Arrastre el nodo **Orders** desde la ventana **orígenes de datos** hasta Windows Forms y compruebe que el control **LookupBox** se usa para mostrar los datos de la `CustomerID` columna.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Enlazar el control para buscar CompanyName desde la tabla customers
 
@@ -170,7 +170,7 @@ Cuando muestra datos en formularios Windows Forms, puede elegir controles existe
 
      Así configura el enlace de datos para mostrar el valor `CompanyName` de la tabla `Customers` a la vez que mantiene el valor `CustomerID` de la tabla `Orders`.
 
-## <a name="running-the-application"></a>Ejecutar la aplicación
+## <a name="running-the-application"></a>Ejecución de la aplicación
 
 #### <a name="to-run-the-application"></a>Para ejecutar la aplicación
 
@@ -178,5 +178,5 @@ Cuando muestra datos en formularios Windows Forms, puede elegir controles existe
 
 - Navegue por algunos registros y compruebe que `CompanyName` aparece en el control `LookupBox`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

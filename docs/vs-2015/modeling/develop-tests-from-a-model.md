@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b9fec6954706fcecb1281650a8db3d85f08fbd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669785"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
@@ -42,7 +42,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
  Puede crear y mantener una relación entre las pruebas del sistema y un modelo de requisitos. Para establecer esta relación, escriba las pruebas que correspondan a los elementos principales del modelo de requisitos. Visual Studio le permitirá crear vínculos entre las pruebas y los elementos del modelo para ayudarle a mantener esa relación. Para obtener más información sobre los modelos de requisitos, vea [requisitos de usuario de modelo](../modeling/model-user-requirements.md).
 
 ### <a name="write-tests-for-each-use-case"></a>Escribir pruebas para cada caso de uso
- Si usa [!INCLUDE[TCMext](../includes/tcmext-md.md)], puede crear un grupo de pruebas para cada caso de uso definido en el modelo de requisitos. Por ejemplo, si tiene un caso de uso para pedir un menú que incluye crear un pedido y agregar un elemento al pedido, puede crear pruebas tanto para el caso general como para los casos de uso más detallados. Para obtener más información sobre los casos de uso, vea diagramas de casos de uso de [UML: Instrucciones ](../modeling/uml-use-case-diagrams-guidelines.md).
+ Si usa [!INCLUDE[TCMext](../includes/tcmext-md.md)], puede crear un grupo de pruebas para cada caso de uso definido en el modelo de requisitos. Por ejemplo, si tiene un caso de uso para pedir un menú que incluye crear un pedido y agregar un elemento al pedido, puede crear pruebas tanto para el caso general como para los casos de uso más detallados. Para obtener más información sobre los casos de uso, vea [diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md).
 
  Estas directrices pueden resultar útiles:
 
@@ -56,7 +56,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 
   - Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.
 
-- Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, una prueba de una función aritmética simple podría ser: Entrada 4; Compruebe que la salida sea 2. En su lugar, diseñe el script como: Elija una entrada; Multiplique la salida por sí misma y compruebe que el resultado sea la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.
+- Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, la prueba de una función aritmética sencilla podría ser: escribir 4; comprobar que el resultado es 2. En lugar de ello, diseñe el script del siguiente modo: elegir una entrada; multiplicar la salida por sí misma y comprobar que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.
 
 #### <a name="linking-tests-to-use-cases"></a>Vincular pruebas a casos de uso
  Si usa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] para diseñar y ejecutar las pruebas, puede organizar las pruebas en elementos de trabajo de requisito, caso de uso o caso de usuario. Puede vincular estos elementos de trabajo a casos de uso en el modelo. Esto le permite realizar un seguimiento rápido de los cambios en los requisitos de las pruebas y le ayuda a supervisar el progreso de cada caso de uso.
@@ -113,7 +113,7 @@ Assert (countAfter == countBefore = 1);
 
  Una regla invariable de este tipo rige no sólo todos los casos de uso que están definidos actualmente, sino también los casos de uso que se definirán en el futuro. Por lo tanto, resulta útil escribirla por separado de cualquier caso de uso y probarla independientemente de los casos de uso.
 
- Puede escribir una regla de negocio invariable como un comentario en un diagrama de clases. Para más información, vea [Diagramas de clases de UML: Instrucciones ](../modeling/uml-class-diagrams-guidelines.md).
+ Puede escribir una regla de negocio invariable como un comentario en un diagrama de clases. Para obtener más información, vea [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md).
 
  Puede vincular las pruebas a una regla de negocio. Para hacerlo, vincule el comentario a un requisito o a un elemento de trabajo de caso de usuario, de después podrá vincular a un conjunto de pruebas de [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]. Para obtener más información, vea [adjuntar casos de prueba a elementos del modelo](#Attaching).
 
@@ -127,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  Intente comprobar el estado del sistema después de cada mensaje o acción. Esto podría requerir de instrumentación adicional.
 
 ## <a name="deriving-subsystem-tests-from-models"></a>Derivar pruebas de subsistemas a partir modelos
- En el diseño de alto nivel de un sistema grande, puede identificar componentes o subsistemas. Se trata de componentes que pueden diseñarse de forma independiente o que se encuentran en equipos distintos o son módulos reusables que pueden combinarse de muchas maneras. Para obtener más información, vea diagramas de componentes de [UML: Instrucciones ](../modeling/uml-component-diagrams-guidelines.md).
+ En el diseño de alto nivel de un sistema grande, puede identificar componentes o subsistemas. Se trata de componentes que pueden diseñarse de forma independiente o que se encuentran en equipos distintos o son módulos reusables que pueden combinarse de muchas maneras. Para obtener más información, vea [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md).
 
  Puede aplicar a cada componente principal los mismos principios que usa para todo el sistema. En un proyecto grande, cada componente puede tener su propio modelo de requisitos. En proyectos más pequeños, se puede crear un modelo arquitectónico o un diseño de alto nivel para mostrar los principales componentes y sus interacciones. Para obtener más información, vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).
 
@@ -147,10 +147,10 @@ Assert (countAfter == countBefore = 1);
 
  Desde el punto de vista de las pruebas, un modelo de requisitos puede considerarse como una forma abreviada de realizar pruebas. Por ello, es importante mantener la relación entre las pruebas y el modelo a lo largo del proyecto.
 
-## <a name="Attaching"></a>Adjuntar casos de prueba a elementos del modelo
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Adjuntar casos de prueba a elementos del modelo
  Si el proyecto usa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], puede vincular las pruebas a los elementos del modelo. Esto le permite buscar rápidamente las pruebas afectadas por un cambio en los requisitos y le ayuda a controlar en qué medida se ha completado un requisito.
 
- Puede vincular las pruebas a todos los tipos de elemento. A continuación se muestran algunos ejemplos:
+ Puede vincular las pruebas a todos los tipos de elemento. Estos son algunos ejemplos:
 
 - Vincule un caso de uso a las pruebas que lo verifican.
 
@@ -174,5 +174,5 @@ Assert (countAfter == countBefore = 1);
 
 3. Agregue al conjunto de pruebas casos de prueba que verifiquen el requisito expresado en el elemento de modelo.
 
-## <a name="see-also"></a>Vea también
- [Creación de modelos para su aplicación](../modeling/create-models-for-your-app.md) [Requisitos de usuario de modelo](../modeling/model-user-requirements.md) [Modelado de la arquitectura de su aplicación](../modeling/model-your-app-s-architecture.md) [Análisis y modelado de arquitecturas](../modeling/analyze-and-model-your-architecture.md)
+## <a name="see-also"></a>Consulte también
+ [Crear modelos para los requisitos de usuario de modelo de aplicación](../modeling/create-models-for-your-app.md) [Model user requirements](../modeling/model-user-requirements.md) modelo de arquitectura de [análisis y modelado](../modeling/analyze-and-model-your-architecture.md) [de arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)

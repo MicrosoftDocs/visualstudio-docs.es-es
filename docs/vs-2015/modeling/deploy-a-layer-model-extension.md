@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c11c952223854ff1b4b963e24615e7abe831496
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669862"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implementar una extensión del modelo de capas
@@ -29,9 +29,9 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
 
 #### <a name="to-install-the-extension"></a>Para instalar la extensión
 
-1. En el proyecto que contiene **source. vsix. manifest**, abra **bin \\ \\** * en el explorador de archivos.
+1. En el proyecto que contiene **source. vsix. manifest**, Abra **bin \\ \\ *** en el explorador de archivos.
 
-2. Copie el archivo **\*. vsix** en el equipo en el que desea instalar la extensión.
+2. Copie el archivo ** \* . vsix** en el equipo en el que desea instalar la extensión.
 
 3. En el equipo de destino, haga doble clic en el * archivo .vsix en el Explorador de Windows.
 
@@ -44,9 +44,9 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
 2. Haga clic en el nombre de la extensión y, a continuación, haga clic en **desinstalar**.
 
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalar una extensión en un servidor de Team Foundation Build Server
- Los servidores de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] no tienen normalmente Visual Studio instalado y, por lo tanto, VSIX no se puede instalar haciendo doble clic en él. La instalación de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] incluye algunos componentes que permiten ejecutar una extensión VSIX, pero esta se debe instalar manualmente.
+ [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] Normalmente, los servidores no tienen instalado Visual Studio y, por lo tanto, no se puede instalar VSIX haciendo doble clic en él. La instalación de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] incluye algunos componentes que permiten ejecutar una extensión VSIX, pero esta se debe instalar manualmente.
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Para instalar la extensión por capas en un servidor de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] Server
+#### <a name="to-install-your-layer-extension-on-a-esprbuild-server"></a>Para instalar la extensión por capas en un servidor de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] Server
 
 1. Copie los archivos **. vsix** del equipo de desarrollo en el [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] equipo.
 

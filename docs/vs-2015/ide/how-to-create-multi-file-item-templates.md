@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e70039f361ac3410a8ddcccb0f139d8bdcb32ed9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668091"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Cómo: Crear plantillas de elementos de varios archivos
@@ -53,9 +53,9 @@ Puede que las plantillas de elementos solo especifiquen un elemento, pero a vece
 
      Cuando se agrega un elemento derivado de esta plantilla a un proyecto, los nombres de archivo se basarán en el nombre que ha escrito el usuario en el cuadro de diálogo **Agregar nuevo elemento**.
 
-3. Seleccione los archivos que se incluirán en la plantilla, haga clic con el botón derecho en la selección, elija **Enviar a** y, después, **Carpeta comprimida (en zip)** . Los archivos seleccionados se comprimen en un archivo .zip.
+3. Seleccione los archivos que se incluirán en la plantilla, haga clic con el botón derecho en la selección, elija **Enviar a** y, después, **Carpeta comprimida (en zip)**. Los archivos seleccionados se comprimen en un archivo .zip.
 
-4. Coloque el archivo .zip en la ubicación de la plantilla de elemento del usuario. De forma predeterminada, el directorio es \Mis documentos\Visual Studio *Versión*\Templates\ItemTemplates\\. Para más información, vea [Cómo: Localizar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+4. Coloque el archivo .zip en la ubicación de la plantilla de elemento del usuario. De forma predeterminada, el directorio es \Mis documentos\Visual Studio *Versión*\Templates\ItemTemplates\\. Para obtener más información, vea [Cómo: buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo siguiente, se muestra una plantilla de Windows Forms de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cuando se crea un elemento basado en esta plantilla, los nombres de los tres archivos creados coincidirán con el nombre especificado en el cuadro de diálogo **Agregar nuevo elemento**.
@@ -83,5 +83,5 @@ Puede que las plantillas de elementos solo especifiquen un elemento, pero a vece
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md) [Cómo: crear plantillas de elementos](../ide/how-to-create-item-templates.md) [parámetros de plantilla](../ide/template-parameters.md) [Cómo: sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md)

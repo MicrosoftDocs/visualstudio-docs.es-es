@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59cc8536707744543490bc3e91b85545e4cd4007
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668854"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Cómo: Administrar el ajuste de línea en el editor
@@ -28,7 +28,7 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
  Para obtener más información, vea [Cómo: Establecer opciones generales del editor](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **ayuda** , en función de la edición o configuración activa. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="procedure"></a>Procedimiento
 
@@ -51,5 +51,5 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
     > [!NOTE]
     > Estas flechas de aviso no se agregan a su código: solo para fines de visualización.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Personalización del cuadro de](../../ide/customizing-the-editor.md) [diálogo Opciones del editor de texto](../../ide/reference/text-editor-options-dialog-box.md) del editor [escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)

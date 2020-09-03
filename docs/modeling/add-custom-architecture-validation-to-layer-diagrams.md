@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546930"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de dependencia
@@ -125,7 +125,7 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
 
 9. Para instalar VSIX en la instancia principal de Visual Studio, o en otro equipo, busque el archivo **. vsix** en el directorio **bin** del Proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.
 
-## <a name="programming-validation"></a><a name="programming"></a>Programación de la validación
+## <a name="programming-validation"></a><a name="programming"></a> Programación de la validación
 
 Para definir una extensión de validación de capas, defina una clase que tenga las siguientes características:
 
@@ -194,7 +194,7 @@ Cada nodo y cada vínculo tiene una o más categorías que especifican el tipo d
 
 Los vínculos entre las capas y los elementos del código tienen la categoría "Representa".
 
-## <a name="debugging-validation"></a><a name="debugging"></a>Depuración de validación
+## <a name="debugging-validation"></a><a name="debugging"></a> Depuración de validación
 
 Para depurar la extensión de validación de capas, presione CTRL+F5. Se abre una instancia experimental de Visual Studio. En esta instancia, abra o cree un modelo de capas. Este modelo debe estar asociado a código y debe tener al menos una dependencia.
 
@@ -226,7 +226,7 @@ Inicie siempre la instancia experimental presionando CTRL+F5 (**Iniciar sin depu
 
 Para instalar la extensión de validación en un equipo en el que está instalado una versión adecuada de Visual Studio, abra el archivo VSIX en el equipo de destino.
 
-## <a name="example-code"></a><a name="example"></a>Código de ejemplo
+## <a name="example-code"></a><a name="example"></a> Código de ejemplo
 
 ```csharp
 using System;

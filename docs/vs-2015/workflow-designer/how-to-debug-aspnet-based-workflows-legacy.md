@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3bed38f5229cb489f663878759517480b48302c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668666"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Cómo: Depurar los flujos de trabajo basados en ASP.NET (Heredado)
@@ -28,7 +28,7 @@ En este tema se describe cómo depurar aplicaciones [!INCLUDE[vstecasp](../inclu
 
 ### <a name="to-debug-an-aspnet-based-workflow"></a>Para depurar un flujo de trabajo basado en ASP.NET
 
-1. Habilite la depuración para la aplicación ASP.NET estableciendo **debug = true** en el archivo Web. config.
+1. Habilite la depuración para la aplicación ASP.NET estableciendo **debug = true** en el archivo de web.config.
 
 2. Establezca la biblioteca de flujos de trabajo como proyecto de inicio y establezca puntos de interrupción en el flujo de trabajo.
 
@@ -52,5 +52,5 @@ En este tema se describe cómo depurar aplicaciones [!INCLUDE[vstecasp](../inclu
 
 10. Abra la página web predeterminada en un explorador e inicie el flujo de trabajo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Invocar el depurador de Visual Studio para Windows Workflow Foundation (heredado)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [Cómo: establecer puntos de interrupción en flujos de trabajo (heredado)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [Depurar flujos de trabajo heredados](../workflow-designer/debugging-legacy-workflows.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b1d96224be13a12dcaadb394584f8441c7bd1934
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667520"
 ---
 # <a name="metadata-as-source"></a>Metadatos como origen
@@ -33,7 +33,7 @@ Metadatos como origen permite ver metadatos que aparecen como código fuente de 
  Puede ver los metadatos como origen en el Editor de código o la ventana **Definición de código** .
 
 ## <a name="viewing-metadata-as-source-in-the-code-editor"></a>Ver metadatos como origen en el Editor de código
- Al ejecutar el comando **Ir a definición** para un elemento cuyo código fuente no está disponible, un documento con pestañas que contiene una vista de los metadatos de ese elemento, que se muestra como origen, aparece en el Editor de código. El nombre del tipo, seguido de **[desde metadatos]** , aparece en la pestaña del documento.
+ Al ejecutar el comando **Ir a definición** para un elemento cuyo código fuente no está disponible, un documento con pestañas que contiene una vista de los metadatos de ese elemento, que se muestra como origen, aparece en el Editor de código. El nombre del tipo, seguido de **[desde metadatos]**, aparece en la pestaña del documento.
 
  Por ejemplo, si ejecuta el comando **Ir a definición** comando para <xref:System.Console>, los metadatos de <xref:System.Console> aparecen en el Editor de código como código fuente de C# similar a su declaración, pero sin una implementación.
 
