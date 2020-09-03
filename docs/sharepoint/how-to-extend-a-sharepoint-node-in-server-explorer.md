@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015028"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Cómo: extender un nodo de SharePoint en Explorador de servidores

@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905760"
 ---
 # <a name="how-to-provide-a-service"></a>Cómo: proporcionar un servicio
 Un VSPackage puede proporcionar servicios que otros VSPackages pueden utilizar. Para proporcionar un servicio, un VSPackage debe registrar el servicio con Visual Studio y agregar el servicio.
 
- La <xref:Microsoft.VisualStudio.Shell.Package> clase implementa <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> y <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer>contiene métodos de devolución de llamada que proporcionan servicios a petición.
+ La <xref:Microsoft.VisualStudio.Shell.Package> clase implementa <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> y <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer> contiene métodos de devolución de llamada que proporcionan servicios a petición.
 
  Para obtener más información acerca de los servicios, consulte [Service Essentials](../extensibility/internals/service-essentials.md) .
 
@@ -138,7 +138,7 @@ Un VSPackage puede proporcionar servicios que otros VSPackages pueden utilizar. 
 
      El valor de `helloString` debe ser "Hello".
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: obtener un servicio](../extensibility/how-to-get-a-service.md)
 - [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)
 - [Aspectos básicos del servicio](../extensibility/internals/service-essentials.md)

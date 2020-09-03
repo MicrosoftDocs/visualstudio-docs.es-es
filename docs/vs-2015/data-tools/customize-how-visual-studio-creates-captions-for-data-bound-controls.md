@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c0e54f68ab7e34f1cfb6abb228f552cc3792a8b7
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476919"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
@@ -49,12 +49,12 @@ Al arrastrar elementos desde la [ventana orígenes de datos](https://msdn.micros
 
 |Elemento del registro|Valor predeterminado|Explicación|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124;_+|Coincide con un carácter en minúscula seguido de un carácter en mayúsculas o un carácter de subrayado.|
+|**SmartCaptionExpression**|( \\ \P{ll}) ( \\ \p{Lu}) &#124;_ +|Coincide con un carácter en minúscula seguido de un carácter en mayúsculas o un carácter de subrayado.|
 |**SmartCaptionReplacement**|$1 $2|$1 representa los caracteres coincidentes en los primeros paréntesis de la expresión y el $2 representa los caracteres coincidentes en el segundo paréntesis. El reemplazo es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
-|**SmartCaptionSuffix**|:|Representa un carácter anexado a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo lo hace `Company Name:`|
+|**SmartCaptionSuffix**|:|Representa un carácter anexado a la cadena devuelta. Por ejemplo, si el título es `Company Name` , el sufijo lo hace `Company Name:`|
 
 > [!CAUTION]
-> Debe tener mucho cuidado al realizar cualquier acción en el editor del registro. Realice una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el editor del registro, puede ocasionar problemas graves que pueden requerir la reinstalación del sistema operativo. Microsoft no garantiza que se puedan resolver los problemas que se produzcan con el editor del registro de forma incorrecta. Utilice el editor del registro bajo su responsabilidad.
+> Debe tener mucho cuidado al realizar cualquier acción en el editor del registro. Realice una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el editor del registro, puede ocasionar problemas graves que pueden requerir la reinstalación del sistema operativo. Microsoft no garantiza que se puedan resolver los problemas que se produzcan con el editor del registro de forma incorrecta. Usa el Editor del Registro bajo tu propia responsabilidad.
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar el comportamiento de los subtítulos inteligentes de la ventana orígenes de datos
 
@@ -70,13 +70,13 @@ Al arrastrar elementos desde la [ventana orígenes de datos](https://msdn.micros
 
 6. Expanda el nodo de **VisualStudio** .
 
-7. Haga clic con el botón secundario en el nodo **10,0** y cree una nueva **clave** denominada `Data Designers`.
+7. Haga clic con el botón secundario en el nodo **10,0** y cree una nueva **clave** denominada `Data Designers` .
 
-8. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionExpression`.
+8. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionExpression` .
 
-9. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionReplacement`.
+9. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionReplacement` .
 
-10. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionSuffix`.
+10. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionSuffix` .
 
 11. Haga clic con el botón secundario en el elemento **SmartCaptionExpression** y seleccione **modificar**.
 
@@ -106,13 +106,13 @@ Al arrastrar elementos desde la [ventana orígenes de datos](https://msdn.micros
 
 6. Expanda el nodo de **VisualStudio** .
 
-7. Haga clic con el botón secundario en el nodo **10,0** y cree una nueva **clave** denominada `Data Designers`.
+7. Haga clic con el botón secundario en el nodo **10,0** y cree una nueva **clave** denominada `Data Designers` .
 
-8. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionExpression`.
+8. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionExpression` .
 
-9. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionReplacement`.
+9. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionReplacement` .
 
-10. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionSuffix`.
+10. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree un nuevo **valor de cadena** denominado `SmartCaptionSuffix` .
 
 11. Haga clic con el botón secundario en el elemento **SmartCaptionExpression** y seleccione **modificar**.
 

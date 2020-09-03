@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c884eb569d5682326d2dc667363f991467171386
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533359"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: No ocultar métodos de clase base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotHideBaseClassMethods|
 |Identificador de comprobación|CA1061|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283026"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Agregar validación a un conjunto de datos de n niveles
@@ -58,7 +58,7 @@ End Sub
 2. Haga doble clic en la columna que desee validar. Esta acción crea el controlador de eventos <xref:System.Data.DataTable.ColumnChanging>.
 
     > [!NOTE]
-    > El Diseñador de DataSet no crea ningún controlador de eventos automáticamente para el evento de C#. El código necesario para controlar el evento en C# se incluye en la sección siguiente. `SampleColumnChangingEvent`se crea y, a continuación, se enlaza al <xref:System.Data.DataTable.ColumnChanging> evento en el <xref:System.Data.DataTable.EndInit%2A> método.
+    > El Diseñador de DataSet no crea ningún controlador de eventos automáticamente para el evento de C#. El código necesario para controlar el evento en C# se incluye en la sección siguiente. `SampleColumnChangingEvent` se crea y, a continuación, se enlaza al <xref:System.Data.DataTable.ColumnChanging> evento en el <xref:System.Data.DataTable.EndInit%2A> método.
 
 3. Agregue el código para comprobar que `e.ProposedValue` contiene datos que son compatibles con los requisitos de la aplicación. Si el valor propuesto no es aceptable, establezca la columna para indicar que contiene un error.
 

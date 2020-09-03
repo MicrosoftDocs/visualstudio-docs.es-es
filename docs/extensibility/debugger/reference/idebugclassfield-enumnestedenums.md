@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedEnums ? Microsoft Docs
+title: 'IDebugClassField:: EnumNestedEnums | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 38ee3ccd1ffd3130bc918da18c631cf08683f064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734408"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
@@ -41,15 +41,15 @@ int EnumNestedEnums(
 
 ## <a name="parameters"></a>Parámetros
 `ppEnum`\
-[fuera] Devuelve un [objeto IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa la lista de enumeraciones anidadas. Devuelve un valor nulo si no hay enumeraciones anidadas.
+enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa la lista de enumeraciones anidadas. Devuelve un valor NULL si no hay enumeraciones anidadas.
 
 ## <a name="return-value"></a>Valor devuelto
-Si se realiza correctamente, devuelve S_OK o devuelve S_FALSE si no hay enumeradores anidados. De lo contrario, devuelve un código de error.
+Si es correcto, Devuelve S_OK o devuelve S_FALSE si no hay enumeradores anidados. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
-Cada elemento de la enumeración es un [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) objeto que describe una enumeración anidada.
+Cada elemento de la enumeración es un objeto [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) que describe una enumeración anidada.
 
-Una enumeración declarada dentro de una clase se considera una enumeración anidada. Por ejemplo, en estas circunstancias:
+Una enumeración declarada dentro de una clase se considera una enumeración anidada. Por ejemplo, dado:
 
 ```
 class RootClass {
@@ -57,7 +57,7 @@ class RootClass {
 };
 ```
 
-El `EnumNestedEnums` método devolvería un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que contiene un [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) objeto que representa la `NestedEnum` enumeración.
+El `EnumNestedEnums` método devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que contiene un objeto [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) que representa la `NestedEnum` enumeración.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

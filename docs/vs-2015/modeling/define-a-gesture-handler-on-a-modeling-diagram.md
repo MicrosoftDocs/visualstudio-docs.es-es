@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533073"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir un controlador de gestos en un diagrama de modelado
@@ -230,7 +230,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
          **Proyecto**  =  de *Su proyecto de biblioteca de clases*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Ejecutar el controlador de gestos
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> Ejecutar el controlador de gestos
  Para fines de prueba, ejecute el controlador de gestos en modo de depuración.
 
 #### <a name="to-test-the-gesture-handler"></a>Para probar el controlador de gestos
@@ -265,7 +265,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
 - No hay ninguna funcionalidad integrada ya definida para este tipo de elemento de destino y colocado.
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implementar el controlador de gestos
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> Implementar el controlador de gestos
 
 ### <a name="the-gesture-handler-methods"></a>Los métodos del controlador de gestos
  La clase del controlador de gestos implementa y exporta <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Los métodos que necesita definir son los siguientes:
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Para obtener más información, vea [navegar por el modelo UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalación y desinstalación de una extensión
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalación y desinstalación de una extensión
  Puede instalar una extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en su propio equipo y en otros equipos.
 
 #### <a name="to-install-an-extension"></a>Para instalar una extensión

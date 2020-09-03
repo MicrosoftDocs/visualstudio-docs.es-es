@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.topic: overview
 ms.openlocfilehash: 9ef6ecdb5dce8d337aa74232a0bffa8a63f87ea8
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939042"
 ---
 # <a name="projects-and-solutions"></a>Proyectos y soluciones
@@ -25,6 +25,6 @@ Para crear un nuevo proyecto o solución, vea el artículo [Creación de nuevos 
 
 Puede administrar las propiedades de proyectos y soluciones si hace doble clic en el nombre del proyecto o la solución o si hace clic con el botón derecho y va a **Opciones**. Se proporciona más información sobre estas opciones en el artículo [Administrar propiedades de soluciones y proyectos](managing-solutions-and-project-properties.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Soluciones y proyectos en Visual Studio (en Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

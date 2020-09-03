@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915983"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Cómo: migrar proyectos de extensibilidad a Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Migración de proyectos de extensibilidad a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aquí se muestra cómo actualizar la extensión.  
@@ -29,15 +29,15 @@ Aquí se muestra cómo actualizar la extensión.
   
 1. Con la copia que desea actualizar, ábrala en la nueva versión. Se le notificará que la actualización no es reversible.  
   
-2. Una vez finalizada la actualización, cambie la ruta de acceso del programa externo a la nueva versión de devenv. exe. Haga clic con el botón secundario en el nodo del proyecto en el **Explorador de soluciones**y, a continuación, elija **propiedades**. En la pestaña **depurar** , busque el cuadro de texto por **programa externo de inicio** y cambie la ruta de devenv. exe a la ruta de acceso 2015 de Visual Studio, que debería tener un aspecto similar al siguiente:  
+2. Una vez finalizada la actualización, cambie la ruta de acceso del programa externo a la nueva versión de devenv.exe. Haga clic con el botón secundario en el nodo del proyecto en el **Explorador de soluciones**y, a continuación, elija **propiedades**. En la pestaña **depurar** , busque el cuadro de texto por **programa externo de inicio** y cambie la ruta de acceso de devenv.exe a la ruta de acceso 2015 de Visual Studio, que debería tener un aspecto similar al siguiente:  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14.0 \ Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
-3. Agregue una referencia a Microsoft. VisualStudio. Shell. 14.0. dll. (Haga clic con el botón secundario en el nodo del proyecto en el **Explorador de soluciones** y, a continuación, elija **Agregar o referencia**. Seleccione la pestaña **extensiones** y, a continuación, Active **Microsoft. VisualStudio. Shell. 14.0**.  
+3. Agregue una referencia a Microsoft.VisualStudio.Shell.14.0.dll. (Haga clic con el botón secundario en el nodo del proyecto en el **Explorador de soluciones** y, a continuación, elija **Agregar o referencia**. Seleccione la pestaña **extensiones** y, a continuación, Active **Microsoft. VisualStudio. Shell. 14.0**.  
   
 4. Compile la solución. Los archivos compilados se implementan en:  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< nombre del autor\>\\< nombre del proyecto** \>\\< versión del proyecto\>\\.  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions \\<nombre de autor \> \\<nombre del proyecto \> \\<\> \\ versión del proyecto**.  
   
 #### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Para actualizar un proyecto de extensibilidad a los ensamblados de referencia de NuGet de VS SDK  
   

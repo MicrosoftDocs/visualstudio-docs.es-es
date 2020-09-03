@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851820"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
@@ -42,7 +42,7 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
 
  **Plataforma** de Especifica la configuración de plataforma que se va a mostrar o modificar. Los valores son **Cualquier CPU** (valor predeterminado para aplicaciones [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** o una plataforma definida por el usuario. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
-## <a name="general-page"></a>página General
+## <a name="general-page"></a>Página General
  Utilice las siguientes opciones para establecer las propiedades generales del proyecto.
 
 > [!NOTE]

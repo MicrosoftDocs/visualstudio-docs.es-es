@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597079"
 ---
 # <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
@@ -36,14 +36,14 @@ Visual Studio proporciona cuatro plantillas de proyecto de flujo de trabajo dife
 
 Para tener acceso a estas plantillas, primero Instale el componente **Windows Workflow Foundation** de Visual Studio. Para obtener instrucciones detalladas, consulte [instalación de Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Después de instalar el componente de **Windows Workflow Foundation** , seleccione **archivo** > **nuevo** > **proyecto**.
+1. Después de instalar el componente de **Windows Workflow Foundation** , seleccione **archivo**  >  **nuevo**  >  **proyecto**.
 
 1. Busque y seleccione una plantilla de proyecto de flujo de trabajo, por ejemplo, la plantilla **aplicación de consola de flujos** de trabajo.
 
 1. Continúe con la creación del proyecto.
 
    > [!NOTE]
-   > Si desea agregar un nuevo proyecto a una solución existente, abra la solución en Visual Studio, haga clic con el botón derecho en la solución en **Explorador de soluciones**y seleccione **Agregar** > **nuevo proyecto**.
+   > Si desea agregar un nuevo proyecto a una solución existente, abra la solución en Visual Studio, haga clic con el botón derecho en la solución en **Explorador de soluciones**y seleccione **Agregar**  >  **nuevo proyecto**.
 
 ## <a name="workflow-console-app"></a>Aplicación de consola de flujos de trabajo
 
@@ -51,14 +51,14 @@ Si elige la plantilla **aplicación de consola de flujos de trabajo** , Visual S
 
 ## <a name="wcf-workflow-service-app"></a>Aplicación de servicio de flujo de trabajo WCF
 
-Si elige la plantilla de **aplicación de servicio de flujo de trabajo WCF** , Visual Studio crea una definición de servicio como XAML. El Diseñador de flujo de trabajo se abre en la vista de diseño con una actividad <xref:System.Activities.Statements.Sequence> que contiene un conjunto de actividades de <xref:System.ServiceModel.Activities.Receive> y <xref:System.ServiceModel.Activities.SendReply>.
+Si elige la plantilla de **aplicación de servicio de flujo de trabajo WCF** , Visual Studio crea una definición de servicio como XAML. El Diseñador de flujo de trabajo se abre en la vista de diseño con una <xref:System.Activities.Statements.Sequence> actividad que contiene un conjunto de <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> actividades y.
 
 ## <a name="activity-library"></a>Biblioteca de actividades
 
 Si elige la plantilla **biblioteca de actividades** , Visual Studio crea una definición de actividad en XAML. Diseñador de flujo de trabajo se abre y muestra el lienzo para su actividad personalizada. Arrastre una actividad desde el **cuadro de herramientas** hasta la superficie de diseño para incluirla en la actividad personalizada.
 
 > [!NOTE]
-> Solo se permite una actividad secundaria en el cuerpo de la actividad personalizada. Sin embargo, esa actividad secundaria podría ser una actividad compuesta, como una actividad <xref:System.Activities.Statements.Sequence> o una actividad <xref:System.Activities.Statements.Flowchart>.
+> Solo se permite una actividad secundaria en el cuerpo de la actividad personalizada. Sin embargo, esa actividad secundaria podría ser una actividad compuesta, como una actividad o una actividad <xref:System.Activities.Statements.Sequence> <xref:System.Activities.Statements.Flowchart> .
 
 ## <a name="activity-designer-library"></a>Biblioteca del diseñador de actividad
 

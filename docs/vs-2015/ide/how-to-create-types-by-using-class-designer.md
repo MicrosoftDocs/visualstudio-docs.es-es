@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533151"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
@@ -36,19 +36,19 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
 
 - [Aplicar un atributo personalizado a un miembro de tipo](#CustAttributeMember)
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>Crear un nuevo tipo
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Crear un nuevo tipo
 
 1. En el cuadro de herramientas, en Diseñador de clases, arrastre uno de estos a un diagrama de clase:
 
     - **Clase** o **Clase abstracta**
 
-    - **Enum**
+    - **Enumeración**
 
     - **Interfaz**
 
     - **Estructura** (VB) o **Struct** (C#)
 
-    - **delegado**
+    - **Delegado**
 
     - **Módulo** (solo VB)
 
@@ -64,13 +64,13 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
 
 4. Ahora agregue otros elementos para definir el tipo:
 
-    |**Para**|**Add**|
+    |**Para**|**Add (Agregar)**|
     |-|-|
     |Clases, clases abstractas, estructuras o structs|Métodos, propiedades, campos, eventos, constructores (método), destructores (método) y constantes que definen el tipo|
     |Enumeraciones|Valores de campo que constituyen la enumeración|
     |Interfaces|Métodos, propiedades y eventos que constituyen la interfaz|
-    |delegado|Parámetros que definen el delegado|
-    |Module|Métodos, propiedades, campos, eventos, constructores (método) y constantes que definen el módulo|
+    |Delegado|Parámetros que definen el delegado|
+    |Módulo|Métodos, propiedades, campos, eventos, constructores (método) y constantes que definen el módulo|
 
      Vea [Crear miembros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
 
@@ -84,7 +84,7 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
 
      Cuando haya acabado, los atributos personalizados se aplicarán al tipo.
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Aplicar un atributo personalizado a un miembro de tipo
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Aplicar un atributo personalizado a un miembro de tipo
 
 1. Haga clic en el nombre del miembro, en la forma del tipo en un diagrama de clases o en la fila en la ventana Detalles de clase.
 

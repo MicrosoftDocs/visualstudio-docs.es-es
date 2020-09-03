@@ -9,20 +9,20 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917329"
 ---
-# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Novedades&#39;de Visual Studio 2015 SDK
+# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Novedades de&#39;s en el SDK de Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El SDK de Visual Studio tiene las siguientes características nuevas y actualizadas para Visual Studio 2015, Visual Studio 2015 actualizado y Visual Studio 2017.
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-A partir de Visual Studio 2017, ya no se realizará el análisis de las plantillas de proyecto y de elemento personalizadas. En su lugar, la extensión debe proporcionar archivos de manifiesto de plantilla que describan la ubicación de instalación de estas plantillas. Puede usar Visual Studio 2017 para actualizar las extensiones VSIX. Si implementa la extensión mediante un archivo MSI, debe generar los archivos de manifiesto de plantilla manualmente. Para obtener más información, consulte [actualización del plantillas de proyecto y elemento para Visual Studio personalizado 2017](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015). El esquema de manifiesto de plantilla se documenta en la [referencia de esquema de manifiesto de plantilla de Visual Studio](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).
+A partir de Visual Studio 2017, ya no se comprobará si hay plantillas de proyecto y de elemento personalizadas. En su lugar, la extensión debe proporcionar archivos de manifiesto de plantilla que describan la ubicación de instalación de estas plantillas. Puede usar Visual Studio 2017 para actualizar las extensiones VSIX. Si implementa la extensión mediante un archivo MSI, debe generar los archivos de manifiesto de plantilla manualmente. Para obtener más información, consulte [actualización del plantillas de proyecto y elemento para Visual Studio personalizado 2017](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015). El esquema de manifiesto de plantilla se documenta en la [referencia de esquema de manifiesto de plantilla de Visual Studio](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).
 
 ## <a name="vs-2015-sdk-update-1"></a>VS 2015 SDK Update 1
  Update 1 incluye herramientas que ayudan a que la extensión funcione bien con los temas de color y el servicio de imágenes de Visual Studio.
@@ -50,10 +50,10 @@ A partir de Visual Studio 2017, ya no se realizará el análisis de las plantill
 
 - [Creación de una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     El Asistente para VSPackage ya no crea extensiones C# en ni Visual Basic.
+     El Asistente para VSPackage ya no crea extensiones en C# ni en Visual Basic.
 
 ### <a name="c"></a>C++
- En C++, el Asistente para VSPackage admite comandos de menú, ventanas de herramientas y editores personalizados. Búsquelo en el cuadro de diálogo **nuevo proyecto** en **Visual C++ /Extensibility**.
+ En el caso de C++, el Asistente para VSPackage admite comandos de menú, ventanas de herramientas y editores personalizados. Búsquelo en el cuadro de diálogo **nuevo proyecto** en **Visual C++/extensibilidad**.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>VS SDK referencia a ensamblados a través de NuGet
  Para aumentar la portabilidad y el uso compartido de proyectos de extensibilidad, puede usar las versiones de NuGet de los ensamblados de referencia del SDK de VS.  Están disponibles en [Nuget.org](https://www.nuget.org/) publicados por [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) y se pueden agregar fácilmente a su proyecto o solución a través del cuadro de diálogo referencias de Visual Studio **/administrar paquetes Nuget** . Puede Agregar referencias individuales a ensamblados de extensibilidad específicos o agregar a la vez todos los ensamblados de referencias del SDK de VS mediante el [metapaquete](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)del SDK de vs. Para más información sobre NuGet, consulte [información general de Nuget](/nuget/) y [Administración de paquetes NuGet mediante el cuadro de diálogo](/nuget/consume-packages/install-use-packages-visual-studio).
@@ -63,7 +63,7 @@ A partir de Visual Studio 2017, ya no se realizará el análisis de las plantill
  Las plantillas de elementos del SDK de VS usan NuGet para sus referencias y herramientas de compilación, de modo que se obtienen las ventajas de NuGet de forma predeterminada.
 
 > [!NOTE]
-> Puede seguir usando los ensamblados de referencia instalados de VS SDK con sus proyectos (ubicados en \<ubicación de instalación de Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) y no es necesario actualizar los proyectos de extensibilidad existentes para usar paquetes de NuGet.  El cuadro de diálogo referencias del proyecto **/Agregar referencia** sigue usando los ensamblados de referencia instalados del SDK de vs.
+> Puede seguir usando los ensamblados de referencia instalados de VS SDK con sus proyectos (ubicados en \<Visual Studio Install Location> \ VSSDK\VisualStudioIntegration\Common\Assemblies) y no es necesario actualizar los proyectos de extensibilidad existentes para usar paquetes de NuGet.  El cuadro de diálogo referencias del proyecto **/Agregar referencia** sigue usando los ensamblados de referencia instalados del SDK de vs.
 >
 > Si desea modificar los proyectos existentes para usar NuGet, consulte [How to: Migrate VSPackages to Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) , que tiene una sección sobre la actualización de proyectos de extensibilidad a paquetes de NuGet.
 

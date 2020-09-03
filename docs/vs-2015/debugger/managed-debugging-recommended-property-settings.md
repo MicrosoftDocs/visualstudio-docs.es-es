@@ -1,5 +1,5 @@
 ---
-title: 'Depuración administrada: Valores de propiedad recomendados | Documentos de Microsoft'
+title: 'Depuración administrada: valores de propiedad recomendados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f63e1382d242a679ed4fac09bfb3040200fed551
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203594"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Depuración administrada: Valores de propiedades recomendados
+# <a name="managed-debugging-recommended-property-settings"></a>Depuración administrada: Valores de propiedad recomendados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Algunas propiedades se deben establecer de la misma manera para todos los escenarios de depuración administrados.  
@@ -37,9 +37,9 @@ Algunas propiedades se deben establecer de la misma manera para todos los escena
   
 |**Nombre de la propiedad**|**Configuración**|  
 |-----------------------|-----------------|  
-|**Definir constante DEBUG**|C#y F#: Establezca la casilla de verificación. Esto permite que la aplicación utilice la clase Debug.|  
-|**Definir constante TRACE**|C#y F#: Establezca la casilla de verificación. Esto permite que la aplicación utilice la clase Trace.|  
-|**Optimizar código**|C#, F#y Visual Basic: Se establece en false. El código optimizado es más difícil de depurar, puesto que las instrucciones generadas no se corresponden directamente con las instrucciones de código fuente. Si detecta que el programa tiene un error que solo aparece en código optimizado, puede activar esta configuración, pero recuerde que el código que se muestra en la ventana **Desensamblado** se genera a partir de código optimizado que tal vez no coincida con lo que aparece en el Editor de código. Para depurar código optimizado, debe desactivar [solo mi código](just-my-code.md).<br /><br /> Para obtener más información, consulte [configuración del proyecto para configuraciones de depuración de C#](../debugger/project-settings-for-csharp-debug-configurations.md) o [configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
+|**Definir constante DEBUG**|C# y F#: active la casilla. Esto permite que la aplicación utilice la clase Debug.|  
+|**Definir constante TRACE**|C# y F#: active la casilla. Esto permite que la aplicación utilice la clase Trace.|  
+|**Optimizar código**|C#, F# y Visual Basic: se establece en Falso. El código optimizado es más difícil de depurar, puesto que las instrucciones generadas no se corresponden directamente con las instrucciones de código fuente. Si detecta que el programa tiene un error que solo aparece en código optimizado, puede activar esta configuración, pero recuerde que el código que se muestra en la ventana **Desensamblado** se genera a partir de código optimizado que tal vez no coincida con lo que aparece en el Editor de código. Para depurar el código optimizado, debe desactivar [solo mi código](just-my-code.md).<br /><br /> Para obtener más información, vea [Configuración del proyecto para configuraciones de depuración de C#](../debugger/project-settings-for-csharp-debug-configurations.md) o [Configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
 |**Ruta de acceso de salida**|Establézcalo en bin\Debug\\.|  
 |**Opciones de compilación avanzadas**|Solo Visual Basic. Haga clic en **Avanzadas** para establecer las propiedades avanzadas que se describen en la tabla siguiente.|  
   
@@ -47,11 +47,11 @@ Algunas propiedades se deben establecer de la misma manera para todos los escena
   
 |**Nombre de la propiedad**|**Configuración**|  
 |-----------------------|-----------------|  
-|**Habilitar optimizaciones**|Establecida en false por las razones especificadas en el **optimizar código** opción en la tabla anterior.|  
+|**Habilitar optimizaciones**|Se establece en false por los motivos especificados en la opción **Optimizar código** de la tabla anterior.|  
 |**Generar información de depuración**|Active esta casilla para que se establezca el marcador /DEBUG cuando se realice la compilación, lo que generará la información necesaria para facilitar la depuración.|  
 |**Definir constante DEBUG**|Active esta casilla para definir la constante `DEBUG`, que permite que la aplicación utilice la clase <xref:System.Diagnostics.Debug>.|  
 |**Definir constante TRACE**|Active esta casilla para definir la constante `TRACE`, que permite que la aplicación utilice la clase <xref:System.Diagnostics.Trace>.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar código administrado](../debugger/debugging-managed-code.md)   
  [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

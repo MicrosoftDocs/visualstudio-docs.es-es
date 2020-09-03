@@ -10,17 +10,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9583230a081cd1e9b543350b9ad998ab5d68e79
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851384"
 ---
-# <a name="visual-studio-architecture-tooling-guidance"></a>Orientación para las herramientas de arquitectura de Visual Studio
+# <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Architecture Tooling Guidance es un paquete descargable de consejos prácticos sobre el uso de las herramientas de modelado en Visual Studio 2010. Presenta una visión general de cómo usar las herramientas de modelado de forma integrada y se describen los escenarios más comunes en que se usan las herramientas.
+Esta guía de herramientas de arquitectura es un paquete descargable de instrucciones prácticas sobre el uso de las herramientas de modelado en Visual Studio 2010. Presenta una vista de alto nivel de cómo usar todas las herramientas de modelado de una manera integrada y describe los escenarios más comunes en los que se usan las herramientas.
 
- El contenido fue creado por los [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Rangers de ALM, un grupo especial que tiene miembros del equipo del producto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], servicios de Microsoft, profesionales más valorados de Microsoft (MVP) y [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] responsables de la comunidad.
+ Los intervalos de ALM crearon el contenido [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , un grupo especial que tiene miembros del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] equipo del producto, servicios de Microsoft, profesionales más valorados de Microsoft (MVP) y responsables de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comunidad.
 
  [Haga clic aquí para descargar la guía de herramientas de arquitectura.](https://archive.codeplex.com/?p=vsarchitectureguide)

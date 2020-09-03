@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaba2f099f2a4d04574acd5bcdd2ba8f8f44b4ce
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852364"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Reemplazar Equals() para tipos de valor
@@ -30,7 +30,7 @@ Identificador de regla | DA0006 |
 | Mensaje | Invalide Equals y el operador de igualdad en los tipos de valor. |  
 | Tipo de los | ADVERTENCIA |  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Las llamadas al método Equals o a los operadores de igualdad de un tipo de valor público constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de implementar un método más eficaz.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
@@ -39,4 +39,4 @@ Identificador de regla | DA0006 |
  Para obtener más información sobre cómo reemplazar Equals y los operadores de igualdad, consulte [Instrucciones para implementar Equals y el operador de igualdad (==)](https://msdn.microsoft.com/library/7h9bszxx.aspx).  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
- Para obtener un ejemplo de la implementación de Equals y los operadores de igualdad, consulte la regla de análisis de código [CA1815: Reemplazar Equals y el operador Equals en los tipos de valores](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md).
+ Para obtener un ejemplo de la implementación de Equals y los operadores de igualdad, vea la regla de análisis de código [CA1815: Invalidar Equals y el operador Equals en los tipos de valores](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

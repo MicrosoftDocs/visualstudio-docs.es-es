@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition ? Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: GetAddressesInModuleFromPosition | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7295d49faa8799731a13f500b31d436df6dc66a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734029"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-Asigna una posición de documento en el módulo especificado a una matriz de direcciones de depuración.
+Asigna una posición de documento del módulo especificado a una matriz de direcciones de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,28 +50,28 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>Parámetros
 `ulAppDomainID`\
-[en] Identificador de dominio de aplicación.
+de Identificador del dominio de aplicación.
 
 `guidModule`\
-[en] Identificador único del módulo.
+de Identificador único del módulo.
 
 `pDocPos`\
-[en] La posición del documento.
+de Posición del documento.
 
 `fStatmentOnly`\
-[en] Si `TRUE`, limita las direcciones de depuración a una sola instrucción.
+de Si es `TRUE` , limita las direcciones de depuración a una única instrucción.
 
 `ppEnumBegAddresses`\
-[fuera] Devuelve un enumerador para las direcciones de depuración iniciales asociadas a esta instrucción o línea.
+enuncia Devuelve un enumerador para las direcciones de depuración de inicio asociadas a esta instrucción o línea.
 
 `ppEnumEndAddresses`\
-[fuera] Devuelve un enumerador para las direcciones de depuración final esa instrucción o línea.
+enuncia Devuelve un enumerador para las direcciones de depuración finales asociadas a esta instrucción o línea.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugSymbolProvider** que expone la interfaz [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

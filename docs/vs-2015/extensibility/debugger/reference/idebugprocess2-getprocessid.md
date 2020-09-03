@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetProcessId | Microsoft Docs
+title: 'IDebugProcess2:: Getprocessid (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f500f06178ae98c0426c08b9cca0320c01d860d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202874"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtiene el GUID de este proceso.  
+Obtiene el GUID para este proceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +40,13 @@ int GetProcessId(
   
 #### <a name="parameters"></a>Parámetros  
  `pguidProcessId`  
- [out] Devuelve el GUID de este proceso.  
+ enuncia Devuelve el GUID para este proceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  El identificador único global (GUID) identifica este proceso de todos los demás procesos que se ejecutan en el sistema.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -17,20 +17,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 377906675d70a712f8ca72b0b6e4d8a6864c1fbc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533242"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Validar argumentos de métodos públicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |Identificador de comprobación|CA1062|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa

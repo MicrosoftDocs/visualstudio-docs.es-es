@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585423"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
@@ -95,7 +95,7 @@ End Property
 
 Si cambia `newPropertyValue` por `m_property`, se cambian todas las instancias de `newPropertyValue`. Si cambia `String` por `Int` en la declaración de la propiedad, también se cambia a `Int` el valor en el método set.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Cómo: Distribuir fragmentos de código](../ide/how-to-distribute-code-snippets.md)
