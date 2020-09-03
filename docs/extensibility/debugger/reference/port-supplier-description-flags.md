@@ -1,5 +1,5 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS Microsoft Docs
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,15 +14,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713992"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
-Define los metadatos que se pueden recuperar sobre un proveedor de puertos.
+Define los metadatos que se pueden recuperar sobre un proveedor de puerto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,20 +41,20 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 
 `PSDFLAG_SHOW_WARNING_ICON`\
 Si se selecciona, el icono de advertencia se mostrará en la interfaz de usuario.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta enumeración es devuelta por el [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) método.
+Esta enumeración se devuelve mediante el método [getDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) .
 
 ## <a name="requirements"></a>Requisitos
 
-Encabezado: Msdbg.h
+Encabezado: Msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

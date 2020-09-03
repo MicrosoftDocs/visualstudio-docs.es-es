@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 36737b767757215010e9716663d5807091d3503b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664159"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
@@ -32,9 +32,9 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 |Nombre de formato|Extensión de archivo|Operaciones admitidas (ver, editar, exportar)|
 |-----------------|--------------------|-------------------------------------------------|
 |Lenguaje de sombreador de gráfico dirigido|.dgsl|Ver, Editar|
-|Sombreador HLSL (código fuente)|.hlsl|Exportar|
-|Sombreador HLSL (código de bytes)|.cso|Exportar|
-|Encabezado de C++ (matriz de código de bytes HLSL)|.h|Exportar|
+|Sombreador HLSL (código fuente)|.hlsl|Exportación|
+|Sombreador HLSL (código de bytes)|.cso|Exportación|
+|Encabezado de C++ (matriz de código de bytes HLSL)|.h|Exportación|
 
 ## <a name="getting-started"></a>Introducción
  En esta sección se describe cómo agregar un sombreador DGSL al proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y se ofrece la información básica necesaria para comenzar.
@@ -43,11 +43,11 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 
 1. En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiera agregar el sombreador y, después, elija **Agregar**, **Nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)** .
+2. En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)**.
 
 3. Especifique el **Nombre** del archivo de sombreador y la **Ubicación** donde quiere que se cree.
 
-4. Elija el botón de **Agregar** .
+4. Elija el botón **Agregar**.
 
 ### <a name="the-default-shader"></a>El sombreador predeterminado
  Cada vez que se crea un sombreador DGSL, comienza como un sombreador mínimo que solo tiene un nodo **Color de punto** que está conectado al nodo **Color final**. Aunque este sombreador sea completo y funcional, no hace mucho. Por tanto, el primer paso para crear un sombreador que funcione suele ser eliminar el nodo **Color de punto** o desconectarlo del nodo **Color final** para dejar espacio para otros nodos.
@@ -68,10 +68,10 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 
 |Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
-|**Seleccionar**|Permite la interacción con nodos y bordes en el gráfico. En este modo, puede seleccionar nodos y moverlos o eliminarlos, y puede establecer bordes o interrumpirlos.|
+|**Select**|Permite la interacción con nodos y bordes en el gráfico. En este modo, puede seleccionar nodos y moverlos o eliminarlos, y puede establecer bordes o interrumpirlos.|
 |**Movimiento panorámico**|Habilita el movimiento de un gráfico de sombreador en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto en la superficie de diseño y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla Ctrl para activar el modo **Movimiento panorámico** temporalmente.|
-|**Zoom**|Habilita la presentación de más o menos detalles de gráfico de sombreador en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto en la superficie de diseño y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede acercar o alejar con la rueda del mouse mientras presiona y mantiene presionada la tecla Ctrl.|
-|**Ajustar al tamaño**|Muestra el gráfico de sombreador completo en el marco de ventana.|
+|**Zoom**|Habilita la presentación de más o menos detalles de gráfico de sombreador en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto en la superficie de diseño y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede mantener presionado Ctrl para acercar o alejar mediante la rueda del mouse.|
+|**Zoom para ajustar**|Muestra el gráfico de sombreador completo en el marco de ventana.|
 |**Modo de representación en tiempo real**|Cuando se habilita la representación en tiempo real, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dibuja de nuevo la superficie de diseño, incluso si no se lleva a cabo ninguna acción de usuario. Este modo es útil cuando se trabaja con los sombreadores que cambian con el tiempo.|
 |**Vista previa con esfera**|Cuando está habilitada, se usa un modelo de una esfera para obtener una vista previa del sombreador. Solo se puede habilitar una forma de vista preliminar a la vez.|
 |**Vista previa con cubo**|Cuando está habilitada, se usa un modelo de un cubo para obtener una vista previa del sombreador. Solo se puede habilitar una forma de vista preliminar a la vez.|
@@ -91,7 +91,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 
 ##### <a name="to-perform-basic-operations-in-select-mode"></a>Para realizar operaciones básicas en el modo Seleccionar
 
-- Esta es la manera de hacerlo:
+- A continuación se muestra cómo hacerlo:
 
   - Para agregar un nodo al gráfico, selecciónelo en el **Cuadro de herramientas** y después muévalo a la superficie de diseño.
 
@@ -115,7 +115,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 
 - En la barra de herramientas **Modos del Diseñador de sombras**, seleccione la forma que quiera.
 
-#### <a name="WWS_MaterialParameters"></a> Texturas y parámetros de material
+#### <a name="textures-and-material-parameters"></a><a name="WWS_MaterialParameters"></a> Texturas y parámetros de material
  Muchos sombreadores dependen de texturas y propiedades de material para producir una apariencia única para cada tipo de objeto en la aplicación. Para ver qué aspecto tendrá el sombreador en la aplicación, puede establecer las texturas y las propiedades de material que se usan para representar la vista previa para que coincida con las texturas y los parámetros que es posible que use en la aplicación.
 
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Para enlazar una textura distinta a un registro de textura o para modificar otros parámetros de material
@@ -128,12 +128,12 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 
 |Parámetro|Propiedades|
 |---------------|----------------|
-|**Textura 1** – **Textura 8**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Nombre de archivo**: la ruta de acceso completa del archivo de textura asociado al registro de textura.|
-|**Color ambiental de material**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: el color difuso del píxel actual debido a la iluminación indirecta o ambiente.|
+|**Textura 1** – **Textura 8**|**Acceso**:                             **público** para permitir que la propiedad se establezca desde el editor de modelos; de lo contrario, **Private**.<br /><br /> **Nombre de archivo**: la ruta de acceso completa del archivo de textura asociado al registro de textura.|
+|**Color ambiental de material**|**Acceso**:                             **público** para permitir que la propiedad se establezca desde el editor de modelos; de lo contrario, **Private**.<br /><br /> **Valor**: el color difuso del píxel actual debido a la iluminación indirecta o ambiente.|
 |**Color difuso de material**|**Acceso**: **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: un color que describe cómo difumina la iluminación directa el píxel actual.|
-|**Color emisor de luz de material**|**Acceso**:                              **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: la contribución de color del píxel actual debida a la iluminación propia proporcionada.|
-|**Reflexión especular de material**|**Acceso**:                              **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: un color que describe cómo refleja la iluminación directa el píxel actual.|
-|**Potencia especular de material**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: el exponente que define la intensidad de los reflejos especulares en el píxel actual.|
+|**Color emisor de luz de material**|**Acceso**:                              **público** para permitir que la propiedad se establezca desde el editor de modelos; de lo contrario, **Private**.<br /><br /> **Valor**: la contribución de color del píxel actual debida a la iluminación propia proporcionada.|
+|**Reflexión especular de material**|**Acceso**:                              **público** para permitir que la propiedad se establezca desde el editor de modelos; de lo contrario, **Private**.<br /><br /> **Valor**: un color que describe cómo refleja la iluminación directa el píxel actual.|
+|**Potencia especular de material**|**Acceso**:                             **público** para permitir que la propiedad se establezca desde el editor de modelos; de lo contrario, **Private**.<br /><br /> **Valor**: el exponente que define la intensidad de los reflejos especulares en el píxel actual.|
 
 #### <a name="time-based-effects"></a>Efectos basados en tiempo
  Algunos sombreadores tienen un componente basado en tiempo que anima el efecto. Para mostrar el aspecto que tiene el efecto en acción, es necesario actualizar la vista previa varias veces por segundo. De forma predeterminada, la vista previa solo se actualiza cuando se cambia el sombreador. Para cambiar este comportamiento y poder ver los efectos basados en tiempo, tendrá que habilitar la representación en tiempo real.
@@ -158,7 +158,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
 
-|Comando|Métodos abreviados de teclado|
+|Get-Help|Accesos directos del teclado|
 |-------------|------------------------|
 |Cambiar al modo **Seleccionar**|Ctrl+G, Ctrl+Q<br /><br /> S|
 |Cambiar al modo **Zoom**|Ctrl+G, Ctrl+Z<br /><br /> Z|
@@ -166,8 +166,8 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 |Seleccionar todo|Ctrl+A|
 |Eliminar la selección actual|Eliminar|
 |Cancelar la selección actual|Escape|
-|Acercar|Ctrl+rueda del mouse hacia delante<br /><br /> Signo más (+)|
-|Alejar|Ctrl+rueda del mouse hacia atrás<br /><br /> Signo menos (-)|
+|Acercamiento|Ctrl+rueda del mouse hacia delante<br /><br /> Signo más (+)|
+|Alejamiento|Ctrl+rueda del mouse hacia atrás<br /><br /> Signo menos (-)|
 |Movimiento panorámico hacia arriba de la superficie de diseño|Rueda del mouse hacia atrás<br /><br /> AvPág|
 |Movimiento panorámico hacia abajo de la superficie de diseño|Rueda del mouse hacia delante<br /><br /> RePág|
 |Movimiento panorámico hacia la izquierda de la superficie de diseño|Mayús+rueda del mouse hacia atrás<br /><br /> Rueda del mouse a la izquierda<br /><br /> Mayús+AvPág|
@@ -186,5 +186,5 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 |Title|Descripción|
 |-----------|-----------------|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|
-|[Image Editor](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con texturas e imágenes.|
+|[Editor de imágenes](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con texturas e imágenes.|
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con modelos 3D.|

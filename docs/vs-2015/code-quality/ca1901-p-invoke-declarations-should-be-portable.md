@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545267"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Las declaraciones P/Invoke deben ser portátiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |Identificador de comprobación|CA1901|
-|Categoría|Microsoft. portabilidad|
+|Category|Microsoft. portabilidad|
 |Cambio problemático|Interrumpir: Si la P/Invoke es visible fuera del ensamblado. No problemático: Si la P/Invoke no es visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Causa

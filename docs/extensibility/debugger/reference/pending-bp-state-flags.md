@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_FLAGS de la casa de la casa de Microsoft Docs
+title: PENDING_BP_STATE_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6da1a956ac958a95dd0c433283a71af0a9b29d1e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714089"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
-Especifica los indicadores de estado de punto de interrupción pendientes.
+Especifica las marcas de estado de punto de interrupción pendientes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,18 +42,18 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="fields"></a>Fields
- `PBPSF_NONE`Marcador.
+## <a name="fields"></a>Campos
+ `PBPSF_NONE` Falso.
 
- `PBPSF_VIRTUALIZED`Especifica un punto de interrupción pendiente virtualizado, que se va a enlazar cada vez que se carga código nuevo.
+ `PBPSF_VIRTUALIZED` Especifica un punto de interrupción virtualizado pendiente, que se va a enlazar cada vez que se cargue código nuevo.
 
 ## <a name="remarks"></a>Observaciones
- Se utiliza `flags` para el miembro de la estructura [PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
+ Se utiliza para el `flags` miembro de la estructura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

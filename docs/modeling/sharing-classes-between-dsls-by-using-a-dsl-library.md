@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542550"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Compartir clases entre DSL mediante una biblioteca DSL
@@ -41,7 +41,7 @@ En el SDK de visualización y modelado de Visual Studio, puede crear una definic
 
 6. Compile el proyecto.
 
-7. Al distribuir el DSL para que lo usen otras personas, debe proporcionar el ensamblado compilado (DLL) y el archivo `DslDefinition.dsl` . Puede encontrar el ensamblado compilado en una carpeta en`Dsl\bin\*`
+7. Al distribuir el DSL para que lo usen otras personas, debe proporcionar el ensamblado compilado (DLL) y el archivo `DslDefinition.dsl` . Puede encontrar el ensamblado compilado en una carpeta en `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Para importar una biblioteca DSL
 
@@ -61,7 +61,7 @@ En el SDK de visualización y modelado de Visual Studio, puede crear una definic
 
    Una biblioteca DSL puede importar otras bibliotecas. Al importar una biblioteca, sus importaciones también aparecen automáticamente en el explorador de DSL.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 

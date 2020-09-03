@@ -13,17 +13,17 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73af28d8cb84e30f053000b601cb497ed052b310
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917574"
 ---
 # <a name="visual-studio-debugging-samples"></a>Ejemplos de depuración de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En dos ejemplos se muestra cómo ampliar el depurador de Visual Studio mediante [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+En dos ejemplos se muestra cómo ampliar el depurador de Visual Studio mediante [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] .  
   
-- El ejemplo de evaluador de expresiones del depurador, para los lenguajes administrados, se incluye en el [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. En la ventana de [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], haga clic en la pestaña **ejemplos** , **C#** haga clic en **todos** o en la lista de idiomas y, a continuación, haga clic en **depurador**.  
+- El ejemplo de evaluador de expresiones del depurador, para los lenguajes administrados, se incluye en [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] . En la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] ventana de, haga clic en la pestaña **ejemplos** , haga clic en **todos** o **C#** en la lista de idiomas y, a continuación, haga clic en **depurador**.  
   
 - El ejemplo de motor de depuración de Visual Studio, para lenguajes nativos, está disponible en la galería de código de MSDN. Para obtener más información, vea el ejemplo en GitHub: [ejemplo de motor de depuración de Visual Studio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Visual%20Studio%20Debug%20Engine%20Sample).

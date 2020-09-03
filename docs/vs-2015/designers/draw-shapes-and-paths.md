@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542212"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
@@ -37,7 +37,7 @@ En el Diseñador XAML, una *forma* es exactamente lo que cabría esperar, por ej
 
 - [Crear un trazado de recorte](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>Dibujar una forma
+## <a name="draw-a-shape"></a><a name="Shape"></a> Dibujar una forma
  Las formas se encuentran en el panel **Activos** .
 
  ![Categoría Formas en el panel Activos](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -46,7 +46,7 @@ En el Diseñador XAML, una *forma* es exactamente lo que cabría esperar, por ej
 
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")
 
-## <a name="draw-a-path"></a><a name="Path"></a>Dibujar un trazado
+## <a name="draw-a-path"></a><a name="Path"></a> Dibujar un trazado
  Un trazado se compone de varias líneas y curvas conectadas. Utilice un trazado para crear formas interesantes que no están disponibles en el panel **Activos** .
 
  Los trazados se pueden dibujar con una línea, una pluma o un lápiz, herramientas que se encuentran en el panel **Herramientas** .
@@ -96,25 +96,25 @@ En el Diseñador XAML, una *forma* es exactamente lo que cabría esperar, por ej
 
  Use la **Selection** herramienta Selección ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para seleccionar el trazado. Use la **Pen** herramienta pluma ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para hacer clic en cualquier lugar del trazado en el que desee agregar el punto.
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>Convertir una forma en un trazado
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> Convertir una forma en un trazado
  Para modificar una forma de la misma forma que se modifica un trazado, convierta la forma en un trazado.
 
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [Trabajar con trazados: convertir una forma en un trazado](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-## <a name="combine-paths"></a><a name="Combine"></a>Combinar trazados
+## <a name="combine-paths"></a><a name="Combine"></a> Combinar trazados
  Los trazados y las formas se pueden combinar en un único trazado.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
 
 |Imagen|Descripción|Imagen|Descripción|
 |-|-|-|-|
-|![](../designers/media/b1-1.png "B1_1")|Dos formas antes de su combinación|![](../designers/media/b1-4.png "B1_4")|Intersect|
+|![](../designers/media/b1-1.png "B1_1")|Dos formas antes de su combinación|![](../designers/media/b1-4.png "B1_4")|Formar intersección|
 |![](../designers/media/b1-2.png "B1_2")|Unir|![](../designers/media/b1-5.png "B1_5")|Excluir superposición|
 |![](../designers/media/b1-3.png "B1_3")|Dividir|![](../designers/media/b1-6.png "B1_6")|Restar|
 
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [Trabajar con trazados: combinar trazados](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>Crear un trazado compuesto
+## <a name="create-a-compound-path"></a><a name="Compound"></a> Crear un trazado compuesto
  Cuando se crea un trazado compuesto, las partes en intersección de los trazados se restan del resultado final y el trazado resultante adopta las propiedades visuales del trazado situado al fondo.
 
  Una vez creados, los trazados compuestos se pueden separar en cualquier momento.
@@ -123,7 +123,7 @@ En el Diseñador XAML, una *forma* es exactamente lo que cabría esperar, por ej
 
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [Trabajar con trazados: crear un trazado compuesto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>Crear un trazado de recorte
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> Crear un trazado de recorte
  Un trazado de recorte es un trazado o forma que se aplica a otro objeto, ocultando así las partes del objeto con máscara que sobresalen del trazado de recorte.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")

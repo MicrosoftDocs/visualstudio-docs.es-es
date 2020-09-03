@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 30040a986ee271ac7512139738422ec6ca150cf8
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769981"
 ---
 # <a name="options-dialog-box-environment--tabs-and-windows"></a>Cuadro de diálogo Opciones: Entorno \> Pestañas y ventanas

@@ -8,10 +8,10 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: 63e64b64b855df6f287dad0fbec363f8b783f6a2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85503472"
 ---
 ## <a name="how-long-does-it-take-for-my-cloud-subscription-to-be-canceled"></a>¿Cuánto tiempo se tarda en cancelar la suscripción de nube?

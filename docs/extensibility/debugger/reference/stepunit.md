@@ -1,5 +1,5 @@
 ---
-title: STEPUNIT ? Microsoft Docs
+title: STEPUNIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a87c86647407d90c9f4292b1307fd5623e85d13b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713521"
 ---
 # <a name="stepunit"></a>STEPUNIT
-Especifica la unidad de paso para el paso a paso.
+Especifica la unidad de paso para la ejecución paso a paso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `STEP_STATEMENT`\
- Pasos por declaración.
+ Pasos por instrucción.
 
  `STEP_LINE`\
  Pasos por línea.
@@ -55,12 +55,12 @@ enum enum_STEPUNIT { 
  Pasos por instrucción.
 
 ## <a name="remarks"></a>Observaciones
- Se pasa como argumento al método [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+ Se pasa como argumento al método [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

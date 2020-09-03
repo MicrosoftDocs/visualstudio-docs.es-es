@@ -1,5 +1,5 @@
 ---
-title: Elemento De icono (Plantillas de Visual Studio) Microsoft Docs
+title: Icon (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710528"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Elemento Icon (plantillas de Visual Studio)
-Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que actúa como icono, que aparece en el cuadro de diálogo **Nuevo proyecto** o Agregar **nuevo elemento,** para la plantilla.
+# <a name="icon-element-visual-studio-templates"></a>Icon (elemento, plantillas de Visual Studio)
+Especifica la ruta de acceso y el nombre del archivo de imagen que sirve como icono, que aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** de la plantilla.
 
- \<VSTemplate \<> TemplateData> \<Icon>
+ \<VSTemplate> \<TemplateData>
+ \<Icon>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,13 +60,13 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que ac
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto a menos que se usen los atributos `Package` y `ID`.
 
- El texto proporciona la ruta de acceso y el nombre de archivo del icono de plantilla que aparecerá en el cuadro de diálogo **Nuevo proyecto.**
+ El texto proporciona la ruta de acceso y el nombre de archivo del icono de la plantilla que aparecerá en el cuadro de diálogo **nuevo proyecto** .
 
 ## <a name="remarks"></a>Observaciones
  `Icon` es un elemento secundario obligatorio de `TemplateData`.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestran [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] los metadatos de una plantilla de proyecto para una aplicación.
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +93,5 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que ac
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

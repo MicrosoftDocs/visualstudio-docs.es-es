@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE Microsoft Docs
+title: REFERENCE_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713657"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
@@ -42,22 +42,22 @@ public enum enum_REFERENCE_TYPE { 
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `REF_TYPE_WEAK`\
- Especifica una referencia débil. No se `REF_TYPE_STRONG`puede combinar con .
+ Especifica una referencia débil. No se puede combinar con `REF_TYPE_STRONG` .
 
  `REF_TYPE_STRONG`\
- Especifica una referencia segura. No se `REF_TYPE_WEAK`puede combinar con .
+ Especifica una referencia segura. No se puede combinar con `REF_TYPE_WEAK` .
 
 ## <a name="remarks"></a>Observaciones
- Se utiliza `dwRefType` como miembro de la estructura [DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
+ Se usa como `dwRefType` miembro de la estructura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .
 
- Se pasa como parámetro al método [SetReferenceType.](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
+ Se pasa como un parámetro al método [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

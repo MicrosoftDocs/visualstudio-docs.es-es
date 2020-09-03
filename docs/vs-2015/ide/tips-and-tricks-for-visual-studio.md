@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542992"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de Visual Studio
@@ -49,7 +49,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Mostrar la lista de archivos abiertos|Ctrl+Alt+Abajo|
 |Mostrar todas las ventanas flotantes|Ctrl+Mayús+M|
 
-## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Accesos directos a ventanas
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a> Accesos directos a ventanas
 
 |Comando|Acceso directo|
 |-|-|
@@ -59,7 +59,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Iniciar nueva instancia|Win+Mayús+n|
 |Cambiar entre ventanas|Win+n|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Búsqueda en Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Búsqueda en Visual Studio
 
 |Comando|Acceso directo|
 |-|-|
@@ -69,7 +69,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Acotar resultados de Inicio rápido|- @opt Opciones<br />- @cmd Comandos<br />- @mru Usados más recientemente<br />- @doc Documentos abiertos|
 |Buscar en opciones de herramientas|Ctrl+T|
 
-## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Búsqueda de editor
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a> Búsqueda de editor
 
 |Comando|Acceso directo|
 |-|-|
@@ -84,7 +84,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Buscar en archivos|Ctrl+Mayús+F|
 |Reemplazar en archivos|Ctrl+Mayús+H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Editor de código
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> Editor de código
 
 |Comando|Acceso directo|
 |-|-|
@@ -109,7 +109,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Navegar entre varios resultados de Peek|F8 y Mayús+F8|
 |Alternar entre la ventana del editor de código y la ventana Definición de Peek|Mayús+Esc|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Barras
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> Barras
 
 |Comando|Acceso directo|
 |-|-|
@@ -137,7 +137,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Borrar búfer de la ventana Inmediato|>cls|
 |Imprimir valor de la ventana Inmediato|?varname|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Administración del ciclo de vida de las aplicaciones
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> Administración del ciclo de vida de las aplicaciones
 
 Vea [Métodos abreviados de teclado: Visual Studio Online, portal web de TFS y Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

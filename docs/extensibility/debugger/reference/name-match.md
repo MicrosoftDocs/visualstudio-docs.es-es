@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH de la casa de la inser Microsoft Docs
+title: NAME_MATCH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714296"
 ---
 # <a name="name_match"></a>NAME_MATCH
@@ -43,15 +43,15 @@ public enum NameMatchOptions { 
 }
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `nmNone`\
  No se especifican opciones.
 
  `nmCaseSensitive`\
- Indica que los nombres que se van a coincidir distinguen mayúsculas de minúsculas.
+ Indica que los nombres que se van a comparar distinguen mayúsculas de minúsculas.
 
  `nmCaseInsensitive`\
- Indica que los nombres que se van a coincidir no distinguen mayúsculas de minúsculas.
+ Indica que los nombres que se van a comparar no distinguen mayúsculas de minúsculas.
 
 ## <a name="remarks"></a>Observaciones
  Se pasa como argumento a los métodos siguientes:
@@ -65,9 +65,9 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: sh.h
+ Encabezado: SH. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546190"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Cómo: almacenar datos en caché para su uso sin conexión o en un servidor
@@ -59,9 +59,9 @@ ms.locfileid: "85546190"
 
 4. En la ventana **propiedades** , establezca la propiedad **Modifiers** en **Public** (de forma predeterminada, es **Internal**).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Datos de caché](../vsto/caching-data.md)
 - [Cómo: almacenar en caché un origen de datos en un documento de Office mediante programación](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Cómo: almacenar datos en caché en un documento protegido mediante contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)
 - [Acceder a los datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md)
-- [Almacenamiento de datos](../data-tools/save-data-back-to-the-database.md)
+- [Guardar datos](../data-tools/save-data-back-to-the-database.md)

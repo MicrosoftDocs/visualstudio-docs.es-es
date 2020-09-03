@@ -16,19 +16,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac8f4cf619bbdd007bb7aa570f549ae3c0b50e86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651112"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El cuadro de diálogo **configurar referencia de servicio** le permite configurar el comportamiento de [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Services.
+El cuadro de diálogo **configurar referencia de servicio** le permite configurar el comportamiento de los [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] servicios.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  Para acceder al cuadro de diálogo **Configurar referencia de servicio**, haga clic con el botón derecho en una referencia de servicio en el **Explorador de soluciones** y elija **Configurar referencia de servicio**. También puede acceder al cuadro de diálogo haciendo clic en el botón **Avanzadas** en el **cuadro de diálogo Agregar referencia de servicio**.
 
@@ -69,7 +69,7 @@ El cuadro de diálogo **configurar referencia de servicio** le permite configura
 
  **Volver a usar tipos en ensamblados a los que se hace referencia** Determina si un cliente de WCF intentará volver a usar que ya existe en los ensamblados a los que se hace referencia, en lugar de generar nuevos tipos cuando se agrega o actualiza un servicio. Esta opción se encuentra activada de forma predeterminada.
 
- **Reutilizar tipos en todos los ensamblados a los que se hace referencia** Cuando se selecciona, todos los tipos de la **lista de ensamblados a los que se hace referencia** se volverán a usar si es posible. Esta opción se encuentra activada de forma predeterminada.
+ **Reutilizar tipos en todos los ensamblados a los que se hace referencia** Cuando se selecciona, todos los tipos de la **lista de ensamblados a los que se hace referencia** se volverán a usar si es posible. Esta opción está seleccionada de forma predeterminada.
 
  **Volver a usar tipos en ensamblados de referencia especificados** Cuando se selecciona esta opción, solo se volverán a usar los tipos seleccionados en la **lista ensamblados a los que se hace referencia** .
 
@@ -83,5 +83,5 @@ El cuadro de diálogo **configurar referencia de servicio** le permite configura
 > [!NOTE]
 > El botón **Agregar referencia Web** solo está disponible cuando se muestra el cuadro de diálogo **configurar referencia de servicio** en el **cuadro de diálogo Agregar referencia de servicio**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: agregar, actualizar o quitar una referencia de servicio](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9) [Cómo: agregar una referencia a un servicio Web](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168) [Windows Communication Foundation servicios y WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

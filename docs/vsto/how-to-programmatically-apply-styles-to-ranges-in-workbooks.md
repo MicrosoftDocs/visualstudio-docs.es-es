@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546164"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Cómo: aplicar estilos a rangos de libros mediante programación
@@ -66,7 +66,7 @@ ms.locfileid: "85546164"
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con rangos](../vsto/working-with-ranges.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)
 - [Acceso global a objetos en proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)

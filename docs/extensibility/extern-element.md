@@ -1,5 +1,5 @@
 ---
-title: Elemento Extern (Elemento externo) Microsoft Docs
+title: Extern (elemento) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711486"
 ---
-# <a name="extern-element"></a>Elemento Externo
-El elemento Extern hace referencia a cualquier archivo de encabezado externo (*.h*) para combinar con el archivo *.vsct* en tiempo de compilación. Los archivos que se van a combinar deben estar en la ruta de acceso Include dada al compilador VSCT o a la que hace referencia un [elemento Include](../extensibility/include-element.md). Los archivos pueden ser otros archivos *.vsct* o archivos de encabezado C++.
+# <a name="extern-element"></a>Extern (elemento)
+El elemento extern hace referencia a los archivos de encabezado (*. h*) externos que se van a combinar con el archivo *. Vsct* en tiempo de compilación. Los archivos que se van a combinar deben estar en la ruta de acceso de inclusión que se proporciona al compilador VSCT o a los que hace referencia un [elemento include](../extensibility/include-element.md). Los archivos pueden ser otros archivos *. Vsct* o archivos de encabezado de C++.
 
- Las definiciones de los archivos de encabezado deben tener el formato "#define [Símbolo] [Valor]" El valor puede ser otro símbolo si está definido previamente. Las definiciones se pueden utilizar en instrucciones condicionales de elementos de comando. Cualquier símbolo que no se utilice realmente será descartado.
+ Las definiciones de los archivos de encabezado deben tener el formato "#define [símbolo] [valor]" el valor puede ser otro símbolo si se ha definido previamente. Las definiciones se pueden usar en instrucciones condicionales de elementos de comandos. Se descartará cualquier símbolo que no se use realmente.
 
- CommandTable Element Extern Element
+ Elemento extern del elemento CommandTable
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ El elemento Extern hace referencia a cualquier archivo de encabezado externo (*.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href"stdidcmd.h"|
-|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
-|language|Opcional. El idioma predeterminado [ \<](../extensibility/strings-element.md) de todas las cadenas>elementos de la tabla de comandos:<br /><br /> "en-nosotros"|
+|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href = "stdidcmd. h"|
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|language|Opcional. El idioma predeterminado de todos los [\<Strings>](../extensibility/strings-element.md) elementos de la tabla de comandos:<br /><br /> Language = "en-US"|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -68,7 +68,7 @@ El elemento Extern hace referencia a cualquier archivo de encabezado externo (*.
 </CommandTable>
 ```
 
-## <a name="see-also"></a>Consulte también
-- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Cómo VSPackages agregan elementos de interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>Vea también
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

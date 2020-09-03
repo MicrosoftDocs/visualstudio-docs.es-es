@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814725"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Desarrollar aplicaciones con el Diseñador de flujo de trabajo
@@ -43,6 +43,6 @@ Para usar plantillas de proyecto de flujo de trabajo en Visual Studio, instale p
 
    Visual Studio instala el componente **Windows Workflow Foundation** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA Microsoft Docs
+title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713778"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
-Esta estructura proporciona información sobre los procesos que se ejecutan en una máquina.
+Esta estructura proporciona información sobre los procesos que se ejecutan en un equipo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>Miembros
  `Fields`\
- Una combinación de indicadores de la [enumeración PROVIDER_FIELDS,](../../../extensibility/debugger/reference/provider-fields.md) que indica qué campos se rellenan.
+ Combinación de marcas de la enumeración [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) , que indica qué campos se rellenan.
 
  `ProgramNodes`\
- Estructura [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) que contiene una matriz de nodos de programa.
+ [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) estructura que contiene una matriz de nodos de programa.
 
  `fIsDebuggerPresent`\
- Distinto de`TRUE`cero [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ( ) si`FALSE`el depurador se está ejecutando, cero ( ) si no lo está.
+ Distinto de cero ( `TRUE` ) si el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador se está ejecutando, cero ( `FALSE` ) si no lo está.
 
 ## <a name="remarks"></a>Observaciones
- Esta estructura se pasa a la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) método donde se rellena.
+ Esta estructura se pasa al método [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) donde se rellena.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

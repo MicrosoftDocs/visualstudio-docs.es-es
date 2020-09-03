@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543616"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Los tipos APTCA solo amplían tipos base APTCA
@@ -40,9 +40,9 @@ ms.locfileid: "85543616"
 
  Cuando el atributo APTCA está presente en un ensamblado de plena confianza y un tipo del ensamblado se hereda de un tipo que no permite llamadores parcialmente confiables, es posible que se produzca un ataque de seguridad. Si dos tipos `T1` y `T2` cumplen las condiciones siguientes, los llamadores malintencionados pueden usar el tipo `T1` para omitir la demanda implícita de herencia de plena confianza que protege `T2` :
 
-- `T1`es un tipo público declarado en un ensamblado de plena confianza que tiene el atributo APTCA.
+- `T1` es un tipo público declarado en un ensamblado de plena confianza que tiene el atributo APTCA.
 
-- `T1`hereda de un tipo `T2` fuera de su ensamblado.
+- `T1` hereda de un tipo `T2` fuera de su ensamblado.
 
 - `T2`el ensamblado de no tiene el atributo APTCA y, por tanto, no debe ser heredable por los tipos de ensamblados de confianza parcial.
 

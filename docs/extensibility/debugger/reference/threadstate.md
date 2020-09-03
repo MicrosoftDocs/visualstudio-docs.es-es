@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE ? Microsoft Docs
+title: THREADSTATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713336"
 ---
 # <a name="threadstate"></a>THREADSTATE
@@ -48,29 +48,29 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `THREADSTATE_RUNNING`\
  Indica que el subproceso se está ejecutando.
 
  `THREADSTATE_STOPPED`\
- Indica que el subproceso se detiene debido a un punto de interrupción.
+ Indica que el subproceso se ha detenido debido a un punto de interrupción.
 
  `THREADSTATE_FRESH`\
- Indica que se ha creado el subproceso, pero aún no está ejecutando código.
+ Indica que se ha creado el subproceso, pero que aún no se está ejecutando código.
 
  `THREADSTATE_DEAD`\
- Indica que el subproceso está muerto.
+ Indica que el subproceso está inactivo.
 
  `THREADSTATE_FROZEN`\
  Indica que el subproceso está inmovilizado (no se puede realizar ninguna ejecución).
 
 ## <a name="remarks"></a>Observaciones
- Se utiliza `dwThreadState` para el campo de la estructura [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
+ Se usa para el `dwThreadState` campo de la estructura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

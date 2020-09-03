@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545228"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Las sobrecargas del operador tienen alternativas con nombre
@@ -42,8 +42,8 @@ ms.locfileid: "85545228"
 
 |C#|Visual Basic|C++|Nombre alternativo|
 |---------|------------------|-----------|--------------------|
-|+ (binario)|+|+ (binario)|Agregar|
-|+=|+=|+=|Agregar|
+|+ (binario)|+|+ (binario)|Sumar|
+|+=|+=|+=|Sumar|
 |&|And|&|BitwiseAnd|
 |&=|Y =|&=|BitwiseAnd|
 |&#124;|Or|&#124;|BitwiseOr|
@@ -51,13 +51,13 @@ ms.locfileid: "85545228"
 |--|N/D|--|Decremento|
 |/|/|/|Dividir|
 |/=|/=|/=|Dividir|
-|==|=|==|Equals|
+|==|=|==|Es igual a|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
 |>|>|>|Comparar|
 |>=|>=|>=|Comparar|
 |++|N/D|++|Incremento|
-|<>|!=|Equals|
+|<>|!=|Es igual a|
 |<<|<<|<<|Mayús Izq|
 |<<=|<<=|<<=|Mayús Izq|
 |<|<|<|Comparar|
@@ -77,7 +77,7 @@ ms.locfileid: "85545228"
 |true|IsTrue|N/D|IsTrue (propiedad)|
 | - (unario)   |N/D|-|Negate|
 |+ (unario)|N/D|+|Plus|
-|false|IsFalse|False|IsTrue (propiedad)|
+|false|IsFalse|Falso|IsTrue (propiedad)|
 
  N/A = = no se puede sobrecargar en el idioma seleccionado.
 

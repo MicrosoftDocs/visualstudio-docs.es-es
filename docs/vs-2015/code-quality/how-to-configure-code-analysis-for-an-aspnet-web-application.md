@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657463"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Cómo: Configurar el análisis de código para una aplicación web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] puede seleccionar en una lista de *conjuntos de reglas* de análisis de código que se van a aplicar a [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicación Web. El conjunto de reglas predeterminado es las reglas recomendadas de Microsoft Mininimum. Puede seleccionar otro conjunto de reglas para aplicar al sitio Web.
+En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] puede seleccionar en una lista de *conjuntos de reglas* de análisis de código para aplicarlos a la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicación Web. El conjunto de reglas predeterminado es las reglas recomendadas de Microsoft Mininimum. Puede seleccionar otro conjunto de reglas para aplicar al sitio Web.
 
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Para configurar un conjunto de reglas para un proyecto de marco de páginas de ASP.NET
 
@@ -43,6 +43,6 @@ En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](
 
     - Seleccione el conjunto de reglas que desea usar.
 
-    - Seleccione **\<Browse >** para especificar un conjunto de reglas personalizado existente que no esté en la lista.
+    - Seleccione esta **\<Browse>** configuración para especificar un conjunto de reglas personalizado existente que no esté en la lista.
 
     - Defina un conjunto de reglas personalizado. Para obtener más información, consulte [crear conjuntos de reglas personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).
