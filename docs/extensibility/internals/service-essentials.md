@@ -92,7 +92,7 @@ Afortunadamente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>
 
     Este código obtiene un servicio SVsActivityLog y lo convierte en una interfaz IVsActivityLog, que se puede usar para escribir en el registro de actividad. Para obtener un ejemplo, consulte [Cómo: usar el registro de actividad](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Lista de servicios disponibles](../../extensibility/internals/list-of-available-services.md)
 - [Uso y prestación de servicios](../../extensibility/using-and-providing-services.md)

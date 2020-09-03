@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo de búsqueda de mensajes | Documentos de Microsoft
+title: Buscar mensaje (cuadro de diálogo) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,55 +12,55 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6a2950ead23d2f1c6a5d1b4cb4d348a2937db4d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181186"
 ---
 # <a name="message-search-dialog-box"></a>Cuadro de diálogo Buscar mensaje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un mensaje concreto en [vista mensajes](../debugger/messages-view.md). Para mostrar este cuadro de diálogo, mueva el foco a una ventana de vista de mensajes. A continuación, elija **Buscar mensaje** desde el **búsqueda** menú.  
+Use este cuadro de diálogo para buscar y seleccionar el nodo de un mensaje concreto en la [vista Mensajes](../debugger/messages-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de la Vista Mensajes. Después, elija **Buscar mensaje** en el menú **Buscar**.  
   
- Las siguientes opciones están disponibles:  
+ Las siguientes configuraciones están disponibles:  
   
  **Herramienta de búsqueda**  
- La herramienta de arrastrar y colocar que se utiliza para seleccionar una ventana.  
+ Herramienta de arrastrar y colocar que se usa para seleccionar una ventana.  
   
- **Ocultar Spy ++**  
- Quita de la ventana principal de Spy ++ y deja el **Buscar mensaje** cuadro de diálogo visible encima de las otras aplicaciones.  
+ **Ocultar Spy + +**  
+ Quita la ventana principal de Spy + + y deja el cuadro de diálogo **MessageSearch** visible encima de las demás aplicaciones.  
   
- **Identificador**  
- El identificador único del mensaje que se busca.  
+ **Handle**  
+ IDENTIFICADOR único del mensaje que se va a buscar.  
   
- **Type**  
- El tipo de mensaje que se busca.  
+ **Tipo**  
+ Tipo de mensaje que se va a buscar.  
   
- **Mensaje**  
- Para buscar el identificador del mensaje.  
+ **Message**  
+ IDENTIFICADOR del mensaje que se va a buscar.  
   
- **Dirección de búsqueda hacia arriba o hacia abajo**  
- La dirección inicial de la búsqueda.  
+ **Dirección de búsqueda arriba o abajo**  
+ Dirección inicial de la búsqueda.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Buscar un mensaje en la vista mensajes](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Se explica cómo encontrar un mensaje concreto en la vista mensajes.  
+ Explica cómo buscar un mensaje específico en la vista mensajes.  
   
  [Vista Mensajes](../debugger/messages-view.md)  
- Muestra la secuencia de mensaje asociada a una ventana, proceso o subproceso.  
+ Muestra el flujo de mensajes asociado a una ventana, proceso o subproceso.  
   
  [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.  
+ Explica las vistas de árbol de Spy + + de ventanas, mensajes, procesos y subprocesos.  
   
  [Usar Spy++](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy ++ y explica cómo se puede usar.  
+ Presenta la herramienta Spy + + y explica cómo se puede usar.  
   
  [Cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md)  
- Se utiliza para seleccionar qué mensajes se muestran en la vista mensajes.  
+ Se usa para seleccionar los mensajes que aparecen en la vista mensajes.  
   
  [Cuadro de diálogo Propiedades del mensaje](../debugger/message-properties-dialog-box.md)  
  Se utiliza para mostrar las propiedades de un mensaje seleccionado en la vista mensajes.  
   
  [Referencia de Spy++](../debugger/spy-increment-reference.md)  
- Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.
+ Incluye secciones que describen cada menú y cuadro de diálogo de Spy + +.

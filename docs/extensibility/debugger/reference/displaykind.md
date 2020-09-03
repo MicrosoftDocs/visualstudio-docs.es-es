@@ -1,5 +1,5 @@
 ---
-title: DisplayKind (DisplayKind) Microsoft Docs
+title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737252"
 ---
 # <a name="displaykind"></a>DisplayKind
-Enumera los valores válidos que representan los tipos de información que se van a tomar de un [objeto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) y mostrar al usuario.
+Enumera los valores válidos que representan los tipos de información que se tomarán de un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) y se mostrarán al usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ public enum enum_DisplayKind
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `DisplayKind_Value`\
 Valor del campo.
 
@@ -55,9 +55,9 @@ Nombre del campo.
 Tipo de campo.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Ee.h
+Encabezado: EE. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -56,6 +56,6 @@ El entorno controla los comandos guardar, guardar como y guardar todo. Cuando un
 
 2. Llame al <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` método (, `punkWindowFrame` ) para transferir el documento a la nueva jerarquía. La jerarquía que realiza el comando Guardar como llama a este método.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)
