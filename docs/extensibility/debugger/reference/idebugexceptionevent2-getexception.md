@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException ? Microsoft Docs
+title: 'IDebugExceptionEvent2:: GetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729864"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
@@ -41,14 +41,14 @@ int GetException( 
 
 ## <a name="parameters"></a>Parámetros
 `pExceptionInfo`\
-[adentro, fuera] Una [estructura EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) que se rellena con la descripción de la excepción.
+[in, out] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura que se rellena con la descripción de la excepción.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
 
- [Sólo C++] El llamador es responsable de liberar las cadenas en la estructura [EXCEPTION_INFO,](../../../extensibility/debugger/reference/exception-info.md) así como liberar el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto en la estructura.
+ [Solo C++] El autor de la llamada es responsable de liberar cualquier cadena de la estructura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) y de liberar el objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) de la estructura.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6675a136b2bbdc1ef19d90ee19ecf7497053bfe1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282052"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedimiento para activar y desactivar la pluralización (Object Relational Designer)

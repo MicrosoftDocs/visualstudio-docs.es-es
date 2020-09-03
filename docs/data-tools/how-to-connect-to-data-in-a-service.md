@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0b49840a2190abfd223edf5643b8d70da1a59d6b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282233"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedimiento para conectarse a datos de un servicio
@@ -49,7 +49,7 @@ Al finalizar el asistente, se agrega una referencia de servicio al proyecto y es
 
 5. Haga clic en **Aceptar** para agregar una referencia de servicio al proyecto.
 
-6. Haga clic en **Finalizar**.
+6. Haga clic en **Finalizar**
 
      El origen de datos se agrega a la ventana **Orígenes de datos**.
 
