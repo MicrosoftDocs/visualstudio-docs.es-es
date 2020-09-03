@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7726379258ef474b57f1ca4a924413cd93cf80bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672789"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Adjuntar cadenas de referencia a elementos de modelo UML
@@ -42,5 +42,5 @@ Puede escribir código para asociar cadenas arbitrarias a elementos de modelo. U
 |`reference.Delete()`|Elimina este objeto `IReference`.|
 |`ReferenceConstants.WorkItem`|Valor usado para dar un nombre a las referencias de elemento de trabajo.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Definir un controlador de vínculos de elementos de trabajo](../modeling/define-a-work-item-link-handler.md) [definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md) [programar con la API de UML](../modeling/programming-with-the-uml-api.md)

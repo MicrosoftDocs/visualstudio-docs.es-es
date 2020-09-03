@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES ? Microsoft Docs
+title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737061"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
@@ -52,37 +52,37 @@ public enum enum_EVENTATTRIBUTES {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `EVENT_ASYNCHRONOUS`\
-Indica que el evento es asincrónico y que no se necesita respuesta al evento.
+Indica que el evento es asincrónico y no se necesita ninguna respuesta al evento.
 
 `EVENT_SYNCHRONOUS`\
-Indica que el evento es sincrónico; responder mediante [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+Indica que el evento es sincrónico; responder por medio de [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
 
 `EVENT_STOPPING`\
-Indica que se trata de un evento de detención. Debe combinarse `EVENT_ASYNCHRONOUS` con `EVENT_SYNCHRONOUS`cualquiera o .
+Indica que se trata de un evento de detención. Debe combinarse con `EVENT_ASYNCHRONOUS` o `EVENT_SYNCHRONOUS` .
 
 `EVENT_ASYNC_STOP`\
-Indica un evento de detención asincrónico. Actualmente no existe tal evento. Esta marca es solo un marcador de posición.
+Indica un evento de detención asincrónica. Actualmente no hay ningún evento de este tipo. Esta marca es solo un marcador de posición.
 
 `EVENT_SYNC_STOP`\
-Indica un evento de detención `EVENT_SYNCHRONOUS` sincrónico (una combinación de y `EVENT_STOPPING`). Este valor lo utiliza un motor de depuración (DE) cuando envía un evento de detención. La respuesta se realiza mediante una llamada a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)o [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+Indica un evento de detención sincrónica (una combinación de `EVENT_SYNCHRONOUS` y `EVENT_STOPPING` ). Un motor DE depuración (DE) utiliza este valor cuando envía un evento de detención. La respuesta se realiza por medio de una llamada a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)o [continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
 `EVENT_IMMEDIATE`\
-Indica un evento que se envía inmediatamente y sincrónicamente al IDE. Esta marca se combina `EVENT_ASYNCHRONOUS`con `EVENT_SYNCHRONOUS`otras `EVENT_SYNC_STOP` marcas como , , o para indicar el tipo de evento y el hecho de que se conoce el mecanismo de respuesta (si existe).
+Indica un evento que se envía inmediatamente y de forma sincrónica al IDE. Esta marca se combina con otras marcas como `EVENT_ASYNCHRONOUS` , `EVENT_SYNCHRONOUS` o `EVENT_SYNC_STOP` para indicar el tipo de evento y el hecho de que se conoce el mecanismo de respuesta (si existe).
 
 `EVENT_EXPRESSION_EVALUATION`\
-El evento es el resultado de la evaluación de expresiones.
+El evento es el resultado de la evaluación de la expresión.
 
 ## <a name="remarks"></a>Observaciones
-Estos valores se `dwAttrib` pasan en el parámetro de la [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) método.
+Estos valores se pasan en el `dwAttrib` parámetro del método de [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .
 
-Estos valores se pueden combinar `OR`con un archivo .
+Estos valores se pueden combinar con una operación bit a bit `OR` .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

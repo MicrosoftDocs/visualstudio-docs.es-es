@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Mostrar una lista de elementos separados por comas | Microsoft Docs'
+title: Procedimiento Mostrar una lista de elementos separados por comas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156633"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Cómo: Mostrar una lista de elementos separados por comas
@@ -46,7 +46,7 @@ Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../in
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo Phrases.txt. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **/c:** , por lo que el separador de elementos `/c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.  
+ En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo Phrases.txt. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **/c:**, por lo que el separador de elementos `/c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.  
   
  En este ejemplo, el comando de línea de comandos equivalente es:  
   
@@ -69,6 +69,6 @@ Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../in
 </Project>  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [Elementos](../msbuild/msbuild-items.md)

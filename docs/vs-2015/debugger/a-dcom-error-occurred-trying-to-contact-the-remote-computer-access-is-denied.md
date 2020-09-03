@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156531"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Error DCOM al intentar ponerse en contacto con el equipo remoto. Se denegó el acceso.
@@ -33,11 +33,11 @@ ms.locfileid: "68156531"
 
 La depuración remota utiliza DCOM para la comunicación entre el host y los equipos remotos en las siguientes situaciones:  
   
-- El depurador está establecido en el **Modo de compatibilidad nativa** o el **Modo de compatibilidad administrado** está activado en la página **Herramientas / Opciones / Depuración**  
+- El depurador está establecido en **modo de compatibilidad nativo** o el **modo de compatibilidad administrado** está activado en la página **herramientas/opciones/depuración**  
   
 - Está depurando código C++ (C++ / CLI) administrado.  
   
-- En Visual Studio 2013, cuando se activa **Habilitar la opción Editar y continuar nativa** en la página **Herramientas / Opciones / Depuración**  
+- En Visual Studio 2013, cuando se activa habilitar la opción **Editar y continuar nativa** en la página **herramientas/opciones/depuración**  
   
 - Algunos escenarios de depuración de terceros  
   
@@ -51,6 +51,6 @@ La depuración remota utiliza DCOM para la comunicación entre el host y los equ
   
 - Si la depuración remota requiere proporcionar las credenciales, active la opción para guardar las credenciales.  
   
-## <a name="see-also"></a>Vea también  
- [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Consulte también  
+ [Errores y solución de problemas de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

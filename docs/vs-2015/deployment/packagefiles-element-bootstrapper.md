@@ -1,5 +1,5 @@
 ---
-title: '&lt;PackageFiles&gt; (elemento, arranque) | Microsoft Docs'
+title: '&lt;&gt;Elemento PackageFiles (arranque) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188988"
 ---
-# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; (elemento, arranque)
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;&gt;Elemento PackageFiles (arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El `PackageFiles` contiene elemento `PackageFile` elementos, que definen los paquetes de instalación que se ejecuta como resultado de la `Command` elemento.  
+El `PackageFiles` elemento contiene `PackageFile` elementos, que definen los paquetes de instalación que se ejecutan como resultado del `Command` elemento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,28 +44,28 @@ El `PackageFiles` contiene elemento `PackageFile` elementos, que definen los paq
 </PackageFiles>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
- El elemento `PackageFiles` tiene los atributos siguientes:  
+## <a name="elements-and-attributes"></a>Atributos y elementos  
+ El elemento `PackageFiles` tiene el siguiente atributo.  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|Opcional. Si establece en `false`, el instalador descargará sólo los archivos que se hace referencia desde el `Command` elemento. Si establece en `true`, se descargarán todos los archivos.<br /><br /> Si establece en `IfNotHomesite`, el instalador comportará igual como si `False` si `ComponentsLocation` está establecido en `HomeSite`y en caso contrario, se comportará igual como si `True`. Este valor puede ser útil para permitir que los paquetes que son programas previos ejecutar su propio comportamiento en un escenario de HomeSite.<br /><br /> El valor predeterminado es `true`.|  
+|`CopyAllPackageFiles`|Opcional. Si se establece en `false` , el instalador solo descargará los archivos a los que se hace referencia desde el `Command` elemento. Si se establece en `true` , se descargarán todos los archivos.<br /><br /> Si se establece en `IfNotHomesite` , el instalador se comportará igual que si `False` `ComponentsLocation` está establecido en `HomeSite` y, de lo contrario, se comportará igual que si `True` . Esta configuración puede ser útil para permitir que los paquetes que se programas previosn a sí mismos ejecuten su propio comportamiento en un escenario de HomeSite.<br /><br /> El valor predeterminado es `true`.|  
   
 ## <a name="packagefile"></a>PackageFile  
- El `PackageFile` es un elemento secundario de la `PackageFiles` elemento. Un `PackageFiles` elemento debe tener al menos un `PackageFile` elemento.  
+ El `PackageFile` elemento es un elemento secundario del `PackageFiles` elemento. Un `PackageFiles` elemento debe tener al menos un `PackageFile` elemento.  
   
  `PackageFile` tiene los siguientes atributos.  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Necesario. El nombre del archivo del paquete. Este es el nombre que el `Command` elemento hará referencia al define las condiciones en las que se instala un paquete. Este valor también se utiliza como clave en el `Strings` tabla para recuperar el nombre traducido que herramientas como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizará para describir el paquete.|  
-|`HomeSite`|Opcional. La ubicación del paquete en el servidor remoto, si no se incluye con el programa de instalación.|  
-|`CopyOnBuild`|Opcional. Especifica si el programa previo debe copiar el archivo de paquete en el disco en tiempo de compilación. El valor predeterminado es true.|  
-|`PublicKey`|Cifrado clave pública del firmante del certificado del paquete. Es necesario si `HomeSite` se usa; en caso contrario, opcional.|  
-|`Hash`|Opcional. Un hash SHA1 del archivo del paquete. Esto se usa para comprobar la integridad del archivo en tiempo de instalación. Si no se puede calcular el hash idéntico desde el archivo de paquete, no se instalará el paquete.|  
+|`Name`|Necesario. Nombre del archivo de paquete. Este es el nombre al que `Command` hace referencia el elemento cuando define las condiciones en las que se instala un paquete. Este valor también se utiliza como una clave en la `Strings` tabla para recuperar el nombre localizado que herramientas como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usará para describir el paquete.|  
+|`HomeSite`|Opcional. La ubicación del paquete en el servidor remoto, si no se incluye con el instalador.|  
+|`CopyOnBuild`|Opcional. Especifica si el programa previo debe copiar el archivo de paquete en el disco en el momento de la compilación. El valor predeterminado es true.|  
+|`PublicKey`|La clave pública cifrada del firmante del certificado del paquete. Es obligatorio si `HomeSite` se usa; en caso contrario, es opcional.|  
+|`Hash`|Opcional. Un hash SHA1 del archivo de paquete. Se utiliza para comprobar la integridad del archivo en el momento de la instalación. Si no se puede calcular el hash idéntico a partir del archivo de paquete, el paquete no se instalará.|  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo de código siguiente define los paquetes para el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] paquete redistribuible y sus dependencias, como Windows Installer.  
+ En el ejemplo de código siguiente se definen los paquetes para el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] paquete redistribuible y sus dependencias, como el Windows Installer.  
   
 ```  
 <PackageFiles>  
@@ -76,7 +76,7 @@ El `PackageFiles` contiene elemento `PackageFile` elementos, que definen los paq
 </PackageFiles>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [\<Producto > elemento](../deployment/product-element-bootstrapper.md)   
- [\<Paquete > elemento](../deployment/package-element-bootstrapper.md)   
+## <a name="see-also"></a>Consulte también  
+ [\<Product> Element](../deployment/product-element-bootstrapper.md)   
+ [\<Package> Element](../deployment/package-element-bootstrapper.md)   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

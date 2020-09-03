@@ -1,5 +1,5 @@
 ---
-title: FrameINFO ? Microsoft Docs
+title: FRAMEINFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736782"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
@@ -65,51 +65,51 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Miembros
 `m_dwValidFields`\
-Una combinación de indicadores de la [enumeración FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica qué campos se rellenan.
+Combinación de marcas de la enumeración [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica qué campos se rellenan.
 
 `m_bstrFuncName`\
-El nombre de la función asociado al marco de pila.
+Nombre de función asociado al marco de pila.
 
 `m_bstrReturnType`\
 El tipo de valor devuelto asociado al marco de pila.
 
 `m_bstrArgs`\
-Los argumentos de la función asociada al marco de pila.
+Argumentos de la función asociada al marco de pila.
 
 `m_bstrLanguage`\
-El idioma en el que se implementa la función.
+Lenguaje en el que se implementa la función.
 
 `m_bstrModule`\
-El nombre del módulo asociado con el marco de pila.
+Nombre del módulo asociado al marco de pila.
 
 `m_addrMin`\
-La dirección de pila física mínima.
+Dirección de la pila física mínima.
 
 `m_addrMAX`\
-La dirección máxima de la pila física.
+Dirección de la pila física máxima.
 
 `m_pFrame`\
-El [objeto IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa este marco de pila.
+Objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa este marco de pila.
 
 `m_pModule`\
-El [objeto IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que representa el módulo que contiene este marco de pila.
+El objeto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que representa el módulo que contiene este marco de pila.
 
 `m_fHasDebugInfo`\
-No cero`TRUE`( ) si existe información de depuración en la trama dada.
+Distinto de cero ( `TRUE` ) si la información de depuración existe en el marco especificado.
 
 `m_fStaleCode`\
-No cero`TRUE`( ) si el marco de pila está asociado con código que ya no es válido.
+Distinto de cero ( `TRUE` ) si el marco de pila está asociado a código que ya no es válido.
 
 `m_fAnnotatedFrame`\
-No cero`TRUE`( ) si el administrador de depuración de sesión (SDM) anota el marco de pila.
+Distinto de cero ( `TRUE` ) si el administrador de depuración de la sesión (SDM) anota el marco de pila.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) método que se va a rellenar. Esta estructura también está contenida en una lista que se encuentra en el [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaz que, a su vez, se devuelve de una llamada a la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) método.
+Esta estructura se pasa al método [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) que se va a rellenar. Esta estructura también se incluye en una lista incluida en la interfaz [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que, a su vez, se devuelve desde una llamada al método [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

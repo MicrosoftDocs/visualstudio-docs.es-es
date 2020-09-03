@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fc78c4eaacc3ef0a480b913d20537aeebe5bfc01
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539274"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Las excepciones deben ser públicas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|ExceptionsShouldBePublic|
 |Identificador de comprobación|CA1064|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa

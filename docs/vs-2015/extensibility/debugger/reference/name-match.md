@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 742328802af7097fa0c48c82b35688ed0784ce34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205168"
 ---
-# <a name="namematch"></a>NAME_MATCH
+# <a name="name_match"></a>NAME_MATCH
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Selecciona la opción mayúsculas para la coincidencia de nombres.  
+Selecciona la opción de mayúsculas y minúsculas para los nombres coincidentes.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,12 +47,12 @@ public enum NameMatchOptions { 
  No se especifican opciones.  
   
  nmCaseSensitive  
- Indica que los nombres deben coincidir distinguen mayúsculas de minúsculas.  
+ Indica que los nombres que se van a comparar distinguen mayúsculas de minúsculas.  
   
  nmCaseInsensitive  
- Indica que deben coincidir los nombres no distinguen mayúsculas de minúsculas.  
+ Indica que los nombres que se van a comparar no distinguen mayúsculas de minúsculas.  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  Se pasa como argumento a los métodos siguientes:  
   
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
@@ -64,15 +64,15 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)   
  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)   
- [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   
+ [Enumfields (](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   
  [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)

@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE de la Microsoft Docs
+title: GETNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736676"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
@@ -52,7 +52,7 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `GN_NAME`\
 Especifica un nombre descriptivo del documento o contexto.
 
@@ -69,18 +69,18 @@ Especifica un nombre único del documento o contexto en forma de moniker.
 Especifica un nombre de dirección URL del documento o contexto.
 
 `GN_TITLE`\
-Especifica un título del documento, si existe.
+Especifica el título del documento, si existe.
 
 `GN_STARTPAGEURL`\
 Obtiene la dirección URL de la página de inicio de los procesos.
 
 ## <a name="remarks"></a>Observaciones
-Estos valores se pasan como parámetros a los métodos [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)y [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) para especificar qué tipo de nombre se va a devolver.
+Estos valores se pasan como parámetros a los métodos [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)y [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) para especificar el tipo de nombre que se va a devolver.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

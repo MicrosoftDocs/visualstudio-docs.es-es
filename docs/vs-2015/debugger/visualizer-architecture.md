@@ -1,5 +1,5 @@
 ---
-title: Arquitectura del visualizador | Documentos de Microsoft
+title: Arquitectura de un visualizador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82dd990a44984d2e3cc1c84244fbe07ea519fdfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189031"
 ---
 # <a name="visualizer-architecture"></a>Arquitectura de un visualizador
@@ -68,9 +68,9 @@ La arquitectura de un visualizador del depurador tiene dos partes:
 |---------------------|-------------------|  
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A><br /><br /> -O bien-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A>|  
   
- Tenga en cuenta que el proveedor de objetos puede utilizar <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> o <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Cada API genera una llamada a <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A> en el origen de objetos. Una llamada a <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> rellena un ([System.IO.Stream]<!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->), que representa el formato serializado del objeto que se está visualizando.  
+ Tenga en cuenta que el proveedor de objetos puede utilizar <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> o <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Cada API genera una llamada a <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A> en el origen de objetos. Una llamada a <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> rellena en [System. IO. stream] (<!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->), que representa un formato serializado del objeto que se visualiza.  
   
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> vuelve a deserializar los datos en el formato de objeto, que después se puede mostrar en la interfaz de usuario que se cree con <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> rellena los datos como sin formato <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, que debe deserializar. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> funciona mediante una llamada a <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> para obtener el número de serie <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, a continuación, deserializar los datos. Utilice <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> cuando .NET no pueda serializar el objeto y se requiera una serialización personalizada. En tal caso, también deberá reemplazar el método <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName>.  
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> vuelve a deserializar los datos en el formato de objeto, que después se puede mostrar en la interfaz de usuario que se cree con <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> rellena los datos como un dato sin formato <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, que debe deserializar usted mismo. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> funciona llamando <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> a para obtener la serializada <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->y, a continuación, deserializar los datos. Utilice <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> cuando .NET no pueda serializar el objeto y se requiera una serialización personalizada. En tal caso, también deberá reemplazar el método <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName>.  
   
  Si está creando un visualizador de sólo lectura, una comunicación unidireccional con <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> o <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A> será suficiente. Si está creando un visualizador que admite la edición de objetos de datos, el proceso es más complicado. También debe poder enviar un objeto de datos desde el proveedor de objetos de vuelta al origen de objetos. En la siguiente tabla se muestran las API del proveedor de objetos y del origen de objetos que se utilizan para este fin:  
   
@@ -78,9 +78,9 @@ La arquitectura de un visualizador del depurador tiene dos partes:
 |---------------------|-------------------|  
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A><br /><br /> -O bien-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>|  
   
- De nuevo, tenga en cuenta que hay dos API que el proveedor de objetos puede utilizar. Datos siempre se envían desde el proveedor de objetos para el origen del objeto como un <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, pero <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> requiere que serialice el objeto en un <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  --> Tú mismo.  
+ De nuevo, tenga en cuenta que hay dos API que el proveedor de objetos puede utilizar. Los datos siempre se envían desde el proveedor de objetos al origen del objeto como <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, pero <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> requiere que serialice el objeto en un <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  --> personal.  
   
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> toma un objeto que proporcione, lo serializa en un <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, a continuación, llama a <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> para enviar el <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  --> a <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.  
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> toma un objeto que proporciona, lo serializa en un <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->y, a continuación, llama <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> a para enviar el <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  --> a <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.  
   
  Al utilizar uno de los métodos de reemplazo, se crea un nuevo objeto de datos en el código depurado que reemplaza al objeto que está visualizándose. Si desea cambiar el contenido del objeto original sin reemplazarlo, utilice uno de los métodos de transferencia que se muestran en la siguiente tabla. Estas API transfieren los datos en ambas direcciones al mismo tiempo, sin reemplazar el objeto que se está visualizando:  
   
@@ -88,9 +88,9 @@ La arquitectura de un visualizador del depurador tiene dos partes:
 |---------------------|-------------------|  
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> -O bien-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Escritura de un visualizador](../debugger/how-to-write-a-visualizer.md)   
- [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Tutorial: Escritura un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
- [Tutorial: Escritura un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: escribir un visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Tutorial: escribir un visualizador en C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Tutorial: escribir un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [Tutorial: escribir un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Consideraciones de seguridad del visualizador](../debugger/visualizer-security-considerations.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Cambiar la ubicación de binarios instrumentados | Microsoft Docs
+title: 'Cómo: Cambiar la ubicación de binarios instrumentados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155515"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>Procedimiento Reubicación de binarios instrumentados
+# <a name="how-to-relocate-instrumented-binaries"></a>Cómo: Cambiar la ubicación de binarios instrumentados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Durante la instrumentación, se insertan análisis en el binario para medir el rendimiento de la aplicación. Si opta por reubicar el binario instrumentado, se instrumenta una copia del binario original y se coloca en la ubicación especificada. Esta opción es útil si no desea que el generador de perfiles cambie el nombre del binario original. Si el binario no se reubica, se sobrescribe su versión original.  
@@ -42,6 +42,6 @@ Durante la instrumentación, se insertan análisis en el binario para medir el r
   
 4. Especifique la ubicación del binario instrumentado.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [VSInstr](../profiling/vsinstr.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d967bd1f7a425ccd9dda5a938535788d961352f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672878"
 ---
 # <a name="security-in-visual-studio"></a>Seguridad en Visual Studio
@@ -32,6 +32,6 @@ Las consideraciones sobre seguridad se deben aplicar a todo el desarrollo de la 
 ## <a name="coding-for-security"></a>Codificación de seguridad
  La mayoría de los errores de codificación que tienen como resultado la aparición de puntos vulnerables de seguridad se producen porque los programadores no hacen suposiciones válidas cuando trabajan con los datos que proporciona el usuario o porque no acaban de entender la plataforma para la que están desarrollando.
 
- En la [guía de codificación segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) se proporcionan instrucciones para clasificar los componentes a fin de solucionar problemas de seguridad.
+ [Instrucciones de codificación segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) Proporciona instrucciones para clasificar los componentes para solucionar problemas de seguridad.
 
- En el artículo [Procedimientos recomendados de seguridad](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) se explican las saturaciones del búfer y se incluye una descripción completa de la característica de comprobación de seguridad de Microsoft Visual C++ que proporciona el marcador en tiempo de compilación /GS.
+ [Prácticas recomendadas de seguridad](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Describe las saturaciones del búfer y la imagen completa de la característica Microsoft Visual C++ comprobaciones de seguridad que proporciona la marca de tiempo de compilación/GS.

@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO Microsoft Docs
+title: EXCEPTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737018"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
-Describe una excepción o error en tiempo de ejecución que produce el programa que se está depurando.
+Describe una excepción o un error en tiempo de ejecución producido por el programa que se está depurando.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,34 +51,34 @@ public struct EXCEPTION_INFO {
 
 ## <a name="members"></a>Miembros
 `pProgram`\
-El [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa en el que se produjo la excepción.
+Objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa en el que se produjo la excepción.
 
 `bstrProgramName`\
-El nombre del programa en el que se produjo la excepción.
+Nombre del programa en el que se produjo la excepción.
 
 `bstrExceptionName`\
 Nombre de la excepción.
 
 `dwCode`\
-El código de identificación para la excepción o el error en tiempo de ejecución.
+Código de identificación para la excepción o el error en tiempo de ejecución.
 
 `dwState`\
-Valor de la [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) enumeración que define el estado de la excepción.
+Un valor de la enumeración [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) que define el estado de la excepción.
 
 `guidType`\
-Identificador de idioma `guidLang` GUID, o `guidEng`.
+Identificador de idioma GUID, ya sea `guidLang` o `guidEng` .
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura se pasa como un parámetro a la [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) y [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) métodos. Esta estructura también se pasa a la [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) método que se va a rellenar.
+Esta estructura se pasa como parámetro a los métodos [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) y [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) . Esta estructura también se pasa al método [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) que se va a rellenar.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

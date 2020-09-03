@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId ? Microsoft Docs
+title: 'IDebugProgram2:: GetProgramId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8bb172f48b63ef2ec182f1a83d599a91eff1e2ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722774"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
@@ -41,15 +41,15 @@ int GetProgramId( 
 
 ## <a name="parameters"></a>Parámetros
 `pguidProgramId`\
-[fuera] Devuelve `GUID` el programa para este programa.
+enuncia Devuelve el `GUID` para este programa.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Un motor de depuración (DE) debe devolver el identificador de programa pasado originalmente a los métodos [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) o [Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md) Esto permite identificar el programa entre los componentes del depurador.
+ Un motor DE depuración (DE) debe devolver el [identificador del programa](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) que se pasó originalmente a los métodos Attach o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) . Esto permite identificar el programa en todos los componentes del depurador.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)
-- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md)

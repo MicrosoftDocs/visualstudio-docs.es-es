@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911772"
 ---
-# <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script de Windows PowerShell)
+# <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publicación de WebApplicationWebSite (script de Windows PowerShell)
 ## <a name="syntax"></a>Sintaxis
 Publica un proyecto web en un sitio web de Azure. El script crea los recursos necesarios en su suscripción de Azure si no existen.
 
@@ -35,62 +35,62 @@ La ruta de acceso al archivo de configuración JSON que describe los detalles de
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |true |
+| Alias |None |
+| ¿Necesario? |true |
 | Posición |con nombre |
-| Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |None |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 Nombre de la suscripción de Azure en la que desea crear el sitio web.
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |False |
+| Alias |None |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |None |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
 La ruta de acceso al paquete de implementación web para publicar en el sitio web. Puede crear este paquete mediante el Asistente de publicación web en Visual Studio. Para obtener más información, consulte [Introducción a Azure Cloud Services y ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md).
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |False |
+| Alias |None |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |None |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 El nombre de usuario y la contraseña de la base de datos SQL en Azure.
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |False |
+| Alias |None |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |None |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Si es true, imprimir mensajes del script a la secuencia de salida.
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |False |
+| Alias |None |
+| ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |False |
-| ¿Aceptar la entrada de la canalización? |False |
-| ¿Aceptar caracteres comodín? |False |
+| Valor predeterminado |false |
+| ¿Aceptar la entrada de la canalización? |false |
+| ¿Aceptar caracteres comodín? |false |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 Para obtener una explicación completa de cómo usar el script para crear entornos de desarrollo y pruebas, consulte [Usar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 El archivo de configuración JSON especifica los detalles de lo que va a implementarse. Incluye la información que especificó cuando creó el proyecto, como el nombre y el nombre de usuario para el sitio web. También incluye la base de datos que se va a aprovisionar, si la hubiera. El código siguiente muestra un archivo de configuración de JSON de ejemplo:
@@ -122,4 +122,4 @@ El archivo de configuración JSON especifica los detalles de lo que va a impleme
 Puede editar el archivo de configuración de JSON para cambiar lo que se implementa. Una sección webSite es obligatoria pero la sección database es opcional.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Para más información, consulte [Publish-WebApplicationVM (script de Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md).
+Para obtener más información, consulte [Publish-WebApplicationVM (script de Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md).

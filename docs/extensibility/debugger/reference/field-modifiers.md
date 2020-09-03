@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS Microsoft Docs
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736854"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
@@ -104,9 +104,9 @@ public enum enum_FIELD_MODIFIERS {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `FIELD_MOD_ACCESS_TYPE`\
-Indica que no se puede acceder al campo.
+Indica que no se puede tener acceso al campo.
 
 `FIELD_MOD_ACCESS_PUBLIC`\
 Indica que el campo tiene acceso público.
@@ -130,7 +130,7 @@ Indica que el campo es una constante.
 Indica que el campo es transitorio.
 
 `FIELD_MOD_VOLATILE`\
-Indica que el campo es volátil.
+Indica que el campo es volatile.
 
 `FIELD_MOD_ABSTRACT`\
 Indica que el campo es abstracto.
@@ -160,38 +160,38 @@ Indica que el campo es una clase interna.
 Indica que el campo es opcional.
 
 `FIELD_MOD_BYREF`\
-Indica que el campo es un argumento de referencia. Esto es específicamente para argumentos de método.
+Indica que el campo es un argumento de referencia. Se trata específicamente de los argumentos de método.
 
 `FIELD_MOD_HIDDEN`\
-Indica que el campo debe estar oculto o presentarse en otro contexto; por ejemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] locales estáticos.
+Indica que el campo se debe ocultar o presentar en otro contexto; por ejemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variables locales estáticas.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Indica que el campo representa un `IUnknown` objeto con una interfaz.
+Indica que el campo representa un objeto con una `IUnknown` interfaz.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Indica que el campo tiene un nombre `.ctor` especial,[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] por ejemplo, para un constructor (solo).
+Indica que el campo tiene un nombre especial, por ejemplo, `.ctor` para un constructor ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
 
 `FIELD_MOD_HIDEBYSIG`\
-Indica que el campo `Overloads` tiene la[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] palabra clave aplicada (solo).
+Indica que el campo tiene la `Overloads` palabra clave aplicada ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
 
 `FIELD_MOD_WRITEONLY`\
-Indica que el campo es de solo escritura. Este valor no `FIELD_MOD_ALL`se incluye en , ya que el único uso de estos campos de solo escritura es para la evaluación de funciones. Un usuario debe solicitar `FIELD_MOD_WRITEONLY` explícitamente campos.
+Indica que el campo es de solo escritura. Este valor no se incluye en `FIELD_MOD_ALL` , ya que el único uso de estos campos de solo escritura es para la evaluación de la función. Un usuario debe solicitar explícitamente `FIELD_MOD_WRITEONLY` los campos.
 
 `FIELD_MOD_ACCESS_MASK`\
-Indica una máscara para el acceso de campo.
+Indica una máscara para el acceso al campo.
 
 `FIELD_MOD_MASK`\
 Indica una máscara para los modificadores de campo.
 
 ## <a name="remarks"></a>Observaciones
-Se utiliza `dwModifiers` para el miembro de la estructura [FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
+Se utiliza para el `dwModifiers` miembro de la estructura [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .
 
-Estos valores también se pasan al método [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) para filtrar por campos específicos.
+Estos valores también se pasan al método [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) para filtrar los campos específicos.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: sh.h
+Encabezado: SH. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

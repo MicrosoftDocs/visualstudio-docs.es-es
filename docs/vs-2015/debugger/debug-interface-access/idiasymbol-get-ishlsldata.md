@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd67253ffeb266ba1d700b7271e95e9e40c736ce
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155896"
 ---
-# <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
+# <a name="idiasymbolget_ishlsldata"></a>IDiaSymbol::get_isHLSLData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica si este símbolo representa datos de sombreador lenguaje HLSL (High Level).  
+Especifica si este símbolo representa datos de lenguaje de sombreado de alto nivel (HLSL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,10 +32,10 @@ HRESULT get_isHLSLData(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si este símbolo representa datos HLSL.  
+ enuncia Un puntero a un `BOOL` que especifica si este símbolo representa datos HLSL.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

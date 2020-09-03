@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cdd069e8b17bcc26e067e0927ceef8cd9b1125a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658007"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de la mesa de trabajo en Blend
@@ -21,7 +21,7 @@ ms.locfileid: "72658007"
 
 Algunos métodos abreviados de teclado no tienen elementos de menú asociados, lo que significa que no puede usar la interfaz de usuario de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] para descubrirlos. La siguiente tabla contiene los métodos abreviados que modifican una acción, por ejemplo, cambiar el tamaño de un objeto.
 
-|Para esta acción|Haga esto|
+|Para realizar esta acción|Haga esto|
 |-----------------------|-------------|
 |Seleccionar de forma temporal la herramienta **Selección** al mismo tiempo que se mantiene seleccionada otra herramienta (esto reduce el número de veces que tiene que hacer clic en algo en el panel **Herramientas** y cambiar de este panel a la herramienta **Selección** y otras herramientas, y viceversa)|Mantener presionada la tecla CTRL|
 |Desplazar objetos seleccionados mientras está seleccionada la herramienta **Selección**|Presionar las teclas de dirección|
@@ -42,5 +42,5 @@ Algunos métodos abreviados de teclado no tienen elementos de menú asociados, l
 |Cambiar entre los documentos abiertos|Presionar CTRL+TAB|
 |Abrir el panel **Activos**|Presionar CTRL+PUNTO|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Métodos abreviados de teclado](../designers/keyboard-shortcuts-in-blend.md) [herramienta pluma teclas modificadoras](../designers/pen-tool-modifier-keys-in-blend.md) [selección directa teclas modificadoras de herramienta](../designers/direct-selection-tool-modifier-keys-in-blend.md)

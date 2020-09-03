@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 24bb6160f9895f129c4d7d36c2b0aa8a56ca282a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657899"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -36,7 +36,7 @@ devenv SolutionFile | ProjectFile /upgrade
 
  `ProjectFile` Necesario si va a actualizar un único proyecto. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Se puede escribir solo el nombre del archivo de proyecto o una ruta de acceso completa y el nombre del archivo de proyecto. Si la carpeta o el archivo especificados no existen todavía, se crean.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Se crean automáticamente copias de seguridad y se copian en un directorio denominado Backup que se crea en el directorio actual.
 
  Se deben desproteger las soluciones o los proyectos bajo el control de código fuente antes de poderse actualizar.
@@ -50,5 +50,5 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Cómo: solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [Modificadores](../../ide/reference/devenv-command-line-switches.md) de la línea de comandos de devenv

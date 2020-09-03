@@ -1,5 +1,5 @@
 ---
-title: 'ADVERTENCIA: el archivo &#39;&#39; de dependencia del &#39;proyecto&#39; de proyecto no se puede copiar en el directorio de ejecución porque sobrescribiría &#39;el archivo de referencia. &#39; | Microsoft Docs'
+title: 'ADVERTENCIA: no se puede copiar el archivo de dependencia &#39;&#39; en Project &#39;Project&#39; en el directorio de ejecución porque sobrescribiría el archivo de &#39;de referencia. &#39; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a619168bd07fde5d27e5c3d87dc46f505cf5268d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672820"
 ---
-# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>ADVERTENCIA: el archivo &#39;&#39; de dependencia del &#39;proyecto&#39; de proyecto no se puede copiar en el directorio de ejecución porque sobrescribiría &#39;el archivo de referencia.&#39;
+# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>ADVERTENCIA: el archivo de &#39;de dependencia&#39; en Project &#39;Project&#39; no se puede copiar en el directorio de ejecución porque sobrescribiría el archivo de &#39;de referencia. &#39;
 Existe un conflicto entre dependencias; para que la aplicación se ejecute se debería copiar más de un archivo de ensamblado distinto con el mismo nombre en el directorio bin. El directorio de ejecución puede resolver el conflicto, ya que una de las dependencias es una referencia principal.
 
  Para ir al nodo de referencia principal en conflicto, haga doble clic en este elemento Lista de tareas.
@@ -33,5 +33,5 @@ Existe un conflicto entre dependencias; para que la aplicación se ejecute se de
 
 - Copie un archivo de ensamblado (o ninguno) en el directorio bin, lo que se puede hacer colocando los archivos de ensamblado en la memoria caché global de ensamblados. La memoria caché global de ensamblados soluciona los conflictos de nombre de archivo. No se realizarán copias locales del archivo de ensamblado, porque Common Language Runtime sabe cómo buscar ensamblados en la memoria caché global de ensamblados. Para obtener más información, vea [Working with Assemblies and the Global Assembly Cache](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) y [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Administrar referencias en una](../ide/managing-references-in-a-project.md) [caché global de ensamblados](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) de un proyecto [Cómo: crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)

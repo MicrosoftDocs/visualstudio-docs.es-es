@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155266"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity
@@ -24,7 +24,7 @@ En esta sección conocerá Visual Studio Tools para Unity, una extensión gratui
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity  
  **Unity** es un entorno de desarrollo y un motor de juegos para crear juegos multiplataforma. El motor de Unity se ejecuta en más de una docena de plataformas, como PC, consolas de juegos, tabletas táctiles, teléfonos móviles, e incluso en sitios web. El editor de Unity proporciona una interfaz sencilla para crear mundos de juegos enriquecidos. La capacidad, facilidad de uso y alcance de Unity hace que sea una opción popular entre los desarrolladores de juegos de hoy en día.  
   
- Aunque el editor de Unity es una herramienta excelente para montar juegos, no se puede escribir código en él. Con **Visual Studio Tools para Unity**, puede usar las ya conocidas características de edición de código, depuración y productividad de Visual Studio para crear scripts de editor y juego para su proyecto Unity mediante C# que puede depurar con las eficaces funciones de depuración de Visual Studio.  
+ Aunque el editor de Unity es una herramienta excelente para montar juegos, no se puede escribir código en él. Con **Visual Studio Tools para Unity**, puede usar las conocidas características de edición de código, depuración y productividad de Visual Studio para crear scripts de editor y juego para su proyecto de Unity con C#, y puede depurarlos con las eficaces capacidades de depuración de Visual Studio.  
   
  Pero Visual Studio Tools para Unity es más que eso, también se integra perfectamente con el editor de Unity para que pase menos tiempo cambiando continuamente para realizar tareas sencillas, ofrece mejoras de productividad específicas para Unity y coloca la documentación de Unity a su alcance.  
   

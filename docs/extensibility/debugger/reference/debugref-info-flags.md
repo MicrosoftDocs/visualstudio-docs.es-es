@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS Microsoft Docs
+title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737390"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
@@ -56,27 +56,27 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `DEBUGREF_INFO_NAME`\
-Inicializar/utilizar `bstrName` el campo de la estructura.
+Inicializar/usar el `bstrName` campo en la estructura.
 
 `DEBUGREF_INFO_TYPE`\
-Inicializar/utilizar `bstrType` el campo de la estructura.
+Inicializar/usar el `bstrType` campo en la estructura.
 
 `DEBUGREF_INFO_VALUE`\
-Inicializar/utilizar `bstrValue` el campo de la estructura.
+Inicializar/usar el `bstrValue` campo en la estructura.
 
 `DEBUGREF_INFO_ATTRIB`\
-Inicializar/utilizar `dwAttrib` el campo de la estructura.
+Inicializar/usar el `dwAttrib` campo en la estructura.
 
 `DEBUGREF_INFO_REFTYPE`\
-Inicializar/utilizar `dwRefType` el campo de la estructura.
+Inicializar/usar el `dwRefType` campo en la estructura.
 
 `DEBUGREF_INFO_REF`\
-Inicializar/utilizar `pReference` el campo de la estructura.
+Inicializar/usar el `pReference` campo en la estructura.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-El campo value debe contener el valor expandido automáticamente, si está disponible, para este tipo de objeto.
+El campo de valor debe contener el valor de expansión automática, si está disponible, para este tipo de objeto.
 
 `DEBUGREF_INFO_NONE`\
 Indica que no se ha establecido ninguna marca.
@@ -85,16 +85,16 @@ Indica que no se ha establecido ninguna marca.
 Indica una máscara de las marcas.
 
 ## <a name="remarks"></a>Observaciones
-Estos indicadores se pasan a los métodos [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) y [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) para indicar qué campos de la estructura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) se van a inicializar.
+Estas marcas se pasan a los métodos [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) y [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) para indicar qué campos de la estructura de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) se van a inicializar.
 
-Se utiliza `dwFields` para `DEBUG_REFERENCE_INFO` el miembro de la estructura para indicar qué campos se utilizan y son válidos cuando se devuelve la estructura.
+Se utiliza para que el `dwFields` miembro de la `DEBUG_REFERENCE_INFO` estructura indique qué campos se usan y son válidos cuando se devuelve la estructura.
 
-Estos valores se pueden combinar `OR`con un archivo .
+Estos valores se pueden combinar con una operación bit a bit `OR` .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

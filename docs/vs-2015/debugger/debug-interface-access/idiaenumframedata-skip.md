@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ff8b58f6d36e9ce9759e2672f7e438bc0019fc1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179494"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Omite un número especificado de elementos de datos del marco en una secuencia de enumeración.  
+Omite un número especificado de elementos de datos de marco en una secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] El número de elementos de datos de marco en la secuencia de enumeración que se omitirán.  
+ de El número de elementos de datos de marco en la secuencia de enumeración que se va a omitir.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no existen más registros que se omitirán.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve si no hay `S_FALSE` más registros para omitir.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

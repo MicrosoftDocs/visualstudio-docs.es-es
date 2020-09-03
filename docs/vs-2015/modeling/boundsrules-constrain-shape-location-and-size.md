@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d660189ede0848216eb44d6ef49fe9c93a06ec8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672727"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Ubicación y tamaño de las reglas de restricción de formas BoundsRules
@@ -25,7 +25,7 @@ Una *regla de límites* es una clase que define los límites en el tamaño y la 
 
  En el ejemplo siguiente se restringe una forma rectangular para que sea una barra de tamaño fijo, ya sea horizontal o vertical. Cuando el usuario arrastra las esquinas o los lados, el contorno se voltea entre las dos configuraciones permitidas de alto y ancho.
 
- La regla de límites es una clase derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Se crea una instancia de la regla en la forma:
+ La regla de límites es una clase derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> . Se crea una instancia de la regla en la forma:
 
 ```
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -67,5 +67,5 @@ public class BarBoundsRule: BoundsRules
 
  Tenga en cuenta que la ubicación y el tamaño se pueden restringir si lo desea.
 
-## <a name="see-also"></a>Vea también
- <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)
+## <a name="see-also"></a>Consulte también
+ <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)

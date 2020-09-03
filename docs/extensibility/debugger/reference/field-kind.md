@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND Microsoft Docs
+title: FIELD_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736862"
 ---
 # <a name="field_kind"></a>FIELD_KIND
-Especifica el tipo de campo contenido en un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
+Especifica el tipo de campo contenido en un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -124,12 +124,12 @@ public enum enum_FIELD_KIND {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `FIELD_KIND_TYPE`\
 Indica que el campo es solo un tipo.
 
 `FIELD_KIND_SYMBOL`\
-Indica que el campo es un símbolo, con tipo, nombre y otra información.
+Indica que el campo es un símbolo, con el tipo, el nombre y otra información.
 
 `FIELD_TYPE_PRIMITIVE`\
 Indica que el campo es un tipo de datos primitivo.
@@ -144,7 +144,7 @@ Indica que el campo es una clase.
 Indica que el campo es una interfaz.
 
 `FIELD_TYPE_UNION`\
-Indica que el campo es una unión.
+Indica que el campo es una Unión.
 
 `FIELD_TYPE_ARRAY`\
 Indica que el campo es una matriz.
@@ -165,7 +165,7 @@ Indica que el campo es un tipo de datos enumerado.
 Indica que el campo es una etiqueta.
 
 `FIELD_TYPE_TYPEDEF`\
-Indica que el campo es una indef de tipo.
+Indica que el campo es una definición de tipo.
 
 `FIELD_TYPE_BITFIELD`\
 Indica que el campo es un campo de bits.
@@ -189,7 +189,7 @@ Indica que el campo es una clase interna.
 Indica que el campo es una referencia.
 
 `FIELD_TYPE_EXTENDED`\
-Reservado para uso futuro.
+Reservado para un uso futuro.
 
 `FIELD_SYM_MEMBER`\
 Indica que el campo es un miembro.
@@ -213,7 +213,7 @@ Indica que el campo recupera propiedades.
 Indica que el campo establece propiedades.
 
 `FIELD_SYM_EXTENDED`\
-Reservado para uso futuro.
+Reservado para un uso futuro.
 
 `FIELD_KIND_MASK`\
 Indica una máscara para los tipos de campo.
@@ -222,17 +222,17 @@ Indica una máscara para los tipos de campo.
 Indica una máscara para los tipos de campo.
 
 `FIELD_SYM_MASK`\
-Indica una máscara para la información del símbolo.
+Indica una máscara para la información de símbolos.
 
 ## <a name="remarks"></a>Observaciones
-Se devuelve de una llamada a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método.
+Se devuelve de una llamada al método [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .
 
-Dependiendo del tipo de campo, [QueryInterface](/cpp/atl/queryinterface) se puede llamar en el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz para una forma más específica de interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) `FIELD_TYPE_METHOD`devuelve `QueryInterface` ,`DebugField` puede llamar a I para obtener el [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaz.
+En función del tipo de campo, se puede llamar a [QueryInterface](/cpp/atl/queryinterface) en la interfaz [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) para obtener una forma más específica de la interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_METHOD` , puede llamar a `QueryInterface` en I `DebugField` para obtener la interfaz [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: sh.h
+Encabezado: SH. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

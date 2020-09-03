@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657853"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
@@ -37,21 +37,21 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 
 |Nombre de comando|Alias|Nombre completo|
 |------------------|-----------|-------------------|
-|[Imprimir (Comando)](../../ide/reference/print-command.md)|?|Debug.Print|
-|[Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
+|[Comando imprimir](../../ide/reference/print-command.md)|?|Debug.Print|
+|[Inspección rápida (comando)](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Agregar nuevo proyecto|AddProj|File.AddNewProject|
-|[Alias (Comando)](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
+|[Alias (comando)](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
 |Ventana Automático|Autos|Debug.Autos|
 |ventana Puntos de interrupción|bl|Debug.Breakpoints|
-|Alternar punto de interrupción|bp|Debug.ToggleBreakPoint|
+|Alternar puntos de interrupción|bp|Debug.ToggleBreakPoint|
 |Ventana Pila de llamadas|CallStack|Debug.CallStack|
 |Borrar marcadores|ClearBook|Edit.ClearBookmarks|
 |Cerrar|Cerrar|File.Close|
 |Cerrar todos los documentos|CloseAll|Window.CloseAllDocuments|
 |Borrar todo|cls|Edit.ClearAll|
 |Modo Comando|cmd|View.CommandWindow|
-|Ver código|code|View.ViewCode|
-|[Mostrar memoria (comando)](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
+|Ver código|código|View.ViewCode|
+|[Comando Mostrar memoria](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
 |[Comando Mostrar memoria](../../ide/reference/list-memory-command.md) como ANSI|da|Debug.ListMemory /Ansi|
 |[Comando Mostrar memoria](../../ide/reference/list-memory-command.md) con formato de un byte|db|Debug.ListMemory /Format:OneByte|
 |[Comando Mostrar memoria](../../ide/reference/list-memory-command.md) como ANSI con formato de cuatro bytes|dc|Debug.ListMemory /Format:FourBytes /Ansi|
@@ -64,53 +64,53 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |ventana Desensamblado|disasm|Debug.Disassembly|
 |[Comando Mostrar memoria](../../ide/reference/list-memory-command.md) con formato de ocho bytes|dq|Debug.ListMemory /Format:EightBytes|
 |[Comando Mostrar memoria](../../ide/reference/list-memory-command.md) como Unicode|du|Debug.ListMemory /Unicode|
-|[Evaluar instrucción (Comando)](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
+|[Evaluar instrucción (comando)](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
 |Salir|Salir|File.Exit|
 |Dar formato a la selección|format|Edit.FormatSelection|
 |Pantalla completa|FullScreen|View.FullScreen|
-|[Iniciar (Comando)](../../ide/reference/start-command.md)|e|Debug.Start|
-|[Ir a (Comando)](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
+|[Iniciar (comando)](../../ide/reference/start-command.md)|g|Debug.Start|
+|[Ir a (comando)](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Ir a llave|GotoBrace|Edit.GotoBrace|
 |F1Help|Ayuda|Help.F1Help|
-|Modo Inmediato|immed|Tools.ImmediateMode|
+|Modo inmediato|immed|Tools.ImmediateMode|
 |Insertar archivo como texto|InsertFile|Edit.InsertFileAsText|
-|[Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
+|[Comando Mostrar pila de llamadas](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
 |Poner en minúsculas|Lcase|Edit.MakeLowercase|
 |Cortar línea|LineCut|Edit.LineCut|
 |Eliminar línea|LineDel|Edit.LineDelete|
 |Lista de miembros|ListMembers|Edit.ListMembers|
 |Ventana Locales|Locals|Debug.Locals|
-|[Registrar resultados de la ventana de comandos (Comando)](../../ide/reference/log-command-window-output-command.md)|Registro|Tools.LogCommandWindowOutput|
+|[Comando registrar resultado de la ventana comandos](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
 |Modo Marcar ventana de comandos|mark|Tools.CommandWindowMarkMode|
 |Ventana Memoria|Memory Memory1|Debug.Memory1|
 |Ventana Memoria 2|Memory2|Debug.Memory2|
 |Ventana Memoria 3|Memory3|Debug.Memory3|
 |Ventana Memoria 4|Memory4|Debug.Memory4|
 |[Establecer base (comando)](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
-|[ShowWebBrowser (Comando)](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
+|[Comando Showwebbrowser (](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Marcador siguiente|NextBook|Edit.NextBookmark|
-|[Nuevo archivo (Comando)](../../ide/reference/new-file-command.md)|nf|File.NewFile|
-|nuevo proyecto|np NewProj|File.NewProject|
+|[Comando nuevo archivo](../../ide/reference/new-file-command.md)|nf|File.NewFile|
+|Nuevo proyecto|np NewProj|File.NewProject|
 |[Abrir archivo (comando)](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
-|[Abrir proyecto (Comando)](../../ide/reference/open-project-command.md)|op|File.OpenProject|
+|[Abrir proyecto (comando)](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Contraer a definiciones/Detener esquematización|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|
 |Paso a paso por procedimientos|p|Debug.StepOver|
 |Información de parámetros|ParamInfo|Edit.ParameterInfo|
-|Paso a paso para salir|pr|Debug.StepOut|
+|Depurar paso a paso para salir|pr|Debug.StepOut|
 |Marcador anterior|PrevBook|Edit.PreviousBookmark|
-|Imprimir archivo|print|File.Print|
-|Propiedades (ventana)|props|View.PropertiesWindow|
-|Detener|q|Debug.StopDebugging|
-|Redo|redo|Edit.Redo|
+|Imprimir archivo|imprimir|File.Print|
+|Ventana Propiedades|props|View.PropertiesWindow|
+|Stop|q|Debug.StopDebugging|
+|Rehacer|rehacer|Edit.Redo|
 |Ventana Registros|registers|Debug.Registers|
 |Ejecutar hasta el cursor|rtc|Debug.RunToCursor|
-|Guardar los elementos seleccionados|save|File.SaveSelectedItems|
+|Guardar los elementos seleccionados|Guardar|File.SaveSelectedItems|
 |Guardar todo|SaveAll|File.SaveAll|
 |Guardar como|SaveAs|File.SaveSelectedItemsAs|
-|[Shell (comando)](../../ide/reference/shell-command.md)|shell|Tools.Shell|
+|[Comando de Shell](../../ide/reference/shell-command.md)|shell|Tools.Shell|
 |Detener Buscar en archivos|StopFind|Edit.FindInFiles /stop|
 |Cambiar delimitador|SwapAnchor|Edit.SwapAnchor|
-|Paso a paso por instrucciones|m|Debug.StepInto|
+|Paso a paso por instrucciones|t|Debug.StepInto|
 |Aplicar tabulación a la selección|tabify|Edit.TabifySelection|
 |Ventana Lista de tareas|TaskList|View.TaskList|
 |Ventana Subprocesos|Subprocesos|Debug.Threads|
@@ -120,12 +120,12 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |Ventana Cuadro de herramientas|cuadro de herramientas|View.Toolbox|
 |[Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Poner en mayúsculas|Ucase|Edit.MakeUppercase|
-|Undo|undo|Edit.Undo|
+|Deshacer|deshacer|Edit.Undo|
 |Quitar tabulación a la selección|Untabify|Edit.UntabifySelection|
 |Ventana Inspección|Watch|Debug.WatchN|
 |Alternar ajuste de línea|WordWrap|Edit.ToggleWordWrap|
 |Mostrar procesos|&#124;|Debug.ListProcesses|
-|[Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
+|[Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Cuadro de comandos [Buscar/comando](../../ide/find-command-box.md) de la [ventana](../../ide/reference/command-window.md) comandos de [Visual Studio](../../ide/reference/visual-studio-commands.md)

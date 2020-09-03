@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a7e7c184fd150c46b3a8be0ec583d4223487ad32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672770"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
@@ -39,9 +39,9 @@ ms.locfileid: "72672770"
 Se pueden almacenar diferentes configuraciones de propiedades de solución y de proyecto para utilizar en distintos tipos de compilaciones. Para crear, seleccionar, modificar o eliminar una configuración, se puede usar el **Administrador de configuración**. Para abrirlo, en la barra de menús, seleccione **Compilación**, **Administrador de configuración**, o simplemente escriba **Configuración** en el cuadro **Inicio rápido**. También se puede usar la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar** para seleccionar una configuración o abrir el **Administrador de configuración**.
 
 > [!NOTE]
-> Si no se pueden encontrar los valores de configuración de soluciones en la barra de herramientas y no se puede tener acceso al **Administrador de configuración**, se puede aplicar la configuración de desarrollo de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Para más información, vea [Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Si no puede encontrar la configuración de la solución en la barra de herramientas y no puede tener acceso a la **Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] se puede aplicar la configuración de desarrollo. Para más información, vea [Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
- De forma predeterminada, las configuraciones Debug y Release se incluyen en los proyectos creados mediante plantillas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Una configuración Debug admite la depuración de una aplicación y una configuración Release compila una versión de la aplicación que se puede implementar. Para más información, vea [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). También se pueden crear configuraciones de soluciones personalizadas y configuraciones de proyecto. Para obtener más información, consulte [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
+ De forma predeterminada, las configuraciones Debug y Release se incluyen en los proyectos creados mediante plantillas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Una configuración Debug admite la depuración de una aplicación y una configuración Release compila una versión de la aplicación que se puede implementar. Para obtener más información, vea [Cómo: Establecimiento de configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). También se pueden crear configuraciones de soluciones personalizadas y configuraciones de proyecto. Para obtener más información, consulte [Cómo: crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Configuraciones de soluciones
  Una configuración de soluciones especifica el modo en que se van a compilar e implementar los proyectos de la solución. Para modificar una configuración de soluciones o definir una nueva, en el **Administrador de configuración**, en **Configuración de soluciones activas**, seleccione **Editar** o **Nueva**.
@@ -55,8 +55,8 @@ Se pueden almacenar diferentes configuraciones de propiedades de solución y de 
 
  La configuración de soluciones activas también proporciona contexto al IDE. Por ejemplo, si se está trabajando en un proyecto y la configuración especifica que se va a compilar para un dispositivo móvil, en el **Cuadro de herramientas** solo se muestran los elementos que se pueden usar en un proyecto de dispositivo móvil.
 
-## <a name="project-configurations"></a>Configuraciones de proyectos
- La configuración y la plataforma de destino de proyecto se utilizan conjuntamente para especificar las propiedades que se desean utilizar al compilar el proyecto. Un proyecto puede tener un conjunto diferente de definiciones de propiedad para cada combinación de configuración y plataforma. Para modificar las propiedades de un proyecto, se pueden utilizar sus Páginas de propiedades. (En el **Explorador de soluciones**, abra el menú contextual del proyecto y seleccione **Propiedades**).
+## <a name="project-configurations"></a>Configuraciones del proyecto
+ La configuración y la plataforma de destino de proyecto se utilizan conjuntamente para especificar las propiedades que se desean utilizar al compilar el proyecto. Un proyecto puede tener un conjunto diferente de definiciones de propiedad para cada combinación de configuración y plataforma. Para modificar las propiedades de un proyecto, se pueden utilizar sus Páginas de propiedades. (En **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **propiedades**).
 
  Para cada configuración de proyecto se pueden definir las propiedades dependientes de la configuración que se necesiten. Por ejemplo, para una compilación determinada, se puede establecer qué elementos del proyecto se van a incluir, qué archivos de salida se van a crear, dónde se van a colocar y cómo se van a optimizar.
 
@@ -69,7 +69,7 @@ Se pueden almacenar diferentes configuraciones de propiedades de solución y de 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Cómo asigna Visual Studio las configuraciones de proyecto
  Si se define una nueva configuración de soluciones y no se copian valores de una configuración existente, Visual Studio utiliza los siguientes criterios para asignar las configuraciones de proyecto predeterminadas. Los criterios se evalúan en el orden mostrado.
 
-1. Si un proyecto tiene un nombre de configuración ( *\<nombre de configuración> \<nombre de plataforma>* ) que coincide exactamente con el nombre de la nueva configuración de soluciones, se asignará dicha configuración. En los nombres de configuraciones no se distingue entre mayúsculas y minúsculas.
+1. Si un proyecto tiene un nombre de configuración* \<configuration name> \<platform name> *() que coincide exactamente con el nombre de la nueva configuración de soluciones, se asigna esa configuración. En los nombres de configuraciones no se distingue entre mayúsculas y minúsculas.
 
 2. Si el proyecto tiene un nombre de configuración en el que la parte del nombre de configuración coincide con la nueva configuración de soluciones, se asigna esa configuración, independientemente de que la parte de plataforma coincida o no.
 
@@ -80,9 +80,9 @@ Se pueden almacenar diferentes configuraciones de propiedades de solución y de 
 
  Visual Studio utiliza los siguientes criterios para asignar configuraciones de soluciones.
 
-- Si una configuración de proyectos no especifica ninguna plataforma o especifica solo una, se busca o se agrega una configuración de soluciones cuyo nombre coincida con el de la nueva configuración de proyecto. El nombre predeterminado de esta configuración de soluciones no incluye el nombre de plataforma, sino que adopta el formato *\<nombre de la configuración del proyecto>* .
+- Si una configuración de proyectos no especifica ninguna plataforma o especifica solo una, se busca o se agrega una configuración de soluciones cuyo nombre coincida con el de la nueva configuración de proyecto. El nombre predeterminado de esta configuración de soluciones no incluye un nombre de plataforma; toma la forma *\<project configuration name>* .
 
-- Si un proyecto admite varias plataformas, se busca o se agrega una configuración de soluciones para cada plataforma admitida. El nombre de cada configuración de soluciones incluye tanto el nombre de configuración del proyecto como el nombre de la plataforma y tiene el formato *\<nombre de la configuración del proyecto> \<nombre de plataforma>* .
+- Si un proyecto admite varias plataformas, se busca o se agrega una configuración de soluciones para cada plataforma admitida. El nombre de cada configuración de soluciones incluye tanto el nombre de la configuración del proyecto como el nombre de la * \<project configuration name> \<platform name> *plataforma y tiene el formato.
 
-## <a name="see-also"></a>Vea también
- [Tutorial:](../ide/walkthrough-building-an-application.md) [compilar una aplicación compilar y](../ide/compiling-and-building-in-visual-studio.md) compilar [soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md) [C/C++ generar referencia](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Modificadores](../ide/reference/devenv-command-line-switches.md) de la línea de comandos de devenv
+## <a name="see-also"></a>Consulte también
+ [Tutorial:](../ide/walkthrough-building-an-application.md) [compilar una aplicación compilar y](../ide/compiling-and-building-in-visual-studio.md) compilar [soluciones y proyectos de](../ide/solutions-and-projects-in-visual-studio.md) [C/C++ compilación de referencia](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [modificadores de línea de comandos de devenv](../ide/reference/devenv-command-line-switches.md)

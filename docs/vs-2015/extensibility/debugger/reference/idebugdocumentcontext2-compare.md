@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Compare | Documentos de Microsoft
+title: 'IDebugDocumentContext2:: Compare | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f09684c5e9587c6e3bb631674e009d0b36f4fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189412"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Compara este contexto de documento a una matriz de contextos de documento determinada.  
+Compara este contexto de documento con una matriz de contextos de documento determinada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,23 +46,23 @@ int Compare( 
   
 #### <a name="parameters"></a>Parámetros  
  `compare`  
- [in] Un valor de la [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) enumeración que especifica el tipo de comparación.  
+ de Un valor de la enumeración [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) que especifica el tipo de comparación.  
   
  `rgpDocContextSet`  
- [in] Una matriz de [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objetos que representan los contextos de documento que se compara con.  
+ de Matriz de objetos [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que representan los contextos de documento que se comparan.  
   
  `dwDocContextSetLen`  
- [in] La longitud de la matriz de contextos de documento para comparar.  
+ de Longitud de la matriz de contextos de documento que se va a comparar.  
   
  `pdwDocContext`  
- [out] Devuelve el índice en el `rgpDocContextSet` matriz del primer contexto de documento que satisface la comparación.  
+ enuncia Devuelve el índice de la `rgpDocContextSet` matriz del primer contexto del documento que satisface la comparación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si se encuentra una coincidencia. Devuelve `S_FALSE` si se encuentra ninguna coincidencia. De lo contrario, devuelve un código de error.  
+ Devuelve `S_OK` si se encontró una coincidencia. Devuelve `S_FALSE` si no se encontró ninguna coincidencia. De lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- El [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objetos que se pasan en la matriz deben ser implementados por el mismo motor de depuración que implementa el `IDebugDocumentContext2` de objeto que se llama; de lo contrario, la comparación no es válida.  
+## <a name="remarks"></a>Observaciones  
+ Los objetos [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que se pasan en la matriz deben ser implementados por el mismo motor de depuración que implementa el `IDebugDocumentContext2` objeto al que se llama; de lo contrario, la comparación no es válida.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)

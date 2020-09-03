@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156647"
 ---
 # <a name="how-to-clean-a-build"></a>Cómo: Limpiar los resultados de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
+Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="creating-a-directory-for-output-items"></a>Crear un directorio para los elementos de salida  
  De forma predeterminada, el archivo .exe que se crea cuando se compila un proyecto se coloca en el mismo directorio que los archivos de proyecto y de código fuente. En cambio, los elementos de salida suelen crearse en un directorio independiente.  
@@ -53,11 +53,11 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
 ## <a name="example"></a>Ejemplo  
  El siguiente proyecto de ejemplo de código contiene un nuevo destino, `Clean`, que usa la tarea `RemoveDir` para eliminar un directorio y todos los archivos y directorios que contiene. También en este ejemplo, el destino `Compile` crea un directorio independiente para los elementos de salida que se eliminan cuando se limpia la compilación.  
   
- `Compile` se define como el destino predeterminado y, por tanto, se usa automáticamente a menos que se especifiquen otros destinos. Use el modificador de la línea de comandos **/target** para especificar un destino diferente. Por ejemplo:  
+ `Compile` se define como el destino predeterminado y, por tanto, se usa automáticamente a menos que se especifiquen otros destinos. Utilice el modificador de línea de comandos **/target** para especificar un destino diferente. Por ejemplo:  
   
  `msbuild <file name>.proj /target:Clean`  
   
- El modificador **/target** se puede abreviar como **/t** y puede especificar más de un destino. Por ejemplo, para usar el destino `Clean` y, luego, el destino `Compile`, escriba:  
+ El modificador **/target** se puede acortar a **/t** y puede especificar más de un destino. Por ejemplo, para usar el destino `Clean` y, luego, el destino `Compile`, escriba:  
   
  `msbuild <file name>.proj /t:Clean;Compile`  
   
@@ -101,9 +101,9 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
 </Project>  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
- [Tarea Exec](../msbuild/exec-task.md)   
- [Tarea MakeDir](../msbuild/makedir-task.md)   
+## <a name="see-also"></a>Consulte también  
+ [Exec (tarea)](../msbuild/exec-task.md)   
+ [MakeDir (tarea)](../msbuild/makedir-task.md)   
  [Tarea RemoveDir](../msbuild/removedir-task.md)   
- [Csc (tarea)](../msbuild/csc-task.md)   
+ [CSC (tarea)](../msbuild/csc-task.md)   
  [Destinos](../msbuild/msbuild-targets.md)
