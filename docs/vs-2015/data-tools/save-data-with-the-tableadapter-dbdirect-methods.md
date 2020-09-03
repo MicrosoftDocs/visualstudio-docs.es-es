@@ -20,16 +20,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce987f5ef90448c41da45a39c62710b968e11199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655422"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter. Los métodos DBDirect de un TableAdapter proporcionan un nivel exhaustivo de control sobre las actualizaciones de la base de datos. Puede utilizarlos para ejecutar instrucciones SQL y procedimientos almacenados específicos mediante una llamada a los métodos individuales `Insert`, `Update` y `Delete` según sea necesario para la aplicación (en contraposición al método sobrecargado `Update` que realiza la actualización, INSERT y ELIMINAn todas las instrucciones en una llamada).
+En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter. Los métodos DBDirect de un TableAdapter proporcionan un nivel exhaustivo de control sobre las actualizaciones de la base de datos. Puede utilizarlos para ejecutar instrucciones SQL y procedimientos almacenados específicos mediante una llamada a los `Insert` métodos individuales, `Update` y `Delete` según sea necesario para la aplicación (en contraposición al método sobrecargado `Update` que realiza las instrucciones Update, INSERT y DELETE en una llamada).
 
  Durante este tutorial aprenderá a:
 
@@ -86,7 +86,7 @@ En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucc
 
 7. En la pantalla **elegir los objetos de base de datos** , expanda el nodo **tablas** .
 
-8. Seleccione la tabla `Region` y, a continuación, seleccione **Finalizar**.
+8. Seleccione la `Region` tabla y, a continuación, seleccione **Finalizar**.
 
      **NorthwindDataSet** se agrega al proyecto y la tabla `Region` aparece en la ventana **Orígenes de datos**.
 
@@ -97,7 +97,7 @@ En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucc
 
 - Arrastre el nodo de la **región** principal desde la ventana **orígenes de datos** hasta el formulario.
 
-     En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), RegionTableAdapter, <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.
+     En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> En la bandeja de componentes aparecen NorthwindDataSet, RegionTableAdapter, y.
 
 #### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Para agregar botones que llamarán a los métodos DbDirect de TableAdapter
 
@@ -105,7 +105,7 @@ En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucc
 
 2. Establezca las propiedades **Nombre** y **Texto** en cada botón.
 
-    |Name|Text|
+    |Nombre|Texto|
     |----------|----------|
     |`InsertButton`|**Insertar**|
     |`UpdateButton`|**Actualizar**|
@@ -157,5 +157,5 @@ En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucc
 
 - Agregar otras tablas al conjunto de datos seleccionando **Configurar DataSet con el asistente** en la ventana **Orígenes de datos**. Puede agregar controles que muestren los datos relacionados arrastrando los nodos relacionados al formulario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

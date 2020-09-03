@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73661896"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluciones de SharePoint
@@ -52,7 +52,7 @@ ms.locfileid: "73661896"
 
 - Caracteres ASCII alfanuméricos
 
-- Espacio
+- Space
 
 - Punto (.)
 
@@ -84,7 +84,7 @@ ms.locfileid: "73661896"
 </Field>.
 ```
 
- Como se muestra en el ejemplo siguiente, una referencia de campo en un tipo de contenido debe definirse con el formato de elemento vacío (\<FieldRef/>), no mediante elementos de inicio y finalización (\<FieldRef >\</FieldRef >):
+ Como se muestra en el ejemplo siguiente, una referencia de campo en un tipo de contenido debe definirse con el formato de elemento vacío ( \<FieldRef /> ), no mediante los elementos de inicio y fin ( \<FieldRef> \</FieldRef> ):
 
 ```xml
 <FieldRef ID="{5744d18c-305e-4632-8bd1-09d134f4830d}"
@@ -96,13 +96,13 @@ ms.locfileid: "73661896"
  Si el origen XML del campo es incorrecto o no es un archivo XML válido, o presenta algún otro problema, aparece un error que indica que no se puede analizar el archivo.
 
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>Las nuevas definiciones de sitios que no están en inglés no aparecen en la página de creación de sitios después de la implementación
- Después de crear e implementar una definición de sitio con una versión que no esté en Inglés de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (es decir, una versión con una configuración regional [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] distinta de la 1033), la pestaña **personalizaciones de SharePoint** no aparece en el cuadro de **selección de plantilla** y el nuevo sitio. la plantilla no aparece en la página **nuevo sitio de SharePoint** .
+ Después de crear e implementar una definición de sitio con una versión que no esté en Inglés de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (es decir, una versión con una configuración regional que no [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] sea 1033), la pestaña **personalizaciones de SharePoint** no aparece en el cuadro de **selección de plantilla** y la plantilla de sitio nuevo no aparece en la página **nuevo sitio de SharePoint** .
 
 ### <a name="error-message"></a>Mensaje de error
  Ninguno.
 
 ### <a name="resolution"></a>Resolución
- Este problema se produce debido a un valor incorrecto en la propiedad **path** del archivo de configuración de la definición del sitio WebTemp, como *webtemp_SiteDefinitionProject1. XML*. En la propiedad **ruta de acceso** del archivo WebTemp, situado en la ubicación de **implementación**, cambie 1033 a la configuración regional adecuada [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Por ejemplo, para usar una configuración regional japonesa, cambie el valor a 1041. Para obtener más información, vea [identificadores de configuración regional asignados por Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
+ Este problema se produce debido a un valor incorrecto en la propiedad **path** del archivo de configuración de la definición del sitio WebTemp, como *webtemp_SiteDefinitionProject1.xml*. En la propiedad **ruta de acceso** del archivo WebTemp, situado en la ubicación de **implementación**, cambie 1033 a la configuración regional adecuada [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Por ejemplo, para usar la configuración regional del japonés, cambie el valor a 1041. Para obtener más información, vea [Id. de configuración regional asignados por Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Aparece un error cuando se implementa un proyecto de flujo de trabajo en un sistema limpio
  Este problema se produce si se implementa un proyecto de flujo de trabajo en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], en un sistema limpio. Un sistema limpio es un equipo que tiene una instalación nueva de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y SharePoint, pero no tiene ningún proyecto de flujo de trabajo implementado.
@@ -131,9 +131,9 @@ ms.locfileid: "73661896"
 
 ### <a name="resolution"></a>Resolución
 
-- Instale [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+- Instalar [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
-- Asegúrese de que tiene acceso de administrador al sitio web de SharePoint. Para obtener más información, vea el artículo [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] en línea [asignación o eliminación de administradores de aplicaciones de servicio en SharePoint Server](/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
+- Asegúrese de que tiene acceso de administrador al sitio web de SharePoint. Para obtener más información, vea el [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artículo en línea [asignación o eliminación de administradores de aplicaciones de servicio en SharePoint Server](/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>El evento web de eliminación de sitios no se produce en el proyecto de receptor de eventos
  Cuando crea un proyecto de receptor de eventos y selecciona ciertos eventos web como "Se va a eliminar un sitio", el evento nunca se produce.
@@ -165,9 +165,9 @@ ms.locfileid: "73661896"
 
 ### <a name="error-messages"></a>Mensajes de error
 
-- \<*nombre del modelo*> tiene los siguientes errores de activación de tipo de contenido externo...
+- \<*model name*> tiene los siguientes errores de activación de tipo de contenido externo...
 
-- El IMetadataObject con el nombre '\<*nombre de modelo*> ' tiene un valor en el campo ' nombre ' que está duplicado...
+- El IMetadataObject con el nombre ' \<*model name*> ' tiene un valor en el campo ' nombre ' que está duplicado...
 
 ### <a name="resolution"></a>Resolución
  Para resolver este problema, elimine el modelo manualmente y, a continuación, implemente de nuevo la solución.  Puede eliminar el modelo utilizando cualquiera de las siguientes herramientas:
@@ -177,13 +177,13 @@ ms.locfileid: "73661896"
 - Windows PowerShell. Puede eliminar el modelo escribiendo este comando en el símbolo del sistema: **Remove-SPBusinessDataCatalogModel**. Para obtener más información, vea [cmdlets generales (SharePoint Server 2010)](/powershell/module/sharepoint-server) en el sitio web de Microsoft TechNet.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Aparece un error al intentar ver un elemento Web visual en SharePoint
- Este problema se produce cuando la propiedad **path** del control de usuario no comienza con la cadena "CONTROLTEMPLATES\\".
+ Este problema se produce cuando la propiedad **path** del control de usuario no comienza con la cadena "CONTROLTEMPLATES \\ ".
 
 ### <a name="error-messages"></a>Mensajes de error
 
-- El archivo '/_CONTROLTEMPLATES/ *\<nombre del proyecto >* / *\<nombre del elemento Web >* */\<. ascx*' no existe.
+- El archivo '/_CONTROLTEMPLATES/ *\<project name>* / *\<Web Part name>* / *\<user control name>* . ascx ' no existe.
 
-- Error del servidor en la aplicación '/'.
+- Error del servidor en la aplicación '/'
 
 ### <a name="resolution"></a>Resolución
 
@@ -191,11 +191,11 @@ ms.locfileid: "73661896"
 
 1. En **Explorador de soluciones**, elija el archivo de control de usuario, cuya extensión de nombre de archivo es *. ascx*.
 
-2. En la barra de menús, elija **ver** > **ventana Propiedades**.
+2. En la barra de menús, elija **Ver**  >  **ventana Propiedades**.
 
 3. En la ventana **propiedades** , expanda el nodo **Ubicación de implementación** .
 
-4. Asegúrese de que el valor de la propiedad **path** comienza con la cadena "CONTROLTEMPLATES\\".
+4. Asegúrese de que el valor de la propiedad **path** comienza con la cadena "CONTROLTEMPLATES \\ ".
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Aparece un error cuando se ejecuta un flujo de trabajo reutilizable importado que contiene un campo de formulario de tareas.
  Este problema se produce si importa un flujo de trabajo que contiene un formulario de tareas que incluye un campo y, a continuación, ejecuta el nuevo flujo de trabajo en el mismo sistema del que lo importó.
@@ -212,15 +212,15 @@ ms.locfileid: "73661896"
  Este problema se produce si cambia el nombre de una instancia de lista importada y, a continuación, la ejecuta en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 ### <a name="error-message"></a>Mensaje de error
- Error de compilación: error en el paso de implementación "activar características": el archivo Template\Features\\[*Import Project*<em>Feature</em>*Name*] \Files\Lists\\[*Old*<em>List Name</em>] \Schema.XML no existe.
+ Error de compilación: error en el paso de implementación ' activar características ': el archivo Template\Features \\ [*Import Project*<em>Feature</em>*Name*] \Files\Lists \\ [*Old*<em>List Name</em>] \Schema.xml no existe.
 
 ### <a name="resolution"></a>Resolución
- Al importar una instancia de lista, se agrega un atributo denominado CustomSchema al archivo Elements.xml de la instancia de lista. Elements.xml incluye la ruta de acceso de un archivo schema.xml personalizado para la instancia de lista. Al cambiar el nombre de la instancia de lista en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cambia la ruta de acceso de implementación para el archivo schema.xml personalizado, pero el valor de ruta de acceso del atributo CustomSchema no se actualiza. Como resultado, la instancia de lista no puede encontrar el archivo *Schema. XML* en la ruta de acceso anterior especificada por el atributo CustomSchema cuando se activa la característica.
+ Al importar una instancia de lista, se agrega un atributo denominado CustomSchema al archivo Elements.xml de la instancia de lista. Elements.xml incluye la ruta de acceso de un archivo schema.xml personalizado para la instancia de lista. Al cambiar el nombre de la instancia de lista en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cambia la ruta de acceso de implementación para el archivo schema.xml personalizado, pero el valor de ruta de acceso del atributo CustomSchema no se actualiza. Como resultado, la instancia de lista no puede encontrar el archivo de *schema.xml* en la ruta de acceso anterior especificada por el atributo CustomSchema cuando se activa la característica.
 
- Para resolver este problema, actualice la ruta de acceso de la ubicación de implementación del archivo *Schema. XML* en el atributo CustomSchema.
+ Para resolver este problema, actualice la ruta de acceso de la ubicación de implementación del archivo de *schema.xml* en el atributo CustomSchema.
 
 ## <a name="sharepoint-debugging-session-terminated-by-iis"></a>IIS finalizó la sesión de depuración de SharePoint
- Este problema se produce si se establece un punto de interrupción en una solución de SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], se elige la tecla **F5** para ejecutarlo y, a continuación, se mantiene en un punto de interrupción de más de 90 segundos.
+ Este problema se produce si establece un punto de interrupción en una [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solución de SharePoint, elige la tecla **F5** para ejecutarlo y, a continuación, permanece en un punto de interrupción de más de 90 segundos.
 
 ### <a name="error-message"></a>Mensaje de error
  Internet Information Services (IIS) ha finalizado el proceso del servidor web que se estaba depurando. Para evitar este problema, puede configurar los valores del comando ping del grupo de aplicaciones en IIS. Vea la Ayuda para obtener más información.
@@ -230,7 +230,7 @@ ms.locfileid: "73661896"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>Para obtener acceso a los valores de grupo de aplicación de IIS
 
-1. Abra el Administrador de IIS.
+1. Abra Administrador de IIS.
 
 2. En el panel **conexiones** , expanda el nodo servidor de SharePoint y, a continuación, elija el nodo **grupos de aplicaciones** .
 
@@ -252,12 +252,12 @@ ms.locfileid: "73661896"
 4. Vuelve a abrir el sitio de SharePoint y abre la instancia de lista.
 
 ### <a name="error-message"></a>Mensaje de error
- Error del servidor en la aplicación '/'.
+ Error del servidor en la aplicación '/'
 
 ### <a name="resolution"></a>Resolución
  Esto ocurre porque después de cerrar una sesión de depuración de una solución de SharePoint, la característica de retracción automática retrae la solución. La retractación elimina la definición de lista de SharePoint pero no elimina la instancia de lista. La instancia de lista requiere la definición de lista subyacente.
 
- Para resolver este problema, implemente la solución en, en la barra de menús, eligiendo **Compilar** > **implementar**. (No depure la solución eligiendo la tecla **F5** ). A continuación, elimine la instancia de la lista en SharePoint.
+ Para resolver este problema, implemente la solución mediante, en la barra de menús, elija **compilar**  >  **implementar**. (No depure la solución eligiendo la tecla **F5** ). A continuación, elimine la instancia de la lista en SharePoint.
 
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>La solución de SharePoint original se reemplaza por una versión exportada
  Si exporta una solución de SharePoint, importa la solución a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y, a continuación, vuelve a implementar la solución en el mismo sitio del que la exportó, se reemplaza la solución de SharePoint original. Este problema no se produce si implementa la solución en un servidor que no tiene activada la solución original.

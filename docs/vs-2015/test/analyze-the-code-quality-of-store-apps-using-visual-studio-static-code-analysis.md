@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f837822e47c911e3c27d9d41e31ae9cd448d4fc5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520502"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio
@@ -33,7 +33,7 @@ La herramienta de análisis de código de Visual Studio busca en el código un c
 
 ## <a name="more-code-analysis-info"></a>Más información sobre análisis de código
 
-|Title|Descripción|
+|Título|Descripción|
 |-|-|
 |[Análisis de código en MSDN Library](https://msdn.microsoft.com/library/dd264897.aspx)|Encuentre más información sobre el empleo del análisis de código en Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional.|
 |[Blog del equipo de análisis de código de MSDN](https://blogs.msdn.com/b/codeanalysis/)|Encuentre más información, incluidos artículos técnicos y ejemplos, en el blog del equipo de análisis de código.|

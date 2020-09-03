@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293861"
 ---
 # <a name="managing-application-settings-net"></a>Administrar la configuración de la aplicación (.NET)
@@ -70,11 +70,11 @@ Puede agregar archivos de configuración personalizados a su proyecto para facil
 
 Por ejemplo, puede agregar un archivo a su proyecto como SpecialSettings.settings. Aunque su clase `SpecialSettings` no se exponga en el espacio de nombres `My` , **Ver código** puede leer el archivo de configuración personalizado que contiene `Partial Class SpecialSettings`.
 
-El Diseñador de configuración busca primero el archivo Settings.settings creado por el sistema del proyecto; éste es el archivo que muestra de manera predeterminada el Diseñador de configuración en la ficha **Configuración** . Settings.settings se encuentra en la carpeta My Project para los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y en la carpeta Propiedades para los proyectos de [!INCLUDE[csprcs](../includes/csprcs-md.md)] . A continuación, el Diseñador de proyectos busca otros archivos de configuración en la carpeta raíz del proyecto. Por consiguiente, debe colocar en ella el archivo de configuración personalizado. Si agrega un archivo .settings en otra ubicación del proyecto, el Diseñador de proyectos no lo encontrará.
+El diseñador de configuración busca primero el archivo settings. Settings creado por el sistema del proyecto. Este es el archivo predeterminado que el diseñador de proyectos muestra en la pestaña **configuración** . Settings. Settings se encuentra en la carpeta My Project para los [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] proyectos de y en la carpeta Propiedades de los [!INCLUDE[csprcs](../includes/csprcs-md.md)] proyectos de. A continuación, el Diseñador de proyectos busca otros archivos de configuración en la carpeta raíz del proyecto. Por consiguiente, debe colocar en ella el archivo de configuración personalizado. Si agrega un archivo .settings en otra ubicación del proyecto, el Diseñador de proyectos no lo encontrará.
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Obtener acceso o cambiar la configuración de la aplicación en tiempo de ejecución en Visual Basic
 
-En los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , puede obtener acceso a la configuración de la aplicación en tiempo de ejecución por medio del objeto `My.Settings` . En la página **Configuración** , haga clic en el botón **Ver código** con el fin de ver el archivo Settings.vb. Settings.vb define la clase `Settings` , que le permite controlar estos eventos en la clase de configuración: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>y <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Tenga en cuenta que la clase `Settings` de Settings.vb es una clase parcial, que muestra solamente el código que tiene el usuario, no toda la clase generada. Para obtener más información sobre cómo tener acceso a la configuración de la aplicación mediante el objeto `My.Settings` , vea [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+En los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , puede obtener acceso a la configuración de la aplicación en tiempo de ejecución por medio del objeto `My.Settings` . En la página **Configuración**, haga clic en el botón **Ver código** para ver el archivo Settings.vb. Settings.vb define la clase `Settings` , que le permite controlar estos eventos en la clase de configuración: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>y <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Tenga en cuenta que la clase `Settings` de Settings.vb es una clase parcial, que muestra solamente el código que tiene el usuario, no toda la clase generada. Para obtener más información sobre cómo tener acceso a la configuración de la aplicación mediante el objeto `My.Settings` , vea [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 Los valores de configuración de ámbito de usuario que el usuario cambia en tiempo de ejecución (por ejemplo, la posición de un formulario) se almacenan en un archivo user.config. Observe que los valores predeterminados se siguen guardando en app.config.
 
@@ -86,7 +86,7 @@ Recomendamos encarecidamente utilizar el objeto `My.Settings` y el archivo .sett
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Obtener acceso o cambiar la configuración de la aplicación en tiempo de ejecución en Visual C#
 <!-- markdownlint-enable MD003 MD020 -->
 
-En otros lenguajes distintos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], como [!INCLUDE[csprcs](../includes/csprcs-md.md)], se debe tener acceso directamente a la clase `Settings` , como se muestra en el siguiente ejemplo de [!INCLUDE[csprcs](../includes/csprcs-md.md)] .
+En otros lenguajes distintos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], como [!INCLUDE[csprcs](../includes/csprcs-md.md)], se debe tener acceso directamente a la clase `Settings`, como se muestra en el siguiente ejemplo de [!INCLUDE[csprcs](../includes/csprcs-md.md)].
 
 ```csharp
 Properties.Settings.Default.FirstUserSetting = "abc";
@@ -98,8 +98,8 @@ También debe llamar explícitamente al método `Save` de esta clase contenedora
 Properties.Settings.Default.Save();
 ```
 
-Para obtener información general sobre cómo obtener acceso a la configuración de la aplicación a través de la clase `Settings`, vea [Introducción a la configuración de la aplicación](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obtener información sobre cómo recorrer en iteración la configuración, vea este [artículo del foro](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Para obtener información general sobre cómo obtener acceso a la configuración de la aplicación a través de la clase `Settings` , vea [Application Settings Overview](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obtener información sobre cómo recorrer en iteración la configuración, vea este [artículo del foro](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
 
 - [Acceso a la configuración de la aplicación](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7b0c54975cdd5bc86f77dddbd5ca1a56c1896394
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655312"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Agregar comandos y gestos a diagramas de capas
@@ -49,13 +49,13 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
 
 4. Cierre la instancia experimental y modifique el código de muestra. Para obtener más información, vea [navegar y actualizar modelos de capas en el código del programa](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
-5. Puede agregar más controladores de comandos o de gestos al mismo proyecto. Para obtener más información, vea una de las secciones siguientes:
+5. Puede agregar más controladores de comandos o de gestos al mismo proyecto. Para más información, consulte una de estas secciones:
 
     [Definir un comando de menú](#command)
 
     [Definir un controlador de gestos](#gesture)
 
-6. Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en *bin\\* . Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .
+6. Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en *bin\\*. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Agregar un comando o gesto a un VSIX independiente
  Si desea crear un VSIX que contenga comandos, validadores de capas y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores. Para obtener información sobre otros tipos de extensión de modelado, vea [ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md).
@@ -69,7 +69,7 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
 
 2. Identifique o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**. Para agregar una clase a un proyecto de VSIX:
 
-    1. En el cuadro de diálogo **Nuevo proyecto** , expanda **Visual C#** , haga clic en **Extensibility**(Extensibilidad) y, a continuación, en **VSIX Project**(Proyecto de VSIX).
+    1. En el cuadro de diálogo **Nuevo proyecto** , expanda **Visual C#**, haga clic en **Extensibility**(Extensibilidad) y, a continuación, en **VSIX Project**(Proyecto de VSIX).
 
     2. En el Explorador de soluciones, haga clic con el botón secundario en el proyecto de VSIX y, a continuación, haga clic en **Establecer como proyecto de inicio**.
 
@@ -96,7 +96,7 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
 |Microsoft.VisualStudio.Modeling.Sdk.[versión]|Definir las extensiones de modelado|
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versión]|Actualizar formas y diagramas|
 
-1. Edite el archivo de clases en el proyecto de biblioteca de clases de C# para que contenga el código de la extensión. Para obtener más información, vea una de las secciones siguientes:
+1. Edite el archivo de clases en el proyecto de biblioteca de clases de C# para que contenga el código de la extensión. Para más información, consulte una de estas secciones:
 
      [Definir un comando de menú](#command)
 
@@ -110,7 +110,7 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
 
      Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .
 
-## <a name="command"></a> Definir un comando de menú
+## <a name="defining-a-menu-command"></a><a name="command"></a> Definir un comando de menú
  Puede agregar más definiciones de comando de menú a un proyecto de gesto o comando existente. Cada comando se define con una clase que tiene las siguientes características:
 
 - La clase se declara de la siguiente forma:
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> Definir un controlador de gestos
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Definir un controlador de gestos
  Un controlador de gestos responde cuando el usuario arrastra elementos hasta el diagrama de capas y cuando hace doble clic en cualquier parte del diagrama.
 
  En el proyecto de VSIX existente de controlador de comandos o gestos, puede agregar un archivo de código que defina un controlador de gestos:
@@ -264,5 +264,5 @@ namespace MyLayerExtensions // change to your preference
 
   Para obtener más información sobre cómo descodificar otros elementos cuando se arrastran al diagrama, vea [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Navegar y actualizar modelos de capas en el código de programa](../modeling/navigate-and-update-layer-models-in-program-code.md) [agregar validación de arquitectura personalizada a diagramas de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md) [definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md)

@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95b2aa636b63523e06e3c931381e4506a0a03bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655170"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (pestaña), Elegir elementos del cuadro de herramientas (cuadro de diálogo)
-Esta pestaña del cuadro de diálogo **elegir elementos del cuadro de herramientas** muestra una lista de actividades [!INCLUDE[wf](../includes/wf-md.md)], plantillas y elementos disponibles. Para mostrar esta lista, seleccione **elegir elementos del cuadro de herramientas** en el menú **herramientas** o haga clic con el botón secundario en el cuadro de **herramientas** y seleccione **elegir elementos** para mostrar el cuadro de diálogo **elegir elementos del cuadro de herramientas** y, después, seleccione su  **Pestaña System. Activities** . de un equipo, la lista contiene actividades de flujo de trabajo de los ensamblados System. Activities, System. ServiceModel. Activities y System. Activities. Core. Presentation; sin embargo, solo se activan de forma predeterminada las actividades proporcionadas por el sistema y las actividades agregadas a través de otros ensamblados que se muestran en el **cuadro de herramientas** . Las actividades agregadas recientemente se comprueban automáticamente y aparecen en el cuadro de **herramientas** al hacer clic en **Aceptar** en el cuadro de diálogo. Además, estos elementos aparecen en el **cuadro de herramientas** en una nueva categoría que corresponde al espacio de nombres en el que reside la actividad, el elemento o la plantilla.
+Esta pestaña del cuadro de diálogo **elegir elementos del cuadro de herramientas** muestra una lista de [!INCLUDE[wf](../includes/wf-md.md)] actividades, plantillas y elementos disponibles. Para mostrar esta lista, seleccione **elegir elementos del cuadro de herramientas** en el menú **herramientas** o haga clic con el botón secundario en el cuadro de **herramientas** y seleccione **elegir elementos** para mostrar el cuadro de diálogo **elegir elementos del cuadro de herramientas** y, a continuación, seleccione la pestaña **System. Activities** . Desde el cuadro, la lista contiene actividades de flujo de trabajo de ensamblados System. Activities, System. ServiceModel. Activities y System. Activities. Core. Presentation; sin embargo, solo se activan de forma predeterminada las actividades proporcionadas por el sistema y las actividades agregadas a través de otros ensamblados que se muestran en el **cuadro de herramientas** . Las actividades agregadas recientemente se comprueban automáticamente y aparecen en el cuadro de **herramientas** al hacer clic en **Aceptar** en el cuadro de diálogo. Además, estos elementos aparecen en el **cuadro de herramientas** en una nueva categoría que corresponde al espacio de nombres en el que reside la actividad, el elemento o la plantilla.
 
 > [!WARNING]
 > Si intenta agregar un ensamblado que no contenga actividades de flujo de trabajo, aparecerá un diálogo de error que indica que el ensamblado no contiene ninguna actividad.
@@ -29,7 +29,7 @@ Esta pestaña del cuadro de diálogo **elegir elementos del cuadro de herramient
 
  El filtrado se realiza en cada pestaña. Esto significa que no es posible agregar actividades de flujo de trabajo a través de la pestaña del **componente .net** . Tienen que agregarse a través de la propia pestaña **System. Activities** .
 
- Puede desproteger los elementos que no desee ver en el **cuadro de herramientas** de esta pestaña de diálogo, o bien, puede hacerlo mediante la opción de menú contextual **eliminar** del cuadro de **herramientas** y desreferenciar un ensamblado no quita el elemento de la  **Cuadro de herramientas**.
+ Puede desactivar los elementos que no desee ver en el **cuadro de herramientas** de esta pestaña del cuadro de diálogo, o bien, puede hacerlo mediante la opción del menú contextual **eliminar** del **cuadro de herramientas** y desreferenciar un ensamblado no quita el elemento del **cuadro de herramientas**.
 
  Al crear instancias de la actividad, para lo cual se debe arrastrar y colocar en el diseñador, se agrega automáticamente el ensamblado que contiene el elemento a la lista de ensamblados a la que se hace referencia. También si la actividad hace referencia a un ensamblado C, no agrega C a la lista de ensamblados a la que se hace referencia. El ensamblado C tiene que estar en la GAC o en el mismo directorio que la actividad B. En el caso independiente, el ensamblado tiene que estar en la GAC o en las rutas de acceso de sondeo de VS. A continuación solo puede arrastrar y colocar la actividad en la superficie del diseñador de flujo de trabajo.
 

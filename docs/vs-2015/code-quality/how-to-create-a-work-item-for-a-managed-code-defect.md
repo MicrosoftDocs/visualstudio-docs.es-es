@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655137"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Cómo: Crear un elemento de trabajo para defectos de código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar la característica de seguimiento de elementos de trabajo para registrar el elemento de trabajo desde [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Para usar esta característica, el proyecto debe formar parte del proyecto de equipo en [!INCLUDE[esprfound](../includes/esprfound-md.md)].
+Puede usar la característica de seguimiento de elementos de trabajo para registrar el elemento de trabajo desde dentro de [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Para usar esta característica, el proyecto debe formar parte del proyecto de equipo en [!INCLUDE[esprfound](../includes/esprfound-md.md)] .
 
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Para crear un elemento de trabajo para el defecto de código administrado
 

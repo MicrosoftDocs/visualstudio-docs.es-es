@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 11e739fc1b0516c2b6e34421ecee7a329830de14
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73983795"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Cómo: Encontrar la clave de producto de Visual Studio
@@ -34,7 +34,7 @@ Quizás desee buscar la clave del producto para [!INCLUDE[vsprvs](../includes/vs
 
   - Documentación u otra comunicación del proveedor al que compró el software.
 
-## <a name="see-also"></a>Otras referencias
- * [Cómo: Actualizar desde una edición de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
- * [Instalar Visual Studio](../install/install-visual-studio-2015.md)
- * [Notas sobre la concesión de licencias de Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350)
+## <a name="see-also"></a>Consulte también
+ * [Cómo: Actualizar de versiones de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
+ * [Instalación de Visual Studio](../install/install-visual-studio-2015.md)
+ * [Notas del producto de licencias de Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350)

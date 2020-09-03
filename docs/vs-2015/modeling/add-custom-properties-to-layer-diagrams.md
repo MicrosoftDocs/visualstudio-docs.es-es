@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655289"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Agregar propiedades personalizadas a diagramas de capas
@@ -32,7 +32,7 @@ Al escribir código de extensión para los diagramas de capas, puede almacenar v
 > [!IMPORTANT]
 > Para que las propiedades aparezcan, debe realizar el cambio siguiente en todos los equipos donde desee que las propiedades de capa sean visibles.
 >
->  1. Ejecute el Bloc de notas con **Ejecutar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
+>  1. Ejecute el Bloc de notas con **Ejecutar como administrador**. Abra `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
 >
 >  2. Dentro del elemento `Content`, agregue:
 >
@@ -48,9 +48,9 @@ Al escribir código de extensión para los diagramas de capas, puede almacenar v
 >
 >     `devenv /rootSuffix Exp /updateConfiguration`
 >
->  4. Reinicie Visual Studio.
+>  4. Reinicie Visual Studio.
 
- **Asegúrese de que el código se encuentra en un proyecto VSIX**
+ **Asegurarse de que el código está en un proyecto VSIX**
 
  Si la propiedad forma parte de un proyecto de validación, gesto o comando, no es necesario agregar nada. El código de la propiedad personalizada debe definirse en un proyecto de extensibilidad de Visual Studio definido como componente MEF. Para obtener más información, vea [Agregar comandos y gestos a diagramas de capas](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [agregar validación de arquitectura personalizada a diagramas de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
@@ -69,9 +69,9 @@ public class MyProperty
 
  Puede definir propiedades en [ILayerElement](/previous-versions/ff644511(v=vs.140)) o en cualquiera de sus clases derivadas, entre las que se incluyen:
 
-- `ILayerModel`: el modelo
+- `ILayerModel` -el modelo
 
-- `ILayer`: cada capa
+- `ILayer` -cada capa
 
 - `ILayerDependencyLink`: los vínculos entre las capas
 
@@ -165,5 +165,5 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ampliar diagramas de capas](../modeling/extend-layer-diagrams.md)

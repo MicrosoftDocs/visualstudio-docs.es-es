@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74292328"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Agregar estereotipos a elementos del modelo UML
@@ -81,6 +81,6 @@ Puede agregar un estereotipo a un elemento del modelo UML para anotarlo y propor
 
          Solo puede hacerlo con algunos tipos de diagramas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md) [personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [definir paquetes y espacios de nombres](../modeling/define-packages-and-namespaces.md)
 
