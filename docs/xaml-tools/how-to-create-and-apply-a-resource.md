@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2301ce14fcd3d2d8a9c5d003a05186513d950cd4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330118"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
@@ -73,6 +73,6 @@ Siempre que crea un recurso a partir de una propiedad existente, [Style](xref:Wi
 
 3. Modifique las opciones del recurso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: Crear una UI usando el Diseñador XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

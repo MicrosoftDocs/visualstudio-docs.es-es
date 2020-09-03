@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597274"
 ---
 # <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
 
-A diferencia de un lenguaje de uso general como C# o UML, un lenguaje específico del dominio (DSL) está diseñado para expresar instrucciones en un determinado espacio de problemas o dominio.
+A diferencia de un lenguaje de uso general como C# o UML, un lenguaje específico del dominio (DSL) está diseñado para expresar instrucciones en un espacio de problemas determinado o dominio.
 
 Los DSL conocidos incluyen expresiones regulares y SQL. Cada DSL es mucho mejor que un lenguaje de uso general para describir operaciones en cadenas de texto o en una base de datos, pero mucho peor para describir ideas que están fuera de su propio ámbito. Los distintos sectores también tienen sus propios DSL. Por ejemplo, en el sector de las telecomunicaciones, los lenguajes de descripción de llamadas se usan ampliamente para especificar la secuencia de Estados en una llamada telefónica y, en el sector de viajes de aire, se usa un DSL estándar para describir las reservas de vuelos.
 
@@ -52,7 +52,7 @@ También puede definir comandos de menú y otras herramientas que ayuden a los u
 
 Normalmente, se crea un lenguaje específico del dominio cuando un equipo de desarrollo tiene que escribir código similar para varios productos. Por ejemplo, una compañía que se especializa en sistemas de control de equipaje podría definir un ADSL de seguimiento de equipaje desde el que puede generar parte del código para cada instalación. Las ventajas de la DSL son que los clientes pueden entenderla, que el código generado a partir de ella es confiable y que el sistema se puede actualizar rápidamente si cambian los requisitos de los clientes.
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] le permite crear un lenguaje específico de dominio que tenga su propio diseñador gráfico y su propia notación de diagrama y, a continuación, utilizar el lenguaje para generar el código fuente adecuado para cada proyecto.
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] permite crear un lenguaje específico de dominio que tenga su propio diseñador gráfico y su propia notación de diagrama y, a continuación, utilizar el lenguaje para generar el código fuente adecuado para cada proyecto.
 
 ## <a name="domain-specific-development"></a>Desarrollo específico del dominio
 
@@ -62,7 +62,7 @@ El desarrollo específico del dominio es el proceso de identificar las partes de
 
 Un lenguaje gráfico específico del dominio debe incluir las siguientes características:
 
-- Notation
+- Notación
 
 - Modelo de dominio
 
@@ -72,13 +72,13 @@ Un lenguaje gráfico específico del dominio debe incluir las siguientes caracte
 
 - Integración con Visual Studio
 
-### <a name="notation"></a>Notation
+### <a name="notation"></a>Notación
 
-Un lenguaje específico del dominio debe tener un conjunto razonablemente pequeño de elementos que se pueden definir y ampliar fácilmente para representar construcciones específicas del dominio. Una notación consta de formas, que representan los elementos, y los conectores, que representan las relaciones entre los elementos, en una superficie de diagrama gráfico. En [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], las formas se pueden extender y refinar para representar los elementos de su lenguaje específico del dominio.
+Un lenguaje específico del dominio debe tener un conjunto razonablemente pequeño de elementos que se pueden definir y ampliar fácilmente para representar construcciones específicas del dominio. Una notación consta de formas, que representan los elementos, y los conectores, que representan las relaciones entre los elementos, en una superficie de diagrama gráfico. En [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , las formas se pueden extender y refinar para representar los elementos de su lenguaje específico del dominio.
 
 ### <a name="domain-model"></a>Modelo de dominio
 
-Un lenguaje específico del dominio debe combinar el conjunto de elementos y las relaciones entre ellos en una gramática coherente. También debe definir si las combinaciones de elementos y relaciones son válidas. Por ejemplo, los lenguajes de programación normalmente impiden la herencia circular, en la que una clase se deriva de una segunda clase y la segunda clase se deriva de la primera. Las restricciones también se pueden usar para expresar la lógica de negocios, por ejemplo, una persona no puede depender de sí misma. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa restricciones para expresar los tipos de restricciones que requieren la mayoría de los lenguajes específicos del dominio.
+Un lenguaje específico del dominio debe combinar el conjunto de elementos y las relaciones entre ellos en una gramática coherente. También debe definir si las combinaciones de elementos y relaciones son válidas. Por ejemplo, los lenguajes de programación normalmente impiden la herencia circular, en la que una clase se deriva de una segunda clase y la segunda clase se deriva de la primera. Las restricciones también se pueden usar para expresar la lógica de negocios, por ejemplo, una persona no puede depender de sí misma. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utiliza restricciones para expresar los tipos de restricciones que requieren la mayoría de los lenguajes específicos de dominio.
 
 ### <a name="artifact-generation"></a>Generación de artefactos
 
@@ -86,11 +86,11 @@ Uno de los objetivos principales de un lenguaje específico de dominio es genera
 
 ### <a name="serialization"></a>Serialización
 
-Un lenguaje específico del dominio debe conservarse de alguna forma que se pueda editar, guardar, cerrar y recargar. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa un formato XML que le permite definir y personalizar el modo en que se serializa o se conserva el lenguaje específico del dominio.
+Un lenguaje específico del dominio debe conservarse de alguna forma que se pueda editar, guardar, cerrar y recargar. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa un formato XML que permite definir y personalizar el modo en que se serializa o se conserva el lenguaje específico del dominio.
 
 ### <a name="integration-with-visual-studio"></a>Integración con Visual Studio
 
-Dado que [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] se hospeda en Visual Studio, extiende muchas ventanas y controles de Visual Studio. También permite personalizar el comportamiento de los comandos de menú, los elementos del cuadro de herramientas y otros elementos de la interfaz de usuario.
+Dado [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se hospeda en Visual Studio, extiende muchas ventanas y controles de Visual Studio. También permite personalizar el comportamiento de los comandos de menú, los elementos del cuadro de herramientas y otros elementos de la interfaz de usuario.
 
 También puede crear un adaptador de bus de modelo para su lenguaje específico de dominio. Este adaptador le permite hacer referencia a un modelo y a los elementos de un modelo, y le permite escribir código que puede tener acceso a una instancia de DSL y actualizarla. Mediante el potente mecanismo de bus de modelo, puede escribir extensiones de Visual Studio que funcionen con varios modelos. También puede escribir aplicaciones independientes que funcionen con modelos. Para obtener más información, vea [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 

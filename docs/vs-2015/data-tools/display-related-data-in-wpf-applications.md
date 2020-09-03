@@ -23,16 +23,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6efa79fc59ed9812cf6162096dd462100b71fbca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672408"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En algunas aplicaciones, puede que desee trabajar con datos que proceden de varias tablas o entidades que están relacionadas entre sí en una relación de elementos primarios y secundarios. Por ejemplo, puede que desee mostrar una cuadrícula que muestre los clientes de una tabla de `Customers`. Cuando el usuario selecciona un cliente específico, otra cuadrícula muestra los pedidos de ese cliente de una tabla de `Orders` relacionada.
+En algunas aplicaciones, puede que desee trabajar con datos que proceden de varias tablas o entidades que están relacionadas entre sí en una relación de elementos primarios y secundarios. Por ejemplo, puede que desee mostrar una cuadrícula que muestre los clientes de una `Customers` tabla. Cuando el usuario selecciona un cliente específico, otra cuadrícula muestra los pedidos de ese cliente de una tabla relacionada `Orders` .
 
  Puede crear controles enlazados a datos que muestren los datos relacionados arrastrando elementos desde la ventana **orígenes de datos** hasta WPF Designer.
 
@@ -56,11 +56,11 @@ En algunas aplicaciones, puede que desee trabajar con datos que proceden de vari
 
 7. Arrastre el nodo secundario (o cualquier elemento individual del nodo secundario) desde la ventana **orígenes de datos** hasta un destino de colocación válido en el diseñador.
 
-     Visual Studio genera XAML que crea nuevos controles enlazados a datos para cada uno de los elementos que se arrastran. El XAML también agrega un nuevo <xref:System.Windows.Data.CollectionViewSource> para la tabla o el objeto secundario a los recursos del destino de colocación. Esta nueva <xref:System.Windows.Data.CollectionViewSource> está enlazada a la propiedad de la tabla o el objeto primario que acaba de arrastrar al diseñador. En el caso de algunos orígenes de datos, Visual Studio también genera código para cargar los datos en la tabla o el objeto secundario.
+     Visual Studio genera XAML que crea nuevos controles enlazados a datos para cada uno de los elementos que se arrastran. El XAML también agrega un nuevo <xref:System.Windows.Data.CollectionViewSource> para la tabla o el objeto secundario a los recursos del destino de colocación. Este nuevo <xref:System.Windows.Data.CollectionViewSource> se enlaza a la propiedad de la tabla o el objeto primario que acaba de arrastrar al diseñador. En el caso de algunos orígenes de datos, Visual Studio también genera código para cargar los datos en la tabla o el objeto secundario.
 
      En la siguiente ilustración se muestra la tabla **Orders** relacionada de la tabla **Customers** en un conjunto de datos de la ventana **orígenes de datos** .
 
-     ![Ventana orígenes de datos que muestra la relación](../data-tools/media/datasources2.gif "DataSources2")
+     ![Ventana Orígenes de datos que muestra la relación](../data-tools/media/datasources2.gif "DataSources2")
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [crear tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

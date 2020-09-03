@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520073"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Cómo: Introducción a la personalización de la cinta de opciones
@@ -65,11 +65,11 @@ ms.locfileid: "85520073"
 
    - Nombres reservados para Windows o DOS como ("NUL", "AUX", "con", "COM1", "LPT1", etc.)
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
    El elemento de la cinta de opciones aparece en **Explorador de soluciones**. Para obtener información sobre los pasos siguientes, consulte [información general](../vsto/ribbon-overview.md)de la cinta de opciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

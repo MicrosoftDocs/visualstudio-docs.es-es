@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651887"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Cómo: Buscar temas en la tabla de contenido
@@ -32,7 +32,7 @@ En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar
 > El ámbito de temas disponibles en la TDC depende del filtro seleccionado.
 
 ## <a name="filter-the-toc"></a>Filtrar la TDC
- Puede filtrar la TDC para limitar el ámbito de los temas que aparecen en la pestaña **contenido** . los títulos aparecen en la lista solo si contienen la raíz del término que especifique. Por ejemplo, si especifica "solucionar" como un filtro, solo aparecerán los títulos que contengan "solucionar" o "solucionar problemas". Se contraen los nodos cuyos títulos no contienen el término en un único nodo con puntos suspensivos (...).
+ Puede filtrar la TDC para limitar el ámbito de los temas que aparecen en la pestaña **contenido** . Los títulos aparecen en la lista solo si contienen la raíz del término que especifique. Por ejemplo, si especifica "solucionar" como un filtro, solo aparecerán los títulos que contengan "solucionar" o "solucionar problemas". Se contraen los nodos cuyos títulos no contienen el término en un único nodo con puntos suspensivos (...).
 
 #### <a name="to-filter-the-toc"></a>Para filtrar la TDC
 
@@ -54,5 +54,5 @@ En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar
 
      Se abre la pestaña **Contenido** y se muestra la ubicación del tema en la TDC.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Buscar información](../ide/locate-information.md) [visor de ayuda de Microsoft](../ide/microsoft-help-viewer.md)

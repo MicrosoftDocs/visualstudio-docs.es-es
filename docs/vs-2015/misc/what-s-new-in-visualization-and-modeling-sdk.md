@@ -1,5 +1,5 @@
 ---
-title: Novedades&#39;del SDK de modelado y visualización | Microsoft Docs
+title: Novedades del SDK de visualización y modelado |&#39;Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,11 +12,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d517818d2ebbefcdcf91a707fbe5e5aeb117e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654228"
 ---
-# <a name="what39s-new-in-visualization-and-modeling-sdk"></a>Novedades&#39;del SDK de modelado y visualización
+# <a name="what39s-new-in-visualization-and-modeling-sdk"></a>Novedades del SDK de visualización y modelado&#39;
 ## <a name="new-features-in-dsl-tools-for-visual-studio-2011"></a>Nuevas características de DSL Tools para Visual Studio 2011

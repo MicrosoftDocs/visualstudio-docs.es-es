@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234723"
 ---
 # <a name="troubleshoot-office-solutions"></a>Solucionar problemas de soluciones de Office
@@ -60,4 +60,4 @@ ms.locfileid: "87234723"
 
 ## <a name="see-also"></a>Consulte también
 
-- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

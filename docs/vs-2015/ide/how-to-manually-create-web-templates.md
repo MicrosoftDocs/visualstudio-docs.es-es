@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4bf604e747158c651f284c6463c2c2f65ae3c47a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651802"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Cómo: Crear plantillas web manualmente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La creación de una plantilla web es diferente de la creación de otros tipos de plantillas. Dado que las plantillas de proyecto web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y los elementos de proyecto web se clasifican por lenguaje de programación, el archivo .vstemplate debe especificar la plantilla como una plantilla web e identificar el lenguaje de programación.
+La creación de una plantilla web es diferente de la creación de otros tipos de plantillas. Dado que las plantillas de proyecto web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y los elementos de proyecto web se clasifican por lenguaje de programación, el archivo. vstemplate debe especificar la plantilla como una plantilla Web e identificar el lenguaje de programación.
 
 > [!NOTE]
 > Las plantillas web deben contener un archivo .webproj vacío que se especifica mediante el atributo `File` del elemento `Project`. Aunque los proyectos web no requieren archivos de proyecto, este archivo es necesario para que las plantillas web funcionen correctamente.
@@ -58,7 +58,7 @@ La creación de una plantilla web es diferente de la creación de otros tipos de
    </TemplateData>
    ```
 
-7. Seleccione los archivos de la plantilla (incluido el archivo .vstemplate), haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)** . Los archivos se comprimen en un archivo .zip.
+7. Seleccione los archivos de la plantilla (incluido el archivo .vstemplate), haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)**. Los archivos se comprimen en un archivo .zip.
 
 8. Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. De forma predeterminada, este directorio es \Mis documentos\Visual Studio *Versión*\My Exported Templates\\.
 
@@ -86,5 +86,5 @@ La creación de una plantilla web es diferente de la creación de otros tipos de
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md) [referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

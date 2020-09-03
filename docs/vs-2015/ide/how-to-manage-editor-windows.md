@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9d9c01e07ab51e1ef21e9b886629dd7bb493c2c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651819"
 ---
 # <a name="how-to-manage-editor-windows"></a>Cómo: Administrar las ventanas del editor
@@ -56,5 +56,5 @@ Puede trabajar con código en varias ubicaciones a la vez. Puede hacerlo dividie
 
      Se agregará una nueva instancia con pestañas del editor.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Personalizar el editor](../ide/customizing-the-editor.md) [escribir código](../ide/writing-code-in-the-code-and-text-editor.md) [personalizar los diseños de ventana](../ide/customizing-window-layouts-in-visual-studio.md)

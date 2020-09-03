@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234697"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar errores en soluciones de Office
@@ -36,11 +36,11 @@ ms.locfileid: "87234697"
 
 - [Escribir código](#code)
 
-- [Compilar proyectos](#building)
+- [Proyectos de compilación](#building)
 
 - [Depurar proyectos](#debugging)
 
-## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Crear, actualizar y abrir proyectos
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> Crear, actualizar y abrir proyectos
  Pueden producirse los siguientes errores al crear o abrir proyectos de Office.
 
 ### <a name="the-project-cannot-be-created"></a>No se puede crear el proyecto
@@ -84,7 +84,7 @@ ms.locfileid: "87234697"
 
  Cuando termine de actualizar el proyecto, puede desinstalar Visual Studio 2005 Tools para Office Second Edition Runtime en el equipo de desarrollo si no lo usa ninguna otra solución de Office.
 
-## <a name="use-the-designers"></a><a name="designers"></a>Usar los diseñadores
+## <a name="use-the-designers"></a><a name="designers"></a> Usar los diseñadores
  Podría encontrar los siguientes errores al trabajar con el documento, el libro o el diseñador de hojas de cálculo en proyectos de nivel de documento.
 
 ### <a name="designer-failed-to-load-correctly"></a>El diseñador no se cargó correctamente
@@ -105,7 +105,7 @@ ms.locfileid: "87234697"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>El comando insertar imágenes prediseñadas no hace nada en el diseñador de Visual Studio
  Cuando Excel o Word está abierto en el diseñador de Visual Studio, al hacer clic en el botón **imagen prediseñada** de la pestaña **ilustraciones** de la cinta de opciones no se abre el panel de tareas **imágenes** prediseñadas. Para agregar imágenes prediseñadas, debe abrir la copia del libro o documento que se encuentra en la carpeta del proyecto principal (no la copia que se encuentra en la carpeta *\Bin* ) fuera de Visual Studio, agregar la imagen prediseñada y, a continuación, guardar el libro o el documento.
 
-## <a name="write-code"></a><a name="code"></a>Escribir código
+## <a name="write-code"></a><a name="code"></a> Escribir código
  Pueden producirse los siguientes errores al escribir código en proyectos de Office.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>No se puede obtener acceso a algunos eventos de los objetos de Office cuando se usa C\#
@@ -123,7 +123,7 @@ ms.locfileid: "87234697"
 
  Para obtener más información sobre las interfaces de eventos de los PIA de Office, vea [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>No se puede hacer referencia a las clases de PIA de Office en proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>No se puede hacer referencia a las clases de PIA de Office en proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
  En los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], no se compilará de forma predeterminada el código que hace referencia a una clase que se define en un PIA de Office. Las clases de los PIA usan la clase de Convención de nomenclatura *objectname*, como <xref:Microsoft.Office.Interop.Word.DocumentClass> y <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Por ejemplo, no se compilará el código siguiente desde un proyecto de complemento de VSTO de Word.
 
 ```vb
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Aunque haya importado el espacio de nombres de Word o Excel y tenga acceso a todas las clases que contiene, debe calificar totalmente todos los tipos con Word o Excel para quitar la ambigüedad de los espacios de nombres.
 
-## <a name="build-projects"></a><a name="building"></a>Proyectos de compilación
+## <a name="build-projects"></a><a name="building"></a> Compilar proyectos
  Pueden producirse los siguientes errores al compilar proyectos de Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>No se puede compilar un proyecto de nivel de documento basado en un documento con permisos restringidos
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Los errores del compilador se producen después de eliminar un control NamedRange
  Si elimina un control <xref:Microsoft.Office.Tools.Excel.NamedRange> de una hoja de cálculo que no es la hoja de cálculo activa en el diseñador, el código generado automáticamente podría no quitarse del proyecto y podrían producirse errores del compilador. Para asegurarse de que se quita el código, siempre debe seleccionar la hoja de cálculo que contiene el control <xref:Microsoft.Office.Tools.Excel.NamedRange> para convertirla en la hoja de cálculo activa antes de eliminar el control. Si el código generado automáticamente no se elimina cuando se elimina el control, puede hacer que el diseñador elimine el código activando la hoja de cálculo y realizando un cambio de modo que la hoja quede marcada como modificada. Cuando vuelva a compilar el proyecto, el código se quita.
 
-## <a name="debug-projects"></a><a name="debugging"></a>Depurar proyectos
+## <a name="debug-projects"></a><a name="debugging"></a> Depurar proyectos
  Pueden producirse los siguientes errores al depurar proyectos de Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Preguntar al desinstalar aparece al publicar e instalar una solución en el equipo de desarrollo
@@ -217,4 +217,4 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 - [Solucionar problemas de soluciones de Office](../vsto/troubleshooting-office-solutions.md)
 - [Solucionar problemas de seguridad de soluciones de Office](../vsto/troubleshooting-office-solution-security.md)
 - [Solucionar problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)
-- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

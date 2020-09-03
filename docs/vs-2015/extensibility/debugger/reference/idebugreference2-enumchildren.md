@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::EnumChildren | Microsoft Docs
+title: 'IDebugReference2:: EnumChildren | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4df5ad26db3ad519f162c62150d822ae2bc4b687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182480"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtener una lista de elementos secundarios seleccionados de una referencia. Reservado para un uso futuro.  
+Obtiene una lista de los elementos secundarios seleccionados de una referencia. Reservado para un uso futuro.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,27 +50,27 @@ int EnumChildren ( 
   
 #### <a name="parameters"></a>Parámetros  
  `dwFields`  
- [in] Una combinación de marcas de la [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeración que especifica qué campos de los enumerados [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) son estructuras que deben rellenarse.  
+ de Combinación de marcas de la enumeración [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) que especifica los campos de las estructuras de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) enumeradas que se van a rellenar.  
   
  `dwRadix`  
- [in] La base que se usará para dar formato a cualquier información numérica.  
+ de La base que se va a utilizar para dar formato a cualquier información numérica.  
   
  `dwAttribFilter`  
- [in] Una combinación de marcas de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeración que se utiliza como filtro en combinación con el `pszNameFilter` parámetro para seleccionar qué estructuras que se van a enumerar.  
+ de Combinación de marcas de la enumeración [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) que se utiliza como filtro en combinación con el `pszNameFilter` parámetro para seleccionar las estructuras que se van a enumerar.  
   
  `pszNameFilter`  
- [in] Una cadena que especifica un filtro, como "MyX", puede usado en combinación con el `dwAttribFilter` parámetro para seleccionar las estructuras que hay que enumerar.  
+ de Cadena que especifica un filtro, como "MyX", que se usa en combinación con el `dwAttribFilter` parámetro para seleccionar las estructuras que se van a enumerar.  
   
  `dwTimeout`  
- [in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
+ de Tiempo máximo, en milisegundos, que se va a esperar antes de que se devuelva desde este método. Use `INFINITE` para esperar indefinidamente.  
   
  `ppEnum`  
- [out] Devuelve un [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) objeto que contiene una lista de las propiedades del elemento secundario solicitado.  
+ enuncia Devuelve un objeto [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) que contiene una lista de las propiedades secundarias solicitadas.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Siempre devuelve `E_NOTIMPL`.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
  [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   

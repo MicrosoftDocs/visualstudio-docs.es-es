@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985440"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Tutorial: importar un área de formulario diseñada en Outlook
@@ -36,7 +36,7 @@ ms.locfileid: "72985440"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -108,7 +108,7 @@ ms.locfileid: "72985440"
 
      Asigne el nombre **TaskFormRegion** al área de formulario y guárdela en un directorio local del equipo.
 
-     Outlook guarda el área de formulario como un archivo de almacenamiento de formulario de Outlook ( *. OFS*). El área de formulario se guarda con el nombre *TaskFormRegion. OFS*.
+     Outlook guarda el área de formulario como un archivo de almacenamiento de formulario de Outlook (*. OFS*). El área de formulario se guarda con el nombre *TaskFormRegion. OFS*.
 
 27. Cierre Outlook.
 
@@ -161,12 +161,12 @@ ms.locfileid: "72985440"
 
     *TaskFormRegion.CS* o *TaskFormRegion. VB* se abre en el editor de código.
 
-2. Agregue el código siguiente a la clase `TaskFormRegion` . Este código rellena el cuadro combinado en el área de formulario con la línea de asunto de cada tarea de la carpeta Tareas de Outlook.
+2. Agregue el siguiente código a la clase `TaskFormRegion` . Este código rellena el cuadro combinado en el área de formulario con la línea de asunto de cada tarea de la carpeta Tareas de Outlook.
 
     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
 
-3. Agregue el código siguiente a la clase `TaskFormRegion` . Este código realiza las tareas siguientes:
+3. Agregue el siguiente código a la clase `TaskFormRegion` . Este código realiza las tareas siguientes:
 
    - Busca `Microsoft.Office.Interop.Outlook.TaskItem` en la carpeta Tareas llamando al método del asistente `FindTaskBySubjectName` y pasando el asunto de la tarea deseada. En el paso siguiente agregará el método del asistente `FindTaskBySubjectName`.
 
@@ -177,16 +177,16 @@ ms.locfileid: "72985440"
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
 
-4. Agregue el código siguiente a la clase `TaskFormRegion` . Este código proporciona el método del asistente `FindTaskBySubjectName` descrito en el paso anterior.
+4. Agregue el siguiente código a la clase `TaskFormRegion` . Este código proporciona el método del asistente `FindTaskBySubjectName` descrito en el paso anterior.
 
     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
 
-5. Agregue el código siguiente a la clase `TaskFormRegion` . Este código realiza las tareas siguientes:
+5. Agregue el siguiente código a la clase `TaskFormRegion` . Este código realiza las tareas siguientes:
 
    - Actualiza el cuadro de lista del área de formulario con el estado de finalización actual de cada tarea dependiente.
 
-   - Analiza el campo de texto oculto para obtener al asunto de cada tarea dependiente. A continuación, busca cada `Microsoft.Office.Interop.Outlook.TaskItem` en la carpeta *Tasks* llamando al método auxiliar `FindTaskBySubjectName` y pasando el asunto de cada tarea.
+   - Analiza el campo de texto oculto para obtener al asunto de cada tarea dependiente. A continuación, localiza cada `Microsoft.Office.Interop.Outlook.TaskItem` en la carpeta *tareas* llamando al `FindTaskBySubjectName` método auxiliar y pasando el asunto de cada tarea.
 
    - Agrega los valores `Microsoft.Office.Interop.Outlook.TaskItem.Subject` y `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` al cuadro de lista de tareas dependientes.
 
@@ -233,7 +233,7 @@ ms.locfileid: "72985440"
 
 10. Vuelva a abrir el elemento Tarea dependiente en Outlook.
 
-11. En el formulario Tareas dependiente, modifique el valor del campo **% completado** a **50 %** .
+11. En el formulario Tareas dependiente, modifique el valor del campo **% completado** a **50 %**.
 
 12. En la pestaña **tarea** de la cinta de opciones tarea dependiente, en el grupo **acciones** , haga clic en **Guardar & cerrar**.
 

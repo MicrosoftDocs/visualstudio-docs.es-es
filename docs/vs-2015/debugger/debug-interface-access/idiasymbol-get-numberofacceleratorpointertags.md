@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b25cd941b8f06909ca1bf777d0e3251c78732706
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183179"
 ---
-# <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
+# <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Devuelve el número de etiquetas de puntero de acelerador en una función de código auxiliar de C++ AMP.  
+Devuelve el número de etiquetas de puntero de acelerador en una C++ AMP función de código auxiliar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,13 +32,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
   
 #### <a name="parameters"></a>Parámetros  
  `count`  
- [out] Un puntero a un `DWORD` que contiene el número del Acelerador de etiquetas de puntero en un C++ función de código auxiliar de AMP.  
+ enuncia Un puntero a un `DWORD` que contiene el número de etiquetas de puntero de acelerador en una C++ amp función de código auxiliar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Se llama a este método en un `IDiaSymbol` interfaz que corresponde a una función de código auxiliar del Acelerador C++ AMP.  
+ Se llama a este método en una `IDiaSymbol` interfaz que corresponde a una función de código auxiliar de acelerador de C++ amp.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

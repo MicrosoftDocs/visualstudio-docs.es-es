@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f13689b6e3ac4db2d58c1def3a5d0dd05c219f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672317"
 ---
 # <a name="list-source-command"></a>Mostrar código fuente (Comando)
@@ -45,7 +45,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 
  /ShowLineNumbers: `yes|no` opcional. Especifica si se mostrarán o no los números de línea.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="example"></a>Ejemplo
  En este ejemplo se muestra el código fuente desde la línea 4 del archivo Form1.vb, con los números de línea visibles.
@@ -54,5 +54,5 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Ventana](../../ide/reference/command-window.md) comandos de [comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)

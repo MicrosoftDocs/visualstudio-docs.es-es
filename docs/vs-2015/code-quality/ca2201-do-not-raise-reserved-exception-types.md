@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546346"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: No provocar tipos de excepción reservados
@@ -66,19 +66,19 @@ ms.locfileid: "85546346"
 
 |Descripción del parámetro|Excepción|
 |---------------------------|---------------|
-|`null`referencia|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null` referencia|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |Fuera del intervalo permitido de valores (por ejemplo, un índice para una colección o lista)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |Valor no válido `enum`|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
 |Contiene un formato que no cumple las especificaciones de los parámetros de un método (como la cadena de formato para `ToString(String)` )|<xref:System.FormatException?displayProperty=fullName>|
 |De lo contrario|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Cuando una operación no es válida para el estado actual de un objeto Throw<xref:System.InvalidOperationException?displayProperty=fullName>
+ Cuando una operación no es válida para el estado actual de un objeto Throw <xref:System.InvalidOperationException?displayProperty=fullName>
 
- Cuando se realiza una operación en un objeto que se ha eliminado Throw<xref:System.ObjectDisposedException?displayProperty=fullName>
+ Cuando se realiza una operación en un objeto que se ha eliminado Throw <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Cuando no se admite una operación (por ejemplo, en una secuencia invalidada **. Write** en una secuencia abierta para lectura) throw<xref:System.NotSupportedException?displayProperty=fullName>
+ Cuando no se admite una operación (por ejemplo, en una secuencia invalidada **. Write** en una secuencia abierta para lectura) throw <xref:System.NotSupportedException?displayProperty=fullName>
 
- Cuando una conversión produciría un desbordamiento (por ejemplo, en una sobrecarga de operador de conversión explícita)<xref:System.OverflowException?displayProperty=fullName>
+ Cuando una conversión produciría un desbordamiento (por ejemplo, en una sobrecarga de operador de conversión explícita) <xref:System.OverflowException?displayProperty=fullName>
 
  En todas las demás situaciones, considere la posibilidad de crear su propio tipo que se deriva de <xref:System.Exception> y lo lanza.
 

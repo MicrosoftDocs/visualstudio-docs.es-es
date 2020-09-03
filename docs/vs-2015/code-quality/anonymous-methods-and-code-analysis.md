@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49da7d5e7f6a7731a708accb3d52fb6383ff1017
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652223"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Métodos anónimos y análisis de código
@@ -67,7 +67,7 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Métodos anónimos alineados
- Las advertencias y métricas de un método anónimo que se declara como una asignación insertada en un campo se asocian con el constructor. Si el campo se declara como `static` (`Shared` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), las advertencias y las métricas están asociadas al constructor de clase. de lo contrario, se asocian con el constructor de instancia.
+ Las advertencias y métricas de un método anónimo que se declara como una asignación insertada en un campo se asocian con el constructor. Si el campo se declara como `static` ( `Shared` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), las advertencias y las métricas están asociadas al constructor de clase; de lo contrario, se asocian al constructor de instancia.
 
  Por ejemplo, en la siguiente clase, cualquier advertencia que se encuentre en la declaración de **anonymousMethod1** se generará en el constructor predeterminado generado implícitamente de la **clase**. Mientras que los que se encuentran en **anonymousMethod2** se aplicarán al constructor de clase generado implícitamente.
 
@@ -108,7 +108,7 @@ class Class
 
  Una clase puede contener un método anónimo insertado que asigna un valor a un campo que tiene varios constructores. En este caso, las advertencias y las métricas están asociadas a todos los constructores a menos que el constructor se encadene a otro constructor de la misma clase.
 
- Por ejemplo, en la siguiente clase, cualquier advertencia que se encuentre en la declaración de **anonymousMethod** debe generarse en la **clase (int)** y en la **clase (cadena)** pero no en la **clase ()** .
+ Por ejemplo, en la siguiente clase, cualquier advertencia que se encuentre en la declaración de **anonymousMethod** debe generarse en la **clase (int)** y en la **clase (cadena)** pero no en la **clase ()**.
 
 ```vb
 
@@ -152,5 +152,5 @@ class Class
 
  Puede solucionar este problema de una de las dos maneras siguientes. Podría declarar **anonymousMethod** en un constructor común que todos los constructores encadenan. O bien, puede declararlo en un método de inicialización al que llamen todos los constructores.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

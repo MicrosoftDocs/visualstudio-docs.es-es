@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bc0e6e7e1530abb63beabc6fa4aedd4a0fa985af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672335"
 ---
 # <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
@@ -24,7 +24,7 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
  Para obtener información general sobre cómo escribir plantillas de texto, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> No necesita la directiva de salida `assembly` en una plantilla de texto (preprocesada) en tiempo de ejecución. En su lugar, agregue los ensamblados necesarios a las **referencias** del proyecto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+> No necesita la directiva de salida `assembly` en una plantilla de texto (preprocesada) en tiempo de ejecución. En su lugar, agregue los ensamblados necesarios a las **referencias** del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto.
 
 ## <a name="using-the-assembly-directive"></a>Usar la directiva de ensamblado
  La sintaxis de las directivas es la siguiente:
@@ -45,7 +45,7 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- La directiva de ensamblado no tiene ningún efecto en una plantilla de texto preprocesada. En su lugar, incluya las referencias necesarias en la sección **referencias** de su proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ La directiva de ensamblado no tiene ningún efecto en una plantilla de texto preprocesada. En su lugar, incluya las referencias necesarias en la sección **referencias** del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Ensamblados estándar
  Loa siguientes ensamblados se cargan automáticamente, por lo que no es necesario escribir las directivas de ensamblado para ellos:
@@ -66,7 +66,7 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
 
 - El ensamblado contiene el ADSL.
 
-## <a name="msbuild"></a>Usar las propiedades del proyecto en MSBuild y Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Usar las propiedades del proyecto en MSBuild y Visual Studio
  Las macros de Visual Studio, como $ (SolutionDir), no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.
 
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myLibFolder`:
@@ -92,5 +92,5 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Directiva Include T4](../modeling/t4-include-directive.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 149370bfee1b142876dff881625d08083afadea4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652311"
 ---
 # <a name="t4-output-directive"></a>Directiva de salida T4
@@ -21,11 +21,11 @@ ms.locfileid: "72652311"
 
 En las plantillas de texto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la directiva `output` sirve para definir la extensión de nombre de archivo y codificación del archivo transformado.
 
- Por ejemplo, si el proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] incluye un archivo de plantilla denominado **MyTemplate.TT** que contiene la siguiente directiva:
+ Por ejemplo, si el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto incluye un archivo de plantilla denominado **MyTemplate.TT** que contiene la siguiente directiva:
 
  `<#@output extension=".cs"#>`
 
- a continuación [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generará un archivo denominado **MyTemplate.CS**
+ a continuación, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generará un archivo denominado **MyTemplate.CS**
 
  La directiva de `output` no es necesaria en una plantilla de texto en tiempo de ejecución (preprocesada), ya que, en su lugar, la aplicación obtiene la cadena generada llamando a `TextTransform()`. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
@@ -71,6 +71,6 @@ En las plantillas de texto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la d
 
  `utf-32`
 
- `0` (valor predeterminado del sistema)
+ `0` (Valor predeterminado del sistema)
 
  Por lo general, se puede usar la cadena WebName o el número de CodePage de cualquiera de las codificaciones devueltas por <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

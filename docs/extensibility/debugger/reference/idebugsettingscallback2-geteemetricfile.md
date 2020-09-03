@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricFile ? Microsoft Docs
+title: 'IDebugSettingsCallback2:: GetEEMetricFile | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720048"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
@@ -45,16 +45,16 @@ private int GetEEMetricFile(
 
 ## <a name="parameters"></a>Parámetros
 `guidLang`\
-[en] Identificador único del lenguaje de programación.
+de Identificador único del lenguaje de programación.
 
 `guidVendor`\
-[en] Identificador único del proveedor.
+de Identificador único del proveedor.
 
 `pszMetric`\
-[en] Nombre de la métrica.
+de Nombre de la métrica.
 
 `pbstrValue`\
-[fuera] Devuelve el contenido del archivo de métricas como una cadena.
+enuncia Devuelve el contenido del archivo de métricas como una cadena.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e386277c56f7da50e55e077620cbf649ec6a0c9e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546255"
 ---
 # <a name="intellitrace-features"></a>Características de IntelliTrace
@@ -43,12 +43,12 @@ IntelliTrace le permite registrar eventos y llamadas de método de su aplicació
 > [!NOTE]
 > Los valores de la página de opciones de **IntelliTrace** se aplican a Visual Studio en su totalidad, no a soluciones o proyectos individuales. Un cambio en estos valores se aplica a todas las instancias de Visual Studio, a todas las sesiones de depuración y a todos los proyectos o soluciones.  
   
-## <a name="choose-the-events-that-intellitrace-records"></a><a name="ChooseEvents"></a>Elegir los eventos que IntelliTrace registra  
+## <a name="choose-the-events-that-intellitrace-records"></a><a name="ChooseEvents"></a> Elegir los eventos que IntelliTrace registra  
  Es posible activar o desactivar el registro de eventos específicos de IntelliTrace.  
   
  Si está depurando, detenga la depuración. Vaya a **herramientas/opciones/IntelliTrace/eventos de IntelliTrace**. Elija los eventos que desea que IntelliTrace registre.  
   
-## <a name="collect-intellitrace-events-and-call-information"></a><a name="GoingFurther"></a>Recopilar eventos de IntelliTrace e información de llamadas  
+## <a name="collect-intellitrace-events-and-call-information"></a><a name="GoingFurther"></a> Recopilar eventos de IntelliTrace e información de llamadas  
  Además de los eventos, IntelliTrace puede registrar las llamadas de método, aunque esta opción no está habilitada de forma predeterminada. Para habilitar la recopilación de llamadas a métodos, vaya a **herramientas/opciones/IntelliTrace/general**y seleccione **eventos de IntelliTrace e información de llamadas**.  
   
  Esto le permite ver el historial de la pila de llamadas y retroceder o avanzar a través de las llamadas de código. IntelliTrace registra datos como nombres de método, puntos de entrada y salida de métodos, y ciertos valores de parámetros y valores devueltos.  
@@ -82,7 +82,7 @@ IntelliTrace le permite registrar eventos y llamadas de método de su aplicació
   
  Intente reducir al máximo el número de módulos, ya que el rendimiento mejora al tener que recopilar menos datos. También se obtiene menos ruido en la interfaz de usuario porque se deben recorrer menos datos.  
   
-## <a name="saving-intellitrace-data-to-file"></a><a name="SaveSession"></a>Guardar datos de IntelliTrace en un archivo  
+## <a name="saving-intellitrace-data-to-file"></a><a name="SaveSession"></a> Guardar datos de IntelliTrace en un archivo  
  Puede guardar los datos recopilados por IntelliTrace para **depurar/IntelliTrace/guardar la sesión de IntelliTrace** durante la depuración y la aplicación se encuentra en un estado de interrupción. El elemento de menú está deshabilitado y no podrá guardar los datos recopilados por IntelliTrace si la aplicación se está ejecutando o si se ha detenido la depuración.  
   
  Puede configurar IntelliTrace para que se guarde automáticamente en un archivo; para ello, vaya a **herramientas/opciones/IntelliTrace/avanzado** y seleccione **almacenar grabaciones de IntelliTrace en este directorio**. También puede configurar un tamaño fijo para el archivo generado; esto hará que IntelliTrace sobrescriba los datos más antiguos cuando se quede sin espacio. Visual Studio crea dos archivos para cada sesión de IntelliTrace cuando se guardan automáticamente y se activa el proceso de hospedaje de Visual Studio (vshost.exe).  

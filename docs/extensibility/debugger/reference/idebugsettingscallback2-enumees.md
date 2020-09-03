@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::EnumEEs ? Microsoft Docs
+title: 'IDebugSettingsCallback2:: Enums | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19e0763ad74b3486b8bc2548ec129d9e95feb771
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720237"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Enumera los evaluadores de expresiones disponibles dados los identificadores de idioma y proveedor.
+Enumera los evaluadores de expresiones disponibles a partir de los identificadores de idioma y proveedor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,16 +45,16 @@ public int EnumEEs(
 
 ## <a name="parameters"></a>Parámetros
 `celtBuffer`\
-[en] Número de elementos en el `pceltEEs` búfer.
+de Número de elementos del `pceltEEs` búfer.
 
 `rgguidLang`\
-[adentro, fuera] Identificador único para el lenguaje de programación.
+[in, out] Identificador único para el lenguaje de programación.
 
 `rgguidVendor`\
-[adentro, fuera] Identificador único para el proveedor.
+[in, out] Identificador único para el proveedor.
 
 `pceltEEs`\
-[adentro, fuera] Matriz de evaluadores de expresiones.
+[in, out] Matriz de evaluadores de expresiones.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

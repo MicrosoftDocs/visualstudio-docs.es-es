@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d25b7cf505f0aa049d0faceb093599a1cd0b78cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182589"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
@@ -37,16 +37,16 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] El número de secuencias de depuración en el enumerador que se va a recuperar.  
+ de El número de secuencias de depuración en el enumerador que se va a recuperar.  
   
  rgelt  
- [out] Devuelve una matriz de [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) transmite por secuencias que se va a recuperar objetos que representan la depuración.  
+ enuncia Devuelve una matriz de objetos [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) que representa las secuencias de depuración que se van a recuperar.  
   
  pceltFetched  
- [out] Devuelve el número de secuencias de depuración que se devuelve.  
+ enuncia Devuelve el número de flujos de depuración devueltos.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay más secuencias. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
