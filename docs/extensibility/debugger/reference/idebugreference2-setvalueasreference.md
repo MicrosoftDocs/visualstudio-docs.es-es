@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference ? Microsoft Docs
+title: 'IDebugReference2:: SetValueAsReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f4767dbe08e716d64ea03c18a1c4a6f7d6690a7b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720309"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Establece el valor de una referencia de otra referencia. Reservado para uso futuro.
+Establece el valor de una referencia desde otra referencia. Reservado para un uso futuro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,16 +47,16 @@ int SetValueAsReference ( 
 
 ## <a name="parameters"></a>Parámetros
 `rgpArgs`\
-[en] Matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos utilizados para determinar cómo establecer el valor de referencia.
+de Matriz de objetos [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que se usa para determinar cómo establecer el valor de referencia.
 
 `dwArgCount`\
-[en] El número de referencias en la matriz.
+de Número de referencias de la matriz.
 
 `pValue`\
-[en] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto desde el que establecer el valor de propiedad.
+de Objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) a partir del cual se va a establecer el valor de propiedad.
 
 `dwTimeout`\
-[en] Tiempo máximo, en milisegundos, para esperar antes de volver de este método. Se `INFINITE` usa para esperar indefinidamente.
+de Tiempo máximo, en milisegundos, que se va a esperar antes de que se devuelva desde este método. Use `INFINITE` para esperar indefinidamente.
 
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.

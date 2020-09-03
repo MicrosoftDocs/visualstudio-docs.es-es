@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bae47d5fd759de66777c4e1472603d3bf4a193d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843936"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evite utilizar excepciones para el flujo de control
@@ -38,9 +38,9 @@ Identificador de regla | DA0007 |
 ## <a name="rule-description"></a>Descripción de la regla  
  Aunque el uso de controladores de excepciones para detectar errores y otros eventos que interrumpen la ejecución del programa es una buena práctica, el uso del controlador de excepciones como parte de la lógica de ejecución de programa normal puede ser costoso y debe evitarse. En la mayoría de los casos, las excepciones se deben utilizar solo en circunstancias que se producen con poca frecuencia y no se esperan. Las excepciones no deben utilizarse para devolver valores como parte del flujo del programa normal. En muchos casos, puede evitar generar excepciones si valida los valores y utiliza la lógica condicional para detener la ejecución de las instrucciones que provocan el problema.  
   
- Para obtener más información, consulte la sección [Administración de excepciones](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic24) sección de **Capítulo 5: Mejorar el rendimiento de código administrado** en el volumen **Mejorar el rendimiento y la escalabilidad de las aplicaciones .NET** de la biblioteca **Patrones y prácticas de Microsoft** de MSDN.  
+ Para obtener más información, consulte la sección [Administración de excepciones](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic24) del **capítulo 5: mejorar el rendimiento del código administrado** en el volumen **mejorar el rendimiento y la escalabilidad de las aplicaciones .net** de la biblioteca de **patrones y prácticas de Microsoft** en MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
- Haga doble clic en el mensaje de la ventana Lista de errores para navegar a la vista Marcas. Busque la columna que contiene las medidas **Excepciones de .NET CLR(@ProcessInstance)\\número de excepciones producidas por segundo**. Determine si hay fases concretas de ejecución del programa en que el control de excepciones sea más frecuente que en otras. Mediante un perfil de muestreo, intente identificar las instrucciones Throw y los bloques Try/Catch que generan excepciones frecuentes. Si es necesario, agregue lógica a los bloques Catch para entender mejor qué excepciones se controlan con más frecuencia. Siempre que sea posible, reemplace las instrucciones Throw o los bloques Catch que se ejecutan con frecuencia con lógica de control de flujo simple o código de validación.  
+ Haga doble clic en el mensaje de la ventana Lista de errores para navegar a la vista Marcas. Busque la columna que contiene las medidas **.net CLR Exceptions ( @ProcessInstance ) \\ # of excepciones producidas por segundo** . Determine si hay fases concretas de ejecución del programa en que el control de excepciones sea más frecuente que en otras. Mediante un perfil de muestreo, intente identificar las instrucciones Throw y los bloques Try/Catch que generan excepciones frecuentes. Si es necesario, agregue lógica a los bloques Catch para entender mejor qué excepciones se controlan con más frecuencia. Siempre que sea posible, reemplace las instrucciones Throw o los bloques Catch que se ejecutan con frecuencia con lógica de control de flujo simple o código de validación.  
   
  Por ejemplo, si descubre que su aplicación controlaba excepciones DivideByZeroException frecuentes, agregar lógica a su programa para comprobar los denominadores con valores cero mejorará el rendimiento de la aplicación.

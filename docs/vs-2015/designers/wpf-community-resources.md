@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843892"
 ---
 # <a name="wpf-community-resources"></a>Recursos de la comunidad de WPF
@@ -21,10 +21,10 @@ ms.locfileid: "75843892"
 
 Microsoft ofrece una amplia gama de recursos de comunidad que le ayudarán a conocer, analizar y proporcionar comentarios sobre Windows Presentation Foundation (WPF), incluidos los blogs de los miembros del equipo de WPF y líderes de la comunidad, los foros y el centro de comentarios de Microsoft Connect.
 
-## <a name="community"></a>comunidad
+## <a name="community"></a>Comunidad
  [Foro de WPF](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
- [Desbordamiento de pila](https://stackoverflow.com/questions/tagged/wpf)
+ [Stack Overflow](https://stackoverflow.com/questions/tagged/wpf)
 
  [Blog del equipo de WPF](https://devblogs.microsoft.com/wpf/)
 
@@ -32,6 +32,6 @@ Microsoft ofrece una amplia gama de recursos de comunidad que le ayudarán a con
 
  [Centro de desarrollo de Windows Presentation Foundation](https://www.visualstudio.com/features/wpf-vs)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear aplicaciones de escritorio modernas con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

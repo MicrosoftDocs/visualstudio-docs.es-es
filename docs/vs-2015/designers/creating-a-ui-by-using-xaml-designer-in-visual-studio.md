@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d230d9a4719e1757820de87b60bcc7566a785f99
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844020"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
@@ -34,15 +34,15 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 ## <a name="authoring-views"></a>Vistas de creación
  El Diseñador XAML proporciona una vista XAML y una vista Diseño sincronizada del marcado XAML representado de la aplicación. Con un archivo XAML abierto en Visual Studio, puede cambiar entre la vista Diseño y la vista XAML mediante las pestañas **Diseño** y **XAML** . Puede usar el botón **Intercambiar paneles** para cambiar la ventana que aparece en la parte superior: la mesa de trabajo o el Editor XAML.
 
- En la vista Diseño, la ventana que contiene la *mesa de trabajo* es la ventana activa y se puede usar como superficie de trabajo principal. Puede usarla para diseñar visualmente una página en la aplicación agregando o dibujando elementos y modificándolos. Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Esta ilustración muestra la mesa de trabajo en la vista Diseño.
+ En Vista de diseño, la ventana que contiene la *mesa* de trabajo es la ventana activa y se puede usar como superficie de trabajo principal. Puede usarla para diseñar visualmente una página en la aplicación agregando o dibujando elementos y modificándolos. Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Esta ilustración muestra la mesa de trabajo en la vista Diseño.
 
- ![Vista de diseño de Diseñador XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![Vista de diseño del diseñador XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Las siguientes características están disponibles en la mesa de trabajo:
 
  **Guías de alineación** Las guías de alineación son *límites de alineación* que aparecen como líneas discontinuas de color rojo para mostrar cuándo se alinean los bordes de los controles o cuándo se alinean las líneas base de texto. Los límites de alineación aparecen solamente cuando está habilitado el **ajuste a las guías de alineación** .
 
- Los **raíles** `Grid` raíles se usan para administrar filas y columnas en un panel de [cuadrícula](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.
+ **Raíles Grid Los raíles ** `Grid` se usan para administrar las filas y columnas en un panel [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.
 
  **Controles Adorner de Grid** Un control Adorner de `Grid` aparece como un triángulo con una línea vertical u horizontal asociada a él en el raíl `Grid`. Cuando se arrastra un control Adorner de `Grid` , el ancho o el alto de las filas o las columnas adyacentes se actualiza al mover el mouse.
 
@@ -58,7 +58,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  En la vista Diseño, en el área inferior izquierda de la pantalla, están disponibles otros comandos de la mesa de trabajo, tal como se muestra aquí:
 
- ![Vista de diseño comandos](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Comandos de la Vista de diseño](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Estos comandos están disponibles en esta barra de herramientas:
 
@@ -81,7 +81,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 ## <a name="device-window"></a>Ventana de dispositivo
  La ventana Dispositivo del Diseñador XAML permite simular en tiempo de diseño varias vistas, presentaciones y opciones de visualización para el proyecto de la Tienda Windows o Windows Phone. La ventana Dispositivo está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:
 
- ![Ventana del dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Ventana de dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Estas son las opciones disponibles en la ventana Dispositivo:
 
@@ -108,7 +108,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
 - Ver la estructura jerárquica de todos los elementos de la mesa de trabajo.
 
-- Seleccionar elementos para poder modificarlos (moverlos por la jerarquía, modificarlos en la mesa de trabajo, establecer sus propiedades en la ventana Propiedades, etc.). Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
+- Seleccionar elementos para poder modificarlos (moverlos por la jerarquía, modificarlos en la mesa de trabajo, establecer sus propiedades en la ventana Propiedades, etc.). Para obtener más información, vea [trabajar con elementos en diseñador XAML](../designers/working-with-elements-in-xaml-designer.md)
 
 - Crear y modificar plantillas para elementos que son controles.
 
@@ -116,15 +116,15 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
   Para ver la ventana Esquema del documento, en la barra de menús elija **Vista**, **Otras ventanas**, **Esquema del documento**.
 
-  ![Ventana esquema del documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![Ventana Esquema del documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   Estas son las opciones disponibles en la ventana Esquema del documento:
 
   **Esquema del documento** La vista principal de la ventana Esquema del documento muestra la jerarquía de un documento en una estructura de árbol. Puede usar la naturaleza jerárquica del esquema del documento para examinar el documento en los distintos niveles de detalle y para bloquear y ocultar elementos individualmente o en grupos.
 
-  **Mostrar/ocultar** Muestra u oculta los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Use los botones **Mostrar u ocultar** , en los que aparece un símbolo de un ojo si se muestran los elementos, o bien presione CTRL+H para ocultar elementos y CTRL+MAYÚS+H para mostrarlos.
+  **Mostrar/ocultar** Muestra u oculta los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Use los botones **Mostrar u ocultar** , que muestran un símbolo de un ojo cuando se muestra, o presione Ctrl + h para ocultar elementos y Mayús + Ctrl + H para mostrarlos.
 
-  **Bloquear/desbloquear** Bloquea o desbloquea los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Los elementos bloqueados no se pueden modificar. Use los botones **Bloquear o desbloquear** , en los que aparece un símbolo de un candado si se bloquean los elementos, o bien presione CTRL+L para bloquear elementos y CTRL+MAYÚS+L para desbloquearlos.
+  **Bloquear/desbloquear** Bloquea o desbloquea los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Los elementos bloqueados no se pueden modificar. Use los botones de **bloqueo/desbloqueo** , que muestran un símbolo de candado cuando están bloqueados o presione Ctrl + l para bloquear elementos y Mayús + Ctrl + L para desbloquearlos.
 
   **Devolver ámbito a pageRoot** La opción de la parte superior de la ventana Esquema del documento, que muestra un símbolo de flecha hacia arriba, devuelve el esquema del documento al ámbito anterior. Esta opción solo es aplicable cuando se está en el ámbito de un estilo o una plantilla.
 
@@ -137,5 +137,5 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* que aparece como un símbolo de cuadro. La apariencia del marcador de propiedad indica si se aplicó a la propiedad un enlace de datos o un recurso. Por ejemplo, un símbolo de cuadro blanco indica un valor predeterminado, un símbolo de cuadro negro suele indicar que se ha aplicado un recurso local y un símbolo de cuadro naranja suele indicar que se ha aplicado un enlace de datos. Al hacer clic en el marcador de propiedad, puede navegar a la definición de un estilo, abrir el generador de enlace de datos o abrir el selector de recursos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Trabajar con elementos en diseñador XAML](../designers/working-with-elements-in-xaml-designer.md) [Cómo crear y aplicar un recurso](../designers/how-to-create-and-apply-a-resource.md) [Tutorial: enlazar a datos en diseñador XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

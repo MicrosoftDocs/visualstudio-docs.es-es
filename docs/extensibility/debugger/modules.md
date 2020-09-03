@@ -1,5 +1,5 @@
 ---
-title: Módulos de la página de la is Microsoft Docs
+title: Módulos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: abdf76c7f5f031d2ef7f3bcac2bae8a2c508b783
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738346"
 ---
 # <a name="modules"></a>Módulos
-En cuanto a la arquitectura del depurador, un *módulo:*
+En cuanto a la arquitectura del depurador, un *módulo*:
 
 - Es un contenedor físico de código, como un archivo ejecutable o un archivo DLL.
 
-- Puede recargar sus símbolos y describirse a sí mismo. Las descripciones del módulo se muestran en la ventana Módulos del IDE.
+- Puede volver a cargar sus símbolos y describirse a sí mismo. Las descripciones del módulo se muestran en la ventana módulos del IDE.
 
-- Se representa mediante un [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) interfaz, creado por un motor de depuración para describir el módulo.
+- Se representa mediante una interfaz [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) , creada por un motor de depuración para describir el módulo.
 
 ## <a name="see-also"></a>Vea también
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)
