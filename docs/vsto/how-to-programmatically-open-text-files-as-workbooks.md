@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519838"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Cómo: abrir archivos de texto como libros mediante programación
@@ -37,7 +37,7 @@ ms.locfileid: "85519838"
 
 - Archivo de texto `Test.txt` que se va a almacenar en la unidad C.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
 - [Cómo: abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)
 - [Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)

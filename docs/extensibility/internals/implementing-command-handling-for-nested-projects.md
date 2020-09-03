@@ -1,5 +1,5 @@
 ---
-title: Implementación de la gestión de comandos para proyectos anidados ? Microsoft Docs
+title: Implementar el control de comandos para proyectos anidados | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707609"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementación del control de comandos para proyectos anidados
-El IDE puede pasar comandos <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> que <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> se pasan a través de las interfaces y a los proyectos anidados, o los proyectos primarios pueden filtrar o invalidar los comandos.
+El IDE puede pasar comandos que se pasan a través de las <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaces y a proyectos anidados, o los proyectos primarios pueden filtrar o invalidar los comandos.
 
 > [!NOTE]
-> Solo se pueden filtrar los comandos que normalmente controla el proyecto primario. Los comandos como **Build** e **Deploy** controlados por el IDE no se pueden filtrar.
+> Solo se pueden filtrar los comandos que normalmente controla el proyecto primario. No se pueden filtrar los comandos como **compilación** e **implementación** administrados por el IDE.
 
  En los pasos siguientes se describe el proceso para implementar el control de comandos.
 
@@ -31,13 +31,13 @@ El IDE puede pasar comandos <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHier
 
 1. Cuando el usuario selecciona un proyecto anidado o un nodo en un proyecto anidado:
 
-   1. El IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> llama al método.
+   1. El IDE llama al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método.
 
-      — o —
+      o
 
-   2. Si el comando se originó en una ventana de jerarquía, como un <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> comando de menú contextual en el Explorador de soluciones, el IDE llama al método en el elemento primario del proyecto.
+   2. Si el comando se originó en una ventana de jerarquía, como un comando de menú contextual en Explorador de soluciones, el IDE llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> método en el elemento primario del proyecto.
 
-2. El proyecto primario puede examinar `QueryStatus`los parámetros que se van a pasar a , como `pguidCmdGroup` y `prgCmds`, para determinar si el proyecto primario debe filtrar los comandos. Si el proyecto primario se implementa para filtrar comandos, debe establecer:
+2. El proyecto primario puede examinar los parámetros que se van a pasar a `QueryStatus` , como `pguidCmdGroup` y `prgCmds` , para determinar si el proyecto primario debe filtrar los comandos. Si el proyecto primario se implementa para filtrar comandos, debe establecer:
 
    ```
    prgCmds[0].cmdf = OLECMDF_SUPPORTED;
@@ -45,9 +45,9 @@ El IDE puede pasar comandos <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHier
    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;
    ```
 
-    A continuación, el `S_OK`proyecto primario debe devolver .
+    Después, el proyecto primario debe devolver `S_OK` .
 
-    Si el proyecto primario no filtra el `S_OK`comando, solo debe devolver . En este caso, el IDE enruta automáticamente el comando al proyecto secundario.
+    Si el proyecto primario no filtra el comando, debe devolver simplemente `S_OK` . En este caso, el IDE enruta automáticamente el comando al proyecto secundario.
 
     El proyecto primario no tiene que enrutar el comando al proyecto secundario. El IDE realiza esta tarea.
 

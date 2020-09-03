@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b4c640c28ada16a8a03943fcd1362d4fd521772c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671128"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;signature&gt; (JavaScript)
@@ -33,18 +33,18 @@ Agrupa un conjunto de elementos relacionados para que una función o un método 
 ```
 
 #### <a name="parameters"></a>Parámetros
- `externalid` Opcional. Si el `format` atributo para el elemento de [> \<loc](../ide/loc-javascript.md) es `vsdoc`, este atributo especifica el identificador de miembro utilizado para buscar el código XML asociado a la firma. A diferencia del atributo `locid`, este atributo especifica que se deben cargar todos los elementos del miembro que tiene este identificador. Cualquier información de descripción asociada presente en el código XML también se combinará con los elementos especificados en la signatura. Esto permite especificar elementos adicionales, como `<capability>`, en el archivo asociado sin especificarlos en el archivo de código fuente. `externalid` es un atributo opcional.
+ `externalid` Opcional. Si el `format` atributo del [\<loc>](../ide/loc-javascript.md) elemento es `vsdoc` , este atributo especifica el identificador de miembro utilizado para buscar el código XML asociado a la firma. A diferencia del atributo `locid`, este atributo especifica que se deben cargar todos los elementos del miembro que tiene este identificador. Cualquier información de descripción asociada presente en el código XML también se combinará con los elementos especificados en la signatura. Esto permite especificar elementos adicionales, como `<capability>`, en el archivo asociado sin especificarlos en el archivo de código fuente. `externalid` es un atributo opcional.
 
  `externalFile` Opcional. Especifica el nombre del archivo en el que se va a buscar `externalid`. Este atributo se omite si no hay ningún `externalid` presente. Es un atributo opcional. El valor predeterminado es el nombre del archivo actual, pero con una extensión .xml en lugar de .js. De forma predeterminada, para buscar el archivo se utilizan las reglas de búsqueda de recursos administrados para la localización.
 
  `helpKeyword` Opcional. Palabra clave de la Ayuda de F1.
 
- `locid` Opcional. Identificador de la información de localización sobre el campo. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en la etiqueta [\<loc>](../ide/loc-javascript.md).
+ `locid` Opcional. Identificador de la información de localización sobre el campo. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en la [\<loc>](../ide/loc-javascript.md) etiqueta.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Utilice un elemento `<signature>` para cada descripción de función sobrecargada del archivo .js o utilice un elemento `<signature>` para cada identificador de miembro externo especificado.
 
- El elemento `<signature>` debe colocarse en el cuerpo de la función antes de cualquier instrucción. Cuando use [\<summary >](../ide/summary-javascript.md), [\<param >](../ide/param-javascript.md)o [\<returns elementos >](../ide/returns-javascript.md) con el elemento `<signature>`, coloque los demás elementos dentro del bloque `<signature>`.
+ El elemento `<signature>` debe colocarse en el cuerpo de la función antes de cualquier instrucción. Al usar [\<summary>](../ide/summary-javascript.md) los [\<param>](../ide/param-javascript.md) elementos, o [\<returns>](../ide/returns-javascript.md) con el `<signature>` elemento, coloque los demás elementos dentro del `<signature>` bloque.
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se muestra cómo usar el elemento `<signature>`.
@@ -89,5 +89,5 @@ function add(a, b) {
 }
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte también
+ [Comentarios de la documentación XML](../ide/xml-documentation-comments-javascript.md)

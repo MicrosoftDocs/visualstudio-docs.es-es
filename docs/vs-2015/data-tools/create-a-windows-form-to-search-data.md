@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81980f38cbd8fb595530cc52b2cf32056feb43a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670055"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Crear Windows Forms para buscar en datos
@@ -38,7 +38,7 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
 
  Las tareas ilustradas en este tutorial incluyen:
 
-- Crear un nuevo proyecto de aplicación de Windows Forms.
+- Crear un proyecto nuevo de aplicación Windows Forms.
 
 - Crear y configurar el origen de datos en la aplicación con el Asistente para la **configuración de orígenes de datos** .
 
@@ -52,7 +52,7 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
 
 - Escribir parámetros en el formulario y ejecutar la consulta con parámetros.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para completar las tareas de este tutorial, necesitará:
 
 - Acceso a la base de datos de ejemplo Northwind.
@@ -77,7 +77,7 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
 
 1. En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
@@ -97,8 +97,8 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
 
      Se agrega al proyecto **NorthwindDataSet** y la tabla **Customers** aparece en la ventana **Orígenes de datos**.
 
-## <a name="create-the-form"></a>Crear el formulario
- Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
+## <a name="create-the-form"></a> Crear el formulario
+ Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **orígenes de datos** hasta el formulario.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para crear controles enlazados en el formulario
 
@@ -128,7 +128,7 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
      `WHERE City = @City`
 
     > [!NOTE]
-    > Los orígenes de datos de acceso y OLE DB utilizan el signo de interrogación ('? ') para denotar los parámetros, por lo que la cláusula WHERE tendría el siguiente aspecto: `WHERE City = ?`.
+    > Los orígenes de datos de acceso y OLE DB utilizan el signo de interrogación ('? ') para denotar los parámetros, por lo que la cláusula WHERE tendría el siguiente aspecto: `WHERE City = ?` .
 
 4. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Generador de criterios de búsqueda**.
 
@@ -152,5 +152,5 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
 
 - Modificar el conjunto de datos agregando o quitando objetos de la base de datos. Para obtener más información, vea [Crear y configurar conjuntos de datos](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8593f32b31dc70be08c777e86ae404da0578c48d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284235"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic

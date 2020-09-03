@@ -1,5 +1,5 @@
 ---
-title: Extensibilidad del servicio de idiomas heredados ? Microsoft Docs
+title: Extensibilidad del servicio de lenguaje heredado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81b5ec3de8d7b0b9466e162c3ee193c130634cd4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707409"
 ---
 # <a name="legacy-language-service-extensibility"></a>Extensibilidad de servicio de lenguaje heredado
-Un servicio de lenguaje proporciona compatibilidad específica del idioma para editar código fuente en el IDE.
+Un servicio de lenguaje proporciona compatibilidad específica del lenguaje para editar el código fuente en el IDE.
 
- Los servicios de lenguaje heredados se implementan como parte de un VSPackage, pero la forma más reciente de implementar características de servicio de lenguaje es usar extensiones MEF. Para obtener más información sobre la nueva forma de implementar un servicio de lenguaje, vea [Extensiones](../../extensibility/editor-and-language-service-extensions.md)de servicio de editor y lenguaje .
+ Los servicios de lenguaje heredados se implementan como parte de un VSPackage, pero la forma más reciente de implementar las características del servicio de lenguaje es usar extensiones de MEF. Para obtener más información sobre la nueva manera de implementar un servicio de lenguaje, vea [Editor y extensiones del servicio de lenguaje](../../extensibility/editor-and-language-service-extensions.md).
 
  En esta sección se describe la estructura y la implementación de un servicio de lenguaje heredado.
 
@@ -44,17 +44,17 @@ Un servicio de lenguaje proporciona compatibilidad específica del idioma para e
 
 - [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 
- Proporciona información sobre cómo usar el marco de paquete administrado (MPF) para implementar un servicio de lenguaje con todas las funciones en código administrado.
+ Proporciona información sobre cómo usar Managed Package Framework (MPF) para implementar un servicio de lenguaje completo en código administrado.
 
 - [Compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- Describe bibliotecas y herramientas que le permiten examinar vistas de árbol de símbolos en el IDE.
+ Describe las bibliotecas y herramientas que permiten examinar vistas de árbol de símbolos en el IDE.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 - [Editor y extensiones de servicio de lenguaje](../../extensibility/editor-and-language-service-extensions.md)
 
- Proporciona información general de los editores de Visual Studio.
+ Proporciona información general sobre los editores de Visual Studio.
 
 - [Compatibilidad del servicio de lenguaje con la depuración](../../extensibility/internals/language-service-support-for-debugging.md)
 
- Proporciona información y un vínculo al SDK de depuración de Visual Studio, que contiene la información necesaria para crear y personalizar los componentes del depurador que se usan para depurar programas.
+ Proporciona información sobre y un vínculo al SDK de depuración de Visual Studio, que contiene la información necesaria para crear y personalizar los componentes del depurador que se usan para depurar programas.

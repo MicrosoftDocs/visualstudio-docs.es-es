@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3ddcab6e0f416837bcd7b01521a6d77ddce691b9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520983"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Revisar los controladores de eventos visibles

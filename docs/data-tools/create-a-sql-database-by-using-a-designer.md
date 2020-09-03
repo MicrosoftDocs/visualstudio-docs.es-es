@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282727"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Crear una base de datos y agregar las tablas en Visual Studio
@@ -107,7 +107,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
    CREATE TABLE [dbo].[Customers]
    ```
 
-   Puede ver algo así:
+   Deberíamos ver algo parecido a lo siguiente:
 
    ![Diseñador de tablas](../data-tools/media/table-designer.png)
 
@@ -185,6 +185,6 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 7. En la barra de menús, seleccione **archivo**  >  **guardar todo**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Obtener acceso a datos en Visual Studio](accessing-data-in-visual-studio.md)

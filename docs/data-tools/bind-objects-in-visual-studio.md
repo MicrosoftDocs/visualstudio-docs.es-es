@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282935"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Enlazar objetos como orígenes de datos en Visual Studio

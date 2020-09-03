@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b7d206852101a1d99a08eac710d88e93afe4a04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671203"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
@@ -104,5 +104,5 @@ En el SDK de visualización y modelado de [!INCLUDE[vsprvs](../includes/vsprvs-m
 
      Para obtener más información sobre cómo personalizar el modelo con código de programa, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md) [personalizar los campos de texto e imagen](../modeling/customizing-text-and-image-fields.md) [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md) [escribir código para personalizar un lenguaje específico del dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

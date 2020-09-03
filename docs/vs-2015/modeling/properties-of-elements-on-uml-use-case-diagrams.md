@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db3dc649d979c87960a42d38ffa211e352be175b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671412"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>Propiedades de los elementos de diagramas de casos de uso UML
@@ -31,21 +31,21 @@ En un diagrama de caso de uso UML, cada elemento del diagrama tiene propiedades.
 
 ## <a name="properties-of-elements"></a>Propiedades de los elementos
 
-|Propiedad.|Predeterminado|Elemento|Descripción|
+|Propiedad|Valor predeterminado|Elemento|Descripción|
 |--------------|-------------|-------------|-----------------|
-|**Nombre**|Nombre predeterminado|Todas|Identifica el elemento.|
-|**Nombre completo**|Package :: Name|Todas|Identifica de forma única el elemento. Prefijo con el nombre completo del paquete que lo contiene.|
-|**Elementos de trabajo**|0 asociados|Todas|Número de elementos de trabajo asociados a este elemento. Para asociar elementos de trabajo, vea [vincular elementos de modelo y elementos de trabajo](../modeling/link-model-elements-and-work-items.md).|
-|**Descripción**|(ninguno)|Todas|Aquí puede realizar anotaciones generales sobre el elemento.|
-|**Color**|(predeterminado)|Todas|Color de la forma. A diferencia de otras propiedades, no se trata de una propiedad del elemento que muestra la forma.|
+|**Name**|Nombre predeterminado|Todo|Identifica el elemento.|
+|**Nombre completo**|Package :: Name|Todo|Identifica de forma única el elemento. Prefijo con el nombre completo del paquete que lo contiene.|
+|**Elementos de trabajo**|0 asociados|Todo|Número de elementos de trabajo asociados a este elemento. Para asociar elementos de trabajo, vea [vincular elementos de modelo y elementos de trabajo](../modeling/link-model-elements-and-work-items.md).|
+|**Descripción**|(ninguno)|Todo|Aquí puede realizar anotaciones generales sobre el elemento.|
+|**Color**|(predeterminado).|Todo|Color de la forma. A diferencia de otras propiedades, no se trata de una propiedad del elemento que muestra la forma.|
 |**Ruta de la imagen**|(ninguno)|Actor|Ruta de acceso del archivo de imagen que debe usarse en vez del icono de actor predeterminado. El icono debe ser un archivo de recursos incluido en el proyecto de Visual Studio.|
 |**Cuestiones**|(ninguno)|Caso de uso|Subsistema u otro tipo propietario del caso de uso.<br /><br /> Para establecerlo, puede colocar el caso de uso en un subsistema del diagrama.|
-|**Visibilidad**|Public|Use Case, Actor, Subsystem|**Pública** : es visible globalmente.<br /><br /> **Package** : es visible dentro del paquete.|
-|**IsAbstract**|False|Use Case, Actor, Subsystem|Si es true, no se puede crear una instancia del tipo y, además, se entiende como base para la especialización por parte de otras definiciones.|
-|**Se crean instancias indirectamente**|True|Subsistema|El subsistema solo existe como artefacto de diseño. En tiempo de ejecución, solo existen sus partes.|
-|**Hyperlink**|(ninguno)|Artifact|Dirección URL o ruta de acceso del diagrama o documento para el que el artefacto proporciona un vínculo.|
+|**Visibilidad**|Público|Use Case, Actor, Subsystem|**Pública** : es visible globalmente.<br /><br /> **Package** : es visible dentro del paquete.|
+|**IsAbstract**|Falso|Use Case, Actor, Subsystem|Si es true, no se puede crear una instancia del tipo y, además, se entiende como base para la especialización por parte de otras definiciones.|
+|**Se crean instancias indirectamente**|Verdadero|Subsystem|El subsistema solo existe como artefacto de diseño. En tiempo de ejecución, solo existen sus partes.|
+|**Hipervínculo**|(ninguno)|Artefacto|Dirección URL o ruta de acceso del diagrama o documento para el que el artefacto proporciona un vínculo.|
 
  Para obtener una lista de las propiedades de las asociaciones, vea [propiedades de las asociaciones de diagramas de clases de UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md) [diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)

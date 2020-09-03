@@ -1,5 +1,5 @@
 ---
-title: Descripción general del servicio de idiomas heredados ( Legacy Language Service Overview ) Microsoft Docs
+title: Información general del servicio de lenguaje heredado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707354"
 ---
 # <a name="legacy-language-service-overview"></a>Información general del servicio de lenguaje heredado
-Un servicio de lenguaje proporciona compatibilidad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con el editor que le permite implementar ciertas características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa con las características de uso frecuente y compatibilidad parcial con otras características.
+Un servicio de lenguaje proporciona compatibilidad con el editor que permite implementar determinadas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa con las características usadas con frecuencia y compatibilidad parcial con otras características.
 
-## <a name="fully-supported-features-in-the-mpf"></a>Características totalmente compatibles en el MPF
- Las clases de servicio de lenguaje MPF admiten las siguientes características:
+## <a name="fully-supported-features-in-the-mpf"></a>Características totalmente compatibles en MPF
+ Las clases de servicio del lenguaje MPF admiten las siguientes características:
 
 - Resaltado de sintaxis
 
@@ -33,7 +33,7 @@ Un servicio de lenguaje proporciona compatibilidad [!INCLUDE[vsprvs](../../code-
 
 - Fragmentos de código
 
-- Propiedades personalizadas del documento
+- Propiedades de documento personalizadas
 
 - Información de parámetros de IntelliSense
 
@@ -43,16 +43,16 @@ Un servicio de lenguaje proporciona compatibilidad [!INCLUDE[vsprvs](../../code-
 
 - Finalización de palabras de IntelliSense
 
-## <a name="partially-supported-features-in-the-mpf"></a>Características parcialmente admitidas en el MPF
- El MPF solo proporciona compatibilidad parcial con las siguientes características. Esto significa que debe implementar los métodos a los que llama el MPF.
+## <a name="partially-supported-features-in-the-mpf"></a>Características admitidas parcialmente en MPF
+ MPF solo proporciona compatibilidad parcial con las siguientes características. Esto significa que debe implementar los métodos a los que llama el MPF.
 
-- Reformatear el código. Proporcione el código que implementa el reformateo.
+- Volver a dar formato al código. Debe proporcionar el código que implementa el nuevo formato.
 
-- Validación de puntos de interrupción mediante la identificación de intervalos de código válidos. Proporcione el código que identifica los intervalos de código.
+- Validación de puntos de interrupción mediante la identificación de intervalos de código válidos. Debe proporcionar el código que identifica los intervalos de código.
 
-- Compatibilidad con la ventana **Autos** del depurador para mostrar variables. Proporcione el código que determina qué mostrar en la ventana.
+- Compatibilidad con la ventana **automático** del depurador para mostrar variables. Proporcione el código que determina lo que se va a mostrar en la ventana.
 
-- Compatibilidad con la barra de **navegación** para una navegación rápida entre tipos y miembros. Implemente y devuelva una clase auxiliar que rellene las listas en los cuadros combinados Barra de **navegación.**
+- Compatibilidad con la **barra de navegación** para una navegación rápida entre tipos y miembros. Implementa y devuelve una clase auxiliar que rellena las listas en los cuadros combinados de la **barra de navegación** .
 
 ## <a name="implementation"></a>Implementación
  Debe completar varios pasos para implementar el propio servicio de lenguaje y las características del servicio de lenguaje que desea admitir para su idioma. Estos pasos se describen en los temas siguientes:

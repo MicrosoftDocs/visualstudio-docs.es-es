@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4594395eb887a950c9ff0ba41cd8d3c625d35dc3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519834"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Cómo: trasladar hojas de cálculo dentro de libros mediante programación
@@ -39,7 +39,7 @@ ms.locfileid: "85519834"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#16)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Cómo: ocultar hojas de cálculo mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Cómo: eliminar hojas de cálculo de libros mediante programación](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)

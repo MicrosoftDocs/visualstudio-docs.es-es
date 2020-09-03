@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e3ee8549fd8cf1a4551818c013551ba24128f95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671054"
 ---
 # <a name="import-and-export-settings-command"></a>comando para importar y exportar configuraciones
@@ -39,7 +39,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
  /reset Opcional. Restablece la configuración actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Al ejecutar este comando sin modificadores se abre el Asistente **Importar y exportar configuraciones**. Para obtener más información, vea [Cómo: Compartir valores de configuración entre equipos o versiones de Visual Studio](https://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).
 
 ## <a name="example"></a>Ejemplo
@@ -49,5 +49,5 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Personalizar la configuración de desarrollo en Visual Studio comandos de](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Visual](../../ide/reference/visual-studio-commands.md) Studio

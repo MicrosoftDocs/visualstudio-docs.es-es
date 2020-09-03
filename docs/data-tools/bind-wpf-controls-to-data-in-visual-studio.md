@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 27d0c14bcf09a3b0d30cd23dea0f8348c45fcab7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282886"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlace de controles de WPF a datos en Visual Studio
@@ -106,6 +106,6 @@ Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlashar
 
 - Crea un enlace de datos para un control. Si se arrastra el elemento hasta un control existente en el diseñador, el XAML enlaza el control al elemento. Si arrastra el elemento hasta un contenedor, el código XAML crea el control que se seleccionó para el elemento arrastrado y enlaza el control al elemento. El control se crea dentro de una nueva clase <xref:System.Windows.Controls.Grid>.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

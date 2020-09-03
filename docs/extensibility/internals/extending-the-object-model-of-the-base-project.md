@@ -1,5 +1,5 @@
 ---
-title: Ampliación del modelo de objetos del proyecto base Microsoft Docs
+title: Extender el modelo de objetos del proyecto base | Microsoft Docs
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,24 +13,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 33186cd477ade7f562f6191393dabe8e94f4f194
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708396"
 ---
-# <a name="extend-the-object-model-of-the-base-project"></a>Ampliar el modelo de objetos del proyecto base
+# <a name="extend-the-object-model-of-the-base-project"></a>Extender el modelo de objetos del proyecto base
 
-Un subtipo de proyecto puede ampliar el modelo de objetos de automatización del proyecto base en los siguientes lugares:
+Un subtipo de proyecto puede extender el modelo de objetos de automatización del proyecto base en los lugares siguientes:
 
-- Project.Extender("\<ProjectSubtypeName>"): esto permite que un subtipo de <xref:EnvDTE.Project> proyecto ofrezca un objeto con métodos personalizados del objeto. Un subtipo de proyecto puede utilizar `Project` extensores de automatización para exponer el objeto. La <xref:EnvDTE80.IInternalExtenderProvider> interfaz implementada en el agregador de subtipo de `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> proyecto principal `itemid` debe ofrecer su objeto para el from (correspondiente a un valor de [VSITEMID. Raíz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
+- Project. extender (" \<ProjectSubtypeName> "): permite que un subtipo de proyecto ofrezca un objeto con métodos personalizados del <xref:EnvDTE.Project> objeto. Un subtipo de proyecto puede usar extensores de automatización para exponer el `Project` objeto. La <xref:EnvDTE80.IInternalExtenderProvider> interfaz implementada en el agregador de subtipos de proyecto principal debe ofrecer su objeto para el `VSHPROPID_ExtObjectCATID` de <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> (correspondiente a un `itemid` valor de [VSITEMID. Raíz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)).
 
-- ProjectItem.Extender("\<ProjectSubtypeName>"): permite que un subtipo de proyecto <xref:EnvDTE.ProjectItem> ofrezca un objeto con métodos personalizados de un objeto determinado dentro del proyecto. Un subtipo de proyecto puede utilizar extensores de automatización para exponer este objeto. La <xref:EnvDTE80.IInternalExtenderProvider> interfaz implementada en el agregador de subtipo de `VSHPROPID_ExtObjectCATID` proyecto <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> principal debe <xref:Microsoft.VisualStudio.VSConstants.VSITEMID>ofrecer su objeto para el CATID from (correspondiente a un deseado).
+- ProjectItem. extender (" \<ProjectSubtypeName> "): permite que un subtipo de proyecto ofrezca un objeto con métodos personalizados de un objeto determinado <xref:EnvDTE.ProjectItem> dentro del proyecto. Un subtipo de proyecto puede usar extensores de automatización para exponer este objeto. La <xref:EnvDTE80.IInternalExtenderProvider> interfaz implementada en el agregador de subtipos de proyecto principal debe ofrecer su objeto para el `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> CATID de (correspondiente a un <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> CATID).
 
-- Project.Properties: esta colección expone las propiedades `Project` independientes de la configuración del objeto. Para más información sobre propiedades `Project`, vea <xref:EnvDTE.Project.Properties%2A>. Un subtipo de proyecto puede usar Extensores de automatización para agregar sus propiedades a esta colección. La <xref:EnvDTE80.IInternalExtenderProvider> interfaz implementada en el agregador de subtipo de `VSHPROPID_BrowseObjectCATID` proyecto <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> principal debe `itemid` ofrecer su objeto para el from (correspondiente a un valor de [VSITEMID. Raíz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
+- Project. Properties: esta colección expone las propiedades independientes de la configuración del `Project` objeto. Para más información sobre propiedades `Project`, vea <xref:EnvDTE.Project.Properties%2A>. Un subtipo de proyecto puede usar extensores de automatización para agregar sus propiedades a esta colección. La <xref:EnvDTE80.IInternalExtenderProvider> interfaz implementada en el agregador de subtipos de proyecto principal debe ofrecer su objeto para el `VSHPROPID_BrowseObjectCATID` de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (correspondiente a un `itemid` valor de [VSITEMID. Raíz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)).
 
-- Configuration.Properties: esta colección expone las propiedades dependientes de la configuración del proyecto para una configuración determinada (por ejemplo, Depurar). Para obtener más información, vea <xref:EnvDTE.Configuration>. Un subtipo de proyecto puede usar Extensores de automatización para agregar sus propiedades a esta colección. La <xref:EnvDTE80.IInternalExtenderProvider> interfaz implementada en el agregador de subtipos de `VSHPROPID_CfgBrowseObjectCATID` proyecto principal `itemid` ofrece su objeto para el CATID (correspondiente a un valor de [VSITEMID. Raíz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). La <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> interfaz se utiliza para distinguir un objeto de exploración de configuración de otro.
+- Configuration. Properties: esta colección expone las propiedades dependientes de la configuración del proyecto para una configuración determinada (por ejemplo, Debug). Para obtener más información, vea <xref:EnvDTE.Configuration>. Un subtipo de proyecto puede usar extensores de automatización para agregar sus propiedades a esta colección. La <xref:EnvDTE80.IInternalExtenderProvider> interfaz implementada en el agregador de subtipos de proyecto principal ofrece su objeto para el CATID `VSHPROPID_CfgBrowseObjectCATID` (correspondiente a un `itemid` valor de [VSITEMID. Raíz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). La <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> interfaz se usa para distinguir un objeto de examen de configuración de otro.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

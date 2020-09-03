@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d35ec92a76c9ecbf933256229b64ce06a03a4fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670990"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
@@ -23,7 +23,7 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
 
  Para obtener más información, vea la referencia de la [interfaz de usuario de depuración](../debugger/debugging-user-interface-reference.md).
 
-## <a name="locals-window"></a>Ventana Locales
+## <a name="locals-window"></a>Ventana de locales
  La ventana Locales muestra información acerca de las variables definidas en la hoja de estilos. Contiene tres columnas de información:
 
  **Nombre** de Esta columna contiene los nombres de todas las variables locales en el ámbito actual. Los conjuntos de nodos se controlan como un árbol, por el que puede desplazarse para ver sus subcarpetas.
@@ -34,7 +34,7 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
 
  La ventana Locales muestra también las variables de contexto predefinidas que realizan el seguimiento del contexto de la transformación XSLT. En la tabla siguiente se describen las variables de contexto predefinidas que emplea el depurador de XSLT.
 
-|Name|Descripción|
+|NOMBRE|Descripción|
 |----------|-----------------|
 |`last()`|El tamaño del contexto.|
 |`position()`|La posición, o número de índice, del nodo de contexto, con respecto al tamaño del contexto.|
@@ -42,7 +42,7 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
 
  Para obtener más información, consulte [Cómo: cambiar el contexto del depurador](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).
 
-## <a name="output-window"></a>Resultados (Ventana)
+## <a name="output-window"></a>Ventana de salida
  La Ventana de salida muestra los mensajes de error o las excepciones de seguridad que se producen durante la depuración.
 
  El depurador de XSLT utiliza una ventana distinta para mostrar el resultado de la depuración. Se trata de la misma ventana que se usa para mostrar el resultado de un comando **Show XSL Output** .
@@ -55,7 +55,7 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
 > [!NOTE]
 > El depurador de XSLT no tiene advertencias, así que nunca aparecerán en la lista de tareas.
 
-## <a name="breakpoints-window"></a>Ventana Puntos de interrupción
+## <a name="breakpoints-window"></a>Ventana de puntos de interrupción
  La ventana Puntos de interrupción muestra todos los puntos de interrupción definidos en el proyecto actual. Si se agrega un punto de interrupción mientras la ventana está a la vista, ésta se actualiza automáticamente para mostrar el nuevo punto de interrupción.
 
  La ventana Puntos de interrupción debe tener el mismo comportamiento que otros depuradores de Visual Studio.
@@ -63,12 +63,12 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
 ## <a name="command-windowimmediate-window"></a>Ventana Comandos/Ventana Inmediata
  No están implementadas en esta versión del depurador de XSLT.
 
-## <a name="watch-window"></a>Ventana Inspección
+## <a name="watch-window"></a>Ventana de inspección
  La ventana Inspección se utiliza para evaluar variables. y cambiar sus valores.
 
  Las variables que se muestran en esta ventana guardan relación con el contexto actual (el elemento superior de la pila de llamadas). Si cambia el contexto, la ventana Inspección se actualiza y muestra las variables definidas para ese contexto.
 
-## <a name="call-stack-window"></a>Ventana Pila de llamadas
+## <a name="call-stack-window"></a>Ventana de pila de llamadas
  La ventana Pila de llamadas se utiliza para ver los nombres de las funciones de la pila de llamadas, los tipos de parámetros y los valores de los parámetros. La información de la pila de llamadas solo se muestra cuando el programa que se está depurando se encuentra en estado de interrupción.
 
  La pila de llamadas representa los diversos contextos por los que atraviesa la ejecución XSLT. Por ejemplo, si hay una llamada de la plantilla "a" a la plantilla "b", la plantilla "a" y la plantilla "b" aparecen en la ventana Pila de llamadas con el contexto actual en primer lugar de la lista. El usuario puede ver la consulta actualmente en ejecución.
@@ -78,7 +78,7 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
  Al hacer clic en otro elemento que no es el que se encuentra en primer lugar de la lista se indica al visor dónde ha tenido lugar la rama de la ejecución XSLT mediante el uso de resaltes y flechas verdes estándar.
 
 ## <a name="quickwatch-dialog-box"></a>Cuadro de diálogo Inspección rápida
- El cuadro de diálogo **Inspección rápida** se utiliza para evaluar expresiones XPath 1,0. El nodo de contexto (el nodo `self::node()` de la ventana Locales) proporciona el contexto para la ejecución de la expresión XPath. El resultado de la ejecución de la expresión XPath se muestra en la ventana Inspección.
+ El cuadro de diálogo **Inspección rápida** se utiliza para evaluar expresiones XPath 1.0. El nodo de contexto (el nodo `self::node()` de la ventana Locales) proporciona el contexto para la ejecución de la expresión XPath. El resultado de la ejecución de la expresión XPath se muestra en la ventana Inspección.
 
  En la siguiente lista se describen algunas restricciones en la evaluación de expresiones XPath.
 
@@ -95,5 +95,5 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
 
  Para obtener más información, [Cómo: usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Depurar](../xml-tools/debugging-xslt.md) [conceptos básicos del depurador](../debugger/debugger-basics.md) de XSLT [ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

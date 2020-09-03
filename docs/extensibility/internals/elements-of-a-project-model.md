@@ -1,5 +1,5 @@
 ---
-title: Elementos de un modelo de proyecto ? Microsoft Docs
+title: Elementos de un modelo de proyecto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,37 +13,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708521"
 ---
 # <a name="elements-of-a-project-model"></a>Elementos de un modelo de proyecto
-Las interfaces e implementaciones [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de todos los proyectos en comparten una estructura básica: el modelo de proyecto para el tipo de proyecto. En el modelo de proyecto, que es el VSPackage que está desarrollando, cree objetos que cumplan con las decisiones de diseño y trabajar junto con la funcionalidad global proporcionada por el IDE. Aunque controla cómo se conserva un elemento de proyecto, por ejemplo, no controla la notificación de que se debe conservar un archivo. Cuando un usuario coloca el foco en un elemento de proyecto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] abierto y elige **Guardar** en el menú **Archivo** de la barra de menús, el código de tipo de proyecto debe interceptar el comando desde el IDE, conservar el archivo y enviar una notificación al IDE de que el archivo ya no se cambia.
+Las interfaces y las implementaciones de todos los proyectos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comparten una estructura básica: el modelo de proyecto para el tipo de proyecto. En el modelo de proyecto, que es el VSPackage que está desarrollando, cree objetos que cumplan sus decisiones de diseño y colaboren con la funcionalidad global que proporciona el IDE. Aunque controle el modo en que se conserva un elemento de proyecto, por ejemplo, no controla la notificación de que se debe guardar un archivo. Cuando un usuario coloca el foco en un elemento de proyecto abierto y elige **Guardar** en el menú **archivo** en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barra de menús, el código de tipo de proyecto debe interceptar el comando desde el IDE, conservar el archivo y enviar la notificación de vuelta al IDE para que el archivo ya no se cambie.
 
- El VSPackage interactúa con el IDE a través de servicios que proporcionan acceso a las interfaces IDE. Por ejemplo, a través de determinados servicios, puede supervisar y enrutar comandos y proporcionar información de contexto para las selecciones realizadas en el proyecto. Toda la funcionalidad IDE global necesaria para el VSPackage es proporcionada por los servicios. Para obtener más información acerca de los servicios, vea [Cómo: Obtener un servicio](../../extensibility/how-to-get-a-service.md).
+ El VSPackage interactúa con el IDE a través de los servicios que proporcionan acceso a las interfaces IDE. Por ejemplo, a través de servicios concretos, los comandos se supervisan y enrutan y proporcionan información de contexto para las selecciones realizadas en el proyecto. Todos los servicios proporcionan toda la funcionalidad global del IDE necesaria para el VSPackage. Para obtener más información acerca de los servicios, consulte [Cómo: obtener un servicio](../../extensibility/how-to-get-a-service.md).
 
  Otras consideraciones de implementación:
 
-- Un único modelo de proyecto puede contener más de un tipo de proyecto.
+- Un modelo de proyecto único puede contener más de un tipo de proyecto.
 
-- Los tipos de proyecto y los generadores de proyectos asistentes se registran de forma independiente con GUID.
+- Los tipos de proyecto y los generadores de proyectos de operador se registran independientemente de los GUID.
 
-- Cada proyecto debe tener un archivo de plantilla o asistente para inicializar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto a través de la interfaz de usuario. Por ejemplo, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] las plantillas inicializan lo que finalmente se convierten en archivos .vcproj.
+- Cada proyecto debe tener un archivo de plantilla o un asistente para inicializar el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto a través de la interfaz de usuario [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Por ejemplo, las [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] plantillas inicializan lo que finalmente se convierte en archivos. vcproj.
 
-  En la ilustración siguiente se muestran las interfaces, los servicios y los objetos principales que componen una implementación de proyecto típica. Puede utilizar la aplicación `HierUtil7`auxiliar, , para crear los objetos subyacentes y otros reutilizables de programación. Para obtener más `HierUtil7` información acerca de la aplicación auxiliar, vea Usar clases de [proyecto HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+  En la ilustración siguiente se muestran las interfaces, los servicios y los objetos principales que componen una implementación de proyecto típica. Puede usar la aplicación auxiliar de aplicaciones, `HierUtil7` , para crear los objetos subyacentes y otros tipos de programación. Para obtener más información sobre la `HierUtil7` aplicación auxiliar de aplicaciones, vea [usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
 
-  ![Gráfico del modelo](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") de proyecto de Visual Studio Modelo de proyecto
+  ![Gráfico del modelo de proyecto de Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") Modelo de proyecto
 
-  Para obtener más información acerca de las interfaces y servicios enumerados en el diagrama anterior y otras interfaces opcionales no incluidas en el diagrama, vea [Componentes principales](../../extensibility/internals/project-model-core-components.md)del modelo de proyecto .
+  Para obtener más información sobre las interfaces y los servicios enumerados en el diagrama anterior y otras interfaces opcionales no incluidas en el diagrama, vea [Project Model Core Components](../../extensibility/internals/project-model-core-components.md).
 
-  Los proyectos pueden admitir comandos y, por lo tanto, deben implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para participar en el enrutamiento de comandos a través de los GUID de contexto de comando.
+  Los proyectos pueden admitir comandos y, por lo tanto, deben implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para participar en el enrutamiento de comandos a través de los GUID de contexto de comandos.
 
-## <a name="see-also"></a>Vea también
-- [Lista de verificación: Crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Utilice las clases de proyecto HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+## <a name="see-also"></a>Consulte también
+- [Lista de comprobación: crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [Componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md)
-- [Crear instancias de proyecto mediante fábricas de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-- [Cómo: Obtener un servicio](../../extensibility/how-to-get-a-service.md)
+- [Creación de instancias de proyecto mediante el uso de generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [Cómo: obtener un servicio](../../extensibility/how-to-get-a-service.md)
 - [Crear tipos de proyecto](../../extensibility/internals/creating-project-types.md)

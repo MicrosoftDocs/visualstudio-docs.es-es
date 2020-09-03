@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
 ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770842"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Creación de minivolcados para un proceso de Visual Studio con todas las pilas de llamadas

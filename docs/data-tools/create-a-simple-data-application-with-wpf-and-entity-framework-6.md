@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282766"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
@@ -102,7 +102,7 @@ Es posible escribir su propio código de enlace de la propiedad, pero es mucho m
 
      ![Agregar clases de entidad como orígenes de datos](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. Haga clic en **Finalizar**.
+3. Haga clic en **Finalizar**
 
 4. Vaya a *MainWindow. Xaml* en la vista Código. Estamos manteniendo el XAML sencillo para los fines de este ejemplo. Cambie el título de MainWindow a algo más descriptivo y aumente el alto y el ancho a 600 x 800 por ahora. Siempre puede cambiarlo más adelante. Ahora, agregue estas tres definiciones de fila a la cuadrícula principal, una fila para los botones de navegación, una para los detalles del cliente y otra para la cuadrícula que muestra los pedidos:
 
@@ -423,11 +423,11 @@ Agregue estos métodos de controlador a la clase MainWindow en *MainWindow.Xaml.
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 Presione **F5** para iniciar la depuración. Debería ver los datos de cliente y de pedido rellenados en la cuadrícula y los botones de navegación deberían funcionar según lo previsto. Haga clic en **confirmar** para agregar un nuevo cliente o un pedido al modelo después de haber escrito los datos. Haga clic en **Cancelar** para salir de un nuevo formulario de cliente o de pedido nuevo sin guardar los datos. Puede realizar modificaciones en los clientes y pedidos existentes directamente en los cuadros de texto, y estos cambios se escriben automáticamente en el modelo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Documentación de Entity Framework](/ef/)

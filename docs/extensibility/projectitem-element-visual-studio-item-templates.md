@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770729"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem (Elemento, Plantillas de elementos de Visual Studio)
@@ -70,8 +70,8 @@ Especifica un archivo que se incluye en la plantilla de elemento.
 
  Un `string` que representa el nombre de un archivo en el archivo *. zip* de la plantilla.
 
-## <a name="remarks"></a>Comentarios
- `ProjectItem`es un elemento secundario opcional de `TemplateContent` .
+## <a name="remarks"></a>Observaciones
+ `ProjectItem` es un elemento secundario opcional de `TemplateContent` .
 
  El `TargetFileName` atributo se puede usar para cambiar el nombre de los archivos con parámetros. Por ejemplo, si el archivo *. VB* existe en el directorio raíz del archivo *. zip* de plantilla, pero desea que el archivo tenga un nombre basado en el nombre de archivo proporcionado por el usuario en el cuadro de diálogo **Agregar nuevo elemento** , usaría el siguiente código XML:
 

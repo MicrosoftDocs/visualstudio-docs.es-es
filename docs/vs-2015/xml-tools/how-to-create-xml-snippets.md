@@ -10,23 +10,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2e08821f1289927c4183a1639ae37136c220a88c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670907"
 ---
-# <a name="how-to-create-xml-snippets"></a>Crear fragmentos de código XML
+# <a name="how-to-create-xml-snippets"></a>Procedimiento Crear fragmentos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Para crear un nuevo fragmento XML
- Para crear un nuevo fragmento de código XML, cree un nuevo archivo XML y use la característica **Insertar fragmento** de código.
+ Para crear un nuevo fragmento de código XML, cree un nuevo archivo XML y utilice la característica **Insertar fragmento de código**.
 
-1. En el menú **archivo** , haga clic en **nuevo** y, a continuación, haga clic en **archivo**.
+1. En el menú **Archivo**, haga clic en **Nuevo** y seleccione **Archivo**.
 
-2. Haga clic en **archivo XML** y, a continuación, en **abrir**.
+2. Haga clic en **Archivo XML** y seleccione **Abrir**.
 
 3. Haga clic con el botón derecho en el panel del editor y seleccione **Insertar fragmento de código**.
 
@@ -34,13 +34,13 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 5. Realice los cambios que considere oportunos en el nuevo fragmento.
 
-6. En el menú **archivo** , seleccione **Guardar XMLFile. XML**.
+6. En el menú **Archivo**, seleccione **Guardar ArchivoXML.xml**.
 
-     Se muestra el cuadro de diálogo **Guardar archivo como** .
+     Aparece el cuadro de diálogo **Guardar archivo como**.
 
-7. Escriba el nombre del nuevo fragmento de código y seleccione **archivos de fragmento de código** en la ventana desplegable **Guardar como tipo** .
+7. Especifique el nombre del nuevo fragmento de código y seleccione **Archivos de fragmento de código**en la ventana desplegable **Guardar como tipo**.
 
-8. Use la lista desplegable **Guardar en** para cambiar la ubicación del archivo a la carpeta Mis documentos\Visual Studio 2005 \ Code Snippets\XML\My XML Snippets y, a continuación, presione **Guardar**.
+8. Utilice la lista desplegable **Guardar en** para cambiar la ubicación del archivo a la carpeta Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets y luego presione **Guardar**.
 
 ## <a name="snippet-description"></a>Descripción del fragmento
  En esta sección se describen algunos de los elementos principales del fragmento reutilizable. Para obtener más información sobre los elementos de esquema utilizados por los fragmentos XML, vea [referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md).
@@ -55,7 +55,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 </SnippetTypes>
 ```
 
- El tipo de `Expansion` determina si el fragmento de código aparece al invocar el comando **Insertar fragmento** . El tipo de `SurroundsWith` determina si el fragmento de código aparece al invocar el comando **rodear con** .
+ El tipo `Expansion` determina si aparecerá el fragmento al invocar el comando **Insertar fragmento de código**. El tipo `SurroundsWith` determina si aparecerá el fragmento de código al invocar el comando **Rodea con**.
 
 ### <a name="code-element"></a>Elemento de código
  El elemento `Code` define el texto XML que se insertará cuando se invoque el fragmento.
@@ -101,7 +101,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 </Literal
 ```
 
- Los literales también pueden hacer referencia a funciones. El editor XML incluye una función denominada **LookupPrefix**. La función **LookupPrefix** busca el URI de espacio de nombres especificado desde la ubicación del documento XML desde la que se invoca este fragmento de código y devuelve el prefijo de espacio de nombres definido para ese espacio de nombres, si existe, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un elemento `Literal` que utiliza la función **LookupPrefix** .
+ Los literales también pueden hacer referencia a funciones. El editor XML incluye una función denominada **LookupPrefix**. La función **LookupPrefix** busca el identificador URI del espacio de nombres en cuestión desde la ubicación del documento XML desde la que se invoca este fragmento de código y devuelve, si lo hay, el prefijo del espacio de nombres definido para dicho espacio, e incluye dos puntos (:) en ese nombre. A continuación se muestra un ejemplo de un elemento `Literal` que utiliza la función **LookupPrefix**.
 
 ```
 <Literal Editable="false">
@@ -112,5 +112,5 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
  Luego, la variable $prefix$ puede utilizarse en cualquier parte del fragmento XML.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Fragmentos de código XML](../xml-tools/xml-snippets.md) [Cómo: usar fragmentos](../xml-tools/how-to-use-xml-snippets.md) [de código XML cómo: generar un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

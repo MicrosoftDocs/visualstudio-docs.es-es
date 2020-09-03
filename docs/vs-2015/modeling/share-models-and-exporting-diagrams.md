@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 562990b14edba11abf50dc735279cba36bb21518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671190"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Compartir modelos y exportar diagramas
@@ -31,14 +31,14 @@ En Visual Studio, puede compartir modelos y diagramas con sus compañeros de div
 
  Diferentes usuarios pueden trabajar al mismo tiempo en un modelo UML, pero deben trabajar en paquetes distintos.
 
- Le recomendamos el uso de [!INCLUDE[esprscc](../includes/esprscc-md.md)].
+ Se recomienda que use [!INCLUDE[esprscc](../includes/esprscc-md.md)].
 
  Para obtener más información, vea [administrar modelos y diagramas en control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md).
 
  Para obtener sugerencias sobre la organización de modelos en un proyecto grande o mediano, vea [estructura de la solución de modelado](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Leer y revisar modelos
- Los miembros del equipo que usan algunas versiones de Visual Studio (que no pueden crear modelos) pueden leer modelos, diagramas de modelado y gráficos dirigidos, pero no pueden modificarlos.  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Los miembros del equipo que usan algunas versiones de Visual Studio (que no pueden crear modelos) pueden leer modelos, diagramas de modelado y gráficos dirigidos, pero no pueden editarlos.  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Un diagrama UML o diagrama de capas solo se puede abrir en el modelo en el que se ha creado. Por tanto, para proporcionar acceso a un diagrama, debe proporcionar acceso a todos los archivos del proyecto de modelado, o bien a las copias de estos.
 
@@ -60,5 +60,5 @@ En Visual Studio, puede compartir modelos y diagramas con sus compañeros de div
 |[Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)|Información general de modelos y diagramas.|
 |[Personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|Si usa un perfil UML en un modelo y, después, envía el modelo a otra persona, esta debe tener instalado el mismo perfil.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md) [usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)

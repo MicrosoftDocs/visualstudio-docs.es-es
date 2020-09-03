@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99c4a20939ed2e3a036831930749bb59b5a42315
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670051"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creación de un control de usuario de Windows Forms que admita el enlace de datos complejo
@@ -109,13 +109,13 @@ Cuando muestra datos en formularios de las aplicaciones Windows, puede elegir co
 3. En el menú **Compilar** , elija **Compilar solución**.
 
 ## <a name="creating-a-data-source-from-your-database"></a>Crear un origen de datos a partir de la base de datos
- En este paso se usa el **Asistente para configuración de orígenes de datos** para crear un origen de datos basado en la tabla `Customers` de la base de datos de ejemplo Northwind. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información sobre cómo configurar la base de datos de ejemplo Northwind, vea [instalar SQL Server bases](../data-tools/install-sql-server-sample-databases.md)de datos de ejemplo.
+ En este paso se usa el Asistente para la **configuración de orígenes de datos** para crear un origen de datos basado en la `Customers` tabla de la base de datos de ejemplo Northwind. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información sobre cómo configurar la base de datos de ejemplo Northwind, vea [instalar SQL Server bases](../data-tools/install-sql-server-sample-databases.md)de datos de ejemplo.
 
 #### <a name="to-create-the-data-source"></a>Para crear el origen de datos
 
 1. En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
@@ -133,7 +133,7 @@ Cuando muestra datos en formularios de las aplicaciones Windows, puede elegir co
 
 8. Seleccione la tabla `Customers` y después haga clic en **Finalizar**.
 
-     **NorthwindDataSet** se agrega al proyecto y la tabla `Customers` aparece en la ventana **Orígenes de datos**.
+     **NorthwindDataSet** se agrega al proyecto y la `Customers` tabla aparece en la ventana orígenes de **datos** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Establecer la tabla Customers para usar el control ComplexDataGridView
  Dentro de la ventana **Orígenes de datos** puede establecer el control que se va a crear antes de arrastrar elementos a un formulario.
@@ -151,13 +151,13 @@ Cuando muestra datos en formularios de las aplicaciones Windows, puede elegir co
 5. Haga clic en la flecha de lista desplegable en la tabla `Customers` y elija **ComplexDataGridView** de la lista de controles.
 
 ## <a name="addcontrols-to-the-form"></a>Addcontrols al formulario
- Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
+ Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **orígenes de datos** hasta el formulario.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para crear controles enlazados en el formulario
 
 - Arrastre el nodo **Customers** principal desde la ventana **orígenes de datos** hasta el formulario. Compruebe que el control **ComplexDataGridView** se usa para mostrar los datos de la tabla.
 
-## <a name="running-the-application"></a>Ejecutar la aplicación
+## <a name="running-the-application"></a>Ejecución de la aplicación
 
 #### <a name="to-run-the-application"></a>Para ejecutar la aplicación
 
@@ -170,5 +170,5 @@ Cuando muestra datos en formularios de las aplicaciones Windows, puede elegir co
 
 - Crear controles que admitan escenarios de búsqueda. Para obtener más información, vea [crear un control de usuario Windows Forms que admita el enlace de datos de búsqueda](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) [establezca el control que se creará al arrastrar desde la ventana orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md) [Windows Forms controles](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)

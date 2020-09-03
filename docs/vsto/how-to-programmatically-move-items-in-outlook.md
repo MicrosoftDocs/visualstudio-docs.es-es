@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519917"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Cómo: trasladar elementos en Outlook mediante programación
