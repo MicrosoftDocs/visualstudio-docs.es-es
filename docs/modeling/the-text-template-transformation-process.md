@@ -10,25 +10,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565869"
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
-El proceso de transformación de plantillas de texto toma un archivo de plantilla de texto como entrada y genera un nuevo archivo de texto como salida. Por ejemplo, puede usar plantillas de texto para generar Visual Basic o C# código, o puede generar un informe HTML.
+El proceso de transformación de plantillas de texto toma un archivo de plantilla de texto como entrada y genera un nuevo archivo de texto como salida. Por ejemplo, puede usar plantillas de texto para generar Visual Basic o código de C# o puede generar un informe HTML.
 
  Hay tres componentes que forman parte de este proceso: el motor, el host y los procesadores de directivas. El motor controla el proceso; interactúa con el host y el procesador de directivas para generar el archivo de salida. El host proporciona cualquier interacción con el entorno, como buscar archivos y ensamblados. El procesador de directivas agrega funcionalidad, como leer datos de un archivo XML o de una base de datos.
 
  El proceso de transformación de plantillas de texto se realiza en dos pasos. En primer lugar, el motor crea una clase temporal, que se conoce como la clase de transformación generada. Esta clase contiene el código generado por las directivas y los bloques de control. Después, el motor compila y ejecuta la clase de transformación generada para generar el archivo de salida.
 
-## <a name="components"></a>Components
+## <a name="components"></a>Componentes
 
 |Componente|Descripción|Personalizable (sí/no)|
 |-|-|-|
-|Engine|El componente del motor controla el proceso de transformación de plantillas de texto|No.|
-|administrador de flujos de trabajo|El host es la interfaz entre el motor y el entorno del usuario. Visual Studio es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|
+|Motor|El componente del motor controla el proceso de transformación de plantillas de texto|No.|
+|Host|El host es la interfaz entre el motor y el entorno del usuario. Visual Studio es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|
 |Procesadores de directivas|Los procesadores de directivas son clases que controlan directivas en plantillas de texto. Puede utilizar directivas para proporcionar datos a una plantilla de texto desde un origen de entrada.|Sí. Puede escribir procesadores de directivas personalizados.|
 
 ## <a name="the-engine"></a>Motor de
@@ -56,8 +56,8 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
 
  Un procesador de directivas puede procesar una o más directivas. Al transformar una plantilla, debe haber instalado un procesador de directivas que pueda tratar con las directivas de la plantilla.
 
- Las directivas funcionan agregando código en la clase de transformación generada. Se llama a las directivas desde una plantilla de texto y el motor procesa todas las llamadas a directivas cuando crea la clase de transformación generada. Después de llamar a una directiva correctamente, el resto del código que se escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la Directiva. Por ejemplo, puede hacer la siguiente llamada a la Directiva `import` en la plantilla:
+ Las directivas funcionan agregando código en la clase de transformación generada. Se llama a las directivas desde una plantilla de texto y el motor procesa todas las llamadas a directivas cuando crea la clase de transformación generada. Después de llamar a una directiva correctamente, el resto del código que se escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la Directiva. Por ejemplo, puede hacer la siguiente llamada a la `import` Directiva en la plantilla:
 
  `<#@ import namespace="System.Text" #>`
 
- El procesador de directivas estándar lo convierte en una instrucción `using` en la clase de transformación generada. Después, puede usar la clase `StringBuilder` en el resto del código de plantilla sin calificarla como `System.Text.StringBuilder`.
+ El procesador de directivas estándar lo convierte en una `using` instrucción en la clase de transformación generada. Después, puede usar la `StringBuilder` clase en el resto del código de plantilla sin calificarla como `System.Text.StringBuilder` .

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532709"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
@@ -57,7 +57,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
 - Código que se puede depurar, como Visual C#, Visual Basic, C++, JavaScript o X + +
 
-  Vea:
+  Consulte:
 
 - [Vídeo: depurar visualmente con la integración del depurador del mapa de código (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
@@ -71,7 +71,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
 - [Buscar errores mediante la asignación](#FindBugs)
 
-- [Q & A](#QA)
+- [PREGUNTAS Y RESPUESTAS](#QA)
 
   Para obtener detalles de los comandos y las acciones que se pueden usar al trabajar con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -188,7 +188,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
    ![¿Qué significan los iconos del mapa de código de la pila de llamadas?](../debugger/media/debuggermap_showlegend.png)
 
-  Vea:
+  Consulte:
 
 - [Asignar la pila de llamadas](#MapStack)
 

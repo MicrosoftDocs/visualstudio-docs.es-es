@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476983"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Cómo: Distribuir fragmentos de código
@@ -58,11 +58,11 @@ Los fragmentos de código se pueden entregar directamente a los compañeros para
 
 #### <a name="setting-up-the-directory-structure"></a>Configurar la estructura de directorios
 
-1. En el Explorador de soluciones, seleccione el nodo del proyecto y agregue una carpeta que tenga el mismo nombre que desea para el fragmento de código en el Administrador de fragmentos de código. En este caso sería **HelloWorldVB**.
+1. En el Explorador de soluciones, seleccione el nodo del proyecto y agregue una carpeta que tenga el mismo nombre que desea para el fragmento de código en el Administrador de fragmentos de código. En este caso, debe ser **HelloWorldVB**.
 
 2. Mueva el archivo .snippet a la carpeta **HelloWorldVB**.
 
-3. Seleccione el archivo .snippet en el Explorador de soluciones y, en la ventana **Propiedades**, asegúrese de que **Acción de compilación** esté establecido en **Contenido**, de que **Copiar en el directorio de salida** esté establecido en **Copiar siempre** y de que **Incluir en VSIX** esté establecido en **true**.
+3. Seleccione el archivo. snippet en el Explorador de soluciones y, en la ventana **propiedades** , asegúrese de que **acción de compilación** está establecido en **contenido**, **Copiar en el directorio de salida** está establecido en **copiar siempre**e **incluir en VSIX** está establecido en **true**.
 
 #### <a name="adding-the-pkgdef-file"></a>Agregar el archivo .pkgdef
 
@@ -80,7 +80,7 @@ Los fragmentos de código se pueden entregar directamente a los compañeros para
 
      Si examina esta clave, puede ver cómo especificar diferentes lenguajes.
 
-3. Seleccione el archivo .pkgdef en el Explorador de soluciones y, en la ventana **Propiedades**, asegúrese de que **Acción de compilación** esté establecido en **Contenido**, de que **Copiar en el directorio de salida** esté establecido en **Copiar siempre** y de que **Incluir en VSIX** esté establecido en **true**.
+3. Seleccione el archivo. pkgdef en el Explorador de soluciones y, en la ventana **propiedades** , asegúrese de que **acción de compilación** está establecido en **contenido**, **Copiar en el directorio de salida** está establecido en **copiar siempre**e **incluir en VSIX** está establecido en **true**.
 
 4. Agregue el archivo .pkgdef como activo en el manifiesto de VSIX. En el archivo source.extension.vsixmanifest, vaya a la pestaña **Activos** y haga clic en **Nuevo**.
 
@@ -92,7 +92,7 @@ Los fragmentos de código se pueden entregar directamente a los compañeros para
 
 2. Compile la solución y comience la depuración. Aparece una segunda instancia de Visual Studio.
 
-3. En la instancia experimental, vaya a **Herramientas/Administrador de fragmentos de código** y establezca el **Lenguaje** en **Basic**. Verá que HelloWorldVB es una de las carpetas y podrá expandirla para ver el fragmento de código HelloWorldVB.
+3. En la instancia experimental, vaya a **herramientas/administrador de fragmentos de código** y establezca el **idioma** en **básico**. Verá que HelloWorldVB es una de las carpetas y podrá expandirla para ver el fragmento de código HelloWorldVB.
 
 4. Pruebe el fragmento de código. En la instancia experimental, abra un proyecto de Visual Basic y luego abra uno de los archivos de código. Coloque el cursor en algún lugar del código, haga clic con el botón derecho y, en el menú contextual, seleccione **Insertar fragmento de código**.
 

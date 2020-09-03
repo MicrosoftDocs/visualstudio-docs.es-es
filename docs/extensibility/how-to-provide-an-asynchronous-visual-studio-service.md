@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905743"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Cómo: proporcionar un servicio de Visual Studio asincrónico
@@ -130,7 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
-    Para hacer que este servicio sea visible fuera de este paquete, establezca el valor de la marca promocional en *true* como el último parámetro:`this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
+    Para hacer que este servicio sea visible fuera de este paquete, establezca el valor de la marca promocional en *true* como el último parámetro:  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. Agregue una referencia a *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
 
@@ -173,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 1. Agregue un comando de menú al proyecto. (En el **Explorador de soluciones**, seleccione el nodo del proyecto, haga clic con el botón derecho y seleccione **Agregar**  >  . **Nuevo elemento**  >  **Extensibilidad**  >  **Comando personalizado**). Asigne al archivo de comandos el nombre *TestAsyncCommand.CS*.
 
-2. La plantilla de comandos personalizada vuelve a agregar el `Initialize()` método al archivo *TestAsyncPackage.CS* para inicializar el comando. En el `Initialize()` método, copie la línea que inicializa el comando. El resultado debería tener un aspecto similar a este:
+2. La plantilla de comandos personalizada vuelve a agregar el `Initialize()` método al archivo *TestAsyncPackage.CS* para inicializar el comando. En el `Initialize()` método, copie la línea que inicializa el comando. Debería tener este aspecto:
 
     ```csharp
     TestAsyncCommand.Initialize(this);
@@ -238,5 +238,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. Compile la solución y comience la depuración. Cuando aparezca la instancia experimental de Visual Studio, vaya al menú **herramientas** y busque el elemento de menú **invocar TestAsyncCommand** . Al hacer clic en él, el TextWriterService escribe en el archivo especificado. (No es necesario abrir una solución, ya que al invocar el comando también se carga el paquete).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)

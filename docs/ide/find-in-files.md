@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595480"
 ---
 # <a name="find-in-files"></a>Buscar en archivos
@@ -106,7 +106,7 @@ Muestra una lista de archivos que contienen coincidencias con la búsqueda, en l
 
 Agrega los resultados de la búsqueda a los resultados de la búsqueda anteriores.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)
 - [Reemplazar en archivos](../ide/replace-in-files.md)

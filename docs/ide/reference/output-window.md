@@ -1,5 +1,5 @@
 ---
-title: Resultados (ventana)
+title: Ventana de salida
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567988"
 ---
 # <a name="output-window"></a>Resultados (ventana)
@@ -73,10 +73,10 @@ En C++, puede crear pasos y eventos de compilación personalizados cuyas adverte
 
 Si usa el desplazamiento automático en la ventana de **salida** y después se desplaza mediante las teclas de dirección o el mouse, el desplazamiento automático se detiene. Para reanudar el desplazamiento automático, presione **Ctrl**+**Fin**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Cómo: Controlar la ventana Resultados](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [Compilar y generar](../../ide/compiling-and-building-in-visual-studio.md)
 - [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md)
-- [Información general de la biblioteca de clases](/dotnet/standard/class-library-overview)
+- [Introducción a la biblioteca de clases](/dotnet/standard/class-library-overview)

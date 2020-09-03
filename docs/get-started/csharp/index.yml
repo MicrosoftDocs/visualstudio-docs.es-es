@@ -15,17 +15,17 @@ metadata:
   dev_langs:
   - CSharp
   ms.openlocfilehash: 0e5519756bebafd91b72186e001ca6af7f53c254
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "76923123"
 landingContent:
 - title: Introducción
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Instalación de Visual Studio
+    - text: Instalar Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
@@ -41,7 +41,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Creación de una aplicación de consola
+    - text: Crear una aplicación de consola
       url: tutorial-console.md
     - text: Creación de una aplicación web
       url: tutorial-aspnet-core.md
@@ -67,13 +67,13 @@ landingContent:
       url: ../tutorial-open-project-from-repo.md
     - text: Escribir y editar código
       url: tutorial-editor.md
-    - text: Compilación y creación
+    - text: Compilar y generar
       url: ../../ide/compiling-and-building-in-visual-studio.md
-    - text: Depuración del código
+    - text: Depurar el código
       url: ../csharp/tutorial-debugger.md
-    - text: Prueba del código
+    - text: Probar el código
       url: ../../test/getting-started-with-unit-testing.md
   - linkListType: how-to-guide
     links:
-    - text: Acceso a los datos
+    - text: Acceder a datos
       url: ../../data-tools/create-a-sql-database-by-using-a-designer.md

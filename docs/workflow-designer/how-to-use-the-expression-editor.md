@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817442"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Cómo: Utilizar el Editor de expresiones
@@ -53,6 +53,6 @@ El **Editor de expresiones** se comporta de la siguiente manera:
 
      Una manera alternativa de escribir o editar una expresión es hacer clic en los puntos suspensivos junto al nombre de la propiedad en la cuadrícula de propiedades. Al seleccionar los puntos suspensivos se abre el **Editor de expresiones** como un cuadro de diálogo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

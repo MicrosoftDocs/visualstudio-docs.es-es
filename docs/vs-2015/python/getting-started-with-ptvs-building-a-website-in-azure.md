@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300587"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Introducción a PTVS: Compilar un sitio web en Azure
@@ -33,6 +33,6 @@ Puede empezar a compilar rápidamente un sitio web de Python en Azure.
   
  Puede ver estas instrucciones en un breve [vídeo de YouTube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
-## <a name="see-also"></a>Otras referencias  
- [Documentación de la wiki](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
+## <a name="see-also"></a>Consulte también  
+ [Documentación de wiki](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [Introducción y vídeos Deep Dive de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

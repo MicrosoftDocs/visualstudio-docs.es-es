@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904941"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Tutorial: crear un SDK mediante JavaScript
@@ -27,7 +27,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 ## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a>Para crear el proyecto de SDK de extensión SimpleMathVSIX
+## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> Para crear el proyecto de SDK de extensión SimpleMathVSIX
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
@@ -136,9 +136,9 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 
 20. Elija el botón **instalar** y deje que se complete la instalación.
 
-21. Reinicie Visual Studio.
+21. Reinicie Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a>Para crear una aplicación de ejemplo que usa el SDK
+## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> Para crear una aplicación de ejemplo que usa el SDK
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
@@ -313,5 +313,5 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math senc
 
 12. En la interfaz de usuario de la aplicación, escriba dos números cualesquiera, seleccione una operación y, a continuación, elija el **=** botón. Aparece el resultado correcto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)
