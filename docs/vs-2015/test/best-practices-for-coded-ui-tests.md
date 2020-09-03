@@ -11,13 +11,13 @@ caps.latest.revision: 41
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660687"
 ---
-# <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
+# <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas automatizadas de IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describen los procedimientos recomendados para desarrollar pruebas de IU codificadas.
@@ -26,14 +26,14 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
 
 - Visual Studio Enterprise
 
-## <a name="best-practices"></a>Procedimientos recomendados
+## <a name="best-practices"></a>Prácticas recomendadas
  Utilice las siguientes directrices para crear una prueba de IU codificada flexible.
 
 - Use el **Generador de pruebas automatizadas de IU** siempre que sea posible.
 
 - No modifique el archivo `UIMap.designer.cs` directamente. Si lo hace, se sobrescribirán los cambios en el archivo.
 
-- Cree la prueba como una secuencia de métodos grabados. Para más información sobre cómo registrar un método, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
+- Cree la prueba como una secuencia de métodos grabados. Para obtener más información sobre cómo registrar un método, vea [crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
 - Cada método grabado debe actuar en una sola página, formulario o cuadro de diálogo. Cree un nuevo método de prueba para cada nueva página, formulario o cuadro de diálogo.
 
@@ -45,11 +45,11 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
 
 - Si cambia la interfaz de usuario (UI), vuelva a grabar los métodos de prueba o los métodos de aserción, o vuelva a grabar las secciones afectadas de un método de prueba existente.
 
-- Cree un archivo [UIMap](/previous-versions/dd580454(v=vs.140)) separado para cada módulo de la aplicación bajo prueba. Para obtener más información, consulte [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Cree un archivo [UIMap](/previous-versions/dd580454(v=vs.140)) separado para cada módulo de la aplicación bajo prueba. Para obtener más información, vea [probar una aplicación grande con varias asignaciones de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - En la aplicación sometida a prueba, utilice nombres descriptivos al crear los controles de IU. Esto proporciona más significado y facilidad de uso a los nombres de control generados automáticamente.
 
-- Si va a crear aserciones mediante la codificación con la API, cree un método para cada aserción en la parte de la clase [UIMap](/previous-versions/dd580454(v=vs.140)) que se encuentra en el archivo `UIMap.cs`. Llame a este método desde el método de prueba para ejecutar la aserción.
+- Si va a crear aserciones mediante la codificación con la API, cree un método para cada aserción en la parte de la clase [UIMap](/previous-versions/dd580454(v=vs.140)) que se encuentra en el `UIMap.cs` archivo. Llame a este método desde el método de prueba para ejecutar la aserción.
 
 - Si está codificando directamente con la API, utilice en el código las propiedades y los métodos de las clases generadas en el archivo `UIMap.Designer.cs` siempre que pueda. Estas clases hacen que el trabajo sea más fácil y más fiable, y le ayudarán a ser más productivo.
 
@@ -70,7 +70,7 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
 
   - Agregue una aserción nueva arrastrando el botón de cruz hasta el control de la IU, abra la asignación de IU y agregue la nueva aserción.
 
-  Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
+  Para obtener más información sobre cómo grabar pruebas de IU codificadas, vea [usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md).
 
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Qué hacer si se debe completar un proceso en segundo plano antes de continuar con la prueba
  Tal vez tenga que esperar a que finalice un proceso antes de continuar con la siguiente acción de la interfaz de usuario. Para ello, puede usar <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> para esperar antes de que continúe la prueba, como en el ejemplo siguiente.
@@ -86,11 +86,11 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
-- [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Prueba de una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

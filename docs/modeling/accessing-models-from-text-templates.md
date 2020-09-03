@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531474"
 ---
 # <a name="access-models-from-text-templates"></a>Acceder a los modelos desde plantillas de texto
@@ -61,7 +61,7 @@ Here is a list of elements in the model:
 
 - Aunque el lenguaje en el que se escriben los fragmentos de código es C#, puede generar texto de cualquier tipo. Como alternativa, puede escribir el código en agregando [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] la propiedad `language="VB"` a la `template` Directiva.
 
-- Para depurar la plantilla, agregue `debug="true"` a la `template` Directiva. La plantilla se abrirá en otra instancia de Visual Studio si se produce una excepción. Si desea interrumpir el depurador en un punto concreto del código, inserte la instrucción.`System.Diagnostics.Debugger.Break();`
+- Para depurar la plantilla, agregue `debug="true"` a la `template` Directiva. La plantilla se abrirá en otra instancia de Visual Studio si se produce una excepción. Si desea interrumpir el depurador en un punto concreto del código, inserte la instrucción. `System.Diagnostics.Debugger.Break();`
 
    Para obtener más información, vea [depurar una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).
 
@@ -95,7 +95,7 @@ Here is a list of elements in the model:
 
    Si se encuentra un error, se le indicará en la ventana errores y el archivo de resultados contendrá un mensaje de error.
 
-## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a>Obtener acceso a varios modelos desde una plantilla de texto
+## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> Obtener acceso a varios modelos desde una plantilla de texto
 
 > [!NOTE]
 > Este método permite leer varios modelos en la misma plantilla, pero no admite referencias de ModelBus. Para leer modelos intervinculados por referencias de ModelBus, vea [usar Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt`invoca `LoopTemplate.t4` y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, ya que no lee el modelo.
+ `LoopSplitter.tt` invoca `LoopTemplate.t4` y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, ya que no lee el modelo.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

@@ -1,5 +1,5 @@
 ---
-title: Errores de las directivas de análisis de código
+title: Code Analysis Policy Errors
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587750"
 ---
-# <a name="code-analysis-policy-errors"></a>Errores de las directivas de análisis de código
+# <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
 Los errores siguientes se producen si la directiva de análisis de código no se cumple en el momento de la protección:
 
-**La configuración de análisis de código de uno o varios proyectos no es compatible con la Directiva de análisis de código.**
+**La configuración de análisis de código de uno o varios proyectos no es compatible con la directiva de análisis de código.**
 
 No se cumplieron los requisitos de análisis de código en el control de código fuente del proyecto para uno o varios proyectos de código. Este error puede deberse a una o más de las condiciones siguientes:
 
 - El análisis de código no está habilitado en la compilación para todos los proyectos de la solución.
 
-- El conjunto de reglas local para el proyecto en Visual Studio tiene una configuración de **acción** menos restrictiva que el conjunto de reglas del proyecto, por ejemplo, una regla que se establece en **acción**=**error** en el servidor tiene su **acción** establecida en **ADVERTENCIA** o en **ninguna** en el conjunto de reglas que se ejecuta en Visual Studio.
+- El conjunto de reglas local para el proyecto en Visual Studio tiene un valor de **acción** menos restrictivo que el conjunto de reglas del proyecto, por ejemplo, una regla que se establece en **Action** = **error** de acción en el servidor tiene su **acción** establecida en **ADVERTENCIA** o en **ninguna** en el conjunto de reglas que se ejecuta en Visual Studio.
 
 - El conjunto de reglas especificado en Visual Studio no contiene todas las reglas que se especifican en el conjunto de reglas especificado en la Directiva de protección del análisis de código para el proyecto.
 
@@ -45,34 +45,34 @@ La directiva de análisis de código requiere que todos los archivos que se est�
 
 La directiva de análisis de código requiere que todos los archivos que se están protegiendo estén en la solución actualmente abierta. Este error se produce cuando hay una solución abierta pero algunos archivos de la vista "inserción en el repositorio pendiente" no forman parte de la solución actualmente abierta. Para corregir este error, abra la solución que contiene el archivo que se va a proteger.
 
-**La versión de '{0}' no es correcta. El nombre seguro especificado en la Directiva es '{1}'.**
+**La versión de ' {0} ' no es correcta. El nombre seguro especificado en la Directiva es ' {1} '.**
 
-Este error se aplica a los proyectos de .NET. Un archivo .dll de regla requerido por la directiva de análisis de código existe en el equipo local, pero la versión/clave pública no coincide. Para corregir este error, el creador de la Directiva debe actualizar los archivos. dll en el directorio *c:\Archivos de Programa\microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules\\* del equipo.
+Este error se aplica a los proyectos de .NET. Un archivo .dll de regla requerido por la directiva de análisis de código existe en el equipo local, pero la versión/clave pública no coincide. Para corregir este error, el creador de la Directiva debe actualizar los archivos. dll en el directorio *c:\Archivos de Programa\microsoft Visual Studio \\ 8 \ Team Tools\Static Analysis Tools\FxCop\Rules* en su equipo.
 
-**el ensamblado '{0}' especificado en la Directiva no existe.**
+**{0}el ensamblado ' ' especificado en la Directiva no existe.**
 
-Este error se aplica a los proyectos de .NET. Una regla requerida por la directiva de análisis de código no tiene el archivo dll correspondiente instalado en el equipo cliente. Para corregir este error, el creador de la Directiva debe actualizar el archivo dll en *c:\Archivos de Programa\microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules\\* Directory en su equipo.
+Este error se aplica a los proyectos de .NET. Una regla requerida por la directiva de análisis de código no tiene el archivo dll correspondiente instalado en el equipo cliente. Para corregir este error, el creador de la Directiva debe actualizar el archivo dll en el directorio *c:\Archivos de Programa\microsoft Visual Studio \\ 8 \ Team Tools\Static Analysis Tools\FxCop\Rules* del equipo.
 
-**La configuración de las reglas del proyecto {0} no cumple la Directiva de análisis de código.**
+**La {0} configuración de las reglas del proyecto no cumple la Directiva de análisis de código.**
 
 Este error se aplica a los proyectos de .NET. La configuración de las reglas de código administrado no es tan estricta como exige la directiva. Para corregir este error, la configuración del cliente debe ser igual o más estricta que el requisito de la directiva del servidor.
 
-**El análisis de código no está habilitado en la configuración activa. Cambie a la {0} de configuración y compile el {1} del proyecto antes de proteger.**
+**El análisis de código no está habilitado en la configuración activa. Cambie a la configuración {0} y compile el proyecto {1} antes de proteger.**
 
 En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la configuración activa no tiene el análisis de código habilitado, pero hay al menos un análisis de código habilitado.
 
-**Debe habilitar el análisis de código para los binarios administrados en las propiedades del proyecto {0} y compilar antes de la protección.**
+**Debe habilitar el análisis de código para los binarios administrados en {0} las propiedades del proyecto y compilar antes de la protección.**
 
 Este error se aplica a las aplicaciones de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. La directiva exige realizar el análisis del código administrado, pero no está habilitado en el proyecto actual en el cliente.
 
-**Debe habilitar el análisis de código en las propiedades del proyecto {0} y compilar antes de la protección.**
+**Debe habilitar el análisis de código en {0} las propiedades del proyecto y compilar antes de la protección.**
 
-Este error se aplica a proyectos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y proyectos Web. La directiva exige realizar el análisis del código administrado, pero no está habilitado en el proyecto actual en el cliente.
+Este error se aplica a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyectos y proyectos Web. La directiva exige realizar el análisis del código administrado, pero no está habilitado en el proyecto actual en el cliente.
 
-**Debe habilitar el análisis deC++ código C/en las propiedades del proyecto {0} y compilar antes de la protección.**
+**Debe habilitar el análisis de código de C/C++ en {0} las propiedades del proyecto y compilar antes de la protección.**
 
 Este error se aplica a los proyectos no administrados. La directiva de análisis de código requiere análisis de código para C/C++, pero no está habilitada en el proyecto actual en el cliente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Errores de la aplicación de análisis de código](../code-quality/code-analysis-application-errors.md)

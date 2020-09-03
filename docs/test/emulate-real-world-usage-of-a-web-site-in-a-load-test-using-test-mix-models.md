@@ -39,7 +39,7 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 
 - **Basado en el orden secuencial:** cada usuario virtual ejecuta las pruebas unitarias o de rendimiento web en el mismo orden en que se definen en el escenario. El usuario virtual seguirá recorriendo las pruebas en este orden hasta que se complete la prueba de carga. Para más información, consulte [Orden secuencial](#SequentialOrder).
 
-### <a name="BasedOnTestsStarted"></a> Porcentaje basado en las pruebas iniciadas
+### <a name="percentage-based-on-tests-started"></a><a name="BasedOnTestsStarted"></a> Porcentaje basado en las pruebas iniciadas
 
 Para cada prueba de la combinación, puede especificar un porcentaje que determine la frecuencia con la que la prueba se selecciona como la siguiente prueba que se va a ejecutar. Por ejemplo, podría asignar los valores de porcentaje siguientes a tres pruebas:
 
@@ -51,10 +51,10 @@ Para cada prueba de la combinación, puede especificar un porcentaje que determi
 
 Si utiliza estos valores, la siguiente prueba que se inicia se basa en los porcentajes asignados. Para ello no se tiene en cuenta el número de usuarios virtuales que ejecutan actualmente cada prueba.
 
-### <a name="PercentageBasedonVirtualUsers"></a> Porcentaje basado en los usuarios virtuales
+### <a name="percentage-based-on-virtual-users"></a><a name="PercentageBasedonVirtualUsers"></a> Porcentaje basado en los usuarios virtuales
 Este modelo de combinación de pruebas determina el porcentaje de usuarios virtuales que ejecutarán una prueba determinada. Si utiliza este modelo de combinación de pruebas, la siguiente prueba que se inicia no se basa sólo en los porcentajes asignados, sino también en el porcentaje de usuarios virtuales que ejecutan actualmente una determinada prueba. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una determinada prueba coincide de la forma más precisa posible con la distribución asignada.
 
-### <a name="PacingTestMix"></a> Combinación de pruebas a un ritmo regulado
+### <a name="pacing-test-mix"></a><a name="PacingTestMix"></a> Combinación de pruebas a un ritmo regulado
 
 Si especifica una combinación de pruebas a un ritmo regulado, definirá una frecuencia de ejecución de pruebas para cada usuario virtual y prueba de la combinación de pruebas. Para cada prueba, esta frecuencia se expresa como ejecución de las pruebas por usuario virtual y hora. Por ejemplo, podría asignar la siguiente combinación de pruebas a ritmo regulado para las pruebas siguientes:
 
@@ -81,7 +81,7 @@ El valor de la propiedad **Aplicar distribución a intervalo de velocidad** en u
 
   Para más información, consulte [Cómo: Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-### <a name="SequentialOrder"></a> Orden secuencial
+### <a name="sequential-order"></a><a name="SequentialOrder"></a> Orden secuencial
 Al seleccionar la opción Por orden de pruebas secuencial permite a los usuarios virtuales ejecutar todas las pruebas del escenario en el orden con que se definieron las pruebas.
 
 ## <a name="test-iterations-property"></a>Propiedad de iteraciones de prueba

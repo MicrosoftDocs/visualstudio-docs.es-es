@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531409"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizar StringBuilder para las concatenaciones
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Usar StringBuilder para las concatenaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [DA0001: Use StringBuilder para las concatenaciones](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
@@ -30,11 +30,11 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [DA0001: U
 |-|-|  
 |Identificador de regla|DA0001|  
 |Categoría|Uso de .NET Framework|  
-|Métodos de generación de perfiles|muestreo<br /><br /> Instrumentación|  
-|Message|Considere la posibilidad de utilizar StringBuilder para concatenaciones de cadena|  
+|Métodos de generación de perfiles|Muestreo<br /><br /> Instrumentación|  
+|Mensaje|Considere la posibilidad de utilizar StringBuilder para concatenaciones de cadena|  
 |Tipo de mensaje|Advertencia|  
   
-## <a name="cause"></a>Causa  
+## <a name="cause"></a>Motivo  
  Las llamadas a System.String.Concat constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de usar la clase <xref:System.Text.StringBuilder> para construir cadenas a partir de varios segmentos.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f5028f5a9b16ecfc2461c0d29cbedb44be70a64c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926556"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitectura de las personalizaciones de nivel de documento
@@ -37,14 +37,14 @@ ms.locfileid: "68926556"
 
   [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-  Para obtener información general sobre cómo crear personalizaciones de nivel de documento, vea [información &#40;general&#41;sobre el desarrollo de soluciones de Office VSTO](../vsto/office-solutions-development-overview-vsto.md), introducción a [la programación de personalizaciones de nivel de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)y Introducción [ programar personalizaciones de nivel de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).
+  Para obtener información general sobre cómo crear personalizaciones de nivel de documento, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), introducción a [la programación de personalizaciones de nivel de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)y Introducción a [la programación de personalizaciones de nivel de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).
 
-## <a name="UnderstandingCustomizations"></a>Descripción de las personalizaciones
+## <a name="understand-customizations"></a><a name="UnderstandingCustomizations"></a> Descripción de las personalizaciones
  Si usa Office Developer Tools en Visual Studio para compilar una personalización de nivel de documento, se crea un ensamblado de código administrado que se asocia con un documento concreto. Se dice que un documento o un libro con un ensamblado vinculado dispone de extensiones de código administrado. Para obtener más información, vea [diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md).
 
  Cuando un usuario abre el documento, la aplicación de Microsoft Office carga el ensamblado. Cuando se carga el ensamblado, la personalización puede responder a eventos mientras el documento está abierto. La personalización también puede hacer llamadas al modelo de objetos para automatizar y extender la aplicación mientras el documento está abierto, y puede usar cualquiera de las clases de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
 
- El ensamblado se comunica con los componentes COM de la aplicación a través del ensamblado de interoperabilidad primario de la aplicación. Para obtener más información, vea ensamblados de interoperabilidad primarios de [Office](../vsto/office-primary-interop-assemblies.md) y [información general sobre &#40;el desarrollo de soluciones de Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+ El ensamblado se comunica con los componentes COM de la aplicación a través del ensamblado de interoperabilidad primario de la aplicación. Para obtener más información, vea [ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md) y [información general sobre el desarrollo de soluciones de office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  Si un usuario abre varias personalizaciones de nivel de documento a la vez, cada ensamblado se carga en un dominio de aplicación distinto. Esto significa que una solución que se comporta incorrectamente no puede hacer que otras generen un error. Las personalizaciones de nivel de documento están diseñadas para trabajar con un único documento en un dominio de aplicación único. No están diseñados para una comunicación entre documentos. Para obtener más información sobre los dominios de aplicación, consulte [dominios de aplicación](/dotnet/framework/app-domains/application-domains).
 
@@ -78,56 +78,56 @@ ms.locfileid: "68926556"
 |Con [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], el desarrollador escribe código que es accesible para Word y Excel.<br /><br /> Aunque pueda parecer que el programador crea un archivo ejecutable que ejecuta Word o Excel, en realidad el proceso funciona al revés. El documento se asocia a un ensamblado y contiene un puntero a ese ensamblado. Cuando se abre el documento, Word o Excel localiza el ensamblado y ejecuta el código en respuesta a todos los eventos controlados.|Los que usan la solución simplemente abren el documento o el libro (o crean un nuevo documento desde una plantilla) de la misma forma que abrirían cualquier otro archivo de Microsoft Office.<br /><br /> El ensamblado ofrece personalizaciones en el documento o el libro, como rellenarlos automáticamente con datos actuales o mostrar un cuadro de diálogo para solicitar información.|
 
 ### <a name="supported-document-formats-for-document-level-customizations"></a>Formatos de documento admitidos para las personalizaciones de nivel de documento
- Cuando crea un proyecto de personalización, puede elegir el formato del documento que desea utilizar en el proyecto. Para obtener más información, consulte [Cómo Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+ Cuando crea un proyecto de personalización, puede elegir el formato del documento que desea utilizar en el proyecto. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
  En la tabla siguiente se enumeran los formatos de documento que se pueden utilizar en las personalizaciones de nivel de documento para Excel y Word.
 
-|Excel|Palabra|
+|Excel|Word|
 |-----------|----------|
-|Libro de Excel ( *. xlsx*)<br /><br /> Libro de Excel habilitado para macros ( *. xlsm*)<br /><br /> Libro binario de Excel ( *. xlsb*)<br /><br /> Libro de Excel 97-2003 ( *. xls*)<br /><br /> Plantilla de Excel ( *. xltx*)<br /><br /> Plantilla de Excel habilitada para macros ( *. xltm*)<br /><br /> Plantilla de Excel 97-2003 ( *. xlt*)|Documento de Word ( *. docx*)<br /><br /> Documento habilitado para macros de Word ( *. docm*)<br /><br /> Documento de Word 97-2003 ( *. doc*)<br /><br /> Plantilla de Word ( *. dotx*)<br /><br /> Plantilla habilitada para macros de Word ( *. dotm*)<br /><br /> Plantilla de Word 97-2003 ( *. dot*)|
+|Libro de Excel (*. xlsx*)<br /><br /> Libro de Excel habilitado para macros (*. xlsm*)<br /><br /> Libro binario de Excel (*. xlsb*)<br /><br /> Libro de Excel 97-2003 (*. xls*)<br /><br /> Plantilla de Excel (*. xltx*)<br /><br /> Plantilla de Excel habilitada para macros (*. xltm*)<br /><br /> Plantilla de Excel 97-2003 (*. xlt*)|Documento de Word (*. docx*)<br /><br /> Documento habilitado para macros de Word (*. docm*)<br /><br /> Documento de Word 97-2003 (*. doc*)<br /><br /> Plantilla de Word (*. dotx*)<br /><br /> Plantilla habilitada para macros de Word (*. dotm*)<br /><br /> Plantilla de Word 97-2003 (*. dot*)|
 
- Debe diseñar extensiones de código administrado únicamente para los documentos en los formatos que se admiten. De lo contrario, es posible que no se generen determinados eventos si el documento se abre en la aplicación. Por ejemplo, el <xref:Microsoft.Office.Tools.Excel.Workbook.Open> evento no se genera cuando se utilizan extensiones de código administrado con libros guardados en el formato de hoja de cálculo XML de Excel o en la página web ( *. htm*; *. html*) Aplique.
+ Debe diseñar extensiones de código administrado únicamente para los documentos en los formatos que se admiten. De lo contrario, es posible que no se generen determinados eventos si el documento se abre en la aplicación. Por ejemplo, el <xref:Microsoft.Office.Tools.Excel.Workbook.Open> evento no se genera cuando se utilizan extensiones de código administrado con libros guardados en el formato de hoja de cálculo XML de Excel o en la página web (*. htm*; *. html*) Aplique.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Compatibilidad con documentos de Word que tienen extensiones de nombre de archivo. XML
  Las plantillas de proyecto de nivel de documento no permiten crear proyectos basados en los siguientes formatos de archivo:
 
-- Documento XML de Word ( *\*XML*).
+- Documento XML de Word (* \* XML*).
 
-- Documento XML de Word 2003 ( *\*XML*).
+- Documento XML de Word 2003 (* \* XML*).
 
-  Si desea que los usuarios finales utilicen las personalizaciones en estos formatos de archivo, compile e implemente una personalización que use uno de los formatos de archivo compatibles que se especifican en la tabla anterior. Después de instalar la personalización, los usuarios finales pueden guardar el documento en el formato de documento XML de Word ( *\*XML*) o en el formato de documento XML ( *\*XML*) de Word 2003 y la personalización continuará funcionando según lo previsto.
+  Si desea que los usuarios finales utilicen las personalizaciones en estos formatos de archivo, compile e implemente una personalización que use uno de los formatos de archivo compatibles que se especifican en la tabla anterior. Después de instalar la personalización, los usuarios finales pueden guardar el documento en el formato de documento XML de Word (* \* XML*) o en el formato de documento XML (* \* XML*) de Word 2003 y la personalización continuará funcionando según lo previsto.
 
-## <a name="Components"></a>Componentes de las personalizaciones
+## <a name="components-of-customizations"></a><a name="Components"></a> Componentes de las personalizaciones
  Los componentes principales de una personalización son el documento y el ensamblado. Además de estos componentes, existen otras partes que desempeñan un papel importante en la forma en que las aplicaciones de Microsoft Office detectan y cargan personalizaciones.
 
 ### <a name="deployment-manifest-and-application-manifest"></a>Manifiesto de implementación y manifiesto de aplicación
- Las personalizaciones usan manifiestos de implementación y manifiestos de aplicación para identificar y cargar la versión más reciente del ensamblado de personalización. El manifiesto de implementación apunta al manifiesto de aplicación actual. El manifiesto de aplicación apunta al ensamblado de personalización y especifica la clase (o clases) de punto de entrada que se ejecutará en el ensamblado. Para obtener más información, vea manifiestos de [aplicación e implementación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+ Las personalizaciones usan manifiestos de implementación y manifiestos de aplicación para identificar y cargar la versión más reciente del ensamblado de personalización. El manifiesto de implementación apunta al manifiesto de aplicación actual. El manifiesto de aplicación apunta al ensamblado de personalización y especifica la clase (o clases) de punto de entrada que se ejecutará en el ensamblado. Para obtener más información, vea [manifiestos de aplicación e implementación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
 ### <a name="visual-studio-tools-for-office-runtime"></a>Visual Studio Tools para Office Runtime
  Para ejecutar personalizaciones de nivel de documento que se crean con Office Developer Tools en Visual Studio, los equipos de usuario final deben tener [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] instalado. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] incluye componentes no administrados que cargan el ensamblado de personalización y también un conjunto de ensamblados administrados. Estos ensamblados administrados proporcionan el modelo de objetos que el código de personalización usa para automatizar y extender la aplicación host.
 
  Para obtener más información, vea [información general sobre el Runtime de Visual Studio Tools para Office](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-## <a name="HowCustomizationsWork"></a>Cómo funcionan las personalizaciones con aplicaciones de Microsoft Office
+## <a name="how-customizations-work-with-microsoft-office-applications"></a><a name="HowCustomizationsWork"></a> Cómo funcionan las personalizaciones con aplicaciones de Microsoft Office
  Cuando un usuario abre un documento que forma parte de una personalización de Microsoft Office, la aplicación utiliza el manifiesto de implementación que está vinculado al documento para buscar y cargar la versión más reciente del ensamblado de personalización. La ubicación del manifiesto de implementación se almacena en una propiedad de documento personalizada denominada **AssemblyLocation**. La cadena que identifica esta ubicación se inserta en la propiedad cuando se compila la solución.
 
- El manifiesto de implementación apunta al manifiesto de aplicación, que a su vez apunta al ensamblado más actual. Para obtener más información, vea manifiestos de [aplicación e implementación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+ El manifiesto de implementación apunta al manifiesto de aplicación, que a su vez apunta al ensamblado más actual. Para obtener más información, vea [manifiestos de aplicación e implementación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
  En la ilustración siguiente se muestra la arquitectura básica de una personalización de nivel de documento.
 
- ![2007 arquitectura] de personalización de Office (../vsto/media/office07-custom.png "2007 arquitectura") de personalización de Office
+ ![Arquitectura de personalización de Office 2007](../vsto/media/office07-custom.png "Arquitectura de personalización de Office 2007")
 
 > [!NOTE]
 > En soluciones de Office destinadas a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], las soluciones llaman al modelo de objetos de la aplicación host mediante la información de tipo de ensamblado de interoperabilidad primario (PIA) que está insertada en el ensamblado de la solución, en lugar de llamar directamente a los PIA. Para obtener más información, vea [diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md).
 
-### <a name="loading-process"></a>Proceso de carga
+### <a name="loading-process"></a>Cargando proceso
  Los pasos siguientes se producen cuando un usuario abre un documento que forma parte de una solución de Microsoft Office.
 
 1. La aplicación de Microsoft Office comprueba las propiedades de documento personalizadas para ver si hay extensiones de código administrado asociadas con el documento. Para obtener más información, vea [información general sobre las propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md).
 
-2. Si hay extensiones de código administrado, la aplicación carga *VSTOEE. dll*, que carga *VSTOLoader. dll*. Se trata de archivos dll no administrados que son los componentes del cargador para Visual Studio 2010 Tools para Office Runtime. Para obtener más información, vea [información general de Visual Studio Tools para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. Si hay extensiones de código administrado, la aplicación carga *VSTOEE.dll*, que carga *VSTOLoader.dll*. Se trata de archivos dll no administrados que son los componentes del cargador para Visual Studio 2010 Tools para Office Runtime. Para obtener más información, vea [información general de Visual Studio Tools para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-3. *VSTOLoader. dll* carga [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] e inicia la parte [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]administrada de.
+3. *VSTOLoader.dll* carga [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] e inicia la parte administrada de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
 4. Si el documento se abre desde una ubicación distinta del equipo local, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] comprueba que la ubicación del documento está en la lista **Ubicaciones de confianza** de la **Configuración del Centro de confianza** de esa aplicación de Office concreta. Si la ubicación del documento no está en una ubicación de confianza, la personalización no es de confianza y el proceso de carga se detiene ahí.
 
@@ -143,7 +143,7 @@ ms.locfileid: "68926556"
 
 ## <a name="see-also"></a>Vea también
 - [Arquitectura de las soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-- [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Información general sobre el tiempo de ejecución de Visual Studio Tools para Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)

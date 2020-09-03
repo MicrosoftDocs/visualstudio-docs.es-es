@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 960e9469290bca42abd252d497c2ce72e62e41a4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531539"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramas de actividades UML: Referencia
@@ -83,14 +83,14 @@ Un *Diagrama de actividades* muestra un proceso de negocio o un proceso de softw
 |13|**Send Signal Action**|Acción que envía un mensaje o una señal a otra actividad o a un subproceso simultáneo de la misma actividad. El tipo y el contenido del mensaje están implícitos en el título de la acción o se especifican en los comentarios adicionales.<br /><br /> La acción puede enviar datos de la señal, que se pueden pasar a la acción de un flujo de objeto o terminal de entrada (16).|
 |14|**Accept Event Action**|Acción que espera un mensaje o una señal antes de continuar con la acción. El tipo de mensaje que la acción puede recibir está implícito en el título o se especifica en los comentarios adicionales.<br /><br /> Si la acción no tiene ningún flujo de control entrante, genera un token cada vez que recibe un mensaje.<br /><br /> La acción puede recibir datos de la señal, que se pueden pasar a un flujo de objeto o terminal de salida (17).<br /><br /> -   **IsUnmarshall** : si es true, puede haber varios PIN de salida con tipo y los datos no se aplican a la serialización. Si es false, todos los datos aparecen en un terminal.|
 
-### <a name="data-flows"></a><a name="DataFlow"></a>Flujos de datos
+### <a name="data-flows"></a><a name="DataFlow"></a> Flujos de datos
  Puede describir el flujo de datos de una acción a otra. Para más información sobre los elementos que se usan en esta sección, vea la sección Dibujar flujos de datos del tema Instrucciones para dibujar un diagrama de actividades.
 
  ![Diagrama de actividades mostrando flujo de datos](../modeling/media/uml-actovdata.png "UML_ActOvData")
 
 |**Forma**|**Element**|**Descripción**|
 |-|-|-|
-|15|**Nodo de objeto**|Representa los datos que pasan por un flujo.<br /><br /> -   **Ordenación** : cómo se almacenan varios tokens.<br />-   **Selection** : invoca un proceso, que se puede definir en otro diagrama, que filtra los datos.<br />-   **Límite superior** : 0 indica que los datos deben pasar directamente a lo largo del flujo; \*indica que los datos se pueden almacenar en el flujo.<br />-   **Type** : el tipo de objetos almacenados y transmitidos.|
+|15|**Nodo de objeto**|Representa los datos que pasan por un flujo.<br /><br /> -   **Ordenación** : cómo se almacenan varios tokens.<br />-   **Selection** : invoca un proceso, que se puede definir en otro diagrama, que filtra los datos.<br />-   **Límite superior** : 0 indica que los datos deben pasar directamente a lo largo del flujo; \* indica que los datos se pueden almacenar en el flujo.<br />-   **Type** : el tipo de objetos almacenados y transmitidos.|
 |16|**Input Pin**|Representa los datos que puede recibir una acción cuando se ejecuta.<br /><br /> -   **Type** : el tipo de objetos transmitidos.|
 |17|**Output Pin**|Representa los datos que genera una acción cuando se ejecuta.<br /><br /> -   **Type** : el tipo de objetos transmitidos.|
 |18|**Activity Parameter Node**|Nodo de objeto a través del cual la actividad recibe o genera datos.<br /><br /> Se usa cuando la actividad representada en el diagrama se llama desde otra actividad, o bien cuando el diagrama describe una operación o función.<br /><br /> -   **Type** : el tipo de objetos transmitidos.|

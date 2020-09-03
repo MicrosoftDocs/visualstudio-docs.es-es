@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 6913ec4c80b5cb87cf6cd980ff2da73fab309a02
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184021"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilizar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas
@@ -252,7 +252,7 @@ Para automatizar la creación de su proyecto, agregue código que llame a MSBuil
         #Write a function to build and package your web application
     ```
 
-    Para compilar la aplicación web, utilice MsBuild.exe. Para obtener ayuda, vea referencia de la línea de comandos de MSBuild en:[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
+    Para compilar la aplicación web, utilice MsBuild.exe. Para obtener ayuda, vea referencia de la línea de comandos de MSBuild en: [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -308,11 +308,11 @@ return $WebDeployPackage
     Para automatizar las pruebas de su aplicación, agregue código a `Test-WebApplication`. Asegúrese de anular los comentarios de las líneas en **Publish-WebApplication.ps1** donde se llama a estas funciones. Si no ofrece una implementación, puede crear su proyecto manualmente con Visual Studio y luego ejecute el script de publicación para publicar en Azure.
 
 ## <a name="publishing-function-summary"></a>Publicación del resumen de la función
-Para obtener ayuda para las funciones que puede usar en el símbolo del sistema de Windows PowerShell, use el comando `Get-Help function-name`. La ayuda incluye ejemplos y la ayuda de parámetros. El mismo texto de ayuda también se encuentra en los archivos de origen del script **AzureWebAppPublishModule. psm1** y **Publish-WebApplication. PS1**. El script y la Ayuda se localizan en su idioma de Visual Studio.
+Para obtener ayuda para las funciones que puede usar en el símbolo del sistema de Windows PowerShell, use el comando `Get-Help function-name`. La ayuda incluye ejemplos y la ayuda de parámetros. El mismo texto de ayuda también se encuentra en los archivos de origen del script **AzureWebAppPublishModule. psm1** y **Publish-WebApplication.ps1**. El script y la Ayuda se localizan en su idioma de Visual Studio.
 
 **AzureWebAppPublishModule**
 
-| Nombre de la función | Descripción |
+| Nombre de función | Descripción |
 | --- | --- |
 | Add-AzureSQLDatabase |Crea una nueva base de datos de Azure SQL. |
 | Add-AzureSQLDatabases |Crea las bases de datos de Azure SQL a partir de los valores en el archivo de configuración de JSON que Visual Studio genera. |
@@ -341,7 +341,7 @@ Para obtener ayuda para las funciones que puede usar en el símbolo del sistema 
 
 **Publish-WebApplication**
 
-| Nombre de la función | Descripción |
+| Nombre de función | Descripción |
 | --- | --- |
 | New-AzureWebApplicationEnvironment |Crea recursos de Azure, como un sitio web o una máquina virtual. |
 | New-WebDeployPackage |Esta función no está implementada. Puede agregar comandos en esta función para generar su proyecto. |

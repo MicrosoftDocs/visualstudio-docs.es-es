@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedField::IsClosedType | Microsoft Docs
+title: 'IDebugExtendedField:: IsClosedType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a1cf28e8391a1dd37949c042bd7d58d9c8b7da06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148986"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
@@ -36,7 +36,7 @@ int IsClosedType();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve si el campo es un tipo cerrado, `S_OK`; en caso contrario, devuelve `S_FALSE`.  
+ Si el campo es un tipo cerrado, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

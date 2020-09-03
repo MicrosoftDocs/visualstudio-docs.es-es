@@ -1,5 +1,5 @@
 ---
-title: GetTaskSchedulersForDebugger (método) | Microsoft Docs
+title: Método GetTaskSchedulersForDebugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 995bf40669a4480f6f1ddfe8071a7885a4659c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152723"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger (Método)
@@ -26,7 +26,7 @@ Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> obj
   
  **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
+ Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,10 +35,10 @@ Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> obj
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están actualmente activos en este <xref:System.AppDomain>.  
+ Una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente en este objeto <xref:System.AppDomain> .  
   
 ## <a name="remarks"></a>Comentarios  
- Este método no es seguro para subprocesos y no deben usarse simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler>. Debe llamarse desde un depurador sólo cuando el depurador ha suspendido todos los demás subprocesos.  
+ Este método no es seguro para subprocesos y no debe usarse simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler> . Solo se debe llamar desde un depurador cuando el depurador ha suspendido todos los demás subprocesos.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Clase TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

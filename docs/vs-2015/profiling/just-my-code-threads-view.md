@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85126a7816fa583db94bb93659a7d4cbb29078ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154776"
 ---
 # <a name="just-my-code-threads-view"></a>Sólo mi código (Vista de subprocesos)
@@ -29,6 +29,6 @@ Si selecciona esta opción, se filtrará la pila de llamadas para mostrar solo s
   
  En algunos casos, la selección de esta opción puede filtrar la llamada de bloqueo. Si necesita detalles completos de la pila de llamadas para tomar esa determinación, desactive esta opción para exponer la pila de llamadas completa.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)   
  [Porcentaje de reducción de ruido](../profiling/noise-reduction-percentage.md)

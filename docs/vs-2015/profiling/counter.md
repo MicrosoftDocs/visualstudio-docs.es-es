@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5da78c33af599accf5ff3a2e09a9afb52982573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149278"
 ---
 # <a name="counter"></a>Contador
@@ -39,7 +39,7 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
   
 #### <a name="parameters"></a>Parámetros  
  `Name`  
- El nombre del contador. Utilice la opción **/QueryCounters** de VSPerfCmd.exe para enumerar los nombres de los contadores disponibles en el equipo.  
+ Nombre del contador. Utilice la opción **/QueryCounters** de VSPerfCmd.exe para enumerar los nombres de los contadores disponibles en el equipo.  
   
  `Reload`  
  El número de eventos de contador en el intervalo de muestreo. No utilice esta opción con el método de instrumentación.  
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Opciones necesarias  
  La opción Counter solo puede utilizarse con una de las siguientes opciones:  
   
- **Start:** `Trace`  
+ **Inicio:**`Trace`  
  Inicializa el generador de perfiles para utilizar el método de instrumentación.  
   
- **Launch:** `AppName`  
+ **Iniciar:**`AppName`  
  Inicia la aplicación específica y el generador de perfiles. El generador de perfiles se debe inicializar para utilizar el método de muestreo.  
   
- **Attach:** `PID`  
+ **Asociar:**`PID`  
  Inicia el generador de perfiles y lo adjunta al proceso especificado por el identificador de proceso. El generador de perfiles se debe inicializar para utilizar el método de muestreo.  
   
 ## <a name="example"></a>Ejemplo  
@@ -73,8 +73,8 @@ VSPerfCmd.exe /Launch:TestApp.exe /Counter:NonHaltedCycles,1000,"Non-Halted Cycl
 VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches,,"L2 Cache Instruction Fetches"  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)

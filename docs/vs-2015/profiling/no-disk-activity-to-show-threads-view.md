@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8273e17f5a132d4be2394bd0dc75b15b7204316
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205875"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>No hay actividades de disco que mostrar (Vista de subprocesos)
@@ -25,5 +25,5 @@ ms.locfileid: "68205875"
 
 No se puede mostrar la actividad de disco para el intervalo temporal actual en los canales de E/S de disco. Se puede mostrar la actividad de disco si reduce con el zoom o se desplaza. Además, debe asegurarse de que no haya ningún canal de disco oculto.  
   
-## <a name="see-also"></a>Otras referencias  
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte también  
+ [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

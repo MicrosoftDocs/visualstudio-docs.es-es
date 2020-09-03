@@ -1,5 +1,5 @@
 ---
-title: Pila de llamadas de eventos de gráficos | Microsoft Docs
+title: Pila de llamadas de eventos gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192754"
 ---
 # <a name="graphics-event-call-stack"></a>Pila de llamadas de eventos de gráficos
@@ -25,7 +25,7 @@ La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual S
   
  Esta es la ventana de la Pila de llamadas de eventos:  
   
- ![La pila de llamadas que precede un evento DrawIndexed. ](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![La pila de llamadas que precede a un evento DrawIndexed.](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Descripción de la pila de llamadas de eventos gráficos  
  Puede utilizar la Pila de llamadas de eventos para comprender el flujo de ejecución que llevó a un determinado evento de Direct3D. Se asemeja a la ventana de la pila de llamadas de Visual Studio con la excepción de que, en lugar de mostrar la pila de llamadas actual del subproceso activo en una aplicación que se ejecuta, muestra la pila de llamadas tal y como se encontraba cuando se produjo el evento de Direct3D seleccionado. Desde la Pila de llamadas de eventos, puede ir directamente al sitio de llamada del evento de Direct3D seleccionado para inspeccionar el código que lo rodea.  
@@ -35,14 +35,14 @@ La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual S
 ### <a name="graphics-event-call-stack-information"></a>Información de la Pila de llamadas de eventos gráficos  
  La Pila de llamadas de eventos no admite los eventos anteriores a la trama ni los eventos definidos por el usuario. La pila de llamadas de eventos gráficos se muestra en formato de tabla.  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
-|**Nombre**|Símbolo que identifica de forma única la función que contiene el sitio de llamada. El símbolo de depuración de la función se muestra cuando está disponible. Cuando no lo está, se muestra el desplazamiento de función.|  
+|**Name**|Símbolo que identifica de forma única la función que contiene el sitio de llamada. El símbolo de depuración de la función se muestra cuando está disponible. Cuando no lo está, se muestra el desplazamiento de función.|  
 |**Archivo**|El nombre de archivo del archivo de código fuente o el archivo de biblioteca que contiene el sitio de llamada.|  
 |**Ubicación**|El número de línea del sitio de llamada.|  
   
 ### <a name="links-to-graphics-objects"></a>Vínculos a objetos gráficos  
  Para entender el evento de gráficos seleccionado, puede que necesite información sobre el objeto de Direct3D al que está asociado. La ventana **Pila de llamadas de eventos gráficos** proporciona vínculos a esta información.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Tutorial: Objetos ausentes debido al sombreado de vértices](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)
