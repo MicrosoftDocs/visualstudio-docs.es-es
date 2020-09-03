@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1d69e705e8f537ba3636422ad6883a7633e03322
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544890"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Cómo: agregar controles XmlMappedRange (a hojas de cálculo
@@ -60,7 +60,7 @@ ms.locfileid: "85544890"
     > [!NOTE]
     > Si arrastra un elemento primario desde el panel de tareas **origen XML** , <xref:Microsoft.Office.Tools.Excel.ListObject> se crea un control.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Control XmlMappedRange (](../vsto/xmlmappedrange-control.md)
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

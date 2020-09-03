@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0342146f604d86dd93ce25ed20e6ab393c581ea9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544175"
 ---
 # <a name="properties-of-domain-properties"></a>Propiedades de las propiedades de dominio
@@ -43,7 +43,7 @@ Una *propiedad de dominio* es una característica de un elemento de modelo que p
 |**Is Element Name**|Si es `True`, esta propiedad de dominio se mostrará con el nombre de su elemento modelo en DSL Explorer (Explorador de DSL).<br /><br /> Los nuevos elementos de modelo recibirán un valor predeterminado único para esta propiedad. Si desea controlar cómo se generan estos valores, establezca **el proveedor de nombres de elemento**.|`False`|
 |**Is UI Read Only**|Si es `True`, el valor de la propiedad de dominio no se puede cambiar mediante la interfaz de usuario. Los programas sí pueden establecerlo y será visible en la ventana Properties (Propiedades).<br /><br /> Si desea ocultar la propiedad de dominio del usuario, establezca **es explorable**. Si desea controlar el acceso mediante programas, establezca el **modificador de acceso Setter**.|`False`|
 |**Variante**|Tipo de propiedad de dominio (`Normal`, `Calculated` o `CustomStorage`). Para obtener más información, consulte [propiedades de almacenamiento calculado y personalizado](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
-|**Nombre**|Nombre de esta propiedad de dominio. Debe ser un identificador válido, por ejemplo **SongTitle**.|\<none>|
+|**Name**|Nombre de esta propiedad de dominio. Debe ser un identificador válido, por ejemplo **SongTitle**.|\<none>|
 |**Notas**|Notas informales que están asociadas con esta propiedad de dominio.|\<none>|
 |**Setter Access Modifier**|Modificador de acceso del establecedor. Controla el ámbito en el cual el código de programa puede establecer la propiedad.|`public`|
 |**Tipo**|El tipo de propiedad. Para agregar a la lista de tipos disponibles, haga clic con el botón secundario en la raíz del DSL en el explorador de DSL y haga clic en **Agregar tipo externo**.|`String`|

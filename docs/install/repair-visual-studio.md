@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Obtenga información sobre cómo reparar una instalación de Visual Studio 2017
 ms.date: 06/15/2020
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a5883889e4ccbeab22d8a11578bcd342ca95e9be
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285249"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "85418969"
 ---
 # <a name="repair-visual-studio"></a>Repare Visual Studio.
 

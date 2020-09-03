@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2416eb24c21ef0e61bdb6db3de66c892e1eb699f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545345"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar miembros como estáticos
@@ -27,11 +27,11 @@ ms.locfileid: "85545345"
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1822: Mark Members as static](/visualstudio/code-quality/ca1822-mark-members-as-static).
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|MarkMethodsAsStatic|
 |Identificador de comprobación|CA1822|
-|Categoría|Microsoft. performance|
+|Category|Microsoft. performance|
 |Cambio problemático|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si simplemente cambia el miembro a un miembro de instancia con la `this` palabra clave.<br /><br /> Problemático: Si cambia el miembro de un miembro de instancia a un miembro estático y es visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Causa

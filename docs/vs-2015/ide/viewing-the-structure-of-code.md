@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a860fbb88bb15786fad5fdf277f8f65b245056b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545020"
 ---
 # <a name="viewing-the-structure-of-code"></a>Ver la estructura del código
@@ -57,7 +57,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
 > [!NOTE]
 > La edición de Visual Studio y la configuración que use pueden afectar a las características en el IDE. Podrían ser diferentes de las descritas en este tema.
 
-## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a>Vista de clases (Visual Basic, C#, C++)
+## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a> Vista de clases (Visual Basic, C#, C++)
  La **Vista de clases** se muestra como parte del **Explorador de soluciones**, así como en una ventana independiente. La ventana **Vista de clases** muestra los elementos de una aplicación. En el panel superior se muestran los espacios de nombres, los tipos, las interfaces, las enumeraciones y las clases, y en el panel inferior se muestran los miembros que pertenecen al tipo que se haya seleccionado en el panel superior. Al usar esta ventana, puede navegar hasta las definiciones de miembros en el código fuente (o en el **Examinador de objetos** si el elemento se define fuera de la solución).
 
  No es necesario compilar un proyecto para ver sus elementos en la **Vista de clases**. A medida que se modifica el código en el proyecto, se actualiza la ventana.
@@ -69,7 +69,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
 ### <a name="class-view-toolbar"></a>Barra de herramientas de Vista de clases
  La barra de herramientas de Vista de clases contiene los siguientes comandos.
 
-|Comando|Descripción|
+|Get-Help|Descripción|
 |-|-|
 |**Nueva carpeta**|Crea una carpeta virtual o una subcarpeta en la que puede organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa (.suo). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
 |**Atrás**|Navegal al elemento seleccionado anteriormente.|
@@ -94,7 +94,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
 ### <a name="class-view-shortcut-menu"></a>Menú contextual de la Vista de clases
  El menú contextual de la **Vista de clases** puede contener los siguientes comandos, en función del tipo de proyecto seleccionado.
 
-|Comando|Descripción|
+|Get-Help|Descripción|
 |-|-|
 |**Ir a definición**|Busca la definición del elemento en el código fuente o en el **Examinador de objetos** si el elemento no está definido en el proyecto abierto.|
 |**Examinar definición**|Muestra el elemento seleccionado en el **Examinador de objetos**.|
@@ -125,7 +125,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
 
  El menú contextual de la ventana **jerarquía de llamadas** contiene los siguientes comandos.
 
-|Comando|Descripción|
+|Get-Help|Descripción|
 |-|-|
 |**Agregar como nueva raíz**|Agrega el nodo seleccionado como un nuevo nodo raíz.|
 |**Quitar raíz**|Quita el nodo raíz seleccionado del panel de vista de árbol.|
@@ -177,7 +177,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandos del menú contextual del Examinador de objetos
  El menú contextual del **Examinador de objetos** puede contener los siguientes comandos, en función del tipo de elemento seleccionado.
 
-|Comando|Descripción|
+|Get-Help|Descripción|
 |-|-|
 |**Examinar definición**|Muestra el nodo principal del elemento seleccionado.|
 |**Buscar todas las referencias**|Busca el elemento del objeto seleccionado actualmente y muestra los resultados en la ventana **Resultados de la búsqueda**.|
@@ -201,7 +201,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
 ### <a name="code-definition-shortcut-menu"></a>Menú contextual de Definición de código
  El menú contextual de la ventana **Definición de código** puede contener los siguientes comandos, en función del lenguaje de programación.
 
-|Comando|Descripción|
+|Get-Help|Descripción|
 |-|-|
 |**Crear pruebas unitarias**|Crea pruebas unitarias para el elemento seleccionado.|
 |**Generar diagrama de secuencia**|Cuando se selecciona un método, genera un diagrama de secuencia.|

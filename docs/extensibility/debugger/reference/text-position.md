@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION Microsoft Docs
+title: TEXT_POSITION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713410"
 ---
 # <a name="text_position"></a>TEXT_POSITION
-Describe la ubicación de la línea y la columna en el texto especificado.
+Describe la ubicación de línea y columna en el texto especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,16 +44,16 @@ public struct TEXT_POSITION { 
 ## <a name="members"></a>Miembros
 
 `dwLine`\
-Indice de línea en el archivo de origen.
+Índice de la línea del archivo de código fuente.
 
 `dwColumn`\
-Desplazamiento de caracteres en línea.
+Desplazamiento de caracteres en la línea.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta estructura se utiliza en las estructuras [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) y [DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
+Esta estructura se usa en las estructuras [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) y [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
-Esta estructura se rellena con una llamada a los métodos siguientes:
+Esta estructura se rellena mediante una llamada a los métodos siguientes:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -77,13 +77,13 @@ Esta estructura se pasa como parámetro a los métodos siguientes:
 
 ## <a name="requirements"></a>Requisitos
 
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)

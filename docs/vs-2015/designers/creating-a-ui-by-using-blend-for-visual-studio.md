@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544292"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creación de una interfaz de usuario con Blend para Visual Studio
@@ -40,7 +40,7 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 
 - [Paseo por el panel Propiedades](#Properties)
 
-## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a>Paseo por el panel herramientas
+## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a> Paseo por el panel herramientas
  Puede usar el panel **Herramientas** en Blend para Visual Studio para crear y modificar objetos en la aplicación. Para crear objetos, seleccione una herramienta y dibuje en la mesa de trabajo utilizando el mouse.
 
  ![Panel Herramientas](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [La barra de herramientas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a>Paseo por el panel activos
+## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a> Paseo por el panel activos
  Puede encontrar todos los controles en el panel **Activos**, similar al **Cuadro de herramientas** de Visual Studio. Además de los controles, encontrará todo lo que puede agregar a la mesa de trabajo en el panel **Activos**, incluidos estilos, elementos multimedia, comportamientos y efectos.
 
  ![Panel Activos](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 |![](../designers/media/b1-4.png "B1_4")|**Estilos** Muestre todos los estilos que se encuentran en el diccionario de recursos.|
 |![](../designers/media/b1-5.png "B1_5")|**Descripción** Vea una descripción de la categoría o subcategoría de activos seleccionada.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>Paseo por el panel de Objetos y escala de tiempo
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a> Paseo por el panel de Objetos y escala de tiempo
  Utilice este panel para organizar los objetos en la mesa de trabajo y, si lo desea, para animarlos.
 
  ![Panel Objetos y escala de tiempo en modo de animación](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 |![](../designers/media/b1-15.png "B1_15")|**Zoom de escala de tiempo** Establezca la resolución de zoom de la escala de tiempo. El acercamiento le permite modificar una animación con más detalle, mientras que el alejamiento muestra una visión general de lo que ocurre en períodos de tiempo más largos. Si se acerca pero no puede establecer un fotograma clave en la posición temporal que desee, compruebe si la resolución de ajuste es lo bastante alta.|
 |![Llamada 16](../designers/media/b5-label-16.png "b5_label_16")|**Área de composición de la escala de tiempo** Vea la escala de tiempo y mueva los fotogramas clave arrastrándolos o usando sus menús contextuales.|
 
-## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>Paseo por el panel Propiedades
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a> Paseo por el panel Propiedades
  Utilice este panel para ver y modificar las propiedades de un objeto. También puede establecer esas propiedades directamente en la mesa de trabajo. Si lo hace, los cambios de propiedad se reflejarán en el panel **Propiedades**.
 
  ![Panel Propiedades](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")

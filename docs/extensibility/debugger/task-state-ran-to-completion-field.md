@@ -1,5 +1,5 @@
 ---
-title: Campo de TASK_STATE_RAN_TO_COMPLETION Microsoft Docs
+title: TASK_STATE_RAN_TO_COMPLETION campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4a898ff09ff45ae77da91e54ba22351e9f70978d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712621"
 ---
-# <a name="task_state_ran_to_completion-field"></a>campo TASK_STATE_RAN_TO_COMPLETION
+# <a name="task_state_ran_to_completion-field"></a>TASK_STATE_RAN_TO_COMPLETION campo
 La tarea terminó de ejecutarse correctamente.
 
- **Espacio de nombres:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en *mscorlib.dll*)
 
- Dado que no se puede tener acceso a este miembro interno desde .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
+ Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,7 +33,7 @@ La tarea terminó de ejecutarse correctamente.
 ```
 
 ## <a name="remarks"></a>Observaciones
- Si el campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene <xref:System.Threading.Tasks.Task.Status%2A> este <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>valor, la propiedad devuelve .
+ Si el campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene este valor, la <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)
