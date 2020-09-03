@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes | Documentos de Microsoft
+title: 'IDebugDocumentTextEvents2:: onUpdateDocumentAttributes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 21d0a0f7edb669610e48d16f72ec730b3d204889
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148768"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Notifica al receptor del evento que se han actualizado los atributos del documento.  
+Notifica al receptor el evento de que se han actualizado los atributos del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,11 +40,11 @@ int onUpdateDocumentAttributes( 
   
 #### <a name="parameters"></a>Parámetros  
  `textdocattr`  
- [in] Una combinación de marcas de la [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) enumeración que especifica los atributos del documento actualizados.  
+ de Combinación de marcas de la enumeración [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) que especifica los atributos actualizados del documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)

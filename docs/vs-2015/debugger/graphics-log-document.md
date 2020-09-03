@@ -1,5 +1,5 @@
 ---
-title: Documento de registro de gráficos | Documentos de Microsoft
+title: Documento de registro de gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161234"
 ---
 # <a name="graphics-log-document"></a>Documento de registro de gráficos
@@ -27,7 +27,7 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
   
  Este es el aspecto de un documento de registro de gráficos en el Analizador de gráficos:  
   
- ![Un registro de gráficos que contiene dos fotogramas capturados. ](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
+ ![Registro de gráficos con dos fotogramas capturados.](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
   
 ## <a name="understanding-graphics-log-documents"></a>Comprensión de los documentos de registro de gráficos  
  Si examina un documento de registro de gráficos con el Analizador de gráficos, puede visualizar los efectos de los eventos de Direct3D que se han producido en el destino de presentación durante la captura. Puede aislar regiones del objetivo de presentación que contengan un resultado inesperado. Al seleccionar un píxel de la región afectada, puede utilizar el Diagnóstico de gráficos para inspeccionar el píxel, sus sombreados, los eventos de Direct3D que lo han afectado, la pila de llamadas de la aplicación que ha provocado estos eventos y los objetos de DirectX que los han admitido. Puede utilizar esta información para diagnosticar problemas de presentación de su juego o aplicación.  
@@ -40,12 +40,12 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
   
 #### <a name="to-inspect-a-pixel"></a>Para inspeccionar un píxel  
   
-- En la parte superior del documento de registro de gráficos, seleccione el píxel que desee del resultado objetivo de presentación. Cuando un píxel esté seleccionado, puede utilizar la ventana **Historial de píxeles de gráfico** para ver información detallada sobre el píxel seleccionado. Para obtener más información, consulte [historial de píxeles](../debugger/graphics-pixel-history.md).  
+- En la parte superior del documento de registro de gráficos, seleccione el píxel que desee del resultado objetivo de presentación. Cuando un píxel esté seleccionado, puede utilizar la ventana **Historial de píxeles de gráfico** para ver información detallada sobre el píxel seleccionado. Para obtener más información, vea [Historial de píxeles](../debugger/graphics-pixel-history.md).  
   
 ## <a name="playback-machine"></a>Máquina de reproducción  
  En la esquina superior derecha de la **Lista de fotogramas** también se muestra la **Máquina de reproducción**. La máquina de reproducción es la máquina o dispositivo utilizado para reproducir eventos de gráficos desde un archivo de registro de gráficos durante una sesión de diagnóstico de gráficos posterior. Si utiliza un dispositivo diferente al equipo de desarrollo para reproducir los eventos capturados, puede reproducir de manera más precisa el entorno de ejecución en el que ocurre el problema, por ejemplo, puede utilizar un equipo que tenga un hardware gráfico o unos controladores diferentes de los que utiliza su equipo de desarrollo, u otros tipos de dispositivos, como una tableta Windows basada en ARM o un dispositivo Windows Phone.  
   
- Para obtener información sobre cómo especificar una máquina de reproducción, consulte [Cómo: Cambio de la máquina de reproducción de Diagnóstico de gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Para obtener información sobre cómo especificar un equipo de reproducción, vea [Procedimiento para Cambio de la máquina de reproducción de Diagnóstico de gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="graphics-log-summary-information"></a>Información de resumen del registro de gráficos  
  Cuando un archivo de registro de gráficos es el documento activo, la ventana **Propiedades** muestra información sobre el entorno que ha hospedado la sesión de captura del Diagnóstico de gráficos. Se muestran varias categorías de información.  
@@ -53,7 +53,7 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
  **Información sobre Direct3D**  
  Enumera información sobre las características del hardware y los controladores del adaptador de pantalla que se ha utilizado durante la sesión de captura.  
   
-|Propiedad|DESCRIPCIÓN|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Formato de color de alta densidad XR de 10 bits**|**True** si se admite el formato de color de alta densidad XR de 10 bits; de lo contrario, **False**.|  
 |**DirectCompute CS 4.x**|**True** si se admite Compute Shader 4.0; de lo contrario, **False**.|  
@@ -66,20 +66,20 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
  **Información de la pantalla**  
  Enumera la información sobre el adaptador de pantalla que se ha utilizado durante la sesión de captura.  
   
-|Propiedad|DESCRIPCIÓN|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Descripción**|La cadena de descripción del adaptador de pantalla.|  
 |**Memoria de pantalla**|La cantidad de memoria instalada en el adaptador de gráficos.|  
 |**Nombre del controlador**|El nombre del controlador del adaptador de gráficos.|  
 |**Versión del controlador**|La versión del controlador del adaptador de gráficos.|  
-|**Nombre**|El nombre del adaptador de gráficos.|  
+|**Name**|El nombre del adaptador de gráficos.|  
   
  **Archivo de experimento**  
  Enumera información sobre el archivo de experimento asociado a la sesión de captura.  
   
-|Propiedad|DESCRIPCIÓN|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
-|**Ruta de acceso**|La ruta del archivo .vsglog. **Nota:**  En captura heredada, esta propiedad no se utiliza.|  
+|**Ruta de acceso**|La ruta del archivo .vsglog. **Nota:**  En captura heredada, esta propiedad no se usa.|  
   
  **Información de módulos**  
  Enumera el nombre y la versión de las bibliotecas de vínculos dinámicos (DLL) que la aplicación ha cargado durante la sesión de captura.  
@@ -87,7 +87,7 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
  **Información del sistema**  
  Enumera información sobre el hardware y el sistema operativo que ha hospedado la aplicación durante la sesión de captura.  
   
-|Propiedad|DESCRIPCIÓN|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Memoria**|La cantidad de memoria instalada en el ordenador.|  
 |**Arquitectura de SO**|La arquitectura de la CPU de destino del sistema operativo.|  
@@ -98,7 +98,7 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
  **Aplicación de destino**  
  Enumera información sobre la aplicación relacionada con la sesión de captura.  
   
-|Propiedad|DESCRIPCIÓN|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Fecha/hora de última modificación**|La fecha y hora en la que se creó la aplicación.|  
 |**Ruta de acceso**|La ruta de la aplicación.|  
@@ -108,12 +108,12 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
  **Archivo de registro VSG**  
  Enumera información sobre el documento de registro de gráficos.  
   
-|Propiedad|DESCRIPCIÓN|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Creado por**|El nombre de la aplicación que ha creado el documento de registro de gráficos. Por ejemplo, si la sesión de captura se inició desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (captura manual) el valor de esta propiedad es [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |**Hora de inicio de la sesión**|La fecha y hora en la que se inició la sesión de captura.|  
 |**Size**|El tamaño del documento de registro de gráficos.|  
   
-## <a name="see-also"></a>Vea también  
- [Tutorial: Objetos ausentes debido al sombreado de vértices](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+## <a name="see-also"></a>Consulte también  
+ [Tutorial: objetos ausentes debido al sombreado de vértices](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Tutorial: Depuración de errores de representación debidos al sombreado](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

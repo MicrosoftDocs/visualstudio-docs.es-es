@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId | Microsoft Docs
+title: 'IDebugProgram2:: GetProgramId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19c29b5cec555f9e3ad5157d7b4581777be42c98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148675"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
@@ -40,15 +40,15 @@ int GetProgramId( 
   
 #### <a name="parameters"></a>Parámetros  
  `pguidProgramId`  
- [out] Devuelve el `GUID` para este programa.  
+ enuncia Devuelve el `GUID` para este programa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Un motor de depuración (DE) debe devolver el identificador de programa que se pasaron originalmente para el [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) o [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) métodos. Permite la identificación del programa en el depurador los componentes.  
+ Un motor DE depuración (DE) debe devolver el [identificador del programa](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) que se pasó originalmente a los métodos Attach o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) . Esto permite identificar el programa en todos los componentes del depurador.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [Asociar](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Conectar](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
+ [Adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md)

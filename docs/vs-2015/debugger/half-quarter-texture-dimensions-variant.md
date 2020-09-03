@@ -1,5 +1,5 @@
 ---
-title: Variante de dimensiones de textura mitad / cuarto | Documentos de Microsoft
+title: Mitad/cuarto (Variante de dimensiones de textura) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161152"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>MItad/cuarto (Variante de dimensiones de textura)
@@ -46,6 +46,6 @@ Reduce las dimensiones de la textura en texturas que no son objetivos de present
 ## <a name="example"></a>Ejemplo  
  Esta variante modifica el tamaño de las texturas en el tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas a tamaño completo consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, especialmente para las texturas comprimidas, que requieren una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que cambie el tamaño las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen al reducir o comprimir las texturas.  
   
-## <a name="see-also"></a>Vea también  
- [Variante de generación Mip-map](../debugger/mip-map-generation-variant.md)   
+## <a name="see-also"></a>Consulte también  
+ [MIP: variante de generación de mapa](../debugger/mip-map-generation-variant.md)   
  [Variante de compresión de textura BC](../debugger/bc-texture-compression-variant.md)

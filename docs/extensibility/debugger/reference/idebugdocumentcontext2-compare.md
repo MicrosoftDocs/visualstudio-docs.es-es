@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Compare ? Microsoft Docs
+title: 'IDebugDocumentContext2:: Compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0e46f765c8e4c0e12c3bb9447e0713919fae7b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731884"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
-Compara este contexto de documento con una matriz determinada de contextos de documento.
+Compara este contexto de documento con una matriz de contextos de documento determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,22 +47,22 @@ int Compare( 
 
 ## <a name="parameters"></a>Parámetros
 `compare`\
-[en] Valor de la [enumeración DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) que especifica el tipo de comparación.
+de Un valor de la enumeración [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) que especifica el tipo de comparación.
 
 `rgpDocContextSet`\
-[en] Matriz de [objetos IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que representan los contextos de documento con los que se comparan.
+de Matriz de objetos [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que representan los contextos de documento que se comparan.
 
 `dwDocContextSetLen`\
-[en] La longitud de la matriz de contextos de documento que se van a comparar.
+de Longitud de la matriz de contextos de documento que se va a comparar.
 
 `pdwDocContext`\
-[fuera] Devuelve el índice `rgpDocContextSet` en la matriz del primer contexto de documento que satisface la comparación.
+enuncia Devuelve el índice de la `rgpDocContextSet` matriz del primer contexto del documento que satisface la comparación.
 
 ## <a name="return-value"></a>Valor devuelto
- Devuelve `S_OK` si se ha encontrado una coincidencia. Devuelve `S_FALSE` si no se encontró ninguna coincidencia. De lo contrario, devuelve un código de error.
+ Devuelve `S_OK` si se encontró una coincidencia. Devuelve `S_FALSE` si no se encontró ninguna coincidencia. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objetos que se pasan en la matriz deben implementarse por el mismo motor de depuración que implementa el `IDebugDocumentContext2` objeto que se llama en; de lo contrario, la comparación no es válida.
+ Los objetos [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que se pasan en la matriz deben ser implementados por el mismo motor de depuración que implementa el `IDebugDocumentContext2` objeto al que se llama; de lo contrario, la comparación no es válida.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

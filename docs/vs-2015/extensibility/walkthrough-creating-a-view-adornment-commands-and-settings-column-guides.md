@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Creación de un elemento de gráfico de vista, comandos y configuración (guías de columnas) | Documentos de Microsoft'
+title: 'Tutorial: crear un elemento gráfico de vista, comandos y valores de configuración (guías de columnas) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,53 +9,53 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148842"
 ---
-# <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: Crear un elemento de gráfico de vista, comandos y configuración (guías de columnas)
+# <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: Creación de un elemento de gráfico de vista, comandos y configuración (guías de columnas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede ampliar el editor de texto y código de Visual Studio con los comandos y los efectos de la vista. Este tema muestra cómo empezar a trabajar con una característica de extensión popular, guías de columnas. Guías de columnas son líneas visualmente clara dibujadas en la vista del editor de texto para ayudarle a administrar el código para los anchos de columna específicos. Código específicamente con formato puede ser importante para los ejemplos se incluyen en los documentos, blogs, o los informes de errores.
+Puede extender el editor de texto/código de Visual Studio con los comandos y los efectos de la vista. En este tema se muestra cómo empezar a trabajar con una característica de extensión popular, guías de columnas. Las guías de columnas son líneas claras visualmente dibujadas en la vista del editor de texto para ayudarle a administrar el código en anchos de columna específicos. El código con formato específico puede ser importante para los ejemplos que se incluyen en documentos, entradas de blog o informes de errores.
 
-En este tutorial, aprenderá a:
+En este tutorial realizará lo siguiente:
 
-- Cree un proyecto VSIX
-- Agregar un elemento de gráfico de vista de editor
-- Agregar compatibilidad para guardar y obtener la configuración (donde a draw guías de columnas y su color)
-- Agregar comandos (Agregar o quitar guías de columnas, cambiar su color)
-- Coloque los comandos en el menú de edición y menús contextuales de documento de texto
+- Crear un proyecto VSIX
+- Agregar un elemento gráfico de la vista del editor
+- Agregar compatibilidad para guardar y obtener la configuración (dónde dibujar las guías de columna y su color)
+- Agregar comandos (agregar o quitar guías de columna, cambiar su color)
+- Coloque los comandos en el menú edición y los menús contextuales del documento de texto.
 - Agregar compatibilidad para invocar los comandos desde la ventana de comandos de Visual Studio  
   
-  Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+  Puede probar una versión de la característica guías de columnas con esta[extensión](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)de la galería de Visual Studio.  
   
-  **Tenga en cuenta**: en este tutorial se pegue una gran cantidad de código en unos pocos archivos generados por plantillas de extensión de visual studio, pero pronto en este tutorial hará referencia a una solución completa en GitHub con otros ejemplos de extensión. El código completo es ligeramente diferente porque tiene iconos de comando real en lugar de usar generictemplate iconos.
+  **Nota**: en este tutorial se pega una gran cantidad de código en algunos archivos generados por plantillas de extensión de Visual Studio, pero pronto este tutorial hará referencia a una solución completada en github con otros ejemplos de extensión. El código completado es ligeramente diferente en que tiene iconos de comando reales en lugar de usar iconos de GenericTemplate.
 
 ## <a name="getting-started"></a>Introducción
-A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="setting-up-the-solution"></a>Configuración de la solución
-En primer lugar cree un proyecto VSIX, agregará un elemento de gráfico de vista de editor y, a continuación, agregue un comando (que se agrega un paquete VSPackage para poseer el comando). La arquitectura básica es la siguiente:
+En primer lugar, creará un proyecto de VSIX, agregará un elemento gráfico de la vista del editor y, a continuación, agregará un comando (que agrega un VSPackage para poseer el comando). La arquitectura básica es la siguiente:
 
-- Tiene un agente de escucha de creación de la vista de texto que se crea un `ColumnGuideAdornment` objeto por cada vista. Este objeto de escucha los eventos sobre el cambio de vista o cambio de configuración, guías de recomposición o actualizar una columna según sea necesario.
-- Hay un `GuidesSettingsManager` que controla la lectura y escritura desde el almacenamiento de configuración de Visual Studio. El Administrador de configuración también tiene operaciones para actualizar las configuraciones compatibles con los comandos de usuario (Agregar columna, quite la columna, cambiar el color).
-- Hay un paquete VSIP que es necesario si tiene los comandos de usuario, pero es solo código reutilizable que inicializa el objeto de implementación de comandos.
-- Hay un `ColumnGuideCommands` declarar el objeto que implementa los comandos de usuario y enlaza los controladores de comandos para los comandos en el archivo .vsct.
+- Tiene un agente de escucha de creación de vista de texto que crea un `ColumnGuideAdornment` objeto por vista. Este objeto escucha eventos sobre la vista que cambia o cambia de configuración, actualizando o redibujando las guías de columna según sea necesario.
+- Hay un `GuidesSettingsManager` que controla la lectura y la escritura desde el almacenamiento de configuración de Visual Studio. El administrador de configuración también tiene operaciones para actualizar los valores de configuración que admiten los comandos de usuario (agregar columna, quitar columna, cambiar color).
+- Hay un paquete VSIP que es necesario si tiene comandos de usuario, pero solo es reutilizable código que inicializa el objeto de implementación de comandos.
+- Hay un `ColumnGuideCommands` objeto que implementa los comandos de usuario y enlaza los controladores de comandos para los comandos declarados en el archivo. Vsct.
   
-  **VSIX**. Use **archivo &#124; nuevo...** comando para crear un proyecto. Elija el nodo extensibilidad en C# en el panel de navegación izquierdo y elija **proyecto VSIX** en el panel derecho. Escriba el nombre ColumnGuides y elija **Aceptar** para crear el proyecto.
+  **VSIX**. Usar **archivo &#124; nuevo...** para crear un proyecto. Elija el nodo extensibilidad en C# en el panel de navegación izquierdo y elija **Proyecto VSIX** en el panel derecho. Escriba el nombre ColumnGuides y elija **Aceptar** para crear el proyecto.
   
-  **Ver elemento gráfico**. Presione el botón derecho del puntero en el nodo del proyecto en el Explorador de soluciones. Elija la **agregar &#124; nuevo elemento...** comando para agregar un nuevo elemento de elemento gráfico de vista. Elija **extensibilidad &#124; Editor** en el panel de navegación izquierdo y elija **elemento gráfico de área de visualización de Editor** en el panel derecho. Escriba el nombre ColumnGuideAdornment como el nombre del elemento y elija **agregar** para agregarlo.
+  **Muestra el elemento gráfico**. Presione el botón derecho del mouse en el nodo del proyecto en el Explorador de soluciones. Elija la opción **agregar &#124; nuevo elemento..** . comando para agregar un nuevo elemento de gráfico de vista. Elija **extensibilidad &#124; editor** en el panel de navegación izquierdo y elija **elemento gráfico** de la ventanilla del editor en el panel derecho. Escriba el nombre ColumnGuideAdornment como el nombre del elemento y elija **Agregar** para agregarlo.
   
-  Puede ver que esta plantilla de elemento agregado dos archivos al proyecto (así como las referencias y así sucesivamente): ColumnGuideAdornment.cs y ColumnGuideAdornmentTextViewCreationListener.cs. Las plantillas de dibujar un rectángulo de color púrpura en la vista. A continuación se cambia un par de líneas en el agente de escucha de creación de vista y reemplace el contenido de ColumnGuideAdornment.cs.
+  Puede ver esta plantilla de elemento agregando dos archivos al proyecto (así como referencias, etc.): ColumnGuideAdornment.cs y ColumnGuideAdornmentTextViewCreationListener.cs. Las plantillas simplemente dibujan un rectángulo púrpura en la vista. A continuación, cambiará un par de líneas en el agente de escucha de creación de vistas y reemplazará el contenido de ColumnGuideAdornment.cs.
   
-  **Comandos**. Presione el botón derecho del puntero en el nodo del proyecto en el Explorador de soluciones. Elija la **agregar &#124; nuevo elemento...** comando para agregar un nuevo elemento de elemento gráfico de vista. Elija **extensibilidad &#124; VSPackage** en el panel de navegación izquierdo y elija **comando personalizado** en el panel derecho. Escriba el nombre ColumnGuideCommands como el nombre del elemento y elija **agregar** para agregarlo. Además de varias referencias, agregar los comandos y el paquete agregado ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs y ColumnGuideCommandsPackage.vsct. A continuación, se reemplazará el contenido de los archivos primeros y últimos para definir e implementar los comandos.
+  **Comandos**. Presione el botón derecho del mouse en el nodo del proyecto en el Explorador de soluciones. Elija la opción **agregar &#124; nuevo elemento..** . comando para agregar un nuevo elemento de gráfico de vista. Elija **extensibilidad &#124; VSPackage** en el panel de navegación izquierdo y elija **comando personalizado** en el panel derecho. Escriba el nombre ColumnGuideCommands como el nombre del elemento y elija **Agregar** para agregarlo. Además de varias referencias, agregar los comandos y el paquete agregados ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs y ColumnGuideCommandsPackage. Vsct. A continuación, reemplazará el contenido de los archivos primero y último para definir e implementar los comandos.
 
-## <a name="setting-up-the-text-view-creation-listener"></a>Configurar el agente de escucha de creación de la vista de texto
-Abra ColumnGuideAdornmentTextViewCreationListener.cs en el editor. Este código implementa un controlador para cada vez que Visual Studio crea las vistas de texto. Hay atributos que controlan cuándo se llama al controlador según las características de la vista.
+## <a name="setting-up-the-text-view-creation-listener"></a>Configuración del agente de escucha de creación de la vista de texto
+Abra ColumnGuideAdornmentTextViewCreationListener.cs en el editor. Este código implementa un controlador para cada vez que Visual Studio crea vistas de texto. Hay atributos que controlan Cuándo se llama al controlador en función de las características de la vista.
 
-El código también debe declarar un nivel del elemento gráfico. Cuando el editor de vistas de las actualizaciones, obtiene las capas del elemento gráfico de la vista y de obtiene los elementos del elemento gráfico. Puede declarar la ordenación de la capa en relación con otros usuarios con atributos. Reemplace la línea siguiente:
+El código también debe declarar una capa de elemento gráfico. Cuando el editor actualiza las vistas, obtiene las capas de elemento gráfico de la vista y de que obtiene los elementos de elemento gráfico. Puede declarar el orden de la capa en relación con otros con atributos. Reemplace la línea siguiente:
 
 ```csharp
 [Order(After = PredefinedAdornmentLayers.Caret)]
@@ -68,10 +68,10 @@ El código también debe declarar un nivel del elemento gráfico. Cuando el edit
 [TextViewRole(PredefinedTextViewRoles.Document)]
 ```
 
-Es la línea que se ha reemplazado en un grupo de atributos que declaran un nivel del elemento gráfico.  La primera línea ha cambiado a solo los cambios que deben aparecer las líneas de guía de columna. Dibujar las líneas de "antes" significa que el texto en la vista que aparecen detrás de o por debajo del texto. La segunda línea declara que los elementos gráficos de guía de columna son aplicables a las entidades de texto que se ajusten a la noción de un documento, pero podría declarar el elemento de gráfico, por ejemplo, solo trabajo de texto editable. Puede encontrar más información en [servicio de lenguaje y puntos de extensión del Editor](../extensibility/language-service-and-editor-extension-points.md)
+La línea que ha reemplazado se encuentra en un grupo de atributos que declaran una capa de elemento gráfico.  La primera línea que cambió solo cambia cuando aparecen las líneas de la guía de columnas. Al dibujar las líneas "antes", el texto de la vista significa que aparecen detrás o debajo del texto. La segunda línea declara que los elementos gráficos de la guía de columna se aplican a las entidades de texto que se ajustan a la noción de un documento, pero podría declarar el elemento gráfico, por ejemplo, para que solo funcione para texto modificable. Hay más información en los [puntos de extensión del servicio de lenguaje y del editor](../extensibility/language-service-and-editor-extension-points.md)
 
-## <a name="implementing-the-settings-manager"></a>Implementar el Administrador de configuración
-Reemplace el contenido de la GuidesSettingsManager.cs con el código siguiente (se explica más adelante):
+## <a name="implementing-the-settings-manager"></a>Implementación del administrador de configuración
+Reemplace el contenido de GuidesSettingsManager.cs por el código siguiente (que se explica a continuación):
 
 ```csharp
 using Microsoft.VisualStudio.Settings;
@@ -322,32 +322,32 @@ namespace ColumnGuides
 
 ```
 
-La mayoría de este código simplemente crea y analiza el formato de configuración: "RGB (\<int >,\<int >,\<int >) \<int >, \<int >,...". Los enteros al final son las columnas basadas en uno donde desee guías de columnas. La extensión de las guías de columna captura a toda su configuración en una cadena de valor de configuración único.
+La mayor parte de este código solo crea y analiza el formato de configuración: "RGB ( \<int> , \<int> , \<int> ) \<int> , \<int> ,...". Los enteros del final son las columnas basadas en uno donde desea guías de columna. La extensión de guías de columna captura toda su configuración en una sola cadena de valor de configuración.
 
-Hay algunas partes del código que conviene destacar. La siguiente línea de código obtiene el contenedor administrado de Visual Studio para el almacenamiento de configuración. En su mayor parte, esto abstrae sobre el registro de Windows, pero esta API es independiente del mecanismo de almacenamiento.
+Hay algunas partes del código que merece la pena resaltar. La siguiente línea de código obtiene el contenedor administrado de Visual Studio para el almacenamiento de configuración. En su mayor parte, esto abstrae sobre el registro de Windows, pero esta API es independiente del mecanismo de almacenamiento.
 
 ```csharp
 internal static SettingsManager VsManagedSettingsManager =
     new ShellSettingsManager(ServiceProvider.GlobalProvider);
 ```
 
- El almacenamiento de configuración de Visual Studio usa un identificador de categoría y un identificador de configuración para identificar de forma exclusiva toda la configuración:
+ El almacenamiento de configuración de Visual Studio usa un identificador de categoría y un identificador de configuración para identificar de forma exclusiva todas las opciones de configuración:
 
 ```csharp
 private const string _collectionSettingsName = "Text Editor";
 private const string _settingName = "Guides";
 ```
 
-No es necesario usar `“Text Editor”` como la categoría de nombre y se puede elegir que desee.
+No tiene que usar `“Text Editor”` como nombre de categoría y puede elegir cualquier cosa que desee.
 
-El primer algunas funciones son los puntos de entrada para cambiar la configuración. Comprueban las restricciones de alto nivel como el número máximo de guías permitido. A continuación, llaman a `WriteSettings` que crea una cadena de configuración y establece la propiedad `GuideLinesConfiguration`. Al establecer esta propiedad, guarda el valor de configuración en el almacén de configuración de Visual Studio y se activa el `SettingsChanged` eventos para actualizar todos los `ColumnGuideAdornment` objetos, cada uno asociado con una vista de texto.
+Las primeras funciones son los puntos de entrada para cambiar la configuración. Comprueban las restricciones de alto nivel como el número máximo de guías permitidas. A continuación, llaman a `WriteSettings` que compone una cadena de configuración y establece la propiedad `GuideLinesConfiguration` . Al establecer esta propiedad, se guarda el valor de configuración en el almacén de configuración de Visual Studio y se desencadena el `SettingsChanged` evento para actualizar todos los `ColumnGuideAdornment` objetos, cada uno asociado a una vista de texto.
 
-Hay un par de funciones de punto de entrada, como `CanAddGuideline`, que se usan para implementar los comandos que cambian la configuración. Cuando Visual Studio muestra los menús, consulta las implementaciones de comando para ver si el comando está habilitado actualmente, ¿cuál es su nombre, etcetera. A continuación verá cómo enlazar estos puntos de entrada para las implementaciones de comando. Consulte [ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md) para obtener más información acerca de los comandos.
+Hay un par de funciones de punto de entrada, como `CanAddGuideline` , que se usan para implementar comandos que cambian la configuración. Cuando Visual Studio muestra menús, consulta las implementaciones de comandos para ver si el comando está habilitado actualmente, cuál es su nombre, etc. A continuación, verá cómo enlazar estos puntos de entrada para las implementaciones de comandos. Consulte [extensión de menús y comandos](../extensibility/extending-menus-and-commands.md) para obtener más información sobre los comandos.
 
-## <a name="implementing-the-columnguideadornment-class"></a>Implementación de la clase ColumnGuideAdornment
-El `ColumnGuideAdornment` se crea una instancia de clase para cada vista de texto que puede tener los elementos gráficos. Esta clase realiza escuchas de eventos sobre el cambio de vista o guías de recomposición o actualizar una columna de cambio de configuración, según sea necesario.
+## <a name="implementing-the-columnguideadornment-class"></a>Implementar la clase ColumnGuideAdornment
+`ColumnGuideAdornment`Se crea una instancia de la clase para cada vista de texto que puede tener elementos gráficos. Esta clase realiza escuchas para los eventos sobre el cambio de la vista o el cambio de configuración, la actualización o la redibujo de las guías de columna según sea necesario.
 
-Reemplace el contenido de la ColumnGuideAdornment.cs con el código siguiente (se explica más adelante):
+Reemplace el contenido de ColumnGuideAdornment.cs por el código siguiente (que se explica a continuación):
 
 ```csharp
 using System;
@@ -489,33 +489,33 @@ namespace ColumnGuides
 }
 ```
 
-Las instancias de esta clase retener asociado <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> y una lista de `Line` dibujados en la vista de objetos.
+Las instancias de esta clase guardan en el asociado <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> y una lista de `Line` objetos dibujados en la vista.
 
-El constructor (llamado desde `ColumnGuideAdornmentTextViewCreationListener` cuando Visual Studio crea nuevas vistas) crea la Guía de la columna `Line` objetos. El constructor también agrega controladores para el `SettingsChanged` eventos (definido en `GuidesSettingsManager`) y los eventos de vista `LayoutChanged` y `Closed`.
+El constructor (al que se llama `ColumnGuideAdornmentTextViewCreationListener` cuando Visual Studio crea nuevas vistas) crea los objetos de guía de columna `Line` . El constructor también agrega controladores para el `SettingsChanged` evento (definido en `GuidesSettingsManager` ) y los eventos de vista `LayoutChanged` y `Closed` .
 
-El `LayoutChanged` desencadena el evento debido a varios tipos de cambios en la vista, incluso cuando Visual Studio crea la vista. El `OnViewLayoutChanged` llamadas del controlador `AddGuidelinesToAdornmentLayer` para ejecutar. El código en `OnViewLayoutChanged` determina si es necesario actualizar las posiciones de línea según los cambios, como los cambios de tamaño de fuente, vista medianiles, desplazamiento horizontal y así sucesivamente. El código en `UpdatePositions` hace que las líneas de guía dibujar entre caracteres o justo después de la columna de texto que se encuentra en el desplazamiento de caracteres especificado en la línea de texto.
+El `LayoutChanged` evento se desencadena debido a varios tipos de cambios en la vista, incluso cuando Visual Studio crea la vista. El `OnViewLayoutChanged` controlador llama `AddGuidelinesToAdornmentLayer` a para ejecutar. El código de `OnViewLayoutChanged` determina si tiene que actualizar las posiciones de línea en función de los cambios, como los cambios de tamaño de fuente, los márgenes de visualización, el desplazamiento horizontal, etc. El código de `UpdatePositions` hace que las líneas guía se dibujen entre caracteres o justo después de la columna de texto que está en el desplazamiento de caracteres especificado en la línea de texto.
 
-Cada vez que cambie la configuración de la `SettingsChanged` función vuelve a crear todos los `Line` objetos con los valores nuevos. Después de establecer las posiciones de línea, el código quita todos los anteriores `Line` objetos desde el `ColumnGuideAdornment` nivel del elemento gráfico y agrega los nuevos.
+Siempre que la configuración cambie la `SettingsChanged` función, se vuelve a crear todos los `Line` objetos con cualquier valor que sea la nueva configuración. Después de establecer las posiciones de línea, el código quita todos los `Line` objetos anteriores de la capa de elementos `ColumnGuideAdornment` gráficos y agrega los nuevos.
 
-## <a name="defining-the-commands-menus-and-menu-placements"></a>Definir las ubicaciones de menús, menús y comandos
-Puede haber mucha para declarar los menús y comandos, colocación de grupos de menús o comandos en varios otros menús y enlazar controladores de comandos. Este tutorial resalta cómo funcionan los comandos de esta extensión, pero para obtener información más detallada, vea [ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md).
+## <a name="defining-the-commands-menus-and-menu-placements"></a>Definir los comandos, menús y lugares del menú
+Puede haber mucho que declarar comandos y menús, colocar grupos de comandos o menús en otros menús y enlazar controladores de comandos. En este tutorial se resalta cómo funcionan los comandos en esta extensión, pero para obtener información más detallada, consulte [extensión de menús y comandos](../extensibility/extending-menus-and-commands.md).
 
 ### <a name="introduction-to-the-code"></a>Introducción al código
-La extensión de guías de columnas muestra la declaración de un grupo de comandos que forman un conjunto (Agregar columna, quitar la columna, cambiar el color de línea) y, a continuación, colocar ese grupo en un submenú del menú contextual del editor. La extensión de guías de columnas también agrega los comandos a los principales **editar** menú pero manteniéndolas invisible, tratado como un patrón común que aparece a continuación.
+La extensión de guías de columnas muestra cómo declarar un grupo de comandos que pertenecen a la vez (agregar columna, quitar columna, cambiar color de línea) y, a continuación, colocar ese grupo en un submenú del menú contextual del editor. La extensión de guías de columnas también agrega los comandos al menú **edición** principal pero los mantiene invisibles, que se describen a continuación como un patrón común.
 
-Hay tres partes para la implementación de comandos: ColumnGuideCommandsPackage.cs, ColumnGuideCommandsPackage.vsct y ColumnGuideCommands.cs. El código generado por las plantillas coloca un comando en el **herramientas** menú que aparece un cuadro de diálogo como la implementación. Puede mirar cómo se implementa en los archivos de ColumnGuideCommands.cs y .vsct, ya que es bastante sencillo. Reemplazará el código de estos archivos siguientes.
+Hay tres partes en la implementación de comandos: ColumnGuideCommandsPackage.cs, ColumnGuideCommandsPackage. Vsct y ColumnGuideCommands.cs. El código generado por las plantillas coloca un comando en el menú **herramientas** que abre un cuadro de diálogo como implementación. Puede ver cómo se implementa en los archivos. Vsct y ColumnGuideCommands.cs, ya que es bastante sencillo. Reemplace el código de estos archivos a continuación.
 
-El código de paquete es declaraciones reutilizable que son necesarias para Visual Studio detectar que la extensión ofrece comandos y dónde colocar los comandos. Cuando se inicializa el paquete, crear una instancia de la clase de implementación de comandos. Vea los comandos de vínculo anterior para obtener más información acerca de los paquetes relacionados con los comandos.
+El código del paquete es una declaración reutilizable que es necesaria para que Visual Studio detecte que la extensión ofrece comandos y dónde colocar los comandos. Cuando se inicializa el paquete, crea una instancia de la clase de implementación de comandos. Vea el vínculo comandos anterior para obtener más información sobre los paquetes relacionados con los comandos.
 
-### <a name="a-common-commands-pattern"></a>Un patrón común de comandos
-Los comandos de la extensión de guías de columnas son un ejemplo de un patrón muy común en Visual Studio. Colocar comandos relacionados en un grupo, y coloque ese grupo en un menú principal, a menudo con "`<CommandFlag>CommandWellOnly</CommandFlag>`" establecido para que el comando sea invisible. Colocación de comandos en los menús principales (como **editar**) les nombres interesantes de este modo (como **Edit.AddColumnGuide**) que son útiles para buscar comandos al volver a asignar los enlaces de teclado en  **Opciones de herramientas** y obtener la finalización al invocar comandos desde el **ventana de comandos**.
+### <a name="a-common-commands-pattern"></a>Patrón de comandos comunes
+Los comandos de la extensión de las guías de columnas son un ejemplo de un patrón muy común en Visual Studio. Los comandos relacionados se colocan en un grupo y el grupo se coloca en un menú principal, a menudo con " `<CommandFlag>CommandWellOnly</CommandFlag>` " establecido para que el comando sea invisible. La colocación de comandos en los menús principales (como **Editar**) de esta manera les proporciona nombres bonitos (como **Edit. AddColumnGuide**), que son útiles para buscar comandos al volver a asignar enlaces de teclado en **Opciones de herramientas** y para obtener una finalización al invocar comandos desde la ventana de **comandos**.
 
-A continuación, agregue el grupo de comandos a menús contextuales o sub donde se espera al usuario que utilice los comandos de menús. Visual Studio trata `CommandWellOnly` como una marca de invisibilidad de menús principales solo. Cuando se coloca el mismo grupo de comandos en un menú contextual o sub, los comandos son visibles.
+A continuación, agregue el grupo de comandos a los menús contextuales o submenús donde espera que el usuario Use los comandos. Visual Studio trata `CommandWellOnly` como una marca de invisibilidad solo para los menús principales. Cuando se coloca el mismo grupo de comandos en un menú contextual o en un submenú, los comandos están visibles.
 
-Como parte del patrón común, la extensión de guías de columnas crea un segundo grupo que contiene un submenú único. El submenú a su vez contiene el primer grupo con los comandos de la Guía de cuatro columnas. El segundo grupo que contiene el submenú es el recurso reutilizable que se coloca en varios menús contextuales, que coloca un submenú en los menús contextuales.
+Como parte del patrón común, la extensión de las guías de columna crea un segundo grupo que contiene un solo submenú. El submenú a su vez contiene el primer grupo con los comandos de la guía de cuatro columnas. El segundo grupo que contiene el submenú es el activo reutilizable que se coloca en varios menús contextuales, que coloca un submenú en esos menús contextuales.
 
-### <a name="the-vsct-file"></a>El archivo .vsct
-El archivo .vsct declara los comandos y donde vaya, junto con los iconos y así sucesivamente. Reemplace el contenido del archivo .vsct con el código siguiente (se explica más adelante):
+### <a name="the-vsct-file"></a>El archivo. Vsct
+El archivo. Vsct declara los comandos y dónde van, junto con los iconos, etc. Reemplace el contenido del archivo. Vsct por el código siguiente (que se explica a continuación):
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -751,7 +751,7 @@ El archivo .vsct declara los comandos y donde vaya, junto con los iconos y así 
 
 ```
 
-**GUID**. Para que Visual Studio buscar los controladores de comandos e invocarlos, deberá asegurarse de que el paquete que GUID declarado en el archivo ColumnGuideCommandsPackage.cs (generado desde la plantilla de elemento de proyecto) coincide con el paquete que GUID declarado en el archivo .vsct (copiado desde arriba ). Si volver a usar este código de ejemplo, debe asegurarse de que tiene un GUID diferente para que los no entren en conflicto con cualquier persona que puede haber copiado este código.
+**GUID**. Para que Visual Studio encuentre los controladores de comandos e invocarlos, debe asegurarse de que el GUID del paquete declarado en el archivo ColumnGuideCommandsPackage.cs (generado a partir de la plantilla de elemento de proyecto) coincide con el GUID del paquete declarado en el archivo. Vsct (copiado desde arriba). Si vuelve a usar este código de ejemplo, debe asegurarse de que tiene un GUID diferente para que no entre en conflicto con nadie que pueda haber copiado este código.
 
 Busque esta línea en ColumnGuideCommandsPackage.cs y copie el GUID entre comillas:
 
@@ -759,14 +759,14 @@ Busque esta línea en ColumnGuideCommandsPackage.cs y copie el GUID entre comill
 public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 ```
 
-A continuación, pegue el GUID en el archivo .vsct para que tenga la siguiente línea su `Symbols` declaraciones:
+A continuación, pegue el GUID en el archivo. Vsct para que tenga la siguiente línea en las `Symbols` declaraciones:
 
 ```xml
 <GuidSymbol name="guidColumnGuideCommandsPkg" 
             value="{ef726849-5447-4f73-8de5-01b9e930f7cd}" />
 ```
 
-Establece el GUID del comando y el archivo de imagen de mapa de bits debe ser único para sus extensiones demasiado:
+Los GUID para el conjunto de comandos y el archivo de imagen de mapa de bits deben ser únicos para las extensiones:
 
 ```xml
 <GuidSymbol name="guidColumnGuidesCommandSet"
@@ -774,36 +774,36 @@ Establece el GUID del comando y el archivo de imagen de mapa de bits debe ser ú
 <GuidSymbol name="guidImages" value="{2C99F852-587C-43AF-AA2D-F605DE2E46EF}">
 ```
 
-Sin embargo, no es necesario cambiar el conjunto de comandos y los GUID de la imagen en este tutorial para obtener el código funcione de mapa de bits. El comando set GUID debe coincidir con la declaración en el archivo ColumnGuideCommands.cs, pero se reemplazará el contenido de ese archivo demasiado; por lo tanto, hará coincidir los GUID.
+Sin embargo, no es necesario cambiar el conjunto de comandos y los GUID de imagen de mapa de bits en este tutorial para que el código funcione. El GUID del conjunto de comandos debe coincidir con la declaración del archivo ColumnGuideCommands.cs, pero también reemplazará el contenido de ese archivo; por lo tanto, los GUID coincidirán.
 
-El resto de GUID en el archivo .vsct identifica menús ya existentes a la que se agregan los comandos de la Guía de columna, por lo que nunca cambian.
+Otros GUID del archivo. Vsct identifican los menús previamente existentes a los que se agregan los comandos de la guía de columna, por lo que nunca cambian.
 
-**Las secciones de archivos**. Archivo .vsct tiene tres secciones externas: comandos, ubicaciones y símbolos. La sección de comandos define los grupos de comandos, menús, botones o elementos de menú y los mapas de bits para los iconos. La sección ubicaciones declara dónde grupos en los menús o ubicaciones adicionales en los menús existentes previamente. La sección symbols declara los identificadores utilizados en otro lugar en el archivo .vsct, lo que hace que el código de vsct más legible que tener GUID y los números hexadecimales en todas partes.
+**Secciones de archivo**. El. Vsct tiene tres secciones exteriores: comandos, ubicaciones y símbolos. La sección comandos define grupos de comandos, menús, botones o elementos de menú, y mapas de bits para iconos. La sección de ubicaciones declara dónde se ubican los grupos en los menús o ubicaciones adicionales en los menús ya existentes. En la sección Symbols se declaran los identificadores que se usan en cualquier parte del archivo. Vsct, lo que hace que el código. Vsct sea más legible que tener GUID y números hexadecimales en todas partes.
 
-**Sección de los comandos, las definiciones de grupos**. La sección de comandos primero define los grupos de comandos. Los grupos de comandos son comandos que aparecen en los menús con pequeñas líneas gris separa los grupos. Un grupo también puede rellenar un submenú completo, como en este ejemplo, y no ve la separación en este caso de las líneas de color gris. Los archivos .vsct declara dos grupos, el `GuidesMenuItemsGroup` que está asociado a la `IDM_VS_MENU_EDIT` (principal **editar** menú) y la `GuidesContextMenuGroup` que está asociado al `IDM_VS_CTXT_CODEWIN` (menú de contextual del editor de código).
+**Sección de comandos, definiciones de grupos**. En primer lugar, la sección Commands define grupos de comandos. Los grupos de comandos son comandos que aparecen en los menús con líneas grises pequeñas que separan los grupos. Un grupo también puede rellenar todo un submenú, como en este ejemplo, y no ve las líneas de separación de grises en este caso. Los archivos. Vsct declaran dos grupos, el elemento primario del elemento `GuidesMenuItemsGroup` `IDM_VS_MENU_EDIT` (el menú de **edición** principal) y el elemento `GuidesContextMenuGroup` primario del elemento `IDM_VS_CTXT_CODEWIN` (el menú contextual del editor de código).
 
-La segunda declaración de grupo tiene un `0x0600` prioridad:
+La segunda declaración de grupo tiene una `0x0600` prioridad:
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesContextMenuGroup"
              priority="0x0600">
 ```
 
-La idea es colocar la columna de guías de submenú al final de cualquier menú contextual a la que se agregue el grupo de menús de sub. Sin embargo, no se debe suponer que conoce mejor y forzar el submenú que siempre sea último mediante el uso de una prioridad de `0xFFFF`. Tendrá que experimentar con este número para ver dónde reside su submenú en los menús contextuales donde se coloca. En este caso `0x0600` es suficientemente alto como para colocarla al final de los menús lo podemos ver, pero deja espacio para otra persona para diseñar su extensión a ser inferior a la extensión de las guías de columna si así lo desea.
+La idea es colocar el submenú guías de columnas al final de cualquier menú contextual en el que se agregue el grupo de submenú. Sin embargo, no debería suponer que sabe mejor y forzar que el submenú siempre sea el último mediante el uso de una prioridad de `0xFFFF` . Tiene que experimentar con este número para ver dónde se encuentra el submenú en los menús contextuales donde se coloca. En este caso `0x0600` , es lo suficientemente alto como para colocarlo al final de los menús en la medida de lo posible, pero deja espacio para que otra persona diseñe su extensión para que sea menor que la extensión de las guías de columnas, si es conveniente.
 
-**Sección de definición del menú de comandos**. A continuación la sección de comandos define el submenú `GuidesSubMenu`, relacionada para el `GuidesContextMenuGroup`. El `GuidesContextMenuGroup` es el grupo se agrega a todos los menús de contexto pertinente. En la sección de ubicaciones, el código coloca el grupo con los comandos de la Guía de cuatro columnas en este elemento de submenú.
+**Sección de comandos, definición de menú**. A continuación, la sección de comandos define el submenú `GuidesSubMenu` , primario y secundario `GuidesContextMenuGroup` . `GuidesContextMenuGroup`Es el grupo que se agrega a todos los menús contextuales pertinentes. En la sección de ubicaciones, el código coloca el grupo con los comandos de la guía de cuatro columnas en este submenú.
 
-**Sección de los comandos, botones definiciones**. La sección de comandos, a continuación, define los elementos de menú o botones de la columna de cuatro guías de comandos. `CommandWellOnly`, se ha explicado anteriormente, significa que los comandos no están visibles cuando se coloca en un menú principal. Las declaraciones de dos del elemento de menú de botones (Guía de agregar y quitar guía) también tienen un `AllowParams` marca:
+**Sección de comandos, definiciones de botones**. A continuación, la sección comandos define los elementos de menú o botones que son los comandos de cuatro guías de columna. `CommandWellOnly`, descrito anteriormente, significa que los comandos son invisibles cuando se colocan en un menú principal. Dos de las declaraciones de botón del elemento de menú (agregar guía y quitar guía) también tienen una `AllowParams` marca:
 
 ```xml
 <CommandFlag>AllowParams</CommandFlag>
 ```
 
-Esta marca habilita, junto con tener ubicaciones del menú principal, el comando para recibir los argumentos cuando Visual Studio invoca el controlador de comandos. Si el usuario invoca el comando desde la ventana de comandos, el argumento se pasa al controlador de comando en el evento argumentos.
+Esta marca habilita, junto con los lugares del menú principal, el comando para recibir argumentos cuando Visual Studio invoca el controlador de comandos. Si el usuario invoca el comando desde la ventana comandos, el argumento se pasa al controlador de comandos en los argumentos del evento.
 
-**Comando secciones, las definiciones de los mapas de bits**. Por último, la sección comandos declara los mapas de bits o iconos que se usan para los comandos. Se trata de una declaración simple que identifica el recurso del proyecto y se enumera los índices basados en uno de los iconos de uso. La sección symbols del archivo .vsct declara los valores de los identificadores usados como los índices. Este tutorial utiliza la Tira de mapa de bits proporcionada con la plantilla de elemento de comando personalizado agregada al proyecto.
+**Secciones de comandos, definiciones de mapas de bits**. Por último, la sección de comandos declara los mapas de bits o los iconos que se usan para los comandos. Se trata de una declaración simple que identifica el recurso del proyecto y muestra los índices basados en uno de los iconos usados. La sección Symbols del archivo. Vsct declara los valores de los identificadores utilizados como índices. En este tutorial se usa la franja de mapa de bits que se proporciona con la plantilla de elemento de comando personalizada agregada al proyecto.
 
-**Sección de ubicaciones**. Después de los comandos de sección es la sección de ubicaciones. La primera de ellas es que el código agrega el primer grupo que explicamos anteriormente que contiene a la Guía de la cuatro columna comandos en el submenú dónde aparecen los comandos:
+**Sección de ubicaciones**. Una vez que la sección de comandos es la sección de ubicaciones. El primero es donde el código agrega el primer grupo descrito anteriormente que contiene los comandos de la guía de cuatro columnas al submenú en el que aparecen los comandos:
 
 ```xml
 <CommandPlacement guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -812,14 +812,14 @@ Esta marca habilita, junto con tener ubicaciones del menú principal, el comando
 </CommandPlacement>
 ```
 
-Todas las demás ubicaciones de agregan el `GuidesContextMenuGroup` (que contiene el `GuidesSubMenu`) a otros menús contextuales del editor. Cuando el código declara los `GuidesContextMenuGroup`, era un elemento primario en el menú contextual del editor de código. Que es el motivo es que no vea una selección de ubicación para el menú contextual del editor de código.
+Todas las demás ubicaciones agregan `GuidesContextMenuGroup` (que contiene `GuidesSubMenu` ) a otros menús contextuales del editor. Cuando el código declara `GuidesContextMenuGroup` , era el elemento primario del menú contextual del editor de código. Esa es la razón por la que no ve una ubicación para el menú contextual del editor de código.
 
-**Símbolos sección**. Como se indicó anteriormente, la sección symbols declara los identificadores utilizados en otro lugar en el archivo .vsct, lo que hace que el código de vsct más legible que tener GUID y los números hexadecimales en todas partes. Los puntos importantes en esta sección son que el GUID del paquete debe coincidir con la declaración de la clase de paquete y el conjunto de comandos que GUID debe coincidir con la declaración de la clase de implementación del comando.
+**Sección de símbolos**. Como se indicó anteriormente, la sección de símbolos declara los identificadores que se usan en otro lugar del archivo. Vsct, lo que hace que el código. Vsct sea más legible que los GUID y los números hexadecimales en todas partes. Los puntos importantes de esta sección son que el GUID del paquete debe estar de acuerdo con la declaración en la clase de paquete y el GUID del conjunto de comandos debe estar de acuerdo con la declaración en la clase de implementación de comandos.
 
-## <a name="implementing-the-commands"></a>Implementación de los comandos
-El archivo ColumnGuideCommands.cs implementa los comandos y enlaza los controladores. Cuando Visual Studio carga el paquete y lo inicializa, el paquete a su vez llama a `Initialize` en la clase de implementación de comandos. La inicialización de comandos simplemente crea una instancia de la clase, y el constructor enlaza todos los controladores de comandos.
+## <a name="implementing-the-commands"></a>Implementar los comandos
+El archivo ColumnGuideCommands.cs implementa los comandos y enlaza los controladores. Cuando Visual Studio carga el paquete y lo inicializa, el paquete a su vez llama a `Initialize` en la clase de implementación de comandos. La inicialización de los comandos simplemente crea instancias de la clase y el constructor enlaza todos los controladores de comandos.
 
-Reemplace el contenido del archivo ColumnGuideCommands.cs con el código siguiente (se explica más adelante):
+Reemplace el contenido del archivo ColumnGuideCommands.cs por el código siguiente (que se explica a continuación):
 
 ```csharp
 using System;
@@ -1160,11 +1160,11 @@ namespace ColumnGuides
 
 ```
 
-**Corregir referencias**. Falta una referencia en este momento. Presione el botón derecho del puntero en el nodo referencias en el Explorador de soluciones. Elija el **agregar...** . El **Agregar referencia** cuadro de diálogo tiene un cuadro de búsqueda en la esquina superior derecha. Escriba "editor" (sin las comillas dobles). Elija la **Microsoft.VisualStudio.Editor** elemento (que debe seleccionar la casilla a la izquierda del elemento, no solo tiene que seleccionar el elemento) y elija **Aceptar** para agregar la referencia.
+**Corrija las referencias**. Falta una referencia en este momento. Presione el botón derecho del puntero en el nodo referencias en el Explorador de soluciones. Elija la opción **Agregar..** . . El cuadro de diálogo **Agregar referencia** tiene un cuadro de búsqueda en la esquina superior derecha. Escriba "Editor" (sin las comillas dobles). Elija el elemento **Microsoft. VisualStudio. Editor** (debe activar la casilla situada a la izquierda del elemento, no solo Seleccione el elemento) y elija **Aceptar** para agregar la referencia.
 
-**Inicialización**. Cuando se inicializa la clase de paquete, llama a `Initialize` en la clase de implementación de comandos. El `ColumnGuideCommands` crea una instancia de la clase de inicialización y guarda la instancia de clase y la referencia de paquete en los miembros de clase.
+**Inicialización**. Cuando se inicializa la clase de paquete, llama a `Initialize` en la clase de implementación de comandos. La `ColumnGuideCommands` inicialización crea una instancia de la clase y guarda la instancia de clase y la referencia de paquete en los miembros de clase.
 
-Echemos un vistazo a uno de los comandos controlador gancho SAI (UPS) desde el constructor de clase:
+Echemos un vistazo a uno de los enlaces del controlador de comandos del constructor de clase:
 
 ```csharp
 _addGuidelineCommand =
@@ -1175,17 +1175,17 @@ _addGuidelineCommand =
 
 ```
 
-Crear un `OleMenuCommand`. Visual Studio usa el sistema de comandos de Microsoft Office. Los argumentos claves al crear instancias de un OleMenuCommand es la función que implementa el comando (`AddColumnGuideExecuted`), la función que se va a llamar cuando Visual Studio muestra un menú con el comando (`AddColumnGuideBeforeQueryStatus`) y el identificador de comando. Visual studio llama a la función de estado de la consulta antes de mostrar un comando en un menú para que el comando puede hacer que esté oculto o atenuado para una determinada pantalla del menú (por ejemplo, si deshabilita **copia** si no hay ninguna selección), cambiar el icono, o incluso cambiar su nombre (por ejemplo, en Agregar algo a quitar algo) y así sucesivamente. El identificador de comando debe coincidir con un identificador de comando que se declaran en el archivo .vsct. Establecer las cadenas para el comando y las guías de columnas Agregar comando debe coincidir entre el archivo .vsct y el ColumnGuideCommands.cs.
+Cree un `OleMenuCommand` . Visual Studio usa el sistema de comandos de Microsoft Office. Los argumentos clave al crear una instancia de OleMenuCommand son la función que implementa el comando ( `AddColumnGuideExecuted` ), la función a la que se llama cuando Visual Studio muestra un menú con el comando ( `AddColumnGuideBeforeQueryStatus` ) y el identificador de comando. Visual Studio llama a la función de estado de la consulta antes de mostrar un comando en un menú para que el comando pueda hacerse a sí mismo invisible o atenuado para una presentación determinada del menú (por ejemplo, deshabilitar la **copia** si no hay ninguna selección), cambiar su icono o incluso cambiar su nombre (por ejemplo, de agregar algo para quitar algo), etc. El identificador de comando debe coincidir con un identificador de comando declarado en el archivo. Vsct. Las cadenas para el conjunto de comandos y el comando Add de las guías de columna deben coincidir entre el archivo. Vsct y el ColumnGuideCommands.cs.
 
-La siguiente línea proporciona asistencia para cuando los usuarios invocan el comando a través de la ventana de comandos (se explica más adelante):
+La línea siguiente proporciona ayuda para cuando los usuarios invocan el comando a través de la ventana de comandos (que se explica a continuación):
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 ```
 
-**Consultar el estado**. Las funciones de estado de consulta `AddColumnGuideBeforeQueryStatus` y `RemoveColumnGuideBeforeQueryStatus` comprobar algunos valores de configuración (por ejemplo, el número máximo de las guías o columna max) o si hay una guía de columna para quitar. Permiten a los comandos si cumplen las condiciones. Funciones de consulta de estado deben ser muy eficaz porque se ejecutan cada vez que Visual Studio muestra un menú, para cada comando en el menú.
+**Estado**de la consulta. El estado de la consulta funciona `AddColumnGuideBeforeQueryStatus` y `RemoveColumnGuideBeforeQueryStatus` comprueba algunos valores (como el número máximo de guías o la columna Max) o si hay una guía de columna para quitar. Habilitan los comandos si las condiciones son correctas. Las funciones de estado de consulta deben ser muy eficaces porque se ejecutan cada vez que Visual Studio muestra un menú, para cada comando del menú.
 
-**Función AddColumnGuideExecuted**. La parte interesante de agregar a una guía es averiguar la ubicación del símbolo de intercalación y de vista del editor actual. En primer lugar, esta función llama `GetApplicableColumn` que comprueba si hay un argumento proporcionado por el usuario en argumentos de eventos del controlador de comandos y, si no hay ninguno, a continuación, la función comprueba la vista del editor:
+**Función AddColumnGuideExecuted**. La parte interesante de la adición de una guía es la visualización de la vista del editor actual y la ubicación del símbolo de intercalación. En primer lugar, esta función llama a `GetApplicableColumn` , que comprueba si hay un argumento proporcionado por el usuario en los argumentos de evento del controlador de comandos y, si no hay ninguno, la función comprueba la vista del editor:
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1204,7 +1204,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn` tiene que investigar un poco para obtener un <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vista del código. Si realiza un seguimiento a través de `GetActiveTextView`, `GetActiveView`, y `GetTextViewFromVsTextView`, puede ver cómo hacerlo. Lo siguiente es el código pertinente que abstrae, empezando por la selección actual, obtener el marco de la selección y, luego, obtener DocView del marco como un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, a continuación, obtener un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> desde el objeto IVsTextView y, después, obtener un host de vista, y Por último el IWpfTextView:
+`GetCurrentEditorColumn` tiene que profundizar un poco para obtener una <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vista del código. Si realiza el seguimiento a través `GetActiveTextView` de, `GetActiveView` y `GetTextViewFromVsTextView` , puede ver cómo hacerlo. A continuación se muestra el código relevante que se abstrae, empezando por la selección actual, obteniendo el fotograma de la selección y, a continuación, obteniendo el DocView del fotograma como <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> y, a continuación, obteniendo un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> de IVsTextView, luego obteniendo un host de vista y, por último, IWpfTextView:
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1275,19 +1275,19 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 ```
 
-Con la columna actual en la mano cuando el usuario hizo clic, el código simplemente llama a en el Administrador de configuración para agregar o quitar la columna. El Administrador de configuración activa el evento para que todos los `ColumnGuideAdornment` escuchan los objetos. Cuando se desencadena el evento, estos objetos actualización sus vistas de texto asociado con la nueva configuración de la Guía de columna.
+Con la columna actual en la que el usuario hizo clic, el código simplemente llama a en el administrador de configuración para agregar o quitar la columna. El administrador de configuración activa el evento al que todos los `ColumnGuideAdornment` objetos escuchan. Cuando el evento se activa, estos objetos actualizan sus vistas de texto asociadas con la nueva configuración de la guía de columnas.
 
-## <a name="invoking-command-from-the-command-window"></a>Invocar comando de la ventana de comandos
-El ejemplo de las guías de columna permite a los usuarios invocar los dos comandos desde la ventana de comandos como una forma de extensibilidad. Si usas el **vista &#124; Other Windows &#124; ventana de comandos** de comandos, puede ver la ventana de comandos. Puede interactuar con la ventana de comandos escribiendo "Editar", y con Autocompletar nombres de comando y proporcionando el argumento 120, contar con lo siguiente:
+## <a name="invoking-command-from-the-command-window"></a>Invocar el comando desde la ventana comandos
+El ejemplo de guías de columnas permite que los usuarios invoquen dos comandos desde la ventana de comandos como una forma de extensibilidad. Si usa el comando **ver &#124; otro** comando de la ventana de comandos de Windows &#124;, puede ver la ventana comandos. Para interactuar con la ventana de comandos, escriba "Edit." y, con el nombre de comando completado y proporcione el argumento 120, tiene lo siguiente:
 
 ```
 > Edit.AddColumnGuide 120
 >
 ```
 
-Las partes del ejemplo que habilitar en las declaraciones del archivo .vsct, son el `ColumnGuideCommands` constructor de clase cuando enlaza los controladores de comandos y las implementaciones de controlador de comandos que comprobación los argumentos de evento.
+Las partes del ejemplo que lo habilitan se encuentran en las declaraciones del archivo. Vsct, el `ColumnGuideCommands` constructor de clase cuando enlaza los controladores de comandos y las implementaciones del controlador de comandos que comprueban los argumentos de evento.
 
-Vimos "`<CommandFlag>CommandWellOnly</CommandFlag>`" en el archivo .vsct, así como las ubicaciones en el menú principal de edición, aunque no mostramos los comandos en el **editar** menú de la interfaz de usuario. Tenerlas en el menú principal de edición les nombres como **Edit.AddColumnGuide**. Los comandos del grupo declaración que contiene que los cuatro comandos colocan el grupo en el menú Editar directamente:
+Vio " `<CommandFlag>CommandWellOnly</CommandFlag>` " en el archivo. Vsct, así como los lugares en el menú principal editar, aunque no se muestren los comandos en la interfaz de usuario del menú **edición** . Tenerlos en el menú principal de edición les dará nombres como **Edit. AddColumnGuide**. La declaración del grupo de comandos que contiene los cuatro comandos colocó el grupo en el menú Edición directamente:
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -1297,7 +1297,7 @@ Vimos "`<CommandFlag>CommandWellOnly</CommandFlag>`" en el archivo .vsct, así c
 
 ```
 
-La sección de botones de los comandos declaró `CommandWellOnly` para mantenerlos invisible en el menú principal y se ha declarado con `AllowParams`:
+Posteriormente, la sección botones declaró los comandos `CommandWellOnly` para mantenerlos invisibles en el menú principal y declararlos con `AllowParams` :
 
 ```xml
 <Button guid="guidColumnGuidesCommandSet" id="cmdidAddColumnGuide" 
@@ -1309,14 +1309,14 @@ La sección de botones de los comandos declaró `CommandWellOnly` para mantenerl
 
 ```
 
-Vio el controlador de comandos enlazar el código en el `ColumnGuideCommands` constructor de clase proporciona una descripción de los parámetros permitidos:
+Vio el código de enlace del controlador de comandos en el `ColumnGuideCommands` constructor de clase proporcionó una descripción del parámetro permitido:
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 
 ```
 
-Ha visto la `GetApplicableColumn` función comprobaciones `OleMenuCmdEventArgs` para un valor antes de comprobar la vista del editor para una columna actual:
+Vio la `GetApplicableColumn` función comprueba `OleMenuCmdEventArgs` un valor antes de comprobar la vista del editor para una columna actual:
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1332,20 +1332,20 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-## <a name="trying-your-extension"></a>Probar la extensión
-Ahora puede presionar **F5** para ejecutar la extensión de guías de columnas. Abra un archivo de texto y utilizar el menú contextual del editor para agregar líneas de guía, quitarlos y cambiar su color. Tiene que hacer clic en el texto (no un espacio en blanco alcanzó el final de la línea) para agregar una columna manual, o el editor lo agrega a la última columna en la línea. Si utiliza la ventana de comandos e invocar los comandos con un argumento, puede agregar las guías de columnas en cualquier lugar.
+## <a name="trying-your-extension"></a>Prueba de la extensión
+Ahora puede presionar **F5** para ejecutar la extensión de las guías de columnas. Abra un archivo de texto y use el menú contextual del editor para agregar líneas guía, quitarlas y cambiar su color. Debe hacer clic en texto (no en el espacio en blanco pasado el final de la línea) para agregar una guía de columna o el editor lo agrega a la última columna de la línea. Si usa la ventana comandos e invoca los comandos con un argumento, puede Agregar guías de columna en cualquier lugar.
 
-Si desea probar diferentes comandos la ubicación, cambiar nombres, cambiar los iconos y así sucesivamente, y tiene problemas con Visual Studio que muestra el código más reciente en los menús, puede restablecer el subárbol experimental en el que está depurando. Abrir el **menú de inicio de Windows** y escriba "Restablecer". Busque e invocar el comando **restablecer la próxima Visual Studio Experimental Instance**. Esto limpia el subárbol del registro experimental de todos los componentes de extensión. No lo limpia out de la configuración de componentes, por lo que cualquier guías que tenía cuando apaga el subárbol experimental de Visual Studio seguirán estando cuando el código lee el almacén de configuración en el siguiente inicio.
+Si desea probar diferentes ubicaciones de comandos, cambiar nombres, cambiar iconos, etc., y tiene problemas con Visual Studio que le muestran el código más reciente en los menús, puede restablecer el subárbol experimental en el que está depurando. Abra el **menú Inicio de Windows** y escriba "restablecer". Busque e invoque el comando **restablecer la siguiente instancia experimental de Visual Studio**. Esto limpia el subárbol experimental del registro de todos los componentes de la extensión. No limpia la configuración de los componentes, por lo que las guías que tenía al cerrar el subárbol experimental de Visual Studio seguirán estando allí cuando el código Lea el almacén de configuración en el siguiente inicio.
 
-## <a name="finished-code-project"></a>Proyecto de código finalizada
-Pronto habrá un proyecto de GitHub de ejemplos de extensibilidad de Visual Studio y el proyecto completado estará allí. Actualizamos este tema para que apunte existe cuando esto ocurre. El proyecto de ejemplo completo puede tener un GUID diferente y tendrá una tira de mapas de bits diferentes para los iconos de comando.
+## <a name="finished-code-project"></a>Proyecto de código finalizado
+Pronto habrá un proyecto de GitHub de ejemplos de extensibilidad de Visual Studio y el proyecto completado estará ahí. Este tema se actualizará para que apunte allí cuando suceda. El proyecto de ejemplo completado puede tener GUID diferentes y tendrá una franja de mapas de bits diferente para los iconos de comandos.
 
-Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).
+Puede probar una versión de la característica guías de columnas con esta[extensión](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)de la galería de Visual Studio.
 
-## <a name="see-also"></a>Vea también
-[Dentro del Editor](../extensibility/inside-the-editor.md)
-[ampliación del Editor y los servicios de lenguaje](../extensibility/extending-the-editor-and-language-services.md)
-[servicio de lenguaje y puntos de extensión del Editor](../extensibility/language-service-and-editor-extension-points.md) 
- [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)
-[agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md)
-[crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+## <a name="see-also"></a>Consulte también
+[Dentro del editor](../extensibility/inside-the-editor.md) 
+ [Extender el editor y los servicios](../extensibility/extending-the-editor-and-language-services.md) 
+ de lenguaje [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md) 
+ [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md) 
+ [Agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md) 
+ [Crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
