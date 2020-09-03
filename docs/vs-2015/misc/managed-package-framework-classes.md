@@ -13,10 +13,10 @@ ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
 ms.openlocfilehash: 2e9fe1abb82d3d64232e3e5e2a6d117c1068aa1c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297703"
 ---
 # <a name="managed-package-framework-classes"></a>Clases de Managed Package Framework
@@ -38,7 +38,7 @@ Las clases de Managed Package Framework (MPF) se pueden usar para crear paquetes
 |<xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>|Contiene las extensiones del diseñador de CodeDOM de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|Admite subtipos de proyectos (también conocidos como "tipos").|  
   
-## <a name="see-also"></a>Vea también  
- [VSPackages y el marco de trabajo de paquetes administrados](../misc/vspackages-and-the-managed-package-framework.md)   
- [Usar ensamblados de interoperabilidad de Visual Studio](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
+## <a name="see-also"></a>Consulte también  
+ [VSPackages y Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
+ [Uso de ensamblados de interoperabilidad de Visual Studio](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
  [VSPackages y marco de trabajo de paquetes administrados](../misc/vspackages-and-the-managed-package-framework.md)

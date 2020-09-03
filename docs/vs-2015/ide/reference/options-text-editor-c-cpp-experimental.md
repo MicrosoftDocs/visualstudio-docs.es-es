@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851698"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
@@ -28,15 +28,15 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Estas características están disponibles en una instalación de Visual Studio 2015 Update 1 RC.
 
 > [!NOTE]
-> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="browsingnavigation"></a>Exploración o navegación
  **Habilitar nueva motor de base de datos** Esto debe acelerar automáticamente el rellenado de la base de datos y realizar todas las operaciones de base de datos más rápido (sin pérdida de precisión) para operaciones tales como **ir a definición** y **Buscar todas las referencias**. (Para aplicar los cambios, solo cierre y vuelva a abrir la solución; no es necesario reiniciar Visual Studio).
 
-## <a name="intellisense"></a>IntelliSense de
+## <a name="intellisense"></a>IntelliSense
  **Punto a flecha de la lista de miembros** Reemplaza "." por "->" cuando es aplicable para la lista de miembros.
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>Refactorización
  **Habilitar extraer función** Extraer el código seleccionado a su propia función y reemplazar el código por una llamada a la nueva función. Para obtener acceso a esta característica, haga clic con el botón derecho en el código seleccionado y seleccione **Acciones rápidas**o simplemente presione el método abreviado de teclado predeterminado Ctrl+punto [Ctrl+.].
 
  **Habilitar cambiar firma** Agregar, reordenar y eliminar parámetros de una función y propagar los cambios a todos los sitios de llamada. Para obtener acceso a esta característica, haga clic con el botón derecho en cualquier uso de la función y seleccione **Acciones rápidas**o simplemente presione el método abreviado predeterminado Ctrl+punto [Ctrl+.].
@@ -58,5 +58,5 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 
   Puede mantener el puntero sobre una línea ondulada para obtener una bombilla, o bien use el método abreviado de teclado predeterminado CTRL+punto (Ctrl+.). Tenga en cuenta que en el caso del método abreviado de teclado, no es necesario situar el símbolo de intercalación en el error o token específico. Simplemente puede estar en la misma línea que el error para invocar sugerencias para cualquier elemento incluido en esa línea.
 
-## <a name="see-also"></a>Vea también
- [Configuración de las opciones del editor específicas del idioma](../../ide/reference/setting-language-specific-editor-options.md) [refactorización en C++ (blog de VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+## <a name="see-also"></a>Consulte también
+ [Configuración de las opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md) [refactorización en C++ (blog de VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

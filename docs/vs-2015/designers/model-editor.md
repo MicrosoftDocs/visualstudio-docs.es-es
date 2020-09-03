@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ede47ea89030aed0298961599f09df6444ed968
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664208"
 ---
 # <a name="model-editor"></a>Editor de modelos
@@ -42,17 +42,17 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 
 1. En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiere agregar la imagen y, después, elija **Agregar**, **Nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado**, seleccione **Gráficos** y, a continuación, seleccione **Escena 3D (.fbx)** .
+2. En el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado**, seleccione **Gráficos** y, a continuación, seleccione **Escena 3D (.fbx)**.
 
 3. Especifique el **Nombre** del archivo del modelo y la **Ubicación** en la quiere que se cree.
 
-4. Elija el botón de **Agregar** .
+4. Elija el botón **Agregar**.
 
 ### <a name="axis-orientation"></a>Orientación axial
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] admite cualquier orientación de eje tridimensional y carga la información de la orientación axial de los formatos de archivo de modelo que la admiten. Si no se especifica ninguna orientación axial, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usa el sistema de coordenadas para diestros de forma predeterminada. En el **indicador de ejes** se muestra la orientación axial actual en la parte inferior derecha de la superficie de diseño. En el **indicador de ejes**, el rojo representa el eje X, el verde representa el eje Y y el azul representa el eje Z.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] admite cada orientación del eje 3D y carga la información de orientación del eje de los formatos de archivo de modelo que la admiten. Si no se especifica ninguna orientación axial, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usa el sistema de coordenadas para diestros de forma predeterminada. En el **indicador de ejes** se muestra la orientación axial actual en la parte inferior derecha de la superficie de diseño. En el **indicador de ejes**, el rojo representa el eje X, el verde representa el eje Y y el azul representa el eje Z.
 
 ### <a name="beginning-your-3-d-model"></a>Iniciar el modelo 3D
- En el Editor de modelos, cada nuevo objeto comienza siempre como una de las formas 3D básicas (o *primitivas*) integradas en el Editor de modelos. Para crear objetos nuevos y únicos, se agrega una primitiva a la escena y después se le cambia de forma modificando sus vértices. En formas complejas, se agregan vértices adicionales mediante extrusión o subdivisión y después se modifican. Para obtener información sobre cómo agregar un objeto primitivo a la escena, consulte [Crear e importar objetos 3D](#Adding3DObjects). Para obtener información sobre cómo agregar más vértices a un objeto, consulte [Modificar objetos](#ModifyingObjects).
+ En el editor de modelos, cada nuevo objeto comienza siempre como una de las formas 3D básicas (o *primitivas*) integradas en el editor de modelos. Para crear objetos nuevos y únicos, se agrega una primitiva a la escena y después se le cambia de forma modificando sus vértices. En formas complejas, se agregan vértices adicionales mediante extrusión o subdivisión y después se modifican. Para obtener información sobre cómo agregar un objeto primitivo a la escena, vea [crear e importar objetos 3D](#Adding3DObjects). Para obtener información sobre cómo agregar más vértices a un objeto, consulte [Modificar objetos](#ModifyingObjects).
 
 ## <a name="working-with-the-model-editor"></a>Trabajar con el Editor de modelos
  En las secciones siguientes se describe cómo utilizar el Editor de modelos para trabajar con modelos 3D.
@@ -64,23 +64,23 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 
  A continuación, se muestra la barra de herramientas **Modo Editor de modelos**:
 
- ![Barra de herramientas modal del visor de modelos.](../designers/media/digit-mre-modal-toolbar.png "Digit-MRE-modal-Toolbar")
+ ![Barra de herramientas modal del visor de modelo.](../designers/media/digit-mre-modal-toolbar.png "Digit-MRE-modal-Toolbar")
 
  En esta tabla se describen los elementos de la barra de herramientas **Modo Editor de modelos**; se muestran en el orden en que aparecen de izquierda a derecha.
 
 |Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
-|**Seleccionar**|Habilita la selección de puntos, bordes, caras u objetos de la escena, dependiendo del modo de selección activo.|
+|**Select**|Habilita la selección de puntos, bordes, caras u objetos de la escena, dependiendo del modo de selección activo.|
 |**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla Ctrl para activar el modo **Movimiento panorámico** temporalmente.|
 |**Zoom**|Habilita la presentación de más o menos detalles en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto de la escena y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede acercar o alejar con la rueda del mouse mientras mantiene presionada la tecla Ctrl.|
 |**Orbital**|Coloca la vista en una ruta circular en torno al objeto seleccionado. Si no se selecciona ningún objeto, la ruta se centra en el origen de la escena. **Nota**: Este modo no tiene ningún efecto cuando se habilita la proyección **Ortográfica**.|
 |**Posición global**|Cuando se habilita este elemento, las transformaciones en el objeto seleccionado aparecen en el espacio global. Si no, las transformaciones en el objeto seleccionado aparecen en el espacio local.|
-|**Modo de pivote**|Cuando se habilita este elemento, las transformaciones afectan a la ubicación y la orientación del *punto de pivote* del objeto seleccionado (el punto de pivote define el centro de las operaciones de traslación, escala y giro). De lo contrario, las transformaciones afectan a la ubicación y la orientación de la geometría del objeto, en relación con el punto de pivote.|
+|**Modo dinámico**|Cuando se habilita este elemento, las transformaciones afectan a la ubicación y la orientación del *punto de pivote* del objeto seleccionado (el punto de pivote define el centro de las operaciones de traslación, escala y giro). De lo contrario, las transformaciones afectan a la ubicación y la orientación de la geometría del objeto, en relación con el punto de pivote.|
 |**Bloquear eje X**|Restringe la manipulación del objeto al eje X. Solo se aplica cuando se usa la parte central del widget del manipulador.|
 |**Bloquear eje Y**|Restringe la manipulación del objeto al eje Y. Solo se aplica cuando se usa la parte central del widget del manipulador.|
 |**Bloquear eje Z**|Restringe la manipulación del objeto al eje Z. Solo se aplica cuando se usa la parte central del widget del manipulador.|
 |**Objeto marco**|Enmarca el objeto seleccionado de modo que quede ubicado en el centro de la vista.|
-|**Vista**|Establece la orientación de la vista. Estas son las orientaciones disponibles:<br /><br /> **Frontal**<br /> Posiciona la vista en la parte delantera de la escena.<br /><br /> **Atrás**<br /> Posiciona la vista detrás de la escena.<br /><br /> **Izquierda**<br /> Posiciona la vista a la izquierda de la escena.<br /><br /> **Derecha**<br /> Posiciona la vista a la derecha de la escena.<br /><br /> **Superior**<br /> Posiciona la vista sobre la escena.<br /><br /> **Inferior**<br /> Posiciona la vista bajo de la escena. **Nota**: Esta es la única manera de cambiar la dirección de la vista cuando está habilitada la proyección **Ortográfica**.|
+|**Ver**|Establece la orientación de la vista. Estas son las orientaciones disponibles:<br /><br /> **Front**<br /> Posiciona la vista en la parte delantera de la escena.<br /><br /> **Atrás**<br /> Posiciona la vista detrás de la escena.<br /><br /> **Left**<br /> Posiciona la vista a la izquierda de la escena.<br /><br /> **Right**<br /> Posiciona la vista a la derecha de la escena.<br /><br /> **Top** (Principales)<br /> Posiciona la vista sobre la escena.<br /><br /> **Inferior**<br /> Posiciona la vista bajo de la escena. **Nota**: Esta es la única manera de cambiar la dirección de la vista cuando está habilitada la proyección **Ortográfica**.|
 |**Proyección**|Establece el tipo de proyección que se utiliza para dibujar la escena. Estas son las proyecciones disponibles:<br /><br /> **Perspectiva**<br /> En la proyección de perspectiva, los objetos que están más alejados del punto de vista aparecen más pequeños y convergen finalmente en un punto en la distancia.<br /><br /> **Ortográfica**<br /> En la proyección ortográfica, los objetos parecen del mismo tamaño, con independencia de la distancia desde el punto de vista. No se muestra convergencia. Cuando se habilita la proyección **Ortográfica**, no se puede utilizar el modo **Orbital** para colocar la vista.|
 |**Estilo de dibujo**|Establece cómo se presentan los objetos de la escena. Estos son los estilos disponibles:<br /><br /> **Estructura metálica**<br /> Cuando se habilita, los objetos se representan como estructuras metálicas.<br /><br /> **Sobredibujar**<br /> Cuando se habilita, los objetos se presentan mediante combinación aditiva. Se puede utilizar para visualizar la cantidad de sobredibujo que se está produciendo en la escena.<br /><br /> **Sombreado plano**<br /> Cuando se habilita, los objetos se presentan mediante un modelo básico de iluminación de sombreado plano. Se puede utilizar para ver las caras de un objeto más fácilmente.<br /><br /> Si no se habilita ninguna de estas opciones, cada objeto se representa usando el material que se le aplicó.|
 |**Modo de representación en tiempo real**|Cuando se habilita la representación en tiempo real, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dibuja de nuevo la superficie de diseño, incluso si no se lleva a cabo ninguna acción de usuario. Este modo es útil cuando se trabaja con los sombreadores que cambian con el tiempo.|
@@ -88,18 +88,18 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 |**Cuadro de herramientas**|Muestra u oculta alternativamente el **Cuadro de herramientas**.|
 |**Esquema del documento**|Muestra u oculta alternativamente la ventana **Esquema del documento**.|
 |**Propiedades**|Muestra u oculta alternativamente la ventana **Propiedades**.|
-|**Avanzadas**|Contiene comandos y opciones avanzados.<br /><br /> **Motores gráficos**<br /><br /> **Representar con D3D11**<br /> Utiliza Direct3D 11 para presentar la superficie de diseño del Editor de modelos.<br /><br /> **Representar con D3D11WARP**<br /> Utiliza Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para presentar la superficie de diseño del Editor de modelos.<br /><br /> **Administración de la escena**<br /><br /> **Import**<br /> Importa objetos de otro archivo de modelo 3D a la escena actual.<br /><br /> **Asociar a primario**<br /> Establece el primero de varios objetos seleccionados como elemento primario de los objetos seleccionados restantes.<br /><br /> **Desasociar de primario**<br /> Desasocia el objeto seleccionado de su elemento primario. El objeto seleccionado se convierte en un *objeto raíz* de la escena. Un objeto raíz no tiene ningún objeto primario.<br /><br /> **Crear grupo**<br /> Agrupa los objetos seleccionados como objetos relacionados.<br /><br /> **Combinar objetos**<br /> Combina los objetos seleccionados en un objeto.<br /><br /> **Crear nuevo objeto a partir de selección de polígono**<br /> Quita las caras seleccionadas del objeto actual y agrega a la escena un nuevo objeto que contiene esas caras.<br /><br /> **Herramientas**<br /><br /> **Voltear devanado de polígono**<br /> Voltea los polígonos seleccionados de forma que el orden de devanado y el valor normal a la superficie se invierten.<br /><br /> **Quitar toda animación**<br /> Quita los datos de animación de los objetos.<br /><br /> **Triangular**<br /> Convierte el objeto seleccionado en triángulos.<br /><br /> **Vista**<br /><br /> Eliminación de caras traseras<br /> Habilita o deshabilita la selección de la cara oculta.<br /><br /> **Velocidad de fotogramas**<br /> Muestra la velocidad de fotogramas en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo.<br /><br /> Esta opción es útil cuando se habilita la opción **Modo de representación en tiempo real**.<br /><br /> **Mostrar todo**<br /> Muestra todos los objetos de la escena. Esto restablece la propiedad **Oculto** de cada objeto en **Falso**.<br /><br /> **Mostrar normales de cara**<br /> Muestra el normal de cada cara.<br /><br /> **Mostrar materiales que faltan**<br /> Muestra una textura especial en los objetos que no tienen ningún material asignado.<br /><br /> **Mostrar pivote**<br /> Habilita o deshabilita la presentación de un marcador de eje 3D en el punto de pivote de la selección activa.<br /><br /> **Mostrar nodos de marcador de posición**<br /> Muestra los nodos del marcador de posición. Cuando se agrupan objetos, se crea un nodo de marcadores de posición.<br /><br /> **Mostrar normales de vértices**<br /> Muestra el normal de cada vértice. **Consejo**: Puede elegir el botón **Scripts** para volver a ejecutar el último script.|
+|**Avanzadas**|Contiene comandos y opciones avanzados.<br /><br /> **Motores de gráficos**<br /><br /> **Representar con D3D11**<br /> Utiliza Direct3D 11 para presentar la superficie de diseño del Editor de modelos.<br /><br /> **Representar con D3D11WARP**<br /> Utiliza Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para presentar la superficie de diseño del Editor de modelos.<br /><br /> **Administración de escenas**<br /><br /> **Importar**<br /> Importa objetos de otro archivo de modelo 3D a la escena actual.<br /><br /> **Asociar a primario**<br /> Establece el primero de varios objetos seleccionados como elemento primario de los objetos seleccionados restantes.<br /><br /> **Desasociar de primario**<br /> Desasocia el objeto seleccionado de su elemento primario. El objeto seleccionado se convierte en un *objeto raíz* de la escena. Un objeto raíz no tiene ningún objeto primario.<br /><br /> **Crear grupo**<br /> Agrupa los objetos seleccionados como objetos relacionados.<br /><br /> **Combinar objetos**<br /> Combina los objetos seleccionados en un objeto.<br /><br /> **Crear nuevo objeto a partir de selección de polígono**<br /> Quita las caras seleccionadas del objeto actual y agrega a la escena un nuevo objeto que contiene esas caras.<br /><br /> **Herramientas**<br /><br /> **Voltear devanado de polígono**<br /> Voltea los polígonos seleccionados de forma que el orden de devanado y el valor normal a la superficie se invierten.<br /><br /> **Quitar toda animación**<br /> Quita los datos de animación de los objetos.<br /><br /> **Triangular**<br /> Convierte el objeto seleccionado en triángulos.<br /><br /> **Ver**<br /><br /> Eliminación de caras traseras<br /> Habilita o deshabilita la selección de la cara oculta.<br /><br /> **Velocidad de fotogramas**<br /> Muestra la velocidad de fotogramas en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo.<br /><br /> Esta opción es útil cuando se habilita la opción **Modo de representación en tiempo real**.<br /><br /> **Mostrar todo**<br /> Muestra todos los objetos de la escena. Esto restablece la propiedad **Oculto** de cada objeto en **Falso**.<br /><br /> **Mostrar normales de cara**<br /> Muestra el normal de cada cara.<br /><br /> **Mostrar materiales que faltan**<br /> Muestra una textura especial en los objetos que no tienen ningún material asignado.<br /><br /> **Mostrar pivote**<br /> Habilita o deshabilita la presentación de un marcador de eje 3D en el punto de pivote de la selección activa.<br /><br /> **Mostrar nodos de marcador de posición**<br /> Muestra los nodos del marcador de posición. Cuando se agrupan objetos, se crea un nodo de marcadores de posición.<br /><br /> **Mostrar normales de vértices**<br /> Muestra el normal de cada vértice. **Consejo**: Puede elegir el botón **Scripts** para volver a ejecutar el último script.|
 
  Esta es la barra de herramientas **Editor de modelos**:
 
- ![Barra de herramientas del visor de modelos](../designers/media/digit-mre-toolbar.png "Digit-MRE-Toolbar")
+ ![Barra de herramientas del visor de modelo](../designers/media/digit-mre-toolbar.png "Digit-MRE-Toolbar")
 
  En la tabla siguiente se describen los elementos de la barra de herramientas **Editor de modelos**, en el orden en que aparecen de arriba abajo.
 
 |Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
-|**Trasladar**|Mueve la selección.|
-|**Escalar**|Cambia el tamaño de la selección.|
+|**Traducir**|Mueve la selección.|
+|**Escala**|Cambia el tamaño de la selección.|
 |**Girar**|Gira la selección.|
 |**Seleccionar punto**|Establece el **Modo de selección** para seleccionar puntos individuales en un objeto.|
 |**Seleccionar borde**|Establece el **Modo de selección** para seleccionar un borde (una línea entre dos vértices) en un objeto.|
@@ -132,10 +132,10 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 ### <a name="viewing-additional-geometry-details"></a>Ver otros detalles de la geometría
  Para entender mejor un objeto o una escena 3D, puede ver los detalles adicionales de la geometría como los normales por vértice y por cara, los puntos de pivote de la selección activa y otros detalles. Para habilitarlos o deshabilitarlos, en la barra de herramientas **Editor de modelos**, elija **Scripts**, **Ver** y, a continuación, elija lo que desee.
 
-### <a name="Adding3DObjects"></a> Crear e importar objetos 3D
- Para agregar una forma 3D predefinida a la escena, en el **Cuadro de herramientas**, seleccione la que quiera y muévala a la superficie de diseño. Las nuevas formas se colocan en el origen de la escena. El Editor de modelos proporciona siete formas: **Cono**, **Cubo**, **Cilindro**, **Disco**, **Plano**, **Esfera** y **Tetera**.
+### <a name="creating-and-importing-3-d-objects"></a><a name="Adding3DObjects"></a> Crear e importar objetos 3D
+ Para agregar una forma 3D predefinida a la escena, en el cuadro de **herramientas**, seleccione la que desee y muévala a la superficie de diseño. Las nuevas formas se colocan en el origen de la escena. El Editor de modelos proporciona siete formas: **Cono**, **Cubo**, **Cilindro**, **Disco**, **Plano**, **Esfera** y **Tetera**.
 
- Para importar un objeto 3D desde un archivo, en la barra de herramientas **Editor de modelos**, elija **Avanzadas**, **Administración de la escena**, **Importar** y, a continuación, especifique el archivo que quiera importar.
+ Para importar un objeto 3D desde un archivo, en la barra de herramientas **Editor de modelos** , elija **avanzadas**, **Administración de escenas**, **importar**y, a continuación, especifique el archivo que desea importar.
 
 ### <a name="transforming-objects"></a>Transformar objetos
  Puede *transformar* un objeto cambiando sus propiedades de **Giro**, **Escala** y **Traslación**. El *Giro* orienta un objeto aplicando giros sucesivos alrededor de los ejes X, Y y Z definidos por el punto de pivote. Cada especificación de giro tiene tres componentes (x, y, z en ese orden) y los componentes se especifican en grados. El **Escalado** cambia el tamaño de un objeto ajustándolo según un factor especificado a lo largo de uno o más ejes centrados en el punto de pivote. La *Traslación* localiza un objeto en un espacio de 3 dimensiones en relación con su elemento primario en lugar de con su punto de pivote.
@@ -168,12 +168,12 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 ### <a name="working-with-the-pivot-point"></a>Trabajar con el punto de pivote
  El punto de pivote de un objeto define su centro de giro y su escala. Puede cambiar el punto de pivote de un objeto para cambiar cómo se ve afectado por las transformaciones de giro y escala. En la barra de herramientas **Modo Editor de modelos**, elija **Modo de pivote** para habilitar (o deshabilitar) dicho modo. Cuando se habilita el modo de pivote, un pequeño indicador de eje aparece en el punto de pivote del objeto seleccionado. Puede utilizar las herramientas **Traslación** y **Giro** para manipular el punto de pivote.
 
- Para ver una demostración que muestra cómo utilizar el punto de pivote, consulte [Cómo: Modificar el punto de pivote de un modelo 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
+ Para ver una demostración que muestra cómo utilizar el punto de pivote, consulte [Cómo: modificar el punto de pivote de un modelo 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
 
 ### <a name="world-and-local-modes"></a>Modos local y global
  La traslación y el giro pueden darse en el sistema de coordenadas local (o *marco de referencia local*) del objeto, o en el sistema de coordenadas global (o *marco de referencia global*). El marco de referencia global es independiente del giro del objeto. El modo local es el valor predeterminado. Para habilitar (o deshabilitar) el modo global, en la barra de herramientas **Modo Editor de modelos**, elija el botón **WorldLocal**.
 
-### <a name="ModifyingObjects"></a> Modificar objetos
+### <a name="modifying-objects"></a><a name="ModifyingObjects"></a> Modificar objetos
  Puede cambiar la forma de un objeto 3D moviendo o eliminando sus vértices, bordes y caras. De forma predeterminada, el Editor de modelos está en *modo objeto*, para que se puedan seleccionar y transformar objetos completos. Para seleccionar puntos, bordes o caras, elija el modo de selección adecuado. En la barra de herramientas **Modo Editor de modelos**, elija **Modos de selección** y, después, elija el modo que desea.
 
  Se pueden crear vértices adicionales mediante la extrusión o la subdivisión. La extrusión duplica los vértices de una cara (conjunto coplanar de vértices), que permanecen conectados por los vértices duplicados. La subdivisión agrega vértices para crear varias caras donde solo había una. Para crear las caras nuevas, se agregan vértices nuevos (uno en el centro de la cara original y otro en el medio de cada borde) y después se unen con los vértices originales. El número de caras agregadas es igual al número de bordes de la cara original. En ambos casos, se puede trasladar, girar y ajustar los nuevos vértices para cambiar la geometría del objeto.
@@ -237,7 +237,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 
  Para quitar todos los materiales de un objeto, en la barra de herramientas **Editor de modelos**, elija **Scripts**, **Materiales**, **Quitar materiales**.
 
- Puede usar el **Diseñador de sombras** para crear materiales personalizados de sombreador que se pueden aplicar a objetos de la escena 3D. Para obtener información acerca de la creación de materiales de sombreador personalizados, consulte [Diseñador de sombras](../designers/shader-designer.md). Para obtener información sobre cómo aplicar un material de sombreador personalizado a un objeto, vea [Cómo: Aplicar un sombreador a un modelo 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Puede usar el **Diseñador de sombras** para crear materiales de sombreador personalizados que se pueden aplicar a los objetos de la escena 3D. Para obtener información acerca de la creación de materiales de sombreador personalizados, consulte [Diseñador de sombras](../designers/shader-designer.md). Para obtener información sobre cómo aplicar un material de sombreador personalizado a un objeto, vea [Cómo: aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Administración de la escena
  Las escenas se administran como una jerarquía de objetos. Cuando varios objetos se organizan en una jerarquía, cualquier traslación, escala o giro de un nodo primario también afecta a sus elementos secundarios. Esto es útil cuando se desean construir objetos complejos o escenas a partir de objetos más básicos.
@@ -264,7 +264,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
 
-|Comando|Métodos abreviados de teclado|
+|Get-Help|Accesos directos del teclado|
 |-------------|------------------------|
 |Cambiar al modo **Seleccionar**|Ctrl+G, Ctrl+Q<br /><br /> S|
 |Cambiar al modo **Zoom**|Ctrl+G, Ctrl+Z<br /><br /> Z|
@@ -272,8 +272,8 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 |Seleccionar todo|Ctrl+A|
 |Eliminar la selección actual|Eliminar|
 |Cancelar la selección actual|Escape|
-|Acercar|Rueda del mouse hacia delante<br /><br /> Ctrl+rueda del mouse hacia delante<br /><br /> Mayús+rueda del mouse hacia delante<br /><br /> Ctrl+Retroceso de página (RePág)<br /><br /> Signo más (+)|
-|Alejar|Rueda del mouse hacia atrás<br /><br /> Ctrl+rueda del mouse hacia atrás<br /><br /> Mayús+rueda del mouse hacia atrás<br /><br /> Ctrl+Avance de página (AvPág)<br /><br /> Signo menos (-)|
+|Acercamiento|Rueda del mouse hacia delante<br /><br /> Ctrl+rueda del mouse hacia delante<br /><br /> Mayús+rueda del mouse hacia delante<br /><br /> Ctrl+Retroceso de página (RePág)<br /><br /> Signo más (+)|
+|Alejamiento|Rueda del mouse hacia atrás<br /><br /> Ctrl+rueda del mouse hacia atrás<br /><br /> Mayús+rueda del mouse hacia atrás<br /><br /> Ctrl+Avance de página (AvPág)<br /><br /> Signo menos (-)|
 |Movimiento panorámico de la cámara hacia arriba|AvPág|
 |Movimiento panorámico de la cámara hacia abajo|RePág|
 |Movimiento panorámico de la cámara hacia la izquierda|Rueda del mouse a la izquierda<br /><br /> Ctrl+Avance de página (AvPág)|
@@ -291,7 +291,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 |Alternar restricción del eje X|Ctrl+L, Ctrl+X|
 |Alternar restricción del eje Y|Ctrl+L, Ctrl+Y|
 |Alternar restricción del eje Z|Ctrl+L, Ctrl+Z|
-|Cambiar al modo traslación|Ctrl+G, Ctrl+W<br /><br /> X|
+|Cambiar al modo traslación|Ctrl+G, Ctrl+W<br /><br /> W|
 |Cambiar al modo escala|Ctrl+G, Ctrl+E<br /><br /> E|
 |Cambiar al modo giro|Ctrl+G, Ctrl+R<br /><br /> R|
 |Cambiar al modo selección de punto|Ctrl+L, Ctrl+1|
@@ -299,10 +299,10 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 |Cambiar al modo selección de cara|Ctrl+L, Ctrl+3|
 |Cambiar al modo selección de objeto|Ctrl+L, Ctrl+4|
 |Cambiar al modo de cámara orbital|Ctrl+G, Ctrl+O|
-|Seleccionar el siguiente objeto de la escena|Tab|
+|Seleccionar el siguiente objeto de la escena|Pestaña|
 |Seleccionar el objeto anterior de la escena|Mayús+Tab|
 |Manipular el objeto seleccionado según la herramienta actual.|Teclas de flecha|
-|Desactivar el manipulador actual|C|
+|Desactivar el manipulador actual|Q|
 |Girar cámara|Alt+arrastrar con el botón primario del mouse|
 
 ## <a name="related-topics"></a>Temas relacionados
@@ -310,5 +310,5 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 |Title|Descripción|
 |-----------|-----------------|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas que se pueden usar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con activos gráficos como texturas e imágenes, modelos 3D y efectos de sombreador.|
-|[Image Editor](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con texturas e imágenes.|
+|[Editor de imágenes](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con texturas e imágenes.|
 |[Diseñador de sombras](../designers/shader-designer.md)|Describe cómo usar el diseñador de sombras de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con sombreadores.|

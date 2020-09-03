@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299627"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalación de bases de datos de ejemplo de SQL Server
@@ -27,7 +27,7 @@ Las bases de datos de ejemplo son útiles para experimentar con consultas SQL y 
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Para restaurar una base de datos desde un archivo. bak en Visual Studio
 
-1. Al realizar una copia de seguridad de una base de datos de Microsoft SQL Server, el resultado es un archivo. bak. Para que el archivo. bak se pueda volver a usar como un archivo de base de datos, debe *restaurarse*. En el menú principal, seleccione **ver** > **Explorador de objetos de SQL Server**. Si no lo ve, es posible que tenga que instalarlo. Vaya al **Panel de Control** > **programas y características**, busque Microsoft Visual Studio 2015 y haga clic en el botón **cambiar** . Cuando aparezca la lista de componentes instalados en la ventana del instalador, active la casilla **Explorador de objetos de SQL Server** y, a continuación, continúe con la instalación.
+1. Al realizar una copia de seguridad de una base de datos de Microsoft SQL Server, el resultado es un archivo. bak. Para que el archivo. bak se pueda volver a usar como un archivo de base de datos, debe *restaurarse*. En el menú principal, seleccione **Ver**  >  **Explorador de objetos de SQL Server**. Si no lo ve, es posible que tenga que instalarlo. Vaya a **Panel de control**  >  **programas y características**, busque Microsoft Visual Studio 2015 y haga clic en el botón **cambiar** . Cuando aparezca la lista de componentes instalados en la ventana del instalador, active la casilla **Explorador de objetos de SQL Server** y, a continuación, continúe con la instalación.
 
 2. En Explorador de objetos de SQL Server, haga clic con el botón secundario en cualquier motor de base de datos SQL Server (por ejemplo, LocalDB) y seleccione**nueva consulta**.
 

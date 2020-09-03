@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4cac9981a582d5ba9527e0f8dc47d14b6fba18b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851767"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel
@@ -28,7 +28,7 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
 
   ![Arquitectura de pruebas de IU](../test/media/ui-testarch.png "UI_TestArch") Información general sobre la arquitectura
 
-## <a name="download-the-sample"></a>Descargar el ejemplo
+## <a name="download-the-sample"></a>Descarga del ejemplo
  El ejemplo está compuesto por cuatro proyectos en la solución `CodedUIExtensibilitySample.sln`:
 
 - CodedUIextensibilitySample
@@ -70,12 +70,12 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
 ### <a name="testing-excel-with-the-sampletestproject"></a>Probar Excel con SampleTestProject
  Puede hacer la prueba en el proyecto de prueba que usa una versión concreta de Excel que a lo mejor no tiene o crear un proyecto de prueba y grabar una prueba propia. Para obtener más información, vea [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Procedimientos recomendados para las pruebas automatizadas de IU](../test/best-practices-for-coded-ui-tests.md)
 - [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

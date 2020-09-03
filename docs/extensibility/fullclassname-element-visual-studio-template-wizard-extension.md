@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769596"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName (elemento, extensión del Asistente para plantillas de Visual Studio)
@@ -52,7 +52,7 @@ Nombre completo de la clase que implementa la `IWizard` interfaz.
 
  Este texto especifica la clase que implementa la `IWizard` interfaz. La clase especificada debe existir en el ensamblado especificado por el elemento [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `FullClassName` es un elemento secundario obligatorio de `WizardExtension`.
 
 ## <a name="example"></a>Ejemplo

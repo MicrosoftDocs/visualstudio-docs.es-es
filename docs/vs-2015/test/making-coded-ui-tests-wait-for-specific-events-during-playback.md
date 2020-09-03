@@ -9,23 +9,23 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbc83731cfc1c04f33fc4de05f28ffd1a54f3e4d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851781"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, use el método UITestControl.WaitForControlXXX() adecuado, tal y como se describe en la siguiente tabla. Para ver un ejemplo de una prueba de IU codificada que espera a que un control se habilite con el método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vea [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, use el método UITestControl.WaitForControlXXX() adecuado, tal y como se describe en la siguiente tabla. Para obtener un ejemplo de una prueba de IU codificada que espera a que se habilite un control mediante el <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> método, vea [Tutorial: crear, editar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
  **Requisitos**
 
  Visual Studio Enterprise
 
 > [!TIP]
-> También puede agregar retrasos antes de las acciones con el editor de pruebas de IU codificadas. Para obtener más información, consulte [Cómo insertar un retraso antes de una acción de IU mediante el editor de pruebas de IU codificadas](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> También puede agregar retrasos antes de las acciones con el editor de pruebas de IU codificadas. Para obtener más información, vea [Cómo: insertar un retraso antes de una acción de la interfaz de usuario mediante el editor de pruebas de IU codificadas](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).
 
  **Métodos de UITestControl.WaitForControlXXX()**
 
@@ -35,7 +35,7 @@ En una reproducción de prueba de UI codificada, puede indicar a la prueba que e
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- Espera a que el control esté habilitado cuando el asistente está realizando una validación asincrónica de la entrada a través de llamadas al servidor. Por ejemplo, puede usar este método para esperar a que el botón **Siguiente** del asistente se habilite. Para ver un ejemplo de este método, consulte [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+ Espera a que el control esté habilitado cuando el asistente está realizando una validación asincrónica de la entrada a través de llamadas al servidor. Por ejemplo, puede usar este método para esperar a que el botón **Siguiente** del asistente se habilite. Para obtener un ejemplo de este método, vea [Tutorial: crear, editar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -105,11 +105,11 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  Playback.Wait() llama internamente a Thread.Sleep() (tras el cálculo anterior) en fragmentos más pequeños en un bucle for mientras busca la operación cancel\break del usuario. En otras palabras, Playback.Wait() permite cancelar la reproducción antes de que la espera finalice, mientras que la suspensión no lo haría o generaría una excepción.
 
 > [!TIP]
-> el editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el Editor de pruebas de IU codificadas puede buscar, ver y modificar métodos de prueba. También puede editar acciones de interfaz de usuario y los controles asociados en la asignación de controles de IU. Para obtener más información, consulte [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+> El Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el Editor de pruebas de IU codificadas puede buscar, ver y modificar métodos de prueba. También puede editar acciones de interfaz de usuario y los controles asociados en la asignación de controles de IU. Para obtener más información, consulte [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
- **Orientación**
+ **Guía**
 
  Para obtener información adicional, consulte [Pruebas para entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md) [crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Tutorial: crear, editar y mantener una estructura de pruebas de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) [de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md) [configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Cómo: insertar un retraso antes de una acción de la interfaz de usuario mediante el editor de pruebas de IU codificadas](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

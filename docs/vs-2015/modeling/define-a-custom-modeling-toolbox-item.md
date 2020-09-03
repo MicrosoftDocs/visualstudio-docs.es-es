@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851519"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir un elemento personalizado en un cuadro de herramientas de modelado
@@ -34,7 +34,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 > [!NOTE]
 > Puede usar este método para crear herramientas de elemento. Es decir, puede crear herramientas que se arrastren desde el cuadro de herramientas a un diagrama. No se pueden crear herramientas de conector.
 
-## <a name="DefineTool"></a>Definir una herramienta de modelado personalizada
+## <a name="defining-a-custom-modeling-tool"></a><a name="DefineTool"></a> Definir una herramienta de modelado personalizada
 
 #### <a name="to-define-a-custom-modeling-tool"></a>Para definir una herramienta de modelado personalizada
 
@@ -46,7 +46,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
 3. En el Explorador de Windows, copie los dos archivos de diagrama en la siguiente carpeta o en cualquier subcarpeta:
 
-     **Elementos del cuadro de herramientas YourDocuments \Visual Studio\Architecture Tools\Custom**
+     *YourDocuments* **Elementos del cuadro de herramientas YourDocuments \Visual Studio\Architecture Tools\Custom**
 
     - Cree esta carpeta si no existe ya. Es posible que tenga que crear tanto **herramientas de arquitectura** como **elementos personalizados del cuadro de herramientas**.
 
@@ -58,7 +58,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
     - Se puede usar un único archivo **. archivo tbxinfo** para definir varias herramientas. Este archivo puede hacer referencia a los archivos de diagrama que se encuentran en las subcarpetas.
 
-5. Reinicie Visual Studio. La herramienta adicional aparecerá en el cuadro de herramientas para el tipo de diagrama adecuado.
+5. Reinicie Visual Studio. La herramienta adicional aparecerá en el cuadro de herramientas para el tipo de diagrama adecuado.
 
 ### <a name="what-the-custom-tool-will-replicate"></a>Qué va a replicar la herramienta personalizada
  Una herramienta personalizada replicará la mayoría de las características del diagrama de origen:
@@ -83,8 +83,8 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
 - Enrutamiento de conectores. Si se enrutan conectores manualmente, el enrutamiento no se conservará cuando se use la herramienta. Las posiciones de algunas formas anidadas, como los puertos, no se conservan con relación a sus propietarios.
 
-## <a name="tbxinfo"></a>Cómo definir las propiedades de herramientas personalizadas
- Un archivo de información del cuadro de herramientas ( **. archivo tbxinfo**) permite especificar un nombre de cuadro de herramientas, un icono, una información sobre herramientas, una pestaña y una palabra clave de ayuda para una o varias herramientas personalizadas. Asígnele cualquier nombre, como, por ejemplo, **archivo tbxinfo**.
+## <a name="how-to-define-the-properties-of-custom-tools"></a><a name="tbxinfo"></a> Cómo definir las propiedades de herramientas personalizadas
+ Un archivo de información del cuadro de herramientas (**. archivo tbxinfo**) permite especificar un nombre de cuadro de herramientas, un icono, una información sobre herramientas, una pestaña y una palabra clave de ayuda para una o varias herramientas personalizadas. Asígnele cualquier nombre, como, por ejemplo, **archivo tbxinfo**.
 
  El formato general del archivo es como este:
 
@@ -125,11 +125,11 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
   Los nodos del archivo **. archivo tbxinfo** son los siguientes. Hay un valor predeterminado para cada nodo.
 
-|Nombre del nodo|Qué define|
+|nombre del nodo|Qué define|
 |---------------|-------------|
-|displayName|El nombre del elemento del cuadro de herramientas.|
+|DisplayName|El nombre del elemento del cuadro de herramientas.|
 |tabName|La pestaña del cuadro de herramientas en la que debe aparecer el elemento. Puede especificar el nombre de la pestaña habitual para este tipo de diagrama o un nombre distinto.|
-|image|Ubicación del archivo de mapa de bits ( **. bmp**), que debe tener el alto y el ancho de 16, y una profundidad de color de 24 bits.|
+|imagen|Ubicación del archivo de mapa de bits (**. bmp**), que debe tener el alto y el ancho de 16, y una profundidad de color de 24 bits.|
 |f1Keyword|La palabra clave que localiza un tema de ayuda.|
 |información sobre herramientas|Información sobre esta herramienta.|
 
@@ -138,8 +138,8 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 > [!NOTE]
 > Si empieza a usar un archivo .tbxinfo después de experimentar con archivos de diagrama en solitario, es posible que el cuadro de herramientas contenga la versión anterior y la versión nueva de un cuadro de herramientas. Esto también puede producirse si el nombre del archivo de diagrama se escribió incorrectamente en el archivo .tbxinfo. Si esto ocurre, en el menú contextual del cuadro de herramientas, elija **restablecer cuadro de herramientas**. Los elementos de cuadro de herramientas personalizados desaparecerán. Reinicie Visual Studio y aparecerán los elementos personalizados correctos.
 
-## <a name="Extension"></a>Cómo distribuir elementos del cuadro de herramientas en una extensión de Visual Studio
- Puede distribuir los elementos del cuadro de herramientas a otros usuarios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si los empaqueta en una extensión de Visual Studio (VSIX). Puede empaquetar comandos, perfiles y otras extensiones en el mismo archivo VSIX. Para obtener más información, consulte [implementación de extensiones de Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
+## <a name="how-to-distribute-toolbox-items-in-a-visual-studio-extension"></a><a name="Extension"></a> Cómo distribuir elementos del cuadro de herramientas en una extensión de Visual Studio
+ Puede distribuir los elementos del cuadro de herramientas a otros [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usuarios si los empaqueta en una extensión de Visual Studio (VSIX). Puede empaquetar comandos, perfiles y otras extensiones en el mismo archivo VSIX. Para obtener más información, consulte [implementación de extensiones de Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  La manera habitual de compilar una extensión de Visual Studio es usar la plantilla de proyecto de VSIX. Para ello, debe tener instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
@@ -155,9 +155,9 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
      Defina un nuevo proyecto de extensión de Visual Studio.
 
-    1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
+    1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
 
-    2. En el cuadro de diálogo **nuevo proyecto** , en **plantillas instaladas**, elija **Visual C#** , **extensibilidad**, **Proyecto VSIX**.
+    2. En el cuadro de diálogo **nuevo proyecto** , en **plantillas instaladas**, elija **Visual C#**, **extensibilidad**, **Proyecto VSIX**.
 
 4. Agregue las definiciones del cuadro de herramientas al proyecto. Incluya el archivo **. archivo tbxinfo** , los archivos de diagrama, los archivos de mapa de bits y cualquier archivo de recursos, y asegúrese de que están incluidos en el VSIX.
 
@@ -168,11 +168,11 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
 5. Establezca las siguientes propiedades de todos los archivos que acaba de agregar. Puede establecer sus propiedades al mismo tiempo si los selecciona todos en el Explorador de soluciones. Tenga cuidado de no cambiar las propiedades de los demás archivos del proyecto.
 
-     **Copiar en el directorio de salida** = **copiar siempre**
+     **Copiar en el directorio**  =  de salida **Copiar siempre**
 
      **Acción de compilación** = **Contenido**
 
-     **Incluir en VSIX** = **true**
+     **Incluir en VSIX**  =  **true**
 
 6. Abra **source.extension.vsixmanifest**. El archivo se abre en el editor de manifiestos de la extensión.
 
@@ -180,18 +180,18 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
      En **recursos**, elija **nuevo** y, a continuación, establezca los campos del cuadro de diálogo de la siguiente manera:
 
-    - **Escribir** = **tipo de extensión personalizada**
+    - **Tipo**  =  de **Tipo de extensión personalizada**
 
     - Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Esta no es una de las opciones de la lista desplegable. Debe escribirla mediante el teclado.
 
-    - **Archivo de = de origen en el sistema de archivos**.
+    - **Origen**  =  de **Archivo en el sistema de archivos**.
 
     - **Path** = el archivo **. archivo tbxinfo** , por ejemplo, las **herramientas. archivo tbxinfo**
 
-8. Generar el proyecto.
+8. Compile el proyecto.
 
 9. Presione F5 **para comprobar que la extensión funciona**. Se abre la instancia experimental de Visual Studio.
 
@@ -208,13 +208,13 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 3. Para desinstalar o deshabilitar temporalmente la extensión, Abra **extensiones y actualizaciones** en el menú **herramientas** .
 
 ## <a name="localization"></a>Localización
- Puede crear una extensión que, cuando se instale en otro equipo, muestre los nombres de herramientas y la información sobre herramientas en el idioma del equipo de destino.
+ Puede crear una extensión que, cuando se instale en otro equipo, muestre los nombres de herramientas y la información sobre herramientas en el idioma del equipo de destino. 
 
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>Para proporcionar versiones de la herramienta en varios idiomas
 
 1. Cree un proyecto de extensión de Visual Studio que contenga una o varias herramientas personalizadas.
 
-    En el archivo **. archivo tbxinfo** , use el método de archivo de recursos para definir el `displayName`, el cuadro de herramientas `tabName`de la herramienta y la información sobre herramientas. Cree un archivo de recursos en el que se definan estas cadenas, compílelo en un ensamblado y establezca referencias a él en el archivo tbxinfo.
+    En el archivo **. archivo tbxinfo** , use el método de archivo de recursos para definir la herramienta `displayName` , el cuadro de herramientas `tabName` y la información sobre herramientas. Cree un archivo de recursos en el que se definan estas cadenas, compílelo en un ensamblado y establezca referencias a él en el archivo tbxinfo.
 
 2. Cree ensamblados adicionales que contengan archivos de recursos con cadenas en otros idiomas.
 
@@ -233,5 +233,5 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
  Además, las herramientas personalizadas desaparecerán si realiza el comando **restablecer cuadro de herramientas** . Sin embargo, volverán a aparecer cuando reinicie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md) [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)

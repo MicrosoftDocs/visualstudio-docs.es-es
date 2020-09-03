@@ -1,5 +1,5 @@
 ---
-title: Contribuir a la Agregar cuadro de diálogo nuevo elemento | Microsoft Docs
+title: Contribuir al cuadro de diálogo Agregar nuevo elemento | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d288f2d007fd0f923021847179326069959d3698
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197022"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Contribución al cuadro de diálogo Agregar nuevo elemento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un subtipo de proyecto puede proporcionar un nuevo directorio completando de elementos de la **Agregar nuevo elemento** cuadro de diálogo Registrar **Agregar elemento** plantillas bajo el `Projects` subclave del registro.  
+Un subtipo de proyecto puede proporcionar un nuevo directorio completo de elementos para el cuadro de diálogo **Agregar nuevo elemento** registrando las plantillas de **Agregar elemento** en la `Projects` subclave del registro.  
   
-## <a name="registering-add-new-item-templates"></a>Registrar plantillas Agregar nuevo elemento  
- En esta sección se encuentra en **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** en el registro. Las entradas del registro siguiente suponen un [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyecto agregadas por un subtipo de proyecto hipotético. Las entradas para el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyecto se enumeran a continuación.  
+## <a name="registering-add-new-item-templates"></a>Registrar plantillas agregar nuevo elemento  
+ Esta sección se encuentra en **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\Projects** en el registro. Las entradas del registro siguientes suponen un [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyecto agregado por un subtipo hipotético del proyecto. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]A continuación se enumeran las entradas del proyecto.  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]  
@@ -37,12 +37,12 @@ Un subtipo de proyecto puede proporcionar un nuevo directorio completando de ele
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"  
 ```  
   
- El `AddItemTemplates\TemplateDirs` subclave contiene las entradas del registro con la ruta de acceso al directorio donde ponen a disposición de los elementos del **Agregar nuevo elemento** se colocan el cuadro de diálogo.  
+ La `AddItemTemplates\TemplateDirs` subclave contiene entradas del registro con la ruta de acceso al directorio donde se colocan los elementos disponibles en el cuadro de diálogo **Agregar nuevo elemento** .  
   
- El entorno carga automáticamente todas las `AddItemTemplates` datos bajo la `Projects` subclave del registro. Esto puede incluir los datos para las implementaciones de proyecto de base, así como los datos para los tipos de subtipo de proyecto específico. Cada subtipo de proyecto se identifica mediante un tipo de proyecto `GUID`. Puede especificar el subtipo de proyecto que alternativa del conjunto de `Add Item` plantillas se deben utilizar para una instancia determinada de proyecto característico al admitir el `VSHPROPID_ AddItemTemplatesGuid` enumeración desde <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> en <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> implementación para devolver el GUID valor del subtipo de proyecto. Si `VSHPROPID_AddItemTemplatesGuid` propiedad no se especifica, el proyecto de base se usa el GUID.  
+ El entorno carga automáticamente todos los `AddItemTemplates` datos en la `Projects` subclave del registro. Esto puede incluir los datos de las implementaciones de proyecto base, así como los datos de tipos de subtipo de proyecto específicos. Cada subtipo de proyecto se identifica mediante un tipo de proyecto `GUID` . El subtipo de proyecto puede especificar que se debe usar un conjunto alternativo de `Add Item` plantillas para una instancia determinada del proyecto, ya que admite la `VSHPROPID_ AddItemTemplatesGuid` enumeración de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> en <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> implementación para devolver el valor GUID del subtipo de proyecto. Si `VSHPROPID_AddItemTemplatesGuid` no se especifica la propiedad, se usa el GUID del proyecto base.  
   
- Puede filtrar los elementos de la **Agregar nuevo elemento** cuadro de diálogo mediante la implementación de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> interfaz en el objeto de agregador del subtipo de proyecto. Por ejemplo, un subtipo de proyecto que implementa un proyecto de base de datos agregando un [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] project, puede filtrar el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] los elementos específicos de la **Agregar nuevo elemento** cuadro de diálogo mediante la implementación de filtrado y, en activar, puede agregar elementos específicos del proyecto de base de datos permitiendo `VSHPROPID_ AddItemTemplatesGuid` en <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>. Para obtener más información sobre filtrado y agregar elementos a la **Agregar nuevo elemento** cuadro de diálogo, vea [agregar elementos a los cuadros de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).  
+ Puede filtrar los elementos en el cuadro de diálogo **Agregar nuevo elemento** implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> interfaz en el objeto de agregador de subtipos de proyecto. Por ejemplo, un subtipo de proyecto que implementa un proyecto de base de datos mediante la agregación de un [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyecto de, puede filtrar los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] elementos específicos del cuadro de diálogo **Agregar nuevo elemento** implementando el filtrado y, a su vez, puede agregar elementos específicos del proyecto de base de datos al admitir `VSHPROPID_ AddItemTemplatesGuid` en <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> . Para obtener más información sobre cómo filtrar y agregar elementos al cuadro de diálogo **Agregar nuevo elemento** , vea [Agregar elementos a los cuadros de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [CATID para los objetos que se utilizan normalmente para ampliar proyectos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+ [CATID para los objetos que se usan normalmente para ampliar proyectos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

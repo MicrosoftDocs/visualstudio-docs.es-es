@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851421"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
@@ -39,7 +39,7 @@ En la ventana **propiedades** , los cuadros de diálogo o los diseñadores como 
 
 1. En el cuadro **nombre de tipo** , escriba el nombre del tipo que desea utilizar.
 
-2. Siga uno de los procedimientos que se describen a continuación:
+2. Realice una de las siguientes acciones:
 
     - Una vez que el nombre del tipo que desea utilizar aparece en el árbol en el cuadro **nombre de tipo** , haga doble clic en el tipo para seleccionarlo.
 
@@ -63,12 +63,12 @@ En la ventana **propiedades** , los cuadros de diálogo o los diseñadores como 
 
  Por ejemplo:
 
-1. La **operación** de escritura coincide con <xref:System.OperationCanceledException> pero no <xref:System.InvalidOperationException>. Para buscar coincidencias con <xref:System.InvalidOperationException>, comience a escribir System.I o Invalid.
+1. La **operación** de escritura coincide, <xref:System.OperationCanceledException> pero no <xref:System.InvalidOperationException> . Para buscar coincidencias con <xref:System.InvalidOperationException>, comience a escribir System.I o Invalid.
 
-2. Escribir las coincidencias **genéricas** <xref:System.GenericUriParser> pero no los tipos del espacio de nombres <xref:System.Collections.Generic>. Para buscar tipos en el espacio de nombres <xref:System.Collections.Generic>, escriba el nombre completo del espacio de nombres.
+2. Escribir coincidencias **genéricas** <xref:System.GenericUriParser> pero no tipos en el <xref:System.Collections.Generic> espacio de nombres. Para buscar tipos en el espacio de nombres <xref:System.Collections.Generic>, escriba el nombre completo del espacio de nombres.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Seleccionar un contrato de servicio usando el cuadro de diálogo de explorador de tipo
  Al seleccionar un tipo de contrato de servicio, el explorador de tipo muestra únicamente los tipos que tienen el atributo <xref:System.ServiceModel.ServiceContractAttribute>.
 
-## <a name="see-also"></a>Vea también
- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+## <a name="see-also"></a>Consulte también
+ [Utilizar los diseñadores de actividades](../workflow-designer/using-the-activity-designers.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851635"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Inicio rápido, Entorno, Opciones (cuadro de diálogo)
@@ -36,10 +36,10 @@ Puede usar **Inicio rápido** para buscar y ejecutar acciones rápidamente para 
 
 |Categoría|Acceso directo|Descripción del acceso directo|
 |--------------|--------------|--------------------------|
-|Usados más recientemente|@mru<br /><br /> Por ejemplo, `@mru font`.|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
-|Menús|@menu<br /><br /> Por ejemplo, `@menu font`.|Limita la búsqueda a los elementos de menú.|
-|Opciones|@opt<br /><br /> Por ejemplo, `@opt font`.|Limita la búsqueda a la configuración del cuadro de diálogo **Opciones**.|
-|Documentos|@doc<br /><br /> Por ejemplo, `@doc font`.|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
+|Usados más recientemente|@mru<br /><br /> Por ejemplo: `@mru font`|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
+|Menús|@menu<br /><br /> Por ejemplo: `@menu font`|Limita la búsqueda a los elementos de menú.|
+|Opciones|@opt<br /><br /> Por ejemplo: `@opt font`|Limita la búsqueda a la configuración del cuadro de diálogo **Opciones**.|
+|Documentos|@doc<br /><br /> Por ejemplo: `@doc font`|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
 
 > [!NOTE]
 > Puede cambiar las teclas de método abreviado en la página **General**, **Teclado**, en el cuadro de diálogo **Opciones**.
@@ -49,5 +49,5 @@ Puede usar **Inicio rápido** para buscar y ejecutar acciones rápidamente para 
 
  Para conocer las últimas sugerencias y trucos para usar el **Inicio rápido**, vea el [blog de Visual Studio](https://blogs.msdn.com/b/visualstudio/).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Elementos generales de la interfaz de usuario (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [cuadro de diálogo Opciones de entorno](../../ide/reference/environment-options-dialog-box.md)

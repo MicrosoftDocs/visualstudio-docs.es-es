@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2 ? Microsoft Docs
+title: IDebugPortNotify2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 49d3d1161d488ed4a9e12b7af6b70bf336c9f286
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724916"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
@@ -29,26 +29,26 @@ IDebugPortNotify2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un proveedor de puertos personalizado implementa esta interfaz para admitir la adición y eliminación de programas del puerto. Normalmente se implementa en el mismo objeto que implementa el [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfaz.
+ Un proveedor de Puerto personalizado implementa esta interfaz para admitir la adición y eliminación de programas desde el puerto. Normalmente se implementa en el mismo objeto que implementa la interfaz [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) .
 
-## <a name="notes-for-callers"></a>Notas para las personas que llaman
+## <a name="notes-for-callers"></a>Notas para llamadores
  Una llamada a [QueryInterface](/cpp/atl/queryinterface) en la `IDebugPort2` interfaz devuelve esta interfaz. Además, una llamada a [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) devuelve esta interfaz. Un motor de depuración puede ver esta interfaz como un parámetro de [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- En la tabla siguiente `IDebugPortNotify2`se muestran los métodos de .
+ En la tabla siguiente se muestran los métodos de `IDebugPortNotify2` .
 
 |Método|Descripción|
 |------------|-----------------|
-|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Registra un programa que se puede depurar con el puerto en el que se ejecuta.|
-|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Anula el registro de un programa que se puede depurar desde el puerto en el que se ejecuta.|
+|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Registra un programa que se puede depurar con el puerto en el que se está ejecutando.|
+|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Anula el registro de un programa que se puede depurar desde el puerto en el que se está ejecutando.|
 
 ## <a name="remarks"></a>Observaciones
- A menos que un puerto de depuración tenga una manera de saber cuándo se cargan o descargan los programas, un proveedor de puerto personalizado debe implementar esta interfaz. Todos los programas que se cargan para la depuración a través de un puerto determinado se rastrean mediante esta interfaz.
+ A menos que un puerto de depuración tenga una manera de saber cuándo se cargan o descargan programas, un proveedor de Puerto personalizado debe implementar esta interfaz. Se realiza un seguimiento de todos los programas que se cargan para la depuración a través de un puerto determinado mediante esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

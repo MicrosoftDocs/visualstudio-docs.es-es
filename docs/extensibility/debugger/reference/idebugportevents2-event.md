@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEvents2::Evento ? Microsoft Docs
+title: 'IDebugPortEvents2:: Event | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 931be468f6321250481aec79688f7f326abcfcac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725241"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
-Este método envía eventos que significan la creación y destrucción de procesos y programas en un puerto.
+Este método envía eventos que indican la creación y destrucción de procesos y programas en un puerto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,19 +51,19 @@ int Event(
 
 ## <a name="parameters"></a>Parámetros
 `pMachine`\
-[en] Un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objeto que representa el servidor de depuración (hay uno para cada instancia de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]) en el que se produjo el evento.
+de Un objeto [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) que representa el servidor de depuración (existe uno para cada instancia de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ) en el que se produjo el evento.
 
 `pPort`\
-[en] Un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto en el que se produjo el evento.
+de Un objeto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa el puerto en el que se produjo el evento.
 
 `pProcess`\
-[en] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso en el que se produjo el evento.
+de Objeto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) que representa el proceso en el que se produjo el evento.
 
 `pProgram`\
-[en] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa en el que se produjo el evento.
+de Objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa en el que se produjo el evento.
 
 `pEvent`\
-[en] Un [Objeto IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) que identifica el evento. Los posibles eventos son los siguientes:
+de Un objeto [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) que identifica el evento. Los posibles eventos son los siguientes:
 
 - [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)
 
@@ -74,7 +74,7 @@ int Event(
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 
 `riidEvent`\
-[en] El GUID del evento. Dado que el evento se convierte en [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) antes de llamar a este método, este identificador facilita la determinación de qué evento se envía.
+de GUID del evento. Dado que el evento se convierte en [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) antes de llamar a este método, este identificador facilita la determinación del evento que se envía.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
