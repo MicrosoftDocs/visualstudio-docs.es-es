@@ -57,17 +57,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984636"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Compatibilidad adicional para errores en las soluciones de Office
 
 Puede usar los siguientes recursos para ayudarle a encontrar respuestas a los problemas que encuentre al crear soluciones de Office en Visual Studio.
 
-## <a name="troubleshoot-specific-errors"></a>Solucionar errores específicos
+## <a name="troubleshoot-specific-errors"></a>Solución de errores específicos
 
 Para obtener ayuda con algunos errores comunes en las soluciones de Office, vea los temas siguientes:
 

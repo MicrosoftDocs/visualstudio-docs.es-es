@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f2196da51a92d79a302c4efcd04eccbcf38a7ad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190733"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
@@ -35,13 +35,13 @@ HRESULT getEnumTables ( 
   
 #### <a name="parameters"></a>Parámetros  
  `ppEnumTables`  
- [out] Devuelve un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objeto. Utilice esta interfaz para enumerar las tablas en el almacén de símbolos.  
+ enuncia Devuelve un objeto [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Use esta interfaz para enumerar las tablas del almacén de símbolos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se presenta una función general que utiliza el `getEnumTables` método para obtener un objeto de enumerador específico. Si el enumerador se encuentra, la función devuelve un puntero que se puede convertir a la interfaz deseada; en caso contrario, devuelve la función `NULL`.  
+ En este ejemplo se presenta una función general que utiliza el `getEnumTables` método para obtener un objeto de enumerador específico. Si se encuentra el enumerador, la función devuelve un puntero que se puede convertir a la interfaz deseada; de lo contrario, la función devuelve `NULL` .  
   
 ```cpp#  
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  
@@ -69,6 +69,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

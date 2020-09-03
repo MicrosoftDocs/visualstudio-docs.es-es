@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984516"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Crear columnas de sitio, tipos de contenido y listas para SharePoint
@@ -31,7 +31,7 @@ ms.locfileid: "72984516"
 ## <a name="site-columns"></a>Columnas del sitio
  Las columnas de sitio son uno de los elementos más básicos que se pueden agregar a un proyecto de SharePoint. Una columna de sitio representa un tipo de datos, como un número de teléfono, un comentario o el nombre de la ciudad de un contacto en una lista de contactos.
 
- La nueva plantilla de elemento de proyecto de columna de sitio simplifica la creación de columnas de sitio que en la versión anterior de Visual Studio. Después de crear una nueva columna de sitio, puede modificar el código XML del archivo *Elements. XML* de la columna del sitio para incluir la información que desee, como su nombre para mostrar, su tipo de datos y el grupo en el que desea que aparezca la columna de sitio en SharePoint. Para obtener más información sobre las columnas de sitio, vea [Introducción a las columnas](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14)).
+ La nueva plantilla de elemento de proyecto de columna de sitio simplifica la creación de columnas de sitio que en la versión anterior de Visual Studio. Después de crear una nueva columna de sitio, puede modificar el XML en el archivo de *Elements.xml* de la columna de sitio para incluir la información que desee, como su nombre para mostrar, su tipo de datos y el grupo en el que desea que aparezca la columna de sitio en SharePoint. Para obtener más información sobre las columnas de sitio, vea [Introducción a las columnas](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14)).
 
 ## <a name="content-types-and-lists"></a>Tipos de contenido y listas
  Los tipos de contenido y las listas se encuentran entre los elementos que se usan con más frecuencia en SharePoint.

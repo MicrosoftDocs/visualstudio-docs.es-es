@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2054a55f0633d5d4add51fee2e933d9f4d829fcf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609979"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedimiento para asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los procedimientos almacenados se pueden agregar a Object Relational Designer y ejecutar como métodos de <xref:System.Data.Linq.DataContext> normales. También se pueden usar para invalidar el comportamiento predeterminado de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] en tiempo de ejecución que realiza inserciones, actualizaciones y eliminaciones cuando se guardan los cambios de las clases de entidad en una base de datos (por ejemplo, al llamar al método <xref:System.Data.Linq.DataContext.SubmitChanges%2A>).
+Los procedimientos almacenados se pueden agregar a Object Relational Designer y ejecutar como métodos de <xref:System.Data.Linq.DataContext> normales. También se pueden usar para invalidar el [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] comportamiento predeterminado en tiempo de ejecución que realiza inserciones, actualizaciones y eliminaciones cuando se guardan los cambios de las clases de entidad en una base de datos (por ejemplo, al llamar al <xref:System.Data.Linq.DataContext.SubmitChanges%2A> método).
 
 > [!NOTE]
 > Si el procedimiento almacenado devuelve valores que se deben devolver al cliente (por ejemplo, los valores calculados en el procedimiento almacenado), cree parámetros de salida en los procedimientos almacenados. Si no puede usar parámetros de salida, escriba una implementación de método parcial en lugar de confiar en las invalidaciones generadas por Object Relational Designer. Los miembros asignados a los valores generados por la base de datos deben establecerse en valores adecuados después de que se ejecuten correctamente las operaciones de INSERCIÓN o ACTUALIZACIÓN. Para obtener más información, consulte [responsabilidades del Desarrollador en invalidar el comportamiento predeterminado](https://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).
@@ -34,9 +34,9 @@ Los procedimientos almacenados se pueden agregar a Object Relational Designer y 
 
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Para asignar procedimientos almacenados con el fin de invalidar el comportamiento predeterminado de una clase de entidad
 
-1. Abra el archivo de **LINQ to SQL** en el diseñador. (Haga doble clic en el archivo. dbml en **Explorador de soluciones**).
+1. Abra el archivo de **LINQ to SQL** en el diseñador. (Haga doble clic en el archivo .dbml en el **Explorador de soluciones**).
 
-2. En **Explorador de servidores** /**Explorador de bases de datos**, expanda **procedimientos almacenados** y busque los procedimientos almacenados que desea utilizar para los comandos de inserción, actualización y/o eliminación de la clase de entidad.
+2. En **Explorador de servidores** / **Explorador de bases de datos**, expanda **procedimientos almacenados** y busque los procedimientos almacenados que desea utilizar para los comandos de inserción, actualización y/o eliminación de la clase de entidad.
 
 3. Arrastre el procedimiento almacenado hasta Object Relational Designer.
 
@@ -52,7 +52,7 @@ Los procedimientos almacenados se pueden agregar a Object Relational Designer y 
 
 8. Seleccione el procedimiento almacenado que desee en la lista **Personalizar**.
 
-9. Examine la lista de **Argumentos de método** y **Propiedades de clase** para comprobar que los **Argumentos de método** se asignan a las **Propiedades de clase** adecuadas. Asigne los argumentos de método originales (Original_*ArgumentName*) a las propiedades originales (*PropertyName* (original)) para los comandos Update y DELETE.
+9. Examine la lista de **Argumentos de método** y **Propiedades de clase** para comprobar que los **Argumentos de método** se asignan a las **Propiedades de clase** adecuadas. Asigne los argumentos de método originales (Original_*ArgumentName*) a las propiedades originales (*NombreDePropiedad* (original)) para los comandos Update y DELETE.
 
     > [!NOTE]
     > De forma predeterminada, los argumentos de método se asignan a las propiedades de clase cuando los nombres coinciden. Si los nombres de propiedad modificados ya no coinciden entre la tabla y la clase de entidad, puede que tenga que seleccionar la propiedad de clase equivalente para la asignación si el diseñador no puede determinar la asignación correcta.
@@ -64,5 +64,5 @@ Los procedimientos almacenados se pueden agregar a Object Relational Designer y 
 
      Para revertir al uso de la lógica de tiempo de ejecución predeterminada para las actualizaciones, haga clic en los puntos suspensivos junto al comando Insertar, actualizar o eliminar en la ventana **propiedades** y, a continuación, seleccione **usar Runtime** en el cuadro de diálogo **configurar comportamiento** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [LINQ to SQL herramientas en](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [los métodos DataContext](../data-tools/datacontext-methods-o-r-designer.md) de Visual Studio (Object Relational Designer) [Tutorial: crear clases LINQ to SQL (object relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [operaciones de inserción, actualización y eliminación](https://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)

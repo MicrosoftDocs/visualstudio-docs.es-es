@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984468"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Diseñar un modelo de conectividad a datos profesionales
   Puede desarrollar un modelo para el servicio de conectividad a datos profesionales (BDC) agregando entidades y métodos a un archivo de modelo. Una entidad describe una colección de campos de datos. Por ejemplo, una entidad puede representar una tabla en una base de datos. Un método realiza una tarea como agregar, eliminar o actualizar los datos representados por las entidades. Para obtener más información, vea [integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
 
-## <a name="add-entities"></a>Agregar entidades
+## <a name="add-entities"></a>agregar entidades
  Puede Agregar una entidad arrastrando o copiando una **entidad** desde el **cuadro de herramientas** de Visual Studio hasta el diseñador de BDC. Para obtener más información, vea [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
- Defina los campos de la entidad en una clase. Por ejemplo, puede Agregar un campo denominado `Address` a una clase `Customer`. Puede Agregar una nueva clase al proyecto o utilizar una clase existente creada con otras herramientas, como el Object Relational Designer (Object Relational Designer). El nombre de la entidad y el nombre de la clase que representa la entidad no tienen que coincidir. La clase se relaciona con la entidad al definir los métodos en el modelo.
+ Defina los campos de la entidad en una clase. Por ejemplo, puede Agregar un campo denominado `Address` a una `Customer` clase. Puede Agregar una nueva clase al proyecto o utilizar una clase existente creada con otras herramientas, como el Object Relational Designer (Object Relational Designer). El nombre de la entidad y el nombre de la clase que representa la entidad no tienen que coincidir. La clase se relaciona con la entidad al definir los métodos en el modelo.
 
 ## <a name="add-methods"></a>Agregar métodos
  El servicio BDC llama a los métodos del modelo cuando los usuarios ven, agregan, actualizan o eliminan información en una lista o elemento Web basado en el modelo. Debe agregar un método al modelo para cada tarea que el usuario pueda realizar. Cree métodos seleccionando cualquiera de los cinco tipos de método básicos de la ventana **detalles del método de BDC** . En la tabla siguiente se describen los cinco métodos básicos de un modelo BDC.
@@ -35,14 +35,14 @@ ms.locfileid: "72984468"
 |------------|-----------------|
 |Selector|Devuelve una colección de instancias de entidad. Se llama cuando el usuario abre la lista o el elemento Web. Para obtener más información, consulte [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md).|
 |método Finder específico|Devuelve una instancia de entidad específica. Se llama cuando un usuario ve los detalles de un elemento específico en una lista. Para obtener más información, vea [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md).|
-|Creator|Agrega nuevos datos al origen de datos de una entidad. Se llama cuando los usuarios eligen el botón **nuevo elemento** de la cinta de opciones de una lista basada en el modelo. Para obtener más información, consulte [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md).|
+|Creador|Agrega nuevos datos al origen de datos de una entidad. Se llama cuando los usuarios eligen el botón **nuevo elemento** de la cinta de opciones de una lista basada en el modelo. Para obtener más información, consulte [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md).|
 |Updater|Modifica los datos de una lista. Se llama cuando los usuarios actualizan información en una lista. Para obtener más información, vea [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).|
 |Deleter|Quita los datos. Se le llama cuando los usuarios eliminan un elemento de la lista. Para obtener más información, consulte [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md).|
 
 ## <a name="define-method-parameters"></a>Definir parámetros de método
  Al crear un método, Visual Studio agrega los parámetros de entrada y salida adecuados para el tipo de método. Estos parámetros son simplemente marcadores de posición. En la mayoría de los casos, debe modificar los parámetros para que pasen o devuelvan el tipo de datos correcto. Por ejemplo, de forma predeterminada, un método Finder devuelve una cadena. En la mayoría de los casos, desea modificar el parámetro devuelto del método Finder para que devuelva una colección de entidades. Puede hacerlo modificando el descriptor de tipo del parámetro. Un descriptor de tipo es una colección de atributos que describe el tipo de datos de un parámetro. Para obtener más información, vea [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
- Visual Studio permite copiar descriptores de tipo entre los parámetros del modelo. Por ejemplo, podría definir un descriptor de tipo denominado `CustomerTD` para el parámetro devuelto del método `GetCustomer`. Puede copiar el `CustomerTD` descriptor de tipos en el **Explorador de BDC**y, a continuación, pegar ese descriptor de tipos en el parámetro de entrada del método `CreateCustomer`. Esto evita tener que definir el mismo descriptor de tipo más de una vez.
+ Visual Studio permite copiar descriptores de tipo entre los parámetros del modelo. Por ejemplo, podría definir un descriptor de tipo denominado `CustomerTD` para el parámetro devuelto del `GetCustomer` método. Puede copiar el `CustomerTD` descriptor de tipos en el **Explorador de BDC**y, a continuación, pegar el descriptor de tipos en el parámetro de entrada del `CreateCustomer` método. Esto evita tener que definir el mismo descriptor de tipo más de una vez.
 
 ## <a name="method-instances"></a>Instancias de método
  Cuando se crea un método, Visual Studio agrega una instancia de método predeterminada. Una instancia de método es una referencia a un método, además de los valores predeterminados de los parámetros. Un único método puede tener varias instancias de método. Cada instancia es una combinación de la firma del método y un conjunto de valores predeterminados. Para obtener más información, vea [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
@@ -71,7 +71,7 @@ ms.locfileid: "72984468"
 ## <a name="validate-the-model"></a>Validar el modelo
  Puede validar el modelo durante el desarrollo. Visual Studio identifica los problemas que pueden impedir que el modelo se comporte según lo esperado. Estos problemas aparecen en el **lista de errores**de Visual Studio.
 
- Para validar un modelo, abra el menú contextual del diseñador de BDC y, a continuación, elija **validar**. Si el modelo contiene errores, aparecen en el **lista de errores**. Puede trasladar rápidamente el cursor al código que contiene un error si hace doble clic en el error en la lista. Como alternativa, puede elegir repetidamente las teclas **F8** o **MAYÚS**+**F8** para ir hacia delante o hacia atrás por los errores de la lista.
+ Para validar un modelo, abra el menú contextual del diseñador de BDC y, a continuación, elija **validar**. Si el modelo contiene errores, aparecen en el **lista de errores**. Puede trasladar rápidamente el cursor al código que contiene un error si hace doble clic en el error en la lista. Como alternativa, puede elegir repetidamente las teclas **F8** o **MAYÚS** + **F8** para ir hacia delante o hacia atrás por los errores de la lista.
 
  Se pueden producir errores de validación cuando se infringen de alguna manera las reglas del modelo. Por ejemplo, si la propiedad **IsCollection** de un descriptor de tipo está establecida en **true**, pero no existe ningún descriptor de tipo secundario, aparecerá un error de validación. Es posible que tenga que hacer referencia a las reglas de un modelo BDC para comprender algunos errores que aparecen en la **lista de errores**de Visual Studio. Para obtener más información sobre las reglas de un modelo BDC, vea [BDCMetadata Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
@@ -89,7 +89,7 @@ ms.locfileid: "72984468"
 |----------|------------|
 |Para implementar modelos en el servicio BDC.|Editar|
 |Para crear listas y elementos web mediante el uso de tipos de contenido externo (entidades) en el modelo.|Seleccionable en clientes|
-|Para crear, leer, actualizar y eliminar datos de entidad.|Ejecutar|
+|Para crear, leer, actualizar y eliminar datos de entidad.|Execute|
 
  Para obtener más información acerca de esta configuración, vea [Administración del servicio de conectividad a datos profesionales](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14)).
 
