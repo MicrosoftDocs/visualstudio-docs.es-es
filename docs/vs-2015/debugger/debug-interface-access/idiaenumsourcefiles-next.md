@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fe965043ad854c31c933447452f1039ba40cd04a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189813"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un número especificado de archivos de origen en la secuencia de enumeración.  
+Recupera un número especificado de archivos de código fuente en la secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,18 +37,18 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] El número de archivos de origen en el enumerador que se va a recuperar.  
+ de El número de archivos de código fuente en el enumerador que se va a recuperar.  
   
  rgelt  
- [out] Una matriz que se va a rellenar con el [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objetos que representan los archivos de origen deseado.  
+ enuncia Matriz que se va a rellenar con los objetos [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representan los archivos de código fuente deseados.  
   
  pceltFetched  
- [out] Devuelve el número de archivos de origen en el enumerador capturado.  
+ enuncia Devuelve el número de archivos de código fuente en el enumerador recuperado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si hay no hay más archivos de origen. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay más archivos de código fuente. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession:: findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

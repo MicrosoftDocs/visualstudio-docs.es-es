@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658971"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
@@ -27,7 +27,7 @@ A través del teclado, se puede obtener acceso a la totalidad de la funcionalida
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Métodos abreviados de teclado del Diseñador de flujo de trabajo
  En la siguiente tabla se resumen los métodos abreviados de teclado predeterminados que se asignan a los comandos de [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
-|Acceso directo|Finalidad|
+|Acceso directo|Propósito|
 |--------------|-------------|
 |CTRL+E, A|Muestra u oculta el diseñador de argumentos.|
 |CTRL+E, C|Contrae la actividad seleccionada en el sitio.|
@@ -75,16 +75,16 @@ A través del teclado, se puede obtener acceso a la totalidad de la funcionalida
 
 - La reasignación de métodos abreviados de teclado para los siguientes comandos no tiene efecto alguno. Cuando edite una expresión, solo puede utilizar los métodos abreviados de teclado predeterminados para tener acceso a estos comandos.
 
-    1. Cut
+    1. Cortar
 
     2. Copiar
 
-    3. Paste
+    3. Pegar
 
     4. Seleccionar todo
 
-    5. Undo
+    5. Deshacer
 
-    6. Redo
+    6. Rehacer
 
 - Para reasignar los métodos abreviados de teclado para los comandos de edición de expresiones dentro de [!INCLUDE[wfd2](../includes/wfd2-md.md)] en [!INCLUDE[vs2010](../includes/vs2010-md.md)], modifique los accesos directos en el ámbito de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Los cambios realizados en el ámbito del Editor de texto no se aplican automáticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Si desea reasignar los accesos directos en ambos lugares, debe aplicar los cambios dos veces (una vez para cada ámbito).

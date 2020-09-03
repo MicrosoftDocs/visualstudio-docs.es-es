@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 17c4e2336a5c8bd8905d857dc8189a11f9fb6181
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540535"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Las propiedades de la colección deben ser de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|CollectionPropertiesShouldBeReadOnly|
 |Identificador de comprobación|CA2227|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

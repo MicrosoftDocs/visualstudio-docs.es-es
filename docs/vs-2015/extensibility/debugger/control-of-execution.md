@@ -11,10 +11,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c885c0c983e6fafd69d55b3d68f8ed6e8ff2628c
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387270"
 ---
 # <a name="control-of-execution"></a>Control de ejecución
@@ -41,11 +41,11 @@ El motor DE depuración (DE) envía normalmente uno de los siguientes eventos co
   
 5. Si el usuario elige depurar paso a paso por instrucciones, sobre o fuera de una función, el IDE solicitará a la sesión de depuración que llame al método del programa `Step` , pasándole la unidad de paso (instrucción, instrucción o línea) y el tipo de paso, es decir, si se depurará paso a paso por instrucciones, por encima o fuera de la función. Una vez completado el paso, el DE envía un evento Step complete a la sesión de depuración, que es un evento DE detención.  
   
-    O bien  
+    o bien  
   
     Si el usuario decide continuar la ejecución desde el puntero de instrucción actual, el IDE solicitará a la sesión de depuración que llame al método **Execute** del programa. El programa reanuda la ejecución hasta que encuentra la siguiente condición de detención.  
   
-    O bien  
+    o bien  
   
     Si la sesión de depuración es omitir un evento de detención determinado, la sesión de depuración llama al método **continue** del programa. Si el programa se detuvo paso a paso, sobre o fuera de una función cuando se produjo la condición de detención, continúa con el paso.  
   

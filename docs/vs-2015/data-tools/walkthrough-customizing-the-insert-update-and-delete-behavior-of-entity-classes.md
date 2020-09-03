@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9901d917de2babf4992519ffe6b360454542aad1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602571"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Tutorial: Personalización del comportamiento de inserción, actualización y eliminación de las clases de entidades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[En las herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) se proporciona una superficie de diseño visual para crear y editar clases de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] (clases de entidad) basadas en objetos de una base de datos. Con [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), puede usar la tecnología LINQ para tener acceso a las bases de datos SQL. Para más información, consulte [LINQ (Language Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).
+[En las herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) se proporciona una superficie de diseño visual para crear y editar [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] clases (clases de entidad) basadas en objetos de una base de datos. Con [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), puede usar la tecnología LINQ para tener acceso a las bases de datos SQL. Para obtener más información, consulte [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).
 
  El motor en tiempo de ejecución [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] proporciona, de forma predeterminada, la lógica para realizar actualizaciones. El motor en tiempo de ejecución crea las instrucciones predeterminadas de inserción, actualización y eliminación basándose en el esquema de la tabla (definiciones de columna e información de la clave principal). Cuando no se desea usar el comportamiento predeterminado, se puede configurar el comportamiento de actualización y designar procedimientos almacenados concretos para realizar las inserciones, actualizaciones y eliminaciones necesarias para poder trabajar con los datos de la base de datos. También se puede realizar esta acción cuando no se genera el comportamiento predeterminado, por ejemplo, cuando las clases de entidad se asignan a vistas. Además, se puede invalidar el comportamiento de actualización predeterminado cuando la base de datos requiere el acceso a las tablas a través de procedimientos almacenados. Para obtener más información, vea [personalizar las operaciones mediante procedimientos almacenados](https://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).
 
@@ -44,7 +44,7 @@ ms.locfileid: "72602571"
 
 - Configurar la clase Customer de modo que se usen los procedimientos almacenados para realizar inserciones, actualizaciones y eliminaciones.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para realizar este tutorial, necesita lo siguiente:
 
 - Acceso a la versión de SQL Server de la base de datos de ejemplo Northwind.
@@ -78,13 +78,13 @@ ms.locfileid: "72602571"
      Se agrega al proyecto un archivo de clases de LINQ to SQL vacío (Northwind.dbml) y se abre el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
 ## <a name="creating-the-customer-entity-class-and-object-data-source"></a>Crear la clase de entidad Customer y el origen de datos de objeto
- Cree [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] clases asignadas a las tablas de base de datos arrastrando las tablas desde **Explorador de servidores** /**Explorador de bases de datos** hasta el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. El resultado serán las clases de entidad de LINQ to SQL que se asignan a las tablas en la base de datos. Después de crear las clases de entidad, éstas se pueden usar como orígenes de datos de objeto igual que cualquier otra clase que tenga propiedades públicas.
+ Cree [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] las clases que se asignan a las tablas de base de datos arrastrando las tablas desde **Explorador de servidores** / **Explorador de bases de datos** al [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . El resultado serán las clases de entidad de LINQ to SQL que se asignan a las tablas en la base de datos. Después de crear las clases de entidad, éstas se pueden usar como orígenes de datos de objeto igual que cualquier otra clase que tenga propiedades públicas.
 
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Para crear una clase de entidad Customer y configurar con ella un origen de datos
 
-1. En **Explorador de servidores** /**Explorador de bases de datos**, busque la tabla Customer en la versión SQL Server de la base de datos de ejemplo Northwind.
+1. En **Explorador de servidores** / **Explorador de bases de datos**, busque la tabla Customer en la versión SQL Server de la base de datos de ejemplo Northwind.
 
-2. Arrastre el nodo **Customers** desde **Explorador de servidores** /**Explorador de bases de datos** hasta la superficie de [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Arrastre el nodo **Customers** desde **Explorador de servidores** / **Explorador de bases de datos** hasta la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] superficie.
 
      Se crea una clase de entidad denominada **Customer**. Dicha clase tiene propiedades que corresponden a las columnas de la tabla Customers. La clase de entidad se denomina **Customer** (no **Customers**) porque representa a un único cliente de la tabla Customers.
 
@@ -107,7 +107,7 @@ ms.locfileid: "72602571"
 8. Haga clic en **Finalizar** para crear el origen de datos y agregar la clase de entidad **Customer** a la ventana **Orígenes de datos**.
 
 ## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Crear un control DataGridView para mostrar los datos del cliente en un formulario Windows Forms
- Cree controles enlazados a las clases de entidad arrastrando [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] elementos de origen de datos desde la ventana **orígenes de datos** hasta un formulario Windows Forms.
+ Cree controles enlazados a las clases de entidad arrastrando [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] los elementos de origen de datos desde la ventana **orígenes de datos** hasta un formulario Windows Forms.
 
 #### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Para agregar controles enlazados a las clases de entidad
 
@@ -173,17 +173,17 @@ ms.locfileid: "72602571"
 
 1. Abra el archivo de LINQ to SQL en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Haga doble clic en el archivo **Northwind.dbml** en el **Explorador de soluciones**.
 
-2. En **Explorador de servidores** /**Explorador de bases de datos**, expanda el nodo de **procedimientos** almacenados de bases de datos Northwind y busque los procedimientos almacenados **InsertCustomers**, **UpdateCustomers**y **DeleteCustomers** .
+2. En **Explorador de servidores** / **Explorador de bases de datos**, expanda el nodo de **procedimientos** almacenados de bases de datos Northwind y busque los procedimientos almacenados **InsertCustomers**, **UpdateCustomers**y **DeleteCustomers** .
 
 3. Arrastre los tres procedimientos almacenados al [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Los procedimientos almacenados se agregan al panel de métodos como métodos de <xref:System.Data.Linq.DataContext>. Para obtener más información, vea [métodos DataContext (Object](../data-tools/datacontext-methods-o-r-designer.md)Relational Designer).
 
-4. Seleccione la clase de entidad **Customer** en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+4. Seleccione la clase de entidad **Customer** en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] .
 
 5. En la ventana **Propiedades**, seleccione la propiedad **Insertar**.
 
-6. Haga clic en los puntos suspensivos (...) junto a **usar tiempo de ejecución** para abrir el cuadro de diálogo **configurar comportamiento** .
+6. Haga clic en los puntos suspensivos (...) junto a **Usar motor en tiempo de ejecución** para abrir el cuadro de diálogo **Configurar comportamiento**.
 
 7. Seleccione **Personalizar**.
 
@@ -202,10 +202,10 @@ ms.locfileid: "72602571"
 
      Examine la lista de **Argumentos de método** y **Propiedades de clase**, y observe que hay dos **argumentos de método** y dos **propiedades de clase** para algunas columnas de la tabla. De esta manera, resulta más fácil realizar un seguimiento de los cambios y crear instrucciones que comprueben las infracciones de simultaneidad.
 
-13. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)** .
+13. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)**.
 
     > [!NOTE]
-    > De forma predeterminada, los argumentos de método se asignarán a las propiedades de clase cuando los nombres coincidan. Si se modifican los nombres de propiedad y ya no hay coincidencia entre la tabla y la clase de entidad, puede que tenga que seleccionar la propiedad de clase equivalente para la asignación si el Object Relational Designer no puede determinar la asignación correcta. Además, si los argumentos de método no tienen propiedades de clase válidas a las que asignarse, puede establecer el valor de **Propiedades de clase** en **(Ninguno)** .
+    > De forma predeterminada, los argumentos de método se asignarán a las propiedades de clase cuando los nombres coincidan. Si se modifican los nombres de propiedad y ya no hay coincidencia entre la tabla y la clase de entidad, puede que tenga que seleccionar la propiedad de clase equivalente para la asignación si el Object Relational Designer no puede determinar la asignación correcta. Además, si los argumentos de método no tienen propiedades de clase válidas a las que asignarse, puede establecer el valor de **Propiedades de clase** en **(Ninguno)**.
 
 14. Haga clic en **Aplicar** para guardar la configuración de la clase y el comportamiento seleccionados.
 
@@ -215,7 +215,7 @@ ms.locfileid: "72602571"
 
 17. Seleccione el método **DeleteCustomers** en la lista **Personalizar**.
 
-18. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)** .
+18. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)**.
 
 19. Haga clic en **Aceptar**.
 
@@ -248,14 +248,14 @@ ms.locfileid: "72602571"
 10. Presione F5 y compruebe que el registro eliminado se quitó de la base de datos.
 
     > [!NOTE]
-    > Si la aplicación usa SQL Server Express Edition, dependiendo del valor de la propiedad **Copiar en el directorio de salida** del archivo de base de datos, puede que los cambios no aparezcan al presionar F5 en el paso 10.
+    > Si la aplicación usa SQL Server Express Edition, dependiendo del valor de la propiedad **Copiar en el directorio de resultados** del archivo de base de datos, puede que los cambios no aparezcan al presionar F5 en el paso 10.
 
 ## <a name="next-steps"></a>Pasos siguientes
  Dependiendo de los requisitos de la aplicación, hay varios pasos que se pueden dar después de crear las clases de entidad de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Entre las mejoras que podría realizar a esta aplicación se incluyen:
 
 - Implementar la comprobación de simultaneidad durante las actualizaciones. Para obtener información, consulte [simultaneidad optimista: información general](https://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).
 
-- Agregar consultas LINQ para filtrar los datos. Para obtener información, consulte [Introduction to LINQC#queries ()](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).
+- Agregar consultas LINQ para filtrar los datos. Para obtener más información, vea [Introducción a las consultas LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).
 
-## <a name="see-also"></a>Vea también
- [LINQ to SQL herramientas de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [LINQ to SQL consultas](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae) [métodos de DataContext (o/r Designer)](../data-tools/datacontext-methods-o-r-designer.md) [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (o/r Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [Prepare what's New for Desarrollo de aplicaciones de datos en Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)
+## <a name="see-also"></a>Consulte también
+ [LINQ to SQL herramientas de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [LINQ to SQL consultas](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae) [métodos DataContext (o/r Designer)](../data-tools/datacontext-methods-o-r-designer.md) [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [Prepare what's New for Data Application Development in Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcc993ab7c127b16fda206047a1a985d1e003123
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663176"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Ver tipos y relaciones (Diseñador de clases)
@@ -41,7 +41,7 @@ El Diseñador de clases usa diagramas de clases para mostrar los detalles de los
 
  Describe cómo ver las relaciones de herencia entre tipos.
 
- [Cómo: Cambiar entre notación de miembro y notación de asociación (Diseñador de clases)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+ [Cómo: cambiar entre notación de miembro y notación de asociación (Diseñador de clases)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
 
  Describe cómo cambiar entre notación de miembro y notación de asociación.
 
@@ -50,6 +50,6 @@ El Diseñador de clases usa diagramas de clases para mostrar los detalles de los
 
  [Refactorización de clases y tipos (Diseñador de clases)](../ide/refactoring-classes-and-types-class-designer.md)
 
- [Cómo: Personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Cómo: personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)
 
  [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)

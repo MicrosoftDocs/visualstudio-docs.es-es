@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines ? Microsoft Docs
+title: 'IDebugProgramEngines2:: EnumPossibleEngines | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722430"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-Devuelve los GUID para todos los posibles motores de depuración (DE) que pueden depurar este programa.
+Devuelve los GUID para todos los motores de depuración posibles (DE) que pueden depurar este programa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,19 +45,19 @@ int EnumPossibleEngines( 
 
 ## <a name="parameters"></a>Parámetros
 `celtBuffer`\
-[en] El número de GUID DE que se van a devolver. Esto también especifica el tamaño `rgguidEngines` máximo de la matriz.
+de Número de GUID que se van a devolver. También especifica el tamaño máximo de la `rgguidEngines` matriz.
 
 `rgguidEngines`\
-[adentro, fuera] Matriz de GUID DE que se van a rellenar.
+[in, out] Matriz de de GUID que se va a rellenar.
 
 `pceltEngines`\
-[fuera] Devuelve el número real de GUID DE que se devuelven.
+enuncia Devuelve el número real de GUID que se devuelven.
 
 ## <a name="return-value"></a>Valor devuelto
- Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [C-] 0x8007007A si el búfer no es lo suficientemente grande.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [C#] 0x8007007A si el búfer no es suficientemente grande.
 
 ## <a name="remarks"></a>Observaciones
- Para determinar cuántos motores hay, llame a este `celtBuffer` método una vez `rgguidEngines` con el parámetro establecido en 0 y el parámetro establecido en un valor nulo. Esto `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` devuelve (0x8007007A para C-), y el `pceltEngines` parámetro devuelve el tamaño necesario del búfer.
+ Con el fin de determinar cuántos motores hay, llame una vez a este método con el `celtBuffer` parámetro establecido en 0 y el `rgguidEngines` parámetro establecido en un valor null. Devuelve `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A para C#) y el `pceltEngines` parámetro devuelve el tamaño necesario del búfer.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

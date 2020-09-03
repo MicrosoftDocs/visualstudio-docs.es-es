@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540847"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |Identificador de comprobación|CA2223|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

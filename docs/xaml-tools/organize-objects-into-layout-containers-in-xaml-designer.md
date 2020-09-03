@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86459299"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos en contenedores de diseño en el Diseñador XAML
@@ -43,11 +43,11 @@ Organice los objetos en regiones de cuadrícula iguales o uniformes. Este panel 
 
 ![Panel de diseño UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Canvas
+### <a name="canvas"></a>Lienzo
 
 Organice los objetos como desee. Cuando los usuarios ejecuten la aplicación, estos elementos tendrán una posición fija en la pantalla.
 
-![Panel de diseño de lienzo](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
+![Panel de diseño de Canvas](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 
@@ -95,7 +95,7 @@ Permita que los usuarios se desplacen hacia abajo en una página o parte de una 
 
 ![Control de diseño ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 
-### <a name="viewbox"></a>Viewbox
+### <a name="viewbox"></a>Cuadro de vídeo
 
 Escale objetos igual que haría con un control de zoom. Solo puede agregar un objeto a un elemento **Viewbox**. Si quiere aplicar ese efecto a más de un objeto, agregue un panel de diseño al control **ViewBox** y, después, agregue los controles a dicho panel de diseño.
 

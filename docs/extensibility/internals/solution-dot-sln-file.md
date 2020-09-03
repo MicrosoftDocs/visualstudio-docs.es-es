@@ -160,7 +160,7 @@ Cada VSPackage cargado se enumera para ver si tiene algo que guardar en el archi
 
 Solo el archivo. sln contiene entradas en las `preSolution` `postSolution` secciones y. No hay secciones similares en el archivo. suo, ya que la solución necesita esta información para cargar correctamente. El archivo. suo contiene opciones específicas del usuario, como notas privadas, que no están diseñadas para ser compartidas o colocadas bajo control de código fuente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [Archivo de opciones de usuario de la solución (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

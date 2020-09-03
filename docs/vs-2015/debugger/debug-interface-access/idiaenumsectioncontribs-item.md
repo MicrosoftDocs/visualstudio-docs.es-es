@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06a82fbb52ccdf0f9fb9fda50a74f2cfb30e7648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190010"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
@@ -35,15 +35,15 @@ HRESULT Item ( 
 ```  
   
 #### <a name="parameters"></a>Parámetros  
- index  
- [in] Índice de la [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) objeto va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde `count` devuelto por la [Idiaenumsectioncontribs](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md) método.  
+ índice  
+ de Índice del objeto [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) que se va a recuperar. El índice está en el intervalo de 0 a `count` -1, donde `count` es devuelto por el método [IDiaEnumSectionContribs:: get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md) .  
   
  section  
- [out] Devuelve un [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) objeto que representa la contribución de la sección deseada.  
+ enuncia Devuelve un objeto [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) que representa la contribución de la sección deseada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
- [IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
+## <a name="see-also"></a>Consulte también  
+ [IDiaEnumSectionContribs:: get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

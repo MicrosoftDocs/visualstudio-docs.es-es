@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9bf941babd943c6856809a13de847b62745b2056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72605011"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Crear una aplicación de servicio de flujo de trabajo WCF
@@ -23,11 +23,11 @@ Las aplicaciones de servicio de flujo de trabajo [!INCLUDE[indigo1](../includes/
 
 1. Inicie [!INCLUDE[vs2010](../includes/vs2010-md.md)].
 
-2. En el menú **archivo** , seleccione **nuevo**y, a continuación, seleccione **proyecto.** .
+2. En el menú **archivo** , seleccione **nuevo**y, a continuación, seleccione **proyecto..**..
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 
-3. En el panel **plantillas instaladas** , **Seleccione WCF** o **flujo de trabajo** desde las agrupaciones **Visual C#**  o **Visual Basic** en función del lenguaje que elija.
+3. En el panel **plantillas instaladas** , **Seleccione WCF** o **flujo de trabajo** de las agrupaciones de **Visual C#** o **Visual Basic** en función del lenguaje que elija.
 
 4. En el panel central, seleccione **aplicación de servicio de flujo de trabajo WCF**.
 
@@ -38,9 +38,9 @@ Las aplicaciones de servicio de flujo de trabajo [!INCLUDE[indigo1](../includes/
 7. En el cuadro **solución** , seleccione crear una nueva solución y, a continuación, haga clic en **Aceptar**.
 
     > [!NOTE]
-    > Si desea agregar una aplicación de consola de flujos de trabajo a una solución existente, ábrala en [!INCLUDE[vs2010](../includes/vs2010-md.md)], haga clic con el botón derecho en la solución en **Explorador de soluciones**y seleccione **Agregar**y luego **nuevo proyecto.** . para abrir el cuadro de diálogo **nuevo proyecto** . Continúe de la forma descrita anteriormente en este procedimiento.
+    > Si desea agregar una aplicación de consola de flujos de trabajo a una solución existente, ábrala en [!INCLUDE[vs2010](../includes/vs2010-md.md)] , haga clic con el botón derecho en la solución en **Explorador de soluciones**y seleccione **Agregar**y luego **nuevo proyecto...** para abrir el cuadro de diálogo **nuevo proyecto** . Continúe de la forma descrita anteriormente en este procedimiento.
 
 8. La plantilla de proyecto crea una definición de servicio como XAML. Se abre [!INCLUDE[wfd1](../includes/wfd1-md.md)] en la vista de diseño con una actividad <xref:System.Activities.Statements.Sequence> que contiene un conjunto de actividades <xref:System.ServiceModel.Activities.Receive> y <xref:System.ServiceModel.Activities.SendReply>.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: crear una actividad](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436) [crear un proyecto de flujo de trabajo](../workflow-designer/creating-a-workflow-project.md)

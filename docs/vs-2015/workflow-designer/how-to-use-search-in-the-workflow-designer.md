@@ -10,10 +10,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84f74b4718a7f976b386197a79692256ab49caa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659122"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Usar una búsqueda en el Diseñador de flujo de trabajo
@@ -49,4 +49,4 @@ Para facilitar la creación de flujos de trabajo mayores y más complejos, se pu
 
 2. Escriba el elemento de búsqueda en el cuadro de texto **Buscar** y haga clic en **buscar todo** .
 
-3. El resultado de la búsqueda se mostrará en la vista [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] resultados de la**búsqueda** . Al hacer doble clic, un elemento de resultado navegará a la actividad que contiene la coincidencia en el diseñador de flujo de trabajo.
+3. El resultado de la búsqueda se mostrará en la vista resultado de la [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **búsqueda** . Al hacer doble clic, un elemento de resultado navegará a la actividad que contiene la coincidencia en el diseñador de flujo de trabajo.

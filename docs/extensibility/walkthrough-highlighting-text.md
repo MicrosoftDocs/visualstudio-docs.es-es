@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
-ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86418060"
 ---
 # <a name="walkthrough-highlight-text"></a>Tutorial: resaltar texto

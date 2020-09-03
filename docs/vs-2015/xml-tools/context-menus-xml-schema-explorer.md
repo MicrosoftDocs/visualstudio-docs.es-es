@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5065ecb1dc0905d1aa593ee4aa62dddd2f62c3a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609625"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (Explorador de esquemas XML)
@@ -26,10 +26,10 @@ Los elementos de menú contextual siguientes se usan para realizar búsquedas es
 
 |Opción|Descripción|
 |------------|-----------------|
-|**Mostrar los elementos raíz más probables**|Busca y resalta todos los elementos globales a los que no hacen referencia más elementos globales que ellos mismos.|
+|**Mostrar elementos raíz más probables**|Busca y resalta todos los elementos globales a los que no hacen referencia más elementos globales que ellos mismos.|
 |**Mostrar tipos globales**|Busca y resalta todos los tipos globales existentes en el esquema establecido.|
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales existentes en el esquema establecido.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **Propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="node-type-namespace"></a>Tipo de nodo: espacio de nombres
  En la tabla siguiente se describen las opciones disponibles para un nodo de espacio de nombres.
@@ -37,10 +37,10 @@ Los elementos de menú contextual siguientes se usan para realizar búsquedas es
 |Opción|Descripción|
 |------------|-----------------|
 |**Mostrar todas las referencias de entrada**|Busca y resalta los archivos que importan el espacio de nombres seleccionado.|
-|**Mostrar todas las referencias salientes**|Para cada archivo del espacio de nombres seleccionado, busca y resalta lo siguiente:<br /><br /> -Todos los espacios de nombres a los que se hace referencia en instrucciones Import sin un atributo `schemaLocation`.<br />-Todos los archivos en espacios de nombres distintos del seleccionado que se especifican en el `schemaLocation` atributo en las instrucciones Import e include.|
+|**Mostrar todas las referencias de salida**|Para cada archivo del espacio de nombres seleccionado, busca y resalta lo siguiente:<br /><br /> -   Todos los espacios de nombres a los que se hace referencia en las instrucciones de importación que no tienen un atributo `schemaLocation`.<br />-   Todos los archivos de los espacios de nombres distintos del seleccionado que se especifican en el atributo `schemaLocation` de las instrucciones de importación y de inclusión.|
 |**Mostrar tipos globales**|Busca y resalta todos los tipos globales existentes en el espacio de nombres seleccionado.|
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales existentes en el espacio de nombres seleccionado.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **Propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="node-type-file"></a>Tipo de nodo: archivo
  En la tabla siguiente se describen las opciones disponibles para un nodo de archivo.
@@ -48,21 +48,21 @@ Los elementos de menú contextual siguientes se usan para realizar búsquedas es
 |Opción|Descripción|
 |------------|-----------------|
 |**Mostrar todas las referencias de entrada**|Busca y resalta todos los archivos que especifican el archivo seleccionado en los atributos `schemaLocation` de las instrucciones de importación y de inclusión.|
-|**Mostrar todas las referencias salientes**|Busca y resalta lo siguiente:<br /><br /> -Todos los espacios de nombres especificados en los atributos de espacio de nombres de todas las instrucciones de importación que no tienen el atributo `schemaLocation`.<br />-Todos los archivos especificados en el `schemaLocation` atributos de todas las instrucciones Import e include.|
+|**Mostrar todas las referencias de salida**|Busca y resalta lo siguiente:<br /><br /> -   Todos los espacios de nombres especificados en los atributos de espacio de nombres de todas las instrucciones de importación que no tienen el atributo `schemaLocation`.<br />-   Todos los archivos especificados en los atributos `schemaLocation` de todas las instrucciones de importación y de inclusión.|
 |**Mostrar tipos globales**|Busca y resalta todos los tipos globales de este archivo.|
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales de este archivo.|
 |**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento que está seleccionado en el Explorador de esquemas XML también estará seleccionado en el Editor XML.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **Propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="all-global-node-types"></a>Todos los tipos de nodos globales
  En la tabla siguiente se describen las opciones disponibles para todos los nodos globales.
 
 |Opción|Descripción|
 |------------|-----------------|
-|**Mostrar en la vista gráfico**|Abre la vista Gráfico. Si el nodo seleccionado no está en el área de trabajo, lo agrega a esta y lo selecciona.|
-|**Mostrar en la vista modelo de contenido**|Abre la vista Modelo de contenido. Si el nodo seleccionado no está en el área de trabajo, lo agrega a esta y lo selecciona.|
+|**Mostrar en la vista Gráfico**|Abre la vista Gráfico. Si el nodo seleccionado no está en el área de trabajo, lo agrega a esta y lo selecciona.|
+|**Mostrar en la vista Modelo de contenido**|Abre la vista Modelo de contenido. Si el nodo seleccionado no está en el área de trabajo, lo agrega a esta y lo selecciona.|
 |**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento que está seleccionado en el Explorador de esquemas XML también estará seleccionado en el Editor XML.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **Propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="node-type-element"></a>Tipo de nodo: elemento
  Además de las opciones de nodo global descritas anteriormente, el menú contextual para los nodos de elemento tiene las siguientes opciones:
@@ -73,7 +73,7 @@ Los elementos de menú contextual siguientes se usan para realizar búsquedas es
 |**Ir al elemento original**|Para las referencias de elemento, navega a la definición efectiva del elemento.|
 |**Mostrar todas las referencias**|Para los elementos globales, busca y resalta todas las referencias (los elementos con `ref="selectedElement"`) al elemento seleccionado.|
 |**Mostrar miembros del grupo de sustitución**|Para los encabezados de un grupo de sustitución, busca y resalta todos los elementos que son miembros del grupo de sustitución al que pertenece el elemento seleccionado. Muestra los participantes directos e indirectos.|
-|**Mostrar encabezados de grupo de sustitución**|Para los elementos globales que son miembros de un grupo de sustitución, busca y resalta todos los encabezados directos e indirectos del elemento seleccionado, como los siguientes:<br /><br /> : Un encabezado de grupo de sustitución especificado en el elemento seleccionado.<br />: Un encabezado de grupo de sustitución especificado en su elemento de encabezado.|
+|**Mostrar encabezados del grupo de sustitución**|Para los elementos globales que son miembros de un grupo de sustitución, busca y resalta todos los encabezados directos e indirectos del elemento seleccionado, como los siguientes:<br /><br /> -   Un encabezado de grupo de sustitución especificado en el elemento seleccionado.<br />-   Un encabezado de grupo de sustitución especificado en su elemento de encabezado.|
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
 
 ## <a name="node-type-global-types"></a>Tipo de nodo: tipos globales
@@ -113,5 +113,5 @@ Los elementos de menú contextual siguientes se usan para realizar búsquedas es
 |**Mostrar todos los miembros**|Busca y resalta todos los miembros del grupo con nombre.|
 |**Mostrar todas las referencias**|Busca y resalta todas las referencias (los grupos con `ref="selectedGroup"`) al grupo seleccionado.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md) [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md)

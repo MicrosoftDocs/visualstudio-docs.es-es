@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85c07ad7995bc614df4b988bb17fa8977452b5d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673059"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
@@ -44,21 +44,21 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 > [!NOTE]
 > Si no usa características de enlace de datos, conjuntos de datos, Entity Framework, LINQ to SQL, WCF o SharePoint, no se aplica el concepto de "origen de datos". Solo tiene que conectarse directamente a la base de datos mediante los objetos SQLCommand y comunicarse directamente con la base de datos.
 
- Los orígenes de datos se crean y editan mediante el **Asistente para la configuración de orígenes de datos** en una aplicación Windows Forms o Windows Presentation Foundation. Por Entity Framework, cree primero las clases de entidad y, a continuación, inicie el asistente seleccionando **proyecto**  > **Agregar nuevo origen de datos** (se describe con más detalle más adelante en este artículo).
+ Los orígenes de datos se crean y editan mediante el **Asistente para la configuración de orígenes de datos** en una aplicación Windows Forms o Windows Presentation Foundation. Por Entity Framework, cree primero las clases de entidad y, a continuación, inicie el asistente seleccionando **proyecto**  >  **Agregar nuevo origen de datos** (se describe con más detalle más adelante en este artículo).
 
  ![Asistente para configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png "Asistente para configuración de orígenes de datos")
 
- Después de crear un origen de datos, este aparece en la ventana de herramientas **orígenes de datos** (Mayús + Alt + D o **Ver**  > **otras ventanas**  > **origen de datos**). Puede arrastrar un origen de datos desde la ventana **orígenes de datos** hasta una superficie de diseño de formulario o un control. Esto hace que se genere código reutilizable: código que muestra los datos que se originan en el almacén de datos para el usuario. En la ilustración siguiente se muestra un conjunto de elementos que se ha colocado en Windows Forms. Si seleccionó F5 en la aplicación, los datos de la base de datos subyacente aparecen en los controles del formulario.
+ Después de crear un origen de datos, este aparece en la ventana de herramientas **orígenes de datos** (Mayús + Alt + D o **Ver**  >  **otro**  >  **origen de datos**de Windows). Puede arrastrar un origen de datos desde la ventana **orígenes de datos** hasta una superficie de diseño de formulario o un control. Esto hace que se genere código reutilizable: código que muestra los datos que se originan en el almacén de datos para el usuario. En la ilustración siguiente se muestra un conjunto de elementos que se ha colocado en Windows Forms. Si seleccionó F5 en la aplicación, los datos de la base de datos subyacente aparecen en los controles del formulario.
 
  ![Operación de arrastre de origen de datos](../data-tools/media/raddata-data-source-drag-operation.png "raddata operación de arrastre de origen de datos")
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Origen de datos de una base de datos o un archivo de base de datos
 
-### <a name="dataset"></a>Conjunto de datos
- Para crear un conjunto de datos como un origen de datos, ejecute el **Asistente para configuración de orígenes de datos** (**proyecto**  > **Agregar nuevo** origen de datos) y elija el tipo de origen de datos de la **base** de datos. Siga las indicaciones para especificar una conexión de base de datos nueva o existente, o un archivo de base de datos.
+### <a name="dataset"></a>Dataset
+ Para crear un conjunto de datos como un origen de datos, ejecute el **Asistente para configuración de orígenes de datos** (**proyecto**  >  **Agregar nuevo** origen de datos) y elija el tipo de origen de datos de la **base** de datos. Siga las indicaciones para especificar una conexión de base de datos nueva o existente, o un archivo de base de datos.
 
 ### <a name="entity-classes"></a>Clases de entidad
- Para crear un modelo de Entity Framework como un origen de datos, ejecute primero el **Asistente para Entity Data Model** con el fin de crear las clases de entidad (**proyecto**  > **agregar nuevo elemento**  > **ADO.NET Entity Data Model**).
+ Para crear un modelo de Entity Framework como un origen de datos, ejecute primero el **Asistente para Entity Data Model** con el fin de crear las clases de entidad (**proyecto**  >  **Add New Item**  >  **ADO.NET Entity Data Model**).
 
  ![Nuevo elemento de proyecto de modelo de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata nuevo elemento de proyecto de modelo de Entity Framework")
 
@@ -77,7 +77,7 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 
  Puede crear un origen de datos a partir de los siguientes tipos de servicios:
 
-- Data Services de WCF. Para obtener más información, vea [información general](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
+- Data Services de WCF. Para más información, consulte [Información general](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
 - Servicios de datos de WCF. Para obtener más información, vea [servicios de Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).
 
@@ -97,10 +97,10 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 > Es posible que necesite compilar el proyecto que contiene los objetos antes de que los objetos aparezcan en la vista de árbol.
 
 > [!NOTE]
-> Para admitir el enlace de datos de arrastrar y colocar, los objetos que implementan la interfaz <xref:System.ComponentModel.ITypedList> o <xref:System.ComponentModel.IListSource> deben tener un constructor predeterminado. De lo contrario, Visual Studio no puede crear una instancia del objeto de origen de datos y mostrará un error al arrastrar el elemento a la superficie de diseño.
+> Para admitir el enlace de datos de arrastrar y colocar, los objetos que implementan la <xref:System.ComponentModel.ITypedList> <xref:System.ComponentModel.IListSource> interfaz o deben tener un constructor predeterminado. De lo contrario, Visual Studio no puede crear una instancia del objeto de origen de datos y mostrará un error al arrastrar el elemento a la superficie de diseño.
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Origen de datos para una lista de SharePoint
- Puede crear un origen de datos a partir de una lista de SharePoint ejecutando el **Asistente para la configuración de orígenes de datos** y seleccionando el tipo de origen de datos de **SharePoint** . SharePoint expone los datos a través de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], por lo que la creación de un origen de datos de SharePoint es la misma que la creación de un origen de datos a partir de un servicio. Al seleccionar el elemento de **SharePoint** en el **Asistente para la configuración de orígenes de datos** , se abre el cuadro de diálogo **Agregar referencia de servicio** , donde se conecta al servicio de datos de SharePoint apuntando al servidor de SharePoint.  Esto requiere el SDK de SharePoint.
+ Puede crear un origen de datos a partir de una lista de SharePoint ejecutando el **Asistente para la configuración de orígenes de datos** y seleccionando el tipo de origen de datos de **SharePoint** . SharePoint expone los datos a través de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] , por lo que la creación de un origen de datos de SharePoint es la misma que la creación de un origen de datos a partir de un servicio. Al seleccionar el elemento de **SharePoint** en el **Asistente para la configuración de orígenes de datos** , se abre el cuadro de diálogo **Agregar referencia de servicio** , donde se conecta al servicio de datos de SharePoint apuntando al servidor de SharePoint.  Esto requiere el SDK de SharePoint.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,5 +1,5 @@
 ---
-title: Modelar la&#39;arquitectura de la aplicación | Microsoft Docs
+title: Modelar la arquitectura de la aplicación&#39;s | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41dbb7b996c32af10010694935cbd3660b462f73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609644"
 ---
-# <a name="model-your-app39s-architecture"></a>Modelar la&#39;arquitectura de la aplicación
+# <a name="model-your-app39s-architecture"></a>Modelar la arquitectura de la aplicación&#39;s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para ayudar a garantizar que el sistema de software o la aplicación cumplan las necesidades de los usuarios, puede crear modelos en Visual Studio como parte de la descripción de la estructura y el comportamiento generales del sistema de software o de la aplicación. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
+Para asegurarse de que su sistema de software o aplicación satisface las necesidades de los usuarios, puede crear modelos en Visual Studio como parte de la descripción de la estructura y el comportamiento globales del sistema de software o aplicación. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -36,7 +36,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
 - [Modelos de diseño](#Patterns) y convenciones que se usan en los diseños de los componentes. Un modelo describe un determinado enfoque para lograr un objetivo de programación. Si se usan los mismos modelos a lo largo de un diseño completo, el equipo puede reducir el costo que suponen los cambios y el desarrollo de nuevo software.
 
-## <a name="Structure"></a>Diseño de alto nivel
+## <a name="high-level-design"></a><a name="Structure"></a> Diseño de alto nivel
  En un diseño de alto nivel se describen los componentes principales del sistema y el modo en que interactúan entre sí para lograr los objetivos del diseño. En el desarrollo del diseño de alto nivel están implicadas las actividades de la lista siguiente, aunque no necesariamente en un orden determinado.
 
  Si está actualizando código existente, puede comenzar por describir los componentes principales. Asegúrese de que comprende los cambios que deben realizarse en los requisitos de los usuarios y, a continuación, agregue o modifique las interacciones entre los componentes. Si está desarrollando un sistema nuevo, comience por identificar las características principales de las necesidades de los usuarios. A continuación, puede analizar las secuencias de interacciones de los casos de uso principales y, posteriormente, consolidar las secuencias en un diseño de componentes.
@@ -53,10 +53,10 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
 - [Modelo de datos de los componentes e interfaces](#Data). Puede dibujar diagramas de clases para describir la información que se pasa entre los componentes y que se almacena en los componentes.
 
-## <a name="Requirements"></a>Descripción de los requisitos
+## <a name="understanding-the-requirements"></a><a name="Requirements"></a> Descripción de los requisitos
  La forma más eficaz de desarrollar el diseño de alto nivel de una aplicación completa es hacerlo junto con un modelo de requisitos y otra descripción de las necesidades de los usuarios. Para obtener más información sobre los modelos de requisitos, vea [requisitos de usuario de modelo](../modeling/model-user-requirements.md).
 
- Si el sistema que está desarrollando es un componente de un sistema más grande, es posible que parte de los requisitos, o todos ellos, puedan expresarse en interfaces programáticas.
+ Si el sistema que está desarrollando es un componente de un sistema más grande, es posible que parte de los requisitos, o todos ellos, puedan expresarse en interfaces programáticas. 
 
  El modelo de requisitos proporciona estos elementos de información esenciales:
 
@@ -78,8 +78,8 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
   El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.
 
-## <a name="BigDecisions"></a>Patrones arquitectónicos
- En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:
+## <a name="architectural-patterns"></a><a name="BigDecisions"></a> Patrones arquitectónicos
+  En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:
 
 - Las tecnologías de base; por ejemplo, la elección entre una base de datos y un sistema de archivos, la elección entre una aplicación de red y un cliente web, etc.
 
@@ -91,7 +91,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
   Las elecciones que haga afectarán al modo en que se usa e interpreta el modelo arquitectónico. Por ejemplo, en un sistema que usa una base de datos, las asociaciones de un diagrama de clases pueden representar las relaciones o claves externas de la base de datos, mientras que en un sistema basado en archivos XML, las asociaciones pueden indicar las referencias cruzadas que usan XPath. En un sistema distribuido, los mensajes de un diagrama de secuencia pueden representar los mensajes de una conexión; en una aplicación independiente, pueden representar las llamadas de función.
 
-## <a name="Components"></a>Componentes y sus interfaces
+## <a name="components-and-their-interfaces"></a><a name="Components"></a> Componentes y sus interfaces
  Las principales recomendaciones de esta sección son las siguientes:
 
 - Cree diagramas de componentes para mostrar los elementos principales del sistema.
@@ -107,7 +107,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 ### <a name="components"></a>Componentes
  Las vistas centrales de un modelo arquitectónico son los diagramas de componentes, donde se muestran los elementos primarios del sistema y cómo dependen unos de otros. Para obtener más información sobre los diagramas de componentes, vea [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md).
 
- ![Diagrama de componentes de UML que muestra elementos](../modeling/media/uml-barecomponent.png "UML_BareComponent")
+ ![Diagrama de componentes UML que muestra los elementos](../modeling/media/uml-barecomponent.png "UML_BareComponent")
 
  Un diagrama de componentes típico de un sistema grande podría incluir componentes como estos:
 
@@ -119,7 +119,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
 - Núcleo del negocio. Contiene clases que se basan en las clases del modelo de requisitos, implementa las operaciones clave e impone las restricciones del negocio.
 
-- Base de datos. Almacena los objetos de negocio.
+- Base de datos Almacena los objetos de negocio.
 
 - Componentes de registro y control de errores.
 
@@ -178,7 +178,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
   El uso de interfaces necesarias normalmente es preferible al uso de elementos. Aunque el diseño puede llevar más tiempo, el sistema resultante es más flexible. También es más fácil probar los componentes por separado. Esto permite un grado de acoplamiento menor en los planes de desarrollo.
 
-## <a name="Interactions"></a>Interacciones entre componentes
+## <a name="interactions-between-components"></a><a name="Interactions"></a> Interacciones entre componentes
  Las principales recomendaciones de esta sección son las siguientes:
 
 - Identifique los casos de uso del sistema.
@@ -194,7 +194,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
   Por ejemplo, en un sistema de ventas basado en web, el modelo de requisitos podría definir la compra de un cliente como un caso de uso. Puede crear un diagrama de secuencia para mostrar las interacciones que el cliente tiene con los componentes en la capa de la presentación y para mostrar las interacciones que tiene con los componentes de contabilidad y almacenamiento.
 
 ### <a name="identifying-the-initiating-events"></a>Identificar los eventos de iniciación
- El trabajo realizado por la mayor parte de los sistemas de software puede dividirse cómodamente en las respuestas que da a diferentes entradas o eventos. El evento de iniciación puede ser uno de los eventos siguientes:
+  El trabajo realizado por la mayor parte de los sistemas de software puede dividirse cómodamente en las respuestas que da a diferentes entradas o eventos. El evento de iniciación puede ser uno de los eventos siguientes:
 
 - La primera acción de un caso de uso. Podría aparecer en el modelo de requisitos como un paso de un caso de uso o una acción de un diagrama de actividades. Para obtener más información, [use diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md) y [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).
 
@@ -218,14 +218,14 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
  Resulta útil agregar comentarios a los diagramas de actividades o a los diagramas de secuencia para dar cuenta de lo que se ha logrado después de cada operación. También puede escribir el efecto de cada operación en su propiedad **postcondition local** .
 
-### <a name="Data"></a>Modelo de datos de los componentes e interfaces
+### <a name="data-model-of-the-components-and-interfaces"></a><a name="Data"></a> Modelo de datos de los componentes e interfaces
  Defina los parámetros y los valores devueltos de cada operación de las interfaces de los componentes. Cuando las operaciones representan invocaciones como solicitudes de servicio web, los parámetros son esos fragmentos de información que se envían como parte de la solicitud. Cuando se devuelven varios valores de una operación, puede usar parámetros con la propiedad **Direction** establecida en **out**.
 
  Cada parámetro y cada valor devuelto tienen un tipo. Puede definir estos tipos mediante los diagramas de clases UML. No tiene que representar en detalle la implementación en estos diagramas. Por ejemplo, si está describiendo los datos que se transmiten en formato XML, puede usar una asociación para representar cualquier tipo de referencia cruzada entre los nodos del código XML y usar las clases para representar los nodos.
 
  Use los comentarios para describir las restricciones de negocio que presentan las asociaciones y atributos. Por ejemplo, si todos los elementos del pedido de un cliente deben proceder del mismo proveedor, puede describir esta circunstancia mediante referencias a las asociaciones entre los elementos del pedido y los elementos del catálogo de productos, y entre los elementos del catálogo y su proveedor.
 
-## <a name="Patterns"></a>Modelos de diseño
+## <a name="design-patterns"></a><a name="Patterns"></a> Modelos de diseño
  Un modelo de diseño es un esquema del modo en que debe diseñarse un determinado aspecto del software, sobre todo uno que se repita en diferentes elementos del sistema. Si adopta un enfoque uniforme en todo el proyecto, puede reducir el costo de diseño, garantizar la coherencia de la interfaz de usuario y reducir la carga que supone la comprensión y modificación del código.
 
  Algunos modelos de diseño generales, como el modelo Observador, son bien conocidos y están muy extendidos. Asimismo, hay modelos que únicamente pueden aplicarse a su proyecto. Por ejemplo, en un sistema de ventas web, habrá varias operaciones en el código donde se realicen cambios en el pedido de un cliente. Para asegurarse de que el estado del pedido se muestra con precisión en cada etapa, todas estas operaciones deben seguir un protocolo determinado para actualizar la base de datos.
@@ -236,7 +236,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
  Un modelo de diseño se describe en un documento y normalmente incluye estos elementos:
 
-- Nombre.
+- Name (Nombre).
 
 - Descripción del contexto en el que es aplicable. ¿Qué criterios debe tener en cuenta un programador al aplicar este modelo?
 
@@ -256,5 +256,5 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumplan las
 
 - Descripción de las variaciones que los desarrolladores podrían adoptar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [visualizar](../modeling/visualize-code.md) [los requisitos de usuario del modelo](../modeling/model-user-requirements.md) [de código desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md) [usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)

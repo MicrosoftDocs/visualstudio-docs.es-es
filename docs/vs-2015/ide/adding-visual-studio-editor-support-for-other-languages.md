@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548114"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
@@ -83,7 +83,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 
 - TypeScript
 
-- Visual Basic
+- Visual Basic 6.0
 
 - Visual C++
 
@@ -102,7 +102,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 
 |Nombre de carpeta|Descripción|
 |-----------------|-----------------|
-|\\*\<language name>*|Carpeta del lenguaje. Reemplazar *\<language name>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|
+|\\*\<language name>*|Carpeta del lenguaje. Reemplace *\<language name>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|
 |\Syntaxes|Carpeta de la gramática. Contiene los archivos .json de la gramática para el lenguaje, como **Matlab.json**.|
 |\Snippets|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|
 

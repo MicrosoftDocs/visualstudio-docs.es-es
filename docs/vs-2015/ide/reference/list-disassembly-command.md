@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ff5e620d4c53889afe17274364d6f92936025d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672737"
 ---
 # <a name="list-disassembly-command"></a>Mostrar desensamblador (Comando)
@@ -41,13 +41,13 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
  /EndAddress: `expression` [o]/e: `expression` opcional. Dirección en la que se va a detener el desensamblado.
 
- /CodeBytes: `yes`&#124; `no` [o]/bytes: `yes`&#124; `no` [o]/B: `yes`&#124; `no` opcional. Indica si se deben mostrar bytes de código. El valor predeterminado es `no`.
+ /CodeBytes: `yes`&#124;`no` [o]/bytes: `yes`&#124;`no` [o]/b: `yes`&#124;`no` opcional. Indica si se deben mostrar bytes de código. El valor predeterminado es `no`.
 
- /Source: `yes`&#124; `no` [o]/s: `yes`&#124; `no` opcional. Indica si se debe mostrar código fuente. El valor predeterminado es `no`.
+ /Source: `yes`&#124;`no` [o]/s: `yes`&#124;`no` opcional. Indica si se debe mostrar código fuente. El valor predeterminado es `no`.
 
- /SymbolNames: `yes`&#124; `no` [o]/names: `yes`&#124; `no` [o]/N: `yes`&#124; `no` opcional. Indica si se deben mostrar nombres de símbolos. El valor predeterminado es `yes`.
+ /SymbolNames: `yes`&#124;`no` [o]/names: `yes`&#124;`no` [o]/n: `yes`&#124;`no` opcional. Indica si se deben mostrar nombres de símbolos. El valor predeterminado es `yes`.
 
- [/LineNumbers: `yes`&#124; `no`] Opta. Permite la visualización de los números de línea asociados con el código fuente. El modificador /source debe tener un valor de `yes` para usar el modificador /linenumbers.
+ [/LineNumbers: `yes`&#124;`no` ] opcional. Permite la visualización de los números de línea asociados con el código fuente. El modificador /source debe tener un valor de `yes` para usar el modificador /linenumbers.
 
 ## <a name="example"></a>Ejemplo
 
@@ -55,5 +55,5 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  Comando [enumerar pila de llamadas](../../ide/reference/list-call-stack-command.md) comandos de [subprocesos](../../ide/reference/list-threads-command.md) comandos de [Visual Studio comandos](../../ide/reference/visual-studio-commands.md) de la [ventana de comandos](../../ide/reference/command-window.md) [Buscar/comando cuadro](../../ide/find-command-box.md) de comandos [Visual Studio alias de comandos](../../ide/reference/visual-studio-command-aliases.md)

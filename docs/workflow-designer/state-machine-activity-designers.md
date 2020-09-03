@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876065"
 ---
 # <a name="state-machine-activity-designers"></a>Diseñadores de actividad de equipo de estado
@@ -41,7 +41,7 @@ Diseñador de flujo de trabajo incluye varios diseñadores de actividad que pued
 
  [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 
- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transacción](../workflow-designer/transaction-activity-designers.md)
 

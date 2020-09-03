@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 075746353440462a66133cd83ed9158470d8de5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662210"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -40,7 +40,7 @@ devenv /out FileName
 ## <a name="arguments"></a>Argumentos
  `FileName` Obligatorio. Ruta de acceso y nombre del archivo que va a recibir los errores al compilar un ejecutable.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Si se especifica un nombre de archivo que no existe, se crea automáticamente el archivo. Si el archivo ya existe, los resultados se anexan al contenido existente del archivo.
 
  Los errores de compilación de la línea de comandos se muestran en la ventana **Comando** y la vista Generador de soluciones de la ventana **Salida**. Esta opción es útil si está ejecutando generaciones desatendidas y necesita ver los resultados.
@@ -52,5 +52,5 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Modificadores de línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv. exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/deploy (devenv. exe)](../../ide/reference/deploy-devenv-exe.md)
+## <a name="see-also"></a>Consulte también
+ [Modificadores de línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 18e585064bb50db7a0497c6b96e428a662e953ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604827"
 ---
 # <a name="watch-command"></a>Inspección (Comando)
@@ -35,7 +35,7 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Argumentos
  `index` Obligatorio. El número de instancia de la ventana Inspección.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `index` debe ser un entero. Los valores válidos son 1, 2, 3 o 4.
 
 ## <a name="example"></a>Ejemplo
@@ -44,5 +44,5 @@ Debug.Watch[index]
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Ventanas automático y variables locales](../../debugger/autos-and-locals-windows.md) [Cómo: editar un valor en una ventana de variables](https://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5) [Cómo: usar el cuadro de diálogo Inspección rápida](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) ventana comandos de [Visual Studio](../../ide/reference/visual-studio-commands.md) [ventana de comandos](../../ide/reference/command-window.md) [Buscar/comando cuadros](../../ide/find-command-box.md) de comandos de [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

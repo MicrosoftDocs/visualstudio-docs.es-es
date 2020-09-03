@@ -55,7 +55,7 @@ Las configuraciones de soluciones almacenan propiedades de nivel de solución. D
 
   Una vez que se agrega una nueva configuración de soluciones, el usuario puede seleccionarla en el cuadro de lista desplegable Configuración de soluciones de la barra de herramientas estándar para compilar o iniciar esa configuración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Administración de opciones de configuración](../../extensibility/internals/managing-configuration-options.md)
 - [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)
 - [Objeto de configuración del proyecto](../../extensibility/internals/project-configuration-object.md)

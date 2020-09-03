@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf93d96594b65b06670567e8c23cd83ccb7f1ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672974"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Enlazar controles de Windows Forms a datos
@@ -36,7 +36,7 @@ Puede enlazar orígenes de datos a controles arrastrando objetos desde la ventan
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Enlazar a datos en un control DataGridView
- En el caso de DataGridView, toda la tabla se enlaza a ese control único. Al arrastrar una DataGridView al formulario, también aparece una franja de herramientas para navegar por los registros (<xref:System.Windows.Forms.BindingNavigator>). En la bandeja de componentes aparecen un [conjunto](../data-tools/dataset-tools-in-visual-studio.md)de objetos, TableAdapter, <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>. En la ilustración siguiente, también se agrega TableAdapterManager porque la tabla Customers tiene una relación con la tabla Orders. Estas variables se declaran en el código generado automáticamente como miembros privados en la clase de formulario. El código generado automáticamente para rellenar DataGridView se encuentra en el controlador de eventos Form_Load. El código para guardar los datos para actualizar la base de datos se encuentra en el controlador de eventos Save para BindingNavigator. Puede trasladar o modificar este código según sea necesario.
+ En el caso de DataGridView, toda la tabla se enlaza a ese control único. Al arrastrar una DataGridView al formulario, también aparece una franja de herramientas para navegar por los registros ( <xref:System.Windows.Forms.BindingNavigator> ). Un [conjunto](../data-tools/dataset-tools-in-visual-studio.md)de objetos, TableAdapter, <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator> aparecen en la bandeja de componentes. En la ilustración siguiente, también se agrega TableAdapterManager porque la tabla Customers tiene una relación con la tabla Orders. Estas variables se declaran en el código generado automáticamente como miembros privados en la clase de formulario. El código generado automáticamente para rellenar DataGridView se encuentra en el controlador de eventos form_load. El código para guardar los datos para actualizar la base de datos se encuentra en el controlador de eventos Save para BindingNavigator. Puede trasladar o modificar este código según sea necesario.
 
  ![GridView con BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView con BindingNavigator")
 
@@ -46,7 +46,7 @@ Puede enlazar orígenes de datos a controles arrastrando objetos desde la ventan
 
  Si los controles que necesita su aplicación no están disponibles en la ventana **orígenes de datos** , puede Agregar controles. Para obtener más información, vea [Agregar controles personalizados a la ventana orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
- También puede arrastrar elementos desde la ventana **orígenes de datos** hasta controles que ya están en un formulario para enlazar el control a los datos. Un control que ya está enlazado a datos tiene sus enlaces de datos restablecidos en el elemento que se arrastró más recientemente a él. Para ser destinos de colocación válidos, los controles deben ser capaces de mostrar el tipo de datos subyacente del elemento arrastrado a él desde la ventana **orígenes de datos** . Por ejemplo, no es válido arrastrar un elemento que tenga un tipo de datos de <xref:System.DateTime> a un <xref:System.Windows.Forms.CheckBox>, porque la <xref:System.Windows.Forms.CheckBox> no es capaz de mostrar una fecha.
+ También puede arrastrar elementos desde la ventana **orígenes de datos** hasta controles que ya están en un formulario para enlazar el control a los datos. Un control que ya está enlazado a datos tiene sus enlaces de datos restablecidos en el elemento que se arrastró más recientemente a él. Para ser destinos de colocación válidos, los controles deben ser capaces de mostrar el tipo de datos subyacente del elemento arrastrado a él desde la ventana **orígenes de datos** . Por ejemplo, no es válido arrastrar un elemento que tenga un tipo de datos a <xref:System.DateTime> <xref:System.Windows.Forms.CheckBox> , porque <xref:System.Windows.Forms.CheckBox> no es capaz de mostrar una fecha.
 
 ## <a name="bind-to--data-in-individual-controls"></a>Enlazar a datos en controles individuales
  Al enlazar un origen de datos a "detalles", cada columna del conjunto de datos se enlaza a un control independiente.
@@ -62,5 +62,5 @@ Puede enlazar orígenes de datos a controles arrastrando objetos desde la ventan
 
  Tenga en cuenta también que cada control tiene una etiqueta inteligente. Esta etiqueta habilita las personalizaciones que solo se aplican a ese control.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

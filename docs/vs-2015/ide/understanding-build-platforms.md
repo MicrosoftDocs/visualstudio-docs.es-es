@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 191db7fa1079ef971e6e00a5f2618a6720b93e23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672691"
 ---
 # <a name="understanding-build-platforms"></a>Descripción de las plataformas de compilación
@@ -34,5 +34,5 @@ Puede almacenar versiones diferentes de las propiedades de solución y de proyec
 
  [Cómo: Configurar proyectos para múltiples plataformas de destino](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Explica cómo configurar un proyecto destinado a varias plataformas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Tutorial: compilar una aplicación](../ide/walkthrough-building-an-application.md) [crear y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [compilando y compilando](../ide/compiling-and-building-in-visual-studio.md)

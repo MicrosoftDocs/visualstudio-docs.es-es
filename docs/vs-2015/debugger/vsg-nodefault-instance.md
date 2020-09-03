@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c7d2263642c2ff8a2c36f274d2c7b80745ed845
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179488"
 ---
-# <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
+# <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Define por su presencia si una instancia predeterminada de la [Case Vsgdbg](../debugger/vsgdbg-class.md) clase, que proporciona la interfaz de captura mediante programación, se proporciona.  
+Define por su presencia si se proporciona una instancia predeterminada de la clase [VsgDbg Class](../debugger/vsgdbg-class.md), que proporciona la interfaz de captura mediante programación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,7 +41,7 @@ VsgDbg *g_pVsgDbg;
   
  Si la instancia predeterminada no está deshabilitada, se inicializa automáticamente antes de que se ejecute el programa y se destruye automáticamente cuando finaliza el programa. No es necesario inicializar o anular la inicialización de esta instancia explícitamente.  
   
- Para deshabilitar la instancia predeterminada, se debe definir `VSG_NODEFAULT_INSTANCE` antes de incluir `vsgcapture.h` en el programa.  
+ Para deshabilitar la instancia predeterminada, debe definir `VSG_NODEFAULT_INSTANCE` antes de incluir `vsgcapture.h` en el programa.  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se muestra cómo deshabilitar la instancia predeterminada:  

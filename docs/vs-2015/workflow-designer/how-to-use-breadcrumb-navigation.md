@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659148"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Utilizar la ruta de navegación
@@ -47,7 +47,7 @@ Existen tres formas principales de cambiar el conjunto de actividades que se mue
 2. Después de aplicar un estado expandir todo o contraer todo, puede hacer clic en el botón **restaurar** que aparece para volver a examinar el estado aplicado previamente a cada actividad.
 
     > [!WARNING]
-    > Si una actividad, como <xref:System.Activities.Statements.Flowchart>, ha optado por expandirse en su lugar, la funcionalidad asociada con los botones **expandir todo** y **contraer todo** está deshabilitada en el diseñador de **diagramas de flujo** . [!INCLUDE[crabout](../includes/crabout-md.md)] el diseñador de **diagramas de flujo** , vea el tema [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) .
+    > Si una actividad, como <xref:System.Activities.Statements.Flowchart> , ha optado por expandirse en su lugar, la funcionalidad asociada con los botones **expandir todo** y **contraer todo** está deshabilitada en el diseñador de **diagramas de flujo** . [!INCLUDE[crabout](../includes/crabout-md.md)] el diseñador de **diagramas de flujo** , vea el tema [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Expandir todo también tiene un efecto especial en los diseñadores de actividad **Switch** y **TryCatch** . Al hacer clic en **expandir todo**, se muestran todos los casos de cambio y todos los bloques try/catch/finally. Al hacer clic en **restaurar** o **contraer todo** , se devuelven estos diseñadores a su estado predeterminado, desde el que puede hacer clic en un caso o bloque individual para ver su contenido.

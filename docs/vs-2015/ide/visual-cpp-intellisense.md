@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 173020a95977bdae2ad3006ce23dea376fb9d22e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608818"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C++
@@ -24,37 +24,37 @@ En Visual Studio de 2015, IntelliSense está disponible para archivos de código
 ## <a name="intellisense-features-in-c"></a>Características de Intellisense en C++
  IntelliSense es el nombre que se le da a un conjunto de características que hacen que codificar sea más práctico. Dado que cada persona puede tener una idea diferente de lo que es práctico, prácticamente todas las características de IntelliSense pueden habilitarse o deshabilitarse en la página de propiedades **Editor de texto, C/C++, Avanzado**.
 
- ![Herramientas, opciones, editor de texto,&#47;c&#43;&#43;c, avanzadas](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
+ ![Herramientas, opciones, editor de texto, C&#47;C&#43;&#43;, avanzadas](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
 
  Puede utilizar los elementos de menú y métodos abreviados de teclado que se muestran en la siguiente imagen para acceder a IntelliSense.
 
- ![Menú IntelliSense&#43; &#43; de Visual C](../ide/media/vs2015-cpp-intellisense-menu.png "vs2015_cpp_intellisense_menu")
+ ![Visual C&#43;&#43; menú de IntelliSense](../ide/media/vs2015-cpp-intellisense-menu.png "vs2015_cpp_intellisense_menu")
 
 ### <a name="statement-completion-and-member-list"></a>Lista de finalización de instrucciones y de miembros
  Cuando empiece a escribir una palabra clave, un tipo, una función, el nombre de una variable u otro elemento de programa que el compilador reconozca, el editor le ofrecerá la opción de completar la palabra por usted.
 
  Para ver una lista de los iconos y sus significados, vea [Iconos de la Vista de clases y del Examinador de objetos](../ide/class-view-and-object-browser-icons.md).
 
- ![Ventana de&#43; &#43; palabra completa de Visual C](../ide/media/vs2015-cpp-complete-word.png "vs2015_cpp_complete_word")
+ ![Visual C&#43;&#43; ventana de palabra completa](../ide/media/vs2015-cpp-complete-word.png "vs2015_cpp_complete_word")
 
  La primera vez que se invoca la lista de miembros solo muestra los miembros a los que se puede acceder en el contexto actual. Si después de esa primera vez usa **Ctrl+J**, muestra todos los miembros, independientemente de su accesibilidad. Si se invoca una tercera vez, se muestra una lista de elementos de programa aún más amplia. Puede desactivar la finalización de instrucciones en la página **Opciones generales de C/C++** .
 
- ![Lista de&#43; &#43; miembros de Visual C](../ide/media/vs2015-cpp-list-members.png "vs2015_cpp_list_members")
+ ![Lista de miembros de&#43;&#43; de Visual C](../ide/media/vs2015-cpp-list-members.png "vs2015_cpp_list_members")
 
 ### <a name="parameter-help"></a>Ayuda de parámetro
- Cuando se escribe una llave de apertura de una llamada de función o un corchete angular en una declaración de variable de plantilla de clase, el editor muestra una pequeña ventana con los tipos de parámetros para cada sobrecarga de la función o el constructor. El parámetro "actual", basado en la ubicación del cursor, está en negrita. Puede desactivar la finalización de instrucciones en la página **Opciones generales de C/C++** .
+ Cuando se escribe una llave de apertura de una llamada de función o un corchete angular en una declaración de variable de plantilla de clase, el editor muestra una pequeña ventana con los tipos de parámetros para cada sobrecarga de la función o el constructor. El parámetro "actual", basado en la ubicación del cursor, está en negrita. Puede desactivar la finalización de instrucciones en la página **Opciones generales de C/C++**.
 
- ![Ayuda del&#43; &#43; parámetro de Visual C](../ide/media/vs-2015-cpp-param-help.png "vs_2015_cpp_param_help")
+ ![Ayuda de los parámetros de&#43;&#43; de Visual C](../ide/media/vs-2015-cpp-param-help.png "vs_2015_cpp_param_help")
 
 ### <a name="quick-info"></a>Información rápida
  Cuando coloca el cursor del mouse sobre una variable, se muestra una pequeña ventana en línea que muestra la información de tipo y el encabezado en el que se define el tipo. Para ver la firma de la función, coloque el puntero sobre una llamada a función. Puede desactivar Información rápida en la página **Editor de texto, C/C++, Avanzado**.
 
- ![QuickInfo de&#43; &#43; Visual C](../ide/media/vs2015-cpp-quickinfo.png "vs2015_cpp_quickInfo")
+ ![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015-cpp-quickinfo.png "vs2015_cpp_quickInfo")
 
 ## <a name="error-squiggles"></a>Subrayados ondulados de error
  Los subrayados ondulados bajo un elemento de programa (variable, palabra clave, llave, nombre de tipo, etc.), intentan indicarle la existencia de un error o un posible error en el código. Un subrayado ondulado aparece cuando escribe una declaración adelantada, para recordarle que aún le queda por escribir la implementación. Un subrayado ondulado de color púrpura se muestra en un proyecto compartido para indicar que hay un error en código que no está activo actualmente, como sucede, por ejemplo, cuando está trabajando en el contexto de Windows pero introduce algo que sería un error en un contexto de Android. Un subrayado ondulado de color rojo indica una advertencia o un error del compilador en el código activo que tiene que resolver.
 
- ![Error de&#43; &#43; Visual C garabatos](../ide/media/vs2015-cpp-error-quiggles.png "vs2015_cpp_error_quiggles")
+ ![Error de&#43;&#43; de Visual C en zigzag](../ide/media/vs2015-cpp-error-quiggles.png "vs2015_cpp_error_quiggles")
 
 ## <a name="code-colorization-and-fonts"></a>Coloración y fuentes de código
  Los colores y las fuentes predeterminados se pueden cambiar mediante la página de propiedades **Entorno, fuentes y colores**. Puede cambiar las fuentes de muchas ventanas de interfaz de usuario, no solo las del editor. Los ajustes específicos de C++ comienzan con "C++"; el resto de ajustes es para todos los lenguajes.
@@ -64,11 +64,11 @@ En Visual Studio de 2015, IntelliSense está disponible para archivos de código
 
  Esta es una aplicación de OpenGLES que está configurada para compilarse para Android e iOS. La ilustración muestra el código compartido que se está editando. En la primera imagen, Android es el proyecto activo:
 
- ![El proyecto de Android es el proyecto activo.](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+ ![El proyecto Android es el proyecto activo.](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
 
  Tenga en cuenta lo siguiente:
 
-- La rama #else de la línea 8 está atenuada para indicar que hay una región inactiva, porque `__ANDROID__` está definida para el proyecto de Android.
+- La rama #else de la línea 8 está atenuada para indicar que la región está inactiva, porque `__ANDROID__` se ha definido para el proyecto de Android.
 
 - La variable de saludo de la línea 11 se inicializa con el identificador HELLO, que tiene un subrayado ondulado de color púrpura. Esto se debe a que no se ha definido ningún identificador HELLO en el proyecto de iOS actualmente inactivo. Aunque la línea 11 se compilará en un proyecto Android, no lo hará en iOS. Puesto que se trata de código compartido, es algo que debe cambiar aunque se compile en la configuración activa actualmente.
 
@@ -80,7 +80,7 @@ En Visual Studio de 2015, IntelliSense está disponible para archivos de código
 
   Tenga en cuenta lo siguiente:
 
-- La rama #ifdef de la línea 6 aparece en color gris para indicar que se trata de una región inactiva, porque no se ha definido *_ANDROID\\* \_ para un proyecto de iOS.
+- La rama #ifdef de la línea 6 está atenuada para indicar una región inactiva, *porque \\ _ANDROID* \_ no está definida para el proyecto de iOS.
 
 - La variable de saludo de la línea 11 se inicializa con el identificador HELLO, que ahora tiene un subrayado ondulado de color rojo. Esto se debe a que no se ha definido ningún identificador HELLO en el proyecto de iOS actualmente activo.
 
@@ -89,11 +89,11 @@ En Visual Studio de 2015, IntelliSense está disponible para archivos de código
 ## <a name="single-file-intellisense"></a>Intellisense de archivo único
  Al abrir un único archivo fuera de cualquier proyecto, se sigue obteniendo IntelliSense. Puede habilitar o deshabilitar características específicas yendo a **Editor de texto, C/C++, Avanzado** para activar o desactivar las características de IntelliSense. Para configurar IntelliSense para archivos individuales que no forman parte de un proyecto, busque el tema que habla sobre **IntelliSense y explorar archivos que no son del proyecto** en la sección **Avanzada**. Vea el [Paseo guiado de Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).
 
- ![IntelliSense de&#43; &#43; archivo único de Visual C](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")
+ ![Visual C&#43;&#43; IntelliSense de un solo archivo](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")
 
  De forma predeterminada, IntelliSense de archivo único solo utiliza directorios de inclusión estándar para buscar archivos de encabezado. Para agregar directorios adicionales, abra el menú contextual del nodo Solución y agregue el directorio a la lista **Depurar código fuente**, tal como se muestra en la siguiente ilustración:
 
- ![Agregar una ruta de acceso a un archivo de encabezado.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+ ![Agregar una ruta a un archivo de encabezado.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar IntelliSense](../ide/using-intellisense.md)

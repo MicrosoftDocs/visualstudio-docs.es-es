@@ -1,5 +1,5 @@
 ---
-title: Ventana de salida | Microsoft Docs
+title: Resultados (ventana) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f17b91cc462b6f628100ffbf370fcdec2eb9888d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662199"
 ---
-# <a name="output-window"></a>Resultados (Ventana)
+# <a name="output-window"></a>Ventana de salida
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La Ventana de **salida** puede mostrar mensajes de estado de diversas características del entorno de desarrollo integrado (IDE). Para abrir la ventana de **Salida**, en la barra de menús, elija **View/Output** (Vista/Salida) (o haga clic en CTRL + ALT + O).
@@ -51,14 +51,14 @@ La Ventana de **salida** puede mostrar mensajes de estado de diversas caracterí
 ## <a name="routing-messages-to-the-output-window"></a>Enrutamiento de mensajes a la Ventana de salida
  Para mostrar la ventana de **salida** cada vez que compile un proyecto, en el cuadro de diálogo **General, Proyectos y soluciones, Opciones**, seleccione **Mostrar ventana de salida cuando empiece la compilación**. Después, con un archivo de código abierto para su edición, elija los botones **Ir al mensaje siguiente** e **Ir al mensaje anterior** en la barra de herramientas de la ventana de **salida** para seleccionar entradas en el panel de **salida**. Al hacerlo, el punto de inserción en el código salta a la línea de código en que se produce el problema seleccionado.
 
- Hay determinados comandos y características del IDE que se invocan en la [ventana Comandos](../../ide/reference/command-window.md) que mandan su salida a la ventana de **salida**. La salida de herramientas externas como los archivos .bat y .com, que se muestra normalmente en la ventana de símbolo del sistema, se enruta a un panel de **salida** al seleccionar la opción **Usar ventana de salida** de [Managing External Tools](../../ide/managing-external-tools.md) (Administrar herramientas externas). Se pueden mostrar muchos otros tipos de mensajes los paneles de **salida**. Por ejemplo, cuando se comprueba la sintaxis de Transact-SQL en un procedimiento almacenado con una base de datos de destino, los resultados se muestran en la ventana de **salida**.
+ Ciertas características y comandos del IDE que se invocan en la [ventana de comandos](../../ide/reference/command-window.md) entregan su salida a la ventana de **salida** . La salida de herramientas externas como los archivos .bat y .com, que se muestra normalmente en la ventana de símbolo del sistema, se enruta a un panel de **salida** al seleccionar la opción **Usar ventana de salida** de [Managing External Tools](../../ide/managing-external-tools.md) (Administrar herramientas externas). Se pueden mostrar muchos otros tipos de mensajes los paneles de **salida**. Por ejemplo, cuando se comprueba la sintaxis de Transact-SQL en un procedimiento almacenado con una base de datos de destino, los resultados se muestran en la ventana de **salida**.
 
- También puede programar sus propias aplicaciones para que escriban mensajes de diagnóstico en tiempo de ejecución en un panel de **salida**. Para hacer esto, use los miembros de la clase <xref:System.Diagnostics.Debug> o de la clase <xref:System.Diagnostics.Trace> en el espacio de nombres <xref:System.Diagnostics> de la biblioteca de clases de .NET Framework. Los miembros de la clase <xref:System.Diagnostics.Debug> muestran la salida al compilar configuraciones de depuración de la solución o proyecto; los miembros de la clase <xref:System.Diagnostics.Trace> muestran la salida al compilar las configuraciones de depuración o lanzamiento. Para obtener más información, consulte [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md).
+ También puede programar sus propias aplicaciones para que escriban mensajes de diagnóstico en tiempo de ejecución en un panel de **salida**. Para hacer esto, use los miembros de la clase <xref:System.Diagnostics.Debug> o de la clase <xref:System.Diagnostics.Trace> en el espacio de nombres <xref:System.Diagnostics> de la biblioteca de clases de .NET Framework. Los miembros de la clase <xref:System.Diagnostics.Debug> muestran la salida al compilar configuraciones de depuración de la solución o proyecto; los miembros de la clase <xref:System.Diagnostics.Trace> muestran la salida al compilar las configuraciones de depuración o lanzamiento. Para obtener más información, consulte [mensajes de diagnóstico en el ventana de salida](../../debugger/diagnostic-messages-in-the-output-window.md).
 
  En [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], puede crear pasos y eventos de compilación personalizados cuyas advertencias y errores se muestran y enumeran en el panel de **salida**. Al pulsar F1 en una línea de salida, puede mostrar un tema de ayuda adecuado. Para obtener más información, consulte [Dar formato a la presentación de un paso de compilación personalizada o un evento de compilación](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).
 
 ## <a name="scrolling-behavior"></a>Comportamiento de desplazamiento
  Si usa el desplazamiento automático en la ventana de salida y después se desplaza mediante las teclas de dirección o el mouse, el desplazamiento automático se detiene. Para reanudar el desplazamiento automático, pulse CTRL + Fin.
 
-## <a name="see-also"></a>Vea también
- [Los mensajes de diagnóstico en el Ventana de salida](../../debugger/diagnostic-messages-in-the-output-window.md) [How: Controlar la ventana de salida](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858) [Compilar y generar](../../ide/compiling-and-building-in-visual-studio.md) [Comprender las configuraciones de compilación](../../ide/understanding-build-configurations.md) [Introducción a la biblioteca de clases](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+## <a name="see-also"></a>Consulte también
+ [Mensajes de diagnóstico en el ventana de salida](../../debugger/diagnostic-messages-in-the-output-window.md) [Cómo: controlar los ventana de salida](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858) [compilar y generar](../../ide/compiling-and-building-in-visual-studio.md) [Understanding Build Configurations](../../ide/understanding-build-configurations.md) [información general sobre la biblioteca de clases](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157) de configuraciones de compilación

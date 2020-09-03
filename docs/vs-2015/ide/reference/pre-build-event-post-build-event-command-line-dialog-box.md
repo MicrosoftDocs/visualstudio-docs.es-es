@@ -35,10 +35,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b42c219620a669a8fa27a7ce847dc571a4075288
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662166"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
@@ -53,7 +53,7 @@ Puede escribir eventos anteriores o posteriores a la compilación para la [pági
  **Cuadro de edición** de la línea de comandos Contiene los eventos que se van a ejecutar para la compilación anterior o posterior a la compilación.
 
 > [!NOTE]
-> Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat.  Por ejemplo, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
  **Macros** de Expande el cuadro de edición para mostrar una lista de macros que se van a insertar en el cuadro de edición de la línea de comandos.
 
@@ -86,5 +86,5 @@ Puede escribir eventos anteriores o posteriores a la compilación para la [pági
 |`$(TargetFileName)`|El nombre de archivo del archivo de salida principal de la generación (definido como nombre base y extensión de archivo).|
 |`$(TargetExt)`|La extensión de archivo del archivo de salida principal de la compilación. Incluye el "." antes de la extensión de archivo.|
 
-## <a name="see-also"></a>Vea también
- [Especificar eventos de compilación personalizados en la página eventos de compilación de Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md) [,C#diseñador de proyectos ()](../../ide/reference/build-events-page-project-designer-csharp.md) [Cómo: especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [Cómo: especificarC#eventos de compilación ()](../../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>Consulte también
+ [Especificar eventos de compilación personalizados en la página eventos de compilación de Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md) [, diseñador de proyectos (c#)](../../ide/reference/build-events-page-project-designer-csharp.md) [Cómo: especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [Cómo: especificar eventos de compilación (c#)](../../ide/how-to-specify-build-events-csharp.md)

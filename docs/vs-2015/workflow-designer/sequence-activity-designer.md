@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3acf02ab478eee244557e04f19f78ba2d5f0b950
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663261"
 ---
 # <a name="sequence-activity-designer"></a>Diseñador actividades Sequence
@@ -24,14 +24,14 @@ La actividad <xref:System.Activities.Statements.Sequence> contiene una colecció
  Otra manera de ejecutar un conjunto de actividades por orden es utilizar una actividad <xref:System.Activities.Statements.Flowchart>. Considere la posibilidad de usar el [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) cuando tenga un flujo simple de bifurcación o de bucles que desee modelar diagrama.
 
 ## <a name="using-the-sequence-activity-designer"></a>Utilizar el diseñador de actividades Sequence
- Para agregar una actividad <xref:System.Activities.Statements.Sequence>, arrastre el diseñador de actividad **Sequence** desde el **cuadro de herramientas** y colóquelo en la superficie [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Para agregar una actividad secundaria a esta actividad <xref:System.Activities.Statements.Sequence>, arrastre otra actividad del cuadro de **herramientas** y colóquela sobre el triángulo en el cuadro que contiene el texto de la sugerencia "Coloque la actividad aquí".
+ Para agregar una <xref:System.Activities.Statements.Sequence> actividad, arrastre el diseñador de actividad **Sequence** desde el **cuadro de herramientas** y colóquelo en la [!INCLUDE[wfd1](../includes/wfd1-md.md)] superficie. Para agregar una actividad secundaria a esta <xref:System.Activities.Statements.Sequence> actividad, arrastre otra actividad del cuadro de **herramientas** y colóquela sobre el triángulo en el cuadro que contiene el texto de la sugerencia "Coloque la actividad aquí".
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Propiedades de la actividad Sequence en el Diseñador de flujo de trabajo
  En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.Sequence> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en la cuadrícula de propiedades o en la superficie del diseñador.
 
-|Nombre de la propiedad|Obligatorio|Uso|
+|Nombre de propiedad|Obligatorio|Uso|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.Sequence> en el encabezado. El valor predeterminado es Sequence. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.Sequence> en el encabezado. El valor predeterminado es Sequence. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
 
-## <a name="see-also"></a>Vea también
- [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) [Flujo de control](../workflow-designer/control-flow-activity-designers.md)
+## <a name="see-also"></a>Consulte también
+ [Flowchart](../workflow-designer/flowchart-activity-designer.md) [Flujo de control](../workflow-designer/control-flow-activity-designers.md) de diagrama de flujo

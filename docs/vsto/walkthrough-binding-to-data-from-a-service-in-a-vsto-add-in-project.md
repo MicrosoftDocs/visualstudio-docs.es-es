@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72381317"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Tutorial: enlazar a datos de un servicio en un proyecto de complemento de VSTO
@@ -30,20 +30,20 @@ ms.locfileid: "72381317"
 
 - Agregar un control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento en tiempo de ejecución.
 
-- Enlazar el control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a los datos de un servicio Web.
+- Enlazar el <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control a los datos de un servicio Web.
 
 - Responder al evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> eventos de un control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
  El primer paso es crear un proyecto de complemento de VSTO de Word.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -83,12 +83,12 @@ ms.locfileid: "72381317"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
 
-2. Agregue el método siguiente a la clase `ThisAddIn`. Este método crea un control content al principio del documento activo.
+2. Agregue el siguiente método a la clase `ThisAddIn`. Este método crea un control content al principio del documento activo.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3. Agregue el método siguiente a la clase `ThisAddIn`. Este método inicializa los objetos necesarios para crear y enviar una solicitud al servicio Web.
+3. Agregue el siguiente método a la clase `ThisAddIn`. Este método inicializa los objetos necesarios para crear y enviar una solicitud al servicio Web.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]
@@ -114,5 +114,5 @@ ms.locfileid: "72381317"
 
      La información se descarga desde MTPS Content Service y se muestra dentro del control content.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

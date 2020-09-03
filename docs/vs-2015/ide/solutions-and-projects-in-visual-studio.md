@@ -51,10 +51,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661189"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
@@ -70,7 +70,7 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
 
  El siguiente diagrama muestra la relación entre los proyectos y soluciones, y los elementos que estos contienen de forma lógica.
 
- ![Soluciones y proyectos de Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
+ ![Soluciones y proyectos de Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
  También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md).
 
@@ -80,27 +80,27 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
 ## <a name="managing-projects-in-solution-explorer"></a>Administración de proyectos en el Explorador de soluciones
  Después de crear un proyecto nuevo, use el **Explorador de soluciones** para ver y administrar proyectos, soluciones y los elementos que tienen asociados. La siguiente ilustración muestra el Explorador de servidores con una solución de C# que contiene dos proyectos.
 
- ![Explorador de soluciones](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
+ ![Explorador de soluciones](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 
 ## <a name="in-this-section"></a>En esta sección
 
 - [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md)
 
-- [Agregar y quitar elementos del proyecto](../ide/adding-and-removing-project-items.md)
+- [Agregar y quitar elementos de proyecto](../ide/adding-and-removing-project-items.md)
 
 - [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)
 
 - [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)
 
-- [Administrar las propiedades de la aplicación](../ide/application-properties.md)
+- [Propiedades de la aplicación](../ide/application-properties.md)
 
 - [Administrar la firma de ensamblados y manifiestos](../ide/managing-assembly-and-manifest-signing.md)
 
-- [Cómo: Especificar el icono de una aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Cómo: especificar un icono de aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 - [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 
-- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+- [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [IDE de Visual Studio](../ide/visual-studio-ide.md)

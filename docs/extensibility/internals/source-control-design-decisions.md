@@ -34,7 +34,7 @@ Se deben tener en cuenta las siguientes decisiones de diseño para los proyectos
 
 3. Cuando el proyecto o el editor llama a <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> un archivo, los archivos especiales asociados a ese archivo no se desprotegen automáticamente. Pase los archivos especiales en junto con el archivo primario. El entorno detectará la relación entre todos los archivos que se pasan y ocultan correctamente los archivos especiales en la interfaz de usuario de desprotección.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

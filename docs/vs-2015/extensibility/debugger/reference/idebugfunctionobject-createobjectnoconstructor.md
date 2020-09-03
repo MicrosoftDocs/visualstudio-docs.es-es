@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor | Documentos de Microsoft
+title: 'IDebugFunctionObject:: CreateObjectNoConstructor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ea00035eb220ccd08590ceaea6db98944f4657a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179461"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Crea un objeto con ningún constructor.  
+Crea un objeto sin constructor.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,20 +42,20 @@ int CreateObjectNoConstructor(
   
 #### <a name="parameters"></a>Parámetros  
  `pClassObject`  
- [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa el tipo de objeto que se va a crearse.  
+ de Objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa el tipo del objeto que se va a crear.  
   
  `ppObject`  
- [out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el objeto recién creado.  
+ enuncia Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el objeto recién creado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Llame a este método para crear un objeto que representa una instancia de una estructura o un tipo complejo (que no requiere un constructor) que es un parámetro a la función representada por el [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaz.  
+ Llame a este método para crear un objeto que represente una instancia de una estructura o un tipo complejo (que no requiere un constructor) que sea un parámetro de la función representada por la interfaz [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  
   
- Si el parámetro de objeto requiere un constructor, llame a la [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) método.  
+ Si el parámetro de objeto requiere un constructor, llame al método [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
  [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

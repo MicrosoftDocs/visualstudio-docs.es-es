@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 96b7433ff4f696989142aa2c2ce47982006b93b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72610013"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Cómo: Suprimir advertencias mediante el elemento de menú

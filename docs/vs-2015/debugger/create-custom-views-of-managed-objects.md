@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72578030"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Creación de vistas personalizadas de objetos administrados
@@ -42,7 +42,7 @@ Se puede personalizar la manera en que Visual Studio muestra los tipos de datos 
  En código de [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], Visual Basic no admite el atributo DebuggerBrowsable. Esta limitación se ha quitado en las versiones más recientes de .NET Framework.  
   
 ## <a name="visualizers"></a>Visualizadores  
- Se puede escribir un visualizador para mostrar cualquier tipo de datos administrados. Para obtener más información, vea [Cómo: escribir un visualizador](../debugger/how-to-write-a-visualizer.md).  
+ Se puede escribir un visualizador para mostrar cualquier tipo de datos administrados. Para obtener más información, vea [Cómo: Escritura de un visualizador](../debugger/how-to-write-a-visualizer.md).  
   
 ## <a name="native-code"></a>Código nativo  
  En el caso de código nativo, se pueden agregar expansiones de tipo de datos personalizados al archivo autoexp.dat, ubicado en el directorio Archivos de programa\Microsoft Visual Studio 11.0\Common7\Packages\Debugger. El propio archivo incluye las instrucciones sobre cómo escribir reglas `autoexp`.  
@@ -52,8 +52,8 @@ Se puede personalizar la manera en que Visual Studio muestra los tipos de datos 
   
  Las vistas de tipos nativos también se pueden personalizar escribiendo un complemento de evaluador de expresiones. Para obtener más información, vea [ejemplo de EEAddIn: complemento del evaluador de expresiones de depuración](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
-## <a name="see-also"></a>Vea también  
- [Uso del atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
- [Uso del atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
+## <a name="see-also"></a>Consulte también  
+ [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Usar el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
+ [Ventanas inspección e inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
  [Mejorar la depuración con los atributos de visualización del depurador](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

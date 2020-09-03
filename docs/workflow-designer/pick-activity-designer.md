@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01ebd0dbfa8274b370a7e84b1033465e2be0b4a9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876039"
 ---
 # <a name="pick-activity-designer"></a>Diseñador de actividades Pick
@@ -37,9 +37,9 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.Pick> en el encabezado. El valor predeterminado es Pick. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.Pick> en el encabezado. El valor predeterminado es Pick. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)
 - [Actividad Pick](/dotnet/framework/windows-workflow-foundation/pick-activity)

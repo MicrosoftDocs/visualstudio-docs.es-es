@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO Microsoft Docs
+title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736888"
 ---
 # <a name="field_info"></a>FIELD_INFO
-Esta estructura describe una variable local, un parámetro u otro campo.
+Esta estructura describe una variable, un parámetro o un campo local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,27 +49,27 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Miembros
 `dwFields`\
-Una combinación de indicadores de la [enumeración FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) que especifica qué miembros se rellenan.
+Combinación de marcas de la enumeración [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) que especifica los miembros que se rellenan.
 
 `bstrFullName`\
-El nombre completo del campo.
+Nombre completo del campo.
 
 `bstrName`\
-El nombre corto del campo.
+Nombre corto del campo.
 
 `bstrType`\
 Tipo del campo.
 
 `dwModifiers`\
-Una combinación de indicadores de la [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumeración que describe el campo.
+Combinación de marcas de la enumeración [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) que describe el campo.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método donde se rellena.
+Esta estructura se pasa al método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) en el que se rellena.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: sh.h
+Encabezado: SH. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

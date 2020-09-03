@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f9c54691ed343493ef1e43798faf4d2ab6f60fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662120"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
@@ -37,11 +37,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 ```
 
 ## <a name="arguments"></a>Argumentos
- /Build compila el proyecto especificado por `/project` `ProjName`.
+ /Build crea el proyecto especificado por `/project` `ProjName` .
 
  /Clean limpia todos los archivos intermedios y directorios de salida creados durante una compilación.
 
- /Rebuild limpia y crea el proyecto especificado por `/project` `ProjName`.
+ /Rebuild limpia y luego compila el proyecto especificado por `/project` `ProjName` .
 
  /deploy especifica que el proyecto se implementará después de una compilación o recompilación.
 
@@ -53,7 +53,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 
  /projectconfig `ProjConfigName` Opcional. El nombre de una configuración de compilación de proyecto que se aplicará al `/project` mencionado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 - Se debe usar como parte de un comando `devenv /build`, /`clean`, `/rebuild` o `/deploy`.
 
@@ -68,5 +68,5 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Modificadores de la línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) [/projectconfig (devenv. exe)](../../ide/reference/projectconfig-devenv-exe.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md) [/rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/deploy (devenv. exe)](../../ide/reference/deploy-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>Consulte también
+ Los [modificadores de la línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) [/projectconfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

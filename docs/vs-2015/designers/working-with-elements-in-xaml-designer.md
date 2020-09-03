@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 483023fbd28da26d9967dd2d88bc37748d00f088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663986"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
@@ -22,7 +22,7 @@ ms.locfileid: "72663986"
 Para agregar elementos (controles, distribuciones y formas) a una aplicación, puedes usar XAML, código o XAML Designer. En este tema se describe cómo trabajar con elementos en el Diseñador XAML en Visual Studio o Blend para Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Agregar un elemento a un diseño
- El *diseño* es el proceso de ajustar el tamaño de los elementos y colocarlos en una interfaz de usuario. Para colocar elementos visuales, debe colocarlos en un [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) de diseño. `Panel` tiene una propiedad secundaria, que es una colección de tipos [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Se pueden usar distintos elementos secundarios de `Panel`, como [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) y [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), para que actúen como contenedores de diseño y para colocar y organizar los elementos en una página.
+ El *diseño* es el proceso de ajustar el tamaño de los elementos y colocarlos en una interfaz de usuario. Para colocar elementos visuales, debe colocarlos en un [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) de diseño. `Panel` tiene una propiedad secundaria, que es una colección de tipos [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Puede usar varios  `Panel` elementos secundarios, como [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx)y [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), para servir como contenedores de diseño y para colocar y organizar los elementos en una página.
 
  De forma predeterminada, un panel `Grid` sirve como contenedor de diseño de nivel superior dentro de una página o formulario. Puedes agregar paneles de diseño, controles u otros elementos en el diseño de página de nivel superior.
 
@@ -30,14 +30,14 @@ Para agregar elementos (controles, distribuciones y formas) a una aplicación, p
 
 - En el Diseñador XAML, realice una de las siguientes acciones:
 
-  - Haga doble clic en un elemento en el **Cuadro de herramientas** (o seleccione un elemento en el Cuadro de herramientas y presione Entrar).
+  - Haga doble clic en un elemento del **cuadro de herramientas** (o seleccione un elemento en el cuadro de herramientas y presione Entrar).
 
   - Arrastre un elemento del **Cuadro de herramientas** a la mesa de trabajo.
 
   - En el **Cuadro de herramientas**, seleccione una de las herramientas de dibujo (como [Elipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) o [Rectángulo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) y después dibuje un elemento en el panel activo.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Cambiar el orden de distribución en capas de los elementos
- Cuando haya dos elementos en la mesa de trabajo en XAML Designer, aparecerá un elemento delante del otro en el orden de distribución en capas. En la parte inferior de la lista de elementos de la ventana Esquema del documento se encuentra el elemento que se sitúa en primer plano (excepto cuando se establece la propiedad **ZIndex** de un elemento). Cuando se inserta un elemento en una página, un formulario o un contenedor de diseño, el elemento se coloca automáticamente delante de los demás elementos en el elemento de contenedor activo. Para cambiar el orden de los elementos, puede usar los comandos de **Ordenar** o arrastrar los elementos en el árbol de objetos de la ventana Esquema del documento.
+ Cuando haya dos elementos en la mesa de trabajo en XAML Designer, aparecerá un elemento delante del otro en el orden de distribución en capas. En la parte inferior de la lista de elementos de la ventana esquema del documento se encuentra el elemento en primer plano (excepto cuando se establece la propiedad **ZIndex** de un elemento). Cuando se inserta un elemento en una página, un formulario o un contenedor de diseño, el elemento se coloca automáticamente delante de los demás elementos en el elemento de contenedor activo. Para cambiar el orden de los elementos, puede usar los comandos de **Ordenar** o arrastrar los elementos en el árbol de objetos de la ventana Esquema del documento.
 
 #### <a name="to-change-the-layering-order"></a>Para cambiar el orden de distribución en capas
 
@@ -60,7 +60,7 @@ Para agregar elementos (controles, distribuciones y formas) a una aplicación, p
 ## <a name="changing-the-alignment-of-an-element"></a>Cambiar la alineación de un elemento
  Puede alinear los elementos en la mesa de trabajo usando comandos de menú o arrastrando los elementos a las guías de alineación.
 
- Una *guía de alineación* es una indicación visual que ayuda a alinear un elemento con respecto a otros elementos de la aplicación.
+ Una guía de *alineación* es una indicación visual que ayuda a alinear un elemento con respecto a otros elementos de la aplicación.
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Para alinear dos o más elementos mediante comandos de menú
 
@@ -119,7 +119,7 @@ Para agregar elementos (controles, distribuciones y formas) a una aplicación, p
 
 #### <a name="to-reset-the-element-layout"></a>Para restablecer el diseño del elemento
 
-- En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento, elija **Diseño**, **Restablecer**  *NombreDeLaPropiedad*, donde *NombreDeLaPropiedad* es la propiedad que quiere restablecer (o seleccione **Diseño**, **Restablecer todo** para restablecer todas las propiedades de diseño del elemento).
+- En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento, elija **Diseño**, **Restablecer ** *NombreDeLaPropiedad*, donde *NombreDeLaPropiedad* es la propiedad que quiere restablecer (o seleccione **Diseño**, **Restablecer todo** para restablecer todas las propiedades de diseño del elemento).
 
-## <a name="see-also"></a>Otras referencias
- [Crear una UI usando el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+## <a name="see-also"></a>Consulte también
+ [Tutorial: Crear una UI usando el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

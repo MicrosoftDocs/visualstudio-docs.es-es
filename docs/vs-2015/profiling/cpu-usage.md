@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7732a5757281e83c501a8258dd1d44b4f329a87a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548062"
 ---
 # <a name="cpu-usage"></a>Uso de CPU
@@ -27,7 +27,7 @@ Si necesita investigar problemas de rendimiento de la aplicación, un buen punto
   
  El concentrador de rendimiento y diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Por ejemplo, puede ejecutar la herramienta **Uso de CPU** en equipos locales o remotos o en un simulador o emulador. Puede analizar el rendimiento de un proyecto abierto en Visual Studio, conectado a una aplicación en ejecución, o iniciar una aplicación que se instala desde la tienda Windows. Para obtener más información, vea [ejecutar herramientas de generación de perfiles sin depurar](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a>Recopilar datos de uso de CPU  
+## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> Recopilar datos de uso de CPU  
   
 1. En Visual Studio, establezca la configuración de soluciones en **Versión** y elija el destino de implementación.  
   
@@ -72,7 +72,7 @@ Si necesita investigar problemas de rendimiento de la aplicación, un buen punto
 |![Paso 3](../profiling/media/procguid-3.png "ProcGuid_3")|Los elementos secundarios del nodo de segundo nivel son los métodos de código de usuario y las rutinas asíncronas llamados o creados por el sistema de segundo nivel y el código de Framework.|  
 |![Paso 4](../profiling/media/procguid-4.png "ProcGuid_4")|Los nodos secundarios de un método contienen datos únicamente de las llamadas del método principal. Cuando está deshabilitada la opción **Mostrar código externo** , los métodos de aplicación también pueden contener un nodo **[Código externo]** .|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Código externo  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> Código externo  
  Código externo son funciones de los componentes del sistema y del marco que son ejecutadas por el código que usted escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que el árbol de llamadas de Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]** .  
   
  Si quiere ver las rutas de acceso a las llamadas de código externo, elija **Mostrar código externo** en la lista **Vista de filtro** y luego **Aplicar**.  
@@ -95,9 +95,9 @@ Si necesita investigar problemas de rendimiento de la aplicación, un buen punto
 |**Solo CPU (%)**|![Porcentaje de autoecuación](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> El porcentaje de actividad de la CPU de la aplicación en el intervalo de tiempo seleccionado que usaron las llamadas a la función, excluidas la actividad de las funciones llamadas por la función.|  
 |**CPU total (ms)**|El número de milisegundos empleado en llamadas a la función en el intervalo de tiempo seleccionado y las funciones que fueron llamadas por la función.|  
 |**Propia CPU (ms)**|El número de milisegundos empleado en llamadas a la función en el intervalo de tiempo seleccionado y las funciones que fueron llamadas por la función.|  
-|**Módulo**|El nombre del módulo que contiene la función o el número de módulos que contienen las funciones en un nodo [Código externo].|  
+|**módulo**|El nombre del módulo que contiene la función o el número de módulos que contienen las funciones en un nodo [Código externo].|  
   
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Funciones asincrónicas en el árbol de llamadas de uso de CPU  
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funciones asincrónicas en el árbol de llamadas de uso de CPU  
  Cuando el compilador encuentra un método asincrónico, crea una clase oculta para controlar la ejecución del método. Conceptualmente, la clase es una máquina de estados que incluye una lista de funciones generadas por el compilador que llaman a operaciones del método original de forma asincrónica, así como las devoluciones de llamadas, el programador y los iteradores necesarios para que funcionen correctamente. Cuando un método principal llama al método original, el tiempo de ejecución quita al método del contexto de ejecución del elemento principal y ejecuta los métodos de la clase oculta en el contexto del código del sistema y Framework que controla la ejecución de la aplicación. A menudo, aunque no siempre, los métodos asincrónicos se ejecutan en uno o varios subprocesos diferentes. Este código se muestra en el árbol de llamadas de Uso de CPU como elementos secundarios del nodo **[Código externo]** que se encuentra justo debajo del nodo superior del árbol.  
   
  Para verlo en el ejemplo, vuelva a seleccionar el segmento `GetMaxNumberAsyncButton_Click` en la escala de tiempo.  
