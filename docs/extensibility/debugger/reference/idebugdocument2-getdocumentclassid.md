@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetDocumentClassID ? Microsoft Docs
+title: 'IDebugDocument2:: GetDocumentClassID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 71683c91082f477da530ec1be1fdc7627d6a7635
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732032"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
@@ -40,7 +40,7 @@ int GetDocumentClassID( 
 ```
 
 ## <a name="parameters"></a>Parámetros
-`pclsid`[fuera] Devuelve un GUID que es el identificador de clase del documento.
+`pclsid` enuncia Devuelve un GUID que es el identificador de clase del documento.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

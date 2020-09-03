@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205977"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrar en un entorno de varios procesadores
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  Para reenviar los eventos de un registrador de reenvío, llame al método <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> de la interfaz <xref:Microsoft.Build.Framework.IEventRedirector>. Pase el <xref:Microsoft.Build.Framework.BuildEventArgs> adecuado, o un derivado, como parámetro.  
   
- Para obtener más información, vea [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
+ Para obtener más información, consulte [crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Asociar un registrador distribuido  
  Para asociar un registrador distribuido en una compilación de la línea de comandos, utilice el modificador `/distributedlogger` (o, `/dl` abreviado). El formato para especificar los nombres de los tipos y clases del registrador es igual que el del modificador `/logger`, sólo que un registrador distribuido consta de dos clases de registro: un registrador de reenvío y un registrador central. A continuación, se muestra un ejemplo de cómo asociar un registrador distribuido:  
@@ -73,6 +73,6 @@ Culture=neutral
   
  Un asterisco (*) separa los dos nombres de registrador en el modificador `/dl`.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Registradores de compilación](../msbuild/build-loggers.md)   
  [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md)

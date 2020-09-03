@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetResult | Documentos de Microsoft
+title: 'IDebugExpressionEvaluationCompleteEvent2:: GetResult | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73227762270fe4e22e6edc2643ede2d1e7a9bd70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148725"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtiene el resultado de evaluación de expresiones.  
+Obtiene el resultado de la evaluación de la expresión.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,14 +40,14 @@ int GetResult( 
   
 #### <a name="parameters"></a>Parámetros  
  `ppResult`  
- [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa el resultado de la evaluación de expresiones.  
+ enuncia Devuelve un objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa el resultado de la evaluación de la expresión.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El valor devuelto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto contiene el valor de la expresión evaluada. Tenga en cuenta que este valor puede ser un valor complejo como una matriz, pero el resultado final debe ser un numérico o valor de cadena que se muestra al usuario.  
+ El objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) devuelto contiene el valor de la expresión evaluada. Tenga en cuenta que este valor podría ser un valor complejo, como una matriz, pero el resultado final debe ser un valor numérico o de cadena que se muestra al usuario.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

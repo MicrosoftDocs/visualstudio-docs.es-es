@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659464"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Actualizar un modelo UML a partir de un subproceso en segundo plano
@@ -32,7 +32,7 @@ En ocasiones, puede resultar útil realizar cambios en un modelo a través de un
 
 #### <a name="to-run-the-example"></a>Para ejecutar el ejemplo
 
-1. Cree un controlador de comandos en C# un proyecto como se describe en [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+1. Cree un controlador de comandos en un proyecto de C# tal y como se describe en [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 2. Asegúrese de que el proyecto contiene referencias a estos ensamblados:
 
@@ -187,5 +187,5 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 
  Puede usar `uiThreadHolder.Invoke()` para realizar operaciones en el subproceso de la interfaz de usuario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)

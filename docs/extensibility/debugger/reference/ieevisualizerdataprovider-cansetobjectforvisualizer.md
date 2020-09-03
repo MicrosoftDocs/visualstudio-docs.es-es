@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::CanSetObjectForVisualizer Microsoft Docs
+title: 'IEEVisualizerDataProvider:: CanSetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c4d3c190195360d37c15be12cef2790610928a95
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718132"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
-Este método determina si el visualizador puede tener actualizado el objeto de datos que representa.
+Este método determina si el visualizador puede tener el objeto de datos que representa actualizado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int CanSetObjectForVisualizer(
 
 ## <a name="parameters"></a>Parámetros
 `b`\
-[fuera] Distinto de`TRUE`cero ( ) si el objeto del`FALSE`visualizador se puede actualizar, cero ( ) si no puede.
+enuncia Distinto de cero ( `TRUE` ) si el objeto del visualizador se puede actualizar, cero ( `FALSE` ) si no es posible.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Un objeto podría no ser modificable si está enlazado a memoria de solo lectura, por ejemplo.
+ Un objeto podría no ser modificable si está enlazado a la memoria de solo lectura, por ejemplo.
 
 ## <a name="see-also"></a>Vea también
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

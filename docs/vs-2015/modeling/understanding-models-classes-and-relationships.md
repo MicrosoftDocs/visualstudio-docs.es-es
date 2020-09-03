@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5426c6f8e9c4a932430a0c3bd3df6d98400c3562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659557"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
@@ -26,15 +26,15 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
  En este tema se explican las características centrales de la definición de DSL.
 
 ## <a name="the-dsl-definition"></a>La definición de DSL
- Al abrir `Dsl\DslDefinition.dsl`, la ventana de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se parece a la siguiente imagen.
+ Al abrir `Dsl\DslDefinition.dsl` , la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ventana es similar a la siguiente imagen.
 
- ![diseñador DSL](../modeling/media/dsl-designer.png "dsl_designer")
+ ![diseñador dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
  La información más importante en la definición de DSL se muestra en el diagrama de definición de DSL. La información adicional, que también forma parte de DslDefinition. DSL, se muestra en el explorador de DSL, que normalmente aparece en el lateral del diagrama. Trabajará con el diagrama de las tareas más frecuentes y con DSL Explorer para realizar personalizaciones más avanzadas.
 
  En el diagrama de definición de DSL se muestran las clases de dominio que definen los elementos del modelo y las relaciones que definen los vínculos entre los elementos del modelo. También se muestran las formas y los conectores que se usan para mostrar los elementos del modelo al usuario.
 
- ![diseñador DSL con calle](../modeling/media/dsl-desinger.png "dsl_desinger")
+ ![diseñador dsl con carril](../modeling/media/dsl-desinger.png "dsl_desinger")
 
  Al seleccionar un elemento de la definición de DSL, en el diagrama o en el explorador de DSL, se muestra información sobre él en el ventana Propiedades. Es posible que se muestre información adicional en la ventana detalles de DSL.
 
@@ -54,7 +54,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  En la ilustración siguiente se muestran las clases de dominio y las relaciones de la definición de DSL de la biblioteca de música.
 
- ![Incrustación y relaciones de referencia](../modeling/media/music-classes.png "Music_Classes")
+ ![Relaciones de incrustación y referencia](../modeling/media/music-classes.png "Music_Classes")
 
  En la ilustración se muestran cuatro clases de dominio: música, álbum, artista y canción. Las clases de dominio definen propiedades de dominio como name, title, etc. En el modelo de instancia, los valores de algunas de estas propiedades se muestran en el diagrama.
 
@@ -132,9 +132,9 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
  Cuando se crea una relación en una definición de DSL, se proporcionan los valores predeterminados a los nombres de propiedad y de relación. Sin embargo, puede cambiarlos.
 
 ## <a name="multiplicities"></a>Multiplicidades
- Las multiplicidades especifican el número de elementos que pueden tener el mismo rol en una relación de dominio. En el ejemplo, la configuración de multiplicidad de cero a varios (0.. \*) en el rol de **Catálogo** especifica que cualquier instancia de la clase de dominio del **publicador** puede tener tantos vínculos de relación **PublisherCatalog** como desee.
+ Las multiplicidades especifican el número de elementos que pueden tener el mismo rol en una relación de dominio. En el ejemplo, la configuración de multiplicidad de cero a varios (0.. \* ) en el rol de **Catálogo** especifica que cualquier instancia de la clase de dominio del **publicador** puede tener tantos vínculos de relación **PublisherCatalog** como desee.
 
- Configure la multiplicidad de un rol; para ello, escriba en el diagrama o modifique la propiedad `Multiplicity` en la ventana **propiedades** . En la tabla siguiente se describe la configuración de esta propiedad.
+ Configure la multiplicidad de un rol escribiendo en el diagrama o modificando la `Multiplicity` propiedad en la ventana **propiedades** . En la tabla siguiente se describe la configuración de esta propiedad.
 
 |Tipo de multiplicidad|Descripción|
 |-----------------------|-----------------|
@@ -152,5 +152,5 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  Una relación derivada especializa su relación base. Las clases de dominio a las que se vincula deben derivarse o ser iguales que las clases vinculadas por la relación base. Cuando se crea un vínculo de la relación derivada en un modelo, se trata de una instancia de las relaciones derivadas y base. En el código del programa, puede navegar hasta el final opuesto del vínculo mediante las propiedades generadas por la base o por la clase derivada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Relaciones de dominio en la API generada](../misc/domain-relationships-in-the-generated-api.md) [herramientas del lenguaje específico de dominio Glosario](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

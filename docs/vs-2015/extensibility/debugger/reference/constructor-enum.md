@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b435507c84d697ef27a2b37d6153a53dbe13cb3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206085"
 ---
-# <a name="constructorenum"></a>CONSTRUCTOR_ENUM
+# <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Selecciona distintos tipos de constructores.  
@@ -47,21 +47,21 @@ public enum ConstructorMatchOptions { 
  Selecciona todos los constructores.  
   
  crNonStatic  
- Selecciona los constructores no estáticos.  
+ Selecciona constructores no estáticos.  
   
  crStatic  
- Selecciona los constructores estáticos.  
+ Selecciona constructores estáticos.  
   
-## <a name="remarks"></a>Comentarios  
- Se pasa como argumento a la [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) método.  
+## <a name="remarks"></a>Observaciones  
+ Se pasa como argumento al método [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

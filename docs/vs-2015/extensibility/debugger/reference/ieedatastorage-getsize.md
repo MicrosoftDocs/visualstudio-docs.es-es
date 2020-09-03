@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetSize | Documentos de Microsoft
+title: 'IEEDataStorage:: se obtiene | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c76ae583d089b23d21664c9e312d2486a14c2aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192123"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Devuelve el número de bytes que contiene este objeto.  
+Devuelve el número de bytes contenidos en este objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,14 +40,14 @@ int GetSize(
   
 #### <a name="parameters"></a>Parámetros  
  `size`  
- [out] El número de bytes que contiene este objeto.  
+ enuncia Número de bytes contenidos en este objeto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Use la [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) método para recuperar los bytes de datos real.  
+ Utilice el método [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) para recuperar los bytes de datos reales.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

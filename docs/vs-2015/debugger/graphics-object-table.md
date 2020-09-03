@@ -1,5 +1,5 @@
 ---
-title: Tabla de objetos gráficos | Documentos de Microsoft
+title: Tabla de objetos gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161168"
 ---
 # <a name="graphics-object-table"></a>Tabla de objetos gráficos
@@ -27,7 +27,7 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
   
  Esta es la tabla de objetos:  
   
- ![Objetos de Direct3D que se han creado por una aplicación.](../debugger/media/gfx-diag-demo-object-table-orientation.png "gfx_diag_demo_object_table_orientation")  
+ ![Objetos Direct3D que ha creado una aplicación.](../debugger/media/gfx-diag-demo-object-table-orientation.png "gfx_diag_demo_object_table_orientation")  
   
 ## <a name="understanding-the-graphics-object-table"></a>Descripción de la Tabla de objetos gráficos  
  La Tabla de objetos gráficos permite analizar los objetos de Direct3D que admiten la representación de un fotograma determinado. Puede aislar un problema de representación en un objeto específico examinando sus propiedades y datos (usando otras herramientas de diagnóstico de gráficos anteriormente en el diagnóstico, puede restringir la lista de objetos que podrían no ser los esperados). Cuando encuentre el objeto incorrecto, puede usar una visualización específica de su tipo para examinarlo; por ejemplo, puede usar el Editor de imágenes para ver texturas o el *Visualizador del búfer* para ver el contenido del búfer.  
@@ -37,10 +37,10 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 ### <a name="graphics-object-table-format"></a>Formato de la Tabla de objetos gráficos  
  La Tabla de objetos gráficos muestra los objetos y recursos de Direct3D que admiten el fotograma asociado al evento seleccionado; por ejemplo, objetos de estado, búferes, sombreadores, texturas y otros recursos. Los objetos que se crearon en un fotograma anterior pero que no se usan durante el fotograma capturado se omiten de la tabla de objetos. Los objetos que se han destruido en eventos anteriores durante el fotograma capturado se omiten en los eventos posteriores. Los objetos que no se establecen en D3D10Device o D3D11DeviceContext aparecen como texto en gris. Los objetos se muestran en un formato de tabla.  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Identificador**|Identificador de objeto.|  
-|**Nombre**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|  
+|**Name**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|  
 |**Type**|Tipo del objeto.|  
 |**Active**|Muestra "*" para un objeto que se estableció en D3D10Device o D3D11DeviceContext durante el fotograma capturado.<br /><br /> Esto corresponde a los objetos que se muestran como texto gris, pero proporciona una entrada de columna que se puede utilizar como ayuda para ordenar la tabla de objetos.|  
 |**Size**|Tamaño del objeto en bytes.|  
@@ -57,7 +57,7 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
   
  Aquí tenemos el Visor de textura que muestra el contenido de la fase de canalización de fusión de salida.  
   
- ![La versión preliminar de la textura mostrando la fusión de salida](../debugger/media/gfx-diag-texture-preview.png "gfx_diag_texture_preview")  
+ ![Vista previa de la textura en la que se muestra la fusión de salida](../debugger/media/gfx-diag-texture-preview.png "gfx_diag_texture_preview")  
   
 ### <a name="d3d12-command-list"></a>Lista de comandos de D3D12  
  En Direct3D 12 una lista de comandos es un objeto que registra comandos en un asignador de comando para que puedan enviarse a la GPU como una única solicitud. Las listas de comandos normalmente realizan una serie de comandos de configuración de estado, dibujo, borrado y copia. Son especialmente importantes porque constituyen el método preferido de representación en Direct3D 12 y se pueden reutilizar entre fotogramas para ayudar a aumentar el rendimiento. Los detalles de la lista de comandos se muestran en una nueva ventana de documento, con información relacionada con cada fase de canalización que se presenta en su propia pestaña.  
@@ -79,7 +79,7 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
   
  También puede alternar la casilla **Mostrar desplazamientos** para mostrar u ocultar el desplazamiento de cada elemento en el búfer.  
   
-|Type|DESCRIPCIÓN|  
+|Tipo|Descripción|  
 |----------|-----------------|  
 |**float**|Valor de punto flotante de 32 bits.|  
 |**float2**|Vector que contiene dos valores de punto flotante de 32 bits.|  
@@ -110,6 +110,6 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 |**uint64**|Valor entero de 64 bits sin signo. Igual que **u8byte**.|  
 |**bool**|Valor booleano (`true` o `false`). Cada valor booleano se representa mediante un valor de 32 bits.|  
   
-## <a name="see-also"></a>Vea también  
- [Diagnóstico de gráficos (depuración de gráficos DirectX)](../debugger/visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>Consulte también  
+ [Diagnóstico de gráficos (depurar gráficos de DirectX)](../debugger/visual-studio-graphics-diagnostics.md)   
  [Tutorial: Objetos ausentes debido al estado del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)

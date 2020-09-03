@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Enlace de datos complejo en un proyecto de nivel de documento'
+title: 'Tutorial: enlace de datos complejo en un proyecto de nivel de documento'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,159 +16,159 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67692343"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos complejo en un proyecto de nivel de documento
-  Este tutorial muestra los aspectos básicos del enlace de datos complejo en un proyecto de nivel de documento. Puede enlazar varias celdas en una hoja de cálculo de Microsoft Office Excel a los campos de la base de datos Northwind de SQL Server.
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Tutorial: enlace de datos complejo en un proyecto de nivel de documento
+  En este tutorial se muestran los conceptos básicos del enlace de datos complejo en un proyecto de nivel de documento. Puede enlazar varias celdas de una Microsoft Office hoja de cálculo de Excel a los campos de la base de datos Northwind SQL Server.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  En este tutorial se muestran las tareas siguientes:
 
-- Agregar un origen de datos a su proyecto de libro.
+- Agregar un origen de datos al proyecto del libro.
 
 - Agregar controles enlazados a datos a una hoja de cálculo.
 
-- Guardar los cambios de datos en la base de datos.
+- Guardar de nuevo los cambios de datos en la base de datos.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Acceso a un servidor con la base de datos de ejemplo Northwind de SQL Server.
+- Acceso a un servidor con la base de datos de ejemplo Northwind SQL Server.
 
 - Permisos para leer y escribir en la base de datos de SQL Server.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
  El primer paso es crear un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1. Cree un proyecto de libro de Excel con el nombre **Mi enlace de datos complejo**. En el asistente, seleccione **crear un nuevo documento**.
+1. Cree un proyecto de libro de Excel con el nombre **mi enlace de datos complejo**. En el asistente, seleccione **crear un nuevo documento**.
 
-     Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el **Mi enlace de datos complejo** proyecto a **el Explorador de soluciones**.
+     Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el proyecto **My Complex Data Binding** a **Explorador de soluciones**.
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
  Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo al proyecto.
 
 ### <a name="to-create-the-data-source"></a>Para crear el origen de datos
 
-1. Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.
+1. Si la ventana **orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
 
 2. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
 3. Seleccione **base de datos** y, a continuación, haga clic en **siguiente**.
 
-4. Seleccione una conexión de datos para la base de datos de SQL Server de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.
+4. Seleccione una conexión de datos a la base de datos de ejemplo Northwind SQL Server o agregue una nueva conexión mediante el botón **nueva conexión** .
 
-5. Después de haberse seleccionada o creada una conexión, haga clic en **siguiente**.
+5. Después de seleccionar o crear una conexión, haga clic en **siguiente**.
 
 6. Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.
 
-7. Expanda el **tablas** nodo en el **objetos de base de datos** ventana.
+7. Expanda el nodo **tablas** en la ventana **objetos de base de datos** .
 
-8. Active la casilla situada junto a la **empleados** tabla.
+8. Active la casilla situada junto a la tabla **Employees** .
 
-9. Haga clic en **Finalizar**.
+9. Haga clic en **Finalizar**
 
-   El asistente agrega los **empleados** la tabla a la **orígenes de datos** ventana. También agrega un conjunto de datos con tipo al proyecto que está visible en **el Explorador de soluciones**.
+   El asistente agrega la tabla **Employees** a la ventana **orígenes de datos** . También agrega un conjunto de un objeto con tipo al proyecto que está visible en **Explorador de soluciones**.
 
 ## <a name="add-controls-to-the-worksheet"></a>Agregar controles a la hoja de cálculo
- Se mostrará una hoja de cálculo el **empleados** tabla cuando se abre el libro. Los usuarios podrán realizar cambios en los datos y, a continuación, guardar los cambios en la base de datos, haga clic en un botón.
+ Una hoja de cálculo mostrará la tabla **empleados** cuando se abra el libro. Los usuarios podrán realizar cambios en los datos y, a continuación, guardarlos de nuevo en la base de datos haciendo clic en un botón.
 
- Para enlazar automáticamente la hoja de cálculo a la tabla, puede agregar un <xref:Microsoft.Office.Tools.Excel.ListObject> control a la hoja de cálculo desde el **orígenes de datos** ventana. Para conceder al usuario la opción para guardar los cambios, agregue un <xref:System.Windows.Forms.Button> controlar desde la **cuadro de herramientas**.
+ Para enlazar la hoja de cálculo a la tabla automáticamente, puede Agregar un <xref:Microsoft.Office.Tools.Excel.ListObject> control a la hoja de cálculo desde la ventana **orígenes de datos** . Para proporcionar al usuario la opción de guardar los cambios, agregue un <xref:System.Windows.Forms.Button> control desde el **cuadro de herramientas**.
 
 #### <a name="to-add-a-list-object"></a>Para agregar un objeto de lista
 
-1. Compruebe que la **mi Binding.xlsx datos complejos** libro está abierto en el Diseñador de Visual Studio, con **Sheet1** muestra.
+1. Compruebe que el libro **mis datos complejos Binding.xlsx** está abierto en el diseñador de Visual Studio, donde se muestra **Sheet1** .
 
-2. Abra el **orígenes de datos** ventana y seleccione el **empleados** nodo.
+2. Abra la ventana **orígenes de datos** y seleccione el nodo **empleados** .
 
-3. Haga clic en la flecha de lista desplegable que aparece.
+3. Haga clic en la flecha desplegable que aparece.
 
 4. Seleccione **ListObject** en la lista desplegable.
 
-5. Arrastre el **empleados** tabla a la celda **A6**.
+5. Arrastre la tabla **Employees** hasta la celda **A6**.
 
-     Un <xref:Microsoft.Office.Tools.Excel.ListObject> control denominado `EmployeesListObject` se crea en la celda **A6**. Al mismo tiempo, un <xref:System.Windows.Forms.BindingSource> denominado `EmployeesBindingSource`, un adaptador de tabla y un <xref:System.Data.DataSet> instancia se agregan al proyecto. El control se enlaza a la <xref:System.Windows.Forms.BindingSource>, que a su vez se enlaza a la <xref:System.Data.DataSet> instancia.
+     <xref:Microsoft.Office.Tools.Excel.ListObject>Se crea un control denominado `EmployeesListObject` en la celda **A6**. Al mismo tiempo, <xref:System.Windows.Forms.BindingSource> `EmployeesBindingSource` <xref:System.Data.DataSet> se agregan al proyecto un denominado, un adaptador de tabla y una instancia de. El control está enlazado a <xref:System.Windows.Forms.BindingSource> , que a su vez se enlaza a la <xref:System.Data.DataSet> instancia de.
 
 ### <a name="to-add-a-button"></a>Para agregar un botón
 
-1. Desde el **controles comunes** pestaña de la **cuadro de herramientas**, agregue un <xref:System.Windows.Forms.Button> control a la celda **A4** de la hoja de cálculo.
+1. En la pestaña **controles comunes** del **cuadro de herramientas**, agregue un <xref:System.Windows.Forms.Button> control a la celda **a4** de la hoja de cálculo.
 
-   El siguiente paso es agregar texto al botón cuando se abre la hoja de cálculo.
+   El siguiente paso consiste en agregar texto al botón cuando se abra la hoja de cálculo.
 
 ## <a name="initialize-the-control"></a>Inicializar el control
- Agregar texto al botón en el <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> controlador de eventos.
+ Agregue texto al botón en el <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> controlador de eventos.
 
 ### <a name="to-initialize-the-control"></a>Para inicializar el control
 
-1. En **el Explorador de soluciones**, haga clic en **Sheet1.vb** o **Sheet1.cs**y, a continuación, haga clic en **ver código** en el menú contextual.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en **Hoja1. VB** o **Sheet1.CS**y, a continuación, haga clic en **Ver código** en el menú contextual.
 
-2. Agregue el código siguiente a la `Sheet1_Startup` método para establecer el texto de la b`utton`.
+2. Agregue el código siguiente al `Sheet1_Startup` método para establecer el texto para la b `utton` .
 
     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
 
-3. Solo en C#, agregue un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos para el `Sheet1_Startup` método.
+3. Solo para C#, agregue un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> evento al `Sheet1_Startup` método.
 
     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
 
-   Ahora, agregue código para controlar la <xref:System.Windows.Forms.Control.Click> eventos del botón.
+   Ahora, agregue el código para controlar el <xref:System.Windows.Forms.Control.Click> evento del botón.
 
-## <a name="save-changes-to-the-database"></a>Guardar los cambios en la base de datos
- Se han realizado cambios a los datos solo existen en el conjunto de datos local hasta que explícitamente se guardan en la base de datos.
+## <a name="save-changes-to-the-database"></a>Guardar cambios en la base de datos
+ Cualquier cambio realizado en los datos solo existe en el conjunto de datos local hasta que se guardan explícitamente de nuevo en la base de datos.
 
 ### <a name="to-save-changes-to-the-database"></a>Para guardar los cambios en la base de datos
 
-1. Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `button`y agregue el código siguiente para confirmar todos los cambios que se han realizado en el conjunto de datos a la base de datos.
+1. Agregue un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> evento de `button` y agregue el código siguiente para confirmar todos los cambios que se han realizado en el conjunto de datos de nuevo en la base de datos.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
 
-## <a name="test-the-application"></a>Probar la aplicación
- Ahora puede probar el libro para comprobar que los datos aparecen como se esperaba y que puede manipular los datos del objeto de lista.
+## <a name="test-the-application"></a>Prueba de la aplicación
+ Ahora puede probar el libro para comprobar que los datos aparecen de la manera esperada y que puede manipular los datos del objeto de lista.
 
 ### <a name="to-test-the-data-binding"></a>Para probar el enlace de datos
 
 - Presione **F5**.
 
-     Compruebe que, cuando se abre el libro, el objeto de lista se rellena con datos de la **empleados** tabla.
+     Compruebe que, cuando se abre el libro, el objeto de lista se rellena con datos de la tabla **Employees** .
 
-### <a name="to-modify-data"></a>Para modificar los datos
+### <a name="to-modify-data"></a>Para modificar datos
 
 1. Haga clic en la celda **B7**, que debe contener el nombre **Davolio**.
 
-2. Escriba el nombre **Anderson**y, a continuación, presione **ENTRAR**.
+2. Escriba el nombre **Anderson**y, a continuación, presione **entrar**.
 
 ### <a name="to-modify-a-column-header"></a>Para modificar un encabezado de columna
 
 1. Haga clic en la celda que contiene el encabezado de columna **LastName**.
 
-2. Tipo **apellido**, incluido un espacio entre las dos palabras y, a continuación, presione **ENTRAR**.
+2. Escriba **Last Name**, incluido un espacio entre las dos palabras y, a continuación, presione **entrar**.
 
-### <a name="to-save-data"></a>Para guardar los datos
+### <a name="to-save-data"></a>Para guardar datos
 
-1. Haga clic en **guardar** en la hoja de cálculo.
+1. Haga clic en **Guardar** en la hoja de cálculo.
 
-2. Salga de Excel. Haga clic en **No** cuando se le pida que guarde los cambios realizados.
+2. Salga de Excel. Haga clic en **no** cuando se le pida que guarde los cambios realizados.
 
-3. Presione **F5** volver a ejecutar el proyecto.
+3. Presione **F5** para volver a ejecutar el proyecto.
 
-     El objeto de lista se rellena con datos de la **empleados** tabla.
+     El objeto de lista se rellena con datos de la tabla **Employees** .
 
-4. Tenga en cuenta que el nombre de la celda **B7** sigue siendo **Anderson**, que son los datos los cambios realizados y vuelve a guardar en la base de datos. El encabezado de columna **LastName** ha cambiado a su forma original sin espacio, porque el encabezado de columna no está enlazado a la base de datos y no ha guardado los cambios realizados en la hoja de cálculo.
+4. Observe que el nombre de la celda **B7** sigue siendo **Anderson**, que es el cambio de datos que ha realizado y guardado en la base de datos. El encabezado de columna **LastName** ha cambiado a su forma original sin espacio, ya que el encabezado de columna no está enlazado a la base de datos y no ha guardado los cambios realizados en la hoja de cálculo.
 
 ### <a name="to-add-new-rows"></a>Para agregar nuevas filas
 
@@ -178,52 +178,52 @@ ms.locfileid: "67692343"
 
 2. Agregue la siguiente información en la fila vacía.
 
-   |EmployeeID|LastName|Nombre|Título|
+   |EmployeeID (Id. de empleado)|Apellidos|Nombre|Título|
    |----------------|--------------|---------------|-----------|
-   |10|Gil|Enrique|Director de ventas|
+   |10|Ito|Shu|Jefe de ventas|
 
-### <a name="to-delete-rows"></a>Para eliminar filas
+### <a name="to-delete-rows"></a>Eliminación de filas
 
-- Haga clic en el número 16 (fila 16) en la esquina izquierda de la hoja de cálculo y, a continuación, haga clic en **eliminar**.
+- Haga clic con el botón secundario en el número 16 (fila 16) en el extremo izquierdo de la hoja de cálculo y, a continuación, haga clic en **eliminar**.
 
-### <a name="to-sort-the-rows-in-the-list"></a>Para ordenar las filas en la lista
+### <a name="to-sort-the-rows-in-the-list"></a>Para ordenar las filas de la lista
 
-1. Seleccione una celda dentro de la lista.
+1. Seleccione una celda de la lista.
 
-     Botones de flecha aparecen en cada encabezado de columna.
+     Los botones de flecha aparecen en cada encabezado de columna.
 
-2. Haga clic en el botón de flecha en el **apellido** encabezado de columna.
+2. Haga clic en el botón de flecha del encabezado de columna **Last Name** .
 
-3. Haga clic en **ordena en orden ascendente**.
+3. Haga clic en **orden ascendente**.
 
-     Las filas se ordenan alfabéticamente por apellido.
+     Las filas se ordenan alfabéticamente por apellidos.
 
 ### <a name="to-filter-information"></a>Para filtrar la información
 
-1. Seleccione una celda dentro de la lista.
+1. Seleccione una celda de la lista.
 
-2. Haga clic en el botón de flecha en el **título** encabezado de columna.
+2. Haga clic en el botón de flecha del encabezado de columna **título** .
 
 3. Haga clic en **representante de ventas**.
 
-     La lista muestra solo las filas que tienen **representante de ventas** en el **título** columna.
+     La lista solo muestra las filas que tienen el **representante de ventas** en la columna **título** .
 
-4. Haga clic en el botón de flecha en el **título** nuevo encabezado de columna.
+4. Haga clic de nuevo en el botón de flecha del encabezado de columna **título** .
 
-5. Haga clic en **(All)** .
+5. Haga clic en **(todos)**.
 
-     El filtrado se quita y se mostrarán todas las filas.
+     Se quita el filtrado y aparecen todas las filas.
 
 ## <a name="next-steps"></a>Pasos siguientes
- En este tutorial se muestra los aspectos básicos del enlace de una tabla en una base de datos a un objeto de lista. A continuación, podría realizar las siguientes tareas:
+ En este tutorial se muestran los conceptos básicos del enlace de una tabla de una base de datos a un objeto de lista. A continuación, podría realizar las siguientes tareas:
 
-- Almacenar en caché los datos para que se puede usar sin conexión. Para obtener más información, vea [Cómo: Almacenar en caché datos para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Almacene en caché los datos para que se puedan usar sin conexión. Para obtener más información, consulte [Cómo: almacenar datos en caché para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
-- Implementar la solución. Para obtener más información, consulte [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
+- Implementar la solución. Para obtener más información, vea [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-- Crear a una relación principal-detalle entre un campo y una tabla. Para obtener más información, vea [Tutorial: Crear una relación de maestro/detalle con un conjunto de datos en caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Cree una relación principal-detalle entre un campo y una tabla. Para obtener más información, vea [Tutorial: crear una relación maestra de detalles mediante un conjunto de datos almacenado en memoria caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)
-- [Tutorial: Enlace de datos simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [Tutorial: enlace de datos simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

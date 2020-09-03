@@ -1,5 +1,5 @@
 ---
-title: Vistas únicas y varias pestañas | Documentos de Microsoft
+title: Vistas de una y varias pestañas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205565"
 ---
 # <a name="single-and-multi-tab-views"></a>Vistas de una sola pestaña y varias pestañas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un editor puede crear diferentes tipos de vistas. Un ejemplo es una ventana del editor de código, el otro es un diseñador de formularios.  
+Un editor puede crear diferentes tipos de vistas. Un ejemplo es una ventana del editor de código, otra es un diseñador de formularios.  
   
- Una vista con múltiples fichas es una vista que tiene varias pestañas. Por ejemplo, el editor HTML tiene dos pestañas en la parte inferior: **Diseño** y **origen**, cada una vista lógica. La vista de diseño muestra una página web representada, mientras que la otra muestra el código HTML que incluye la página web.  
+ Una vista con varias pestañas es una vista que tiene varias pestañas. Por ejemplo, el editor HTML tiene dos pestañas en la parte inferior: **diseño** y **origen**, cada una de las cuales es una vista lógica. La vista de diseño muestra una página web representada, mientras que la otra muestra el código HTML que contiene la Página Web.  
   
-## <a name="accessing-physical-views"></a>Obtener acceso a vistas físicas  
- Vistas físicas hospedan objetos de vista de documento, que representa una vista de datos en el búfer, por ejemplo, código o un formulario. En consecuencia, cada objeto de vista de documento tiene una vista física (identificado por algo conocido como una cadena de la vista física) y, por lo general una sola vista lógica.  
+## <a name="accessing-physical-views"></a>Acceder a vistas físicas  
+ Las vistas físicas hospedan objetos de vista de documento, cada uno de los cuales representa una vista de los datos en el búfer, como el código o un formulario. En consecuencia, cada objeto de vista de documento tiene una vista física (identificada por algo conocido como cadena de vista física) y, por lo general, una única vista lógica.  
   
- Sin embargo, en algunos casos, una vista física puede tener dos o más vistas lógicas. Algunos ejemplos son un editor que tenga una ventana dividida con vistas en paralelo o un diseñador de formularios que tiene una vista de diseño de interfaz gráfica de usuario y una vista de código subyacente: el formulario.  
+ Sin embargo, en algunos casos, una vista física puede tener dos o más vistas lógicas. Algunos ejemplos son un editor que tiene una ventana dividida con vistas en paralelo, o un diseñador de formularios que tiene una vista gráfica o de diseño y una vista de código subyacente.  
   
- Para habilitar el editor tener acceso a todas las vistas físicas disponibles, debe crear una cadena de la vista física único para cada tipo de objeto de vista de documento que puede crear el generador de editores. Por ejemplo, el [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] generador de editores puede crear documento objetos de vista para una ventana de código y una ventana del Diseñador de formularios.  
+ Para permitir que el editor tenga acceso a todas las vistas físicas disponibles, debe crear una cadena de vista física única para cada tipo de objeto de vista de documento que pueda crear el generador de editores. Por ejemplo, el [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] generador de editores puede crear objetos de vista de documento para una ventana de código y una ventana del diseñador de formularios.  
   
-## <a name="creating-multi-tabbed-views"></a>Creación de vistas con múltiples fichas  
- Aunque un objeto de vista de documento debe estar asociado a una vista física a través de una cadena única vista física, puede colocar varias fichas dentro de la vista física para permitir la visualización de datos de maneras diferentes. En esta configuración con múltiples fichas, todas las fichas están asociadas con la misma cadena de la vista física, pero cada pestaña se proporciona un GUID de la vista lógica diferente.  
+## <a name="creating-multi-tabbed-views"></a>Crear vistas con varias pestañas  
+ Aunque un objeto de vista de documento debe estar asociado a una vista física a través de una cadena de vista física única, se pueden colocar varias pestañas dentro de la vista física para habilitar la visualización de datos de diferentes maneras. En esta configuración con varias pestañas, todas las pestañas están asociadas a la misma cadena de vista física, pero a cada pestaña se le asigna un GUID de vista lógica diferente.  
   
- Para crear una vista con múltiples fichas para un editor, implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> interfaz y, a continuación, asocie un GUID de la vista lógica diferente (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) con cada pestaña cree.  
+ Para crear una vista con varias fichas para un editor, implemente la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> interfaz y, a continuación, asocie otro GUID de vista lógica ( <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID> ) a cada pestaña que cree.  
   
- El editor HTML de Visual Studio es un ejemplo de un editor con una vista de varias pestaña. Tiene **diseño** y **origen** pestañas. Para habilitar esta opción, se asocia con cada pestaña, una vista lógica diferente `LOGICALVIEWID_TextView` para el **diseño** pestaña y `LOGICALVIEWID_Code` para el **origen** ficha.  
+ El editor HTML de Visual Studio es un ejemplo de un editor con una vista de varias pestañas. Tiene pestañas **diseño** y **código fuente** . Para habilitar esto, se asocia una vista lógica diferente a cada pestaña `LOGICALVIEWID_TextView` de la pestaña **diseño** y `LOGICALVIEWID_Code` de la pestaña **origen** .  
   
- Mediante la especificación de la vista lógica apropiada, un VSPackage puede tener acceso a la vista que corresponde a un propósito específico, como diseñar un formulario, edición de código o depurar el código. Sin embargo, una de las ventanas debe identificarse por la cadena es NULL y se debe corresponder a la vista lógica principal (`LOGVIEWID_Primary`).  
+ Al especificar la vista lógica adecuada, un VSPackage puede tener acceso a la vista que corresponde a un propósito determinado, como diseñar un formulario, editar código o depurar código. Sin embargo, una de las ventanas debe identificarse mediante la cadena nula y debe corresponder a la vista lógica principal ( `LOGVIEWID_Primary` ).  
   
- En la tabla siguiente se enumera los valores de la vista lógica disponibles y su uso.  
+ En la tabla siguiente se enumeran los valores de vista lógica disponibles y su uso.  
   
 |GUID DE LOGVIEWID|Uso recomendado|  
 |--------------------|---------------------|  
-|`LOGVIEWID_Primary`|Vista predeterminada/primaria del generador del editor.<br /><br /> Todos los generadores de editores deben admitir este valor. Esta vista debe utilizar la cadena NULL como su cadena de la vista física. Este valor debe establecerse al menos una vista lógica.|  
-|`LOGVIEWID_Debugging`|Vista de depuración. Por lo general, `LOGVIEWID_Debugging` se asigna a la misma vista que `LOGVIEWID_Code`.|  
-|`LOGVIEWID_Code`|Vista iniciados por el **ver código** comando.|  
-|`LOGVIEWID_Designer`|Vista iniciados por el **Ver formulario** comando.|  
-|`LOGVIEWID_TextView`|Vista de editor de texto. Esta es la vista que devuelve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>, desde que puede tener acceso a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
-|`LOGVIEWID_UserChooseView`|Pide al usuario elegir qué vista se debe para usar.|  
-|`LOGVIEWID_ProjectSpecificEditor`|Pasa por el **abrir con** cuadro de diálogo<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> Cuando el usuario selecciona la entrada "(editor de proyectos predeterminado)".|  
+|`LOGVIEWID_Primary`|Vista predeterminada/primaria del generador de editores.<br /><br /> Todos los generadores de editores deben admitir este valor. Esta vista debe usar la cadena NULL como su cadena de vista física. Debe establecerse al menos una vista lógica en este valor.|  
+|`LOGVIEWID_Debugging`|Vista de depuración. Normalmente, `LOGVIEWID_Debugging` se asigna a la misma vista que `LOGVIEWID_Code` .|  
+|`LOGVIEWID_Code`|Vista iniciada por el comando **Ver código** .|  
+|`LOGVIEWID_Designer`|Vista iniciada por el comando **Ver formulario** .|  
+|`LOGVIEWID_TextView`|Vista del editor de texto. Esta es la vista que devuelve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> , desde la que puede tener acceso a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .|  
+|`LOGVIEWID_UserChooseView`|Solicita al usuario que elija la vista que se va a usar.|  
+|`LOGVIEWID_ProjectSpecificEditor`|Pasado por el cuadro de diálogo **abrir con**<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> Cuando el usuario elige la entrada "(editor predeterminado del proyecto)".|  
   
- Aunque los GUID de vista lógica son extensibles, puede usar solo los GUID de vista lógica definidos en el VSPackage.  
+ Aunque los GUID de vista lógica son extensibles, solo se pueden usar los GUID de vista lógica definidos en el VSPackage.  
   
- En el apagado, Visual Studio conserva el GUID del generador de editores y las cadenas de la vista física asociadas con la ventana de documento para que se puede usar para volver a abrir ventanas de documento al volver a abrir la solución. Solo las ventanas que están abiertas cuando se cierra una solución se conservan en el archivo de solución (.suo). Estos valores se corresponden con los `VSFPROPID_guidEditorType` y `VSFPROPID_pszPhysicalView` valores pasados en el `propid` parámetro en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> método.  
+ Al cerrarse, Visual Studio conserva el GUID del generador de editores y las cadenas de vista física asociadas a la ventana de documento para que se pueda usar para volver a abrir las ventanas de documento cuando se vuelva a abrir la solución. Solo las ventanas que están abiertas cuando se cierra una solución se guardan en el archivo de solución (. suo). Estos valores corresponden a los `VSFPROPID_guidEditorType` `VSFPROPID_pszPhysicalView` valores y pasados en el `propid` parámetro en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> método.  
   
 ## <a name="example"></a>Ejemplo  
- Este fragmento de código se muestra cómo el <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> objeto se usa para tener acceso a una vista que implementa `IVsCodeWindow`. En este caso, el <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> servicio se usa para llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> y solicitud `LOGVIEWID_TextView`, que obtiene un puntero a un marco de ventana. Un puntero al objeto de vista de documento se obtiene mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> y especificando un valor de `VSFPROPID_DocView`. Desde el objeto de vista de documento, `QueryInterface` se llama para `IVsCodeWindow`. La expectativa de que en este caso es que se devuelve un editor de texto y, por lo que se devuelve el objeto de vista de documento en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> método es una ventana de código.  
+ Este fragmento de código muestra cómo <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> se usa el objeto para tener acceso a una vista que implementa `IVsCodeWindow` . En este caso, el <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> servicio se usa para llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> y solicitar `LOGVIEWID_TextView` , que obtiene un puntero a un marco de ventana. Un puntero al objeto de vista de documento se obtiene llamando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> y especificando un valor de `VSFPROPID_DocView` . En el objeto de vista de documento, `QueryInterface` se llama a para `IVsCodeWindow` . En este caso, la expectativa es que se devuelva un editor de texto, por lo que el objeto de vista de documento devuelto en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> método es una ventana de código.  
   
 ```cpp#  
 HRESULT CFindTool::GotoFileLocation(const WCHAR * szFile, long iLine, long iStart, long iLen)  
@@ -114,7 +114,7 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Compatibilidad con varias vistas de documento](../extensibility/supporting-multiple-document-views.md)   
- [Cómo: Anexión de vistas de datos de documentos](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Cómo: adjuntar vistas a datos de documento](../extensibility/how-to-attach-views-to-document-data.md)   
  [Creación de diseñadores y editores personalizados](../extensibility/creating-custom-editors-and-designers.md)

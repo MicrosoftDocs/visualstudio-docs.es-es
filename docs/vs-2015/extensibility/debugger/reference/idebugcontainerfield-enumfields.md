@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Documentos de Microsoft
+title: 'IDebugContainerField:: EnumFields | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 485de4bdc9ff5b17c056c0db4e2930f5c6986fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205305"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
@@ -48,27 +48,27 @@ int EnumFields(
   
 #### <a name="parameters"></a>Parámetros  
  `dwKindFilter`  
- [in] Una combinación de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes que seleccione los campos que se van a enumerar. Tipos de campo pueden describir los tipos de almacenamiento, como una clase o primitiva, o específica de información, como local, parámetro o puntero "this".  
+ de Combinación de constantes de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) que seleccionan los campos que se van a enumerar. Los tipos de campo pueden describir los tipos de almacenamiento, como clase o primitivo, o información específica, como la configuración local, el parámetro o el puntero "this".  
   
  `dwModifiersFilter`  
- [in] Una combinación de [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) constantes que seleccione los campos que se van a enumerar. Modificadores de campo pueden ser permisos de acceso, como público o privado o información de almacenamiento, como virtual, estática o final.  
+ de Combinación de constantes de [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) que seleccionan los campos que se van a enumerar. Los modificadores de campo pueden ser permisos de acceso, como público o privado, o información de almacenamiento, como virtual, static o final.  
   
  `pszNameFilter`  
- [in] El nombre del campo que hay que enumerar. Esto puede ser un valor nulo si todos los campos que se van a devolverse.  
+ de Nombre del campo que se va a enumerar. Puede ser un valor NULL si se van a devolver todos los campos.  
   
  `nameMatch`  
- [in] Un valor de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeración que controla si la búsqueda distingue mayúsculas de minúsculas o no.  
+ de Un valor de la enumeración [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) que controla si la búsqueda distingue entre mayúsculas y minúsculas o no.  
   
  `ppEnum`  
- [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de campos. Devuelve un valor null si no hay ningún campo.  
+ enuncia Devuelve un objeto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa la lista de campos. Devuelve un valor NULL si no hay ningún campo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK o S_FALSE si no hay ningún campo. De lo contrario, devuelve un código de error.  
+ Si es correcto, Devuelve S_OK o S_FALSE si no hay ningún campo. De lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- El `dwKindFilter`, `dwModifiersFilter`, y `pszNameFilter` parámetros se pueden combinar, por ejemplo, para seleccionar todos los métodos virtuales públicos denominados "MyMethod".  
+## <a name="remarks"></a>Observaciones  
+ Los `dwKindFilter` `dwModifiersFilter` parámetros, y `pszNameFilter` se pueden combinar, por ejemplo, para seleccionar todos los métodos virtuales públicos denominados "MyMethod".  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)   

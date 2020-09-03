@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Escribir un visualizador en C# | Documentos de Microsoft'
+title: 'Tutorial: escribir un visualizador en C# | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,32 +18,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67890462"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Tutorial: Escribir un visualizador en C\#
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Tutorial: Escritura de un visualizador en C\#
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial se muestra cómo escribir un visualizador sencillo con C#. El visualizador que creará en este tutorial muestra el contenido de una cadena mediante un cuadro de mensaje de formularios Windows Forms. Este sencillo visualizador de cadenas no es especialmente útil, pero muestra los pasos básicos que se deben seguir para crear visualizadores más útiles para otros tipos de datos.
 
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, vaya al menú **Herramientas**, y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, vaya al menú **Herramientas**, y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 El código del visualizador debe colocarse en un archivo DLL, el cual será leído por el depurador. Por lo tanto, el primer paso es crear un proyecto de biblioteca de clases para el archivo DLL.
 
 #### <a name="to-create-a-class-library-project"></a>Para crear un proyecto de biblioteca de clases
 
-1. En el **archivo** menú, elija **New** y, a continuación, haga clic en **nuevo proyecto**.
+1. En el menú **archivo** , elija **nuevo** y, a continuación, haga clic en **nuevo proyecto**.
 
-2. En el **nuevo proyecto** cuadro de diálogo **tipo de proyecto**s, seleccione **Visual C#** .
+2. En el cuadro de diálogo **nuevo proyecto** , en **tipo de proyecto**, seleccione **Visual C#**.
 
-3. En el **plantillas** , seleccione **biblioteca de clases**.
+3. En el cuadro **plantillas** , elija **biblioteca de clases**.
 
-4. En el cuadro **Nombre**, escriba un nombre adecuado para la biblioteca de clases como, por ejemplo, MyFirstVisualizer.
+4. En el cuadro **nombre** , escriba un nombre adecuado para la biblioteca de clases, como MyFirstVisualizer.
 
 5. Haga clic en **OK**.
 
@@ -62,7 +62,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 4. En el cuadro de diálogo **Agregar referencia**, en la ficha **.NET**, elija Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-5. Haga clic en **OK**.
+5. Haga clic en **Aceptar**.
 
 6. En DebuggerSide.cs, agregue la instrucción siguiente a las instrucciones `using`:
 
@@ -106,7 +106,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 2. En el cuadro de diálogo **Agregar referencia**, en la ficha **.NET**, elija System.Windows.Forms.DLL.
 
-3. Haga clic en **OK**.
+3. Haga clic en **Aceptar**.
 
 4. En DebuggerSide.cs, agregue la instrucción siguiente a las instrucciones `using`:
 
@@ -166,7 +166,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 1. En el menú **Archivo**, elija **Agregar** y después haga clic en **Nuevo proyecto**.
 
-2. En el **Agregar nuevo proyecto** cuadro de diálogo el **plantillas** , seleccione **aplicación de consola**.
+2. En el cuadro de diálogo **Agregar nuevo proyecto** , en el cuadro **plantillas** , elija **aplicación de consola**.
 
 3. En el cuadro **Nombre**, escriba un nombre significativo para la aplicación de consola, como `MyTestConsole`.
 
@@ -180,13 +180,13 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 2. En el cuadro de diálogo **Agregar referencia**, en la ficha **.NET**, elija Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-3. Haga clic en **OK**.
+3. Haga clic en **Aceptar**.
 
 4. Haga clic con el botón derecho en **MyTestConsole** y elija nuevamente **Agregar referencia**.
 
 5. En el cuadro de diálogo **Agregar referencia**, haga clic en la ficha **Proyectos** y después haga clic en MyFirstVisualizer.
 
-6. Haga clic en **OK**.
+6. Haga clic en **Aceptar**.
 
    A continuación, agregará el código para finalizar el instrumento de prueba.
 
@@ -222,7 +222,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
     Se iniciará la aplicación de consola y aparecerá el visualizador, que mostrará la cadena "Hello, World".
 
-   ¡Enhorabuena! Acaba de compilar y probar el primer visualizador.
+   Enhorabuena. Acaba de compilar y probar el primer visualizador.
 
    Si desea utilizar el visualizador en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en lugar de simplemente llamarlo desde el instrumento de prueba, tendrá que instalarlo. Para obtener más información, vea [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md).
 
@@ -235,13 +235,13 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 1. En el menú **Archivo**, elija **Agregar** y después haga clic en **Nuevo proyecto**.
 
-2. En el **Agregar nuevo proyecto** cuadro de diálogo **tipo de proyecto**s, seleccione **Visual C#** .
+2. En el cuadro de diálogo **Agregar nuevo proyecto** , en **tipo de proyecto**, seleccione **Visual C#**.
 
-3. En el **plantillas** , seleccione **biblioteca de clases**.
+3. En el cuadro **plantillas** , elija **biblioteca de clases**.
 
 4. En el cuadro **Nombre**, escriba un nombre adecuado para la biblioteca de clases como, por ejemplo, MySecondVisualizer.
 
-5. Haga clic en **OK**.
+5. Haga clic en **Aceptar**.
 
    A continuación, puede agregarle un elemento del visualizador:
 
@@ -251,7 +251,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 2. En el menú contextual, elija **Agregar** y después haga clic en **Nuevo elemento**.
 
-3. En el **Agregar nuevo elemento** cuadro de diálogo **plantillas**, **plantillas instaladas de Visual Studio**, seleccione **visualizador del depurador**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , en **plantillas**, **plantillas instaladas de Visual Studio**, seleccione **visualizador del depurador**.
 
 4. En el cuadro **Nombre**, escriba un nombre adecuado, como SecondVisualizer.cs.
 
@@ -259,7 +259,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
    Eso es todo lo que tiene que hacer. Examine el archivo SecondVisualizer.cs y observe el código que la plantilla ha agregado por usted. Continúe y experimente con el código. Ahora que conoce los fundamentos, ya puede crear visualizadores más complejos y útiles.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Arquitectura de un visualizador](../debugger/visualizer-architecture.md)
 - [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md)

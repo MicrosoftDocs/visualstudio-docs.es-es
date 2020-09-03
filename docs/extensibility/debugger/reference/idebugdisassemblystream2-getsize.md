@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetSize ? Microsoft Docs
+title: 'IDebugDisassemblyStream2:: se obtiene | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 75fa12b1e9e70601626667dd3707f1e230f5de0c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732103"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
@@ -41,13 +41,13 @@ int GetSize( 
 
 ## <a name="parameters"></a>Parámetros
 `pnSize`\
-[fuera] Devuelve el tamaño, en las instrucciones.
+enuncia Devuelve el tamaño, en instrucciones.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El valor devuelto por este método se puede utilizar para asignar una matriz de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estructuras que, a continuación, se pasa a la [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método.
+ El valor devuelto por este método se puede usar para asignar una matriz de estructuras [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) que se pasa a continuación al método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

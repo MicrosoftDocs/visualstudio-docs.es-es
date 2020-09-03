@@ -1,5 +1,5 @@
 ---
-title: Objetos ? Microsoft Docs
+title: Objetos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 774a93e1accf67a9d97f00ce3a6dd3339f095d26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702268"
 ---
 # <a name="objects"></a>Objetos
-La siguiente información de referencia explica los objetos que se utilizan para crear una instancia del editor de texto principal.
+La siguiente información de referencia explica los objetos que se usan para crear una instancia del editor de texto básico.
 
 ## <a name="in-this-section"></a>En esta sección
-- [Objeto VSCodeWindow](../extensibility/vscodewindow-object.md) Describe el objeto de ventana de código, una ventana de documento especializada que puede incluir una o varias vistas de texto.
+- [Objeto objeto vscodewindow](../extensibility/vscodewindow-object.md) Describe el objeto de ventana de código, una ventana de documento especializada que puede incluir una o varias vistas de texto.
 
-- [Objeto VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) Describe el objeto de administrador de ventanas de código implementado por el servicio de lenguaje y es responsable de administrar los adornos.
+- [Objeto VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) Describe el objeto de administrador de ventanas de código implementado por el servicio de lenguaje y es responsable de administrar los elementos gráficos.
 
-- [Objeto VSTextBuffer](../extensibility/vstextbuffer-object.md) Describe el objeto de búfer de texto, que representa una secuencia de texto Unicode, los datos de un archivo.
+- [Objeto objeto vstextbuffer](../extensibility/vstextbuffer-object.md) Describe el objeto de búfer de texto, que representa una secuencia de texto Unicode, los datos de un archivo.
 
-- [VSTextView objeto](../extensibility/vstextview-object.md) Describe la vista de texto, una ventana que permite a los usuarios ver y editar texto Unicode del búfer de texto.
+- [Objeto objeto VsTextView](../extensibility/vstextview-object.md) Describe la vista de texto, una ventana que permite a los usuarios ver y editar texto Unicode del búfer de texto.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 - [Referencia del SDK de Visual Studio](../extensibility/visual-studio-sdk-reference.md) Presenta una lista de temas de referencia.

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586801"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos de búsqueda
@@ -36,11 +36,11 @@ Al crear controles para usarlos en escenarios de enlace de datos, es necesario i
 |Implemente el <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> en controles, como <xref:System.Windows.Forms.DataGridView>, que muestra listas (o tablas) de datos. Para obtener más información, vea [crear un control de usuario Windows Forms que admita el enlace de datos complejo](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implemente el <xref:System.ComponentModel.LookupBindingPropertiesAttribute> en controles, como <xref:System.Windows.Forms.ComboBox>, que muestren listas (o tablas) de datos pero que también necesiten presentar una única columna o propiedad. (Este proceso se describe en esta página del tutorial.)|
 
-Este tutorial crea un control de búsqueda que se enlaza a los datos de dos tablas. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind. El control de búsqueda se enlaza al campo `CustomerID` de la tabla `Orders`. Utiliza este valor para buscar el `CompanyName` en la tabla `Customers`.
+Este tutorial crea un control de búsqueda que se enlaza a los datos de dos tablas. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind. El control de búsqueda se enlaza al `CustomerID` campo de la `Orders` tabla. Utiliza este valor para buscar `CompanyName` en la `Customers` tabla.
 
 Durante este tutorial, aprenderá a:
 
-- Crear una nueva **aplicación de Windows Forms**.
+- Cree una nueva **aplicación Windows Forms**.
 
 - Agregue un nuevo **Control de usuario** a su proyecto.
 
@@ -54,7 +54,7 @@ Durante este tutorial, aprenderá a:
 
 - Cree un formulario para mostrar los datos en el nuevo control.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -78,7 +78,7 @@ El primer paso es crear un proyecto de **aplicación de Windows Forms** .
 
 1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
+2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
@@ -98,7 +98,7 @@ Este tutorial crea un control de búsqueda a partir de un **Control de usuario**
 
 ## <a name="design-the-lookupbox-control"></a>Diseñar el control LookupBox
 
-Para diseñar el control LookupBox, arrastre un <xref:System.Windows.Forms.ComboBox> desde el **cuadro de herramientas** hasta la superficie de diseño del control de usuario.
+Para diseñar el control LookupBox, arrastre un control <xref:System.Windows.Forms.ComboBox> desde el **cuadro de herramientas** hasta la superficie de diseño del control de usuario.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Agregar el atributo de enlace de datos requerido
 
@@ -119,7 +119,7 @@ En este paso se crea un origen de datos utilizando el **Asistente para configura
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , haga clic en **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
@@ -163,7 +163,7 @@ Dentro de la ventana **Orígenes de datos** puede establecer el control que se v
 
 Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al **Form1**.
 
-Para crear controles enlazados a datos en Windows Forms, arrastre el nodo **Orders** desde la ventana **orígenes de datos** hasta Windows Forms y compruebe que el control **LookupBox** se usa para mostrar los datos de la columna `CustomerID`.
+Para crear controles enlazados a datos en Windows Forms, arrastre el nodo **Orders** desde la ventana **orígenes de datos** hasta Windows Forms y compruebe que el control **LookupBox** se usa para mostrar los datos de la `CustomerID` columna.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Enlazar el control para buscar CompanyName desde la tabla customers
 
@@ -171,12 +171,12 @@ Para configurar los enlaces de búsqueda, seleccione el nodo principal **Custome
 
 Así configura el enlace de datos para mostrar el valor `CompanyName` de la tabla `Customers` a la vez que mantiene el valor `CustomerID` de la tabla `Orders`.
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 - Presione **F5** para ejecutar la aplicación.
 
 - Navegue por algunos registros y compruebe que `CompanyName` aparece en el control `LookupBox`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

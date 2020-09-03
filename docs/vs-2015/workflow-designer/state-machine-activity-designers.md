@@ -10,14 +10,14 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9ccb870f3b65d54da7d8aebd161a8be8a0f9baf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660131"
 ---
 # <a name="state-machine-activity-designers"></a>Diseñadores de actividad de equipo de estado
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] incluye varios diseñadores de actividades que puede usar cuando cree flujos de trabajo. Esta sección contiene los diseñadores de actividad proporcionados por el sistema que se usan para crear y administrar flujos de trabajo de máquina de estados. Los siguientes temas describen estos diseñadores y ofrecen orientación sobre cómo usarlas.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] incluye varios diseñadores de actividad que puede usar al construir los flujos de trabajo. Esta sección contiene los diseñadores de actividad proporcionados por el sistema que se usan para crear y administrar flujos de trabajo de máquina de estados. Los siguientes temas describen estos diseñadores y ofrecen orientación sobre cómo usarlas.
 
 ## <a name="in-this-section"></a>En esta sección
  [StateMachine](../workflow-designer/statemachine-activity-designer.md) Contiene una colección de flujos de trabajo de Estados y modelos que usan el paradigma conocido de la máquina de Estados.
@@ -44,16 +44,16 @@ ms.locfileid: "72660131"
 
  [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)
 
- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+ [Utilizar los diseñadores de actividades](../workflow-designer/using-the-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Mensajería](../workflow-designer/messaging-activity-designers.md)
 
  [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 
- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transacción](../workflow-designer/transaction-activity-designers.md)
 
  [Colección](../workflow-designer/collection-activity-designers.md)
 
- [Control de errores](../workflow-designer/error-handling-activity-designers.md)
+ [Tratamiento de errores](../workflow-designer/error-handling-activity-designers.md)

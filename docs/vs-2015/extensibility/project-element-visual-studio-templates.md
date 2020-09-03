@@ -1,5 +1,5 @@
 ---
-title: Proyecto de elemento (plantillas de Visual Studio) | Microsoft Docs
+title: Project (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,16 +14,16 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193968"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica los archivos o directorios que se agregarán al proyecto.  
+Especifica los archivos o directorios que se van a agregar al proyecto.  
   
  \<VSTemplate>  
  \<TemplateContent>  
@@ -46,37 +46,37 @@ Especifica los archivos o directorios que se agregarán al proyecto.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|`File`|Atributo necesario.<br /><br /> Especifica el nombre del archivo del proyecto en el archivo .zip de plantilla.|  
-|`ReplaceParameters`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el archivo de proyecto tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto de la plantilla. El valor predeterminado es `false`.|  
-|`TargetFileName`|Atributo opcional.<br /><br /> Especifica el nombre del archivo del proyecto cuando se crea un proyecto de la plantilla.|  
-|`IgnoreProjectParameter`|Atributo opcional.<br /><br /> Especifica si el proyecto debe agregarse a la solución actual. Si el valor de parámetro personalizado, "$*myCustomParameter*$" existe en el archivo de reemplazo de parámetro, el proyecto se crea pero no se agrega como parte de la solución actualmente abierta.|  
+|`File`|Atributo necesario.<br /><br /> Especifica el nombre del archivo de proyecto en el archivo. zip de la plantilla.|  
+|`ReplaceParameters`|Atributo opcional.<br /><br /> Valor booleano que especifica si el archivo de proyecto tiene valores de parámetro que deben reemplazarse cuando se crea un proyecto a partir de la plantilla. El valor predeterminado es `false`.|  
+|`TargetFileName`|Atributo opcional.<br /><br /> Especifica el nombre del archivo de proyecto cuando se crea un proyecto a partir de la plantilla.|  
+|`IgnoreProjectParameter`|Atributo opcional.<br /><br /> Especifica si el proyecto se debe agregar a la solución actual. Si el valor del parámetro personalizado "$*myCustomParameter*$" existe en el archivo de reemplazo de parámetros, el proyecto se crea pero no se agrega como parte de la solución actualmente abierta.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[Carpeta](../extensibility/folder-element-visual-studio-project-templates.md)|Elemento opcional.<br /><br /> Especifica una carpeta para agregarla al proyecto.|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Elemento opcional.<br /><br /> Especifica un archivo para agregar a un proyecto.|  
+|[Carpeta](../extensibility/folder-element-visual-studio-project-templates.md)|Elemento opcional.<br /><br /> Especifica la carpeta que se va a agregar al proyecto.|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Elemento opcional.<br /><br /> Especifica un archivo que se va a agregar a un proyecto.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento necesario.|  
   
 ## <a name="remarks"></a>Comentarios  
  `Project` es un elemento secundario opcional de `TemplateContent`.  
   
- El `Project` es elemento utilizado para especificar un proyecto y, por lo tanto, sólo es válido en plantillas de proyecto.  
+ El `Project` elemento se usa para especificar un proyecto y, por lo tanto, solo es válido en las plantillas de proyecto.  
   
- `Project` los elementos pueden tener [carpeta](../extensibility/folder-element-visual-studio-project-templates.md) elementos secundarios o [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) elementos secundarios, pero no una combinación de ambos `Folder` y `ProjectItem` los elementos secundarios.  
+ `Project` los elementos pueden tener elementos secundarios de [carpeta](../extensibility/folder-element-visual-studio-project-templates.md) o elementos secundarios [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) , pero no una combinación de los `Folder` `ProjectItem` elementos y secundarios.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cambia el nombre automáticamente el nombre de archivo de proyecto basado en el nombre especificado por el usuario en el **nuevo proyecto** cuadro de diálogo. Use el `TargetFileName` atributo si desea proporcionar un nombre de archivo alternativo para los archivos de proyecto creados con la plantilla.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cambia automáticamente el nombre del archivo de proyecto en función del nombre escrito por el usuario en el cuadro de diálogo **nuevo proyecto** . Utilice el `TargetFileName` atributo si desea proporcionar un nombre de archivo alternativo para los archivos de proyecto creados con la plantilla.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación.  
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -102,8 +102,8 @@ Especifica los archivos o directorios que se agregarán al proyecto.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
- [ProjectItem (elemento) (plantillas de proyecto de Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)   
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)   
+ [ProjectItem (elemento, plantillas de proyecto de Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)   
  [Folder (Elemento, Plantillas de proyecto de Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)

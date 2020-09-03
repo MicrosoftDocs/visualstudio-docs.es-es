@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68db108fe6193517d26957fd74807c2ed2b89035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161385"
 ---
-# <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
+# <a name="idiainjectedsourceget_filename"></a>IDiaInjectedSource::get_filename
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el nombre de archivo para el origen.  
@@ -35,10 +35,10 @@ HRESULT get_filename ( 
   
 #### <a name="parameters"></a>Parámetros  
  pRetVal  
- [out] Devuelve el nombre de archivo para el origen.  
+ enuncia Devuelve el nombre de archivo del origen.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

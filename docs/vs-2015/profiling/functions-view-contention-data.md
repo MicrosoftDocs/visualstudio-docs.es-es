@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141899"
 ---
 # <a name="functions-view---contention-data"></a>Vista Funciones: datos de contención
@@ -25,7 +25,7 @@ La vista de informe Funciones de datos de contención enumera las funciones en l
   
  En la tabla siguiente, se explican los valores que se muestran en la vista Funciones de un archivo de datos de generación de perfiles recopilado con el método de simultaneidad.  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo de bloqueo exclusivo**|Tiempo durante el cual esta función no pudo ejecutar código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|Porcentaje de tiempo de bloqueo exclusivo de esta función con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|  
@@ -44,10 +44,10 @@ La vista de informe Funciones de datos de contención enumera las funciones en l
 |**Nombre de proceso**|Nombre del proceso.|  
 |**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
   
-## <a name="see-also"></a>Otras referencias  
- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
- [Vista Funciones](../profiling/functions-view.md)   
- [Vista Funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Vista Funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Vista Funciones](../profiling/functions-view-instrumentation-data.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Vista funciones](../profiling/functions-view.md)   
+ [Vista funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Vista funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Vista funciones](../profiling/functions-view-instrumentation-data.md)   
  [Vista Funciones](../profiling/functions-view-sampling-data.md)

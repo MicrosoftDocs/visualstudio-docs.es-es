@@ -17,21 +17,21 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194445"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cuando el usuario ejecuta una operación de control de código fuente desde dentro del entorno de desarrollo integrado (IDE), el complemento de control de código fuente que desee transmitir los mensajes de estado o error relacionados con la operación. El complemento puede mostrar sus propios cuadros de mensaje para este propósito. Sin embargo, una integración más, el complemento puede pasar cadenas para el IDE, que se muestra a continuación, en su forma nativa de mostrar información de estado. Es el mecanismo para ello la `LPTEXTOUTPROC` puntero de función. El IDE implementa esta función (que se describe más detalladamente a continuación) para mostrar el error y estado.  
+Cuando el usuario ejecuta una operación de control de código fuente desde dentro del entorno de desarrollo integrado (IDE), es posible que el complemento de control de código fuente desee transmitir mensajes de error o de estado relacionados con la operación. El complemento puede mostrar sus propios cuadros de mensaje para este fin. Sin embargo, para una integración más fluida, el complemento puede pasar cadenas al IDE, que después las muestra en su forma nativa de Mostrar información de estado. El mecanismo para este es el `LPTEXTOUTPROC` puntero de función. El IDE implementa esta función (se describe con más detalle a continuación) para mostrar los errores y el estado.  
   
- El IDE pasa el control de código fuente complemento un puntero de función a esta función, como el `lpTextOutProc` parámetro al llamar a la [SccOpenProject](../extensibility/sccopenproject-function.md). Durante una operación de control de código fuente, por ejemplo, en el medio de una llamada a la [SccGet](../extensibility/sccget-function.md) que implican muchos archivos, el complemento puede llamar a la `LPTEXTOUTPROC` función, pasando periódicamente las cadenas para mostrar. El IDE puede mostrar estas cadenas en una barra de estado en una ventana de salida o en un cuadro de mensaje separado, según corresponda. Opcionalmente, el IDE puede ser capaz de mostrar determinados mensajes con un **cancelar** botón. Esto permite al usuario cancelar la operación, y proporciona la capacidad para pasar esta información a la del complemento el IDE.  
+ El IDE pasa al complemento de control de código fuente un puntero de función a esta función, como `lpTextOutProc` parámetro, al llamar a [SccOpenProject](../extensibility/sccopenproject-function.md). Durante una operación de SCC, por ejemplo, en el medio de una llamada a [SccGet](../extensibility/sccget-function.md) que implica muchos archivos, el complemento puede llamar a la `LPTEXTOUTPROC` función, pasando de forma periódica las cadenas que se van a mostrar. El IDE puede mostrar estas cadenas en una barra de estado, en una ventana de salida o en un cuadro de mensaje independiente, según corresponda. Opcionalmente, es posible que el IDE pueda mostrar determinados mensajes con un botón **Cancelar** . Esto permite al usuario cancelar la operación y proporciona al IDE la capacidad de volver a pasar esta información al complemento.  
   
-## <a name="signature"></a>Signatura  
- El IDE de la salida de función tiene la firma siguiente:  
+## <a name="signature"></a>Firma  
+ La función de salida del IDE tiene la siguiente firma:  
   
 ```cpp#  
 typedef LONG (*LPTEXTOUTPROC) (  
@@ -42,36 +42,36 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="parameters"></a>Parámetros  
  display_string  
- Una cadena de texto para mostrar. Esta cadena no debe terminar con un valor devuelto o un salto de línea de carro.  
+ Cadena de texto que se va a mostrar. Esta cadena no se debe terminar con un retorno de carro o un salto de línea.  
   
  mesg_type  
- El tipo de mensaje. En la tabla siguiente se enumera los valores admitidos para este parámetro.  
+ El tipo de mensaje. En la tabla siguiente se enumeran los valores admitidos para este parámetro.  
   
-|Valor|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Se considera el mensaje de Error, advertencia o información.|  
+|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|El mensaje se considera información, ADVERTENCIA o error.|  
 |`SCC_MSG_STATUS`|El mensaje muestra el estado y se puede mostrar en la barra de estado.|  
-|`SCC_MSG_DOCANCEL`|Se envía con ninguna cadena de mensaje.|  
-|`SCC_MSG_STARTCANCEL`|Comienza a mostrar un **cancelar** botón.|  
-|`SCC_MSG_STOPCANCEL`|Deja de mostrar un **cancelar** botón.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pide IDE si la operación en segundo plano es cancelar: Devuelve el IDE `SCC_MSG_RTN_CANCEL` si la operación se canceló; de lo contrario, devuelve `SCC_MSG_RTN_OK`. El `display_string` parámetro se convierte como un [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) estructura, que se ha proporcionado por el complemento de control de código fuente.|  
-|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Indica al IDE acerca de un archivo antes de recuperarlos del control de versiones. El `display_string` parámetro se convierte como un [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) estructura, que se ha proporcionado por el complemento de control de código fuente.|  
-|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Indica al IDE acerca de un archivo una vez recuperado del control de versiones. El `display_string` parámetro se convierte como un [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) estructura, que se ha proporcionado por el complemento de control de código fuente.|  
-|`SCC_MSG_BACKGROUND_ON_MESSAGE`|Indica al IDE del estado actual de una operación en segundo plano. El `display_string` parámetro se convierte como un [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) estructura, que se ha proporcionado por el complemento de control de código fuente.|  
+|`SCC_MSG_DOCANCEL`|Se envía sin cadena de mensaje.|  
+|`SCC_MSG_STARTCANCEL`|Comienza a mostrar un botón **Cancelar** .|  
+|`SCC_MSG_STOPCANCEL`|Deja de mostrar un botón **Cancelar** .|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pregunta al IDE si se va a cancelar la operación en segundo plano: el IDE devuelve `SCC_MSG_RTN_CANCEL` si la operación se canceló; de lo contrario, devuelve `SCC_MSG_RTN_OK` . El `display_string` parámetro se convierte en una estructura [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) , proporcionada por el complemento de control de código fuente.|  
+|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Indica al IDE sobre un archivo antes de que se recupere del control de versiones. El `display_string` parámetro se convierte en una estructura [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) , proporcionada por el complemento de control de código fuente.|  
+|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Indica al IDE sobre un archivo una vez que se ha recuperado del control de versiones. El `display_string` parámetro se convierte en una estructura [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) , proporcionada por el complemento de control de código fuente.|  
+|`SCC_MSG_BACKGROUND_ON_MESSAGE`|Indica al IDE el estado actual de una operación en segundo plano. El `display_string` parámetro se convierte en una estructura [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) , proporcionada por el complemento de control de código fuente.|  
   
 ## <a name="return-value"></a>Valor devuelto  
   
-|Valor|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_MSG_RTN_OK|Se muestra la cadena o la operación se completó correctamente.|  
+|SCC_MSG_RTN_OK|Se mostró la cadena o la operación se completó correctamente.|  
 |SCC_MSG_RTN_CANCEL|El usuario desea cancelar la operación.|  
   
 ## <a name="example"></a>Ejemplo  
- Suponga que las llamadas IDE el [SccGet](../extensibility/sccget-function.md) con veinte nombres de archivo. El complemento de control de código fuente desea evitar la cancelación de la operación get de un archivo en el medio. Después de obtener cada archivo, llama a `lpTextOutProc`, pasándole la información de estado en cada archivo y envía un `SCC_MSG_DOCANCEL` mensaje si no tiene ningún estado al informe. Si en cualquier momento el complemento recibe un valor devuelto de `SCC_MSG_RTN_CANCEL` desde el IDE, cancela la operación get inmediatamente, por lo que no hay más archivos se recuperan.  
+ Supongamos que el IDE llama a [SccGet](../extensibility/sccget-function.md) con veinte nombres de archivo. El complemento de control de código fuente desea evitar que se cancele la operación en medio de un archivo get. Después de obtener cada archivo, llama a `lpTextOutProc` , pasándole la información de estado en cada archivo y envía un `SCC_MSG_DOCANCEL` mensaje si no tiene ningún Estado para notificar. Si en cualquier momento el complemento recibe un valor devuelto de `SCC_MSG_RTN_CANCEL` desde el IDE, cancela la operación Get inmediatamente, de modo que no se recuperen más archivos.  
   
 ## <a name="structures"></a>Estructuras  
   
-### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="sccmsgdataiscancelled"></a><a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp#  
 typedef struct {  
@@ -79,9 +79,9 @@ typedef struct {
 } SccMsgDataIsCancelled;  
 ```  
   
- Esta estructura se envía con el `SCC_MSG_BACKGROUND_IS_CANCELLED` mensaje. Sirve para comunicar el identificador de la operación en segundo plano que se ha cancelado.  
+ Esta estructura se envía con el `SCC_MSG_BACKGROUND_IS_CANCELLED` mensaje. Se utiliza para comunicar el identificador de la operación en segundo plano que se canceló.  
   
-### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="sccmsgdataonbeforegetfile"></a><a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -90,9 +90,9 @@ typedef struct {
 } SccMsgDataOnBeforeGetFile;  
 ```  
   
- Esta estructura se envía con el `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` mensaje. Sirve para comunicar el nombre del archivo que se va a recuperar y el identificador de la operación en segundo plano que realiza la recuperación.  
+ Esta estructura se envía con el `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` mensaje. Se utiliza para comunicar el nombre del archivo que se va a recuperar y el ID. de la operación en segundo plano que realiza la recuperación.  
   
-### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="sccmsgdataonaftergetfile"></a><a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -102,9 +102,9 @@ typedef struct {
 } SccMsgDataOnAfterGetFile;  
 ```  
   
- Esta estructura se envía con el `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` mensaje. Sirve para comunicar el resultado de recuperar el archivo especificado, así como el identificador de la operación en segundo plano que realizó la recuperación. Vea los valores devueltos por la [SccGet](../extensibility/sccget-function.md) para lo que puede proporcionarse como resultado.  
+ Esta estructura se envía con el `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` mensaje. Se utiliza para comunicar el resultado de la recuperación del archivo especificado, así como el identificador de la operación en segundo plano que se recuperó. Vea los valores devueltos de [SccGet](../extensibility/sccget-function.md) para lo que se puede proporcionar como resultado.  
   
-### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="sccmsgdataonmessage"></a><a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  
@@ -115,10 +115,10 @@ typedef struct {
 } SccMsgDataOnMessage;  
 ```  
   
- Esta estructura se envía con el `SCC_MSG_BACKGROUND_ON_MESSAGE` mensaje. Sirve para comunicar el estado actual de una operación en segundo plano. El estado se expresa como una cadena que va a mostrar el IDE, y `bIsError` indica la gravedad del mensaje (`TRUE` para un mensaje de error; `FALSE` para una advertencia o un mensaje informativo). También se proporciona el identificador de la operación en segundo plano el estado de envío.  
+ Esta estructura se envía con el `SCC_MSG_BACKGROUND_ON_MESSAGE` mensaje. Se utiliza para comunicar el estado actual de una operación en segundo plano. El estado se expresa como una cadena que se va a mostrar en el IDE e `bIsError` indica la gravedad del mensaje ( `TRUE` para un mensaje de error; `FALSE` para una advertencia o para un mensaje informativo). También se proporciona el identificador de la operación en segundo plano que envía el estado.  
   
 ## <a name="code-example"></a>Ejemplo de código  
- Este es un breve ejemplo de llamar a `LPTEXTOUTPROC` para enviar el `SCC_MSG_BACKGROUND_ON_MESSAGE` mensaje, que muestra cómo convertir la estructura de la llamada.  
+ Este es un breve ejemplo de llamada `LPTEXTOUTPROC` a para enviar el `SCC_MSG_BACKGROUND_ON_MESSAGE` mensaje, que muestra cómo convertir la estructura de la llamada.  
   
 ```cpp#  
 LONG SendStatusMessage(  
@@ -139,6 +139,6 @@ LONG SendStatusMessage(
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

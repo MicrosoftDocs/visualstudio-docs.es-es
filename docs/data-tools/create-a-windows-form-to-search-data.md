@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586814"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Crear Windows Forms para buscar en datos
@@ -43,7 +43,7 @@ Las tareas ilustradas en este tutorial incluyen:
 
 - Escribir parámetros en el formulario y ejecutar la consulta con parámetros.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -63,7 +63,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 ## <a name="create-the-windows-forms-application"></a>Creación de la aplicación Windows Forms
 
-Cree un nuevo proyecto de **aplicación** de Windows Forms C# para o Visual Basic. Asigne al proyecto el nombre **WindowsSearchForm**.
+Cree un nuevo proyecto de **aplicación de Windows Forms** para C# o Visual Basic. Asigne al proyecto el nombre **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
 
@@ -71,7 +71,7 @@ Este paso crea un origen de datos a partir de una base de datos utilizando el as
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , haga clic en **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
@@ -91,7 +91,7 @@ Este paso crea un origen de datos a partir de una base de datos utilizando el as
 
      Se agrega al proyecto **NorthwindDataSet** y la tabla **Customers** aparece en la ventana **Orígenes de datos**.
 
-## <a name="create-the-form"></a>Crear el formulario
+## <a name="create-the-form"></a> Crear el formulario
 
 Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario:
 
@@ -121,13 +121,13 @@ Puede Agregar una cláusula WHERE a la consulta original mediante el cuadro de d
      ```
 
     > [!NOTE]
-    > Los orígenes de datos de acceso y OLE DB utilizan el signo de interrogación ('? ') para denotar los parámetros, por lo que la cláusula WHERE tendría el siguiente aspecto: `WHERE City = ?`.
+    > Los orígenes de datos de acceso y OLE DB utilizan el signo de interrogación ('? ') para denotar los parámetros, por lo que la cláusula WHERE tendría el siguiente aspecto: `WHERE City = ?` .
 
 4. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Generador de criterios de búsqueda**.
 
      **FillByCityToolStrip** se agrega al formulario.
 
-## <a name="test-the-application"></a>Probar la aplicación
+## <a name="test-the-application"></a>Prueba de la aplicación
 
 La ejecución de la aplicación abre el formulario y hace que esté listo para tomar el parámetro como entrada:
 

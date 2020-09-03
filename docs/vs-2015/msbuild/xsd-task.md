@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826243"
 ---
 # <a name="xsd-task"></a>XSD (tarea)
@@ -38,33 +38,33 @@ Encapsula la herramienta de definición de esquema XML (xsd.exe), que genera arc
   
 - **AdditionalOptions**  
   
-     Parámetro **String** opcional.  
+     Parámetro de **cadena** opcional.  
   
-     Una lista de opciones especificada en la línea de comando. Por ejemplo, " */option1 /option2 /option#* ". Utilice este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **XSD**.  
+     Una lista de opciones especificada en la línea de comando. Por ejemplo, "*/opción1 /opción2 /opción#*". Utilice este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **XSD**.  
   
 - **GenerateFromSchema**  
   
-  Parámetro **String** opcional.  
+  Parámetro de **cadena** opcional.  
 
   Especifica los tipos que se generan a partir del esquema especificado.  
 
   Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción XSD.  
 
-  - **classes** -  **/classes**  
+  - **clases**  -  de **/classes**  
 
-  - **dataset** -  **/dataset**  
+  - **conjunto**  -  de **/DataSet**  
   
 - **Lenguaje**  
   
-     Parámetro **String** opcional.  
+     Parámetro de **cadena** opcional.  
   
      Especifica el lenguaje de programación a utilizar para el código generado.  
   
      Elija entre **CS** (C#, que es el valor predeterminado), **VB** (Visual Basic) o **JS** (JScript). También se puede especificar un nombre completo para una clase que implemente `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
-- **Namespace**  
+- **Espacio de nombres**  
   
-     Parámetro **String** opcional.  
+     Parámetro de **cadena** opcional.  
   
      Especifica el espacio de nombres del motor en tiempo de ejecución para los tipos generados.  
   
@@ -76,15 +76,15 @@ Encapsula la herramienta de definición de esquema XML (xsd.exe), que genera arc
   
 - **SuppressStartupBanner**  
   
-     Parámetro **Boolean** opcional.  
+     Parámetro **booleano** opcional.  
   
-     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.  
+     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.   
   
 - **TrackerLogDirectory**  
   
-     Parámetro **String** opcional.  
+     Parámetro de **cadena** opcional.  
   
      Especifica el directorio de registro de seguimiento.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

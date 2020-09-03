@@ -1,5 +1,5 @@
 ---
-title: Crear un paquete de extensión con la plantilla de elemento de paquete de extensión . Microsoft Docs
+title: Cree un paquete de extensión con la plantilla de elementos del paquete de extensión | Microsoft Docs
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: Meng
 ms.workload:
 - vssdk
 ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697752"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Tutorial: Creación de un paquete de extensión
 
-Un paquete de extensión es un conjunto de extensiones que se pueden instalar juntas. Los paquetes de extensión le permiten compartir fácilmente sus extensiones favoritas con otros usuarios o agrupar un conjunto de extensiones para un escenario determinado.
+Un paquete de extensión es un conjunto de extensiones que se pueden instalar juntas. Los paquetes de extensión permiten compartir fácilmente sus extensiones favoritas con otros usuarios o agrupar un conjunto de extensiones para un escenario determinado.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
-A partir de Visual Studio 2015, el SDK de Visual Studio se incluye como una característica opcional en la instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [Instalar el SDK](../extensibility/installing-the-visual-studio-sdk.md)de Visual Studio .
+A partir de Visual Studio 2015, el SDK de Visual Studio se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-La característica Paquete de extensión está disponible a partir de Visual Studio 15.8 Preview 2.
+La característica de paquete de extensiones está disponible a partir de Visual Studio 15,8 Preview 2.
 
-## <a name="create-an-extension-with-an-extension-pack-item-template"></a>Cree una extensión con una plantilla de elemento de paquete de extensión
+## <a name="create-an-extension-with-an-extension-pack-item-template"></a>Crear una extensión con una plantilla de elemento de paquete de extensión
 
-La plantilla de elemento Paquete de extensión crea un paquete de extensión con un conjunto de extensiones que se pueden instalar juntas.
+La plantilla de elementos del paquete de extensión crea un paquete de extensión con un conjunto de extensiones que se pueden instalar juntos.
 
-1. En el cuadro de diálogo **Nuevo proyecto,** busque "vsix" y seleccione **Proyecto VSIX**. En **Project name**, escriba "Test Extension Pack". Seleccione **Crear**.
+1. En el cuadro de diálogo **nuevo proyecto** , busque "VSIX" y seleccione **Proyecto VSIX**. En **nombre de proyecto**, escriba "test Extension Pack". Seleccione **Crear**.
 
-2. En el **Explorador**de soluciones , haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar** > **nuevo elemento**. Vaya al nodo **Extensibilidad** de Visual C- y seleccione **Paquete de extensión**. Deje el nombre de archivo predeterminado (ExtensionPack1.cs).
+2. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. Vaya al nodo **extensibilidad** de Visual C# y seleccione **paquete de extensión**. Deje el nombre de archivo predeterminado (ExtensionPack1.cs).
 
-3. ExtensionPack1.vsext se agrega el archivo que contiene el siguiente código
+3. Se agrega el archivo ExtensionPack1. VSExt que contiene el código siguiente:
 
    ```json
    {
@@ -56,57 +56,57 @@ La plantilla de elemento Paquete de extensión crea un paquete de extensión con
    }
    ```
 
-4. El vsixid de la extensión que se va a incluir en el paquete de extensión se puede encontrar en [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Busque la extensión que desea incluir y haga clic en **Copiar ID**. Puede actualizar el **vsixId** existente en el archivo anterior o agregar otra extensión a la lista.
+4. El vsixid de la extensión que se va a incluir en el paquete de extensión se puede encontrar en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Busque la extensión que desea incluir y haga clic en el **identificador de copia**. Puede actualizar el **vsixId** existente en el archivo anterior o agregar otra extensión a la lista.
 
-    ![Copiar VsixId de Marketplace](media/vsixid-marketplace.png)
+    ![Copia de VsixId de Marketplace](media/vsixid-marketplace.png)
 
-5. Compile el proyecto y cargue la extensión en Marketplace. Consulte [Publicación de una extensión](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)de Visual Studio .
+5. Compile el proyecto y cargue la extensión en Marketplace. Vea [publicar una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 
 > [!NOTE]
-> Un paquete de extensión solo puede instalar extensiones que estén disponibles en la galería [de Visual Studio Marketplace](https://marketplace.visualstudio.com/) o [Private](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
+> Un paquete de extensiones solo puede instalar las extensiones que están disponibles en la [Galería](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)de [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o privada.
 
-## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Instale el paquete de extensión desde Visual Studio Marketplace
+## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Instale el paquete de extensión desde el Visual Studio Marketplace
 
-Ahora que se ha publicado la extensión, instálela en Visual Studio y pruébela allí.
+Ahora que se ha publicado la extensión, instálela en Visual Studio y pruébelo en ella.
 
 ::: moniker range="vs-2017"
 
-1. En Visual Studio, en el menú **Herramientas** , haga clic en **Extensiones y actualizaciones**.
+1. En Visual Studio, en el menú **herramientas** , haga clic en **extensiones y actualizaciones**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. En Visual Studio, en el menú **Extensiones** , haga clic en **Extensiones administradas**.
+1. En Visual Studio, en el menú **extensiones** , haga clic en **extensiones administradas**.
 
 ::: moniker-end
 
-2. Haga clic en **En línea** y, a continuación, busque "Test Extension Pack".
+2. Haga clic en **en línea** y busque "test Extension Pack".
 
-3. Haga clic en **Descargar**. La extensión y su lista de extensiones incluidas en el paquete de extensión se programarán para su instalación.
+3. Haga clic en **Descargar**. La extensión y su lista de extensiones incluidas en el paquete de extensiones se programarán para su instalación.
 
-4. A continuación se muestra una vista de descarga del paquete de extensión de ejemplo del cuadro de diálogo **Administrar extensiones.** Si prefiere instalar solo algunas de las extensiones incluidas en el paquete de extensiones, puede modificar la lista de extensiones en **Programado para la instalación.**
+4. A continuación se muestra una vista de descarga del paquete de extensión del cuadro de diálogo **administrar extensiones** . Si prefiere instalar solo algunas de las extensiones incluidas en el paquete de extensión, puede modificar la lista de extensiones en **programado para su instalación**.
 
-    ![Descargar Paquete de Extensión de Marketplace](media/vside-extensionpack.png)
+    ![Descargar el paquete de extensiones de Marketplace](media/vside-extensionpack.png)
 
 5. Para completar la instalación, cierre todas las instancias de Visual Studio.
 
 ## <a name="remove-the-extension"></a>Eliminación de la extensión
 
-Para eliminar la extensión del equipo:
+Para quitar la extensión del equipo:
 
 ::: moniker range="vs-2017"
 
-1. En Visual Studio, en el menú **Herramientas** , haga clic en **Extensiones y actualizaciones**.
+1. En Visual Studio, en el menú **herramientas** , haga clic en **extensiones y actualizaciones**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. En Visual Studio, en el menú **Extensiones** , haga clic en **Extensiones administradas**.
+1. En Visual Studio, en el menú **extensiones** , haga clic en **extensiones administradas**.
 
 ::: moniker-end
 
-2. Seleccione **Probar paquete de extensión** y, a continuación, haga clic en **Desinstalar**. La extensión y su lista de extensiones incluidas en el paquete de extensión se programarán para su desinstalación.
+2. Seleccione **Test Extension Pack** y, a continuación, haga clic en **desinstalar**. La extensión y su lista de extensiones incluidas en el paquete de extensiones se programarán para la desinstalación.
 
 3. Para completar la desinstalación, cierre todas las instancias de Visual Studio.

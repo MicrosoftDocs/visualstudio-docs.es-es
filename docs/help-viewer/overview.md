@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824877"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
@@ -40,7 +40,7 @@ Puede instalar y ver el contenido de distintos productos y tecnologías en el eq
 
 - Ver, marcador e imprimir temas.
 
-Para instalar el Visor de Ayuda, vea [Instalación del Visor de Ayuda de Microsoft](../help-viewer/installation.md). Para empezar a leer temas de ayuda en el Visor de Ayuda, en lugar de en línea, vaya al menú **Ayuda** de Visual Studio y, después, elija **Establecer preferencias de la Ayuda** > **Iniciar en el Visor de Ayuda**.
+Para instalar el visor de ayuda, consulte [visor de ayuda de Microsoft instalación](../help-viewer/installation.md). Para empezar a leer temas de ayuda en el Visor de Ayuda, en lugar de en línea, vaya al menú **Ayuda** de Visual Studio y, después, elija **Establecer preferencias de la Ayuda** > **Iniciar en el Visor de Ayuda**.
 
 > [!TIP]
 > Otra forma de descargar contenido localmente para poder verlo sin conexión a Internet es descargarlo en versión PDF. Muchos conjuntos de la documentación de docs.microsoft.com incluyen un vínculo en la parte inferior de la tabla de contenido (TDC) para descargar un archivo PDF que contiene todos los artículos de dicha tabla.
@@ -49,24 +49,24 @@ Para instalar el Visor de Ayuda, vea [Instalación del Visor de Ayuda de Microso
 
 ## <a name="help-viewer-tour"></a>Paseo por el Visor de Ayuda
 
-Puede buscar información en el contenido instalado mediante las pestañas de navegación, ver contenido instalado en la pestaña o pestañas de tema y administrar contenido mediante el uso de la pestaña **Administrar contenido**. También puede realizar tareas adicionales mediante los botones en la barra de herramientas y encontrar información adicional en la esquina inferior derecha de la ventana.
+Puede encontrar información en el contenido instalado mediante las pestañas de navegación, ver contenido instalado en la pestaña o pestañas de tema y administrar contenido mediante la pestaña **administrar contenido** . También puede realizar tareas adicionales mediante los botones de la barra de herramientas y buscar información adicional en la esquina inferior derecha de la ventana.
 
 ### <a name="navigation-tabs"></a>Pestañas de navegación
 
-|Tab|DESCRIPCIÓN|
+|Pestaña|Descripción|
 |---|-----------|
 |Contenido|Muestra el contenido instalado como una jerarquía (tabla de contenido). Puede especificar criterios para filtrar los títulos que aparecen.|
 |Índice|Muestra una lista alfabética de términos indexados. Puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.|
-|Favoritos|También puede añadir temas a Favoritos. Para ello, elija el botón **Agregar a Favoritos**. Los temas aparecerán en esta pestaña. En la sección **Historial** se muestra una lista de los temas que ha visualizado recientemente.|
-|Buscar|Proporciona un cuadro de búsqueda en el que puede buscar términos en cualquier lugar del contenido, incluidos los títulos de temas y el código.|
+|Favoritos|Puede "favoritos" eligiendo el botón **Agregar a favoritos** y los temas aparecen en esta pestaña. En la sección **historial** se muestra una lista de los temas que ha visto recientemente.|
+|Search|Proporciona un cuadro de búsqueda en el que puede buscar términos en cualquier lugar del contenido, incluidos los títulos de temas y el código.|
 
 ### <a name="view-topics"></a>Ver temas
 
 Cada tema aparece en su propia pestaña, y puede abrir varios temas a la vez.
 
-### <a name="manage-content"></a>Administrar contenido
+### <a name="manage-content"></a>Manage content
 
-Puede instalar, actualizar, mover y eliminar contenido mediante la pestaña **Administrar contenido**. En la parte superior de la pestaña, puede usar el control **Origen de instalación** para especificar si quiere instalar los libros desde una ubicación de red o desde un disco o URI. El cuadro **Ruta de acceso del almacén local** muestra donde se instalarán los libros en el equipo local y puede moverlos a una ubicación diferente con el botón **Mover**.
+Puede instalar, actualizar, cambiar y eliminar contenido mediante la pestaña **administrar contenido** . En la parte superior de la pestaña, puede usar el control **origen de instalación** para especificar si desea instalar los libros desde una ubicación de red o desde un disco o URI. El cuadro **Ruta de acceso del almacén local** muestra donde se instalarán los libros en el equipo local y puede moverlos a una ubicación diferente con el botón **Mover**.
 
 La lista de contenido muestra qué libros puede instalar o ya instaló, si hay disponible alguna actualización y el tamaño de cada libro. Puede instalar o quitar uno o más libros pulsando los vínculos **Agregar** o **Quitar** y, después, seleccionando el botón **Actualizar** en el panel **Cambios pendientes**. Si hay actualizaciones disponibles para los libros que ya instaló, puede actualizar ese contenido seleccionando el vínculo **Haga clic aquí para descargar ahora** en la parte inferior de la ventana. Además, todos los libros instalados se actualizan si hay actualizaciones disponibles al instalar libros adicionales.
 
@@ -89,10 +89,10 @@ La barra de herramientas de la ventana **Visor de Ayuda** contiene los siguiente
 
 - El botón **Administrar contenido** activa la pestaña **Administrar contenido**.
 
-- El pequeño triángulo que aparece a la derecha abre una lista de pestañas, incluidas las del tema y la correspondiente a **Administrar contenido**. Puede elegir un nombre de pestaña y convertirla en la pestaña activa.
+- El triángulo pequeño del lado derecho abre una lista de pestañas, incluidas las pestañas de tema y la pestaña **administrar contenido** . Puede elegir un nombre de pestaña para que sea la pestaña activa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Instalación del Visor de Ayuda de Microsoft](../help-viewer/installation.md)
-- [Guía del administrador del Visor de Ayuda](../help-viewer/administrator-guide.md)
+- [Visor de Ayuda de Microsoft instalación](../help-viewer/installation.md)
+- [Guía del administrador del visor de ayuda](../help-viewer/administrator-guide.md)
 - [Instalar y administrar el contenido local](../help-viewer/install-manage-local-content.md)

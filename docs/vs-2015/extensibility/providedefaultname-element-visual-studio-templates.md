@@ -1,5 +1,5 @@
 ---
-title: ProvideDefaultName (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: Providedefaultname ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,19 +13,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193891"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica si el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema del proyecto generará un nombre predeterminado para la plantilla en el **Agregar nuevo elemento** o **nuevo proyecto** cuadro de diálogo.  
+Especifica si el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema del proyecto generará un nombre predeterminado para la plantilla en el cuadro de diálogo **Agregar nuevo elemento** o **nuevo proyecto** .  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<ProvideDefaultName>  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -45,24 +45,24 @@ Especifica si el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema del proyec
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, que indica si se debe o no generar un nombre predeterminado para la plantilla en el **Agregar nuevo elemento** o **nuevo proyecto** cuadro de diálogo.  
+ El texto debe ser `true` o `false` , lo que indica si se va a generar un nombre predeterminado para la plantilla en el cuadro de diálogo **Agregar nuevo elemento** o **nuevo proyecto** .  
   
 ## <a name="remarks"></a>Comentarios  
  `ProvideDefaultName` es un elemento opcional. El valor predeterminado es `true`.  
   
- Si el `ProvideDefaultName` es elemento `false`, el **nombre** cuadros de la **Agregar nuevo elemento** y **nuevo proyecto** cuadros de diálogo contienen el valor `<Enter_name>`.  
+ Si el `ProvideDefaultName` elemento es `false` , los cuadros de **nombre** de los cuadros de diálogo **Agregar nuevo elemento** y **nuevo proyecto** contienen el valor `<Enter_name>` .  
   
- Use la [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento para especificar el nombre predeterminado del proyecto o elemento en el **Agregar nuevo elemento** y **nuevo proyecto** cuadros de diálogo.  
+ Use el elemento [defaultname (](../extensibility/defaultname-element-visual-studio-templates.md) para especificar el nombre predeterminado del proyecto o elemento en los cuadros de diálogo **Agregar nuevo elemento** y **nuevo proyecto** .  
   
 ## <a name="example"></a>Ejemplo  
- El siguiente ejemplo de código establece la `ProvideDefaultName` elemento `false`.  
+ En el ejemplo de código siguiente `ProvideDefaultName` se establece el elemento en `false` .  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -80,6 +80,6 @@ Especifica si el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema del proyec
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

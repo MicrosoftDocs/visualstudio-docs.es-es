@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump | Microsoft Docs
+title: 'IDebugProgram2:: WriteDump | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 491515d2778c6ad16287739bfc88d8134903d2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205800"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Escribe un volcado de memoria en un archivo.  
+Escribe un volcado en un archivo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,16 +42,16 @@ int WriteDump( 
   
 #### <a name="parameters"></a>Parámetros  
  `DumpType`  
- [in] Un valor de la [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) enumeración que especifica el tipo de volcado de memoria, por ejemplo, short o long.  
+ de Un valor de la enumeración [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) que especifica el tipo de volcado, por ejemplo, Short o Long.  
   
  `pszDumpUrl`  
- [in] La dirección URL para escribir el volcado. Normalmente, esto es en forma de `file://c:\path\filename.ext`, pero puede ser cualquier dirección URL válida.  
+ de Dirección URL en la que se va a escribir el volcado. Normalmente, tiene el formato `file://c:\path\filename.ext` , pero puede ser cualquier dirección URL válida.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- Un volcado de memoria de programa normalmente incluiría el marco de pila actual, la propia pila, una lista de los subprocesos que se ejecutan en el programa y, posiblemente, toda la memoria que posee el programa.  
+## <a name="remarks"></a>Observaciones  
+ Un volcado de programa normalmente incluiría el marco de pila actual, la propia pila, una lista de los subprocesos que se ejecutan en el programa y, posiblemente, cualquier memoria que posea el programa.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,5 +1,5 @@
 ---
-title: Registro de una ventana de herramientas ( Tabing a Tool Window) Microsoft Docs
+title: Registro de una ventana de herramientas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e7971de5ae5301d99147bbfc374dda6b039662a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701596"
 ---
-# <a name="register-a-tool-window"></a>Registrar una ventana de herramientas
-Puede registrar las ventanas de herramientas utilizando <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> y <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
+# <a name="register-a-tool-window"></a>Registro de una ventana de herramientas
+Puede registrar las ventanas de herramientas mediante <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> y  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
 
 ## <a name="example"></a>Ejemplo
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- En el código <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> anterior, `PersistedWindowPane` las `DynamicWindowPane` ventanas de herramientas y las de Visual Studio registran. La ventana de herramientas persistentes está acoplada y tabulada con el **Explorador**de soluciones y la ventana dinámica tiene una posición y un tamaño iniciales predeterminados. La ventana dinámica se hace transitoria, lo que indica que no se crea en el inicio. Esto escribe `DontForceCreate` un valor `ToolWindows` en la clave en el registro del sistema. Para obtener más información, consulte Configuración de [visualización](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015)de la ventana de herramientas .
+ En el código anterior, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra las ventanas de `PersistedWindowPane` `DynamicWindowPane` herramientas y con Visual Studio. La ventana de herramientas conservada está acoplada y con la pestaña **Explorador de soluciones**, y a la ventana dinámica se le asigna una posición inicial y un tamaño predeterminados. La ventana dinámica se hace transitoria, lo que indica que no se crea en el inicio. Esto escribe un `DontForceCreate` valor en la `ToolWindows` clave del registro del sistema. Para obtener más información, vea configuración de visualización de la [ventana de herramientas](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).

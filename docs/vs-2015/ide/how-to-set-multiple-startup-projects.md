@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f751ef8ecc884c0e0b338d70f9e198fdc07807cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660142"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Cómo: Establecer múltiples proyectos de inicio
@@ -27,11 +27,11 @@ Visual Studio permite especificar cómo se ejecuta más de un proyecto cuando se
 
 1. En el **Explorador de soluciones**, seleccione la solución (el nodo superior). Haga clic con el botón derecho en el nodo para abrir el menú contextual.
 
-2. Haga clic en **Propiedades**. Se abrirá el cuadro de diálogo **Páginas de propiedades de la solución**.
+2. Seleccione **Propiedades**. Se abre el cuadro de diálogo **Páginas de propiedades de la solución**.
 
 3. Expanda el nodo **Propiedades comunes** y haga clic en **Proyecto de inicio**.
 
 4. Haga clic en **Proyectos de inicio múltiples** y establezca las acciones apropiadas. Para más información, consulte [Cómo: Modificar las propiedades y los valores de configuración del proyecto](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Compilar y](../ide/compiling-and-building-in-visual-studio.md) crear [soluciones y proyectos](../ide/creating-solutions-and-projects.md)

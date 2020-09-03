@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData ? Microsoft Docs
+title: 'IEEDataStorage:: GetData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62a1295aeb2a6afad51dee0f1015e3ab01d13fbb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718213"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
@@ -45,19 +45,19 @@ int GetData(
 
 ## <a name="parameters"></a>Parámetros
 `dataSize`\
-[en] El número de bytes `data` que se van a recuperar (la matriz debe contener al menos este número de bytes).
+de Número de bytes que se van a recuperar (la `data` matriz debe contener al menos este número de bytes).
 
 `sizeGotten`\
-[fuera] Devuelve el número de bytes realmente recuperados.
+enuncia Devuelve el número de bytes recuperados realmente.
 
 `data`\
-[adentro, fuera] Matriz que se rellenará con los datos solicitados.
+[in, out] Matriz que se va a rellenar con los datos solicitados.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El uso recomendado de este método es recuperar todos los bytes de datos en una matriz local, ya que no hay manera de omitir bytes en el proceso de recuperación. En este caso, `dataSize` el parámetro debe ser el valor devuelto por el [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) método.
+ El uso recomendado de este método es recuperar todos los bytes de datos en una matriz local, ya que no hay ninguna manera de omitir los bytes en el proceso de recuperación. En este caso, el parámetro `dataSize` debe ser el valor devuelto por el método se [obtiene](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

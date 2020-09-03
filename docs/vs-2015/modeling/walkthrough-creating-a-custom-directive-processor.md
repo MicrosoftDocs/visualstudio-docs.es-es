@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 208089e4a9caeea5f8b56cdf694b7aaa602228ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659323"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
@@ -90,9 +90,9 @@ End Property
 
 2. Agregue referencias a estos ensamblados:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 0,1**
 
-    - **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. interfaces. \* . 0,1**
 
 3. Reemplace el código de **Class1** por el código siguiente. Este código define una clase CustomDirectiveProcessor que hereda de la clase <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa los métodos necesarios.
 
@@ -606,17 +606,17 @@ End Property
     End Namespace
     ```
 
-4. Solo para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], abra el menú **proyecto** y haga clic en **propiedades de CustomDP**. En la pestaña **aplicación** , en **espacio de nombres raíz**, elimine el valor predeterminado `CustomDP`.
+4. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Solo para, abra el menú **proyecto** y haga clic en **propiedades de CustomDP**. En la pestaña **aplicación** , en **espacio de nombres raíz**, elimine el valor predeterminado, `CustomDP` .
 
-5. En el menú **Archivo**, haga clic en **Guardar todo**.
+5. En el menú **Archivo** , haga clic en **Guardar todo**.
 
-6. En el menú **Compilar** , haga clic en **Compilar solución**.
+6. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ### <a name="build-the-project"></a>Compilar el proyecto
- Compile el proyecto. En el menú **Compilar** , haga clic en **Compilar solución**.
+ Compile el proyecto. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ## <a name="registering-the-directive-processor"></a>Registrar el procesador de directivas
- Antes de poder llamar a una directiva desde una plantilla de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], debe agregar una clave del registro para el procesador de directivas.
+ Antes de poder llamar a una directiva desde una plantilla de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , debe agregar una clave del registro para el procesador de directivas.
 
 > [!NOTE]
 > Si desea instalar el procesador de directivas en más de un equipo, es mejor definir una extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) que incluya un archivo .pkgdef junto con el ensamblado. Para obtener más información, vea [implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md).
@@ -640,11 +640,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Para agregar una clave del Registro para el procesador de directivas
 
-1. Ejecute el comando `regedit` mediante el menú Inicio o la línea de comandos.
+1. Ejecute el `regedit` comando mediante el menú Inicio o la línea de comandos.
 
-2. Vaya a la ubicación **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**y haga clic en el nodo.
+2. Vaya a la ubicación **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio. \\ \* 0 \ TextTemplating\DirectiveProcessors**y haga clic en el nodo.
 
-    En los sistemas de 64 bits, use **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**
+    En los sistemas de 64 bits, use **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
 3. Agregue una nueva clave con el nombre CustomDirectiveProcessor.
 
@@ -655,25 +655,25 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 5. Agregue un nuevo valor de cadena denominado CodeBase con un valor igual a la ruta de acceso de CustomDP.dll que creó anteriormente en este tutorial.
 
-    Por ejemplo, la ruta de acceso podría ser similar a `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll`.
+    Por ejemplo, la ruta de acceso podría ser similar a `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll` .
 
     La clave del Registro debe tener los siguientes valores:
 
-   |   Name    |  Type  |                                   Datos                                   |
+   |   Nombre    |  Tipo  |                                   Datos                                   |
    |-----------|--------|--------------------------------------------------------------------------|
-   | (Predeterminado) | REG_SZ |                             (valor no establecido)                              |
+   | (Es el valor predeterminado). | REG_SZ |                             (valor no establecido)                              |
    |   Clase   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
-   | CodeBase  | REG_SZ | <strong>\<Path a la solución ></strong> CustomDP\bin\Debug\CustomDP.dll |
+   | CodeBase  | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
     Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:
 
-   |   Name    |  Type  |               Datos                |
+   |   Nombre    |  Tipo  |               Datos                |
    |-----------|--------|-----------------------------------|
-   | (Predeterminado) | REG_SZ |          (valor no establecido)          |
+   | (Es el valor predeterminado). | REG_SZ |          (valor no establecido)          |
    |   Clase   | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Ensamblado  | REG_SZ |           CustomDP.dll            |
 
-6. Reinicie Visual Studio.
+6. Reinicie Visual Studio.
 
 ## <a name="testing-the-directive-processor"></a>Probar el procesador de directivas
  Para probar el procesador de directivas, debe escribir una plantilla de texto que lo llame.
@@ -738,12 +738,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 2. Agregue un nuevo archivo de plantilla de texto denominado TestDP.tt.
 
-3. Asegúrese de que la propiedad **herramienta personalizada** de TestDP.TT está establecida en `TextTemplatingFileGenerator`.
+3. Asegúrese de que la propiedad **herramienta personalizada** de TestDP.TT está establecida en `TextTemplatingFileGenerator` .
 
 4. Cambie el contenido de TestDP.tt al siguiente texto.
 
     > [!NOTE]
-    > Asegúrese de reemplazar la cadena < `YOUR PATH>` por la ruta de acceso al archivo. Xml.
+    > Asegúrese de reemplazar la cadena <`YOUR PATH>` por la ruta de acceso al archivo de DocFile.xml.
 
      El lenguaje de la plantilla de texto no tiene que coincidir con el lenguaje del procesador de directivas.
 
@@ -832,17 +832,17 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     > En este ejemplo, el valor del parámetro `Processor` es `CustomDirectiveProcessor`. El valor del parámetro `Processor` debe coincidir con el nombre de la clave del Registro del procesador.
 
-5. En el menú **Archivo**, haga clic en **Guardar todo**.
+5. En el menú **Archivo** , haga clic en **Guardar todo**.
 
 #### <a name="to-test-the-directive-processor"></a>Para probar el procesador de directivas
 
 1. En **Explorador de soluciones**, haga clic con el botón secundario en TestDP.TT y, a continuación, haga clic en **Ejecutar herramienta personalizada**.
 
-     Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] usuarios, es posible que TestDP. txt no aparezca en **Explorador de soluciones** de forma predeterminada. Para mostrar todos los archivos asignados al proyecto, abra el menú **proyecto** y haga clic en **Mostrar todos los archivos**.
+     En el caso de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] los usuarios, es posible que TestDP.txt no aparezcan en **Explorador de soluciones** de forma predeterminada. Para mostrar todos los archivos asignados al proyecto, abra el menú **proyecto** y haga clic en **Mostrar todos los archivos**.
 
-2. En **Explorador de soluciones**, expanda el nodo TestDP. txt y, a continuación, haga doble clic en TestDP. txt para abrirlo en el editor.
+2. En **Explorador de soluciones**, expanda el nodo TestDP.txt y, a continuación, haga doble clic en TestDP.txt para abrirlo en el editor.
 
-     Aparece la salida de texto generada. La salida debe tener un aspecto parecido al siguiente:
+     Aparece la salida de texto generada. La salida debe tener un aspecto similar al siguiente:
 
     ```
        Name:  T:SomeClass
@@ -879,10 +879,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-add-html-to-the-generated-text"></a>Para agregar HTML al texto generado
 
-1. Reemplace el código de TestDP.tt por el siguiente: El HTML se resalta. Asegúrese de reemplazar la cadena `YOUR PATH` por la ruta de acceso al archivo. Xml.
+1. Reemplace el código de TestDP.tt por el siguiente: El HTML se resalta. Asegúrese de reemplazar la cadena `YOUR PATH` por la ruta de acceso al archivo de DocFile.xml.
 
     > [!NOTE]
-    > Las etiquetas adicionales Open \< # y Close # > separan el código de instrucción de las etiquetas HTML.
+    > Las etiquetas Open adicionales \<# and close #> separan el código de instrucción de las etiquetas HTML.
 
     ```csharp
     <#@ assembly name="System.Xml" #>
@@ -964,8 +964,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>
     ```
 
-2. En el menú **archivo** , haga clic en **Guardar TestDP. txt**.
+2. En el menú **archivo** , haga clic en **Guardar TestDP.txt**.
 
-3. Para ver la salida en un explorador, en **Explorador de soluciones**, haga clic con el botón secundario en TestDP. htm y haga clic en **ver en el explorador**.
+3. Para ver la salida en un explorador, en **Explorador de soluciones**, haga clic con el botón secundario en TestDP.htm y haga clic en **ver en el explorador**.
 
      El resultado debe ser igual que el texto original pero con el formato HTML aplicado. Todos los nombres de elemento deben aparecer en negrita.

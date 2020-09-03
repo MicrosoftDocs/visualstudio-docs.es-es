@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81876493d48407549237ed626fc6ec5d2175fcd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659603"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Pruebas unitarias de código de Visual C# en una aplicación de la Tienda
@@ -34,22 +34,22 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 >
 >   Para más información, vea [Haga una prueba unitaria de su código](https://msdn.microsoft.com/library/dd264975.aspx) en MSDN Library.
 
-## <a name="BKMK_In_this_topic"></a> En este tema
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> En este tema
  [Crear la solución y el proyecto de prueba unitaria](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [Comprobar que las pruebas se ejecutan en el Explorador de pruebas](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [Comprobar que las pruebas se ejecutan en el explorador de pruebas](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
  [Agregar la clase Rooter al proyecto Maths](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
 
  [Acoplar el proyecto de prueba al proyecto de la aplicación](#BKMK_Couple_the_test_project_to_the_app_project)
 
- [Aumentar las pruebas de forma interactiva y comprobar si se superan](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
+ [Aumentar las pruebas de forma iterativa y hacerlas pasar](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
- [Depurar una prueba fallida](#BKMK_Debug_a_failing_test)
+ [Depurar una prueba no superada](#BKMK_Debug_a_failing_test)
 
  [Refactorizar el código](#BKMK_Refactor_the_code_)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria
 
 1. En el menú **Archivo**, elija **Nuevo** y después **Nuevo proyecto**.
 
@@ -87,7 +87,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 
     ```
 
-     Tenga en cuenta lo siguiente:
+     Tenga en cuenta que:
 
     1. Cada prueba se define utilizando `[TestMethod]`. Un método de prueba debe devolver void y no puede tener parámetros.
 
@@ -97,7 +97,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 
     3. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para más información, vea [Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) en MSDN Library.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas
 
 1. Inserte código de prueba en `TestMethod1` del archivo **UnitTest1.cs**:
 
@@ -119,13 +119,13 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 
      ![Explorador de pruebas](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Agregar la clase Rooter al proyecto Maths
+## <a name="add-the-rooter-class-to-the-maths-project"></a><a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Agregar la clase Rooter al proyecto Maths
 
 1. En el Explorador de soluciones, seleccione el nombre del proyecto **Maths**. En el menú contextual, elija **Agregar** y **Clase**.
 
 2. Asigne al archivo de clase el nombre `Rooter.cs`.
 
-3. Agregue el código siguiente al archivo **Rooter.cs** de la clase Rooter:
+3. Agregue el código siguiente al archivo Rooter.cs de la clase **Rooter**:
 
     ```csharp
 
@@ -145,7 +145,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 
 4. El método `SqareRoot` es solo una implementación mínima, suficiente para probar la estructura básica de la configuración de pruebas.
 
-## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Acoplar el proyecto de prueba al proyecto de la aplicación
+## <a name="couple-the-test-project-to-the-app-project"></a><a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Acoplar el proyecto de prueba al proyecto de la aplicación
 
 1. Agrega una referencia a la aplicación Maths en el proyecto RooterTests.
 
@@ -165,7 +165,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
        using Maths;
        ```
 
-3. Agrega una prueba que use la función Rooter. Agregue el código siguiente a **UnitTest1.cpp**:
+3. Agrega una prueba que use la función Rooter. Agregue el código siguiente a **UnitTest1. cpp**:
 
    ```csharp
    [TestMethod]
@@ -184,13 +184,13 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 
     La nueva prueba aparece en el Explorador de pruebas en el nodo **Pruebas no ejecutadas**.
 
-5. En el Explorador de pruebas, elija **Ejecutar todas**.
+5. En el explorador de pruebas, elija **ejecutar todo**.
 
     ![Prueba básica superada](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
 
 1. Agregue una nueva prueba:
 
@@ -215,11 +215,11 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
     >
     >  Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.
 
-2. En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el explorador de pruebas, elija **ejecutar todo**.
 
 3. La prueba sufre un error.
 
-     ![Error de RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Se produce un error RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Inmediatamente después de haberla escrito, comprueba que cada prueba sufre un error. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.
@@ -242,14 +242,14 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 
     ```
 
-5. Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.
+5. Compile la solución y, en el explorador de pruebas, elija **ejecutar todo**.
 
      Ahora se superan las tres pruebas.
 
 > [!TIP]
 > Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.
 
-## <a name="BKMK_Debug_a_failing_test"></a> Depurar una prueba fallida
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> Depurar una prueba fallida
 
 1. Agregue otra prueba a **UnitTest1.cs**:
 
@@ -284,11 +284,11 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 
    ```
 
-2. En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el explorador de pruebas, elija **ejecutar todo**.
 
     La prueba sufre un error. Elige el nombre de la prueba en el Explorador de pruebas. Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del Explorador de pruebas.
 
-    ![Error de las pruebas negativerangetests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![Se ha producido un error en las pruebas NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. Para ver por qué se produce el error, revise la función:
 
@@ -310,13 +310,13 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 
        ```
 
-   1. En el Explorador de pruebas, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.
+   1. En el explorador de pruebas, elija **ejecutar todo** para probar el método corregido y asegúrese de que no ha introducido una regresión.
 
    Ahora, todas las pruebas pasan.
 
-   ![Todas las pruebas se superan](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
+   ![Todas las pruebas se realizan correctamente](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_"></a> Refactorizar el código
+## <a name="refactor-the-code"></a><a name="BKMK_Refactor_the_code_"></a> Refactorizar el código
  **Simplifique el cálculo central en la función SquareRoot.**
 
 1. Cambia la implementación del resultado.
