@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: e1594ea4239b4200bf72ec4a2ef2c558839ef95c
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643250"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Agregar una conexión a Azure SQL Database
@@ -34,7 +34,7 @@ La funcionalidad del servicio conectado agrega todo el código de conexión y la
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En Visual Studio para Mac, vea [Servicios conectados en Visual Studio para Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Visual Studio con la carga de trabajo de Azure instalada.
 - Proyecto de uno de los tipos admitidos
