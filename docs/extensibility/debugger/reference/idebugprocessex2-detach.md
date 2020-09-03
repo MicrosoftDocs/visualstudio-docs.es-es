@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach ? Microsoft Docs
+title: IDebugProcessEx2::D Etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723359"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>Parámetros
 `pSession`\
-[en] Valor que identifica de forma única la sesión de la que se va a separar este proceso.
+de Valor que identifica de forma única la sesión de la que se va a desasociar este proceso.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- La interfaz `pSession` pasada debe tratarse solo como una cookie, un valor que identifica de forma única al administrador de depuración de sesión que se adjunta originalmente a este proceso; ninguno de los métodos de la interfaz suministrada son funcionales.
+ La interfaz que se pasa `pSession` se trata únicamente como una cookie, un valor que identifica de forma única el administrador de depuración de la sesión que se adjuntó originalmente a este proceso; ninguno de los métodos de la interfaz proporcionada es funcional.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

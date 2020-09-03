@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodePaths ? Microsoft Docs
+title: 'IDebugProgram2:: EnumCodePaths | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723034"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-Recupera una lista de las rutas de acceso de código para una posición determinada en un archivo de origen.
+Recupera una lista de las rutas de acceso de código para una posición determinada en un archivo de código fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,22 +51,22 @@ int EnumCodePaths( 
 
 ## <a name="parameters"></a>Parámetros
 `pszHint`\
-[en] La palabra debajo del cursor en la vista **Origen** o **Desensamblado** del IDE.
+de Palabra bajo el cursor en la vista de **origen** o **Desensamblado** del IDE.
 
 `pStart`\
-[en] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa el contexto de código actual.
+de Un objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa el contexto de código actual.
 
 `pFrame`\
-[en] Un [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa el marco de pila asociado con el punto de interrupción actual.
+de Un objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa el marco de pila asociado al punto de interrupción actual.
 
 `fSource`\
-[en] Distinto de`TRUE`cero ( ) si en`FALSE`la vista **Origen,** o cero ( ) si en la vista **Desensamblado.**
+de Es distinto de cero ( `TRUE` ) si está en la vista de **código fuente** o cero ( `FALSE` ) si está en la vista **Desensamblado** .
 
 `ppEnum`\
-[fuera] Devuelve un objeto [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) que contiene una lista de las rutas de acceso de código.
+enuncia Devuelve un objeto [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) que contiene una lista de las rutas de acceso del código.
 
 `ppSafety`\
-[fuera] Devuelve un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa un contexto de código adicional que se establecerá como un punto de interrupción en caso de que se omita la ruta de acceso de código elegido. Esto puede suceder en el caso de una expresión booleana con cortocircuito, por ejemplo.
+enuncia Devuelve un objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa un contexto de código adicional que se va a establecer como punto de interrupción en caso de que se omita la ruta de acceso del código elegido. Esto puede ocurrir en el caso de una expresión booleana de cortocircuito, por ejemplo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

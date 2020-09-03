@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity ? Microsoft Docs
+title: IDebugProcessSecurity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723194"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity`es implementado por un proveedor de puertos para advertir al usuario que adjuntar al proceso no es seguro.
+`IDebugProcessSecurity` lo implementa un proveedor de puerto para advertir al usuario de que la asociación al proceso no es segura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -27,24 +27,24 @@ IDebugProcessSecurity : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- En la tabla siguiente `IDebugProcessSecurity`se muestran los métodos de .
+ En la tabla siguiente se muestran los métodos de `IDebugProcessSecurity` .
 
 |Método|Descripción|
 |------------|-----------------|
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Obtiene el nombre de usuario del proveedor de puertos.|
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Advierte a un usuario que adjuntar al proceso de depuración no es seguro.|
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Obtiene el nombre de usuario del proveedor del puerto.|
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Advierte que un usuario que se asocia al proceso de depuración no es seguro.|
 
 ## <a name="remarks"></a>Observaciones
- Implemente esta interfaz para mostrar una advertencia y permitir que el usuario cancele si el proceso al que se está adjuntando puede considerarse no seguro.
+ Implemente esta interfaz para mostrar una advertencia y permitir que el usuario cancele si el proceso al que se va a adjuntar se puede considerar no seguro.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Puertos](../../../extensibility/debugger/ports.md)
 - [Proveedores de puertos](../../../extensibility/debugger/port-suppliers.md)
 - [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)

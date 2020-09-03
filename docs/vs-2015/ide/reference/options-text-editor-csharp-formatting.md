@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5371b7180aed462910a57daeb9bf5d43f2ecfedb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662286"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opciones, editor de texto, C#, formato
@@ -39,14 +39,14 @@ ms.locfileid: "72662286"
 Use el cuadro de diálogo de la página de propiedades **Formato** para establecer las opciones para proporcionar formato al código en el Editor de código. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda **Editor de texto**, expanda **C#** y, después, haga clic en **Formato**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="general-settings"></a>Configuración general
  La configuración general afecta a la manera en que el Editor de código aplica las opciones de formato al código.
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
-|Etiqueta|DESCRIPCIÓN|
+|Etiqueta|Descripción|
 |-----------|-----------------|
 |**Dar formato automáticamente a la instrucción completada al introducir ;**|Cuando está seleccionada, da formato a las instrucciones a su finalización según las opciones de formato seleccionadas para el Editor de código. Desactive esta casilla si no quiere que el Editor de código modifique las instrucciones.|
 |**Dar formato automáticamente al bloque completado al introducir }**|Cuando está seleccionada, da formato a los bloques de código según las opciones de formato seleccionadas para el Editor de código tan pronto como complete el bloque de código. Desactive esta casilla si no quiere que el Editor de código modifique los bloques.|
@@ -55,8 +55,8 @@ Use el cuadro de diálogo de la página de propiedades **Formato** para establec
 ## <a name="preview-window"></a>Ventana Vista previa
  Los panales de opciones **Sangría**, **Nuevas líneas**, **Espaciado** y **Ajuste** muestran una ventana de vista previa. La ventana de vista previa muestra el efecto de cada opción. Para usar la ventana de vista previa, seleccione una opción de formato. La ventana de vista previa muestra un ejemplo de la opción seleccionada. Cuando cambia la configuración, por ejemplo, cuando activa o desactiva una casilla, la ventana de vista previa se actualiza para mostrar el efecto de la nueva configuración.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Las opciones de sangría de las páginas **Pestañas** para cada idioma solo determinan dónde coloca el cursor el Editor de código cuando presiona ENTRAR al final de una línea. Las opciones de sangría en **Formato** se aplican cuando se aplica formato al código automáticamente, por ejemplo, cuando pega código en el archivo mientras la opción **Ajustar sangría al pegar** está seleccionada, y cuando el bloque al que se está dando formato se escribe manualmente.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

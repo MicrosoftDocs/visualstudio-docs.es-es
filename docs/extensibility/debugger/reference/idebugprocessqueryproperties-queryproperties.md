@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties ? Microsoft Docs
+title: 'IDebugProcessQueryProperties:: QueryProperties | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723322"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
@@ -41,25 +41,25 @@ int QueryProperties(
 
 ## <a name="parameters"></a>Parámetros
 `celt`\
-[en] Tamaño de las matrices que contienen las definiciones de propiedad y los valores de propiedad.
+de Tamaño de las matrices que contienen las definiciones de propiedad y los valores de propiedad.
 
 `dwPropType`\
-[en] Matriz que contiene definiciones de las propiedades consultadas. Los valores posibles son:
+de Una matriz que contiene las definiciones de las propiedades consultadas. Los valores posibles son:
 
-- PROCESS_PROPERTY_COMMAND_LINE 1
+- PROCESS_PROPERTY_COMMAND_LINE = 1
 
-- PROCESS_PROPERTY_CURRENT_DIRECTORY 2
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2
 
-- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES 3
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[fuera] Matriz que contiene los valores de propiedad.
+enuncia Una matriz que contiene los valores de propiedad.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Este método rara vez se utiliza.
+ Rara vez se usa este método.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

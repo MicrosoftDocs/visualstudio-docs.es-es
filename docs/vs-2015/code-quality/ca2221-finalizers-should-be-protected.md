@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e30dd2945820a61aa7c96d4e6c6fd59354e0c3ae
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540743"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Los finalizadores deben estar protegidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |Identificador de comprobación|CA2221|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa

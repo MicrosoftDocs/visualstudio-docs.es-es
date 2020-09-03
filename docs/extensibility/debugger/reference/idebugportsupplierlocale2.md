@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierLocale2 ? Microsoft Docs
+title: IDebugPortSupplierLocale2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724290"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Proporciona soporte de configuración regional para un proveedor de puertos.
+Proporciona compatibilidad con la configuración regional para un proveedor de puertos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -27,19 +27,19 @@ IDebugPortSupplierLocale2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un proveedor de puerto personalizado implementa esta interfaz para establecer la configuración regional.
+ Un proveedor de Puerto personalizado implementa esta interfaz para establecer la configuración regional.
 
 ## <a name="methods"></a>Métodos
  En la tabla siguiente se muestran los métodos de **IDebugPortSupplierLocale2**.
 
 |Método|Descripción|
 |------------|-----------------|
-|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Establece la configuración regional para el proveedor de puertos.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Establece la configuración regional del proveedor del puerto.|
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Portpriv.h
+ Encabezado: Portpriv. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

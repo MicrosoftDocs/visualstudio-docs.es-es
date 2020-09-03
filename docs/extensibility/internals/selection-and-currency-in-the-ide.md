@@ -62,6 +62,6 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desar
 
 - Eventos que cambian los elementos de los que se realiza un seguimiento en el contexto de selección de marcos de ventana. Entre los ejemplos se incluye cambiar la selección dentro de un DocObject o cambiar la selección en una ventana de tipo de proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)
 - [Comentarios para el usuario](../../extensibility/internals/feedback-to-the-user.md)

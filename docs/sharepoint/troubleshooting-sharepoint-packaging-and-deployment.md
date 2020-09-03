@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981934"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de empaquetado e implementación de SharePoint
@@ -37,7 +37,7 @@ ms.locfileid: "72981934"
  Si desea realizar un diagnóstico entre Visual Studio, SharePoint y otras capas, puede usar la clave del Registro EnableDiagnostics para ver el seguimiento de la pila. Para obtener más información, vea [depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="add-project-output-to-the-solution-package"></a>Agregar el resultado del proyecto al paquete de solución
- Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda usar el destino de la plataforma **any CPU** para los ensamblados que desee implementar en un servidor de SharePoint. Para obtener más información, vea la [Página compilar, el diseñador &#40;de proyectos Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) y el cuadro [ &#40;de diálogo Configuración avanzada del compilador Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
+ Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda usar el destino de la plataforma **any CPU** para los ensamblados que desee implementar en un servidor de SharePoint. Para obtener más información, vea la [Página compilar, el diseñador de proyectos &#40;Visual Basic&#41;](../ide/reference/compile-page-project-designer-visual-basic.md) y el [cuadro de diálogo Configuración avanzada del compilador &#40;Visual Basic ](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)&#41;.
 
 ## <a name="validation-warnings-and-errors"></a>Advertencias y errores de validación
  Las herramientas de desarrollo de SharePoint de Visual Studio realizan pasos de validación para comprobar que el paquete de solución se crea de forma correcta. También puede crear pasos de validación personalizados para sus características y paquetes. Para obtener más información, vea [Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
@@ -47,10 +47,10 @@ ms.locfileid: "72981934"
 
  En la tabla siguiente se muestran los valores para la propiedad de **resolución de conflictos de implementación** .
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
 |Automático|Detecta las colisiones y resuelve los conflictos automáticamente.|
-|Preguntar|Detecta las colisiones y las notifica al desarrollador de software antes de resolver los conflictos.|
+|Prompt|Detecta las colisiones y las notifica al desarrollador de software antes de resolver los conflictos.|
 |Ninguno|No detecta las colisiones.|
 
 ## <a name="differences-between-f5-deployment"></a>Diferencias entre la implementación F5
@@ -100,13 +100,13 @@ ms.locfileid: "72981934"
  Este error se produce debido al modo en que se retractan las características de elementos web visuales en SharePoint. Para implementar correctamente el elemento Web visual, vuelva a implementar la solución eligiendo la tecla **F5** .
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Aparece una advertencia al implementar controles de usuario anidados
- Esta advertencia se produce al implementar una solución de SharePoint que contiene controles de usuario anidados, como un elemento web visual que incluye un control de usuario o un control de usuario que incluye un elemento web visual u otro control de usuario. Esta advertencia se produce si se agrega un control a un diseñador arrastrándolo desde el cuadro de herramientas o mediante la Directiva de @Register de la vista de código fuente.
+ Esta advertencia se produce al implementar una solución de SharePoint que contiene controles de usuario anidados, como un elemento web visual que incluye un control de usuario o un control de usuario que incluye un elemento web visual u otro control de usuario. Esta advertencia se produce si se agrega un control a un diseñador arrastrándolo desde el cuadro de herramientas o mediante la @Register Directiva en la vista de código fuente.
 
 ### <a name="error-message"></a>Mensaje de error
  ADVERTENCIA 1 el elemento ' [*nombre del control*] ' no es un elemento conocido. Esto se puede producir si hay un error de compilación en el sitio web o no se encuentra el archivo web.config.
 
 ### <a name="resolution"></a>Resolución
- Si el sistema del proyecto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no es consciente de un control de usuario anidado, no puede proporcionar IntelliSense y emite la advertencia. El sistema del proyecto no reconoce un control de usuario anidado si el proyecto no se compila y el diseñador no se cierra y se vuelve a abrir, o si la opción de retracción automática está habilitada, lo que hace que el control de usuario se retire del subárbol de SharePoint después de la depuración.
+ Si el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sistema del proyecto no es consciente de un control de usuario anidado, no puede proporcionar IntelliSense y emite la advertencia. El sistema de proyectos no reconoce un control de usuario anidado si no se ha compilado el proyecto y el diseñador no se ha cerrado y se ha vuelto a abrir, o si está habilitada la opción de retracción automática, que hace que el control de usuario se retire del subárbol de SharePoint después de la depuración.
 
  Para quitar esta advertencia, compile el proyecto y, a continuación, cierre el diseñador y vuelva a abrirlo, o deshabilite la opción de retracción automática en el proyecto. Para ello, desactive la casilla **retraer automáticamente después de depurar** en la pestaña **SharePoint** del cuadro de diálogo Propiedades del proyecto.
 

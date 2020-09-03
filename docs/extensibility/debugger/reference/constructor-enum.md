@@ -1,5 +1,5 @@
 ---
-title: CONSTRUCTOR_ENUM Microsoft Docs
+title: CONSTRUCTOR_ENUM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f9e123399ed2378eaf63944f9a1527ef024c0cd6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737614"
 ---
 # <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
-Selecciona diferentes tipos de constructores.
+Selecciona distintos tipos de constructores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ public enum ConstructorMatchOptions {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `crAll`\
 Selecciona todos los constructores.
 
@@ -54,12 +54,12 @@ Selecciona constructores no estáticos.
 Selecciona constructores estáticos.
 
 ## <a name="remarks"></a>Observaciones
-Se pasa como argumento al método [EnumConstructors.](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)
+Se pasa como argumento al método [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: sh.h
+Encabezado: SH. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

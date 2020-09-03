@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981096"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Crear páginas de aplicación para SharePoint
@@ -43,8 +43,8 @@ ms.locfileid: "72981096"
 
 |Carpeta|Descripción|
 |------------|-----------------|
-|Diseños|Se asigna al directorio virtual de _ layouts del sistema de archivos de SharePoint.|
-|Carpeta Layouts|Contiene los archivos que componen la página de la aplicación. De forma predeterminada, esta carpeta tiene el mismo nombre que el proyecto. Puede cambiar el nombre de esta carpeta en cualquier momento. Al ejecutar el proyecto, Visual Studio implementa esta carpeta en el directorio virtual _ layouts del sistema de archivos de SharePoint.|
+|Diseños|Se asigna al directorio virtual _layouts del sistema de archivos de SharePoint.|
+|Carpeta Layouts|Contiene los archivos que componen la página de la aplicación. De forma predeterminada, esta carpeta tiene el mismo nombre que el proyecto. Puede cambiar el nombre de esta carpeta en cualquier momento. Al ejecutar el proyecto, Visual Studio implementa esta carpeta en el directorio virtual _layouts del sistema de archivos de SharePoint.|
 
  Visual Studio agrega los siguientes archivos al proyecto:
 
@@ -62,16 +62,16 @@ ms.locfileid: "72981096"
 
  Puede depurar una página de aplicación del mismo modo que depuraría otros elementos de proyecto de SharePoint en Visual Studio. Al iniciar el depurador de Visual Studio, Visual Studio abre el sitio de SharePoint.
 
- Para ver la página de la aplicación, debe navegar manualmente hasta la ubicación de la página de la aplicación (por ejemplo: http://<em>Server_Name</em>/_Layouts/*Project_Name*/ApplicationPage1.aspx).
+ Para ver la página de la aplicación, debe navegar manualmente hasta la ubicación de la página de la aplicación (por ejemplo: http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
 
  Para obtener más información sobre cómo depurar proyectos de SharePoint, vea [solucionar problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
 ## <a name="choose-a-master-page"></a>Elegir una página maestra
  De forma predeterminada, un elemento de **Página de aplicación** hace referencia a la página maestra del sitio que está usando para depurar el proyecto. Esa página se denomina V4. Master y puede encontrarla en la **Galería de páginas maestras** del sitio de SharePoint.
 
- Puede cambiar explícitamente qué página maestra utiliza la página de la aplicación estableciendo el atributo `MasterPageFile` del elemento `Page` de la aplicación. (Por ejemplo: `MasterPageFile="~/_layouts/applicationv4.master"`). De hecho, debe establecer este atributo si las páginas maestras dinámicas no están habilitadas en el servidor de SharePoint. Para obtener más información acerca de las páginas maestras en SharePoint, vea [Master pages](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
+ Puede cambiar explícitamente qué página maestra utiliza la página de aplicación estableciendo el `MasterPageFile` atributo del `Page` elemento Application. (Por ejemplo: `MasterPageFile="~/_layouts/applicationv4.master"` ). De hecho, debe establecer este atributo si las páginas maestras dinámicas no están habilitadas en el servidor de SharePoint. Para obtener más información acerca de las páginas maestras en SharePoint, vea [Master pages](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollo en SharePoint Foundation en profundidad](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Información general de ASP.NET](/aspnet/overview)
 - [ASP.NET Web Pages](/aspnet/web-pages/index) (Más información sobre páginas web de ASP.NET)

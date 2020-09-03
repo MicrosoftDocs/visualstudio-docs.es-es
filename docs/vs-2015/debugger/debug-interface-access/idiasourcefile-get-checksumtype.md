@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f859bce63e2976b23ab613e249dad41b2bc63486
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190698"
 ---
-# <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
+# <a name="idiasourcefileget_checksumtype"></a>IDiaSourceFile::get_checksumType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el tipo de suma de comprobación.  
@@ -35,24 +35,24 @@ HRESULT get_checksumType ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el tipo de suma de comprobación.  
+ enuncia Devuelve el tipo de suma de comprobación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  El tipo de suma de comprobación es un valor que se puede asignar a un algoritmo de suma de comprobación. Por ejemplo, el formato de archivo PDB estándar normalmente puede tener uno de los valores siguientes:  
   
-|Tipo de suma de comprobación|Etiqueta de CryptoAPI|DESCRIPCIÓN|  
+|Tipo de suma de comprobación|Etiqueta CryptoAPI|Descripción|  
 |-------------------|---------------------|-----------------|  
-|0|\<none>|No hay suma de comprobación presente.|  
-|1|`CALG_MD5`|la suma de comprobación se genera con el algoritmo hash MD5.|  
-|2|`CALG_SHA1`|la suma de comprobación se genera con el algoritmo hash SHA1.|  
+|0|\<none>|No hay ninguna suma de comprobación presente.|  
+|1|`CALG_MD5`|suma de comprobación generada con el algoritmo hash MD5.|  
+|2|`CALG_SHA1`|suma de comprobación generada con el algoritmo hash SHA1.|  
   
- El `CryptoAPI` las etiquetas son desde el `ALG_ID` enumeración. Para obtener más información sobre algoritmos hash, consulte el `CryptoAPI` sección de Microsoft [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)].  
+ Las `CryptoAPI` etiquetas son de la `ALG_ID` enumeración. Para obtener más información sobre los algoritmos hash, consulte la `CryptoAPI` sección de Microsoft [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)] .  
   
- Para obtener los bytes de la suma de comprobación real del archivo de origen, llame a la [Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) método.  
+ Para obtener los bytes de suma de comprobación reales del archivo de código fuente, llame al método [IDiaSourceFile:: get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)

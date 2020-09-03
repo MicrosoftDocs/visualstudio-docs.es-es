@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierEx2 ? Microsoft Docs
+title: IDebugPortSupplierEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724323"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-Proporciona compatibilidad para que un proveedor de puertos seleccione e interactúe con un servidor principal.
+Proporciona compatibilidad para que un proveedor de Puerto Seleccione e interactúe con un servidor principal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -27,19 +27,19 @@ IDebugPortSupplierEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un proveedor de puertos personalizado implementa esta interfaz para que pueda seleccionar el servidor principal que se va a usar.
+ Un proveedor de Puerto personalizado implementa esta interfaz para que pueda seleccionar el servidor principal que se va a usar.
 
 ## <a name="methods"></a>Métodos
  En la tabla siguiente se muestran los métodos de **IDebugPortSupplierEx2**.
 
 |Método|Descripción|
 |------------|-----------------|
-|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Establece el servidor principal para el proveedor de puertos.|
+|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Establece el servidor principal para el proveedor del puerto.|
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Portpriv.h
+ Encabezado: Portpriv. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

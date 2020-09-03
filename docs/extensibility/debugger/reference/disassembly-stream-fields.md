@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS de la casa de la Microsoft Docs
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737354"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
-Especifica qué información se va a recuperar sobre un campo de desensamblado.
+Especifica qué información se va a recuperar sobre un campo desensamblado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,57 +64,57 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `DSF_ADDRESS`\
-Inicializar/utilizar `bstrAddress` el campo.
+Inicializar/usar el `bstrAddress` campo.
 
 `DSF_ADDRESSOFFSET`\
-Inicializar/utilizar `bstrAddressOffset` el campo.
+Inicializar/usar el `bstrAddressOffset` campo.
 
 `DSF_CODEBYTES`\
-Inicializar/utilizar `bstrCodeBytes` el campo.
+Inicializar/usar el `bstrCodeBytes` campo.
 
 `DSF_OPCODE`\
-Inicializar/utilizar `bstrOpCode` el campo.
+Inicializar/usar el `bstrOpCode` campo.
 
 `DSF_OPERANDS`\
-Inicializar/utilizar `bstrOperands` el campo.
+Inicializar/usar el `bstrOperands` campo.
 
 `DSF_SYMBOL`\
-Inicializar/utilizar `bstrSymbol` el campo.
+Inicializar/usar el `bstrSymbol` campo.
 
 `DSF_CODELOCATIONID`\
-Inicializar/utilizar `uCodeLocationId` el campo.
+Inicializar/usar el `uCodeLocationId` campo.
 
 `DSF_POSITION`\
-Inicializar/utilizar `posBeg` los `posEnd` campos y.
+Inicialice/use los `posBeg` `posEnd` campos y.
 
 `DSF_DOCUMENTURL`\
-Inicializar/utilizar `bstrDocumentUrl` el campo.
+Inicializar/usar el `bstrDocumentUrl` campo.
 
 `DSF_BYTEOFFSET`\
-Inicializar/utilizar `dwByteOffset` el campo.
+Inicializar/usar el `dwByteOffset` campo.
 
 `DSF_FLAGS`\
-Inicializar/utilizar `dwFlags` el campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
+Inicialice o use el `dwFlags` campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
-Incluya nombres de `bstrOperands` símbolos en el campo.
+Incluir nombres de símbolos en el `bstrOperands` campo.
 
 `DSF_ALL`\
-Especifica todos los campos de la secuencia de desensamblado.
+Especifica todos los campos para el flujo del desensamblado.
 
 ## <a name="remarks"></a>Observaciones
-Se pasa como parámetro al método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) para indicar qué campos de la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) se van a inicializar.
+Se pasa como un parámetro al método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) para indicar qué campos de la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) se van a inicializar.
 
-Se utiliza `dwFields` para `DisassemblyData` el miembro de la estructura para indicar qué campos se utilizan y son válidos cuando se devuelve la estructura.
+Se utiliza para que el `dwFields` miembro de la `DisassemblyData` estructura indique qué campos se usan y son válidos cuando se devuelve la estructura.
 
-Estos valores se pueden combinar `OR`con un archivo .
+Estos valores se pueden combinar con una operación bit a bit `OR` .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

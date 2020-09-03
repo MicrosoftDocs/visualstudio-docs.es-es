@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fc312736508a11d43cadf789b08aae77c528d35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608678"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Clase de Visual C++ en el Diseñador de clases
@@ -126,7 +126,7 @@ typedef struct
 ## <a name="template-classes"></a>Clases de plantillas
  El Diseñador de clases admite la visualización de clases de plantillas. Se admiten las declaraciones anidadas. En la tabla siguiente se muestran algunas declaraciones típicas.
 
-|elemento Code|Vista Diseñador de clases|
+|Elemento de código|Vista Diseñador de clases|
 |------------------|-------------------------|
 |`template <class T>`<br /><br /> `class A {};`|`A<T>`<br /><br /> Clase de plantilla|
 |`template <class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Clase de plantilla|
@@ -152,7 +152,7 @@ typedef struct
 
 |Elemento de código|Vista Diseñador de clases|
 |------------------|-------------------------|
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 sobrecarga)|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> FUNC \<T, U> (+ 1 sobrecarga)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Clase de plantilla<br /><br /> `B<T2>`<br /><br /> Clase de plantilla<br /><br /> (B se encuentra dentro de la clase A bajo **Tipos anidados**)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Clase<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Clase de plantilla|
 
@@ -167,7 +167,7 @@ typedef struct
 |Elemento de código|Vista Diseñador de clases|
 |------------------|-------------------------|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Clase<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Clase<br /><br /> `C<T>`<br /><br /> Clase de plantilla<br /><br /> `D`<br /><br /> Clase<br /><br /> ->C\<float>|
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> minuto \<T>|
 
-## <a name="see-also"></a>Otras referencias
- [Trabajar con C++ ](../ide/working-with-visual-cpp-code-class-designer.md) [clases y Structs](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) de código Visual (diseñador de clases) tipos de clases [anónimas](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [(NOTINBUILD) herencia múltiple](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) [varias](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740) [plantillas](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872) de clases base
+## <a name="see-also"></a>Consulte también
+ Trabajar con [clases y Structs](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) de [código Visual C++ (diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md) tipos de clases [anónimas](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [(NOTINBUILD) herencia múltiple](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) [varias](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740) [plantillas](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872) de clases base

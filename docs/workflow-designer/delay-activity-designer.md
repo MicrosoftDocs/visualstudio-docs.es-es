@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876117"
 ---
 # <a name="delay-activity-designer"></a>Diseñador de actividades Delay
@@ -37,12 +37,12 @@ En la tabla siguiente se muestran las <xref:System.Activities.Statements.Delay> 
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.Delay>. El valor predeterminado es Delay. Aunque el <xref:System.Activities.Activity.DisplayName%2A> valor no es estrictamente necesario, se recomienda usar uno.|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|True|Tiempo durante el que se va a retrasar el flujo de trabajo. Esta propiedad se establece en la cuadrícula de propiedades. Escriba un <xref:System.TimeSpan> literal con formato 00:00:00 o una expresión de Visual Basic para especificar la duración.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.Activities.Statements.Delay>. El valor predeterminado es Delay. Aunque el <xref:System.Activities.Activity.DisplayName%2A> valor no es estrictamente necesario, se recomienda usar uno.|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|Verdadero|Tiempo durante el que se va a retrasar el flujo de trabajo. Esta propiedad se establece en la cuadrícula de propiedades. Escriba un <xref:System.TimeSpan> literal con formato 00:00:00 o una expresión de Visual Basic para especificar la duración.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+- [Primitivos](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Diseñador de actividades Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

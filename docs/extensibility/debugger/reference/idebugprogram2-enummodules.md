@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumModules ? Microsoft Docs
+title: 'IDebugProgram2:: EnumModules (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 967b9b4a06f382e5da2ee2422dd48209184e474b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723017"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
@@ -41,13 +41,13 @@ int EnumModules( 
 
 ## <a name="parameters"></a>Parámetros
 `ppEnum`\
-[fuera] Devuelve un objeto [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) que contiene una lista de los módulos.
+enuncia Devuelve un objeto [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) que contiene una lista de los módulos.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Un módulo es un archivo DLL o ensamblado y normalmente se muestra en la ventana de depuración **Módulos.**
+ Un módulo es un archivo DLL o un ensamblado y, por lo general, se muestra en la ventana de depuración de **módulos** .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CanDetach ? Microsoft Docs
+title: 'IDebugProgram2:: CanDetach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3d03d942bbc052a7ac6bebc6a89c55ec21a1b4c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723127"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
-Determina si un motor de depuración (DE) puede separarse del programa.
+Determina si un motor de depuración (DE) se puede desasociar del programa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ int CanDetach();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si se puede `S_OK`separar, devuelve ; de lo contrario, devuelve un código de error. Devuelve `S_FALSE` si el DE no se puede separar del programa.
+ Si puede desasociar, devuelve `S_OK` ; de lo contrario, devuelve un código de error. Devuelve `S_FALSE` si no se puede desasociar del programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

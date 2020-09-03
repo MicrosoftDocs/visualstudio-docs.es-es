@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541328"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Cómo: leer y escribir en propiedades de documento
@@ -78,7 +78,7 @@ ms.locfileid: "85541328"
 
  Aunque trabaje con Word y Excel y sus objetos, Microsoft Office proporciona una lista de propiedades de documento integradas. Si se intenta tener acceso a una propiedad sin definir, se produce una excepción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Cómo: crear y modificar propiedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)

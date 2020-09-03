@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541250"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Cómo: actualizar un origen de datos con datos de un control host
@@ -90,7 +90,7 @@ ms.locfileid: "85541250"
 6. Cierre el cuadro de diálogo **Formato y enlace de datos avanzado** .
 
 ## <a name="update-the-database"></a>Actualizar la base de datos
- Si el origen de datos en memoria está asociado a una base de datos, debe actualizar la base de datos con los cambios en el origen de datos. Para obtener más información acerca de cómo actualizar una base de datos, vea [guardar datos en la base](../data-tools/save-data-back-to-the-database.md) de datos y [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
+ Si el origen de datos en memoria está asociado a una base de datos, debe actualizar la base de datos con los cambios en el origen de datos. Para obtener más información acerca de cómo actualizar una base de datos, vea [guardar datos en la base](../data-tools/save-data-back-to-the-database.md)  de datos y [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Para actualizar la base de datos
 
@@ -112,7 +112,7 @@ ms.locfileid: "85541250"
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
 - [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS de la Microsoft Docs
+title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737376"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
-Especifica las marcas para el desensamblado.
+Especifica las marcas del desensamblado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ public enum enum_DISASSEMBLY_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `DF_DOCUMENTCHANGE`\
 Indica que esta instrucción está en un documento diferente al anterior.
 
@@ -58,26 +58,26 @@ Indica que esta instrucción está en un documento diferente al anterior.
 Indica que esta instrucción no se ejecutará.
 
 `DF_INSTRUCTION_ACTIVE`\
-Indica que esta instrucción es una de las siguientes instrucciones que se van a ejecutar (puede haber más de una).
+Indica que esta instrucción es una de las instrucciones siguientes que se van a ejecutar (puede haber más de una).
 
 `DF_DATA`\
 Indica que esta instrucción es realmente datos (no código).
 
 `DF_HASSOURCE`\
-Indica que esta instrucción tiene origen. Algunas instrucciones, como la generación de perfiles o el código de recolección de elementos no utilizados, no tienen ningún origen correspondiente.
+Indica que esta instrucción tiene el origen. Algunas instrucciones, como la generación de perfiles o el código de recolección de elementos no utilizados, no tienen ningún origen correspondiente.
 
 `DF_DOCUMENT_CHECKSUM`\
-Indica que `bstrDocumentUrl` el campo contiene datos de suma de comprobación después de la dirección URL del documento. Consulte la sección Comentarios para la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) para ver cómo se almacenan los datos de suma de comprobación.
+Indica que `bstrDocumentUrl` el campo contiene datos de suma de comprobación después de la dirección URL del documento. Vea la sección Comentarios de la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) para saber cómo se almacenan los datos de la suma de comprobación.
 
 ## <a name="remarks"></a>Observaciones
-Se utiliza `dwFlags` como miembro de la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estructura.
+Se usa como `dwFlags` miembro de la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
-Estas banderas se pueden `OR`combinar con un bit a bit .
+Estas marcas se pueden combinar con una operación bit a bit `OR` .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

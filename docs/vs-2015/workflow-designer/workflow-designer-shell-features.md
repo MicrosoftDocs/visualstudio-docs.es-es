@@ -12,14 +12,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c59dc8232713d4126b2c37693a1e241735eb163
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606597"
 ---
 # <a name="workflow-designer-shell-features"></a>Características del shell del Diseñador de flujo de trabajo
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] se crea a partir de tres áreas de interfaz de usuario principales: la superficie del diseñador, la barra de ruta de navegación que está encima de la superficie y el shell que está debajo. La barra de ruta de navegación, que se encuentra en la parte superior de la pantalla, se utiliza para mostrar la lista de antecesores de la actividad raíz actual. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Cómo: usar la ruta de navegación](../workflow-designer/how-to-use-breadcrumb-navigation.md). La superficie del diseñador, que se encuentra en el centro de la pantalla, se utiliza para crear los flujos de trabajo. El shell, que se encuentra en la parte inferior de la pantalla, contiene diversos botones para administrar la vista actual.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] se compone de tres áreas principales de la interfaz de usuario: la superficie del diseñador, la barra de ruta de navegación que está por encima y el shell debajo. La barra de ruta de navegación, que se encuentra en la parte superior de la pantalla, se utiliza para mostrar la lista de antecesores de la actividad raíz actual. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Cómo: usar la ruta de navegación](../workflow-designer/how-to-use-breadcrumb-navigation.md). La superficie del diseñador, que se encuentra en el centro de la pantalla, se utiliza para crear los flujos de trabajo. El shell, que se encuentra en la parte inferior de la pantalla, contiene diversos botones para administrar la vista actual.
 
 ## <a name="shell-features"></a>Características del shell
  El shell tiene botones a la derecha de la barra que puede utilizar para acercar o alejar el flujo de trabajo, ajustar el contenido del flujo de trabajo según el tamaño de la pantalla y mostrar u ocultar el mapa general. También puede acercar o alejar un flujo de trabajo con los métodos abreviados de teclado CTRL++ y CTRL+ -.

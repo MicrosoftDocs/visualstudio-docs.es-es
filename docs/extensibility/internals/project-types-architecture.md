@@ -1,5 +1,5 @@
 ---
-title: Arquitectura de tipos de proyecto (Project Types Architecture) Microsoft Docs
+title: Arquitectura de tipos de proyecto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706320"
 ---
 # <a name="project-types-architecture"></a>Arquitectura de tipos de proyecto
-Esta sección contiene información detallada sobre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]la arquitectura de los tipos de proyecto en .
+En esta sección se incluye información detallada sobre la arquitectura de los tipos de proyecto en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="in-this-section"></a>En esta sección
 - [Elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md)
 
- Enumera los servicios que puede consumir un tipo de proyecto y las interfaces que debe implementar.
+ Enumera los servicios que un tipo de proyecto puede consumir y las interfaces que debe implementar.
 
 - [Componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md)
 
- Describe los tipos de proyecto de interfaces deben implementarse y, opcionalmente, pueden implementarse para proporcionar funcionalidad adicional.
+ Describe los tipos de proyecto de interfaces que deben implementar y, opcionalmente, pueden implementar para proporcionar funcionalidad adicional.
 
 - [Momento para la creación de tipos de proyecto](../../extensibility/internals/when-to-create-project-types.md)
 
- Le ayuda a decidir cuándo debe crear un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tipo de proyecto y cuándo puede usar otra característica de extensibilidad como VSPackages y editores para lograr el mismo objetivo.
+ Ayuda a decidir cuándo debe crear un tipo de proyecto y cuándo puede usar otra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] característica de extensibilidad como VSPackages y editores para lograr el mismo objetivo.
 
 - [Jerarquías y selección](../../extensibility/internals/hierarchies-and-selection.md)
 
- Describe cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se usan las jerarquías y el contexto de selección para proporcionar una experiencia de usuario coherente y simplificada.
+ Describe cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utiliza jerarquías y el contexto de selección para proporcionar una experiencia de usuario coherente y simplificada.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 - [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)
 
- Explica cómo los subtipos de proyecto permiten [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] personalizar [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]el comportamiento de los sistemas de proyecto de y .
+ Explica cómo los subtipos de proyecto permiten personalizar el comportamiento de los sistemas de proyectos de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] y [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] .
 
 - [Tipos de proyecto](../../extensibility/internals/project-types.md)
 
- Proporciona una visión general de los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos como los bloques básicos del entorno de desarrollo integrado (IDE). Se proporcionan vínculos a temas adicionales que explican cómo los proyectos controlan la creación y compilación de código.
+ Proporciona información general sobre los proyectos como los bloques de creación básicos del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE). Se proporcionan vínculos a temas adicionales que explican cómo los proyectos controlan la compilación y compilación de código.

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662153"
 ---
 # <a name="print-command"></a>Imprimir (Comando)
@@ -36,7 +36,7 @@ Debug.Print text
 ## <a name="arguments"></a>Argumentos
  `text` Obligatorio. La expresión para evaluar o el texto para mostrar.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Puede usar el signo de interrogación (?) como un alias para este comando. Por lo tanto, por ejemplo, el comando
 
 ```
@@ -57,5 +57,5 @@ Debug.Print text
 >Debug.Print varA
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Comando de la instrucción Evaluate](../../ide/reference/evaluate-statement-command.md) comandos de [Visual Studio](../../ide/reference/visual-studio-commands.md) comandos de la [ventana comandos](../../ide/reference/command-window.md) [Buscar/comando cuadro](../../ide/find-command-box.md) de comandos de [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

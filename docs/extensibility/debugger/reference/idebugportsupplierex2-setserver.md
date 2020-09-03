@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierEx2::SetServer ? Microsoft Docs
+title: 'IDebugPortSupplierEx2:: SetServer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3978fc3cbe2a0e4447e0a4325178dcec32fa4e14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724349"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
-Establece el servidor principal para el proveedor de puertos.
+Establece el servidor principal para el proveedor del puerto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ int SetServer(
 
 ## <a name="parameters"></a>Parámetros
 `pServer`\
-Servidor principal que se establecerá para el proveedor de puertos.
+Servidor principal que se va a establecer para el proveedor del puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

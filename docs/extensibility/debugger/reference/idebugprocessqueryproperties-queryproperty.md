@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperty ? Microsoft Docs
+title: 'IDebugProcessQueryProperties:: QueryProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b190d7ed1d3690be898334270bbd1d16584b81a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723300"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
@@ -39,13 +39,13 @@ int QueryProperty(
 
 ## <a name="parameters"></a>Parámetros
 `dwPropType`\
-[en] Definición de la propiedad consultada. Los valores son:
+de Definición de la propiedad consultada. Los valores son:
 
-- PROCESS_PROPERTY_COMMAND_LINE 1
+- PROCESS_PROPERTY_COMMAND_LINE = 1
 
-- PROCESS_PROPERTY_CURRENT_DIRECTORY 2
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2
 
-- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES 3
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
 [out] Valor de la propiedad.
@@ -54,7 +54,7 @@ int QueryProperty(
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Este método rara vez se utiliza.
+ Rara vez se usa este método.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

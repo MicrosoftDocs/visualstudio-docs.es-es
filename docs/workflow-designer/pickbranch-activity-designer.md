@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876091"
 ---
 # <a name="pickbranch-activity-designer"></a>Diseñador de actividades PickBranch
@@ -54,11 +54,11 @@ En la tabla siguiente se muestran las <xref:System.Activities.Statements.PickBra
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|Nombre descriptivo que se muestra en el encabezado del diseñador **PickBranch** . El valor predeterminado es Branch.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|Cada clase <xref:System.Activities.Statements.PickBranch> contiene una acción <xref:System.Activities.Statements.PickBranch.Trigger%2A> que puede invocar a la propiedad <xref:System.Activities.Statements.PickBranch.Action%2A>.|
-|<xref:System.Activities.Statements.PickBranch.Action%2A>|False|Cada clase <xref:System.Activities.Statements.PickBranch> contiene una propiedad <xref:System.Activities.Statements.PickBranch.Action%2A> que se ejecuta si se desencadena.|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|Falso|Nombre descriptivo que se muestra en el encabezado del diseñador **PickBranch** . El valor predeterminado es Branch.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Verdadero|Cada clase <xref:System.Activities.Statements.PickBranch> contiene una acción <xref:System.Activities.Statements.PickBranch.Trigger%2A> que puede invocar a la propiedad <xref:System.Activities.Statements.PickBranch.Action%2A>.|
+|<xref:System.Activities.Statements.PickBranch.Action%2A>|Falso|Cada clase <xref:System.Activities.Statements.PickBranch> contiene una propiedad <xref:System.Activities.Statements.PickBranch.Action%2A> que se ejecuta si se desencadena.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)
 - [Actividad Pick](/dotnet/framework/windows-workflow-foundation/pick-activity)

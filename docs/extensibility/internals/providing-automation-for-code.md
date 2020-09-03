@@ -1,5 +1,5 @@
 ---
-title: Proporcionar automatización para el código ? Microsoft Docs
+title: Proporcionar automatización para código | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd13b7db2065069ff1540dbfc921570c2b230b8a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705992"
 ---
 # <a name="providing-automation-for-code"></a>Provisión de automatización para código
-No es necesario crear un modelo de automatización para el código. El SDK de entorno no proporciona un ejemplo para hacerlo. Para obtener información sobre <xref:EnvDTE.CodeModel> los modelos de código, consulte el objeto.
+No es necesario crear un modelo de automatización para el código. El SDK de entorno no proporciona un ejemplo para hacerlo. Para obtener información sobre los modelos de código, vea el <xref:EnvDTE.CodeModel> objeto.
 
- Para implementar un modelo de código, debe implementar las interfaces que determine la estructura de datos interna. Los objetos deben derivarse de la `IDispatch` clase.
+ Para implementar un modelo de código, debe implementar las interfaces determinadas por la estructura de datos interna. Los objetos se deben derivar de la `IDispatch` clase.
 
- Los objetos que <xref:EnvDTE.CodeModel> <xref:EnvDTE.FileCodeModel>se extienden <xref:EnvDTE.Project> y , están disponibles en el objeto y tienen el siguiente aspecto:
+ Los objetos que extiende, <xref:EnvDTE.CodeModel> y <xref:EnvDTE.FileCodeModel> , están disponibles en el <xref:EnvDTE.Project> objeto y tienen un aspecto similar al siguiente:
 
 - <xref:EnvDTE.Project.CodeModel%2A>
 
 - <xref:EnvDTE.ProjectItem.FileCodeModel%2A>
 
- Puede optar por implementar `CodeModel` solo `FileCodeModel` la interfaz o `Project` la <xref:EnvDTE.ProjectItem> del objeto que devuelve de su y objetos. Proporcione cualquier funcionalidad de esta interfaz que sea adecuada para el sistema de proyectos.
+ Puede optar por implementar únicamente la `CodeModel` interfaz o `FileCodeModel` en el objeto que devuelve de los `Project` objetos y <xref:EnvDTE.ProjectItem> . Proporcione cualquier funcionalidad de esta interfaz que sea adecuada para el sistema del proyecto.
 
- Si desea agregar características, como métodos o propiedades, que `CodeModel` `FileCodeModel` no están disponibles en el estándar y las interfaces, cree su propia interfaz que herede del estándar. Asegúrese de documentarlo con su sistema de proyecto para que los usuarios finales sepan que lo buscan. Devuelve la interfaz estándar, pero `QueryInterface` el usuario puede llamar al método o convertir a la interfaz si se sabe que existe.
+ Si desea agregar características, como métodos o propiedades, que no están disponibles desde las `CodeModel` interfaces estándar y `FileCodeModel` , cree su propia interfaz que herede de la norma. Asegúrese de documentarlo con el sistema del proyecto para que los usuarios finales sepan buscarlo. Se devuelve la interfaz estándar, pero el usuario puede llamar al `QueryInterface` método o convertir a la interfaz si se sabe que existe.
 
 ## <a name="see-also"></a>Vea también
 - [Información general del modelo de automatización](../../extensibility/internals/automation-model-overview.md)

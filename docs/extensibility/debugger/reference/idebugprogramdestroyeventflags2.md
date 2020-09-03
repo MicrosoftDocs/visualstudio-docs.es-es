@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramDestroyEventFlags2 ? Microsoft Docs
+title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722505"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
@@ -27,21 +27,21 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Esta interfaz se implementa mediante motores de depuración. Es útil para hosts que pueden crear y destruir varios programas a lo largo de la duración de un proceso.
+ Esta interfaz la implementan los motores de depuración. Resulta útil para los hosts que pueden crear y destruir varios programas a lo largo de la duración de un proceso.
 
 ## <a name="methods"></a>Métodos
- En la tabla siguiente `IDebugProgramDestroyEventFlags2`se muestran los métodos de .
+ En la tabla siguiente se muestran los métodos de `IDebugProgramDestroyEventFlags2` .
 
 |Método|Descripción|
 |------------|-----------------|
 |[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Recupera las marcas de destrucción del programa.|
 
 ## <a name="remarks"></a>Observaciones
- El comportamiento predeterminado [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] de la interfaz de usuario es volver al modo de diseño después de que todos los programas hayan enviado un evento de destrucción de programa. Esta interfaz permite que un motor de depuración cambie ese comportamiento.
+ El comportamiento predeterminado de la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interfaz de usuario es volver al modo de diseño después de que todos los programas hayan enviado un evento de destrucción de programas. Esta interfaz permite a un motor de depuración cambiar ese comportamiento.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Msdbg.h
+ Encabezado: Msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

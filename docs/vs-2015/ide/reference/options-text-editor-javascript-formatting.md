@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcfa4a2fb15ed8f4abfff24aa8e78c2b08eb8412
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662247"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Opciones, editor de texto, JavaScript, formato
+# <a name="options-text-editor-javascript-formatting"></a>Options, Text Editor, JavaScript, Formatting
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Use la página **Formato** del cuadro de diálogo **Opciones** para establecer las opciones para proporcionar formato al código en el Editor de código. Para acceder a esta página, vaya a la barra de menús y elija **Herramientas**, **Opciones** y expanda **Editor de texto**, **JavaScript** y **Formato**.
@@ -32,7 +32,7 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
-|Opción|DESCRIPCIÓN|
+|Opción|Descripción|
 |------------|-----------------|
 |**Dar formato a una línea completada al presionar &Entrar**|Cuando se selecciona esta opción, el editor de código aplica formato a la línea automáticamente cuando presiona la tecla Entrar.|
 |**Dar formato a una instrucción completada con ;**|Cuando se selecciona esta opción, el editor de código aplica formato a la línea automáticamente cuando presiona la tecla de punto y coma.|
@@ -44,7 +44,7 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
-|Opción|DESCRIPCIÓN|
+|Opción|Descripción|
 |------------|-----------------|
 |**Colocar llave de apertura en línea nueva para funciones**|Cuando se selecciona esta opción, el editor de código desplaza la llave de apertura asociada a una función a una nueva línea.|
 |**Colocar llave de apertura para bloques de control en nueva línea**|Cuando se selecciona esta opción, el editor de código desplaza la llave de apertura asociada a un bloque de control (por ejemplo, los bloques de control `if` y `while`) a una nueva línea.|
@@ -54,14 +54,14 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
-|Opción|DESCRIPCIÓN|
+|Opción|Descripción|
 |------------|-----------------|
 |**Insertar espacio después del delimitador de coma**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de delimitadores de coma.|
 |**Insertar espacio tras punto y coma en instrucción “for”**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de cada punto y coma en la primera línea de un bucle `for`.|
 |**Insertar espacio delante y detrás de operadores binarios**|Cuando se selecciona esta opción, el editor de código agrega un espacio antes y después de los operadores binarios (por ejemplo, +, -, &&, &#124;&#124;).|
 |**Insertar espacio después de palabras clave en instrucciones de flujo de control**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de palabras clave de JavaScript en las instrucciones de flujo de control.|
-|**Insertar espacio tras la palabra clave function para las funciones anónimas**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de la palabra clave `function` para funciones anónimas.|
+|**Inserte el espacio después de la palabra clave function para las funciones anónimas.**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de la palabra clave `function` para funciones anónimas.|
 |**Insertar espacio después de abrir y antes de cerrar paréntesis con contenido**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de los paréntesis de apertura y antes de los paréntesis de cierre si dentro de los paréntesis hay caracteres con contenido.|
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

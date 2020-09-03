@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972340"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 783f7fad05cad18efea2f83b6d76c4c9e644f119
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548387"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Marque los argumentos P/Invoke booleanos con MarshalAs
@@ -36,7 +36,7 @@ ms.locfileid: "85548387"
  Una declaración de método de invocación de plataforma incluye un <xref:System.Boolean?displayProperty=fullName> parámetro o un valor devuelto, pero el <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> atributo no se aplica al parámetro o valor devuelto.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un método de invocación de plataforma tiene acceso al código no administrado y se define mediante la `Declare` palabra clave en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute>especifica el comportamiento de cálculo de referencias que se usa para convertir tipos de datos entre código administrado y no administrado. Muchos tipos de datos simples, como <xref:System.Byte?displayProperty=fullName> y <xref:System.Int32?displayProperty=fullName> , tienen una única representación en código no administrado y no requieren la especificación de su comportamiento de serialización; el Common Language Runtime proporciona automáticamente el comportamiento correcto.
+ Un método de invocación de plataforma tiene acceso al código no administrado y se define mediante la `Declare` palabra clave en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute> especifica el comportamiento de cálculo de referencias que se usa para convertir tipos de datos entre código administrado y no administrado. Muchos tipos de datos simples, como <xref:System.Byte?displayProperty=fullName> y <xref:System.Int32?displayProperty=fullName> , tienen una única representación en código no administrado y no requieren la especificación de su comportamiento de serialización; el Common Language Runtime proporciona automáticamente el comportamiento correcto.
 
  El <xref:System.Boolean> tipo de datos tiene varias representaciones en el código no administrado. Cuando <xref:System.Runtime.InteropServices.MarshalAsAttribute> no se especifica, el comportamiento predeterminado del cálculo de referencias para el <xref:System.Boolean> tipo de datos es <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . Se trata de un entero de 32 bits, que no es adecuado en todas las circunstancias. La representación booleana que requiere el método no administrado debe determinarse y coincidir con la adecuada <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . UnmanagedType. bool es el tipo BOOL de Win32, que siempre es 4 bytes. UnmanagedType. U1 debe usarse para C++ `bool` u otros tipos de 1 byte. Para obtener más información, vea [serialización predeterminada para tipos booleanos](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 

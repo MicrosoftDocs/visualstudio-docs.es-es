@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984213"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Proporcionar información de empaquetado e implementación en los elementos de proyecto
@@ -57,7 +57,7 @@ ms.locfileid: "72984213"
 
  Los valores de propiedad de características idénticas de todos los elementos de proyecto se combinan en el manifiesto de la característica. Sin embargo, si dos elementos de proyecto diferentes especifican la misma clave de propiedad de característica con valores no coincidentes, se produce un error de validación.
 
- Para agregar propiedades de características directamente al archivo de características ( *. Feature*), llame al método [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] del modelo de objetos de SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Si usa este método, tenga en cuenta que la misma regla sobre la adición de valores de propiedad de características idénticas en las propiedades de características también se aplica a las propiedades que se agregan directamente al archivo de características.
+ Para agregar propiedades de características directamente al archivo de características (*. Feature*), llame al [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] método del modelo de objetos de SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A> . Si usa este método, tenga en cuenta que la misma regla sobre la adición de valores de propiedad de características idénticas en las propiedades de características también se aplica a las propiedades que se agregan directamente al archivo de características.
 
 ## <a name="feature-receiver"></a>Receptor de características
  Los receptores de características son código que se ejecuta cuando se producen determinados eventos en la característica que contiene un elemento de proyecto. Por ejemplo, puede definir los receptores de características que se ejecutan cuando se instala, activa o actualiza la característica. Una manera de agregar un receptor de características es agregarlo directamente a una característica, tal como se describe en [Tutorial: agregar receptores de eventos de características](../sharepoint/walkthrough-add-feature-event-receivers.md). Otra manera es hacer referencia a un ensamblado y un nombre de clase del receptor de características en la propiedad **receptor de características** .
@@ -68,9 +68,9 @@ ms.locfileid: "72984213"
 ### <a name="reference-method"></a>Reference (método)
  Otra manera de agregar un receptor de características es usar la propiedad **receptor de características** de un elemento de proyecto para hacer referencia a un ensamblado del receptor de características. El valor de propiedad del receptor de características tiene dos subpropiedades: nombre de **ensamblado** y de **clase**. El ensamblado debe utilizar su nombre completo "Strong" y el nombre de la clase debe ser el nombre de tipo completo. Para más información, vea [Ensamblados con nombre seguro](/previous-versions/dotnet/netframework-4.0/wd40t7ad(v=vs.100)). Después de implementar la solución en SharePoint, la característica usa el receptor de características al que se hace referencia para controlar los eventos de características.
 
- En el momento de la compilación de la solución, los valores de propiedad del receptor de características de la característica y sus proyectos se combinan juntos para establecer los atributos ReceiverAssembly y ReceiverClass del elemento de característica en el manifiesto de la característica del archivo de solución de SharePoint ( *. wsp*). Por consiguiente, si se especifican los valores de propiedad de ensamblado y nombre de clase de un elemento de proyecto y una característica, los valores de propiedades de elemento de proyecto y característica deben coincidir. Si los valores no coinciden, recibirá un error de validación. Si desea que un elemento de proyecto haga referencia a un ensamblado del receptor de características que no sea el que utiliza su característica, muévalo a otra característica.
+ En el momento de la compilación de la solución, los valores de propiedad del receptor de características de la característica y sus proyectos se combinan juntos para establecer los atributos ReceiverAssembly y ReceiverClass del elemento de característica en el manifiesto de la característica del archivo de solución de SharePoint (*. wsp*). Por consiguiente, si se especifican los valores de propiedad de ensamblado y nombre de clase de un elemento de proyecto y una característica, los valores de propiedades de elemento de proyecto y característica deben coincidir. Si los valores no coinciden, recibirá un error de validación. Si desea que un elemento de proyecto haga referencia a un ensamblado del receptor de características que no sea el que utiliza su característica, muévalo a otra característica.
 
- Si hace referencia a un ensamblado del receptor de características que aún no está en el servidor, también debe incluir el propio archivo de ensamblado en el paquete; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no lo agrega automáticamente. Al implementar la característica, el archivo de ensamblado se copia en el [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] del sistema o en la carpeta bin del directorio físico de SharePoint. Para obtener más información, vea cómo: [Agregar y quitar ensamblados adicionales](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+ Si hace referencia a un ensamblado del receptor de características que aún no está en el servidor, también debe incluir el propio archivo de ensamblado en el paquete; no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] lo agrega. Al implementar la característica, el archivo de ensamblado se copia en la carpeta del sistema [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] o de la ubicación del directorio físico de SharePoint. Para obtener más información, vea cómo: [Agregar y quitar ensamblados adicionales](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
  Para obtener más información acerca de los receptores de características, consulte [características del receptor de eventos](/previous-versions/office/developer/sharepoint-2007/bb862634(v=office.12)) y [características](/previous-versions/office/developer/sharepoint-2010/ms469501(v=office.14)).
 

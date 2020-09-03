@@ -49,10 +49,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662262"
 ---
 # <a name="options-text-editor-general"></a>Opciones, editor de texto, general
@@ -61,7 +61,7 @@ ms.locfileid: "72662262"
 Este cuadro de diálogo le permite cambiar la configuración global del editor de texto y el código de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto** y, después, haga clic en **General**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="settings"></a>Configuración
  Arrastrar y colocar edición de texto cuando se selecciona, permite mover texto seleccionándolo y arrastrándolo con el mouse hasta otra ubicación del documento actual o de cualquier otro documento abierto.
@@ -77,7 +77,7 @@ Este cuadro de diálogo le permite cambiar la configuración global del editor d
 
 |Margen de selección activado|Margen de selección desactivado|
 |-------------------------|--------------------------|
-|![Captura de pantalla de HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "|::ref1::|")|![Captura de pantalla de HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "|::ref2::|")|
+|![Captura de pantalla de HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![Captura de pantalla de HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
 
  Margen del indicador cuando se selecciona, muestra un margen vertical fuera del borde izquierdo del área de texto del editor. Cuando hace clic en este margen, aparecen un icono e información sobre herramientas relacionados con el texto. Por ejemplo, aparecen puntos de interrupción o accesos directos a la lista de tareas en el margen del indicador. La información del margen del indicador no se imprime.
 
@@ -87,5 +87,5 @@ Este cuadro de diálogo le permite cambiar la configuración global del editor d
 
  Resaltar la línea actual cuando se selecciona, muestra un cuadro gris alrededor de la línea de código en la que se encuentra el cursor.
 
-## <a name="see-also"></a>Otras referencias
- Opciones [, editor de texto, opciones de todos los lenguajes](../../ide/reference/options-text-editor-all-languages.md) [, editor de texto, todos los lenguajes](../../ide/reference/options-text-editor-all-languages-tabs.md) , [Opciones de tabulaciones, editor de texto, extensión de archivo](../../ide/reference/options-text-editor-file-extension.md) [identificación y personalización de métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [personalizar el editor](../../ide/customizing-the-editor.md) [mediante IntelliSense](../../ide/using-intellisense.md)
+## <a name="see-also"></a>Consulte también
+ Opciones [, editor de texto, opciones de todos los lenguajes](../../ide/reference/options-text-editor-all-languages.md) [, editor de texto, todos los lenguajes](../../ide/reference/options-text-editor-all-languages-tabs.md) , [Opciones de tabulaciones, editor de texto, extensión de archivo](../../ide/reference/options-text-editor-file-extension.md) [identificar y personalizar métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [personalizar el editor](../../ide/customizing-the-editor.md) [mediante IntelliSense](../../ide/using-intellisense.md)

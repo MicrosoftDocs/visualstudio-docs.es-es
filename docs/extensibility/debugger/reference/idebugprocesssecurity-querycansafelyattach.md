@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach ? Microsoft Docs
+title: 'IDebugProcessSecurity:: QueryCanSafelyAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e03ccbb7761802401239768c54f4ea5b36ab86bf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723199"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-Este método permite al proveedor de puertos mostrar una advertencia antes de que el usuario se conecte a un proceso no seguro.
+Este método permite al proveedor del puerto mostrar una advertencia antes de que el usuario se adjunte a un proceso no seguro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,11 +36,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>Valor devuelto
  Los valores devueltos son los siguientes:
 
-- `S_OK`: La conexión al proceso es segura y no se muestra ningún cuadro de diálogo de advertencia.
+- `S_OK`: La asociación al proceso es segura y no se muestra ningún cuadro de diálogo de advertencia.
 
-- `S_FALSE`: La conexión podría ser un problema de seguridad y se muestra un cuadro de diálogo con una advertencia.
+- `S_FALSE`: La asociación puede ser un problema de seguridad y se muestra un cuadro de diálogo con una advertencia.
 
-- `FAILURE`: La fijación al proceso falla.
+- `FAILURE`: No se puede asociar al proceso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 026162a2c8334c7163f9c7853d2de30e58e5939a
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476784"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Cómo: Instalar el generador de perfiles independiente
@@ -48,13 +48,13 @@ ms.locfileid: "77476784"
      **start %COMSPEC%**  
   
     > [!NOTE]
-    > Para obtener instrucciones detalladas sobre cómo configurar el paquete del servidor de símbolos, vea [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+    > Para obtener instrucciones detalladas sobre cómo configurar el paquete del servidor de símbolos, consulte [Cómo: hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Use la herramienta [VSPerfReport](../profiling/vsperfreport.md) para serializar los símbolos en el archivo de datos de generación de perfiles (.vsp). Use los conmutadores **VSPerfReport /summary:all /packsymbols**. Si no tiene ningún símbolo insertado en el archivo de datos, asegúrese de que tiene establecida la variable de entorno _NT_SYMBOL_PATH.  
   
 ## <a name="see-also"></a>Consulte también  
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Tutorial: Generar perfiles utilizando el método de muestreo en la línea de comandos](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Tutorial: Generar perfiles utilizando la instrumentación en la línea de comandos](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
- [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Tutorial: generar perfiles mediante el muestreo en la línea de comandos](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Tutorial: generar perfiles mediante la instrumentación en la línea de comandos](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Cómo: hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

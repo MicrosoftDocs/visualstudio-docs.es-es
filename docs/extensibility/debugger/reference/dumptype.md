@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE ? Microsoft Docs
+title: DUMPTYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737205"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Especifica cuánto estado de un programa (como subprocesos en ejecución, marcos de pila y dirección de instrucción actual) se va a volcar.
+Especifica la cantidad del estado de un programa (como la ejecución de subprocesos, marcos de pila y dirección de instrucción actual) que se va a volcar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ public enum enum_DUMPTYPE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `DUMP_MINIDUMP`\
 Especifica un volcado pequeño y compacto.
 
 `DUMP_FULLDUMP`\
-Especifica un volcado grande y completo.
+Especifica un volcado de memoria completo y grande.
 
 ## <a name="remarks"></a>Observaciones
-Se pasa como argumento al método [WriteDump.](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
+Se pasa como argumento al método [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

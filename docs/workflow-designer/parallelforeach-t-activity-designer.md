@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876052"
 ---
 # <a name="parallelforeach-activity-designer"></a>Diseñador de actividad ParallelForEach
@@ -25,7 +25,7 @@ La <xref:System.Activities.Statements.ParallelForEach%601> actividad tiene una <
 
 ## <a name="the-parallelforeacht-activity"></a>La actividad ParallelForEach<T \>
 
-<xref:System.Activities.Statements.ParallelForEach%601>enumera sus valores y programa el <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> para cada valor que enumera. Solo programa la propiedad <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. La forma en que efectúe el cuerpo la ejecución depende de si <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> pasa a estado inactivo.
+<xref:System.Activities.Statements.ParallelForEach%601> enumera sus valores y programa el <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> para cada valor que enumera. Solo programa la propiedad <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. La forma en que efectúe el cuerpo la ejecución depende de si <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> pasa a estado inactivo.
 
 Si la propiedad <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> no pasa a estado inactivo, se ejecuta en orden inverso porque las actividades programadas se administran como una pila, la última actividad programada se ejecuta primero. Por ejemplo, si tiene una colección de {1,2,3,4} en <xref:System.Activities.Statements.ParallelForEach%601> y usa **WriteLine** como cuerpo para escribir el valor. Tiene 4, 3, 2, 1 impresos en la consola. Esto se debe a que **WriteLine** no entra en estado inactivo, por lo que después de que se hayan programado 4 actividades **WriteLine** , se ejecutan mediante un comportamiento de pila (primero en salir).
 
@@ -43,15 +43,15 @@ En la tabla siguiente se muestran las actividades <xref:System.Activities.Statem
 
 |Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre para mostrar descriptivo del diseñador de actividades en el encabezado. El valor predeterminado es **ParallelForEach \<Int32> **. El valor se puede editar opcionalmente en la cuadrícula de **propiedades** o directamente en el encabezado del diseñador de actividad.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|La actividad que se va a ejecutar para cada elemento en la colección. Para agregar la <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> actividad, coloque una actividad del cuadro de herramientas en el cuadro **Body** del diseñador de actividades ** \<T> ParallelForEach** con el texto de la sugerencia "Coloque la actividad aquí".|
-|**TypeArgument**|True|Tipo de los elementos de la <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> colección especificada por el parámetro genérico *T*. De forma predeterminada, **TypeArgument** se establece en **Int32**. Para cambiar el tipo T en el diseñador de actividades **ParallelForEach<T \> ** , cambie el valor del cuadro combinado **TypeArgument** en la cuadrícula de propiedades.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|La colección de elementos en la que se va a iterar. Para establecer <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , escriba una expresión de Visual Basic en el cuadro **valores** del diseñador de actividades **foreach \><T** en el cuadro con el texto de la sugerencia "Escriba una expresión de VB" o en el cuadro **valores** de la ventana **propiedades** .|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre para mostrar descriptivo del diseñador de actividades en el encabezado. El valor predeterminado es **ParallelForEach \<Int32> **. El valor se puede editar opcionalmente en la cuadrícula de **propiedades** o directamente en el encabezado del diseñador de actividad.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Falso|La actividad que se va a ejecutar para cada elemento en la colección. Para agregar la <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> actividad, coloque una actividad del cuadro de herramientas en el cuadro **Body** del diseñador de actividades ** \<T> ParallelForEach** con el texto de la sugerencia "Coloque la actividad aquí".|
+|**TypeArgument**|Verdadero|Tipo de los elementos de la <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> colección especificada por el parámetro genérico *T*. De forma predeterminada, **TypeArgument** se establece en **Int32**. Para cambiar el tipo T en el diseñador de actividades **ParallelForEach<T \> ** , cambie el valor del cuadro combinado **TypeArgument** en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Verdadero|La colección de elementos en la que se va a iterar. Para establecer <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , escriba una expresión de Visual Basic en el cuadro **valores** del diseñador de actividades **foreach \><T** en el cuadro con el texto de la sugerencia "Escriba una expresión de VB" o en el cuadro **valores** de la ventana **propiedades** .|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Se evalúa cuando se completa cada iteración. Si se evalúa como true, se cancelan las operaciones programadas pendientes. Si no se establece esta propiedad, se ejecutan todas las instrucciones programadas hasta su compleción.|
 
 De forma predeterminada, el iterador del bucle se denomina elemento. Puede cambiar el nombre de la variable de iterador en el cuadro **foreach** del diseñador de actividades **ParallelForEach \<T> ** . El iterador del bucle se puede utilizar en expresiones en los elementos secundarios de la actividad <xref:System.Activities.Statements.ParallelForEach%601>.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Secuencia](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)
