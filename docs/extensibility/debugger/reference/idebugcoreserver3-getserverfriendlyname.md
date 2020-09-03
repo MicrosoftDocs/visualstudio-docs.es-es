@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName ? Microsoft Docs
+title: 'IDebugCoreServer3:: GetServerFriendlyName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732887"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
@@ -41,18 +41,18 @@ int GetServerFriendlyName(
 
 ## <a name="parameters"></a>Parámetros
 `pbstrName`\
-[fuera] Devuelve un nombre descriptivo para el servidor.
+enuncia Devuelve un nombre descriptivo para el servidor.
 
 > [!NOTE]
 > El autor de la llamada es responsable de liberar la cadena.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
- Para los servidores iniciados por el usuario, el nombre devuelto por este método es el nombre completo del servidor. Para los servidores iniciados automáticamente, el nombre es el de la máquina en la que se ejecuta el servidor.
+ En el caso de los servidores iniciados por el usuario, el nombre devuelto por este método es el nombre completo del servidor. En el caso de los servidores iniciados automáticamente, el nombre es el del equipo en el que se está ejecutando el servidor.
 
- Para un nombre orientado a la máquina, llame a la [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) método.
+ Para un nombre orientado al equipo, llame al método [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

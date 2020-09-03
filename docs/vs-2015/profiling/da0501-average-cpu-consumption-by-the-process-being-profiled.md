@@ -1,5 +1,5 @@
 ---
-title: 'DA0501: Promedio de consumo de CPU del proceso del que se está generando el perfil. | Microsoft Docs'
+title: 'DA0501: Promedio de consumo de CPU por parte del proceso que se va a perfilar. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1462ac73e599b870f015a02998c069f7613be0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155773"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Promedio de consumo de CPU del proceso del que se está generando el perfil.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Promedio de consumo de CPU por parte del proceso que se va a perfilar.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id. de regla | DA501 |  
+Identificador de regla | DA501 |  
 | Categoría | Supervisión de recursos |  
-| Método de generación de perfiles | Todos los |  
-| Mensaje | Promedio de consumo de CPU del proceso que se va a perfilar. |  
+| Método de generación de perfiles | Todo |  
+| Mensaje | Promedio de consumo de CPU por parte del proceso del que se está generando el archivo. |  
 | Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

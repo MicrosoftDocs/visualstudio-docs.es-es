@@ -1,5 +1,5 @@
 ---
-title: SccCloseProject (función) | Microsoft Docs
+title: Función SccCloseProject | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d2364215f528f16d05ecf0c53b152f7334f4b4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156140"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta función cierra un proyecto, marca el final de una sesión determinada.  
+Esta función cierra un proyecto y marca el final de una sesión determinada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,22 +34,22 @@ SCCRTN SccCloseProject (
   
 #### <a name="parameters"></a>Parámetros  
  pvContext  
- La estructura de contexto de complemento de control de origen.  
+ Estructura de contexto del complemento de control de código fuente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Valor|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|El proyecto se cerró correctamente.|  
-|SCC_E_PROJNOTOPEN|No hay ningún proyecto está abierto actualmente.|  
-|SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
+|SCC_OK|El proyecto se ha cerrado correctamente.|  
+|SCC_E_PROJNOTOPEN|No hay ningún proyecto abierto actualmente.|  
+|SCC_E_NOTAUTHORIZED|El usuario no tiene permiso para realizar esta operación.|  
 |SCC_E_NONSPECIFICERROR|Error no específico.|  
   
-## <a name="remarks"></a>Comentarios  
- El [SccOpenProject](../extensibility/sccopenproject-function.md) siempre se llama antes de esta función. Una llamada a esta función, a continuación, seguida de una llamada a la `SccOpenProject` función o el [SccUninitialize](../extensibility/sccuninitialize-function.md), que finaliza la conexión con el sistema de control de código fuente completo.  
+## <a name="remarks"></a>Observaciones  
+ Siempre se llama a [SccOpenProject](../extensibility/sccopenproject-function.md) antes de esta función. Una llamada a esta función va seguida de una llamada a la `SccOpenProject` función o a [SccUninitialize](../extensibility/sccuninitialize-function.md), que finaliza la conexión al sistema de control de código fuente por completo.  
   
-## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Consulte también  
+ [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

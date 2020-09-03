@@ -128,7 +128,7 @@ Si agrega una suposición y vuelve a ejecutar IntelliTest, pueden eliminarse los
 
 Si agrega una aserción y vuelve a ejecutar IntelliTest, este comprobará que su aserción sea válida o, en caso contrario, la prueba fallará.
 
-### <a name="NoRun"></a> P: ¿Puedo generar pruebas unitarias con parámetros sin ejecutar primero IntelliTest?
+### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> P: ¿Puedo generar pruebas unitarias con parámetros sin ejecutar primero IntelliTest?
 
 **R:** Sí, haga clic con el botón derecho en la clase o método, y elija **Crear IntelliTest**.
 

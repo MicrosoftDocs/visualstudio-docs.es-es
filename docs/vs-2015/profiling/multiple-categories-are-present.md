@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba84f3ec67acf44cab35f3c7761159839e4ef5bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156116"
 ---
 # <a name="multiple-categories-are-present"></a>Hay múltiples categorías
@@ -25,10 +25,10 @@ ms.locfileid: "68156116"
 
 Se selecciona una sección que contiene más de un tipo de actividad para un intervalo de tiempo determinado. Observe que se muestran dos colores, uno apilado verticalmente en el otro. Estos colores representan solo las dos actividades principales más frecuentes en el intervalo de tiempo determinado. Las frecuencias de estas dos actividades se muestran relacionadas entre sí como tercios o mitades de la barra vertical. Para ver más detalles, pruebe a acercar esta sección de la vista de subprocesos.  
   
-## <a name="see-also"></a>Otras referencias  
- [Tiempo de ejecución (Vista Subprocesos)](../profiling/execution-time-threads-view.md)   
- [Tiempo de E/S (Vista Subprocesos)](../profiling/i-o-time-threads-view.md)   
- [Tiempo de administración de la memoria](../profiling/memory-management-time.md)   
+## <a name="see-also"></a>Consulte también  
+ [Tiempo de ejecución (vista de subprocesos)](../profiling/execution-time-threads-view.md)   
+ [Tiempo de e/s (vista de subprocesos)](../profiling/i-o-time-threads-view.md)   
+ [Tiempo de administración de memoria](../profiling/memory-management-time.md)   
  [Tiempo de adelantamiento](../profiling/preemption-time.md)   
  [Tiempo de suspensión](../profiling/sleep-time.md)   
  [Hora de sincronización](../profiling/synchronization-time.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetClassTypeByName ? Microsoft Docs
+title: 'IDebugSymbolProvider:: GetClassTypeByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a1be0aaaf9e960b95deaa7c949993a950647ce89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719414"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
@@ -45,13 +45,13 @@ int GetClassTypeByName(
 
 ## <a name="parameters"></a>Parámetros
 `pszClassName`\
-[en] El nombre de la clase.
+de Nombre de la clase.
 
 `nameMatch`\
-[en] Selecciona el tipo de coincidencia, por ejemplo, que distingue mayúsculas de minúsculas. Valor de la [enumeración NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
+de Selecciona el tipo de coincidencia; por ejemplo, distingue mayúsculas de minúsculas. Un valor de la enumeración [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .
 
 `ppField`\
-[fuera] Devuelve el tipo de clase representado por el [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaz.
+enuncia Devuelve el tipo de clase tal y como se representa en la interfaz [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) .
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

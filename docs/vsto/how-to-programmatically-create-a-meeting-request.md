@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 48233a051b42b01d5dce2c1a0fb4819882897d3f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546021"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>Cómo: crear una convocatoria de reunión mediante programación
@@ -30,6 +30,6 @@ ms.locfileid: "85546021"
  [!code-csharp[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de calendario](../vsto/working-with-calendar-items.md)
 - [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

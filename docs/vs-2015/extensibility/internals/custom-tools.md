@@ -13,46 +13,46 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 594d564cf4a18eb0b673abd9b45b7d70e20381b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196916"
 ---
 # <a name="custom-tools"></a>Herramientas personalizadas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-*Herramientas personalizadas* le permiten asociar una herramienta con un elemento en un proyecto y ejecutar esa herramienta cada vez que se guarda el archivo. Determinadas herramientas personalizadas, a veces se denomina *generadores de un solo archivo*, con frecuencia se utilizan para implementar los traductores que generan código de los datos y viceversa. Por ejemplo, creación generadores de un solo archivo [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] código fuera de los archivos .resx y de .settings fuente. El código fuente generado proporciona acceso fuertemente tipado a los datos en los archivos .resx y de .settings. El [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] tipos de proyectos admiten herramientas personalizadas; [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] tipos de proyectos no lo hacen. Sus propios tipos de proyecto también pueden admitir herramientas personalizadas.  
+*Las herramientas personalizadas* permiten asociar una herramienta a un elemento de un proyecto y ejecutar esa herramienta cada vez que se guarda el archivo. Ciertas herramientas personalizadas, que a veces se denominan *generadores de un solo archivo*, se usan con frecuencia para implementar traductores que generan código a partir de datos y viceversa. Por ejemplo, los generadores de un solo archivo crean [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] código fuente de los archivos. Settings y. resx. El código fuente generado proporciona acceso fuertemente tipado a los datos de los archivos. Settings y. resx. Los [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] tipos de proyecto y admiten herramientas personalizadas; los [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] tipos de proyecto no. Sus propios tipos de proyecto también pueden admitir herramientas personalizadas.  
   
- Las herramientas personalizadas son componentes registrados que implementan el `IVsSingleFileGenerator` interfaz.  
+ Las herramientas personalizadas son componentes registrados que implementan la `IVsSingleFileGenerator` interfaz.  
   
- Herramientas personalizadas están asociadas con un `ProjectItem` objeto de la interfaz y son similares a los diseñadores y editores. Una herramienta personalizada toma el archivo representado por un `ProjectItem` como entrada y escribe un nuevo archivo cuyo nombre de archivo proporciona el `DefaultExtension` método.  
+ Las herramientas personalizadas están asociadas a un `ProjectItem` objeto de interfaz y son similares a los diseñadores y editores. Una herramienta personalizada toma el archivo representado por `ProjectItem` como entrada y escribe un archivo nuevo cuyo nombre de archivo lo proporciona el `DefaultExtension` método.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Implementación de generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)  
- Describe cómo utilizar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaz para implementar una herramienta personalizada.  
+ Describe cómo utilizar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaz para implementar una herramienta personalizada.  
   
  [Determinar el espacio de nombres predeterminado de un proyecto](../../misc/determining-the-default-namespace-of-a-project.md)  
- Describe cómo determinar el espacio de nombres correcto según el idioma que se va a usar.  
+ Describe cómo determinar el espacio de nombres correcto en función del lenguaje utilizado.  
   
  [Registro de generadores de un solo archivo](../../extensibility/internals/registering-single-file-generators.md)  
- Proporciona descripciones de todas las entradas del registro para una herramienta personalizada.  
+ Proporciona descripciones de todas las entradas del registro de una herramienta personalizada.  
   
  [Exposición de tipos a diseñadores visuales](../../extensibility/internals/exposing-types-to-visual-designers.md)  
- Explica cómo los sistemas de proyecto proporcionan soporte técnico para los diseñadores visuales para acceso genera clases y tipos a través de los archivos ejecutables portables (PE) temporales.  
+ Explica cómo los sistemas de proyecto proporcionan compatibilidad para que los diseñadores visuales tengan acceso a clases y tipos generados a través de archivos ejecutables portables (PE).  
   
  [Conservación de la propiedad de un elemento de proyecto](../../extensibility/persisting-the-property-of-a-project-item.md)  
  Muestra cómo conservar una propiedad de elemento de proyecto, como el autor de un archivo de código fuente, en el archivo de proyecto.  
   
 ## <a name="reference"></a>Referencia  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>  
- Proporciona detalles sobre la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, que transforma un archivo de entrada en un único archivo de salida que se compila o se agrega a un proyecto.  
+ Proporciona detalles sobre el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> , que transforma un único archivo de entrada en un único archivo de salida que se puede compilar o agregar a un proyecto de.  
   
  <xref:EnvDTE.ProjectItem>  
- Explica la `ProjectItem` interfaz, que representa un elemento en un proyecto.  
+ Explica la `ProjectItem` interfaz, que representa un elemento de un proyecto.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>  
- Proporciona detalles sobre el `DefaultExtension` método, que recupera la extensión de nombre de archivo que se asigna al nombre del archivo de salida.  
+ Proporciona detalles sobre el `DefaultExtension` método, que recupera la extensión de nombre de archivo que se proporciona al nombre del archivo de salida.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Ampliación de proyectos](../../extensibility/extending-projects.md)  

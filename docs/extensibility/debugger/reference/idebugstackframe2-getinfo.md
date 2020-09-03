@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetInfo Microsoft Docs
+title: 'IDebugStackFrame2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 09768fc58640d79a3b5628bafc16b2267f1f8a4c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719716"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
@@ -45,13 +45,13 @@ int GetInfo ( 
 
 ## <a name="parameters"></a>Parámetros
 `dwFieldSpec`\
-[en] Una combinación de indicadores de la [enumeración FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica qué campos del `pFrameInfo` parámetro se deben rellenar.
+de Combinación de marcas de la enumeración [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica qué campos del `pFrameInfo` parámetro se van a rellenar.
 
 `nRadix`\
-[en] El radio que se utilizará para dar formato a cualquier información numérica.
+de La base que se va a utilizar para dar formato a cualquier información numérica.
 
 `pFrameInfo`\
-[fuera] Estructura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) que se rellena con la descripción del marco de pila.
+enuncia Una estructura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) que se rellena con la descripción del marco de pila.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineName ? Microsoft Docs
+title: 'IDebugCoreServer2:: GetMachineName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 238088caa3229a0e57da90baeb0ee0f791c2908a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733129"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
-Obtiene el nombre de la máquina en la que se ejecuta el servidor principal.
+Obtiene el nombre del equipo en el que se ejecuta el servidor principal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ int GetName( 
 
 ## <a name="parameters"></a>Parámetros
 `pbstrName`\
-[fuera] Devuelve una cadena que contiene el nombre del equipo.
+enuncia Devuelve una cadena que contiene el nombre del equipo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ccef8ebbf63835a71027643b518280d5f4f867b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156418"
 ---
-# <a name="markerseriesisenabled-method"></a>marker_series::is_enabled (Método)
+# <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled (Método)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Determina si alguna sesión habilitó el proveedor.  
@@ -47,7 +47,7 @@ bool is_enabled(
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres:** Concurrency::diagnostic  
+ **Espacio de nombres**: Concurrency::diagnostic  
   
-## <a name="see-also"></a>Otras referencias  
- [Clase marker_series](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Consulte también  
+ [marker_series (Clase)](../profiling/marker-series-class.md)

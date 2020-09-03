@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerName ? Microsoft Docs
+title: 'IDebugCoreServer3:: GetServerName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf8233a4e2e37478a5818da2c27e498fcf954de9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732861"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
@@ -41,16 +41,16 @@ int GetServerName(
 
 ## <a name="parameters"></a>Parámetros
 `pbstrName`\
-[fuera] Devuelve el nombre del servidor.
+enuncia Devuelve el nombre del servidor.
 
 > [!NOTE]
 > El autor de la llamada es responsable de liberar la cadena.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
- Para un nombre de servidor descriptivo, llame a la [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) método.
+ Para un nombre descriptivo del servidor, llame al método [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
