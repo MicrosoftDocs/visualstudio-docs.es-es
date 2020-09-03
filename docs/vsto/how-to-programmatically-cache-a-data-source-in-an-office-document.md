@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544773"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Cómo: almacenar en caché un origen de datos en un documento de Office mediante programación
@@ -60,4 +60,4 @@ ms.locfileid: "85544773"
 - [Cómo: almacenar datos en caché para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Cómo: almacenar datos en caché en un documento protegido mediante contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)
 - [Acceder a los datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md)
-- [Almacenamiento de datos](../data-tools/save-data-back-to-the-database.md)
+- [Guardar datos](../data-tools/save-data-back-to-the-database.md)

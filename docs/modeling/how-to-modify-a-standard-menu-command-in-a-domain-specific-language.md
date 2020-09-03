@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532501"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
@@ -131,15 +131,15 @@ Los siguientes fragmentos suelen resultar útiles dentro de estos métodos:
 
 - `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye en esta lista de formas y conectores. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.
 
-- `this.IsDiagramSelected()` - `true`Si el usuario hizo clic en una parte en blanco del diagrama.
+- `this.IsDiagramSelected()` - `true` Si el usuario hizo clic en una parte en blanco del diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-el usuario no seleccionó varias formas
+- `this.IsSingleSelection()` -el usuario no seleccionó varias formas
 
-- `this.SingleSelection`-la forma o el diagrama en el que el usuario hizo clic con el botón secundario
+- `this.SingleSelection` -la forma o el diagrama en el que el usuario hizo clic con el botón secundario
 
-- `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.
+- `shape.ModelElement as MyLanguageElement` : elemento de modelo representado por una forma.
 
 Para obtener más información sobre cómo navegar de un elemento a otro y sobre cómo crear objetos y vínculos, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 

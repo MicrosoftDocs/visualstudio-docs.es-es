@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173608"
 ---
 # <a name="author-vsct-files"></a>Archivos Author. Vsct
@@ -229,11 +229,11 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
 
    Algunos tipos de menú y botón incluyen comportamientos especializados. En la lista siguiente se describen algunos tipos de menús y botones especializados. Para otros tipos, vea las `types` descripciones de los atributos en el [menú](../../extensibility/menu-element.md), [botón](../../extensibility/button-element.md)y elementos [combinados](../../extensibility/combo-element.md) .
 
-   - Cuadro combinado: un cuadro combinado es una lista desplegable que se puede usar en una barra de herramientas. Para agregar cuadros combinados a la interfaz de usuario, cree un elemento [Combo](../../extensibility/combos-element.md) en el `Commands` elemento. A continuación, agregue al `Combos` elemento un `Combo` elemento para cada cuadro combinado que se va a agregar. `Combo`los elementos tienen los mismos atributos y elementos secundarios que los `Button` elementos y también tienen `DefaultWidth` `idCommandList` atributos y. El `DefaultWidth` atributo establece el ancho en píxeles y el `idCommandList` atributo apunta a un identificador de comando que se usa para rellenar el cuadro combinado.
+   - Cuadro combinado: un cuadro combinado es una lista desplegable que se puede usar en una barra de herramientas. Para agregar cuadros combinados a la interfaz de usuario, cree un elemento [Combo](../../extensibility/combos-element.md) en el `Commands` elemento. A continuación, agregue al `Combos` elemento un `Combo` elemento para cada cuadro combinado que se va a agregar. `Combo` los elementos tienen los mismos atributos y elementos secundarios que los `Button` elementos y también tienen `DefaultWidth` `idCommandList` atributos y. El `DefaultWidth` atributo establece el ancho en píxeles y el `idCommandList` atributo apunta a un identificador de comando que se usa para rellenar el cuadro combinado.
 
    - Controlador de menú: un controlador de menú es un botón que tiene una flecha al lado. Al hacer clic en la flecha, se abre una lista. Para agregar un controlador de menú a la interfaz de usuario, cree un `Menu` elemento y establezca su `type` atributo en `MenuController` o `MenuControllerLatched` , según el comportamiento que desee. Para rellenar un controlador de menú, establézcalo como elemento primario de un `Group` elemento. El controlador de menú mostrará todos los elementos secundarios de ese grupo en la lista desplegable.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 - [Extender menús y comandos](../../extensibility/extending-menus-and-commands.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa01cb77e8a003438721984da13f46de350104ea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918996"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
@@ -34,7 +34,7 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 |Área|Tarea|Para obtener más información|
 |----------|----------|--------------------------|
 |Instalación|Instalar Visual Studio.|[Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Actualizar desde una edición de evaluación de Visual Studio.|[Cómo: Actualizar a partir de una edición de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Actualizar desde una edición de evaluación de Visual Studio.|[Cómo: Actualizar de versiones de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Instalar, actualizar o quitar contenido de la Ayuda local.|[Instalar y administrar el contenido local](../ide/install-and-manage-local-content.md)|
 |Tipos de aplicación|Desarrollar soluciones para SharePoint 2010.|[Requisitos para desarrollar soluciones de SharePoint](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Adquirir una licencia de desarrollador para la [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Obtener una licencia de desarrollador (aplicaciones de la Tienda Windows)](https://msdn.microsoft.com/library/windows/apps/hh974578.aspx)|
@@ -48,13 +48,13 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 ||Usar el emulador para depurar proyectos de servicios en la nube para Microsoft Azure.|[Depurar un servicio en la nube en Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)|
 ||Configurar un firewall para depuración remota.|[Configurar las herramientas remotas en el dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Herramientas de rendimiento|Generar perfiles de una aplicación.|[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)|
-|Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Implementar una aplicación web ASP.NET en un proveedor de hospedaje mediante Visual Studio o Visual Web Developer: Implementación en IIS como entorno de prueba](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
-|Proporcionar comentarios a Microsoft|Cambiar cómo participar en el Programa para la mejora de la experiencia del usuario de Visual Studio.|[Cómo: enviar comentarios](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12) (Implementar una aplicación web ASP.NET en un proveedor de host mediante Visual Studio o Visual Web Developer: implementar en IIS como entorno de prueba)|
+|Proporcionar comentarios a Microsoft|Cambiar cómo participar en el Programa para la mejora de la experiencia del usuario de Visual Studio.|[Cómo: Enviar comentarios](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Ejecutar Visual Studio como administrador
  Puede iniciar Visual Studio con permisos administrativos cada vez que inicie el IDE o puede modificar el acceso directo de la aplicación para que se ejecute siempre con permisos administrativos. Para obtener más información, vea la Ayuda de Windows.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblue_server_2includeswinblue-server-2-mdmd"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] o [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-win8-win81-winserver8-or-winblue_server_2"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] o [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
 1. En la pantalla **Inicio**, escriba **Visual Studio**. Debe ver la versión o las versiones de Visual Studio que ha instalado.
 
@@ -62,7 +62,7 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08_r2includeswinsvr08-r2-mdmd"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win7](../includes/win7-md.md)] o [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-win7-or-winsvr08_r2"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win7](../includes/win7-md.md)] o [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
 1. En el menú **Inicio**, elija **Todos los programas**.
 
@@ -70,5 +70,5 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bf0301f9b97bf6a7ca76f72f832c635a0dbb128
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656378"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Cómo: Agregar nodos al área de trabajo desde la vista Inicio
@@ -29,8 +29,8 @@ En este tema se describe cómo agregar nodos globales al [área de trabajo del d
 
      Aparecerá la vista Inicio.
 
-     En la sección **detalles del conjunto de esquemas** , observe que hay dos (**2**) **tipos complejos globales**.
+     En la sección **Detalles del conjunto de esquemas**, observe que hay dos (**2**) **Tipos complejos globales**.
 
-3. Haga clic en el vínculo **Agregar** situado a la derecha del encabezado **tipos complejos globales** .
+3. Haga clic en el vínculo **agregar** situado a la derecha del título **Tipos complejos globales**.
 
      Los nodos de tipo complejo `USAddress` y `PurchaseOrderType` aparecerán en la superficie de diseño de la vista Gráfico.

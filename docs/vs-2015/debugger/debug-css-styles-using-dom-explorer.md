@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852422"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Depurar estilos de CSS mediante el Explorador DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "windows_and_phone_content")  
+Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Al depurar aplicaciones de la Tienda Windows, aplicaciones de la Tienda de Windows Phone y aplicaciones creadas con Visual Studio Tools para Apache Cordova, puede ver y cambiar las reglas de CSS de los elementos DOM seleccionados y sus elementos secundarios.  
   
@@ -48,7 +48,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
 - Use la pestaña **Cambios** (solo aplicaciones de la Tienda Windows y aplicaciones de la Tienda de Windows Phone) para identificar y realizar un seguimiento de los estilos CSS que ha cambiado durante una sesión de depuración.  
   
 > [!TIP]
-> Los cambios realizados en los estilos de las pestañas **Estilos** y **Calculado** no son permanentes. Se pierden cuando se detiene la depuración. Para cambiar el código fuente y recargar las páginas sin detener y reiniciar el depurador, actualice la aplicación mediante el botón de ![botón actualizar aplicación de Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Actualizar aplicación de Windows**) en la barra de herramientas **depurar** (solo aplicaciones de la tienda windows y de la tienda de Windows Phone). Para obtener más información, vea [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Los cambios realizados en los estilos de las pestañas **Estilos** y **Calculado** no son permanentes. Se pierden cuando se detiene la depuración. Para cambiar el código fuente y recargar las páginas sin detener y reiniciar el depurador, actualice la aplicación mediante el botón de  ![botón actualizar aplicación de Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Actualizar aplicación de Windows**) en la barra de herramientas **depurar** (solo aplicaciones de la tienda windows y de la tienda de Windows Phone). Para más información, consulte el artículo sobre cómo [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Ejemplo de corrección de una regla de CSS  
  En este ejemplo se muestra cómo inspeccionar las reglas CSS y depurar un problema de estilo. En este ejemplo, digamos que quiere cambiar el color de una fuente utilizada para mostrar títulos de grupo en la plantilla Aplicación dividida de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
@@ -91,7 +91,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
   
 4. Selecciona **Simulador** en la lista desplegable de la barra de herramientas **Depurar** (**Equipo local** es el valor predeterminado).  
   
-     ![Seleccionar lista de destinos de depuración](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Selección de lista de destino de depuración](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 5. Presiona F5 para ejecutar la aplicación en modo de depuración.  
   
@@ -100,14 +100,14 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
     > [!TIP]
     > Cuando la aplicación aparezca en el simulador, colóquelo junto a la ventana de Visual Studio para que pueda ver inmediatamente los resultados de sus selecciones y los cambios realizados en los estilos CSS.  
   
-6. Cambie a Visual Studio y haga clic en **Seleccionar elemento** en el Explorador DOM (o presione Ctrl+B). El modo de selección se modifica para que pueda seleccionar un elemento haciendo clic en él. Además, la aplicación se sitúa en primer plano. El modo se revierte al original al hacer clic. Aquí está el botón **Seleccionar elemento** . ![Botón Seleccionar elemento en el explorador DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Cambie a Visual Studio y haga clic en **Seleccionar elemento** en el Explorador DOM (o presione Ctrl+B). El modo de selección se modifica para que pueda seleccionar un elemento haciendo clic en él. Además, la aplicación se sitúa en primer plano. El modo se revierte al original al hacer clic. Aquí está el botón **Seleccionar elemento** . ![Botón Seleccionar elemento en el Explorador DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > También puede seleccionar elementos HTML directamente en el Explorador DOM. Para obtener más información sobre la selección de elementos, consulte [Inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 7. En el simulador, mantén el mouse sobre el título del primer elemento de la lista, **Título de grupo: 1**, en el panel izquierdo de la página principal. Se resalta el título, como se muestra aquí:  
   
-     ![Usar el botón Seleccionar elemento](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
+     ![Uso del botón Seleccionar elemento](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     > El emulador de Windows Phone solo admite en parte resaltar elementos al colocarse sobre ellos.  
@@ -120,7 +120,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
   
      Cuando seleccione el elemento H4 en el Explorador DOM, las pestañas del Explorador DOM mostrarán ahora las reglas asociadas al elemento H4. La pestaña **Calculado** se muestra aquí, con la propiedad `color` abierta:  
   
-     ![Pestaña estilos de seguimiento del explorador DOM](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
+     ![Pestaña Realizar seguimiento de estilos en el Explorador DOM](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
      Esta vista proporciona información útil sobre las reglas asociadas al estilo de `color` , como la siguiente:  
   
@@ -136,17 +136,17 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
   
 9. Desactive la casilla de la primera aparición de estilo de `color` , que es la que corresponde al selector `.itemspage .itemslist .item .item-overlay .item-title` . Ahora, en el simulador, verá que el color de los títulos de elemento cambia a naranja, tal como queríamos, y que el selector que modificamos en CSS, `.itemspage .itemslist .item`, ya no se reemplaza (es decir, ya no tiene el tachado de texto aplicado). A continuación se muestra la pestaña **Calculado** después de desactivar la casilla.  
   
-     ![La pestaña calculado después de actualizar el estilo CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
+     ![Pestaña Calculado después de actualizar el estilo CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. Seleccione la pestaña **Cambios** .  
   
      Use la pestaña **Cambios** para identificar y realizar un seguimiento de los cambios de estilo que aplique durante una sesión de depuración. En la siguiente ilustración se muestra el selector `.itemspage .itemslist .item .item-overlay .item-title` en la pestaña **Cambios** , que ha sido reemplazado.  
   
-     ![Pestaña cambios del explorador DOM](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
+     ![Pestaña Cambios del Explorador DOM](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
   
 11. También puedes editar manualmente los valores de estilo de CSS y ver el resultado inmediato mediante la pestaña **Estilos** .  
   
-12. Selecciona la pestaña **Estilos** .  
+12. Haga clic en la pestaña **Styles** (Estilos).  
   
 13. Abra el selector de estilo `.itemspage .itemslist .item .item-overlay .item-title` .  
   
@@ -154,9 +154,9 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
   
 15. Use el teclado para modificar este valor. Cámbielo a `rgb(255, 255, 0, 0.87)`y, a continuación, presione Intro. Los colores de todos los títulos de elemento del simulador cambiarán a amarillo.  
   
-16. Para realizar cambios en el archivo CSS de origen, haga clic en el vínculo **Items. CSS** de la pestaña **estilos** . Se abrirá items. CSS, donde puede cambiar el valor del estilo `color` en el código de la aplicación. Para actualizar la aplicación sin detener y reiniciar el depurador, haga clic en el botón ![Actualizar aplicación de Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Actualizar aplicación de Windows**) en la barra de herramientas **depurar** .  
+16. Para realizar cambios en el archivo CSS de origen, haga clic en el vínculo **Items. CSS** de la pestaña **estilos** . Se abrirá items. CSS, donde puede cambiar el valor del `color` estilo en el código de la aplicación. Para actualizar la aplicación sin detener y reiniciar el depurador, haga clic en el botón  ![Actualizar aplicación de Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Actualizar aplicación de Windows**) en la barra de herramientas **depurar** .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar el diseño mediante el explorador DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Ver agentes de escucha de eventos DOM](../debugger/view-dom-event-listeners.md)   

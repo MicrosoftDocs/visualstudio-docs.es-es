@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 05a7f9930dc1619d6f35a6024bd0f754f7caeeb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643502"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Paso 1: Crear un proyecto y agregar una tabla a un formulario
@@ -52,7 +52,7 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
    5. En el menú de tareas, pulse **Agregar fila** para agregar dos filas más y, después, pulse dos veces **Agregar columna** para agregar dos columnas más.
 
-   6. En el menú de tareas, pulse **Editar filas y columnas** para abrir la ventana **Estilos de columna y fila**. Pulse cada una de las columnas, pulse el botón de opción **Porcentaje** y establezca el ancho de cada columna en el 25 por ciento del ancho total. Después, seleccione **Filas** en la lista desplegable de la parte superior de la ventana y establezca el alto de cada fila en el 25 por ciento. Cuando haya terminado, pulse el botón **Aceptar**.
+   6. En el menú de tareas, pulse **Editar filas y columnas** para abrir la ventana **Estilos de columna y fila**. Pulse cada una de las columnas, pulse el botón de opción **Porcentaje** y establezca el ancho de cada columna en el 25 por ciento del ancho total. Después, seleccione **Filas** en la lista desplegable de la parte superior de la ventana y establezca el alto de cada fila en el 25 por ciento. Cuando termine, elija el botón **Aceptar**.
 
       Su TableLayoutPanel debería ser ahora una cuadrícula de 4x4, con dieciséis celdas cuadradas del mismo tamaño. Estas filas y columnas son donde más adelante aparecerán las imágenes de icono.
 
@@ -90,6 +90,6 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al paso siguiente del tutorial, vea [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Para ir al siguiente paso del tutorial, vea [paso 2: agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
-- Para volver al tema de información general, vea [Tutorial 3: Crear un juego de formar parejas](../ide/tutorial-3-create-a-matching-game.md).
+- Para volver al tema de información general, vea [tutorial 3: crear un juego de formar parejas](../ide/tutorial-3-create-a-matching-game.md).

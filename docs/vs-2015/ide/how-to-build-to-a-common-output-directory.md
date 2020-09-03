@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f85ff51b93383d2deca409a00a3db130d52b5003
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645412"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Cómo: Compilar en un directorio de resultados común
@@ -35,5 +35,5 @@ De manera predeterminada, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compila c
 
 4. Repita los pasos del 1 al 3 para todos los proyectos de la solución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [Cómo: cambiar el directorio de salida de la compilación](../ide/how-to-change-the-build-output-directory.md)

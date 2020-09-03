@@ -1,5 +1,5 @@
 ---
-title: Definir elemento ? Microsoft Docs
+title: Definir elemento | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712270"
 ---
-# <a name="define-element"></a>Definir elemento
-Define un nombre de símbolo y un par de valores. Este símbolo se puede evaluar mediante atributos condicionales. Para obtener más información, consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Consulte también el [elemento Símbolos](../extensibility/symbols-element.md).
+# <a name="define-element"></a>Elemento define
+Define un par de nombre y valor de símbolo. Este símbolo puede ser evaluado por atributos condicionales. Para obtener más información, vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Vea también el [elemento Symbols](../extensibility/symbols-element.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,9 +34,9 @@ Define un nombre de símbolo y un par de valores. Este símbolo se puede evaluar
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|name|Necesario. El nombre del símbolo:<br /><br /> nombre "Modo"|
-|value|Necesario. El valor del símbolo:<br /><br /> valor "Estándar"|
-|Condición|Opcional. Para obtener más información, consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|name|Necesario. El nombre del símbolo:<br /><br /> Name = "MODE"|
+|value|Necesario. El valor del símbolo:<br /><br /> valor = "estándar"|
+|Condición|Opcional. Para obtener más información, vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
@@ -54,5 +54,5 @@ Define un nombre de símbolo y un par de valores. Este símbolo se puede evaluar
 <Define name="MODE" value="Standard"/>
 ```
 
-## <a name="see-also"></a>Consulte también
-- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Vea también
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

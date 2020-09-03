@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543122"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase (Diseñador de clases)
@@ -36,10 +36,10 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 
 - [Usar el teclado en el ventana Detalles de clase](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>Usar el mouse en Diseñador de clases
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a> Usar el mouse en Diseñador de clases
  Se admiten las siguientes acciones del mouse en los diagramas de clases:
 
-|Combinación del mouse|Context|Descripción|
+|Combinación del mouse|Contexto|Descripción|
 |-----------------------|-------------|-----------------|
 |Doble clic|Shape (elementos)|Se abre el editor de código.|
 ||Conector de círculo|Expandir o contraer el círculo.|
@@ -62,10 +62,10 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 
 - La ventana Detalles de clase dispone de varios botones para crear nuevos miembros en la clase actual y para navegar entre los compartimientos de los miembros en la cuadrícula de la ventana Detalles de clase. Para obtener más información, consulte Botones de la ventana Detalles de clase.
 
-## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>Usar el teclado en Diseñador de clases
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a> Usar el teclado en Diseñador de clases
  Se admiten las siguientes acciones del teclado en los diagramas de clases:
 
-|Clave|Context|Descripción|
+|Key|Contexto|Descripción|
 |---------|-------------|-----------------|
 |Teclas de dirección|Dentro de las formas de tipo|Navegación de tipo árbol por el contenido de la forma (permite efectuar un recorrido cíclico). Las teclas izquierda y derecha expanden y contraen el elemento actual, si es expansible, y navegan al elemento primario si no lo es (consulte los métodos de navegación por la vista de árbol para obtener información detallada sobre su comportamiento).|
 ||Formas de nivel superior|Mover las formas en el diagrama.|
@@ -96,12 +96,12 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 
  Use las siguientes teclas para navegar por la ventana Detalles de clase:
 
-|Clave|Resultado|
+|Key|Resultado|
 |-|-|
-|, (coma)|Si el cursor está en una fila de parámetro, al escribir una coma, se mueve al campo Nombre del parámetro siguiente. Si el cursor está en la última fila de parámetro de un método, mueve el cursor al \<add parameter> campo, que puede usar para crear un nuevo parámetro.<br /><br /> Si el cursor está en otra parte de la ventana Detalles de clase, al escribir una coma se agrega una coma al campo actual.|
-|; (punto y coma)<br /><br /> o<br /><br /> ) (paréntesis de cierre)|Mover el cursor al campo Nombre de la siguiente fila de miembro en la cuadrícula de la ventana Detalles de clase.|
-|Pestaña|Mueve el cursor al siguiente campo, primero de izquierda a derecha y luego de arriba abajo. Si el cursor está en un campo en el que se ha escrito texto, la ventana Detalles de clase procesa el texto y lo almacena si no genera ningún error.<br /><br /> Si el cursor está en un campo vacío, como \<add parameter> , la tecla TAB lo desplaza al primer campo de la fila siguiente.|
-|\<space>|Mueve el cursor al siguiente campo, primero de izquierda a derecha y luego de arriba abajo. Si el cursor está en un campo vacío como \<add parameter> , se mueve al primer campo de la fila siguiente. Tenga en cuenta que si \<space> se escribe inmediatamente después de una coma, se omite.<br /><br /> Si el cursor está en el campo Resumen, al escribir un espacio se agrega un carácter de espacio.<br /><br /> Si el cursor está en la columna Ocultar de una fila determinada, al escribir un espacio se alterna el valor de la casilla Ocultar.|
+|, (coma)|Si el cursor está en una fila de parámetro, al escribir una coma, se mueve al campo Nombre del parámetro siguiente. Si el cursor está en la última fila de parámetro de un método, se mueve al campo \<add parameter>, que puede usar para crear un parámetro.<br /><br /> Si el cursor está en otra parte de la ventana Detalles de clase, al escribir una coma se agrega una coma al campo actual.|
+|; (punto y coma)<br /><br /> or<br /><br /> ) (paréntesis de cierre)|Mover el cursor al campo Nombre de la siguiente fila de miembro en la cuadrícula de la ventana Detalles de clase.|
+|Pestaña|Mueve el cursor al siguiente campo, primero de izquierda a derecha y luego de arriba abajo. Si el cursor está en un campo en el que se ha escrito texto, la ventana Detalles de clase procesa el texto y lo almacena si no genera ningún error.<br /><br /> Si el cursor está en un campo vacío, como \<add parameter>, la tecla Tabulador lo mueve al primer campo de la fila siguiente.|
+|\<space>|Mueve el cursor al siguiente campo, primero de izquierda a derecha y luego de arriba abajo. Si el cursor está en un campo vacío, como \<add parameter>, se mueve al primer campo de la fila siguiente. Tenga en cuenta que si se escribe \<space> justo después de una coma, se pasará por alto.<br /><br /> Si el cursor está en el campo Resumen, al escribir un espacio se agrega un carácter de espacio.<br /><br /> Si el cursor está en la columna Ocultar de una fila determinada, al escribir un espacio se alterna el valor de la casilla Ocultar.|
 |Ctrl+Tab|Cambiar a otra ventana del documento. Por ejemplo, cambia de la ventana Detalles de clase a un archivo de código abierto.|
 |ESC (Escape)|Si ha empezado a escribir texto en un campo, ESC actúa como tecla «deshacer» y restablece el contenido del campo a su valor anterior. Si la ventana Detalles de clase tiene el foco general sin que ninguna celda concreta tenga el foco, la tecla ESC quita el foco de la ventana Detalles de clase.|
 |Flecha arriba y flecha abajo|Estas teclas mueven el cursor fila a fila, verticalmente, en la cuadrícula de la ventana Detalles de clase.|

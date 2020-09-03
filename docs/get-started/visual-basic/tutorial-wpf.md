@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419216"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con Visual Basic
@@ -67,7 +67,7 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
      ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/exploreide-filenewproject.png)
 
-2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)** . Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)**. Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
 
      ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/exploreide-newproject-vb.png)
 
@@ -315,7 +315,7 @@ Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzam
 
 Enhorabuena por completar este tutorial. Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 ::: moniker range="vs-2017"
 

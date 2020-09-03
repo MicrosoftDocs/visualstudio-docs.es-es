@@ -12,10 +12,10 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672125"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varios mapas de IU
@@ -27,7 +27,7 @@ En este tema se describe cómo usar pruebas de IU codificadas cuando esté proba
 
 - Visual Studio Enterprise
 
-  Al crear una nueva prueba de IU codificada, el marco de pruebas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera código para la prueba de forma predeterminada en una clase [UIMap](/previous-versions/dd580454(v=vs.140)) . Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
+  Al crear una nueva prueba de IU codificada, el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marco de pruebas genera código para la prueba de forma predeterminada en una clase [UIMap](/previous-versions/dd580454(v=vs.140)) . Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
 
   El código generado para la asignación de IU contiene una clase para cada objeto con el que la prueba interactúa. Para cada método generado, se genera una clase complementaria específicamente para los parámetros de ese método. Si hay un número elevado de objetos, páginas y formularios y controles en la aplicación, la asignación de IU puede llegar a ser muy grande. Además, si hay varias personas trabajando en las pruebas, la aplicación se vuelve pesada con un único archivo grande de asignación de IU.
 
@@ -50,7 +50,7 @@ En este tema se describe cómo usar pruebas de IU codificadas cuando esté proba
 
 #### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Para agregar una asignación de IU al proyecto de prueba de IU codificada
 
-1. En el **Explorador de soluciones**, para crear una carpeta en el proyecto de prueba automatizada de IU y almacenar todas las asignaciones de IU, haga clic con el botón derecho en el archivo de proyecto de prueba automatizada de IU, apunte a **Agregar** y seleccione **Nueva carpeta**. Por ejemplo, podría denominarla `UIMaps`.
+1. En **Explorador de soluciones**, para crear una carpeta en el proyecto de prueba de IU codificada para almacenar todas las asignaciones de IU, haga clic con el botón secundario en el archivo de proyecto de prueba de IU codificada, elija **Agregar** y, a continuación, elija **nueva carpeta**. Por ejemplo, podría denominarla `UIMaps`.
 
     La nueva carpeta se mostrará en el proyecto de prueba de IU codificada.
 
@@ -142,6 +142,6 @@ namespace ContosoProject
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)

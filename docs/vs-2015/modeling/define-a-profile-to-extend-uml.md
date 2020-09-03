@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918878"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definir un perfil para ampliar UML
@@ -41,11 +41,11 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 > [!NOTE]
 > Si aplica los estereotipos de un perfil en un modelo que está editando, y, a continuación, comparte el modelo con otras personas, estas personas deberían instalar el mismo perfil en sus equipos. De lo contrario, no podrán ver los estereotipos que ha utilizado.
 
- Un perfil suele formar parte de una extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] mayor. Por ejemplo, puede definir un comando que traduzca algunos elementos de un modelo al código. Puede definir un perfil que los usuarios deben aplicar a los paquetes que desean traducir. Este nuevo comando, junto con el perfil, se distribuiría en una sola extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+ Un perfil suele ser parte de una extensión más grande [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Por ejemplo, puede definir un comando que traduzca algunos elementos de un modelo al código. Puede definir un perfil que los usuarios deben aplicar a los paquetes que desean traducir. Este nuevo comando, junto con el perfil, se distribuiría en una sola extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
  También puede definir variantes adaptadas de un perfil. Los usuarios que carguen su extensión, verán la variante que resulta apropiada para su referencia cultural.
 
-## <a name="DefineProfile"></a>Cómo definir un perfil
+## <a name="how-to-define-a-profile"></a><a name="DefineProfile"></a> Cómo definir un perfil
 
 #### <a name="to-define-a-uml-profile"></a>Para definir un perfil de UML
 
@@ -61,7 +61,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
     1. Haga doble clic en el archivo de extensión, cuya extensión de nombre de archivo es `.vsix`.
 
-    2. Reinicie Visual Studio.
+    2. Reinicie Visual Studio.
 
 5. Compruebe que se ha instalado el perfil.
 
@@ -75,7 +75,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
 6. Envíe el archivo de extensión a otros usuarios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para que lo instalen en sus equipos.
 
-## <a name="AddProfile"></a>Cómo agregar un perfil a una extensión de Visual Studio
+## <a name="how-to-add-a-profile-to-a-visual-studio-extension"></a><a name="AddProfile"></a> Cómo agregar un perfil a una extensión de Visual Studio
  Para instalar y poder enviar un perfil a otros usuarios, debe agregar el perfil a una extensión de Visual Studio. Para obtener más información, consulte [implementación de extensiones de Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Para definir un perfil en una nueva extensión de Visual Studio
@@ -85,9 +85,9 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
    > [!NOTE]
    > Para utilizar este procedimiento, debe tener instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
-   1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
+   1. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
 
-   2. En el cuadro de diálogo **nuevo proyecto** , en **plantillas instaladas**, expanda **Visual C#** , haga clic en **extensibilidad**y, a continuación, haga clic en **Proyecto VSIX**. Establezca el nombre del proyecto y haga clic en **Aceptar**.
+   2. En el cuadro de diálogo **nuevo proyecto** , en **plantillas instaladas**, expanda **Visual C#**, haga clic en **extensibilidad**y, a continuación, haga clic en **Proyecto VSIX**. Establezca el nombre del proyecto y haga clic en **Aceptar**.
 
 2. Agregue su perfil al proyecto.
 
@@ -105,21 +105,21 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
 5. En la página **activos** , agregue una fila que describa el perfil:
 
-   - Haga clic en **Nuevo**. Establezca los campos del cuadro de diálogo **Agregar nuevo activo** como se indica a continuación.
+   - Haga clic en **Nueva**. Establezca los campos del cuadro de diálogo **Agregar nuevo activo** como se indica a continuación.
 
    - Establezca **tipo** en `Microsoft.VisualStudio.UmlProfile`
 
         Esta no es una de las opciones desplegables. Escriba este nombre desde el teclado.
 
-   - Haga clic en **archivo en filesystem** y seleccione el nombre del archivo de perfil, por ejemplo `MyProfile.profile`
+   - Haga clic en **archivo en sistema de archivos** y seleccione el nombre del archivo de perfil, por ejemplo `MyProfile.profile`
 
-6. Generar el proyecto.
+6. Compile el proyecto.
 
 7. Presione F5 **para depurar el perfil**.
 
     Se abre una instancia experimental de Visual Studio. En esta instancia, abra un proyecto de modelado. En el Explorador de UML, seleccione el elemento raíz del modelo y, en la ventana Propiedades, seleccione el perfil. A continuación, seleccione elementos dentro del modelo y establezca estereotipos que haya definido para ellos.
 
-8. **Para extraer el VSIX para la implementación**
+8. **Para extraer el archivo VSIX para la implementación**
 
    1. En el explorador de Windows, abra la carpeta **.\bin\Debug** o **.\bin\Release** para buscar el archivo **. vsix** . Es un archivo de la extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Este archivo puede instalarse en el equipo y enviarse a otros usuarios de Visual Studio.
 
@@ -135,11 +135,11 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
 1. Cree un directorio de Windows que contenga los tres archivos siguientes:
 
-    - `.profile` *YourProfile*
+    - *YourProfile*`.profile`
 
     - `extension.vsixmanifest`
 
-    - `[Content_Types].xml`: escriba este nombre como se muestra aquí, con los corchetes
+    - `[Content_Types].xml` -Escriba este nombre como se muestra aquí, con los corchetes
 
 2. Edite `[Content_Types].xml` para que contenga el texto siguiente. Observe que contiene una entrada para cada extensión de nombre de archivo.
 
@@ -168,7 +168,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
 4. Comprima los tres archivos en un archivo zip.
 
-     En el explorador de Windows, seleccione los tres archivos, haga clic con el botón secundario, seleccione **Enviar a**y, a continuación, haga clic en **carpeta comprimida (en zip)** .
+     En el explorador de Windows, seleccione los tres archivos, haga clic con el botón secundario, seleccione **Enviar a**y, a continuación, haga clic en **carpeta comprimida (en zip)**.
 
 5. Cambie el nombre del archivo comprimido y su extensión de nombre de archivo de `.zip` a `.vsix`.
 
@@ -182,7 +182,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
 3. Para desinstalar o deshabilitar temporalmente la extensión, Abra **extensiones y actualizaciones** en el menú **herramientas** .
 
-## <a name="Localized"></a>Cómo definir perfiles localizados
+## <a name="how-to-define-localized-profiles"></a><a name="Localized"></a> Cómo definir perfiles localizados
  Puede definir distintos perfiles para referencias culturales o idiomas diferentes y empaquetarlos todos en la misma extensión. Cuando un usuario carga su extensión, verá el perfil que ha definido para su referencia cultural.
 
  Siempre debe proporcionar un perfil predeterminado. De este modo, si no ha definido un perfil para la referencia cultural del usuario, verá el perfil predeterminado.
@@ -200,7 +200,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
 4. Agregue una copia de su perfil predeterminado al nuevo directorio. No cambie el nombre de archivo.
 
-     Una [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] carpeta de extensión de ejemplo, antes de compilarse o comprimirse en un archivo `.vsix`, contendría los siguientes archivos y carpetas:
+     Una carpeta de extensión de ejemplo [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , antes de compilarse o comprimirse en un `.vsix` archivo, contendría los siguientes archivos y carpetas:
 
      `extension.vsixmanifest`
 
@@ -219,7 +219,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
 7. Para compilar la extensión de Visual Studio, compile el proyecto de extensión o comprima todos los archivos, tal y como se describe en las secciones anteriores.
 
-## <a name="Schema"></a>La estructura de un perfil
+## <a name="the-structure-of-a-profile"></a><a name="Schema"></a> La estructura de un perfil
 
  Como ayuda para modificar los archivos de perfil, instale el archivo `.xsd` en:
 
@@ -252,14 +252,14 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 
  Cada perfil contiene tres secciones principales. En orden inverso, son las siguientes:
 
-- `<propertyTypes>`: una lista de tipos que se utilizan para las propiedades definidas en la sección de estereotipos.
+- `<propertyTypes>` : una lista de tipos que se utilizan para las propiedades definidas en la sección de estereotipos.
 
 - `<metaclasses>`: una lista de los tipos de elementos del modelo a los que se aplican los estereotipos de este perfil, como por ejemplo, IClass, IInterface, IOperation e IDependency.
 
-- `<stereotypes>`: las definiciones de estereotipo. Cada definición incluye los nombres y tipos de propiedades que se agregan al elemento del modelo de destino.
+- `<stereotypes>` : las definiciones de estereotipo. Cada definición incluye los nombres y tipos de propiedades que se agregan al elemento del modelo de destino.
 
 #### <a name="property-types"></a>Tipos de propiedades
- La sección `<propertyTypes>` declara una lista de tipos que se utilizan para las propiedades de la sección `<stereotypes>`. Existen dos tipos de propiedades: tipos externos y tipos de enumeración.
+ `<propertyTypes>`En la sección se declara una lista de tipos que se utilizan para las propiedades de la `<stereotypes>` sección. Existen dos tipos de propiedades: tipos externos y tipos de enumeración.
 
  Un tipo externo declara el nombre completo de un tipo de .NET estándar:
 
@@ -313,7 +313,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 > [!NOTE]
 > El nombre del moniker debe comenzar con `/yourProfileName/`, donde `yourProfileName` se define en el atributo `name` del perfil ("CSharpProfile" en este ejemplo). El moniker finaliza con el nombre de una de las entradas de la sección de metaclases.
 
- En cada estereotipo se pueden mostrar cero o más propiedades que se agregan a cualquier elemento del modelo al que se aplica el estereotipo. El `<propertyType>` contiene un vínculo a uno de los tipos que se definen en la sección `<propertyTypes>`. El vínculo debe ser `<externalTypeMoniker>` para que haga referencia a `<externalType>,` o `<enumerationTypeMoniker>` para que haga referencia a `<enumerationType>`. De nuevo, el vínculo comienza con el nombre del perfil.
+ En cada estereotipo se pueden mostrar cero o más propiedades que se agregan a cualquier elemento del modelo al que se aplica el estereotipo. `<propertyType>`Contiene un vínculo a uno de los tipos que se definen en la `<propertyTypes>` sección. El vínculo debe ser `<externalTypeMoniker>` para que haga referencia a `<externalType>,` o `<enumerationTypeMoniker>` para que haga referencia a `<enumerationType>`. De nuevo, el vínculo comienza con el nombre del perfil.
 
 ```
   <properties>
@@ -336,10 +336,10 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 </stereotype>
 ```
 
-## <a name="Elements"></a>Tipos de elementos de modelo
+## <a name="model-element-types"></a><a name="Elements"></a> Tipos de elementos de modelo
  El conjunto de tipos para los que puede definir estereotipos se muestra en [tipos de elementos del modelo UML](../modeling/uml-model-element-types.md).
 
-## <a name="troubleshooting"></a>Solucionar problemas
+## <a name="troubleshooting"></a>Solución de problemas
  Los estereotipos no aparecen en los modelos UML.
 Tiene que seleccionar el perfil en un paquete o modelo. A continuación, los estereotipos aparecerán en elementos dentro del paquete o modelo. Para obtener más información, vea [Agregar estereotipos a elementos del modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md).
 
@@ -348,23 +348,23 @@ Tiene que seleccionar el perfil en un paquete o modelo. A continuación, los est
 
 2. Asegúrese de que cada nombre del Moniker tiene el formato /profileName/nodeName. ProfileName es el valor del atributo de nombre en el nodo de perfil raíz. NodeName es el valor del atributo de nombre de una metaclase, externalType o enumerationType.
 
-3. Asegúrese de que la sintaxis es como se describe aquí y como se muestra en _unidad_ **: \Archivos de programa\Microsoft Visual Studio [versión] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
+3. Asegúrese de que la sintaxis es como se describe aquí y como se muestra en _unidad_**: \Archivos de programa\Microsoft Visual Studio [ \\ versión] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles**.
 
-4. Desinstale la extensión defectuosa. En el menú **Herramientas** , haga clic en **Extensiones y actualizaciones**
+4. Desinstale la extensión defectuosa. En el menú **Herramientas**, haga clic en **Extensiones y actualizaciones**.
 
    - Si no aparece la extensión, vea el elemento siguiente.
 
 5. Recompile el archivo VSIX y ábralo en el Explorador de Windows para reinstalarlo. Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
    La extensión no aparece en el administrador de extensiones, pero cuando intenta volver a instalarla, aparece el siguiente mensaje: **la extensión ya está instalada en todos los productos aplicables.**
-   1. Quitar el archivo de extensión de una subcarpeta de *LocalAppData*\Microsoft\VisualStudio\\[versión] \Extensions\
+   1. Quitar el archivo de extensión de una subcarpeta de *LocalAppData*\Microsoft\VisualStudio \\ [versión] \Extensions\
 
    - Para ver *LocalAppData*, debe establecer Mostrar archivos y carpetas ocultos en la pestaña ver de opciones de carpeta del explorador de Windows.
 
-   - *LocalAppData* suele estar en C:\Users\\*nombreDeUsuario*\AppData\Local\
+   - *LocalAppData* suele estar en C:\Users \\ *username*\AppData\Local\
 
 6. Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Agregar estereotipos a elementos del modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [ESTEREOTIPOs estándar para modelos UML](../modeling/standard-stereotypes-for-uml-models.md)
  

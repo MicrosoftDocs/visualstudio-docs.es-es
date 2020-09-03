@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585302"
 ---
 # <a name="miscellaneous-files"></a>Archivos varios
@@ -48,8 +48,8 @@ Los menús, las barras de herramientas y los comandos que contienen varían en f
 
 Puede establecer opciones de visualización para la carpeta **Archivos varios** de manera que ésta aparezca aunque no haya abierto ningún archivo de esta carpeta. El archivo de soluciones no administra una lista de archivos de la carpeta de archivos varios de manera permanente. Utiliza una característica opcional que le permite memorizar una lista de los archivos usados más recientemente por cada usuario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Desarrollar código en Visual Studio sin proyectos o soluciones](../develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Desarrollo de código en Visual Studio sin proyectos o soluciones](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md)
 - [Documentos, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/documents-environment-options-dialog-box.md)

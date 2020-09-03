@@ -60,11 +60,11 @@
               href: architecture-of-office-solutions-in-visual-studio.md
             - name: Arquitectura de las personalizaciones de nivel de documento
               href: architecture-of-document-level-customizations.md
-            - name: Arquitectura de complementos de VSTO
+            - name: Architecture of VSTO Add-ins
               href: architecture-of-vsto-add-ins.md
-            - name: Información general sobre el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
+            - name: Visual Studio Tools for Office Runtime Overview
               items:
-                - name: Información general sobre el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
+                - name: Visual Studio Tools for Office Runtime Overview
                   href: visual-studio-tools-for-office-runtime-overview.md
                 - name: Escenarios de instalación del Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
@@ -86,7 +86,7 @@
               href: running-solutions-in-different-versions-of-microsoft-office.md
             - name: Proyectos de Office en el entorno de Visual Studio
               href: office-projects-in-the-visual-studio-environment.md
-            - name: Propiedades de los proyectos de Office
+            - name: Properties in Office Projects
               href: properties-in-office-projects.md
             - name: Manifiestos de implementación y aplicación en soluciones de Office
               href: application-and-deployment-manifests-in-office-solutions.md
@@ -138,7 +138,7 @@
                   href: extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md
                 - name: Llamar a código en complementos de VSTO desde otras soluciones de Office
                   href: calling-code-in-vsto-add-ins-from-other-office-solutions.md
-                - name: 'Tutorial: Llamar a código en un complemento VSTO desde VBA'
+                - name: 'Tutorial: Llamar a código en un complemento de VSTO desde VBA'
                   href: walkthrough-calling-code-in-a-vsto-add-in-from-vba.md
                 - name: Personalizar características de la interfaz de usuario mediante interfaces de extensibilidad
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
@@ -152,11 +152,11 @@
                       href: combining-vba-and-document-level-customizations.md
                     - name: Exponer código para VBA en un proyecto de Visual Basic
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
-                    - name: 'Exponer código para VBA en un proyecto de Visual C#'
+                    - name: Exponer código para VBA en un proyecto de Visual C#
                       href: how-to-expose-code-to-vba-in-a-visual-csharp-project.md
                     - name: 'Tutorial: Llamar a código de VBA en un proyecto de Visual Basic'
                       href: walkthrough-calling-code-from-vba-in-a-visual-basic-project.md
-                    - name: 'Tutorial: Llamar a código de VBA en un proyecto de Visual C#'
+                    - name: 'Tutorial: llamar a código desde VBA en un proyecto de Visual C#'
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: Administrar documentos en un servidor mediante la clase ServerDocument
                   items:
@@ -186,17 +186,17 @@
                           href: limitations-of-windows-forms-controls-on-office-documents.md
                         - name: Agregar controles de Windows Forms a documentos de Office
                           href: how-to-add-windows-forms-controls-to-office-documents.md
-                        - name: 'Tutorial: Cambiar el formato de un documento mediante controles CheckBox'
+                        - name: 'Tutorial: Cambiar el formato de un documento utilizando controles CheckBox'
                           href: walkthrough-changing-document-formatting-using-checkbox-controls.md
-                        - name: 'Tutorial: Cambiar el formato de una hoja de cálculo mediante controles CheckBox'
+                        - name: 'Tutorial: Cambiar el formato de una hoja de cálculo utilizando controles CheckBox'
                           href: walkthrough-changing-worksheet-formatting-using-checkbox-controls.md
-                        - name: 'Tutorial: Mostrar texto en un cuadro de texto en un documento mediante un botón'
+                        - name: 'Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón'
                           href: walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md
-                        - name: 'Tutorial: Mostrar texto en un cuadro de texto en una hoja de cálculo mediante un botón'
+                        - name: 'Tutorial: Mostrar texto en un cuadro de texto en una hoja de cálculo utilizando un botón'
                           href: walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md
-                        - name: 'Tutorial: Actualizar un gráfico en un documento mediante botones de radio'
+                        - name: 'Tutorial: Actualizar un gráfico en un documento utilizando botones de radio'
                           href: walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md
-                        - name: 'Tutorial: Actualizar un gráfico en una hoja de cálculo mediante botones de radio'
+                        - name: 'Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de radio'
                           href: walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md
                         - name: Cambiar el tamaño de controles en celdas de hojas de cálculo
                           href: how-to-resize-controls-within-worksheet-cells.md
@@ -216,11 +216,11 @@
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: Diseñador de la cinta de opciones
                       href: ribbon-designer.md
-                    - name: 'Tutorial: Crear una ficha personalizada usando el diseñador de la cinta de opciones'
+                    - name: 'Tutorial: Crear una pestaña personalizada usando el diseñador de la cinta de opciones'
                       href: walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md
                     - name: Información general sobre el modelo de objetos para la cinta de opciones
                       href: ribbon-object-model-overview.md
-                    - name: 'Tutorial: Actualizar los controles de una cinta en tiempo de ejecución'
+                    - name: 'Tutorial: Actualizar los controles de una cinta de opciones en tiempo de ejecución'
                       href: walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md
                     - name: Personalizar una cinta de opciones para Outlook
                       href: customizing-a-ribbon-for-outlook.md
@@ -238,9 +238,9 @@
                       href: how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md
                     - name: Exportar una cinta desde el diseñador de la cinta a XML de la cinta
                       href: how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md
-                    - name: XML de la cinta de opciones
+                    - name: Ribbon XML
                       href: ribbon-xml.md
-                    - name: 'Tutorial: Crear una pestaña personalizada mediante XML de la cinta'
+                    - name: 'Tutorial: Crear una pestaña personalizada usando XML de la cinta de opciones'
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: Información general sobre paneles de acciones
                   items:
@@ -254,7 +254,7 @@
                       href: walkthrough-binding-data-to-controls-on-a-word-actions-pane.md
                     - name: 'Tutorial: Enlazar datos a controles en un panel de acciones de Excel'
                       href: walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md
-                    - name: 'Tutorial: Insertar texto en un documento desde un panel de acciones'
+                    - name: 'Tutorial: Insertar texto en un documento de un panel de acciones'
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: Paneles de tareas personalizados
                   items:
@@ -266,7 +266,7 @@
                       href: walkthrough-automating-an-application-from-a-custom-task-pane.md
                     - name: 'Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones'
                       href: walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md
-                    - name: 'Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook'
+                    - name: 'Walkthrough: Displaying Custom Task Panes with E-mail Messages in Outlook'
                       href: walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md
                 - name: Usar controles de WPF en soluciones de Office
                   href: using-wpf-controls-in-office-solutions.md
@@ -292,7 +292,7 @@
                       href: how-to-populate-documents-with-data-from-a-database.md
                     - name: Rellenar documentos con datos de servicios
                       href: how-to-populate-documents-with-data-from-services.md
-                    - name: 'Tutorial: Enlazar a datos desde un servicio en un proyecto de complemento VSTO'
+                    - name: 'Tutorial: Establecer enlaces a datos de un servicio en un proyecto de complemento VSTO'
                       href: walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md
                     - name: Rellenar documentos con datos de objetos
                       href: how-to-populate-documents-with-data-from-objects.md
@@ -300,13 +300,13 @@
                       href: how-to-scroll-through-database-records-in-a-worksheet.md
                     - name: Actualizar un origen de datos con datos de un control host
                       href: how-to-update-a-data-source-with-data-from-a-host-control.md
-                    - name: 'Tutorial: Enlace datos simple en un proyecto en el nivel del documento'
+                    - name: 'Tutorial: Enlace de datos simple en un proyecto en el nivel del documento'
                       href: walkthrough-simple-data-binding-in-a-document-level-project.md
-                    - name: 'Tutorial: Enlace datos complejo en un proyecto en el nivel del documento'
+                    - name: 'Tutorial: Enlace de datos complejo en un proyecto en el nivel del documento'
                       href: walkthrough-complex-data-binding-in-a-document-level-project.md
-                    - name: 'Tutorial: Enlace de datos simple en un proyecto de complemento VSTO'
+                    - name: 'Tutorial: enlace de datos complejos en un proyecto de complemento de VSTO'
                       href: walkthrough-simple-data-binding-in-vsto-add-in-project.md
-                    - name: 'Tutorial: Enlace de datos complejo en un proyecto de complemento VSTO'
+                    - name: 'Tutorial: enlace de datos complejos en el proyecto de complemento de VSTO'
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
                 - name: Custom XML Parts Overview
                   items:
@@ -330,17 +330,17 @@
                           href: how-to-programmatically-cache-a-data-source-in-an-office-document.md
                         - name: Almacenar datos en caché en un documento protegido por contraseña
                           href: how-to-cache-data-in-a-password-protected-document.md
-                        - name: 'Tutorial: Crear una relación maestro-detalle mediante un conjunto de datos almacenado en caché'
+                        - name: 'Tutorial: Creación de una relación maestro-detalles mediante un conjunto de datos almacenado en caché'
                           href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
                     - name: Acceso a datos de documentos en el servidor
                       items:
                         - name: Acceso a datos de documentos en el servidor
                           href: accessing-data-in-documents-on-the-server.md
-                        - name: 'Tutorial: Insertar datos en un libro en un servidor'
+                        - name: 'Tutorial: Insertar datos en un libro de trabajo de un servidor'
                           href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
-                        - name: 'Tutorial: Recuperar datos almacenados en caché desde un libro en un servidor'
+                        - name: 'Tutorial: Recuperar los datos almacenados en caché de un libro de trabajo de un servidor'
                           href: walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md
-                        - name: 'Tutorial: Cambiar los datos almacenados en caché de un libro en un servidor'
+                        - name: 'Tutorial: Cambiar los datos almacenados en caché de un libro de trabajo de un servidor'
                           href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
                 - name: Esquemas y datos XML en personalizaciones de nivel de documento
                   items:
@@ -376,9 +376,9 @@
               href: how-to-target-the-office-multilingual-user-interface.md
             - name: Accesibilidad en proyectos de Office
               href: accessibility-in-office-projects.md
-        - name: Soluciones de Excel
+        - name: Excel Solutions
           items:
-            - name: Soluciones de Excel
+            - name: Excel Solutions
               href: excel-solutions.md
             - name: Excel Object Model Overview
               items:
@@ -502,11 +502,11 @@
               href: globalization-and-localization-of-excel-solutions.md
             - name: Usar controles de formularios Windows Forms en hojas de cálculo de Excel
               href: using-windows-forms-controls-on-excel-worksheets.md
-            - name: 'Tutorial: Crear la primera personalización en el nivel de documento de Excel'
+            - name: 'Tutorial: Crear la primera personalización en el nivel del documento para Excel'
               href: walkthrough-creating-your-first-document-level-customization-for-excel.md
-            - name: 'Tutorial: Crear el primer complemento VSTO de Excel'
+            - name: 'Tutorial: Crear el primer complemento de VSTO para Excel'
               href: walkthrough-creating-your-first-vsto-add-in-for-excel.md
-            - name: 'Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento VSTO'
+            - name: 'Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento de VSTO'
               href: walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md
         - name: Soluciones de InfoPath
           href: infopath-solutions.md
@@ -514,9 +514,9 @@
           items:
             - name: Soluciones de Outlook
               href: outlook-solutions.md
-            - name: Información general sobre el modelo de objetos de Outlook
+            - name: Outlook Object Model Overview
               items:
-                - name: Información general sobre el modelo de objetos de Outlook
+                - name: Outlook Object Model Overview
                   href: outlook-object-model-overview.md
                 - name: Trabajar con contactos
                   items:
@@ -596,19 +596,19 @@
                   href: how-to-prevent-outlook-from-displaying-a-form-region.md
                 - name: Acciones personalizadas en áreas de formulario de Outlook
                   href: custom-actions-in-outlook-form-regions.md
-            - name: 'Tutorial: Crear el primer complemento VSTO de Outlook'
+            - name: 'Tutorial: Crear el primer complemento de VSTO para Outlook'
               href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
         - name: Soluciones de PowerPoint
           items:
             - name: Soluciones de PowerPoint
               href: powerpoint-solutions.md
-            - name: 'Tutorial: Crear el primer complemento VSTO de PowerPoint'
+            - name: 'Tutorial: Crear el primer complemento de VSTO para PowerPoint'
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
         - name: Soluciones de Project
           items:
             - name: Soluciones de Project
               href: project-solutions.md
-            - name: 'Tutorial: Crear el primer complemento VSTO de Project'
+            - name: 'Tutorial: Crear el primer complemento de VSTO para Project'
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
         - name: Soluciones de Visio
           items:
@@ -754,13 +754,13 @@
                   href: walkthrough-creating-a-template-by-using-content-controls.md
                 - name: 'Tutorial: Enlazar controles de contenido a elementos XML personalizados'
                   href: walkthrough-binding-content-controls-to-custom-xml-parts.md
-                - name: 'Tutorial: Crear menús contextuales para marcadores'
+                - name: 'Tutorial: Crear menús de acceso directo para marcadores'
                   href: walkthrough-creating-shortcut-menus-for-bookmarks.md
-            - name: 'Tutorial: Crear la primera personalización en el nivel de documento de Word'
+            - name: 'Tutorial: Crear la primera personalización en el nivel del documento para Word'
               href: walkthrough-creating-your-first-document-level-customization-for-word.md
-            - name: 'Tutorial: Crear el primer complemento VSTO de Word'
+            - name: 'Tutorial: Crear el primer complemento de VSTO para Word'
               href: walkthrough-creating-your-first-vsto-add-in-for-word.md
-            - name: 'Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento VSTO'
+            - name: 'Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento de VSTO'
               href: walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md
         - name: Compilar soluciones de Office
           href: building-office-solutions.md

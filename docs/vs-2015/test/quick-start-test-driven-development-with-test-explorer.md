@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672259"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
@@ -29,7 +29,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 - Ver en una ventana toda la información necesaria.
 
 ## <a name="using-test-explorer"></a>Usar el Explorador de pruebas
- ![Explorador de pruebas unitarias con el botón ejecutar todo](../test/media/unittestexplorer-beta.png "UnitTestExplorer (beta)")
+ ![Explorador de pruebas unitarias con el botón Ejecutar todas](../test/media/unittestexplorer-beta.png "UnitTestExplorer (beta)")
 
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para ejecutar pruebas unitarias mediante el Explorador de pruebas
 
@@ -67,7 +67,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 > [!NOTE]
 > Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para obtener más información, vea [usar un marco de pruebas diferente](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
-## <a name="walkthrough"></a> Tutorial: utilizar pruebas unitarias para desarrollar un método
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> Tutorial: usar pruebas unitarias para desarrollar un método
  En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para obtener más información, vea [usar un marco de pruebas diferente](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
 #### <a name="creating-the-test-and-method"></a>Crear la prueba y el método
@@ -76,7 +76,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
 2. Cree un proyecto de prueba.
 
-   - En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#** , **Prueba** y, a continuación, elija **Proyecto de prueba unitaria**.
+   - En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#**, **Prueba** y, a continuación, elija **Proyecto de prueba unitaria**.
 
         ![Nuevo código y proyectos de prueba](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
 
@@ -124,7 +124,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
 7. Seleccione los elementos bajo **Seguimiento de la pila** para ver dónde se produjo un error en la prueba.
 
-   ![Explorador de pruebas unitarias que muestra una prueba no superada.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+   ![Explorador de pruebas unitarias que muestra una prueba no superada](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
 
    En este punto, se ha creado una prueba y un código auxiliar que se modificarán para que la prueba se complete correctamente.
 
@@ -139,13 +139,13 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
      }
     ```
 
-2. En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el explorador de pruebas, elija **ejecutar todo**.
 
      El código se compila y se ejecuta la prueba.
 
-     La prueba se supera.
+     Se supera la prueba.
 
-     ![Explorador de pruebas unitarias que muestra una prueba de paso.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Explorador de pruebas unitarias que muestra una prueba superada](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Agregar pruebas para ampliar el intervalo de entradas
 
@@ -180,7 +180,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
     }
     ```
 
-2. En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el explorador de pruebas, elija **ejecutar todo**.
 
      La nueva prueba no se supera, aunque la primera aún se completa correctamente.
 
@@ -202,7 +202,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
     }
     ```
 
-4. En el Explorador de pruebas, elija **Ejecutar todas**.
+4. En el explorador de pruebas, elija **ejecutar todo**.
 
      Ahora ambas pruebas se completan correctamente.
 
@@ -227,7 +227,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
      }
     ```
 
-2. En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el explorador de pruebas, elija **ejecutar todo**.
 
      El método en prueba entra en bucle y debe cancelarse manualmente.
 
@@ -248,7 +248,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
     ...
     ```
 
-5. En el Explorador de pruebas, elija **Ejecutar todas**.
+5. En el explorador de pruebas, elija **ejecutar todo**.
 
      Todas las pruebas se completan correctamente.
 
@@ -287,4 +287,4 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
      Todas las pruebas se completan correctamente.
 
-     ![Explorador de pruebas unitarias que muestra 3 pruebas superadas.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Explorador de pruebas unitarias que muestra 3 pruebas superadas](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

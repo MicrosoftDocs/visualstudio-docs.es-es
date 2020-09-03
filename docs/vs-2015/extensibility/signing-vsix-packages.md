@@ -15,10 +15,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918739"
 ---
 # <a name="signing-vsix-packages"></a>Firma de paquetes VSIX
@@ -42,11 +42,11 @@ No es necesario que los ensamblados de extensión estén firmados antes de que s
   
 3. Busque VSIXSignTool desde VisualStudioExtensibility e instale el paquete NuGet.  
   
-4. Ahora puede ejecutar VSIXSignTool desde la ubicación de paquetes locales del proyecto. Consulte la ayuda de la línea de comandos de la herramienta para su escenario de firma (VSIXSignTool. exe/?).  
+4. Ahora puede ejecutar VSIXSignTool desde la ubicación de paquetes locales del proyecto. Consulte la ayuda de la línea de comandos de la herramienta para su escenario de firma (VSIXSignTool.exe/?).  
   
    Por ejemplo, para firmar con un archivo de certificado protegido por contraseña:  
   
-   VSIXSignTool. exe Sign/f \<CERTFILE >/p \<password > \<VSIXfile >  
+   VSIXSignTool.exe signo/f \<certfile> /p \<password>\<VSIXfile>  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

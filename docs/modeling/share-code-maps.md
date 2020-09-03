@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542576"
 ---
 # <a name="share-code-maps"></a>Compartir mapas de código
@@ -57,6 +57,6 @@ Al exportar un mapa de código como un archivo XPS, puede verlo en visores XML o
 
 3. Póngale un nombre al mapa de código. Asegúrese de que la casilla **Guardar como tipo** está establecida en **archivos XPS ( \* . XPS)**. Elija **Guardar**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Asignación de dependencias con mapas de código](../modeling/map-dependencies-across-your-solutions.md)

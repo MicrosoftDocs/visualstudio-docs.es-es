@@ -9,16 +9,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544799"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imágenes e iconos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Uso de imágenes en Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Uso de imágenes en Visual Studio
  Antes de crear material gráfico, considere la posibilidad de utilizar las más de 1000 imágenes en la [biblioteca de imágenes de Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Tipos de imágenes
@@ -35,7 +35,7 @@ ms.locfileid: "85544799"
 
 - **Cursores.** Se utiliza para indicar si se permite una operación con el mouse, dónde se puede quitar un objeto, etc.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Diseño de iconos
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Diseño de iconos
 
 ### <a name="overview"></a>Información general
  Visual Studio usa iconos de estilo moderno, que tienen geometría limpia y un equilibrio de 50/50 de positivo/negativo (claro/oscuro) y usan metáforas directas y comprensibles. Los puntos de diseño de iconos cruciales se centran en la claridad, la simplificación y el contexto.
@@ -269,7 +269,7 @@ ms.locfileid: "85544799"
 
  Para obtener más información sobre el uso de colores en los iconos de Visual Studio, vea [usar el color en las imágenes](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Usar el color en las imágenes
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Usar el color en las imágenes
 
 ### <a name="overview"></a>Información general
  Los iconos de Visual Studio son principalmente monocromáticos. El color se reserva para transmitir información específica y nunca para la decoración. Se usa el color:
@@ -310,15 +310,15 @@ ms.locfileid: "85544799"
 
 |Uso|Nombre|Valor (todos los temas)|Muestras|
 |-----------|----------|--------------------------|------------|
-|Positive|Acción de VS verde|388A34/56138, 52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
-|Negative|Acción de VS rojo|A1260D/161, 38, 13|![Muestra A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
+|Positivo|Acción de VS verde|388A34/56138, 52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
+|Negativo|Acción de VS rojo|A1260D/161, 38, 13|![Muestra A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
 |Neutra|Acción de VS azul|00539C/0, 83156|![Muestra 00539C](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
 |Crear o nuevo|Naranja de acción de VS|C27D1A/194156, 26|![Muestra C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 
 ##### <a name="examples"></a>Ejemplos
  El color verde se usa para los modificadores de acción positivos, como "agregar", "ejecutar", "reproducir" y "validar".
 
-|Ejecute|Ejecutar consulta|Reproducir todos los pasos|Agregar control|
+|Ejecutar|Ejecutar consulta|Reproducir todos los pasos|Agregar control|
 |-|-|-|-|
 |![Icono Ejecutar](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![Icono Ejecutar consulta](../../extensibility/ux-guidelines/media/0405-04-executequery.png "0405-04_ExecuteQuery")|![Icono Reproducir todos los pasos](../../extensibility/ux-guidelines/media/0405-05-playallsteps.png "0405-05_PlayAllSteps")|![Icono Agregar control](../../extensibility/ux-guidelines/media/0405-06-addcontrol.png "0405-06_AddControl")|
 
@@ -336,14 +336,14 @@ ms.locfileid: "85544799"
 
  El oro oscuro se usa principalmente para el modificador "nuevo".
 
-|nuevo proyecto|Crear nuevo gráfico|Nueva prueba unitaria|Nuevo elemento de lista|
+|Nuevo proyecto|Crear nuevo gráfico|Nueva prueba unitaria|Nuevo elemento de lista|
 |-|-|-|-|
 |![Icono de proyecto nuevo](../../extensibility/ux-guidelines/media/0405-15-newproject.png "0405-15_NewProject")|![Icono Crear nuevo gráfico](../../extensibility/ux-guidelines/media/0405-16-createnewgraph.png "0405-16_CreateNewGraph")|![Icono Nueva prueba unitaria](../../extensibility/ux-guidelines/media/0405-17-newunittest.png "0405-17_NewUnitTest")|![Icono Nuevo elemento de lista](../../extensibility/ux-guidelines/media/0405-18-newlistitem.png "0405-18_NewListItem")|
 
 #### <a name="special-cases"></a>Casos especiales
  En casos especiales, un modificador de acción coloreado se puede usar de forma independiente como un icono independiente. El color usado para el icono refleja las acciones con las que está asociado el icono. Este uso está limitado a un pequeño subconjunto de iconos, entre los que se incluyen:
 
-|Ejecute|Stop|Eliminar|Guardar|Navegar hacia atrás|
+|Ejecutar|Stop|Eliminar|Guardar|Navegar hacia atrás|
 |-|-|-|-|-|
 |![Icono Ejecutar](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![Icono de detención](../../extensibility/ux-guidelines/media/0405-19-stop.png "0405-19_Stop")|![Eliminar icono](../../extensibility/ux-guidelines/media/0405-20-delete.png "0405-20_Delete")|![Icono Save (Guardar)](../../extensibility/ux-guidelines/media/0405-21-save.png "0405-21_Save")|![Icono Navegar hacia atrás](../../extensibility/ux-guidelines/media/0405-22-navigateback.png "0405-22_NavigateBack")|
 ### <a name="code-hierarchy-palette"></a>Paleta de jerarquía de código
@@ -393,7 +393,7 @@ ms.locfileid: "85544799"
 ##### <a name="examples-of-intellisense-icons"></a>Ejemplos de iconos de IntelliSense
 
 
-|Clase|Evento privado|delegado|Friend (método)|Campo|
+|Clase|Evento privado|Delegado|Friend (método)|Campo|
 |-|-|-|-|-|
 |![Icono de clase de IntelliSense](../../extensibility/ux-guidelines/media/0405-36-intellisenseclass.png "0405-36_IntelliSenseClass")|![Icono de evento privado de IntelliSense](../../extensibility/ux-guidelines/media/0405-37-intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![Icono de delegado de IntelliSense](../../extensibility/ux-guidelines/media/0405-38-intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![Icono de amigo de método de IntelliSense](../../extensibility/ux-guidelines/media/0405-39-intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![Icono de campo](../../extensibility/ux-guidelines/media/0405-40-field.png "0405-40_Field")|
 
@@ -422,16 +422,16 @@ ms.locfileid: "85544799"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  En general, Visual Studio online se compone de características hospedadas en un explorador. El color varía en entornos diferentes, pero el estilo sigue siendo el mismo.
 
-|Grupo|Uso|Nombre|Valor (todos los temas)|Muestras|
+|Agrupar|Uso|Nombre|Valor (todos los temas)|Muestras|
 |-----------|-----------|----------|--------------------------|------------|
-|TFS|Fondo|TFSO BG|656565/101, 101, 101|![Muestra 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
+|TFS|Información previa|TFSO BG|656565/101, 101, 101|![Muestra 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
 |TFS|Esquema|TFSO|FFFFFF/255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|Napa|Fondo|Blanco|FFFFFF/255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|Mónaco|Fondo|Blanco|FFFFFF/255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|F12|Fondo|Blanco|FFFFFF/255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|Napa|Información previa|Blanco|FFFFFF/255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|Mónaco|Información previa|Blanco|FFFFFF/255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|F12|Información previa|Blanco|FFFFFF/255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|Normal|Grey_Primary F12|555555/85, 85, 85|![Muestra 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
 |F12|Al mantener el puntero|Blue_Hover F12|2279BF/34.121.191|![Muestra 2279BF](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|Disabled|LtGrey_Disabled F12|ABABAC/171.171.172|![Muestra ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|F12|Deshabilitada|LtGrey_Disabled F12|ABABAC/171.171.172|![Muestra ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|Fondo de mantener el mouse|Mantener el mouse|D9EBF7/217.235.247|![Muestra D9EBF7](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|Fondo presionado|BG presionado|B2D7F0/178.215.240|![Muestra B2D7F0](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
 |F12|Esquema|FRENTE A OUT|F6F6F6/246.246.246|![Muestra F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|

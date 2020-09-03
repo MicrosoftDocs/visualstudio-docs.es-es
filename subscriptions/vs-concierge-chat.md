@@ -8,10 +8,10 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Obtenga información sobre la ventaja Chat de soporte técnico incluida en las suscripciones de Visual Studio.
 ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906047"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Chat de soporte técnico en las suscripciones de Visual Studio.

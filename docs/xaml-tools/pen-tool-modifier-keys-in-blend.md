@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328371"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras de la herramienta Pluma en Blend para Visual Studio

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544864"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Cómo cambiar la posición de una pestaña en la cinta de opciones

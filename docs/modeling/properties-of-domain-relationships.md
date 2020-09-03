@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544162"
 ---
 # <a name="properties-of-domain-relationships"></a>Propiedades de las relaciones de dominio
 Las propiedades de la tabla siguiente están asociadas a una relación de dominio. Para obtener información sobre las relaciones de dominio, vea Descripción de los [modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Propiedad|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |Modificador de acceso|El nivel de acceso de la relación de dominio ( `public` o `internal` ).|`public`|
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código fuente que se genera a partir de la relación de dominio.|\<none>|
@@ -33,7 +33,7 @@ Las propiedades de la tabla siguiente están asociadas a una relación de domini
 |Espacio de nombres|El espacio de nombres que está afiliado a la relación de dominio.|Espacio de nombres actual|
 |Notas|Notas informales asociadas a la relación de dominio.|\<none>|
 |Descripción|La descripción que se usa para documentar el código y se usa en la interfaz de usuario del diseñador generado.|\<none>|
-|Nombre para mostrar|Nombre que se muestra en el diseñador generado para la relación de dominio.|\<none>|
+|Display Name (Nombre para mostrar)|Nombre que se muestra en el diseñador generado para la relación de dominio.|\<none>|
 |Help Keyword|Palabra clave opcional que se usa para indizar la ayuda de F1 para la relación de dominio.|\<none>|
 
 ## <a name="see-also"></a>Consulte también

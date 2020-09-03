@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1c1f4c746fa505b50bab9caa7a516a2abc77f69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672207"
 ---
 # <a name="sample-excel-extension-extensionpackage-class"></a>Extensión de Excel de muestra: ExtensionPackage (Clase)
@@ -38,5 +38,5 @@ Esta clase extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Exten
 ## <a name="getservice-method"></a>GetService (Método)
  El método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> es el único punto de entrada usado por el marco de pruebas de IU codificadas para acceder al administrador de tecnología, el proveedor de propiedades y el filtro de acción, identificado por la clase base para cada objeto.
 
-## <a name="see-also"></a>Vea también
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> [extender las pruebas de IU codificadas y las grabaciones de acciones para admitir Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+## <a name="see-also"></a>Consulte también
+ <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento DefaultName (Plantillas de Visual Studio) Microsoft Docs
+title: Defaultname ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712308"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>Elemento DefaultName (plantillas de Visual Studio)
-Especifica el nombre que generará el sistema de proyectos de Visual Studio para el proyecto o elemento cuando se crea.
+# <a name="defaultname-element-visual-studio-templates"></a>Defaultname ((elemento, plantillas de Visual Studio)
+Especifica el nombre que generará el sistema del proyecto de Visual Studio para el proyecto o elemento cuando se crea.
 
- \<VSTemplate \<> TemplateData> \<> DefaultName
+ \<VSTemplate> \<TemplateData>
+ \<DefaultName>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,14 +57,14 @@ Especifica el nombre que generará el sistema de proyectos de Visual Studio para
 ## <a name="remarks"></a>Observaciones
  `DefaultName` es un elemento opcional.
 
- Para los proyectos, este elemento especifica el nombre del directorio que almacena el proyecto en el disco. Para los elementos, especifica el nombre de archivo del archivo de origen.
+ En el caso de los proyectos, este elemento especifica el nombre del directorio que almacena el proyecto en el disco. En el caso de los elementos, especifica el nombre de archivo del archivo de código fuente.
 
- Al crear un proyecto o elemento, puede modificar el nombre predeterminado mediante la opción **Nombre,** que está disponible en el cuadro de diálogo **Nuevo proyecto** o en el cuadro de diálogo Agregar **nuevo elemento.**
+ Al crear un proyecto o elemento, puede modificar el nombre predeterminado mediante la opción **nombre** , que está disponible en el cuadro de diálogo **nuevo proyecto** o en el cuadro de diálogo **Agregar nuevo elemento** .
 
- Si no desea que el sistema de proyectos genere el nombre predeterminado para el `False`proyecto o elemento, establezca el elemento [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) en .
+ Si no desea que el sistema del proyecto genere el nombre predeterminado para el proyecto o elemento, establezca el elemento [providedefaultname (](../extensibility/providedefaultname-element-visual-studio-templates.md) en `False` .
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestran los [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] metadatos de la plantilla de elemento estándar para una clase.
+ En el ejemplo siguiente se muestran los metadatos de la plantilla de elemento estándar para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] clase.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,5 +83,5 @@ Especifica el nombre que generará el sistema de proyectos de Visual Studio para
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

@@ -11,10 +11,10 @@ caps.latest.revision: 15
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e0c6075f9f95f7dc1d21db91936cf35c76f9b2e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672228"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Extensión de muestra para probar la IU codificada para Excel
@@ -42,7 +42,7 @@ El componente de extensión de la muestra se ejecuta en el proceso de prueba de 
 ### <a name="propertyprovider"></a>PropertyProvider
  Heredada de la clase <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>, proporciona una clase base para la compatibilidad con las propiedades de elementos de interfaz de usuario para la reproducción y grabación de pruebas. Para obtener más información, consulte [PropertyProvider (Clase)](../test/sample-excel-extension-propertyprovider-class.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>

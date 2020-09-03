@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543265"
 ---
 # <a name="how-to-programmatically-send-email"></a>Cómo: enviar correo electrónico mediante programación
@@ -40,7 +40,7 @@ ms.locfileid: "85543265"
 ## <a name="robust-programming"></a>Programación sólida
  No quite el código de filtro que busca el nombre de dominio **example.com**. La solución enviará mensajes de correo electrónico a todos los contactos si quita el filtro.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)
 - [Cómo: crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)
 - [Cómo: obtener acceso a los contactos de Outlook mediante programación](../vsto/how-to-programmatically-access-outlook-contacts.md)

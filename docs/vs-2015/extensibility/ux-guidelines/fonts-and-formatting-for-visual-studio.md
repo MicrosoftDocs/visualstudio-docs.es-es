@@ -9,16 +9,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e88f314ccdf2b91215fdfe579741591c7eb724d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544214"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>La fuente del entorno
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
  Todas las fuentes de Visual Studio deben exponerse al usuario para su personalización. Esto se realiza principalmente a través de la página **fuentes y colores** del cuadro de diálogo **herramientas > opciones** . Las tres categorías principales de configuración de fuentes son:
 
 - **Fuente del entorno** : la fuente principal del IDE (entorno de desarrollo integrado), que se usa para todos los elementos de la interfaz, incluidos los cuadros de diálogo, menús, ventanas de herramientas y ventanas de documento. De forma predeterminada, la fuente del entorno está ligada a una fuente del sistema que aparece como 9 pt Segoe UI en las versiones actuales de Windows. El uso de una fuente para todos los elementos de interfaz ayuda a garantizar un aspecto de fuente coherente en todo el IDE.
@@ -34,7 +34,7 @@ ms.locfileid: "85544214"
 
 1. Para el texto de código en el editor, cambie el tamaño con la configuración fuente de texto de código y responda al nivel de zoom del texto del editor.
 
-2. Todos los demás elementos de la interfaz deben estar vinculados a la configuración de la fuente del entorno y responder a los cambios globales en el entorno. Esto incluye (pero no se limita a):
+2. Todos los demás elementos de la interfaz deben estar vinculados a la configuración de la fuente del entorno y responder a los cambios globales en el entorno. Entre otras cosas, esto incluye:
 
     - Texto en menús contextuales
 
@@ -90,7 +90,7 @@ window.ShowModal()
 
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Referencia de formato (escalado o negrita)
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a> Referencia de formato (escalado o negrita)
  Algunos cuadros de diálogo requieren que el texto determinado esté en negrita o un tamaño distinto de la fuente del entorno. Anteriormente, las fuentes mayores que la fuente del entorno se codificaban como "fuente de entorno + 2" o similares. El uso de los fragmentos de código proporcionados admitirá monitores de alta PPP y se asegurará de que el texto de la pantalla aparezca siempre con el tamaño y el peso correctos (como la luz o la semiluz).
 
 > **Nota: antes de aplicar el formato, asegúrese de seguir las instrucciones que se encuentran en [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -323,7 +323,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Para restablecer la fuente, haga clic en "usar valores predeterminados" en **herramientas > opciones > entorno > fuentes y colores**.
 
-## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Estilo de texto
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a> Estilo de texto
  El estilo de texto hace referencia al tamaño, el peso y la grafía de la fuente. Para obtener instrucciones sobre la implementación, consulte [la fuente del entorno](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Grafía de texto
@@ -438,19 +438,19 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Uso|Aspecto|
 |-|-|
-|**Uso:** Menos. Solo interfaz de usuario con marca única.<br /><br /> **Sí:**<br /><br /> -Usar el caso de oración<br />-Usar siempre el peso claro<br /><br /> **No:**<br /><br /> -Se usa para la interfaz de usuario distinta de la interfaz de usuario de firma como la página de inicio<br />-Negrita, cursiva o negrita cursiva<br />-Se usa para el texto del cuerpo<br />-Usar en ventanas de herramientas|**Aparece como:** 34 PT Segoe UI claro<br /><br /> **Ejemplo visual:**<br /><br /> *No se usa actualmente. Se puede usar en la página de inicio.*|
+|**Uso:** Menos. Solo interfaz de usuario con marca única.<br /><br /> **No**<br /><br /> -Usar el caso de oración<br />-Usar siempre el peso claro<br /><br /> **No:**<br /><br /> -Se usa para la interfaz de usuario distinta de la interfaz de usuario de firma como la página de inicio<br />-Negrita, cursiva o negrita cursiva<br />-Se usa para el texto del cuerpo<br />-Usar en ventanas de herramientas|**Aparece como:** 34 PT Segoe UI claro<br /><br /> **Ejemplo visual:**<br /><br /> *No se usa actualmente. Se puede usar en la página de inicio.*|
 
 #### <a name="310-environment-font--light"></a>310% de fuente de entorno + claro
 
 |Uso|Aspecto|
 |-|-|
-|**Uso:**<br /><br /> -Encabezado más grande en los cuadros de diálogo de firma<br />-Encabezado del informe principal<br /><br /> **Sí:**<br /><br /> -Usar el caso de oración<br />-Usar siempre el peso claro<br /><br /> **No:**<br /><br /> -Se usa para la interfaz de usuario distinta de la interfaz de usuario de firma como la página de inicio<br />-Negrita, cursiva o negrita cursiva<br />-Se usa para el texto del cuerpo<br />-Usar en ventanas de herramientas|**Aparece como:** 28 PT Segoe UI luz<br /><br /> **Ejemplo visual:**<br /><br /> ![Ejemplo de fuente del entorno 310% &#43; encabezado claro](../../extensibility/ux-guidelines/media/0202-a-ef310.png "0202-a_EF310")|
+|**Uso:**<br /><br /> -Encabezado más grande en los cuadros de diálogo de firma<br />-Encabezado del informe principal<br /><br /> **No**<br /><br /> -Usar el caso de oración<br />-Usar siempre el peso claro<br /><br /> **No:**<br /><br /> -Se usa para la interfaz de usuario distinta de la interfaz de usuario de firma como la página de inicio<br />-Negrita, cursiva o negrita cursiva<br />-Se usa para el texto del cuerpo<br />-Usar en ventanas de herramientas|**Aparece como:** 28 PT Segoe UI luz<br /><br /> **Ejemplo visual:**<br /><br /> ![Ejemplo de fuente del entorno 310% &#43; encabezado claro](../../extensibility/ux-guidelines/media/0202-a-ef310.png "0202-a_EF310")|
 
 #### <a name="200-environment-font--semilight"></a>fuente de entorno de 200% + semiligera
 
 |Uso|Aspecto|
 |-|-|
-|**Uso:**<br /><br /> -Subtítulos<br />-Títulos en cuadros de diálogo pequeños y medianos<br /><br /> **Sí:**<br /><br /> -Usar el caso de oración<br />-Usar siempre el peso semiclaro<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Se usa para el texto del cuerpo<br />-Usar en ventanas de herramientas|**Aparece como:** 18 PT Segoe UI Semillight<br /><br /> **Ejemplo visual:**<br /><br /> ![Ejemplo de fuente del entorno 200% &#43; semileves](../../extensibility/ux-guidelines/media/0202-b-ef200.png "0202-b_EF200")|
+|**Uso:**<br /><br /> -Subtítulos<br />-Títulos en cuadros de diálogo pequeños y medianos<br /><br /> **No**<br /><br /> -Usar el caso de oración<br />-Usar siempre el peso semiclaro<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Se usa para el texto del cuerpo<br />-Usar en ventanas de herramientas|**Aparece como:** 18 PT Segoe UI Semillight<br /><br /> **Ejemplo visual:**<br /><br /> ![Ejemplo de fuente del entorno 200% &#43; semileves](../../extensibility/ux-guidelines/media/0202-b-ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% de la fuente del entorno
 
@@ -474,7 +474,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Uso|Aspecto|
 |-|-|
-|**Uso:**<br /><br /> -Etiquetas y subencabezados en los cuadros de diálogo de firma<br />-Etiquetas y subencabezados en informes<br />-Etiquetas y subencabezados en la interfaz de usuario del documento<br /><br /> **Sí:**<br /><br /> -Usar el caso de oración<br />-Usar el grosor de negrita<br /><br /> **No:**<br /><br /> -Cursiva o negrita cursiva<br />-Se usa para el texto del cuerpo<br />-Se usa en controles estándar de Visual Studio<br />-Usar en ventanas de herramientas|**Aparece como:** Bolded 9 pt Segoe UI<br /><br /> **Ejemplo visual:**<br /><br /> ![Ejemplo de fuente de entorno &#43; encabezado de negrita](../../extensibility/ux-guidelines/media/0202-f-efb.png "0202-f_EFB")|
+|**Uso:**<br /><br /> -Etiquetas y subencabezados en los cuadros de diálogo de firma<br />-Etiquetas y subencabezados en informes<br />-Etiquetas y subencabezados en la interfaz de usuario del documento<br /><br /> **No**<br /><br /> -Usar el caso de oración<br />-Usar el grosor de negrita<br /><br /> **No:**<br /><br /> -Cursiva o negrita cursiva<br />-Se usa para el texto del cuerpo<br />-Se usa en controles estándar de Visual Studio<br />-Usar en ventanas de herramientas|**Aparece como:** Bolded 9 pt Segoe UI<br /><br /> **Ejemplo visual:**<br /><br /> ![Ejemplo de fuente de entorno &#43; encabezado de negrita](../../extensibility/ux-guidelines/media/0202-f-efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>Fuente del entorno
 

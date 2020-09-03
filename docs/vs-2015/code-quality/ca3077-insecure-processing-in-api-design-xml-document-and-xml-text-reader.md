@@ -9,20 +9,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c0d6a6f6ab42d69d4503741f6625627c46d4ef77
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545111"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Procesamiento no seguro en el diseño de una API, documento XML y lector de texto XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
 |Identificador de comprobación|CA3077|
-|Categoría|Microsoft.Security|
+|Category|Microsoft.Security|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa

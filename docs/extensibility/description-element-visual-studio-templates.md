@@ -1,5 +1,5 @@
 ---
-title: Elemento Descripción (Plantillas de Visual Studio) Microsoft Docs
+title: Description (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,16 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712259"
 ---
-# <a name="description-element-visual-studio-templates"></a>Elemento Description (plantillas de Visual Studio)
-Especifica la descripción de la plantilla tal como aparece en el cuadro de diálogo **Nuevo proyecto** o Agregar **nuevo elemento.**
+# <a name="description-element-visual-studio-templates"></a>Description (elemento, plantillas de Visual Studio)
+Especifica la descripción de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .
 
- \<DESCRIPción \<de la \<> de templateData> de VSTemplate>
+ \<VSTemplate> \<TemplateData>
+ \<Description>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,13 +58,13 @@ Especifica la descripción de la plantilla tal como aparece en el cuadro de diá
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto a menos que se usen los atributos `Package` y `ID`.
 
- El texto proporciona una descripción de la plantilla.
+ En el texto se proporciona una descripción de la plantilla.
 
 ## <a name="remarks"></a>Observaciones
- `Description`es un elemento secundario `TemplateData` necesario del elemento.
+ `Description` es un elemento secundario necesario del `TemplateData` elemento.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestran [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] los metadatos de una plantilla de proyecto para una aplicación.
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,5 +91,5 @@ Especifica la descripción de la plantilla tal como aparece en el cuadro de diá
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

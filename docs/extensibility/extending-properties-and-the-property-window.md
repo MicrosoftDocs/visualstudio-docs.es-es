@@ -1,5 +1,5 @@
 ---
-title: Ampliación de las propiedades y la ventana de propiedades de la propiedad de la propiedad de la propiedad de la propiedad de Microsoft Docs
+title: Extender propiedades y la ventana de propiedades | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711741"
 ---
-# <a name="extend-properties-and-the-property-window"></a>Extender propiedades y la ventana Propiedad
-La ventana **Propiedades** se utiliza para ver y editar las propiedades y eventos en tiempo de diseño de los objetos seleccionados.
+# <a name="extend-properties-and-the-property-window"></a>Extender propiedades y la ventana de propiedades
+La ventana **propiedades** se utiliza para ver y editar las propiedades de tiempo de diseño y los eventos de los objetos seleccionados.
 
- Al seleccionar un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]objeto en , las propiedades públicas de ese objeto aparecen en la ventana **Propiedades.** Para obtener más información, consulte [Introducción](../extensibility/internals/properties-window-overview.md)a la ventana Propiedades .
+ Al seleccionar un objeto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , las propiedades públicas de ese objeto aparecen en la ventana **propiedades** . Para obtener más información, vea [información general sobre ventana Propiedades](../extensibility/internals/properties-window-overview.md).
 
 ## <a name="in-this-section"></a>En esta sección
-- [Exponer propiedades a la ventana Propiedades](../extensibility/exposing-properties-to-the-properties-window.md) Explica cómo puede mostrar las propiedades personalizadas en la ventana Propiedades.
+- [Exponga propiedades a la ventana Propiedades](../extensibility/exposing-properties-to-the-properties-window.md) Explica cómo se pueden mostrar las propiedades personalizadas en el ventana Propiedades.
 
-- [Obtener propiedades del proyecto](../extensibility/getting-project-properties.md) Explica cómo obtener propiedades del proyecto.
+- [Obtener propiedades del proyecto](../extensibility/getting-project-properties.md) Explica cómo obtener las propiedades del proyecto.
