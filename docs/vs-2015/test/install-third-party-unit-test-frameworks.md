@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660510"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar marcos de prueba unitaria de terceros
@@ -52,11 +52,11 @@ El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de prue
 
 4. Abra [Visual Studio Marketplace ](https://marketplace.visualstudio.com).
 
-5. Seleccione **Examinar**.
+5. Elija **examinar**.
 
 6. En la lista **Categoría**, expanda el nodo **Herramientas** y seleccione **Pruebas**.
 
 7. Elija un marco en la lista de resultados para desplazarse a la página de la Galería de Visual Studio de la herramienta.
 
-## <a name="see-also"></a>Vea también
- [Hacer una prueba unitaria del código](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Consulte también
+ [Prueba unitaria del código](../test/unit-test-your-code.md)

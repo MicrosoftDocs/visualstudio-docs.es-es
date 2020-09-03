@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bf21286143b2b9543c834f00ed31ddaa4cef63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660373"
 ---
 # <a name="troubleshooting-code-coverage"></a>Solucionar problemas de cobertura de código
@@ -21,9 +21,9 @@ ms.locfileid: "72660373"
 La herramienta de análisis de cobertura de código de Visual Studio recopila datos para ensamblados nativos y administrados (archivos .dll o .exe). Sin embargo, en algunos casos, la ventana Resultados de la cobertura de código muestra un error similar a "resultados vacíos generados:...." Hay varias razones posibles por las que esto puede ocurrir. Este tema está diseñado para ayudar a resolver esos problemas.
 
 ## <a name="what-you-should-see"></a>Qué debe ver
- Si se elige un comando **Analizar cobertura de código** en el menú Prueba, y si la compilación y las pruebas se ejecutan correctamente, debe verse una lista de resultados en la ventana Cobertura de código. Es posible que tenga que expandir los elementos para ver los detalles.
+ Si se elige un comando **Analizar cobertura de código** en el menú Prueba, y si la compilación y las pruebas se ejecutan correctamente, debería ver una lista de resultados en la ventana Cobertura de código. Es posible que tenga que expandir los elementos para ver los detalles.
 
- ![Resultados de la cobertura de código con colores](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Resultados de cobertura de código con colores](../test/media/codecoverage1.png "CodeCoverage1")
 
  Para obtener más información, consulte [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
@@ -53,12 +53,12 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
 
  El archivo .pdb se debe generar a partir de la misma compilación que los archivos .dll o .exe.
 
- Resolución Asegúrese de que la configuración de compilación genere el archivo. pdb. Si los archivos .pdb no se actualizan cuando se compila el proyecto, abra las propiedades del proyecto, seleccione la página **Compilación**, elija **Avanzadas** e inspeccione **Info. de depuración**.
+ Resolución Asegúrese de que la configuración de compilación genere el archivo. pdb. Si los archivos. pdb no se actualizan cuando se compila el proyecto, abra las propiedades del proyecto, seleccione la página **compilación** , elija **avanzadas** e inspeccione **información de depuración**.
 
  Si los archivos .pdb y .dll o .exe están en distintos lugares, copie el archivo .pdb en el mismo directorio. También es posible configurar el motor de cobertura de código para que busque archivos .pdb en otra ubicación. Para obtener más información, consulte [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="using-an-instrumented-or-optimized-binary"></a>Usar un binario instrumentado u optimizado
- El análisis determina si el binario ha experimentado algún tipo de optimización avanzada, como la optimización guiada por perfiles, o si se ha instrumentado mediante una herramienta de generación de perfiles como VSInstr. exe o VSPerfMon. exe.
+ El análisis determina si el binario ha experimentado algún tipo de optimización avanzada, como la optimización guiada por perfiles, o si se ha instrumentado mediante una herramienta de generación de perfiles como vsinstr.exe o vsperfmon.exe.
 
  Explicación si otra herramienta de generación de perfiles ya ha instrumentado u optimizado un ensamblado, el ensamblado se omite en el análisis de cobertura de código.
 
@@ -67,9 +67,9 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
  Resolución: Desactive la optimización y use una nueva compilación.
 
 ### <a name="code-is-not-managed-net-or-native-c-code"></a>El código no es administrado (.NET) o nativo (C++)
- Análisis Compruebe que se están ejecutando algunas pruebas en código administrado C++ o en código.
+ Análisis Compruebe que se están ejecutando algunas pruebas en el código administrado o en C++.
 
- Explicación el análisis de la cobertura de código en Visual Studio solo está disponible enC++código administrado y nativo (). Si trabaja con herramientas de terceros, puede que parte del código, o todo, se ejecute en una plataforma diferente.
+ Explicación el análisis de la cobertura de código en Visual Studio solo está disponible en código administrado y nativo (C++). Si trabaja con herramientas de terceros, puede que parte del código, o todo, se ejecute en una plataforma diferente.
 
  Resolución ninguno disponible.
 
@@ -121,5 +121,5 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
 
  Resolución ninguno.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

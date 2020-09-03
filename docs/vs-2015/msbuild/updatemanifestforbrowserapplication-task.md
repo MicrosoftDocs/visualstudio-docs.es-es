@@ -20,28 +20,28 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dffa98a8abbf74bd6eee8761d91f09a7c022666
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68740218"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La tarea <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> se ejecuta para agregar el elemento **\<hostInBrowser />** al manifiesto de aplicación (*nombreproyecto*.exe.manifest) cuando se compila un proyecto [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)].  
+La <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> tarea se ejecuta para agregar el **\<hostInBrowser />** elemento al manifiesto de aplicación (*projectname*. exe. manifest) cuando [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] se compila un proyecto.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
   
-|Parámetro|DESCRIPCIÓN|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la ruta de acceso y el nombre del archivo de manifiesto de aplicación al que se quiere agregar el elemento `<hostInBrowser />`.|  
-|`HostInBrowser`|Parámetro obligatorio de tipo **Boolean**.<br /><br /> Especifica si se debe modificar el manifiesto de aplicación para incluir el elemento **\<hostInBrowser />** . Si es **true**, se incluye un nuevo elemento `<`**hostInBrowser />** en el elemento **\<entryPoint />** . Tenga en cuenta que la inclusión de elementos es acumulativa: si ya existe un elemento **\<hostInBrowser />** , no se quita ni se sobrescribe. En vez de eso, se crea otro elemento **\<hostInBrowser />** . Si es **false**, el manifiesto de aplicación no se modifica.|  
+|`HostInBrowser`|Parámetro obligatorio de tipo **Boolean**.<br /><br /> Especifica si se debe modificar el manifiesto de aplicación para incluir el **\<hostInBrowser />** elemento. Si es **true**, `<` se incluye un nuevo elemento **hostInBrowser/>** en el **\<entryPoint />** elemento. Tenga en cuenta que la inclusión de elementos es acumulativa: Si **\<hostInBrowser />** ya existe un elemento, no se quita ni se sobrescribe. En su lugar, **\<hostInBrowser />** se crea un elemento adicional. Si es **false**, el manifiesto de aplicación no se modifica.|  
   
 ## <a name="remarks"></a>Comentarios  
  Los [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] se ejecutan mediante la implementación de [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] y, por tanto, deben publicarse con manifiestos de aplicación e implementación compatibles. [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] usa la tarea [GenerateApplicationManifest](/dotnet/api/microsoft.build.tasks.generateapplicationmanifest) para generar un manifiesto de aplicación.  
   
- A continuación, para configurar una aplicación que se va a hospedar en un explorador, debe agregarse al manifiesto de aplicación un elemento adicional, **\<hostInBrowser />** , tal como refleja el ejemplo siguiente:  
+ A continuación, para configurar una aplicación que se va a hospedar en un explorador, **\<hostInBrowser />** debe agregarse un elemento adicional al manifiesto de aplicación, tal y como se muestra en el ejemplo siguiente:  
   
 ```  
 <!--MyXBAPApplication.exe.manifest-->  
@@ -75,7 +75,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication
 </Project>  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)   
  [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   

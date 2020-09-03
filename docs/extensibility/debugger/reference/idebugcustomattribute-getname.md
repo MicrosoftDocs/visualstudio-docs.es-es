@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName ? Microsoft Docs
+title: 'IDebugCustomAttribute:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 15d435d043d0e3863358628fa12016431a417918
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732773"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
@@ -41,13 +41,13 @@ int GetName(
 
 ## <a name="parameters"></a>Parámetros
 `bstrName`\
-[fuera] Devuelve una cadena que contiene el nombre del atributo personalizado.
+enuncia Devuelve una cadena que contiene el nombre del atributo personalizado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El nombre devuelto por este método corresponde al nombre de la clase utilizada para declarar el atributo. Esto puede no corresponder exactamente al nombre de la propia clase de atributo personalizado, ya que permite quitar el sufijo "Attribute" de un nombre de atributo personalizado cuando se usa en una declaración.
+ El denominado devuelto por este método corresponde al nombre de la clase utilizada para declarar el atributo. Esto puede no corresponder exactamente al nombre de la propia clase de atributo personalizado como C# permite quitar el sufijo "Attribute" de un nombre de atributo personalizado cuando se usa en una declaración.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660220"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Cómo: Exigir código mantenible con una directiva de protección de los análisis de código
@@ -25,7 +25,7 @@ Los desarrolladores pueden usar la herramienta de métricas de código para medi
 
  Los desarrolladores pueden habilitar la profundidad de la herencia, el acoplamiento de clases, el índice de mantenimiento y las reglas de complejidad para aplicar código mantenible a través de las directivas de protección de análisis de código. Las cuatro reglas se encuentran en la categoría "reglas de mantenimiento" en el editor de directivas de análisis de código.
 
- Los administradores de control de versiones para [!INCLUDE[esprfound](../includes/esprfound-md.md)] pueden agregar las reglas de mantenimiento del análisis de código a los requisitos de la Directiva de protección. Estas directivas de inserción en el repositorio requieren que los desarrolladores ejecuten el análisis de código en función de estos cambios de reglas antes de iniciar una inserción en el repositorio.
+ Los administradores de control de versiones de [!INCLUDE[esprfound](../includes/esprfound-md.md)] pueden agregar las reglas de mantenimiento del análisis de código a los requisitos de la Directiva de protección. Estas directivas de inserción en el repositorio requieren que los desarrolladores ejecuten el análisis de código en función de estos cambios de reglas antes de iniciar una inserción en el repositorio.
 
 ### <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir el editor de directivas de análisis de código
 
@@ -59,5 +59,5 @@ Los desarrolladores pueden usar la herramienta de métricas de código para medi
 
 3. Haga clic en **Aceptar**. La nueva Directiva de inserción en el repositorio se aplica ahora a las protecciones futuras.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Valores de métricas de código](../code-quality/code-metrics-values.md) [crear y usar directivas de protección de análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

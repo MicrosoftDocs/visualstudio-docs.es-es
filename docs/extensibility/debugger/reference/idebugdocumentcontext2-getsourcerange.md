@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetSourceRange ? Microsoft Docs
+title: 'IDebugDocumentContext2:: Getsourcerange (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 782cf230c38af77da09b49f69c093e2e95bf7199
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731792"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
@@ -43,18 +43,18 @@ int GetSourceRange( 
 
 ## <a name="parameters"></a>Parámetros
 `pBegPosition`\
-[adentro, fuera] Una [estructura TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que se rellena con la posición inicial. Establezca este argumento en un valor nulo si esta información no es necesaria.
+[in, out] [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que se rellena con la posición inicial. Establezca este argumento en un valor NULL si no se necesita esta información.
 
 `pEndPosition`\
-[adentro, fuera] Una [estructura TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que se rellena con la posición final. Establezca este argumento en un valor nulo si esta información no es necesaria.
+[in, out] [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que se rellena con la posición final. Establezca este argumento en un valor NULL si no se necesita esta información.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Un intervalo de código fuente es todo el intervalo de código fuente, desde la instrucción actual hasta justo después de la instrucción anterior que aportó código. El intervalo de origen se utiliza normalmente para mezclar instrucciones de origen, incluidos comentarios, con código en la ventana de desensamblado.
+ Un intervalo de origen es todo el intervalo de código fuente, desde la instrucción actual hasta justo después de la instrucción anterior que ha contribuido al código. El intervalo de origen se usa normalmente para mezclar instrucciones de código fuente, incluidos los comentarios, con código en la ventana Desensamblado.
 
- Para obtener el intervalo solo para las instrucciones de código contenidas en este contexto de documento, llame a la [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) método.
+ Para obtener el intervalo solo para las instrucciones de código contenidas en este contexto de documento, llame al método [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

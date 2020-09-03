@@ -1,5 +1,5 @@
 ---
-title: Determinar qué Editor abre un archivo en un proyecto | Microsoft Docs
+title: Determinar qué editor abre un archivo en un proyecto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,34 +14,34 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196766"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Determinación del editor que abre un archivo en un proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cuando un usuario abre un archivo en un proyecto, el entorno pasa por un proceso de sondeo, finalmente, abrir el editor adecuado o el diseñador para ese archivo. El procedimiento inicial empleado por el entorno es el mismo para los editores estándar y personalizados. El entorno usa una variedad de criterios al sondear el editor que desea utilizar para abrir un archivo y el VSPackage debe coordinarse con el entorno durante este proceso.  
+Cuando un usuario abre un archivo en un proyecto, el entorno pasa por un proceso de sondeo y, finalmente, abre el editor o el diseñador adecuado para ese archivo. El procedimiento inicial empleado por el entorno es el mismo para los editores estándar y personalizados. El entorno utiliza diversos criterios al sondear qué editor se va a usar para abrir un archivo y el VSPackage debe coordinarse con el entorno durante este proceso.  
   
- Por ejemplo, cuando un usuario selecciona el **abierto** comando desde el **archivo** menú y, a continuación, elige `filename`.rtf (o cualquier otro archivo con una extensión .rtf), el entorno llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> implementación para cada proyecto, finalmente, recorrer todas las instancias de proyecto en la solución. Los proyectos de devuelven un conjunto de marcas que identifican las notificaciones en un documento por prioridad. Con la prioridad más alta, el entorno llama a la correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método. Para obtener más información sobre el proceso de sondeo, [Agregar proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+ Por ejemplo, cuando un usuario selecciona el comando **abrir** en el menú **archivo** y, a continuación, elige `filename` . rtf (o cualquier otro archivo con la extensión. rtf), el entorno llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> implementación de cada proyecto y, a la larga, recorre todas las instancias del proyecto en la solución. Los proyectos devuelven un conjunto de marcas que identifican las notificaciones en un documento por prioridad. Con la prioridad más alta, el entorno llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método adecuado. Para obtener más información sobre el proceso de sondeo, [agregue plantillas de proyecto y de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
- El proyecto archivos varios de notificaciones de todos los archivos que no son reclamados por otros proyectos. De este modo, los editores personalizados pueden abrir documentos antes de abrirlos de editores estándar. Si un archivo de notificaciones de un proyecto de archivos varios, el entorno llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método para abrir el archivo con un editor estándar. El entorno examina su lista interna de los editores registrados para uno que controla los archivos .rtf. Esta lista se encuentra en el registro en la siguiente clave:  
+ El proyecto de archivos varios reclama todos los archivos que no se reclaman en otros proyectos. De esta manera, los editores personalizados pueden abrir documentos antes de que los editores estándar los abran. Si un proyecto de archivos varios reclama un archivo, el entorno llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método para abrir el archivo con un editor estándar. El entorno comprueba la lista interna de editores registrados de una que controla los archivos. rtf. Esta lista se encuentra en el registro en la siguiente clave:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
+ [HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ < `version`> \Editors \\ {<`editor factory guid`>} \Extensions]  
   
- El entorno también comprueba los identificadores de clase en la clave HKEY_CLASSES_ROOT\CLSID para los objetos que tienen una subclave DocObject. Si la extensión de archivo se encuentra allí, una versión incrustada de la aplicación, como Microsoft Word, se crea en el lugar en Visual Studio. Estos objetos de documento deben ser archivos compuestos que implementan la <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interfaz o el objeto debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaz.  
+ El entorno también comprueba los identificadores de clase en la clave HKEY_CLASSES_ROOT \CLSID para los objetos que tienen un elemento DocObject de subclave. Si se encuentra la extensión de archivo, se crea una versión incrustada de la aplicación, como Microsoft Word, en el contexto de Visual Studio. Estos objetos de documento deben ser archivos compuestos que implementen la <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interfaz o el objeto debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaz.  
   
- Si no hay ningún generador de editores para los archivos .rtf del registro, el entorno busca en HKEY_CLASSES_ROOT \\.rtf clave y se abre el editor especificado no existe. Si no se encuentra la extensión de archivo en HKEY_CLASSES_ROOT, el entorno usa el editor de texto básico de Visual Studio para abrir el archivo si es un archivo de texto.  
+ Si no hay ningún generador de editores para los archivos. rtf en el registro, el entorno busca en la \\ clave HKEY_CLASSES_ROOT. rtf y abre el editor especificado allí. Si no se encuentra la extensión de archivo en HKEY_CLASSES_ROOT, el entorno usa el editor de texto principal de Visual Studio para abrir el archivo si es un archivo de texto.  
   
- Si se produce un error en el editor de texto básico, que se produce que si el archivo no es un archivo de texto, el entorno usa su editor binario para el archivo.  
+ Si se produce un error en el editor de texto principal, que se produce si el archivo no es un archivo de texto, el entorno utiliza su editor binario para el archivo.  
   
- Si el entorno de encontrar un editor para la extensión .rtf en su registro, carga el VSPackage que implemente este generador de editores. El entorno llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> método en el nuevo VSPackage. Las llamadas de VSPackage `QueryService` para `SID_SVsRegistorEditor`, usando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> método para registrar el generador de editores con el entorno.  
+ Si el entorno encuentra un editor para la extensión. rtf en su registro, carga el VSPackage que implementa este generador de editores. El entorno llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> método en el VSPackage nuevo. El VSPackage llama a `QueryService` para `SID_SVsRegistorEditor` , utilizando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> método para registrar el generador de editores en el entorno.  
   
- Ahora, el entorno de volver a examina su lista interna de editores registrados para encontrar el generador de editores recién registrado para .rtf (archivos). El entorno llama a la implementación de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método, pasando el tipo de nombre y la vista de archivo para crear.  
+ El entorno ahora vuelve a comprobar su lista interna de editores registrados para buscar el generador del editor recién registrado para los archivos. rtf. El entorno llama a la implementación del <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método, pasando el nombre de archivo y el tipo de vista que se van a crear.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>   
  <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   

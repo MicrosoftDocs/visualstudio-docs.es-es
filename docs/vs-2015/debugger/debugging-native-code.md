@@ -1,5 +1,5 @@
 ---
-title: Depurar código nativo | Microsoft Docs
+title: Depuración de código nativo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,16 +23,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196421"
 ---
 # <a name="debugging-native-code"></a>Depuración de código nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta sección trata algunos problemas y técnicas de depuración comunes para aplicaciones nativas. Las técnicas descritas en esta sección son técnicas de alto nivel. Para la forma de usar el depurador de Visual Studio, consulte [guía básica del depurador](../debugger/debugger-basics.md).  
+Esta sección trata algunos problemas y técnicas de depuración comunes para aplicaciones nativas. Las técnicas descritas en esta sección son técnicas de alto nivel. Para obtener la mecánica del uso del depurador de Visual Studio, vea [Guía básica del depurador](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Cómo: Depurar código optimizado](../debugger/how-to-debug-optimized-code.md)  
@@ -44,7 +44,7 @@ Esta sección trata algunos problemas y técnicas de depuración comunes para ap
  [Aserciones de C/C++](../debugger/c-cpp-assertions.md)  
  Analiza las instrucciones relativas a las aserciones, cómo funcionan, las ventajas de utilizarlas (capturar errores lógicos, comprobar resultados de una operación y probar situaciones de error), su interacción con `_DEBUG` y cuáles son los tipos de aserciones admitidas en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Cómo: Depurar código de ensamblado en línea](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Procedimiento Depuración del código de ensamblado en línea](../debugger/how-to-debug-inline-assembly-code.md)  
  Proporciona instrucciones breves sobre cómo utilizar la ventana Desensamblado para ver las instrucciones en lenguaje de ensamblado, y la ventana Registros para ver el contenido de los registros; asimismo, proporciona vínculos a temas relacionados con esas ventanas.  
   
  [Técnicas de depuración de MFC](../debugger/mfc-debugging-techniques.md)  
@@ -59,10 +59,10 @@ Esta sección trata algunos problemas y técnicas de depuración comunes para ap
  [Depurar COM y ActiveX](../debugger/com-and-activex-debugging.md)  
  Proporciona información sobre cómo depurar aplicaciones COM y ActiveX, incluyendo las herramientas que puede utilizar para depuración COM y ActiveX.  
   
- [Cómo: Depuración de DLL nativas](../debugger/how-to-debug-native-dlls.md)  
+ [Cómo: Depurar DLL nativas](../debugger/how-to-debug-native-dlls.md)  
  Explica cómo preparar la depuración de archivos DLL a partir del código nativo.  
   
- [Cómo: Depurar código insertado](../debugger/how-to-debug-injected-code.md)  
+ [Procedimiento Depuración de código insertado](../debugger/how-to-debug-injected-code.md)  
  Proporciona orientación para depurar código que utiliza atributos. Se incluyen instrucciones sobre cómo activar la anotación del código fuente, cómo ver código insertado y cómo ver el código de desensamblado en el punto de ejecución actual.  
   
  [Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)  
@@ -75,6 +75,6 @@ Esta sección trata algunos problemas y técnicas de depuración comunes para ap
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Proporciona vínculos a secciones más amplias de la documentación relativa a la depuración. La información incluye novedades del depurador, configuración y preparación, puntos de interrupción, control de excepciones, editar y continuar, depuración de código administrado, depuración de código nativo, depuración de SQL y referencias a la interfaz de usuario.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2a78c10b125379d1b4aa284d4b2ff6e999b80f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660597"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
@@ -55,7 +55,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 
    ![Menú de configuración de pruebas con archivo de configuración personalizado](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")
 
-   Otros aspectos de las pruebas unitarias se pueden configurar en el mismo archivo .runsettings. Para obtener más información, consulta [Unit Test Your Code](../test/unit-test-your-code.md).
+   Otros aspectos de las pruebas unitarias se pueden configurar en el mismo archivo .runsettings. Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md).
 
 ### <a name="specifying-symbol-search-paths"></a>Especificar rutas de búsqueda de símbolos
  La cobertura de código requiere que estén presentes los símbolos (archivos .pdb) para los ensamblados. En el caso de los ensamblados compilados por su solución, los archivos de símbolos normalmente están presentes con los archivos binarios y la cobertura de código funciona automáticamente. Pero, en algunos casos, puede que desee incluir los ensamblados a los que se hace referencia en el análisis de cobertura de código. En esos casos, los archivos .pdb podrían no estar adyacentes a los archivos binarios pero puede especificar la ruta de búsqueda de símbolos en el archivo .runsettings.
@@ -101,7 +101,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 ### <a name="regular-expressions"></a>Expresiones regulares
  Los nodos de inclusión y exclusión usan expresiones regulares. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Las expresiones regulares no son iguales que los caracteres comodín. En concreto:
 
-1. **\.\\** * coincide con una cadena de caracteres cualquiera
+1. **\.\\*** coincide con una cadena de cualquier carácter
 
 2. **\\.** coincide con un punto (".")
 
@@ -194,7 +194,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 ### <a name="to-customize-run-settings-in-a-build-definition"></a>Para personalizar la configuración de ejecución en una definición de compilación
  Puede obtener datos de cobertura de código de una compilación de equipo.
 
- ![Especificar runsettings en una definición de compilación](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")
+ ![Especificar parámetros de ejecución en una definición de compilación](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")
 
 1. Asegúrese de que el archivo .runsettings está protegido.
 
@@ -208,7 +208,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 
    Los resultados están visibles en la sección de resumen del informe de compilación.
 
-## <a name="sample"></a> Archivo de ejemplo .runsettings
+## <a name="sample-runsettings-file"></a><a name="sample"></a> Archivo. runsettings de ejemplo
  Copie el código y edítelo para satisfacer sus propias necesidades. Este es el archivo .runsettings predeterminado.
 
  (Para otros usos del archivo .runsettings, vea [Configurar pruebas unitarias con un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)).
@@ -325,5 +325,5 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar cobertura de código para determinar la cantidad de código que se está probando como](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) [prueba unitaria del código](../test/unit-test-your-code.md)

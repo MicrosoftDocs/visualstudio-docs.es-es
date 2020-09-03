@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 55e69ae6380faa58d2b63074734cfe3c065759e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196351"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Devuelve una enumeración de símbolos de la variable que el valor de etiqueta especificado corresponde de la principal función de código auxiliar del acelerador.  
+Devuelve una enumeración de símbolos para la variable a la que corresponde el valor de etiqueta especificado en la función de código auxiliar del acelerador primario.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,17 +35,17 @@ HRESULT findSymbolsForAcceleratorPointerTag ( 
   
 #### <a name="parameters"></a>Parámetros  
  `parent`  
- [in] Un IDiaSymbol que corresponde a la función de código auxiliar de acelerador se va a buscar.  
+ de IDiaSymbol que corresponde a la función de código auxiliar de acelerador que se va a buscar.  
   
  `tagValue`  
- [in] El valor de etiqueta de puntero.  
+ de Valor de la etiqueta de puntero.  
   
  `ppResult`  
- [out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.  
+ enuncia Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

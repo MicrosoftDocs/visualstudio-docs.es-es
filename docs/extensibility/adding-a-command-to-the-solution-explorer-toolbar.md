@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183735"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Agregar un comando a la barra de herramientas Explorador de soluciones
@@ -29,7 +29,7 @@ En este tutorial se muestra cómo agregar un botón a la barra de herramientas *
 > [!NOTE]
 > Use archivos de tabla de comandos XML (*. Vsct*) en lugar de archivos de configuración de tabla de comandos (*. CTC*) para definir el modo en que los menús y comandos aparecen en los VSPackages. Para obtener más información, vea [tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú
@@ -38,7 +38,7 @@ En este tutorial se muestra cómo agregar un botón a la barra de herramientas *
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Agregar un botón a la barra de herramientas Explorador de soluciones
  En esta sección del tutorial se muestra cómo agregar un botón a la barra de herramientas **Explorador de soluciones** . Al hacer clic en el botón, se ejecuta el código del método de devolución de llamada.
 
-1. En el archivo *ToolbarButtonPackage. Vsct* , vaya a la `<Symbols>` sección. El `<GuidSymbol>` nodo contiene el grupo de menús y el comando generado por la plantilla de paquete. Agregue un `<IDSymbol>` elemento a este nodo para declarar el grupo que va a contener el comando.
+1. En el archivo *ToolbarButtonPackage. Vsct* , vaya a la  `<Symbols>` sección. El `<GuidSymbol>`  nodo contiene el grupo de menús y el comando generado por la plantilla de paquete. Agregue un `<IDSymbol>` elemento a este nodo para declarar el grupo que va a contener el comando.
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
@@ -116,5 +116,5 @@ En este tutorial se muestra cómo agregar un botón a la barra de herramientas *
 
    Controla la visibilidad del botón [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hasta que se carga el VSPackage. Una vez cargado el VSPackage, el VSPackage controla la visibilidad del botón.  Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

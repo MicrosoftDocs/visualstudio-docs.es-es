@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545722"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: agregar un comando al menú contextual
@@ -48,7 +48,7 @@ Use el método de este tema si:
 
    En otros casos, considere usar el método MEF para definir comandos. Para obtener más información, consulte [extensión de DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a>Declare el comando en Commands. Vsct
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a> Declare el comando en Commands. Vsct
  Los comandos de menú se declaran en DslPackage\Commands.vsct. Estas definiciones especifican las etiquetas de los elementos de menú y dónde aparecen en los menús.
 
  El archivo que se edita, Commands. Vsct, importa definiciones de varios archivos. h, que se encuentran en la ruta de instalación de directorio de *Visual Studio SDK*\VisualStudioIntegration\Common\Inc. También incluye GeneratedVsct. Vsct, que se genera a partir de la definición de DSL.
@@ -128,7 +128,7 @@ Use el método de este tema si:
 
     - `My Context Menu Command`
 
-## <a name="update-the-package-version-in-packagett"></a><a name="version"></a>Actualizar la versión del paquete en Package.tt
+## <a name="update-the-package-version-in-packagett"></a><a name="version"></a> Actualizar la versión del paquete en Package.tt
  Siempre que se agregue o se cambie un comando, actualice el parámetro `version` del <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> que se aplica a la clase de paquete antes de publicar la nueva versión de su lenguaje específico de dominio.
 
  Como la clase de paquete se define en un archivo generado, actualice el atributo en el archivo de plantilla de texto que genera el archivo Package.cs.
@@ -143,7 +143,7 @@ Use el método de este tema si:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a>Definir el comportamiento del comando
+## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a> Definir el comportamiento del comando
 
 Su DSL ya tiene algunos comandos que se implementan en una clase parcial que se declara en DslPackage\GeneratedCode\CommandSet.cs. Para agregar nuevos comandos, debe extender esta clase creando un nuevo archivo que contenga una declaración parcial de la misma clase. Normalmente, el nombre de la clase es *\<YourDslName>* `CommandSet` . Es útil comenzar comprobando el nombre de la clase e inspeccionando su contenido.
 
@@ -222,15 +222,15 @@ Los siguientes fragmentos suelen resultar útiles en los métodos OnStatus:
 
 - `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye siempre en esta lista. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.
 
-- `this.IsDiagramSelected()` - `true`Si el usuario hizo clic en una parte en blanco del diagrama.
+- `this.IsDiagramSelected()` - `true` Si el usuario hizo clic en una parte en blanco del diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-el usuario no seleccionó varios objetos
+- `this.IsSingleSelection()` -el usuario no seleccionó varios objetos
 
-- `this.SingleSelection`-la forma o el diagrama en el que el usuario hizo clic con el botón secundario
+- `this.SingleSelection` -la forma o el diagrama en el que el usuario hizo clic con el botón secundario
 
-- `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.
+- `shape.ModelElement as MyLanguageElement` : elemento de modelo representado por una forma.
 
 Como regla general, haga que la propiedad `Visible` dependa de lo que se ha seleccionado y haga que la propiedad `Enabled` dependa del estado de los elementos seleccionados.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Si cambia la sección Symbols del archivo VSCT, debe cambiar también estas declaraciones para que coincidan. También debe incrementar el número de versión en Package.tt
 
- Registre los comandos de menú como parte de este conjunto de comandos. `GetMenuCommands()`se llama una vez cuando se inicializa el diagrama:
+ Registre los comandos de menú como parte de este conjunto de comandos. `GetMenuCommands()` se llama una vez cuando se inicializa el diagrama:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()

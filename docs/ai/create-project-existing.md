@@ -9,10 +9,10 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c0909259291bc5d2db2c4a9c8b87b1a0321d362
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371721"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Crear un proyecto de IA a partir de código existente

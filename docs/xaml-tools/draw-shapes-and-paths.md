@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350828"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
@@ -104,7 +104,7 @@ Los trazados y las formas se pueden combinar en un único trazado.
 |![Dos formas antes de su combinación](../designers/media/b1_1.png)|Dos formas antes de su combinación|
 |![Unir](../designers/media/b1_2.png)|Unir|
 |![Dividir](../designers/media/b1_3.png)|Dividir|
-|![Intersect](../designers/media/b1_4.png)|Intersect|
+|![Formar intersección](../designers/media/b1_4.png)|Formar intersección|
 |![Excluir superposición](../designers/media/b1_5.png)|Excluir superposición|
 |![Restar](../designers/media/b1_6.png)|Restar|
 

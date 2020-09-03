@@ -1,5 +1,5 @@
 ---
-title: Elemento ProvideDefaultName (Plantillas de Visual Studio) Microsoft Docs
+title: Providedefaultname ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701714"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (plantillas de Visual Studio)
-Especifica si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el sistema de proyectos generará un nombre predeterminado para la plantilla en el cuadro de diálogo **Agregar nuevo elemento** o Nuevo **proyecto.**
+# <a name="providedefaultname-element-visual-studio-templates"></a>Providedefaultname ((elemento, plantillas de Visual Studio)
+Especifica si el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema del proyecto generará un nombre predeterminado para la plantilla en el cuadro de diálogo **Agregar nuevo elemento** o **nuevo proyecto** .
 
- \<VSTemplate \<> TemplateData> \<> ProvideDefaultName
+ \<VSTemplate> \<TemplateData>
+ \<ProvideDefaultName>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,17 +50,17 @@ Especifica si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el siste
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe `true` `false`ser o , que indica si se debe generar o no un nombre predeterminado para la plantilla en el **agregar nuevo elemento** o nuevo **proyecto** cuadro de diálogo.
+ El texto debe ser `true` o `false` , lo que indica si se va a generar un nombre predeterminado para la plantilla en el cuadro de diálogo **Agregar nuevo elemento** o **nuevo proyecto** .
 
 ## <a name="remarks"></a>Observaciones
  `ProvideDefaultName` es un elemento opcional. El valor predeterminado es `true`.
 
- Si `ProvideDefaultName` el `false`elemento es , los cuadros **Nombre** de los `<Enter_name>`cuadros de diálogo Agregar nuevo **elemento** y Nuevo **proyecto** contienen el valor .
+ Si el `ProvideDefaultName` elemento es `false` , los cuadros de **nombre** de los cuadros de diálogo **Agregar nuevo elemento** y **nuevo proyecto** contienen el valor `<Enter_name>` .
 
- Utilice el elemento [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) para especificar el nombre predeterminado del proyecto o elemento en los cuadros de diálogo **Agregar nuevo elemento** y Nuevo **proyecto.** Cuando el valor `ProvideDefaultName` del `true`elemento es `DefaultName` , la omisión del elemento para los proyectos rellena el cuadro de diálogo con el nombre de la plantilla, es decir, el valor del elemento [Name.](../extensibility/name-element-visual-studio-templates.md)
+ Use el elemento [defaultname (](../extensibility/defaultname-element-visual-studio-templates.md) para especificar el nombre predeterminado del proyecto o elemento en los cuadros de diálogo **Agregar nuevo elemento** y **nuevo proyecto** . Cuando el valor del `ProvideDefaultName` elemento es `true` , la omisión del `DefaultName` elemento para los proyectos rellena el cuadro de diálogo con el nombre de la plantilla, es decir, el valor del elemento [Name](../extensibility/name-element-visual-studio-templates.md) .
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo `ProvideDefaultName` de `false`código siguiente se establece el elemento en .
+ En el ejemplo de código siguiente `ProvideDefaultName` se establece el elemento en `false` .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -78,5 +79,5 @@ Especifica si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el siste
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

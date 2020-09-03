@@ -9,10 +9,10 @@ caps.latest.revision: 28
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9779dd685ad662cd0761dc85be58d0dbb3ccf0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660654"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar pruebas unitarias usando un archivo .runsettings
@@ -43,7 +43,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 
    ![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")
 
-## <a name="example"></a> Copiar este archivo de ejemplo .runsettings
+## <a name="copy-this-example-runsettings-file"></a><a name="example"></a> Copiar este archivo de ejemplo .runsettings
  A continuación se muestra un archivo *.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.
 
 ```xml
@@ -114,7 +114,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 </RunSettings>
 ```
 
- El archivo .runsettings también se usa para configurar la [Cobertura de código](../test/customizing-code-coverage-analysis.md).
+ El archivo .runsettings también se usa para configurar la [cobertura de código](../test/customizing-code-coverage-analysis.md).
 
  El resto de este tema describe el contenido del archivo.
 
@@ -123,7 +123,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 
 ### <a name="test-run-configuration"></a>Configuración de serie de pruebas
 
-|Nodo|Predeterminado|Valores|
+|Nodo|Default|Valores|
 |----------|-------------|------------|
 |`ResultsDirectory`||El directorio en el que se colocarán los resultados de las pruebas.|
 |`TargetFrameworkVersion`|Framework40|Framework35, Framework40, Framework45<br /><br /> Esto especifica qué versión del marco de pruebas unitarias se utiliza para detectar y ejecutar las pruebas. Puede ser diferente de la versión de la plataforma .NET que especifique en las propiedades de compilación del proyecto de prueba unitaria.|
@@ -141,7 +141,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 #### <a name="other-diagnostic-data-adapters"></a>Otros adaptadores de datos de diagnóstico
  El adaptador de cobertura de código es actualmente el único adaptador que se puede personalizar mediante el archivo de configuración de ejecución.
 
- Para personalizar cualquier otro tipo de adaptador de datos de diagnóstico, debe usar un archivo de configuración de pruebas. Para obtener más información, consulte [Especificar la configuración de prueba para las pruebas en Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).
+ Para personalizar cualquier otro tipo de adaptador de datos de diagnóstico, debe usar un archivo de configuración de pruebas. Para más información, vea [Especificar la configuración de prueba para las pruebas en Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).
 
 #### <a name="testrunparameters"></a>TestRunParameters
  TestRunParameters proporciona una manera de definir las variables y los valores que están disponibles para las pruebas en tiempo de ejecución.
@@ -149,18 +149,18 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 ### <a name="mstest-run-settings"></a>Parámetros de ejecución de MSTest
  Estos valores son específicos del adaptador de pruebas que ejecuta métodos de prueba con el atributo `[TestMethod]` .
 
-|Configuración|Predeterminado|Valores|
+|Configuración|Default|Valores|
 |-------------------|-------------|------------|
-|ForcedLegacyMode|False|En Visual Studio 2012, el adaptador MSTest se ha optimizado para que sea más rápido y escalable. Es posible que parte del comportamiento, como el orden en que se ejecutan las pruebas, no sea exactamente igual que en ediciones anteriores de Visual Studio. Establezca este valor en `true` para utilizar el adaptador de pruebas más antiguo.<br /><br /> Por ejemplo, puede utilizarlo si tiene un archivo app.config especificado para una prueba unitaria.<br /><br /> Se recomienda que considere la refactorización de las pruebas para poder usar el adaptador más reciente.|
-|IgnoreTestImpact|False|La característica de impacto de pruebas asigna prioridades a las pruebas afectadas por cambios recientes, cuando se ejecuta en MSTest o desde Microsoft Test Manager. Esta configuración desactiva la característica. Para obtener más información, consulte [Cómo: Recopilar datos para comprobar qué pruebas se deben ejecutar después de realizar cambios en el código](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|
+|ForcedLegacyMode|false|En Visual Studio 2012, el adaptador MSTest se ha optimizado para que sea más rápido y escalable. Es posible que parte del comportamiento, como el orden en que se ejecutan las pruebas, no sea exactamente igual que en ediciones anteriores de Visual Studio. Establezca este valor en `true` para utilizar el adaptador de pruebas más antiguo.<br /><br /> Por ejemplo, puede utilizarlo si tiene un archivo app.config especificado para una prueba unitaria.<br /><br /> Se recomienda que considere la refactorización de las pruebas para poder usar el adaptador más reciente.|
+|IgnoreTestImpact|False|La característica de impacto de pruebas asigna prioridades a las pruebas afectadas por cambios recientes, cuando se ejecuta en MSTest o desde Microsoft Test Manager. Esta configuración desactiva la característica. Para más información, vea [Cómo: Recopilar datos para comprobar qué pruebas se deben ejecutar después de realizar cambios en el código](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|
 |SettingsFile||Puede especificar un archivo de configuración de pruebas para usarlo con el adaptador MSTest aquí. También puede especificar un archivo de configuración de pruebas en el menú **Prueba**, **Configuración de pruebas**, **Seleccionar archivo de configuración de pruebas**.<br /><br /> Si especifica este valor, también debe establecer **ForcedlegacyMode** en **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|
 |KeepExecutorAliveAfterLegacyRun|False|Una vez completada una serie de pruebas, se cierra MSTest. Cualquier proceso que se inicie como parte de la prueba también se eliminará en este momento. Si desea mantener activo el ejecutor de pruebas, establezca esta configuración en true.<br /><br /> Por ejemplo, podría servir para mantener el explorador en ejecución entre pruebas de IU codificadas.|
 |DeploymentEnabled|true|Si lo establece en false, los elementos de implementación especificados en el método de prueba no se copian en el directorio de implementación.|
 |CaptureTraceOutput|true|Puede escribir en el seguimiento de depuración desde su método de prueba mediante Trace.WriteLine. Con esta configuración, puede desactivar estos seguimientos de depuración.|
 |DeleteDeploymentDirectoryAfterTestRunIsComplete|true|Puede conservar el directorio de implementación después de una serie de pruebas estableciendo este valor en false.|
 |MapInconclusiveToFailed|False|Si una prueba devuelve un estado no concluyente, se le asigna normalmente el estado Omitido en el Explorador de pruebas. Si desea que las pruebas no concluyentes se muestren como Error, utilice esta configuración.|
-|InProcMode|False|Si desea que las pruebas se ejecuten en el mismo proceso que el adaptador MSTest, establezca este valor en true. Este valor proporciona una pequeña mejora del rendimiento. Pero si una prueba finaliza con una excepción, el resto de pruebas no podrán continuar.|
+|InProcMode|false|Si desea que las pruebas se ejecuten en el mismo proceso que el adaptador MSTest, establezca este valor en true. Este valor proporciona una pequeña mejora del rendimiento. Pero si una prueba finaliza con una excepción, el resto de pruebas no podrán continuar.|
 |AssemblyResolution|False|Puede especificar rutas de acceso a ensamblados adicionales cuando busque y ejecute pruebas unitarias.  Por ejemplo, puede utilizar estas rutas de acceso para los ensamblados de dependencias que no residan en el mismo directorio que el ensamblado de pruebas.  Para especificar una ruta de acceso, use un elemento "Directory Path".  Las rutas de acceso pueden contener variables de entorno.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md) [especificar la configuración de pruebas para las pruebas de Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

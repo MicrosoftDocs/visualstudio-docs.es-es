@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Documentos de Microsoft
+title: 'IDebugComPlusSymbolProvider:: GetAddressesInModuleFromPosition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471997a5497413869c3c4662592f4c585c2d76d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194825"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Asigna una posición de documento en el módulo especificado en una matriz de direcciones de depuración.  
+Asigna una posición de documento del módulo especificado a una matriz de direcciones de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -51,28 +51,28 @@ int GetAddressesInModuleFromPosition(
   
 #### <a name="parameters"></a>Parámetros  
  `ulAppDomainID`  
- [in] Identificador de dominio de aplicación.  
+ de Identificador del dominio de aplicación.  
   
  `guidModule`  
- [in] Identificador único del módulo.  
+ de Identificador único del módulo.  
   
  `pDocPos`  
- [in] La posición del documento.  
+ de Posición del documento.  
   
  `fStatmentOnly`  
- [in] Si `TRUE`, limita las direcciones de depuración para una sola instrucción.  
+ de Si es `TRUE` , limita las direcciones de depuración a una única instrucción.  
   
  `ppEnumBegAddresses`  
- [out] Devuelve un enumerador para las direcciones iniciales de depuración que están asociadas con esta instrucción o línea.  
+ enuncia Devuelve un enumerador para las direcciones de depuración de inicio asociadas a esta instrucción o línea.  
   
  `ppEnumEndAddresses`  
- [out] Devuelve un enumerador para las direcciones de depuración final que están asociadas con esta instrucción o línea.  
+ enuncia Devuelve un enumerador para las direcciones de depuración finales asociadas a esta instrucción o línea.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugSymbolProvider** que expone la interfaz [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  
@@ -223,5 +223,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

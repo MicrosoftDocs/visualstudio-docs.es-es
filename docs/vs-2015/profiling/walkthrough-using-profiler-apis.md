@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5fc0f5a11d29fdb1ee570dc32066fdd492ed8db
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871537"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
@@ -34,14 +34,14 @@ En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de l
 
  Para el código nativo, las API del generador de perfiles de Visual Studio se encuentran en VSPerf.dll. El archivo de encabezado (VSPerf.h) y la biblioteca de importación (VSPerf.lib) se encuentran en el directorio Microsoft Visual Studio 9\Team Tools\Performance Tools\.
 
- Para el código administrado, las API del generador de perfiles se encuentran en Microsoft.VisualStudio.Profiler.dll. Este archivo DLL se encuentra en el directorio Microsoft Visual Studio 9\Team Tools\Performance Tools. Para obtener más información, vea [Profiler](/previous-versions/ms242704(v=vs.140)).
+ Para el código administrado, las API del generador de perfiles se encuentran en Microsoft.VisualStudio.Profiler.dll. Este archivo DLL se encuentra en el directorio Microsoft Visual Studio 9\Team Tools\Performance Tools. Para más información, consulte [Profiler](/previous-versions/ms242704(v=vs.140)).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  En este tutorial se da por supuesto que la elección del entorno de desarrollo está configurada para admitir la depuración y el muestreo. En los temas siguientes se proporciona una introducción de estos requisitos previos:
 
- [Cómo: Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+ [Cómo: elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)
 
- [Cómo: Referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)
+ [Cómo: hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)
 
  De forma predeterminada, cuando se inicia el generador de perfiles, recopila datos en el nivel global. El código siguiente al principio del programa desactiva la generación de perfiles global.
 
@@ -147,9 +147,9 @@ DataCollection.CurrentId);
 
      **VsPefCLREnv /traceon**
 
-3. Escriba el comando siguiente:**VSInstr \<nombreDeArchivo>.exe**
+3. Escriba el siguiente comando:**VSInstr \<filename> . exe**
 
-4. Escriba el comando siguiente:**VSPerfCmd /start:trace /output:\<nombreDeArchivo>.vsp**
+4. Escriba el siguiente comando:**VSPerfCmd/Start: Trace/Output: \<filename> . VSP**
 
 5. Escriba el comando siguiente:**VSPerfCmd /globaloff**
 
@@ -157,13 +157,13 @@ DataCollection.CurrentId);
 
 7. Escriba el comando siguiente:**VSPerfCmd /shutdown**
 
-8. Escriba el comando siguiente:**VSPerfReport /calltrace:\<nombreDeArchivo>.vsp**
+8. Escriba el comando siguiente:**VSPerfReport/CALLTRACE: \<filename> . VSP**
 
      Se crea un archivo .csv en el directorio actual con los datos de rendimiento resultantes.
 
 ## <a name="see-also"></a>Vea también
 
 - [Generador de perfiles](/previous-versions/ms242704(v=vs.140))
-- [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Introducción](../profiling/getting-started-with-performance-tools.md)
 - [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)

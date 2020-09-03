@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement ? Microsoft Docs
+title: 'IDebugThread2:: CanSetNextStatement | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718865"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
@@ -43,16 +43,16 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>Parámetros
 `pStackFrame`\
-Reservado para uso futuro; establecido en un valor nulo. Si se trata de un valor nulo, utilice el marco de pila actual.
+Reservado para uso futuro; establecer en un valor null. Si se trata de un valor null, utilice el marco de pila actual.
 
 `pCodeContext`\
-[en] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que describe la ubicación de código a punto de ejecutarse y su contexto.
+de Un objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que describe la ubicación del código que se va a ejecutar y su contexto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Si este `S_OK`método devuelve , llame a la [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) método para establecer realmente la siguiente instrucción.
+ Si este método devuelve `S_OK` , llame al método [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) para establecer realmente la instrucción siguiente.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

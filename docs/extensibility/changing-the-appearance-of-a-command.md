@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183722"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Cambiar la apariencia de un comando
@@ -84,7 +84,7 @@ Para cambiar la apariencia de un comando, realice una de estas acciones:
 
 8. En el menú **herramientas** , ahora debería ver el **nuevo texto**. Haga clic en **nuevo texto**. El comando debería aparecer ahora atenuado.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md)
