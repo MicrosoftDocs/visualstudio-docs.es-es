@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf1a78148e2520478c7c6bc3e7953adccbab8c52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657556"
 ---
 # <a name="workflow-designer-ui-help"></a>Ayuda de la interfaz de usuario del Diseñador de flujo de trabajo
-Esta sección contiene temas de Ayuda contextual para [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Al trabajar en [!INCLUDE[vs2010](../includes/vs2010-md.md)], puede tener acceso a estos temas desde la interfaz de usuario presionando **F1** cuando se abre un cuadro de diálogo de [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+Esta sección contiene temas de Ayuda contextual para [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Al trabajar en [!INCLUDE[vs2010](../includes/vs2010-md.md)] , puede tener acceso a estos temas desde la interfaz de usuario presionando **F1** cuando [!INCLUDE[wfd2](../includes/wfd2-md.md)] se abre un cuadro de diálogo.
 
  Esta sección también contiene varios temas dedicados a la navegación y mensajes de error.
 
@@ -29,13 +29,13 @@ Esta sección contiene temas de Ayuda contextual para [!INCLUDE[wfd1](../include
 
  [Cuadro de diálogo Definición de CorrelatesOn](../workflow-designer/correlateson-definition-dialog-box.md)
 
- [Cuadro de diálogo Agregar CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md)
+ [Agregar CorrelationInitializers (cuadro de diálogo)](../workflow-designer/add-correlationinitializers-dialog-box.md)
 
  [Cuadros de diálogo Agregar parámetros y Agregar argumentos](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)
 
  [Cuadro de diálogo Editor de colección de tipos](../workflow-designer/type-collection-editor-dialog-box.md)
 
- [Cuadro de diálogo Definición de contenido](../workflow-designer/content-definition-dialog-box.md)
+ [Definición de contenido (cuadro de diálogo)](../workflow-designer/content-definition-dialog-box.md)
 
  [Cuadro de diálogo Inicializar correlación](../workflow-designer/initialize-correlation-dialog-box.md)
 

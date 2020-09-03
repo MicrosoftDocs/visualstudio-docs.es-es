@@ -54,10 +54,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23e4deba53288383a569f6da6e14d27f723825ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657383"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Herramientas de conjunto de datos en Visual Studio
@@ -79,9 +79,9 @@ NOTA]
 
 - Especifique las relaciones entre las tablas para que las claves externas se controlen correctamente. Para obtener más información, vea [rellenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
-- Use el **Asistente para configuración de TableAdapter** para especificar la consulta o el procedimiento almacenado que rellenará el conjunto de datos y las operaciones de base de datos (actualización, eliminación, etc.) que se van a implementar. Para obtener más información, consulte estos temas:
+- Use el **Asistente para configuración de TableAdapter** para especificar la consulta o el procedimiento almacenado que rellenará el conjunto de datos y las operaciones de base de datos (actualización, eliminación, etc.) que se van a implementar. Para más información, consulte los temas siguientes:
 
-  - [Llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Rellenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
   - [Editar datos en conjuntos de datos](../data-tools/edit-data-in-datasets.md)
 
@@ -89,7 +89,7 @@ NOTA]
 
   - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
 
-- Consulte y busque en los datos del conjunto de datos. Para obtener más información, vea [consultas de conjuntos](../data-tools/query-datasets.md)de datos. [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] habilita [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sobre los datos de un objeto <xref:System.Data.DataSet>. Para más información, vea [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Consulte y busque en los datos del conjunto de datos. Para obtener más información, vea [consultas de conjuntos](../data-tools/query-datasets.md)de datos. [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] habilita [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sobre los datos de un <xref:System.Data.DataSet> objeto. Para más información, vea [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Utilice la ventana **orígenes de datos** para enlazar los controles de la interfaz de usuario al conjunto de datos o sus columnas individuales, y para especificar las columnas que son editables por el usuario. Para obtener más información, vea [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
@@ -99,5 +99,5 @@ NOTA]
 ## <a name="datasets-and-xml"></a>Conjuntos de valores y XML
  Para obtener información sobre la conversión de conjuntos de datos a y desde XML, vea [leer datos XML en un conjunto de datos](../data-tools/read-xml-data-into-a-dataset.md) y [guardar un conjunto de datos como XML](../data-tools/save-a-dataset-as-xml.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

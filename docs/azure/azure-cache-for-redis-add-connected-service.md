@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643280"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Agregue caché de Azure para Redis mediante Visual Studio Servicios conectados
@@ -34,7 +34,7 @@ La funcionalidad del servicio conectado agrega todo el código de conexión y la
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En Visual Studio para Mac, vea [Servicios conectados en Visual Studio para Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Visual Studio con la carga de trabajo de Azure instalada.
 - Proyecto de uno de los tipos admitidos
@@ -51,7 +51,7 @@ La funcionalidad del servicio conectado agrega todo el código de conexión y la
 
 1. En la página **Agregar dependencia** , seleccione **caché de Azure para Redis**.
 
-    ![Agregar caché de Azure para Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
+    ![Adición de Azure Cache for Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
 
     Si aún no ha iniciado sesión, inicie sesión en su cuenta de Azure. Si no tiene una cuenta de Azure, puede registrarse para obtener una [evaluación gratuita](https://azure.microsoft.com/account/free).
 

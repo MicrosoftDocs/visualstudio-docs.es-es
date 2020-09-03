@@ -8,10 +8,10 @@ ms.date: 03/06/2020
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar inventarios de preproducción
 ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232756"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario de entorno de preproducción

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 090aeb83f6d0480c511acd808498953ae6c01940
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851100"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
@@ -23,9 +23,9 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
 
  Acaba de compilar algo que funciona y, aunque todavía no está terminado, ya es capaz de cargar una imagen. Antes de agregar un comentario al código y probarlo, dedique un tiempo a revisar los conceptos del código, porque los utilizará con frecuencia:
 
-- Al hacer doble clic en el botón **Show a picture** (Mostrar una imagen) en el Diseñador de Windows Forms, el IDE agregó automáticamente un *método* al código del programa.
+- Al hacer doble clic en el botón **Mostrar una imagen** de diseñador de Windows Forms, el IDE agrega automáticamente un *método* al código del programa.
 
-- Los métodos permiten organizar el código: son la manera de agrupar las partes del código.
+- Los métodos sirven para organizar el código: Son la forma de agrupar el código.
 
 - Casi siempre, un método realiza una cantidad reducida de acciones en un orden concreto; por ejemplo, el método `showButton_Click()` muestra un cuadro de diálogo y, a continuación, carga una imagen.
 
@@ -43,9 +43,9 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita ningún punto y coma en Visual Basic). La instrucción anterior indica al control `PictureBox` que cargue el archivo que el usuario seleccionó con el componente **OpenFileDialog** .
+   Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita indicar el signo de punto y coma en Visual Basic.) La instrucción anterior ordena al control `PictureBox` que cargue el archivo que el usuario ha seleccionado con el componente **OpenFileDialog**.
 
-  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 5 o el](https://msdn.microsoft.com/vbasic/gg315356.aspx) [tutorial 1: C# crear un visor de imágenes en-vídeo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 5 o el](https://msdn.microsoft.com/vbasic/gg315356.aspx) [tutorial 1: crear un visor de imágenes en C# (vídeo 5)](https://msdn.microsoft.com/vcsharp/gg278413.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-add-comments"></a>Para agregar comentarios
 
@@ -55,14 +55,14 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]
 
     > [!NOTE]
-    > El controlador de eventos Click del botón **showButton** ya está completado y funciona. Ha empezado a escribir código, comenzando por una instrucción `if`. Una instrucción `if` es la manera de ordenar al programa: "Compruebe esto y, si se cumple, realice estas acciones". En este caso, le está diciendo al programa que abra el cuadro de diálogo **Abrir archivo** y que, si el usuario selecciona un archivo y elige el botón **Aceptar**, cargue ese archivo en PictureBox.
+    > El controlador de eventos Click del botón **showButton** ya está completado y funciona. Ha empezado a escribir código, comenzando por una instrucción `if`. Una instrucción `if` es la manera de ordenar al programa: "Compruebe esto y, si se cumple, realice estas acciones". En este caso, se indica al programa que abra el cuadro de diálogo **Abrir archivo** y, si el usuario selecciona un archivo y elige el botón **Aceptar** , carga ese archivo en el control PictureBox.
 
     > [!TIP]
     > El IDE se ha creado para facilitar la tarea de escribir código. Los *fragmentos de código* constituyen una manera de conseguirlo. Un fragmento de código es un acceso directo que se expande para crear un bloque pequeño de código.
     >
-    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas**, **Administrador de fragmentos de código**. En Visual C#, el fragmento de código `if` está en **Visual C#** . En Visual Basic, los fragmentos de código `if` están en **Condicionales y bucles**, **Code Patterns** (Patrones de código). Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.
+    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas**, **Administrador de fragmentos de código**. En Visual C#, el fragmento de código `if` está en **Visual C#**. En Visual Basic, los fragmentos de código `if` están en **Condicionales y bucles**, **Code Patterns** (Patrones de código). Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.
     >
-    >  Para activar un fragmento de código mientras está especificando el código, escríbalo y elija la tecla TAB. Muchos fragmentos de código aparecen en la ventana **IntelliSense**, motivo por el cual la tecla TAB se elige dos veces: la primera para seleccionar el fragmento de código en la ventana **IntelliSense** y la segunda para indicarle al IDE que lo use. (IntelliSense admite el fragmento de código `if`, pero no el fragmento de código `ifelse`.)
+    >  Para activar un fragmento de código mientras está especificando el código, escríbalo y elija la tecla TAB. Muchos fragmentos de código aparecen en la ventana **IntelliSense** , motivo por el cual la tecla Tab se elige dos veces: la primera para seleccionar el fragmento de código en la ventana **IntelliSense** y, a continuación, para indicar al IDE que use el fragmento de código. (IntelliSense admite el fragmento de código `if`, pero no el fragmento de código `ifelse`.)
 
 2. Guarde el programa antes de ejecutarlo, para ello, elija el botón de la barra de herramientas **Guardar todo**, que se muestra a continuación.
 
@@ -76,12 +76,12 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
 
 ### <a name="to-test-your-program"></a>Para probar el programa
 
-1. Elija la tecla F5 o el botón de la barra de herramientas **Iniciar depuración** .
+1. Elija la tecla F5 o el botón de la barra de herramientas **Iniciar depuración**.
 
 2. Elija el botón **Show a picture** (Mostrar una imagen) para ejecutar el código que acaba de escribir. Primero, el programa abre un cuadro de diálogo **Abrir archivo**. Compruebe que los filtros aparecen en la lista desplegable **Tipo de archivo** en la parte inferior del cuadro de diálogo. A continuación, navegue hasta una imagen y ábrala. Normalmente, encontrará imágenes de ejemplo que se distribuyen con el sistema operativo Windows en la carpeta **Mis documentos**, dentro de la carpeta **Mis imágenes\Imágenes de muestra**.
 
     > [!NOTE]
-    > Si no ve ninguna imagen en el cuadro de diálogo **Select a picture file** (Seleccionar un archivo de imagen), asegúrese de que el filtro "Todos los archivos (*.\*)" esté seleccionado en la lista desplegable situada en la parte inferior derecha del cuadro de diálogo.
+    > Si no ve ninguna imagen en el cuadro de diálogo **seleccionar un archivo de imagen** , asegúrese de que el filtro "todos los archivos (*. \* )" esté seleccionado en la lista desplegable situada en la parte inferior derecha del cuadro de diálogo.
 
 3. Cargue una imagen y esta aparecerá en el control PictureBox. A continuación intente cambiar el tamaño del formulario arrastrando los bordes. Como el control PictureBox está acoplado dentro de un control TableLayoutPanel, que a su vez está acoplado en el formulario, el ancho del área de imagen se ajustará al ancho del formulario y el alto ocupará el 90 por ciento superior del formulario. Por este motivo hemos utilizado los contenedores TableLayoutPanel y FlowLayoutPanel: mantienen el tamaño del formulario correcto cuando el usuario lo modifica.
 
@@ -89,6 +89,6 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al paso siguiente del tutorial, vea [Paso 10: Escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Para ir al siguiente paso del tutorial, vea [paso 10: escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Para volver al paso anterior del tutorial, vea [paso 8: escribir código para el controlador de eventos del botón Mostrar una imagen](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::GetProgram ? Microsoft Docs
+title: 'IDebugPortEx2:: GetProgram | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f1f9dea8706b8075b460b813d2dc58a916198d37
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725090"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
@@ -42,9 +42,9 @@ int GetProgram( 
 ```
 
 ## <a name="parameters"></a>Parámetros
-`pProgramNode`[en] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo del programa.
+`pProgramNode` de Un objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el nodo del programa.
 
-`ppProgram`[fuera] Devuelve un [iDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa asociado con el nodo de programa.
+`ppProgram` enuncia Devuelve un objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa asociado al nodo de programa.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

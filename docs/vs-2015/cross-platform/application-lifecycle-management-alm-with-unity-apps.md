@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 90efd4e72ea172822e0bcc424bdbbc4bc7589098
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233279"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con aplicaciones de Unity
@@ -41,7 +41,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 ## <a name="modeling"></a>Modelado  
  Vínculo de referencia: **[Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)**  
   
- Comentario general: aunque estas características de diseño son independientes del lenguaje de codificación o funcionan con lenguajes .NET como C#, operan en un paradigma de aplicaciones tradicional con jerarquías de objetos y relaciones de clases. Diseñar un juego en Unity implica todo un paradigma diferente, como por ejemplo, relaciones de objetos gráficos, sonidos, sombreadores y scripts. Por este motivo, las herramientas del diagrama de modelado de Visual Studio no son especialmente relevantes para la totalidad de un proyecto de Unity. Posiblemente se podrían usar para administrar las relaciones entre scripts C#, pero eso es solo una parte del conjunto.  
+ Comentario general: Aunque estas características de diseño son independientes del lenguaje de codificación o trabajan con lenguajes .NET como C#, operan en un paradigma de aplicaciones tradicional con jerarquías de objetos y relaciones de clases. Diseñar un juego en Unity implica todo un paradigma diferente, como por ejemplo, relaciones de objetos gráficos, sonidos, sombreadores y scripts. Por este motivo, las herramientas del diagrama de modelado de Visual Studio no son especialmente relevantes para la totalidad de un proyecto de Unity. Posiblemente se podrían usar para administrar las relaciones entre scripts C#, pero eso es solo una parte del conjunto.  
   
 |Característica|Compatible con Unity|Comentarios adicionales|  
 |-------------|--------------------------|-------------------------|  
@@ -83,7 +83,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |Compilar definiciones con scripts anteriores y posteriores|Sí|También se puede configurar una definición de compilación personalizada que use la línea de comandos de Unity para ejecutar una compilación en el caso de los scripts previos y posteriores a la compilación.|  
 |Integración continua, incluidas entradas validadas|Sí|Entradas validadas para TFVC solo cuando GIT funciona en un modelo de solicitud de extracción en lugar de entradas.|  
   
-## <a name="testing"></a>Pruebas  
+## <a name="testing"></a>Prueba  
  Vínculo de referencia: **[Testing the application (Probar la aplicación)](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Característica|Compatible con Unity|Comentarios adicionales|  
@@ -92,19 +92,19 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |Pruebas manuales|Sí||  
 |Administrador de pruebas (grabar y reproducir pruebas)|Dispositivos Windows y emuladores de Android únicamente||  
 |Cobertura de código|N/D|No aplicable, ya que las pruebas unitarias tienen lugar en Unity y no en Visual Studio, vea más adelante.|  
-|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|En Unity, pero no en Visual Studio|Unity proporciona su propio marco de pruebas unitarias como parte de [Unity Test Tools (Herramientas de pruebas de Unity)](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Tienda de activos de Unity). Los resultados de las pruebas unitarias se notifican en Unity y no aparecen en Visual Studio.|  
-|[Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)|Sin |Las pruebas de interfaz de usuario codificadas se basan en controles legibles de la interfaz de usuario de la aplicación; las aplicaciones de Unity son gráficas por naturaleza y, por tanto, las herramientas de pruebas de interfaz de usuario codificadas no pueden leer el contenido.|  
+|[Prueba unitaria del código](../test/unit-test-your-code.md)|En Unity, pero no en Visual Studio|Unity proporciona su propio marco de pruebas unitarias como parte de [las herramientas de prueba de Unity](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (almacén de recursos de Unity). Los resultados de las pruebas unitarias se notifican en Unity y no aparecen en Visual Studio.|  
+|[Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|No|Las pruebas de interfaz de usuario codificadas se basan en controles legibles de la interfaz de usuario de la aplicación; las aplicaciones de Unity son gráficas por naturaleza y, por tanto, las herramientas de pruebas de interfaz de usuario codificadas no pueden leer el contenido.|  
   
 ## <a name="improve-code-quality"></a>Mejorar la calidad del código  
- Vínculo de referencia: **[Mejorar la calidad del código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Vínculo de referencia: ** [mejorar la calidad del código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Característica|Compatible con Unity|Comentarios adicionales|  
 |-------------|--------------------------|-------------------------|  
 |[Analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|  
 |[Buscar código duplicado mediante la detección de clones de código](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sí|Se puede analizar el código de script de C# en Visual Studio.|  
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|  
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|Sin |Use el [generador de perfiles de Unity](https://docs.unity3d.com/Manual/Profiler.html) (sitio web de Unity).|  
-|[Analizar problemas de memoria de .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Sin |Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](https://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|  
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|No|Use el [generador de perfiles de Unity](https://docs.unity3d.com/Manual/Profiler.html) (sitio web de Unity).|  
+|[Analizar problemas de memoria de .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](https://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|  
   
 ## <a name="release-management"></a>Administración de versiones  
  Vínculo de referencia: **[Automate deployments with Release Management (Automatizar implementaciones con Release Management)](https://msdn.microsoft.com/library/vs/alm/release/overview)**  

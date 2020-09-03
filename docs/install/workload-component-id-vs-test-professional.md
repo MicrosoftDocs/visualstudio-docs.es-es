@@ -17,10 +17,10 @@ ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
 ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81276219"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Directorio de componentes de Visual Studio Test Professional

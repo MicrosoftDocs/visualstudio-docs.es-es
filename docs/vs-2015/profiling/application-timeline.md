@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f899e081377ecc1a56e141f8793d6f707df2b69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534087"
 ---
 # <a name="application-timeline"></a>Escala de tiempo de la aplicación
@@ -40,7 +40,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 > [!NOTE]
 > Puede recopilar y analizar datos de uso de CPU y de consumo de energía junto con los datos de la **Escala de tiempo de aplicación** . Consulte [ejecutar herramientas de generación de perfiles sin depuración](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-## <a name="collect-application-timeline-data"></a><a name="BKMK_Collect_Timeline_data_for_your_app"></a>Recopilación de datos de Escala de tiempo de la aplicación  
+## <a name="collect-application-timeline-data"></a><a name="BKMK_Collect_Timeline_data_for_your_app"></a> Recopilación de datos de Escala de tiempo de la aplicación  
  Puede generar perfiles de capacidad de respuesta de la aplicación en su máquina local, en un dispositivo conectado, en un simulador o emulador de Visual Studio o un dispositivo remoto. Consulte [ejecutar herramientas de generación de perfiles sin depuración](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
@@ -65,7 +65,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
      ![Informe del generador de perfiles de escala de tiempo](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
-## <a name="analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a>Analizar datos de generación de perfiles de escala de tiempo  
+## <a name="analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a> Analizar datos de generación de perfiles de escala de tiempo  
  Después de obtener los datos de la generación de perfiles, puede seguir estos pasos para iniciar el análisis:  
   
 1. Examine la información de los gráficos **Utilización del subproceso de IU** y **Rendimiento visual (FPS)** y, a continuación, use las barras de navegación de la escala de tiempo para seleccionar el intervalo de tiempo que desea analizar.  
@@ -97,7 +97,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
  Se admiten los siguientes eventos:  
   
-|NOMBRE|Descripción|  
+|Nombre|Descripción|  
 |-|-|  
 |**Análisis**|Tiempo invertido en analizar archivos XAML y crear objetos.<br /><br /> Si se expande un nodo **Análisis** en **Detalles de la escala de tiempo** , se muestra la cadena de dependencia de todos los archivos XAML que se han analizado como resultado del evento de raíz. Esto le permitirá identificar análisis de archivos y creación de objetos innecesarios en escenarios sensibles al rendimiento y optimizarlos.|  
 |**Diseño**|En aplicaciones grandes, pueden mostrarse miles de elementos en la pantalla al mismo tiempo. Esto podría producir una baja tasa de imágenes por segundo en la interfaz y, por tanto, una mala capacidad de respuesta de la aplicación. El evento de diseño determina con precisión el costo de implementar estos elementos (es decir, el tiempo empleado en Arrange, Measure, ApplyTemplate y ArrangeOverride) y genera los árboles visuales que participaron en una fase de Diseño. Puede usar esta visualización para determinar qué árboles lógicos debe eliminar, o para evaluar otros mecanismos de aplazamiento que optimicen la fase de diseño.|  
@@ -112,7 +112,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 #### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> Personalizar detalles de escala de tiempo  
  Utilice la barra de herramientas **Detalles de la escala de tiempo** para ordenar, filtrar y especificar las anotaciones de las entradas de la vista **Detalles de la escala de tiempo** .  
   
-|NOMBRE|Descripción|  
+|Nombre|Descripción|  
 |-|-|  
 |**Ordenar por**|Ordenar por hora de inicio o longitud de los eventos.|  
 |![Agrupación de eventos por marco](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|Agrega o quita una categoría **Marco** de nivel superior que agrupa eventos por marco.|  
