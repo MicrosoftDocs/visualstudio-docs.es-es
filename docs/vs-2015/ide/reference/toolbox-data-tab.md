@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9349745eeee24f2f8b1e62eb2b01bd75273c86d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658597"
 ---
 # <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
@@ -31,12 +31,12 @@ Muestra objetos de datos que puede agregar a formularios y componentes. La pesta
 ## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario
  Para ir directamente a la página de referencia de .NET Framework para un componente, presione **F1** en el elemento del **cuadro de herramientas** o en el elemento de componente en la bandeja del diseñador.
 
-|Name|DESCRIPCIÓN|
+|Name|Description|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|Agrega una instancia de un conjunto de datos con o sin tipo al formulario o componente. Cuando arrastra este objeto en un diseñador, muestra un cuadro de diálogo que le permite seleccionar una clase de un conjunto de datos con tipo existente o especificar que quiere crear un conjunto de datos sin tipo y en blanco. **Nota:** No use el objeto <xref:System.Data.DataSet> en el **cuadro de herramientas** para crear una clase y un esquema de conjunto de datos con tipo. Para obtener más información, vea [Crear y configurar conjuntos de datos](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Proporciona una forma eficaz y flexible de mostrar datos en formato de tabla.|
 |<xref:System.Windows.Forms.BindingSource>|Simplifica el proceso de enlazar controles a un origen de datos subyacente.|
 |<xref:System.Windows.Forms.BindingNavigator>|Representa la interfaz de usuario de navegación y manipulación para los controles de un formulario que están enlazados a datos.|
 
-## <a name="see-also"></a>Otras referencias
- [Tutoriales de datos ](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4) [Bind controles de Windows Forms a datos en Visual Studio ](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) [Preparing la aplicación para recibir datos ](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad) controles de [Bind a datos en Visual Studio ](../../data-tools/bind-controls-to-data-in-visual-studio.md) datos de [Validating](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)
+## <a name="see-also"></a>Consulte también
+ [Tutoriales de datos](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4) [enlazar controles de Windows Forms a datos en Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) [preparar la aplicación para recibir](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad) [controles de enlace de datos a los datos de la validación de datos en Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md) [Validating Data](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

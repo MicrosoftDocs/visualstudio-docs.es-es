@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ea2fdf1f47385a9be26fa65a93b9104b2d864079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658023"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animar objetos en el Diseñador XAML
@@ -29,7 +29,7 @@ Cree animaciones cortas para el movimiento y el fundido de objetos.
 
  Aprenda a crear animaciones con estos vídeos.
 
-|Vea un vídeo corto:|Vea cómo:|
+|Vea un vídeo corto:|Obtenga información sobre cómo:|
 |--------------------------|-------------------|
 |![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [crear escalas de tiempo](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Crear una escala de tiempo y trabajar con objetos en la escala de tiempo.|
 |![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [Agregar fotogramas clave y repetir la animación](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Agregar fotogramas clave y establecer en ellos propiedades. A continuación, ejecutar la animación y ver la transición fluida de los objetos.|
@@ -40,5 +40,5 @@ Cree animaciones cortas para el movimiento y el fundido de objetos.
 |![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [animar el botón](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|Crear efectos interesantes que aparecen en un botón cuando el usuario apunta a él.|
 |![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [crear animación y trabajar con aceleración](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Animar efectos que aparecen cuando el usuario presiona un botón en la imagen de una calculadora.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

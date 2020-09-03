@@ -1,5 +1,5 @@
 ---
-title: Habilitación de un programa que se desea depurar | Microsoft Docs
+title: Habilitar la depuración de un programa | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,33 +11,33 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b0f0331430a1cc625dee2a7029742fd62d67fb56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155375"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Habilitación de un programa que se va a depurar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Antes de que el motor de depuración (DE) puede depurar un programa, primero debe iniciar la DE o adjuntarlo a un programa existente.  
+Antes de que el motor DE depuración (DE) pueda depurar un programa, primero debe iniciar el DE o adjuntarlo a un programa existente.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Obtención de un puerto](../../extensibility/debugger/getting-a-port.md)  
- Se explica cómo obtener un puerto como el primer paso para habilitar un programa que se desea depurar.  
+ Describe cómo obtener un puerto como primer paso para habilitar un programa que se va a depurar.  
   
  [Registro del programa](../../extensibility/debugger/registering-the-program.md)  
- Explica el paso siguiente para habilitar un programa que se desea depurar: registrarlo con el puerto. Una vez registrado, se puede depurar el programa mediante el proceso de adjuntar o depuración just-in-time (JIT).  
+ Explica el siguiente paso para habilitar un programa que se va a depurar: registrarlo con el puerto. Una vez registrado, el programa se puede depurar mediante el proceso de asociar o la depuración Just-in-Time (JIT).  
   
  [Asociación al programa](../../extensibility/debugger/attaching-to-the-program.md)  
- Explica el siguiente paso: asociar el depurador al programa.  
+ Explica el siguiente paso: adjuntar el depurador al programa.  
   
- [Conexión de inicio](../../extensibility/debugger/launch-based-attachment.md)  
- Describe los datos adjuntos en función de inicio para un programa, que es automático al iniciarse por el SDM.  
+ [Asociación basada en el inicio](../../extensibility/debugger/launch-based-attachment.md)  
+ Describe los datos adjuntos basados en el inicio de un programa, que es automático al iniciarlo el SDM.  
   
  [Envío de los eventos necesarios](../../extensibility/debugger/sending-the-required-events.md)  
- Le guiará por los eventos necesarios al crear un motor de depuración (DE) y conectarlo a un programa.  
+ Le guía por los eventos necesarios al crear un motor DE depuración (DE) y asociarlo a un programa.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Creación de un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Define un motor de depuración (DE) y describe los servicios implementados a través de las interfaces DE y cómo pueden provocar al depurador en la transición entre distintos modos de funcionamiento.
+ Define un motor DE depuración (DE) y describe los servicios implementados a través de las interfaces DE y el modo en que el depurador puede pasar de un modo operativo a otro.

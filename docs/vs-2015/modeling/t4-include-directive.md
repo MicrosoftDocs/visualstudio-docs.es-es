@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 669be50e11d3bf17d617c361b63f807149dbc823
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658575"
 ---
 # <a name="t4-include-directive"></a>Directiva Include T4
@@ -27,9 +27,9 @@ En una plantilla de texto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` pueden se absoluto o relativo al archivo de plantilla actual.
+- `filePath` puede ser absoluto o relativo al archivo de plantilla actual.
 
-   Además, las extensiones concretas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pueden especificar sus propios directorios para buscar archivos de inclusión. Por ejemplo, si ha instalado el SDK de visualización y modelado (herramientas de DSL), se agrega la siguiente carpeta a la lista de inclusión: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
+   Además, las extensiones concretas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pueden especificar sus propios directorios para buscar archivos de inclusión. Por ejemplo, si ha instalado el SDK de visualización y modelado (herramientas de DSL), se agrega la siguiente carpeta a la lista de inclusión: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates` .
 
    Estas carpetas de inclusión adicionales podrían depender de la extensión de archivo del archivo para incluir. Por ejemplo, la carpeta de inclusión de las Herramientas ADSL solo es accesible para la inclusión de archivos que tienen la extensión de archivo `.tt`
 
@@ -41,7 +41,7 @@ En una plantilla de texto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede
 
 - El nombre de un archivo incluido no tiene que utilizar la extensión `".tt"`.
 
-   Puede que desee utilizar otra extensión, como `".t4"`, para los archivos incluidos. Esto se debe a que, cuando se agrega un archivo `.tt` a un proyecto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] establece automáticamente su propiedad **herramienta personalizada** en `TextTemplatingFileGenerator`. Normalmente no desea que los archivos incluidos se transformen individualmente.
+   Puede que desee utilizar otra extensión, como `".t4"`, para los archivos incluidos. Esto se debe a que, al agregar un `.tt` archivo a un proyecto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] establece automáticamente su propiedad **herramienta personalizada** en `TextTemplatingFileGenerator` . Normalmente no desea que los archivos incluidos se transformen individualmente.
 
    Por otra parte, debe tener en cuenta que en algunos casos, la extensión de archivo afecta a las carpetas adicionales que se buscarán para archivos de inclusión. Esto podría ser importante al tener un archivo incluido que incluye otros archivos.
 
@@ -49,7 +49,7 @@ En una plantilla de texto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede
 
 - Use `once="true"` para garantizar que una plantilla se incluye una sola vez, aunque se invoque desde varios archivos de inclusión.
 
-   Esta característica facilita la creación de una biblioteca de fragmentos de código T4 reutilizables que se pueden incluir en, sin preocuparse de que algún otro fragmento de código ya los haya incluido.  Por ejemplo, supongamos que tiene una biblioteca de fragmentos de código muy específicos que se ocupan de la C# generación y el procesamiento de plantillas.  A su vez, se usan en algunas otras utilidades específicas de la tarea, como la generación de excepciones, que puede usar a partir de cualquier plantilla más específica de la aplicación. Si dibuja el gráfico de dependencias, verá que algunos fragmentos de código se incluyeron varias veces. Sin embargo, el parámetro `once` evita las inclusiones siguientes.
+   Esta característica facilita la creación de una biblioteca de fragmentos de código T4 reutilizables que se pueden incluir en, sin preocuparse de que algún otro fragmento de código ya los haya incluido.  Por ejemplo, supongamos que tiene una biblioteca de fragmentos de código muy específicos que se ocupan del procesamiento de plantillas y de la generación de C#.  A su vez, se usan en algunas otras utilidades específicas de la tarea, como la generación de excepciones, que puede usar a partir de cualquier plantilla más específica de la aplicación. Si dibuja el gráfico de dependencias, verá que algunos fragmentos de código se incluyeron varias veces. Sin embargo, el parámetro `once` evita las inclusiones siguientes.
 
   **MyTextTemplate.tt:**
 
@@ -65,7 +65,7 @@ Output message 5 (from top template).
 
 ```
 
- **TextFile1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -82,7 +82,7 @@ void GenerateMessage(int n)
 
 ```
 
- **En textfile2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).
@@ -97,7 +97,7 @@ void AnotherGenerateMessage(int n)
 
 ```
 
- **El archivo generado resultante, MyTextTemplate. txt:**
+ **El archivo generado resultante, MyTextTemplate.txt:**
 
 ```
 Output message 1 (from top template).
@@ -112,7 +112,7 @@ Output message 5 (from top template).
 
 ```
 
-## <a name="msbuild"></a>Usar las propiedades del proyecto en MSBuild y Visual Studio
+## <a name="using-project-properties-in-msbuild-and-visual-studio"></a><a name="msbuild"></a> Usar las propiedades del proyecto en MSBuild y Visual Studio
  Aunque puede usar macros de Visual Studio como $ (SolutionDir) en una directiva include, estas macros no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.
 
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myIncludeFolder`:

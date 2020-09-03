@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657808"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Trabajar con conjuntos de datos en aplicaciones de n niveles
@@ -61,8 +61,8 @@ Las aplicaciones de datos con N niveles * son aplicaciones centradas en datos qu
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-- [Introducción a las aplicaciones de datos con n capas](../data-tools/n-tier-data-applications-overview.md)
+- [Información general sobre las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
-- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Aplicaciones de n niveles y remotas con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

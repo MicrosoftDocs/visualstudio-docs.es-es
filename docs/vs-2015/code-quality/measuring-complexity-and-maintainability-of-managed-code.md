@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6aaddd47a20623ee21855d4c7bb86e91b2796d53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658071"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Medir la complejidad y el mantenimiento del código administrado
@@ -33,7 +33,7 @@ La mayor complejidad de las aplicaciones de software modernas también aumenta l
 
  Los desarrolladores pueden usar [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] para generar datos de métricas de código que midan la complejidad y el mantenimiento de su código administrado. Se pueden generar datos de métricas de código para una solución completa o un único proyecto.
 
- En esta sección se describe cómo generar y usar métricas de código en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ En esta sección se describe cómo generar y usar métricas de código en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="in-this-section"></a>En esta sección
  [Valores de métrica de código](../code-quality/code-metrics-values.md)
@@ -48,5 +48,5 @@ La mayor complejidad de las aplicaciones de software modernas también aumenta l
 
  [Cómo: crear un elemento de trabajo basado en un resultado](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Solución de problemas de [métricas de código problemas](../code-quality/troubleshooting-code-metrics-issues.md) al [realizar tareas comunes de desarrollo](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

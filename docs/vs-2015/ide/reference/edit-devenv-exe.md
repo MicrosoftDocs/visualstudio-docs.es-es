@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c81f59f2dadf535af4e9a76949a29fd1355c33f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657743"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -35,7 +35,7 @@ Devenv /edit [file1[ file2]]
 
  `file2` Opcional. Uno o más archivos adicionales que se van a abrir en la instancia existente de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Si no se especifica ningún archivo y ya hay una instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], la instancia existente de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] recibe el foco. Si no se especifica ningún archivo y no hay ninguna instancia existente de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], se crea una instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] con un diseño de ventanas simplificado.
 
  Si la instancia existente de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] está en un estado modal, por ejemplo, si el cuadro de diálogo [Opciones](../../ide/reference/options-dialog-box-visual-studio.md) está abierto, el archivo se abrirá en la instancia existente cuando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] salga del estado modal.
@@ -47,5 +47,5 @@ Devenv /edit [file1[ file2]]
 devenv /edit MyFile.cs
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte también
+ [Modificadores de línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md)

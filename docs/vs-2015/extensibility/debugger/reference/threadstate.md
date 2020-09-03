@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Documentos de Microsoft
+title: THREADSTATE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6e2f6e8011b001c88743871a137ebc0b8cd7c26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204796"
 ---
 # <a name="threadstate"></a>THREADSTATE
@@ -49,13 +49,13 @@ public enum enum_THREADSTATE { 
   
 ## <a name="members"></a>Miembros  
  THREADSTATE_RUNNING  
- Indica que se está ejecutando el subproceso.  
+ Indica que el subproceso se está ejecutando.  
   
  THREADSTATE_STOPPED  
  Indica que el subproceso se ha detenido debido a un punto de interrupción.  
   
  THREADSTATE_FRESH  
- Indica que el subproceso se ha creado pero todavía no ejecuta código.  
+ Indica que se ha creado el subproceso, pero que aún no se está ejecutando código.  
   
  THREADSTATE_DEAD  
  Indica que el subproceso está inactivo.  
@@ -63,16 +63,16 @@ public enum enum_THREADSTATE { 
  THREADSTATE_FROZEN  
  Indica que el subproceso está inmovilizado (no se puede realizar ninguna ejecución).  
   
-## <a name="remarks"></a>Comentarios  
- Utilizado para la `dwThreadState` campo de la [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estructura.  
+## <a name="remarks"></a>Observaciones  
+ Se usa para el `dwThreadState` campo de la estructura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

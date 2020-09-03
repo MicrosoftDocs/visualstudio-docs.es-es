@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d375b64bbc877cb377157f13b3e4cfa7c7cf1592
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547880"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Revisar los nombres de campos erróneos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
 |Identificador de comprobación|CA1504|
-|Categoría|Microsoft. mantenibilidad|
+|Category|Microsoft. mantenibilidad|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

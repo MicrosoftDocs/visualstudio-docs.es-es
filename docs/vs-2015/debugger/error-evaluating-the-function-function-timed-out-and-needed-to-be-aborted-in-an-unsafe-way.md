@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a27bf67770eef770fddef0301a804e6c45579539
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387127"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Error: El tiempo de espera de evaluación de la función &#39;function&#39; se agotó y tuvo que anularse de forma no segura
@@ -21,7 +21,7 @@ ms.locfileid: "86387127"
 
 Texto completo del mensaje: El tiempo de espera de evaluación de la función 'function' se agotó y tuvo que anularse de forma no segura, lo que puede haber dañado el proceso de destino. 
 
-Para que sea más fácil inspeccionar el estado de los objetos .NET, el depurador fuerza automáticamente el proceso depurado para que ejecute código adicional (normalmente métodos de captador de propiedad y funciones ToString). En la mayoría de los escenarios, estas funciones terminan rápidamente y hacen que la depuración sea mucho más fácil. Sin embargo, el depurador no ejecuta la aplicación en un espacio aislado. Como resultado, un captador de propiedad o un método ToString que llama a una función nativa que deja de responder puede dar lugar a tiempos de espera largos que no se pueden recuperar. Si aparece este mensaje de error, eso es lo que ha ocurrido.
+Para que sea más fácil inspeccionar el estado de los objetos .NET, el depurador fuerza automáticamente el proceso depurado para que ejecute código adicional (normalmente métodos de captador de propiedad y funciones ToString). En la mayoría de los escenarios, estas funciones terminan rápidamente y hacen que la depuración sea mucho más fácil. Sin embargo, el depurador no ejecuta la aplicación en un espacio aislado. Como resultado, un método de captador de propiedad o ToString que llame a una función nativa que deja de responder puede dar lugar a tiempos de espera largos que no se pueden recuperar. Si aparece este mensaje de error, eso es lo que ha ocurrido.
  
 Una razón habitual por la que se produce este problema es que, cuando el depurador evalúa una propiedad, solo permite que se ejecute el subproceso que se está inspeccionando. Por tanto, si la propiedad está esperando a que otros subprocesos se ejecuten dentro de la aplicación depurada y está esperando de forma que el tiempo de ejecución de .NET no pueda interrumpir, se producirá este problema.
  

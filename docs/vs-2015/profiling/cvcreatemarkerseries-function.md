@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dc4af6ef3b2ffc89ec0e69a6dd63923f5c55ffe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155541"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries (Función)
@@ -61,5 +61,5 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
   
  **ANSI:** CvCreateMarkerSeriesA  
   
-## <a name="see-also"></a>Otras referencias  
- [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Consulte también  
+ [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)

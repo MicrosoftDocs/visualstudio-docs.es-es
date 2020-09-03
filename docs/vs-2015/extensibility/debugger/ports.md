@@ -12,30 +12,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73003e00fef5c37db4a702e7a4a1121600673844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153698"
 ---
 # <a name="ports"></a>Puertos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En cuanto a la arquitectura de depurador, un **puerto**:  
+En cuanto a la arquitectura del depurador, un **Puerto**:  
   
-- Se está ejecutando un contenedor para un conjunto de procesos en un servidor. Por ejemplo, un puerto podría representar una conexión a un dispositivo basado en Windows CE mediante un cable serie o a un equipo en red que no son de DCOM. Un puerto especial, llamado puerto local, contiene todos los procesos que se ejecutan en el equipo local.  
+- Es un contenedor para un conjunto de procesos que se ejecutan en un servidor. Por ejemplo, un puerto podría representar una conexión a un dispositivo basado en Windows CE mediante un cable serie o una máquina no DCOM en red. Un puerto especial, denominado puerto local, contiene todos los procesos que se ejecutan en el equipo local.  
   
 - Puede identificarse por nombre o identificador.  
   
 - Puede enumerar todos los procesos que se ejecutan en el puerto e iniciar y finalizar estos procesos.  
   
-- Se representa mediante un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz, que se crea pasando un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) argumento [agregar puerto](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
+- Se representa mediante una interfaz [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , que se crea pasando un argumento [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) a [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
-  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Proporciona un puerto predeterminado que controla todos los procesos basados en Windows, nativos y administrados. Debe implementarse un puerto personalizado para las conexiones con dispositivos externos que no están basados en Windows. Para proporcionar dichos puertos personalizados, un proveedor de puerto personalizado también debe implementarse.  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona un puerto predeterminado que controla todos los procesos basados en Windows, nativos y administrados. Se debe implementar un puerto personalizado para las conexiones con dispositivos externos que no estén basados en Windows. Para proporcionar estos puertos personalizados, también se debe implementar un proveedor de Puerto personalizado.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)   
- [Procesos](../../extensibility/debugger/processes.md)   
+ [Procese](../../extensibility/debugger/processes.md)   
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)   

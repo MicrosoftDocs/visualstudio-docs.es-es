@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6d77c7a779afcbf7bc7fc3f8fbd863aa368ee7e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658535"
 ---
 # <a name="t4-text-template-directives"></a>Directivas de plantilla de texto T4
@@ -74,7 +74,7 @@ Las directivas proporcionan instrucciones al motor de transformación de plantil
 <#@ include file="filePath" #>
 ```
 
- [Directiva T4 CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)
+ [T4 CleanUpBehavior (Directiva)](../modeling/t4-cleanupbehavior-directive.md)
 
 ```
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>

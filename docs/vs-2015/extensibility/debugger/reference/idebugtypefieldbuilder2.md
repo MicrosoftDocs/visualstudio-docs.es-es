@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 96241026afff71c061abcfae3547d25cc2166902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152873"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Extiende la **IDebugTypeFieldBuilder** para poder crear tipos de matriz.  
+Extiende el **IDebugTypeFieldBuilder** para poder crear tipos de matriz.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -28,19 +28,19 @@ Extiende la **IDebugTypeFieldBuilder** para poder crear tipos de matriz.
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder  
 ```  
   
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Esta interfaz puede obtenerse desde el proveedor de símbolos.  
+## <a name="notes-for-callers"></a>Notas para llamadores  
+ Esta interfaz se puede obtener del proveedor de símbolos.  
   
 ## <a name="methods"></a>Métodos  
- Además de los métodos en el [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) interfaz, esta interfaz implementa el método siguiente:  
+ Además de los métodos de la interfaz [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) , esta interfaz implementa el método siguiente:  
   
-|Método|DESCRIPCIÓN|  
+|Método|Descripción|  
 |------------|-----------------|  
-|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crea una matriz del tipo especificado y el tamaño.|  
+|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crea una matriz del tipo y el tamaño especificados.|  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

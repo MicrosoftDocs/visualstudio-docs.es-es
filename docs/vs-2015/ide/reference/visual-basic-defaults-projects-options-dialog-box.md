@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f08cc817fab6e81ae1160462c9b6d1221ca41160
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657874"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Valores predeterminados de Visual Basic, Proyectos, Opciones (Cuadro de diálogo)
@@ -33,9 +33,9 @@ Especifica la configuración predeterminada de las opciones de proyecto de Visua
 
  **Option Strict** Establece el valor predeterminado del compilador para que se requieran las conversiones de restricción explícitas y no se permite el enlace en tiempo de ejecución. De forma predeterminada, **Option Strict** está establecido en **Off**. Para más información, vea [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).
 
- **Option Compare** Establece el valor predeterminado del compilador para las comparaciones de cadenas: binario (distingue mayúsculas de minúsculas) o texto (no distingue mayúsculas de minúsculas). De forma predeterminada, Option Compare está establecido en **Binary**. Para más información, vea [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).
+ **Option Compare** Establece el valor predeterminado del compilador para las comparaciones de cadenas: binario (distingue mayúsculas de minúsculas) o texto (no distingue mayúsculas de minúsculas). De forma predeterminada, **Option Compare** está establecida en **Binary**. Para más información, vea [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).
 
  **Option Infer** Establece el valor predeterminado del compilador para la inferencia de tipo local. De forma predeterminada, **Option Infer** está establecido en **On** para los proyectos recién creados y en **Off** para los proyectos migrados creados en versiones anteriores de Visual Basic. Para más información, vea [/optioninfer](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md)

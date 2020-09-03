@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dd4560673259373b68b370e73a43de424fb7bdb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658477"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Solucionar problemas de extensiones de diagramas de capas
@@ -24,11 +24,11 @@ ms.locfileid: "72658477"
 
 En este tema se resuelven algunos problemas que pueden encontrarse al crear extensiones de modelo de capas.
 
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Cuando presiono F5 para depurar una extensión, los comandos, controladores de gestos, extensiones de validación o propiedades personalizadas no aparecen en los diagramas de capas de la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-vsprvs"></a>Cuando presiono F5 para depurar una extensión, los comandos, controladores de gestos, extensiones de validación o propiedades personalizadas no aparecen en los diagramas de capas de la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
 1. Abra la solución de extensión en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y, en el menú **compilar** , haga clic en **recompilar solución**.
 
-2. Presione **F5** o **Ctrl + F5** para iniciar la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Abra un diagrama de capas y pruebe la extensión.
+2. Presione **F5** o **Ctrl + F5** para iniciar la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Abra un diagrama de capas y pruebe la extensión.
 
    Continúe con el procedimiento siguiente si es necesario.
 
@@ -39,13 +39,13 @@ En este tema se resuelven algunos problemas que pueden encontrarse al crear exte
 2. Elimine la siguiente carpeta:%LocalAppData%\Microsoft\VisualStudio \\ [versión] \ComponentModelCache
 
    > [!NOTE]
-   > % LocalAppData% suele ser el nombre de *unidad: \users*\\*nombreDeUsuario*\AppData\Local.
+   > % LocalAppData *% suele ser*el nombre de \\ *usuario*\AppData\Local.
 
    Continúe con el procedimiento siguiente si es necesario.
 
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Aparece una versión anterior de mis resultados de validación o no se llama a mi método de validación.
 
-1. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en el menú **compilar** , haga clic en **limpiar solución**. Esto borra los resultados almacenados en memoria caché del análisis de validación anterior.
+1. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , en el menú **compilar** , haga clic en **limpiar solución**. Esto borra los resultados almacenados en memoria caché del análisis de validación anterior.
 
 2. Asegúrese de que las capas del modelo están asociadas a elementos de código y de que hay al menos un vínculo de dependencia en el modelo. La validación no se invoca si no hay nada que validar.
 
@@ -53,5 +53,5 @@ En este tema se resuelven algunos problemas que pueden encontrarse al crear exte
 
 4. En **source. Extension. vsixmanifest** en el proyecto de validación de capas, asegúrese de que ha agregado un elemento de **componente de MEF** y un elemento de **tipo de extensión personalizado** en **contenido**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ampliar diagramas de capas](../modeling/extend-layer-diagrams.md)

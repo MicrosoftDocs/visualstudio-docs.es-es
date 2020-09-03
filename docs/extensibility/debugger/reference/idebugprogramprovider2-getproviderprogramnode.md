@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProgramNode ? Microsoft Docs
+title: 'IDebugProgramProvider2:: GetProviderProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd8ca7d5120ba20695caef2e9021ee25869df72f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721793"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
@@ -51,28 +51,28 @@ int GetProviderProgramNode(
 
 ## <a name="parameters"></a>Parámetros
 `Flags`\
-[en] Una combinación de indicadores de la [enumeración PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) Los siguientes indicadores son típicos para esta llamada:
+de Combinación de marcas de la enumeración [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Las marcas siguientes son típicas para esta llamada:
 
-|Marca|Descripción|
+|Marcar|Descripción|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|El autor de la llamada se está ejecutando en un equipo remoto.|
+|`PFLAG_REMOTE_PORT`|El autor de la llamada se está ejecutando en la máquina remota.|
 |`PFLAG_DEBUGGEE`|El autor de la llamada se está depurando actualmente (se devolverá información adicional sobre el cálculo de referencias para cada nodo).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|El autor de la llamada estaba asociado al depurador, pero no lo inició.|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|El autor de la llamada estaba asociado pero no lo inició el depurador.|
 
 `pPort`\
-[en] El puerto en el que se ejecuta el proceso de llamada.
+de El puerto en el que se está ejecutando el proceso de llamada.
 
 `processId`\
-[en] Una [estructura AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que contiene el ID del proceso que contiene el programa en cuestión.
+de Estructura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que contiene el identificador del proceso que contiene el programa en cuestión.
 
 `guidEngine`\
-[en] GUID del motor de depuración al que está asociado el programa (si existe).
+de GUID del motor de depuración al que está asociado el programa (si existe).
 
 `programId`\
-[en] ID del programa para el que se obtiene el nodo del programa.
+de IDENTIFICADOR del programa para el que se va a obtener el nodo de programa.
 
 `ppProgramNode`\
-[fuera] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa solicitado.
+enuncia Un objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el nodo de programa solicitado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

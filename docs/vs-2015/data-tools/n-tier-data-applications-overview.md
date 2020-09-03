@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658057"
 ---
 # <a name="n-tier-data-applications-overview"></a>Información general sobre aplicaciones de datos con n capas
@@ -35,11 +35,11 @@ Las aplicaciones de datos de N niveles * son aplicaciones de datos que se divide
 
  Visual Studio contiene varias características que ayudan a los programadores a crear aplicaciones con n niveles:
 
-- El diseñador de DataSet proporciona una propiedad de **proyecto DataSet** que permite separar el conjunto de datos (capa de entidad de datos) y `TableAdapter`s (capa de acceso a datos) en proyectos discretos.
+- El diseñador de DataSet proporciona una propiedad de **proyecto DataSet** que le permite separar el conjunto de datos (capa de entidad de datos) y `TableAdapter` s (capa de acceso a datos) en proyectos discretos.
 
 - Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) proporcionan valores para generar las clases DataContext y Data en espacios de nombres independientes. Con ello se habilita la separación lógica del acceso a datos y los niveles de entidad de datos.
 
-- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) proporciona el método de <xref:System.Data.Linq.Table%601.Attach%2A> que permite reunir el DataContext de distintos niveles de una aplicación. Para obtener más información, vea [aplicaciones de N niveles y remotas con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) proporciona el <xref:System.Data.Linq.Table%601.Attach%2A> método que permite reunir el DataContext de distintos niveles de una aplicación. Para obtener más información, vea [aplicaciones de N niveles y remotas con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
 
 ## <a name="presentation-tier"></a>Nivel de presentación
  El *nivel de presentación* es el nivel en el que los usuarios interactúan con una aplicación. Normalmente, contiene también la lógica adicional de la aplicación. Los componentes típicos del nivel de presentación son los siguientes:
@@ -70,7 +70,7 @@ Las aplicaciones de datos de N niveles * son aplicaciones de datos que se divide
   El nivel intermedio se conecta normalmente con la capa de datos mediante una conexión de datos. Esta conexión de datos está almacenada normalmente en el componente de acceso a datos.
 
 ## <a name="data-tier"></a>Capa de datos
- La *capa de datos* es básicamente el servidor que almacena los datos de una aplicación (por ejemplo, un servidor que ejecuta [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).
+ La *capa de datos* es básicamente el servidor que almacena los datos de una aplicación (por ejemplo, un servidor que ejecuta [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ).
 
  Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en la capa de datos de una aplicación con n niveles.
 
@@ -83,11 +83,11 @@ Las aplicaciones de datos de N niveles * son aplicaciones de datos que se divide
 
  [Separar conjuntos de datos y TableAdapters en proyectos diferentes](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
- [Tutorial: Crear una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+ [Tutorial: Crear una aplicación de datos con n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
- [Tutorial: Agregar validación a una aplicación de datos de N niveles ](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
+ [Tutorial: Agregar validación a una aplicación de datos con n niveles](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
 
  [Aplicaciones de n niveles y remotas con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
 
-## <a name="see-also"></a>Vea también
- <xref:System.Data.Linq.ITable.Attach%2A> [Walkthrough: Crear una aplicación de datos de N niveles ](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [Actualización jerárquica](../data-tools/hierarchical-update.md) [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [Acceder a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## <a name="see-also"></a>Consulte también
+ <xref:System.Data.Linq.ITable.Attach%2A>[Tutorial: crear una aplicación de datos de N niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md) de [actualización jerárquica](../data-tools/hierarchical-update.md) [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [acceder a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

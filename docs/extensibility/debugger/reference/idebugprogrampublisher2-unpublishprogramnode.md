@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode ? Microsoft Docs
+title: 'IDebugProgramPublisher2:: UnpublishProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721577"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Quita un nodo de programa especificado de la disponibilidad a los motores de depuración (DE) y el administrador de depuración de sesión (SDM).
+Quita un nodo de programa especificado de la disponibilidad para los motores de depuración (DEs) y el administrador de depuración de sesión (SDM).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,15 +41,15 @@ int UnpublishProgramNode(
 
 ## <a name="parameters"></a>Parámetros
 `pProgramNode`\
-[en] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa que se quita.
+de Un objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el nodo de programa que se va a quitar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Una vez eliminado, el nodo del programa ya no está disponible para consultar la información del programa.
+ Una vez quitado, el nodo de programa ya no está disponible para consultar la información del programa.
 
- Para que un nodo de programa esté disponible, llame al método [PublishProgramNode.](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)
+ Para que un nodo de programa esté disponible, llame al método [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

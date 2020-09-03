@@ -61,10 +61,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa647d8a8d52588481d18347cb3400141978bd20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548036"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escribir código en el editor de código y texto
@@ -84,10 +84,10 @@ El editor de Visual Studio proporciona muchas características que le facilitan 
 
 |Característica|Descripción|
 |-|-|
-|Colores de la sintaxis|Algunos elementos de la sintaxis de los archivos de código y marcado están coloreados de forma distinta para distinguirlos. Por ejemplo, las palabras clave (como `using` en C# y `Imports` en Visual Basic) son de un color, pero los tipos (como `Console` y `Uri`) son de otro. También se colorean otros elementos de la sintaxis, como los comentarios y los literales de cadena. C++ utiliza el color para diferenciar entre tipos, enumeraciones y macros, entre otros tokens.<br /><br /> Puede ver el color predeterminado para cada tipo y puede cambiar el color de cualquier elemento específico de la sintaxis en [Fonts and Colors, Environment, Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), que puede abrir desde el menú **Herramientas** .|
+|Colores de la sintaxis|Algunos elementos de la sintaxis de los archivos de código y marcado están coloreados de forma distinta para distinguirlos. Por ejemplo, las palabras clave (como `using` en C# y `Imports` en Visual Basic) son de un color, pero los tipos (como `Console` y `Uri`) son de otro. También se colorean otros elementos de la sintaxis, como los comentarios y los literales de cadena. C++ utiliza el color para diferenciar entre tipos, enumeraciones y macros, entre otros tokens.<br /><br /> Puede ver el color predeterminado de cada tipo y puede cambiar el color de cualquier elemento de sintaxis específico en el cuadro de [diálogo fuentes y colores, entorno, opciones](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), que puede abrir desde el menú **herramientas** .|
 |Marcas de errores y advertencias|Al agregar código y compilar su solución, puede que vea (a) que aparecen subrayados ondulados de diferentes colores o (b) bombillas en el código. Los subrayados ondulados rojos indican errores de sintaxis, los subrayados ondulados azules indican errores del compilador, los subrayados ondulados verdes indican advertencias y los subrayados ondulados púrpura, otros tipos de errores. Las[bombillas](../ide/perform-quick-actions-with-light-bulbs.md) sugieren correcciones para problemas y facilitan la aplicación de la corrección.<br /><br /> Puede ver el color predeterminado de cada subrayado ondulado de error y advertencia en el cuadro de diálogo **herramientas/opciones/entorno/fuentes y colores** . Busque **Error de sintaxis**, **Error del compilador**, **Advertencia**y **Otro Error**.|
-|Coincidencia de llaves|Cuando el punto de inserción se coloca en una llave de apertura en un archivo de código, tanto esta como la llave de cierre se resaltan. Esta característica le permite saber inmediatamente si faltan llaves o si estas están mal colocadas. Puede activar o desactivar la coincidencia de llaves con el valor **resaltado de delimitador automático** (**herramientas/opciones/editor de texto**). Puede cambiar el color de resaltado en la opción **fuentes y colores** (**herramientas/opciones/entorno**). Busque **Coincidencia de llaves (resaltar)** o **Coincidencia de llaves (rectángulo)**.|
-|Números de línea|Se pueden mostrar números de línea en el margen izquierdo de la ventana de código. No se muestran de forma predeterminada. Puede activar esta opción en la configuración de **Editor de texto todos los lenguajes** (**herramientas/opciones/editor de texto/todos los lenguajes**). Puede mostrar los números de línea de los lenguajes de programación individuales cambiando la configuración de esos lenguajes (**herramientas/opciones \<language> /Editor de texto/**). Si desea que se impriman los números de línea, seleccione Incluir números de línea en el cuadro de diálogo **Imprimir** .|
+|Coincidencia de llaves|Cuando el punto de inserción se coloca en una llave de apertura en un archivo de código, tanto esta como la llave de cierre se resaltan. Esta característica le permite saber inmediatamente si faltan llaves o si estas están mal colocadas. Puede activar o desactivar la coincidencia de llaves con el valor **resaltado de delimitador automático** (**herramientas/opciones/editor de texto**). Puede cambiar el color de resaltado en la opción **fuentes y colores** (**herramientas/opciones/entorno**). Busque **Coincidencia de llaves (resaltar)** o **Coincidencia de llaves (rectángulo)** .|
+|Números de línea|Se pueden mostrar números de línea en el margen izquierdo de la ventana de código. No se muestran de forma predeterminada. Puede activar esta opción en la configuración de **Editor de texto todos los lenguajes** (**herramientas/opciones/editor de texto/todos los lenguajes**). Puede mostrar los números de línea de los lenguajes de programación individuales cambiando la configuración de esos lenguajes (**herramientas/opciones \<language> /Editor de texto/**). Si quiere que se impriman los números de línea, seleccione Incluir números de línea en el cuadro de diálogo **Imprimir**.|
 |Seguimiento de cambios|El color del margen izquierdo le permite realizar un seguimiento de los cambios realizados en un archivo. Los cambios que se hayan realizado pero no se hayan guardado desde que se abrió el archivo se indican mediante una barra amarilla en el margen izquierdo (conocido como el margen de selección). Una vez que haya guardado los cambios (pero antes de cerrar el archivo), la barra se volverá verde. Si deshace un cambio después de haber guardado el archivo, la barra se volverá naranja. Para activar y desactivar esta característica, cambie la opción **seguimiento de cambios** en la configuración del **Editor de texto** (**herramientas/opciones/editor de texto**).|
 |Selección de código y texto|Puede seleccionar texto en el modo de flujo continuo estándar o en el modo de cuadro, en el que selecciona una parte rectangular del texto en lugar de un conjunto de líneas. Para hacer una selección en el modo de cuadro, presione ALT mientras arrastra el mouse sobre la selección (o presione ALT + MAYÚS + \<arrow key> ). La selección incluye todos los caracteres dentro del rectángulo definido por el primer y el último carácter de la selección. Cualquier cosa escrita o pegada en el área seleccionada se inserta en el mismo punto en cada línea.|
 |Zoom|Puede acercar o alejar la vista en cualquier ventana de código manteniendo presionada la tecla CTRL y moviendo la rueda del mouse (o CTRL + MAYÚS + . para acercarla y CTRL + MAYÚS - , para alejarla). También puede utilizar el cuadro Zoom en la esquina inferior izquierda de la ventana de código para establecer un porcentaje de zoom específico. La característica de zoom no funciona en ventanas de herramientas.|
@@ -126,9 +126,9 @@ El editor de Visual Studio proporciona muchas características que le facilitan 
 
  Los siguientes comandos son métodos específicos para navegar por código :
 
-|Comando|Descripción|
+|Get-Help|Descripción|
 |-|-|
-|Vete a\<line number>|(**Editar/Ir a** o CTRL + G): mover a un número de línea específico en el documento activo.|
+|Vete a \<line number>|(**Editar/Ir a** o CTRL + G): mover a un número de línea específico en el documento activo.|
 |Navegar a|(**Editar/Navegar a** o CTRL +,): busca un símbolo o un archivo en la solución activa. Le ayuda a elegir un buen conjunto de resultados coincidentes de una consulta. Puede buscar palabras clave incluidas en un símbolo utilizando mayúsculas y minúsculas Camel y caracteres de subrayado para dividir dicho símbolo en palabras clave.|
 |Buscar todas las referencias|(Menú contextual): busca todas las referencias al elemento seleccionado en la solución.|
 |Ir a definición|(Menú contextual o F12): busca la definición del elemento seleccionado.|
@@ -184,7 +184,7 @@ Esta característica es especialmente útil si el código tiene nombres largos.
 ## <a name="customize-the-editor"></a>Personalizar el editor
  **Importar y exportar configuraciones**: puede compartir las configuraciones con otro desarrollador, hacer que sus configuraciones cumplan con un estándar o volver a la configuración predeterminada de Visual Studio usando el **Asistente para importar y exportar configuraciones** en el menú **Herramientas** . Puede cambiar la configuración general o la configuración específica del proyecto y el lenguaje.
 
- **Asignación de teclado**: puede definir nuevas teclas de acceso rápido o volver a definir las existentes en la configuración Herramientas/Opciones/Entorno/Teclado. Para obtener más información sobre las teclas de acceso rápido, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+ **Asignación de teclado**: puede definir nuevas teclas de acceso rápido o volver a definir las existentes en la configuración Herramientas/Opciones/Entorno/Teclado. Para obtener más información sobre las teclas de acceso rápido, consulte [métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
  Para obtener información acerca de las opciones del editor específicas de los lenguajes, consulte:
 
@@ -200,7 +200,7 @@ Esta característica es especialmente útil si el código tiene nombres largos.
 
 - [Codificaciones y saltos de línea](../ide/encodings-and-line-breaks.md)
 
-- [esquematizar](../ide/outlining.md)
+- [Esquematización](../ide/outlining.md)
 
 - [Refactorización](../ide/refactoring-in-visual-studio.md)
 
@@ -229,4 +229,4 @@ Esta característica es especialmente útil si el código tiene nombres largos.
 - [Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)
 
 ## <a name="see-also"></a>Consulte también
- [IDE de Visual Studio](../ide/visual-studio-ide.md)
+ [IDE de Visual Studio](../ide/visual-studio-ide.md)

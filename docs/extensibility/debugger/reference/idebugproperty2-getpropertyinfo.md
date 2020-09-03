@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetPropertyInfo ? Microsoft Docs
+title: 'IDebugProperty2:: GetPropertyInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6ec1c3e29e0dbb6ca069dec696e6645a159ec7e6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721366"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
-Obtiene el [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructura que describe una propiedad.
+Obtiene la estructura de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) que describe una propiedad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,25 +51,25 @@ int GetPropertyInfo ( 
 
 ## <a name="parameters"></a>Parámetros
 `dwFields`\
-[en] Una combinación de valores de la [enumeración DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) que `pPropertyInfo` especifica qué campos se deben rellenar en la estructura.
+de Combinación de valores de la enumeración [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) que especifica los campos que se van a rellenar en la `pPropertyInfo` estructura.
 
 `nRadix`\
-[en] Radix que se utilizará para dar formato a cualquier información numérica.
+de Base que se va a utilizar para dar formato a cualquier información numérica.
 
 `dwTimeout`\
-[en] Especifica el tiempo máximo, en milisegundos, que se debe esperar antes de volver de este método. Se `INFINITE` usa para esperar indefinidamente.
+de Especifica el tiempo máximo, en milisegundos, que se va a esperar antes de que se devuelva desde este método. Use `INFINITE` para esperar indefinidamente.
 
 `rgpArgs`\
-[adentro, fuera] Reservado para uso futuro; establecido en un valor nulo.
+[in, out] Reservado para uso futuro; establecer en un valor null.
 
 `dwArgCount`\
-[en] Reservado para uso futuro; establecido en cero.
+de Reservado para uso futuro; se establece en cero.
 
 `pPropertyInfo`\
-[fuera] Una [estructura DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) que se rellena con la descripción de la propiedad.
+enuncia [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructura que se rellena con la descripción de la propiedad.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

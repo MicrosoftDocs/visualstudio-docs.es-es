@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6fb06bea4cebf2558990d23f7ece5b4f8db5b95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658927"
 ---
 # <a name="messaging-activity-designers"></a>Diseñadores de actividades de mensajería
@@ -25,9 +25,9 @@ Los diseñadores de actividades de mensajería se utilizan para crear y configur
 |----------------------|-----------------|
 |[CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)|Crea y configura una actividad de la clase <xref:System.ServiceModel.Activities.CorrelationScope> que ofrece administración implícita de actividades de mensajería secundarias con un objeto <xref:System.ServiceModel.Activities.CorrelationHandle>.|
 |[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|Crea y configura una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation> que se utiliza para inicializar la correlación sin enviar o recibir un mensaje.|
-|[Receive](../workflow-designer/receive-activity-designer.md)|Crea y configura una actividad <xref:System.ServiceModel.Activities.Receive> que recibe un mensaje desde un servicio.|
+|[Aparecen](../workflow-designer/receive-activity-designer.md)|Crea y configura una actividad <xref:System.ServiceModel.Activities.Receive> que recibe un mensaje desde un servicio.|
 |[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)|Crea un pareja configurada previamente de actividades <xref:System.ServiceModel.Activities.Send> y <xref:System.ServiceModel.Activities.ReceiveReply> dentro de una actividad <xref:System.Activities.Statements.Sequence>.|
-|[Send](../workflow-designer/send-activity-designer.md)|Crea y configura una actividad <xref:System.ServiceModel.Activities.Send> que envía un mensaje a un servicio.|
+|[Enviar](../workflow-designer/send-activity-designer.md)|Crea y configura una actividad <xref:System.ServiceModel.Activities.Send> que envía un mensaje a un servicio.|
 |[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)|Crea un pareja configurada previamente de actividades <xref:System.ServiceModel.Activities.Receive> y <xref:System.ServiceModel.Activities.SendReply> dentro de una actividad <xref:System.Activities.Statements.Sequence>.|
 |[TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)|Crea y configura una actividad <xref:System.ServiceModel.Activities.TransactedReceiveScope> que habilita el flujo de transacciones en un flujo de trabajo.|
 
@@ -51,19 +51,19 @@ Los diseñadores de actividades de mensajería se utilizan para crear y configur
 
  [Flujo de control](../workflow-designer/control-flow-activity-designers.md)
 
- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+ [Utilizar los diseñadores de actividades](../workflow-designer/using-the-activity-designers.md)
 
  [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)
 
  [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 
- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transacción](../workflow-designer/transaction-activity-designers.md)
 
  [Colección](../workflow-designer/collection-activity-designers.md)
 
- [Control de errores](../workflow-designer/error-handling-activity-designers.md)
+ [Tratamiento de errores](../workflow-designer/error-handling-activity-designers.md)
 
 ## <a name="external-resources"></a>Recursos externos
- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+ [Utilizar los diseñadores de actividades](../workflow-designer/using-the-activity-designers.md)

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154837"
 ---
 # <a name="msbuild-glossary"></a>Glosario de MSBuild
@@ -70,7 +70,7 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
 
  Vea función de elemento.
 
- elemento
+ item
 
  Los elementos son entradas en el sistema de compilación y se agrupan en tipos de elementos basados en los nombres de elementos. Los elementos representan normalmente archivos. Dado que el nombre de los elementos viene determinado por el tipo de elemento al que pertenecen, los términos *elemento* y *valor de elemento* se pueden utilizar indistintamente. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).
 
@@ -80,7 +80,7 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
 
  función de elemento
 
- Las funciones de elemento obtienen información sobre los elementos del proyecto. Estas funciones simplifican la obtención de elementos Distinct() y son más rápidas que si se recorren en bucle los elementos. Hay funciones para manipular las rutas de acceso y las cadenas de los elementos. Para obtener más información, consulte [Funciones de elementos](../msbuild/item-functions.md)
+ Las funciones de elemento obtienen información sobre los elementos del proyecto. Estas funciones simplifican la obtención de elementos Distinct() y son más rápidas que si se recorren en bucle los elementos. Hay funciones para manipular las rutas de acceso y las cadenas de los elementos. Para obtener más información, vea [funciones de elementos](../msbuild/item-functions.md) .
 
  metadatos de elemento
 
@@ -102,7 +102,7 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
 
  Es la capacidad de un proyecto de aplicación o ensamblado para tener como destino muchos CLR y marcos diferentes de MSBuild y Visual Studio.
 
- perfil
+ perfile
 
  Es un subconjunto del marco completo. Se utiliza para minimizar la cantidad que hay que descargar en un equipo.
 
@@ -124,7 +124,7 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
 
  propiedad, función
 
- Una función de propiedad es una propiedad o método del sistema que se puede utilizar para evaluar scripts de MSBuild. Los métodos de propiedad se pueden utilizar para leer la hora del sistema, comparar cadenas, buscar coincidencias de expresiones regulares y realizar otras acciones. Para obtener más información, consulte [Funciones de propiedad](../msbuild/property-functions.md).
+ Una función de propiedad es una propiedad o método del sistema que se puede utilizar para evaluar scripts de MSBuild. Los métodos de propiedad se pueden utilizar para leer la hora del sistema, comparar cadenas, buscar coincidencias de expresiones regulares y realizar otras acciones. Para obtener más información, consulte [funciones de propiedad](../msbuild/property-functions.md).
 
  función de propiedad, anidada
 
@@ -132,7 +132,7 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- Para obtener más información, consulte [Funciones de propiedad](../msbuild/property-functions.md).
+ Para obtener más información, consulte [funciones de propiedad](../msbuild/property-functions.md).
 
  propiedad, global
 
@@ -170,7 +170,7 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
 
  Consulte *propiedad, registro*.
 
- target
+ Destino
 
  Un destino agrupa tareas en un orden concreto y expone secciones del archivo del proyecto como puntos de entrada en el proceso de compilación. Para obtener más información, consulte [Destinos](../msbuild/msbuild-targets.md).
 
@@ -206,7 +206,7 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
 
  Un archivo de destinos es un archivo del proyecto que contiene principalmente los destinos y las tareas que guían la compilación. Por convención, tiene la extensión de archivo .targets. Los archivos de destinos se importan normalmente al final de los archivos del proyecto asociados.
 
- tarea
+ task
 
  Las tareas son unidades de código ejecutable que se utilizan en proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para realizar operaciones de compilación. Por ejemplo, una tarea podría compilar archivos de entrada o ejecutar una herramienta externa. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).
 
@@ -218,6 +218,6 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
 
  Consulte *metadatos, conocidos*.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [MSBuild1](../msbuild/msbuild.md)
