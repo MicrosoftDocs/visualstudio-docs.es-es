@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 887600bad0c3d05ff78050aa4449cf49dc882027
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534581"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Los campos descartables deben ser descartables
@@ -50,7 +50,7 @@ ms.locfileid: "85534581"
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo `TypeB` que infringe esta regla al declarar un campo `aFieldOfADisposableType` ( `F` en la explicación anterior) como un tipo descartable ( `TypeA` ) y no llamar a <xref:System.IDisposable.Dispose%2A> en el campo. `TypeB`corresponde a `T` en la explicación anterior.
+ En el ejemplo siguiente se muestra un tipo `TypeB` que infringe esta regla al declarar un campo `aFieldOfADisposableType` ( `F` en la explicación anterior) como un tipo descartable ( `TypeA` ) y no llamar a <xref:System.IDisposable.Dispose%2A> en el campo. `TypeB` corresponde a `T` en la explicación anterior.
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 

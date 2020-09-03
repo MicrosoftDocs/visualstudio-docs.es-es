@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349411"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedimiento Ejecutar un proceso de trabajo en una cuenta de usuario

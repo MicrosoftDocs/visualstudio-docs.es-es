@@ -1,5 +1,5 @@
 ---
-title: Adición de una extensión de protocolo de servidor de lenguaje ( Language Server Protocol extension) Microsoft Docs
+title: Agregando una extensión de protocolo del servidor de idioma | Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -9,58 +9,58 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef2093915538f09f425fc961420c4a3078043c91
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740237"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adición de una extensión del protocolo de servidor de lenguaje
 
-El protocolo de servidor de lenguaje (LSP) es un protocolo común, en forma de JSON RPC v2.0, que se utiliza para proporcionar características de servicio de lenguaje a varios editores de código. Mediante el protocolo, los desarrolladores pueden escribir un único servidor de lenguaje para proporcionar características de servicio de lenguaje como IntelliSense, diagnóstico de errores, buscar todas las referencias, etc., a varios editores de código que admiten el LSP. Tradicionalmente, los servicios de lenguaje en Visual Studio se pueden agregar mediante el uso de archivos de gramática TextMate para proporcionar funcionalidades básicas, como resaltado de sintaxis o mediante la escritura de servicios de lenguaje personalizados que usan el conjunto completo de API de extensibilidad de Visual Studio para proporcionar datos más enriquecidos. Con la compatibilidad de Visual Studio con LSP, hay una tercera opción.
+El protocolo de servidor de lenguaje (LSP) es un protocolo común, en forma de JSON RPC v 2.0, que se usa para proporcionar características del servicio de lenguaje a varios editores de código. Mediante el protocolo, los desarrolladores pueden escribir un único servidor de lenguaje para proporcionar características del servicio de lenguaje como IntelliSense, diagnóstico de errores, buscar todas las referencias, etc., a diversos editores de código que admiten el LSP. Tradicionalmente, los servicios de lenguaje de Visual Studio se pueden agregar mediante el uso de archivos de gramática de TextMate para proporcionar funcionalidades básicas como el resaltado de sintaxis o la escritura de servicios de lenguaje personalizados que usan el conjunto completo de API de extensibilidad de Visual Studio para proporcionar datos más completos. Con la compatibilidad de Visual Studio con LSP, hay una tercera opción.
 
-![servicio de protocolo de servidor de lenguaje en Visual Studio](media/lsp-service-in-VS.png)
+![servicio de protocolo del servidor de lenguaje en Visual Studio](media/lsp-service-in-VS.png)
 
 ## <a name="language-server-protocol"></a>Protocolo de servidor de lenguaje
 
-![implementación del protocolo de servidor de lenguaje](media/lsp-implementation.png)
+![implementación del Protocolo de servidor de lenguaje](media/lsp-implementation.png)
 
-En este artículo se describe cómo crear una extensión de Visual Studio que usa un servidor de lenguaje basado en LSP. Se supone que ya ha desarrollado un servidor de lenguaje basado en LSP y solo desea integrarlo en Visual Studio.
+En este artículo se describe cómo crear una extensión de Visual Studio que utiliza un servidor de idiomas basado en LSP. Se supone que ya ha desarrollado un servidor de idiomas basado en LSP y solo desea integrarlo en Visual Studio.
 
-Para la compatibilidad con Visual Studio, los servidores de lenguaje pueden comunicarse con el cliente (Visual Studio) a través de cualquier mecanismo de transmisión basado en secuencias, por ejemplo:
+Para la compatibilidad con Visual Studio, los servidores de idioma pueden comunicarse con el cliente (Visual Studio) a través de cualquier mecanismo de transmisión basado en secuencias, por ejemplo:
 
 * Flujos de entrada/salida estándar
 * Canalizaciones con nombre
 * Sockets (solo TCP)
 
-La intención del LSP y la compatibilidad con él en Visual Studio es incorporar servicios de lenguaje que no forman parte del producto de Visual Studio. No está pensado para extender los servicios de lenguaje existentes (por lo que C) en Visual Studio. Para ampliar los idiomas existentes, consulte la guía de extensibilidad del servicio de lenguaje (por ejemplo, ["Roslyn" .NET Compiler Platform)](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md)o consulte [Extender el editor y](../extensibility/extending-the-editor-and-language-services.md)los servicios de lenguaje .
+La intención del LSP y del soporte técnico en Visual Studio es incorporar servicios de lenguaje que no formen parte del producto de Visual Studio. No está diseñado para extender los servicios de lenguaje existentes (como C#) en Visual Studio. Para ampliar los lenguajes existentes, consulte la guía de extensibilidad del servicio de lenguaje (por ejemplo, el [.net Compiler Platform "Roslyn"](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md)) o vea [extender el editor y los servicios de lenguaje](../extensibility/extending-the-editor-and-language-services.md).
 
 Para obtener más información sobre el protocolo en sí, consulte la documentación [aquí](https://github.com/Microsoft/language-server-protocol).
 
-Para obtener más información sobre cómo crear un servidor de lenguaje de ejemplo o cómo integrar un servidor de lenguaje existente en Visual Studio Code, vea la documentación [aquí.](https://code.visualstudio.com/docs/extensions/example-language-server)
+Para obtener más información sobre cómo crear un servidor de lenguaje de ejemplo o cómo integrar un servidor de idioma existente en Visual Studio Code, consulte la documentación [aquí](https://code.visualstudio.com/docs/extensions/example-language-server).
 
-## <a name="language-server-protocol-supported-features"></a>Características compatibles con Language Server Protocol
+## <a name="language-server-protocol-supported-features"></a>Características compatibles con el protocolo de servidor de lenguaje
 
-En las tablas siguientes se muestran qué características de LSP se admiten en Visual Studio:
+En las tablas siguientes se muestran las características de LSP que se admiten en Visual Studio:
 
-Message | Tiene soporte en Visual Studio
+Message | Tiene compatibilidad con Visual Studio
 --- | ---
 initialize | sí
 inicializado | sí
 shutdown | sí
 exit | sí
 $/cancelRequest | sí
-window/showMessage | sí
-window/showMessageRequest | sí
-window/logMessage | sí
+Window/showMessage | sí
+Window/showMessageRequest | sí
+Window/logMessage | sí
 telemetría/evento |
-cliente/registroCapability |
-client/unregisterCapability |
-workspace/didChangeConfiguration | sí
-workspace/didChangeWatchedFiles | sí
-espacio de trabajo/símbolo | sí
-workspace/executeCommand | sí
-workspace/applyEditar | sí
+cliente/registerCapability |
+cliente/unregisterCapability |
+área de trabajo/didChangeConfiguration | sí
+área de trabajo/didChangeWatchedFiles | sí
+área de trabajo/símbolo | sí
+Workspace/executeCommand | sí
+área de trabajo/applyEdit | sí
 textDocument/publishDiagnostics | sí
 textDocument/didOpen | sí
 textDocument/didChange | sí
@@ -68,91 +68,91 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave | sí
 textDocument/didClose | sí
-textDocument/completion | sí
-finalización/resolución | sí
-textDocument/hover | sí
+textDocument/finalización | sí
+completar o resolver | sí
+textDocument/Hover | sí
 textDocument/signatureHelp | sí
-textDocument/references | sí
+textDocument/referencias | sí
 textDocument/documentHighlight | sí
 textDocument/documentSymbol | sí
-textDocument/formatting | sí
+textDocument/formato | sí
 textDocument/rangeFormatting | sí
 textDocument/onTypeFormatting |
 textDocument/definición | sí
 textDocument/codeAction | sí
-textDocument/codeLens |
-codeLens/resolve |
+textDocument/codelens |
+codelens/resolver |
 textDocument/documentLink |
-documentLink/resolve |
-textDocument/rename | sí
+documentLink/resolver |
+textDocument/Rename | sí
 
-## <a name="get-started"></a>Introducción
+## <a name="get-started"></a>Primeros pasos
 
 > [!NOTE]
-> A partir de Visual Studio 2017 versión 15.8, la compatibilidad con el protocolo de servidor de lenguaje común está integrada en Visual Studio. Si ha creado extensiones LSP con la versión preliminar de [Language Server Client VSIX,](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) dejarán de funcionar una vez que actualice a la versión 15.8 o posterior. Tendrá que hacer lo siguiente para que las extensiones LSP vuelvan a funcionar:
+> A partir de la versión 15,8 de Visual Studio 2017, la compatibilidad con el protocolo de Common Language Server está integrada en Visual Studio. Si ha creado extensiones de LSP mediante la versión de [VSIX del cliente del servidor de idioma](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) de vista previa, dejarán de funcionar una vez que actualice a la versión 15,8 o superior. Tendrá que hacer lo siguiente para que las extensiones de LSP funcionen de nuevo:
 >
-> 1. Desinstale microsoft Visual Studio Language Server Protocol Preview VSIX.
+> 1. Desinstale la versión de vista previa del protocolo del servidor de idioma Microsoft Visual Studio VSIX.
 >
->    A partir de la versión 15.8, cada vez que se realiza una actualización en Visual Studio, la vista previa VSIX se detecta y quita automáticamente.
+>    A partir de la versión 15,8, cada vez que realiza una actualización en Visual Studio, la vista previa de VSIX se detecta y se quita automáticamente.
 >
-> 2. Actualice la referencia de Nuget a la última versión no preliminar para [paquetes LSP.](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
+> 2. Actualice la referencia de Nuget a la versión más reciente que no sea de vista previa para los [paquetes de LSP](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client).
 >
-> 3. Quite la dependencia a Microsoft Visual Studio Language Server Protocol Preview VSIX en el manifiesto VSIX.
+> 3. Quite la dependencia de la vista previa del protocolo del servidor de lenguaje de Microsoft Visual Studio VSIX en el manifiesto de VSIX.
 >
-> 4. Asegúrese de que VSIX especifica Visual Studio 2017 versión 15.8 Preview 3 como el límite inferior para el destino de instalación.
+> 4. Asegúrese de que VSIX especifica Visual Studio 2017 versión 15,8 Preview 3 como límite inferior para el destino de instalación.
 >
 > 5. Vuelva a compilar e implementar.
 
 ### <a name="create-a-vsix-project"></a>Crear un proyecto VSIX
 
-Para crear una extensión de servicio de lenguaje mediante un servidor de lenguaje basado en LSP, primero asegúrese de que tiene la carga de trabajo de desarrollo de extensión de **Visual Studio** instalada para la instancia de VS.
+Para crear una extensión de servicio de lenguaje mediante un servidor de lenguaje basado en LSP, primero asegúrese de que tiene instalada la carga de trabajo **desarrollo de extensión de Visual Studio** para su instancia de vs.
 
-A continuación, cree un nuevo proyecto VSIX navegando a **Archivo** > **Nuevo proyecto** > **Proyecto** > de visual de**xextensibilidad** > **VSIX Proyecto:**
+A continuación, cree un nuevo proyecto VSIX; para ello, vaya a **archivo**  >  **nuevo proyecto**  >  **Visual C#**  >  **extensibilidad**  >  **VSIX proyecto**:
 
-![crear proyecto vsix](media/lsp-vsix-project.png)
+![crear Proyecto VSIX](media/lsp-vsix-project.png)
 
-### <a name="language-server-and-runtime-installation"></a>Servidor de idioma e instalación en tiempo de ejecución
+### <a name="language-server-and-runtime-installation"></a>Instalación del servidor de idioma y del tiempo de ejecución
 
-De forma predeterminada, las extensiones creadas para admitir servidores de lenguaje basados en LSP en Visual Studio no contienen los propios servidores de lenguaje ni los tiempos de ejecución necesarios para ejecutarlos. Los desarrolladores de extensiones son responsables de distribuir los servidores de lenguaje y los tiempos de ejecución necesarios. Hay varias maneras de hacerlo:
+De forma predeterminada, las extensiones creadas para admitir servidores de idioma basados en LSP en Visual Studio no contienen los propios servidores de idioma o los tiempos de ejecución necesarios para ejecutarlos. Los desarrolladores de extensiones son responsables de la distribución de los servidores de idioma y los tiempos de ejecución necesarios. Hay varias maneras de hacerlo:
 
-* Los servidores de lenguaje se pueden incrustar en El VSIX como archivos de contenido.
-* Cree un MSI para instalar el servidor de idioma y/o los tiempos de ejecución necesarios.
-* Proporcione instrucciones sobre Marketplace para informar a los usuarios sobre cómo obtener tiempos de ejecución y servidores de idioma.
+* Los servidores de idioma se pueden incrustar en VSIX como archivos de contenido.
+* Cree un archivo MSI para instalar el servidor de idioma o los tiempos de ejecución necesarios.
+* Proporcione instrucciones sobre Marketplace para informar a los usuarios sobre cómo obtener los tiempos de ejecución y los servidores de idioma.
 
-### <a name="textmate-grammar-files"></a>Archivos de gramática TextMate
+### <a name="textmate-grammar-files"></a>Archivos de gramática de TextMate
 
-El LSP no incluye especificaciones sobre cómo proporcionar coloración de texto para idiomas. Para proporcionar coloración personalizada para los lenguajes en Visual Studio, los desarrolladores de extensiones pueden usar un archivo de gramática TextMate. Para agregar archivos de tema o gramática TextMate personalizados, siga estos pasos:
+El LSP no incluye especificación sobre cómo proporcionar coloración de texto para los idiomas. Para proporcionar una coloración personalizada para los idiomas de Visual Studio, los desarrolladores de extensiones pueden usar un archivo de gramática de TextMate. Para agregar archivos de tema o gramática TextMate personalizados, siga estos pasos:
 
-1. Crea una carpeta llamada "Grammars" dentro de tu extensión (o puede ser el nombre que elijas).
+1. Cree una carpeta denominada "Grammes" dentro de la extensión (o puede ser cualquier nombre que elija).
 
-2. Dentro de la carpeta *Gramáticas,* incluya los * \*archivos .tmlanguage*, * \*.plist*, * \*.tmtheme*o * \*.json* que desee que proporcionen una coloración personalizada.
+2. Dentro de la carpeta de *gramáticas* , incluya los archivos * \* . tmLanguage*, * \* . plist*, * \* . tmTheme*o * \* . JSON* que desee que proporcionen coloración personalizada.
 
    > [!TIP]
-   > Un archivo *.tmtheme* define cómo se asignan los ámbitos a las clasificaciones de Visual Studio (denominadas claves de color). Para obtener instrucciones, puede hacer referencia al archivo *.tmtheme* global en el directorio *%ProgramFiles(x86)%-Microsoft Visual Studio\\\<>\\ \<SKU>.*
+   > Un archivo *. tmTheme* define cómo se asignan los ámbitos a las clasificaciones de Visual Studio (claves de color denominadas). Para obtener instrucciones, puede hacer referencia al archivo global *. tmTheme* en el directorio *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg*
 
-3. Cree un archivo *.pkgdef* y agregue una línea similar a esta:
+3. Cree un archivo *. pkgdef* y agregue una línea similar a la siguiente:
 
     ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
 
-4. Haga clic con el botón derecho en los archivos y seleccione **Propiedades**. Cambie la acción **Generar** a **Contenido** y cambie la propiedad **Incluir en VSIX** a **true**.
+4. Haga clic con el botón derecho en los archivos y seleccione **propiedades**. Cambie la acción de **compilación** a **contenido** y cambie la propiedad **incluir en VSIX** a **true**.
 
-Después de completar los pasos anteriores, se agrega una carpeta *Grammars* al directorio install del paquete como un origen de repositorio denominado 'MyLang' ('MyLang' es solo un nombre para la desambiguación y puede ser cualquier cadena única). Todas las gramáticas (archivos *.tmlanguage)* y archivos de tema ( archivos *.tmtheme)* en este directorio se recogen como potenciales y reemplazan a las gramáticas integradas proporcionadas con TextMate. Si las extensiones declaradas del archivo de gramática coinciden con la extensión del archivo que se está queabriendo, TextMate pisará el paso.
+Después de completar los pasos anteriores, se agrega una carpeta de *gramáticas* al directorio de instalación del paquete como un origen de repositorio denominado ' Moreno ' (' Moreno ' es simplemente un nombre para la desambiguación y puede ser cualquier cadena única). Todas las gramáticas (archivos *. tmLanguage* ) y los archivos de tema (archivos *. tmTheme* ) de este directorio se seleccionan como posibles y reemplazan a las gramáticas integradas que se proporcionan con Textmate. Si las extensiones declaradas del archivo de gramática coinciden con la extensión del archivo que se está abriendo, TextMate se devolverá.
 
-## <a name="create-a-simple-language-client"></a>Crear un cliente de lenguaje simple
+## <a name="create-a-simple-language-client"></a>Creación de un cliente de lenguaje simple
 
-### <a name="main-interface---ilanguageclient"></a>Interfaz principal - [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
+### <a name="main-interface---ilanguageclient"></a>Interfaz principal: [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
 
-Después de crear el proyecto VSIX, agregue los siguientes paquetes NuGet al proyecto:
+Después de crear el Proyecto VSIX, agregue los siguientes paquetes de NuGet al proyecto:
 
-* [Microsoft.VisualStudio.LanguageServer.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
+* [Microsoft. VisualStudio. LanguageServer. Client](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
 
 > [!NOTE]
-> Cuando se toma una dependencia del paquete NuGet después de completar los pasos anteriores, los paquetes Newtonsoft.Json y StreamJsonRpc también se agregan al proyecto. **No actualice estos paquetes a menos que esté seguro de que esas nuevas versiones se instalarán en la versión de Visual Studio a**la que se dirige la extensión. Los ensamblados no se incluirán en su VSIX; en su lugar, se recogerán en el directorio de instalación de Visual Studio. Si hace referencia a una versión más reciente de los ensamblados que a lo que está instalado en el equipo de un usuario, la extensión no funcionará.
+> Cuando se toma una dependencia en el paquete NuGet después de completar los pasos anteriores, también se agregan al proyecto los paquetes de Newtonsoft.Jsen y StreamJsonRpc. **No actualice estos paquetes a menos que esté seguro de que esas nuevas versiones se instalarán en la versión de Visual Studio a la que se destina la extensión**. Los ensamblados no se incluirán en el VSIX; en su lugar, se seleccionarán en el directorio de instalación de Visual Studio. Si hace referencia a una versión más reciente de los ensamblados que la instalada en el equipo de un usuario, la extensión no funcionará.
 
-A continuación, puede crear una nueva clase que implemente la interfaz [ILanguageClient,](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) que es la interfaz principal necesaria para los clientes de lenguaje que se conectan a un servidor de lenguaje basado en LSP.
+Después, puede crear una nueva clase que implementa la interfaz [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) , que es la interfaz principal necesaria para que los clientes de idioma se conecten a un servidor de idioma basado en LSP.
 
 A continuación se muestra un ejemplo:
 
@@ -215,9 +215,9 @@ namespace MockLanguageExtension
 }
 ```
 
-Los métodos principales que deben implementarse son [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) y [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) se llama cuando Visual Studio ha cargado la extensión y el servidor de idioma está listo para iniciarse. En este método, puede invocar el delegado [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) inmediatamente para indicar que se debe iniciar el servidor de lenguaje, o puede realizar lógica adicional e invocar [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) más adelante. **Para activar el servidor de idioma, debes llamar a StartAsync en algún momento.**
+Los métodos principales que deben implementarse son [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) y [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). Se llama a [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) cuando Visual Studio ha cargado su extensión y el servidor de idioma está listo para iniciarse. En este método, puede invocar el delegado [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) inmediatamente para indicar que se debe iniciar el servidor de idioma, o bien, puede realizar una lógica adicional e invocar [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) más adelante. **Para activar el servidor de idioma, debe llamar a StartAsync en algún momento.**
 
-[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) es el método finalmente invocado llamando al delegado [StartAsync.](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) Contiene la lógica para iniciar el servidor de lenguaje y establecer conexión con él. Se debe devolver un objeto de conexión que contenga secuencias para escribir en el servidor y leer desde el servidor. Las excepciones que se producen aquí se detectan y se muestran al usuario a través de un mensaje infoBar en Visual Studio.
+[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) es el método que finalmente se invoca llamando al delegado [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) . Contiene la lógica para iniciar el servidor de idioma y establecer la conexión con él. Debe devolverse un objeto de conexión que contenga secuencias para escribir en el servidor y leer desde el servidor. Las excepciones que se produzcan aquí se detectarán y se mostrarán al usuario a través de un mensaje de la barra de información en Visual Studio.
 
 ### <a name="activation"></a>Activación
 
@@ -230,27 +230,27 @@ Una vez implementada la clase de cliente de lenguaje, deberá definir dos atribu
 
 ### <a name="mef"></a>MEF
 
-Visual Studio usa [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) para administrar sus puntos de extensibilidad. El [Export](/dotnet/api/system.componentmodel.composition.exportattribute) export atributo indica a Visual Studio que esta clase debe recogerse como un punto de extensión y cargar en el momento adecuado.
+Visual Studio usa [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) para administrar sus puntos de extensibilidad. El atributo [Export](/dotnet/api/system.componentmodel.composition.exportattribute) indica a Visual Studio que esta clase se debe recoger como punto de extensión y cargarse en el momento adecuado.
 
-Para utilizar MEF, también debe definir MEF como un recurso en el manifiesto VSIX.
+Para usar MEF, también debe definir MEF como un recurso en el manifiesto de VSIX.
 
-Abra el diseñador de manifiestos VSIX y vaya a la pestaña **Activos:**
+Abra el diseñador de manifiestos VSIX y navegue hasta la pestaña **activos** :
 
-![añadir activo MEF](media/lsp-add-asset.png)
+![Agregar activo MEF](media/lsp-add-asset.png)
 
-Haga clic en **Nuevo** para crear un nuevo recurso:
+Haga clic en **nuevo** para crear un nuevo recurso:
 
-![definir el activo MEF](media/lsp-define-asset.png)
+![definir el activo de MEF](media/lsp-define-asset.png)
 
-* **Tipo**: Microsoft.VisualStudio.MefComponent
-* **Fuente**: Un proyecto en la solución actual
-* **Proyecto**: [Su proyecto]
+* **Tipo**: Microsoft. VisualStudio. MefComponent
+* **Origen**: un proyecto en la solución actual
+* **Proyecto**: [su proyecto]
 
 ### <a name="content-type-definition"></a>Definición de tipo de contenido
 
-Actualmente, la única manera de cargar la extensión de servidor de lenguaje basada en LSP es por tipo de contenido de archivo. Es decir, al definir la clase de cliente de lenguaje (que implementa [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), deberá definir los tipos de archivos que, cuando se abren, harán que se cargue la extensión. Si no se abre ningún archivo que coincida con el tipo de contenido definido, la extensión no se cargará.
+Actualmente, la única manera de cargar la extensión de servidor de idioma basado en LSP es por tipo de contenido de archivo. Es decir, al definir la clase de cliente de lenguaje (que implementa [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), deberá definir los tipos de archivos que, al abrirse, hará que se cargue la extensión. Si no se abren archivos que coincidan con el tipo de contenido definido, la extensión no se cargará.
 
-Esto se hace mediante la `ContentTypeDefinition` definición de una o más clases:
+Esto se hace a través de la definición de una o varias `ContentTypeDefinition` clases:
 
 ```csharp
 namespace MockLanguageExtension
@@ -270,9 +270,9 @@ namespace MockLanguageExtension
 }
 ```
 
-En el ejemplo anterior, se crea una definición de tipo de contenido para los archivos que terminan en la extensión de archivo *.bar.* La definición de tipo de contenido recibe el nombre "bar" y debe derivar de [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
+En el ejemplo anterior, se crea una definición de tipo de contenido para los archivos que finalizan en la extensión de archivo *. bar* . La definición del tipo de contenido recibe el nombre "bar" y debe derivar de [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
 
-Después de agregar una definición de tipo de contenido, puede definir cuándo cargar la extensión de cliente de idioma en la clase de cliente de idioma:
+Después de agregar una definición de tipo de contenido, puede definir cuándo cargar la extensión de cliente de lenguaje en la clase de cliente de lenguaje:
 
 ```csharp
     [ContentType("bar")]
@@ -282,17 +282,17 @@ Después de agregar una definición de tipo de contenido, puede definir cuándo 
     }
 ```
 
-Agregar compatibilidad con servidores de lenguaje LSP no requiere que implemente su propio sistema de proyecto en Visual Studio. Los clientes pueden abrir un único archivo o una carpeta en Visual Studio para empezar a usar el servicio de lenguaje. De hecho, la compatibilidad con servidores de lenguaje LSP está diseñada para funcionar solo en escenarios de carpetas/archivos abiertos. Si se implementa un sistema de proyecto personalizado, algunas características (como la configuración) no funcionarán.
+La adición de compatibilidad con servidores de idiomas de LSP no requiere la implementación de su propio sistema de proyectos en Visual Studio. Los clientes pueden abrir un solo archivo o una carpeta en Visual Studio para empezar a usar el servicio de lenguaje. De hecho, la compatibilidad con los servidores de idiomas de LSP está diseñada para funcionar solo en escenarios de archivo o carpeta abiertos. Si se implementa un sistema de proyectos personalizado, algunas características (como la configuración) no funcionarán.
 
 ## <a name="advanced-features"></a>Características avanzadas
 
 ### <a name="settings"></a>Configuración
 
-La compatibilidad con la configuración personalizada específica del servidor de idioma está disponible, pero todavía está en proceso de mejora. La configuración es específica de lo que admite el servidor de lenguaje y normalmente controla cómo el servidor de idioma emite los datos. Por ejemplo, un servidor de idioma puede tener una configuración para el número máximo de errores notificados. Los autores de extensiones definirían un valor predeterminado, que los usuarios pueden cambiar para proyectos específicos.
+La compatibilidad con la configuración específica del servidor de idioma personalizado está disponible, pero aún está en proceso de mejorar. La configuración es específica de lo que admite el servidor de idioma y normalmente controla el modo en que el servidor de idioma emite los datos. Por ejemplo, un servidor de idioma puede tener un valor para el número máximo de errores que se han comunicado. Los autores de la extensión definirían un valor predeterminado, que los usuarios pueden cambiar para proyectos concretos.
 
-Siga estos pasos para agregar compatibilidad con la configuración a la extensión del servicio de lenguaje LSP:
+Siga estos pasos para agregar compatibilidad con la configuración de la extensión del servicio de lenguaje LSP:
 
-1. Agregue un archivo JSON (por ejemplo, *MockLanguageExtensionSettings.json*) al proyecto que contenga la configuración y sus valores predeterminados. Por ejemplo:
+1. Agregue un archivo JSON (por ejemplo, *MockLanguageExtensionSettings.jsen*) al proyecto que contiene la configuración y sus valores predeterminados. Por ejemplo:
 
     ```json
     {
@@ -300,9 +300,9 @@ Siga estos pasos para agregar compatibilidad con la configuración a la extensi�
     }
     ```
 
-2. Haga clic con el botón derecho en el archivo JSON y seleccione **Propiedades**. Cambie la acción **Generar** a "Contenido" y la propiedad "Incluir en VSIX" a **true**.
+2. Haga clic con el botón derecho en el archivo JSON y seleccione **propiedades**. Cambie la acción de **compilación** a "contenido" y la propiedad "incluir en VSIX" a **true**.
 
-3. Implemente ConfigurationSections y devuelva la lista de prefijos para la configuración definida en el archivo JSON (en Visual Studio Code, esto se asignaría al nombre de la sección de configuración en package.json):
+3. Implemente ConfigurationSections y devuelva la lista de prefijos para los valores definidos en el archivo JSON (en Visual Studio Code, esto se asignaría al nombre de la sección de configuración en package.jsen):
 
     ```csharp
     public IEnumerable<string> ConfigurationSections
@@ -314,7 +314,7 @@ Siga estos pasos para agregar compatibilidad con la configuración a la extensi�
     }
     ```
 
-4. Agregue un archivo .pkgdef al proyecto (agregue un nuevo archivo de texto y cambie la extensión de archivo a .pkgdef). El archivo pkgdef debe contener esta información:
+4. Agregue un archivo. pkgdef al proyecto (agregue un nuevo archivo de texto y cambie la extensión de archivo a. pkgdef). El archivo pkgdef debe contener esta información:
 
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
@@ -328,21 +328,21 @@ Siga estos pasos para agregar compatibilidad con la configuración a la extensi�
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
 
-5. Haga clic con el botón derecho en el archivo .pkgdef y seleccione **Propiedades**. Cambie la acción **Generar** a **Contenido** y la propiedad **Incluir en VSIX** a **true**.
+5. Haga clic con el botón derecho en el archivo. pkgdef y seleccione **propiedades**. Cambie la acción de **compilación** a **contenido** y la propiedad **incluir en VSIX** a **true**.
 
-6. Abra el archivo *source.extension.vsixmanifest* y agregue un recurso en la pestaña **Asset:**
+6. Abra el archivo *source. Extension. vsixmanifest* y agregue un recurso en la pestaña **Asset (recurso** ):
 
-   ![editar vspackage asset](media/lsp-add-vspackage-asset.png)
+   ![editar el recurso de VSPackage](media/lsp-add-vspackage-asset.png)
 
-   * **Tipo**: Microsoft.VisualStudio.VsPackage
-   * **Fuente**: Archivo en el sistema de archivos
-   * **Ruta :**[Ruta de acceso al archivo *.pkgdef]*
+   * **Tipo**: Microsoft. VisualStudio. VsPackage
+   * **Origen**: archivo en el sistema de archivos
+   * **Ruta de acceso**: [ruta de acceso al archivo *. pkgdef* ]
 
-### <a name="user-editing-of-settings-for-a-workspace"></a>Edición por parte del usuario de la configuración de un espacio de trabajo
+### <a name="user-editing-of-settings-for-a-workspace"></a>Edición del usuario de la configuración de un área de trabajo
 
-1. El usuario abre un espacio de trabajo que contiene los archivos que posee el servidor.
-2. El usuario agrega un archivo en la carpeta *.vs* denominado *VSWorkspaceSettings.json*.
-3. El usuario agrega una línea al archivo *VSWorkspaceSettings.json* para una configuración que proporciona el servidor. Por ejemplo:
+1. El usuario abre un área de trabajo que contiene los archivos que posee el servidor.
+2. El usuario agrega un archivo en la carpeta *. vs* denominado *VSWorkspaceSettings.jsen*.
+3. El usuario agrega una línea al *VSWorkspaceSettings.jsen* el archivo para una configuración que proporciona el servidor. Por ejemplo:
 
     ```json
     {
@@ -350,12 +350,12 @@ Siga estos pasos para agregar compatibilidad con la configuración a la extensi�
     }
     ```
 
-### <a name="enable-diagnostics-tracing"></a>Habilitar el seguimiento de diagnósticos
+### <a name="enable-diagnostics-tracing"></a>Habilitar seguimiento de diagnósticos
 
-El seguimiento de diagnósticos se puede habilitar para generar todos los mensajes entre el cliente y el servidor, lo que puede ser útil al depurar problemas. Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
+El seguimiento de diagnósticos se puede habilitar para mostrar todos los mensajes entre el cliente y el servidor, lo que puede resultar útil al depurar problemas. Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
 
-1. Abra o cree el archivo de configuración del área de trabajo *VSWorkspaceSettings.json* (consulte "Edición de usuario de la configuración de un área de trabajo").
-2. Agregue la siguiente línea en el archivo json de configuración:
+1. Abra o cree el archivo de configuración del área * de trabajoVSWorkspaceSettings.jsen* (vea "edición del usuario de la configuración de un área de trabajo").
+2. Agregue la siguiente línea en el archivo de configuración JSON:
 
 ```json
 {
@@ -363,21 +363,21 @@ El seguimiento de diagnósticos se puede habilitar para generar todos los mensaj
 }
 ```
 
-Hay tres valores posibles para la verbosidad de seguimiento:
+Hay tres valores posibles para el nivel de detalle del seguimiento:
 
-* "Off": el rastreo se apagó por completo
-* "Messages": seguimiento activado, pero solo se rastrean el nombre del método y el identificador de respuesta.
-* "Verbose": seguimiento activado; se rastrea todo el mensaje rpc.
+* "Desactivado": el seguimiento se ha desactivado por completo
+* "Mensajes": seguimiento activado, pero solo se realiza un seguimiento del nombre del método y del ID. de respuesta.
+* "Verbose": seguimiento activado; se realiza un seguimiento del mensaje RPC completo.
 
-Cuando se activa el seguimiento, el contenido se escribe en un archivo en el directorio *%temp%-VisualStudio-LSP.* El registro sigue el formato de nomenclatura *[LanguageClientName]-[Datetime Stamp].log*. Actualmente, el seguimiento solo se puede habilitar para escenarios de carpetas abiertas. Abrir un único archivo para activar un servidor de lenguaje no tiene compatibilidad con el seguimiento de diagnósticos.
+Cuando se activa el seguimiento, el contenido se escribe en un archivo en el directorio *%temp%\VisualStudio\LSP* El registro sigue el formato de nomenclatura *[LanguageClientName]-[DateTime Stamp]. log*. Actualmente, el seguimiento solo se puede habilitar para escenarios de carpeta abierta. Al abrir un único archivo para activar un servidor de idioma, no se admite el seguimiento de diagnósticos.
 
 ### <a name="custom-messages"></a>Mensajes personalizados
 
-Existen API para facilitar el envío de mensajes y la recepción de mensajes desde el servidor de idioma que no forman parte del protocolo de servidor de idioma estándar. Para controlar los mensajes personalizados, implemente la interfaz [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) en la clase de cliente de lenguaje. La biblioteca [VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) se utiliza para transmitir mensajes personalizados entre el cliente de lenguaje y el servidor de lenguaje. Dado que la extensión de cliente de lenguaje LSP es igual que cualquier otra extensión de Visual Studio, puede decidir agregar características adicionales (que no son compatibles con el LSP) a Visual Studio (mediante otras API de Visual Studio) en la extensión a través de mensajes personalizados.
+Existen API para facilitar el paso de mensajes y la recepción de mensajes desde el servidor de idioma que no forman parte del Protocolo de servidor de lenguaje estándar. Para controlar los mensajes personalizados, implemente la interfaz [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) en la clase de cliente de lenguaje. La biblioteca [vs-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) se usa para transmitir mensajes personalizados entre el cliente de lenguaje y el servidor de idioma. Como la extensión de cliente de idioma de LSP es igual que cualquier otra extensión de Visual Studio, puede decidir agregar características adicionales (que no son compatibles con el LSP) a Visual Studio (con otras API de Visual Studio) en la extensión a través de mensajes personalizados.
 
 #### <a name="receive-custom-messages"></a>Recibir mensajes personalizados
 
-Para recibir mensajes personalizados desde el servidor de lenguaje, implemente la propiedad [CustomMessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017) en [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) y devuelva un objeto que sepa cómo controlar los mensajes personalizados. Ejemplo a continuación:
+Para recibir mensajes personalizados del servidor de idioma, implemente la propiedad [CustomMessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017) en [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) y devuelva un objeto que sepa cómo administrar los mensajes personalizados. A continuación se proporciona un ejemplo:
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -412,7 +412,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 #### <a name="send-custom-messages"></a>Enviar mensajes personalizados
 
-Para enviar mensajes personalizados al servidor de lenguaje, implemente el método [AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017) en [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017). Este método se invoca cuando se inicia el servidor de lenguaje y está listo para recibir mensajes. Un objeto [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) se pasa como parámetro, que puede mantener para enviar mensajes al servidor de lenguaje mediante las API de [VS-StreamJsonRpc.](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) Ejemplo a continuación:
+Para enviar mensajes personalizados al servidor de idioma, implemente el método [AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017) en [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017). Este método se invoca cuando se inicia el servidor de idioma y está listo para recibir mensajes. Un objeto [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) se pasa como un parámetro, que puede conservar para enviar mensajes al servidor de idioma mediante las API [vs-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) . A continuación se proporciona un ejemplo:
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -443,11 +443,11 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 }
 ```
 
-### <a name="middle-layer"></a>Capa media
+### <a name="middle-layer"></a>Nivel intermedio
 
-A veces, un desarrollador de extensiones puede interceptar los mensajes LSP enviados y recibidos desde el servidor de lenguaje. Por ejemplo, un desarrollador de extensiones puede modificar el parámetro de mensaje enviado para un mensaje LSP determinado o modificar los resultados devueltos desde el servidor de idioma para una característica LSP (por ejemplo, terminaciones). Cuando sea necesario, los desarrolladores de extensiones pueden usar la API MiddleLayer para interceptar mensajes LSP.
+En ocasiones, es posible que un desarrollador de extensiones desee interceptar los mensajes de LSP enviados y recibidos desde el servidor de idioma. Por ejemplo, es posible que un desarrollador de extensiones desee modificar el parámetro de mensaje enviado para un mensaje de LSP determinado o modificar los resultados devueltos desde el servidor de idioma para una característica de LSP (por ejemplo, finalizaciones). Cuando es necesario, los desarrolladores de extensiones pueden usar la API MiddleLayer para interceptar los mensajes de LSP.
 
-Cada mensaje LSP tiene su propia interfaz de capa media para la interceptación. Para interceptar un mensaje determinado, cree una clase que implemente la interfaz de capa intermedia para ese mensaje. A continuación, implemente la interfaz [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) en la clase de cliente de lenguaje y devuelva una instancia del objeto en la propiedad [MiddleLayer.](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) Ejemplo a continuación:
+Cada mensaje de LSP tiene su propia interfaz de nivel intermedio para la interceptación. Para interceptar un mensaje determinado, cree una clase que implemente la interfaz de capa intermedia para ese mensaje. A continuación, implemente la interfaz [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) en la clase de cliente de lenguaje y devuelva una instancia del objeto en la propiedad [MiddleLayer](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) . A continuación se proporciona un ejemplo:
 
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
@@ -474,29 +474,29 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 }
 ```
 
-La entidad de capa media todavía está en desarrollo y aún no está completa.
+La característica de nivel intermedio todavía está en desarrollo y aún no es completa.
 
-## <a name="sample-lsp-language-server-extension"></a>Extensión del servidor de lenguaje LSP de ejemplo
+## <a name="sample-lsp-language-server-extension"></a>Extensión de servidor de idioma LSP de ejemplo
 
-Para ver el código fuente de una extensión de ejemplo mediante la API de cliente LSP en Visual Studio, vea VSSDK-Extensibility-Samples [LSP sample](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol).
+Para ver el código fuente de una extensión de ejemplo mediante la API de cliente de LSP en Visual Studio, consulte VSSDK-Extensibility-samples [LSP Sample](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol).
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
-**Me gustaría crear un sistema de proyecto personalizado para complementar mi servidor de lenguaje LSP para proporcionar compatibilidad con características más ricas en Visual Studio, ¿cómo puedo hacerlo?**
+**Me gustaría crear un sistema de proyectos personalizado que complemente el servidor de lenguaje de LSP para ofrecer compatibilidad con características más enriquecidas en Visual Studio, ¿cómo puedo hacer esto?**
 
-La compatibilidad con servidores de lenguaje basados en LSP en Visual Studio se basa en la característica de [carpeta abierta](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) y está diseñada para no requerir un sistema de proyecto personalizado. Puede crear su propio sistema de proyecto personalizado siguiendo las instrucciones [aquí,](https://github.com/Microsoft/VSProjectSystem)pero algunas características, como la configuración, pueden no funcionar. La lógica de inicialización predeterminada para los servidores de lenguaje LSP es pasar la ubicación de la carpeta raíz de la carpeta que se está abiertando actualmente, por lo que si utiliza un sistema de proyecto personalizado, es posible que deba proporcionar lógica personalizada durante la inicialización para asegurarse de que el servidor de idioma se puede iniciar correctamente.
+La compatibilidad con servidores de idioma basados en LSP en Visual Studio se basa en la [característica abrir carpeta](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) y se ha diseñado para que no requiera un sistema de proyecto personalizado. Puede crear su propio sistema de proyecto personalizado siguiendo las instrucciones que se indican [a continuación](https://github.com/Microsoft/VSProjectSystem), pero es posible que algunas características, como la configuración, no funcionen. La lógica de inicialización predeterminada para los servidores de idiomas LSP es pasar a la ubicación de la carpeta raíz de la carpeta que se está abriendo actualmente, por lo que si usa un sistema de proyectos personalizado, es posible que tenga que proporcionar lógica personalizada durante la inicialización para asegurarse de que el servidor de idioma se puede iniciar correctamente.
 
-**¿Cómo agrego compatibilidad con el depurador?**
+**¿Cómo agregar compatibilidad del depurador?**
 
-Proporcionaremos soporte para el [protocolo de depuración común](https://code.visualstudio.com/docs/extensionAPI/api-debugging) en una versión futura.
+Proporcionaremos soporte técnico para el [Protocolo de depuración común](https://code.visualstudio.com/docs/extensionAPI/api-debugging) en una versión futura.
 
-**Si ya hay un servicio de lenguaje compatible con VS instalado (por ejemplo, JavaScript), ¿puedo instalar una extensión de servidor de lenguaje LSP que ofrezca características adicionales (como linting)?**
+**Si ya hay un servicio de lenguaje compatible con VS instalado (por ejemplo, JavaScript), ¿puedo instalar una extensión de servidor de idioma de LSP que ofrezca características adicionales (como la detección de errores)?**
 
-Sí, pero no todas las características funcionarán correctamente. El objetivo final de las extensiones de servidor de lenguaje LSP es habilitar servicios de lenguaje no admitidos de forma nativa por Visual Studio. Puede crear extensiones que ofrezcan compatibilidad adicional mediante servidores de lenguaje LSP, pero algunas características (como IntelliSense) no serán una experiencia fluida. En general, se recomienda utilizar extensiones de servidor de lenguaje LSP para proporcionar nuevas experiencias de idioma, no para extender las existentes.
+Sí, pero no todas las características funcionarán correctamente. El objetivo final de las extensiones de servidor de idiomas LSP es habilitar los servicios de lenguaje no compatibles de forma nativa con Visual Studio. Puede crear extensiones que ofrecen compatibilidad adicional con servidores de idiomas de LSP, pero algunas características (como IntelliSense) no serán una experiencia fluida. En general, se recomienda usar las extensiones de servidor de idioma de LSP para proporcionar nuevas experiencias de idioma, no para extender las existentes.
 
-**¿Dónde publico mi servidor de lenguaje LSP VSIX completado?**
+**¿Dónde puedo publicar el VSIX del servidor de idioma de LSP completado?**
 
-Consulte las instrucciones de Marketplace [aquí](walkthrough-publishing-a-visual-studio-extension.md).
+Vea las instrucciones de Marketplace [aquí](walkthrough-publishing-a-visual-studio-extension.md).
 
 ## <a name="see-also"></a>Vea también
 

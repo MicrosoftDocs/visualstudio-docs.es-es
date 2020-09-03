@@ -42,10 +42,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bbe2ecf89f94cc75ff9036285ae9acbf9cf3b657
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534503"
 ---
 # <a name="using-breakpoints"></a>Usar puntos de interrupción
@@ -90,7 +90,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
   
 2. Haga clic en el margen izquierdo de la instrucción donde desea establecer un punto de interrupción o coloque el cursor en la instrucción y presione **F9**.  
   
-## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Establecer un punto de interrupción de datos (solo C++ nativo)  
+## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Establecer un punto de interrupción de datos (solo C++ nativo)  
  Los puntos de interrupción de datos interrumpen la ejecución cuando se produce un cambio en un valor que está almacenado en una ubicación especificada de la memoria. Si el valor se lee pero no cambia, la ejecución no se interrumpe. Para establecer puntos de interrupción de datos, el depurador debe estar en modo de interrupción.  
   
 1. Empiece a depurar la aplicación y espere hasta que se alcance un punto de interrupción. En el menú **Depurar** , elija **Nuevo punto de interrupción/Punto de interrupción de datos** (o abra la ventana **Puntos de interrupción** y elija **Nuevo/Punto de interrupción de datos**.  
@@ -114,7 +114,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 - Si la ubicación de la memoria se actualiza dentro del kernel. Por ejemplo, si se pasa memoria a la función `ReadFile` de Windows de 32 bits, la memoria se actualizará desde el modo kernel y el depurador no interrumpirá su ejecución en la escritura de memoria.  
   
 ## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Establecer un punto de interrupción con una dirección de memoria (solo en C++ nativo)  
- También puede usar la dirección de un objeto para establecer un punto de interrupción en un método llamado en una instancia específica de una clase.  Este es un ejemplo:  
+ También puede usar la dirección de un objeto para establecer un punto de interrupción en un método llamado en una instancia específica de una clase.  Veamos un ejemplo:  
   
  Por ejemplo, dado un objeto de tipo `my_class` con la dirección, puede establecer un punto de interrupción de función en un método denominado `my_method` llamado desde esa instancia.  
   
@@ -209,7 +209,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
   
   Incluya los valores de cadena entre comillas dobles. Puede combinar las cláusulas con `&` (AND), `||` (OR), `!` (NOT) y paréntesis.  
   
-## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Acciones de punto de interrupción y puntos de seguimiento  
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Acciones de punto de interrupción y puntos de seguimiento  
  Un punto de seguimiento es un punto de interrupción que imprime un mensaje en la ventana de salida. Un punto de seguimiento puede actuar como una instrucción de seguimiento temporal en el lenguaje de programación.  
   
  En la ventana **Configuración del punto de interrupción** , active la casilla **Acciones** . En el grupo **Acción** , elija **Registrar un mensaje en la ventana de salida** . Puede imprimir una cadena genérica, como **Esto es una prueba**. Para incluir el valor de una variable o expresión, enciérrela entre llaves.  

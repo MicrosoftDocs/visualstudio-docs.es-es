@@ -32,19 +32,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850991"
 ---
 # <a name="link-task"></a>Vincular tarea
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta del vinculador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable (.exe) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte [Opciones del enlazador](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
+Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta del vinculador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable (.exe) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, vea [Opciones del enlazador](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea **Link**. La mayoría de los parámetros de tareas, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
+ En la siguiente tabla se describen los parámetros de la tarea **Link**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
   
 - **AdditionalDependencies**  
   
@@ -52,7 +52,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica una lista de archivos de entrada para agregar al comando.  
   
-   Para obtener más información, consulte [Archivos de entrada de LINK](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
+   Para obtener más información, vea [vincular archivos de entrada](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
   
 - **AdditionalLibraryDirectories**  
   
@@ -68,15 +68,15 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica los atributos que se colocarán en la sección `dependency` del archivo de manifiesto.  
   
-   Para obtener más información, consulte [/MANIFESTDEPENDENCY (Especificar las dependencias de manifiesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consulte también "Archivos de configuración del publicador" en el sitio web de [MSDN](https://msdn.microsoft.com/).  
+   Para obtener más información, vea [/MANIFESTDEPENDENCY (especificar las dependencias del manifiesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consulte también "Archivos de configuración del publicador" en el sitio web de [MSDN](https://msdn.microsoft.com/).  
   
 - **AdditionalOptions**  
   
    Parámetro **String** opcional.  
   
-   Una lista de opciones del enlazador especificada en la línea de comandos. Por ejemplo, **"** _/option1 /option2 /option#_ ". Utilice este parámetro para especificar opciones del enlazador que no están representadas por ningún otro parámetro de la tarea **Link**.  
+   Una lista de opciones del enlazador especificada en la línea de comandos. Por ejemplo, **"**_/option1/Option2/Option #_". Utilice este parámetro para especificar opciones del enlazador que no están representadas por ningún otro parámetro de la tarea **Link**.  
   
-   Para obtener más información, consulte [Opciones del enlazador](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
+   Para obtener más información, vea [Opciones del enlazador](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 - **AddModuleNamesToAssembly**  
   
@@ -84,7 +84,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Agrega una referencia de módulo en un ensamblado.  
   
-   Para obtener más información, consulte [/ASSEMBLYMODULE (Agregar un módulo MSIL al ensamblado)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
+   Para obtener más información, vea [/assemblymodule (agregar un módulo MSIL al ensamblado)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
   
 - **AllowIsolation**  
   
@@ -140,7 +140,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.  
   
-  - **Default** -  *\<none>*  
+  - **Predeterminada** - *\<none>*  
   
   - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
@@ -222,7 +222,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Este parámetro causa la *carga retrasada* de archivos DLL. Especifique el nombre de un archivo DLL cuya carga se desea retrasar.  
   
-   Para obtener más información, consulte [/DELAYLOAD (Retrasar importación de carga)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
+   Para obtener más información, consulte [/DELAYLOAD (retrasar importación de carga)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
   
 - **DelaySign**  
   
@@ -230,7 +230,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, firma parcialmente un ensamblado. De forma predeterminada, el valor es `false`.  
   
-   Para obtener más información, consulte [/DELAYSIGN (Firmar parcialmente un ensamblado)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
+   Para obtener más información, vea [/delaysign (firmar parcialmente un ensamblado)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
   
 - **Driver**  
   
@@ -240,7 +240,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **Driver** -  **/Driver**  
   
@@ -304,7 +304,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
   - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
   
-    Para obtener más información, consulte [/FORCE (Forzar resultados de archivo)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
+    Para obtener más información, consulte [/Force (forzar la salida de archivo)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
 - **ForceSymbolReferences**  
   
@@ -312,7 +312,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Este parámetro indica al enlazador que agregue un símbolo especificado a la tabla de símbolos.  
   
-   Para obtener más información, consulte [/INCLUDE (Forzar referencias de símbolos)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
+   Para obtener más información, vea [/include (forzar referencias de símbolos)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
   
 - **FunctionOrder**  
   
@@ -336,7 +336,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, crea un archivo de manifiesto en paralelo.  
   
-   Para obtener más información, consulte [/MANIFEST (Crear el manifiesto del ensamblado en paralelo)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
+   Para obtener más información, vea [/manifest (crear manifiesto de ensamblado en paralelo)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
   
 - **GenerateMapFile**  
   
@@ -352,7 +352,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica la cantidad de memoria física en el montón que se debe asignar de una sola vez.  
   
-   Para obtener más información, consulte el argumento `commit` en [/HEAP (Establecer el tamaño del montón)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Consulte también el parámetro **HeapReserveSize**.  
+   Para obtener más información, vea el `commit` argumento en [/heap (establecer el tamaño del montón)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Consulte también el parámetro **HeapReserveSize**.  
   
 - **HeapReserveSize**  
   
@@ -360,7 +360,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica el tamaño total asignado al montón en la memoria virtual.  
   
-   Para obtener más información, consulte el argumento `reserve` en [/HEAP (Establecer el tamaño del montón)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Consulte también el parámetro **HeapCommitSize** en esta tabla.  
+   Para obtener más información, vea el `reserve` argumento en [/heap (establecer el tamaño del montón)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Consulte también el parámetro **HeapCommitSize** en esta tabla.  
   
 - **IgnoreAllDefaultLibraries**  
   
@@ -368,7 +368,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, indica al enlazador que quite una o varias bibliotecas predeterminadas de la lista de bibliotecas en la que realiza búsquedas cuando resuelve referencias externas.  
   
-   Para obtener más información, consulte [/NODEFAULTLIB (Omitir bibliotecas)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Para obtener más información, vea [/NODEFAULTLIB (omitir bibliotecas)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
 - **IgnoreEmbeddedIDL**  
   
@@ -376,7 +376,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, especifica que no se debe procesar ningún atributo IDL del código fuente en un archivo .idl.  
   
-   Para obtener más información, consulte [/IGNOREIDL (No procesar atributos en MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
+   Para obtener más información, vea [/IGNOREIDL (no procesar atributos en MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
   
 - **IgnoreImportLibrary**  
   
@@ -392,7 +392,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica uno o más nombres de las bibliotecas predeterminadas que se ignorarán. Separe varias bibliotecas mediante punto y coma.  
   
-   Para obtener más información, consulte [/NODEFAULTLIB (Omitir bibliotecas)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Para obtener más información, vea [/NODEFAULTLIB (omitir bibliotecas)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
 - **ImageHasSafeExceptionHandlers**  
   
@@ -430,7 +430,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, la aplicación puede controlar direcciones mayores de 2 gigabytes.  
   
-   Para obtener más información, consulte [/LARGEADDRESSAWARE (controlar direcciones largas)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
+   Para obtener más información, vea [/LARGEADDRESSAWARE (controlar direcciones grandes)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
   
 - **LinkDLL**  
   
@@ -456,7 +456,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
   - **SendErrorReport** -  **/ERRORREPORT:SEND**  
   
-    Para obtener más información, consulte [/ERRORREPORT (Informar de errores internos del enlazador)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
+    Para obtener más información, consulte [/errorreport (informar de errores internos del enlazador)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
 - **LinkIncremental**  
   
@@ -464,7 +464,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, controla la vinculación incremental.  
   
-   Para obtener más información, consulte [/INCREMENTAL (Vincular de forma incremental)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
+   Para obtener más información, consulte [/incremental (vincular incrementalmente)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
   
 - **LinkLibraryDependencies**  
   
@@ -490,7 +490,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **Default** -  *\<none>*  
+  - **Predeterminada** - *\<none>*  
   
   - **UseLinkTimeCodeGeneration** - **LTCG**  
   
@@ -502,7 +502,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
      \- **/LTCG:PGUpdate**  
   
-    Para obtener más información, consulte [/LTCG (generación de código en tiempo de vínculo)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
+    Para obtener más información, vea [/LTCG (generación de código en tiempo de vínculo)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
 - **ManifestFile**  
   
@@ -628,7 +628,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, produce un archivo de salida que se puede utilizar con el generador de perfiles de **Herramientas de rendimiento**.  
   
-   Para obtener más información, consulte [/PROFILE (Generador de perfiles de Herramientas de rendimiento)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
+   Para obtener más información, vea [/Profile (generador de perfiles de herramientas de rendimiento)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
   
 - **ProfileGuidedDatabase**  
   
@@ -636,7 +636,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica el nombre del archivo .pgd que se utilizará para almacenar información sobre el programa en ejecución  
   
-   Para obtener más información, consulte [/PGD (especificar la base de datos para las optimizaciones guiadas por perfiles)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
+   Para obtener más información, vea [/PGD (especificar la base de datos para las optimizaciones guiadas por perfiles)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
   
 - **ProgramDatabaseFile**  
   
@@ -644,7 +644,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica un nombre para la base de datos de programa (PDB) que crea el enlazador.  
   
-   Para obtener más información, consulte [/PDB (Utilizar la base de datos de programa)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
+   Para obtener más información, vea [/PDB (usar la base de datos de programa)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
   
 - **RandomizedBaseAddress**  
   
@@ -666,7 +666,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica la alineación de cada sección en el espacio de direcciones lineales del programa. El valor del parámetro es un número de unidad de bytes y una potencia de dos.  
   
-   Para obtener más información, consulte [/ALIGN (Alineación de sección)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
+   Para obtener más información, vea [/align (alineación de sección)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
   
 - **SetChecksum**  
   
@@ -684,7 +684,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **LinkVerbose** -  **/VERBOSE**  
   
@@ -698,7 +698,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
   - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
-    Para obtener más información, consulte [/VERBOSE (Mostrar mensajes de progreso)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
+    Para obtener más información, vea [/verbose (imprimir mensajes de progreso)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
 - **Sources**  
   
@@ -720,7 +720,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica la cantidad de memoria física de cada asignación cuando se asigna memoria adicional.  
   
-   Para obtener más información, consulte el argumento `commit` de [/STACK (Asignaciones de pila)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Para obtener más información, vea el `commit` argumento de [/stack (asignaciones de la pila)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StackReserveSize**  
   
@@ -728,7 +728,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica el tamaño total asignado a la pila en la memoria virtual.  
   
-   Para obtener más información, consulte el argumento `reserve` de [/STACK (Asignaciones de pila)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Para obtener más información, vea el `reserve` argumento de [/stack (asignaciones de la pila)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StripPrivateSymbols**  
   
@@ -746,7 +746,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **Console** -  **/SUBSYSTEM:CONSOLE**  
   
@@ -790,7 +790,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.  
   
-   Para obtener más información, consulte [/NOLOGO (Suprimir el titular de inicio) (enlazador)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
+   Para obtener más información, consulte [/nologo (suprimir el titular de inicio) (vinculador)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
   
 - **SwapRunFromCD**  
   
@@ -806,7 +806,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, indica al sistema operativo que copie primero la salida del enlazador a un archivo de intercambio y ejecute después la imagen desde allí.  
   
-   Para obtener más información, consulte el argumento `NET` de [/SWAPRUN (Cargar los resultados del enlazador en el archivo de intercambio)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Consulte también el parámetro **SwapRunFromCD** en esta tabla.  
+   Para obtener más información, consulte el argumento `NET` de [/SWAPRUN (cargar los resultados del enlazador en el archivo de intercambio)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Consulte también el parámetro **SwapRunFromCD** en esta tabla.  
   
 - **TargetMachine**  
   
@@ -816,7 +816,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **MachineARM** -  **/MACHINE:ARM**  
   
@@ -862,7 +862,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Si `true`, hace que no se genere ningún archivo de salida si el enlazador genera una advertencia.  
   
-   Para obtener más información, consulte [/WX (Tratar advertencias del enlazador como errores)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
+   Para obtener más información, vea [/WX (tratar advertencias del vinculador como errores)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
   
 - **TurnOffAssemblyGeneration**  
   
@@ -878,7 +878,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica el nombre de archivo y la extensión de nombre de archivo del archivo .tlb. Especifique un nombre de archivo o una ruta de acceso y un nombre de archivo.  
   
-   Para obtener más información, consulte [/TLBOUT (Dar nombre a un archivo .TLB)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
+   Para obtener más información, vea [/tlbout (nombre). Archivo TLB)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
   
 - **TypeLibraryResourceID**  
   
@@ -926,5 +926,5 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Para obtener más información, consulte [/VERSION (Información sobre la versión)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

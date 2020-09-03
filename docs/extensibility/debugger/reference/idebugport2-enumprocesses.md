@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::EnumProcesses ? Microsoft Docs
+title: 'IDebugPort2:: EnumProcesses | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb3b3bc07cc784300fd80626acd7f0cd6179773c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725450"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
@@ -41,7 +41,7 @@ int EnumProcesses( 
 
 ## <a name="parameters"></a>Parámetros
 `ppEnum`\
-[fuera] Devuelve un [objeto IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) que contiene una lista de todos los procesos que se ejecutan en un puerto.
+enuncia Devuelve un objeto [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) que contiene una lista de todos los procesos que se ejecutan en un puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

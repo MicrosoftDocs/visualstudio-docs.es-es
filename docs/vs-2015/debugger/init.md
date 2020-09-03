@@ -1,5 +1,5 @@
 ---
-title: Init | Documentos de Microsoft
+title: Init | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea9f8a24d342668b3574c3798a32c58c124aca7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185843"
 ---
 # <a name="init"></a>Init
@@ -38,5 +38,5 @@ void Init(
   
  Para finalizar y cerrar el archivo de registro de gráficos activo, llame a `UnInit` y, a continuación, para capturar y registrar más información de gráficos en un nuevo archivo de registro de gráficos, vuelva a llamar a `Init`. Se puede repetir tantas veces como se desee crear varios archivos de registro de gráficos independientes utilizando la misma instancia de `VsgDbg`.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [UnInit](../debugger/init.md)

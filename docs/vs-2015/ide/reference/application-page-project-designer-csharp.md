@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2bf9c64a55f6f3b49cb1e0a50fa532f276394dac
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851997"
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
@@ -27,7 +27,7 @@ ms.locfileid: "75851997"
 
 Use la página **Aplicación** del **Diseñador de proyectos** para especificar la configuración de la aplicación y las propiedades del proyecto.
 
- En la página **Aplicación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando aparezca el Diseñador de proyectos, haga clic en la pestaña **Aplicación**.
+ Para obtener acceso a la página **Aplicación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando aparezca el Diseñador de proyectos, haga clic en la pestaña **Aplicación**.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
@@ -64,9 +64,9 @@ Use la página **Aplicación** del **Diseñador de proyectos** para especificar 
 
  **Información de ensamblado** Al hacer clic en este botón se muestra el [cuadro de diálogo Información de ensamblado](../../ide/reference/assembly-information-dialog-box.md).
 
- **Objeto de inicio** Define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tiene un punto de entrada, la única opción para esta propiedad es **(Sin establecer)** .
+ **Startup (objeto** ) Define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, la única opción para esta propiedad es **(sin establecer)**.
 
- De manera predeterminada, en un proyecto de Aplicación de explorador WPF, esta opción es **(Sin establecer)** . La otra opción es *Projectname*.App. En este tipo de proyecto, debe establecer el URI de inicio para cargar un recurso de la interfaz de usuario cuando se inicia la aplicación. Para ello, abra el archivo Application.xaml en el proyecto y establezca la propiedad `StartupUri` en un archivo .xaml del proyecto, por ejemplo, Window1.xaml. Para obtener una lista de elementos raíz aceptables, vea <xref:System.Windows.Application.StartupUri%2A>. También tiene que definir un método `public static void Main()` en una clase del proyecto. Esta clase aparecerá en la lista **Objeto de inicio** como *ProjectName.ClassName*. Después, puede seleccionar la clase como el objeto de inicio.
+ De manera predeterminada, en un proyecto de Aplicación de explorador WPF, esta opción es **(Sin establecer)**. La otra opción es *projectname*. app. En este tipo de proyecto, debe establecer el URI de inicio para cargar un recurso de la interfaz de usuario cuando se inicia la aplicación. Para ello, abra el archivo Application.xaml en el proyecto y establezca la propiedad `StartupUri` en un archivo .xaml del proyecto, por ejemplo, Window1.xaml. Para obtener una lista de elementos raíz aceptables, vea <xref:System.Windows.Application.StartupUri%2A>. También tiene que definir un método `public static void Main()` en una clase del proyecto. Esta clase aparecerá en la lista **Objeto de inicio** como *ProjectName.ClassName*. Después, puede seleccionar la clase como el objeto de inicio.
 
  Para obtener más información, vea [/main (Opciones del compilador de C#)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -87,7 +87,7 @@ Use la página **Aplicación** del **Diseñador de proyectos** para especificar 
 
   **Archivo de recursos** Seleccione este botón de opción si va a proporcionar un archivo de recursos para el proyecto. Al seleccionar esta opción se deshabilitan las opciones **Icono** y **Manifiesto**.
 
-  Escriba un nombre de ruta o use el botón Examinar ( **...** ) para agregar un archivo de recursos de Win32 al proyecto.
+  Escriba un nombre de ruta o use el botón Examinar (**...**) para agregar un archivo de recursos de Win32 al proyecto.
 
-## <a name="see-also"></a>Vea también
-[Administrar las propiedades](../../ide/application-properties.md) [de la aplicación escribir código en soluciones de Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+## <a name="see-also"></a>Consulte también
+[Administrar las propiedades de la aplicación](../../ide/application-properties.md) [Escribir código en soluciones de Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

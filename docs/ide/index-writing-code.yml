@@ -1,57 +1,63 @@
 ### YamlMime:Landing
-title: "Organización y edición de código en Visual\_Studio"
-summary: 'Obtenga información sobre cómo trabajar con proyectos de código, usar las características del editor y mantener un estilo coherente.'
+title: Organización y edición de código en Visual Studio
+summary: Obtenga información sobre cómo trabajar con proyectos de código, usar las características del editor y mantener un estilo coherente.
 metadata:
   title: Características del editor de código
-  description: "Obtenga más información sobre las características de edición de código de Visual\_Studio."
+  description: Obtenga más información sobre las características de edición de código de Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
   author: jillre
   ms.author: jillfra
   ms.date: 10/15/2019
+  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
+  ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 03/18/2020
+  ms.locfileid: "74316436"
 landingContent:
-  - title: Abrir o crear un proyecto
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Crear un proyecto nuevo
-            url: create-new-project.md
-          - text: Abrir un proyecto desde un repositorio
-            url: ../get-started/tutorial-open-project-from-repo.md
-      - linkListType: how-to-guide
-        links:
-          - text: Uso de Visual Studio sin proyectos ni soluciones
-            url: develop-code-in-visual-studio-without-projects-or-solutions.md
-  - title: Usar características de edición
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Usar el editor de código
-            url: writing-code-in-the-code-and-text-editor.md
-          - text: Navegación en el código
-            url: navigating-code.md
-          - text: Generación y corrección del código
-            url: code-generation-in-visual-studio.md
-          - text: Usar IntelliSense para la finalización del código
-            url: using-intellisense.md
-          - text: Administrar preferencias de estilo del código
-            url: code-styles-and-code-cleanup.md
-          - text: Análisis de código
-            url: ../code-quality/roslyn-analyzers-overview.md
-          - text: IntelliCode
-            url: /visualstudio/intellicode/intellicode-visual-studio
-  - title: Introducción a los lenguajes de programación
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: 'Introducción a C# y ASP.NET Core en Visual Studio'
-            url: tutorial-csharp-aspnet-core.md
-          - text: Creación de una aplicación de consola de C++ en Visual Studio
-            url: /cpp/get-started/tutorial-console-cpp
-          - text: Introducción a Python en Visual Studio
-            url: quickstart-python.md
-          - text: Creación de una aplicación de consola con Visual Basic
-            url: quickstart-visual-basic-console.md
-          - text: Creación de una aplicación web con Node.js
-            url: quickstart-nodejs.md
+- title: Abrir o crear un proyecto
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Crear un proyecto nuevo
+      url: create-new-project.md
+    - text: Abrir un proyecto desde un repositorio
+      url: ../get-started/tutorial-open-project-from-repo.md
+  - linkListType: how-to-guide
+    links:
+    - text: Uso de Visual Studio sin proyectos ni soluciones
+      url: develop-code-in-visual-studio-without-projects-or-solutions.md
+- title: Usar características de edición
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Usar el editor de código
+      url: writing-code-in-the-code-and-text-editor.md
+    - text: Navegación en el código
+      url: navigating-code.md
+    - text: Generación y corrección del código
+      url: code-generation-in-visual-studio.md
+    - text: Usar IntelliSense para la finalización del código
+      url: using-intellisense.md
+    - text: Administrar preferencias de estilo del código
+      url: code-styles-and-code-cleanup.md
+    - text: Análisis de código
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: IntelliCode
+      url: /visualstudio/intellicode/intellicode-visual-studio
+- title: Introducción a los lenguajes de programación
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Introducción a C# y ASP.NET Core en Visual Studio
+      url: tutorial-csharp-aspnet-core.md
+    - text: Creación de una aplicación de consola de C++ en Visual Studio
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Introducción a Python en Visual Studio
+      url: quickstart-python.md
+    - text: Creación de una aplicación de consola con Visual Basic
+      url: quickstart-visual-basic-console.md
+    - text: Creación de una aplicación web con Node.js
+      url: quickstart-nodejs.md

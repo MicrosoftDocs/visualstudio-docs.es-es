@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: af3dd595b786c57983e44982fa2eb8b9afa2959a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300771"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador de Visual Studio para Android
@@ -24,7 +24,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
  Puede probar la aplicación en un perfil de dispositivo único para cada una de las plataformas Android, resoluciones de pantalla y otras propiedades de hardware compatibles con el Emulador de Visual Studio para Android.  
   
- Este tema contiene las siguientes secciones.  
+ En este tema se incluyen las siguientes secciones.  
   
 - [Instalación y desinstalación](#Installing)  
   
@@ -40,7 +40,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
 - [Recursos de soporte técnico](#Support)  
   
-## <a name="Installing"></a> Instalación y desinstalación  
+## <a name="installing-and-uninstalling"></a><a name="Installing"></a> Instalación y desinstalación  
  Instalación  
   
  El Emulador de Visual Studio para Android es un componente de las herramientas de desarrollo multiplataforma disponibles en Visual Studio, y se instalará durante una instalación personalizada de Visual Studio si selecciona Desarrollo para móviles entre plataformas, Kits de desarrollo de software y herramientas comunes y, por último, Emulador de Visual Studio para Android.  
@@ -54,16 +54,16 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
  Cuando desinstala el Emulador de Visual Studio para Android, los adaptadores Ethernet virtuales Hyper-V que se crearon para su uso no se quitan automáticamente. Puede quitar manualmente estos adaptadores virtuales (si no están en uso); para ello, abra el Administrador de Hyper-V, seleccione una de las imágenes de disco duro virtual del emulador, seleccione la pestaña Funciones de red y seleccione **Quitar** para todos los modificadores que aparecen en esta pestaña.  
   
-## <a name="Requirements"></a> Requisitos del sistema y compatibilidad con versiones anteriores  
+## <a name="system-requirements-and-backward-compatibility"></a><a name="Requirements"></a> Requisitos del sistema y compatibilidad con versiones anteriores  
  Para obtener información importante sobre los requisitos de hardware, software y configuración del emulador de Visual Studio para Android, vea el siguiente tema.  
   
-- [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [Requisitos del sistema para el emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
   El Emulador de Visual Studio para Android requiere Visual Studio de 2015; no es compatible con versiones anteriores de Visual Studio.  
   
   Las nuevas versiones del emulador se instalan sobre las versiones anteriores (y pueden, en algunos casos, reemplazar las imágenes anteriores y descartar la configuración, las aplicaciones y los archivos instalados en dichas imágenes).  
   
-## <a name="Networking"></a> Funciones de red en el Emulador de Visual Studio para Android  
+## <a name="networking-in-the-visual-studio-emulator-for-android"></a><a name="Networking"></a> Funciones de red en el emulador de Visual Studio para Android  
  La conexión de red del Emulador de Visual Studio para Android se comporta como la conexión de un equipo de escritorio, con estas características:  
   
 - El emulador aparece en la red como un dispositivo independiente, con su propia dirección IP.  
@@ -74,11 +74,11 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
   Para comprender las capacidades de la conexión de red del emulador, piense que es similar a la conexión Wi-Fi de un teléfono Android a la misma red. Si una aplicación que se ejecuta en el teléfono puede acceder a un recurso de red a través de su conexión Wi-Fi, una aplicación que se ejecuta en el emulador puede acceder el mismo recurso de red.  
   
-  Para obtener más información sobre los requisitos de red, vea [Requisitos del sistema del Emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+  Para obtener más información sobre los requisitos de red, vea [requisitos del sistema para el emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) .  
   
   Para obtener información sobre cómo solucionar problemas de red, vea [Solución de problemas del Emulador de Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
-## <a name="Configuring"></a> Configuración del Emulador de Visual Studio para Android  
+## <a name="configure-the-visual-studio-emulator-for-android"></a><a name="Configuring"></a> Configuración del emulador de Visual Studio para Android  
  Probar la compatibilidad de una aplicación Android con la enorme variedad de hardware Android puede suponer un desafío. Los teléfonos y tabletas Android en el mercado abarcan una amplia gama de versiones y tamaños de pantalla, con muchas configuraciones de hardware distintas (RAM, CPU, arquitectura, etc.). El Emulador de Visual Studio para Android simplifica todo esto mediante los perfiles de dispositivo. Nuestro conjunto de perfiles de dispositivo representa el hardware más popular del mercado, incluidos los dispositivos de Samsung, Motorola, Sony, LG y otros muchos.  
   
  En Visual Studio 2015 puede instalar, desinstalar e iniciar perfiles de dispositivo mediante el Administrador del emulador. Puede acceder al Administrador del emulador eligiendo **Herramientas** y **Emulador de Visual Studio para Android**.  
@@ -89,10 +89,10 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
  Una vez haya instalado el conjunto de perfiles que quiere, puede iniciarlos directamente desde el Administrador pulsando el botón verde **Reproducir**. También aparecerá en el menú desplegable Destino de depuración en cualquier tipo de proyecto móvil multiplataforma de Visual Studio.  
   
-## <a name="FeaturesTest"></a> Características que puede probar en el emulador  
+## <a name="features-that-you-can-test-in-the-emulator"></a><a name="FeaturesTest"></a> Características que puede probar en el emulador  
  Para obtener información detallada sobre las características que puede probar en el emulador, vea esta [documentación](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).  
   
-## <a name="FeaturesNonTest"></a> Características que no puede probar en el emulador  
+## <a name="features-that-you-cant-test-in-the-emulator"></a><a name="FeaturesNonTest"></a> Características que no puede probar en el emulador  
  La lista siguiente describe características de la plataforma Android que **no puede** probar en el emulador. Deberá probarlas en un dispositivo físico.  
   
 - Brújula  
@@ -103,13 +103,13 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
 - Luminosidad. Cambiar el nivel de luminosidad del emulador no afecta al modo en que el dispositivo aparece en la pantalla.  
   
-## <a name="Support"></a> Recursos de soporte técnico  
+## <a name="support-resources"></a><a name="Support"></a> Recursos de soporte  
  Si el equipo host cumple los requisitos del sistema y detecta un problema que no se trata en esta guía de solución de problemas:  
   
 - Formule una pregunta en StackOverflow con las etiquetas [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) y visual-studio.  
   
 - Notifique un problema con la herramienta Enviar una sonrisa en Visual Studio o en el administrador del emulador.  
   
-## <a name="see-also"></a>Vea también  
- [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
+## <a name="see-also"></a>Consulte también  
+ [Requisitos del sistema para el emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Solución de problemas del emulador de Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

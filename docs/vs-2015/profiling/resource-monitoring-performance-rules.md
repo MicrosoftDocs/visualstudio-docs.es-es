@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f09b564f6eec6cccaa4a8f213b4a292a5ec610c8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533894"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Reglas de rendimiento de la supervisión de recursos

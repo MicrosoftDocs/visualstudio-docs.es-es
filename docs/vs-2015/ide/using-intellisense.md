@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 735f93b2f900b8681a1e9fee490de8e4b697f9e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656446"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
@@ -46,7 +46,7 @@ IntelliSense es el término general que se usa para describir varias caracterís
 
  En la lista de miembros, el icono de la izquierda representa el tipo del miembro, como el espacio de nombres, la clase, la función o la variable. Para ver una lista de iconos, vea [Iconos de la vista de clases y del examinador de objetos](../ide/class-view-and-object-browser-icons.md). La lista puede ser bastante larga, por lo que puede presionar RE PÁG o AV PÁG para subir o bajar en ella.
 
- ![Lista de miembros de Visual Studio](../ide/media/vs2015-intellisense.png "|::ref1::|")
+ ![Lista de miembros de Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
  Puede invocar la característica **Lista de miembros** manualmente. Para ello, presione CTRL+J y haga clic en **Editar/IntelliSense/Lista de miembros** o en el botón **Lista de miembros** de la barra de herramientas del editor. Cuando se invoca en una línea en blanco o fuera de un ámbito reconocible, la lista muestra símbolos del espacio de nombres global.
 
@@ -59,7 +59,7 @@ IntelliSense es el término general que se usa para describir varias caracterís
 
  El parámetro en negrita indica el siguiente parámetro requerido a medida que escribe la función. En el caso de funciones sobrecargadas, se puede utilizar las teclas de flecha ARRIBA y ABAJO para ver información de parámetros alternativos para las sobrecargas de funciones.
 
- ![Información de parámetros](../ide/media/vs2015-param-info.png "|::ref2::|")
+ ![Información de parámetros](../ide/media/vs2015-param-info.png "VS2015_param_Info")
 
  Cuando se agregan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md).
 
@@ -68,11 +68,11 @@ IntelliSense es el término general que se usa para describir varias caracterís
 ## <a name="quick-info"></a>Información rápida
  La opción Información rápida muestra la declaración completa de cualquier identificador del código.
 
- ![Información rápida de Visual Studio](../ide/media/vs2015-quick-info.png "|::ref3::|")
+ ![Información rápida de Visual Studio](../ide/media/vs2015-quick-info.png "VS2015_Quick_info")
 
  Cuando se selecciona un miembro en el cuadro **Lista de miembros**, también aparece la información rápida.
 
- ![Información de parámetros en un archivo de código de C&#35;](../ide/media/vs2015-paraminfo.png "|::ref4::|")
+ ![Información de parámetros en un archivo de código de C&#35;](../ide/media/vs2015-paraminfo.png "VS2015_ParamInfo")
 
  Para invocar manualmente la información rápida, haga clic en **Editar/IntelliSense/Información rápida**, presione CTRL+I o haga clic en el botón **Información rápida** de la barra de herramientas del editor.
 
@@ -86,7 +86,7 @@ IntelliSense es el término general que se usa para describir varias caracterís
 ## <a name="intellisense-options"></a>Opciones de IntelliSense
  Las opciones de IntelliSense están activadas de forma predeterminada. Para desactivarlas, haga clic en **Herramientas/Opciones/Editor de texto** y anule la selección de **Información de parámetros** o de **Lista de miembros automática** si no quiere usar la característica Lista de miembros.
 
-## <a name="troubleshooting-intellisense"></a>Solución de problemas de IntelliSense
+## <a name="troubleshooting-intellisense"></a>Solución de problemas IntelliSense
  En algunos casos, es posible que las opciones de IntelliSense no funcionen como esperaba.
 
  **El cursor está debajo de un error de código.** Quizá no pueda usar IntelliSense si existe una función incompleta u otro error en el código encima del cursor, ya que IntelliSense no puede analizar los elementos del código. Puede resolver este problema marcando como comentario el código correspondiente.
@@ -101,5 +101,5 @@ MessageBox( hWnd, "String literal|") )
 
  **Las opciones automáticas están desactivadas.** De forma predeterminada, IntelliSense funciona automáticamente, pero puede deshabilitarlo. También puede invocar una característica IntelliSense incluso cuando la finalización de instrucciones automática se encuentre deshabilitada.
 
-## <a name="see-also"></a>Otras referencias
- IntelliSense [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md) para [JavaScript](../ide/javascript-intellisense.md) [específico de Visual Basic](../ide/visual-basic-specific-intellisense.md) IntelliSense [proporcionar comentarios de código XML](../ide/supplying-xml-code-comments.md)
+## <a name="see-also"></a>Consulte también
+ IntelliSense de [Visual C#](../ide/visual-csharp-intellisense.md) [específico de Visual Basic IntelliSense de IntelliSense para](../ide/visual-basic-specific-intellisense.md) [JavaScript](../ide/javascript-intellisense.md) que [proporciona comentarios de código XML](../ide/supplying-xml-code-comments.md)

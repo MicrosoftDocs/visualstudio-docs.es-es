@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8042b228a481dc3d720d8b422963db41abbddcd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533840"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -47,7 +47,7 @@ Utilice la herramienta de línea de comandos **VsPerf** para:
 |**/noclr**|Opcional. No se recopilan datos de CLR.<br /><br /> Utilícelo solo con/package o /attach.<br /><br /> Optimización, no se resolverán símbolos administrados.|  
 |**/listapps**|Lista los nombres y PackageFullNames de la aplicación instalada.|  
   
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>Aplicaciones de escritorio de Windows 8 y aplicaciones de Windows Server 2012 únicamente  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplicaciones de escritorio de Windows 8 y aplicaciones de Windows Server 2012 únicamente  
  Estas opciones no funcionan en aplicaciones de la Tienda Windows.  
   
 |Opción|Descripción|  
@@ -56,7 +56,7 @@ Utilice la herramienta de línea de comandos **VsPerf** para:
 |**/args:{ExecutableArguments}**|Especifica los argumentos de línea de comandos para pasar el destino de **/launch**.|  
 |**/console**|Ejecuta el destino de **/launch** en una nueva ventana de comandos.|  
   
-## <a name="all-applications"></a><a name="BKMK_All_applications"></a>Todas las aplicaciones  
+## <a name="all-applications"></a><a name="BKMK_All_applications"></a> Todas las aplicaciones  
  Estas opciones se aplican a cualquier aplicación de Windows 8 o de Windows Server 2012.  
   
 |Opción|Descripción|  

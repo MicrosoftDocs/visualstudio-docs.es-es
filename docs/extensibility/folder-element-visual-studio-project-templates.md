@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769590"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder (elemento, plantillas de proyecto de Visual Studio)
@@ -50,7 +50,7 @@ Especifica una carpeta que se agregará al proyecto.
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|`Folder`|Especifica la carpeta que se va a agregar al proyecto. `Folder`los elementos pueden contener `Folder` elementos secundarios.|
+|`Folder`|Especifica la carpeta que se va a agregar al proyecto. `Folder` los elementos pueden contener `Folder` elementos secundarios.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Especifica un archivo que se va a agregar al proyecto.|
 
 ### <a name="parent-elements"></a>Elementos primarios
@@ -59,8 +59,8 @@ Especifica una carpeta que se agregará al proyecto.
 |-------------|-----------------|
 |[Proyecto](../extensibility/project-element-visual-studio-templates.md)|Elemento secundario opcional de [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
-## <a name="remarks"></a>Comentarios
- `Folder`es un elemento secundario opcional de `Project` .
+## <a name="remarks"></a>Observaciones
+ `Folder` es un elemento secundario opcional de `Project` .
 
  Puede usar cualquiera de los métodos siguientes para organizar los elementos de proyecto en carpetas en una plantilla:
 

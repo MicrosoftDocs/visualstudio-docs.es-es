@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8189330f5bc3ff5c9008b6f01ffc00af96162806
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301149"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
@@ -41,7 +41,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
   La responsabilidad de un EMD es decidir cómo se debe combinar un objeto o un grupo de objetos en una ubicación determinada del modelo. En concreto, decide qué relaciones deben crearse para vincular el Grupo combinado al modelo. También puede personalizarlo para establecer las propiedades y crear objetos adicionales.
 
-  ![Combinación&#45;de&#95;EMD de DSL](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge") El rol de una directiva de combinación de elementos
+  ![Combinación de EMD&#95;DSL&#45;](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge") El rol de una directiva de combinación de elementos
 
   Un EMD se genera automáticamente cuando se define una relación de incrustación. Este EMD predeterminado crea una instancia de la relación cuando los usuarios agregan nuevas instancias secundarias al elemento primario. Puede modificar estos EMDs predeterminados, por ejemplo, agregando código personalizado.
 
@@ -50,7 +50,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 ## <a name="defining-an-element-merge-directive"></a>Definir una directiva de combinación de elementos
  Puede Agregar directivas de combinación de elementos a clases de dominio, relaciones de dominio, formas, conectores y diagramas. Puede agregarlos o encontrarlos en el explorador de DSL en la clase de dominio receptor. La clase receptora es la clase de dominio del elemento que ya está en el modelo y en la que se combinará el elemento nuevo o copiado.
 
- ![Detalles&#45;de&#95;EMD de DSL](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")
+ ![Detalles de EMD&#95;de DSL&#45;](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")
 
  La **clase de indización** es la clase de dominio de los elementos que se pueden combinar en los miembros de la clase receptora. Este EMD también combinará las instancias de subclases de la clase de indexación, a menos que establezca **se aplica a las subclases** a false.
 
@@ -73,7 +73,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 > [!NOTE]
 > Si escribe código de combinación personalizado, solo afectará a las combinaciones realizadas mediante este EMD. Si hay otros EMDs que combinen el mismo tipo de objeto, o si hay otro código personalizado que cree estos objetos sin usar EMD, no se verán afectados por el código de combinación personalizado.
 >
-> Si desea asegurarse de que el código personalizado siempre procese un nuevo elemento o una nueva relación, considere la posibilidad de definir una `AddRule` en la relación de incrustación y una `DeleteRule` en la clase de dominio del elemento. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
+> Si desea asegurarse de que el código personalizado siempre procese un nuevo elemento o una nueva relación, considere la posibilidad de definir un `AddRule` en la relación de incrustación y `DeleteRule` en la clase de dominio del elemento. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Ejemplo: definir un EMD sin código personalizado
  En el ejemplo siguiente se permite a los usuarios crear un elemento y un conector al mismo tiempo arrastrando desde el cuadro de herramientas hasta una forma existente. En el ejemplo se agrega un EMD a la definición de DSL. Antes de realizar esta modificación, los usuarios pueden arrastrar herramientas al diagrama, pero no a las formas existentes.
@@ -86,15 +86,15 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
     Al ejecutar este DSL, le permite crear formas y conectores entre las formas. No se puede arrastrar una nueva forma **ExampleElement** desde el cuadro de herramientas hasta una forma existente.
 
-2. Para permitir que los usuarios combinen elementos en `ExampleElement` formas, cree un nuevo EMD en la clase de dominio `ExampleElement`:
+2. Para permitir que los usuarios combinen elementos en `ExampleElement` formas, cree un nuevo EMD en la `ExampleElement` clase de dominio:
 
-   1. En el **Explorador de DSL**, expanda clases de **dominio**. Haga clic con el botón derecho en `ExampleElement` y luego haga clic en **Agregar nuevo elemento Directiva de combinación**.
+   1. En el **Explorador de DSL**, expanda clases de **dominio**. Haga clic con el botón secundario `ExampleElement` y, a continuación, haga clic en **Agregar nuevo elemento Directiva de combinación**.
 
    2. Asegúrese de que la ventana **detalles de DSL** está abierta para que pueda ver los detalles del nuevo EMD. (Menú: **Ver**, **otras ventanas**, **detalles de DSL**).
 
-3. Establezca la **clase de indexación** en la ventana detalles de DSL para definir la clase de elementos que se pueden combinar en objetos de `ExampleElement`.
+3. Establezca la **clase de indexación** en la ventana detalles de DSL para definir la clase de elementos que se pueden combinar en los `ExampleElement` objetos.
 
-    En este ejemplo, seleccione `ExampleElements`, para que el usuario pueda arrastrar nuevos elementos a los elementos existentes.
+    En este ejemplo, seleccione `ExampleElements` , para que el usuario pueda arrastrar nuevos elementos a los elementos existentes.
 
     Tenga en cuenta que la clase de indexación se convierte en el nombre de EMD en DSL Explorer.
 
@@ -110,7 +110,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
       Puede usar la herramienta de navegación ruta de acceso para crear cada ruta de acceso:
 
-   3. En **procesar combinación creando vínculos en rutas**de acceso, haga clic en **\<agregar ruta de acceso >** .
+   3. En **procesar combinación creando vínculos en rutas**de acceso, haga clic en **\<add path>** .
 
    4. Haga clic en la flecha desplegable situada a la derecha del elemento de lista. Aparece una vista de árbol.
 
@@ -122,7 +122,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
         La regeneración tardará más de lo habitual, ya que el código generado se actualizará desde las plantillas de texto para ajustarse a la nueva definición de DSL.
 
-   2. Cuando se haya iniciado la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo de modelo de su DSL. Cree algunos elementos de ejemplo.
+   2. Cuando se haya iniciado la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , abra un archivo de modelo de su DSL. Cree algunos elementos de ejemplo.
 
    3. Arrastre desde la herramienta **elemento de ejemplo** hasta una forma existente.
 
@@ -142,7 +142,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 - EMD afecta a la creación desde el cuadro de herramientas y también a las operaciones de pegado.
 
-     Si escribe código personalizado que crea nuevos elementos, puede invocar explícitamente el EMD mediante el método `ElementOperations.Merge`. Esto garantiza que el código vincula nuevos elementos al modelo de la misma manera que otras operaciones. Para obtener más información, vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).
+     Si escribe código personalizado que crea nuevos elementos, puede invocar explícitamente el EMD mediante el `ElementOperations.Merge` método. Esto garantiza que el código vincula nuevos elementos al modelo de la misma manera que otras operaciones. Para obtener más información, vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).
 
 ## <a name="example-adding-custom-accept-code-to-an-emd"></a>Ejemplo: agregar código de aceptación personalizado a un EMD
  Al agregar código personalizado a un EMD, puede definir un comportamiento de combinación más complejo. En este sencillo ejemplo se evita que el usuario agregue más de un número fijo de elementos al diagrama. En el ejemplo se modifica el valor predeterminado de EMD que acompaña a una relación de incrustación.
@@ -151,9 +151,9 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 1. Cree un DSL con la plantilla de solución de **idioma mínimo** . Abra el diagrama de definición de DSL.
 
-2. En DSL Explorer, expanda **clases de dominio**, `ExampleModel`, **directivas de combinación de elementos**. Seleccione la Directiva de combinación de elementos denominada `ExampleElement`.
+2. En DSL Explorer, expanda **clases de dominio**, `ExampleModel` , directivas de combinación de **elementos**. Seleccione la Directiva de combinación de elementos denominada `ExampleElement` .
 
-     Este EMD controla cómo el usuario puede crear nuevos objetos `ExampleElement` en el modelo, por ejemplo arrastrando desde el cuadro de herramientas.
+     Este EMD controla cómo el usuario puede crear nuevos `ExampleElement` objetos en el modelo, por ejemplo arrastrando desde el cuadro de herramientas.
 
 3. En la ventana **detalles de DSL** , seleccione **usa aceptación personalizada**.
 
@@ -161,7 +161,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
      Se informará de un error de compilación similar a: "Company. ElementMergeSample. ExampleElement no contiene una definición para CanMergeExampleElement..."
 
-     Debe implementar el método `CanMergeExampleElement`.
+     Debe implementar el método `CanMergeExampleElement` .
 
 5. Cree un nuevo archivo de código en el proyecto **DSL** . Reemplace su contenido por el código siguiente y cambie el espacio de nombres al espacio de nombres del proyecto.
 
@@ -191,11 +191,11 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
     ```
 
-     En este sencillo ejemplo se restringe el número de elementos que se pueden combinar en el modelo primario. En el caso de condiciones más interesantes, el método puede inspeccionar cualquiera de las propiedades y los vínculos del objeto receptor. También puede inspeccionar las propiedades de los elementos de combinación, que se incluyen en un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Para obtener más información acerca de `ElementGroupPrototypes`, vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md). Para obtener más información sobre cómo escribir código que lea un modelo, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     En este sencillo ejemplo se restringe el número de elementos que se pueden combinar en el modelo primario. En el caso de condiciones más interesantes, el método puede inspeccionar cualquiera de las propiedades y los vínculos del objeto receptor. También puede inspeccionar las propiedades de los elementos de combinación, que se incluyen en <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> . Para obtener más información sobre `ElementGroupPrototypes` , vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md). Para obtener más información sobre cómo escribir código que lea un modelo, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 6. Pruebe el DSL:
 
-    1. Presione F5 para volver a compilar la solución. Cuando se abra la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra una instancia de su DSL.
+    1. Presione F5 para volver a compilar la solución. Cuando se abra la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , abra una instancia de su DSL.
 
     2. Cree nuevos elementos de varias maneras:
 
@@ -212,9 +212,9 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 1. Set **usa la combinación personalizada** y proporciona el código necesario. El código reemplaza el código de combinación generado. Utilice esta opción si desea volver a definir completamente lo que hace la combinación.
 
-2. Invalide el método `MergeRelate` y, opcionalmente, el método `MergeDisconnect`. Para ello, debe establecer la propiedad **genera Double derived** de la clase de dominio. El código puede llamar al código de combinación generado en la clase base. Utilice esta opción si desea realizar operaciones adicionales después de que se haya realizado la combinación.
+2. Invalide el `MergeRelate` método y, opcionalmente, el `MergeDisconnect` método. Para ello, debe establecer la propiedad **genera Double derived** de la clase de dominio. El código puede llamar al código de combinación generado en la clase base. Utilice esta opción si desea realizar operaciones adicionales después de que se haya realizado la combinación.
 
-   Estos enfoques solo afectan a las combinaciones que se realizan mediante este EMD. Si desea influir en todas las formas en que se puede crear el elemento combinado, una alternativa es definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio combinado. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
+   Estos enfoques solo afectan a las combinaciones que se realizan mediante este EMD. Si desea influir en todas las formas en que se puede crear el elemento combinado, una alternativa consiste en definir un `AddRule` en la relación de incrustación y `DeleteRule` en la clase de dominio combinado. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
 #### <a name="to-override-mergerelate"></a>Para invalidar MergeRelate
 
@@ -222,7 +222,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 2. En el diagrama DslDefinition, seleccione la clase receptora de la combinación. Normalmente, es la clase en el extremo de origen de una relación de incrustación.
 
-     Por ejemplo, en un DSL generado a partir de la solución de idioma mínimo, seleccione `ExampleModel`.
+     Por ejemplo, en un DSL generado a partir de la solución de idioma mínimo, seleccione `ExampleModel` .
 
 3. En la ventana **propiedades** , establezca **genera Double derived** en **true**.
 
@@ -230,7 +230,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 5. Inspeccione el contenido de **Dsl\Generated Files\DomainClasses.CS**. Busque métodos denominados `MergeRelate` y examine su contenido. Esto le ayudará a escribir sus propias versiones.
 
-6. En un nuevo archivo de código, escriba una clase parcial para la clase receptora e invalide el método `MergeRelate`. Recuerde llamar al método base. Por ejemplo:
+6. En un nuevo archivo de código, escriba una clase parcial para la clase receptora e invalide el `MergeRelate` método. Recuerde llamar al método base. Por ejemplo:
 
     ```csharp
     partial class ExampleModel
@@ -259,9 +259,9 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 #### <a name="to-write-custom-merge-code"></a>Para escribir código de combinación personalizado
 
-1. En **Dsl\Generated Code\DomainClasses.CS**, inspeccione métodos denominados `MergeRelate`. Estos métodos crean vínculos entre un nuevo elemento y el modelo existente.
+1. En **Dsl\Generated Code\DomainClasses.CS**, inspeccione los métodos denominados `MergeRelate` . Estos métodos crean vínculos entre un nuevo elemento y el modelo existente.
 
-    También puede inspeccionar métodos denominados `MergeDisconnect`. Estos métodos desvinculan un elemento del modelo cuando se va a eliminar.
+    También puede inspeccionar métodos denominados `MergeDisconnect` . Estos métodos desvinculan un elemento del modelo cuando se va a eliminar.
 
 2. En el **Explorador de DSL**, seleccione o cree la Directiva de combinación de elementos que desea personalizar. En la ventana **detalles de DSL** , establezca **usa combinación personalizada**.
 
@@ -269,7 +269,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 3. Recompilar la solución. Tardará más de lo habitual, ya que los archivos de código generado se actualizarán a partir del modelo.
 
-    Aparecerán mensajes de error. Haga doble clic en los mensajes de error para ver las instrucciones en el código generado. Estas instrucciones le piden que suministre dos métodos, `MergeRelate`*YourDomainClass* y `MergeDisconnect`*YourDomainClass*
+    Aparecerán mensajes de error. Haga doble clic en los mensajes de error para ver las instrucciones en el código generado. Estas instrucciones le piden que suministre dos métodos, `MergeRelate` *YourDomainClass* y `MergeDisconnect` *YourDomainClass*
 
 4. Escriba los métodos en una definición de clase parcial en un archivo de código independiente. Los ejemplos que inspeccionó anteriormente deberían sugerir lo que necesita.
 
@@ -284,7 +284,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 #### <a name="to-create-a-forward-merge-directive"></a>Para crear una directiva de combinación hacia delante
 
-1. Cree una solución de [!INCLUDE[dsl](../includes/dsl-md.md)] mediante la plantilla modelo de componentes.
+1. Cree una [!INCLUDE[dsl](../includes/dsl-md.md)] solución mediante la plantilla modelo de componentes.
 
 2. Abra DslDefinition. DSL para mostrar el **Explorador de DSL** .
 
@@ -308,7 +308,7 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
 9. Guarde la solución y, a continuación, transforme las plantillas haciendo clic en el botón situado más a la derecha en la barra de herramientas **Explorador de soluciones** .
 
-10. Compile y ejecute la solución. Aparecerá una nueva instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+10. Compile y ejecute la solución. Aparecerá una nueva instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 11. En **Explorador de soluciones**, abra sample. midsl. Aparecen el diagrama y el **cuadro de herramientas ComponentLanguage** .
 
@@ -316,5 +316,5 @@ Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de he
 
      No debe ver el puntero no disponible y debe poder quitar el nuevo **Puerto de entrada** en el existente. Seleccione el nuevo **Puerto de entrada** y arrástrelo hasta otro punto del **componente**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md) [personalizar herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md)

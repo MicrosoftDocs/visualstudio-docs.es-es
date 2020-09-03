@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode ? Microsoft Docs
+title: 'IDebugPortNotify2:: AddProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724987"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-Registra un programa que se puede depurar con el puerto en el que se ejecuta.
+Registra un programa que se puede depurar con el puerto en el que se está ejecutando.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int AddProgramNode( 
 
 ## <a name="parameters"></a>Parámetros
 `pProgramNode`\
-[en] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el programa que se va a registrar.
+de Objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el programa que se va a registrar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Un nodo de programa se puede anular el registro del puerto mediante una llamada a la [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) método.
+ Se puede anular el registro de un nodo de programa desde el puerto llamando al método [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

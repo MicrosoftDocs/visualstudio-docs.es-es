@@ -12,10 +12,10 @@ ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
 ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850990"
 ---
 # <a name="creating-your-own-start-page"></a>Crear su propia página de inicio
@@ -99,6 +99,6 @@ Puede crear una página de inicio personalizada con la plantilla de proyecto de 
   
    Puede compartir su página de inicio personalizada cargando el archivo. vsix del directorio bin\Debug en el sitio web de [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o en otro sitio web o recurso compartido de intranet. Para obtener más información, consulta [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Personalización de la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Tutorial: adición de XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Next | Microsoft Docs
+title: 'IEnumDebugModules2:: Next | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25211ac1cbe64dd29bbdc85c4f2674b7e9977851
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191914"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Devuelve el siguiente conjunto de elementos de la enumeración.  
+Devuelve el conjunto de elementos siguiente de la enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,17 +44,17 @@ int Next(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
+ [in] Número de elementos que se van a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
   
  `rgelt`  
- [in, out] Matriz de [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) elementos que deben rellenarse.  
+ [in, out] Matriz de elementos [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que se va a rellenar.  
   
  `pceltFetched`  
- [out] Devuelve el número de elementos realmente devueltos en `rgelt`.  
+ enuncia Devuelve el número de elementos realmente devueltos en `rgelt` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

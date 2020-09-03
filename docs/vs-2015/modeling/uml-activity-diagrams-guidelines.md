@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298991"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de actividades UML: Instrucciones
@@ -43,7 +43,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
   Para obtener información de referencia sobre los elementos de los diagramas de actividades, vea [diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md).
 
-## <a name="Relationships"></a>Relación con otros diagramas
+## <a name="relationship-to-other-diagrams"></a><a name="Relationships"></a> Relación con otros diagramas
  Si dibuja un diagrama de actividades para describir un proceso de negocio o la manera en que los usuarios usan el sistema, puede dibujar un diagrama de casos de uso para mostrar una vista diferente de la misma información. En el diagrama de casos de uso, las acciones se dibujan como casos de uso. Asigne a los casos de uso los mismos nombres que las acciones correspondientes. Las ventajas de la vista de casos de uso son las siguientes:
 
 - Puede mostrar en un diagrama la manera en que las acciones y los casos de uso más grandes se componen de otros más pequeños, mediante la relación Includes.
@@ -56,7 +56,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
   En un diagrama de actividades, puede mostrar el flujo de datos que se pasan entre las acciones. Vea la sección sobre cómo [describir el flujo de datos](#DataFlows). Sin embargo, un diagrama de actividades no describe la estructura de los datos. Para ello, puede dibujar un diagrama de clases UML. Para obtener información, consulte [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Pasos básicos para dibujar diagramas de actividades
+## <a name="basic-steps-for-drawing-activity-diagrams"></a><a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de actividades
  En [Editar modelos y diagramas UML,](../modeling/edit-uml-models-and-diagrams.md)se describen los pasos detallados para crear cualquiera de los diagramas de modelado.
 
 #### <a name="to-draw-an-activity-diagram"></a>Para dibujar un diagrama de actividades
@@ -100,12 +100,12 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
     > [!NOTE]
     > La actividad aparecerá en el Explorador de modelos UML solo cuando se agregue el primer elemento al diagrama.
 
-## <a name="SimpleControlFlow"></a>Describir el flujo de control
+## <a name="describing-control-flow"></a><a name="SimpleControlFlow"></a> Describir el flujo de control
  Un diagrama de actividades describe un proceso de negocio o un algoritmo de software como una serie de acciones. Las flechas de conector muestran cómo el control pasa secuencialmente de una acción a la siguiente. Normalmente, una acción solo se puede iniciar una vez completada la acción anterior.
 
  La ilustración siguiente es un ejemplo de cómo se puede mostrar una secuencia de acciones mediante acciones, conectores, bifurcaciones y bucles. Cada elemento se explica con más detalle en las secciones siguientes.
 
- ![Un diagrama de actividades simple](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
+ ![Diagrama de actividades simple](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
 
  Los diagramas de actividades utilizan **acciones** y **conectores** para describir el sistema o la aplicación como una serie de acciones con el control que fluye secuencialmente de una acción a la siguiente.
 
@@ -143,13 +143,13 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 ### <a name="starting-the-activity"></a>Iniciar la actividad
  Existen dos maneras de indicar los puntos de entrada en una actividad:
 
-- **Nodo inicial**
+- **Initial Node**
 
      Cree un **nodo inicial** (6) para indicar la primera acción de la actividad.
 
      Este método es muy útil cuando se describe una actividad secundaria o cuando no es necesario indicar explícitamente qué inicia la actividad. Por ejemplo, no cabe duda de que la actividad Pedir un menú se inicia cuando un cliente tiene hambre.
 
-- **Aceptar nodo de evento**
+- **Nodo de aceptación de evento**
 
      Cree **nodos de evento Accept**, como se describe en la sección [flujos simultáneos](#Concurrent), para indicar el inicio de un subproceso que responde a un evento determinado, como una entrada de usuario. No proporcione un flujo de entrada al nodo. Al omitir el flujo de entrada, se indica que se iniciará un subproceso cada vez que se produzca el evento.
 
@@ -174,7 +174,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
   Las formas simples no forman parte del modelo UML y no aparecen en el Explorador de modelos UML.
 
-## <a name="DataFlows"></a>Describir el flujo de datos
+## <a name="describing-data-flow"></a><a name="DataFlows"></a> Describir el flujo de datos
  Puede describir los datos que entran y salen de una actividad de dos maneras:
 
 - Use un **nodo de objeto**. Este es el método más sencillo para describir la información que fluye entre las actividades. Un nodo de objeto es como una variable de un programa. Representa algo que almacena uno o varios valores que se pasan de una acción a otra.
@@ -189,7 +189,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
  Si desea describir esos datos en el diagrama, puede reemplazar un conector con un nodo de objeto y dos conectores, tal como se muestra en la ilustración siguiente.
 
- ![Los nodos de objeto pueden mostrar los datos pasados entre acciones](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
+ ![Los nodos de objeto pueden mostrar datos pasados entre acciones](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
 
  Observe que los rectángulos redondeados, como Despachar mercancía, representan acciones en las que tiene lugar el procesamiento. Los rectángulos cuadrados, como Dirección de envío, representan un flujo de objetos de una acción a otra.
 
@@ -203,7 +203,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 #### <a name="buffering-data-in-object-nodes"></a>Almacenar en búfer los datos de los nodos de objeto
  Un nodo de objeto puede actuar como búfer de varios objetos. En la ilustración siguiente, el flujo de control muestra que el usuario puede recorrer el bucle [elegir más] (1) muchas veces, mientras el nodo de objeto Elementos del menú seleccionados (2) acumula las selecciones del usuario. Por último, cuando el usuario finaliza su selección, el control pasa a la acción Confirmar pedido (3), que acepta la lista completa de selecciones del búfer Elementos de menú seleccionados.
 
- ![Almacenar datos en búfer en nodos de objeto](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
+ ![Almacenar en búfer los datos de los nodos de objeto](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
 
  Puede especificar cómo se almacenan los elementos de un búfer estableciendo las propiedades del nodo de objeto:
 
@@ -222,7 +222,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Describir el flujo de datos con terminales de entrada y salida
  Use un **PIN de salida** y un **PIN de entrada** para describir por separado las salidas de una acción y las entradas en otra.
 
- ![Los pin de entrada y salida son parámetros de acción](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
+ ![Los pin Input y Output son parámetros de acción](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
 
  Para crear un PIN, haga clic en **PIN de entrada** o en el **terminal de salida** en el cuadro de herramientas y, a continuación, haga clic en una acción. A continuación, puede mover el terminal alrededor del perímetro de la acción y cambiarle el nombre. Puede crear clavijas de entrada y salida en cualquier tipo de acción, incluidas acciones de **comportamiento de llamada**, acciones de **operación de llamada**, acciones de señal de **envío**y acciones de **eventos de aceptación**.
 
@@ -236,7 +236,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
  También puede especificar que el flujo de objetos incluye una transformación que convierte los datos entre el tipo del terminal de salida y el tipo del terminal de entrada. La transformación más común de este tipo solamente extrae la parte adecuada de un tipo mayor. El ejemplo de la ilustración implica la existencia de una transformación que extrae la dirección de envío de los detalles del pedido.
 
-## <a name="Details"></a>Definir una acción con más detalle
+## <a name="defining-an-action-in-more-detail"></a><a name="Details"></a> Definir una acción con más detalle
  Además de usar el nombre de la acción para indicar claramente el resultado que normalmente se debe conseguir, existen otras maneras de agregar más detalles a una acción:
 
 - Escriba una descripción más detallada en la propiedad **cuerpo** . Por ejemplo, puede escribir un fragmento de código o seudocódigo de programa o una descripción completa de los resultados obtenidos.
@@ -245,12 +245,12 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
 - Establezca las propiedades de **condiciones posteriores locales y de** **condiciones** previas de la acción para describir su resultado con detalles más específicos. Para obtener más información, consulte [definir condiciones posteriores y condiciones previas](#Postcondition).
 
-### <a name="Subactivities"></a>Describir actividades secundarias con acciones de comportamiento de llamada
+### <a name="describing-sub-activities-with-call-behavior-actions"></a><a name="Subactivities"></a> Describir actividades secundarias con acciones de comportamiento de llamada
  Puede describir el comportamiento detallado de una acción usando un diagrama de actividades independiente. Un comportamiento llamado es un diagrama de actividades que se representa en el diagrama de actividades principal mediante una acción de llamada a comportamiento. También puede usar la acción de llamada a comportamiento para describir el comportamiento que se comparte entre las diferentes actividades, de modo que no tenga que dibujar varias veces la actividad secundaria.
 
  En la ilustración siguiente, el diagrama 1 muestra una actividad que tiene una acción de llamada a comportamiento, mientras que el diagrama 2 muestra el diagrama de actividad secundaria donde puede verse el comportamiento llamado.
 
- ![Un diagrama de actividades independiente muestra acciones detalladas](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
+ ![Diagrama de actividades independiente que muestra acciones detalladas](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
 
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>Para describir una actividad secundaria con una acción de llamada a comportamiento
 
@@ -283,9 +283,9 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
 - En el diagrama de actividad secundaria, dibuje conectores que muestren el flujo de objetos dentro o fuera de cada nodo de parámetros de actividad.
 
-  ![Marcadores en el comportamiento de llamada asignar a parámetros de actividad](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
+  ![Los pin de comportamiento de llamada se asignan a parámetros de actividad](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
 
-### <a name="Postcondition"></a>Definir condiciones posteriores y condiciones previas
+### <a name="defining-postconditions-and-preconditions"></a><a name="Postcondition"></a> Definir condiciones posteriores y condiciones previas
  Puede usar las propiedades **Postconditions local** y **local Preconditions** para especificar en detalle el resultado de una acción. Estas propiedades describen el efecto de la acción sin describir cómo se consigue el efecto.
 
  Para establecer estas propiedades, haga clic con el botón secundario en la acción y, a continuación, haga clic en **propiedades**. Escriba los valores de las propiedades en la ventana Propiedades.
@@ -319,10 +319,10 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
   - Si establece **is Synchronous** en false, indicará que el flujo puede continuar hasta la siguiente acción antes de que se complete la operación llamada. No debe definir terminales de salida o flujos de datos salientes desde la acción.
 
-## <a name="Concurrent"></a>Flujos simultáneos
+## <a name="concurrent-flows"></a><a name="Concurrent"></a> Flujos simultáneos
  Puede usar el **nodo de bifurcación** y el **nodo de combinación** para describir dos o más subprocesos de actividades que se pueden ejecutar al mismo tiempo.
 
- ![Los nodos de bifurcación y Unión muestran flujos simultáneos](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
+ ![Los nodos de unión y bifurcación muestran flujos simultáneos](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
 
  El efecto del **nodo de bifurcación** (1) es dividir el subproceso de control en dos o más subprocesos. Cuando finalice la acción anterior, podrán iniciarse todas las acciones del lado de salida de la bifurcación.
 
@@ -358,7 +358,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
  El ejemplo siguiente muestra varios flujos que entran y salen de acciones.
 
- ![Flujos de objeto paralelos](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
+ ![Flujos de objeto en paralelo](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
 
  Cuando se completa la acción "El cliente proporciona detalles", se generan dos objetos: "Dirección de envío" y "Detalles de la tarjeta de crédito". Los dos objetos avanzan en el procesamiento mediante acciones diferentes.
 
@@ -371,7 +371,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
  Observe que los conectores de este ejemplo son flujos de objeto, ya que todos tienen al menos un extremo en un nodo de parámetros de actividad, un nodo de objeto o un terminal de entrada o salida.
 
- ![Un flujo de datos](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
+ ![Flujo de datos](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
 
  1. El ejemplo tiene tres nodos de parámetros de actividad, que representan sus entradas y salidas.
 
@@ -392,13 +392,13 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
   En el ejemplo se muestra una transformación. La primera acción del diagrama 1 genera un código postal en un terminal de salida. Este se conecta a un terminal de entrada de la segunda acción. Sin embargo, la segunda acción espera una dirección completa. La conversión de un tipo a otro se especifica en una segunda actividad, denominada Búsqueda de direcciones, a la que se hace referencia en la propiedad Transformation del flujo de objeto. La actividad Búsqueda de direcciones contiene un nodo de parámetros de actividad para el código postal de entrada y otro nodo de parámetros de actividad para la dirección completa de salida.
 
-  ![Transformación de objeto definida en otro diagrama](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
+  ![Transformación de objetos definida en otro diagrama](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
 
   Puede especificar una transformación o selección de dos maneras:
 
 - Adjunte un comentario al terminal de entrada o salida.
 
-  - Para distinguir esta descripción de un comentario general, puede comenzar el comentario con <\<**transformación**> > o <\<**selección**> >.
+  - Para distinguir esta descripción de un comentario general, puede comenzar el comentario con <\<**transformation**>> o <\<**selection**>>.
 
 - Especifique con detalle la transformación o selección en un diagrama de actividades independiente.
 
@@ -426,5 +426,5 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 
    También puede definir una selección en un nodo de objeto y en terminales de entrada y salida individuales. Defina una actividad de selección como en el procedimiento anterior y, a continuación, establezca la propiedad **selección** del nodo de objeto, o el terminal de entrada o salida.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de secuencia UML:](../modeling/uml-sequence-diagrams-reference.md) referencia [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md) [diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md) diagramas de clases de UML [: referencia](../modeling/uml-class-diagrams-reference.md) diagramas de [componentes de UML:](../modeling/uml-component-diagrams-reference.md) [vídeo de referencia: capturar flujos de trabajo empresariales mediante diagramas de actividades](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

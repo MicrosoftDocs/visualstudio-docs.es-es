@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643292"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Agregue Aplicación de Azure Insights mediante Visual Studio Servicios conectados
@@ -34,7 +34,7 @@ La funcionalidad del servicio conectado agrega todo el código de conexión y la
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En Visual Studio para Mac, vea [Servicios conectados en Visual Studio para Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Visual Studio con la carga de trabajo de Azure instalada.
 - Proyecto de uno de los tipos admitidos

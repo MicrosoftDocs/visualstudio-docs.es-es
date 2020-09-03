@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851077"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solución de problemas del Visor de Ayuda
@@ -49,5 +49,5 @@ En este tema se describen los problemas que pueden surgir con el Visor de Ayuda.
 
 - Para obtener más información, consulte la [documentación para desarrolladores y el foro del sistema de ayuda](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) y el blog de [Help Guy](https://blogs.msdn.com/b/thehelpguy/) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Guía del administrador del Visor de Ayuda 2.1](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

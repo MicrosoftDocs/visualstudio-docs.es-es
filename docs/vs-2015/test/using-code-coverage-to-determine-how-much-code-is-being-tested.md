@@ -11,10 +11,10 @@ caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851247"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
@@ -26,7 +26,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
 
  La cobertura de código es una opción al ejecutar métodos de prueba mediante el Explorador de pruebas. La tabla de salida muestra el porcentaje de código que se ejecuta en cada ensamblado, clase y método. Además, el editor de código fuente muestra qué código se ha probado.
 
- ![Resultados de la cobertura de código con colores](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Resultados de cobertura de código con colores](../test/media/codecoverage1.png "CodeCoverage1")
 
  **Requisitos**
 
@@ -36,7 +36,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
 
 1. En el menú **Prueba**, elija **Analizar cobertura de código**.
 
-2. Para ver qué líneas se han ejecutado, elija ![Icono Mostrar colores en cobertura de código](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Mostrar colores en cobertura de código**.
+2. Para ver qué líneas se han ejecutado, elija ![Mostrar icono de color de cobertura de código](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Mostrar color de cobertura de código**.
 
      Para modificar los colores o utilizar la negrita, elija **Herramientas**, **Opciones**, **Entorno**, **Fuentes y colores**, **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.
 
@@ -50,7 +50,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
 >   Si está trabajando con código no administrado (nativo), utilice una compilación de depuración.
 >   - Asegúrese de que está generando los archivos .pdb (símbolo) para cada ensamblado.
 >
->   Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
+>   Si no obtiene los resultados esperados, consulte [solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
 
 ## <a name="reporting-in-blocks-or-lines"></a>Informes en bloques o líneas
  La cobertura de código se cuenta en *bloques*. Un bloque es un fragmento de código con un punto de entrada y de salida exactamente.  Si el flujo de control del programa pasa a través de un bloque durante una serie de pruebas, ese bloque se cuenta como cubierto. El número de veces que se utiliza el bloque no tiene ningún efecto en el resultado.
@@ -221,7 +221,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Use las macros siguientes:
 
- `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *functionname* `");`
+ `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
 
  `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
@@ -256,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
     Si tiene más de una definición de origen de la prueba, repita este paso para cada una.
 
-   - <em>Pero no hay ningún campo denominado **Tipo de archivo de parámetros de ejecución</em>* .*
+   - <em>Pero no hay ningún campo denominado **tipo de archivo de parámetros de ejecución</em>*. *
 
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.
 
@@ -271,17 +271,17 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
      En el menú **Inicio** de Windows, elija **Todos los programas**, **Microsoft Visual Studio**, **Visual Studio Tools**, **Símbolo del sistema para desarrolladores**.
 
-2. Ejecutar:
+2. Ejecute:
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
-## <a name="troubleshooting"></a>Solucionar problemas
+## <a name="troubleshooting"></a>Solución de problemas
  Si no ve los resultados de la cobertura de código, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md).
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Orientación
+### <a name="guidance"></a>Instrucciones
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Personalización del análisis de cobertura de código](../test/customizing-code-coverage-analysis.md) [solución de problemas](../test/troubleshooting-code-coverage.md) [de pruebas unitarias de código código](../test/unit-test-your-code.md)

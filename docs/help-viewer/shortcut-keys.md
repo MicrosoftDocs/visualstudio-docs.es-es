@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533737"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Teclas de método abreviado en el Visor de Ayuda
@@ -42,13 +42,13 @@ Puede navegar por el **Visor de Ayuda de Microsoft** con las teclas de método a
 |Navegadores|**Alt** + **F**<br /><br /> O<br /><br /> **Ctrl** + **Desplazamiento** + **F**|Mostrar la pestaña **Favoritos**.|
 |Navegadores|**Alt** + **S**<br /><br /> O<br /><br /> **Ctrl** + E<br /><br /> O<br /><br /> **Ctrl** + **Desplazamiento** + **S**|Mostrar la pestaña **Buscar**.|
 |Navegadores|**Alt** + **M**<br /><br /> O<br /><br /> **Ctrl**+**Mayús**+**M**|Mostrar la pestaña **Administrar contenido**.|
-|Tema|Tecla del **menú contextual**<br /><br /> O BIEN<br /><br /> **Desplazamiento** + **F10**|Mostrar el menú contextual para el elemento de interfaz de usuario actual.|
+|Tema|Tecla del **menú contextual**<br /><br /> O<br /><br /> **Desplazamiento** + **F10**|Mostrar el menú contextual para el elemento de interfaz de usuario actual.|
 |Tema|**Flecha arriba**|Desplazarse hacia el inicio del documento una línea cada vez.|
 |Tema|**Flecha abajo**|Desplazarse hacia el final del documento una línea cada vez.|
 |Tema|**Re Pág**|Desplazarse hacia el inicio del documento una pantalla cada vez.|
 |Tema|**Av Pág**|Desplazarse hacia el final del documento una pantalla cada vez.|
-|Tema|**Inicio**|Moverse al inicio del documento.|
-|Tema|**Extremo**|Moverse al final del documento.|
+|Tema|**Página principal**|Moverse al inicio del documento.|
+|Tema|**Fin**|Moverse al final del documento.|
 |Tema|**Ctrl** + **F**|Buscar texto de búsqueda en esta página.|
 |Tema|**F5**|Actualizar la página actual.|
 |Tema|**Ctrl** + **P**|Imprimir la página actual.|
@@ -56,7 +56,7 @@ Puede navegar por el **Visor de Ayuda de Microsoft** con las teclas de método a
 |Tema|**F4**|Mostrar el cuadro de diálogo **Propiedades** de la página actual.|
 |Tema|**Ctrl** + **T**|Abrir otra pestaña de contenido en primer plano.|
 |Tema|**Ctrl** + **Haga clic en**|Abrir un vínculo en una nueva pestaña en primer plano.|
-|Tema|**Ctrl** + **Pestaña**|Cambiar entre pestañas de izquierda a derecha.|
+|Tema|**Ctrl**+**Tab**|Cambiar entre pestañas de izquierda a derecha.|
 |Tema|**Ctrl** + **Desplazamiento** + **Pestaña**|Cambiar entre pestañas de derecha a izquierda.|
 |Tema|**Ctrl** + **W**|Cerrar la pestaña actual.|
 |Tema|**Ctrl** + ** _Número_ de**|Cambiar a una pestaña determinada donde **_Número_** está comprendido entre 1 y 9 e indica la pestaña en secuencia.|
@@ -74,13 +74,13 @@ Puede navegar por el **Visor de Ayuda de Microsoft** con las teclas de método a
 |Contenido, índice, búsqueda y favoritos|**Ctrl** + **P**|Imprimir el tema especificado.|
 |Contenido, índice, búsqueda y favoritos|**Ctrl** + **F2**|Mostrar una vista previa de impresión del tema especificado.|
 |Contenido, índice, búsqueda y favoritos|**Ctrl** + **Haga clic en**|Abrir el tema en una pestaña nueva.|
-|Search|**Esc**|Borrar el cuadro de texto de búsqueda.|
+|Buscar|**Esc**|Borrar el cuadro de texto de búsqueda.|
 |Opciones del Visor|**Alt** + **T**|Cambiar el foco a la lista **Tamaño de texto**.|
 |Opciones del Visor|**Alt** + **S**|Cambiar el foco a la lista **Número máximo de resultados de la búsqueda**.|
 |Opciones del Visor|**Alt** + **H**|Cambiar el foco a la lista **Número máximo de entradas del historial guardadas**.|
 |Opciones del Visor|**Alt** + **E**|Active o desactive la casilla **Incluir contenido en inglés en todas las pestañas de navegación y solicitudes de F1** si está habilitada.|
 |Opciones del Visor|**Alt** + **O**|Activar o desactivar la casilla **Conectarse para comprobar actualizaciones de contenido**.|
-|Buscar|**Especifica**|Cambiar el foco al elemento siguiente.|
+|Buscar|**Entrar**|Cambiar el foco al elemento siguiente.|
 |Buscar|**Desplazamiento** + **Escriba**|Cambiar el foco al elemento anterior.|
 |Buscar|**Esc**|Oculta el cuadro de texto **Buscar**.|
 |Barra de estado|**Alt** + **E**|Abrir el cuadro de diálogo **Error** si la barra de estado muestra que se ha producido un error.|
@@ -91,7 +91,7 @@ Puede navegar por el **Visor de Ayuda de Microsoft** con las teclas de método a
 |**Pulsación de tecla**|**Acción**|
 |-|-|
 |**Ctrl** + **L**|Restablecer el diseño del **Visor de Ayuda** al diseño predeterminado, y cerrar todas las pestañas de tema.|
-|**Ctrl** + **Pestaña**|La primera pulsación de tecla dirige el foco al menú **Selección de pestañas**. La siguiente pulsación de tecla dirige el foco al elemento de menú superior, y las pulsaciones de tecla posteriores dirigen el foco a los elementos de menú en secuencia de arriba a abajo. Cuando un elemento de menú tiene el foco, la tecla **Entrar** hace que ese elemento sea la pestaña activa.|
+|**Ctrl**+**Tab**|La primera pulsación de tecla dirige el foco al menú **Selección de pestañas**. La siguiente pulsación de tecla dirige el foco al elemento de menú superior, y las pulsaciones de tecla posteriores dirigen el foco a los elementos de menú en secuencia de arriba a abajo. Cuando un elemento de menú tiene el foco, la tecla **Entrar** hace que ese elemento sea la pestaña activa.|
 |**Ctrl** + **Desplazamiento** + **Pestaña**|La primera pulsación de tecla dirige el foco al menú **Selección de pestañas**. La siguiente pulsación de tecla dirige el foco al elemento de menú inferior, y las pulsaciones de tecla posteriores dirigen el foco a los elementos de menú en secuencia de abajo a arriba. Cuando un elemento de menú tiene el foco, la tecla **Entrar** hace que ese elemento sea la pestaña activa.|
 |**Alt** + **I**, **Alt** + **S**, **Alt** + **C**, **Alt** + **F**, **Alt** + **M**|Estas teclas de método abreviado no funcionan cuando las pestañas de administración de contenido y navegación están desacopladas.|
 
@@ -106,13 +106,13 @@ Puede navegar por el **Visor de Ayuda de Microsoft** con las teclas de método a
 |**Alt** + **V**|Abrir el cuadro de diálogo **Mover contenido**.|
 |**Ctrl** + **Alt** + **F**|Cambiar el foco al cuadro de texto **Filtrar documentación**.|
 |**Pestaña**|Cambiar el foco a la lista de documentación.|
-|**Flecha arriba** y **Flecha abajo**|Desplazarse por la lista de documentación.|
+|**Flecha arriba** y **flecha abajo**|Desplazarse por la lista de documentación.|
 |**Espacia**|Agregar un elemento a la lista de **Cambios pendientes**.|
 |**Pestaña**|Cambiar el foco a la lista de **Cambios pendientes**.|
-|**Flecha arriba** y **Flecha abajo**|Desplazarse por la lista de **Cambios pendientes**.|
+|**Flecha arriba** y **flecha abajo**|Desplazarse por la lista de **Cambios pendientes**.|
 |**Espacia**|Quitar un elemento de la lista de **Cambios pendientes**.|
 |**Alt** + **T**|Aplicar todos los cambios pendientes.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Características de accesibilidad del visor de ayuda](accessibility-features.md)

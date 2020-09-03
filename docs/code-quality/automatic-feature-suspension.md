@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769484"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensión automática de la característica
@@ -44,7 +44,7 @@ Para obtener sugerencias y trucos sobre cómo mejorar el rendimiento de Visual S
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>El análisis de código activo se reduce a un ámbito mínimo
 
-De forma predeterminada, el análisis de código activo se ejecuta para proyectos y documentos abiertos. Puede personalizar este ámbito de análisis para que se reduzca al documento actual o aumente a toda la solución. Para obtener más información, consulte [Cómo: configurar el ámbito de análisis de código activo para código administrado](./configure-live-code-analysis-scope-managed-code.md). En una condición de memoria insuficiente, Visual Studio fuerza que el ámbito de análisis activo se reduzca al documento actual. Sin embargo, puede volver a habilitar el ámbito de análisis preferido eligiendo el botón **volver a habilitar** en la barra de información cuando aparezca o reiniciando Visual Studio. En el cuadro de diálogo Opciones siempre se muestra la configuración actual del ámbito de análisis de código activo.
+De forma predeterminada, el análisis de código activo se ejecuta para proyectos y documentos abiertos. Puede personalizar este ámbito de análisis para que se reduzca al documento actual o aumente a toda la solución. Para obtener más información, vea [Cómo: Configurar el ámbito del análisis activo para el código administrado](./configure-live-code-analysis-scope-managed-code.md). En una condición de memoria insuficiente, Visual Studio fuerza que el ámbito de análisis activo se reduzca al documento actual. Sin embargo, puede volver a habilitar el ámbito de análisis preferido eligiendo el botón **volver a habilitar** en la barra de información cuando aparezca o reiniciando Visual Studio. En el cuadro de diálogo Opciones siempre se muestra la configuración actual del ámbito de análisis de código activo.
 
 ## <a name="gc-low-latency-disabled"></a>Baja latencia de GC deshabilitada
 
@@ -65,7 +65,7 @@ Además, también se borran las memorias caché utilizadas para las operaciones 
 > [!NOTE]
 > La advertencia de suspensión automática de características se produce solo una vez por solución, no por sesión. Esto significa que si cambia de Visual Basic a Visual C# (o viceversa) y se ejecuta en otra condición de memoria insuficiente, es posible que pueda obtener otra advertencia de suspensión automática de características.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: configurar el ámbito de análisis de código activo para código administrado](./configure-live-code-analysis-scope-managed-code.md)
 - [Fundamentos de la recolección de elementos no utilizados](/dotnet/standard/garbage-collection/fundamentals)

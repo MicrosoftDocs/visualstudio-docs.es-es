@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdba2105c6b8af42d51669e0d1fc8ce49085d513
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851605"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Paso 1: Crear un proyecto de aplicación de Windows Forms
@@ -21,7 +21,7 @@ ms.locfileid: "75851605"
 
 Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto de aplicación de Windows Forms.
 
- ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](https://msdn.microsoft.com/vbasic/gg315352.aspx) [tutorial 1: C# crear un visor de imágenes en-vídeo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](https://msdn.microsoft.com/vbasic/gg315352.aspx) [tutorial 1: crear un visor de imágenes en C# (vídeo 1)](https://msdn.microsoft.com/vcsharp/gg278409.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Para crear un proyecto de Aplicación de Windows Forms
 
@@ -48,14 +48,14 @@ Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto 
 
 5. En la ilustración se muestran las ventanas siguientes (en el sentido de las agujas del reloj desde la esquina superior izquierda):
 
-    - **Ventana principal** En esta ventana, realizará la mayor parte del trabajo, como ejecutar formularios y editar código. En la ilustración, la ventana muestra un formulario en el Editor de formularios. En la parte superior de la ventana, aparecerán las pestañas **Página principal** y **Form1.cs [Diseño]** . (En Visual Basic, el nombre de la pestaña termina con .vb en lugar de .cs).
+    - **Ventana principal** En esta ventana, realizará la mayor parte del trabajo, como ejecutar formularios y editar código. En la ilustración, la ventana muestra un formulario en el Editor de formularios. En la parte superior de la ventana, aparecerán las pestañas **Página principal** y **Form1.cs [Diseño]**. (En Visual Basic, el nombre de la pestaña termina con .vb en lugar de .cs).
 
     - **Ventana Explorador de soluciones** En esta ventana, puede ver todos los elementos de la solución y navegar por ellos. Al seleccionar un archivo, cambia el contenido de la ventana **Propiedades**. Si abre un archivo de código (que finaliza en .cs para Visual C# y en .vb para Visual Basic), aparece el archivo de código o un diseñador para él. Un diseñador es una superficie visual en la que se pueden agregar controles, como botones y listas. En los formularios de Visual Studio, el diseñador se llama Diseñador de Windows Forms.
 
-    - **Ventana Propiedades** En esta ventana, puede cambiar las propiedades de los elementos elegidos en las otras ventanas. Por ejemplo, si elige Form1, puede cambiar el título mediante la propiedad **Text** y el color de fondo mediante la propiedad **Backcolor**.
+    - **Ventana Propiedades** En esta ventana, puede cambiar las propiedades de los elementos que elija en las otras ventanas. Por ejemplo, si elige Form1, puede cambiar el título mediante la propiedad **Text** y el color de fondo mediante la propiedad **Backcolor**.
 
     > [!NOTE]
-    > En la línea superior del **Explorador de soluciones** se muestra **Solución "PictureViewer" (1 proyecto)** , lo que significa que Visual Studio ha creado una solución. Una solución puede contener varios proyectos, pero, por ahora, trabajará con soluciones que contengan un solo proyecto.
+    > En la línea superior del **Explorador de soluciones** se muestra **Solución "PictureViewer" (1 proyecto)**, lo que significa que Visual Studio ha creado una solución. Una solución puede contener varios proyectos, pero, por ahora, trabajará con soluciones que contengan un solo proyecto.
 
 6. En la barra de menús, pulse **Archivo**, **Guardar todo**.
 

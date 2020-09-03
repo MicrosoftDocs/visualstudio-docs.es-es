@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aefe710cc730d5624abc01bbdfc54d9961788787
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656401"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
@@ -36,7 +36,7 @@ Especifica información de documentación de las funciones `get` y `set` para pr
 ```
 
 #### <a name="parameters"></a>Parámetros
- `type` Opcional. Tipo de datos de la propiedad. El tipo puede ser uno de los siguientes:
+ `type` Opcional. El tipo de datos de la propiedad. El tipo puede ser uno de los siguientes:
 
 - Un tipo de lenguaje ECMAScript de la especificación de ECMAScript 5, como `Number` y `Object`.
 
@@ -58,12 +58,12 @@ Especifica información de documentación de las funciones `get` y `set` para pr
 
   `elementMayBeNull` Opcional. Si `type` es `Array`, especifica si los elementos de la matriz se pueden establecer en NULL. Establézcalo en `true` para indicar que los elementos de la matriz se pueden establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.
 
-  `locid` Opcional. Identificador de la información de localización sobre la propiedad. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el elemento [\<loc>](../ide/loc-javascript.md).
+  `locid` Opcional. Identificador de la información de localización sobre la propiedad. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el [\<loc>](../ide/loc-javascript.md) elemento.
 
   `description` Opcional. Una descripción de la propiedad.
 
-## <a name="remarks"></a>Comentarios
- Las propiedades de ECMAScript 5 utilizan el elemento [\<summary >](../ide/summary-javascript.md) .
+## <a name="remarks"></a>Observaciones
+ Las propiedades de ECMAScript 5 utilizan el [\<summary>](../ide/summary-javascript.md) elemento.
 
  Utilice el elemento `<value>` inmediatamente antes de la función `get` o `set`.
 
@@ -78,5 +78,5 @@ function Sys$CancelEventArgs$get_cancel() {
 }
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte también
+ [Comentarios de la documentación XML](../ide/xml-documentation-comments-javascript.md)

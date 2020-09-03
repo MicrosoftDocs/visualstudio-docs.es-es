@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d4d703dbe28776cd93c7a438fc457d9f50ac4f7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851129"
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
@@ -26,7 +26,7 @@ Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denomin
 
  Hay cuatro botones en el formulario, que el IDE ha denominado **button1**, **button2**, **button3**y **button4**. Solo con mirar los nombres actuales no sabemos cuál es el botón **Cerrar** ni cuál es el botón **Mostrar una imagen** . Por eso resulta útil asignar a los controles de botón nombres más descriptivos.
 
- ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 3 o el](https://msdn.microsoft.com/vbasic/gg315354.aspx) [tutorial 1: C# crear un visor de imágenes en-vídeo 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 3 o el](https://msdn.microsoft.com/vbasic/gg315354.aspx) [tutorial 1: crear un visor de imágenes en C# (vídeo 3)](https://msdn.microsoft.com/vcsharp/gg278411.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Para dar un nombre a los controles de botón
 
@@ -39,9 +39,9 @@ Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denomin
 
 2. Cambie el nombre de los otros tres botones a **backgroundButton**, **clearButton**y **showButton**. Puede comprobar los nombres eligiendo la lista desplegable de selección de controles de la ventana **Propiedades** . Aparecerán los nuevos nombres de los botones.
 
-3. Haga doble clic en el botón **Mostrar una imagen** del formulario. Si lo desea, también puede elegir el botón **Mostrar una imagen** del formulario y, a continuación, la tecla ENTRAR. Al hacerlo, el IDE abre una pestaña adicional en la ventana principal denominada **Form1.cs** (**Form1.vb** si utiliza Visual Basic). En esta pestaña se muestra el archivo de código subyacente del formulario, tal y como se muestra en la siguiente imagen.
+3. Haga doble clic en el botón **Mostrar una imagen** del formulario. Como alternativa, elija el botón **Mostrar una imagen** en el formulario y, a continuación, elija la tecla entrar. Al hacerlo, el IDE abre una pestaña adicional en la ventana principal denominada **Form1.cs** (**Form1.vb** si utiliza Visual Basic). En esta pestaña se muestra el archivo de código subyacente del formulario, tal y como se muestra en la siguiente imagen.
 
-     ![Pestaña Form1.cs con&#35; ](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") la pestaña Form1.CS de código de Visual C# C con código Visual
+     ![Pestaña Form1.CS con código de Visual C&#35;](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Pestaña Form1.cs con código de Visual C#
 
 4. Céntrese en esta parte del código. (Si utiliza Visual Basic, elija la pestaña **VB** que se muestra a continuación para ver la versión de Visual Basic del código).
 
@@ -71,10 +71,10 @@ Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denomin
 
      Después de agregar un controlador de eventos para un control, puede volver en cualquier momento a él desde el Diseñador de Windows Forms haciendo doble clic en el control o eligiendo **Ver**, **Código**en la barra de menús.
 
-     Los nombres son importantes al compilar programas. Los métodos (incluso los controladores de eventos) pueden tener cualquier nombre que se desee. Cuando agregue un controlador de eventos con el IDE, se creará un nombre basado en el nombre del control y en el evento que se controla. Por ejemplo, el evento Click para un botón denominado **showButton** se denomina método de control de eventos `showButton_Click()` . Además, se suelen agregar paréntesis de apertura y cierre () después del nombre de método para indicar que se trata de un método. Si decide que desea cambiar un nombre de variable de código, haga clic con el botón secundario en la variable del código y elija **Refactorizar**, **Cambiar nombre**. Todas las instancias de esa variable del código cambiarán de nombre. Para obtener más información [, vea cambiarC#el nombre de la refactorización ()](../csharp-ide/rename-refactoring-csharp.md) o [refactorizar y cambiar el nombre del cuadro de diálogo](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) .
+     Los nombres son importantes al compilar programas. Los métodos (incluso los controladores de eventos) pueden tener cualquier nombre que se desee. Cuando agregue un controlador de eventos con el IDE, se creará un nombre basado en el nombre del control y en el evento que se controla. Por ejemplo, el evento Click para un botón denominado **showButton** se denomina método de control de eventos `showButton_Click()` . Además, se suelen agregar paréntesis de apertura y cierre () después del nombre de método para indicar que se trata de un método. Si decide que desea cambiar un nombre de variable de código, haga clic con el botón secundario en la variable del código y elija **Refactorizar**, **Cambiar nombre**. Todas las instancias de esa variable del código cambiarán de nombre. Consulte [cambiar el nombre de refactorización (C#)](../csharp-ide/rename-refactoring-csharp.md) o [refactorizar y cambiar el nombre del cuadro de diálogo](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) para obtener más información.
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar componentes de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md).
+- Para ir al siguiente paso del tutorial, vea [paso 7: agregar componentes de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).
+- Para volver al paso anterior del tutorial, vea [paso 5: agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851572"
 ---
 # <a name="step-2-run-your-program"></a>Paso 2: Ejecutar el programa
@@ -21,7 +21,7 @@ ms.locfileid: "75851572"
 
 Al crear una solución, en realidad compiló un programa que se ejecuta. Todavía no hace gran cosa; se limita a mostrar una ventana vacía en la que se ve **Form1** en la barra de título. Pero se ejecuta, como vamos a comprobar a continuación.
 
- ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](https://msdn.microsoft.com/vbasic/gg315352.aspx) [tutorial 1: C# crear un visor de imágenes en-vídeo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](https://msdn.microsoft.com/vbasic/gg315352.aspx) [tutorial 1: crear un visor de imágenes en C# (vídeo 1)](https://msdn.microsoft.com/vcsharp/gg278409.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-run-your-program"></a>Para ejecutar el programa
 
@@ -52,10 +52,10 @@ Al crear una solución, en realidad compiló un programa que se ejecuta. Todaví
     - Elija el botón X de la esquina superior derecha de la ventana **Form1**.
 
     > [!NOTE]
-    > Cuando se ejecuta un programa desde el IDE, se denomina *depuración*, ya que normalmente se hace para buscar y corregir errores del programa. Aunque este programa es pequeño y en realidad no hace nada todavía, es un programa real. Siga el mismo procedimiento para ejecutar y depurar otros programas. Para obtener más información sobre la depuración, vea [Debugger Basics](../debugger/debugger-basics.md) (Conceptos básicos del depurador).
+    > Al ejecutar el programa desde el IDE, se denomina *depuración* porque normalmente lo hace para buscar y corregir errores en el programa. Aunque este programa es pequeño y en realidad no hace nada todavía, es un programa real. Siga el mismo procedimiento para ejecutar y depurar otros programas. Para obtener más información sobre la depuración, vea [conceptos básicos del depurador](../debugger/debugger-basics.md).
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al paso siguiente del tutorial, vea [Paso 3: Establecer las propiedades del formulario](../ide/step-3-set-your-form-properties.md).
+- Para ir al siguiente paso del tutorial, vea [paso 3: establecer las propiedades del formulario](../ide/step-3-set-your-form-properties.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto de aplicación de Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+- Para volver al paso anterior del tutorial, vea [paso 1: crear un proyecto de aplicación de Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301194"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personalizar el modelo con perfiles y estereotipos
@@ -31,14 +31,14 @@ En Visual Studio, puede adaptar los elementos del modelo UML estándar, como las
 
  Los estereotipos se pueden establecer en la lista de propiedades de un elemento. En el caso de los tipos de forma principales de un diagrama, los estereotipos aplicados aparecen también en la forma, como se muestra en el ejemplo.
 
- ![Una clase UML con un estereotipo.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![Clase UML con un estereotipo.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > Si usa un perfil para crear un modelo y, a continuación, comparte el modelo con otra persona, esta no podrá ver los estereotipos a menos que tenga instalado el mismo perfil en el equipo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |[Agregar estereotipos a elementos del modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md)|Colocar un elemento del modelo en un paquete, vincular el paquete a un perfil y aplicar un estereotipo al elemento.|
 |[Estereotipos estándar para modelos UML](../modeling/standard-stereotypes-for-uml-models.md)|Los perfiles estándar UML L2 y L3 se instalan con Visual Studio, y cada modelo está vinculado a ellos de forma predeterminada. Proporcionan estereotipos que puede usar para anotar los modelos.<br /><br /> Por ejemplo, puede aplicar el estereotipo “Especificación” a una clase para indicar que está pensada únicamente para definir el comportamiento visible externamente de sus instancias|

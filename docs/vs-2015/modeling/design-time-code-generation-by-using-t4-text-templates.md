@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534152"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
@@ -141,7 +141,7 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
   Se ejecutará la plantilla y se detendrá en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.
 
 > [!TIP]
-> `debug="true"`hace que el código generado se asigne con más precisión a la plantilla de texto, insertando más directivas de numeración de línea en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
+> `debug="true"` hace que el código generado se asigne con más precisión a la plantilla de texto, insertando más directivas de numeración de línea en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
 >
 > Puede dejar la cláusula en la directiva de plantilla incluso aunque no esté realizando la depuración. Esto solo produce una pequeña caída del rendimiento.
 
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
 
-## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Volver a generar el código automáticamente
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Volver a generar el código automáticamente
  Normalmente, se generan varios archivos de una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con un único modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
  Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **transformar todas las plantillas** en el menú **compilar** .
@@ -320,7 +320,7 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Convertir un archivo existente en una plantilla
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> Convertir un archivo existente en una plantilla
  Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar, cree un archivo normal como un prototipo, como un [!INCLUDE[csprcs](../includes/csprcs-md.md)] archivo, y, a continuación, introduzca gradualmente código de generación que varíe el archivo resultante.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño
@@ -333,7 +333,7 @@ Warning("A warning message");
 
 4. Compruebe las siguientes propiedades del archivo **. TT** :
 
-    |Propiedad.|Valor|
+    |Propiedad|Value|
     |-|-|
     |**Herramienta personalizada =**|**TextTemplatingFileGenerator**|
     |**Acción de compilación =**|**None**|

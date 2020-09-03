@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238249"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
@@ -42,7 +42,7 @@ En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una
 
 - En la ventana **propiedades** , cuando la propiedad Tracking está en el estado de usuario actualizado por, su valor se muestra en negrita.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 Para poder iniciar este tutorial, primero debe instalar estos componentes:
 
@@ -52,7 +52,7 @@ Para poder iniciar este tutorial, primero debe instalar estos componentes:
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
 | [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
-## <a name="create-the-project"></a>Creación del proyecto
+## <a name="create-the-project"></a>Crear el proyecto
 
 1. Cree un proyecto de Diseñador de lenguaje específico de dominio. Asígnele el nombre `TrackingPropertyDSL`.
 
@@ -754,7 +754,7 @@ El paso siguiente consiste en compilar y ejecutar el diseñador de DSL en una nu
 
 Si piensa usar más de una propiedad de seguimiento o implementar propiedades de seguimiento en más de un DSL, puede crear una plantilla de texto para generar el código común para admitir cada propiedad de seguimiento. Para obtener más información acerca de las plantillas de texto, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

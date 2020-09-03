@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851023"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalación de distintas versiones de Visual Studio en paralelo
@@ -32,7 +32,7 @@ Puede instalar esta versión de Visual Studio en un equipo que ya tiene una vers
 
 - Si usa Visual Studio 2015 para abrir una solución creada en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], puede volver a abrir y modificar después la solución en la versión anterior siempre y cuando no haya implementado ninguna de las características que son específicas de Visual Studio 2015.
 
-- Si intenta usar Visual Studio 2015 para abrir una solución creada en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] o en una versión anterior, es posible que necesite modificar los proyectos y los archivos para que sean compatibles con Visual Studio 2015. Para más información, consulte la página [Portar, migrar y actualizar proyectos de Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015).
+- Si intenta usar Visual Studio 2015 para abrir una solución creada en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] o en una versión anterior, es posible que necesite modificar los proyectos y los archivos para que sean compatibles con Visual Studio 2015. Para obtener más información, vea la página [Port, Migrate y upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) .
 
 - Si se desinstala una versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en un equipo que tiene más de una versión instalada, se quitan las asociaciones de archivo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para todas las versiones. Estas asociaciones de archivo se pueden volver a asignar mediante el botón **Restaurar asociaciones de archivo** que está disponible en la página **Entorno**, **General** del cuadro de diálogo [Opciones](../ide/reference/general-environment-options-dialog-box.md) .
 
@@ -54,9 +54,9 @@ Puede instalar esta versión de Visual Studio en un equipo que ya tiene una vers
     |C++|[Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ejecutar una aplicación de JScript en una versión anterior de Common Language Runtime](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Instalar Visual Studio](../install/install-visual-studio-2015.md)
+- [Instalación de Visual Studio](../install/install-visual-studio-2015.md)
 - [Portar, migrar y actualizar proyectos de Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
 - [Compilación de aplicaciones aisladas y ensamblados simultáneos de C/C++](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
 - [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

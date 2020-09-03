@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3f982372f0189871c4f3d294c07a9e3cfc44391
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656622"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Cómo: Agregar actividades al cuadro de herramientas (Heredado)
-Al compilar una solución de flujo de trabajo con el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado que tiene como destino el [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], se pueden agregar actividades personalizadas al proyecto de flujo de trabajo y sus diseñadores colocados en el **cuadro de herramientas** para facilitar el acceso. También puede Agregar actividades directamente al cuadro de **herramientas** desde una biblioteca de vínculos dinámicos (dll).
+Al compilar una solución de flujo de trabajo con el heredado [!INCLUDE[wfd1](../includes/wfd1-md.md)] que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] , se pueden agregar actividades personalizadas al proyecto de flujo de trabajo y sus diseñadores colocados en el **cuadro de herramientas** para facilitar el acceso. También puede Agregar actividades directamente al cuadro de **herramientas** desde una biblioteca de vínculos dinámicos (dll).
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Para agregar al cuadro de herramientas una actividad de una DLL
 
@@ -32,5 +32,5 @@ Al compilar una solución de flujo de trabajo con el [!INCLUDE[wfd1](../includes
 
 4. Haga clic en **Aceptar** para terminar de agregar la actividad al cuadro de herramientas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Usar las [actividades de flujo de trabajo heredadas](../workflow-designer/legacy-workflow-activities.md) [del diseñador de actividades](../workflow-designer/using-the-legacy-activity-designer.md) heredadas

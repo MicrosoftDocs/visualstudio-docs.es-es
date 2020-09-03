@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770024"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Locationfield ((elemento, plantillas de proyecto de Visual Studio)
@@ -58,7 +58,7 @@ Especifica si el cuadro de texto **Ubicación** del cuadro de diálogo **nuevo p
 
 - `Hidden`, que especifica que el cuadro **Ubicación** del cuadro de diálogo **nuevo proyecto** está oculto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  El valor predeterminado es `Enabled`.
 
  El cuadro de texto **Ubicación** del cuadro de diálogo **nuevo proyecto** permite a los usuarios cambiar el directorio predeterminado en el que se guardan los nuevos proyectos.

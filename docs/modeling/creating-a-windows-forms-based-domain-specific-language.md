@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238366"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Crear un lenguaje específico de dominio basado en Windows Forms
@@ -319,7 +319,7 @@ Sin embargo, este código no establece un nombre predeterminado para el nuevo el
 
 Por lo tanto, se recomienda utilizar <xref:Microsoft.VisualStudio.Modeling.ElementOperations> para crear nuevos elementos. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

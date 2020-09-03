@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770010"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Cómo: Ver los tipos existentes en el Diseñador de clases

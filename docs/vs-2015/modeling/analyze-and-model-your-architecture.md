@@ -33,10 +33,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e00735a180ec951a8afced0f5c74f7a9466e50b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534100"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
@@ -48,7 +48,7 @@ Asegúrese de que la aplicación cumple los requisitos de usuario: use la arquit
 
  Para ver qué versiones de Visual Studio admite cada característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="to"></a>A
+## <a name="to"></a>Objetivo
 
 |Escenario|Artículos|
 |-|-|
@@ -65,14 +65,14 @@ Asegúrese de que la aplicación cumple los requisitos de usuario: use la arquit
 
 |**Tipo y modelo y usos habituales**|
 |-------------------------------------|
-|**Mapas de código**<br /><br /> Los mapas de código ayudan a ver la organización y las relaciones existentes en el código.<br /><br /> Usos típicos:<br /><br /> -Examine el código del programa para que pueda entender mejor su estructura y sus dependencias, cómo actualizarlo y calcular el costo de los cambios propuestos.<br /><br /> Vea:<br /><br /> -   [Asignación de dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usar mapas de código para depurar las aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)|
-|**Diagrama de capas**<br /><br /> Los diagramas de capas permiten definir la estructura de una aplicación como un conjunto de capas o bloques con dependencias explícitas. Puede ejecutar la validación para detectar conflictos entre dependencias del código y las dependencias descritas en un diagrama de capas.<br /><br /> Usos típicos:<br /><br /> -Estabilizar la estructura de la aplicación a través de varios cambios a lo largo de su vida.<br />-Detectar conflictos de dependencias involuntarias antes de proteger los cambios en el código.<br /><br /> Vea:<br /><br /> -   [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)<br />-   [Validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
+|**Mapas de código**<br /><br /> Los mapas de código ayudan a ver la organización y las relaciones existentes en el código.<br /><br /> Usos típicos:<br /><br /> -Examine el código del programa para que pueda entender mejor su estructura y sus dependencias, cómo actualizarlo y calcular el costo de los cambios propuestos.<br /><br /> Consulte:<br /><br /> -   [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usar mapas de código para depurar las aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)|
+|**Diagrama de capas**<br /><br /> Los diagramas de capas permiten definir la estructura de una aplicación como un conjunto de capas o bloques con dependencias explícitas. Puede ejecutar la validación para detectar conflictos entre dependencias del código y las dependencias descritas en un diagrama de capas.<br /><br /> Usos típicos:<br /><br /> -Estabilizar la estructura de la aplicación a través de varios cambios a lo largo de su vida.<br />-Detectar conflictos de dependencias involuntarias antes de proteger los cambios en el código.<br /><br /> Consulte:<br /><br /> -   [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)<br />-   [Validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
 |**UML (modelo)**<br /><br /> Un modelo UML incluye varias vistas, como son los diagramas de secuencias, clases, componentes, casos de uso y actividades. Puede personalizar el modelo UML para que se ajuste al dominio de la aplicación. Por ejemplo, puede adjuntar etiquetas, información adicional y restricciones a los elementos del modelo. También puede definir herramientas que actúen en los modelos. Consulte [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).<br /><br /> Usos típicos:<br /><br /> : Describir los requisitos y el diseño. Puede aplicar rápidamente UML al desarrollo de cualquier aplicación. Consulte [uso de modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md).<br />-Generar o configurar pruebas o partes de una aplicación. Es necesario realizar algún trabajo para personalizar la notación y desarrollar las plantillas de generación o la aplicación configurable. Consulte [generación y configuración de la aplicación a partir de modelos](../modeling/generate-and-configure-your-app-from-models.md).<br />-Para la descripción general y para la generación de código o la configuración en proyectos más pequeños.|
-|**Lenguaje específico del dominio (DSL)**<br /><br /> Un DSL es una notación que se diseña con un objetivo concreto. En Visual Studio, suele ser un objetivo gráfico.<br /><br /> Usos típicos:<br /><br /> -Generar o configurar partes de la aplicación. Hay que realizar algún trabajo para desarrollar la notación y las herramientas. El resultado puede ser un mejor ajuste al dominio que una personalización UML.<br />-En proyectos grandes o en líneas de productos en las que la inversión en el desarrollo de DSL y sus herramientas se devuelve por su uso en más de un proyecto.<br /><br /> Vea:<br /><br /> -   [SDK de modelado para Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**Lenguaje específico del dominio (DSL)**<br /><br /> Un DSL es una notación que se diseña con un objetivo concreto. En Visual Studio, suele ser un objetivo gráfico.<br /><br /> Usos típicos:<br /><br /> -Generar o configurar partes de la aplicación. Hay que realizar algún trabajo para desarrollar la notación y las herramientas. El resultado puede ser un mejor ajuste al dominio que una personalización UML.<br />-En proyectos grandes o en líneas de productos en las que la inversión en el desarrollo de DSL y sus herramientas se devuelve por su uso en más de un proyecto.<br /><br /> Consulte:<br /><br /> -   [SDK de modelado para Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 
 ## <a name="where-can-i-get-more-information"></a>¿Dónde puedo obtener más información?
 
-|Recurso|Vínculos|
+|Resource|Vínculos|
 |-|-|
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
