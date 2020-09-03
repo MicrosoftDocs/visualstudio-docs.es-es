@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255082"
 ---
 # <a name="workbook-host-item"></a>Elemento host del libro
@@ -42,9 +42,9 @@ ms.locfileid: "71255082"
  Haga doble clic en el elemento de proyecto **ThisWorkbook** en el **Explorador de soluciones** para mostrar el diseñador del libro y ver las propiedades y los eventos del libro en la ventana **Propiedades** .
 
 ### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>Limitaciones del elemento host de libro en los proyectos de nivel de documento
- Un proyecto de nivel de documento puede contener solamente un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> (es decir, la clase `ThisWorkbook` ). No puede agregar nuevos elementos host <xref:Microsoft.Office.Tools.Excel.Workbook> al proyecto en tiempo de diseño ni tampoco crear nuevos elementos host <xref:Microsoft.Office.Tools.Excel.Workbook> en tiempo de ejecución desde una personalización de nivel de documento.
+ Un proyecto de nivel de documento puede contener solamente un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> (es decir, la clase `ThisWorkbook` ). No puede agregar nuevos elementos host <xref:Microsoft.Office.Tools.Excel.Workbook> al proyecto en tiempo de diseño, ni tampoco crear nuevos elementos host <xref:Microsoft.Office.Tools.Excel.Workbook> en tiempo de ejecución desde una personalización de nivel de documento.
 
- Si crea un nuevo libro de Excel en tiempo de ejecución, será del tipo <xref:Microsoft.Office.Interop.Excel.Workbook>. Como no se trata de un elemento host, este no puede contener controles host ni controles de Windows Forms. Para obtener más información acerca de la creación de libros en tiempo [de ejecución, consulte How to: Crear nuevos libros](../vsto/how-to-programmatically-create-new-workbooks.md)mediante programación.
+ Si crea un nuevo libro de Excel en tiempo de ejecución, será del tipo <xref:Microsoft.Office.Interop.Excel.Workbook>. Como no se trata de un elemento host, este no puede contener controles host ni controles de Windows Forms. Para obtener más información sobre la creación de libros en tiempo de ejecución, vea [Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md).
 
  El elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> no actúa como un contenedor para los controles host. Por lo tanto, no es posible agregar ningún control visible al libro, pero puede agregar componentes, como un elemento <xref:System.Data.DataSet>, de modo que los componentes puedan compartirse en todas las hojas de cálculo. En un proyecto de nivel de documento, los componentes disponibles para el libro se pueden encontrar en la pestaña **Componentes** , en la pestaña **Datos** y la pestaña **Todos los formularios Windows Forms** del **Cuadro de herramientas**.
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 63404d3d81c44ac4b8308d949cdb87df419f2e04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662868"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Crear una biblioteca de diseñadores de actividades
@@ -25,7 +25,7 @@ Los diseñadores de actividades personalizados permiten crear una interfaz de us
 
 2. En el menú **archivo** , seleccione **nuevo**y, a continuación, seleccione **proyecto...** para abrir el cuadro de diálogo **nuevo proyecto** .
 
-3. En el panel **tipos de proyecto** , seleccione flujo de **trabajo** desde las agrupaciones **Visual C#**  o **Visual Basic** en función del idioma que prefiera.
+3. En el panel **tipos de proyecto** , seleccione flujo de **trabajo** desde las agrupaciones de **Visual C#** o **Visual Basic** en función del idioma que prefiera.
 
 4. En el panel **plantillas** , seleccione **biblioteca del diseñador de actividad**.
 
@@ -36,14 +36,14 @@ Los diseñadores de actividades personalizados permiten crear una interfaz de us
 7. En el cuadro **solución** , escriba un nombre descriptivo para la solución y, a continuación, haga clic en **Aceptar**.
 
     > [!NOTE]
-    > Si desea agregar una aplicación de consola de flujos de trabajo a una solución existente, ábrala en [!INCLUDE[vs2010](../includes/vs2010-md.md)], haga clic con el botón derecho en la solución en **Explorador de soluciones**y seleccione **Agregar**y luego **nuevo proyecto.** . para abrir el cuadro de diálogo **nuevo proyecto** . Continúe de la forma descrita anteriormente en este procedimiento.
+    > Si desea agregar una aplicación de consola de flujos de trabajo a una solución existente, ábrala en [!INCLUDE[vs2010](../includes/vs2010-md.md)] , haga clic con el botón derecho en la solución en **Explorador de soluciones**y seleccione **Agregar**y luego **nuevo proyecto...** para abrir el cuadro de diálogo **nuevo proyecto** . Continúe de la forma descrita anteriormente en este procedimiento.
 
 8. La plantilla de proyecto crea una definición del diseñador de actividad en código XAML y el archivo de implementación subyacente está en código fuente. [!INCLUDE[wfd1](../includes/wfd1-md.md)] se abre y muestra el lienzo para su diseñador de actividades.
 
-9. Arrastre [!INCLUDE[avalon1](../includes/avalon1-md.md)] controles del **cuadro de herramientas** a la superficie de diseño para usarlos en el diseñador de actividad personalizado.  Para obtener un ejemplo de cómo implementar un diseñador de actividad personalizado, vea [Cómo: crear un diseñador de actividad personalizado](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).
+9. Arrastre los [!INCLUDE[avalon1](../includes/avalon1-md.md)] controles del **cuadro de herramientas** a la superficie de diseño para usarlos en el diseñador de actividad personalizado.  Para obtener un ejemplo de cómo implementar un diseñador de actividad personalizado, vea [Cómo: crear un diseñador de actividad personalizado](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).
 
     > [!WARNING]
-    > Los diseñadores de actividad personalizados se pueden usar para las actividades personalizadas, así como para los [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]activities predeterminados.
+    > Los diseñadores de actividad personalizados se pueden usar para las actividades personalizadas y para [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] las actividades predeterminadas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear un proyecto de flujo de trabajo](../workflow-designer/creating-a-workflow-project.md)

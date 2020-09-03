@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254350"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar las personalizaciones de la cinta de opciones en los proyectos de Office migrados al .NET Framework 4 o al .NET Framework 4,5
-  Si el proyecto contiene una personalización de la cinta de opciones que se creó mediante el elemento de proyecto **cinta (diseñador visual)** , debe realizar los siguientes cambios en el código del proyecto si la versión de [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .NET Framework de destino se cambia a o versiones posteriores.
+  Si el proyecto contiene una personalización de la cinta de opciones que se creó mediante el elemento de proyecto **cinta (diseñador visual)** , debe realizar los siguientes cambios en el código del proyecto si la versión de .NET Framework de destino se cambia a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores.
 
 - Modifique el código generado de la cinta.
 
@@ -29,9 +29,9 @@ ms.locfileid: "71254350"
 ## <a name="update-the-generated-ribbon-code"></a>Actualizar el código de cinta generado
  Si se cambia el marco de trabajo de destino del proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, debe cambiar el código generado para el elemento de la cinta llevando a cabo los siguientes pasos. Los archivos de código que debe actualizar dependerán del lenguaje de programación y de cómo haya creado el proyecto:
 
-- En proyectos de Visual Basic o en proyectos C# visuales creados en o [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] realice todos los pasos del archivo de código subyacente de la cinta de opciones (*suElementoDeCinta*. Designer.cs o *suElementoDeCinta*. Designer. VB). Para ver el archivo de código subyacente en proyectos de Visual Basic, haga clic en el botón **Mostrar todos los archivos** en **Explorador de soluciones**.
+- En proyectos de Visual Basic o en proyectos de Visual C# creados en [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] realice todos los pasos del archivo de código subyacente de la cinta de opciones (*suElementoDeCinta*. Designer.cs o *suElementoDeCinta*. Designer. VB). Para ver el archivo de código subyacente en proyectos de Visual Basic, haga clic en el botón **Mostrar todos los archivos** en **Explorador de soluciones**.
 
-- En los C# proyectos visuales creados en Visual Studio 2008 y, a continuación, se actualizó a [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], realice los dos primeros pasos en el archivo de código de la cinta de opciones (*suElementoDeCinta*. cs o *suElementoDeCinta*. VB) y realice los pasos restantes en el Archivo de código subyacente de la cinta de opciones.
+- En los proyectos de Visual C# creados en Visual Studio 2008 y después actualizados a [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] , realice los dos primeros pasos en el archivo de código de la cinta de opciones (*suElementoDeCinta*. cs o *suElementoDeCinta*. VB) y realice los pasos restantes en el archivo de código subyacente de la cinta de opciones.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>Para cambiar el código generado de la cinta
 
@@ -103,13 +103,13 @@ ms.locfileid: "71254350"
 
      Por ejemplo, suponga que su archivo contiene la siguiente línea de código que controla el evento <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> en un proyecto que tenga como destino .NET Framework 3.5.
 
-    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> en un proyecto [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] destinado a o versiones posteriores, debe usar el código siguiente en su lugar.
+    \<CodeContentPlaceHolder>8 </CodeContentPlaceHolder> en un proyecto que tiene como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, debe usar el código siguiente en su lugar.
 
-    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> para obtener una lista completa de los delegados de la cinta, consulte [controlar eventos](#ribbonevents)de la cinta de opciones.
+    \<CodeContentPlaceHolder>9 </CodeContentPlaceHolder> para obtener una lista completa de los delegados de la cinta, consulte [controlar eventos de cinta](#ribbonevents).
 
 5. En los proyectos de Visual Basic, busque la clase `ThisRibbonCollection` al final del archivo. Modifique la declaración de esta clase para que deje de heredar de `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
-## <a name="ribboncontrols"></a>Crear instancias de controles de la cinta
+## <a name="instantiate-ribbon-controls"></a><a name="ribboncontrols"></a> Crear instancias de controles de la cinta
  Debe modificar todo el código que cree instancias de forma dinámica de controles de la cinta. En proyectos que tengan como destino .NET Framework 3.5, los controles de la cinta son clases de las que se pueden crear instancias directamente en determinados escenarios. En los proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, estas clases son interfaces de las que no se pueden crear instancias directamente. Debe crear los controles mediante métodos proporcionados por el objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
  Hay dos maneras de acceder al objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:
@@ -120,7 +120,8 @@ ms.locfileid: "71254350"
 
   En el siguiente ejemplo de código se muestra cómo crear un [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] en una clase Ribbon en un proyecto que tiene como destino <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> o una versión posterior.
 
-\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> en la tabla siguiente se enumeran los controles que se pueden crear mediante programación y el método que se va a usar para crear los controles en proyectos que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior.
+\<CodeContentPlaceHolder>10 </CodeContentPlaceHolder> 
+ \<CodeContentPlaceHolder> 11 en </CodeContentPlaceHolder> la tabla siguiente se enumeran los controles que se pueden crear mediante programación y el método que se va a usar para crear los controles en proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior.
 
 |Control|El método RibbonFactory a usar en proyectos de la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] y versiones posteriores|
 |-------------| - |
@@ -142,12 +143,12 @@ ms.locfileid: "71254350"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-## <a name="ribbonevents"></a>Controlar eventos de la cinta
+## <a name="handle-ribbon-events"></a><a name="ribbonevents"></a> Controlar eventos de la cinta
  Debe modificar cualquier código que controle los eventos de los controles Ribbon. En los proyectos que tengan como destino la versión .NET Framework 3.5, el delegado de <xref:System.EventHandler%601> genérico controla estos eventos. Ahora, en los proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, otros delegados controlan estos eventos.
 
  En la siguiente tabla se enumeran los eventos de Ribbon y los delegados que se asocian a ellos en proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior.
 
-|evento|Delegado a usar en proyectos de la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] y posterior|
+|Evento|Delegado a usar en proyectos de la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] y posterior|
 |-----------| - |
 |Evento <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> en una clase Ribbon generada|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|
