@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: da9ba9572e121a9eba74cd8d624789032f1bb4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665666"
 ---
 # <a name="quick-watch-command"></a>Inspección rápida (Comando)
@@ -35,7 +35,7 @@ Debug.QuickWatchq [text]
 ## <a name="arguments"></a>Argumentos
  `text` Opcional. El texto que se va a agregar al cuadro de diálogo **InspecciónRápida**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Si `text` se omite, el texto seleccionado actualmente o la palabra en el cursor se agrega a la ventana Inspección.
 
 ## <a name="example"></a>Ejemplo
@@ -44,5 +44,5 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Cómo: usar el cuadro de diálogo Inspección rápida](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) (comandos) [ventana](../../ide/reference/command-window.md) comandos de [Visual Studio comandos](../../ide/reference/visual-studio-commands.md) de comandos de [Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [cuadro Buscar/comando](../../ide/find-command-box.md)

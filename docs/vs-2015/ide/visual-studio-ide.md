@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bbeeb3d65e50e4cd3e33d4cab63dc619a1ad7a8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534321"
 ---
 # <a name="visual-studio-ide"></a>IDE de Visual Studio
@@ -44,7 +44,7 @@ Para obtener información sobre las nuevas características de Visual Studio 2
 ## <a name="ide-basics"></a>Conceptos básicos del IDE
  La siguiente imagen muestra el IDE de Visual Studio con un proyecto abierto, la ventana Explorador de soluciones para desplazarse por los archivos de proyecto y la ventana de Team Explorer para navegar por el código fuente y controlar los elementos de trabajo. A continuación se explican con más detalle las características de la barra de título mencionadas.
 
- ![IDE de Visual Studio](../ide/media/visualstudioide.png "VisualStudioIDE")
+ ![IDE de Visual Studio](../ide/media/visualstudioide.png "VisualStudioIDE")
 
 ### <a name="signing-in"></a>Iniciar sesión
  Cuando se inicia Visual Studio por primera vez, puede iniciar sesión con su cuenta de Microsoft o con su cuenta de trabajo o escuela. Iniciar sesión le permite sincronizar la configuración (como la disposición de ventanas) entre varios dispositivos y conectarse automáticamente a los servicios que pueda necesitar, como las suscripciones de Azure y Visual Studio Team Services. Si tiene una licencia de suscripción, deberá iniciar sesión Visual Studio de forma periódica para mantener actualizado su token de licencia. Si tiene una licencia de clave de producto, no tiene que iniciar sesión, pero hacerlo le permitirá conectarse más cómodamente a Visual Studio Team Services y a sus cuentas con Azure, Office 365, Salesforce.com. Para obtener más información, consulte [iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md).
@@ -85,7 +85,7 @@ Para obtener información sobre las nuevas características de Visual Studio 2
 
  Una *plantilla de proyecto* es una colección de archivos de código y opciones de configuración previamente rellenados que permite preparar rápidamente la creación de un tipo específico de aplicación. Visual Studio incluye numerosas plantillas de proyecto para elegir pero, si no le sirve ninguna de las plantillas predeterminadas, puede crear las suyas propias. Después de crear un proyecto con una plantilla, puede empezar a escribir su propio código en él, en los archivos proporcionados o en los nuevos archivos que agregue. Para obtener más información, vea [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md). La ilustración siguiente muestra el cuadro de diálogo Nuevo proyecto con las plantillas de proyecto que hay disponibles para las aplicaciones ASP.NET.
 
- ![Cuadro de diálogo Nuevo proyecto de Visual Studio](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
+ ![Cuadro de diálogo nuevo proyecto de Visual Studio](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
 
 ## <a name="designing-the-user-interface"></a>Diseñar la interfaz de usuario
  Un diseñador es una herramienta intuitiva que permite crear una interfaz de usuario sin escribir código. Puede arrastrar los controles de interfaz de usuario, como cuadros de lista, calendarios y botones, desde la ventana [Toolbox](../ide/reference/toolbox.md) hasta una superficie de diseño que represente el cuadro de diálogo o la ventana. Puede cambiar el tamaño y reorganizar los elementos sin escribir ningún código. Se incluyen diseñadores para cualquier tipo de proyecto que tenga una interfaz de usuario.
@@ -192,11 +192,11 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 
 - [Cuentas de usuario y actualizaciones](../ide/user-accounts-and-updates.md)
 - [Personalización del IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Cómo: moverse por el IDE de Visual Studio](../ide/how-to-move-around-in-the-visual-studio-ide.md)
+- [Cómo: moverse por el IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)
 - [Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)
 - [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
 - [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
-- [Escritura de código](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Escribir código](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)
 - [Herramientas de generación de perfiles](../profiling/profiling-tools.md)
 - [Mejorar la calidad del código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
@@ -206,7 +206,7 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 - [Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md)
 - [Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
 - [Seguridad](../ide/security-in-visual-studio.md)
-- [Visual Studio Samples](../ide/visual-studio-samples.md)
+- [Ejemplos de Visual Studio](../ide/visual-studio-samples.md)
 - [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)
 - [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)
 - [Referencia de la interfaz de usuario](../ide/reference/general-user-interface-elements-visual-studio.md)

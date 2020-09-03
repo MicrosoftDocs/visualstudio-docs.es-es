@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534243"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Métodos abreviados de teclado para comandos de uso frecuente en Visual Studio
@@ -26,36 +26,36 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 
  **En este tema**
 
-- [Compilación](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
+- [Compilar](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
 
-- [Edición](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
+- [Editar](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
 
 - [Proyecto](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)
 
 - [Herramientas](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)
 
-- [Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
+- [Ventana](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
 
 - [Depuración](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)
 
 - [Archivo](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
 
-- [Refactorización](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
+- [Refactorizar](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
 
 - [Visores](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="build"></a><a name="bkmk_build"></a>Versión
+## <a name="build"></a><a name="bkmk_build"></a> Compilación
 
-|Comandos:|Métodos abreviados de teclado [Contextos]|
+|Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------|-------------------------------------|
 |Build.BuildSolution|Ctrl+Mayús+B [Global]|
 |Build.Cancel|Ctrl+Inter [Global]|
 |Build.Compile|Ctrl+F7 [Global]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Global]|
 
-## <a name="debug"></a><a name="bkmk_debug"></a>Depura
+## <a name="debug"></a><a name="bkmk_debug"></a> Depurar
 
-|Comandos:|Métodos abreviados de teclado [Contextos]|
+|Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------|-------------------------------------|
 |Debug.BreakatFunction|Ctrl+B [Global]|
 |Debug.BreakAll|Ctrl+Alt+Inter [Global]|
@@ -75,7 +75,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 
 ## <a name="edit"></a><a name="bkmk_edit"></a> Editar
 
-|Comandos:|Métodos abreviados de teclado [Contextos]|
+|Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|Intro [Editor de texto, Diseñador de informes, Diseñador de Windows Forms]<br /><br /> o Mayús+Intro [Editor de texto]|
 |Edit.CollapsetoDefinitions|Ctrl+M, Ctrl+O [Editor de texto]|
@@ -124,9 +124,9 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Edit.WordDeleteToEnd|Ctrl+Supr [Editor de texto]|
 |Edit.WordDeleteToStart|Ctrl+Retroceso [Editor de texto]|
 
-## <a name="file"></a><a name="bkmk_file"></a>Filesystem
+## <a name="file"></a><a name="bkmk_file"></a> Archivo
 
-|Comandos:|Métodos abreviados de teclado [Contextos]|
+|Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------|-------------------------------------|
 |File.Exit|Alt+F4 [Global]|
 |File.NewFile|Ctrl+N [Global]|
@@ -142,12 +142,12 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 
 ## <a name="project"></a><a name="bkmk_project"></a> Proyecto
 
-|Comandos:|Métodos abreviados de teclado [Contextos]|
+|Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|Mayús+Alt+A [Global]|
 |Project.AddNewItem|Ctrl+Mayús+A [Global]|
 
-## <a name="refactor"></a><a name="bkmk_refactor"></a>Refactorizar
+## <a name="refactor"></a><a name="bkmk_refactor"></a> Refactorizar
 
 |Get-Help|Métodos abreviados de teclado [Contexto]|
 |-------------|-----------------------------------|
@@ -159,9 +159,9 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [Global]|
 
-## <a name="view"></a><a name="bkmk_view"></a>Visores
+## <a name="view"></a><a name="bkmk_view"></a> Vista
 
-|Comandos:|Métodos abreviados de teclado [Contextos]|
+|Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------|-------------------------------------|
 |View.ClassView|Ctrl+Mayús+C [Global]|
 |View.EditLabel|F2 [Global]|
@@ -180,9 +180,9 @@ iew.TfsTeamExplorer|CTRL+\\, CTRL+M [Global]|
 |View.ViewCode|Intro [Diagrama de clases]<br /><br /> o F7 [Diseñador de configuración]|
 |View.ViewDesigner|Mayús+F7 [Vista de código fuente del editor de HTML]|
 
-## <a name="window"></a><a name="bkmk_window"></a>Ventana
+## <a name="window"></a><a name="bkmk_window"></a> Ventana
 
-|Comandos:|Métodos abreviados de teclado [Contextos]|
+|Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------|-------------------------------------|
 |Window.ActivateDocumentWindow|Esc [Global]|
 |Window.CloseDocumentWindow|Ctrl+F4 [Global]|

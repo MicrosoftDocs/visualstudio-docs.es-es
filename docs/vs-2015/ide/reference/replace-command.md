@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7ba633999925e86b753dbd815babe6e52c75ca53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665626"
 ---
 # <a name="replace-command"></a>Reemplazar (Comando)
@@ -73,5 +73,5 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  Buscar [y reemplazar](../../ide/finding-and-replacing-text.md) la [ventana comandos](../../ide/reference/command-window.md) de texto [cuadro Buscar/comando](../../ide/find-command-box.md) [comandos de Visual](../../ide/reference/visual-studio-commands.md) Studio alias de comandos de [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

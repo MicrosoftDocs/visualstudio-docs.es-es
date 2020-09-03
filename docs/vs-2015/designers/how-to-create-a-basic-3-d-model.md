@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un modelo 3D básico | Microsoft Docs
+title: 'Cómo: Crear un modelo 3D básico | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b4db5b54f39a0be6de184b609e672b1f0173890
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664593"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Procedimiento Creación de un modelo 3D básico
+# <a name="how-to-create-a-basic-3-d-model"></a>Cómo: Crear un modelo 3D básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Editor de modelos para crear un modelo 3D básico.
@@ -27,7 +27,7 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
 
 - Selección de caras y bordes
 
-- Traducir selecciones
+- Trasladar selecciones
 
 - Uso de las herramientas **Subdividir cara** y **Extruir cara**
 
@@ -56,7 +56,7 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
 
 5. Extruya dos lados adyacentes del cubo, por ejemplo, la parte frontal y derecha del cubo. En el modo de selección de cara, elija el cubo una vez para activarlo para la selección y, después, elija un lado del cubo. Presione y mantenga presionada la tecla Control, elija otro lado del cubo que sea adyacente al primero que seleccionó y, después, en la barra de herramientas del Editor de modelos, haga clic en **Extruir cara**.
 
-    ![Los lados del cubo se han extruido](../designers/media/gfx-model-demo-house-extrude.png "gfx_model_demo_house_extrude")
+    ![Los lados del cubo se han extruido.](../designers/media/gfx-model-demo-house-extrude.png "gfx_model_demo_house_extrude")
 
 6. Extienda una de las extrusiones. Seleccione una de las caras que acaba de extruir y, después, en la barra de herramientas del Editor de modelos, elija la herramienta **Trasladar** y mueva el manipulador de traslación en la misma dirección que la extrusión.
 
@@ -74,7 +74,7 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
 
    ![El modelo completado de la casa simplificada](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")
 
-   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para obtener información, vea [Cómo: Aplicar un sombreador a un modelo 3D ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para obtener más información, vea [Cómo: aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vea también
- [Cómo: Modelo 3D ](../designers/how-to-model-3-d-terrain.md) [Diseñador de sombras](../designers/shader-designer.md) del [Editor de modelos](../designers/model-editor.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: modelar el diseñador de sombras del editor de modelos de Terrain](../designers/how-to-model-3-d-terrain.md) [Model Editor](../designers/model-editor.md) [Shader Designer](../designers/shader-designer.md) 3D

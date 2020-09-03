@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Documentos de Microsoft
+title: 'IDebugProgramProvider2:: WatchForProviderEvents | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ee4b40aefc848d89068076fb3176ae6b625e9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198704"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Permite que el proceso recibir una notificación de eventos de puerto.  
+Permite que el proceso reciba notificaciones de eventos de puerto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,38 +50,38 @@ int WatchForProviderEvents(
   
 #### <a name="parameters"></a>Parámetros  
  `Flags`  
- [in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:  
+ de Combinación de marcas de la enumeración [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Las marcas siguientes son típicas para esta llamada:  
   
-|Marcar|DESCRIPCIÓN|  
+|Marcar|Descripción|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Autor de la llamada se está ejecutando en el equipo remoto.|  
-|`PFLAG_DEBUGGEE`|Autor de la llamada se está depurando (se devuelve información adicional sobre el cálculo de referencias para cada nodo).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Autor de llamada se adjunta a pero no se inicia el depurador.|  
-|`PFLAG_REASON_WATCH`|Autor de llamada quiere inspeccionar los eventos. Si no se establece esta marca. a continuación, se quita el evento de devolución de llamada y el llamador ya no recibe notificaciones.|  
+|`PFLAG_REMOTE_PORT`|El autor de la llamada se está ejecutando en la máquina remota.|  
+|`PFLAG_DEBUGGEE`|El autor de la llamada se está depurando actualmente (se devuelve información adicional sobre el cálculo de referencias para cada nodo).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|El autor de la llamada estaba asociado pero no lo inició el depurador.|  
+|`PFLAG_REASON_WATCH`|El autor de la llamada desea ver los eventos. Si no se establece esta marca. a continuación, se quita el evento de devolución de llamada y el llamador ya no recibe notificaciones.|  
   
  `pPort`  
- [in] El puerto que el proceso de llamada se ejecuta en.  
+ de El puerto en el que se está ejecutando el proceso de llamada.  
   
  `processId`  
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.  
+ de Estructura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que contiene el identificador del proceso que contiene el programa en cuestión.  
   
  `EngineFilter`  
- [in] Una matriz de GUID de motores de depuración asociados con el proceso.  
+ de Matriz de GUID de los motores de depuración asociados al proceso.  
   
  `guidLaunchingEngine`  
- [in] GUID del motor de depuración que inició este proceso (si existe).  
+ de GUID del motor de depuración que inició este proceso (si existe).  
   
  `pEventCallback`  
- [in] Un [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objeto que recibe las notificaciones de eventos.  
+ de Un objeto [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) que recibe las notificaciones de eventos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando un llamador desea quitar un controlador de eventos que se ha establecido con una llamada anterior a este método, el llamador pasa los mismos parámetros que tenía la primera vez, pero deja fuera la `PFLAG_REASON_WATCH` marca.  
+ Cuando un autor de llamada desea quitar un controlador de eventos que se estableció con una llamada anterior a este método, el autor de la llamada pasa los mismos parámetros que en la primera vez pero abandona la `PFLAG_REASON_WATCH` marca.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **CDebugEngine** objeto que expone el [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugEngine** que expone la interfaz [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) .  
   
 ```cpp#  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  
@@ -209,7 +209,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
  [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   

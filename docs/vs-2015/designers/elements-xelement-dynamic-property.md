@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 383101679827f19b9a85d36f0f5a39eb772c68ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664694"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (Propiedad dinámica de XElement)
@@ -34,12 +34,12 @@ elem.Elements[{namespaceName}localName]
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto
  Un indizador del tipo `IEnumerable<XElement> Item(String expandedName)`. Este indizador toma el nombre expandido de los elementos secundarios deseados y devuelve los elementos secundarios coincidentes en una recopilación <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Esta propiedad es equivalente al método <xref:System.Xml.Linq.XContainer.Elements%28System.Xml.Linq.XName%29?displayProperty=fullName> de la clase <xref:System.Xml.Linq.XContainer>.
 
  Los elementos de la colección devuelta están en el orden del documento de origen XML.
 
  Esta propiedad usa la ejecución aplazada.
 
-## <a name="see-also"></a>Vea también
- [Propiedades dinámicas de la clase XElement](../designers/xelement-class-dynamic-properties.md) [Elemento](../designers/element-xelement-dynamic-property.md) [Descendientes](../designers/descendants-xelement-dynamic-property.md)
+## <a name="see-also"></a>Consulte también
+ Elementos de [propiedades dinámicas de la clase XElement](../designers/xelement-class-dynamic-properties.md) [Element](../designers/element-xelement-dynamic-property.md) [descendientes](../designers/descendants-xelement-dynamic-property.md)

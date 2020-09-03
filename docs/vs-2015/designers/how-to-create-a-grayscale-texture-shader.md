@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 554717d59a42bed15b37379d3bf7a5c4da727e95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664510"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Cómo: Crear un sombreador de textura de escala de grises
@@ -28,7 +28,7 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
 
 #### <a name="to-create-a-grayscale-texture-shader"></a>Para crear un sombreador de textura de escala de grises
 
-1. Cree un sombreador de textura básico, como se describe en [Cómo: Crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
+1. Cree un sombreador de textura básico, como se describe en [Cómo: crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
 
 2. Desconecte el terminal **RGB** del nodo **Muestra de textura** del terminal **RGB** del nodo **Color final**. En el modo **Seleccionar**, elija el terminal **RGB** del nodo **Muestra de textura** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
@@ -48,7 +48,7 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
 
  ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-grayscale-effect.png "Digit: efecto de escala de grises")
 
- Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea [Diseñador de sombras](../designers/shader-designer.md)
+ Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para obtener más información sobre cómo obtener una vista previa de los sombreadores en el diseñador de sombras, vea [Diseñador de sombras](../designers/shader-designer.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Cómo: exportar un editor de](../designers/how-to-export-a-shader.md) [imágenes](../designers/image-editor.md) de sombreador [nodos del diseñador](../designers/shader-designer-nodes.md) de sombras del [Diseñador](../designers/shader-designer.md) de sombras

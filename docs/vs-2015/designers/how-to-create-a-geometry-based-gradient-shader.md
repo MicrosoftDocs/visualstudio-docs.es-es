@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un sombreador de degradado basado en geometría | Microsoft Docs
+title: 'Cómo: Crear un sombreador de degradado basado en geometría | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d9bfa9a6e9be1a97b3a606aa302defd12a8d062
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664522"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedimiento Crear un sombreador de gradiente basado en geometría
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Cómo: Crear un sombreador de gradiente basado en geometría
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de degradado basado en geometría. Este sombreador escala un valor de color RGB constante según el alto de cada punto de un objeto en el espacio global.
@@ -63,13 +63,13 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
 
  ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-gradient-effect-graph.png "Digit-gradient-Effect-Graph")
 
- Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea **Vista previa de sombreadores** en [Diseñador de sombras](../designers/shader-designer.md)
+ Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para obtener información sobre cómo obtener una vista previa de los sombreadores en el diseñador de sombras, vea obtener una vista previa de los **sombreadores** en el [Diseñador de sombras](../designers/shader-designer.md) .
 
- En la ilustración siguiente se muestra el sombreador que se describe en este documento que se aplica a la escena 3D que se muestra en [How para: @No__t_0 del terreno del modelo 3D. La intensidad del color aumenta con el alto del punto en la posición global.
+ En la ilustración siguiente se muestra el sombreador que se describe en este documento aplicado a la escena 3D que se demuestra en [Cómo: modelar el terreno 3D](../designers/how-to-model-3-d-terrain.md). La intensidad del color aumenta con el alto del punto en la posición global.
 
- ![Efecto de degradado aplicado a&#45;un modelo de terreno de 3 D](../designers/media/digit-gradient-effect-result.png "Digit-gradient-Effect-result")
+ ![Efecto de degradado aplicado a un modelo de terreno 3&#45;D](../designers/media/digit-gradient-effect-result.png "Digit-gradient-Effect-result")
 
- Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [How: Aplicar un sombreador a un modelo 3D ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vea también
- [Cómo: Aplicar un sombreador a un modelo 3D ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [How a: Exporte un sombreador ](../designers/how-to-export-a-shader.md) [How a: Modelo 3D ](../designers/how-to-model-3-d-terrain.md) [How: Crear un sombreador de textura de escala de grises ](../designers/how-to-create-a-grayscale-texture-shader.md) [nodos del diseñador de sombras](../designers/shader-designer-nodes.md) del diseñador de [sombras](../designers/shader-designer.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md) [Cómo: modelar el terreno en 3D](../designers/how-to-model-3-d-terrain.md) [Cómo: crear un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md) [Shader Designer](../designers/shader-designer.md) [nodos del diseñador](../designers/shader-designer-nodes.md) de sombras del diseñador

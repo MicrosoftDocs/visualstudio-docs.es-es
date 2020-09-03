@@ -15,18 +15,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 11e1cd997c76974e7b4b8771c0579c175469eca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665486"
 ---
 # <a name="services-page-project-designer"></a>Página Servicios, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Los servicios de aplicación cliente proporcionan acceso simplificado al inicio de sesión, los roles y los servicios de perfiles de [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] desde aplicaciones de Windows Forms y Windows Presentation Foundation (WPF). Puede usar la página **Servicios** del **Diseñador de proyectos** para habilitar y configurar servicios de aplicación cliente para el proyecto.
+Los servicios de aplicaciones cliente proporcionan acceso simplificado al inicio de sesión, los roles y los servicios de perfiles de [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] desde aplicaciones de Windows Forms y Windows Presentation Foundation (WPF). Puede usar la página **Servicios** del **Diseñador de proyectos** para habilitar y configurar servicios de aplicación cliente para el proyecto.
 
- Con los servicios de aplicación cliente, puede usar un servidor centralizado para autenticar a los usuarios, determinar los roles asignados a cada usuario y almacenar ajustes de aplicación por usuario para compartirlos a través de la red. Para más información, vea [Servicios de aplicación cliente](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).
+ Con los servicios de aplicación cliente, puede usar un servidor centralizado para autenticar a los usuarios, determinar los roles asignados a cada usuario y almacenar ajustes de aplicación por usuario para compartirlos a través de la red. Para obtener más información, consulte [Servicios de aplicación cliente](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).
 
  Para acceder a la página **Servicios**, seleccione un nodo de proyecto en el **Explorador de soluciones** y luego haga clic en **Propiedades** en el menú **Proyecto**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Servicios**.
 
@@ -45,11 +45,11 @@ Los servicios de aplicación cliente proporcionan acceso simplificado al inicio 
 
  **Usar autenticación de Windows** Indica que el proveedor de autenticación usará la autenticación basada en Windows, es decir, la identidad proporcionada por el sistema operativo Windows.
 
- **Usar autenticación de formularios** Indica que el proveedor de autenticación usará la autenticación de formularios. Esto significa que la aplicación debe proporcionar una interfaz de usuario para el inicio de sesión. Para obtener más información, vea [Cómo: Implementar el inicio de sesión de usuarios con servicios de aplicaciones cliente](https://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).
+ **Usar autenticación de formularios** Indica que el proveedor de autenticación usará la autenticación de formularios. Esto significa que la aplicación debe proporcionar una interfaz de usuario para el inicio de sesión. Para más información, vea [Cómo: Implementar el inicio de sesión de usuarios con servicios de aplicaciones cliente](https://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).
 
  **Ubicación del servicio de autenticación** Solo se usa con la autenticación de formularios. Especifica la ubicación del servicio de autenticación.
 
- **Opcional: El proveedor de credenciales**  usar solo con la autenticación de formularios. Indica la implementación <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> que el servicio de autenticación usará para mostrar un cuadro de diálogo de inicio de sesión cuando su aplicación llame al método `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> y pase cadenas vacías o `null` a los parámetros. Si deja este cuadro en blanco, debe pasar un nombre de usuario válido y una contraseña al método <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Tiene que especificar el proveedor de credenciales como un nombre de tipo calificado con el ensamblado. Para obtener más información, consulte <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> y [Nombres del ensamblado](https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). En su forma más simple, un nombre de tipo calificado con el ensamblado es similar al ejemplo siguiente: `MyNamespace.MyLoginClass, MyAssembly`
+ **Opcional: proveedor de credenciales** Solo se usa con la autenticación de formularios. Indica la implementación <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> que el servicio de autenticación usará para mostrar un cuadro de diálogo de inicio de sesión cuando su aplicación llame al método `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> y pase cadenas vacías o `null` a los parámetros. Si deja este cuadro en blanco, debe pasar un nombre de usuario válido y una contraseña al método <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Tiene que especificar el proveedor de credenciales como un nombre de tipo calificado con el ensamblado. Para obtener más información, consulte <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> y [Nombres del ensamblado](https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). En su forma más simple, un nombre de tipo calificado con el ensamblado es similar al ejemplo siguiente: `MyNamespace.MyLoginClass, MyAssembly`
 
  **Ubicación del servicio de roles** Especifica la ubicación del servicio de roles.
 
@@ -57,5 +57,5 @@ Los servicios de aplicación cliente proporcionan acceso simplificado al inicio 
 
  **Opciones avanzadas** Abre el [cuadro de diálogo Configuración avanzada de servicios](../../ide/reference/advanced-settings-for-services-dialog-box.md), que puede usar para invalidar el comportamiento predeterminado. Por ejemplo, puede usar este cuadro de diálogo para especificar una base de datos para el almacenamiento sin conexión en lugar de emplear el sistema de archivos local. Para más información, vea [Configuración avanzada de servicios (Cuadro de diálogo)](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
-## <a name="see-also"></a>Vea también
- [Cuadro de diálogo Configuración avanzada de](../../ide/reference/advanced-settings-for-services-dialog-box.md) [cliente servicios de aplicación](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) para los servicios [How a: Configurar servicios de aplicación de cliente ](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [Página compilar, diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [, páginaC#compilación, diseñador de proyectos ()](../../ide/reference/build-page-project-designer-csharp.md) [Introducción al diseñador de proyectos](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)
+## <a name="see-also"></a>Consulte también
+ [Client Application Services](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [Cuadro de diálogo Configuración avanzada de cliente servicios de aplicación para servicios](../../ide/reference/advanced-settings-for-services-dialog-box.md) [cómo: configurar el cliente servicios de aplicación](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [Página compilar, diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [Página compilación, diseñador de proyectos (C#)](../../ide/reference/build-page-project-designer-csharp.md) [Introducción al diseñador de proyectos](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

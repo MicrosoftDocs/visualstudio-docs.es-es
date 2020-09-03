@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6384ea963fe1da145cacc0be46b5989f7bc610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198757"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Enumera los tipos de campos adicionales que un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) puede contener el objeto. Esta enumeración se extiende el [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) enumeración.  
+Enumera los tipos adicionales de campos que puede contener un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) . Esta enumeración extiende la enumeración de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,21 +45,21 @@ public enum enum_FIELD_KIND_EX
   
 ## <a name="members"></a>Miembros  
  FIELD_KIND_EX_NONE  
- Campo no contiene un tipo extendido.  
+ El campo no contiene un tipo extendido.  
   
  FIELD_TYPE_EX_METHODVAR  
- Campo contiene una variable de método.  
+ El campo contiene una variable de método.  
   
  FIELD_TYPE_EX_CLASSVAR  
- Campo contiene una variable de clase.  
+ El campo contiene una variable de clase.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

@@ -18,14 +18,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d97ecad48c8daa9613ea4035c07e82a07c72c077
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817338"
 ---
 # <a name="false-windows-script-technologies"></a>False (Windows Script Technologies)
 La palabra clave **false** tiene un valor igual a 0.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [True (palabra clave)](../../javascript/misc/true-keyword.md)

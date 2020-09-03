@@ -18,16 +18,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8bb18ec8dd12431d650d844e3698c1986c8d8bd8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665641"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referencias, Diseñador de proyectos (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Use la página **Referencias** del **Diseñador de proyectos** para administrar las referencias, las referencias web y los espacios de nombres importados en su proyecto. Los proyectos pueden contener referencias a componentes COM, servicios Web XML, bibliotecas de clases o ensamblados de .NET Framework u otras bibliotecas de clases. Para obtener más información sobre el uso de referencias, vea [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md).
+Use la página **referencias** del **Diseñador de proyectos** para administrar las referencias, las referencias Web y los espacios de nombres importados en el proyecto. Los proyectos pueden contener referencias a componentes COM, servicios Web XML, bibliotecas de clases o ensamblados de .NET Framework u otras bibliotecas de clases. Para obtener más información sobre el uso de referencias, vea [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md).
 
  Para obtener acceso a la página **Referencias**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Referencias**.
 
@@ -54,7 +54,7 @@ Use la página **Referencias** del **Diseñador de proyectos** para administrar 
 
  Pulse **Referencia** para agregar una referencia a su proyecto con el cuadro de diálogo Agregar referencia.
 
- Pulse **Referencia web** para agregar una referencia web a su proyecto con el cuadro de diálogo Agregar referencia web.
+ Elija **referencia Web** para agregar una referencia Web al proyecto mediante el cuadro de diálogo Agregar referencia Web.
 
  **Quitar** Seleccione una o varias referencias en la lista **referencias** y, después, haga clic en este botón para eliminarlo.
 
@@ -62,7 +62,7 @@ Use la página **Referencias** del **Diseñador de proyectos** para administrar 
 
  **Espacios de nombres importados** Puede escribir su propio espacio de nombres en este cuadro y hacer clic en **Agregar importación de usuario** para agregarlo a la lista de espacios de nombres.
 
- Puede crear alias para los espacios de nombres importados por el usuario. Para realizar esto, escriba el alias y el espacio de nombres en el formato *alias*=*espacio de nombres*. Esto es útil si está usando espacios de nombres largos, por ejemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+ Puede crear alias para los espacios de nombres importados por el usuario. Para ello, escriba el alias y el espacio de nombres en el *alias* = *espacio de nombres*de alias de formato. Esto es útil si está usando espacios de nombres largos, por ejemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Agregar importación de usuario** Haga clic en este botón para agregar el espacio de nombres especificado en el cuadro espacios de nombres **importados** a la lista de espacios de nombres importados. El botón solo está activo si el espacio de nombres especificado todavía no está en la lista.
 
@@ -76,5 +76,5 @@ Use la página **Referencias** del **Diseñador de proyectos** para administrar 
 
 - Espacios de nombres XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [NIB cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Cómo: agregar o quitar espacios de nombres importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md) [NIB: instrucción de agregar referencia Web cuadro de diálogo](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) [importaciones (espacio de nombres XML)](https://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

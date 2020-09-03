@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f177bf81a43c45dcff4cef3040c64425ed544057
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816974"
 ---
 # <a name="function-expected"></a>Se esperaba una función
@@ -35,6 +35,6 @@ var x = example();           // Try and call example as if it were a function.
   
 - Asegúrese de usar el operador de llamada de función `()` para llamar solo a funciones.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Objeto de función](../../javascript/reference/function-object-javascript.md)   
  [prototype (Propiedad, Object)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816792"
 ---
 # <a name="operator-summary-javascript"></a>Resumen de operadores (JavaScript)
@@ -29,8 +29,8 @@ En las tablas siguientes se enumeran los [!INCLUDE[javascript](../../javascript/
 |[Agregado](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Decremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[División](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Importación](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Incremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Resto](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Multiplicación](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Resta](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Negación unaria](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -39,7 +39,7 @@ En las tablas siguientes se enumeran los [!INCLUDE[javascript](../../javascript/
   
 |Operador|Símbolo|  
 |--------------|------------|  
-|[Coma](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[Unas](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[Condicional (ternario)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[Igualdad](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Mayor que](../../javascript/reference/comparison-operators-javascript.md)|>|  
@@ -48,7 +48,7 @@ En las tablas siguientes se enumeran los [!INCLUDE[javascript](../../javascript/
 |[Desigualdad](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Menor que](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[Menor o igual que](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[AND lógico](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
+|[Y lógico](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[NOT lógico](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[OR lógico](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
 |[Operador](../../javascript/reference/comparison-operators-javascript.md)|!==|  

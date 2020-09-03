@@ -32,10 +32,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 537223aab878aee2fb00e9417d0415f0a17d2dd5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534139"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opciones, editor de texto, XAML, formato
@@ -59,7 +59,7 @@ El formato automático puede producirse al detectarse cualquiera de los siguient
 
   Puede especificar qué eventos provocan el formato automático.
 
-|NOMBRE|Descripción|
+|Nombre|Descripción|
 |-|-|
 |**Al finalizar la etiqueta final o etiqueta sencilla**|El formato automático se produce cuando termina de escribir una etiqueta de cierre o una etiqueta sencilla. Una etiqueta sencilla no tiene atributos, por ejemplo `<Button />`.|
 |**Al finalizar la etiqueta inicial**|El formato automático se produce cuando termina de escribir una etiqueta de inicio.|
@@ -70,7 +70,7 @@ Esta opción indica si los valores de atributo están entre comillas simples o d
 
 Una vez establecida esta opción, solo afecta a aquellos atributos agregados posteriormente mediante el diseñador o manualmente en la vista XAML.
 
-|NOMBRE|Descripción|
+|Nombre|Descripción|
 |-|-|
 |**Comillas dobles (")**|Los valores de atributo están entre comillas dobles.<br /><br /> `<Button Name="button1">Hello</Button>`|
 |**Comillas simples (')**|Los valores de atributo están entre comillas simples.<br /><br /> `<Button Name='button1'>Hello</Button>`|
@@ -78,7 +78,7 @@ Una vez establecida esta opción, solo afecta a aquellos atributos agregados pos
 ## <a name="tag-wrapping"></a>Ajuste de etiquetas
 Puede especificar una longitud de línea para el ajuste de etiquetas. Cuando el ajuste de etiquetas está habilitado, cualquier elemento XAML agregado posteriormente mediante el diseñador se ajusta correctamente.
 
-|NOMBRE|Descripción|
+|Nombre|Descripción|
 |-|-|
 |**Ajustar etiquetas que superen la longitud especificada**|Especifica si las líneas se ajustan a la longitud de línea especificada por **Longitud**.|
 |**Longitud**|Número de caracteres que puede contener una línea. Si es necesario, algunas líneas XAML podrían superar la longitud de línea especificada.|
@@ -86,7 +86,7 @@ Puede especificar una longitud de línea para el ajuste de etiquetas. Cuando el 
 ## <a name="attribute-spacing"></a>Espaciado de atributos
 Use esta opción para controlar cómo se organizan los atributos en el documento XAML
 
-|NOMBRE|Descripción|
+|Nombre|Descripción|
 |-|-|
 |**Mantener líneas nuevas y espacios entre atributos**|Las nuevas líneas y los espacios entre los atributos no se ven afectados por el formato automático.<br /><br /> `<Button Height="23" Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 |**Insertar un espacio entre atributos**|Los atributos ocupan una línea, con un espacio que separa los atributos adyacentes. Se aplica la configuración de ajuste de etiquetas.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
@@ -122,7 +122,7 @@ Use esta configuración para controlar si la vista de diseño aparece al cargar 
 ## <a name="toolbox"></a>Cuadro de herramientas
 Utilice esta opción para especificar si los controles de usuario y los controles personalizados se muestran en el cuadro de herramientas.
 
-|NOMBRE|Descripción|
+|Nombre|Descripción|
 |-|-|
 |**Rellenar automáticamente los elementos del cuadro de herramientas**|Especifica si los controles de usuario y los controles personalizados de la solución actual se muestran en el cuadro de herramientas automáticamente.|
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 038b3e7db7f1e3b79ee3e41b6e256216a39b91bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664558"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Cómo: Crear un sombreador Lambert básico
@@ -53,7 +53,7 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
 
  ![Gráfico de sombreador y vista previa de su efecto.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")
 
- Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).
+ Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para obtener más información sobre cómo obtener una vista previa de los sombreadores en el diseñador de sombras, vea la sección vista previa de sombreadores en el [Diseñador de sombras](../designers/shader-designer.md).
 
  La siguiente ilustración muestra el sombreador descrito en este documento aplicado a un modelo 3D.
 
@@ -61,5 +61,5 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
 
  Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md) [Cómo: crear un](../designers/how-to-create-a-basic-phong-shader.md) diseñador [de sombras de](../designers/shader-designer.md) Phong básico nodos del [Diseñador](../designers/shader-designer-nodes.md) de sombras de sombreador

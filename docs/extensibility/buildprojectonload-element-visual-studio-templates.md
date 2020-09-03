@@ -1,5 +1,5 @@
 ---
-title: Elemento BuildProjectOnload (Plantillas de Visual Studio) Microsoft Docs
+title: BuildProjectOnload (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739942"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (plantillas de Visual Studio)
-Crea solo nuevos proyectos a medida que los crea y los agrega a una solución. La solución completa no está creada.
+# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (elemento, plantillas de Visual Studio)
+Compila solo los proyectos nuevos a medida que se crean y se agregan a una solución. No se compila toda la solución.
 
 Jerarquía de elementos:
 
@@ -46,18 +46,18 @@ Jerarquía de elementos:
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|`TemplateData`|Categoriza la plantilla y define cómo aparece en los cuadros de diálogo **Nuevo proyecto** y Agregar **nuevo elemento.**|
+|`TemplateData`|Clasifica la plantilla y define cómo aparece en los cuadros de diálogo **nuevo proyecto** y **Agregar nuevo elemento** .|
 
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe `true` `false` ser o para indicar si se va a compilar solo el nuevo proyecto cuando se crea a partir de la plantilla.
+ El texto debe ser `true` o `false` para indicar si se va a compilar solo el nuevo proyecto cuando se crea a partir de la plantilla.
 
 ## <a name="remarks"></a>Observaciones
  `BuildProjectOnLoad` es un elemento opcional. El valor predeterminado es `false`.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestran los metadatos de una plantilla de Visual C.
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de Visual C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,8 +84,8 @@ Jerarquía de elementos:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Atributo y elemento BuildOnLoad](buildonload-visual-studio-templates.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59a926ab35e04aa120bc57250c3e5b2712858aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664496"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Cómo: Crear un sombreador de textura básico
@@ -61,9 +61,9 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
 > [!NOTE]
 > En esta ilustración, se usó un plano como la forma de vista previa y se especificó una textura para demostrar mejor el efecto del sombreador.
 
- ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-texture-effect.png "|::ref1::|")
+ ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")
 
- Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea [Diseñador de sombras](../designers/shader-designer.md)
+ Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para obtener más información sobre cómo obtener una vista previa de los sombreadores en el diseñador de sombras, vea [Diseñador de sombras](../designers/shader-designer.md)
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Cómo: aplicar un sombreador a un](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Editor de imágenes](../designers/image-editor.md) de modelo 3D [nodos del diseñador](../designers/shader-designer-nodes.md) de sombras del [Diseñador de sombras](../designers/shader-designer.md)

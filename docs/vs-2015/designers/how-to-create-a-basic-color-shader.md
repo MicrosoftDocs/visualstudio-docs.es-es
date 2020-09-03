@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90f27e2359954e56a5b3d86bfc31883d4f29c44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664585"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Cómo: Crear un sombreador de color básico
@@ -53,9 +53,9 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
 > [!NOTE]
 > En la ilustración, el color naranja se especificó para ilustrar mejor el efecto del sombreador.
 
- ![Gráfico de sombreador y su resultado en un&#45;modelo 3D](../designers/media/digit-flat-color-effect.png "Dígito-plano-color-efecto")
+ ![Gráfico de sombreador y su resultado en un modelo de 3&#45;D](../designers/media/digit-flat-color-effect.png "Dígito-plano-color-efecto")
 
  Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea [Diseñador de sombras](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Cómo: exportar un](../designers/how-to-export-a-shader.md) [sombreador sombreador](../designers/shader-designer.md) sombreador [nodos del diseñador](../designers/shader-designer-nodes.md) de sombras
