@@ -1,5 +1,5 @@
 ---
-title: Elemento de mapas de bits | Microsoft Docs
+title: Bitmaps (elemento) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50e0a57c53587d56cacc91faa8bc40b9e221b318
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184668"
 ---
 # <a name="bitmaps-element"></a>Bitmaps (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Grupos [elemento de mapa de bits](../extensibility/bitmap-element.md) elementos.  
+Agrupa los elementos de [elemento de mapa de bits](../extensibility/bitmap-element.md) .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,22 +37,22 @@ Grupos [elemento de mapa de bits](../extensibility/bitmap-element.md) elementos.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Bitmaps (Elemento)](../extensibility/bitmaps-element.md)|Agrupa los elementos de mapa de bits.|  
 |[Bitmap (Elemento)](../extensibility/bitmap-element.md)|Define un mapa de bits.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[Commands (Elemento)](../extensibility/commands-element.md)|Representa la colección de comandos en la barra de herramientas de VSPackage.|  
+|[Commands, elemento](../extensibility/commands-element.md)|Representa la colección de comandos de la barra de herramientas de VSPackage.|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -64,6 +64,6 @@ Grupos [elemento de mapa de bits](../extensibility/bitmap-element.md) elementos.
 </Bitmaps>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

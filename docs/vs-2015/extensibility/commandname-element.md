@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 113f420aa4cbbed9454df1ee0c0dd8aafd09a548
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184321"
 ---
 # <a name="commandname-element"></a>CommandName (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El `CommandName` elemento especifica el texto que aparece en la categoría de teclado en el **opciones** cuadro de diálogo y en el **comandos** lista en el **personalizar** cuadro de diálogo cuadro.  
+El `CommandName` elemento especifica el texto que aparece en la categoría teclado del cuadro de diálogo **Opciones** y en la lista **comandos** del cuadro de diálogo **personalizar** .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,9 +40,9 @@ El `CommandName` elemento especifica el texto que aparece en la categoría de te
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[Strings (Elemento)](../extensibility/strings-element.md)|Agrupa elementos de texto, como `ButtonText` y `CommandName`.|  
+|[Elemento Strings](../extensibility/strings-element.md)|Agrupa los elementos de texto, como `ButtonText` y `CommandName` .|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

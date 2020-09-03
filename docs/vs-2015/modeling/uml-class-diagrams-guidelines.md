@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850186"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramas de clases de UML: Instrucciones
@@ -36,14 +36,14 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 > [!NOTE]
 > En este tema se analizan los diagramas de clases de UML. Existe otro tipo de diagrama de clases, que se crea y utiliza para visualizar el código del programa. Vea [diseñar y ver clases y tipos](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
-## <a name="Using"></a>Usar diagramas de clases UML
+## <a name="using-uml-class-diagrams"></a><a name="Using"></a> Usar diagramas de clases UML
  Los diagramas de clases de UML pueden utilizarse para una gran variedad de propósitos:
 
 - Para proporcionar una descripción de los tipos que se utilizan en un sistema y se pasan entre sus componentes que no tenga nada que ver con su implementación.
 
      Por ejemplo, en el código .NET, el tipo Pedido de menú podría implementarse en la capa del negocio; en XML, en las interfaces entre los componentes; en SQL, en la base de datos, y en HTML, en la interfaz de usuario. Aunque estas implementaciones tengan un nivel de detalle diferente, la relación entre el tipo Pedido de menú y otros tipos, como Menú y Pago, es siempre la misma. El diagrama de clases de UML permite analizar estas relaciones con independencia de las implementaciones.
 
-- Para clarificar el glosario de términos que se utiliza en la comunicación entre la aplicación y los usuarios y en las descripciones de las necesidades de los usuarios. Vea [requisitos de usuario de modelo](../modeling/model-user-requirements.md).
+- Para clarificar el glosario de términos que se utiliza en la comunicación entre la aplicación y los usuarios y en las descripciones de las necesidades de los usuarios. Consulte [Requisitos del usuario de modelos](../modeling/model-user-requirements.md).
 
      Por ejemplo, piense en los casos de usuario, los casos de uso y otras descripciones de los requisitos de la aplicación de un restaurante. En este tipo de descripción, encontrará términos como Menú, Pedido, Comida, Precio, Pago, etc. Puede dibujar un diagrama de clases de UML en el que se definan las relaciones entre estos términos. De este modo, se reducirá el riesgo de inconsistencias en las descripciones de los requisitos, así como en la interfaz de usuario y los documentos de ayuda.
 
@@ -78,7 +78,7 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 
  Vea [diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Pasos básicos para dibujar diagramas de clases
+## <a name="basic-steps-for-drawing-class-diagrams"></a><a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de clases
  Para obtener información de referencia sobre los elementos de los diagramas de clases de UML, vea [diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md).
 
 > [!NOTE]
@@ -114,16 +114,16 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 
 6. Cada diagrama es una vista de un modelo que comparten otros diagramas del mismo proyecto. Para ver una vista de árbol del modelo completo, elija **Ver**, **otras ventanas**, **Explorador de modelos UML**.
 
-## <a name="UsingTypes"></a>Usar clases, interfaces y enumeraciones
+## <a name="using-classes-interfaces-and-enumerations"></a><a name="UsingTypes"></a> Usar clases, interfaces y enumeraciones
  Hay tres tipos estándar de clasificadores disponibles en el cuadro de herramientas. Estos se conocen como *tipos* en este documento.
 
- ![Una clase, una enumeración y una interfaz](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
+ ![Clase, enumeración e interfaz](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
 
 - Use **las clases** (1) para representar los datos o tipos de objeto para la mayoría de los propósitos.
 
 - Use **interfaces** (2) en un contexto en el que tenga que diferenciar entre interfaces puras y clases concretas que tienen implementaciones internas. Esta diferencia resulta útil cuando el propósito del diagrama es describir una implementación de software. Resulta menos útil, sin embargo, cuando se modelan datos pasivos o cuando se definen contextos que se utilizan para describir los requisitos del usuario.
 
-- Use una **enumeración** (3) para representar un tipo que tiene un número limitado de valores literales, por ejemplo `Stop` y `Go`.
+- Use una **enumeración** (3) para representar un tipo que tiene un número limitado de valores literales, por ejemplo `Stop` y `Go` .
 
   - Agregue los valores literales a la enumeración. Asigne a cada uno un nombre diferente.
 
@@ -142,7 +142,7 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 
  Por ejemplo, puede mostrar las asociaciones entre un Pedido de menú y el Menú del restaurante en un diagrama y las asociaciones entre Pedido de menú y Pago en otro diagrama.
 
- Diagrama de los componentes
+ Diagrama de componentes
 
  Si ha definido interfaces en los componentes de un diagrama de componentes, puede arrastrar una interfaz desde el **Explorador de modelos UML** hasta el diagrama de clases. En el diagrama de clases, puede definir los métodos que la interfaz incluye.
 
@@ -154,7 +154,7 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 
  Para crear una clase a partir de una línea de vida, abra el menú contextual de la línea de vida y, a continuación, elija **crear clase** o **crear interfaz**. Vea [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).
 
-## <a name="AttributesAndOperations"></a>Atributos y operaciones
+## <a name="attributes-and-operations"></a><a name="AttributesAndOperations"></a> Atributos y operaciones
  Un atributo (4) es un valor con nombre que todas las instancias de un tipo pueden tener. Cuando se obtiene acceso a un atributo, no se modifica el estado de la instancia.
 
  Una operación (5) es un método o función que las instancias del tipo pueden realizar. Puede devolver un valor. Si su propiedad **isQuery** es true, no puede cambiar el estado de la instancia.
@@ -174,13 +174,13 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 ### <a name="types-of-attributes-and-operations"></a>Tipos de atributos y operaciones
  Cada *tipo* de un atributo u operación, y cada tipo de parámetro, puede ser uno de los siguientes:
 
-- **(ninguno)** : puede dejar un tipo sin especificar en la firma omitiendo los dos puntos anteriores (`:`).
+- **(ninguno)** : puede dejar un tipo sin especificar en la firma omitiendo los dos puntos anteriores ( `:` ).
 
 - Uno de los tipos primitivos estándar: **Boolean**, **Integer**, **String**.
 
 - Un tipo que esté definido en el modelo.
 
-- Un valor parametrizado de un tipo de plantilla, la plantilla escrita\<parámetro >. Vea [tipos de plantilla](#Templates).
+- Un valor parametrizado de un tipo de plantilla, una plantilla escrita \<Parameter> . Vea [tipos de plantilla](#Templates).
 
   También puede escribir el nombre de un tipo que aún no haya definido en el modelo. El nombre aparecerá en tipos no **especificados** en el explorador de modelos UML.
 
@@ -194,7 +194,7 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 
  `[1]`
 
- Un valor del tipo especificado. Esta es la opción predeterminada.
+ Un valor del tipo especificado. Este es el valor predeterminado.
 
  `[0..1]`
 
@@ -218,16 +218,16 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 
 - **IsUnique** : si es true, no hay ningún valor duplicado en la colección.
 
-### <a name="visibility"></a>Visibility
+### <a name="visibility"></a>Visibilidad
  *Visibility* indica si se puede tener acceso al atributo u operación fuera de la definición de clase. Los valores permitidos son los siguientes:
 
- **Public**
+ **Pública**
 
  **+**
 
  Accesible desde todos los demás tipos.
 
- **Private**
+ **Privada**
 
  **-**
 
@@ -239,7 +239,7 @@ En Visual Studio, puede utilizar un *Diagrama de clases UML* para describir los 
 
  Solamente se puede obtener acceso dentro del paquete que contiene este tipo y en los paquetes que lo importan explícitamente. Vea [definir espacios de nombres y paquetes](#Packages).
 
- **Protected**
+ **Contra**
 
  **#**
 
@@ -306,19 +306,19 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  `ordered`
 
- **Está ordenado**
+ **Is Ordered**
 
  La colección es una secuencia. Si es false, no está definido el primer elemento. Se aplica a tipos cuya multiplicidad es mayor que 1.
 
  `query`
 
- **Consulta de is**
+ **Is Query**
 
  La operación no cambia el estado de la instancia. Solo se aplica a las operaciones.
 
  `/`
 
- **Se deriva**
+ **Is Derived**
 
  El atributo se calcula a partir de los valores de otros atributos o asociaciones.
 
@@ -330,7 +330,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Normalmente, la firma completa solamente aparece en el diagrama mientras se está editando. Al finalizar la edición, las propiedades adicionales quedan ocultas. Si desea ver la firma completa todo el tiempo, abra el menú contextual del tipo y, a continuación, elija **Mostrar firma completa**.
 
-## <a name="Associations"></a>Dibujar y usar asociaciones
+## <a name="drawing-and-using-associations"></a><a name="Associations"></a> Dibujar y usar asociaciones
  Utilice una asociación para representar cualquier tipo de vinculación entre dos elementos, con independencia del modo en que esta vinculación se implemente en el software. Puede utilizar, por ejemplo, una asociación para representar un puntero en C#, una relación de una base de datos o una referencia cruzada que asocie una parte de un archivo XML con otra. Puede representar una asociación entre objetos en el mundo real, como la tierra y el sol. La asociación no indica cómo se representa el vínculo, solo que existe la información.
 
 ### <a name="properties-of-an-association"></a>Propiedades de una asociación
@@ -338,7 +338,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Además de las propiedades de la asociación en conjunto, cada *rol*, es decir, cada extremo de la asociación, tiene algunas propiedades propias. Para verlos, expanda las propiedades del **primer rol** y del **segundo rol** .
 
- Algunas propiedades de cada uno de los roles pueden verse directamente en el diagrama. Son las siguientes:
+ Algunas propiedades de cada uno de los roles pueden verse directamente en el diagrama. Los pasos son los siguientes:
 
 - El nombre del rol. Aparece en el extremo correspondiente de la asociación del diagrama. Puede establecerlo en el diagrama o en la ventana **propiedades** .
 
@@ -360,9 +360,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Por lo general, resulta más conveniente utilizar los atributos solo en aquellos tipos que no se van a dibujar en el diagrama, como los tipos primitivos.
 
- ![Asociación y atributos equivalentes](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
+ ![Atributos y asociación equivalentes](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
 
-## <a name="Inheritance"></a> Herencia
+## <a name="inheritance"></a><a name="Inheritance"></a> Ella
  Use la herramienta **herencia** para crear las siguientes relaciones:
 
 - Una relación de *generalización* entre un tipo especializado y un tipo general
@@ -403,9 +403,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  De este modo, puede mostrar las interfaces que una clase implementa sin llenar los diagramas de clases con vínculos de realización. También puede mostrar la interfaz y las clases que la realizan en diagramas independientes.
 
- ![Realización que se muestra con el conector y el círculo](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
+ ![Realización mostrada con conector y círculo](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
 
-## <a name="Templates"></a>Tipos de plantilla
+## <a name="template-types"></a><a name="Templates"></a> Tipos de plantilla
  Puede definir un tipo genérico o un tipo de plantilla que otros tipos o valores puedan parametrizar.
 
  Por ejemplo, puede crear un Diccionario genérico parametrizado por tipos de valor y clave:
@@ -450,7 +450,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 2. Abra el menú contextual del nuevo tipo y, a continuación, elija **propiedades**.
 
-3. En la propiedad **enlace de plantilla** , seleccione el tipo de plantilla, por ejemplo `Dictionary`, en la lista desplegable.
+3. En la propiedad **enlace de plantilla** , seleccione el tipo de plantilla, por ejemplo, en `Dictionary` la lista desplegable.
 
 4. Expanda la propiedad **enlace de plantilla** .
 
@@ -458,19 +458,19 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 5. Establezca cada parámetro en un valor apropiado. Por ejemplo, establezca el parámetro `Key` en una clase denominada `Name`.
 
-## <a name="Packages"></a>Paquetes
+## <a name="packages"></a><a name="Packages"></a> .
  Puede ver los paquetes en un diagrama de clases de UML. Un paquete es un contenedor de otros elementos del modelo. Puede crear cualquier elemento dentro de un paquete. En el diagrama, los elementos incluidos en el paquete se desplazarán al mover el paquete.
 
  Puede utilizar el control de expandir y contraer para ocultar o mostrar el contenido del paquete.
 
  Vea [definir paquetes y espacios de nombres](../modeling/define-packages-and-namespaces.md).
 
-## <a name="generating"></a>Generar código a partir de diagramas de clases de UML
+## <a name="generating-code-from-uml-class-diagrams"></a><a name="generating"></a> Generar código a partir de diagramas de clases de UML
  Para iniciar la implementación de las clases en un diagrama de clases UML, puede generar código C# o personalizar plantillas para la generación de código. Para iniciar la generación de código usando las plantillas de C# proporcionadas:
 
 - Abra el menú contextual del diagrama o un elemento, elija **generar código**y, a continuación, establezca las propiedades necesarias.
 
      Para obtener más información sobre cómo establecer estas propiedades y personalizar las plantillas proporcionadas, vea [generar código a partir de diagramas de clases de UML](../modeling/generate-code-from-uml-class-diagrams.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de clases](../modeling/uml-class-diagrams-reference.md) [Model user requirements](../modeling/model-user-requirements.md) de UML: referencia de modelos de [componentes UML diagramas de componentes](../modeling/uml-component-diagrams-reference.md) de UML: referencia diagramas de secuencia de UML [: referencia](../modeling/uml-sequence-diagrams-reference.md) diagramas de [casos de uso de UML:](../modeling/uml-use-case-diagrams-reference.md) referencia [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md)

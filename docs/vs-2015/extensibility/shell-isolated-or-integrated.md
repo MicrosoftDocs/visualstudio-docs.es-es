@@ -15,16 +15,16 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850229"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (aislado o integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede crear su propia aplicación basada en Visual Studio en modo integrado o aislado. En el modo integrado, muchas características de Visual Studio están disponibles además de su aplicación. En el modo aislado, debe eligir el subconjunto de características de Visual Studio que quiere distribuir con su propia extensión.  
+Puede crear su propia aplicación basada en Visual Studio en modo integrado o aislado. En el modo integrado, muchas características de Visual Studio están disponibles además de la aplicación. En el modo aislado, puede elegir un subconjunto de características de Visual Studio que desea distribuir junto con su propia extensión.  
   
 ## <a name="integrated-mode"></a>Modo integrado  
  El modo integrado permite a los usuarios usar las características estándar de Visual Studio junto con las herramientas personalizadas. El shell integrado está diseñado principalmente para hospedar lenguajes de programación y herramientas de desarrollo de software.  
@@ -57,5 +57,5 @@ Puede crear su propia aplicación basada en Visual Studio en modo integrado o ai
 ## <a name="additional-resources"></a>Recursos adicionales  
  Para obtener más información acerca de los paquetes redistribuibles, vea el sitio web de [descargas de extensibilidad de Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

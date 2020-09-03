@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849268"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Invocar el depurador de flujo de trabajo
@@ -40,5 +40,5 @@ Generalmente, los flujos de trabajo se depuran de la misma manera que los progra
 
 - Si va a compilar un proyecto de aplicación de consola de flujos de trabajo, simplemente presione **F5** para iniciar la depuración en la aplicación y el flujo de trabajo. Si está compilando una biblioteca de actividades por sí sola, es preciso que disponga de una aplicación host ejecutable como proyecto de inicio. Para establecer un proyecto de inicio en **Explorador de soluciones**, haga clic con el botón derecho en el nombre del proyecto y seleccione **establecer como proyecto de inicio**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: establecer puntos de interrupción en flujos de trabajo](../workflow-designer/how-to-set-breakpoints-in-workflows.md) [Depurar flujos de trabajo con el diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

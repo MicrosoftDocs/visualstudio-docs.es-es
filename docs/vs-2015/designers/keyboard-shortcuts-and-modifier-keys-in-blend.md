@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3582dd63b2324b061684f1f6ad446d84734e2d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850154"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Métodos abreviados de teclado y teclas modificadoras en Blend
@@ -25,13 +25,13 @@ Los métodos abreviados de teclado pueden agilizar el trabajo al reducir una acc
 
    Para usar las teclas de acceso, presione primero ALT o F10 para que aparezca el carácter de subrayado y, a continuación, presione la letra correspondiente en dicho menú o cuadro de diálogo. También puede desplazarse por un menú o un cuadro de diálogo con la tecla TAB o con las teclas de dirección. Por ejemplo, si presiona ALT en [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], aparecerá un subrayado debajo de la letra**A** del menú **Archivo** que la identifica como tecla de acceso. Para abrir un proyecto, puede mantener presionada la tecla ALT, presionar A y, a continuación, presionar B.
 
-   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")Teclas de acceso que aparecen con un carácter de subrayado después de presionar ALT
+   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") Teclas de acceso que aparecen con un carácter de subrayado después de presionar ALT
 
 - **Teclas de método abreviado** Puede usar estas teclas para realizar una acción (como seleccionar un comando de menú o modificar el comportamiento de una herramienta) si presiona un método abreviado de teclado.
 
    Es fácil identificar a la mayoría de los métodos abreviados de teclado en la interfaz de usuario de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], ya que aparecen a la derecha de los comandos de menú. Por ejemplo, el comando de menú **Abrir proyecto** del menú **Archivo** incluye el método abreviado de teclado CTRL+MAYÚS+O. Para ver las teclas de método abreviado de una herramienta en el panel **Herramientas**, mantenga el puntero sobre la herramienta.
 
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Teclas de método abreviado que aparecen junto a los elementos de menú que tienen accesos directos
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") Teclas de métodos abreviados que aparecen junto a los elementos de menú que incluyen una tecla de método abreviado
 
   Para obtener más información sobre la accesibilidad y sus características, vea [Accesibilidad en Microsoft](https://www.microsoft.com/enable).
 

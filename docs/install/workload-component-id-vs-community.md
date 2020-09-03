@@ -17,10 +17,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
 ms.openlocfilehash: d5c45567ce5e354f15f93740e31c8efd29eb20ee
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805829"
 ---
 # <a name="visual-studio-community-component-directory"></a>Directorio de componentes de Visual Studio Community

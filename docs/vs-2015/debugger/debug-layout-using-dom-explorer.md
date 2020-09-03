@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850074"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Depurar el diseño mediante el Explorador DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "windows_and_phone_content")  
+Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  La pestaña **Diseño** del explorador DOM muestra el [Modelo de cuadros CSS](https://www.w3.org/TR/CSS2/box.html) para el elemento seleccionado en una aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , una aplicación de la Tienda de Windows Phone o una aplicación creada con Visual Studio Tools para Apache Cordova. Puedes utilizar esta representación visual del modelo de cuadros para identificar y modificar los valores relacionados con el diseño que afectan a la apariencia de los elementos.  
   
@@ -87,7 +87,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
   
 9. En el emulador de Windows Phone o en el simulador, seleccione la parte derecha de color gris de una de las imágenes cortadas por la mitad. Aparecerá el resaltado alrededor del elemento seleccionado, tal como se muestra en el emulador de Windows Phone:  
   
-     ![Seleccionar un elemento DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
+     ![Selección de un elemento DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
     > Con el simulador, es posible mantener el mouse sobre los elementos DOM para que aparezca el resaltado del cuadro alrededor de ellos antes de seleccionarlos. En cambio, el emulador de Windows Phone no es compatible con esta acción.  
@@ -101,11 +101,11 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
   
 10. Haga clic en la pestaña **diseño** . Esta pestaña muestra el modelo de cuadros del elemento seleccionado, como se muestra aquí en el emulador de Windows Phone.  
   
-     ![Pestaña diseño del explorador DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Pestaña Diseño del Explorador DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
      Esta vista proporciona información útil sobre el elemento:  
   
-    - Los colores corresponden al resaltado del cuadro que aparece en el simulador cuando se mantiene el mouse sobre los elementos. El color azul representa las dimensiones del elemento \<IMG >. El color tostado representa los valores de margen.  
+    - Los colores corresponden al resaltado del cuadro que aparece en el simulador cuando se mantiene el mouse sobre los elementos. El color azul representa las \<img> dimensiones del elemento. El color tostado representa los valores de margen.  
   
     - Se establece el margen izquierdo (margin-left), que indica la causa del problema ya que coincide con el síntoma (negro en el margen izquierdo de la imágenes).  
   
@@ -114,19 +114,19 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "
 11. Para ver cómo se aplica la regla margin-left, haga clic en la pestaña **Calculado** y examine la regla margin-left. Puede ver que esta regla se ha definido con un valor de 5em, pero el valor calculado es de 66,66 px o 146,66 px, en función del dispositivo de destino.  
   
     > [!TIP]
-    > La pestaña **calculado** muestra que la regla margin-left está establecida en el selector de CSS `..hubpage .hub. section4 .sub-image-row img`, que se encuentra en Hub. CSS. En esta aplicación de demostración, es ahí donde debe realizarse la corrección.  
+    > La pestaña **calculado** muestra que la regla margin-left está establecida en el `..hubpage .hub. section4 .sub-image-row img` selector de CSS, que se encuentra en Hub. CSS. En esta aplicación de demostración, es ahí donde debe realizarse la corrección.  
   
      Puedes utilizar la pestaña **Diseño** para probar las modificaciones en los valores de diseño.  
   
 12. En la pestaña **Diseño** , haga clic en **66.66** o **146,66**, que aparecen en el cuadro **Margen** , en el lado izquierdo del cuadro.  
   
-13. Escribe `0` y presiona Intro. (También puedes usar las teclas Flecha arriba y Flecha abajo para cambiar el valor).  
+13. Escriba `0` y presione Entrar. (También puedes usar las teclas Flecha arriba y Flecha abajo para cambiar el valor).  
   
-14. Seleccione el otro \<IMG > elementos en el explorador DOM y cambie sus valores margin-left a 0.  
+14. Seleccione los otros \<img> elementos en el explorador Dom y cambie sus valores margin-left a 0.  
   
 15. Cambie al emulador o al simulador de Windows Phone. Los valores margin-left actualizados se han aplicado a las imágenes de la sección 4. Estos valores también se han actualizado en la pestaña **Calculado** bajo la regla margin-left.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar estilos CSS mediante el explorador DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Ver agentes de escucha de eventos DOM](../debugger/view-dom-event-listeners.md)

@@ -12,13 +12,13 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88714402"
 ---
-# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Extensión de proyectos de Instalador de Visual Studio y .NET Core 3,1
+# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Extensión de proyectos del Instalador de Visual Studio y .NET Core 3.1
 
 Empaquetar aplicaciones como MSI se suele lograr mediante la extensión de proyectos de Instalador de Visual Studio.
 

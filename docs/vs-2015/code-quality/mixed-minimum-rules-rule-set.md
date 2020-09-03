@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654859"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas mixtas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Las reglas mínimas mixtas de Microsoft se centran en los C++ problemas más graves de los proyectos que admiten Common Language Runtime, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos de C++ compatibles con Common Language Runtime.
+Las reglas mínimas mixtas de Microsoft se centran en los problemas más graves de los proyectos de C++ compatibles con Common Language Runtime, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos de C++ compatibles con Common Language Runtime.
 
 |                                            Regla                                             |                                                  Descripción                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -93,7 +93,7 @@ Las reglas mínimas mixtas de Microsoft se centran en los C++ problemas más gra
 |                             [C28205](../code-quality/c28205.md)                             |                           \_Success\_ o \_On_failure\_ usados en un contexto no válido                            |
 |                             [C28206](../code-quality/c28206.md)                             |                                   El operando izquierdo señala a un struct, use '->'                                   |
 |                             [C28207](../code-quality/c28207.md)                             |                                       El operando izquierdo es un struct, use '->'                                       |
-|                             [C28210](../code-quality/c28210.md)                             |                 Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito                  |
+|                             [C28220](../code-quality/c28210.md)                             |                 Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito                  |
 |                             [C28211](../code-quality/c28211.md)                             |                                 Se esperaba un nombre de contexto estático para SAL_context                                  |
 |                             [C28212](../code-quality/c28212.md)                             |                                  Se esperaba una expresión de puntero para la anotación                                   |
 |                             [C28213](../code-quality/c28213.md)                             | La anotación \_Use_decl_annotations\_ se debe usar para hacer referencia, sin modificación, a una declaración anterior. |

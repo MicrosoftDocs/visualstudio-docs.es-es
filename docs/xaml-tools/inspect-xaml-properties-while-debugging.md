@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331077"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspeccionar las propiedades XAML durante la depuración
@@ -24,13 +24,13 @@ Puede usar estas herramientas en las siguientes configuraciones:
 |Tipo de aplicación|Sistema operativo y herramientas|
 |-----------------|--------------------------------|
 |Aplicaciones de Windows Presentation Foundation (4.0 y versiones posteriores)|Windows 7 y versiones posteriores|
-|Aplicaciones Windows universales|Windows 10 y versiones posteriores, con el [SDK de Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
+|Aplicaciones universales de Windows|Windows 10 y versiones posteriores, con el [SDK de Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>Buscar elementos en el árbol visual dinámico
 
 Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y un botón. Al hacer clic en el botón, se agrega otro elemento a la lista. Los elementos con números pares se muestran en color gris, mientras que los elementos con números impares se muestran de color amarillo.
 
-### <a name="create-the-project"></a>Creación del proyecto
+### <a name="create-the-project"></a>Crear el proyecto
 
 1. Cree una nueva aplicación WPF de c# (**archivo**  >  **nuevo**  >  **proyecto**, escriba "WPF de c#" y elija **aplicación WPF (.net Core)** o **aplicación WPF (.NET Framework)**). Asígnele el nombre **TestXAML**.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes ? Microsoft Docs
+title: 'IDebugReference2:: GetMemoryBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 958c38d6650c7152efef9fe72481a46a70090660
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720599"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-Obtiene los bytes de memoria que contienen físicamente el valor de una referencia. Reservado para uso futuro.
+Obtiene los bytes de memoria que contienen físicamente el valor de una referencia. Reservado para un uso futuro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>Parámetros
 `ppMemoryBytes`\
-[fuera] Devuelve un [iDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que se puede usar para recuperar la memoria que contiene el valor de la referencia.
+enuncia Devuelve un objeto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) que se puede utilizar para recuperar la memoria que contiene el valor de la referencia.
 
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.

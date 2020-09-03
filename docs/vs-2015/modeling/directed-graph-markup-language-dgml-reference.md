@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c676c57d6e6e6008611133235df8d525752f16b5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849501"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referencia de Directed Graph Markup Language (DGML)
@@ -26,7 +26,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 > [!NOTE]
 > Al editar un archivo .dgml, IntelliSense le ayuda a identificar los atributos disponibles para cada elemento y sus valores. Para especificar color en un atributo, use nombres para los colores comunes, como "Blue", o valores hexadecimales de ARGB, como "#ffa0b1c3". DGML emplea un pequeño subconjunto de los formatos de definición de color de Windows Presentation Foundation (WPF). Para obtener más información, vea [colores (clase](https://msdn.microsoft.com/library/system.windows.media.colors.aspx)).
 
-## <a name="DGML"></a>Sintaxis de DGML
+## <a name="dgml-syntax"></a><a name="DGML"></a> Sintaxis de DGML
  En la tabla siguiente se describen los tipos de elementos que se emplean en DGML:
 
 - `<DirectedGraph></DirectedGraph>`
@@ -35,15 +35,15 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 
    En la lista siguiente se describen atributos opcionales que puede incluir:
 
-   `Background`: el color del fondo del mapa
+   `Background` : El color del fondo del mapa
 
-   `BackgroundImage`: la ubicación de un archivo de imagen que se va a usar como fondo del mapa.
+   `BackgroundImage` : Ubicación de un archivo de imagen que se va a usar como fondo del mapa.
 
-   `GraphDirection`: cuando el mapa está establecido en el diseño de árbol (`Sugiyama`), organice los nodos para que la mayoría de los vínculos fluyan en la dirección especificada: `TopToBottom`, `BottomToTop`, `LeftToRight`o `RightToLeft`. Vea [cambiar el diseño del mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection` : Cuando el mapa está establecido en el diseño de árbol ( `Sugiyama` ), organiza los nodos para que la mayoría de los vínculos fluyan en la dirección especificada: `TopToBottom` , `BottomToTop` , `LeftToRight` o `RightToLeft` . Vea [cambiar el diseño del mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `Layout`: establezca la asignación en los diseños siguientes: `None`, `Sugiyama` (diseño de árbol), `ForceDirected` (clústeres rápidos) o `DependencyMatrix`. Vea [cambiar el diseño del mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `Layout` -Establezca la asignación en los diseños siguientes: `None` , `Sugiyama` (diseño de árbol), `ForceDirected` (clústeres rápidos) o `DependencyMatrix` . Vea [cambiar el diseño del mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `NeighborhoodDistance`: cuando el mapa está establecido en el diseño de árbol o en el diseño de clústeres rápidos, solo muestra los nodos que tienen un número especificado (1-7) de vínculos fuera de los nodos seleccionados. Vea [cambiar el diseño del mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `NeighborhoodDistance` : Cuando el mapa está establecido en el diseño de árbol o en el diseño de clústeres rápidos, solo muestra los nodos que tienen un número especificado (1-7) de vínculos fuera de los nodos seleccionados. Vea [cambiar el diseño del mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
    Ejemplo:
 
@@ -92,21 +92,21 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 
    Este elemento debe incluir los atributos siguientes:
 
-   `Id`: el nombre único del nodo y el valor predeterminado del atributo `Label`, si no se especifica ningún atributo de `Label` independiente. Este nombre debe coincidir con el atributo `Source` o `Target` del vínculo que hace referencia a él.
+   `Id` : El nombre único del nodo y el valor predeterminado del `Label` atributo, si no `Label` se especifica ningún atributo independiente. Este nombre debe coincidir con el atributo `Source` o `Target` del vínculo que hace referencia a él.
 
    En la lista siguiente se describen algunos atributos opcionales que puede incluir:
 
-   `Label`: el nombre para mostrar del nodo.
+   `Label` : El nombre para mostrar del nodo.
 
    Atributos de estilo. Vea [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category`: el nombre de una categoría que identifica los elementos que comparten este atributo. Para obtener más información, vea el elemento `<Category/>`.
+   `Category` : El nombre de una categoría que identifica los elementos que comparten este atributo. Para obtener más información, vea el elemento `<Category/>`.
 
-   `Property`: el nombre de una propiedad que identifica los elementos que tienen el mismo valor de propiedad. Para obtener más información, vea el elemento `<Property/>`.
+   `Property` : Nombre de una propiedad que identifica los elementos que tienen el mismo valor de propiedad. Para obtener más información, vea el elemento `<Property/>`.
 
    `Group`: si el nodo contiene otros nodos, establezca este atributo en `Expanded` o `Collapsed` para mostrar u ocultar su contenido. Debe haber un elemento `<Link/>` que incluya el atributo `Category="Contains"` y especifique el nodo primario como nodo de origen y el nodo secundario como nodo de destino. Vea [elementos de código de grupo](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility`: establezca este atributo en `Visible`, `Hidden`o `Collapsed`. Utilice `System.Windows.Visibility`. Consulte [ocultar o mostrar nodos y vínculos](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility` : Establezca este atributo en `Visible` , `Hidden` o `Collapsed` . Utilice `System.Windows.Visibility`. Consulte [ocultar o mostrar nodos y vínculos](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
    `Reference`: establezca este atributo para vincular un documento o una dirección URL. Vea [vincular documentos o direcciones URL a elementos de código y vínculos](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
@@ -155,19 +155,19 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 
    Este elemento debe incluir los atributos siguientes:
 
-   `Source`: el nodo de origen del vínculo
+   `Source` : El nodo de origen del vínculo
 
    `Target`: nodo de destino del vínculo.
 
    En la lista siguiente se describen algunos atributos opcionales que puede incluir:
 
-   `Label`: el nombre para mostrar del vínculo
+   `Label` -El nombre para mostrar del vínculo
 
    Atributos de estilo. Vea [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category`: el nombre de una categoría que identifica los elementos que comparten este atributo. Para obtener más información, vea el elemento `<Category/>`.
+   `Category` : El nombre de una categoría que identifica los elementos que comparten este atributo. Para obtener más información, vea el elemento `<Category/>`.
 
-   `Property`: el nombre de una propiedad que identifica los elementos que tienen el mismo valor de propiedad. Para obtener más información, vea el elemento `<Property/>`.
+   `Property` : Nombre de una propiedad que identifica los elementos que tienen el mismo valor de propiedad. Para obtener más información, vea el elemento `<Property/>`.
 
    Ejemplo:
 
@@ -216,7 +216,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 
    `Label`: nombre de fácil lectura para la categoría.
 
-   `BasedOn`: la categoría primaria de la que se hereda la `<Category/>` del elemento actual.
+   `BasedOn` : La categoría primaria de la que `<Category/>` hereda el objeto del elemento actual.
 
    En el ejemplo de este elemento, la categoría `FailedTest` hereda su atributo `Stroke` de la categoría `PassedTest`. Consulte "para crear categorías jerárquicas" en [personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
@@ -267,11 +267,11 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 
    Este elemento debe incluir los atributos siguientes:
 
-  - `Id`: el nombre único de la propiedad y el valor predeterminado del atributo `Label`, si no se especifica ningún atributo de `Label` independiente.
+  - `Id` : El nombre único de la propiedad y el valor predeterminado del `Label` atributo, si no `Label` se especifica ningún atributo independiente.
 
-  - `DataType`: el tipo de datos almacenados por la propiedad
+  - `DataType` : El tipo de datos almacenados por la propiedad.
 
-    Si desea que la propiedad aparezca en la ventana **propiedades** , use la propiedad `Label` para especificar el nombre para mostrar de la propiedad.
+    Si desea que la propiedad aparezca en la ventana **propiedades** , utilice la `Label` propiedad para especificar el nombre para mostrar de la propiedad.
 
     Vea [asignar categorías a elementos de código y vínculos](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
@@ -302,7 +302,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
   </DirectedGraph>
   ```
 
-### <a name="AddAlias"></a>Alias para rutas de acceso usadas con frecuencia
+### <a name="aliases-for-commonly-used-paths"></a><a name="AddAlias"></a> Alias para rutas de acceso usadas con frecuencia
  El reemplazo de rutas de acceso usadas con frecuencia con alias ayuda a reducir el tamaño del archivo .dgml y el tiempo necesario para cargar o guardar el archivo. Para crear un alias, agregue una sección `<Paths></Paths>` al final del archivo .dgml. En esta sección, agregue un elemento `<Path/>` para definir un alias para la ruta de acceso:
 
 ```xml
@@ -311,7 +311,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 </Paths>
 ```
 
- Para hacer referencia al alias desde un elemento del archivo. DGML, incluya el `Id` del elemento \<ruta de acceso/> con un signo de dólar ($) y paréntesis (()):
+ Para hacer referencia al alias desde un elemento del archivo. DGML, incluya el `Id` del \<Path/> elemento con un signo de dólar ($) y paréntesis (()):
 
 ```xml
 <Nodes>
@@ -322,5 +322,5 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 </Properties>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md) [usar mapas de código para depurar las aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md) [buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)

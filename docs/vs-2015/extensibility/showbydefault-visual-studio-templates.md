@@ -14,19 +14,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184125"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si `false`, especifica que solo se mostrará la plantilla en especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
+Si `false` es, especifica que la plantilla solo se mostrará en el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<ShowByDefault>  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -46,7 +46,7 @@ Si `false`, especifica que solo se mostrará la plantilla en especificado [Templ
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
@@ -86,7 +86,7 @@ Si `false`, especifica que solo se mostrará la plantilla en especificado [Templ
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Consulte también  
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)

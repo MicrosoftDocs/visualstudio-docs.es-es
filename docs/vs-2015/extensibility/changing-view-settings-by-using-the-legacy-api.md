@@ -11,40 +11,40 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184463"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Cambio de la configuración de vista mediante la API heredada API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Configuración de las características del editor de núcleo, como el ajuste de palabra, margen de selección y el espacio virtual, puede cambiarse por el usuario por medio de la **opciones** cuadro de diálogo. Sin embargo, también es posible cambiar esta configuración mediante programación.  
+El usuario puede cambiar la configuración de las características principales del editor, como el ajuste de palabras, el margen de selección y el espacio virtual, por medio del cuadro de diálogo **Opciones** . Sin embargo, también es posible cambiar esta configuración mediante programación.  
   
 ## <a name="changing-settings-by-using-the-legacy-api"></a>Cambiar la configuración mediante la API heredada  
- El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz expone un conjunto de propiedades del editor de texto. La vista de texto contiene una categoría de propiedades (GUID_EditPropCategory_View_MasterSettings) que representa el grupo de configuración mediante programación modificada para la vista de texto. Una vez que la configuración de la vista se han cambiado en este modo, no puede cambiarse en el **opciones** cuadro de diálogo hasta que se restablecen.  
+ La <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz expone un conjunto de propiedades del editor de texto. La vista de texto contiene una categoría de propiedades (GUID_EditPropCategory_View_MasterSettings) que representa el grupo de valores de configuración cambiados mediante programación para la vista de texto. Una vez que se ha cambiado la configuración de la vista de esta manera, no se pueden cambiar en el cuadro de diálogo **Opciones** hasta que se restablezcan.  
   
- Siguiente es el proceso típico para cambiar la configuración de vista para una instancia del editor de núcleo.  
+ A continuación se muestra el proceso típico para cambiar la configuración de vista de una instancia del editor básico.  
   
-1. Llame a `QueryInterface` en el (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) para el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz.  
+1. Llame a `QueryInterface` en el ( <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> ) para la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz.  
   
-2. Llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método, especificando un valor de GUID_EditPropCategory_View_MasterSettings para el `rguidCategory` parámetro.  
+2. Llame al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método, especificando un valor de GUID_EditPropCategory_View_MasterSettings para el `rguidCategory` parámetro.  
   
-     Esto devuelve un puntero a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz, que contiene el conjunto de propiedades forzadas de la vista. Permanentemente se fuerza la cualquier configuración de este grupo. Si una configuración no está en este grupo, seguirá las opciones especificadas en el **opciones** cuadro de diálogo o los comandos del usuario.  
+     Esto devuelve un puntero a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz, que contiene el conjunto de propiedades forzadas para la vista. Cualquier configuración de este grupo se fuerza de forma permanente. Si un valor no se encuentra en este grupo, se seguirán las opciones especificadas en el cuadro de diálogo **Opciones** o los comandos del usuario.  
   
-3. Llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> método, especificando el valor de la configuración adecuada en el `idprop` parámetro.  
+3. Llame al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> método, especificando el valor de configuración adecuado en el `idprop` parámetro.  
   
-     Por ejemplo, para forzar ajuste, llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> y especifique un valor de VSEDITPROPID_ViewLangOpt_WordWrap, `vt` para el `idprop` parámetro. En esta llamada, `vt` es una variante de tipo VT_BOOL y `vt.boolVal` es VARIANT_TRUE.  
+     Por ejemplo, para forzar el ajuste de palabras, llame a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> y especifique un valor de VSEDITPROPID_ViewLangOpt_WordWrap `vt` para el `idprop` parámetro. En esta llamada, `vt` es una variante de tipo VT_BOOL y `vt.boolVal` se VARIANT_TRUE.  
   
-## <a name="resetting-changed-view-settings"></a>Restablecer la configuración de vista modificado  
- Para restablecer cualquier vista modificada para una instancia del editor de núcleo, llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> método y especificar el valor de la configuración adecuada en el `idprop` parámetro.  
+## <a name="resetting-changed-view-settings"></a>Restableciendo la configuración de vista modificada  
+ Para restablecer la configuración de vista modificada de una instancia del editor principal, llame al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> método y especifique el valor de configuración adecuado en el `idprop` parámetro.  
   
- Por ejemplo, para permitir el ajuste de línea flotar libremente, lo haría quita de la categoría de propiedad mediante una llamada a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> y especificando un valor de VSEDITPROPID_ViewLangOpt_WordWrap para el `idprop` parámetro.  
+ Por ejemplo, para permitir que el ajuste de palabra flote libremente, debe quitarlo de la categoría de propiedad llamando a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> y especificando un valor de VSEDITPROPID_ViewLangOpt_WordWrap para el `idprop` parámetro.  
   
- Para quitar la configuración de todo esto cambió para el editor básico a la vez, especifique un valor de VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, vt para el `idprop` parámetro. En esta llamada, vt es una variante de tipo VT_BOOL y vt.boolVal es VARIANT_TRUE.  
+ Para quitar toda la configuración modificada del editor principal a la vez, especifique un valor de VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, VT para el `idprop` parámetro. En esta llamada, VT es una variante del tipo VT_BOOL y se VARIANT_TRUE VT. boolVal.  
   
-## <a name="see-also"></a>Vea también  
- [En el Editor básico](../extensibility/inside-the-core-editor.md)   
- [Acceso a Text vista mediante la API heredada](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
- [Opciones (cuadro de diálogo)](../ide/reference/options-dialog-box-visual-studio.md)
+## <a name="see-also"></a>Consulte también  
+ [Dentro del editor principal](../extensibility/inside-the-core-editor.md)   
+ [Obtener acceso a la vista de texto mediante la API heredada](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+ [Cuadro de diálogo Opciones](../ide/reference/options-dialog-box-visual-studio.md)

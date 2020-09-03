@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520152"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Cómo: administrar el diseño de controles en paneles de acciones
@@ -65,7 +65,7 @@ ms.locfileid: "85520152"
 
 - Proyecto de nivel de documento de Word con un panel de acciones que contiene varios controles de usuario o controles de panel de acciones anidados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general del panel de acciones](../vsto/actions-pane-overview.md)
 - [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)

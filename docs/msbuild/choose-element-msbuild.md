@@ -20,17 +20,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634479"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 
 Evalúa los elementos secundarios para seleccionar un conjunto de elementos `ItemGroup` o `PropertyGroup` para evaluar.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,9 +69,9 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 | [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 | [When](../msbuild/when-element-msbuild.md) | Especifica un posible bloque de código que el elemento `Choose` puede seleccionar. |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
- Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para más información, consulte la sección [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).
+ Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para obtener más información, vea [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Ejemplo
 
@@ -117,7 +122,7 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 </Project>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

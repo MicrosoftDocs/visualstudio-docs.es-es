@@ -20,16 +20,16 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850240"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Tutorial: Mostrar datos relacionados en una aplicación WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tutorial, creará una aplicación WPF que muestra los datos de las tablas de base de datos que tienen una relación de elementos primarios y secundarios. Los datos se encapsulan en entidades en un Entity Data Model. La entidad primaria contiene información general de un conjunto de pedidos. Cada propiedad de esta entidad está enlazada a un control diferente en la aplicación. La entidad secundaria contiene detalles para cada pedido. Este conjunto de datos se enlaza a un control de <xref:System.Windows.Controls.DataGrid>.
+En este tutorial, creará una aplicación WPF que muestra los datos de las tablas de base de datos que tienen una relación de elementos primarios y secundarios. Los datos se encapsulan en entidades en un Entity Data Model. La entidad primaria contiene información general de un conjunto de pedidos. Cada propiedad de esta entidad está enlazada a un control diferente en la aplicación. La entidad secundaria contiene detalles para cada pedido. Este conjunto de datos se enlaza a un <xref:System.Windows.Controls.DataGrid> control.
 
  En este tutorial se muestran las tareas siguientes:
 
@@ -37,12 +37,12 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
 - Crear un conjunto de controles enlazados a datos que muestran información general de un conjunto de pedidos. Los controles se crean arrastrando una entidad primaria desde la ventana **orígenes de datos** hasta **WPF Designer**.
 
-- Creación de un control de <xref:System.Windows.Controls.DataGrid> que muestra los detalles relacionados de cada pedido seleccionado. Los controles se crean arrastrando una entidad secundaria desde la ventana **orígenes de datos** hasta una ventana en **WPF Designer**.
+- Crear un <xref:System.Windows.Controls.DataGrid> control que muestra los detalles relacionados de cada pedido seleccionado. Los controles se crean arrastrando una entidad secundaria desde la ventana **orígenes de datos** hasta una ventana en **WPF Designer**.
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
@@ -54,7 +54,7 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
 - Trabajar con WPF Designer. Para obtener más información, vea [información general sobre WPF y Silverlight Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
-- Enlace a datos de WPF. Para obtener más información, consulte [Información general sobre el enlace de datos](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+- Enlace a datos de WPF. Para obtener más información, vea [información general sobre el enlace de datos](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="creating-the-project"></a>Crear el proyecto
  Cree un nuevo proyecto de WPF para mostrar los registros de pedidos.
@@ -65,17 +65,17 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
 2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
 
-3. Expanda  **C# visual** o **Visual Basic**y, a continuación, seleccione **Windows**.
+3. Expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Windows**.
 
-4. Asegúrese de que **.NET Framework 4** está seleccionado en el cuadro combinado de la parte superior del cuadro de diálogo. El control <xref:System.Windows.Controls.DataGrid> que se utiliza en este tutorial solo está disponible en el .NET Framework 4.
+4. Asegúrese de que **.NET Framework 4** está seleccionado en el cuadro combinado de la parte superior del cuadro de diálogo. El <xref:System.Windows.Controls.DataGrid> control que se usa en este tutorial solo está disponible en el .NET Framework 4.
 
 5. Seleccione la plantilla de proyecto **Aplicación WPF**.
 
 6. En el cuadro **Nombre** , escriba `AdventureWorksOrdersViewer`.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
-     Visual Studio crea el proyecto de `AdventureWorksOrdersViewer`.
+     Visual Studio crea el `AdventureWorksOrdersViewer` proyecto.
 
 ## <a name="creating-an-entity-data-model-for-the-application"></a>Crear un Entity Data Model para la aplicación
  Antes de crear controles enlazados a datos, debe definir un modelo de datos para la aplicación y agregarlo a la ventana **Orígenes de datos**. En este tutorial, el modelo de datos es un Entity Data Model.
@@ -94,11 +94,11 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
    - Si una conexión de datos a la base de datos de ejemplo AdventureWorksLT está disponible en la lista desplegable, selecciónela.
 
-      O bien,
+      o bien
 
    - Haga clic en **nueva conexión** y cree una conexión con la base de datos AdventureWorksLT.
 
-     Asegúrese de que la opción **Guardar configuración de conexión de entidad en App. config como** esté seleccionada y, a continuación, haga clic en **siguiente**.
+     Asegúrese de que la opción **Guardar configuración de conexión de entidad en App.Config como** esté seleccionada y, a continuación, haga clic en **siguiente**.
 
 6. En la página **Elija los objetos de base de datos** , expanda **tablas**y, a continuación, seleccione las tablas siguientes:
 
@@ -106,12 +106,12 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
    - **SalesOrderHeader**
 
-7. Haga clic en **Finalizar**.
+7. Haga clic en **Finalizar**
 
-8. Generar el proyecto.
+8. Compile el proyecto.
 
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Crear controles enlazados a datos que muestren los pedidos
- Cree controles que muestren los registros de pedidos arrastrando la entidad `SalesOrderHeaders` desde la ventana **orígenes de datos** hasta WPF Designer.
+ Cree controles que muestren los registros de pedidos arrastrando la `SalesOrderHeaders` entidad desde la ventana **orígenes de datos** hasta WPF Designer.
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Para crear controles enlazados a datos que muestren los registros de pedidos
 
@@ -160,7 +160,7 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 9. En la ventana **Propiedades**, active la casilla junto a la propiedad **IsReadOnly**.
 
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Crear un control DataGrid que muestre los detalles del pedido
- Cree un control de <xref:System.Windows.Controls.DataGrid> que muestre los detalles del pedido arrastrando la entidad `SalesOrderDetails` desde la ventana **orígenes de datos** hasta WPF Designer.
+ Cree un <xref:System.Windows.Controls.DataGrid> control que muestre los detalles del pedido arrastrando la `SalesOrderDetails` entidad desde la ventana **orígenes de datos** hasta WPF Designer.
 
 #### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>Para crear un control DataGrid que muestre los detalles del pedido
 
@@ -173,7 +173,7 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
 3. Para cada uno de los siguientes nodos secundarios del nodo **SalesOrderDetails** , haga clic en el menú desplegable situado junto al nodo y seleccione **ninguno**:
 
-   - **SalesOrderID**
+   - **Id.OrdenVentas**
 
    - **SalesOrderDetailID**
 
@@ -181,11 +181,11 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
    - **ModifiedDate**
 
-     Esta acción evita que Visual Studio incluya estos datos en el control <xref:System.Windows.Controls.DataGrid> que cree en el paso siguiente. En este tutorial, se da por hecho que el usuario final no necesita ver estos datos.
+     Esta acción evita que Visual Studio incluya estos datos en el <xref:System.Windows.Controls.DataGrid> control que se crea en el paso siguiente. En este tutorial, se da por hecho que el usuario final no necesita ver estos datos.
 
 4. Desde la ventana **orígenes de datos** , arrastre el nodo secundario **SalesOrderDetails** hasta la ventana de **WPF Designer**.
 
-    Visual Studio genera XAML para definir un nuevo control de <xref:System.Windows.Controls.DataGrid> enlazado a datos y el control aparece en el diseñador. Visual Studio también actualiza el método de `GetSalesOrderHeadersQuery` generado en el archivo de código subyacente para incluir los datos en la entidad **SalesOrderDetails** .
+    Visual Studio genera XAML para definir un nuevo control enlazado a datos <xref:System.Windows.Controls.DataGrid> y el control aparece en el diseñador. Visual Studio también actualiza el `GetSalesOrderHeadersQuery` método generado en el archivo de código subyacente para incluir los datos en la entidad **SalesOrderDetails** .
 
 ## <a name="testing-the-application"></a>Probar la aplicación
  Compile y ejecute la aplicación para comprobar que muestra los registros de pedidos.
@@ -194,16 +194,16 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
 1. Presione **F5**.
 
-     La aplicación se compila y se ejecuta. Compruebe lo siguiente:
+     La aplicación se compila y se ejecuta. Verifique lo siguiente:
 
     - El cuadro combinado **sales Order ID** muestra **71774**. Este es el primer identificador de orden de la entidad.
 
-    - Para cada pedido que seleccione en el cuadro combinado **sales Order ID** , se muestra información detallada del pedido en el <xref:System.Windows.Controls.DataGrid>.
+    - Para cada pedido que seleccione en el cuadro combinado **sales Order ID** , se muestra información detallada del pedido en el <xref:System.Windows.Controls.DataGrid> .
 
 2. Cierre la aplicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
  Después de completar este tutorial, obtenga información sobre cómo usar la ventana **orígenes de datos** de Visual Studio para enlazar controles WPF a otros tipos de orígenes de datos. Para obtener más información, vea [enlazar controles de WPF a un servicio de datos de WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) y [enlazar controles de WPF a un conjunto](../data-tools/bind-wpf-controls-to-a-dataset.md)de datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Mostrar datos relacionados en aplicaciones WPF](../data-tools/display-related-data-in-wpf-applications.md)

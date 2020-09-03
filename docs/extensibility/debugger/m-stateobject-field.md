@@ -1,5 +1,5 @@
 ---
-title: Campo de m_stateObject Microsoft Docs
+title: m_stateObject campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738375"
 ---
 # <a name="m_stateobject-field"></a>m_stateObject campo
 Objeto que representa los datos que utilizará la acción.
 
- **Espacio de nombres:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en *mscorlib.dll*)
 
- Dado que no se puede tener acceso a este miembro interno desde .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
+ Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,7 +33,7 @@ Objeto que representa los datos que utilizará la acción.
 ```
 
 ## <a name="remarks"></a>Observaciones
- Este es `state` el <xref:System.Threading.Tasks.Task.%23ctor%2A> parámetro en el constructor. También es el campo <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> de respaldo de la propiedad.
+ Este es el `state` parámetro del <xref:System.Threading.Tasks.Task.%23ctor%2A> constructor. También es el campo de respaldo de la <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> propiedad.
 
 ## <a name="see-also"></a>Vea también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

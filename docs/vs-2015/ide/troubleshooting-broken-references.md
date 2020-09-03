@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1dd1312fc5728fbb68994fb6e70e253fa19172e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654801"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
@@ -60,7 +60,7 @@ Si la aplicación intenta usar una referencia rota, se genera un error de excepc
 
 3. Si usa Visual Basic, seleccione la página **Referencias** y haga clic en el botón **Rutas de acceso de referencia**. En el cuadro de diálogo **Rutas de acceso de referencia**, escriba la ruta de acceso de la carpeta que contiene el elemento al que quiere hacer referencia en el campo **Carpeta** y luego haga clic en el botón **Agregar carpeta**.
 
-     O bien
+     o bien
 
      Si usa Visual C#, seleccione la página **Rutas de acceso de referencia**. En el campo **Carpeta**, escriba la ruta de acceso de la carpeta que contiene el elemento al que quiere hacer referencia y luego haga clic en el botón **Agregar carpeta**.
 
@@ -90,5 +90,5 @@ Si la aplicación intenta usar una referencia rota, se genera un error de excepc
 ## <a name="com-component-is-not-installed-on-computer"></a>No se ha instalado el componente COM en el equipo
  Si un usuario ha agregado una referencia a un componente COM y un segundo usuario intenta ejecutar el código en un equipo que no tenga este componente instalado, el segundo usuario recibirá un error que indica que la referencia está rota. Si se instala el componente en el segundo equipo, se corregirá el error. Para obtener más información sobre cómo usar referencias a componentes COM en los proyectos, consulte [Interoperabilidad COM en aplicaciones .NET Framework](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Introducción a la página referencias del diseñador de proyectos](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [, diseñador de proyectos (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md) [NIB cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

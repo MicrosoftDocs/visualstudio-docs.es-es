@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184091"
 ---
 # <a name="comparing-properties-and-items"></a>Comparar propiedades y elementos
@@ -56,7 +56,7 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
   
  agrega el destino CustomBuild a la lista de destino, lo que proporciona a `BuildDependsOn` el valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- A partir de MSBuild 4.0, la inserción de dependencia de destino está en desuso. Utilice los atributos `AfterTargets` y `BeforeTargets` en su lugar. Para obtener más información, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).  
+ A partir de MSBuild 4.0, la inserción de dependencia de destino está en desuso. Utilice los atributos `AfterTargets` y `BeforeTargets` en su lugar. Para obtener más información, vea [orden de compilación de destino](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversiones entre cadenas y listas de elementos  
  MSBuild realiza conversiones de tipos de elemento y valores de cadena según sea necesario. Para ver cómo una lista de elementos puede convertirse en un valor de cadena, considere lo que sucede cuando un tipo de elemento se utiliza como el valor de una propiedad de MSBuild:  
@@ -181,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)

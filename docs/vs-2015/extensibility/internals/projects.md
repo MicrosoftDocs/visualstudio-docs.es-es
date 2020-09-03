@@ -1,5 +1,5 @@
 ---
-title: Proyectos | Documentos de Microsoft
+title: Proyectos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,33 +15,33 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183949"
 ---
 # <a name="projects"></a>Proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En Visual Studio, los proyectos son contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros recursos que aparecen en **el Explorador de soluciones**. Normalmente, los proyectos son archivos (por ejemplo, un archivo .csproj para un proyecto de C#) que almacenan las referencias a archivos de código fuente y los recursos, como archivos de mapa de bits. Proyectos permiten organizar, compilar, depurar y distribuir el código fuente, las referencias a servicios Web y bases de datos y otros recursos. Los paquetes VSPackage pueden extender el sistema de proyectos de Visual Studio de tres maneras principales: *tipos de proyecto*, *subtipos de proyecto*, y *herramientas personalizadas*.  
+En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros recursos que aparecen en **Explorador de soluciones**. Normalmente, los proyectos son archivos (por ejemplo, un archivo. csproj para un proyecto de C#) que almacenan referencias a archivos de código fuente y recursos como archivos de mapa de bits. Los proyectos permiten organizar, compilar, depurar e implementar código fuente, referencias a servicios web y bases de datos, y a otros recursos. Los VSPackages pueden extender el sistema de proyectos de Visual Studio de tres maneras principales: *tipos de proyecto*, *subtipos de proyecto*y *herramientas personalizadas*.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Tipos de proyecto](../../extensibility/internals/project-types.md)  
- *Tipos de proyecto* agregar compatibilidad para nuevos tipos de proyectos, como los lenguajes de programación. Por ejemplo, cada lenguaje compatible con Visual Studio tiene su propio tipo de proyecto y el ejemplo de integración de IronPython incluye un tipo de proyecto para el idioma de IronPython. Debe crear un tipo de proyecto para los idiomas que no sean de C# o Visual Basic para personalizar cómo elementos son creados, depurar, implementan y muestran en **el Explorador de soluciones**. Para obtener más información, consulte [tipos de proyecto](../../extensibility/internals/project-types.md).  
+ Los *tipos de proyecto* agregan compatibilidad para los nuevos tipos de proyectos, como los lenguajes de programación. Por ejemplo, cada idioma que Visual Studio admite tiene su propio tipo de proyecto, y el ejemplo de integración de IronPython incluye un tipo de proyecto para el lenguaje IronPython. Debe crear un tipo de proyecto para lenguajes distintos de C# o Visual Basic para personalizar cómo se compilan, depuran, implementan y muestran los elementos en **Explorador de soluciones**. Para obtener más información, vea [tipos de proyecto](../../extensibility/internals/project-types.md).  
   
  [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)  
- *Subtipos de proyecto* se basan en tipos de proyecto y puede usarse para personalizar la forma en que los proyectos se compila, depurando e implementados. Visual Studio usa subtipos de proyecto con proyectos de Smart Device. Personalice la implementación mediante la copia de un programa recién creado desde un equipo de desarrollo al dispositivo de destino. Tipos de proyecto de Visual Basic y C# pueden usarse como base para los subtipos de proyecto; Tipos de proyectos de C++ no. También se pueden usar sus propios tipos de proyecto como base para los subtipos de proyecto. Para obtener más información, consulte [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).  
+ Los *subtipos de proyecto* se basan en tipos de proyecto y se pueden usar para personalizar la manera en que se compilan, depuran e implementan los proyectos. Visual Studio usa subtipos de proyecto con proyectos de Smart Device. personalizan la implementación mediante la copia de un programa recién compilado de un equipo de desarrollo en el dispositivo de destino. Los tipos de proyecto de C# y Visual Basic se pueden usar como base para los subtipos de proyecto; Los tipos de proyecto de C++ no pueden. Sus propios tipos de proyecto también se pueden usar como base para los subtipos de proyecto. Para obtener más información, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).  
   
- [Proyectos web](../../extensibility/internals/web-projects.md)  
- Explica el proyecto Web, que a su vez crear aplicaciones Web.  
+ [Proyectos Web](../../extensibility/internals/web-projects.md)  
+ Explica el proyecto Web, que a su vez crea aplicaciones Web.  
   
- [Generación de nuevos proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: Aspectos técnicos (parte 2)](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
- Explica lo que realmente sucede cuando se crea un nuevo proyecto.  
+ [Nueva generación de proyectos: debajo del capó, parte uno](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: debajo del capó, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ Explica lo que ocurre realmente cuando se crea un nuevo proyecto.  
   
  [Muestras de VSSDK](../../misc/vssdk-samples.md)  
- Describe los ejemplos de VSSDK que se encargan de proyectos y soluciones.  
+ Describe los ejemplos del VSSDK que se ocupan de los proyectos y las soluciones.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Dentro de Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
- Explica distintos aspectos de extensibilidad de Visual Studio.
+ Explicar distintos aspectos de la extensibilidad de Visual Studio.

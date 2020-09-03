@@ -1,5 +1,5 @@
 ---
-title: Elemento de mapa de bits | Microsoft Docs
+title: Bitmap (elemento) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc1fb57c7ec43421b211b29cfd6ab97b24a1864c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184740"
 ---
 # <a name="bitmap-element"></a>Bitmap (Elemento)
@@ -34,20 +34,20 @@ Define un mapa de bits. El mapa de bits se carga desde un recurso o desde un arc
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|GUID|Necesario. GUID del identificador de comando/identificador de GUID.<br /><br /> El atributo de guid para un mapa de bits no está asociado con cualquier VSPackage u otro grupo de comandos.  Debe ser único para la definición del mapa de bits y no debe usarse para ningún otro propósito.|  
-|resID|Id. del identificador de comando/identificador de GUID. Se requiere el resID o el atributo href.<br /><br /> El atributo resID es un identificador de recurso de entero que determina la Tira de mapa de bits que se va a cargar durante la combinación de tabla de comandos.  Cuando se carga la tabla de comandos, se cargarán los mapas de bits especificado por el identificador de recurso del recurso del mismo módulo.|  
-|usedList|Requerido si está presente el atributo resID. Selecciona las imágenes disponibles en la Tira de mapa de bits.|  
-|href|Ruta de acceso al mapa de bits. Se requiere el resID o el atributo href.<br /><br /> La ruta de inclusión se busca el archivo de imagen indicado, que está incrustado en el archivo binario resultante.  Durante la combinación de tabla de comandos, se copia la imagen y es necesaria ninguna búsqueda de recursos adicionales o carga.  Si no está presente el atributo usedList, están disponibles todas las imágenes en la franja. **Nota:**  Las imágenes pueden proporcionarse en uno de los distintos formatos que incluyen .gif, .png y. bmp.  Las versiones anteriores del compilador no eran compatibles con las imágenes de mapa de bits de 32 bits que tenían información alfa para la transparencia parcial. La solución alternativa para estas versiones es usar el formato. png.|  
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Necesario. GUID del identificador del comando GUID/ID.<br /><br /> El atributo GUID de un mapa de bits no está asociado a ningún VSPackage u otro grupo de comandos.  Debe ser único para la definición de mapa de bits y no debe usarse para ningún otro propósito.|  
+|resID|IDENTIFICADOR del identificador del comando GUID/ID. Se requiere el atributo resID o href.<br /><br /> El atributo resID es un identificador de recurso entero que determina la franja de mapa de bits que se va a cargar durante la combinación de la tabla de comandos.  Cuando se carga la tabla de comandos, los mapas de bits especificados por el identificador de recurso se cargarán desde el recurso del mismo módulo.|  
+|usedList|Obligatorio si el atributo resID está presente. Selecciona las imágenes disponibles en la franja de mapa de bits.|  
+|href|Ruta de acceso al mapa de bits. Se requiere el atributo resID o href.<br /><br /> Se busca en la ruta de acceso de inclusión el archivo de imagen indicado, que está incrustado en el binario resultante.  Durante la combinación de la tabla de comandos, se copia la imagen y no se requiere ninguna búsqueda o carga de recursos adicional.  Si el atributo usedList no está presente, todas las imágenes de la franja estarán disponibles. **Nota:**  Las imágenes se pueden proporcionar en uno de varios formatos que incluyen. bmp,. png y. gif.  Las versiones anteriores del compilador no eran compatibles con imágenes de mapa de bits de 32 bits que tenían información alfa para la transparencia parcial. La solución alternativa para estas versiones es usar el formato. png.|  
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Bitmaps (Elemento)](../extensibility/bitmaps-element.md)|Agrupa los elementos de mapa de bits.|  
   
@@ -59,5 +59,5 @@ Define un mapa de bits. El mapa de bits se carga desde un recurso o desde un arc
   usedList="1, 2, 3, 4"/>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

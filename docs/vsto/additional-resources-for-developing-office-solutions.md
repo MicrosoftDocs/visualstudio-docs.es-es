@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986273"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Recursos adicionales para desarrollar soluciones de Office
@@ -32,5 +32,5 @@ El portal central a los últimos recursos para los desarrolladores de Office (no
 
 Área de MSDN Library donde podrá encontrar artículos y documentación de referencia sobre el desarrollo de soluciones para varias versiones de Office (no específicos del desarrollo de Office mediante Visual Studio).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Compatibilidad adicional para errores en las soluciones de Office](../vsto/additional-support-for-errors-in-office-solutions.md)

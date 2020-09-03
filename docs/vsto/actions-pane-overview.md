@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986312"
 ---
 # <a name="actions-pane-overview"></a>Información general del panel de acciones
@@ -41,7 +41,7 @@ ms.locfileid: "72986312"
  El panel de acciones se vuelve visible en tiempo de ejecución desde el momento que usted le agrega un control de forma explícita. Una vez que se muestre el panel de acciones, puede agregar o quitar controles de forma dinámica en respuesta a las acciones del usuario. Normalmente debe agregar el código para mostrar el panel de acciones en el controlador de eventos `Startup` de `ThisDocument` o `ThisWorkbook` para que el panel de acciones esté visible cuando el usuario abra el documento por primera vez. Sin embargo, puede que le interese mostrar el panel de acciones solo como respuesta a una acción del usuario en el documento. Por ejemplo, podría agregar código para el evento `Click` de un control en el documento.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Agregar varios controles al panel de acciones
- Al agregar varios controles al panel de acciones, debe agrupar los controles en un control de usuario y, a continuación, agregar el control de usuario a la propiedad <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>. Este proceso incluye los siguientes pasos:
+ Al agregar varios controles al panel de acciones, debe agrupar los controles en un control de usuario y, a continuación, agregar el control de usuario a la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad. Este proceso incluye los siguientes pasos:
 
 1. Cree la interfaz de usuario (UI) del panel de acciones agregando un **control del panel de acciones** o un elemento de control de **usuario** al proyecto. Ambos elementos incluyen una clase <xref:System.Windows.Forms.UserControl> de Windows Forms personalizada. El **control del panel de acciones** y los elementos de **control de usuario** son equivalentes; la única diferencia es su nombre.
 
@@ -55,21 +55,21 @@ ms.locfileid: "72986312"
    Para obtener ejemplos que muestran este proceso con más detalle, vea [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
 ## <a name="hide-the-actions-pane"></a>Ocultar el panel de acciones
- Aunque la clase <xref:Microsoft.Office.Tools.ActionsPane> tiene un método <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> y una propiedad <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, no puede quitar el panel de acciones de la interfaz de usuario utilizando ningún miembro de la propia clase <xref:Microsoft.Office.Tools.ActionsPane>. La llamada al método <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> o el establecimiento de la propiedad <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> en **false** solo oculta los controles del panel de acciones. no oculta el panel de tareas.
+ Aunque la clase <xref:Microsoft.Office.Tools.ActionsPane> tiene un método <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> y una propiedad <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, no puede quitar el panel de acciones de la interfaz de usuario utilizando ningún miembro de la propia clase <xref:Microsoft.Office.Tools.ActionsPane>. Llamar al <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método o establecer la <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propiedad en **false** solo oculta los controles del panel de acciones; no oculta el panel de tareas.
 
  Para ocultar el panel de tareas en la solución, tiene varias opciones:
 
-- En Word, establezca la propiedad <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> del <xref:Microsoft.Office.Interop.Word.TaskPane> objeto que representa el panel de tareas acciones de documento en **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisDocument` del proyecto.
+- En Word, establezca la <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> propiedad del <xref:Microsoft.Office.Interop.Word.TaskPane> objeto que representa el panel de tareas acciones de documento en **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisDocument` del proyecto.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- En Excel, establezca la propiedad <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> del objeto <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> en **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisWorkbook` del proyecto.
+- En Excel, establezca la <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> propiedad del <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> objeto en **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisWorkbook` del proyecto.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- En Word o Excel, también puede establecer la propiedad <xref:Microsoft.Office.Core.CommandBar.Visible%2A> de la barra de comandos que representa el panel de tareas en **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisDocument` o `ThisWorkbook` del proyecto.
+- En Word o Excel, también puede establecer la <xref:Microsoft.Office.Core.CommandBar.Visible%2A> propiedad de la barra de comandos que representa el panel de tareas en **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisDocument` o `ThisWorkbook` del proyecto.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -78,7 +78,7 @@ ms.locfileid: "72986312"
  Cuando un usuario guarda el documento mientras el panel de acciones está visible, el panel de acciones está visible cada vez que se abre el documento, tanto si el panel de acciones contiene como si no. Si desea controlar cuando se muestra, llame al método <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> del campo `ActionsPane` en el controlador de eventos `Startup` de `ThisDocument` o `ThisWorkbook` para asegurarse de que el panel de acciones no esté visible cuando se abra el documento.
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>Determinar cuándo se cierra el panel de acciones
- No se genera ningún evento cuando se cierra el panel de acciones. Aunque la clase <xref:Microsoft.Office.Tools.ActionsPane> tiene un evento <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, este evento no se genera cuando el usuario final cierra el panel de acciones. En su lugar, este evento se genera cuando se ocultan los controles del panel de acciones llamando al método <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> o estableciendo la propiedad <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> en **false**.
+ No se genera ningún evento cuando se cierra el panel de acciones. Aunque la clase <xref:Microsoft.Office.Tools.ActionsPane> tiene un evento <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, este evento no se genera cuando el usuario final cierra el panel de acciones. En su lugar, este evento se genera cuando se ocultan los controles del panel de acciones llamando al <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método o estableciendo la <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propiedad en **false**.
 
  Cuando el usuario cierra el panel de acciones, el usuario puede volver a mostrarlo mediante la ejecución de uno de los procedimientos siguientes en la interfaz de usuario (UI) de la aplicación.
 
@@ -106,7 +106,7 @@ ms.locfileid: "72986312"
 
  La propiedad <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> puede tomar los siguientes <xref:Microsoft.Office.Tools.StackStyle> valores de enumeración.
 
-|Estilo de apilamiento|de esquema JSON|
+|Estilo de apilamiento|Definición|
 |--------------------|----------------|
 |FromBottom|Apilar desde la parte inferior del panel de acciones.|
 |FromLeft|Apilar desde la parte izquierda del panel de acciones.|
@@ -141,14 +141,14 @@ ms.locfileid: "72986312"
 > [!NOTE]
 > Los usuarios finales pueden cambiar manualmente la posición del panel de tareas en cualquier momento. No hay ninguna manera de garantizar que el panel de tareas permanezca acoplado en la posición que indique mediante programación. Sin embargo, puede comprobar los cambios de orientación y asegurarse de que los controles del panel de acciones se apilen en la dirección correcta. Para obtener más información, vea [Cómo: administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
- Establecer las propiedades <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> y <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> de la <xref:Microsoft.Office.Tools.ActionsPane> no cambia su posición porque el objeto <xref:Microsoft.Office.Tools.ActionsPane> está incrustado en el panel de tareas.
+ Establecer las <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> propiedades y de <xref:Microsoft.Office.Tools.ActionsPane> no cambia su posición porque el <xref:Microsoft.Office.Tools.ActionsPane> objeto está incrustado en el panel de tareas.
 
  Si el panel de tareas no está acoplado, puede establecer las propiedades <xref:Microsoft.Office.Core.CommandBar.Top%2A> y <xref:Microsoft.Office.Core.CommandBar.Left%2A> de <xref:Microsoft.Office.Core.CommandBar> que representa el panel de tareas. El siguiente código mueve un panel de tareas desacoplado a la esquina superior izquierda del documento.
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Usar controles de WPF en soluciones de Office](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Acceso global a objetos en proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)

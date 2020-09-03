@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985511"
 ---
 # <a name="visio-solutions"></a>Soluciones de Visio
   Visual Studio proporciona plantillas de proyecto que puede usar para crear complementos de VSTO para Microsoft Office Visio. Puede usar los complementos de VSTO para automatizar Visio, ampliar las características de Visio o personalizar la interfaz de usuario de Visio.
 
- Para obtener más información sobre los complementos de VSTO, vea Introducción a [la programación de complementos](../vsto/getting-started-programming-vsto-add-ins.md) de VSTO y [arquitectura de complementos de](../vsto/architecture-of-vsto-add-ins.md)VSTO. Si no está familiarizado con la programación con Microsoft Office, consulte Introducción al [desarrollo de &#40;Office&#41;en Visual Studio](../vsto/getting-started-office-development-in-visual-studio.md).
+ Para obtener más información sobre los complementos de VSTO, vea Introducción a [la programación de complementos](../vsto/getting-started-programming-vsto-add-ins.md) de VSTO y [arquitectura de complementos de](../vsto/architecture-of-vsto-add-ins.md)VSTO. Si no está familiarizado con la programación con Microsoft Office, consulte Introducción [&#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).
 
  **Aplicación:** la información de este tema se aplica a los proyectos de complementos VSTO para Visio 2010. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).
 
@@ -50,7 +50,7 @@ ms.locfileid: "72985511"
 
   Para obtener acceso al modelo de objetos de Visio desde un complemento de VSTO, use el campo `Application` de la clase `ThisAddIn` del proyecto. El campo `Application` devuelve un objeto `Microsoft.Office.Interop.Visio.Application` que representa la instancia actual de Visio. Para obtener más información, vea [Complementos de VSTO de programas](../vsto/programming-vsto-add-ins.md).
 
-  Cuando se llama al modelo de objetos de Visio, se usan los tipos que se proporcionan en el ensamblado de interoperabilidad primario (PIA) para Visio. El PIA actúa como puente entre el código administrado del complemento de VSTO y el modelo de objetos COM de Visio. Todo tipo de PIA de Visio se define en el espacio de nombres `Microsoft.Office.Interop.Visio`. Para obtener más información sobre los ensamblados de interoperabilidad primarios, vea [información general &#40;&#41; ](../vsto/office-solutions-development-overview-vsto.md) sobre el desarrollo de soluciones de Office y [ensamblados de interoperabilidad primarios](../vsto/office-primary-interop-assemblies.md)
+  Cuando se llama al modelo de objetos de Visio, se usan los tipos que se proporcionan en el ensamblado de interoperabilidad primario (PIA) para Visio. El PIA actúa como puente entre el código administrado del complemento de VSTO y el modelo de objetos COM de Visio. Todo tipo de PIA de Visio se define en el espacio de nombres `Microsoft.Office.Interop.Visio`. Para obtener más información sobre los ensamblados de interoperabilidad primarios, vea [información general sobre el desarrollo de soluciones de office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) y [ensamblados de interoperabilidad primario](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="visio-object-model-overview"></a>Información general sobre el modelo de objetos de Visio
  Puede encontrar información general sobre el modelo de objetos de Visio en [información general sobre el modelo de objetos](../vsto/visio-object-model-overview.md)de Visio, que incluye vínculos a la referencia del modelo de objetos de Visio y los SDK.
@@ -60,18 +60,18 @@ ms.locfileid: "72985511"
 
 |Tarea|Para obtener más información|
 |----------|--------------------------|
-|Personalizar la cinta de opciones.|[Información general sobre la cinta](../vsto/ribbon-overview.md)|
+|Personalizar la cinta de opciones.|[Información general sobre la cinta de opciones](../vsto/ribbon-overview.md)|
 
  Para obtener información sobre cómo personalizar la interfaz de usuario de Visio, consulte la documentación de referencia de VBA correspondiente a la clase [Visio.UIObject](/office/vba/api/Visio.UIObject) .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Información general sobre &#40;el desarrollo de soluciones de Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
-- [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
+- [ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)
 - [Visio 2010 en el desarrollo de Office](/previous-versions/office/developer/office-2010/ff604964(v=office.14))

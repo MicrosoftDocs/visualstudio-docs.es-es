@@ -1,5 +1,5 @@
 ---
-title: Mobility Warnings
+title: advertencias de movilidad
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6061b614442d7bcb2f3465b1c40f35d583626c45
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78167590"
 ---
-# <a name="mobility-warnings"></a>Mobility Warnings
+# <a name="mobility-warnings"></a>advertencias de movilidad
 Las advertencias de movilidad admiten un uso eficaz de energía.
 
 ## <a name="in-this-section"></a>En esta sección

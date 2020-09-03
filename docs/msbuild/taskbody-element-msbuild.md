@@ -28,6 +28,7 @@ ms.locfileid: "78263193"
 Contiene los datos que se pasen a `UsingTask` `TaskFactory`. Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<Task>
+ \<Task>
 
 ## <a name="syntax"></a>Sintaxis
 

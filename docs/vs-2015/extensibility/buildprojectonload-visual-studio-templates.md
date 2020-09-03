@@ -14,19 +14,19 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209f015103a291940f2d43ccdbfd140d71c9e8ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184613"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica si se debe compilar el proyecto inmediatamente después de crearlo.  
+Especifica si se debe compilar el proyecto inmediatamente después de su creación.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -46,14 +46,14 @@ Especifica si se debe compilar el proyecto inmediatamente después de crearlo.
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, que indica si se debe compilar el proyecto inmediatamente después de crearlo.  
+ El texto debe ser `true` o `false` , lo que indica si se va a compilar el proyecto inmediatamente después de su creación.  
   
 ## <a name="remarks"></a>Comentarios  
  `BuildProjectOnLoad` es un atributo opcional. El valor predeterminado es `false`.  
@@ -86,7 +86,7 @@ Especifica si se debe compilar el proyecto inmediatamente después de crearlo.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [TemplateContent (elemento) (plantillas de Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Consulte también  
+ [TemplateContent (elemento, plantillas de Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

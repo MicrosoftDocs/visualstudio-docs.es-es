@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
 ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850007"
 ---
-# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Administración de los recursos asociados con las cuentas de Azure en Cloud Explorer de Visual Studio
+# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Administración de los recursos asociados con las cuentas de Azure en Visual Studio Cloud Explorer
 
 Cloud Explorer le permite consultar sus recursos y grupos de recursos de Azure, inspeccionar sus propiedades y realizar acciones de diagnóstico de desarrollador clave desde dentro de Visual Studio.
 
@@ -30,7 +30,7 @@ Del mismo modo que [Azure Portal](https://portal.azure.com/), Cloud Explorer se 
 * Cuenta de Microsoft Azure: si todavía no tiene ninguna cuenta, puede [registrarse para una evaluación gratuita](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) o [activar las ventajas de suscriptor de Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
 
 > [!NOTE]
-> Para ver Cloud Explorer, seleccione **Ver** > **Cloud Explorer** en la barra de menús.
+> Para ver Cloud Explorer, seleccione **Ver**  >  **Cloud Explorer** en la barra de menús.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Incorporación de una cuenta de Azure en Cloud Explorer
 
@@ -40,7 +40,7 @@ Para consultar los recursos asociados con una cuenta de Azure, primero debe agre
 
    ![Icono de configuración de la cuenta de Azure en Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. Haga clic en **Administrar cuentas**.
+1. Seleccione **administrar cuentas**.
 
    ![Vínculo para agregar cuenta en Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
@@ -56,7 +56,7 @@ Para consultar los recursos asociados con una cuenta de Azure, primero debe agre
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>Eliminación de una cuenta de Azure de Cloud Explorer
 
-1. En **Cloud Explorer**, haga clic en **Administración de cuentas**.
+1. En **Cloud Explorer**, seleccione **Administración de cuentas**.
 
    ![Icono de configuración de la cuenta de Azure en Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
