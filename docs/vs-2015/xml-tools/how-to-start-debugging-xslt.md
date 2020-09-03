@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 09471b9e62b758e4e02e054494ed108532bbd301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656330"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Cómo: Iniciar la depuración de XSLT
@@ -87,5 +87,5 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Tutorial: depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) [información general sobre la ejecución de código](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

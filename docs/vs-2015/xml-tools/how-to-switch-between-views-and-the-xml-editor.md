@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 28267f705dd9a747d0e3f3ac5dc2869ab7de8f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656319"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Cómo: Para pasar de las vistas al Editor XML
@@ -27,9 +27,9 @@ En este tema se muestra cómo pasar de las vistas del Diseñador de esquemas XML
 
 2. Para cambiar al diseñador de esquemas XML desde el editor XML, haga clic con el botón secundario en cualquier parte del editor XML y seleccione **Diseñador de vistas**.
 
-3. Para cambiar a la vista Gráfico con la marca de agua, haga clic en la **vista usar el gráfico para ver la relación entre el** vínculo de los nodos de la vista Inicio.
+3. Para pasar a la vista Gráfico utilizando la marca de agua, haga clic en el vínculo **Usar la vista Gráfico para ver las relaciones entre los nodos** en la vista Inicio.
 
-4. Arrastre el nodo `USAddress` desde el Explorador de esquemas XML hasta la vista Gráfico. Haga clic con el botón secundario en el nodo `USAddress` de la vista gráfico y seleccione **Mostrar en la vista modelo de contenido** en el menú contextual.
+4. Arrastre el nodo `USAddress` desde el Explorador de esquemas XML hasta la vista Gráfico. Haga clic con el botón derecho en el nodo `USAddress` en la vista Gráfico y seleccione **Mostrar en la vista Modelo de contenido** en el menú contextual.
 
      Aparece la vista Modelo de contenido con los detalles del nodo `USAddress`.
 
