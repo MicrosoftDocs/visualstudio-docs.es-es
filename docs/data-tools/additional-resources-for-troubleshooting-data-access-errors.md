@@ -225,25 +225,25 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587048"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Solución de problemas de errores de acceso a datos en los foros
 
 Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). Estos son algunos foros relacionados con los datos disponibles en MSDN:
 
-- [Enlace de datos y controles de datos de Windows Forms](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows Forms controles de datos y DataBinding](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [Foro de ADO.NET DataSet](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
-- [ADO.NET Entity Framework y LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
+- [Entity Framework ADO.NET y LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
 - [Foro de WCF Data Services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [Foro de acceso a datos de SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [SQL Server Foro de acceso a datos](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
 - [Foro de LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
@@ -251,6 +251,6 @@ Puede encontrar ayuda para solucionar problemas referentes a errores y advertenc
 
 Para obtener información sobre cómo solucionar problemas de conectividad con SQL Server, vea [solucionar problemas de conexión al motor de base de datos de SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

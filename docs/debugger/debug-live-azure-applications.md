@@ -13,10 +13,10 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: 07ebe8a583717689ca424bf969e7c19e87ebf08e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350672"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger

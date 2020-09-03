@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aed37ee9cdd8c221fcfb114db426a6286ee8ad6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673115"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Agregar código a conjuntos de datos en aplicaciones de n niveles
@@ -28,10 +28,10 @@ Puede extender la funcionalidad de un conjunto de objetos creando un archivo de 
 
 El código que define un conjunto de DataSet se genera cada vez que se realizan cambios en la definición del conjunto de los mismos. Este código también se genera cuando se realizan cambios durante la ejecución de cualquier asistente que modifica la configuración de un conjunto de los mismos. Para evitar que se elimine el código durante la regeneración de un conjunto de DataSet, agregue código al archivo de clase parcial del conjunto de archivos.
 
-De forma predeterminada, después de separar el conjunto de datos y el código de `TableAdapter`, el resultado es un archivo de clase adicional en cada proyecto. El proyecto original tiene un nombre de archivo *DatasetName*. Designer. VB (o *DatasetName*). Designer.cs) que contiene el código `TableAdapter`. El proyecto designado en la propiedad **DataSet Project** tiene un archivo denominado *DatasetName*. DataSet. Designer. VB (o *DatasetName*. DataSet.Designer.cs). Este archivo contiene el código del conjunto de archivos.
+De forma predeterminada, después de separar el conjunto de datos y el código de `TableAdapter`, el resultado es un archivo de clase adicional en cada proyecto. El proyecto original tiene un nombre de archivo *DatasetName*. Designer. VB (o *DatasetName*). Designer.cs) que contiene el `TableAdapter` código. El proyecto designado en la propiedad **DataSet Project** tiene un archivo denominado *DatasetName*. DataSet. Designer. VB (o *DatasetName*. DataSet.Designer.cs). Este archivo contiene el código del conjunto de archivos.
 
 > [!NOTE]
-> Cuando se separan conjuntos de propiedades y `TableAdapter`s (estableciendo la propiedad **DataSet Project** ), las clases de conjunto de tipos parciales existentes en el proyecto no se moverán automáticamente. Las clases de conjunto de datos parciales existentes se deberán trasladar manualmente al proyecto de conjunto de datos.
+> Cuando se separan conjuntos de objetos y `TableAdapter` s (estableciendo la propiedad **DataSet Project** ), las clases de conjunto de elementos parciales existentes en el proyecto no se moverán automáticamente. Las clases de conjunto de datos parciales existentes se deberán trasladar manualmente al proyecto de conjunto de datos.
 
 > [!NOTE]
 > Cuando es necesario agregar código de validación, el diseñador de DataSet proporciona la funcionalidad para generar <xref:System.Data.DataTable.ColumnChanging> y <xref:System.Data.DataTable.RowChanging> controladores de eventos. Para obtener más información, vea [agregar validación a un conjunto de datos de n niveles](../data-tools/add-validation-to-an-n-tier-dataset.md).
@@ -65,11 +65,11 @@ De forma predeterminada, después de separar el conjunto de datos y el código d
     }
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Introducción a las aplicaciones de datos con n capas](../data-tools/n-tier-data-applications-overview.md)
+- [Información general sobre las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
 - [Agregar código a TableAdapters en aplicaciones con n niveles](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
 - [Información general sobre TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
 - [Información general sobre la actualización jerárquica](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
-- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

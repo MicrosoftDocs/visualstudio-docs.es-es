@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586931"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
@@ -83,7 +83,7 @@ Determina si un cliente de WCF intenta reutilizar lo que ya existe en los ensamb
 
 **Volver a usar tipos en todos los ensamblados a los que se hace referencia**
 
-Cuando se selecciona, todos los tipos de la **lista de ensamblados a los que se hace referencia** se reutilizan si es posible. Esta opción se encuentra activada de forma predeterminada.
+Cuando se selecciona, todos los tipos de la **lista de ensamblados a los que se hace referencia** se reutilizan si es posible. Esta opción está seleccionada de forma predeterminada.
 
 **Volver a usar tipos en los ensamblados especificados**
 
@@ -106,4 +106,4 @@ Se abrirá el cuadro de diálogo **Agregar referencia web**.
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Agregar una referencia a un servicio web XML](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
-- [Servicios de Windows Communication Foundation y Servicios de datos de WCF](../data-tools/configure-service-reference-dialog-box.md)
+- [Servicios de Windows Communication Foundation y WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

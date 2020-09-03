@@ -13,18 +13,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23a2f7f59ed3565a23d878858c55da4c4a7e4d85
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659285"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un<em>host</em> de plantilla de texto proporciona un entorno que permite la ejecución del *motor de transformación de plantillas de texto* . El host es responsable de administrar la interacción del motor con el sistema de archivos. El procesador de *directivas* o el motor que necesita un archivo o un ensamblado puede solicitar un recurso del host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, vea [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).
+Un *text template*<em>host</em> de plantilla de texto proporciona un entorno que permite la ejecución del *motor de transformación de plantillas de texto* . El host es responsable de administrar la interacción del motor con el sistema de archivos. El procesador de *directivas* o el motor que necesita un archivo o un ensamblado puede solicitar un recurso del host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, vea [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).
 
- Puede escribir un host personalizado si desea utilizar la funcionalidad de *transformación de plantilla de texto* desde fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o si desea integrar esa funcionalidad en herramientas personalizadas. Para crear un host personalizado, debe crear una clase que herede de [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Para obtener la documentación de los métodos individuales, vea [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
+ Puede escribir un host personalizado si desea utilizar la funcionalidad de *transformación de plantilla de texto* desde fuera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o si desea integrar esa funcionalidad en herramientas personalizadas. Para crear un host personalizado, debe crear una clase que herede de [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Para obtener la documentación de los métodos individuales, vea [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
 
 > [!WARNING]
 > Si está escribiendo una extensión o paquete de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], considere la posibilidad de utilizar el servicio de plantillas de texto en lugar de crear su propio host. Para obtener más información, consulte [invocar la transformación de texto en una extensión de vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
@@ -51,9 +51,9 @@ Un<em>host</em> de plantilla de texto proporciona un entorno que permite la ejec
 
 2. Agregue referencias a los siguientes ensamblados:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 0,1**
 
-    - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 y versiones posteriores**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 y versiones posteriores**
 
 3. Reemplace el código del archivo Program.cs o Module1.vb con el siguiente código:
 
@@ -714,22 +714,22 @@ Un<em>host</em> de plantilla de texto proporciona un entorno que permite la ejec
     End Namespace
     ```
 
-4. Solo para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], abra el menú **proyecto** y haga clic en **propiedades de CustomHost**. En la lista **objeto de inicio** , haga clic en **CustomHost. Program**.
+4. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Solo para, abra el menú **proyecto** y haga clic en **propiedades de CustomHost**. En la lista **objeto de inicio** , haga clic en **CustomHost. Program**.
 
-5. En el menú **Archivo**, haga clic en **Guardar todo**.
+5. En el menú **Archivo** , haga clic en **Guardar todo**.
 
-6. En el menú **Compilar** , haga clic en **Compilar solución**.
+6. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ## <a name="testing-the-custom-host"></a>Probar el host personalizado
  Para probar el host personalizado, escriba una plantilla de texto, ejecute el host personalizado, pásele el nombre de la plantilla de texto y compruebe que la plantilla se transforma.
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para crear una plantilla de texto para probar el host personalizado
 
-1. Cree un archivo de texto y asígnele el nombre `TestTemplate.tt`.
+1. Cree un archivo de texto y asígnele el nombre `TestTemplate.tt` .
 
      Puede usar cualquier editor de texto (por ejemplo, Bloc de notas) para crear el archivo.
 
-2. Agregue el siguiente código al archivo:
+2. Agregue lo siguiente al archivo:
 
     > [!NOTE]
     > El lenguaje de programación de la plantilla de texto no tiene que coincidir con el lenguaje del host personalizado.
@@ -776,7 +776,7 @@ Un<em>host</em> de plantilla de texto proporciona un entorno que permite la ejec
 
 #### <a name="to-test-the-custom-host"></a>Para probar el host personalizado
 
-1. Abra la ventana del símbolo del sistema.
+1. Abra la ventana de símbolo del sistema.
 
 2. Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.
 
@@ -785,7 +785,7 @@ Un<em>host</em> de plantilla de texto proporciona un entorno que permite la ejec
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > En lugar de escribir la dirección, puede ir al archivo CustomHost. exe en el **Explorador de Windows** y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
+    > En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en el **Explorador de Windows** y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
 
 3. Escriba un espacio.
 

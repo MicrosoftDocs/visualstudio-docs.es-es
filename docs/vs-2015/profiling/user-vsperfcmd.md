@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 311d02ad3e15f184f8b7e21b5794d73c41a8d4fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145388"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
@@ -21,7 +21,7 @@ ms.locfileid: "68145388"
 
 La opción **User** especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.  
   
- El **usuario** opción solo se puede especificar en una línea de comandos que también contenga la **iniciar** opción.  
+ La opción **User** solo se puede especificar en una línea de comandos que también contenga la opción **Start** Option.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,7 +39,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 ## <a name="required-options"></a>Opciones necesarias  
  La opción **User** solo se puede usar con la opción **Start**.  
   
- **Start:** `Method`  
+ **Inicio:**`Method`  
  Inicializa el generador de perfiles en el método de generación de perfiles especificado.  
   
 ## <a name="example"></a>Ejemplo  
@@ -49,8 +49,8 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)

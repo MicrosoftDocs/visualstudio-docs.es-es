@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek | Documentos de Microsoft
+title: 'IDebugDocumentContext2:: Seek | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a17a845275a39954a42839d54af14e37fe0bd06c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144983"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Mueva el contexto del documento mediante un número determinado de las instrucciones o líneas.  
+Mueve el contexto del documento en función de un número determinado de instrucciones o líneas.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,13 +42,13 @@ int Seek( 
   
 #### <a name="parameters"></a>Parámetros  
  `nCount`  
- [in] El número de instrucciones o líneas para avanzar, según el contexto del documento.  
+ de El número de instrucciones o líneas que se van a desplazar, dependiendo del contexto del documento.  
   
  `ppDocContext`  
- [out] Devuelve un nuevo [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objeto con la nueva posición.  
+ enuncia Devuelve un nuevo objeto [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) con la nueva posición.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545631"
 ---
 # <a name="debugger-windows"></a>Ventanas del depurador
@@ -21,7 +21,7 @@ ms.locfileid: "85545631"
 
 Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando alcance el punto de interrupción y se detenga la ejecución, haga clic en **depurar/ventanas**.  
   
-|**Window**|**Tecla de acceso rápido**|**Vea el tema**|  
+|**Ventana**|**Tecla de acceso rápido**|**Vea el tema**|  
 |-|-|-|  
 |Puntos de interrupción|CTRL+ALT+B|[Usar puntos de interrupción](../debugger/using-breakpoints.md)|  
 |Configuración de excepciones|CTRL+ALT+E|[Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)|  
@@ -32,7 +32,7 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Inspección paralela|CTR:+MAYÚS+D, (1, 2, 3, 4)|[Uso de la ventana Pilas paralelas](../debugger/using-the-parallel-stacks-window.md)|  
 |Watch|CTRL+ALT+W, (1, 2, 3, 4)|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|  
 |Inspección rápida|MAYÚS+F9|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|  
-|Auto|CTRL+ALT+V, A|[Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Automático|CTRL+ALT+V, A|[Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Locals|CTRL+ALT+V, L|[Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Inmediato|CTRL+ALT+I|[Ventana Inmediato](../ide/reference/immediate-window.md)|  
 |Depuración de Python interactiva|MAYÚS+ALT+I|[Introducción a PTVS: Python interactivo](../python/getting-started-with-ptvs-interactive-python.md)|  

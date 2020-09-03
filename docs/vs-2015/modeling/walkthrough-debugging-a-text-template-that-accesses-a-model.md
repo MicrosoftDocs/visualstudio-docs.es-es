@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659268"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo
@@ -46,7 +46,7 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 
 2. Agregue un archivo de texto denominado `DebugTest.tt` al proyecto de depuración.
 
-3. Asegúrese de que la propiedad **herramienta personalizada** de DebugTest.TT está establecida en `TextTemplatingFileGenerator`.
+3. Asegúrese de que la propiedad **herramienta personalizada** de DebugTest.TT está establecida en `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Directivas de depuración que obtienen acceso a un modelo desde una plantilla de texto
  Para poder tener acceso a un modelo desde las instrucciones y expresiones de una plantilla de texto, primero debe llamar a un procesador de directivas generado. La llamada al procesador de directivas generado hace que las clases del modelo estén disponibles para el código de plantilla de texto como propiedades. Para obtener más información, consulte [acceso a los modelos desde plantillas de texto](../modeling/accessing-models-from-text-templates.md).
@@ -97,11 +97,11 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 
      **El procesador denominado ' DebuggingTestLanguageDirectiveProcessor ' no admite la Directiva denominada ' modelRoot '. La transformación no se ejecutará.**
 
-     En este caso, la llamada a la Directiva contiene un nombre de directiva incorrecto. Ha especificado `modelRoot` como nombre de la Directiva, pero el nombre de la Directiva correcta es `DebuggingTestLanguage`.
+     En este caso, la llamada a la Directiva contiene un nombre de directiva incorrecto. Ha especificado `modelRoot` como el nombre de la Directiva, pero el nombre de directiva correcto es `DebuggingTestLanguage` .
 
 3. Haga doble clic en el error en la ventana **lista de errores** para saltar al código.
 
-4. Para corregir el código, cambie el nombre de la Directiva a `DebuggingTestLanguage`.
+4. Para corregir el código, cambie el nombre de la Directiva a `DebuggingTestLanguage` .
 
      Se resalta el cambio.
 
@@ -161,13 +161,13 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 
      (C#)
 
-     **Compilando transformación: Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation ' no contiene una definición para ' ExampleModel '**
+     **Compilando transformación: Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation ' no contiene una definición para ' ExampleModel '**
 
      (Visual Basic)
 
-     **Compilando transformación: ' ExampleModel ' no es un miembro de ' Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation'.**
+     **Compilando transformación: ' ExampleModel ' no es un miembro de ' Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation'.**
 
-     En este caso, el código de la plantilla de texto contiene un nombre de propiedad incorrecto. Ha especificado `ExampleModel` como el nombre de la propiedad, pero el nombre de propiedad correcto es `LibraryModel`. Puede encontrar el nombre de propiedad correcto en el parámetro proporciona, tal y como se muestra en el código siguiente:
+     En este caso, el código de la plantilla de texto contiene un nombre de propiedad incorrecto. Ha especificado `ExampleModel` como nombre de la propiedad, pero el nombre de la propiedad correcto es `LibraryModel` . Puede encontrar el nombre de propiedad correcto en el parámetro proporciona, tal y como se muestra en el código siguiente:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>

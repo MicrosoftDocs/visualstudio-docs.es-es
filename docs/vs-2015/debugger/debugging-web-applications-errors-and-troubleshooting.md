@@ -1,5 +1,5 @@
 ---
-title: 'Depurar aplicaciones web: Errores y solución de problemas | Documentos de Microsoft'
+title: 'Depurar aplicaciones web: errores y solución de problemas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141907"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurar aplicaciones web: errores y solución de problemas
@@ -57,6 +57,6 @@ Al intentar depurar aplicaciones web pueden producirse los siguientes errores.
   
 - [Error: No es posible iniciar la depuración en el servidor web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md)
