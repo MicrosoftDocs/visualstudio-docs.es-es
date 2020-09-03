@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905288"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Cómo: proporcionar compatibilidad de esquematización ampliada en un servicio de lenguaje heredado
@@ -27,7 +27,7 @@ Hay dos opciones para ampliar la compatibilidad con la esquematización del leng
 
 ### <a name="to-implement-an-editor-controlled-outline-region"></a>Para implementar una región de esquema controlada por el editor
 
-1. Llamar a `QueryService` para<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. Llamar a `QueryService` para <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
      Esto devuelve un puntero a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 

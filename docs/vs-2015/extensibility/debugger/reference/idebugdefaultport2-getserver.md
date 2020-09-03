@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetServer | Microsoft Docs
+title: 'IDebugDefaultPort2:: GetServer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a74a9e846532b119c5b72495c39226effdc94f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196273"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método obtiene una interfaz para el servidor que en este puerto.  
+Este método obtiene una interfaz para el servidor en el que está el puerto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,14 +40,14 @@ int GetServer(
   
 #### <a name="parameters"></a>Parámetros  
  `ppServer`  
- [out] Devuelve un objeto que implementa el [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) interfaz.  
+ enuncia Devuelve un objeto que implementa la interfaz [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- El [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) se implementa mediante Visual Studio y representa el servidor que el puerto se encuentra en.  
+## <a name="remarks"></a>Observaciones  
+ El [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) se implementa mediante Visual Studio y representa el servidor en el que se encuentra el puerto.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

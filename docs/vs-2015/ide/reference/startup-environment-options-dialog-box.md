@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ab31b9a3b5ee17240e0dd29a99675cf87739056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663148"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Inicio, Entorno, Opciones (cuadro de diálogo)
@@ -23,5 +23,5 @@ ms.locfileid: "72663148"
 
 Utilice esta página para personalizar la página de inicio de Visual Studio o establecer una acción predeterminada diferente cuando se inicia Visual Studio. Para obtener más información, consulte [Personalizar la página de inicio](../../ide/customizing-the-start-page-for-visual-studio.md).
 
-## <a name="see-also"></a>Otras referencias
- [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>Consulte también
+ [Opciones de entorno (cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)

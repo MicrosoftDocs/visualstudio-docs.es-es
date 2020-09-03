@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543928"
 ---
 # <a name="intellitrace"></a>IntelliTrace
@@ -55,11 +55,11 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> ¿Qué aplicaciones se pueden depurar con IntelliTrace?  
   
-|Nivel de compatibilidad|Tipos de aplicación|  
+|Nivel de compatibilidad|Tipos de aplicaciones|  
 |-|-|  
 |**Compatible**|-Visual Basic y aplicaciones de Visual C# que usan .NET Framework 2,0 o versiones posteriores.<br />     Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br />     Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: Depuración de una aplicación de SharePoint mediante IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Para depurar aplicaciones de Microsoft Azure con IntelliTrace, consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Compatibilidad limitada**|-Aplicaciones de F # de manera experimental<br />-Aplicaciones de la tienda Windows admitidas solo para eventos|  
-|**No admitido**|-C++, otros lenguajes y script<br />-Servicios de Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplicaciones|  
+|**No compatible**|-C++, otros lenguajes y script<br />-Servicios de Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplicaciones|  
   
 > [!NOTE]
 > Si desea depurar un proceso que se está ejecutando, no puede usar IntelliTrace. Debe iniciar IntelliTrace cuando comience el proceso.  

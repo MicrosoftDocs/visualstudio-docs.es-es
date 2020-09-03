@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825964"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro de cambios (Visual Studio Tools para Unity)
@@ -23,7 +23,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="23"></a>2.3
 
-Lanzamiento 14-07-2016
+Fecha de publicación: 14 de julio de 2016
 
 ### <a name="new-features"></a>Características nuevas
 
@@ -41,7 +41,7 @@ Lanzamiento 14-07-2016
 
   - Se agregaron MonoBehaviors que faltaban.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **General:**
 
@@ -59,7 +59,7 @@ Lanzamiento 14-07-2016
 
 ## <a name="22"></a>2.2
 
-Lanzamiento 04-02-2016
+Fecha de publicación: 4 de febrero de 2016
 
 ### <a name="new-features"></a>Características nuevas
 
@@ -77,7 +77,7 @@ Lanzamiento 04-02-2016
 
   - Se han quitado páginas de propiedades de Visual Studio que no son relevantes para los proyectos de Unity.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -107,19 +107,19 @@ Lanzamiento 04-02-2016
 
 ## <a name="21"></a>2.1
 
-Lanzamiento el 08-09-2015
+Fecha de publicación: 8 de septiembre de 2015
 
 ### <a name="new-features"></a>Características nuevas
 
 - Compatibilidad con Unity 5.2
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Mostrar elementos de menú en Unity < 4.2
 
 - Cuando Visual Studio bloquea los archivos de Intellisense XML, ya no aparece ningún mensaje de error.
 
-- Los puntos de interrupción condicionales <\<When Changed>> se controlan cuando el argumento condicional no es un valor booleano.
+- Controle los puntos de interrupción condicionales <\<When Changed>> cuando el argumento condicional no es un valor booleano.
 
 - Referencias fijas a ensamblados UnityEngine y UnityEditor para las aplicaciones de la Tienda Windows.
 
@@ -129,9 +129,9 @@ Lanzamiento el 08-09-2015
 
 ## <a name="20"></a>2.0
 
-Lanzamiento el 20-07-2015
+Fecha de publicación: 20 de julio de 2015
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración de Unity:**
 
@@ -212,7 +212,7 @@ Lanzamiento 02-04-2015
 
 - **IU:** Se ha agregado Visual Studio Tools para Unity al cuadro de diálogo **Opciones** de Visual Studio.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Explorador de proyectos de Unity:**
 
@@ -253,7 +253,7 @@ Lanzamiento 02-04-2015
 - **IU:** Compatibilidad con temas de Visual Studio para iconos y menú contextual.
 
 ## <a name="20-preview"></a>2.0 Preview
-Fecha de publicación: 12 de noviembre de 2014
+Lanzamiento 12-11-2014
 
 ### <a name="new-features"></a>Características nuevas
 
@@ -281,7 +281,7 @@ Fecha de publicación: 12 de noviembre de 2014
 
 - Permite abrir sombreadores en Visual Studio desde Unity.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se limpian los sockets antes de iniciar el juego en Unity después de que se haya iniciado Adjuntar y reproducir en Visual Studio. Esto corrige algunos problemas de estabilidad de la conexión entre Unity y VS al usar Adjuntar y reproducir.
 
@@ -303,7 +303,7 @@ Lanzamiento 09-10-2014
 
 - Si no hay documentación local, se establece la documentación en línea de Unity como la documentación predeterminada.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido un posible bloqueo de Unity al alcanzar un punto de interrupción después de volver a cargar un dominio.
 
@@ -331,7 +331,7 @@ Lanzamiento 22-09-2014
 
 - Se eliminan y se cambia el nombre de archivos .meta al eliminar o cambiar el nombre de archivos desde Visual Studio.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido el procesamiento de temas de Visual Studio. Anteriormente, los cuadros de diálogo en temas negros podían aparecer vacíos.
 
@@ -389,7 +389,7 @@ Lanzamiento 29-07-2014
 
 - Se agrega un comando para sincronizar el Explorador de proyectos de Unity con el documento actual.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se han corregido los puntos de interrupción condicionales cuyas condiciones se establecen antes de iniciar al depurador.
 
@@ -428,7 +428,7 @@ Lanzamiento 07-01-2014
 
 - Agrega ajuste para deshabilitar la generación de símbolos de depuración de mdb. Esto es útil si usted está generando la mdb.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido una regresión por la que los archivos abiertos en VS desde Unity 4.2 (o versión más reciente) perdían IntelliSense.
 
@@ -452,7 +452,7 @@ Lanzamiento 21-11-2013
 
 - Se ha mejorado el aspecto de nuestras llamadas a Debug.Log para que no incluyan el principio de la stacktrace en el mensaje.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido un error por el que interferíamos con el procesamiento predeterminado de archivos JavaScript en Visual Studio.
 
@@ -474,7 +474,7 @@ Lanzamiento 21-11-2013
 
 ## <a name="180"></a>1.8.0
 
-Lanzamiento 24-09-2013
+Fecha de publicación: 24 de septiembre de 2013
 
 ### <a name="new-features"></a>Características nuevas
 
@@ -494,7 +494,7 @@ Lanzamiento 24-09-2013
 
 - Se ha mejorado la detección de editores remotos para la vista previa de depuración remota.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido un error por el que se podía perder un subproceso en VS tras desconectar el depurador.
 
@@ -518,7 +518,7 @@ Lanzamiento 24-09-2013
 
 Lanzamiento 09-07-2013
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se procesan nombres completos en el evaluador de expresiones.
 
@@ -540,9 +540,9 @@ Lanzamiento 09-07-2013
 
 ## <a name="121"></a>1.2.1
 
-Lanzamiento 09-04-2013
+Fecha de publicación: 9 de abril de 2013
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la implementación local de ensamblados de Unity para la finalización de código en caso de que se produzca un error de E/S (como archivos de sólo lectura o archivos bloqueados por Visual Studio).
 
@@ -552,9 +552,9 @@ Lanzamiento 09-04-2013
 
 - Se ha corregido el enlace de puntos de interrupción en algunos archivos DLL externos.
 
-## <a name="12"></a>1.2
+## <a name="12"></a>1,2
 
-Lanzamiento 25-03-2013
+Fecha de publicación: 25 de marzo de 2013
 
 ### <a name="new-features"></a>Características nuevas
 
@@ -586,7 +586,7 @@ Lanzamiento 25-03-2013
 
 - UnityVS ya no solicita actualizar la compilación al guardar el archivo, sino cuando VS compila el proyecto.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido nuestro perfil de .net personalizado
 
@@ -621,12 +621,12 @@ Lanzamiento 25-03-2013
 - Se ha corregido el error UVS-11: Variables locales en las corrutinas.
 
 ## <a name="11--beta-release"></a>1.1 – versión beta
-Fecha de publicación: 9 de octubre de 2014
+Lanzamiento 09-10-2014
 
 ## <a name="1013"></a>1.0.13
 Lanzamiento 21-01-2013
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido un bloqueo de Visual Studio que podía ocurrir si el código depurado de destino enviaba eventos de subproceso no válidos. Esto solía pasar al depurar un Unity remoto en OSX.
 
@@ -682,7 +682,7 @@ Lanzamiento 28-11-2012
 
 - Se ha agregado una [API](../cross-platform/share-the-unity-log-callback-with-vstu.md) para dejar al usuario participar en la LogCallback.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la regresión en segundo plano del Explorador de proyectos de Unity en Visual Studio 2012.
 
@@ -697,7 +697,7 @@ Lanzamiento 28-11-2012
 - Se ha corregido el bloqueo que se producía si no podíamos inyectar nuestro icono en la barra de estado de Visual Studio.
 
 ## <a name="1010"></a>1.0.10
-Lanzamiento 09-10-2012
+Fecha de publicación: 9 de octubre de 2012
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
@@ -713,7 +713,7 @@ Lanzamiento 09-10-2012
 
 Lanzamiento 03-10-2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la generación de proyectos cuando el proyecto de Unity incluye activos reales de JavaScript.
 
@@ -731,9 +731,9 @@ Lanzamiento 03-10-2012
 
 ## <a name="108"></a>1.0.8
 
-Lanzamiento 26-09-2012
+Fecha de publicación: 26 de septiembre de 2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la forma en que nuestro abridor de scripts adquiere la ruta de acceso al proyecto para asegurarse de que sea capaz de abrir Visual Studio y los scripts.
 
@@ -749,7 +749,7 @@ Lanzamiento 14-09-2012
 
 - Soporte de Visual Studio 2012.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la generación de archivos de proyectos de complementos y del Editor para que coincida con el comportamiento de Unity.
 
@@ -763,9 +763,9 @@ Lanzamiento 12-09-2012
 
 ## <a name="105"></a>1.0.5
 
-Lanzamiento 10-09-2012
+Fecha de publicación: 10 de septiembre de 2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la generación de archivos de proyecto cuando los scripts o sombreadores tenían un carácter xml no válido.
 
@@ -773,7 +773,7 @@ Lanzamiento 10-09-2012
 
 ## <a name="104"></a>1.0.4
 
-Lanzamiento 05-09-2012
+Fecha de publicación: 5 de septiembre de 2012
 
 ### <a name="new-features"></a>Características nuevas
 
@@ -781,7 +781,7 @@ Lanzamiento 05-09-2012
 
     Si tiene un ensamblado .dll de .NET con su .pdb asociado en la carpeta de activos, simplemente vuelva a importar el ensamblado y UnityVS convertirá el archivo .pdb en un archivo de símbolos de depuración que comprende el motor de scripting de Unity. De este modo, podrá acceder a los ensamblados de .NET desde UnityVS.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido el bloqueo de UnityVS que tenía lugar durante la depuración como consecuencia de excepciones producidas por métodos o propiedades ubicadas dentro de Unity.
 
@@ -793,7 +793,7 @@ Lanzamiento 04-09-2012
 
 - Nueva opción de configuración para deshabilitar el uso de UnityVS para abrir archivos desde Unity.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la generación de referencias a UnityEditor para proyectos que no sean del editor.
 
@@ -805,7 +805,7 @@ Lanzamiento 04-09-2012
 
 Lanzamiento 30-08-2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido el conflicto con el depurador de PythonTools.
 
@@ -815,13 +815,13 @@ Lanzamiento 30-08-2012
 
 ## <a name="101"></a>1.0.1
 
-Lanzamiento 28-08-2012
+Fecha de publicación: 28 de agosto de 2012
 
 ### <a name="new-features"></a>Características nuevas
 
 - Compatibilidad con la vista previa de Unity 4.0 Beta.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la inspección de propiedades que producen excepciones.
 
@@ -832,4 +832,4 @@ Lanzamiento 28-08-2012
 - Se ha corregido la finalización de archivos .dll dentro de la carpeta de activos para UnityScript y Boo.
 
 ## <a name="10--initial-release"></a>1.0 – versión inicial
-Lanzamiento 22-08-2012
+Fecha de publicación: 22 de agosto de 2012

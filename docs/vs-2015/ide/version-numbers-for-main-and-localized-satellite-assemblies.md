@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa064d875d5354ac4ae1fc5fdd8493c5efbbee01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663055"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Número de versión de los ensamblados principales y los ensamblados satélite localizados
@@ -43,5 +43,5 @@ La clase <xref:System.Resources.SatelliteContractVersionAttribute> proporciona c
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Cómo el motor en tiempo de ejecución ubica los ensamblados](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34) [configuración de los atributos de ensamblado](https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e) [seguridad y ensamblados satélite localizados](../ide/security-and-localized-satellite-assemblies.md) localizar [aplicaciones](../ide/localizing-applications.md) [globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)

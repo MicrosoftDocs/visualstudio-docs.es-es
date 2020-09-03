@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear una plantilla mediante controles de contenido'
+title: 'Tutorial: crear una plantilla mediante controles de contenido'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255584"
 ---
-# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Tutorial: Crear una plantilla mediante controles de contenido
+# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Tutorial: crear una plantilla mediante controles de contenido
   Este tutorial muestra cómo crear una personalización de nivel de documento que usa controles de contenido para crear contenido estructurado y reutilizable en una plantilla de Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "71255584"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -56,16 +56,16 @@ ms.locfileid: "71255584"
 
 ### <a name="to-create-a-new-word-template-project"></a>Para crear un nuevo proyecto de plantilla de Word
 
-1. Cree un proyecto de plantilla de Word con el nombre **MyBuildingBlockTemplate**. En el asistente, cree un nuevo documento en la solución. Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Cree un proyecto de plantilla de Word con el nombre **MyBuildingBlockTemplate**. En el asistente, cree un nuevo documento en la solución. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]abre la nueva plantilla de Word en el diseñador y agrega el proyecto **MyBuildingBlockTemplate** a **Explorador de soluciones**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre la nueva plantilla de Word en el diseñador y agrega el proyecto **MyBuildingBlockTemplate** a **Explorador de soluciones**.
 
 ## <a name="create-the-employee-table"></a>Crear la tabla Employee
  Cree una tabla que contenga cuatro tipos diferentes de controles de contenido donde el usuario pueda escribir información sobre un empleado.
 
 ### <a name="to-create-the-employee-table"></a>Para crear la tabla de empleados
 
-1. En la plantilla de Word que se hospeda en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] el diseñador de, en la cinta de opciones, haga clic en la pestaña **Insertar** .
+1. En la plantilla de Word que se hospeda en el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Diseñador de, en la cinta de opciones, haga clic en la pestaña **Insertar** .
 
 2. En el grupo **tablas** , haga clic en **tabla**e inserte una tabla con dos columnas y cuatro filas.
 
@@ -73,7 +73,7 @@ ms.locfileid: "71255584"
 
    ||
    |-|
-   |**Nombre del empleado**|
+   |**Nombre de empleado**|
    |**Fecha de contratación**|
    |**Título**|
    |**Fotografías**|
@@ -83,13 +83,13 @@ ms.locfileid: "71255584"
 5. En la cinta de opciones, haga clic en la pestaña **Desarrollador** .
 
    > [!NOTE]
-   > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña programador en la cinta](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)de opciones.
+   > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: Mostrar la pestaña programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 6. En el grupo **controles** , haga clic en el botón de **texto** ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> a la primera celda.
 
 7. Haga clic en la segunda celda de la segunda columna (junto a **fecha de contratación**).
 
-8. En el grupo **controles** , haga clic en el botón **selector de fecha** ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") para <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> agregar un a la segunda celda.
+8. En el grupo **controles** , haga clic en el botón **selector de fecha** ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> a la segunda celda.
 
 9. Haga clic en la tercera celda de la segunda columna (junto a **título**).
 
@@ -115,7 +115,7 @@ ms.locfileid: "71255584"
    ||
    |-|
    |**Nombre del cliente**|
-   |**Clasificación de satisfacción**|
+   |**Grado de satisfacción**|
    |**Comentarios**|
 
 5. Haga clic en la primera celda de la segunda columna (junto a **nombre de cliente**).
@@ -126,20 +126,20 @@ ms.locfileid: "71255584"
 
 8. Haga clic en la segunda celda de la segunda columna (junto a **clasificación de satisfacción**).
 
-9. En el grupo **controles** , haga clic en el botón de **lista desplegable** ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") para <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> agregar un a la segunda celda.
+9. En el grupo **controles** , haga clic en el botón de **lista desplegable** ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a la segunda celda.
 
 10. Haga clic en la última celda de la segunda columna (junto a **comentarios**).
 
 11. En el grupo **controles** , haga clic en el botón de **texto enriquecido** ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a la última celda.
 
 ## <a name="populate-the-combo-box-and-drop-down-list-programmatically"></a>Rellenar el cuadro combinado y la lista desplegable mediante programación
- Puede inicializar los controles de contenido en tiempo de diseño mediante la ventana [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]propiedades de. También puede inicializarlos en tiempo de ejecución, lo que le permite establecer sus estados iniciales dinámicamente. En este tutorial, use código para rellenar las entradas <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> de <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> y en tiempo de ejecución para que pueda ver cómo funcionan estos objetos.
+ Puede inicializar los controles de contenido en tiempo de diseño mediante la ventana **propiedades** de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . También puede inicializarlos en tiempo de ejecución, lo que le permite establecer sus estados iniciales dinámicamente. En este tutorial, use código para rellenar las entradas de <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> y <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> en tiempo de ejecución para que pueda ver cómo funcionan estos objetos.
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Para modificar la interfaz de usuario de los controles de contenido mediante programación
 
 1. En **Explorador de soluciones**, haga clic con el botón secundario en **ThisDocument.CS** o **ThisDocument. VB**y, a continuación, haga clic en **Ver código**.
 
-2. Agregue el código siguiente a la clase `ThisDocument` . Este código declara varios objetos que usará más adelante en este tutorial.
+2. Agregue el siguiente código a la clase `ThisDocument` . Este código declara varios objetos que usará más adelante en este tutorial.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
@@ -164,7 +164,7 @@ ms.locfileid: "71255584"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Para agregar las tablas a los bloques de creación en la plantilla
 
-1. Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código agrega nuevos bloques de creación que contienen las tablas a la colección Microsoft. Office. Interop. Word. BuildingBlockEntries, que contiene todos los bloques de creación reutilizables de la plantilla. Los nuevos bloques de creación se definen en una nueva categoría denominada **información de empleados y clientes** y se les asigna el `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`tipo de bloque de creación.
+1. Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código agrega nuevos bloques de creación que contienen las tablas a la colección Microsoft. Office. Interop. Word. BuildingBlockEntries, que contiene todos los bloques de creación reutilizables de la plantilla. Los nuevos bloques de creación se definen en una nueva categoría denominada **información de empleados y clientes** y se les asigna el tipo de bloque de creación `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
@@ -179,12 +179,12 @@ ms.locfileid: "71255584"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Para crear un control de contenido que muestra los bloques de creación
 
-1. Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código inicializa el objeto <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> que declaró anteriormente. Muestra todos los bloques de creación que se definen en la categoría **Employee and Customer Information** y que tienen el tipo `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`de bloque de creación. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>
+1. Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código inicializa el objeto <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> que declaró anteriormente. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>Muestra todos los bloques de creación que se definen en la categoría **Employee and Customer Information** y que tienen el tipo de bloque de creación `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
 
-## <a name="test-the-project"></a>Probar el proyecto
+## <a name="test-the-project"></a>Prueba del proyecto
  Los usuarios pueden hacer clic en los controles de la galería de bloques de creación del documento para insertar la tabla de empleados o la tabla de comentarios de clientes. Los usuarios pueden escribir o seleccionar las respuestas en los controles de contenido de ambas tablas. Los usuarios pueden modificar otras partes de la tabla de comentarios de clientes, pero no deben poder modificar otras partes de la tabla de empleados.
 
 ### <a name="to-test-the-employee-table"></a>Para probar la tabla de empleados
@@ -232,13 +232,13 @@ ms.locfileid: "71255584"
 ## <a name="next-steps"></a>Pasos siguientes
  Puede obtener más información sobre cómo usar controles de contenido en este tema:
 
-- Enlazar controles de contenido a elementos XML (también llamados elementos XML personalizados) que están insertados en un documento. Para obtener más información, vea [Tutorial: Enlazar controles de contenido a elementos](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)XML personalizados.
+- Enlazar controles de contenido a elementos XML (también llamados elementos XML personalizados) que están insertados en un documento. Para obtener más información, vea [Tutorial: enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
 ## <a name="see-also"></a>Vea también
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de contenido](../vsto/content-controls.md)
-- [Cómo: Agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Cómo: Proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
+- [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Cómo: proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

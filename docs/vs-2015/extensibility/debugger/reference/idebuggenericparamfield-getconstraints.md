@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetConstraints | Documentos de Microsoft
+title: 'IDebugGenericParamField:: GetConstraints | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6b06edf586a9aae58fde6cef54d026668faa1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180781"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera las restricciones que están asociadas con este parámetro genérico.  
+Recupera las restricciones que están asociadas a este parámetro genérico.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,19 +43,19 @@ int GetConstraints(
   
 #### <a name="parameters"></a>Parámetros  
  `cConstraints`  
- [in] Número de restricciones.  
+ de Número de restricciones.  
   
  `ppConstraints`  
- [out] Devuelve una matriz que contiene las restricciones asociadas con este campo.  
+ enuncia Devuelve una matriz que contiene las restricciones asociadas a este campo.  
   
  `pcConstraints`  
- [in, out] Número de restricciones en el `ppConstraints` matriz.  
+ [in, out] Número de restricciones de la `ppConstraints` matriz.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone el [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugGenericParamFieldType** que expone la interfaz [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .  
   
 ```cpp#  
 HRESULT CDebugGenericParamFieldType::GetConstraints(  
@@ -150,5 +150,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5707ef277892c37cab16f78ac11113194a95e190
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663510"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
@@ -39,7 +39,7 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
  Para acceder a la página **Firma**, seleccione un nodo de proyecto en el **Explorador de soluciones** y, después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Firma**.
 
 ## <a name="application-and-deployment-manifest-signing"></a>Firma de manifiestos de aplicación e implementación
- Casilla **firmar los manifiestos de ClickOnce** Active esta casilla para firmar los manifiestos de implementación y aplicación con un par de claves pública y privada. Para más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).
+ Casilla **firmar los manifiestos de ClickOnce** Active esta casilla para firmar los manifiestos de implementación y aplicación con un par de claves pública y privada. Para obtener más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
  El botón **seleccionar del almacén** permite seleccionar un certificado existente en el almacén de certificados personales del usuario actual. Puede seleccionar uno de estos certificados para firmar los manifiestos de aplicación e implementación.
 
@@ -60,13 +60,13 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
  Cuadro de **dirección URL del servidor de marca** de tiempo especifica la dirección de un servidor que marca la firma como una marca de tiempo. Si se proporciona un certificado, este sitio externo comprueba la hora en que se ha firmado la aplicación.
 
 ## <a name="assembly-signing"></a>Firma de ensamblados
- Casilla **firmar el ensamblado** Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).
+ Casilla **firmar el ensamblado** Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para obtener más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).
 
- Esta opción usa la herramienta Al.exe proporcionada por [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para firmar el ensamblado. Para más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).
+ Esta opción usa la herramienta Al.exe proporcionada por [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para firmar el ensamblado. Para obtener más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).
 
- **Elegir una lista de archivo de clave de nombre seguro** permite especificar un archivo de clave con nombre seguro nuevo o existente que se usa para firmar el ensamblado. Seleccione **\<Examinar... >** para seleccionar un archivo de clave existente.
+ **Elegir una lista de archivo de clave de nombre seguro** permite especificar un archivo de clave con nombre seguro nuevo o existente que se usa para firmar el ensamblado. Seleccione **\<Browse...>** para seleccionar un archivo de clave existente.
 
- Seleccione **\<Nuevo... >** para crear un nuevo archivo de clave para firmar el ensamblado. Aparece el cuadro de diálogo **Crear clave de nombre seguro**, que se puede usar para especificar un nombre de archivo de clave y proteger el archivo de clave con una contraseña. La contraseña debe tener al menos 6 caracteres. Si especifica una contraseña, se crea un archivo de intercambio de información personal (.pfx); si no especifica ninguna contraseña, se crea un archivo de clave con nombre seguro (.snk).
+ Seleccione **\<New...>** para crear un archivo de clave para firmar el ensamblado. Aparece el cuadro de diálogo **Crear clave de nombre seguro**, que se puede usar para especificar un nombre de archivo de clave y proteger el archivo de clave con una contraseña. La contraseña debe tener al menos 6 caracteres. Si especifica una contraseña, se crea un archivo de intercambio de información personal (.pfx); si no especifica ninguna contraseña, se crea un archivo de clave con nombre seguro (.snk).
 
  Botón **Cambiar contraseña** cambia la contraseña del archivo de clave de intercambio de información personal (. pfx) que se usa para firmar el ensamblado.
 
@@ -79,5 +79,5 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
 > [!NOTE]
 > Al firmar un ensamblado, es posible que no siempre tenga acceso a una clave privada. Por ejemplo, una organización podría tener un par de claves muy bien guardado al que los desarrolladores no tuvieran acceso cada día. La clave pública podría estar disponible, pero el acceso a la clave privada estaría restringido a algunas personas. En tal caso, podría usar la *firma retardada* o la *firma parcial* para proporcionar la clave pública, retrasando la adición de la clave privada hasta la entrega del ensamblado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Referencia de las propiedades del proyecto](../../ide/reference/project-properties-reference.md) administrar la firma de [ensamblados y manifiestos](../../ide/managing-assembly-and-manifest-signing.md) [firma de nombre seguro para aplicaciones administradas](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [Cómo: firmar manifiestos de aplicación e implementación](../../ide/how-to-sign-application-and-deployment-manifests.md) [Cómo: firmar un ensamblado (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [Cómo: firmar un ensamblado con un nombre seguro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [ensamblados](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) con nombre seguro

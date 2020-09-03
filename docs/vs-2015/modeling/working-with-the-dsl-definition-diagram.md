@@ -19,19 +19,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14e365d6bbe99634135bfad133d840b98e22e3b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663037"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabajar con diagramas de definición DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El diagrama de una definición de [!INCLUDE[dsl](../includes/dsl-md.md)] es una herramienta importante para definir el lenguaje específico del dominio. Puede agregar elementos al modelo del dominio y definir relaciones en el diagrama, y puede modificar el diseño del diagrama para hacerlo más legible.
+El diagrama de una [!INCLUDE[dsl](../includes/dsl-md.md)] definición es una herramienta importante para definir el lenguaje específico del dominio. Puede agregar elementos al modelo del dominio y definir relaciones en el diagrama, y puede modificar el diseño del diagrama para hacerlo más legible.
 
 ## <a name="the-layout-of-the-diagram"></a>Diseño del diagrama
- El diagrama de definición de [!INCLUDE[dsl](../includes/dsl-md.md)] tiene dos particiones, la partición de **clases y relaciones** y la partición de **elementos de diagrama** . La partición de **clases y relaciones** muestra las clases de dominio, las relaciones de dominio y la herencia. La partición **elementos del diagrama** muestra las clases de forma, las clases de conector, las clases de calle y el diagrama del diseñador generado.
+ El [!INCLUDE[dsl](../includes/dsl-md.md)] Diagrama de definición tiene dos particiones, la partición de **clases y relaciones** y la partición de **elementos de diagrama** . La partición de **clases y relaciones** muestra las clases de dominio, las relaciones de dominio y la herencia. La partición **elementos del diagrama** muestra las clases de forma, las clases de conector, las clases de calle y el diagrama del diseñador generado.
 
  Las clases de dominio pueden aparecer en varias ubicaciones en las particiones de **clases y relaciones** . Una definición de clase de dominio muestra un árbol de herencia si tiene la clase base para las demás clases de dominio, y un árbol de relaciones si es el origen de relaciones de incrustación o referencia. Los marcadores de posición de las clases de dominio aparecen como los destinos de las relaciones de incrustación o referencia. De forma predeterminada, los elementos de marcador de posición se muestran con el compartimiento **propiedades de dominio** contraído. No muestran la herencia ni las relaciones de incrustación o referencia.
 
@@ -74,5 +74,5 @@ El diagrama de una definición de [!INCLUDE[dsl](../includes/dsl-md.md)] es una 
 ### <a name="show-as-class"></a>Show As Class
  Si una relación de dominio tiene relaciones derivadas, o si tiene relaciones de incrustación o de referencia con otras relaciones de dominio, puede mostrar la relación como una clase haciendo clic con el botón secundario en la relación y, a continuación, haciendo clic en **Mostrar como clase**. La relación se mostrará con un compartimiento de **propiedades de dominio** y mostrará los árboles de herencia y de relaciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

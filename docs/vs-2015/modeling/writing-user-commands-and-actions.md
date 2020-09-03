@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1042a1ee21a288f0e74dc881109b65a331b53c94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663004"
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
@@ -33,9 +33,9 @@ Puede personalizar un lenguaje específico de dominio agregando comandos al diag
 
 - [Cómo: programar la copia y el pegado de comportamiento: redirección](../misc/how-to-program-copy-and-paste-behavior-redirect.md) : Cómo usar ElementOperations.
 
-- [Cómo: Tener acceso a una selección y restringir la selección actual](../modeling/how-to-access-and-constrain-the-current-selection.md)
+- [Cómo: Tener acceso y restringir una selección](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 - [Personalizar herramientas de elemento](../modeling/customizing-element-tools.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md)

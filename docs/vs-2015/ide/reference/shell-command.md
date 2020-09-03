@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad49aadf6be56fb330b883050e6a6ff893cf054a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663542"
 ---
 # <a name="shell-command"></a>Shell (Comando)
@@ -49,7 +49,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  /OutputWindow [o]/Output [o]/out [o]/o opcional. Especifica que la salida del ejecutable se muestra en la ventana **Salida**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Los modificadores /dir /o /c tienen que especificarse inmediatamente después de `Tools.Shell`. Cualquier elemento especificado después del nombre del ejecutable se pasa como argumentos de línea de comandos.
 
  El alias predefinido `Shell` se puede usar en lugar de `Tools.Shell`.
@@ -77,5 +77,5 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Ventana](../../ide/reference/command-window.md) de comandos de [comandos de Visual Studio](../../ide/reference/visual-studio-commands.md) [ventana de salida](../../ide/reference/output-window.md) alias de [comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [cuadro Buscar/comando](../../ide/find-command-box.md)

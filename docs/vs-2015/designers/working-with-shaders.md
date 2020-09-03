@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a22be61d5f4c05720a5ff223806f2e14a8bfbc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663945"
 ---
 # <a name="working-with-shaders"></a>Trabajar con sombreadores
@@ -35,8 +35,8 @@ Puede usar el Diseñador de sombras basado en gráficos de [!INCLUDE[vsprvs](../
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Description|
 |-----------|-----------------|
 |[Diseñador de sombras](../designers/shader-designer.md)|Describe cómo usar el diseñador de sombras de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con sombreadores.|
-|[Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)|Se abordan los tipos de nodos del Diseñador de sombras que se pueden usar para lograr efectos gráficos.|
-|[Ejemplos del Diseñador de sombras](../designers/shader-designer-examples.md)|Aquí encontrará vínculos a temas donde se explica cómo usar el Diseñador de sombras para lograr efectos gráficos comunes.|
+|[Nodos del diseñador de sombras](../designers/shader-designer-nodes.md)|Se abordan los tipos de nodos del Diseñador de sombras que se pueden usar para lograr efectos gráficos.|
+|[Ejemplos del diseñador de sombras](../designers/shader-designer-examples.md)|Aquí encontrará vínculos a temas donde se explica cómo usar el Diseñador de sombras para lograr efectos gráficos comunes.|

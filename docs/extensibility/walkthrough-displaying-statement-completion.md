@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904786"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Tutorial: Mostrar la finalización de instrucciones
@@ -204,5 +204,5 @@ Puede implementar la finalización de instrucciones basada en el lenguaje si def
 
 4. A medida que escribe primero "a" y luego "d", debe aparecer una lista que contiene "suma" y "adaptación". Observe que está seleccionada la opción adición. Cuando escribe otra "d", la lista solo debe contener "suma", que ahora está seleccionada. Puede confirmar "suma" presionando la **barra espaciadora**, la **tabulación**o la tecla **entrar** , o bien descartar la lista escribiendo ESC o cualquier otra tecla.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

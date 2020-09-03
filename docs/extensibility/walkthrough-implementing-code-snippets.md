@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904714"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Tutorial: implementar fragmentos de código
