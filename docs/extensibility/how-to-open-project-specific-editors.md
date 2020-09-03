@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905801"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Cómo: abrir editores específicos del proyecto
@@ -51,7 +51,7 @@ Si un archivo de elemento abierto por un proyecto está enlazado de forma intrí
 
 6. Llame al <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método para mostrar y abrir la vista.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)
 - [Cómo: abrir editores estándar](../extensibility/how-to-open-standard-editors.md)
 - [Cómo: abrir editores para documentos abiertos](../extensibility/how-to-open-editors-for-open-documents.md)

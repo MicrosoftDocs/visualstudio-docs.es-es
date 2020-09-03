@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905792"
 ---
 # <a name="how-to-open-standard-editors"></a>Cómo: abrir editores estándar
@@ -49,7 +49,7 @@ Al abrir un editor estándar, permite que el IDE determine un editor estándar p
 
      Si el objeto vista de documento o vista de documento se situó correctamente en un marco de ventana, el objeto se inicializa con sus datos mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)
 - [Cómo: abrir editores específicos del proyecto](../extensibility/how-to-open-project-specific-editors.md)

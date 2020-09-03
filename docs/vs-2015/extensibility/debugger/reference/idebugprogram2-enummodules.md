@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumModules | Documentos de Microsoft
+title: 'IDebugProgram2:: EnumModules (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5e133045c83b62892850ede552d1f9cfd886506
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202746"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera una lista de los módulos que este programa se ha cargado y se está ejecutando.  
+Recupera una lista de los módulos que este programa ha cargado y se está ejecutando.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,14 +40,14 @@ int EnumModules( 
   
 #### <a name="parameters"></a>Parámetros  
  `ppEnum`  
- [out] Devuelve un [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) objeto que contiene una lista de los módulos.  
+ enuncia Devuelve un objeto [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) que contiene una lista de los módulos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- Un módulo es un archivo DLL o un ensamblado y normalmente se incluye en el **módulos** ventana de depuración.  
+## <a name="remarks"></a>Observaciones  
+ Un módulo es un archivo DLL o un ensamblado y, por lo general, se muestra en la ventana de depuración de **módulos** .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

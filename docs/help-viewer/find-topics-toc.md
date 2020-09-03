@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284937"
 ---
 # Cómo: Buscar temas en la tabla de contenido
@@ -31,7 +31,7 @@ En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar
 
 ## Filtrar la TDC
 
-Puede filtrar la TDC para limitar el ámbito de los temas que aparecen en la pestaña **contenido** . los títulos aparecen en la lista solo si contienen la raíz del término que especifique. Por ejemplo, si especifica "solucionar" como un filtro, solo aparecerán los títulos que contengan "solucionar" o "solucionar problemas". Los nodos cuyos títulos no contienen el término se contraen en un solo nodo con puntos suspensivos (**...**).
+Puede filtrar la TDC para limitar el ámbito de los temas que aparecen en la pestaña **contenido** . Los títulos aparecen en la lista solo si contienen la raíz del término que especifique. Por ejemplo, si especifica "solucionar" como un filtro, solo aparecerán los títulos que contengan "solucionar" o "solucionar problemas". Los nodos cuyos títulos no contienen el término se contraen en un solo nodo con puntos suspensivos (**...**).
 
 1. Elija la pestaña **Contenido**.
 

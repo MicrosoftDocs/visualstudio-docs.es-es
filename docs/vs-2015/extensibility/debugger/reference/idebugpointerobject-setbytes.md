@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::SetBytes | Documentos de Microsoft
+title: 'IDebugPointerObject:: SetBytes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d467b037f4e2affea53a142304507f876630999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202969"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Establece el valor señalado por una serie de bytes consecutivos.  
+Establece el valor al que apunta desde una serie de bytes consecutivos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,23 +46,23 @@ int SetBytes(
   
 #### <a name="parameters"></a>Parámetros  
  `dwStart`  
- [in] Posición de desplazamiento, en bytes, desde el principio del objeto que apunta.  
+ de Desplazamiento, en bytes, desde el inicio del objeto al que se señala.  
   
  `dwCount`  
- [in] El número de bytes para establecer.  
+ de Número de bytes que se van a establecer.  
   
  `pBytes`  
- [in] Una matriz de bytes que representa el nuevo valor. Este valor se almacena en el objeto, comenzando en el desplazamiento dado.  
+ de Matriz de bytes que representa el nuevo valor. Este valor se almacena en el objeto, comenzando en el desplazamiento dado.  
   
  `pdwBytes`  
- [out] Devuelve que el número de bytes establecido realmente.  
+ enuncia Devuelve el número de bytes establecidos realmente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- Este método se utiliza si el puntero, tal como está representada por este [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) apunta a un tipo primitivo o una matriz de tipos primitivos (es decir, una matriz que puede representarse mediante una sencilla secuencia de bytes). Esto `IDebugPointerObject` objeto no puede ser una referencia nula (debe apuntar a una dirección de memoria).  
+## <a name="remarks"></a>Observaciones  
+ Este método se usa si el puntero representado por este [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) apunta a un tipo primitivo o a una matriz simple de tipos primitivos (es decir, una matriz que se puede representar mediante una secuencia simple de bytes). Este `IDebugPointerObject` objeto no puede ser una referencia nula (debe apuntar a una dirección en memoria).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

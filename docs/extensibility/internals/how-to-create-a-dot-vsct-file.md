@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905526"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Cómo: crear un archivo. Vsct
@@ -148,7 +148,7 @@ Puede crear un archivo *. Vsct* basado en XML a partir de un archivo *. CTO* bin
 
      El primer valor de parámetro debe coincidir con el valor del `ResourceName` atributo definido en el archivo de proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Archivos Author. Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

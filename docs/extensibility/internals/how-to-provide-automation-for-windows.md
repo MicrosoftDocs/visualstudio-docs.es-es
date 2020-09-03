@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fec2b9ef6612a294dc70d129cf4bdd3dde843262
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905260"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Cómo: proporcionar automatización para Windows
@@ -40,6 +40,6 @@ Un <xref:EnvDTE.Document> objeto estándar también está disponible en el entor
 
 Además, un editor puede proporcionar un objeto de automatización específico de VSPackage, recuperado a través del <xref:EnvDTE.Document.Object%2A> método, mediante la implementación de las `IVsExtensibleObject` `IExtensibleObject` interfaces o. Los [ejemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) aportan un objeto de automatización específico del documento RTF.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532228"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
@@ -35,7 +35,7 @@ En este tutorial se muestran las tareas siguientes:
 
 - Probar el host personalizado.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Para completar este tutorial, hay que disponer de lo siguiente:
 
@@ -716,9 +716,9 @@ En este tutorial, creará un host personalizado en una aplicación ejecutable a 
 
 4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Solo para, abra el menú **proyecto** y haga clic en **propiedades de CustomHost**. En la lista **objeto de inicio** , haga clic en **CustomHost. Program**.
 
-5. En el menú **Archivo**, haga clic en **Guardar todo**.
+5. En el menú **Archivo** , haga clic en **Guardar todo**.
 
-6. En el menú **Compilar** , haga clic en **Compilar solución**.
+6. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ## <a name="test-the-custom-host"></a>Probar el host personalizado
 
@@ -821,6 +821,6 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
 En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica. Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados. Para obtener más información, vea [Tutorial: conectar un host a un procesador de directivas generado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

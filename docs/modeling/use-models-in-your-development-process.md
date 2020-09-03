@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115057"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 
-En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos. Consulte [vídeo de Channel 9: mejora de la arquitectura a través del modelado](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
+En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos.  Consulte [vídeo de Channel 9: mejora de la arquitectura a través del modelado](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
 Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -48,7 +48,7 @@ En ambos casos, la creación de un modelo casi siempre reduce significativamente
 
 Un modelo no constituye por sí mismo una arquitectura ni una especificación de requisitos. Es una herramienta que permite expresar algunos aspectos de estos elementos con mayor claridad, pero no se pueden expresar todos los conceptos que se requieren durante el diseño de software. Por tanto, los modelos deben usarse junto con otros medios de comunicación, como páginas o párrafos de OneNote, documentos de Microsoft Office, elementos de trabajo en Team Foundation o notas rápidas en la pared de la habitación del proyecto. A excepción de este último, todos estos tipos de objetos pueden vincularse a elementos del modelo.
 
-A continuación se enumeran otros aspectos de especificación que se usan habitualmente con los modelos. En función de la escala y el estilo del proyecto, podrá usar varios o ninguno de estos aspectos:
+A continuación se enumeran otros aspectos de especificación que se usan habitualmente con los modelos. En función de la escala y el estilo del proyecto, podrá usar varios o ninguno de estos aspectos: 
 
 - Casos de usuario. Un caso de usuario es una descripción breve, que se analiza con los usuarios y demás participantes, de un aspecto del comportamiento del sistema que se proporcionará en una de las iteraciones del proyecto. Un caso de usuario típico comienza "el cliente podrá..." Un caso de usuario puede presentar un grupo de casos de uso, o puede definir extensiones de casos de uso desarrollados previamente. Si se definen o amplían casos de uso, el caso de usuario resulta más claro.
 
@@ -86,7 +86,7 @@ A medida que se acerca cada iteración, use modelos que le ayuden a definir los 
 
 - Cuando se acerque el final de cada iteración, organice un taller sobre requisitos para definir en detalle los requisitos o casos de usuario que se desarrollarán en la iteración siguiente. Invite a los usuarios y a las partes interesadas del negocio que pueden establecer las prioridades, además de a los desarrolladores y a los evaluadores del sistema. Dedique al menos tres horas para definir los requisitos de una iteración de dos semanas.
 
-- El objetivo del taller es que todos acuerden qué objetivos deben conseguirse al final de la iteración siguiente. Use los modelos como una herramienta más para dejar claros los requisitos. La salida del taller es un trabajo pendiente de iteración: es decir, una lista de tareas de desarrollo en Team Foundation y conjuntos de pruebas en [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- El objetivo del taller es que todos acuerden qué objetivos deben conseguirse al final de la iteración siguiente. Use los modelos como una herramienta más para dejar claros los requisitos. La salida del taller es un trabajo pendiente de iteración: es decir, una lista de tareas de desarrollo en Team Foundation y conjuntos de pruebas en [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .
 
 - En el taller de requisitos, analice el diseño solo en la medida en que necesite determinar las estimaciones de las tareas de desarrollo. De lo contrario, restrinja la conversación al comportamiento del sistema que los usuarios pueden experimentar directamente. Mantenga el modelo de requisitos separado del modelo de arquitectura.
 
@@ -110,7 +110,7 @@ Para obtener más información sobre esta técnica, vea [desarrollar pruebas a p
 
 Un modelo de requisitos puede ayudar a calcular el tamaño total del proyecto frente al tamaño de cada iteración. Evaluar el número y la complejidad de los casos de uso y las clases puede ayudar a calcular el trabajo de desarrollo que será necesario. Después de completar las primeras iteraciones, una comparación de los requisitos cubiertos y de los requisitos que quedan por cubrir puede proporcionar una idea aproximada del costo y el ámbito del resto del proyecto.
 
-Cuando se acerque el final de cada iteración, revise la asignación de requisitos a futuras iteraciones. Quizás le resulte útil representar el estado del software al final de cada iteración como un subsistema en un diagrama de casos de uso. En las conversaciones, puede mover los casos de uso y las extensiones de casos de uso de estos subsistemas a otros.
+Cuando se acerque el final de cada iteración, revise la asignación de requisitos a futuras iteraciones. Quizás le resulte útil representar el estado del software al final de cada iteración como un subsistema en un diagrama de casos de uso. En las conversaciones, puede mover los casos de uso y las extensiones de casos de uso de estos subsistemas a otros. 
 
 ## <a name="levels-of-abstraction"></a>Niveles de abstracción
 
@@ -122,23 +122,23 @@ Los distintos tipos de diagramas resultan útiles para describir el diseño con 
 
 |Nivel de diseño|Tipos de diagramas|
 |-|-|
-|Proceso empresarial<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Los diagramas de clases conceptuales describen los conceptos empresariales utilizados en el proceso empresarial.|
+|Proceso de negocio<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Los diagramas de clases conceptuales describen los conceptos empresariales utilizados en el proceso empresarial.|
 |Requisitos de los usuarios<br /><br /> Definición de lo que los usuarios necesitan del sistema.|-Las reglas de negocios y los requisitos de calidad de servicio se pueden describir en documentos independientes.|
 |Diseño de alto nivel<br /><br /> Estructura general del sistema: sus componentes principales y cómo se acoplan.|-Los diagramas de dependencia describen cómo se estructura el sistema en partes interdependientes. Puede validar el código de programa con los diagramas de dependencia para asegurarse de que se adhiere a la arquitectura.|
 |Análisis de código<br /><br /> Los diagramas se pueden generar a partir del código.|-Los diagramas de dependencia muestran las dependencias entre las clases. El código actualizado se puede validar con un diagrama de dependencia.<br />-Los diagramas de clases muestran las clases del código.|
 
 ## <a name="external-resources"></a>Recursos externos
 
-|**Categoría**|**Links**|
+|**Categoría**|**Vínculos**|
 |-|-|
-|**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif) [vídeos de procedimientos de MSDN: Cómo crear y usar modelos y diagramas UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![vínculo al vídeo](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [la serie de procedimientos de MSDN: herramientas y extensibilidad UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Vídeos**|![vínculo a vídeo ](../data-tools/media/playvideo.gif) [vídeos de procedimientos de MSDN: Cómo crear y usar modelos y diagramas UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![vínculo al canal de vídeo ](../data-tools/media/playvideo.gif) [9: UML con Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![vínculo a vídeo ](../data-tools/media/playvideo.gif) [sobre la serie de procedimientos de MSDN: extensibilidad y herramientas UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**Foros**|- [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Orientación para las herramientas de arquitectura de Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Usar modelos en el desarrollo ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usar modelos en Agile Development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
 - [Requisitos del usuario de modelos](../modeling/model-user-requirements.md)
 - [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)

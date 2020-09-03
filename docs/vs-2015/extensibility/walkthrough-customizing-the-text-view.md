@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Personalizar la vista de texto | Documentos de Microsoft'
+title: 'Tutorial: personalizar la vista de texto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,37 +11,37 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e96bb177d3cfa90b2c80304eabfd93d1bea76d5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202024"
 ---
-# <a name="walkthrough-customizing-the-text-view"></a>Tutorial: Personalizar la vista de texto
+# <a name="walkthrough-customizing-the-text-view"></a>Tutorial: Personalización de la vista de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede personalizar una vista de texto mediante la modificación de cualquiera de las siguientes propiedades en su mapa de formato del editor:  
+Puede personalizar una vista de texto modificando cualquiera de las siguientes propiedades en la asignación de formato del editor:  
   
 - Margen del indicador  
   
 - Símbolo de intercalación de inserción  
   
-- Sobrescribir el símbolo de intercalación  
+- Sobrescribir símbolo de intercalación  
   
 - Texto seleccionado  
   
-- Texto seleccionado inactivo (es decir, texto seleccionado que se ha perdido el foco)  
+- Texto seleccionado inactivo (es decir, texto seleccionado que ha perdido el foco)  
   
 - Espacio en blanco visible  
   
-## <a name="prerequisites"></a>Requisitos previos  
- A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerrequisitos  
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-mef-project"></a>Creación de un proyecto MEF  
+## <a name="creating-a-mef-project"></a>Crear un proyecto MEF  
   
-1. Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `ViewPropertyTest`.  
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `ViewPropertyTest` .  
   
-2. Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Agregue una plantilla de elemento clasificador de editor al proyecto. Para obtener más información, vea [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 3. Elimine los archivos de clase existentes.  
   
@@ -49,12 +49,12 @@ Puede personalizar una vista de texto mediante la modificación de cualquiera de
   
 1. Agregue un archivo de clase y asígnele el nombre `ViewPropertyModifier`.  
   
-2. Agregue las siguientes `using` directivas:  
+2. Agregue las siguientes directivas `using`:  
   
     [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
     [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
   
-3. Declare una clase llamada `TestViewCreationListener` que hereda de <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Exportar a esta clase con los siguientes atributos:  
+3. Declare una clase denominada `TestViewCreationListener` que herede de <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> . Exporte esta clase con los siguientes atributos:  
   
    - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> para especificar el tipo de contenido al que se aplica este agente de escucha.  
   
@@ -63,14 +63,14 @@ Puede personalizar una vista de texto mediante la modificación de cualquiera de
      [!code-csharp[VSSDKViewPropertyTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#2)]
      [!code-vb[VSSDKViewPropertyTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#2)]  
   
-4. En esta clase, importe el <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
+4. En esta clase, importe <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService> .  
   
     [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
     [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
   
-## <a name="changing-the-view-properties"></a>Cambiar las propiedades de vista  
+## <a name="changing-the-view-properties"></a>Cambiar las propiedades de la vista  
   
-1. Implemente el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que se cambian las propiedades de la vista cuando se abre la vista. Para realizar el cambio, primero busque el <xref:System.Windows.ResourceDictionary> que se corresponde con el aspecto de la vista que desea buscar. A continuación, cambie la propiedad adecuada en el diccionario de recursos y establecer las propiedades. Procesar por lotes las llamadas a la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> método mediante una llamada a la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> método antes de establecer las propiedades y, a continuación, el <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> después de establecer las propiedades.  
+1. Implemente el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que las propiedades de la vista se cambien cuando se abra la vista. Para hacer el cambio, busque primero el <xref:System.Windows.ResourceDictionary> que corresponde al aspecto de la vista que desea buscar. A continuación, cambie la propiedad adecuada en el Diccionario de recursos y establezca las propiedades. Procesa por lotes las llamadas al <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> método llamando al <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> método antes de establecer las propiedades y, a continuación, <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> después de establecer las propiedades.  
   
      [!code-csharp[VSSDKViewPropertyTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#4)]
      [!code-vb[VSSDKViewPropertyTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#4)]  
@@ -83,15 +83,15 @@ Puede personalizar una vista de texto mediante la modificación de cualquiera de
   
 2. Cree un archivo de texto y escriba algún texto.  
   
-    - El punto de inserción debe ser magenta y el símbolo de intercalación de sobrescritura deben turquesa.  
+    - El símbolo de intercalación de inserción debe ser magenta y el símbolo de intercalación de sobrescritura debe ser turquesa.  
   
-    - El margen del indicador (a la izquierda de la vista de texto) debe ser la luz verde.  
+    - El margen del indicador (a la izquierda de la vista de texto) debe ser verde claro.  
   
-3. Seleccione el texto que escribió. El color del texto seleccionado debe ser ligero rosa.  
+3. Seleccione el texto que acaba de escribir. El color del texto seleccionado debe ser rosa claro.  
   
-4. Mientras que el texto seleccionado, haga clic en cualquier lugar fuera de la ventana de texto. El color del texto seleccionado debe ser rosa oscuro.  
+4. Mientras el texto está seleccionado, haga clic en cualquier lugar fuera de la ventana de texto. El color del texto seleccionado debe ser rosa oscuro.  
   
-5. Activar el espacio en blanco visible. (En el **editar** menú, elija **avanzadas** y, a continuación, haga clic en **ver espacios en blanco**). Escriba algunas de las pestañas en el texto. Se deben mostrar las flechas rojas que representan las fichas.  
+5. Active el espacio en blanco visible. (En el menú **edición** , seleccione **avanzadas** y, a continuación, haga clic en **Ver espacio en blanco**). Escriba algunas pestañas en el texto. Deben mostrarse las flechas rojas que representan las pestañas.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)

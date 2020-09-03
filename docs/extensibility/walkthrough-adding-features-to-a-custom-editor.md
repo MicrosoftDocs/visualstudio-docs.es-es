@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905943"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Tutorial: agregar características a un editor personalizado
@@ -142,7 +142,7 @@ Después de crear un editor personalizado, puede agregarle más características
 
 - Para evitar la amontonación del comando de menú en la interfaz de usuario, debe usar los comandos existentes en el IDE antes de inventar nuevos comandos. Los comandos compartidos se definen en *SharedCmdDef. Vsct* y *ShellCmdDef. Vsct*. Estos archivos se instalan de forma predeterminada en el subdirectorio VisualStudioIntegration\Common\Inc de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalación de.
 
-- `ISelectionContainer`puede expresar selecciones únicas y múltiples. Cada objeto seleccionado se implementa como un `IDispatch` objeto.
+- `ISelectionContainer` puede expresar selecciones únicas y múltiples. Cada objeto seleccionado se implementa como un `IDispatch` objeto.
 
 - El IDE implementa `IOleUndoManager` como un servicio accesible desde <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> o como un objeto del que se pueden crear instancias <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> . El editor implementa la `IOleUndoUnit` interfaz para cada `Undo` acción.
 
@@ -152,6 +152,6 @@ Después de crear un editor personalizado, puede agregarle más características
 
   - `Window.Object`
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Contribuir al modelo de automatización](../extensibility/internals/contributing-to-the-automation-model.md)

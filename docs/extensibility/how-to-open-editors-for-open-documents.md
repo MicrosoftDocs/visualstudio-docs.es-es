@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905813"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Cómo: abrir editores para documentos abiertos
@@ -25,7 +25,7 @@ Antes de que un proyecto abra una ventana de documento, el proyecto debe determi
 
 ### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Para abrir un editor específico del proyecto para un archivo abierto
 
-1. Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.
+1. Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> .
 
     Esta llamada devuelve punteros a la jerarquía del documento, al elemento de la jerarquía y al marco de la ventana, si procede.
 
@@ -52,7 +52,7 @@ Antes de que un proyecto abra una ventana de documento, el proyecto debe determi
 
 2. Si el documento no está abierto, siga los pasos descritos en [Cómo: abrir editores estándar](../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)
 - [Cómo: abrir editores específicos del proyecto](../extensibility/how-to-open-project-specific-editors.md)
 - [Cómo: abrir editores estándar](../extensibility/how-to-open-standard-editors.md)

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d65bec449938a55ee9a415dd86db1ba07efbdb1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200759"
 ---
-# <a name="markerserieswritealert-method"></a>marker_series::write_alert (Método)
+# <a name="marker_serieswrite_alert-method"></a>marker_series::write_alert (Método)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Escribe una alerta en el archivo de seguimiento del visualizador de simultaneidad.  
@@ -41,7 +41,7 @@ void write_alert(
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres:** Concurrency::diagnostic  
+ **Espacio de nombres**: Concurrency::diagnostic  
   
-## <a name="see-also"></a>Otras referencias  
- [Clase marker_series](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Consulte también  
+ [marker_series (Clase)](../profiling/marker-series-class.md)

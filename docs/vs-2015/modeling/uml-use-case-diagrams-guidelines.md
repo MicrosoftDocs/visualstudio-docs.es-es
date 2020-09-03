@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74302839"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de casos de uso de UML: Instrucciones
@@ -45,7 +45,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
   Los casos de uso solamente se usan para los requisitos funcionales de un sistema. Otros requisitos, como las reglas de negocio, los requisitos de calidad del servicio y las restricciones de implementación, deben representarse por separado. La arquitectura y los detalles internos también deben describirse por separado. Para obtener más información acerca de cómo definir los requisitos de usuario, vea [requisitos de usuario de modelo](../modeling/model-user-requirements.md).
 
-  Los ejemplos que se usan en este tema están relacionados con un sitio web en el que los clientes pueden hacer pedidos de comida de restaurantes locales.
+   Los ejemplos que se usan en este tema están relacionados con un sitio web en el que los clientes pueden hacer pedidos de comida de restaurantes locales.
 
   ![Elementos de un diagrama de casos de uso](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
 
@@ -57,9 +57,9 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
 - Su *sistema (4)* es todo lo que está desarrollando. Puede ser un pequeño componente de software cuyos actores simplemente son otros componentes de software; puede ser una aplicación completa; o puede ser un gran conjunto de aplicaciones distribuidas que se implementan en muchos equipos y dispositivos. Los subsistemas de ejemplo son un **sitio web de pedidos de comidas**, una **empresa de entrega de comidas**, la **versión 2 del sitio web**.
 
-   En un diagrama de casos de uso pueden mostrarse los casos de uso que el sistema o sus subsistemas admiten.
+   En un diagrama de casos de uso pueden mostrarse los casos de uso que el sistema o sus subsistemas admiten. 
 
-## <a name="BasicSteps"></a>Pasos básicos para dibujar diagramas de casos de uso
+## <a name="basic-steps-for-drawing-use-case-diagrams"></a><a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de casos de uso
 
 > [!NOTE]
 > En [Editar modelos y diagramas UML,](../modeling/edit-uml-models-and-diagrams.md)se describen los pasos detallados para crear cualquiera de los diagramas de modelado.
@@ -110,7 +110,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
 7. Dibuje otros diagramas para hacer hincapié en diferentes subsistemas o grupos de casos de uso relacionados. Todos los diagramas de un proyecto de modelado son vistas del mismo modelo.
 
-## <a name="Actors"></a>Dibujar actores y casos de uso
+## <a name="drawing-actors-and-use-cases"></a><a name="Actors"></a> Dibujar actores y casos de uso
  El propósito principal de un diagrama de casos de uso es mostrar quién interactúa con el sistema y los principales objetivos que se logran con él.
 
 - Cree **actores** para representar clases de personas, organizaciones, otros sistemas, software o dispositivos que interactúen con el sistema o el subsistema.
@@ -126,7 +126,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 - Use **asociaciones** para vincular actores a casos de uso.
 
 ### <a name="inheritance-between-actors"></a>Herencia entre actores
- ![Diagrama de casos de uso que muestra herencia](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")
+ ![Diagrama de casos de uso mostrando herencia](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")
 
  Puede dibujar un vínculo de **generalización** entre actores. El actor especializado (“Cliente de club” en el ejemplo) hereda los casos de uso del actor general (“Cliente” en el ejemplo). La punta de flecha debe apuntar al actor más general, como “Cliente”. Cuando cree el vínculo, apunte primero al actor más especializado.
 
@@ -157,7 +157,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 ### <a name="multiplicities-between-actors-and-use-cases"></a>Multiplicidades entre actores y casos de uso
  La asociación entre un actor y un caso de uso puede mostrar una *multiplicidad* en cada extremo.
 
- ![Caso de uso uno a uno con actor](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
+ ![Caso de uso unívoco con actor](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
 
 > [!NOTE]
 > Las multiplicidades de una asociación en un diagrama de casos de uso están ocultas si ambos son **1**.
@@ -168,9 +168,9 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
  Por ejemplo:
 
- ![Caso de uso que muestra una multiplicidad de varios a varios](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
+ ![Caso de uso mostrando multiplicidad de varios a varios](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Para indicar que varios actores de la misma clase pueden participar en una única repetición de un caso de uso, establezca la multiplicidad en el extremo del actor de la asociación en **1..\*** .
+- Para indicar que varios actores de la misma clase pueden participar en una única repetición de un caso de uso, establezca la multiplicidad en el extremo del actor de la asociación en **1.. \* **.
 
    En la ilustración, uno o varios restaurantes pueden participar en la elaboración del mismo pedido de menú.
 
@@ -190,7 +190,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
    - **1** para indicar que exactamente una instancia de este rol participa en cada vínculo.
 
-   - **1..\*** para indicar que una o más instancias de este rol participan en cada vínculo.
+   - **1.. \* ** para indicar que una o más instancias de este rol participan en cada vínculo.
 
    - **0.. 1** para indicar que la participación es opcional.
 
@@ -215,9 +215,9 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 3. Arrastre un actor o caso de uso en el **Explorador de modelos** al nuevo diagrama.
 
     > [!NOTE]
-    > Si en el nuevo diagrama se coloca un actor y un caso de uso que ya están asociados, la asociación entre ellos aparecerá automáticamente en el nuevo diagrama.
+    > Si en el nuevo diagrama se coloca un actor y un caso de uso que ya están asociados, la asociación entre ellos aparecerá automáticamente en el nuevo diagrama. 
 
-## <a name="Details"></a>Describir los casos de uso en detalle
+## <a name="describing-use-cases-in-detail"></a><a name="Details"></a> Describir los casos de uso en detalle
  Un caso de uso representa:
 
 - Un objetivo de un actor en el uso del sistema, como **comprar una comida**; etc
@@ -270,7 +270,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular un documento compartido, elemento de OneNote o página web
 
-1. Obtenga la dirección URL del elemento compartido. Esto puede ser, por ejemplo, una ruta de acceso de archivo de red que empieza por '\\\\', o una página web o una dirección URL de SharePoint que empieza por ' http://', o un vínculo a una sección, página o párrafo de OneNote que empieza por ' OneNote: '.
+1. Obtenga la dirección URL del elemento compartido. Esto puede ser, por ejemplo, una ruta de acceso de archivo de red que empieza \\ \\ por ' ', una página web o una dirección URL de SharePoint que empieza por ' http://', o un vínculo a una sección, página o párrafo de OneNote que empieza por ' OneNote: '.
 
 2. En el cuadro de herramientas, haga clic en **artefacto** y, a continuación, haga clic en el diagrama de casos de uso.
 
@@ -280,7 +280,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 > Haga doble clic en un artefacto para abrir el diagrama o documento al que está vinculado.
 
 ### <a name="linking-use-cases-to-work-items"></a>Vincular casos de uso a elementos de trabajo
- Si el proyecto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] y tiene [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], puede vincular cada caso de uso a un elemento de trabajo en [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obtener información sobre cómo crear estos vínculos, vea [vincular elementos de modelo y elementos de trabajo](../modeling/link-model-elements-and-work-items.md).
+ Si el proyecto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] y tiene [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] , puede vincular cada caso de uso a un elemento de trabajo [!INCLUDE[esprfound](../includes/esprfound-md.md)] en. Para obtener información sobre cómo crear estos vínculos, vea [vincular elementos de modelo y elementos de trabajo](../modeling/link-model-elements-and-work-items.md).
 
  Esto le permite:
 
@@ -290,7 +290,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
 - Vincular tareas al caso de uso para que pueda hacer un seguimiento del progreso de desarrollo.
 
-## <a name="Structuring"></a>Estructurar casos de uso
+## <a name="structuring-use-cases"></a><a name="Structuring"></a> Estructurar casos de uso
  Es conveniente que intente describir el comportamiento del sistema con solo unos pocos casos de uso principales. En cada caso de uso grande se define un objetivo principal que un actor logra, como comprar un producto o, desde el punto de vista del proveedor, ofrecer productos para su venta.
 
  Una vez que haya presentado estos objetivos con claridad, puede proporcionar más detalles sobre cómo se consigue cada objetivo y sobre las variaciones de los objetivos básicos.
@@ -299,13 +299,13 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
  Puede usar un diagrama de casos de uso para resumir las relaciones entre los casos de uso principales y los casos de uso más detallados. En las secciones siguientes se describe cómo:
 
-- [Mostrar los detalles de un caso de uso con include](#Include)
+- [Mostrar los detalles de un caso de uso con la relación de inclusión](#Include)
 
-- [Uso compartido de objetivos con generalización](#Inheritance)
+- [Compartir los objetivos con la relación de generalización](#Inheritance)
 
-- [Separar casos variantes con Extend](#Extend)
+- [Descomponer las variaciones de casos con la relación de extensión](#Extend)
 
-### <a name="Include"></a>Mostrar los detalles de un caso de uso con include
+### <a name="showing-the-details-of-a-use-case-with-include"></a><a name="Include"></a> Mostrar los detalles de un caso de uso con include
  Use una relación de **inclusión** para mostrar que un caso de uso describe algunos de los detalles de otro. En la ilustración, **pedir una comida** incluye **pago**, **Elegir menú**y **elegir elemento de menú**. Cada uno de los casos de uso incluidos y más detallados constituye un paso que probablemente el actor o actores tendrán que llevar a cabo para conseguir el objetivo global del caso de uso incluyente. La flecha debe apuntar al caso de uso incluido más detallado.
 
 > [!CAUTION]
@@ -313,7 +313,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
  Los casos de uso incluidos se pueden compartir. En el ejemplo, los casos de uso **pedir una comida** y **suscribirse a las revisiones** incluyen el **pago**.
 
- ![Casos de uso que se descomponen con include](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
+ ![Casos de uso descompuestos con la relación de inclusión](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
 
  El objetivo y los escenarios de un caso de uso incluido deben tener sentido por sí mismos, de modo que puedan incluirse en casos de uso que se diseñen posteriormente.
 
@@ -323,7 +323,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
 - Evitar repetir escenarios compartidos en distintos casos de uso.
 
-#### <a name="Steps"></a>Definir el orden de los pasos detallados
+#### <a name="defining-the-order-of-the-detailed-steps"></a><a name="Steps"></a> Definir el orden de los pasos detallados
  En el diagrama de casos de uso no aparece ninguna información sobre el orden en que deben realizarse los pasos más detallados, ni sobre si son siempre todos necesarios.
 
  Para que el orden de los pasos sea claro, puede usar un **artefacto** para adjuntar un documento independiente al caso de uso incluido. En el ejemplo siguiente, se muestra un diagrama de actividades asociado al caso de uso “Pedir un menú”. Si lo desea, también puede usar un documento de texto que contenga una lista de pasos o una secuencia de capturas de pantalla. Para obtener más información, consulte [Descripción de los casos de uso en detalle](#Details).
@@ -336,12 +336,12 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
   Para obtener más información, vea [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).
 
-  ![Pasos de casos de uso mostrados en el diagrama de actividades vinculadas](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
+  ![Pasos de caso de uso mostrados en un diagrama de actividad vinculado](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
 
-### <a name="Inheritance"></a>Uso compartido de objetivos con generalización
+### <a name="sharing-goals-with-generalization"></a><a name="Inheritance"></a> Uso compartido de objetivos con generalización
  Use una relación de generalización para mostrar que un caso de uso *especializado* es una manera determinada de lograr los objetivos que se expresan en otro caso de uso *General* . La punta de flecha abierta debe apuntar al caso de uso más general.
 
- ![Casos de uso que muestran la relación de generalización](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
+ ![Casos de uso mostrando la relación de generalización](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
 
  Por ejemplo, el **pago** generaliza el **pago con tarjeta de crédito** y **paga por efectivo**.
 
@@ -368,10 +368,10 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
 4. Los actores que se comparten entre los casos de uso especializados pueden transferirse al caso de uso general.
 
-### <a name="Extend"></a>Separar casos de variante con Extend
+### <a name="separating-variant-cases-with-extend"></a><a name="Extend"></a> Separar casos de variante con Extend
  Use un vínculo de extensión para mostrar que, en determinadas circunstancias, un caso de uso puede agregar funcionalidad a otro caso de uso. La flecha debe apuntar al caso de uso principal extendido.
 
- ![Un caso de uso que extiende otro](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
+ ![Caso de uso que se extiende a otro](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
 
 > [!CAUTION]
 > No genere bucles de relaciones de extensión en los que, como resultado, un actor se generalice a sí mismo. Los bucles pueden producir errores.
@@ -407,7 +407,7 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
 - Esta extensión tan solo estará disponible en versiones específicas del sistema. Puede mostrar cada versión como un subsistema independiente en el diagrama de casos de uso.
 
-## <a name="Subsystems"></a>Usar límites de subsistema
+## <a name="using-subsystem-boundaries"></a><a name="Subsystems"></a> Usar límites de subsistema
  Use un límite de subsistema para mostrar qué casos de uso están dentro del ámbito del sistema.
 
 #### <a name="to-draw-a-subsystem-boundary"></a>Para dibujar un límite de subsistema
@@ -440,5 +440,5 @@ En Visual Studio, puede dibujar un *Diagrama de casos de uso* para resumir quié
 
  ![Los subsistemas muestran versiones diferentes de un sistema](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Requisitos de usuario de modelo](../modeling/model-user-requirements.md) [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md) [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md) [diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md) diagramas de componentes de UML [: referencia](../modeling/uml-component-diagrams-reference.md) [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md) [vídeo: organizar características en casos de uso](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

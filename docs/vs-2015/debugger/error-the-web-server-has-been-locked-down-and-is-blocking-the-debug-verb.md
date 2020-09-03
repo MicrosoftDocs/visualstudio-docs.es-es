@@ -1,5 +1,5 @@
 ---
-title: 'Error: El servidor Web se ha bloqueado y está bloqueando el verbo DEBUG | Documentos de Microsoft'
+title: 'Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203206"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG
@@ -52,6 +52,6 @@ No se pudo recorrer paso a paso por instrucciones una aplicación Web o un servi
   
 7. Reinicie el servidor o reinicie IIS.  
   
-## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones web: Errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Consulte también  
+ [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Error: El servidor web no pudo encontrar el recurso solicitado](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

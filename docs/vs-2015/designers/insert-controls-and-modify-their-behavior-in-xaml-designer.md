@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02d51c5799391863262d285e1cda209a3b7938d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300855"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Insertar controles y modificar su comportamiento en el Diseñador XAML
@@ -27,14 +27,14 @@ Los controles permiten a los usuarios interactuar con la aplicación. Puede util
 
 - [Acciones de los controles](#Modify)
 
-## <a name="Insert"></a> Agregar controles a la mesa de trabajo
+## <a name="add-controls-to-the-artboard"></a><a name="Insert"></a> Agregar controles a la mesa de la mesa
  Puede arrastrar controles desde el panel **Activos** a la **mesa de trabajo**y, a continuación, modificarlos en la ventana **Propiedades** .
 
- ![Elementos &#45; &#45; de Blend (FlipView)](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
+ ![Blend &#45; recursos &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
 
  En estos vídeos se enseña cómo usar algunos de los controles más comunes.
 
-|Control|Vea un vídeo corto|
+|Control|Vea un vídeo breve|
 |-------------|-------------------------|
 |`Menu` ![](../designers/media/015a263c-0b2b-4253-ac57-b86fcb8c9591.png "015a263c-0b2b-4253-ac57-b86fcb8c9591")|![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [Agregar los controles](https://www.youtube.com/watch?v=ra4AHfgD4Ys&list=PLBDF977B2F1DAB358&index=45)|
 |`Button` ![](../designers/media/05df1779-a68f-436b-b834-a91b7995a3ec.png "05df1779-a68f-436b-b834-a91b7995a3ec")|![Configurar características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [diseñar un botón](http://www.popscreen.com/v/6A4gb/Microsoft-Expression-Blend-Designing-a-Button)|
@@ -45,7 +45,7 @@ Los controles permiten a los usuarios interactuar con la aplicación. Puede util
 ### <a name="make-a-control-out-of-an-image-shape-or-path"></a>Crear un control a partir de una imagen, una forma o un trazado
  Puede convertir cualquier objeto en un control.
 
- ![Cuadro de diálogo crear en control de Blend](../designers/media/blend-makeintocontrol-xaml.png "blend_MakeIntoControl_XAML")
+ ![Cuadro de diálogo Convertir en control de Blend](../designers/media/blend-makeintocontrol-xaml.png "blend_MakeIntoControl_XAML")
 
  Imagine, por ejemplo, la imagen de una televisión en el centro de una página. A partir de imágenes pequeñas podría crear controles que tuviesen el aspecto de botones de televisión y en los que los usuarios podrían hacer clic para cambiar de canal.
 
@@ -53,7 +53,7 @@ Los controles permiten a los usuarios interactuar con la aplicación. Puede util
 
  Para crear un control, seleccione un objeto. A continuación, en el menú **Herramientas** , haga clic en **Crear control**.
 
-## <a name="Modify"></a> Acciones de los controles
+## <a name="make-controls-do-things"></a><a name="Modify"></a> Hacer que los controles hagan cosas
  Los controles pueden realizar acciones cuando los usuarios interactúan con ellos. Por ejemplo, pueden iniciar una animación, actualizar un origen de datos o reproducir un vídeo.
 
  Utilice *desencadenadores*, *comportamientos*y *eventos* para que los controles realicen accines.

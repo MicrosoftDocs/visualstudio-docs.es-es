@@ -1,5 +1,5 @@
 ---
-title: SccAddFilesFromSCC (función) | Microsoft Docs
+title: Función SccAddFilesFromSCC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200909"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta función agrega una lista de archivos de control de código fuente al proyecto abierto actualmente.  
+Esta función agrega una lista de archivos del control de código fuente al proyecto actualmente abierto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,42 +42,42 @@ SCCRTN SccAddFilesFromSCC(
   
 #### <a name="parameters"></a>Parámetros  
  pContext  
- [in] El puntero de contexto de complemento de control de código fuente.  
+ de Puntero de contexto del complemento de control de código fuente.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
+ de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.  
   
  lpUser  
  [in, out] El nombre de usuario (hasta SCC_USER_SIZE, incluido el terminador nulo).  
   
  lpAuxProjPath  
- [in, out] Cadena auxiliar que identifica el proyecto (hasta `SCC_PRJPATH_`tamaño, incluido el terminador nulo).  
+ [in, out] Cadena auxiliar que identifica el proyecto (hasta el `SCC_PRJPATH_` tamaño, incluido el terminador nulo).  
   
  cFiles  
- [in] Número de archivos proporcionado por `lpFilePaths`.  
+ de Número de archivos especificados por `lpFilePaths` .  
   
  lpFilePaths  
- [in, out] Matriz de nombres de archivo para agregar al proyecto actual.  
+ [in, out] Matriz de nombres de archivo que se va a agregar al proyecto actual.  
   
  lpDestination  
- [in] La ruta de acceso de destino donde están los archivos que se va a escribir.  
+ de Ruta de acceso de destino donde se van a escribir los archivos.  
   
  lpComment  
- [in] El comentario que se aplicará a cada uno de los archivos que se va a agregar.  
+ de Comentario que se va a aplicar a cada uno de los archivos que se van a agregar.  
   
  pbResults  
- [in, out] Matriz de marcas que está establecida para indicar éxito (distinto de cero o TRUE) o error (cero o FALSE) para cada archivo (tamaño de la matriz debe ser al menos `cFiles` largo).  
+ [in, out] Matriz de marcas que se establecen para indicar que se ha realizado correctamente (distinto de cero o TRUE) o error (cero o FALSE) para cada archivo (el tamaño de la matriz debe ser al menos `cFiles` largo).  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Value|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_E_PROJNOTOPEN|Proyecto no está abierto.|  
-|SCC_E_OPNOTPERFORMED|No es el mismo proyecto según lo especificado por conexión `lpAuxProjPath.`|  
-|SCC_E_NOTAUTHORIZED|Usuario no está autorizado para actualizar la base de datos.|  
+|SCC_E_PROJNOTOPEN|El proyecto no está abierto.|  
+|SCC_E_OPNOTPERFORMED|La conexión no está en el mismo proyecto que especifica `lpAuxProjPath.`|  
+|SCC_E_NOTAUTHORIZED|El usuario no está autorizado para actualizar la base de datos.|  
 |SCC_E_NONSPECIFICERROR|Error desconocido.|  
-|SCC_I_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
+|SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetSize | Microsoft Docs
+title: 'IDebugDisassemblyStream2:: se obtiene | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6db80ef9c447f9e08a1332348d2212699d01d8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203027"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
@@ -40,15 +40,15 @@ int GetSize( 
   
 #### <a name="parameters"></a>Parámetros  
  `pnSize`  
- [out] Devuelve el tamaño, en las instrucciones.  
+ enuncia Devuelve el tamaño, en instrucciones.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- El valor devuelto de este método puede utilizarse para asignar una matriz de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estructuras que, a continuación, se pasa a la [lectura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método.  
+## <a name="remarks"></a>Observaciones  
+ El valor devuelto por este método se puede usar para asignar una matriz de estructuras [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) que se pasa a continuación al método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+ [Lectura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

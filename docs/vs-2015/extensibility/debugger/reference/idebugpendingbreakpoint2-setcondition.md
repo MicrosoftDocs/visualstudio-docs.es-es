@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Documentos de Microsoft
+title: 'IDebugPendingBreakpoint2:: SetCondition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d9db02ada04b236ec190d11568eb1f4f35db6244
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201043"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
@@ -41,14 +41,14 @@ int SetCondition( 
   
 #### <a name="parameters"></a>Parámetros  
  `bpCondition`  
- [in] Un [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura que especifica la condición que se va a establecer.  
+ de Estructura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que especifica la condición que se va a establecer.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Se pierde cualquier condición que asoció anteriormente con el punto de interrupción pendiente. Se llama a todos los puntos de interrupción enlazados desde este punto de interrupción pendiente de para establecer su estado en el valor especificado en el `bpCondition` parámetro.  
+ Se pierde cualquier condición que se asoció previamente al punto de interrupción pendiente. Se llama a todos los puntos de interrupción enlazados desde este punto de interrupción pendiente para establecer su condición en el valor especificado en el `bpCondition` parámetro.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

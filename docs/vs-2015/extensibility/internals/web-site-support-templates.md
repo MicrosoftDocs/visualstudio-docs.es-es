@@ -1,5 +1,5 @@
 ---
-title: Plantillas de sitio Web soporte técnico | Documentos de Microsoft
+title: Plantillas de soporte del sitio web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,180 +11,180 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200964"
 ---
 # <a name="web-site-support-templates"></a>Plantillas de compatibilidad del sitio web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Plantillas de proyecto y elemento de sitio Web proporcionan stubs de proyectos y elementos de sitio Web reutilizables y personalizables que aceleran el proceso de desarrollo mediante la eliminación de la necesidad de crear nuevos proyectos de sitios Web y los elementos desde el principio. Para obtener más información sobre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plantillas, consulte [crear plantillas de proyecto y elemento](../../ide/creating-project-and-item-templates.md).  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Las plantillas de elementos y proyectos de sitio web proporcionan códigos auxiliares reutilizables y personalizables de los elementos y del proyecto de sitio web que aceleran el proceso de desarrollo mediante la eliminación de la necesidad de crear nuevos proyectos y elementos de sitios web desde cero. Para obtener más información sobre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] las plantillas, vea [crear plantillas de proyecto y de elemento](../../ide/creating-project-and-item-templates.md).  
   
 ## <a name="project-template-folder"></a>Carpeta de plantillas de proyecto  
- Plantillas de plantilla de proyecto Web normalmente se instalan en [*ruta de instalación de Visual Studio*] \Common7\IDE\ProjectTemplates\Web\\, cada una en una subcarpeta que se denomina con el lenguaje de programación web.  
+ Las plantillas de plantilla de proyecto web se instalan normalmente en [*ruta de instalación de Visual Studio*] \Common7\IDE\ProjectTemplates\Web \\ , cada una en una subcarpeta con el nombre del lenguaje de programación web.  
   
 ## <a name="project-file"></a>Archivo de proyecto  
- El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE) requiere una extensión de archivo de proyecto como una forma de asignar una plantilla para el tipo de proyecto correcta. Dado que los proyectos Web no tienen un archivo de proyecto, se registra el .webproj de extensión de archivo de proyecto ficticio para que sea compatible.  
+ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno de desarrollo integrado (IDE) requiere una extensión de archivo de proyecto como una manera de asignar una plantilla al tipo de proyecto correcto. Dado que los proyectos web no tienen un archivo de proyecto, la extensión de archivo de proyecto ficticio. webproj vacío se registra para que sea compatible.  
   
- Si lo desea, una cadena de nombre de idioma puede agregarse a la plantilla para habilitar el sistema de proyecto Web establecer el idioma predeterminado en el **Agregar nuevo elemento** cuadro de diálogo para los elementos basados en la plantilla. La cadena debe ser la primera línea del archivo y debe coincidir con el nombre registrado en AddItemLanguageName en el registro del motor de Intellisense y el nombre registrado en el proyecto Subtype(VsTemplate). Para obtener más información, consulte [sitio Web de soporte técnico de atributos](../../extensibility/internals/web-site-support-attributes.md).  
+ Opcionalmente, se puede Agregar una cadena de nombre de lenguaje a la plantilla para permitir que el sistema del proyecto web establezca el idioma predeterminado en el cuadro de diálogo **Agregar nuevo elemento** para los elementos basados en la plantilla. La cadena debe ser la primera línea del archivo y debe coincidir con el nombre registrado en AddItemLanguageName en el registro del motor de IntelliSense y el nombre registrado en subtipo de proyecto (VsTemplate). Para obtener más información, vea [atributos de compatibilidad del sitio web](../../extensibility/internals/web-site-support-attributes.md).  
   
- Si la cadena no está presente, el sistema del proyecto Web intentará determinar el idioma predeterminado en función de las extensiones de atributo y el archivo de lenguaje de las páginas que se agrega al proyecto Web mediante la plantilla de la plantilla de proyecto.  
+ Si la cadena no está presente, el sistema del proyecto web intentará determinar el idioma predeterminado en función del atributo de idioma y de las extensiones de archivo de las páginas agregadas al proyecto web por la plantilla de plantilla de proyecto.  
   
 ## <a name="project-templates"></a>Plantillas de proyecto  
- Plantillas de proyecto de sitio Web se usan para crear nuevos sitios Web en respuesta a la **nuevo sitio Web** comando el **archivo** menú. Actualmente se admiten tres tipos de proyectos de sitio Web:  
+ Las plantillas de proyecto de sitio web se usan para crear nuevos sitios web como respuesta al comando **nuevo sitio web** en el menú **archivo** . Actualmente se admiten tres tipos de proyecto de sitio web:  
   
-- Proyectos de sitio Web vacío  
+- Proyectos de sitio web vacíos  
   
-- Proyectos de sitios Web  
+- Proyectos de sitios web  
   
 - Proyectos de servicio Web  
   
-### <a name="empty-web-site-projects"></a>Proyectos de sitio Web vacío  
- Estos archivos creación un nuevo sitio Web vacío en respuesta a la **sitio Web vacío** comando, que está disponible después de seleccionar **nuevo sitio Web** en el **archivo** menú:  
+### <a name="empty-web-site-projects"></a>Proyectos de sitio web vacíos  
+ Estos archivos crean un nuevo sitio Web vacío como respuesta al comando **sitio Web vacío** , que está disponible después de seleccionar **nuevo sitio web** en el menú **archivo** :  
   
-- EmptyWeb.vstemplate  
+- EmptyWeb. vstemplate  
   
-     El archivo de plantilla que guía a la creación del nuevo sitio Web vacío.  
+     El archivo de plantilla que guía la creación del nuevo sitio Web vacío.  
   
-- EmptyWeb.webproj  
+- EmptyWeb. webproj vacío  
   
-     Este archivo es un artefacto del sistema de plantilla del proyecto. Cumple la referencia de archivo de proyecto en el archivo EmptyWeb.vstemplate.  
+     Este archivo es un artefacto del sistema de plantillas de proyecto. Satisface la referencia del archivo de proyecto en el archivo EmptyWeb. vstemplate.  
   
-### <a name="web-site-projects"></a>Proyectos de sitios Web  
- Estos archivos creación un nuevo sitio Web en respuesta a la **sitio Web de ASP.NET** comando, que está disponible después de seleccionar **nuevo sitio Web** en el **archivo** menú:  
+### <a name="web-site-projects"></a>Proyectos de sitios web  
+ Estos archivos crean un nuevo sitio web en respuesta al comando del **sitio web de ASP.net** , que está disponible después de seleccionar **nuevo sitio web** en el menú **archivo** :  
   
 - Default.aspx  
   
-     La página principal predeterminada para el nuevo sitio Web. El atributo Language especifica el lenguaje de código subyacente y el atributo CodeFile especifica el archivo dependiente que contiene el código de código subyacente asociado a esta página.  
+     La Página principal predeterminada del nuevo sitio Web. El atributo Language especifica el lenguaje Codebehind y el atributo Codefile especifica el archivo dependiente que contiene el código subyacente asociado a esta página.  
   
-- Default.aspx. *extensión*  
+- Default. aspx. *extensión* de  
   
-     El archivo dependiente que contiene el código de código subyacente para la página principal predeterminada. El lenguaje de código subyacente determina el *extensión* de este archivo.  
+     El archivo dependiente que contiene el código Codebehind de la Página principal predeterminada. El lenguaje Codebehind determina la *extensión* de este archivo.  
   
 - web.config  
   
-     El archivo de configuración raíz web.site.  
+     El archivo de configuración Web. site raíz.  
   
-- WebApplication.vstemplate  
+- WebApplication. vstemplate  
   
-     El archivo de plantilla que determina el contenido de la solución del sitio Web y fuerza la creación de la carpeta App_Data.  
+     El archivo de plantilla que determina el contenido de la solución de sitio web y fuerza la creación de la carpeta App_Data.  
   
-- WebApplication.webproj  
+- WebApplication. webproj vacío  
   
-     Este archivo es un artefacto del sistema de plantilla del proyecto. Cumple la referencia de archivo de proyecto en el archivo WebApplication.vstemplate.  
+     Este archivo es un artefacto del sistema de plantillas de proyecto. Satisface la referencia del archivo de proyecto en el archivo WebApplication. vstemplate.  
   
 ### <a name="web-service-projects"></a>Proyectos de servicio Web  
- Estos archivos creación un nuevo sitio Web en respuesta a la **servicio Web ASP.NET** comando que está disponible después de seleccionar **nuevo sitio Web** en el **archivo** menú:  
+ Estos archivos crean un nuevo sitio web en respuesta al comando del **servicio Web ASP.net** que está disponible después de seleccionar **nuevo sitio web** en el menú **archivo** :  
   
-- Service.asmx  
+- Service. asmx  
   
-     La página HTML para el nuevo servicio Web. El atributo Language especifica el lenguaje de código subyacente y el atributo de código subyacente especifica el archivo dependiente que contiene el código de código subyacente asociado con este servicio.  
+     Página HTML del nuevo servicio Web. El atributo Language especifica el lenguaje Codebehind y el atributo CodeBehind especifica el archivo dependiente que contiene el código de Codebehind asociado a este servicio.  
   
 - Servicio. *extension*  
   
-     El archivo dependiente que implementa la clase de servicio. El lenguaje de código subyacente determina el *extensión* de este archivo.  
+     El archivo dependiente que implementa la clase de servicio. El lenguaje Codebehind determina la *extensión* de este archivo.  
   
 - web.config  
   
-- El archivo de configuración raíz web.site.  
+- El archivo de configuración Web. site raíz.  
   
-- WebService.vstemplate  
+- WebService. vstemplate  
   
-     El archivo de plantilla que determina el contenido de la solución del sitio Web y fuerza la creación de las carpetas App_Data y App_Code. El servicio. *extensión* archivo se copia en la carpeta App_Code.  
+     El archivo de plantilla que determina el contenido de la solución de sitio web y fuerza la creación de las carpetas App_Data y App_Code. El servicio. el archivo de *extensión* se copia en la carpeta App_Code.  
   
-- WebService.webproj  
+- WebService. webproj vacío  
   
-     Este archivo es un artefacto del sistema de plantilla del proyecto. Cumple la referencia de archivo de proyecto en el archivo WebService.vstemplate.  
+     Este archivo es un artefacto del sistema de plantillas de proyecto. Satisface la referencia del archivo de proyecto en el archivo WebService. vstemplate.  
   
-## <a name="project-item-template-folder"></a>Carpeta de plantillas de elemento de proyecto  
- Plantillas de plantilla de elemento de proyecto Web normalmente se instalan en [*ruta de instalación de Visual Studio*] \Common7\IDE\ItemTemplates\Web\\, cada una en una subcarpeta denominada después de su lenguaje de programación de web.  
+## <a name="project-item-template-folder"></a>Carpeta de plantillas de elementos de proyecto  
+ Proyecto web: las plantillas de plantilla de elemento se instalan normalmente en [*ruta de instalación de Visual Studio*] \Common7\IDE\ItemTemplates\Web \\ , cada una en una subcarpeta con el nombre de su lenguaje de programación web.  
   
 ## <a name="project-item-templates"></a>Plantillas de elementos de proyecto  
- Plantillas de elemento de proyecto de sitio Web se usan para agregar nuevas páginas Web en un sitio Web en respuesta a la **Agregar elemento existente** comando. Actualmente se admiten estos tipos de páginas Web:  
+ Las plantillas de elemento de proyecto de sitio web se usan para agregar nuevas páginas web a un sitio web en respuesta al comando **Agregar elemento existente** . Actualmente se admiten estos tipos de páginas web:  
   
 - Nueva clase  
   
 - Nueva página HTML  
   
-- Formulario Web nuevo  
+- Nuevo formulario Web Forms  
   
-- Nueva página principal  
+- Nueva página maestra  
   
 ### <a name="new-class"></a>Nueva clase  
- Esta plantilla crea un nuevo archivo de origen que define una clase vacía en respuesta a la **agregar nueva clase** comando.  
+ Esta plantilla crea un nuevo archivo de código fuente que define una clase vacía como respuesta al comando **Agregar nueva clase** .  
   
 - Clase. *extension*  
   
-     El archivo de código fuente que implementa la clase vacía. El lenguaje de código subyacente determina el *extensión* de este archivo.  
+     El archivo de código fuente que implementa la clase vacía. El lenguaje Codebehind determina la *extensión* de este archivo.  
   
-- Class.vstemplate  
+- Clase. vstemplate  
   
-     El archivo de plantilla que crea el archivo de origen y determina su contenido.  
+     El archivo de plantilla que crea el archivo de código fuente y determina su contenido.  
   
 ### <a name="new-html-page"></a>Nueva página HTML  
- Esta plantilla crea una nueva página Web en respuesta a la **agregar nueva página HTML** comando.  
+ Esta plantilla crea una nueva página web como respuesta al comando **Agregar nueva página HTML** .  
   
 - HTMLPage.htm  
   
-     El contenido inicial de la página Web. Normalmente, esta página Web no tiene ningún archivo de código subyacente asociado dependientes. Para crear una página inteligente con un archivo de código subyacente asociado, use la plantilla de formulario Web Forms en su lugar.  
+     El contenido inicial de la Página Web. Normalmente, esta página web no tiene ningún archivo dependiente de código subyacente asociado. Para crear una página inteligente con un archivo de código subyacente asociado, use la plantilla de formulario web en su lugar.  
   
-- HTMLPage.vstemplate  
+- La. vstemplate  
   
-     El archivo de plantilla que crea la página Web y determina su contenido.  
+     El archivo de plantilla que crea la página web y determina su contenido.  
   
-### <a name="new-webform"></a>Formulario Web nuevo  
- Esta plantilla crea una nueva página Web inteligente en respuesta a la **Agregar nuevo formulario Web Forms** comando.  
+### <a name="new-webform"></a>Nuevo WebForm  
+ Esta plantilla crea una nueva página web inteligente como respuesta al comando **Agregar nuevo formulario Web Forms** .  
   
- Para crear un archivo de código fuente dependiente codebehind, seleccione **colocar código en un archivo independiente**. En caso contrario, se crea una única página Web que tiene un bloque de secuencias de comandos vacío y no tiene \<% Page % > directivas para enlazar un archivo dependiente.  
+ Para crear un archivo de origen de código subyacente dependiente, seleccione **colocar código en un archivo independiente**. De lo contrario, se crea una sola página web que tiene un bloque de scripting vacío y ninguna \<% Page %> Directiva para enlazar un archivo dependiente.  
   
- Para crear una página de contenido de una página maestra seleccionada, seleccione **seleccionar la página maestra**.  
+ Para crear una página de contenido para una página maestra seleccionada, seleccione **seleccionar página maestra**.  
   
-- WebForm.aspx  
+- WebForm. aspx  
   
-     El contenido inicial de la página Web. Esta página Web no tiene ningún archivo de código subyacente asociado dependientes.  
+     El contenido inicial de la Página Web. Esta página web no tiene asociado ningún archivo dependiente de código subyacente.  
   
-- WebForm_cb.aspx  
+- WebForm_cb. aspx  
   
-     El contenido inicial de la página Web. Esta página Web tiene un archivo de código subyacente asociado dependientes.  
+     El contenido inicial de la Página Web. Esta página web tiene asociado un archivo dependiente de Codebehind.  
   
-- Código subyacente. *extension*  
+- Código. *extension*  
   
-     El archivo dependiente que implementa la clase de formularios Web Forms. El lenguaje de código subyacente determina el *extensión* de este archivo.  
+     El archivo dependiente que implementa la clase WebForm. El lenguaje Codebehind determina la *extensión* de este archivo.  
   
-- ContentPage.aspx  
+- ContentPage. aspx  
   
-     El contenido inicial de la página Web como una página de contenido. Esta página Web no tiene ningún archivo de código subyacente asociado dependientes.  
+     El contenido inicial de la página web como una página de contenido. Esta página web no tiene asociado ningún archivo dependiente de código subyacente.  
   
-- ContentPage_cb.aspx  
+- ContentPage_cb. aspx  
   
-     El contenido inicial de la página Web como una página de contenido. Esta página Web tiene un archivo de código subyacente asociado dependientes.  
+     El contenido inicial de la página web como una página de contenido. Esta página web tiene asociado un archivo dependiente de Codebehind.  
   
-- WebForm.vstemplate  
+- WebForm. vstemplate  
   
      El archivo de plantilla que determina el contenido de la nueva página web y su archivo dependiente, si existe.  
   
-### <a name="new-master-page"></a>Nueva página principal  
- Esta plantilla crea una nueva página principal en respuesta a la **agregar nueva página principal** comando.  
+### <a name="new-master-page"></a>Nueva página maestra  
+ Esta plantilla crea una nueva página maestra como respuesta al comando **Agregar nueva página maestra** .  
   
- Para crear un archivo de código fuente dependiente codebehind, seleccione **colocar código en un archivo independiente**. En caso contrario, se crea una única página Web que tiene un bloque de secuencias de comandos vacío y no tiene \<% Page % > directivas para enlazar un archivo dependiente.  
+ Para crear un archivo de origen de código subyacente dependiente, seleccione **colocar código en un archivo independiente**. De lo contrario, se crea una sola página web que tiene un bloque de scripting vacío y ninguna \<% Page %> Directiva para enlazar un archivo dependiente.  
   
-- MasterPage.master  
+- MasterPage. Master  
   
-     El contenido inicial de la página maestra. Esta página principal no tiene ningún archivo de código subyacente asociado dependientes.  
+     El contenido inicial de la página maestra. Esta página maestra no tiene asociado ningún archivo dependiente de código subyacente.  
   
-- MasterPage_cb.master  
+- MasterPage_cb. Master  
   
-     El contenido inicial de la página maestra. Esta página principal tiene un archivo de código subyacente asociado dependientes.  
+     El contenido inicial de la página maestra. Esta página maestra tiene asociado un archivo dependiente de Codebehind.  
   
-- Código subyacente. *extensión*  
+- Código. *extensión* de  
   
-     El archivo dependiente que implementa la clase de página maestra. El lenguaje de código subyacente determina el *extensión* de este archivo.  
+     El archivo dependiente que implementa la clase de página maestra. El lenguaje Codebehind determina la *extensión* de este archivo.  
   
-- MasterPage.vstemplate  
+- MasterPage. vstemplate  
   
-     El archivo de plantilla que determina el contenido de la nueva página principal y su archivo dependiente, si existe.  
+     El archivo de plantilla que determina el contenido de la nueva página maestra y su archivo dependiente, si existe.  
   
-## <a name="see-also"></a>Vea también  
- [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)
+## <a name="see-also"></a>Consulte también  
+ [Compatibilidad del sitio web](../../extensibility/internals/web-site-support.md)
