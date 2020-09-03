@@ -1,5 +1,5 @@
 ---
-title: Información general del servicio de lenguaje heredado | Documentos de Microsoft
+title: Información general del servicio de lenguaje heredado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,21 +11,21 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5964aa82d76791d29313ac787f1216c9c9ad283
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202719"
 ---
 # <a name="legacy-language-service-overview"></a>Información general del servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un servicio de lenguaje proporciona compatibilidad con el editor que permite implementar determinados [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa para las características usadas con frecuencia y compatibilidad parcial con otras características.  
+Un servicio de lenguaje proporciona compatibilidad con el editor que permite implementar determinadas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa con las características usadas con frecuencia y compatibilidad parcial con otras características.  
   
-## <a name="fully-supported-features-in-the-mpf"></a>Totalmente compatible con características de MPF  
- Las clases de servicio de lenguaje MPF admiten las siguientes características:  
+## <a name="fully-supported-features-in-the-mpf"></a>Características totalmente compatibles en MPF  
+ Las clases de servicio del lenguaje MPF admiten las siguientes características:  
   
-- Resalte de sintaxis  
+- Resaltado de sintaxis  
   
 - esquematizar  
   
@@ -35,29 +35,29 @@ Un servicio de lenguaje proporciona compatibilidad con el editor que permite imp
   
 - Fragmentos de código  
   
-- Propiedades personalizadas del documento  
+- Propiedades de documento personalizadas  
   
 - Información de parámetros de IntelliSense  
   
-- IntelliSense información rápida  
+- Información rápida de IntelliSense  
   
-- Finalizaciones de miembros de IntelliSense  
+- Finalización de miembros de IntelliSense  
   
 - Finalización de palabras de IntelliSense  
   
 ## <a name="partially-supported-features-in-the-mpf"></a>Características admitidas parcialmente en MPF  
- MPF proporciona compatibilidad parcial solo para las siguientes características. Esto significa que debe implementar los métodos que se llaman mediante MPF.  
+ MPF solo proporciona compatibilidad parcial con las siguientes características. Esto significa que debe implementar los métodos a los que llama el MPF.  
   
-- Cambiar el formato de código. Proporcione el código que implementa el nuevo formato.  
+- Volver a dar formato al código. Debe proporcionar el código que implementa el nuevo formato.  
   
-- Abarca la validación de los puntos de interrupción mediante la identificación de código válido. Proporcione el código que identifica los intervalos de código.  
+- Validación de puntos de interrupción mediante la identificación de intervalos de código válidos. Debe proporcionar el código que identifica los intervalos de código.  
   
-- Compatibilidad con el depurador **automático** ventana para mostrar las variables. Proporcione el código que determina qué se debe mostrar en la ventana.  
+- Compatibilidad con la ventana **automático** del depurador para mostrar variables. Proporcione el código que determina lo que se va a mostrar en la ventana.  
   
-- Compatibilidad con la **barra de navegación** para navegar rápidamente entre los tipos y miembros. Implementar y devolver una clase auxiliar que rellena las listas de la **barra de navegación** cuadros combinados.  
+- Compatibilidad con la **barra de navegación** para una navegación rápida entre tipos y miembros. Implementa y devuelve una clase auxiliar que rellena las listas en los cuadros combinados de la **barra de navegación** .  
   
 ## <a name="implementation"></a>Implementación  
- Debe completar varios pasos para implementar el servicio de lenguaje propio y las características del servicio de lenguaje que desee admitir en su idioma. Estos pasos se describen en los temas siguientes:  
+ Debe completar varios pasos para implementar el propio servicio de lenguaje y las características del servicio de lenguaje que desea admitir para su idioma. Estos pasos se describen en los temas siguientes:  
   
 - [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
@@ -73,7 +73,7 @@ Un servicio de lenguaje proporciona compatibilidad con el editor que permite imp
   
 - [Cambio de formato de código en un servicio de lenguaje heredado](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
   
-- [Propiedades de documento personalizado en un servicio de lenguaje heredado](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+- [Propiedades de documento personalizadas en un servicio de lenguaje heredado](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
   
 - [Compatibilidad con fragmentos de código en un servicio de lenguaje heredado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
   
@@ -81,7 +81,7 @@ Un servicio de lenguaje proporciona compatibilidad con el editor que permite imp
   
 - [Finalización de palabras en un servicio de lenguaje heredado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
   
-- [Finalización de miembro en un servicio de lenguaje heredado](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
+- [Finalización de miembros en un servicio de lenguaje heredado](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
 - [Información de parámetros en un servicio de lenguaje heredado](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
@@ -91,6 +91,6 @@ Un servicio de lenguaje proporciona compatibilidad con el editor que permite imp
   
 - [Validación de puntos de interrupción en un servicio de lenguaje heredado](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
-## <a name="see-also"></a>Vea también  
- [Implementar un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+## <a name="see-also"></a>Consulte también  
+ [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)

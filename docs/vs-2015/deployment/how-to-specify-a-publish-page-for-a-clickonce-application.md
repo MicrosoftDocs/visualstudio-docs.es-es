@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar una página de publicación para una aplicación ClickOnce | Documentos de Microsoft
+title: 'Cómo: especificar una página de publicación para una aplicación ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,48 +19,48 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63356c6eb423ddead54290cc11c865a5102f55f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202162"
 ---
-# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procedimiento Especificar una página de publicación para una aplicación ClickOnce
+# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Cómo: Especificar una página de publicación para una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, se genera una página de Web predeterminada (publish.htm) y se publica junto con la aplicación. Esta página contiene el nombre de la aplicación, un vínculo para instalar la aplicación o los requisitos previos y un vínculo a un tema de ayuda que describe [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. El **página publicar** propiedad del proyecto le permite especificar un nombre para la página Web para su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación.  
+Al publicar una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, se genera una página web predeterminada (publish.htm) y se publica junto con la aplicación. Esta página contiene el nombre de la aplicación, un vínculo para instalar la aplicación y/o los requisitos previos, y un vínculo a un tema de ayuda que describe [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . La propiedad **publicar página** del proyecto le permite especificar un nombre para la Página Web de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación.  
   
- Una vez que se ha especificado la página de publicación, la próxima vez que publique, se copiará en la ubicación de publicación; no se sobrescribirá si vuelve a publicar. Si desea personalizar la apariencia de la página, puede hacerlo sin preocuparse por perder los cambios. Para obtener más información, vea [Cómo: Personalizar la página Web predeterminada de ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
+ Una vez especificada la página de publicación, la próxima vez que publique, se copiará en la ubicación de publicación. no se sobrescribirá si vuelve a publicar. Si desea personalizar la apariencia de la página, puede hacerlo sin preocuparse por perder los cambios. Para obtener más información, vea [Cómo: personalizar la página web predeterminada de ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
   
- El **página publicar** propiedad puede establecerse el **opciones de publicación** cuadro de diálogo, accesible desde el **publicar** panel de la **delDiseñadordeproyectos**.  
+ La propiedad **publicar página** se puede establecer en el cuadro de diálogo **Opciones de publicación** , accesible desde el panel **publicar** del diseñador de **proyectos**.  
   
-### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Para especificar una página Web personalizada para una aplicación ClickOnce  
+### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Para especificar una página web personalizada para una aplicación ClickOnce  
   
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.  
   
-2. Seleccione el **publicar** panel.  
+2. Seleccione el panel **publicar** .  
   
-3. Haga clic en el **opciones** botón para abrir el **opciones de publicación** cuadro de diálogo.  
+3. Haga clic en el botón **Opciones** para abrir el cuadro de diálogo **Opciones de publicación** .  
   
-4. Haga clic en **implementación**.  
+4. Haga clic en **Implementación**.  
   
-5. En el **opciones de publicación** diálogo cuadro, asegúrese de que el **implementación abrir la página web después de publicar** está seleccionada la casilla de verificación (debe estar seleccionado de forma predeterminada).  
+5. En el cuadro de diálogo **Opciones de publicación** , asegúrese de que la casilla **abrir la Página Web de implementación después** de la publicación esté activada (debe estar seleccionada de forma predeterminada).  
   
-6. En el **página web de implementación:** cuadro, escriba el nombre de la página Web y, a continuación, haga clic en **Aceptar**.  
+6. En el cuadro **Página Web de implementación:** , escriba el nombre de la página web y, a continuación, haga clic en **Aceptar**.  
   
-### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Para impedir que se inicie cada vez que publique la página de publicación  
+### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Para evitar que se inicie la página de publicación cada vez que publique  
   
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.  
   
-2. Seleccione el **publicar** panel.  
+2. Seleccione el panel **publicar** .  
   
-3. Haga clic en el **opciones** botón para abrir el **opciones de publicación** cuadro de diálogo.  
+3. Haga clic en el botón **Opciones** para abrir el cuadro de diálogo **Opciones de publicación** .  
   
-4. Haga clic en **implementación**.  
+4. Haga clic en **Implementación**.  
   
-5. En el **opciones de publicación** cuadro de diálogo, desactive la **implementación abrir la página web después de publicar** casilla de verificación.  
+5. En el cuadro de diálogo **Opciones de publicación** , desactive la casilla **abrir la Página Web de implementación después de publicar** .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Cómo: Personalización de la página web predeterminada para ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)
+ [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Cómo: personalizar la página web predeterminada de ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

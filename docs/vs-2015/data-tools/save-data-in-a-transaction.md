@@ -21,18 +21,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30f51da001c62166a97c954b1416e35fd8b540f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671087"
 ---
 # <a name="save-data-in-a-transaction"></a>Guardar datos en una transacción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tutorial se muestra cómo guardar los datos en una transacción mediante el espacio de nombres <xref:System.Transactions>. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.
+En este tutorial se muestra cómo guardar los datos en una transacción mediante el <xref:System.Transactions> espacio de nombres. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Este tutorial requiere acceso a la base de datos de ejemplo Northwind.
 
 ## <a name="create-a-windows-application"></a>Crear una aplicación para Windows
@@ -49,7 +49,7 @@ En este tutorial se muestra cómo guardar los datos en una transacción mediante
      Se crea el proyecto **SavingDataInATransactionWalkthrough** y se agrega al **Explorador de soluciones**.
 
 ## <a name="create-a-database-data-source"></a>Crear un origen de datos de base de datos
- En este paso se usa el Asistente para la [configuración de orígenes de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) para crear un origen de datos basado en las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.
+ En este paso se usa el Asistente para la [configuración de orígenes de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) para crear un origen de datos basado en las `Customers` tablas y `Orders` de la base de datos de ejemplo Northwind.
 
 #### <a name="to-create-the-data-source"></a>Para crear el origen de datos
 
@@ -73,12 +73,12 @@ En este tutorial se muestra cómo guardar los datos en una transacción mediante
 
 7. En la pantalla **elegir los objetos de base de datos** , expanda el nodo **tablas** .
 
-8. Seleccione las tablas `Customers` y `Orders` y, a continuación, seleccione **Finalizar**.
+8. Seleccione las `Customers` `Orders` tablas y y, a continuación, seleccione **Finalizar**.
 
-     **NorthwindDataSet** se agrega al proyecto y las tablas `Customers` y `Orders` aparecen en la ventana **Orígenes de datos**.
+     **NorthwindDataSet** se agrega al proyecto y las `Customers` `Orders` tablas y aparecen en la ventana orígenes de **datos** .
 
 ## <a name="addcontrols-to-the-form"></a>Addcontrols al formulario
- Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
+ Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **orígenes de datos** hasta el formulario.
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Para crear controles enlazados a datos en Windows Forms
 
@@ -104,26 +104,26 @@ En este tutorial se muestra cómo guardar los datos en una transacción mediante
      Se agrega una referencia a **System.Transactions** al proyecto.
 
 ## <a name="modifythe-code-in-the-bindingnavigators-saveitem-button"></a>Modifythe código en el botón SaveItem de BindingNavigator
- En la primera tabla colocada en el formulario, se agrega código de forma predeterminada al evento `click` del botón Guardar en el <xref:System.Windows.Forms.BindingNavigator>. Para actualizar otras tablas, debe agregar el código manualmente. En este tutorial, se refactoriza el código de guardado existente del controlador de eventos Click del botón Guardar. También creamos algunos métodos más para proporcionar una funcionalidad de actualización específica basada en si es necesario agregar o eliminar la fila.
+ En la primera tabla colocada en el formulario, el código se agrega de forma predeterminada al `click` evento del botón Guardar en el <xref:System.Windows.Forms.BindingNavigator> . Para actualizar otras tablas, debe agregar el código manualmente. En este tutorial, se refactoriza el código de guardado existente del controlador de eventos Click del botón Guardar. También creamos algunos métodos más para proporcionar una funcionalidad de actualización específica basada en si es necesario agregar o eliminar la fila.
 
 #### <a name="to-modify-the-auto-generated-save-code"></a>Para modificar el código de guardado generado automáticamente
 
 1. Seleccione el botón **Guardar** en **CustomersBindingNavigator** (el botón con el icono de disquete).
 
-2. Reemplace el método `CustomersBindingNavigatorSaveItem_Click` con el código siguiente:
+2. Reemplace el método `CustomersBindingNavigatorSaveItem_Click` por el código siguiente:
 
     [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
     [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]
 
    El orden para conciliar los cambios a los datos relacionados es el siguiente:
 
-- Eliminar registros secundarios. (En este caso, elimine los registros de la tabla `Orders`).
+- Eliminar registros secundarios. (En este caso, elimine los registros de la `Orders` tabla).
 
-- Eliminar registros primarios. (En este caso, elimine los registros de la tabla `Customers`).
+- Eliminar registros primarios. (En este caso, elimine los registros de la `Customers` tabla).
 
-- Insertar registros primarios. (En este caso, inserte los registros en la tabla `Customers`).
+- Insertar registros primarios. (En este caso, inserte los registros en la `Customers` tabla).
 
-- Insertar registros secundarios. (En este caso, inserte los registros en la tabla `Orders`).
+- Insertar registros secundarios. (En este caso, inserte los registros en la `Orders` tabla).
 
 #### <a name="to-delete-existing-orders"></a>Para eliminar pedidos existentes
 
@@ -153,11 +153,11 @@ En este tutorial se muestra cómo guardar los datos en una transacción mediante
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 #### <a name="to-run-the-application"></a>Para ejecutar la aplicación
 
 - Seleccione **F5** para ejecutar la aplicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes | Documentos de Microsoft
+title: 'IDebugReference2:: GetMemoryBytes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29cc6e12ddbc26ce68cd722335b467cf810d941f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202507"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtiene los bytes de memoria que contienen el valor de una referencia de físicamente. Reservado para un uso futuro.  
+Obtiene los bytes de memoria que contienen físicamente el valor de una referencia. Reservado para un uso futuro.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,11 +40,11 @@ int GetMemoryBytes ( 
   
 #### <a name="parameters"></a>Parámetros  
  `ppMemoryBytes`  
- [out] Devuelve un [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que puede usarse para recuperar la memoria que contiene el valor de la referencia.  
+ enuncia Devuelve un objeto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) que se puede utilizar para recuperar la memoria que contiene el valor de la referencia.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Siempre devuelve `E_NOTIMPL`.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

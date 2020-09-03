@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1595be559f28868d0d749f6b163a63d98a9a6e45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670137"
 ---
 # <a name="using-the-activity-designers"></a>Utilizar los diseñadores de actividades
@@ -41,7 +41,7 @@ ms.locfileid: "72670137"
 
  [Control de errores](../workflow-designer/error-handling-activity-designers.md) Diseñadores de actividad utilizados para administrar las actividades de control de errores.
 
- [Migración](../workflow-designer/migration-activity-designers.md) de Diseñadores de actividad que se usan para interoperar entre [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] / [!INCLUDE[netfx35_short](../includes/netfx35-short-md.md)] y [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] flujos de trabajo.
+ [Migración](../workflow-designer/migration-activity-designers.md) de Diseñadores de actividad que se usan para interoperar entre [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] / [!INCLUDE[netfx35_short](../includes/netfx35-short-md.md)] [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] flujos de trabajo y.
 
 ## <a name="reference"></a>Referencia
  <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>

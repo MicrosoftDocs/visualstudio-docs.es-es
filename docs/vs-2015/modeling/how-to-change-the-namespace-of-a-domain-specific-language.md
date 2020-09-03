@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8b61b248876f701e9d5286063f28b4f71d73e18b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671727"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio
@@ -49,11 +49,11 @@ Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Debe 
 
 10. Restablezca la instancia experimental de Visual Studio.
 
-    1. Elimine **\users \\** _{su nombre}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**
+    1. Eliminar **\Users \\ **_{su nombre}_**\AppData\Local\Microsoft\VisualStudio \\ \* exp**
 
     2. En el menú **Inicio** de Windows, elija **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas**y **restablezca la instancia experimental**.
 
 11. En el menú **compilar** , elija **recompilar solución**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

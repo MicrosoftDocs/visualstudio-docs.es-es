@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ec0bdd3ebae52158c5631a880e63ee0f3a455de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671709"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Paso 6: Agregar un problema de resta
@@ -54,9 +54,9 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
 
      ![Información sobre herramientas de la ventana IntelliSense](../ide/media/express-overloads.png "Express_Overloads") Información sobre herramientas de la ventana IntelliSense
 
-     En la información sobre herramientas se muestra **(+ 2 sobrecargas)** , lo que significa que se puede llamar al método `Next()` de dos formas. Las sobrecargas contienen diferentes números o tipos de argumentos, por lo que funcionan de forma ligeramente distinta una de otra. Por ejemplo, un método puede tomar solamente un argumento entero, mientras que una de las sobrecargas puede tomar un entero y una cadena. Elija la sobrecarga adecuada en función de lo que desee hacer. Cuando agregue código al método `StartTheQuiz()`, aparecerá más información en la ventana de Intellisense en cuanto escriba `randomizer.Next(`. Elija las teclas Flecha arriba y Flecha abajo para recorrer cíclicamente las sobrecargas, tal y como se muestra en la ilustración siguiente.
+     En la información sobre herramientas se muestra **(+ 2 sobrecargas)**, lo que significa que se puede llamar al método `Next()` de dos formas. Las sobrecargas contienen diferentes números o tipos de argumentos, por lo que funcionan de forma ligeramente distinta una de otra. Por ejemplo, un método puede tomar solamente un argumento entero, mientras que una de las sobrecargas puede tomar un entero y una cadena. Elija la sobrecarga adecuada en función de lo que desee hacer. Cuando agregue código al método `StartTheQuiz()`, aparecerá más información en la ventana de Intellisense en cuanto escriba `randomizer.Next(`. Elija las teclas Flecha arriba y Flecha abajo para recorrer cíclicamente las sobrecargas, tal y como se muestra en la ilustración siguiente.
 
-     ![Sobrecarga para el&#40; &#41; método siguiente en IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload") Sobrecarga del método Next () en IntelliSense
+     ![Sobrecarga del método Next&#40;&#41; en IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload") Overload for Next() method in IntelliSense
 
      En este caso, desea elegir la última sobrecarga, ya que puede especificar los valores mínimo y máximo.
 
@@ -80,6 +80,6 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar problemas de multiplicación y división](../ide/step-7-add-multiplication-and-division-problems.md).
+- Para ir al siguiente paso del tutorial, vea [paso 7: agregar problemas de multiplicación y división](../ide/step-7-add-multiplication-and-division-problems.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Para volver al paso anterior del tutorial, vea [paso 5: agregar controladores de eventos Enter para los controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

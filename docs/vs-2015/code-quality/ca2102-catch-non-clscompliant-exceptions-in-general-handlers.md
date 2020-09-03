@@ -15,20 +15,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521308"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Detectar las excepciones que no son CLSCompliant en los controladores generales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
 |Identificador de comprobación|CA2102|
-|Categoría|Microsoft.Security|
+|Category|Microsoft.Security|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa
@@ -39,7 +39,7 @@ ms.locfileid: "85521308"
 
 - C#: `catch {}`
 
-- C++: `catch(...) {}` o`catch(Object^) {}`
+- C++: `catch(...) {}` o `catch(Object^) {}`
 
   Una excepción no controlada no conforme a CLS se convierte en un problema de seguridad cuando se quitan los permisos previamente permitidos en el bloque catch. Dado que no se detectan excepciones no conformes a CLS, un método malintencionado que produce una excepción no conforme a CLS podría ejecutarse con permisos elevados.
 

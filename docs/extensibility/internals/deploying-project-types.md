@@ -1,5 +1,5 @@
 ---
-title: Implementación de tipos de proyecto ? Microsoft Docs
+title: Implementación de tipos de proyecto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 835e85ade4d309d0b5692aa9b857476cd6b5927a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708784"
 ---
 # <a name="deploy-project-types"></a>Implementar tipos de proyecto
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]instala un nuevo agregador de tipo de proyecto (*ProjectAggregator2.dll*) y también un paquete de Windows Installer para su redistribución (*ProjectAggregator2.msi*). Debe usar el nuevo agregador para los tipos de proyecto de código administrado. ProjectAggregator2 se endosa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de las limitaciones en el agregador de proyectos que impide que los tipos de proyecto de código administrado funcionen correctamente. Los pasos siguientes describen cómo cambiar el VSPackage para usar el nuevo agregador.
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] instala un nuevo agregador de tipo de proyecto (*ProjectAggregator2.dll*) y también un paquete de Windows Installer para la redistribución (*ProjectAggregator2.msi*). Debe usar el nuevo agregador para los tipos de proyecto de código administrado. ProjectAggregator2 funciona en torno a las limitaciones del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] agregador de proyectos que evitan que los tipos de proyecto de código administrado funcionen correctamente. En los pasos siguientes se describe cómo cambiar el VSPackage para usar el nuevo agregador.
 
 1. Quite el proyecto NativeHierarchyWrapper de la solución.
 
-2. Quite los archivos binarios NativeHierarchyWrapper de la configuración.
+2. Quite todos los archivos binarios de NativeHierarchyWrapper de la configuración.
 
 3. Agregue *ProjectAggregator2.msi* a la configuración.

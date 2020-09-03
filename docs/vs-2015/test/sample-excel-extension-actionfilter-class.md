@@ -9,16 +9,16 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4c286f25159f3ee1934a27d2242e97482f7ec424
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672179"
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>Extensión de Excel de muestra: ActionFilter (Clase)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta clase interna extiende la clase [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) y representa un filtro para las acciones de prueba en un elemento [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].
+Esta clase interna extiende la clase [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) y representa un filtro para las acciones de prueba en un [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] elemento.
 
 ## <a name="simple-properties"></a>Propiedades simples
  Estas propiedades de solo lectura permiten al programador especificar cómo el marco de pruebas de IU codificadas va a ejecutar este filtro de acción de prueba. Por ejemplo, la propiedad `UITestActionFilter.Name` proporciona el nombre del filtro de acción. Otras propiedades obtienen `UITestActionFilter.Category` del filtro de acción, `UITestActionFilter.FilterType` y el nombre `UITestActionFilter.Group` para las acciones de prueba que se filtran mediante este filtro de acción de prueba. Otras indican si `UITestActionFilter.ApplyTimeout` y también si la acción de prueba es `UITestActionFilter.Enabled`.
@@ -29,6 +29,6 @@ Esta clase interna extiende la clase [UITestActionFilter](/previous-versions/vis
 ## <a name="private-methods"></a>Métodos privados
  El método `IsLeftClick` determina si la acción proporcionada representa un clic del mouse. El método `AreActionsOnSameExcelCell` determina si dos acciones proporcionadas que se ejecutan en la misma celda en Excel.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
