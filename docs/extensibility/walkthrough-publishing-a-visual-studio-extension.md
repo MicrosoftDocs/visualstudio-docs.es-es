@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904744"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Tutorial: publicar una extensión de Visual Studio
@@ -68,7 +68,7 @@ En este artículo se usa una extensión VSPackage predeterminada, pero los pasos
 
 6. Elija el publicador que quiere usar para cargar la extensión. Puede cambiar los publicadores haciendo clic en los nombres de publicador que aparecen a la izquierda. Haga clic en **nueva extensión** y seleccione **Visual Studio**.
 
-7. En **1: cargar la extensión**, puede elegir cargar un archivo VSIX directamente en Visual Studio Marketplace o simplemente agregar un vínculo a su propio sitio Web. En este ejemplo, se carga la extensión *TestPublish. vsix* . Arrastre y coloque la extensión o use el vínculo **haga clic** para buscar el archivo. Busque la extensión en la carpeta \bin\Release del proyecto.  Haga clic en **Continue**.
+7. En **1: cargar la extensión**, puede elegir cargar un archivo VSIX directamente en Visual Studio Marketplace o simplemente agregar un vínculo a su propio sitio Web. En este ejemplo, se carga la extensión *TestPublish. vsix* . Arrastre y coloque la extensión o use el vínculo **haga clic** para buscar el archivo. Busque la extensión en la carpeta \bin\Release del proyecto.  Haga clic en **Continuar**.
 
 8. En **2: proporcione los detalles**de la extensión, algunos campos se rellenan automáticamente desde el archivo *source. Extension. vsixmanifest* de la extensión. Encuentre más detalles sobre cada uno de los siguientes:
 
@@ -150,7 +150,7 @@ Puede quitar la extensión del Visual Studio Marketplace y del equipo.
 
 2. En la esquina superior derecha, haga clic en **publicar** extensiones. Elija el publicador que usó para publicar **TestPublish**. Aparece la lista de **TestPublish** .
 
-3. Haga clic con el botón derecho en la entrada de extensión y haga clic en **quitar**. Se le pedirá que confirme si desea quitar la extensión. Haga clic en **Aceptar**.
+3. Haga clic con el botón derecho en la entrada de extensión y haga clic en **quitar**. Se le pedirá que confirme si desea quitar la extensión. Haga clic en **OK**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Para quitar la extensión del equipo
 

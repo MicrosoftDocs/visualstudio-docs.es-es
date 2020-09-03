@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254389"
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
@@ -56,9 +56,9 @@ ms.locfileid: "71254389"
 
 2. Cree una instancia del panel de tareas personalizado pasando el control de usuario al objeto <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> en su complemento de VSTO. Esta colección devuelve un nuevo objeto <xref:Microsoft.Office.Tools.CustomTaskPane> que puede usar para modificar el aspecto del panel de tareas y responder a eventos de usuario.
 
-   Para obtener más información, vea [Cómo: Agregar un panel de tareas personalizado a una](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)aplicación.
+   Para obtener más información, consulte [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-### <a name="create-the-user-interface"></a>Crear la interfaz de usuario
+### <a name="create-the-user-interface"></a>Creación de la interfaz de usuario
  Todos los paneles de tareas personalizados que se crean con las herramientas de desarrollo de Office en Visual Studio contienen un objeto <xref:System.Windows.Forms.UserControl>. Este control de usuario proporciona la interfaz de usuario de su panel de tareas personalizado. Puede crear el control de usuario en tiempo de diseño o en tiempo de ejecución. Si crea el control de usuario en tiempo de diseño, puede usar el Diseñador de Windows Forms para construir la interfaz de usuario de su panel de tareas.
 
 ### <a name="instantiate-the-custom-task-pane"></a>Crear una instancia del panel de tareas personalizado
@@ -83,17 +83,17 @@ ms.locfileid: "71254389"
 ## <a name="access-the-application-from-the-task-pane"></a>Acceder a la aplicación desde el panel de tareas
  Si desea automatizar la aplicación desde el control de usuario, puede acceder directamente al modelo de objetos usando `Globals.ThisAddIn.Application` en el código. La clase `Globals` estática proporciona acceso al objeto `ThisAddIn`. El campo `Application` de este objeto es el punto de entrada al modelo de objetos de la aplicación.
 
- Para obtener más información sobre `Application` el campo `ThisAddIn` del objeto, vea [programas de complementos de VSTO](../vsto/programming-vsto-add-ins.md). Para ver un tutorial que muestra cómo automatizar una aplicación desde un panel de tareas personalizado, [consulte Tutorial: Automática de una aplicación desde un panel](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)de tareas personalizado. Para obtener más información sobre `Globals` la clase, vea [acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Para obtener más información sobre el `Application` campo del `ThisAddIn` objeto, vea [programas de complementos de VSTO](../vsto/programming-vsto-add-ins.md). Para ver un tutorial que muestra cómo automatizar una aplicación desde un panel de tareas personalizado, consulte [Tutorial: automática de una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Para obtener más información sobre la `Globals` clase, vea [acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).
 
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Administrar la interfaz de usuario del panel de tareas
  Después de crear el panel de tareas, puede usar las propiedades y los eventos del objeto <xref:Microsoft.Office.Tools.CustomTaskPane> para controlar la interfaz de usuario del panel de tareas y responder cuando el usuario cambia el panel de tareas.
 
 ### <a name="make-the-custom-task-pane-visible"></a>Hacer visible el panel de tareas personalizado
- De forma predeterminada, el panel de tareas no está visible. Para que el panel de tareas esté visible, debe establecer <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> la propiedad en **true**.
+ De forma predeterminada, el panel de tareas no está visible. Para que el panel de tareas esté visible, debe establecer la <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> propiedad en **true**.
 
  Los usuarios pueden cerrar un panel de tareas en cualquier momento haciendo clic en el botón **cerrar** (X) situado en la esquina del panel de tareas. Sin embargo, no hay ninguna manera predeterminada para que los usuarios vuelvan a abrir el panel de tareas personalizado. Si un usuario cierra un panel de tareas personalizado, no podrá volver a ver el panel de tareas personalizado, a menos que le proporcione la manera de mostrarlo.
 
- Si crea un panel de tareas personalizado en el complemento de VSTO, debe crear también un elemento de interfaz de usuario, como un botón, en el que los usuarios puedan hacer clic para mostrar u ocultar el panel de tareas personalizado. Si crea un panel de tareas personalizado en una aplicación de Microsoft Office que admite la personalización de la cinta de opciones, puede agregar un grupo de controles a la cinta con un botón que muestre u oculte el panel de tareas personalizado. Para ver un tutorial que muestra cómo hacerlo, consulte [Tutorial: Sincronizar un panel de tareas personalizado con un](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)botón de la cinta de opciones.
+ Si crea un panel de tareas personalizado en el complemento de VSTO, debe crear también un elemento de interfaz de usuario, como un botón, en el que los usuarios puedan hacer clic para mostrar u ocultar el panel de tareas personalizado. Si crea un panel de tareas personalizado en una aplicación de Microsoft Office que admite la personalización de la cinta de opciones, puede agregar un grupo de controles a la cinta con un botón que muestre u oculte el panel de tareas personalizado. Para ver un tutorial que muestra cómo hacerlo, vea [Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
  Si crea un panel de tareas personalizado en una aplicación de Microsoft Office que no admite la personalización de la cinta de opciones, puede agregar un <xref:Microsoft.Office.Core.CommandBarButton> que muestre u oculte el panel de tareas personalizado.
 
@@ -102,7 +102,7 @@ ms.locfileid: "71254389"
 
  En la tabla siguiente se enumeran los cambios que puede realizar en un panel de tareas personalizado usando las propiedades <xref:Microsoft.Office.Tools.CustomTaskPane>.
 
-|Tarea|Propiedad.|
+|Tarea|Propiedad|
 |----------|--------------|
 |Para cambiar el tamaño del panel de tareas|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|
 |Para cambiar la ubicación del panel de tareas|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|
@@ -114,7 +114,7 @@ ms.locfileid: "71254389"
 
  En la tabla siguiente se enumeran los eventos que puede controlar para responder a los cambios que el usuario realice en el panel de tareas personalizado.
 
-|Tarea|evento|
+|Tarea|Evento|
 |----------|-----------|
 |Responder cuando el usuario cambia la ubicación del panel de tareas.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |Responder cuando el usuario oculta el panel de tareas o lo hace visible.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|
@@ -124,9 +124,9 @@ ms.locfileid: "71254389"
 
  Para limpiar los recursos que usa el panel de tareas mientras el complemento de VSTO se está ejecutando, use los métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Estos métodos quitan el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> especificado de la colección `CustomTaskPanes` y llaman al método <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> del objeto.
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia automáticamente los recursos que usa el panel de tareas personalizado cuando se descarga el complemento de VSTO. No llame a los <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> o en el `ThisAddIn_Shutdown` controlador de eventos del proyecto. Estos métodos producirán <xref:System.ObjectDisposedException>, ya que [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia los recursos que usa el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> antes de llamar a `ThisAddIn_Shutdown`. Para obtener más información `ThisAddIn_Shutdown`sobre, vea [eventos en proyectos de Office](../vsto/events-in-office-projects.md).
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia automáticamente los recursos que usa el panel de tareas personalizado cuando se descarga el complemento de VSTO. No llame a los <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> métodos o en el `ThisAddIn_Shutdown` controlador de eventos del proyecto. Estos métodos producirán <xref:System.ObjectDisposedException>, ya que [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia los recursos que usa el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> antes de llamar a `ThisAddIn_Shutdown`. Para obtener más información sobre `ThisAddIn_Shutdown` , vea [eventos en proyectos de Office](../vsto/events-in-office-projects.md).
 
-## <a name="Managing"></a>Administrar paneles de tareas personalizados en varias ventanas de aplicación
+## <a name="manage-custom-task-panes-in-multiple-application-windows"></a><a name="Managing"></a> Administrar paneles de tareas personalizados en varias ventanas de aplicación
  Cuando se crea un panel de tareas personalizado en una aplicación que usa varias ventanas para mostrar documentos y otros elementos, deberá llevar a cabo otros pasos para asegurarse de que el panel de tareas está visible cuando el usuario así lo espere.
 
  Los paneles de tareas personalizados de todas las aplicaciones están asociados a una ventana de marco de documento, que presenta al usuario una vista de un documento o elemento. El panel de tareas solo está visible cuando la ventana asociada está visible. Sin embargo, no todas las aplicaciones usan ventanas de marco de documento de la misma forma.
@@ -137,12 +137,12 @@ ms.locfileid: "71254389"
 
 - [Word, InfoPath y PowerPoint](#WordAndInfoPath)
 
-## <a name="Outlook"></a>Outlook
+## <a name="outlook"></a><a name="Outlook"></a> Outlook
  Cuando se crea un panel de tareas personalizado para Outlook, se asocia a una ventana específica del Explorador o el Inspector. Los exploradores son ventanas que muestran el contenido de una carpeta e inspectores son ventanas que muestran un elemento como un mensaje de correo electrónico o una tarea.
 
  Si desea mostrar un panel de tareas personalizado con varias ventanas del Explorador o el Inspector, deberá crear una nueva instancia del panel de tareas personalizado cuando se abre una ventana del Explorador o el Inspector. Para ello, controle el evento que se desencadena al crear una ventana del Explorador o el Inspector y, a continuación, cree el panel de tareas en el controlador de eventos. También puede administrar eventos del Explorador y del Inspector para ocultar o mostrar paneles de tareas, en función de qué ventana esté visible.
 
- Para asociar el panel de tareas a un explorador o inspector específico, <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> use el método para crear el panel de tareas y <xref:Microsoft.Office.Interop.Outlook.Explorer> pase <xref:Microsoft.Office.Interop.Outlook.Inspector> el objeto o al parámetro de la *ventana* . Para obtener más información sobre cómo crear paneles de tareas personalizados, vea [información general sobre los paneles de tareas personalizados](../vsto/custom-task-panes.md).
+ Para asociar el panel de tareas a un explorador o inspector específico, use el <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método para crear el panel de tareas y pase el <xref:Microsoft.Office.Interop.Outlook.Explorer> <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto o al parámetro de la *ventana* . Para obtener más información sobre cómo crear paneles de tareas personalizados, vea [información general sobre los paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
 - <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>
 
@@ -167,12 +167,12 @@ ms.locfileid: "71254389"
 
  Si no quita explícitamente el panel de tareas personalizado, las ventanas de Outlook podrían mostrar varias instancias del panel de tareas personalizado. En ocasiones Outlook recicla las ventanas, y las ventanas recicladas conservan referencias a los paneles de tareas personalizados que se les adjuntaron.
 
-## <a name="WordAndInfoPath"></a>Word, InfoPath y PowerPoint
+## <a name="word-infopath-and-powerpoint"></a><a name="WordAndInfoPath"></a> Word, InfoPath y PowerPoint
  Word, InfoPath y PowerPoint muestran cada documento en una ventana de marco de documento diferente. Cuando se crea un panel de tareas personalizado para estas aplicaciones, el panel se asocia únicamente a un documento específico. Si el usuario abre un documento diferente, el panel de tareas personalizado se oculta hasta que el documento anterior esté visible de nuevo.
 
  Si desea mostrar un panel de tareas personalizado con varios documentos, cree una nueva instancia del panel de tareas personalizado cuando el usuario cree un documento nuevo o abra un documento existente. Para ello, controle los eventos que se generan cuando se crea o se abre un documento y, a continuación, cree el panel de tareas en los controladores de eventos. También puede administrar eventos del documento para ocultar o mostrar paneles de tareas, en función de qué documento esté visible.
 
- Para asociar el panel de tareas a una ventana de documento específica <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> , use el método para crear el panel de tareas <xref:Microsoft.Office.Interop.Word.Window> y pase (para Word <xref:Microsoft.Office.Interop.InfoPath.WindowObject> ), (para InfoPath) o [DocumentWindow](/previous-versions/office/developer/office-2010/ff762047(v=office.14)) (para PowerPoint) al parámetro de *ventana* . .
+ Para asociar el panel de tareas a una ventana de documento específica, use el <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método para crear el panel de tareas y pase <xref:Microsoft.Office.Interop.Word.Window> (para Word),  <xref:Microsoft.Office.Interop.InfoPath.WindowObject> (para InfoPath) o [DocumentWindow](/previous-versions/office/developer/office-2010/ff762047(v=office.14)) (para PowerPoint) al parámetro de *ventana* .
 
 ### <a name="word-events"></a>Eventos de Word
  Para supervisar el estado de las ventanas de documento en Word, puede administrar los eventos siguientes:
@@ -203,20 +203,20 @@ ms.locfileid: "71254389"
 ### <a name="powerpoint-events"></a>Eventos de PowerPoint
  Para supervisar el estado de las ventanas de documento en PowerPoint, puede administrar los eventos siguientes:
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Tutorial: automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
 - [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)

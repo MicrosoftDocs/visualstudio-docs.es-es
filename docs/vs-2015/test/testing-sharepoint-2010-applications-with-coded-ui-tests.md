@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586970"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas
@@ -60,7 +60,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- Si graba acciones en una celda que no está vacía, la grabación será un poco más complicada, porque en cuanto agregue texto a una celda, se agregará un nuevo control \<div> como elemento secundario de la celda. El nuevo control \<div> contiene el texto que acaba de especificar. La grabadora necesita grabar acciones en el nuevo control \<div>, pero no puede porque el nuevo control \<div> no existirá hasta que se introduzca la prueba. Tendrá que realizar los siguientes cambios en el código manualmente para acabar con este problema.
+ Si graba acciones en una celda que no está vacía, la grabación será un poco más complicada, ya que en el momento en que se agrega texto a una celda, \<div> se agrega un nuevo control como elemento secundario de la celda. El nuevo \<div> control contiene el texto que acaba de escribir. La grabadora necesita grabar acciones en el nuevo \<div> control; sin embargo, no puede hacerlo porque el nuevo \<div> control no existe hasta que se especifica la prueba. Tendrá que realizar los siguientes cambios en el código manualmente para acabar con este problema.
 
 1. Vaya a la inicialización de la celda y establezca `RowIndex` y `ColumnIndex` como propiedades principales:
 
@@ -137,7 +137,7 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Índice de contenido para la prueba de IU codificada](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Guía
+### <a name="guidance"></a>Instrucciones
  [Pruebas para la entrega continua con Visual Studio 2012 – capítulo 5 automatización de las pruebas del sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>Foro

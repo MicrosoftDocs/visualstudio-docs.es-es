@@ -9,10 +9,10 @@ caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586908"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Tutorial: Crear, modificar y mantener una prueba de IU codificada
@@ -49,11 +49,11 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 9. Bajo la sección **Todos los controles de WPF**, arrastre un control **Botón**, **Casilla** y **Barra de progreso** hacia MainWindow en la superficie de diseño.
 
-10. Seleccione el control de botón. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a button1. A continuación, cambie el valor de la propiedad **Contenido** de Botón a Inicio.
+10. Seleccione el control de botón. En el ventana Propiedades, cambie el valor de la propiedad **nombre** de \<No Name> a Button1. A continuación, cambie el valor de la propiedad **Contenido** de Botón a Inicio.
 
-11. Seleccione el control ProgressBar. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a progressBar1. A continuación, cambie el valor de la propiedad **Máxima** de **100** a **10000**.
+11. Seleccione el control ProgressBar. En el ventana Propiedades, cambie el valor de la propiedad **nombre** de \<No Name> a progressBar1. A continuación, cambie el valor de la propiedad **Máxima** de **100** a **10000**.
 
-12. Seleccione el control Checkbox. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.
+12. Seleccione el control Checkbox. En el ventana Propiedades, cambie el valor de la propiedad **nombre** de \<No Name> a checkBox1 y desactive la propiedad **IsEnabled** .
 
      ![Aplicación de WPF sencilla](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
@@ -118,14 +118,14 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 ### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Crear y ejecutar una prueba del IU codificada para SimpleWPFApp
 
-1. Busque la aplicación SimpleWPFApp que creó anteriormente. De forma predeterminada, la aplicación se encontrará en C:\Users\\<nombreDeUsuario\>\Documents\Visual Studio \<versión>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1. Busque la aplicación SimpleWPFApp que creó anteriormente. De forma predeterminada, la aplicación se encontrará en C:\Users \\<username \> \Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
 
 2. Cree un acceso directo en el escritorio a la aplicación SimpleWPFApp. Haga clic con el botón derecho en SimpleWPFApp.exe y elija **Copiar**. En el escritorio, haga clic con el botón derecho y elija **Pegar acceso directo**.
 
     > [!TIP]
     > Un acceso directo a la aplicación facilita el poder agregar o modificar pruebas de IU codificadas para la aplicación porque permite iniciar la aplicación rápidamente.
 
-3. En el Explorador de soluciones, haga clic con el botón derecho en la solución, elija **Agregar** y, a continuación, seleccione **Nuevo proyecto**.
+3. En Explorador de soluciones, haga clic con el botón derecho en la solución, elija **Agregar** y, a continuación, seleccione **nuevo proyecto**.
 
      Aparece el cuadro de diálogo **Agregar nuevo proyecto** .
 
@@ -182,7 +182,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 1. En el menú **prueba** , elija **ventanas** y, a continuación, elija **Explorador de pruebas**.
 
-2. En el menú **Compilar** , elija **Compilar solución**.
+2. En el menú **compilar** , elija **compilar solución**.
 
 3. En el archivo CodedUITest1.cs, busque el método **CodedUITestMethod**, haga clic con el botón derecho y seleccione **Ejecutar pruebas** o ejecute la prueba desde el Explorador de pruebas.
 

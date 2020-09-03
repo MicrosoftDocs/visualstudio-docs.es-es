@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904555"
 ---
 # <a name="localize-menu-commands"></a>Localizar comandos de menú
@@ -147,7 +147,7 @@ Debe modificar el archivo *AssemblyInfo.CS* y el archivo de proyecto para incorp
     </EmbeddedResource>
     ```
 
-8. Para cada idioma localizado, copie el `EmbeddedResource` elemento para `VsPackage.en-US` y establezca el atributo **include** y el elemento **LogicalName** de la copia en la configuración regional de destino.
+8. Para cada idioma localizado, copie el  `EmbeddedResource` elemento para `VsPackage.en-US` y establezca el atributo **include** y el elemento **LogicalName** de la copia en la configuración regional de destino.
 
 9. En cada elemento localizado `VSCTCompile` , agregue un `ResourceName` elemento al que apunte `Menus.ctmenu` , tal como se muestra en el ejemplo siguiente:
 

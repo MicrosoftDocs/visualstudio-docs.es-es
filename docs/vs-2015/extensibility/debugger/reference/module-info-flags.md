@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14c9f36c82445f5279615591d38b110163a0829d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181134"
 ---
-# <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
+# <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica el estado de los símbolos para un módulo.  
+Especifica el estado de los símbolos de un módulo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,18 +41,18 @@ public enum enum_MODULE_INFO_FLAGS {
   
 ## <a name="members"></a>Miembros  
  MIF_SYMBOLS_LOADED  
- Al menos un conjunto de símbolos se cargó el módulo (si no se cargaron sin símbolos).  
+ El módulo cargó al menos un conjunto de símbolos (de lo contrario, no se cargó ningún símbolo).  
   
 ## <a name="remarks"></a>Comentarios  
- Este valor es devuelto por la [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) método.  
+ Este valor lo devuelve el método [getsymbolsearchinfo (](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

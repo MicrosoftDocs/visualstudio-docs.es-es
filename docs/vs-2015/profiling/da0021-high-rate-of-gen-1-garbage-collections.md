@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d901d09350af063a11e3d156f36a100df85e7718
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586922"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Alta frecuencia de recolección de elementos no utilizados de gen 1
@@ -31,7 +31,7 @@ Identificador de regla | DA0021 |
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Causa  
+## <a name="cause"></a>Motivo  
  Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que se recuperó una proporción considerable de la memoria para los objetos de .NET Framework en la generación 1 de recolección de elementos no utilizados en comparación con la generación 0 de colección de datos.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
