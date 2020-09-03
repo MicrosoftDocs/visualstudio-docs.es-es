@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3e7cc942550c979ca4b3f3138da252321b4c983
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619682"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
@@ -44,7 +44,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 ## <a name="switches-and-arguments"></a>Modificadores y argumentos
  En la tabla siguiente se definen los modificadores y los argumentos que puede utilizar para la herramienta de la línea de comandos de Help Content Manager:
 
-|Modificador|¿Obligatorio?|Argumentos|
+|Conmutador|¿Necesario?|Argumentos|
 |------------|---------------|---------------|
 |/operation|Sí|-   **Instalar**: agrega los libros del origen de instalación especificado al almacén de contenido local.<br />     Este modificador requiere el argumento /booklist, el argumento /sourceURI o ambos. Si no se especifica el argumento /sourceURI, el URI de Visual Studio predeterminado se utiliza como origen de la instalación. Si no se especifica el argumento /booklist, se instalarán todos los libros de /sourceUri.<br />-   **Desinstalar**: quita los libros que especifique del almacén de contenido local.<br />     Este modificador requiere el argumento /booklist o el argumento /sourceURI.  Si se especifica el argumento /sourceURI, se quitan todos los libros y se omite el argumento /booklist.<br />-   **Mover**: mueve el almacén local a la ruta de acceso especificada. La ruta de acceso predeterminada del almacén local se establece mediante la configuración de Ayuda en %PROGRAMDATA%<br />     Este modificador requiere los argumentos /locationPath y /catalogName. Los mensajes de error se graban en el registro de eventos si especifica una ruta de acceso no válida o si la unidad no contiene suficiente espacio disponible para albergar el contenido.<br />-   **Actualizar**: actualiza los temas que han cambiado desde que se instalaron o actualizaron recientemente.<br />     Este modificador requiere el argumento /sourceURI.|
 |/catalogName|Sí|Especifica el nombre del catálogo de contenido.|
@@ -88,5 +88,5 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Guía del administrador del visor de ayuda](../ide/help-viewer-administrator-guide.md) , [invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md)

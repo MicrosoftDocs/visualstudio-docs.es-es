@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77558175"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (desarrollo de Office en Visual Studio)
@@ -39,14 +39,14 @@ ms.locfileid: "77558175"
 
 - Una ruta de acceso relativa o absoluta en formato estándar de Windows, como *C:\Deploy\MyApplication* o *\MyApplication*.
 
-- Una ruta de acceso UNC (Convención de nomenclatura universal), como *\\\ServerName\MyApplication\\* .
+- Una ruta de acceso UNC (Convención de nomenclatura universal), como * \\ \ServerName\MyApplication \\ *.
 
-- Una dirección URL de un sitio web, como `http://www.contoso.com/MyApplication`.
+- Una dirección URL de un sitio web, como `http://www.contoso.com/MyApplication` .
 
   De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado o el directorio Publish \ si no tiene IIS instalado.
 
 > [!NOTE]
-> Hay más consideraciones si el equipo de destino está ejecutando Windows Vista. Debe ser administrador en el equipo de Windows Vista para utilizar la opción de publicación local. Además, la ubicación predeterminada siempre es el directorio de *\\de publicación* , independientemente de si tiene IIS instalado.
+> Hay más consideraciones si el equipo de destino está ejecutando Windows Vista. Debe ser administrador en el equipo de Windows Vista para utilizar la opción de publicación local. Además, la ubicación predeterminada siempre es el directorio *de \\ publicación* , independientemente de si tiene IIS instalado.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>¿Cuál es la ruta de instalación predeterminada en los equipos de los usuarios finales?
  La ruta de instalación es opcional. Puede establecer la ruta de instalación más adelante si lo prefiere. Para obtener más información, consulte [Cómo: cambiar la ruta de instalación de una solución de Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
@@ -63,5 +63,5 @@ ms.locfileid: "77558175"
 
 ## <a name="see-also"></a>Consulte también
 - [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Página publicar, desarrollo de &#40;Office en el diseñador de proyectos en Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Página publicar, diseñador de proyectos &#40;desarrollo de Office en Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)

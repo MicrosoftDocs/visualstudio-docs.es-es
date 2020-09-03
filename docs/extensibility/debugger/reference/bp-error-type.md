@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE de la casa de la Microsoft Docs
+title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738071"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
@@ -60,7 +60,7 @@ public enum enum_BP_ERROR_TYPE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `BPET_NONE`\
 No especifica ningún error de punto de interrupción.
 
@@ -71,13 +71,13 @@ Especifica un error de punto de interrupción de estilo de advertencia.
 Especifica un error de punto de interrupción de estilo de error.
 
 `BPET_SEV_HIGH`\
-Especifica un error de punto de interrupción de alta gravedad.
+Especifica un error de punto de interrupción de gravedad alta.
 
 `BPET_SEV_GENERAL`\
 Especifica un error de punto de interrupción de gravedad media.
 
 `BPET_SEV_LOW`\
-Especifica un error de punto de interrupción de baja gravedad.
+Especifica un error de punto de interrupción de gravedad baja.
 
 `BPET_TYPE_MASK`\
 Especifica un error de punto de interrupción de estilo de máscara.
@@ -86,7 +86,7 @@ Especifica un error de punto de interrupción de estilo de máscara.
 Especifica un error de punto de interrupción de estilo de máscara de gravedad.
 
 `BPET_GENERAL_WARNING`\
-Especifica un error de punto de interrupción de estilo de advertencia general.
+Especifica un error de punto de interrupción de estilo general.
 
 `BPET_GENERAL_ERROR`\
 Especifica un error de punto de interrupción de estilo de error general.
@@ -95,14 +95,14 @@ Especifica un error de punto de interrupción de estilo de error general.
 Especifica todos los tipos de error de punto de interrupción.
 
 ## <a name="remarks"></a>Observaciones
-Estos valores se pueden combinar `OR` con un `dwType` bit a bit y se utilizan para el miembro de la estructura [BP_ERROR_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Se pasa como parámetro al método [EnumErrorBreakpoints.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+Estos valores se pueden combinar con una operación bit a bit `OR` y utilizarse para el `dwType` miembro de la estructura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Se pasa como un parámetro al método [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
-Un tipo de error de punto de interrupción se compone de un tipo y una gravedad. Esto significa que un tipo de error de punto `BPET_TYPE_ERROR`de interrupción nunca es `BPET_SEV_GENERAL`solo un tipo (por ejemplo, ,) o una gravedad (por ejemplo, ) por sí mismo. `BPET_GENERAL_WARNING`y `BPET_GENERAL_ERROR` proporcionar valores predefinidos para los puntos de interrupción de advertencia y error generales.
+Un tipo de error de punto de interrupción se compone de un tipo y una gravedad. Esto significa que un tipo de error de punto de interrupción nunca es simplemente un tipo (por ejemplo, `BPET_TYPE_ERROR` ,) o una gravedad (por ejemplo, `BPET_SEV_GENERAL` ) por sí solo. `BPET_GENERAL_WARNING` y `BPET_GENERAL_ERROR` proporcionan valores predefinidos para los puntos de interrupción generales de advertencia y error.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

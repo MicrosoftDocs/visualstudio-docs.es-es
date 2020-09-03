@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579938"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
@@ -111,7 +111,7 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , puede
 
 ## <a name="create-a-what-is-your-name-application"></a>Crear una aplicación "¿Cómo te llamas?"
 
-Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra junto con la fecha y hora. Esta es la manera de hacerlo:
+Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra junto con la fecha y hora. A continuación se muestra cómo hacerlo:
 
  ::: moniker range="vs-2017"
 
@@ -266,10 +266,10 @@ Una aplicación de consola toma la entrada y muestra la salida en una ventana de
 Enhorabuena por completar este tutorial. Para más información, continúe con el tutorial siguiente.
 
 > [!div class="nextstepaction"]
-> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-* [Tutoriales del lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Tutoriales sobre el lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
+* [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [Archivos de código de IntelliSense para Visual Basic](../../ide/visual-basic-specific-intellisense.md)

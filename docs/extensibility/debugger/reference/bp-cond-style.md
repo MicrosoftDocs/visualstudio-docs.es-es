@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE Microsoft Docs
+title: BP_COND_STYLE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738116"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
-Especifica el estilo de condición de punto de interrupción para los puntos de interrupción pendientes y enlazados.
+Especifica el estilo de condición del punto de interrupción para los puntos de interrupción pendientes y enlazados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,23 +44,23 @@ public enum enum_BP_COND_STYLE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `BP_COND_NONE`\
-Activa el punto de interrupción cuando se alcanza la posición del punto de interrupción. No se ha especificado ninguna condición de punto de interrupción.
+Activa el punto de interrupción cuando se alcanza la posición del punto de interrupción. No se especificó ninguna condición de punto de interrupción.
 
 `BP_COND_WHEN_TRUE`\
-Activa el punto de interrupción solo cuando la expresión `true`condicional asociada al punto de interrupción se evalúa como .
+Activa el punto de interrupción solo cuando la expresión condicional asociada al punto de interrupción se evalúa como `true` .
 
 `BP_COND_WHEN_CHANGED`\
-Activa el punto de interrupción solo cuando el valor de la expresión condicional asociada al punto de interrupción ha cambiado con respecto a su evaluación anterior.
+Activa el punto de interrupción solo cuando el valor de la expresión condicional asociada al punto de interrupción ha cambiado respecto a su evaluación anterior.
 
 ## <a name="remarks"></a>Observaciones
-Se utiliza `styleCondition` para el miembro de la estructura [BP_CONDITION.](../../../extensibility/debugger/reference/bp-condition.md)
+Se utiliza para el `styleCondition` miembro de la estructura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

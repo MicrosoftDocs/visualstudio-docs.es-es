@@ -11,22 +11,22 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8a9eeca4dc455c4f16e3551541454483138a993
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203879"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Adición de directorios al cuadro de diálogo Nuevo proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Al crear nuevos tipos de proyecto, también puede registrar un nuevo directorio en el **nuevo proyecto** cuadro de diálogo para mostrar para su uso como plantillas. El ejemplo de código siguiente explica cómo registrar un nuevo directorio, también conocido como un nodo. En el ejemplo, se registran plantillas expuestas por VSPackage CLSID_Package. Como resultado, el lado izquierdo de la **nuevo proyecto** cuadro de diálogo ofrece el nodo agregado, con un nombre determinado por el recurso Folder_Label_ResID. Este recurso se carga desde el archivo DLL satélite de VSPackage.  
+Al crear nuevos tipos de proyecto, también puede registrar un nuevo directorio en el cuadro de diálogo **nuevo proyecto** para mostrarlos para su uso como plantillas. En el ejemplo de código siguiente se explica cómo registrar un nuevo directorio, también conocido como nodo. En el ejemplo, se registran las plantillas expuestas por VSPackage CLSID_Package. Como resultado, el lado izquierdo del cuadro de diálogo **nuevo proyecto** ofrece el nodo agregado, con un nombre determinado por el recurso de Folder_Label_ResID. Este recurso se carga desde el archivo DLL satélite de VSPackage.  
   
- El **carpeta** valor representa un GUID de una carpeta en la que se muestra el nodo Folder_Label_ResID. En el ejemplo, el GUID que representa el **otros proyectos** carpeta en el **tipos de proyecto** panel de la **nuevo proyecto** cuadro de diálogo. Si el **otros proyectos** valor está ausente, la etiqueta se coloca en el nivel superior.  
+ El valor de **carpeta** representa un GUID de una carpeta en la que se muestra el nodo Folder_Label_ResID. En el ejemplo, el GUID representa la carpeta **otros proyectos** en el panel **tipos de proyecto** del cuadro de diálogo **nuevo proyecto** . Si el valor de **otros proyectos** no está presente, la etiqueta se coloca en el nivel superior.  
   
- El valor TemplatesDir especifica la ruta de acceso completa del directorio que contiene las plantillas de proyecto. Estos archivos pueden ser archivos .vsz o archivos de plantilla típico para clonarse.  
+ El valor TemplatesDir especifica la ruta de acceso completa del directorio que contiene las plantillas de proyecto. Estos archivos pueden ser archivos. vsz o archivos de plantilla típicos que se van a clonar.  
   
- Si especifica TemplatesLocalizedSubDir, debe ser el identificador de recurso de cadena que designa el subdirectorio de TemplatesDir que contiene las plantillas localizadas. Dado que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carga el recurso de cadena desde un archivo DLL satélite si tiene uno, cada archivo DLL satélite puede contener un nombre de subdirectorio diferentes. El valor de SortPriority especifica una prioridad de ordenación.  
+ Si especifica TemplatesLocalizedSubDir, debe ser el identificador de recurso de una cadena que nombra el subdirectorio de TemplatesDir que contiene las plantillas localizadas. Dado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que carga el recurso de cadena desde un archivo dll satélite, si tiene uno, cada archivo dll satélite puede contener un nombre de subdirectorio diferente. El valor SortPriority especifica una prioridad de ordenación.  
   
 ```  
 NoRemove NewProjectTemplates  
@@ -47,7 +47,7 @@ NoRemove NewProjectTemplates
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Registro de plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Agregar elementos a la Agregar nuevo elemento de los cuadros de diálogo](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Adición directorios al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+## <a name="see-also"></a>Consulte también  
+ [Registrar plantillas de proyecto y de elemento](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Agregar elementos a los cuadros de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Adición de directorios al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

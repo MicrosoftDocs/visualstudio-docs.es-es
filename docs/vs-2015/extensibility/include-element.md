@@ -1,5 +1,5 @@
 ---
-title: Elemento de inclusión | Microsoft Docs
+title: Elemento include | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1bdc56c9d0b488bdbe24a8534ab516cc0fc831df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203942"
 ---
 # <a name="include-element"></a>Include (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El elemento Include especifica un archivo que se puede encontrar el proporcionado incluir ruta de acceso para la inserción en el archivo actual.  Todos los símbolos y tipos definidos formarán parte del resultado compilado.  
+El elemento include especifica un archivo que se puede encontrar en la ruta de inclusión proporcionada para la inserción en el archivo actual.  Todos los símbolos y tipos definidos se convertirán en parte del resultado compilado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,22 +36,22 @@ El elemento Include especifica un archivo que se puede encontrar el proporcionad
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|  
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href = "stdidcmd. h"|  
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |Ninguno.|Ninguno.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos, es decir, los elementos de menú, menús, barras de herramientas y cuadros combinados, que proporciona un paquete VSPackage en el IDE.|  
+|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos (es decir, elementos de menú, menús, barras de herramientas y cuadros combinados) que un VSPackage proporciona al IDE.|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -59,5 +59,5 @@ El elemento Include especifica un archivo que se puede encontrar el proporcionad
 <Include href="PackagePlacements.vsct"/>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

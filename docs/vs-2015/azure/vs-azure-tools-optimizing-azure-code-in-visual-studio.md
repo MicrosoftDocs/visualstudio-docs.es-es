@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: e34c51db062528c83e08e2cb463a1cc44ab476f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915757"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimización del código de Azure
@@ -25,7 +25,7 @@ Al programar aplicaciones que usan Microsoft Azure, debe seguir algunas práctic
 La herramienta de análisis de código de Azure usa la siguientes reglas para marcar automáticamente su código de Azure cuando encuentra problemas conocidos que influyen en el rendimiento. Los problemas detectados aparecen como advertencias o errores del compilador. Con frecuencia, las correcciones de código o sugerencias para resolver la advertencia o el error se proporcionan con un icono de bombilla.
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>Evite usar el modo de estado de sesión predeterminado (en proceso)
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP0000
 
 ### <a name="description"></a>Descripción
@@ -40,7 +40,7 @@ El estado de sesión ASP.NET es compatible con distintas opciones de almacenamie
 Una solución recomendada es almacenar el estado de sesión en un servicio de caché administrado. Aprenda a usar el [Proveedor de estado de sesión de Azure para Redis](https://blogs.msdn.com/b/webdev/archive/2014/05/12/announcing-asp-net-session-state-provider-for-redis-preview-release.aspx) para almacenar el estado de sesión. También puede almacenar el estado de sesión en otros lugares para garantizar que su aplicación sea escalable en la nube. Para obtener más información acerca de soluciones alternativas, lea [Modos de estado de sesión](https://msdn.microsoft.com/library/ms178586).
 
 ## <a name="run-method-should-not-be-async"></a>El método de ejecución no debe ser asincrónico
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP1000
 
 ### <a name="description"></a>Descripción
@@ -85,7 +85,7 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>Use la autenticación con firma de acceso compartido de Service Bus
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP2000
 
 ### <a name="description"></a>Descripción
@@ -108,7 +108,7 @@ Para más información, consulte los temas siguientes.
 * [Usar la autenticación con firma de acceso compartido con Service Bus](/azure/service-bus-messaging/service-bus-sas)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Considere usar el método OnMessage para evitar un "bucle de recepción"
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP2002
 
 ### <a name="description"></a>Descripción
@@ -210,7 +210,7 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Considere usar los métodos asincrónicos de Service Bus
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP2003
 
 ### <a name="description"></a>Descripción
@@ -225,7 +225,7 @@ Consulte [Clase QueueClient (Microsoft.ServiceBus.Messaging)](https://msdn.micro
 Para mejorar el rendimiento de la infraestructura de mensajería de Azure, consulte el modelo de diseño [Manual de mensajería asincrónica](https://msdn.microsoft.com/library/dn589781.aspx).
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Considere crear particiones de temas y colas de Service Bus
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP2004
 
 ### <a name="description"></a>Descripción
@@ -248,7 +248,7 @@ ns.CreateTopic(td);
 Para más información, consulte [Partitioned Service Bus Queues and Topics](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/) (Temas y colas de Service Bus con particiones) del blog de Microsoft Azure y consulte el ejemplo de [Microsoft Azure Service Bus Partitioned Queue](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f) (Cola con particiones de Microsoft Azure Service Bus).
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>No establezca SharedAccessStartTime
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP3001
 
 ### <a name="description"></a>Descripción
@@ -278,7 +278,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ```
 
 ## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>El tiempo de expiración de la directiva de acceso compartido debe ser superior a cinco minutos.
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP3002
 
 ### <a name="description"></a>Descripción
@@ -328,21 +328,21 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Para obtener más información, consulte [Crear y usar una firma de acceso compartido](https://msdn.microsoft.com/library/azure/jj721951.aspx).
 
 ## <a name="use-cloudconfigurationmanager"></a>Use CloudConfigurationManager
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP4000
 
 ### <a name="description"></a>Descripción
 El uso de la clase [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) para proyectos como Sitio web de Azure y Azure Mobile Services no presentará problemas de tiempo de ejecución. Sin embargo, se recomienda usar Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) como una manera unificada de administración de configuraciones para todas las aplicaciones de nube de Azure.
 
 ### <a name="reason"></a>Motivo
-CloudConfigurationManager lee el archivo de configuración apropiado para el entorno de aplicación.
+CloudConfigurationManager lee el archivo de configuración adecuado para el entorno de aplicación.
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
 ### <a name="solution"></a>Solución
 Refactorice el código para que use la [Clase CloudConfigurationManager+](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). La herramienta de análisis de código de Azure proporciona una corrección para este problema.
 
-El siguiente fragmento de código muestra la corrección de código para este problema. Cambie
+El siguiente fragmento de código muestra la corrección de código para este problema. Replace
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
@@ -363,7 +363,7 @@ Este es un ejemplo de cómo almacenar la configuración en un archivo App.config
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Evite usar cadenas de conexión codificadas de forma rígida
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP4001
 
 ### <a name="description"></a>Descripción
@@ -382,7 +382,7 @@ Almacene las cadenas de conexión en los archivos de configuración o entornos d
 Para obtener información sobre el uso de archivos de configuración como web.config o app.config, consulte [Directrices de configuración web de ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Para obtener información sobre cómo funcionan las variables de entorno de Azure, consulte [Sitios web Microsoft Azure: cómo funcionan las cadenas de aplicaciones y las cadenas de conexión](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Para obtener información sobre cómo almacenar la cadena de conexión en el control de código fuente, consulte [Evitar colocar información confidencial, como cadenas de conexión, en archivos que se almacenan en el repositorio de código fuente.](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)
 
 ## <a name="use-diagnostics-configuration-file"></a>Uso del archivo de configuración de diagnóstico
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP5000
 
 ### <a name="description"></a>Descripción
@@ -398,14 +398,14 @@ Use el diseñador de configuración de diagnósticos para mover la configuració
 
 1. En el menú contextual del rol que quiere configurar, elija Propiedades, y luego elija la pestaña Configuración.
 2. En la sección **Diagnósticos**, asegúrese de que la casilla **Habilitar diagnósticos** está seleccionada.
-3. Elija el botón **Configurar** .
+3. Elija el botón **Configurar**.
 
-   ![Acceso a la opción Habilitar diagnósticos](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
+   ![Acceso a la opción de habilitar diagnósticos](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
    Consulte [Configuración de los diagnósticos para Azure Cloud Services y Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) para obtener más información.
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>Evite declarar objetos DbContext como estáticos
-### <a name="id"></a>ID.
+### <a name="id"></a>Id.
 AP6000
 
 ### <a name="description"></a>Descripción

@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 3d56cfce70b0723b636b9b8ef7c6f3917015bf66
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915552"
 ---
-# <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script de Windows PowerShell)
+# <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publicación de WebApplicationWebSite (script de Windows PowerShell)
 ## <a name="syntax"></a>Sintaxis
 Publica un proyecto web en un sitio web de Azure. El script crea los recursos necesarios en su suscripción de Azure si no existen.
 
@@ -32,15 +32,15 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Configuración de
+## <a name="configuration"></a>Configuración
 La ruta de acceso al archivo de configuración JSON que describe los detalles de la implementación.
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |true |
-| Posición |llamada |
-| Valor predeterminado |ninguna |
+| Alias |None |
+| ¿Necesario? |true |
+| Posición |con nombre |
+| Valor predeterminado |None |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
@@ -49,10 +49,10 @@ Nombre de la suscripción de Azure en la que desea crear el sitio web.
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |false |
-| Posición |llamada |
-| Valor predeterminado |ninguna |
+| Alias |None |
+| ¿Necesario? |false |
+| Posición |con nombre |
+| Valor predeterminado |None |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
@@ -61,10 +61,10 @@ La ruta de acceso al paquete de implementación web para publicar en el sitio we
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |false |
-| Posición |llamada |
-| Valor predeterminado |ninguna |
+| Alias |None |
+| ¿Necesario? |false |
+| Posición |con nombre |
+| Valor predeterminado |None |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
@@ -73,10 +73,10 @@ El nombre de usuario y la contraseña de la base de datos SQL en Azure.
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |false |
-| Posición |llamada |
-| Valor predeterminado |ninguna |
+| Alias |None |
+| ¿Necesario? |false |
+| Posición |con nombre |
+| Valor predeterminado |None |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
@@ -85,14 +85,14 @@ Si es true, imprimir mensajes del script a la secuencia de salida.
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
-| Alias |ninguna |
-| ¿Obligatorio? |false |
-| Posición |llamada |
+| Alias |None |
+| ¿Necesario? |false |
+| Posición |con nombre |
 | Valor predeterminado |false |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Observaciones
 Para obtener una explicación completa de cómo usar el script para crear entornos de desarrollo y pruebas, consulte [Usar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 El archivo de configuración JSON especifica los detalles de lo que va a implementarse. Incluye la información que especificó cuando creó el proyecto, como el nombre y el nombre de usuario para el sitio web. También incluye la base de datos que se va a aprovisionar, si la hubiera. El código siguiente muestra un archivo de configuración de JSON de ejemplo:
@@ -121,7 +121,7 @@ El archivo de configuración JSON especifica los detalles de lo que va a impleme
 }
 ```
 
-Puede editar el archivo de configuración de JSON para cambiar lo que se implementa. Una sección webSite es obligatoria, pero la sección database es opcional.
+Puede editar el archivo de configuración de JSON para cambiar lo que se implementa. Una sección webSite es obligatoria pero la sección database es opcional.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para obtener más información, consulte [Publish-WebApplicationVM (script de Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)

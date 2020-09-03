@@ -1,5 +1,5 @@
 ---
-title: Icon (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: Icon (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204001"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que actúa como el icono, que aparece en cualquiera de los **nuevo proyecto** o el **Agregar nuevo elemento** cuadro de diálogo, para la plantilla.  
+Especifica la ruta de acceso y el nombre del archivo de imagen que sirve como icono, que aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** de la plantilla.  
   
  \<VSTemplate>  
- \<TemplateData >  
- \<Icono >  
+ \<TemplateData>  
+ \<Icon>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,30 +45,30 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que ac
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|`Package`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Un identificador GUID que especifica el id. paquete de Visual Studio.|  
-|`ID`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Especifica el identificador de recurso de Visual Studio.|  
+|`Package`|Atributo opcional, para escenarios de usuario avanzados.<br /><br /> Un identificador GUID que especifica el id. paquete de Visual Studio.|  
+|`ID`|Atributo opcional, para escenarios de usuario avanzados.<br /><br /> Especifica el identificador de recurso de Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto a menos que se usen los atributos `Package` y `ID`.  
   
- El texto proporciona la ruta de acceso y el nombre del icono de la plantilla que va a aparecer en el **nuevo proyecto** cuadro de diálogo.  
+ El texto proporciona la ruta de acceso y el nombre de archivo del icono de la plantilla que aparecerá en el cuadro de diálogo **nuevo proyecto** .  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  `Icon` es un elemento secundario obligatorio de `TemplateData`.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación.  
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -94,6 +94,6 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que ac
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

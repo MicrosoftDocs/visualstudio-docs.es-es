@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916495"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: crear una aplicación de datos de n niveles
@@ -50,7 +50,7 @@ Durante este tutorial, realizará los pasos siguientes:
 
 ![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: Crear una aplicación de datos de n niveles](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
 1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **desarrollo de escritorio de .net** o como un componente individual.
@@ -68,16 +68,16 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
        Tras un breve período de tiempo, la consulta termina de ejecutarse y se crea la base de datos Northwind.
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Crear la solución de n niveles y la biblioteca de clases para contener el conjunto de DataSet (DataEntityTier)
-El primer paso de este tutorial consiste en crear una solución y dos proyectos de biblioteca de clases. La primera biblioteca de clases contiene el conjunto de datos (la clase `DataSet` con tipo generada y DataTables que contienen los datos de la aplicación). Este proyecto se utiliza como la capa de entidad de datos de la aplicación, y se ubica normalmente en el nivel intermedio. El conjunto de DataSet crea el conjunto de código inicial y lo separa automáticamente en las dos bibliotecas de clases.
+El primer paso de este tutorial consiste en crear una solución y dos proyectos de biblioteca de clases. La primera biblioteca de clases contiene el conjunto de datos (la clase con tipo generada `DataSet` y DataTables que contienen los datos de la aplicación). Este proyecto se utiliza como la capa de entidad de datos de la aplicación, y se ubica normalmente en el nivel intermedio. El conjunto de DataSet crea el conjunto de código inicial y lo separa automáticamente en las dos bibliotecas de clases.
 
 > [!NOTE]
 > Asegúrese de asignar el nombre correcto al proyecto y a la solución antes de hacer clic en **Aceptar**. De este modo, será más fácil poder completar este tutorial.
 
-### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Para crear la solución con n niveles y la biblioteca de clases DataEntityTier
+### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Para crear la solución con n niveles y la biblioteca de clases DataEntityTier 
 
 1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
+2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **biblioteca de clases** .
 
@@ -101,12 +101,12 @@ El paso siguiente después de crear el proyecto DataEntityTier consiste en crear
      Se crea el proyecto DataAccessTier y se agrega a la solución NTierWalkthrough.
 
 ## <a name="create-the-dataset"></a>Crear el conjunto de
-El paso siguiente consiste en crear un conjunto de datos con tipo. Los conjuntos de valores de tipos se crean con la clase DataSet (incluidas las clases `DataTables`) y las clases `TableAdapter` en un solo proyecto. (Todas las clases se generan en un solo archivo). Al separar el conjunto de objetos y los TableAdapters en proyectos diferentes, es la clase de conjunto de DataSet que se mueve al otro proyecto, y se dejan las clases de `TableAdapter` en el proyecto original. Por lo tanto, cree el conjunto de objetos en el proyecto que contendrá en última instancia los TableAdapters (el proyecto DataAccessTier). Puede crear el conjunto de datos mediante el **Asistente para la configuración de orígenes de datos**.
+El paso siguiente consiste en crear un conjunto de datos con tipo. Los conjuntos de valores de tipos se crean con la clase DataSet (incluidas `DataTables` las clases) y las `TableAdapter` clases en un solo proyecto. (Todas las clases se generan en un solo archivo). Al separar el conjunto de objetos y los TableAdapters en proyectos diferentes, es la clase de conjunto de DataSet que se mueve al otro proyecto, lo que sale `TableAdapter` de las clases del proyecto original. Por lo tanto, cree el conjunto de objetos en el proyecto que contendrá en última instancia los TableAdapters (el proyecto DataAccessTier). Puede crear el conjunto de datos mediante el **Asistente para la configuración de orígenes de datos**.
 
 > [!NOTE]
 > Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases](../data-tools/installing-database-systems-tools-and-samples.md)de datos de ejemplo.
 
-### <a name="to-create-the-dataset"></a>Para crear el conjunto de datos
+### <a name="to-create-the-dataset"></a>Crear el conjunto de datos
 
 1. Seleccione **DataAccessTier** en **Explorador de soluciones**.
 
@@ -122,7 +122,7 @@ El paso siguiente consiste en crear un conjunto de datos con tipo. Los conjuntos
 
      Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-     O bien,
+     o bien
 
      Seleccione **nueva conexión** para abrir el cuadro de diálogo **Agregar conexión** .
 
@@ -154,7 +154,7 @@ Después de crear el conjunto de datos, separe la clase de conjunto de datos gen
 
 5. En el menú **Compilar**, seleccione **Compilar solución**.
 
-   El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que contenía originalmente todo el conjunto de objetos (`DataAccessTier`) contiene ahora solo los TableAdapters. El proyecto designado en la propiedad **DataSet Project** (`DataEntityTier`) contiene el DataSet con tipo: *NorthwindDataSet. DataSet. Designer. vb* (o *NorthwindDataSet.DataSet.Designer.CS*).
+   El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que contenía originalmente todo el conjunto de `DataAccessTier` objetos () contiene ahora solo los TableAdapters. El proyecto designado en la propiedad **DataSet Project** ( `DataEntityTier` ) contiene el DataSet con tipo: *NorthwindDataSet. DataSet. Designer. VB* (o *NorthwindDataSet.DataSet.Designer.CS*).
 
 > [!NOTE]
 > Cuando los conjuntos de datos se separan de los TableAdapters (estableciendo la propiedad **DataSet Project**), las clases de conjunto de datos parciales existentes no se trasladarán automáticamente. Las clases de conjunto de datos parciales existentes se deberán trasladar manualmente al proyecto de conjunto de datos.
@@ -173,7 +173,7 @@ En este tutorial se muestra cómo obtener acceso al nivel de acceso a datos medi
      Se crea el proyecto DataService y se agrega a la solución NTierWalkthrough.
 
 ## <a name="create-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>Crear métodos en el nivel de acceso a datos para devolver los datos de los clientes y pedidos
-El servicio de datos tiene que llamar a dos métodos en el nivel de acceso a datos: `GetCustomers` y `GetOrders`. Estos métodos devuelven las tablas `Customers` y `Orders` de Northwind. Cree los métodos `GetCustomers` y `GetOrders` en el proyecto de `DataAccessTier`.
+El servicio de datos tiene que llamar a dos métodos en el nivel de acceso a datos: `GetCustomers` y `GetOrders` . Estos métodos devuelven `Customers` las `Orders` tablas y Northwind. Cree los `GetCustomers` `GetOrders` métodos y en el `DataAccessTier` proyecto.
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Para crear un método en el nivel de acceso a datos que devuelva la tabla Customers
 
@@ -189,7 +189,7 @@ El servicio de datos tiene que llamar a dos métodos en el nivel de acceso a dat
 
 6. En la página **Elija los métodos que se van a generar**, escriba **GetCustomers** como **Nombre del método** en la sección **Devolver un DataTable**.
 
-7. Haga clic en **Finalizar**.
+7. Haga clic en **Finalizar**
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Para crear un método en el nivel de acceso a datos que devuelva la tabla Orders
 
@@ -203,9 +203,9 @@ El servicio de datos tiene que llamar a dos métodos en el nivel de acceso a dat
 
 5. En la página **Elija los métodos que se van a generar**, escriba **GetOrders** como **Nombre del método** en la sección **Devolver un DataTable**.
 
-6. Haga clic en **Finalizar**.
+6. Haga clic en **Finalizar**
 
-7. En el menú **Compilar** , haga clic en **Compilar solución**.
+7. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ## <a name="add-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Agregar una referencia a los niveles de entidad de datos y de acceso a datos al servicio de datos
 Dado que el servicio de datos requiere información del conjunto de datos y los TableAdapters, agregue referencias a los proyectos **DataEntityTier** y **DataAccessTier**.
@@ -248,9 +248,9 @@ Ahora que el nivel de acceso a datos contiene los métodos para devolver los dat
     DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders();
     ```
 
-3. En el proyecto DataService, haga doble clic en **Service1.vb** (o en **Service1.cs**).
+3. En el proyecto de servicio de bits, haga doble clic en **Service1. VB** (o **Service1.CS**).
 
-4. Agregue el código siguiente a la clase **Service1**:
+4. Agregue el código siguiente a la clase **Service1** :
 
     ```vb
     Public Function GetCustomers() As DataEntityTier.NorthwindDataSet.CustomersDataTable Implements IService1.GetCustomers
@@ -281,7 +281,7 @@ Ahora que el nivel de acceso a datos contiene los métodos para devolver los dat
     }
     ```
 
-5. En el menú **Compilar** , haga clic en **Compilar solución**.
+5. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Crear un nivel de presentación para Mostrar datos del servicio de datos
 Ahora que la solución contiene el servicio de datos que tiene métodos, que llaman al nivel de acceso a datos, cree otro proyecto que llame al servicio de datos y presente los datos a los usuarios. Para este tutorial, cree una aplicación de formularios Windows Forms; éste es el nivel de presentación de la aplicación con n niveles.
@@ -323,12 +323,12 @@ La aplicación cliente PresentationTier requiere una referencia de servicio al s
 3. Seleccione **Service1** y elija **Aceptar**.
 
     > [!NOTE]
-    > Si tiene varios servicios en el equipo actual, seleccione el servicio que creó anteriormente en este tutorial (el servicio que contiene los métodos `GetCustomers` y `GetOrders`).
+    > Si tiene varios servicios en el equipo actual, seleccione el servicio que creó anteriormente en este tutorial (el servicio que contiene los `GetCustomers` `GetOrders` métodos y).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Agregar DataGridViews al formulario para mostrar los datos devueltos por el servicio de datos
 Después de agregar la referencia de servicio al servicio de datos, la ventana **Orígenes de datos** se rellena automáticamente con los datos devueltos por el servicio.
 
-### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>Para agregar al formulario Windows Forms dos DataGridViews enlazados a datos
+### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>Para agregar al formulario Windows Forms dos DataGridViews enlazados a datos 
 
 1. En el **Explorador de soluciones**, seleccione el proyecto **PresentationTier**.
 
@@ -358,7 +358,7 @@ Después de agregar la referencia de servicio al servicio de datos, la ventana *
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>Aumentar el tamaño de mensaje máximo permitido por el servicio
-El valor predeterminado de `maxReceivedMessageSize` no es lo suficientemente grande como para contener los datos recuperados de las tablas `Customers` y `Orders`. En los pasos siguientes, aumentará el valor a 6553600. El valor se cambia en el cliente, que actualiza automáticamente la referencia de servicio.
+El valor predeterminado de `maxReceivedMessageSize` no es lo suficientemente grande como para contener los datos recuperados de las `Customers` `Orders` tablas y. En los pasos siguientes, aumentará el valor a 6553600. El valor se cambia en el cliente, que actualiza automáticamente la referencia de servicio.
 
 > [!NOTE]
 > El tamaño predeterminado más bajo está pensado para limitar la exposición a ataques por denegación de servicio (DOS). Para obtener más información, vea <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
@@ -369,8 +369,8 @@ El valor predeterminado de `maxReceivedMessageSize` no es lo suficientemente gra
 
 2. Busque el atributo de tamaño **maxReceivedMessage** y cambie su valor a `6553600`.
 
-## <a name="test-the-application"></a>Probar la aplicación
-Ejecute la aplicación presionando **F5**. Los datos de las tablas `Customers` y `Orders` se recuperan del servicio de datos y se muestran en el formulario.
+## <a name="test-the-application"></a>Prueba de la aplicación
+Ejecute la aplicación presionando **F5**. Los datos de las `Customers` `Orders` tablas y se recuperan del servicio de datos y se muestran en el formulario.
 
 ## <a name="next-steps"></a>Pasos siguientes
 En función de los requisitos de la aplicación, hay varios pasos que es posible que desee realizar después de guardar los datos relacionados en la aplicación basada en Windows. Por ejemplo, a continuación se indican algunas de las mejoras que podría realizar en esta aplicación:
@@ -383,4 +383,4 @@ En función de los requisitos de la aplicación, hay varios pasos que es posible
 
 - [Trabajar con conjuntos de datos en aplicaciones de n capas](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
-- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

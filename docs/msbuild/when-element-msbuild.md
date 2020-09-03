@@ -19,17 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630930"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 
 Especifica un posible bloque de código que el elemento `Choose` puede seleccionar.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,11 +70,11 @@ Especifica un posible bloque de código que el elemento `Choose` puede seleccion
 |-------------|-----------------|
 |[Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)|Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
  Si el atributo `Condition` se evalúa en true, los elementos secundarios `ItemGroup` y `PropertyGroup` del elemento `When` se ejecutarán y todos los elementos subsiguientes `When` se omitirán.
 
- Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para más información, consulte la sección [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).
+ Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para obtener más información, vea [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Ejemplo
 
@@ -120,7 +125,7 @@ Especifica un posible bloque de código que el elemento `Choose` puede seleccion
 </Project>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586720"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Ampliar modelos y diagramas UML
@@ -38,7 +38,7 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
 
 - [SDK de modelado para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
-## <a name="profiles"></a>Perfiles
+## <a name="profiles"></a>Profiles
  Los perfiles permiten definir estereotipos y propiedades adicionales en los elementos de UML.
 
  Los desarrolladores de herramientas de Fabrikam definen los estereotipos en los nodos de objeto de los diagramas de actividades, como «banda transportadora» y «mostrador de facturación». Si un miembro del equipo crea un esquema de control de equipaje con un diagrama de actividades, el equipo podrá entonces definir los estereotipos para indicar qué tipo de equipo representa cada nodo. Los desarrolladores de herramientas definen propiedades adicionales en algunos de los estereotipos para que los usuarios puedan registrar valores, como la capacidad de una banda transportadora y la situación de un mostrador de facturación.

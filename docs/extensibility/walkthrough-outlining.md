@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906184"
 ---
 # <a name="walkthrough-outlining"></a>Tutorial: Esquematización
@@ -131,5 +131,5 @@ Configure características basadas en lenguajes como la esquematización definie
 
 4. Debe haber una región de esquematización que incluya ambos corchetes. Debe poder hacer clic en el signo menos situado a la izquierda del corchete de apertura para contraer la región de esquematización. Cuando se contrae la región, el símbolo de puntos suspensivos (*...*) debe aparecer a la izquierda de la región contraída y debe aparecer un elemento emergente que contiene el **texto de desplazamiento** del texto cuando se mueve el puntero sobre los puntos suspensivos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

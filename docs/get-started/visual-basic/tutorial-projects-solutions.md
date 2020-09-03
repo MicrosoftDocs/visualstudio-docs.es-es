@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590220"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Información sobre proyectos y soluciones con Visual Basic
@@ -53,7 +53,7 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
 
 1. Abra Visual Studio.
 
-1. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -117,7 +117,7 @@ Ahora, agreguemos nuestro primer proyecto a la solución. Comenzaremos con un pr
    Un proyecto denominado QuickDate aparece debajo de la solución en el **Explorador de soluciones**. Actualmente solo contiene un archivo denominado *App.config*.
 
    > [!NOTE]
-   > Si no ve la plantilla **Proyecto vacío (.NET Framework)** , tiene que instalar la *carga de trabajo***Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que lleva a cabo. Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
+   > Si no ve la plantilla **Proyecto vacío (.NET Framework)**, tiene que instalar la *carga de trabajo***Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que lleva a cabo. Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
    >
    > ![Vínculo del Instalador de Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
 
@@ -161,7 +161,7 @@ Vamos a agregar un proyecto de prueba unitaria a la solución. Esta vez se empie
 
 ::: moniker range="Vs-2017"
 
-2. En el panel izquierdo, expanda **Visual Basic** y elija la categoría **Prueba**. En el panel central, elija la plantilla de proyecto **Proyecto de prueba unitaria (.NET Framework)** . Asigne el nombre **QuickTest** al proyecto y luego seleccione **Aceptar**.
+2. En el panel izquierdo, expanda **Visual Basic** y elija la categoría **Prueba**. En el panel central, elija la plantilla de proyecto **Proyecto de prueba unitaria (.NET Framework)**. Asigne el nombre **QuickTest** al proyecto y luego seleccione **Aceptar**.
 
    Se agregará un segundo proyecto al **Explorador de soluciones**, mientras que un archivo denominado *UnitTest1.vb* se abre en el editor.
 
@@ -223,7 +223,7 @@ Usaremos el nuevo proyecto de prueba unitaria para probar nuestro método en el 
 
    ![código de Visual Basic](media/tutorial-projects-code-vb.png)
 
-## <a name="project-properties"></a>Propiedades del proyecto
+## <a name="project-properties"></a>Propiedades de proyecto
 
 La línea del archivo *Calendar.vb* que contiene el atributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> hace referencia al nombre de ensamblado (nombre de archivo) del proyecto **QuickTest**. El nombre del ensamblado no siempre es el mismo que el nombre del proyecto. Para averiguar el nombre del ensamblado de un proyecto, abra las propiedades del proyecto.
 
@@ -231,7 +231,7 @@ La línea del archivo *Calendar.vb* que contiene el atributo <xref:System.Runtim
 
    Las *páginas de propiedades* del proyecto se abren en la pestaña **Aplicación**. Las páginas de propiedades contienen varios valores para el proyecto. Fíjese en que el nombre de ensamblado del proyecto **QuickTest** es, efectivamente, "QuickTest". Si quisiera cambiarlo, aquí es donde lo haría. Así, al compilar el proyecto de prueba, el nombre del archivo binario resultante cambiaría de *QuickTest.dll* a lo que hubiera elegido.
 
-   ![Propiedades del proyecto](../media/tutorial-projects-properties.png)
+   ![Propiedades de proyecto](../media/tutorial-projects-properties.png)
 
 1. Explore algunas de las otras pestañas de las páginas de propiedades del proyecto, como **Compilar** y **Configuración**. Estas pestañas son diferentes para los distintos tipos de proyectos.
 
@@ -248,10 +248,10 @@ Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **e
 
 Si desea seguir explorando Visual Studio, considere la posibilidad de crear una aplicación siguiendo uno de los [tutoriales de Visual Basic](index.yml).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear proyectos y soluciones](../../ide/creating-solutions-and-projects.md)
 - [Administración de propiedades de soluciones y proyectos](../../ide/managing-project-and-solution-properties.md)
 - [Administración de referencias en un proyecto](../../ide/managing-references-in-a-project.md)
-- [Desarrollar código en Visual Studio sin proyectos o soluciones](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Desarrollo de código en Visual Studio sin proyectos o soluciones](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Introducción al IDE de Visual Studio](../../get-started/visual-studio-ide.md)

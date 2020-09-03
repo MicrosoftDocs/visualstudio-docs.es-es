@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585631"
 ---
 # <a name="replace-in-files"></a>Reemplazar en archivos
@@ -26,7 +26,7 @@ ms.locfileid: "75585631"
 **Reemplazar en archivos** le permite buscar el código de un conjunto de archivos especificado para una cadena o expresión, y cambiar algunas o todas las coincidencias que ha detectado. Las coincidencias encontradas y las acciones realizadas se muestran en la ventana **Resultados de la búsqueda** seleccionada en **Opciones de resultados**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, por ejemplo, **General** o **Visual C++** , elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
 
 Puede usar cualquiera de los métodos siguientes para mostrar **Reemplazar en archivos** en la ventana **Buscar y reemplazar**.
 
@@ -36,7 +36,7 @@ Puede usar cualquiera de los métodos siguientes para mostrar **Reemplazar en ar
 
 2. Pulse **Reemplazar en archivos**.
 
-   O bien
+   o
 
    Si la ventana **Buscar y reemplazar** ya está abierta, en la barra de herramientas, pulse **Reemplazar en archivos**.
 
@@ -53,7 +53,7 @@ Para reemplazar instancias de la cadena en el cuadro **Buscar** por otra cadena,
 
 ## <a name="look-in"></a>Buscar en
 
-La opción elegida en la lista desplegable **Buscar en** determina si **Reemplazar en archivos** solo busca en los archivos activos actualmente o en todos los archivos almacenados en algunas carpetas. Seleccione un ámbito de búsqueda en la lista, escriba una ruta de carpeta o haga clic en el botón **Examinar (...)** para mostrar el cuadro de diálogo **Elegir carpetas de búsqueda** y seleccionar un conjunto de carpetas para buscar. También puede escribir una ruta directamente en el cuadro **Buscar en**.
+La opción elegida en la lista desplegable **Buscar en** determina si **Reemplazar en archivos** busca solo en los archivos actualmente activos o busca en todos los archivos almacenados en algunas carpetas. Seleccione un ámbito de búsqueda en la lista, escriba una ruta de carpeta o haga clic en el botón **Examinar (...)** para mostrar el cuadro de diálogo **Elegir carpetas de búsqueda** y seleccionar un conjunto de carpetas para buscar. También puede escribir una ruta directamente en el cuadro **Buscar en**.
 
 > [!NOTE]
 > Si la opción **Buscar en** seleccionada conlleva buscar en un archivo que ha desprotegido desde el control de código fuente, solo se busca en la versión de ese archivo que se ha descargado en el equipo local.
@@ -96,12 +96,12 @@ Cuando esta casilla está seleccionada, en las ventanas **Resultados de la búsq
 
 **Mantener los archivos modificados abiertos después de Reemplazar todo**
 
-Cuando está seleccionada, deja abiertos todos los archivos en los que se han realizado reemplazos, de manera que pueda deshacer o guardar los cambios. Las restricciones de memoria pueden limitar el número de archivos que pueden seguir abiertos después de una operación de reemplazo.
+Cuando se selecciona, deja abiertos todos los archivos en los que se han realizado reemplazos, de forma que puede deshacerlos o cambiarlos. Las restricciones de memoria pueden limitar el número de archivos que pueden permanecer abiertos después de una operación de reemplazo.
 
 > [!CAUTION]
-> Puede usar **Deshacer** solo en los archivos que siguen abiertos para su edición. Si esta opción no está seleccionada, los archivos que todavía no se han abierto para su edición seguirán cerrados, y ninguna opción **Deshacer** estará disponible en esos archivos.
+> Puede utilizar **Deshacer** solo en los archivos que permanecen abiertos para edición. Si no se selecciona esta opción, los archivos que no estén abiertos para edición permanecerán cerrados y no estará disponible la opción **Deshacer** para ellos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)
 - [Buscar en archivos](../ide/find-in-files.md)

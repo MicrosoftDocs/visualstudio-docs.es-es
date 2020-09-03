@@ -7,10 +7,10 @@ ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916566"
 ---
 # <a name="container-tools-in-visual-studio"></a>Herramientas de contenedor en Visual Studio
@@ -113,7 +113,7 @@ Si *docker-compose.yml* ya existe, Visual Studio le agrega simplemente las líne
 
 Repita el proceso con los otros proyectos que quiera controlar mediante Docker Compose.
 
-## <a name="kubernetes-support"></a>Compatibilidad con Kubernetes
+## <a name="kubernetes-support"></a>Soporte técnico de Kubernetes
 
 ::: moniker range="vs-2017"
 Para agregar compatibilidad con Kubernetes, instale [Visual Studio Tools para Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).

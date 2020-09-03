@@ -12,10 +12,10 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 033e682344cbd255c8cbf41d7527ec7d08a5db20
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915608"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Depuración de un servicio en la nube de Azure publicado con Visual Studio e IntelliTrace
@@ -32,7 +32,7 @@ Como alternativa, puede usar la [depuración remota](vs-azure-tools-debugging-cl
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Configuración de una aplicación de Azure para IntelliTrace
 Para habilitar IntelliTrace para una aplicación de Azure, debe crear y publicar la aplicación desde un proyecto de Azure de Visual Studio. Debe configurar IntelliTrace para su aplicación de Azure antes de su publicación en Azure. Si publica la aplicación sin configurar IntelliTrace, deberá volver a publicar el proyecto. Para más información, consulte cómo [publicar proyectos de servicios en la nube de Azure con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-1. Cuando esté preparado para implementar su aplicación de Azure, compruebe que sus destinos de compilación del proyecto se establecen en **Depurar**.
+1. Cuando esté preparado para implementar la aplicación de Azure, compruebe que los destinos de compilación del proyecto estén establecidos en **Depurar**.
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y, en el menú contextual, seleccione **Publicar**.
    
