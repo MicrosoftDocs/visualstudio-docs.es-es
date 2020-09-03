@@ -1,5 +1,5 @@
 ---
-title: Incluir elemento ? Microsoft Docs
+title: Elemento include | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710360"
 ---
-# <a name="include-element"></a>Incluir elemento
-El elemento Include especifica un archivo que se puede ubicar en la ruta de acceso de inclusión proporcionada para insertarlo en el archivo actual.  Todos los símbolos y tipos definidos pasarán a formar parte del resultado compilado.
+# <a name="include-element"></a>Elemento include
+El elemento include especifica un archivo que se puede encontrar en la ruta de inclusión proporcionada para la inserción en el archivo actual.  Todos los símbolos y tipos definidos se convertirán en parte del resultado compilado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,8 +36,8 @@ El elemento Include especifica un archivo que se puede ubicar en la ruta de acce
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href"stdidcmd.h"|
-|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href = "stdidcmd. h"|
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -57,5 +57,5 @@ El elemento Include especifica un archivo que se puede ubicar en la ruta de acce
 <Include href="PackagePlacements.vsct"/>
 ```
 
-## <a name="see-also"></a>Consulte también
-- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Vea también
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

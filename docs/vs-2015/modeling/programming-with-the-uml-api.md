@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852127"
 ---
 # <a name="programming-with-the-uml-api"></a>Programar con la API de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La API de UML de Visual Studio le permite escribir código para crear, leer y actualizar modelos y diagramas UML. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+La API de UML de Visual Studio permite escribir código para crear, leer y actualizar modelos y diagramas UML. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  En los temas siguientes se describe la API, además de en las páginas de referencia de la API.
 
@@ -51,9 +51,9 @@ La API de UML de Visual Studio le permite escribir código para crear, leer y ac
 ## <a name="the-api-assemblies"></a>Los ensamblados de la API
  En esta tabla se resumen los ensamblados que proporcionan extensibilidad a las herramientas UML y los espacios de nombres que se recomienda utilizar.
 
-|Ensamblado|Espacios de nombres de|Proporciona acceso a:|
+|Ensamblado|Espacios de nombres|Proporciona acceso a:|
 |--------------|----------------|-------------------------|
-|Microsoft.VisualStudio.Uml.Interfaces|(Todos)|Los tipos UML.|
+|Microsoft.VisualStudio.Uml.Interfaces|(Todo)|Los tipos UML.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. ArchitectureTools. Extensibility. UML|[Métodos de creación](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagramas y formas](../modeling/display-a-uml-model-on-diagrams.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[El proyecto de modelado](../modeling/read-a-uml-model-in-program-code.md)|
@@ -65,8 +65,8 @@ La API de UML de Visual Studio le permite escribir código para crear, leer y ac
 |Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Vínculos a elementos de trabajo](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Elementos de trabajo y sus campos](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Elementos de trabajo y sus campos](../modeling/define-a-work-item-link-handler.md).|
-|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Exportación e importación de componentes de MEF](../modeling/define-and-install-a-modeling-extension.md)|
+|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Exportación e importación para componentes MEF](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[Manipulación sencilla de las colecciones, especialmente cuando se trabaja con relaciones](../modeling/navigate-relationships-with-the-uml-api.md).|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [referencia de la API para la extensibilidad del modelado UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

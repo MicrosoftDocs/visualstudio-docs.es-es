@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621106"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Características de accesibilidad del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Este tema incluye información sobre las características, productos y servicios que permiten que el Visor de Ayuda de Microsoft 2.2 sea accesible para personas con una amplia gama de discapacidades.
+Microsoft tiene el compromiso de que todas las personas puedan utilizar fácilmente sus productos y servicios. Este tema incluye información sobre las características, productos y servicios que permiten que el Visor de Ayuda de Microsoft 2.2 sea accesible para personas con una amplia gama de discapacidades.
 
 ## <a name="keyboard-access"></a>Acceso mediante el teclado
  Puede acceder a todas las características del Visor de Ayuda mediante el teclado. Para obtener más información, vea [Teclas de método abreviado (Visor de Ayuda)](../ide/shortcut-keys-help-viewer.md).
@@ -39,5 +39,5 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
 ## <a name="internet-explorer-options"></a>Opciones de Internet Explorer
  Puede hacer el Visor de Ayuda más accesible cambiando las opciones de Internet Explorer que se relacionan con la apariencia de las páginas web. Para obtener más información, vea [Personalizar el Visor de Ayuda](../ide/customize-the-help-viewer.md).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)

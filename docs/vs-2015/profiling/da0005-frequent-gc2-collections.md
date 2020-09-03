@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46e03ecb00e4a5733039e003d170f3cfe0a854ee
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586968"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Colecciones GC2 frecuentes
@@ -30,7 +30,7 @@ RuleId|DA0005|
 | Mensaje | Muchos de los objetos se están recopilando en la recolección de elementos no utilizados de generación 2. |  
 | Tipo de mensaje | ADVERTENCIA |  
   
-## <a name="cause"></a>Causa  
+## <a name="cause"></a>Motivo  
  Se está recuperando un número elevado de objetos de memoria de .NET en la recolección de elementos no utilizados de la generación 2.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
@@ -41,6 +41,6 @@ RuleId|DA0005|
  Esta regla se desencadena cuando se ha producido proporcionalmente demasiada recolección de elementos no utilizados de la generación 2. Si relativamente demasiados objetos de corta duración sobreviven a la colección de generación 1, pero pueden ser recopilados en una colección completa de generación 2, el costo de la administración de memoria se puede volver excesivo con facilidad. Para obtener más información, consulte la publicación [Crisis de vida media](https://docs.microsoft.com/archive/blogs/ricom/mid-life-crisis) en los alicientes de rendimiento de Rico Mariani en el sitio web de MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
- Revise los informes [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md) para entender el patrón de asignación de memoria de la aplicación. Use la [vista Duración del objeto](../profiling/object-lifetime-view.md) para determinar cuáles de los objetos de datos del programa sobreviven a la generación 2 y, después, se recuperan desde allí. Utilice la [vista Asignaciones](../profiling/dotnet-memory-allocations-view.md) para determinar la ruta de acceso de ejecución que dio lugar a estas asignaciones.  
+ Revise los informes [vistas de datos de memoria de .net](../profiling/dotnet-memory-data-views.md) para entender el patrón de asignación de memoria de la aplicación. Use la [vista duración del objeto](../profiling/object-lifetime-view.md) para determinar cuáles de los objetos de datos del programa están supervivientes en la generación 2 y, a continuación, se recuperan desde allí. Utilice la [vista Asignaciones](../profiling/dotnet-memory-allocations-view.md) para determinar la ruta de acceso de ejecución que dio lugar a estas asignaciones.  
   
  Para obtener información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](https://msdn2.microsoft.com/library/ms973837.aspx) en el sitio web de MSDN. Para obtener información sobre la sobrecarga de recolección de elementos no utilizados automática, consulte [Montón de objeto grande al descubierto](https://msdn.microsoft.com/magazine/cc534993.aspx).

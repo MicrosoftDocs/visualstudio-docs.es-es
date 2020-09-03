@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los asociados pueden administrar las suscripciones a Visual Studio para los clientes.
 ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289032"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Administración por parte de los asociados de suscripciones en nombre de los clientes

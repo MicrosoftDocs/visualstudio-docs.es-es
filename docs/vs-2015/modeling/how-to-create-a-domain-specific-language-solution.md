@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533086"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
@@ -27,7 +27,7 @@ ms.locfileid: "85533086"
 
 Un lenguaje específico de dominio (DSL) se crea mediante una solución especializada [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para poder iniciar este procedimiento, primero debe instalar estos componentes:
 
 |Producto|Vínculo de descarga|
@@ -42,7 +42,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución especial
 
 1. Inicie el Asistente para DSL.
 
-   1. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
+   1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
 
    2. Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
@@ -78,7 +78,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución especial
    > [!NOTE]
    > Si ve un mensaje que le avisa de que no desea ejecutar plantillas de texto de orígenes que no son de confianza, haga clic en **Aceptar**. Puede establecer que este mensaje no vuelva a aparecer.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Páginas del Asistente para Diseñador DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> Páginas del Asistente para Diseñador DSL
  Puede dejar algunos de los campos sin modificar con respecto a sus valores predeterminados. Sin embargo, asegúrese de establecer el campo de extensión de archivo.
 
 ### <a name="solution-settings-page"></a>Página de configuración de la solución

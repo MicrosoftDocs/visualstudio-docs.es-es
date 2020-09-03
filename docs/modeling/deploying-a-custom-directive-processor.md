@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536024"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
@@ -62,7 +62,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
     1. Cree un archivo de texto y asígnele el nombre \<*assemblyName*> . pkgdef.
 
-         \<*assemblyName*>suele ser el mismo que el nombre del proyecto.
+         \<*assemblyName*> suele ser el mismo que el nombre del proyecto.
 
     2. Selecciónelo en el Explorador de soluciones y establezca sus propiedades de la manera siguiente:
 
@@ -107,7 +107,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 3. Haga doble clic en el archivo .vsix. Aparece el instalador de extensiones de Visual Studio.
 
-4. Reinicie Visual Studio. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:
+4. Reinicie Visual Studio. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:
 
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`
 
@@ -196,6 +196,6 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 |Clase|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |Ensamblado|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear procesadores de directivas personalizadas para las plantillas de texto T4](../modeling/creating-custom-t4-text-template-directive-processors.md)

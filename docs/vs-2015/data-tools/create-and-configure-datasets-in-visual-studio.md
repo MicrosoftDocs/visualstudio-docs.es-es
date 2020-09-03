@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c84105387c708fa16e0b1d5c3294ef909466524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72631204"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Crear y configurar conjuntos de datos en Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "72631204"
 
 Un *conjunto* de datos es un conjunto de objetos que almacenan datos de una base de datos en memoria y admiten el seguimiento de cambios para habilitar operaciones de creación, lectura, actualización y eliminación (CRUD) en esos datos sin necesidad de estar siempre conectados a la base de datos. Los conjuntos de datos se diseñaron para formularios sencillos sobre aplicaciones empresariales de *datos* . En el caso de las aplicaciones nuevas, considere la posibilidad de usar Entity Framework para almacenar y modelar los datos en la memoria. Para trabajar con conjuntos de datos, debe tener un conocimiento básico de los conceptos de base de datos.
 
- En tiempo de diseño, se crea una clase de <xref:System.Data.DataSet> con tipo en Visual Studio mediante el **Asistente para la configuración de orígenes de datos**. Para obtener información sobre cómo crear conjuntos de datos mediante programación, vea [crear un conjunto de](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)datos.
+ En tiempo de diseño, se crea una clase con tipo <xref:System.Data.DataSet> en Visual Studio mediante el **Asistente para la configuración de orígenes de datos**. Para obtener información sobre cómo crear conjuntos de datos mediante programación, vea [crear un conjunto de](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)datos.
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Crear un nuevo conjunto de datos mediante el Asistente para la configuración de orígenes de datos
 
@@ -45,9 +45,9 @@ Un *conjunto* de datos es un conjunto de objetos que almacenan datos de una base
 
 4. Elija las tablas (o columnas individuales), procedimientos almacenados, funciones y vistas de la base de datos que desea que se representen en el conjunto de datos.
 
-     ![Elegir objetos de base de datos](../data-tools/media/raddata-chose-objects.png "raddata elegir objetos")
+     ![Selección de objetos de la base de datos](../data-tools/media/raddata-chose-objects.png "raddata elegir objetos")
 
-5. Haga clic en **Finalizar**.
+5. Haga clic en **Finalizar**
 
 6. El conjunto de DataSet aparece como un nodo en **Explorador de soluciones**:
 
@@ -76,7 +76,7 @@ Un *conjunto* de datos es un conjunto de objetos que almacenan datos de una base
 
 1. Haga clic en el nodo conjunto de los **Explorador de soluciones** para poner el diseñador de DataSet en el foco.
 
-2. Haga clic en la pestaña **orígenes de datos** en el margen izquierdo de Visual Studio o escriba `Data Sources` en **Inicio rápido**.
+2. Haga clic en la pestaña **orígenes de datos** en el margen izquierdo de Visual Studio o escriba `Data Sources` en el **Inicio rápido**.
 
 3. Haga clic con el botón secundario en el nodo conjunto de datos y seleccione **Configurar origen de datos con el asistente** .
 
@@ -88,8 +88,8 @@ Un *conjunto* de datos es un conjunto de objetos que almacenan datos de una base
 
 1. Abra su conjunto de datos en el **Diseñador de Dataset**.
 
-2. Arrastre una clase <xref:System.Data.DataTable> desde la pestaña **DataSet** del **cuadro de herramientas** hasta el **Diseñador de DataSet**.
+2. Arrastre una <xref:System.Data.DataTable> clase desde la pestaña **DataSet** del **cuadro de herramientas** hasta el **Diseñador de DataSet**.
 
 3. Agregue columnas para definir su tabla de datos. Para obtener más información, vea [Cómo: Agregar columnas a un objeto DataTable](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Las tablas independientes necesitan implementar `Fill` lógica en tablas independientes para que pueda rellenarlas con datos. Para obtener información sobre cómo rellenar tablas de datos independientes, vea [rellenar un conjunto de datos desde un DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Las tablas independientes deben implementar la `Fill` lógica en tablas independientes para que pueda rellenarlas con datos. Para obtener información sobre cómo rellenar tablas de datos independientes, vea [rellenar un conjunto de datos desde un DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535543"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)

@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852207"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Información adicional sobre los errores del Diseñador de clases
@@ -43,9 +43,9 @@ El Diseñador de clases no hace un seguimiento de la ubicación de los archivos 
 
  Encontrará ayuda relacionada con otros errores y advertencias en los siguientes recursos:
 
- [Trabajar con código C++ Visual (diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md) incluye información de solución de problemas C++ sobre cómo mostrar en un diagrama de clases.
+ [Trabajar con código de Visual C++ (diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md) Incluye información de solución de problemas sobre la visualización de C++ en un diagrama de clases.
 
  [Foro del Diseñador de clases de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) proporciona un foro para formular preguntas sobre el Diseñador de clases.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Diseñar y ver clases y tipos](../ide/designing-and-viewing-classes-and-types.md)

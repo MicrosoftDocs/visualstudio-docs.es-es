@@ -1,5 +1,5 @@
 ---
-title: Elemento de icono (Icon Element) Microsoft Docs
+title: Elemento Icon | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710517"
 ---
-# <a name="icon-element"></a>Elemento Icono
-El atributo guid de la etiqueta Icon es el guid de un mapa de bits definido. El `id` atributo selecciona la ranura en la franja de mapa de bits. Este elemento es opcional. Si no se incluye este elemento, se implicará el valor de **guidOfficeIcon:msotcidNoIcon.**
+# <a name="icon-element"></a>Elemento Icon
+El atributo GUID de la etiqueta de icono es el GUID de un mapa de bits definido. El `id` atributo selecciona la ranura en la franja de mapa de bits. Este elemento es opcional. Si este elemento no se incluye el valor de **guidOfficeIcon: msotcidNoIcon** será implícito.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,7 +34,7 @@ El atributo guid de la etiqueta Icon es el guid de un mapa de bits definido. El 
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Necesario. El guid de un mapa de bits definido.|
+|guid|Necesario. GUID de un mapa de bits definido.|
 |id|Necesario. Selecciona la ranura en la franja de mapa de bits.|
 
 ### <a name="child-elements"></a>Elementos secundarios
@@ -47,7 +47,7 @@ El atributo guid de la etiqueta Icon es el guid de un mapa de bits definido. El 
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Buttons](../extensibility/buttons-element.md)||
+|[Buttons, elemento](../extensibility/buttons-element.md)||
 
 ## <a name="see-also"></a>Vea también
-- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -30,6 +30,7 @@ ms.locfileid: "77633088"
 Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es `false` para una tarea con error.
 
  \<Project> \<Target> \<OnError>
+ \<OnError>
 
 ## <a name="syntax"></a>Sintaxis
 

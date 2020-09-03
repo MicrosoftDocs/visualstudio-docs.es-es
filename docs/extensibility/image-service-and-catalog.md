@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536336"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
@@ -88,7 +88,7 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </ImageManifest>
 ```
 
- **Símbolos**
+ **Symbols**
 
  Como ayuda para la lectura y el mantenimiento, el manifiesto de imagen puede usar símbolos para los valores de atributo. Los símbolos se definen de la siguiente manera:
 
@@ -101,11 +101,11 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </Symbols>
 ```
 
-|**Subelemento**|**Definición**|
+|**Subelemento**|**Definition**|
 |-|-|
-|Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
-|GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID|
-|ID|El símbolo representa un identificador y debe ser un entero no negativo|
+|Importación|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
+|Guid|El símbolo representa un GUID y debe coincidir con el formato de GUID|
+|Id.|El símbolo representa un identificador y debe ser un entero no negativo|
 |String|El símbolo representa un valor de cadena arbitrario|
 
  Los símbolos distinguen mayúsculas de minúsculas y se hace referencia a ellos mediante la sintaxis $ (nombre de símbolo):
@@ -141,10 +141,10 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </Image>
 ```
 
-|**Attribute**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
-|GUID|Desee Parte del GUID del moniker de la imagen|
-|ID|Desee La parte de identificador del moniker de imagen|
+|Guid|Desee Parte del GUID del moniker de la imagen|
+|Id.|Desee La parte de identificador del moniker de imagen|
 |AllowColorInversion|[Opcional, valor predeterminado True] Indica si la imagen puede tener sus colores inversos mediante programación cuando se usa en un fondo oscuro.|
 
  **Origen**
@@ -157,16 +157,16 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
  </Source>
 ```
 
-|**Attribute**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Identificador URI|Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la autoridad Application:///<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|
-|Fondo|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> *Claro:* El origen se puede usar en un fondo claro.<br /><br /> *Oscuro:* El origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* El origen se puede usar en cualquier fondo del modo contraste alto.<br /><br /> *HighContrastLight:* El origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen puede usarse en cualquier fondo.<br /><br /> Si background es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite Background o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
+|Información previa|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> *Claro:* El origen se puede usar en un fondo claro.<br /><br /> *Oscuro:* El origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* El origen se puede usar en cualquier fondo del modo contraste alto.<br /><br /> *HighContrastLight:* El origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen puede usarse en cualquier fondo.<br /><br /> Si background es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite Background o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
 
 Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:
 
-|**Element**|**Atributos (todos obligatorios)**|**Definición**|
+|**Element**|**Atributos (todos obligatorios)**|**Definition**|
 |-|-|-|
-|\<Size>|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
+|\<Size>|Value|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
 |\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo) de un solo uso. La imagen será cuadrada.|
 |\<Dimensions>|Ancho, alto|El origen se usará para las imágenes con el ancho y alto especificados (en unidades de dispositivo).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho o el alto mínimo hasta el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|
@@ -177,10 +177,10 @@ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attribute**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|
-|ID|Desee La parte del identificador entero del recurso nativo|
+|Id.|Desee La parte del identificador entero del recurso nativo|
 
  **ImageList**
 
@@ -193,10 +193,10 @@ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos
  </ImageList>
 ```
 
-|**Attribute**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
-|GUID|Desee Parte del GUID del moniker de la imagen|
-|ID|Desee La parte de identificador del moniker de imagen|
+|Guid|Desee Parte del GUID del moniker de la imagen|
+|Id.|Desee La parte de identificador del moniker de imagen|
 |Externo|[Opcional, valor predeterminado False] Indica si el moniker de imagen hace referencia a una imagen del manifiesto actual.|
 
  No es necesario que el moniker de la imagen contenida haga referencia a una imagen definida en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se usará una imagen de marcador de posición en blanco en su lugar.
@@ -506,11 +506,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
        this.BitmapIndex = <Value>;
        ```
 
-   2. Vea el paso #1 de "Cómo usar monikers de imagen en una nueva ventana de herramientas?". sección anterior.
+   2. Vea el paso #1 de "Cómo usar monikers de imagen en una nueva ventana de herramientas?". anterior.
 
 4. El comando para abrir la ventana de herramientas.
 
-   - Vea el paso #2 de "Cómo usar monikers de imagen en una nueva ventana de herramientas?". sección anterior.
+   - Vea el paso #2 de "Cómo usar monikers de imagen en una nueva ventana de herramientas?". anterior.
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Cómo usar monikers de imagen en un archivo. Vsct?
  Actualice el archivo *. Vsct* como se indica en las líneas comentadas a continuación:
@@ -640,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Reemplace el GUID de cada **ContainedImage**por $ (ImageCatalogGuid), reemplace el identificador de cada **ContainedImage**por $ ( \<moniker> ) y agregue el atributo external = "true" a cada **ContainedImage**
 
-       - \<moniker>debe reemplazarse por el **KnownMoniker** que coincide con la imagen, pero con el "KnownMonikers". se ha quitado del nombre.
+       - \<moniker> debe reemplazarse por el **KnownMoniker** que coincide con la imagen, pero con el "KnownMonikers". se ha quitado del nombre.
 
    - Agregue <Import manifest = "$ (ManifestFolder) \\<ruta de acceso del directorio de instalación relativa a * \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \*> en la parte superior de la \<Symbols> sección.
 
@@ -819,7 +819,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - Actualizo mi proveedor de lista de finalización. ¿Qué **KnownMonikers** coinciden con los valores antiguos de **StandardGlyphGroup** y **StandardGlyph** ?
 
-    |NOMBRE|NOMBRE|NOMBRE|
+    |Nombre|Nombre|Nombre|
     |-|-|-|
     |GlyphGroupClass|GlyphItemPublic|ClassPublic|
     |GlyphGroupClass|GlyphItemInternal|ClassInternal|

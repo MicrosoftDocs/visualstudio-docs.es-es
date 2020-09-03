@@ -28,6 +28,7 @@ ms.locfileid: "77633621"
 Contiene una clave de metadatos de elemento definida por el usuario que incluye el valor de metadatos del elemento. Un elemento puede tener cualquier número de pares clave-valor de metadatos.
 
  \<Project> \<ItemGroup> \<Item>
+ \<Item>
 
 ## <a name="syntax"></a>Sintaxis
 

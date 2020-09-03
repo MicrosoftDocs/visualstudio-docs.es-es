@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 778912c3149f9f146c01dbab15afa4fabeaa49b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852259"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript en Visual Studio
@@ -45,13 +45,13 @@ JavaScript es un lenguaje de primera clase en Visual Studio. Puede usar la mayor
 |-------------|-----------------|
 |Clases|La nueva sintaxis admite la declaración de [clases](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Promises|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) permite una codificación asincrónica más fácil y limpia. Se admiten constructores Promise junto con los métodos de utilidad `all` y `race`.|
-|Iterators|Ahora puede iterar por objetos iterables (incluidas matrices, objetos similares a matrices e iteradores), invocando un enlace de iteración personalizado con instrucciones que se ejecutarán para el valor de cada propiedad distintiva. Para más información, vea [Iteradores y generadores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Nota:** Todavía no se admiten generadores.|
+|Iterators|Ahora puede iterar por objetos iterables (incluidas matrices, objetos similares a matrices e iteradores), invocando un enlace de iteración personalizado con instrucciones que se ejecutarán para el valor de cada propiedad distintiva. Para más información, vea [Iteradores y generadores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Nota: **Todavía no se admiten generadores.|
 |Funciones de flecha|La función de flecha (=>) proporciona la sintaxis abreviada para la palabra clave `function` que incluye un enlace léxico `this`.|
 |Nuevos métodos para objetos integrados|Los objetos integrados [Array (Objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math (Objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number (Objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object (Objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) y [String (Objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) incluyen numerosas propiedades y funciones de utilidad nuevas para manipular e inspeccionar datos.|
 |Mejoras literales de objeto|Los objetos ahora admiten propiedades calculadas, definiciones de método concisas y sintaxis abreviada para las propiedades cuyo valor se inicializa en una variable con el mismo nombre. Para obtener más información, vea [Crear objetos](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|
 |Servidores proxy|Los [servidores proxy](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) permiten un comportamiento personalizado para los objetos.|
 |Parámetros de REST|Los parámetros de REST permiten activar argumentos consecutivos en una llamada de función a una matriz. Para obtener más información, vea [Funciones](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function).|
-|Operador de propagación|El [operador de propagación](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) expande expresiones iterables en argumentos individuales. Por ejemplo, `a.b(…array)` es aproximadamente igual a que `a.b.apply(a, array)`.|
+|Operador de propagación|El [operador de propagación](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) ( `…` ) expande expresiones iterables en argumentos individuales. Por ejemplo, `a.b(…array)` es aproximadamente igual a que `a.b.apply(a, array)`.|
 |Símbolos|Los objetos [Símbolo](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) permiten agregar propiedades a los objetos existentes sin posibilidad de interferencias con las propiedades de objeto existentes, sin visibilidad no intencionada y sin otras adiciones no coordinadas por parte de otro código.|
 |Cadenas de plantillas|Las [cadenas de plantillas](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) son literales de cadena que permiten evaluar y concatenar las expresiones con el literal de cadena.|
 |Mejoras de Unicode|Se realizaron mejoras en la compatibilidad con Unicode. Por ejemplo, un nuevo formato de secuencia de escape admite puntos de código astral (puntos de código con más de cuatro dígitos hexadecimales). Para obtener más información, consulte [Caracteres especiales](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters).|

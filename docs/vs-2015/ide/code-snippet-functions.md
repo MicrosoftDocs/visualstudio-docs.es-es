@@ -14,28 +14,28 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 92533b90e6a2da9f29a67d13c6e0eee2c31dbcfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620233"
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Las funciones se especifican en el elemento [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).
+Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Las funciones se especifican en el elemento [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [fragmentos de código](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Funciones
  En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.
 
-|Función|DESCRIPCIÓN|Lenguaje|
+|Función|Description|Lenguaje|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`SimpleTypeName(` `TypeName` `)`|Reduce el parámetro *TypeName* a su forma más sencilla en el contexto en que se invocó el fragmento de código.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 
 ## <a name="example"></a>Ejemplo
- En el siguiente ejemplo se muestra cómo usar la función `GenerateSwitchCases`. Cuando se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` genera una instrucción `case` para cada valor de la enumeración.
+ En el ejemplo siguiente se muestra cómo usar la función `GenerateSwitchCases`. Cuando se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` genera una instrucción `case` para cada valor de la enumeración.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -76,7 +76,7 @@ Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE
 ```
 
 ## <a name="example"></a>Ejemplo
- En el siguiente ejemplo se muestra cómo usar la función `ClassName`. Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza con el nombre de la clase envolvente en esa ubicación del archivo de código.
+ En el ejemplo siguiente se muestra cómo usar la función `ClassName`. Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza con el nombre de la clase envolvente en esa ubicación del archivo de código.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -153,5 +153,5 @@ Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Elemento function (fragmentos de código IntelliSense)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) [referencia de esquema de fragmentos de código](../ide/code-snippets-schema-reference.md)

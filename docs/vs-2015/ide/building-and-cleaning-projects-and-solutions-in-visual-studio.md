@@ -24,19 +24,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620556"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).
+Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: compilar una aplicación](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para compilar, recompilar o limpiar toda la solución
 
@@ -65,7 +65,7 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar solo el proyecto de inicio y sus dependencias
 
-1. En la barra de menús, elija **Herramientas**, **Opciones**.
+1. En la barra de menús, elija **herramientas**, **Opciones**.
 
 2. En el cuadro de diálogo **Opciones**, expanda el nodo **Proyectos y soluciones** y, después, seleccione la página **Compilar y ejecutar**.
 
@@ -75,11 +75,11 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
 
     Cuando activa esta casilla, solo se compilan el proyecto inicial actual y sus dependencias cuando se lleva a cabo alguno de los pasos siguientes:
 
-   - En la barra de menús, elija **Depurar**  > **iniciar depuración** (F5).
+   - En la barra de menús, elija **depurar**  >  **iniciar depuración** (F5).
 
-   - En la barra de menús, elija **Compilar**  > **compilar solución** (Ctrl + Mayús + B).
+   - En la barra de menús, elija **compilar**  >  **compilar solución** (Ctrl + Mayús + B).
 
-     Cuando esta casilla está desactivada, todos los proyectos, sus dependencias y los archivos de solución se compilan cuando se ejecuta alguno de los comandos anteriores. Esta casilla se encuentra desactivada de forma predeterminada.
+     Cuando esta casilla está desactivada, todos los proyectos, sus dependencias y los archivos de solución se compilan cuando se ejecuta alguno de los comandos anteriores. De forma predeterminada, esta casilla de verificación está desactivada.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Para compilar solo el proyecto de Visual C++ seleccionado
 
@@ -109,5 +109,5 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
 
     - Presione las teclas Ctrl+Interrumpir.
 
-## <a name="see-also"></a>Vea también
- [Cómo: ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md) [obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) [compilar y compilar Descripción de](../ide/compiling-and-building-in-visual-studio.md) las configuraciones de [compilación](../ide/understanding-build-configurations.md) [depuración y versiones de proyecto de versión](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ Building Reference ](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)La [línea de comandos de devenv cambia](../ide/reference/devenv-command-line-switches.md) [a soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md) [obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) [compilar y crear](../ide/compiling-and-building-in-visual-studio.md) [Descripción de las configuraciones](../ide/understanding-build-configurations.md) [de compilación depurar y liberar configuraciones de proyecto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) de [C/C++ generación de referencia](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) de la línea de comandos de [devenv cambiar](../ide/reference/devenv-command-line-switches.md) [soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)

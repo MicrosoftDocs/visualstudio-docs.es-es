@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532969"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas personalizadas
@@ -37,7 +37,7 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
 
 - Probar el host personalizado con el procesador de directivas generado.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para definir un DSL, debe tener instalados los siguientes componentes:
 
 |Producto|Vínculo de descarga|
@@ -65,12 +65,12 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
 
      Para obtener más información sobre cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. En el menú **Compilar** , haga clic en **Compilar solución**.
+2. En el menú **Compilar**, haga clic en **Compilar solución**.
 
    > [!IMPORTANT]
    > Este paso genera el procesador de directivas y agrega la clave para él en el registro.
 
-3. En el menú **Depurar**, haga clic en **Iniciar depuración**.
+3. En el menú **Depurar** , haga clic en **Iniciar depuración**.
 
     Se abre una segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
@@ -227,9 +227,9 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
             }
     ```
 
-7. En el menú **Archivo**, haga clic en **Guardar todo**.
+7. En el menú **Archivo** , haga clic en **Guardar todo**.
 
-8. En el menú **Compilar** , haga clic en **Compilar solución**.
+8. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Probar el host personalizado con el procesador de directivas
  Para probar el host de plantilla de texto personalizado, primero debe escribir una plantilla de texto que llame al procesador de directivas generado. Después, ejecute el host personalizado, pásele el nombre de la plantilla de texto y compruebe que la Directiva se procesa correctamente.

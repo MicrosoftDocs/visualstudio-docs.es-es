@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536233"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
@@ -31,7 +31,7 @@ La herramienta Manifest from Resources es una aplicación de consola que toma un
 |/Assembly|Nombre del ensamblado administrado (sin incluir la extensión) o la ruta de acceso en tiempo de ejecución del ensamblado nativo que hospeda los recursos (en relación con la ubicación en tiempo de ejecución del manifiesto).|Obligatorio|
 |/manifest|Nombre que se va a asignar al archivo. imagemanifest generado. También puede incluir una ruta de acceso absoluta o relativa para crear el archivo en una ubicación diferente. El nombre predeterminado coincide con el nombre del ensamblado.<br /><br /> Valor predeterminado: \<Current Directory> \\ ensamblado de<\> . imagemanifest|Opcional|
 |/guidName|Nombre que se va a asignar al símbolo GUID para todas las imágenes del manifiesto generado.<br /><br /> Valor predeterminado: AssetsGuid|Opcional|
-|/rootPath|La ruta de acceso raíz que debe quitarse antes de crear los URI de recursos administrados. (Esta marca es para ayudar en los casos en los que la herramienta obtiene la ruta de acceso del URI relativa equivocada, lo que provoca un error en la carga de los recursos).<br /><br /> Predeterminado: \<Current Directory>|Opcional|
+|/rootPath|La ruta de acceso raíz que debe quitarse antes de crear los URI de recursos administrados. (Esta marca es para ayudar en los casos en los que la herramienta obtiene la ruta de acceso del URI relativa equivocada, lo que provoca un error en la carga de los recursos).<br /><br /> Valor predeterminado: \<Current Directory>|Opcional|
 |/Recursive|Al establecer esta marca, se indica a la herramienta que busque de forma recursiva en los directorios del argumento/Resources. Si se omite este marcador, se producirá una búsqueda de directorios de nivel superior.|Opcional|
 |/isNative|Establezca esta marca cuando el argumento de ensamblado sea una ruta de acceso para un ensamblado nativo. Omita esta marca cuando el argumento de ensamblado sea el nombre de un ensamblado administrado. (Consulte la sección Notas para obtener más información acerca de esta marca).|Opcional|
 |/newGuids|Al establecer esta marca, se indica a la herramienta que cree un nuevo valor para el símbolo GUID de las imágenes en lugar de combinar el del manifiesto existente.|Opcional|

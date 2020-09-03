@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f61a308fcd68b03852176087438c22c245078693
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851549"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: Diseñar un formulario con un control TableLayoutPanel
@@ -21,17 +21,17 @@ ms.locfileid: "75851549"
 
 En este paso, agregará un control `TableLayoutPanel` al formulario. El control TableLayoutPanel ayuda a alinear correctamente los controles del formulario que se agregarán posteriormente.
 
- ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 2 o el](https://msdn.microsoft.com/vbasic/gg315945.aspx) [tutorial 1: C# crear un visor de imágenes en-vídeo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 2 o el](https://msdn.microsoft.com/vbasic/gg315945.aspx) [tutorial 1: crear un visor de imágenes en C# (vídeo 2)](https://msdn.microsoft.com/vcsharp/gg278410.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Para diseñar el formulario con un control TableLayoutPanel
 
-1. En el lado izquierdo del IDE de Visual Studio, busque la pestaña **cuadro de herramientas** . Elija la pestaña cuadro de **herramientas** y aparecerá el cuadro de herramientas. (O bien, en la barra de menús, pulse **Ver**, **Cuadro de herramientas**).
+1. En el lado izquierdo del IDE de Visual Studio, busque la pestaña **cuadro de herramientas** . Elija la pestaña **cuadro de herramientas** y aparecerá el cuadro de herramientas. (O bien, en la barra de menús, pulse **Ver**, **Cuadro de herramientas**).
 
 2. Pulse el símbolo del triángulo pequeño que se encuentra junto al grupo **Contenedores** para abrirlo, tal y como se muestra en la siguiente imagen.
 
      ![Grupo de contenedores](../ide/media/express-toolbox.png "Express_Toolbox") Grupo de contenedores
 
-3. Puede agregar controles como botones, casillas y etiquetas al formulario. Haga doble clic en el control `TableLayoutPanel` en el cuadro de herramientas. (O bien, puede arrastrar el control desde el cuadro de herramientas hasta el formulario). Al hacerlo, el IDE agrega un control de `TableLayoutPanel` al formulario, como se muestra en la siguiente imagen.
+3. Puede agregar controles como botones, casillas y etiquetas al formulario. Haga doble clic en el control `TableLayoutPanel` en el cuadro de herramientas. (O bien, puede arrastrar el control desde el cuadro de herramientas hasta el formulario). Al hacerlo, el IDE agrega un `TableLayoutPanel` control al formulario, como se muestra en la siguiente imagen.
 
      ![Control TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout") Control TableLayoutPanel
 
@@ -69,7 +69,7 @@ En este paso, agregará un control `TableLayoutPanel` al formulario. El control 
 
      ![Tareas de TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel") Tareas de TableLayoutPanel
 
-10. Pulse la tarea **Editar filas y columnas** para abrir la ventana **Estilos de columna y fila**. Pulse **Column1** y establezca su tamaño en el 15 por ciento; para ello, asegúrese de que el botón **Porcentaje** está seleccionado y escriba `15` en el cuadro **Porcentaje**. (Este es un control de `NumericUpDown`, que usará en un tutorial posterior). Elija **columna2** y establézcalo en 85 por ciento. No pulse todavía el botón **Aceptar**, ya que se cerraría la ventana. (Si lo hace, puede volver a abrirla mediante la lista de tareas.)
+10. Pulse la tarea **Editar filas y columnas** para abrir la ventana **Estilos de columna y fila**. Pulse **Column1** y establezca su tamaño en el 15 por ciento; para ello, asegúrese de que el botón **Porcentaje** está seleccionado y escriba `15` en el cuadro **Porcentaje**. (Este es un `NumericUpDown` control, que se utilizará en un tutorial posterior). Elija **columna2** y establézcalo en 85 por ciento. No pulse todavía el botón **Aceptar**, ya que se cerraría la ventana. (Si lo hace, puede volver a abrirla mediante la lista de tareas.)
 
      ![Estilos de columna y fila de TableLayoutPanel](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") Estilos de columna y fila de TableLayoutPanel
 
@@ -81,6 +81,6 @@ En este paso, agregará un control `TableLayoutPanel` al formulario. El control 
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).
+- Para ir al siguiente paso del tutorial, vea [paso 5: agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 3: Establecer las propiedades del formulario](../ide/step-3-set-your-form-properties.md).
+- Para volver al paso anterior del tutorial, vea [paso 3: establecer las propiedades del formulario](../ide/step-3-set-your-form-properties.md).

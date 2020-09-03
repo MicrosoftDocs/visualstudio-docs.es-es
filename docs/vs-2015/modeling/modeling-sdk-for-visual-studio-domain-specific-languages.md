@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4907838720e3a68614e4b9774eb2d7e9fb42ff20
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916540"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Con el SDK de modelado para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), puede crear eficaces herramientas de desarrollo basadas en modelos que puede integrar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Como ejemplo, las herramientas UML se crean mediante el MSDK. De la misma manera, puede crear una o más definiciones de modelo e integrarlas en un conjunto de herramientas.
+Mediante el uso del SDK de modelado para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), puede crear eficaces herramientas de desarrollo basadas en modelos que puede integrar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Como ejemplo, las herramientas UML se crean mediante el MSDK. De la misma manera, puede crear una o más definiciones de modelo e integrarlas en un conjunto de herramientas.
 
  En el núcleo de MSDK se encuentra la definición de un modelo creado para representar conceptos del área de negocio. Puede rodear el modelo con varias herramientas, como una vista en forma de diagrama, la capacidad de generar código y otros artefactos, comandos para transformar el modelo y la capacidad de interactuar con código y otros objetos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Al desarrollar el modelo, puede combinarlo con otros modelos y herramientas para formar un conjunto de herramientas eficaz centrado en el desarrollo.
 
@@ -43,9 +43,9 @@ Con el SDK de modelado para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK),
 ## <a name="samples-and-the-latest-information"></a>Ejemplos e información más reciente
  [Descargar el SDK de modelado para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- Para obtener información sobre técnicas avanzadas y solución de problemas, visite [foro DSL de Visual Studio y herramientas de extensibilidad del modelado](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
+ Para obtener instrucciones sobre técnicas avanzadas y solución de problemas, visite el [Foro de extensibilidad de Visual Studio DSL & Modeling Tools](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
-## <a name="in-this-section"></a>Esta sección
+## <a name="in-this-section"></a>En esta sección
  [Introducción a los lenguajes específicos de dominio](../modeling/getting-started-with-domain-specific-languages.md)
 
  [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)

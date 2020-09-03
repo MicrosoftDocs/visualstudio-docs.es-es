@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 665dc76126eac964f405be06605c40b5b30cc9a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532943"
 ---
 # <a name="visualize-code"></a>Visualizar el código
@@ -41,7 +41,7 @@ Puede usar las herramientas de visualización y modelado de Visual Studio para a
 
 |Escenario|Artículos|
 |-|-|
-|**Entender el código y sus relaciones:**<br /><br /> Asigne relaciones entre elementos de código específicos.<br /><br /> Vea una introducción sobre las relaciones del código para toda la solución.<br /><br /> **Nota**: en esta versión de Visual Studio, se usa el término *mapa de código* en lugar de *gráfico de dependencias*.|-   [Asignación de dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usar mapas de código para depurar las aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Entender el código y sus relaciones:**<br /><br /> Asigne relaciones entre elementos de código específicos.<br /><br /> Vea una introducción sobre las relaciones del código para toda la solución.<br /><br /> **Nota**: en esta versión de Visual Studio, se usa el término *mapa de código* en lugar de *gráfico de dependencias*.|-   [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usar mapas de código para depurar las aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Entender las estructuras de clases:**<br /><br /> Visualice la estructura de las clases de un proyecto mediante la creación de diagramas de clases desde el código.|[Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
 |**Describir el diseño de alto nivel del sistema y validar el código con este diseño:**<br /><br /> Describa el diseño de alto nivel del sistema y sus dependencias previstas mediante la creación de diagramas de capas. Valide el código con este diseño para asegurarse de que las dependencias del código siguen siendo coherentes con el diseño.|-   [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)<br />-   [Diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [Validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
 |**Comunicar los requisitos del usuario y la arquitectura:**<br /><br /> Para modelar los requisitos del usuario y la arquitectura del sistema de software, dibuje los siguientes diagramas UML: actividad, componente, clase, secuencia y caso de uso.|-   [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)<br />-   [Requisitos de usuario de modelo](../modeling/model-user-requirements.md)<br />-   [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|

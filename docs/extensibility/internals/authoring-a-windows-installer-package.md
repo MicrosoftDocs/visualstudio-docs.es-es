@@ -1,5 +1,5 @@
 ---
-title: Creación de un paquete de Windows Installer ? Microsoft Docs
+title: Crear un paquete de Windows Installer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,42 +12,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710040"
 ---
 # <a name="author-a-windows-installer-package"></a>Crear un paquete de Windows Installer
-Los datos controlan el modelo de Windows Installer. En lugar de escribir un script de procedimiento para copiar archivos y escribir entradas del Registro, por ejemplo, se escriben filas y columnas en tablas de base de datos que contienen datos de archivo y registro.
+Data impulsa el modelo de Windows Installer. En lugar de escribir un script de procedimientos para copiar archivos y escribir entradas del registro, por ejemplo, se crean filas y columnas en las tablas de base de datos que contienen datos de archivos y del registro.
 
 ## <a name="database-entries"></a>Entradas de base de datos
-Para instalar un VSPackage, un paquete de Windows Installer debe contener entradas de base de datos para realizar las siguientes tareas:
+Para instalar un VSPackage, un paquete de Windows Installer debe contener entradas de base de datos para realizar las tareas siguientes:
 
-- Busque en el sistema [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para buscar las versiones de los soportes de VSPackage (mediante tablas de Windows Installer que incluyen AppSearch, CompLocator, RegLocator, DrLocator y Signature).
+- Busque en el sistema para encontrar las versiones del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage que admite (mediante Windows Installer tablas que incluyan AppSearch, CompLocator, RegLocator, DrLocator y Signature).
 
-- Cancele la instalación si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no se instala ninguna versión compatible de o si no se cumple otro requisito del sistema del VSPackage (mediante la tabla LaunchCondition).
+- Cancele la instalación si no se ha instalado ninguna versión compatible de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o si no se cumple otro requisito del sistema del VSPackage (mediante la tabla LaunchCondition).
 
-- Instale el VSPackage y los archivos dependientes (mediante el directorio, el componente y las tablas de archivos).
+- Instale el VSPackage y los archivos dependientes (mediante el directorio, el componente y las tablas de archivo).
 
-- Agregue la información adecuada para el VSPackage al registro (mediante la tabla del Registro).
+- Agregue la información adecuada para el VSPackage al registro (mediante la tabla del registro).
 
-- Integre el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage mediante una llamada a **devenv.exe /setup** (mediante la tabla CustomAction).
+- Integre el VSPackage en llamando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **devenv.exe/Setup** (mediante la tabla CustomAction).
 
-Para obtener más información, consulte [Windows Installer](/windows/desktop/Msi/windows-installer-portal).
+Para obtener más información, vea [Windows Installer](/windows/desktop/Msi/windows-installer-portal).
 
-## <a name="setup-tools"></a>Herramientas de configuración
-Una variedad de herramientas de instalación de terceros proporcionan un entorno de desarrollo para paquetes de Windows Installer. Están disponibles las siguientes herramientas gratuitas:
+## <a name="setup-tools"></a>Herramientas de instalación
+Una variedad de herramientas de instalación de terceros proporciona un entorno de desarrollo para Windows Installer paquetes. Están disponibles las siguientes herramientas gratuitas:
 
-- InstallShield edición limitada
+- InstallShield Limited Edition
 
-   Puede obtener una versión limitada de InstallShield a través del cuadro de diálogo **Nuevo proyecto** de Visual Studio. Expanda **Otros tipos de proyecto** y, a continuación, seleccione Configuración e **implementación**. Seleccione la plantilla InstallShield.
+   Puede obtener una versión limitada de InstallShield mediante el cuadro de diálogo **nuevo proyecto** de Visual Studio. Expanda **otros tipos de proyecto** y, a continuación, seleccione **instalación e implementación**. Seleccione la plantilla de InstallShield.
 
-- Conjunto de herramientas XML de Windows Installer
+- Conjunto de herramientas de Windows Installer XML
 
-   El conjunto de herramientas XML (WiX) de Windows Installer compila paquetes de Windows Installer a partir de archivos de origen XML. El conjunto de herramientas WiX es un proyecto de código abierto de Microsoft. Puede descargar el código fuente y los ejecutables desde el conjunto de [herramientas Wix.](https://sourceforge.net/projects/wix/)
+   El conjunto de herramientas de Windows Installer XML (WiX) crea paquetes de Windows Installer a partir de archivos de origen XML. El conjunto de herramientas de WiX es un proyecto de código abierto de Microsoft. Puede descargar el código fuente y los ejecutables del [conjunto de herramientas de Wix](https://sourceforge.net/projects/wix/).
 
-   Para los productos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comerciales que [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]se integran mediante el archivo , vea [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+   Para los productos comerciales que se integran en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mediante [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , consulte [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ## <a name="see-also"></a>Vea también
-- [Instalar VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Instale VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

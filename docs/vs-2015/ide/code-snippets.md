@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b41b6e4d4a7635b32edb5697c89ecb1249fb9da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619728"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
@@ -48,7 +48,7 @@ finally
 
 ```
 
- Puede insertar este fragmento de código haciendo clic en **Insertar fragmento de código** en el menú contextual de la ventana de código y, después, en **Visual C#** . A continuación, escriba `tryf` y pulse el tabulador. También puede escribir `tryf` y pulsar el tabulador dos veces seguidas.
+ Puede insertar este fragmento de código haciendo clic en **Insertar fragmento de código** en el menú contextual de la ventana de código y, después, en **Visual C#**. A continuación, escriba `tryf` y pulse el tabulador. También puede escribir `tryf` y pulsar el tabulador dos veces seguidas.
 
  Un ejemplo de un fragmento de código rodear con: en el acceso directo de C++ `if` se puede utilizar como un fragmento de código de inserción o como un fragmento de código rodear con. Si selecciona una línea de código (por ejemplo, `return FALSE;`) y, después, hace clic en **Rodear con** y en **si**, el fragmento de código se expande alrededor de la línea:
 
@@ -85,5 +85,5 @@ End Property
 
  Puede agregar y eliminar directorios de fragmentos de código con los botones **Agregar** y **Eliminar** del cuadro de diálogo **Administrador de fragmentos de código**. Para agregar fragmentos de código individuales, utilice el botón **Importar**.
 
-## <a name="see-also"></a>Vea también
- [Tutorial: crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md) [Cómo: distribuir fragmentos de código](../ide/how-to-distribute-code-snippets.md) procedimientos [recomendados para usar fragmentos de código solución de](../ide/best-practices-for-using-code-snippets.md) [problemas](../ide/troubleshooting-snippets.md) de fragmentos de código Visual [ C# ](../ide/visual-csharp-code-snippets.md) fragmentos de código fragmentos de código [Visual C++ ](../ide/visual-cpp-code-snippets.md) [Referencia de esquema de fragmentos de código](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>Consulte también
+ [Tutorial: crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md) [Cómo: distribuir fragmentos de código procedimientos](../ide/how-to-distribute-code-snippets.md) [recomendados para usar fragmentos de código solución de problemas de](../ide/best-practices-for-using-code-snippets.md) [fragmentos](../ide/troubleshooting-snippets.md) de código [Visual C# fragmentos](../ide/visual-csharp-code-snippets.md) de código [Visual C++](../ide/visual-cpp-code-snippets.md) fragmentos de código referencia de esquema de [fragmentos](../ide/code-snippets-schema-reference.md) de código

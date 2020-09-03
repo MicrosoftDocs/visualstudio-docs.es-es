@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633634"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Elemento ItemDefinitionGroup (MSBuild)
 
 El elemento `ItemDefinitionGroup` permite definir un conjunto de definiciones de elementos, que son valores de metadatos que, de forma predeterminada, se aplican a todos los elementos del proyecto. Con ItemDefinitionGroup, ya no es necesario usar [CreateItem (Tarea)](../msbuild/createitem-task.md) ni [CreateProperty (Tarea)](../msbuild/createproperty-task.md). Para obtener más información, vea [Definiciones de elementos](../msbuild/item-definitions.md).
 
-\<Project> \<ItemDefinitionGroup>
+\<Project>
+\<ItemDefinitionGroup>
 
 ## <a name="syntax"></a>Sintaxis
 

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21fdc15b161b7d1cef30effe82e518a174bc9666
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619547"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Crear comentarios de documentación XML para IntelliSense para JavaScript
@@ -26,14 +26,14 @@ ms.locfileid: "72619547"
 
 Los *comentarios de documentación XML* son comentarios de JavaScript que se agregan a un script para proporcionar información sobre elementos de código como funciones, campos y variables. En Visual Studio, estas descripciones de texto se muestran con IntelliSense cuando se hace referencia a la función de script.
 
- En este tema se proporciona un tutorial básico sobre el uso de comentarios de documentación XML. Para obtener información sobre el uso de otros elementos, como [\<var >](../ide/var-javascript.md) y [\<value >](../ide/value-javascript.md)y para obtener ejemplos de código adicionales, vea los [comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md). Para obtener información sobre cómo proporcionar información de IntelliSense para una devolución de llamada asincrónica, como un `Promise`, vea [\<returns >](../ide/returns-javascript.md).
+ En este tema se proporciona un tutorial básico sobre el uso de comentarios de documentación XML. Para obtener información sobre el uso de otros elementos, como [\<var>](../ide/var-javascript.md) y [\<value>](../ide/value-javascript.md) , y para obtener ejemplos de código adicionales, vea los [comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md). Para obtener información sobre cómo proporcionar información de IntelliSense para una devolución de llamada asincrónica como `Promise` , vea [\<returns>](../ide/returns-javascript.md) .
 
 > [!NOTE]
 > Los comentarios de documentación XML únicamente están disponibles en los archivos, ensamblados y servicios a los que se hace referencia.
 
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Para crear comentarios de documentación XML para una función de JavaScript
 
-- En la función, agregue [\<summary](../ide/summary-javascript.md)los elementos >, [\<param >](../ide/param-javascript.md)y [\<returns >](../ide/returns-javascript.md) y preceder a cada elemento con tres marcas de barra diagonal (///).
+- En la función, agregue [\<summary>](../ide/summary-javascript.md) [\<param>](../ide/param-javascript.md) [\<returns>](../ide/returns-javascript.md) los elementos, y, y precedan a cada elemento con tres marcas de barra diagonal (///).
 
     > [!NOTE]
     > Cada elemento debe estar en una sola línea.
@@ -62,9 +62,9 @@ Los *comentarios de documentación XML* son comentarios de JavaScript que se agr
 
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>Para crear comentarios de documentación XML para un campo de JavaScript
 
-- En una función de constructor o definición de objeto, agregue un elemento [\<field >](../ide/field-javascript.md) precedido por tres marcas de barra diagonal (///).
+- En una función de constructor o definición de objeto, agregue un [\<field>](../ide/field-javascript.md) elemento precedido por tres marcas de barra diagonal (///).
 
-     En el ejemplo siguiente se muestra el uso del elemento `<field>` en una función constructora. Para obtener más ejemplos, vea [\<field >](../ide/field-javascript.md).
+     En el ejemplo siguiente se muestra el uso del `<field>` elemento en una función constructora. Para obtener más ejemplos, vea [\<field>](../ide/field-javascript.md) .
 
     ```javascript
     function Engine() {
@@ -87,7 +87,7 @@ Los *comentarios de documentación XML* son comentarios de JavaScript que se agr
 
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>Para crear comentarios de documentación XML para una función sobrecargada
 
-1. En la función, agregue un elemento [\<signature >](../ide/signature-javascript.md) para cada sobrecarga. En estos elementos, agregue otros elementos, como `<summary>`, `<param>` y `<returns>`, delante de cada elemento con tres marcas de barra diagonal (///).
+1. En la función, agregue un [\<signature>](../ide/signature-javascript.md) elemento para cada sobrecarga. En estos elementos, agregue otros elementos, como `<summary>` , `<param>` y `<returns>` , delante de cada elemento con tres marcas de barra diagonal (///).
 
      En el ejemplo siguiente se muestra una función de JavaScript sobrecargada. En este ejemplo, las sobrecargas se diferencian por el tipo de parámetro.
 
@@ -118,9 +118,9 @@ Los *comentarios de documentación XML* son comentarios de JavaScript que se agr
 1. Cree un archivo XML que tenga comentarios de documentación en el formato OpenAjax MessageBundle.
 
     > [!IMPORTANT]
-    > MessageBundle es el formato recomendado. Este formato no se admite en Microsoft Ajax o en archivos. winmd. Para obtener información acerca del uso del formato de `VSDoc` alternativo, consulte [\<loc >](../ide/loc-javascript.md).
+    > MessageBundle es el formato recomendado. Este formato no se admite en Microsoft Ajax o en archivos. winmd. Para obtener información acerca del uso del `VSDoc` formato alternativo, vea [\<loc>](../ide/loc-javascript.md) .
 
-     En el ejemplo siguiente se muestra el contenido de un archivo sidecar que contiene la información de IntelliSense localizada. Se trata de un archivo XML que se encuentra en una carpeta específica de la referencia cultural, como JA. La carpeta debe estar en la misma ubicación que el archivo. js que contiene el elemento `<loc>`. El nombre de archivo del archivo XML debe coincidir con el parámetro `filename` especificado en el elemento `<loc>`.
+     En el ejemplo siguiente se muestra el contenido de un archivo sidecar que contiene la información de IntelliSense localizada. Se trata de un archivo XML que se encuentra en una carpeta específica de la referencia cultural, como JA. La carpeta debe estar en la misma ubicación que el archivo. js que contiene el `<loc>` elemento. El nombre de archivo del archivo XML debe coincidir con el `filename` parámetro especificado en el `<loc>` elemento.
 
     ```
     <messagebundle>
@@ -131,14 +131,14 @@ Los *comentarios de documentación XML* son comentarios de JavaScript que se agr
 
     ```
 
-2. En el archivo. js, agregue el código siguiente. El elemento `<loc>` se debe declarar antes que cualquier script y sigue las mismas reglas de uso que el elemento `<reference>`. Para obtener más información, vea [IntelliSense para JavaScript](../ide/javascript-intellisense.md) y [\<loc >](../ide/loc-javascript.md).
+2. En el archivo. js, agregue el código siguiente. El `<loc>` elemento debe declararse antes que cualquier script y sigue las mismas reglas de uso que el `<reference>` elemento. Para obtener más información, vea [IntelliSense para JavaScript](../ide/javascript-intellisense.md) y [\<loc>](../ide/loc-javascript.md) .
 
     ```javascript
     /// <loc filename="messageFilename.xml" format="messagebundle"/>
 
     ```
 
-3. En el archivo. js, agregue los elementos de documentación XML y las descripciones predeterminadas. Establezca los valores de atributo de `locid` para que coincidan con los valores de atributo de `name` correspondientes del archivo sidecar. Las descripciones predeterminadas se reemplazarán por la información de IntelliSense localizada, si está disponible.
+3. En el archivo. js, agregue los elementos de documentación XML y las descripciones predeterminadas. Establezca los `locid` valores de atributo para que coincidan con los `name` valores de atributo correspondientes del archivo sidecar. Las descripciones predeterminadas se reemplazarán por la información de IntelliSense localizada, si está disponible.
 
     ```javascript
     function add(a,b)
@@ -156,5 +156,5 @@ Los *comentarios de documentación XML* son comentarios de JavaScript que se agr
     add(
     ```
 
-## <a name="see-also"></a>Vea también
- [IntelliSense para JavaScript](../ide/javascript-intellisense.md) [Comentarios en la documentación XML ](../ide/xml-documentation-comments-javascript.md) [NIB: Tutorial: IntelliSense para JavaScript en ASP.NET](https://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)
+## <a name="see-also"></a>Consulte también
+ [JavaScript IntelliSense](../ide/javascript-intellisense.md) [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md) [de IntelliSense para JavaScript NIB: Tutorial: IntelliSense para JavaScript en ASP.net](https://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)

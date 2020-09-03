@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 74da305b69a9561573466d385c5d7b686da3693f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620326"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
@@ -27,7 +27,7 @@ El código de un fragmento de código muestra solo la forma más sencilla de hac
 ## <a name="handling-exceptions"></a>Controlar las excepciones
  Normalmente, el fragmento de código Try... Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, consulte [Cómo: Controlar una excepción mediante Try y Catch (Guía de programación de C#)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) y [Try...Catch...Finally (instrucción)](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).
 
-## <a name="file-locations"></a>Ubicaciones de archivos
+## <a name="file-locations"></a>Ubicación de archivos
  Al adaptar las ubicaciones de archivo a la aplicación, debe tener en cuenta lo siguiente:
 
 - Encontrar una ubicación accesible. Es posible que los usuarios no tengan acceso a la carpeta Archivos de programa del equipo, por lo que puede que no sirva almacenar archivos con los archivos de aplicación.
@@ -66,5 +66,5 @@ El código de un fragmento de código muestra solo la forma más sencilla de hac
 
   - El fragmento de código puede contener referencias que se agregan automáticamente al proyecto y es posible que se carguen desde cualquier lugar del sistema. Es posible que estas referencias se hayan descargado en el equipo desde el mismo sitio del que ha descargado el fragmento de código. El fragmento de código puede realizar una llamada a un método en la referencia que ejecuta código malintencionado. Para protegerse contra este tipo de ataque, revise los bloques Importaciones y Referencias del archivo de fragmentos.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Visual Basic fragmentos de código de IntelliSense](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643) [proteger](../ide/securing-applications.md) [fragmentos de código](../ide/code-snippets.md) de aplicaciones

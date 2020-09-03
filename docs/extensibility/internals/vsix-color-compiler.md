@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536102"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de colores de VSIX
@@ -50,9 +50,9 @@ La herramienta de compilador de color de extensión de Visual Studio es una apli
 </Theme>
 ```
 
-|**Attribute**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
-|NOMBRE|Desee Nombre del tema.|
+|Nombre|Desee Nombre del tema.|
 |GUID|Desee GUID del tema (debe coincidir con el formato de GUID)|
 
  Al crear colores personalizados para Visual Studio, esos colores deben definirse para los temas siguientes. Si no existe ningún color para un tema determinado, Visual Studio intenta cargar los colores que faltan del tema claro.
@@ -74,9 +74,9 @@ La herramienta de compilador de color de extensión de Visual Studio es una apli
  </Category>
 ```
 
-|**Attribute**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
-|NOMBRE|Desee El nombre de la categoría.|
+|Nombre|Desee El nombre de la categoría.|
 |GUID|Desee GUID de la categoría (debe coincidir con el formato de GUID)|
 
  **Color**
@@ -90,9 +90,9 @@ La herramienta de compilador de color de extensión de Visual Studio es una apli
  </Color>
 ```
 
-|**Attribute**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
-|NOMBRE|Desee Nombre del color.|
+|Nombre|Desee Nombre del color.|
 
  **Fondo y/o primer plano**
 
@@ -103,7 +103,7 @@ La herramienta de compilador de color de extensión de Visual Studio es una apli
 <Foreground Type="type" Source="int" />
 ```
 
-|**Attribute**|**Definición**|
+|**Atributo**|**Definition**|
 |-|-|
 |Tipo|Desee Tipo del color. Puede tener uno de los valores siguientes:<br /><br /> *CT_INVALID:* El color no es válido o no está establecido.<br /><br /> *CT_RAW:* Valor ARGB sin formato.<br /><br /> *CT_COLORINDEX:* NO USE.<br /><br /> *CT_SYSCOLOR:* Un color del sistema Windows de SysColor.<br /><br /> *CT_VSCOLOR:* Un color de Visual Studio de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Color automático.<br /><br /> *CT_TRACK_FOREGROUND:* NO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NO USE.|
 |Source|Desee Valor del color representado en hexadecimal.|

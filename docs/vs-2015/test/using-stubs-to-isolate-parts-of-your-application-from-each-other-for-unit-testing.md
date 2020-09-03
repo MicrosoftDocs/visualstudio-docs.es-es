@@ -9,16 +9,16 @@ caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b77a088fc144df8c7305098e48c45f672733a7c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851191"
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Uso de códigos auxiliares para aislar entre sí las partes de la aplicación y realizar pruebas unitarias
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar stubs para aislar las partes de la aplicación entre sí para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los tipos de código auxiliar** son una de las dos tecnologías que el marco Microsoft Fakes proporciona para permitir aislar fácilmente un componente que se está probando desde otros componentes a los que llama. Un código auxiliar es un pequeño fragmento de código que sustituye a otro componente durante las pruebas. La ventaja de usar un código auxiliar es que devuelve resultados coherentes, por lo que resulta más fácil escribir las pruebas. Y se pueden ejecutar pruebas aun cuando los otros componentes no estén funcionando todavía.
+Los tipos de código auxiliar** son una de las dos tecnologías que el marco Microsoft Fakes proporciona para permitir aislar fácilmente un componente que se está probando desde otros componentes a los que llama. El código auxiliar es un fragmento de código que ocupa el lugar de otro componente durante las pruebas. La ventaja de utilizar código auxiliar es que devuelve resultados coherentes, haciendo que la prueba sea más fácil de escribir. Y se pueden ejecutar pruebas aun cuando los otros componentes no estén funcionando todavía.
 
  Para obtener una visión general y una guía de inicio rápido de Fakes, vea [Aislar el código probado con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -26,7 +26,7 @@ Los tipos de código auxiliar** son una de las dos tecnologías que el marco Mic
 
  En el diagrama, el componente StockAnalyzer es el que deseamos probar. Utiliza normalmente otro componente, RealStockFeed. Pero RealStockFeed devuelve resultados diferentes cada vez que se llama a sus métodos, lo que hace que sea difícil probar StockAnalyzer.  Durante la prueba, se reemplaza con otra clase, StubStockFeed.
 
- ![Las clases real y de código auxiliar se ajustan a una interfaz.](../test/media/fakesinterfaces.png "FakesInterfaces")
+ ![Clases Real y Stub según una interfaz.](../test/media/fakesinterfaces.png "FakesInterfaces")
 
  Dado que el código auxiliar depende de la capacidad de estructurar el código de esta manera, normalmente se utiliza código auxiliar para aislar una parte de la aplicación de otra. Para aislarla de otros ensamblados que no están bajo su control, como System.dll, utilizaría normalmente correcciones de compatibilidad (shims). Vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
@@ -34,9 +34,9 @@ Los tipos de código auxiliar** son una de las dos tecnologías que el marco Mic
 
 - Visual Studio Enterprise
 
-## <a name="How"></a> Cómo usar códigos auxiliares
+## <a name="how-to-use-stubs"></a><a name="How"></a> Cómo usar códigos auxiliares
 
-### <a name="Dependency"></a> Diseñar para la inyección de dependencia
+### <a name="design-for-dependency-injection"></a><a name="Dependency"></a> Diseño para la inserción de dependencias
  Para utilizar código auxiliar, la aplicación se tiene que diseñar de modo que no exista ninguna dependencia entre los distintos componentes, sino que solo dependan de definiciones de interfaz. En lugar de acoplarse en tiempo de compilación, los componentes se conectan en tiempo de ejecución. Este patrón ayuda a crear software eficaz y fácil de actualizar, porque los cambios no tienden a propagarse más allá de los límites de los componentes. Se recomienda su seguimiento aunque no se use código auxiliar. Si está escribiendo código nuevo, es fácil seguir el patrón de [inyección de dependencia](https://en.wikipedia.org/wiki/Dependency_injection). Si está escribiendo pruebas para software existente, quizás tenga que refactorizarlo. Si considera que no sería práctico, podría utilizar correcciones de compatibilidad (shims) en su lugar.
 
  Comencemos la explicación con un ejemplo motivador, el del diagrama. La clase StockAnalyzer lee el precio de las acciones y genera algunos resultados interesantes. Tiene algunos métodos públicos, que deseamos probar. Para que sea más sencillo, centrémonos en uno de esos métodos, uno muy simple que notifica el precio actual de una acción determinada. Deseamos escribir una prueba unitaria de ese método. A continuación se muestra un primer borrador de la prueba:
@@ -144,7 +144,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
  Hay maneras más flexibles de realizar esta conexión. Por ejemplo, StockAnalyzer podría aceptar un objeto generador que puede crear instancias de distintas implementaciones de IStockFeed en condiciones diferentes.
 
-### <a name="GeneratingStubs"></a> Generar código auxiliar
+### <a name="generate-stubs"></a><a name="GeneratingStubs"></a> Generar códigos auxiliares
  Ha desacoplado la clase que desea probar de los componentes que utiliza. Además de conseguir que la aplicación sea más sólida y flexible, el desacoplamiento permite conectar el componente en prueba a las implementaciones de código auxiliar de las interfaces con fines de evaluación.
 
  Simplemente podría escribir el código auxiliar como clases de la forma habitual. Sin embargo, Microsoft Fakes proporciona una manera más dinámica de crear el código auxiliar más adecuado para cada prueba.
@@ -153,7 +153,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
 ##### <a name="adding-a-fakes-assembly"></a>Agregar un ensamblado de Fakes
 
-1. En el Explorador de soluciones, expanda **Referencias** en el proyecto de prueba unitaria.
+1. En Explorador de soluciones, expanda las **referencias**del proyecto de prueba unitaria.
 
     - Si está trabajando en Visual Basic, debe seleccionar **Mostrar todos los archivos** en la barra de herramientas del Explorador de soluciones para ver la lista de referencias.
 
@@ -161,7 +161,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
 3. En el menú contextual, seleccione **Agregar ensamblado de Fakes**.
 
-### <a name="WriteTest"></a> Escribir la prueba con código auxiliar
+### <a name="write-your-test-with-stubs"></a><a name="WriteTest"></a> Escribir la prueba con código auxiliar
 
 ```csharp
 [TestClass]
@@ -223,7 +223,7 @@ End Class
 
  El código auxiliar también se genera para captadores y establecedores de propiedades, para los eventos y para métodos genéricos.
 
-### <a name="mocks"></a> Comprobar valores de parámetro
+### <a name="verifying-parameter-values"></a><a name="mocks"></a> Comprobar valores de parámetro
  Puede comprobar que, cuando el componente realiza una llamada a otro componente, pase los valores correctos. Puede colocar una aserción en el código auxiliar o almacenar el valor y comprobarlo en el cuerpo principal de la prueba. Por ejemplo:
 
 ```csharp
@@ -301,9 +301,9 @@ Class TestMyComponent
 End Class
 ```
 
-## <a name="BKMK_Stub_basics"></a> Código auxiliar para las diferentes clases de miembros de tipo
+## <a name="stubs-for-different-kinds-of-type-members"></a><a name="BKMK_Stub_basics"></a> Códigos auxiliares para diferentes tipos de miembros de tipo
 
-### <a name="BKMK_Methods"></a> Métodos
+### <a name="methods"></a><a name="BKMK_Methods"></a> Modalidades
  Como se describe en el ejemplo, los métodos se pueden procesar con stub asociando un delegado a una instancia de la clase de código auxiliar. El nombre del tipo de código auxiliar se deriva de los nombres del método y los parámetros. Por ejemplo, dada la siguiente interfaz `IMyInterface` y el método `MyMethod`:
 
 ```csharp
@@ -325,7 +325,7 @@ interface IMyInterface
 
  Si no proporciona código auxiliar para una función, Fakes genera una función que devuelve el valor predeterminado del tipo de valor devuelto. Para los números el valor predeterminado es 0 y para los tipos de clase es `null` (C#) o `Nothing` (Visual Basic).
 
-### <a name="BKMK_Properties"></a> Propiedades
+### <a name="properties"></a><a name="BKMK_Properties"></a> Propiedades
  Los captadores y establecedores de propiedad se exponen como delegados independientes, y pueden procesarse con stub por separado. Por ejemplo, considere la propiedad `Value` de `IMyInterface`:
 
 ```csharp
@@ -350,7 +350,7 @@ stub.ValueSet = (value) => i = value;
 
  Si no proporciona métodos de código auxiliar para el establecedor o captador de una propiedad, Fakes genera código auxiliar que almacena valores, de modo que la propiedad de código auxiliar funcione como una variable simple.
 
-### <a name="BKMK_Events"></a> Eventos
+### <a name="events"></a><a name="BKMK_Events"></a> Ceso
  Los eventos se exponen como campos de delegado. Como resultado, cualquier evento procesado con stub se puede generar simplemente mediante una invocación al campo de respaldo de eventos. Veamos la interfaz siguiente que se procesa con stub:
 
 ```csharp
@@ -371,7 +371,7 @@ interface IWithEvents
 
 ```
 
-### <a name="BKMK_Generic_methods"></a> Métodos genéricos
+### <a name="generic-methods"></a><a name="BKMK_Generic_methods"></a> Métodos genéricos
  Es posible procesar con stub métodos genéricos si se proporciona un delegado para cada instancia deseada del método. Por ejemplo, dada la siguiente interfaz que contiene un método genérico:
 
 ```csharp
@@ -399,7 +399,7 @@ public void TestGetValue()
 
  Si el código llamase a `GetValue<T>` con cualquier otra instancia, el código auxiliar llamaría simplemente al comportamiento.
 
-### <a name="BKMK_Partial_stubs"></a> Código auxiliar de clases virtuales
+### <a name="stubs-of-virtual-classes"></a><a name="BKMK_Partial_stubs"></a> Códigos auxiliares de clases virtuales
  En los ejemplos anteriores, el código auxiliar se han generado a partir de interfaces. También puede generar código auxiliar desde una clase que tenga miembros virtuales o abstractos. Por ejemplo:
 
 ```csharp
@@ -438,16 +438,16 @@ stub.CallBase = true;
 Assert.AreEqual(43,stub.DoVirtual(1));
 ```
 
-## <a name="BKMK_Debugging_stubs"></a> Código auxiliar de depuración
+## <a name="debugging-stubs"></a><a name="BKMK_Debugging_stubs"></a> Código auxiliar de depuración
  Los tipos de código auxiliar se diseñan para proporcionar una depuración fluida. De forma predeterminada, el depurador pasa por alto cualquier código generado, por lo que se debe pasar directamente a las implementaciones personalizadas del miembro que estaban asociadas al código auxiliar.
 
-## <a name="BKMK_Stub_limitation"></a> Limitaciones del código auxiliar
+## <a name="stub-limitations"></a><a name="BKMK_Stub_limitation"></a> Limitaciones de código auxiliar
 
 1. No se admiten las signaturas de método con punteros.
 
 2. Las clases o métodos estáticos sellados no pueden procesarse con stub porque los tipos de código auxiliar dependen del envío del método virtual. En estos casos, use los tipos de correcciones de compatibilidad (shim) como se describe en [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
-## <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Cambiar el comportamiento predeterminado del código auxiliar
+## <a name="changing-the-default-behavior-of-stubs"></a><a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Cambiar el comportamiento predeterminado del código auxiliar
  Cada tipo de código auxiliar generado contiene una instancia de la interfaz `IStubBehavior` (mediante la propiedad `IStub.InstanceBehavior`). Se llama al comportamiento cuando un cliente llama a un miembro sin ningún delegado personalizado asociado. Si el comportamiento no se ha establecido, se utiliza la instancia devuelta por la propiedad `StubsBehaviors.Current`. De forma predeterminada, esta propiedad devuelve un comportamiento que genera una excepción `NotImplementedException`.
 
  El comportamiento se puede cambiar en cualquier momento estableciendo la propiedad `InstanceBehavior` en cualquier instancia de código auxiliar. Por ejemplo, el siguiente fragmento cambia un comportamiento que no hace nada o devuelve el valor predeterminado del tipo de valor devuelto `default(T)`:
@@ -471,8 +471,8 @@ StubBehaviors.Current =
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Orientación
+### <a name="guidance"></a>Instrucciones
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Vea también
- [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+## <a name="see-also"></a>Consulte también
+ [Aislar el código probado con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

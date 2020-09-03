@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Usar el teclado exclusivamente | Microsoft Docs
+title: 'Cómo: Usar el teclado exclusivamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,19 +17,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9a9ec5f83a6df3dab262e24aac5c36b2d65ef00
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852375"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Procedimiento Usar exclusivamente el teclado
+# <a name="how-to-use-the-keyboard-exclusively"></a>Cómo: Utilizar el teclado exclusivamente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona muchas combinaciones de teclas de método abreviado predeterminadas para facilitar la navegación y codificación en el entorno de desarrollo integrado (IDE). Para obtener un listado completo de las teclas de método abreviado que se usan en Visual Studio, vea [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre los métodos abreviados de teclado disponibles para otros productos de Microsoft, vea [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona muchas combinaciones de teclas de método abreviado predeterminadas para facilitar la navegación y codificación en el entorno de desarrollo integrado (IDE). Para obtener una lista completa de las teclas de método abreviado usadas en Visual Studio, consulte [métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre los métodos abreviados de teclado disponibles para otros productos de Microsoft, vea [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx) .
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="toolbox-controls"></a>Controles del cuadro de herramientas
  Puede agregar un control en el cuadro de herramientas a un formulario o diseñador con el teclado.
@@ -59,11 +59,11 @@ ms.locfileid: "75852375"
 
     - Para las casillas, use la **BARRA ESPACIADORA** para seleccionar o anular la selección.
 
-    - Para las listas desplegables, use **ALT** + **FLECHA ABAJO** para mostrar elementos y, después, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.
+    - En el caso de las listas desplegables, use **Alt**  +  **flecha abajo** para mostrar los elementos y, a continuación, use **flecha arriba** y **flecha abajo** para cambiar el elemento seleccionado.
 
-    - Para los botones de opción, presione **ENTRAR** para invocarlos.
+    - Para los botones, presione **entrar** para invocar.
 
-    - Para las cuadrículas, use las teclas de flecha para desplazarse. Para las listas desplegables en las cuadrículas, use **MAYÚS** + **ALT** + **FLECHA ABAJO** para mostrar elementos y, después, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.
+    - Para las cuadrículas, use las teclas de flecha para desplazarse. En las listas desplegables de las cuadrículas, use **MAYÚS**  +  **Alt**  +  **flecha abajo** para mostrar los elementos y, a continuación, use las **flechas arriba** y **flecha abajo** para cambiar el elemento seleccionado.
 
 ## <a name="window-and-file-navigation"></a>Navegación de archivos y ventanas
  El IDE le proporciona varias maneras de moverse entre las ventanas de documentos y herramientas abiertas con el teclado. También puede mover y acoplar las ventanas de herramientas en diferentes ubicaciones con el teclado.
@@ -80,13 +80,13 @@ ms.locfileid: "75852375"
 
 2. En el menú **Ventana**, haga clic en **Acoplable**.
 
-3. Presione **ALT** + **Espacio** y, después, pulse **Mover**.
+3. Presione la **tecla**  +  **barra espaciadora** y, a continuación, elija **movimiento**.
 
      Aparece el diamante de guía de acoplamiento.
 
-4. Use las teclas de **flecha** para mover la ventana en una nueva ubicación.
+4. Utilice las teclas de **Dirección** para desplace la ventana a una nueva ubicación.
 
-     El puntero del mouse se mueve con la ventana a medida que usa las teclas de **flecha**.
+     El puntero del mouse se mueve con la ventana a medida que usa las teclas de **Dirección** .
 
 5. Cuando haya llegado a la nueva ubicación, use las teclas de **flecha** para mover el puntero del mouse sobre la parte correcta del diamante de guía.
 
@@ -96,5 +96,5 @@ ms.locfileid: "75852375"
 
      La ventana de herramientas se ajusta en la nueva ubicación de acoplamiento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Identificar y personalizar los métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [sugerencias de accesibilidad y trucos](../../ide/reference/accessibility-tips-and-tricks.md) [métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

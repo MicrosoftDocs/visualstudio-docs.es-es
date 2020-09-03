@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536089"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
@@ -75,16 +75,16 @@ partition.SetLocks(Locks.Delete);
 
   No se puede establecer un bloqueo en una partición o un almacén y, al mismo tiempo, deshabilitar el bloqueo en un elemento individual.
 
-|Valor|Significado si `IsLocked(Value)` es true|
+|Value|Significado si `IsLocked(Value)` es true|
 |-|-|
-|None|Sin restricción.|
-|Propiedad.|No se pueden cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|
-|Agregar|No se pueden crear nuevos elementos y vínculos en una partición o almacén.<br /><br /> No es aplicable a `ModelElement` .|
+|Ninguno|Sin restricción.|
+|Propiedad|No se pueden cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|
+|Sumar|No se pueden crear nuevos elementos y vínculos en una partición o almacén.<br /><br /> No es aplicable a `ModelElement` .|
 |Mover|No se puede desplazar el elemento entre particiones si `element.IsLocked(Move)` es true o si `targetPartition.IsLocked(Move)` es true.|
 |Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento o en cualquiera de los elementos en los que se propagará la eliminación, como elementos y formas incrustados.<br /><br /> Puede utilizar `element.CanDelete()` para detectar si un elemento se puede eliminar.|
 |Reordenar|No se puede cambiar el orden de los vínculos en un roleplayer.|
 |RolePlayer|No se puede cambiar el conjunto de vínculos que se encuentran en este elemento. Por ejemplo, los nuevos elementos no se pueden incrustar en este elemento. Esto no afecta a los vínculos para los que este elemento es el destino.<br /><br /> Si este elemento es un vínculo, su origen y destino no se ven afectados.|
-|All|OR bit a bit de los demás valores.|
+|Todo|OR bit a bit de los demás valores.|
 
 ## <a name="locking-policies"></a>Directivas de bloqueo
  Como autor de un DSL, puede definir una directiva de *bloqueo*. Una directiva de bloqueo modera el funcionamiento de SetLocks (), de modo que se puede evitar que se establezcan bloqueos específicos o se exija que se establezcan bloqueos específicos. Normalmente, se usaría una directiva de bloqueo para evitar que los usuarios o desarrolladores infrinjan accidentalmente el uso previsto de un DSL, de la misma manera que se puede declarar una variable `private` .
@@ -100,7 +100,7 @@ partition.SetLocks(Locks.Delete);
 - Agregue esta clase a los servicios que están disponibles a través del cData de DSL.
 
 ### <a name="to-define-a-locking-policy"></a>Para definir una directiva de bloqueo
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>tiene la siguiente definición:
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> tiene la siguiente definición:
 
 ```csharp
 public interface ILockingPolicy
@@ -142,7 +142,7 @@ namespace Company.YourDsl.DslPackage // Change
     }
 ```
 
- Para asegurarse de que los usuarios siempre pueden eliminar elementos, incluso si otras llamadas a código`SetLocks(Lock.Delete):`
+ Para asegurarse de que los usuarios siempre pueden eliminar elementos, incluso si otras llamadas a código `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 
