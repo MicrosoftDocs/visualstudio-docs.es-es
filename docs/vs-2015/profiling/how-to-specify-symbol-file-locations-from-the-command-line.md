@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 01fbb6cfd1717562af79c067ede0cad9753ad5dd
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557891"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Cómo: Especificar ubicaciones del archivo de símbolos desde la línea de comandos
@@ -38,7 +38,7 @@ Para mostrar información de símbolos como nombres de función y números de l�
   También puede utilizar ambos métodos.  
   
 > [!NOTE]
-> Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está instalado en el equipo local, probablemente ya se ha especificado una ubicación de los archivos de símbolos de Windows. Para obtener más información, consulte [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md). Todavía debe configurar VSPerfReport para utilizar la ubicación y el servidor tal como se describe más adelante en este tema.  
+> Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está instalado en el equipo local, probablemente ya se ha especificado una ubicación de los archivos de símbolos de Windows. Para obtener más información, vea [Cómo: hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md). Todavía debe configurar VSPerfReport para utilizar la ubicación y el servidor tal como se describe más adelante en este tema.  
   
 ## <a name="specifying-windows-symbol-files"></a>Especificar archivos de símbolos de Windows  
   
@@ -50,7 +50,7 @@ Para mostrar información de símbolos como nombres de función y números de l�
   
    `srv*<LocalStore>*https://msdl.microsoft.com/downloads/symbols`  
   
-   donde *<LocalStore>* es la ruta de acceso del directorio local que creó.  
+   donde *<LocalStore>* es la ruta de acceso del directorio local creado.  
   
 ## <a name="specifying-component-symbol-files"></a>Especificar archivos de símbolos de componente  
  Las herramientas de generación de perfiles buscan los archivos .pdb de los componentes de los cuales desea generar perfiles en sus ubicaciones originales que se almacenan en los componentes o en la carpeta que contiene el archivo de datos de generación de perfiles. Puede especificar otras ubicaciones de búsqueda mediante la adición de una o más rutas de acceso a **_NT_SYMBOL_PATH** o a la opción **/SymbolPath**. Separe las rutas de acceso con punto y coma.  
@@ -64,4 +64,4 @@ Para mostrar información de símbolos como nombres de función y números de l�
 
  La siguiente línea de comandos de VSPerfReport agrega el directorio C:\Projects\Symbols a la ruta de búsqueda mediante la opción **/SymbolPath**.  
   
- **VSPerfReport**  *MyApp* **. exe/SymbolPath: C:\Projects\Symbols/Summary: ALL**
+ **VSPerfReport** *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

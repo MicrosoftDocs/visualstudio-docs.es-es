@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ea9e28c55b608235d49096e4ef99cd30081eda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666175"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
@@ -24,9 +24,9 @@ Puede generar o configurar partes de la aplicación a partir de un modelo. El mo
  El modelo representa los requisitos de forma más directa que el código. Al derivar el comportamiento de la aplicación directamente desde el modelo, puede responder a los cambios en los requisitos de forma mucho más rápida y confiable que actualizando el código. Aunque es necesario algún trabajo inicial para configurar la derivación, este esfuerzo queda compensado si espera que los requisitos varíen o si piensa crear diversas variantes del producto.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generar el código de la aplicación a partir de un modelo
- La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en la misma solución [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en la que mantiene el modelo. Para obtener más información, consulte:
+ La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en la misma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución en la que se mantiene el modelo. Para obtener más información, vea:
 
-- [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
 - [Generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md)
 
@@ -41,7 +41,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo. El mo
   Pero si empieza con una aplicación existente, podría encontrarse con que es necesaria una gran cantidad de refactorización para separar los distintos comportamientos que se rigen por el modelo, de modo que puedan modificarse independientemente. Se recomienda evaluar este aspecto de la aplicación al calcular el costo del proyecto.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configuración de la aplicación a partir de un modelo
- Si quiere variar el comportamiento de la aplicación en tiempo de ejecución, no podrá usar la generación de código, que crea código fuente antes de compilar la aplicación. En su lugar, puede diseñar la aplicación para leer el modelo UML o DSL y modificar su comportamiento en consecuencia. Para obtener más información, consulte:
+ Si quiere variar el comportamiento de la aplicación en tiempo de ejecución, no podrá usar la generación de código, que crea código fuente antes de compilar la aplicación. En su lugar, puede diseñar la aplicación para leer el modelo UML o DSL y modificar su comportamiento en consecuencia. Para obtener más información, vea:
 
 - [Leer un modelo UML en el código del programa](../modeling/read-a-uml-model-in-program-code.md)
 
@@ -66,7 +66,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo. El mo
 
      Por ejemplo, puede usar un modelo para definir la navegación entre las páginas web y un modelo diferente para definir el diseño de las páginas. Para obtener más información, vea [integrar modelos UML con otros modelos y herramientas](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-- **Modelar el requisito, no la solución.** Diseñe el DSL o adapte el UML para que describa los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.
+- **Modele el requisito, no la solución.** Diseñe el DSL o adapte el UML para que describa los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.
 
      Por ejemplo, el modelo de exploración web debe representar las páginas web y los hipervínculos entre ellas. El modelo de exploración web no debería representar fragmentos de HTML o clases de la aplicación.
 
@@ -78,5 +78,5 @@ Puede generar o configurar partes de la aplicación a partir de un modelo. El mo
 
      Por ejemplo, un diagrama de clases UML es una colección de cuadros y flechas; con esta notación, en teoría, es posible definir cualquier cosa. Tenga en cuenta que no le recomendamos usar el diagrama de clases, excepto para describir un conjunto de tipos. Por ejemplo, podría adaptar los diagramas de clases para describir distintos tipos de páginas web.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md) [leer un modelo UML en el código del programa](../modeling/read-a-uml-model-in-program-code.md) [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md) [Cómo: abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md) [generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

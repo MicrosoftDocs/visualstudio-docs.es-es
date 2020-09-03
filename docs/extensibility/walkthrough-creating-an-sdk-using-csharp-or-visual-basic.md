@@ -12,10 +12,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904973"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Tutorial: crear un SDK mediante C# o Visual Basic
@@ -29,7 +29,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
 ## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>Para crear el componente Windows Runtime de SimpleMath
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> Para crear el componente Windows Runtime de SimpleMath
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
@@ -57,7 +57,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
 
 9. En **Explorador de soluciones**, abra el menú contextual del nodo de proyecto **SimpleMath** y, a continuación, elija **compilar**.
 
-## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a>Para crear el proyecto de extensión SimpleMathVSIX
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> Para crear el proyecto de extensión SimpleMathVSIX
 
 1. En el menú contextual del nodo **' SimpleMath '** de la solución, elija **Agregar**  >  **nuevo proyecto**.
 
@@ -154,7 +154,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
 
 30. Elija el botón **instalar** , espere a que finalice la instalación y, a continuación, reinicie Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Para crear una aplicación de ejemplo que usa la biblioteca de clases
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Para crear una aplicación de ejemplo que usa la biblioteca de clases
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
@@ -245,7 +245,7 @@ En este tutorial, aprenderá a crear un sencillo SDK de biblioteca matemática u
 
     Ha creado y usado correctamente un SDK de extensión.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: crear un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Tutorial: crear un SDK mediante JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)

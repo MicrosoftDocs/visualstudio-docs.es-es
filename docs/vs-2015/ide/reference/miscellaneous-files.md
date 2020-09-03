@@ -22,13 +22,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666859"
 ---
-# <a name="miscellaneous-files"></a>Archivos varios
+# <a name="miscellaneous-files"></a>archivos varios
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tal vez desee usar los editores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para trabajar de forma independiente en los archivos de un proyecto o de una solución. Mientras la solución está abierta, se pueden abrir y modificar los archivos sin necesidad de agregarlos a soluciones o proyectos. Los archivos con los que desea trabajar independientemente de los contenedores reciben el nombre de archivos varios. Los archivos varios son externos a soluciones y proyectos, no se incluyen en compilaciones y no se pueden incluir en soluciones que estén bajo control de código fuente.
@@ -50,5 +50,5 @@ Tal vez desee usar los editores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
 ## <a name="folder-display-options"></a>Opciones de presentación de carpetas
  Puede establecer opciones de presentación para la carpeta Archivos varios de manera que ésta aparezca aunque no haya abierto ningún archivo de esta carpeta. El archivo de soluciones no administra una lista de archivos de la carpeta de archivos varios de manera permanente. Utiliza una característica opcional que le permite memorizar una lista de los archivos utilizados más recientemente por cada usuario.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  Documentos de [soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md) [, entorno, opciones (cuadro de diálogo)](../../ide/reference/documents-environment-options-dialog-box.md)

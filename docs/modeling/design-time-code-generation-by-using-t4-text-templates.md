@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535998"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
@@ -62,7 +62,7 @@ Una plantilla de texto contiene una mezcla del texto que se desea generar y el c
 
 5. Guarde el archivo.
 
-    Es posible que vea un cuadro de mensaje de **Advertencia de seguridad** que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
+    Es posible que vea un cuadro de mensaje de **Advertencia de seguridad** que le pide que confirme que desea ejecutar la plantilla. Haga clic en **OK**.
 
 6. En **Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo con la extensión **. txt**. El archivo contiene el texto generado a partir de la plantilla.
 
@@ -134,7 +134,7 @@ Para depurar una plantilla de texto:
    La plantilla se ejecuta y se detiene en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.
 
 > [!TIP]
-> `debug="true"`hace que el código generado se asigne con más precisión a la plantilla de texto, insertando más directivas de numeración de línea en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
+> `debug="true"` hace que el código generado se asigne con más precisión a la plantilla de texto, insertando más directivas de numeración de línea en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
 >
 > Puede dejar la cláusula en la directiva de plantilla incluso aunque no esté realizando la depuración. Esto solo produce una pequeña caída del rendimiento.
 
@@ -290,7 +290,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
 
-## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Volver a generar el código automáticamente
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Volver a generar el código automáticamente
 
 Normalmente, se generan varios archivos en una solución de Visual Studio con un modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
@@ -336,7 +336,7 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Convertir un archivo existente en una plantilla
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> Convertir un archivo existente en una plantilla
 
 Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar, cree un archivo normal como un prototipo, como un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] archivo, y, a continuación, introduzca gradualmente código de generación que varíe el archivo resultante.
 
@@ -388,6 +388,6 @@ Consulte [las instrucciones para escribir plantillas de texto T4](../modeling/gu
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Escriba procesadores de directivas para transformar sus propios orígenes de datos.|[Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)

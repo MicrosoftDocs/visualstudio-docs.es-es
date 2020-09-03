@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 594c012aaa49a5b62e9f254f924a71f4934d1ebe
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382619"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedimientos para agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce
@@ -56,7 +56,7 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

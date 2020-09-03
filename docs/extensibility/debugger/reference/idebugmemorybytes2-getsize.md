@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::GetSize ? Microsoft Docs
+title: 'IDebugMemoryBytes2:: se obtiene | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6de4eccb395059112dde40af36ce75798db9064b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727543"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-Recupera el tamaño, en bytes, de la memoria representada por este [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto.
+Recupera el tamaño, en bytes, de la memoria representada por este objeto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ int GetSize(
 
 ## <a name="parameters"></a>Parámetros
 `pqwSize`\
-[fuera] Devuelve el tamaño, en bytes del espacio de memoria.
+enuncia Devuelve el tamaño, en bytes, del espacio de memoria.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

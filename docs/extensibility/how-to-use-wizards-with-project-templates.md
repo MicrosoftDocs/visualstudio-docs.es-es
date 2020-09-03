@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905513"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Cómo: usar asistentes con plantillas de proyecto
@@ -40,7 +40,7 @@ Empiece a crear una plantilla personalizada con el proyecto de plantilla de proy
 
 2. Agregue un nuevo proyecto de VSIX en la misma solución que el proyecto de plantilla de proyecto (en **Explorador de soluciones**, seleccione el nodo de la solución, haga clic con el botón derecho y seleccione **Agregar**  >  **nuevo proyecto** y busque "VSIX"). Asígnele el nombre **MyProjectWizard.**
 
-3. Establezca el Proyecto VSIX como proyecto de inicio. En **Explorador de soluciones**, seleccione el nodo del Proyecto VSIX, haga clic con el botón derecho y seleccione **establecer como proyecto de inicio**.
+3. Establezca el proyecto VSIX como proyecto de inicio. En **Explorador de soluciones**, seleccione el nodo del Proyecto VSIX, haga clic con el botón derecho y seleccione **establecer como proyecto de inicio**.
 
 4. Agregue el proyecto de plantilla como un recurso del Proyecto VSIX. En **Explorador de soluciones**, en el nodo del Proyecto VSIX, busque el archivo *source. Extension. vsixmanifest* . Haga doble clic en él para abrirlo en el editor de manifiestos.
 
@@ -68,7 +68,7 @@ En este procedimiento se muestra cómo crear un asistente personalizado que abra
 
 3. Agregue el ensamblado como un recurso al Proyecto VSIX. Abra el archivo *source. Extension. vsixmanifest* y seleccione la pestaña **activos** . En la ventana **Agregar nuevo recurso** , en **tipo** , seleccione **Microsoft. VisualStudio. Assembly**, en **origen** , seleccione **un proyecto en la solución actual**y, en **proyecto** , seleccione **MyProjectWizard**.
 
-4. Agregue las siguientes referencias al Proyecto VSIX. (En **Explorador de soluciones**, en el nodo del Proyecto VSIX, seleccione **referencias**, haga clic con el botón derecho y seleccione **Agregar referencia**). En el cuadro de diálogo **Agregar referencia** , en la pestaña **Framework** , busque el ensamblado **System. Windows Forms** y selecciónelo. Busque y seleccione los ensamblados **System** y **System. Drawing** . Ahora, seleccione la pestaña **extensiones** . Busque el ensamblado **EnvDTE** y selecciónelo. Busque también el ensamblado **Microsoft. VisualStudio. TemplateWizardInterface** y selecciónelo. Haga clic en **Aceptar**.
+4. Agregue las siguientes referencias al Proyecto VSIX. (En **Explorador de soluciones**, en el nodo del Proyecto VSIX, seleccione **referencias**, haga clic con el botón derecho y seleccione **Agregar referencia**). En el cuadro de diálogo **Agregar referencia** , en la pestaña **Framework** , busque el ensamblado **System. Windows Forms** y selecciónelo. Busque y seleccione los ensamblados **System** y **System. Drawing** . Ahora, seleccione la pestaña **extensiones** . Busque el ensamblado **EnvDTE** y selecciónelo. Busque también el ensamblado **Microsoft. VisualStudio. TemplateWizardInterface** y selecciónelo. Haga clic en **OK**.
 
 5. Agregue una clase para la implementación del asistente al Proyecto VSIX. (En **Explorador de soluciones**, haga clic con el botón secundario en el nodo del Proyecto VSIX y seleccione **Agregar**, **nuevo elemento**y, a continuación, **clase**). Asigne a la clase el nombre **WizardImplementation**.
 
@@ -242,7 +242,7 @@ Para que la plantilla de proyecto personalizada use el Asistente personalizado, 
 
      Una vez más, no olvide las comillas. Debería ver una línea en la salida como esta.
 
-     **El token de clave pública es\<token>**
+     **El token de clave pública es \<token>**
 
      Anote este valor.
 

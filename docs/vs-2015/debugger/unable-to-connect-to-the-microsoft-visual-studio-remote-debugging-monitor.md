@@ -1,5 +1,5 @@
 ---
-title: No se puede conectar con el Monitor de depuración remota de Microsoft Visual Studio | Microsoft Docs
+title: No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477060"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
@@ -63,7 +63,7 @@ Este mensaje de error aparece cuando escribe un nombre de Monitor de depuración
   
 - Puede iniciar el depurador remoto desde la línea de comandos con el parámetro **/allow \<username>** : `msvsmon /allow <username@computer>`  
   
-- Puede agregar el usuario a los permisos del depurador remoto (en la ventana del depurador remoto, **Herramientas / Permisos**).  
+- Puede Agregar el usuario a los permisos del Depurador remoto (en la ventana del Depurador remoto, **herramientas/permisos**).  
   
 - Si no puede usar los métodos descritos en los pasos anteriores, puede permitir que cualquier usuario realice la depuración remota. En la ventana del depurador remoto, vaya al cuadro de diálogo **Herramientas/Opciones** . Al seleccionar   **Sin autenticación**, podrá activar **Permitir que cualquier usuario depure**. Sin embargo, debe usar esta opción solo como último recurso o si se encuentra en una red privada.  
   
@@ -85,4 +85,4 @@ Este mensaje de error aparece cuando escribe un nombre de Monitor de depuración
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>Consulte también  
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

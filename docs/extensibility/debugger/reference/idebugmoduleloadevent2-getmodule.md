@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule ? Microsoft Docs
+title: 'IDebugModuleLoadEvent2:: GetModule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726723"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
@@ -45,13 +45,13 @@ int GetModule( 
 
 ## <a name="parameters"></a>Parámetros
 `pModule`\
-[fuera] Devuelve un [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa el módulo que se está cargando o descargando.
+enuncia Devuelve un objeto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que representa el módulo que se carga o descarga.
 
 `pbstrDebugMessage`\
-[adentro, fuera] Devuelve un mensaje opcional que describe este evento. Si este parámetro es un valor nulo, no se solicita ningún mensaje.
+[in, out] Devuelve un mensaje opcional que describe este evento. Si este parámetro es un valor nulo, no se solicita ningún mensaje.
 
 `pbLoad`\
-[adentro, fuera] Distinto de`TRUE`cero ( ) si`FALSE`el módulo se está cargando y cero ( ) si el módulo se está descargando. Si este parámetro es un valor nulo, no se solicita ningún estado.
+[in, out] Distinto de cero ( `TRUE` ) si el módulo se está cargando y cero ( `FALSE` ) si el módulo se está descargando. Si este parámetro es un valor nulo, no se solicita ningún Estado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

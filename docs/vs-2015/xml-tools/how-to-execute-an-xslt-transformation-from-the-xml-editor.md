@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b305d88779603b374e5f95842d7a5271a657268
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666534"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Cómo: Ejecutar una transformación XSLT desde el Editor XML
@@ -21,9 +21,9 @@ ms.locfileid: "72666534"
 
 El Editor XML permite asociar una hoja de estilos XSLT con un documento XML, realizar la transformación y ver el resultado. El resultado de la transformación XSLT se muestra en una nueva ventana de documento.
 
- La propiedad de **salida** especifica el nombre de archivo de la salida. Si la propiedad de **salida** está en blanco, se genera un nombre de archivo en el directorio temporal. La extensión de archivo se basa en el elemento `xsl:output` de la hoja de estilos y puede ser .xml, .txt o .htm.
+ La propiedad **Salida** especifica el nombre de archivo de la salida. Si la propiedad **Salida** está en blanco, se genera un nombre de archivo en el directorio temporal. La extensión de archivo se basa en el elemento `xsl:output` de la hoja de estilos y puede ser .xml, .txt o .htm.
 
- Si la propiedad de **salida** especifica un nombre de archivo con una extensión. htm o. html, se muestra una vista previa de la salida XSLT mediante [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer. Todas las demás extensiones de archivo se abren con el editor predeterminado que elija [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio. Por ejemplo, si la extensión de archivo es .xml, Visual Studio utiliza el Editor XML.
+ Si la propiedad de **salida** especifica un nombre de archivo con una extensión. htm o. html, se muestra una vista previa de la salida XSLT con [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer. Todas las demás extensiones de archivo se abren con el editor predeterminado que elija [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio. Por ejemplo, si la extensión de archivo es .xml, Visual Studio utiliza el Editor XML.
 
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Para ejecutar una transformación XSLT desde un documento XML
 
@@ -35,7 +35,7 @@ El Editor XML permite asociar una hoja de estilos XSLT con un documento XML, rea
 
          o bien
 
-    - Agregue la hoja de estilos XSLT mediante la ventana **propiedades** . En la **ventana Propiedades**del documento, haga clic en el botón **examinar** del campo **hoja de estilos** , seleccione la hoja de estilos XSLT y haga clic en **abrir**.
+    - Agregue la hoja de estilos XSLT mediante la ventana **Propiedades**. En la **ventana Propiedades**del documento, haga clic en el botón **examinar** del campo **hoja de estilos** , seleccione la hoja de estilos XSLT y haga clic en **abrir**.
 
 3. Haga clic en el botón **ShowXSL Output** en la barra de herramientas del **Editor XML** .
 
@@ -48,7 +48,7 @@ El Editor XML permite asociar una hoja de estilos XSLT con un documento XML, rea
 
 1. Abra una hoja de estilos XSLT en el Editor XML.
 
-2. Especifique un documento XML en el campo **entrada** de la ventana **propiedades** del documento.
+2. Especifique un documento XML en el campo **Entrada** de la ventana **Propiedades** del documento.
 
     > [!NOTE]
     > El documento XML es el documento de entrada que se utiliza en la transformación. Si no se especifica un documento cuando se inicia la transformación XSLT, aparece el cuadro de diálogo **Abrir archivo** y puede especificar un documento en ese momento.
@@ -65,5 +65,5 @@ El Editor XML permite asociar una hoja de estilos XSLT con un documento XML, rea
 
      El resultado de la transformación XSLT se muestra en una nueva ventana de documento y el editor usado en la ventana de salida depende de la extensión de archivo de la propiedad de documento de **salida** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editor XML](../xml-tools/xml-editor.md)

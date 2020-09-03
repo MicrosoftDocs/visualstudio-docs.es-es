@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL Microsoft Docs
+title: METADATA_ADDRESS_RETVAL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f2437d10078eb623e063b3292d96ef9bb4a9cf64
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714271"
 ---
 # <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
-Esta estructura representa un valor devuelto de un método o función.
+Esta estructura representa un valor devuelto de un método o una función.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,24 +47,24 @@ public struct METADATA_ADDRESS_RETVAL {
 
 ## <a name="members"></a>Miembros
  `tokMethod`\
- El identificador del método para el que está este valor devuelto es.
+ IDENTIFICADOR del método para el que se devuelve este valor devuelto.
 
  `dwCorType`\
- El tipo base del valor devuelto. Se trata de `CorElementType` un valor de la enumeración definida en el archivo corhdr.h del SDK de .NET Framework.
+ Tipo base del valor devuelto. Este es un valor de la `CorElementType` enumeración definido en el archivo CorHdr. h del SDK de .NET Framework.
 
  `dwSigSize`\
- El tamaño de la firma del `rgSig`valor devuelto (como se almacena en ).
+ Tamaño de la firma del valor devuelto (tal y como se almacena en `rgSig` ).
 
  `rgSig`\
- Matriz de bytes que forma la firma del valor devuelto.
+ Matriz de bytes que forman la firma del valor devuelto.
 
 ## <a name="remarks"></a>Observaciones
- Esta estructura forma parte de la unión en `DEBUG_ADDRESS_UNION` la estructura `ADDRESS_KIND_RETVAL` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando se establece el `dwKind` campo de la estructura en (un valor de la [enumeración ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
+ Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_RETVAL` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: sh.h
+ Encabezado: SH. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

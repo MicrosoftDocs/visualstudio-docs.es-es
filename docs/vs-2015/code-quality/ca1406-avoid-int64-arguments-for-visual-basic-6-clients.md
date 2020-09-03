@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b6ab93c24cd97d498ae886c7a9184fd4a5f111f1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534919"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Evitar los argumentos Int64 en clientes Visual Basic 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidInt64ArgumentsForVB6Clients|
 |Identificador de comprobación|CA1406|
-|Categoría|Microsoft. Interoperability|
+|Category|Microsoft. Interoperability|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

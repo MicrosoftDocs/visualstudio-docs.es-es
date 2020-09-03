@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO de la casa de la casa de Microsoft Docs
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714250"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
-Contiene información de estado sobre las rutas de búsqueda de símbolos que se han buscado.
+Contiene información de estado sobre las rutas de acceso de búsqueda de símbolos que se han buscado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,22 +46,22 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>Miembros
 
 `dwValidFields`\
-Una combinación de indicadores de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeración que especifica el tipo de información de búsqueda que se describe en esta estructura.
+Combinación de marcas de la enumeración [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) que especifica el tipo de información de búsqueda que se describe en esta estructura.
 
 `bstrVerboseSearchInfo`\
-Ruta de búsqueda y resultados concatenados en una sola cadena.
+La ruta de búsqueda y los resultados se concatenan en una sola cadena.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta estructura se devuelve de una llamada a la [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) método.
+Esta estructura se devuelve de una llamada al método [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) .
 
-Si `bstrVerboseSearchInfo` el campo no está vacío, contiene una lista de rutas buscadas y los resultados de esa búsqueda. La lista tiene un formato con una ruta de acceso, seguida de puntos suspensivos ("..."), seguido del resultado. Si hay más de un par de resultados de ruta de acceso, cada par está separado por un par de "-r-n" (carriage-return/linefeed). El patrón tiene este aspecto:
+Si el `bstrVerboseSearchInfo` campo no está vacío, contiene una lista de rutas de acceso de búsqueda y los resultados de esa búsqueda. Se da formato a la lista con una ruta de acceso, seguida de un botón de puntos suspensivos ("..."), seguido del resultado. Si hay más de un par de resultados de ruta de acceso, cada par está separado por un par "\r\n" (retorno de carro/avance de bits). El patrón tiene el siguiente aspecto:
 
-\<camino>... \<> ruta de\<acceso de>>... \<resultado>>\<de ruta de acceso... \<resultado>
+\<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>
 
-Tenga en cuenta que la última entrada no tiene una secuencia de la lista.
+Tenga en cuenta que la última entrada no tiene una secuencia \r\n.
 
-Aquí hay `bstrVerboseSearchInfo` una cadena posible que se ha enviado a estándar out.
+Esta es una posible `bstrVerboseSearchInfo` cadena que se ha enviado a la salida estándar.
 
 `c:\symbols\user32.pdb... File not found.`
 
@@ -71,9 +71,9 @@ Aquí hay `bstrVerboseSearchInfo` una cadena posible que se ha enviado a estánd
 
 ## <a name="requirements"></a>Requisitos
 
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

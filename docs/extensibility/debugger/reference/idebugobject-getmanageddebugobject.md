@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetManagedDebugObject ? Microsoft Docs
+title: 'IDebugObject:: GetManagedDebugObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726690"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
@@ -41,13 +41,13 @@ int GetManagedDebugObject(
 
 ## <a name="parameters"></a>Parámetros
 `ppObject`\
-[fuera] Devuelve un [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objeto que representa el objeto administrado recién creado.
+enuncia Devuelve un objeto [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) que representa el objeto administrado que se acaba de crear.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error. Devuelve E_FAIL si este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) no representa una instancia de clase de valor administrado.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error. Devuelve E_FAIL si este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) no representa una instancia de clase de valor administrado.
 
 ## <a name="remarks"></a>Observaciones
- Este [objeto IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) debe representar una instancia `System.Decimal` de clase de valor administrado, como una instancia. Al tener una copia local, se elimina la sobrecarga de llamar a [Evaluate.](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)
+ Este objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) debe representar una instancia de clase de valor administrado, como una `System.Decimal` instancia de. Al tener una copia local, se elimina la sobrecarga que supone llamar a [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535946"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usar ModelBus de Visual Studio en plantillas de texto
@@ -41,7 +41,7 @@ Para resolver una referencia de ModelBus en una plantilla de texto, el DSL de de
 
     3. En el cuadro de diálogo, seleccione **deseo exponer este DSL a ModelBus**. Puede seleccionar ambas opciones si quiere que este DSL exponga sus modelos y consuma referencias a otros DSL.
 
-    4. Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
+    4. Haga clic en **OK**. Se agrega un nuevo proyecto "ModelBusAdapter" a la solución de DSL.
 
     5. Haga clic en **transformar todas las plantillas**.
 
@@ -257,7 +257,7 @@ Ahora tiene un DSL al que se puede tener acceso a través de plantillas de texto
 
 1. Cree un nuevo DSL con la plantilla de solución de idioma mínima. Asigne al idioma el nombre MBConsumer y establezca la extensión de nombre de archivo en ". consume".
 
-2. En el proyecto DSL, agregue una referencia al ensamblado DSL de MBProvider. Haga clic con el botón secundario `MBConsumer\Dsl\References` y, a continuación, haga clic en **Agregar referencia**. En la pestaña **examinar** , busque`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. En el proyecto DSL, agregue una referencia al ensamblado DSL de MBProvider. Haga clic con el botón secundario  `MBConsumer\Dsl\References` y, a continuación, haga clic en **Agregar referencia**. En la pestaña **examinar** , busque `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     Esto le permite crear código que utiliza el otro DSL. Si desea crear referencias a varios DSL, agréguelos también.
 

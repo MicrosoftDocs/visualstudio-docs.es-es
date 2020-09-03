@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535270"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: crear clases LINQ to SQL con la herencia de tabla única (Object Relational Designer)
@@ -51,10 +51,10 @@ Para ver cómo funciona la herencia, cree una `Person` tabla pequeña, úsela co
 
     |Nombre de columna|Tipo de datos|Permitir valores NULL|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**Es**|
+    |**Id**|**int**|**False**|
     |**Tipo**|**int**|**True**|
-    |**Nombre**|**nvarchar(200)**|**Es**|
-    |**Apellidos**|**nvarchar(200)**|**Es**|
+    |**Nombre**|**nvarchar(200)**|**False**|
+    |**Apellidos**|**nvarchar(200)**|**False**|
     |**Administrador**|**int**|**True**|
 
 3. Establezca la columna Id. como clave principal.
@@ -70,7 +70,7 @@ Para poder comprobar que la herencia está correctamente configurada, la tabla n
 
 2. Copie los datos siguientes en la tabla. (Puede copiarlo y, a continuación, pegarlo en la tabla seleccionando toda la fila en el panel de **resultados** ).
 
-    |**ID**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
+    |**Id**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -85,7 +85,7 @@ Para poder comprobar que la herencia está correctamente configurada, la tabla n
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 Ahora que ha creado la tabla, cree un nuevo proyecto para mostrar la configuración de la herencia.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Para crear la nueva aplicación Windows Forms
@@ -173,7 +173,7 @@ Ahora agregará código al formulario que consulta una clase concreta en el mode
     }
     ```
 
-## <a name="test-the-application"></a>Probar la aplicación
+## <a name="test-the-application"></a>Prueba de la aplicación
 Ejecute la aplicación y compruebe que los registros mostrados en el cuadro de lista son todos los empleados (registros que tienen un valor de 2 en la columna **tipo** ).
 
 ### <a name="to-test-the-application"></a>Para probar la aplicación
@@ -184,7 +184,7 @@ Ejecute la aplicación y compruebe que los registros mostrados en el cuadro de l
 
 3. Cierre el formulario. (En el menú **depurar** , haga clic en **detener depuración**).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md) (Tutorial: Crear clases de LINQ to SQL [Object Relational Designer])

@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2 ? Microsoft Docs
+title: IDebugModule2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dbbea1b52133de41dd26f437aeba31a0eff5a50a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726909"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
@@ -29,30 +29,30 @@ IDebugModule2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- El motor de depuración (DE) implementa esta interfaz para representar un módulo y proporcionar acceso a la información sobre ese módulo.
+ El motor DE depuración (DE) implementa esta interfaz para representar un módulo y proporcionar acceso a la información sobre ese módulo.
 
-## <a name="notes-for-callers"></a>Notas para las personas que llaman
- Una llamada a [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) devuelve esta interfaz. El DE envía el [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) interfaz al administrador de depuración de sesión (SDM) mediante el [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) método.
+## <a name="notes-for-callers"></a>Notas para llamadores
+ Una llamada a [getModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) devuelve esta interfaz. El DE envía la interfaz [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) al administrador de depuración de la sesión (SDM) mediante el método de [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .
 
- Esta interfaz también se puede devolver en una estructura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) (que se devuelve mediante una llamada a [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)).
+ Esta interfaz también se puede devolver en una estructura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) (devuelta por una llamada a [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)).
 
-- [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) también devuelve esta interfaz ([EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) devuelve el [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) interfaz).
+- [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) también devuelve esta interfaz ([EnumModules (](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) devuelve la interfaz [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) ).
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- En la tabla siguiente `IDebugModule2`se muestran los métodos de .
+ En la tabla siguiente se muestran los métodos de `IDebugModule2` .
 
 |Método|Descripción|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Obtiene el [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) que describe este módulo.|
-|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|OBSOLETO. NO USAR. Vuelve a cargar los símbolos de este módulo.|
+|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|OBSOLETO. NO USE. Vuelve a cargar los símbolos para este módulo.|
 
 ## <a name="remarks"></a>Observaciones
- La información del módulo se puede mostrar en la ventana **Módulos** del IDE.
+ La información del módulo se puede mostrar en la ventana **módulos** del IDE.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

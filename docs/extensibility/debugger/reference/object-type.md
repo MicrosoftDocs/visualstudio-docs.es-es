@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE de la casa de la Microsoft Docs
+title: OBJECT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714123"
 ---
 # <a name="object_type"></a>Object_Type
@@ -68,7 +68,7 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `OBJECT_TYPE_BOOLEAN`\
  Indica que el objeto es un valor booleano.
 
@@ -76,13 +76,13 @@ public enum enum_OBJECT_TYPE { 
  Indica que el objeto es un carácter.
 
  `OBJECT_TYPE_I1`\
- Indica que el objeto es un entero con signo de un byte.
+ Indica que el objeto es un entero de un byte con signo.
 
  `OBJECT_TYPE_U1`\
  Indica que el objeto es un entero sin signo de un byte.
 
  `OBJECT_TYPE_I2`\
- Indica que el objeto es un entero con signo de dos bytes.
+ Indica que el objeto es un entero de dos bytes con signo.
 
  `OBJECT_TYPE_U2`\
  Indica que el objeto es un entero sin signo de dos bytes.
@@ -115,12 +115,12 @@ public enum enum_OBJECT_TYPE { 
  Indica que el objeto es una clase.
 
 ## <a name="remarks"></a>Observaciones
- Se pasa como argumento a los métodos [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
+ Se pasa como argumento a los métodos [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: ee.h
+ Encabezado: EE. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
