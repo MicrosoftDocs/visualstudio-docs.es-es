@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb46d3bf7096d0a7e14ce3926514d946d7536e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668112"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Cómo: Crear asociaciones entre tipos (Diseñador de clases)
@@ -36,7 +36,7 @@ En el Diseñador de clases, las líneas de asociación muestran la forma en que 
 
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>Para definir una línea de asociación en el Diagrama de clases
 
-1. En el cuadro de herramientas, en el Diseñador de clases, seleccione **Asociación**.
+1. En el cuadro de herramientas, en Diseñador de clases, seleccione **Asociación**.
 
 2. Trace una línea entre las dos formas que desee vincular con una asociación.
 
@@ -56,5 +56,5 @@ En el Diseñador de clases, las líneas de asociación muestran la forma en que 
 
      El nombre se actualiza en la ventana **Detalles de clase**, en la línea de asociación, en la ventana Propiedades y en el código.
 
-## <a name="see-also"></a>Vea también
- [Cómo: Cambiar entre notación de miembro y notación de asociación (Diseñador de clases)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: cambiar entre notación de miembro y notación de asociación (Diseñador de clases)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

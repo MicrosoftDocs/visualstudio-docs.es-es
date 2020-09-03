@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e9f61c56dd7ff2a9c6c19afc20ed279a7fdf855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669371"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
@@ -39,7 +39,7 @@ El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el
 
   El Explorador de esquema XML proporciona una vista jerárquica del conjunto de esquemas mediante una vista de árbol. El Explorador de esquema XML también proporciona búsqueda, filtrado, navegación y ordenación. Para tener acceso al Explorador de esquemas XML, realice una de las operaciones siguientes:
 
-- Si está en la [vista Inicio](../xml-tools/start-view.md), haga clic en el vínculo **Explorador de esquemas XML** .
+- Si se encuentra en la [vista Inicio](../xml-tools/start-view.md), haga clic en el vínculo **Explorador de esquemas XML**.
 
 - Si está en la [vista gráfico](../xml-tools/graph-view.md) o en la [vista modelo de contenido](../xml-tools/content-model-view.md) y tiene nodos en el área de trabajo, use el menú contextual para seleccionar el explorador de esquemas XML.
 
@@ -65,7 +65,7 @@ El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el
 ## <a name="selection-and-activation"></a>Selección y activación
  Para resaltar y seleccionar un nodo, haga clic una vez en el Explorador de esquemas.
 
- Para activar un nodo, haga doble clic en él o presione **entrar** cuando se seleccione el nodo.
+ Para activar un nodo, haga doble clic en él o presione **ENTRAR** si el nodo está seleccionado.
 
 - Al activar un nodo, se abre el archivo en el que está definido (si no está abierto ya) y se selecciona el nodo en dicho archivo.
 
@@ -74,7 +74,7 @@ El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el
 - Al activar un nodo de espacio de nombres o de conjunto de esquemas no se realiza ninguna acción.
 
 ## <a name="draging-and-dropping-nodes"></a>Arrastrar y colocar nodos
- Puede arrastrar y colocar nodos globales, de archivo y de espacio de nombres en una vista del Diseñador XSD. Si la vista actual es la [vista Inicio](../xml-tools/start-view.md), al arrastrar un nodo a la vista se abrirá la [vista gráfico](../xml-tools/graph-view.md). Si la vista actual es la vista de [modelo de contenido](../xml-tools/content-model-view.md) o la vista de gráfico, la vista no cambiará cuando coloque un nodo en ella.
+ Puede arrastrar y colocar nodos globales, de archivo y de espacio de nombres en una vista del Diseñador XSD. Si la vista actual es la [vista Inicio](../xml-tools/start-view.md), al arrastrar un nodo hacia ella se abrirá la [vista Gráfico](../xml-tools/graph-view.md). Si la vista actual es la [vista Modelo de contenido](../xml-tools/content-model-view.md) o la vista Gráfico, la vista no cambiará al colocar un nodo sobre ella.
 
  Al quitar archivos de la vista, se agregarán todos los nodos globales del archivo al [área de trabajo del diseñador XSD](../xml-tools/xml-schema-designer-workspace.md). Al colocar los espacios de nombres en la vista, se agregarán al área de trabajo todos los nodos globales del espacio de nombres. El área de trabajo la comparten todas las vistas.
 
@@ -84,11 +84,11 @@ El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el
 
 - [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md)
 
-- [Ordenación, filtrado y agrupación](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)
+- [Ordenar, filtrar y agrupar](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)
 
 - [Menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md)
 
-- [Integración de los literales XML con el Explorador de esquemas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)
+- [Integración de literales XML con el explorador de esquemas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)
 
-## <a name="see-also"></a>Vea también
- [Cómo: Agregar nodos al área de trabajo desde el Explorador de esquemas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: agregar nodos al área de trabajo desde el explorador de esquemas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

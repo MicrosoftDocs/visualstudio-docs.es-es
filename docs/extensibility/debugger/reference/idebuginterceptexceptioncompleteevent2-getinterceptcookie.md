@@ -1,5 +1,5 @@
 ---
-title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie ? Microsoft Docs
+title: 'IDebugInterceptExceptionCompleteEvent2:: GetInterceptCookie | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9065c0b7868efaeb70c10a3ab921a8764694662e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727776"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
@@ -41,13 +41,13 @@ int GetInterceptCookie(
 
 ## <a name="parameters"></a>Parámetros
 `pqwCookie`\
-[fuera] Valor único asociado a la excepción interceptada.
+enuncia Valor único que está asociado a la excepción que se ha interceptado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
- Después de la [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) método ha completado el control de una excepción interceptada, envía el [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) eventos. El controlador puede `GetInterceptCookie` usar el método para recuperar el valor único `InterceptCurrentException` asociado a la excepción (el mismo valor pasado al método).
+ Después de que el método [interceptcurrentexception (](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) haya completado el control de una excepción interceptada, envía el evento [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) . El controlador puede utilizar el `GetInterceptCookie` método para recuperar el valor único asociado a la excepción (el mismo valor pasado al `InterceptCurrentException` método).
 
 ## <a name="see-also"></a>Vea también
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

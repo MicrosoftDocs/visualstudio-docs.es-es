@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40f48891107c2eb3250b6b050e00c3650812d386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669814"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Describir el flujo de control con fragmentos de diagramas de secuencia de UML
@@ -102,7 +102,7 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
     > [!NOTE]
     > Los diferentes tipos de fragmentos combinados tienen propiedades diferentes.
 
-## <a name="KindsOfFragment"></a>Tipos de fragmentos combinados
+## <a name="kinds-of-combined-fragment"></a><a name="KindsOfFragment"></a> Tipos de fragmentos combinados
 
 ### <a name="fragments-describing-control-flow"></a>Fragmentos que describen el flujo de control
  Un diagrama de secuencia sencillo muestra solo una secuencia típica. Puede usar los siguientes tipos de fragmentos combinados para describir las variaciones que pueden producirse en distintas ocasiones.
@@ -110,13 +110,13 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
 |Tipo de fragmento|Descripción|
 |-------------------|-----------------|
 |**Rechace**|Opcional. Contiene una secuencia que puede puede producirse o no. En la restricción, puede especificar la condición en la que se produce.|
-|**Alt**|Contiene una lista de fragmentos que incluyen secuencias de mensajes alternativas. Solo se produce una secuencia de cada vez.<br /><br /> Puede incluir una restricción en cada fragmento para indicar en qué circunstancias puede ejecutarse. Una restricción **else** indica un fragmento que debe ejecutarse si ninguna otra restricción es true. Si todas las restricciones son false y no hay ningún valor **else**, no se ejecuta ninguno de los fragmentos.|
-|**Loop**|El fragmento se repite cierto número de veces. En la restricción, puede indicar la condición en la que debe repetirse.<br /><br /> Los fragmentos combinados de bucle tienen las propiedades **Min** y **Max**, que indican el número mínimo y máximo de veces que el fragmento se puede repetir. El valor predeterminado es sin restricciones.|
-|**Break**|Si se ejecuta este fragmento, se abandona el resto de la secuencia. Puede usar la restricción para indicar la condición en la que se producirá la interrupción.|
+|**Alternativa**|Contiene una lista de fragmentos que incluyen secuencias de mensajes alternativas. Solo se produce una secuencia de cada vez.<br /><br /> Puede incluir una restricción en cada fragmento para indicar en qué circunstancias puede ejecutarse. Una restricción **else** indica un fragmento que debe ejecutarse si ninguna otra restricción es true. Si todas las restricciones son false y no hay ningún valor **else**, no se ejecuta ninguno de los fragmentos.|
+|**Realizar**|El fragmento se repite cierto número de veces. En la restricción, puede indicar la condición en la que debe repetirse.<br /><br /> Los fragmentos combinados de bucle tienen las propiedades **Min** y **Max**, que indican el número mínimo y máximo de veces que el fragmento se puede repetir. El valor predeterminado es sin restricciones.|
+|**Eliminar**|Si se ejecuta este fragmento, se abandona el resto de la secuencia. Puede usar la restricción para indicar la condición en la que se producirá la interrupción.|
 |**Elevar**|Parallel Los eventos de los fragmentos se pueden intercalar.|
-|**Suma**|Se usa dentro de un fragmento Par o Seq. Indica que los mensajes de este fragmento no se deben intercalar con otros mensajes.|
+|**Critical)** (Crítico)|Se usa dentro de un fragmento Par o Seq. Indica que los mensajes de este fragmento no se deben intercalar con otros mensajes.|
 |**Próx**|Hay dos o más fragmentos de operando. Los mensajes relacionados con la misma línea de vida deben aparecer en el orden de los fragmentos. Si no implican las mismas líneas de vida, es posible intercalar en paralelo los mensajes de fragmentos diferentes.|
-|**Strict**|Hay dos o más fragmentos de operando. Los fragmentos deben aparecer en el orden indicado.|
+|**Contrario**|Hay dos o más fragmentos de operando. Los fragmentos deben aparecer en el orden indicado.|
 
 ### <a name="fragments-about-how-to-interpret-the-sequence"></a>Fragmentos sobre cómo interpretar la secuencia
  De forma predeterminada, el diagrama de secuencia indica una serie de mensajes que pueden aparecer. En el sistema que se está ejecutando, es posible que aparezcan otros mensajes que no eligiese para que se mostraran en el diagrama.
@@ -126,9 +126,9 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
 |Tipo de fragmento|Descripción|
 |-------------------|-----------------|
 |**Debe**|Especifica una lista de los mensajes que se describen en este fragmento. Pueden aparecer otros mensajes en el sistema que se está ejecutando, pero no son significativos para los propósitos de esta descripción.<br /><br /> Escriba la lista en la propiedad **Messages** .|
-|**Ignorar**|Lista de los mensajes que no se describen en este fragmento. Pueden aparecer en el sistema que se está ejecutando, pero no son significativos para los propósitos de esta descripción.<br /><br /> Escriba la lista en la propiedad **Messages** .|
+|**Omitir**|Lista de los mensajes que no se describen en este fragmento. Pueden aparecer en el sistema que se está ejecutando, pero no son significativos para los propósitos de esta descripción.<br /><br /> Escriba la lista en la propiedad **Messages** .|
 |**Assert**|El fragmento de operando especifica las únicas secuencias válidas. Suele usarse dentro de un fragmento Consider o Ignore.|
-|**Transf**|La secuencia que se muestra en este fragmento no debe producirse. Suele usarse dentro de un fragmento Consider o Ignore.|
+|**Neg**|La secuencia que se muestra en este fragmento no debe producirse. Suele usarse dentro de un fragmento Consider o Ignore.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md) [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md) [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)

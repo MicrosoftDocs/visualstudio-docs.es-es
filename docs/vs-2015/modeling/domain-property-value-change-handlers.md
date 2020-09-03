@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 69ebcc264eb3caa68fa0dfd2998613a7c9037b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669770"
 ---
 # <a name="domain-property-value-change-handlers"></a>Controladores de los cambios de valor de propiedad de dominio
@@ -26,7 +26,7 @@ En un lenguaje específico de dominio de [!INCLUDE[vsprvs](../includes/vsprvs-md
 ## <a name="overriding-the-property-handler-methods"></a>Invalidar los métodos del controlador de propiedad
  Cada propiedad de dominio de su lenguaje específico de dominio es administrada por una clase que está anidada dentro de su clase de dominio primaria. Su nombre sigue el formato *PropertyName*PropertyHandler. Puede inspeccionar esta clase de controlador de propiedades en el archivo **Dsl\Generated Code\DomainClasses.CS**. En la clase, se llama a `OnValueChanging()` inmediatamente antes de que cambie el valor, y se llama a `OnValueChanged()` inmediatamente después de que cambie el valor.
 
- Por ejemplo, supongamos que tiene una clase de dominio denominada `Comment` que tiene una propiedad de dominio de cadena denominada `Text` y una propiedad de entero denominada `TextLengthCount`. Para que `TextLengthCount` siempre contenga la longitud de la cadena de `Text`, puede escribir el código siguiente en un archivo independiente en el proyecto DSL:
+ Por ejemplo, supongamos que tiene una clase de dominio denominada `Comment` que tiene una propiedad de dominio de cadena denominada `Text` y una propiedad de entero denominada `TextLengthCount` . Para que `TextLengthCount` siempre contenga la longitud de la `Text` cadena, puede escribir el código siguiente en un archivo independiente en el proyecto DSL:
 
 ```
 // Domain Class "Comment":
@@ -99,7 +99,7 @@ if (newValue > 10)
 
  En su lugar, podría considerar la posibilidad de definir la propiedad derivada como una propiedad calculada. En ese caso, la propiedad no tiene su propio almacenamiento y su función de definición se evalúa siempre que se necesita su valor. Para obtener más información, consulte [propiedades de almacenamiento calculado y personalizado](../modeling/calculated-and-custom-storage-properties.md).
 
- En lugar del ejemplo anterior, podría establecer el campo **Kind** de `TextLengthCount` que se va a **calcular** en la definición de DSL. Debe proporcionar su propio método **Get** para esta propiedad de dominio. El método **Get** devolverá la longitud actual de la cadena de `Text`.
+ En lugar del ejemplo anterior, podría establecer el campo **Kind** de para que `TextLengthCount` se **calcule** en la definición de DSL. Debe proporcionar su propio método **Get** para esta propiedad de dominio. El método **Get** devolverá la longitud actual de la `Text` cadena.
 
  Sin embargo, un posible inconveniente de las propiedades calculadas es que la expresión se evalúa cada vez que se usa el valor, lo que podría suponer un problema de rendimiento. Además, las propiedades calculadas no tienen ningún método OnValueChanging() y OnValueChanged().
 

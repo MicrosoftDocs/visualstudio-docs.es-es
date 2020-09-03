@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7370bf956fd79f5568737af5d9a96b9c64a5316b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667312"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Paso 2: Agregar un objeto aleatorio y una lista de iconos
@@ -47,7 +47,7 @@ En este paso, creará un conjunto de símbolos para formar parejas en el juego. 
 
 4. En Visual Basic se debe crear primero una matriz temporal, pero en Visual C#, la lista se puede crear con una instrucción. Esto es así porque el lenguaje Visual C# tiene *inicializadores de colección*, que preparan la lista para aceptar valores. En Visual Basic, puede utilizar un inicializador de colección. Sin embargo, por compatibilidad con la versión anterior de Visual Basic, recomendamos utilizar el código anterior.
 
-     Al utilizar un inicializador de colección con una instrucción `new`, una vez creado el nuevo objeto `List`, el programa lo rellena con los datos que especifique entre las llaves. En este caso, se obtiene una lista de cadenas denominadas **iconos**; la lista se inicializará para que contenga dieciséis cadenas. Cada una de esas cadenas es una letra única y todas corresponden a los iconos que se mostrarán en las etiquetas. Así que el juego tendrá un par de signos de exclamación, un par de letras N en mayúscula, un par de comas, etc. (Cuando estos caracteres se establecen en la fuente Webdings, aparecerán como símbolos, como un bus, una bicicleta, una araña, etc.) El objeto `List` tendrá dieciséis cadenas, una para cada celda del panel TableLayoutPanel.
+     Al utilizar un inicializador de colección con una instrucción `new`, una vez creado el nuevo objeto `List`, el programa lo rellena con los datos que especifique entre las llaves. En este caso, se obtiene una lista de cadenas denominadas **iconos**; la lista se inicializará para que contenga dieciséis cadenas. Cada una de esas cadenas es una letra única y todas corresponden a los iconos que se mostrarán en las etiquetas. Así que el juego tendrá un par de signos de exclamación, un par de letras N en mayúscula, un par de comas, etc. (Cuando estos caracteres se establecen en la fuente Webdings, aparecerán como símbolos, como un bus, una bicicleta, una araña, etc.) El `List` objeto tendrá dieciséis cadenas en todos, una para cada celda en el panel de TableLayoutPanel.
 
     > [!NOTE]
     > En Visual Basic, se obtiene el mismo resultado, pero las cadenas se colocan primero en una matriz temporal, que se convierte después en un objeto `List`. Una matriz es similar a una lista, salvo que las matrices se crean con un tamaño fijo. Las listas pueden reducir y crecer según sea necesario, algo que es importante en este programa.

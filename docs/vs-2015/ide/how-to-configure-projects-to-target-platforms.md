@@ -19,16 +19,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e6ba899fd1b17fa5a82c64d5c5e44e67f0d5eb97
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668189"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Cómo: Configurar proyectos para plataformas de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para más información sobre la compatibilidad con plataformas de 64 bits en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vea [Aplicaciones de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para obtener más información sobre la compatibilidad con la plataforma de 64 bits en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , vea [aplicaciones de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
 
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Configurar plataformas de destino con el Administrador de configuración
  El **Administrador de configuración** proporciona una forma de agregar rápidamente nuevas plataformas de destino para el proyecto. Si selecciona una de las plataformas que se incluyen con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], las propiedades del proyecto se modifican a fin de compilarlo para esa plataforma.
@@ -39,7 +39,7 @@ ms.locfileid: "72668189"
 
 2. En la lista **Plataforma de soluciones activas**, elija una plataforma de 64 bits para la solución de destino y luego elija el botón **Cerrar**.
 
-   1. Si la plataforma que quiere no aparece en la lista **Plataforma de soluciones activas**, elija **Nueva**.
+   1. Si la plataforma que desea no aparece en la lista **plataforma de soluciones activas** , elija **nueva**.
 
         Aparecerá el cuadro de diálogo **Nueva plataforma de solución**.
 
@@ -59,9 +59,9 @@ ms.locfileid: "72668189"
 
 - Para proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], vea [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).
 
-- Para proyectos de [!INCLUDE[csprcs](../includes/csprcs-md.md)], vea [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Para los [!INCLUDE[csprcs](../includes/csprcs-md.md)] proyectos de, vea [compilar (página, diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-- Para proyectos de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], vea [/clr (Compilación de Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).
+- Para los [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] proyectos de, vea [/CLR (Common Language Runtime Compilation)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).
 
-## <a name="see-also"></a>Otras referencias
- [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [/PlatformC# (opciones del compilador)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64 de aplicaciones de bits de](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE de 64](../ide/visual-studio-ide-64-bit-support.md) bits
+## <a name="see-also"></a>Consulte también
+ [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [/Platform (opciones del compilador de C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64 de aplicaciones de bits de](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE 64](../ide/visual-studio-ide-64-bit-support.md) bits

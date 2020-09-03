@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 80ad0fcc7409bd91f24ef197ef12ed64610a2e0b
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770350"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Cómo: Mostrar las direcciones URL como vínculos en el editor

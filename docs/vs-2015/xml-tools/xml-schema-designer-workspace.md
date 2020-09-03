@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a16be3adb799fe2b0751d6119e5a980dd1b90d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669379"
 ---
 # <a name="xml-schema-designer-workspace"></a>Área de trabajo del Diseñador de esquemas XML
@@ -26,13 +26,13 @@ El Diseñador de esquemas XML (Diseñador XSD) es una herramienta gráfica que l
 ## <a name="adding-nodes-to-the-workspace"></a>Agregar nodos al área de trabajo
  Puede agregar nodos al área de trabajo de las maneras siguientes:
 
-- En la sección "detalles del conjunto de esquemas" de la [vista Inicio](../xml-tools/start-view.md), haga clic en el vínculo **Agregar** junto al tipo de nodo global.
+- En la sección "Detalles del conjunto de esquemas" de la [vista Inicio](../xml-tools/start-view.md), haga clic en el vínculo **agregar** situado junto al tipo de nodo global.
 
-- Arrastre y coloque nodos globales, nodos de archivo y nodos de espacio de nombres desde el Explorador de esquemas XML hasta cualquiera de las tres vistas. Para obtener más información, vea la sección "arrastrar y colocar nodos" en el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md).
+- Arrastre y coloque nodos globales, nodos de archivo y nodos de espacio de nombres desde el Explorador de esquemas XML hasta cualquiera de las tres vistas. Para más información, consulte la sección "Arrastrar y colocar nodos" en [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md).
 
 - Use el menú contextual en el Explorador de esquemas XML. Para obtener más información, vea [menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md).
 
-- Realice una búsqueda en el explorador XSD y haga clic en el botón **agregar nodos resaltados al área de trabajo** en el panel de resultados de resumen. Para obtener más información, vea [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).
+- Realice una búsqueda en el Explorador XSD y haga clic en el botón **Agregar nodos resaltados al área de trabajo** en el panel de resumen de resultados. Para obtener más información, vea [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).
 
 ## <a name="view-switching"></a>Cambiar de vista
  Para cambiar de vista, use una de las opciones siguientes:

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 657bb91295134352fb00649ad06f59e34593c578
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669904"
 ---
 # <a name="define-packages-and-namespaces"></a>Definir espacios de nombres y paquetes
@@ -35,7 +35,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 
  [Crear y ver paquetes](#Packages)
 
- [Crear elementos de modelo dentro de paquetes](#Elements)
+ [Crear elementos del modelo dentro de paquetes](#Elements)
 
  [Mover elementos dentro o fuera de un paquete](#Moving)
 
@@ -47,7 +47,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 
  [Propiedades de los paquetes](#Properties)
 
-## <a name="Namespaces"></a>Espacios
+## <a name="namespaces"></a><a name="Namespaces"></a> Espacios
  Los paquetes son útiles para estructurar el trabajo en diferentes áreas. Cada paquete define un espacio de nombres para que los nombres definidos en paquetes diferentes no entren en conflicto entre sí.
 
  La propiedad de nombre completo de cada elemento es el nombre completo del paquete al que pertenece, seguido del propio nombre del elemento. Por ejemplo, si el paquete se denomina `MyPackage`, una clase dentro del paquete tendrá un nombre completo como `MyPackage::MyClass`. Dado que cada elemento se incluye dentro de un modelo, cada nombre completo comienza con el nombre del modelo.
@@ -58,7 +58,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 
  Los paquetes son contenedores. Si mueve o elimina un paquete, también se mueven o eliminan las clases, los paquetes y otras cosas definidas dentro de este. Lo mismo puede decirse de otros elementos que definen los espacios de nombres.
 
-## <a name="Packages"></a>Crear y ver paquetes
+## <a name="creating-and-viewing-packages"></a><a name="Packages"></a> Crear y ver paquetes
  Puede crear un paquete en un diagrama de clases UML o en el Explorador de modelos UML.
 
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>Para crear un paquete en un diagrama de clases UML
@@ -97,7 +97,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
     > [!NOTE]
     > Se crea una vista del paquete en este diagrama. No necesariamente mostrará todos los elementos que contiene el paquete. Para asegurarse de que ve todo el contenido de un paquete, véalo en el Explorador de modelos UML.
 
-## <a name="Elements"></a>Crear elementos de modelo dentro de paquetes
+## <a name="creating-model-elements-inside-packages"></a><a name="Elements"></a> Crear elementos de modelo dentro de paquetes
  Hay cuatro maneras en que puede colocar elementos del modelo dentro de un paquete:
 
 - Agregar un nuevo elemento a un paquete en el Explorador de modelos UML.
@@ -155,7 +155,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 
     - En el **Explorador de modelos UML**, cada elemento aparecerá debajo del paquete.
 
-## <a name="Moving"></a>Mover elementos hacia y desde paquetes
+## <a name="moving-elements-into-and-out-of-packages"></a><a name="Moving"></a> Mover elementos hacia y desde paquetes
  Puede mover uno o varios elementos dentro o fuera de un paquete.
 
  Si mueve un paquete, todo su contenido se mueve con él.
@@ -175,7 +175,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
     > [!NOTE]
     > Si arrastra un elemento fuera de un paquete a una parte en blanco del diagrama, su paquete propietario no cambiará. Esto permite crear un diagrama que muestra los elementos de varios paquetes sin tener que mostrar los paquetes mismos.
 
-## <a name="Pasting"></a>Pegar elementos en un paquete
+## <a name="pasting-elements-into-a-package"></a><a name="Pasting"></a> Pegar elementos en un paquete
  Puede pegar un elemento en un paquete. Si pega un grupo de elementos relacionados en un paquete, también se pegarán las relaciones entre ellos.
 
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>Para pegar elementos en un paquete de un diagrama de clases UML
@@ -187,14 +187,14 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
     > [!NOTE]
     > El paquete puede estar en un diagrama diferente.
 
-## <a name="Import"></a>Importar relaciones entre paquetes
+## <a name="import-relationships-between-packages"></a><a name="Import"></a> Importar relaciones entre paquetes
  Puede definir una relación de importación entre paquetes mediante la herramienta de **importación** .
 
  La importación significa que los elementos definidos en el paquete importado, que son los elementos en el extremo de flecha de la relación, también se definen de forma efectiva en el paquete de importación. Los elementos cuya visibilidad esté definida como **paquete** serán visibles también en el paquete de importación.
 
  Evite crear bucles en las relaciones de importación.
 
-## <a name="References"></a>Referencias de un espacio de nombres a otro
+## <a name="references-from-one-namespace-to-another"></a><a name="References"></a> Referencias de un espacio de nombres a otro
  Si desea hacer referencia a un elemento de un paquete de otro, debe usar el nombre completo del elemento.
 
  Por ejemplo, suponga que el paquete `SalesCommon` define el tipo `CustomerAddress`. En otro paquete `RestaurantSales`, desea definir un tipo `MealOrder`, que tiene un atributo de tipo Dirección del cliente. Tiene dos opciones:
@@ -203,15 +203,15 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 
 - Crear una relación de importación desde el paquete `RestaurantSales` al paquete `SalesCommon`. Puede usar `CustomerAddress` sin utilizar su nombre completo.
 
-## <a name="Properties"></a>Propiedades de los paquetes
+## <a name="properties-of-packages"></a><a name="Properties"></a> Propiedades de los paquetes
  Cada paquete tiene las propiedades siguientes. Para ver las propiedades, haga clic con el botón secundario en el paquete, ya sea en un diagrama o en el explorador de modelos UML y, a continuación, haga clic en **propiedades**.
 
-|Propiedad.|Valor predeterminado|Descripción|
+|Propiedad|Valor predeterminado|Descripción|
 |--------------|-------------------|-----------------|
-|**Nombre**|(un nombre nuevo)|Nombre del paquete. Se puede cambiar tanto en el diagrama como en la ventana Propiedades.|
+|**Name**|(un nombre nuevo)|Nombre del paquete. Se puede cambiar tanto en el diagrama como en la ventana Propiedades.|
 |**Nombre completo**|*Contenedor* :: *nombre del paquete*|Nombre completo, precedido por el nombre del paquete o modelo que contiene este paquete. Para más información, consulte [Espacios de nombres](#Namespaces).|
-|**File**|(vacío)|Una lista de los perfiles vinculados a este paquete. Estos perfiles proporcionan estereotipos que se pueden aplicar a los elementos dentro del paquete. Para obtener más información, vea [personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
-|**Visibilidad**|**Public**|La visibilidad del paquete fuera de su paquete principal.|
+|**Perfiles**|(vacío)|Una lista de los perfiles vinculados a este paquete. Estos perfiles proporcionan estereotipos que se pueden aplicar a los elementos dentro del paquete. Para obtener más información, vea [personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
+|**Visibilidad**|**Pública**|La visibilidad del paquete fuera de su paquete principal.|
 |**Elementos de trabajo**|(vacío)|Una lista de elementos de trabajo vinculados. Para obtener más información, vea [vincular elementos de modelo y elementos de trabajo](../modeling/link-model-elements-and-work-items.md).|
 |**Ubicación de definición**|(nombre)|El nombre de archivo donde se almacenan los detalles del paquete. Los archivos se encuentran dentro de la carpeta del proyecto **ModelDefinition** . Esta información puede ser útil con fines de control de código fuente.|
 |**Descripción**|(vacío)|Una descripción del paquete.|
@@ -222,5 +222,5 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 
  Además, cada diagrama se almacena en dos archivos, uno que representa las formas del diagrama y un archivo **. layout** que registra las posiciones de las formas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md) [diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md) [administrar modelos y diagramas en el control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md)

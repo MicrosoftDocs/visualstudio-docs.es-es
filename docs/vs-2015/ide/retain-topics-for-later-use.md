@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6c32db6dc6fbe151b9eec3cec988443ceb73fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669984"
 ---
 # <a name="retain-topics-for-later-use"></a>Conservar los temas para su uso posterior
@@ -32,5 +32,5 @@ Cuando encuentra un tema útil, dispone de varias opciones para tener acceso a �
 ## <a name="using-the-favorites-tab"></a>Usar la pestaña Favoritos
  En la pestaña **Favoritos**, puede abrir el menú contextual de cualquier entrada y cambiarle el nombre, eliminarla u organizar las entradas en carpetas.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Teclas de método abreviado (Visor de Ayuda)](../ide/shortcut-keys-help-viewer.md)
