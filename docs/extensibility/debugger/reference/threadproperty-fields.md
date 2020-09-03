@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS de la Microsoft Docs
+title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713397"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
-Especifica qué información sobre un subproceso se va a recuperar.
+Especifica la información de un subproceso que se va a recuperar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,24 +52,24 @@ public enum enum_THREADPROPERTY_FIELDS { 
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `TPF_ID`\
- Inicializar/utilizar `dwThreadId` el campo de la estructura [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
+ Inicialice/use el `dwThreadId` campo de la estructura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
  `TPF_SUSPENDCOUNT`\
- Inicializar/utilizar `dwSuspendCount` el campo `THREADPROPERTIE`de la estructura S.
+ Inicialice/use el `dwSuspendCount` campo de la `THREADPROPERTIE` estructura S.
 
  `TPF_STATE`\
- Inicializar/utilizar `dwThreadState` el campo `THREADPROPERTIE`de la estructura S.
+ Inicialice/use el `dwThreadState` campo de la `THREADPROPERTIE` estructura S.
 
  `TPF_PRIORITY`\
- Inicializar/utilizar `bstrPriority` el campo `THREADPROPERTIE`de la estructura S.
+ Inicialice/use el `bstrPriority` campo de la `THREADPROPERTIE` estructura S.
 
  `TPF_NAME`\
- Inicializar/utilizar `bstrName` el campo `THREADPROPERTIE`de la estructura S.
+ Inicialice/use el `bstrName` campo de la `THREADPROPERTIE` estructura S.
 
  `TPF_LOCATION`\
- Inicializar/utilizar `bstrLocation` el campo `THREADPROPERTIE`de la estructura S.
+ Inicialice/use el `bstrLocation` campo de la `THREADPROPERTIE` estructura S.
 
  `TPF_ALLFIELDS`\
  Especifica todos los campos.
@@ -77,14 +77,14 @@ public enum enum_THREADPROPERTY_FIELDS { 
 ## <a name="remarks"></a>Observaciones
  Estos valores se pasan como argumento al método [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) para indicar qué campos de la estructura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) se van a inicializar.
 
- Estos valores también `dwFields` se utilizan `THREADPROPERTIES` en el miembro de la estructura para indicar qué campos se utilizan y son válidos.
+ Estos valores también se usan en `dwFields` el miembro de la `THREADPROPERTIES` estructura para indicar qué campos se usan y son válidos.
 
- Estas banderas se pueden `OR`combinar con un bit a bit .
+ Estas marcas se pueden combinar con una operación bit a bit `OR` .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

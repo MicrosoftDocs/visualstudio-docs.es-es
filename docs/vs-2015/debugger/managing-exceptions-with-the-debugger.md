@@ -34,10 +34,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918954"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Administración de excepciones con el depurador
@@ -69,11 +69,11 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
  En la ventana **Configuración de excepciones** , expanda el nodo de una categoría de excepciones (por ejemplo, **Excepciones de Common Language Runtime**, es decir, las excepciones. NET) y active la casilla de una excepción concreta dentro de esa categoría (por ejemplo **System.AccessViolationException**). También puede seleccionar una categoría de excepciones completa.  
   
- ![AccessViolationException activado](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![AccessViolationException comprobado](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  Si activa una determinada excepción, la ejecución del depurador se interrumpirá siempre que se produzca la excepción, independientemente de si está controlada o no. En este punto, la excepción se denomina primera excepción. A continuación se muestran un par de escenarios de ejemplo:  
   
-1. En la siguiente aplicación de consola de C#, el método Main produce una excepción **AccessViolationException** dentro de un bloque `try/catch` :  
+1. En la siguiente aplicación de consola de C#, el método Main produce **AccessViolationException** dentro de un `try/catch` bloque:  
   
    ```csharp  
    static void Main(string[] args)  
@@ -135,13 +135,13 @@ Una excepción es una indicación de estado de error que se produce mientras se 
    }  
    ```  
   
-    Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` en las dos excepciones **ThrowHandledException()** y **ThrowUnhandledException()** .  
+    Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` en las dos excepciones **ThrowHandledException()** y **ThrowUnhandledException()**.  
   
    Si desea restaurar la configuración de excepciones a los valores predeterminados, haga clic en el botón **Restaurar** de la barra de herramientas:  
   
-   ![Restaurar valores predeterminados en la configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Restaurar valores predeterminados en Configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a>Establecer el depurador para continuar en las excepciones no controladas por el usuario  
+### <a name="setting-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a> Establecer el depurador para continuar en las excepciones no controladas por el usuario  
  Si está depurando código .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), puede indicar al depurador que no interrumpa la ejecución en excepciones que no se controlan en el código de usuario, pero que sí se controlan en otro lugar.  
   
 1. En la ventana **Configuración de excepciones** , abra el menú contextual de una ventana con el botón derecho y, a continuación, seleccione **Mostrar columnas**. (Si ha desactivado **Solo mi código**, no verá este comando).  
@@ -152,7 +152,7 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
    Por ejemplo, para controlar las excepciones, las aplicaciones web ASP.NET las convierten en un código de estado HTTP 500 ([Exception Handling in ASP.NET API](/aspnet/web-api/overview/error-handling/exception-handling)[Control de excepciones en la API de ASP.NET]), lo cual podría no ser una ayuda a la hora de determinar el origen de la excepción. En el ejemplo siguiente, el código del usuario realiza una llamada a `String.Format()` que produce una excepción <xref:System.FormatException>. La ejecución se interrumpe del modo siguiente:  
   
-   ![excepción de interrupción&#45;en unhanlded de usuario](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![interrupción en el usuario&#45;excepción unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Agregar y eliminar excepciones  
  Las excepciones se pueden agregar y eliminar. Puede eliminar cualquier tipo de excepción de cualquier categoría; para ello, seleccione la excepción y haga clic en el botón **Eliminar** (el signo menos) de la barra de herramientas de **Configuración de excepciones** , o haga clic con el botón derecho en la excepción y seleccione **Eliminar** en el menú contextual. Eliminar una excepción tiene el mismo efecto que no activar la excepción: el depurador no se interrumpirá cuando se produzca la excepción.  
@@ -162,7 +162,7 @@ Una excepción es una indicación de estado de error que se produce mientras se 
  Si desea agregar una excepción a las excepciones de acceso a la memoria de GPU, a las excepciones de JavaScript en tiempo de ejecución o a las excepciones de Win32, deberá incluir el código de error y la descripción.  
   
 > [!TIP]
-> No olvide revisar la ortografía. La ventana **Configuración de excepciones** no comprueba la existencia de una excepción agregada. Por lo tanto, si escribe **Sytem.UriTemplateMatchException**, se creará una entrada para esa excepción (y no para **System.UriTemplateMatchException**).  
+> No olvide revisar la ortografía. La ventana **configuración de excepciones** no comprueba la existencia de una excepción agregada. Por lo tanto, si escribe System **. UriTemplateMatchException**, obtendrá una entrada para esa excepción (y no para **System. UriTemplateMatchException**).  
   
  La configuración de excepciones se conserva en el archivo .suo de la solución, por lo que se aplican a una solución concreta. Esta configuración no se puede reutilizar en otras soluciones. Actualmente solo se conservan las excepciones agregadas, no las eliminadas. En otras palabras, puede agregar una excepción, cerrar la solución y volver a abrirla, y la excepción seguirá estando ahí. Pero si elimina una excepción y cierra y vuelve a abrir la solución, volverá a aparecer la excepción.  
   
@@ -179,9 +179,9 @@ public class GenericException<T> : Exception
   
  Puede agregar la excepción a **Configuración de excepciones** del modo siguiente:  
   
- ![Agregar excepción genérica](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![Adición de excepción genérica](../debugger/media/addgenericexception.png "AddGenericException")  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Continuar la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)   
  [Cómo: examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Cómo: utilizar comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)   

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cf88661f9ec15e1a3a25e7eb6a40bbd82335a7f4
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918719"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>Cómo: Responder a cambios en un modelo UML
@@ -22,6 +22,6 @@ Es posible escribir código que se ejecute cada vez que se produzca un cambio en
 > [!WARNING]
 > Estas técnicas son non compatible con la API de UML. Es posible no funcionen en futuras versiones de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Navegar por los controladores de eventos del modelo UML](../modeling/navigate-the-uml-model.md) [propagar los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)
  

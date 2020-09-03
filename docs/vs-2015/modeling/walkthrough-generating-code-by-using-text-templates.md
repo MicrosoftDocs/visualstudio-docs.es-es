@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918578"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
@@ -86,7 +86,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-create-the-project"></a>Para crear el proyecto
 
-1. En el menú **Archivo** , haga clic en **Nuevo** y, después, haga clic en **Proyecto**.
+1. En el menú **archivo** , haga clic en **nuevo** y luego haga clic en **proyecto**.
 
 2. Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.
 
@@ -97,7 +97,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-add-an-xml-file"></a>Para agregar un archivo XML
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar** y después en **Nuevo elemento**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto, haga clic en **Agregar** y, a continuación, en **nuevo elemento**.
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Archivo XML** en el panel **Plantillas** .
 
@@ -105,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 4. Para este tutorial, asigne al archivo el nombre `exampleXml.xml`. Establezca el contenido del archivo de modo que sea el XML que se muestra en la sección anterior.
 
-   .
+   ..
 
 ### <a name="add-a-test-code-file"></a>Agregar un archivo de código de prueba
  Agregue un archivo de C# al proyecto y escriba en él un ejemplo del código que quiere poder escribir. Por ejemplo:
@@ -420,5 +420,5 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>Solución de problemas de la plantilla de texto
  Si ve errores de compilación o de transformación de la plantilla en la **Lista de errores**, o si el archivo de salida no se genera correctamente, puede solucionar los problemas de la plantilla de texto con las técnicas descritas en [Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Generación de código en tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)

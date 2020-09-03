@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5088fc04f4440260bdb9d3f040d99061c05d243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620339"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>operadores de búsqueda avanzada en expresiones de búsqueda
@@ -31,9 +31,9 @@ Mediante el uso de operadores de búsqueda avanzada, puede refinar la búsqueda 
 > [!WARNING]
 > Debe escribir operadores de búsqueda avanzada con dos puntos finales y ningún espacio antes de los dos puntos para que el motor de búsqueda los reconozca.
 
-|Para buscar|Usar|Ejemplo|Resultado|
+|Para buscar|Use|Ejemplo|Resultado|
 |-------------------|---------|-------------|------------|
-|Un término en el título del tema|title:|title:binaryreader|Temas que contienen "binaryreader" en los títulos.|
+|Un término en el título del tema|título:|title:binaryreader|Temas que contienen "binaryreader" en los títulos.|
 |Un término en un ejemplo de código|code:|code:readdouble|Temas que contienen "readdouble" en un ejemplo de código.|
 |Un término en un ejemplo de un lenguaje de programación específico|code:vb:|code:vb:string|Temas que contienen "string" en un ejemplo de Visual Basic.|
 |Un tema que está asociado a una palabra clave de índice específica|keyword:|keyword:readbyte|Temas que están asociados con la palabra clave de índice "readbyte".|
@@ -42,12 +42,12 @@ Mediante el uso de operadores de búsqueda avanzada, puede refinar la búsqueda 
 
 |Lenguaje de programación|Usar|
 |--------------------------|---------|
-|Visual Basic|code:vb<br /><br /> o<br /><br /> code:visualbasic|
-|C#|code:c#<br /><br /> o<br /><br /> code:csharp|
-|C++|code:cpp<br /><br /> o<br /><br /> code:c++<br /><br /> o<br /><br /> code:cplusplus|
-|F#|code:f#<br /><br /> o<br /><br /> code:fsharp|
-|JavaScript|code:javascript<br /><br /> o<br /><br /> code:js|
+|Visual Basic|code:vb<br /><br /> or<br /><br /> code:visualbasic|
+|C#|code:c#<br /><br /> or<br /><br /> code:csharp|
+|C++|code:cpp<br /><br /> or<br /><br /> code:c++<br /><br /> or<br /><br /> code:cplusplus|
+|F#|code:f#<br /><br /> or<br /><br /> code:fsharp|
+|JavaScript|code:javascript<br /><br /> or<br /><br /> code:js|
 |XAML|code:xaml|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Operadores lógicos en expresiones de búsqueda](../ide/logical-operators-in-search-expressions.md) [sugerencias de búsqueda de texto completo](../ide/full-text-search-tips.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ae92d5eea521a3f609024c3333d0567b7e52c54
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645459"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Cómo: Cambiar las mayúsculas y minúsculas en el editor
@@ -25,13 +25,13 @@ ms.locfileid: "72645459"
 Puede usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado todas a mayúsculas o todas a minúsculas.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **ayuda** , en función de la edición o configuración activa. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="procedure"></a>Procedimiento
 
 #### <a name="to-switch-text-to-upper-case"></a>Para cambiar texto a mayúsculas
 
-1. Seleccione el texto que quiere convertir.
+1. Seleccione el texto que desea convertir.
 
 2. En el menú **Edición**, seleccione **Opciones avanzadas**.
 
@@ -44,5 +44,5 @@ Puede usar comandos de menú o métodos abreviados de teclado para convertir las
     > [!TIP]
     > Para volver al formato de mayúsculas y minúsculas anterior a este cambio, seleccione **Deshacer** desde el menú **Edición**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Personalización del cuadro de](../ide/customizing-the-editor.md) [diálogo Opciones del editor de texto](../ide/reference/text-editor-options-dialog-box.md) del editor [escribir código](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -14,16 +14,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12945998b215e9082591fad514bd9c16ab789405
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203890"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica las marcas de host de IntelliSense.  
+Especifica marcas de host de IntelliSense.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,16 +40,16 @@ enum IntellisenseHostFlags
   
 #### <a name="parameters"></a>Parámetros  
   
-|Miembros|DESCRIPCIÓN|  
+|Miembros|Descripción|  
 |-------------|-----------------|  
-|`IHF_READONLYCONTEXT`|Búfer de contexto es de solo lectura.|  
-|`IHF_NOSEPARATESUBJECT`|No hay texto de asunto. Búfer de contexto contiene el destino de IntelliSense (implica `!IHF_READONLYCONTEXT`).|  
-|`IHF_SINGLELINESUBJECT`|Texto del asunto no es capaz varias líneas.|  
+|`IHF_READONLYCONTEXT`|El búfer de contexto es de solo lectura.|  
+|`IHF_NOSEPARATESUBJECT`|Sin texto de asunto. El búfer de contexto contiene IntelliSense-destino (implica `!IHF_READONLYCONTEXT` ).|  
+|`IHF_SINGLELINESUBJECT`|El texto del asunto no es compatible con varias líneas.|  
 |`IHF_FORCECOMMITTOCONTEXT`|Igual a `CanCommitIntoReadOnlyBuffer`.|  
-|`IHF_OVERTYPE`|Edición (en el asunto o el contexto) debe realizarse en modo de reemplazo.|  
+|`IHF_OVERTYPE`|La edición (en asunto o contexto) debe realizarse en modo de sobretipo.|  
   
 ## <a name="requirements"></a>Requisitos  
- SingleFileeditor.idl  
+ SingleFileeditor. idl  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c17b25d8a837f751b8bd8ec108c0b821d58c6df0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657697"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)
@@ -28,7 +28,7 @@ ms.locfileid: "72657697"
 Use esta página del cuadro de diálogo **Opciones** para controlar los cuadros de mensaje y otros aspectos de una operación de buscar y reemplazar. Puede tener acceso a este cuadro de diálogo desde el menú **Herramientas** haciendo clic en **Opciones**, expandiendo **Entorno** y, después, haciendo clic en **Buscar y reemplazar**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
 
 > [!NOTE]
-> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="uielement-list"></a>Lista de UIElement
  **Mostrar mensajes informativos** Seleccione esta opción para mostrar todos los mensajes informativos de buscar y reemplazar que tengan la opción **Mostrar siempre este mensaje** . Por ejemplo, si ha elegido no mostrar el mensaje "La función Buscar ha llegado al punto de inicio de la búsqueda", al seleccionar esta opción provocaría que este mensaje informativo apareciera de nuevo cuando use Buscar y reemplazar.
@@ -51,5 +51,5 @@ Use esta página del cuadro de diálogo **Opciones** para controlar los cuadros 
 
  **Rellenar automáticamente el cuadro de diálogo Buscar con texto del editor** Seleccione esta opción para pegar el texto en cualquier lado del punto de inserción actual del editor en el campo **Buscar** cuando seleccione cualquier vista de la ventana **Buscar y reemplazar** desde el menú **Edición**. Desactive esta opción para usar el último patrón de búsqueda de la búsqueda anterior como la cadena **Buscar**.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633296"
 ---
 # <a name="msbuild-properties"></a>propiedades de MSBuild
@@ -31,7 +31,7 @@ Las propiedades son pares nombre-valor que se pueden utilizar para configurar co
 </PropertyGroup>
 ```
 
- En el archivo de proyecto, se hace referencia a las propiedades mediante la sintaxis $(\<NombreDePropiedad>). En el ejemplo anterior, se usa $(BuildDir) para hacer referencia a la propiedad.
+ En el archivo del proyecto, se hace referencia a las propiedades mediante la sintaxis $(\<PropertyName>). En el ejemplo anterior, se usa $(BuildDir) para hacer referencia a la propiedad.
 
  Los valores de propiedad se pueden cambiar si se vuelve a definir la propiedad. Se puede asignar un nuevo valor a la propiedad `BuildDir` mediante este código XML:
 

@@ -9,10 +9,10 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7190a7f698868642c58d1de2ff801e328859b9db
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851801"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas de IU codificadas en los controles
@@ -22,29 +22,29 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 
  **En este tema:**
 
-1. [Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)
+1. [Compatibilidad con registros, reproducción y validación de propiedades mediante la implementación de la accesibilidad](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)
 
-2. [Admitir la validación de propiedades personalizada al implementar un proveedor de propiedades](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)
+2. [Compatibilidad con la validación de propiedades personalizadas mediante la implementación de un proveedor de propiedades](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)
 
-3. [Admitir la generación de código al implementar una clase para obtener acceso a propiedades personalizadas](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)
+3. [Admitir la generación de código al implementar una clase para tener acceso a las propiedades personalizadas](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)
 
-4. [Admitir acciones intencionales al implementar un filtro de acción](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
+4. [Compatibilidad con acciones con intención mediante la implementación de un filtro de acción](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
 
    ![CUIT&#95;completo](../test/media/cuit-full.png "CUIT_Full")
 
-## <a name="recordandplayback"></a> Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad
+## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a><a name="recordandplayback"></a> Compatibilidad con registros, reproducción y validación de propiedades mediante la implementación de la accesibilidad
  El generador de pruebas de IU codificadas captura información acerca de los controles que encuentra durante una grabación y después genera código para reproducir esa sesión. Si el control no admite accesibilidad, el generador de pruebas de IU codificadas capturará acciones (como clics del mouse) mediante las coordenadas de pantalla. Cuando la prueba se reproduce, el código generado emitirá esos clics del mouse en las mismas coordenadas de la pantalla. Si el control aparece en un lugar diferente de la pantalla cuando se reproduce la prueba, el código generado no podrá realizar esa acción en el control. Esto puede producir errores si la prueba se reproduce en configuraciones de pantalla diferentes, en entornos distintos o después de haberse realizado cambios en el diseño de la interfaz de usuario.
 
  ![CUIT&#95;RecordNoSupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
 
  Sin embargo, si implementa accesibilidad, el generador de pruebas de IU codificadas la usará para capturar información sobre el control cuando registre una prueba y genere código. A continuación, al ejecutar la prueba, el código generado volverá a reproducir esos eventos en el control, aunque esté en alguna otra parte en la interfaz de usuario. Los autores de las pruebas también podrán crean aserciones usando las propiedades básicas del control.
 
- ![Registro&#95;CUIT](../test/media/cuit-record.png "CUIT_Record")
+ ![CUIT registro de&#95;](../test/media/cuit-record.png "CUIT_Record")
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para admitir la grabación y reproducción, la validación de propiedades y la navegación de un control de Windows Forms
  Implemente la accesibilidad para el control como se indica en el procedimiento siguiente, que se explica en detalle en <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;accesible](../test/media/cuit-accessible.png "CUIT_Accessible")
+ ![CUIT accesible&#95;](../test/media/cuit-accessible.png "CUIT_Accessible")
 
 1. Implemente una clase que se derive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para devolver un objeto de la clase.
 
@@ -78,15 +78,15 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 4. Reemplace las propiedades y métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> y <xref:System.Windows.Forms.AccessibleObject.Select%2A> del objeto de accesibilidad del control secundario.
 
 > [!NOTE]
-> Este tema comienza con el ejemplo de accesibilidad en <xref:System.Windows.Forms.AccessibleObject> en este procedimiento y, a continuación, se basa en este para los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en Program.cs con el código de ejemplo. Tendrá que agregar referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Debe cambiar **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **Aplicación de consola** a **Aplicación Windows** de modo que no aparezca una ventana de consola al ejecutar la aplicación.
+> Este tema comienza con el ejemplo de accesibilidad en <xref:System.Windows.Forms.AccessibleObject> en este procedimiento y, a continuación, se basa en este para los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en Program.cs con el código de ejemplo. Tendrá que agregar referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Debe cambiar **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **aplicación de consola** a **aplicación de Windows** para que no aparezca una ventana de consola al ejecutar la aplicación.
 
-## <a name="customproprties"></a> Admitir la validación de propiedades personalizada al implementar un proveedor de propiedades
+## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a><a name="customproprties"></a> Compatibilidad con la validación de propiedades personalizadas mediante la implementación de un proveedor de propiedades
  Una vez que haya implementado la compatibilidad básica para grabar, reproducir y validar propiedades, puede poner las propiedades personalizadas del control a disposición de las pruebas de IU codificadas mediante la implementación de un complemento <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por ejemplo, el procedimiento siguiente crea un proveedor de propiedades que permite que las pruebas de IU codificadas tengan acceso a la propiedad State de los controles secundarios CurveLegend del control chart.
 
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")
 
 ### <a name="to-support-custom-property-validation"></a>Para admitir la validación de propiedades personalizada
- ![Propiedades&#95;de CUIT](../test/media/cuit-props.png "CUIT_Props")
+ ![CUIT&#95;props](../test/media/cuit-props.png "CUIT_Props")
 
 1. Reemplace la propiedad <xref:System.Windows.Forms.AccessibleObject.Description%2A> del objeto accesible CurveLegend para pasar valores de propiedades enriquecidos en la cadena de descripción, separada de la descripción principal (y de otras, si se implementan varias propiedades) por punto y coma (;).
 
@@ -326,7 +326,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 > [!NOTE]
 > Este paquete de extensión se aplicará a cualquier control de tipo “Text”. Si está probando varios controles del mismo tipo, tendrá que probarlos por separado y administrar los paquetes de la extensión que se implementan al registrar las pruebas.
 
-## <a name="codegeneration"></a> Admitir la generación de código al implementar una clase para obtener acceso a propiedades personalizadas
+## <a name="support-code-generation-by-implementing-a-class-to-access-custom-properties"></a><a name="codegeneration"></a> Admitir la generación de código al implementar una clase para tener acceso a las propiedades personalizadas
  Cuando el generador de pruebas de IU codificadas genera código desde una grabación de sesión, este usa la clase <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> para obtener acceso a los controles.
 
 ```csharp
@@ -406,11 +406,11 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }
     ```
 
-## <a name="intentawareactions"></a> Admitir acciones intencionales al implementar un filtro de acción
+## <a name="support-intent-aware-actions-by-implementing-an-action-filter"></a><a name="intentawareactions"></a> Compatibilidad con acciones con intención mediante la implementación de un filtro de acción
  Cuando Visual Studio registra una prueba, captura cada evento del mouse y del teclado. Sin embargo, en algunos casos, la intención de la acción se puede perder en la serie de eventos del mouse y del teclado. Por ejemplo, si el control admite autocompletar, el mismo conjunto de eventos del mouse y del teclado puede dar lugar a un valor diferente cuando la prueba se reproduce en un entorno distinto. Puede agregar un complemento de filtro de acciones que reemplace la serie de eventos del mouse y del teclado por una sola acción. De esta manera, puede reemplazar la serie de eventos del mouse y del teclado que da lugar a la selección de un valor por una única acción que establece el valor. De esta forma, se protegen las pruebas de IU codificadas de las diferencias de autocompletar de un entorno a otro.
 
 ### <a name="to-support-intent-aware-actions"></a>Para admitir acciones intencionales
- ![Acciones&#95;de CUIT](../test/media/cuit-actions.png "CUIT_Actions")
+ ![CUIT&#95;acciones](../test/media/cuit-actions.png "CUIT_Actions")
 
 1. Implemente una clase de filtro de acción que se deriva de [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), invalidando las propiedades [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) y [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 
@@ -535,10 +535,10 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Orientación
+### <a name="guidance"></a>Instrucciones
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)

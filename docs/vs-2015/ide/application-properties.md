@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f4777bf6c94997b9291bb84fed07befa197a8c5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620311"
 ---
 # <a name="application-properties"></a>Application Properties
@@ -54,7 +54,7 @@ Desde el panel **Aplicación** del **Diseñador de proyectos** puede establecer 
   Las tareas disponibles para la aplicación dependerán del lenguaje de desarrollo que se use.
 
 ## <a name="in-this-section"></a>En esta sección
- [Cómo: Especificar el icono de una aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+ [Cómo: especificar un icono de aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
-## <a name="see-also"></a>Otras referencias
- [Página de aplicación, diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [Página de aplicación,C#diseñador de proyectos ()](../ide/reference/application-page-project-designer-csharp.md) [Introducción al diseñador de proyectos](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md) [proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md) [Administrar propiedades de depuración](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [administrar propiedades de compilación](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [administrar recursos de la aplicación (.net)](../ide/managing-application-resources-dotnet.md) [administrar la configuración de la aplicación (.net)](../ide/managing-application-settings-dotnet.md)
+## <a name="see-also"></a>Consulte también
+ [Página de aplicación, diseñador de proyectos (Visual Basic) (](../ide/reference/application-page-project-designer-visual-basic.md) [Página de aplicación), diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md) [Introducción al diseñador de proyectos](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md) [proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md) [administrar propiedades de depuración](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [administrar](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) propiedades de compilación administrar [los recursos de la aplicación (.net)](../ide/managing-application-resources-dotnet.md) [administrar la configuración de la aplicación (.net)](../ide/managing-application-settings-dotnet.md)

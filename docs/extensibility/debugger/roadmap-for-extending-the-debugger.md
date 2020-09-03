@@ -1,5 +1,5 @@
 ---
-title: Hoja de ruta para la ampliación del depurador Microsoft Docs
+title: Guía básica para extender el depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713144"
 ---
-# <a name="roadmap-for-extending-the-debugger"></a>Hoja de ruta para ampliar el depurador
-Esta documentación proporciona información de [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] guía y [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]referencia para ampliar el depurador con el archivo .
+# <a name="roadmap-for-extending-the-debugger"></a>Guía básica para extender el depurador
+En esta documentación se proporciona información de referencia y guía para extender el [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] depurador con [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]la documentación de depuración incluye ejemplos, una referencia completa y varios escenarios representativos que muestran las formas típicas de personalizar el depurador.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la documentación de depuración incluye ejemplos, una referencia completa y varios escenarios representativos que muestran las formas típicas de personalizar el depurador.
 
  El compilador y su salida determinan lo que se necesita para configurar la depuración en el producto. Si el compilador:
 
-- Tiene como destino el sistema operativo nativo de Windows y escribe un *archivo . PDB,* puede depurar programas con el motor de depuración [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]de código nativo (DE), que está integrado en . No es necesario implementar un evaluador de expresiones o DE. El evaluador de expresiones se escribe para la sintaxis del lenguaje de programación C++.
+- Tiene como destino el sistema operativo nativo de Windows y escribe un *. Archivo PDB* , puede depurar programas con el motor de depuración de código nativo (de), que está integrado en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . No es necesario implementar un evaluador DE expresiones o. El evaluador de expresiones se escribe para la sintaxis del lenguaje de programación de C++.
 
-- Produce la salida del lenguaje intermedio de Microsoft (MSIL), puede depurar programas con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]el motor de depuración de código administrado DE, que también está integrado en . Por lo tanto, solo necesita implementar un evaluador de expresiones. Se proporciona un evaluador de expresiones de ejemplo. Para obtener más información, vea los temas siguientes:
+- Genera la salida del lenguaje intermedio DE Microsoft (MSIL), puede depurar programas con el motor DE depuración DE código administrado DE, que también está integrado en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Por lo tanto, solo necesita implementar un evaluador de expresiones. Se proporciona un evaluador de expresiones de ejemplo. Para obtener más información, vea los temas siguientes:
 
    [Evaluación de expresiones](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
@@ -39,13 +39,13 @@ Esta documentación proporciona información de [!INCLUDE[vs_current_short](../.
 
    [Escribir un evaluador de expresiones de Common Language Runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- Se dirige a un sistema operativo propietario o a algún otro entorno en tiempo de ejecución, debe escribir su propio DE. Se proporciona un tutorial que crea un DE simple mediante ATL COM. Para obtener más información, vea los temas siguientes:
+- Tiene como destino un sistema operativo propietario o algún otro entorno en tiempo de ejecución, debe escribir su propio. Se proporciona un tutorial que crea un sencillo DE mediante ATL COM. Para obtener más información, vea los temas siguientes:
 
    [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Tutorial: Cree un motor de depuración con ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Tutorial: compilar un motor de depuración mediante ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
 
-   [Implementar un proveedor portuario](../../extensibility/debugger/implementing-a-port-supplier.md)
+   [Implementación de un proveedor de Puerto](../../extensibility/debugger/implementing-a-port-supplier.md)
 
    [Muestras](../../extensibility/debugger/visual-studio-debugging-samples.md)
 

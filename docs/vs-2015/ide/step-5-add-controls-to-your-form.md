@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851531"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Paso 5: Agregar controles al formulario
@@ -21,7 +21,7 @@ ms.locfileid: "75851531"
 
 En este paso, se agregan controles, como un control `PictureBox` y un control `CheckBox`, al formulario. A continuación, se agregan botones al formulario.
 
- ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 2 o el](https://msdn.microsoft.com/vbasic/gg315945.aspx) [tutorial 1: C# crear un visor de imágenes en-vídeo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 2 o el](https://msdn.microsoft.com/vbasic/gg315945.aspx) [tutorial 1: crear un visor de imágenes en C# (vídeo 2)](https://msdn.microsoft.com/vcsharp/gg278410.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Para agregar controles al formulario
 

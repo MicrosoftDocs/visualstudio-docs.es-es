@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 5b26b8cd9d955309e3be0e17e975bfdeb242e475
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621402"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
@@ -72,11 +72,11 @@ En este tema se describen las opciones para actualizar el archivo de base de dat
 
    - **Origen de datos**: `Microsoft SQL Server (SqlClient)`
 
-   - **Nombre del servidor**:
+   - **Nombre de servidor**:
 
-       - Para usar la versión predeterminada: `(localdb)\MSSQLLocalDB`.  Esto especificará ProjectV12 o ProjectV13, en función de la versión de Visual Studio que esté instalada y de la creación de la primera instancia de LocalDB. El nodo **MSSQLLocalDB** de **Explorador de objetos de SQL Server** muestra la versión a la que apunta.
+       - Para usar la versión predeterminada: `(localdb)\MSSQLLocalDB` .  Esto especificará ProjectV12 o ProjectV13, en función de la versión de Visual Studio que esté instalada y de la creación de la primera instancia de LocalDB. El nodo **MSSQLLocalDB** de **Explorador de objetos de SQL Server** muestra la versión a la que apunta.
 
-       - Para usar una versión específica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, donde V12 es LocalDB 2014 y v13 es LocalDB 2016.
+       - Para usar una versión específica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13` , donde V12 es LocalDB 2014 y v13 es LocalDB 2016.
 
    - **Adjunte un archivo de base de datos**: la ruta de acceso física del archivo. MDF principal.
 
@@ -88,7 +88,7 @@ En este tema se describen las opciones para actualizar el archivo de base de dat
 
    La base de datos se actualiza, se adjunta al motor de base de datos LocalDB y ya no es compatible con la versión anterior de LocalDB.
 
-   También puede modificar una conexión SQL Server Express para usar LocalDB; para ello, abra el menú contextual de la conexión y, a continuación, seleccione **modificar conexión**. En el cuadro de diálogo **modificar conexión** , cambie el nombre del servidor a `(LocalDB)\MSSQLLocalDB`. En el cuadro de diálogo **propiedades avanzadas** , asegúrese de que la **instancia de usuario** está establecida en **false**.
+   También puede modificar una conexión SQL Server Express para usar LocalDB; para ello, abra el menú contextual de la conexión y, a continuación, seleccione **modificar conexión**. En el cuadro de diálogo **modificar conexión** , cambie el nombre del servidor a `(LocalDB)\MSSQLLocalDB` . En el cuadro de diálogo **propiedades avanzadas** , asegúrese de que la **instancia de usuario** está establecida en **false**.
 
 ### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>Para actualizar a una versión más reciente de SQL Server Express
 
@@ -110,11 +110,11 @@ En este tema se describen las opciones para actualizar el archivo de base de dat
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para que SQL Server Express el motor de base de datos predeterminado
 
-1. En la barra de menús, seleccione **herramientas**  > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 2. En el cuadro de diálogo **Opciones** , expanda las opciones de **herramientas de datos** y, a continuación, seleccione el nodo **conexiones de datos** .
 
-3. En el cuadro de texto **nombre de instancia de SQL Server** , especifique el nombre de la instancia de SQL Server Express o LocalDB que desee usar. Si la instancia no tiene nombre, especifique `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.
+3. En el cuadro de texto **nombre de instancia de SQL Server** , especifique el nombre de la instancia de SQL Server Express o LocalDB que desee usar. Si la instancia de no se denomina, especifique `.\SQLEXPRESS or (localdb)\MSSQLLocalDB` .
 
 4. Seleccione el botón **Aceptar**.
 

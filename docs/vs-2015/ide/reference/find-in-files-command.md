@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 831a67fe567c2e6ae1e288d1bc7ee91026ff2273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651036"
 ---
 # <a name="find-in-files-command"></a>Buscar en archivos (Comando)
@@ -73,5 +73,5 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Ventana de comandos](../../ide/reference/command-window.md) [Buscar en archivos](../../ide/find-in-files.md) [cuadro Buscar/comando](../../ide/find-command-box.md) [comandos de Visual](../../ide/reference/visual-studio-commands.md) Studio alias de comandos de [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
