@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 44146613fb43b6fc4269741ba09b94629f888d5f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673071"
 ---
 # <a name="add-new-connections"></a>Adición de nuevas conexiones
@@ -23,7 +23,7 @@ Puede probar la conexión a una base de datos o servicio, y explorar el contenid
 
  Explorador de servidores instala de forma predeterminada en Visual Studio. Se puede usar para probar las conexiones y ver SQL Server bases de datos, cualquier otra base de datos que tenga un proveedor de ADO.NET instalado y algunos servicios de Azure. También muestra objetos de bajo nivel, como contadores de rendimiento del sistema, registros de eventos y colas de mensajes. Si un origen de datos no tiene ningún proveedor ADO.NET, no aparecerá aquí, pero puede seguir utilizándolo desde Visual Studio conectándose mediante programación.
 
- Cloud Explorer instalar esta ventana manualmente como una extensión de Visual Studio seleccionando **herramientas**  > **extensiones y actualizaciones**  > **en línea**  > **Galería de Visual Studio**. Proporciona funcionalidad especializada para explorar y conectarse a los servicios de Azure.
+ Cloud Explorer instalar esta ventana manualmente como una extensión de Visual Studio seleccionando **herramientas**  >  **extensiones y actualizaciones**  >  **en línea**  >  **Galería de Visual Studio**. Proporciona funcionalidad especializada para explorar y conectarse a los servicios de Azure.
 
  Explorador de objetos de SQL Server instala con SQL Server Data Tools y visible en el menú **Ver** . Si no lo ve allí, vaya a **programas y características** en el panel de control, busque Visual Studio y, luego, seleccione **cambiar** para volver a ejecutar el instalador después de activar la casilla de SQL Server Data Tools. Use **Explorador de objetos de SQL Server** para ver las bases de datos SQL (si tienen un proveedor ADO.net), crear nuevas bases de datos, modificar esquemas, crear procedimientos almacenados, recuperar cadenas de conexión, ver los datos, etc. Las bases de datos SQL que no tienen ningún proveedor ADO.NET instalado no se mostrarán aquí, pero todavía puede conectarse a ellas mediante programación.
 
@@ -41,12 +41,12 @@ Puede probar la conexión a una base de datos o servicio, y explorar el contenid
 
  ![Cambiar el proveedor de datos AD0.NET](../data-tools/media/raddata-change-ad0-net-data-provider.png "raddata cambiar el proveedor de datos AD0.NET")
 
-## <a name="test-the-connection"></a>Prueba de la conexión
+## <a name="test-the-connection"></a>Comprobación de la conexión
  Después de elegir el origen de datos, haga clic en **probar conexión**. Si no se realiza correctamente, tendrá que solucionar los problemas en función de la documentación del proveedor.
 
- ![Prueba de conexión](../data-tools/media/raddata-test-connection.png "Conexión de prueba de raddata")
+ ![Probar conexión](../data-tools/media/raddata-test-connection.png "Conexión de prueba de raddata")
 
  Si la prueba se realiza correctamente, está listo para crear un *origen de datos*, que es un término de Visual Studio que realmente hace referencia a un *modelo de datos* basado en la base de datos o el servicio subyacente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 27f69a3295deb8d3335878acc865314635af7c0e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387309"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Solución de problemas del emulador de Visual Studio para Android
@@ -23,7 +23,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 > [!WARNING]
 > Cuando se instala el emulador, el programa de instalación comprueba los requisitos previos para ejecutar el software. Si estos requisitos no se cumplen se muestra una serie de advertencias, pero no se solicita su instalación.
 
- Este tema contiene las siguientes secciones:
+ En este tema se incluyen las siguientes secciones.
 
 - [Antes de empezar](#BeforeYouStart)
 
@@ -47,7 +47,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 - [No se puede conectar el depurador a un proyecto Xamarin](#Skylake)
 
-- [El emulador no puede ejecutar la aplicación que usa los servicios de Google Play](#GooglePlay)
+- [El emulador no puede ejecutar la aplicación que usa Google Play Services](#GooglePlay)
 
 - [La función de arrastrar y soltar un archivo, un archivo APK o un archivo zip con memoria Flash no funciona](#DragAndDrop)
 
@@ -62,7 +62,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 ## <a name="before-you-start"></a><a name="BeforeYouStart"></a> Antes de empezar
  Antes de empezar a solucionar problemas, puede ser útil revisar los temas siguientes:
 
-- [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+- [Requisitos del sistema para el emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
 
 ## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> El emulador no se instala
  Si no tiene instalado Hyper-V, verá el siguiente mensaje cuando intente instalar el emulador. Debe tener una máquina que admita Hyper-v y debe estar habilitada.
@@ -173,7 +173,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
      - Deshabilitar Trusted Execution
 
-       Para obtener más información, vea este artículo: Technet: Hyper-V: Cómo corregir errores de BIOS habilitando Hyper-V.
+       Para obtener más información, vea este artículo: Technet: Hyper-V: How to Fix BIOS Errors Enabling Hyper-V (Solución de errores de BIOS con Hyper-V)
 
   5. Asegúrese de que tiene al menos 4 GB de memoria de sistema y de que no la consumen otros programas y procesos con un gran consumo de recursos.
 
@@ -254,7 +254,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
   Para solucionar este problema, deshabilite USB3 en la configuración de la BIOS de la placa base y reinicie el equipo. Después, compruebe si Gigabyte ha publicado una actualización para la BIOS de su placa base.
 
-  Para obtener más información, consulte el siguiente artículo de Knowledge Base: [Error de arranque después de instalar el rol Hyper-V en sistemas Gigabyte](https://support.microsoft.com/kb/2693144).
+  Para obtener más información, consulte el artículo siguiente de Knowledge Base: [Error de arranque después de instalar el rol de Hyper-V en sistemas Gigabyte](https://support.microsoft.com/kb/2693144).
 
 ## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE.
  Si el emulador se está ejecutando, pero no parece estar conectado a ADB (Android Debug Bridge) o no aparece en las herramientas de Android que usan ADB (por ejemplo, Android Studio o Eclipse), puede que necesite ajustar la ubicación en la que el emulador busca ADB. El emulador usa una clave de registro para identificar la ubicación base del SDK de Android y busca el archivo \platform-tools\adb.exe en ese directorio. Para modificar la ruta de acceso del SDK de Android usada por el emulador:
@@ -293,7 +293,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 6. Reinicie el servicio (en **Acciones**) e inténtelo de nuevo.
 
-## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa los servicios de Google Play
+## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa Google Play Services
  El emulador no se distribuye con las bibliotecas de los servicios de Google Play. Sin embargo, el emulador no admite la instalación de archivos zip con memoria Flash mediante arrastrar y soltar.
 
 ## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a> La función de arrastrar y soltar un archivo, un archivo APK o un archivo zip con memoria Flash no funciona

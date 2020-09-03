@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY Microsoft Docs
+title: GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736641"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
@@ -43,18 +43,18 @@ public struct GUID_ARRAY
 
 ## <a name="members"></a>Miembros
 `dwCount`\
-Número de identificadores únicos en la matriz.
+Número de identificadores únicos de la matriz.
 
 `Members`\
 Matriz que contiene identificadores únicos.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura es devuelta por el [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) método.
+El método [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) devuelve esta estructura.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Msdbg.h
+Encabezado: Msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

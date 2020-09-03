@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31e2086126e9a17554c80b53858205e83fd504fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673034"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a los datos en Visual Studio
@@ -38,7 +38,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 
 |Origen de datos|Compatibilidad con arrastrar y colocar en el **Diseñador de Windows Forms**|Compatibilidad con arrastrar y colocar en **WPF Designer**|Compatibilidad con arrastrar y colocar en el **Diseñador de Silverlight**|
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Conjunto de datos|Sí|Sí|No|
+|Dataset|Sí|Sí|No|
 |Entity Data Model|Sí<sup>1</sup>|Sí|Sí|
 |Clases LINQ to SQL|No<sup>2</sup>|No<sup>2</sup>|No<sup>2</sup>|
 |Servicios como [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], servicios WCF y servicios Web|Sí|Sí|Sí|
@@ -61,7 +61,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 
 |Tarea|Más información|
 |----------|----------------------|
-|Abra la ventana **Orígenes de datos**.|Abra una superficie de diseño en el editor y elija **ver**  > **orígenes de datos**.|
+|Abra la ventana **Orígenes de datos**.|Abra una superficie de diseño en el editor y elija **Ver**  >  **orígenes de datos**.|
 |Agregue un origen de datos al proyecto.|[Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)|
 |Establezca el control que se crea cuando se arrastra un elemento de la ventana **Orígenes de datos** al diseñador.|[Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modifique la lista de controles que están asociados a elementos en la ventana **Orígenes de datos**.|[Agregar controles personalizados a la ventana Orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
@@ -70,5 +70,5 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 |Filtre los datos que aparecen en la interfaz de usuario.|[Filtrar y ordenar los datos en una aplicación Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Personalizar títulos para los controles.|[Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Enlace [de datos de Visual Studio Data Tools para .net](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6c6ebe39cf0d32480aee1019aa5ea47496bd793
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548140"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
@@ -27,7 +27,7 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 
  [Ejecutar pruebas en Explorador de pruebas](#BKMK_Run_tests_in_Test_Explorer)
 
- [Ver los resultados de las pruebas](#BKMK_View_test_results)
+ [Ver resultados de pruebas](#BKMK_View_test_results)
 
  [Agrupar y filtrar la lista de pruebas](#BKMK_Group_and_filter_the_test_list)
 
@@ -44,7 +44,7 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a>Ejecutar pruebas en el explorador de pruebas
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a> Ejecutar pruebas en el explorador de pruebas
  [Ejecutar pruebas](#BKMK_Run_tests) **&#124;** [Ejecutar pruebas después de cada compilación](#BKMK_Run_tests_after_every_build)
 
  Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
@@ -59,7 +59,7 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="run-tests"></a><a name="BKMK_Run_tests"></a>Ejecutar pruebas
+### <a name="run-tests"></a><a name="BKMK_Run_tests"></a> Ejecutar pruebas
  Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:
 
 - Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas**.
@@ -74,7 +74,7 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="run-tests-after-every-build"></a><a name="BKMK_Run_tests_after_every_build"></a>Ejecutar pruebas después de cada compilación
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Run_tests_after_every_build"></a> Ejecutar pruebas después de cada compilación
 
 > [!WARNING]
 > Visual Studio Enterprise permite ejecutar pruebas unitarias después de cada compilación.
@@ -85,12 +85,12 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a>Ver resultados de pruebas
+## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a> Ver resultados de pruebas
  [Ver detalles de la prueba](#BKMK_View_test_details) **&#124;** [Ver el código fuente de un método de prueba](#BKMK_View_the_source_code_of_a_test_method)
 
  Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. El panel de detalles de la parte inferior del Explorador de pruebas muestra un resumen de la ejecución de la prueba.
 
-### <a name="view-test-details"></a><a name="BKMK_View_test_details"></a>Ver detalles de la prueba
+### <a name="view-test-details"></a><a name="BKMK_View_test_details"></a> Ver detalles de la prueba
  Para ver los detalles de una prueba individual, selecciónela.
 
  ![Detalles de ejecución de las pruebas](../test/media/ute-testdetails.png "UTE_TestDetails")
@@ -111,12 +111,12 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="view-the-source-code-of-a-test-method"></a><a name="BKMK_View_the_source_code_of_a_test_method"></a>Ver el código fuente de un método de prueba
+### <a name="view-the-source-code-of-a-test-method"></a><a name="BKMK_View_the_source_code_of_a_test_method"></a> Ver el código fuente de un método de prueba
  Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y, a continuación, elija **abrir prueba** en el menú contextual (teclado: F12).
 
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="group-and-filter-the-test-list"></a><a name="BKMK_Group_and_filter_the_test_list"></a>Agrupar y filtrar la lista de pruebas
+## <a name="group-and-filter-the-test-list"></a><a name="BKMK_Group_and_filter_the_test_list"></a> Agrupar y filtrar la lista de pruebas
  [Agrupar la lista de pruebas](#BKMK_Grouping_the_test_list) **&#124;** [Agrupar por rasgos](#BKMK_Group_by_traits) **&#124;** [Buscar y filtrar la lista de pruebas](#BKMK_Search_and_filter_the_test_list)
 
  El Explorador de pruebas permite agrupar las pruebas en las categorías predefinidas. En la mayoría de los marcos de pruebas unitarias que se ejecutan en el Explorador de pruebas podrá definir las categorías y los pares categoría-valor para agrupar las pruebas que desee. Para filtrar la lista de pruebas, también puede establecer coincidencias entre las cadenas y las propiedades de las pruebas.
@@ -185,7 +185,7 @@ TEST_METHOD(Method1)
 
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="search-and-filter-the-test-list"></a><a name="BKMK_Search_and_filter_the_test_list"></a>Buscar y filtrar la lista de pruebas
+### <a name="search-and-filter-the-test-list"></a><a name="BKMK_Search_and_filter_the_test_list"></a> Buscar y filtrar la lista de pruebas
  Puede limitar los métodos de prueba en los proyectos que vea y ejecute con los filtros del Explorador de pruebas.
 
  Si escribe una cadena en el cuadro de búsqueda del Explorador de pruebas y presiona ENTRAR, la lista de pruebas se filtrará para mostrar solo las pruebas cuyos nombres completos contengan dicha cadena.
@@ -229,7 +229,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a>Crear listas de reproducción personalizadas
+## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a> Crear listas de reproducción personalizadas
  Puede crear y guardar una lista de pruebas que desea ejecutar o ver como grupo. Al seleccionar una lista de reproducción, las pruebas de la lista aparecerán en el Explorador de pruebas. Si lo desea, puede agregar una prueba a varias listas de reproducción. Para acceder a todas las pruebas de un proyecto, elija la lista de reproducción predeterminada **Todas las pruebas** .
 
  ![Elegir una lista de reproducción](../test/media/ute-playlist.png "UTE_Playlist")
@@ -244,7 +244,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="debug-and-analyze-unit-tests"></a><a name="BKMK_Debug_and_analyze_unit_tests"></a>Depurar y analizar pruebas unitarias
+## <a name="debug-and-analyze-unit-tests"></a><a name="BKMK_Debug_and_analyze_unit_tests"></a> Depurar y analizar pruebas unitarias
  [Depurar pruebas unitarias](#BKMK_Debug_unit_tests) **&#124;** [Diagnosticar problemas de rendimiento del método de prueba](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analizar la cobertura de código de prueba unitaria](#BKMK_Analyzeunit_test_code_coverage)
 
 ### <a name="debug-unit-tests"></a><a name="BKMK_Debug_unit_tests"></a> Depurar pruebas unitarias
@@ -261,10 +261,10 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="diagnose-test-method-performance-issues"></a><a name="BKMK_Diagnose_test_method_performance_issues"></a>Diagnóstico de problemas de rendimiento del método de prueba
+### <a name="diagnose-test-method-performance-issues"></a><a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnóstico de problemas de rendimiento del método de prueba
  Para diagnosticar por qué tarda demasiado un método de prueba, seleccione dicho método en el Explorador de pruebas y elija Perfil en el menú contextual. Vea [Explorador de rendimiento](../profiling/performance-explorer.md).
 
-### <a name="analyze-unit-test-code-coverage"></a><a name="BKMK_Analyzeunit_test_code_coverage"></a>Analizar la cobertura de código de pruebas unitarias
+### <a name="analyze-unit-test-code-coverage"></a><a name="BKMK_Analyzeunit_test_code_coverage"></a> Analizar la cobertura de código de pruebas unitarias
 
 > [!NOTE]
 > La cobertura de código de prueba unitaria solo se encuentra disponible en Visual Studio Enterprise.
@@ -287,9 +287,9 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="external-resources"></a><a name="BKMK_External_resources"></a>Recursos externos
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a> Recursos externos
 
-### <a name="guidance"></a><a name="BKMK_Guidance"></a>Orienta
+### <a name="guidance"></a><a name="BKMK_Guidance"></a> Orienta
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Consulte también

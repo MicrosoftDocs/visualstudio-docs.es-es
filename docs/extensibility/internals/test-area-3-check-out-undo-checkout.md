@@ -1,5 +1,5 @@
 ---
-title: 'Zona de prueba 3: Desproteger deshaga de salida y deshaga el checkout de salida de salida . Microsoft Docs'
+title: 'Área de prueba 3: extraer del repositorio-deshacer la desprotección | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,128 +14,128 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5365da1e342df5aea9c1b1cd2ae5a446baea57f1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704617"
 ---
-# <a name="test-area-3-check-outundo-checkout"></a>Zona de prueba 3: Desproteger/Deshacer pago
-Este área de prueba del complemento de control de código fuente cubre la edición y la reversión de elementos del almacén de versiones a través de los comandos **Desproteger** y **Deshacer desprotección.**
+# <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Extracción del repositorio y cancelación de la operación
+Este área de prueba del complemento de control de código fuente cubre la edición y reversión de los elementos del almacén de versiones a través de los comandos **Desproteger** y **Deshacer desproteger** .
 
-**Desproteger**: Marca un elemento en el almacén de versiones como desprotegido, modifica la copia local para leer/escribir.
+**Desproteger: marca**un elemento en el almacén de versiones como desprotegido, modifica la copia local a lectura/escritura.
 
-**Deshacer desprotección**: Marca un elemento en el almacén de versiones como protegido, revierte la copia local al estado antes de la desprotección (dependiendo de las opciones).
+**Deshacer desprotección**: marca un elemento en el almacén de versiones como protegido, revierte la copia local al estado anterior a la desprotección (dependiendo de las opciones).
 
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
 
-Las [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] siguientes rutas de menú del entorno de desarrollo integrado se utilizan en los casos de prueba.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]En los casos de prueba se usan las siguientes rutas de menú del entorno de desarrollo integrado.
 
 ##### <a name="check-out"></a>Modificar:
 
-- **Archivo**, **Control de código fuente**, **Desproteger**.
+- **Archivo**, **control de código fuente**, **Desproteger**.
 
 - **Archivo**, **Desproteger**.
 
-- Menú contextual, **desproteger**.
+- Menú contextual, **Desproteger**.
 
-- Deshacer desprotección: **Archivo**, **Control de código fuente**, Deshacer **desprotección**.
+- Deshacer desprotección: **archivo**, **control de código fuente**, **Deshacer desprotección**.
 
 ## <a name="common-expected-behavior"></a>Comportamiento esperado común
 
-- Después de la operación de desprotección, los archivos de destino y/o carpetas se marcan como desprotegidos en el almacén de versiones.
+- Después de la operación de desprotección, los archivos o carpetas de destino se marcan como desprotegidos en el almacén de versiones.
 
-- El almacén de versiones atribuye la desprotección al usuario correcto.
+- El almacén de versiones modifica los atributos de la desprotección al usuario correcto.
 
-- La hora y la fecha de la compra son correctas (según la configuración del usuario).
+- La fecha y la hora de la desprotección son correctas (según la configuración del usuario).
 
 ## <a name="test-cases"></a>Casos de prueba
 
-Los siguientes son casos de prueba específicos para el área de prueba de pago/deshacer pago.
+Los siguientes son casos de prueba específicos para el área de prueba de desprotección/Deshacer desprotección.
 
-### <a name="case-3a-check-out"></a>Caso 3a: Salida
+### <a name="case-3a-check-out"></a>Caso 3A: extraer del repositorio
 
-Esta sección se centra en el funcionamiento del comando check-out.
+Esta sección se centra en el funcionamiento del comando Desproteger.
 
-|Acción|Pasos de prueba|Resultados esperados para verificar|
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
 |------------|----------------|--------------------------------|
-|Echa un vistazo a Exclusive (COE) un proyecto de cliente|1. Cree un proyecto de cliente.<br />2. Agregue la solución al control de código fuente.<br />3. Echa un vistazo a todo el proyecto exclusivamente (**Archivo**, **Desproteger**).|Se produce la salida.|
-|Desproteger exclusivo (COE) un sistema de archivos o un proyecto web IIS local|1. Establezca Conexión del servidor web en Compartir archivos en **Herramientas**, **Opciones**, **Proyectos**, **Configuración web**.<br />2. Cree un proyecto Web.<br />3. Agregue la solución al control de código fuente.<br />4. Echa un vistazo a todo el proyecto exclusivamente (**Archivo**, **Control de código fuente**, **Desproteger**).|Se produce la salida.|
-|Desproteger elementos de solución en una solución (nuevo método para controlar otros archivos)|1. Cree una solución en blanco.<br />2. Agregue la solución al control de código fuente.<br />3. Compruebe la solución.<br />4. Agregue varios elementos de solución.<br />5. Registre todos los elementos recién agregados.<br />6. Seleccione varios elementos de solución.<br />7. Echa un vistazo a los elementos seleccionados (Menú contextual, **Desproteger**).|Los archivos seleccionados se desprotegen.|
-|Desproteger la versión local (si el plug-in bajo prueba admite esta característica)|1. Usuario 1: Crear un proyecto de cliente.<br />2. Usuario 1: Agregue la solución al control de código fuente.<br />3. Usuario 2: Abra la solución desde el control de código fuente a otra ubicación.<br />4. Usuario 2: Echa un vistazo a un archivo.<br />5. Usuario 2: Modifique el archivo.<br />6. Usuario 2: Registre el archivo.<br />7. Usuario 1: Desproteger la versión local del archivo (Desproteger **versión local** avanzada opción en **Desproteger** cuadro de diálogo).|La versión local del archivo está desprotegida.<br /><br /> Las modificaciones del usuario 2 no se aplican al archivo de usuario 1.|
+|Desproteger un proyecto de cliente exclusivo (COE)|1. cree un proyecto de cliente.<br />2. Agregue la solución al control de código fuente.<br />3. desproteja todo el proyecto exclusivamente (**archivo**, **Desproteger**).|Se produce la desprotección.|
+|Desproteger en exclusiva (COE) un sistema de archivos o un proyecto Web de IIS local|1. establezca la conexión del servidor Web en el recurso compartido de archivos en **herramientas**, **Opciones**, **proyectos**, **configuración Web**.<br />2. crear un proyecto Web.<br />3. agregar la solución al control de código fuente.<br />4. desproteja todo el proyecto exclusivamente (**archivo**, **control de código fuente**, **Desproteger**).|Se produce la desprotección.|
+|Desproteger elementos de la solución en una solución (nuevo método para controlar otros archivos)|1. cree una solución en blanco.<br />2. Agregue la solución al control de código fuente.<br />3. Consulte la solución.<br />4. agregar varios elementos de solución.<br />5. Proteja todos los elementos recién agregados.<br />6. Seleccione varios elementos de la solución.<br />7. desproteger los elementos seleccionados (menú contextual, **Desproteger**).|Los archivos seleccionados están desprotegidos.|
+|Desproteger la versión local (si el complemento en pruebas es compatible con esta característica)|1. usuario 1: cree un proyecto de cliente.<br />2. usuario 1: agregar la solución al control de código fuente.<br />3. usuario 2: Abra la solución desde el control de código fuente a otra ubicación.<br />4. usuario 2: desproteger un archivo.<br />5. usuario 2: modifique el archivo.<br />6. usuario 2: Proteja el archivo.<br />7. usuario 1: desproteger la versión local del archivo (Active la opción desproteger la **versión local** en el cuadro de diálogo **Desproteger)** .|La versión local del archivo está desprotegida.<br /><br /> Las modificaciones realizadas por el usuario 2 no se aplican al archivo del usuario 1.|
 
-### <a name="case-3b-disconnected-check-out"></a>Caso 3b: Desconexión Desprotección
+### <a name="case-3b-disconnected-check-out"></a>Caso 3B: desconexión desconectada
 
-Operar en modo desconectado permite a los usuarios algún nivel de compatibilidad continua con el control de código fuente cuando no están conectados directamente a un almacén de versiones. Esto se hace almacenando localmente en caché toda la información relevante sobre la solución y los proyectos dados de alta.
+El funcionamiento en modo sin conexión permite a los usuarios cierto nivel de compatibilidad continua de control de código fuente cuando no se adjuntan directamente a un almacén de versiones. Esto se hace almacenando localmente en caché toda la información relevante sobre la solución y los proyectos que se han dado de alta.
 
-Las operaciones exclusivas de desprotección solo pueden producirse mientras están conectados al almacén de control de código fuente. Las operaciones de desprotección compartidas pueden producirse en cualquier momento, ya sea conectadas o desconectadas. Por lo tanto, cuando se desconecta del almacén de versiones, solo se habilita el comando **Desproteger compartido** (COS). Mientras está desconectado, **Deshacer desprotección** está deshabilitado porque la versión anterior no se puede recuperar para reemplazar los cambios realizados por el usuario.
+Solo se pueden realizar operaciones de desprotección exclusivas mientras están conectadas al almacén de control de código fuente. Las operaciones de desprotección compartidas pueden producirse en cualquier momento, ya sea conectado o desconectado. Por lo tanto, cuando se desconecta del almacén de versiones, solo está habilitado el comando **Desproteger compartido** (COS). Mientras está desconectado, **Deshacer desprotección** está deshabilitado porque no se puede recuperar la versión anterior para reemplazar los cambios realizados por el usuario.
 
-Cuando el usuario se vuelve a conectar al almacén de versiones, se sincronizan los estados de desprotección de todas las soluciones y proyectos dados de alta. Esto hace las actualizaciones necesarias en el almacén para las desprotecciones que el usuario ha realizado. Una vez que se ha producido la sincronización, el usuario puede seguir trabajando de forma normal (conectado).
+Cuando el usuario se vuelve a conectar al almacén de versiones, se sincronizan los Estados de desprotección de todas las soluciones y proyectos dadas de alta. Esto hace las actualizaciones necesarias en el almacén para las desprotecciones que ha realizado el usuario. Una vez que se ha producido la sincronización, el usuario puede seguir trabajando como normal (conectado).
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
-- No se puede utilizar el comando **Desproteger exclusivamente** mientras está desconectado del almacén de versiones.
+- No se puede usar el comando **Desproteger exclusivamente** mientras está desconectado del almacén de versiones.
 
-- No se puede utilizar el comando **Deshacer desprotección** mientras está desconectado del almacén de versiones.
+- No se puede usar el comando **Deshacer desprotección** mientras está desconectado del almacén de versiones.
 
-- El comando **Desproteger compartido** funciona.
+- El comando de **desprotección compartida** funciona.
 
-|Acción|Pasos de prueba|Resultados esperados para verificar|
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
 |------------|----------------|--------------------------------|
-|Mientras está desconectado, desprotege un archivo y, a continuación, conéctate para sincronizar|1. Desconecte un proyecto controlado mediante el cuadro de diálogo Cambiar control de código fuente (**Archivo**, **Control de código fuente**, Cambiar control de código **fuente**).<br />2. Revise un archivo.<br />3. Hacer clic Desproteger (desconectado) en el cuadro de diálogo de advertencia.<br />4. Edite el archivo.<br />5. Conéctese mediante el cuadro de diálogo Cambiar control de código fuente.<br />6. Obtenga la última versión del archivo editado.|Comportamiento esperado común|
+|Mientras está desconectado, desproteja un archivo y, a continuación, conéctese a la sincronización|1. desconectar un proyecto controlado mediante el cuadro de diálogo Cambiar control de código fuente (**archivo**, **control de código fuente**, **Cambiar control de código fuente**).<br />2. desproteger un archivo.<br />3. Haga clic en Desproteger (desconectada) en el cuadro de diálogo de advertencia.<br />4. edite el archivo.<br />5. Conéctese mediante el cuadro de diálogo Cambiar control de código fuente.<br />6. obtener la versión más reciente del archivo editado.|Comportamiento esperado común|
 
-### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3c: Edición de consultas/guardado de consultas (QEQS)
- Se realiza un seguimiento de los elementos bajo control de código fuente para editarlos, cambiar los cambios y guardarlos para ayudar a los usuarios a administrar fácilmente sus archivos. Cuando se edita un elemento controlado que está "protegido", QEQS intercepta el intento de edición y pregunta al usuario si desea desproteger el archivo para editarlo. Dependiendo de **las herramientas**, **configuración** de opciones, el usuario se ve obligado a desproteger el archivo con el fin de editar o se le puede permitir editar una copia en la memoria y desproteger más tarde. Si la configuración **Herramientas**, **Opciones** del usuario no está configurada para mostrar el cuadro de diálogo de desprotección y simplemente desprotegerlo, a continuación, a medida que el usuario realiza su edición, el archivo se desprotege automáticamente, siempre que sea posible.
+### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3C: editar consulta/guardar consulta (QEQS)
+ Se realiza un seguimiento de los elementos bajo control de código fuente para editar, cambiar y guardar para ayudar a los usuarios a administrar fácilmente sus archivos. Cuando se edita un elemento controlado que está "protegido", QEQS intercepta el intento de edición y pregunta al usuario si desea desproteger el archivo para editarlo. En función de las **herramientas**, la configuración de **Opciones** , el usuario se ve obligado a desproteger el archivo para editarlo o se le puede permitir editar una copia en la memoria y desprotegerlo más tarde. Si la opción **herramientas**del usuario, **Opciones** no está establecida para mostrar el cuadro de diálogo desproteger y simplemente desprotegerlo, cuando el usuario realice su edición, el archivo se desprotegerá automáticamente, siempre que sea posible.
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
-- Después de la operación de desprotección, los archivos de destino y/o carpetas se marcan como desprotegidos en el almacén de versiones.
+- Después de la operación de desprotección, los archivos o carpetas de destino se marcan como desprotegidos en el almacén de versiones.
 
-- El almacén de versiones atribuye la desprotección al usuario correcto.
+- El almacén de versiones marca la desprotección para el usuario correcto.
 
-- La hora y la fecha de la salida son correctas (según la configuración del usuario).
+- La fecha y la hora de la desprotección son correctas (según la configuración del usuario).
 
-- La copia local del archivo o carpeta de destino se puede escribir.
+- La copia local del archivo o carpeta de destino es grabable.
 
-|Acción|Pasos de prueba|Resultados esperados para verificar|
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
 |------------|----------------|--------------------------------|
-|Editar archivo de texto que está protegido|1. Cree un nuevo proyecto que contenga un archivo de texto.<br />2. Agregue la solución al control de código fuente.<br />3. Establezca **Herramientas**, **Opciones**, **Control de código fuente**, Permitir que los archivos se **editen mientras se desmarca el disco.**<br />4. Establecer **herramientas**, **Opciones**, **Control de código fuente**, Solicitar **desprotección** en el **cuando los archivos marcados se editan** cuadro combinado.<br />5. Establecer **herramientas**, **Opciones**, **Control de código fuente**, Solicitar **desprotección** en el **cuando los archivos marcados se guardan** cuadro combinado.<br />6. Abra el archivo de texto en el editor, intente escribir texto nuevo en el archivo. Si este paso se realiza correctamente, continúe con el paso siguiente.<br />7. Haga clic en **Cancelar** en el cuadro de diálogo **Desproteger para editar.** Si este paso se realiza correctamente, continúe con el paso siguiente.<br />8. Establezca **Herramientas**, **Opciones**, **Control de código fuente**, Permitir que los archivos se **editen mientras se** marca el disco de solo lectura.<br />9. Abra el archivo de proyecto en el editor, intente escribir texto nuevo en el archivo. Si este paso se realiza correctamente, continúe con el paso siguiente.<br />10. Haga clic en **Editar** en el cuadro de diálogo **Desproteger para editar.** Si este paso se realiza correctamente, continúe con el paso siguiente.<br />11. Edite el archivo de texto e intente guardarlo.|`Result of step 6:`<br /><br /> Aparece el cuadro de diálogo Editar para Editar.<br /><br /> `Result of step 7:`<br /><br /> El archivo no ha cambiado.<br /><br /> `Result of step 9:`<br /><br /> Aparece el cuadro de diálogo Editar para Editar.<br /><br /> `Result of step 10:`<br /><br /> Puede editar el archivo de proyecto en la memoria.<br /><br /> `Result of step 11:`<br /><br /> Al guardar, aparece el cuadro de diálogo Desproteger al guardar.|
-|Edite un archivo de solución que esté protegido|Repita los pasos descritos en la prueba anterior, pero en lugar de modificar un archivo de texto, modifique la solución cambiando las propiedades de la solución.|Igual que la prueba anterior|
-|Editar un archivo de proyecto que está protegido|Repita los pasos descritos en la prueba anterior, pero en lugar de modificar un archivo de texto, modifique el proyecto cambiando las propiedades del proyecto.|Igual que la prueba anterior.|
+|Editar archivo de texto que está protegido|1. cree un nuevo proyecto que contenga un archivo de texto.<br />2. Agregue la solución al control de código fuente.<br />3. establezca **herramientas**, **Opciones**, **control de código fuente**, **permitir que los archivos se editen mientras se está** desactivando el disco.<br />4. establezca **herramientas**, **Opciones**, **control de código fuente**, **preguntar para desproteger** en el cuadro combinado **cuando se editan archivos** insertados.<br />5. establezca **herramientas**, **Opciones**, **control de código fuente**, **preguntar para desproteger** en el cuadro combinado **cuando se guardan archivos** insertados.<br />6. Abra el archivo de texto en el editor, intente escribir un nuevo texto en el archivo. Si este paso se realiza correctamente, continúe con el paso siguiente.<br />7. Haga clic en **Cancelar** en el cuadro **de diálogo desproteger para editar** . Si este paso se realiza correctamente, continúe con el paso siguiente.<br />8. establezca **herramientas**, **Opciones**, **control de código fuente**, **permitir que los archivos se editen mientras se está en el disco de solo lectura** .<br />9. Abra el archivo de proyecto en el editor, intente escribir un nuevo texto en el archivo. Si este paso se realiza correctamente, continúe con el paso siguiente.<br />10. Haga clic en **Editar** en el cuadro **de diálogo desproteger para editar** . Si este paso se realiza correctamente, continúe con el paso siguiente.<br />11. edite el archivo de texto e intente guardarlo.|`Result of step 6:`<br /><br /> Aparece el cuadro de diálogo desproteger para editar.<br /><br /> `Result of step 7:`<br /><br /> El archivo no ha cambiado.<br /><br /> `Result of step 9:`<br /><br /> Aparece el cuadro de diálogo desproteger para editar.<br /><br /> `Result of step 10:`<br /><br /> Puede editar el archivo de proyecto en memoria.<br /><br /> `Result of step 11:`<br /><br /> Al guardar, aparece el cuadro de diálogo desproteger al guardar.|
+|Editar un archivo de solución que está protegido|Repita los pasos descritos en la prueba anterior, pero en lugar de modificar un archivo de texto, modifique la solución cambiando las propiedades de la solución.|Igual que la prueba anterior|
+|Editar un archivo de proyecto que está protegido|Repita los pasos descritos en la prueba anterior, pero en lugar de modificar un archivo de texto, modifique Project cambiando las propiedades del proyecto.|Igual que la prueba anterior.|
 
-### <a name="case-3d-silent-check-out"></a>Caso 3d: Silent Check Out
- Esta subárea cubre los escenarios de desprotección en los que el cuadro de diálogo **Desproteger** no aparece por **usuario Herramientas**, **Opciones**, Configuración de Control de **código fuente**.
+### <a name="case-3d-silent-check-out"></a>Caso 3D: desprotección silenciosa
+ En este tema se **describen los escenarios** de desprotección en los que el cuadro de diálogo desproteger no aparece en las **herramientas**, **Opciones**, configuración de **control de código fuente**del usuario.
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
-- Después de la operación de desprotección, los archivos de destino y/o carpetas se marcan como desprotegidos en el almacén de versiones.
+- Después de la operación de desprotección, los archivos o carpetas de destino se marcan como desprotegidos en el almacén de versiones.
 
-- El almacén de versiones atribuye la desprotección al usuario correcto.
+- El almacén de versiones marca la desprotección para el usuario correcto.
 
-- La hora y la fecha de la salida es correcta (según la configuración del usuario).
+- La fecha y la hora de la desprotección son correctas (según la configuración del usuario).
 
-- La copia local del archivo o carpeta de destino se puede escribir.
+- La copia local del archivo o carpeta de destino es grabable.
 
-|Acción|Pasos de prueba|Resultados esperados para verificar|
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
 |------------|----------------|--------------------------------|
-|Pago silencioso para un archivo|1. Establezca **Herramientas**, **Opciones**, **Control de código fuente** en archivos de **desprotección automáticamente al editar**.<br />2. Cree un nuevo proyecto con un archivo.<br />3. Agregue la solución al control de código fuente.<br />4. Echa un vistazo al archivo.|El archivo se desprotege en silencio (sin interfaz de usuario).|
-|Pago silencioso para un proyecto|1. Establezca **Herramientas**, **Opciones**, **Control de código fuente** en archivos de **desprotección automáticamente al editar**.<br />2. Cree un nuevo proyecto.<br />3. Agregue la solución al control de código fuente.<br />4. Echa un vistazo al proyecto.|El archivo se desprotege en silencio (sin interfaz de usuario).|
+|Desprotección silenciosa de un archivo|1. establezca **herramientas**, **Opciones**, **control de código fuente** para **Desproteger los archivos automáticamente al editarlos**.<br />2. crear un nuevo proyecto con un archivo.<br />3. agregar la solución al control de código fuente.<br />4. Desproteja el archivo.|El archivo se desprotege de forma silenciosa (sin interfaz de usuario).|
+|Desprotección silenciosa para un proyecto|1. establezca **herramientas**, **Opciones**, **control de código fuente** para **Desproteger los archivos automáticamente al editarlos**.<br />2. cree un nuevo proyecto.<br />3. agregar la solución al control de código fuente.<br />4. Desproteja el proyecto.|El archivo se desprotege de forma silenciosa (sin interfaz de usuario).|
 
 ### <a name="case-3e-undo-check-out"></a>Caso 3e: Deshacer desprotección
- **Deshacer desprotección** se utiliza para cancelar el estado de desprotección de un archivo y evitar la comprobación de los cambios realizados en el archivo.
+ **Deshacer desprotección** se usa para cancelar el estado desprotegido de un archivo y evitar la protección de los cambios realizados en el archivo.
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
-- El valor predeterminado se basa en la configuración de la versión local de **desprotección** del usuario. Si el usuario ha elegido desproteger la versión local, el valor predeterminado para deshacer la desprotección es volver siempre a la versión desprotegida.
+- El valor predeterminado se basa en la configuración de la **versión local de desprotección** del usuario. Si el usuario ha elegido desproteger la versión local, el valor predeterminado para Deshacer desprotección es siempre revertir a la versión desprotegida.
 
-- Tras la aceptación de la opción deshacer, los iconos del **Explorador** de soluciones se actualizan para los archivos afectados y el elemento se quita de la ventana **Registros pendientes.**
+- Tras la aceptación de la operación de deshacer, los iconos de **Explorador de soluciones** se actualizan para los archivos afectados y el elemento se quita de la ventana **protecciones pendientes** .
 
-|Acción|Pasos de prueba|Resultados esperados para verificar|
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
 |------------|----------------|--------------------------------|
-|Deshacer desprotección de un único archivo que está desprotegido exclusivamente|1. Cree un proyecto de cliente.<br />2. Agregue la solución al control de código fuente.<br />3. Echa un vistazo a un archivo exclusivamente.<br />4. Modifique el archivo.<br />5. Deshacer desprotección (**Archivo**, **Control de código fuente**, Deshacer **desprotección**).|Comportamiento esperado común.|
-|Deshacer desprotección de un único archivo que está desprotegido Compartido|1. Cree un proyecto de cliente.<br />2. Agregue la solución al control de código fuente.<br />3. Echa un vistazo a un archivo compartido.<br />4. Modifique el archivo.<br />5. Deshacer desprotección (**Archivo**, **Control de código fuente**, Deshacer **desprotección**).|Comportamiento esperado común.|
-|Deshacer desprotección de un proyecto después de agregar archivos al proyecto|1. Cree un nuevo proyecto y agréguelo al control de código fuente.<br />2. Echa un vistazo al proyecto.<br />3. Agregue un archivo al proyecto.<br />4. Deshacer la compra del proyecto.|El archivo agregado se quita del proyecto en el Explorador de soluciones.<br /><br /> El proyecto ya no se desprotege.|
-|Deshacer desprotección de un proyecto después de eliminar archivos del proyecto|1. Cree un nuevo proyecto y agréguelo al control de código fuente.<br />2. Echa un vistazo al proyecto.<br />3. Elimine un archivo del proyecto.<br />4. Deshacer la compra del proyecto.|El archivo eliminado aparece en el proyecto en el Explorador de soluciones.<br /><br /> El proyecto ya no se desprotege.|
+|Deshacer la desprotección de un solo archivo desprotegido exclusivamente|1. cree un proyecto de cliente.<br />2. Agregue la solución al control de código fuente.<br />3. desproteja un archivo exclusivamente.<br />4. modifique el archivo.<br />5. deshacer la desprotección (**archivo**, **control de código fuente**, **Deshacer desprotección**).|Comportamiento esperado común.|
+|Deshacer la desprotección de un solo archivo que está desprotegido compartido|1. cree un proyecto de cliente.<br />2. Agregue la solución al control de código fuente.<br />3. desproteja un archivo compartido.<br />4. modifique el archivo.<br />5. deshacer la desprotección (**archivo**, **control de código fuente**, **Deshacer desprotección**).|Comportamiento esperado común.|
+|Deshacer la desprotección de un proyecto después de agregar archivos al proyecto|1. cree un nuevo proyecto y agréguelo al control de código fuente.<br />2. Desproteja el proyecto.<br />3. Agregue un archivo al proyecto.<br />4. deshacer la desprotección del proyecto.|El archivo agregado se quita del proyecto en Explorador de soluciones.<br /><br /> El proyecto ya no está desprotegido.|
+|Deshacer la desprotección de un proyecto después de eliminar archivos del proyecto|1. cree un nuevo proyecto y agréguelo al control de código fuente.<br />2. Desproteja el proyecto.<br />3. eliminar un archivo del proyecto.<br />4. deshacer la desprotección del proyecto.|El archivo eliminado aparece en el proyecto en Explorador de soluciones.<br /><br /> El proyecto ya no está desprotegido.|
 
 ## <a name="see-also"></a>Vea también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

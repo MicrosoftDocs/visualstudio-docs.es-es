@@ -1,5 +1,5 @@
 ---
-title: C++aplicaciones de la tienda de análisis de código estático
+title: Aplicaciones de la tienda de análisis de código estático de C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,10 +12,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672713"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de C++ de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio
@@ -28,7 +28,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!NOTE]
 > En Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional, puede usar la funcionalidad completa de las herramientas de análisis de código. Consulte [Analizar la calidad de la aplicación mediante herramientas de análisis del código](https://msdn.microsoft.com/library/dd264897.aspx) en la MSDN Library.
 
-## <a name="BKMK_Run"></a> Ejecutar análisis de código
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> Ejecutar análisis de código
  Para ejecutar un análisis de código en la solución de Visual Studio:
 
 - En el menú **Compilar**, elija **Ejecutar análisis de código en la solución**.
@@ -43,10 +43,10 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    ![Ventana Análisis de código](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-## <a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código
  Para analizar una advertencia concreta, elija el título en la ventana Análisis de código. La advertencia se expande para mostrar información detallada sobre el problema. Cuando sea posible, el análisis de código mostrará el número de línea y la lógica del análisis que ha provocado la advertencia.
 
- ![ADVERTENCIA de análisis de código expandido](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
+ ![Advertencia de análisis de código expandido](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
  Cuando se expande una advertencia, las líneas de código que han causado la advertencia se resaltan en el editor de código de Visual Studio.
 
@@ -57,7 +57,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!TIP]
 > Puedes repetir el análisis de código desde la ventana Análisis de código. Elija el botón **Analizar** y después elija el ámbito del análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.
 
-## <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Suprimir advertencias de análisis de código
  A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puedes suprimir advertencias individuales de modo que ya no aparezcan en la ventana Análisis de código.
 
  Para suprimir una advertencia:
@@ -68,14 +68,14 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 3. Elija **Suprimir mensaje** y después **En origen**.
 
-   Al suprimir un mensaje se inserta un identificador `#pragma(warning:`*WarningId*`)` que suprime la advertencia en la línea de código.
+   Al suprimir un mensaje, se inserta `#pragma(warning:` *un identificador warningid* `)` que suprime la advertencia de la línea de código.
 
-## <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Búsqueda y filtrado de resultados de análisis de código
  Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
 
  ![Buscar y filtrar la ventana de análisis de código](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-## <a name="Warnings"></a> Advertencias de análisis de código de C++
+## <a name="c-code-analysis-warnings"></a><a name="Warnings"></a> Advertencias de análisis de código de C++
  El análisis de código produce las advertencias siguientes para código de C++:
 
 |                                      Regla                                      |                                                  Descripción                                                  |
@@ -150,7 +150,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |                      [C28205](../code-quality/c28205.md)                       |                           \_Success\_ o \_On_failure\_ usados en un contexto no válido                            |
 |                      [C28206](../code-quality/c28206.md)                       |                                   El operando izquierdo señala a un struct, use '->'                                   |
 |                      [C28207](../code-quality/c28207.md)                       |                                       El operando izquierdo es un struct, use '->'                                       |
-|                      [C28210](../code-quality/c28210.md)                       |                 Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito                  |
+|                      [C28220](../code-quality/c28210.md)                       |                 Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito                  |
 |                      [C28211](../code-quality/c28211.md)                       |                                 Se esperaba un nombre de contexto estático para SAL_context                                  |
 |                      [C28212](../code-quality/c28212.md)                       |                                  Se esperaba una expresión de puntero para la anotación                                   |
 |                      [C28213](../code-quality/c28213.md)                       | La anotación \_Use_decl_annotations\_ se debe usar para hacer referencia, sin modificación, a una declaración anterior. |
