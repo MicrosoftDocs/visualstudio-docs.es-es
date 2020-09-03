@@ -9,20 +9,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545176"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Procesamiento no seguro de DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |Identificador de comprobación|CA3075|
-|Categoría|Microsoft.Security|
+|Category|Microsoft.Security|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa
@@ -35,13 +35,13 @@ ms.locfileid: "85545176"
 
 - Se ha establecido la propiedad <xref:System.Xml.XmlNode.InnerXml%2A> del XML.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>la propiedad se establece en Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> la propiedad se establece en Parse.
 
 - Las entradas que no son de confianza se procesan mediante <xref:System.Xml.XmlResolver> en lugar de con <xref:System.Xml.XmlSecureResolver> .
 
 - XmlReader.<xref:System.Xml.XmlReader.Create%2A> el método se invoca con una <xref:System.Xml.XmlReaderSettings> instancia no segura o sin ninguna instancia.
 
-- <xref:System.Xml.XmlReader>se crea con valores o configuraciones predeterminados no seguros.
+- <xref:System.Xml.XmlReader> se crea con valores o configuraciones predeterminados no seguros.
 
   En cada uno de estos casos, el resultado es el mismo: el contenido del sistema de archivos o de los recursos compartidos de red del equipo en el que se procesa el XML se expondrá al atacante, y posteriormente se podría usar como vector de denegación de servicio.
 

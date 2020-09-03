@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2ece4788a277bfc4d16568d4014f9eae2ed4de33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545280"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Los campos de tipo de valor deben ser portátiles
@@ -27,11 +27,11 @@ ms.locfileid: "85545280"
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1900: los campos de tipo de valor deben ser portátiles](/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|ValueTypeFieldsShouldBePortable|
 |Identificador de comprobación|CA1900|
-|Categoría|Microsoft. portabilidad|
+|Category|Microsoft. portabilidad|
 |Cambio problemático|Interrumpir: Si el campo puede verse fuera del ensamblado.<br /><br /> No problemático: Si el campo no es visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Causa

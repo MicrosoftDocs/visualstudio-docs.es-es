@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173570"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
@@ -73,7 +73,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
 
 - [Extender Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Cómo: migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
@@ -85,7 +85,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
 - [Extensiones del editor y del servicio de lenguaje](../extensibility/editor-and-language-service-extensions.md)
 - [Ampliar proyectos](../extensibility/extending-projects.md)
 - [Extender la configuración de usuario y las opciones](../extensibility/extending-user-settings-and-options.md)
-- [Crear plantillas de proyecto y de elemento personalizadas](../extensibility/creating-custom-project-and-item-templates.md)
+- [Creación de plantillas de proyecto y de elemento personalizadas](../extensibility/creating-custom-project-and-item-templates.md)
 - [Extender propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md)
 - [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)

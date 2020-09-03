@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags ? Microsoft Docs
+title: IntelliSenseHostFlags | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710268"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
@@ -41,13 +41,13 @@ enum IntellisenseHostFlags
 |Miembros|Descripción|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|El búfer de contexto es de solo lectura.|
-|`IHF_NOSEPARATESUBJECT`|No hay texto de asunto. El búfer de contexto contiene `!IHF_READONLYCONTEXT`IntelliSense-target (implica ).|
+|`IHF_NOSEPARATESUBJECT`|Sin texto de asunto. El búfer de contexto contiene IntelliSense-destino (implica `!IHF_READONLYCONTEXT` ).|
 |`IHF_SINGLELINESUBJECT`|El texto del asunto no es compatible con varias líneas.|
 |`IHF_FORCECOMMITTOCONTEXT`|Igual a `CanCommitIntoReadOnlyBuffer`.|
-|`IHF_OVERTYPE`|La edición (en el asunto o el contexto) debe realizarse en modo de sobrescribir.|
+|`IHF_OVERTYPE`|La edición (en asunto o contexto) debe realizarse en modo de sobretipo.|
 
 ## <a name="requirements"></a>Requisitos
- SingleFileeditor.idl
+ SingleFileeditor. idl
 
 ## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545254"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
@@ -27,11 +27,11 @@ ms.locfileid: "85545254"
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1903: use only API from Target Framework](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |Identificador de comprobación|CA1903|
-|Categoría|Microsoft. portabilidad|
+|Category|Microsoft. portabilidad|
 |Cambio problemático|Problemático: cuando se desencadena con la firma de un miembro o tipo visible externamente.<br /><br /> No problemático: cuando se desencadena en el cuerpo de un método.|
 
 ## <a name="cause"></a>Causa
@@ -42,13 +42,13 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [CA1903: u
 
  **Dependencias de Service Pack y de la plataforma de destino**
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |Cuando la plataforma de destino es|Se desencadena en los usos de los miembros introducidos en|
 |.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
-|.NET Framework 3,5|.NET Framework 3.5 SP1|
-|.NET Framework 4|No aplicable|
+|.NET Framework 3.5|.NET Framework 3.5 SP1|
+|.NET Framework 4|N/D|
 
  Para cambiar el marco de trabajo de destino de un proyecto, vea establecer [como destino una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 

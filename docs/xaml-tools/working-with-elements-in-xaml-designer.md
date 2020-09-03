@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82921098"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
@@ -107,7 +107,7 @@ Para desagrupar elementos y eliminar el diseño, haga clic con el botón derecho
 
 Puede restaurar los valores predeterminados de las propiedades de diseño específicas de un elemento mediante el comando Restablecer diseño. Con este comando puedes restablecer el margen, la alineación, el ancho, el alto y el tamaño de un elemento, ya sea de forma individual o colectiva.
 
-Para restablecer el diseño de los elementos, haga clic con el botón secundario en el elemento en la ventana esquema del documento o en la mesa de presentación y, a continuación, seleccione **diseño** > **restablecer** *PropertyName*, donde *PropertyName* es la propiedad que desea restablecer (o elija **diseño** > **restablecer todo** para restablecer todas las propiedades de diseño del elemento).
+Para restablecer el diseño de los elementos, haga clic con el botón secundario en el elemento en la ventana esquema del documento o en la mesa de presentación y, a continuación, seleccione **diseño**  >  **restablecer** *PropertyName*, donde *PropertyName* es la propiedad que desea restablecer (o elija **diseño**  >  **restablecer todo** para restablecer todas las propiedades de diseño del elemento).
 
 ## <a name="see-also"></a>Consulte también
 
