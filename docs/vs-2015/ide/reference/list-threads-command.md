@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc11479901785b19235e0962d3ae90e552e5b33b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671137"
 ---
 # <a name="list-threads-command"></a>Mostrar subprocesos (Comando)
@@ -36,7 +36,7 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>Argumentos
  `index` Opcional. Selecciona un subproceso por su índice para que sea el subproceso actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Cuando se especifica, el argumento `index` marca el subproceso indicado como el subproceso actual. Se muestra un asterisco (*) en la lista junto al subproceso actual.
 
 ## <a name="example"></a>Ejemplo
@@ -45,5 +45,5 @@ Debug.ListThreads [index]
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  Enumerar [lista de](../../ide/reference/list-disassembly-command.md) comandos de la [pila de llamadas](../../ide/reference/list-call-stack-command.md) comandos de Visual Studio comandos de [Visual Studio](../../ide/reference/visual-studio-commands.md) [ventana](../../ide/reference/command-window.md) de comandos [Buscar/comando cuadros](../../ide/find-command-box.md) de comandos de [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

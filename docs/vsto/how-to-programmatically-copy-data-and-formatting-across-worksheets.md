@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 07baa23b6fd276e8fb8452934dc6361544d16038
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546112"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Cómo: copiar datos y formato en hojas de cálculo mediante programación
@@ -34,7 +34,7 @@ ms.locfileid: "85546112"
 ## <a name="compile-the-code"></a>Compilar el código
  Este ejemplo requiere un intervalo denominado `rangeData` en una hoja de cálculo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Cómo: agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [Cómo: cambiar el formato en filas de hojas de cálculo que contienen celdas seleccionadas mediante programación](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)

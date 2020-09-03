@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d83c6ce2c7173054aa6ea31681ad1baa6e0cbc70
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815596"
 ---
 # <a name="object-member-expected"></a>Se esperaba un objeto miembro
@@ -28,6 +28,6 @@ Ha intentado realizar una operación en un miembro de datos de un objeto, pero e
   
 - Asegúrese de que escribió correctamente el nombre del miembro de datos.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Objeto de objeto](../../javascript/reference/object-object-javascript.md)   
  [Objetos y matrices](../../javascript/objects-and-arrays-javascript.md)

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 51512c80c96ef82835ce38c36e3643261ba84231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671736"
 ---
 # <a name="step-5-add-label-references"></a>Paso 5: Agregar referencias a etiquetas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El programa necesita realizar un seguimiento de los controles Label que elige el jugador. De momento, el programa muestra todas las etiquetas elegidas por el jugador. Pero vamos a cambiar eso. Después de que se haga elegido la primera etiqueta, el programa debería mostrar el icono correspondiente. Una vez elegida la segunda etiqueta, el programa debe mostrar ambos iconos durante un breve período de tiempo y después ocultar ambos iconos de nuevo. El programa realizará ahora un seguimiento del control de etiqueta elegido en primer lugar y del control elegido en segundo lugar mediante *variables de referencia*.
+El programa necesita realizar un seguimiento de los controles Label que elige el jugador. De momento, el programa muestra todas las etiquetas elegidas por el jugador. Pero vamos a cambiar eso. Después de que se haga elegido la primera etiqueta, el programa debería mostrar el icono correspondiente. Una vez elegida la segunda etiqueta, el programa debe mostrar ambos iconos durante un breve período de tiempo y después ocultar ambos iconos de nuevo. El programa realizará ahora un seguimiento del control de etiqueta que se elige primero y que se elige en segundo lugar mediante *variables de referencia*.
 
 ### <a name="to-add-label-references"></a>Para agregar referencias de etiqueta
 
@@ -47,6 +47,6 @@ El programa necesita realizar un seguimiento de los controles Label que elige el
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 6: Agregar un temporizador](../ide/step-6-add-a-timer.md).
+- Para ir al siguiente paso del tutorial, vea [paso 6: agregar un temporizador](../ide/step-6-add-a-timer.md).
 
-- Para volver al paso previo del tutorial, vea [Paso 4: Agregar un controlador de eventos Click a cada etiqueta](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Para volver al paso anterior del tutorial, vea [paso 4: agregar un controlador de eventos click a cada etiqueta](../ide/step-4-add-a-click-event-handler-to-each-label.md).

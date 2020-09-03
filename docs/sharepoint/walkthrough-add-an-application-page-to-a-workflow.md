@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015488"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Tutorial: agregar una página de aplicación a un flujo de trabajo
@@ -130,7 +131,7 @@ ms.locfileid: "86015488"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3. Agregue el siguiente código al método `Page_Load`:
+3. Agregue el código siguiente al método `Page_Load`:
 
     ```vb
     Try

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8a2a2b83b818e37c0b62e103fe284c5c4d110c6c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815639"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Se esperaba ']' en la expresión regular (JavaScript)
@@ -31,6 +31,6 @@ Se intentó crear una clase de caracteres para una coincidencia de expresión re
     > [!NOTE]
     > Si desea buscar coincidencias con un solo corchete, haga una marca de escape con una barra diagonal inversa (), de \\ modo que no se interprete como un carácter especial [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Objeto de expresión regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)

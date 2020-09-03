@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543317"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Cómo: Ocultar texto en documentos mediante programación
@@ -54,7 +54,7 @@ ms.locfileid: "85543317"
 ## <a name="compile-the-code"></a>Compilar el código
  En este ejemplo de código se da por supuesto que el documento contiene un <xref:Microsoft.Office.Tools.Word.Bookmark> control (en una personalización de nivel de documento) o un <xref:Microsoft.Office.Interop.Word.Bookmark> control (en un complemento de VSTO) que se denomina `bookmark1` .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: imprimir documentos mediante programación](../vsto/how-to-programmatically-print-documents.md)
 - [Cómo: definir y seleccionar intervalos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Cómo: restablecer intervalos en documentos de Word mediante programación](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)

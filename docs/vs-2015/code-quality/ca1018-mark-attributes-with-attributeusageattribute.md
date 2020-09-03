@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 256fc281b27c483f1dda0317f7d2695fa36c47f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535062"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Marcar atributos con AttributeUsageAttribute
@@ -47,7 +47,7 @@ ms.locfileid: "85535062"
  Debe corregir una infracción de esta regla en lugar de excluir el mensaje. Incluso si el atributo hereda <xref:System.AttributeUsageAttribute> , el atributo debe estar presente para simplificar el mantenimiento del código.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se definen dos atributos. `BadCodeMaintainerAttribute`omite incorrectamente la <xref:System.AttributeUsageAttribute> instrucción y `GoodCodeMaintainerAttribute` implementa correctamente el atributo que se ha descrito anteriormente en esta sección. Tenga en cuenta que la `DeveloperName` regla de diseño requiere la propiedad [CA1019: definir los descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) y se incluye por integridad.
+ En el ejemplo siguiente se definen dos atributos. `BadCodeMaintainerAttribute` omite incorrectamente la <xref:System.AttributeUsageAttribute> instrucción y `GoodCodeMaintainerAttribute` implementa correctamente el atributo que se ha descrito anteriormente en esta sección. Tenga en cuenta que la `DeveloperName` regla de diseño requiere la propiedad [CA1019: definir los descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) y se incluye por integridad.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]

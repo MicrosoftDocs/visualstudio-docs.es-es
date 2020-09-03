@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544851"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Cómo: exponer código a VBA en un proyecto de Visual Basic
@@ -36,7 +36,7 @@ ms.locfileid: "85544851"
 
 - [Exponer código que no está en una clase de elemento host](#NonHostItem)
 
-## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a>Exponer código en una clase de elemento host
+## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> Exponer código en una clase de elemento host
  Para permitir que el código VBA llame a Visual Basic código de una clase de elemento host, establezca la propiedad **EnableVbaCallers** del elemento host en **true**.
 
  Para ver un tutorial que muestra cómo exponer un método de una clase de elemento host y, a continuación, llamarlo desde VBA, vea [Tutorial: llamar a código desde VBA en un proyecto de Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Para obtener más información sobre los elementos host, vea [información general sobre elementos y controles](../vsto/host-items-and-host-controls-overview.md)host.
@@ -71,7 +71,7 @@ ms.locfileid: "85544851"
 
 6. Compile el proyecto.
 
-## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a>Exponer código que no está en una clase de elemento host
+## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> Exponer código que no está en una clase de elemento host
  Para permitir que el código VBA llame a Visual Basic código que no está en una clase de elemento host, modifique el código para que sea visible para VBA.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Para exponer código que no está en una clase de elemento host a VBA
@@ -115,7 +115,7 @@ ms.locfileid: "85544851"
 
 9. Compile el proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)

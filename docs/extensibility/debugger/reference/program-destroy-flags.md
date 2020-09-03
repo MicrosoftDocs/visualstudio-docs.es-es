@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_DESTROY_FLAGS de la casa de la casa de Microsoft Docs
+title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2ddb00e2cf70055c34335d8f2123004eb031a05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713839"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
-Enumera los valores válidos de los indicadores de destrucción del programa.
+Enumera los valores válidos de las marcas de destrucción de programas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
- Destruir programa, pero continuar depurando.
+ Destruya el programa, pero continúe con la depuración.
 
 ## <a name="remarks"></a>Observaciones
- La enumeración es devuelta por el [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) método.
+ El método [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) devuelve la enumeración.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Msdbg.h
+ Encabezado: Msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

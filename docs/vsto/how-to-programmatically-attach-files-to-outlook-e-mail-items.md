@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546138"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Cómo: adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
@@ -31,7 +31,7 @@ ms.locfileid: "85546138"
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)
 - [Cómo: enviar correo electrónico mediante programación](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
 - [Cómo: guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)

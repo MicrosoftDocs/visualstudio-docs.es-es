@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID Microsoft Docs
+title: AD_PROCESS_ID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738168"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
@@ -49,15 +49,15 @@ public struct AD_PROCESS_ID {
 
 ## <a name="members"></a>Miembros
 `ProcessIdType`\
-Un valor de la [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeración `ProcessId` que especifica cómo interpretar la unión (o, para el código administrado, qué miembro de la estructura para tener acceso).
+Un valor de la enumeración [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) que especifica cómo interpretar la `ProcessId` Unión (o, en el código administrado, a qué miembro de la estructura se va a obtener acceso).
 
 `dwProcessId`\
-El ID de proceso como un valor del sistema.
+El identificador de proceso como un valor del sistema.
 
 `guidProcessId`\
-El identificador de proceso como GUID.
+El identificador de proceso como un GUID.
 
-relleno dwUnused.
+Relleno de dwUnused.
 
 ## <a name="remarks"></a>Observaciones
 Esta estructura se pasa a los métodos siguientes:
@@ -70,16 +70,16 @@ Esta estructura se pasa a los métodos siguientes:
 
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 
-Y se devuelve de los siguientes métodos:
+Y se devuelven desde los métodos siguientes:
 
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

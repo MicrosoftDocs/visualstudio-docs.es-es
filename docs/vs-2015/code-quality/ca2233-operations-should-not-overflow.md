@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545241"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Las operaciones no deben desbordarse
@@ -47,7 +47,7 @@ ms.locfileid: "85545241"
 ## <a name="example-of-a-violation"></a>Ejemplo de una infracción
 
 ### <a name="description"></a>Descripción
- Un método en el ejemplo siguiente manipula un entero que infringe esta regla. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]requiere que se deshabilite la opción para **quitar** el desbordamiento de enteros para que se active.
+ Un método en el ejemplo siguiente manipula un entero que infringe esta regla. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] requiere que se deshabilite la opción para **quitar** el desbordamiento de enteros para que se active.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
@@ -77,7 +77,7 @@ Public Shared Sub Main()
 End Sub
 ```
 
-### <a name="output"></a>Salida
+### <a name="output"></a>Output
 
 ```
 2147483647

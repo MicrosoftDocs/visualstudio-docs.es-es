@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544188"
 ---
 # <a name="properties-of-domain-classes"></a>Propiedades de las clases de dominio
 Las clases de dominio tienen las propiedades de la tabla siguiente. Para obtener información sobre las clases de dominio, vea Descripción de los [modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Propiedad|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |Modificador de acceso|Nivel de acceso de la clase de dominio (`public` o `internal`).|`public`|
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código fuente que se genera a partir de esta clase de dominio.|\<none>|
@@ -31,9 +31,9 @@ Las clases de dominio tienen las propiedades de la tabla siguiente. Para obtener
 |Espacio de nombres|Espacio de nombres de esta clase de dominio.|Espacio de nombres actual|
 |Notas|Notas informales asociadas a esta clase de dominio.|\<none>|
 |Descripción|La descripción que se usa para documentar la interfaz de usuario del diseñador generado.|\<none>|
-|Nombre para mostrar|Nombre que se mostrará en el diseñador generado para esta clase de dominio.|\<none>|
+|Display Name (Nombre para mostrar)|Nombre que se mostrará en el diseñador generado para esta clase de dominio.|\<none>|
 |Help Keyword|Palabra clave opcional que se usa para indizar la ayuda de F1 para esta clase de dominio.|\<none>|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
