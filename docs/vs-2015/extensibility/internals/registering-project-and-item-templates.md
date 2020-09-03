@@ -1,5 +1,5 @@
 ---
-title: Registro de plantillas de proyecto y elemento | Microsoft Docs
+title: Registrando plantillas de proyecto y elemento | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,21 +15,21 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185836"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Tipos de proyecto deben registrar los directorios donde se encuentran sus plantillas de proyecto y elemento de proyecto. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa la información de registro asociada con los tipos de proyecto para determinar qué se debe mostrar en el **Agregar nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.  
+Los tipos de proyecto deben registrar los directorios donde se encuentran las plantillas de proyecto y de elemento de proyecto. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa la información de registro asociada a los tipos de proyecto para determinar lo que se va a mostrar en los cuadros de diálogo **Agregar nuevo proyecto** y **Agregar nuevo elemento** .  
   
- Para obtener más información acerca de las plantillas, consulte [Agregar proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+ Para obtener más información acerca de las plantillas, vea [agregar plantillas de proyecto y de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
-## <a name="registry-entries-for-projects"></a>Entradas del registro para los proyectos  
- Los ejemplos siguientes muestran las entradas del registro bajo HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versión*>. En las tablas que lo acompaña explica los elementos usados en los ejemplos.  
+## <a name="registry-entries-for-projects"></a>Entradas del registro para proyectos  
+ En los ejemplos siguientes se muestran las entradas del registro en HKEY_LOCAL_MACHINE versión de \software\microsoft\visualstudio \\ < *Version*>. En las tablas adjuntas se explican los elementos que se usan en los ejemplos.  
   
 ```  
 [Projects\{ProjectGUID}]  
@@ -39,15 +39,15 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|NOMBRE|Type|DESCRIPCIÓN|  
+|Nombre|Tipo|Descripción|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nombre predeterminado de los proyectos de este tipo.|  
-|DisplayName|REG_SZ|Id. de recurso del nombre que deben recuperarse de la DLL satélite registrados en los paquetes.|  
-|Paquete|REG_SZ|Id. de clase del paquete se registra en los paquetes.|  
-|ProjectTemplatesDir|REG_SZ|Ruta de acceso predeterminada de los archivos de plantilla de proyecto. Los archivos de plantilla de proyecto se muestran mediante el **nuevo proyecto** plantilla.|  
+|DisplayName|REG_SZ|IDENTIFICADOR de recurso del nombre que se va a recuperar de la DLL satélite registrada en packages.|  
+|Paquete|REG_SZ|IDENTIFICADOR de clase del paquete registrado en paquetes.|  
+|ProjectTemplatesDir|REG_SZ|Ruta de acceso predeterminada de los archivos de plantilla de proyecto. La nueva plantilla de **proyecto** muestra los archivos de plantilla de proyecto.|  
   
-### <a name="registering-item-templates"></a>Registrar las plantillas de elemento  
- Debe registrar el directorio donde se almacenan las plantillas de elemento.  
+### <a name="registering-item-templates"></a>Registrar plantillas de elementos  
+ Debe registrar el directorio donde se almacenan las plantillas de elementos.  
   
 ```  
 [Projects\{ProjectGUID}\AddItemTemplates\TemplateDirs\{VSPackageGUID}\1]  
@@ -57,21 +57,21 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "SortPriority"=dword:00000064  
 ```  
   
-|NOMBRE|Type|DESCRIPCIÓN|  
+|Nombre|Tipo|Descripción|  
 |----------|----------|-----------------|  
-|@|REG_SZ|Identificador de recurso para las plantillas Agregar elemento.|  
-|TemplatesDir|REG_SZ|Ruta de acceso de los elementos de proyecto que se muestra en el cuadro de diálogo para la **Agregar nuevo elemento** asistente.|  
-|TemplatesLocalizedSubDir|REG_SZ|Identificador de recurso de cadena que designa el subdirectorio de TemplatesDir que contiene las plantillas localizadas. Dado que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carga el recurso de cadena de archivos DLL satélite si los tiene, cada archivo DLL satélite puede contener un nombre de subdirectorio localizados diferentes.|  
-|SortPriority|REG_DWORD|Establecer SortPriority para controlar el orden en que se muestran las plantillas en el **Agregar nuevo elemento** cuadro de diálogo. Los valores mayores de SortPriority aparecen anteriormente en la lista de plantillas.|  
+|@|REG_SZ|IDENTIFICADOR de recurso para agregar plantillas de elementos.|  
+|TemplatesDir|REG_SZ|Ruta de acceso de los elementos de proyecto mostrados en el cuadro de diálogo para el Asistente para **Agregar nuevo elemento** .|  
+|TemplatesLocalizedSubDir|REG_SZ|IDENTIFICADOR de recurso de una cadena que nombra el subdirectorio de TemplatesDir que contiene las plantillas localizadas. Dado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que carga el recurso de cadena desde archivos dll satélite, si los tiene, cada archivo dll satélite puede contener un nombre de subdirectorio localizado diferente.|  
+|SortPriority|REG_DWORD|Establezca SortPriority para controlar el orden en el que se muestran las plantillas en el cuadro de diálogo **Agregar nuevo elemento** . Los valores de SortPriority más grandes aparecen anteriormente en la lista de plantillas.|  
   
-### <a name="registering-file-filters"></a>Filtros de archivos de registro  
- Si lo desea, puede registrar los filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa cuando se le pida para los nombres de archivo. Por ejemplo, el [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar el **abrir archivo** cuadro de diálogo:  
+### <a name="registering-file-filters"></a>Registrando filtros de archivo  
+ Opcionalmente, puede registrar filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] use cuando pida nombres de archivo. Por ejemplo, el [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtro para el cuadro de diálogo **Abrir archivo** es:  
   
- **Archivos de Visual C# (\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*. CS,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Archivos de Visual C# ( \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL); \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL)**  
   
- Para admitir el registro de varios filtros, cada filtro se registra en su propia subclave bajo HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versión*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*subclave*>. El nombre de la subclave es arbitrario; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] omite el nombre de la subclave y usa sólo en sus valores.  
+ Para admitir el registro de varios filtros, cada filtro se registra en su propia subclave en HKEY_LOCAL_MACHINE versión de \software\microsoft\visualstudio \\ < *Version*> \projects \\ { \<*ProjectGUID*> } \Filters \\ < *subclave*>. El nombre de la subclave es arbitrario; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] omite el nombre de la subclave y usa solo sus valores.  
   
- Puede controlar los contextos en los que se usa un filtro estableciendo marcas, que se muestra en la tabla siguiente. Si un filtro no tiene ningún indicador, se mostrará después de los filtros comunes en el **Agregar elemento existente** cuadro de diálogo y el **abrir archivo** cuadro de diálogo, pero no se usará en el **buscar en archivos**  cuadro de diálogo.  
+ Puede controlar los contextos en los que se usa un filtro mediante el establecimiento de marcas, que se muestra en la tabla siguiente. Si un filtro no tiene ninguna marca establecida, se mostrará después de los filtros comunes en el cuadro de diálogo **Agregar elemento existente** y el cuadro de diálogo **Abrir archivo** , pero no se utilizará en el cuadro de diálogo **Buscar en archivos** .  
   
 ```  
 [Projects\{ProjectGUID}\Filters\MyLanguageFilter]  
@@ -84,19 +84,19 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "SortPriority"=dword:00000064  
 ```  
   
-|NOMBRE|Type|DESCRIPCIÓN|  
+|Nombre|Tipo|Descripción|  
 |----------|----------|-----------------|  
-|CommonFindFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **buscar en archivos** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|  
-|CommonOpenFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **abrir archivo** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|  
-|FindInFilesFilter|REG_DWORD|Muestra el filtro después de los filtros comunes en el **buscar en archivos** cuadro de diálogo.|  
-|NotOpenFileFilter|REG_DWORD|Indica que el filtro no se utiliza en el **abrir archivo** cuadro de diálogo.|  
-|NotAddExistingItemFilter|REG_DWORD|Indica que el filtro no se utiliza en el **Agregar elemento existente** cuadro de diálogo.|  
-|SortPriority|REG_DWORD|Establecer SortPriority para controlar el orden en que se muestran los filtros. Los valores mayores de SortPriority aparecen anteriormente en la lista de filtros.|  
+|CommonFindFilesFilter|REG_DWORD|Hace que el filtro sea uno de los filtros comunes del cuadro de diálogo **Buscar en archivos** . Los filtros comunes se muestran en la lista de filtros antes de que los filtros no estén marcados como comunes.|  
+|CommonOpenFilesFilter|REG_DWORD|Hace que el filtro sea uno de los filtros comunes del cuadro de diálogo **Abrir archivo** . Los filtros comunes se muestran en la lista de filtros antes de que los filtros no estén marcados como comunes.|  
+|FindInFilesFilter|REG_DWORD|Muestra el filtro después de los filtros comunes en el cuadro de diálogo **Buscar en archivos** .|  
+|NotOpenFileFilter|REG_DWORD|Indica que el filtro no se utiliza en el cuadro de diálogo **Abrir archivo** .|  
+|NotAddExistingItemFilter|REG_DWORD|Indica que el filtro no se utiliza en el cuadro de diálogo **Agregar elemento existente** .|  
+|SortPriority|REG_DWORD|Establezca SortPriority para controlar el orden en que se muestran los filtros. Los valores de SortPriority más grandes aparecen anteriormente en la lista de filtros.|  
   
 ## <a name="directory-structure"></a>Estructura de directorios  
- Los VSPackages puede colocar las carpetas y archivos de plantilla en cualquier lugar en un disco local o remoto, siempre y cuando la ubicación se ha registrado mediante el entorno de desarrollo integrado (IDE). Sin embargo, para facilitar la organización, se recomienda la siguiente estructura de directorios bajo la ruta de instalación de su producto.  
+ Los VSPackages pueden colocar archivos de plantilla y carpetas en cualquier parte de un disco local o remoto, siempre y cuando la ubicación se registre a través del entorno de desarrollo integrado (IDE). Sin embargo, para facilitar la organización, se recomienda la siguiente estructura de directorios en la ruta de instalación del producto.  
   
- \Templates  
+ \Plantillas  
   
  \Projects (contiene las plantillas de proyecto)  
   
@@ -112,14 +112,14 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
   
  \Form  
   
- \Web página  
+ Página \servicio  
   
  \HelperFiles (contiene los archivos usados en los elementos de proyecto de varios archivos)  
   
  \WizardFiles  
   
-## <a name="see-also"></a>Vea también  
- [Adición de proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+## <a name="see-also"></a>Consulte también  
+ [Agregar plantillas de proyecto y de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Asistentes](../../extensibility/internals/wizards.md)   
  [Localizar aplicaciones](../../ide/localizing-applications.md)   
- [CATID para los objetos que se utilizan normalmente para ampliar proyectos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+ [CATID para los objetos que se usan normalmente para ampliar proyectos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

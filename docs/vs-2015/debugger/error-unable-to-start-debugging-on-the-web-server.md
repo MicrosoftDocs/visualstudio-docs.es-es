@@ -1,5 +1,5 @@
 ---
-title: 'Error: No se puede iniciar la depuración en el servidor Web | Documentos de Microsoft'
+title: 'Error: No es posible iniciar la depuración en el servidor web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -29,65 +29,65 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185483"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No es posible iniciar la depuración en el servidor web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Al intentar depurar una aplicación de ASP.NET que se ejecutan en un servidor Web, obtendrá este mensaje de error: No se puede iniciar la depuración en el servidor Web.
+Cuando se intenta depurar una aplicación de ASP.NET que se ejecuta en un servidor web, puede obtener este mensaje de error: No se puede iniciar la depuración en el servidor Web.
   
 En muchos casos, este error se produce porque IIS no está configurado correctamente.
 
-## <a name="vxtbshttpservererrorsthingstocheck"></a> Compruebe la configuración de IIS
+## <a name="check-your-iis-configuration"></a><a name="vxtbshttpservererrorsthingstocheck"></a> Comprobación de la configuración de IIS
 
-Después de llevar a cabo pasos para resolver un problema detallado aquí y antes de intentar de nuevo depurar, es posible que deba restablecer IIS. Para ello, abra un símbolo del sistema de administrador y escriba `iisreset`, o puede hacerlo en el Administrador de IIS. 
+Después de seguir los pasos para resolver un problema detallado aquí y antes de volver a intentar la depuración, es posible que también tenga que restablecer IIS. Para ello, abra un símbolo del sistema de administrador y escriba `iisreset` o puede hacerlo en el administrador de IIS. 
 
-* Detener y reiniciar los grupos de aplicaciones, vuelva a intentarlo.
+* Detenga y reinicie los grupos de aplicaciones y vuelva a intentarlo.
 
-    El grupo de aplicaciones se haya detenido u otro cambio de configuración que ha realizado puede requerir que se detenga y reinicie el grupo de aplicaciones.
+    Puede que el grupo de aplicaciones se haya detenido u otro cambio de configuración que haya realizado puede requerir que detenga y reinicie el grupo de aplicaciones.
     
     > [!NOTE]
-    > Si mantiene detener el grupo de aplicaciones, es posible que deba desinstalar el módulo URL Rewrite desde el Panel de Control y, a continuación, vuelva a instalar mediante el instalador de plataforma Web (WPI). Esto podría ser un problema después de una actualización del sistema significativos.
+    > Si el grupo de aplicaciones se detiene, puede que tenga que desinstalar el módulo URL Rewrite del panel de control y, a continuación, volver a instalarlo mediante el instalador de plataforma web (WPI). Esto podría ser un problema después de una actualización importante del sistema.
 
-* Compruebe la configuración del grupo de aplicaciones, corrija si es necesario y, a continuación, vuelva a intentar.
+* Compruebe la configuración del grupo de aplicaciones, corríjala si es necesario y vuelva a intentarlo.
 
-    Si han cambiado las credenciales de contraseña, deberá actualizarlos en el grupo de aplicaciones. Además, si recientemente ha instalado ASP.NET, el grupo de aplicaciones puede configurarse para una versión de ASP.NET. Corrija el problema y reinicie el grupo de aplicaciones.
+    Si las credenciales de contraseña han cambiado, puede que tenga que actualizarlas en el grupo de aplicaciones. Además, si ha instalado ASP.NET recientemente, es posible que el grupo de aplicaciones esté configurado para la versión incorrecta de ASP.NET. Corrija el problema y reinicie el grupo de aplicaciones.
     
-* Compruebe que la carpeta de aplicación Web tiene los permisos adecuados.
+* Compruebe que la carpeta de la aplicación web tiene los permisos adecuados.
 
-    Asegúrese de que se asigne a IIS_IUSRS o IUSR (o el usuario específico asociado con el grupo de aplicaciones) de lectura y ejecución de derechos para la carpeta de aplicación Web. Corrija el problema y reinicie el grupo de aplicaciones.
+    Asegúrese de conceder a IIS_IUSRS o IUSR (o al usuario específico asociado al grupo de aplicaciones) derechos de lectura y ejecución para la carpeta de la aplicación Web. Corrija la incidencia y reinicie el grupo de aplicaciones.
 
-* Si está utilizando un archivo de HOSTS con direcciones locales, pruebe a usar la dirección de bucle invertido en lugar de la dirección IP del equipo.
+* Si usa un archivo HOSTS con direcciones locales, pruebe a usar la dirección de bucle invertido en lugar de la dirección IP del equipo.
 
-* Abrir la página de localhost en el explorador.
+* Abra la página localhost en el explorador.
 
      Si IIS no está instalado correctamente, debería obtener errores al escribir `http://localhost` en un explorador.
      
-     Para obtener información sobre la implementación en IIS, consulte [Remote Debugging ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) o, para ASP.NET Core, [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html)).
+     Para obtener información acerca de la implementación en IIS, vea [depuración remota ASP.net en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) o, por ASP.net Core, [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html)).
 
-* Asegúrese de que está instalada la versión correcta de ASP.NET en IIS.  Consulte [implementar una aplicación ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md#BKMK_deploy_asp_net) o, para ASP.NET Core, [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html)).
+* Asegúrese de que en IIS está instalada la versión correcta de ASP.NET.  Vea [implementar una aplicación de ASP.net](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md#BKMK_deploy_asp_net) o, por ASP.net Core, [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html)).
 
-* Crear una aplicación ASP.NET básica en el servidor.
+* Cree una aplicación ASP.NET básica en el servidor.
 
-     Si no se puede obtener la aplicación para que funcione con el depurador, intente crear una aplicación ASP.NET básica localmente en el servidor e intente depurar la aplicación básica. Si se puede depurar una aplicación básica, que puede ayudarle a identificar cuál es la diferencia entre las dos configuraciones.
+     Si no consigue que la aplicación funcione con el depurador, intente crear una aplicación ASP.NET básica localmente en el servidor y depurarla. Si puede depurar una aplicación básica, esto puede ayudarle a identificar las diferencias entre las dos configuraciones.
   
 * Resolver errores de autenticación si solo usa la dirección IP
 
-     De manera predeterminada, se asume que las direcciones IP forman parte de Internet y la autenticación NTLM no se realiza a través de Internet. Si se configura el sitio web en IIS para requerir la autenticación, se producirá un error en esta autenticación. Para corregir este problema, puede especificar el nombre del equipo remoto en lugar de la dirección IP.
+     De manera predeterminada, se asume que las direcciones IP forman parte de Internet y la autenticación NTLM no se realiza a través de Internet. Si el sitio web está configurado en IIS para requerir autenticación, se producirá un error de autenticación. Para corregir este problema, puede especificar el nombre del equipo remoto, en lugar de la dirección IP.
      
 ## <a name="other-causes"></a>Otras causas
 
-Si está usando una versión anterior de Visual Studio:
+Si usa una versión anterior de Visual Studio:
 
-- Reinicie Visual Studio con privilegios elevados y vuelva a intentarlo.
+- Reinicie Visual Studio con privilegios elevados e inténtelo de nuevo.
 
-    Un error en las versiones anteriores (arreglar más adelante) requiere privilegios elevados en algunos escenarios de depuración de ASP.NET.
+    Un error en versiones anteriores (corregido más adelante) requería privilegios elevados en algunos escenarios de depuración de ASP.NET.
     
-- Si se ejecutan varias instancias de Visual Studio, vuelva a abrir el proyecto en una instancia de Visual Studio e inténtelo de nuevo.
+- Si se están ejecutando varias instancias de Visual Studio, vuelva a abrir el proyecto en una instancia de Visual Studio e inténtelo de nuevo.
 
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
