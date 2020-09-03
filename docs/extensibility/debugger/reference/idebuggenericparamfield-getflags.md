@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetFlags ? Microsoft Docs
+title: 'IDebugGenericParamField:: GetFlags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d131a5dc4a1fd64f2a82bff4f51f7cbc4a905a8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727999"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
-Recupera los indicadores de este parámetro genérico.
+Recupera las marcas para este parámetro genérico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,16 +40,16 @@ int GetFlags(
 
 ## <a name="parameters"></a>Parámetros
 `pdwFlags`\
-[fuera] Devuelve los indicadores de este parámetro genérico.
+enuncia Devuelve las marcas para este parámetro genérico.
 
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
-Estas marcas contienen información sobre varias restricciones especiales.
+Estas marcas contienen información sobre diversas restricciones especiales.
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone el [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugGenericParamFieldType** que expone la interfaz [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)

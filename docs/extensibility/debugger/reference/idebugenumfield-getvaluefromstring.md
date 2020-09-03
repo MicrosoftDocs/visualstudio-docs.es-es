@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromString ? Microsoft Docs
+title: 'IDebugEnumField:: GetValueFromString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bb340721c9f446b740c2723dc3f6dc05452e74de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730258"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
-Este método devuelve el valor asociado con el nombre de una constante de enumeración.
+Este método devuelve el valor asociado al nombre de una constante de enumeración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int GetValueFromString(
 
 ## <a name="parameters"></a>Parámetros
 `pszValue`\
-[en] Cadena que especifica el nombre para el que se va a obtener el valor. Tenga en cuenta que para C++, se trata de una cadena de caracteres anchos.
+de Cadena que especifica el nombre para el que se va a obtener el valor. Tenga en cuenta que para C++, se trata de una cadena de caracteres anchos.
 
 `pValue`\
-[fuera] Devuelve el valor numérico asociado.
+enuncia Devuelve el valor numérico asociado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo `S_FALSE`contrario, devuelve , si el nombre no forma parte de la enumeración o un código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` si el nombre no forma parte de la enumeración, o un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Este método distingue mayúsculas de minúsculas. Si se necesita una búsqueda sin distinción entre mayúsculas y minúsculas (por ejemplo, en un lenguaje como Visual Basic donde los nombres no distinguen entre mayúsculas y minúsculas), utilice [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
+ Este método distingue mayúsculas de minúsculas. Si se necesita una búsqueda que no distinga mayúsculas de minúsculas (por ejemplo, en un lenguaje como Visual Basic donde los nombres no distinguen mayúsculas de minúsculas), use [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

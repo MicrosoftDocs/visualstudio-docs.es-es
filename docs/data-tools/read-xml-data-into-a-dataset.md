@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281791"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
@@ -137,7 +137,7 @@ La interfaz de usuario de esta aplicación se compone de lo siguiente:
 
 3. Establezca las siguientes propiedades:
 
-    |Control|Propiedad.|Parámetro|
+    |Control|Propiedad|Parámetro|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**Vertical**|
@@ -214,7 +214,7 @@ Este tutorial le enseña los aspectos básicos de la lectura de un archivo XML e
 
 - Edite los datos del conjunto de datos y escríbalos en una base de datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

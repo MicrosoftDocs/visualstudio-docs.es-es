@@ -17,20 +17,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a3a17a0db7dd4ad1c57d23104a313a78cd1289ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547698"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|TransparencyAnnotationsShouldNotConflict|
 |Identificador de comprobación|CA2136|
-|Categoría|Microsoft.Security|
+|Category|Microsoft.Security|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

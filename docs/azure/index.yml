@@ -11,10 +11,10 @@ metadata:
   ms.date: 12/05/2019
   ms.author: ghogen
   ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
-  ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/20/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "88639333"
 landingContent:
 - title: Implementación en Azure App Service

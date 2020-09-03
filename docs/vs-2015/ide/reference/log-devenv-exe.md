@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f427edfe294605b7b2adcbb0889e48c4f37b6ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666841"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -35,10 +35,10 @@ Registra toda la actividad en el archivo de registro para solucionar problemas. 
 Devenv /log Path\NameOfLogFile
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Este modificador debe aparecer al final de la línea de comandos, después del resto de modificadores.
 
  El registro se escribe para todas las instancias de Visual Studio que se han invocado con el modificador /log. No registra las instancias de Visual Studio que se han invocado sin el modificador.
 
-## <a name="see-also"></a>Otras referencias
- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte también
+ [Modificadores de línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md)

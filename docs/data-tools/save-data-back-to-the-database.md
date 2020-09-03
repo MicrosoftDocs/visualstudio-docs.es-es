@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281752"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
@@ -162,7 +162,7 @@ Es una práctica común no actualizar todos los registros de un conjunto de regi
 
 Es posible crear subconjuntos de registros modificados con el método `GetChanges` de cualquiera de las tablas de datos (<xref:System.Data.DataTable.GetChanges%2A>) o del propio conjunto de datos (<xref:System.Data.DataSet.GetChanges%2A>). Si se llama al método de la tabla de datos, devuelve una copia de la tabla donde sólo se muestran los registros cambiados. De igual forma, si llama al método en el conjunto de datos, obtiene un nuevo conjunto de datos solo con los registros modificados.
 
-`GetChanges`por sí solo devuelve todos los registros modificados. Por el contrario, si se pasa el <xref:System.Data.DataRowState> elemento deseado como parámetro al `GetChanges` método, se puede especificar el subconjunto de registros modificados que se desea: registros recién agregados, registros que se marcan para su eliminación, registros desasociados o registros modificados.
+`GetChanges` por sí solo devuelve todos los registros modificados. Por el contrario, si se pasa el <xref:System.Data.DataRowState> elemento deseado como parámetro al `GetChanges` método, se puede especificar el subconjunto de registros modificados que se desea: registros recién agregados, registros que se marcan para su eliminación, registros desasociados o registros modificados.
 
 Obtener un subconjunto de registros modificados resulta útil cuando se desea enviar registros a otro componente para su procesamiento. En lugar de enviar todo el conjunto de datos, se puede reducir la sobrecarga de la comunicación con el otro componente al obtener únicamente los registros necesarios.
 
@@ -272,7 +272,7 @@ En una instrucción UPDATE, debe especificar los valores nuevos (los que se escr
 > [!NOTE]
 > También puede establecer los valores de la colección `Parameters` en el código; en ese caso, sería necesario hacerlo en un controlador de eventos para el evento <xref:System.Data.DataTable.RowChanging> del adaptador de datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Crear y configurar TableAdapters](create-and-configure-tableadapters.md)

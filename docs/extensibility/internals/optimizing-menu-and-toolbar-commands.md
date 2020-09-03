@@ -1,5 +1,5 @@
 ---
-title: Optimización de los comandos de menú y barra de herramientas ? Microsoft Docs
+title: Optimizar comandos de menús y barras de herramientas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,19 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706918"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimización de comandos de menú y barra de herramientas
-La adición de VSPackages [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y sus comandos correspondientes a puede provocar una interfaz de usuario concurrido. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]proporciona maneras de ayudar a minimizar la confusión de comandos de la interfaz de usuario.
+La adición de VSPackages y sus comandos correspondientes a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pueden provocar una interfaz de usuario abarrotada. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona maneras de ayudar a minimizar la confusión del comando de la interfaz de usuario.
 
 ## <a name="in-this-section"></a>En esta sección
 - [Puesta a disposición de comandos](../../extensibility/internals/making-commands-available.md)
 
- Proporciona directrices generales para minimizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el hacinamiento de la interfaz de usuario al agregar VSPackages.
+ Proporciona directrices generales para minimizar el amontonamiento de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario al agregar VSPackages.
 
 - [Instrucciones sobre la selección de ubicación](../../extensibility/internals/command-placement-guidelines.md)
 

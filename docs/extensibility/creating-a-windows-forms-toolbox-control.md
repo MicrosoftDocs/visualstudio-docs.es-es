@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801872"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un control de cuadro de herramientas de Windows Forms
@@ -56,10 +56,10 @@ El `Counter` control requiere dos controles secundarios: un <xref:System.Windows
 
 5. En la ventana **propiedades** , establezca los siguientes valores para los controles en la superficie de diseño.
 
-    |Control|Propiedad|Valor|
+    |Control|Propiedad|Value|
     |-------------|--------------|-----------|
     |`Label1`|**Texto**|""|
-    |`Button1`|**Name**: nombre|btnReset|
+    |`Button1`|**Name**|btnReset|
     |`Button1`|**Texto**|Reset|
 
 ### <a name="code-the-user-control"></a>Codificar el control de usuario

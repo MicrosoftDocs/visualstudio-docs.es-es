@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments ? Microsoft Docs
+title: 'IDebugGenericFieldInstance:: Gettypearguments (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728181"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
@@ -44,13 +44,13 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Parámetros
 `cArgs`\
-[en] Número de parámetros de tipo.
+de Número de parámetros de tipo.
 
 `ppArgs`\
-[fuera] Devuelve una matriz de parámetros de tipo.
+enuncia Devuelve una matriz de parámetros de tipo.
 
 `pcArgs`\
-[adentro, fuera] Número de miembros de la `ppArgs` matriz.
+[in, out] Número de miembros de la `ppArgs` matriz.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

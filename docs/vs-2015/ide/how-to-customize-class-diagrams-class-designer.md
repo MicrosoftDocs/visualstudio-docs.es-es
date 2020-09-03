@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff78bea6759359d3703f5fed6157f051c89befb0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668007"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Cómo: Personalizar los diagramas de clases (Diseñador de clases)
@@ -53,20 +53,20 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
 - [Eliminar una forma de tipo y su código subyacente](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)
 
-## <a name="ZoomInOut"></a>Acercar y alejar el diagrama de clase
+## <a name="zoom-in-and-out-of-the-class-diagram"></a><a name="ZoomInOut"></a> Acercar y alejar el diagrama de clases
 
 1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.
 
-2. En la barra de herramientas del Diseñador de clases, haga clic en el botón **Acercar** o **Alejar** para cambiar el nivel de zoom de la superficie del diseñador.
+2. En la barra de herramientas Diseñador de clases, haga clic en el botón **Acercar** o **Alejar** para cambiar el nivel de zoom de la superficie del diseñador.
 
-     o
+     or
 
      Especifique un valor de zoom determinado. Puede usar la lista desplegable **Zoom** o escribir un nivel de zoom válido (el intervalo válido está comprendido entre el 10 % y el 400 %).
 
     > [!NOTE]
     > Al cambiar el nivel de zoom, no se ve afectada la escala de la copia impresa del diagrama de clases.
 
-## <a name="CustomizeGroupingSorting"></a> Personalizar la agrupación y ordenación de los miembros de tipo
+## <a name="customize-grouping-and-sorting-of-type-members"></a><a name="CustomizeGroupingSorting"></a> Personalizar la agrupación y la ordenación de miembros de tipo
 
 1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.
 
@@ -80,7 +80,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
     3. **Ordenar alfabéticamente** muestra los elementos que constituyen una entidad como una única lista ordenada alfabéticamente. La lista se ordena de menor a mayor.
 
-## <a name="HideCompartments"></a> Ocultar los compartimientos de un tipo
+## <a name="hide-compartments-on-a-type"></a><a name="HideCompartments"></a> Ocultar compartimientos en un tipo
 
 1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.
 
@@ -90,7 +90,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
      El compartimiento seleccionado desaparece del contenedor del tipo.
 
-## <a name="HideMembers"></a> Ocultar miembros individuales de un tipo
+## <a name="hide-individual-members-on-a-type"></a><a name="HideMembers"></a> Ocultar miembros individuales de un tipo
 
 1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.
 
@@ -100,7 +100,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
      El miembro seleccionado desaparece del contenedor del tipo.
 
-## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Mostrar los compartimientos y miembros ocultos de un tipo
+## <a name="show-hidden-compartments-and-members-on-a-type"></a><a name="DisplayHiddenCompartmentsAndMemberrs"></a> Mostrar los compartimientos y miembros ocultos de un tipo
 
 1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.
 
@@ -110,7 +110,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
      Todos los compartimientos y miembros ocultos aparecen en el contenedor del tipo.
 
-## <a name="HideAssociationAndInheritance"></a> Ocultar relaciones
+## <a name="hide-relationships"></a><a name="HideAssociationAndInheritance"></a> Ocultar relaciones
 
 1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.
 
@@ -122,7 +122,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
      Todos los compartimientos y miembros ocultos aparecen en el contenedor del tipo.
 
-## <a name="DisplayAssociationAndInheritance"></a> Mostrar relaciones ocultas
+## <a name="show-hidden-relationships"></a><a name="DisplayAssociationAndInheritance"></a> Mostrar relaciones ocultas
 
 1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.
 
@@ -130,7 +130,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
    Haga clic en **Mostrar todos los miembros** para las líneas de asociación y en **Mostrar clase base** o **Mostrar clases derivadas** para las líneas de herencia.
 
-## <a name="RemoveCodeAndShape"></a> Quitar una forma de un diagrama de clase
+## <a name="remove-a-shape-from-a-class-diagram"></a><a name="RemoveCodeAndShape"></a> Quitar una forma de un diagrama de clases
  Se puede quitar una forma de tipo del diagrama de clase sin que ello afecte al código subyacente del tipo. Al quitar las formas de tipo de un diagrama de clases solo se ve afectado ese diagrama: no se ve afectado el código subyacente que define el tipo y otros diagramas que muestran el tipo.
 
 1. En el diagrama de clases, seleccione la forma de tipo que desee quitar del diagrama.
@@ -139,7 +139,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
      La forma de tipo y cualquier línea de asociación o herencia conectada a ella dejan de aparecer en el diagrama.
 
-## <a name="DeleteTypeShapeAndCode"></a> Eliminar una forma de tipo y su código subyacente
+## <a name="delete-a-type-shape-and-its-underlying-code"></a><a name="DeleteTypeShapeAndCode"></a> Eliminar una forma de tipo y su código subyacente
 
 1. Haga clic con el botón secundario del mouse en la forma, en la superficie de diseño.
 
@@ -147,5 +147,5 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
 
      La forma se quita del diagrama y su código subyacente se elimina del proyecto.
 
-## <a name="see-also"></a>Vea también
- [Trabajar con diagramas de clases (diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md) [Cómo: cambiar entre notación de miembro y notación de asociación (diseñador de clases)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) [Cómo: ver tipos existentes (diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md) [Ver tipos y relaciones (diseñador de clases) ](../ide/viewing-types-and-relationships-class-designer.md)
+## <a name="see-also"></a>Consulte también
+ [Trabajar con diagramas de clases (diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md) [Cómo: cambiar entre notación de miembro y notación de asociación (diseñador de clases)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) [Cómo: ver tipos existentes (diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md) [Ver tipos y relaciones (diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)

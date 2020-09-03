@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1de155b71e82bb7561030cae2e1d0d4d777c9586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668061"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Cómo: Crear plantillas de varios proyectos
@@ -81,11 +81,11 @@ Las plantillas de varios proyectos actúan como contenedores de dos o más proye
 
 1. Cree los proyectos que se incluirán en la plantilla de varios proyectos.
 
-2. Cree los archivos .vstemplate de cada proyecto. Para más información, vea [Cómo: Crear plantillas de proyectos](../ide/how-to-create-project-templates.md).
+2. Cree los archivos .vstemplate de cada proyecto. Para obtener más información, vea [Cómo: crear plantillas de proyecto](../ide/how-to-create-project-templates.md).
 
 3. Cree un archivo raíz .vstemplate que contenga los metadatos de la plantilla de varios proyectos. Para más información, vea el primer ejemplo de la sección siguiente.
 
-4. Seleccione los archivos y las carpetas que se incluirán en la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)** . Los archivos y las carpetas se comprimen en un archivo .zip.
+4. Seleccione los archivos y las carpetas que se incluirán en la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)**. Los archivos y las carpetas se comprimen en un archivo .zip.
 
 5. Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. De forma predeterminada, este directorio es \Mis documentos\Visual Studio *Versión*\Templates\ProjectTemplates\\.
 
@@ -149,5 +149,5 @@ Las plantillas de varios proyectos actúan como contenedores de dos o más proye
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
- [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md) [referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [Cómo: crear plantillas de proyecto referencia de](../ide/how-to-create-project-templates.md) [esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [elemento SolutionFolder (plantillas de Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ ProjectTemplateLink (elemento, plantillas de Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+## <a name="see-also"></a>Consulte también
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md) [referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [Cómo: crear plantillas de proyecto referencia de](../ide/how-to-create-project-templates.md) [esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [elemento SolutionFolder (plantillas de Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [elemento ProjectTemplateLink (plantillas de Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::WriteAt ? Microsoft Docs
+title: 'IDebugMemoryBytes2:: WriteAt | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ac9113424c6cd5cce230774a6e5335ffa4d4ba77
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727516"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
@@ -46,19 +46,19 @@ int WriteAt(
 
 ## <a name="parameters"></a>Parámetros
 `pStartContext`\
-[en] El [objeto IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que especifica dónde empezar a escribir bytes.
+de El objeto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que especifica dónde empezar a escribir los bytes.
 
 `dwCount`\
 [in] Número de bytes que se van a escribir.
 
 `rgbMemory`\
-[en] Los bytes que se van a escribir. Se supone que esta `dwCount` matriz tiene al menos bytes de tamaño.
+de Bytes que se van a escribir. Se supone que la matriz tiene un `dwCount` tamaño de bytes como mínimo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo `S_FALSE` contrario, devuelve si no se podrían `E_FAIL`escribir todos los bytes o devuelve un código de error (normalmente).
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` si no se pueden escribir todos los bytes o devuelve un código de error (normalmente `E_FAIL` ).
 
 ## <a name="remarks"></a>Observaciones
- Si la dirección inicial no está dentro de la ventana de memoria representada por este `E_FAIL` [objeto IDebugMemoryBytes2,](../../../extensibility/debugger/reference/idebugmemorybytes2.md) no se produce ninguna escritura y se devuelve un código de error de, incluso si la cantidad de escritura se superpone en el espacio de memoria.
+ Si la dirección inicial no está dentro de la ventana memoria representada por este objeto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) , no se produce ninguna escritura y se devuelve un código de error `E_FAIL` , incluso si la cantidad que se va a escribir se superpone en el espacio de memoria.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
