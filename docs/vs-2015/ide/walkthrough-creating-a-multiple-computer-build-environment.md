@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d0fccb5694e538cdf71844d2cc18640114ec735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672308"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
@@ -60,19 +60,19 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
 - [Establecer variables de entorno en el equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
 
-- [Instalar ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
+- [Instalar ensamblados de MSBuild en la caché de ensamblados global (GAC) en el equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
 
 - [Compilar proyectos](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
 
 - [Crear el entorno de compilación para que se pueda proteger en el control de código fuente](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Una copia con licencia de Visual Studio Ultimate, Visual Studio Premium o Visual Studio Professional
 
 - Una copia de .NET Framework 4.5.1, que se puede descargar del sitio web de [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779).
 
-## <a name="InstallingSoftware"></a> Instalar software en los equipos
+## <a name="installing-software-on-the-computers"></a><a name="InstallingSoftware"></a> Instalación de software en los equipos
  En primer lugar, configure el equipo host y configure después el equipo de compilación.
 
  Al instalar Visual Studio en el equipo host, se crean los archivos y las configuraciones que copiará al equipo de compilación más adelante. Puede instalar Visual Studio en un equipo x86 o x64, pero la arquitectura del equipo de compilación debe coincidir con la arquitectura del equipo host.
@@ -83,7 +83,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
 2. En el equipo de compilación, instale .NET Framework 4.5. Para comprobar que está instalado, asegúrese de que el valor de la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version comienza con "4.5".
 
-## <a name="CopyingFiles"></a> Copiar archivos del equipo host al equipo de compilación
+## <a name="copying-files-from-the-host-computer-to-the-build-computer"></a><a name="CopyingFiles"></a> Copiar archivos del equipo host al equipo de compilación
  En esta sección se explica cómo copiar los archivos, compiladores, herramientas de compilación, activos de MSBuild y configuraciones del Registro necesarios del equipo host al equipo de compilación. En estas instrucciones se da por supuesto que ha instalado Visual Studio en la ubicación predeterminada en el equipo host; si lo instaló en otra ubicación, ajuste los pasos en consecuencia.
 
 - En un equipo x86, la ubicación predeterminada es C:\Archivos de programa\Microsoft Visual Studio 11.0\
@@ -215,7 +215,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
    - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-## <a name="CreatingRegistry"></a> Crear la configuración del Registro
+## <a name="creating-registry-settings"></a><a name="CreatingRegistry"></a> Crear la configuración del registro
  Debe crear entradas del Registro para configurar los valores de MSBuild.
 
 #### <a name="to-create-registry-settings"></a>Para crear la configuración del Registro
@@ -277,7 +277,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
 
-## <a name="SettingEnvVariables"></a> Establecer variables de entorno en el equipo de compilación
+## <a name="setting-environment-variables-on-the-build-computer"></a><a name="SettingEnvVariables"></a> Establecer variables de entorno en el equipo de compilación
  Para utilizar MSBuild en el equipo de compilación, debe establecer las variables de entorno PATH. Puede utilizar vcvarsall.bat para establecer las variables o puede configurarlas manualmente.
 
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>Para utilizar vcvarsall.bat con el fin de establecer variables de entorno
@@ -290,7 +290,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
     |----------------------------|--------------|---------------------------------|-------------------------------|
     |x86 (predeterminado)|Nativo de 32 bits|x86, x64|x86|
     |x86_amd64|Cruzado de x64|x86, x64|x64|
-    |amd64|Nativo de x64|x64|x64|
+    |AMD64|Nativo de x64|x64|x64|
 
      Si vcvarsall.bat se ejecuta correctamente (es decir, no se muestra ningún mensaje de error), puede omitir el paso siguiente y continuar a la sección [Instalar ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) de este documento.
 
@@ -314,7 +314,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> Instalar ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación
+## <a name="installing-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="InstallingMSBuildToGAC"></a> Instalar ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación
  MSBuild requiere la instalación de algunos ensamblados adicionales en la GAC del equipo de compilación.
 
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>Para copiar los ensamblados del equipo host e instalarlos en el equipo de compilación
@@ -331,26 +331,26 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
      Abra una ventana de símbolo del sistema que tenga derechos administrativos y ejecute este comando para cada archivo:
 
-     **gacutil -i \<file>**
+     **Gacutil-i \<file>**
 
     > [!NOTE]
     > Puede que sea necesario reiniciar el sistema para que un ensamblado se instale totalmente en la GAC.
 
-## <a name="BuildingProjects"></a> Compilar proyectos
+## <a name="building-projects"></a><a name="BuildingProjects"></a> Compilar proyectos
  Puede utilizar Team Foundation Build para compilar proyectos y soluciones de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o puede compilarlos en la línea de comandos. Cuando se utiliza Team Foundation Build para compilar proyectos, invoca el ejecutable de MSBuild correspondiente a la arquitectura del sistema.  En la línea de comandos, puede utilizar MSBuild de 32 bits o MSBuild 64 bits, y puede elegir la arquitectura de MSBuild estableciendo la variable de entorno PATH o invocando directamente el archivo ejecutable de MSBuild específico de la arquitectura.
 
  Para usar msbuild.exe en el símbolo del sistema, ejecute el comando siguiente, donde *solution.sln* es un marcador de posición para el nombre de la solución.
 
  **msbuild** *solution.sln*
 
- Para más información sobre cómo usar MSBuild en la línea de comandos, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
+ Para obtener más información sobre cómo usar MSBuild en la línea de comandos, vea [referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Para compilar proyectos de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], debe utilizar el Conjunto de herramientas de la plataforma "v110". Si no desea editar los archivos de proyecto de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], puede establecer el Conjunto de herramientas de la plataforma mediante este argumento de la línea de comandos:
 >
 > **msbuild** *solution.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl"></a> Crear el entorno de compilación para que se pueda proteger en el control de código fuente
+## <a name="creating-the-build-environment-so-that-it-can-be-checked-into-source-control"></a><a name="CreatingForSourceControl"></a> Crear el entorno de compilación para que se pueda proteger en el control de código fuente
  Puede crear un entorno de compilación que se pueda implementar en varios equipos y no requiera almacenar archivos en la GAC ni modificar configuraciones del Registro. Los pasos siguientes son simplemente una forma de realizarlo. Adapte estos pasos a las características únicas de su entorno de compilación.
 
 > [!NOTE]
@@ -423,5 +423,5 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
          Para la compilación nativa de 64 bits, apunte a MSBuild de 64 bits.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Preparar un equipo de pruebas para ejecutar una](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) [referencia de línea de comandos del](../msbuild/msbuild-command-line-reference.md) ejecutable de depuración
