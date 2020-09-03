@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905361"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Cómo: instalar un complemento de control de código fuente
@@ -28,7 +28,7 @@ La creación de un complemento de control de código fuente implica tres pasos:
 3. Registre el archivo DLL mediante las entradas adecuadas del registro.
 
 ## <a name="integration-with-visual-studio"></a>Integración con Visual Studio
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]admite complementos de control de código fuente que se ajustan a la API del complemento de control de código fuente.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite complementos de control de código fuente que se ajustan a la API del complemento de control de código fuente.
 
 ### <a name="register-the-source-control-plug-in"></a>Registrar el complemento de control de código fuente
  Antes de que un entorno de desarrollo integrado (IDE) en ejecución pueda llamar al sistema de control de código fuente, primero debe encontrar el archivo DLL del complemento de control de código fuente que exporta la API.
@@ -116,5 +116,5 @@ La creación de un complemento de control de código fuente implica tres pasos:
 
  Si se cumplen estas dos condiciones, se puede llamar a las nuevas funciones admitidas en las versiones 1,2 y 1,3.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a los complementos de control de código fuente](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

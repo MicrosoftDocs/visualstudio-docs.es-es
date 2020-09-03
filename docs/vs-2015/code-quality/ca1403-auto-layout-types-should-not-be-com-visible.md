@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1752efb5be1828f62703e1fe1a1130b37ff80503
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534932"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Los tipos de diseño automático no deben ser visibles a través de COM
@@ -36,7 +36,7 @@ ms.locfileid: "85534932"
  Un tipo de valor visible del modelo de objetos componentes (COM) se marca con el <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> atributo establecido en <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descripción de la regla
- <xref:System.Runtime.InteropServices.LayoutKind>los tipos de diseño se administran mediante el Common Language Runtime. El diseño de estos tipos puede cambiar entre las versiones del .NET Framework, lo que interrumpirá a los clientes COM que esperan un diseño específico. Tenga en cuenta que si <xref:System.Runtime.InteropServices.StructLayoutAttribute> no se especifica el atributo, los [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiladores de C++, y de C# especifican el <xref:System.Runtime.InteropServices.LayoutKind> diseño para los tipos de valor.
+ <xref:System.Runtime.InteropServices.LayoutKind> los tipos de diseño se administran mediante el Common Language Runtime. El diseño de estos tipos puede cambiar entre las versiones del .NET Framework, lo que interrumpirá a los clientes COM que esperan un diseño específico. Tenga en cuenta que si <xref:System.Runtime.InteropServices.StructLayoutAttribute> no se especifica el atributo, los [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiladores de C++, y de C# especifican el <xref:System.Runtime.InteropServices.LayoutKind> diseño para los tipos de valor.
 
  A menos que se marque lo contrario, todos los tipos públicos no genéricos son visibles para COM; todos los tipos no públicos y genéricos son invisibles para COM. Sin embargo, para reducir los falsos positivos, esta regla requiere que se indique explícitamente la visibilidad COM del tipo; el ensamblado contenedor debe marcarse con el <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> establecido en `false` y el tipo debe estar marcado con el <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en `true` .
 

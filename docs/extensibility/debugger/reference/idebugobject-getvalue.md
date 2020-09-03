@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue ? Microsoft Docs
+title: 'IDebugObject:: GetValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 45d555cbea6bf8239ef4527ba982072e17532af4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726544"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
@@ -43,16 +43,16 @@ int GetValue(
 
 ## <a name="parameters"></a>Parámetros
 `pValue`\
-[adentro, fuera] Matriz que se rellena con una serie consecutiva de bytes que representan el valor del objeto.
+[in, out] Matriz que se rellena con una serie consecutiva de bytes que representa el valor del objeto.
 
 `nSize`\
-[en] El número máximo de bytes que se van a capturar.
+de Número máximo de bytes que se van a capturar.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Obtener el número total de bytes de valor que se pueden obtener mediante una llamada a la [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) método.
+ Obtiene el número total de bytes de valor que se pueden capturar llamando al método [Get](../../../extensibility/debugger/reference/idebugobject-getsize.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

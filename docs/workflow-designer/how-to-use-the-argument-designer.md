@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c3c0fe3de3a9ab74ed09c1be45e0d39a71a5b7c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817455"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Utilizar el diseñador de argumentos
@@ -33,7 +33,7 @@ El diseñador de argumentos facilita permitir que los datos fluyan dentro y fuer
     > [!NOTE]
     > Para eliminar un argumento, seleccione el argumento haciendo clic en él y, a continuación, presione la tecla **Supr** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Usar el Diseñador de flujo de trabajo](developing-applications-with-the-workflow-designer.md)
 - [Variables y argumentos](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

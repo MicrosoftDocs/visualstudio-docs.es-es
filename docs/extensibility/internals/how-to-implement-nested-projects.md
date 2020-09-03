@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905349"
 ---
 # <a name="how-to-implement-nested-projects"></a>Cómo: implementar proyectos anidados
@@ -37,7 +37,7 @@ Al crear un tipo de proyecto anidado, hay varios pasos adicionales que se deben 
 
 4. El proyecto primario llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> método o al <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> método en cada uno de sus proyectos secundarios.
 
-     Se pasa <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> al `AddVirtualProject` método para indicar que el proyecto virtual (anidado) debe agregarse a la ventana del proyecto, excluirse de la compilación, agregarse al control de código fuente, etc. `VSADDVPFLAGS`permite controlar la visibilidad del proyecto anidado e indicar qué funcionalidad está asociada.
+     Se pasa <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> al `AddVirtualProject` método para indicar que el proyecto virtual (anidado) debe agregarse a la ventana del proyecto, excluirse de la compilación, agregarse al control de código fuente, etc. `VSADDVPFLAGS` permite controlar la visibilidad del proyecto anidado e indicar qué funcionalidad está asociada.
 
      Si vuelve a cargar un proyecto secundario existente que tiene un GUID del proyecto almacenado en el archivo de proyecto del proyecto primario, el proyecto primario llama a `AddVirtualProjectEx` . La única diferencia entre `AddVirtualProject` y `AddVirtualProjectEX` es que `AddVirtualProjectEX` tiene un parámetro para permitir que el proyecto primario especifique un por instancia `guidProjectID` para que el proyecto secundario habilite <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> funcione correctamente.
 
@@ -45,7 +45,7 @@ Al crear un tipo de proyecto anidado, hay varios pasos adicionales que se deben 
 
 5. El IDE llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> método en cada proyecto secundario del proyecto primario.
 
-     El proyecto primario debe implementar `IVsParentProject` si desea anidar proyectos. Pero el proyecto primario nunca llama a `QueryInterface` para `IVsParentProject` aunque tenga proyectos primarios por debajo de él. La solución controla la llamada a `IVsParentProject` y, si se implementa, llama `OpenChildren` a para crear los proyectos anidados. `AddVirtualProjectEX`siempre se llama a desde `OpenChildren` . Nunca debe ser llamado por el proyecto primario para mantener los eventos de creación de la jerarquía en orden.
+     El proyecto primario debe implementar `IVsParentProject` si desea anidar proyectos. Pero el proyecto primario nunca llama a `QueryInterface` para `IVsParentProject` aunque tenga proyectos primarios por debajo de él. La solución controla la llamada a `IVsParentProject` y, si se implementa, llama `OpenChildren` a para crear los proyectos anidados. `AddVirtualProjectEX` siempre se llama a desde `OpenChildren` . Nunca debe ser llamado por el proyecto primario para mantener los eventos de creación de la jerarquía en orden.
 
 6. El IDE llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> método en el proyecto secundario.
 
@@ -56,7 +56,7 @@ Al crear un tipo de proyecto anidado, hay varios pasos adicionales que se deben 
      Si aún no existe, el proyecto primario crea un GUID para cada proyecto anidado mediante una llamada a `CoCreateGuid` .
 
     > [!NOTE]
-    > `CoCreateGuid`es una API de COM a la que se llama cuando se va a crear un GUID. Para obtener más información, vea `CoCreateGuid` y GUID en MSDN Library.
+    > `CoCreateGuid` es una API de COM a la que se llama cuando se va a crear un GUID. Para obtener más información, vea `CoCreateGuid` y GUID en MSDN Library.
 
      El proyecto primario almacena este GUID en el archivo de proyecto que se va a recuperar la próxima vez que se abra en el IDE. Vea el paso 4 para obtener más información relacionada con la llamada de `AddVirtualProjectEX` para recuperar el del `guidProjectID` proyecto secundario.
 
@@ -84,7 +84,7 @@ En los temas siguientes se tratan otros conceptos que se deben tener en cuenta a
 - [Implementar el control de comandos para proyectos anidados](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtrar el cuadro de diálogo AddItem para proyectos anidados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar elementos al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Registrar plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md)

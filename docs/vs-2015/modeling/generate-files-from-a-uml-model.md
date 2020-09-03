@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 832dc3f7fea959ff4d2834aba921cd16f1117b5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666144"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generar archivos a partir de un modelo UML
@@ -33,7 +33,7 @@ A partir de un modelo UML, puede generar código de programa, esquemas, document
 
   Este tema finaliza con una explicación de [Cómo usar la generación de texto](#What). Para obtener más información, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="Command"></a>Generar archivos a partir de un comando de menú
+## <a name="generating-files-from-a-menu-command"></a><a name="Command"></a> Generar archivos a partir de un comando de menú
  Puede usar plantillas de texto en un comando de menú UML de preprocesamiento. En el código de la plantilla de texto o en una clase parcial independiente, puede leer el modelo que se ve en el diagrama.
 
  Consulte los siguientes temas para obtener más información acerca de estas características:
@@ -47,7 +47,7 @@ A partir de un modelo UML, puede generar código de programa, esquemas, document
   El enfoque que se muestra en el ejemplo siguiente es adecuado para generar texto desde un único modelo, al iniciar la operación desde uno de los diagramas de modelo. Para procesar un modelo en un contexto independiente, considere la posibilidad de usar [Modelbus de Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md) para tener acceso al modelo y a sus elementos.
 
 ### <a name="example"></a>Ejemplo
- Para ejecutar este ejemplo, cree un proyecto de extensión (VSIX) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. El nombre del proyecto que se usa en este ejemplo es `VdmGenerator`. En el archivo **source. Extension. vsixmanifest** , haga clic en **agregar contenido** y establezca el campo tipo en **componente MEF** y ruta de acceso de origen que hace referencia al proyecto actual. Para obtener más información sobre cómo configurar este tipo de proyecto, vea [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ Para ejecutar este ejemplo, cree un proyecto de extensión (VSIX) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. El nombre del proyecto que se usa en este ejemplo es `VdmGenerator` . En el archivo **source. Extension. vsixmanifest** , haga clic en **agregar contenido** y establezca el campo tipo en **componente MEF** y ruta de acceso de origen que hace referencia al proyecto actual. Para obtener más información sobre cómo configurar este tipo de proyecto, vea [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
  Agregue al proyecto un archivo de C# que contenga este código. Esta clase define un comando de menú que aparecerá en un diagrama de clases UML.
 
@@ -124,7 +124,7 @@ namespace VdmGenerator
 }
 ```
 
- Para probar el proyecto, presione **F5**. Se iniciará una nueva instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En esta instancia, abra o cree un modelo UML que contenga un diagrama de clases. Agregue algunas clases al diagrama y algunos atributos a cada clase. Haga clic con el botón secundario en el diagrama y, a continuación, haga clic en el comando de ejemplo `Generate VDM`. El comando crea el archivo `C:\Generated.txt`. Inspeccione este archivo. Su contenido debe parecerse al siguiente texto, pero mostrará sus propias clases y atributos:
+ Para probar el proyecto, presione **F5**. Se iniciará una nueva instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En esta instancia, abra o cree un modelo UML que contenga un diagrama de clases. Agregue algunas clases al diagrama y algunos atributos a cada clase. Haga clic con el botón secundario en el diagrama y, a continuación, haga clic en el comando de ejemplo `Generate VDM` . El comando crea el archivo `C:\Generated.txt` . Inspeccione este archivo. Su contenido debe parecerse al siguiente texto, pero mostrará sus propias clases y atributos:
 
 ```
 Type Class1 ::
@@ -134,12 +134,12 @@ Type Class2 ::
           Attribute3 : string
 ```
 
-## <a name="Application"></a>Generar archivos a partir de una aplicación
+## <a name="generating-files-from-an-application"></a><a name="Application"></a> Generar archivos a partir de una aplicación
  Puede generar archivos desde una aplicación que lee un modelo UML. Para este propósito, el método más flexible y sólido para tener acceso al modelo y sus elementos es [Modelbus de Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
  También puede usar la API básica para cargar el modelo y pasarlo a plantillas de texto usando las mismas técnicas que en la sección anterior. Para obtener más información sobre cómo cargar un modelo, vea [leer un modelo UML en el código del programa](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Design"></a>Generar archivos en tiempo de diseño
+## <a name="generating-files-at-design-time"></a><a name="Design"></a> Generar archivos en tiempo de diseño
  Si el proyecto tiene un método estándar para interpretar UML como código, puede crear plantillas de texto que le permiten generar código dentro del proyecto a partir de un modelo UML. Normalmente tendría una solución que contiene el proyecto de modelo UML y uno o más proyectos para el código de aplicación. Cada proyecto de código podría contener varias plantillas que generan código de programa, recursos y archivos de configuración, según el contenido del modelo. Para ejecutar todas las plantillas, el desarrollador puede hacer clic en **transformar todas las plantillas** en la barra de herramientas explorador de soluciones. El código de programa se genera normalmente en forma de clases parciales para facilitar la integración de las partes escritas de forma manual.
 
  Un proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de este tipo se puede distribuir en forma de plantilla para que todos los miembros de un equipo puedan crear proyectos que generen código a partir de un modelo de la misma manera. Normalmente, la plantilla forma parte de un paquete de extensión que incluye restricciones de validación en el modelo para garantizar que se cumplen las condiciones previas del código de generación.
@@ -185,17 +185,17 @@ Type Class2 ::
 
 2. Cree un proyecto en C# o Visual Basic en la misma solución.
 
-   - En Explorador de soluciones, haga clic con el botón secundario en la solución, seleccione **Agregar**y, a continuación, haga clic en **nuevo proyecto**. En **plantillas instaladas**, haga clic en **Visual Basic** o  **C#visual** y, a continuación, seleccione un tipo de proyecto como **aplicación de consola**.
+   - En Explorador de soluciones, haga clic con el botón secundario en la solución, seleccione **Agregar**y, a continuación, haga clic en **nuevo proyecto**. En **plantillas instaladas**, haga clic en **Visual Basic** o **Visual C#** y, a continuación, seleccione un tipo de proyecto como **aplicación de consola**.
 
 3. Agregue un archivo de texto sin formato al proyecto de Visual Basic o C#. Este archivo contendrá código que se comparte si desea escribir varias plantillas de texto.
 
-   - En Explorador de soluciones, haga clic con el botón secundario en el proyecto, seleccione **Agregar**y, a continuación, haga clic en **nuevo elemento**. Seleccione **archivo de texto**.
+   - En el Explorador de soluciones, haga clic con el botón derecho en el proyecto, seleccione **Agregar** y, después, haga clic en **Nuevo elemento**. Seleccione **archivo de texto**.
 
      Inserte el texto que se muestra en esta sección.
 
 4. Agregue un archivo de plantilla de texto al proyecto de Visual Basic o C#.
 
-   - En Explorador de soluciones, haga clic con el botón secundario en el proyecto, seleccione **Agregar**y, a continuación, haga clic en **nuevo elemento**. Seleccione **plantilla de texto**.
+   - En el Explorador de soluciones, haga clic con el botón derecho en el proyecto, seleccione **Agregar** y, después, haga clic en **Nuevo elemento**. Seleccione **plantilla de texto**.
 
      Inserte el código siguiente en el archivo de plantilla de texto.
 
@@ -296,7 +296,7 @@ namespace Test{
 }
 ```
 
-## <a name="What"></a>Cómo usar la generación de texto
+## <a name="how-to-use-text-generation"></a><a name="What"></a> Cómo usar la generación de texto
  La verdadera eficacia de modelado se obtiene al usar modelos para diseñar en el nivel de requisitos o la arquitectura. Puede usar plantillas de texto para realizar parte del trabajo de convertir ideas de alto nivel en código. En muchos casos, esto no provocar una correspondencia uno a uno entre los elementos de los modelos UML y las clases u otras partes del código de programa.
 
  Además, la transformación depende del dominio del problema; no existe ninguna asignación universal entre los modelos y el código.
@@ -326,7 +326,7 @@ namespace Test{
 
 - **Conservar cambios manuales**. Sólo algunos de los archivos de solución se pueden generar a partir de un modelo. En la mayoría de los casos, necesitará poder agregar o ajustar a mano el contenido generado. Sin embargo, es importante que estos cambios manuales se conserven cuando la transformación de plantilla se ejecute de nuevo.
 
-     Cuando las plantillas generan código en lenguajes [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)], deben generar clases parciales para que los desarrolladores puedan agregar métodos y código. También es útil generar cada clase como un par: una clase base abstracta que contiene los métodos y una clase heredera que solo contiene el constructor. Esto permite a los desarrolladores reemplazar los métodos. Para permitir que se reemplace la inicialización, se realiza en un método independiente en lugar de en los constructores.
+     Cuando las plantillas generan código en [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] lenguajes, deben generar clases parciales para que los desarrolladores puedan agregar métodos y código. También es útil generar cada clase como un par: una clase base abstracta que contiene los métodos y una clase heredera que solo contiene el constructor. Esto permite a los desarrolladores reemplazar los métodos. Para permitir que se reemplace la inicialización, se realiza en un método independiente en lugar de en los constructores.
 
      Si una plantilla genera XML y otros tipos de salida, puede ser más difícil separar el contenido manual del contenido generado. Un posible método pasa por crear una tarea en el proceso de compilación que combina dos archivos. Otro método consiste en que los desarrolladores ajusten una copia local de la plantilla de generación.
 

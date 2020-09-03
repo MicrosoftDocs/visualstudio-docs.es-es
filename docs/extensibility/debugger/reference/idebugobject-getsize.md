@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetSize ? Microsoft Docs
+title: 'IDebugObject:: se obtiene | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8fd42abfc056c3b9e50d073ad335f72ac9022aa7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726570"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
@@ -41,13 +41,13 @@ int GetSize(
 
 ## <a name="parameters"></a>Parámetros
 `pnSize`\
-[fuera] Devuelve el tamaño en bytes.
+enuncia Devuelve el tamaño en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Utilice el método [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) para recuperar el valor como una secuencia de bytes.
+ Use el método [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) para recuperar el valor como una secuencia de bytes.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

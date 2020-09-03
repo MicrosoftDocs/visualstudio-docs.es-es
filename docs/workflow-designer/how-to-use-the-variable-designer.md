@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817416"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Utilizar el diseñador de variables
@@ -36,7 +36,7 @@ El diseñador variables se utiliza para crear variables con el fin de utilizarla
     > [!NOTE]
     > Para eliminar una variable, seleccione la variable haciendo clic en ella y, a continuación, presione la tecla **Supr** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Usar el Diseñador de flujo de trabajo](developing-applications-with-the-workflow-designer.md)
 - [Variables y argumentos](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext ? Microsoft Docs
+title: 'IDebugObject:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726657"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
@@ -41,13 +41,13 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Parámetros
 `pContext`\
-[fuera] Devuelve un [iDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que representa la dirección del valor del objeto.
+enuncia Devuelve un objeto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que representa la dirección del valor del objeto.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- El contexto de memoria devuelto especifica la dirección del valor representado por este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto.
+ El contexto de memoria devuelto especifica la dirección del valor representado por este objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

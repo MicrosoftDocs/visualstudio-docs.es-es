@@ -64,6 +64,6 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 |OffsetFromShape|Desplazamiento del elemento Decorator a partir de la forma, con respecto a su posición predeterminada, en pulgadas. (Solo en conectores).|0|
 |Posición|Posición predeterminada del elemento Decorator.|TargetBottom|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a5ecc9f1129aff02c6c8e32e42f7e9babffab429
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817572"
 ---
 # <a name="expected-"></a>Se esperaba ']'
@@ -28,6 +28,6 @@ Hizo referencia a un elemento de matriz, pero no incluía el corchete de cierre.
   
 - Agregue el corchete de cierre a la expresión que hace referencia al elemento de la matriz.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)   
  [Array (objeto)](../../javascript/reference/array-object-javascript.md)

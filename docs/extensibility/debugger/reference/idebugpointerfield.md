@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField ? Microsoft Docs
+title: IDebugPointerField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725592"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
@@ -31,23 +31,23 @@ IDebugPointerField : IDebugContainerField
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
  El proveedor de símbolos implementa esta interfaz para representar un puntero.
 
-## <a name="notes-for-callers"></a>Notas para las personas que llaman
- Use [QueryInterface](/cpp/atl/queryinterface) para obtener esta interfaz desde la `FIELD_TYPE_POINTER`interfaz [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve .
+## <a name="notes-for-callers"></a>Notas para llamadores
+ Use [QueryInterface](/cpp/atl/queryinterface) para obtener esta interfaz de la interfaz [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_POINTER` .
 
-## <a name="methods-in-vtable-order"></a>Métodos en orden Vtable
- Además de los `IDebugField` `IDebugContainerField` métodos en las interfaces y, esta interfaz implementa el siguiente método:
+## <a name="methods-in-vtable-order"></a>Métodos en orden vtable
+ Además de los métodos de las `IDebugField` interfaces y `IDebugContainerField` , esta interfaz implementa el método siguiente:
 
 |Método|Descripción|
 |------------|-----------------|
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el destino del puntero.|
 
 ## <a name="remarks"></a>Observaciones
- En C/C++, un puntero puede ser un contenedor si se utiliza con notación de matriz. Por ejemplo, `char *pString` `pString` dado , tiene `char`un tipo de puntero a . `pString[3]`tiene el tipo de un contenedor `char` que es un puntero a que hace referencia al cuarto elemento de ese contenedor.
+ En C/C++, un puntero puede ser un contenedor si se utiliza con la notación de matriz. Por ejemplo, dado `char *pString` , `pString` tiene un tipo de puntero a `char` . `pString[3]` tiene el tipo de un contenedor que es un puntero a `char` que hace referencia al cuarto elemento de ese contenedor.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: sh.h
+ Encabezado: SH. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

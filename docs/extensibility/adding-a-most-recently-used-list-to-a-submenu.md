@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904210"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Agregar una lista de usados más recientemente a un submenú
@@ -199,5 +199,5 @@ Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más
 
 4. Vuelva a abrir el submenú. Observe que el **elemento 3** está ahora en la parte superior de la lista y que los demás elementos se han insertado una posición hacia abajo. Vuelva a hacer clic en el **elemento 3** y observe que el cuadro de mensaje todavía muestra el **elemento seleccionado 3**, lo que indica que el texto se ha pasado correctamente a la nueva posición junto con la etiqueta del comando.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Agregar elementos de menú de forma dinámica](../extensibility/dynamically-adding-menu-items.md)

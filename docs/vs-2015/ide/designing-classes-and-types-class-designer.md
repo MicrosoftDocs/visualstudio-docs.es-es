@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03fae58a902da5bc9432c9ed2ed587dd7ddb4f5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665768"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Diseñar clases y tipos (Diseñador de clases)
@@ -53,5 +53,5 @@ Con el **Diseñador de clases**, no solo puede visualizar clases y tipos, sino d
 
  [Refactorización de clases y tipos (Diseñador de clases)](../ide/refactoring-classes-and-types-class-designer.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)

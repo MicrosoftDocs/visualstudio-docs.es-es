@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905043"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: crear un elemento gráfico de vista, comandos y configuración (guías de columnas)
@@ -31,7 +31,7 @@ En este tutorial realizará lo siguiente:
   > [!NOTE]
   > En este tutorial, se pega una gran cantidad de código en algunos archivos generados por plantillas de extensión de Visual Studio. Pero pronto este tutorial hará referencia a una solución completada en GitHub con otros ejemplos de extensión. El código completado es ligeramente diferente en que tiene iconos de comando reales en lugar de usar iconos de GenericTemplate.
 
-## <a name="get-started"></a>Introducción
+## <a name="get-started"></a>Primeros pasos
 A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Configuración de la solución
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`tiene que profundizar un poco para obtener una <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vista del código.  Si realiza el seguimiento a través `GetActiveTextView` de, `GetActiveView` y `GetTextViewFromVsTextView` , puede ver cómo hacerlo. El código siguiente es el código relevante que se abstrae, empezando por la selección actual, obteniendo el fotograma de la selección y, a continuación, obteniendo el DocView del fotograma como <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> y, a continuación, obteniendo un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> de IVsTextView, luego obteniendo un host de vista y finalmente IWpfTextView:
+`GetCurrentEditorColumn` tiene que profundizar un poco para obtener una <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vista del código.  Si realiza el seguimiento a través `GetActiveTextView` de, `GetActiveView` y `GetTextViewFromVsTextView` , puede ver cómo hacerlo. El código siguiente es el código relevante que se abstrae, empezando por la selección actual, obteniendo el fotograma de la selección y, a continuación, obteniendo el DocView del fotograma como <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> y, a continuación, obteniendo un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> de IVsTextView, luego obteniendo un host de vista y finalmente IWpfTextView:
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1339,7 +1339,7 @@ Pronto habrá un proyecto de GitHub de ejemplos de extensibilidad de Visual Stud
 
 Puede probar una versión de la característica guías de columnas con esta[extensión](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)de la galería de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Dentro del editor](../extensibility/inside-the-editor.md)
 - [Extender el editor y los servicios de lenguaje](../extensibility/extending-the-editor-and-language-services.md)
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

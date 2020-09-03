@@ -17,26 +17,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 75120b2f09c2eba3254a1b94e78875d8130c5225
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666128"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generar código a partir de diagramas de clases UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para generar código C# de visual .net a partir de diagramas de clases UML en Visual Studio, use el comando **generar código** . De forma predeterminada, el comando genera un tipo C# para cada tipo UML que seleccione. Puede modificar y extender este comportamiento si modifica o copia las plantillas de texto que generan código. Puede especificar un comportamiento diferente para los tipos contenidos en los diferentes paquetes de su modelo.
+Para generar código de Visual C# .NET a partir de diagramas de clases UML en Visual Studio, use el comando **generar código** . De forma predeterminada, el comando genera un tipo C# para cada tipo UML que seleccione. Puede modificar y extender este comportamiento si modifica o copia las plantillas de texto que generan código. Puede especificar un comportamiento diferente para los tipos contenidos en los diferentes paquetes de su modelo.
 
  El comando **generar código** es especialmente adecuado para generar código a partir de la selección de elementos del usuario y para generar un archivo para cada clase UML u otro elemento. Por ejemplo, la captura de pantalla muestra dos archivos de C# generados a partir de dos clases UML.
 
  Como alternativa, si desea generar código en el que los archivos generados no tienen una relación 1:1 con los elementos UML, puede considerar la posibilidad de escribir plantillas de texto que se invocan con el comando **transformar todas las plantillas** . Para obtener más información acerca de este método, vea [generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md).
 
- ![Diagrama de clases UML y archivos&#35; de clase C generados.](../modeling/media/oob-gencode1.png "oob_GenCode1")
+ ![Diagrama de clases UML y archivos de clase de C&#35; generados.](../modeling/media/oob-gencode1.png "oob_GenCode1")
 
  Para más información sobre los diagramas de clases UML en Visual Studio, vea los temas siguientes:
 
-- [Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)
+- [Diagramas de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)
 
 - [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)
 
@@ -71,7 +71,7 @@ Para generar código C# de visual .net a partir de diagramas de clases UML en Vi
 
    Se aplican al modelo algunas pruebas de validación para asegurarse de que se puede traducir a C#. Si se produce un error en las pruebas, se muestra un mensaje de error y no se realiza la generación de código. Si ha creado un comando de menú de validación, no se genera código para ningún elemento cuyo comando de validación produzca errores. Para obtener más información, vea [definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md).
 
-## <a name="default"></a>Transformaciones de generación de código predeterminadas
+## <a name="default-code-generation-transforms"></a><a name="default"></a> Transformaciones de generación de código predeterminadas
  En esta sección se resumen los resultados generados por el comando **generar código** , a menos que personalice el comando. Para obtener más información, vea [personalizar el comando generar código](#custom).
 
 - Se genera un tipo de C# para cada tipo seleccionado en el modelo de UML. Cada tipo se coloca en un archivo de código independiente en la carpeta **GeneratedCode**
@@ -86,13 +86,13 @@ Para generar código C# de visual .net a partir de diagramas de clases UML en Vi
 
   Si agrega un estereotipo a cada tipo UML, puede controlar más propiedades del tipo de C# generado.
 
-|**Para crear este C# tipo**|**Dibujar este tipo UML**|**Aplicar este estereotipo**|
+|**Para crear este tipo de C#**|**Dibuje este tipo UML**|**Aplique este estereotipo**|
 |---------------------------------|----------------------------|-------------------------------|
-|Clase|Clase|\<none > o<br /><br /> Clase de C#|
-|Interfaz|Interfaz|\<none > o<br /><br /> Interfaz de C#|
-|Enumeración|Enumeración|\<none > o<br /><br /> C# enum|
-|delegado|Clase|Delegado de C#|
-|Struct|Clase|Struct de C#|
+|Clase|Clase|\<none> o<br /><br /> Clase de C#|
+|Interfaz|Interfaz|\<none> o<br /><br /> Interfaz de C#|
+|Enumeración|Enumeración|\<none> o<br /><br /> C# enum|
+|Delegado|Clase|Delegado de C#|
+|Estructura|Clase|Struct de C#|
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Para establecer un estereotipo en un tipo u otro elemento
 
@@ -101,18 +101,18 @@ Para generar código C# de visual .net a partir de diagramas de clases UML en Vi
 2. En la ventana **propiedades** , elija la flecha desplegable de la propiedad **estereotipos** y, a continuación, active la casilla correspondiente al estereotipo que desea aplicar.
 
    > [!TIP]
-   > Si no aparecen los estereotipos de C#, habilite el perfil de C# para el modelo o para un paquete que contiene los elementos del modelo en los que está interesado. Seleccione el paquete o la raíz del modelo en el **Explorador de modelos UML**. A continuación, en la ventana **propiedades** , elija **perfil**y, a C# continuación, habilite el perfil.
+   > Si no aparecen los estereotipos de C#, habilite el perfil de C# para el modelo o para un paquete que contiene los elementos del modelo en los que está interesado. Seleccione el paquete o la raíz del modelo en el **Explorador de modelos UML**. Después, en la ventana **propiedades** , elija **perfil**y, a continuación, habilite el perfil de C#.
 
 3. Expanda la propiedad **estereotipos** para ver las propiedades adicionales que puede establecer.
 
-   Las propiedades de **Descripción** de los tipos, atributos, operaciones y asociaciones se escriben en `<summary>` comentarios en el código generado. Marque como comentario los elementos vinculados a los tipos que se escriben en los comentarios `<remarks>`.
+   Las propiedades de **Descripción** de tipos, atributos, operaciones y asociaciones se escriben en `<summary>` comentarios en el código generado. Marque como comentario los elementos vinculados a los tipos que se escriben en los comentarios `<remarks>`.
 
 ## <a name="varying-the-generated-code"></a>Modificar el código generado
- El código generado varía según las propiedades de cada tipo, atributo u operación. Por ejemplo, si establece la propiedad **is Abstract** de una clase en true, la palabra clave `abstract` aparecerá en la clase generada. Si establece la **multiplicidad** de un atributo en **0.. \*** , la propiedad generada tendrá un tipo `IEnumerable<>`.
+ El código generado varía según las propiedades de cada tipo, atributo u operación. Por ejemplo, si establece la propiedad **is Abstract** de una clase en true, la `abstract` palabra clave aparecerá en la clase generada. Si establece la **multiplicidad** de un atributo en **0. \* .**, la propiedad generada tendrá un `IEnumerable<>` tipo.
 
  Además, cada estereotipo proporciona varias propiedades adicionales que puede establecer. Estos valores se traducen a las palabras clave adecuadas en el código de C#. Por ejemplo, si establece la propiedad `Is Static` en una clase, la clase de C# será `static`.
 
- Para establecer estas propiedades adicionales, seleccione la clase u otro elemento en el diagrama. En el ventana Propiedades, expanda **estereotipos**y, a continuación C# , expanda el estereotipo, como  **C# clase**.  En las clases, estas propiedades adicionales incluyen:
+ Para establecer estas propiedades adicionales, seleccione la clase u otro elemento en el diagrama. En el ventana Propiedades, expanda **estereotipos**y, a continuación, expanda el estereotipo de c#, como **clase de c#**.  En las clases, estas propiedades adicionales incluyen:
 
 - Atributos de CLR
 
@@ -126,7 +126,7 @@ Para generar código C# de visual .net a partir de diagramas de clases UML en Vi
 
   Cada atributo y operación tiene también propiedades de estereotipo que puede establecer. Si no ve las propiedades en un nuevo atributo, ejecute **generar código**.
 
-## <a name="custom"></a>Personalizar el comando generar código
+## <a name="customizing-the-generate-code-command"></a><a name="custom"></a> Personalizar el comando generar código
  El comando **generar código** funciona transformando los elementos del modelo mediante un conjunto de plantillas de texto. Para obtener más información acerca de las plantillas de texto, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).
 
  Las plantillas se especifican en un conjunto de *enlaces de plantilla de texto*. Un enlace de plantilla de texto especifica qué plantilla se debe aplicar, dónde se debe colocar la salida generada y otros parámetros del comando **generar código** .
@@ -150,7 +150,7 @@ Para generar código C# de visual .net a partir de diagramas de clases UML en Vi
 
 1. En el **Explorador de modelos UML**, abra el menú contextual de un elemento de modelo y, a continuación, elija **propiedades**. Generalmente, adjuntaría los enlaces de plantilla de texto a un paquete o a la raíz del modelo.
 
-2. En la ventana **propiedades** , elija el botón de puntos suspensivos ( **[...]** ) en la propiedad **enlaces de plantilla de texto** .
+2. En la ventana **propiedades** , elija el botón de puntos suspensivos (**[...]**) en la propiedad **enlaces de plantilla de texto** .
 
     Aparece el cuadro de diálogo **enlaces de plantilla de texto** .
 
@@ -164,18 +164,18 @@ Para generar código C# de visual .net a partir de diagramas de clases UML en Vi
 
 4. En el cuadro de diálogo, establezca las propiedades del enlace de plantilla de texto.
 
-   |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Descripción**                                                                                                                                                                                                                                                                                                                    |
+   |    **Propiedad**    |                                                                                                                                                                                                                                                                                                                    **Descripción**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        Name        |                                                                                                                                                                                                                                                  Nombre correspondiente a este enlace. Para invalidar un enlace heredado de un paquete contenedor o modelo, use el mismo nombre que el enlace que desea invalidar.                                                                                                                                                                                                                                                  |
-   |     Overwrite      |                                                                                                                                                                                                                                                                                                      Si es true, se sobrescribe cualquier código existente.                                                                                                                                                                                                                                                                                                       |
-   |    Nombre de destino     | Nombre del archivo que se generó.<br /><br /> Puede insertar expresiones en esta cadena, como `{Name}` o `{Owner.Name}`. Por ejemplo, puede escribir: `{Owner.Name}_{Name}`. La expresión se evalúa en el elemento del modelo. Puede usar las propiedades de los elementos, pero no los métodos. Para buscar las propiedades que se pueden usar, examine las propiedades de los tipos en **Microsoft. VisualStudio. UML. \*** . \* \*Important: \* \* `{Name}` o `{Owner.Name}` solo se pueden usar en la propiedad **nombre de destino** . Para cambiar el nombre de la clase generada, tiene que modificar la plantilla. Para obtener más información, consulte [escribir una plantilla de texto](#writing). |
-   |    Ruta de acceso del proyecto    |                                                                      Especifica la ruta de acceso al proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contendrá los archivos de salida de la transformación. Use valores con tipo para crear un nuevo proyecto. Elija el botón de puntos suspensivos ( **[...]** ) para seleccionar un proyecto existente.<br /><br /> Se creará un nuevo proyecto si no existe uno. Será un proyecto de biblioteca de clases de C#.<br /><br /> Para ello, debe escribir directamente el proyecto. Puede incluir macros de variable de entorno como %ProgramFiles% o %LocalAppData%.                                                                       |
-   |  Directorio de destino  |                                                                                          Carpeta en la que se genera el archivo de destino. La ruta de acceso es relativa a la carpeta de proyecto.<br /><br /> Puede usar la expresión `{PackageStructure}` para insertar una ruta de acceso que corresponda a los nombres de los paquetes contenedores. El valor predeterminado es `\GeneratedCode\{PackageStructure}`. También puede incluir variables de entorno como %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` solo se puede usar en la propiedad **Directorio de destino** .                                                                                          |
+   |        Nombre        |                                                                                                                                                                                                                                                  Nombre correspondiente a este enlace. Para invalidar un enlace heredado de un paquete contenedor o modelo, use el mismo nombre que el enlace que desea invalidar.                                                                                                                                                                                                                                                  |
+   |     Sobrescribir      |                                                                                                                                                                                                                                                                                                      Si es true, se sobrescribe cualquier código existente.                                                                                                                                                                                                                                                                                                       |
+   |    Nombre de destino     | Nombre del archivo que se generó.<br /><br /> Puede insertar expresiones en esta cadena, como `{Name}` o `{Owner.Name}` . Por ejemplo, puede escribir: `{Owner.Name}_{Name}` . La expresión se evalúa en el elemento del modelo. Puede usar las propiedades de los elementos, pero no los métodos. Para averiguar qué propiedades se pueden usar, examine las propiedades de los tipos en **Microsoft. VisualStudio. UML. \* ** \*\*Importante: \* \* `{Name}` o `{Owner.Name}` solo se puede usar en la propiedad **nombre de destino** .   Para cambiar el nombre de la clase generada, tiene que modificar la plantilla. Para obtener más información, consulte [escribir una plantilla de texto](#writing). |
+   |    Ruta de acceso del proyecto    |                                                                      Especifica la ruta de acceso al proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contendrá los archivos de salida de la transformación. Use valores con tipo para crear un nuevo proyecto. Elija el botón de puntos suspensivos (**[...]**) para seleccionar un proyecto existente.<br /><br /> Se creará un nuevo proyecto si no existe uno. Será un proyecto de biblioteca de clases de C#.<br /><br /> Para ello, debe escribir directamente el proyecto. Puede incluir macros de variable de entorno como %ProgramFiles% o %LocalAppData%.                                                                       |
+   |  Directorio de destino  |                                                                                          Carpeta en la que se genera el archivo de destino. La ruta de acceso es relativa a la carpeta de proyecto.<br /><br /> Puede usar la expresión `{PackageStructure}` para insertar una ruta de acceso que corresponda a los nombres de los paquetes contenedores. El valor predeterminado es `\GeneratedCode\{PackageStructure}`. También puede incluir variables de entorno como %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` solo se puede usar en la propiedad **Directorio de destino** .                                                                                            |
    | Ruta de acceso del archivo de plantilla |                                                                                                                                                           Plantilla que realizará la transformación.<br /><br /> Puede usar las plantillas proporcionadas o crear otras propias. Puede buscar las plantillas proporcionadas en la siguiente ubicación:<br /><br /> …\Archivos de programa\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
 5. Puede adjuntar tantos enlaces a un elemento como desee.
 
-## <a name="writing"></a>Escribir una plantilla de texto
+## <a name="writing-a-text-template"></a><a name="writing"></a> Escribir una plantilla de texto
  Puede escribir a sus propias plantillas de texto. Las plantillas de texto pueden generar código de programa o cualquier otro tipo de archivo de texto.
 
  Recomendamos comenzar por modificar las copias de las plantillas estándar. Puede copiar las plantillas de las ubicaciones siguientes:
@@ -210,7 +210,7 @@ Para generar código C# de visual .net a partir de diagramas de clases UML en Vi
 
 - `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.
 
-- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Este es el almacén del SDK de visualización y modelado en el que se implementa el UML ModelStore. Para obtener los [IModelStore](/previous-versions/ee789385(v=vs.140))de UML, use `this.Element.GetModelStore()`.
+- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Este es el almacén del SDK de visualización y modelado en el que se implementa el UML ModelStore. Para obtener el [IMODELSTORE](/previous-versions/ee789385(v=vs.140))UML, use `this.Element.GetModelStore()` .
 
   Puede encontrar útiles los siguientes puntos mientras escribe una plantilla de texto. Esta información se describe en detalle en [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).
 
@@ -230,9 +230,9 @@ Para generar código C# de visual .net a partir de diagramas de clases UML en Vi
 
 - Use la directiva `Include` para hacer referencia al texto de otro archivo.
 
-- El comando **generar código** ejecuta las partes de la plantilla encerradas entre corchetes `<# ... #>`. Las partes de la plantilla que están fuera de los corchetes se copian en el archivo de resultados. Es importante distinguir entre el código generador y el texto generado. El texto generado puede estar en cualquier lenguaje.
+- El `<# ... #>` comando **generar código** ejecuta las partes de la plantilla entre corchetes. Las partes de la plantilla que están fuera de los corchetes se copian en el archivo de resultados. Es importante distinguir entre el código generador y el texto generado. El texto generado puede estar en cualquier lenguaje.
 
-- `<#= Expressions #>` se evalúa y se convierte en cadenas.
+- `<#= Expressions #>` se evalúan y se convierten en cadenas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md) [diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md) [generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md)
