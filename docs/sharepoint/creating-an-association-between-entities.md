@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981091"
 ---
 # <a name="create-an-association-between-entities"></a>Crear una asociación entre entidades
@@ -47,7 +47,7 @@ ms.locfileid: "72981091"
 ### <a name="foreign-key-based-association"></a>Asociación basada en clave externa
  Puede crear una asociación basada en clave externa relacionando un identificador de la entidad de origen con los descriptores de tipo definidos en la entidad de destino. Esta relación permite a los consumidores del modelo proporcionar una interfaz de usuario mejorada para sus usuarios. Por ejemplo, un formulario de Outlook que permite a un usuario crear un pedido de ventas que puede mostrar clientes en una lista desplegable. o una lista de pedidos de ventas en SharePoint que permite a los usuarios abrir una página de perfil para un cliente.
 
- Para crear una asociación basada en claves externas, relacione los identificadores y los descriptores de tipos que comparten el mismo nombre y tipo. Por ejemplo, puede crear una asociación basada en claves externas entre una entidad `Contact` y una entidad `SalesOrder`. La entidad `SalesOrder` devuelve un descriptor de tipo `ContactID` como parte del parámetro devuelto de los métodos Finder específicos o Finder. Ambos descriptores de tipo aparecen en el **Editor de asociaciones**. Para crear una relación basada en clave externa entre la entidad `Contact` y `SalesOrder` entidad, elija el identificador de `ContactID` junto a cada uno de estos campos.
+ Para crear una asociación basada en claves externas, relacione los identificadores y los descriptores de tipos que comparten el mismo nombre y tipo. Por ejemplo, puede crear una asociación basada en claves externas entre una `Contact` entidad y una `SalesOrder` entidad. La `SalesOrder` entidad devuelve un `ContactID` descriptor de tipo como parte del parámetro devuelto de los métodos Finder específicos o Finder. Ambos descriptores de tipo aparecen en el **Editor de asociaciones**. Para crear una relación basada en clave externa entre la `Contact` entidad y la `SalesOrder` entidad, elija el `ContactID` identificador junto a cada uno de estos campos.
 
  Agregue código al método de navegador de asociaciones de la entidad de origen que devuelve una colección de entidades de destino. En el ejemplo siguiente se devuelven los pedidos de ventas de un contacto.
 
@@ -60,22 +60,22 @@ ms.locfileid: "72981091"
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
 ### <a name="foreign-keyless-association"></a>Asociación de entrada sin llave externa
- Puede crear una asociación sin asignar identificadores a los descriptores de tipo de campo. Cree este tipo de asociación cuando la entidad de origen no tenga una relación directa con la entidad de destino. Por ejemplo, una tabla de `SalesOrderDetail` no tiene una clave externa que se asigna a una clave principal en una tabla de `Contact`.
+ Puede crear una asociación sin asignar identificadores a los descriptores de tipo de campo. Cree este tipo de asociación cuando la entidad de origen no tenga una relación directa con la entidad de destino. Por ejemplo, una `SalesOrderDetail` tabla no tiene una clave externa que se asigna a una clave principal de una `Contact` tabla.
 
- Si desea mostrar información en la tabla `SalesOrderDetail` relacionada con un `Contact`, puede crear una asociación de entrada sin llave externa entre la entidad `Contact` y `SalesOrderDetail` entidad.
+ Si desea mostrar información en la `SalesOrderDetail` tabla relacionada con una `Contact` , puede crear una asociación de sin llave externa entre la `Contact` entidad y la `SalesOrderDetail` entidad.
 
- En el método de navegación por Asociación de la entidad `Contact`, devuelva las entidades `SalesOrderDetail` combinando las tablas o llamando a un procedimiento almacenado.
+ En el método de navegación de Asociación de la `Contact` entidad, devuelva las `SalesOrderDetail` entidades combinando las tablas o llamando a un procedimiento almacenado.
 
  En el ejemplo siguiente se devuelven los detalles de todos los pedidos de ventas mediante la combinación de tablas.
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- En el método de navegación de Asociación de la entidad `SalesOrderDetail`, devuelva el `Contact`relacionado. En el siguiente ejemplo se muestra cómo hacerlo.
+ En el método de navegación de Asociación de la `SalesOrderDetail` entidad, devuelva el relacionado `Contact` . En el siguiente ejemplo se muestra cómo hacerlo.
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: crear una asociación entre entidades](../sharepoint/how-to-create-an-association-between-entities.md)

@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593491"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
-Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<HTML >..." y todas las demás partes estándar de una página HTML. Inserted en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
+Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá " \<html> ..." y todas las demás partes estándar de una página HTML. Inserted en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
 
  Esta estructura hace que una plantilla sea fácil de desarrollar, porque se puede comenzar con un prototipo del archivo generado e incrementalmente insertar bloques de control que modifican el resultado.
 
@@ -178,7 +178,7 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>Utilizar definiciones externas
 
-### <a name="assemblies"></a>Assemblies
+### <a name="assemblies"></a>Ensamblados
  Los bloques de código de la plantilla pueden utilizar tipos que se definen en los ensamblados de uso más frecuente de .NET, como System.dll. Además, puede hacer referencia a otros ensamblados .NET o a sus propios ensamblados. Puede proporcionar un nombre de ruta de acceso o el nombre seguro de un ensamblado:
 
 ```
@@ -195,7 +195,7 @@ private void WriteSquareLine(int i)
 
  Para obtener más información, vea [Directiva de ensamblado T4](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>Espacios de nombres de
+### <a name="namespaces"></a>Espacios de nombres
  La directiva de importación es igual que la cláusula `using` en C# o la cláusula `imports` en Visual Basic. Permite hacer referencia a tipos del código sin utilizar un nombre completo:
 
 ```
@@ -206,7 +206,7 @@ private void WriteSquareLine(int i)
 
  Para obtener más información, vea [Directiva de importación T4](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a>Incluir código y texto
+### <a name="including-code-and-text"></a><a name="Include"></a> Incluir código y texto
  La directiva `include` inserta texto de otro archivo de plantilla. Por ejemplo, esta directiva inserta el contenido de `test.txt`.
 
 ```
@@ -236,12 +236,12 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Cargar un archivo como modelo navegable**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. También puede utilizar [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) para crear un conjunto de clases con las que puede leer los datos XML.
+ **Cargar un archivo como modelo navegable**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. También puede utilizar [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) para crear un conjunto de clases con las que puede leer los datos XML.
 
  **Edite el archivo de modelo en un diagrama o formulario.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona herramientas que permiten editar un modelo como un diagrama o Windows Forms. Así resulta más fácil analizar el modelo con los usuarios de la aplicación generada. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] también crea un conjunto de clases fuertemente tipadas que reflejan la estructura del modelo. Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Rutas de acceso de archivo relativas en plantillas en tiempo de diseño
- En una [plantilla de texto en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si desea hacer referencia a un archivo en una ubicación relativa a la plantilla de texto, use `this.Host.ResolvePath()`. También debe establecer `hostspecific="true"` en la directiva `template`:
+ En una [plantilla de texto en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si desea hacer referencia a un archivo en una ubicación relativa a la plantilla de texto, use `this.Host.ResolvePath()` . También debe establecer `hostspecific="true"` en la directiva `template`:
 
 ```
 <#@ template hostspecific="true" language="C#" #>
@@ -272,7 +272,7 @@ Además, puede obtener otros servicios que proporciona el host. Para obtener má
 |-|-|
 |Escribir una plantilla.|[Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Genere texto utilizando código de programa.|[Estructura de plantilla de texto](../modeling/writing-a-t4-text-template.md)|
-|Generar archivos en una solución de Visual Studio.|[Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Generar archivos en una solución de Visual Studio.|[Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Ejecute la generación de texto fuera de Visual Studio.|[Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Escriba procesadores de directivas para transformar sus propios orígenes de datos.|[Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md)|

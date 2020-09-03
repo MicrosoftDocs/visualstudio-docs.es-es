@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594596"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Invocar la transformación de texto en una extensión de Visual Studio
@@ -130,7 +130,7 @@ El código se puede probar con un archivo de plantilla similar al siguiente:
 Sample text.
 ```
 
-La advertencia del compilador aparecerá en la ventana de error de Visual Studio y también generará una llamada a `ErrorCallback`.
+La advertencia del compilador aparecerá en la ventana de error de Visual Studio y también generará una llamada a `ErrorCallback` .
 
 ## <a name="reference-parameters"></a>Parámetros de referencia
 
@@ -138,8 +138,8 @@ Puede pasar valores de una plantilla de texto mediante una clase de parámetro q
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-Para generar texto desde una plantilla de texto preprocesada: llame al método `TransformText()` de la clase generada. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Para generar texto desde una plantilla de texto preprocesada: llame al `TransformText()` método de la clase generada. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Para generar texto fuera de una extensión de Visual Studio: defina un host personalizado. Para obtener más información, consulte [de procesamiento de plantillas de texto mediante el uso de un Host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Para generar texto fuera de una extensión de Visual Studio: defina un host personalizado. Para obtener más información, consulte [procesar plantillas de texto mediante un host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
 Para generar el código fuente que se puede compilar y ejecutar más adelante: llame al método [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541133"
 ---
 # <a name="imanagedaddin-interface"></a>interfaz IManagedAddin
@@ -48,7 +48,7 @@ interface IManagedAddin : IUnknown
 |[IManagedAddIn::Load](../vsto/imanagedaddin-load.md)|Se llama a este método cuando una aplicación de Microsoft Office carga un complemento de VSTO administrado.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Se llama a este método justo antes de que una aplicación de Microsoft Office descargue un complemento de VSTO administrado.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Microsoft Office aplicaciones, a partir del sistema Microsoft Office 2007, use la interfaz IManagedAddin para ayudar a cargar los complementos de VSTO de Office. Puede implementar la interfaz IManagedAddin para crear su propio cargador de complementos de VSTO y tiempo de ejecución para los complementos de VSTO administrados, en lugar de usar el cargador de complementos de VSTO (*VSTOLoader.dll*) y [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Para obtener más información, consulta [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ## <a name="how-managed-add-ins-are-loaded"></a>Cómo se cargan los complementos administrados
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Este CLSID también se usa en *VSTOLoader.dll* en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Por lo tanto, si usa IManagedAddin para crear su propio componente de tiempo de ejecución y cargador de complementos de VSTO, no podrá implementar el componente en equipos que ejecuten complementos de VSTO que se basen en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de la API no administrada &#40;desarrollo de Office en Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594635"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
 Describa la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de dependencia* en Visual Studio. Asegúrese de que el código sigue siendo coherente con este diseño mediante la validación del código con un diagrama de dependencia. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de dependencia](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
-Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué ediciones de Visual Studio admiten esta característica, consulte [Compatibilidad de ediciones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
 > Los diagramas de dependencia de los proyectos de .NET Core se admiten a partir de la versión 16,2 de Visual Studio 2019.
@@ -57,7 +57,7 @@ En los pasos siguientes se proporciona información general sobre el uso de diag
 
 9. [Incluya la validación de capas en el proceso de compilación](#BuildValidation) para asegurarse de que el código sigue cumpliendo con el diseño.
 
-## <a name="Create"></a>Crear un diagrama de dependencia
+## <a name="create-a-dependency-diagram"></a><a name="Create"></a> Crear un diagrama de dependencia
 
 Un diagrama de dependencia debe crearse dentro de un proyecto de modelado. Puede Agregar un nuevo diagrama de dependencia a un proyecto de modelado existente, crear un nuevo proyecto de modelado para el diagrama de dependencia o copiar un diagrama de dependencia existente en el mismo proyecto de modelado.
 
@@ -66,26 +66,26 @@ Un diagrama de dependencia debe crearse dentro de un proyecto de modelado. Puede
 
 Vea [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).
 
-## <a name="CreateLayers"></a>Definir capas para representar áreas funcionales o componentes
+## <a name="define-layers-to-represent-functional-areas-or-components"></a><a name="CreateLayers"></a> Definir capas para representar áreas funcionales o componentes
 
-Las capas representan grupos lógicos de *artefactos*, como proyectos, archivos de código, espacios de nombres, clases y métodos. Puede crear capas a partir de artefactos desde C# proyectos de Visual y Visual Basic, o puede adjuntar especificaciones o planes a una capa vinculando documentos, como archivos de Word o presentaciones de PowerPoint. Cada capa aparece como un rectángulo en el diagrama y muestra el número de artefactos vinculados a ella. Una capa puede contener capas anidadas que describan tareas más específicas.
+Las capas representan grupos lógicos de *artefactos*, como proyectos, archivos de código, espacios de nombres, clases y métodos. Puede crear capas a partir de artefactos de Visual C# y proyectos de Visual Basic, o puede adjuntar especificaciones o planes a una capa vinculando documentos, como archivos de Word o presentaciones de PowerPoint. Cada capa aparece como un rectángulo en el diagrama y muestra el número de artefactos vinculados a ella. Una capa puede contener capas anidadas que describan tareas más específicas.
 
-Como regla general, denomine las capas según su función, por ejemplo, "Presentación" o "Servicios." Si los artefactos tienen una estrecha interdependencia, colóquelos en la misma capa. Si los artefactos se pueden actualizar de forma independiente o usar en aplicaciones diferentes, sitúelos en capas distintas. Para obtener información sobre los patrones de capas, visite el sitio Patterns & Practices en [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch).
+Como regla general, denomine las capas según su función, por ejemplo, "Presentación" o "Servicios." Si los artefactos tienen una estrecha interdependencia, colóquelos en la misma capa. Si los artefactos se pueden actualizar de forma independiente o usar en aplicaciones diferentes, sitúelos en capas distintas. Para obtener información sobre los patrones de capas, visite el sitio Patterns & Practices en [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch) .
 
 > [!TIP]
 > Existen ciertos tipos de artefactos que se pueden vincular a capas pero que no admiten la validación con el diagrama de dependencia. Para ver si el artefacto admite la validación, abra el **Explorador de capas** para examinar la propiedad **Supports Validation** del vínculo de artefacto. Consulte [detectar dependencias existentes entre capas](#Generate).
 
 Al actualizar una aplicación desconocida, también puede crear mapas de código. Estos diagramas pueden ayudarle a detectar patrones y dependencias mientras explora el código. También puede usar el Explorador de soluciones para examinar los espacios de nombres y las clases, que suelen corresponderse con las capas existentes. Asigne estos artefactos de código a las capas arrastrándolos desde Explorador de soluciones a los diagramas de dependencia. Después, puede usar diagramas de dependencia para ayudarle a actualizar el código y mantener la coherencia con el diseño.
 
-Vea:
+Consulte:
 
-- [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Crear diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
 
 - [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)
 
 - [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)
 
-## <a name="Generate"></a>Detección de dependencias existentes entre capas
+## <a name="discover-existing-dependencies-between-layers"></a><a name="Generate"></a> Detección de dependencias existentes entre capas
 
 Una dependencia existe cuando un artefacto que está asociado a una capa tiene una referencia a un artefacto que está asociado a otra capa. Por ejemplo, una clase de una capa declara una variable que tiene una clase en otra capa. Puede detectar las dependencias existentes aplicándoles técnicas de ingeniería inversa.
 
@@ -98,20 +98,20 @@ Seleccione una o varias capas, haga clic con el botón secundario en una capa se
 
 Normalmente, verá algunas dependencias que no deberían existir. Puede editar estas dependencias para alinearlas con el diseño buscado.
 
-## <a name="EditArchitecture"></a>Editar capas y dependencias para mostrar el diseño previsto
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditArchitecture"></a> Editar capas y dependencias para mostrar el diseño previsto
 
 Para describir los cambios que piensa realizar en el sistema o la arquitectura deseada, siga los pasos que se indican a continuación para editar el diagrama de dependencia. También podría realizar algunos cambios de refactorización para mejorar la estructura del código antes de extenderlo. Vea [mejorar la estructura del código](#Improving).
 
-|**En**|**Siga estos pasos**|
+|**To**|**Siga estos pasos**|
 |-|-|
 |Eliminar una dependencia que no debería existir|Haga clic en la dependencia y, a continuación, presione **Supr**.|
 |Cambiar o restringir la dirección de una dependencia|Establezca su propiedad **Direction** .|
 |Crear nuevas dependencias|Use las herramientas **de dependencia de dependencia y** **bidireccional** .<br /><br /> Para dibujar varias dependencias, haga doble clic en la herramienta. Cuando haya terminado, haga clic en la herramienta **puntero** o presione la tecla **ESC** .|
-|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la propiedad **Forbidden namespace dependencies** de la capa. Use un punto y coma ( **;** ) para separar los espacios de nombres.|
-|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la propiedad **Forbidden namespaces** de la capa. Use un punto y coma ( **;** ) para separar los espacios de nombres.|
-|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la propiedad **espacios de nombres necesarios** de la capa. Use un punto y coma ( **;** ) para separar los espacios de nombres.|
+|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la propiedad **Forbidden namespace dependencies** de la capa. Use un punto y coma (**;**) para separar los espacios de nombres.|
+|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la propiedad **Forbidden namespaces** de la capa. Use un punto y coma (**;**) para separar los espacios de nombres.|
+|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la propiedad **espacios de nombres necesarios** de la capa. Use un punto y coma (**;**) para separar los espacios de nombres.|
 
-### <a name="Improving"></a>Mejorar la estructura del código
+### <a name="improving-the-structure-of-the-code"></a><a name="Improving"></a> Mejorar la estructura del código
 
 Los cambios de refactorización son mejoras que no afectan al comportamiento de la aplicación, pero que facilitan los cambios y las ampliaciones del código en el futuro. El código bien estructurado tiene un diseño que es fácil de abstraer en un diagrama de dependencia.
 
@@ -119,7 +119,7 @@ Por ejemplo, si crea una capa para cada espacio de nombres del código y, a cont
 
 Si no es así, el código será más difícil de cambiar a lo largo de su vida y será menos adecuado para la validación mediante diagramas de dependencia.
 
-## <a name="NewAreas"></a>Diseñar nuevas áreas de la aplicación
+## <a name="design-new-areas-of-your-application"></a><a name="NewAreas"></a> Diseñar nuevas áreas de la aplicación
 
 Cuando comience el desarrollo de un nuevo proyecto, o una nueva área de un nuevo proyecto, puede dibujar capas y dependencias que le ayuden a identificar los componentes primarios antes de empezar a desarrollar el código.
 
@@ -133,7 +133,7 @@ Cuando comience el desarrollo de un nuevo proyecto, o una nueva área de un nuev
 
      Cuando compile la aplicación, el código se validará con el diagrama general y con el diagrama más detallado de la característica.
 
-## <a name="EditLayout"></a>Editar el diseño de presentación y debate
+## <a name="edit-the-layout-for-presentation-and-discussion"></a><a name="EditLayout"></a> Editar el diseño de presentación y debate
 
 Para que le resulte más fácil identificar las capas y dependencias o para analizarlas con los miembros del equipo, edite el aspecto y el diseño del diagrama de los siguientes modos:
 
@@ -143,17 +143,17 @@ Para que le resulte más fácil identificar las capas y dependencias o para anal
 
   - Seleccione una o varias capas o dependencias, haga clic con el botón secundario y, a continuación, haga clic en **propiedades**. En la ventana **propiedades** , edite la propiedad **color** .
 
-## <a name="Validate"></a>Validar el código con el diagrama
+## <a name="validate-the-code-against-the-diagram"></a><a name="Validate"></a> Validar el código con el diagrama
 
 Una vez editado el diagrama, puede validarlo con el código manualmente en cualquier momento o automáticamente cada vez que se compila.
 
-Vea:
+Consulte:
 
-- [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
+- [Validación código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 
 - [Incluir la validación de capas en el proceso de compilación](#BuildValidation)
 
-## <a name="UpdateCode"></a>Actualización del código para que se ajuste a la nueva arquitectura
+## <a name="update-the-code-to-conform-to-the-new-architecture"></a><a name="UpdateCode"></a> Actualización del código para que se ajuste a la nueva arquitectura
 
 Normalmente, los errores se mostrarán la primera vez que se valide el código con un diagrama de dependencia actualizado. Estos errores pueden tener varias causas:
 
@@ -168,11 +168,11 @@ Para resolver estos errores, actualice el código hasta no aparezcan más errore
 
 Durante el proceso de desarrollo, puede que desee suprimir algunos de los conflictos notificados durante la validación. Por ejemplo, es posible que desee suprimir errores de los que ya se ha ocupado o que no son pertinentes para su escenario concreto. Cuando se suprime un error, se recomienda registrar un elemento de trabajo en Team Foundation. Para realizar esta tarea, vea [validar el código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="BuildValidation"></a>Incluir la validación de capas en el proceso de compilación
+## <a name="include-layer-validation-in-the-build-process"></a><a name="BuildValidation"></a> Incluir la validación de capas en el proceso de compilación
 
 Para asegurarse de que los cambios futuros en el código se ajustan a los diagramas de dependencia, incluya la validación de capas en el proceso de compilación estándar de la solución. Siempre que otros miembros del equipo compilen la solución, cualquier diferencia entre las dependencias del código y el diagrama de dependencia se informará como errores de compilación. Para obtener más información sobre cómo incluir la validación de capas en el proceso de compilación, vea [validar el código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
-- [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Crear diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)

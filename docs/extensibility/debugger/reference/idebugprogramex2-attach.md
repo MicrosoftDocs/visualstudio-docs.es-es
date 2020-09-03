@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Adjuntar ? Microsoft Docs
+title: 'IDebugProgramEx2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722378"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
@@ -45,22 +45,22 @@ int Attach( 
 
 ## <a name="parameters"></a>Parámetros
 `pCallback`\
-[en] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que representa la función de devolución de llamada que el motor de depuración asociado envía eventos a.
+de Un objeto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que representa la función de devolución de llamada a la que el motor de depuración asociado envía eventos.
 
 `dwReason`\
-[en] Valor de la [enumeración ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeración que describe el motivo de la operación de asociación.
+de Un valor de la enumeración [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) que describe la razón de la operación de adjuntar.
 
 `pSession`\
-[en] Valor que identifica de forma única la sesión que se asocia al programa.
+de Valor que identifica de forma única la sesión que se está asociando al programa.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve un código de error. Este método `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` debe devolver si el programa ya está asociado.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error. Este método debe devolver `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` si el programa ya está asociado.
 
 ## <a name="remarks"></a>Observaciones
- El puerto que contiene el programa `pSession` puede utilizar el valor para determinar qué sesión está intentando adjuntar al programa. Por ejemplo, si un puerto permite que solo una sesión de depuración se asocie a un proceso a la vez, el puerto puede determinar si la misma sesión ya está asociada a otros programas en el proceso.
+ El puerto que contiene el programa puede utilizar el valor de `pSession` para determinar qué sesión está intentando adjuntar al programa. Por ejemplo, si un puerto solo permite una sesión de depuración para asociar a un proceso a la vez, el puerto puede determinar si la misma sesión ya está adjunta a otros programas del proceso.
 
 > [!NOTE]
-> La interfaz `pSession` que se pasa debe tratarse solo como una cookie, un valor que identifica de forma única el administrador de depuración de sesión que se adjunta a este programa; ninguno de los métodos de la interfaz suministrada son funcionales.
+> La interfaz que se pasa `pSession` se trata únicamente como una cookie, un valor que identifica de forma única el administrador de depuración de la sesión que se adjunta a este programa; ninguno de los métodos de la interfaz proporcionada es funcional.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

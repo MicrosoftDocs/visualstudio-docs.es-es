@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Documentos de Microsoft
+title: 'IDebugCodeContext2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0df2a08dd7906b9c4c0935d90150037a3bc0275a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190941"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtiene la información de idioma para este contexto de código.  
+Obtiene la información de lenguaje para este contexto de código.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,16 +42,16 @@ int GetLanguageInfo( 
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrLanguage`  
- [in, out] Devuelve una cadena que contiene el nombre del lenguaje, como "C++."  
+ [in, out] Devuelve una cadena que contiene el nombre del lenguaje, como "C++".  
   
  `pguidLanguage`  
- [in, out] Devuelve el GUID para el idioma del contexto del código, por ejemplo, `guidCPPLang`.  
+ [in, out] Devuelve el GUID del lenguaje del contexto de código, por ejemplo, `guidCPPLang` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- Al menos uno de los parámetros debe devolver un valor distinto de null.  
+## <a name="remarks"></a>Observaciones  
+ Al menos uno de los parámetros debe devolver un valor distinto de NULL.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

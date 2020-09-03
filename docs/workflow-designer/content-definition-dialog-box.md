@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19e2341d458c98f01d3b58d6f77887ac1cfe6746
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876208"
 ---
 # <a name="content-definition-dialog-box"></a>Definición de contenido (cuadro de diálogo)
@@ -23,7 +23,7 @@ El cuadro de diálogo **definición de contenido** se usa en diseñador de flujo
 
 En la tabla siguiente se describen los elementos de la interfaz de usuario (IU) del cuadro de diálogo **inicializar correlación** :
 
-|Elemento de UI|Descripción|
+|Elemento de la interfaz de usuario|Descripción|
 |-|-----------------|
 |**Mensaje**|Especifica el contenido del mensaje con el cuadro de texto expresión de **datos del mensaje** y el tipo mediante el cuadro de lista desplegable **tipo de mensaje** . De forma predeterminada, la **definición de contenido** utiliza <xref:System.ServiceModel.Activities.ReceiveMessageContent> , que espera un <xref:System.ServiceModel.Channels.Message> tipo de contrato de mensaje o dentro de la definición del servicio de flujo de trabajo.|
 |**Parámetros**|Haga clic en el botón de radio **parámetros** para usar <xref:System.ServiceModel.Activities.ReceiveParametersContent> , que espera un contrato de datos. Utilice la cuadrícula de datos para establecer una colección genérica de par clave-valor <xref:System.Activities.OutArgument> cuyos valores se asignen a parámetros de variables en el flujo de trabajo actual.|
@@ -34,6 +34,6 @@ El diseñador de actividades **Receive** se puede arrastrar desde el **cuadro de
 
 El contenido se puede especificar en la sección de **mensajes** de una <xref:System.ServiceModel.Activities.ReceiveMessageContent> actividad o en la sección de **parámetros** de una <xref:System.ServiceModel.Activities.ReceiveParametersContent> actividad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ayuda de la interfaz de usuario del Diseñador de flujo de trabajo](browse-and-select-a-dotnet-type-dialog-box.md)

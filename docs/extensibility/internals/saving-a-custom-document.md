@@ -41,6 +41,6 @@ El entorno controla los comandos **Guardar**, **Guardar como**y **guardar todo**
     > [!NOTE]
     > Si implementa su propia persistencia, asegúrese de llamar al <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> método para ahorrar tiempo. Este método realiza una comprobación para asegurarse de que es seguro guardar el archivo (por ejemplo, el archivo no es de solo lectura).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)

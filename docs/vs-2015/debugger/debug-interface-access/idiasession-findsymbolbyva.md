@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc2e34b2e75bf81a47a02c4f6048f8be8a64fcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190796"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un tipo de símbolo especificado que contiene, o más cercana a una dirección virtual especificada.  
+Recupera un tipo de símbolo especificado que contiene o está más cerca de una dirección virtual especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,16 +37,16 @@ HRESULT findSymbolByVA ( 
   
 #### <a name="parameters"></a>Parámetros  
  `va`  
- [in] Especifica la dirección virtual.  
+ de Especifica la dirección virtual.  
   
  `symtag`  
- [in] Tipo de símbolo que se encuentra. Los valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración.  
+ de Tipo de símbolo que se va a buscar. Los valores se toman de la enumeración de [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) .  
   
  `ppSymbol`  
- [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recupera el objeto que representa el símbolo.  
+ enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo recuperado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -55,7 +55,7 @@ IDiaSymbol* pFunc;
 pSession->findSymbolByVA( va, SymTagFunction, &pFunc );  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

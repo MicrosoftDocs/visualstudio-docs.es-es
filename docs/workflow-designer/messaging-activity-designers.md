@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876195"
 ---
 # <a name="messaging-activity-designers"></a>Diseñadores de actividades de mensajería
@@ -47,7 +47,7 @@ Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
 - [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 
-- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+- [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
 - [Transacción](../workflow-designer/transaction-activity-designers.md)
 
