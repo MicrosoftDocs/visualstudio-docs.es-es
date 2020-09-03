@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74567005"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Tutorial: crear la primera personalización de nivel de documento para Word
@@ -43,7 +43,7 @@ ms.locfileid: "74567005"
 
 ## <a name="prerequisites"></a>Requisitos previos
 
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "74567005"
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
 ::: moniker range="vs-2017"
 3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.
 
@@ -74,7 +74,7 @@ ms.locfileid: "74567005"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Haga clic en **Siguiente**.
+4. Haga clic en **Next**.
 
 5. Escriba **FirstWorkbookCustomization** en el cuadro **nombre** del cuadro de diálogo **configurar el nuevo proyecto** y haga clic en **crear**.
 
@@ -128,7 +128,7 @@ ms.locfileid: "74567005"
     > [!NOTE]
     > Este código usa el valor de índice 1 para tener acceso al primer párrafo de la propiedad <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A>. Aunque Visual Basic y Visual C# usan matrices basadas en 0, el límite de matriz inferior de la mayoría de las colecciones del modelo de objetos de Word es 1. Para obtener más información, vea [escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md).
 
-## <a name="test-the-project"></a>Probar el proyecto
+## <a name="test-the-project"></a>Prueba del proyecto
 
 ### <a name="to-test-your-document"></a>Para probar el documento
 
@@ -170,10 +170,10 @@ ms.locfileid: "74567005"
 
 - Implementar personalizaciones de nivel de documento para Word: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Información general sobre &#40;el desarrollo de soluciones de Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Soluciones de Word](../vsto/word-solutions.md)
+- [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [soluciones para Word](../vsto/word-solutions.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)

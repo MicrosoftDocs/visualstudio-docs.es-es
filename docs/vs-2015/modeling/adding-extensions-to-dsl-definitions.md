@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919059"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Agregar extensiones a definiciones DSL
@@ -37,5 +37,5 @@ La extensión DSL Definition le permite crear un paquete de extensiones para un 
 
   Para obtener código de ejemplo y más información acerca de esta característica, vea el sitio web del [SDK de visualización y modelado de Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48148) .
 
-## <a name="see-also"></a>Vea también
- [SDK de visualización y modelado de Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48148)
+## <a name="see-also"></a>Consulte también
+ [SDK de Visual Studio de visualización y modelado](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

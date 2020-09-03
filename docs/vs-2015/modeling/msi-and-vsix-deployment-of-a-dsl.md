@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: be9d3d44bfceaae1f2912086c3d20c90ce1e094b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916544"
 ---
 # <a name="vsix-deployment-of-a-dsl"></a>Implementación de VSIX de un DSL
@@ -21,8 +21,8 @@ ms.locfileid: "75916544"
 
 Puede instalar un lenguaje específico de dominio en su propio equipo o en otros equipos. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ya debe estar instalado en el equipo de destino.
 
-## <a name="Installing"></a>Instalación y desinstalación de DSL mediante el uso de VSX
- Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pero el archivo no se puede abrir desde el explorador de Windows.
+## <a name="installing-and-uninstalling-a-dsl-by-using-the-vsx"></a><a name="Installing"></a> Instalación y desinstalación de DSL mediante el uso de VSX
+ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , pero el archivo no se puede abrir desde el explorador de Windows.
 
 #### <a name="to-install-a-dsl-by-using-the-vsix"></a>Para instalar un DSL mediante el uso de VSIX
 
@@ -30,7 +30,7 @@ Puede instalar un lenguaje específico de dominio en su propio equipo o en otros
 
     1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto **DslPackage** y, a continuación, haga clic en **Abrir carpeta en el explorador de Windows**.
 
-    2. Busque el archivo **\\\*\\** _YourProject_ **. DslPackage. vsix**
+    2. Busque el archivo **bin \\ \* \\ **_YourProject_**. DslPackage. vsix**
 
 2. Copie el archivo **. vsix** en el equipo de destino en el que desea instalar el DSL. Puede tratarse de su propio equipo o de otro.
 

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917347"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Agregar referencias usando NuGet en lugar de un SDK de extensión
@@ -26,7 +26,7 @@ Puede proporcionar un paquete para el consumo en proyectos de Visual Studio medi
 
 - NuGet es un sistema de administración de paquetes de código abierto que simplifica el proceso de incorporar bibliotecas a una solución de proyecto. Para obtener más información, vea [NuGet Overview](/nuget/what-is-nuget) (Introducción a NuGet).
 
-- Un SDK es una colección de archivos que Visual Studio trata como un único elemento de referencia. En el cuadro de diálogo **Administrador de referencias** se muestran todos los SDK que son pertinentes para el proyecto que está abierto cuando se muestra el cuadro de diálogo. Cuando se agrega un SDK a un proyecto, puede tener acceso a todo el contenido de ese SDK a través de IntelliSense, el **Cuadro de herramientas**, los diseñadores, el **Examinador de objetos**, MSBuild, la implementación, la depuración y el empaquetado. Para obtener más información sobre los SDK, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
+- Un SDK es una colección de archivos que Visual Studio trata como un único elemento de referencia. En el cuadro de diálogo **Administrador de referencias** se muestran todos los SDK que son pertinentes para el proyecto que está abierto cuando se muestra ese cuadro de diálogo. Cuando se agrega un SDK a un proyecto, puede tener acceso a todo el contenido de ese SDK a través de IntelliSense, el **Cuadro de herramientas**, los diseñadores, el **Examinador de objetos**, MSBuild, la implementación, la depuración y el empaquetado. Para obtener más información sobre los SDK, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
 
 ## <a name="which-mechanism-should-i-use"></a>¿Qué mecanismo debo usar?
  La tabla siguiente le ayuda a comparar las características de referencia de un SDK con las características de referencia de NuGet.
@@ -70,5 +70,5 @@ Puede proporcionar un paquete para el consumo en proyectos de Visual Studio medi
 |El mecanismo está disponible para todas las ediciones de Visual Studio.|Y|El SDK admite todas las ediciones de Visual Studio, desde Visual Studio Express hasta [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|Y|NuGet admite todas las ediciones de Visual Studio, desde Express hasta [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|
 |El mecanismo está disponible para todos los tipos de proyecto.|N|El SDK admite las aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] a partir de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|N|Puede revisar una lista de los proyectos permitidos.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)

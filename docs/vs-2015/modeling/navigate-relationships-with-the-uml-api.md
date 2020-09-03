@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918259"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navegar por las relaciones con la API de UML
@@ -92,7 +92,7 @@ IEnumerable<IBehavioredClassifier> GetRealizingClassifiers
 
 ```
 
-### <a name="dependency"></a>Dependency
+### <a name="dependency"></a>Dependencia
 
 ```
 /// Returns the elements depending on this element
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Enumeración de relaciones
- Todas las propiedades del modelo UML que devuelven varios valores se ajustan a la interfaz IEnumerable < >. Esto significa que puede usar [expresiones de consulta LINQ](/dotnet/csharp/linq/index) y los métodos de extensión definidos en el espacio de nombres **System. Linq** .
+ Todas las propiedades del modelo UML que devuelven varios valores se ajustan a la interfaz IEnumerable<> . Esto significa que puede usar [expresiones de consulta LINQ](/dotnet/csharp/linq/index) y los métodos de extensión definidos en el espacio de nombres **System. Linq** .
 
  Por ejemplo:
 
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegar por el modelo UML](../modeling/navigate-the-uml-model.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76111438"
 ---
 # <a name="flowdecision-activity-designer"></a>Diseñador de actividades FlowDecision
@@ -27,19 +27,19 @@ Utilice el nodo <xref:System.Activities.Statements.FlowDecision> cuando se pueda
 
 ### <a name="using-the-flowdecision-designer"></a>Utilizar el diseñador FlowDecision
 
-El diseñador **FlowDecision** se puede encontrar en la categoría **Diagrama de flujo** del cuadro de **herramientas**, al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** en el diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl**+**Alt**+**X**.
+El diseñador **FlowDecision** se puede encontrar en la categoría **Diagrama de flujo** del cuadro de **herramientas**, al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** en el diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** + **Alt** + **X**.
 
-El diseñador **FlowDecision** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo dentro de un diseñador de actividades **Flowchart** . Esto crea una <xref:System.Activities.Statements.FlowDecision> la **decisión** con etiqueta dentro de la actividad <xref:System.Activities.Statements.Flowchart>. Se muestra el mouse sobre el diseñador y los manipuladores del cuadrado **verdadero** y **falso** de las dos ramas.
+El diseñador **FlowDecision** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo dentro de un diseñador de actividades **Flowchart** . Esto crea una <xref:System.Activities.Statements.FlowDecision> **decisión** etiquetada dentro de la <xref:System.Activities.Statements.Flowchart> actividad. Se muestra el mouse sobre el diseñador y los manipuladores del cuadrado **verdadero** y **falso** de las dos ramas.
 
 Después de arrastrar el diseñador de **FlowDecision** y otros diseñadores al **Diagrama de flujo**, los nodos se pueden vincular entre sí para especificar el orden de ejecución. Para crear un vínculo entre un nodo de origen (incluidas las bifurcaciones **true** y **false** de **FlowDecision**) y un nodo de destino, el mouse sobre el diseñador del nodo de origen y los identificadores cuadrados aparecen en cada lado del mismo. Haga clic en uno de los identificadores cuadrados y arrástrelo manteniendo presionado el botón del mouse hasta uno de los identificadores que aparecen de forma similar en torno al nodo de destino cuando desplaza el mouse sobre el mismo. Suelte el botón del mouse y se creará un vínculo entre ambos nodos que quedará representado como una flecha desde el diseñador de origen hasta el diseñador de destino.
 
-La expresión que indica el <xref:System.Activities.Statements.FlowDecision.Condition%2A> se puede escribir en el cuadro **condición** de la ventana **propiedades** si se hace clic en el texto de la sugerencia "Escriba una expresión de VB".
+La expresión que indica que <xref:System.Activities.Statements.FlowDecision.Condition%2A> se puede escribir en el cuadro **condición** de la ventana **propiedades** ; para ello, haga clic en el texto de la sugerencia "Escriba una expresión de VB".
 
 ### <a name="the-flowdecision-properties"></a>Las propiedades FlowDecision
 
 En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.FlowDecision> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en la cuadrícula de propiedades o en la superficie del diseñador.
 
-|Nombre de la propiedad|Requerido|Usage|
+|Nombre de propiedad|Obligatorio|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Verdadero|La condición que determina la ruta de acceso que va a tomar el control de flujo.|
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|Falso|La ruta de acceso que toma el control de flujo si se satisface <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|

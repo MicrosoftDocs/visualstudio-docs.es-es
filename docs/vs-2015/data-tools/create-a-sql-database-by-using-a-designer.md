@@ -1,4 +1,4 @@
-﻿---
+---
 title: Crear una base de datos SQL mediante un diseñador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -26,10 +26,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 33b97050f04fd23a9fa3b6c3c641faa5dfe4802f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651058"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Creación de una base de datos SQL mediante un diseñador
@@ -47,24 +47,24 @@ Puede explorar tareas básicas, como agregar tablas y definir columnas, utilizan
 
 - [Rellenar las tablas con datos](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para completar este tutorial, asegúrese de que ha instalado SQL Server Data Tools. En el menú **Ver** , debería ver **Explorador de objetos de SQL Server**. Si no está allí, vaya a **Agregar o quitar programas**, haga clic **en Visual Studio 2015**, seleccione **cambiar**y active la casilla situada junto a **SQL Server Data Tools**.
 
-## <a name="BKMK_CreateNewSQLDB"></a>Crear un proyecto y un archivo de base de datos local
+## <a name="create-a-project-and-a-local-database-file"></a><a name="BKMK_CreateNewSQLDB"></a> Crear un proyecto y un archivo de base de datos local
 
 #### <a name="to-create-a-project-and-a-database-file"></a>Para crear un proyecto y un archivo de base de datos
 
-1. Cree un proyecto de Windows Forms denominado `SampleDatabaseWalkthrough`.
+1. Cree un proyecto de Windows Forms denominado `SampleDatabaseWalkthrough` .
 
-2. En la barra de menús, seleccione **proyecto**  > **Agregar nuevo elemento**.
+2. En la barra de menús, seleccione **proyecto**  >  **Agregar nuevo elemento**.
 
 3. En la lista de plantillas de elementos, desplácese hacia abajo y seleccione **base de datos basada en servicio**.
 
-    ![Cuadro de diálogo plantillas de elementos](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+    ![Cuadro de diálogo Plantillas de elemento](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
 
 4. Asigne un nombre a la base de datos **SampleDatabase**y seleccione el botón **Agregar** .
 
-5. Si la **ventana orígenes de datos** no está abierta, ábrala seleccionando las teclas Mayús + Alt + D o, en la barra de menús, seleccionando **Ver**  > **otras ventanas**  > **orígenes de datos**.
+5. Si la ventana **orígenes de datos** no está abierta, ábrala seleccionando las teclas Mayús + Alt + D o, en la barra de menús, seleccionando **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
 
 6. En la ventana **orígenes de datos** , seleccione el vínculo **Agregar nuevo origen de datos** .
 
@@ -72,11 +72,11 @@ Puede explorar tareas básicas, como agregar tablas y definir columnas, utilizan
 
    Abra la ventana de propiedades de la base de datos para ver la cadena de conexión y la ubicación del archivo .mdf principal. Verá que el archivo de base de datos se encuentra en la carpeta del proyecto.
 
-- En Visual Studio, seleccione **ver**  > **Explorador de objetos de SQL Server** si la ventana no está abierta todavía. Abra la ventana Propiedades. para ello, expanda el nodo **conexiones de datos** , abra el menú contextual de SampleDatabase. MDF y, a continuación, seleccione **propiedades**.
+- En Visual Studio, seleccione **Ver**  >  **Explorador de objetos de SQL Server** si la ventana no está abierta todavía. Abra la ventana Propiedades. para ello, expanda el nodo **conexiones de datos** , abra el menú contextual de SampleDatabase. MDF y, a continuación, seleccione **propiedades**.
 
-- Como alternativa, puede seleccionar **ver**  > **Explorador de servidores**, si la ventana no está abierta todavía. Expanda el nodo **conexiones de datos** para abrir la ventana Propiedades. Abra el menú contextual de SampleDatabase. MDF y, a continuación, seleccione **propiedades**.
+- Como alternativa, puede seleccionar **Ver**  >  **Explorador de servidores**si la ventana no está abierta. Expanda el nodo **conexiones de datos** para abrir la ventana Propiedades. Abra el menú contextual de SampleDatabase. MDF y, a continuación, seleccione **propiedades**.
 
-## <a name="BKMK_CreateNewTbls"></a>Crear tablas, columnas, claves principales y claves externas
+## <a name="create-tables-columns-primary-keys-and-foreign-keys"></a><a name="BKMK_CreateNewTbls"></a> Crear tablas, columnas, claves principales y claves externas
  En esta sección, creará un par de tablas, una clave principal en cada tabla y algunas filas de datos de ejemplo. En el siguiente tutorial, obtendrá una idea de cómo puede aparecer esa información en una aplicación. También creará una clave externa para especificar cuántos registros de una tabla pueden corresponder a registros de la otra tabla.
 
 #### <a name="to-create-the-customers-table"></a>Para crear la tabla Customers
@@ -89,14 +89,14 @@ Puede explorar tareas básicas, como agregar tablas y definir columnas, utilizan
 
 3. En la cuadrícula, agregue una fila para cada una de las entradas siguientes:
 
-    |Nombre de columna|Tipo de datos|Permitir valores NULL|
+    |Nombre de la columna|Tipo de datos|Permitir valores NULL|
     |-----------------|---------------|-----------------|
     |`CustomerID`|`nchar(5)`|False (desactivada)|
     |`CompanyName`|`nvarchar(50)`|False (desactivada)|
     |`ContactName`|`nvarchar (50)`|True (seleccionada)|
     |`Phone`|`nvarchar (24)`|True (seleccionada)|
 
-4. Abra el menú contextual de la fila de `CustomerID` y, a continuación, seleccione **establecer clave principal**.
+4. Abra el menú contextual de la `CustomerID` fila y, a continuación, seleccione **establecer clave principal**.
 
 5. Abra el menú contextual de la fila predeterminada y, a continuación, seleccione **eliminar**.
 
@@ -106,7 +106,7 @@ Puede explorar tareas básicas, como agregar tablas y definir columnas, utilizan
     CREATE TABLE [dbo].[Customers]
     ```
 
-     Verá algo parecido a esto:
+     Deberíamos ver algo parecido a lo siguiente:
 
      ![Diseñador de tablas](../data-tools/media/raddata-table-designer.png "Diseñador de tablas raddata")
 
@@ -120,7 +120,7 @@ Puede explorar tareas básicas, como agregar tablas y definir columnas, utilizan
 
 1. Agregue otra tabla y, después, agregue una fila para cada entrada de la tabla siguiente:
 
-    |Nombre de columna|Tipo de datos|Permitir valores NULL|
+    |Nombre de la columna|Tipo de datos|Permitir valores NULL|
     |-----------------|---------------|-----------------|
     |`OrderID`|`int`|False (desactivada)|
     |`CustomerID`|`nchar(5)`|False (desactivada)|
@@ -145,9 +145,9 @@ Puede explorar tareas básicas, como agregar tablas y definir columnas, utilizan
 
 1. En el panel de contexto de la derecha de la cuadrícula, abra el menú contextual de **claves externas**y, a continuación, seleccione **Agregar nueva clave externa**, como se muestra en la siguiente ilustración.
 
-     ![Agregar una clave externa en Diseñador de tablas](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Agregar una clave externa en el diseñador de tablas](../data-tools/media/foreignkey.png "ForeignKey")
 
-2. En el cuadro de texto que aparece, reemplace **ToTable** por `Customers`.
+2. En el cuadro de texto que aparece, reemplace **ToTable** por `Customers` .
 
 3. En el panel T-SQL, actualice la última línea para que coincida con el ejemplo siguiente:
 
@@ -161,7 +161,7 @@ Puede explorar tareas básicas, como agregar tablas y definir columnas, utilizan
 
      Los cambios realizados se guardarán en el archivo de base de datos local.
 
-## <a name="BKMK_Populating"></a>Rellenar las tablas con datos
+## <a name="populate-the-tables-with-data"></a><a name="BKMK_Populating"></a> Rellenar las tablas con datos
 
 #### <a name="to-populate-the-tables-with-data"></a>Para rellenar las tablas con datos
 
@@ -182,9 +182,9 @@ Puede explorar tareas básicas, como agregar tablas y definir columnas, utilizan
     > [!IMPORTANT]
     > Asegúrese de que todos los identificadores y cantidades de pedidos sean números enteros y que cada identificador de cliente coincida con el valor que especificó en la columna de la tabla Customers.
 
-7. En la barra de menús, seleccione **archivo**  > **guardar todo**.
+7. En la barra de menús, seleccione **archivo**  >  **guardar todo**.
 
-8. En la barra de menús, seleccione **archivo**  > **cerrar solución**.
+8. En la barra de menús, seleccione **archivo**  >  **cerrar solución**.
 
     > [!NOTE]
     > Como procedimiento recomendado, puede hacer una copia de seguridad del archivo de base de datos que acaba de crear, copiándolo y luego pegando la copia en otra ubicación o dando a la copia un nombre diferente.

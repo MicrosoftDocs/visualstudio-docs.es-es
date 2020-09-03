@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917785"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
@@ -29,16 +29,16 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
 
 1. Inicie sesión en Visual Studio 2015 con una cuenta Microsoft o una cuenta profesional. Debería ver su nombre de usuario reflejado en la esquina superior derecha de la ventana, tal como se muestra:
 
-     ![Usuario que ha iniciado sesión en Currentlly](../ide/media/vs2015-username.png "VS2015_UserName")
+     ![Usuario actualmente registrado](../ide/media/vs2015-username.png "VS2015_UserName")
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Obtener acceso a su cuenta de Azure en el Explorador de servidores
  Presione **Ctrl + Alt + S** para abrir **Explorador de servidores**. Haga clic en el icono de Azure y, cuando se expanda, debería ver los recursos disponibles en la cuenta de Azure que está asociada con el identificador que usó para iniciar sesión en Visual Studio 2015. Debería tener este aspecto, solo que son sus recursos los que se verían y no los del Sr. Guido:
 
- ![Explorador de servidores que muestra el nodo de Azure Tools expandido](../ide/media/vs2015-serverexplorer.png "VS2015_ServerExplorer")
+ ![El Explorador de servidores mostrando el nodo de Azure Tools expandido](../ide/media/vs2015-serverexplorer.png "VS2015_ServerExplorer")
 
- La primera vez que use Visual Studio en cualquier dispositivo específico, el cuadro de diálogo solo mostrará las suscripciones registradas en el Id. con el que ha iniciado sesión en el IDE. Puede acceder a los recursos de cualquiera de las demás cuentas directamente desde el **Explorador de servidores** : haga clic con el botón secundario en el nodo de Azure, elija **Administrar y filtrar suscripciones** y, luego, agregue las cuentas desde el control de selector de cuenta. Si lo desea, después puede elegir otra cuenta haciendo clic en la flecha hacia abajo y eligiendo en la lista de cuentas. Después de elegir la cuenta, puede indicar qué suscripciones de esa cuenta desea mostrar en el Explorador de servidores.
+ La primera vez que use Visual Studio en cualquier dispositivo específico, el cuadro de diálogo solo mostrará las suscripciones registradas en el Id. con el que ha iniciado sesión en el IDE. Puede acceder a los recursos de cualquiera de las demás cuentas directamente desde el **Explorador de servidores**: haga clic con el botón secundario en el nodo de Azure, elija **Administrar y filtrar suscripciones** y, luego, agregue las cuentas desde el control de selector de cuenta. Si lo desea, después puede elegir otra cuenta haciendo clic en la flecha hacia abajo y eligiendo en la lista de cuentas. Después de elegir la cuenta, puede indicar qué suscripciones de esa cuenta desea mostrar en el Explorador de servidores.
 
- ![Cuadro de diálogo administrar suscripciones de Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
+ ![Administrar el cuadro de diálogo de las suscripciones de Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
 
  La próxima vez que abra el Explorador de servidores, se mostrarán los recursos de esas suscripciones.
 
@@ -49,12 +49,12 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
 2. Haga clic con el botón derecho en el nodo de proyecto en el Explorador de soluciones y seleccione **Agregar > Servicio conectado**. El asistente Agregar servicio conectado aparece y muestra la lista de los servicios de la cuenta de Azure que está asociada con su id. de inicio de sesión de Visual Studio. No tiene que iniciar sesión por separado en Azure. Sin embargo, deberá iniciar sesión en las otras cuentas la primera vez que intente acceder a sus recursos desde un equipo determinado.
 
     > [!WARNING]
-    > Si esta es la primera vez que va a crear una aplicación de la tienda en Visual Studio 2015 en un equipo específico, se le pedirá que habilite el dispositivo para el modo de desarrollo; para ello, vaya a **configuración &#124; . Actualizaciones y seguridad &#124; para los desarrolladores** del equipo. Para obtener más información, vea [Habilitar el dispositivo para el desarrollo](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
+    > Si esta es la primera vez que va a crear una aplicación de la tienda en Visual Studio 2015 en un equipo específico, se le pedirá que habilite el dispositivo para el modo de desarrollo yendo a **configuración &#124;. Actualizaciones y &#124; de seguridad para los desarrolladores** del equipo. Para obtener más información, vea [Habilitar el dispositivo para el desarrollo](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
 
-### <a name="access_azure"></a> Obtener acceso a Azure Active Directory en un proyecto web
- Azure AD ofrece compatibilidad para el inicio de sesión único de usuario final en las aplicaciones web ASP.NET MVC o autenticación AD en los servicios web de API. La autenticación de dominio es diferente de la autenticación de cuentas de usuario individuales; los usuarios que tienen acceso a su dominio de Active Directory pueden usar sus cuentas de Azure AD existentes para conectarse a sus aplicaciones web. Las aplicaciones de Office 365 también pueden utilizar la autenticación de dominio. Para ver esto en funcionamiento, cree una aplicación web (**Archivo > Nuevo proyecto > C# > Nube > Aplicación web ASP.NET**). En el cuadro de diálogo Nuevo proyecto ASP.NET, elija **Cambiar autenticación**. El Asistente para autenticación aparece y le permite elegir qué tipo de autenticación se utilizará en la aplicación.
+### <a name="access-azure-active-directory-in-a-web-project"></a><a name="access_azure"></a> Azure Active Directory de acceso en un proyecto web
+ Azure AD ofrece compatibilidad para el inicio de sesión único de usuario final en las aplicaciones web ASP.NET MVC o autenticación AD en los servicios web de API. La autenticación de dominio es diferente de la autenticación de cuentas de usuario individuales; los usuarios que tienen acceso a su dominio de Active Directory pueden usar sus cuentas de Azure AD existentes para conectarse a sus aplicaciones web. Las aplicaciones de Office 365 también pueden utilizar la autenticación de dominio. Para ver esto en funcionamiento, cree una aplicación web (**Archivo > Nuevo proyecto > C# > Nube > Aplicación web ASP.NET**). En el cuadro de diálogo nuevo proyecto ASP.NET, elija **cambiar autenticación**. El Asistente para autenticación aparece y le permite elegir qué tipo de autenticación se utilizará en la aplicación.
 
- ![Cuadro de diálogo de autenticación de cambio para ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
+ ![Cuadro de diálogo de autenticación de cambio de ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
  Para obtener más información sobre los diferentes tipos de autenticación en ASP.NET, consulte [Creating ASP.NET Web Projects in Visual Studio 2013](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (la información sobre autenticación sigue siendo pertinente para Visual Studio 2015).
 

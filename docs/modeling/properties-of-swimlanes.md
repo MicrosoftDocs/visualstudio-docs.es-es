@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115370"
 ---
 # <a name="properties-of-swimlanes"></a>Propiedades de las calles
@@ -23,33 +23,33 @@ Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas ver
 
  Las calles tienen las propiedades que se enumeran en la tabla siguiente.
 
-|La propiedad|Descripción|Predeterminado|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |Color de relleno del cuerpo|Color de relleno para el cuerpo de la calle.|Blanco|
 |Color de relleno del encabezado|Color de relleno para el encabezado de la calle.|Gris oscuro|
 |Color del separador|Color de la línea de separación.|LightGray|
-|Estilo de línea de separador|Estilo de la línea de separación (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`o `Custom`).|`Dash`|
-|Grosor del separador|Grosor de la línea de separación en pulgadas.|0.03125|
+|Estilo de línea de separador|Estilo de la línea del separador ( `Solid` , `Dash` , `Dot` , `DashDot` , `DashDotDot` o `Custom` ).|`Dash`|
+|Grosor del separador|Grosor de la línea de separación en pulgadas.|0,03125|
 |Color del texto|Color que se usa para los decoradores de texto que están asociados a esta calle.|Negro|
-|Modificador de acceso|Nivel de acceso de la clase (`public` o `internal`).|Public|
+|Modificador de acceso|Nivel de acceso de la clase ( `public` o `internal` ).|Público|
 |Atributos personalizados|Se usa para agregar atributos a la clase de código que se genera a partir de esta calle.|\<none>|
-|Genera Double derived|Si `True`, se generarán una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
-|Tiene un constructor personalizado|Si `True`, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
-|Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la calle (`none`, `abstract` o `sealed`).|ninguna|
+|Genera Double derived|Si `True` es, se generarán una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
+|Tiene un constructor personalizado|Si `True` es, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
+|Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la calle ( `none` , `abstract` o `sealed` ).|None|
 |Calle base|La clase base de esta calle.|(ninguno)|
-|Name|El nombre de esta calle.|Nombre actual|
+|Nombre|El nombre de esta calle.|Nombre actual|
 |Espacio de nombres|El espacio de nombres que está afiliado a esta calle.|Espacio de nombres actual|
-|Tipo de información sobre herramientas|Cómo se define la información sobre herramientas (`fixed`, `variable`o `none`). Si `fixed`, se utiliza el valor de la propiedad `Fixed Tooltip Text`. Si `variable`, la información sobre herramientas se define en código personalizado.|\<none>|
+|Tipo de información sobre herramientas|Cómo se define la información sobre herramientas ( `fixed` , `variable` o `none` ). Si `fixed` es, se usa el valor de la `Fixed Tooltip Text` propiedad; si es `variable` , la información sobre herramientas se define en código personalizado.|\<none>|
 |Notas|Notas informales asociadas a esta calle.|\<none>|
-|Alineación|Alineación horizontal o vertical.|Vertical|
+|Alignment|Alineación horizontal o vertical.|Vertical|
 |Alto inicial|Alto inicial de esta calle, en pulgadas. Solo se aplica a las calles horizontales.|0|
 |Ancho inicial|Ancho inicial de esta calle, en pulgadas. Solo se aplica a las calles verticales.|0|
-|Expone el color del texto|Si `True`, el usuario puede establecer el color de una calle en el diseñador generado. Para establecer esto, haga clic con el botón secundario en la forma calle y haga clic en **Agregar expuesto**.|Falso|
+|Expone el color del texto|Si es `True` , el usuario puede establecer el color de una calle en el diseñador generado. Para establecer esto, haga clic con el botón secundario en la forma calle y haga clic en **Agregar expuesto**.|Falso|
 |Descripción|Se usa para documentar el diseñador generado.|\<none>|
-|Display Name|Nombre que se mostrará en el diseñador generado para hacer referencia a esta clase calle.|\<none>|
+|Display Name (Nombre para mostrar)|Nombre que se mostrará en el diseñador generado para hacer referencia a esta clase calle.|\<none>|
 |Texto de información sobre herramientas corregido|Texto que se usa para una información sobre herramientas fija.|\<none>|
 |Help Keyword|Palabra clave que se usa para indizar la ayuda de F1 para esta calle.|\<none>|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

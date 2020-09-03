@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566980"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Tutorial: crear la primera personalización de nivel de documento para Excel
@@ -43,7 +43,7 @@ ms.locfileid: "74566980"
 
 ## <a name="prerequisites"></a>Requisitos previos
 
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "74566980"
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
 ::: moniker range="vs-2017"
 3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.
 
@@ -74,7 +74,7 @@ ms.locfileid: "74566980"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Haga clic en **Siguiente**.
+4. Haga clic en **Next**.
 
 5. Escriba **FirstWorkbookCustomization** en el cuadro **nombre** del cuadro de diálogo **configurar el nuevo proyecto** y haga clic en **crear**.
 
@@ -84,11 +84,11 @@ ms.locfileid: "74566980"
 
    - *FirstWorkbookCustomization*. xlsx: representa el libro de Excel en el proyecto. Contiene todas las hojas de cálculo y los gráficos.
 
-   - Hoja1 (archivo *. VB* para Visual Basic o archivo *. CS* para Visual C#): una hoja de cálculo que proporciona la superficie de diseño y el código para la primera hoja de cálculo del libro. Para obtener más información, vea [elemento host de hoja de cálculo](../vsto/worksheet-host-item.md).
+   - Hoja1 (archivo *. VB* para Visual Basic o archivo *. CS* para Visual C#): hoja de cálculo que proporciona la superficie de diseño y el código de la primera hoja de cálculo del libro. Para obtener más información, vea [elemento host de hoja de cálculo](../vsto/worksheet-host-item.md).
 
-   - Hoja2 (archivo *. VB* para Visual Basic o archivo *. CS* para Visual C#): una hoja de cálculo que proporciona la superficie de diseño y el código para la segunda hoja de cálculo del libro.
+   - Hoja2 (archivo *. VB* para Visual Basic o archivo *. CS* para Visual C#): hoja de cálculo que proporciona la superficie de diseño y el código para la segunda hoja de cálculo del libro.
 
-   - Sheet3 (archivo *. VB* para Visual Basic o archivo *. CS* para Visual C#): una hoja de cálculo que proporciona la superficie de diseño y el código para la tercera hoja de cálculo del libro.
+   - Sheet3 (archivo *. VB* para Visual Basic o archivo *. CS* para Visual C#): hoja de cálculo que proporciona la superficie de diseño y el código para la tercera hoja de cálculo del libro.
 
    - ThisWorkbook (archivo *. VB* para Visual Basic o archivo *. CS* para Visual C#): contiene la superficie de diseño y el código para las personalizaciones de nivel de libro. Para obtener más información, vea [Workbook host Item](../vsto/workbook-host-item.md).
 
@@ -140,7 +140,7 @@ ms.locfileid: "74566980"
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
 
-## <a name="test-the-project"></a>Probar el proyecto
+## <a name="test-the-project"></a>Prueba del proyecto
 
 ### <a name="to-test-your-workbook"></a>Para probar el libro
 
@@ -182,9 +182,9 @@ ms.locfileid: "74566980"
 
 - Implementar personalizaciones de nivel de documento para Excel: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Información general sobre &#40;el desarrollo de soluciones de Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluciones de Excel](../vsto/excel-solutions.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Información general del modelo de objetos de Excel](../vsto/excel-object-model-overview.md)

@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015673"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: extender un tipo de elemento de proyecto de SharePoint
@@ -40,7 +41,7 @@ ms.locfileid: "86015673"
 
 - Ediciones compatibles de Microsoft Windows, SharePoint y Visual Studio.
 
-- El parámetro de cadena de consulta [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. En este tutorial se usa la plantilla de **Proyecto VSIX** en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, vea [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. En este tutorial se usa la plantilla de **Proyecto VSIX** en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, vea [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.
 
@@ -76,7 +77,7 @@ ms.locfileid: "86015673"
 
 6. En el cuadro **nombre** , escriba **GenerateExternalDataLists**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **GenerateExternalDataLists** a **Explorador de soluciones**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **GenerateExternalDataLists** a **Explorador de soluciones**.
 
 7. Si el archivo source. Extension. vsixmanifest no se abre automáticamente, abra el menú contextual en el proyecto GenerateExternalDataLists y, a continuación, elija **abrir** .
 
@@ -94,7 +95,7 @@ ms.locfileid: "86015673"
 
 5. En el cuadro **nombre** , escriba **BdcProjectItemExtension**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **BdcProjectItemExtension** a la solución y abre el archivo de código predeterminado Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **BdcProjectItemExtension** a la solución y abre el archivo de código predeterminado Class1.
 
 6. Elimine el archivo de código Class1 del proyecto.
 

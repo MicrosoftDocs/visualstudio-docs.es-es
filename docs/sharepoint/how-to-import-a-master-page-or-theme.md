@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015300"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Cómo importar un tema o página maestra
-  Puede dar una apariencia coherente a las páginas del sitio de SharePoint creando y usando páginas maestras y temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]no proporciona plantillas para estos elementos, pero puede crearlos en SharePoint Designer y, a continuación, importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obtener más información, vea [bloque de creación: páginas e interfaz de usuario](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) en el sitio web de Microsoft.
+  Puede dar una apariencia coherente a las páginas del sitio de SharePoint creando y usando páginas maestras y temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no proporciona plantillas para estos elementos, pero puede crearlos en SharePoint Designer y, a continuación, importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obtener más información, vea [bloque de creación: páginas e interfaz de usuario](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) en el sitio web de Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Para importar un tema o página maestra
 

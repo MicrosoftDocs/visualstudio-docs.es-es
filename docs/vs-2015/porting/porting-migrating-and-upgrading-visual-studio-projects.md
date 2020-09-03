@@ -20,10 +20,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 3361b04900e549d037338abfba0911b232c9e1bd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919103"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Portar, migrar y actualizar proyectos de Visual Studio
@@ -39,14 +39,14 @@ Para Visual Basic, Visual Studio 2015 no presentó ningún cambio que impida 
 
 Si utiliza Visual Studio 2015 junto con Visual Studio 2013, Visual Studio 2012 o Visual Studio 2010 SP1, puede crear y modificar proyectos y archivos en cualquiera de estas versiones. Puede transferir proyectos y archivos entre las versiones siempre y cuando no agregue características que no se admitan en una o varias versiones.
 
-## <a name="project"></a> Proyectos
+## <a name="projects"></a><a name="project"></a> Proyecto
 
 En la lista siguiente se describe la compatibilidad en Visual Studio 2015 y Visual Studio 2013 para los proyectos que se crearon en Visual Studio 2012 o Visual Studio 2010 SP1. Use esta lista para ayudar a determinar si puede abrir un proyecto "tal cual" en Visual Studio 2015, Visual Studio 2013, Visual Studio 2012 o Visual Studio 2010 SP1, o si tiene que modificarlo para garantizar la compatibilidad.
 
 |Tipo de proyecto|Compatibilidad|
 |---------------------|-------------------|
 |Aplicaciones de la Plataforma universal de Windows|Para instalar las herramientas de las aplicaciones universales de Windows, en el programa de instalación de Visual Studio, seleccione **Personalizado** o **Modificar**; luego, seleccione **Herramientas de desarrollo de aplicaciones universales de Windows**.<br /><br /> El desarrollo de aplicaciones de la Plataforma universal de Windows (UWP) para Windows 10 solo se admite en Visual Studio 2015 en Windows 10 o en [!INCLUDE[win81](../includes/win81-md.md)].|
-|Aplicaciones de la Tienda Windows|El desarrollo de aplicaciones de la Tienda Windows, incluidas las aplicaciones universales destinadas a Windows 8.1 y Windows Phone 8.1, puede llevarse a cabo en [!INCLUDE[win81](../includes/win81-md.md)] y 10 de Windows. Los proyectos de [!INCLUDE[win8](../includes/win8-md.md)] existentes se pueden seguir atendiendo, pero no se pueden crear nuevos proyectos de [!INCLUDE[win8](../includes/win8-md.md)] . Los proyectos de [!INCLUDE[win81](../includes/win81-md.md)] pueden depender únicamente de determinados tipos de referencias. Para más información, vea [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md). **Nota:** los proyectos de [!INCLUDE[win81](../includes/win81-md.md)] creados con Visual Studio 2015 o Visual Studio 2013 no se pueden abrir en Visual Studio 2012. Esto se debe a que los proyectos de [!INCLUDE[win81](../includes/win81-md.md)] creados con Visual Studio 2015 y Visual Studio 2013 tienen esas versiones como destino, y Visual Studio 2012 solo admite proyectos de [!INCLUDE[win8](../includes/win8-md.md)] que tengan como destino [!INCLUDE[win8](../includes/win8-md.md)].|
+|Aplicaciones de la Tienda Windows|El desarrollo de aplicaciones de la Tienda Windows, incluidas las aplicaciones universales destinadas a Windows 8.1 y Windows Phone 8.1, puede llevarse a cabo en [!INCLUDE[win81](../includes/win81-md.md)] y 10 de Windows. Los proyectos de [!INCLUDE[win8](../includes/win8-md.md)] existentes se pueden seguir atendiendo, pero no se pueden crear nuevos proyectos de [!INCLUDE[win8](../includes/win8-md.md)] . Los proyectos de [!INCLUDE[win81](../includes/win81-md.md)] pueden depender únicamente de determinados tipos de referencias. Para más información, vea [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md). **Nota: los proyectos de **  [!INCLUDE[win81](../includes/win81-md.md)] creados con Visual Studio 2015 o Visual Studio 2013 no se pueden abrir en Visual Studio 2012. Esto se debe a que los proyectos de [!INCLUDE[win81](../includes/win81-md.md)] creados con Visual Studio 2015 y Visual Studio 2013 tienen esas versiones como destino, y Visual Studio 2012 solo admite proyectos de [!INCLUDE[win8](../includes/win8-md.md)] que tengan como destino [!INCLUDE[win8](../includes/win8-md.md)].|
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|Puede crear y utilizar estos proyectos en Visual Studio 2015 y Visual Studio 2013 después de instalar el paquete adecuado de compatibilidad con múltiples versiones. Estos proyectos no se admiten en Visual Studio 2010 SP1.|
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|Puede crear y abrir estos proyectos en Visual Studio 2015, Visual Studio 2013 y Visual Studio 2012, pero no en Visual Studio 2010 SP1.|
 |BizTalk|Los proyectos de BizTalk Server no son compatibles con Visual Studio 2015 o Visual Studio 2013.|
@@ -67,7 +67,7 @@ En la lista siguiente se describe la compatibilidad en Visual Studio 2015 y Vi
 |SharePoint 2007|Este proyecto no se puede abrir en Visual Studio 2013. Sin embargo, si actualiza manualmente el proyecto a SharePoint 2010, puede abrirlo en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1. Para obtener más información sobre cómo actualizar SharePoint 2007, vea [Migrar de SharePoint 2007 a SharePoint 2010 para el profesional de TI](https://channel9.msdn.com/Blogs/matthijs/Migrating-from-SharePoint-2007-to-SharePoint-2010-for-the-IT-Pro) y [Herramienta de migración del motor de búsqueda Enterprise Search de SharePoint para SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|Puede abrir el proyecto en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1.|
 |SketchFlow|Si permite que Visual Studio actualice el proyecto a WPF 4.5/Silverlight 5, puede abrirlo en Visual Studio 2012 y Visual Studio 2013.|
-|Base de datos [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|Puede abrir el proyecto en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1. Si tiene un archivo de base de datos (.mdf) creado en una versión anterior de SQL Server, debe actualizarlo a [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] antes de poder utilizarlo con SQL Server Express LocalDB, pero la base de datos ya no es compatible con versiones anteriores de SQL Server. Si no actualiza, puede seguir trabajando con la base de datos en Visual Studio 2013 mediante la instalación y el uso de [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] en el mismo equipo. Para obtener más información, vea [Actualizar archivos .mdf](../data-tools/upgrade-dot-mdf-files.md).|
+|Base de datos de [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|Puede abrir el proyecto en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1. Si tiene un archivo de base de datos (.mdf) creado en una versión anterior de SQL Server, debe actualizarlo a [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] antes de poder utilizarlo con SQL Server Express LocalDB, pero la base de datos ya no es compatible con versiones anteriores de SQL Server. Si no actualiza, puede seguir trabajando con la base de datos en Visual Studio 2013 mediante la instalación y el uso de [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] en el mismo equipo. Para obtener más información, vea [Actualizar archivos .mdf](../data-tools/upgrade-dot-mdf-files.md).|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|Si [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express está instalado en los equipos que ejecutan Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1, puede abrir el proyecto en las tres versiones.|
 |Proyecto de informe de SQL Server|Puede abrir el proyecto en Visual Studio 2013 y Visual Studio 2012. Solo para el modo local (es decir, cuando no esté conectado a SQL Server), no obtendrá la experiencia en tiempo de diseño para los controles asociados al visor de [!INCLUDE[vs2010](../includes/vs2010-md.md)], pero el proyecto funcionará correctamente en tiempo de ejecución. **PRECAUCIÓN:**  Si agrega una característica específica a Visual Studio 2013, el esquema del informe se actualizará automáticamente y ya no podrá abrir el proyecto en Visual Studio 2012.|
 |Pruebas unitarias|Puede usar [!INCLUDE[TCMext](../includes/tcmext-md.md)] en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1 para abrir pruebas creadas en cualquiera de estas versiones.|
@@ -77,7 +77,7 @@ En la lista siguiente se describe la compatibilidad en Visual Studio 2015 y Vi
 |Visual Studio 2010 Visual Database Tools|Puede abrir este proyecto en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1.|
 |Visual Studio Lab Management|Puede usar [!INCLUDE[TCMext](../includes/tcmext-md.md)], Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1 para abrir entornos creados en cualquiera de estas versiones. Sin embargo, la versión de Microsoft Test Manager debe coincidir con la versión de Team Foundation Server para poder crear entornos.|
 |Macro de Visual Studio|Este proyecto no se puede abrir en Visual Studio 2013 porque no admite el tipo de proyecto.|
-|Visual Studio SDK/VSIX|Después de actualizar un proyecto del SDK de Visual Studio a Visual Studio 2013, no se puede abrir en Visual Studio 2012. Para obtener más información, vea [Cómo: migrar proyectos de extensibilidad a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
+|Visual Studio SDK/VSIX|Después de actualizar un proyecto del SDK de Visual Studio a Visual Studio 2013, no se puede abrir en Visual Studio 2012. Para obtener más información, consulte la página [Migrar proyectos de extensibilidad de Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
 |Microsoft Azure Tools para Visual Studio|Si usa Microsoft Azure Tools para la versión 2.1 de Visual Studio, puede abrir el proyecto en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1. En el caso de los proyectos que tienen como destino versiones anteriores, si permite que Visual Studio actualice el proyecto a la versión 2.1, puede abrirlo en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1.|
 |Windows Communication Foundation, Windows Presentation Foundation|Puede abrir este proyecto en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1.|
 |Windows Mobile|Este proyecto no se puede abrir en Visual Studio 2013 porque no admite el tipo de proyecto.|
@@ -92,7 +92,7 @@ En la lista siguiente se describe la compatibilidad en Visual Studio 2015 y Vi
 
 - Si intenta abrir un proyecto que no es compatible con Visual Studio 2015 o Visual Studio 2013 y para el que no está instalada la versión asociada de Visual Studio, puede aparecer un mensaje que indica que el tipo de proyecto no es compatible y el tipo de proyecto podría aparecer en el cuadro de diálogo **Revisar cambios de proyecto y solución** en **Proyectos no admitidos**. Para resolver este problema, abra la página Programas y características del **Panel de control**de Windows, seleccione **Visual Studio**y elija **Cambiar**, **Reparar**. Después puede instalar la versión que falta.
 
-- Si intenta abrir un proyecto para una aplicación de escritorio en [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], se produce un error y se muestra uno de estos mensajes: "Esta edición de Visual Studio solo admite aplicaciones [!INCLUDE[win81](../includes/win81-md.md)]" o "Este proyecto no es compatible con la edición actual de Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] está restringido al desarrollo, prueba e implementación de aplicaciones de la Tienda Windows diseñadas para Windows 8.1. Para abrir un proyecto de aplicación de escritorio, debe usar una edición de Visual Studio que admita ese tipo de proyecto.
+- Si intenta abrir un proyecto para una aplicación de escritorio en [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], se produce un error y se muestra uno de estos mensajes: "Esta edición de Visual Studio solo admite aplicaciones de [!INCLUDE[win81](../includes/win81-md.md)] " o "Este proyecto no es compatible con la edición actual de Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] está restringido al desarrollo, prueba e implementación de aplicaciones de la Tienda Windows diseñadas para Windows 8.1. Para abrir un proyecto de aplicación de escritorio, debe usar una edición de Visual Studio que admita ese tipo de proyecto.
 
    Para obtener más información sobre las ediciones de Visual Studio, vea [Productos de Microsoft Visual Studio](https://visualstudio.microsoft.com/products/).
 
@@ -104,7 +104,7 @@ En la lista siguiente se describe la compatibilidad en Visual Studio 2015 y Vi
 
   Para obtener información adicional sobre la solución de problemas, vea el artículo de KB sobre [Compatibilidad de Visual Studio 2013](https://support.microsoft.com/help/2863286/roundtrip-issues-for-visual-studio-2012-and-visual-studio-2013-preview) .
 
-## <a name="file"></a> Archivos
+## <a name="files"></a><a name="file"></a> Ficheros
 
 La lista siguiente identifica si Visual Studio 2013 admite cada tipo de archivo, si puede abrir el archivo en Visual Studio 2012 y Visual Studio 2010 SP1 y si tiene que modificarlo para garantizar la compatibilidad.
 
@@ -125,7 +125,7 @@ La lista siguiente identifica si Visual Studio 2013 admite cada tipo de archiv
 |Archivos de registro de IntelliTrace de [!INCLUDE[vs2010](../includes/vs2010-md.md)]|Puede abrir estos archivos en Visual Studio 2012, Visual Studio 2013 y Visual Studio 2010 SP1.|
 |Archivos del Analizador de memoria de JavaScript (.diagsession)|Los archivos creados por versiones anteriores de Visual Studio se pueden ver en Visual Studio 2013. Sin embargo, en función de la información recopilada, es posible que los archivos creados en Visual Studio 2013 no se abran en Visual Studio 2012 o Visual Studio 2010 SP1.|
 
-## <a name="integration"></a> Activos de integración
+## <a name="integration-assets"></a><a name="integration"></a> Activos de integración
 
 Puede encontrar problemas de compatibilidad si usa clientes y servidores de distintas versiones de Visual Studio Team Foundation Server.
 

@@ -10,10 +10,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: fffa4cec6a2bd7a340b90776ac20dc486f28045b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173579"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
@@ -51,7 +51,7 @@ Los C++ Core Guidelines son un conjunto portátil de directrices, reglas y proce
   
    ![Página de propiedades de la configuración de extensiones de análisis de código](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Para habilitar o deshabilitar los conjuntos de reglas de C++ Core Check, abra el cuadro de diálogo **páginas de propiedades** del proyecto. En **propiedades de configuración**, expanda **análisis de código**, **extensiones**. En el control desplegable situado junto a **habilitar C++ Core check (lanzamiento)** o **Habilitar C++ Core check (experimental)**, elija **sí** o **no**. Elija **Aceptar** o **aplicar** para guardar los cambios.  
+   Para habilitar o deshabilitar los conjuntos de reglas de C++ Core Check, abra el cuadro de diálogo **páginas de propiedades** del proyecto. En **propiedades de configuración**, expanda  **análisis de código**, **extensiones**. En el control desplegable situado junto a **habilitar C++ Core check (lanzamiento)** o **Habilitar C++ Core check (experimental)**, elija **sí** o **no**. Elija **Aceptar** o **aplicar** para guardar los cambios.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Comprobar tipos, límites y duraciones  
  El paquete de C++ Core Check contiene actualmente los comprobadores de los perfiles [seguridad de tipos](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), seguridad de los [límites](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)y [seguridad de duración](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) .  
@@ -96,7 +96,7 @@ int main()
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (PDB completo)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6): ADVERTENCIA C26494: la variable ' ARR ' es uninitializ**  
-**Ed. inicializar siempre un objeto. (tipo. 5: https: \/ /Go.Microsoft.com/fwlink/p/?Link**  
+**Ed. Inicialice siempre un objeto. (tipo. 5: https: \/ /Go.Microsoft.com/fwlink/p/?Link**  
 **ID = 620421)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7): ADVERTENCIA C26485: expresión ' ARR ': no hay matriz a**  

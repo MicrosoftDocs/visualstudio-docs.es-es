@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905877"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Introducción a la plantilla de proyecto de VSIX
@@ -39,7 +39,7 @@ Puede usar la plantilla de Proyecto VSIX para crear una extensión o empaquetar 
 
 2. Cree un proyecto VSIX vacío.
 
-     Seleccione **File (Archivo)**  > **New (Nuevo)**  > **Project (Proyecto)** . En el cuadro de búsqueda, escriba "VSIX" y seleccione la versión de **C#** o **Visual Basic** del **Proyecto VSIX**.
+     Seleccione **Archivo** > **Nuevo** > **Proyecto**. En el cuadro de búsqueda, escriba "VSIX" y seleccione la versión de **C#** o **Visual Basic** del **Proyecto VSIX**.
 
 3. Agregue el archivo *. zip* al proyecto. Establezca su propiedad **Copiar en el directorio de salida** en `Copy Always` .
 
