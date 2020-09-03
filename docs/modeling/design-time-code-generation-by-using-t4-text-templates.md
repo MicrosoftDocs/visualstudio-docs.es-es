@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535998"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426777"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 
@@ -62,7 +62,7 @@ Una plantilla de texto contiene una mezcla del texto que se desea generar y el c
 
 5. Guarde el archivo.
 
-    Es posible que vea un cuadro de mensaje de **Advertencia de seguridad** que le pide que confirme que desea ejecutar la plantilla. Haga clic en **OK**.
+    Es posible que vea un cuadro de mensaje de **Advertencia de seguridad** que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
 
 6. En **Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo con la extensión **. txt**. El archivo contiene el texto generado a partir de la plantilla.
 
@@ -248,7 +248,7 @@ Para cargar un archivo de una ubicación relativa a la plantilla de texto, puede
 A continuación, puede escribir, por ejemplo:
 
 ```csharp
-<# string fileName = this.Host.ResolvePath("filename.txt");
+<# string filename = this.Host.ResolvePath("filename.txt");
   string [] properties = File.ReadLines(filename);
 #>
 ...
@@ -257,7 +257,7 @@ A continuación, puede escribir, por ejemplo:
 ```
 
 ```vb
-<# Dim fileName = Me.Host.ResolvePath("propertyList.txt")
+<# Dim filename = Me.Host.ResolvePath("propertyList.txt")
    Dim properties = File.ReadLines(filename)
 #>
 ...
@@ -388,6 +388,6 @@ Consulte [las instrucciones para escribir plantillas de texto T4](../modeling/gu
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Escriba procesadores de directivas para transformar sus propios orígenes de datos.|[Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)

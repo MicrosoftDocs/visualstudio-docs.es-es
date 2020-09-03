@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911854"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426738"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
 Cuando tenga que solucionar problemas de un servicio en la nube o una máquina virtual de Azure, puede usar Visual Studio para configurar más fácilmente Azure Diagnostics. Diagnostics captura los datos del sistema y los datos de registro en las máquinas virtuales y las instancias de máquina virtual que ejecutan el servicio en la nube. Los datos de Diagnostics se transfieren a la cuenta de almacenamiento que elija. Para más información sobre el registro de diagnósticos en Azure, consulte [Habilitación del registro de diagnóstico para Web Apps en Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -28,7 +28,7 @@ Puede usar una de las opciones siguientes para configurar Azure Diagnostics:
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Cambios de los diagnósticos de Azure SDK 2.6
 Los siguientes cambios son válidos en proyectos de Azure SDK 2.6 y versiones posteriores en Visual Studio:
 
-* El emulador local ahora es compatible con diagnósticos. Esto significa que puede recopilar datos de diagnóstico y asegurarse de que su aplicación crea los seguimientos correctos mientras desarrolla y realiza pruebas en Visual Studio. La cadena de conexión `UseDevelopmentStorage=true` activa la colección de datos de diagnóstico mientras ejecuta el proyecto de servicio en la nube en Visual Studio mediante el emulador de Azure Storage. Todos los datos de diagnóstico se recopilan en la cuenta de Almacenamiento de desarrollo.
+* El emulador local ahora es compatible con diagnósticos. Esto significa que puede recopilar datos de diagnóstico y asegurarse de que su aplicación crea los seguimientos correctos mientras desarrolla y realiza pruebas en Visual Studio. La cadena de conexión `UseDevelopmentStorage=true` activa la recopilación de datos de diagnóstico mientras ejecuta el proyecto de servicio en la nube en Visual Studio mediante el emulador de Azure Storage. Todos los datos de diagnóstico se recopilan en la cuenta de Almacenamiento de desarrollo.
 * La cadena de conexión de la cuenta de almacenamiento de diagnóstico `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` se almacena en el archivo de configuración de servicio (.cscfg). En Azure SDK 2.5, la cuenta de almacenamiento de diagnóstico se especificó en el archivo diagnostics.wadcfgx.
 
 La cadena de conexión funciona de manera diferente en algunos aspectos clave en Azure SDK 2.6 y versiones posteriores, en comparación con Azure SDK 2.4 y versiones anteriores:
@@ -73,11 +73,11 @@ En Visual Studio, puede recopilar datos de diagnóstico para roles que se ejecut
 3. Para especificar la cuenta de almacenamiento para los datos de diagnóstico, seleccione el botón de puntos suspensivos (...).
 
     ![Especificar la cuenta de almacenamiento que se va a usar](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. En el cuadro de diálogo **Crear cadena de conexión de almacenamiento**, especifique si quiere conectarse mediante el Emulador de Azure Storage, una suscripción de Azure o credenciales escritas manualmente.
+4. En el cuadro de diálogo **crear cadena de conexión de almacenamiento** , especifique si desea conectarse mediante el emulador de Azure Storage, una suscripción de Azure o credenciales escritas manualmente.
 
     ![Cuadro de diálogo Cuenta de almacenamiento](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * Si selecciona **Emulador de Microsoft Azure Storage**, la cadena de conexión se establece en `UseDevelopmentStorage=true`.
+   * Si selecciona **emulador de Microsoft Azure Storage**, la cadena de conexión se establece en `UseDevelopmentStorage=true` .
    * Si selecciona **Su suscripción**, puede elegir la suscripción de Azure que quiere usar y escribir un nombre de cuenta. Para administrar las suscripciones de Azure, seleccione **Administrar cuentas**.
    * Si selecciona **Credenciales escritas manualmente**, se le pedirá que escriba el nombre y la clave de la cuenta de Azure que quiere usar.
 5. Para ver el cuadro de diálogo **Configuración de diagnóstico**, seleccione **Configurar**. Excepto para **General** y **Directorios de registro**, cada pestaña representa un origen de datos de diagnóstico que puede recopilar. La pestaña **General** predeterminada le ofrece las siguientes opciones de recopilación de datos de diagnóstico: **Solo errores**, **Toda la información** y **Plan personalizado**. La opción predeterminada **Solo errores** usa la cantidad mínima de almacenamiento porque no transfiere advertencias ni mensajes de seguimiento. La opción **Toda la información** transfiere la mayor parte de la información, usa el máximo almacenamiento y, por tanto, es la opción más cara.
