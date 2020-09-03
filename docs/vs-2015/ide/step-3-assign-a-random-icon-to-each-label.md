@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4382a450051b7626a5eb5e29bf2ce4e78f6eceda
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671825"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Paso 3: Asignar un icono aleatorio a cada etiqueta
@@ -28,7 +28,7 @@ Si los iconos aparecen en las mismas celdas en todas las partidas, el juego no p
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#2)]
 
-2. Agregue el método `AssignIconsToSquares()` tal como se indica en el paso anterior. Puede colocarlo justo debajo del código que ha agregado en [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+2. Agregue el método `AssignIconsToSquares()` tal como se indica en el paso anterior. Puede colocarlo justo debajo del código que agregó en el [paso 2: agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
      Como se ha mencionado previamente, hay una novedad en el método `AssignIconsToSquares()`: un bucle `foreach` en Visual C# y `For Each` en Visual Basic. Se puede usar un bucle `For Each` siempre que se desee realizar la misma acción una y otra vez. En este caso, conviene ejecutar las mismas instrucciones para cada etiqueta de TableLayoutPanel, tal y como se observa en el siguiente código. La primera línea crea una variable denominada `control` que almacena un solo control cada vez mientras dicho control tiene las instrucciones del bucle que se ejecutan en él.
 
@@ -38,14 +38,14 @@ Si los iconos aparecen en las mismas celdas en todas las partidas, el juego no p
     > [!NOTE]
     > Se usan los nombres "iconLabel" y"control" porque son descriptivos. Se pueden reemplazar por cualquier nombre sin que ello repercuta en el funcionamiento del código, siempre y cuando se cambie el nombre en cada instrucción del bucle.
 
-     El método `AssignIconsToSquares()` recorre en iteración cada control de etiqueta de TableLayoutPanel y ejecuta las mismas instrucciones para cada uno de ellos. Esas instrucciones extraen un icono aleatorio de la lista que ha agregado en [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Por eso se incluyeron dos iconos de cada en la lista, para que hubiera un par de iconos asignados a controles de etiqueta aleatorios.)
+     El método `AssignIconsToSquares()` recorre en iteración cada control de etiqueta de TableLayoutPanel y ejecuta las mismas instrucciones para cada uno de ellos. Esas instrucciones extraen un icono aleatorio de la lista que agregó en el [paso 2: agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Por eso se incluyeron dos iconos de cada en la lista, para que hubiera un par de iconos asignados a controles de etiqueta aleatorios.)
 
      Examine más detenidamente el código que se ejecuta en el bucle `foreach` o `For Each`. Este código se reproduce aquí.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#16](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#16)]
      [!code-vb[VbExpressTutorial4Step2_3_4#16](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#16)]
 
-     La primera línea convierte la variable `control` en una etiqueta denominada `iconLabel`. La línea siguiente es una instrucción `if` que comprueba que la conversión ha funcionado. Si la conversión funciona, se ejecutan las instrucciones de la instrucción `if`. (Como puede recordar de los tutoriales anteriores, se usa la instrucción `if` para evaluar cualquier condición que especifique). La primera línea de la instrucción `if` crea una variable denominada `randomNumber` que contiene un número aleatorio que se corresponde con uno de los elementos de la lista de iconos. Para ello, utiliza el método `Next` del objeto de `Random` que creó anteriormente. El método `Next` devuelve el número aleatorio. Esta línea también utiliza la propiedad `Count` de la lista `icons` para determinar el intervalo en el que se elige el número aleatorio. La línea siguiente asigna uno de los elementos de la lista de iconos a la propiedad `Text` de la etiqueta. La línea comentada se explica más adelante en este tema. Finalmente, la última línea de la instrucción `if` quita de la lista el icono agregado al formulario.
+     La primera línea convierte la variable `control` en una etiqueta denominada `iconLabel`. La línea siguiente es una instrucción `if` que comprueba que la conversión ha funcionado. Si la conversión funciona, se ejecutan las instrucciones de la instrucción `if`. (Como puede recordar de los tutoriales anteriores, la `if` instrucción se utiliza para evaluar cualquier condición que especifique). La primera línea de la `if` instrucción crea una variable denominada `randomNumber` que contiene un número aleatorio que se corresponde con uno de los elementos de la lista de iconos. Para ello, utiliza el método `Next` del objeto de `Random` que creó anteriormente. El método `Next` devuelve el número aleatorio. Esta línea también utiliza la propiedad `Count` de la lista `icons` para determinar el intervalo en el que se elige el número aleatorio. La línea siguiente asigna uno de los elementos de la lista de iconos a la propiedad `Text` de la etiqueta. La línea comentada se explica más adelante en este tema. Finalmente, la última línea de la instrucción `if` quita de la lista el icono agregado al formulario.
 
      Recuerde que, si no está seguro de qué hace una parte del código, puede situar el puntero del mouse sobre un elemento y consultar la información sobre herramientas que aparece. También puede avanzar por cada línea de código mientras se ejecuta el programa con el depurador de Visual Studio. Para más información, vea [How Do I: Step with The Debugger in Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx) (Cómo recorrer con el depurador el Visual Studio) o [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -81,6 +81,6 @@ Si los iconos aparecen en las mismas celdas en todas las partidas, el juego no p
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 4: Agregar un controlador de eventos Click a cada etiqueta](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Para ir al siguiente paso del tutorial, vea [paso 4: agregar un controlador de eventos click a cada etiqueta](../ide/step-4-add-a-click-event-handler-to-each-label.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Para volver al paso anterior del tutorial, vea [paso 2: agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).

@@ -12,10 +12,10 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 907b71d82a3c630bedc48209e735d9cf817432ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543161"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrado)
@@ -37,7 +37,7 @@ El shell integrado de Visual Studio incluye el entorno de desarrollo integrado (
 |Compatibilidad con idiomas|-Ninguno|  
 |IDE|<ul><li>Configuración<br /><br /> <ul><li>Crear configuración</li><li>Importar y exportar configuraciones</li><li>Restablecer la configuración</li></ul></li><li>Integración del **cuadro de herramientas**</li><li>Integración de **lista de tareas**</li><li>Integración de la ayuda</li><li>Cuadro de diálogo **Opciones**</li><li>Administración de fuentes y colores</li><li>Ventana de **salida**</li><li>Ventana **comandos**</li><li>Administración de ventanas</li><li>Comandos, menús y enlaces de teclado</li><li>Tiempo de ejecución de lenguaje específico de dominio (DSL)</li></ul>|  
 |Tipos de proyecto y sistema de proyectos|-Soluciones y carpetas de soluciones<br />-Administrador de configuración de soluciones<br />-Administración de elementos<br />-Soluciones de proyecto único y de varios proyectos<br />-Diseñador de aplicaciones (propiedades de proyecto simplificadas)<br />-Agregar referencia Web<br />-Agregar referencia de servicio<br />-Proyecto único<br />-Tipos de proyecto de sitio web<br />-Proyectos de aplicación Web|  
-|Build|-Pasos de compilación personalizada en IDE<br />-Precompilación para la protección de propiedad intelectual (IP)<br />-Firma de código<br />     MSBuild|  
+|Compilar|-Pasos de compilación personalizada en IDE<br />-Precompilación para la protección de propiedad intelectual (IP)<br />-Firma de código<br />     MSBuild|  
 |Editor|-Herramientas de exploración de código (búsqueda unificada, definición de origen, herencia)<br />-Navegación de código<br />-IntelliSense<br />-SmartTags<br />-Refactorización<br />-Listado con sangría<br />-Filtrado de IntelliSense<br />-   Ventana **definición de código**|  
 |Diseñador|-Windows Presentation Foundation diseñador<br />-Diseñador de Windows Forms<br />-Diseñador Web y editor HTML|  
 |data|-   **Explorador de servidores** (simplificado: solo datos). Vea la Nota 1.<br />-   Ventana **orígenes de datos**<br />-Conjunto completo de controles de datos<br />-Editor XML<br />: Enlace de datos al origen de datos local (. MDF o. MDB<br />-Enlazar datos a objeto<br />: Enlace de datos al servicio Web<br />-Enlazar datos a servidor de base de datos local<br />-Enlazar datos al servidor de base de datos remoto<br />-Herramientas de DDL para datos remotos<br />-   Extensibilidad de **Explorador de servidores** ( [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ejemplos)|  

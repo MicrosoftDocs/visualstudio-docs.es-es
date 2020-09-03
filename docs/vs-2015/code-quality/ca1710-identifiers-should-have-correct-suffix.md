@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ee7ce7c4e9edad9d941b4a70b2a199a37130e43
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543993"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deben tener un sufijo correcto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |Identificador de comprobación|CA1710|
-|Categoría|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa
@@ -56,7 +56,7 @@ ms.locfileid: "85543993"
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Diccionario|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Colección o DataTable|
-|<xref:System.IO.Stream?displayProperty=fullName>|STREAM|
+|<xref:System.IO.Stream?displayProperty=fullName>|Transmitir|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Permiso|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condición|
 |Delegado de controlador de eventos.|EventHandler|

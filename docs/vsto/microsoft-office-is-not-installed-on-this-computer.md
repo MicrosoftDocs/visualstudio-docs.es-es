@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16f312f9b9d15cbdacbb1fa3e0628903254aeaea
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543148"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office no está instalado en el equipo
@@ -26,6 +26,6 @@ ms.locfileid: "85543148"
 
 1. Instale la aplicación Microsoft Office asociada al tipo de proyecto, incluidos los ensamblados de interoperabilidad primarios. Para obtener más información acerca de las versiones compatibles de Microsoft Office, vea [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Cómo: configurar un equipo para desarrollar soluciones de Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544019"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Los identificadores no deben tener un sufijo incorrecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |Identificador de comprobación|CA1711|
-|Categoría|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa
@@ -51,7 +51,7 @@ ms.locfileid: "85544019"
 |Permiso|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Cola|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Pila|<xref:System.Collections.Stack?displayProperty=fullName>|
-|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
+|Transmitir|<xref:System.IO.Stream?displayProperty=fullName>|
 
  Además, **no** se deben usar los sufijos siguientes:
 

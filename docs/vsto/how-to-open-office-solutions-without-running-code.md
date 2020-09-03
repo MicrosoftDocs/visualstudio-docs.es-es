@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543486"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Cómo: abrir soluciones de Office sin ejecutar código
@@ -49,7 +49,7 @@ ms.locfileid: "85543486"
 
      Si varias personas usan la solución, este método impide que la solución se ejecute para todos ellos. Esto puede ser útil si se encuentra un problema en el código o en un servidor al que se hace referencia y desea detener la ejecución de todos los usuarios.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)

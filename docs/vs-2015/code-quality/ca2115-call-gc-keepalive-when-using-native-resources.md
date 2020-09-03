@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c668172ca318000068fb4e90f4848e456c32208d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543629"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Llamar a Call GC.KeepAlive cuando se utilicen recursos nativos
@@ -53,7 +53,7 @@ ms.locfileid: "85543629"
   Revise cuidadosamente otros mensajes antes de excluirlos. Esta regla detecta errores que son difíciles de reproducir y depurar.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente, no `BadMethod` incluye una llamada a `GC.KeepAlive` y, por tanto, infringe la regla. `GoodMethod`contiene el código corregido.
+ En el ejemplo siguiente, no `BadMethod` incluye una llamada a `GC.KeepAlive` y, por tanto, infringe la regla. `GoodMethod` contiene el código corregido.
 
 > [!NOTE]
 > Este ejemplo es pseudo-Code, aunque el código se compila y ejecuta, la advertencia no se desencadena porque no se crea o libera un recurso no administrado.

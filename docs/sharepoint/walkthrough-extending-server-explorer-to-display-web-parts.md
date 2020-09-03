@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015637"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Tutorial: extender Explorador de servidores para mostrar elementos Web
@@ -71,7 +72,7 @@ ms.locfileid: "86015637"
 
 2. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **extensibilidad** .
+3. En el cuadro de diálogo  **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **extensibilidad** .
 
     > [!NOTE]
     > El nodo **extensibilidad** solo está disponible si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
@@ -80,7 +81,7 @@ ms.locfileid: "86015637"
 
 5. Elija la plantilla de **Proyecto VSIX** , asigne al proyecto el nombre **WebPartNode**y, a continuación, elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **WebPartNode** a **Explorador de soluciones**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **WebPartNode** a **Explorador de soluciones**.
 
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto
 
@@ -92,7 +93,7 @@ ms.locfileid: "86015637"
 
 4. En la lista de plantillas de proyecto, elija **biblioteca de clases**, asigne al proyecto el nombre **ExtensiónNodoElementoWeb**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **ExtensiónNodoElementoWeb** a la solución y abre el archivo de código predeterminado Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ExtensiónNodoElementoWeb** a la solución y abre el archivo de código predeterminado Class1.
 
 5. Elimine el archivo de código Class1 del proyecto.
 
@@ -100,13 +101,13 @@ ms.locfileid: "86015637"
 
 1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
 
-2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual C#** o **Visual Basic** nodo y, a continuación, elija el nodo **Windows** .
+2. En el cuadro de diálogo  **nuevo proyecto** , expanda el nodo **Visual C#** o **Visual Basic** nodo y, a continuación, elija el nodo **Windows** .
 
 3. En la parte superior del cuadro de diálogo, elija **.NET Framework 3,5** en la lista de versiones de la .NET Framework.
 
 4. En la lista de plantillas de proyecto, elija **biblioteca de clases**, asigne al proyecto el nombre **WebPartCommands**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **WebPartCommands** a la solución y abre el archivo de código predeterminado Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **WebPartCommands** a la solución y abre el archivo de código predeterminado Class1.
 
 5. Elimine el archivo de código Class1 del proyecto.
 
@@ -153,7 +154,7 @@ ms.locfileid: "86015637"
 
 4. Elija la flecha situada junto al botón **Agregar** y, a continuación, elija **Agregar como vínculo** en el menú que aparece.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega los archivos de código al proyecto WebPartCommands como vínculos. Como resultado, los archivos de código se encuentran en el proyecto ExtensiónNodoElementoWeb, pero el código de los archivos también se compila en el proyecto WebPartCommands.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega los archivos de código al proyecto WebPartCommands como vínculos. Como resultado, los archivos de código se encuentran en el proyecto ExtensiónNodoElementoWeb, pero el código de los archivos también se compila en el proyecto WebPartCommands.
 
 5. Vuelva a abrir el menú contextual del proyecto **WebPartCommands** y elija **Agregar referencia**.
 
@@ -182,7 +183,7 @@ ms.locfileid: "86015637"
 
 3. Elija la pestaña **recursos** y, a continuación, elija el **archivo este proyecto no contiene un archivo de recursos predeterminado. Haga clic aquí para crear un** vínculo.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crea un archivo de recursos y lo abre en el diseñador.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea un archivo de recursos y lo abre en el diseñador.
 
 4. En la parte superior del diseñador, elija la flecha situada junto al comando de menú **Agregar recurso** y, a continuación, elija **Agregar nuevo icono** en el menú que aparece.
 
@@ -291,7 +292,7 @@ ms.locfileid: "86015637"
     > [!NOTE]
     > Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, vea [elemento MEFComponent (esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7. En la lista **origen** , elija **un proyecto en la solución actual**.
+7. En la lista  **origen** , elija **un proyecto en la solución actual**.
 
 8. En la lista **proyecto** , elija **ExtensiónNodoElementoWeb** y elija el botón **Aceptar** .
 

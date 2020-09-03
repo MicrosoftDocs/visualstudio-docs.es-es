@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a581328a22fda584e2e03a39cc34e9b4b369b280
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650994"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
@@ -40,22 +40,22 @@ ms.locfileid: "72650994"
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
- Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.
+ Los cambios en la combinación de colores no surtirán efecto durante la sesión en la que los realice. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.
 
- **Mostrar valores para** Enumera todos los elementos de la interfaz de usuario cuyas combinaciones de fuentes y colores puede cambiar. Después de seleccionar un elemento de esta lista, puede personalizar la configuración de color para el elemento seleccionado en **Elementos para mostrar**.
+ **Mostrar valores para** Enumera todos los elementos de la interfaz de usuario cuyas combinaciones de fuentes y colores puede cambiar. Después de seleccionar un elemento de esta lista puede personalizar la configuración del color para el elemento seleccionado en **Mostrar los elementos**.
 
 - **Editor de texto**
 
-   Los cambios realizados en la configuración de visualización de estilo, tamaño y color para el Editor de texto afectan a la apariencia del texto en el editor de texto predeterminado. Esta configuración no afectará a los documentos abiertos en un editor de texto fuera del IDE
+   Los cambios en la configuración del estilo, tamaño y color de fuente para el Editor de texto afectan a la apariencia del editor de texto predeterminado. Esta configuración no afectará a los documentos abiertos en un editor de texto fuera del IDE
 
 - **Impresora**
 
-   Los cambios realizados en la configuración de visualización de estilo, tamaño y color para la Impresora afectan a la apariencia del texto en documentos impresos.
+   Los cambios en la configuración del estilo, tamaño y color de fuente para la impresora afectan a la apariencia del texto de los documentos impresos.
 
   > [!NOTE]
-  > Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.
+  > Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esta opción puede ser útil para imprimir código que contenga caracteres de un solo byte o de doble byte.
 
 - **Finalización de instrucciones**
 
@@ -74,7 +74,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
    Los cambios realizados en la configuración de visualización de estilo, tamaño y color para este elemento afectan a la apariencia del texto en ventanas de herramientas que tengan paneles de resultados en el IDE. Por ejemplo, la ventana de salida, la ventana de comandos, la ventana inmediata, etc.
 
   > [!NOTE]
-  > Los cambios realizados en el texto de elementos **[Todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.
+  > Los cambios en el texto de los elementos **[todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.
 
   **Usar valores predeterminados** Restablece los valores de fuente y color del elemento de lista seleccionado en **Mostrar valores para**. El botón **Uso** aparece cuando hay otras combinaciones de visualización disponibles para seleccionarlas. Por ejemplo, puede elegir entre dos combinaciones para la impresora.
 
@@ -94,7 +94,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Texto sin formato**|Texto del editor.|
 |**Texto seleccionado**|Texto que se incluye en la selección actual cuando el editor tiene el foco.|
 |**Texto seleccionado inactivo**|Texto que se incluye en la selección actual cuando el editor ha perdido el foco.|
-|**Margen del indicador**|El margen situado a la izquierda del Editor de código donde se muestran los iconos de los puntos de interrupción y de marcador.|
+|**Margen del indicador**|margen situado a la izquierda del Editor de código en el que aparecen los iconos de marcadores y puntos de interrupción.|
 |**Números de línea**|Números opcionales que aparecen junto a cada línea de código|
 |**Espacio en blanco visible**|Espacios, tabulaciones e indicadores de ajuste automático de línea|
 |**Marcador**|Líneas con marcadores. **Marcador** solo está visible si el margen del indicador está deshabilitado.|
@@ -116,8 +116,8 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Devolución de llamada**|Especifica el color de resaltado para las instrucciones de origen o líneas que indican puntos de devolución de llamada cuando el contexto cambia a un marco de pila que no es de nivel superior durante la depuración.|
 |**Campo dependiente de fragmento de código**|Un campo que se actualizará al modificarse el campo editable actual.|
 |**Campo de fragmento de código**|Campo editable cuando está activo un fragmento de código.|
-|**Zona contraíble**|Un bloque de texto o código que se puede mostrar u ocultar en el Editor de código.|
-|**Comentario**|Comentarios en código.|
+|**Texto contraíble**|Un bloque de texto o código que se puede mostrar u ocultar en el Editor de código.|
+|**Comment**|Comentarios en código.|
 |**Error del compilador**|Garabatos azules que aparecen en el editor y que indican un error del compilador.|
 |**Área de cobertura no modificada**|Un código que no ha sido cubierto por una prueba unitaria.|
 |**Área de cobertura modificada parcialmente**|Un código que ha sido parcialmente cubierto por una prueba unitaria.|
@@ -142,10 +142,10 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Palabra clave**|Palabras clave para el idioma especificado que están reservadas. Por ejemplo: clase y espacio de nombres.|
 |**Dirección de memoria**|El color de texto usado para mostrar la columna de direcciones dentro de la ventana **Memoria**.|
 |**Memoria cambiada**|El color de texto usado para mostrar datos cambiados dentro de la ventana **Memoria**.|
-|**Datos de memoria**|El color de texto usado para mostrar datos dentro de la ventana **Memoria**.|
+|**Datos de memoria**|El color de texto utilizado para mostrar los datos en la ventana **memoria** .|
 |**No se puede leer la memoria**|El color de texto usado para mostrar áreas de memoria dentro de la ventana **Memoria**.|
-|**Número**|Un número en el código que representa un valor numérico real.|
-|**Operator**|Operadores, como +, -, y! =.|
+|**Number**|Un número en el código que representa un valor numérico real.|
+|**Operador**|Operadores, como +, -, y! =.|
 |**Otro error**|Otros tipos de error no cubiertos por otros subrayados ondulados de errores. Actualmente, incluyen las ediciones superficiales en Editar y continuar.|
 |**Palabra clave del preprocesador**|Palabras clave utilizadas por el preprocesador, como #include.|
 |**Zona de solo lectura**|No se puede editar el código. Por ejemplo, el código mostrado en la ventana Vista de definición de código o el código que no se puede modificar durante Editar y continuar.|
@@ -181,15 +181,15 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Tipos de usuario (interfaces)**|Color del tipo de las interfaces.|
 |**Tipos de usuario (tipos de valor)**|Color del tipo de tipos de valor como estructuras en C#.|
 |**Marcador de solo lectura de Visual Basic**|Un marcador específico de Visual Basic para designar EnC, como áreas de excepción, una definición de método y marcos de llamada no hoja.|
-|**Advertencia**|Advertencias del compilador.|
+|**Warning (ADVERTENCIA)**|Advertencias del compilador.|
 |**Ruta de acceso de líneas de advertencia**|Se utiliza para las líneas de advertencia de Análisis estático.|
 |**Atributo XML**|Nombres de atributo.|
 |**Comillas de atributo XML**|Los caracteres de comillas para los atributos XML.|
 |**Valor del atributo XML**|Contenido de atributos XML.|
-|**Sección CData XML**|Contenido de \<![CDATA[…]]>.|
+|**Sección CData XML**|Contenido de \<![CDATA[…]]> .|
 |**Comentario XML**|Contenido de \<!-- -->.|
-|**Delimitador XML**|Delimitadores de sintaxis XML, <, <?, <!, \<!--, -->, ?\>, \<![, ]]> y [, ].|
-|**Atributo de documento XML**|El valor de un atributo de documentación xml, como \<param name = "I" > donde la "I" se colorea.|
+|**Delimitador XML**|Los delimitadores de sintaxis XML, incluidos <, <?, <!, \<!--, --> ,? \> , \<![, ]]> y [,].|
+|**Atributo de documento XML**|El valor de un atributo de documentación XML, como \<param name="I"> donde se colorea la "I".|
 |**Comentario de documento XML**|Los comentarios incluidos en los comentarios de documentación xml.|
 |**Etiqueta de documento XML**|Las etiquetas en los comentarios de documentos XML, como<br /><br /> /// \<summary>.|
 |**Palabra clave XML**|Palabras clave de DTD como CDATA, IDREF y NDATA.|
@@ -207,7 +207,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
  **Personalizado** Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Mostrar los elementos.
 
 > [!NOTE]
-> Su capacidad para definir colores personalizados puede verse limitada por la configuración de color de la pantalla de su equipo. Por ejemplo, si su equipo está configurado para mostrar 256 colores y selecciona un color personalizado en el cuadro de diálogo **Color**, el IDE tiene como valor predeterminado el **Color básico** más similar disponible y muestra el color negro en el cuadro de vista previa **Color**.
+> La posibilidad de definir colores personalizados puede estar limitada por la configuración del color de la pantalla del equipo. Por ejemplo, si su equipo está configurado para mostrar 256 colores y selecciona un color personalizado en el cuadro de diálogo **Color**, el IDE tiene como valor predeterminado el **Color básico** más similar disponible y muestra el color negro en el cuadro de vista previa **Color**.
 
  **Fondo del elemento** Proporciona una paleta de colores en la que puede seleccionar un color de fondo para el elemento seleccionado en **Mostrar los elementos**. Puesto que algunos elementos están relacionados y, por tanto, deben mantener un esquema par mostrar coherente, si cambia el color de fondo del texto también cambian los valores predeterminados para elementos como Error del compilador, Palabra clave u Operador.
 
@@ -221,5 +221,5 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 
  **Ejemplo** Muestra un ejemplo de la combinación de colores, del tamaño y del estilo de la fuente de los elementos seleccionados en **Mostrar valores para** y **Mostrar los elementos**. Puede utilizar este cuadro para obtener una vista previa de los resultados mientras experimenta con diferentes opciones de formato.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Cuadro de diálogo Opciones de [entorno](../../ide/reference/environment-options-dialog-box.md) (cuadro de diálogo [)](../../ide/reference/options-dialog-box-visual-studio.md) [Cómo: cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

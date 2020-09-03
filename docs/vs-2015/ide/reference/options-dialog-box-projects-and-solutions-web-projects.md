@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90da4845ca5edcf68a977ea79a73e06fa4c4455b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917668"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Cuadro de diálogo Opciones, Proyectos y soluciones, Proyectos web

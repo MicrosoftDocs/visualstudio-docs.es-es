@@ -35,10 +35,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd0a89ac1d96e2d1af829ba04e6e164f8fae7f8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542186"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Iniciar una sesión de depuración para aplicaciones de la Tienda en Visual Studio (VB, C#, C++ y XAML)
@@ -86,7 +86,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
   - [Asociar el depurador](#BKMK_Attach_the_debugger)
 
-## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a>La forma más sencilla de iniciar la depuración
+## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a> La forma más sencilla de iniciar la depuración
 
 1. Abre la solución de aplicación en Visual Studio.
 
@@ -94,7 +94,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    Visual Studio compila e inicia la aplicación con el depurador asociado. La ejecución continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción no controlada o la aplicación finaliza. Para obtener más información, vea [navegar por una sesión de depuración (XAML y C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
 
-## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a>Configurar la sesión de depuración
+## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a> Configurar la sesión de depuración
 
 ### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Abrir la página de propiedades de depuración del proyecto
 
@@ -181,7 +181,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
  Para aplicaciones de la Tienda de Windows Phone, además puede elegir el depurador que va a usar para los procesos en segundo plano desde **Proceso de tarea en segundo plano**.
 
-### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a>Opta Retrasar el inicio de la sesión de depuración
+### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a> Opta Retrasar el inicio de la sesión de depuración
  De forma predeterminada, Visual Studio inicia inmediatamente la aplicación cuando se iniciar la depuración. También puedes iniciar una sesión de depuración pero retrasar el inicio de la aplicación. Si eliges esta opción, la aplicación se inicia en el depurador cuando se inicia desde la pantalla Inicio o mediante un contrato de activación, o bien cuando la inicia otro proceso o método. También puedes retrasar el inicio de tu aplicación si deseas depurar una tarea en segundo plano cuando la propia aplicación no se está ejecutando.
 
  Para retrasar el inicio de la aplicación, tienes estas opciones:
@@ -201,10 +201,10 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 - Para aplicaciones de Visual C++, elige **No** en la lista **Permitir bucle invertido de red** en la página de propiedades de **Depuración** .
 
-### <a name="optional-reinstall-the-app-when-you-start-debugging"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a>Opta Reinstalar la aplicación al iniciar la depuración
+### <a name="optional-reinstall-the-app-when-you-start-debugging"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Opta Reinstalar la aplicación al iniciar la depuración
  Para diagnosticar problemas con la instalación y la configuración inicial de tu aplicación de Visual C# o Visual Basic, elige **Desinstalar y volver a instalar mi paquete** en la página de propiedades de **Depurar**  para volver a crear una instalación original al iniciar la depuración. Esta opción no está disponible para los proyectos de Visual C++.
 
-### <a name="optional-disable-authentication-requirement-to-start-the-remote-debugger"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a>Opta Deshabilitar el requisito de autenticación para iniciar el depurador remoto
+### <a name="optional-disable-authentication-requirement-to-start-the-remote-debugger"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Opta Deshabilitar el requisito de autenticación para iniciar el depurador remoto
  ![Válido únicamente para Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  De forma predeterminada, debes proporcionar credenciales para ejecutar el depurador remoto.
@@ -222,10 +222,10 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 ## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a> Iniciar la sesión de depuración
 
-### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a>Iniciar depuración (F5)
+### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a> Iniciar depuración (F5)
  Al seleccionar **iniciar depuración** (teclado: F5) en el menú **depurar** , Visual Studio inicia la aplicación con el depurador adjunto. La ejecución continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción o la aplicación finaliza.
 
-### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>Iniciar la depuración (F5) pero retrasar el inicio de la aplicación
+### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Iniciar la depuración (F5) pero retrasar el inicio de la aplicación
  Puedes establecer que la aplicación se ejecute en modo de depuración, pero iniciarla mediante un método que no sea el depurador. Por ejemplo, puedes depurar el inicio de tu aplicación desde el menú Inicio o depurar un proceso en segundo plano de la aplicación sin iniciarla. Si deseas retrasar el inicio de la aplicación, realiza lo siguiente:
 
 - En la página de propiedades de **Depuración** de la aplicación (**Depurar** en Visual C++)
@@ -295,7 +295,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 4. En el símbolo del sistema de PowerShell, especifique `Enable-AppxDebug` *PackageFullName* , donde *PackageFullName* es el identificador PackageFullName de la aplicación.
 
-#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a>Asociar el depurador
+#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a> Asociar el depurador
  Para asociar el depurador:
 
 1. En el menú **Depurar** , elija **Asociar al proceso**.

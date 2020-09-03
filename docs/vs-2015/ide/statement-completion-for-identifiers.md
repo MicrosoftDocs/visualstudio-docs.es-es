@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f5e52bf174e5a41d79fa23bfca39121db668e40e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643853"
 ---
 # <a name="statement-completion-for-identifiers"></a>Finalización de instrucciones para identificadores
@@ -52,13 +52,13 @@ JavaScript no permite tipos explícitos para las declaraciones de variables. Com
 
    Si el motor de IntelliSense puede determinar que se debe llamar al evento, normalmente mediante el uso de `addEventListener` para el evento en el documento activo, se proporciona información de IntelliSense más precisa.
 
-  Cuando IntelliSense no puede identificar un objeto, el motor de IntelliSense rellena la lista de finalización con entidades con nombre, o identificadores, que se encuentran en el documento activo. Cuando la lista de finalización contiene estos identificadores, aparecen iconos de información junto a ellos. Además, una información sobre herramientas para cada identificador indica que se desconoce la expresión. En la ilustración siguiente se muestran las opciones de finalización de instrucciones para un objeto de tipo `light` que no se puede identificar porque el objeto y sus propiedades no están definidos. Sin embargo, la propiedad `intensity` está disponible en la lista de identificadores porque se ha utilizado en la función `illuminate`.
+  Cuando IntelliSense no puede identificar un objeto, el motor de IntelliSense rellena la lista de finalización con entidades con nombre, o identificadores, que se encuentran en el documento activo. Cuando la lista de finalización contiene estos identificadores, aparecen iconos de información junto a ellos. Además, una información sobre herramientas para cada identificador indica que se desconoce la expresión. En la ilustración siguiente se muestran las opciones de finalización de instrucciones para un objeto de tipo `light` que no se puede identificar porque el objeto y sus propiedades no están definidos. Sin embargo, la `intensity` propiedad está disponible en la lista de identificadores porque se ha utilizado en la `illuminate` función.
 
   **Opciones de finalización de un objeto que no se puede identificar**
 
-  ![IntelliSense para JavaScript para identificadores](../ide/media/js-intellisense-identifiers.png "|::ref1::|")
+  ![IntelliSense para JavaScript para identificadores](../ide/media/js-intellisense-identifiers.png "js_intellisense_identifiers")
 
   Puede invalidar la lista de finalización de un objeto mediante comentarios de documentación XML o características de extensibilidad de IntelliSense para JavaScript. Con estas características, puede proporcionar información de tipo e información de IntelliSense más descriptiva cuando no esté disponible de otro modo. Para obtener más información, vea [extender JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) y [crear comentarios de documentación XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [IntelliSense para JavaScript](../ide/javascript-intellisense.md)

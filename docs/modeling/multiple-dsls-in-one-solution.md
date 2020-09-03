@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542602"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
@@ -44,17 +44,17 @@ Puede usar varias técnicas para integrar varios DSL. Para obtener más informac
 
    2. Para cada DSL, elija **agregar contenido** y agregar:
 
-       - `Dsl*`proyecto como **componente MEF**
+       - `Dsl*` proyecto como **componente MEF**
 
-       - `DslPackage*`proyecto como **componente MEF**
+       - `DslPackage*` proyecto como **componente MEF**
 
-       - `DslPackage*`proyecto como **paquete de vs**
+       - `DslPackage*` proyecto como **paquete de vs**
 
 3. Compile la solución.
 
    El VSIX resultante instalará ambos DSL. Puede probarla mediante F5 o implementar _suproyectovsix_**\bin\debug \\ \* . vsix**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)

@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b70e3a24cd4cb05dc1a28ff855498496f5665ddc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542862"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ejecutar pruebas unitarias para aplicaciones de la Tienda en Visual Studio
@@ -34,7 +34,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 
  [Ejecutar pruebas en el Explorador de pruebas](#BKMK_Running_tests_in_Test_Explorer)
 
-- [Ejecutar pruebas](#BKMK_Running_tests)
+- [Ejecución de las pruebas](#BKMK_Running_tests)
 
   [Ver los resultados de la prueba](#BKMK_Viewing_test_results)
 
@@ -53,7 +53,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 ## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Marcos de pruebas unitarias y proyectos de prueba
  Visual Studio Express para las aplicaciones de la Tienda Windows incluye los marcos de pruebas unitarias de Microsoft para código en C++ administrado y nativo. El Explorador de pruebas puede ejecutar pruebas de varios proyectos de prueba en una solución y desde las clases de prueba que forman parte de los proyectos de código de producción. Proyectos de prueba pueden ser cualquier combinación de los marcos de pruebas unitarias de Visual C++, Visual C# y Visual Basic. Cuando se escribe el código sometido a prueba para .NET Framework, el proyecto de prueba se puede escribir en cualquier lenguaje de .NET Framework, independientemente del lenguaje del código de destino. Los proyectos de código de C/C ++ nativos deben probarse con el marco de pruebas unitarias de C++.
 
-## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Ejecutar pruebas en el explorador de pruebas
+## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Ejecutar pruebas en el explorador de pruebas
  Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
 
  ![Explorador de pruebas unitarias](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,7 +64,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 
  ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-### <a name="running-tests"></a><a name="BKMK_Running_tests"></a>Ejecutar pruebas
+### <a name="running-tests"></a><a name="BKMK_Running_tests"></a> Ejecutar pruebas
  Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:
 
 - Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas**.
@@ -75,7 +75,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 
   Según se vayan ejecutando las pruebas, se animará la barra de superado o no superado en la parte superior de la ventana del Explorador de pruebas. Al finalizar la ejecución de las pruebas, la barra de superado o no superado se pondrá verde si se superan todas las pruebas. En caso contrario, se pondrá roja.
 
-## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a>Ver resultados de pruebas
+## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a> Ver resultados de pruebas
  Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. El panel de detalles de la parte inferior del Explorador de pruebas muestra un resumen de la ejecución de la prueba.
 
 ### <a name="viewing-test-details"></a><a name="BKMK_Viewing_test_details"></a> Ver los detalles de la prueba
