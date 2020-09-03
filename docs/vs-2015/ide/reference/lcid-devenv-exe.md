@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672702"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -38,7 +38,7 @@ devenv {/LCID|/l} LocaleID
 ## <a name="arguments"></a>Argumentos
  `LocaleID` Obligatorio. LCID (identificador de configuración regional) del idioma especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Carga el IDE y establece el idioma natural predeterminado para el entorno. Este cambio se conserva entre sesiones y se refleja en el panel **Configuración internacional** de las opciones de **Entorno** en el cuadro de diálogo **Opciones** del IDE.
 
  Si el idioma especificado no está disponible en el sistema del usuario, se omite el modificador /LCID.
@@ -64,5 +64,5 @@ devenv {/LCID|/l} LocaleID
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  La [línea de comandos de devenv cambia](../../ide/reference/devenv-command-line-switches.md) la [Configuración internacional, entorno, opciones (cuadro de diálogo)](../../ide/reference/international-settings-environment-options-dialog-box.md) [personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2736db7e18733a9477238cafad21088eb135e89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659163"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Elegir operación (Cuadro de diálogo) (Heredado)
-En este tema se describe cómo usar el cuadro de diálogo **elegir operación** en el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+En este tema se describe cómo usar el cuadro de diálogo **elegir operación** en heredado [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- El cuadro de diálogo **elegir operación** se usa para seleccionar una operación que se va a asociar a una actividad <xref:System.Workflow.Activities.ReceiveActivity> o a una actividad <xref:System.Workflow.Activities.SendActivity>. Para obtener más información sobre el uso de este cuadro de diálogo con esas actividades, vea [Cómo: implementar una operación de contrato WCF (heredado)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) y [Cómo: invocar una operación de contrato WCF (heredado)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md).
+ El cuadro de diálogo **elegir operación** se usa para seleccionar una operación que se va a asociar a una <xref:System.Workflow.Activities.ReceiveActivity> actividad o una <xref:System.Workflow.Activities.SendActivity> actividad. Para obtener más información sobre el uso de este cuadro de diálogo con esas actividades, vea [Cómo: implementar una operación de contrato WCF (heredado)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) y [Cómo: invocar una operación de contrato WCF (heredado)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md).
 
  En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **elegir operación** .
 
@@ -36,7 +36,7 @@ En este tema se describe cómo usar el cuadro de diálogo **elegir operación** 
 |**Permisos**|Pestaña que contiene el <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> y las propiedades <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> de los usuarios que pueden llamar a esa operación. Por ejemplo, si solo los usuarios del grupo administradores podían llamar a esa operación, escribiría "administradores" en el cuadro de texto **rol** .<br /><br /> Esta pestaña está habilitada para las dos operaciones creadas mediante el cuadro de diálogo **ChooseOperation** y las operaciones que se importaron mediante el botón **importar** .|
 
 > [!NOTE]
-> En el cuadro de diálogo **elegir operación** solo se muestran los contratos u operaciones utilizados por otras actividades de <xref:System.Workflow.Activities.SendActivity> en el flujo de trabajo. Del mismo modo, el cuadro de diálogo **elegir operación** para actividades de <xref:System.Workflow.Activities.ReceiveActivity> muestra solo contratos u operaciones que usan otras actividades de **ReceiveActivity** en el flujo de trabajo.
+> En el cuadro de diálogo **elegir operación** solo se muestran los contratos u operaciones utilizados por otras <xref:System.Workflow.Activities.SendActivity> actividades del flujo de trabajo. Del mismo modo, el cuadro de diálogo **elegir operación** para <xref:System.Workflow.Activities.ReceiveActivity> actividades muestra solo contratos u operaciones que usan otras actividades de **ReceiveActivity** en el flujo de trabajo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: implementar una operación de contrato WCF (heredado)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) [Cómo: invocar un diseñador heredado de operación de contrato WCF (heredado)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md) [para obtener Windows Workflow Foundation ayuda de la interfaz de usuario](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

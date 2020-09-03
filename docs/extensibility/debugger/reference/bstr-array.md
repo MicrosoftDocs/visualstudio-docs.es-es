@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY Microsoft Docs
+title: BSTR_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737705"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
@@ -43,20 +43,20 @@ struct BSTR_ARRAY {
 
 ## <a name="members"></a>Miembros
 `dwCount`\
-Número de `Members` cadenas en la matriz.
+Número de cadenas de la `Members` matriz.
 
 `Members`\
 Matriz de cadenas.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura se devuelve desde el [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) método.
+Esta estructura se devuelve desde el método [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .
 
- [Sólo C++] Cada cadena individual debe `SysFreeString`liberarse `Members` mediante , y `CoTaskMemFree`la matriz debe liberarse con .
+ [Solo C++] Cada cadena individual se debe liberar mediante `SysFreeString` y la `Members` matriz se debe liberar con `CoTaskMemFree` .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

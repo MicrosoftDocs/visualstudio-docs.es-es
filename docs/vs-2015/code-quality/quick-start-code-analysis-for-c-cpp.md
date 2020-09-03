@@ -1,5 +1,5 @@
 ---
-title: 'Inicio rápido: Análisis de código para CC++ -| Microsoft Docs'
+title: 'Inicio rápido: Análisis de código para C/C++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,10 +13,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e9db06ec0748ce4499afb423fac03886cd763301
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278480"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
@@ -30,15 +30,15 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
   
 - [Ejecutar análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
   
-- [Analizar y resolver advertencias de análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
+- [Analizar y resolver las advertencias del análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
   
 - [Suprimir las advertencias de análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
   
-- [Crear elementos de trabajo para las advertencias de análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
+- [Crear elementos de trabajo para las advertencias del análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
   
 - [Buscar y filtrar resultados del análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
   
-## <a name="BKMK_ConfigureRuleSets"></a>Configurar conjuntos de reglas para un proyecto  
+## <a name="configure-rule-sets-for-a-project"></a><a name="BKMK_ConfigureRuleSets"></a> Configurar conjuntos de reglas para un proyecto  
   
 1. En **Explorador de soluciones**, abra el menú contextual del nombre del proyecto y, a continuación, elija **propiedades**.  
   
@@ -51,13 +51,13 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
         > [!NOTE]
         > Esta opción no suprime los errores ni las advertencias del análisis de código generado cuando aparecen en formularios y plantillas. Puede ver y mantener el código fuente de un formulario o una plantilla.  
   
-3. Para ejecutar el análisis de código cada vez que se compila el proyecto con la configuración seleccionada, active la casilla **Habilitar análisisC++ de código para C/al compilar** . También puede ejecutar el análisis de código manualmente si abre el menú **analizar** y, a continuación, elige **Ejecutar Análisis de código en** *projectname*.  
+3. Para ejecutar el análisis de código cada vez que se compila el proyecto con la configuración seleccionada, active la casilla **Habilitar análisis de código para C/C++ al compilar** . También puede ejecutar el análisis de código manualmente si abre el menú **analizar** y, a continuación, elige **Ejecutar Análisis de código en** *projectname*.  
   
 4. En la lista **ejecutar este conjunto de reglas** , realice una de las acciones siguientes:  
   
     - Elija el conjunto de reglas que desee usar.  
   
-    - Elija **\<examinar... >** para especificar un conjunto de reglas personalizado existente que no está en la lista.  
+    - Elija esta opción **\<Browse...>** para especificar un conjunto de reglas personalizado existente que no esté en la lista.  
   
     - Defina un conjunto de reglas personalizado.  
   
@@ -71,7 +71,7 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
 |Reglas mínimas recomendadas nativas de Microsoft|Este conjunto de reglas se centra en los problemas más graves del código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.|  
 |Reglas recomendadas nativas de Microsoft|Este conjunto de reglas cubre una amplia gama de problemas. Incluye todas las reglas de Reglas mínimas recomendadas nativas de Microsoft.|  
   
-## <a name="BKMK_Run"></a>Ejecutar análisis de código  
+## <a name="run-code-analysis"></a><a name="BKMK_Run"></a> Ejecutar análisis de código  
  En la página de análisis de código de las páginas de propiedades de proyecto se puede configurar el análisis de código para que se ejecute siempre que se compile el proyecto. También se puede ejecutar el análisis de código de forma manual.  
   
  Para ejecutar el análisis de código en una solución:  
@@ -86,18 +86,18 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
   
   La solución o proyecto se compila y se ejecuta el análisis de código. Los resultados aparecen en la ventana Análisis de código.  
   
-## <a name="BKMK_Analyze"></a>Analizar y resolver advertencias de análisis de código  
+## <a name="analyze-and-resolve-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analizar y resolver advertencias de análisis de código  
  Para analizar una advertencia concreta, elija el título en la ventana Análisis de código. La advertencia se expande para mostrar la información adicional sobre el problema. Cuando es posible, el análisis de código muestra los números de línea y la lógica de análisis que condujeron a la advertencia. Para obtener información detallada sobre la advertencia, incluidas las soluciones posibles al problema, elija el identificador de la advertencia para mostrar el tema de ayuda de la biblioteca de MSDN correspondiente al mensaje.  
   
- Al expandir una advertencia, se resalta la línea de código que produjo la advertencia en el editor de código de Visual Studio.  
+ Cuando se expande una advertencia, la línea de código que la causó se resalta en el editor de código de Visual Studio.  
   
- Cuando haya entendido el problema, podrá resolverlo en el código. Vuelva a ejecutar el análisis de código para asegurar que ya no aparece la advertencia en la ventana Análisis de código y que la corrección no genera nuevas advertencias.  
+ Cuando haya entendido el problema, podrá resolverlo en el código. A continuación vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en la ventana de análisis de código y que la corrección no genera nuevas advertencias.  
   
 > [!TIP]
-> Puede volver a ejecutar el análisis de código desde la ventana Análisis de código. Elija el botón **analizar** y elija el ámbito del análisis. Puede volver a ejecutar el análisis en toda la solución o en un proyecto seleccionado.  
+> Puedes repetir el análisis de código desde la ventana Análisis de código. Elija el botón **analizar** y elija el ámbito del análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.  
   
-## <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código  
- En ocasiones es posible que decida no corregir una advertencia de análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puedes suprimir advertencias individuales de modo que ya no aparezcan en la ventana Análisis de código.  
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Suprimir advertencias de análisis de código  
+ A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puedes suprimir advertencias individuales de modo que ya no aparezcan en la ventana Análisis de código.  
   
  Para suprimir una advertencia:  
   
@@ -107,12 +107,12 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
   
 3. Elija **suprimir mensaje** y, a continuación, elija **en origen**.  
   
-   Al suprimir un mensaje se inserta un identificador `#pragma warning (disable:`*WarningId*`)` que suprime la advertencia en la línea de código.  
+   Al suprimir un mensaje, se inserta `#pragma warning (disable:` *un identificador warningid* `)` que suprime la advertencia de la línea de código.  
   
-## <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a>Crear elementos de trabajo para las advertencias de análisis de código  
+## <a name="creating-work-items-for-code-analysis-warnings"></a><a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Crear elementos de trabajo para las advertencias de análisis de código  
  La característica de seguimiento de elemento de trabajo permite registrar errores desde Visual Studio. Para usar esta característica, es necesario conectarse a una instancia de Team Foundation Server.  
   
- **Para crear un elemento de trabajo para una o varias advertenciasC++ de C/Code**  
+ **Para crear un elemento de trabajo para una o más advertencias de código de C/C++**  
   
 1. En la ventana de análisis de código, expanda y seleccione las advertencias.  
   
@@ -122,8 +122,8 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
   
 4. Agregue información adicional y, a continuación, elija **Guardar elemento de trabajo**.  
   
-## <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código  
- Puede buscar listas largas de mensajes de advertencia y filtrar las advertencias en soluciones de varios proyectos.  
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Búsqueda y filtrado de resultados de análisis de código  
+ Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.  
   
 1. **Para filtrar las advertencias por título o ID**. de ADVERTENCIA: escriba la palabra clave en el cuadro de texto **filtro** .  
   

@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER de la casa de la Microsoft Docs
+title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3de9b8f7ef30cffbdd78399dc831060e413ba51b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737547"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
@@ -51,34 +51,34 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 ## <a name="members"></a>Miembros
 `dwID`\
-Un identificador para diferenciar varios visores o `GUID`visualizadores implementados por uno .
+IDENTIFICADOR para diferenciar varios visores o visualizadores implementados por uno `GUID` .
 
 `bstrMenuName`\
-El texto que aparecerá en el menú desplegable.
+Texto que aparecerá en el menú desplegable.
 
 `bstrDescription`\
-Una descripción del visor personalizado o del visualizador de tipo (debe ser un valor nulo si no se utiliza).
+Una descripción del visor personalizado o del visualizador de tipos (debe ser un valor NULL si no se usa).
 
 `guidLang`\
-Lenguaje del evaluador de expresiones de proporcionación.
+Lenguaje del evaluador de expresiones que proporciona.
 
 `guidVendor`\
-Proveedor del evaluador de expresiones de proporcionación.
+Proveedor del evaluador de expresiones que proporciona.
 
 `bstrMetric`\
-Métrica en la que se `CLSID` almacena el visor personalizado o el visualizador de tipos.
+Métrica en la que se almacena el visualizador personalizado o el visualizador de tipos `CLSID` .
 
 ## <a name="remarks"></a>Observaciones
-Una lista de esta estructura se devuelve mediante una llamada a la [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) método (y, por extensión, el [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) método).
+Una llamada al método [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) devuelve una lista de esta estructura (y, por extensión, el método [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) ).
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

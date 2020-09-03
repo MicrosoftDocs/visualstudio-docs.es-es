@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH de la Microsoft Docs
+title: CODE_PATH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737667"
 ---
 # <a name="code_path"></a>CODE_PATH
-Describe una llamada de método o función.
+Describe un método o una llamada de función.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,18 +43,18 @@ public struct CODE_PATH {
 
 ## <a name="members"></a>Miembros
 `bstrName`\
-El nombre de la ruta de acceso del código.
+Nombre de la ruta de acceso del código.
 
 `pCode`\
-El [objeto IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que identifica dónde en el código para entrar paso a paso en una función.
+El objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que identifica en qué lugar del código se va a depurar una función.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura se utiliza para implementar el paso a una función. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) devuelve todas las llamadas desde la ubicación actual en el programa que se está depurando. Esta estructura representa una de esas llamadas.
+Esta estructura se usa para implementar la ejecución paso a paso en una función. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) devuelve todas las llamadas de la ubicación actual en el programa que se está depurando. Esta estructura representa una llamada de este tipo.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

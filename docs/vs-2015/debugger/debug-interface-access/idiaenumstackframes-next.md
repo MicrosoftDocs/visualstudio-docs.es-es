@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c66e8b281f27e13a1176dd32f21856367e5f1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189740"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
@@ -37,17 +37,17 @@ HRESULT Next( 
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] El número de elementos de stackframe del enumerador que se va a recuperar.  
+ de Número de elementos StackFrame en el enumerador que se van a recuperar.  
   
  rgelt  
- [out] Una matriz que se rellena con la solicitada [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) objetos.  
+ enuncia Matriz que se va a rellenar con los objetos [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) solicitados.  
   
  pceltFetched  
- [out] Devuelve al número de la pila de elementos de marco en el enumerador capturado.  
+ enuncia Devuelve el número de elementos de marco de pila en el enumerador capturado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún más marcos de pila. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay más marcos de pila. De lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539261"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: No producir excepciones en ubicaciones inesperadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |Identificador de comprobación|CA1065|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa
@@ -65,24 +65,24 @@ ms.locfileid: "85539261"
 
  Se permite que se inicien las siguientes excepciones desde un método get de propiedad:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>y todos los derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
 
-- <xref:System.ArgumentException?displayProperty=fullName>(solo desde Get indizado)
+- <xref:System.ArgumentException?displayProperty=fullName> (solo desde Get indizado)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(solo desde Get indizado)
+- <xref:System.Collections.Generic.KeyNotFoundException> (solo desde Get indizado)
 
 ### <a name="event-accessor-methods"></a>Métodos de descriptor de acceso de eventos
  Los descriptores de acceso de eventos deben ser operaciones simples que no inician excepciones. Un evento no debe producir una excepción al intentar agregar o quitar un controlador de eventos.
 
  Se permite que se inicien las siguientes excepciones desde un decedidor de eventos:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>y todos los derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
 
-- <xref:System.ArgumentException>y derivados
+- <xref:System.ArgumentException> y derivados
 
 ### <a name="equals-methods"></a>Equals (métodos)
  Los siguientes métodos **Equals** no deben producir excepciones:

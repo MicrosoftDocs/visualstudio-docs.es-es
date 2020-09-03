@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 076ce3858774d44e2d6c4c25205ced74b7a41bf0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539768"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: No declarar campos de instancia visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotDeclareVisibleInstanceFields|
 |Identificador de comprobación|CA1051|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa
@@ -47,7 +47,7 @@ ms.locfileid: "85539768"
  No suprima las advertencias de esta regla. Los campos visibles externamente no proporcionan ninguna ventaja que no esté disponible para las propiedades. Además, los campos públicos no se pueden proteger mediante [peticiones de vínculo](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Vea [CA2112: los tipos seguros no deben exponer los campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo ( `BadPublicInstanceFields` ) que infringe esta regla. `GoodPublicInstanceFields`muestra el código corregido.
+ En el ejemplo siguiente se muestra un tipo ( `BadPublicInstanceFields` ) que infringe esta regla. `GoodPublicInstanceFields` muestra el código corregido.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 

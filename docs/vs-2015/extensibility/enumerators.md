@@ -1,5 +1,5 @@
 ---
-title: Los enumeradores | Microsoft Docs
+title: Enumeradores | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,23 +11,23 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65a03a8dc741ec86aca3137f49cd753722ede215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204561"
 ---
-# <a name="enumerators"></a>Enumeradores
+# <a name="enumerators"></a>Enumerators
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta sección enumeran los tipos de datos del enumerador en la API de complemento de Control de origen que debe conocer el complemento de control de código fuente.  
+En esta sección se enumeran los tipos de datos de enumerador de la API del complemento de control de código fuente que debe conocer el complemento de control de código fuente.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Código de comando](../extensibility/command-code-enumerator.md)  
- Enumera las opciones para la [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) y [SccPopulateList](../extensibility/sccpopulatelist-function.md) funciones.  
+ Enumera las opciones de las funciones [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) y [SccPopulateList](../extensibility/sccpopulatelist-function.md) .  
   
- [Mensaje](../extensibility/message-enumerator.md)  
- Enumera los marcadores utilizados para la devolución de llamada impresión [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ [Message](../extensibility/message-enumerator.md)  
+ Enumera las marcas usadas para la devolución de llamada de impresión, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
  [Código de estado de archivo](../extensibility/file-status-code-enumerator.md)  
  Contiene valores constantes con nombre que especifican el estado de un archivo bajo control de código fuente.  
@@ -37,16 +37,16 @@ Esta sección enumeran los tipos de datos del enumerador en la API de complement
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Creación de un complemento de control de código fuente](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Define el SDK de complemento de Control de origen y se describen los recursos incluidos.  
+ Define el SDK del complemento de control de código fuente y describe los recursos incluidos.  
   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
- Pide al usuario para las opciones avanzadas para el comando especificado.  
+ Solicita al usuario opciones avanzadas para el comando especificado.  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Examina la lista de archivos para su estado actual. Además, utiliza el `pfnPopulate` función para notificar al llamador cuando un archivo no coincide con los criterios para la `nCommand`.  
+ Examina la lista de archivos en busca de su estado actual. Además, utiliza la `pfnPopulate` función para notificar al llamador cuando un archivo no coincide con los criterios de `nCommand` .  
   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Describe la función de devolución de llamada que se usa por [SccOpenProject](../extensibility/sccopenproject-function.md) para mostrar mensajes desde el complemento a través del IDE de control de origen.  
+ Describe la función de devolución de llamada que usa [SccOpenProject](../extensibility/sccopenproject-function.md) para mostrar mensajes desde el complemento de control de código fuente a través del IDE.  
   
  [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)  
- Proporciona una lista completa de todos los elementos de la API de complemento de Control de código fuente.
+ Proporciona una lista completa de todos los elementos de la API del complemento de control de código fuente.

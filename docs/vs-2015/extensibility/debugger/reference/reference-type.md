@@ -13,13 +13,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 509c0bc4547ca057c39a6c07ba8ccbe63743b914
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204904"
 ---
-# <a name="referencetype"></a>REFERENCE_TYPE
+# <a name="reference_type"></a>REFERENCE_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Especifica el tipo de referencia.  
@@ -43,24 +43,24 @@ public enum enum_REFERENCE_TYPE { 
   
 ## <a name="members"></a>Miembros  
  REF_TYPE_WEAK  
- Especifica una referencia débil. No se puede combinar con `REF_TYPE_STRONG`.  
+ Especifica una referencia débil. No se puede combinar con `REF_TYPE_STRONG` .  
   
  REF_TYPE_STRONG  
- Especifica una referencia segura. No se puede combinar con `REF_TYPE_WEAK`.  
+ Especifica una referencia segura. No se puede combinar con `REF_TYPE_WEAK` .  
   
-## <a name="remarks"></a>Comentarios  
- Usar como el `dwRefType` miembro de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura.  
+## <a name="remarks"></a>Observaciones  
+ Se usa como `dwRefType` miembro de la estructura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .  
   
- Pasado como parámetro a la [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) método.  
+ Se pasa como un parámetro al método [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)

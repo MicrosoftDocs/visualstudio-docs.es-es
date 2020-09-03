@@ -1,5 +1,5 @@
 ---
-title: Referencia de esquemas de paquete y producto | Microsoft Docs
+title: Referencia de esquemas de productos y paquetes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -27,36 +27,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188955"
 ---
 # <a name="product-and-package-schema-reference"></a>Referencia de esquemas de productos y paquetes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un *archivo producto* es un manifiesto XML que describe todas las dependencias externas requeridas por un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Algunos ejemplos de dependencias externas son el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y Microsoft Data Access Components (MDAC). Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como ensamblados localizables, contratos de licencia y documentación.  
+Un *archivo de producto* es un manifiesto XML que describe todas las dependencias externas que requiere una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Entre los ejemplos de dependencias externas se incluyen [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y Microsoft Data Access Components (MDAC). Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como los ensamblados localizados, los contratos de licencia y la documentación.  
   
- El archivo del producto y de paquetes consta de un nivel superior `Product` o `Package` elemento, cada uno de los cuales contiene los siguientes elementos.  
+ El archivo de productos y paquetes consta de un elemento de nivel superior `Product` o `Package` , cada uno de los cuales contiene los elementos siguientes.  
   
-|Elemento|DESCRIPCIÓN|Atributos|  
+|Elemento|Descripción|Atributos|  
 |-------------|-----------------|----------------|  
-|[\<Product> Element](../deployment/product-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de producto.|None|  
-|[\<Package> Element](../deployment/package-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de paquete.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts> Element](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para los archivos de producto. Otros productos que instala o depende de este producto.|None|  
-|[\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)|Elemento necesario. Las listas de las comprobaciones de dependencia para llevar a cabo en el equipo local durante la instalación.|None|  
-|[\<Commands> Element](../deployment/commands-element-bootstrapper.md)|Elemento necesario.  Ejecuta una o más comprobaciones de instalación como se describe en `InstallChecks`e indica qué paquete de instalación debe la comprobación de errores.|None|  
-|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Elemento necesario. Enumera los paquetes que podrían instalarse por este proceso de instalación.|None|  
-|[\<Strings> Element](../deployment/strings-element-bootstrapper.md)|Elemento necesario. Almacenes de versiones localizadas de las cadenas de error y de nombre de producto.|None|  
+|[Elemento \<Product>](../deployment/product-element-bootstrapper.md)|Elemento de nivel superior requerido para los archivos de producto.|Ninguno|  
+|[Elemento \<Package>](../deployment/package-element-bootstrapper.md)|Elemento de nivel superior requerido para los archivos de paquete.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[Elemento \<RelatedProducts>](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para los archivos de producto. Otros productos que este producto instala o de los que depende.|Ninguno|  
+|[Elemento \<InstallChecks>](../deployment/installchecks-element-bootstrapper.md)|Elemento necesario. Muestra las comprobaciones de dependencia que se deben realizar en el equipo local durante la instalación.|Ninguno|  
+|[Elemento \<Commands>](../deployment/commands-element-bootstrapper.md)|Elemento necesario.  Ejecuta una o varias comprobaciones de instalación como se describe en `InstallChecks` y denota qué paquete se debe instalar si se produce un error en la comprobación.|Ninguno|  
+|[Elemento \<PackageFiles>](../deployment/packagefiles-element-bootstrapper.md)|Elemento necesario. Enumera los paquetes que se pueden instalar con este proceso de instalación.|Ninguno|  
+|[Elemento \<Strings>](../deployment/strings-element-bootstrapper.md)|Elemento necesario. Almacena las versiones localizadas del nombre del producto y las cadenas de error.|None|  
   
-## <a name="remarks"></a>Comentarios  
- El esquema del paquete es consumido por Setup.exe, un programa de código auxiliar generado por la tarea de arranque de MS Build que contiene poca lógica codificada de forma rígida de su propio. El esquema controla todos los aspectos del proceso de instalación.  
+## <a name="remarks"></a>Observaciones  
+ El esquema del paquete es utilizado por Setup.exe, un programa de código auxiliar generado por la tarea de arranque de MS Build que contiene poca lógica codificada de forma rígida. El esquema impulsa cada aspecto del proceso de instalación.  
   
- `InstallChecks` las pruebas que setup.exe debe realizar la existencia de un paquete determinado. `PackageFiles` Enumera todos los paquetes que el proceso de instalación que tenga que instalar, debe generar un error de una prueba determinada. Cada entrada de comando de comandos ejecuta una de las pruebas descritas por `InstallChecks`y especifica qué `PackageFile` para ejecutar la prueba falle. Puede usar el `Strings` elemento que se va a localizar los nombres de producto y los mensajes de error, por lo que puede usar un único binario de instalación para instalar la aplicación para cualquier número de idiomas.  
+ `InstallChecks` las pruebas que setup.exe deben realizar para la existencia de un paquete determinado. `PackageFiles` enumera todos los paquetes que el proceso de instalación puede tener que instalar, si se produce un error en una prueba determinada. Cada entrada de comando en comandos ejecuta una de las pruebas descritas por `InstallChecks` y especifica qué `PackageFile` se va a ejecutar si se produce un error en la prueba. Puede usar el `Strings` elemento para localizar los nombres de producto y los mensajes de error, de modo que pueda usar un único binario de instalación para instalar la aplicación para cualquier número de idiomas.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se muestra un archivo completa del producto para instalar el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ En el ejemplo de código siguiente se muestra un archivo de producto completo para instalar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -160,6 +160,6 @@ Un *archivo producto* es un manifiesto XML que describe todas las dependencias e
 </Product>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)

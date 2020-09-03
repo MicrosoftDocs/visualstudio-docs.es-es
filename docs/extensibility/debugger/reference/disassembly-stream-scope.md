@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE Microsoft Docs
+title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737272"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
@@ -46,28 +46,28 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `DSS_HUGE`\
-Especifica que desensamblar el contexto de código generaría más resultados de los que un cliente normalmente desearía recuperar en una sola llamada.
+Especifica que el desensamblado del contexto de código generará más resultados de los que un cliente normalmente querrá recuperar en una sola llamada.
 
 `DSS_FUNCTION`\
-Especifica que se debe desensamblar la función contenida en el contexto de código. Especifica que la secuencia de desensamblado representa una función, cuando se devuelve por el [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.
+Especifica que la función contenida en el contexto del código debe desensamblarse. Especifica que el flujo del desensamblado representa una función, cuando lo devuelve el método [getscope (](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
 `DSS_MODULE`\
-Cuando el `IDebugDisassemblyStream2::GetScope` método lo devuelve, especifica que la secuencia de desensamblado representa un módulo.
+Cuando lo devuelve el `IDebugDisassemblyStream2::GetScope` método, especifica que la secuencia del desensamblado representa un módulo.
 
 `DSS_ALL`\
 Especifica el desensamblado para todo el espacio de direcciones.
 
 ## <a name="remarks"></a>Observaciones
-Se pasa como argumento al método [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) y devuelto por el método [GetScope.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
+Se pasa como argumento al método [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) y lo devuelve el método [getscope (](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
-Estos valores se pueden combinar `OR`con un archivo .
+Estos valores se pueden combinar con una operación bit a bit `OR` .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

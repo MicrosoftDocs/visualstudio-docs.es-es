@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e48bf723b8b1cb77cc1f7f4de9cfb562caccde84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672809"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>Referencia de la API para la extensibilidad del modelado UML
@@ -32,5 +32,5 @@ Puede escribir código de programa para leer y modificar los modelos creados con
 |Microsoft.VisualStudio.Uml.Interfaces.dll|-Leer y cambiar elementos del modelo como IUseCase, IAssociation, etc.<br />-Navegar por las relaciones entre elementos.<br /><br /> Los espacios de nombres y tipos se corresponden con los que se definen en la especificación de UML.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll|-Crear nuevas instancias de elementos de modelo<br />-Obtener acceso y modificar formas y diagramas.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [referencia de la API para el SDK de modelado para Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

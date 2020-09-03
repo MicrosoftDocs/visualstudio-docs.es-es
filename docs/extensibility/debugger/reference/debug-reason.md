@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON Microsoft Docs
+title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737427"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
-Especifica por qué se inició el proceso para la depuración.
+Especifica la razón por la que se inició el proceso para la depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,29 +48,29 @@ public enum enum_DEBUG_REASON {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `DEBUG_REASON_ERROR`\
-Se ha producido un error no específico (esto se utiliza como condición predeterminada cuando no cabe ninguna de las otras razones).
+Se produjo un error no específico (se usa como condición predeterminada cuando no cabe ninguna de las otras razones).
 
 `DEBUG_REASON_USER_LAUNCHED`\
-El proceso se inició a petición del usuario.
+El proceso se inició en la solicitud del usuario.
 
 `DEBUG_REASON_USER_ATTACHED`\
-El proceso ya en ejecución fue asociado por el usuario.
+El usuario ha adjuntado el proceso que ya se está ejecutando.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-El proceso se adjuntó automáticamente al momento en que se inició.
+El proceso se adjuntó automáticamente al iniciarse.
 
 `DEBUG_REASON_CAUSALITY`\
-El proceso se inició debido a un evento de depuración *Just-In-Time* (JIT).
+El proceso se ha iniciado debido a un evento de depuración *Just-in-Time* (JIT).
 
 ## <a name="remarks"></a>Observaciones
-Se devuelve desde el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.
+Se devuelve desde el método [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

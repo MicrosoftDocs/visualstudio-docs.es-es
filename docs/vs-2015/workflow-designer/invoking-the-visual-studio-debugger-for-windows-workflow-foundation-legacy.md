@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bcceca362f3c2a891d36f8f4e8071d0e35c8f164
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658980"
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Invocar el Depurador de Microsoft Visual Studio para Windows Workflow Foundation (Heredado)
@@ -49,11 +49,11 @@ En este tema se describe cómo usar el depurador de [!INCLUDE[vsprvs](../include
  Para depurar un flujo de trabajo adjuntando a un proceso, seleccione el proceso disponible en el cuadro de lista **procesos disponibles** del cuadro de diálogo **asociar al proceso** . Si es **automático: el código de flujo de trabajo** no se muestra en el cuadro de texto **adjuntar a** , haga clic en **seleccionar**. En el cuadro de diálogo **Seleccionar tipo de código** , haga clic en **depurar estos tipos de código** y seleccione **flujo de trabajo**. A continuación, haga clic en **Aceptar** y en **asociar**.
 
 ## <a name="debugging-with-f5"></a>Depurar con F5
- Si una aplicación host de flujo de trabajo y un archivo DLL de flujo de trabajo se encuentran en distintos proyectos de Visual Studio, por ejemplo, cuando se usa una biblioteca de actividades de flujo de trabajo, debe establecer el proyecto DLL de flujo de trabajo como proyecto de inicio de la solución de Visual Studio para depurar el flujo de trabajo. usar **F5**. También debe establecer la ruta de acceso a la aplicación host en la propiedad **programa externo de inicio** del proyecto dll del flujo de trabajo.
+ Si una aplicación host de flujo de trabajo y un archivo DLL de flujo de trabajo se encuentran en distintos proyectos de Visual Studio, por ejemplo, cuando se usa una biblioteca de actividades de flujo de trabajo, debe establecer el proyecto DLL de flujo de trabajo como proyecto de inicio de la solución de Visual Studio para depurar el flujo de trabajo mediante **F5**. También debe establecer la ruta de acceso a la aplicación host en la propiedad **programa externo de inicio** del proyecto dll del flujo de trabajo.
 
  Para establecer un proyecto de inicio en Explorador de soluciones, haga clic con el botón derecho en el nombre del proyecto y seleccione **establecer como proyecto de inicio**. Para establecer la ruta de acceso al host en la propiedad **programa externo de inicio** , haga doble clic en el nodo **propiedades** del proyecto de flujo de trabajo en explorador de soluciones y seleccione la pestaña **depurar** . En **acción de inicio**, seleccione **programa externo de inicio** y escriba la ruta de acceso al archivo. exe que hospeda el flujo de trabajo que desea depurar.
 
  Si la aplicación host se establece como proyecto de inicio, sólo se invoca el depurador de Visual Studio para depurar, y no se invoca el depurador de [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] for Windows Workflow Foundation. Si se utiliza el depurador de Visual Studio, sólo se alcanzan los puntos de interrupción del código de C# o Visual Basic, pero no los puntos de interrupción establecidos en el diseñador de flujo de trabajo. Por ejemplo, se utiliza un punto de interrupción establecido en una actividad <xref:System.Workflow.Activities.ParallelActivity> en el diseñador si se utiliza el depurador de [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] for Windows Workflow Foundation, pero no si se utiliza el depurador de Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: establecer puntos de interrupción en flujos de trabajo (heredado)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [Depurar flujos de trabajo heredados](../workflow-designer/debugging-legacy-workflows.md)

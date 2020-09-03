@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba0f7cb33ef0bf7fde63d53997d014536e46a85b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204967"
 ---
-# <a name="providerfields"></a>PROVIDER_FIELDS
+# <a name="provider_fields"></a>PROVIDER_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica las propiedades asociadas con un proveedor de programa.  
+Especifica las propiedades asociadas a un proveedor de programas.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -48,18 +48,18 @@ public enum enum_PROVIDER_FIELDS {
  PFIELD_IS_DEBUGGER_PRESENT  
  El `fIsDebuggerPresent` campo es válido.  
   
-## <a name="remarks"></a>Comentarios  
- Estos valores se devuelven en el `Fields` miembro de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura para indicar qué campos de la estructura se rellenaron explícitamente.  
+## <a name="remarks"></a>Observaciones  
+ Estos valores se devuelven en el `Fields` miembro de la estructura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) para indicar qué campos de la estructura se rellenaron explícitamente.  
   
- Estos valores se pueden combinar con un bit a bit `OR`.  
+ Estos valores se pueden combinar con una operación bit a bit `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)

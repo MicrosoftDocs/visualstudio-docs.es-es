@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
+title: 'IDebugCoreServer3:: CreateInstanceInServer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1d8964a79aaeb7b90dfbc809ec547d0282d79fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205266"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
@@ -48,23 +48,23 @@ int CreateInstanceInServer(
   
 #### <a name="parameters"></a>Parámetros  
  `szDll`  
- [in] Ruta de acceso a la dll que implementa el CLSID especificado en el `clsidObject` parámetro. Si se trata de `NULL`, a continuación, COM `CoCreateInstance` se llama a la función.  
+ de Ruta de acceso al archivo DLL que implementa el CLSID especificado en el `clsidObject` parámetro. Si es `NULL` , se llama a la `CoCreateInstance` función de com.  
   
  `wLangId`  
- [in] Configuración regional del motor de depuración. Esto puede ser 0 si la [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) no se debe llamar al método.  
+ de Configuración regional del motor de depuración. Puede ser 0 si no se debe llamar al método [setlocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) .  
   
  `clsidObject`  
- [in] CLSID del motor de depuración para crear.  
+ de CLSID del motor de depuración que se va a crear.  
   
  `riid`  
- [in] Id. de interfaz de la interfaz específica para recuperar desde el objeto de clase.  
+ de IDENTIFICADOR de interfaz de la interfaz específica que se va a recuperar del objeto de clase.  
   
  `ppvObject`  
- [out] `IUnknown` interfaz desde el objeto con instancias. Convertir o calcular las referencias de este objeto en la interfaz deseada.  
+ [out] `IUnknown` interfaz del objeto con instancias. Convierta este objeto en la interfaz deseada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540080"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Pruebas unitarias de aplicaciones C++ existentes con el Explorador de pruebas
@@ -119,7 +119,7 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
 
    3. Edite los directorios de inclusión y de biblioteca:
 
-       |Propiedad|Valor|
+       |Propiedad|Value|
        |-|-|
        |**Directorios de archivos de inclusión**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**Directorios de archivos de bibliotecas**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -156,7 +156,7 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
 
    Para más información, vea [Pruebas unitarias de código nativo con el Explorador de pruebas](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c).
 
-## <a name="run-the-tests"></a>Ejecutar las pruebas
+## <a name="run-the-tests"></a>Ejecución de las pruebas
 
 1. En el menú **Ver** , elija **Otras ventanas**, **Explorador de pruebas**.
 
