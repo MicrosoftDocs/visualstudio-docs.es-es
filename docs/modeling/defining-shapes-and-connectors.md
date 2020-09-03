@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589674"
 ---
 # <a name="define-shapes-and-connectors"></a>Definir formas y conectores
 
 Hay varios tipos básicos de formas que puede usar para mostrar información en un diagrama en un lenguaje específico de dominio (DSL).
 
-## <a name="shapeTypes"></a>Tipos básicos de formas y conectores
+## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> Tipos básicos de formas y conectores
 
 Un diagrama DSL muestra una colección de *formas* intervinculadas por líneas o *conectores*. Normalmente, aunque no siempre:
 

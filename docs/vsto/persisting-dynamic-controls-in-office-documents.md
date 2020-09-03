@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71256003"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Conservar controles dinámicos en documentos de Office
@@ -51,7 +51,7 @@ En la tabla siguiente se muestra el objeto de Office nativo que se deja en un do
 
 Puede volver a crear controles host dinámicos en lugar de los controles nativos existentes cada vez que un usuario abre el documento. La creación de controles host de esta manera cuando se abre un documento simula la experiencia que podrían esperar los usuarios.
 
-Para volver a crear un control host para Word, o un <xref:Microsoft.Office.Tools.Excel.NamedRange> control <xref:Microsoft.Office.Tools.Excel.ListObject> host o para Excel, utilice una `Add` \< *clase de control*> método de <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> un <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> objeto o. Utilice un método que tenga un parámetro para el objeto de Office nativo.
+Para volver a crear un control host para Word, o un <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Tools.Excel.ListObject> control host o para Excel, use un `Add` \<*control class*> método de un <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> objeto o. Utilice un método que tenga un parámetro para el objeto de Office nativo.
 
 Por ejemplo, si quiere crear un control host <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> desde un elemento <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> nativo existente cuando se abre el documento, use el método <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> y pase el elemento <xref:Microsoft.Office.Interop.Excel.ListObject>existente. En el ejemplo de código siguiente esto se muestra en un proyecto de nivel de documento para Excel. El código vuelve a crear un elemento <xref:Microsoft.Office.Tools.Excel.ListObject> dinámico que se basa en un elemento <xref:Microsoft.Office.Interop.Excel.ListObject> existente llamado `MyListObject` en la clase `Sheet1` .
 
@@ -60,9 +60,9 @@ Por ejemplo, si quiere crear un control host <xref:Microsoft.Office.Tools.Excel.
 
 ### <a name="re-create-chart"></a>Volver a crear el gráfico
 
-Para volver a crear un <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> control host, primero debe eliminar el nativo <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>y, a continuación, volver a crear <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> el mediante el <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> método. No hay ninguna `Add` \< *clase de control*> método que le permita crear un nuevo <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> basado en un existente <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>.
+Para volver a crear un <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> control host, primero debe eliminar el nativo <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> y, a continuación, volver a crear el mediante <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> el <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> método. No hay ningún `Add` \<*control class*> método que le permita crear un nuevo <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> basándose en un existente <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> .
 
-Si no elimina primero el nativo <xref:Microsoft.Office.Interop.Excel.Chart>, creará un segundo gráfico duplicado al volver a crear el. <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>
+Si no elimina primero el nativo <xref:Microsoft.Office.Interop.Excel.Chart> , creará un segundo gráfico duplicado al volver a crear el <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> .
 
 ## <a name="persist-windows-forms-controls-in-documents"></a>Conservar Windows Forms controles en documentos
 
@@ -78,9 +78,9 @@ Puede volver a crear los controles de formularios Windows Forms eliminados cuand
 
 1. Almacenar información sobre el tamaño, la ubicación y el estado de los controles cuando se guarda o se cierra el documento. En una personalización de nivel de documento, puede guardar los datos en la memoria caché de datos del documento. En un complemento de VSTO, puede guardar los datos en un elemento XML personalizado del documento.
 
-2. Volver a crear los controles en un evento que se genera cuando se abre el documento. En los proyectos de nivel de documento, puede hacerlo en los controladores de eventos `Sheet`*n*`_Startup` o `ThisDocument_Startup` En proyectos de complemento de VSTO, puede hacerlo en los controladores de eventos de los eventos <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
+2. Volver a crear los controles en un evento que se genera cuando se abre el documento. En los proyectos de nivel de documento, puede hacerlo en los `Sheet` *n* `_Startup` controladores de `ThisDocument_Startup` eventos n o. En proyectos de complemento de VSTO, puede hacerlo en los controladores de eventos de los eventos <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
-### <a name="removingActiveX"></a>Quitar contenedores de ActiveX en un complemento
+### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> Quitar contenedores de ActiveX en un complemento
 
 Al agregar controles de Windows Forms dinámicos a documentos mediante un complemento de VSTO, puede impedir que los contenedores de ActiveX de los controles aparezcan en el documento la próxima vez que se abra de las siguientes maneras.
 
@@ -95,7 +95,7 @@ En el ejemplo de código siguiente se muestra cómo llamar al método `GetVstoOb
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
-Aunque el método `GetVstoObject` se utiliza principalmente para generar un nuevo elemento host en tiempo de ejecución, este método también borra todos los contenedores de ActiveX del documento la primera vez que se llama para un documento específico. Para obtener más información sobre cómo usar el `GetVstoObject` método, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+Aunque el `GetVstoObject` método se utiliza principalmente para generar un nuevo elemento host en tiempo de ejecución, este método también borra todos los contenedores de ActiveX del documento la primera vez que se llama para un documento específico. Para obtener más información sobre cómo usar el `GetVstoObject` método, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 Si el complemento de VSTO crea controles dinámicos cuando se abre el documento, el complemento de VSTO ya llamará al `GetVstoObject` método como parte del proceso para crear los controles. No es necesario agregar una llamada independiente al método `GetVstoObject` para quitar los contenedores de ActiveX en este escenario.
 
@@ -108,6 +108,6 @@ En el ejemplo de código siguiente se muestra cómo quitar todos los controles d
 [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
 [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

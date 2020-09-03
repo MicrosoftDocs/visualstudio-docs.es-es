@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551877"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Arquitectura de las soluciones de Office en Visual Studio
@@ -33,7 +33,7 @@ ms.locfileid: "69551877"
 
 Describe cómo funcionan las personalizaciones de nivel de documento y cómo las perciben de manera diferente el desarrollador y el usuario final.
 
-[Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)
+[Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 
 Describe los componentes de complementos de VSTO y cómo los cargan las aplicaciones.
 
@@ -51,11 +51,11 @@ Explica cómo funcionan las propiedades personalizadas del documento en las pers
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-[Información general sobre &#40;el desarrollo de soluciones de Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
 Proporciona una introducción al uso de Microsoft Office como plataforma para el desarrollo de soluciones empresariales.
 
-[Introducción &#40;al desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
 Proporciona vínculos a información acerca de cómo configurar un equipo de desarrollo para crear soluciones de Office, cómo empezar a crear soluciones y qué cambios se han producido desde las versiones anteriores de Office Developer Tools en Visual Studio.
 
@@ -63,6 +63,6 @@ Proporciona vínculos a información acerca de cómo configurar un equipo de des
 
 Proporciona vínculos a información sobre la creación de soluciones de Office.
 
-[Desarrollo de &#40;Office de referencia general en Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Referencia general &#40;desarrollo de Office en Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
 Proporciona vínculos a información acerca de elementos de la interfaz de usuario en proyectos de Office, aplicaciones y manifiestos de implementación para proyectos de Office y las API de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72535693"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Tutorial: usar el análisis de código estático para buscar defectos de código
@@ -23,7 +23,7 @@ En este tutorial, analizará un proyecto administrado para detectar defectos de 
 
 Este artículo le guiará a través del proceso de uso del análisis heredado para analizar los ensamblados de código administrado de .NET para que cumplan las directrices de diseño de .NET.
 
-## <a name="create-a-class-library"></a>Crear una biblioteca de clases
+## <a name="create-a-class-library"></a>Creación de una biblioteca de clases
 
 1. Abra Visual Studio y cree un nuevo proyecto a partir de la plantilla de **biblioteca de clases (.NET Framework)** .
 
@@ -53,7 +53,7 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
 1. Seleccione el proyecto CodeAnalysisManagedDemo en **Explorador de soluciones**.
 
-2. En el menú **Proyecto**, haga clic en **Propiedades**.
+2. En el menú **Proyecto** , haga clic en **Propiedades**.
 
    Se muestra la página de propiedades CodeAnalysisManagedDemo.
 
@@ -95,23 +95,23 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
    [CA1014: Marque los ensamblados con CLSCompliantAttribute](../code-quality/ca1014.md): agregue el código `[assembly: CLSCompliant(true)]` al final del archivo AssemblyInfo.cs.
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo`.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo` .
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo`.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo` .
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` a la clase demo. También deberá agregar una instrucción de `using` para <xref:System.Runtime.Serialization?displayProperty=fullName>.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` a la clase demo. También deberá agregar una `using` instrucción para <xref:System.Runtime.Serialization?displayProperty=fullName> .
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo () : base() { }` a la clase `demo`.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo () : base() { }` a la clase `demo` .
 
-   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el uso de mayúsculas y minúsculas del espacio de nombres `testCode` a `TestCode`.
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el uso de mayúsculas y minúsculas del espacio de nombres `testCode` a `TestCode` .
 
-   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el nombre del miembro a `Demo`.
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el nombre del miembro a `Demo` .
 
-   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el nombre del miembro a `Item`.
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el nombre del miembro a `Item` .
 
-   [CA1710: los identificadores deberían tener el sufijo correcto](../code-quality/ca1710.md): cambie el nombre de la clase y sus constructores a `DemoException`.
+   [CA1710: los identificadores deberían tener el sufijo correcto](../code-quality/ca1710.md): cambie el nombre de la clase y sus constructores a `DemoException` .
 
-   [CA2237: Marque los tipos ISerializable con SerializableAttribute](../code-quality/ca2237.md): agregue el atributo `[Serializable ()]` a la clase `demo`.
+   [CA2237: Marque los tipos ISerializable con SerializableAttribute](../code-quality/ca2237.md): agregue el `[Serializable ()]` atributo a la clase `demo` .
 
    [CA2210: los ensamblados deben tener nombres seguros válidos](../code-quality/ca2210.md): signo ' CodeAnalysisManagedDemo ' con una clave de nombre seguro:
 
@@ -123,9 +123,9 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
    1. Active la casilla **firmar el ensamblado** .
 
-   1. En la lista **elegir un archivo de clave de nombre de cadena** , seleccione **\<New >** .
+   1. En la lista **elegir un archivo de clave de nombre de cadena** , seleccione **\<New>** .
 
-      Aparecerá el cuadro de diálogo **crear clave de nombre seguro** .
+      Aparecerá el cuadro de diálogo **Crear clave de nombre seguro**.
 
    1. En **nombre de archivo de clave**, escriba **TestKey**.
 
@@ -164,12 +164,12 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
     1. Seleccione la advertencia en el **lista de errores**.
 
-    1. En el menú contextual, elija **suprimir**  > **en archivo de supresión**.
+    1. En el menú contextual, elija **suprimir**  >  **en archivo de supresión**.
 
 1. Recompile el proyecto.
 
      El proyecto se compila sin advertencias ni errores.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Análisis de código para código administrado](../code-quality/code-analysis-for-managed-code-overview.md)

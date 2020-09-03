@@ -12,19 +12,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0fda84d5f7467a65b254d3b12b0466b6ab415d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196878"
 ---
 # <a name="deploying-project-types"></a>Implementación de tipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] instala un nuevo agregador de tipo de proyecto (ProjectAggregator2.dll) y también un paquete de Windows Installer para la redistribución (ProjectAggregator2.msi). Debe usar el nuevo agregador para tipos de proyecto de código administrado. ProjectAggregator2 funciona alternativas limitaciones en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyecto agregador que impiden que los tipos de proyecto de código administrado funciona correctamente. Los pasos siguientes describen cómo cambiar el VSPackage para usar el nuevo agregador.  
+[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] instala un nuevo agregador de tipo de proyecto (ProjectAggregator2.dll) y también un paquete de Windows Installer para la redistribución (ProjectAggregator2.msi). Debe usar el nuevo agregador para los tipos de proyecto de código administrado. ProjectAggregator2 funciona en torno a las limitaciones del [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] agregador de proyectos que evitan que los tipos de proyecto de código administrado funcionen correctamente. En los pasos siguientes se describe cómo cambiar el VSPackage para usar el nuevo agregador.  
   
-1. Quitar el proyecto NativeHierarchyWrapper de la solución.  
+1. Quite el proyecto NativeHierarchyWrapper de la solución.  
   
-2. Quite todos los archivos binarios de NativeHierarchyWrapper de su programa de instalación.  
+2. Quite todos los archivos binarios de NativeHierarchyWrapper de la configuración.  
   
-3. Agregar ProjectAggregator2.msi a su instalación.
+3. Agregue ProjectAggregator2.msi a la configuración.

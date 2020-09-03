@@ -1,5 +1,5 @@
 ---
-title: Ventana Comandos | Microsoft Docs
+title: Comandos (ventana) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c3bcac9f320840faaed32d0622f30e4cbd288ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660847"
 ---
 # <a name="command-window"></a>Ventana Comandos
@@ -122,7 +122,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora. En este ejemplo se muestra cómo buscar el patrón "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usar comillas para los nombres de ruta con espacios
- Si, por ejemplo, quiere abrir un archivo que tiene una ruta que contiene espacios, debe colocar comillas alrededor de la ruta o del segmento de ruta que contiene espacios: **C:\\"Archivos de programa"** o **"C:\Archivos de programa"** .
+ Si, por ejemplo, quiere abrir un archivo que tiene una ruta que contiene espacios, debe colocar comillas alrededor de la ruta o del segmento de ruta que contiene espacios: **C:\\"Archivos de programa"** o **"C:\Archivos de programa"**.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Alias de comandos](../../ide/reference/visual-studio-command-aliases.md) de Visual Studio [comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)

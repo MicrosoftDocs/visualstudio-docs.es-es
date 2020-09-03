@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551545"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un Visual Studio Tools para el proyecto de sistema de Microsoft Office
@@ -59,7 +59,7 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 5. Active o desactive **el acceso de confianza al modelo de objetos de proyecto de VBA** para habilitar o deshabilitar el acceso a proyectos de Visual Basic.
 
-6. Haga clic en **OK**.
+6. Haga clic en **Aceptar**.
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Para habilitar o deshabilitar el acceso a Visual Basic proyectos con el sistema Microsoft Office 2007
 
@@ -69,7 +69,7 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 3. Seleccione esta casilla para habilitar o deshabilitar el **acceso de confianza a Visual Basic proyecto**.
 
-4. Haga clic en **OK**.
+4. Haga clic en **Aceptar**.
 
 ## <a name="to-set-your-office-macro-security-level"></a>Para establecer el nivel de seguridad de las macros de Office
 
@@ -83,7 +83,7 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 5. En la sección **configuración de macro** , seleccione el valor deseado.
 
-6. Haga clic en **OK**.
+6. Haga clic en **Aceptar**.
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Para establecer el nivel de seguridad de macros de Office con el sistema Microsoft Office 2007
 
@@ -99,13 +99,13 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 2. Seleccione Office en la lista **programas actualmente instalados** .
 
-3. Haga clic en **cambiar**.
+3. Haga clic en **Cambiar**.
 
 4. Seleccione **Agregar o quitar características**y, a continuación, haga clic en **continuar**.
 
 5. Seleccione **elegir personalización avanzada de aplicaciones**y, a continuación, haga clic en **siguiente**.
 
-6. Expanda Características compartidas de **Office** en la lista **Elija las opciones de actualización para aplicaciones y herramientas** .
+6. Expanda **características compartidas de Office** en la lista **Elija las opciones de actualización para aplicaciones y herramientas** .
 
 7. Abra el menú desplegable situado junto a **Visual Basic para aplicaciones**y, a continuación, haga clic en **Ejecutar desde mi PC**.
 
@@ -119,7 +119,7 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 2. Seleccione su versión de Office en la lista **programas actualmente instalados** .
 
-3. Haga clic en **cambiar**.
+3. Haga clic en **Cambiar**.
 
 4. Seleccione **reinstalar o reparar**y, a continuación, haga clic en **siguiente**.
 

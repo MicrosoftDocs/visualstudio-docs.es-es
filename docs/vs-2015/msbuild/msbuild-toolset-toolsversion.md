@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf22fdf3d0cd9196794aa3929e9952f57bbfa2f0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871997"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
@@ -38,7 +38,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 
  Cuando se define un valor `ToolsVersion` en un archivo de proyecto, MSBuild usa ese valor para determinar los valores de las propiedades del conjunto de herramientas que están disponibles para el proyecto. Una propiedad del conjunto de herramientas es `$(MSBuildToolsPath)`, que especifica la ruta de acceso de las herramientas de .NET Framework. Solo se requiere esa propiedad (o `$(MSBuildBinPath)`) del conjunto de herramientas.
 
- A partir de Visual Studio 2013, la versión del conjunto de herramientas MSBuild es la misma que el número de versión de Visual Studio. De forma predeterminada, MSBuild usa este conjunto de herramientas en Visual Studio y en la línea de comandos, independientemente de la versión del conjunto de herramientas especificada en el archivo de proyecto.  Este comportamiento puede invalidarse usando la marca /ToolsVersion. Para obtener más información, vea [Invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ A partir de Visual Studio 2013, la versión del conjunto de herramientas MSBuild es la misma que el número de versión de Visual Studio. De forma predeterminada, MSBuild usa este conjunto de herramientas en Visual Studio y en la línea de comandos, independientemente de la versión del conjunto de herramientas especificada en el archivo de proyecto.  Este comportamiento puede invalidarse usando la marca /ToolsVersion. Para obtener más información, vea [invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
  En el ejemplo siguiente, MSBuild busca el archivo Microsoft.CSharp.targets usando la propiedad reservada `MSBuildToolsPath`:
 
@@ -46,9 +46,9 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- Puede modificar el valor de `MSBuildToolsPath` definiendo un conjunto de herramientas personalizado. Para obtener más información, vea [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md).
+ Puede modificar el valor de `MSBuildToolsPath` definiendo un conjunto de herramientas personalizado. Para obtener más información, vea [configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md) .
 
- Al compilar una solución en la línea de comandos, si se especifica `ToolsVersion` para msbuild.exe, todos los proyectos y las dependencias entre proyectos se compilarán de acuerdo con esa `ToolsVersion`, aunque cada proyecto de la solución especifique su propia `ToolsVersion`. Para definir el valor `ToolsVersion` según el proyecto, vea [Invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ Al compilar una solución en la línea de comandos, si se especifica `ToolsVersion` para msbuild.exe, todos los proyectos y las dependencias entre proyectos se compilarán de acuerdo con esa `ToolsVersion`, aunque cada proyecto de la solución especifique su propia `ToolsVersion`. Para definir el `ToolsVersion` valor en cada proyecto, vea [invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
  El atributo `ToolsVersion` también se usa para la migración del proyecto. Por ejemplo, si abre un proyecto de Visual Studio 2008 en Visual Studio 2010, el archivo de proyecto se actualiza para incluir ToolsVersion=”4.0”. Si después intenta abrir ese proyecto en Visual Studio 2008, este no reconocerá el atributo `ToolsVersion` actualizado y compilará el proyecto como si dicho atributo todavía estuviese establecido en 3.5.
 
@@ -71,7 +71,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 
 - Mediante los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>
 
-  Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas conforme a esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.
+  Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas en función de esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.
 
   Estas son las propiedades del conjunto de herramientas:
 

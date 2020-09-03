@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 043e9373f242523b7925a9ae775be6789f7cfc20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660883"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
@@ -39,7 +39,7 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
 
  /projectconfig `ProjConfigName` Opcional. Nombre de una configuración de compilación de proyecto que se usará para limpiar el `/project` mencionado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Este modificador realiza la misma función que el comando de menú **Limpiar solución** en el entorno de desarrollo integrado (IDE).
 
  Escriba las cadenas que incluyen espacios entre comillas dobles.
@@ -57,5 +57,5 @@ Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Modificadores de la línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>Consulte también
+ [Modificadores de la línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660803"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -36,7 +36,7 @@ Devenv /debugexe ExecutableFile
 
  Si el archivo .exe no se encuentra o no existe, no se muestra ningún error ni advertencia y [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se inicia normalmente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Las cadenas que siguen al parámetro `ExecutableFile` pasan a dicho archivo como argumentos.
 
 ## <a name="example"></a>Ejemplo
@@ -46,5 +46,5 @@ Devenv /debugexe ExecutableFile
 Devenv.exe /debugexe MyApplication.exe
 ```
 
-## <a name="see-also"></a>Otras referencias
- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte también
+ [Modificadores de línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md)

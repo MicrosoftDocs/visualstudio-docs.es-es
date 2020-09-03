@@ -15,23 +15,23 @@ dev_langs:
 - CSharp
 - CPP
 ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69585375"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Compatibilidad de reconocimiento por monitor para extensores de Visual Studio
 
-Las versiones anteriores a Visual Studio 2019 tenían su contexto de reconocimiento de PPP establecido en compatible con el sistema, en lugar de con el reconocimiento de PPP por monitor (PMA). La ejecución en el reconocimiento del sistema provocó una experiencia visual degradada (por ejemplo, fuentes borrosas o iconos) siempre que Visual Studio tuviera que representarse en monitores con factores de escala diferentes o en equipos remotos con diferentes configuraciones de pantalla (por ejemplo, diferentes Escalado de Windows).
+Las versiones anteriores a Visual Studio 2019 tenían su contexto de reconocimiento de PPP establecido en compatible con el sistema, en lugar de con el reconocimiento de PPP por monitor (PMA). La ejecución en el reconocimiento del sistema dio lugar a una experiencia visual (por ejemplo, fuentes borrosas o iconos) siempre que Visual Studio tuviera que representarse en monitores con factores de escala diferentes o en equipos remotos con diferentes configuraciones de pantalla (por ejemplo, un ajuste de escala de Windows diferente).
 
 El contexto de reconocimiento de PPP de Visual Studio 2019 se establece como PMA, cuando el entorno lo admite, lo que permite que Visual Studio se represente según la configuración de la pantalla en la que se hospeda, en lugar de una única configuración definida por el sistema. Trasladar en última instancia a una interfaz de usuario siempre nítida para áreas de superficie que admiten el modo PMA.
 
 Consulte la documentación sobre el [desarrollo de aplicaciones de escritorio de PPP alta en Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) para obtener más información acerca de los términos y el escenario general descritos en este documento.
 
-## <a name="quickstart"></a>Guía de inicio rápido
+## <a name="quickstart"></a>Inicio rápido
 
-- Asegúrese de que Visual Studio se está ejecutando en modo PMA (consulte habilitación de **PMA**)
+- Asegúrese de que Visual Studio se está ejecutando en modo PMA (consulte **habilitación de PMA**)
 
 - Validar que la extensión funciona correctamente en un conjunto de escenarios comunes (consulte **comprobación de las extensiones para problemas de PMA**)
 
@@ -121,16 +121,16 @@ No todo el contenido de la Windows Forms admite el modo PMA. Como resultado, pue
 #### <a name="windows-forms-controls-or-windows-not-displaying"></a>Windows Forms controles o ventanas que no se muestran
 Una de las principales causas de este problema es que los desarrolladores intentan volver a controlar un control o una ventana con un DpiAwarenessContext en una ventana con un DpiAwarenessContext diferente.
 
-En las siguientes imágenes se muestran las restricciones actuales del sistema operativo Windows en las ventanas parentables:
+En las siguientes imágenes se muestran las **restricciones actuales del** sistema operativo Windows en las ventanas parentables:
 
 ![Captura de pantalla del comportamiento de la protección correcta](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> Puede cambiar este comportamiento estableciendo el comportamiento de hospedaje de subprocesos (consulte la [enumeración Dpi_Hosting_Behavior](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> Puede cambiar este comportamiento estableciendo el comportamiento de hospedaje de subprocesos (consulte [Dpi_Hosting_Behavior enumeración](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Como resultado, si establece una relación de elementos primarios y secundarios entre los modos no admitidos, se producirá un error y es posible que el control o la ventana no se representen según lo esperado.
 
-### <a name="diagnose-issues"></a>Diagnóstico de problemas
+### <a name="diagnose-issues"></a>Diagnosticar problemas
 
 Hay muchos factores que se deben tener en cuenta a la hora de identificar problemas relacionados con PMA: 
 
@@ -168,7 +168,7 @@ Como Snoop, las herramientas de XAML en Visual Studio pueden ayudar a diagnostic
 
 ### <a name="replace-dpihelper-calls"></a>Reemplazar llamadas DpiHelper
 
-En la mayoría de los casos, la corrección de problemas de la interfaz de usuario en el modo PMA reduce el reemplazo de llamadas en código administrado a las clases antiguas *Microsoft. VisualStudio. Utilities. ppp. DpiHelper* y *Microsoft. VisualStudio. PlatformUI. DpiHelper* , con llamadas a la nueva  *Clase auxiliar Microsoft. VisualStudio. Utilities. DpiAwareness* . 
+En la mayoría de los casos, la corrección de problemas de la interfaz de usuario en el modo PMA reduce el reemplazo de llamadas en código administrado a las clases antiguas *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* y *Microsoft. VisualStudio. PlatformUI. DpiHelper* , con llamadas a la nueva clase auxiliar *Microsoft. VisualStudio. Utilities. DpiAwareness* . 
 
 ```cs
 // Remove this kind of use:
@@ -232,7 +232,7 @@ IVsDpiAware : public IUnknown
 
 En el caso de los lenguajes administrados, el mejor lugar para implementar esta interfaz está en la misma clase que deriva de *Microsoft. VisualStudio. Shell. ToolWindowPane*. Para C++, el mejor lugar para implementar esta interfaz está en la misma clase que implementa *IVsWindowPane* desde vsshell. h.
 
-El valor devuelto por la propiedad Mode en la interfaz es __VSDPIMODE (y se convierte en un valor uint en Managed):
+El valor devuelto por la propiedad Mode en la interfaz es un __VSDPIMODE (y convertir a un valor uint en Managed):
 
 ```cs
 enum __VSDPIMODE

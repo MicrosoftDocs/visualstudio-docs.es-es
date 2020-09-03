@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661283"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Cómo: Generar datos de las métricas de código
@@ -59,5 +59,5 @@ Puede optar por generar resultados de métricas de código para una solución co
 
 - Expanda el árbol en la columna **jerarquía** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

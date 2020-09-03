@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Actualizar los controles de una cinta de opciones en tiempo de ejecución'
+title: 'Tutorial: actualizar los controles de una cinta de opciones en tiempo de ejecución'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255345"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Tutorial: Actualizar los controles de una cinta de opciones en tiempo de ejecución
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Tutorial: actualizar los controles de una cinta de opciones en tiempo de ejecución
 
 En este tutorial se muestra cómo usar el modelo de objetos de la cinta de opciones para actualizar los controles de una cinta de opciones después de que la cinta de opciones se cargue en la aplicación de Office.
 
@@ -43,11 +43,11 @@ En este tutorial se muestran las tareas siguientes:
 - Actualizar los controles de la cinta de opciones en tiempo de ejecución.
 
 > [!NOTE]
-> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Necesita los componentes siguientes para completar este tutorial:
+Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -59,13 +59,13 @@ En primer lugar, cree un proyecto de complemento de VSTO de Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Para crear un proyecto de complemento de VSTO de Outlook
 
-1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento de VSTO de Outlook con el nombre **Ribbon_Update_At_Runtime**.
+1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , cree un proyecto de complemento de VSTO de Outlook con el nombre **Ribbon_Update_At_Runtime**.
 
 2. En el cuadro de diálogo **Nuevo proyecto** , seleccione **Crear directorio para la solución**.
 
 3. Guarde el proyecto en el directorio de proyecto predeterminado.
 
-     Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Diseñar un grupo de cinta personalizado
 
@@ -75,7 +75,7 @@ La cinta de opciones de este ejemplo aparecerá cuando un usuario crea un nuevo 
 
 1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)** .
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
 
 3. Cambie el nombre de la nueva cinta de opciones a **CustomerRibbon**y, a continuación, haga clic en **Agregar**.
 
@@ -149,15 +149,15 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
 8. Active la casilla situada al lado de cada una de las siguientes tablas:
 
-    1. **Compradores**
+    1. **Clientes**
 
-    2. **Detalles del pedido**
+    2. **Detalles de pedido**
 
-    3. **Pedidos**
+    3. **Orders (Pedidos)**
 
     4. **Productos**
 
-9. Haga clic en **Finalizar**.
+9. Haga clic en **Finalizar**
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>Actualizar los controles del grupo personalizado en tiempo de ejecución
 
@@ -179,7 +179,7 @@ Use el modelo de objetos de la cinta de opciones para llevar a cabo las siguient
 
 3. En **Explorador de soluciones**, haga clic en **CustomerRibbon.CS** o **CustomerRibbon. VB** para seleccionarlo.
 
-4. En el menú **Ver** , haga clic en **código**.
+4. En el menú **Ver** , haga clic en **Código**.
 
     Se abre el archivo de código de la cinta de opciones en el editor de código.
 
@@ -188,7 +188,7 @@ Use el modelo de objetos de la cinta de opciones para llevar a cabo las siguient
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
 
-6. Agregue el código siguiente dentro de `CustomerRibbon` la clase. Este código declara los adaptadores de tabla y tabla de datos que usará para almacenar la información de las tablas de clientes, pedidos, detalles de pedidos y productos de la base de datos Northwind.
+6. Agregue el código siguiente dentro de la `CustomerRibbon` clase. Este código declara los adaptadores de tabla y tabla de datos que usará para almacenar la información de las tablas de clientes, pedidos, detalles de pedidos y productos de la base de datos Northwind.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
@@ -207,7 +207,7 @@ Use el modelo de objetos de la cinta de opciones para llevar a cabo las siguient
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
 
-9. Agregue el código siguiente a la clase `CustomerRibbon` . Este código usa consultas LINQ para efectuar las siguientes tareas:
+9. Agregue el siguiente código a la clase `CustomerRibbon` . Este código usa consultas LINQ para efectuar las siguientes tareas:
 
    - Agrega un submenú al menú **productoscomprados** para cada pedido de ventas relacionado con el cliente seleccionado.
 
@@ -240,7 +240,7 @@ Use el modelo de objetos de la cinta de opciones para llevar a cabo las siguient
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Agregue el código siguiente a la clase `CustomerRibbon` . Este código realiza las tareas siguientes:
+14. Agregue el siguiente código a la clase `CustomerRibbon` . Este código realiza las tareas siguientes:
 
     - Rellena la línea para de los mensajes de correo nuevos mediante la dirección de correo electrónico del cliente actualmente seleccionado.
 
@@ -263,7 +263,7 @@ Para crear un mensaje de correo electrónico de seguimiento de cliente, seleccio
 
 2. En Outlook, en el menú **archivo** , seleccione **nuevo**y, a continuación, haga clic en **mensaje de correo**.
 
-     Se producen las siguientes acciones:
+     Se producirán las acciones siguientes:
 
     - Aparece una nueva ventana del inspector de mensajes de correo.
 
@@ -273,7 +273,7 @@ Para crear un mensaje de correo electrónico de seguimiento de cliente, seleccio
 
 3. En la pestaña **mensaje** de la cinta de opciones, en el grupo **compras del cliente** , seleccione un cliente en el cuadro combinado **clientes** .
 
-     Se producen las siguientes acciones:
+     Se producirán las acciones siguientes:
 
     - El menú **productos comprados** se actualiza para mostrar cada pedido de venta del cliente seleccionado.
 
@@ -291,7 +291,7 @@ Puede aprender más acerca de la personalización de la interfaz de usuario de O
 
 - Agregar una interfaz de usuario basada en contexto a cualquier personalización de nivel de documento. Para obtener más información, vea [información general del panel de acciones](../vsto/actions-pane-overview.md).
 
-- Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, vea [Tutorial: Diseñar un área](../vsto/walkthrough-designing-an-outlook-form-region.md)de formulario de Outlook.
+- Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, vea [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Agregar un panel de tareas personalizado a Outlook. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
@@ -302,11 +302,11 @@ Puede aprender más acerca de la personalización de la interfaz de usuario de O
 - [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)
 - [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)
-- [Tutorial: Crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Información general del modelo de objetos de la cinta](../vsto/ribbon-object-model-overview.md)
 - [Personalización de una cinta para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)
-- [Cómo: Agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Cómo: Exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Cómo: Mostrar errores de interfaz de usuario de complementos](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Cómo cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)
+- [Cómo: agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Cómo: Mostrar errores de la interfaz de usuario de complementos](../vsto/how-to-show-add-in-user-interface-errors.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8e7f45122bab952eb60182423281e018705e33a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661076"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas nativas
@@ -93,7 +93,7 @@ Las reglas mínimas nativas de Microsoft se centran en los problemas más críti
 |                      [C28205](../code-quality/c28205.md)                       |                           \_Success\_ o \_On_failure\_ usados en un contexto no válido                            |
 |                      [C28206](../code-quality/c28206.md)                       |                                   El operando izquierdo señala a un struct, use '->'                                   |
 |                      [C28207](../code-quality/c28207.md)                       |                                       El operando izquierdo es un struct, use '->'                                       |
-|                      [C28210](../code-quality/c28210.md)                       |                 Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito                  |
+|                      [C28220](../code-quality/c28210.md)                       |                 Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito                  |
 |                      [C28211](../code-quality/c28211.md)                       |                                 Se esperaba un nombre de contexto estático para SAL_context                                  |
 |                      [C28212](../code-quality/c28212.md)                       |                                  Se esperaba una expresión de puntero para la anotación                                   |
 |                      [C28213](../code-quality/c28213.md)                       | La anotación \_Use_decl_annotations\_ se debe usar para hacer referencia, sin modificación, a una declaración anterior. |

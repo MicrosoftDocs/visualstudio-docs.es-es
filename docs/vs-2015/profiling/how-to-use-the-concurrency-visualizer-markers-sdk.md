@@ -1,5 +1,5 @@
 ---
-title: Cómo Usar el SDK de marcadores del Visualizador de simultaneidad | Microsoft Docs
+title: 'Cómo: Usar el SDK de marcadores del visualizador de simultaneidad | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68870045"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo Usar el SDK de marcadores del visualizador de simultaneidad
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo: Usar el SDK de marcadores del visualizador de concurrencia
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -90,7 +90,7 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Agregue código para crear tres intervalos en la serie de marcadores predeterminada y escriba una marca, un mensaje y una alerta para cada intervalo. Cree un objeto [span](/previous-versions/hh694189(v=vs.140)) llamando al método estático `EnterSpan` . Para escribir en la serie predeterminada, use los métodos de escritura estáticos de la clase [markers](/previous-versions/hh694099(v=vs.140)).
+3. Agregue código para crear tres intervalos en la serie de marcadores predeterminada y escriba una marca, un mensaje y una alerta para cada intervalo. Cree un objeto [Span](/previous-versions/hh694189(v=vs.140)) llamando al método `EnterSpan` estático. Para escribir en la serie predeterminada, use los métodos de escritura estáticos de la clase [Markers](/previous-versions/hh694099(v=vs.140)).
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -132,7 +132,7 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
 
      ![Visualizador de simultaneidad con marcadores y alertas](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. Agregue código para crear series de marcadores de cliente mediante el método estático [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) . La clase [marcadores](/previous-versions/hh694127(v=vs.140)) contiene métodos para crear intervalos y escribir marcas, mensajes y alertas.
+5. Agregue código para crear series de marcadores de cliente con el método [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) estático. La clase [MarkerSeries](/previous-versions/hh694127(v=vs.140)) contiene métodos para crear intervalos y escribir marcas, mensajes y alertas.
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")
@@ -168,6 +168,6 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
 
      ![Visualizador de simultaneidad con tres series de marcadores personalizados](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)
