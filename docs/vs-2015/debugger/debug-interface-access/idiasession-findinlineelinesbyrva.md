@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9991f5d70ccb0c801c210975d295b3e32e907998
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165613"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una enumeración que permite que un cliente iterar por la información de número de línea de todas las funciones que se alinean, directamente o indirectamente, mediante el símbolo de elemento primario especificado y está dentro de la dirección virtual relativa (RVA) especificada.  
+Recupera una enumeración que permite a un cliente recorrer en iteración la información del número de línea de todas las funciones insertadas, directa o indirectamente, por el símbolo primario especificado y que están contenidas en la dirección virtual relativa (RVA) especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,22 +36,22 @@ HRESULT findInlineeLinesByRVA ( 
   
 #### <a name="parameters"></a>Parámetros  
  `parent`  
- [in] Un `IDiaSymbol` objeto que representa el elemento primario.  
+ de `IDiaSymbol` Objeto que representa el elemento primario.  
   
  `rva`  
- [in] Especifica la dirección como una RVA.  
+ de Especifica la dirección como RVA.  
   
  `length`  
- [in] Especifica el intervalo de direcciones, en el número de bytes, para cubrir con esta consulta.  
+ de Especifica el intervalo de direcciones, en número de bytes, que se va a cubrir con esta consulta.  
   
  `ppResult`  
- [out] Contiene un `IDiaEnumLineNumbers` objeto que contiene la lista de números de línea que se recuperan.  
+ enuncia Contiene un `IDiaEnumLineNumbers` objeto que contiene la lista de números de línea que se recuperan.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
+ [Enumeración Symtagenum (](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

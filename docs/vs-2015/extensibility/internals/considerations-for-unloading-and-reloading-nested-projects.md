@@ -1,5 +1,5 @@
 ---
-title: Consideraciones para descargar y recargar anidados proyectos | Microsoft Docs
+title: Consideraciones para descargar y volver a cargar proyectos anidados | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65145530c8cd6b68b82391a09b395bb8c9a61117
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197012"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Consideraciones para descargar y volver a cargar proyectos anidados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Al implementar los tipos de proyecto anidado, debe realizar pasos adicionales al descargar y cargar los proyectos. Para notificar correctamente los agentes de escucha de eventos de la solución, debe generar correctamente el `OnBeforeUnloadProject` y `OnAfterLoadProject` eventos.  
+Al implementar tipos de proyecto anidados, debe realizar pasos adicionales al descargar y volver a cargar los proyectos. Para notificar correctamente a los agentes de escucha los eventos de la solución, debe generar correctamente los `OnBeforeUnloadProject` `OnAfterLoadProject` eventos y.  
   
- Una razón que debe generar estos eventos de esta manera es que no desea control de código fuente (SCC) para eliminar los elementos del servidor y, a continuación, agregarlos como algo nuevo si hay un `Get` operación de control de código fuente. En ese caso, se cargan un nuevo archivo de SCC y tendrá que descargar y recargar todos los archivos en caso de que son diferentes. Las llamadas de SCC `ReloadItem`. La implementación de esa llamada es eliminar el proyecto y volver a crearla de nuevo mediante la implementación de `IVsFireSolutionEvents` para llamar a `OnBeforeUnloadProject` y `OnAfterLoadProject`. Al realizar esta implementación, el SCC se informa de que se eliminó temporalmente el proyecto y se puede agregar de nuevo. Por lo tanto, el SCC no funcionan en el proyecto como si el proyecto se ha eliminado realmente desde el servidor y, a continuación, puede agregar de nuevo.  
+ Una razón por la que debe generar estos eventos de esta manera es que no desea que el control de código fuente (SCC) elimine los elementos del servidor y, a continuación, los vuelva a agregar como algo nuevo si hay una `Get` operación de SCC. En ese caso, un archivo nuevo se cargará fuera de SCC y tendrá que descargar y volver a cargar todos los archivos en caso de que sean diferentes. Llamadas de SCC `ReloadItem` . La implementación de esa llamada es eliminar el proyecto y volver a crearlo implementando `IVsFireSolutionEvents` para llamar a `OnBeforeUnloadProject` y `OnAfterLoadProject` . Al realizar esta implementación, se informa al SCC de que el proyecto se eliminó temporalmente y se agregó de nuevo. Por consiguiente, el SCC no funciona en el proyecto como si el proyecto se eliminara realmente del servidor y, a continuación, se vuelve a agregar.  
   
 ## <a name="reloading-projects"></a>Volver a cargar proyectos  
- Para admitir la recarga de proyectos anidados, implementa el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> método. En la implementación de `ReloadItem`, cierre los proyectos anidados y, a continuación, volver a crearlos.  
+ Para admitir la recarga de proyectos anidados, se implementa el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> método. En la implementación de `ReloadItem` , se cierran los proyectos anidados y, a continuación, se vuelven a crear.  
   
- Normalmente, cuando se vuelve a cargar un proyecto, el IDE provoca la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> y `M:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)` eventos. Sin embargo, para los proyectos anidados que se eliminará y se vuelve a cargar, el proyecto principal inicia el proceso, no el IDE. Dado que el proyecto principal no genera eventos de la solución y el IDE no tiene información sobre la inicialización del proceso, no se generan los eventos.  
+ Normalmente, cuando se recarga un proyecto, el IDE genera los <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> `M:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)` eventos y. Sin embargo, en el caso de los proyectos anidados que se van a eliminar y recargar, el proyecto primario inicia el proceso, no el IDE. Dado que el proyecto primario no genera eventos de la solución y el IDE no tiene información sobre la inicialización del proceso, no se generan los eventos.  
   
- Para controlar este proceso, las llamadas de proyecto primario `QueryInterface` en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfaz desactivado el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> interfaz. `IVsFireSolutionEvents` tiene funciones que indican al IDE que elevar el `OnBeforeUnloadProject` eventos para descargar el proyecto anidado y, a continuación, genere el `OnAfterLoadProject` eventos para volver a cargar el mismo proyecto.  
+ Para controlar este proceso, el proyecto primario llama a `QueryInterface` en la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfaz fuera de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> interfaz. `IVsFireSolutionEvents` tiene funciones que indican al IDE que genere el `OnBeforeUnloadProject` evento para descargar el proyecto anidado y, a continuación, genere el `OnAfterLoadProject` evento para volver a cargar el mismo proyecto.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
  [Anidamiento de proyectos](../../extensibility/internals/nesting-projects.md)

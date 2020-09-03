@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach ? Microsoft Docs
+title: 'IDebugCoreServer3:: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d529bb80f79a3f2972e9349a2679bb528cc10463
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732917"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Habilita la conexión automática para los motores de depuración especificados.
+Habilita la Asociación automática para los motores de depuración especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,22 +47,22 @@ int EnableAutoAttach(
 
 ## <a name="parameters"></a>Parámetros
 `rgguidSpecificEngines`\
-[en] Matriz de GUID para cada motor de depuración para marcarcomo auto-adjuntación.
+de Matriz de GUID de cada motor de depuración que se va a marcar como asociación automática.
 
 `celtSpecificEngines`\
-[en] El número de motores `rgguidSpecificEngines`especificados en .
+de El número de motores especificado en `rgguidSpecificEngines` .
 
 `pszStartPageUrl`\
-[en] La dirección URL de inicio que se va a utilizar al adjuntar automáticamente.
+de Dirección URL de inicio que se va a usar al adjuntar automáticamente.
 
 `pbstrSessionID`\
-[fuera] ID de la sesión que se adjuntó automáticamente.
+enuncia IDENTIFICADOR de la sesión que se adjuntó automáticamente.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve código de error. Un código `E_AUTO_ATTACH_NOT_REGISTERED`de error es , que indica que no se ha registrado el generador de clases de conexión automática.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error. Un código de error es `E_AUTO_ATTACH_NOT_REGISTERED` , que indica que el generador de clases de asociación automática no se ha registrado.
 
 ## <a name="remarks"></a>Observaciones
- Cuando se inicia un programa asociado con la dirección URL especificada, los motores de depuración especificados se inician y adjuntan automáticamente.
+ Cuando se inicia un programa asociado a la dirección URL especificada, los motores de depuración especificados se inician y adjuntan automáticamente.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

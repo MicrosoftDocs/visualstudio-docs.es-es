@@ -1,5 +1,5 @@
 ---
-title: DiaAddressMapEntry | Documentos de Microsoft
+title: DiaAddressMapEntry | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67c0a3e297f3eebfbf44724e64c4989d9bb979fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164357"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
@@ -39,24 +39,24 @@ struct DiaAddressMapEntry { 
  Una dirección virtual relativa (RVA) en la imagen A.  
   
  `rvaTo`  
- La dirección virtual relativa `rva` está asignado a en imagen B.  
+ La dirección virtual relativa `rva` está asignada a en la imagen B.  
   
 ## <a name="remarks"></a>Comentarios  
- Un mapa de direcciones proporciona una traducción del diseño de una imagen (A) a otro (B). Una matriz de `DiaAddressMapEntry` estructuras ordenadas por `rva` define un mapa de direcciones.  
+ Un mapa de direcciones proporciona una traducción de un diseño de imagen (a) a otro (B). Una matriz de `DiaAddressMapEntry` estructuras ordenada por `rva` define un mapa de direcciones.  
   
- Para convertir una dirección, `addrA`, en la imagen A una dirección, `addrB`, en la imagen de B, realice los pasos siguientes:  
+ Para traducir una dirección, `addrA` , en la imagen a en una dirección, `addrB` , en la imagen B, realice los pasos siguientes:  
   
-1. Buscar la asignación de la entrada de `e`, con el mayor `rva` menor o igual a `addrA`.  
+1. Busque en el mapa la entrada, `e` , con el mayor `rva` menor o igual que `addrA` .  
   
 2. Establezca `delta = addrA – e.rva`.  
   
 3. Establezca `addrB = e.rvaTo + delta`.  
   
-   Una matriz de `DiaAddressMapEntry` estructuras se pasa a la [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.  
+   Una matriz de `DiaAddressMapEntry` estructuras se pasa al método [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: dia2.h  
+ Encabezado: Dia2. h  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

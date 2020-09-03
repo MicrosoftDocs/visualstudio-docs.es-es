@@ -1,5 +1,5 @@
 ---
-title: Registrar las extensiones de nombre de archivo para las implementaciones en paralelo | Microsoft Docs
+title: Registro de extensiones de nombre de archivo para implementaciones en paralelo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,29 +11,29 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 354b91dd1282df9726c1ee9c47f610b0dfdd9c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163693"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Registro de extensiones de nombre de archivo para implementaciones en paralelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para los paquetes VSPackage implementados en un entorno en paralelo, debe registrar las extensiones de nombre de archivo para asociar los archivos con la versión correcta de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. A menos que use una extensión de nombre de archivo específicos de la versión, el registro permite a los usuarios abrir el proyecto y archivos de proyecto elemento en la versión adecuada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+En el caso de los VSPackages implementados en un entorno en paralelo, debe registrar las extensiones de nombre de archivo para asociar los archivos con la versión correcta de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . A menos que use una extensión de nombre de archivo específica de la versión, el registro permite a los usuarios abrir los archivos de proyecto y de elemento de proyecto en la versión adecuada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Acerca de las extensiones de nombre de archivo](../extensibility/about-file-name-extensions.md)  
  Describe cómo se registran las extensiones de nombre de archivo.  
   
  [Especificación de controladores de archivo para extensiones de nombre de archivo](../extensibility/specifying-file-handlers-for-file-name-extensions.md)  
- Proporciona información sobre cómo registrar las aplicaciones que se pueden abrir, edit y así sucesivamente, una extensión de nombre de archivo determinado.  
+ Proporciona información sobre cómo registrar las aplicaciones que pueden abrir, editar, etc., una extensión de nombre de archivo determinada.  
   
  [Registro de verbos para extensiones de nombre de archivo](../extensibility/registering-verbs-for-file-name-extensions.md)  
- Describe cómo registrar los verbos.  
+ Describe cómo registrar verbos.  
   
  [Administración de asociaciones de archivos en paralelo](../extensibility/managing-side-by-side-file-associations.md)  
- Describe cómo controlar las instalaciones en paralelo en el que una versión determinada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debe invocarse para abrir un archivo.  
+ Describe cómo controlar instalaciones en paralelo en las que se debe invocar una versión determinada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para abrir un archivo.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Compatibilidad con varias versiones de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)  

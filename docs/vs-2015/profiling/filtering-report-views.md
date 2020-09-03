@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164057"
 ---
 # <a name="filtering-report-views"></a>Filtrar las vistas de informe
@@ -37,7 +37,7 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
   
 2. Para cada cláusula que desee agregar a un filtro, seleccione o especifique los valores en los siguientes campos de una fila.  
   
-    |Campo|DESCRIPCIÓN|  
+    |Campo|Description|  
     |-----------|-----------------|  
     |**Y/O**|Elija **Y** si tanto esta cláusula como la siguiente deben ser true para coincidir con un resultado. Elija **O** si esta cláusula o la siguiente pueden ser true para coincidir con un resultado.|  
     |**Campo**|Seleccione el campo que se va a utilizar en la cláusula de filtro de la lista de campos de datos.|  
@@ -94,5 +94,5 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
   
 2. Especifique la ubicación y nombre de archivo para el archivo de filtro (.vspf) que se va a guardar.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Personalizar las vistas de informes de las herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)

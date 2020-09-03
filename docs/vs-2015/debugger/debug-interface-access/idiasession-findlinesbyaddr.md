@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4658075c61a06c3616a4d9a42e9d3e37c0166e98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165534"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera las líneas en una operación de compilación especificado que contienen una dirección especificada.  
+Recupera las líneas de una operación de compilación especificada que contienen una dirección especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,22 +38,22 @@ HRESULT findLinesByAddr ( 
   
 #### <a name="parameters"></a>Parámetros  
  `seg`  
- [in] Especifica el componente de la sección de la dirección específica.  
+ de Especifica el componente de sección de la dirección específica.  
   
  `offset`  
- [in] Especifica el componente de desplazamiento de la dirección específica.  
+ de Especifica el componente de desplazamiento de la dirección específica.  
   
  `length`  
- [in] Especifica el número de bytes del intervalo de direcciones para cubrir con esta consulta.  
+ de Especifica el número de bytes del intervalo de direcciones que se va a cubrir con esta consulta.  
   
  `ppResult`  
- [out] Devuelve un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contiene una lista de la línea de todos los números que regulan el intervalo de direcciones especificado.  
+ enuncia Devuelve un objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contiene una lista de todos los números de línea que cubren el intervalo de direcciones especificado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra una función que obtiene todos los números de línea incluidos en una función mediante la dirección y la longitud de la función.  
+ En este ejemplo se muestra una función que obtiene todos los números de línea contenidos en una función con la dirección y la longitud de la función.  
   
 ```cpp#  
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,  
@@ -74,7 +74,7 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)
