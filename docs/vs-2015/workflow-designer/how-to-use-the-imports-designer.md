@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 47b5055cca0b00e7fdec49947df13b473a090aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659082"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
-El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. Al igual que las **importaciones** o el **uso** de palabras C#clave en Visual Basic .net y, la especificación de espacios de nombres en el diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre de tipo de versión completo.
+El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. Al igual que las **importaciones** o el **uso** de palabras clave en Visual Basic .net y C#, la especificación de espacios de nombres en el diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre de tipo de versión completo.
 
- El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas se incluyen las siguientes:
+ El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas, figuran:
 
 - Espacios de nombres para cualquier tipo utilizado en declaraciones de variables y de argumentos.
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 57bb08abf555e26603f4464e0971ce40fd02f65d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661697"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Trabajar con el Explorador de lenguajes específicos de dominio
@@ -45,5 +45,5 @@ El **Explorador de DSL** muestra varios tipos de información en una vista de á
 
 - **Comportamiento de serialización XML**. Configuración de la serialización del modelo. Para obtener más información sobre la serialización, vea [personalizar File Storage y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

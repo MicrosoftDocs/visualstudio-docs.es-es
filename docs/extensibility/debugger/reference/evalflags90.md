@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS90 ? Microsoft Docs
+title: EVALFLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737105"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Enumera los valores válidos para los indicadores que controlan la evaluación de expresiones. Esta enumeración extiende la enumeración [EVALFLAGS.](../../../extensibility/debugger/reference/evalflags.md)
+Enumera los valores válidos para las marcas que controlan la evaluación de expresiones. Esta enumeración extiende la enumeración [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,9 +64,9 @@ public enum enum_EVALFLAGS90
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `EVAL90_RETURNVALUE`\
-Especifica que se evalúe el valor devuelto, si existe.
+Especifica que se debe evaluar el valor devuelto, si existe.
 
 `EVAL90_NOSIDEEFFECTS`\
 Especifica que no se permiten efectos secundarios.
@@ -75,30 +75,30 @@ Especifica que no se permiten efectos secundarios.
 Especifica la detención en puntos de interrupción.
 
 `EVAL90_ALLOWERRORREPORT`\
-Especifica que se permita el informe de errores al host. Se utiliza principalmente para la evaluación de expresiones en script en Internet Explorer.
+Especifica que se va a permitir el informe de errores en el host. Se usa principalmente para la evaluación de expresiones en el script en Internet Explorer.
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-Fuerza las funciones que se evaluarán como direcciones, en lugar de invocar la función.
+Fuerza que las funciones se evalúen como direcciones, en lugar de invocar la función.
 
 `EVAL90_NOFUNCEVAL`\
-Impide que se evalúe la función. Por ejemplo, `int` considere el `myExpression(int) + 10`token en la expresión . Esta función se puede evaluar correctamente como una dirección, pero no como un valor.
+Impide que se evalúe la función. Por ejemplo, considere el `int` token en la expresión `myExpression(int) + 10` . Esta función se puede evaluar correctamente como una dirección, pero no como un valor.
 
 `EVAL90_NOEVENTS`\
-Marcar para indicar que los eventos que se producen durante la evaluación de expresiones no se deben enviar al administrador de depuración de sesión (SDM) o al IDE.
+Marca para indicar que los eventos que se producen durante la evaluación de la expresión no se deben enviar al administrador de depuración de sesión (SDM) o al IDE.
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
-Permite la evaluación de expresiones en tiempo de diseño.
+Habilita la evaluación de expresiones en tiempo de diseño.
 
 `EVAL90_ALLOW_IMPLICIT_VARS`\
-Permite la creación implícita de variables.
+Permite la creación de variables implícitas.
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-Obliga a que la evaluación se realice inmediatamente. Esto es útil cuando se atiende una solicitud, como una solicitud de usuario.
+Fuerza la evaluación para que se produzca inmediatamente. Esto resulta útil cuando se atiende una solicitud, como una solicitud de usuario.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Msdbg90.h
+Encabezado: Msdbg90. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

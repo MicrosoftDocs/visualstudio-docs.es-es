@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f42600a739561a27a6dd8f6caa237027bac4554
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603697"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Cómo: Invocar una operación de contrato de Windows Communication Foundation (Heredado)
@@ -41,11 +41,11 @@ En este tema se describe cómo invocar una operación de contrato de [!INCLUDE[i
 
 1. Seleccione la actividad <xref:System.Workflow.Activities.SendActivity> en el diseñador.
 
-2. En el panel **propiedades** , especifique un nombre para el <xref:System.Workflow.Activities.ChannelToken>. Este nombre únicamente identifica el token de canal.
+2. En el panel **propiedades** , especifique un nombre para el <xref:System.Workflow.Activities.ChannelToken> . Este nombre únicamente identifica el token de canal.
 
 3. Expanda el nodo del token de canal y especifique un nombre para el punto de conexión de cliente que va a utilizar en el campo <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A>. La configuración del extremo del mismo nombre en el archivo de configuración se utilizará para configurar el canal.
 
 4. Cree la configuración del extremo en el archivo de configuración, si aún no existe. Para obtener más información acerca de cómo configurar el cliente, consulte [información general del cliente de WCF](https://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cuadro de diálogo elegir operación (heredado)](../workflow-designer/choose-operation-dialog-box-legacy.md) cómo: implementar [las actividades de flujo de trabajo heredadas](../workflow-designer/legacy-workflow-activities.md) [de operación de contrato WCF (heredadas)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)

@@ -1,5 +1,5 @@
 ---
-title: Control de código fuente ( Source Control ) Microsoft Docs
+title: Control de código fuente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ff7904e9abc3df8ed36f8c196ce4c1175b4d9af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704994"
 ---
 # <a name="source-control"></a>Control de código fuente
-En esta sección se describen las opciones [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]para implementar el control de código fuente como una característica integrada de , ya sea a través de un complemento de control de código fuente o un control de código fuente VSPackage.
+En esta sección se describen las opciones para implementar el control de código fuente como una característica integrada de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , ya sea a través de un complemento de control de código fuente o un VSPackage de control de código fuente.
 
 ## <a name="in-this-section"></a>En esta sección
 - [Essentials](../../extensibility/internals/source-control-integration-essentials.md)
@@ -27,20 +27,20 @@ En esta sección se describen las opciones [!INCLUDE[vsprvs](../../code-quality/
 
 - [Información general](../../extensibility/internals/source-control-integration-overview.md)
 
- Una visión general de las dos opciones disponibles para implementar el control de código fuente.
+ Información general de las dos opciones disponibles para implementar el control de código fuente.
 
 - [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- Describe cómo crear un complemento de control de código fuente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que proporciona funcionalidad de control de código fuente a través de la interfaz de usuario (UI) del control de código fuente.
+ Describe cómo crear un complemento de control de código fuente que proporciona la funcionalidad de control de código fuente a través de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario (UI) del control de código fuente.
 
 - [Creación de un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- Describe cómo crear un control de código fuente VSPackage que no solo proporciona [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funcionalidad de control de código fuente, pero se puede usar para personalizar la interfaz de usuario del control de código fuente.
+ Describe cómo crear un VSPackage de control de código fuente que no solo proporciona la funcionalidad de control de código fuente, sino que se puede usar para personalizar la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario del control de código fuente.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 - [Complementos de control de código fuente](../../extensibility/source-control-plug-ins.md)
 
- Referencia para la API de complemento de Control de código fuente.
+ Referencia de la API del complemento de control de código fuente.
 
 - [Ampliación de proyectos](../../extensibility/extending-projects.md)
 

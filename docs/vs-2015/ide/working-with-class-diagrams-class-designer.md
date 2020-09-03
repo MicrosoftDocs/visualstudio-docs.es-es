@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ff02c3aeab131c0b9a2423c2cb2376d9f0ee618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602401"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Trabajar con diagramas de clases (Diseñador de clases)
@@ -38,11 +38,11 @@ Con los diagramas de clases, es más fácil comprender la estructura de clases d
 > El Diseñador de clases no realiza un seguimiento de la ubicación de los archivos de origen, por lo que cambiar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el Diseñador de clases pierda de vista el tipo, especialmente el tipo de origen de una typedef, de clases base o de tipos de asociación. Puede que reciba un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.
 
 ## <a name="in-this-section"></a>En esta sección
- [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+ [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
  Describe cómo agregar diagramas de clases a los proyectos.
 
- [Cómo: Personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Cómo: personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)
 
  Proporciona información sobre cómo personalizar los diagramas de clases.
 
@@ -50,15 +50,15 @@ Con los diagramas de clases, es más fácil comprender la estructura de clases d
 
  Explica cómo copiar contenidos de un diagrama de clases a un documento de Office.
 
- [Cómo: Exportar los diagramas de clases como imágenes (Diseñador de clases)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+ [Cómo: exportar diagramas de clases como imágenes (Diseñador de clases)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
 
  Describe cómo exportar los diagramas de clases como imágenes.
 
- [Cómo: Imprimir diagramas de clases (Diseñador de clases)](../ide/how-to-print-class-diagrams-class-designer.md)
+ [Cómo: imprimir diagramas de clases (Diseñador de clases)](../ide/how-to-print-class-diagrams-class-designer.md)
 
  Explica cómo imprimir los diagramas de clases.
 
- [Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
+ [Cómo: agregar comentarios a diagramas de clases (Diseñador de clases)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
 
  Describe cómo agregar comentarios a un diagrama de clases.
 
@@ -66,5 +66,5 @@ Con los diagramas de clases, es más fácil comprender la estructura de clases d
 
  Describe cómo quitar formas de diagramas de clases.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ver tipos y relaciones (diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md) [Cómo: personalizar los diagramas de clases (diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md) [Cómo: quitar formas de tipo de diagramas de clases (diseñador de clases)](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

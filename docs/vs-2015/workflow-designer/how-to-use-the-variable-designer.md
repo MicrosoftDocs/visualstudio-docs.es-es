@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4744864824da5efb238e9af1a5a12fcef79ea4ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659075"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Utilizar el diseñador de variables
@@ -31,10 +31,10 @@ El diseñador variables se utiliza para crear variables con el fin de utilizarla
 
 3. Abra el diseñador de variables haciendo clic en el botón **variables** en la esquina inferior izquierda del lienzo de diseño. Aparecerá el diseñador de variables.
 
-4. Haga clic en la fila vacía con la etiqueta **crear variable**. Esto agregará una nueva fila con una nueva variable con los siguientes valores predeterminados: variablex para el **nombre** , donde x es un entero con un valor inicial de 1 que se incrementa automáticamente para crear nombres de variable únicos, **cadena** para la **variable. Escriba**y **Sequence** para el **ámbito**. No se agrega ningún valor para el valor **predeterminado**. Podrá cambiar estos valores en cualquier momento durante el proceso de diseño del flujo de trabajo.
+4. Haga clic en la fila vacía con la etiqueta **crear variable**. Esto agregará una nueva fila con una nueva variable con los siguientes valores predeterminados: variablex para el **nombre** , donde x es un entero con un valor inicial de 1 que se incrementa automáticamente para crear nombres de variable únicos, una **cadena** para el **tipo de variable**y una **secuencia** para el **ámbito**. No se agrega ningún valor para el valor **predeterminado**. Podrá cambiar estos valores en cualquier momento durante el proceso de diseño del flujo de trabajo.
 
     > [!NOTE]
     > Para eliminar una variable, seleccione la variable haciendo clic en ella y, a continuación, presione la tecla **Supr** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Usar [el diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md) [variables y argumentos](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8) [Cómo: usar el diseñador de argumentos](../workflow-designer/how-to-use-the-argument-designer.md)

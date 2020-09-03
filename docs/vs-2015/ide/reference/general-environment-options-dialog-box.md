@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83fc6adeba0529be03a9a982713d0584a2a7bc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661272"
 ---
 # <a name="general-environment-options-dialog-box"></a>General, Entorno, Opciones (Cuadro de diálogo)
@@ -40,7 +40,7 @@ ms.locfileid: "72661272"
 Use esta página para cambiar, entre otras opciones, los temas de color, la configuración de la barra de estado y las asociaciones de las extensiones de archivo del entorno de desarrollo integrado (IDE). Para acceder al cuadro de diálogo **Opciones**, abra el menú **Herramientas**, pulse **Opciones**, abra la carpeta **Entorno** y pulse la página **General**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione la casilla **Mostrar todas las configuraciones**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="visual-experience"></a>Experiencia visual
  **Tema de color** Elija el tema de color **azul**, **claro** o **oscuro** para el IDE.
@@ -55,14 +55,14 @@ Use esta página para cambiar, entre otras opciones, los temas de color, la conf
 
  **Usar aceleración de gráficos de hardware Si está disponible** Usa la aceleración de gráficos de hardware Si está disponible, en lugar de la aceleración de software.
 
-## <a name="other"></a>Otro
- **Elementos mostrados en el menú Ventana** Personaliza el número de ventanas que aparecen en la lista Ventanas del menú **Ventana**. Escriba un número comprendido entre 1 y 24. De forma predeterminada, el número es 10.
+## <a name="other"></a>Otros
+ **Elementos mostrados en el menú Ventana** Personaliza el número de ventanas que aparecen en la lista Ventanas del menú **Ventana**. Escriba un número entre 1 y 24. De forma predeterminada, el número es 10.
 
- **Elementos mostrados en las listas de los usados recientemente** Personaliza el número de proyectos y archivos usados más recientemente que aparecen en el menú **Archivo**. Escriba un número comprendido entre 1 y 24. De forma predeterminada, el número es 10. Se trata de una manera fácil de recuperar los proyectos y archivos usados recientemente.
+ **Elementos mostrados en las listas de los usados recientemente** Personaliza el número de proyectos y archivos usados más recientemente que aparecen en el menú **Archivo**. Escriba un número entre 1 y 24. De forma predeterminada, el número es 10. Se trata de una manera fácil de recuperar los proyectos y archivos usados recientemente.
 
  **Mostrar barra de estado** Muestra la barra de estado. La barra de estado se encuentra en la parte inferior de la ventana del IDE y muestra información sobre el progreso de las operaciones en curso.
 
- **El botón Cerrar afecta solo a la ventana de herramientas activa** Especifica que, cuando se hace clic en el botón **Cerrar**, solo se cierra la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. Esta opción se encuentra activada de forma predeterminada.
+ **El botón Cerrar afecta solo a la ventana de herramientas activa** Especifica que, cuando se hace clic en el botón **Cerrar**, solo se cierra la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. Esta opción está seleccionada de forma predeterminada.
 
  **Ocultar automáticamente solo afecta a la ventana de la herramienta activa** Especifica que, cuando se hace clic en el botón **Ocultar automáticamente**, solo se oculta automáticamente la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. De forma predeterminada, esta opción no está seleccionada.
 
@@ -70,5 +70,5 @@ Use esta página para cambiar, entre otras opciones, los temas de color, la conf
 
  Esta opción puede ser útil si tiene dos versiones de Visual Studio instaladas en el mismo equipo y posteriormente desinstala una de las versiones. Después de desinstalarla, los iconos de los archivos de Visual Studio ya no aparecerán en el Explorador de archivos. Además, Windows deja de reconocer Visual Studio como la aplicación predeterminada para editar estos archivos. Esta opción restaura esas asociaciones.
 
-## <a name="see-also"></a>Vea también
- [Cuadro de diálogo Opciones de entorno](../../ide/reference/environment-options-dialog-box.md) [personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)
+## <a name="see-also"></a>Consulte también
+ [Opciones de entorno (cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md) [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)

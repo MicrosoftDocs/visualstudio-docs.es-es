@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData ? Microsoft Docs
+title: 'IDebugProgramProvider2:: GetProviderProcessData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4e958900307f5f7915f58679709c88f80c2abfc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721856"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
@@ -49,32 +49,32 @@ int GetProviderProcessData(
 
 ## <a name="parameters"></a>Parámetros
 `Flags`\
-[en] Una combinación de indicadores de la [enumeración PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) Los siguientes indicadores son típicos para esta llamada:
+de Combinación de marcas de la enumeración [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Las marcas siguientes son típicas para esta llamada:
 
-|Marca|Descripción|
+|Marcar|Descripción|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|El autor de la llamada se está ejecutando en un equipo remoto.|
+|`PFLAG_REMOTE_PORT`|El autor de la llamada se está ejecutando en la máquina remota.|
 |`PFLAG_DEBUGGEE`|El autor de la llamada se está depurando actualmente (se devolverá información adicional sobre el cálculo de referencias para cada nodo).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|El autor de la llamada estaba asociado al depurador, pero no lo inició.|
-|`PFLAG_GET_PROGRAM_NODES`|El autor de la llamada pide que se devuelva una lista de nodos del programa.|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|El autor de la llamada estaba asociado pero no lo inició el depurador.|
+|`PFLAG_GET_PROGRAM_NODES`|El autor de la llamada solicita una lista de nodos de programa que se devolverán.|
 
 `pPort`\
-[en] El puerto en el que se ejecuta el proceso de llamada.
+de El puerto en el que se está ejecutando el proceso de llamada.
 
 `processId`\
-[en] Una [estructura AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que contiene el ID del proceso que contiene el programa en cuestión.
+de Estructura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que contiene el identificador del proceso que contiene el programa en cuestión.
 
 `EngineFilter`\
-[en] Una matriz de GUID para motores de depuración asignados para depurar este proceso (estos se utilizarán para filtrar los programas que realmente se devuelven en función de lo que admiten los motores suministrados; si no se especifica ningún motor, se devolverán todos los programas).
+de Matriz de GUID para los motores de depuración asignados para depurar este proceso (se utilizarán para filtrar los programas que se devuelven realmente en función de lo que admitan los motores suministrados; si no se especifica ningún motor, se devolverán todos los programas).
 
 `pProcess`\
-[fuera] Una [estructura PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) que se rellena con la información solicitada.
+enuncia [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura que se rellena con la información solicitada.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Este método normalmente es llamado por un proceso para obtener una lista de programas que se ejecutan en ese proceso. La información devuelta es una lista de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos.
+ Normalmente, un proceso llama a este método para obtener una lista de los programas que se ejecutan en ese proceso. La información devuelta es una lista de objetos [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

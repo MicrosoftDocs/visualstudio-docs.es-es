@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1da2c07d5a412a7ac1865cfc2669e2f4ff992b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548075"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introducción al desarrollo con Visual Studio
@@ -29,23 +29,23 @@ Le damos la bienvenida a Visual Studio. Una vez haya [descargado](https://visual
 
 - **[Crear aplicaciones móviles multiplataforma en HTML/JavaScript (Apache Cordova)](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)**: Apache Cordova es un entorno multiplataforma de código abierto que se basa en HTML, CSS y JavaScript.  El código JavaScript se ejecuta en un contenedor que tiene como destino una plataforma específica y permite acceder a todas las funciones de hardware del dispositivo. Desarrolle aplicaciones para Apple Store, la Tienda Android y la Tienda Windows.
 
-     [Cargar un ejemplo](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124; [realizar un tutorial](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124; [examinar los documentos](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124; [ver un vídeo](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [Cargar un ejemplo](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [realizar un tutorial](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [examinar los documentos](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [ver un vídeo](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[Crear aplicaciones móviles multiplataforma en C# o Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : empiece a usar Visual Studio y Tools for Xamarin para crear aplicaciones móviles que se ejecutan en la Plataforma universal de Windows, iOS y Android desde una base de código compartido.
 
-     Cargar un ejemplo: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (interfaz de usuario nativa) o el [ejemplo de Xamarin Forms todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interfaz de usuario compartida de Xamarin. Forms) &#124; [realizar un tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [examinar los documentos](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [ver un vídeo](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     Cargar un ejemplo: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (interfaz de usuario nativa) o el  [ejemplo de Xamarin Forms todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interfaz de usuario compartida de Xamarin. Forms) &#124;   [realizar un tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [examinar los documentos](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [ver un vídeo](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[Crear bibliotecas y aplicaciones multiplataforma nativas en C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Vaya aquí para empezar a crear bibliotecas y aplicaciones C++ que se ejecutan en Android, iOS y la Plataforma universal de Windows.
 
-     [Cargar un ejemplo](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124; [realizar un tutorial](https://msdn.microsoft.com/library/dn707595.aspx) &#124; [examinar los documentos](https://msdn.microsoft.com/library/dn707591.aspx) &#124; [ver un vídeo](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
+     [Cargar un ejemplo](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124;   [realizar un tutorial](https://msdn.microsoft.com/library/dn707595.aspx) &#124;                             [examinar los documentos](https://msdn.microsoft.com/library/dn707591.aspx) &#124;                                  [ver un vídeo](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
 
 - **[Crear juegos con DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**: comience a crear juegos de la Plataforma universal de Windows con DirectX.
 
-     [Cargar un ejemplo](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) &#124; [realizar un tutorial](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124; [examinar los documentos](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124; [ver un vídeo](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
+     [Cargar un ejemplo](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) &#124;                    [realizar un tutorial](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124;                                [examinar los documentos](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124;                                   [ver un vídeo](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
 
 - **[Crear juegos con Unity](../cross-platform/visual-studio-tools-for-unity.md)**: comience a crear juegos multiplataforma con el marco Unity.
 
-     [Cargar un ejemplo](http://unity3d.com/learn/resources/downloads) &#124; [realizar un tutorial](https://learn.unity.com/projects) &#124; [examinar los documentos](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124; [ver un vídeo](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
+     [Cargar un ejemplo](http://unity3d.com/learn/resources/downloads) &#124;                     [realizar un tutorial](https://learn.unity.com/projects) &#124;                               [examinar los documentos](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [ver un vídeo](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
 - **[Crear aplicaciones de la Plataforma universal de  Windows](https://dev.windows.com/windows-apps)** : empiece a crear aplicaciones que se ejecutan en la Plataforma universal de Windows (XBox, equipos, tabletas, Windows Phone, Surface Hub e Internet de las cosas).
 
@@ -57,7 +57,7 @@ Le damos la bienvenida a Visual Studio. Una vez haya [descargado](https://visual
 
 - **[Crear aplicaciones de Office](https://msdn.microsoft.com/library/fp161347.aspx)** : Introducción a la creación de aplicaciones de Office que amplían y personalizan Word, Excel, Outlook y PowerPoint con Office 365 Services.
 
-     [Cargar un ejemplo](https://code.msdn.microsoft.com/office365/) &#124; [realizar un tutorial](https://developer.microsoft.com/graph) &#124; [examinar los documentos](https://msdn.microsoft.com/office/aa905340.aspx) &#124; [ver un vídeo](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
+     [Cargar un ejemplo](https://code.msdn.microsoft.com/office365/) &#124;                       [realizar un tutorial](https://developer.microsoft.com/graph) &#124;                              [examinar los documentos](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [ver un vídeo](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 
 - **[Paseo por Visual Studio Team Services y Team Foundation Server](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Más información sobre Visual Studio Team Services y Team Foundation Server.
 

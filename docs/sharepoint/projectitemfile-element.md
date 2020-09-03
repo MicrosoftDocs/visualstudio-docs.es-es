@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539859"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile (elemento)
@@ -41,8 +41,8 @@ ms.locfileid: "85539859"
 |Atributo|Descripción|
 |---------------|-----------------|
 |**Origen**|Atributo **xs: String** requerido.<br /><br /> Nombre del archivo que se va a implementar con el elemento de proyecto.|
-|**Target**|Atributo **xs: String** opcional.<br /><br /> La ruta de acceso donde se implementará el archivo en SharePoint, con respecto a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el atributo **Type** . Si no se especifica el atributo de **destino** , el archivo se implementará en una carpeta con el nombre especificado en el atributo de **origen** .<br /><br /> Para obtener más información, vea las descripciones de las propiedades **ruta de implementación** y **raíz de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
-|**Type**|Atributo **xs: String** requerido.<br /><br /> El tipo de implementación para el archivo. Para obtener más información sobre los valores posibles, vea la descripción de la propiedad **tipo de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Destino**|Atributo **xs: String** opcional.<br /><br /> La ruta de acceso donde se implementará el archivo en SharePoint, con respecto a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el atributo **Type** . Si no se especifica el atributo de **destino** , el archivo se implementará en una carpeta con el nombre especificado en el atributo de **origen** .<br /><br /> Para obtener más información, vea las descripciones de las propiedades **ruta de implementación** y **raíz de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Tipo**|Atributo **xs: String** requerido.<br /><br /> El tipo de implementación para el archivo. Para obtener más información sobre los valores posibles, vea la descripción de la propiedad **tipo de implementación** de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
@@ -53,7 +53,7 @@ ms.locfileid: "85539859"
 |-------------|-----------------|
 |[Archivos](../sharepoint/files-element.md)|Especifica los archivos que se incluirán con el elemento de proyecto de SharePoint cuando se implemente en SharePoint.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Los archivos de SharePoint a los que se hace referencia normalmente en elementos **projectitemfile (** incluyen archivos de elementos de características (*Elements.xml*), archivos de esquema para definiciones de lista (*Schema.xml*) y archivos de definición de elementos Web para elementos Web (*. WebPart*).
 
 ## <a name="element-information"></a>Información de elemento
@@ -65,5 +65,5 @@ ms.locfileid: "85539859"
 |**Archivo de validación**|ProjectItemModelSchema. xsd|
 |**Puede estar vacío**|No|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

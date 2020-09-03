@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a58fc57ca840f064e7d32b830133f0d909af7585
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604767"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
@@ -37,7 +37,7 @@ ms.locfileid: "72604767"
 Establece opciones para el explorador web interno e Internet Explorer. Para acceder a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y seleccione **Explorador web**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 > [!IMPORTANT]
 > Al abrir determinados archivos o componentes de la Web, se puede ejecutar código en el equipo.
@@ -59,5 +59,5 @@ Establece opciones para el explorador web interno e Internet Explorer. Para acce
 > [!NOTE]
 > Use el cuadro de diálogo Explorar con para reemplazar el explorador web interno de Visual Studio, que es una versión de Internet Explorer, por otro explorador web externo.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Cuadro de diálogo Opciones de entorno](../../ide/reference/environment-options-dialog-box.md) [General, entorno, opciones (cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md) [Diseñador HTML](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)

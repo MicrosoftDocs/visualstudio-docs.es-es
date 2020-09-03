@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0fad308de9d243b23dbe30c319526b44f3a14c52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602407"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Advertencia. Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado
@@ -31,5 +31,5 @@ Advertencia. Se han realizado cambios en el cuadro de diálogo Configurar compor
 
 - Haga clic en **No** para cancelar el cambio en la **Clase** y el **Comportamiento** seleccionados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [LINQ to SQL herramientas de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [tutorial: crear clases de LINQ to SQL (object relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

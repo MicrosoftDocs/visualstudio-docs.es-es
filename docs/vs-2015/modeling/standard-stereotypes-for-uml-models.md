@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a16c68b3b14be57fb0a6a45c740e5420a82c2ddf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661048"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Estereotipos estándar para modelos UML
@@ -27,13 +27,13 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="the-standard-profiles"></a>Los perfiles estándar
- Los siguientes perfiles están disponibles en una edición compatible de Visual Studio tan pronto como se haya instalado.
+ Los siguientes perfiles estarán disponibles en una edición compatible de Visual Studio en cuanto la haya instalado.
 
-|Perfil|Finalidad|
+|Perfil|Propósito|
 |-------------|-------------|
 |[Perfil estándar UML L2](#L2)|Un conjunto estándar de estereotipos que se pueden usar para agregar información adicional sobre un elemento o una relación.|
 |[Perfil estándar UML L3](#L3)|Un conjunto estándar de estereotipos que se pueden usar para agregar información adicional sobre un elemento o una relación.|
-|[C#Perfiles](#NetProfile)|Si desea que una clase u otro elemento en un modelo UML represente código de programa, puede indicarlo aplicando uno de los estereotipos del perfil de C#.<br /><br /> Estos estereotipos también agregan propiedades a los elementos del modelo.|
+|[Perfil de C#](#NetProfile)|Si desea que una clase u otro elemento en un modelo UML represente código de programa, puede indicarlo aplicando uno de los estereotipos del perfil de C#.<br /><br /> Estos estereotipos también agregan propiedades a los elementos del modelo.|
 
  Cuando se crea un nuevo modelo UML, los perfiles estándar UML L2 y L3 se vinculan al modelo, a menos que quite los vínculos.
 
@@ -71,7 +71,7 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
 
 3. Algunos estereotipos permiten establecer los valores de las propiedades adicionales para el elemento del modelo. Para ver estas propiedades, expanda la propiedad **estereotipos** .
 
-### <a name="L2"></a>Perfil estándar UML L2
+### <a name="uml-standard-profile-l2"></a><a name="L2"></a> Perfil estándar UML L2
  Los estereotipos siguientes se pueden usar para especializar el significado de los elementos del modelo UML, a menos que el vínculo al perfil se haya quitado del modelo.
 
  El significado exacto de estos estereotipos está determinado por las convenciones locales y por las herramientas que puede usar para procesar el modelo.
@@ -79,39 +79,39 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
 |Estereotipo|Se aplica a|Significado|
 |----------------|----------------|-------------|
 |auxiliary|Clase|Una clase que es compatible con otra clase, normalmente mediante la implementación de lógica adicional. La otra clase puede tener el estereotipo «focus».|
-|call|Dependency|La clase de cliente llama a las operaciones del proveedor.|
-|create|Dependency|La clase de cliente llama a las instancias del proveedor.|
-|create|Mensaje|El remitente crea el receptor.|
+|llamada|Dependencia|La clase de cliente llama a las operaciones del proveedor.|
+|create|Dependencia|La clase de cliente llama a las instancias del proveedor.|
+|create|Message|El remitente crea el receptor.|
 |create|Operación|Esta operación es un constructor.|
-|derive|Dependency|El elemento de cliente se calcula total o parcialmente desde el proveedor.|
+|derive|Dependencia|El elemento de cliente se calcula total o parcialmente desde el proveedor.|
 |destroy|Operación|La operación destruye su instancia.|
-|documento|Artifact|Un «archivo» que no es un origen o un archivo ejecutable.|
-|entidad|Componente|El componente representa un concepto del negocio.|
-|ejecutable|Artifact|Un «archivo» ejecutable.|
-|archivo|Artifact|Un archivo físico|
+|documento|Artefacto|Un «archivo» que no es un origen o un archivo ejecutable.|
+|Entidad|Componente|El componente representa un concepto del negocio.|
+|ejecutable|Artefacto|Un «archivo» ejecutable.|
+|archivo|Artefacto|Un archivo físico|
 |foco|Clase|Una clase que define la lógica de negocios principal, que es compatible con varias clases «auxiliares».|
-|marco de trabajo|Package|Este paquete define un modelo de diseño reutilizable.|
+|marco de trabajo|Paquete|Este paquete define un modelo de diseño reutilizable.|
 |implement|Componente|La implementación de una «especificación».|
 |implementationClass|Clase|La clase describe una implementación y cada instancia en tiempo de ejecución tiene una clase de implementación fija. Contraste con «tipo».|
-|instantiate|Dependency|El cliente crea instancias del proveedor.|
-|biblioteca|Artifact|Un «archivo» de biblioteca.|
+|instantiate|Dependencia|El cliente crea instancias del proveedor.|
+|biblioteca|Artefacto|Un «archivo» de biblioteca.|
 |metaclass|Clase|Las instancias de esta clase también son clases.|
-|modelLibrary|Package|Contiene elementos del modelo diseñados para reutilizarse en paquetes de importación. Normalmente se define como parte de un perfil y se importa automáticamente mediante la aplicación del perfil.|
+|modelLibrary|Paquete|Contiene elementos del modelo diseñados para reutilizarse en paquetes de importación. Normalmente se define como parte de un perfil y se importa automáticamente mediante la aplicación del perfil.|
 |proceso|Componente|Un componente basado en transacciones o que transporta un subproceso.|
 |realization|Clase, interfaz, componente|Describe una implementación.|
-|refine|Dependency|La clase de cliente, componente o paquete proporciona más información sobre la especificación o diseño que el proveedor.|
-|responsibility|Dependency|El comentario en el extremo del proveedor de la dependencia define las responsabilidades de la clase de cliente o el componente.|
-|script|Artifact|Un «archivo» interpretable.|
-|send|Dependency|La operación de origen envía la señal de destino.|
+|refine|Dependencia|La clase de cliente, componente o paquete proporciona más información sobre la especificación o diseño que el proveedor.|
+|responsibility|Dependencia|El comentario en el extremo del proveedor de la dependencia define las responsabilidades de la clase de cliente o el componente.|
+|script|Artefacto|Un «archivo» interpretable.|
+|Enviar|Dependencia|La operación de origen envía la señal de destino.|
 |service|Componente|Un componente sin estado.|
-|origen|Artifact|Un «archivo» compilable.|
-|especificación|Clase, interfaz, componente|Define el comportamiento de un componente u objeto sin definir cómo funciona internamente.|
+|source|Artefacto|Un «archivo» compilable.|
+|specification|Clase, interfaz, componente|Define el comportamiento de un componente u objeto sin definir cómo funciona internamente.|
 |subsistema|Componente|Una parte de un sistema grande. Un subsistema de un diagrama de casos de uso es un componente con el estereotipo del subsistema.|
-|seguimiento|Dependency|El elemento de cliente forma parte del diseño que desarrolla el proveedor. Los dos extremos de esta dependencia normalmente están en modelos diferentes. Uno de estos modelos es una realización del otro.|
-|tipo|Clase|Especifica el comportamiento de un objeto sin indicar cómo se implementa. Un objeto es un miembro de un tipo si se ajusta a la especificación.|
-|utility|Clase|Una colección de funciones estáticas. La clase no tiene instancias.|
+|seguimiento|Dependencia|El elemento de cliente forma parte del diseño que desarrolla el proveedor. Los dos extremos de esta dependencia normalmente están en modelos diferentes. Uno de estos modelos es una realización del otro.|
+|type|Clase|Especifica el comportamiento de un objeto sin indicar cómo se implementa. Un objeto es un miembro de un tipo si se ajusta a la especificación.|
+|utilidad|Clase|Una colección de funciones estáticas. La clase no tiene instancias.|
 
-### <a name="L3"></a>Perfil estándar UML L3
+### <a name="uml-standard-profile-l3"></a><a name="L3"></a> Perfil estándar UML L3
  Los estereotipos siguientes se pueden usar para especializar el significado de los elementos del modelo UML, a menos que el perfil se haya desvinculado del modelo.
 
  El significado exacto de estos estereotipos está determinado por las convenciones locales y por las herramientas que puede usar para procesar el modelo.
@@ -122,7 +122,7 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
 |metaModel|Modelo|Define un lenguaje de modelos como una variante de UML o un lenguaje específico de dominio.|
 |systemModel|Modelo|Un modelo que es una colección de modelos que se aplican al mismo sistema, por ejemplo, una especificación, una realización y relaciones de seguimiento entre ellos.|
 
-## <a name="NetProfile"></a>C# Perfil de
+## <a name="c-profile"></a><a name="NetProfile"></a> Perfil de C#
  Los estereotipos definidos en este perfil permiten indicar que un elemento del modelo está pensado para traducción en el código del programa. Cada estereotipo define propiedades adicionales que se pueden establecer en el elemento del modelo.
 
  Para que estos estereotipos estén disponibles, vincule un modelo o paquete al perfil de C#. A continuación, puede aplicar los estereotipos a elementos del modelo en ese modelo o paquete.
@@ -131,12 +131,12 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
 
 |Estereotipo|Se aplica a|Propiedades|
 |----------------|----------------|----------------|
-|**C#Las**|Clase UML<br /><br /> Componente|**Atributos CLR**<br /><br /> **Es parcial**<br /><br /> **Está sellado**<br /><br /> **Estático**<br /><br /> **No es seguro**<br /><br /> **Visibilidad de los paquetes**|
-|**C#Destructor**|Clase UML<br /><br /> Componente|**Atributos CLR**<br /><br /> **Es parcial**<br /><br /> **No es seguro**<br /><br /> **Visibilidad de los paquetes**|
-|**C#miembros globales**|Clase UML<br /><br /> Componente|**Atributos CLR**|
-|**C#Interfaz**|Interfaz de C#|**Atributos CLR**<br /><br /> **Es parcial**<br /><br /> **Visibilidad de los paquetes**|
-|**C#enumeración**|Enumeración UML|**CLR**<br /><br /> **Tipo base**|
-|**C#System.IO**|Paquete UML|**Atributos CLR**<br /><br /> **Nombre base**<br /><br /> **Uso de espacios de nombres**|
+|**Clase de C#**|Clase UML<br /><br /> Componente|**Atributos CLR**<br /><br /> **Is Partial**<br /><br /> **Está sellado**<br /><br /> **Is Static**<br /><br /> **Is Unsafe**<br /><br /> **Visibilidad de los paquetes**|
+|**Struct de C#**|Clase UML<br /><br /> Componente|**Atributos CLR**<br /><br /> **Is Partial**<br /><br /> **Is Unsafe**<br /><br /> **Visibilidad de los paquetes**|
+|**Miembros globales de C#**|Clase UML<br /><br /> Componente|**Atributos CLR**|
+|**Interfaz de C#**|Interfaz de C#|**Atributos CLR**<br /><br /> **Is Partial**<br /><br /> **Visibilidad de los paquetes**|
+|**C# enum**|Enumeración UML|**Atributos de Clr**<br /><br /> **Tipo base**|
+|**Espacio de nombres de C#**|Paquete UML|**Atributos CLR**<br /><br /> **Nombre base**<br /><br /> **Uso de espacios de nombres**|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Agregar estereotipos a elementos del modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md)

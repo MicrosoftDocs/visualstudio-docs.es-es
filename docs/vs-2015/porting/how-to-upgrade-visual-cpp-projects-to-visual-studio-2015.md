@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Actualización de proyectos de Visual C++ a Visual Studio 2015 | Microsoft Docs
+title: 'Procedimiento: Actualización de proyectos de Visual C++ a Visual Studio 2015 | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,13 +13,13 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 23461fb1927cfcbf738d2dbcb82e3977b3be265a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278727"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedimiento Actualizar proyectos de Visual C++ a Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Cómo: Actualizar proyectos de Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente de Visual Studio 2017, consulte [Guía de migración y actualización de Visual C++](/cpp/porting/visual-cpp-porting-and-upgrading-guide).
@@ -53,5 +53,5 @@ Cuando se abre por primera vez un proyecto de Visual C++ creado en una versión 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Seguir trabajando con un valor de PlatformToolset personalizado
  Si desea seguir trabajando con un valor de PlatformToolset personalizado en [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], el conjunto de herramientas debe estar en %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ en un equipo x86 o en %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ si se trata de un equipo x64. Para obtener información sobre cómo crear un valor de PlatformToolset personalizado, vea [Compatibilidad nativa con múltiples versiones (multi-targeting) de C++](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) en el blog del equipo de Visual C++.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Guía de migración y actualización de Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

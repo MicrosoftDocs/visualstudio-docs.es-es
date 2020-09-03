@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06da9e1a8db332f12a08c1182291c5fcfb4555de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602270"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Cómo: Mostrar las direcciones URL como vínculos en el editor
@@ -32,7 +32,7 @@ Puede elegir que el editor de código trate los localizadores uniformes de recur
 - Intentan abrir el sitio web indicado cuando presiona **CTRL** y hace clic con el botón izquierdo en el vínculo. De manera predeterminada, el sitio web se muestra en el explorador web interno.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="procedure"></a>Procedimiento
 
@@ -50,5 +50,5 @@ Puede elegir que el editor de código trate los localizadores uniformes de recur
 
 4. En **Mostrar**, seleccione **Habilitar navegación a direcciones URL con un solo clic**.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Personalización del cuadro de](../../ide/customizing-the-editor.md) [diálogo Opciones del editor de texto](../../ide/reference/text-editor-options-dialog-box.md) del editor [escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)

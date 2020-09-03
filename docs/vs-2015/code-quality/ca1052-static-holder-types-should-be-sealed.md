@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 14231cc4dcde5aed5cabc2d8a6172a002c0ba6bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539755"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Los tipos titulares estáticos deben estar sellados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|StaticHolderTypesShouldBeSealed|
 |Identificador de comprobación|CA1052|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetEngineInfo ? Microsoft Docs
+title: 'IDebugProgramNode2:: GetEngineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722103"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
@@ -43,10 +43,10 @@ int GetEngineInfo(
 
 ## <a name="parameters"></a>Parámetros
 `pbstrEngine`\
-[fuera] Devuelve el nombre de la DE que ejecuta el programa (específico de C+): puede ser un puntero nulo que indica que el autor de la llamada no está interesado en el nombre del motor).
+enuncia Devuelve el nombre de la ejecución del programa (específico de C++: puede ser un puntero nulo que indica que el llamador no está interesado en el nombre del motor).
 
 `pguidEngine`\
-[fuera] Devuelve el identificador único global de la DE que ejecuta el programa (específico de C++: puede ser un puntero nulo que indica que el autor de la llamada no está interesado en el GUID del motor).
+enuncia Devuelve el identificador único global de de la ejecución del programa (específico de C++: puede ser un puntero nulo que indica que el llamador no está interesado en el GUID del motor).
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

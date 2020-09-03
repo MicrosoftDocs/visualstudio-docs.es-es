@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 823c61e7625850c680b52cd4ad9386ef0838d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660934"
 ---
 # <a name="call-hierarchy"></a>Jerarquía de llamadas
@@ -42,7 +42,7 @@ La jerarquía de llamadas le permite navegar por el código al mostrar todas las
 
   ![Jerarquía de llamadas de varios nodos abiertos](../../ide/media/multiplenodes.png "MultipleNodes") Ventana jerarquía de llamadas
 
-  Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”** . Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.
+  Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”**. Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.
 
   El cuadro **Ámbito de búsqueda** en la barra de herramientas contiene opciones para **Mi solución**, **Proyecto actual** y **Documento actual**.
 

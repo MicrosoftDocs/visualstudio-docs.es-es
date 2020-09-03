@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593114"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System. Activities (pestaña), elegir elementos del cuadro de herramientas (cuadro de diálogo)
 
-Esta pestaña del cuadro de diálogo **elegir elementos del cuadro de herramientas** muestra una lista de actividades Windows Workflow Foundation (WF), plantillas y elementos disponibles. Para mostrar esta lista, seleccione **elegir elementos del cuadro de herramientas** en el menú **herramientas** o haga clic con el botón secundario en el cuadro de **herramientas** y seleccione **elegir elementos** para mostrar el cuadro de diálogo **elegir elementos del cuadro de herramientas** y, a continuación, seleccione la pestaña **System.** Activities. Core. Presentation, que contiene actividades de flujo de trabajo. sin embargo, solo se activan de forma predeterminada las actividades proporcionadas por el sistema y las actividades agregadas a través de otros ensamblados que se muestran en el **cuadro de herramientas** . Las actividades agregadas recientemente se comprueban automáticamente y aparecen en el cuadro de **herramientas** al hacer clic en **Aceptar** en el cuadro de diálogo. Además, estos elementos aparecen en el **cuadro de herramientas** en una nueva categoría que corresponde al espacio de nombres en el que reside la actividad, el elemento o la plantilla.
+Esta pestaña del cuadro de diálogo **elegir elementos del cuadro de herramientas** muestra una lista de actividades Windows Workflow Foundation (WF), plantillas y elementos disponibles. Para mostrar esta lista, seleccione **elegir elementos del cuadro de herramientas** en el menú **herramientas** o haga clic con el botón secundario en el cuadro de **herramientas** y seleccione **elegir elementos** para mostrar el cuadro de diálogo **elegir elementos del cuadro de herramientas** y, a continuación, seleccione la pestaña **System. Activities** . Desde el cuadro, la lista contiene actividades de flujo de trabajo de ensamblados System. Activities, System. ServiceModel. Activities y System. Activities. Core. Presentation; sin embargo, solo se activan de forma predeterminada las actividades proporcionadas por el sistema y las actividades agregadas a través de otros ensamblados que se muestran en el **cuadro de herramientas** . Las actividades agregadas recientemente se comprueban automáticamente y aparecen en el cuadro de **herramientas** al hacer clic en **Aceptar** en el cuadro de diálogo. Además, estos elementos aparecen en el **cuadro de herramientas** en una nueva categoría que corresponde al espacio de nombres en el que reside la actividad, el elemento o la plantilla.
 
 > [!WARNING]
 > Si intenta agregar un ensamblado que no contenga actividades de flujo de trabajo, aparecerá un diálogo de error que indica que el ensamblado no contiene ninguna actividad.
@@ -43,7 +43,7 @@ Ofrece una lista de los nombres de las actividades de flujo de trabajo que está
 System.IO
 Muestra la jerarquía del espacio de nombres de .NET que define la estructura de la actividad.
 
-Nombre de ensamblado\
+Nombre del ensamblado \
 Muestra el nombre y la versión del ensamblado .NET que contiene la actividad.
 
 Active

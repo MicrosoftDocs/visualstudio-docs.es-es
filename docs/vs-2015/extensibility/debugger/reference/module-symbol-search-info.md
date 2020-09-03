@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2cfbaf8c3756bf758956d1f1e5964d8e9f8f0c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205184"
 ---
-# <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
+# <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Contiene información de estado sobre las rutas de acceso de búsqueda de símbolos que se ha buscado.  
+Contiene información de estado sobre las rutas de acceso de búsqueda de símbolos que se han buscado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,21 +43,21 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
 #### <a name="parameters"></a>Parámetros  
  `dwValidFields`  
- Una combinación de marcas de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeración que especifica el tipo de información de búsqueda descrito en esta estructura.  
+ Combinación de marcas de la enumeración [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) que especifica el tipo de información de búsqueda que se describe en esta estructura.  
   
  `bstrVerboseSearchInfo`  
- Ruta de acceso de búsqueda y resultados concatenados en una sola cadena.  
+ La ruta de búsqueda y los resultados se concatenan en una sola cadena.  
   
-## <a name="remarks"></a>Comentarios  
- Esta estructura se devuelve desde una llamada a la [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) método.  
+## <a name="remarks"></a>Observaciones  
+ Esta estructura se devuelve de una llamada al método [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) .  
   
- Si el `bstrVerboseSearchInfo` campo no está vacío, a continuación, contiene una lista de rutas de acceso que buscará y los resultados de la búsqueda. La lista está formateada con una ruta de acceso, seguido de puntos suspensivos ("..."), seguidos por el resultado. Si hay más de un par de resultados de la ruta de acceso, cada par se separa mediante un par de "\r\n" (carro retorno/avance de línea). El patrón tiene este aspecto:  
+ Si el `bstrVerboseSearchInfo` campo no está vacío, contiene una lista de rutas de acceso de búsqueda y los resultados de esa búsqueda. Se da formato a la lista con una ruta de acceso, seguida de puntos suspensivos ("..."), seguido del resultado. Si hay más de un par de resultados de ruta de acceso, cada par está separado por un par "\r\n" (retorno de carro/avance de bits). El patrón tiene el siguiente aspecto:  
   
- \<ruta de acceso >... \<resultado > \r\n\<ruta de acceso >... \<resultado > \r\n\<ruta de acceso >... \<resultado >  
+ \<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>  
   
  Tenga en cuenta que la última entrada no tiene una secuencia \r\n.  
   
- Este es un posible `bstrVerboseSearchInfo` cadena que se ha enviado a la salida estándar.  
+ Esta es una posible `bstrVerboseSearchInfo` cadena que se ha enviado a la salida estándar.  
   
  `c:\symbols\user32.pdb... File not found.`  
   
@@ -66,12 +66,12 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
  `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

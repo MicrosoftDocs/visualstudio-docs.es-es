@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25b144409ae58f006602706a5b5cb498c0535ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540171"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlace de controles de WPF a datos en Visual Studio
@@ -68,7 +68,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 
 - Crea un enlace de datos para un control. Si se arrastra el elemento hasta un control existente en el diseñador, el XAML enlaza el control al elemento. Si arrastra el elemento hasta un contenedor, el código XAML crea el control que se seleccionó para el elemento arrastrado y enlaza el control al elemento. El control se crea dentro de una nueva clase <xref:System.Windows.Controls.Grid>.
 
-  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]también realiza los cambios siguientes en el archivo de código subyacente:
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] también realiza los cambios siguientes en el archivo de código subyacente:
 
 - Crea un controlador de eventos <xref:System.Windows.FrameworkElement.Loaded> para el elemento de [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] que contiene el control. El controlador de eventos llena de datos la tabla, recupera <xref:System.Windows.Data.CollectionViewSource> de los recursos del contenedor y, a continuación, convierte el primer elemento de datos en el elemento actual. Si <xref:System.Windows.FrameworkElement.Loaded> ya existe un controlador de eventos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , agrega este código al controlador de eventos existente.
 
@@ -100,7 +100,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 > [!NOTE]
 > Las clases personalizadas deben ser públicas y, de forma predeterminada, tener un constructor sin parámetros. No pueden ser clases anidadas que tengan un "punto" en su sintaxis. Para obtener más información, vea [XAML y clases personalizadas para WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que hace lo siguiente:
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que hace lo siguiente:
 
 - Agrega un nuevo objeto <xref:System.Windows.Data.CollectionViewSource> a los recursos del contenedor al que se arrastró el elemento. <xref:System.Windows.Data.CollectionViewSource> es un objeto que se puede usar para navegar y mostrar los datos del objeto.
 
