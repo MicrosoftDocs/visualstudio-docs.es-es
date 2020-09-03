@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 78c80bc015ffbf39949b5295d85396dc84154208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189583"
 ---
 # <a name="debugging-in-visual-studio"></a>Depurar en Visual Studio
@@ -31,23 +31,23 @@ El depurador de Visual Studio permite observar el comportamiento del programa en
 
  Para obtener una introducción rápida al diagnóstico en Visual Studio, vea [Depurar, generar perfiles y diagnosticar](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
-- [Depurador de Windows](../debugger/debugger-windows.md) se enumeran las distintas ventanas del depurador.
+- [Ventanas del depurador](../debugger/debugger-windows.md) Enumera las distintas ventanas del depurador.
 
-- [Conceptos básicos del depurador](../debugger/debugger-basics.md) explica los fundamentos del uso del depurador de Visual Studio. Entre los temas, se incluyen: principios básicos de depuración, control de la ejecución, asociación del depurador al programa en ejecución, depuración Just-In-Time, iniciación del depurador automáticamente, volcados de memoria, puntos de interrupción, inspección del programa, control de excepciones, Editar y continuar, y utilizar expresiones en el depurador.
+- [Conceptos básicos del depurador](../debugger/debugger-basics.md) Describe los aspectos básicos del uso del depurador de Visual Studio. Entre los temas, se incluyen: principios básicos de depuración, control de la ejecución, asociación del depurador al programa en ejecución, depuración Just-In-Time, iniciación del depurador automáticamente, volcados de memoria, puntos de interrupción, inspección del programa, control de excepciones, Editar y continuar, y utilizar expresiones en el depurador.
 
-- [Más características de depuración](../debugger/more-debugging-features.md) describe diferentes características de depuración.
+- [Más características de depuración](../debugger/more-debugging-features.md) Describe las diferentes características de depuración.
 
-- [Depuración remota](../debugger/remote-debugging.md) se describe cómo configurar y usar la depuración remota.
+- [Depuración remota](../debugger/remote-debugging.md) Describe cómo configurar y usar la depuración remota.
 
-- [Depurar aplicaciones multiproceso con comportamiento](../debugger/debug-multithreaded-applications-in-visual-studio.md) se describe cómo depurar aplicaciones multiproceso.
+- [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md) Describe cómo depurar aplicaciones multiproceso.
 
-- [IntelliTrace](../debugger/intellitrace.md) se describe la característica de IntelliTrace.
+- [IntelliTrace](../debugger/intellitrace.md) Describe la característica IntelliTrace.
 
-- [Depurar aplicaciones](../debugger/debugging-applications.md) se describe cómo depurar distintos tipos de aplicaciones.
+- [Depurar aplicaciones](../debugger/debugging-applications.md) Describe cómo depurar diferentes tipos de aplicaciones.
 
-- [Depuración: referencia de la interfaz de usuario](../debugger/debugging-user-interface-reference.md) proporciona la información del referencia en las ventanas y cuadros de diálogo usa para depurar su aplicación. Estos temas también están disponibles cuando se presiona F1 mientras se depura un elemento de la interfaz de usuario, por ejemplo, la ventana **Puntos de interrupción** .
+- [Depurar referencia](../debugger/debugging-user-interface-reference.md) de la interfaz de usuario Proporciona información de referencia sobre las ventanas y los cuadros de diálogo que se usan para depurar la aplicación. Estos temas también están disponibles cuando se presiona F1 mientras se depura un elemento de la interfaz de usuario, por ejemplo, la ventana **Puntos de interrupción** .
 
-- [Debug Interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) describe el Kit de desarrollo de Software (SDK de DIA) del acceso de interfaz de depuración de Microsoft. El SDK de DIA proporciona acceso a información de depuración almacenada en archivos de base de datos de programa (.pdb) generados por herramientas de postcompilador de Microsoft.
+- [Debug interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) Describe el kit de desarrollo de software de Microsoft Debug interface Access (SDK de DIA). El SDK de DIA proporciona acceso a información de depuración almacenada en archivos de base de datos de programa (.pdb) generados por herramientas de postcompilador de Microsoft.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Herramientas de generación de perfiles](../profiling/profiling-tools.md) [IDE de Visual Studio](../ide/visual-studio-ide.md)

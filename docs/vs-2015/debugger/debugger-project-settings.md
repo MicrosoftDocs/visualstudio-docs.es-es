@@ -1,5 +1,5 @@
 ---
-title: Configuración del proyecto del depurador | Microsoft Docs
+title: Configuración del proyecto para el depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189566"
 ---
 # <a name="debugger-project-settings"></a>Configuración del proyecto para el depurador
@@ -63,5 +63,5 @@ Ciertos valores de configuración del proyecto también afectan a la depuración
  [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)  
  Describe los valores de propiedades relacionados con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)

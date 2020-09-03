@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d617d428c9551bc821e1c72fa517497769e6f047
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204921"
 ---
-# <a name="referencecompare"></a>REFERENCE_COMPARE
+# <a name="reference_compare"></a>REFERENCE_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica el tipo de comparación de referencias.  
+Especifica el tipo de comparación de las referencias.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,24 +45,24 @@ public enum enum_REFERENCE_COMPARE { 
   
 ## <a name="members"></a>Miembros  
  REF_COMPARE_EQUAL  
- Especifica una comparación igual que.  
+ Especifica una comparación de igualdad.  
   
  REF_COMPARE_LESS_THAN  
- Especifica una menor-que la comparación.  
+ Especifica una comparación de menor que.  
   
  REF_COMPARE_GREATER_THAN  
- Especifica una mayor-a la comparación.  
+ Especifica una comparación de mayor que.  
   
-## <a name="remarks"></a>Comentarios  
- Se pasa como argumento a la [comparar](../../../extensibility/debugger/reference/idebugreference2-compare.md) método.  
+## <a name="remarks"></a>Observaciones  
+ Se pasa como argumento al método [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
+ Encabezado: msdbg. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ [Comparar](../../../extensibility/debugger/reference/idebugreference2-compare.md)

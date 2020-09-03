@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286198"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comienzo del desarrollo de extensiones de Visual Studio
@@ -63,7 +63,7 @@ En la práctica, hemos descubierto que las características que la mayoría de l
 
 - [Shell aislado de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a>¿Qué plantillas de proyecto proporciona el VSSDK?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> ¿Qué plantillas de proyecto proporciona el VSSDK?
  Los dos tipos principales de extensiones son VSPackages y extensiones de MEF. En general, las extensiones VSPackage se utilizan para las extensiones que usan o extienden comandos, ventanas de herramientas y proyectos. Las extensiones de MEF se usan para extender o personalizar el editor de Visual Studio.
 
  En el caso de las extensiones de Visual C# y Visual Basic, VSSDK proporciona una plantilla de proyecto de VSIX vacía que se puede usar junto con las nuevas plantillas de elemento que crean comandos de menú, ventanas de herramientas y extensiones de editor. También puede usar esta plantilla para empaquetar plantillas de proyecto, fragmentos de código y otros artefactos para su distribución a otros usuarios.

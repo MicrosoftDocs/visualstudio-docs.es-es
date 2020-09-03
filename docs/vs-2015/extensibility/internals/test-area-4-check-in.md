@@ -1,5 +1,5 @@
 ---
-title: 'Área de prueba 4: Compruebe | Microsoft Docs'
+title: 'Área de prueba 4: proteger | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,61 +12,61 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155957"
 ---
 # <a name="test-area-4-check-in"></a>Área de prueba 4: Inserción en el repositorio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Esta área de prueba de complemento de control de código fuente trata de enviar los elementos actualizados en el almacén de versiones a través de la **proteger** comando.  
+Este área de prueba del complemento de control de código fuente cubre el envío de elementos actualizados al almacén de versiones a través del comando **de inserción en el repositorio** .  
   
 ## <a name="command-menu-access"></a>Acceso al menú de comandos  
- La siguiente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rutas de menú del entorno de desarrollo integrado que se usan en los casos de prueba.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]En los casos de prueba se usan las siguientes rutas de menú del entorno de desarrollo integrado.  
   
-##### <a name="check-in"></a>Check-in:  
- **Archivo**, **Control de código fuente**, **proteger**.  
+##### <a name="check-in"></a>Registrar:  
+ **Archivo**, **control de código fuente**, **proteger**.  
   
  **Archivo**, **proteger**.  
   
  Menú contextual, **proteger**.  
   
-## <a name="common-expected-behavior"></a>Comportamiento esperado comunes  
+## <a name="common-expected-behavior"></a>Comportamiento esperado común  
   
-- Proyectos y archivos agregados a una solución o proyecto bajo control de código fuente aparecen en la **proteger** cuadro de diálogo y el **protecciones pendientes** ventana.  
+- Los proyectos y archivos agregados a una solución o proyecto bajo control de código fuente aparecen en el cuadro **de diálogo proteger** y en la ventana **protecciones pendientes** .  
   
-- Después de la comprobación en, los elementos agregados aparecen en el control de código fuente.  
+- Después de la inserción en el repositorio, los elementos agregados aparecen en el control de código fuente.  
   
-- Después de la comprobación en, los elementos actualizados son versiones correctas en el almacén.  
+- Después de la inserción en el repositorio, los elementos actualizados tienen versiones correctas en el almacén.  
   
 ## <a name="test-cases"></a>Casos de prueba  
- Los siguientes son casos de prueba concretos para el área de prueba de inserción en el repositorio.  
+ Los siguientes son casos de prueba específicos para el área de prueba de protección.  
   
-### <a name="case-4a-modified-items"></a>Escenario 4a: Elementos modificados  
- Describe cómo usar la verificación en acción para actualizar un archivo bajo control de código fuente que se ha modificado.  
+### <a name="case-4a-modified-items"></a>Caso 4A: elementos modificados  
+ Describe el uso de la acción de inserción en el repositorio para actualizar un archivo bajo control de código fuente que se ha modificado.  
   
-|.|Pasos de prueba|Resultados esperados para comprobar|  
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|  
 |------------|----------------|--------------------------------|  
-|Modificar un archivo de texto que se ha desprotegido, compruebe en el archivo solo (**proteger** cuadro de diálogo)|1.  Cree un nuevo proyecto con un archivo de texto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Desproteger y modificar el archivo de texto.<br />4.  Proteger a través del cuadro de diálogo Insertar en el repositorio (**archivo**, **Control de código fuente**, **proteger**).|Comportamiento esperado común.|  
-|Modificar un archivo de texto que se ha desprotegido, compruebe en el archivo solo (**protecciones pendientes** ventana)|1.  Cree un nuevo proyecto con un archivo de texto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Desproteger y modificar el archivo de texto.<br />4.  Proteger a través de la **protecciones pendientes** ventana.|Comportamiento esperado común.|  
+|Modificar un archivo de texto que se ha desprotegido, proteger únicamente el archivo (cuadro de diálogo**proteger** )|1. cree un nuevo proyecto con un archivo de texto.<br />2. Agregue la solución al control de código fuente.<br />3. desproteja y modifique el archivo de texto.<br />4. proteger mediante el cuadro de diálogo proteger (**archivo**, **control de código fuente**, **proteger**).|Comportamiento esperado común.|  
+|Modificar un archivo de texto que se ha desprotegido, proteger solo el archivo (ventana**protecciones pendientes** )|1. cree un nuevo proyecto con un archivo de texto.<br />2. Agregue la solución al control de código fuente.<br />3. desproteja y modifique el archivo de texto.<br />4. Proteja a través de la ventana **protecciones pendientes** .|Comportamiento esperado común.|  
   
-### <a name="case-4b-adding-files"></a>Escenario 4b: Agregar archivos  
- Al agregar un archivo a un proyecto o un elemento a una solución, debe cambiar también el proyecto o solución. Por lo tanto, el archivo primario también está desprotegido y debe protegerse para completar la incorporación.  
+### <a name="case-4b-adding-files"></a>Caso 4B: agregar archivos  
+ Al agregar un archivo a un proyecto o un elemento a una solución, el proyecto o la solución también deben cambiar. Por lo tanto, el archivo primario también se desprotege y se debe proteger para completar la adición.  
   
-|.|Pasos de prueba|Resultados esperados para comprobar|  
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|  
 |------------|----------------|--------------------------------|  
-|Agregar un archivo de texto y proteger todo (**proteger** cuadro de diálogo)|1.  Cree un nuevo proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un archivo de texto al proyecto.<br />4.  Si se le solicite, acepte desprotección del proyecto.<br />5.  Seleccione la solución en **el Explorador de soluciones**.<br />6.  Proteger desde el **proteger** cuadro de diálogo.|Comportamiento esperado común.|  
-|Agregar un archivo de texto y proteger todo (**protecciones pendientes** ventana)|1.  Cree un nuevo proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un archivo de texto al proyecto.<br />4.  Si se le solicite, acepte desprotección del proyecto.<br />5.  Proteja la solución de **protecciones pendientes** ventana.|Comportamiento esperado comunes|  
+|Agregar un archivo de texto y protegerlo todo (cuadro**de diálogo proteger** )|1. cree un nuevo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Agregue un archivo de texto al proyecto.<br />4. acepte la extracción del proyecto si se le solicita.<br />5. Seleccione la solución en **Explorador de soluciones**.<br />6. Proteja en el cuadro de diálogo **proteger** .|Comportamiento esperado común.|  
+|Agregar un archivo de texto y protegerlo todo (ventana**protecciones pendientes** )|1. cree un nuevo proyecto.<br />2. Agregue la solución al control de código fuente.<br />3. Agregue un archivo de texto al proyecto.<br />4. acepte la extracción del proyecto si se le solicita.<br />5. Proteja la solución desde la ventana **protecciones pendientes** .|Comportamiento esperado común|  
   
-### <a name="case-4c-adding-projects"></a>Caso 4 núcleos: Agregar proyectos  
- Al agregar un proyecto a una solución, debe cambiar también la solución. Por lo tanto, el archivo de solución también está desprotegido y debe protegerse para completar la incorporación.  
+### <a name="case-4c-adding-projects"></a>Caso 4C: agregar proyectos  
+ Al agregar un proyecto a una solución, la solución debe cambiar también. Por lo tanto, el archivo de solución también se desprotege y se debe proteger para completar la adición.  
   
-|.|Pasos de prueba|Resultados esperados para comprobar|  
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|  
 |------------|----------------|--------------------------------|  
-|Agregar un proyecto a una solución bajo control de código fuente en blanco (**proteger** cuadro de diálogo)|1.  Crear una solución en blanco.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un proyecto nuevo.<br />4.  Si se le solicite, acepte desprotección de la solución.<br />5.  Proteger desde el **proteger** cuadro de diálogo.|Comportamiento esperado común.|  
-|Agregar un proyecto a una solución bajo control de código fuente en blanco (**protecciones pendientes** ventana)|1.  Crear una solución en blanco.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un proyecto nuevo.<br />4.  Si se le solicite, acepte desprotección de la solución.<br />5.  Proteja la solución de **protecciones pendientes** ventana.|Comportamiento esperado común.|  
+|Agregar un proyecto a una solución en blanco bajo control de código fuente (cuadro**de diálogo proteger** )|1. cree una solución en blanco.<br />2. Agregue la solución al control de código fuente.<br />3. Agregue un nuevo proyecto.<br />4. acepte la desprotección de la solución si se le solicita.<br />5. Proteja desde el cuadro de diálogo **proteger** .|Comportamiento esperado común.|  
+|Agregar un proyecto a una solución en blanco en el control de código fuente (ventana**protecciones pendientes** )|1. cree una solución en blanco.<br />2. Agregue la solución al control de código fuente.<br />3. Agregue un nuevo proyecto.<br />4. acepte la desprotección de la solución si se le solicita.<br />5. Proteja la solución desde la ventana **protecciones pendientes** .|Comportamiento esperado común.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

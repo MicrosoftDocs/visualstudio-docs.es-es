@@ -1,5 +1,5 @@
 ---
-title: 'Error: Sitio usa la dirección IP | Documentos de Microsoft'
+title: 'Error: Uso de dirección IP por parte del sitio | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46eace1c566a2810c5914a49654f8393f425fdee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155752"
 ---
 # <a name="error-site-uses-ip-address"></a>Error: Uso de dirección IP por parte del sitio
@@ -40,5 +40,5 @@ Este error se produce cuando el depurador intenta asociarse automáticamente a u
   
 2. Cambie el valor de configuración de **Identificación del sitio Web de IIS**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

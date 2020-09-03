@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ver documentos de Script | Documentos de Microsoft
+title: Procedimiento Visualización de documentos de script | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189600"
 ---
-# <a name="how-to-view-script-documents"></a>Procedimiento Visualización de documentos de script
+# <a name="how-to-view-script-documents"></a>Cómo: Ver documentos de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], los archivos de script de cliente generados a partir de script de servidor aparecían en la ventana Explorador de scripts. Esta ventana solía estar oculta, por lo que la disponibilidad de archivos de script de cliente no siempre resultaba obvia.  
@@ -32,11 +32,11 @@ En versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], los arc
   
  Los archivos de script de cliente sólo están visibles en modo de depuración o en modo de interrupción. Aparecen en el nodo **Documentos de script**.  
   
- Los archivos de script de servidor siempre están visibles. Aparecen en el nodo **\<Nombre de ruta de acceso del sitio web>** . El nombre del nodo es similar a este ejemplo: `c:\...\Website2\`  
+ Los archivos de script de servidor siempre están visibles. Aparecen en el **\<Website Pathname>** nodo. El nombre del nodo es similar al de este ejemplo: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Para ver un documento de script de servidor  
   
-1. En el **Explorador de soluciones**, abra el nodo **\<Nombre de ruta de acceso del sitio web>** .  
+1. En el **Explorador de soluciones**, abra el nodo **\<Website Pathname>** .  
   
 2. Haga doble clic en el archivo de script que desee ver.  
   
@@ -50,5 +50,5 @@ En versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], los arc
   
      El archivo de script de cliente se abre en una ventana de código fuente.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

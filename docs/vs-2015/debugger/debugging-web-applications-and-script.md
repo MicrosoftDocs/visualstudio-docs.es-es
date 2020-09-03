@@ -1,5 +1,5 @@
 ---
-title: Depurar Script y aplicaciones Web | Documentos de Microsoft
+title: Depurar aplicaciones y scripts Web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155903"
 ---
 # <a name="debugging-web-applications-and-script"></a>Depurar script y aplicaciones web
@@ -34,7 +34,7 @@ ms.locfileid: "68155903"
 
 Leyenda de la tabla:  
   
- En esta sección se describen las técnicas comunes de depuración para aplicaciones Web. Para obtener más información, consulte [Fundamentos del depurador](../debugger/debugger-basics.md).  
+ En esta sección se describen las técnicas comunes de depuración para aplicaciones Web. Para obtener más información, vea [conceptos básicos del depurador](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
@@ -47,7 +47,7 @@ Leyenda de la tabla:
  Describe cómo se usan las ventanas de herramientas **Tareas paralelas** y **Pilas paralelas** para depurar una aplicación paralela.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Aplicaciones web de ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)  
+ [Aplicaciones Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)  
  Se describe la configuración y el comportamiento predeterminados de los proyectos de aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], los pasos para depurar y modificar la configuración de depuración predeterminada.  
   
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)  
@@ -59,6 +59,6 @@ Leyenda de la tabla:
  [IntelliTrace](../debugger/intellitrace.md)  
  Buscar errores más rápido y fácil grabando el historial de ejecución de la aplicación con IntelliTrace. Avanzar y retroceder por las llamadas y eventos registrados para examinar el estado de la aplicación en puntos en el tiempo clave. Depurar el código sin tener que establecer tantos puntos de interrupción o reiniciar la aplicación con tanta frecuencia. Requiere Visual Studio Ultimate.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)
