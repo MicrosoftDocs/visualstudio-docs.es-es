@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3a70cec3ab9e03dd97a1df5f0ccf8713a79cc28
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180480"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el número de archivo y la línea de código fuente que indican dónde se define un tipo definido por el usuario especificado.  
+Recupera el archivo de código fuente y el número de línea que indican dónde se define un tipo definido por el usuario especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,11 +32,11 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>Parámetros  
  `ppResult`  
- [out] Un `IDiaLineNumber` objeto que contiene el número de archivo y la línea de código fuente donde definido por el usuario.  
+ enuncia `IDiaLineNumber` Objeto que contiene el archivo de código fuente y el número de línea donde está definido por el usuario.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

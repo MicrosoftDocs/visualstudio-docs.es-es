@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253705"
 ---
 # <a name="document-host-item"></a>Elemento host de documento
@@ -40,14 +40,14 @@ ms.locfileid: "71253705"
 ### <a name="limitations-of-the-document-host-item-in-document-level-projects"></a>Limitaciones del elemento host de documento en los proyectos de nivel de documento
  Un proyecto de nivel de documento puede contener solamente un elemento host <xref:Microsoft.Office.Tools.Word.Document> (es decir, la clase `ThisDocument` ). No puede agregar nuevos elementos host <xref:Microsoft.Office.Tools.Word.Document> al proyecto en tiempo de diseño, ni tampoco crear nuevos elementos host <xref:Microsoft.Office.Tools.Word.Document> en tiempo de ejecución desde una personalización de nivel de documento.
 
- Si crea un nuevo documento de Word en tiempo de ejecución, será del tipo <xref:Microsoft.Office.Interop.Word.Document>. Como no se trata de un elemento host, este no puede contener controles host ni controles de Windows Forms. Para obtener más información acerca de la creación de documentos en [tiempo de ejecución, consulte Cómo: Crear nuevos documentos](../vsto/how-to-programmatically-create-new-documents.md)mediante programación.
+ Si crea un nuevo documento de Word en tiempo de ejecución, será del tipo <xref:Microsoft.Office.Interop.Word.Document>. Como no se trata de un elemento host, este no puede contener controles host ni controles de Windows Forms. Para obtener más información sobre cómo crear documentos en tiempo de ejecución, consulte [Cómo: crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md).
 
 ## <a name="understand-document-host-items-in-application-level-projects"></a>Comprender los elementos host de documento en los proyectos de nivel de aplicación
  En los proyectos de complemento VSTO, puede generar en tiempo de ejecución un elemento host <xref:Microsoft.Office.Tools.Word.Document> para cualquier documento que esté abierto en Word. Puede usar el elemento host <xref:Microsoft.Office.Tools.Word.Document> para agregar controles al documento asociado, o para administrar los eventos que no estén disponibles en los objetos <xref:Microsoft.Office.Interop.Word.Document> .
 
  Para generar un elemento host <xref:Microsoft.Office.Tools.Word.Document>, use el método `GetVstoObject`. Para obtener más información, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)

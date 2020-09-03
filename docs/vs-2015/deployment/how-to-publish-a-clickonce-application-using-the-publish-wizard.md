@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Publicar una aplicación ClickOnce mediante el Asistente para publicación | Documentos de Microsoft
+title: 'Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,16 +19,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ff519416d874462a86f7e615822d15139fc4726
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697638"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedimiento Publicar una aplicación ClickOnce mediante el Asistente para publicación
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Cómo: Publicar una aplicación ClickOnce sin usar el Asistente para publicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para que una aplicación ClickOnce esté disponible para los usuarios, debe publicarla en un recurso compartido de archivos o ruta de acceso, en un servidor FTP o en un medio extraíble. Puede publicar la aplicación con el Asistente para publicación. En la página **Publicar** del **Diseñador de proyectos** hay disponibles más propiedades relativas a la publicación. Para obtener más información, consulte [publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md).  
+Para que una aplicación ClickOnce esté disponible para los usuarios, debe publicarla en un recurso compartido de archivos o ruta de acceso, en un servidor FTP o en un medio extraíble. Puede publicar la aplicación con el Asistente para publicación. En la página **Publicar** del **Diseñador de proyectos** hay disponibles más propiedades relativas a la publicación. Para obtener más información, vea [publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md).  
   
  Antes de ejecutar el Asistente para publicación, debe establecer las propiedades de publicación correctamente. Por ejemplo, si quiere designar una clave para firmar la aplicación ClickOnce, puede hacerlo en la página **Firma** del **Diseñador de proyectos**. Para más información, consulte [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md).  
   
@@ -36,13 +36,13 @@ Para que una aplicación ClickOnce esté disponible para los usuarios, debe publ
 > Cuando se instala más de una versión de una aplicación con ClickOnce, la instalación mueve las versiones anteriores de la aplicación a una carpeta llamada Archivo, en la ubicación de publicación que especifiques. Al archivar las versiones anteriores de esta manera, el directorio de instalación se mantiene limpio de carpetas de versiones anteriores.  
   
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, haga clic en **Importar y exportar configuraciones** en el menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, haga clic en **Importar y exportar configuraciones** en el menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Para publicar en un recurso compartido de archivos o en una ruta de acceso  
   
 1. En el **Explorador de soluciones**, seleccione el proyecto de aplicación.  
   
-2. En el **compilar** menú, haga clic en **publicar**`Projectname`.  
+2. En el menú **compilar** , haga clic en **publicar** `Projectname` .  
   
     Aparece el Asistente para publicación.  
   
@@ -50,9 +50,9 @@ Para que una aplicación ClickOnce esté disponible para los usuarios, debe publ
   
 4. En la página **Instalación de la aplicación**, seleccione la ubicación donde los usuarios irán para instalar la aplicación:  
   
-   - Si los usuarios la instalarán desde un sitio web, haga clic en **Desde un sitio web** y escriba la dirección URL correspondiente a la ruta de acceso al archivo especificada en el paso anterior. Haga clic en **Siguiente**. (Esta opción se usa normalmente cuando se especifica una dirección FTP como ubicación de publicación. No se permite la descarga directa desde FTP. Por lo tanto, tiene que especificar una dirección URL aquí).  
+   - Si los usuarios la instalarán desde un sitio web, haga clic en **Desde un sitio web** y escriba la dirección URL correspondiente a la ruta de acceso al archivo especificada en el paso anterior. Haga clic en **Next**. (Esta opción se usa normalmente cuando se especifica una dirección FTP como ubicación de publicación. No se permite la descarga directa desde FTP. Por lo tanto, tiene que especificar una dirección URL aquí).  
   
-   - Si los usuarios instalarán la aplicación directamente desde el recurso compartido de archivos, haga clic en **Desde una ruta de acceso UNC o un recurso compartido de archivos** y después en **Siguiente**. (Esto es para la publicación de ubicaciones del formato c:\deploy\myapp o \\\server\myapp.)  
+   - Si los usuarios instalarán la aplicación directamente desde el recurso compartido de archivos, haga clic en **Desde una ruta de acceso UNC o un recurso compartido de archivos** y después en **Siguiente**. (Esto es para ubicaciones de publicación con el formato c:\deploy\myapp o \\ \server\myapp.)  
   
    - Si los usuarios instalarán desde medios extraíbles, haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.  
   
@@ -72,13 +72,13 @@ Para que una aplicación ClickOnce esté disponible para los usuarios, debe publ
   
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto de aplicación y después haga clic en **Propiedades**.  
   
-    Aparece el **Diseñador de proyectos**.  
+    Aparece el **Diseñador de proyectos** .  
   
 2. Haga clic en la pestaña **Publicar** para abrir la página **Publicar** en el **Diseñador de proyectos** y haga clic en el botón **Asistente para publicación**.  
   
     Aparece el Asistente para publicación.  
   
-3. En el **donde desea publicar la aplicación?** , escriba la ruta de acceso o la ubicación FTP donde se publicará la aplicación, por ejemplo, d:\deploy. Después, haga clic en **Siguiente** para continuar.  
+3. En la página **¿dónde desea publicar la aplicación?** , escriba la ruta de acceso del archivo o la ubicación FTP donde se publicará la aplicación, por ejemplo d:\deploy. Haga clic en **Siguiente** para continuar.  
   
 4. En la página **Instalación de la aplicación**, Haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.  
   
@@ -100,7 +100,7 @@ Para que una aplicación ClickOnce esté disponible para los usuarios, debe publ
    > [!NOTE]
    > Una vez completa la publicación, tendrá que usar un grabador de CD o de DVD para copiar los archivos desde la ubicación especificada en el paso 3 al CD-ROM o DVD-ROM.  
   
-## <a name="see-also"></a>Vea también  
- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+## <a name="see-also"></a>Consulte también  
+ [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Implementación de una solución de Office mediante ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)
+ [Implementar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)

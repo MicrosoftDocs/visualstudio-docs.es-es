@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698717"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
@@ -42,7 +42,7 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |ALToolPath|Ruta de acceso donde se puede encontrar AL.exe. Esta propiedad invalida la versión actual de AL.exe para permitir el uso de una versión diferente.|  
 |ApplicationIcon|Archivo de icono .ico que se va a pasar al compilador para incrustarlo como un icono de Win32. Esta propiedad es equivalente al modificador `/win32icon` de compilador.|  
 |ApplicationManifest|Especifica la ruta de acceso del archivo que se utiliza para generar la información externa del manifiesto del Control de cuentas de usuario (UAC). Solo se aplica a los proyectos de Visual Studio que tienen como destino [!INCLUDE[windowsver](../includes/windowsver-md.md)].<br /><br /> En la mayoría de los casos, el manifiesto está incrustado. En cambio, si usa una implementación de COM sin registro o de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], el manifiesto puede ser un archivo externo que se instala junto con los ensamblados de la aplicación. Para obtener más información, vea la propiedad NoWin32Manifest en este tema.|  
-|AssemblyOriginatorKeyFile|Especifica el archivo que se ha usado para firmar el ensamblado (.snk o .pfx) y se ha pasado a la [tarea ResolveKeySource](../msbuild/resolvekeysource-task.md) para generar la clave real con la que se ha firmado dicho ensamblado.|  
+|AssemblyOriginatorKeyFile|Especifica el archivo que se usa para firmar el ensamblado (. snk o. pfx) y que se pasa a la [tarea ResolveKeySource](../msbuild/resolvekeysource-task.md) para generar la clave real que se usa para firmar el ensamblado.|  
 |AssemblySearchPaths|Lista de ubicaciones donde se realizarán las búsquedas durante la resolución de ensamblados de referencia en tiempo de compilación. El orden en que aparecen las rutas de acceso en esta lista es importante porque las rutas de acceso situadas antes en la lista tienen prioridad sobre las entradas posteriores.|  
 |AssemblyName|Nombre del ensamblado resultante final una vez compilado el proyecto.|  
 |BaseAddress|Especifica la dirección base del ensamblado resultante principal. Esta propiedad es equivalente al modificador `/baseaddress` del compilador.|  
@@ -56,7 +56,7 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |Configuración|Configuración que está compilando, "Debug" o "Release".|  
 |CscToolPath|Ruta de acceso de csc.exe, el compilador de [!INCLUDE[csprcs](../includes/csprcs-md.md)].|  
 |CustomBeforeMicrosoftCommonTargets|Nombre de un archivo de proyecto o archivo de destinos que se importará automáticamente antes de importar los destinos comunes.|  
-|DebugSymbols|Valor booleano que indica si la compilación genera símbolos.<br /><br /> Si se establece **/p:DebugSymbols=false** en la línea de comandos, se deshabilita la generación de archivos de símbolos (.pdb) de la base de datos del programa.|  
+|DebugSymbols|Valor booleano que indica si la compilación genera símbolos.<br /><br /> Si se establece **/p: DebugSymbols = false** en la línea de comandos, se deshabilita la generación de archivos de símbolos de base de datos de programa (. pdb).|  
 |DefineConstants|Permite definir constantes condicionales para el compilador. Los pares símbolo-valor van separados por punto y coma, y se especifican con la siguiente sintaxis:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> Esta propiedad es equivalente al modificador `/define` de compilador.|  
 |DefineDebug|Valor booleano que indica si desea definir la constante DEBUG.|  
 |DefineTrace|Valor booleano que indica si desea definir la constante TRACE.|  
@@ -66,7 +66,7 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |DisableFastUpToDateCheck|Valor booleano que solo se aplica a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. El administrador de compilación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utiliza un proceso denominado FastUpToDateCheck para determinar si es necesario recompilar un proyecto para actualizarlo. Este proceso es más rápido que utilizar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Al establecer la propiedad DisableFastUpToDateCheck en `true`, puede omitir el administrador de compilación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y obligarlo a usar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para determinar si el proyecto está actualizado.|  
 |DocumentationFile|Nombre del archivo que se genera como archivo de documentación XML. Este nombre solo incluye el nombre de archivo sin información sobre la ruta de acceso.|  
 |ErrorReport|Especifica cómo debe el compilador documentar los errores internos del compilador. Los valores válidos son "prompt", "send" o "none". Esta propiedad es equivalente al modificador `/errorreport` del compilador.|  
-|ExcludeDeploymentUrl|La [tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) agrega una etiqueta deploymentProvider al manifiesto de implementación si el archivo de proyecto incluye alguno de los elementos siguientes:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Sin embargo, mediante ExcludeDeploymentUrl, puede evitar que la etiqueta deploymentProvider se agregue al manifiesto de implementación aunque se especifique alguna de las direcciones URL anteriores. Para ello, agregue la siguiente propiedad al archivo de proyecto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Nota:** ExcludeDeploymentUrl no se expone en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y solo se puede establecer manualmente editando el archivo de proyecto. Al establecer esta propiedad, la publicación desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no resulta afectada; es decir, la etiqueta deploymentProvider se agregará de igual modo a la dirección URL especificada por PublishUrl.|  
+|ExcludeDeploymentUrl|La [tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) agrega una etiqueta deploymentProvider al manifiesto de implementación si el archivo de proyecto incluye alguno de los elementos siguientes:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Sin embargo, mediante ExcludeDeploymentUrl, puede evitar que la etiqueta deploymentProvider se agregue al manifiesto de implementación aunque se especifique alguna de las direcciones URL anteriores. Para ello, agregue la siguiente propiedad al archivo de proyecto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`**Nota:**  ExcludeDeploymentUrl no se expone en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE y solo se puede establecer editando manualmente el archivo del proyecto. Al establecer esta propiedad, la publicación desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no resulta afectada; es decir, la etiqueta deploymentProvider se agregará de igual modo a la dirección URL especificada por PublishUrl.|  
 |FileAlignment|Especifica, en bytes, dónde se alinean las secciones del archivo de salida. Los valores válidos son 512, 1024, 2048, 4096, 8192. Esta propiedad es equivalente al modificador `/filealignment` del compilador.|  
 |FrameworkPathOverride|Especifica la ubicación de mscorlib.dll y microsoft.visualbasic.dll. Este parámetro es equivalente al modificador `/sdkpath` del compilador de vbc.exe.|  
 |GenerateDocumentation|Parámetro booleano que indica si la compilación generará la documentación. Si es `true`, la compilación genera la información de documentación y la coloca en un archivo .xml junto con el nombre del archivo ejecutable o la biblioteca creada por la tarea de compilación.|  
@@ -114,7 +114,7 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |Satellite_Version|Especifica la información de versión del ensamblado satélite.|  
 |Satellite_Win32Icon|Inserta un archivo de icono .ico en el ensamblado satélite.|  
 |Satellite_Win32Resource|Inserta un archivo de recursos (.res) de Win32 en el ensamblado satélite.|  
-|SubsystemVersion|Especifica la versión mínima del subsistema que el archivo ejecutable generado puede utilizar. Esta propiedad es equivalente al modificador `/subsystemversion` del compilador. Para obtener más información sobre el valor predeterminado de esta propiedad, vea [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) o [/subsystemversion (Opciones del compilador de C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Especifica la versión mínima del subsistema que el archivo ejecutable generado puede utilizar. Esta propiedad es equivalente al modificador `/subsystemversion` del compilador. Para obtener información sobre el valor predeterminado de esta propiedad, vea [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) o [/Subsystemversion (opciones del compilador de C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|Versión de .NET Compact Framework necesaria para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo.|  
 |TargetFrameworkVersion|Versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] necesaria para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo.|  
 |TreatWarningsAsErrors|Parámetro booleano que, si es `true`, hace que todas las advertencias se traten como errores. Este parámetro es equivalente al modificador `/nowarn` del compilador.|  
@@ -128,5 +128,5 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |Win32Manifest|Nombre del archivo manifiesto que se debe incrustar en el ensamblado final. Este parámetro es equivalente al modificador `/win32Manifest` del compilador.|  
 |Win32Resource|Nombre del archivo del recurso de Win32 que se va a incrustar en el ensamblado final. Este parámetro es equivalente al modificador `/win32resource` del compilador.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Elementos comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-items.md)

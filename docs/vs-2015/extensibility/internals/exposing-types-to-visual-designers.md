@@ -1,5 +1,5 @@
 ---
-title: Exposición de tipos a los diseñadores visuales | Microsoft Docs
+title: Exponer tipos a diseñadores visuales | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,40 +13,40 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691205"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Exposición de tipos a diseñadores visuales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debe tener acceso a las definiciones de clase y tipo en tiempo de diseño para mostrar un diseñador visual. Las clases se cargan desde un conjunto predefinido de ensamblados que incluyen el conjunto completo de dependencias del proyecto actual (las referencias y sus dependencias). También puede ser necesario para los diseñadores visuales para tener acceso a clases y tipos que se definen en los archivos generados por herramientas personalizadas.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debe tener acceso a las definiciones de clase y de tipo en tiempo de diseño para poder mostrar un diseñador visual. Las clases se cargan desde un conjunto predefinido de ensamblados que incluyen el conjunto de dependencias completo del proyecto actual (referencias más sus dependencias). También puede ser necesario que los diseñadores visuales tengan acceso a clases y tipos definidos en archivos generados por herramientas personalizadas.  
   
- El [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] y [!INCLUDE[csprcs](../../includes/csprcs-md.md)] sistemas del proyecto proporcionan soporte técnico para acceder a las clases generadas y los tipos a través de portable temporal archivos ejecutables (PE temporales). Cualquier archivo generado por una herramienta personalizada puede compilarse en un ensamblado temporal para que se pueden cargar desde esos ensamblados y expone a los diseñadores de tipos. La salida de cada herramienta personalizada se compila en un archivo PE temporal independiente y el éxito o fracaso de esta compilación temporal depende solo si se puede compilar el archivo generado. Aunque no puede compilar un proyecto como un todo, PE temporales individual es posible que siga estando disponible para diseñadores.  
+ Los [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] sistemas de proyectos de y [!INCLUDE[csprcs](../../includes/csprcs-md.md)] proporcionan compatibilidad para tener acceso a clases y tipos generados a través de archivos ejecutables portables temporales (PES temporales). Cualquier archivo generado por una herramienta personalizada se puede compilar en un ensamblado temporal para que los tipos puedan cargarse desde esos ensamblados y exponerse a los diseñadores. La salida de cada herramienta personalizada se compila en un archivo PE temporal independiente y el éxito o el error de esta compilación temporal depende solo de si se puede compilar o no el archivo generado. Aunque un proyecto no se puede compilar como un todo, es posible que los PE temporales individuales sigan estando disponibles para los diseñadores.  
   
- El sistema del proyecto proporciona compatibilidad completa para el seguimiento de cambios en el archivo de salida de una herramienta personalizada, siempre que estos cambios son el resultado de ejecutar la herramienta personalizada. Cada vez que se ejecuta la herramienta personalizada, se genera un nuevo archivo PE temporal y se envían las notificaciones adecuadas a los diseñadores.  
+ El sistema del proyecto proporciona compatibilidad completa para realizar el seguimiento de los cambios en el archivo de salida de una herramienta personalizada, siempre que estos cambios sean el resultado de la ejecución de la herramienta personalizada. Cada vez que se ejecuta la herramienta personalizada, se genera un nuevo PE temporal y se envían las notificaciones correspondientes a los diseñadores.  
   
 > [!NOTE]
-> Como archivo ejecutable de generación de programas temporales se realiza en segundo plano, errores no se notifican al usuario si se produce un error en la compilación.  
+> Dado que el archivo temporal de generación de archivos ejecutables se produce en segundo plano, no se envía ningún error al usuario si se produce un error en la compilación.  
   
- Herramientas personalizadas para aprovechan las ventajas de soporte técnico de PE temporal deben seguir las reglas siguientes:  
+ Las herramientas personalizadas que aprovechan la compatibilidad temporal con PE deben cumplir las siguientes reglas:  
   
 - `GeneratesDesignTimeSource` debe establecerse en 1 en el registro.  
   
-     Compilación de ningún archivo ejecutable del programa tiene lugar sin esta configuración.  
+     No se realiza ninguna compilación de archivos ejecutables de programa sin esta configuración.  
   
-- El código generado debe estar en el mismo idioma que la configuración global de proyectos.  
+- El código generado debe estar en el mismo idioma que la configuración global del proyecto.  
   
-     El archivo PE temporal se compila sin tener en cuenta que la herramienta personalizada que se notifica como la extensión solicitada en <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> siempre que `GeneratesDesignTimeSource` está establecido en 1 en el registro. La extensión no necesita ser .jsl; .cs o .vb puede ser cualquier extensión.  
+     El PE temporal se compila independientemente de lo que la herramienta personalizada notifique como la extensión solicitada en <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> proporcionado que `GeneratesDesignTimeSource` se establece en 1 en el registro. No es necesario que la extensión sea. VB,. cs o. jsl; puede ser cualquier extensión.  
   
-- El código generado por la herramienta personalizada debe ser válido y debe compilar en su propio usando solo el conjunto de referencias en el proyecto en el momento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termina de ejecutarse.  
+- El código generado por la herramienta personalizada debe ser válido y debe compilarse por sí solo usando el conjunto de referencias presentes en el proyecto en el momento en que <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> finaliza la ejecución.  
   
-     Cuando se compila un archivo PE temporal, el único archivo de origen proporcionado para el compilador es el resultado de la herramienta personalizada. Por lo tanto, una herramienta personalizada que utiliza un archivo PE temporal debe generar los archivos de salida que se pueden compilar independientemente de otros archivos en el proyecto.  
+     Cuando se compila un PE temporal, el único archivo de código fuente proporcionado al compilador es la salida de la herramienta personalizada. Por lo tanto, una herramienta personalizada que utiliza un archivo PE temporal debe generar archivos de salida que se pueden compilar de forma independiente de otros archivos del proyecto.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Introducción al objeto BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
- [Implementar generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)   
- [Determinar el Namespace predeterminado de un proyecto](../../misc/determining-the-default-namespace-of-a-project.md)   
+ [Implementación de generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)   
+ [Determinar el espacio de nombres predeterminado de un proyecto](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Registro de generadores de un solo archivo](../../extensibility/internals/registering-single-file-generators.md)

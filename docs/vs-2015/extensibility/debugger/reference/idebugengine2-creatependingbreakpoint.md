@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CreatePendingBreakpoint | Documentos de Microsoft
+title: 'IDebugEngine2:: CreatePendingBreakpoint | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84c36d08c7ad907006eb9f41d2f6e2c9cd77e7bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196043"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Crea un punto de interrupción pendiente en el motor de depuración (DE).  
+Crea un punto de interrupción pendiente en el motor DE depuración (DE).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,23 +42,23 @@ int CreatePendingBreakpoint( 
   
 #### <a name="parameters"></a>Parámetros  
  `pBPRequest`  
- [in] Un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objeto que describe el punto de interrupción pendiente a crear.  
+ de Objeto [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) que describe el punto de interrupción pendiente que se va a crear.  
   
  `ppPendingBP`  
- [out] Devuelve un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa el punto de interrupción pendiente.  
+ enuncia Devuelve un objeto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa el punto de interrupción pendiente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve normalmente `E_FAIL` si el `pBPRequest` parámetro no coincide con cualquier lenguaje compatible con la DE If el `pBPRequest` parámetro no es válido o incompleto.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Normalmente devuelve `E_FAIL` si el `pBPRequest` parámetro no coincide con ningún lenguaje compatible con el de de si el `pBPRequest` parámetro no es válido o está incompleto.  
   
 ## <a name="remarks"></a>Comentarios  
- Un punto de interrupción pendiente es esencialmente una colección de toda la información necesaria para enlazar un punto de interrupción al código. El punto de interrupción pendiente devuelto por este método no está enlazado a código hasta la [enlazar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) se llama al método.  
+ Un punto de interrupción pendiente es esencialmente una colección de toda la información necesaria para enlazar un punto de interrupción al código. El punto de interrupción pendiente devuelto por este método no está enlazado al código hasta que se llama al método [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) .  
   
- Para cada punto de interrupción pendiente de los conjuntos de usuarios, el Administrador de depuración de la sesión (SDM) llama a este método en cada DE adjunto. Es la DE comprobar que el punto de interrupción es válida para los programas que se ejecutan en ese DE.  
+ Para cada punto de interrupción pendiente que establece el usuario, el administrador de depuración de la sesión (SDM) llama a este método en cada asociado DE. Es el DE para comprobar que el punto de interrupción es válido para los programas que se ejecutan en ese DE.  
   
- Cuando el usuario establece un punto de interrupción en una línea de código, la DE es gratuita enlazar el punto de interrupción a la línea más próxima en el documento que corresponde a este código. Esto permite al usuario establecer un punto de interrupción en la primera línea de una instrucción multilínea, pero enlazarlo en la última línea (donde todo el código se atribuye la información de depuración).  
+ Cuando el usuario establece un punto de interrupción en una línea de código, el DE es libre de enlazar el punto de interrupción a la línea más cercana del documento que corresponde a este código. Esto permite al usuario establecer un punto de interrupción en la primera línea de una instrucción de varias líneas, pero enlazarlo en la última línea (donde se atribuye todo el código en la información de depuración).  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para una sencilla `CProgram` objeto. Implementación de la DE la `IDebugEngine2::CreatePendingBreakpoint` , a continuación, se puede reenviar todas las llamadas a esta implementación del método en cada programa.  
+ En el ejemplo siguiente se muestra cómo implementar este método para un `CProgram` objeto simple. A continuación, la implementación de de `IDebugEngine2::CreatePendingBreakpoint` se puede reenviar todas las llamadas a esta implementación del método en cada programa.  
   
 ```  
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)     
@@ -72,8 +72,8 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }    
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [Enlazar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
+ [Volver](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

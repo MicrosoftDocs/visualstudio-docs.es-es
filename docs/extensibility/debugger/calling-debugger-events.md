@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904326"
 ---
 # <a name="call-debugger-events"></a>Llamar a eventos del depurador
 Los eventos de las sesiones de depuración se producen en un orden específico.
 
-## <a name="discussion"></a>Discusión
+## <a name="discussion"></a>Debate
  Para entender el patrón de llamadas entre el motor de depuración (DE) y el administrador de depuración de sesión (SDM), lo siguiente representa el orden de llamada de los eventos que se producen en una sesión de depuración típica:
 
 1. [Adjuntar y desasociar a un programa](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
@@ -35,7 +35,7 @@ Los eventos de las sesiones de depuración se producen en un orden específico.
 
 6. [Errores de punto de interrupción](../../extensibility/debugger/breakpoint-errors.md)
 
-7. [Llegada a un punto de interrupción](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [Golpear un punto de interrupción](../../extensibility/debugger/hitting-a-breakpoint.md)
 
 8. [Eliminar un punto de interrupción](../../extensibility/debugger/deleting-a-breakpoint.md)
 
@@ -47,5 +47,5 @@ Los eventos de las sesiones de depuración se producen en un orden específico.
 
 12. [Control de excepciones](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)

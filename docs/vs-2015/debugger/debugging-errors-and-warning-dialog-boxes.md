@@ -1,5 +1,5 @@
 ---
-title: Depuración de errores y los cuadros de diálogo de advertencia | Microsoft Docs
+title: Cuadros de diálogo de advertencias y errores de depuración | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691182"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Cuadros de diálogo de advertencias y errores de depuración
@@ -60,7 +60,7 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
  [Error: No se puede depurar porque un depurador del kernel está habilitado en el sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Depurar Script y aplicaciones Web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Depuración de script y web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Errores de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   

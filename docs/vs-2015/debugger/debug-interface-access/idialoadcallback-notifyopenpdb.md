@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89ab553fdbe75470853db4506261ab719061f10d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150621"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Se llama cuando se abre un archivo .pdb de candidato.  
+Se llama cuando se abre un archivo. pdb candidato.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,13 +36,13 @@ HRESULT NotifyOpenPDB ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pdbPath`  
- [in] La ruta de acceso completa del archivo .pdb.  
+ de Ruta de acceso completa del archivo. pdb.  
   
  `resultCode`  
- [in] Código que indica el éxito (`S_OK`) o el fracaso de la carga que se aplican a este archivo.  
+ de Código que indica el éxito ( `S_OK` ) o el error de la carga tal y como se aplica a este archivo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Normalmente, se omite el código de retorno.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Normalmente, se omite el código de retorno.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

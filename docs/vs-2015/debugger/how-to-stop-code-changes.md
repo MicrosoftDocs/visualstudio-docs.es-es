@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Detener cambios en el código | Documentos de Microsoft
+title: Procedimiento Detención de cambios de código | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690054"
 ---
 # <a name="how-to-stop-code-changes"></a>Procedimiento Detención de los cambios en el código
@@ -43,6 +43,6 @@ Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del c
   
   Si elige esta opción, no se confirmará ninguno de los cambios en el código.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Editar y continuar](../debugger/edit-and-continue.md)   
  [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

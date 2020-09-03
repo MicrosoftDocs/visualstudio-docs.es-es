@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904276"
 ---
 # <a name="change-the-value-of-a-local"></a>Cambiar el valor de una variable local
@@ -45,6 +45,6 @@ ms.locfileid: "85904276"
 ## <a name="in-this-section"></a>En esta sección
  [Implementación de ejemplo de cambios de valores](../../extensibility/debugger/sample-implementation-of-changing-values.md) Usa el ejemplo MyCEE para recorrer el proceso de cambiar los valores.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md)

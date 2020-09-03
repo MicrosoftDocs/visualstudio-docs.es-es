@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetScope | Microsoft Docs
+title: 'IDebugDisassemblyStream2:: Getscope (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 34c4afec675ff6ef46ffba1e20bdffa03d0c47f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196180"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
@@ -40,14 +40,14 @@ int GetScope( 
   
 #### <a name="parameters"></a>Parámetros  
  `pdwScope`  
- [out] Devuelve un valor de la [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeración que describe el ámbito de esta secuencia de desensamblado.  
+ enuncia Devuelve un valor de la enumeración [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) que describe el ámbito de esta secuencia de desensamblado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El ámbito de un desensamblador podría ser una función o el módulo completo, por ejemplo.  
+ El ámbito de un desensamblado podría ser una función o todo el módulo, por ejemplo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)

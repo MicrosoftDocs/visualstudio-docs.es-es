@@ -1,5 +1,5 @@
 ---
-title: Uso de la biblioteca de depuración de CRT | Documentos de Microsoft
+title: Uso de la biblioteca de depuración CRT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,16 +31,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7e14a181b432dede3f00a4465d40154fdb393bb0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697857"
 ---
 # <a name="crt-debug-library-use"></a>Uso de la biblioteca de depuración CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La biblioteca en tiempo de ejecución de C (CRT) proporciona amplias capacidades de depuración. Para usar una de las bibliotecas de depuración de CRT, debe vincular con [/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) y compile con **/MDd**, **/MTd**, o **/LDd**.  
+La biblioteca en tiempo de ejecución de C (CRT) proporciona amplias capacidades de depuración. Si quiere usar una de las bibliotecas de depuración de CRT, debe crear un vínculo con [/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) y compilar con **/MDd**, **/MTd** o **/LDd**.  
   
 ## <a name="remarks"></a>Comentarios  
  Las principales definiciones y macros para la depuración con CRT se encuentran en el archivo de encabezado CRTDBG.h.  
@@ -51,6 +51,6 @@ La biblioteca en tiempo de ejecución de C (CRT) proporciona amplias capacidades
   
  Para obtener más información sobre las diversas bibliotecas en tiempo de ejecución que se pueden utilizar, vea [Bibliotecas en tiempo de ejecución de C](https://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Técnicas de depuración de CRT](../debugger/crt-debugging-techniques.md)   
  [/MD, /MT, /LD (Usar la biblioteca en tiempo de ejecución)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)

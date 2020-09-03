@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9e3f97021e742db7b22a400dee0682669b07e4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662728"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Cómo: Crear aplicaciones de consola de flujos de trabajo secuenciales (Heredado)
@@ -27,7 +27,7 @@ Siga estos pasos para crear un proyecto de aplicación de consola de flujos de t
 
 1. Inicie Visual Studio.
 
-2. En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -36,7 +36,7 @@ Siga estos pasos para crear un proyecto de aplicación de consola de flujos de t
     > [!NOTE]
     > La opción predeterminada en [!INCLUDE[vs2010](../includes/vs2010-md.md)] es **.NET Framework 4**. Esta opción se usa para crear aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] y no usa el diseñador heredado.
 
-4. En el **Panel tipos de proyecto** , seleccione C# proyectos visuales o proyectos de Visual Basic (en **otros lenguajes**) y, a continuación, seleccione **flujo de trabajo**.
+4. En el panel **tipos de proyecto** , seleccione proyectos de Visual C# o proyectos de Visual Basic (en **otros lenguajes**) y, a continuación, seleccione **flujo de trabajo**.
 
 5. En el panel **plantillas** , seleccione **aplicación de consola de flujos de trabajo secuenciales**.
 
@@ -52,5 +52,5 @@ Siga estos pasos para crear un proyecto de aplicación de consola de flujos de t
 
 9. Arrastre una actividad del **cuadro de herramientas** a la superficie de diseño del área de colocación de la **actividad** designada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md) [desarrollar flujos de trabajo](https://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

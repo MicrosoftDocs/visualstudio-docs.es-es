@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetRegistryRoot | Documentos de Microsoft
+title: 'IDebugEngine2:: SetRegistryRoot | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39bb532301d34a3abf9988cfa909e1606c3c73e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195944"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
@@ -40,13 +40,13 @@ int SetRegistryRoot( 
   
 #### <a name="parameters"></a>Parámetros  
  `pszRegistryRoot`  
- [in] La raíz del registro para usar.  
+ de Raíz del registro que se va a usar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método permite [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] para especificar una raíz alternativa del registro que la DE debe usar para obtener la configuración del registro; por ejemplo, "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp".  
+ Este método permite [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] especificar una raíz del registro alternativa que el de debe usar para obtener la configuración del registro; por ejemplo, "HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp".  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

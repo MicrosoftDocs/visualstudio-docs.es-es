@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c98bec69631b852521f682a24dd1b5ce6ddf0424
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662571"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Cómo: Abrir un modelo desde un archivo en el código del programa
@@ -21,14 +21,14 @@ ms.locfileid: "72662571"
 
 Puede abrir modelos DSL en cualquier aplicación.
 
- En una extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede usar ModelBus para este propósito. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos de un modelo, y para buscar el modelo si se ha deshecho. Para obtener más información, vea [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ A partir de una [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión, puede usar ModelBus para este fin. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos de un modelo, y para buscar el modelo si se ha deshecho. Para obtener más información, vea [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Versión de .NET Framework de destino
  Establezca la **plataforma de destino** del proyecto de aplicación en **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Para establecer la versión de .NET Framework de destino
 
-1. Abra el proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la aplicación en la que desea leer un modelo DSL.
+1. Abra el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto de la aplicación en la que desea leer un modelo DSL.
 
 2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y, a continuación, haga clic en **propiedades**.
 
@@ -38,24 +38,24 @@ Puede abrir modelos DSL en cualquier aplicación.
 > Es posible que tenga que hacerlo incluso si seleccionó **.NET Framework 4** en el cuadro de diálogo de creación del proyecto. La versión de .NET Framework de destino no debe ser **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Referencias
- Tiene que agregar estas referencias al proyecto de aplicación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
+ Tiene que agregar estas referencias al proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplicación:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - Si no lo ve en la pestaña **.net** del cuadro de diálogo **Agregar referencias** , haga clic en la pestaña **examinar** y vaya a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+  - Si no lo ve en la pestaña **.net** del cuadro de diálogo **Agregar referencias** , haga clic en la pestaña **examinar** y vaya a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
 
-- El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre tiene normalmente el siguiente formato: *suempresa*. @No__t_2 *YourProject* .
+- El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre tiene normalmente el siguiente formato: *suempresa*. *YourProject* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>Clases importantes en DSL
  Antes de poder escribir el código que lee el DSL, debe conocer los nombres de algunas de las clases generadas por el DSL. En la solución DSL, abra el proyecto **DSL** y mire en la carpeta **GeneratedCode** También puede hacer doble clic en el ensamblado DSL en las **referencias**del proyecto y abrir el espacio de nombres dsl en **Examinador de objetos**.
 
  Estas son las clases que debe identificar:
 
-- *YourDslRootClass* : es el nombre de la clase raíz en el `DslDefinition.dsl`.
+- *YourDslRootClass* : es el nombre de la clase raíz en su `DslDefinition.dsl` .
 
-- @No__t_1 *sunombrededsl* : esta clase se define en `SerializationHelper.cs` en el proyecto DSL.
+- *Sunombrededsl* `SerializationHelper` : Esta clase se define en `SerializationHelper.cs` en el proyecto DSL.
 
-- @No__t_1 *sunombrededsl* : esta clase se define en `DomainModel.cs` en el proyecto DSL.
+- *Sunombrededsl* `DomainModel` : Esta clase se define en `DomainModel.cs` en el proyecto DSL.
 
 ## <a name="reading-from-a-file"></a>Leer de un archivo
  El siguiente ejemplo está diseñado para leer un DSL en el que las clases importantes son las siguientes:

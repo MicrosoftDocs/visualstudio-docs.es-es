@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507968"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Crear una IU con el Diseñador XAML
@@ -162,7 +162,7 @@ A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* 
 
 Para más información sobre cómo usar las propiedades y controlar los eventos, consulte [Introducción a los controles y patrones](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Trabajo con elementos en el Diseñador XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Cómo crear y aplicar un recurso](../xaml-tools/how-to-create-and-apply-a-resource.md)

@@ -14,10 +14,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e3a0fae42dc7bf1497e3d0d4a9d23f9cab50675
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180419"
 ---
 # <a name="nesting-projects"></a>Anidamiento de proyectos
@@ -27,15 +27,15 @@ Los desarrolladores de aplicaciones empresariales que usan el paquete de VS pued
   
  En este escenario, no hay ningún límite en el número de proyectos que el desarrollador puede anidar en cada proyecto primario, aunque el desarrollador puede proporcionar límites mediante programación. Este tipo de agrupación también se puede convertir en recursivo, en cuyo caso los proyectos del mismo tipo que un proyecto secundario se pueden anidar bajo el secundario para convertirse en un subproyecto del elemento secundario, que es un subproyecto del elemento primario.  
   
- El anidamiento del proyecto no es una parte intrínseca de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Tiene que escribir el código para habilitar el anidamiento y el anidamiento de subproyectos en los proyectos secundarios. El proyecto primario es un VSPackage especial, o un tipo de proyecto, creado y registrado con su propio GUID que incluye el código necesario para implementar el anidamiento del proyecto.  
+ El anidamiento del proyecto no es una parte intrínseca de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Tiene que escribir el código para habilitar el anidamiento y el anidamiento de subproyectos en los proyectos secundarios. El proyecto primario es un VSPackage especial, o un tipo de proyecto, creado y registrado con su propio GUID que incluye el código necesario para implementar el anidamiento del proyecto.  
   
- Puede encontrar un ejemplo de proyectos anidados en el C# ejemplo de proyecto Nested.  
+ Puede encontrar un ejemplo de proyectos anidados en el ejemplo de C#. ejemplo de proyecto anidado.  
   
 ## <a name="nested-projects-example"></a>Ejemplo de proyectos anidados  
  ![Solución de proyectos anidados](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 Ejemplo de proyectos anidados  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Cómo: implementar proyectos anidados](../../extensibility/internals/how-to-implement-nested-projects.md)   
  [Consideraciones para descargar y volver a cargar proyectos anidados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [Compatibilidad del asistente con proyectos anidados](../../extensibility/internals/wizard-support-for-nested-projects.md)   
@@ -44,4 +44,4 @@ Ejemplo de proyectos anidados
  [Filtrar el cuadro de diálogo AddItem para proyectos anidados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
  [Lista de comprobación: crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parámetros de contexto](../../extensibility/internals/context-parameters.md)   
- [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Archivo de asistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543785"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de prueba unitaria
@@ -40,9 +40,9 @@ Compruebe que el código funciona correctamente; para ello, cree y ejecute prueb
 
 - [Ejecutar y ver las pruebas](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>Información general sobre pruebas unitarias
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a> Información general sobre pruebas unitarias
 
-### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>Inicios rápidos
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a> Inicios rápidos
  Para obtener una introducción a las pruebas unitarias que le guíe directamente en la codificación, vea uno de estos temas:
 
 - [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ Compruebe que el código funciona correctamente; para ello, cree y ejecute prueb
 
 - [Pruebas unitarias de código nativo con el Explorador de pruebas](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>Ejemplo de la solución de mi Bank
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a> Ejemplo de la solución de mi Bank
  En este tema, usamos el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y se presentan mediante el marco de pruebas unitarias para código administrado de Microsoft. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos.
 
  ![Solución MyBank](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - La clase`CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount` .
 
-## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>Escribir las pruebas
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a> Escribir las pruebas
  El marco de pruebas unitarias que use y Visual Studio IntelliSense le guiarán en la escritura del código de las pruebas unitarias para un proyecto de código. Para ejecutar en el Explorador de pruebas, la mayoría de los marcos requieren que se agreguen atributos específicos para identificar métodos de prueba unitaria. Los marcos también ofrecen una manera (normalmente a través de instrucciones assert o atributos method) de indicar si el método de prueba se ha superado o no. Otros atributos identifican métodos de configuración opcionales que están en la inicialización de la clase y antes de cada método de prueba y métodos de destrucción que se ejecutan después de cada método de prueba y antes de que la clase se destruya.
 
  El patrón AAA (Arrange, Act, Assert) es una forma habitual de escribir pruebas unitarias para un método en pruebas.
@@ -217,7 +217,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Ejecutar pruebas en el explorador de pruebas
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Ejecutar pruebas en el explorador de pruebas
  Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
 
  ![Explorador de pruebas unitarias](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -226,7 +226,7 @@ public void My_Test ()
 
  También puede filtrar las pruebas en cualquier vista haciendo coincidir texto del cuadro de búsqueda a nivel global o seleccionando uno de los filtros predefinidos. Se puede ejecutar cualquier selección de las pruebas en cualquier momento. Los resultados de una serie de pruebas son inmediatamente visibles en la barra de éxito/error de la parte superior de la ventana del explorador. Los detalles de un resultado del método de prueba se muestran al seleccionar la prueba.
 
-### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>Ejecutar y ver pruebas
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Ejecutar y ver pruebas
  La barra de herramientas del Explorador de pruebas le ayuda a detectar, organizar y ejecutar las pruebas que le interesan.
 
  ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute-toolbar.png "UTE_ToolBar")
@@ -235,7 +235,7 @@ public void My_Test ()
 
  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-pequeño") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
-### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a>Ejecutar pruebas después de cada compilación
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a> Ejecutar pruebas después de cada compilación
 
 > [!WARNING]
 > La ejecución de pruebas unitarias después de cada compilación solo se admite en Visual Studio Enterprise.
@@ -244,7 +244,7 @@ public void My_Test ()
 |-|-|
 |![Ejecutar después de compilar](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar o **Ejecutar pruebas después de compilar** en la barra de herramientas del Explorador de pruebas.|
 
-### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>Filtrar y agrupar la lista de pruebas
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filtrar y agrupar la lista de pruebas
  Si tiene un gran número de pruebas, puede escribir en el cuadro de búsqueda del Explorador de pruebas para filtrar la lista por la cadena especificada. Para limitar aún más el evento de filtro, elija una opción de la lista de filtros.
 
  ![Categorías de filtro de búsqueda](../test/media/ute-searchfilter.png "UTE_SearchFilter")

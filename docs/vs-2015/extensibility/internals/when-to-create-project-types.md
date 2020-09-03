@@ -1,5 +1,5 @@
 ---
-title: Cuándo se debe crear tipos de proyecto | Microsoft Docs
+title: Cuándo crear tipos de proyecto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,55 +11,55 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687705"
 ---
 # <a name="when-to-create-project-types"></a>Momento para la creación de tipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Crear un nuevo tipo de proyecto proporciona una base para personalizar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para los usuarios. Sin embargo, crear un nuevo tipo de proyecto no es necesario para todos los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] personalizaciones. Las instrucciones siguientes le ayudarán a determinar si un nuevo tipo de proyecto es necesario para su escenario.  
+La creación de un nuevo tipo de proyecto proporciona una base para la personalización [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para los usuarios. Sin embargo, no es necesario crear un nuevo tipo de proyecto para todas las [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] personalizaciones. Las instrucciones siguientes le ayudarán a determinar si es necesario un nuevo tipo de proyecto para su escenario.  
   
 ## <a name="create-a-new-project-type"></a>Crear un nuevo tipo de proyecto  
- Debe crear un tipo de proyecto si desea personalizar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para actuar en una o varias de las maneras siguientes:  
+ Debe crear un tipo de proyecto si desea personalizar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para que actúe de una o varias de las siguientes maneras:  
   
-- Participa en la compilación, implementación, las configuraciones y control de código fuente.  
+- Participar en la compilación, implementación, configuración y control de código fuente.  
   
-- Ofrece compatibilidad con la depuración.  
+- Ofrecer compatibilidad con la depuración.  
   
-- Mostrar elementos de proyecto en **el Explorador de soluciones**.  
+- Mostrar los elementos de proyecto en **Explorador de soluciones**.  
   
-- Use la **Abrir proyecto** o **nuevo proyecto** cuadro de diálogo.  
+- Utilice el cuadro de diálogo **Abrir proyecto** o **nuevo proyecto** .  
   
-- Admite el anidamiento de proyecto.  
+- Compatibilidad con el anidamiento del proyecto.  
   
 ## <a name="extend-an-existing-project-type"></a>Extender un tipo de proyecto existente  
- Desea crear un nuevo tipo de proyecto que puede usar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en los siguientes métodos para modificar o extender el comportamiento de un tipo de proyecto existente, por ejemplo, modificar el proceso de compilación para [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proyectos:  
+ Es posible que desee crear un nuevo tipo de proyecto que pueda usar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] de las siguientes maneras para modificar o extender el comportamiento de un tipo de proyecto existente, por ejemplo, modificando el proceso de compilación de los [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proyectos:  
   
 - Trabajar con varios archivos como una sola unidad.  
   
-- Mostrar un único archivo como una jerarquía de elementos secundarios.  
+- Muestra un único archivo como una jerarquía de subelementos.  
   
-- Mostrar un contexto de comandos en torno a los editores.  
+- Mostrar un contexto de comandos alrededor de los editores.  
   
 - Mostrar un contexto de servicio para los editores.  
   
-## <a name="use-an-existing-project-type"></a>Utilizar un tipo de proyecto existente  
- Crear un nuevo proyecto a veces no es necesario. En la tabla siguiente se muestra las tareas que no es necesario para crear un tipo de proyecto para.  
+## <a name="use-an-existing-project-type"></a>Usar un tipo de proyecto existente  
+ A veces no es necesario crear un nuevo proyecto. En la tabla siguiente se muestran las tareas para las que no tiene que crear un tipo de proyecto.  
   
 |Tarea|Descripción|  
 |----------|-----------------|  
-|Control de comandos|Cualquier VSPackage puede controlar los comandos.|  
-|Creación de un editor|Editores personalizados se pueden registrar. Para obtener más información, consulte [editores y documentos Windows](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
-|Propietario de windows|Puede crear ventanas de herramientas y documentos sin agregar un nuevo tipo de proyecto.|  
-|Expone las propiedades en la ventana Propiedades|Todos los objetos pueden exponer propiedades.|  
+|Controlar comandos|Cualquier VSPackage puede controlar comandos.|  
+|Compilar un editor|Los editores personalizados se pueden registrar. Para obtener más información, vea [ventanas de documento y editores](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Ventanas propietarias|Puede crear ventanas de herramientas y de documentos sin agregar un nuevo tipo de proyecto.|  
+|Exponer propiedades en el ventana Propiedades|Todos los objetos pueden exponer propiedades.|  
   
-## <a name="create-a-project-subtype"></a>Creación de un subtipo de proyecto  
- Subtipos de proyecto se pueden usar para extender un tipo de proyecto administrado sin tener que crear un nuevo tipo de proyecto. Subtipos de proyecto usar agregación COM para ampliar proyectos administrados, escritos en Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Con la agregación de COM, puede reutilizar gran parte de la implementación de sistema de proyecto administrado y personalizar para un escenario determinado mediante la agregación y el uso de interfaces admitidas. Para obtener más información acerca de subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).  
+## <a name="create-a-project-subtype"></a>Crear un subtipo de proyecto  
+ Puede usar subtipos de proyecto para extender un tipo de proyecto administrado sin tener que crear un nuevo tipo de proyecto. Los subtipos de proyecto utilizan la agregación COM para extender los proyectos administrados escritos en Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] . Con la agregación COM, puede volver a usar gran parte de la implementación del sistema de proyectos administrados y seguir personalizando para un escenario concreto a través de la agregación y el uso de interfaces auxiliares. Para obtener más información sobre los subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).  
   
-## <a name="see-also"></a>Vea también  
- [Editores y documentos Windows](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
- [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+## <a name="see-also"></a>Consulte también  
+ [Ventanas de documento y editores](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Lista de comprobación: crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Jerarquías en Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

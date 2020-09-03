@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1edb7ceae1ba187b01b92d64ca33d41d83364e72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662374"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opciones, editor de texto, básico (Visual Basic)
@@ -50,7 +50,7 @@ La página de propiedades **Opciones específicas de VB**, en la carpeta **Bási
 
   **Habilitar el modo de esquematización** Al abrir un archivo en el editor de código, puede ver el documento en el modo de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se activa al abrir un archivo.
 
-  **Inserción automática de miembros Interface y MustOverride** Cuando se confirma una instrucción `Implements` o una instrucción `Inherits` para una clase, el editor de texto inserta prototipos para los miembros que se deben implementar o reemplazar, respectivamente.
+  **Inserción automática de miembros Interface y MustOverride** Cuando se confirma una `Implements` instrucción o una `Inherits` instrucción para una clase, el editor de texto inserta prototipos para los miembros que se deben implementar o reemplazar, respectivamente.
 
   **Mostrar separadores de líneas de procedimientos** El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente .vb del proyecto en las ubicaciones indicadas en la tabla siguiente:
 
@@ -62,7 +62,7 @@ La página de propiedades **Opciones específicas de VB**, en la carpeta **Bási
 
  **Habilitar sugerencias de corrección de errores** El editor de texto puede sugerir soluciones a errores comunes y permite seleccionar la corrección adecuada que se aplica a su código.
 
- **Habilitar el resaltado de referencias y palabras clave** El editor de texto puede resaltar todas las instancias de un símbolo o todas las palabras clave de una cláusula como `If..Then`, `While...End While` o `Try...Catch...Finally`. Puede navegar entre referencias o palabras clave resaltadas. Para ello, presione CTRL+Mayús+flecha abajo o CTRL+Mayús+flecha arriba.
+ **Habilitar el resaltado de referencias y palabras clave** El editor de texto puede resaltar todas las instancias de un símbolo o todas las palabras clave de una cláusula como `If..Then` , `While...End While` o `Try...Catch...Finally` . Puede navegar entre referencias o palabras clave resaltadas. Para ello, presione CTRL+Mayús+flecha abajo o CTRL+Mayús+flecha arriba.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  Opciones del [cuadro de diálogo general, entorno, opciones](../../ide/reference/general-environment-options-dialog-box.md) [, editor de texto, todos los lenguajes, tabulaciones](../../ide/reference/options-text-editor-all-languages-tabs.md)
