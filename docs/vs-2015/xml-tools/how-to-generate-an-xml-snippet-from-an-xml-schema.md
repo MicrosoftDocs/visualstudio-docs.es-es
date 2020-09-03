@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e3d90185180cac5f526594650bde0a8f380c7668
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666523"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: Generar un fragmento XML a partir de un esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generar un fragmento de código XML a partir de un esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con el Editor XML es posible generar fragmentos de código XML a partir de un esquema de lenguaje de definición de esquema XML (XSD). Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento puede presionar el tabulador para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
@@ -51,21 +51,21 @@ Con el Editor XML es posible generar fragmentos de código XML a partir de un es
 
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para crear un nuevo archivo XML y asociarlo con un esquema XML
 
-1. En el menú **archivo** , seleccione **nuevo**y haga clic en **archivo**.
+1. En el menú **Archivo**, seleccione **Nuevo** y haga clic en **Archivo**.
 
-2. Seleccione **archivo XML** en el panel **plantillas** y haga clic en **abrir**.
+2. Seleccione **Archivo XML** en el panel **Plantillas** y haga clic en **Abrir**.
 
      Se abre un nuevo archivo en el editor. El archivo contiene una declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8">`.
 
-3. En la ventana Propiedades del documento, haga clic en el botón Examinar ( **...** ) del campo **esquemas** .
+3. En la ventana Propiedades del documento, haga clic en el botón Examinar (**...**) del campo **esquemas** .
 
-     Se muestra el cuadro de diálogo **esquemas XSD** .
+     Aparece el cuadro de diálogo **Esquemas XSD**.
 
 4. Haga clic en **Agregar**.
 
-     Se muestra el cuadro de diálogo **abrir esquema XSD** .
+     Aparece el cuadro de diálogo **Abrir esquema XSD**.
 
-5. Seleccione el archivo de esquema y haga clic en **abrir**.
+5. Seleccione el archivo de esquema y haga clic en **Abrir**.
 
 6. Haga clic en **Aceptar**.
 
@@ -79,11 +79,11 @@ Con el Editor XML es posible generar fragmentos de código XML a partir de un es
 
      **!--** para agregar un comentario.
 
-     **! DOCTYPE** para agregar un tipo de documento.
+     **!DOCTYPE** para agregar un tipo de documento.
 
      **?** para agregar una instrucción de procesamiento.
 
-     **Contacto** para agregar el elemento raíz.
+     **Contact** para agregar el elemento raíz.
 
 3. Seleccione **contacto** en la lista de miembros y presione Entrar.
 
@@ -139,8 +139,8 @@ Con el Editor XML es posible generar fragmentos de código XML a partir de un es
 </xs:schema>
 ```
 
-### <a name="output"></a>Resultados
- Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Los elementos marcados como `bold` designan campos editables en el fragmento de código XML.
+### <a name="output"></a>Salida
+ Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Los elementos marcados como `bold` designan campos editables en el fragmento XML.
 
 ```
 <Contact>
@@ -153,5 +153,5 @@ Con el Editor XML es posible generar fragmentos de código XML a partir de un es
 </Contact>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Fragmentos](../xml-tools/xml-snippets.md) [de código XML cómo: usar fragmentos de código XML](../xml-tools/how-to-use-xml-snippets.md)

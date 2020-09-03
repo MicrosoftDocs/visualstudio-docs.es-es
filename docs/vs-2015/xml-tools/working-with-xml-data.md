@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1692403d61c99febd30fe3829e5fadd7dd1c51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669496"
 ---
 # <a name="working-with-xml-data"></a>Trabajo con datos XML
@@ -59,5 +59,5 @@ XML y sus tecnologías relacionadas desempeñan un papel muy importante en la fo
 
  [Servicios Web XML en código administrado](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) Describe cómo crear e implementar servicios Web XML y cómo obtener acceso a servicios Web XML.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

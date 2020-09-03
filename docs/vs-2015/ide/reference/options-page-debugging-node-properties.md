@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668842"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de opciones, Propiedades de nodo Depuración
@@ -24,7 +24,7 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 ## <a name="general"></a>General
  `DTE.Properties("Debugging", "General")`
 
-|Nombre de elemento de propiedad|Valor|DESCRIPCIÓN|
+|Nombre de elemento de propiedad|Value|Descripción|
 |------------------------|-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Determina si el depurador pide permiso antes de eliminar todos los puntos de interrupción de un proyecto.|
 |BreakAllProcesses|Get/Set (Boolean)|Determina si el depurador interrumpe todos los procesos cuando se interrumpe un único proceso.|
@@ -54,7 +54,7 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 ## <a name="edit-and-continue"></a>Editar y continuar
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Nombre de elemento de propiedad|Valor|DESCRIPCIÓN|
+|Nombre de elemento de propiedad|Value|Descripción|
 |------------------------|-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|Determina si la opción Editar y continuar está habilitada. Esta opción se aplica a todos los lenguajes que admiten Editar y continuar.|
 |InvokedByCommands|Get/Set (Boolean)|Determina si Editar y continuar aplica de forma automática los cambios de código cuando el usuario selecciona un comando de depuración como **Paso** o **Continuar**. Esta opción se aplica solo a código nativo.|
@@ -66,19 +66,19 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 ## <a name="just-in-time"></a>Just-In-Time
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Nombre de elemento de propiedad|Valor|DESCRIPCIÓN|
+|Nombre de elemento de propiedad|Value|Descripción|
 |------------------------|-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|Determina si la depuración Just-In-Time está habilitada para código administrado.|
 |JitNative|Get/Set (Boolean)|Determina si la depuración Just-In-Time está habilitada para código nativo.|
 |JitScript|Get/Set (Boolean)|Determina si la depuración Just-In-Time está habilitada para código de script.|
 
-## <a name="native"></a>Nativo
+## <a name="native"></a>Nativa
  `DTE.Properties("Debugging", "Native")`
 
-|Nombre de elemento de propiedad|Valor|DESCRIPCIÓN|
+|Nombre de elemento de propiedad|Value|Descripción|
 |------------------------|-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|Determina si el depurador carga las tablas de exportación de DLL.|
 |EnableRPC|Get/Set (Boolean)|Determina si el depurador puede depurar paso a paso por instrucciones en llamadas a procedimientos remotos COM.|
 
-## <a name="see-also"></a>Otras referencias
- [Controlar la configuración de opciones](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [determinar los nombres de los elementos de propiedad en las páginas de opciones](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [Página opciones, propiedades de nodo fuentes y colores](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Página opciones, propiedades del nodo editor de texto](../../ide/reference/options-page-text-editor-node-properties.md) [General, depuración, opciones (cuadro de diálogo) ](../../debugger/general-debugging-options-dialog-box.md) [Editar y continuar, depuración, opciones (cuadro de diálogo](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) ) [Just-in-Time, depuración, opciones (cuadro de diálogo)](../../debugger/just-in-time-debugging-options-dialog-box.md)
+## <a name="see-also"></a>Consulte también
+ [Controlar la configuración](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [de opciones determinar los nombres de los elementos de propiedad en las páginas de opciones](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [Página opciones, propiedades de nodo fuentes y colores](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Página opciones, propiedades del nodo editor de texto](../../ide/reference/options-page-text-editor-node-properties.md) [General, depuración, opciones cuadro de diálogo](../../debugger/general-debugging-options-dialog-box.md) [Editar y continuar, depuración, opciones (cuadro de diálogo](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) ) [Just-in-Time, depuración, opciones (cuadro de diálogo)](../../debugger/just-in-time-debugging-options-dialog-box.md)

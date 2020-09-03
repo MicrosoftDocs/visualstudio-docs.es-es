@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee5d3cff260346a5bcc1806b09b955642c608f14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669491"
 ---
 # <a name="xml-document-validation"></a>Validación de documentos XML
@@ -23,7 +23,7 @@ El Editor XML comprueba la sintaxis XML 1.0 y realiza la validación de los dato
 
  Para encontrar los esquemas usados en la validación se hace coincidir el `targetNamespace` de un esquema compilado con la declaración xmlns del elemento. Los esquemas compilados se cargan desde una de las siguientes ubicaciones, mostradas en orden de prioridad:
 
-- Desde el nombre de archivo especificado en el campo **esquemas** del ventana Propiedades de documento.
+- Desde el nombre de archivo especificado en el campo **Esquemas** de la ventana Propiedades del documento.
 
 - Un esquema o DTD alineado.
 
@@ -45,5 +45,5 @@ El Editor XML comprueba la sintaxis XML 1.0 y realiza la validación de los dato
 ## <a name="xml-schema-xsd-files"></a>Archivos de esquema XML (XSD)
  Al editar un archivo de esquema XML, se utiliza en la validación el archivo xsdschema.xsd ubicado en la caché de esquema. Los errores de validación se muestran con un subrayado ondulado de color azul. Los errores de compilación también se muestra con un subrayado ondulado rojo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editor XML](../xml-tools/xml-editor.md)

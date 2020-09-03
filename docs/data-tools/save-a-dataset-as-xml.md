@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281739"
 ---
 # <a name="save-a-dataset-as-xml"></a>Guardar un conjunto de datos como XML
@@ -33,7 +33,7 @@ La llamada al <xref:System.Data.DataSet.WriteXml%2A> método envía los datos co
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Para guardar los datos de un conjunto de datos como XML en una variable
 
-- El método <xref:System.Data.DataSet.GetXml%2A> devuelve un objeto <xref:System.String>. Declare una variable de tipo <xref:System.String> y asígnele los resultados del <xref:System.Data.DataSet.GetXml%2A> método.
+- El método <xref:System.Data.DataSet.GetXml%2A> devuelve una instancia de <xref:System.String>. Declare una variable de tipo <xref:System.String> y asígnele los resultados del <xref:System.Data.DataSet.GetXml%2A> método.
 
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
      [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]
@@ -45,6 +45,6 @@ La llamada al <xref:System.Data.DataSet.WriteXml%2A> método envía los datos co
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

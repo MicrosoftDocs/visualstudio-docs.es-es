@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668004"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Cómo: Personalizar menús y barras de herramientas en Visual Studio
@@ -45,7 +45,7 @@ Puede personalizar Visual Studio no solo agregando y quitando barras de herramie
 
  **En este tema:**
 
-- [Agregar, quitar o mover un menú de la barra de menús](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)
+- [Agregar, quitar o mover un menú en la barra de menús](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)
 
 - [Agregar, quitar o mover una barra de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addtoolbar)
 
@@ -53,7 +53,7 @@ Puede personalizar Visual Studio no solo agregando y quitando barras de herramie
 
 - [Restablecer un menú o una barra de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)
 
-## <a name="bkmk_addmenu"></a> Agregar, quitar o mover un menú de la barra de menús
+## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a><a name="bkmk_addmenu"></a> Agregar, quitar o mover un menú de la barra de menús
 
 1. En la barra de menús, elija **Herramientas**, **Personalizar**.
 
@@ -69,7 +69,7 @@ Puede personalizar Visual Studio no solo agregando y quitando barras de herramie
 
     - Para mover un menú dentro de la barra de menús, seleccione el menú en la lista **Controles** y, después, elija el botón **Subir** o **Bajar**.
 
-## <a name="bkmk_addtoolbar"></a> Agregar, quitar o mover una barra de herramientas
+## <a name="adding-removing-or-moving-a-toolbar"></a><a name="bkmk_addtoolbar"></a> Agregar, quitar o mover una barra de herramientas
 
 1. En la barra de menús, elija **Herramientas**, **Personalizar**.
 
@@ -93,7 +93,7 @@ Puede personalizar Visual Studio no solo agregando y quitando barras de herramie
         > [!NOTE]
         > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="bkmk_customize"></a> Personalizar un menú o una barra de herramientas
+## <a name="customizing-a-menu-or-a-toolbar"></a><a name="bkmk_customize"></a> Personalizar un menú o una barra de herramientas
 
 1. En la barra de menús, elija **Herramientas**, **Personalizar**.
 
@@ -115,7 +115,7 @@ Puede personalizar Visual Studio no solo agregando y quitando barras de herramie
 
     - Para separar los comandos en grupos, elija un comando de la lista **Controles**, elija el botón **Modificar selección** y después elija **Comenzar un grupo** en el menú que aparece.
 
-## <a name="bkmk_reset"></a> Restablecer un menú o una barra de herramientas
+## <a name="resetting-a-menu-or-a-toolbar"></a><a name="bkmk_reset"></a> Restablecer un menú o una barra de herramientas
 
 1. En la barra de menús, elija **Herramientas**, **Personalizar**.
 

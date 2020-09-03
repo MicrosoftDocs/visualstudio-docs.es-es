@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667127"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
@@ -25,14 +25,14 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
 
  Para obtener información específica acerca del lenguaje de programación que está usando, consulte los temas siguientes:
 
-- Visual Basic: [Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic--[Cómo: especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
 - Visual C# y F#: [Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++: [Especificar eventos de compilación](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Sintaxis
- Los eventos de compilación siguen la misma sintaxis que los comandos de DOS, pero puede usar macros para crear eventos más fácilmente. Para obtener una lista de las macros disponibles, vea [Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+ Los eventos de compilación siguen la misma sintaxis que los comandos de DOS, pero puede usar macros para crear eventos más fácilmente. Para obtener una lista de macros disponibles, vea [cuadro de diálogo línea de comandos del evento anterior/posterior a la](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)compilación.
 
  Para obtener mejores resultados, siga estas sugerencias de formato:
 
@@ -55,5 +55,5 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
     > [!NOTE]
     > `%I` en el código anterior debe ser `%%I` en scripts por lotes.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [anterior a la compilación Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md) [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md)

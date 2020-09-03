@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf68c1a28f662bfa4e271d3c402ef1c8946b6f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668675"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Cómo: Crear proyectos de flujo de trabajo (Heredado)
@@ -26,7 +26,7 @@ Siga estos pasos para crear un proyecto de [!INCLUDE[wf](../includes/wf-md.md)] 
 
 1. Inicie [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].
 
-2. En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
+2. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -35,7 +35,7 @@ Siga estos pasos para crear un proyecto de [!INCLUDE[wf](../includes/wf-md.md)] 
     > [!NOTE]
     > La opción predeterminada en [!INCLUDE[vs2010](../includes/vs2010-md.md)] es **.NET Framework 4**. Esta opción se usa para crear aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] y no usa el diseñador heredado.
 
-4. En el panel **tipos de proyecto** , seleccione C# proyectos visuales o proyectos de Visual Basic y, a continuación, seleccione **flujo de trabajo**.
+4. En el panel **tipos de proyecto** , seleccione proyectos de Visual C# o proyectos de Visual Basic y, a continuación, seleccione flujo de **trabajo**.
 
 5. En el panel **plantillas** , seleccione una de las plantillas de proyecto instaladas:
 
@@ -57,7 +57,7 @@ Siga estos pasos para crear un proyecto de [!INCLUDE[wf](../includes/wf-md.md)] 
 
      Si desea crear un directorio de soluciones para el proyecto, active la casilla **Crear directorio para la solución** y escriba un nombre en el cuadro Nombre de la **solución** .
 
-8. Haga clic en **Aceptar**.
+8. Haga clic en **OK**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md)
