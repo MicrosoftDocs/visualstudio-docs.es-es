@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381735"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Cómo: Especificar una dirección URL de soporte para requisitos previos individuales en una implementación de ClickOnce
@@ -81,9 +81,9 @@ Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementa
 ## <a name="net-framework-security"></a>seguridad en .NET Framework
  La dirección URL de soporte no se muestra en el cuadro de diálogo si la aplicación está marcada para ejecutarse en confianza parcial.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks>Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)

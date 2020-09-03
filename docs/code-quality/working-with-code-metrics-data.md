@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587087"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usar la ventana Resultados de métricas de código
@@ -30,9 +30,9 @@ La ventana **resultados de métricas de código** se muestra automáticamente cu
 
 Puede mostrar la ventana Resultados de métricas de código mediante una de las siguientes secuencias de menús:
 
-- En el menú **analizar** , elija **Windows** > **resultados de métricas de código**.
+- En el menú **analizar** , elija **Windows**  >  **resultados de métricas de código**de Windows.
 
-- En el menú **Ver** , elija **otras ventanas** > **resultados de métricas de código**.
+- En el menú **Ver** , elija **otros**  >  **resultados de métricas de código**de Windows.
 
 Se abre la ventana **resultados de métricas de código** , aunque no contenga ningún resultado.
 
@@ -106,7 +106,7 @@ Para obtener más información sobre los elementos de trabajo de Azure Boards, v
 
 4. En el menú **archivo** , haga clic en **guardar todo** para guardar el elemento de trabajo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Valores de las métricas de código](../code-quality/code-metrics-values.md)
 - [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

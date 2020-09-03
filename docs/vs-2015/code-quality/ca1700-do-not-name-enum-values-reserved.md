@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 57f2a2e5959860a99a921101ff5782f9bce9ace3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545657"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: no asignar nombres a los valores de enumeración &#39;reservado&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
 |Identificador de comprobación|CA1700|
-|Categoría|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

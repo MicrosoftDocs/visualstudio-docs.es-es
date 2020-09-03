@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue ? Microsoft Docs
+title: IDebugCustomViewer::D isplayValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 32e444d0d6a30484f708d3001b95e7a71856edd5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732441"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
@@ -47,24 +47,24 @@ int DisplayValue(
 
 ## <a name="parameters"></a>Parámetros
 `hwnd`\
-[en] Ventana principal
+de Ventana primaria
 
 `dwID`\
-[en] ID para visores personalizados que admiten más de un tipo.
+de IDENTIFICADOR de los visores personalizados que admiten más de un tipo.
 
 `pHostServices`\
-[in] Reservado. Siempre establecido en null.
+[in] Reservado. Siempre se establece en NULL.
 
 `pDebugProperty`\
-[en] Interfaz que se puede utilizar para recuperar el valor que se va a mostrar.
+de Interfaz que se puede utilizar para recuperar el valor que se va a mostrar.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
- La visualización es "modal" en que este método creará la ventana necesaria, mostrará el valor, esperar la entrada y cerrar la ventana, todo antes de volver al autor de la llamada. Esto significa que el método debe controlar todos los aspectos de la visualización del valor de la propiedad, desde la creación de una ventana para la salida, a la espera de la entrada del usuario, a la destrucción de la ventana.
+ La presentación es "modal" en que este método creará la ventana necesaria, mostrará el valor, esperará la entrada y cerrará la ventana antes de volver al llamador. Esto significa que el método debe controlar todos los aspectos de la visualización del valor de la propiedad, desde la creación de una ventana para la salida hasta la espera de la entrada del usuario, para destruir la ventana.
 
- Para admitir el cambio del valor en el objeto [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) especificado, puede usar el método [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) ,si el valor se puede expresar como una cadena. De lo contrario, es necesario crear una interfaz personalizada `DisplayValue` (exclusiva del evaluador de `IDebugProperty3` expresiones que implementa este método) en el mismo objeto que implementa la interfaz. Esta interfaz personalizada proporcionaría métodos para cambiar los datos de un tamaño o complejidad arbitrarios.
+ Para admitir el cambio del valor en el objeto [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) determinado, puede usar el método [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) , si el valor se puede expresar como una cadena. De lo contrario, es necesario crear una interfaz personalizada, exclusiva para el evaluador de expresiones `DisplayValue` que implementa este método, en el mismo objeto que implementa la `IDebugProperty3` interfaz. Esta interfaz personalizada proporcionaría métodos para cambiar los datos de un tamaño o complejidad arbitrarios.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

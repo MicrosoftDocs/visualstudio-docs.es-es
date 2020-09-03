@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381709"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedimientos para usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
@@ -102,9 +102,9 @@ Puede implementar una aplicación destinada a varias versiones del .NET Framewor
 
 - Actualice y vuelva a firmar la aplicación y los manifiestos de implementación. Para obtener más información, vea [Cómo: volver a firmar manifiestos de aplicación y de implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [\<compatibleFrameworks>Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<dependency>Element](../deployment/dependency-element-clickonce-application.md)
+- [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency> Element](../deployment/dependency-element-clickonce-application.md)
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Esquema de los archivos de configuración](/dotnet/framework/configure-apps/file-schema/index)

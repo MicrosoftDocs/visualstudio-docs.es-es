@@ -11,23 +11,23 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 903c9fef18990be0aee78309fcdfadb80a95f384
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194168"
 ---
-# <a name="objects"></a>de la empresa
+# <a name="objects"></a>Objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La siguiente información de referencia explica los objetos que se usan para crear una instancia del editor de texto principal.  
+La siguiente información de referencia explica los objetos que se usan para crear una instancia del editor de texto básico.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [VSCodeWindow (Objeto)](../extensibility/vscodewindow-object.md)  
- Describe el objeto de ventana de código, una ventana de documento especializado que puede incluir una o varias vistas de texto.  
+ Describe el objeto de ventana de código, una ventana de documento especializada que puede incluir una o varias vistas de texto.  
   
  [VSCodeWindowManager (Objeto)](../extensibility/vscodewindowmanager-object.md)  
- Describe el objeto de administrador de ventana de código que se implementa mediante el servicio de lenguaje y es responsable de administrar los elementos gráficos.  
+ Describe el objeto de administrador de ventanas de código implementado por el servicio de lenguaje y es responsable de administrar los elementos gráficos.  
   
  [VSTextBuffer (Objeto)](../extensibility/vstextbuffer-object.md)  
  Describe el objeto de búfer de texto, que representa una secuencia de texto Unicode, los datos de un archivo.  

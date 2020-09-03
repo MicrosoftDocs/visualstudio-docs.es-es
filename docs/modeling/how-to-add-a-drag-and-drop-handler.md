@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545670"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Cómo: Agregar un controlador para arrastrar y colocar
@@ -50,7 +50,7 @@ En el nuevo archivo, defina una clase parcial para la clase de forma o diagrama 
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>: Se llama a este método si el usuario suelta el botón del mouse mientras el puntero del mouse se sitúa sobre esta forma o diagrama, si `OnDragOver(DiagramDragEventArgs e)` se estableció previamente `e.Effect` en un valor distinto de `None` .
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> : Se llama a este método si el usuario suelta el botón del mouse mientras el puntero del mouse se sitúa sobre esta forma o diagrama, si `OnDragOver(DiagramDragEventArgs e)` se estableció previamente `e.Effect` en un valor distinto de `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ En el nuevo archivo, defina una clase parcial para la clase de forma o diagrama 
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>: Se llama a este método cuando el usuario hace doble clic en la forma o el diagrama.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> : Se llama a este método cuando el usuario hace doble clic en la forma o el diagrama.
 
      Para obtener más información, vea [Cómo: interceptar un clic en una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -124,11 +124,11 @@ Cuando el usuario arrastra un elemento al diagrama, o desde una parte del diagra
 
 Para detectar los formatos en los que la información del origen de la operación de arrastrar está disponible, ejecute el código en modo de depuración y establezca un punto de interrupción en la entrada a `OnDragOver()` o `CanDragDrop()`. Inspeccione los valores del parámetro `DiagramDragEventArgs`. La información se proporciona de dos maneras:
 
-- <xref:System.Windows.Forms.IDataObject>  `Data`: Esta propiedad lleva las versiones serializadas de los objetos de origen, normalmente en más de un formato. Sus funciones más útiles son:
+- <xref:System.Windows.Forms.IDataObject>  `Data` : Esta propiedad lleva las versiones serializadas de los objetos de origen, normalmente en más de un formato. Sus funciones más útiles son:
 
   - diagramEventArgs. Data. GetDataFormats (): muestra los formatos en los que se puede descodificar el objeto arrastrado. Por ejemplo, si el usuario arrastra un archivo desde el escritorio, los formatos disponibles incluyen el nombre de archivo ("`FileNameW`").
 
-  - `diagramEventArgs.Data.GetData(format)`: Descodifica el objeto arrastrado en el formato especificado. Convierte el objeto en el tipo apropiado. Por ejemplo:
+  - `diagramEventArgs.Data.GetData(format)` : Descodifica el objeto arrastrado en el formato especificado. Convierte el objeto en el tipo apropiado. Por ejemplo:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ Para detectar los formatos en los que la información del origen de la operació
 
      Para aceptar formas UML, determine los GUID de las clases Shape de UML por experimento. Recuerde que, normalmente, hay más de un tipo de elemento en cualquier diagrama. Recuerde también que un objeto arrastrado desde un diagrama DSL o UML es la forma, no el elemento de modelo.
 
-`DiagramDragEventArgs`también tiene propiedades que indican la posición actual del puntero del mouse y si el usuario presiona las teclas CTRL, ALT o Mayús.
+`DiagramDragEventArgs` también tiene propiedades que indican la posición actual del puntero del mouse y si el usuario presiona las teclas CTRL, ALT o Mayús.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Cómo obtener el original de un elemento arrastrado
 

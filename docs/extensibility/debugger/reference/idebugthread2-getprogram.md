@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetProgram ? Microsoft Docs
+title: 'IDebugThread2:: GetProgram | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 083973c82a5f8b3c24480e0964f67faca1977a71
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718719"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
-Obtiene el programa en el que se ejecuta un subproceso.
+Obtiene el programa en el que se está ejecutando un subproceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ int GetProgram ( 
 
 ## <a name="parameters"></a>Parámetros
 `ppProgram`\
-[fuera] Devuelve un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa en el que se ejecuta este subproceso.
+enuncia Devuelve un objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa en el que se ejecuta este subproceso.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

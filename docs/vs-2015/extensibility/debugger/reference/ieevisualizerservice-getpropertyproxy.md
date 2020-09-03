@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetPropertyProxy | Microsoft Docs
+title: 'IEEVisualizerService:: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d5fa9df1e0d0dea321f967a6d16971728ea2e94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155100"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Este método devuelve a un proxy para un objeto de propiedad.  
+Este método devuelve un proxy para un objeto de propiedad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,18 +42,18 @@ int GetPropertyProxy(
   
 #### <a name="parameters"></a>Parámetros  
  `dwID`  
- [in] Id. del proxy de la propiedad para recuperar.  
+ de IDENTIFICADOR del proxy de propiedad que se va a recuperar.  
   
  `proxy`  
- [out] Deseado proxy implementado en un [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfaz.  
+ enuncia Proxy deseado implementado en una interfaz [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) pasa la solicitud a este método como parte de su soporte para los visualizadores de tipo.  
+ [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) pasa la solicitud a este método como parte de su compatibilidad con los visualizadores de tipos.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)

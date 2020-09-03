@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586879"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 
-Al crear una aplicación que manipula datos en una base de datos, se realizan tareas básicas tales como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una sencilla Windows Forms aplicación "Forms over Data" mediante Visual C# o Visual Basic y ADO.net.  Todas las tecnologías de datos de .NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia realizan pasos muy similares a los que se muestran en este artículo.
+Al crear una aplicación que manipula datos en una base de datos, se realizan tareas básicas tales como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una sencilla Windows Forms aplicación "Forms over Data" mediante Visual C# o Visual Basic y ADO.NET.  Todas las tecnologías de datos de .NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia realizan pasos muy similares a los que se muestran en este artículo.
 
 En este artículo se muestra una forma sencilla de obtener datos de una base de datos de una manera rápida. Si la aplicación necesita modificar datos de formas no triviales y actualizar la base de datos, debe considerar el uso de Entity Framework y el uso del enlace de datos para sincronizar automáticamente los controles de interfaz de usuario con los cambios en los datos subyacentes.
 
 > [!IMPORTANT]
 > Para mantener el código sencillo, no se incluye el control de excepciones listo para producción.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Para crear la aplicación, necesitará:
 
@@ -35,7 +35,7 @@ Para crear la aplicación, necesitará:
 
 - SQL Server Express LocalDB. Si no tiene SQL Server Express LocalDB, puede instalarlo desde la página de [descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-En este tema se da por supuesto que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación Windows Forms, agregar formularios al proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de los controles y codificar eventos simples. Si no está familiarizado con estas tareas, le recomendamos que complete el tema [Introducción a C# visual y Visual Basic](../ide/quickstart-visual-basic-console.md) antes de comenzar este tutorial.
+En este tema se da por supuesto que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación Windows Forms, agregar formularios al proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de los controles y codificar eventos simples. Si no está familiarizado con estas tareas, le recomendamos que complete el tema [Introducción a Visual C# y Visual Basic](../ide/quickstart-visual-basic-console.md) antes de comenzar este tutorial.
 
 ## <a name="set-up-the-sample-database"></a>Configurar la base de datos de ejemplo
 
@@ -120,16 +120,16 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 |Botón|Nombre = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Almacenar la cadena de conexión
-Cuando la aplicación intenta abrir una conexión a la base de datos, la aplicación debe tener acceso a la cadena de conexión. Para evitar escribir la cadena manualmente en cada formulario, almacene la cadena en el archivo *app. config* en el proyecto y cree un método que devuelva la cadena cuando se llame al método desde cualquier formulario de la aplicación.
+Cuando la aplicación intenta abrir una conexión a la base de datos, la aplicación debe tener acceso a la cadena de conexión. Para evitar escribir la cadena manualmente en cada formulario, almacene la cadena en el archivo *App.config* del proyecto y cree un método que devuelva la cadena cuando se llame al método desde cualquier formulario de la aplicación.
 
-Para encontrar la cadena de conexión, haga clic con el botón derecho en la conexión de datos de **ventas** en **Explorador de servidores** y elija **propiedades**. Busque la propiedad **ConnectionString** y, a **continuación, use** **ctrl**+a, **Ctrl**+**C** para seleccionar y copiar la cadena en el portapapeles.
+Para encontrar la cadena de conexión, haga clic con el botón derecho en la conexión de datos de **ventas** en **Explorador de servidores** y elija **propiedades**. Busque la propiedad **ConnectionString** y, a continuación, use **Ctrl** + **a**, **Ctrl** + **C** para seleccionar y copiar la cadena en el portapapeles.
 
-1. Si C#usa, en **Explorador de soluciones**, expanda el nodo **propiedades** en el proyecto y, a continuación, abra el archivo **Settings. Settings** .
+1. Si usa C#, en **Explorador de soluciones**, expanda el nodo **propiedades** en el proyecto y, a continuación, abra el archivo **Settings. Settings** .
     Si está utilizando Visual Basic, en **Explorador de soluciones**, haga clic en **Mostrar todos los archivos**, expanda el nodo **mi proyecto** y, a continuación, abra el archivo **Settings. Settings** .
 
-2. En la columna **nombre** , escriba `connString`.
+2. En la columna **nombre** , escriba `connString` .
 
-3. En la lista **tipo** , seleccione **(cadena de conexión)** .
+3. En la lista **tipo** , seleccione **(cadena de conexión)**.
 
 4. En la lista **ámbito** , seleccione **aplicación**.
 
@@ -175,7 +175,7 @@ Cree un controlador de eventos Click vacío para cada botón del formulario NewC
 
 Para completar la lógica del formulario NewCustomer, siga estos pasos.
 
-1. Coloque el espacio de nombres `System.Data.SqlClient` en el ámbito para que no tenga que calificar totalmente los nombres de sus miembros.
+1. Coloque el `System.Data.SqlClient` espacio de nombres en el ámbito para que no tenga que calificar totalmente los nombres de sus miembros.
 
      ```csharp
      using System.Data.SqlClient;
@@ -229,7 +229,7 @@ Para completar la lógica del formulario FillOrCancel, siga estos pasos.
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>Probar la aplicación
+## <a name="test-your-application"></a>Prueba de la aplicación
 
 Seleccione la tecla **F5** para compilar y probar la aplicación después del código de cada controlador del evento Click y, a continuación, después de haber terminado la programación.
 

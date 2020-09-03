@@ -9,16 +9,16 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c272906aa402c124b98e6b9f5556d8c825ee963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660476"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Aislar el código probado con Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Fakes ayuda a aislar el código que se está probando mediante la sustitución de otras partes de la aplicación con *código auxiliar* o *correcciones de compatibilidad (shim)* . Se trata de pequeños fragmentos de código que están bajo el control de las pruebas. Al aislar código para pruebas, sabe que, en caso de error, la causa está localizada ahí y no en alguna otra parte. El código auxiliar y las correcciones de compatibilidad (shims) también permiten probar el código aunque no funcionen otras partes de la aplicación todavía.
+Microsoft falsificaciones le ayuda a aislar el código que está probando reemplazando otras partes de la aplicación con *código auxiliar* o *correcciones de compatibilidad (Shim*). Se trata de pequeños fragmentos de código que están bajo el control de las pruebas. Al aislar código para pruebas, sabe que, en caso de error, la causa está localizada ahí y no en alguna otra parte. El código auxiliar y las correcciones de compatibilidad (shims) también permiten probar el código aunque no funcionen otras partes de la aplicación todavía.
 
  Fakes tiene dos versiones:
 
@@ -26,7 +26,7 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
 
 - Una [corrección de compatibilidad (shim)](#shims) modifica el código compilado de la aplicación en tiempo de ejecución para que, en lugar de realizar una llamada de método especificada, ejecute el código shim que proporciona la prueba. Las correcciones de compatibilidad (shims) se pueden utilizar para reemplazar las llamadas a ensamblados que no se pueden modificar, como los ensamblados .NET.
 
-  ![Las falsificaciones reemplazan a otros componentes](../test/media/fakes-2.png "Falsificaciones-2")
+  ![Fakes reemplaza otros componentes](../test/media/fakes-2.png "Falsificaciones-2")
 
   **Requisitos**
 
@@ -51,7 +51,7 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
 
  Por lo general, nosotros recomendamos que se utilicen tipos de código auxiliar para aislar las dependencias del código base. Esto se puede conseguir ocultando los componentes en interfaces. Los tipos de corrección de compatibilidad (shim) pueden utilizarse para aislar los componentes de terceros que no proporcionan API comprobables.
 
-## <a name="stubs"></a> Introducción a los códigos auxiliares
+## <a name="getting-started-with-stubs"></a><a name="stubs"></a> Introducción a los códigos auxiliares
  Para obtener una descripción más detallada, vea [Usar stubs para aislar las partes de la aplicación entre sí para las pruebas unitarias](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
 1. **Inyectar interfaces**
@@ -141,11 +141,11 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
 
     ```
 
-     El toque mágico aquí lo pone la clase `StubIStockFeed`. Para cada interfaz del ensamblado al que se hace referencia, el mecanismo de Microsoft Fakes genera una clase de código auxiliar. El nombre de la clase de código auxiliar se deriva del nombre de la interfaz, con "`Fakes.Stub`" como prefijo y los nombres de tipo de parámetro anexados.
+     El toque mágico aquí lo pone la clase `StubIStockFeed`. Para cada interfaz del ensamblado al que se hace referencia, el mecanismo de Microsoft Fakes genera una clase de código auxiliar. El nombre de la clase de código auxiliar se deriva del nombre de la interfaz, con " `Fakes.Stub` " como prefijo, y los nombres de tipo de parámetro anexados.
 
      El código auxiliar también se genera para captadores y establecedores de propiedades, para los eventos y para métodos genéricos. Para más información, vea [Usar stubs para aislar las partes de la aplicación entre sí para las pruebas unitarias](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-## <a name="shims"></a> Introducción a las correcciones de compatibilidad (shim)
+## <a name="getting-started-with-shims"></a><a name="shims"></a> Introducción a las correcciones de compatibilidad (shim)
  (Para obtener una descripción más detallada, vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)).
 
  Supongamos que el componente contiene las llamadas a `DateTime.Now`:

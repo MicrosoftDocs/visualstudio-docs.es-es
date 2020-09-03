@@ -1,5 +1,5 @@
 ---
-title: Elemento ProjectCollection (Plantillas de Visual Studio) Microsoft Docs
+title: ProjectCollection (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 12a22ca28c90ed1df69529ed3004b417b5e04276
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701971"
 ---
-# <a name="projectcollection-element-visual-studio-templates"></a>Elemento ProjectCollection (plantillas de Visual Studio)
+# <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection (elemento, plantillas de Visual Studio)
 Especifica la organización y el contenido de las plantillas de varios proyectos.
 
- \<VSTemplate \<> TemplateContent> \<> ProjectCollection
+ \<VSTemplate> \<TemplateContent>
+ \<ProjectCollection>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,10 +56,10 @@ Especifica la organización y el contenido de las plantillas de varios proyectos
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica el contenido de la plantilla.|
 
 ## <a name="remarks"></a>Observaciones
- Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El `ProjectCollection` elemento se utiliza para especificar los proyectos que se contienen en la plantilla. Para obtener más información sobre las plantillas de varios proyectos, consulte [Cómo: Crear plantillas de varios proyectos.](../ide/how-to-create-multi-project-templates.md)
+ Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El `ProjectCollection` elemento se usa para especificar los proyectos que se van a incluir en la plantilla. Para obtener más información sobre las plantillas de varios proyectos, vea [Cómo: crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo se muestra un archivo *.vstemplate* raíz de varios proyectos simple. En este ejemplo, la plantilla contiene dos proyectos, `My Windows Application` y `My Class Library`. El atributo `ProjectName` del elemento `ProjectTemplateLink` establece el nombre que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debe asignar a este proyecto. Si `ProjectName` el atributo no existe, el nombre del archivo *.vstemplate* se utiliza como nombre del proyecto.
+ En este ejemplo se muestra un archivo *. vstemplate* raíz de varios proyectos sencillo. En este ejemplo, la plantilla contiene dos proyectos, `My Windows Application` y `My Class Library`. El atributo `ProjectName` del elemento `ProjectTemplateLink` establece el nombre que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debe asignar a este proyecto. Si el `ProjectName` atributo no existe, el nombre del archivo *. vstemplate* se usa como nombre del proyecto.
 
 ```
 <VSTemplate Version="3.0.0" Type="ProjectGroup"
@@ -83,6 +84,6 @@ Especifica la organización y el contenido de las plantillas de varios proyectos
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Cómo: Crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Procedimiento Crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md)

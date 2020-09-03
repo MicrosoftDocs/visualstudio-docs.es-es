@@ -1,5 +1,5 @@
 ---
-title: Restricciones en las longitudes de las cuerdas ? Microsoft Docs
+title: Restricciones en las longitudes de cadena | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df6e068ba612d5e8876e4fa01fbc0751759d5a80
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701475"
 ---
 # <a name="restrictions-on-string-lengths"></a>Restricciones en las longitudes de cadena
-La API de complemento de Control de código fuente limita las longitudes de las cadenas utilizadas en varias funciones.
+La API del complemento de control de código fuente limita las longitudes de las cadenas usadas en varias funciones.
 
 ## <a name="string-length-values"></a>Valores de longitud de cadena
 
@@ -30,7 +30,7 @@ La API de complemento de Control de código fuente limita las longitudes de las 
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
-> La longitud no incluye `null`la terminación . Otras constantes con un sufijo "_SIZE" en lugar de `null`"_LEN" incluyen espacio para la terminación .
+> La longitud no incluye la terminación `null` . Otras constantes con un sufijo "_SIZE" en lugar de "_LEN" incluyen espacio para finalizar `null` .
 
 |Constante|Value|
 |--------------|-----------|

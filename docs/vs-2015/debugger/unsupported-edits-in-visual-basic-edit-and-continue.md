@@ -1,5 +1,5 @@
 ---
-title: Ediciones no compatibles en Visual Basic, editar y continuar | Documentos de Microsoft
+title: Ediciones no compatibles en Visual Basic editar y continuar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94a151a7adab5c8246cec38c2e62d76788beb6e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155432"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Ediciones no compatibles en Editar y continuar de Visual Basic
@@ -31,10 +31,10 @@ La característica Editar y continuar permite detener la ejecución del programa
   
  Si necesita realizar un cambio no compatible, debe detener la depuración, hacer el cambio e iniciar una nueva sesión de depuración.  
   
-### <a name="BKMK_MethodandPropertyBodyEdits"></a> Ediciones de cuerpo de la propiedad y método  
- **Cambios no admitidos en Variables locales estáticas**: Agregar o actualizar una variable local o quitar una variable local estática si eso provocara un error de compilación.  
+### <a name="method-and-property-body-edits"></a><a name="BKMK_MethodandPropertyBodyEdits"></a> Ediciones del cuerpo de métodos y propiedades  
+ **Cambios no admitidos en las variables locales estáticas**: agregar o actualizar una variable local o quitar una variable local estática Si esto provocaría un error de compilación.  
   
- **Cambios no admitidos en los genéricos**: No se admiten cambios en el propio método genérico o en el cuerpo del método genérico. Se puede agregar, eliminar o cambiar la creación de instancias de un tipo genérico o de llamadas a los métodos genéricos existentes.  
+ **Cambios no admitidos en los genéricos**: no se admiten los cambios en el propio método genérico o en el cuerpo del método genérico. Se puede agregar, eliminar o cambiar la creación de instancias de un tipo genérico o de llamadas a los métodos genéricos existentes.  
   
  **Otros cambios no admitidos**  
   
@@ -42,13 +42,13 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Agregar un bloque `Try...Catch` cuando el puntero de instrucción termina en el bloque `Catch` o en el bloque `Finally`.  
   
-- Quitar un `Try...Catch` bloque, cuando el puntero de instrucción está en un `Catch`bloque o `Finally` bloque.  
+- Quitar un `Try...Catch` bloque cuando el puntero de instrucción está en un `Catch` bloque o en el `Finally` bloque.  
   
 - Agregar un bloque `Using` alrededor del puntero de instrucción actual.  
   
 - Agregar un bloque `SynchLock` alrededor del puntero de instrucción actual.  
   
-### <a name="BKMK_AttributeEdits"></a> Ediciones de atributos  
+### <a name="attribute-edits"></a><a name="BKMK_AttributeEdits"></a> Ediciones de atributos  
  Editar y continuar no admite la modificación de atributos. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Definir, editar o eliminar una clase de atributos.  
@@ -57,7 +57,7 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Editar o quitar un atributo existente.  
   
-### <a name="BKMK_ClassDeclarationEdits"></a> Ediciones de declaraciones de clase  
+### <a name="class-declaration-edits"></a><a name="BKMK_ClassDeclarationEdits"></a> Ediciones de declaraciones de clases  
  Editar y continuar no permite la mayoría de los cambios en las declaraciones de clase en modo de interrupción. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Cambiar el nombre, eliminar o cambiar la herencia de una clase existente.  
@@ -70,7 +70,7 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Editar cualquier declaración de clase genérica.  
   
-### <a name="BKMK_ClassMemberDeclarationEdits"></a> Ediciones de declaraciones de miembro de clase  
+### <a name="class-member-declaration-edits"></a><a name="BKMK_ClassMemberDeclarationEdits"></a> Ediciones de declaraciones de miembros de clase  
  En la mayoría de los casos, las declaraciones de miembros están prohibidas en Editar y continuar. Por ejemplo, no puede cambiar la firma o el nivel de acceso de un miembro ni puede quitar completamente los miembros si eso provocara un error de compilación. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Sombrear una variable miembro existente mediante la declaración de una variable miembro o variable global con el mismo nombre en el bloque contenedor.  
@@ -103,7 +103,7 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Cambiar un campo público.  
   
-### <a name="BKMK_CompilerOptionEdits"></a> Ediciones de opciones del compilador  
+### <a name="compiler-option-edits"></a><a name="BKMK_CompilerOptionEdits"></a> Ediciones de opciones del compilador  
  Mientras utilice Editar y continuar en modo de interrupción, no podrá cambiar, agregar o quitar las siguientes opciones del compilador:  
   
 - **Option Strict**  
@@ -112,7 +112,7 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - **Option Compare**  
   
-### <a name="BKMK_ConstantsEdits"></a> Ediciones de constantes  
+### <a name="constants-edits"></a><a name="BKMK_ConstantsEdits"></a> Ediciones de constantes  
  Los cambios de las constantes en el modo Editar y continuar están muy limitados. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Agregar o actualizar una variable constante.  
@@ -121,14 +121,14 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Quitar una constante.  
   
-### <a name="BKMK_DelegateandEventDeclarationEdits"></a> Ediciones de declaraciones de evento y delegado  
+### <a name="delegate-and-event-declaration-edits"></a><a name="BKMK_DelegateandEventDeclarationEdits"></a> Ediciones de declaraciones de delegados y eventos  
  Editar y continuar no permite algunos de los cambios en los delegados y los eventos en el modo de interrupción. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Cambiar o eliminar una definición de delegado.  
   
 - Eliminar un evento.  
   
-### <a name="BKMK_EnumerationEdits"></a> Ediciones de enumeraciones  
+### <a name="enumeration-edits"></a><a name="BKMK_EnumerationEdits"></a> Ediciones de enumeración  
  Editar y continuar no permite cambios en enumeraciones (`Enums`) en el modo de interrupción. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Modificar el tipo subyacente de un valor `Enum`.  
@@ -137,17 +137,17 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Cambiar el modificador de acceso de un valor `Enum`.  
   
-### <a name="BKMK_ExternalDeclarationsEdits"></a> Ediciones de declaraciones externas  
+### <a name="external-declarations-edits"></a><a name="BKMK_ExternalDeclarationsEdits"></a> Ediciones de declaraciones externas  
  En general, no puede cambiar las declaraciones de métodos externos mientras se encuentra en modo Editar y continuar. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Agregar o quitar una declaración externa.  
   
 - Cambiar la firma o serializar los atributos de una declaración externa.  
   
-### <a name="BKMK_ImportsEdits"></a> Ediciones de importaciones  
+### <a name="imports-edits"></a><a name="BKMK_ImportsEdits"></a> Ediciones de importaciones  
  Editar y continuar no permite agregar, cambiar o quitar instrucciones `Imports` mientras se encuentra en el modo de interrupción.  
   
-### <a name="BKMK_InterfaceDefinitionEdits"></a> Ediciones de definiciones de interfaz  
+### <a name="interface-definition-edits"></a><a name="BKMK_InterfaceDefinitionEdits"></a> Ediciones de definiciones de interfaz  
  Aunque generalmente se pueden realizar cambios en miembros que implementan interfaces; Editar y continuar no suele permitir cambios en definiciones de interfaz reales. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Agregar, cambiar o quitar miembros de interfaz.  
@@ -158,7 +158,7 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Cambiar la jerarquía de herencia de las interfaces.  
   
-### <a name="BKMK_ModuleDeclarationEdits"></a> Ediciones de declaraciones de módulo  
+### <a name="module-declaration-edits"></a><a name="BKMK_ModuleDeclarationEdits"></a> Ediciones de declaraciones de módulos  
  Editar y continuar no permite la mayoría de los cambios en las declaraciones de módulo mientras se encuentra en el modo de interrupción. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Crear un nuevo módulo.  
@@ -167,7 +167,7 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Cambiar el modificador de acceso de un módulo.  
   
-### <a name="BKMK_ModuleMemberDeclarationEdits"></a> Ediciones de declaraciones de miembros de módulo  
+### <a name="module-member-declaration-edits"></a><a name="BKMK_ModuleMemberDeclarationEdits"></a> Ediciones de declaraciones de miembros de módulo  
  Con Editar y continuar, puede realizar una serie de cambios en los miembros de módulo, como propiedades, métodos y campos, mientras se encuentra en el modo de interrupción. Sin embargo, no se admiten algunos cambios. En concreto, Editar y continuar no admite la adición, eliminación o cambio del tipo o firma de ningún miembro.  
   
  En concreto, Editar y continuar no admite los siguientes cambios:  
@@ -186,11 +186,11 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Eliminar o cambiar el tipo de un campo existente.  
   
-### <a name="BKMK_NestedTypeDeclarationEdits"></a> Ediciones de declaraciones de tipo anidado  
+### <a name="nested-type-declaration-edits"></a><a name="BKMK_NestedTypeDeclarationEdits"></a> Ediciones de declaraciones de tipos anidados  
  Editar y continuar no admite mover un tipo anidado a otro espacio de nombres o tipo.  
   
-### <a name="BKMK_StructureDeclarationEdits"></a> Ediciones de declaraciones de estructura  
- La mayoría de los cambios en las declaraciones de estructura no se permiten editar y continuar mientras en **interrumpir** modo. En concreto, Editar y continuar no admite los siguientes cambios:  
+### <a name="structure-declaration-edits"></a><a name="BKMK_StructureDeclarationEdits"></a> Ediciones de declaraciones de estructura  
+ Editar y continuar no permite la mayoría de los cambios en las declaraciones de estructura mientras está en modo de **interrupción** . En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Cambiar el nombre o eliminar una estructura existente.  
   
@@ -198,7 +198,7 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Cambiar el modificador de acceso de una estructura.  
   
-### <a name="BKMK_StructureMemberDeclarationEdits"></a> Ediciones de declaraciones de miembros de estructura  
+### <a name="structure-member-declaration-edits"></a><a name="BKMK_StructureMemberDeclarationEdits"></a> Ediciones de declaraciones de miembros de estructura  
  Con Editar y continuar, es posible realizar una serie de cambios en miembros de estructura (propiedades, métodos y campos) mientras se está en el modo de interrupción. Sin embargo, no se admiten algunos los cambios, en concreto los que afectan a la declaración de miembros de estructura. En concreto, Editar y continuar no admite los siguientes cambios:  
   
 - Quitar una propiedad o método.  
@@ -211,12 +211,12 @@ La característica Editar y continuar permite detener la ejecución del programa
   
 - Cambiar si una declaración de método o propiedad implementa una interfaz.  
   
-- Cambiar los modificadores de acceso de un método o propiedad (por ejemplo, cambiar `Public` a **privada**).  
+- Cambiar los modificadores de acceso de una propiedad o un método (por ejemplo, cambiar `Public` a **Private**).  
   
 - Quitar un campo.  
   
 - Cambiar el tipo de un campo.  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Aplicar tareas de edición en modo de interrupción con Editar y continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: aplicar ediciones en modo de interrupción con editar y continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Editar y continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

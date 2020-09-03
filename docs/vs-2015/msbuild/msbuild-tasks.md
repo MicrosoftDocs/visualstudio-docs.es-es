@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154812"
 ---
 # <a name="msbuild-tasks"></a>Tareas de MSBuild
@@ -62,13 +62,13 @@ Una plataforma de compilación debe ser capaz de ejecutar cualquier número de a
 ```  
   
 ## <a name="included-tasks"></a>Tareas incluidas  
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] se distribuye con muchas tareas, como por ejemplo [Copy](../msbuild/copy-task.md), que copia archivos, [MakeDir](../msbuild/makedir-task.md), que crea directorios, y [Csc](../msbuild/csc-task.md), que compila archivos de código fuente [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Para obtener una lista completa de tareas disponibles e información de uso, consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] se distribuye con muchas tareas, como por ejemplo [Copy](../msbuild/copy-task.md), que copia archivos, [MakeDir](../msbuild/makedir-task.md), que crea directorios, y [Csc](../msbuild/csc-task.md), que compila archivos de código fuente [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Para obtener una lista completa de tareas disponibles e información de uso, consulte [referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Tareas invalidadas  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] busca tareas en varias ubicaciones. La primera ubicación es en archivos con la extensión .OverrideTasks almacenados en los directorios de .NET Framework. Las tareas en estos archivos invalidan cualquier otra tarea con los mismos nombres, incluidas las tareas en el archivo del proyecto. La segunda ubicación es en archivos con la extensión .Tasks en los directorios de .NET Framework. Si la tarea no se encuentra en ninguna de estas ubicaciones, se utiliza la tarea en el archivo del proyecto.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
- [Escribir tareas](../msbuild/task-writing.md)   
+ [Escritura de tareas](../msbuild/task-writing.md)   
  [Tareas insertadas](../msbuild/msbuild-inline-tasks.md)

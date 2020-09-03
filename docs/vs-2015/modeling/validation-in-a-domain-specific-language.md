@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9a19ebab7b0c820e336965b4020eff2c2f9726cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659363"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>La validación en los lenguajes específicos de dominio
@@ -38,7 +38,7 @@ Como autor de un lenguaje específico de dominio (DSL), puede definir restriccio
 
 - Haga clic con el botón secundario en el nodo superior del explorador del DSL y seleccione **validar todo** .
 
-- Guardar el modelo.
+- Guarde el modelo.
 
 - Abrir el modelo.
 
@@ -62,7 +62,7 @@ Como autor de un lenguaje específico de dominio (DSL), puede definir restriccio
 
    2. En el explorador de DSL, expanda el nodo **Editor** y seleccione **validación**.
 
-   3. En el ventana Propiedades, establezca las propiedades **usa** en `true`. Lo más conveniente es establecer todas las propiedades.
+   3. En el ventana Propiedades, establezca las propiedades **usa**  en `true` . Lo más conveniente es establecer todas las propiedades.
 
    4. Haga clic en **transformar todas las plantillas** en la barra de herramientas explorador de soluciones.
 
@@ -129,7 +129,7 @@ public partial class ParentsHaveChildren
 
  Observe los siguientes aspectos sobre este código:
 
-- Puede agregar métodos de validación a las clases de dominio o a las relaciones de dominio. El código de estos tipos está en **Dsl\Generated Code\Domain \*. CS**.
+- Puede agregar métodos de validación a las clases de dominio o a las relaciones de dominio. El código de estos tipos está en **Dsl\Generated Code\Domain \* . CS**.
 
 - Cada método de validación se aplica a todas las instancias de su clase y sus subclases. En el caso de una relación de dominio, cada instancia es un vínculo entre dos elementos de modelo.
 
@@ -143,12 +143,12 @@ public partial class ParentsHaveChildren
 
   El ejemplo se aplica al siguiente modelo de dominio. La relación ParentsHaveChildren tiene roles con los nombres Child y Parent.
 
-  ![Modelo de árbol &#45; de familia de diagramas de definición de DSL](../modeling/media/familyt-person.png "FamilyT_Person")
+  ![Diagrama de definición de DSL &#45; modelo de árbol de familia](../modeling/media/familyt-person.png "FamilyT_Person")
 
 ## <a name="validation-categories"></a>Categorías de validación
  En el atributo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> se especifica cuándo se debe ejecutar el método de validación.
 
-|Categoría|Execution|
+|Category|Ejecución|
 |--------------|---------------|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando el usuario invoca el comando de menú Validate (Validar).|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando se abre el archivo del modelo.|
@@ -178,11 +178,11 @@ public partial class Person
 
 ```
 
- **Agregar restricciones de validación.** Para aplicar la validación en un orden predecible, defina un método de validación único en una clase propietaria, como el elemento raíz del modelo. Esta técnica también perite agregar varios informes de error en un único mensaje.
+ **Agregar restricciones de validación.**  Para aplicar una validación con un orden predecible, defina un único método de validación en una clase de propietario, como el elemento raíz del modelo. Esta técnica también perite agregar varios informes de error en un único mensaje.
 
  Las desventajas son que el método combinado es menos fácil de administrar y que todas las restricciones deben tener las mismas `ValidationCategories`. Por lo tanto, le recomendamos que mantenga cada restricción en un método diferente, si es posible.
 
- **Pasar valores en la caché de contexto.** El parámetro de contexto tiene un diccionario en el que se pueden colocar valores arbitrarios. El diccionario persiste mientras dura la ejecución de la validación. Un método de validación determinado podría, por ejemplo, mantener un recuento de errores en el contexto y usarlo para evitar desbordar la ventana de errores con mensajes repetidos. Por ejemplo:
+ **Pasar valores en la memoria caché del contexto.**  El parámetro de contexto tiene un diccionario en el que puede colocar valores arbitrarios. El diccionario persiste mientras dura la ejecución de la validación. Un método de validación determinado podría, por ejemplo, mantener un recuento de errores en el contexto y usarlo para evitar desbordar la ventana de errores con mensajes repetidos. Por ejemplo:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -199,7 +199,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Si establece que la multiplicidad de un rol de una relación de dominio es 1..* o 1..1, pero el usuario no crea un vínculo de esta relación, aparecerá un mensaje de error de validación.
 
- Por ejemplo, si el DSL tiene clases person y ciudad, y una relación PersonLivesInTown con una relación **1.. \\** * en el rol ciudad, para cada persona que no tenga ciudad, aparecerá un mensaje de error.
+ Por ejemplo, si el DSL tiene clases person y ciudad, y una relación PersonLivesInTown con una relación **1. \\ ** * en el rol de la ciudad, para cada persona que no tenga ninguna ciudad, aparecerá un mensaje de error.
 
 ## <a name="running-validation-from-program-code"></a>Ejecutar la validación desde el código de programa
  Para ejecutar la validación, puede acceder a un controlador de validación o crear uno. Si quiere que los errores se muestren al usuario en la ventana de errores, use el controlador de validación que está asociado al DocData de su diagrama. Por ejemplo, si está escribiendo un comando de menú, `CurrentDocData.ValidationController` está disponible en la clase de conjunto de comandos:
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
 
  También se llama a los controladores después de las operaciones de deshacer o rehacer que afectan a los vínculos o elementos.
 
-## <a name="custom"></a>Categorías de validación personalizadas
+## <a name="custom-validation-categories"></a><a name="custom"></a> Categorías de validación personalizadas
  Además de las categorías de validación estándar, como Menu y Open, puede definir sus propias categorías. Puede invocar estas categorías desde el código de programa. El usuario no puede invocarlas directamente.
 
  Un uso típico de las categorías personalizadas es definir una categoría que pruebe si el modelo cumple las condiciones previas de una herramienta determinada.
@@ -332,17 +332,17 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-## <a name="alternatives"></a>Alternativas a la validación
+## <a name="alternatives-to-validation"></a><a name="alternatives"></a> Alternativas a la validación
  Las restricciones de validación notifican los errores, pero no cambian el modelo. Si, en su lugar, quiere evitar que el modelo quede invalidado, puede usar otras técnicas.
 
  Sin embargo, estas técnicas no se recomiendan. Normalmente lo mejor es dejar que el usuario decida cómo corregir un modelo no válido.
 
- **Ajuste el cambio para restaurar la validez del modelo.** Por ejemplo, si el usuario establece una propiedad por encima del máximo permitido, puede restablecer la propiedad al valor máximo. Para ello, defina una regla. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
+ **Ajuste el cambio para que el modelo vuelva a ser válido.**  Por ejemplo, si el usuario establece una propiedad por encima del máximo permitido, podría restablecerla al valor máximo. Para ello, defina una regla. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Revierta la transacción si se intenta realizar un cambio no válido.** También puede definir una regla para este fin, pero en algunos casos es posible invalidar un controlador de propiedades **OnValueChanging ()** o reemplazar un método como `OnDeleted().` para revertir una transacción, use `this.Store.TransactionManager.CurrentTransaction.Rollback().` para obtener más información, consulte [propiedad de dominio. Controladores de cambio de valor](../modeling/domain-property-value-change-handlers.md).
+ **Revierta la transacción si se intenta realizar un cambio no válido.** También puede definir una regla para este fin, pero en algunos casos es posible invalidar un controlador de propiedades **OnValueChanging ()** o reemplazar un método como `OnDeleted().` para revertir una transacción, use `this.Store.TransactionManager.CurrentTransaction.Rollback().` para obtener más información, vea [controladores de cambios de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Asegúrese de que el usuario sabe que el cambio se ha ajustado o revertido. Por ejemplo, use `System.Windows.Forms.MessageBox.Show("message").`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md) [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)

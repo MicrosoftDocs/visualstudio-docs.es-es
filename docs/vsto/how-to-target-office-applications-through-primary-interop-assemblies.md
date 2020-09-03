@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545774"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Cómo: dirigirse a aplicaciones de Office a través de ensamblados de interoperabilidad primarios
@@ -51,7 +51,7 @@ ms.locfileid: "85545774"
 
      El nombre del ensamblado aparece en la carpeta **referencias** de **Explorador de soluciones**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
 - [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)

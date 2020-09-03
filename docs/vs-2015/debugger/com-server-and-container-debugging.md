@@ -1,5 +1,5 @@
 ---
-title: Servidor COM y un contenedor de depuración | Documentos de Microsoft
+title: Depuración de servidores y contenedores COM | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 631b1d35a0878bfc362b03751f35909839c7da19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161555"
 ---
 # <a name="com-server-and-container-debugging"></a>Depuración de servidores y contenedores COM
@@ -36,12 +36,12 @@ Las aplicaciones COM realizan una serie de tareas fuera del control directo del 
   
  El depurador de Visual Studio permite la depuración superficial o exhaustiva de contenedores y servidores. Esto incluye la capacidad de ejecutar instrucciones paso a paso entre llamadas a procedimientos remotos (RPC).  
   
-## <a name="BKMK_COMServerandContainerintheSameSolution"></a> Depuración de un servidor COM y un contenedor en la misma solución  
+## <a name="debugging-a-com-server-and-container-in-the-same-solution"></a><a name="BKMK_COMServerandContainerintheSameSolution"></a> Depuración de un servidor COM y un contenedor en la misma solución  
  Se puede depurar un servidor y contenedor COM mediante dos proyectos dentro de la misma solución. Establezca los puntos de interrupción apropiados en cada proyecto y depure. Cuando el contenedor llama al servidor que visita un punto de interrupción, el contenedor esperará hasta que regrese el código del servidor, es decir, hasta que termine de depurarlo.  
   
  La depuración de un contenedor COM es similar a la de un programa estándar. Una diferencia está en la depuración de un evento que genera una devolución de llamada (por ejemplo, al arrastrar datos a la aplicación contenedora). En este caso, debe establecer un punto de interrupción en la función de devolución de llamada.  
   
-## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Depuración de una aplicación de servidor sin información del contenedor  
+## <a name="debugging-a-server-application-without-container-information"></a><a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Depuración de una aplicación de servidor sin información del contenedor  
  Si no tiene o no desea utilizar información de depuración para la aplicación contenedora, puede empezar el proceso de depuración de la aplicación del servidor en tres pasos:  
   
 1. Comience a depurar el servidor como si se tratara de una aplicación normal.  
@@ -50,12 +50,12 @@ Las aplicaciones COM realizan una serie de tareas fuera del control directo del 
   
 3. Inicie la aplicación contenedora.  
   
-## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Depuración de una aplicación de Aislamiento de servidor y dominio (SDI)  
+## <a name="debugging-a-server-and-domain-isolation-sdi-application"></a><a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Depuración de una aplicación de Aislamiento de servidor y dominio (SDI)  
  Si está depurando una aplicación de servidor SDI, debe especificar `/Embedding` o `/Automation` en la propiedad **Argumentos de la línea de comandos** del cuadro de diálogo Páginas de propiedades de *proyecto* de los proyectos de C/C++, C# o Visual Basic.  
   
  Con los argumentos de esta línea de comandos, el depurador puede iniciar la aplicación de servidor como si se iniciara desde un contenedor. Después, al iniciar el contenedor desde el Administrador de programas o desde el Administrador de archivos, el contenedor utilizará la instancia del servidor que se inició en el depurador.  
   
  Para tener acceso al cuadro de diálogo Páginas de propiedades de *proyecto*, haga clic con el botón derecho en el proyecto desde el Explorador de soluciones y después elija Propiedades en el menú contextual. Para buscar la propiedad Argumentos de la línea de comandos, haga clic en la ficha Depurar y vaya a Opciones de inicio.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Depurar COM y ActiveX](../debugger/com-and-activex-debugging.md)

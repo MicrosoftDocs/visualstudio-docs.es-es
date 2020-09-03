@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149263"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Vista Contenciones del recurso: datos de contención
@@ -42,9 +42,9 @@ La vista Contenciones del recurso muestra datos de contención de recursos que s
   
 ## <a name="navigating-the-resource-allocation-view"></a>Navegar por la vista Asignación de recursos  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|El nombre del recurso o la función.|  
+|**Name**|El nombre del recurso o la función.|  
 |**Tiempo de bloqueo exclusivo**|-   Para un recurso, el tiempo total durante el que se ha bloqueado el acceso al recurso y que produjo que un subproceso tuviese que esperar.<br />-   En una función, el tiempo durante el que se ha bloqueado el acceso de estas instancias de la función al recurso primario cuando la función estaba ejecutando código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|-   Para un recurso, el porcentaje de tiempo de bloqueo total de los datos de generación de perfiles que es tiempo de bloqueo de este recurso<br />-   Para una función, el porcentaje de tiempo de bloqueo total de los datos de generación de perfiles que es tiempo de bloqueo exclusivo de estas instancias de recurso.|  
 |**Contenciones exclusivas**|-   Para un recurso, el número total de veces durante las que se ha bloqueado el acceso al recurso y que produjo que un subproceso tuviese que esperar.<br />-   En una función, el número total de veces durante las que se ha bloqueado el acceso de estas instancias de la función al recurso primario cuando la función estaba ejecutando código en el cuerpo de la función. No se incluye los eventos de bloqueo de las funciones a las que llamó la función.|  
@@ -58,5 +58,5 @@ La vista Contenciones del recurso muestra datos de contención de recursos que s
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
 |**Identificador del proceso**|El Id. del proceso (PID) en el que se estaba ejecutando la función.|  
-|**Nombre de proceso**|Nombre del proceso.|  
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Nombre del proceso**|Nombre del proceso.|  
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|

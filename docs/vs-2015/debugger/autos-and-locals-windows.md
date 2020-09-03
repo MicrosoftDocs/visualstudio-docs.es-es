@@ -1,5 +1,5 @@
 ---
-title: Automático y variables locales Windows | Documentos de Microsoft
+title: Ventanas automático y variables locales | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,28 +22,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161738"
 ---
 # <a name="autos-and-locals-windows"></a>Ventanas de variables locales y automáticas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La ventana **Automático** (durante la depuración, **CTRL+ALT+V, A**o **Depurar / Ventanas / Automático**) y la ventana **Variables locales** (durante la depuración, **CTRL+ALT+V, L**o **Depurar / Ventanas / Variables locales**) resultan muy útiles a la hora de ver los valores de las variables durante la depuración. En la ventana **Variables locales** se muestran las variables definidas en el ámbito local, que generalmente es la función o el método que se encuentra en ejecución. En la ventana **Automático** se muestran las variables usadas en torno a la línea actual (es decir, el lugar donde se detiene el depurador). De hecho, las variables que se muestran varían según los distintos idiomas. ¿Ver las variables que aparecen en la ventana automático? a continuación.  
+La ventana **Automático** (durante la depuración, **CTRL+ALT+V, A**o **Depurar / Ventanas / Automático**) y la ventana **Variables locales** (durante la depuración, **CTRL+ALT+V, L**o **Depurar / Ventanas / Variables locales**) resultan muy útiles a la hora de ver los valores de las variables durante la depuración. En la ventana **Variables locales** se muestran las variables definidas en el ámbito local, que generalmente es la función o el método que se encuentra en ejecución. En la ventana **Automático** se muestran las variables usadas en torno a la línea actual (es decir, el lugar donde se detiene el depurador). De hecho, las variables que se muestran varían según los distintos idiomas. Consulte What variables appear in the Autos Window? a continuación.  
   
- Si necesita más información sobre la depuración básica, consulte [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
+ Si necesita más información sobre la depuración básica, vea [Introducción con el depurador](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinar objetos en las ventanas de variables locales y automáticas  
- Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. Este es un ejemplo de un <xref:System.IO.FileStream> objeto en el **variables locales** ventana:  
+ Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. En el ejemplo siguiente se muestra un objeto <xref:System.IO.FileStream> en la ventana **Variables locales**:  
   
- ![Variables locales&#45;FileStream](../debugger/media/locals-filestream.png "FileStream de variables locales")  
+ ![Variables locales&#45;FileStream](../debugger/media/locals-filestream.png "FileStream en Variables locales")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>¿Qué variables se muestran en la ventana Automático?  
  Se puede usar la ventana **Automático** en código C#, Visual Basic y C++. La ventana **Automático** no admite F# ni JavaScript.  
   
- En C# y Visual Basic, la ventana **Automático** muestra cualquier variable que se usa en la línea actual o anterior. Por ejemplo, si declara cuatro variables y las define de la siguiente manera:  
+ En C# y Visual Basic, la ventana **automático** muestra cualquier variable que se use en la línea actual o anterior. Por ejemplo, si declara cuatro variables y las define de la siguiente manera:  
   
 ```csharp  
 public static void Main()  
@@ -58,7 +58,7 @@ public static void Main()
   
  Si establece un punto de interrupción en la línea `c = 3`y ejecuta el depurador, la ventana **Automático** tendrá el siguiente aspecto cuando se detenga la ejecución del depurador:  
   
- ![Automático&#45;CSharp](../debugger/media/autos-csharp.png "automático-CSharp")  
+ ![Auto&#45;CSharp](../debugger/media/autos-csharp.png "CSharp en Automático")  
   
  Observe que el valor de `c` es 0, porque la línea `c = 3` aún no se ha ejecutado.  
   
@@ -78,13 +78,13 @@ void main() {
   
  Si establece un punto de interrupción en la línea `e = 5;` y ejecuta el depurador, la ventana **Automático** tendrá el siguiente aspecto cuando se detenga la ejecución del depurador:  
   
- ![Automático&#45;Cplus](../debugger/media/autos-cplus.png "Cplus de Autos")  
+ ![&#45;automático cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Observe que la variable e no está inicializada porque el código de la línea `e = 5;` aún no se ha ejecutado.  
   
  También se pueden ver los valores devueltos de funciones y métodos en determinadas circunstancias. Consulte [View return values of method calls](#bkmk_returnValue) a continuación.  
   
-## <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a> View return values of method calls  
  En el código .NET y C++ se pueden examinar los valores devueltos cuando una llamada al método se ejecuta paso a paso por procedimientos o paso a paso para salir. Esta funcionalidad resulta útil cuando el resultado de una llamada al método no se almacena en una variable local; por ejemplo, cuando se usa un método como parámetro o valor devuelto de otro método.  
   
  El siguiente código C# agrega los valores devueltos de dos funciones:  
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  Establezca un punto de interrupción en la línea int `x = sumVars(a, b) + subtractVars(c, d);` .  
   
- Inicie la depuración y, cuando la ejecución se interrumpa en el primer punto de interrupción, presione **F10 (Paso a paso por procedimientos)** . Debería mostrarse lo siguiente en la ventana **Automático** :  
+ Inicie la depuración y, cuando la ejecución se interrumpa en el primer punto de interrupción, presione **F10 (Paso a paso por procedimientos)**. Debería mostrarse lo siguiente en la ventana **Automático** :  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   
@@ -129,7 +129,7 @@ private static int subtractVars(int i, int j)
   
  Puede escribir una expresión para un valor; por ejemplo, `a + b`. El depurador acepta la mayoría de las expresiones de lenguaje válidas.  
   
- En el código C++ nativo, se debe calificar el contexto de un nombre de variable. Para obtener más información, vea [Context Operator (C++)](../debugger/context-operator-cpp.md).  
+ En el código C++ nativo, se debe calificar el contexto de un nombre de variable. Para obtener más información, vea [operador de contexto (C++)](../debugger/context-operator-cpp.md).  
   
  Sin embargo, se debe tener cuidado al cambiar los valores. Estas son algunas causas posibles:  
   
@@ -146,5 +146,5 @@ private static int subtractVars(int i, int j)
   
  También puede cambiar el contexto de llamadas, subprocesos o procesos a funciones diferentes si hace doble clic en el elemento de las ventanas **Pila de llamadas** , **Subprocesos** o **Procesos** , respectivamente.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Ventanas del depurador](../debugger/debugger-windows.md)

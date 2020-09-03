@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes ? Microsoft Docs
+title: 'IDebugCustomAttribute:: GetAttributeBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732802"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Obtiene la información de atributo como un blob de bytes.
+Obtiene la información del atributo como un BLOB de bytes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>Parámetros
 `ppBlob`\
-[adentro, fuera] Matriz que se rellena con los bytes de atributo.
+[in, out] Matriz que se rellena con los bytes de atributo.
 
 `pdwLen`\
-[adentro, fuera] Especifica el número máximo de bytes `ppBlob` que se devolverán en la matriz y devuelve el número de bytes realmente escritos en la matriz.
+[in, out] Especifica el número máximo de bytes que se van a devolver en la `ppBlob` matriz y devuelve el número de bytes escritos realmente en la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Establezca `ppBlob` el parámetro en un valor nulo para devolver el número de bytes de atributos disponibles. A continuación, asigne una matriz `ppBlob` y pase esa matriz para el parámetro.
+ Establezca el `ppBlob` parámetro en un valor null para devolver el número de atributos bytes disponibles. A continuación, asigne una matriz y pase esa matriz en para el `ppBlob` parámetro.
 
  Los bytes de atributo representan los datos sin procesar del atributo personalizado.
 

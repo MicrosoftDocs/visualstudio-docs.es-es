@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Establecer la sesión actual | Microsoft Docs
+title: 'Cómo: Establecer la sesión actual | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205712"
 ---
-# <a name="how-to-set-the-current-session"></a>Procedimiento Establecimiento de la sesión actual
+# <a name="how-to-set-the-current-session"></a>Cómo: Establecer la sesión actual
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede abrir varias sesiones de rendimiento en el **Explorador de rendimiento** y después puede seleccionar una de las sesiones de rendimiento visibles para establecerla como la sesión actual.  
@@ -41,8 +41,8 @@ Puede abrir varias sesiones de rendimiento en el **Explorador de rendimiento** y
   
      El nombre de sesión aparece en negrita.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Ventana Explorador de rendimiento](../profiling/performance-explorer-window.md)   
- [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)   
- [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+ [Explorador de rendimiento ventana](../profiling/performance-explorer-window.md)   
+ [Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)   
+ [Introducción a la sesión de rendimiento](../profiling/performance-session-overview.md)

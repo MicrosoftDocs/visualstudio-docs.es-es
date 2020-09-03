@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154758"
 ---
 # <a name="launch"></a>Launch
@@ -36,14 +36,14 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Opciones válidas  
  Las opciones siguientes de VSPerfCmd se pueden combinar con la opción **Launch** en una sola línea de comandos.  
   
- **Start:** `Method`  
+ **Inicio:**`Method`  
  Inicializa la sesión del generador de perfiles de línea de comandos y establece el método de generación de perfiles especificado.  
   
- **GlobalOn** y **GlobalOff**  
+ **GlobalOn** y **globaloff**  
  Reanuda la generación de perfiles de (**GlobalOn**) o detiene la de (**GlobalOff**), pero no finaliza la sesión de generación de perfiles.  
   
- **ProcessOn:** `PID` y **ProcessOff**:`PID`  
- Reanuda la generación de perfiles de (**ProcessOn**) o detiene la de (**ProcessOff**) para el proceso especificado.  
+ **Proceso:** `PID` y **ProcessOff**:`PID`  
+ Reanuda (**ProcessOn**) o detiene (**ProcessOff**) la generación de perfiles para el proceso especificado.  
   
  **TargetCLR**  
  Especifica la versión de Common Language Runtime (CLR) de .NET Framework para generar perfiles cuando se carga más de una versión en una sesión de generación de perfiles. De forma predeterminada, se genera el perfil de la primera versión cargada.  
@@ -54,7 +54,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Consola**  
  Inicia la aplicación de línea de comandos especificada en una nueva ventana.  
   
- **Args:** `ArgList`  
+ **Argumentos:**`ArgList`  
  Especifica la lista de argumentos para pasar a la aplicación.  
   
  **LineOff**  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Opciones de muestreo  
  Se puede especificar una de las siguientes opciones de intervalo de muestreo en la línea de comandos de **Launch**. El intervalo de muestreo predeterminado es 10 000 000 ciclos de reloj de procesador.  
   
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**Sys**[**:** `Events` ]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ]**GC**[:**asignación**&#124;**vigencia**]  
  Especifica el número y tipo del intervalo de muestreo.  
   
 - **Timer**: muestrea cada `Cycles` ciclos de reloj de procesador no detenidos. Si no se especifica `Cycles`, se usan 10 000 000 ciclos.  
@@ -84,8 +84,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)

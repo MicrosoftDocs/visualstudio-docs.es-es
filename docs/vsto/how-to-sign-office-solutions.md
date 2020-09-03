@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545761"
 ---
 # <a name="how-to-sign-office-solutions"></a>Cómo: firmar soluciones de Office
@@ -37,7 +37,7 @@ ms.locfileid: "85545761"
 
 1. En el menú **proyecto** , haga clic en**propiedades**de _solutionname_.
 
-2. Haga clic en la pestaña **Firma**.
+2. Haga clic en la pestaña **Firma** .
 
 3. Seleccione **firmar los manifiestos de ClickOnce**.
 

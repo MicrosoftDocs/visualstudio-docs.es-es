@@ -9,10 +9,10 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce4c6ceec9489abcd3573c126aefe98a268187c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660442"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU
@@ -28,15 +28,15 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
 
      Seleccione la casilla para asignar nombre automáticamente a los elementos interactivos cuando se creen.
 
-     ![Opciones misceláneas de XAML](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")
+     ![Opciones de Varios para XAML](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")
 
 2. Cree un nuevo proyecto para una aplicación de la Tienda Windows basada en XAML en blanco mediante una plantilla de Visual C# o Visual Basic.
 
-     ![Crear una aplicación &#40;vacía de la tienda Windows XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
+     ![Crear una aplicación vacía de la tienda Windows &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
 
 3. En el Explorador de soluciones, abra el archivo MainPage.xaml. Desde el Cuadro de herramientas, arrastre un control de botón y un control de cuadro de texto a la superficie de diseño.
 
-     ![Diseñar la aplicación de la tienda Windows](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")
+     ![Diseñar la aplicación de la Tienda Windows](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")
 
 4. Haga doble clic en el control de botón y agregue el código siguiente:
 
@@ -66,15 +66,15 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
 
 1. Cree un nuevo proyecto de prueba de IU codificada para la aplicación de la Tienda Windows.
 
-    ![Nuevo proyecto &#40;prueba de IU codificadas aplicaciones de la tienda Windows&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
+    ![Nuevo proyecto prueba de IU codificada &#40;aplicaciones de la tienda Windows&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
 
 2. Elija editar la asignación de IU mediante la herramienta de selección precisa.
 
-    ![Elija Editar asignación de IU o agregar aserciones.](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")
+    ![Elegir Editar asignación de IU o agregar aserciones](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")
 
 3. Use la herramienta de selección precisa en el Generador de pruebas de IU codificadas para seleccionar el icono de la aplicación, haga clic con el botón secundario en **AutomationId** y elija **Copiar valor en el Portapapeles**. El valor del Portapapeles se usará después para escribir la acción para iniciar la aplicación para prueba.
 
-    ![Copiar AutomationId en el portapapeles](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")
+    ![Copiar AutomationId en el Portapapeles](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")
 
 4. En la aplicación de la Tienda Windows en ejecución, use la herramienta de selección precisa para elegir el control de botón y el control de cuadro de texto. Tras agregar cada control, elija el botón **Agregar control a asignación de controles de IU** en la barra de herramientas del Generador de pruebas de IU codificadas.
 
@@ -86,7 +86,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
 
 6. Elija el botón para establecer un valor en el cuadro de texto.
 
-    ![Haga clic en el control botón para establecer el valor del cuadro de texto](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
+    ![Hacer clic en el control de botón para establecer el valor del cuadro de texto](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
 
 7. Utilice la herramienta de selección precisa para seleccionar el control de cuadro de texto y después seleccione la propiedad **Texto** .
 
@@ -94,19 +94,19 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
 
 8. Agregue una aserción. Se utilizará en la prueba para comprobar que el valor sea correcto.
 
-    ![Elegir cuadro con cruz&#45;y agregar aserción](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
+    ![Elegir cuadro con el pelo&#45;y agregar aserción](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
 
 9. Agregue y genere código para la aserción.
 
-     ![Generar código para la aserción de cuadro de texto](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
+     ![Generar código para la aserción del cuadro de texto](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
 
-10. **Visual C#**
+10. **Visual C #**
 
      En el Explorador de soluciones, abra el archivo UIMap.Designer.cs para ver el código agregado para el método de aserción y los controles.
 
      **Visual Basic**
 
-     En el Explorador de soluciones, abra el archivo CodedUITest1.vb y, en el código del método de prueba CodedUITestMethod1(), haga clic con el botón secundario en la llamada al método de aserción que se agregó automáticamente, `Me.UIMap.AssertMethod1()` , y elija **Ir a definición**. Esto abrirá el archivo de UIMap.Designer.vb en el editor de código de modo que pueda ver el código agregado para el método de aserción y los controles.
+     En el Explorador de soluciones, abra el archivo CodedUITest1.vb y, en el código del método de prueba CodedUITestMethod1(), haga clic con el botón derecho en la llamada al método de aserción que se agregó automáticamente, `Me.UIMap.AssertMethod1()`, y elija **Ir a definición**. Esto abrirá el archivo de UIMap.Designer.vb en el editor de código de modo que pueda ver el código agregado para el método de aserción y los controles.
 
     > [!WARNING]
     > No modifique directamente el archivo UIMap.designer.cs o el archivo UIMap.Designer.vb. Si lo hace, se sobrescribirán los cambios en el archivo cada vez que se genere la prueba.
@@ -282,7 +282,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
 
 12. Compile la prueba y luego ejecútela mediante el explorador de pruebas.
 
-     ![Ejecutar la prueba de IU codificada desde el explorador de pruebas](../test/media/cuit-windowsstoreapp-runtest.png "CUIT_WindowsStoreApp_RunTest")
+     ![Ejecutar la prueba de IU codificada desde el Explorador de pruebas](../test/media/cuit-windowsstoreapp-runtest.png "CUIT_WindowsStoreApp_RunTest")
 
      La aplicación de la Tienda Windows se inicia, la acción para pulsar el botón se completa y la propiedad Text del cuadro de texto se rellena y se valida mediante el método de aserción.
 
@@ -290,7 +290,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
 
      Una vez completada la prueba, el explorador de pruebas confirma que se superó la prueba.
 
-     ![Pruebas superadas en el explorador de pruebas](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
+     ![La prueba superada se muestra en el Explorador de pruebas](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
 
 ## <a name="q--a"></a>Preguntas y respuestas
 
@@ -319,7 +319,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
 
 - **P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?**
 
-   **R:** Cualquier cambio que se efectúe en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.
+   **R**: cualquier cambio que se realice en el código del archivo UIMapDesigner.CS se sobrescribirá cada vez que se genere código mediante UIMap-generador de pruebas de IU codificadas. Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md) [establecer una propiedad de automatización única para los controles de la tienda Windows para pruebas](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

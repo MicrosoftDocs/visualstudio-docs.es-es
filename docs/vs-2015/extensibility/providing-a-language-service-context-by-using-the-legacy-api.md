@@ -1,5 +1,5 @@
 ---
-title: Proporcionar un contexto de servicio de lenguaje a través de la API heredada | Microsoft Docs
+title: Proporcionar un contexto de servicio de lenguaje mediante la API heredada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,43 +11,43 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193868"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Proporcionar un contexto de servicio de lenguaje mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Hay dos opciones para un servicio de lenguaje proporcionar el contexto de usuario mediante el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico: proporcionar un contexto de marcador de texto o proporcionan todo el contexto de usuario. A continuación se describen las diferencias entre cada uno.  
+Hay dos opciones para que un servicio de lenguaje proporcione el contexto de usuario mediante el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor básico: proporcionar un contexto de marcador de texto o proporcionar todo el contexto de usuario. Aquí se describen las diferencias entre cada una de ellas.  
   
- Para obtener más información sobre lo que proporciona contexto a un servicio de lenguaje que está conectado a su propio editor, vea [Cómo: Proporcionar contexto para los editores](../extensibility/how-to-provide-context-for-editors.md).  
+ Para obtener más información sobre cómo proporcionar contexto a un servicio de lenguaje que está conectado a su propio editor, consulte [Cómo: proporcionar contexto para editores](../extensibility/how-to-provide-context-for-editors.md).  
   
-## <a name="provide-text-marker-context-to-the-editor"></a>Proporcionar un contexto de marcador de texto en el Editor  
- Para proporcionar contexto para los errores del compilador indicados por los marcadores de texto en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo, implemente el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfaz. En este escenario, el servicio de lenguaje proporciona contexto solo cuando el cursor está en un marcador de texto. Esto permite que el editor proporcionar la palabra clave en el cursor a la **Ayuda dinámica** ventana sin atributos.  
+## <a name="provide-text-marker-context-to-the-editor"></a>Proporcionar contexto de marcador de texto al editor  
+ Para proporcionar contexto para los errores del compilador que indican los marcadores de texto en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal, implemente la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfaz. En este escenario, el servicio de lenguaje proporciona contexto solo cuando el cursor está en un marcador de texto. Esto permite que el editor proporcione la palabra clave en el cursor a la ventana de **Ayuda dinámica** sin atributos.  
   
-## <a name="provide-all-user-context-to-the-editor"></a>Proporcione todo el contexto de usuario en el Editor  
- Si está creando un servicio de lenguaje y está usando el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] core editor, a continuación, puede implementar el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interfaz para proporcionar contexto para el servicio de lenguaje.  
+## <a name="provide-all-user-context-to-the-editor"></a>Proporcionar todo el contexto de usuario al editor  
+ Si va a crear un servicio de lenguaje y usa el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor básico, puede implementar la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interfaz para proporcionar el contexto para su servicio de lenguaje.  
   
- Para la implementación de `IVsLanguageContextProvider`, un contenedor de contexto (colección) se adjunta al editor, que es responsable de actualizar el contenedor de contexto. Cuando el **Ayuda dinámica** ventana llamadas la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A> interfaz en este contenedor de contextos en tiempo de inactividad, el contenedor de contexto consulta el editor para una actualización. El editor, a continuación, notifica al servicio de lenguaje que debe actualizar el editor y pasa un puntero al contenedor de contexto. Esto se realiza mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A> método desde el editor para el servicio de lenguaje. Con el puntero para el contenedor de contexto, el servicio de lenguaje ahora puede agregar y quitar atributos y palabras clave. Para obtener más información, consulta <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>.  
+ Para la implementación de `IVsLanguageContextProvider` , se adjunta un contenedor de contexto (colección) al editor, que es responsable de actualizar el contenedor de contextos. Cuando la ventana **Ayuda dinámica** llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A> interfaz de este contenedor de contextos en tiempo de inactividad, el contenedor de contextos consulta el editor para obtener una actualización. A continuación, el editor notifica al servicio de lenguaje que debe actualizar el editor y pasa un puntero al contenedor de contextos. Esto se hace llamando al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A> método desde el editor al servicio de lenguaje. Con el puntero al contenedor de contexto, el servicio de lenguaje ahora puede Agregar y quitar atributos y palabras clave. Para obtener más información, vea <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>.  
   
- Hay dos maneras diferentes de implementar `IVsLanguageContextProvider`:  
+ Hay dos maneras diferentes de implementar `IVsLanguageContextProvider` :  
   
-- Proporcionan una palabra clave para el contenedor de contexto  
+- Proporcionar una palabra clave al contenedor de contextos  
   
-   Cuando el editor se llama para actualizar el contenedor de contexto, pase los atributos y palabras clave adecuadas y, a continuación, devolver `S_OK`. Este valor devuelto indica el editor para conservar el contexto de la palabra clave y el atributo, en lugar de proporcionar la palabra clave en la posición del cursor para el contenedor de contexto.  
+   Cuando se llama al editor para actualizar el contenedor de contextos, pase las palabras clave y atributos adecuados y, a continuación, devuelva `S_OK` . Este valor devuelto indica al editor que conserve la palabra clave y el contexto del atributo en lugar de proporcionar la palabra clave en el cursor al contenedor de contextos.  
   
-- Obtener la palabra clave de la palabra clave en la posición del cursor  
+- Obtiene la palabra clave de la palabra clave en el cursor.  
   
-   Cuando el editor se llama para actualizar el contenedor de contexto, pase los atributos adecuados y, a continuación, devolver `E_FAIL`. Este valor devuelto indica el editor para conservar los atributos en el contenedor de contexto, pero actualizar el contenedor de contexto con la palabra clave en la posición del cursor.  
+   Cuando se llama al editor para actualizar el contenedor de contextos, pase los atributos adecuados y, a continuación, devuelva `E_FAIL` . Este valor devuelto indica al editor que conserve los atributos en el contenedor de contextos, pero actualiza el contenedor de contextos con la palabra clave en el cursor.  
   
-  El diagrama siguiente muestra cómo se proporciona el contexto para un servicio de lenguaje que implementa `IVsLanguageContextProvider`.  
+  En el diagrama siguiente se muestra cómo se proporciona el contexto para un servicio de lenguaje que implementa `IVsLanguageContextProvider` .  
   
   ![Gráfico de LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
   Contexto para un servicio de lenguaje  
   
-  Como puede ver en el diagrama, el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de texto básico tiene un contenedor de contexto asociado a él. Este contenedor de contextos apunta a tres contenedores de subcontextos independientes: servicio de lenguaje, el editor predeterminado y marcador de texto. Los contenedores de subcontexto language service y el texto marcador contengan atributos y palabras clave para el servicio de lenguaje, si la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> se implementa la interfaz y marcadores de texto si el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> implementan la interfaz. Si no implementa alguna de estas interfaces, el editor proporciona contexto para la palabra clave en la posición del cursor en el contenedor del subcontexto de editor predeterminado.  
+  Como puede ver en el diagrama, el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor de texto principal tiene asociado un contenedor de contexto. Este contenedor de contexto apunta a tres bolsas de subcontexto independientes: servicio de lenguaje, editor predeterminado y marcador de texto. Los contenedores de subcontextos del servicio de lenguaje y del marcador de texto contienen atributos y palabras clave para el servicio de lenguaje si <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> se implementa la interfaz y marcadores de texto si <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> se implementa la interfaz. Si no implementa ninguna de estas interfaces, el editor proporciona contexto para la palabra clave en el cursor en el contenedor de subcontexto del editor predeterminado.  
   
-## <a name="context-guidelines-for-editors-and-designers"></a>Directrices de contexto para los editores y diseñadores  
- Diseñadores y editores deben proporcionar una palabra clave general en la ventana de diseñador o editor. Esto se hace para que un tema de ayuda genérico, pero es adecuado, se mostrará para el diseñador o editor cuando el usuario presiona F1. Un editor debe, además, proporcione la palabra clave actual en la posición del cursor o proporcionar un término clave según la selección actual. Esto se hace para asegurarse de que un tema de ayuda para el texto o un elemento de interfaz de usuario que señala o seleccionada aparecerá cuando el usuario presione F1. Un diseñador proporciona contexto para un elemento seleccionado en un diseñador, como un botón en un formulario. Los editores y diseñadores también deben conectarse a un servicio de lenguaje como se describe en [Fundamentos de servicio de lenguaje heredado](../extensibility/internals/legacy-language-service-essentials.md).
+## <a name="context-guidelines-for-editors-and-designers"></a>Directrices de contexto para editores y diseñadores  
+ Los diseñadores y editores deben proporcionar una palabra clave general para la ventana del editor o del diseñador. Esto se hace para que se muestre un tema de ayuda genérico, pero adecuado, para el diseñador o el editor cuando un usuario presiona F1. Además, un editor debe proporcionar la palabra clave Current en el cursor o proporcionar un término clave basado en la selección actual. Esto se hace para asegurarse de que se muestra un tema de ayuda para el texto o el elemento de la interfaz de usuario señalados o seleccionados cuando el usuario presiona F1. Un diseñador proporciona contexto para un elemento seleccionado en un diseñador, como un botón en un formulario. Los editores y diseñadores también deben conectarse a un servicio de lenguaje, tal como se describe en información esencial sobre el [servicio de lenguaje heredado](../extensibility/internals/legacy-language-service-essentials.md).
