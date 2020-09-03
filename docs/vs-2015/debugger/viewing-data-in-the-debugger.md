@@ -1,5 +1,5 @@
 ---
-title: Visualización de datos en el depurador | Documentos de Microsoft
+title: Ver datos en el depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178921"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Ver datos en el depurador
@@ -39,9 +39,9 @@ El depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona una gra
  Esta información sobre datos resulta ser una de las herramientas más prácticas para ver información sobre las variables y objetos en el programa durante la depuración. Cuando el depurador está en modo de interrupción, se puede ver el valor de una variable dentro del ámbito actual colocando el puntero del mouse sobre la variable de una ventana de código fuente. Para obtener más información, consulte [Ver valores de datos en sugerencias de datos en el editor de código](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).  
   
 ## <a name="visualizers"></a>Visualizadores  
- Los visualizadores son un nuevo componente del depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que le permite ver de forma útil el contenido de un objeto o variable. Por ejemplo, puede utilizar el visualizador HTML para ver una cadena HTML tal como se interpretaría y se mostraría en un explorador. Puede tener acceso a los visualizadores desde información sobre datos, la ventana **Inspección** , la ventana **Automático** , la ventana **Variables locales** o el cuadro de diálogo **Inspección rápida** . Para obtener más información, vea [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados).  
+ Los visualizadores son un nuevo componente del depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que le permite ver de forma útil el contenido de un objeto o variable. Por ejemplo, puede utilizar el visualizador HTML para ver una cadena HTML tal como se interpretaría y se mostraría en un explorador. Puede tener acceso a los visualizadores desde información sobre datos, la ventana **Inspección** , la ventana **Automático** , la ventana **Variables locales** o el cuadro de diálogo **Inspección rápida** . Para obtener más información, vea [crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)   
- [Ventana Comandos](../ide/reference/command-window.md)   
+ [Ventana comandos](../ide/reference/command-window.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)

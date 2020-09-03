@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort ? Microsoft Docs
+title: 'IDebugCoreServer2:: GetPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e8dfafffb485150687b1877295a00a8ec6b71cfc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733109"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
@@ -43,10 +43,10 @@ int GetPort( 
 
 ## <a name="parameters"></a>Parámetros
 `guidPort`\
-[en] GUID del puerto que se va a recuperar.
+de GUID del puerto que se va a recuperar.
 
 `ppPort`\
-[fuera] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto deseado.
+enuncia Devuelve un objeto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa el puerto deseado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_PORTSUPPLIER_NO_PORT` si no hay ningún puerto con el identificador especificado.

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4306e030c2f48d87b12ba6338a847dc9e9aa892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179034"
 ---
 # <a name="execution-time-threads-view"></a>Tiempo de ejecución (Vista de subprocesos)
@@ -31,6 +31,6 @@ Estos segmentos de la escala de tiempo de la vista de subprocesos representan el
   
  Para ver un perfil de muestreo tradicional para todos los segmentos de ejecución en la vista actual, haga clic en **Ejecución** en el perfil de escala de tiempo visible.  
   
-## <a name="see-also"></a>Otras referencias  
- [Informe del perfil de ejecución](../profiling/execution-profile-report.md)   
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte también  
+ [Informe de Perfil de ejecución](../profiling/execution-profile-report.md)   
+ [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

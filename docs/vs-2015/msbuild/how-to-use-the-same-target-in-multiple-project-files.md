@@ -1,5 +1,5 @@
 ---
-title: Uso del mismo destino en varios archivos de proyecto | Microsoft Docs
+title: Procedimiento Usar el mismo destino en varios archivos de proyecto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178326"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Cómo: Utilizar el mismo destino en varios archivos de proyecto
@@ -25,7 +25,7 @@ ms.locfileid: "68178326"
 Si ha creado varios archivos de proyecto con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], es posible que haya detectado la necesidad de utilizar las mismas tareas y destinos en los distintos archivos de proyecto. En lugar de incluir la descripción completa de estas tareas o destinos en cada archivo de proyecto, puede guardar un destino en un archivo de proyecto independiente y, a continuación, importarlo en un proyecto que necesite utilizar dicho destino.  
   
 ## <a name="using-the-import-element"></a>Uso del elemento Import  
- El elemento `Import` se utiliza para insertar un archivo de proyecto en otro archivo de proyecto. El archivo de proyecto que se importa debe ser un archivo de proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] válido y contener código XML correcto. El atributo `Project` especifica la ruta de acceso al archivo de proyecto importado. Para obtener más información sobre el elemento `Import`, vea [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).  
+ El elemento `Import` se utiliza para insertar un archivo de proyecto en otro archivo de proyecto. El archivo de proyecto que se importa debe ser un archivo de proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] válido y contener código XML correcto. El atributo `Project` especifica la ruta de acceso al archivo de proyecto importado. Para obtener más información sobre el `Import` elemento, vea [elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).  
   
 #### <a name="to-import-a-project"></a>Para importar un proyecto  
   
@@ -114,6 +114,6 @@ Si ha creado varios archivos de proyecto con [!INCLUDE[vstecmsbuild](../includes
 </Project>  
 ```  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Destinos](../msbuild/msbuild-targets.md)

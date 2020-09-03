@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551685"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Ejemplos y tutoriales de desarrollo de Office
@@ -38,7 +38,7 @@ ms.locfileid: "69551685"
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Tema|DESCRIPCIÓN|
+|Tema|Descripción|
 |-----------|-----------------|
 |[Ejemplos de desarrollo de Office](../vsto/office-development-samples.md)|Proporciona vínculos a aplicaciones de ejemplo que ilustran el uso del desarrollo de Office y SharePoint en Visual Studio.|
 |[Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)|Muestra guías paso a paso que proporcionan una introducción a las herramientas de desarrollo de Office en Visual Studio y ayudan a ilustrar cómo puede integrar Word en Office Business Applications.|
@@ -49,9 +49,9 @@ ms.locfileid: "69551685"
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-|Tema|DESCRIPCIÓN|
+|Tema|Descripción|
 |-----------|-----------------|
-|[Introducción &#40;al desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Proporciona vínculos a información sobre el programa de instalación, las plantillas de proyecto, los ensamblados de interoperabilidad primarios de Office y las novedades en el desarrollo de Office.|
+|[Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Proporciona vínculos a información sobre el programa de instalación, las plantillas de proyecto, los ensamblados de interoperabilidad primarios de Office y las novedades en el desarrollo de Office.|
 |[Arquitectura de las soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Explica cómo funcionan las soluciones de Office de código administrado desde la perspectiva del desarrollador y el usuario final, e incluye información sobre cómo funciona el código administrado con aplicaciones y documentos de Office.|
 |[Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)|Enumera las preguntas más frecuentes sobre la programación con el desarrollo de Office en Visual Studio y proporciona vínculos a temas que pueden ayudar a resolver problemas comunes.|
 |[Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)|Proporciona vínculos a información sobre cómo crear soluciones de Microsoft Office y sobre el rol de los ensamblados en la solución.|

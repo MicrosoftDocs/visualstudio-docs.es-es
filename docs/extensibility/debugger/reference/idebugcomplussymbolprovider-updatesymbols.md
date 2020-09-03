@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::UpdateSymbols ? Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: UpdateSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 20a4fa6f6ec52ee556bd62fe303d0e21e4c56d6a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733495"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
@@ -44,16 +44,16 @@ int UpdateSymbols (
 
 ## <a name="parameters"></a>Parámetros
 `ulAppDomainID`\
-[en] Identificador del dominio de aplicación.
+de Identificador del dominio de aplicación.
 
 `guidModule`\
-[en] Identificador único del módulo.
+de Identificador único del módulo.
 
 `pUpdateStream`\
-[en] Secuencia de datos que contiene los símbolos de depuración actualizados.
+de Flujo de datos que contiene los símbolos de depuración actualizados.
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CDebugSymbolProvider** que expone la interfaz [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::UpdateSymbols(

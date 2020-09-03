@@ -27,14 +27,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551849"
 ---
 # <a name="build-office-solutions"></a>Compilar soluciones de Office
-  En general, compilar y depurar proyectos de Office se hace de la misma manera que al compilar y depurar otros tipos de proyectos en Visual Studio, como Windows Forms. Los temas de esta sección explican las diferencias que existen entre ellos. Para obtener información general sobre cómo compilar aplicaciones, consulte compilar y compilar [en Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+  En general, compilar y depurar proyectos de Office se hace de la misma manera que al compilar y depurar otros tipos de proyectos en Visual Studio, como Windows Forms. Los temas de esta sección explican las diferencias que existen entre ellos. Para obtener información general sobre cómo compilar aplicaciones, consulte [compilar y compilar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -79,7 +79,7 @@ ms.locfileid: "69551849"
   Outlook necesita esta información para cargar las áreas de formulario.
 
 ## <a name="referenced-assemblies"></a>Ensamblados a los que se hace referencia
- Puede hacer referencia a los ensamblados (incluidos los proyectos de biblioteca de clases), desde el proyecto Compilar soluciones de Office. Todos los ensamblados a los que se hace referencia incluyen una propiedad llamada **Copia local**. La propiedad**Copia local** indica si el ensamblado se debe copiar en el directorio de resultados. De manera predeterminada, tiene el valor **true**. Todos los ensamblados a los que se haga referencia y que tengan la propiedad **Copia local** establecida en **true** se copiarán en el directorio de resultados.
+ Puede hacer referencia a los ensamblados (incluidos los proyectos de biblioteca de clases), desde el proyecto Compilar soluciones de Office. Todos los ensamblados a los que se hace referencia incluyen una propiedad llamada **Copia local**. La propiedad**Copia local** indica si el ensamblado se debe copiar en el directorio de resultados. De forma predeterminada, se establece en **true**. Todos los ensamblados a los que se haga referencia y que tengan la propiedad **Copia local** establecida en **true** se copiarán en el directorio de resultados.
 
 ## <a name="security-during-the-build-process"></a>Seguridad durante el proceso de compilación
  Visual Studio establece automáticamente la configuración de seguridad del equipo de desarrollo para hacer que la solución sea fiable durante el proceso de compilación. Esto permite ejecutar la solución mientras se depura.
@@ -96,7 +96,7 @@ ms.locfileid: "69551849"
 ## <a name="change-the-platform-target"></a>Cambiar el destino de la plataforma
  De forma predeterminada, el destino de la plataforma para los proyectos de Office es **Cualquier CPU**. No debería cambiar esta configuración si no es necesario. Las soluciones de Office que se compilan con la configuración de destino de la plataforma **Cualquier CPU** , se ejecutan en versiones de 32 bits y de 64 bits de Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
- Debe establecer el destino de la plataforma en x64 solamente si está creando una solución que se ejecutará en las versiones de 64 bits de Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o de [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], y si la solución llama a las API nativas de 64 bits. Para obtener más información sobre cómo cambiar la configuración de destino [de la plataforma, consulte Cómo: Configurar proyectos para plataformas](../ide/how-to-configure-projects-to-target-platforms.md)de destino.
+ Debe establecer el destino de la plataforma en x64 solamente si está creando una solución que se ejecutará en las versiones de 64 bits de Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o de [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], y si la solución llama a las API nativas de 64 bits. Para obtener más información sobre cómo cambiar la configuración de destino de la plataforma, consulte [Cómo: configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).
 
  Si establece el destino de la plataforma en x64, la solución no se ejecutará en las versiones de 32 bits de Windows o de Office. El destino de plataforma x64 requiere que la solución se ejecute en un proceso de 64 bits.
 
@@ -105,9 +105,9 @@ ms.locfileid: "69551849"
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Título|DESCRIPCIÓN|
+|Title|Descripción|
 |-----------|-----------------|
 |[Depurar proyectos de Office](../vsto/debugging-office-projects.md)|Indica los problemas implicados en la depuración de proyectos de Office.|
-|[Tutorial: Crear la primera personalización de nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Muestra cómo crear una personalización básica de nivel de documento para Excel.|
-|[Cómo: Volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Describe cómo volver a habilitar un complemento de VSTO que se ha deshabilitado de forma rígida o parcial.|
+|[Tutorial: crear la primera personalización de nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Muestra cómo crear una personalización básica de nivel de documento para Excel.|
+|[Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Describe cómo volver a habilitar un complemento de VSTO que se ha deshabilitado de forma rígida o parcial.|
 |[Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)|Proporciona vínculos a información sobre la creación de soluciones de Office y sobre el rol de los ensamblados en la solución.|
