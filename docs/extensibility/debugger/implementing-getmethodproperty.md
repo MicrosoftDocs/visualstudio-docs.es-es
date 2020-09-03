@@ -1,5 +1,5 @@
 ---
-title: Implementación de GetMethodProperty ? Microsoft Docs
+title: Implementación de GetMethodProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 252d09eee9c69ca75cb46d28dde807f2c500737f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738516"
 ---
-# <a name="implement-getmethodproperty"></a>Implementar GetMethodProperty
+# <a name="implement-getmethodproperty"></a>Implementación de GetMethodProperty
 > [!IMPORTANT]
-> En Visual Studio 2015, esta forma de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, vea Evaluadores de [expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y Ejemplo de evaluador de [expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> En Visual Studio 2015, esta manera de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte [evaluadores](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) de expresiones CLR y [ejemplo de evaluador de expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Visual Studio llama a [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)del motor de depuración (DE), que a su vez llama a [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) para obtener información sobre el método actual en el marco de pila.
+Visual Studio llama a la (DE) [getdebugproperty (](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)del motor de depuración, que a su vez llama a [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) para obtener información sobre el método actual en el marco de pila.
 
 Esta implementación de `IDebugExpressionEvaluator::GetMethodProperty` realiza las siguientes tareas:
 
 1. Llama a [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md), pasando el objeto [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) . El proveedor de símbolos (SP) devuelve un [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) que representa el método que contiene la dirección especificada.
 
-2. Obtiene el [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) `IDebugContainerField`del archivo .
+2. Obtiene el [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) de `IDebugContainerField` .
 
-3. Crea una instancia `CFieldProperty` de una clase (llamada en este ejemplo) `IDebugMethodField` que implementa la interfaz [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) y contiene el objeto devuelto desde el SP.
+3. Crea una instancia de una clase (a `CFieldProperty` la que se llama en este ejemplo) que implementa la interfaz [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) y contiene el `IDebugMethodField` objeto devuelto desde el SP.
 
-4. Devuelve `IDebugProperty2` la interfaz del `CFieldProperty` objeto.
+4. Devuelve la `IDebugProperty2` interfaz del `CFieldProperty` objeto.
 
 ## <a name="managed-code"></a>Código administrado
-En este ejemplo `IDebugExpressionEvaluator::GetMethodProperty` se muestra una implementación de en código administrado.
+En este ejemplo se muestra una implementación de `IDebugExpressionEvaluator::GetMethodProperty` en código administrado.
 
 ```csharp
 namespace EEMC
@@ -67,7 +67,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Código no administrado
-En este ejemplo `IDebugExpressionEvaluator::GetMethodProperty` se muestra una implementación de código no administrado.
+En este ejemplo se muestra una implementación de `IDebugExpressionEvaluator::GetMethodProperty` en código no administrado.
 
 ```
 [CPP]
@@ -125,4 +125,4 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Ejemplo de implementación de locales](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Implementación de ejemplo de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)

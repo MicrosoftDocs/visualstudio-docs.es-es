@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a59f9f2cb2548d6d40670832e66d4df5c83680df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295914"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
@@ -69,8 +69,8 @@ De manera predeterminada, la instalación de Visual Studio permite recibir comen
   
 |Tema|Descripción|  
 |-----------|-----------------|  
-|[Cómo: Instalar una versión específica de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Describe cómo instalar configuraciones específicas de la versión actual de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Cómo: Instalar una versión específica de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Describe cómo instalar configuraciones específicas de la versión actual de  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
 |[Cómo: Crear y ejecutar una instalación desatendida de Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Describe cómo instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en modo desatendido.|  
 |[Cómo: Aplicar automáticamente las claves de producto durante la implementación de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Describe cómo aplicar claves de producto al implementar en varios equipos.|  
 |[Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md)|Proporciona información sobre cómo administrar instalaciones de ayuda local para entornos de red que tienen o no tienen acceso a Internet.|  
-|[Instalar Visual Studio](../install/install-visual-studio-2015.md)|Proporciona instrucciones y vínculos a temas en los que se describe cómo instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Instalación de Visual Studio](../install/install-visual-studio-2015.md)|Proporciona instrucciones y vínculos a temas en los que se describe cómo instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a9e82cf8387756cb4a4abe8b4c41d082485cdcdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656292"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Cómo: Usar el Diseñador de esquemas XML con literales XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedimiento Usar el Diseñador de esquemas XML con literales XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se explica cómo ver un esquema asociado a un literal XML en un proyecto Visual Basic.
@@ -25,7 +25,7 @@ En este tema se explica cómo ver un esquema asociado a un literal XML en un pro
 
 1. Inicie Visual Studio 2010.
 
-2. En el menú **archivo** , seleccione **nuevo**y seleccione **proyecto**. Aparecerá el cuadro de diálogo **Nuevo proyecto** . En **tipos de proyecto**, seleccione **otros idiomas** y, a continuación, seleccione **Visual Basic**. En el caso de **las plantillas**, seleccione aplicación de consola. A continuación, escriba `XMLLiterals` en el campo **nombre** y una ubicación del proyecto en el campo **Ubicación** . Haga clic en **Aceptar**.
+2. En el menú **Archivo**, seleccione **Nuevo** y, después, **Proyecto**. Aparecerá el cuadro de diálogo **Nuevo proyecto** . En **tipos de proyecto**, seleccione **otros idiomas** y, a continuación, seleccione **Visual Basic**. En el caso de **las plantillas**, seleccione aplicación de consola. A continuación, escriba `XMLLiterals` en el campo **nombre** y en la ubicación del proyecto en el campo **Ubicación** . Haga clic en **Aceptar**.
 
      Se crea el proyecto. El proyecto XMLLiterals contiene un archivo de código fuente de Visual Basic, Module1.vb.
 
@@ -35,7 +35,7 @@ En este tema se explica cómo ver un esquema asociado a un literal XML en un pro
 
 2. Guarde el archivo con el nombre PurchaseOrderSchema.xsd.
 
-3. En el Explorador de soluciones, haga clic con el botón derecho en el nombre del proyecto, seleccione **Agregar**y, a continuación, seleccione **elemento existente.** . Aparece el cuadro de diálogo **elemento agregar** . Busque el archivo PurchaseOrderSchema. xsd, selecciónelo y, a continuación, haga clic en **Agregar**.
+3. En el Explorador de soluciones, haga clic con el botón derecho en el nombre del proyecto, seleccione **Agregar**y, a continuación, seleccione **elemento existente..**.. Aparece el cuadro de diálogo **Agregar elemento existente**. Busque el archivo PurchaseOrderSchema.xsd, selecciónelo y, a continuación, haga clic en **Agregar**.
 
      El proyecto XMLLiterals ahora contiene dos archivos: Module1.vb y PurchaseOrderSchema.xsd.
 
@@ -70,6 +70,6 @@ En este tema se explica cómo ver un esquema asociado a un literal XML en un pro
     End Module
     ```
 
-2. Haga clic con el botón secundario en cualquier nodo XML de un literal XML o una importación de espacio de nombres XML y seleccione **Mostrar en el explorador de esquemas**.
+2. Haga clic con el botón derecho en cualquier nodo de XML de un literal XML o una importación de espacio de nombres de XML y seleccione **Mostrar en Explorador de esquemas**.
 
      El Explorador de esquema XML se muestra en paralelo con un archivo Visual Basic que tiene asociado el literal XML con el conjunto de esquemas XML.

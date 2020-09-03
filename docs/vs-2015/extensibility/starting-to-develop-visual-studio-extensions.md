@@ -12,10 +12,10 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d62a4c6cc45681fe6a66ae57df2e1da1d1cc12e0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850590"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comienzo del desarrollo de extensiones de Visual Studio
@@ -58,12 +58,12 @@ Si nunca ha escrito una extensión de Visual Studio, es probable que tenga algun
 
 - [Shell aislado de Visual Studio](../extensibility/visual-studio-isolated-shell.md)
 
-## <a name="BKMK_ProjectTemplate"></a>¿Qué plantillas de proyecto proporciona el VSSDK?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> ¿Qué plantillas de proyecto proporciona el VSSDK?
  Los dos tipos principales de extensiones son VSPackages y extensiones de MEF. En general, las extensiones VSPackage se utilizan para las extensiones que usan o extienden comandos, ventanas de herramientas y proyectos. Las extensiones de MEF se usan para extender o personalizar el editor de Visual Studio.
 
- En el C# caso de las extensiones de Visual y Visual Basic, el VSSDK proporciona una plantilla de proyecto de VSIX vacía que se puede usar junto con las nuevas plantillas de elemento que crean comandos de menú, ventanas de herramientas y extensiones de editor. Para obtener más información, vea [What's New in the Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). También puede usar esta plantilla para empaquetar plantillas de proyecto, fragmentos de código y otros artefactos para su distribución a otros usuarios.
+ En el caso de las extensiones de Visual C# y Visual Basic, VSSDK proporciona una plantilla de proyecto de VSIX vacía que se puede usar junto con las nuevas plantillas de elemento que crean comandos de menú, ventanas de herramientas y extensiones de editor. Para obtener más información, vea [What's New in the Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). También puede usar esta plantilla para empaquetar plantillas de proyecto, fragmentos de código y otros artefactos para su distribución a otros usuarios.
 
- En C++, el Asistente para VSPackage proporciona el código para agregar comandos de menú, ventanas de herramientas y editores personalizados.
+ En el caso de C++, el Asistente para VSPackage proporciona el código para agregar comandos de menú, ventanas de herramientas y editores personalizados.
 
  La plantilla de Shell aislado se usa para empaquetar una extensión en una versión de Visual Studio Shell que se puede personalizar y distribuir como su propia. En los temas siguientes se muestra cómo empezar a trabajar con cada tipo de extensión:
 

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5c4d5fc73660c97bcb69957a93d2ff08f64e31c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655461"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
@@ -34,7 +34,7 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
  Puede guardar los datos de su aplicación en la base de datos llamando al método `Update` de un TableAdapter. Al arrastrar las tablas desde la ventana **orígenes de datos** hasta un formulario, se agrega automáticamente el código necesario para guardar los datos. Cualquier tabla adicional que se agregue a un formulario requiere la adición manual de este código. Este tutorial muestra cómo agregar código para guardar las actualizaciones de varias tablas.
 
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la ayuda, en función de la configuración activa o la edición que esté usando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la ayuda, en función de la configuración activa o la edición que esté usando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  Las tareas ilustradas en este tutorial incluyen:
 
@@ -98,7 +98,7 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
      Se agrega **NorthwindDataSet** al proyecto y las tablas aparecen en la ventana **Orígenes de datos**.
 
 ## <a name="set-the-controls-to-be-created"></a>Establecer los controles que se van a crear
- En este tutorial, los datos de la tabla `Customers` están en un diseño de **detalles** en el que los datos se muestran en controles individuales. Los datos de la tabla `Orders` se muestran en un diseño de **cuadrícula** que se muestra en un control <xref:System.Windows.Forms.DataGridView>.
+ En este tutorial, los datos de la `Customers` tabla están en un diseño de **detalles** en el que los datos se muestran en controles individuales. Los datos de la `Orders` tabla se muestran en un diseño de **cuadrícula** que se muestra en un <xref:System.Windows.Forms.DataGridView> control.
 
 #### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Para establecer el tipo de acción de colocación de los elementos de la ventana Orígenes de datos
 
@@ -107,7 +107,7 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
 2. En el nodo **Customers** , seleccione **detalles** en la lista de controles para cambiar el control de la tabla **Customers** a controles individuales. Para obtener más información, vea [establecer el control que se creará al arrastrar desde la ventana orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Crear el formulario enlazado a datos
- Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
+ Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **orígenes de datos** hasta el formulario.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para crear controles enlazados en el formulario
 
@@ -123,21 +123,21 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
      En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. Un OrdersTableAdapter y <xref:System.Windows.Forms.BindingSource> aparecen en la bandeja de componentes.
 
 ## <a name="addcode-to-update-the-database"></a>Addcode actualizar la base de datos
- Puede actualizar la base de datos llamando a los métodos `Update` de los TableAdapters **Customers** y **Orders**. De forma predeterminada, se agrega un controlador de eventos para el botón **Guardar** del <xref:System.Windows.Forms.BindingNavigator> al código del formulario para enviar las actualizaciones a la base de datos. Este procedimiento modifica el código para enviar las actualizaciones en el orden correcto. Esto elimina la posibilidad de que se produzcan errores de integridad referencial. El código también implementa el control de errores colocando la llamada de actualización en un bloque try-catch. Puede modificar el código para satisfacer las necesidades de la aplicación.
+ Puede actualizar la base de datos llamando a los métodos `Update` de los TableAdapters **Customers** y **Orders**. De forma predeterminada, un controlador de eventos para el botón **Guardar** del <xref:System.Windows.Forms.BindingNavigator> se agrega al código del formulario para enviar las actualizaciones a la base de datos. Este procedimiento modifica el código para enviar las actualizaciones en el orden correcto. Esto elimina la posibilidad de que se produzcan errores de integridad referencial. El código también implementa el control de errores colocando la llamada de actualización en un bloque try-catch. Puede modificar el código para satisfacer las necesidades de la aplicación.
 
 > [!NOTE]
 > Para mayor claridad, este tutorial no utiliza una transacción. Sin embargo, si va a actualizar dos o más tablas relacionadas, incluya toda la lógica de actualización dentro de una transacción. Una transacción es un proceso que garantiza que todos los cambios relacionados con una base de datos se realicen correctamente antes de que se confirmen los cambios. Para obtener más información, consulte [transacciones y simultaneidad](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).
 
 #### <a name="to-add-update-logic-to-the-application"></a>Para agregar la lógica de actualización a la aplicación
 
-1. Seleccione el botón **Guardar** en el <xref:System.Windows.Forms.BindingNavigator>. de este modo se abre el editor de código para el controlador de eventos de `bindingNavigatorSaveItem_Click`.
+1. Seleccione el botón **Guardar** en el <xref:System.Windows.Forms.BindingNavigator> . Se abrirá el editor de código para el `bindingNavigatorSaveItem_Click` controlador de eventos.
 
 2. Reemplace el código del controlador de eventos para que llame a los métodos `Update` de los TableAdapters relacionados. El código siguiente crea en primer lugar tres tablas de datos temporales para la información actualizada de cada <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> y <xref:System.Data.DataRowState>). A continuación, las actualizaciones se ejecutan en el orden correcto. El código debe tener este aspecto:
 
      [!code-csharp[VbRaddataSaving#10](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs#10)]
      [!code-vb[VbRaddataSaving#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb#10)]
 
-## <a name="test-the-application"></a>Probar la aplicación
+## <a name="test-the-application"></a>Prueba de la aplicación
 
 #### <a name="to-test-the-application"></a>Para probar la aplicación
 
@@ -156,5 +156,5 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
 
 - Editar el origen de datos para agregar o quitar objetos de base de datos. Para obtener más información, vea [Cómo: editar un conjunto](https://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)de datos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

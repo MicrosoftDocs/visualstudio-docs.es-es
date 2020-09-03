@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringCharLength ? Microsoft Docs
+title: 'IDebugProperty3:: GetStringCharLength | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c1a2eb62ab748562acd8f0a894a3675f79981ccc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721129"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
@@ -43,16 +43,16 @@ int GetStringCharLength(
 
 |Parámetro|Descripción|
 |---------------|-----------------|
-|`pLen`|[fuera] Devuelve el número de caracteres de la cadena de la propiedad.|
+|`pLen`|enuncia Devuelve el número de caracteres de la cadena de la propiedad.|
 
 ## <a name="return-value"></a>Valor devuelto
-Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve código de error.
+Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
-Normalmente, este método se utiliza como preludio para asignar un búfer para una llamada a la [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) método.
+Normalmente, este método se usa como preparativo para asignar un búfer para una llamada al método [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) .
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se muestra cómo implementar este método para un **CProperty** objeto que expone el [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un objeto **CProperty** que expone la interfaz [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
 
 ```cpp
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)

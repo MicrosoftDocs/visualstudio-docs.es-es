@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094490"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 
 Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 
-\<Project> \<Import>
+\<Project>
+\<Import>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +53,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 
 ### <a name="child-elements"></a>Elementos secundarios
 
- None
+ Ninguno
 
 ### <a name="parent-elements"></a>Elementos primarios
 
@@ -61,7 +62,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 | [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contiene una colección de elementos `Import` agrupados en una condición opcional. |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
  Mediante el elemento `Import` , puede reutilizar código común a muchos archivos de proyecto. Esto facilita el mantenimiento del código, ya que las actualizaciones que realice en el código compartido se propagan a todos los proyectos que lo importen.
 

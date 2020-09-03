@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff7d0e7a26c9e8fa6abe984353d3368ca1f6a36a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74296100"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
@@ -35,13 +35,13 @@ Además de las características y utilidades de accesibilidad de Windows, las ca
 - Función Autocompletar para métodos y parámetros
 
 > [!IMPORTANT]
-> La información de esta sección solo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si ha obtenido este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se incluye con el paquete de software o puede visitar la [página de información de contacto de Soporte técnico de Microsoft](https://support.microsoft.com/contactus/) y hacer clic en el vínculo **Locate Microsoft Offices Worldwide** (Buscar oficinas de Microsoft en todo el mundo) (cerca de la parte inferior de la página). Esta página proporciona una lista de números de teléfono y direcciones de servicios de soporte técnico de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si los tipos de productos y servicios que se describen en esta sección están disponibles en su zona. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.
+> La información de esta sección solo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si ha obtenido este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se incluye con el paquete de software o puede visitar la [página de información de contacto de Soporte técnico de Microsoft](https://support.microsoft.com/contactus/) y hacer clic en el vínculo **Locate Microsoft Offices Worldwide** (Buscar oficinas de Microsoft en todo el mundo) (cerca de la parte inferior de la página). Esta página proporciona una lista de números de teléfono y direcciones de servicios de soporte técnico de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si los tipos de productos y servicios que se describen en esta sección están disponibles en su zona. La información acerca de la accesibilidad está disponible en otros idiomas, incluido el japonés y el francés.
 
  Para obtener más información, vea los temas siguientes:
 
 - [Cómo: Establecer opciones de accesibilidad de IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Cómo: Usar el teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Cómo: usar el teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
@@ -49,5 +49,5 @@ Además de las características y utilidades de accesibilidad de Windows, las ca
 
 - [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
-## <a name="see-also"></a>Otras referencias
- [Servicios y productos de Microsoft para mejorar la accesibilidad](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+## <a name="see-also"></a>Consulte también
+ [Servicios y productos de accesibilidad de Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

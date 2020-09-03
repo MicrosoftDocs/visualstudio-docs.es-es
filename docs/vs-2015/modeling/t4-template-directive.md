@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850790"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
@@ -34,7 +34,7 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
 ## <a name="compileroptions-attribute"></a>compilerOptions (atributo)
  Ejemplo: `compilerOptions="optimize+"`
 
- Valores válidos: cualquier opción de compilador válida. Para obtener más información, vea [ C# opciones del compilador por categoría](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) y [Visual Basic opciones del compilador enumeradas por categoría](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valores válidos: cualquier opción de compilador válida. Para obtener más información, vea [Opciones del compilador de C#, por categoría](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) y [Visual Basic opciones del compilador enumeradas por categoría](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Se omite para plantillas (preprocesadas) en tiempo de ejecución.
 
@@ -56,7 +56,7 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
 debug="true"
 ```
 
- Valores válidos: `true, false`. False es la opción predeterminada.
+ Valores válidos: `true, false` . False es la opción predeterminada.
 
  Si el atributo `debug` es `true`, el archivo de código intermedio contiene información que permite al depurador identificar con más precisión la posición de la plantilla donde se produjo una interrupción o una excepción.
 
@@ -71,7 +71,7 @@ debug="true"
 hostspecific="true"
 ```
 
- Valores válidos: `true, false, trueFromBase`. False es la opción predeterminada.
+ Valores válidos: `true, false, trueFromBase` . False es la opción predeterminada.
 
  Si establece el valor de este atributo en `true`, una propiedad denominada `Host` se agrega a la clase generada por la plantilla de texto. La propiedad es una referencia al host del motor de transformación y se declara como [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Si ha definido un host personalizado, puede convertirlo al tipo de host personalizado.
 
@@ -108,7 +108,7 @@ Content of myFile is:
 
  `VB`
 
- El atributo Language especifica el lenguaje ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)]) que se va a usar para el código fuente en los bloques de instrucciones y expresiones. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.
+ El atributo Language especifica el lenguaje ( [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)] ) que se va a usar para el código fuente en los bloques de instrucciones y expresiones. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.
 
  Por ejemplo:
 

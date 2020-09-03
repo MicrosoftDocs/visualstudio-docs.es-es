@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0519c3ab19e7d36aa26ea2f462c8a4571b9f8b32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656307"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Cómo: Utilizar puntos de interrupción con XSLT
@@ -32,7 +32,7 @@ Puede establecer los puntos de interrupción en una hoja de estilos XSLT o en el
 
 2. Coloque el cursor en la ubicación del punto de interrupción, haga clic con el botón secundario, seleccione punto de **interrupción**y haga clic en **Insertar punto de interrupción**.
 
-3. Haga clic en el botón Examinar ( **...** ) del campo de **entrada** de la ventana Propiedades del documento.
+3. Haga clic en el botón Examinar (**...**) del campo de **entrada** de la ventana Propiedades del documento.
 
 4. Busque el documento de origen XML y haga clic en **abrir**.
 
@@ -49,7 +49,7 @@ Puede establecer los puntos de interrupción en una hoja de estilos XSLT o en el
 
 2. Coloque el cursor en la ubicación del punto de interrupción, haga clic con el botón secundario, seleccione punto de **interrupción**y haga clic en **Insertar punto de interrupción**.
 
-3. Haga clic en el botón Examinar ( **...** ) del campo **hoja de estilos** de la ventana Propiedades del documento.
+3. Haga clic en el botón Examinar (**...**) del campo **hoja de estilos** de la ventana Propiedades del documento.
 
 4. Busque el documento de origen XML y haga clic en **abrir**.
 
@@ -57,5 +57,5 @@ Puede establecer los puntos de interrupción en una hoja de estilos XSLT o en el
 
 5. Haga clic en el botón **depurar XSL** en la barra de herramientas del editor XML.
 
-## <a name="see-also"></a>Vea también
- [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+## <a name="see-also"></a>Consulte también
+ [Tutorial: depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

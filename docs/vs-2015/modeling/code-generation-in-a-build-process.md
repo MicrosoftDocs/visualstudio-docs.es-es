@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850711"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generación de código en un proceso de compilación
@@ -27,7 +27,7 @@ Hay algunas diferencias en cuanto a lo que las tareas de compilación pueden hac
 
 Esto significa que no puede tener acceso a elementos como nombres de archivo de proyecto de la misma manera cuando se compila una plantilla de texto en MSBuild. Sin embargo, puede [pasar información de entorno a plantillas de texto y procesadores de directivas mediante el uso de parámetros de compilación](#parameters).
 
-## <a name="buildserver"></a>Configurar las máquinas
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Configurar las máquinas
 
 Para habilitar las tareas de compilación en el equipo de desarrollo, instale el [SDK de modelado para Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Pasar datos de contexto de compilación a las plantillas
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Pasar datos de contexto de compilación a las plantillas
 
 Puede establecer valores de parámetro en el archivo de proyecto. Por ejemplo, puede pasar propiedades de compilación y [variables de entorno](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ En una plantilla de texto, establezca `hostspecific` en la directiva de plantill
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>Usar las propiedades del proyecto en las directivas de inclusión y de ensamblado
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Usar las propiedades del proyecto en las directivas de inclusión y de ensamblado
 
 Las macros de Visual Studio, como $ (SolutionDir), no funcionan en MSBuild. En su lugar, puede utilizar las propiedades del proyecto.
 
@@ -269,7 +269,7 @@ Ahora puede usar la propiedad del proyecto en directivas de ensamblado e inclusi
 
 Si actualiza un archivo incluido, u otro archivo leído por la plantilla, Visual Studio no transforma el archivo automáticamente. La transformación de plantillas como parte de la compilación se asegura de que todo está actualizado.
 
-**¿Qué otras opciones hay para transformar las plantillas de texto?**
+**¿Qué otras opciones existen para transformar plantillas de texto?**
 
 - La [utilidad textTransform](../modeling/generating-files-with-the-texttransform-utility.md) se puede usar en scripts de comandos. En la mayoría de los casos, es más fácil utilizar MSBuild.
 
@@ -279,10 +279,10 @@ Si actualiza un archivo incluido, u otro archivo leído por la plantilla, Visual
 
 - [Las plantillas de texto en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md) se transforman en tiempo de ejecución en la aplicación.
 
-## <a name="read-more"></a>Leer más
+## <a name="read-more"></a>Más información
 
 Hay una buena guía en la plantilla de T4 MSbuild, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)
-- [SDK de visualización y modelado de Visual Studio](https://www.visualstudio.com/)
+- [SDK de Visual Studio de visualización y modelado](https://www.visualstudio.com/)
 - [Oleg Sych: Descripción de T4: integración de MSBuild](https://github.com/olegsych/T4Toolbox)

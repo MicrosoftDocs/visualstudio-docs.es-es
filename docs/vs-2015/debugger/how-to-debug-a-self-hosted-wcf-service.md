@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar un servicio WCF Autohospedado | Documentos de Microsoft
+title: Procedimiento para depurar un servicio WCF autohospedado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e58acc6323f396f9b0755e84b369ce0fdf413c08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185178"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Procedimiento Depuración de un servicio WCF autohospedado
@@ -32,11 +32,11 @@ Un *servicio que se hospeda a sí mismo* es un servicio WCF que no se ejecuta de
   
  Si el servicio WCF se hospeda a sí mismo dentro de un proceso que no se puede iniciar de esta manera, por ejemplo un servicio NT, no podrá utilizar este método. En su lugar, puede realizar uno de los siguientes procedimientos:  
   
-- Asociar manualmente el depurador al proceso que hospeda. Para obtener más información, consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Asociar manualmente el depurador al proceso que hospeda. Para obtener más información, vea [Asociación con procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
      o  
   
-- Empezar a depurar el cliente y, a continuación, entrar en una llamada al servicio. Esto requiere habilitar la depuración en el archivo app.config. Para obtener más información, [limitaciones sobre la depuración de WCF](../debugger/limitations-on-wcf-debugging.md).  
+- Empezar a depurar el cliente y, a continuación, entrar en una llamada al servicio. Esto requiere habilitar la depuración en el archivo app.config. Para obtener más información, vea [Limitaciones de la depuración de WCF](../debugger/limitations-on-wcf-debugging.md).  
   
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>Para iniciar el cliente y el host desde Visual Studio  
   
@@ -48,15 +48,15 @@ Un *servicio que se hospeda a sí mismo* es un servicio WCF que no se ejecuta de
   
     2. Haga clic en **Establecer proyectos de inicio**.  
   
-    3. En el cuadro de diálogo **Solución \<nombre> Propiedades**, seleccione **Proyectos de inicio múltiples**.  
+    3. En el cuadro de diálogo **Solución \<name> Propiedades**, seleccione **Proyectos de inicio múltiples**.  
   
     4. En la cuadrícula **Proyectos de inicio múltiples**, en la línea que corresponde al proyecto de servidor, haga clic en **Acción** y elija **Inicio**.  
   
     5. En la línea que corresponde al proyecto de cliente, haga clic en **Acción** y elija **Inicio**.  
   
-    6. Haga clic en **OK**.  
+    6. Haga clic en **Aceptar**.  
   
-## <a name="see-also"></a>Vea también  
- [Depuración de servicios WCF](../debugger/debugging-wcf-services.md)   
+## <a name="see-also"></a>Consulte también  
+ [Depurar servicios WCF](../debugger/debugging-wcf-services.md)   
  [Limitaciones de la depuración de WCF](../debugger/limitations-on-wcf-debugging.md)   
  [Cómo: Depuración paso a paso por instrucciones de servicios WCF](../debugger/how-to-step-into-wcf-services.md)

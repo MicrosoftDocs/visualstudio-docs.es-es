@@ -28,13 +28,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295601"
 ---
-# <a name="using-the-toolbox"></a>Usar el Cuadro de herramientas
+# <a name="using-the-toolbox"></a>Usar el cuadro de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar el cuadro de herramientas para agregar controles y otros elementos al proyecto. Puede arrastrar y colocar distintos controles en la superficie del diseñador que use y cambiar su tamaño y posición.
@@ -48,7 +48,7 @@ Puede usar el cuadro de herramientas para agregar controles y otros elementos al
 
  Puede reorganizar los elementos de una pestaña del cuadro de herramientas o agregar pestañas y elementos personalizados por medio de los siguientes comandos del menú contextual:
 
-- **Cambiar nombre de elemento**: permite cambiar el nombre del elemento seleccionado.
+- **Cambiar nombre de elemento** : cambia el nombre del elemento seleccionado.
 
 - **Mostrar todo**: muestra todos los controles posibles (no solo los correspondientes al diseñador actual).
 
@@ -56,11 +56,11 @@ Puede usar el cuadro de herramientas para agregar controles y otros elementos al
 
 - **Elegir elementos**: abre el cuadro de diálogo **Elegir elementos del cuadro de herramientas** para que pueda especificar los elementos que aparecen en el **Cuadro de herramientas**. Para mostrar u ocultar un elemento, active o desactive su casilla.
 
-- **Ordenar elementos alfabéticamente**: ordena los elementos por el nombre.
+- **Ordenar elementos alfabéticamente** : ordena los elementos por nombre.
 
-- **Restablecer barra de herramientas**: restaura la configuración y los elementos predeterminados del cuadro de herramientas.
+- **Restablecer barra de herramientas** : restaura la configuración predeterminada del cuadro de herramientas y los elementos.
 
-- **Agregar pestaña**: agrega una nueva pestaña del cuadro de herramientas.
+- **Agregar pestaña** : agrega una nueva pestaña del cuadro de herramientas.
 
 - **Subir**: mueve el elemento seleccionado hacia arriba.
 

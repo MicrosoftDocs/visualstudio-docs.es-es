@@ -12,10 +12,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d741ff59c3b57923912bcbb08a3a22ad20bf8a93
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295980"
 ---
 # <a name="extending-projects"></a>Ampliación de proyectos
@@ -27,7 +27,7 @@ Los proyectos y las soluciones son las formas en que Visual Studio organiza los 
   
  En los temas de esta sección se describe cómo crear proyectos personalizados y cómo administrar distintos tipos de soluciones de Visual Studio.  
   
-## <a name="in-this-section"></a>Esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Creación de un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md)  
  Describe cómo crear un sistema de proyectos personalizado.  
   

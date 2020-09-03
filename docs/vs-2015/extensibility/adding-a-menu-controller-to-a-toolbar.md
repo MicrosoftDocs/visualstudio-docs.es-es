@@ -13,37 +13,37 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184908"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Adición de un controlador de menú a una barra de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tutorial se basa en el [agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) tutorial y muestra cómo agregar un controlador de menú a la ventana de herramientas. Los pasos indicados aquí también se pueden aplicar a la barra de herramientas que se crea en el [agregar una barra de herramientas](../extensibility/adding-a-toolbar.md) tutorial.  
+Este tutorial se basa en el tutorial [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) y muestra cómo agregar un controlador de menú a la barra de herramientas de la ventana de herramientas. Los pasos que se muestran aquí también se pueden aplicar a la barra de herramientas que se crea en el tutorial [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md) .  
   
- Un controlador de menú es un control de expansión. El lado izquierdo del controlador de menú muestra el comando de último uso, y se puede ejecutar haciendo clic en él. El lado derecho del controlador de menú es una flecha que, al hacer clic, se abre una lista de comandos adicionales. Cuando haga clic en un comando en la lista, se ejecuta el comando, y reemplaza el comando en el lado izquierdo del controlador de menú. De este modo, el controlador de menús funciona como un botón de comando que siempre se muestra el comando de último uso de una lista.  
+ Un controlador de menú es un control dividido. En el lado izquierdo del controlador de menú se muestra el comando que se utilizó por última vez y se puede ejecutar haciendo clic en él. El lado derecho del controlador de menú es una flecha que, cuando se hace clic en él, abre una lista de comandos adicionales. Al hacer clic en un comando de la lista, el comando se ejecuta y reemplaza el comando en el lado izquierdo del controlador de menús. De esta manera, el controlador de menú funciona como un botón de comando que siempre muestra el último comando usado de una lista.  
   
- Controladores de menú pueden aparecer en los menús pero se suelen usar en las barras de herramientas.  
+ Los controladores de menú pueden aparecer en los menús, pero se utilizan con más frecuencia en las barras de herramientas.  
   
-## <a name="prerequisites"></a>Requisitos previos  
- A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerrequisitos  
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-menu-controller"></a>Creación de un controlador de menú  
   
 #### <a name="to-create-a-menu-controller"></a>Para crear un controlador de menú  
   
-1. Siga los procedimientos descritos en [agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) para crear una ventana de herramientas que tiene una barra de herramientas.  
+1. Siga los procedimientos descritos en [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) para crear una ventana de herramientas con una barra de herramientas.  
   
-2. En TWTestCommandPackage.vsct, vaya a la sección Symbols. En el elemento GuidSymbol denominado **guidTWTestCommandPackageCmdSet**, declare el controlador de menú, grupo de controladores de menú y tres elementos de menú.  
+2. En TWTestCommandPackage. Vsct, vaya a la sección símbolos. En el elemento GuidSymbol denominado **guidTWTestCommandPackageCmdSet**, declare el controlador de menú, el grupo de controladores de menús y tres elementos de menú.  
   
    ```xml  
    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
    ```  
   
-3. En la sección de menús, después de la última entrada de menú, definir el controlador de menú como menú.  
+3. En la sección menús, después de la última entrada de menú, defina el controlador de menú como un menú.  
   
    ```xml  
    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
@@ -58,9 +58,9 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
    </Menu>  
    ```  
   
-    El `TextChanges` y `TextIsAnchorCommand` marcas deben incluirse para habilitar el controlador de menús reflejar el último comando seleccionado.  
+    Las `TextChanges` `TextIsAnchorCommand` marcas y deben estar incluidas para permitir que el controlador de menú refleje el último comando seleccionado.  
   
-4. En los grupos de sección después de la última entrada de grupo, agregue el grupo de controlador de menú.  
+4. En la sección grupos, después de la última entrada de grupo, agregue el grupo de controladores de menús.  
   
    ```xml  
    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
@@ -68,9 +68,9 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
    </Group>  
    ```  
   
-    Estableciendo el controlador de menús como elemento primario, los comandos que se colocan en este grupo aparecerá en el controlador de menús. El `priority` atributo se omite, que establece en el valor predeterminado de 0, ya que será el único grupo en el controlador de menús.  
+    Al establecer el controlador de menú como elemento primario, los comandos que se coloquen en este grupo aparecerán en el controlador de menú. `priority`Se omite el atributo, que lo establece en el valor predeterminado de 0, porque será el único grupo del controlador de menú.  
   
-5. En la sección de botones, después de la última entrada de botón, agregue un elemento de botón para cada uno de los elementos de menú.  
+5. En la sección botones, después de la última entrada del botón, agregue un elemento botón para cada uno de los elementos de menú.  
   
    ```xml  
    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
@@ -102,19 +102,19 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
    </Button>  
    ```  
   
-6. En este momento, puede mirar el controlador de menús. Compile la solución y comience la depuración. Debería ver la instancia experimental.  
+6. Llegados a este punto, puede ver el controlador de menús. Compile la solución y comience la depuración. Debería ver la instancia experimental.  
   
-   1. En el **vista / Windows otras** menú Abrir **ventana de herramientas de prueba**.  
+   1. En el menú **Ver/otras ventanas** , abra la ventana de la ventana de **prueba**.  
   
-   2. El controlador de menús aparece en la barra de herramientas en la ventana de herramientas.  
+   2. El controlador de menú aparece en la barra de herramientas de la ventana de herramientas.  
   
    3. Haga clic en la flecha situada en el lado derecho del controlador de menú para ver los tres comandos posibles.  
   
-      Tenga en cuenta que, al hacer clic en un comando, el título del controlador de menú cambia para mostrar ese comando. En la siguiente sección, agregaremos el código para activar estos comandos.  
+      Tenga en cuenta que al hacer clic en un comando, el título del controlador de menú cambia para mostrar ese comando. En la siguiente sección, agregaremos el código para activar estos comandos.  
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementar los comandos del controlador de menú  
   
-1. En TWTestCommandPackageGuids.cs, agregue los identificadores de comando para los tres elementos de menú después del Id. de comando existente.  
+1. En TWTestCommandPackageGuids.cs, agregue los identificadores de comando para los tres elementos de menú después de los identificadores de comando existentes.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -128,7 +128,7 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3. En el constructor TWTestCommand, después de la última llamada a la `AddCommand` método, agregue código para enrutar los eventos para cada comando a través de los mismos controladores.  
+3. En el constructor TWTestCommand, después de la última llamada al `AddCommand` método, agregue código para enrutar los eventos de cada comando a través de los mismos controladores.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
     }  
     ```  
   
-4. Agregue un controlador de eventos a la clase TWTestCommand para marcar el comando seleccionado como comprobado.  
+4. Agregue un controlador de eventos a la clase TWTestCommand para marcar el comando seleccionado como activado.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
     }  
     ```  
   
-5. Agregue un controlador de eventos que muestra un cuadro de mensaje cuando el usuario selecciona un comando en el controlador de menú:  
+5. Agregue un controlador de eventos que muestre un cuadro de mensajes cuando el usuario seleccione un comando en el controlador de menú:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -212,20 +212,20 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
     }  
     ```  
   
-## <a name="testing-the-menu-controller"></a>Probar el controlador de menús  
+## <a name="testing-the-menu-controller"></a>Probar el controlador de menú  
   
 1. Compile la solución y comience la depuración. Debería ver la instancia experimental.  
   
-2. Abra el **ventana de herramientas de prueba** en el **vista / Windows otras** menú.  
+2. Abra la ventana de la ventana de **pruebas** en el menú **Ver/otras ventanas** .  
   
-     El controlador de menús aparece en la barra de herramientas en la ventana de herramientas y muestra **MC elemento 1**.  
+     El controlador de menú aparece en la barra de herramientas de la ventana de herramientas y muestra **MC elemento 1**.  
   
-3. Haga clic en el botón de controlador de menú a la izquierda de la flecha.  
+3. Haga clic en el botón controlador de menú situado a la izquierda de la flecha.  
   
-     Debería ver tres elementos, el primero de que está seleccionado y tiene un cuadro resaltado alrededor de su icono. Haga clic en **MC elemento 3**.  
+     Debería ver tres elementos, el primero de los cuales está seleccionado y tiene un cuadro de resaltado alrededor de su icono. Haga clic en **MC Item 3**.  
   
-     Aparece un cuadro de diálogo con el mensaje **seleccionó el controlador de menú elemento 3**. Tenga en cuenta que el mensaje se corresponde con el texto en el botón de controlador de menú. Ahora muestra el botón de menú controlador **MC elemento 3**.  
+     Aparece un cuadro de diálogo con el mensaje **seleccionado elemento de controlador de menú 3**. Tenga en cuenta que el mensaje se corresponde con el texto del botón del controlador de menús. El botón controlador de menú muestra ahora **MC elemento 3**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Adición de una barra de herramientas](../extensibility/adding-a-toolbar.md)

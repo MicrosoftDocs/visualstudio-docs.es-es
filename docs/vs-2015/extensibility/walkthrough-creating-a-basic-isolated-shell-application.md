@@ -13,13 +13,13 @@ caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850347"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Tutorial: crear una aplicación básica de Shell aislado
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Tutorial: creación una aplicación básica de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial se muestra cómo crear una solución de Shell aislado, personalizar la ventana de herramientas de ayuda y crear un programa de instalación que instale el shell aislado.  
@@ -44,7 +44,7 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 2. En la ventana **nuevo proyecto** , expanda **otros tipos de proyecto** y, a continuación, **extensibilidad**. Seleccione la plantilla de proyecto **aislado de Visual Studio Shell** .  
   
-3. Asigne al proyecto el nombre `MyVSShellStub` y especifique una ubicación. Asegúrese de que la opción **Crear directorio para la solución** está activada y, a continuación, haga clic en **Aceptar**.  
+3. Asigne un nombre al proyecto `MyVSShellStub` y especifique una ubicación. Asegúrese de que la opción **Crear directorio para la solución** está activada y, a continuación, haga clic en **Aceptar**.  
   
      La nueva solución aparece en **Explorador de soluciones**.  
   
@@ -59,7 +59,7 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 1. En el proyecto MyVSShellStub, abra \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
-2. Cambie el valor del elemento `AppName` a **"appname" = "fabrikam Music Editor"**  
+2. Cambie el `AppName` valor del elemento a **"appname" = "fabrikam Music Editor"**  
   
 3. Para cambiar el icono de la aplicación, copie un icono diferente en el directorio \MyVSShellStub\MyVSShellStub\MyVSShellStub\. Cambie el nombre del archivo ApplicationIcon. ico existente a ApplicationIcon1. ico. Cambie el nombre del nuevo archivo a ApplicationIcon. ico.  
   
@@ -70,7 +70,7 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Para personalizar la Página principal del explorador Web predeterminado  
   
-1. En el archivo MyVSShellStub. Application. pkgdef, cambie el valor del elemento `DefaultHomePage` a "<https://www.microsoft.com>".  
+1. En el archivo MyVSShellStub. Application. pkgdef, cambie el `DefaultHomePage` valor del elemento a " <https://www.microsoft.com> ".  
   
 2. Vuelva a generar el proyecto MyVSShellStub.  
   
@@ -79,7 +79,7 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
 4. En **Ver/otras ventanas**, haga clic en **explorador Web**. La ventana del **explorador Web** muestra la Página principal de Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Quitar el comando de impresión  
- El archivo. Vsct de un proyecto de interfaz de usuario de Shell aislado se compone de un conjunto de declaraciones con el formato `<Define name=No_`*elemento*`>`, donde *elemento* es uno de los menús y comandos de Visual Studio estándar.  
+ El archivo. Vsct de un proyecto de interfaz de usuario de Shell aislado está formado por un conjunto de declaraciones del `<Define name=No_` *elemento*Form `>` , donde *Element* es uno de los menús y comandos de Visual Studio estándar.  
   
  Si se quita el comentario de una declaración, ese menú o comando se excluye del shell aislado. Por el contrario, si una declaración está comentada, el menú o el comando se incluyen en el shell aislado.  
   
@@ -115,7 +115,7 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 2. Quite la marca de comentario de la línea siguiente:  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \Packages \\ {87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Recompile la solución e inicie la depuración del shell aislado. Abra un archivo XML, por ejemplo, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Compruebe que las palabras clave XML del archivo no están coloreadas y que al escribir "<" en una línea no se muestra la información sobre herramientas XML.  
   
@@ -124,9 +124,9 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 #### <a name="to-customize-the-company-name"></a>Para personalizar el nombre de la empresa  
   
-1. El nombre de la empresa, la información de copyright, la versión del producto y la descripción del producto se encuentran en el proyecto MyVSShellStub. AboutBoxPackage, en el archivo \Properties\AssemblyInfo.cs. Abra este archivo.  
+1. El nombre de la empresa, la información de copyright, la versión del producto y la descripción del producto se encuentran en el proyecto MyVSShellStub. AboutBoxPackage, en el archivo \Properties\AssemblyInfo.cs. Abra dicho archivo.  
   
-2. Cambie el valor de `AssemblyCompany` a **Fabrikam**, los valores de `AssemblyProduct` y `AssemblyTitle` a **Fabrikam Music Editor**y el valor de `AssemblyCopyright` a **Copyright © Fabrikam 2015**:  
+2. Cambie el `AssemblyCompany` valor a **Fabrikam**, los `AssemblyProduct` `AssemblyTitle` valores y a **Fabrikam Music Editor**y el `AssemblyCopyright` valor a **Copyright © Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. Para agregar una descripción del producto, cambie el valor de `AssemblyDescription` a **la descripción de Fabrikam Music Editor.** :  
+3. Para agregar una descripción del producto, cambie el `AssemblyDescription` valor a **la descripción de Fabrikam Music Editor.**:  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4. Inicie la depuración y, en la aplicación de Shell aislado, abra el cuadro de **ayuda/acerca** de. Debería ver las cadenas modificadas. El título del cuadro de ayuda/acerca de es el mismo que el valor de `AssemblyTitle` de AssemblyInfo.cs.  
+4. Inicie la depuración y, en la aplicación de Shell aislado, abra el cuadro de **ayuda/acerca** de. Debería ver las cadenas modificadas. El título del cuadro de ayuda/acerca de es el mismo que el `AssemblyTitle` valor de AssemblyInfo.cs.  
   
-5. Las propiedades del propio cuadro **ayuda/acerca** de se encuentran en el archivo MyVSShellStub. AboutBoxPackage\AboutBox.Xaml. Para cambiar el ancho del cuadro de ayuda/acerca de, vaya al bloque `AboutDialogStyle` y establezca la propiedad `Width` en 200:  
+5. Las propiedades del propio cuadro **ayuda/acerca** de se encuentran en el archivo MyVSShellStub. AboutBoxPackage\AboutBox.Xaml. Para cambiar el ancho del cuadro de ayuda/acerca de, vaya al `AboutDialogStyle` bloque y establezca la `Width` propiedad en 200:  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -178,7 +178,7 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 1. En **Explorador de soluciones**, haga clic con el botón secundario en el nodo de la solución y, a continuación, haga clic en **Agregar nuevo proyecto**.  
   
-2. En el cuadro de diálogo **nuevo proyecto** , expanda **otros tipos de proyectos** y, después, seleccione **instalación e implementación**. Seleccione la plantilla de InstallShield. Asigne al nuevo proyecto el nombre `MySetup` y, a continuación, haga clic en **Aceptar**.  
+2. En el cuadro de diálogo **nuevo proyecto** , expanda **otros tipos de proyectos** y, después, seleccione **instalación e implementación**. Seleccione la plantilla de InstallShield. Asigne un nombre al nuevo proyecto `MySetup` y haga clic en **Aceptar**.  
   
 3. Si InstallShield Limited Edition ya está instalado, continúe con el paso siguiente.  
   
@@ -206,17 +206,17 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
     2. DebuggerProxy.dll  
   
-    3. DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll. manifest  
   
-    4. MyVSShellStub.pkgdef  
+    4. MyVSShellStub. pkgdef  
   
-    5. MyVSShellStub.pkgundef  
+    5. MyVSShellStub. pkgundef  
   
     6. MyVSShellStub.winprf  
   
-    7. Splash. bmp  
+    7. Splash.bmp  
   
-5. Haga clic en el botón **Agregar resultados del proyecto** y agregue **MyVSShellStub/Primary Output**. Haga clic en **Aceptar**.  
+5. Haga clic en el botón **Agregar resultados del proyecto** y agregue **MyVSShellStub/Primary Output**. Haga clic en **OK**.  
   
 6. En el panel izquierdo, en **equipo de destino**, haga clic con el botón secundario en el nodo **Fabrikam Music Editor [INSTALLDIR]** y agregue una **nueva carpeta** denominada **extensiones**.  
   
@@ -226,9 +226,9 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 9. Haga clic en el botón **Agregar archivos** y, en la carpeta \MyVSShellStub\Release\Extensions\Application\, agregue los siguientes archivos:  
   
-    - MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub. AboutBoxPackage. pkgdef  
   
-    - MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub. Application. pkgdef  
   
 10. Haga clic con el botón secundario en el nodo **Fabrikam Music Editor [INSTALLDIR]** en el panel izquierdo y agregue una nueva carpeta denominada **1033**.  
   
@@ -248,15 +248,15 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 18. En el panel **¿qué desea buscar?** , elija **entrada del registro** en la lista desplegable y haga clic en **siguiente**.  
   
-19. En el panel **¿Cómo desea buscarlo?** , seleccione **HKEY_LOCAL_MACHINE** como la raíz del registro. Escriba **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** para sistemas de 64 bits o **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** para sistemas de 32 bits y escriba **install** como valor del registro. Haga clic en **Siguiente**.  
+19. En el panel **¿Cómo desea buscarlo?** , seleccione **HKEY_LOCAL_MACHINE** como la raíz del registro. Escriba **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** para sistemas de 64 bits o **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** para sistemas de 32 bits y escriba **install** como valor del registro. Haga clic en **Next**.  
   
 20. En el panel **¿qué desea hacer con el valor?** , escriba **este producto requiere que se instale el paquete redistribuible de Shell aislado de Visual Studio 2015.** como texto para mostrar y haga clic en **Finalizar**.  
   
 21. Vuelva a generar la solución de Shell aislado para crear el proyecto de instalación.  
   
-     Puede encontrar el archivo Setup. exe en la siguiente carpeta:  
+     Puede encontrar el archivo de setup.exe en la siguiente carpeta:  
   
      \MyVSShellStub\MySetup\MySetup\Express\SingleImage\DiskImages\DISK1  
   
 ## <a name="testing-the-installation-program"></a>Probar el programa de instalación  
- Para probar la instalación, copie el archivo Setup. exe en otro equipo y ejecute el ejecutable de instalación. Debe poder ejecutar la aplicación de Shell aislado.
+ Para probar la instalación, copie el archivo de setup.exe en otro equipo y ejecute el ejecutable de instalación. Debe poder ejecutar la aplicación de Shell aislado.

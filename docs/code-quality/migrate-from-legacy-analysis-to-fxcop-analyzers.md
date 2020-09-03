@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78937564"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migración de análisis heredado (FxCop) al análisis de código fuente (analizadores de FxCop)
@@ -27,7 +27,7 @@ Muchas de las reglas de análisis heredado (FxCop) ya se han reescrito para los 
 
 Para obtener más información sobre las diferencias entre el análisis heredado y el análisis de código fuente, vea lo siguiente:
 
-- [Análisis de código fuente frente al análisis heredado](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Análisis de código fuente frente a análisis heredado](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
 
 - [Preguntas más frecuentes sobre los analizadores de FxCop](../code-quality/fxcop-analyzers-faq.md)
 

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850839"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
@@ -41,7 +41,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
  Si desactiva el **espacio de nombres raíz**, puede especificar la estructura del espacio de nombres del proyecto en el código.
 
 > [!NOTE]
-> Si usa la palabra clave Global en una [Instrucción de espacio de nombres](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), puede definir un espacio de nombres fuera del espacio de nombres raíz del proyecto. Si desactiva el **espacio de nombres raíz**, `Global` se convierte en el espacio de nombres de nivel superior, lo que elimina la necesidad de la palabra clave `Global` en una instrucción `Namespace`. Para obtener más información, vea "Palabra clave Global en las instrucciones de espacio de nombres" en [Espacios de nombres en Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).
+> Si usa la palabra clave Global en una [Instrucción de espacio de nombres](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), puede definir un espacio de nombres fuera del espacio de nombres raíz del proyecto. Si borra el **espacio de nombres raíz**, `Global` se convierte en el espacio de nombres de nivel superior, lo que elimina la necesidad de la `Global` palabra clave en una `Namespace` instrucción. Para obtener más información, vea "Palabra clave Global en las instrucciones de espacio de nombres" en [Espacios de nombres en Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).
 
  Para obtener información sobre cómo crear espacios de nombres en su código, vea [Namespace (Instrucción)](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).
 
@@ -69,7 +69,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
 
  Para obtener más información sobre la propiedad **Tipo de aplicación**, vea [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Para obtener información sobre cómo tener acceso a esa propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
- **Icono** Establece el archivo .ico que se quiere usar como el icono del programa. Seleccione **\<Examinar...>** para buscar un gráfico existente. Para obtener más información, vea [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (o [/win32icon (Opciones del compilador de C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+ **Icono** Establece el archivo .ico que se quiere usar como el icono del programa. Seleccione esta **\<Browse...>** información para buscar un gráfico existente. Para obtener más información, vea [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (o [/win32icon (Opciones del compilador de C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
  **Formulario de inicio/objeto de inicio/URI de inicio** Especifica el punto de entrada o el formulario de inicio de la aplicación.
 
@@ -79,11 +79,11 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
 
  Si **Habilitar marco de trabajo de la aplicación** está desactivado, esta lista se convierte en **Objeto de inicio** y muestra los formularios y las clases o módulos con un `Sub Main`.
 
- **Objeto de inicio** define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Sub Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, la única opción para esta propiedad es **(None)** . Para obtener más información, vea [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+ **Objeto de inicio** define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Sub Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, la única opción para esta propiedad es **(None)**. Para obtener más información, vea [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
  **Información de ensamblado** Haga clic en este botón para mostrar el [cuadro de diálogo información de ensamblado](../../ide/reference/assembly-information-dialog-box.md).
 
- **Habilitar marco de trabajo** de la aplicación Especifica si un proyecto usará el marco de trabajo de la aplicación. La configuración de esta opción afecta a las opciones disponibles en **Formulario de inicio**/**Objeto de inicio**.
+ **Habilitar marco de trabajo** de la aplicación Especifica si un proyecto usará el marco de trabajo de la aplicación. La configuración de esta opción afecta a las opciones disponibles en el objeto de inicio del formulario de **Inicio** / **Startup object**.
 
  Si esta casilla está seleccionada, la aplicación usará el `Sub Main` estándar. Al seleccionar esta casilla se habilitan las características de la sección **Propiedades del marco de trabajo de la aplicación Windows**, y también es necesario seleccionar un formulario de inicio.
 
@@ -100,11 +100,11 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
 ## <a name="windows-application-framework-properties"></a>Propiedades del marco de trabajo de la aplicación Windows
  Las siguientes opciones de configuración están disponibles en la sección **Propiedades del marco de trabajo de la aplicación Windows**. Estas opciones están disponibles solo si la casilla **Habilitar marco de trabajo de la aplicación** está seleccionada. En la sección siguiente se describe la configuración de las **Propiedades del marco de trabajo de la aplicación Windows** para aplicaciones de Windows Presentation Foundation (WPF).
 
- **Habilitar estilos visuales de XP** Habilita o deshabilita los estilos visuales de Windows XP, también conocidos como *temas de Windows XP*. Los estilos visuales de Windows XP presentan, por ejemplo, controles con esquinas redondeadas y colores dinámicos. El valor predeterminado está habilitado. Para obtener más información sobre los estilos visuales de Windows XP, vea [Características de Windows XP y controles de Windows Forms](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0).
+ **Habilitar estilos visuales de XP** Habilita o deshabilita los estilos visuales de Windows XP, también conocidos como *temas de Windows XP*. Los estilos visuales de Windows XP presentan, por ejemplo, controles con esquinas redondeadas y colores dinámicos. El valor predeterminado es habilitado. Para obtener más información sobre los estilos visuales de Windows XP, vea [Características de Windows XP y controles de Windows Forms](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0).
 
  **Crear aplicación de instancia única** Active esta casilla para impedir que los usuarios ejecuten varias instancias de la aplicación. La configuración predeterminada de esta casilla está desactivada. Esta configuración permite que se ejecuten varias instancias de la aplicación.
 
- **Guardar My. Settings al apagar** Active esta casilla para especificar que la configuración de `My.Settings` de la aplicación se guardará cuando los usuarios cierren sus equipos. La configuración predeterminada está habilitada. Si esta opción está deshabilitada, puede guardar la configuración de la aplicación manualmente llamando a `My.Settings.Save`.
+ **Guardar My. Settings al apagar** Active esta casilla para especificar que la configuración de la aplicación `My.Settings` se guarde cuando los usuarios cierren sus equipos. La configuración predeterminada está habilitada. Si esta opción está deshabilitada, puede guardar la configuración de la aplicación manualmente llamando a `My.Settings.Save`.
 
  **Modo de autenticación** Seleccione **Windows** (valor predeterminado) para especificar el uso de la autenticación de Windows para identificar el usuario que ha iniciado sesión actualmente. Puede recuperar esta información en tiempo de ejecución con el objeto `My.User`. Seleccione **Definido por la aplicación** si proporcionará su propio código para autenticar usuarios en lugar de usar los métodos de autenticación de Windows predeterminados.
 
@@ -112,13 +112,13 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
 
  Seleccione **Al apagar explícitamente** para especificar que se salga de la aplicación cuando llame a `Shutdown` explícitamente.
 
- Seleccione **Al cerrar la última ventana** para especificar que se salga de la aplicación cuando la última ventana se cierre o cuando llame a `Shutdown` explícitamente. Ésta es la configuración predeterminada.
+ Seleccione **Al cerrar la última ventana** para especificar que se salga de la aplicación cuando la última ventana se cierre o cuando llame a `Shutdown` explícitamente. Esta es la configuración predeterminada.
 
  Seleccione **Al cerrar la ventana principal** para especificar que se salga de la aplicación cuando la ventana principal se cierre o cuando llame a `Shutdown` explícitamente.
 
- **Pantalla de presentación** Seleccione el formulario que desea usar como pantalla de presentación. Debe haber creado anteriormente una pantalla de presentación con un formulario o una plantilla. El valor predeterminado es **(None)** .
+ **Pantalla de presentación** Seleccione el formulario que desea usar como pantalla de presentación. Debe haber creado anteriormente una pantalla de presentación con un formulario o una plantilla. El valor predeterminado es **(ninguno)**.
 
- **Ver eventos de aplicación** Haga clic en este botón para mostrar un archivo de código de eventos en el que puede escribir eventos para los eventos de marco de aplicación `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` y `NetworkAvailabilityChanged`. También puede invalidar determinados métodos de marco de trabajo de la aplicación. Por ejemplo, puede invalidar `OnInitialize` para cambiar el comportamiento de la pantalla de presentación.
+ **Ver eventos de aplicación** Haga clic en este botón para mostrar un archivo de código de eventos en el que puede escribir eventos para los eventos de marco de aplicación `Startup` , `Shutdown` , `UnhandledException` `StartupNextInstance` y `NetworkAvailabilityChanged` . También puede invalidar determinados métodos de marco de trabajo de la aplicación. Por ejemplo, puede invalidar `OnInitialize` para cambiar el comportamiento de la pantalla de presentación.
 
 ### <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Propiedades del marco de trabajo de la aplicación Windows para aplicaciones de Windows Presentation Foundation (WPF)
  Las siguientes opciones de configuración están disponibles en la sección **Propiedades del marco de trabajo de la aplicación Windows** cuando el proyecto es una aplicación de Windows Presentation Foundation. Estas opciones están disponibles solo si la casilla **Habilitar marco de trabajo de la aplicación** está seleccionada. Las opciones enumeradas en esta tabla están disponibles solo para aplicaciones WPF o aplicaciones de explorador WPF. No están disponibles para bibliotecas de control personalizado o de controles de usuario de WPF.
@@ -127,7 +127,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
 
  Seleccione **Al apagar explícitamente** para especificar que se salga de la aplicación cuando llame a <xref:System.Windows.Application.Shutdown%2A> explícitamente.
 
- Seleccione **Al cerrar la última ventana** para especificar que se salga de la aplicación cuando la última ventana se cierre o cuando llame a <xref:System.Windows.Application.Shutdown%2A> explícitamente. Ésta es la configuración predeterminada.
+ Seleccione **Al cerrar la última ventana** para especificar que se salga de la aplicación cuando la última ventana se cierre o cuando llame a <xref:System.Windows.Application.Shutdown%2A> explícitamente. Esta es la configuración predeterminada.
 
  Seleccione **Al cerrar la ventana principal** para especificar que se salga de la aplicación cuando la ventana principal se cierre o cuando llame a <xref:System.Windows.Application.Shutdown%2A> explícitamente.
 
@@ -139,5 +139,5 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
 
  El objeto <xref:System.Windows.Application> genera eventos cuando se producen determinados cambios en el estado de la aplicación (por ejemplo, en el inicio de aplicación o en el apagado). Para obtener una lista completa de los eventos que expone esta clase, vea <xref:System.Windows.Application>. Estos eventos se controlan en la sección de código de usuario de la clase parcial `Application`.
 
-## <a name="see-also"></a>Vea también
-[Administrar las propiedades](../../ide/application-properties.md) [de la aplicación escribir código en soluciones de Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+## <a name="see-also"></a>Consulte también
+[Administrar las propiedades de la aplicación](../../ide/application-properties.md) [Escribir código en soluciones de Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

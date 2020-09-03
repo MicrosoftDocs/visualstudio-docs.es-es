@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f53a426c21f967d82562f24ec07c6eb3edfbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656184"
 ---
 # <a name="sample-xsd-files"></a>Archivos XSD de muestra
@@ -29,5 +29,5 @@ Los archivos de muestra siguientes se usan en la documentación del Diseñador d
 |Tema|Descripción|
 |-----------|-----------------|
 |[Archivo XSD de ejemplo: esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Un documento XSD que contiene un esquema de pedido de compra típico.|
-|[Ejemplo de archivo XSD: esquema simple](../xml-tools/sample-xsd-file-simple-schema.md)|Un documento XSD que contiene un esquema simple.|
+|[Archivo XSD de ejemplo: esquema simple](../xml-tools/sample-xsd-file-simple-schema.md)|Un documento XSD que contiene un esquema simple.|
 |[Archivo XSD de muestra: relaciones](../xml-tools/sample-xsd-file-relationships.md)|Un documento XSD que contiene un esquema con relaciones.|

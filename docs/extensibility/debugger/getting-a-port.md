@@ -1,5 +1,5 @@
 ---
-title: Conseguir un puerto ? Microsoft Docs
+title: Obtención de un puerto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738636"
 ---
 # <a name="get-a-port"></a>Obtener un puerto
-Un puerto representa una conexión a una máquina en la que se ejecutan los procesos. Esa máquina podría ser la máquina local o una máquina remota (que posiblemente podría estar ejecutando un sistema operativo no basado en Windows; consulte [Puertos](../../extensibility/debugger/ports.md) para obtener más información).
+Un puerto representa una conexión a un equipo en el que se ejecutan los procesos. Ese equipo podría ser el equipo local o un equipo remoto (que podría estar ejecutando un sistema operativo no basado en Windows; consulte [puertos](../../extensibility/debugger/ports.md) para obtener más información).
 
-Un puerto se representa mediante el [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz. Se utiliza para obtener información sobre los procesos que se ejecutan en la máquina a la que está conectado el puerto.
+Un puerto se representa mediante la interfaz [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) . Se usa para obtener información sobre los procesos que se ejecutan en el equipo al que está conectado el puerto.
 
-Un motor de depuración necesita acceso a un puerto para registrar los nodos de programa con el puerto y satisfacer las solicitudes de información del proceso. Por ejemplo, si el motor de depuración implementa la interfaz [IDebugProgramProvider2,](../../extensibility/debugger/reference/idebugprogramprovider2.md) la implementación del método [GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) podría solicitar al puerto la información de proceso necesaria que se va a devolver.
+Un motor de depuración necesita acceso a un puerto para registrar los nodos del programa con el puerto y satisfacer las solicitudes de información de proceso. Por ejemplo, si el motor de depuración implementa la interfaz [IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md) , la implementación del método [GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) podría solicitar que se devuelva la información de proceso necesaria.
 
-Visual Studio proporciona el puerto necesario al motor de depuración y obtiene este puerto de un proveedor de puertos. Si se adjunta un programa (ya sea desde el depurador o debido a una excepción, que desencadena el cuadro de diálogo Just-in-Time [JIT]), se da al usuario la opción de transporte (otro nombre para un proveedor de puertos) para usar. De lo contrario, si el usuario inicia el programa desde el depurador, el sistema del proyecto especifica el proveedor de puertos que se va a utilizar. En cualquier caso, Visual Studio crea una instancia del proveedor de puertos, representado por un [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfaz y solicita un nuevo puerto mediante una llamada a [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) con un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) interfaz. Este puerto entonces se pasa al motor de depuración de una forma u otra.
+Visual Studio proporciona el puerto necesario al motor de depuración y obtiene este puerto de un proveedor de puerto. Si un programa está asociado a (ya sea desde el depurador o debido a que se produjo una excepción, lo que desencadena el cuadro de diálogo Just-in-time [JIT]), el usuario recibe la opción de transporte (otro nombre para un proveedor de puerto) para su uso. De lo contrario, si el usuario inicia el programa desde el depurador, el sistema del proyecto especifica el proveedor del puerto que se va a usar. En cualquiera de los dos eventos, Visual Studio crea una instancia del proveedor del puerto, representado por una interfaz [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) , y solicita un nuevo puerto mediante una llamada a [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) con una interfaz [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) . Este puerto se pasa entonces al motor de depuración en un formulario o en otro.
 
 ## <a name="example"></a>Ejemplo
-Este fragmento de código muestra cómo utilizar el puerto proporcionado a [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) para registrar un nodo de programa en [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Los parámetros no directamente relacionados con este concepto se han omitido para mayor claridad.
+En este fragmento de código se muestra cómo usar el puerto proporcionado a [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) para registrar un nodo de programa en [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Los parámetros no relacionados directamente con este concepto se han omitido para mayor claridad.
 
 > [!NOTE]
-> En este ejemplo se usa el puerto para iniciar y reanudar el proceso y se supone que la interfaz [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) se implementa en el puerto. Esta no es de ninguna manera la única manera de realizar estas tareas, y es posible que el puerto ni siquiera esté involucrado que no sea tener el programa [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) dado a él.
+> En este ejemplo se usa el puerto para iniciar y reanudar el proceso y se supone que la interfaz [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) se implementa en el puerto. No se trata de la única forma de realizar estas tareas, y es posible que el puerto no esté implicado incluso aparte de tener el [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) del programa dado.
 
 ```cpp
 // This is an IDebugEngineLaunch2 method.
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Registro del programa](../../extensibility/debugger/registering-the-program.md)
-- [Habilitación de un programa que se va a depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
-- [Proveedores portuarios](../../extensibility/debugger/port-suppliers.md)
+- [Registrar el programa](../../extensibility/debugger/registering-the-program.md)
+- [Habilitar la depuración de un programa](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Proveedores de puertos](../../extensibility/debugger/port-suppliers.md)
 - [Puertos](../../extensibility/debugger/ports.md)

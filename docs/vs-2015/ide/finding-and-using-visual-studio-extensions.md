@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655874"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Buscar y usar extensiones de Visual Studio
@@ -43,20 +43,20 @@ Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro
  Si desea dejar de usar una extensión, puede deshabilitarla o desinstalarla. Al deshabilitar una extensión esta sigue instalada pero está descargada. Solo puede deshabilitar las extensiones VSIX; las extensiones que se instalaron mediante MSI solo se pueden desinstalar. Busque la extensión y haga clic **Desinstalar** o **Deshabilitar**. Para descargar una extensión deshabilitada, debe reiniciar Visual Studio.
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensiones por usuario y administrativas
- Las mayoría de las extensiones son extensiones por usuario y están instaladas en la carpeta **%LocalAppData%\Microsoft\VisualStudio\\<versión de Visual Studio\>\Extensions\\** . Algunas extensiones son extensiones administrativas y están instaladas en la carpeta **\<<carpeta de instalación de Visual Studio>\Common7\IDE\Extensions\\** .
+ Las mayoría de las extensiones son extensiones por usuario y están instaladas en la carpeta **%LocalAppData%\Microsoft\VisualStudio\\<versión de Visual Studio\>\Extensions\\**. Algunas extensiones son extensiones administrativas y se instalan en la carpeta ** \<Visual Studio installation folder> \Common7\IDE\Extensions \\ **
 
  Para proteger el sistema frente a extensiones que pueden contener errores o código malintencionado, puede limitar que las extensiones por usuario solo se carguen cuando Visual Studio se ejecuta con permisos de usuario normales. Esto significa que las extensiones por usuario están deshabilitadas cuando Visual Studio se ejecuta con permisos de usuario administrativo. Para ello, vaya a la página de opciones **Extensiones y actualizaciones** (**Herramientas / Opciones**, **Entorno**, **Extensiones y actualizaciones**, o simplemente escriba **Extensión** en la ventana **Inicio rápido** ). Desactive la casilla **Cargar extensiones por usuario al ejecutar como administrador** y reinicie Visual Studio.
 
 ## <a name="automatic-extension-updates"></a>Actualizaciones automáticas de extensión
  Las extensiones por usuario se actualizan automáticamente cuando hay disponible una versión nueva en la Galería de Visual Studio.  La nueva versión de la extensión se detecta y se instala en segundo plano y se ejecutará en el próximo reinicio de Visual Studio.
 
- Únicamente las extensiones por usuario se pueden actualizar automáticamente.  Las extensiones administrativas instaladas para todos los usuarios no se actualizarán y deberá seguir instalando las versiones nuevas mediante el nodo **Actualizaciones** del cuadro de diálogo **Extensiones y actualizaciones** . Puede ver las extensiones que se actualizarán automáticamente en el panel de detalles de la extensión del cuadro de diálogo **Extensiones y actualizaciones** .
+ Únicamente las extensiones por usuario se pueden actualizar automáticamente.  Las extensiones administrativas instaladas para todos los usuarios no se actualizarán y deberá seguir instalando las versiones nuevas mediante el nodo **Actualizaciones** del cuadro de diálogo **Extensiones y actualizaciones** . Puede ver las extensiones que se actualizarán automáticamente en el panel de detalles de la extensión del cuadro de diálogo **extensiones y actualizaciones** .
 
  Si desea deshabilitar las actualizaciones automáticas, puede deshabilitar la característica para todas las extensiones o solo para extensiones específicas.
 
 - Para deshabilitar las actualizaciones automáticas para todas las extensiones, haga clic en el vínculo **Cambiar la configuración de extensiones y actualizaciones** en el cuadro de diálogo **Extensiones y actualizaciones** y desactive la opción **Actualizar las extensiones automáticamente**.
 
-- Para deshabilitar las actualizaciones automáticas de una extensión específica, desactive la opción **Actualizar esta extensión automáticamente** en el panel de detalles de la extensión situado en el lado derecho del cuadro de diálogo **Extensiones y actualizaciones** .
+- Para deshabilitar las actualizaciones automáticas de una extensión específica, desactive la opción **Actualizar esta extensión automáticamente** en el panel de detalles de la extensión, en el lado derecho del cuadro de diálogo **extensiones y actualizaciones** .
 
 > [!NOTE]
 > A partir de Visual Studio 2015 Update 2, puede especificar (en **Herramientas / Opciones / Entorno / Extensiones y actualizaciones**) si quiere actualizaciones automáticas para las extensiones por usuario, todas las extensiones de usuario o ambas (la configuración predeterminada).

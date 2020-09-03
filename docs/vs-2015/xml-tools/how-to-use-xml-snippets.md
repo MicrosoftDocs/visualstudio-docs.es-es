@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4998fbc530cf4350f4a64b0fd527e0764eafce27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656259"
 ---
 # <a name="how-to-use-xml-snippets"></a>Cómo: Usar fragmentos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede invocar fragmentos XML mediante los dos siguientes comandos del menú contextual del Editor XML. El comando **Insertar fragmento** inserta el fragmento de código XML en la posición del cursor. El comando **rodear con** ajusta el fragmento de código XML alrededor del texto seleccionado. Cada fragmento XML tiene designados tipos de fragmentos. Los tipos de fragmentos de código determinan si el fragmento de código está disponible con el comando **Insertar fragmento** , el comando **rodear con** o ambos.
+Puede invocar fragmentos XML mediante los dos siguientes comandos del menú contextual del Editor XML. El comando **Insertar fragmento** inserta el fragmento XML en la posición del cursor. El comando **Delimitar con** ajusta el fragmento XML alrededor del texto seleccionado. Cada fragmento XML tiene designados tipos de fragmentos. Los tipos de fragmentos determinan si el fragmento está disponible con el comando **Insertar fragmento**, el comando **Delimitar con** o ambos.
 
  Una vez que el fragmento XML se ha agregado al editor, todos los campos editables del fragmento se resaltan en amarillo y el cursor se coloca en el primer campo editable.
 
 ## <a name="insert-snippet"></a>Insertar fragmento
- En los procedimientos siguientes se describe cómo obtener acceso al comando **Insertar fragmento de código** .
+ Los procedimientos siguientes describen cómo tener acceso al comando **Insertar fragmento**.
 
 > [!NOTE]
 > El comando **Insertar fragmento de código** también está disponible a través del método abreviado de teclado (Ctrl + K, luego Ctrl + X).
@@ -33,7 +33,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
 
 1. Coloque el cursor en el lugar en el que desea insertar el fragmento XML.
 
-2. Haga clic con el botón derecho y seleccione **Insertar fragmento de código**.
+2. Haga clic con el botón derecho y seleccione **Insertar fragmento**.
 
      Se muestra una lista de fragmentos XML disponibles.
 
@@ -43,7 +43,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
 
 1. Coloque el cursor en el lugar en el que desea insertar el fragmento XML.
 
-2. En el menú **edición** , seleccione **IntelliSense**y, a continuación, seleccione **Insertar fragmento de código**.
+2. En el menú **Edición**, seleccione **IntelliSense** y, a continuación, seleccione **Insertar fragmento**.
 
      Se muestra una lista de fragmentos XML disponibles.
 
@@ -73,7 +73,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
 4. Escriba el nombre de acceso directo del fragmento y presione TAB para invocar el fragmento XML.
 
 ## <a name="surround-with"></a>Delimitar con
- En los procedimientos siguientes se describe cómo tener acceso al comando **envolver con** .
+ Los procedimientos siguientes describen cómo tener acceso al comando **Delimitar con**.
 
 > [!NOTE]
 > El comando **rodear con** también está disponible a través del método abreviado de teclado (Ctrl + K, luego Ctrl + S).
@@ -82,7 +82,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
 
 1. Seleccione el texto que se va a rodear en el Editor XML.
 
-2. Haga clic con el botón derecho y seleccione **rodear con**.
+2. Haga clic con el botón derecho y seleccione **Delimitar con**.
 
      Se muestra una lista de bordes disponibles con fragmentos XML.
 
@@ -92,7 +92,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
 
 1. Seleccione el texto que se va a rodear en el Editor XML.
 
-2. En el menú **edición** , seleccione **IntelliSense**y, a continuación, seleccione **rodear con**.
+2. En el menú **Edición**, seleccione **IntelliSense** y, a continuación, seleccione **Delimitar con**.
 
      Se muestra una lista de bordes disponibles con fragmentos XML.
 
@@ -107,7 +107,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
 
  Si presiona INTRO o ESC se cancela la edición de los campos y el editor vuelve a su estado normal.
 
- Los colores predeterminados para los campos de fragmentos de código editables se pueden cambiar modificando el valor del campo fragmento de código en el panel **fuentes y colores** del cuadro de diálogo **Opciones** . Para obtener más información, vea [Cómo: cambiar fuentes y colores en el editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+ Los colores predeterminados de los campos editables de fragmento de código se pueden cambiar si modifica la opción Campo de fragmento de código del panel **Fuentes y colores** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Cómo: cambiar fuentes y colores en el editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Fragmentos de código XML](../xml-tools/xml-snippets.md) [Cómo: generar un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md) [Cómo: crear fragmentos](../xml-tools/how-to-create-xml-snippets.md) de código XML

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Vista de mensajes de control | Documentos de Microsoft
+title: Procedimiento para controlar la vista Mensajes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,23 +13,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66e7b546b507f1f96dbd4aa4a62b4db501eff2fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185159"
 ---
 # <a name="how-to-control-messages-view"></a>Procedimiento Controlar la vista Mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Con Spy ++, tiene un gran control sobre el contenido de un [vista mensajes](../debugger/messages-view.md) ventana. También puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) mostrando los mensajes en cualquier momento y se puede especificar:  
+Con Spy++, tiene un control considerable sobre el contenido de una ventana [Vista Mensajes](../debugger/messages-view.md). Puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) la representación de los mensajes en cualquier momento, y puede especificar lo siguiente:  
   
-- Los tipos de mensajes que desea ver.  
+- Los tipos de mensajes que quiere ver.  
   
-- Qué de windows que desea supervisar.  
+- Las ventanas que quiere supervisar.  
   
-- El formato de presentación para las líneas del mensaje.  
+- El formato de presentación de las líneas de mensaje.  
   
-  Estas opciones están disponibles desde el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), y se aplican solo a activo [vista mensajes](../debugger/messages-view.md) ventana. Para abrir este cuadro de diálogo, elija **los mensajes de registro** desde el **Spy** menú.  
+  Estas opciones están disponibles en el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md) y solo se aplican a la ventana [Vista Mensajes](../debugger/messages-view.md) activa. Para abrir este cuadro de diálogo, elija **Mensajes de registro** en el menú de **Spy**.  
   
-  Existen tres paneles con pestañas de opciones de mensaje. Para obtener más información, consulte [Windows ficha, cuadro de diálogo Opciones de mensaje](../debugger/windows-tab-message-options-dialog-box.md), [mensajes ficha, cuadro de diálogo Opciones de mensaje](../debugger/messages-tab-message-options-dialog-box.md), y [ficha salida, cuadro de diálogo Opciones de mensaje](../debugger/output-tab-message-options-dialog-box.md).
+  Hay tres paneles con pestañas de opciones de mensaje disponibles. Para obtener más información, vea [Pestaña Ventanas (Cuadro de diálogo Opciones de mensaje)](../debugger/windows-tab-message-options-dialog-box.md), [Pestaña Mensajes (Cuadro de diálogo Opciones de mensaje)](../debugger/messages-tab-message-options-dialog-box.md) y [Pestaña Salida (Cuadro de diálogo Opciones de mensaje)](../debugger/output-tab-message-options-dialog-box.md).

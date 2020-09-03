@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c205ff68ebc51d0b0f5b32038763c1741855d7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656104"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depurar una hoja de estilos XSLT
@@ -37,13 +37,13 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos
 
     La hoja de estilos se abre en el Editor XML.
 
-3. Haga clic en el botón Examinar ( **...** ) en el campo de **entrada** de la ventana Propiedades del documento.
+3. Haga clic en el botón Examinar ( **...** ) en el campo **Entrada** de la ventana de propiedades del documento.
 
-4. Busque el archivo Books. XML y haga clic en **abrir**.
+4. Busque el archivo de books.xml y haga clic en **abrir**.
 
     De esta forma se establece el archivo del documento de origen que se utilizará para la transformación XSLT.
 
-5. Haga clic con el botón secundario en la etiqueta de inicio `xsl:if`, seleccione punto de **interrupción**y haga clic en **Insertar punto de interrupción**.
+5. Haga clic con el botón secundario en la `xsl:if` etiqueta de inicio, seleccione punto de **interrupción**y haga clic en **Insertar punto de interrupción**.
 
 6. Haga clic en el botón **depurar XSL** en la barra de herramientas del editor XML.
 
@@ -55,7 +55,7 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos
 
    La ventana **salida XSL** muestra la salida de la transformación XSL. Esta ventana es independiente de la ventana de **salida de Visual Studio** .
 
-## <a name="watch-window"></a>Ventana Inspección
+## <a name="watch-window"></a>Ventana de inspección
 
 #### <a name="to-use-the-watch-window"></a>Para utilizar la ventana Inspección
 
@@ -154,5 +154,5 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos
 </bookstore>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)

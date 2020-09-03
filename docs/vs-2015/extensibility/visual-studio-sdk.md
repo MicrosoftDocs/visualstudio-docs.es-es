@@ -15,10 +15,10 @@ caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850376"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
@@ -56,7 +56,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
  Aproveche las ventajas del [servicio de imágenes y el catálogo](../extensibility/image-service-and-catalog.md) para una excelente administración de imágenes y soporte técnico para un gran número de PPP y de los mismos.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Búsqueda e instalación de extensiones de Visual Studio existentes  
- Puede encontrar extensiones de Visual Studio en el cuadro de diálogo **extensiones y actualizaciones** en el menú **herramientas** . Para más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). También puede buscar extensiones en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
+ Puede encontrar extensiones de Visual Studio en el cuadro de diálogo **extensiones y actualizaciones** en el menú **herramientas** . Para obtener más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). También puede buscar extensiones en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Referencia de Visual Studio SDK  
  Puede encontrar la referencia de la API del SDK de Visual Studio en [referencia de Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  
@@ -75,13 +75,13 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
   
 - [Extender Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Cómo: migrar proyectos de extensibilidad a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
  [Preguntas más frecuentes: convertir complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Administrar varios subprocesos en código administrado](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md)   
- [Agregar comandos a barras de herramientas](../extensibility/adding-commands-to-toolbars.md)   
+ [Agregar comandos a las barras de herramientas](../extensibility/adding-commands-to-toolbars.md)   
  [Extender y personalizar ventanas de herramientas](../extensibility/extending-and-customizing-tool-windows.md)   
  [Extensiones del editor y del servicio de lenguaje](../extensibility/editor-and-language-service-extensions.md)   
  [Ampliar proyectos](../extensibility/extending-projects.md)   
@@ -89,12 +89,12 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
  [Crear plantillas de proyecto y de elemento personalizadas](../extensibility/creating-custom-project-and-item-templates.md)   
  [Extender propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md)   
  [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
- [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)   
+ [Uso y suministro de servicios](../extensibility/using-and-providing-services.md)   
  [Extender Servicios conectados](../extensibility/extending-connected-services.md)   
  [Administrar VSPackages](../extensibility/managing-vspackages.md)   
-   de [Shell aislado de Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
+ [Shell aislado de Visual Studio](../extensibility/visual-studio-isolated-shell.md)   
  [Envío de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Dentro del SDK de Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Compatibilidad con el SDK de Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   
-   de [archivo](../extensibility/archive.md)  
+ [Archivó](../extensibility/archive.md)   
  [Referencia de Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)

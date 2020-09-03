@@ -1,5 +1,5 @@
 ---
-title: Introducción a la extensibilidad del depurador ( Debugger Extensibility ) Microsoft Docs
+title: Introducción con extensibilidad del depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,34 +13,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738594"
 ---
-# <a name="get-started-with-debugger-extensibility"></a>Comience con la extensibilidad del depurador
-Proporciona [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] la información que necesita para crear y personalizar los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componentes del depurador que se usan para depurar programas desde el entorno.
+# <a name="get-started-with-debugger-extensibility"></a>Introducción a la extensibilidad del depurador
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Proporciona la información necesaria para crear y personalizar los componentes del depurador usados para depurar programas desde dentro del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]depuración ha agregado mejoras derivadas de las extensas pruebas de usabilidad realizadas en depuradores anteriores. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Puede usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración para recorrer paso a paso una aplicación en varios idiomas, o puede implementar la edición sobre la marcha de variables durante la depuración de aplicaciones y soluciones multilenguaje.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración ha agregado mejoras derivadas de las amplias pruebas de uso realizadas en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuradores anteriores. Puede usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración para recorrer paso a paso una aplicación de varios lenguajes, o puede implementar la edición inmediata de variables durante la depuración de aplicaciones y soluciones de varios lenguajes.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]la depuración se ejecuta fuera de proceso con el programa que se está depurando y, por lo tanto, es menos intrusiva en el espacio de proceso de la aplicación. Por lo tanto, es más fácil escribir componentes que interactúan con el depurador sin afectar al programa de depuración.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración se ejecuta fuera de proceso con el programa que se está depurando y, por lo tanto, es menos intrusivo en el espacio de proceso de la aplicación. Por consiguiente, es más fácil escribir componentes que interactúen con el depurador sin que ello afecte al programa de depuración.
 
- Para utilizar [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]mejor el , debe estar familiarizado con los siguientes elementos:
+ Para usar mejor el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , debe estar familiarizado con los siguientes elementos:
 
-- El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE)
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Entorno de desarrollo integrado (IDE)
 
-- El lenguaje de programación C++
+- Lenguaje de programación de C++
 
-- ATL COM
+- COM ATL
 
 ## <a name="in-this-section"></a>En esta sección
- [Hoja de ruta para ampliar el depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Describe el proceso de implementación de la depuración en el producto, según el compilador y su salida.
+ [Guía básica para extender el depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Describe el proceso de implementación de la depuración en el producto, dependiendo del compilador y de su salida.
 
- [Componentes del depurador](../../extensibility/debugger/debugger-components.md) Proporciona información general [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sobre los componentes de depuración, que incluyen el motor de depuración (DE), el evaluador de expresiones (EE) y el controlador de símbolos (SH).
+ [Componentes del depurador](../../extensibility/debugger/debugger-components.md) Proporciona información general sobre los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componentes de depuración, que incluyen el motor de depuración (de), el evaluador de expresiones (EE) y el controlador de símbolos (SH).
 
- [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md) Describe los principales conceptos arquitectónicos de depuración.
+ [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md) Describe los conceptos principales de la arquitectura de depuración.
 
- [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md) Explica cómo funciona el motor de depuración (DE) simultáneamente dentro de los contextos de evaluación de código, documentación y expresión. Describe, para cada uno de los tres contextos, la ubicación, la posición o la evaluación relevantes para ella.
+ [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md) Explica cómo el motor DE depuración (DE) funciona simultáneamente dentro del código, la documentación y los contextos de evaluación de expresiones. Describe, para cada uno de los tres contextos, la ubicación, la posición o la evaluación relevantes para él.
 
- [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md) Contiene vínculos a varias tareas de depuración, como iniciar un programa y evaluar expresiones.
+ [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md) Contiene vínculos a diversas tareas de depuración, como el inicio de un programa y la evaluación de expresiones.
