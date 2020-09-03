@@ -1,5 +1,5 @@
 ---
-title: NameSearchOptions | Documentos de Microsoft
+title: Namesearchoptions (| Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6d721ebc5849fc459d24173ad0500b4b1c12260f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182976"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica las opciones de búsqueda para los nombres de archivo y símbolos.  
+Especifica las opciones de búsqueda para los nombres de símbolos y archivos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,19 +50,19 @@ enum NameSearchOptions { 
  No se especifican opciones.  
   
  `nsfCaseSensitive`  
- Se aplica a una coincidencia de nombre distingue mayúsculas de minúsculas.  
+ Aplica una coincidencia de nombre que distingue entre mayúsculas y minúsculas.  
   
  `nsfCaseInsensitive`  
- Se aplica a una coincidencia de mayúsculas y minúsculas del nombre.  
+ Aplica una coincidencia de nombre que no distingue mayúsculas de minúsculas.  
   
  `nsfFNameExt`  
- Trata los nombres como rutas de acceso y se aplica a la coincidencia de nombres nombreDeArchivo.ext.  
+ Trata los nombres como rutas de acceso y aplica una coincidencia de nombre de archivo. ext.  
   
  `nsfRegularExpression`  
- Se aplica a una coincidencia de mayúsculas y minúsculas del nombre con asteriscos (*) y signos de interrogación (?) como caracteres comodín.  
+ Aplica una coincidencia de nombres que distingue entre mayúsculas y minúsculas mediante asteriscos (*) y signos de interrogación (?) como caracteres comodín.  
   
  `nsfUndecoratedName`  
- Solo se aplica a los símbolos que tienen tanto no representativos y nombres representativos.  
+ Solo se aplica a símbolos que tienen nombres no representativos y representativos.  
   
 ## <a name="remarks"></a>Comentarios  
  Los valores de esta enumeración se pasan a los métodos siguientes:  
@@ -74,10 +74,10 @@ enum NameSearchOptions { 
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: dia2.h  
+ Encabezado: Dia2. h  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession:: Findchildren (](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession:: findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

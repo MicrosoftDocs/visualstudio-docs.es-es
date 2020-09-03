@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON Microsoft Docs
+title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737771"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Proporciona la razón por la que un punto de interrupción no estaba enlazado.
+Proporciona la razón por la que se desenlaza un punto de interrupción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,26 +46,26 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `BPUR_UNKNOWN`\
 La razón es desconocida.
 
 `BPUR_CODE_UNLOADED`\
-El código que contiene el punto de interrupción se ha descargado.
+Se ha descargado el código que contiene el punto de interrupción.
 
 `BPUR_BREAKPOINT_REBIND`\
-El punto de interrupción se ha rebotado en una ubicación diferente. Esto puede suceder después de las operaciones Editar y Continuar cuando se mueve el punto de interrupción, o cuando el punto de interrupción está enlazado a un archivo con una ruta de acceso que ya no es válida.
+El punto de interrupción se ha reenlazado a una ubicación diferente. Esto puede ocurrir después de las operaciones de editar y continuar cuando se mueve el punto de interrupción, o cuando el punto de interrupción se enlaza a un archivo con una ruta de acceso que ya no es válida.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Se determina que el punto de interrupción es erróneo después de enlazarlo. Esto sucede con puntos de interrupción administrados cuyas condiciones ya no son válidas.
+El punto de interrupción se determina como erróneo una vez enlazado. Esto sucede con los puntos de interrupción administrados cuyas condiciones ya no son válidas.
 
 ## <a name="remarks"></a>Observaciones
-Devuelta por el [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.
+Devuelto por el método [GetReason (](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

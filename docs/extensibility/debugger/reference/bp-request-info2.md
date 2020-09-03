@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO2 de la casa de la inser Microsoft Docs
+title: BP_REQUEST_INFO2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 04d1db2ca8176678d8a72a84ede2bddcbfa2f152
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737877"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
-Contiene la información necesaria para implementar un punto de interrupción, incluido el GUID del proveedor, la restricción y el punto de seguimiento.
+Contiene la información necesaria para implementar un punto de interrupción, incluidos el GUID del proveedor, la restricción y el punto de seguimiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,51 +65,51 @@ public struct BP_REQUEST_INFO2 {
 
 ## <a name="members"></a>Miembros
 `dwFields`\
-Una combinación de indicadores de la [enumeración BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que especifica qué campos se rellenan.
+Combinación de marcas de la enumeración [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que especifica qué campos se rellenan.
 
 `guidLanguage`\
 GUID de lenguaje.
 
 `bpLocation`\
-La [estructura BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) que especifica el tipo de la ubicación del punto de interrupción.
+Estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) que especifica el tipo de ubicación del punto de interrupción.
 
 `pProgram`\
-El [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa la aplicación en la que se produce el punto de interrupción.
+El objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa la aplicación en la que se produce el punto de interrupción.
 
 `bstrProgramName`\
-El nombre de la aplicación en la que se produce el punto de interrupción.
+Nombre de la aplicación en la que se produce el punto de interrupción.
 
 `pThread`\
-El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso en el que se produce el punto de interrupción.
+El objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso en el que se produce el punto de interrupción.
 
 `bstrThreadName`\
-El nombre del subproceso en el que se produce el punto de interrupción.
+Nombre del subproceso en el que se produce el punto de interrupción.
 
 `bpCondition`\
-La [estructura BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que describe las condiciones en las que se desencadenará el punto de interrupción.
+[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura que describe las condiciones en las que se activará el punto de interrupción.
 
 `bpPassCount`\
-La [estructura BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que contiene la información de recuento de pasadas del punto de interrupción.
+[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estructura que contiene la información de recuento de pases del punto de interrupción.
 
 `dwFlags`\
-Una combinación de indicadores de la [enumeración BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) que especifica los indicadores para el punto de interrupción solicitado.
+Combinación de marcas de la enumeración [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) que especifica las marcas del punto de interrupción solicitado.
 
 `guidVendor`\
-GUID del proveedor. Puede ser un valor nulo.
+GUID del proveedor. Puede ser un valor null.
 
 `bstrConstraint`\
-Nombre de la restricción de punto de interrupción. Puede ser un valor nulo.
+Nombre de la restricción de punto de interrupción. Puede ser un valor null.
 
 `bstrTracepoint`\
-Nombre del punto de seguimiento. Puede ser un valor nulo.
+Nombre del punto de seguimiento. Puede ser un valor null.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura es devuelta por el [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) método.
+El método [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) devuelve esta estructura.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

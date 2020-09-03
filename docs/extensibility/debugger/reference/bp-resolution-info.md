@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO de la casa de la casa de Microsoft Docs
+title: BP_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737829"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
-Describe la información de punto de interrupción enlazado para un punto de interrupción de código o un punto de interrupción de datos.
+Describe la información de punto de interrupción enlazada para un punto de interrupción de código o un punto de interrupción de datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,24 +47,24 @@ public struct BP_RESOLUTION_INFO {
 
 ## <a name="members"></a>Miembros
 `dwFields`\
-Colección de indicadores de la [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumeraciones que especifica qué campos se rellenan.
+Colección de marcas de [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumeraciones que especifica qué campos se rellenan.
 
 `bpResLocation`\
-La [estructura BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) que especifica la ubicación del punto de interrupción en el código o los datos.
+Estructura [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) que especifica la ubicación del punto de interrupción en el código o en los datos.
 
 `pProgram`\
-El [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa la aplicación en la que se produjo el error de punto de interrupción.
+El objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa la aplicación en la que se produjo el error de punto de interrupción.
 
 `pThread`\
-El [objeto IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso en el que se ejecuta la aplicación que contiene el error de punto de interrupción.
+El objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso en el que se está ejecutando la aplicación que contiene el error de punto de interrupción.
 
 ## <a name="remarks"></a>Observaciones
 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)devuelve esta estructura.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

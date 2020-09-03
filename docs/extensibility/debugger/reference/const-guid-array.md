@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY de la casa de la ins Microsoft Docs
+title: CONST_GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737635"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-Estructura que contiene una `GUID`lista de s.
+Estructura que contiene una lista de `GUID` s.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,20 +43,20 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>Miembros
 `dwCount`\
-Número `GUID`de s `Members` en la matriz.
+Número de `GUID` s en la `Members` matriz.
 
 `Members`\
-Matriz `GUID`de s.
+Matriz de `GUID` s.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura se pasa a la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método y se devuelve desde el [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) y [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) métodos.
+Esta estructura se pasa al método [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) y se devuelve desde los métodos [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) y [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .
 
 El propietario de una instancia de esta estructura es responsable de liberar cualquier memoria asignada.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

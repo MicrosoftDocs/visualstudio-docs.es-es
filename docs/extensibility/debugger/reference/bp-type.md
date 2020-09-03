@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE de la casa de la casa de Microsoft Docs
+title: BP_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737791"
 ---
 # <a name="bp_type"></a>BP_TYPE
-Especifica si el punto de interrupción se encuentra en una ubicación de código, es una ubicación de datos o es otro tipo de punto de interrupción.
+Especifica si el punto de interrupción está en una ubicación de código, es una ubicación de datos o es otro tipo de punto de interrupción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `BPT_NONE`\
 No especifica ningún tipo de punto de interrupción.
 
@@ -57,15 +57,15 @@ Especifica un punto de interrupción de código.
 Especifica un punto de interrupción de datos.
 
 `BPT_SPECIAL`\
-Especifica un punto de interrupción que no es ni un código ni un tipo de datos. Este tipo está en desuso y no se debe usar.
+Especifica un punto de interrupción que no es un código ni un tipo de datos. Este tipo está en desuso y no debe usarse.
 
 ## <a name="remarks"></a>Observaciones
-Se pasa como parámetro a los métodos [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) y [GetBreakpointType.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)
+Se pasa como parámetro a los métodos [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) y [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ec0124a6085e86c1656237a23ab4733c39c35646
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182984"
 ---
-# <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
+# <a name="idiasymbolget_registertype"></a>IDiaSymbol::get_registerType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el tipo de registro.  
@@ -32,10 +32,10 @@ HRESULT get_registerType(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `DWORD` que contiene el tipo de registro.  
+ enuncia Un puntero a un `DWORD` que contiene el tipo de registro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
