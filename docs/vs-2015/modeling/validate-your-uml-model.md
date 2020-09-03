@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dfaf19e358d96b7737b06880d6fa4581b5c54f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659372"
 ---
 # <a name="validate-your-uml-model"></a>Validar el modelo UML
@@ -58,7 +58,7 @@ Algunos de los modelos UML que trace en Visual Studio podrían no ser válidos e
 
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Para deshabilitar o desinstalar una extensión de Visual Studio
 
-1. En el menú **herramientas** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], haga clic en **extensiones y actualizaciones**.
+1. En el menú [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Herramientas**, haga clic en **Extensiones y actualizaciones**.
 
 2. Junto a la extensión, haga clic en **deshabilitar** para deshabilitar temporalmente la extensión. Puede volver a habilitarla más adelante volviendo a la ventana **extensiones y actualizaciones** .
 
@@ -68,5 +68,5 @@ Algunos de los modelos UML que trace en Visual Studio podrían no ser válidos e
 
 3. Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [crear modelos para la aplicación](../modeling/create-models-for-your-app.md) [usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)

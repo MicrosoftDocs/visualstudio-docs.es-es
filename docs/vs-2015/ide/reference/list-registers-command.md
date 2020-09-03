@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659499"
 ---
 # <a name="list-registers-command"></a>Mostrar registros (Comando)
@@ -36,7 +36,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Modificadores
- /Display [{`register`&#124; `registerGroup`}...] Muestra los valores del `register` o `registerGroup` especificados. Si no hay ningún objeto `register` o `registerGroup` especificado, se muestra la lista predeterminada de registros. Si no se especifica ningún modificador, el comportamiento es el mismo. Por ejemplo:
+ /Display [{ `register`&#124;`registerGroup` }...] Muestra los valores del especificado `register` o `registerGroup` . Si no hay ningún objeto `register` o `registerGroup` especificado, se muestra la lista predeterminada de registros. Si no se especifica ningún modificador, el comportamiento es el mismo. Por ejemplo:
 
  `Debug.ListRegisters /Display eax`
 
@@ -46,11 +46,11 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  /List muestra todos los grupos de registros de la lista.
 
- /Watch [{`register`&#124; `registerGroup`}...] Agrega uno o más valores de `register` o `registerGroup` a la lista.
+ /Watch [{ `register`&#124;`registerGroup` }...] Agrega uno o varios `register` `registerGroup` valores o a la lista.
 
- /UNWatch [{`register`&#124; `registerGroup`}...] Quita uno o varios valores `register` o `registerGroup` de la lista.
+ /UNWatch [{ `register`&#124;`registerGroup` }...] Quita uno o varios `register` `registerGroup` valores o de la lista.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  El alias `r` se puede usar en lugar de `Debug.ListRegisters`.
 
 ## <a name="example"></a>Ejemplo
@@ -60,5 +60,5 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Aspectos básicos de la depuración de los [comandos de Visual Studio](../../ide/reference/visual-studio-commands.md) [: ventana registros](../../debugger/debugging-basics-registers-window.md) [Cómo: usar la ventana registros](../../debugger/how-to-use-the-registers-window.md)

@@ -1,5 +1,5 @@
 ---
-title: No se puede cambiar el cuadro de diálogo valor | Documentos de Microsoft
+title: Cuadro de diálogo No se puede cambiar el valor | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,22 +20,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bfe275411346e499312ba51c50a3a2ac3f4ed7d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161648"
 ---
-# <a name="cannot-change-value-dialog-box"></a>No se puede cambiar el valor (cuadro de diálogo)
+# <a name="cannot-change-value-dialog-box"></a>Cuadro de diálogo No se puede cambiar el valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Error  
- `The value of this variable cannot be changed` &#124;`The name` *nombre* `does not exist in the current context` &#124; *otros mensajes*  
+ `The value of this variable cannot be changed` &#124; `The name` *nombre* `does not exist in the current context` &#124; *otros mensajes*  
   
  Este cuadro de mensaje aparece al intentar cambiar el contenido de una variable a un valor no válido en una ventana del depurador (ventanas Automático, Inspección o Variables locales) o en el cuadro de diálogo Inspección rápida. Por ejemplo, este cuadro de mensaje aparece si intenta establecer el valor de una variable entera a una cadena de caracteres.  
   
-## <a name="solution"></a>Solución  
+## <a name="solution"></a>Soluciones  
  Asegúrese de que el valor de entrada que escribe en la ventana del depurador o en el cuadro de diálogo Inspección rápida representa un valor válido para la variable que está intentando establecer.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Expresiones en el depurador](../debugger/expressions-in-the-debugger.md)

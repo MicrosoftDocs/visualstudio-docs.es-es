@@ -1,5 +1,5 @@
 ---
-title: Elemento de referencia (Plantillas de Visual Studio) Microsoft Docs
+title: Reference (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701623"
 ---
-# <a name="reference-element-visual-studio-templates"></a>Elemento Reference (plantillas de Visual Studio)
+# <a name="reference-element-visual-studio-templates"></a>Reference (elemento, plantillas de Visual Studio)
 Especifica la referencia de ensamblado para agregar cuando el elemento se agrega a un proyecto.
 
- \<VSTemplate \<> TemplateContent \< \<> referencias>>
+ \<VSTemplate> \<TemplateContent>
+ \<References>
+ \<Reference>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +46,21 @@ Especifica la referencia de ensamblado para agregar cuando el elemento se agrega
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[ensamblaje](../extensibility/assembly-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica información sobre un ensamblado, que la plantilla utiliza para agregar una referencia de ese ensamblado a los proyectos. Debe haber `Assembly` un elemento `Reference` en cada elemento.|
+|[Assembl](../extensibility/assembly-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica información sobre un ensamblado, que la plantilla utiliza para agregar una referencia de ese ensamblado a los proyectos. Debe haber un `Assembly` elemento en cada `Reference` elemento.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Referencias](../extensibility/references-element-visual-studio-templates.md).|Agrupa las referencias de ensamblado que la plantilla agrega a los proyectos.|
+|[Referencias](../extensibility/references-element-visual-studio-templates.md)|Agrupa las referencias de ensamblado que la plantilla agrega a los proyectos.|
 
 ## <a name="remarks"></a>Observaciones
  `Reference` es un elemento secundario obligatorio de `References`.
 
- Los `Reference` `References` elementos y solo se pueden utilizar `Type` en archivos `Item` *.vstemplate* que tengan un valor de atributo de .
+ Los `Reference` `References` elementos y solo se pueden usar en los archivos *. vstemplate* que tienen un `Type` valor de atributo de `Item` .
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo `TemplateContent` siguiente se muestra el elemento de una plantilla de elemento. Este XML agrega referencias a los ensamblados *System.dll* y *System.Data.dll.*
+ En el ejemplo siguiente se muestra el `TemplateContent` elemento de una plantilla de elemento. Este XML agrega referencias a los ensamblados de *System.dll* y *System.Data.dll* .
 
 ```xml
 <TemplateContent>
@@ -79,5 +81,5 @@ Especifica la referencia de ensamblado para agregar cuando el elemento se agrega
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

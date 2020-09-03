@@ -1,5 +1,5 @@
 ---
-title: Variante de compresión de textura BC | Documentos de Microsoft
+title: BC (variante de compresión de textura) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161700"
 ---
-# <a name="bc-texture-compression-variant"></a>BC (Variante de compresión de textura)
+# <a name="bc-texture-compression-variant"></a>BC (variante de compresión de textura)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8.  
@@ -63,5 +63,5 @@ Habilita la compresión de bloque en todas las texturas que tengan una variante 
 ## <a name="example"></a>Ejemplo  
  Esta variante comprime las texturas en bloque en tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas sin comprimir consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, ya que la compresión basada en bloque requiere una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que comprima las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Variante de dimensiones de textura Mitad/cuarto](../debugger/half-quarter-texture-dimensions-variant.md)

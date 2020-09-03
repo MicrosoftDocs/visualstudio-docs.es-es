@@ -1,5 +1,5 @@
 ---
-title: m_stateflags (campo) | Microsoft Docs
+title: m_stateFlags campo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 794ab8baac441fc14d41c2d30b9db4b0894e88e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149081"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags (Campo)
+# <a name="m_stateflags-field"></a>m_stateFlags (Campo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Almacena información sobre el estado actual de la <xref:System.Threading.Tasks.Task> objeto.  
+Almacena información sobre el estado actual del <xref:System.Threading.Tasks.Task> objeto.  
   
  **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
+ Dado que no puede tener acceso a este miembro interno desde el .NET Framework, se proporciona la siguiente sintaxis en el lenguaje intermedio común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,7 +35,7 @@ Almacena información sobre el estado actual de la <xref:System.Threading.Tasks.
 ```  
   
 ## <a name="remarks"></a>Comentarios  
- Normalmente, se utiliza el <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propiedad para tener acceso a este valor.  
+ Normalmente, se utiliza la <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propiedad para tener acceso a este valor.  
   
  Este miembro puede ser cualquier combinación de los siguientes valores:  
   
@@ -49,5 +49,5 @@ Almacena información sobre el estado actual de la <xref:System.Threading.Tasks.
   
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
-## <a name="see-also"></a>Vea también  
- [Clase Task](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Consulte también  
+ [Task (clase)](../../extensibility/debugger/task-class-internal-members.md)

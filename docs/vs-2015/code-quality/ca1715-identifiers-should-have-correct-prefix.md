@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545605"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Los identificadores deben tener el prefijo correcto
@@ -27,11 +27,11 @@ ms.locfileid: "85545605"
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1715: los identificadores deberían tener el prefijo correcto](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |Identificador de comprobación|CA1715|
-|Categoría|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Cambio problemático|Problemático: cuando se desencadena en interfaces.<br /><br /> No problemático: cuando se produce en parámetros de tipo genérico.|
 
 ## <a name="cause"></a>Causa

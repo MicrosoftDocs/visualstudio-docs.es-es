@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586853"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creación de un control de usuario de Windows Forms que admita el enlace de datos complejo
@@ -51,7 +51,7 @@ Durante este tutorial, aprenderá a:
 
 - Agregue el nuevo control arrastrándolo desde la ventana **Orígenes de datos** hasta **Form1**.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -102,11 +102,11 @@ En el caso de los controles complejos que admiten enlaces a datos, puede impleme
 
 ## <a name="create-a-data-source-from-your-database"></a>Crear un origen de datos a partir de la base de datos
 
-Utilice el Asistente para la **configuración de orígenes de datos** para crear un origen de datos basado en la tabla de `Customers` de la base de datos de ejemplo Northwind:
+Use el Asistente para la **configuración de orígenes de datos** para crear un origen de datos basado en la `Customers` tabla de la base de datos de ejemplo Northwind:
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , haga clic en **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
@@ -124,11 +124,11 @@ Utilice el Asistente para la **configuración de orígenes de datos** para crear
 
 8. Seleccione la tabla `Customers` y después haga clic en **Finalizar**.
 
-   **NorthwindDataSet** se agrega al proyecto y la tabla `Customers` aparece en la ventana **Orígenes de datos**.
+   **NorthwindDataSet** se agrega al proyecto y la `Customers` tabla aparece en la ventana orígenes de **datos** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Establecer la tabla Customers para usar el control ComplexDataGridView
 
-Dentro de la ventana **Orígenes de datos** puede establecer el control que se va a crear antes de arrastrar elementos a un formulario:
+Dentro de la ventana **orígenes de datos** , puede establecer el control que se va a crear antes de arrastrar elementos al formulario:
 
 1. Abra **Form1** en el diseñador.
 
@@ -142,9 +142,9 @@ Dentro de la ventana **Orígenes de datos** puede establecer el control que se v
 
 ## <a name="add-controls-to-the-form"></a>Agregar controles al formulario
 
-Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario. Arrastre el nodo **Customers** principal desde la ventana **Orígenes de datos** hasta el formulario. Compruebe que el control **ComplexDataGridView** se usa para mostrar los datos de la tabla.
+Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **orígenes de datos** hasta el formulario. Arrastre el nodo **Customers** principal desde la ventana **Orígenes de datos** hasta el formulario. Compruebe que el control **ComplexDataGridView** se usa para mostrar los datos de la tabla.
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 Presione **F5** para ejecutar la aplicación.
 
@@ -160,4 +160,4 @@ Según cuáles sean los requisitos de la aplicación, hay varios pasos que se pu
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Controles de formularios Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Windows Forms controles](/dotnet/framework/winforms/controls/index)

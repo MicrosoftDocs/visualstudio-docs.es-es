@@ -1,5 +1,5 @@
 ---
-title: Elija el cuadro de diálogo de los puntos de interrupción | Microsoft Docs
+title: Cuadro de diálogo Elegir puntos de interrupción | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161620"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Cuadro de diálogo Elegir puntos de interrupción
@@ -40,11 +40,11 @@ El cuadro de diálogo **Elegir puntos de interrupción** se abre al intentar est
  **Puntos de interrupción**  
  Enumera los posibles puntos de interrupción que se pueden establecer a partir de la entrada ambigua. Se puede seleccionar uno o varios puntos de interrupción para establecer.  
   
- **All**  
+ **Todo**  
  Selecciona todos los puntos de interrupción que aparecen en el cuadro **Puntos de interrupción**.  
   
  **None**  
  Borra todos los puntos de interrupción que aparecen en el cuadro **Puntos de interrupción**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Usar puntos de interrupción](../debugger/using-breakpoints.md)

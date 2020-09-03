@@ -12,10 +12,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d495d0bf12c900d34a04a84e950b002494b7b5c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660396"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Proyecto de ejemplo para crear pruebas unitarias
@@ -23,9 +23,9 @@ ms.locfileid: "72660396"
 
 Este código de ejemplo se proporciona para su uso en los siguientes tutoriales:
 
-- [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este tutorial le guía por los pasos necesarios para crear y personalizar pruebas unitarias, ejecutarlas y examinar los resultados.
+- [Tutorial: crear y ejecutar pruebas unitarias para código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este tutorial le guía por los pasos necesarios para crear y personalizar pruebas unitarias, ejecutarlas y examinar los resultados.
 
-- [Tutorial: Ejecutar pruebas y ver cobertura de código](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Este tutorial muestra cómo ver los datos de cobertura de código, que indican la proporción de código del proyecto que se está probando.
+- [Tutorial: ejecutar pruebas y ver cobertura de código](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Este tutorial muestra cómo ver los datos de cobertura de código, que indican la proporción de código del proyecto que se está probando.
 
 - [Tutorial: Usar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, utilice la utilidad de línea de comandos MSTest.exe para ejecutar pruebas y ver los resultados.
 
@@ -131,5 +131,5 @@ namespace BankAccountNS
 ## <a name="working-with-the-code"></a>Trabajar con el código
  Para trabajar con este código, primero tiene que crear un proyecto para él en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Siga los pasos de la sección "Preparar el tutorial" en [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Tutorial: crear y ejecutar pruebas unitarias para código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) [Tutorial: ejecutar pruebas y ver cobertura de código](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8) [Tutorial: usar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

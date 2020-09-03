@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetScope ? Microsoft Docs
+title: 'IDebugDisassemblyStream2:: Getscope (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 222a3b2c6110f1998a4848f382694b6b999cd632
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732137"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
@@ -41,7 +41,7 @@ int GetScope( 
 
 ## <a name="parameters"></a>Parámetros
 `pdwScope`\
-[fuera] Devuelve un valor de la [enumeración DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) que describe el ámbito de esta secuencia de desensamblado.
+enuncia Devuelve un valor de la enumeración [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) que describe el ámbito de esta secuencia de desensamblado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

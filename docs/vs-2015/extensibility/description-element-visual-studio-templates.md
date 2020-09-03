@@ -1,5 +1,5 @@
 ---
-title: Elemento Description (plantillas de Visual Studio) | Microsoft Docs
+title: Description (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162113"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica la descripción de la plantilla tal como aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
+Especifica la descripción de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .  
   
  \<VSTemplate>  
- \<TemplateData >  
- \<Descripción >  
+ \<TemplateData>  
+ \<Description>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,30 +43,30 @@ Especifica la descripción de la plantilla tal como aparece en el el **nuevo pro
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIPCIÓN|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
-|`Package`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Un identificador GUID que especifica el id. paquete de Visual Studio.|  
-|`ID`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Especifica el identificador de recurso de Visual Studio.|  
+|`Package`|Atributo opcional, para escenarios de usuario avanzados.<br /><br /> Un identificador GUID que especifica el id. paquete de Visual Studio.|  
+|`ID`|Atributo opcional, para escenarios de usuario avanzados.<br /><br /> Especifica el identificador de recurso de Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto a menos que se usen los atributos `Package` y `ID`.  
   
- El texto proporciona una descripción de la plantilla.  
+ En el texto se proporciona una descripción de la plantilla.  
   
 ## <a name="remarks"></a>Comentarios  
- `Description` es un elemento secundario obligatorio del elemento `TemplateData`.  
+ `Description` es un elemento secundario necesario del `TemplateData` elemento.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación.  
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -92,6 +92,6 @@ Especifica la descripción de la plantilla tal como aparece en el el **nuevo pro
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

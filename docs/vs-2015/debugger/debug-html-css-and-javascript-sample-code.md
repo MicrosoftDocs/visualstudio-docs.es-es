@@ -1,5 +1,5 @@
 ---
-title: Depurar código de ejemplo HTML, CSS y JavaScript | Documentos de Microsoft
+title: Depurar código de ejemplo HTML, CSS y JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161469"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Depurar código de ejemplo HTML, CSS y JavaScript
@@ -26,10 +26,10 @@ ms.locfileid: "68161469"
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- El código de este tema es el archivo de ejemplo para [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md). Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
+ El código de este tema es el archivo de ejemplo para [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md). Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
   
 ## <a name="sample-code"></a>Código de ejemplo  
- El siguiente código HTML se usa en la etiqueta \<body> del Inicio rápido.  
+ El siguiente código HTML se usa en la \<body> etiqueta de la guía de inicio rápido.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -104,5 +104,5 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 })();  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
