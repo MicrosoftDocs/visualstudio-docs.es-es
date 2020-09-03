@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282584"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
@@ -55,7 +55,7 @@ En la tabla siguiente se muestra la configuración predeterminada interna de est
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**( \\ \P{ll}) ( \\ \p{Lu}) &#124;_ +**|Coincide con un carácter en minúscula seguido de un carácter en mayúsculas o un carácter de subrayado.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** representa los caracteres coincidentes en los primeros paréntesis de la expresión y el **$2** representa los caracteres coincidentes en el segundo paréntesis. El reemplazo es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
-|**SmartCaptionSuffix**|**:**|Representa un carácter anexado a la cadena devuelta. Por ejemplo, si el título es `Company Name` , el sufijo lo hace`Company Name:`|
+|**SmartCaptionSuffix**|**:**|Representa un carácter anexado a la cadena devuelta. Por ejemplo, si el título es `Company Name` , el sufijo lo hace `Company Name:`|
 
 > [!CAUTION]
 > Tenga mucho cuidado al realizar cualquier acción en el editor del registro. Realice una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el editor del registro, puede ocasionar problemas graves que pueden requerir la reinstalación del sistema operativo. Microsoft no garantiza que se puedan resolver los problemas que se produzcan con el editor del registro de forma incorrecta. Usa el Editor del Registro bajo tu propia responsabilidad.
