@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905835"
 ---
 # <a name="how-to-get-a-service"></a>Cómo: obtener un servicio
@@ -85,7 +85,7 @@ if (sp != null)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: proporcionar un servicio](../extensibility/how-to-provide-a-service.md)
 - [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)

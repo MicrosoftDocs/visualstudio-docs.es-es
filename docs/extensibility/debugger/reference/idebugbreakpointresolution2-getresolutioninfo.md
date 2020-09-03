@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo ? Microsoft Docs
+title: 'IDebugBreakpointResolution2:: GetResolutionInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734771"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-Obtiene la información de resolución de punto de interrupción que describe este punto de interrupción.
+Obtiene la información de resolución del punto de interrupción que describe este punto de interrupción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>Parámetros
 `dwFields`\
-[en] Una combinación de indicadores de la `pBPResolutionInfo` [enumeración BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) que determinan qué campos del parámetro se deben rellenar.
+de Combinación de marcas de la enumeración [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) que determinan qué campos del `pBPResolutionInfo` parámetro se van a rellenar.
 
 `pBPResolutionInfo`\
-[fuera] La [estructura BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) que se rellenará con información sobre este punto de interrupción.
+enuncia Estructura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) que se va a rellenar con información sobre este punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve un código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se `CDebugBreakpointResolution` implementa este método para un objeto simple que expone el [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfaz.
+ En el ejemplo siguiente se implementa este método para un `CDebugBreakpointResolution` objeto simple que expone la interfaz [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 
 ```
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(

@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT de la Microsoft Docs
+title: BP_PASSCOUNT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737903"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
@@ -43,20 +43,20 @@ public struct BP_PASSCOUNT {
 
 ## <a name="members"></a>Miembros
 `dwPassCount`\
-El número de veces que se pasa por encima del punto de interrupción antes de dispararlo.
+Número de veces que se va a pasar el punto de interrupción antes de activarlo.
 
 `stylePassCount`\
-Valor de la [enumeración BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) que especifica el estilo del recuento de pases de punto de interrupción.
+Un valor de la enumeración [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) que especifica el estilo del recuento de pasos de punto de interrupción.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura es un miembro de la estructura [BP_REQUEST_INFO.](../../../extensibility/debugger/reference/bp-request-info.md)
+Esta estructura es un miembro de la estructura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) .
 
-Esta estructura también se pasa como parámetro a los métodos[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) y[SetPassCount.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)
+Esta estructura también se pasa como parámetro a los métodos[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) y[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

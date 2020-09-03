@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300534"
 ---
 # <a name="more-debugging-features"></a>Más características de depuración
@@ -38,10 +38,10 @@ Esta sección contiene características adicionales que puede usar con el depura
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)  
  Describe las distintas ventanas de depuración y  
   
- [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)  
+ [Depuración Just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Explica la depuración Just-In-Time, que inicia el depurador automáticamente cuando se bloquea un programa que se ejecuta fuera de Visual Studio.  
   
- [Tutorial: Depurar en tiempo de diseño](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Tutorial: depurar en tiempo de diseño](../debugger/walkthrough-debugging-at-design-time.md)  
  Muestra cómo utilizar la ventana Inmediato de Visual Studio para ejecutar una función o subrutina mientras la aplicación no se está ejecutando. 
   
  [Editar y continuar](../debugger/edit-and-continue.md)  
@@ -49,5 +49,5 @@ Esta sección contiene características adicionales que puede usar con el depura
   
  [Usar archivos de volcado](../debugger/using-dump-files.md) de memoria Describe los archivos de volcado de memoria, incluidas las instrucciones para guardar y abrir. Los archivos de volcado de memoria contienen una instantánea del estado de su programa en algún momento determinado, normalmente después de un bloqueo. Si prueba el programa en un equipo que no tiene instalados los archivos de código fuente o PDB, puede guardar un archivo de volcado de memoria cuando se produzca un bloqueo y utilizarlo para depurar el bloqueo en el equipo de compilación que contiene los archivos de código fuente y PDB. 
   
- [Cómo: Restaurar los comandos ocultos del depurador](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Procedimiento Restablecer comandos ocultos del depurador](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Describe cómo hacer que estén visibles los comandos del depurador que la configuración predeterminada del IDE ha ocultado.

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3::GetRequestInfo2 ? Microsoft Docs
+title: 'IDebugBreakpointRequest3:: GetRequestInfo2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f5febf664da9cd69dbd88b70056d9eac953bf581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734837"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
@@ -43,16 +43,16 @@ int GetRequestInfo2(
 
 ## <a name="parameters"></a>Parámetros
 `dwFields`\
-[en] Una combinación de indicadores de la `pBPRequestInfo` [enumeración BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que determinan qué campos de se deben rellenar.
+de Combinación de marcas de la enumeración [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que determinan los campos de que `pBPRequestInfo` se van a rellenar.
 
 `bBPRequestInfo`\
-[fuera] La [estructura BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) que se debe rellenar.
+enuncia Estructura de [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) que se va a rellenar.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
- Hay más información en esta solicitud que se devuelve desde el [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) método.
+ Hay más información en esta solicitud que la que devuelve el método [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)

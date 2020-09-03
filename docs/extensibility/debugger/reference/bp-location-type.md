@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE de la casa de la Microsoft Docs
+title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737941"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
@@ -68,7 +68,7 @@ public enum enum_BP_LOCATION_TYPE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `BPLT_NONE`\
 No especifica ninguna ubicación de punto de interrupción.
 
@@ -76,10 +76,10 @@ No especifica ninguna ubicación de punto de interrupción.
 Especifica el tipo de ubicación del punto de interrupción como una línea de archivo.
 
 `BPLT_FUNC_OFFSET`\
-Especifica el tipo de ubicación del punto de interrupción como un desfase de función.
+Especifica el tipo de ubicación del punto de interrupción como un desplazamiento de función.
 
 `BPLT_CONTEXT`\
-Especifica el tipo de ubicación del punto de interrupción como contexto.
+Especifica el tipo de ubicación del punto de interrupción como un contexto.
 
 `BPLT_STRING`\
 Especifica el tipo de ubicación del punto de interrupción como una cadena.
@@ -94,7 +94,7 @@ Especifica el tipo de ubicación del punto de interrupción como una resolución
 Especifica el tipo de ubicación del punto de interrupción como una línea de código fuente.
 
 `BPLT_CODE_FUNC_OFFSET`\
-Especifica el tipo de ubicación del punto de interrupción como un desplazamiento de función de código.
+Especifica el tipo de ubicación del punto de interrupción como desplazamiento de función de código.
 
 `BPLT_CODE_CONTEXT`\
 Especifica el tipo de ubicación del punto de interrupción como contexto de código.
@@ -115,16 +115,16 @@ Especifica una máscara de bits, de modo que el tipo de punto de interrupción s
 Especifica una máscara de bits, de modo que el tipo de ubicación del punto de interrupción se puede extraer del valor.
 
 ## <a name="remarks"></a>Observaciones
-Se pasa como parámetro al método [GetLocationType.](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
+Se pasa como un parámetro al método [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) .
 
-Un tipo de ubicación de punto de interrupción se compone de un tipo de punto de interrupción y un tipo de ubicación. Esto significa que un tipo de ubicación de punto de `BPT_CODE`interrupción nunca es `BPLT_FILE_LINE`solo un tipo de punto de interrupción (por ejemplo, ) o un tipo de ubicación (por ejemplo, ). Las constantes predefinidas para todos los tipos de`BPLT_CODE_FILE_LINE` ubicación `BPLT_DATA_STRING`de punto de interrupción admitidos actualmente se incluyen en esta enumeración ( a través de ).
+Un tipo de ubicación de punto de interrupción se compone de un tipo de punto de interrupción y un tipo de ubicación. Esto significa que un tipo de ubicación de punto de interrupción nunca es simplemente un tipo de punto de interrupción (por ejemplo, `BPT_CODE` ) o un tipo de ubicación (por ejemplo, `BPLT_FILE_LINE` ). Las constantes predefinidas para todos los tipos de ubicación de puntos de interrupción admitidos actualmente se incluyen en esta enumeración ( `BPLT_CODE_FILE_LINE` a `BPLT_DATA_STRING` ).
 
-`BPT_CODE`y `BPT_DATA` son miembros de la [enumeración BP_TYPE.](../../../extensibility/debugger/reference/bp-type.md)
+`BPT_CODE` y `BPT_DATA` son miembros de la enumeración [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

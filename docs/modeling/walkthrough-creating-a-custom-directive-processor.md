@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532241"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
@@ -601,13 +601,13 @@ End Property
 
 4. Solo para Visual Basic, abra el menú **proyecto** y haga clic en **propiedades de CustomDP**. En la pestaña **aplicación** , en **espacio de nombres raíz**, elimine el valor predeterminado, `CustomDP` .
 
-5. En el menú **Archivo**, haga clic en **Guardar todo**.
+5. En el menú **Archivo** , haga clic en **Guardar todo**.
 
-6. En el menú **Compilar** , haga clic en **Compilar solución**.
+6. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ### <a name="build-the-project"></a>Compilar el proyecto
 
-Compile el proyecto. En el menú **Compilar** , haga clic en **Compilar solución**.
+Compile el proyecto. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ## <a name="register-the-directive-processor"></a>Registrar el procesador de directivas
 
@@ -668,7 +668,7 @@ En esta sección, agregará una clave para el procesador de directivas personali
    | Clase | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Ensamblado | REG_SZ | CustomDP.dll |
 
-6. Reinicie Visual Studio.
+6. Reinicie Visual Studio.
 
 ## <a name="test-the-directive-processor"></a>Probar el procesador de directivas
 

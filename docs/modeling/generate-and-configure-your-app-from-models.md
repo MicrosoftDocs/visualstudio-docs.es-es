@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114901"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
@@ -22,7 +22,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generar el código de la aplicación a partir de un modelo
  La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en la misma solución de Visual Studio en la que se mantiene el modelo. Para obtener más información, vea:
 
-- [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
 - [Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)
 
@@ -58,7 +58,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
 
      Por ejemplo, use un modelo para definir la navegación entre las páginas web y un modelo diferente para definir el diseño de las páginas.
 
-- **Modelar el requisito, no la solución.** Diseñe el modelo para que describa los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.
+- **Modele el requisito, no la solución.** Diseñe el modelo para que describa los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.
 
      Por ejemplo, el modelo de navegación web debe representar páginas web e hipervínculos entre ellos. El modelo de navegación web no debe representar fragmentos de HTML o clases de la aplicación.
 
@@ -70,8 +70,8 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
 
      Por ejemplo, un diagrama de clases UML es una colección de cuadros y flechas; con esta notación, en teoría, es posible definir cualquier cosa. Tenga en cuenta que no le recomendamos usar el diagrama de clases, excepto para describir un conjunto de tipos. Por ejemplo, puede adaptar los diagramas de clases para describir los distintos tipos de páginas Web.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)
 - [Cómo: Abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

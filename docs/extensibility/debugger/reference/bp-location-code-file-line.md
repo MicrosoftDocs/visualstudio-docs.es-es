@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FILE_LINE Microsoft Docs
+title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738013"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
@@ -35,18 +35,18 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 
 ## <a name="members"></a>Miembros
 `bstrContext`\
-El contexto del punto de interrupción, normalmente un método o nombre de función como se ve en una pila de llamadas.
+Contexto del punto de interrupción, normalmente un nombre de método o función tal y como se ha detectado en una pila de llamadas.
 
 `pDocPos`\
-El [objeto IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) que representa la posición del documento del punto de interrupción.
+El objeto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) que representa la posición del documento del punto de interrupción.
 
 ## <a name="remarks"></a>Observaciones
-Esta estructura es un miembro de la estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una unión.
+Esta estructura es miembro de la estructura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una Unión.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

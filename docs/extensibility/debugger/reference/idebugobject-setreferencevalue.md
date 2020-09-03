@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue ? Microsoft Docs
+title: 'IDebugObject:: SetReferenceValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726377"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
@@ -41,13 +41,13 @@ int SetReferenceValue(
 
 ## <a name="parameters"></a>Parámetros
 `pObject`\
-[en] Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa el nuevo valor de referencia.
+de Un objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el nuevo valor de referencia.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Este método hace de este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto una referencia `pObject` al valor del objeto especificado en el parámetro, desechando cualquier referencia anterior. Tenga en `IDebugObject` cuenta que este objeto ya debe ser un tipo de referencia.
+ Este método convierte a este objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) en una referencia al valor del objeto especificado en el `pObject` parámetro, lo que produce cualquier referencia anterior. Tenga en cuenta que este `IDebugObject` objeto debe ser ya un tipo de referencia.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

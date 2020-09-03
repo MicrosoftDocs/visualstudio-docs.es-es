@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum ? Microsoft Docs
+title: 'IDebugBreakpointChecksumRequest2:: getChecksum (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735170"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Recupera la suma de comprobación del documento para una solicitud de punto de interrupción dado el identificador único del algoritmo de suma de comprobación que se va a utilizar.
+Recupera la suma de comprobación del documento para una solicitud de punto de interrupción dado el identificador único del algoritmo de suma de comprobación que se va a usar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>Parámetros
 `guidAlgorithm`\
-[en] Identificador único del algoritmo de suma de comprobación.
+de Identificador único del algoritmo de suma de comprobación.
 
 `pChecksumData`\
-[fuera] Suma de comprobación de documentos para la solicitud de punto de interrupción.
+enuncia Suma de comprobación de documento para la solicitud de punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

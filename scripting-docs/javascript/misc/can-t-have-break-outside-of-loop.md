@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817663"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>'break' no puede estar fuera del bucle
@@ -34,7 +34,7 @@ break labelname;
   
 - Asegúrese de que la palabra clave **break** aparece dentro de un bucle envolvente o una instrucción switch.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Break (instrucción)](../../javascript/reference/break-statement-javascript.md)   
  [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)   
  [Solución de problemas de los scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

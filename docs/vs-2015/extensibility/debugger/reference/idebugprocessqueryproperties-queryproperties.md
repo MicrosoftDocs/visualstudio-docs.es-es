@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Microsoft Docs
+title: 'IDebugProcessQueryProperties:: QueryProperties | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ccbeddeb02044898fbfe1426a187e386ad31a058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202796"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Consultas de este método para los valores de una propiedad especificada al proceso de depuración.  
+Este método consulta los valores de propiedad especificados del proceso de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,10 +40,10 @@ int QueryProperties(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] Tamaño de las matrices que contiene las definiciones de propiedad y valores de propiedad.  
+ de Tamaño de las matrices que contienen las definiciones de propiedad y los valores de propiedad.  
   
  `dwPropType`  
- [in] Una matriz que contiene las definiciones de las propiedades consultadas. Los valores posibles son:  
+ de Una matriz que contiene las definiciones de las propiedades consultadas. Los valores posibles son:  
   
 - PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -52,13 +52,13 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
   `pvarPropValue`  
-  [out] Una matriz que contiene los valores de propiedad.  
+  enuncia Una matriz que contiene los valores de propiedad.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se usa en contadas ocasiones.  
+ Rara vez se usa este método.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

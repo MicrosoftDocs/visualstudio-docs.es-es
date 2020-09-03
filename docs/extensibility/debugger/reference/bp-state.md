@@ -1,5 +1,5 @@
 ---
-title: BP_STATE de la casa de la casa de Microsoft Docs
+title: BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737805"
 ---
 # <a name="bp_state"></a>BP_STATE
@@ -46,7 +46,7 @@ public enum enum_BP_STATE {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
 `BPS_NONE`\
 Especifica que no existe ningún punto de interrupción.
 
@@ -60,12 +60,12 @@ Especifica que el punto de interrupción está deshabilitado.
 Especifica que el punto de interrupción está habilitado.
 
 ## <a name="remarks"></a>Observaciones
-Se devuelve desde el [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) método.
+Se devuelve desde el método [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

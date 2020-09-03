@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4713931d70fd91dd57b85bc6fc749e62e03eb20b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905927"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>Tutorial: crear un editor personalizado
@@ -46,5 +46,5 @@ La plantilla de proyecto VSPackage puede crear un editor personalizado simple en
 
      El editor admite operaciones de cortar y pegar, buscar y reemplazar, y operaciones de apertura y carga.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [VSPackages](../extensibility/internals/vspackages.md)

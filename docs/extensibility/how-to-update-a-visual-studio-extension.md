@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905628"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Cómo: actualizar una extensión de Visual Studio
@@ -28,7 +28,7 @@ Puede actualizar una extensión de Visual Studio en el sistema mediante el uso d
 
 ## <a name="to-update-an-extension-on-your-system"></a>Para actualizar una extensión en el sistema
 
-1. En el menú **Herramientas** , haga clic en **Extensiones y actualizaciones**
+1. En el menú **Herramientas**, haga clic en **Extensiones y actualizaciones**.
 
 2. En el panel izquierdo, haga clic en **actualizaciones**.
 
@@ -60,6 +60,6 @@ Puede actualizar una extensión de Visual Studio en el sistema mediante el uso d
     > [!NOTE]
     > A partir de Visual Studio 2015 Update 2, puede especificar (en **herramientas**  >  **Opciones**de  >  **entorno**  >  **y actualizaciones**) Si quiere actualizaciones automáticas para las extensiones por usuario, todas las extensiones de usuario o ambas (la configuración predeterminada).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

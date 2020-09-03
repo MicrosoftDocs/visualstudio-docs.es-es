@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
+title: 'IDebugModule3:: SetJustMyCodeState | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2d7e5546465b64d42ab744f4b9cac8c159566701
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203153"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
@@ -40,10 +40,10 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>Parámetros  
  `fIsUserCode`  
- [in] Distinto de cero (`TRUE`) si el módulo debe considerarse como código de usuario, es cero (`FALSE`) si no debe hacerlo.  
+ de Distinto de cero ( `TRUE` ) si el módulo se debe considerar código de usuario, cero ( `FALSE` ) si no debe ser.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

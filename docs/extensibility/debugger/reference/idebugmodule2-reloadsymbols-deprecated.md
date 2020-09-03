@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::ReloadSymbols_Deprecated Microsoft Docs
+title: 'IDebugModule2:: ReloadSymbols_Deprecated | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e776434e17d90cd2c61c926bbf0100a44ecc524b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726920"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-OBSOLETO. NO USAR. Vuelve a cargar los símbolos de este módulo.
+OBSOLETO. NO USE. Vuelve a cargar los símbolos para este módulo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int ReloadSymbols( 
 
 ## <a name="parameters"></a>Parámetros
 `pszUrlToSymbols`\
-[en] La ruta de acceso al almacén de símbolos.
+de La ruta de acceso al almacén de símbolos.
 
 `pbstrDebugMessage`\
-[fuera] Devuelve un mensaje informativo, como un estado o un mensaje de error, que se muestra a la derecha del nombre del módulo en la ventana Módulos.
+enuncia Devuelve un mensaje informativo, como un estado o un mensaje de error, que se muestra a la derecha del nombre del módulo en la ventana módulos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Un motor de `E_FAIL`depuración siempre debe devolver .
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Un motor de depuración siempre debe devolver `E_FAIL` .
 
 ## <a name="remarks"></a>Observaciones
- Este método ya no es compatible. Implemente el método [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) en su lugar.
+ Este método ya no se admite. En su lugar, implemente el método [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

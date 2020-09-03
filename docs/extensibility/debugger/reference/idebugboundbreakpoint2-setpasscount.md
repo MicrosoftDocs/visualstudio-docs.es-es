@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetPassCount ? Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: SetPassCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bcc7bd57ce0c392a2874f107c6e4d8d5753399d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735431"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-Establece o cambia el recuento de pasadas asociado a este punto de interrupción enlazado.
+Establece o cambia el número de pasos asociado a este punto de interrupción enlazado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,15 +42,15 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>Parámetros
 `bpPassCount`\
-[en] La [estructura BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que especifica el recuento de pasadas.
+de Estructura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que especifica el número de pasos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de `BPS_DELETED` punto de interrupción enlazado se establece en (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de punto de interrupción enlazado se establece en `BPS_DELETED` (parte de la enumeración [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Observaciones
- El recuento de pasadas determina cuándo se activa el punto de interrupción. El recuento de pases o aciertos actual se puede obtener llamando al método [GetHitCount.](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)
+ El número de pasos determina cuándo se activa el punto de interrupción. El número de llamadas o el paso actual se puede obtener llamando al método [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) .
 
- Se pierde cualquier recuento de pasadas que se haya asociado anteriormente a este punto de interrupción.
+ Se pierde cualquier recuento de pasos que se asoció previamente con este punto de interrupción.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
