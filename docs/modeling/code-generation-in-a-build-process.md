@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546723"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar la transformación de texto en el proceso de compilación
@@ -26,7 +26,7 @@ La [transformación de texto](../modeling/code-generation-and-t4-text-templates.
 
 Hay algunas diferencias en cuanto a lo que las tareas de compilación pueden hacer, según el motor de compilación que utilice. Al compilar la solución en Visual Studio, una plantilla de texto puede tener acceso a la API de Visual Studio (EnvDTE) si se establece el atributo [HostSpecific = "true"](../modeling/t4-template-directive.md) . Pero esto no es cierto cuando se compila la solución desde la línea de comandos o cuando se inicia una compilación de servidor a través de Visual Studio. En esos casos, la compilación la realiza MSBuild y se utiliza un host T4 diferente. Esto significa que no puede tener acceso a elementos como nombres de archivo de proyecto de la misma manera que cuando se crea una plantilla de texto con MSBuild. Sin embargo, puede [pasar información de entorno a plantillas de texto y procesadores de directivas mediante el uso de parámetros de compilación](#parameters).
 
-## <a name="configure-your-machines"></a><a name="buildserver"></a>Configurar las máquinas
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Configurar las máquinas
 
 Para habilitar las tareas de compilación en el equipo de desarrollo, instale el SDK de modelado para Visual Studio.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Pasar datos de contexto de compilación a las plantillas
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Pasar datos de contexto de compilación a las plantillas
 
 Puede establecer valores de parámetro en el archivo de proyecto. Por ejemplo, puede pasar propiedades de [compilación](../msbuild/msbuild-properties.md) y [variables de entorno](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue`Obtiene datos de `T4ParameterValues` solo cuando se usa MSBuild. Al transformar la plantilla con Visual Studio, los parámetros tienen valores predeterminados.
+> `ResolveParameterValue` Obtiene datos de `T4ParameterValues` solo cuando se usa MSBuild. Al transformar la plantilla con Visual Studio, los parámetros tienen valores predeterminados.
 
-## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Usar las propiedades del proyecto en las directivas de inclusión y ensamblado
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Usar las propiedades del proyecto en las directivas de inclusión y ensamblado
 
 Las macros de Visual Studio como **$ (SolutionDir)** no funcionan en MSBuild. En su lugar, puede utilizar las propiedades del proyecto.
 
@@ -299,17 +299,17 @@ Si actualiza un archivo incluido u otro archivo leído por la plantilla, Visual 
 
 - [Las plantillas de texto en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md) se transforman en tiempo de ejecución en la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 ::: moniker range="vs-2017"
 
-- Hay una buena orientación en la plantilla de MSbuild T4 en`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Hay una buena orientación en la plantilla de MSbuild T4 en `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Hay una buena orientación en la plantilla de MSbuild T4 en`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Hay una buena orientación en la plantilla de MSbuild T4 en `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

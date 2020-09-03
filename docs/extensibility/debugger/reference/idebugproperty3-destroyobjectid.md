@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID ? Microsoft Docs
+title: IDebugProperty3::D estroyObjectID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f465bc06712c5032c6e90288ebd02406de4f2330
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721199"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-Destruye el identificador único asociado a esta propiedad, lo que indica que al autor de la llamada ya no le importa identificar esta propiedad de forma única desde todas las demás propiedades.
+Destruye el identificador único asociado a esta propiedad, que indica que el autor de la llamada ya no le importa que identifique esta propiedad de forma única desde todas las demás propiedades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,9 +41,9 @@ int DestroyObjectID();
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Si el motor de depuración no necesita admitir identificadores únicos para una propiedad (porque `E_NOTIMPL` ya los realiza un seguimiento de forma única internamente), simplemente puede volver para este método.
+ Si el motor de depuración no necesita admitir identificadores únicos para una propiedad (porque ya realiza un seguimiento de ellos de forma exclusiva), puede devolver simplemente `E_NOTIMPL` para este método.
 
- Los identificadores únicos se crean con una llamada al método [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) cuando el autor de la llamada desea asegurarse de que esta propiedad se identifica de forma única entre todas las demás propiedades.
+ Los identificadores únicos se crean con una llamada al método [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) cuando el llamador desea asegurarse de que esta propiedad se identifica de forma única entre todas las demás propiedades.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297164"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramas de componentes de UML: Instrucciones
@@ -41,7 +41,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
   Puede utilizar un diagrama de componentes para representar el diseño con independencia del lenguaje o plataforma que el diseño utiliza o va a utilizar.
 
-## <a name="OtherDiagrams"></a>Relación con otros diagramas
+## <a name="relationship-to-other-diagrams"></a><a name="OtherDiagrams"></a> Relación con otros diagramas
  Puede utilizar un diagrama de componentes junto con otros diagramas.
 
 |Otro diagrama|Ayuda a debatir y transmitir los siguientes aspectos del diseño|
@@ -51,7 +51,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 |Diagramas de actividades|-El procesamiento interno realizado por un componente en respuesta a los mensajes entrantes.<br /><br /> Para obtener más información, vea [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).|
 |Diagramas de capas|-Niveles de arquitectura lógica para los componentes.<br /><br /> Para obtener más información, vea [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>Pasos básicos para dibujar diagramas de componentes
+## <a name="basic-steps-for-drawing-component-diagrams"></a><a name="Basics"></a> Pasos básicos para dibujar diagramas de componentes
  Para obtener información de referencia sobre los elementos de los diagramas de componentes, vea [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md).
 
  Para obtener más información sobre cómo usar los diagramas de componentes en el proceso de diseño, vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).
@@ -146,7 +146,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 - Busque la interfaz en el **Explorador de modelos UML** y arrástrela desde allí hasta el componente.
 
-     O bien,
+     o bien
 
 - Copie y pegue una referencia a una interfaz desde un diagrama.
 
@@ -161,8 +161,8 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
     3. Si desea crear una interfaz necesaria, haga clic en la etiqueta de acción y, a continuación, haga clic en **convertir en interfaz necesaria**.
 
-## <a name="Parts"></a>Mostrar las partes internas de un componente
- ![Diagrama de componentes que muestra partes internas](../modeling/media/uml-compshowing.png "UML_CompShowing")
+## <a name="showing-the-internal-parts-of-a-component"></a><a name="Parts"></a> Mostrar las partes internas de un componente
+ ![Diagrama de componentes mostrando elementos internos](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  Puede incluir elementos (3) en un componente (1) para mostrar que está formado de componentes más pequeños que interactúan entre sí.
 
@@ -255,7 +255,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
      Ahora puede agregar otros elementos.
 
-## <a name="Designing"></a>Diseñar el componente
+## <a name="designing-the-component"></a><a name="Designing"></a> Diseñar el componente
 
 ### <a name="describing-how-the-parts-collaborate"></a>Describir cómo colaboran los elementos
  Puede dibujar un diagrama de secuencia para mostrar el modo en que los elementos trabajan juntos en respuesta a un mensaje que llega al componente primario.
@@ -270,7 +270,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 - Si la carga de trabajo es demasiado escasa y se distribuye en muchas interacciones, el sistema podría tener un mal rendimiento y podría resultar difícil de entender.
 
-  ![Diagrama de secuencia que muestra las partes de colaboración](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
+  ![Diagrama de secuencia mostrando elementos en colaboración](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
 
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Para dibujar un diagrama de secuencia en el que se muestre la colaboración entre los elementos
 
@@ -318,7 +318,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 ### <a name="general-dependencies-between-components"></a>Dependencias generales entre componentes
  Puede utilizar un diagrama de componentes para mostrar exclusivamente los elementos principales del diseño y sus interdependencias.
 
- ![Una dependencia entre componentes](../modeling/media/uml-compdepend.png "UML_CompDepend")
+ ![Dependencia entre componentes](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
  Use la herramienta de **dependencia** para dibujar una dependencia. Así indicará que el diseño de un componente se basa en otro.
 
@@ -332,5 +332,5 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
   Puede utilizar el nombre de la flecha de dependencia para dar cuenta de un tipo de uso concreto. Para establecer el nombre, haga clic con el botón secundario en la flecha, haga clic en **propiedades**y establezca el campo **nombre** en la ventana Propiedades.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de componentes](../modeling/uml-component-diagrams-reference.md) de UML: referencia [diagramas de secuencia UML:](../modeling/uml-sequence-diagrams-reference.md) referencia diagramas de [casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md) diagramas de clases de UML [: referencia](../modeling/uml-class-diagrams-reference.md) diagramas de [componentes de UML:](../modeling/uml-component-diagrams-reference.md) [vídeo de referencia: diseño de la estructura física mediante diagramas de componentes](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

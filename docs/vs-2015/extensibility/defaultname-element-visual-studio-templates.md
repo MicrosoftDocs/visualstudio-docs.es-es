@@ -1,5 +1,5 @@
 ---
-title: DefaultName (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: Defaultname ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bc3a18c47b78a312f3bca3762cc4ff3d658a70e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185286"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica el nombre que el sistema del proyecto de Visual Studio generará para el proyecto o elemento cuando se crea.  
+Especifica el nombre que generará el sistema del proyecto de Visual Studio para el proyecto o elemento cuando se crea.  
   
  \<VSTemplate>  
- \<TemplateData >  
- \<DefaultName >  
+ \<TemplateData>  
+ \<DefaultName>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,7 +47,7 @@ Especifica el nombre que el sistema del proyecto de Visual Studio generará para
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
@@ -59,14 +59,14 @@ Especifica el nombre que el sistema del proyecto de Visual Studio generará para
 ## <a name="remarks"></a>Comentarios  
  `DefaultName` es un elemento opcional.  
   
- Para los proyectos, este elemento especifica el nombre del directorio que almacena el proyecto en el disco. Para los elementos, especifica el nombre de archivo del archivo de origen.  
+ En el caso de los proyectos, este elemento especifica el nombre del directorio que almacena el proyecto en el disco. En el caso de los elementos, especifica el nombre de archivo del archivo de código fuente.  
   
- Cuando se crea un proyecto o elemento, puede modificar el nombre predeterminado mediante el **nombre** opción, que está disponible desde el **nuevo proyecto** cuadro de diálogo o **Agregar nuevo elemento** cuadro de diálogo.  
+ Al crear un proyecto o elemento, puede modificar el nombre predeterminado mediante la opción **nombre** , que está disponible en el cuadro de diálogo **nuevo proyecto** o en el cuadro de diálogo **Agregar nuevo elemento** .  
   
- Si no desea que el sistema del proyecto para generar el nombre predeterminado para el proyecto o elemento, a continuación, establezca el [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) elemento `False`.  
+ Si no desea que el sistema del proyecto genere el nombre predeterminado para el proyecto o elemento, establezca el elemento [providedefaultname (](../extensibility/providedefaultname-element-visual-studio-templates.md) en `False` .  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra los metadatos de la plantilla de elemento estándar para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] clase.  
+ En el ejemplo siguiente se muestran los metadatos de la plantilla de elemento estándar para una [!INCLUDE[csprcs](../includes/csprcs-md.md)] clase.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -84,6 +84,6 @@ Especifica el nombre que el sistema del proyecto de Visual Studio generará para
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)

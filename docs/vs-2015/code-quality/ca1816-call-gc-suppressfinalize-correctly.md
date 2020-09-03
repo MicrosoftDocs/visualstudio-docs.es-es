@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 532478a8d6ed6b88347d196b4a74b6f19a38ef85
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546775"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Llamar a GC.SuppressFinalize correctamente
@@ -41,7 +41,7 @@ ms.locfileid: "85546775"
 - Un método llama a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> y pasa algo distinto de This (me en Visual Basic).
 
 ## <a name="rule-description"></a>Descripción de la regla
- El <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método permite a los usuarios liberar recursos en cualquier momento antes de que el objeto esté disponible para la recolección de elementos no utilizados. Si <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> se llama al método, libera los recursos del objeto. Esto hace que la finalización sea innecesaria. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>debe llamar a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> para que el recolector de elementos no utilizados no llame al finalizador del objeto.
+ El <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método permite a los usuarios liberar recursos en cualquier momento antes de que el objeto esté disponible para la recolección de elementos no utilizados. Si <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> se llama al método, libera los recursos del objeto. Esto hace que la finalización sea innecesaria. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> debe llamar a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> para que el recolector de elementos no utilizados no llame al finalizador del objeto.
 
  Para evitar que los tipos derivados con finalizadores tengan que volver a implementar [System. IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) y para llamarlo, los tipos no sellados sin finalizadores deben seguir llamando a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 62a55c36cd634b9451ad3796e5866d1e3a89b6a2
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331725"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de .NET Framework mediante la línea de comandos del generador de perfiles

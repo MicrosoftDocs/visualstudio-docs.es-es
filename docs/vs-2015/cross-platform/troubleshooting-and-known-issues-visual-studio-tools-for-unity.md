@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297661"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
@@ -21,7 +21,7 @@ ms.locfileid: "74297661"
 
 En esta sección encontrará soluciones a problemas comunes con Visual Studio Tools para Unity y descripciones de problemas conocidos. Asimismo descubrirá cómo puede ayudar a mejorar Visual Studio Tools para Unity mediante la notificación de errores.  
   
-## <a name="troubleshooting"></a>Solucionar problemas  
+## <a name="troubleshooting"></a>Solución de problemas  
  Para resolver algunos problemas comunes que se producen al trabajar con Visual Studio Tools para Unity, consulte las secciones siguientes.  
   
 ### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrar de UnityVS a Visual Studio Tools para Unity  
@@ -50,8 +50,8 @@ En esta sección encontrará soluciones a problemas comunes con Visual Studio To
   
 - Al entrar y salir de métodos a veces se produce un comportamiento incorrecto, especialmente en iteradores o dentro de instrucciones switch.  
   
-## <a name="reporting-errors"></a>Notificar errores  
- Ayúdenos a mejorar la calidad de Visual Studio Tools para Unity mediante el envío de informes de errores cuando experimente bloqueos, inmovilizaciones u otro tipo de errores. Esto nos ayudará a investigar y solucionar problemas en Visual Studio Tools para Unity. Gracias.  
+## <a name="reporting-errors"></a>La notificación de errores  
+ Ayúdenos a mejorar la calidad de Visual Studio Tools para Unity mediante el envío de informes de errores cuando experimente bloqueos, inmovilizaciones u otro tipo de errores. Esto nos ayudará a investigar y solucionar problemas en Visual Studio Tools para Unity. ¡Gracias!  
   
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Cómo informar de un error cuando Visual Studio se inmoviliza  
  Hay informes que indican que a veces Visual Studio se inmoviliza al depurar con Visual Studio Tools para Unity, pero necesitamos más datos para comprender este problema. Puede ayudarnos a investigarlo siguiendo los pasos indicados a continuación.  
@@ -64,9 +64,9 @@ En esta sección encontrará soluciones a problemas comunes con Visual Studio To
   
 3. Asocie el depurador a la instancia inmovilizada de Visual Studio. En el diálogo **Asociar al proceso** , seleccione la instancia inmovilizada de Visual Studio en la tabla **Procesos disponibles** y, a continuación, elija el botón **Asociar** .  
   
-4. Pause el Depurador. En el menú principal de la nueva instancia de Visual Studio elija **Depurar**, **Interrumpir todo** o simplemente presione las teclas **Ctrl+Alt+Interrumpir**.  
+4. Pause el Depurador. En la nueva instancia de Visual Studio, en el menú principal, elija **depurar**, **interrumpir todo** o simplemente presione **Ctrl + Alt + inter**.  
   
-5. Cree un volcado del subproceso. En la ventana Comandos, escriba el siguiente comando y presione **ENTRAR**.  
+5. Cree un volcado del subproceso. En el ventana Comandos, escriba el siguiente comando y presione **entrar**.  
   
    ```powershell  
    Debug.ListCallStack /AllThreads /ShowExternalCode  

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetSize ? Microsoft Docs
+title: 'IDebugProperty2:: se obtiene | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3f57a742bae0217493d8869b257e4a17839e4e14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721328"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
@@ -41,10 +41,10 @@ int GetSize ( 
 
 ## <a name="parameters"></a>Parámetros
 `pdwSize`\
-[fuera] Devuelve el tamaño, en bytes, del valor de propiedad.
+enuncia Devuelve el tamaño, en bytes, del valor de propiedad.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve código de error. Devuelve `S_GETSIZE_NO_SIZE` si la propiedad no tiene ningún tamaño.
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error. Devuelve `S_GETSIZE_NO_SIZE` si la propiedad no tiene ningún tamaño.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

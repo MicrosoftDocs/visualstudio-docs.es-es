@@ -1,5 +1,5 @@
 ---
-title: 'Error: IIS ha interrumpido el proceso de trabajo del sitio Web | Microsoft Docs'
+title: 'Error: IIS ha interrumpido el proceso de trabajo del sitio web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185460"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Error: IIS ha interrumpido el proceso de trabajo del sitio web
@@ -42,9 +42,9 @@ El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Int
   
     Se abrirá el Administrador de IIS.  
   
-3. En el panel **Conexiones**, expanda el nodo \<nombre del equipo> si es necesario.  
+3. En el panel **Conexiones**, expanda el nodo \<computer name> si es necesario.  
   
-4. En el nodo \<nombre del equipo>, haga clic en **Grupos de aplicaciones**.  
+4. En el nodo \<computer name>, haga clic en **Grupos de aplicaciones**.  
   
 5. En la lista **Grupos de aplicaciones**, haga clic con el botón derecho en el nombre del grupo en el que se ejecuta la aplicación y, a continuación, haga clic en **Configuración avanzada**.  
   
@@ -60,5 +60,5 @@ El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Int
   
 8. Cierre el Administrador de IIS y la ventana **Herramientas administrativas**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)

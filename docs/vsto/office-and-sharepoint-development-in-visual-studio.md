@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800949"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desarrollo de Office y SharePoint en Visual Studio
@@ -82,7 +82,7 @@ ms.locfileid: "88800949"
 |Elija si quiere compilar un complemento de SharePoint o una solución de SharePoint.|[Decidir entre los complementos de SharePoint y las soluciones de SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
 ## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> Crear un complemento de VSTO
- Cree un complemento de VSTO para Office 2007 u Office 2010, o para ampliar Office 2013 y Office 2016 más allá de lo que es posible con los complementos de Office. los complementos de VSTO solo se ejecutan en el escritorio. Los usuarios deben instalar los complementos de VSTO, por lo que normalmente son más difíciles de implementar y admitir.  Sin embargo, su complemento de VSTO se puede integrar más estrechamente en Office. Por ejemplo, puede agregar pestañas y controles a la cinta de Office y realizar tareas de automatización avanzadas, como la combinación de documentos o la modificación de gráficos. Puede aprovechar .NET Framework y usar C# y Visual Basic para interactuar con objetos de Office.
+ Cree un complemento de VSTO para Office 2007 u Office 2010, o para ampliar Office 2013 y Office 2016 más allá de lo que es posible con los complementos de Office. Los complementos de VSTO solo se ejecutan en el escritorio. Los usuarios deben instalar los complementos de VSTO, por lo que normalmente son más difíciles de implementar y admitir.  Sin embargo, su complemento de VSTO se puede integrar más estrechamente en Office. Por ejemplo, puede agregar pestañas y controles a la cinta de Office y realizar tareas de automatización avanzadas, como la combinación de documentos o la modificación de gráficos. Puede aprovechar .NET Framework y usar C# y Visual Basic para interactuar con objetos de Office.
 
  A continuación se muestra un ejemplo de lo que puede hacer un complemento de VSTO. Este complemento de VSTO agrega controles de la Cinta, un panel de tareas personalizado y un cuadro de diálogo a PowerPoint.
 
@@ -90,7 +90,7 @@ ms.locfileid: "88800949"
 
  **Más información**
 
-|En|Lectura|
+|Objetivo|Lectura|
 |--------|----------|
 |Compare las distintas maneras en que puede ampliar Office y decida si debería usar un complemento de VSTO o un complemento de Office.|[Guía básica de los complementos de Office, VSTO y VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |Cree un complemento de VSTO.|[Crear complementos de VSTO con Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|

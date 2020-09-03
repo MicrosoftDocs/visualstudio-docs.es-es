@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2 ? Microsoft Docs
+title: IDebugProperty2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721225"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
-Esta interfaz representa una propiedad de marco de pila, una propiedad de documento de programa o alguna otra propiedad. La propiedad suele ser el resultado de una evaluación de expresiones.
+Esta interfaz representa una propiedad de marco de pila, una propiedad de documento de programa u otra propiedad. La propiedad suele ser el resultado de una evaluación de expresión.
 
 > [!NOTE]
-> Este uso de "propiedad" no debe confundirse con ese significado `IDebugProperty2` una variable miembro de una clase, aunque un puede representar tal entidad.
+> Este uso de "propiedad" no se debe confundir con, lo que significa una variable miembro de una clase, aunque un `IDebugProperty2` puede representar tal entidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,25 +32,25 @@ IDebugProperty2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- La DE implementa esta interfaz para representar un tipo particular de valor. Por ejemplo, el valor podría ser un valor numérico como resultado de una evaluación de expresión, un contexto de memoria utilizado para mostrar memoria o una lista de registros y sus valores.
+ El DE implementa esta interfaz para representar un tipo determinado de valor. Por ejemplo, el valor podría ser un valor numérico como resultado de una evaluación de expresión, un contexto de memoria utilizado para mostrar memoria o una lista de registros y sus valores.
 
-## <a name="notes-for-callers"></a>Notas para las personas que llaman
- Llame a [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obtener esta interfaz, que representa el resultado de una evaluación. `IDebugExpression2::EvaluateAsync`devuelve esta interfaz mediante el envío de un [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interfaz al SDM, que a su vez llama a [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) para recuperar la propiedad.
+## <a name="notes-for-callers"></a>Notas para llamadores
+ Llame a [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obtener esta interfaz, que representa el resultado de una evaluación. `IDebugExpression2::EvaluateAsync` devuelve esta interfaz mediante el envío de una interfaz [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) al SDM, que a su vez llama a [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) para recuperar la propiedad.
 
-- [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) devuelve esta interfaz para proporcionar el documento de script asociado.
+- [Getdebugproperty (](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) devuelve esta interfaz para proporcionar el documento de script asociado.
 
 - [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md) devuelve esta interfaz para representar el valor devuelto de una función.
 
-- [GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) devuelve esta interfaz para representar varias propiedades del programa, como un nombre o un contexto de memoria.
+- [Getdebugproperty (](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) devuelve esta interfaz para representar varias propiedades del programa, como un nombre o un contexto de memoria.
 
-- [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) devuelve esta interfaz para representar varias propiedades del marco de pila, como variables locales.
+- [Getdebugproperty (](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) devuelve esta interfaz para representar varias propiedades del marco de pila, como las variables locales.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- En la tabla siguiente `IDebugProperty2`se muestran los métodos de .
+ En la tabla siguiente se muestran los métodos de `IDebugProperty2` .
 
 |Método|Descripción|
 |------------|-----------------|
-|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Rellena una [estructura DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) que describe una propiedad.|
+|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Rellena una estructura de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) que describe una propiedad.|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|Establece el valor de una propiedad de una cadena.|
 |[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|Establece el valor de la propiedad a partir del valor de una referencia determinada.|
 |[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|Enumera los elementos secundarios de una propiedad.|
@@ -63,16 +63,16 @@ IDebugProperty2 : IUnknown
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Devuelve la información extendida de una propiedad.|
 
 ## <a name="remarks"></a>Observaciones
- Una propiedad, representada por `IDebugProperty2` una interfaz, se puede considerar como un valor con un nombre, un tipo y una dirección. En términos más `IDebugProperty2` generales, un puede representar cualquier cosa que tenga una estructura jerárquica, con los padres y los nodos secundarios.
+ Una propiedad, como se representa mediante una `IDebugProperty2` interfaz, puede considerarse como un valor con un nombre, un tipo y una dirección. En términos más generales, `IDebugProperty2` puede representar cualquier elemento que tenga una estructura jerárquica, con nodos primarios y secundarios.
 
- Una propiedad suele ser transitoria, que dura solo el tiempo que el marco de pila actual, por ejemplo. Por otro lado, una referencia, representada por un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interfaz, dura siempre que el valor permanece en la memoria.
+ Una propiedad suele ser transitoria y dura solo mientras el marco de pila actual, por ejemplo. Por otro lado, una referencia, como se representa mediante una interfaz [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , dura siempre que el valor permanezca en la memoria.
 
- El IDE puede `IDebugProperty2` usar la interfaz para permitir a los usuarios examinar y modificar propiedades en tiempo de ejecución.
+ El IDE puede usar la `IDebugProperty2` interfaz para permitir que los usuarios examinen y modifiquen las propiedades en tiempo de ejecución.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
