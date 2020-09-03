@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596546"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
@@ -52,19 +52,19 @@ Permite el código que se escribe a mano además del código generado. No es hab
 
 - Las clases deben generarse en pares, una que herede de la otra. La clase base debe contener todos los métodos y propiedades generados, y la clase derivada debe contener solo los constructores. Esto permite que el código escrito a mano invalide cualquiera de los métodos generados.
 
-En otros lenguajes generados como XML, utilice la Directiva `<#@include#>` para crear combinaciones simples de contenido generado y escrito a mano. En casos más complejos, es posible que tenga que escribir un paso posterior al procesamiento que combine el archivo generado con los archivos escritos a mano.
+En otros lenguajes generados como XML, utilice la `<#@include#>` Directiva para crear combinaciones simples de contenido generado y escrito a mano. En casos más complejos, es posible que tenga que escribir un paso posterior al procesamiento que combine el archivo generado con los archivos escritos a mano.
 
 Mueva material común a archivos de inclusión o plantillas en tiempo de ejecución.
 
-Para evitar repetir bloques similares de texto y código en varias plantillas, use la Directiva `<#@ include #>`. Para obtener más información, consulte [la Directiva de inclusión T4](../modeling/t4-include-directive.md).
+Para evitar repetir bloques similares de texto y código en varias plantillas, use la `<#@ include #>` Directiva. Para obtener más información, consulte [la Directiva de inclusión T4](../modeling/t4-include-directive.md).
 
-También puede crear plantillas de texto en tiempo de ejecución en un proyecto independiente y, a continuación, llamarlas desde la plantilla en tiempo de diseño. Para ello, use la Directiva `<#@ assembly #>` para tener acceso al proyecto independiente.
+También puede crear plantillas de texto en tiempo de ejecución en un proyecto independiente y, a continuación, llamarlas desde la plantilla en tiempo de diseño. Para ello, utilice la `<#@ assembly #>` Directiva para tener acceso al proyecto independiente.
 
 Considere la posibilidad de mover grandes bloques de código en un ensamblado independiente.
 
-Si tiene bloques de código y bloques de características de clase de gran tamaño, puede ser útil trasladar parte de este código a métodos que se compilan en un proyecto independiente. Puede usar la Directiva `<#@ assembly #>` para tener acceso al código de la plantilla. Para obtener más información, vea [Directiva de ensamblado T4](../modeling/t4-assembly-directive.md).
+Si tiene bloques de código y bloques de características de clase de gran tamaño, puede ser útil trasladar parte de este código a métodos que se compilan en un proyecto independiente. Puede utilizar la `<#@ assembly #>` Directiva para tener acceso al código de la plantilla. Para obtener más información, vea [Directiva de ensamblado T4](../modeling/t4-assembly-directive.md).
 
-Puede colocar los métodos en una clase abstracta que la plantilla pueda heredar. La clase abstracta debe heredar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Para obtener más información, consulte [Directiva de plantilla T4](../modeling/t4-template-directive.md).
+Puede colocar los métodos en una clase abstracta que la plantilla pueda heredar. La clase abstracta debe heredar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Para obtener más información, consulte [Directiva de plantilla T4](../modeling/t4-template-directive.md).
 
 Generar código, no archivos de configuración.
 
@@ -115,7 +115,7 @@ En **MyReportText-Methods.CS**:
 
 Permitir código personalizado: proporcione puntos de extensión.
 
-Considere la posibilidad de generar métodos virtuales en \<n.º de bloques de características de clase # + >. Esto permite usar una única plantilla en muchos contextos sin modificarla. En lugar de modificar la plantilla, puede construir una clase derivada que proporcione la lógica adicional mínima. La clase derivada puede ser código normal o puede ser una plantilla en tiempo de ejecución.
+Considere la posibilidad de generar métodos virtuales en \<#+ class feature blocks #> . Esto permite usar una única plantilla en muchos contextos sin modificarla. En lugar de modificar la plantilla, puede construir una clase derivada que proporcione la lógica adicional mínima. La clase derivada puede ser código normal o puede ser una plantilla en tiempo de ejecución.
 
 Por ejemplo, en MyStandardRunTimeTemplate.tt:
 
@@ -139,11 +139,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Recopilación de datos independientes de la generación de texto.
 
-Intente evitar mezclar el cálculo y los bloques de texto. En cada plantilla de texto, use el primer \<# Code Block # > para establecer variables y realizar cálculos complejos. En el primer bloque de texto hasta el final de la plantilla o la primera \<bloque # + de características de clase # >, evite expresiones largas y evite bucles y condicionales a menos que contengan bloques de texto. Esta práctica facilita la lectura y el mantenimiento de la plantilla.
+Intente evitar mezclar el cálculo y los bloques de texto. En cada plantilla de texto, use la primera \<# code block #> para establecer las variables y realizar cálculos complejos. Desde el primer bloque de texto hasta el final de la plantilla o la primera \<#+ class feature block #> , evite expresiones largas y evite los bucles y los condicionales a menos que contengan bloques de texto. Esta práctica facilita la lectura y el mantenimiento de la plantilla.
 
 No use `.tt` para archivos de inclusión.
 
-Use una extensión de nombre de archivo diferente, como `.ttinclude` para archivos de inclusión. Utilice `.tt` solo para los archivos que desee procesar como plantillas de texto en tiempo de ejecución o en tiempo de diseño. En algunos casos, Visual Studio reconoce `.tt` archivos y establece automáticamente sus propiedades para su procesamiento.
+Use una extensión de nombre de archivo diferente como, por ejemplo, `.ttinclude` para archivos de inclusión. Use `.tt` solo para los archivos que desee procesar como plantillas de texto en tiempo de ejecución o en tiempo de diseño. En algunos casos, Visual Studio reconoce `.tt` los archivos y establece automáticamente sus propiedades para su procesamiento.
 
 Inicie cada plantilla como un prototipo fijo.
 
@@ -169,7 +169,7 @@ Sin embargo, para algunos tipos de requisitos empresariales, es importante aclar
 
 También puede diseñar su propio tipo de diagrama como lenguaje específico de dominio (DSL). El código se puede generar a partir de UML y DSL. Para obtener más información, vea [analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548426"
 ---
 # <a name="network-usage"></a>Uso de red
@@ -24,7 +24,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
  La herramienta de red admite solo las aplicaciones de plataforma universal de Windows. En este momento no se admiten otras plataformas.  
   
 > [!NOTE]
-> Para obtener una descripción más completa de la herramienta Red, consulte [Presentación de la herramienta de red de Visual Studio](https://devblogs.microsoft.com/visualstudio/?m=20155).  
+> Para obtener una descripción más completa de la herramienta de red, consulte Introducción a la [herramienta de red de Visual Studio](https://devblogs.microsoft.com/visualstudio/?m=20155).  
   
 ## <a name="collecting-network-tool-data"></a>Recopilar datos de la herramienta de red  
  Debería ejecutar la herramienta **Red** con un proyecto de Visual Studio abierto en el equipo de Visual Studio.  
@@ -54,13 +54,13 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
  ![Panel de detalles de la herramienta de red](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|Nombre|Descripción|  
+|NOMBRE|Descripción|  
 |-|-|  
 |**Encabezados**|Información acerca de los encabezados de solicitud del evento.|  
 |**Cuerpo**|Datos de carga de contenido de solicitud y respuesta.|  
 |**Parámetros**|Los nombres y valores de los parámetros de la cadena de consulta.|  
 |**Cookies**|Datos de la cookie de solicitud y respuesta.|  
-|**Horarios**|Un gráfico de las fases del proceso de adquisición de los recursos seleccionados.|  
+|**Intervalos**|Un gráfico de las fases del proceso de adquisición de los recursos seleccionados.|  
   
  La barra de **resumen** de Red muestra el número de operaciones de red que se muestran en un momento dado, cuántos datos se han transferido, cuánto tiempo llevó descargarlos y cuántos errores (solicitudes con respuestas 4xx o 5xx) hay visibles.  
   
@@ -76,4 +76,4 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 ## <a name="see-also"></a>Consulte también  
  [Ejecutar herramientas de generación de perfiles sin depuración](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Blog de Visual Studio: presentación del inspector de red de Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
- [Vídeo de Channel 9: "Herramientas de diagnóstico de VS: nuevo generador de perfiles de red"](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Vídeo de Channel 9: herramientas de diagnóstico de VS: nuevo generador de perfiles de red](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

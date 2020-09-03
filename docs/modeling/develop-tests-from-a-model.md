@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596663"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
@@ -128,10 +128,10 @@ Assert (countAfter == countBefore = 1);
 
  Desde el punto de vista de las pruebas, un modelo de requisitos puede considerarse como una forma abreviada de realizar pruebas. Por ello, es importante mantener la relación entre las pruebas y el modelo a lo largo del proyecto.
 
-## <a name="Attaching"></a>Adjuntar casos de prueba a elementos del modelo
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Adjuntar casos de prueba a elementos del modelo
  Si el proyecto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], puede vincular las pruebas a los elementos del modelo. Esto le permite buscar rápidamente las pruebas afectadas por un cambio en los requisitos y le ayuda a controlar en qué medida se ha completado un requisito.
 
- Puede vincular las pruebas a todos los tipos de elemento. A continuación se muestran algunos ejemplos:
+ Puede vincular las pruebas a todos los tipos de elemento. Estos son algunos ejemplos:
 
 - Vincule un caso de uso a las pruebas que lo verifican.
 

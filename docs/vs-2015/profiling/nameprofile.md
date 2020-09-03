@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7cac308de96c3edc2dfe5c7577b0bee8077bf9e7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548446"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -50,9 +50,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   `Level`  
   
-  Indica el nivel de perfil al que se puede aplicar la recopilación de datos de rendimiento. Los valores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
+  Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los valores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|  
 |PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|El elemento de generación de perfiles especificado no existe.|  
 |NAME_ERROR_INVALID_NAME|El nombre no es válido.|  
@@ -76,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|El texto del nombre supera los 32 caracteres incluido el carácter nulo y, por tanto, se truncó.|  
 |NAME_OK|El nombre se registró correctamente.|  
   
-## <a name="remarks"></a>Observaciones  
+## <a name="remarks"></a>Comentarios  
  Solo se puede asignar un nombre a cada proceso o subproceso. Después de asignar un nombre a un elemento de generación de perfiles, se omiten las llamadas subsiguientes a NameProfile para ese elemento.  
   
  Si se especifica el mismo nombre para diferentes subprocesos o procesos, el informe incluirá datos de todos los elementos en ese nivel con ese nombre.  
@@ -93,8 +93,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 |Elemento|Descripción|  
 |-|-|  
-|**Encabezado**|Incluye VSPerf.h|  
-|**Biblioteca**|Use VSPerf.lib.|  
+|**Header**|Incluye VSPerf.h|  
+|**Library**|Usa VSPerf.lib|  
 |**Unicode**|Implementado como `NameProfileW` (Unicode) y `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Ejemplo  

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 236135cd4b4f813471ece7a0eeb1b221c7242df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662364"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
@@ -30,7 +30,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, después, pulse **Opciones avanzadas**.
 
 > [!NOTE]
-> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="browsingnavigation"></a>Exploración o navegación
  Nunca debería elegir estas opciones excepto en el caso excepcional donde una solución sea tan grande que la actividad de base de datos use una cantidad inaceptable de recursos del sistema.
@@ -49,7 +49,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 
  **Volver a crear base de datos** Vuelva a crear la base de datos de exploración de código desde cero la próxima vez que se cargue la solución. Si elige esta opción, el archivo de base de datos SDF se elimina la próxima vez que cargue la solución, por lo que la base de datos se volverá a crear y todos los archivos se indexarán.
 
- **Volver a examinar el intervalo** de la solución Un trabajo "volver a examinar solución ahora" está programado para el intervalo que especifique. Debe especificar un valor entre 0 y 5000 minutos. El valor predeterminado es de 60 minutos. Mientras la solución se vuelve a examinar, las marcas de tiempo de archivo se comprueban para determinar si un archivo se ha cambiado fuera del IDE. (Se realiza un seguimiento automático de los cambios realizados en el IDE y se actualizan los archivos). Los archivos incluidos implícitamente se comprueban para determinar si todavía se hace referencia a ellos.
+ **Volver a examinar el intervalo** de la solución Un trabajo "volver a examinar solución ahora" está programado para el intervalo que especifique. Debe especificar un valor entre 0 y 5000 minutos. El valor predeterminado es 60 minutos. Mientras la solución se vuelve a examinar, las marcas de tiempo de archivo se comprueban para determinar si un archivo se ha cambiado fuera del IDE. (Se realiza un seguimiento automático de los cambios realizados en el IDE y se actualizan los archivos). Los archivos incluidos implícitamente se comprueban para determinar si todavía se hace referencia a ellos.
 
 ## <a name="diagnostic-logging"></a>Registro de diagnóstico
  Estas opciones se proporcionan en caso de que Microsoft le pida recopilar información avanzada para diagnosticar un problema. La información de registro no es útil para los usuarios y recomendamos que la mantenga deshabilitada.
@@ -96,9 +96,9 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 
  **Deshabilitar Garabatos** Deshabilita los subrayados ondulados de error de IntelliSense. Los "subrayados ondulados" rojos no se muestran en la ventana del editor, pero el error seguirá apareciendo en la ventana Lista de errores.
 
- **Deshabilitar #include Autocompletar** Deshabilita la finalización automática de instrucciones `#include`.
+ **Deshabilitar #include Autocompletar** Deshabilita la finalización automática de `#include` instrucciones.
 
- **Usar barra diagonal en #include Autocompletar** Desencadena la finalización automática de instrucciones `#include` cuando se utiliza "/". El delimitador predeterminado es la barra diagonal inversa "\". El compilador puede aceptar cualquiera, por lo que use esta opción para especificar la que usa su código base.
+ **Usar barra diagonal en #include Autocompletar** Desencadena la finalización automática de `#include` instrucciones cuando se usa "/". El delimitador predeterminado es la barra diagonal inversa "\". El compilador puede aceptar cualquiera, por lo que use esta opción para especificar la que usa su código base.
 
  **Unidades de traducción máximas almacenadas en caché** Número máximo de unidades de traducción que se mantendrán activas al mismo tiempo para solicitudes de IntelliSense. Debe especificar un valor entre 2 y 15. Este número se relaciona directamente con el número máximo de procesos VCPkgSrv.exe que se ejecutarán (para una instancia determinada de Visual Studio). El valor predeterminado es 2, pero si tiene memoria disponible, puede aumentar este valor y posiblemente conseguir un rendimiento ligeramente mejor en IntelliSense.
 
@@ -106,7 +106,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 
  **Deshabilitar la lista de miembros agresiva** La lista de miembros no aparece mientras escribe el nombre de un tipo o una variable. La lista aparece solo después de que escriba uno de los caracteres de confirmación, según lo definido en la opción **Caracteres de confirmación de las listas de miembros**.
 
- **Deshabilitar palabras clave de lista de miembros** Las palabras clave del lenguaje como `void`, `class` `switch` no aparecen en las sugerencias de la lista de miembros.
+ **Deshabilitar palabras clave de lista de miembros** Las palabras clave del lenguaje como `void` , `class` `switch` no aparecen en las sugerencias de la lista de miembros.
 
  **Deshabilitar fragmentos de código de lista de miembros** Los fragmentos de código no aparecen en las sugerencias de la lista de miembros.
 
@@ -125,5 +125,5 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 
  **Deshabilitar resaltado de referencia**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)

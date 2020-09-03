@@ -1,5 +1,5 @@
 ---
-title: SccRunScc (función) | Documentos de Microsoft
+title: Función SccRunScc | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d2b36bd226d4eb19a694347edcba51812ee6f771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190867"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta función invoca a la herramienta de administración de control de código fuente.  
+Esta función invoca la herramienta de administración del control de código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,39 +37,39 @@ SCCRTN SccRunScc(
   
 #### <a name="parameters"></a>Parámetros  
  pvContext  
- [in] La estructura de contexto de complemento de control de origen.  
+ de Estructura de contexto del complemento de control de código fuente.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
+ de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.  
   
- nFiles  
- [in] Número de archivos especificados en el `lpFileNames` matriz.  
+ N archivos  
+ de Número de archivos especificados en la `lpFileNames` matriz.  
   
  lpFileNames  
- [in] Matriz de nombres de archivo seleccionado.  
+ de Matriz de nombres de archivo seleccionados.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Value|DESCRIPCIÓN|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|La herramienta de administración de control de código fuente se invocó correctamente.|  
-|SCC_I_OPERATIONCANCELED|Se canceló la operación.|  
+|SCC_OK|Se invocó correctamente la herramienta de administración del control de código fuente.|  
+|SCC_I_OPERATIONCANCELED|La operación se canceló.|  
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el sistema de control de código fuente.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
 |SCC_E_CONNECTIONFAILURE|No se pudo conectar con el sistema de control de código fuente.|  
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  
 |SCC_E_NONSPECIFICERROR|Error no específico.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta función permite al llamador tener acceso a toda la gama de características del sistema de control de código fuente a través de una herramienta de administración externo. Si el sistema de control de origen no tiene ninguna interfaz de usuario, el complemento de control de código fuente puede implementar una interfaz para realizar funciones de administración necesarios.  
+ Esta función permite que el llamador tenga acceso a toda la gama de características del sistema de control de código fuente a través de una herramienta de administración externa. Si el sistema de control de código fuente no tiene ninguna interfaz de usuario, el complemento de control de código fuente puede implementar una interfaz para realizar las funciones de administración necesarias.  
   
- Esta función se invoca con un recuento y una matriz de nombres de archivo para los archivos seleccionados actualmente. Si la herramienta de administración lo admite, la lista de archivos puede utilizarse para preseleccionar archivos en la interfaz de administración; en caso contrario, se puede omitir la lista.  
+ Se llama a esta función con un recuento y una matriz de nombres de archivo para los archivos seleccionados actualmente. Si la herramienta de administración lo admite, se puede usar la lista de archivos para preseleccionar archivos en la interfaz de administración. de lo contrario, la lista se puede omitir.  
   
- Esta función normalmente se invoca cuando el usuario selecciona el **iniciar \<servidor de Control de código fuente >** desde el **archivo** -> **Control de código fuente** menú. Esto **iniciar** opción de menú puede siempre deshabilitada o incluso ocultar estableciendo una entrada del registro. Vea [Cómo: Instalar un complemento de Control de código fuente](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obtener más información. Esta función se invoca sólo si [SccInitialize](../extensibility/sccinitialize-function.md) devuelve el `SCC_CAP_RUNSCC` bit de capacidad (vea [marcadores de capacidad](../extensibility/capability-flags.md) para obtener más información sobre este y otros bits capacidad).  
+ Normalmente, esta función se invoca cuando el usuario selecciona el **Inicio \<Source Control Server> ** desde el **File**  ->  menú**control de código fuente** del archivo. Esta opción de menú **iniciar** puede estar siempre deshabilitada o incluso oculta mediante la configuración de una entrada del registro. Consulte [Cómo: instalar un complemento de control de código fuente](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obtener más información. Solo se llama a esta función si [SccInitialize](../extensibility/sccinitialize-function.md) devuelve el `SCC_CAP_RUNSCC` bit de funcionalidad (vea [marcas de funcionalidad](../extensibility/capability-flags.md) para obtener más información sobre este y otros bits de capacidad).  
   
-## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
- [Cómo: Instalar un complemento de Control de código fuente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
- [Marcadores de capacidad](../extensibility/capability-flags.md)   
+## <a name="see-also"></a>Consulte también  
+ [Funciones de la API del complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+ [Cómo: instalar un complemento de control de código fuente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Marcas de capacidad](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

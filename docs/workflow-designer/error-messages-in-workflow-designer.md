@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597053"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensajes de error en el Diseñador de flujo de trabajo
@@ -35,7 +35,7 @@ Los errores en Diseñador de flujo de trabajo producen en las situaciones siguie
 
 4. Hay errores en el archivo XAML que hacen que el flujo de trabajo no pueda cargarse.
 
-Las expresiones no válidas y las restricciones de validación no satisfechas no impiden la compilación del flujo de trabajo. La compilación del flujo de trabajo se realiza correctamente, pero se produce una <xref:System.Activities.InvalidWorkflowException> en tiempo de ejecución. Si hay errores en el archivo XAML, se produce un error en la compilación.
+Las expresiones no válidas y las restricciones de validación no satisfechas no impiden la compilación del flujo de trabajo. La compilación del flujo de trabajo se realiza correctamente, pero <xref:System.Activities.InvalidWorkflowException> se produce una excepción en tiempo de ejecución. Si hay errores en el archivo XAML, se produce un error en la compilación.
 
 Dentro de Visual Studio, cuando se carga un flujo de trabajo, sus errores se muestran en el **lista de errores**. Para navegar a la actividad que es el origen del error, haga doble clic en el error en el **lista de errores**.
 

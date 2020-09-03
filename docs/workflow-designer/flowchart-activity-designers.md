@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4503a9653123bf0b0668f5686b9fdb94c97a7bb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597027"
 ---
 # <a name="flowchart-activity-designers"></a>Diseñadores de actividades Flowchart
@@ -33,16 +33,16 @@ Diseñador de flujo de trabajo incluye varias actividades proporcionadas por el 
 
  [Flujo de control](../workflow-designer/control-flow-activity-designers.md)
 
- [Usar los diseñadores de actividad](control-flow-activity-designers.md)
+ [Utilizar los diseñadores de actividades](control-flow-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Mensajería](../workflow-designer/messaging-activity-designers.md)
 
  [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transacción](../workflow-designer/transaction-activity-designers.md)
 
  [Colección](../workflow-designer/collection-activity-designers.md)
 
- [Control de errores](../workflow-designer/error-handling-activity-designers.md)
+ [Tratamiento de errores](../workflow-designer/error-handling-activity-designers.md)

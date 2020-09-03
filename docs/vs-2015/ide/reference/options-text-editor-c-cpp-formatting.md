@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ad06dfb32c301985eb4976f6c89c7be1e0e68da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662340"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
@@ -31,20 +31,20 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, a continuación, haga clic en **Formato**.
 
 > [!NOTE]
-> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo de Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="cc-options"></a>Opciones de C/C++
  **Habilitar información sobre herramientas de información rápida automática** Habilita o deshabilita la característica IntelliSense de información rápida.
 
 ## <a name="inactive-code"></a>Código inactivo
- **Mostrar bloques de código inactivos** El código que está inactivo debido a las declaraciones de `#ifdef` se colorea de manera diferente para ayudarle a identificarlo.
+ **Mostrar bloques de código inactivos** El código que está inactivo debido a las `#ifdef` declaraciones se colorea de manera diferente para ayudarle a identificarlo.
 
  **Deshabilitar opacidad de código inactivo** El código inactivo se puede identificar utilizando el color en lugar de la transparencia.
 
  **Porcentaje de opacidad de código inactivo** Se puede personalizar el grado de opacidad de los bloques de código inactivos.
 
 ## <a name="indentation"></a>Sangría
- **Aplicar sangría** a las llaves Puede configurar cómo se alinean las llaves al presionar entrar después de comenzar un bloque de código, por ejemplo, una función o un bucle `for`. Las llaves pueden estar alineadas con el primer carácter del bloque de código o con sangría.
+ **Aplicar sangría** a las llaves Puede configurar cómo se alinean las llaves al presionar entrar después de comenzar un bloque de código, por ejemplo, una función o un `for` bucle. Las llaves pueden estar alineadas con el primer carácter del bloque de código o con sangría.
 
  **Sangría automática en la pestaña** Puede configurar lo que ocurre en la línea de código actual al presionar TAB. Se aplica sangría a la línea o bien se inserta un carácter de tabulación.
 
@@ -62,9 +62,9 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
 
 - [if-else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)
 
-- [switch (Instrucción) (C++)](https://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)
+- [Switch (instrucción) (C++)](https://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)
 
 - [while (Instrucción) (C++)](https://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [General, entorno, opciones (cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md) [con IntelliSense](../../ide/using-intellisense.md)

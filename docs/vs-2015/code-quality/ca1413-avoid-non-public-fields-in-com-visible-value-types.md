@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1054330b26cf145ebcbc943a56dc699fe793999f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548465"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Evitar los campos no públicos en tipos de valor visibles a través de COM
