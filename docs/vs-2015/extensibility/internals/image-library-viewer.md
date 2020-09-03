@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f6423c569fd1909539de9460ab3dcde0bcf753c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532033"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
@@ -55,7 +55,7 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 </ImageManifest>  
 ```  
   
- **Símbolos**  
+ **Symbols**  
   
  Como ayuda para la lectura y el mantenimiento, el manifiesto de imagen puede usar símbolos para los valores de atributo. Los símbolos se definen de la siguiente manera:  
   
@@ -68,10 +68,10 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 </Symbols>  
 ```  
   
-|**Subelemento**|**Definición**|  
+|**Subelemento**|**Definition**|  
 |-|-|  
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|  
-|GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID.|  
+|Guid|El símbolo representa un GUID y debe coincidir con el formato de GUID.|  
 |ID|El símbolo representa un identificador y debe ser un entero no negativo.|  
 |String|El símbolo representa un valor de cadena arbitrario.|  
   
@@ -108,9 +108,9 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 </Image>  
 ```  
     
-|**Attribute**|**Definición**|  
+|**Atributo**|**Definition**|  
 |-|-|
-|GUID|Desee Parte del GUID del moniker de la imagen|  
+|Guid|Desee Parte del GUID del moniker de la imagen|  
 |ID|Desee La parte de identificador del moniker de imagen|  
 |AllowColorInversion|[Opcional, valor predeterminado True] Indica si la imagen puede tener sus colores inversos mediante programación cuando se usa en un fondo oscuro.|  
   
@@ -124,16 +124,16 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
  </Source>  
 ```  
   
-|**Attribute**|**Definición**|  
+|**Atributo**|**Definition**|  
 |-|-|  
 |Identificador URI|Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la autoridad Application:///<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|  
-|Fondo|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> - *Light*: el origen se puede usar en un fondo claro.<br /><br /> - *Dark*: el origen se puede usar en un fondo oscuro.<br /><br /> - *HighContrast*: el origen puede usarse en cualquier fondo del modo contraste alto.<br /><br /> - *HighContrastLight*: el origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo **background** , el origen puede usarse en cualquier fondo.<br /><br /> Si **background** es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite **background** o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|  
+|Información previa|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> - *Light*: el origen se puede usar en un fondo claro.<br /><br /> - *Dark*: el origen se puede usar en un fondo oscuro.<br /><br /> - *HighContrast*: el origen puede usarse en cualquier fondo del modo contraste alto.<br /><br /> - *HighContrastLight*: el origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo **background** , el origen puede usarse en cualquier fondo.<br /><br /> Si **background** es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite **background** o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|  
   
  Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:  
   
-|**Element**|**Atributos (todos obligatorios)**|**Definición**|  
+|**Element**|**Atributos (todos obligatorios)**|**Definition**|  
 |-|-|-|  
-|\<Size>|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|  
+|\<Size>|Value|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|  
 |\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo) de un solo uso. La imagen será cuadrada.|  
 |\<Dimensions>|Ancho, alto|El origen se usará para las imágenes con el ancho y alto especificados (en unidades de dispositivo).|  
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho o el alto mínimo hasta el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|  
@@ -144,7 +144,7 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
 <NativeResource Type="type" ID="int" />  
 ```  
   
-|**Attribute**|**Definición**|  
+|**Atributo**|**Definition**|  
 |-|-|  
 |Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|  
 |ID|Desee La parte del identificador entero del recurso nativo|  
@@ -160,9 +160,9 @@ La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar
  </ImageList>  
 ```  
   
-|**Attribute**|**Definición**|  
+|**Atributo**|**Definition**|  
 |-|-|  
-|GUID|Desee Parte del GUID del moniker de la imagen|  
+|Guid|Desee Parte del GUID del moniker de la imagen|  
 |ID|Desee La parte de identificador del moniker de imagen|  
 |Externo|[Opcional, valor predeterminado False] Indica si el moniker de imagen hace referencia a una imagen del manifiesto actual.|  
   

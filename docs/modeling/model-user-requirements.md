@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590246"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
@@ -52,11 +52,11 @@ Puede crear varias vistas diferentes de los requisitos de los usuarios.  Cada vi
 |-|-|-|
 |Diagrama de clases conceptuales|Glosario de los tipos que se usan para describir los requisitos; los tipos visibles en la interfaz del sistema.||
 |Otros documentos o elementos de trabajo|Criterios de rendimiento, seguridad, facilidad de uso y confiabilidad.|[Describir los requisitos de calidad de servicio](#QoSRequirements)|
-|Otros documentos o elementos de trabajo|Restricciones y reglas no específicas para un determinado caso de uso|[Mostrar reglas de negocio](#BusinessRules)|
+|Otros documentos o elementos de trabajo|Restricciones y reglas no específicas para un determinado caso de uso|[Mostrar reglas de negocios](#BusinessRules)|
 
 Observe que la mayoría de los tipos de diagramas se pueden usar para otros fines. Para obtener información general sobre los tipos de diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
 
-## <a name="BusinessRules"></a> Showing Business Rules
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Showing Business Rules
 
 Una regla de negocio es un requisito que no está asociado a ningún caso de uso determinado y que se debe observar en todo el sistema.
 
@@ -70,25 +70,25 @@ Pero muchas reglas dinámicas se pueden aplicar de una forma más eficaz y gené
 
 Observe que la opción es sobre la definición de los requisitos, y que esto es independiente de la implementación de los requisitos en el código del programa.
 
-Para obtener más información, consulte los temas siguientes:
+Los siguientes temas proporcionan más información:
 
-|Para obtener información acerca de|Lectura|
+|Más información|Lectura|
 |-|-|
 |Cómo desarrollar código que cumple las reglas de negocio|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
 Existen varias categorías de requisito de calidad de servicio. Incluyen los siguientes:
 
 - Rendimiento
 
-- de seguridad
+- Seguridad
 
 - Facilidad de uso
 
 - Confiabilidad
 
-- Potencia
+- Solidez
 
 Puede incluir algunos de estos requisitos en las descripciones de casos de uso concretos. Otros requisitos no son específicos de los casos de uso y resulta más eficaz incluirlos en un documento independiente. Cuando sea posible, resulta útil ajustarse al vocabulario definido en el modelo de requisitos. En el ejemplo siguiente, observe que las principales palabras que se usan en el requisito son los títulos de los actores, los casos de uso y las clases de las ilustraciones anteriores:
 
@@ -96,7 +96,7 @@ Si un restaurante elimina un elemento del menú mientras un cliente pide un men�
 
 Vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) para obtener información sobre cómo desarrollar código que cumpla los requisitos de calidad de servicio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)
 - [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)

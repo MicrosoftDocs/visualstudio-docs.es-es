@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Abrir varias soluciones'
+title: Procedimiento Abrir varias soluciones
 description: Obtenga información para abrir más de una solución en Visual Studio para Mac y para abrir más de una instancia de la aplicación.
 author: heiligerdankgesang
 ms.author: dominicn
@@ -8,10 +8,10 @@ ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: 346c695cf5c0fe9781dfad026811a87add2e0002
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950467"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Apertura de varias soluciones o instancias de Visual Studio para Mac

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 006662d7c07ba0498fff4617eca3fdc7c631d37b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660785"
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
@@ -29,7 +29,7 @@ ms.locfileid: "72660785"
 
  Use la página **Depurar** del **Diseñador de proyectos** para establecer las propiedades del comportamiento de depuración en un proyecto de Visual Basic o C#.
 
- Para obtener acceso a la página **Depurar**, seleccione un nodo de proyecto en el **Explorador de soluciones**. En el menú **Proyecto**, seleccione **Propiedades de** _NombreDelProyecto_. Cuando aparezca el **Diseñador de proyectos**, haga clic en la pestaña **Depurar**.
+ Para obtener acceso a la página **Depurar**, seleccione un nodo de proyecto en el **Explorador de soluciones**. En el menú **proyecto** , elija _ProjectName_**propiedades**de ProjectName. Cuando aparezca el **Diseñador de proyectos**, haga clic en la pestaña **Depurar**.
 
 ## <a name="configuration-and-platform"></a>Configuración y plataforma
  Las siguientes opciones le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.
@@ -39,7 +39,7 @@ ms.locfileid: "72660785"
  **Plataforma** Especifica qué configuración de plataforma se va a mostrar o modificar. Entre las opciones se pueden incluir **Cualquier CPU** (valor predeterminado), **x64** y **x86**. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 ## <a name="start-action"></a>Acción de inicio
- **Acción de inicio** indica el elemento que se iniciará cuando se depure la aplicación: el proyecto, un programa personalizado, una dirección URL o ninguno. De forma predeterminada, el valor de esta opción es **Iniciar proyecto**. El valor de **Acción de inicio** en la página **Depurar** determina el valor de la propiedad `StartAction`.
+ **Acción de inicio** indica el elemento que se va a iniciar cuando se depure la aplicación: el proyecto, un programa personalizado, una dirección URL o nada. De forma predeterminada, el valor de esta opción es **Iniciar proyecto**. El valor de **Acción de inicio** en la página **Depurar** determina el valor de la propiedad `StartAction`.
 
  **Iniciar proyecto** Elija esta opción para especificar que el archivo ejecutable (para proyectos de aplicación para Windows y aplicación de consola) debe iniciarse cuando se depure la aplicación. Esta opción está seleccionada de forma predeterminada.
 
@@ -59,9 +59,9 @@ ms.locfileid: "72660785"
 
  **Habilitar depuración de SQL Server** Active o desactive esta casilla para habilitar o deshabilitar la depuración de procedimientos SQL desde la aplicación Visual Basic. Esta casilla está desactivada de forma predeterminada.
 
- **Habilitar el proceso de hospedaje de Visual Studio** Active esta casilla para habilitar el proceso de hospedaje de Visual Studio. Esta casilla se encuentra activada de forma predeterminada. Para obtener más información, vea [Proceso de alojamiento (vshost.exe)](../../ide/hosting-process-vshost-exe.md).
+ **Habilitar el proceso de hospedaje de Visual Studio** Active esta casilla para habilitar el proceso de hospedaje de Visual Studio. Esta casilla está activada de forma predeterminada. Para obtener más información, vea [Proceso de alojamiento (vshost.exe)](../../ide/hosting-process-vshost-exe.md).
 
  Para depurar en una zona de seguridad, debe habilitar esta opción y **Depurar esta aplicación con el conjunto de permisos seleccionados** en el [cuadro de diálogo Configuración de seguridad avanzada](../../ide/reference/advanced-security-settings-dialog-box.md).
 
-## <a name="see-also"></a>Vea también
- [Depurar en Visual Studio](../../debugger/debugging-in-visual-studio.md) [configuración del C# proyecto para configuraciones de depuración](../../debugger/project-settings-for-csharp-debug-configurations.md) configuración del [proyecto para una Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md) depurar configuración [administrar propiedades de depuración](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [Cómo: depurar una aplicación ClickOnce con Permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [Cómo: crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)
+## <a name="see-also"></a>Consulte también
+ [Depurar en Visual Studio](../../debugger/debugging-in-visual-studio.md) [configuración de proyecto para las configuraciones de depuración de C#](../../debugger/project-settings-for-csharp-debug-configurations.md) [configuración del proyecto para una Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md) depurar configuración [administrar propiedades de depuración](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [Cómo: depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [Cómo: crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)

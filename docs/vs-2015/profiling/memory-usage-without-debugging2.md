@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532046"
 ---
 # <a name="memory-usage-without-debugging"></a>Uso de memoria sin depuración
@@ -34,7 +34,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
   En este tema se describe cómo usar la herramienta Uso de memoria para analizar aplicaciones XAML universales de Windows. Si desea analizar el uso de memoria en aplicaciones universales de Windows que usan JavaScript y HTML, consulte [Analizar el uso de memoria (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>Iniciar una sesión de diagnóstico de uso de memoria  
+## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Iniciar una sesión de diagnóstico de uso de memoria  
   
 1. Abra en Visual Studio un proyecto de Windows universal de C#.  
   
@@ -44,7 +44,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
      ![Iniciar una sesión de diagnóstico de Uso de memoria](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a>Supervisar el uso de memoria  
+## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> Supervisar el uso de memoria  
  Aunque puede usar la herramienta **Uso de memoria** para generar informes detallados que puede usar para buscar y corregir errores, también puede usarlo para estudiar los efectos de memoria en tiempo real de un escenario que esté desarrollando.  
   
  Al iniciar una sesión de diagnóstico, se inicia la aplicación y la ventana de **herramientas de diagnóstico** muestra un gráfico de escala de tiempo del uso de memoria de la aplicación.  
@@ -63,7 +63,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  Para recopilar instantáneas, inicie una nueva sesión de diagnóstico. Elija **Tomar instantánea** cuando quiera capturar los datos de memoria. Para generar un informe, seleccione **Detener**.  
   
-## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a>Página información general del uso de memoria  
+## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> Página información general del uso de memoria  
  Una vez detenida la recopilación de datos, la herramienta Uso de memoria detiene la aplicación y muestra el informe general.  
   
  ![Página de información general de Uso de memoria](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
@@ -112,16 +112,16 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  ![Ordenar y filtrar opciones](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
-#### <a name="filter"></a><a name="BKMK_Filter"></a>Filtro  
+#### <a name="filter"></a><a name="BKMK_Filter"></a> Filtro  
  Escriba una cadena en el cuadro **Filtrar** para restringir las vistas del árbol a tipos que contengan el texto especificado. El filtro no distingue mayúsculas de minúsculas y reconoce la cadena especificada en cualquier parte de los nombres de tipo.  
   
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> Contraer objetos pequeños  
  Si se aplica este filtro, aquellos tipos cuyo **Tamaño (bytes)** sea inferior al 0,5 por ciento del tamaño total de la memoria de instantánea se ocultan en la lista **Montón administrado**.  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>Solo mi código  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> Solo mi código  
  El filtro **Solo mi código** oculta la mayoría de las instancias generadas por código externo. Los tipos externos son propiedad del sistema operativo o de componentes de Framework o son generados por el compilador.  
   
-## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a>Informes de detalles de instantánea  
+## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a> Informes de detalles de instantánea  
  El informe de detalles de instantánea se usa para centrarse en una instantánea de una sesión de diagnóstico. Para abrir un informe de detalles, elija uno de los vínculos de una vista de instantánea, tal como se muestra en la siguiente imagen. Ambos vínculos abren el mismo informe, la única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. En ambos casos, se puede cambiar el orden después de abrir el informe.  
   
  ![Vínculos a informe de instantánea en una vista de instantánea](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -135,7 +135,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  ![Árbol Montón administrado](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|NOMBRE|Descripción|  
+|Nombre|Descripción|  
 |-|-|  
 |**Tipo de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Recuento**|Número de instancias del objeto del tipo. Para una instancia el número siempre es 1.|  
@@ -154,13 +154,13 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  ![Árbol de objetos referenciados para instancias](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|NOMBRE|Descripción|  
+|Nombre|Descripción|  
 |-|-|  
 |**Tipo o instancia de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Tamaño (bytes)**|Para un tipo, tamaño de todas las instancias del tipo, sin incluir el tamaño de objetos incluidos en el tipo.<br /><br /> Para una instancia, tamaño del objeto sin incluir el tamaño de objetos incluidos en el objeto.|  
 |**Tamaño inclusivo (bytes)**|Tamaño de las instancias del tipo o tamaño de la instancia, incluso el tamaño de los objetos incluidos.|  
   
-## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a>Informes de diferencias de instantáneas (diff)  
+## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a> Informes de diferencias de instantáneas (diff)  
  Un informe de diferencias de instantánea muestra los cambios entre una instantánea principal y la tomada inmediatamente antes. Para abrir un informe de diferencias, elija uno de los vínculos de una vista de instantánea, tal como se muestra en la siguiente imagen. Ambos vínculos abren el mismo informe, la única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. Puede cambiar el orden después de abrir el informe.  
   
  ![Vínculos a informe de diferencias en una vista de instantánea](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -176,7 +176,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  Tenga en cuenta que en la imagen se han contraído las columnas **Recuento**, **Tamaño (bytes)** y **Tamaño inclusivo (bytes)**.  
   
-|NOMBRE|Descripción|  
+|Nombre|Descripción|  
 |-|-|  
 |**Tipo de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Recuento**|Número de instancias de un tipo en la instantánea principal. **Recuento** siempre es 1 para una instancia.|  
@@ -196,7 +196,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  ![Árbol de objetos referenciados para instancias](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|NOMBRE|Descripción|  
+|Nombre|Descripción|  
 |-|-|  
 |**Tipo o instancia de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Tamaño (bytes)**|Para una instancia, tamaño del objeto en la instantánea principal, sin incluir el tamaño de objetos incluidos en la instancia.<br /><br /> Para un tipo, tamaño total de las instancias del tipo en la instantánea principal, sin incluir el tamaño de objetos incluidos en la instancia.|  

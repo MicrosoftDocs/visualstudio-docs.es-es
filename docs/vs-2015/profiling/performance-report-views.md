@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161986"
 ---
 # <a name="performance-report-views"></a>Vistas de informes de rendimiento
@@ -47,5 +47,5 @@ Esta sección proporciona información de referencia para los informes y vistas 
  [Vista Interacciones de capas](../profiling/tier-interactions-view.md)  
  Información de referencia para la vista Interacción y el informe de los archivos de datos de generación de perfiles que incluyen datos de interacción de capas.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

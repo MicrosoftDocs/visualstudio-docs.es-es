@@ -9,16 +9,16 @@ caps.latest.revision: 15
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3ebb18aaff78d9782b6210e25bcd697d21c8570
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660762"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los registros de pruebas de IU programadas filtran y guardan información importante sobre las series de pruebas de IU programadas.
+Los registros de pruebas de IU codificadas filtran y guardan información importante sobre las series de pruebas de IU codificadas.
 
  **Requisitos**
 
@@ -27,7 +27,7 @@ Los registros de pruebas de IU programadas filtran y guardan información import
 ## <a name="why-should-i-do-this"></a>¿Por qué debo hacerlo?
  Los registros se muestran en un formato que permite depurar problemas rápidamente.
 
-## <a name="how-do-i-do-this"></a>¿Cómo lo hago?
+## <a name="how-do-i-do-this"></a>¿Cómo se hace?
 
 ### <a name="step-1-enable-logging"></a>Paso 1: habilitar el registro
  Según su escenario, use uno de los siguientes métodos para habilitar el registro.
@@ -36,7 +36,7 @@ Los registros de pruebas de IU programadas filtran y guardan información import
 
   - Abra el archivo **QTAgent32_40.exe.config**.
 
-    De forma predeterminada, este archivo se encuentra en **\<Letra de disco:>\Archivos de programa (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.
+    De forma predeterminada, este archivo se encuentra en ** \<drvie> : \Archivos de programa (x86) \Microsoft Visual Studio 12.0 \ Common7\IDE**.
 
     Modifique el valor de EqtTraceLevel para que tenga el nivel de registro que quiera.
 
@@ -46,7 +46,7 @@ Los registros de pruebas de IU programadas filtran y guardan información import
 
   - Abra el archivo **QTAgent32.exe.config**.
 
-    De forma predeterminada, este archivo se encuentra en **\<Letra de disco:>\Archivos de programa (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.
+    De forma predeterminada, este archivo se encuentra en ** \<drvie> : \Archivos de programa (x86) \Microsoft Visual Studio 12.0 \ Common7\IDE**.
 
     Modifique el valor de EqtTraceLevel para que tenga el nivel de registro que quiera.
 
@@ -67,11 +67,11 @@ Los registros de pruebas de IU programadas filtran y guardan información import
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: ejecutar la prueba de interfaz de usuario codificada y ver el registro
  Cuando ejecute una prueba de IU codificada una vez realizadas las modificaciones en el archivo **QTAgent32.exe.config**, verá que hay un vínculo de salida en los resultados del Explorador de pruebas. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea “detallado”.
 
-1. En el menú **PRUEBA**, seleccione **Ventanas** y después elija **Explorador de pruebas**.
+1. En el menú **prueba** , elija **ventanas** y, a continuación, seleccione **Explorador de pruebas**.
 
-2. En el menú **COMPILAR**, elija **Compilar solución**.
+2. En el menú **compilar** , elija **compilar solución**.
 
-3. En el Explorador de pruebas, seleccione la prueba de IU codificada que quiera ejecutar, abra el menú contextual y después elija **Ejecutar pruebas seleccionadas**.
+3. En el explorador de pruebas, seleccione la prueba de IU codificada que quiere ejecutar, abra el menú contextual y, a continuación, elija **ejecutar pruebas seleccionadas**.
 
      Las pruebas automatizadas se ejecutarán e indicarán si se superaron o no.
 
@@ -80,17 +80,17 @@ Los registros de pruebas de IU programadas filtran y guardan información import
 
 4. Elija el vínculo **Resultado** en el Explorador de pruebas.
 
-     ![Vínculo de salida en el explorador de pruebas](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Vínculo de resultados del Explorador de pruebas](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")
 
      Con esto se muestra el resultado de la prueba que incluirá un vínculo al registro de acciones.
 
-     ![Vínculos de resultados y de salida de la prueba de IU codificada](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Vínculos de salida y resultados de prueba de IU codificada](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")
 
 5. Elija el vínculo UITestActionLog.html.
 
      El registro se muestra en el explorador web.
 
-     ![Archivo de registro de pruebas de IU codificadas](../test/media/cuit-htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Archivo de registro de prueba de IU codificada](../test/media/cuit-htmlactionlog3.png "CUIT_HTMLActionLog3")
 
 ## <a name="q--a"></a>Preguntas y respuestas
 
@@ -107,5 +107,5 @@ Los registros de pruebas de IU programadas filtran y guardan información import
 
  Estas dos opciones están desusadas desde Visual Studio 2012. EqtTraceLevel es la única opción que se debe modificar para habilitar HtmlLogger.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md) [Cómo: ejecutar pruebas desde Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

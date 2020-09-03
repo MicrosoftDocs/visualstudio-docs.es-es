@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext | Documentos de Microsoft
+title: 'IDebugObject:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5e69e5a77e93df2d338eb7d2e7114129ea9ac8d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162464"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtiene el contexto de la memoria que representa la dirección del valor del objeto.  
+Obtiene el contexto de memoria que representa la dirección del valor del objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +40,13 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>Parámetros  
  `pContext`  
- [out] Devuelve un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que representa la dirección del valor del objeto.  
+ enuncia Devuelve un objeto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que representa la dirección del valor del objeto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El contexto de la memoria devuelta especifica la dirección del valor tal como está representada por este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto.  
+ El contexto de memoria devuelto especifica la dirección del valor representado por este objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

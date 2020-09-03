@@ -152,7 +152,7 @@ Puede ser útil ver una escena 3D desde una posición y un ángulo conocidos, po
 
 Para entender mejor un objeto o una escena 3D, puede ver los detalles adicionales de la geometría como los normales por vértice y por cara, los puntos de pivote de la selección activa y otros detalles. Para habilitarlos o deshabilitarlos, en la barra de herramientas **Editor de modelos**, elija **Scripts** > **Ver** y, después, elija la opción que quiera.
 
-### Crear e importar objetos 3D <a name="Adding3DObjects"></a>
+### <a name="create-and-import-3d-objects"></a>Crear e importar objetos 3D <a name="Adding3DObjects"></a>
 
 Para agregar una forma 3D predefinida a la escena, en el **Cuadro de herramientas**, seleccione la que quiera y muévala a la superficie de diseño. Las nuevas formas se colocan en el origen de la escena. El Editor de modelos proporciona siete formas: **Cono**, **Cubo**, **Cilindro**, **Disco**, **Plano**, **Esfera** y **Tetera**.
 
@@ -197,7 +197,7 @@ Para obtener una demostración sobre el uso del punto de pivote, vea [Cómo: Mod
 
 La traslación y el giro pueden darse en el sistema de coordenadas local (o *marco de referencia local*) del objeto, o en el sistema de coordenadas global (o *marco de referencia global*). El marco de referencia global es independiente del giro del objeto. El modo local es el valor predeterminado. Para habilitar (o deshabilitar) el modo global, en la barra de herramientas **Modo Editor de modelos**, elija el botón **WorldLocal**.
 
-### Modificar objetos <a name="ModifyingObjects"></a>
+### <a name="modify-objects"></a>Modificar objetos <a name="ModifyingObjects"></a>
 
 Para cambiar la forma de un objeto 3D, mueva o elimine sus vértices, bordes y caras. De forma predeterminada, el Editor de modelos está en *modo objeto*, para que se puedan seleccionar y transformar objetos completos. Para seleccionar puntos, bordes o caras, elija el modo de selección adecuado. En la barra de herramientas **Modo Editor de modelos**, elija **Modos de selección** y, después, elija el modo que desea.
 

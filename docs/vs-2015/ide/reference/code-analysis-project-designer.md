@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660871"
 ---
 # <a name="code-analysis-project-designer"></a>Análisis de código, Diseñador de proyectos
@@ -51,5 +51,5 @@ Contiene la herramienta de análisis de código que puede optar por ejecutar en 
 
  Reglas de uso habilita o deshabilita las reglas de uso. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Análisis de código para advertencias de código administrado](../../code-quality/code-analysis-for-managed-code-warnings.md) [análisis de código para código administrado](../../code-quality/code-analysis-for-managed-code-overview.md) [Tutorial: analizar código administrado para defectos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

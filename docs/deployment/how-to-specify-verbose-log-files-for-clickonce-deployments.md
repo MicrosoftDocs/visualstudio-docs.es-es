@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e1d2ca7c58d7da85ad67e56eae7713e517a1d2c
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381774"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Cómo: Especificar archivos de registro detallados para las implementaciones ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]mantiene los archivos de registro de actividad de todas las implementaciones. Estos registros documentan los detalles relativos a la instalación, la inicialización, la actualización y la desinstalación de una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. Para aumentar el detalle que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] escribe en estos archivos de registro, use el editor del registro (*regedit.exe*) para especificar el nivel de detalle.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantiene los archivos de registro de actividad de todas las implementaciones. Estos registros documentan los detalles relativos a la instalación, la inicialización, la actualización y la desinstalación de una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. Para aumentar el detalle que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] escribe en estos archivos de registro, use el editor del registro (*regedit.exe*) para especificar el nivel de detalle.
 
 > [!CAUTION]
 > Si utiliza el editor del registro incorrectamente, puede provocar problemas graves que pueden requerir la reinstalación del sistema operativo. Use el Editor del Registro bajo su propia responsabilidad.
@@ -32,7 +32,7 @@ ms.locfileid: "85381774"
 
 ### <a name="to-specify-verbose-log-files"></a>Para especificar archivos de registro detallados
 
-1. Abra *regedit.exe*.
+1. Abra *Regedit.exe*.
 
 2. Navegue hasta el nodo **HKEY_CURRENT_USER \software\classes\software\microsoft\windows\currentversion\deployment**.
 
@@ -40,5 +40,5 @@ ms.locfileid: "85381774"
 
 4. Establezca el valor `LogVerbosityLevel` en `1`.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

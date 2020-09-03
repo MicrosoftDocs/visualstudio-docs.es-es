@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
 ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950589"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conectarse a Control de versiones de Team Foundation
@@ -117,7 +117,7 @@ Para obtener más información sobre los comandos mencionados aquí u otros, pue
 
 En la galería de extensiones de Visual Studio para Mac, hay una extensión del Control de versiones de Team Foundation que ofrece compatibilidad limitada para establecer conexión con TFVC. La extensión no es compatible y presenta varios errores conocidos, por lo que su experiencia puede variar al utilizarla.
 
-Para instalar la extensión, inicie Visual Studio para Mac y elija el menú **Visual Studio > Extensiones**. En la pestaña **Galería**, seleccione **Control de versiones > Control de versiones de Team Foundation para TFS y Azure DevOps** y haga clic en **Instalar...** :
+Para instalar la extensión, inicie Visual Studio para Mac y elija el menú **Visual Studio > Extensiones**. En la pestaña **Galería**, seleccione **Control de versiones > Control de versiones de Team Foundation para TFS y Azure DevOps** y haga clic en **Instalar...**:
 
 ![Administrador de extensiones](media/tfvc-install.png)
 
@@ -129,7 +129,7 @@ La extensión de TFVC se actualiza periódicamente. Para acceder a las actualiza
 
 Haga clic en **Instalar** en el cuadro de diálogo siguiente para desinstalar el paquete antiguo e instalar el nuevo.
 
-### <a name="using-the-extension"></a>Utilizar la extensión
+### <a name="using-the-extension"></a>Uso de la extensión
 
 Una vez que la extensión está instalada, seleccione el elemento de menú **Control de versiones > TFS/Azure DevOps > Open from Remote Repository...** (Abrir desde el repositorio remoto...).
 
@@ -197,7 +197,7 @@ El Explorador de código fuente permite navegar por todos los proyectos asignado
 - Proteger y desproteger archivos
 - Bloquear y desbloquear archivos
 - Agregar, eliminar y cambiar el nombre de archivos
-- Ver historial
+- Visualización del historial
 - Comparar cambios.
 
 Muchas de estas acciones están disponibles a través de acciones del menú contextual en el proyecto:
@@ -237,8 +237,8 @@ Una vez configurada el área de trabajo, se puede cambiar o quitar haciendo clic
 
 Las siguientes opciones pueden usarse para autenticar con un servidor:
 
-- OAuth
-- Básico
+- Oauth
+- Básica
 - Ntlm
 
 Para poder usar la autenticación básica, es necesario habilitar **credenciales de autenticación alternativas** en Azure DevOps Services. Para ello, siga estos pasos:

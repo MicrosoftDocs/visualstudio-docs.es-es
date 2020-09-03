@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9083d14c82eb2d283431e28d03bbbf96c14258cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660852"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -33,7 +33,7 @@ devenv /command CommandName
 ## <a name="arguments"></a>Argumentos
  `CommandName` Obligatorio. Nombre completo de un comando de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o su alias, incluido entre comillas dobles. Para obtener más información sobre la sintaxis de comandos y de alias, consulte [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Una vez completado el inicio, el IDE ejecuta el comando indicado. Si se usa este modificador, el IDE no muestra la página principal de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] al iniciarse.
 
  Si un complemento muestra un comando, puede utilizar este modificador para iniciar el complemento desde la línea de comandos. Para obtener más información, consulte [Cómo: Controlar complementos con el Administrador de complementos](https://msdn.microsoft.com/library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
@@ -45,5 +45,5 @@ devenv /command CommandName
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  La [línea de comandos de devenv cambia](../../ide/reference/devenv-command-line-switches.md) los [alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

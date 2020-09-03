@@ -1,5 +1,5 @@
 ---
-title: Elemento PromptForSaveOnCreation (Plantillas de Visual Studio) Microsoft Docs
+title: PromptForSaveOnCreation ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701778"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (plantillas de Visual Studio)
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation ((elemento, plantillas de Visual Studio)
 
-Especifica si se solicita al usuario una ubicación de guardado del proyecto a través del cuadro de diálogo **Nuevo proyecto** al crear un proyecto. Si este elemento `true`se establece en , se solicita al usuario una ubicación de guardado. Si `false`, no se les solicita (es decir, se crea un proyecto temporal).
+Especifica si se solicita al usuario una ubicación de guardado del proyecto a través del cuadro de diálogo **nuevo proyecto** al crear un proyecto. Si este elemento se establece en `true` , se solicitará al usuario una ubicación de almacenamiento. Si es `false` , no se le solicita (es decir, se crea un proyecto temporal).
 
 ```xml
 \<VSTemplate>
@@ -55,15 +55,15 @@ Especifica si se solicita al usuario una ubicación de guardado del proyecto a t
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe `true` `false`ser `true` o , lo que indica que se solicitará al usuario una ubicación de guardado al crear un nuevo proyecto.
+ El texto debe ser `true` o `false` , lo que `true` indica que se solicitará al usuario una ubicación de almacenamiento al crear un nuevo proyecto.
 
 ## <a name="remarks"></a>Observaciones
  `PromptForSaveOnCreation` es un elemento opcional. El valor predeterminado es `false`.
 
- Los proyectos temporales son proyectos que se pueden crear y modificar sin guardar el contenido de ese proyecto en el disco.
+ Los proyectos temporales son proyectos que puede crear y modificar sin guardar el contenido de ese proyecto en el disco.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente `PromptForSaveOnCreation` se `false`establece el valor de igual a , que especifica permitir que el proyecto se cree como un proyecto temporal.
+ En el ejemplo siguiente se establece el valor de `PromptForSaveOnCreation` igual a `false` , que especifica que se permita que el proyecto se cree como un proyecto temporal.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +92,5 @@ Especifica si se solicita al usuario una ubicación de guardado del proyecto a t
 
 ## <a name="see-also"></a>Vea también
 
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

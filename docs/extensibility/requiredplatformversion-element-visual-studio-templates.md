@@ -1,5 +1,5 @@
 ---
-title: Elemento RequiredPlatformVersion (Plantillas de Visual Studio) Microsoft Docs
+title: RequiredPlatformVersion (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,20 +10,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701497"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (plantillas de Visual Studio)
-Especifica la versión mínima del sistema operativo que la plantilla de proyecto requiere para funcionar correctamente. Este elemento se utiliza para [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] las plantillas de proyecto que crean aplicaciones.
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion (elemento, plantillas de Visual Studio)
+Especifica la versión mínima del sistema operativo que la plantilla de proyecto necesita para funcionar correctamente. Este elemento se usa para las plantillas de proyecto que crean [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicaciones.
 
- El `RequiredPlatformVersion` valor se compara directamente con la versión del sistema operativo. Si `RequiredPlatformVersion` la versión del sistema operativo es superior a la del sistema operativo, la plantilla no aparece en el cuadro de diálogo **Nuevo proyecto.** Para especificar una [!INCLUDE[win8](../debugger/includes/win8_md.md)] plantilla para `RequiredPlatformVersion` o superior, establezca en 6.2.0. Para especificar una [!INCLUDE[win81](../debugger/includes/win81_md.md)] plantilla para `RequiredPlatformVersion` o superior, establezca en 6.3.0.
+ El `RequiredPlatformVersion` valor se compara directamente con la versión del sistema operativo. Si el `RequiredPlatformVersion` valor de es mayor que la versión del sistema operativo, la plantilla no aparece en el cuadro de diálogo **nuevo proyecto** . Para especificar una plantilla para [!INCLUDE[win8](../debugger/includes/win8_md.md)] o posterior, establezca `RequiredPlatformVersion` en 6.2.0. Para especificar una plantilla para [!INCLUDE[win81](../debugger/includes/win81_md.md)] o posterior, establezca `RequiredPlatformVersion` en 6.3.0.
 
- Las plantillas `RequiredPlatformVersion`que especifican el [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] número 8 son compatibles con las plantillas de cliente anteriores.
+ Las plantillas que especifican `RequiredPlatformVersion` = 8 son compatibles con [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] las plantillas de cliente anteriores.
 
- VSTemplate TemplateData ..... TargetPlatformName RequiredPlatformVersion
+ TemplateData (de VSTemplate..... TargetPlatformName RequiredPlatformVersion
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Especifica la versión mínima del sistema operativo que la plantilla de proyect
  Se requiere un valor de texto.
 
 ## <a name="remarks"></a>Observaciones
- Este texto especifica la versión mínima del sistema operativo requerida por la plantilla.
+ Este texto especifica la versión mínima del sistema operativo necesaria para la plantilla.
 
 ## <a name="example"></a>Ejemplo
  Este ejemplo especifica que la plantilla del proyecto está orientada a [!INCLUDE[win8](../debugger/includes/win8_md.md)] o posterior.
@@ -69,6 +69,6 @@ Especifica la versión mínima del sistema operativo que la plantilla de proyect
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Elemento TargetPlatformName (plantillas de Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
-- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [TargetPlatformName (elemento, plantillas de Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

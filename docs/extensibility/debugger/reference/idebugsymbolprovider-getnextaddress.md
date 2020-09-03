@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress ? Microsoft Docs
+title: 'IDebugSymbolProvider:: GetNextAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719196"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
@@ -45,16 +45,16 @@ int GetNextAddress( 
 
 ## <a name="parameters"></a>Parámetros
 `pAddress`\
-[en] Dirección de depuración dada.
+de Dirección de depuración determinada.
 
 `fStatementOnly`\
-[en] Si es TRUE, limita las direcciones de depuración a una sola instrucción.
+de Si es TRUE, limita las direcciones de depuración a una única instrucción.
 
 `ppAddress`\
-[fuera] Devuelve la siguiente dirección de depuración.
+enuncia Devuelve la siguiente dirección de depuración.
 
 ## <a name="return-value"></a>Valor devuelto
- Devuelve un `HRESULT`valor válido , normalmente S_OK.
+ Devuelve un válido `HRESULT` , normalmente S_OK.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

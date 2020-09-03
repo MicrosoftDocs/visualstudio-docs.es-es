@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c04ef8f015b081e29891d7439b783e3851376210
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531553"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de método abreviado (Visor de Ayuda)
@@ -44,7 +44,7 @@ Puede navegar por el Visor de Ayuda de Microsoft con las teclas de método abrev
 |Navegadores|Alt + F<br /><br /> O<br /><br /> Ctrl + Mayús + F|Mostrar la pestaña **Favoritos**.|
 |Navegadores|Alt + S<br /><br /> O<br /><br /> Ctrl + E<br /><br /> O<br /><br /> Ctrl + Mayús + S|Mostrar la pestaña **Buscar**.|
 |Navegadores|Alt + M<br /><br /> O<br /><br /> Ctrl + Mayús + M|Mostrar la pestaña **Administrar contenido**.|
-|Tema|Tecla del menú contextual<br /><br /> O BIEN<br /><br /> Mayús + F10|Mostrar el menú contextual para el elemento de interfaz de usuario actual.|
+|Tema|Tecla del menú contextual<br /><br /> O<br /><br /> Mayús + F10|Mostrar el menú contextual para el elemento de interfaz de usuario actual.|
 |Tema|Flecha arriba|Desplazarse hacia el inicio del documento una línea cada vez.|
 |Tema|Flecha abajo|Desplazarse hacia el final del documento una línea cada vez.|
 |Tema|Re Pág|Desplazarse hacia el inicio del documento una pantalla cada vez.|

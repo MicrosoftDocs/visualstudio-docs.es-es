@@ -1,5 +1,5 @@
 ---
-title: Asistente (. Vsz) Archivo de la aplicación ? Microsoft Docs
+title: Asistente (. Archivo vsz) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703309"
 ---
 # <a name="wizard-vsz-file"></a>Archivo de asistente (.Vsz)
 
-El entorno de desarrollo integrado (IDE) utiliza archivos .vsz para iniciar asistentes. Estos archivos .vsz contienen información que el IDE utiliza para determinar qué asistente llamar y qué información pasar al asistente.
+El entorno de desarrollo integrado (IDE) utiliza archivos. vsz para iniciar asistentes. Estos archivos. vsz contienen información que el IDE usa para determinar a qué asistente se debe llamar y qué información se debe pasar al asistente.
 
-Un archivo .vsz es una versión de un archivo de texto con formato .ini que no tiene secciones. La información conocida por el IDE se almacena al principio del archivo. Esto proporciona un vínculo entre el asistente que el IDE llama y los parámetros que se encuentran en el archivo .vsz que se pasará al IDE. El resto del archivo proporciona parámetros que son específicos del asistente y que el IDE debe recopilar y pasar al asistente específico.
+Un archivo. vsz es una versión de un archivo de texto con formato. ini que no tiene secciones. La información que se conoce en el IDE se almacena al principio del archivo. Esto proporciona un vínculo entre el Asistente al que llama el IDE y los parámetros que se encuentran en el archivo. vsz que se van a pasar al IDE. El resto del archivo proporciona parámetros que son específicos del asistente y que se van a recopilar mediante el IDE y pasarse al asistente específico.
 
-En el ejemplo siguiente se muestra el contenido de un archivo .vsz.
+En el ejemplo siguiente se muestra el contenido de un archivo. vsz.
 
 ```
 VSWizard 8.0
@@ -34,17 +34,17 @@ Param="WIZARDNAME = Wizard One"
 Param="WIZARDUI = FALSE"
 ```
 
-A continuación se muestran las partes del archivo .vsz.
+A continuación se indican las partes del archivo. vsz.
 
 |Parte|Descripción|
 |----------|-----------------|
-|VSWizard|El primer parámetro del archivo es el número de versión del formato de archivo de plantilla. Este número de versión debe ser 6.0, 7.0, 7.1 o 8.0. No se pueden iniciar otros números y provocar un error de formato no válido.|
-|Asistente|Este campo contiene el ProgID OLE del asistente o, alternativamente, una representación de cadena GUID del CLSID del asistente que es creado cocremente por el IDE.|
-|Parámetro|Estas piezas son opcionales. Puede agregar tantos como sea necesario.|
+|VSWizard|El primer parámetro del archivo es el número de versión del formato de archivo de plantilla. Este número de versión debe ser 6,0, 7,0, 7,1 o 8,0. No se pueden iniciar otros números y se producirá un error de formato no válido.|
+|Asistente|Este campo contiene el identificador de programa (ProgID) de OLE del asistente, o bien una representación de cadena GUID del CLSID del asistente que creó el IDE.|
+|Parámetro|Estas partes son opcionales. Puede Agregar tantas como sea necesario.|
 
-Los parámetros permiten que el archivo .vsz pase parámetros personalizados adicionales al asistente. Cada valor se pasa como un elemento de cadena en una matriz de variantes al asistente. Para obtener más información, consulte [Parámetros personalizados](../../extensibility/internals/custom-parameters.md).
+Los parámetros permiten que el archivo. vsz pase parámetros personalizados adicionales al asistente. Cada valor se pasa como un elemento de cadena en una matriz de variantes al asistente. Para obtener más información, vea [Custom Parameters](../../extensibility/internals/custom-parameters.md).
 
-Para agregar un ID de configuración regional predeterminado `FALLBACK_LCID`a su archivo .vsz, especifique el valor de xxxx, donde xxxx es el identificador de configuración regional, por ejemplo, 1033 para inglés. Cuando `FALLBACK_LCID` se define el parámetro, el asistente utiliza el identificador de configuración regional de reserva proporcionado si no se encuentra el identificador actual.
+Para agregar un ID. de configuración regional predeterminado al archivo. vsz, especifique `FALLBACK_LCID` = XXXX, donde XXXX es el ID. de configuración regional, por ejemplo, 1033 para inglés. Cuando `FALLBACK_LCID` se define el parámetro, el asistente usa el identificador de configuración regional de reserva proporcionado si no se encuentra el identificador actual.
 
 ## <a name="see-also"></a>Vea también
 

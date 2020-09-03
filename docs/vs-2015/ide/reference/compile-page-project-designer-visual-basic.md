@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db830e04388b7465c941e2fdf069b49f98951a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660825"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página Compilación, Diseñador de proyectos (Visual Basic)
@@ -82,7 +82,7 @@ Use la página **Compilación** del Diseñador de proyectos para especificar las
 
   Cuando se crea un proyecto, el valor **Option Strict** de la **página Compilar** se establece en el valor de la opción **Option Strict** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Strict** en **Valores predeterminados de VB** es **Off**.
 
-  **Advertencias individuales de Option Strict.** En la sección **Configuraciones de advertencias** de la **página Compilar** se incluyen valores que se corresponden con las tres condiciones que producen un error en tiempo de compilación cuando `Option Strict` está activado. Estas opciones son las siguientes:
+  **Option Strict advertencias individuales.** En la sección **Configuraciones de advertencias** de la **página Compilar** se incluyen valores que se corresponden con las tres condiciones que producen un error en tiempo de compilación cuando `Option Strict` está activado. Estas opciones son las siguientes:
 
 - **Conversión implícita**
 
@@ -92,7 +92,7 @@ Use la página **Compilación** del Diseñador de proyectos para especificar las
 
   Al establecer **Option Strict** en **On**, estos tres valores de configuración de advertencias se establecen en **Error**. Al establecer **Option Strict** en **Off**, las tres opciones se establecen en **None**.
 
-  Puede cambiar individualmente cada valor de configuración de advertencia por **None**, **Warning** o **Error**. Si se establecen las tres opciones de configuración de advertencia en **Error**, `On` aparece en el cuadro `Option strict`. Si se establecen las tres en **None**, `Off` aparece en este cuadro. Para cualquier otra combinación de estas opciones, aparece **(personalizado)** .
+  Puede cambiar individualmente cada valor de configuración de advertencia por **None**, **Warning** o **Error**. Si los tres valores de configuración de advertencia se establecen como **error**, `On` aparece en el `Option strict` cuadro. Si los tres están establecidos en **ninguno**, `Off` aparece en este cuadro. Para cualquier otra combinación de estas opciones, aparece **(personalizado)**.
 
   **Option Compare**: especifica el tipo de comparación de cadena que se va a usar. Seleccione **Binario** para indicar al compilador que use comparaciones de cadenas binarias que distingan mayúsculas de minúsculas. Seleccione **Texto** para usar comparaciones de cadenas de texto que no distingan mayúsculas de minúsculas específicas de la configuración regional.
 
@@ -130,7 +130,7 @@ Use la página **Compilación** del Diseñador de proyectos para especificar las
 
   De forma predeterminada, todas las advertencias del compilador se agregan a la lista de tareas durante la compilación. Seleccione **Deshabilitar todas las advertencias** para indicar al compilador que no emita advertencias ni errores. Seleccione **Tratar todas las advertencias como errores** si quiere que el compilador trate las advertencias como errores que se deben corregir.
 
-  **Deshabilitar todas las advertencias**: especifica si se debe permitir que el compilador emita notificaciones como se especifica en la tabla **Condición y notificación** descrita anteriormente en este documento. Esta casilla se encuentra desactivada de forma predeterminada. Active esta casilla para indicar al compilador que no emita advertencias ni errores.
+  **Deshabilitar todas las advertencias**: especifica si se debe permitir que el compilador emita notificaciones como se especifica en la tabla **Condición y notificación** descrita anteriormente en este documento. De forma predeterminada, esta casilla de verificación está desactivada. Active esta casilla para indicar al compilador que no emita advertencias ni errores.
 
   Esta opción corresponde a la opción del compilador [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).
 
@@ -152,5 +152,5 @@ Use la página **Compilación** del Diseñador de proyectos para especificar las
 
   **Opciones de compilación avanzadas**: haga clic en este botón para acceder al cuadro de diálogo **Configuración de compilador avanzada**. Use el cuadro de diálogo **Configuración de compilador avanzada** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Configuraciones de depuración y lanzamiento de proyectos](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [administrar las propiedades de compilación](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [Cómo: especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [Visual Basic compilador de línea de comandos](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c) [Cómo: crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)

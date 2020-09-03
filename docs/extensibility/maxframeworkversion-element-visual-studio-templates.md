@@ -1,5 +1,5 @@
 ---
-title: MaxFrameworkVersion (Elemento) (Plantillas de Visual Studio) Microsoft Docs
+title: MaxFrameworkVersion (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,20 +13,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702624"
 ---
-# <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (plantillas de Visual Studio)
+# <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion (elemento, plantillas de Visual Studio)
 
-Especifica la versión máxima de .NET Framework que requiere la plantilla. Determina el valor más alto disponible en la lista desplegable **Versión** de marco de trabajo de destino del cuadro de diálogo **Nuevo proyecto.** Para que los usuarios puedan seleccionar una versión de framework, también debe especificar [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) como la versión mínima de .NET Framework para la plantilla.
+Especifica la versión máxima del .NET Framework que requiere la plantilla. Determina el valor más alto disponible en la lista desplegable **versión de .NET Framework de destino** del cuadro de diálogo **nuevo proyecto** . Para que los usuarios puedan seleccionar una versión de .NET Framework, también debe especificar [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) como la versión mínima .NET Framework para la plantilla.
 
 > [!IMPORTANT]
-> A partir de Visual Studio 2017 versión 15.6, la lista desplegable **Versión** de marco de trabajo de destino ya no es un filtro para las plantillas mostradas en la sección **Plantillas** del cuadro de diálogo **Nuevo proyecto.** En su lugar, la lista desplegable **Versión** de marco de trabajo de destino funciona como un selector de marco de trabajo para la plantilla seleccionada.
+> A partir de la versión 15,6 de Visual Studio 2017, la lista desplegable **versión de .NET Framework de destino** ya no es un filtro para las plantillas mostradas en la sección **plantillas** del cuadro de diálogo **nuevo proyecto** . En su lugar, el menú desplegable versión de la **plataforma de destino** funciona como un selector de plataforma para la plantilla seleccionada.
 
- \<VSTemplate \<> TemplateData> \<> MaxFrameworkVersion
+ \<VSTemplate> \<TemplateData>
+ \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,20 +48,20 @@ Especifica la versión máxima de .NET Framework que requiere la plantilla. Dete
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o Agregar **nuevo elemento.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** .|
 
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe ser el número de versión más alto de .NET Framework permitido por la plantilla.
+ El texto debe ser el número de versión más alto del .NET Framework permitido por la plantilla.
 
 ## <a name="remarks"></a>Observaciones
 
-`MaxFrameworkVersion` es un elemento opcional. El `MaxFrameworkVersion` elemento debe omitirse a menos que sea necesario, para no limitar inadvertidamente el intervalo admitido de versiones de .NET Framework para la plantilla. También debe omitirse si .NET Framework no es aplicable a la plantilla.
+`MaxFrameworkVersion` es un elemento opcional. Se `MaxFrameworkVersion` debe omitir el elemento a menos que sea necesario, por lo que no se puede limitar accidentalmente el intervalo admitido de versiones de .NET Framework para la plantilla. También se debe omitir si .NET Framework no es aplicable a la plantilla.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestran los metadatos de una plantilla de clase estándar.
+En el ejemplo siguiente se muestran los metadatos de una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantilla de clase estándar.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,9 +81,9 @@ En el ejemplo siguiente se [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md
 </VSTemplate>
 ```
 
-En este ejemplo, la versión máxima de .NET Framework que `MaxFrameworkVersion`requiere la plantilla, representada por , es 4.7.1. Un proyecto creado con esta plantilla puede tener como destino versiones de .NET Framework hasta 4.7.1.
+En este ejemplo, la versión máxima de la .NET Framework que requiere la plantilla, representada por `MaxFrameworkVersion` , es 4.7.1. Un proyecto creado con esta plantilla puede tener como destino .NET Framework versiones hasta 4.7.1.
 
 ## <a name="see-also"></a>Vea también
 
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

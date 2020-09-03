@@ -1,5 +1,5 @@
 ---
-title: Elemento KeyBindings (KeyBindings Element) Microsoft Docs
+title: KeyBindings (elemento) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703136"
 ---
-# <a name="keybindings-element"></a>Elemento KeyBindings
-El keyBindings elemento agrupa KeyBinding elementos y otras KeyBindings agrupaciones.
+# <a name="keybindings-element"></a>KeyBindings (elemento)
+El elemento KeyBindings agrupa los elementos KeyBinding y otras agrupaciones de enlaces de teclado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,14 +39,14 @@ El keyBindings elemento agrupa KeyBinding elementos y otras KeyBindings agrupaci
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
 |[Elemento KeyBinding](../extensibility/keybinding-element.md)|Especifica los métodos abreviados de teclado para los comandos.|
-|[Keybindings](../extensibility/keybindings-element.md)|Agrupa KeyBinding elementos y otras keyBindings agrupaciones.|
+|[KeyBindings](../extensibility/keybindings-element.md)|Agrupa los elementos KeyBinding y otras agrupaciones de enlaces de teclado.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
@@ -65,6 +65,6 @@ El keyBindings elemento agrupa KeyBinding elementos y otras KeyBindings agrupaci
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Elemento KeyBinding](../extensibility/keybinding-element.md)
-- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

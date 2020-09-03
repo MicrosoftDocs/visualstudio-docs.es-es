@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 634051d47b3462e2462c5592448b20f70d09ae71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531942"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Iniciar una sesión de depuración para aplicaciones de la Tienda en Visual Studio (JavaScript)
@@ -67,7 +67,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 - [Asociar el depurador](#BKMK_Attach_the_debugger)
 
-## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a>La forma más sencilla de iniciar la depuración
+## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a> La forma más sencilla de iniciar la depuración
  ![Válido únicamente para Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
 1. Abre la solución de aplicación en Visual Studio.
@@ -80,14 +80,14 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    Visual Studio compila e inicia la aplicación con el depurador asociado. La ejecución continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción no controlada o la aplicación finaliza. Para obtener más información, vea [Inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).
 
-## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a>Configurar la sesión de depuración
+## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a> Configurar la sesión de depuración
  Dado que no se compila el script, no se aplicará la configuración de la compilación y de la plataforma. Si va a depurar un componente de C++ o administrado, establezca la **configuración** en **depurar** y elija la plataforma de destino en el cuadro de diálogo de **configuración** .
 
 ### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Abrir la página de propiedades de depuración del proyecto
 
 1. En el Explorador de soluciones, seleccione el proyecto. Elige **Propiedades**en el menú contextual.
 
-2. Expanda el nodo **propiedades de configuración** y, a continuación, elija **depuración**
+2. Expanda el nodo **propiedades de configuración**  y, a continuación, elija **depuración**
 
 ### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a> Elegir las opciones de configuración de compilación
 
@@ -128,7 +128,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
  Elija uno de estos depuradores de la lista **tipo de depurador** :
 
-|Tipo|Description|
+|Tipo|Descripción|
 |-|-|
 |**Solo script**|Depura el código JavaScript de la aplicación. Se omiten el código administrado y el nativo.|
 |**Solo nativo**|Depura el código C/C++ nativo de la aplicación. Se omiten el código administrado y el de JavaScript.|
@@ -136,7 +136,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |**Solo administrado**|Depura el código administrado de la aplicación. Se omiten el código de JavaScript y el de C/C++ nativo.|
 |**Mixto (administrado y nativo)**|Depura el código de C/C++ nativo y el código administrado de la aplicación. Se omite el código de JavaScript.|
 
-### <a name="optional-delay-starting-the-app-in-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a>Opta Retrasar el inicio de la aplicación en la sesión de depuración
+### <a name="optional-delay-starting-the-app-in-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> Opta Retrasar el inicio de la aplicación en la sesión de depuración
  De forma predeterminada, Visual Studio inicia inmediatamente la aplicación cuando se iniciar la depuración. También puedes iniciar una sesión de depuración pero retrasar el inicio de la aplicación. La aplicación se inicia en el depurador cuando se inicia desde la pantalla Inicio o mediante un contrato de activación, o bien cuando la inicia otro proceso o método. También puede usar el inicio retrasado para depurar los eventos en segundo plano de la aplicación que quiera que se produzcan cuando la aplicación no se esté ejecutando.
 
  Especifique si desea retrasar el inicio de la aplicación en la lista **Iniciar aplicación** de la página de propiedades **depuración** del proyecto de la aplicación. Elija una de estas opciones:
@@ -154,10 +154,10 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 ## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a> Iniciar la sesión de depuración
 
-### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a>Iniciar depuración (F5)
+### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a> Iniciar depuración (F5)
  Al seleccionar **iniciar depuración** en el menú **depurar** (teclado: F5), Visual Studio inicia la aplicación con el depurador adjunto. La ejecución continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción no controlada o la aplicación finaliza.
 
-### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>Iniciar la depuración (F5) pero retrasar el inicio de la aplicación
+### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Iniciar la depuración (F5) pero retrasar el inicio de la aplicación
  Puede establecer que la aplicación se ejecute en modo de depuración, pero dejar que se inicie mediante un método que no sea el depurador. Por ejemplo, puedes depurar el inicio de tu aplicación desde el menú Inicio o depurar un proceso en segundo plano de la aplicación sin iniciarla. Si deseas retrasar el inicio de la aplicación, realiza lo siguiente:
 
 1. En la página **depurar** de las propiedades del proyecto de la aplicación, elija **no** en la lista **Iniciar aplicación** .
@@ -223,12 +223,12 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 4. En el símbolo del sistema de PowerShell, especifique `Enable-AppxDebug` *PackageFullName* , donde *PackageFullName* es el identificador PackageFullName de la aplicación.
 
-### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a>Asociar el depurador
+### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a> Asociar el depurador
 
 > [!TIP]
 > Las aplicaciones de JavaScript se ejecutan en una instancia del proceso wwahost.exe. Si hay otras aplicaciones de JavaScript ejecutándose durante la asociación, debe conocer el identificador numérico del proceso (PID) del proceso wwahost.exe en el que se ejecuta la aplicación.
 >
-> El modo más fácil de solucionarlo es cerrar las demás aplicaciones de JavaScript. De lo contrario, puede abrir el Administrador de tareas de Windows antes de iniciar la aplicación y apuntar los identificadores de los procesos wwahost.exe. Al especificar el proceso al que desea asociar en el cuadro de diálogo **procesos disponibles** , el wwahost.exe de la aplicación tendrá un identificador que es diferente de los que ha anotado.
+> El modo más fácil de solucionarlo es cerrar las demás aplicaciones de JavaScript. De lo contrario, puede abrir el Administrador de tareas de Windows antes de iniciar la aplicación y apuntar los identificadores de los procesos wwahost.exe. Al especificar el proceso al que desea asociar en el cuadro de diálogo **procesos disponibles**  , el wwahost.exe de la aplicación tendrá un identificador que es diferente de los que ha anotado.
 
  Para asociar el depurador:
 
@@ -252,7 +252,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    - Elige **Depurar estos tipos de código** y seleccionar uno o más tipos de la lista.
 
-4. En la lista **procesos disponibles** , elija el proceso de **wwahost.exe** adecuado. Use la columna **título** para identificar la aplicación.
+4. En la lista **procesos disponibles**  , elija el proceso de **wwahost.exe** adecuado. Use la columna **título** para identificar la aplicación.
 
 5. Elija **Asociar**.
 
