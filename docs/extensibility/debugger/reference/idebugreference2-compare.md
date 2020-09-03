@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Comparar ? Microsoft Docs
+title: 'IDebugReference2:: Compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d293fcb89c92a19acc4f5a3910015914ef4231a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720640"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
-Compara una referencia con otra. Reservado para uso futuro.
+Compara una referencia con otra. Reservado para un uso futuro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,10 +43,10 @@ int Compare ( 
 
 ## <a name="parameters"></a>Parámetros
 `dwCompare`\
-[en] Valor de la [enumeración REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) que especifica la operación de comparación, por ejemplo, igual a, menor o mayor que.
+de Un valor de la enumeración [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) que especifica la operación de comparación, por ejemplo, igual a, menor que o mayor que.
 
 `pReference`\
-[en] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa la referencia que se va a comparar con.
+de Objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que representa la referencia que se va a comparar con.
 
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.

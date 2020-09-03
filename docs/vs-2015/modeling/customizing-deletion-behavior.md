@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d0dcfc5724e87d57d2803b9b64a6eb121314b99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655046"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizar el comportamiento de eliminación
@@ -25,11 +25,11 @@ ms.locfileid: "72655046"
 
 Normalmente, al eliminar un elemento también se eliminan los elementos relacionados. Se eliminan todas las relaciones conectadas a él y todos los elementos secundarios. Este comportamiento se denomina *propagación de eliminación*. Puede personalizar la propagación de la eliminación, por ejemplo, para organizar que se eliminen otros elementos relacionados. Escribiendo código de programa puede hacer que la propagación de la eliminación dependa del estado del modelo. También puede hacer que se produzcan otros cambios en respuesta a una eliminación.
 
- En este tema, se incluyen las siguientes secciones:
+ Este tema incluye las siguientes secciones:
 
-- [Comportamiento de eliminación predeterminado](#default)
+- [Comportamiento predeterminado de la eliminación](#default)
 
-- [Establecer la opción propagar eliminación de un rol](#property)
+- [Establecer la opción Propagate Delete (Propagar eliminación) de un rol](#property)
 
 - [Reemplazar el cierre de la eliminación](#closure) : Use esta técnica, donde la eliminación podría provocar la eliminación de los elementos vecinos.
 
@@ -37,11 +37,11 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 
 - [Reglas de eliminación](#rules) : Use reglas para propagar las actualizaciones de cualquier tipo dentro del almacén, donde un cambio podría conducir a otros.
 
-- [Eventos de eliminación](#rules) : Use los eventos del almacén para propagar las actualizaciones fuera del almacén, por ejemplo, a otros documentos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- [Eventos de eliminación](#rules) : Use los eventos del almacén para propagar las actualizaciones fuera del almacén, por ejemplo, a otros [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] documentos.
 
 - [Unmerge](#unmerge) : Utilice la operación de anulación de combinación para deshacer la operación de combinación que adjuntó un elemento secundario a su elemento primario.
 
-## <a name="default"></a>Comportamiento de eliminación predeterminado
+## <a name="default-deletion-behavior"></a><a name="default"></a> Comportamiento de eliminación predeterminado
  De forma predeterminada, la propagación de la eliminación cumple estas reglas:
 
 - Si un elemento se elimina, todos los elementos incrustados también se eliminan. Los elementos incrustados son los destinos de relación de incrustación para las cuales este elemento es el origen. Por ejemplo, si hay una relación de incrustación de **álbum** a **canción**, cuando se elimine un álbum determinado, también se eliminarán todas sus canciones.
@@ -54,7 +54,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 
 - Todas las relaciones que están conectadas al elemento, ya sea en el rol de origen o de destino, se eliminan. La propiedad de rol del elemento en el rol opuesto ya no contiene el elemento eliminado.
 
-## <a name="property"></a>Establecer la opción propagar eliminación de un rol
+## <a name="setting-the-propagate-delete-option-of-a-role"></a><a name="property"></a> Establecer la opción propagar eliminación de un rol
  Puede hacer que la eliminación se propague a lo largo de una relación de referencia, o desde un elemento secundario incrustado a su primario.
 
 #### <a name="to-set-delete-propagation"></a>Para establecer la propagación de la eliminación
@@ -79,7 +79,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 > [!NOTE]
 > Para agregar código de programa a la definición de DSL, cree un archivo de código independiente en el proyecto de **DSL** y escriba definiciones parciales para aumentar las clases de la carpeta de código generado. Para obtener más información, vea [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
-## <a name="closure"></a>Definir un cierre de eliminación
+## <a name="defining-a-delete-closure"></a><a name="closure"></a> Definir un cierre de eliminación
  La operación de eliminación usa la clase _sumodelo_**DeleteClosure** para determinar qué elementos se van a eliminar, dada una selección inicial. Llama a `ShouldVisitRelationship()` y a `ShouldVisitRolePlayer()` repetidamente, recorriendo el gráfico de relaciones. Puede invalidar estos métodos. ShouldVisitRolePlayer incluye la identidad de un vínculo y el elemento en uno de los roles del vínculo. Debe devolver uno de los siguientes valores:
 
 - **VisitorFilterResult. Yes**: el elemento debe eliminarse y el rastreador debe continuar para probar los demás vínculos del elemento.
@@ -132,16 +132,16 @@ partial class MusicLibDeleteClosure
 
  Sin embargo, en la técnica se supone que la eliminación solo afecta a sus vecinos en el gráfico de relaciones: no puede usar este método para eliminar un elemento en otra parte del modelo. No puede usarlo si quiere agregar elementos o realizar otros cambios en respuesta a una eliminación.
 
-## <a name="ondeleting"></a>Usar la eliminación y la eliminación
+## <a name="using-ondeleting-and-ondeleted"></a><a name="ondeleting"></a> Usar la eliminación y la eliminación
  Puede invalidar `OnDeleting()` o `OnDeleted()` en una clase de dominio o en una relación de dominio.
 
-1. Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> cuando se está a punto de eliminar un elemento, pero antes de que sus relaciones se hayan desconectado. Aún se puede navegar hacia y desde otros elementos, y aún está en `store.ElementDirectory`.
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> se llama a cuando un elemento está a punto de eliminarse, pero antes de que sus relaciones se hayan desconectado. Aún se puede navegar hacia y desde otros elementos, y aún está en `store.ElementDirectory`.
 
     Si se eliminan varios elementos al mismo tiempo, se llama a OnDeleting para todos ellos antes de realizar las eliminaciones.
 
-    `IsDeleting` es True.
+    `IsDeleting` es true.
 
-2. Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> cuando el elemento se ha eliminado. Permanece en el montón de CLR para que se pueda realizar una acción de deshacer si es necesario, pero se desvincula de otros elementos y se quita de `store.ElementDirectory`. En el caso de las relaciones, los roles todavía hacen referencia a los anteriores participantes de rol. `IsDeleted` es true.
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> se llama a cuando se ha eliminado el elemento. Permanece en el montón de CLR para que se pueda realizar una acción de deshacer si es necesario, pero se desvincula de otros elementos y se quita de `store.ElementDirectory`. En el caso de las relaciones, los roles todavía hacen referencia a los anteriores participantes de rol.`IsDeleted` es true.
 
 3. Se llama a OnDeleting y OnDeleted cuando el usuario invoca a Undo después de crear un elemento y cuando se repite una eliminación anterior en Redo. Use `this.Store.InUndoRedoOrRollback` para evitar actualizar los elementos del almacén en estos casos. Para obtener más información, vea [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
@@ -199,7 +199,7 @@ partial class Artist
 
  Cuando se realiza <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> en un elemento, se llamará a OnDeleting y OnDeleted. Estos métodos se realizan siempre en línea, es decir, inmediatamente antes y después de la eliminación real. Si el código elimina dos o más elementos, se llamará a OnDeleting y OnDeleted alternativamente en todos ellos, por turnos.
 
-## <a name="rules"></a>Reglas y eventos de eliminación
+## <a name="deletion-rules-and-events"></a><a name="rules"></a> Reglas y eventos de eliminación
  Como alternativa a los controladores de OnDelete, puede definir reglas de eliminación y eventos de eliminación.
 
 1. Las reglas de **eliminación** y **eliminación** solo se desencadenan en una transacción y no en una operación deshacer o rehacer. Puede establecerlas para que se pongan en la cola de ejecución al final de la transacción en la que se realiza la eliminación. Las reglas Deleting se ejecutan siempre antes que las reglas Deleted que están en la cola.
@@ -289,12 +289,12 @@ partial class NestedShapesSampleDocData
 
 ```
 
-## <a name="unmerge"></a>UnMerge
+## <a name="unmerge"></a><a name="unmerge"></a> UnMerge
  La operación que asocia un elemento secundario a su elemento primario se denomina *Merge*. Se produce cuando un nuevo elemento o grupo de elementos se crea con el cuadro de herramientas, se mueve desde otra parte del modelo o se copia desde el portapapeles. Además de crear una relación de incrustación entre el primario y su nuevo secundario, la operación de combinación también puede configurar otras relaciones, crear elementos auxiliares y establecer valores de propiedad en los elementos. La operación de combinación se encapsula en una directiva de combinación de elementos (EMD).
 
- Un EMD también encapsula la operación complementaria de *separar* o `MergeDisconnect`. Si tiene un grupo de elementos que se ha construido mediante una combinación, se recomienda usar la operación anular combinación asociada para quitar un elemento del grupo, si quiere dejar los demás elementos en un estado coherente. La operación anular combinación normalmente usará las técnicas descritas en las secciones anteriores.
+ Un EMD también encapsula la operación o *unmerge* complementaria `MergeDisconnect` . Si tiene un grupo de elementos que se ha construido mediante una combinación, se recomienda usar la operación anular combinación asociada para quitar un elemento del grupo, si quiere dejar los demás elementos en un estado coherente. La operación anular combinación normalmente usará las técnicas descritas en las secciones anteriores.
 
  Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Personalización del comportamiento de copia](../modeling/customizing-copy-behavior.md) [Personalización de la creación de elementos y el movimiento](../modeling/customizing-element-creation-and-movement.md) [de escritura de código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

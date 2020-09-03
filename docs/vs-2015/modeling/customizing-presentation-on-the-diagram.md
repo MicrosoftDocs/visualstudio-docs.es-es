@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7454a110d5321a8f3a9dbf2472f15252cfaf13d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654998"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Personalizar la presentación en el diagrama
@@ -27,7 +27,7 @@ El diagrama es el área de presentación principal de un diseñador de lenguaje 
 
 - [Controlar el color, el estilo de línea y otras propiedades de forma](../modeling/controlling-color-line-style-and-other-shape-properties.md)
 
-- [Controlar la visibilidad de un icono o un elemento Decorator](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
+- [Controlar la visibilidad de un icono o un objeto Decorator](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
 
 - [Personalizar campos de texto y de imagen](../modeling/customizing-text-and-image-fields.md)
 
@@ -35,7 +35,7 @@ El diagrama es el área de presentación principal de un diseñador de lenguaje 
 
 - [Anidar formas](../modeling/nesting-shapes.md)
 
-- [Insertar diagramas en Windows Forms](../modeling/embedding-a-diagram-in-a-windows-form.md)
+- [Incrustar diagramas en Windows Forms](../modeling/embedding-a-diagram-in-a-windows-form.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
