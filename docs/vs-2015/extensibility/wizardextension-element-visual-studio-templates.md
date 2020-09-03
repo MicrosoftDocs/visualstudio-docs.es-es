@@ -1,5 +1,5 @@
 ---
-title: WizardExtension (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: WizardExtension (elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69e35d4bebf7a16a1429be674ba3533b4f082b05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201924"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contiene los elementos de registro para personalizar al Asistente para la plantilla.  
+Contiene los elementos de registro para personalizar el Asistente para plantillas.  
   
  \<VSTemplate>  
  ...  
@@ -46,22 +46,22 @@ Contiene los elementos de registro para personalizar al Asistente para la planti
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[Ensamblado](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento necesario.<br /><br /> Especifica el nombre o el nombre seguro de un ensamblado que aparece en la caché global de ensamblados. Debe haber al menos una `Assembly` elemento en un `WizardExtension` elemento.|  
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento necesario.<br /><br /> El nombre completo de la clase que implementa el `IWizard` interfaz. Debe haber al menos una `FullClassName` elemento en un `WizardExtension` elemento.|  
+|[Assembl](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento necesario.<br /><br /> Especifica el nombre o el nombre seguro de un ensamblado que aparece en la caché global de ensamblados. Debe haber al menos un `Assembly` elemento en un `WizardExtension` elemento.|  
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento necesario.<br /><br /> Nombre completo de la clase que implementa la `IWizard` interfaz. Debe haber al menos un `FullClassName` elemento en un `WizardExtension` elemento.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|DESCRIPCIÓN|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o el starter kit de.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o Starter Kit.|  
   
 ## <a name="remarks"></a>Comentarios  
  `WizardExtension` es un elemento secundario opcional de `VSTemplate`.  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra los metadatos de la plantilla de proyecto estándar para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación de Windows.  
+ En el ejemplo siguiente se muestran los metadatos de la plantilla de proyecto estándar para una [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -91,7 +91,7 @@ Contiene los elementos de registro para personalizar al Asistente para la planti
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
- [Cómo: Usar asistentes con plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Crear plantillas de proyecto y de elemento](../ide/creating-project-and-item-templates.md)   
+ [Cómo: Utilizar los asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)

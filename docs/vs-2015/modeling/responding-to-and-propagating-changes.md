@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b216e89e6a04fb38537f9c45336d07cf6df4abdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671271"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Responder a los cambios y propagarlos
@@ -26,7 +26,7 @@ Cuando un elemento se crea, se elimina o se actualiza, se puede escribir código
 ## <a name="in-this-section"></a>En esta sección
  Como norma general, tenga en cuenta estas técnicas en el orden siguiente:
 
-|Póquer|Escenarios|Para obtener más información|
+|Técnica|Escenarios|Para obtener más información|
 |---------------|---------------|--------------------------|
 |Defina una propiedad de dominio calculado.|Propiedad de dominio cuyo valor se calcula a partir de otras propiedades del modelo. Por ejemplo, un precio que es la suma de los precios de los elementos relacionados.|[Propiedades calculadas y de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md)|
 |Defina una propiedad de dominio de almacenamiento personalizada.|Propiedad de dominio almacenada en otras partes del modelo o externamente. Por ejemplo, puede analizar una cadena de expresión en un árbol del modelo.|[Propiedades calculadas y de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md)|
@@ -35,7 +35,7 @@ Cuando un elemento se crea, se elimina o se actualiza, se puede escribir código
 |Almacenar eventos|El almacén de modelado proporciona notificaciones de eventos como agregar o eliminar un elemento o vínculo, o cambiar el valor de una propiedad. El evento también se ejecuta en las acciones de deshacer y rehacer. Utilice eventos de almacén para actualizar los valores que no están en el almacén.|[Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |Eventos .NET|Las formas tienen controladores de eventos que responden a los clics del mouse y otros gestos. Debe registrarse para estos eventos para cada objeto. El registro se realiza normalmente en una invalidación de InitializeInstanceResources y se debe hacer para cada elemento.<br /><br /> Normalmente, estos eventos se producen fuera de una transacción.|[Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
 |Reglas de límites|Una regla de límites se usa específicamente para restringir los límites de una forma.|[Ubicación y tamaño de las reglas de restricción de formas BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)|
-|Reglas de selección|Las reglas de selección restringen específicamente lo que el usuario puede seleccionar.|[Cómo: Tener acceso a una selección y restringir la selección actual](../modeling/how-to-access-and-constrain-the-current-selection.md)|
+|Reglas de selección|Las reglas de selección restringen específicamente lo que el usuario puede seleccionar.|[Cómo: Tener acceso y restringir una selección](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indicar los Estados de los elementos de modelo mediante características de formas y conectores, como sombra, puntas de flecha, color y ancho de línea y estilo.|[Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
 ## <a name="comparing-rules-and-store-events"></a>**Comparar reglas y almacenar eventos**
@@ -47,11 +47,11 @@ Cuando un elemento se crea, se elimina o se actualiza, se puede escribir código
 
 - **Creación de reglas personalizadas** Puede crear una regla personalizada como una clase derivada a partir de una regla abstracta. También debe notificar al marco de trabajo la regla personalizada. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
-- **Suscribirse a eventos** Para poder suscribirse a un evento, cree un controlador de eventos y un delegado. A continuación, use el <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property para suscribirse al evento. Para obtener más información, vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Suscribirse a eventos** Para poder suscribirse a un evento, cree un controlador de eventos y un delegado. A continuación, utilice la <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A> propiedad para suscribirse al evento. Para obtener más información, vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 - **Deshacer cambios** Al deshacer una transacción, se generan eventos, pero no se aplican las reglas. Si una regla cambia un valor y se deshace ese cambio, el valor se restablece al valor original durante la acción de deshacer. Cuando se produce un evento, debe volver a cambiar manualmente el valor a su valor original. Para obtener más información sobre las transacciones y las operaciones de deshacer, consulte [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
-- **Pasar argumentos de evento a reglas y eventos** A los eventos y las reglas se les pasa un parámetro `EventArgs` con información sobre cómo cambió el modelo.
+- **Pasar argumentos de evento a reglas y eventos** A los eventos y las reglas se les pasa un `EventArgs` parámetro con información sobre cómo cambió el modelo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo: interceptar un clic en una forma o un decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) [escribir código para personalizar un lenguaje específico del dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

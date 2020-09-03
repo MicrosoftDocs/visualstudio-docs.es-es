@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586021"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Tutorial: crear un servicio WCF simple en Windows Forms
@@ -29,15 +29,15 @@ En este tutorial se muestra cómo crear un servicio de Windows Communication Fou
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="create-a-service"></a>Creación de un servicio
+## <a name="create-a-service"></a>Crear un servicio
 
 1. Abra Visual Studio.
 
 ::: moniker range="vs-2017"
 
-2. En el menú **archivo** , elija **nuevo** **proyecto**de >.
+2. En el menú **Archivo**, elija **Nuevo** > **Proyecto**.
 
-3. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual Basic** o **Visual C#**  y elija **WCF**, seguido de la **biblioteca de servicios de WCF**.
+3. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual Basic** o **Visual C#** y elija **WCF**, seguido de la **biblioteca de servicios WCF**.
 
 4. Haga clic en **Aceptar** para crear el proyecto.
 
@@ -49,7 +49,7 @@ En este tutorial se muestra cómo crear un servicio de Windows Communication Fou
 
 2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
-3. Escriba **biblioteca de servicios WCF** en el cuadro de búsqueda de la página **crear un nuevo proyecto** . Seleccione la plantilla C# o Visual Basic de la **biblioteca de servicios WCF**y, a continuación, haga clic en **siguiente**.
+3. Escriba **biblioteca de servicios WCF** en el cuadro de búsqueda de la página **crear un nuevo proyecto** . Seleccione la plantilla de C# o de Visual Basic para la **biblioteca de servicios WCF**y, a continuación, haga clic en **siguiente**.
 
    ![Crear un nuevo proyecto de biblioteca de servicios WCF en Visual Studio 2019](media/vs-2019/create-new-wcf-service-library.png)
 
@@ -72,7 +72,7 @@ En este tutorial se muestra cómo crear un servicio de Windows Communication Fou
    [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
    [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
 
-   Cambie el tipo del parámetro `value` a cadena:
+   Cambie el tipo del `value` parámetro a cadena:
 
    [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
    [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
@@ -88,7 +88,7 @@ En este tutorial se muestra cómo crear un servicio de Windows Communication Fou
    [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
    [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
 
-   Cambie el tipo del parámetro `value` a cadena:
+   Cambie el tipo del `value` parámetro a cadena:
 
    [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
    [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
@@ -99,7 +99,7 @@ En este tutorial se muestra cómo crear un servicio de Windows Communication Fou
 
 2. En el formulario **Cliente de prueba WCF**, haga doble clic en el método **GetData()** en **IService1**. Aparece la pestaña **GetData** .
 
-     ![El método&#40; &#41; GetData](../data-tools/media/wcf4.png)
+     ![Método GetData&#40;&#41; ](../data-tools/media/wcf4.png)
 
 3. En el cuadro **Solicitar**, seleccione el campo **Valor** y escriba `Hello`.
 
@@ -115,13 +115,13 @@ En este tutorial se muestra cómo crear un servicio de Windows Communication Fou
 
 ### <a name="reference-the-wcf-service"></a>Referencia al servicio WCF
 
-1. En el menú **Archivo**, apunte a **Agregar**y haga clic en **Nuevo proyecto**.
+1. En el menú **archivo** , seleccione **Agregar** y, a continuación, haga clic en **nuevo proyecto**.
 
-2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual Basic** o **Visual C#**  , seleccione **Windows**y, a continuación, seleccione **aplicación de Windows Forms**. Haga clic en **Aceptar** para abrir el proyecto.
+2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual Basic** o **Visual C#** , seleccione **Windows**y, a continuación, seleccione **aplicación de Windows Forms**. Haga clic en **Aceptar** para abrir el proyecto.
 
      ![Proyecto de Aplicación de Windows Forms](../data-tools/media/wcf7.png)
 
-3. Haga clic con el botón derecho en **WindowsApplication1** y haga clic en **Agregar referencia de servicio**. Aparece el cuadro de diálogo **Agregar referencia de servicio** .
+3. Haga clic con el botón derecho en **WindowsApplication1** y haga clic en **Agregar referencia de servicio**. Aparecerá el cuadro de diálogo **Agregar referencia de servicio**.
 
 4. En el cuadro de diálogo **Agregar referencia de servicio**, haga clic en **Detectar**.
 
@@ -150,6 +150,6 @@ En este tutorial se muestra cómo crear un servicio de Windows Communication Fou
 
      ![El formulario que muestra el resultado](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Servicios de Windows Communication Foundation y Servicios de datos de WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation servicios y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

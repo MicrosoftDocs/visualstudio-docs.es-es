@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3ad960054e0c2dfe6470c51adbd9f3675fc87952
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282922"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Enlazar controles de WPF a un conjunto de datos
@@ -52,7 +52,7 @@ El conocimiento previo de los siguientes conceptos es útil, aunque no necesario
 
 - Enlace a datos de WPF. Para obtener más información, vea [información general sobre el enlace de datos](/dotnet/desktop-wpf/data/data-binding-overview).
 
-## <a name="create-the-project"></a>Creación del proyecto
+## <a name="create-the-project"></a>Crear el proyecto
 
 Cree un nuevo proyecto de WPF para mostrar los registros de productos.
 
@@ -108,7 +108,7 @@ Antes de crear controles enlazados a datos, debe definir un modelo de datos para
 
 7. En la página **Elija los objetos de base de datos**, expanda el nodo **Tablas** y seleccione la tabla **Product (SalesLT)**.
 
-8. Haga clic en **Finalizar**.
+8. Haga clic en **Finalizar**
 
    Visual Studio agrega un nuevo `AdventureWorksLTDataSet.xsd` archivo al proyecto y agrega un elemento **AdventureWorksLTDataSet** correspondiente a la ventana orígenes de **datos** . El `AdventureWorksLTDataSet.xsd` archivo define un conjunto de tipos denominado `AdventureWorksLTDataSet` y un TableAdapter denominado `ProductTableAdapter` . Más adelante, en este tutorial, usará `ProductTableAdapter` para rellenar con datos el conjunto de datos y guardar los cambios de nuevo en la base de datos.
 
@@ -132,7 +132,7 @@ Para rellenar con datos el conjunto de datos, use el método `Fill` de `ProductT
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. Haga clic en **Finalizar**.
+4. Haga clic en **Finalizar**
 
 ## <a name="define-the-user-interface"></a>Definir la interfaz de usuario
 
@@ -230,7 +230,7 @@ Agregue código que permita a los usuarios guardar cambios en los registros de p
     > [!NOTE]
     > En este ejemplo se usa el método `Save` de `TableAdapter` para guardar los cambios. Esto es apropiado en este tutorial, porque solo se está cambiando una tabla de datos. Si tiene que guardar cambios en varias tablas de datos, puede usar también el método `UpdateAll` de `TableAdapterManager` que Visual Studio genera con el conjunto de datos. Para obtener más información, consulte [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-## <a name="test-the-application"></a>Probar la aplicación
+## <a name="test-the-application"></a>Prueba de la aplicación
 
 Compile y ejecute la aplicación. Compruebe que puede ver y actualizar los registros de productos.
 

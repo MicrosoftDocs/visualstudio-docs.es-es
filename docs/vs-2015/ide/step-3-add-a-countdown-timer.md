@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bae5b4a81864cc591491c21218a5d8253dfc61bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671840"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Paso 3: Agregar un temporizador de cuenta atrás
@@ -22,7 +22,7 @@ ms.locfileid: "72671840"
 En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás para el seguimiento del número de segundos que quedan para que el jugador finalice.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, consulte [Tutorial 2: crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ### <a name="to-add-a-countdown-timer"></a>Para agregar un temporizador de cuenta atrás
 
@@ -106,6 +106,6 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para ir al siguiente paso del tutorial, vea [paso 4: agregar el método método CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 2: Crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md).
+- Para volver al paso anterior del tutorial, consulte [paso 2: crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md).

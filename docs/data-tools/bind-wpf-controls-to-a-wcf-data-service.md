@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7371e08925ad9227cf15a93a339e6e0ed36d11db
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282857"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
@@ -56,7 +56,7 @@ El conocimiento previo de los siguientes conceptos es útil, aunque no necesario
 
 - Entity Data Model y ADO.NET Entity Framework. Para obtener más información, vea [información general sobre Entity Framework](/dotnet/framework/data/adonet/ef/overview).
 
-- Enlace a datos de WPF. Para obtener más información, vea [Información general sobre el enlace de datos](/dotnet/desktop-wpf/data/data-binding-overview).
+- Enlace a datos de WPF. Para obtener más información, vea [información general sobre el enlace de datos](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Crear el proyecto de servicio
 
@@ -88,7 +88,7 @@ Para exponer datos a una aplicación mediante un servicio de datos de WCF, debe 
 
 7. En la página **Elija los objetos de base de datos**, expanda el nodo **Tablas** y seleccione la tabla **SalesOrderHeader**.
 
-8. Haga clic en **Finalizar**.
+8. Haga clic en **Finalizar**
 
 ## <a name="create-the-service"></a>Creación del servicio
 
@@ -259,7 +259,7 @@ Agregue código que permita a los usuarios ver y guardar cambios en los registro
      [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
      [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
 
-## <a name="test-the-application"></a>Probar la aplicación
+## <a name="test-the-application"></a>Prueba de la aplicación
 
 Compile y ejecute la aplicación para comprobar que puede ver y actualizar los registros de clientes:
 
@@ -295,7 +295,7 @@ Una vez completado este tutorial, puede realizar las siguientes tareas relaciona
 
 - Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, vea [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Enlazar controles WPF a un conjunto de DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md)

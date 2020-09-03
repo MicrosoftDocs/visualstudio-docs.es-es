@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595272"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código

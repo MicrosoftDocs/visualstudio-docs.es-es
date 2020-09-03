@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints ? Microsoft Docs
+title: 'IDebugBreakpointEvent2:: EnumBreakpoints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735034"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Crea un enumerador para todos los puntos de interrupción que se desencadenaron en la ubicación de código actual.
+Crea un enumerador para todos los puntos de interrupción que se han desencadenado en la ubicación del código actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int EnumBreakpoints(
 
 ## <a name="parameters"></a>Parámetros
 `ppEnum`\
-[fuera] Devuelve un [iEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que enumera todos los puntos de interrupción asociados a la ubicación de código actual.
+enuncia Devuelve un objeto [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) que enumera todos los puntos de interrupción asociados a la ubicación del código actual.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- No todos los puntos de interrupción en un lugar determinado pueden activarse en un momento determinado (por ejemplo, un punto de interrupción con una condición no se activará hasta que se cumpla esa condición).
+ No todos los puntos de interrupción en una ubicación determinada se pueden activar en un momento determinado (por ejemplo, un punto de interrupción con una condición no se activará hasta que se cumpla esa condición).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

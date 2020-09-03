@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3636b6548725ddc9af0a2e28acfdda06a8821f9a
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769897"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Cómo: Visualizar una asociación de colecciones en el Diseñador de clases

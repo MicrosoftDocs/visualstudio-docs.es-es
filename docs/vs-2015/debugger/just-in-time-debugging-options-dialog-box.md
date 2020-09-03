@@ -1,5 +1,5 @@
 ---
-title: Just-In-Time, depuración, cuadro de diálogo Opciones | Documentos de Microsoft
+title: Just-In-Time, Depuración, Opciones (cuadro de diálogo) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,13 +25,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201104"
 ---
-# <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Depuración, Opciones (Cuadro de diálogo)
+# <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Depuración, Opciones (cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener acceso a la página **Just-In-Time**, vaya al menú **Herramientas** y haga clic en **Opciones**. En el cuadro de diálogo **Opciones**, expanda el nodo **Depuración** y seleccione **Just-In-Time**. Esta página permite habilitar la depuración Just-In-Time para el código administrado, código nativo y scripts. Para obtener más información, vea [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md).  
@@ -61,6 +61,6 @@ Para obtener acceso a la página **Just-In-Time**, vaya al menú **Herramientas*
   
  **Acceso denegado. Pida al administrador que habilite la depuración Just-In-Time, o repare su instalación de Visual Studio.**  
   
-## <a name="see-also"></a>Vea también  
- [Cuadro de diálogo Depuración, Opciones](../debugger/debugging-options-dialog-box.md)   
- [Procedimientos: Especificación de la configuración del depurador](../debugger/how-to-specify-debugger-settings.md)
+## <a name="see-also"></a>Consulte también  
+ [Depuración, opciones (cuadro de diálogo)](../debugger/debugging-options-dialog-box.md)   
+ [Cómo: Especificación de la configuración del depurador](../debugger/how-to-specify-debugger-settings.md)
