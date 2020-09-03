@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b78a1757586dfaf6087711eaf1ed6001155a3b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671801"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
@@ -50,14 +50,14 @@ El juego de formar parejas funciona como sigue:
     > Si copia y pega el bloque `label_Click()` de código, en lugar de escribirlo manualmente, asegúrese de reemplazar el código `label_Click()` existente. De lo contrario, se encontrará con un bloque de código duplicado.
 
     > [!NOTE]
-    > Tal vez reconozca `object sender` de la parte superior del controlador de eventos como el utilizado en el tutorial [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md). Como enlazó distintos eventos Click de control de etiqueta a un único método de controlador de eventos, se llama al mismo método con independencia de la etiqueta que elija el usuario. El método del controlador de eventos necesita saber qué etiqueta se ha elegido, de forma que usa el nombre **sender** para identificar el control de la etiqueta. La primera línea del método indica al programa que no es solo un objeto genérico, sino que es, en concreto, un control Label y que, a través del nombre **clickedLabel**, tiene acceso a las propiedades y los métodos de la etiqueta.
+    > Puede reconocer `object sender` en la parte superior del controlador de eventos como el mismo que se usó en el tutorial [2: crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md) . Como enlazó distintos eventos Click de control de etiqueta a un único método de controlador de eventos, se llama al mismo método con independencia de la etiqueta que elija el usuario. El método del controlador de eventos necesita saber qué etiqueta se ha elegido, de forma que usa el nombre **sender** para identificar el control de la etiqueta. La primera línea del método indica al programa que no es solo un objeto genérico, sino que es, en concreto, un control Label y que, a través del nombre **clickedLabel**, tiene acceso a las propiedades y los métodos de la etiqueta.
 
-     Este método comprueba primero si **clickedLabel** se convirtió (mediante conversión de tipos) correctamente de un objeto en un control Label. Si no, tiene un valor `null` (C#) o `Nothing` (Visual Basic) y no es preciso ejecutar el resto del código del método. Luego, el método comprueba el color del texto de la etiqueta elegida mediante la propiedad **ForeColor** de la etiqueta. Si el color del texto de la etiqueta es negro, significa que el icono ya se ha elegido y el método ha terminado. (Eso es lo que hace la instrucción `return`: indica al programa que deje de ejecutar el método). De lo contrario, el icono no se ha elegido, por lo que el programa cambia el color del texto de la etiqueta a negro.
+     Este método comprueba primero si **clickedLabel** se convirtió (mediante conversión de tipos) correctamente de un objeto en un control Label. Si no, tiene un valor `null` (C#) o `Nothing` (Visual Basic) y no es preciso ejecutar el resto del código del método. Luego, el método comprueba el color del texto de la etiqueta elegida mediante la propiedad **ForeColor** de la etiqueta. Si el color del texto de la etiqueta es negro, significa que el icono ya se ha elegido y el método ha terminado. (Eso es lo que `return` hace la instrucción: indica al programa que deje de ejecutar el método). De lo contrario, el icono no se ha elegido, por lo que el programa cambia el color del texto de la etiqueta a negro.
 
 6. En la barra de menús, elija **Archivo**, **Guardar todo** para guardar el progreso y, a continuación, en la barra de menús, elija **Depurar**, **Iniciar depuración** para ejecutar el programa. Debería ver un formulario vacío con un fondo azul. Al elegir cualquiera de las celdas del formulario, uno de los iconos debería hacerse visible. Siga eligiendo distintas partes del formulario. A medida que elija los iconos, estos deberían mostrarse.
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar referencias a etiquetas](../ide/step-5-add-label-references.md).
+- Para ir al siguiente paso del tutorial, vea [paso 5: agregar referencias de etiqueta](../ide/step-5-add-label-references.md).
 
-- Para volver al paso previo del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Para volver al paso anterior del tutorial, vea [paso 3: asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).

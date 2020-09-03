@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 54765b9b6b82214a7deccaee4f9ee671a72dd40d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015994"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Cómo: agregar una propiedad a un tipo de elemento de proyecto personalizado de SharePoint

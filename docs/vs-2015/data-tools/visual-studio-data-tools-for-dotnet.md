@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d591595c65f00e0198ded9492ae0b8399e363e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670101"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools para .NET
@@ -21,7 +21,7 @@ ms.locfileid: "72670101"
 
 Visual Studio y el .NET Framework juntos proporcionan una amplia compatibilidad con API y herramientas para conectarse a bases de datos, modelar datos en memoria y mostrar los datos en la interfaz de usuario.  Las clases de .NET Framework que proporcionan la funcionalidad de acceso a datos se conocen como [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, junto con las herramientas de datos en Visual Studio, se diseñó originalmente principalmente para admitir bases de datos relacionales y XML. Estos días, muchos proveedores de bases de datos NoSQL, o terceros, ofrecen proveedores de ADO.NET.
 
- Visual Studio 2015 Update 2 incluye las actualizaciones más recientes de [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), que habilitan la compatibilidad con las características más recientes de Azure [SQL Database](https://azure.microsoft.com/services/sql-database/) y [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.Net Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) admite ADO.net, excepto los conjuntos de valores y los tipos relacionados. Si el destino es .NET Core y requiere una capa de asignación relacional de objetos (ORM), use [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).
+ Visual Studio 2015 Update 2 incluye las actualizaciones más recientes de            [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), que habilitan la compatibilidad con las características más recientes de Azure [SQL Database](https://azure.microsoft.com/services/sql-database/) y [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.Net Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) admite ADO.net, excepto los conjuntos de valores y los tipos relacionados. Si el destino es .NET Core y requiere una capa de asignación relacional de objetos (ORM), use [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).
 
  En el diagrama siguiente se muestra una vista simplificada de la arquitectura básica:
 
@@ -43,7 +43,7 @@ Visual Studio y el .NET Framework juntos proporcionan una amplia compatibilidad 
 
 ## <a name="in-this-section"></a>En esta sección
 
-- [Crear una aplicación de datos sencilla mediante ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)
+- [Creación de una aplicación de datos sencilla mediante ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)
 
 - [Agregar nuevas conexiones](../data-tools/add-new-connections.md)
 
@@ -51,7 +51,7 @@ Visual Studio y el .NET Framework juntos proporcionan una amplia compatibilidad 
 
 - [Herramientas de Entity Data Model en Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)
 
-- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 
 - [Herramientas LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 
@@ -59,11 +59,11 @@ Visual Studio y el .NET Framework juntos proporcionan una amplia compatibilidad 
 
 - [Recursos adicionales para la solución de problemas de errores de acceso a datos](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)
 
-- [Servicios de Windows Communication Foundation y Servicios de datos de WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation servicios y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
 - [Crear y administrar aplicaciones de capa de datos y bases de datos en Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)
 
 - [Recursos adicionales para la solución de problemas de errores de acceso a datos](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)
 
-## <a name="see-also"></a>Vea también
- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## <a name="see-also"></a>Consulte también
+ [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

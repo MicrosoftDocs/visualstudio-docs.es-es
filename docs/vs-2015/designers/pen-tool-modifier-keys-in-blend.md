@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5f69969ac60e7476e2d9430266acca41c0745f3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664178"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Pluma en fusión
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En la tabla siguiente se enumeran los métodos abreviados que se pueden usar para modificar un trazado mientras se crea con ![ ](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a")la herramienta pluma. También se puede usar la herramienta **Pluma** para agregar o eliminar puntos de un trazado existente, o para unir dos trazados existentes.
+La tabla siguiente enumera los métodos abreviados que se pueden usar para modificar un trazado al crearlo con la herramienta **Pluma**![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). También se puede usar la herramienta **Pluma** para agregar o eliminar puntos de un trazado existente, o para unir dos trazados existentes.
 
-|Para esta acción|Haga esto|Puntero|
+|Para realizar esta acción|Haga esto|Puntero|
 |-----------------------|-------------|-------------|
 |Crear un punto para iniciar un segmento de línea recta|Haga clic para crear el punto nuevo|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Puntero de pluma|
 |Crear un punto para iniciar un segmento de línea curva|Haga clic para crear el punto nuevo y, a continuación, arrastre para ajustar los manipuladores de tangente antes de soltar el botón del mouse|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Puntero de pluma|
@@ -37,5 +37,5 @@ En la tabla siguiente se enumeran los métodos abreviados que se pueden usar par
 |Crear un vértice suavizado al unir dos trazados|Seleccione dos trazados, haga clic en la herramienta **Pluma**, haga clic en un extremo de uno de los trazados y, después, arrastre un extremo del otro trazado|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> Puntero de unión de la pluma|
 |Crea un trazado nuevo|Mantener presionada la tecla CTRL y hacer clic fuera del trazado anterior para que no agreguen más puntos a dicho trazado; a continuación, hacer clic en el punto donde desea que empiece el nuevo trazado (o arrastrar)|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> Puntero de inicio de la pluma|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Métodos abreviados de teclado y teclas modificadoras de](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md) la mesa de herramientas [Modificadores](../designers/artboard-modifier-keys-in-blend.md) de la [herramienta Selección directa teclas modificadoras](../designers/direct-selection-tool-modifier-keys-in-blend.md) [dibujar formas y trazados](../designers/draw-shapes-and-paths.md)

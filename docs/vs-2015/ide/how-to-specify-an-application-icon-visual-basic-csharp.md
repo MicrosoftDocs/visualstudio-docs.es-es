@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136fd00bea736af0f0c589c28eae597ff8fd558e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670701"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Cómo: Especificar el icono de una aplicación (Visual Basic, C#)
@@ -40,7 +40,7 @@ La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se 
 
 4. **(Visual Basic)** En la lista **Icono**, elija un archivo de icono (.ico).
 
-     **C#** Cerca de la lista **Icono**, elija el botón **\<Examinar... >** y, después, vaya a la ubicación del archivo de icono que quiere.
+     **C#** Cerca de la lista **icono** , elija el **\<Browse...>** botón y, a continuación, busque la ubicación del archivo de icono que desea.
 
-## <a name="see-also"></a>Vea también
- [Página de aplicación, diseñador de proyectos (Visual Basic) (página)](../ide/reference/application-page-project-designer-visual-basic.md) [,C#diseñador de proyectos ()](../ide/reference/application-page-project-designer-csharp.md) [Administración de las propiedades](../ide/application-properties.md) [de la aplicación cómo: agregar o quitar recursos](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+## <a name="see-also"></a>Consulte también
+ [Página de aplicación, diseñador de proyectos (Visual Basic) (página)](../ide/reference/application-page-project-designer-visual-basic.md) [, diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md) [Administración de propiedades](../ide/application-properties.md) [de la aplicación cómo: agregar o quitar recursos](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

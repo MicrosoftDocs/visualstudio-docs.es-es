@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543473"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta
@@ -64,7 +64,7 @@ ms.locfileid: "85543473"
 
      Para obtener información sobre cómo escribir métodos de devolución de llamada y cómo usar el modelo de programación RibbonX, vea [XML de la cinta](../vsto/ribbon-xml.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

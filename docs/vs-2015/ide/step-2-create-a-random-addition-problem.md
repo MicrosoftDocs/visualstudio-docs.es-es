@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54dee9c25fc9b8ddf1f8cf6c54c40d68ce53dc6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671854"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Paso 2: Crear un problema de suma aleatoria
@@ -22,7 +22,7 @@ ms.locfileid: "72671854"
 En la segunda parte del tutorial, agregará problemas de matemáticas basados en números aleatorios para crear una prueba desafiante. También puede crear un método denominado `StartTheQuiz()` que establezca los problemas e inicie el temporizador de cuenta atrás. Más adelante en este tutorial, agregará los problemas de resta, multiplicación y división.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, consulte [Tutorial 2: crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ### <a name="to-create-a-random-addition-problem"></a>Para crear un problema de suma aleatoria
 
@@ -95,6 +95,6 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 3: Agregar un temporizador de cuenta atrás](../ide/step-3-add-a-countdown-timer.md).
+- Para ir al siguiente paso del tutorial, vea [paso 3: agregar un temporizador de cuenta atrás](../ide/step-3-add-a-countdown-timer.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Para volver al paso anterior del tutorial, vea [paso 1: crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

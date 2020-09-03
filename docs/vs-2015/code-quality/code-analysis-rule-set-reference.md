@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e480869d5b13ecc051deaa97b0bfd2532519d18f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535725"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
@@ -26,7 +26,7 @@ Al configurar el análisis de código para los proyectos de código administrado
 ## <a name="available-rule-sets"></a>Conjuntos de reglas disponibles
  En la tabla siguiente se enumeran los conjuntos de reglas predeterminados:
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |[Conjunto de reglas Todas las reglas](../code-quality/all-rules-rule-set.md)|Este conjunto de reglas contiene todas las reglas. Si se ejecuta este conjunto de reglas, puede dar lugar a un gran número de advertencias. Use este conjunto de reglas para obtener una imagen completa de todos los problemas del código. Esto puede ser útil para decidir qué conjuntos de reglas son más apropiados para ejecutarlos para sus proyectos.|
 |[Conjunto de reglas Reglas de corrección básicas para código administrado](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)|Estas reglas se centran en errores lógicos y comunes cometidos en el uso de API de marco de trabajo. Incluya este conjunto de reglas para ampliar la lista de advertencias emitidas por las reglas mínimas recomendadas.|

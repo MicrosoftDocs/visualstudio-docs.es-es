@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543200"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
@@ -34,7 +34,7 @@ En este tema se explican los conceptos básicos de la definición y el uso de un
 
  El resto de esta información general es un tutorial que presenta las operaciones básicas de creación y uso de un lenguaje específico de dominio en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para definir un DSL, debe tener instalados los siguientes componentes:
 
 |Producto|Vínculo de descarga|
@@ -94,7 +94,7 @@ En este tema se explican los conceptos básicos de la definición y el uso de un
 
 - **Proyecto DslPackage** Este proyecto contiene código que permite abrir y editar instancias de DSL en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a>Ejecutar el DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Ejecutar el DSL
  Puede ejecutar la solución DSL en cuanto la cree. Posteriormente, puede modificar la definición de DSL gradualmente y ejecutar la solución de nuevo después de cada cambio.
 
 #### <a name="to-experiment-with-the-dsl"></a>Para experimentar con el DSL
@@ -383,7 +383,7 @@ En este tema se explican los conceptos básicos de la definición y el uso de un
 
  Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>Quitar DSL experimentales anteriores
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Quitar DSL experimentales anteriores
  Si ha creado DSL experimentales que ya no desea, puede quitarlos del equipo restableciendo la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instancia experimental.
 
  Esto quitará del equipo todos los DSL experimentales y otras [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensiones experimentales. Se trata de extensiones que se han ejecutado en modo de depuración.

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 566bcf10d681b9ea81ee78601bf8536e9e6d9985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671747"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
@@ -22,7 +22,7 @@ ms.locfileid: "72671747"
 En la quinta parte de este tutorial, agregará controladores de eventos Enter para hacer que sea un poco más fácil escribir las respuestas a los problemas de la prueba. Este código seleccionará y borrará el valor actual de cada uno de los controles NumericUpDown en cuanto el jugador lo elija y comience a escribir un valor diferente.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, consulte [Tutorial 2: crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ### <a name="to-verify-the-default-behavior"></a>Para comprobar el comportamiento predeterminado
 
@@ -50,7 +50,7 @@ En la quinta parte de este tutorial, agregará controladores de eventos Enter pa
 
      Acaba de agregar un controlador de eventos Enter para el control NumericUpDown de suma y ha denominado el controlador **answer_Enter**.
 
-3. En el método del controlador de eventos **answer_Enter**, agregue el código siguiente.
+3. En el método del controlador de eventos **answer_Enter** , agregue el código siguiente.
 
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]
@@ -71,6 +71,6 @@ En la quinta parte de este tutorial, agregará controladores de eventos Enter pa
 
 ### <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md).
+- Para ir al siguiente paso del tutorial, vea [paso 6: agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md).
 
-- Para volver al paso anterior del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para volver al paso anterior del tutorial, vea [paso 4: agregar el método método CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).

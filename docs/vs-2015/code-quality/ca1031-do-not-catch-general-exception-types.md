@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 520c9a066a4a902d5e9243baf1a8d8dec1b78e29
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542407"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: No capturar los tipos de excepción general
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Valor|
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|
 |Identificador de comprobación|CA1031|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3557e830ba90b1e9f32b01c344867c5370e7425c
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586196"
 ---
 # <a name="additional-resources-for-msbuild"></a>Recursos adicionales de MSBuild

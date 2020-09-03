@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1dfd770efd4d690930155d2486b8ff1859065272
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543655"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Proporcionar argumentos correctos a los métodos de formato
@@ -34,7 +34,7 @@ ms.locfileid: "85543655"
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa
- El `format` argumento de cadena que se pasa a un método como <xref:System.Console.WriteLine%2A> , <xref:System.Console.Write%2A> o no <xref:System.String.Format%2A?displayProperty=fullName> contiene un elemento de formato que corresponda a cada argumento de objeto, o viceversa.
+ El `format` argumento de cadena que se pasa a un método como <xref:System.Console.WriteLine%2A> ,  <xref:System.Console.Write%2A> o no  <xref:System.String.Format%2A?displayProperty=fullName> contiene un elemento de formato que corresponda a cada argumento de objeto, o viceversa.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Los argumentos para métodos como <xref:System.Console.WriteLine%2A> , <xref:System.Console.Write%2A> y se <xref:System.String.Format%2A> componen de una cadena de formato seguida de varias <xref:System.Object?displayProperty=fullName> instancias. La cadena de formato consta de texto y elementos de formato incrustados con el formato, {index [, alignment] [: formatString]}. ' index ' es un entero basado en cero que indica a qué objetos se va a dar formato. Si un objeto no tiene un índice correspondiente en la cadena de formato, se omite el objeto. Si el objeto especificado por ' index ' no existe, <xref:System.FormatException?displayProperty=fullName> se produce una excepción en tiempo de ejecución.

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9e13576ef673728d673d0351cf289a80944584bd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543537"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento formRegion (desarrollo de Office en Visual Studio)
@@ -68,7 +68,7 @@ ms.locfileid: "85543537"
 </vstov4:formRegion>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)

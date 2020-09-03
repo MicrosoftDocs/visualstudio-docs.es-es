@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5bd60c9d7b30d4620630d1f6752bd4c7e8bf1182
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016066"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Cómo: ejecutar código cuando se implementa o retracta un proyecto de SharePoint

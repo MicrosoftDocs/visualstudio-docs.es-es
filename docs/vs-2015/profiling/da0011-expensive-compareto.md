@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a66242554de28ab45cc797d523ea7b5a967e9e5d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542979"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: CompareTo consume muchos recursos
+# <a name="da0011-expensive-compareto"></a>DA0011: CompareTo que consume muchos recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [DA0011: CompareTo caro](/visualstudio/profiling/da0011-expensive-compareto).  
@@ -30,11 +30,11 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [DA0011: C
 |-|-|  
 |Identificador de regla|DA0011|  
 |Categoría|Uso de .NET Framework|  
-|Métodos de generación de perfiles|muestreo<br /><br /> Memoria de .NET|  
-|Message|Las funciones CompareTo deben consumir pocos recursos y no asignar ninguna memoria. Reduzca la complejidad de la función CompareTo si es posible.|  
+|Métodos de generación de perfiles|Muestreo<br /><br /> Memoria de .NET|  
+|Mensaje|Las funciones CompareTo deben consumir pocos recursos y no asignar ninguna memoria. Reduzca la complejidad de la función CompareTo si es posible.|  
 |Tipo de regla|Advertencia|  
   
-## <a name="cause"></a>Causa  
+## <a name="cause"></a>Motivo  
  El método CompareTo del tipo consume muchos recursos o asigna memoria.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

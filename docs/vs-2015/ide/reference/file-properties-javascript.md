@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719a956558141684c7d755aafb6929f4368482f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657721"
 ---
 # <a name="file-properties-javascript"></a>Propiedades de archivo, JavaScript
@@ -53,7 +53,7 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
 
 - **Contenido**: el archivo está incluido en el manifiesto de paquete. Por ejemplo, esta opción es el valor predeterminado para un archivo de vídeo, audio, imagen, .htm, .js o.css.
 
-- **Manifiesto**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el archivo se usa para la entrada al generar el manifiesto de paquete. Este es el valor predeterminado para el archivo package.appxmanifest.
+- **Manifest** : el archivo no se incluye en el manifiesto del paquete. En su lugar, el archivo se usa para la entrada al generar el manifiesto de paquete. Este es el valor predeterminado para el archivo package.appxmanifest.
 
 - **Recurso**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el contenido del archivo se indexa en el Índice de recursos del paquete (PRI) que se incluye en el manifiesto de paquete. Normalmente se usa para los archivos de recursos.
 
@@ -68,19 +68,19 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
 ## <a name="reference-file-properties"></a>Propiedades de archivo de referencia
  En esta sección se describen propiedades comunes de los archivos a los que se hace referencia desde [!INCLUDE[win8_app_js](../../includes/win8-app-js-md.md)]. Cuando selecciona una referencia como un archivo .winmd, una referencia del SDK, una referencia de proyecto a proyecto o una referencia de ensamblado en el Explorador de soluciones, pueden mostrarse otras propiedades en la ventana Propiedades, según el tipo de archivo.
 
-### <a name="culture"></a>culture
+### <a name="culture"></a>Referencia cultural
  Muestra el idioma asociado a la referencia.
 
 ### <a name="file-type"></a>Tipo de archivo
  Muestra el tipo de archivo de la referencia.
 
-### <a name="file-version"></a>Versión de archivo
+### <a name="file-version"></a>Versión del archivo
  Muestra la versión de archivo de la referencia.
 
-### <a name="identity"></a>identidad
+### <a name="identity"></a>Identidad
  Muestra la identidad de la referencia que se usa en el proyecto, que se almacena en el archivo del proyecto.
 
-### <a name="package"></a>Package
+### <a name="package"></a>Paquete
  Muestra el nombre del manifiesto de paquete asociado con la referencia.
 
 ### <a name="resolved-path"></a>Ruta de acceso resuelta
@@ -95,5 +95,5 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
 ### <a name="version"></a>Versión
  Muestra la versión de la referencia.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [NIB: propiedades del proyecto (Visual Studio)](https://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541354"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Cómo: proteger elementos de documentos mediante controles de contenido
@@ -34,7 +34,7 @@ ms.locfileid: "85541354"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Proteger un control de contenido
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> Proteger un control de contenido
  Puede impedir que los usuarios editen o eliminen un control de contenido estableciendo las propiedades del control en un proyecto de nivel de documento en tiempo de diseño o en tiempo de ejecución.
 
  También puede proteger los controles de contenido que agregue a un documento en tiempo de ejecución mediante un proyecto de complemento de VSTO. Para obtener más información, vea [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md).
@@ -49,7 +49,7 @@ ms.locfileid: "85541354"
 
     - Para evitar que los usuarios eliminen el control, establezca **LockContentControl** en **true**.
 
-3. Haga clic en **Aceptar**.
+3. Haga clic en **OK**.
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>Para proteger un control de contenido en tiempo de ejecución
 

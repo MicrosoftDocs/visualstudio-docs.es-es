@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FLAGS Microsoft Docs
+title: MODULE_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 20a11488c32b4259105e346e7fa28fd706e48a48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714231"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
@@ -40,17 +40,17 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Fields
+## <a name="fields"></a>Campos
  `MIF_SYMBOLS_LOADED`\
- El módulo cargó al menos un conjunto de símbolos (de lo contrario no se cargaron símbolos).
+ El módulo cargó al menos un conjunto de símbolos (de lo contrario, no se cargó ningún símbolo).
 
 ## <a name="remarks"></a>Observaciones
- Este valor lo devuelve el [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) método.
+ Este valor lo devuelve el método [getsymbolsearchinfo (](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: msdbg.h
+ Encabezado: msdbg. h
 
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13a9fc3c2d9c7f3f30f035eed036d2a9fb63d667
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520854"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
@@ -43,7 +43,7 @@ Para obtener más información, consulte [cómo definir un lenguaje específico 
 
 Las formas de imagen tienen las propiedades que se enumeran en la tabla siguiente.
 
-|Propiedad.|Descripción|Default|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |Color de relleno|Color de relleno de esta forma.|Blanco|
 |Modo de degradado de relleno|Modo de degradado de relleno de esta forma.|Horizontal|
@@ -58,7 +58,7 @@ Las formas de imagen tienen las propiedades que se enumeran en la tabla siguient
 |Tiene un constructor personalizado|Si `True` es, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la forma de imagen ( `none` , `abstract` o `sealed` ).|None|
 |Forma de imagen base|Clase base de esta forma.|(ninguno)|
-|NOMBRE|Nombre de esta forma.|Nombre actual|
+|Nombre|Nombre de esta forma.|Nombre actual|
 |Espacio de nombres|El espacio de nombres que está asociado con esta forma.|Espacio de nombres actual|
 |Tipo de información sobre herramientas|El lugar donde se define la información sobre herramientas (Fixed, variable o None). Si es Fixed, el valor de la `Fixed Tooltip Text` propiedad se usa como información sobre herramientas; si es variable, la información sobre herramientas se define en código personalizado.|None|
 |Notas|Notas informales asociadas a esta forma.|\<none>|
@@ -66,7 +66,7 @@ Las formas de imagen tienen las propiedades que se enumeran en la tabla siguient
 |Ancho inicial|Ancho inicial de esta forma, en pulgadas.|1.5|
 |Color de relleno expuesto como propiedad<br /><br /> Modo de degradado de relleno expuesto<br /><br /> Color de esquema expuesto como propiedad<br /><br /> Estilo de guión del contorno expuesto como propiedad<br /><br /> Grosor del contorno expuesto como propiedad<br /><br /> Expone el color del texto|Si es `True` , el usuario puede establecer la propiedad indicada de una forma. Para establecer esto, haga clic con el botón secundario en la definición de la forma y haga clic en **Agregar expuesto**.|False|
 |Descripción|Se usa para documentar el diseñador generado.|\<none>|
-|Nombre para mostrar|Nombre que se mostrará en el diseñador generado para esta forma.|\<none>|
+|Display Name (Nombre para mostrar)|Nombre que se mostrará en el diseñador generado para esta forma.|\<none>|
 |Texto de información sobre herramientas corregido|Texto que se usa para una información sobre herramientas fija.|\<none>|
 |Help Keyword|Palabra clave que se usa para indizar la ayuda de F1 para este elemento.|\<none>|
 |Imagen|Ruta de acceso al archivo de imagen que se usa para esta forma.|\<none>|

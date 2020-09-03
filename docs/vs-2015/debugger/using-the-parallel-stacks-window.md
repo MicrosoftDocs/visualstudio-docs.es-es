@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e89125c8e1dea25ab02fe64c21b8166e9d65194a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542225"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Uso de la ventana Tareas paralelas
@@ -51,7 +51,7 @@ La ventana **pilas paralelas** es útil cuando se depuran aplicaciones multiproc
 ## <a name="method-context-icons"></a>Iconos del contexto del método  
  En la siguiente tabla se describen los iconos que proporcionan información sobre los marcos de pila activos actuales:  
   
-|Iconos|Descripción|  
+|Icono|Descripción|  
 |-|-|
 |![Flecha amarilla de pilas paralelas](../debugger/media/icon-parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Indica que el contexto del método contiene el marco de pila activo del subproceso actual.|  
 |![Icono de subprocesos de pilas paralelas](../debugger/media/icon-parallelthreads.gif "Icon_ParallelThreads")|Indica que el contexto del método contiene el marco de pila activo de un subproceso que no es el actual.|  

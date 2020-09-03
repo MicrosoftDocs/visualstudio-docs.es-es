@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 38434d89544ed290f9adfd077593d7de9bdc1231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664015"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Tutorial: Enlazar a datos en el Diseñador XAML
@@ -25,7 +25,7 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
 
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Para crear una clase con el fin de usarla como origen de datos
 
-1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
+1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
 
 2. En el cuadro de diálogo **Nuevo proyecto**, elija el nodo de **Visual C#** o **Visual Basic**, expanda el nodo **Escritorio de Windows** y después elija la plantilla **Aplicación WPF**.
 
@@ -98,5 +98,5 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
 
      El control `TextBlock` debe mostrar el valor predeterminado de 0 como texto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear una interfaz de usuario mediante diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md) [NIB: cuadro de diálogo Agregar convertidor de valores](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cf95bd2095d9713d498ddccf68fd1e81e1b1e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535712"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: Crear clases de LINQ to SQL usando la herencia de tabla única (Object Relational Designer)
@@ -51,10 +51,10 @@ Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-too
 
     |Nombre de columna|Tipo de datos|Permitir valores NULL|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**Es**|
+    |**Id**|**int**|**False**|
     |**Tipo**|**int**|**True**|
-    |**Nombre**|**nvarchar(200)**|**Es**|
-    |**Apellidos**|**nvarchar(200)**|**Es**|
+    |**Nombre**|**nvarchar(200)**|**False**|
+    |**Apellidos**|**nvarchar(200)**|**False**|
     |**Administrador**|**int**|**True**|
 
 3. Establezca la columna Id. como clave principal.
@@ -70,7 +70,7 @@ Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-too
 
 2. Copie los datos siguientes en la tabla. (Puede copiarlo y, a continuación, pegarlo en la tabla seleccionando toda la fila en el panel de resultados).
 
-    |**ID**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
+    |**Id**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|

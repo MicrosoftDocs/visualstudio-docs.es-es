@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0fc84e2726cd7a70b8fc59b0f1ac2b3377f9c4af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543369"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Cómo: mostrar los comentarios de una hoja de cálculo mediante programación
@@ -39,7 +39,7 @@ ms.locfileid: "85543369"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#21)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#21)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Cómo: agregar y eliminar comentarios de hojas de cálculo mediante programación](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
