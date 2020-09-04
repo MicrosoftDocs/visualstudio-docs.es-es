@@ -8,15 +8,15 @@
           href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: Análisis de código para obtener información general de código administrado
           href: code-analysis-for-managed-code-overview.md
-        - name: Procedimiento Habilitar y deshabilitar el análisis de código automático
+        - name: 'Cómo: Habilitar y deshabilitar el análisis de código automático'
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-        - name: Procedimiento Habilitar y deshabilitar el análisis completo de la solución
+        - name: 'Cómo: Habilitar y deshabilitar el análisis completo de la solución'
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Suspensión automática de la característica
           href: automatic-feature-suspension.md
-        - name: Procedimiento Ejecutar análisis de código manualmente
+        - name: 'Cómo: Ejecutar el análisis de código manualmente'
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 'Tutorial: Analizar código administrado en busca de defectos de código'
+        - name: 'Tutorial: Analizar código administrado en previsión de defectos de código'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Suprimir advertencias mediante el atributo SuppressMessage
           items:
@@ -24,17 +24,17 @@
               href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: Información general sobre supresiones en código fuente
               href: in-source-suppression-overview.md
-            - name: Procedimiento Suprimir advertencias mediante el elemento de menú
+            - name: 'Cómo: Suprimir advertencias mediante el elemento de menú'
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-            - name: Procedimiento Suprimir advertencias de análisis de código en código generado
+            - name: 'Cómo: Suprimir advertencias de análisis de código en código generado'
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-            - name: Procedimiento Personalizar el diccionario de análisis de código
+            - name: 'Cómo: Personalizar el diccionario de análisis de código'
               href: how-to-customize-the-code-analysis-dictionary.md
             - name: Métodos anónimos y análisis de código
               href: anonymous-methods-and-code-analysis.md
-            - name: Procedimiento Ver defectos de código administrado
+            - name: 'Cómo: Ver defectos de código administrado'
               href: how-to-view-managed-code-defects.md
-            - name: Procedimiento Crear un elemento de trabajo para defectos de código administrado
+            - name: 'Cómo: Crear un elemento de trabajo para defectos de código administrado'
               href: how-to-create-a-work-item-for-a-managed-code-defect.md
             - name: Análisis de código de las advertencias de código administrado
               items:
@@ -164,7 +164,7 @@
                   href: ca1058-types-should-not-extend-certain-base-types.md
                 - name: 'CA1059: Los miembros no deben exponer algunos tipos concretos'
                   href: ca1059-members-should-not-expose-certain-concrete-types.md
-                - name: 'CA1060: Mover P/Invokes a la clase NativeMethods'
+                - name: 'CA1060: Mueva P/Invokes a la clase NativeMethods'
                   href: ca1060-move-p-invokes-to-nativemethods-class.md
                 - name: 'CA1061: No ocultar métodos de clase base'
                   href: ca1061-do-not-hide-base-class-methods.md
@@ -202,13 +202,13 @@
                   href: ca1308-normalize-strings-to-uppercase.md
                 - name: 'CA1309: Utilizar StringComparison ordinal'
                   href: ca1309-use-ordinal-stringcomparison.md
-                - name: 'CA2101: Especificar serialización en argumentos de cadena P/Invoke'
+                - name: 'CA2101: Especifique cálculo de referencias para argumentos de cadena P/Invoke'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: advertencias de interoperabilidad
               items:
                 - name: advertencias de interoperabilidad
                   href: interoperability-warnings.md
-                - name: 'CA1400: Debe haber puntos de entrada P/Invoke'
+                - name: 'CA1400: Deben existir puntos de entrada P/Invoke'
                   href: ca1400-p-invoke-entry-points-should-exist.md
                 - name: 'CA1401: Los elementos P/Invoke no deben estar visibles'
                   href: ca1401-p-invokes-should-not-be-visible.md
@@ -216,7 +216,7 @@
                   href: ca1402-avoid-overloads-in-com-visible-interfaces.md
                 - name: 'CA1403: Los tipos de diseño automático no deben ser visibles a través de COM'
                   href: ca1403-auto-layout-types-should-not-be-com-visible.md
-                - name: 'CA1404: Llamar a GetLastError inmediatamente después de P/Invoke'
+                - name: 'CA1404: Llame a GetLastError inmediatamente después de P/Invoke'
                   href: ca1404-call-getlasterror-immediately-after-p-invoke.md
                 - name: 'CA1405: Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM'
                   href: ca1405-com-visible-type-base-types-should-be-com-visible.md
@@ -236,9 +236,9 @@
                   href: ca1412-mark-comsource-interfaces-as-idispatch.md
                 - name: 'CA1413: Evitar los campos no públicos en tipos de valor visibles a través de COM'
                   href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-                - name: 'CA1414: Marcar los argumentos P/Invoke booleanos con MarshalAs'
+                - name: 'CA1414: Marque los argumentos P/Invoke booleanos con MarshalAs'
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-                - name: 'CA1415: Declarar elementos P/Invoke correctamente'
+                - name: 'CA1415: Declare los elementos P/Invoke correctamente'
                   href: ca1415-declare-p-invokes-correctly.md
                 - name: advertencias de mantenimiento
                   items:
@@ -350,9 +350,9 @@
                           href: ca1823-avoid-unused-private-fields.md
                         - name: 'CA1824: Marcar los ensamblados con NeutralResourcesLanguageAttribute'
                           href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-                    - name: advertencias de portabilidad
+                    - name: Portability Warnings
                       items:
-                        - name: advertencias de portabilidad
+                        - name: Portability Warnings
                           href: portability-warnings.md
                         - name: 'CA1900: Los campos de tipo de valor deben ser portátiles'
                           href: ca1900-value-type-fields-should-be-portable.md
@@ -566,7 +566,7 @@
                           href: ca2242-test-for-nan-correctly.md
                         - name: 'CA2243: Los literales de cadena de atributo se deben analizar correctamente'
                           href: ca2243-attribute-string-literals-should-parse-correctly.md
-                - name: Errores de las directivas de análisis de código
+                - name: Code Analysis Policy Errors
                   href: code-analysis-policy-errors.md
 - name: Analizar la calidad del código C/C++
   items:
@@ -580,11 +580,11 @@
       href: using-the-cpp-core-guidelines-checkers.md
     - name: Análisis de código para obtener información general de C/C++
       href: code-analysis-for-c-cpp-overview.md
-    - name: Procedimiento Establecer las propiedades de análisis de código de proyectos de C/C++
+    - name: 'Cómo: Establecer propiedades de análisis de código para proyectos de C/C++'
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-    - name: 'Tutorial: Analizar código de C/C++ en busca de defectos'
+    - name: 'Tutorial: Analizar código de C/C++ en previsión de defectos'
       items:
-        - name: 'Tutorial: Analizar código de C/C++ en busca de defectos'
+        - name: 'Tutorial: Analizar código de C/C++ en previsión de defectos'
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: Ejemplo de demostración
           href: demo-sample.md
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: Procedimientos recomendados y ejemplos
           href: best-practices-and-examples-sal.md
-        - name: Procedimiento Especificar información de código adicional mediante _analysis_assume
+        - name: 'Cómo: Especificar información de código adicional mediante __analysis_assume'
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: Advertencias de análisis de código de C/C++
           items:
@@ -1192,19 +1192,19 @@
               href: using-rule-sets-to-group-code-analysis-rules.md
             - name: 'Tutorial: Configurar y utilizar un conjunto de reglas personalizado'
               href: walkthrough-configuring-and-using-a-custom-rule-set.md
-            - name: Procedimiento Configurar el análisis de código de un proyecto de código administrado
+            - name: 'Cómo: Configurar el análisis de código para un proyecto de código administrado'
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Procedimiento Configurar el análisis de código para una aplicación web ASP.NET
+            - name: 'Cómo: Configurar el análisis de código para una aplicación web ASP.NET'
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-            - name: Procedimiento Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo
+            - name: 'Cómo: Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo'
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-            - name: Procedimiento Especificar conjuntos de reglas de varios proyectos de una solución
+            - name: 'Cómo: Especificar conjuntos de reglas para varios proyectos de una solución'
               href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
             - name: Crear conjuntos de reglas personalizadas
               items:
                 - name: Crear conjuntos de reglas personalizadas
                   href: creating-custom-code-analysis-rule-sets.md
-                - name: Procedimiento Crear un conjunto de reglas personalizadas
+                - name: 'Cómo: Crear un conjunto de reglas personalizadas'
                   href: how-to-create-a-custom-rule-set.md
                 - name: Trabajar en el editor de conjuntos de reglas
                   href: working-in-the-code-analysis-rule-set-editor.md
@@ -1304,11 +1304,11 @@
               items:
                 - name: Crear y usar directivas de inserción en el repositorio del análisis de código
                   href: creating-and-using-code-analysis-check-in-policies.md
-                - name: Procedimiento Crear o actualizar directivas de protección de análisis de código estándar
+                - name: 'Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar'
                   href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
                 - name: Implementar directivas de protección personalizadas para el código administrado
                   href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-                - name: Procedimiento Exigir código de mantenimiento con una directiva de protección de análisis de código
+                - name: 'Cómo: Exigir código mantenible con una directiva de protección de los análisis de código'
                   href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
                 - name: Compatibilidad de versiones para las directivas de protección de análisis de código
                   href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -1318,7 +1318,7 @@
       href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: Valores de métrica de código
       href: code-metrics-values.md
-    - name: Procedimiento Generar datos de las métricas de código
+    - name: 'Cómo: Generar datos de las métricas de código'
       href: how-to-generate-code-metrics-data.md
     - name: Trabajar con datos de métricas de código
       href: working-with-code-metrics-data.md
