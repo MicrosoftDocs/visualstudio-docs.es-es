@@ -26,7 +26,7 @@
               href: securing-clickonce-applications.md
             - name: ClickOnce y Authenticode
               href: clickonce-and-authenticode.md
-            - name: Información general sobre la implementación de aplicaciones de confianza
+            - name: Trusted Application Deployment Overview
               href: trusted-application-deployment-overview.md
             - name: Seguridad de acceso del código para aplicaciones ClickOnce
               href: code-access-security-for-clickonce-applications.md
@@ -120,7 +120,7 @@
               items:
                 - name: Descarga de ensamblados a petición con la API de implementación ClickOnce mediante el diseñador
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-                - name: Descargar ensamblados a petición con la API de implementación ClickOnce
+                - name: Descarga de ensamblados a petición con la API de implementación ClickOnce
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: Descarga de ensamblados satélite a petición con la API de implementación ClickOnce mediante el diseñador
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
@@ -168,41 +168,41 @@
               items:
                 - name: ClickOnce Application Manifest
                   href: clickonce-application-manifest.md
-                - name: \<assembly> Element
+                - name: \<assembly> (Elemento)
                   href: assembly-element-clickonce-application.md
-                - name: \<assemblyIdentity> Element
+                - name: \<assemblyIdentity> (Elemento)
                   href: assemblyidentity-element-clickonce-application.md
-                - name: \<trustInfo> Element
+                - name: \<trustInfo> (Elemento)
                   href: trustinfo-element-clickonce-application.md
-                - name: \<entryPoint> Element
+                - name: \<entryPoint> (Elemento)
                   href: entrypoint-element-clickonce-application.md
-                - name: \<dependency> Element
+                - name: \<dependency> (Elemento)
                   href: dependency-element-clickonce-application.md
-                - name: \<file> Element
+                - name: \<file> (Elemento)
                   href: file-element-clickonce-application.md
-                - name: \<fileAssociation> Element
+                - name: \<fileAssociation> (Elemento)
                   href: fileassociation-element-clickonce-application.md
             - name: Manifiesto de la implementación ClickOnce
               items:
                 - name: Manifiesto de la implementación ClickOnce
                   href: clickonce-deployment-manifest.md
-                - name: \<assembly> Element
+                - name: \<assembly> (Elemento)
                   href: assembly-element-clickonce-deployment.md
-                - name: \<assemblyIdentity> Element
+                - name: \<assemblyIdentity> (Elemento)
                   href: assemblyidentity-element-clickonce-deployment.md
-                - name: \<description> Element
+                - name: \<description> (Elemento)
                   href: description-element-clickonce-deployment.md
-                - name: \<deployment> Element
+                - name: \<deployment> (Elemento)
                   href: deployment-element-clickonce-deployment.md
-                - name: \<compatibleFrameworks> Element
+                - name: \<compatibleFrameworks> (Elemento)
                   href: compatibleframeworks-element-clickonce-deployment.md
-                - name: \<dependency> Element
+                - name: \<dependency> (Elemento)
                   href: dependency-element-clickonce-deployment.md
-                - name: \<publisherIdentity> Element
+                - name: \<publisherIdentity> (Elemento)
                   href: publisheridentity-element-clickonce-deployment.md
-                - name: \<Signature> Element
+                - name: \<Signature> (Elemento)
                   href: signature-element-clickonce-deployment.md
-                - name: \<customErrorReporting> Element
+                - name: \<customErrorReporting> (Elemento)
                   href: customerrorreporting-element-clickonce-deployment.md
             - name: Referencia de la API no administrada de ClickOnce
               href: clickonce-unmanaged-api-reference.md
@@ -228,21 +228,21 @@
           items:
             - name: Referencia de esquemas de productos y paquetes
               href: product-and-package-schema-reference.md
-            - name: \<Product> Element
+            - name: \<Product> (Elemento)
               href: product-element-bootstrapper.md
-            - name: \<Package> Element
+            - name: \<Package> (Elemento)
               href: package-element-bootstrapper.md
-            - name: \<RelatedProducts> Element
+            - name: \<RelatedProducts> (Elemento)
               href: relatedproducts-element-bootstrapper.md
-            - name: \<InstallChecks> Element
+            - name: \<InstallChecks> (Elemento)
               href: installchecks-element-bootstrapper.md
-            - name: \<Commands> Element
+            - name: \<Commands> (Elemento)
               href: commands-element-bootstrapper.md
-            - name: \<PackageFiles> Element
+            - name: \<PackageFiles> (Elemento)
               href: packagefiles-element-bootstrapper.md
-            - name: \<Strings> Element
+            - name: \<Strings> (Elemento)
               href: strings-element-bootstrapper.md
-            - name: \<Schedules> Element
+            - name: \<Schedules> (Elemento)
               href: schedules-element-bootstrapper.md
     - name: InstallShield Limited Edition
       href: installshield-limited-edition.md

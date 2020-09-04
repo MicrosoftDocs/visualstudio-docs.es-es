@@ -62,7 +62,7 @@
               href: pickbranch-activity-designer.md
             - name: Secuencia
               href: sequence-activity-designer.md
-            - name: Switch\<T>
+            - name: Conmutador\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
@@ -86,7 +86,7 @@
               href: state-activity-designer.md
             - name: FinalState
               href: finalstate-activity-designer.md
-            - name: Transition
+            - name: Transición
               href: transition-activity-designer.md
         - name: Mensajería
           items:
@@ -114,11 +114,11 @@
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
-        - name: Elementos primitivos
+        - name: Primitivos
           items:
-            - name: Elementos primitivos
+            - name: Primitivos
               href: primitives-activity-designers.md
-            - name: Assign
+            - name: Asignar
               href: assign-activity-designer.md
             - name: Delay
               href: delay-activity-designer.md
@@ -138,7 +138,7 @@
               href: compensableactivity-activity-designer.md
             - name: Compensate
               href: compensate-activity-designer.md
-            - name: Confirm
+            - name: Confirmar
               href: confirm-activity-designer.md
             - name: TransactionScope
               href: transactionscope-activity-designer.md
@@ -286,7 +286,7 @@
               items:
                 - name: Ayuda de la interfaz de usuario del diseñador heredado para Windows Workflow Foundation
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: Enlazar con un cuadro de diálogo de propiedades de una actividad (Heredado)
+                - name: Enlace a un cuadro de diálogo de propiedades de una actividad (heredado)
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: Examinar y seleccionar un cuadro de diálogo de tipo .NET (Heredado)
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md
