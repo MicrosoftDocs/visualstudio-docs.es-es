@@ -132,7 +132,7 @@
               href: save-a-dataset-as-xml.md
         - name: Consulta de conjuntos de datos
           href: query-datasets.md
-        - name: Aplicaciones con n capas
+        - name: Aplicaciones de n niveles
           items:
             - name: Adición de validación a un conjunto de datos de n niveles
               href: add-validation-to-an-n-tier-dataset.md
