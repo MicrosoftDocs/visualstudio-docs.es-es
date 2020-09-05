@@ -12,9 +12,9 @@
       items:
         - name: Introducción al desarrollo con Visual Studio
           href: get-started-developing-with-visual-studio.md
-        - name: 'Introducción a Visual C# y Visual Basic'
+        - name: Introducción a Visual C# y Visual Basic
           items:
-            - name: 'Introducción a Visual C# y Visual Basic'
+            - name: Introducción a Visual C# y Visual Basic
               href: getting-started-with-visual-csharp-and-visual-basic.md
             - name: Creación de una aplicación sencilla
               href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
@@ -150,9 +150,9 @@
               href: how-to-create-starter-kits.md
             - name: Búsqueda y organización de plantillas
               href: how-to-locate-and-organize-project-and-item-templates.md
-            - name: Personalizar plantillas
+            - name: Personalización de plantillas
               items:
-                - name: Personalizar plantillas
+                - name: Personalización de plantillas
                   href: customizing-project-and-item-templates.md
                 - name: Actualización de plantillas existentes
                   href: how-to-update-existing-templates.md
@@ -166,9 +166,9 @@
                   href: visual-studio-template-reference.md
                 - name: Parámetros de plantilla
                   href: template-parameters.md
-    - name: Escribir código
+    - name: Escritura de código
       items:
-        - name: Escribir código
+        - name: Escritura de código
           href: writing-code-in-the-code-and-text-editor.md
         - name: Finding and Replacing Text
           items:
@@ -184,9 +184,9 @@
               href: replace-in-files.md
         - name: Codificaciones y saltos de línea
           href: encodings-and-line-breaks.md
-        - name: Esquematización
+        - name: esquematizar
           href: outlining.md
-        - name: Refactoring
+        - name: Refactorización
           href: refactoring-in-visual-studio.md
         - name: Sugerencias de productividad
           items:
@@ -212,7 +212,7 @@
                   href: visual-basic-specific-intellisense.md
                 - name: Listas de finalización filtradas en Visual Basic
                   href: filtered-completion-lists-in-visual-basic.md
-            - name: 'IntelliSense para Visual C#'
+            - name: IntelliSense para Visual C#
               href: visual-csharp-intellisense.md
             - name: Compatibilidad del desarrollo de pruebas en primer lugar con la característica de generación a partir del uso
               href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
@@ -220,7 +220,7 @@
               items:
                 - name: IntelliSense para JavaScript
                   href: javascript-intellisense.md
-                - name: Crear comentarios JSDoc
+                - name: Creación de comentarios JSDoc
                   href: create-jsdoc-comments-for-javascript-intellisense.md
                 - name: Creación de comentarios de documentación XML
                   href: create-xml-documentation-comments-for-javascript-intellisense.md
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<valor>
+                    - name: \<value>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -280,7 +280,7 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: Distribución de fragmentos de código
               href: how-to-distribute-code-snippets.md
-            - name: 'Fragmentos de código de Visual C#'
+            - name: Fragmentos de código de Visual C#
               href: visual-csharp-code-snippets.md
             - name: Fragmentos de código de Visual C++
               href: visual-cpp-code-snippets.md
@@ -384,9 +384,9 @@
           href: setting-bookmarks-in-code.md
         - name: Usar la Lista de tareas
           href: using-the-task-list.md
-        - name: Buscar cambios en el código y otro historial
+        - name: Búsqueda de cambios en el código y otro historial
           items:
-            - name: Buscar cambios en el código y otro historial
+            - name: Búsqueda de cambios en el código y otro historial
               href: find-code-changes-and-other-history-with-codelens.md
             - name: CodeIndex (Comando)
               href: codeindex-command.md
@@ -394,17 +394,17 @@
           items:
             - name: "Uso del entorno de desarrollo de Visual\_Studio para C#"
               href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
-            - name: 'Adición de un archivo de configuración de la aplicación a un proyecto de C#'
+            - name: Adición de un archivo de configuración de la aplicación a un proyecto de C#
               href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
             - name: Metadatos como origen
               href: ../csharp-ide/metadata-as-source.md
-            - name: 'Refactorización (C#)'
+            - name: Refactorización (C#)
               items:
-                - name: 'Refactorización (C#)'
+                - name: Refactorización (C#)
                   href: ../csharp-ide/refactoring-csharp.md
                 - name: 'Extraer método (Refactorización, C#)'
                   href: ../csharp-ide/extract-method-refactoring-csharp.md
-                - name: 'Cambiar el nombre de refactorización (C#)'
+                - name: Cambiar el nombre de refactorización (C#)
                   href: ../csharp-ide/rename-refactoring-csharp.md
                 - name: 'Encapsular campo (Refactorización, C#)'
                   href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
@@ -412,9 +412,9 @@
                   href: ../csharp-ide/extract-interface-refactoring-csharp.md
                 - name: 'Quitar parámetros (Refactorización, C#)'
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
-                - name: 'Reordenar parámetros de refactorización (C#)'
+                - name: Reordenar parámetros de refactorización (C#)
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
-    - name: Depuración en Visual Studio
+    - name: Depurar en Visual Studio
       href: ../debugger/debugging-in-visual-studio.md
     - name: Generación de perfiles
       href: ../profiling/profiling-tools.md
@@ -422,7 +422,7 @@
       href: ../test/unit-test-your-code.md
     - name: Diseño de interfaces de usuario
       href: ../designers/designing-user-interfaces.md
-    - name: Análisis y modelado de arquitectura
+    - name: Analizar y modelar la arquitectura
       href: ../modeling/analyze-and-model-your-architecture.md
     - name: Compilar y generar
       items:
@@ -470,7 +470,7 @@
               href: how-to-configure-projects-to-target-multiple-platforms.md
         - name: Especificar eventos de compilación (Visual Basic)
           href: how-to-specify-build-events-visual-basic.md
-        - name: 'Especificar eventos de compilación (C#)'
+        - name: Especificar eventos de compilación (C#)
           href: how-to-specify-build-events-csharp.md
         - name: Configurar advertencias en Visual Basic
           href: configuring-warnings-in-visual-basic.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Compatibilidad de 64 bits del IDE de Visual Studio
       href: visual-studio-ide-64-bit-support.md
-    - name: Visual Studio Samples
+    - name: Ejemplos de Visual Studio
       href: visual-studio-samples.md
     - name: Cuentas de usuario y actualizaciones
       items:
@@ -510,7 +510,7 @@
           href: how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: Personalizar los diseños de ventana
           href: customizing-window-layouts-in-visual-studio.md
-        - name: Personalizar la página principal
+        - name: Personalización de la página de inicio
           href: customizing-the-start-page-for-visual-studio.md
         - name: Administrar herramientas externas
           href: managing-external-tools.md
@@ -528,7 +528,7 @@
           href: user-permissions-and-visual-studio.md
         - name: Bibliografía sobre seguridad
           href: security-bibliography.md
-    - name: Visual Studio Samples
+    - name: Ejemplos de Visual Studio
       href: visual-studio-samples.md
     - name: Visor de Ayuda de Microsoft
       items:
@@ -630,7 +630,7 @@
               href: reference/code-snippet-picker.md
             - name: Ventana de comandos
               href: reference/command-window.md
-            - name: Convertir (Cuadro de diálogo)
+            - name: Convertir (cuadro de diálogo)
               href: reference/convert-dialog-box.md
             - name: Ventana de lista de errores
               href: reference/error-list-window.md
@@ -638,7 +638,7 @@
               href: reference/file-properties-javascript.md
             - name: Ir a la línea
               href: reference/go-to-line.md
-            - name: Inmediato (ventana)
+            - name: Ventana Inmediato
               href: reference/immediate-window.md
             - name: archivos varios
               href: reference/miscellaneous-files.md
@@ -718,7 +718,7 @@
                   href: reference/options-text-editor-csharp-advanced.md
                 - name: 'Opciones, editor de texto, C#, IntelliSense'
                   href: reference/options-text-editor-csharp-intellisense.md
-                - name: 'Opciones, editor de texto, JavaScript, formato'
+                - name: 'Options, Text Editor, JavaScript, Formatting'
                   href: reference/options-text-editor-javascript-formatting.md
                 - name: 'Opciones, editor de texto, JavaScript, IntelliSense'
                   href: reference/options-text-editor-javascript-intellisense.md
@@ -740,7 +740,7 @@
                   items:
                     - name: 'Application Page, Project Designer (Visual Basic)'
                       href: reference/application-page-project-designer-visual-basic.md
-                    - name: Información de ensamblado (Cuadro de diálogo)
+                    - name: Cuadro de diálogo Información de ensamblado
                       href: reference/assembly-information-dialog-box.md
                 - name: 'Página de aplicación, Diseñador de proyectos (C#)'
                   href: reference/application-page-project-designer-csharp.md
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: 'Página Depuración, Diseñador de proyectos'
                   href: reference/debug-page-project-designer.md
-                - name: Extensiones My (página del Diseñador de proyectos)
+                - name: Página Mis extensiones del Diseñador de proyectos
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: 'Panel Publicar, Diseñador de proyectos'
                   items:
@@ -788,7 +788,7 @@
                   items:
                     - name: 'Página Servicios, Diseñador de proyectos'
                       href: reference/services-page-project-designer.md
-                    - name: Cuadro de diálogo Configuración avanzada de servicios
+                    - name: Configuración avanzada de servicios (Cuadro de diálogo)
                       href: reference/advanced-settings-for-services-dialog-box.md
                 - name: 'Página Firma, Diseñador de proyectos'
                   href: reference/signing-page-project-designer.md
@@ -814,7 +814,7 @@
               items:
                 - name: Cuadro de herramientas
                   href: reference/toolbox.md
-                - name: 'Cuadro de herramientas, pestaña Componentes'
+                - name: 'Cuadro de herramientas, Componentes (Pestaña)'
                   href: reference/toolbox-components-tab.md
                 - name: 'Cuadro de herramientas, pestaña Datos'
                   href: reference/toolbox-data-tab.md

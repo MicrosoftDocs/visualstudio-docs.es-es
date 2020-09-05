@@ -64,7 +64,7 @@
           href: import-an-xcode-project.md
         - name: Sincronizar cambios entre XCode y Visual Studio
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: Cross-Platform Mobile Development Examples
+        - name: Ejemplos de desarrollo móvil multiplataforma
           href: cross-platform-mobile-development-examples.md
     - name: Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)
       href: develop-apps-for-the-universal-windows-platform-uwp.md

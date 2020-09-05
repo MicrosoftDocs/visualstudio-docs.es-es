@@ -1,6 +1,6 @@
-- name: Análisis y modelado de arquitectura
+- name: Analizar y modelar la arquitectura
   items:
-    - name: Análisis y modelado de arquitectura
+    - name: Analizar y modelar la arquitectura
       href: analyze-and-model-your-architecture.md
     - name: Novedades
       href: what-s-new-for-design-in-visual-studio.md

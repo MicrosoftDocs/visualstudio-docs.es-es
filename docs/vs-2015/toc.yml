@@ -2,7 +2,7 @@
   items:
     - name: Bienvenido a Visual Studio 2015
       href: welcome-to-visual-studio-2015.md
-    - name: "Novedades de Visual\_Studio\_2015"
+    - name: "Novedades de Visual Studio\_2015"
       href: what-s-new-in-visual-studio-2015.md
     - name: Instalación de Visual Studio 2015
       href: install/install-visual-studio-2015.md
@@ -18,7 +18,7 @@
       href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
     - name: Visual Basic
       href: /dotnet/visual-basic
-    - name: 'Visual C#'
+    - name: Visual C#
       href: /dotnet/csharp
     - name: Visual C++
       href: /cpp/visual-cpp-in-visual-studio
@@ -26,7 +26,7 @@
       href: javascript/javascript-in-visual-studio.md
     - name: Python
       href: python/getting-started-with-python.md
-    - name: 'Visual F#'
+    - name: Visual F#
       href: /dotnet/fsharp/
     - name: Talk to Us
       items:

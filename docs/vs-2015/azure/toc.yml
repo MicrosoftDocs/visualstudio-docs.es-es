@@ -52,7 +52,7 @@
       items:
         - name: Depuración de un servicio en la nube o una máquina virtual
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Más información sobre las diversas maneras de depurar un servicio en la nube de Azure
+        - name: Aprendizaje de las diversas maneras de depurar un servicio en la nube de Azure
           href: vs-azure-tools-debugging-cloud-services-overview.md
         - name: Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
@@ -94,13 +94,13 @@
           href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Uso del Explorador de Storage con el almacenamiento de archivos de Azure
           href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Notas de la versión de Explorador de Microsoft Azure Storage
+        - name: Notas de la versión del Explorador de Microsoft Azure Storage
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Accesibilidad al Explorador de Storage
+        - name: Accesibilidad del Explorador de Storage
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud Explorer
   items:
-    - name: Exploración y administración de recursos de almacenamiento mediante el Explorador de servidores
+    - name: Examen y administración de los recursos de almacenamiento mediante el Explorador de servidores
       href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - name: Administración de los recursos asociados con las cuentas de Azure en Cloud Explorer
       href: vs-azure-tools-resources-managing-with-cloud-explorer.md

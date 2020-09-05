@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219782"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490292"
 ---
 # <a name="use-code-analyzers"></a>Usar analizadores de código
 
@@ -66,7 +66,7 @@ En la tabla siguiente se muestran las diferentes opciones de gravedad:
 | Advertencia | `warning` | Las infracciones aparecen como *advertencias* en el lista de errores y en la salida de la compilación de línea de comandos, pero no provocan errores en las compilaciones. | El código infractor se subraya con un subrayado ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento. |
 | Información | `suggestion` | Las infracciones aparecen como *mensajes* en el lista de errores y no en todos los resultados de la compilación de línea de comandos. | El código infractor se subraya con un subrayado ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento. |
 | Hidden | `silent` | No es visible para el usuario. | No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE. |
-| Ninguno | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
+| None | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
 | Valor predeterminado | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
 
 La siguiente captura de pantalla del editor de código muestra tres infracciones diferentes con diferentes niveles de gravedad. Observe el color de la línea ondulada y el cuadrado pequeño coloreado en la barra de desplazamiento de la derecha.
@@ -76,6 +76,13 @@ La siguiente captura de pantalla del editor de código muestra tres infracciones
 En la captura de pantalla siguiente se muestran las tres infracciones que aparecen en el Lista de errores:
 
 ![Infracción de error, advertencia e información en Lista de errores](media/diagnostics-severities-in-error-list.png)
+
+### <a name="hidden-severity-versus-none-severity"></a>Gravedad ' Hidden ' frente a ' none ' gravedad
+
+`Hidden` las reglas de gravedad que están habilitadas de forma predeterminada son diferentes de las reglas deshabilitadas o de `None` gravedad de dos maneras.
+
+- Si se ha registrado alguna corrección de código para una `Hidden` regla de gravedad, la corrección se ofrece como una acción de refactorización de código de bombilla en Visual Studio, aunque el diagnóstico oculto no sea visible para el usuario. Este no es el caso de las reglas de gravedad deshabilitadas `None` .
+- `Hidden` las reglas de gravedad se pueden configurar de forma masiva mediante entradas que [establecen la gravedad de la regla de varias reglas del analizador a la vez en un archivo EditorConfig](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file). `None` las reglas de gravedad no se pueden configurar de esta manera. En su lugar, deben configurarse mediante entradas que [establezcan la gravedad de la regla en un archivo EditorConfig para cada identificador de regla](#set-rule-severity-in-an-editorconfig-file).
 
 ::: moniker range=">=vs-2019"
 
@@ -395,7 +402,7 @@ En un proyecto de .NET Core, si agrega una referencia a un proyecto que tiene an
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general de los analizadores de código en Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar un error del analizador de código](https://github.com/dotnet/roslyn-analyzers/issues)

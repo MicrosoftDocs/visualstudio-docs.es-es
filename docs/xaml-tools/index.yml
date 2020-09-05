@@ -11,17 +11,17 @@ metadata:
   ms.author: jillfra
   ms.date: 10/10/2019
   ms.openlocfilehash: 45f9459ff4778b58ae3d553a03b2e5c1773614b6
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "74316414"
 landingContent:
 - title: Más información sobre XAML
   linkLists:
   - linkListType: overview
     links:
-    - text: Información general sobre XAML
+    - text: Introducción a XAML
       url: xaml-overview.md
 - title: Diseñador XAML
   linkLists:
@@ -55,7 +55,7 @@ landingContent:
     links:
     - text: Introducción a WPF en Visual Studio
       url: ../designers/getting-started-with-wpf.md
-- title: Desarrollo de aplicaciones para UWP
+- title: Desarrollar aplicaciones para UWP
   linkLists:
   - linkListType: overview
     links:

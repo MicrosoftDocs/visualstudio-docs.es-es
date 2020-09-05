@@ -93,7 +93,7 @@ sections:
             html: <p>Uso del generador de perfiles de Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_code-performance.svg'
-            title: Análisis de rendimiento
+            title: Análisis del rendimiento
           - href: vs-azure-tools-publishing-a-cloud-service.md
             html: <p>Publicación de un servicio en la nube en Azure</p>
             image:

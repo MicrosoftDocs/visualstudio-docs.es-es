@@ -124,7 +124,7 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: Resaltar texto
           href: walkthrough-highlighting-text.md
-        - name: Esquematización
+        - name: esquematizar
           href: walkthrough-outlining.md
         - name: Mostrar llaves que coincidan
           href: walkthrough-displaying-matching-braces.md
@@ -898,7 +898,7 @@
   items:
     - name: Creación de un kit de desarrollo de software
       href: creating-a-software-development-kit.md
-    - name: 'Crear un SDK con C# o Visual Basic'
+    - name: Crear un SDK con C# o Visual Basic
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: Crear un SDK con C++
       href: walkthrough-creating-an-sdk-using-cpp.md

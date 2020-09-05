@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778250"
 ---
-# <a name="status"></a>Situación
+# <a name="status"></a>Estado
 La opción **Status** de *VSPerfCmd.exe* muestra información sobre el estado del generador de perfiles y los procesos de los que actualmente se está generando el perfil.
 
  La opción **Status** debe ser la única especificada en la línea de comandos. El generador de perfiles se debe inicializar con la opción **Start** de *VSPerfCmd.exe* antes de que se pueda mostrar cualquier estado.
@@ -30,7 +30,7 @@ VSPerfCmd.exe /Status
 #### <a name="parameters"></a>Parámetros
  None
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  La opción **Status** muestra la siguiente información de estado para el generador de perfiles.
 
  **Nombre del archivo de salida** La ruta de acceso y el nombre del archivo de datos actual del generador de perfiles.

@@ -1,6 +1,6 @@
 - name: Información general
   items:
-    - name: Herramientas de R para Visual Studio
+    - name: R Tools para Visual Studio
       href: index.md
     - name: Carga de trabajo Aplicaciones de ciencia de datos y de análisis
       href: ../python/data-science-and-analytical-applications-workload.md
@@ -60,5 +60,5 @@
   items:
     - name: Opciones
       href: options-for-r-tools-in-visual-studio.md
-    - name: Preguntas más frecuentes
+    - name: Preguntas frecuentes
       href: faq.md

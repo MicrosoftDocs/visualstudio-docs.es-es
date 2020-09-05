@@ -38,7 +38,7 @@
               items:
                 - name: Métodos abreviados de teclado y teclas modificadoras
                   href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-                - name: Accesos directos del teclado
+                - name: Métodos abreviados de teclado
                   href: keyboard-shortcuts-in-blend.md
                 - name: Teclas modificadoras de la mesa de trabajo
                   href: artboard-modifier-keys-in-blend.md
@@ -96,7 +96,7 @@
                           href: elements-xelement-dynamic-property.md
                         - name: Descendants
                           href: descendants-xelement-dynamic-property.md
-                        - name: Value
+                        - name: Valor
                           href: value-xelement-dynamic-property.md
                         - name: Xml
                           href: xml-xelement-dynamic-property.md

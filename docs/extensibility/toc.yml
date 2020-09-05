@@ -48,7 +48,7 @@
       href: workspace-indexing.md
     - name: Servicios de lenguaje
       href: workspace-language-services.md
-    - name: Build
+    - name: Compilar
       href: workspace-build.md
 - name: Ampliación de menús y comandos
   items:

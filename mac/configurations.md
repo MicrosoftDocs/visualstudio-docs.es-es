@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
 ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71128399"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
@@ -72,6 +72,6 @@ En la siguiente lista se proporcionan algunos ejemplos de datos que se podrían 
   * Modo (Vista rápida, Notificación)
   * Carga de notificaciones
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Descripción de las configuraciones de compilación (Visual Studio en Windows)](/visualstudio/ide/understanding-build-configurations)

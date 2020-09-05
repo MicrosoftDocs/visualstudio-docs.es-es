@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419848"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>Colaboración con la documentación de Visual Studio
@@ -14,7 +14,7 @@ En esta guía se explican algunos temas generales sobre la colaboración y se ha
 
 ## <a name="code-of-conduct"></a>Código de conducta
 
-Este proyecto ha adoptado el [código de conducta del código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/). Para más información, vea las [preguntas más frecuentes del código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene otras preguntas o comentarios.
+El proyecto ha adoptado el [Código de conducta de código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/). Para más información, vea las [preguntas más frecuentes del código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene otras preguntas o comentarios.
 
 ## <a name="how-can-i-contribute"></a>¿Cómo puedo colaborar?
 
@@ -34,6 +34,6 @@ Siga las instrucciones para realizar [cambios rápidos en documentos existentes]
 
 Revise las instrucciones para realizar [solicitudes de incorporación de cambios](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing) de la guía de colaboradores.
 
-**NOTA**
+**NOTA**:
 
 No se está trabajando activamente en los archivos de la carpeta `docs/vs-2015`, ya que son para Visual Studio 2015, una versión anterior del producto. No se aceptan solicitudes de incorporación de cambios de modificaciones triviales en estos archivos.

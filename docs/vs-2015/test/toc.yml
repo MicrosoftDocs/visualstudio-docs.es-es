@@ -76,7 +76,7 @@
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Solucionar problemas de cobertura de código
               href: troubleshooting-code-coverage.md
-        - name: Usar emuladores para aislar las pruebas unitarias de SharePoint 2010
+        - name: "Usar emuladores para aislar las pruebas unitarias de SharePoint\_2010"
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
     - name: Usar UI Automation para probar el código
       items:
@@ -132,7 +132,7 @@
                   href: sample-excel-extension-technologymanager-class.md
                 - name: PropertyProvider (Clase)
                   href: sample-excel-extension-propertyprovider-class.md
-                - name: Clases de elementos
+                - name: Element (Clases)
                   href: sample-excel-extension-element-classes.md
                 - name: ActionFilter (Clase)
                   href: sample-excel-extension-actionfilter-class.md
@@ -158,7 +158,7 @@
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: Pruebas unitarias de un archivo DLL de C++
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: 'Código de C# de pruebas unitarias'
+            - name: Código de C# de pruebas unitarias
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: Ejecutar pruebas unitarias en el Explorador de pruebas
               href: run-unit-tests-for-store-apps-in-visual-studio.md
@@ -166,7 +166,7 @@
           items:
             - name: Analizar la calidad del código utilizando análisis de código estático
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
-            - name: 'Analizar la calidad del código de Visual Basic y C#'
+            - name: "Analizar la calidad del código de Visual\_Basic y C#"
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
-            - name: Analizar la calidad del código C++
+            - name: Analizar la calidad del código de C++
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md

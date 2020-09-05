@@ -61,11 +61,11 @@ sections:
         items:
           - image:
               src: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
-            text: 'C#'
+            text: C#
             href: /dotnet/csharp/
           - image:
               src: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
-            text: 'F#'
+            text: F#
             href: /dotnet/fsharp/
           - image:
               src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
@@ -97,7 +97,7 @@ sections:
             html: <p>Configure el compilador y cree una aplicación.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Compilación y creación
+            title: Compilar y generar
           - href: debugging.md
             html: <p>Ejecute la aplicación en el depurador para investigar problemas.</p>
             image:

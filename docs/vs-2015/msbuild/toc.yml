@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrar las extensiones de .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Compilar varios proyectos en paralelo
+        - name: Compilación de varios proyectos en paralelo
           items:
-            - name: Compilar varios proyectos en paralelo
+            - name: Compilación de varios proyectos en paralelo
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Uso de varios procesadores para compilar proyectos
               href: using-multiple-processors-to-build-projects.md
@@ -144,7 +144,7 @@
                   href: standard-and-custom-toolset-configurations.md
                 - name: Invalidar el valor de la versión de herramientas
                   href: overriding-toolsversion-settings.md
-            - name: Versión de .NET Framework de destino y plataforma de destino
+            - name: Marco y plataforma de destino
               href: msbuild-target-framework-and-target-platform.md
             - name: Resolver ensamblados en tiempo de diseño
               href: resolving-assemblies-at-design-time.md
@@ -162,7 +162,7 @@
       items:
         - name: Registro de MSBuild
           href: logging-in-msbuild.md
-        - name: Obtener registros de compilación
+        - name: Obtención de registros de compilación
           href: obtaining-build-logs-with-msbuild.md
         - name: Registradores de compilación
           href: build-loggers.md
@@ -180,9 +180,9 @@
       items:
         - name: Referencia de MSBuild
           href: msbuild-reference.md
-        - name: Referencia de esquemas del archivo de proyecto
+        - name: Referencia de esquemas de archivo de proyecto
           items:
-            - name: Referencia de esquemas del archivo de proyecto
+            - name: Referencia de esquemas de archivo de proyecto
               href: msbuild-project-file-schema-reference.md
             - name: Elemento Choose (MSBuild)
               href: choose-element-msbuild.md
@@ -230,9 +230,9 @@
           items:
             - name: Referencia de tareas
               href: msbuild-task-reference.md
-            - name: Tareas en Visual C++
+            - name: "Tareas de Visual\_C++"
               items:
-                - name: Tareas en Visual C++
+                - name: "Tareas de Visual\_C++"
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake (Tarea)
                   href: bscmake-task.md
@@ -394,9 +394,9 @@
           href: common-msbuild-project-items.md
         - name: Referencia de la línea de comandos
           href: msbuild-command-line-reference.md
-        - name: Archivos .Targets
+        - name: Archivos .targets
           href: msbuild-dot-targets-files.md
-        - name: Metadatos de elementos conocidos
+        - name: Metadatos de los elementos conocidos
           href: msbuild-well-known-item-metadata.md
         - name: Archivos de respuesta
           href: msbuild-response-files.md
@@ -406,7 +406,7 @@
           items:
             - name: Referencia de MSBuild para WPF
               href: wpf-msbuild-reference.md
-            - name: Archivos .Targets
+            - name: Archivos .targets
               href: wpf-dot-targets-files.md
             - name: Referencia de tareas
               items:
