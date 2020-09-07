@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778432"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
@@ -110,7 +110,7 @@ Debe agregar la opción de recopilación de datos de interacción de capas a una
 
 **Recopilación de datos de TIP en un equipo remoto**
 
-Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs\_profiler\_** _\<plataforma>_ **\_** _\<lenguaje>_ **.exe** de la carpeta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
+Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** de la carpeta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
 
 Puede usar [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para recopilar los datos de generación de perfiles.
 

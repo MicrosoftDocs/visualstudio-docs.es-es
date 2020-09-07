@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773904"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Guardar y exportar datos de herramientas de rendimiento
@@ -66,7 +66,7 @@ En este artículo, se describe cómo guardar y exportar archivos de datos de ren
 
 6. Haga clic en **Exportar**.
 
-     Cada vista de informe se guarda en un archivo independiente denominado \<prefijo>_\<nombre de vista de informe>.\<csv&#124;xml>
+     Cada vista de informe se guarda en un archivo independiente denominado \<prefix>_\<report view name>.\<csv&#124;xml>
 
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Para exportar informes de rendimiento desde la ventana de vista de informe
 
@@ -86,7 +86,7 @@ En este artículo, se describe cómo guardar y exportar archivos de datos de ren
 
 8. Haga clic en **Exportar**.
 
-     Cada vista de informe se guarda en un archivo independiente denominado \<prefijo>_\<nombre de vista de informe>.\<csv&#124;xml>
+     Cada vista de informe se guarda en un archivo independiente denominado \<prefix>_\<report view name>.\<csv&#124;xml>
 
 ## <a name="see-also"></a>Vea también
 - [Explorador de rendimiento](../profiling/performance-explorer.md)

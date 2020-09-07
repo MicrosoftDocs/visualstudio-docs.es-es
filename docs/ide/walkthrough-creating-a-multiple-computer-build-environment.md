@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461537"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Tutorial: Creación de un entorno de compilación para varios equipos
@@ -102,9 +102,9 @@ Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del s
 
     - %ProgramFiles%\Common Files\Merge Modules\
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\VC\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\ProjectComponents\
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
@@ -114,23 +114,23 @@ Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del s
 
 3. Copie estos archivos del equipo host al equipo de compilación:
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msobj110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdb110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdbcore.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdbsrv.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\makehm.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. Las siguientes bibliotecas en tiempo de ejecución de Visual C++ solo se requieren si ejecuta resultados de la compilación en el equipo de compilación, por ejemplo, como parte de pruebas automatizadas. Los archivos suelen encontrarse en subcarpetas de la carpeta *%ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\VC\redist\x86* o *%ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\VC\redist\x64*, según la arquitectura del sistema. En los sistemas x86, copie los archivos binarios x86 a la carpeta *Windows\System32*. En los sistemas x64, copie los archivos binarios x86 a la carpeta *Windows\SysWOW64* y los archivos binarios x64 a la carpeta *Windows\System32*.
+4. Las siguientes bibliotecas en tiempo de ejecución de Visual C++ solo se requieren si ejecuta resultados de la compilación en el equipo de compilación, por ejemplo, como parte de pruebas automatizadas. Los archivos suelen encontrarse en subcarpetas bajo la carpeta *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* or *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64*, según la arquitectura del sistema. En los sistemas x86, copie los archivos binarios x86 a la carpeta *Windows\System32*. En los sistemas x64, copie los archivos binarios x86 a la carpeta *Windows\SysWOW64* y los archivos binarios x64 a la carpeta *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -255,7 +255,7 @@ Para utilizar MSBuild en el equipo de compilación, debe establecer las variable
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Utilizar vcvarsall.bat con el fin de establecer variables de entorno
 
-Abra una ventana de **símbolo del sistema** en el equipo de compilación y ejecute *%Program Files%\Microsoft Visual Studio\\\<versión>\\\<edición>\VC\vcvarsall.bat*. Puede usar un argumento de línea de comandos para especificar el conjunto de herramientas que desea usar: x86, x64 nativo o compilador cruzado de x64. Si no especifica ningún argumento de la línea de comandos, se utiliza el conjunto de herramientas de x86.
+Abra una ventana de **símbolo del sistema** en el equipo de compilación y ejecute *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat*. Puede usar un argumento de línea de comandos para especificar el conjunto de herramientas que desea usar: x86, x64 nativo o compilador cruzado de x64. Si no especifica ningún argumento de la línea de comandos, se utiliza el conjunto de herramientas de x86.
 
 En esta tabla se describen los argumentos admitidos para *vcvarsall.bat*:
 
@@ -271,7 +271,7 @@ Si *vcvarsall.bat* se ejecuta correctamente (es decir, no se muestra ningún men
 
 1. Para configurar manualmente el entorno de la línea de comandos, agregue esta ruta de acceso a la variable de entorno PATH:
 
-    - %Program Files%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\IDE
+    - %Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE
 
 2. Opcionalmente, también puede agregar las rutas de acceso siguientes a la variable PATH para que sea más fácil usar MSBuild para compilar las soluciones.
 
@@ -295,9 +295,9 @@ MSBuild requiere la instalación de algunos ensamblados adicionales en la GAC de
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versión>\\\<edición>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
 2. Para instalar los ensamblados en la GAC, busque *gacutil.exe* en el equipo de compilación; normalmente está en %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Si no encuentra esta carpeta, repita los pasos de la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) de este tutorial.
 

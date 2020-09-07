@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461393"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Cuadro de diálogo Opciones: Proyectos y soluciones \> Compilar y ejecutar
@@ -58,7 +58,7 @@ Determina la cantidad de información del proceso de compilación que se muestra
 
 *Solo se aplica a proyectos de C++* .
 
-Determina la cantidad de información que se escribe en el archivo de registro de compilación, que se encuentra en *\\\<NombreProyecto>\Debug\\\<NombreProyecto>.log*.
+Determina cuánta información se escribe en el archivo de registro de compilación, que se encuentra en *\\\<ProjectName>\Debug\\\<ProjectName>.log*.
 
 ## <a name="see-also"></a>Vea también
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849346"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depuración de errores de representación debidos al sombreado
@@ -31,7 +31,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
 
  En este escenario, se ha agregado recientemente un objeto a la aplicación. También se han agregado un nuevo vértice y sombreadores de píxeles para transformar el objeto y darle una apariencia única. Cuando se ejecuta la aplicación durante una prueba, el objeto se representa en negro sólido. Con el Diagnóstico de gráficos puede capturar el problema en un registro de gráficos para poder depurar la aplicación. El problema tiene el aspecto de esta imagen en la aplicación:
 
- ![El objeto se representa con colores incorrectos.](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
+ ![El objeto se presenta con colores incorrectos.](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
 
 ## <a name="investigation"></a>Investigación
  Mediante las herramientas de Diagnóstico de gráficos, puede cargar el documento del registro de gráficos para inspeccionar los fotogramas que se capturaron durante la prueba.
@@ -42,7 +42,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
 
 2. En la **Lista de fotogramas**, seleccione un fotograma en el que el objeto no tenga el aspecto correcto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la ventana de documento de registro de gráficos tiene el aspecto de esta imagen:
 
-    ![Documento de registro de gráficos en Visual Studio.](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
+    ![Documento de registro de gráficos en Visual Studio.](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
 
    Después de seleccionar un fotograma que muestre el problema, puede usar la ventana **Historial de píxeles de gráfico** para diagnosticarlo. La ventana **Historial de píxeles de gráfico** muestra las primitivas que podrían haber tenido efecto en un píxel concreto, sus sombreadores y los efectos que tuvo en el destino de representación, en orden cronológico.
 
@@ -52,7 +52,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
 
 2. Seleccione un píxel que quiera examinar. En la ventana de documento de registro de gráficos, seleccione uno de los píxeles en el objeto que se colorea incorrectamente:
 
-    ![Al seleccionar un píxel, se muestra información sobre su historial.](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")
+    ![Al seleccionar un píxel se muestra información sobre su historial.](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")
 
     La ventana **Historial de píxeles de gráfico** se actualiza para reflejar el píxel seleccionado. En este escenario, la ventana **Historial de píxeles de gráfico** tiene el aspecto siguiente:
 
@@ -104,4 +104,4 @@ output.color = input.color;
 
  Después de corregir el código, vuelva a compilarlo y ejecute de nuevo la aplicación para comprobar que se ha resuelto el problema de representación.
 
- ![El objeto se representa con colores incorrectos.](media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")
+ ![El objeto se presenta con los colores correctos.](media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")

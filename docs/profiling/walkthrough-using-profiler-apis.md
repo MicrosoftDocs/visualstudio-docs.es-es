@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779888"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
@@ -152,9 +152,9 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv /traceon**
 
-3. Escriba el comando siguiente: **VSInstr \<nombreDeArchivo>.exe**
+3. Escriba el comando siguiente: **VSInstr \<filename>.exe**
 
-4. Escriba el comando siguiente: **VSPerfCmd /start:trace /output:\<nombreDeArchivo>.vsp**
+4. Escriba el comando siguiente: **VSPerfCmd /start:trace /output:\<filename>.vsp**
 
 5. Escriba el comando siguiente: **VSPerfCmd /globaloff**
 
@@ -162,7 +162,7 @@ DataCollection.CurrentId);
 
 7. Escriba el comando siguiente: **VSPerfCmd /shutdown**
 
-8. Escriba el comando siguiente: **VSPerfReport /calltrace:\<nombreDeArchivo>.vsp**
+8. Escriba el comando siguiente: **VSPerfReport /calltrace:\<filename>.vsp**
 
      Se crea un archivo .*csv* en el directorio actual con los datos de rendimiento resultantes.
 

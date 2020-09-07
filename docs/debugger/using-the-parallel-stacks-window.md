@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62902426"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Visualización de subprocesos y tareas en la ventana Pilas paralelas (C#, Visual Basic, C++)
@@ -44,15 +44,15 @@ Para abrir la ventana **Pilas paralelas**, debe estar en una sesión de depuraci
 
 La ventana **Pilas paralelas** tiene los siguientes controles de barra de herramientas:
 
-![Barra de herramientas de la ventana Pilas paralelas](../debugger/media/parallel_stackstoolbar.png "Barra de herramientas de Pilas paralelas")
+![Barra de herramientas en la ventana Pilas paralelas](../debugger/media/parallel_stackstoolbar.png "Barra de herramientas de pilas paralelas")
 
 |Iconos|Control|Descripción|
 |-|-|-|
-|![Cuadro combinado de subprocesos/tareas](media/parallel_toolbar1.png "Threads/Tasks combo box")|Cuadro combinado **Subprocesos**/**Tareas**|Intercambia la vista entre las pilas de llamadas de subprocesos y las pilas de llamadas de tareas. Para obtener más información, vea [Vista de tareas](#tasks-view) y [Vista de subprocesos](#threads-view).|
-|![Icono Mostrar marcadas únicamente](media/parallel_toolbar2.png "Show Only Flagged icon")|Mostrar marcadas únicamente|Solo muestra las pilas de llamadas de los subprocesos que están marcados en otras ventanas de depuración, por ejemplo, las ventanas **Subprocesos de GPU** e **Inspección paralela**.|
-|![Icono Alternar vista de método](media/parallel_toolbar3.png "Toggle Method View icon")|Alternar **vista de método**|Cambia entre las vistas de pila de llamadas y la **vista de método**. Para obtener más información, vea [Vista de método](#method-view).|
-|![Icono Desplazar automáticamente al marco de pila actual](media/parallel_toolbar4.png "Auto Scroll to Current icon")|Desplazar automáticamente al marco de pila actual|Desplaza automáticamente el gráfico para que el marco de pila actual esté a la vista. Esta característica es útil cuando se cambia el marco de pila actual desde otras ventanas o cuando se alcanza un nuevo punto de interrupción en gráficos grandes.|
-|![Icono Alternar control de zoom](media/parallel_toolbar5.png "Toggle Zoom icon")|Alternar control Zoom|Muestra u oculta el control de zoom situado a la izquierda de la ventana. <br /><br />Con independencia de la visibilidad del control de zoom, para hacer zoom también puede presionar **Ctrl** y girar la rueda del mouse o presionar **Ctrl**+**Mayús**+ **+** para acercar y **Ctrl**+**Mayús**+ **-** para alejar. |
+|![Cuadro combinado de subprocesos/tareas](media/parallel_toolbar1.png "Cuadro combinado de subprocesos/tareas")|Cuadro combinado **Subprocesos**/**Tareas**|Intercambia la vista entre las pilas de llamadas de subprocesos y las pilas de llamadas de tareas. Para obtener más información, vea [Vista de tareas](#tasks-view) y [Vista de subprocesos](#threads-view).|
+|![Icono de Mostrar marcadas únicamente](media/parallel_toolbar2.png "Icono Mostrar marcadas únicamente")|Mostrar marcadas únicamente|Solo muestra las pilas de llamadas de los subprocesos que están marcados en otras ventanas de depuración, por ejemplo, las ventanas **Subprocesos de GPU** e **Inspección paralela**.|
+|![Icono de Alternar vista de método](media/parallel_toolbar3.png "Icono Alternar vista de método")|Alternar **vista de método**|Cambia entre las vistas de pila de llamadas y la **vista de método**. Para obtener más información, vea [Vista de método](#method-view).|
+|![Icono Desplazar automáticamente al marco de pila actual](media/parallel_toolbar4.png "Icono Desplazar automáticamente al marco de pila actual")|Desplazar automáticamente al marco de pila actual|Desplaza automáticamente el gráfico para que el marco de pila actual esté a la vista. Esta característica es útil cuando se cambia el marco de pila actual desde otras ventanas o cuando se alcanza un nuevo punto de interrupción en gráficos grandes.|
+|![Icono Alternar control zoom](media/parallel_toolbar5.png "Icono Alternar control zoom")|Alternar control Zoom|Muestra u oculta el control de zoom situado a la izquierda de la ventana. <br /><br />Con independencia de la visibilidad del control de zoom, para hacer zoom también puede presionar **Ctrl** y girar la rueda del mouse o presionar **Ctrl**+**Mayús**+ **+** para acercar y **Ctrl**+**Mayús**+ **-** para alejar. |
 
 ### <a name="stack-frame-icons"></a>Iconos de marco de pila
 Los iconos siguientes proporcionan información sobre los marcos de pila activos y actuales en todas las vistas:
@@ -66,7 +66,7 @@ Los iconos siguientes proporcionan información sobre los marcos de pila activos
 ### <a name="context-menu-items"></a>Elementos del menú contextual
 Los siguientes elementos de menú contextual están disponibles cuando se hace clic con el botón secundario en un método en la vista **Subprocesos** o en la vista **Tareas**. Los últimos seis elementos son los mismos que en la [ventana Pila de llamadas](how-to-use-the-call-stack-window.md).
 
-![Menú contextual de la ventana Pilas paralelas](../debugger/media/parallel_contmenu.png "Shortcut menu in Parallel Stacks window")
+![Menú contextual en la ventana Pilas paralelas](../debugger/media/parallel_contmenu.png "Menú contextual en la ventana Pilas paralelas")
 
 |Elemento de menú|Descripción|
 |-|-|
@@ -94,7 +94,7 @@ Cuando el gráfico de vista **Subprocesos** es tan grande que no cabe en la vent
 
 En la ilustración siguiente se muestra un subproceso que pasa por una transición de código principal, administrado y nativo. Hay seis subprocesos en el método actual. Uno sigue hasta Thread.Sleep y otro continúa hacia Console.WriteLine y luego hacia SyncTextWriter.WriteLine.
 
- ![Vista Subprocesos en la ventana Pilas paralelas](../debugger/media/parallel_stack1.png "Threads view in Parallel Stacks window")
+ ![Vista Subprocesos en la ventana Pilas paralelas](../debugger/media/parallel_stack1.png "Vista Subprocesos en la ventana Pilas paralelas")
 
 En la tabla siguiente se describen las características principales de la vista **Subprocesos**:
 
@@ -120,18 +120,18 @@ Para ver una pila de llamadas completa, vuelva a la vista **Subprocesos**; para 
 
 En la ilustración siguiente se muestra la vista **Subprocesos** en la parte superior y la vista **Tareas** correspondiente en la parte inferior.
 
-![Vistas Subprocesos y Tareas](../debugger/media/parallel_threads-tasks.png "Threads and Tasks views")
+![Vistas de subprocesos y tareas](../debugger/media/parallel_threads-tasks.png "Vistas de subprocesos y tareas")
 
 Mantenga el mouse sobre un método para mostrar información sobre herramientas con información adicional. En la vista **Tareas**, en la información sobre herramientas, se muestran todas las tareas de una tabla, de forma similar a la ventana **Tareas**.
 
 En la imagen siguiente se muestra la información sobre herramientas de un método en la vista **Subprocesos** en la parte superior y de la vista **Tareas** correspondiente en la parte inferior.
 
-![Información sobre herramientas de Subprocesos y Tareas](../debugger/media/parallel_threads-tasks-tooltips.png "Threads and Tasks tooltips")
+![Información sobre herramientas de subprocesos y tareas](../debugger/media/parallel_threads-tasks-tooltips.png "Información sobre herramientas de subprocesos y tareas")
 
 ## <a name="method-view"></a>Vista de método
 Desde la vista **Subprocesos** o la vista **Tareas**, puede dinamizar el gráfico del método actual seleccionando el icono **Alternar vista de método**. La **vista de método** muestra de una ojeada todos los métodos de todos los subprocesos que llaman o a los que llama el método actual. En la ilustración siguiente se muestra cómo aparece la misma información en la vista **Subprocesos** a la izquierda y en la **Vista de método** a la derecha.
 
-![Vista Subprocesos y Vista de métodos](../debugger/media/parallel_methodview.png "Threads view and Method View")
+![Vista de subprocesos y vista de método](../debugger/media/parallel_methodview.png "Vista de subprocesos y vista de método")
 
 Si cambia a un nuevo marco de pila, lo convierte en el método actual y en **Vista de método** se muestra todos los llamadores y destinatarios del nuevo método. Esto puede hacer que algunos subprocesos aparezcan o desaparezcan de la vista, dependiendo de si ese método aparece en sus pilas de llamadas. Para volver a la vista Pila de llamadas, vuelva a seleccionar el icono **Vista de método** de la barra de herramientas.
 

@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62896625"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ en el depurador de Visual Studio
@@ -90,15 +90,15 @@ En las siguientes tablas se describen los especificadores de formato que se pued
 |**s32**|Cadena UTF-32 (con comillas)|\<location> U"hello world"|u"hola a todos"|
 |**s32b**|cadena UTF-32 (sin comillas)|\<location> U"hello world"|hola a todos|
 |**en**|enum|Sábado(6)|Sábado|
-|**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<ubicación>{\<primer miembro>}|\<location>{\<first member>, \<second member>, ...}|
-|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<ubicación> {member=value...}|{member=value…}|
+|**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<location>, {member=value...}|{member=value…}|
 |**nd**|Muestra solo la información de la clase, omitiendo las clases derivadas|`(Shape*) square` incluye la información de clase base y derivada|Muestra únicamente la información de clase base|
 |hr|HRESULT o código de error Win32. Este especificador ya no es necesario para los valores HRESULT dado que el depurador los descodifica automáticamente.|S_OK|S_OK|
 |wc|Marcador de clase de ventana|0x0010|WC_DEFAULTCHAR|
 |wm|Números de mensajes de Windows|16|WM_CLOSE|
 |nr|Suprimir el elemento "Vista sin formato"|
 |nvo|Mostrar el elemento "Vista sin formato" solo para valores numéricos|
-|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<representación personalizada>|4|
+|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<customized representation>|4|
 
 ::: moniker-end
 
@@ -122,13 +122,13 @@ En las siguientes tablas se describen los especificadores de formato que se pued
 |**s32**|Cadena UTF-32 (con comillas)|\<location> U"hello world"|u"hola a todos"|
 |**s32b**|cadena UTF-32 (sin comillas)|\<location> U"hello world"|hola a todos|
 |**en**|enum|Sábado(6)|Sábado|
-|**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<ubicación>{\<primer miembro>}|\<location>{\<first member>, \<second member>, ...}|
-|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<ubicación> {member=value...}|{member=value…}|
+|**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<location>, {member=value...}|{member=value…}|
 |**nd**|Muestra solo la información de la clase, omitiendo las clases derivadas|`(Shape*) square` incluye la información de clase base y derivada|Muestra únicamente la información de clase base|
 |hr|HRESULT o código de error Win32. Este especificador ya no es necesario para los valores HRESULT dado que el depurador los descodifica automáticamente.|S_OK|S_OK|
 |wc|Marcador de clase de ventana|0x0010|WC_DEFAULTCHAR|
 |wm|Números de mensajes de Windows|16|WM_CLOSE|
-|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<representación personalizada>|4|
+|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<customized representation>|4|
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ Los especificadores en **negrita** solo son compatibles con la depuración nativ
 |hr|HRESULT o código de error Win32.<br/>Este especificador ya no es necesario para los valores HRESULT dado que el depurador los descodifica automáticamente.|S_OK|S_OK|
 |wc|Marcador de clase de ventana|0x00000040,|WC_DEFAULTCHAR|
 |wm|Números de mensajes de Windows|0x0010|WM_CLOSE|
-|!|sin formato, omite cualquier personalización de vistas de tipos de datos|\<representación personalizada>|4|
+|!|sin formato, omite cualquier personalización de vistas de tipos de datos|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para ubicaciones de memoria en la depuración de interoperabilidad con C++/CLI
 En la siguiente tabla se describen los símbolos de formato que se utilizan en las ubicaciones de memoria. Puede utilizar un especificador de ubicación de memoria con cualquier valor o expresión que se evalúe como una ubicación.

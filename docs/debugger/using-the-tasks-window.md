@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901618"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Uso de la ventana Tareas (C#, Visual Basic, C++)
@@ -65,7 +65,7 @@ Las columnas de la ventana **Tareas** muestran la siguiente información.
 
  Puede agregar columnas a la vista haciendo clic con el botón secundario en un encabezado de columna y seleccionando las columnas que desea. (Quite columnas borrando las selecciones). También puede reordenar las columnas arrastrándolas a izquierda o derecha. El menú contextual de la columna se muestra en la siguiente ilustración.
 
- ![Menú de vista de acceso directo en la ventana Tareas](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
+ ![Menú de vista contextual en la ventana Tareas](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>Ordenar Tareas
  Para ordenar las tareas por columnas, haga clic en el encabezado de columna. Por ejemplo, si hace clic en el encabezado de columna **Id.** , puede ordenar las tareas por el identificador de tarea: 1,2,3,4,5 y así sucesivamente. Para invertir el criterio de ordenación, haga clic en el encabezado de columna de nuevo. Una flecha en la columna indica el criterio y la columna de ordenación.
@@ -86,7 +86,7 @@ Las columnas de la ventana **Tareas** muestran la siguiente información.
 
  En la siguiente ilustración se muestran el resto de elementos de menú para cada tarea.
 
- ![Menú de subprocesos de acceso directo de la ventana Tareas](../debugger/media/parallel_tasks_contextmenu2.png "Parallel_Tasks_ContextMenu2")
+ ![Menú de subproceso contextual en la ventana Tareas](../debugger/media/parallel_tasks_contextmenu2.png "Parallel_Tasks_ContextMenu2")
 
 ## <a name="switching-the-active-task-or-frame"></a>Cambio de la tarea o el marco activos
 

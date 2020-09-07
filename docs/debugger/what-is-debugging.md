@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901242"
 ---
 # <a name="what-is-debugging"></a>¿Qué es la depuración?
@@ -30,7 +30,7 @@ Un depurador es una herramienta de desarrollo muy especializada que se asocia a 
 
 ## <a name="debug-mode-vs-running-your-app"></a>Modo de depuración frente a ejecución de la aplicación
 
-Al ejecutar la aplicación en Visual Studio por primera vez, puede iniciarla presionando el botón de flecha verde ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Start Debugging") en la barra de herramientas (o **F5**). De forma predeterminada, el valor **Depurar** aparece en la lista desplegable de la izquierda. Si no está familiarizado con Visual Studio, puede que parezca que la depuración de la aplicación tiene algo que ver con su ejecución, lo cual, aunque es cierto, estas son dos tareas básicamente muy diferentes.
+Al ejecutar la aplicación en Visual Studio por primera vez, puede iniciarla presionando el botón de flecha verde ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración") en la barra de herramientas (o **F5**). De forma predeterminada, el valor **Depurar** aparece en la lista desplegable de la izquierda. Si no está familiarizado con Visual Studio, puede que parezca que la depuración de la aplicación tiene algo que ver con su ejecución, lo cual, aunque es cierto, estas son dos tareas básicamente muy diferentes.
 
 ![Selección de una compilación de depuración](../debugger/media/what-is-debugging-debug-build.png)
 

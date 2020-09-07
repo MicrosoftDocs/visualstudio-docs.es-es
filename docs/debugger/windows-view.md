@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900869"
 ---
 # <a name="windows-view"></a>Vista Ventanas
@@ -24,7 +24,7 @@ La primera vez que abre Spy++, la vista Ventanas muestra un árbol de todas las 
 
  En la siguiente ilustración se muestra una vista Ventanas típica de Spy++ con el nodo superior expandido.
 
- ![Vista de ventanas de Spy&#43;&#43;](../debugger/media/spy--_windowsview.png "Spy++_WindowsView") Vista de ventanas de Spy++
+ ![Vista de ventanas de Spy&#43;&#43; ](../debugger/media/spy--_windowsview.png "Spy++_WindowsView") Vista de ventanas de Spy++
 
  La ventana del escritorio actual se encuentra en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventanas estándar, con ventanas del mismo nivel ordenadas por orden Z. Para expandir o contraer cualquier nodo primario del árbol, haga clic en el símbolo + o - situado junto al nodo.
 

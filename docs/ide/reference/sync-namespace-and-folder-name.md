@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67160761"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Sincronización de espacio de nombres y nombre de carpeta
@@ -32,7 +32,7 @@ Esta refactorización se aplica a lo siguiente:
 
 1. Coloque el cursor en el nombre del espacio de nombres.
 2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
-3. Seleccione **Change namespace to \<folder name>** (Cambiar el espacio de nombres por <nombre de carpeta>).
+3. Seleccione **Cambiar el espacio de nombres a \<folder name>** .
 
    ![Sincronización de espacio de nombres y nombre de carpeta](media/sync-namespace-and-folder-name.png)
 

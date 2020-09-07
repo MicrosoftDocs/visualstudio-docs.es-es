@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779555"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
@@ -126,7 +126,7 @@ Mediante la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     donde *\<Visual Studio Performance Tools Directory>* es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio. Para obtener la ruta de acceso a las herramientas de rendimiento, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+     donde *\<Visual Studio Performance Tools Directory>* es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio. Para obtener la ruta de acceso a las herramientas de rendimiento, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Vea también
 

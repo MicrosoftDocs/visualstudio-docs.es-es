@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929941"
 ---
 # <a name="threads-view"></a>Vista de subprocesos
@@ -28,7 +28,7 @@ La vista Subprocesos es una lista plana de todos los subprocesos asociados a Win
 
 1. En el menú **Spy**, seleccione **Subprocesos**.
 
-   ![Vista Subprocesos de Spy++](../debugger/media/spy--_threads.png "Spy++_Threads") Vista Subprocesos de Spy++
+   ![Vista de subprocesos de Spy&#43; &#43;](../debugger/media/spy--_threads.png "Spy++_Threads") Vista de subprocesos de Spy++
 
    En la ilustración anterior se muestra la vista Subprocesos.
 

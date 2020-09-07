@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188225"
 ---
 # <a name="edit-and-continue-error-message"></a>Editar y continuar (Mensaje de error)
@@ -40,7 +40,7 @@ Las posibles razones de este mensaje de error incluyen:
 - Intentar editar código mientras se depura un volcado de Dr. Watson.
 - Intentar editar código después de una excepción no controlada y con la opción **Desenredar la pila de llamadas de las excepciones no controladas** sin seleccionar.
 - Intentar editar código mientras se depura una aplicación insertada en tiempo de ejecución.
-- Intentar editar código administrado con una versión de .NET Framework anterior a la 4.5.1 con un destino de aplicación de 64 bits. Para usar Editar y continuar para .NET Framework anterior a 4.5.1, establezca el destino en **x86** en la pestaña **\<Nombre de proyecto>**  > **Propiedades** > **Compilar** , **Configuración avanzada del compilador**.
+- Intentar editar código administrado con una versión de .NET Framework anterior a la 4.5.1 con un destino de aplicación de 64 bits. Para usar Editar y continuar para .NET Framework anterior a 4.5.1, establezca el destino en **x86** en la pestaña **\<ProjectName>**  > **Propiedades** > **Compilar**, **Configuración avanzada del compilador**.
 - Intentar editar código en un ensamblado que se ha modificado durante la depuración y se ha vuelto a cargar.
 - Intentar editar código en un ensamblado que no se ha cargado.
 - Iniciar la depuración de una versión antigua de una aplicación, ya que la más reciente tiene errores de compilación.

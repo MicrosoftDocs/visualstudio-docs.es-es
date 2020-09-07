@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154892"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5. Usar la plantilla de proyecto web de Flask de sondeos
@@ -242,7 +242,7 @@ La mayoría de las vistas generadas por las plantillas "Proyecto web de Flask de
 
 Lo que queda es examinar los votos (detalles) y la vista de resultados de un sondeo concreto.
 
-Al seleccionar un sondeo de la página principal, la aplicación va a la dirección URL /poll/\<clave\>, donde *clave* es el identificador único de un sondeo. En *views.py*, puede ver que se asigna la función `details` para controlar ese enrutamiento de dirección URL para GET y las solicitudes. También puede observar que, al usar `<key>` en el enrutamiento de dirección URL, se asigna cualquier ruta que tenga ese formato a la misma función y se genera un argumento a la función con ese mismo nombre:
+Al seleccionar un sondeo de la página principal, la aplicación va a la dirección URL /poll/\<key\>, donde *key* es el identificador único de un sondeo. En *views.py*, puede ver que se asigna la función `details` para controlar ese enrutamiento de dirección URL para GET y las solicitudes. También puede observar que, al usar `<key>` en el enrutamiento de dirección URL, se asigna cualquier ruta que tenga ese formato a la misma función y se genera un argumento a la función con ese mismo nombre:
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -296,7 +296,7 @@ Para mostrar un sondeo (solicitudes GET), esta función simplemente llama a *tem
 {% endblock %}
 ```
 
-Dado que el botón **Votar** tiene `type="submit"`, al hacer clic en él se genera una solicitud POST que vuelve a la misma dirección URL que se enruta una vez más a la función `details`. Pero esta vez extrae la opción de los datos del formulario y se redirige a /results/\<opción\>.
+Dado que el botón **Votar** tiene `type="submit"`, al hacer clic en él se genera una solicitud POST que vuelve a la misma dirección URL que se enruta una vez más a la función `details`. Pero esta vez extrae la opción de los datos del formulario y se redirige a /results/\<choice\>.
 
 La dirección URL results/\<key\> se enruta a la función `results` de *views.py*, que luego llama al método `calculate_stats` del sondeo y emplea *templates\results.html* para la representación:
 

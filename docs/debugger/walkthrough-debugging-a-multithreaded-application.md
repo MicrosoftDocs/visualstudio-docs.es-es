@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821589"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visualización de subprocesos en el depurador de Visual Studio mediante la ventana Subprocesos (C#, Visual Basic, C++)
@@ -46,7 +46,7 @@ Desde la ventana **Subprocesos**, puede examinar y trabajar con los subprocesos 
 
 - **Categoría**: muestra la categoría de los subprocesos como subprocesos de interfaz de usuario, controladores de llamadas a procedimientos remotos o subprocesos de trabajo. Una categoría especial identifica el subproceso principal de la aplicación.
 
-- **Name**: identifica cada subproceso por nombre, si lo tiene, o como \<Sin nombre>.
+- **Name**: identifica cada subproceso por nombre, si lo tiene, o como \<No Name>.
 
 - **Ubicación**: muestra dónde se ejecuta el subproceso. Puede expandir esta ubicación para mostrar la pila de llamadas completa del subproceso.
 

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911323"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso de datos de IntelliTrace guardados (C#, Visual Basic, C++)
@@ -222,7 +222,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |**Columna**|**Muestra**|
 |----------------|-------------------|
 |**ID**|El número de identificador del subproceso|
-|**Name**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|
+|**Name**|El nombre del subproceso. Los subprocesos sin nombre se muestran como "\<No Name>".|
 |**Hora de inicio**|La hora en que se creó el subproceso|
 |**Hora de finalización**|La hora en que se completó el subproceso|
 

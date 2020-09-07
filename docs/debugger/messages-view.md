@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62845862"
 ---
 # <a name="messages-view"></a>Vista Mensajes
@@ -24,7 +24,7 @@ Cada ventana tiene una secuencia de mensajes asociada. La ventana de vista Mensa
 
  Aquí se muestra una ventana de vista Mensajes típica. Fíjese en que la primera columna contiene el identificador de ventana y la segunda contiene un código de mensaje (que se explica en [Códigos de mensaje](../debugger/message-codes.md)). Los parámetros de mensaje descodificados y los valores devueltos están a la derecha.
 
- ![Vista Mensajes de Spy&#43;&#43;](../debugger/media/spy--_messagesview.png "Spy++_MessagesView")Vista Mensajes de Spy++
+ ![Vista de mensajes de Spy&#43;&#43](../debugger/media/spy--_messagesview.png "Spy++_MessagesView") Vista de mensajes de Spy++
 
 ## <a name="procedures"></a>Procedimientos
 

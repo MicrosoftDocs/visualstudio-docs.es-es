@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745776"
 ---
 # <a name="assertions-in-managed-code"></a>Aserciones en el código administrado
@@ -154,7 +154,7 @@ Debug.Assert ( temp != 0 );
 
   Si necesita utilizar los métodos Debug en una versión de lanzamiento de C# o Visual Basic, debe definir el símbolo DEBUG en la configuración de lanzamiento.
 
-  C++ no admite los métodos de la clase <xref:System.Diagnostics.Debug>. Se puede conseguir el mismo efecto mediante la clase <xref:System.Diagnostics.Trace> con compilación condicional, por ejemplo `#ifdef DEBUG`...`#endif`. Estos símbolos se pueden definir en el cuadro de diálogo **\<Proyecto > Páginas de propiedades**. Para más información, vea [Cambiar la configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) o [Cambiar la configuración del proyecto para una configuración de depuración de C o C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+  C++ no admite los métodos de la clase <xref:System.Diagnostics.Debug>. Se puede conseguir el mismo efecto mediante la clase <xref:System.Diagnostics.Trace> con compilación condicional, por ejemplo `#ifdef DEBUG`...`#endif`. Estos símbolos se pueden definir en el cuadro de diálogo **\<Project> Páginas de propiedades**. Para más información, vea [Cambiar la configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) o [Cambiar la configuración del proyecto para una configuración de depuración de C o C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ## <a name="assert-arguments"></a><a name="BKMK_Assert_arguments"></a> Argumentos de Assert
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> y <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> pueden utilizar hasta tres argumentos. El primer argumento, de uso obligatorio, es la condición que se desea comprobar. Si llama a <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> con un único argumento, el método `Assert` comprueba la condición y, si el resultado es false, envía el contenido de la pila de llamadas a la **Ventana de salida**. En el ejemplo siguiente se muestran <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> y <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>.

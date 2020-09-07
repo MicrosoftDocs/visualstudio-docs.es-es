@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66262862"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Tutorial: Uso de Diagnóstico de gráficos para depurar un sombreador de cálculo
@@ -42,7 +42,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
 
 2. En la **Lista de fotogramas**, seleccione un fotograma que muestre el comportamiento incorrecto de la simulación. Aunque parezca que el error se encuentra en el código de simulación y no en el de representación, tendrá que elegir un fotograma, ya que los eventos de DirectCompute se capturan por fotogramas junto con los eventos de Direct3D. En este escenario, la pestaña de registro de gráficos tiene el aspecto siguiente:
 
-    ![Documento de registro de gráficos en Visual Studio.](media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")
+    ![Documento de registro de gráficos en Visual Studio.](media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")
 
    Después de seleccionar un fotograma en el que se muestre el problema, puede usar la **Lista de eventos gráficos** para diagnosticarlo. La **Lista de eventos gráficos** contiene un evento para las llamadas de DirectCompute y las llamadas API de Direct3D que se realizaron durante el fotograma activo; por ejemplo, llamadas API para ejecutar un cálculo en la GPU o para representar el conjunto de datos o la interfaz de usuario. En este caso, nos interesan los eventos `Dispatch` que representan elementos de la simulación que se ejecutan en la GPU.
 
@@ -52,17 +52,17 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
 
 2. Inspeccione la **Lista de eventos gráficos** y busque el evento de dibujo (Draw) que representa el conjunto de datos. Para facilitar esta tarea, escriba `Draw` en el cuadro **Búsqueda** de la esquina superior derecha de la ventana **Lista de eventos gráficos**. Con esto se filtra la lista para que solo incluya los eventos que tienen la palabra “Draw” en sus títulos. En este escenario, verá que se produjeron los siguientes eventos de dibujo:
 
-    ![Eventos de dibujo mostrados en la lista de eventos.](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")
+    ![La lista de eventos muestra eventos Draw.](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")
 
 3. Desplácese por cada evento de dibujo mientras observa el destino de representación en la pestaña del documento de registro de gráficos.
 
 4. Deténgase cuando el destino de representación muestre por primera vez el conjunto de datos representado. En este escenario, el conjunto de datos se representa en el primer evento de dibujo. Se muestra el error de la simulación:
 
-    ![Este evento de dibujo representa el conjunto de datos de simulación.](media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")
+    ![Este evento Draw presenta el conjunto de datos de simulación.](media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")
 
 5. Ahora inspeccione la **Lista de eventos gráficos** y busque el evento `Dispatch` que actualiza la simulación. Dado que es probable que la simulación se actualice antes de representarse, puede concentrarse primero en los eventos `Dispatch` que ocurren antes del evento de dibujo que representa los resultados. Para facilitar esta tarea, modifique el cuadro **Búsqueda** para que muestre `Draw;Dispatch;CSSetShader(`. De este modo, la lista se filtra para que también contenga los eventos `Dispatch` y `CSSetShader`, además de los eventos de dibujo. En este escenario, verá que se produjeron varios eventos `Dispatch` antes que el evento de dibujo:
 
-    ![Eventos draw, Dispatch y CSSetShader mostrados en la lista de eventos](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")
+    ![La lista de eventos muestra eventos Draw, Dispatch y CSSetShader](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")
 
    Ahora que ya sabe cuáles son los eventos `Dispatch` que podrían corresponderse con el problema, puede examinarlos con más detalle.
 
@@ -98,11 +98,11 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
 
 6. Examine el código fuente del sombreador de cálculo en el paso de cálculo de fuerza. En este caso, se determina que aquí está el origen del error.
 
-    ![Depuración del sombreador de cálculo ForceCS&#95;Simple.](media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")
+    ![Depuración del sombreador de cálculo ForceCS_Simple.](media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")
 
    Después de determinar la ubicación del error, puede detener la depuración y modificar el código fuente de sombreador de cálculo para calcular correctamente la distancia entre las partículas interactivas. En este escenario, simplemente se cambia la línea de `float2 diff = N_position + P_position;` a `float2 diff = N_position - P_position;`:
 
-   ![Código corregido del sombreador de cálculo.](media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")
+   ![Código del sombreador de cálculo corregido.](media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")
 
    En este escenario, dado que los sombreadores de cálculo se compilan en tiempo de ejecución, reinicie la aplicación después de realizar los cambios para observar cómo afectan a la simulación. No es necesario que vuelva a compilar la aplicación. Cuando ejecute la aplicación, verá que la simulación se comporta ahora correctamente.
 

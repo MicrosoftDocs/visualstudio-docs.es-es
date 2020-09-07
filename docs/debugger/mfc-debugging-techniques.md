@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731288"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
@@ -430,9 +430,9 @@ Compilar módulos seleccionados con las bibliotecas de depuración de MFC permit
 
 3. Primero, se creará la configuración para un nuevo proyecto.
 
-   1. En el cuadro de diálogo **\<Proyecto> Páginas de propiedades**, haga clic en el botón **Administrador de configuración**.
+   1. En el cuadro de diálogo **Páginas de propiedades de \<Project>** , haga clic en el botón **Administrador de configuración**.
 
-   2. En el [cuadro de diálogo Administrador de configuración](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>** .
+   2. En el [cuadro de diálogo Administrador de configuración](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<New...>** .
 
    3. En el [cuadro de diálogo Nueva configuración del proyecto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .
 
@@ -472,7 +472,7 @@ Compilar módulos seleccionados con las bibliotecas de depuración de MFC permit
 
    6. Haga clic en los valores de **Formato de la información de depuración** y seleccione la opción deseada (normalmente **/ZI**) para la información de depuración.
 
-   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++** , categoría **Encabezados precompilados**).
+   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **Propiedades de \<Project>** (carpeta **Propiedades de configuración**, subcarpeta **C/C++** , categoría **Encabezados precompilados**).
 
 7. En el menú **Compilar** , seleccione **Compilar** para recompilar los archivos del proyecto que no estén actualizados.
 
