@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65849a3d9ad1cdd073551f96e61997fe5f91118a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b57fb96bf06f5dcafd87e44522575126d7bac55
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444914"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509827"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca compatible con código para ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Para compilar este ejemplo, necesita lo siguiente:
 
 - [SDK de Visual Studio](../extensibility/visual-studio-sdk.md). También puede, al instalar Visual Studio, comprobar Herramientas de extensibilidad de Visual Studio en herramientas comunes para instalar el SDK al mismo tiempo. Si ya ha instalado Visual Studio, también puede instalar este SDK. para ello, vaya al archivo de menú principal **&#124; nuevo &#124;proyecto...**, elija C# en el panel de navegación izquierdo y, a continuación, elija extensibilidad. Cuando se elige la plantilla de proyecto de ruta de navegación "**instalar la herramientas de extensibilidad de Visual Studio**", se le pide que descargue e instale el SDK.
 
-- [SDK de .net Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). También puede instalar este SDK; para ello, vaya al archivo de menú principal **&#124; nuevo &#124; proyecto...**, elija **C#** en el panel de navegación izquierdo y, a continuación, elija **extensibilidad**. Cuando se elige la plantilla de proyecto de ruta de navegación "**descargar el SDK de .net Compiler Platform**", se le pide que descargue e instale el SDK. Este SDK incluye el [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Esta herramienta sumamente útil ayuda a averiguar qué tipos de modelo de código debe buscar en el analizador. La infraestructura del analizador llama al código para los tipos de modelo de código específicos, por lo que el código solo se ejecuta cuando es necesario y solo se puede centrar en el análisis del código relevante.
+- [SDK de .net Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). También puede instalar este SDK; para ello, vaya al archivo de menú principal **&#124; nuevo &#124; proyecto...**, elija **C#** en el panel de navegación izquierdo y, a continuación, elija **extensibilidad**. Cuando se elige la plantilla de proyecto de ruta de navegación "**descargar el SDK de .net Compiler Platform**", se le pide que descargue e instale el SDK. Este SDK incluye el [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Esta herramienta sumamente útil ayuda a averiguar qué tipos de modelo de código debe buscar en el analizador. La infraestructura del analizador llama al código para los tipos de modelo de código específicos, por lo que el código solo se ejecuta cuando es necesario y solo se puede centrar en el análisis del código relevante.
 
 ## <a name="whats-the-problem"></a>¿Cuál es el problema?
 Imagine que proporciona una biblioteca con compatibilidad con ImmutableArray (por ejemplo, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName> ). Los desarrolladores de C# tienen una gran experiencia con las matrices de .NET. Sin embargo, debido a la naturaleza de las técnicas de ImmutableArrays y optimización utilizadas en la implementación, C# Developer intuitions hace que los usuarios de la biblioteca escriban código roto, como se explica a continuación. Además, los usuarios no ven sus errores hasta el tiempo de ejecución, que no es la experiencia de calidad que se usan en Visual Studio con .NET.

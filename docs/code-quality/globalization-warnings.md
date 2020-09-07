@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd215a8b5c8dfb5905117638883d94d09268ce3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219691"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509853"
 ---
 # <a name="globalization-warnings"></a>Advertencias de globalización
 Las advertencias de globalización admiten aplicaciones y bibliotecas de uso internacional.
@@ -29,9 +29,6 @@ Las advertencias de globalización admiten aplicaciones y bibliotecas de uso int
 
 |Regla|Descripción|
 |----------|-----------------|
-|[CA1300: Especificar MessageBoxOptions](../code-quality/ca1300.md)|Para mostrar correctamente un cuadro de mensaje para las referencias culturales con escritura de derecha a izquierda, se deben pasar al método Show los miembros RightAlign y RtlReading de la enumeración MessageBoxOptions.|
-|[CA1301: Evitar los aceleradores duplicados](../code-quality/ca1301.md)|Una tecla de acceso, también denominada acelerador, permite el acceso mediante teclado a un control utilizando la tecla ALT. Cuando varios controles tienen claves de acceso duplicadas, el comportamiento de la tecla de acceso no está bien definido.|
-|[CA1302: No codificar las cadenas específicas de configuración regional](../code-quality/ca1302.md)|La enumeración System.Environment.SpecialFolder contiene miembros que hacen referencia a carpetas del sistema especiales. La ubicación de estas carpetas puede tener diferentes valores en sistemas operativos distintos, el usuario puede cambiar alguna de estas ubicaciones y además, están adaptadas. El método Environment. GetFolderPath devuelve las ubicaciones que están asociadas a la enumeración Environment. SpecialFolder, localizada y adecuada para el equipo que se está ejecutando actualmente.|
 |[CA1303: No pasar literales como parámetros localizados](../code-quality/ca1303.md)|Un método visible externamente pasa un literal de cadena como un parámetro a un constructor o método .NET, y esa cadena debe ser localizable.|
 |[CA1304: Especificar CultureInfo](../code-quality/ca1304.md)|Un método o constructor llama a un miembro que tiene una sobrecarga que acepta un parámetro System.Globalization.CultureInfo, y el método o constructor no llama a la sobrecarga que toma el parámetro CultureInfo. Si no se proporciona un objeto CultureInfo o System.IFormatProvider, el valor predeterminado proporcionado por el miembro sobrecargado podría no surtir el efecto deseado en todas las configuraciones regionales.|
 |[CA1305: Especificar IFormatProvider](../code-quality/ca1305.md)|Un método o constructor llama a uno o más miembros que tienen sobrecargas que aceptan un parámetro System.IFormatProvider, y el método o constructor no llama a la sobrecarga que toma el parámetro IFormatProvider. Si no se proporciona un objeto System.Globalization.CultureInfo o IFormatProvider, el valor predeterminado proporcionado por el miembro sobrecargado podría no surtir el efecto deseado en todas las configuraciones regionales.|
