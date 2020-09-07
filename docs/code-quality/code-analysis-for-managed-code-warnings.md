@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a72512eef8490f18f1179ae149b9a39c2ddaad4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89285715"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509021"
 ---
 # <a name="net-code-analysis-rules"></a>Reglas de análisis de código de .NET
 La herramienta de análisis de código administrado proporciona advertencias que indican las infracciones de las reglas de bibliotecas de código administrado. Las advertencias se organizan en áreas de reglas como diseño, localización, rendimiento y seguridad. Cada advertencia implica una infracción de una regla de análisis de código administrado. En esta sección se proporcionan información detallada y ejemplos de cada advertencia de análisis de código administrado.
@@ -44,18 +44,15 @@ La herramienta de análisis de código administrado proporciona advertencias que
 
 |Category|Descripción|
 |-|-|
-|[ADVERTENCIAS por CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Lista de advertencias por CheckId|
-|[Advertencias de criptografía](../code-quality/cryptography-warnings.md)|Advertencias compatibles con bibliotecas y aplicaciones más seguras mediante el uso correcto de criptografía.|
-|[Advertencias de diseño](../code-quality/design-warnings.md)|ADVERTENCIAS compatibles con el diseño correcto de la biblioteca como se especifica en las instrucciones de diseño de .NET.|
-|[Advertencias de documentación](../code-quality/documentation-warnings.md)|Advertencias que admiten el diseño de biblioteca bien documentado a través del uso correcto de los comentarios de documentación XML.|
-|[Advertencias de globalización](../code-quality/globalization-warnings.md)|Advertencias compatibles con las aplicaciones y bibliotecas de uso internacional.|
-|[Advertencias de interoperabilidad](../code-quality/interoperability-warnings.md)|Advertencias compatibles con la interacción con clientes COM.|
-|[Advertencias de mantenimiento](../code-quality/maintainability-warnings.md)|Advertencias compatibles con el mantenimiento de bibliotecas y aplicaciones.|
-|[Advertencias de movilidad](../code-quality/mobility-warnings.md)|Advertencias compatibles con el uso eficiente de energía.|
-|[Advertencias de nomenclatura](../code-quality/naming-warnings.md)|Advertencias que admiten el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET.|
-|[Advertencias de rendimiento](../code-quality/performance-warnings.md)|Advertencias compatibles con las aplicaciones y bibliotecas de alto rendimiento.|
-|[Advertencias de portabilidad](../code-quality/portability-warnings.md)|Advertencias compatibles con la portabilidad en diferentes plataformas.|
-|[Advertencias de confiabilidad](../code-quality/reliability-warnings.md)|Advertencias compatibles con la confiabilidad de bibliotecas y aplicaciones, como el uso correcto de memorias y subprocesos.|
-|[Advertencias de seguridad](../code-quality/security-warnings.md)|Advertencias compatibles con bibliotecas y aplicaciones más seguras.|
-|[Advertencias de uso](../code-quality/usage-warnings.md)|ADVERTENCIAS compatibles con el uso adecuado de .NET.|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Errores que se producen si la directiva de análisis de código no se cumple en el momento de la inserción en el repositorio.|
+|[Reglas por identificador](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Muestra todas las reglas por el|
+|[Diseñar reglas](../code-quality/design-warnings.md)|Reglas que admiten el diseño correcto de la biblioteca como se especifica en las instrucciones de diseño de .NET.|
+|[Reglas de documentación](../code-quality/documentation-warnings.md)|Reglas que admiten el diseño de biblioteca bien documentado a través del uso correcto de los comentarios de documentación XML.|
+|[Reglas de globalización](../code-quality/globalization-warnings.md)|Reglas que admiten aplicaciones y bibliotecas de uso internacional.|
+|[Reglas de mantenimiento](../code-quality/maintainability-warnings.md)|Reglas que admiten el mantenimiento de bibliotecas y aplicaciones.|
+|[Reglas de nomenclatura](../code-quality/naming-warnings.md)|Reglas que admiten el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET.|
+|[Reglas de rendimiento](../code-quality/performance-warnings.md)|Reglas que admiten aplicaciones y bibliotecas de alto rendimiento.|
+|[Reglas de portabilidad y de interoperabilidad](../code-quality/interoperability-warnings.md)|Reglas que admiten la portabilidad en diferentes plataformas e interacción con clientes COM.|
+|[Publicar reglas](../code-quality/publish-warnings.md)|Reglas que admiten la publicación adecuada de aplicaciones .NET.|
+|[Reglas de confiabilidad](../code-quality/reliability-warnings.md)|Reglas que admiten la confiabilidad de bibliotecas y aplicaciones, como la corrección del uso de la memoria y el subproceso.|
+|[Reglas de seguridad](../code-quality/security-warnings.md)|Reglas que admiten bibliotecas y aplicaciones más seguras.|
+|[Reglas de uso](../code-quality/usage-warnings.md)|Reglas que admiten el uso adecuado de .NET.|

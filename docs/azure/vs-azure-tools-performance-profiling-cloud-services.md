@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911781"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508436"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Probar el rendimiento de un servicio en la nube
 ## <a name="overview"></a>Información general
@@ -54,7 +54,7 @@ Normalmente, simula una carga para probar servicios en la nube en condiciones no
 ## <a name="profiling-a-cloud-service-in-azure"></a>Generación de perfiles de un servicio en la nube en Azure
 Al publicar su servicio en la nube desde Visual Studio, puede generar perfiles del servicio y especificar la configuración de generación de perfiles que le proporciona la información que desea. Se inicia una sesión de generación de perfiles para cada una de las instancias de un rol. Para obtener más información acerca de cómo publicar su servicio desde Visual Studio, consulte [Publicación en un servicio en la nube de Azure desde Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-Para más información acerca de la generación de perfiles de rendimiento en Visual Studio, consulte [Guía básica para la generación de perfiles de rendimiento](https://msdn.microsoft.com/library/azure/ms182372.aspx) y [Analizar el rendimiento de la aplicación mediante las herramientas de generación de perfiles](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
+Para más información acerca de la generación de perfiles de rendimiento en Visual Studio, consulte [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md) y [Analizar el rendimiento de la aplicación mediante las herramientas de generación de perfiles](../profiling/performance-explorer.md).
 
 > [!NOTE]
 > Puede habilitar IntelliTrace o bien la generación de perfiles al publicar su servicio en la nube. No puede habilitar ambas cosas.
@@ -68,7 +68,7 @@ Puede utilizar métodos de recopilación diferentes para la generación de perfi
 * **Instrumentación** : este método recopila datos de tiempo detallados que son útiles para análisis más detallados y para analizar problemas de rendimiento de entrada/salida. El método de instrumentación graba cada entrada, salida y llamada de función de las funciones en un módulo durante una ejecución de generación de perfiles. Este método es útil para recopilar información de tiempo detallada sobre una sección de su código y entender el impacto de las operaciones de entrada y salida en el rendimiento de la aplicación. Este método está deshabilitado para un equipo que ejecuta un sistema operativo de 32 bits. Esta opción está disponible solo cuando ejecuta el servicio en la nube en Azure, no localmente en el emulador de proceso.
 * **Asignación de memoria de .NET** : este método recopila datos de asignación de memoria de .NET Framework con el método de generación de perfiles de muestreo. Los datos recopilados incluyen el número y tamaño de los objetos asignados.
 * **Simultaneidad** : este método recopila datos de contención de recursos, así como datos de ejecución de procesos y subprocesos que son útiles para el análisis de aplicaciones multiproceso. El método de simultaneidad recopila datos de cada evento que bloquea la ejecución de su código, por ejemplo, cuando un subproceso espera a que se libere el acceso bloqueado a un recurso de aplicación. Este método es útil para analizar aplicaciones multiproceso.
-* También puede habilitar **generación de perfiles de interacción de capa**, que ofrece información adicional sobre los tiempos de ejecución de llamadas de ADO.NET sincrónicas en funciones de aplicaciones de varias capas que se comunican con una o más bases de datos. Puede recopilar datos de interacción de capa con cualquiera de los métodos de generación de perfiles. Para obtener información acerca de la generación de perfiles de interacción de capa, consulte la [vista Interacciones de capa](https://msdn.microsoft.com/library/azure/dd557764.aspx).
+* También puede habilitar **generación de perfiles de interacción de capa**, que ofrece información adicional sobre los tiempos de ejecución de llamadas de ADO.NET sincrónicas en funciones de aplicaciones de varias capas que se comunican con una o más bases de datos. Puede recopilar datos de interacción de capa con cualquiera de los métodos de generación de perfiles. Para obtener información acerca de la generación de perfiles de interacción de capa, consulte la [vista Interacciones de capa](../profiling/tier-interactions-view.md).
 
 ## <a name="configuring-profiling-settings"></a>Configuración de opciones de generación de perfiles
 La ilustración siguiente muestra cómo configurar sus opciones de generación de perfiles desde el cuadro de diálogo Publicar aplicación de Azure.
@@ -102,7 +102,7 @@ Se crea una sesión de generación de perfiles para cada instancia de un rol en 
 3. Para ver los informes de generación de perfiles de una instancia, elija el rol en el servicio, a continuación, abra el menú contextual de una instancia concreta y, después, elija **Ver informe de generación de perfiles**.
 
     El informe, un archivo .vsp, se descarga desde Azure y el estado de la descarga aparece en el registro de actividades de Azure. Al completarse la descarga, el informe de generación de perfiles aparece en una pestaña en el editor de Visual Studio denominada <nombre de rol\>*<número de instancia\>*<identificador\>.vsp. Aparecen datos de resumen del informe.
-4. Para mostrar diferentes vistas del informe, en la lista Vista actual, elija el tipo de vista que desee. Para obtener más información, consulte [Vistas de informes de las herramientas de generación de perfiles](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Para mostrar diferentes vistas del informe, en la lista Vista actual, elija el tipo de vista que desee. Para obtener más información, consulte [Vistas de informes de las herramientas de generación de perfiles](../profiling/performance-report-views.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Depuración de Cloud Services](vs-azure-tools-debug-cloud-services-virtual-machines.md)

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911681"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508397"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configuración de credenciales de autenticación con nombre
 
@@ -33,7 +33,7 @@ En el Explorador de servidores, haga clic con el botón derecho en el nodo **Azu
 - Elija una suscripción activa y seleccione **Editar**, para abrir un cuadro de diálogo en el que va a editar una suscripción existente para su uso en la autenticación.
 - Seleccione **Nuevo** para abrir el cuadro de diálogo **Nueva suscripción** y proporcione los detalles necesarios. Para cargar el certificado en el servicio en la nube indicado en el cuadro de diálogo, inicie sesión en Azure Portal, vaya al servicio en la nube, seleccione **Configuración > Certificados de administración** y **Cargar** y, después, especifique la ruta de acceso al archivo `.cer`.
 
-Si desea crear un certificado por sí mismo, puede consultar las instrucciones de [Creación y carga de un certificado de administración para Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx) y después cargar manualmente el certificado en [Azure Portal](https://portal.azure.com/).
+Si desea crear un certificado por sí mismo, puede consultar las instrucciones de [Creación y carga de un certificado de administración para Azure](/azure/cloud-services/cloud-services-certs-create) y después cargar manualmente el certificado en [Azure Portal](https://portal.azure.com/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

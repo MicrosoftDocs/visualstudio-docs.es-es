@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800481"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508449"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Examen y administración de los recursos de almacenamiento mediante el Explorador de servidores
 
@@ -126,7 +126,7 @@ Puede elegir uno o varios archivos para cargar, así como cargar archivos de cua
 
 Si usa Azure Diagnostics para registrar los datos de la aplicación de Azure y ha transferido los registros a la cuenta de almacenamiento, verá los contenedores creados por Azure para estos registros. Ver estos registros en el Explorador de servidores es una manera fácil de identificar los problemas de la aplicación, especialmente si se ha implementado en Azure.
 
-Para obtener más información sobre Diagnósticos de Azure, vea [Recopilar datos de registro mediante Diagnósticos de Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Para obtener más información sobre Diagnósticos de Azure, vea [Recopilar datos de registro mediante Diagnósticos de Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="to-get-the-url-for-a-blob"></a>Para obtener la dirección URL de un blob
 
@@ -275,7 +275,7 @@ La nueva cuenta de almacenamiento aparecerá en la lista **Almacenamiento** del 
 
    * El nombre de la cuenta de almacenamiento existente que quiere asociar.
    * La clave para la cuenta de almacenamiento seleccionada. Este valor normalmente se proporciona automáticamente cuando se selecciona una cuenta de almacenamiento. Si desea que Visual Studio recuerde la clave de la cuenta de almacenamiento, active la casilla **Recordar clave de cuenta**.
-   * El protocolo que se va a usar para conectarse a la cuenta de almacenamiento, como HTTP, HTTPS o un extremo personalizado. Consulte [Configuración de las cadenas de conexión de Azure Storage](https://msdn.microsoft.com/library/azure/ee758697.aspx) para más información sobre los puntos de conexión personalizados.
+   * El protocolo que se va a usar para conectarse a la cuenta de almacenamiento, como HTTP, HTTPS o un extremo personalizado. Consulte [Configuración de las cadenas de conexión de Azure Storage](/azure/storage/common/storage-configure-connection-string) para más información sobre los puntos de conexión personalizados.
 
 ### <a name="to-view-the-secondary-endpoints"></a>Para ver los extremos secundarios
 

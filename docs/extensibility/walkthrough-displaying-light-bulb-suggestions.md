@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904992"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508956"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Tutorial: Mostrar sugerencias de bombillas
 Las bombillas son iconos en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones, por ejemplo, correcciones de problemas identificados por los analizadores de código integrados o la refactorización de código.
 
- En los editores de Visual C# y Visual Basic, también puede usar el .NET Compiler Platform ("Roslyn") para escribir y empaquetar sus propios analizadores de código con acciones que muestren las bombillas automáticamente. Para obtener más información, vea:
+ En los editores de Visual C# y Visual Basic, también puede usar el .NET Compiler Platform ("Roslyn") para escribir y empaquetar sus propios analizadores de código con acciones que muestren las bombillas automáticamente. Para obtener más información, consulte:
 
-- [Cómo: escribir una corrección de código y diagnóstico de C#](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [Cómo: escribir una corrección de código y diagnóstico de C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [Cómo: escribir un diagnóstico de Visual Basic y corrección de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [Cómo: escribir un diagnóstico de Visual Basic y corrección de código](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   Otros lenguajes como C++ también proporcionan bombillas para algunas acciones rápidas, como, una sugerencia para crear una implementación de código auxiliar de esa función.
 

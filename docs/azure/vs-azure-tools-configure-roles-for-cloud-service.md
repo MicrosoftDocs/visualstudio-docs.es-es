@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250850"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508514"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -140,7 +140,7 @@ En los pasos siguientes se muestra cómo acceder mediante programación a una ca
     ```
 
 ## <a name="add-custom-settings-to-use-in-your-azure-cloud-service"></a>Agregar valores personalizados para usarlos en su servicio en la nube de Azure
-La configuración personalizada del archivo de configuración de servicio le permite agregar un nombre y un valor para una cadena de una configuración de servicio específico. Puede elegir usar esta configuración para definir una característica en su servicio en la nube leyendo el valor de la configuración y usando este valor para controlar la lógica de su código. Puede cambiar estos valores de configuración de servicio sin tener que volver a generar el paquete de servicio o cuando se ejecuta el servicio en la nube. Su código puede buscar las notificaciones de cuando cambia un valor. Vea [RoleEnvironment.Changing Event](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx).
+La configuración personalizada del archivo de configuración de servicio le permite agregar un nombre y un valor para una cadena de una configuración de servicio específico. Puede elegir usar esta configuración para definir una característica en su servicio en la nube leyendo el valor de la configuración y usando este valor para controlar la lógica de su código. Puede cambiar estos valores de configuración de servicio sin tener que volver a generar el paquete de servicio o cuando se ejecuta el servicio en la nube. Su código puede buscar las notificaciones de cuando cambia un valor. Vea [RoleEnvironment.Changing Event](/previous-versions/azure/reference/ee758134(v=azure.100)).
 
 Puede agregar, quitar o modificar valores personalizados para sus configuraciones de servicio. Es posible que quiera valores diferentes para estas cadenas para distintas configuraciones del servicio.
 
@@ -269,4 +269,4 @@ Para ver el archivo creado por el código de la sección anterior, siga estos pa
 1. Cuando se abra la ventana Explorador de Windows, escriba "MyLocalStorageTest.txt" en el cuadro de texto **Buscar** y pulse **Entrar** para iniciar la búsqueda.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Para obtener más información sobre los proyectos de Azure en Visual Studio, consulte [Configurar un proyecto de Azure](vs-azure-tools-configuring-an-azure-project.md). Para obtener más información sobre el esquema del servicio en la nube, consulte [Referencia de esquema](https://msdn.microsoft.com/library/azure/dd179398).
+Para obtener más información sobre los proyectos de Azure en Visual Studio, consulte [Configurar un proyecto de Azure](vs-azure-tools-configuring-an-azure-project.md). Para obtener más información sobre el esquema del servicio en la nube, consulte [Referencia de esquema](/previous-versions/azure/dd179398(v=azure.100)).

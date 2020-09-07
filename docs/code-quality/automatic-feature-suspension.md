@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769484"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508384"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensión automática de la característica
 
@@ -40,7 +40,7 @@ En una condición de memoria insuficiente, se realizan las siguientes acciones:
 
 ## <a name="improve-visual-studio-performance"></a>Mejorar el rendimiento de Visual Studio
 
-Para obtener sugerencias y trucos sobre cómo mejorar el rendimiento de Visual Studio cuando se trabaja con soluciones de gran tamaño o condiciones de memoria insuficiente, vea [consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Para obtener sugerencias y trucos sobre cómo mejorar el rendimiento de Visual Studio cuando se trabaja con soluciones de gran tamaño o condiciones de memoria insuficiente, vea [consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>El análisis de código activo se reduce a un ámbito mínimo
 
@@ -65,8 +65,8 @@ Además, también se borran las memorias caché utilizadas para las operaciones 
 > [!NOTE]
 > La advertencia de suspensión automática de características se produce solo una vez por solución, no por sesión. Esto significa que si cambia de Visual Basic a Visual C# (o viceversa) y se ejecuta en otra condición de memoria insuficiente, es posible que pueda obtener otra advertencia de suspensión automática de características.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: configurar el ámbito de análisis de código activo para código administrado](./configure-live-code-analysis-scope-managed-code.md)
 - [Fundamentos de la recolección de elementos no utilizados](/dotnet/standard/garbage-collection/fundamentals)
-- [Consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

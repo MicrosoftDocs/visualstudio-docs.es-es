@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62572290"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508423"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (script de Windows PowerShell)
 Implementa una aplicación web en una máquina virtual. El script crea los recursos necesarios en su suscripción de Azure si no existen.
@@ -33,18 +33,18 @@ Publish-WebApplicationVM
 ### <a name="configuration"></a>Configuración
 La ruta de acceso al archivo de configuración JSON que describe los detalles de la implementación.
 
-| Alias | None |
+| Alias | ninguno |
 | --- | --- |
 | ¿Necesario? |true |
 | Posición |con nombre |
-| Valor predeterminado |None |
+| Valor predeterminado |ninguno |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 Nombre de la suscripción de Azure en la que desea crear la máquina virtual.
 
-| Alias | None |
+| Alias | ninguno |
 | --- | --- |
 | ¿Necesario? |false |
 | Posición |con nombre |
@@ -53,20 +53,20 @@ Nombre de la suscripción de Azure en la que desea crear la máquina virtual.
 | ¿Aceptar caracteres comodín? |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-Ruta de acceso al paquete de implementación web para publicar en la máquina virtual. Puede crear este paquete mediante el Asistente de publicación web en Visual Studio. Consulte [Cómo crear un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
+Ruta de acceso al paquete de implementación web para publicar en la máquina virtual. Puede crear este paquete mediante el Asistente de publicación web en Visual Studio. Consulte [Cómo crear un paquete de implementación web en Visual Studio](/previous-versions/aspnet/dd465323(v=vs.110)).
 
-| Alias | None |
+| Alias | ninguno |
 | --- | --- |
 | ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |None |
+| Valor predeterminado |ninguno |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
 Si es true, permite el uso de certificados que no están firmados por una entidad de certificación raíz de confianza.
 
-| Alias | None |
+| Alias | ninguno |
 | --- | --- |
 | ¿Necesario? |false |
 | Posición |con nombre |
@@ -77,29 +77,29 @@ Si es true, permite el uso de certificados que no están firmados por una entida
 ### <a name="vmpassword"></a>VMPassword
 Credenciales de la cuenta para la máquina virtual. Ejemplo: -VMPassword @{Name = "admin"; Password = "contraseña"}
 
-| Alias | None |
+| Alias | ninguno |
 | --- | --- |
 | ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |None |
+| Valor predeterminado |ninguno |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
 Credenciales para la base de datos SQL en Azure. Ejemplo: -DatabaseServerPassword @{Name = "admin"; Password = "contraseña"}
 
-| Alias | None |
+| Alias | ninguno |
 | --- | --- |
 | ¿Necesario? |false |
 | Posición |con nombre |
-| Valor predeterminado |None |
+| Valor predeterminado |ninguno |
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Si es true, imprimir mensajes del script a la secuencia de salida.
 
-| Alias | None |
+| Alias | ninguno |
 | --- | --- |
 | ¿Necesario? |false |
 | Posición |con nombre |
@@ -107,7 +107,7 @@ Si es true, imprimir mensajes del script a la secuencia de salida.
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 Para obtener una explicación completa de cómo usar el script para crear entornos de desarrollo y pruebas, consulte [Usar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 El archivo de configuración JSON especifica los detalles de lo que va a implementarse. Incluye la información que especificó cuando creó el proyecto, como el nombre, el grupo de afinidad, la imagen VHD y el tamaño de la máquina virtual. También incluye los extremos de la máquina virtual, las bases de datos para aprovisionar, si existen, y parámetros de implementación web. El código siguiente muestra un archivo de configuración de JSON de ejemplo:
