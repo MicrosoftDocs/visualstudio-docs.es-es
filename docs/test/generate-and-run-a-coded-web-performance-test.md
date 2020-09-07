@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589583"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generar y ejecutar una prueba de rendimiento web codificada
@@ -92,7 +92,7 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
 
 Cuando ejecuta una prueba codificada con un origen de datos, puede aparecer el siguiente mensaje de error:
 
-**No se pudo ejecutar la prueba \<nombre de la prueba> en el agente \<nombre_equipo>: Referencia a objeto no establecida como instancia de un objeto.**
+**No se pudo ejecutar la prueba \<Test Name> en el agente \<Computer Name>: Referencia a objeto no establecida como instancia de un objeto.**
 
 Este error se puede producir porque ha definido DataSourceAttribute para la clase de prueba de rendimiento web sin su correspondiente DataBindingAttribute. Para resolver este error, agregue un atributo DataBindingAttribute adecuado, elimínelo o márquelo como comentario fuera del código.
 

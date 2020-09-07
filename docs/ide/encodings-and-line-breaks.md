@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588595"
 ---
 # <a name="encodings-and-line-endings"></a>Codificaciones y finales de línea
@@ -51,7 +51,7 @@ Puede usar el cuadro de diálogo **Archivo** > **Opciones avanzadas para guardar
 > [!NOTE]
 > Si no ve el cuadro de diálogo **Opciones avanzadas para guardar** en el menú **Archivo**, puede agregarlo. Elija **Herramientas**, **Personalizar** y, después, elija la pestaña **Comandos**. En la lista desplegable **Barra de menús**, elija **Archivo** y haga clic en el botón **Agregar comando**. En el cuadro de diálogo **Agregar comando**, en **Categorías**, elija **Archivo** y, en la lista **Comandos**, seleccione **Opciones avanzadas para guardar**. Seleccione **Aceptar** y después elija el botón **Bajar** para mover el comando a cualquier lugar del menú. Seleccione **Cerrar** para cerrar el cuadro de diálogo **Personalizar**. Para obtener más información, vea [Personalizar un menú o una barra de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Para tener acceso al cuadro de diálogo **Opciones avanzadas para guardar**, también puede elegir **Archivo** > **Guardar \<archivo\> como**. En el cuadro de diálogo **Guardar archivo como**, seleccione el triángulo de lista desplegable junto al botón **Guardar** y elija **Guardar con codificación**.
+> Para acceder al cuadro de diálogo **Opciones avanzadas para guardar**, también puede elegir **Archivo** > **Guardar \<file\> como** . En el cuadro de diálogo **Guardar archivo como**, seleccione el triángulo de lista desplegable junto al botón **Guardar** y elija **Guardar con codificación**.
 
 ## <a name="see-also"></a>Vea también
 

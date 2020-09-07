@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595818"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
@@ -94,7 +94,7 @@ Si **Habilitar marco de trabajo de la aplicación** está desactivado, esta list
 
 ### <a name="icon"></a>Icono
 
-Establece el archivo .ico que quiere usar como su icono del programa. Seleccione **\<Examinar...>** para buscar un gráfico existente. Para obtener más información, vea [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (o [/win32icon (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Establece el archivo .ico que quiere usar como su icono del programa. Seleccione **\<Browse...>** para buscar un gráfico existente. Para obtener más información, vea [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (o [/win32icon (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Información de ensamblado
 

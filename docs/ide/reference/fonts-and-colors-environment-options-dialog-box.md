@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595623"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
@@ -198,8 +198,8 @@ Entre los elementos para mostrar se incluyen:
 |**Valor del atributo XML**|Contenido de atributos XML.|
 |**Sección CData XML**|Contenido de \<![CDATA[...]]>.|
 |**Comentario XML**|Contenido de \<!-- -->.|
-|**Delimitador XML**|Delimitadores de sintaxis XML, <, <?, <!, \<!--, -->, ?\>, \<![, ]]> y [, ].|
-|**Atributo de documento XML**|El valor de un atributo de documentación xml, como \<param name = "I" > donde la "I" se colorea.|
+|**Delimitador XML**|Delimitadores de sintaxis XML, incluidos <, <?, <!, \<!--, -->, ?\>, \<![, ]]> y [, ].|
+|**Atributo de documento XML**|Valor de un atributo de documentación XML, como \<param name="I">, donde la "I" se colorea.|
 |**Comentario de documento XML**|Los comentarios incluidos en los comentarios de documentación xml.|
 |**Etiqueta de documento XML**|Las etiquetas en los comentarios de documentos XML, como<br /><br /> /// \<summary>.|
 |**Palabra clave XML**|Palabras clave de DTD como CDATA, IDREF y NDATA.|

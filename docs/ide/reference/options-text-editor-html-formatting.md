@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568326"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opciones, Editor de texto, HTML (formularios Web Forms), formato
@@ -76,7 +76,7 @@ Estas opciones hacen que el Editor de vistas de código fuente agregue o quite s
 
 - **Insertar automáticamente etiqueta de cierre**
 
-   Cuando se selecciona esta opción, el editor crea automáticamente una etiqueta de cierre (por ejemplo, **\</b>** ) cuando se cierra la etiqueta de apertura.
+   Si se selecciona esta opción, el editor crea automáticamente una etiqueta de cierre (por ejemplo, **\</b>** ) cuando se cierra la etiqueta de apertura.
 
 ## <a name="tag-wrapping"></a>Ajuste de etiquetas
 

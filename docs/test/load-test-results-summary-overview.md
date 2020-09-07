@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75584496"
 ---
 # <a name="load-test-results-summary-overview"></a>Información general de resumen de resultados de pruebas de carga
@@ -107,9 +107,9 @@ La sección de resultados de la transacción contiene una lista de todas las tra
 
 Los valores de percentil notifican la siguiente información de la transacción:
 
-- El 90 % de las transacciones se completaron en menos de \<tiempo> segundos.
+- El 90 % de las transacciones se completaron en menos de \<time> segundos.
 
-- El 95 % de las transacciones se completaron en menos de \<tiempo> segundos.
+- El 95 % de las transacciones se completaron en menos de \<time> segundos.
 
 ## <a name="system-under-test-resources"></a>Recursos del sistema sometido a prueba
 

@@ -10,10 +10,10 @@ ms.workload:
 - data-science
 monikerRange: vs-2017
 ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843735"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Cómo instalar Herramientas de R para Visual Studio
@@ -46,7 +46,7 @@ RTVS no se instalará si solo tiene Visual Studio Shell incluido en productos co
 
 1. Establezca las opciones adicionales de la derecha debajo del mismo nombre de carga de trabajo. De forma predeterminada, esta carga de trabajo incluye compatibilidad con F# y Python. Para R, los requisitos mínimos son **Compatibilidad con el lenguaje R**, **Compatibilidad de runtime con las herramientas de desarrollo de R** y **Microsoft R Client**.
 
-RTVS se instala en: *%ProgramFiles(x86)%\Microsoft Visual Studio\<versión>\<edición>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*, donde *\<versión>* es normalmente `2017` y *\<edición>* es `Community`, `Professional` o `Enterprise`.
+RTVS se instala en *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*, donde *\<version>* es normalmente `2017` y *\<edition>* es `Community`, `Professional` o `Enterprise`.
 
 ## <a name="install-rtvs-in-visual-studio-2015"></a>Instalación de RTVS en Visual Studio 2015
 

@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592066"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Tutorial: Crear, editar y mantener una prueba automatizada de IU
@@ -30,11 +30,11 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 3. Bajo la sección **Todos los controles de WPF**, arrastre un control **Botón**, **Casilla** y **Barra de progreso** hacia MainWindow en la superficie de diseño.
 
-4. Seleccione el control **Botón**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a button1. A continuación, cambie el valor de la propiedad **Contenido** de Botón a Inicio.
+4. Seleccione el control **Botón**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<No Name> a button1. A continuación, cambie el valor de la propiedad **Contenido** de Botón a Inicio.
 
-5. Seleccione el control **ProgressBar**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a progressBar1. A continuación, cambie el valor de la propiedad **Máxima** de **100** a **10000**.
+5. Seleccione el control **ProgressBar**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<No Name> a progressBar1. A continuación, cambie el valor de la propiedad **Máxima** de **100** a **10000**.
 
-6. Seleccione el control **Checkbox**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.
+6. Seleccione el control **Checkbox**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<No Name> a checkBox1 y desactive la propiedad **IsEnabled**.
 
      ![Aplicación de WPF sencilla](../test/media/codedui_wpfapp.png)
 

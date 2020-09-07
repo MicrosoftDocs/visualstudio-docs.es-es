@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585527"
 ---
 # <a name="common-quick-actions"></a>Acciones rápidas comunes
@@ -30,7 +30,7 @@ Las acciones rápidas de esta sección corrigen errores en el código que provoc
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Corrección de símbolos o palabras clave mal escritos
 
-Si se equivoca al escribir un tipo o una palabra clave en Visual Studio, esta acción rápida lo corrige automáticamente. Verá estos elementos en el menú de bombilla como **"Cambiar '\<palabra mal escrita>' a '\<palabra correcta>'"** . Por ejemplo:
+Si se equivoca al escribir un tipo o una palabra clave en Visual Studio, esta acción rápida lo corrige automáticamente. Verá estos elementos en el menú de bombilla como **"Cambiar '\<misspelled word>' a '\<correct word>'"** . Por ejemplo:
 
 ```csharp
 // Before

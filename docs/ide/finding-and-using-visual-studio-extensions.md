@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594414"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Administración de extensiones para Visual Studio
@@ -106,7 +106,7 @@ Si desea dejar de usar una extensión, puede deshabilitarla o desinstalarla. Al 
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensiones por usuario y administrativas
 
-Las mayoría de las extensiones son por usuario y están instaladas en la carpeta *%LocalAppData%\Microsoft\VisualStudio\\<versión de Visual Studio\>\Extensions\\* . Algunas extensiones son extensiones administrativas y están instaladas en la carpeta *\<<carpeta de instalación de Visual Studio>\Common7\IDE\Extensions\\* .
+Las mayoría de las extensiones son por usuario y están instaladas en la carpeta *%LocalAppData%\Microsoft\VisualStudio\\<versión de Visual Studio\>\Extensions\\* . Algunas extensiones son extensiones administrativas y están instaladas en la carpeta *\<Visual Studio installation folder>\Common7\IDE\Extensions\\* .
 
 Para proteger el sistema frente a extensiones que pueden contener errores o código malintencionado, puede limitar que las extensiones por usuario solo se carguen cuando Visual Studio se ejecuta con permisos de usuario normales. Esto significa que las extensiones por usuario están deshabilitadas cuando Visual Studio se ejecuta con permisos elevados.
 

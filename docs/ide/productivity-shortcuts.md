@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585735"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Sugerencias de accesos directos para Visual Studio
@@ -106,7 +106,7 @@ Para obtener una lista completa de los comandos que tienen métodos abreviados p
 |Agregar botones|Seleccionar el botón de desbordamiento de la barra de herramientas|
 |Cuadro combinado de búsqueda de la barra de herramientas Estándar|**Ctrl**+**D**|
 |Modo de comando del cuadro de texto de búsqueda|Escribir **>**|
-|Crear nuevo alias|Escribir **alias \<nuevo alias> \<comando>** en la ventana **Comando**|
+|Crear nuevo alias|Escriba **alias \<new alias> \<command>** en la ventana **Comando**.|
 
 ## <a name="debugging"></a>Depuración
 
