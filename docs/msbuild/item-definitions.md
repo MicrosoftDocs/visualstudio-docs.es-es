@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633712"
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
@@ -80,7 +80,7 @@ Los valores de los metadatos definidos en ItemDefinitionGroup pueden proceder de
 
 - Metadatos conocidos en un elemento de un ItemDefinitionGroup
 
-- Sección CDATA\<\!\[CDATA\[no se analiza nada de lo que se escriba aquí\]\]\>
+- Sección CDATA \<\!\[CDATA\[anything here is not parsed\]\]\>
 
 > [!NOTE]
 > Los metadatos de elemento de un ItemGroup no son útiles en una declaración de metadatos de ItemDefinitionGroup porque los elementos de ItemDefinitionGroup se procesan antes que los elementos de ItemGroup.

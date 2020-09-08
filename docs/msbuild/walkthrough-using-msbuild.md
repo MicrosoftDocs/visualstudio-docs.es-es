@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 310fa3b6795a5e340dcd9c7fa40cb27807c132ba
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072546"
 ---
 # <a name="walkthrough-use-msbuild"></a>Tutorial: Usar MSBuild
@@ -147,7 +147,7 @@ Ejecute MSBuild desde el **Símbolo del sistema para desarrolladores** de Visual
 
    (Windows 10) En el cuadro de búsqueda de la barra de tareas, comience a escribir el nombre de la herramienta, como `dev` o `developer command prompt`. Esto muestra una lista de las aplicaciones instaladas que coinciden con el patrón de búsqueda.
 
-   Si tiene que buscarlo manualmente, es el archivo *LaunchDevCmd.bat* de la carpeta *<carpeta de instalación de visual studio\>\<version>\Common7\Tools*.
+   Si tiene que buscarlo manualmente, es el archivo *LaunchDevCmd.bat* de la carpeta *<carpeta de instalación de Visual Studio\>\<version>\Common7\Tools*.
 
 2. En la ventana de comandos, navegue hasta la carpeta que contiene el archivo de proyecto, en este caso, *D:\BuildApp\BuildApp*.
 
@@ -290,7 +290,7 @@ MSBuild crea la propiedad Configuration y le asigna el valor "Release".
 
 ## <a name="special-characters"></a>Caracteres especiales
 
-Ciertos caracteres tienen un significado especial en archivos del proyecto de MSBuild. Ejemplos de estos caracteres son los signos de punto y coma (;) y los asteriscos (*). Para utilizar estos caracteres especiales con su significado literal en un archivo de proyecto, es preciso especificarlos con la sintaxis %\<xx>, donde \<xx> representa el valor hexadecimal ASCII del carácter.
+Ciertos caracteres tienen un significado especial en archivos del proyecto de MSBuild. Ejemplos de estos caracteres son los signos de punto y coma (;) y los asteriscos (*). Para usar estos caracteres especiales como literales en un archivo del proyecto, se deben especificar con la sintaxis %\<xx>, donde \<xx> representa el valor hexadecimal ASCII del carácter.
 
 Cambie la tarea Message para mostrar el valor de la propiedad Configuration con caracteres especiales para que se pueda leer mejor.
 
@@ -575,7 +575,7 @@ Comparando los dos ejemplos anteriores, puede ver que mientras que no todos los 
 
 ### <a name="metadata-transformations"></a>Transformaciones de metadatos
 
- Las listas de elementos se pueden transformar en nuevas listas de elementos. Para transformar una lista de elementos, utilice la sintaxis siguiente, donde \<ItemType> es el nombre del tipo de elemento y \<MetadataName> es el nombre de los metadatos:
+ Las listas de elementos se pueden transformar en nuevas listas de elementos. Para transformar una lista de elementos, use la sintaxis siguiente, donde \<ItemType> es el nombre del tipo de elemento y \<MetadataName> el nombre de los metadatos:
 
 ```xml
 @(ItemType -> '%(MetadataName)')

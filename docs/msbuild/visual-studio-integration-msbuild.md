@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631203"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
@@ -151,7 +151,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
      El proyecto aparecerá marcado como **(no disponible)** .
 
-2. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y seleccione **Editar\<Archivo de proyecto>** .
+2. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y luego elija **Editar \<Project File>** .
 
      El archivo de proyecto se abrirá en el Editor XML de Visual Studio.
 
@@ -161,7 +161,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="intellisense-and-validation"></a>IntelliSense y validación
 
- Al utilizar el editor XML para modificar archivos de proyecto, los archivos de esquema de MSBuild administran la validación e IntelliSense. Estos archivos se instalan en la caché del esquema, que se encuentra en *\<directorio de instalación de Visual Studio>\Xml\Schemas\1033\MSBuild*.
+ Al utilizar el editor XML para modificar archivos de proyecto, los archivos de esquema de MSBuild administran la validación e IntelliSense. Estos archivos se instalan en la caché del esquema, que se encuentra en *\<Visual Studio installation directory>\Xml\Schemas\1033\MSBuild*.
 
  Los tipos básicos de MSBuild se definen en *Microsoft.Build.Core.xsd* y los tipos comunes utilizados por Visual Studio se definen en *Microsoft.Build.CommonTypes.xsd*. Para personalizar los esquemas con el fin de disponer de IntelliSense y de la validación para los nombres de tipo de elemento, propiedades y tareas personalizados, puede editar *Microsoft.Build.xsd* o crear su propio esquema que incluya los esquemas CommonTypes o básico. Si crea su propio esquema, tendrá que dirigir el editor XML para que lo busque mediante la ventana **Propiedades** .
 

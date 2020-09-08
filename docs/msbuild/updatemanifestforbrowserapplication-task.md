@@ -19,28 +19,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631333"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication (Tarea)
 
-La tarea <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> se ejecuta para agregar el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<nombreproyecto>.exe.manifest*) cuando se compila un proyecto XAML Browser Application (XBAP).
+La tarea <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> se ejecuta para agregar el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<projectname>.exe.manifest*) cuando se compila un proyecto de aplicación de explorador XAML (XBAP).
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
 |Parámetro|Descripción|
 |---------------|-----------------|
 |`ApplicationManifest`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la ruta de acceso y el nombre del archivo de manifiesto de aplicación al que se quiere agregar el elemento `<hostInBrowser />`.|
-|`HostInBrowser`|Parámetro obligatorio de tipo **Boolean**.<br /><br /> Especifica si se debe modificar el manifiesto de aplicación para incluir el elemento **\<hostInBrowser />** . Si es **true**, se incluye un nuevo elemento **\<hostInBrowser />** en el elemento **\<entryPoint />** . La inclusión de elementos es acumulativa: si ya existe un elemento **\<hostInBrowser />** , no se quita ni se sobrescribe. En vez de eso, se crea otro elemento **\<hostInBrowser />** . Si es **false**, el manifiesto de aplicación no se modifica.|
+|`HostInBrowser`|Parámetro obligatorio de tipo **Boolean**.<br /><br /> Especifica si se debe modificar el manifiesto de aplicación para incluir el elemento **\<hostInBrowser />** . Si es **true**, se incluye un nuevo elemento **\<hostInBrowser />** en el elemento **\<entryPoint />** . La inclusión de elementos es acumulativa: si ya existe un elemento **\<hostInBrowser />** , no se quita ni se sobrescribe. En su lugar, se crea otro elemento **\<hostInBrowser />** . Si es **false**, el manifiesto de aplicación no se modifica.|
 
 ## <a name="remarks"></a>Comentarios
 
  Se ejecutan XBAP mediante la implementación de ClickOnce y, por tanto, se deben publicar con manifiestos de aplicación e implementación compatibles. MSBuild usa la tarea [GenerateApplicationManifest](generateapplicationmanifest-task.md) para generar un manifiesto de aplicación.
 
- A continuación, para configurar una aplicación que se va a hospedar en un explorador, debe agregarse al manifiesto de aplicación un elemento adicional, **\<hostInBrowser />** , tal como refleja el ejemplo siguiente:
+ Después, a fin de configurar una aplicación para que se hospede en un explorador, se debe agregar un elemento **\<hostInBrowser />** adicional al manifiesto de aplicación, como se muestra en el ejemplo siguiente:
 
 ```xml
 <!--MyXBAPApplication.exe.manifest-->

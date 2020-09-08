@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916275"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparación de la depuración: Proyectos de consola (C#, C++, Visual Basic, F#)
@@ -41,7 +41,7 @@ La preparación de la depuración de un proyecto de consola es similar a la de l
 
 Es posible que necesite especificar argumentos de línea de comandos para la aplicación de consola. Para obtener más información, consulte [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) o [Configuración del proyecto para configuraciones de depuración de C#](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Al igual que todas las propiedades del proyecto, estos argumentos se conservan entre sesiones de depuración y entre sesiones de Visual Studio. Por lo tanto, si la aplicación de consola es una aplicación que ya ha depurado anteriormente, recuerde que puede haber argumentos de sesiones anteriores escritos en el cuadro de diálogo **\<Proyecto > Páginas de propiedades**.
+Al igual que todas las propiedades del proyecto, estos argumentos se conservan entre sesiones de depuración y entre sesiones de Visual Studio. Por tanto, si la aplicación de consola es una aplicación que ya ha depurado antes, recuerde que puede haber argumentos de sesiones anteriores escritos en el cuadro de diálogo **Páginas de propiedades de \<Project>** .
 
 ## <a name="start-the-application"></a>Inicio de la aplicación
 

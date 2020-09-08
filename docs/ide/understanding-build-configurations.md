@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77904170"
 ---
 # <a name="understand-build-configurations"></a>Descripción de las configuraciones de compilación
@@ -81,7 +81,7 @@ Si desea compilar varias configuraciones y plataformas en una acción, puede usa
 
 Si se define una nueva configuración de soluciones y no se copian valores de una configuración existente, Visual Studio utiliza los siguientes criterios para asignar las configuraciones de proyecto predeterminadas. Los criterios se evalúan en el orden mostrado.
 
-1. Si un proyecto tiene un nombre de configuración ( *\<nombre de configuración> \<nombre de plataforma>* ) que coincide exactamente con el nombre de la nueva configuración de soluciones, se asignará dicha configuración. En los nombres de configuraciones no se distingue entre mayúsculas y minúsculas.
+1. Si un proyecto tiene un nombre de configuración ( *\<configuration name> \<platform name>* ) que coincide exactamente con el nombre de la nueva configuración de soluciones, se asigna esa configuración. En los nombres de configuraciones no se distingue entre mayúsculas y minúsculas.
 
 1. Si el proyecto tiene un nombre de configuración en el que la parte del nombre de configuración coincide con la nueva configuración de soluciones, se asigna esa configuración, independientemente de que la parte de plataforma coincida o no.
 
@@ -93,9 +93,9 @@ Cuando se crea una configuración de proyecto (en el **Administrador de configur
 
 Visual Studio utiliza los siguientes criterios para asignar configuraciones de soluciones.
 
-- Si una configuración de proyectos no especifica ninguna plataforma o especifica solo una, se busca o se agrega una configuración de soluciones cuyo nombre coincida con el de la nueva configuración de proyecto. El nombre predeterminado de esta configuración de soluciones no incluye el nombre de plataforma, sino que adopta el formato *\<nombre de la configuración del proyecto>* .
+- Si una configuración de proyectos no especifica ninguna plataforma o especifica solo una, se busca o se agrega una configuración de soluciones cuyo nombre coincida con el de la nueva configuración de proyecto. El nombre predeterminado de esta configuración de soluciones no incluye el nombre de plataforma, sino que adopta el formato *\<project configuration name>* .
 
-- Si un proyecto admite varias plataformas, se busca o se agrega una configuración de soluciones para cada plataforma admitida. El nombre de cada configuración de soluciones incluye tanto el nombre de configuración del proyecto como el nombre de la plataforma y tiene el formato *\<nombre de la configuración del proyecto> \<nombre de plataforma>* .
+- Si un proyecto admite varias plataformas, se busca o se agrega una configuración de soluciones para cada plataforma admitida. El nombre de cada configuración de soluciones incluye tanto el nombre de configuración del proyecto como el de la plataforma, y tiene el formato *\<project configuration name> \<platform name>* .
 
 ## <a name="see-also"></a>Vea también
 

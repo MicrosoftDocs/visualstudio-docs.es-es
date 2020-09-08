@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633114"
 ---
 # <a name="msbuild-transforms"></a>Transformaciones de MSBuild
@@ -24,7 +24,7 @@ Una transformación es una conversión unívoca de una lista de elementos en otr
 
 ## <a name="transform-modifiers"></a>Modificadores de transformación
 
-Las transformaciones no son arbitrarias, sino que están limitadas por una sintaxis especial en la que todos los modificadores de transformación deben tener el formato %(\<ItemMetaDataName). Los metadatos de elementos se pueden usar como modificador de transformación. Esto incluye los metadatos de elementos conocidos que se asignan a todos los elementos cuando se crean. Para obtener una lista de metadatos de elementos conocidos, consulte [Metadatos de los elementos conocidos de MSBuild](../msbuild/msbuild-well-known-item-metadata.md).
+Las transformaciones no son arbitrarias, sino que están limitadas por una sintaxis especial en la que todos los modificadores de transformación deben tener el formato %(\<ItemMetaDataName>). Los metadatos de elementos se pueden usar como modificador de transformación. Esto incluye los metadatos de elementos conocidos que se asignan a todos los elementos cuando se crean. Para obtener una lista de metadatos de elementos conocidos, consulte [Metadatos de los elementos conocidos de MSBuild](../msbuild/msbuild-well-known-item-metadata.md).
 
 En el ejemplo siguiente, una lista de archivos *.resx* se transforma en una lista de archivos *.resources*. El modificador de transformación %(filename) especifica que cada archivo *.resources* tiene el mismo nombre de archivo que el archivo *.resx* correspondiente.
 

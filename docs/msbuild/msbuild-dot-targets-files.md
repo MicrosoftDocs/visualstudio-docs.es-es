@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3faa9ca73592722a950f9914437884c33122070e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633361"
 ---
 # <a name="msbuild-targets-files"></a>Archivos .targets de MSBuild
@@ -29,7 +29,7 @@ MSBuild incluye varios archivos *.targets* que contienen elementos, propiedades,
 
  Normalmente, los proyectos importan uno o más archivos *.targets* para definir su proceso de compilación. Por ejemplo, un proyecto de C# creado por Visual Studio importa *Microsoft.CSharp.targets*, que importa *Microsoft.Common.targets*. El propio proyecto de C# define los elementos y las propiedades específicos de ese proyecto, pero las reglas de compilación estándar de un proyecto de C# se definen en los archivos *.targets* importados.
 
- El valor `$(MSBuildToolsPath)` especifica la ruta de acceso de estos archivos *.targets* comunes. Si `ToolsVersion` es 4.0, los archivos están en la siguiente ubicación: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
+ El valor `$(MSBuildToolsPath)` especifica la ruta de acceso de estos archivos *.targets* comunes. Si `ToolsVersion` es 4.0, los archivos están en la ubicación siguiente: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
 > Para obtener información sobre cómo crear sus propios destinos, consulte [Destinos](../msbuild/msbuild-targets.md). Para obtener información sobre cómo usar el elemento `Import` para insertar un archivo de proyecto en otro, vea [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) y [Cómo: Usar el mismo destino en varios archivos de proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).

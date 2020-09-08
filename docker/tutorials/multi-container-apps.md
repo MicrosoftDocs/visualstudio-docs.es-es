@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial de Docker, parte 6: aplicaciones de varios contenedores'
-description: Cómo configurar redes entre contenedores y agregar un contenedor para una base de datos MySQL.
+title: 'Tutorial de Docker - Parte 6: Aplicaciones de varios contenedores'
+description: Procedimiento para configurar redes entre contenedores y agregar un contenedor para una base de datos MySQL.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
@@ -10,35 +10,35 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176801"
 ---
 # <a name="multi-container-apps"></a>Aplicaciones de varios contenedores
 
-Hasta este momento, ha estado trabajando con aplicaciones de contenedor único. Sin embargo, ahora agregará MySQL a la pila de la aplicación. A menudo surge la siguiente pregunta: "¿Dónde se ejecutará MySQL? ¿Se instala en el mismo contenedor o se ejecuta por separado? " En general, **cada contenedor debe hacer una cosa y hacerlo bien.** Algunos motivos:
+Hasta el momento, ha trabajado con aplicaciones de un solo contenedor. Pero ahora agregará MySQL a la pila de la aplicación. A menudo surge la siguiente pregunta: "¿Dónde se ejecutará MySQL? ¿Se instala en el mismo contenedor o se ejecuta por separado?" En general, **cada contenedor debe hacer una cosa y hacerla bien.** Algunos motivos:
 
-- Hay una buena oportunidad de escalar las API y los servidores front-end de forma distinta a las bases de datos.
+- Hay una buena oportunidad de escalar las API y los front-end de forma distinta a las bases de datos.
 - Los contenedores independientes permiten la versión y la actualización de las versiones de forma aislada
-- Aunque puede usar un contenedor para la base de datos localmente, puede que desee usar un servicio administrado para la base de datos en producción. No desea enviar el motor de base de datos con la aplicación después.
+- Aunque puede usar un contenedor para la base de datos de forma local, es posible que quiera usar un servicio administrado para la base de datos en producción. No le interesa enviar el motor de base de datos con la aplicación después.
 - La ejecución de varios procesos requerirá un administrador de procesos (el contenedor solo inicia un proceso), lo que agrega complejidad al inicio o apagado del contenedor.
 
-Y hay más motivos. Por lo tanto, actualizará la aplicación para que funcione de la siguiente manera:
+Y hay más motivos. Por tanto, actualizará la aplicación para que funcione de la siguiente manera:
 
-![Aplicación todo conectada al contenedor MySQL](media/multi-app-architecture.png)
+![Aplicación de tareas pendientes conectada al contenedor de MySQL](media/multi-app-architecture.png)
 
 ## <a name="container-networking"></a>Redes de contenedores
 
-Recuerde que, de forma predeterminada, los contenedores se ejecutan de forma aislada y no saben nada sobre otros procesos o contenedores en el mismo equipo. Por lo tanto, ¿cómo permite que un contenedor se comunique con otro? La respuesta es la **red**. Ahora no tiene que ser un ingeniero de red (alegría!). Simplemente recuerde esta regla...
+Recuerde que, de forma predeterminada, los contenedores se ejecutan de forma aislada y no saben nada sobre otros procesos o contenedores en el mismo equipo. Por tanto, ¿cómo permite que un contenedor se comunique con otro? La respuesta son las **redes**. Pero no es necesario ser un ingeniero de redes (qué alivio). Simplemente recuerde esta regla...
 
 > [!NOTE]
-> Si hay dos contenedores en la misma red, pueden comunicarse entre sí. Si no lo están, no se pueden.
+> Si dos contenedores están en la misma red, pueden comunicarse entre sí. Si no lo están, no pueden.
 
 ## <a name="start-mysql"></a>Inicie MySQL
 
-Hay dos maneras de colocar un contenedor en una red: asígnelo al inicio o Conecte un contenedor existente. Por ahora, creará la red primero y adjuntará el contenedor MySQL en el inicio.
+Hay dos maneras de colocar un contenedor en una red: asignarlo al inicio o conectar un contenedor existente. Por ahora, creará la red primero y adjuntará el contenedor de MySQL al inicio.
 
 1. Cree la red.
 
@@ -46,7 +46,7 @@ Hay dos maneras de colocar un contenedor en una red: asígnelo al inicio o Conec
     docker network create todo-app
     ```
 
-1. Inicie un contenedor MySQL y asócielo la red. También vamos a definir algunas variables de entorno que la base de datos usará para inicializar la base de datos (consulte la sección "variables de entorno" en la [lista de centros de Docker de MySQL](https://hub.docker.com/_/mysql/)) (Reemplace los ` \ ` caracteres por `` ` `` en Windows PowerShell).
+1. Inicie un contenedor de MySQL y asócielo a la red. También definirá algunas variables de entorno que la base de datos usará para inicializar la base de datos (vea la sección "Variables de entorno" en la [lista de MySQL Docker Hub](https://hub.docker.com/_/mysql/)) (reemplace los caracteres ` \ ` por `` ` `` en Windows PowerShell).
 
     ```bash
     docker run -d \
@@ -57,18 +57,18 @@ Hay dos maneras de colocar un contenedor en una red: asígnelo al inicio o Conec
         mysql:5.7
     ```
 
-    También verá que especificó la `--network-alias` marca. Volveremos a eso en un momento.
+    También verá que se ha especificado la marca `--network-alias`. Volverá a eso en breve.
 
     > [!TIP]
-    > Observará que está usando un nombre de volumen `todo-mysql-data` aquí y lo monta en `/var/lib/mysql` , que es donde MySQL almacena sus datos. Sin embargo, nunca se ejecutó un `docker volume create` comando. Docker reconoce que quiere usar un volumen con nombre y crea uno automáticamente.
+    > Observará que aquí se usa un nombre de volumen `todo-mysql-data` y se monta en `/var/lib/mysql`, que es donde MySQL almacena sus datos. Pero nunca ha ejecutado un comando `docker volume create`. Docker reconoce que quiere usar un volumen con nombre y crea uno de forma automática.
 
-1. Para confirmar que la base de datos está en funcionamiento, conéctese a la base de datos y compruebe que se conecta.
+1. Para confirmar que la base de datos está en funcionamiento, conéctese a ella y compruebe que se conecta.
 
     ```bash
     docker exec -it <mysql-container-id> mysql -p
     ```
 
-    Cuando aparezca la solicitud de contraseña, escriba **Secret**. En el shell de MySQL, enumere las bases de datos y compruebe que ve la `todos` base de datos.
+    Cuando aparezca la solicitud de contraseña, escriba **secret**. En el shell de MySQL, enumere las bases de datos y compruebe que ve `todos`.
 
     ```cli
     mysql> SHOW DATABASES;
@@ -89,27 +89,27 @@ Hay dos maneras de colocar un contenedor en una red: asígnelo al inicio o Conec
     5 rows in set (0.00 sec)
     ```
 
-    Alegría! Tiene la `todos` base de datos y está lista para su uso.
+    Enhorabuena. Tiene la base de datos `todos` y está lista para usarla.
 
 ## <a name="connect-to-mysql"></a>Conectarse a MySQL
 
-Ahora que ya sabe que MySQL está en funcionamiento, vamos a utilizarlo. Pero la pregunta es... Qué? Si ejecuta otro contenedor en la misma red, ¿cómo se encuentra el contenedor (Recuerde que cada contenedor tiene su propia dirección IP)?
+Ahora que ya sabe que MySQL está en funcionamiento, ya lo puede usar. ¿Pero cómo? Si ejecuta otro contenedor en la misma red, ¿cómo encuentra el contenedor (recuerde que cada uno tiene su propia dirección IP)?
 
-Para averiguarlo, va a usar el contenedor [nicolaka/netshoot](https://github.com/nicolaka/netshoot) , que se distribuye con *muchas* herramientas que son útiles para solucionar problemas o depurar problemas de red.
+Para averiguarlo, va a usar el contenedor [nicolaka/netshoot](https://github.com/nicolaka/netshoot), que se incluye con *multitud* de herramientas que son útiles para solucionar o depurar problemas de red.
 
-1. Inicie un nuevo contenedor mediante la `nicolaka/netshoot` imagen. Asegúrese de conectarse a la misma red.
+1. Inicie un contenedor nuevo mediante la imagen `nicolaka/netshoot`. Asegúrese de conectarla a la misma red.
 
     ```bash
     docker run -it --network todo-app nicolaka/netshoot
     ```
 
-1. Dentro del contenedor, use el `dig` comando, que es una herramienta DNS útil. Busque la dirección IP del nombre de host `mysql` .
+1. Dentro del contenedor, use el comando `dig`, que es una herramienta de DNS útil. Busque la dirección IP del nombre de host `mysql`.
 
     ```bash
     dig mysql
     ```
 
-    Y obtendrá una salida similar a esta...
+    Verá una salida similar a esta...
 
     ```text
     ; <<>> DiG 9.14.1 <<>> mysql
@@ -130,27 +130,27 @@ Para averiguarlo, va a usar el contenedor [nicolaka/netshoot](https://github.com
     ;; MSG SIZE  rcvd: 44
     ```
 
-    En la sección "respuesta", verá un `A` registro de que se `mysql` resuelve en `172.23.0.2` (lo más probable es que la dirección IP tenga un valor diferente). Aunque `mysql` no es normalmente un nombre de host válido, Docker pudo resolverlo en la dirección IP del contenedor que tenía ese alias de red (recuerde la `--network-alias` marca que usó anteriormente?).
+    En "ANSWER SECTION," (Sección de respuesta), verá un registro `A` para `mysql` que se resuelve en `172.23.0.2` (la dirección IP probablemente tendrá otro valor). Aunque `mysql` normalmente no es un nombre de host válido, Docker ha podido resolverlo en la dirección IP del contenedor que tenía ese alias de red (¿recuerda la marca `--network-alias` que ha usado antes?).
 
-    Esto significa que es... la aplicación solo tiene que conectarse a un host con `mysql` el nombre y se comunicará con la base de datos. No es mucho más sencillo que eso.
+    Esto significa que la aplicación solo tiene que conectarse a un host denominado `mysql` y se comunicará con la base de datos. Realmente es así de sencillo.
 
-## <a name="run-your-app-with-mysql"></a>Ejecutar la aplicación con MySQL
+## <a name="run-your-app-with-mysql"></a>Ejecución de la aplicación con MySQL
 
-La aplicación todo admite la configuración de algunas variables de entorno para especificar la configuración de conexión de MySQL. Son las siguientes:
+La aplicación de tareas pendientes admite la configuración de algunas variables de entorno para especificar la configuración de conexión de MySQL. Son las siguientes:
 
-- `MYSQL_HOST` -el nombre de host para el servidor MySQL en ejecución
-- `MYSQL_USER` -el nombre de usuario que se usará para la conexión
-- `MYSQL_PASSWORD` -la contraseña que se usará para la conexión
-- `MYSQL_DB` -la base de datos que se va a usar una vez conectada
+- `MYSQL_HOST`: el nombre de host para el servidor MySQL en ejecución
+- `MYSQL_USER`: el nombre de usuario para la conexión.
+- `MYSQL_PASSWORD`: la contraseña para la conexión.
+- `MYSQL_DB`: la base de datos que se va a usar después de establecer la conexión.
 
 > [!WARNING]
-> **Establecer la configuración de conexión a través de variables de entorno** Aunque el uso de variables de entorno para establecer la configuración de conexión suele ser correcto para el desarrollo, no se recomienda cuando se ejecutan aplicaciones en producción. Para comprender por qué, consulte [por qué no debe usar variables de entorno para datos secretos](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/).
-> Un mecanismo más seguro es usar la compatibilidad secreta que proporciona el marco de orquestación de contenedores. En la mayoría de los casos, estos secretos se montan como archivos en el contenedor en ejecución. Verá que muchas aplicaciones (incluida la imagen de MySQL y la aplicación de todo) también admiten los VARs de env con un `_FILE` sufijo para apuntar a un archivo que contiene el archivo.
-> Por ejemplo, si se establece el valor `MYSQL_PASSWORD_FILE` var, la aplicación usará el contenido del archivo al que se hace referencia como la contraseña de conexión. Docker no hace nada para admitir estos VARs de env. La aplicación deberá saber que debe buscar la variable y obtener el contenido del archivo.
+> **Establecimiento de la configuración de conexión a través de variables de entorno** Aunque el uso de variables de entorno para establecer la configuración de conexión suele ser correcta para el desarrollo, se desaconseja encarecidamente al ejecutar aplicaciones en producción. Para entender los motivos, vea [Por qué no se deben usar variables de entorno para datos secretos](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/).
+> Un mecanismo más seguro consiste en usar la compatibilidad con secretos que proporciona el marco de orquestación de contenedores. En la mayoría de los casos, estos secretos se montan como archivos en el contenedor en ejecución. Verá que muchas aplicaciones (incluida la imagen de MySQL y la aplicación de tareas pendientes) también admiten variables de entorno con un sufijo `_FILE` para apuntar a un archivo que contiene el archivo.
+> Por ejemplo, si se establece la variable `MYSQL_PASSWORD_FILE`, la aplicación usará el contenido del archivo al que se hace referencia como contraseña de la conexión. Docker no hace nada para admitir estas variables de entorno. La aplicación tendrá que saber que debe buscar la variable y obtener el contenido del archivo.
 
-Con todo lo explicado, inicie el contenedor listo para desarrolladores.
+Con todo lo explicado, inicie el contenedor listo para el desarrollo.
 
-1. Especifique cada una de las variables de entorno anteriores y conecte el contenedor a la red de la aplicación (Reemplace los ` \ ` caracteres por `` ` `` en Windows PowerShell).
+1. Especifique cada una de las variables de entorno anteriores y conecte el contenedor a la red de la aplicación (reemplace los caracteres ` \ ` por `` ` `` en Windows PowerShell).
 
     ```bash hl_lines="3 4 5 6 7"
     docker run -dp 3000:3000 \
@@ -164,7 +164,7 @@ Con todo lo explicado, inicie el contenedor listo para desarrolladores.
       sh -c "yarn install && yarn run dev"
     ```
 
-1. Si examina los registros del contenedor ( `docker logs <container-id>` ), debería ver un mensaje que indica que se está usando la base de datos MySQL.
+1. Si examina los registros del contenedor (`docker logs <container-id>`), debería ver un mensaje que indica que usa la base de datos MySQL.
 
     ```plaintext hl_lines="7"
     # Previous log messages omitted
@@ -179,13 +179,13 @@ Con todo lo explicado, inicie el contenedor listo para desarrolladores.
 
 1. Abra la aplicación en el explorador y agregue algunos elementos a la lista de tareas pendientes.
 
-1. Conéctese a la base de datos MySQL y compruebe que los elementos se están escribiendo en la base de datos. Recuerde que la contraseña es **secreta**.
+1. Conéctese a la base de datos MySQL y compruebe que los elementos se escriben en la base de datos. Recuerde que la contraseña es **secret**.
 
     ```bash
     docker exec -ti <mysql-container-id> mysql -p todos
     ```
 
-    Y en el shell de MySQL, ejecute lo siguiente:
+    En el shell de MySQL, ejecute lo siguiente:
 
     ```plaintext
     mysql> select * from todo_items;
@@ -197,23 +197,23 @@ Con todo lo explicado, inicie el contenedor listo para desarrolladores.
     +--------------------------------------+--------------------+-----------+
     ```
 
-    Obviamente, la tabla tendrá un aspecto diferente porque tiene los elementos. Pero debería ver que se almacenan allí.
+    Obviamente, la tabla tendrá un aspecto diferente porque tiene elementos propios. Pero debería ver que se almacenan allí.
 
-Si echa un vistazo rápido a la extensión de Docker, verá que tiene dos contenedores de aplicaciones en ejecución. Sin embargo, no hay ninguna indicación real de que estén agrupadas en una sola aplicación. Verá cómo hacerlo mejor en breve.
+Si echa un vistazo rápido a la extensión Docker, verá que tiene dos contenedores de aplicaciones en ejecución. Pero no hay ninguna indicación real de que estén agrupados en una sola aplicación. Verá cómo mejorarlo en breve.
 
-![Extensión de Docker que muestra dos contenedores de aplicaciones sin agrupar](media/vs-multi-container-app.png)
+![Extensión Docker en la que se muestran dos contenedores de aplicaciones sin agrupar](media/vs-multi-container-app.png)
 
 ## <a name="recap"></a>Resumen
 
-En este momento, tiene una aplicación que almacena ahora sus datos en una base de datos externa que se ejecuta en un contenedor independiente. Ha aprendido un poco sobre las redes de contenedores y ha visto cómo se puede realizar la detección de servicios mediante DNS.
+En este momento, tiene una aplicación que ahora almacena sus datos en una base de datos externa que se ejecuta en un contenedor independiente. Ha obtenido información sobre las redes de contenedores y ha visto cómo se puede realizar la detección de servicios mediante DNS.
 
-Pero hay una buena oportunidad de empezar a sentir un poco abrumado con todo lo que necesita hacer para iniciar esta aplicación. Tiene que crear una red, iniciar contenedores, especificar todas las variables de entorno, exponer puertos, etc. Eso es mucho para recordar y ciertamente dificulta el paso de las cosas a otra persona.
+Pero es muy probable que se empiece a sentir algo abrumado con todo lo que tiene hacer para iniciar esta aplicación. Tiene que crear una red, iniciar contenedores, especificar todas las variables de entorno, exponer puertos y mucho más. Hay mucho que recordar y sin duda es complicado pasarlo a otros usuarios.
 
-En la siguiente sección, hablaremos sobre Docker Compose. Con Docker Compose, puede compartir sus pilas de aplicaciones de una manera mucho más sencilla y permitir que otros las giren con un único comando (y simple).
+En la sección siguiente se describirá Docker Compose. Con Docker Compose, puede compartir las pilas de aplicaciones de una manera mucho más sencilla y permitir que otros las activen con un único y sencillo comando.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con el tutorial.
 
 > [!div class="nextstepaction"]
-> [Usar Docker Compose](use-docker-compose.md)
+> [Uso de Docker Compose](use-docker-compose.md)

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a190790b915ac8dd011bc9843fe8abdf2d7381ae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 799d27716e7ab2dd621dce04375093f4aff375d7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249576"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88893364"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedimiento Creación de un documento XML basado en un esquema XSD
 
@@ -43,7 +43,7 @@ Además, observe que el contenido de `xs:base64Binary` solo se generará si apar
 
 1. Siga los pasos que se describen en [Procedimientos: Creación y edición de un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. En el [Explorador de esquema XML](../xml-tools/xml-schema-explorer.md), seleccione y mantenga presionado el elemento global `PurchaseOrder` (o haga clic en él con el botón derecho) y, después, seleccione **Generar XML de ejemplo**.
+2. En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic con el botón derecho en el elemento global `PurchaseOrder` y, después, seleccione **Generar XML de ejemplo**.
 
      Al seleccionar esta opción, se generará el archivo PurchaseOrder.*xml* con el contenido XML de ejemplo siguiente y se abrirá en el editor XML:
 

@@ -14,21 +14,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 250c73ce0395f278b72c18605f1666290670e20a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634115"
 ---
 # <a name="formatversion-task"></a>Tarea FormatVersion
 
 Anexa el número de revisión al número de versión.
 
-- Caso 1: Input: Version=\<undefined>;  Revision=\<don't care>;   Output: OutputVersion="1.0.0.0"
+- Caso n.º 1: Entrada: Versión=\<undefined>;  Revisión=\<don't care>;   Salida: OutputVersion="1.0.0.0"
 
 - Caso 2: Input: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"
 
-- Caso 3: Input: Version="1.0.0.0"  Revision=\<don't care>;  Output: OutputVersion="1.0.0.0"
+- Caso n.º 3: Entrada: Versión="1.0.0.0"  Revisión=\<don't care>;  Salida: OutputVersion="1.0.0.0"
 
 ## <a name="parameters"></a>Parámetros
 

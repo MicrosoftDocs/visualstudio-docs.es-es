@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300892"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89314178"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Django con vistas y plantillas de página
 
@@ -111,7 +111,7 @@ Dado que ha realizado cambios en el código y ha probado que funcionan correctam
 
     ![Botón de cambios de control de código fuente en la barra de estado de Visual Studio](media/django/step02-source-control-changes-button.png)
 
-1. En **Team Explorer**, escriba un mensaje de confirmación como "Crear la aplicación inicial de Django" y seleccione **Confirmar todo**. Una vez completada la confirmación, aparece un mensaje **Confirmar \<hash> de creación local. Sincronizar para compartir los cambios con el servidor.** Si desea insertar los cambios en el repositorio remoto, seleccione **Sincronizar** y luego **Insertar** en **Confirmaciones de salida**. También puede acumular varias confirmaciones locales antes de insertar en la instancia remota.
+1. En **Team Explorer**, escriba un mensaje de confirmación como "Crear la aplicación inicial de Django" y seleccione **Confirmar todo**. Una vez que se haya completado la confirmación, verá un mensaje **Confirmar \<hash> de creación local. Sincronizar para compartir los cambios con el servidor.** Si desea insertar los cambios en el repositorio remoto, seleccione **Sincronizar** y luego **Insertar** en **Confirmaciones de salida**. También puede acumular varias confirmaciones locales antes de insertar en la instancia remota.
 
     ![Inserción de confirmaciones en instancia remota en Team Explorer](media/django/step02-source-control-push-to-remote.png)
 

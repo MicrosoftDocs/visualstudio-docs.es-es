@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632919"
 ---
 # <a name="rc-task"></a>RC (tarea)
@@ -40,7 +40,7 @@ Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La 
 |Parámetro|Description|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Parámetro **String[]** opcional.<br /><br /> Agrega un directorio a la lista de directorios en que se buscan archivos de inclusión.<br /><br /> Para más información, consulte la opción **/I** en [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso de RC [línea de comandos de RC]).|
-|**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de línea de comandos; por ejemplo, /\<option1> /\<option2> /\<option#>. Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **RC**.<br /><br /> Para más información, consulte las opciones de [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso de RC [línea de comandos de RC]).|
+|**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de la línea de comandos; por ejemplo, /\<option1> /\<option2> /\<option#>. Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **RC**.<br /><br /> Para más información, consulte las opciones de [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso de RC [línea de comandos de RC]).|
 |**Referencia cultural**|Parámetro **String** opcional.<br /><br /> Especifica un identificador de configuración regional que representa la referencia cultural usada en los recursos.<br /><br /> Para más información, consulte la opción **/l** en [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso de RC [línea de comandos de RC]).|
 |**IgnoreStandardIncludePath**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, impide que el compilador de recursos compruebe la variable de entorno INCLUDE cuando busca archivos de encabezado o archivos de recursos.<br /><br /> Para más información, consulte la opción **/x** en [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso de RC [línea de comandos de RC]).|
 |**NullTerminateStrings**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, se finalizan todas las cadenas de la tabla de strings con NULL.<br /><br /> Para más información, consulte la opción **/n** en [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso de RC [línea de comandos de RC]).|

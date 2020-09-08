@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633478"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
@@ -323,7 +323,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro `Boolean` opcional.
 
-     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.
+     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia. 
 
      Para obtener más información, vea la opción **/nologo** en [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
@@ -335,7 +335,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de la línea de comandos|
+    |Value|Opción de línea de comandos|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
@@ -358,7 +358,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de la línea de comandos|
+    |Value|Opción de línea de comandos|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -407,7 +407,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    |Valor|Opción de la línea de comandos|
+    |Value|Opción de línea de comandos|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|

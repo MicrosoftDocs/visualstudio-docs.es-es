@@ -11,13 +11,13 @@ no-loc:
 - Blazor WebAssembly
 ms.topic: how-to
 ms.openlocfilehash: 86a8c35d2a379d6afbbe6cf55f53346223e7c462
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86211586"
 ---
-# <a name="create-blazor-web-apps"></a>Creación de aplicaciones web de Blazor
+# <a name="create-no-locblazor-web-apps"></a>Creación de aplicaciones web de Blazor
 
 Esta guía proporciona una introducción a la creación de su primera aplicación web de Blazor. Para obtener instrucciones más detalladas, vea [Introducción a ASP.NET Core Blazor](/aspnet/core/blazor/index).
 
@@ -32,7 +32,7 @@ Blazor en ASP.NET Core admite dos opciones de hospedaje diferentes: Blazor Serv
 * Mantenga la productividad con Visual Studio en PC, Linux y macOS.
 * Compile sobre un conjunto común de lenguajes, marcos y herramientas que son estables, completos y fáciles de usar.
 
-## <a name="creating-a-new-blazor-server-project"></a>Creación de un proyecto de Blazor Server
+## <a name="creating-a-new-no-locblazor-server-project"></a>Creación de un proyecto de Blazor Server
 
 1. En la **ventana de inicio**, seleccione **Nuevo** para crear un nuevo proyecto:
 
@@ -40,19 +40,19 @@ Blazor en ASP.NET Core admite dos opciones de hospedaje diferentes: Blazor Serv
 1. En el cuadro de diálogo **Nuevo proyecto**, seleccione **.NET Core** > **Aplicación** > **Aplicación de servidor Blazor** y seleccione **Siguiente**: ![Cuadro de diálogo Elija una plantilla para el nuevo proyecto con la plantilla Aplicación de servidor Blazor seleccionada](media/blazor-project-template.png)
 
 1. Seleccione .NET Core 3.1 como marco de destino y, a continuación, seleccione **Siguiente**. 
-   ![Cuadro de diálogo Configure your new Blazor Server App (Configure su nueva aplicación de servidor Blazor) abierto con .NET Core 3.1 seleccionado como marco de destino](media/blazor-select-target-framework.png)
+   ![Cuadro de diálogo Configure su nueva aplicación de servidor Blazor abierto con .NET Core 3.1 seleccionado como marco de destino](media/blazor-select-target-framework.png)
 
 1. Elija un nombre para el proyecto y, si lo desea, agregue la compatibilidad con GIT. Seleccione **Crear** para crear el proyecto.
-   ![Cuadro de diálogo Configure your new Blazor Server App (Configure su nueva aplicación de servidor Blazor) abierto mientras se especifica el nombre del proyecto](media/blazor-name-project.png)
+   ![Cuadro de diálogo Configuración de la nueva aplicación de servidor Blazor abierto mientras se escribe el nombre del proyecto](media/blazor-name-project.png)
 
    Visual Studio para Mac abrirá el proyecto en la ventana de diseño de código.
 1. Seleccione **Ejecutar** > **Iniciar sin depurar** para ejecutar la aplicación.
 
    Visual Studio inicia [Kestrel](/aspnet/core/fundamentals/servers/kestrel), abre un explorador en `https://localhost:5001` y muestra la aplicación web de Blazor.
 
-   Aplicación web de ![Blazor en Safari](media/blazor-new-app-in-edge.png)
+   ![Aplicación web Blazor en Safari](media/blazor-new-app-in-edge.png)
 
-## <a name="blazor-support-in-visual-studio-for-mac"></a>Compatibilidad con Blazor en Visual Studio para Mac
+## <a name="no-locblazor-support-in-visual-studio-for-mac"></a>Compatibilidad con Blazor en Visual Studio para Mac
 
 Visual Studio para Mac (a partir de la versión 8.4) incluye nuevas características que le ayudarán a crear proyectos de servidor Blazor. Además, proporciona el soporte técnico Standard que cabría esperar, como la compilación, ejecución y depuración de proyectos de Blazor. En Visual Studio para Mac 8.6, se agregó compatibilidad con la creación, compilación y ejecución de proyectos de Blazor WebAssembly.
 
@@ -63,7 +63,7 @@ Visual Studio para Mac incluye compatibilidad con la edición de archivos .raz
 
 ![Ventana del editor de Visual Studio para Mac en la que se muestra IntelliSense para Blazor](media/blazor-intellisense.png)
 
-### <a name="publishing-blazor-applications-to-azure-app-service"></a>Publicación de aplicaciones Blazor en Azure App Service
+### <a name="publishing-no-locblazor-applications-to-azure-app-service"></a>Publicación de aplicaciones Blazor en Azure App Service
 Las aplicaciones Blazor también se pueden publicar directamente en Azure App Service. Si no tiene una cuenta de Azure para ejecutar su aplicación Blazor en Azure, siempre puede [suscribirse a una cuenta gratuita](https://azure.microsoft.com/free) aquí que también incluya 12 meses de servicios populares gratuitos, 200 USD de créditos de Azure gratuitos y más de 25 servicios gratuitos para siempre.
 
 ![Visual Studio para Mac que muestra la experiencia de publicación de Azure](media/blazor-azure-publish.png)

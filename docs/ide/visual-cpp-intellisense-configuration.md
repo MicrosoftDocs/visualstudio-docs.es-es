@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279318"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar un proyecto de C++ para IntelliSense
@@ -38,7 +38,7 @@ Si ejecuta las compilaciones fuera del IDE de Visual Studio y se realizan correc
 
 ![Directorios de archivos de inclusión de VC++](media/vcpp-intellisense-include-paths.png)
 
-Para ver los valores actuales de las macros de compilación como **VC_IncludePath**, seleccione la línea Directorios de archivos de inclusión y haga clic en el menú desplegable de la derecha. Luego elija **\<Editar>** y haga clic en el botón **Macros**.
+Para ver los valores actuales de las macros de compilación como **VC_IncludePath**, seleccione la línea Directorios de archivos de inclusión y haga clic en el menú desplegable de la derecha. Después, elija **\<Edit>** y haga clic en el botón **Macros**.
 
 ### <a name="makefile-projects"></a>proyectos de archivos Make
 

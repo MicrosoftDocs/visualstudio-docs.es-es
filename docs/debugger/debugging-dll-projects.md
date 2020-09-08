@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301168"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315075"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depuración de archivos DLL en Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -66,7 +66,7 @@ Para más información, vea [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-
 
 ### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a> Establecimiento de ubicaciones de archivo DLL de C/C++
 
-Para depurar un archivo DLL externo, un proyecto que realiza una llamada debe ser capaz de encontrar el archivo DLL, su [archivo. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) y cualquier otro archivo que necesite el archivo DLL. Se puede crear una tarea de compilación personalizada para copiar estos archivos en la carpeta de salida *\<carpeta de proyecto>\Debug* o se pueden copiar los archivos en ella manualmente.
+Para depurar un archivo DLL externo, un proyecto que realiza una llamada debe ser capaz de encontrar el archivo DLL, su [archivo. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) y cualquier otro archivo que necesite el archivo DLL. Puede crear una tarea de compilación personalizada para copiar estos archivos en la carpeta de salida *\<project folder>\Debug*, o bien copiarlos en ella de forma manual.
 
 Para proyectos de C/C++, puede establecer las ubicaciones de los archivos LIB y de encabezado en las páginas de propiedades del proyecto, en lugar de copiarlas en la carpeta de salida.
 
@@ -90,7 +90,7 @@ Para más información sobre la configuración de proyectos de C++, vea [Referen
 
 Asegúrese de compilar una versión de depuración del archivo DLL antes de iniciar la depuración. Para depurar un archivo DLL, una aplicación que realiza una llamada debe ser capaz de encontrar su [archivo .pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) y cualquier otro archivo que necesite el archivo DLL.
 
-Se puede crear una tarea de compilación personalizada para copiar estos archivos DLL en la carpeta de salida *\<carpeta de proyecto que llama>\Debug* o se pueden copiar los archivos en ella manualmente.
+Puede crear una tarea de compilación personalizada para copiar los archivos DLL en la carpeta de salida *\<calling project folder>\Debug*, o bien puede copiarlos en ella de forma manual.
 
 Asegúrese de llamar al archivo DLL en su ubicación correcta. Esto puede parecer obvio, pero si una aplicación que llama encuentra y carga una copia diferente del archivo DLL, el depurador nunca alcanzará los puntos de interrupción que se establezcan.
 

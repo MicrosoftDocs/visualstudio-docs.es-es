@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación basada en red
 description: Obtenga información sobre cómo crear un punto de instalación de red para la implementación de Visual Studio dentro de una empresa.
-ms.date: 03/27/2020
+ms.date: 08/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
-ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
+ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759731"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992360"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 
@@ -73,7 +73,7 @@ Otros programas previos admitidos incluyen [vs_teamexplorer.exe](https://downloa
 Deberá disponer de conexión a Internet para poder completar este paso. Para crear una instalación sin conexión con todos los lenguajes y todas las características, use un comando similar a uno de los ejemplos siguientes:
 
    > [!IMPORTANT]
-   > Un diseño completo de Visual Studio requiere como mínimo 35 GB de espacio en disco y puede tardar un poco en descargarse. Consulte la sección [Personalización del diseño de red](#customize-the-network-layout) para detalles sobre cómo crear un diseño únicamente con los componentes que desea instalar.
+   > Un diseño completo para una configuración regional de un solo idioma requiere aproximadamente 35 GB de espacio en disco para Visual Studio Community y 42 GB para Visual Studio Enterprise. Las [configuraciones regionales de idiomas](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) adicionales requieren aproximadamente 0,5 GB cada una. Vea la sección [Personalización del diseño de red](#customize-the-network-layout) para obtener más información.
    >
    > [!TIP]
    > Asegúrese de ejecutar el comando desde el directorio de descarga. Normalmente, es `C:\Users\<username>\Downloads` en un equipo que ejecuta Windows 10.
@@ -96,7 +96,7 @@ Y, si surge un problema con el programa previo de Visual Studio que genera un e
 
 Hospede el diseño en un recurso compartido de red para que se pueda ejecutar desde otras máquinas.
 
-En el ejemplo siguiente se usa [xcopy](/windows-server/administration/windows-commands/xcopy/). También puede usar [robocopy](/windows-server/administration/windows-commands/robocopy/), si quiere.  
+En el ejemplo siguiente se usa [xcopy](/windows-server/administration/windows-commands/xcopy/). También puede usar [robocopy](/windows-server/administration/windows-commands/robocopy/), si quiere.
 
 ::: moniker range="vs-2017"
 

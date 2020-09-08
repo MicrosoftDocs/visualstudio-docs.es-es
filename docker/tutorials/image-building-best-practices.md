@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial de Docker, parte 8: capas de imágenes'
-description: Cómo examinar y administrar las capas de imagen en las imágenes de Docker.
+title: 'Tutorial de Docker - Parte 8: Capas de imágenes'
+description: Procedimiento para examinar y administrar capas de imagen en imágenes de Docker.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: eae21a729f30a0c77fa52e5774a2f5157286dab1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176819"
 ---
 # <a name="image-layering"></a>Capas de imágenes
 
-¿Sabía que puede ver lo que conforma una imagen? Con el `docker image history` comando, puede ver el comando que se usó para crear cada capa dentro de una imagen.
+¿Sabía que puede ver lo que conforma una imagen? Con el comando `docker image history`, puede ver el comando que se ha usado para crear cada capa dentro de una imagen.
 
-1. Use el `docker image history` comando para ver las capas de la `getting-started` imagen que creó anteriormente en el tutorial.
+1. Use el comando `docker image history` para ver las capas de la imagen `getting-started` que ha creado antes en el tutorial.
 
     ```bash
     docker image history getting-started
@@ -45,9 +45,9 @@ ms.locfileid: "89176819"
     <missing>           13 days ago         /bin/sh -c #(nop) ADD file:e69d441d729412d24…   5.59MB   
     ```
 
-    Cada una de las líneas representa una capa en la imagen. En la pantalla siguiente se muestra la base en la parte inferior con la capa más reciente en la parte superior. Con esto, también puede ver rápidamente el tamaño de cada capa, lo que ayuda a diagnosticar imágenes grandes.
+    Cada una de las líneas representa una capa en la imagen. En esta pantalla se muestra la base en la parte inferior y la capa más reciente en la parte superior. Con esto, también puede ver rápidamente el tamaño de cada capa, lo que ayuda a diagnosticar imágenes grandes.
 
-1. Observará que algunas de las líneas se truncan. Si agrega la `--no-trunc` marca, obtendrá la salida completa (sí, se usa una marca truncada para obtener la salida no truncada).
+1. Observará que algunas de las líneas se truncan. Si agrega la marca `--no-trunc`, obtendrá la salida completa (sí, se usa una marca truncada para obtener una salida no truncada).
 
     ```bash
     docker image history --no-trunc getting-started
@@ -55,11 +55,11 @@ ms.locfileid: "89176819"
 
 ## <a name="layer-caching"></a>Almacenamiento en caché de capas
 
-Ahora que ha visto el nivel de acción, hay una lección importante para aprender a reducir los tiempos de compilación de las imágenes de contenedor.
+Ahora que ha visto las capas en funcionamiento, debe aprender algo importante para reducir los tiempos de compilación de las imágenes de contenedor.
 
-> Una vez que una capa cambia, también se deben volver a crear todas las capas inferiores
+> Después de que cambie una capa, también se deben volver a crear todas las capas inferiores
 
-Echemos un vistazo a la Dockerfile que estaba usando una vez más...
+Volverá a examinar el Dockerfile que ha usado antes.
 
 ```dockerfile
 FROM node:12-alpine
@@ -69,11 +69,11 @@ RUN yarn install --production
 CMD ["node", "/app/src/index.js"]
 ```
 
-Volviendo a la salida del historial de imágenes, verá que cada comando de Dockerfile se convierte en una nueva capa de la imagen. Es posible que recuerde que cuando realizó un cambio en la imagen, las dependencias de los hilados tenían que volver a instalarse. ¿Hay alguna manera de solucionar esto? No tiene mucho sentido enviar las mismas dependencias cada vez que compila, ¿bien?
+De nuevo en la salida del historial de imágenes, verá que cada comando del Dockerfile se convierte en una nueva capa de la imagen. Es posible que recuerde que cuando realizó un cambio en la imagen, tuvo que volver a instalar las dependencias de Yarn. ¿Hay alguna manera de solucionar esto? No tiene mucho sentido enviar las mismas dependencias cada vez que se compila, ¿verdad?
 
-Para solucionarlo, puede reestructurar el Dockerfile para ayudar al almacenamiento en caché de las dependencias. En el caso de las aplicaciones basadas en nodos, dichas dependencias se definen en el `package.json` archivo. Por lo tanto, ¿qué ocurre si solo copió ese archivo en primer lugar, instala las dependencias y *después* copia en todo lo demás? A continuación, solo vuelve a crear las dependencias de hilados si se produjo un cambio en `package.json` . ¿Tiene sentido?
+Para solucionarlo, puede reestructurar el Dockerfile para que se admita el almacenamiento en caché de las dependencias. En el caso de las aplicaciones basadas en Node, esas dependencias se definen en el archivo `package.json`. Por tanto, ¿qué ocurre si primero solo copia ese archivo, instala las dependencias y *después* copia todo lo demás? Luego, solo tiene que volver a crear las dependencias de Yarn si se ha producido un cambio en `package.json`. ¿Tiene sentido?
 
-1. Actualice el Dockerfile para copiarlo en el `package.json` primero, instale las dependencias y, a continuación, copie todo lo demás en.
+1. Actualice el Dockerfile para copiar primero `package.json`, instale las dependencias y, después, copie todo lo demás.
 
     ```dockerfile hl_lines="3 4 5"
     FROM node:12-alpine
@@ -84,13 +84,13 @@ Para solucionarlo, puede reestructurar el Dockerfile para ayudar al almacenamien
     CMD ["node", "/app/src/index.js"]
     ```
 
-1. Cree una nueva imagen mediante `docker build` .
+1. Compile una nueva imagen mediante `docker build`.
 
     ```bash
     docker build -t getting-started .
     ```
 
-    Debería ver un resultado similar al siguiente...
+    Debería ver una salida como esta...
 
     ```plaintext
     Sending build context to Docker daemon  219.1kB
@@ -123,11 +123,11 @@ Para solucionarlo, puede reestructurar el Dockerfile para ayudar al almacenamien
     Successfully tagged getting-started:latest
     ```
 
-    Verá que todas las capas se han vuelto a generar. Perfectamente bien, dado que cambió el Dockerfile bastante.
+    Verá que todas las capas se han vuelto a generar. Todo correcto, porque ha modificado considerablemente el Dockerfile.
 
-1. Ahora, realice un cambio en el `src/static/index.html` archivo (por ejemplo, cambie el `<title>` para decir "la aplicación maravilla todo").
+1. Ahora, realice un cambio en el archivo `src/static/index.html` (por ejemplo, cambie `<title>` para que indique "The Awesome Todo App").
 
-1. Compilar la imagen de Docker ahora con el uso de `docker build` nuevo. Esta vez, la salida debe tener un aspecto ligeramente diferente.
+1. Vuelva a compilar la imagen de Docker, ahora con `docker build`. Esta vez, la salida debe tener un aspecto ligeramente diferente.
 
     ```plaintext hl_lines="5 8 11"
     Sending build context to Docker daemon  219.1kB
@@ -152,19 +152,19 @@ Para solucionarlo, puede reestructurar el Dockerfile para ayudar al almacenamien
     Successfully tagged getting-started:latest
     ```
 
-    En primer lugar, debe tener en cuenta que la compilación fue mucho más rápida. Además, verá que todos los pasos del 1-4 `Using cache` . Por lo tanto, alegría! Está usando la memoria caché de compilación. Insertar y extraer esta imagen y actualizarla también será mucho más rápido. Alegría!
+    En primer lugar, debe tener en cuenta que la compilación ha sido mucho más rápida. Además, verá que todos los pasos 1-4 tienen `Using cache`. Enhorabuena. Usa la caché de compilación. La inserción y extracción de esta imagen (y su actualización) también serán mucho más rápidas. Enhorabuena.
 
 ## <a name="multi-stage-builds"></a>Compilaciones de varias fases
 
-Aunque no vamos a profundizar en él demasiado en este tutorial, las compilaciones en varias fases son una herramienta increíblemente eficaz que ayuda a usar varias fases para crear una imagen. Hay varias ventajas para ello:
+Aunque en este tutorial no se va a profundizar demasiado en este concepto, las compilaciones en varias fases son una herramienta increíblemente eficaz que ayuda a usar varias fases para crear una imagen. Ofrecen varias ventajas:
 
 - Dependencias de tiempo de compilación independientes de las dependencias en tiempo de ejecución
-- Reducir el tamaño total de la imagen enviando *solo* lo que la aplicación necesita para ejecutarse
+- Reducción del tamaño total de la imagen mediante el envío *exclusivo* de lo que la aplicación necesita para ejecutarse.
 
 ### <a name="maventomcat-example"></a>Ejemplo de Maven/Tomcat
 
-Al compilar aplicaciones basadas en Java, se necesita un JDK para compilar el código fuente en el código de bytes de Java. Sin embargo, ese JDK no es necesario en producción. Además, es posible que use herramientas como Maven o Gradle para ayudar a compilar la aplicación.
-Estos tampoco son necesarios en la imagen final. Ayuda para las compilaciones en varias fases.
+Al compilar aplicaciones basadas en Java, se necesita un JDK para compilar el código fuente en código de bytes de Java. Pero ese JDK no es necesario en producción. Además, es posible que use herramientas como Maven o Gradle para compilar la aplicación.
+Tampoco son necesarias en la imagen final. La ayuda proviene de las compilaciones de varias fases.
 
 ```dockerfile
 FROM maven AS build
@@ -176,11 +176,11 @@ FROM tomcat
 COPY --from=build /app/target/file.war /usr/local/tomcat/webapps 
 ```
 
-En este ejemplo se usa una fase (denominada `build` ) para realizar la compilación real de Java con Maven. La segunda fase (a partir de `FROM tomcat` ) copia los archivos de la `build` fase. La imagen final es solo la última fase que se crea (que se puede invalidar mediante la `--target` marca).
+En este ejemplo se usa una fase (llamada `build`) para realizar la compilación real de Java mediante Maven. La segunda fase (a partir de `FROM tomcat`) copia los archivos de la fase `build`. La imagen final es solo la última fase que se va a crear (que se puede invalidar con la marca `--target`).
 
-### <a name="react-example"></a>Ejemplo de reAct
+### <a name="react-example"></a>Ejemplo de React
 
-Al compilar aplicaciones de reAct, necesita un entorno de nodo para compilar el código de JS (normalmente, JSX), hojas de estilos de SASS y mucho más en HTML, JS y CSS estático. Si no está realizando la representación del lado servidor, ni siquiera necesita un entorno de nodo para la compilación de producción. ¿Por qué no enviar los recursos estáticos en un contenedor nginx estático?
+Al compilar aplicaciones de React, se necesita un entorno de Node para compilar el código de JS (normalmente, JSX), hojas de estilos de SASS y mucho más en HTML, JS y CSS estático. Si no va a realizar la representación del lado servidor, ni siquiera necesita un entorno de Node para la compilación de producción. ¿Por qué no enviar los recursos estáticos en un contenedor nginx estático?
 
 ```dockerfile
 FROM node:12 AS build
@@ -195,11 +195,11 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 ```
 
-Aquí se usa una `node:12` imagen para realizar la compilación (maximizando el almacenamiento en caché de capas) y luego copiar la salida en un contenedor nginx. Genial, ¿verdad?
+Aquí se usa una imagen de `node:12` para realizar la compilación (y maximizar el almacenamiento en caché de las capas) y, después, copiar la salida en un contenedor nginx. Genial, ¿verdad?
 
 ## <a name="recap"></a>Resumen
 
-Al comprender un poco más sobre cómo se estructuran las imágenes, puede crear imágenes más rápido y enviar menos cambios. Las compilaciones de varias fases también ayudan a reducir el tamaño total de la imagen y a aumentar la seguridad de los contenedores mediante la separación de las dependencias en tiempo de compilación de las dependencias del tiempo de ejecución.
+Al comprender un poco más la estructura de las imágenes, puede crearlas más rápidamente y enviar menos cambios. Las compilaciones de varias fases también ayudan a reducir el tamaño total de la imagen y a aumentar la seguridad de los contenedores mediante la separación de las dependencias en tiempo de compilación de las dependencias en tiempo de ejecución.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

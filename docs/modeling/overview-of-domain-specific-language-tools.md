@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532372"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
-Herramientas del lenguaje específico de dominio (herramientas de DSL), que se hospedan en Visual Studio, permiten diseñar un lenguaje específico de dominio y, a continuación, generar todo lo que los usuarios deben tener para crear modelos basados en el idioma.
+Las Herramientas del lenguaje específico de dominio (Herramientas DSL), que se hospedan en Visual Studio, permiten diseñar un lenguaje específico de dominio y, después, generar todo lo que los usuarios necesitan para crear modelos basados en el lenguaje.
 
  En Herramientas DSL se incluyen estas herramientas:
 
@@ -48,7 +48,7 @@ Herramientas del lenguaje específico de dominio (herramientas de DSL), que se h
 
   Para obtener más información, vea [Elección de una plantilla de solución de lenguaje específico de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-  El asistente crea una solución de Visual Studio que tiene los siguientes proyectos:
+  El asistente crea una solución de Visual Studio que tiene los proyectos siguientes:
 
 - Dsl
 
@@ -56,7 +56,7 @@ Herramientas del lenguaje específico de dominio (herramientas de DSL), que se h
 
 - **DslPackage**
 
-   El proyecto DslPackage determina cómo se integran las herramientas de lenguaje con Visual Studio.
+   El proyecto DslPackage determina cómo se integran las herramientas de lenguaje con Visual Studio.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>Interfaz gráfica de Herramientas DSL
  Puede usar la interfaz gráfica de Herramientas DSL para agregar elementos y relaciones al lenguaje específico de dominio. Después de agregar los elementos, puede definir su apariencia si los asigna a las formas, personaliza los colores y agrega elementos Decorator. También puede agregar los elementos al cuadro de herramientas.
@@ -70,11 +70,11 @@ Herramientas del lenguaje específico de dominio (herramientas de DSL), que se h
  Puede proporcionar código adicional para refinar el comportamiento del modelo y definir restricciones sobre el lenguaje. Si es necesario, puede realizar cambios importantes mediante la modificación de plantillas de texto.
 
 ## <a name="distributing-your-dsl-solution"></a>Distribución de la solución de DSL
- DSL tools genera un paquete que se hospeda en Visual Studio. El paquete muestra un cuadro de herramientas, un explorador de DSL y otros elementos de interfaz de usuario que permiten a los usuarios crear modelos mediante el lenguaje específico de dominio.
+ Herramientas DSL genera un paquete que se hospeda en Visual Studio. El paquete muestra un cuadro de herramientas, un explorador de DSL y otros elementos de interfaz de usuario que permiten a los usuarios crear modelos mediante el lenguaje específico de dominio.
 
- Al compilar y ejecutar la solución DSL Tools en Visual Studio, una segunda instancia de Visual Studio muestra cómo el lenguaje específico del dominio busca el usuario del idioma. Después de comprobar que todo funciona correctamente, puede distribuir el archivo `.vsix` que encontrará en la carpeta de compilación del proyecto DslPackage. Este archivo se puede usar para instalar DSL como extensión de Visual Studio en otros equipos.  Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](msi-and-vsix-deployment-of-a-dsl.md).
+ Al compilar y ejecutar la solución Herramientas de DSL en Visual Studio, en una segunda instancia de Visual Studio se muestra el aspecto del lenguaje específico de dominio para el usuario del lenguaje. Después de comprobar que todo funciona correctamente, puede distribuir el archivo `.vsix` que encontrará en la carpeta de compilación del proyecto DslPackage. Este archivo se puede usar para instalar DSL como una extensión de Visual Studio en otros equipos.  Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Instancia experimental](../extensibility/the-experimental-instance.md)
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

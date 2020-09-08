@@ -8,17 +8,17 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82109434"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tema se enumeran los miembros públicos de espacio de nombres `Microsoft::VisualStudio::CppUnitTestFramework`. Use estas API para escribir pruebas unitarias de C++ basadas en el marco de pruebas unitarias de tipo nativo de Microsoft. Al final del tema encontrará un [ejemplo de uso](#example).
 
-Los archivos lib y de encabezado se encuentran en la *\<carpeta de instalación de Visual Studio>\VC\Auxiliary\VS\UnitTest*.
+Los archivos lib y de encabezado se encuentran en *\<Visual Studio installation folder>\VC\Auxiliary\VS\UnitTest*.
 
 Las rutas de acceso de encabezado y biblioteca se configuran automáticamente en un proyecto de prueba nativo.
 

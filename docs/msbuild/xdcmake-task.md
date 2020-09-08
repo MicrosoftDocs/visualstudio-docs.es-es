@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630657"
 ---
 # <a name="xdcmake-task"></a>XDCMake (tarea)
@@ -45,7 +45,7 @@ Incluye la herramienta Documentación XML (*xdcmake.exe*), que combina archivos 
 |**AdditionalDocumentFile**|Parámetro **String[]** opcional.<br /><br /> Especifica uno o más archivos *.xdc* adicionales que se van a combinar.<br /><br /> Para más información, consulte la descripción **Archivos de documento adicionales** en [Páginas de propiedades de la herramienta Generador de documentos XML](/cpp/build/reference/xml-document-generator-tool-property-pages). Consulte también las opciones de la línea de comandos **/old** y **/Fs** de *xdcmake.exe*.|
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones especificada en la línea de comando. Por ejemplo, /\<option1> /\<option2> /\<option#>. Use este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **XDCMake**.<br /><br /> Para más información, consulte [Referencia de XDCMake](/cpp/build/reference/xdcmake-reference), [Páginas de propiedades de la herramienta Generador de documentos XML](/cpp/build/reference/xml-document-generator-tool-property-pages) y la ayuda de la línea de comandos ( **/?** ) de *xdcmake.exe*.|
 |**DocumentLibraryDependencies**|Parámetro **Boolean** opcional.<br /><br /> Si es `true` y el proyecto actual tiene una dependencia en un proyecto de biblioteca estática ( *.lib*) en la solución, los archivos *.xdc* de ese proyecto de biblioteca se incluyen en la salida del archivo *.xml* para el proyecto actual.<br /><br /> Para más información, consulte la descripción **Dependencias de biblioteca de documentos** en [Páginas de propiedades de la herramienta Generador de documentos XML](/cpp/build/reference/xml-document-generator-tool-property-pages).|
-|**OutputFile**|Parámetro **String** opcional.<br /><br /> Reemplaza el nombre del archivo de salida predeterminado. El nombre predeterminado se deriva del nombre del primer archivo *.xdc* procesado.<br /><br /> Para más información, consulte la opción **/out:\<nombre de archivo>** en [Referencia de XDCMake](/cpp/build/reference/xdcmake-reference). Consulte también las opciones de la línea de comandos **/old** y **/Fo** de *xdcmake.exe*.|
+|**OutputFile**|Parámetro **String** opcional.<br /><br /> Reemplaza el nombre del archivo de salida predeterminado. El nombre predeterminado se deriva del nombre del primer archivo *.xdc* procesado.<br /><br /> Para obtener más información, vea la opción **/out:\<filename>** en [Referencia de XDCMake](/cpp/build/reference/xdcmake-reference). Consulte también las opciones de la línea de comandos **/old** y **/Fo** de *xdcmake.exe*.|
 |**ProjectName**|Parámetro **String** opcional.<br /><br /> Nombre del proyecto actual.|
 |**SlashOld**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, habilita opciones adicionales de *xdcmake.exe*.<br /><br /> Para más información, consulte la opción de línea de comandos **/old** de *xdcmake.exe*.|
 |**Sources**|Parámetro `ITaskItem[]` requerido.<br /><br /> Define una matriz de elementos de archivo origen de MSBuild que las tareas pueden consumir y emitir.|

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634063"
 ---
 # <a name="generateresource-task"></a>GenerateResource (tarea)
@@ -84,7 +84,7 @@ En el ejemplo siguiente se usa la tarea `GenerateResource` para generar archivos
 </GenerateResource>
 ```
 
-La tarea `GenerateResource` utiliza los metadatos \<LogicalName> de un elemento \<EmbeddedResource> para denominar el recurso insertado en un ensamblado.
+La tarea `GenerateResource` usa los metadatos \<LogicalName> de un elemento \<EmbeddedResource> para asignar un nombre al recurso insertado en un ensamblado.
 
 Si se da por hecho que el ensamblado se denomina myAssembly, el siguiente código genera un recurso insertado denominado *someQualifier.someResource.resources*:
 
@@ -96,7 +96,7 @@ Si se da por hecho que el ensamblado se denomina myAssembly, el siguiente códig
 </ItemGroup>
 ```
 
-Sin los metadatos \<LogicalName>, el recurso se denominaría *myAssembly.myResource.resources*.  Este ejemplo solo se aplica al proceso de compilación de Visual Basic y Visual C#.
+Sin los metadatos de \<LogicalName>, el recurso se denominaría *myAssembly.myResource.resources*.  Este ejemplo solo se aplica al proceso de compilación de Visual Basic y Visual C#.
 
 ## <a name="see-also"></a>Vea también
 

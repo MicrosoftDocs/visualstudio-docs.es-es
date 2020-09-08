@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307110"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315127"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
@@ -37,7 +37,7 @@ Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django
 
 ### <a name="blank-group"></a>Grupo en blanco
 
-Todas las plantillas **Proyecto web de \<marco> en blanco** crean un proyecto con más o menos el código reutilizable mínimo y las dependencias necesarias declaradas en un archivo *requirements.txt*.
+Todas las plantillas **Proyecto web de \<framework> en blanco** crean un proyecto con más o menos el código reutilizable mínimo y las dependencias necesarias declaradas en un archivo *requirements.txt*.
 
 | Plantilla | Description |
 | --- | --- |
@@ -47,7 +47,7 @@ Todas las plantillas **Proyecto web de \<marco> en blanco** crean un proyecto co
 
 ### <a name="web-group"></a>Grupo web
 
-Todas las plantillas **Proyecto web de \<marco>** crean una aplicación web de inicio con un diseño idéntico, con independencia del marco elegido. La aplicación tiene una página de inicio, otra de Acerca de y otra de contacto, además de una barra de navegación y un diseño dinámico que usa el arranque. Cada aplicación está correctamente configurada para archivos estáticos (CSS, JavaScript y fuentes) y usa un mecanismo de plantilla de página adecuado para el marco.
+Todas las plantillas **Proyecto web de \<Framework>** crean una aplicación web de inicio con un diseño idéntico, con independencia del marco elegido. La aplicación tiene una página de inicio, otra de Acerca de y otra de contacto, además de una barra de navegación y un diseño dinámico que usa el arranque. Cada aplicación está correctamente configurada para archivos estáticos (CSS, JavaScript y fuentes) y usa un mecanismo de plantilla de página adecuado para el marco.
 
 | Plantilla | Description |
 | --- | --- |
@@ -58,7 +58,7 @@ Todas las plantillas **Proyecto web de \<marco>** crean una aplicación web de i
 
 ### <a name="polls-group"></a>Grupo de sondeos
 
-Las plantillas **Proyecto web de \<marco> de sondeos** crean una aplicación web de inicio con la que los usuarios pueden votar sobre distintas preguntas de sondeo. Cada aplicación se basa en la estructura de las plantillas de proyecto **web** para usar una base de datos para administrar los sondeos y las respuestas de los usuarios. Las aplicaciones incluyen modelos de datos apropiados y una página de aplicación especial (/seed) que carga los sondeos desde un archivo *samples.json*.
+Las plantillas **Proyecto web de \<framework> de sondeos** crean una aplicación web de inicio con la que los usuarios pueden votar sobre distintas preguntas de sondeo. Cada aplicación se basa en la estructura de las plantillas de proyecto **web** para usar una base de datos para administrar los sondeos y las respuestas de los usuarios. Las aplicaciones incluyen modelos de datos apropiados y una página de aplicación especial (/seed) que carga los sondeos desde un archivo *samples.json*.
 
 | Plantilla | Description |
 | --- | --- |

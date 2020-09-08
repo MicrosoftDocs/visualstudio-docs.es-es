@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183832"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Definición de archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
@@ -182,21 +182,21 @@ Compile con **/debug** para crear un archivo *.pdb*. Puede compilar las aplicaci
 
 ### <a name="cc-options"></a>Opciones de C/C++
 
-- Archivos *VC\<x>.pdb* y *\<proyecto>.pdb*
+- Archivos *VC\<x>.pdb* y *\<project>.pdb*
 
-  Cuando se compila con [/ZI o /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format), se crea un archivo *.pdb* para C/C++ . En [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], la opción [/Fd](/cpp/build/reference/fd-program-database-file-name) asigna nombre al archivo *.pdb* creado por el compilador. Al crear un proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con el IDE, se establece la opción **/Fd** para crear un archivo *.pdb* denominado *\<proyecto>.pdb*.
+  Cuando se compila con [/ZI o /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format), se crea un archivo *.pdb* para C/C++ . En [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], la opción [/Fd](/cpp/build/reference/fd-program-database-file-name) asigna nombre al archivo *.pdb* creado por el compilador. Al crear un proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con el IDE, se establece la opción **/Fd** para crear un archivo *.pdb* denominado *\<project>.pdb*.
 
   Si compila una aplicación de C/C++ mediante un archivo Make y especifica **/ZI** o **/Zi** sin usar **/Fd**, el compilador creará dos archivos *.pdb*:
 
   - *VC\<x>.pdb*, donde *\<x>* representa la versión del compilador de Microsoft C++, por ejemplo *VC11.pdb*
 
-    El archivo *VC\<x>.pdb* almacena toda la información de depuración de los archivos de objeto individuales y reside en el mismo directorio que el archivo Make del proyecto. Cada vez que crea un archivo de objeto, el compilador de C/C++ combina la información de depuración en *VC\<x>.pdb*. Por lo tanto, aunque cada archivo de código fuente incluya archivos de encabezado comunes como *\<windows.h>* , las definiciones de tipo de esos encabezados solo se almacenan una vez, en vez de aparecer en cada archivo de objeto. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función.
+    En el archivo *VC\<x>.pdb* se almacena toda la información de depuración de los archivos de objeto individuales y reside en el mismo directorio que el archivo Make del proyecto. Cada vez que crea un archivo de objeto, el compilador de C/C++ combina la información de depuración en *VC\<x>.pdb*. Por tanto, aunque cada archivo de código fuente incluya archivos de encabezado comunes como *\<windows.h>* , las definiciones de tipo de esos encabezados solo se almacenan una vez, en lugar de aparecer en todos los archivos de objeto. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función.
 
   - *\<project>.pdb*
 
-    El archivo *\<proyecto>. pdb* almacena toda la información de depuración del archivo *.exe* del proyecto y reside en el subdirectorio *\debug*. El archivo *\<proyecto.pdb* contiene toda la información de depuración, incluidos los prototipos de función, y no solo la información de tipo que se encuentra en *VC\<x>.pdb*.
+    En el archivo *\<project>.pdb* se almacena toda la información de depuración del archivo *.exe* del proyecto y reside en el subdirectorio *\debug*. El archivo *\<project>.pdb* contiene toda la información de depuración, incluidos los prototipos de función, no solo la información de tipos que se encuentra en *VC\<x>.pdb*.
 
-  Los archivos *VC\<x>.pdb* y *\<proyecto>.pdb* permiten actualizaciones incrementales. El vinculador también inserta la ruta de acceso a los archivos *.pdb* en el archivo *.exe* o *.dll* que crea.
+  Los archivos *VC\<x>.pdb* y *\<project>.pdb* permiten actualizaciones incrementales. El vinculador también inserta la ruta de acceso a los archivos *.pdb* en el archivo *.exe* o *.dll* que crea.
 
 - <a name="use-dumpbin-exports"></a>Tablas de exportación de archivos DLL
 
@@ -245,7 +245,7 @@ Cuando esto sucede, el depurador muestra la página **No se cargaron símbolos**
 **Para usar la página de documento No se cargaron símbolos para ayudar a encontrar y cargar los símbolos que faltan:**
 
 - Para cambiar la ruta de búsqueda, seleccione una ruta de acceso no seleccionada o seleccione **Nueva ruta de acceso** o **Nueva ruta de acceso de VSTS** y escriba o seleccione una nueva ruta de acceso. Seleccione **Cargar** para buscar de nuevo las rutas de acceso y cargar el archivo de símbolos si se encuentra.
-- Para invalidar cualquier opción de símbolo y reintentar las rutas de acceso de búsqueda, seleccione **Examinar y buscar \<nombredelejecutable>** . Se carga el archivo de símbolos, si se encuentra, o se abre el **Explorador de archivos** para que pueda seleccionar manualmente el archivo de símbolos.
+- Para invalidar cualquier opción de símbolo y reintentar las rutas de acceso de búsqueda, seleccione **Examinar y buscar \<executable-name>** . Se carga el archivo de símbolos, si se encuentra, o se abre el **Explorador de archivos** para que pueda seleccionar manualmente el archivo de símbolos.
 - Para abrir la página **Opciones** > **Depuración** > **Símbolos**, seleccione **Cambiar configuración de símbolos**.
 - Para mostrar el desensamblado una vez en una nueva ventana, seleccione **ver desensamblado** o elija **Cuadro de diálogo Opciones** para establecer la opción de mostrar siempre el desensamblado cuando no se encuentren archivos de código fuente o de símbolos.
 - Para mostrar las ubicaciones en las que se buscó y el resultado, expanda **Información de carga de símbolos**.

@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532410"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
-Al abrir por primera vez una solución de Herramientas del lenguaje específico de dominio (herramientas de DSL) en Visual Studio, la interfaz de usuario se parecerá a la siguiente imagen.
+La primera vez que se abre una solución de Herramientas del lenguaje específico de dominio (Herramientas DSL) en Visual Studio, la interfaz de usuario será similar a la imagen siguiente.
 
  ![diseñador dsl](../modeling/media/dsl_designer.png)
 

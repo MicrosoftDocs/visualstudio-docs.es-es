@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115400"
 ---
 # <a name="walkthrough-build-an-application"></a>Tutorial: Creación de una aplicación
@@ -35,13 +35,13 @@ Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadr
 
    ![Menú Compilar, comando Administrador de configuración](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. En la lista **Configuración de soluciones activas**, elija **\<Nueva...\>** .
+1. En la lista **Configuración de soluciones activas**, elija **\<New...\>** .
 
 1. En el cuadro de diálogo **Nueva configuración de la solución**, asigne a la nueva configuración el nombre `Test`, copie valores de la configuración de **depuración** existente y luego elija el botón **Aceptar**.
 
    ![Cuadro de diálogo Nueva configuración de la solución](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. En la lista **Plataforma de soluciones activas**, elija **\<Nueva...\>** .
+1. En la lista **Plataforma de soluciones activas**, elija **\<New...\>** .
 
 1. En el cuadro de diálogo **Nueva plataforma de soluciones**, elija **x64** y no copie valores de la plataforma x86.
 

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630852"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referencia de tareas de MSBuild para WPF
@@ -65,7 +65,7 @@ El proceso de compilación de Windows Presentation Foundation (WPF) amplía Micr
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Agrega el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<nombreproyecto>.exe.manifest*) cuando se compila un proyecto XAML Browser Application (XBAP).
+ Agrega el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<projectname>.exe.manifest*) cuando se compila un proyecto de aplicación de explorador XAML (XBAP).
 
 ## <a name="see-also"></a>Vea también
 

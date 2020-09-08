@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial de Docker: parte 1: compilación y ejecución de la aplicación de ejemplo de lista de tareas'
-description: Información general de la aplicación de ejemplo de lista de tareas que se ejecuta en Node.js.
+title: 'Tutorial de Docker - Parte 1: Compilación y ejecución de la aplicación de ejemplo de lista de tareas pendientes'
+description: Introducción a la aplicación de ejemplo de lista de tareas pendientes que se ejecuta en Node.js.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
@@ -10,35 +10,35 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: b8470c8d7708bc51916a6f57f5aa135c3267e355
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176917"
 ---
-# <a name="build-and-run-the-todo-sample-app"></a>Compilar y ejecutar la aplicación de ejemplo todo
+# <a name="build-and-run-the-todo-sample-app"></a>Compilación y ejecución de la aplicación de tareas pendientes de ejemplo
 
-En el resto de este tutorial, trabajará con un administrador simple de la lista de tareas que se ejecuta en Node.js. Si no está familiarizado con Node.js, no se preocupe. No se necesita ninguna experiencia real de JavaScript.
+En el resto de este tutorial, trabajará con un sencillo administrador de lista de tareas pendientes que se ejecuta en Node.js. Si no está familiarizado con Node.js, no se preocupe. No se necesita ninguna experiencia real con JavaScript.
 
-En este momento, el equipo de desarrollo es bastante pequeño y simplemente está creando una aplicación para demostrar su MVP (producto mínimo viable). Desea mostrar cómo funciona y qué es capaz de hacer sin necesidad de pensar en cómo funcionará para un equipo grande, para varios desarrolladores, etc.
+En este momento, el equipo de desarrollo es bastante pequeño y simplemente va a compilar una aplicación para demostrar el MVP (producto mínimo viable). Quiere mostrar cómo funciona y qué es capaz de hacer sin necesidad de pensar en su funcionamiento para un equipo grande, para varios desarrolladores, etc.
 
-![Captura de pantalla del administrador de la lista de tareas](media/todo-list-sample.png)
+![Captura de pantalla del administrador de lista de tareas pendientes](media/todo-list-sample.png)
 
 ## <a name="get-the-app"></a>Obtener la aplicación
 
-Antes de poder ejecutar la aplicación, debe obtener el código fuente de la aplicación en la máquina. En el caso de los proyectos reales, normalmente se clonará el repositorio. Sin embargo, para este tutorial, ha creado un archivo ZIP que contiene la aplicación.
+Antes de poder ejecutar la aplicación, debe disponer de su código fuente en el equipo. En el caso de proyectos reales, normalmente se clona el repositorio. Pero, para este tutorial, ha creado un archivo ZIP que contiene la aplicación.
 
-1. [Descargue el archivo zip](/assets/app.zip). Abra el archivo ZIP y asegúrese de extraer el contenido.
+1. [Descargue el archivo ZIP](/assets/app.zip). Abra el archivo ZIP y asegúrese de extraer el contenido.
 
-1. Una vez extraído, use el editor de código que prefiera para abrir el proyecto. Si necesita un editor, puede usar [Visual Studio Code](https://code.visualstudio.com/). Debería ver `package.json` y dos subdirectorios ( `src` y `spec` ).
+1. Una vez que lo haya extraído, use el editor de código que prefiera para abrir el proyecto. Si necesita un editor, puede usar [Visual Studio Code](https://code.visualstudio.com/). Debería ver `package.json` y dos subdirectorios (`src` y `spec`).
 
-    ![Captura de pantalla de Visual Studio Code abierto con la aplicación cargada](media/ide-screenshot.png)
+    ![Captura de pantalla de Visual Studio Code abierto con la aplicación cargada](media/ide-screenshot.png)
 
-## <a name="building-the-apps-container-image"></a>Compilar la imagen de contenedor de la aplicación
+## <a name="building-the-apps-container-image"></a>Compilación de la imagen de contenedor de la aplicación
 
-Para compilar la aplicación, debe usar `Dockerfile` . Un Dockerfile es simplemente un script basado en texto de las instrucciones que se usa para crear una imagen de contenedor. Si ha creado Dockerfiles antes, es posible que vea algunos errores en el Dockerfile que aparece a continuación. Pero, no se preocupe. Nos pondremos en marcha.
+Para compilar la aplicación, debe usar un objeto `Dockerfile`. Un Dockerfile es simplemente un script basado en texto de las instrucciones que se usa para crear una imagen de contenedor. Si ha creado Dockerfile antes, es posible que vea algunos errores en el que se muestra a continuación. Pero no se preocupe. Se explicarán individualmente.
 
-1. Cree un archivo denominado `Dockerfile` en la misma carpeta que el archivo `package.json` con el siguiente contenido.
+1. Cree un archivo llamado `Dockerfile` en la misma carpeta del archivo `package.json` con el contenido siguiente.
 
     ```dockerfile
     FROM node:12-alpine
@@ -48,52 +48,52 @@ Para compilar la aplicación, debe usar `Dockerfile` . Un Dockerfile es simpleme
     CMD ["node", "/app/src/index.js"]
     ```
 
-    Compruebe que el archivo `Dockerfile` no tiene ninguna extensión de archivo como `.txt` . Algunos editores pueden anexar esta extensión de archivo automáticamente y esto daría lugar a un error en el paso siguiente.
+    Compruebe que el archivo `Dockerfile` no tiene ninguna extensión de archivo, como `.txt`. Algunos editores pueden anexar esta extensión de archivo de forma automática y esto daría lugar a un error en el paso siguiente.
 
-1. Si todavía no lo ha hecho, abra un terminal y vaya al `app` directorio con el `Dockerfile` . Ahora compile la imagen de contenedor mediante el `docker build` comando.
+1. Si todavía no lo ha hecho, abra un terminal y vaya al directorio `app` que contiene el objeto `Dockerfile`. Ahora, compile la imagen de contenedor mediante el comando `docker build`.
 
     ```bash
     docker build -t getting-started .
     ```
 
-    Este comando usaba Dockerfile para compilar una nueva imagen de contenedor. Es posible que haya observado que se han descargado muchas capas. Esto se debe a que ha indicado al generador que desea iniciar a partir de la `node:12-alpine` imagen. Sin embargo, puesto que no lo tenía en el equipo, la imagen necesitaba descargarse.
+    Este comando ha usado el Dockerfile para compilar una nueva imagen de contenedor. Es posible que haya observado que se han descargado muchas "capas". Se debe a que le ha indicado al generador que quiere comenzar a partir de la imagen `node:12-alpine`. Pero como no la tenía en el equipo, ha sido necesario descargarla.
 
-    Una vez descargada la imagen, se ha copiado en la aplicación y se ha usado `yarn` para instalar las dependencias de la aplicación. La `CMD` Directiva especifica el comando predeterminado que se ejecutará al iniciar un contenedor a partir de esta imagen.
+    Una vez que se ha descargado la imagen, la ha copiado en la aplicación y ha usado `yarn` para instalar las dependencias de la aplicación. La directiva `CMD` especifica el comando predeterminado que se ejecutará al iniciar un contenedor a partir de esta imagen.
 
-    Por último, la `-t` marca etiqueta la imagen. Piense en esto simplemente como un nombre legible para la imagen final. Como ha llamado a la imagen `getting-started` , puede hacer referencia a esa imagen al ejecutar un contenedor.
+    Por último, la marca `-t` etiqueta la imagen. Puede considerarlo un nombre legible para la imagen final. Como ha asignado el nombre `getting-started` a la imagen, puede hacerle referencia al ejecutar un contenedor.
 
-    Al `.` final del `docker build` comando, indica que Docker debe buscar `Dockerfile` en el directorio actual.
+    El carácter `.` al final del comando `docker build` indica a Docker que debe buscar el objeto `Dockerfile` en el directorio actual.
 
-## <a name="starting-an-app-container"></a>Inicio de un contenedor de la aplicación
+## <a name="starting-an-app-container"></a>Inicio de un contenedor de aplicación
 
-Ahora que tiene una imagen, ejecute la aplicación. Para ello, use el `docker run` comando (Recuerde que, con anterioridad?).
+Ahora que tiene una imagen, ejecute la aplicación. Para ello, use el comando `docker run` (lo recordará de un apartado anterior).
 
-1. Inicie el contenedor con el `docker run` comando y especifique el nombre de la imagen que acaba de crear:
+1. Inicie el contenedor con el comando `docker run` y especifique el nombre de la imagen que acaba de crear:
 
     ```bash
     docker run -dp 3000:3000 getting-started
     ```
 
-    ¿Recuerda `-d` las `-p` marcas y? Está ejecutando el nuevo contenedor en modo "desasociado" (en segundo plano) y creando una asignación entre el puerto del host 3000 y el puerto 3000 del contenedor. Sin la asignación de puertos, no podrá tener acceso a la aplicación.
+    ¿Recuerda las marcas `-d` y `-p`? Va a ejecutar el nuevo contenedor en modo "desasociado" (en segundo plano) y a crear una asignación entre el puerto 3000 del host y el puerto 3000 del contenedor. Sin la asignación de puertos, no podría acceder a la aplicación.
 
-1. Después de unos segundos, abra el explorador Web en [http://localhost:3000](http://localhost:3000) .
+1. Después de unos segundos, abra el explorador web en [http://localhost:3000](http://localhost:3000).
     Debería ver la aplicación.
 
-    ![Lista de tareas vacía](media/todo-list-empty.png)
+    ![Lista de tareas pendientes vacía](media/todo-list-empty.png)
 
-1. Continúe y agregue un elemento o dos y vea que funciona como se espera. Puede marcar elementos como completos y quitar elementos. El front-end está almacenando correctamente los elementos en el back-end. ¿Es bastante rápido y sencillo, EH?
+1. Continúe y agregue uno o dos elementos, y compruebe si funciona como esperaba. Puede marcar los elementos como completos y quitar elementos. El front-end almacena correctamente los elementos en el back-end. Bastante rápido y sencillo, ¿verdad?
 
-En este punto, debe tener un administrador de la lista de tareas pendientes con algunos elementos, todo ello compilado. Ahora, vamos a realizar algunos cambios y obtener información sobre cómo administrar los contenedores.
+Llegado a este punto, debería tener un administrador de lista de tareas pendientes operativo con algunos elementos, y todo lo ha compilado personalmente. Ahora, se realizarán algunos cambios y obtendrá información sobre cómo administrar los contenedores.
 
-Si echa un vistazo rápido a la extensión de VS Code, debería ver que los dos contenedores se ejecutan ahora (este tutorial y el contenedor de la aplicación recién iniciado).
+Si echa un vistazo rápido a la extensión VS Code, debería ver que ahora se ejecutan los dos contenedores (este tutorial y el contenedor de la aplicación recién iniciada).
 
-![Extensión de Docker con el tutorial y contenedores de aplicaciones en ejecución](media/vs-two-containers.png)
+![Extensión de Docker con los contenedores del tutorial y la aplicación en ejecución](media/vs-two-containers.png)
 
 ## <a name="recap"></a>Resumen
 
-En esta breve sección, ha aprendido los conceptos básicos sobre la creación de una imagen de contenedor y la creación de un Dockerfile para ello. Una vez creada la imagen, ha iniciado el contenedor y ha visto la aplicación en ejecución.
+En esta breve sección, ha obtenido información sobre los conceptos básicos de la creación de una imagen de contenedor y ha creado un Dockerfile para ello. Después de crear la imagen, ha iniciado el contenedor y ha visto la aplicación en ejecución.
 
-A continuación, va a realizar una modificación en la aplicación y aprenderá a actualizar la aplicación en ejecución con una nueva imagen. A lo largo del proceso, aprenderá algunos comandos útiles.
+A continuación, realizará una modificación en la aplicación y aprenderá a actualizar la aplicación en ejecución con una imagen nueva. En el proceso, aprenderá algunos comandos útiles.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
