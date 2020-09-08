@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
+  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "88639333"
+  ms.lasthandoff: 09/07/2020
+  ms.locfileid: "89509749"
 landingContent:
 - title: Implementación en Azure App Service
   linkLists:
@@ -50,17 +50,17 @@ landingContent:
   - linkListType: overview
     links:
     - text: Desarrollo de contenedores
-      url: /visualstudio/containers
+      url: ../containers/index.yml
     - text: Herramientas de contenedor de Visual Studio
-      url: /visualstudio/containers/overview
+      url: ../containers/overview.md
     - text: Herramientas de Kubernetes
-      url: /visualstudio/containers/tutorial-kubernetes-tools
+      url: ../containers/tutorial-kubernetes-tools.md
 - title: Depuración de servicios de Azure y análisis de rendimiento
   linkLists:
   - linkListType: tutorial
     links:
     - text: Depuración de ASP.NET Core en IIS en Azure
-      url: /visualstudio/debugger/remote-debugging-azure
+      url: ../debugger/remote-debugging-azure.md
     - text: Depuración de un servicio en la nube en Azure
       url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
     - text: Depuración de una aplicación que se ejecuta en una máquina virtual
