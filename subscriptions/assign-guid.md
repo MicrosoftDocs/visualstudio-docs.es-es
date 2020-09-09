@@ -7,10 +7,10 @@ ms.date: 04/20/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores pueden asignar GUID de suscripción específicos a los suscriptores.
 ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235191"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de suscripciones específicas en el Portal de administración de suscripciones de Visual Studio
