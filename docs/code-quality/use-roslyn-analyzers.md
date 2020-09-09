@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490292"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599979"
 ---
 # <a name="use-code-analyzers"></a>Usar analizadores de código
 
@@ -118,7 +118,7 @@ Si tiene varias entradas que son aplicables a un ID. de regla específico, el or
 - La entrada de gravedad de una regla individual por identificador tiene prioridad sobre la entrada de gravedad de una categoría.
 - La entrada de gravedad de una categoría tiene prioridad sobre la entrada de gravedad para todas las reglas del analizador.
 
-Considere el siguiente ejemplo de EditorConfig, donde [CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) tiene la categoría "performance":
+Considere el siguiente ejemplo de EditorConfig, donde [CA1822](./ca1822.md) tiene la categoría "performance":
 
    ```ini
    [*.cs]
@@ -402,7 +402,7 @@ En un proyecto de .NET Core, si agrega una referencia a un proyecto que tiene an
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de los analizadores de código en Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar un error del analizador de código](https://github.com/dotnet/roslyn-analyzers/issues)

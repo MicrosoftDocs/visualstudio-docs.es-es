@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1208db68f2ae65775c6e0a5b6cf4bda0fb35d8
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509463"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599964"
 ---
 # <a name="security-warnings"></a>Advertencias de seguridad
 
@@ -33,7 +33,7 @@ Las advertencias de seguridad son compatibles con las bibliotecas y aplicaciones
 |[CA2100: Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad](../code-quality/ca2100.md)|Un método establece la propiedad System.Data.IDbCommand.CommandText utilizando una cadena que se construye partiendo de un argumento de cadena para el método. Esta regla supone que el argumento de cadena contiene datos proporcionados por el usuario. Una cadena de comandos de SQL compilada a partir de datos proporcionados por el usuario es vulnerable a ataques de inserción de SQL.|
 |[CA2109: Revisar los controladores de eventos visibles](../code-quality/ca2109.md)|Se detectó un método de control de eventos público o protegido. No se deberían exponer los métodos de control de eventos a menos que sea absolutamente necesario.|
 |[CA2119: Sellar los métodos que satisfacen las interfaces privadas](../code-quality/ca2119.md)|Un tipo público heredable proporciona una implementación de método reemplazable de una interfaz interna (de tipo "Friend" en Visual Basic). Para corregir una infracción de esta regla, impida que el método se invalide fuera del ensamblado.|
-|[CA2153: Evitar el control de excepciones de estado dañadas](../code-quality/ca2153.md)|Las[excepciones de estado dañado (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indican que la memoria está dañada en el proceso. Detectar estos problemas y evitar el bloqueo del proceso puede provocar vulnerabilidades de seguridad si un atacante puede colocar una vulnerabilidad de seguridad en la región de memoria dañada.|
+|[CA2153: Evitar el control de excepciones de estado dañadas](../code-quality/ca2153.md)|Las[excepciones de estado dañado (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) indican que la memoria está dañada en el proceso. Detectar estos problemas y evitar el bloqueo del proceso puede provocar vulnerabilidades de seguridad si un atacante puede colocar una vulnerabilidad de seguridad en la región de memoria dañada.|
 |[CA2300: No usar el deserializador no seguro BinaryFormatter](../code-quality/ca2300.md)|Los deserializadores inseguros son vulnerables al deserializar datos que no son de confianza. Un atacante podría modificar los datos serializados para incluir tipos inesperados para insertar objetos con efectos secundarios malintencionados.|
 |[CA2301: No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder](../code-quality/ca2301.md)|Los deserializadores inseguros son vulnerables al deserializar datos que no son de confianza. Un atacante podría modificar los datos serializados para incluir tipos inesperados para insertar objetos con efectos secundarios malintencionados.|
 |[CA2302: Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize](../code-quality/ca2302.md)|Los deserializadores inseguros son vulnerables al deserializar datos que no son de confianza. Un atacante podría modificar los datos serializados para incluir tipos inesperados para insertar objetos con efectos secundarios malintencionados.|
