@@ -1,22 +1,22 @@
 ---
 title: Configuración de EditorConfig
-ms.date: 08/01/2018
+ms.date: 09/02/2020
 ms.topic: how-to
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 30c2ce8a10a6a1001f8fb7c21ba7db7db7243fe4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770750"
+ms.locfileid: "89402262"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
-Puede agregar un archivo [EditorConfig](https://editorconfig.org/) al proyecto o código base para aplicar estilos de codificación coherentes para todos los usuarios que trabajan en el código base. La configuración de EditorConfig tiene prioridad sobre la configuración global del editor de texto de Visual Studio. Esto significa que puede adaptar cada código base para que use la configuración del editor de texto específica para ese proyecto. Puede establecer sus propias preferencias personales del editor en el cuadro de diálogo **Opciones** de Visual Studio. Esa configuración se aplica siempre que trabaje en un código base sin un archivo *.editorconfig*, o bien cuando dicho archivo no reemplaza un valor específico *.* Un ejemplo de este tipo de preferencia es el estilo de sangría (tabuladores o espacios).
+Puede agregar un archivo EditorConfig al proyecto o código base para aplicar estilos de codificación coherentes para todos los usuarios que trabajan en el código base. La configuración de EditorConfig tiene prioridad sobre la configuración global del editor de texto de Visual Studio. Esto significa que puede adaptar cada código base para que use la configuración del editor de texto específica para ese proyecto. Puede establecer sus propias preferencias personales del editor en el cuadro de diálogo **Opciones** de Visual Studio. Esa configuración se aplica siempre que trabaje en un código base sin un archivo *.editorconfig*, o bien cuando dicho archivo no reemplaza un valor específico *.* Un ejemplo de este tipo de preferencia es el estilo de sangría (tabuladores o espacios).
 
 La configuración de EditorConfig es compatible con varios IDE y editores de código, incluido Visual Studio. Es un componente portátil que acompaña al código y se pueden aplicar estilos de codificación incluso fuera de Visual Studio.
 

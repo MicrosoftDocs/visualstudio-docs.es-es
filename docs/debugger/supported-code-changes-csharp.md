@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729086"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509424"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Cambios de código admitidos (C# y Visual Basic)
 Editar y continuar controla la mayoría de los tipos de cambios de código dentro de los cuerpos de método. Ahora bien, durante la depuración, no es posible efectuar la mayoría de cambios fuera de los cuerpos de método y algunos cambios dentro de estos. Para efectuar dichos cambios no compatibles, es necesario detener la depuración y reiniciar con una versión nueva del código.
@@ -32,15 +32,15 @@ En la tabla siguiente se muestran los cambios que se pueden realizar en el códi
 
 |Elemento o característica del lenguaje|Operación de edición admitida|Limitaciones|
 |-|-|-|
-|Tipos|Agregar métodos, campos, constructores y otros|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Tipos|Agregar métodos, campos, constructores y otros|[Sí](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Iterators|Agregar o modificar|No|
-|Expresiones async/await|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Expresiones async/await|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Objetos dinámicos|Agregar o modificar|No|
-|expresiones lambda|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Expresiones LINQ|Agregar o modificar|[Igual que las expresiones lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|expresiones lambda|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
+|Expresiones LINQ|Agregar o modificar|[Igual que las expresiones lambda](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 
 > [!NOTE]
-> Las características de lenguaje más recientes, como la interpolación de cadenas y los operadores condicionales NULL, se admiten generalmente mediante Editar y continuar. Para obtener la información más reciente, consulte la página [Ediciones admitidas en Editar y continuar](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits).
+> Las características de lenguaje más recientes, como la interpolación de cadenas y los operadores condicionales NULL, se admiten generalmente mediante Editar y continuar. Para obtener la información más reciente, consulte la página [Ediciones admitidas en Editar y continuar](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md).
 
 ## <a name="unsupported-changes-to-code"></a>Cambios no admitidos en el código
  Los siguientes cambios no se pueden aplicar al código de C# y Visual Basic durante una sesión de depuración:
@@ -60,7 +60,7 @@ En la tabla siguiente se muestran los cambios que se pueden realizar en el códi
 |Espacios de nombres, tipos, miembros|Eliminar|
 |Genéricos|Agregar o modificar|
 |Interfaces|Modificar|
-|Tipos|Agregar miembro abstracto o virtual, agregar invalidación (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Tipos|Agregar miembro abstracto o virtual, agregar invalidación (vea los [detalles](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Tipos|Agregar destructor|
 |Miembros|Modificar un miembro que hace referencia a un tipo de interoperabilidad incrustado|
 |Miembros|Modificar un miembro estático una vez que ya se ha accedido mediante la ejecución de código|
@@ -75,8 +75,8 @@ En la tabla siguiente se muestran los cambios que se pueden realizar en el códi
 |bloques catch|Modificar cuando contiene una instrucción activa|
 |Bloques try-catch-finally|Modificar cuando contiene una instrucción activa|
 |Using (instrucciones)|Agregar|
-|Expresiones lambda/métodos asincrónicos|Modificar una expresión lambda o un método asincrónico en un proyecto destinado a .NET Framework 4 y versiones anteriores (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterators|Modificar un iterador en un proyecto destinado a .NET Framework 4 y versiones anteriores (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Expresiones lambda/métodos asincrónicos|Modificar una expresión lambda o un método asincrónico en un proyecto destinado a .NET Framework 4 y versiones anteriores (vea los [detalles](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
+|Iterators|Modificar un iterador en un proyecto destinado a .NET Framework 4 y versiones anteriores (vea los [detalles](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 
 ## <a name="unsafe-code"></a>Código no seguro
  Los cambios en el código no seguro tienen las mismas limitaciones que los cambios en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que esté incluido en un método que contiene el operador `stackalloc`.

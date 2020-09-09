@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815141"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508982"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso de .NET 4.x en Unity
 
@@ -233,7 +233,7 @@ Estas sugerencias pueden ayudarle a empezar a trabajar con TAP en Unity:
 * Las funciones asincrónicas que devuelven una tarea deben tener el sufijo **"Async"** anexado a sus nombres. El sufijo "Async" le ayuda a indicar que siempre se debe esperar una función.
 * Use solo el tipo de valor devuelto `async void` para las funciones que activan funciones asincrónicas desde el código sincrónico tradicional. Estas funciones no pueden ser esperadas y no deberían tener el sufijo "Async" en sus nombres.
 * Unity usa UnitySynchronizationContext para asegurarse de que se ejecutarán las funciones asincrónicas en el subproceso principal de forma predeterminada. No se puede acceder a la API de Unity fuera del subproceso principal.
-* Es posible ejecutar tareas en subprocesos en segundo plano con métodos como [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) y [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx). Esta técnica es útil para la descarga de operaciones costosas desde el subproceso principal para mejorar el rendimiento. Pero el uso de subprocesos en segundo plano puede provocar problemas que son difíciles de depurar, como las [condiciones de carrera](https://wikipedia.org/wiki/Race_condition).
+* Es posible ejecutar tareas en subprocesos en segundo plano con métodos como [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) y [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait). Esta técnica es útil para la descarga de operaciones costosas desde el subproceso principal para mejorar el rendimiento. Pero el uso de subprocesos en segundo plano puede provocar problemas que son difíciles de depurar, como las [condiciones de carrera](https://wikipedia.org/wiki/Race_condition).
 * No se puede acceder a la API de Unity fuera del subproceso principal.
 * Las tareas que usan subprocesos no se admiten en las compilaciones WebGL de Unity.
 

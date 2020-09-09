@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232943"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509047"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con aplicaciones de Unity
 
@@ -103,10 +103,10 @@ Vínculo de referencia: **[Mejorar la calidad del código](../test/improve-code-
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
 |[Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
-|[Buscar código duplicado mediante la detección de clones de código](https://msdn.microsoft.com/library/hh205279.aspx)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
+|[Buscar código duplicado mediante la detección de clones de código](/previous-versions/hh205279(v=vs.140))|Sí|Se puede analizar el código de script de C# en Visual Studio.|
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
 |[Herramientas de rendimiento](../profiling/performance-explorer.md)|No|Use el [generador de perfiles de Unity](https://docs.unity3d.com/Manual/Profiler.html) (sitio web de Unity).|
-|[Analizar problemas de memoria de .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|
+|[Analizar problemas de memoria de .NET Framework](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|
 
 ## <a name="release-management"></a>Administración de versiones
 

@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90faadeaf9e1f8965aea7850fa1a12bb43b183c
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214589"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427007"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -82,7 +82,7 @@ Algunas herramientas o extensiones se pueden desactivar para mejorar el rendimie
 
 ### <a name="managed-language-service-roslyn"></a>Servicios de lenguaje administrados (Roslyn)
 
-Para más información sobre las consideraciones de rendimiento de .NET Compiler Platform ("Roslyn"), vea [Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions) (Consideraciones de rendimiento para soluciones de gran tamaño).
+Para más información sobre las consideraciones de rendimiento de .NET Compiler Platform ("Roslyn"), vea [Performance considerations for large solutions](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md) (Consideraciones de rendimiento para soluciones de gran tamaño).
 
 - **Deshabilitar el análisis completo de la solución**
 

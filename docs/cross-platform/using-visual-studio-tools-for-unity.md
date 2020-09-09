@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f65945f28a577201c1308694bb7196d464330dc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a0db05788682bf08f9899cebb517370a1627b6
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815167"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508969"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 
@@ -181,7 +181,7 @@ Tenga en cuenta que el escenario descrito aquí supone que tiene el código fuen
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Para depurar un proyecto de archivo DLL administrado utilizado en su proyecto de Unity
 
-1. Agregue su proyecto DLL existente a la solución de Visual Studio generada por Visual Studio Tools para Unity. Con menor frecuencia, puede que inicie un nuevo proyecto DLL administrado para que contenga componentes de código en su proyecto de Unity. De ser así, puede agregar un nuevo proyecto DLL administrado a la solución de Visual Studio en su lugar. Para obtener más información sobre cómo agregar un proyecto nuevo o existente a una solución, vea [Cómo: Agregar proyectos a una solución](https://msdn.microsoft.com/library/ff460187.aspx).
+1. Agregue su proyecto DLL existente a la solución de Visual Studio generada por Visual Studio Tools para Unity. Con menor frecuencia, puede que inicie un nuevo proyecto DLL administrado para que contenga componentes de código en su proyecto de Unity. De ser así, puede agregar un nuevo proyecto DLL administrado a la solución de Visual Studio en su lugar.
 
    ![Agregar el proyecto DLL existente a la solución.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
