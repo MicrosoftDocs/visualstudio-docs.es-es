@@ -1,5 +1,6 @@
 ---
-title: No se puede eliminar la propiedad porque participa en la asociación
+title: La propiedad participa en la Asociación
+description: No se puede eliminar la propiedad porque participa en la asociación
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aab2d2e3151786b45889262680d2f0815f684b6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead87955056ec3c6246df6fc9050eedd867dd3ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535387"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743274"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>No se puede eliminar la propiedad &lt;nombre de propiedad&gt; porque participa en la asociación &lt;nombre de asociación&gt;
 
@@ -31,6 +32,6 @@ Establezca la **propiedad de asociación** en otra propiedad de la clase de dato
 
 4. Intente de nuevo eliminar la propiedad.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

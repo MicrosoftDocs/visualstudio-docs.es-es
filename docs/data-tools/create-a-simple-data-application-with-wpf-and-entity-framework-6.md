@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 078b3eedc9971dfc444e86b9f8d7ce770fcdb966
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282766"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743385"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 
@@ -427,7 +427,7 @@ Agregue estos métodos de controlador a la clase MainWindow en *MainWindow.Xaml.
 
 Presione **F5** para iniciar la depuración. Debería ver los datos de cliente y de pedido rellenados en la cuadrícula y los botones de navegación deberían funcionar según lo previsto. Haga clic en **confirmar** para agregar un nuevo cliente o un pedido al modelo después de haber escrito los datos. Haga clic en **Cancelar** para salir de un nuevo formulario de cliente o de pedido nuevo sin guardar los datos. Puede realizar modificaciones en los clientes y pedidos existentes directamente en los cuadros de texto, y estos cambios se escriben automáticamente en el modelo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Documentación de Entity Framework](/ef/)

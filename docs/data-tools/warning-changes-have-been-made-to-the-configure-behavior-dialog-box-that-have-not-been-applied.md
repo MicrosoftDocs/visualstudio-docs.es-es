@@ -1,5 +1,6 @@
 ---
-title: 'Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se pueden aplicar'
+title: Cambios sin aplicar
+description: 'Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se pueden aplicar'
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4eba7fb1274b36a6a6f2454f4642c1c78505719e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbdf4e252df1063610964aaa1df37fa9bfc94132
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535205"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743153"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se pueden aplicar.
 

@@ -1,5 +1,5 @@
 ---
-title: Usar tablas de búsqueda en controles de Windows Forms de enlace de datos | Microsoft Docs
+title: Usar tablas de búsqueda en el enlace de datos Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68121cc98a1bdbc1f7f1bfa69ce8ee0d1d797bb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586801"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743364"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos de búsqueda
 
@@ -54,7 +54,7 @@ Durante este tutorial, aprenderá a:
 
 - Cree un formulario para mostrar los datos en el nuevo control.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -155,7 +155,7 @@ Dentro de la ventana **Orígenes de datos** puede establecer el control que se v
 
 6. Seleccione **LookupBox** de la lista de **Controles asociados** en el cuadro de diálogo **Opciones de personalización de la interfaz de usuario de datos**.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
 8. Haga clic en la flecha de lista desplegable en la columna **CustomerID** y elija **LookupBox**.
 
@@ -177,6 +177,6 @@ Así configura el enlace de datos para mostrar el valor `CompanyName` de la tabl
 
 - Navegue por algunos registros y compruebe que `CompanyName` aparece en el control `LookupBox`.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

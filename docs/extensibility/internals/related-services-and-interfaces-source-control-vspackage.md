@@ -1,5 +1,6 @@
 ---
-title: Servicios e interfaces relacionados (VSPackage de control de código fuente) | Microsoft Docs
+title: Interfaces y servicios relacionados (VSPackage de control de código fuente)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 533f1bf4fcfbaebb25ec10908abf4a46ddacd521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e0806ca278305a530a4f4f3e0d4abdf7977067e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705628"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743074"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces y servicios relacionados (VSPackage de control de código fuente)
+
 En esta sección se enumeran todas las interfaces relacionadas con VSPackage de control de código fuente en [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . El VSPackage de control de código fuente implementa algunas de estas interfaces y utiliza otras para realizar las tareas de control de código fuente.
 
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implementadas por y para VSPackages de control de código fuente
+
  Las siguientes interfaces se describen en [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , y el VSPackage de control de código fuente implementa un subconjunto de ellas en función del conjunto de características deseado. Algunas interfaces se marcan como necesarias y deben implementarse en cada VSPackage de control de código fuente.
 
  Para las interfaces que un paquete no implementa, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona una implementación predeterminada. Tenga en cuenta que la implementación predeterminada está diseñada para el caso de que no se registre ningún VSPackage y no se controle ningún proyecto. Un VSPackage de control de código fuente escrito correctamente implementa todas las interfaces necesarias en lugar de mantenerla en la implementación predeterminada de esas interfaces.
@@ -40,7 +43,7 @@ En esta sección se enumeran todas las interfaces relacionadas con VSPackage de 
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Los editores llaman a esta interfaz antes de modificar o guardar un archivo. El VSPackage de control de código fuente puede desproteger el archivo o denegar la operación si se produce un error en la desprotección. | VSPackage de control de código fuente | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | Esta interfaz proporciona funcionalidad básica de control de código fuente para los proyectos, como registrar y anular el registro de proyectos con el control de código fuente y proporcionar compatibilidad con los glifos básicos de control de código fuente. | VSPackage de control de código fuente | Obligatorio |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Esta interfaz se obtiene de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> mediante la <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> función, o simplemente convirtiendo el objeto que implementa `IVsHierarchy` en `IVsSccProject2` . Se utiliza para obtener los archivos bajo control de código fuente en un proyecto o para informar del proyecto de la ubicación o el estado del control de código fuente actual. | Proyecto | Obligatorio |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Esta interfaz se obtiene de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> mediante la <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> función, o simplemente convirtiendo el objeto que implementa `IVsHierarchy` en `IVsSccProject2` . Se utiliza para obtener los archivos bajo control de código fuente en un proyecto o para informar del proyecto de la ubicación o el estado del control de código fuente actual. | Project | Obligatorio |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> | El módulo de integración utiliza esta interfaz para establecer el VSPackage activo actual. | VSPackage de control de código fuente | Obligatorio |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> | Esta interfaz se basa en un modelo de suscripción. Cualquier VSPackage puede indicar que desea recibir eventos de documento y que el shell le aconseje los eventos que están a punto de producirse. Lo implementa y controla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , que a su vez pasa los eventos que implementan `IVsTrackProjectDocumentsEvents2` en el VSPackage. | Código auxiliar de control de código fuente | Obligatorio |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | Esta interfaz proporciona el procesamiento por lotes, las operaciones de lectura y escritura sincronizadas y un `OnQueryAddFiles` método avanzado. | Código auxiliar de control de código fuente | Obligatorio |
@@ -53,7 +56,7 @@ En esta sección se enumeran todas las interfaces relacionadas con VSPackage de 
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | El VSPackage usa esta interfaz para definir glifos adicionales como glifos de control de código fuente para los nodos de **Explorador de soluciones**. | VSPackage de control de código fuente | Opcional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | El cuadro de diálogo **Agregar** para proyectos web utiliza esta interfaz. Proporciona métodos para buscar una ubicación de control de código fuente y abrir un proyecto web agregado anteriormente en el repositorio de control de código fuente en esa ubicación. | VSPackage de control de código fuente | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Esta interfaz proporciona compatibilidad para la carga asincrónica (en segundo plano) de proyectos desde el control de código fuente. | VSPackage de control de código fuente | Opcional |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Esta interfaz permite a los proyectos ver el progreso de la carga asincrónica iniciada por <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Proyecto | Opcional |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Esta interfaz permite a los proyectos ver el progreso de la carga asincrónica iniciada por <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Project | Opcional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | Esta interfaz permite al IDE consultar el VSPackage de control de código fuente activo. El IDE consulta el valor de la configuración de control de código fuente que tiene un significado incluso cuando no hay registrado ningún VSPackage de control de código fuente activo. Esta interfaz la implementa y controla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . | Código auxiliar de control de código fuente | Obligatorio |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> | Esta interfaz se usa para registrar el VSPackage de control de código fuente. | Código auxiliar de control de código fuente | Obligatorio |
 | <xref:EnvDTE.SourceControl> | Esta interfaz se utiliza en Automation. Como tal, solo expone funciones que se pueden ejecutar sin mostrar ninguna interfaz de usuario. | VSPackage de control de código fuente | Opcional |
