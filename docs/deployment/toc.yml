@@ -53,11 +53,11 @@
     - name: Node.js
       items:
         - name: Publicación en App Service de Linux
-          href: /visualstudio/javascript/publish-nodejs-app-azure
+          href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
         - name: Publicación en Azure App Service
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
+          href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: Guías de procedimientos
   items:
     - name: Seguridad e implementación ClickOnce

@@ -10,23 +10,23 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 94dcd1cf66ed1893a8cdfd069314d689cb1e9329
-  ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+  ms.openlocfilehash: c954c2bdf5b202da96cffc4dfa22e94b75a7d93a
+  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/29/2020
-  ms.locfileid: "89091412"
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "89599596"
 landingContent:
 - title: Análisis del código de C y C++
   linkLists:
   - linkListType: overview
     links:
     - text: Análisis del código de C y C++
-      url: code-analysis-for-c-cpp-overview.md
+      url: /cpp/code-quality/code-analysis-for-c-cpp-overview
   - linkListType: reference
     links:
     - text: Advertencias de análisis de código de C++
-      url: code-analysis-for-c-cpp-warnings.md
+      url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
 - title: Análisis de calidad del código .NET
   linkLists:
   - linkListType: overview
