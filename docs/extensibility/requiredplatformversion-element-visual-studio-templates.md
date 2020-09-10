@@ -1,5 +1,6 @@
 ---
-title: RequiredPlatformVersion (elemento, plantillas de Visual Studio) | Microsoft Docs
+title: RequiredPlatformVersion (Elemento, Plantillas de Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,14 +10,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a3873a8107c60802edd07b567d65205a37dc213
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701497"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741675"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion (elemento, plantillas de Visual Studio)
+
 Especifica la versión mínima del sistema operativo que la plantilla de proyecto necesita para funcionar correctamente. Este elemento se usa para las plantillas de proyecto que crean [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicaciones.
 
  El `RequiredPlatformVersion` valor se compara directamente con la versión del sistema operativo. Si el `RequiredPlatformVersion` valor de es mayor que la versión del sistema operativo, la plantilla no aparece en el cuadro de diálogo **nuevo proyecto** . Para especificar una plantilla para [!INCLUDE[win8](../debugger/includes/win8_md.md)] o posterior, establezca `RequiredPlatformVersion` en 6.2.0. Para especificar una plantilla para [!INCLUDE[win81](../debugger/includes/win81_md.md)] o posterior, establezca `RequiredPlatformVersion` en 6.3.0.
@@ -32,12 +34,15 @@ Especifica la versión mínima del sistema operativo que la plantilla de proyect
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  Ninguno.
 
 ### <a name="attributes"></a>Atributos
+
  Ninguno.
 
 ### <a name="child-elements"></a>Elementos secundarios
+
  Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios
@@ -47,12 +52,15 @@ Especifica la versión mínima del sistema operativo que la plantilla de proyect
 |[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica la plataforma a la que está orientada la plantilla del proyecto.|
 
 ## <a name="text-value"></a>Valor de texto
+
  Se requiere un valor de texto.
 
 ## <a name="remarks"></a>Observaciones
+
  Este texto especifica la versión mínima del sistema operativo necesaria para la plantilla.
 
 ## <a name="example"></a>Ejemplo
+
  Este ejemplo especifica que la plantilla del proyecto está orientada a [!INCLUDE[win8](../debugger/includes/win8_md.md)] o posterior.
 
 ```xml
@@ -69,6 +77,7 @@ Especifica la versión mínima del sistema operativo que la plantilla de proyect
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [TargetPlatformName (elemento, plantillas de Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

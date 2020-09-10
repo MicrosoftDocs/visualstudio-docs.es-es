@@ -1,5 +1,5 @@
 ---
-title: Operadores lógicos y avanzados en expresiones de búsqueda (Visor de Ayuda)
+title: Operadores lógicos en expresiones de búsqueda (visor de ayuda)
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d17d40a34835c1c8f99f4ad446de747771fa4a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824898"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741650"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos y avanzados en expresiones de búsqueda
 
@@ -28,8 +28,8 @@ Los operadores lógicos especifican cómo se deben combinar varios términos de 
 
 |Para buscar|Use|Ejemplo|Resultado|
 |-------------------|---------|-------------|------------|
-|Ambos términos en el mismo artículo|AND|dib AND paleta|Temas que contienen "dib" y "paleta".|
-|Cualquier término en un artículo|O|trama OR vector|Temas que contienen "trama" o "vector".|
+|Ambos términos en el mismo artículo|y|dib AND paleta|Temas que contienen "dib" y "paleta".|
+|Cualquier término en un artículo|O BIEN|trama OR vector|Temas que contienen "trama" o "vector".|
 |El primer término sin el segundo término en el mismo artículo|NOT|"sistema operativo" NOT DOS|Temas que contienen "sistema operativo", pero no "DOS".|
 |Ambos términos, próximos entre sí en un artículo|NEAR|usuario NEAR kernel|Temas que contienen "usuario" cerca de "kernel".|
 
@@ -66,7 +66,7 @@ Puede usar el operador `code:` para buscar contenido sobre cualquiera de los dis
 > [!NOTE]
 > El operador `code:` solamente busca contenido que esté marcado con una etiqueta de lenguaje de programación, en lugar de contenido marcado genéricamente como código.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: buscar temas](../help-viewer/find-topics.md)
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)
