@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176794"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485591"
 ---
 # <a name="persist-your-data"></a> Conservación de los datos
 
@@ -86,7 +86,7 @@ Como se ha mencionado antes, usará un **volumen con nombre**. Piense en un volu
     docker volume create todo-db
     ```
 
-1. Detenga el contenedor de la aplicación de tareas pendientes una vez más en el panel (o con `docker rm -f <id>`), ya que se sigue ejecutando sin usar el volumen persistente.
+1. Detenga el contenedor de la aplicación de tareas pendientes una vez más en la vista de Docker (o con `docker rm -f <id>`), ya que se sigue ejecutando sin usar el volumen persistente.
 
 1. Inicie el contenedor de la aplicación de tareas pendientes, pero agregue la marca `-v` para especificar un montaje de volumen. Usará el volumen con nombre y lo montará en `/etc/todos`, que capturará todos los archivos creados en la ruta de acceso.
 
@@ -98,7 +98,7 @@ Como se ha mencionado antes, usará un **volumen con nombre**. Piense en un volu
 
     ![Elementos agregados a la lista de tareas pendientes](media/items-added.png)
 
-1. Quite el contenedor de la aplicación de tareas pendientes. Use el panel o `docker ps` para obtener el identificador, y después `docker rm -f <id>` para quitarlo.
+1. Quite el contenedor de la aplicación de tareas pendientes. Use la vista de Docker o `docker ps` para obtener el identificador, y después `docker rm -f <id>` para quitarlo.
 
 1. Inicie un contenedor nuevo con el mismo comando anterior.
 

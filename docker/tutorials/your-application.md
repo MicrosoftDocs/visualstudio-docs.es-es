@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: b8470c8d7708bc51916a6f57f5aa135c3267e355
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176917"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485446"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Compilación y ejecución de la aplicación de tareas pendientes de ejemplo
 
@@ -55,6 +55,8 @@ Para compilar la aplicación, debe usar un objeto `Dockerfile`. Un Dockerfile es
     ```bash
     docker build -t getting-started .
     ```
+
+    Como alternativa, también puede hacer clic con el botón derecho en Dockerfile y elegir **Compilar imagen...** y, después, especificar la etiqueta en el símbolo del sistema.
 
     Este comando ha usado el Dockerfile para compilar una nueva imagen de contenedor. Es posible que haya observado que se han descargado muchas "capas". Se debe a que le ha indicado al generador que quiere comenzar a partir de la imagen `node:12-alpine`. Pero como no la tenía en el equipo, ha sido necesario descargarla.
 
