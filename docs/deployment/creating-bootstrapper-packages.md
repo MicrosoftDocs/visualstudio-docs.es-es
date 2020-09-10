@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314867"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641653"
 ---
 # <a name="create-bootstrapper-packages"></a>Crear paquetes de programa previo
 El programa de instalación es un instalador genérico que se puede configurar para detectar e instalar componentes redistribuibles, como archivos Windows Installer (*. msi*) y programas ejecutables. El instalador también se conoce como programa previo. Se programa mediante un conjunto de manifiestos XML que especifican los metadatos que administrarán la instalación del componente.  Cada componente redistribuible, o requisito previo, que aparece en el cuadro de diálogo **requisitos previos** para ClickOnce es un paquete de programa previo. Un paquete de programa previo es un grupo de directorios y archivos que contienen archivos de manifiesto que describen cómo se debe instalar el requisito previo.
@@ -122,4 +122,4 @@ La lista redistribuible es un archivo XML al que debe asignar el nombre con el s
 - [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Cuadro de diálogo requisitos previos](../ide/reference/prerequisites-dialog-box.md)
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
-- [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](https://msdn.microsoft.com/magazine/cc163899.aspx)
+- [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)

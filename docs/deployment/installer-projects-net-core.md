@@ -11,12 +11,12 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a057e655df643c5ddfd85064ba84260a2644dffd
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88714402"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641573"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Extensión de proyectos del Instalador de Visual Studio y .NET Core 3.1
 
@@ -31,7 +31,7 @@ Puede descargar la extensión aquí: [proyectos de instalador de Visual Studio](
 
 - Las aplicaciones independientes incluyen el tiempo de ejecución.
 
-Para obtener más información sobre estas estrategias de implementación, consulte [información general sobre la publicación de aplicaciones .net Core](https://docs.microsoft.com/dotnet/core/deploying/).
+Para obtener más información sobre estas estrategias de implementación, consulte [información general sobre la publicación de aplicaciones .net Core](/dotnet/core/deploying/).
 
 ### <a name="workflow-changes-for-net-core-31"></a>Cambios de flujo de trabajo para .NET Core 3,1
 

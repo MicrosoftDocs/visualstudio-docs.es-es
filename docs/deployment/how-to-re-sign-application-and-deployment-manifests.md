@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1905ea32a9899a1262e146f264e0a1179f0e8c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382203"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641610"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Cómo: Volver a firmar manifiestos de aplicación e implementación
 Después de realizar cambios en las propiedades de implementación en el manifiesto de aplicación para las aplicaciones de Windows Forms, las aplicaciones Windows Presentation Foundation (XBAP) o las soluciones de Office, debe volver a firmar los manifiestos de aplicación e implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.
@@ -31,7 +31,7 @@ Después de realizar cambios en las propiedades de implementación en el manifie
  Otro escenario en el que podría volver a firmar los manifiestos es cuando los clientes quieren firmar los manifiestos de aplicación e implementación con su propio certificado.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Repetición de la firma de manifiestos de implementación y aplicación
- En este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de la aplicación (*. manifest*). Para obtener más información, vea [Cómo: cambiar las propiedades de implementación](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).
+ En este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de la aplicación (*. manifest*). Para obtener más información, vea [Cómo: cambiar las propiedades de implementación](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para volver a firmar la aplicación y los manifiestos de implementación con Mage.exe
 
