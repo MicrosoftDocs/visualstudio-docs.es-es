@@ -1,5 +1,6 @@
 ---
-title: Uno o varios elementos seleccionados contienen un tipo de datos que el diseñador no admite
+title: Tipo de datos no admitido
+description: Uno o varios elementos seleccionados contienen un tipo de datos que el diseñador no admite
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d2f066bb7501085b66ba724f94840314063cd2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b393798ea3abd89b79bb47e4449d33272a3324f8
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281895"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741843"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Uno o varios elementos seleccionados contienen un tipo de datos que el diseñador no admite
 

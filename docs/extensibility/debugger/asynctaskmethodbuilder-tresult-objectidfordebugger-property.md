@@ -1,5 +1,6 @@
 ---
-title: AsyncTaskMethodBuilder &lt; TResult &gt; . Propiedad Objectidfordebugger (| Microsoft Docs
+title: AsyncTaskMethodBuilder &lt; TResult &gt; . Propiedad Objectidfordebugger (
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 712cd8b1a178d69899aeac2fde5640e20d18be95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b486631cb5fa2d424b145e8900b879ac5de1739
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739349"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741597"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder &lt; TResult &gt; . Propiedad Objectidfordebugger (
 Obtiene un objeto que se puede usar para identificar de forma única este generador en el depurador.

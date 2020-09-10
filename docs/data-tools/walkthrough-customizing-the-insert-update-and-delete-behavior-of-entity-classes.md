@@ -1,5 +1,5 @@
 ---
-title: Personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad
+title: Personalizar el comportamiento de inserción, actualización y eliminación
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585956"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741815"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Tutorial: personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad
 
@@ -45,7 +45,7 @@ Durante este tutorial, aprenderá a realizar las siguientes tareas:
 
 - Configure la `Customer` clase para que use procedimientos almacenados para realizar inserciones, actualizaciones y eliminaciones.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -189,7 +189,7 @@ De forma predeterminada, el botón Guardar no está habilitado y la funcionalida
 
 3. Arrastre los tres procedimientos almacenados hasta Object Relational **Designer**.
 
-     Los procedimientos almacenados se agregan al panel de métodos como métodos de <xref:System.Data.Linq.DataContext>. Para obtener más información, vea [métodos DataContext (Object](../data-tools/datacontext-methods-o-r-designer.md)Relational Designer).
+     Los procedimientos almacenados se agregan al panel de métodos como métodos de <xref:System.Data.Linq.DataContext>. Para obtener más información, vea [Métodos de DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 4. Seleccione la clase de entidad **Customer** en **Object**Relational Designer.
 
@@ -229,12 +229,12 @@ De forma predeterminada, el botón Guardar no está habilitado y la funcionalida
 
 18. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)**.
 
-19. Haga clic en **Aceptar**.
+19. Haga clic en **OK**.
 
 > [!NOTE]
 > Aunque no se trata de un problema para este tutorial concreto, merece la pena tener en cuenta que LINQ to SQL controla automáticamente los valores generados por la base de datos para la identidad (incremento automático), ROWGUIDCOL (GUID generado por la base de datos) y las columnas de marca de tiempo durante las inserciones y actualizaciones. Los valores generados por la base de datos de otros tipos de columna producirán inesperadamente un valor nulo. Para devolver los valores generados por la base de datos, debe establecer manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> en `true` y <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> en uno de los siguientes: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. alinserte](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)o [AutoSync. ALUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
-## <a name="test-the-application"></a>Prueba de la aplicación
+## <a name="test-the-application"></a>Probar la aplicación
 
 Vuelva a ejecutar la aplicación para comprobar que el procedimiento almacenado **UpdateCustomers** actualiza correctamente el registro de cliente en la base de datos.
 
@@ -275,4 +275,4 @@ En función de los requisitos de la aplicación, hay varios pasos que se pueden 
 - [DataContext (métodos)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Consultas LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)
+- [Consultas de LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

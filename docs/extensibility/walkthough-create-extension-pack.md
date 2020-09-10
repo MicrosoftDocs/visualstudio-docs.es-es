@@ -1,5 +1,6 @@
 ---
-title: Cree un paquete de extensión con la plantilla de elementos del paquete de extensión | Microsoft Docs
+title: Crear un paquete de extensión
+description: Obtenga información sobre cómo crear un paquete de extensión con la plantilla de elementos del paquete de extensión
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697752"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742920"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Tutorial: Creación de un paquete de extensión
 
@@ -23,7 +24,7 @@ Un paquete de extensión es un conjunto de extensiones que se pueden instalar ju
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-A partir de Visual Studio 2015, el SDK de Visual Studio se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, el SDK de Visual Studio se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 La característica de paquete de extensiones está disponible a partir de Visual Studio 15,8 Preview 2.
 

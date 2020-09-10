@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: usar un comando de Shell con una extensión de editor | Microsoft Docs'
+title: Usar un comando de Shell con una extensión de editor
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e9f7de69cfd969db8ae905ea65bbf868cf2c88a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ebec1b2c58f5a2ae79e6f361d74e57cd935c177
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904454"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742032"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Tutorial: usar un comando de Shell con una extensión de editor
 Desde un VSPackage, puede agregar características como comandos de menú al editor. En este tutorial se muestra cómo agregar un elemento gráfico a una vista de texto en el editor invocando un comando de menú.
@@ -23,7 +23,7 @@ Desde un VSPackage, puede agregar características como comandos de menú al edi
  En este tutorial se muestra el uso de un VSPackage junto con una parte del componente de Managed Extensibility Framework (MEF). Debe usar un VSPackage para registrar el comando de menú con el shell de Visual Studio. Además, puede usar el comando para tener acceso a la parte del componente MEF.
 
 ## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú
  Cree un VSPackage que coloque un comando de menú denominado **Agregar elemento gráfico** en el menú **herramientas** .
@@ -691,5 +691,5 @@ Desde un VSPackage, puede agregar características como comandos de menú al edi
 
      Fourscore...
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,5 +1,5 @@
 ---
-title: LINQ to SQL clases con herencia de tabla única (Object Relational Designer)
+title: LINQ to SQL clases con herencia de tabla única
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c76818f7cd70077996370cf5ffe930ef78f9acb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535270"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741836"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: crear clases LINQ to SQL con la herencia de tabla única (Object Relational Designer)
 Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) admiten la herencia de tabla única, ya que normalmente se implementa en sistemas relacionales. En este tutorial se amplían los pasos genéricos que se proporcionan en el tema [How to: configure inheritance by Using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) y se proporcionan algunos datos reales para mostrar el uso de la herencia en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -51,7 +51,7 @@ Para ver cómo funciona la herencia, cree una `Person` tabla pequeña, úsela co
 
     |Nombre de columna|Tipo de datos|Permitir valores NULL|
     |-----------------|---------------|-----------------|
-    |**Id**|**int**|**False**|
+    |**ID**|**int**|**False**|
     |**Tipo**|**int**|**True**|
     |**Nombre**|**nvarchar(200)**|**False**|
     |**Apellidos**|**nvarchar(200)**|**False**|
@@ -70,7 +70,7 @@ Para poder comprobar que la herencia está correctamente configurada, la tabla n
 
 2. Copie los datos siguientes en la tabla. (Puede copiarlo y, a continuación, pegarlo en la tabla seleccionando toda la fila en el panel de **resultados** ).
 
-    |**Id**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
+    |**ID**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -85,7 +85,7 @@ Para poder comprobar que la herencia está correctamente configurada, la tabla n
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 Ahora que ha creado la tabla, cree un nuevo proyecto para mostrar la configuración de la herencia.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Para crear la nueva aplicación Windows Forms
@@ -173,7 +173,7 @@ Ahora agregará código al formulario que consulta una clase concreta en el mode
     }
     ```
 
-## <a name="test-the-application"></a>Prueba de la aplicación
+## <a name="test-the-application"></a>Probar la aplicación
 Ejecute la aplicación y compruebe que los registros mostrados en el cuadro de lista son todos los empleados (registros que tienen un valor de 2 en la columna **tipo** ).
 
 ### <a name="to-test-the-application"></a>Para probar la aplicación

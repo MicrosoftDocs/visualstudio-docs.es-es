@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un conjunto de datos con el Diseñador de Dataset'
+title: Cree un conjunto de DataSet con el Diseñador de DataSet
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +13,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d61ec32d48e5cb9b5421e397d743cd8c95b523
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586034"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742925"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Tutorial: crear un conjunto de DataSet con el Diseñador de DataSet
 
 En este tutorial, creará un conjunto de DataSet mediante el **Diseñador de DataSet**. El artículo le guía por el proceso de crear un nuevo proyecto y agregarle un nuevo elemento de **conjunto** de elementos. Aprenderá a crear tablas basadas en tablas en una base de datos sin usar un asistente.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
@@ -108,7 +108,7 @@ En esta sección se explica cómo agregar tablas al conjunto de DataSet.
 
 - Agregar lógica de la validación a los eventos <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> de las tablas de datos en el conjunto de datos. Para obtener más información, vea [Validate Data in datasets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear y configurar conjuntos de datos en Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,6 @@
 ---
-title: Assembly (elemento, extensión del Asistente para plantillas de Visual Studio) | Microsoft Docs
+title: Assembly (Elemento, extensión del Asistente para plantillas de Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43f5adb8abc17f0509fb58263f307e5051af85dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52bd3bf9694d82ee27001a3cc7a42eb0692c85f0
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740065"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739173"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly (elemento, extensión del Asistente para plantillas de Visual Studio)
 Especifica el nombre o el nombre seguro del ensamblado que implementa la `IWizard` interfaz.
@@ -30,7 +31,7 @@ Especifica el nombre o el nombre seguro del ensamblado que implementa la `IWizar
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```xml
 <Assembly>AssemblyName</Assembly>
 ```
 

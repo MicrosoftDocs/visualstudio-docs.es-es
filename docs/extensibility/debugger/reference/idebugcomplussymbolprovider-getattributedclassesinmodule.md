@@ -1,5 +1,6 @@
 ---
-title: 'IDebugComPlusSymbolProvider:: GetAttributedClassesinModule | Microsoft Docs'
+title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 408aa2f373ab296394a0181014c16b1697fdf9ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 309a30174c22e762fbf91c68c13c5f07b3220698
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733931"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741477"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Recupera las clases con el atributo especificado en un módulo determinado.

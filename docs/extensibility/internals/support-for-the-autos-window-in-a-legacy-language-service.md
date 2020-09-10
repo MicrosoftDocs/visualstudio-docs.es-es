@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad con la ventana automático en un servicio de lenguaje heredado | Microsoft Docs
+title: Compatibilidad con la ventana automático en un servicio de lenguaje heredado
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704883"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741462"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Compatibilidad con la ventana Automático en un servicio de lenguaje heredado
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Compatibilidad con la ventana automático en un servicio de lenguaje heredado
+
 La ventana **automático** muestra expresiones como variables y parámetros que están en el ámbito cuando se pausa el programa que se está depurando (ya sea debido a un punto de interrupción o una excepción). Las expresiones pueden incluir variables, locales o globales, y parámetros que se han cambiado en el ámbito local. La ventana **automático** también puede incluir la creación de instancias de una clase, una estructura o algún otro tipo. Cualquier cosa que un evaluador de expresiones pueda evaluar puede mostrarse en la ventana **automático** .
 
  Managed Package Framework (MPF) no proporciona compatibilidad directa para la ventana **automático** . Sin embargo, si reemplaza el <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método, puede devolver una lista de expresiones que se van a presentar en la ventana **automático** .
 
 ## <a name="implementing-support-for-the-autos-window"></a>Implementar la compatibilidad con la ventana automático
+
  Todo lo que necesita para admitir la ventana **automático** es implementar el <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método en la <xref:Microsoft.VisualStudio.Package.LanguageService> clase. La implementación debe decidir, dada una ubicación en el archivo de código fuente, qué expresiones deben aparecer en la ventana **automático** . El método devuelve una lista de cadenas en las que cada cadena representa una sola expresión. Un valor devuelto de <xref:Microsoft.VisualStudio.VSConstants.S_OK> indica que la lista contiene expresiones, mientras <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> que indica que no hay expresiones para mostrar.
 
  Las expresiones reales devueltas son los nombres de las variables o los parámetros que aparecen en esa ubicación en el código. Estos nombres se pasan al evaluador de expresiones para obtener los valores y los tipos que se muestran en la ventana **automático** .

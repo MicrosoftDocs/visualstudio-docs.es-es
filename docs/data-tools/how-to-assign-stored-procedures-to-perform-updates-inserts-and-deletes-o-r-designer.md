@@ -1,5 +1,5 @@
 ---
-title: Usar procedimientos almacenados en LINQ to SQL para actualizar datos (Object Relational Designer)
+title: Usar procedimientos almacenados en LINQ to SQL para actualizar datos
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba6ee706a7c18545a17683233e30283559542890
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282324"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743002"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedimiento para asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)
 
@@ -67,5 +67,5 @@ Para revertir a la lógica predeterminada del motor en tiempo de ejecución para
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext (métodos)](../data-tools/datacontext-methods-o-r-designer.md)
-- [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
+- [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Operaciones de inserción, actualización y eliminación (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)
