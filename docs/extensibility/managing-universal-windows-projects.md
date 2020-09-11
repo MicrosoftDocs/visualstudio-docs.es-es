@@ -8,20 +8,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744939"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012313"
 ---
 # <a name="manage-universal-windows-projects"></a>Administrar proyectos universales de Windows
 
-Las aplicaciones universales de Windows son aplicaciones que tienen como destino Windows 8.1 y Windows Phone 8,1, lo que permite a los desarrolladores usar código y otros recursos en ambas plataformas. El código compartido y los recursos se mantienen en un proyecto compartido, mientras que el código y los recursos específicos de la plataforma se mantienen en proyectos independientes, uno para Windows y el otro para Windows Phone. Para obtener más información sobre las aplicaciones universales de Windows, consulte [aplicaciones universales de Windows](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Las extensiones de Visual Studio que administran proyectos deben tener en cuenta que los proyectos de aplicaciones universales de Windows tienen una estructura que difiere de las aplicaciones de una sola plataforma. En este tutorial se muestra cómo navegar por el proyecto compartido y administrar los elementos compartidos.
+Las aplicaciones universales de Windows son aplicaciones que tienen como destino Windows 8.1 y Windows Phone 8,1, lo que permite a los desarrolladores usar código y otros recursos en ambas plataformas. El código compartido y los recursos se mantienen en un proyecto compartido, mientras que el código y los recursos específicos de la plataforma se mantienen en proyectos independientes, uno para Windows y el otro para Windows Phone. Para obtener más información sobre las aplicaciones universales de Windows, consulte [aplicaciones universales de Windows](/windows/uwp/get-started/create-uwp-apps). Las extensiones de Visual Studio que administran proyectos deben tener en cuenta que los proyectos de aplicaciones universales de Windows tienen una estructura que difiere de las aplicaciones de una sola plataforma. En este tutorial se muestra cómo navegar por el proyecto compartido y administrar los elementos compartidos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="navigate-the-shared-project"></a>Navegar por el proyecto compartido
 

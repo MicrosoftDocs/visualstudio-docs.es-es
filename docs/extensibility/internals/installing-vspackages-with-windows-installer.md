@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2eb90dbffa9f04cd17afa70d2bdfc59205bc99cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707461"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012209"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalación de VSPackages con Windows Installer
 La integración del VSPackage en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] requiere más que copiar archivos en el equipo de un usuario. El instalador de VSPackage debe instalar el VSPackage y sus archivos dependientes, y registrarlos e integrarlos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . El VSPackage puede aprovechar las características de integración, como mostrar un icono en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pantalla de presentación y en el cuadro de diálogo acerca de.
 
- Microsoft Windows Installer archivos son la manera recomendada de distribuir los VSPackages. Los paquetes de Windows Installer fáciles de usar se pueden ejecutar en cualquier sistema operativo Windows compatible con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Para obtener más información, vea [Windows Installer](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0).
+ Microsoft Windows Installer archivos son la manera recomendada de distribuir los VSPackages. Los paquetes de Windows Installer fáciles de usar se pueden ejecutar en cualquier sistema operativo Windows compatible con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Para obtener más información, vea [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).
 
 ## <a name="in-this-section"></a>En esta sección
 - [Datos básicos de Windows Installer](../../extensibility/internals/windows-installer-basics.md)

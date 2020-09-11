@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905943"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012092"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Tutorial: agregar características a un editor personalizado
 Después de crear un editor personalizado, puede agregarle más características.
@@ -34,11 +34,11 @@ Después de crear un editor personalizado, puede agregarle más características
 
 3. Implemente un generador de editores mediante la configuración de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz.
 
-     Para obtener más información, consulte [generadores de editores](/visualstudio/extensibility/editor-factories?view=vs-2015).
+     Para obtener más información, consulte [generadores de editores](../vs-2015/extensibility/editor-factories.md?view=vs-2015).
 
 4. Decida si desea que el editor use la activación en contexto o la incrustación simplificada para administrar la ventana de objeto de vista de documento.
 
-     Una ventana del editor de incrustación simplificada hospeda una vista de documento estándar, mientras que una ventana del editor de activación en contexto hospeda un control ActiveX u otro objeto activo como su vista de documento. Para obtener más información, consulte [incrustación simplificada](../extensibility/simplified-embedding.md) y [activación en contexto](/visualstudio/misc/in-place-activation?view=vs-2015).
+     Una ventana del editor de incrustación simplificada hospeda una vista de documento estándar, mientras que una ventana del editor de activación en contexto hospeda un control ActiveX u otro objeto activo como su vista de documento. Para obtener más información, consulte [incrustación simplificada](../extensibility/simplified-embedding.md) y [activación en contexto](../vs-2015/misc/in-place-activation.md?view=vs-2015).
 
 5. Implemente la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para controlar los comandos.
 
@@ -115,7 +115,7 @@ Después de crear un editor personalizado, puede agregarle más características
 
 12. Implementar la compatibilidad con la ayuda contextual.
 
-     Este paso le permite proporcionar ayuda F1 y compatibilidad con ventanas de ayuda dinámica para los elementos del editor. Para obtener más información, vea [Cómo: proporcionar contexto para editores](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015).
+     Este paso le permite proporcionar ayuda F1 y compatibilidad con ventanas de ayuda dinámica para los elementos del editor. Para obtener más información, vea [Cómo: proporcionar contexto para editores](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015).
 
 13. Exponga un modelo de objetos de automatización desde el editor implementando la `IDispatch` interfaz.
 
@@ -152,6 +152,6 @@ Después de crear un editor personalizado, puede agregarle más características
 
   - `Window.Object`
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Contribuir al modelo de automatización](../extensibility/internals/contributing-to-the-automation-model.md)

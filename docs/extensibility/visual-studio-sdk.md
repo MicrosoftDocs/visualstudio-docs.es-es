@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173570"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012365"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio o a integrar las nuevas características en Visual Studio. Puede distribuir sus extensiones a otros usuarios, así como al Visual Studio Marketplace. Estas son algunas de las formas en que se puede ampliar Visual Studio:
@@ -41,7 +41,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
   Si nunca ha escrito una extensión de Visual Studio, debe encontrar más información sobre estas características y en [empezar a desarrollar extensiones de Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
 ## <a name="install-the-visual-studio-sdk"></a>Instalar Visual Studio SDK
- El SDK de Visual Studio es una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ El SDK de Visual Studio es una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="whats-new-in-the-visual-studio-sdk"></a>Novedades del SDK de Visual Studio
  El SDK de Visual Studio tiene algunas características nuevas, como la advertencia de extensiones autocargadas de forma sincrónica y el formato VSIX V3, así como cambios importantes, que pueden requerir la actualización de la extensión. Para obtener más información, vea [what's New in the visual studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md) y [what's New in the Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).
@@ -65,7 +65,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
 ## <a name="other-visual-studio-sdk-resources"></a>Otros recursos del SDK de Visual Studio
  Si tiene alguna pregunta sobre el VSSDK o desea compartir sus experiencias para desarrollar las extensiones, puede usar el [Foro de extensibilidad de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) o el [chatroom ExtendVS Gitter](https://gitter.im/Microsoft/extendvs).
 
- Puede encontrar más información en el [blog de VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) y varios blogs escritos por MVP de Microsoft:
+ Puede encontrar más información en el [blog de VSX Arcana](/archive/blogs/vsx/) y varios blogs escritos por MVP de Microsoft:
 
 - [Extensiones de Visual Studio favoritas](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -73,11 +73,11 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
 
 - [Extender Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Cómo: migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Preguntas más frecuentes: convertir complementos en extensiones de VSPackage](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [Preguntas más frecuentes: convertir complementos en extensiones de VSPackage](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
 - [Administrar varios subprocesos en código administrado](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Extender menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Agregar comandos a las barras de herramientas](../extensibility/adding-commands-to-toolbars.md)

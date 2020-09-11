@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721526"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011871"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Esta interfaz permite a un motor de depuración (DE) o a proveedores de puertos personalizados registrar programas para la depuración.
@@ -56,7 +56,7 @@ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se muestra cómo crear una instancia del publicador de programa y registrar un nodo de programa. Esto se toma del tutorial, [publicar el nodo del programa](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
+En este ejemplo se muestra cómo crear una instancia del publicador de programa y registrar un nodo de programa. Esto se toma del tutorial, [publicar el nodo del programa](/previous-versions/bb161795(v=vs.90)).
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:

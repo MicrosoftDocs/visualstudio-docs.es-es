@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705859"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012053"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registro de controladores de comandos de ensamblado de interoperabilidad
 Un VSPackage debe registrarse con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que el entorno de desarrollo integrado (IDE) enrute sus comandos correctamente.
@@ -25,7 +25,7 @@ Un VSPackage debe registrarse con [!INCLUDE[vsprvs](../../code-quality/includes/
 
  El marco de trabajo de paquetes administrados (MPF) proporciona esta funcionalidad a través de la <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> clase.
 
-- Los recursos de [referencia de formato de tabla de comandos](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) se encuentran en archivos dll satélite no administrados.
+- Los recursos de [referencia de formato de tabla de comandos](/previous-versions/bb164647(v=vs.100)) se encuentran en archivos dll satélite no administrados.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registro del controlador de comandos de un VSPackage
  Un VSPackage que actúa como controlador para comandos basados en la interfaz de usuario (UI) requiere una entrada del registro denominada después del VSPackage `GUID` . Esta entrada del registro especifica la ubicación del archivo de recursos de la interfaz de usuario del VSPackage y el recurso de menú dentro de dicho archivo. La propia entrada del registro se encuentra en HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, donde *\<Version>* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , por ejemplo 9,0.

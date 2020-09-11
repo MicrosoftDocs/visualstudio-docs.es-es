@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4634eb5edaab16752bc5df82d70371a580845d28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706397"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011858"
 ---
 # <a name="project-property-user-interface"></a>Interfaz de usuario de propiedades de proyecto
 
@@ -55,7 +55,7 @@ Para determinar los CATID del ámbito del proyecto, el subtipo de proyecto recup
 
 Dado que el subtipo de proyecto agrega el <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto, puede invalidar la definición de estas propiedades para controlar qué cuadros de diálogo de **páginas de propiedades** se muestran. El subtipo de proyecto puede recuperar estas propiedades del proyecto base interno y, a continuación, agregar o quitar CLSID según sea necesario.
 
-Las nuevas páginas de propiedades agregadas por un subtipo de proyecto se entregan a un objeto de exploración de configuración del proyecto desde la implementación del proyecto base. Este objeto de examen de configuración de proyecto es compatible con los extensores de automatización. Para obtener más información sobre AutomationExtenders, consulte [implementación y uso de extensores de automatización](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). Las páginas de propiedades implementadas por la llamada de subtipo de proyecto <xref:EnvDTE.Project.Extender%2A> para recuperar su propio objeto de examen de configuración de subtipo de proyecto que extiende el objeto de exploración de configuración del proyecto base.
+Las nuevas páginas de propiedades agregadas por un subtipo de proyecto se entregan a un objeto de exploración de configuración del proyecto desde la implementación del proyecto base. Este objeto de examen de configuración de proyecto es compatible con los extensores de automatización. Para obtener más información sobre AutomationExtenders, consulte [implementación y uso de extensores de automatización](/previous-versions/0y92k2w2(v=vs.140)). Las páginas de propiedades implementadas por la llamada de subtipo de proyecto <xref:EnvDTE.Project.Extender%2A> para recuperar su propio objeto de examen de configuración de subtipo de proyecto que extiende el objeto de exploración de configuración del proyecto base.
 
 ## <a name="see-also"></a>Vea también
 

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44da532207668d9526aec0ccdcab027b94184e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706378"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012066"
 ---
 # <a name="project-type-essentials"></a>Conceptos básicos del tipo de proyecto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluye varios tipos de proyecto para lenguajes como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también le permite crear sus propios tipos de proyecto.
@@ -32,7 +32,7 @@ ms.locfileid: "80706378"
 
   Debe crear un nuevo tipo de proyecto para los proyectos basados en un lenguaje distinto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] si desea admitir uno o varios de los siguientes elementos:
 
-- Compilar
+- Build
 
 - Implementación
 
@@ -52,7 +52,7 @@ ms.locfileid: "80706378"
 
 - Los tipos de proyecto son objetos de un VSPackage que implementan el conjunto de interfaces [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] espera. Si usa C# para desarrollar un tipo de proyecto, las clases de proyecto de Managed Package Framework implementan las interfaces necesarias automáticamente y permiten heredar esa implementación. Para obtener más información, vea [usar el marco de trabajo de paquetes administrados para implementar un tipo de proyecto (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).
 
-- En el caso de los desarrolladores de C++, las clases de la biblioteca HierUtil funcionan de manera similar. Para obtener más información, vea [no está en la compilación: usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+- En el caso de los desarrolladores de C++, las clases de la biblioteca HierUtil funcionan de manera similar. Para obtener más información, vea [no está en la compilación: usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](/previous-versions/bb166212(v=vs.100)).
 
 - Los tipos de proyecto pueden admitir datos distintos de los archivos de código fuente típicos que se compilan en un ensamblado. exe o. dll. Por ejemplo, los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos de base de datos contienen referencias a archivos de script y de consulta almacenados en disco y agregan comandos a **Explorador de soluciones** para ejecutar los scripts y las consultas en una base de datos, pero los proyectos no admiten el comportamiento de compilación. Para obtener más información, vea [abrir y guardar elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md).
 
@@ -64,5 +64,5 @@ ms.locfileid: "80706378"
 
 - Los tipos de proyecto pueden admitir varias configuraciones, como la depuración y la versión. Los usuarios pueden cambiar las diferentes configuraciones de un proyecto mediante las páginas de propiedades que proporcione. Para obtener más información, vea [administrar opciones de configuración](../../extensibility/internals/managing-configuration-options.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Implementación de tipos de proyecto](../../extensibility/internals/deploying-project-types.md)

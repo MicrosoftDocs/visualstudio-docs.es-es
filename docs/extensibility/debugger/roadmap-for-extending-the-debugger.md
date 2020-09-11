@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713144"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011832"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guía básica para extender el depurador
 En esta documentación se proporciona información de referencia y guía para extender el [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] depurador con [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -31,7 +31,7 @@ En esta documentación se proporciona información de referencia y guía para ex
 
    [Evaluación de expresiones](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
-   [Evaluación de expresiones](../../extensibility/debugger/evaluating-expressions.md)
+   [Evaluar expresiones](../../extensibility/debugger/evaluating-expressions.md)
 
    [Contexto de evaluación de expresiones](../../extensibility/debugger/expression-evaluation-context.md)
 
@@ -43,11 +43,11 @@ En esta documentación se proporciona información de referencia y guía para ex
 
    [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Tutorial: compilar un motor de depuración mediante ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Tutorial: compilar un motor de depuración mediante ATL COM](/previous-versions/bb147024(v=vs.90))
 
    [Implementación de un proveedor de Puerto](../../extensibility/debugger/implementing-a-port-supplier.md)
 
-   [Muestras](../../extensibility/debugger/visual-studio-debugging-samples.md)
+   [Ejemplos](../../extensibility/debugger/visual-studio-debugging-samples.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3cd21242bd4b5a3bdb0da9691d6efb32288d3444
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a3c4470ea1e54178ea9104af2645c3766d79f18a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742878"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012287"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad a Visual Studio 2017
 
@@ -180,7 +180,7 @@ instantáneas | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugg
 
 ## <a name="find-component-ids"></a>Buscar identificadores de componente
 
-La lista de componentes ordenados por producto de Visual Studio se encuentra en [identificadores de componente y carga de trabajo de Visual studio 2017](/visualstudio/install/workload-and-component-ids?view=vs-2019). Use estos identificadores de componente para los identificadores de requisitos previos en el manifiesto.
+La lista de componentes ordenados por producto de Visual Studio se encuentra en [identificadores de componente y carga de trabajo de Visual studio 2017](../install/workload-and-component-ids.md?view=vs-2019). Use estos identificadores de componente para los identificadores de requisitos previos en el manifiesto.
 
 Si no está seguro de qué componente contiene un archivo binario específico, descargue la [hoja de cálculo de asignación binaria de componentes >](https://aka.ms/vs2017componentid-binaries).
 

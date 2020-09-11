@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173608"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012157"
 ---
 # <a name="author-vsct-files"></a>Archivos Author. Vsct
 En este documento se muestra cómo crear un archivo *. Vsct* para agregar elementos de menú, barras de herramientas y otros elementos de la interfaz de usuario (IU) al entorno de desarrollo integrado (IDE) de Visual Studio. Siga estos pasos al agregar elementos de interfaz de usuario a un paquete de Visual Studio (VSPackage) que todavía no tiene un archivo *. Vsct* .
@@ -108,7 +108,7 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
        > [!NOTE]
        > Los botones de la barra de herramientas deben tener iconos.
 
-   Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+   Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
 4. Si alguno de los comandos requiere iconos, agregue un elemento [bitmaps](../../extensibility/bitmaps-element.md) al `Commands` elemento. A continuación, para cada icono, agregue un elemento [Bitmap](../../extensibility/bitmap-element.md) al `Bitmaps` elemento. Aquí es donde se especifica la ubicación del recurso de mapa de bits. Para obtener más información, vea [Agregar iconos a comandos de menú](../../extensibility/adding-icons-to-menu-commands.md).
 
@@ -233,7 +233,7 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
 
    - Controlador de menú: un controlador de menú es un botón que tiene una flecha al lado. Al hacer clic en la flecha, se abre una lista. Para agregar un controlador de menú a la interfaz de usuario, cree un `Menu` elemento y establezca su `type` atributo en `MenuController` o `MenuControllerLatched` , según el comportamiento que desee. Para rellenar un controlador de menú, establézcalo como elemento primario de un `Group` elemento. El controlador de menú mostrará todos los elementos secundarios de ese grupo en la lista desplegable.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extender menús y comandos](../../extensibility/extending-menus-and-commands.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

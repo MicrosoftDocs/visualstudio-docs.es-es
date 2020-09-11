@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a05dec8fbef40143f31f2c0ac484824717ea2e32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703920"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012131"
 ---
 # <a name="vspackage-registration"></a>Registro de VSPackage
 Los VSPackages deben informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de que están instalados y deben cargarse. Este proceso se consigue escribiendo información en el registro. Es un trabajo típico de un instalador.
@@ -57,4 +57,4 @@ Los VSPackages deben informar [!INCLUDE[vsprvs](../../code-quality/includes/vspr
 
 ## <a name="see-also"></a>Vea también
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
-- [Registro de paquetes administrados](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [Registro de paquetes administrados](/previous-versions/bb166783(v=vs.100))

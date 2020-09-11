@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7971de5ae5301d99147bbfc374dda6b039662a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0387bc15e392d9e9035e4dd1c119fdc1ad00dba
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701596"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011975"
 ---
 # <a name="register-a-tool-window"></a>Registro de una ventana de herramientas
 Puede registrar las ventanas de herramientas mediante <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> y  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- En el código anterior, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra las ventanas de `PersistedWindowPane` `DynamicWindowPane` herramientas y con Visual Studio. La ventana de herramientas conservada está acoplada y con la pestaña **Explorador de soluciones**, y a la ventana dinámica se le asigna una posición inicial y un tamaño predeterminados. La ventana dinámica se hace transitoria, lo que indica que no se crea en el inicio. Esto escribe un `DontForceCreate` valor en la `ToolWindows` clave del registro del sistema. Para obtener más información, vea configuración de visualización de la [ventana de herramientas](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).
+ En el código anterior, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra las ventanas de `PersistedWindowPane` `DynamicWindowPane` herramientas y con Visual Studio. La ventana de herramientas conservada está acoplada y con la pestaña **Explorador de soluciones**, y a la ventana dinámica se le asigna una posición inicial y un tamaño predeterminados. La ventana dinámica se hace transitoria, lo que indica que no se crea en el inicio. Esto escribe un `DontForceCreate` valor en la `ToolWindows` clave del registro del sistema. Para obtener más información, vea configuración de visualización de la [ventana de herramientas](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015).

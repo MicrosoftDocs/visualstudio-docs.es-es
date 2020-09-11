@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fee88e895d40d42114eaf53422503524594b485f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cdf9023512f4225e2a8edcadcf589cb61547e24
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704271"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011819"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Desinstalación de un VSPackage con Windows Installer
 En su mayor parte, Windows Installer puede desinstalar el VSPackage simplemente "deshaciendo" lo que hizo para instalar el VSPackage. Las acciones personalizadas descritas en los [comandos que se deben ejecutar después](../../extensibility/internals/commands-that-must-be-run-after-installation.md) de la instalación deben ejecutarse después de una desinstalación. Dado que las llamadas a devenv.exe se producen justo antes de la acción estándar InstallFinalize para la instalación y desinstalación, las entradas de la tabla CustomAction y InstallExecuteSequence sirven en ambos casos.
@@ -39,5 +39,5 @@ En su mayor parte, Windows Installer puede desinstalar el VSPackage simplemente 
 > `Installed` es la propiedad Windows Installer establece cuando detecta que el VSPackage ya se ha instalado en el sistema.
 
 ## <a name="see-also"></a>Vea también
-- [Windows Installer](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)
+- [Windows Installer](/previous-versions/ee231230(v=vs.100))
 - [Detección de requisitos del sistema](../../extensibility/internals/detecting-system-requirements.md)

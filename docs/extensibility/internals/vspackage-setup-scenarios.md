@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01279666642adb729d4350b8a497c42d78159120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703970"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012118"
 ---
 # <a name="vspackage-setup-scenarios"></a>Escenarios de instalación de VSPackage
 
@@ -74,9 +74,9 @@ En este caso, el VSPackage es un VSPackage administrado instalado en la caché d
 
 ![Instalador de la actualización en paralelo de VS Package](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Para obtener más información sobre la implementación de ensamblados en paralelo, consulte [simplificación de la implementación y solución de DLL Hell con el .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
+Para obtener más información sobre la implementación de ensamblados en paralelo, consulte [simplificación de la implementación y solución de DLL Hell con el .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Compatibilidad con varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

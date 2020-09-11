@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9372762f713b6a5ec78a92eeb96e8a616101b5bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183397"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011923"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista de comprobación: crear nuevos tipos de proyecto
 Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente lista de comprobación proporciona una guía para estas tareas:
@@ -33,7 +33,7 @@ Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente 
 
     - Generador de proyectos, para administrar la creación de nuevos proyectos y la apertura de proyectos existentes. Para obtener más información, vea [crear instancias de proyecto mediante el uso de generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Jerarquía de proyectos y control de comandos. Para obtener más información, vea [usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md), [componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md)y [MenuCommands frente a OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+    - Jerarquía de proyectos y control de comandos. Para obtener más información, vea [usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](/previous-versions/bb166212(v=vs.100)), [elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md), [componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md)y [MenuCommands frente a OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
     - Administración de elementos de proyecto, incluida la adición del proyecto al cuadro de diálogo **nuevo proyecto** . Para obtener más información, vea [agregar plantillas](../../extensibility/internals/adding-project-and-project-item-templates.md) de proyecto y de elemento de proyecto y [registrar plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 

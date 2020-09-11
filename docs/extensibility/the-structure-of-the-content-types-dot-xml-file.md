@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699019"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012522"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Estructura del archivo [Content_types].xml
 Contiene información sobre los tipos de contenido de un paquete VSIX. Visual Studio usa el archivo [Content_Types]. XML para instalar el paquete, pero no instala el propio archivo.
 
 > [!NOTE]
-> Aunque este tema se aplica únicamente a los archivos [Content_Type]. XML que se usan en los paquetes VSIX, el tipo de archivo [Content_Types]. XML forma parte del estándar de *convenciones de empaquetado abierto (OPC)* . Para obtener más información, consulte [OPC: un nuevo estándar para empaquetar los datos](https://msdn.microsoft.com/magazine/cc163372.aspx) en el sitio web de MSDN.
+> Aunque este tema se aplica únicamente a los archivos [Content_Type]. XML que se usan en los paquetes VSIX, el tipo de archivo [Content_Types]. XML forma parte del estándar de *convenciones de empaquetado abierto (OPC)* . Para obtener más información, consulte [OPC: un nuevo estándar para empaquetar los datos](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) en el sitio web de MSDN.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
  En las secciones siguientes se describe el elemento raíz y sus atributos y elementos secundarios.
@@ -64,7 +64,7 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 ### <a name="attribute-name-attribute"></a>{Nombre de atributo} Atribui
  Visual Studio reconoce los siguientes `ContentType` valores para los `Extension` tipos asociados.
 
-|Comprobación de actualización|ContentType|
+|Extensión|ContentType|
 |---------------|-----------------|
 |txt|text/plain|
 |archivo pkgdef|text/plain|
@@ -101,5 +101,5 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 
 ## <a name="see-also"></a>Consulte también
 - [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Referencia del esquema de extensión VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: un nuevo estándar para empaquetar los datos](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [Referencia del esquema de extensión VSIX 1,0](/previous-versions/dd393700(v=vs.110))
+- [OPC: un nuevo estándar para empaquetar los datos](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

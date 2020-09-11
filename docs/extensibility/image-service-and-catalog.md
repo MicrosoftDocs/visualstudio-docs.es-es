@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536336"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011962"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 Este manual contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes introducidos en Visual Studio 2015.
@@ -101,11 +101,11 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </Symbols>
 ```
 
-|**Subelemento**|**Definition**|
+|**Subelemento**|**Definición**|
 |-|-|
 |Importación|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
 |Guid|El símbolo representa un GUID y debe coincidir con el formato de GUID|
-|Id.|El símbolo representa un identificador y debe ser un entero no negativo|
+|ID|El símbolo representa un identificador y debe ser un entero no negativo|
 |String|El símbolo representa un valor de cadena arbitrario|
 
  Los símbolos distinguen mayúsculas de minúsculas y se hace referencia a ellos mediante la sintaxis $ (nombre de símbolo):
@@ -141,10 +141,10 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </Image>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
-|Id.|Desee La parte de identificador del moniker de imagen|
+|ID|Desee La parte de identificador del moniker de imagen|
 |AllowColorInversion|[Opcional, valor predeterminado True] Indica si la imagen puede tener sus colores inversos mediante programación cuando se usa en un fondo oscuro.|
 
  **Origen**
@@ -157,14 +157,14 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
  </Source>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Identificador URI|Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la autoridad Application:///<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|
 |Información previa|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> *Claro:* El origen se puede usar en un fondo claro.<br /><br /> *Oscuro:* El origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* El origen se puede usar en cualquier fondo del modo contraste alto.<br /><br /> *HighContrastLight:* El origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen puede usarse en cualquier fondo.<br /><br /> Si background es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite Background o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|
 
 Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:
 
-|**Element**|**Atributos (todos obligatorios)**|**Definition**|
+|**Element**|**Atributos (todos obligatorios)**|**Definición**|
 |-|-|-|
 |\<Size>|Value|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
 |\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo) de un solo uso. La imagen será cuadrada.|
@@ -177,10 +177,10 @@ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|
-|Id.|Desee La parte del identificador entero del recurso nativo|
+|ID|Desee La parte del identificador entero del recurso nativo|
 
  **ImageList**
 
@@ -193,10 +193,10 @@ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos
  </ImageList>
 ```
 
-|**Atributo**|**Definition**|
+|**Atributo**|**Definición**|
 |-|-|
 |Guid|Desee Parte del GUID del moniker de la imagen|
-|Id.|Desee La parte de identificador del moniker de imagen|
+|ID|Desee La parte de identificador del moniker de imagen|
 |Externo|[Opcional, valor predeterminado False] Indica si el moniker de imagen hace referencia a una imagen del manifiesto actual.|
 
  No es necesario que el moniker de la imagen contenida haga referencia a una imagen definida en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se usará una imagen de marcador de posición en blanco en su lugar.
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Actualice el código para usar el servicio de imágenes para solicitar monikers a través de la asignación actualizada. (Esto podría significar actualizar a **CrispImages** para código administrado o solicitar HBITMAPs o HICONs desde el servicio de imágenes y pasarlos para código nativo).
 
 ## <a name="testing-your-images"></a>Prueba de las imágenes
- Puede usar la herramienta Visor de la biblioteca de imágenes para probar los manifiestos de imagen con el fin de asegurarse de que todo se ha creado correctamente. Puede encontrar la herramienta en el [SDK de Visual Studio 2015](visual-studio-sdk.md). La documentación de esta herramienta y otras se pueden encontrar [aquí](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
+ Puede usar la herramienta Visor de la biblioteca de imágenes para probar los manifiestos de imagen con el fin de asegurarse de que todo se ha creado correctamente. Puede encontrar la herramienta en el [SDK de Visual Studio 2015](visual-studio-sdk.md). La documentación de esta herramienta y otras se pueden encontrar [aquí](./internals/vssdk-utilities.md?view=vs-2015).
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

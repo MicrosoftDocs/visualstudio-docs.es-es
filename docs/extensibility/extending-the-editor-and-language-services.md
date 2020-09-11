@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 239c638ec32cc0dc2b2e275a5dbe0c4213a3423e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2520eb4d1fe9480f1421016883d65c9bde9b422
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711710"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012326"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Extender el editor y los servicios de lenguaje
 Puede agregar características del servicio de lenguaje (como IntelliSense) a su propio editor y ampliar la mayoría de las características del editor de código de Visual Studio.  Para obtener una lista completa de lo que puede ampliar, consulte [puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md).
@@ -36,7 +36,7 @@ Puede agregar características del servicio de lenguaje (como IntelliSense) a su
 |[Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)|Enumera los puntos de extensión del editor. Los puntos de extensión representan las características del editor que se pueden extender.|
 |[Tutorial: crear un elemento gráfico de vista, comandos y configuración (guías de columnas)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Recorre y explica cómo crear un elemento gráfico de vistas que dibuja las líneas de guía de columna para ayudarle a mantener el código en un determinado ancho de pantalla.  También muestra la configuración de lectura y escritura, así como la declaración e implementación de comandos que se pueden invocar desde la ventana de comandos.|
 |[Importaciones del editor](../extensibility/editor-imports.md)|Enumera los servicios que una extensión puede importar.|
-|[Adaptación del código heredado al editor](/visualstudio/extensibility/adapting-legacy-code-to-the-editor?view=vs-2015)|Explica las distintas formas de adaptar el código heredado (anterior a Visual Studio 2010) para extender el editor.|
+|[Adaptación del código heredado al editor](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015)|Explica las distintas formas de adaptar el código heredado (anterior a Visual Studio 2010) para extender el editor.|
 |[Migración de un servicio de lenguaje heredado](../extensibility/internals/migrating-a-legacy-language-service.md)|Explica cómo migrar un servicio de lenguaje basado en VSPackage.|
 |[Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Muestra cómo vincular un tipo de contenido a una extensión de nombre de archivo.|
 |[Tutorial: crear un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md)|Muestra cómo agregar un icono a un margen.|

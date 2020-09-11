@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708521"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011780"
 ---
 # <a name="elements-of-a-project-model"></a>Elementos de un modelo de proyecto
 Las interfaces y las implementaciones de todos los proyectos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comparten una estructura básica: el modelo de proyecto para el tipo de proyecto. En el modelo de proyecto, que es el VSPackage que está desarrollando, cree objetos que cumplan sus decisiones de diseño y colaboren con la funcionalidad global que proporciona el IDE. Aunque controle el modo en que se conserva un elemento de proyecto, por ejemplo, no controla la notificación de que se debe guardar un archivo. Cuando un usuario coloca el foco en un elemento de proyecto abierto y elige **Guardar** en el menú **archivo** en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barra de menús, el código de tipo de proyecto debe interceptar el comando desde el IDE, conservar el archivo y enviar la notificación de vuelta al IDE para que el archivo ya no se cambie.
@@ -32,7 +32,7 @@ Las interfaces y las implementaciones de todos los proyectos en [!INCLUDE[vsprvs
 
 - Cada proyecto debe tener un archivo de plantilla o un asistente para inicializar el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto a través de la interfaz de usuario [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Por ejemplo, las [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] plantillas inicializan lo que finalmente se convierte en archivos. vcproj.
 
-  En la ilustración siguiente se muestran las interfaces, los servicios y los objetos principales que componen una implementación de proyecto típica. Puede usar la aplicación auxiliar de aplicaciones, `HierUtil7` , para crear los objetos subyacentes y otros tipos de programación. Para obtener más información sobre la `HierUtil7` aplicación auxiliar de aplicaciones, vea [usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+  En la ilustración siguiente se muestran las interfaces, los servicios y los objetos principales que componen una implementación de proyecto típica. Puede usar la aplicación auxiliar de aplicaciones, `HierUtil7` , para crear los objetos subyacentes y otros tipos de programación. Para obtener más información sobre la `HierUtil7` aplicación auxiliar de aplicaciones, vea [usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](/previous-versions/bb166212(v=vs.100)).
 
   ![Gráfico del modelo de proyecto de Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") Modelo de proyecto
 
@@ -40,9 +40,9 @@ Las interfaces y las implementaciones de todos los proyectos en [!INCLUDE[vsprvs
 
   Los proyectos pueden admitir comandos y, por lo tanto, deben implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para participar en el enrutamiento de comandos a través de los GUID de contexto de comandos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Lista de comprobación: crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [Usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](/previous-versions/bb166212(v=vs.100))
 - [Componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md)
 - [Creación de instancias de proyecto mediante el uso de generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 - [Cómo: obtener un servicio](../../extensibility/how-to-get-a-service.md)

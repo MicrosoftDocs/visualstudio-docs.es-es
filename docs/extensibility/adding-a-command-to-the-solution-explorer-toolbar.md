@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08513ef67dfdffbf70b5ce2ff449a9ceb4250c37
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183735"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012300"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Agregar un comando a la barra de herramientas Explorador de soluciones
 En este tutorial se muestra cómo agregar un botón a la barra de herramientas **Explorador de soluciones** .
@@ -30,7 +30,7 @@ En este tutorial se muestra cómo agregar un botón a la barra de herramientas *
 > Use archivos de tabla de comandos XML (*. Vsct*) en lugar de archivos de configuración de tabla de comandos (*. CTC*) para definir el modo en que los menús y comandos aparecen en los VSPackages. Para obtener más información, vea [tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú
  Cree un proyecto VSIX denominado `SolutionToolbar` . Agregue una plantilla de elemento de comando de menú denominada **ToolbarButton**. Para obtener información sobre cómo hacerlo, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
@@ -114,7 +114,7 @@ En este tutorial se muestra cómo agregar un botón a la barra de herramientas *
 
 5. En el menú **Archivo** , haga clic en **Cerrar solución**. El botón desaparece de la barra de herramientas.
 
-   Controla la visibilidad del botón [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hasta que se carga el VSPackage. Una vez cargado el VSPackage, el VSPackage controla la visibilidad del botón.  Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+   Controla la visibilidad del botón [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hasta que se carga el VSPackage. Una vez cargado el VSPackage, el VSPackage controla la visibilidad del botón.  Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
 ## <a name="see-also"></a>Vea también
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

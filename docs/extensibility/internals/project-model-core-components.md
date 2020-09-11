@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f65973f0f3edc1dd6264c32d165503dca78681
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706537"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012417"
 ---
 # <a name="project-model-core-components"></a>Componentes principales del modelo de proyecto
 Las tablas siguientes se expanden en el modelo de proyecto. Las tablas presentan breves descripciones de las interfaces y los servicios identificados en el modelo, así como las interfaces y servicios asociados a objetos específicos. Además, las tablas detallan otras interfaces que son opcionales en la creación y el mantenimiento del proyecto en función de los requisitos de su tipo de proyecto específico.
@@ -102,6 +102,6 @@ Las tablas siguientes se expanden en el modelo de proyecto. Las tablas presentan
 ## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Lista de comprobación: Creación de nuevos tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [No está en la compilación: usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [No está en la compilación: usar clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](/previous-versions/bb166212(v=vs.100))
 - [Compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md)

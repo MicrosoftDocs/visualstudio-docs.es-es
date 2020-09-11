@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e876dd9e6fa95bbe180d1737bc8c4911f16e1e9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712223"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011714"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicialización del diseñador y configuración de metadatos
 
@@ -102,4 +102,4 @@ Si la marca global se estableció en `false` , el cambio de metadatos es local e
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
 - <xref:System.ComponentModel.ToolboxItemFilterType>
-- [Ampliar la compatibilidad en tiempo de diseño](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [Ampliar la compatibilidad en tiempo de diseño](/previous-versions/37899azc(v=vs.140))

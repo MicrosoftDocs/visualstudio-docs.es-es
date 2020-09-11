@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739878"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011936"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Elegir entre VSPackages compartidos y con control de versiones
 Las distintas versiones de Visual Studio pueden coexistir en el mismo equipo. Los VSPackages pueden admitir cualquier combinación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versiones.
@@ -35,7 +35,7 @@ Las distintas versiones de Visual Studio pueden coexistir en el mismo equipo. Lo
 
   - Programe el VSPackage para adaptarse a la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en la que se ejecuta. A continuación, si se produce un error en las consultas de los servicios más recientes, el VSPackage puede ofrecer otros servicios que se admiten en versiones anteriores de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Registre el VSPackage adecuadamente. Para obtener más información, consulte [registro de VSPackage](../extensibility/internals/vspackage-registration.md) y registro de [VSPackage administrado](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Registre el VSPackage adecuadamente. Para obtener más información, consulte [registro de VSPackage](../extensibility/internals/vspackage-registration.md) y registro de [VSPackage administrado](/previous-versions/bb166783(v=vs.100)).
 
 - Registrar las extensiones de archivo de forma adecuada. Para obtener más información, consulte [registro de extensiones de nombre de archivo para implementaciones en paralelo](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 

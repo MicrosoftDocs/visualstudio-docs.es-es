@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b940677c370106ebdcc63c7984d553003251e8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f953add14c617d54d44cf8d6bf873c28eea8651
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710008"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012170"
 ---
 # <a name="automation-model-overview"></a>Información general del modelo de automatización
 El modelo de automatización se compone de un conjunto de objetos en el que se puede escribir una extensión o un complemento de Visual Studio. Un complemento es una aplicación que puede manipular el entorno de Visual Studio y automatizar las tareas comunes. Una extensión de Visual Studio puede crear componentes personalizados de Visual Studio o agregar a la funcionalidad de componentes estándar como el editor de texto.
@@ -26,21 +26,21 @@ El modelo de automatización se compone de un conjunto de objetos en el que se p
 
  ![Gráfico de objetos de automatización de Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")
 
- Para obtener más información, vea [extender el entorno de Visual Studio](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).
+ Para obtener más información, vea [extender el entorno de Visual Studio](/previous-versions/esk3eey8(v=vs.140)).
 
  El entorno proporciona un modelo para las distintas áreas funcionales. Por ejemplo, hay un modelo de código para los distintos elementos que puede encontrar en el código. Hay un modelo de documento para varios elementos de documento. Un área, el área del proyecto, es de especial interés para los proveedores de VSPackage. Probablemente querrá que los nuevos tipos de proyecto contribuyan al modelo de automatización de la misma manera que [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] contribuyen al modelo de automatización. Ese proceso se describe en [proporcionar automatización para VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md).
 
  Lugares en los que puede considerar la posibilidad de extender el modelo de automatización del entorno:
 
-- Proyecto
+- Project
 
 - Documento
 
 - Código
 
-- Compilar
+- Build
 
-Para obtener más información sobre automatización, vea [automatización y extensibilidad para Visual Studio](/visualstudio/extensibility/extensibility-in-visual-studio?view=vs-2015). Este documento y los documentos a los que proporciona vínculos le ayudarán a tomar decisiones sobre cómo debe proporcionar automatización para el VSPackage.
+Para obtener más información sobre automatización, vea [automatización y extensibilidad para Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015). Este documento y los documentos a los que proporciona vínculos le ayudarán a tomar decisiones sobre cómo debe proporcionar automatización para el VSPackage.
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: crear un complemento](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+- [Cómo: crear un complemento](/previous-versions/80493a3w(v=vs.140))

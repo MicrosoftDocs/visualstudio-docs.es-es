@@ -9,23 +9,23 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64878141"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012482"
 ---
 # <a name="locate-visual-studio"></a>Localización de Visual Studio
 
-A partir de Visual Studio 2017, puede instalar varias instancias de la misma versión o incluso la edición. Esto resulta útil si desea obtener una vista previa de la nueva funcionalidad en el equipo de desarrollo principal mientras mantiene la instalación anterior. Debido a estos cambios, no hay una única variable de entorno o valor del registro que pueda usar para buscar una instancia. En su lugar, puede usar una [API de consulta com](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) para buscar instancias en función de los criterios relevantes para la extensión.
+A partir de Visual Studio 2017, puede instalar varias instancias de la misma versión o incluso la edición. Esto resulta útil si desea obtener una vista previa de la nueva funcionalidad en el equipo de desarrollo principal mientras mantiene la instalación anterior. Debido a estos cambios, no hay una única variable de entorno o valor del registro que pueda usar para buscar una instancia. En su lugar, puede usar una [API de consulta com](/dotnet/api/microsoft.visualstudio.setup.configuration) para buscar instancias en función de los criterios relevantes para la extensión.
 
 Se trata de una API rápida de solo lectura con paquetes NuGet disponibles para código nativo y administrado.
 
 | Código | Paquete |
 | ---- | --- |
 | Nativa | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Administrados | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Administrado | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 Puede buscar una sola instancia dada una ruta de acceso o el proceso actual, o enumerar todas las instancias. Consulte [nuestros ejemplos](https://github.com/Microsoft/vs-setup-samples) para obtener ejemplos completos de cómo encontrar Visual Studio.
 

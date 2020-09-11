@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d5e02d6ec18f8561a83b414532a4b78def5c09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65a78253094131b5998243ee3c826c4585ddff13
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697709"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012183"
 ---
 # <a name="vstextview-object"></a>Objeto objeto VsTextView
 
-La vista de texto es una ventana que permite a los usuarios ver y editar el texto Unicode del búfer de texto. En esencia, la vista es lo que la mayoría de los usuarios hace referencia como editor. Dado que la vista está separada del búfer por varias capas de texto (ajuste de línea, texto de esquematización, etc.), no se garantiza que la vista sea una representación exacta del texto en el búfer. Para obtener más información sobre la vista de texto, consulte [acceso a la vista de texto mediante la API heredada](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015).
+La vista de texto es una ventana que permite a los usuarios ver y editar el texto Unicode del búfer de texto. En esencia, la vista es lo que la mayoría de los usuarios hace referencia como editor. Dado que la vista está separada del búfer por varias capas de texto (ajuste de línea, texto de esquematización, etc.), no se garantiza que la vista sea una representación exacta del texto en el búfer. Para obtener más información sobre la vista de texto, consulte [acceso a la vista de texto mediante la API heredada](../vs-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api.md?view=vs-2015).
 
 En la tabla siguiente se muestran las interfaces en el <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> objeto.
 
