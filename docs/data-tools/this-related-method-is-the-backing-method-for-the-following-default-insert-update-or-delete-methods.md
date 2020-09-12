@@ -1,6 +1,7 @@
 ---
 title: No se puede eliminar el método de respaldo
 description: Este método relacionado es el método de copia de seguridad para los siguientes métodos de inserción, actualización o eliminación
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ad7c66c6d110d09940a93e694a897a7dafd92e17
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 66acc8486bcb261bb97a1611ff0c6753caa65dee
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743083"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037561"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Este método relacionado es el método de copia de seguridad para los siguientes métodos de inserción, actualización o eliminación
 
@@ -32,6 +33,6 @@ El `DataContext` método seleccionado se usa actualmente como uno de los `Insert
 
    El cuadro de mensaje se cierra y no se realiza ninguna modificación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

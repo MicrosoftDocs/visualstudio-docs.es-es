@@ -1,6 +1,7 @@
 ---
 title: Migrar proyectos de extensibilidad a Visual Studio 2017
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: a3c4470ea1e54178ea9104af2645c3766d79f18a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012287"
+ms.locfileid: "90038561"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad a Visual Studio 2017
 

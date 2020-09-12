@@ -1,25 +1,28 @@
 ---
-title: Cómo ejecutar el análisis de código manualmente para código administrado
-ms.date: 11/04/2019
+title: Cómo ejecutar el análisis de código manualmente para .NET
+ms.date: 09/02/2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
 - run code analysis
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
-author: mavasani
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bbd3d2023310b9412310fc86f419c2e8c4a127c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c24fa8e835dced8332aa4c50870d6251bdd43e63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893403"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037164"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Cómo: ejecutar el análisis de código manualmente para código administrado (requiere Visual Studio 2019 versión 16,5 o posterior)
-De forma predeterminada, los analizadores de código de .NET Compiler Platform ("Roslyn") analizan el código de C# o Visual Basic mientras escribe realizando el análisis en directo, así como durante la compilación. Por lo tanto, normalmente no necesitaría activar manualmente el análisis de código. Sin embargo, hay algunos escenarios en los que puede que desee activar manualmente el análisis de código:
+# <a name="run-code-analysis-manually-for-net"></a>Ejecutar el análisis de código manualmente para .NET
+De forma predeterminada, los analizadores de .NET Compiler Platform ("Roslyn") analizan el código de C# o Visual Basic mientras escribe realizando el análisis en directo, así como durante la compilación. Por lo tanto, normalmente no necesitaría activar manualmente el análisis de código. Sin embargo, hay algunos escenarios en los que puede que desee activar manualmente el análisis de código:
+
+> [!NOTE]
+> Ejecutar el análisis de código manualmente requiere Visual Studio 2019 versión 16,5 o posterior.
 
 - De forma predeterminada, el análisis de código activo ejecuta analizadores solo para archivos abiertos en Visual Studio. Sin embargo, puede que le interese ver las advertencias de análisis de código de todos los archivos de un proyecto o una solución concretos. Si es así, desea desencadenar el análisis de código una vez en un proyecto o una solución. Como alternativa, puede habilitar el análisis de código activo continuo para que se ejecute en toda la solución. Para obtener más información, vea [Cómo: Configurar el ámbito del análisis activo para el código administrado](./configure-live-code-analysis-scope-managed-code.md).
 - Puede preferir el flujo de trabajo de ejecución de análisis de código a petición sobre el análisis activo continuo o el análisis en tiempo de compilación. Si es así, puede deshabilitar la ejecución del analizador durante el análisis o la compilación en vivo. Para obtener información sobre cómo deshabilitar el análisis, vea [cómo deshabilitar el análisis de código fuente](disable-code-analysis.md). Después, querrá desencadenar manualmente el análisis de código una vez en un proyecto o una solución.

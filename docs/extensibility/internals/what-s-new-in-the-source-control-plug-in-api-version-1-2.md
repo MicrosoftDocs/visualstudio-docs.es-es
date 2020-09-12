@@ -1,5 +1,6 @@
 ---
 title: Novedades &apos; de la API del complemento de control de código fuente 1,2
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29a3d81c3a03f4a8dcb8236057e931993f06f6ec
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: f5deb43b3b5d1a654fee82b043f06ec8219530a2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741547"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037626"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>&#39;novedades de la API del complemento de control de código fuente 1,2
 En esta sección se resalta la funcionalidad avanzada de control de código fuente en la API del complemento de control de código fuente, versión 1,2. A continuación se enumeran las nuevas características de la versión 1,2:
@@ -32,5 +33,5 @@ En esta sección se resalta la funcionalidad avanzada de control de código fuen
 
 - [Eliminación de la información de control de código fuente de. Proj y. Sln files](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) explica cómo la API del complemento de control de código fuente versión 1,2 almacena información sobre proyectos y soluciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

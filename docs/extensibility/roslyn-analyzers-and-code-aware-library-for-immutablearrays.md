@@ -1,6 +1,7 @@
 ---
 title: Analizadores de Roslyn y bibliotecas con reconocimiento de código para ImmutableArrays
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -9,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fc40d229b911500cb6c196dba34546ed9ede206
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741667"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037652"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca con reconocimiento de código para ImmutableArrays
 
 El [.net Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") le ayuda a crear bibliotecas compatibles con el código. Una biblioteca con reconocimiento de código proporciona funcionalidad que puede usar y herramientas (analizadores de Roslyn) para ayudarle a usar la biblioteca de la mejor manera o para evitar errores. En este tema se muestra cómo crear un analizador Roslyn real para detectar errores comunes al usar el paquete NuGet [System. Collections. immutable](https://www.nuget.org/packages/System.Collections.Immutable) . En el ejemplo también se muestra cómo proporcionar una corrección de código para un problema de código encontrado por el analizador. Los usuarios ven correcciones de código en la interfaz de usuario de la bombilla de Visual Studio y pueden aplicar una corrección para el código automáticamente.
 
-## <a name="get-started"></a>Introducción
+## <a name="get-started"></a>Primeros pasos
 
 Para compilar este ejemplo, necesita lo siguiente:
 
@@ -307,7 +308,7 @@ Puede ver este ejemplo desarrollado y explicado con más detalle en [esta conver
 
 [Aquí](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)puede ver todo el código terminado. Cada una de las subcarpetas *DoNotUseImmutableArrayCollectionInitializer* y *DoNotUseImmutableArrayCtor* tiene un archivo de c# para buscar problemas y un archivo de c# que implementa las correcciones de código que se muestran en la interfaz de usuario de la bombilla de Visual Studio. Tenga en cuenta que el código terminado tiene un poco más de abstracción para evitar que se recupere el objeto de tipo ImmutableArray una \<T> y otra vez. Utiliza acciones registradas anidadas para guardar el objeto de tipo en un contexto que está disponible cada vez que se ejecutan las subacciones (analizar la creación de objetos y analizar inicializaciones de colección).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [\\\Build 2015 Talk](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Código completado en GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

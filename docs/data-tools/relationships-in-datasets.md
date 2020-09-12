@@ -1,5 +1,6 @@
 ---
 title: Crear relaciones entre conjuntos de datos
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739233"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037691"
 ---
 # <a name="create-relationships-between-datasets"></a>Crear relaciones entre conjuntos de datos
 Los conjuntos de datos que contienen tablas de datos relacionadas usan <xref:System.Data.DataRelation> objetos para representar una relación de elementos primarios y secundarios entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para la configuración de orígenes de datos**, o la **Diseñador de DataSet**, crea y configura el <xref:System.Data.DataRelation> objeto.
@@ -104,6 +105,6 @@ Las relaciones entre las tablas de datos aparecen como líneas en el **Diseñado
 
 2. En el menú **datos** , seleccione el comando **Mostrar etiquetas de relación** para mostrar el nombre de la relación. Desactive ese comando para ocultar el nombre de la relación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear y configurar conjuntos de datos en Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

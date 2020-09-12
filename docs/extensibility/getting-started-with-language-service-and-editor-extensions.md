@@ -1,5 +1,6 @@
 ---
 title: Introducción al servicio de lenguaje y extensiones de editor
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94ccda92a0ad5508b8e14ec267f32c50b64e55c0
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742890"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037769"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introducción al servicio de lenguaje y extensiones de editor
 
@@ -94,6 +95,6 @@ Puede usar las extensiones de editor para agregar características del servicio 
 
 - [Tutorial: usar una tecla de método abreviado con una extensión de editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

@@ -1,5 +1,6 @@
 ---
 title: Configurar la herencia mediante Object Relational Designer
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a0f56d7b123571e9a65d5bb2baa99a8d7dac2461
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742959"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037060"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedimiento para configurar la herencia mediante Object Relational Designer
 El **Object Relational Designer** (**Object**Relational Designer) admite el concepto de herencia de tabla única, ya que se suele implementar en sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.
@@ -50,7 +51,7 @@ La creación de un modelo de objetos que use la herencia (y que corresponda a da
 
 10. De manera opcional, también puede establecer la propiedad **Predeterminado de herencia** para designar un tipo en una jerarquía de herencia que se va a usar cuando se carguen filas que no coinciden con ningún código de herencia definido. En otras palabras, si un registro tiene un valor en su columna discriminadora que no coincide con el valor de las propiedades valor de **discriminador de clase derivada** o **valor de discriminador de clase base** , el registro se carga en el tipo designado como **predeterminado de herencia**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md) (Tutorial: Crear clases de LINQ to SQL [Object Relational Designer])

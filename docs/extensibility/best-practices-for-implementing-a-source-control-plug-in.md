@@ -1,5 +1,6 @@
 ---
 title: 'Implementar un complemento de control de código fuente: procedimientos recomendados'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1576717ceda110820b487a324f56f18486c5d95a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739155"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038457"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Prácticas recomendadas para implementar un complemento de control de código fuente
 Los detalles técnicos siguientes pueden ayudarle a implementar de forma confiable un complemento de control de código fuente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -57,6 +58,6 @@ Los detalles técnicos siguientes pueden ayudarle a implementar de forma confiab
 
  La mayoría de las opciones de configuración configurables por el usuario no se definen de esta manera, porque varían considerablemente entre los complementos de control de código fuente. Por lo tanto, el mecanismo recomendado es un botón **avanzado** . Por ejemplo, en el cuadro de diálogo **obtener** , el IDE muestra solo la información que entiende, pero también muestra un botón **avanzado** si el complemento tiene opciones para este comando. Cuando el usuario hace clic en el botón **avanzadas** , el IDE llama a [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) para habilitar el complemento de control de código fuente para solicitar información al usuario, como marcadores o una fecha y hora. El complemento devuelve esta información en una estructura que se pasa en el `SccGet` comando.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
 - [Crear un complemento de control de código fuente](../extensibility/internals/creating-a-source-control-plug-in.md)

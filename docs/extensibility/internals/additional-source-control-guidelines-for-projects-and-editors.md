@@ -1,5 +1,6 @@
 ---
 title: Directrices de control de código fuente para proyectos y editores
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743395"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037639"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Instrucciones adicionales de control de código fuente para proyectos y editores
 Hay una serie de instrucciones que se deben cumplir con los proyectos y los editores para admitir el control de código fuente.
@@ -33,5 +34,5 @@ Hay una serie de instrucciones que se deben cumplir con los proyectos y los edit
 |Conservar objetos y propiedades en orden predecible|X|X|Conservar los archivos en un orden predecible, como el orden alfabético, para facilitar la combinación.|
 |Recargar|X|X|Cuando un archivo cambia en el disco, el editor debe poder volver a cargarlo. Al participar en el control de código fuente, el entorno volverá a cargar los datos mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementación. El caso de recarga más difícil es cuando se produce una desprotección cuando se llama a IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> y se procesa información. Sin embargo, el código de recarga debe ser capaz de ejecutarse en esta situación.<br /><br /> El entorno vuelve a cargar automáticamente los archivos de proyecto. Sin embargo, un proyecto debe implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> si tiene jerarquías anidadas para admitir la recarga de archivos de proyecto anidados.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Compatibilidad con el control de código fuente](../../extensibility/internals/supporting-source-control.md)
