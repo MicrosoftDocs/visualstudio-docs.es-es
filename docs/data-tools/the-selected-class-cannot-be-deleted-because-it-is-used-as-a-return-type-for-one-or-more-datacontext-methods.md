@@ -1,6 +1,7 @@
 ---
 title: No se puede eliminar la clase seleccionada
 description: No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 84fabc7f0f1efdf06006597aec9bb813578589a8
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 24b8e933d8a5d6002ba2ae7b035c5e9e3ee52630
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743254"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036202"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext
 
@@ -28,6 +29,6 @@ Para revertir los tipos de valor devuelto de los métodos de <xref:System.Data.L
 
 2. Establezca **Tipo devuelto** en otra clase de entidad o elimine el método de <xref:System.Data.Linq.DataContext> del panel de métodos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

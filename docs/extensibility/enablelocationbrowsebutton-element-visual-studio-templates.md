@@ -1,6 +1,7 @@
 ---
 title: EnableLocationBrowseButton (Elemento, Plantillas de Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742999"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036657"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton (elemento, plantillas de Visual Studio)
 Especifica si el botón **examinar** está disponible en el cuadro de diálogo **nuevo proyecto** para que los usuarios puedan modificar fácilmente el directorio predeterminado en el que se guarda un nuevo proyecto.

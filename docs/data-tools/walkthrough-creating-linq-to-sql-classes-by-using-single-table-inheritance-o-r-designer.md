@@ -1,5 +1,6 @@
 ---
 title: LINQ to SQL clases con herencia de tabla única
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c76818f7cd70077996370cf5ffe930ef78f9acb
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741836"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036761"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: crear clases LINQ to SQL con la herencia de tabla única (Object Relational Designer)
 Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) admiten la herencia de tabla única, ya que normalmente se implementa en sistemas relacionales. En este tutorial se amplían los pasos genéricos que se proporcionan en el tema [How to: configure inheritance by Using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) y se proporcionan algunos datos reales para mostrar el uso de la herencia en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -51,7 +52,7 @@ Para ver cómo funciona la herencia, cree una `Person` tabla pequeña, úsela co
 
     |Nombre de columna|Tipo de datos|Permitir valores NULL|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
+    |**Id**|**int**|**False**|
     |**Tipo**|**int**|**True**|
     |**Nombre**|**nvarchar(200)**|**False**|
     |**Apellidos**|**nvarchar(200)**|**False**|
@@ -70,7 +71,7 @@ Para poder comprobar que la herencia está correctamente configurada, la tabla n
 
 2. Copie los datos siguientes en la tabla. (Puede copiarlo y, a continuación, pegarlo en la tabla seleccionando toda la fila en el panel de **resultados** ).
 
-    |**ID**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
+    |**Id**|**Tipo**|**Nombre**|**Apellidos**|**Administrador**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -184,7 +185,7 @@ Ejecute la aplicación y compruebe que los registros mostrados en el cuadro de l
 
 3. Cierre el formulario. (En el menú **depurar** , haga clic en **detener depuración**).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md) (Tutorial: Crear clases de LINQ to SQL [Object Relational Designer])

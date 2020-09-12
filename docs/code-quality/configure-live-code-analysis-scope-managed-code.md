@@ -1,34 +1,34 @@
 ---
-title: Configurar el ámbito de análisis de código activo para código administrado
-ms.date: 03/23/2018
+title: Configurar el ámbito de análisis de código activo para .NET
+ms.date: 09/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
 - analysis scope
 - full solution analysis
-author: Mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249182"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035422"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Cómo: configurar el ámbito de análisis de código activo para código administrado
+# <a name="configure-live-code-analysis-for-net"></a>Configurar el análisis de código activo para .NET
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>¿Qué es el "Análisis de código activo" para código administrado?
 Visual Studio ejecuta una serie de análisis de código activos, también denominado *análisis en segundo plano*, mientras se editan archivos de código fuente en el editor. Algunos de ellos son un análisis mínimo necesario para una experiencia aceptable de edición del IDE de Visual Studio. Algunas de ellas son para mejorar la capacidad de respuesta de las características del IDE. Aunque parte de ellos es habilitar la funcionalidad adicional del IDE, como las correcciones de código y diagnóstico de los analizadores de Roslyn. En función de la funcionalidad, estos análisis se pueden agrupar de la manera siguiente:
 
 - **Cálculo en segundo plano de diagnósticos**: análisis para calcular los errores, las advertencias y las sugerencias en los archivos de código fuente. Estos diagnósticos se muestran como entradas en la lista de errores y como líneas onduladas en el editor. Se pueden clasificar en dos categorías:
   - Diagnóstico del compilador de C# y Visual Basic
   - Diagnósticos del analizador de Roslyn, que incluye:
 
-    - Analizadores integrados del IDE para sugerencias de estilo de código y
+    - Analizadores integrados del IDE para sugerencias de estilo de código
+    - Analizadores de CA integrados para sugerencias de calidad de código
     - Paquetes de analizador de terceros [instalados](./install-roslyn-analyzers.md) para los proyectos de la solución actual.
 
 - **Otros análisis en segundo plano**: análisis para mejorar la capacidad de respuesta y la interacción de Visual Studio para las características del IDE. Algunos ejemplos de estos análisis son:

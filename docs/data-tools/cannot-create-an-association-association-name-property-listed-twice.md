@@ -1,6 +1,7 @@
 ---
 title: La propiedad se muestra dos veces
 description: No se puede crear una asociación; la propiedad aparece más de una vez.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.technology: vs-data-tools
@@ -10,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c496a25b093c88cca68d31bd22ccc6deca9a33a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: d0e3475896c937f247fc64a0750da25c2d6edac9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743204"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036488"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>No se puede crear una asociación &lt;nombre de asociación&gt;; la propiedad aparece dos veces.
 

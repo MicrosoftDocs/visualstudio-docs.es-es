@@ -1,5 +1,6 @@
 ---
 title: Personalizar el comportamiento de inserción, actualización y eliminación
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741815"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036748"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Tutorial: personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad
 
@@ -269,7 +270,7 @@ En función de los requisitos de la aplicación, hay varios pasos que se pueden 
 
 - Agregar consultas LINQ para filtrar los datos. Para obtener más información, vea [Introducción a las consultas LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext (métodos)](../data-tools/datacontext-methods-o-r-designer.md)

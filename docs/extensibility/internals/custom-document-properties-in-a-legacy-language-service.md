@@ -1,5 +1,6 @@
 ---
 title: Propiedades de documento personalizadas en servicios de lenguaje heredados
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741803"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036839"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propiedades de documento personalizadas en un servicio de lenguaje heredado
 Las propiedades del documento se pueden mostrar en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ventana **propiedades** . Normalmente, los lenguajes de programación no tienen propiedades asociadas a archivos de código fuente individuales. Sin embargo, XML admite propiedades de documento que afectan a la codificación, el esquema y la hoja de estilos.
@@ -397,5 +398,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)

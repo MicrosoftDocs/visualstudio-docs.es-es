@@ -3,6 +3,7 @@ title: Error de uso de proyectos independientes
 description: Separar conjuntos de datos y TableAdapters en proyectos diferentes
 ms.date: 11/04/2016
 ms.topic: how-to
+ms.custom: SEO-VS-2020
 helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4ed815b73cade73c38b52528d918b4af4de2a618
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743114"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036280"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separar conjuntos de datos y TableAdapters en proyectos diferentes
 Los conjuntos de valores de tipos se han mejorado para que las clases [TableAdapter](create-and-configure-tableadapters.md) y DataSet se puedan generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.
@@ -58,7 +59,7 @@ De forma predeterminada, después de separar el código de conjunto de datos y T
 > [!NOTE]
 > Para ver el archivo de clase generado, seleccione el proyecto de conjunto de archivos o TableAdapter. A continuación, en **Explorador de soluciones**, seleccione **Mostrar todos los archivos**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
 - [Tutorial: crear una aplicación de datos de N niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

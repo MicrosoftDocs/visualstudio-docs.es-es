@@ -1,6 +1,7 @@
 ---
 title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1328423cd81db6e55964795ef9da23c5bb29811
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4f36431ef7a190e98d35e795ffd8213781553dfc
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89736999"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036124"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 Permite (o no) que se produzca la evaluación de expresiones en el subproceso determinado, incluso si el programa se ha detenido.
@@ -72,7 +73,7 @@ de Si es distinto de cero ( `TRUE` ), permite la evaluación de expresiones en e
 
  La evaluación de expresiones en un programa puede provocar que el código se ejecute en otro, debido a la evaluación de la función o a la evaluación de las `IDispatch` propiedades. Por este motivo, este método permite que la evaluación de expresiones se ejecute y se complete, aunque el subproceso se detenga en este programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

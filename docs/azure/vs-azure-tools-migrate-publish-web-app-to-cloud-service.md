@@ -1,20 +1,20 @@
 ---
 title: Migración y publicación de una aplicación web en un servicio en la nube
 description: Procedimiento para migrar y publicar una aplicación web en un servicio en la nube de Azure desde Visual Studio
+ms.custom: vs-azure
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 06b283e7382fc135e3cd327db0200622de4f5228
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739977"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036540"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Cómo: migrar y publicar una aplicación web en un servicio en la nube de Azure desde Visual Studio
 

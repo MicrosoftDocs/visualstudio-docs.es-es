@@ -1,5 +1,6 @@
 ---
 title: Cambiar el tipo de valor devuelto del método DataContext
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b40851323efdf3c2cbf0900ae323f3c9c0a1ec17
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: da1dc0437ccd4a7fad2a24b40542a58d8310bf17
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89737042"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036670"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procedimiento para cambiar el tipo de valor devuelto de un método DataContext (Object Relational Designer)
 El tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método (creado basándose en un procedimiento almacenado o una función) difiere en función de dónde se coloque el procedimiento almacenado o la función en Object Relational **Designer**. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> que tiene el tipo de valor devuelto de la clase de entidad (si el esquema de los datos devueltos por el procedimiento almacenado o la función coincide con la forma de la clase de entidad). Si coloca un elemento en un área vacía de Object Relational **Designer**, <xref:System.Data.Linq.DataContext> se crea un método que devuelve un tipo generado automáticamente. Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y haga clic en la propiedad **Tipo devuelto** en la ventana **Propiedades**.
@@ -39,7 +40,7 @@ El tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método (cre
 
 3. Guarde el archivo *.dbml*.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

@@ -1,6 +1,7 @@
 ---
 title: El esquema no coincide
 description: Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 907b4d5c63d0e97839149576f518804cf6f8481b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 941cbd78ef94fa186b28391bfd3a888f66c91274
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742808"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034096"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino
 
@@ -28,6 +29,6 @@ Al arrastrar objetos de base de datos hasta las clases de entidad existentes, lo
 
 2. Seleccione un objeto de base de datos que devuelva datos que coincidan con el esquema de la clase de destino (clase en la que se coloca el objeto de base de datos en **Object Relational Designer**).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

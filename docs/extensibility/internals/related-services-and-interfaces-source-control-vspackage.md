@@ -1,6 +1,7 @@
 ---
 title: Interfaces y servicios relacionados (VSPackage de control de código fuente)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e0806ca278305a530a4f4f3e0d4abdf7977067e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: af08c8e0ea15751f5d8e6c0a1a01549fdb9227c3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743074"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034799"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces y servicios relacionados (VSPackage de control de código fuente)
 
@@ -50,19 +51,19 @@ En esta sección se enumeran todas las interfaces relacionadas con VSPackage de 
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> | Los proyectos de **Explorador de soluciones** y llaman a esta interfaz cuando se agregan nuevos archivos a los proyectos, o cuando se cambia el nombre de los archivos y las carpetas de los proyectos. El VSPackage de control de código fuente puede desproteger el archivo de proyecto o cancelar la operación. | VSPackage de control de código fuente | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents3> | **Explorador de soluciones** y proyectos llaman a esta interfaz en respuesta a las llamadas realizadas a los métodos de la interfaz IVstrackProjectDocuments3. El VSPackage de control de código fuente puede realizar un seguimiento de las operaciones por lotes, las operaciones de lectura/escritura sincronizadas y el trabajo con un método más avanzado `OnQueryAddFiles` . | VSPackage de control de código fuente | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccEnlistmentPathTranslation> | Esta interfaz proporciona compatibilidad con la administración de alta para proyectos Web. | VSPackage de control de código fuente | Recomendado |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip> | Esta interfaz se utiliza para recuperar la información sobre herramientas para los archivos controlados por código fuente en los proyectos de. | VSPackage de control de código fuente | Opcional |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl> | Esta interfaz proporciona compatibilidad con la extensión de espacio de nombres. | VSPackage de control de código fuente | Opcional |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution> | El VSPackage usa esta interfaz para integrar una extensión de espacio de nombres en los cuadros de diálogo **nuevos**, **abrir**o **Guardar** . Por consiguiente, los proyectos se pueden agregar automáticamente al control de código fuente al crearlos o agregarlos al control de código fuente cuando una operación de guardar está en vigor. | VSPackage de control de código fuente | Opcional |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | El VSPackage usa esta interfaz para definir glifos adicionales como glifos de control de código fuente para los nodos de **Explorador de soluciones**. | VSPackage de control de código fuente | Opcional |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip> | Esta interfaz se utiliza para recuperar la información sobre herramientas para los archivos controlados por código fuente en los proyectos de. | VSPackage de control de código fuente | Opcionales |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl> | Esta interfaz proporciona compatibilidad con la extensión de espacio de nombres. | VSPackage de control de código fuente | Opcionales |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution> | El VSPackage usa esta interfaz para integrar una extensión de espacio de nombres en los cuadros de diálogo **nuevos**, **abrir**o **Guardar** . Por consiguiente, los proyectos se pueden agregar automáticamente al control de código fuente al crearlos o agregarlos al control de código fuente cuando una operación de guardar está en vigor. | VSPackage de control de código fuente | Opcionales |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | El VSPackage usa esta interfaz para definir glifos adicionales como glifos de control de código fuente para los nodos de **Explorador de soluciones**. | VSPackage de control de código fuente | Opcionales |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | El cuadro de diálogo **Agregar** para proyectos web utiliza esta interfaz. Proporciona métodos para buscar una ubicación de control de código fuente y abrir un proyecto web agregado anteriormente en el repositorio de control de código fuente en esa ubicación. | VSPackage de control de código fuente | Recomendado |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Esta interfaz proporciona compatibilidad para la carga asincrónica (en segundo plano) de proyectos desde el control de código fuente. | VSPackage de control de código fuente | Opcional |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Esta interfaz permite a los proyectos ver el progreso de la carga asincrónica iniciada por <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Project | Opcional |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Esta interfaz proporciona compatibilidad para la carga asincrónica (en segundo plano) de proyectos desde el control de código fuente. | VSPackage de control de código fuente | Opcionales |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Esta interfaz permite a los proyectos ver el progreso de la carga asincrónica iniciada por <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Project | Opcionales |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | Esta interfaz permite al IDE consultar el VSPackage de control de código fuente activo. El IDE consulta el valor de la configuración de control de código fuente que tiene un significado incluso cuando no hay registrado ningún VSPackage de control de código fuente activo. Esta interfaz la implementa y controla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . | Código auxiliar de control de código fuente | Obligatorio |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> | Esta interfaz se usa para registrar el VSPackage de control de código fuente. | Código auxiliar de control de código fuente | Obligatorio |
-| <xref:EnvDTE.SourceControl> | Esta interfaz se utiliza en Automation. Como tal, solo expone funciones que se pueden ejecutar sin mostrar ninguna interfaz de usuario. | VSPackage de control de código fuente | Opcional |
+| <xref:EnvDTE.SourceControl> | Esta interfaz se utiliza en Automation. Como tal, solo expone funciones que se pueden ejecutar sin mostrar ninguna interfaz de usuario. | VSPackage de control de código fuente | Opcionales |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | Esta interfaz se usa para guardar la configuración del control de código fuente en el archivo de solución (. sln). La configuración incluye las marcas Ubicación del control de código fuente y estado del control de código fuente. | VSPackage de control de código fuente | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Esta interfaz se usa para guardar la configuración del control de código fuente en el archivo de opciones de solución (. suo). Esto puede incluir la configuración de control de código fuente específica del usuario, como la ubicación de inscripción del usuario actual. | VSPackage de control de código fuente | Recomendado |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Esta interfaz se usa para supervisar eventos a fin de realizar operaciones como la protección de archivos de proyecto antes de cerrar soluciones u obtener nuevos archivos del control de código fuente al abrir un proyecto. | VSPackage de control de código fuente | Recomendado |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Elementos de diseño](../../extensibility/internals/source-control-vspackage-design-elements.md)

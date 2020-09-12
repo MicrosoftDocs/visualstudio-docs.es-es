@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937564"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036579"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migración de análisis heredado (FxCop) al análisis de código fuente (analizadores de FxCop)
 
@@ -27,11 +27,11 @@ Muchas de las reglas de análisis heredado (FxCop) ya se han reescrito para los 
 
 Para obtener más información sobre las diferencias entre el análisis heredado y el análisis de código fuente, vea lo siguiente:
 
-- [Análisis de código fuente frente a análisis heredado](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Análisis de código fuente frente a análisis heredado](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [Preguntas más frecuentes sobre los analizadores de FxCop](../code-quality/fxcop-analyzers-faq.md)
 
-Para migrar al análisis de código fuente, [Instale los analizadores de FxCop](../code-quality/install-fxcop-analyzers.md). Al igual que las infracciones de las reglas de análisis heredados, las infracciones de análisis de código fuente se muestran en la ventana Lista de errores de Visual Studio. Además, las infracciones de análisis de código fuente también se muestran en el editor de código como *subrayados ondulados* bajo el código infractor. El color del subrayado ondulado depende del [valor de gravedad](../code-quality/use-roslyn-analyzers.md#rule-severity) de la regla. Para ver el estado de las reglas que se han trasladado a los nuevos Analizadores de FxCop, consulte [reglas de puerto y no trasladadas](../code-quality/fxcop-rule-port-status.md).
+Para migrar al análisis de código fuente, [Instale los analizadores de FxCop](../code-quality/install-fxcop-analyzers.md). Al igual que las infracciones de las reglas de análisis heredados, las infracciones de análisis de código fuente se muestran en la ventana Lista de errores de Visual Studio. Además, las infracciones de análisis de código fuente también se muestran en el editor de código como *subrayados ondulados* bajo el código infractor. El color del subrayado ondulado depende del [valor de gravedad](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) de la regla. Para ver el estado de las reglas que se han trasladado a los nuevos Analizadores de FxCop, consulte [reglas de puerto y no trasladadas](../code-quality/fxcop-rule-port-status.md).
 
 Para obtener más información sobre cómo configurar los analizadores de FxCop:
 
