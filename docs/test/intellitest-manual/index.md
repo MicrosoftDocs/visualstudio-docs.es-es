@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5eb619269dfd8922919999249b4ced0b9b98ebb7
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: f986d6727433dc01732232754b2d65d0d7c4ef8f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256210"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038288"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Información general de Microsoft IntelliTest
 
@@ -97,7 +97,7 @@ Es así de fácil.
 
 Recursos adicionales:
   * Vea el [vídeo de Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest).
-  * Lea esta [información general de MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx).
+  * Lea esta [información general de MSDN Magazine](/archive/msdn-magazine/2015/february/visual-studio-2015-build-better-software-with-smart-unit-tests).
 
 ## <a name="important-attributes"></a>Atributos importantes
 

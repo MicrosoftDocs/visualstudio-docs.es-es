@@ -1,6 +1,7 @@
 ---
 title: Atributo y elemento BuildOnLoad (plantillas de Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 077724bf7038a3ca7010de730993b0f290a66ca4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 5f411f918352391387e5c3b34eafeb209df3118b
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739146"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036865"
 ---
 # <a name="buildonload-attribute-and-element"></a>Atributo y elemento BuildOnLoad
 
@@ -83,7 +84,7 @@ En el ejemplo siguiente se muestran los metadatos de una plantilla de C# cuando 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Elemento BuildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent (elemento)](../extensibility/templatecontent-element-visual-studio-templates.md)

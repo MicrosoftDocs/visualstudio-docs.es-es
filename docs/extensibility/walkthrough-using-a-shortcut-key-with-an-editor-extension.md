@@ -1,5 +1,6 @@
 ---
 title: Usar una tecla de método abreviado con una extensión de editor
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dcbf5c22af9cabeca0b89ffa98d4ddf86173a4a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89735147"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037463"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Tutorial: usar una tecla de método abreviado con una extensión de editor
 Puede responder a las teclas de método abreviado en la extensión del editor. En el siguiente tutorial se muestra cómo agregar un elemento gráfico de vista a una vista de texto mediante una tecla de método abreviado. Este tutorial se basa en la plantilla del editor de elementos gráficos de la ventanilla y permite agregar el elemento gráfico mediante el carácter +.

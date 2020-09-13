@@ -1,5 +1,6 @@
 ---
 title: Creación de una aplicación de datos sencilla mediante ADO.NET
+ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586879"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037437"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 
@@ -27,7 +28,7 @@ En este artículo se muestra una forma sencilla de obtener datos de una base de 
 > [!IMPORTANT]
 > Para mantener el código sencillo, no se incluye el control de excepciones listo para producción.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 Para crear la aplicación, necesitará:
 
