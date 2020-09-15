@@ -1,18 +1,18 @@
 ---
 title: Introducción a Azure Functions
 description: Uso de Azure Functions en Visual Studio para Mac.
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 600c4a21b6c9db8a6adb14e8fc96092f1782339f
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938655"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402322"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -91,7 +91,7 @@ Las plantillas de función permiten crear rápidamente nuevas funciones mediante
 
     En la sección [Plantillas de función disponibles](#available-function-templates) se proporciona una lista de las plantillas Azure Function.
 
-Puede usar el procedimiento anterior para agregar más funciones a su proyecto de Function App. Cada función del proyecto puede tener un desencadenador diferente, pero una función debe tener exactamente un desencadenador. Para más información, vea [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
+Puede usar el procedimiento anterior para agregar más funciones a su proyecto de Function App. Cada función del proyecto puede tener un desencadenador diferente, pero una función no puede tener más de un desencadenador. Para más información, vea [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
@@ -159,4 +159,4 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
 
 - **Redimensionador de imagen**: esta función crea imágenes redimensionadas cada vez que un blob se agrega a un contenedor. La plantilla toma la cadena de conexión y la ruta de acceso para el desencadenador, una salida de imagen pequeña y una salida de imagen media.
 
-- **Token de SAS**: esta función genera un token de SAS para un contenedor y nombre de blob de Azure Storage determinados. Además del nombre de función, esta plantilla también tiene una propiedad de ruta de acceso y de conexión. La propiedad de ruta de acceso es la ruta de acceso dentro de la cuenta de almacenamiento que el desencadenador supervisará. La cuenta de conexión es el nombre de la configuración de aplicación que contiene la cadena de conexión de la cuenta de almacenamiento. También se deben establecer los **derechos de acceso**. El nivel de autorización controla si la función requiere una clave de API y qué clave utilizar; Función usa una tecla de función; Administrador usa la clave maestra. Para obtener más información, vea el ejemplo [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (Función de Azure de C# para generar tokens de SAS).
+- **Token de SAS**: esta función genera un token de SAS para un contenedor y nombre de blob de Azure Storage determinados. Además del nombre de función, esta plantilla también tiene una propiedad de ruta de acceso y de conexión. La propiedad de ruta de acceso es la ruta de acceso dentro de la cuenta de almacenamiento que el desencadenador supervisará. La cuenta de conexión es el nombre de la configuración de aplicación que contiene la cadena de conexión de la cuenta de almacenamiento. También se deben establecer los **derechos de acceso**. El nivel de autorización controla si la función requiere una clave de API y qué clave utilizar; Función usa una tecla de función; Administrador usa la clave de acceso a la cuenta. Para obtener más información, vea el ejemplo [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (Función de Azure de C# para generar tokens de SAS).

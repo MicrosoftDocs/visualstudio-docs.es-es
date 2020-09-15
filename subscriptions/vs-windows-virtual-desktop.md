@@ -1,18 +1,18 @@
 ---
-title: Ventaja Microsoft Windows Virtual Desktop en suscripciones de Visual Studio | Microsoft Docs
+title: Microsoft Windows Virtual Desktop en suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/20/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo puede aprovechar Microsoft Windows Virtual Desktop a través de la suscripción de Visual Studio
-ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800611"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561369"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acceso a Windows Virtual Desktop en las suscripciones 
 Ahora los suscriptores de Visual Studio pueden usar sus créditos individuales de desarrollo y pruebas de Azure para los servicios de Microsoft Windows Virtual Desktop.  

@@ -2,21 +2,23 @@
 title: Introducción al Portal de administración de suscripciones | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: overview
 description: Aprenda cómo empezar a administrar las suscripciones de Visual Studio de su organización con el Portal de administración de suscripciones.
-ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249867"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426881"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Introducción al portal del administrador de suscripciones de Visual Studio
 
 En el portal de administración de suscripciones de Visual Studio encontrará las herramientas necesarias para administrar las suscripciones de su organización desde un mismo sitio. 
+
+Dé un paseo por el portal.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
@@ -34,15 +36,15 @@ Una vez que haya asignado las suscripciones, la pestaña Administrar suscriptore
 - Nivel de suscripción que se le ha asignado.
 - Fecha de asignación de la suscripción.
 - Fecha de expiración de la suscripción.
-- Descripción de texto opcional.
-- Indicación de si se han habilitado o deshabilitado las descargas para suscriptores.
+- Campo de referencia para notas adicionales.
+- Indicación de si están habilitadas o deshabilitadas las descargas para suscriptores.
 - País en el que se encuentran.
 - Preferencia de idioma para el correo electrónico de comunicación de asignación desde el portal de administración.
 - Campo opcional para otra dirección de correo electrónico para las comunicaciones de inicio de sesión.
 
 En el lado izquierdo de la página hay varios iconos que puede seleccionar para mostrar información general sobre la asignación de suscripciones, los detalles del contrato y el informe de uso máximo.
 
-Para ver información adicional sobre el número de licencias de suscripción adquiridas, asignadas y todavía disponibles en su organización para cada contrato, seleccione el icono superior para abrir el panel.
+Para ver información adicional sobre el número de licencias de suscripción adquiridas, asignadas y todavía disponibles en su organización para cada contrato, haga clic en el icono superior para abrir el panel.
 > [!div class="mx-imgBorder"]
 > ![Página Suscriptores del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/subscribers-page.png)
 

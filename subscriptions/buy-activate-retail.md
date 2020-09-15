@@ -1,18 +1,18 @@
 ---
-title: Suscripciones de Visual Studio disponibles para comprar en Microsoft Store | Microsoft Docs
+title: Suscripciones de Visual Studio disponibles en Microsoft Store | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo comprar suscripciones de Visual Studio en Microsoft Store y activarlas en el Portal de suscripciones de Visual Studio.
-ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9eb4812d22096e9d36089e464dc9a37478480458
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247478"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561580"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Suscripciones de Visual Studio disponibles en Microsoft Store
 Las suscripciones de Visual Studio están disponibles a través de una variedad de canales, como las [licencias por volumen](https://www.microsoft.com/licensing/default), los proveedores de soluciones en la nube, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) y Microsoft Store.  En este artículo se detallan la compra y la activación de suscripciones a través de [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  

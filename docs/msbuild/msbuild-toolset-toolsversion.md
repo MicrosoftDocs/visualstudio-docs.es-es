@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633127"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426968"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 
@@ -45,7 +45,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 ::: moniker-end
 
 > [!NOTE]
-> En algunos tipos de proyecto se usa el atributo `sdk` en lugar de `ToolsVersion`. Para más información, consulte [Paquetes, metadatos y marcos de trabajo](/dotnet/core/packages) y [Adiciones al formato csproj para .NET Core](/dotnet/core/tools/csproj).
+> En algunos tipos de proyecto se usa el atributo `sdk` en lugar de `ToolsVersion`. Para más información, vea [Adiciones al formato csproj para .NET Core](/dotnet/core/tools/csproj).
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Cómo funciona el atributo ToolsVersion
 

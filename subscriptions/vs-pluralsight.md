@@ -2,17 +2,17 @@
 title: Ventaja de Pluralsight en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 04/20/2020
+ms.date: 08/04/2020
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375903"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509762"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -23,35 +23,50 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
  Según el tipo de suscripción que tengan, no todos los suscriptores que hayan usado anteriormente una suscripción de Pluralsight proporcionada a través de una suscripción de Visual Studio podrán canjear nuevas ofertas de ventajas de Pluralsight. En caso de que no pueda canjear más beneficios de formación de Pluralsight, recibirá una notificación cuando intente activar el beneficio en el sitio web de Pluralsight.
 
 ## <a name="activation-steps"></a>Pasos para la activación
-1. Para activar la suscripción, conéctese a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el vínculo **Obtener código** en el icono del beneficio Pluralsight, que se encuentra en la sección Desarrollo profesional.
+1. Para activar la suscripción, conéctese a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el vínculo **Activar** situado en el icono de la ventaja de Pluralsight.  Para restringir la lista de los iconos mostrados, puede elegir un filtro de grupo.  Pluralsight se encuentra en el grupo de ventajas de desarrollo profesional.
    > [!div class="mx-imgBorder"]
-   > ![Icono de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
-   >
-   > [!IMPORTANT]
-   > Cuando haga clic en el vínculo "Obtener código" en el icono del beneficio de Pluralsight, es posible que reciba el mensaje siguiente:
-   >
-   > **"Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account."** (Nota: Si anteriormente activó otra oferta de Pluralsight mediante la suscripción de Visual Studio, es posible que este código no le permita crear una cuenta de Pluralsight).
+   > ![Icono de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-tile.png "Haga clic en Activar para reclamar la ventaja.")
 
-2. Recibirá una notificación que indica que el código del cupón se ha recuperado correctamente.  Haga clic en **Activar**.
-
-3. Se le redirigirá a la página de Pluralsight correspondiente a la ventaja que se incluye en la suscripción de Visual Studio.
+(El icono anterior es un ejemplo de lo que verá un suscriptor de Visual Studio Enterprise.  Si usa una suscripción de Visual Studio diferente, la duración de la ventaja de Pluralsight variará.  Consulte la tabla de elegibilidad para obtener más información).
+1. Se le redirigirá a la página de Pluralsight correspondiente a la ventaja que se incluye en la suscripción de Visual Studio.
    - Proporcione la información de contacto solicitada en el formulario
-   - Active la casilla para aceptar las condiciones del servicio y la directiva de privacidad
-   - Haga clic en **I agree, activate benefit** (Acepto, activar ventaja).
+   - Active la casilla para aceptar las condiciones de uso.
+   - Haga clic en **CANJEAR**.
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight: activación de la ventaja](_img/vs-pluralsight/vs-pluralsight-create-account.png)
+   > ![Registro en Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Complete el formulario de registro, active la casilla para aceptar las condiciones y haga clic en Canjear.")
 
-5. La configuración de la cuenta puede tardar unos minutos.  Cuando se complete, verá una confirmación en la página y recibirá un correo electrónico con la información de inicio de sesión.  El correo electrónico se enviará al alias que especificó cuando creó la cuenta.  Asegúrese de comprobar las carpetas de correo no deseado si tiene dificultades para encontrar el mensaje.
+   > [!NOTE]
+   > La página de registro expira después de unos minutos.  Si no completa el proceso de registro antes de que expire la página, vuelva al icono de Pluralsight en la página <https://my.visualstudio.com/benefits> y haga clic en **Activar** de nuevo. 
+
+1. La configuración de la cuenta puede tardar unos minutos.  Una vez completada, verá una confirmación en la página y recibirá un correo electrónico con la información de inicio de sesión.  El correo electrónico se enviará al alias que especificó cuando creó la cuenta.  Asegúrese de comprobar las carpetas de correo no deseado si tiene dificultades para encontrar el mensaje.
 
    > [!NOTE]
    > Si su cuenta no es apta para canjear las ofertas nuevas, en el correo electrónico que recibirá se explicará que hubo un problema al crear la cuenta porque no cumple con los requisitos.  También incluirá información que le permitirá ponerse en contacto con el equipo de soporte técnico de Pluralsight, el que podrá responder las preguntas que quizás tiene sobre la cuenta.
-   
 
-6. Una vez que la cuenta se ha creado correctamente, el correo electrónico que recibe incluirá su nombre de usuario y una solicitud de contraseña.  Proporcione la contraseña, vuelva a escribirla para confirmarla y haga clic en **Iniciar sesión en Pluralsight**.
+1. Haga clic en **ESTABLECER CONTRASEÑA**.
 
-7. Escriba el nombre de usuario que aparece en el correo de bienvenida y la contraseña que acaba de crear y, luego, haga clic en **Iniciar sesión**.
+1. Escriba la contraseña deseada en el campo **Nueva contraseña**, vuelva a escribirla en el campo **Confirmar contraseña** y haga clic en **Guardar**.
 
-8. Ya está.  Ya está listo para comenzar el aprendizaje con miles de cursos de Pluralsight.
+1. Ya está.  Ya está listo para comenzar el aprendizaje con miles de cursos de Pluralsight.
+
+## <a name="status-of-your-pluralsight-subscription"></a>Estado de la suscripción a Pluralsight
+Una vez activada la ventaja de Pluralsight, la apariencia del icono en el portal de Suscripciones de Visual Studio cambiará para ayudarle a realizar un seguimiento del estado de la suscripción.  
+
+### <a name="while-your-subscription-is-active"></a>Mientras la suscripción está activa
+En lugar del botón "Activar", ahora verá un pequeño botón circular que, si se hace clic en él, le llevará directamente al portal de Pluralsight para que pueda iniciar sesión y continuar con el curso.  
+
+Debajo del título Pluralsight que aparece la parte superior del icono, verá texto que muestra cuánto tiempo queda de la suscripción a Pluralsight.  Cuando a la suscripción le quedan 60 días para expirar, en lugar del número de meses, se mostrará el número de días restantes.  
+
+En la parte inferior del icono, verá el texto que muestra la fecha de activación y la fecha de expiración de la suscripción a Pluralsight.
+
+   > [!div class="mx-imgBorder"]
+   > ![Icono de Pluralsight después de la activación](_img/vs-pluralsight/vs-pluralsight-activated.png "Después de la activación, el icono mostrará el número de días que quedan para que la suscripción expire, junto con la fecha de expiración y un vínculo al portal de Pluralsight.")
+
+### <a name="when-your-subscription-expires"></a>Cuando la suscripción expira
+Cuando expire la suscripción a Pluralsight, el estado cambiará a "Quedan 0 días", y el vínculo al portal de Pluralsight desaparecerá. Todavía podrá ver la fecha en la que activó la suscripción, así como la fecha de expiración.  
+   > [!div class="mx-imgBorder"]
+   > ![Icono de Pluralsight después de la expiración](_img/vs-pluralsight/vs-pluralsight-expired.png "Después de la expiración, desaparecerá el vínculo a Pluralsight, y las fechas en las que la suscripción estaba activa se mostrarán en la parte inferior del icono.")
+
 
 ## <a name="eligibility"></a>Elegibilidad
 
@@ -83,6 +98,9 @@ R: No todas las suscripciones de Visual Studio Enterprise incluyen el beneficio 
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: ¿Tengo acceso a cualquier lista de reproducción de aprendizaje o canal personalizados?
 R: Sí. Como suscriptor de Visual Studio obtiene acceso a roles destacados, rutas de aprendizaje y canales personalizados (listas de reproducción) como parte de la ventaja de aprendizaje de Pluralsight. Microsoft y Pluralsight han seleccionado especialmente el contenido destacado, que está orientado al aprendizaje en áreas clave de interés. Active la ventaja de Pluralsight a través del portal de suscripción de Visual Studio <https://my.visualstudio.com/benefits> para obtener acceso a este contenido y mucho más en la página principal de Pluralsight.
+
+### <a name="q-the-pluralsight-tile-doesnt-have-an-activate-link-how-can-i-activate-the-benefit"></a>P: El icono de Pluralsight no tiene un vínculo "Activar". ¿Cómo puedo activar la ventaja?
+R:  Si ya ha activado la ventaja de Pluralsight, el vínculo "Activar" se reemplazará por otro que le remitirá a la página de inicio de sesión de Pluralsight.  También verá la fecha en la que activó la ventaja, así como información sobre cuánto tiempo queda para que la suscripción expire.  Si ya ha usado una suscripción, no podrá activar otra.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: ¿Qué ocurre cuando se agote mi suscripción a Pluralsight?
 R:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscripción directamente desde Pluralsight.  Póngase en contacto con [Pluralsight](https://www.pluralsight.com) para obtener toda la información.

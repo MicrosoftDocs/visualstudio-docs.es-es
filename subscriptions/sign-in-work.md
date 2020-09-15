@@ -1,18 +1,18 @@
 ---
-title: Inicio de sesión en Suscripciones de Visual Studio con la cuenta profesional o educativa | Microsoft Docs
+title: Inicio de sesión en las Suscripciones de Visual Studio con cuentas profesionales o educativas | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 03/11/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Aprenda a iniciar sesión en las suscripciones de Visual Studio con la cuenta profesional o educativa.
-ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50cb122f1df5b9e6f87d53d3170d59c8f4d4b306
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906130"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561434"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta profesional o educativa 
 

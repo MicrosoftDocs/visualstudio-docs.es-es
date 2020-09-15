@@ -1,17 +1,17 @@
 ---
 title: Refactorización de código
 description: Perfeccionamiento del código con Visual Studio para Mac y acciones rápidas.
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67691296"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402601"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -31,9 +31,9 @@ Esto resalta el símbolo y todas las referencias a él. Al empezar a escribir un
 
 ![Cambiar nombre e identificador](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>Acciones rápidas
+## <a name="quick-actions-and-refactorings"></a>Acciones rápidas y refactorizaciones
 
-Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción.
+Las acciones rápidas y refactorizaciones permiten refactorizar, generar o modificar el código de otra manera y con facilidad mediante una sola acción.
 
 Las acciones rápidas pueden utilizarse para:
 
@@ -55,7 +55,7 @@ El icono que aparece cuando hay una acción rápida disponible da una indicació
 
    ![Bombilla con el desplazamiento del mouse](media/refactoring-lightbulb-hover.png)
 
-- Las bombillas y los destornilladores aparecen en el margen izquierdo del editor cuando mueve el acento circunflejo a una línea de código para la que hay una acción rápida disponible.
+- Las bombillas y los destornilladores aparecen en el margen izquierdo del editor cuando mueve el acento circunflejo a una línea de código para la que hay una acción rápida o refactorización disponible.
 
 - Presione **Opción (⌥)** +**Entrar** en cualquier parte de una línea para ver una lista de acciones rápidas y refactorizaciones disponibles.
 
@@ -93,7 +93,7 @@ Si hace clic en el círculo situado en la parte superior, puede iterar cada suge
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Acciones rápidas (Visual Studio en Windows)](/visualstudio/ide/quick-actions)
-- [Refactorizar código (Visual Studio en Windows)](/visualstudio/ide/refactoring-in-visual-studio)
+- [Acciones rápidas (Visual Studio en Windows)](/visualstudio/ide/quick-actions)
+- [Refactorización de código (Visual Studio en Windows)](/visualstudio/ide/refactoring-in-visual-studio)

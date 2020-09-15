@@ -127,6 +127,8 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Usar Visual Studio desde una máquina virtual de Azure
       href: install/using-visual-studio-vm.md
+    - name: "Uso de Visual\_Studio en un dispositivo ARM"
+      href: install/visual-studio-on-arm-devices.md
     - name: Contenedores
       items:
         - name: Instalar Build Tools en un contenedor

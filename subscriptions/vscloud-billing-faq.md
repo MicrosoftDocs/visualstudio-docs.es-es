@@ -1,18 +1,18 @@
 ---
-title: Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio Enterprise y Visual Studio Professional
+title: Preguntas más frecuentes sobre la facturación de las suscripciones a la nube de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 03/24/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249382"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561330"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.

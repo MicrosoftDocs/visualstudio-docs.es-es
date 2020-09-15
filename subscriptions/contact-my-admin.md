@@ -1,18 +1,18 @@
 ---
-title: Contacto con el administrador de suscripciones desde el portal de suscriptor
+title: Contacto con el administrador de suscripciones en el portal de suscriptores | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 03/07/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo ponerse en contacto con el administrador de suscripciones para obtener ayuda con preguntas o problemas.
-ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247438"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561421"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtención de ayuda del administrador de suscripciones
 Si le han proporcionado su suscripción a Visual Studio en el trabajo o la escuela, lo más probable es que se la haya asignado un administrador de suscripciones.  Los administradores pueden asignar o eliminar suscripciones, cambiar las direcciones de correo electrónico de inicio de sesión, determinar si puede descargar software y realizar otras funciones relacionadas con la suscripción.

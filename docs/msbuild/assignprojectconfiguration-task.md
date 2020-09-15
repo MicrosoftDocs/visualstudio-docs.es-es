@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5159b73058c73c925cae644c2e3ddd2bc84ac41
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b543af39cbcd0301da7d0d353f8f7b6fa006f7ac
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634557"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508527"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration (Tarea)
 
@@ -30,6 +30,7 @@ Esta tarea acepta cadenas de configuración de lista y las asigna a los proyecto
 
 |Parámetro|Description|
 |---------------|-----------------|
+|`ProjectReferences`|Parámetro de entrada <xref:Microsoft.Build.Framework.ITaskItem>`[]` necesario.<br /><br /> Proyectos que se van a configurar.|
 |`SolutionConfigurationContents`|Parámetro de salida `string` opcional.<br /><br /> Contiene una cadena XML que incluye una configuración de proyecto para cada proyecto. Las configuraciones se asignan a los proyectos con nombre.|
 |`DefaultToVcxPlatformMapping`|Parámetro de salida `string` opcional.<br /><br /> Contiene una lista delimitada por puntos y coma de asignaciones de los nombres de plataforma usados por la mayoría de los tipos a los usados por archivos *.vcxproj*.<br /><br /> Por ejemplo:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
 |`VcxToDefaultPlatformMapping`|Opcional<br /><br /> Parámetro de salida `string`.<br /><br /> Contiene una lista delimitada por puntos y coma de asignaciones de los nombres de plataforma de *.vcxproj* a los nombres de plataforma usados por la mayoría de los tipos.<br /><br /> Por ejemplo:<br /><br /> `"Win32=AnyCPU;X64=X64"`|
@@ -42,7 +43,7 @@ Esta tarea acepta cadenas de configuración de lista y las asigna a los proyecto
 |`AssignedProjects`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene la lista de rutas de acceso de referencia resueltas.|
 |`UnassignedProjects`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene la lista de elementos de referencia de proyecto que no se pudieron resolver mediante la lista de resultados previamente resuelta.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

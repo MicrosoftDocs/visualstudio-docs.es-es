@@ -1,8 +1,8 @@
 ---
-title: 'Documentación de Visual Studio: Novedades de julio de 2020 '
+title: 'Documentación de Visual Studio: Novedades de agosto de 2020 '
 titleSuffix: ''
-description: Novedades de la documentación de Visual Studio de julio de 2020.
-ms.date: 08/06/2020
+description: Novedades de la documentación de Visual Studio de agosto de 2020
+ms.date: 09/02/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,105 +15,131 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f5ac8944120d5a48ab0f199d19376423abd2eb
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 4364bd62ac19be958632b8cb2dbbe907013e8a70
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88714467"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402249"
 ---
-# <a name="visual-studio-docs-whats-new-in-the-docs-for-july-2020"></a>Documentación de Visual Studio: Novedades de la documentación de julio de 2020
+# <a name="visual-studio-docs-whats-new-for-august-2020"></a>Documentación de Visual Studio: Novedades de agosto de 2020
 
-Le damos la bienvenida a las novedades de la documentación de Visual Studio de julio de 2020. En este artículo se enumeran algunos de los cambios más importantes de documentación que se han producido durante este período.
+Le damos la bienvenida a las novedades de la documentación de Visual Studio de agosto de 2020. En este artículo se enumeran algunos de los cambios más importantes de documentación que se han producido durante este período. Para obtener información sobre las novedades de los meses anteriores, vea el tema del [historial de novedades](whats-new-visual-studio-docs-history.md).
+
+## <a name="azure"></a>Azure
+
+**Artículos nuevos**
+
+- [Incorporación de Azure Application Insights mediante Servicios conectados de Visual Studio](/visualstudio/azure/azure-app-insights-add-connected-service): Servicios conectados de VS 2019 16.7
+- [Incorporación de Azure Cache for Redis mediante Servicios conectados de Visual Studio](/visualstudio/azure/azure-cache-for-redis-add-connected-service): Servicios conectados de VS 2019 16.7
+- [Incorporación de Azure Cosmos DB a la aplicación mediante Servicios conectados de Visual Studio](/visualstudio/azure/azure-cosmosdb-add-connected-service): Servicios conectados de VS 2019 16.7
+- [Incorporación de Azure SignalR mediante Servicios conectados de Visual Studio](/visualstudio/azure/azure-signalr-add-connected-service): Servicios conectados de VS 2019 16.7
+- [Incorporación de una conexión a Azure SQL Database](/visualstudio/azure/azure-sql-database-add-connected-service): Servicios conectados de VS 2019 16.7
+
+**Artículos actualizados**
+
+- [Adición de almacenamiento de Azure mediante Servicios conectados de Visual Studio](/visualstudio/azure/vs-azure-tools-connected-services-storage)
+  - Servicios conectados de VS 2019 16.7
+  - Artículo sobre Servicios conectados de Azure Storage: compatibilidad con la actualización de la interfaz de usuario y los tipos de proyecto
 
 ## <a name="code-quality"></a>Calidad del código
 
 **Artículos nuevos**
 
-- [CA1417: No usar `OutAttribute` en los parámetros de cadena para P/Invokes](/visualstudio/code-quality/ca1417) - Se agrega documentación para CA1417
-- [CA1805: No inicializar innecesariamente](/visualstudio/code-quality/ca1805) - Se agrega documentación para CA1805
-- [CA1836: Preferencia de IsEmpty sobre Count si está disponible](/visualstudio/code-quality/ca1836) - Se agrega documentación para CA1836 (Preferencia de IsEmpty sobre Count)
-- [CA2016: Reenviar el parámetro CancellationToken a los métodos que lo usan](/visualstudio/code-quality/ca2016) - Documento CA2016: Reenviar el parámetro CancellationToken a los métodos que lo usan
-- [CA2350: Asegurarse de que la entrada de DataTable.ReadXml() sea de confianza](/visualstudio/code-quality/ca2350) - Documentos de reglas de deserialización de DataSet/DataTable iniciales
-- [CA2351: Asegurarse de que la entrada de DataSet.ReadXml() sea de confianza](/visualstudio/code-quality/ca2351) - Documentos de reglas de deserialización de DataSet/DataTable iniciales
-- [CA2352: Un objeto DataSet o DataTable no seguro en un tipo serializable puede ser vulnerable a ataques de ejecución de código remoto](/visualstudio/code-quality/ca2352) - Documentos de reglas de deserialización de DataSet/DataTable iniciales
-- [CA2353: Objeto DataSet o DataTable no seguro en un tipo serializable](/visualstudio/code-quality/ca2353) - Documentos de reglas de deserialización de DataSet/DataTable iniciales
-- [CA2354: Un objeto DataSet o DataTable no seguro en un gráfico de objetos deserializado puede ser vulnerable a ataques de ejecución de código remoto](/visualstudio/code-quality/ca2354) - Documentos de reglas de deserialización de DataSet/DataTable iniciales
-- [CA2355: Objeto DataSet o DataTable no seguro en un gráfico de objetos deserializado](/visualstudio/code-quality/ca2355) - Documentos de reglas de deserialización de DataSet/DataTable iniciales
-- [CA2356: Tipo DataTable o DataSet no seguro en un gráfico de objetos deserializado web](/visualstudio/code-quality/ca2356) - Documentos de reglas de deserialización de DataSet/DataTable iniciales
+- [CA1310: Especificar StringComparison para mayor claridad](/visualstudio/code-quality/ca1310); incorporación de documentación de CA1310 y actualización de la documentación de CA1307
+- [CA1837: Usar Environment.ProcessId en lugar de Process.GetCurrentProcess().Id](/visualstudio/code-quality/ca1837); documentación de CA1837
+- [CA1838: Evitar parámetros `StringBuilder` para P/Invokes](/visualstudio/code-quality/ca1838); incorporación de documentación de CA1838
+- [CA2008: No crear tareas sin pasar un elemento TaskScheduler](/visualstudio/code-quality/ca2008); incorporación de documentación de CA2008
+- [CA2249: Valorar la posibilidad de usar String.Contains en lugar de String.IndexOf](/visualstudio/code-quality/ca2249); documentación de CA2249
+- [CA2361: Asegurarse de que la clase autogenerada que contiene DataSet.ReadXml() no se utilice con datos que no son de confianza](/visualstudio/code-quality/ca2361); más reglas DataSet/DataTable
+- [CA2362: Un elemento DataSet o DataTable no seguro en un tipo serializable autogenerado puede ser vulnerable a ataques de ejecución remota de código](/visualstudio/code-quality/ca2362); más reglas DataSet/DataTable
+- [IL3000: Evitar usar la ruta de acceso al archivo de ensamblado al publicar como único archivo](/visualstudio/code-quality/il3000); incorporación de documentación de IL3000
+- [IL3001: Evitar acceder a la ruta de acceso al archivo de ensamblado al publicar como único archivo](/visualstudio/code-quality/il3001); incorporación de documentación de IL3001
+
+**Updated**
+
+- [CA1002: No exponer listas genéricas](/visualstudio/code-quality/ca1002); incorporación de la sección Capacidad de configuración en la superficie de la API
+- [CA1046: No sobrecargar el operador de igualdad en los tipos de referencia](/visualstudio/code-quality/ca1046); incorporación de la sección Capacidad de configuración en la superficie de la API
+- [CA1307: Especificar StringComparison para mayor claridad](/visualstudio/code-quality/ca1307); incorporación de documentación de CA1310 y actualización de la documentación de CA1307
+- [CA1700: No asignar nombre a los valores de enumeración "Reservado"](/visualstudio/code-quality/ca1700); incorporación de la sección Capacidad de configuración en la superficie de la API
+- [CA1707: Los identificadores no deben contener guiones bajos](/visualstudio/code-quality/ca1707); incorporación de la sección Capacidad de configuración en la superficie de la API
+- [CA1822: Marcar miembros como estáticos](/visualstudio/code-quality/ca1822); incorporación de la sección Capacidad de configuración en la superficie de la API
+- [CA2351: Asegurarse de que la entrada de DataSet.ReadXml() sea de confianza](/visualstudio/code-quality/ca2351); más reglas DataSet/DataTable
+- [Instalación de analizadores de terceros](/visualstudio/code-quality/install-roslyn-analyzers); estructura y títulos modificados en la documentación sobre el análisis de código
 
 ## <a name="containers"></a>Contenedores
 
+**Artículos actualizados**
+
+- [Implementación de un contenedor ASP.NET en un registro de contenedor con Visual Studio](/visualstudio/containers/hosting-web-apps-in-docker): actualizaciones de Herramientas de contenedor en la interfaz de usuario de publicación de Visual Studio 16.7
+- [Introducción a Visual Studio Tools para Kubernetes](/visualstudio/containers/tutorial-kubernetes-tools); Tutorial de Kubernetes: incorporación de pasos de eliminación
+
+## <a name="deployment"></a>Implementación
+
 **Artículos nuevos**
 
-- [Configuración de Proceso local con Kubernetes](/visualstudio/containers/configure-local-process-with-kubernetes) - Proceso local con Kubernetes: configuración de YAML
-- [Uso de Proceso local con Kubernetes (versión preliminar)](/visualstudio/containers/local-process-kubernetes) - Migración de Dev Spaces
-- [Funcionamiento de Proceso local con Kubernetes](/visualstudio/containers/overview-local-process-kubernetes)
-  - Proceso local para Kubernetes: Agregar sección de enrutamiento
-  - Migración de Dev Spaces
-
-## <a name="cross-platform"></a>Multiplataforma
+- [Extensión de proyectos del Instalador de Visual Studio y .NET Core 3.1](/visualstudio/deployment/installer-projects-net-core): creación de una página de ayuda para las características de .NET Core 3.1 en los proyectos del instalador
 
 **Artículos actualizados**
 
-- [Registro de cambios (Visual Studio Tools para Unity, Windows)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity) - Actualización de la versión del registro de cambios de VSTU a 4.7.1.0
-- [Registro de cambios (Visual Studio Tools para Unity, Mac)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac) - Actualización de la versión del registro de cambios de VSTU a 2.7.1.0
+- [Implementación de la aplicación en una carpeta, IIS, Azure u otro destino](/visualstudio/deployment/deploying-applications-services-and-components-resources): actualizaciones de implementación
+- [Implementación en Visual Studio](/visualstudio/deployment/index): actualizaciones de implementación
+
+## <a name="extensibility"></a>Extensibilidad
+
+**Artículos actualizados**
+- [Subtipos de proyecto](/visualstudio/extensibility/internals/project-subtypes): corrección de la sangría de los elementos de lista
+- [Referencia de valor de color para Visual Studio](/visualstudio/extensibility/ux-guidelines/color-value-reference-for-visual-studio): corrección de AB#1759333 de los encabezados de columna que faltan
 
 ## <a name="get-started"></a>Primeros pasos
 
-**Artículos nuevos**
+**Artículos actualizados**
 
-- [Tutorial: Extensión de una aplicación de consola de C# sencilla](/visualstudio/get-started/csharp/tutorial-console-part-2) - Publicación de la primera versión del tutorial extendido
+- [Paso 5: Implementación de la aplicación de ASP.NET Core en Azure](/visualstudio/get-started/csharp/tutorial-aspnet-core-ef-step-05): actualizaciones del tutorial en vídeo sobre la nueva interfaz de usuario de Servicios conectados
 
 ## <a name="ide"></a>IDE
 
 **Artículos nuevos**
 
-- [Guía sobre la Comunidad de desarrolladores](/visualstudio/ide/developer-community-guidelines) - Se agregó una guía sobre DevCom
-- [Finalización de IntelliSense para tipos y métodos de extensión no importados](/visualstudio/ide/reference/intellisense-completion-unimported-types-extension-methods)
-
-## <a name="install"></a>Instalar
-
-**Artículos nuevos**
-
-- [Actualización de Visual Studio con un diseño sin conexión mínimo](/visualstudio/install/update-minimal-layout) - Característica de diseño mínimo de documento
-- [Guía de Visual Studio Enterprise](/visualstudio/install/visual-studio-enterprise-guide) - Guía de Enterprise
-
-## <a name="javascript"></a>JavaScript
-
-**Artículos nuevos**
-
-- [Compilar código TypeScript (Node.js)](/visualstudio/javascript/compile-typescript-code-npm) - Compilación y generación de TypeScript
-- [Compilar código TypeScript (ASP.NET°Core)](/visualstudio/javascript/compile-typescript-code-nuget) - Compilación y generación de TypeScript
-
-## <a name="msbuild"></a>MSBuild
-
-**Artículos nuevos**
-
-- [Metadatos de elementos MSBuild comunes](/visualstudio/msbuild/common-msbuild-item-metadata) - MSBuild: se agrega tabla para metadatos opcionales con Link y LinkBase
-- [Filtros de soluciones en MSBuild](/visualstudio/msbuild/solution-filters) - Filtros de la solución MSBuild
-
-## <a name="test"></a>Prueba
-
-**Artículos nuevos**
-
-- [Depuración y análisis de pruebas unitarias con el Explorador de pruebas](/visualstudio/test/debug-unit-tests-with-test-explorer) - Trabajo de rendimiento del Explorador de pruebas
+- [Cambio de la tecla de ayuda F1 en Visual Studio](/visualstudio/ide/not-in-toc/change-f1-help-key): refactorización de la página de ayuda F1 predeterminada
+- [Ayuda F1 para el editor de texto](/visualstudio/ide/not-in-toc/default-f1-text-editor): refactorización de la página de ayuda F1 predeterminada
+- [Conversión de `typeof` en `nameof`](/visualstudio/ide/reference/convert-typeof-to-nameof): conversión de la refactorización de typeof a nameof
+- [Simplificación de la expresión LINQ](/visualstudio/ide/reference/simplify-linq-expression): simplificar la refactorización de la expresión LINQ
 
 **Artículos actualizados**
 
-- [Configuración de pruebas unitarias con un archivo *.runsettings*](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
-  - Actualizaciones de la configuración de pruebas unitarias con un archivo runsettings
-  - Se cambió la descripción de la opción de Blame y se agregó un ejemplo.
+- [Personalizar los diseños de ventana de Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio): adición de información sobre las pestañas de los documentos verticales con moniker en el tema Personalizar los diseños de ventana
+- [Cómo notificar un problema con Visual Studio o con el Instalador de Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)
+  - Se agrega más información a la Identidad administrada del nodo.
+  - Se reformula la página completa de Notificar un problema.
+- [Ayuda de F1](/visualstudio/ide/not-in-toc/default): refactorizar la página de ayuda de F1 predeterminada
+- [Autorrecuperación, Entorno, Opciones (cuadro de diálogo)](/visualstudio/ide/reference/autorecover-environment-options-dialog-box): se incorpora información sobre las ubicaciones de los archivos de autoguardado actualizados
+- [Opciones, Editor de texto, Básico (Visual Basic), Avanzado](/visualstudio/ide/reference/options-text-editor-basic-visual-basic): se incorpora documentación básica sobre las sugerencias de nombre de parámetros insertados
+- [Opciones, editor de texto, C#, avanzado](/visualstudio/ide/reference/options-text-editor-csharp-advanced): se incorpora documentación básica sobre las sugerencias de nombre de parámetros insertados
+- [Sugerencias y trucos de rendimiento de Visual Studio](/visualstudio/ide/visual-studio-performance-tips-and-tricks): se agrega información sobre "Deshabilitar el modo de mapa" y "Deshabilitar el ajuste de línea"
+- [Novedades de Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019): actualización de Novedades de Visual Studio 2019 con la información de la disponibilidad general de la versión 16.7
+
+## <a name="rtvs"></a>RTVS
+
+**Artículos actualizados**
+
+- [Trabajar con SQL Server y R](/visualstudio/rtvs/integrating-sql-server-with-r): tablas corregidas para incluir encabezados de columna
 
 ## <a name="community-contributors"></a>Colaboradores de la comunidad
 
 Las siguientes personas han contribuido a la documentación de Visual Studio durante este período. Gracias. Para información sobre cómo contribuir a la documentación de Visual Studio, siga las instrucciones que se indican en la [Guía para colaboradores](https://docs.microsoft.com/contribute/).
 
-- [briuk](https://github.com/briuk) - Viktor Briukhanov (2)
-- [Youssef1313](https://github.com/Youssef1313) - Youssef Victor (2)
-- [ArntWork](https://github.com/ArntWork) - Legolas (1)
-- [Asugakoisi](https://github.com/Asugakoisi) - アスガコイシ (1)
-- [Delizald](https://github.com/Delizald) - David Elizalde (1)
-- [farisachugthai](https://github.com/farisachugthai) - Faris A Chugthai (1)
-- [mycalingram](https://github.com/mycalingram) - Mycal (1)
-- [tuyen-at-work](https://github.com/tuyen-at-work) - Tuyen Pham (1)
+- [AlexB-SheldonMFG](https://github.com/AlexB-SheldonMFG): Alex Black (11)
+- [Youssef1313](https://github.com/Youssef1313): Youssef Victor (8)
+- [hyoshioka0128](https://github.com/hyoshioka0128): Hiroshi Yoshioka (3)
+- [AstroChoco](https://github.com/AstroChoco): Qian Lu (Chocolate) (1)
+- [athyunnath](https://github.com/athyunnath): Athyunnath Eleti (1)
+- [caro-oviedo](https://github.com/caro-oviedo): Caro Oviedo (1)
+- [Evangelink](https://github.com/Evangelink): Amaury Levé (1)
+- [jethas-bennettjones](https://github.com/jethas-bennettjones): Shafiq Jetha (1)
+- [nebuk89](https://github.com/nebuk89): Ben De St Paer-Gotch (1)
+- [pcartwright81](https://github.com/pcartwright81) (1)
+- [pkulikov](https://github.com/pkulikov): Petr Kulikov (1)
+- [riQQ](https://github.com/riQQ) (1)
+- [tcmetzger](https://github.com/tcmetzger): Timo Cornelius Metzger (1)
+- [weitzhandler](https://github.com/weitzhandler): Shimmy (1)

@@ -5,16 +5,16 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: e5a9dd8120dd312bfc3e1c8905a725a58cca0e92
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: bd46a9eba7770b73425f1461fab6cb8443ace26c
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983523"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402275"
 ---
 # <a name="working-with-subversion"></a>Trabajar con Subversion
 
-Subversion es el sistema de control de versiones centralizado que permite extraer del repositorio una única copia maestra de los datos centralizados. A diferencia de Git, la extracción de un repositorio de Subversion no clona la totalidad del repositorio, sino que solo toma una instantánea en ese momento dado.
+Subversion es el sistema de control de versiones centralizado que permite extraer del repositorio una única copia principal de los datos centralizados. A diferencia de Git, la extracción de un repositorio de Subversion no clona la totalidad del repositorio, sino que solo toma una instantánea en ese momento dado.
 
 Subversion usa un modelo Copiar-Modificar-Combinar para permitir que los usuarios trabajen simultáneamente en el mismo repositorio. Esto significa que cada usuario crea una copia local, o de trabajo, de los datos centralizados en la que luego puede trabajar de forma independiente. Los cambios en las copias de trabajo de los usuarios se combinan de forma cronológica.
 

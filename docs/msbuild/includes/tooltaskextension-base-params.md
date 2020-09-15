@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 40108f56ee9d64688fc665fdef0e0ab731bddfff
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82204503"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89042890"
 ---
 ### <a name="tooltaskextension-parameters"></a>Parámetros de ToolTaskExtension
 
@@ -19,7 +19,7 @@ En la siguiente tabla se describen los parámetros de las clases base:
 | Parámetro | Descripción |
 | - | - |
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Parámetro `bool` opcional.<br /><br /> Cuando se establece en `true`, esta tarea pasa **/Q** a la línea de comandos *cmd.exe* de modo que la línea de comandos no se copia en stdout. |
-| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Parámetro de matriz `String` opcional.<br /><br /> Matriz de pares de variables de entorno, separados por signos igual. Estas variables se pasan al ejecutable generado y, además, pasan el bloque de entorno normal o lo invalidan de manera selectiva. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Parámetro de matriz `String` opcional.<br /><br /> Matriz de definiciones de variables de entorno, separadas por punto y coma. Cada definición debe especificar un valor y un nombre para la variable de entorno separados por un signo igual. Estas variables se pasan al ejecutable generado y, además, pasan el bloque de entorno normal o lo invalidan de manera selectiva. Por ejemplo, `Variable1=Value1;Variable2=Value2`. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | Parámetro de solo lectura de salida `Int32` opcional.<br /><br /> Especifica el código de salida proporcionado por el comando ejecutado. Si la tarea registró errores pero el proceso tenía un código de salida de 0 (correcto), se establece en -1. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Parámetro `bool` opcional.<br /><br /> Si `true`, todos los mensajes recibidos en el flujo de error estándar se registran como errores. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Parámetro `bool` opcional.<br /><br /> Si `true`, todos los mensajes recibidos en el flujo de error estándar se registran como errores. |
