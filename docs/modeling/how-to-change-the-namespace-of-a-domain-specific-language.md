@@ -1,20 +1,23 @@
 ---
 title: 'Cómo: cambiar el espacio de nombres de un lenguaje específico de dominio'
+description: Proporciona información sobre cómo cambiar el espacio de nombres de un lenguaje específico de dominio.
 ms.date: 10/31/2018
 ms.topic: how-to
+titleSuffix: ''
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 747095a876b353aeef76e2f5321e7f2ffc46136f
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542680"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100805"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Cómo: cambiar el espacio de nombres de un lenguaje específico de dominio
 
@@ -52,6 +55,6 @@ Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Reali
 
 11. En el menú **compilar** , elija **recompilar solución**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Glosario de herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

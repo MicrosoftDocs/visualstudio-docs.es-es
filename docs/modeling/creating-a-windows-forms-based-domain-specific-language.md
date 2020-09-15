@@ -1,18 +1,20 @@
 ---
-title: Crear lenguajes específicos de dominio basados en Windows Forms
+title: Crear un lenguaje específico de dominio basado en Windows Forms
+description: Proporciona información sobre cómo usar Windows Forms para mostrar el estado de un modelo de lenguaje específico de dominio.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238366"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100458"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Crear un lenguaje específico de dominio basado en Windows Forms
 
@@ -67,9 +69,9 @@ Al actualizar el archivo de definición de DSL para definir su propio DSL, tendr
 
 ## <a name="update-the-dsl-definition"></a>Actualización de la definición de DSL
 
-En este tutorial se usa la definición de DSL siguiente.
+La imagen siguiente es la definición de DSL que se usa en este tutorial.
 
-![DSL&#45;WPF&#45;1](../modeling/media/dsl-wpf-1.png)
+![Definición de DSL](../modeling/media/dsl-wpf-1.png)
 
 1. Abra DslDefinition. DSL en el diseñador de DSL.
 
@@ -127,7 +129,7 @@ Ahora puede crear un nuevo control de usuario que mostrará la información que 
 
      Las propiedades y las relaciones de la clase de modelo aparecen en la ventana orígenes de datos.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
+     ![Ventana orígenes de datos](../modeling/media/dslwpf-3.png)
 
 ### <a name="connect-your-model-to-a-form"></a>Conectar el modelo a un formulario
 
@@ -172,7 +174,9 @@ Ahora puede crear un nuevo control de usuario que mostrará la información que 
 
 - Garantiza que, cuando el usuario selecciona una fila, el ventana Propiedades muestra las propiedades del elemento de modelo correspondiente, en lugar de la fila de la cuadrícula de datos.
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) esquema de vínculos entre orígenes de datos y vistas.
+  ![Esquema del enlace DSL](../modeling/media/dslwpf4.png)
+  
+  Esquema de vínculos entre orígenes de datos y vistas.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Completar los enlaces a la DSL
 
@@ -298,7 +302,7 @@ La solución DSL ahora se puede compilar y ejecutar, aunque es posible que desee
 
     Debe poder editar el nombre del elemento en la vista de cuadrícula de datos. También puede eliminarlo de ahí.
 
-   ![DSL&#45;WPF&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![Vista de cuadrícula de datos de ejemplo](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Acerca del código para agregar un elemento
 

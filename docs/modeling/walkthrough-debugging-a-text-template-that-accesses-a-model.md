@@ -1,18 +1,20 @@
 ---
-title: 'Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo'
+title: 'Tutorial: depurar plantillas de texto que tienen acceso a un modelo'
+description: Proporciona información sobre cómo depurar una plantilla de texto que tiene acceso a un modelo.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: e33297bba899c1843b8601c031d7669531a1bd3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546905"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100792"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo
 Al modificar o agregar plantillas de texto en una solución de lenguaje específico de dominio, es posible que se produzcan errores cuando el motor transforme la plantilla en código fuente o cuando compile el código generado. En el siguiente tutorial se muestran algunas de las cosas que puede hacer para depurar una plantilla de texto.

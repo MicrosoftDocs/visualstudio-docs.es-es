@@ -1,18 +1,20 @@
 ---
-title: Ver las dependencias entre los archivos de código fuente y los archivos de encabezado de C++
+title: Ver las dependencias entre los archivos de código fuente y de encabezado de C++
+description: Proporciona información sobre los mapas de código para los proyectos de C++.
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597248"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100445"
 ---
 # <a name="code-maps-for-c-projects"></a>Mapas de código para proyectos de C++
 
@@ -38,7 +40,7 @@ Estos elementos no se admiten para código de C y C++:
 
 Estos problemas pueden producirse al crear mapas de código para código de C y C++:
 
-|**Problema**|**Causa posible**|**Resolución**|
+|**Problema**|**Causa posible**|**Solución**|
 |-|-|-|
 |El mapa de código no se generó.|No se compiló correctamente ningún proyecto de la solución.|Corrija los errores de compilación que se produjeron y, después, vuelva a generar el mapa.|
 |Visual Studio deja de responder al intentar generar un mapa de código desde el menú **arquitectura** .|El archivo de base de datos de programa (.pdb) podría estar dañado.<br /><br /> Un archivo .pdb almacena la información de depuración, como tipo, método e información del archivo de código fuente.|Recompile la solución y, a continuación, inténtelo de nuevo.|
@@ -49,6 +51,6 @@ Estos problemas pueden producirse al crear mapas de código para código de C y 
 ||Se ha quitado la información de depuración del archivo .pdb.|Si se ha usado la opción **/PDBSTRIPPED** en el vinculador, incluya el archivo .pdb completo en su lugar.|
 ||El llamador no es una función y, o bien es un código thunk en el archivo binario o es un puntero en la sección de datos.|Cuando el llamador es un código thunk, intente usar `_declspec(dllimport)` para evitar el código thunk.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Asignación de dependencias con mapas de código](../modeling/map-dependencies-across-your-solutions.md)
