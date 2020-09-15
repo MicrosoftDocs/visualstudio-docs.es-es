@@ -1,5 +1,5 @@
 ---
-title: Análisis de calidad del código
+title: Configuración del analizador
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036382"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560754"
 ---
-# <a name="configure-code-quality-analysis"></a>Configuración del análisis de calidad del código
+# <a name="overview"></a>Información general
 
-A partir de .NET 5,0, los analizadores de calidad de código se incluyen con el SDK de .NET. (Anteriormente, instaló estos analizadores como un paquete NuGet). El análisis de código está habilitado, de forma predeterminada, para los proyectos que tienen como destino .NET 5,0 o posterior. Puede habilitar el análisis de código en los proyectos que tienen como destino versiones anteriores de .NET estableciendo la propiedad [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) en `true` . También puede deshabilitar el análisis de código del proyecto si establece `EnableNETAnalyzers` en `false` .
-
-Cada una de las reglas o el *diagnóstico* del analizador de calidad de código tiene una gravedad y un estado de supresión predeterminados que se pueden sobrescribir y personalizar para el proyecto. En este artículo se describe la configuración de gravedad del analizador de calidad de código y la supresión de infracciones del analizador.
+Cada una de las reglas o *diagnósticos* del analizador de Roslyn tiene una gravedad y un estado de supresión predeterminados que se pueden sobrescribir y personalizar para el proyecto. En este artículo se describe el establecimiento de gravedad del analizador y la supresión de infracciones del analizador.
 
 ## <a name="configure-severity-levels"></a>Configurar niveles de gravedad
 
@@ -46,8 +44,8 @@ En la tabla siguiente se muestran las diferentes opciones de gravedad:
 | Advertencia | `warning` | Las infracciones aparecen como *advertencias* en el lista de errores y en la salida de la compilación de línea de comandos, pero no provocan errores en las compilaciones. | El código infractor se subraya con un subrayado ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento. |
 | Información | `suggestion` | Las infracciones aparecen como *mensajes* en el lista de errores y no en todos los resultados de la compilación de línea de comandos. | El código infractor se subraya con un subrayado ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento. |
 | Hidden | `silent` | No es visible para el usuario. | No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE. |
-| Ninguno | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
-| Valor predeterminado | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
+| None | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
+| Default | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
 
 Si un analizador detecta infracciones de reglas, se notifican en el editor de código (como un *subrayado ondulado* bajo el código infractor) y en la ventana Lista de errores.
 

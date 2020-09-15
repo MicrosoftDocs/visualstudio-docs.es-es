@@ -1,5 +1,6 @@
 ---
-title: Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
+title: Información general sobre la interfaz de usuario de Herramientas del lenguaje específico de dominio
+description: Proporciona información general sobre la interfaz de usuario de una solución de herramientas de lenguaje específico de dominio en Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 549726d16a5fc1129f8c773ef143267e4c9bc31e
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532410"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100727"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
 La primera vez que se abre una solución de Herramientas del lenguaje específico de dominio (Herramientas DSL) en Visual Studio, la interfaz de usuario será similar a la imagen siguiente.
