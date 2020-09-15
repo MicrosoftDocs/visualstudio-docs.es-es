@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 566b9827f42f646cd9350cfc015a460485212a09
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034109"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094335"
 ---
 # <a name="net-code-analysis-rules"></a>Reglas de análisis de código de .NET
 El análisis de código de .NET proporciona reglas que indican infracciones de calidad del código o sugerencias para mejorar la calidad del código. Las reglas se organizan en áreas de reglas como diseño, localización, rendimiento y seguridad. Ciertas reglas son específicas del uso de la API de .NET, mientras que las reglas restantes son sobre la calidad del código genérico. En esta sección se proporcionan debates y ejemplos detallados para cada regla.
@@ -30,7 +30,7 @@ El análisis de código de .NET proporciona reglas que indican infracciones de c
 |Elemento|Descripción|
 |----------|-----------------|
 |Tipo|TypeName de la regla.|
-|Identificador de comprobación|Identificador único de la regla. CheckId y Categoría se usan para la supresión en el código fuente de una advertencia.|
+|Identificador de regla|Identificador único de la regla. El ID. de regla y la categoría se usan para la supresión en el código fuente de una advertencia.|
 |Category|Categoría de la advertencia.|
 |Cambio importante|Indica si la corrección para una infracción de la regla es un cambio problemático. Se entiende por cambio problemático que un ensamblado que tenga una dependencia en el destino que produjo la infracción no se vuelva a compilar con la nueva versión modificada o genere un error en tiempo de ejecución debido al cambio. Cuando hay disponibles varias correcciones y al menos una corrección es un cambio importante y no hay una solución, se especifican "Breaking" y "non-breaking".|
 |Causa|El código administrado específico que provoca que la regla genere una advertencia.|

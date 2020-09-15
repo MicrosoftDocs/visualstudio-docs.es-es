@@ -62,6 +62,7 @@ f1_keywords:
 - CA1309
 - CA1310
 - CA1401
+- CA1416
 - CA1417
 - CA1501
 - CA1502
@@ -253,18 +254,18 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 24f7dbcdd324620f2076f5fab8247c9ba99a72cb
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037242"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094231"
 ---
 # <a name="code-quality-analysis-rules-by-rule-id"></a>Reglas de análisis de calidad del código por ID. de regla
 
 En la tabla siguiente se enumeran las reglas de análisis de calidad del código por identificador de regla.
 
-| Identificador de comprobación | Advertencia | Descripción |
+| Identificador de regla | Advertencia | Descripción |
 |---------| - | - |
 | CA1000 | [CA1000: No declarar miembros estáticos en tipos genéricos](../code-quality/ca1000.md) | Cuando se llama a un miembro estático de un tipo genérico, se debe especificar el argumento de tipo correspondiente a ese tipo. Cuando se llama a un miembro de instancia genérico que no admite la interferencia, se debe especificar el argumento de tipo para el miembro. En estos dos casos, la sintaxis para especificar el argumento de tipo es diferente y resulta fácil confundirse. |
 | CA1001 | [CA1001: Los tipos que poseen campos descartables deben ser descartables](../code-quality/ca1001.md) | Una clase declara e implementa un campo de instancia que es de tipo System.IDisposable y la clase no implementa IDisposable. Una clase que declara un campo IDisposable posee indirectamente un recurso no administrado y debería implementar la interfaz IDisposable. |
@@ -324,6 +325,7 @@ En la tabla siguiente se enumeran las reglas de análisis de calidad del código
 | CA1309 | [CA1309: Utilizar StringComparison ordinal](../code-quality/ca1309.md) | Una operación no lingüística de comparación de cadenas no establece el parámetro StringComparison en Ordinal ni en OrdinalIgnoreCase. Si se establece explícitamente el parámetro en StringComparison.Ordinal o StringComparison.OrdinalIgnoreCase, el código será más rápido y ganará en precisión y confiabilidad. |
 | CA1310 | [CA1310: Especificar StringComparison para mayor corrección](../code-quality/ca1310.md) | Una operación de comparación de cadenas utiliza una sobrecarga de método que no establece un parámetro StringComparison y utiliza de forma predeterminada la comparación de cadenas específica de la referencia cultural. |
 | CA1401 | [CA1401: P/Invoke no debe estar visible](../code-quality/ca1401.md) | Un método público o protegido en un tipo público tiene el atributo System.Runtime.InteropServices.DllImportAttribute (también se implementa por la palabra clave Declare en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. No se deberían exponer estos métodos. |
+| CA1416 | [CA1416: validar la compatibilidad de la plataforma](../code-quality/ca1416.md) | El uso de API dependientes de la plataforma en un componente hace que el código deje de funcionar en todas las plataformas. |
 | CA1417 | [CA1417: no se usa `OutAttribute` en parámetros de cadena para P/Invoke](../code-quality/ca1417.md) | Los parámetros de cadena pasados por valor con el `OutAttribute` pueden desestabilizar el tiempo de ejecución si la cadena es una cadena interna. |
 | CA1501 | [CA1501: Evitar una herencia excesiva](../code-quality/ca1501.md) | Un tipo tiene más de cuatro niveles de profundidad en su jerarquía de herencia. Las jerarquías de tipos con demasiados niveles de anidación pueden resultar difíciles de seguir, comprender y mantener. |
 | CA1502 | [CA1502: Evitar una complejidad excesiva](../code-quality/ca1502.md) | Esta regla mide el número de rutas de acceso independientes de forma lineal a través del método, que es determinado por el número y la complejidad de bifurcaciones condicionales. |
@@ -349,7 +351,7 @@ En la tabla siguiente se enumeran las reglas de análisis de calidad del código
 | CA1725 | [CA1725: Los nombres de parámetro deben coincidir con la declaración base](../code-quality/ca1725.md) | El uso del mismo nombre para un parámetro en una jerarquía de reemplazo aumenta la utilidad de los reemplazos de método. Cuando el nombre de un parámetro en un método derivado es distinto del nombre de la declaración base, puede resultar difícil determinar si el método es un reemplazo del método base o una nueva sobrecarga del método. |
 | CA1801 | [CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801.md) | Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. |
 | CA1802 |[CA1802: Utilizar literales cuando sea apropiado](../code-quality/ca1802.md) |Un campo se declara como static y de solo lectura (Shared y ReadOnly en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) y se inicializa con un valor que se puede calcular durante la compilación. Dado que el valor asignado al campo de destino es calculable en tiempo de compilación, cambie la declaración a un campo const (const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) para que el valor se calcule en tiempo de compilación en lugar de en tiempo de ejecución. |
-| CA1805 | [CA1805: No inicializar innecesariamente](../code-quality/ca1805.md) | El tiempo de ejecución de .NET inicializa todos los campos de los tipos de referencia a sus valores predeterminados antes de ejecutar el constructor. En la mayoría de los casos, la inicialización explícita de un campo a su valor predeterminado es redundante, lo que aumenta los costos de mantenimiento y puede degradar el rendimiento (por ejemplo, con un mayor tamaño de ensamblado). |
+| CA1805 | [CA1805: no inicializar innecesariamente](../code-quality/ca1805.md) | El tiempo de ejecución de .NET inicializa todos los campos de los tipos de referencia a sus valores predeterminados antes de ejecutar el constructor. En la mayoría de los casos, la inicialización explícita de un campo a su valor predeterminado es redundante, lo que aumenta los costos de mantenimiento y puede degradar el rendimiento (por ejemplo, con un mayor tamaño de ensamblado). |
 | CA1806 | [CA1806: No omitir resultados del método](../code-quality/ca1806.md) | Se crea un nuevo objeto pero nunca se utiliza, o se llama a un método que crea y devuelve una nueva cadena y esta nunca se utiliza, o un método COM o P/Invoke devuelve un código de error o HRESULT que nunca se utiliza. |
 | CA1810 | [CA1810: Inicializar campos estáticos de tipo de referencia insertados](../code-quality/ca1810.md) | Cuando un tipo declara un constructor estático explícito, el compilador Just-In-Time (JIT) agrega una comprobación a cada constructor de instancia y a cada método estático del tipo para asegurarse de que se ha llamado anteriormente al constructor estático. Las comprobaciones del constructor estático pueden reducir el rendimiento. |
 | CA1812 | [CA1812: Evitar las clases internas sin instancia](../code-quality/ca1812.md) | El código del ensamblado no crea una instancia del tipo del nivel de ensamblado. |
@@ -466,7 +468,7 @@ En la tabla siguiente se enumeran las reglas de análisis de calidad del código
 | CA5358 | [CA5358: No usar modos de cifrado inseguro](../code-quality/ca5358.md) | No usar modos de cifrado inseguro |
 | CA5359 | [CA5359 no deshabilitar la validación de certificados](../code-quality/ca5359.md) | Un certificado puede ayudar a autenticar la identidad del servidor. Los clientes deben validar el certificado de servidor para asegurarse de que las solicitudes se envían al servidor previsto. Si ServerCertificateValidationCallback (siempre devuelve `true` , cualquier certificado pasará la validación. |
 | CA5360 | [CA5360 no llama a métodos peligrosos en la deserialización](../code-quality/ca5360.md) | La deserialización no segura es una vulnerabilidad que se produce cuando los datos que no son de confianza se usan para abusar la lógica de una aplicación, provocar un ataque de denegación de servicio (DoS) o incluso ejecutar código arbitrario cuando se deserializa. A menudo, es posible que los usuarios malintencionados abusan estas características de deserialización cuando la aplicación está deserializando datos que no son de confianza y están bajo su control. En concreto, invoque métodos peligrosos en el proceso de deserialización. Los ataques de deserialización inseguros que se han realizado correctamente podrían permitir que un atacante lleve a cabo ataques como ataques de DoS, omisiones de autenticación y ejecución remota de código. |
-| CA5361 | [CA5361: no deshabilite el uso de Schannel de cifrado seguro](../code-quality/ca5361.md) | Establecer `Switch.System.Net.DontEnableSchUseStrongCrypto` para `true` debilita la criptografía usada en las conexiones de seguridad de la capa de transporte (TLS) salientes. La criptografía más débil puede poner en peligro la confidencialidad de la comunicación entre la aplicación y el servidor, lo que facilita a los atacantes la interceptación de información confidencial. |
+| CA5361 | [CA5361: No deshabilitar el uso de cifrado seguro de Schannel](../code-quality/ca5361.md) | Establecer `Switch.System.Net.DontEnableSchUseStrongCrypto` para `true` debilita la criptografía usada en las conexiones de seguridad de la capa de transporte (TLS) salientes. La criptografía más débil puede poner en peligro la confidencialidad de la comunicación entre la aplicación y el servidor, lo que facilita a los atacantes la interceptación de información confidencial. |
 | CA5362 | [Ciclo de referencia potencial de CA5362 en el gráfico de objetos deserializados](../code-quality/ca5362.md) | Si se deserializan los datos que no son de confianza, el procesamiento de código del gráfico de objetos deserializados debe controlar los ciclos de referencia sin entrar en bucles infinitos. Esto incluye el código que forma parte de una devolución de llamada de deserialización y el código que procesa el gráfico de objetos una vez completada la deserialización. De lo contrario, un atacante podría realizar un ataque por denegación de servicio con datos malintencionados que contuvieran un ciclo de referencia. |
 | CA5363 | [CA5363: No deshabilitar la validación de solicitudes](../code-quality/ca5363.md) | La validación de solicitudes es una característica de ASP.NET que examina las solicitudes HTTP y determina si contienen contenido potencialmente peligroso que puede conducir a ataques de inyección, incluido el scripting entre sitios. |
 | CA5364 | [CA5364: No usar protocolos de seguridad en desuso](../code-quality/ca5364.md) | La seguridad de la capa de transporte (TLS) protege la comunicación entre equipos, normalmente con el protocolo seguro de transferencia de hipertexto (HTTPS). Las versiones de protocolo anteriores de TLS son menos seguras que las de TLS 1,2 y TLS 1,3 y es más probable que tengan nuevas vulnerabilidades. Evite las versiones anteriores del protocolo para minimizar el riesgo. |
