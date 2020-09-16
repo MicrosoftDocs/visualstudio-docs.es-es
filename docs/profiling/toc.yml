@@ -16,9 +16,9 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: Tutoriales
   items:
-    - name: Generar perfiles de rendimiento de la aplicación en Visual Studio
+    - name: "Medición del rendimiento de las aplicaciones en Visual\_Studio"
       href: beginners-guide-to-performance-profiling.md
-    - name: Uso de memoria de perfil en Visual Studio
+    - name: Medición del uso de memoria en Visual Studio
       href: memory-usage.md
 - name: Conceptos
   items:
