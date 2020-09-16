@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350594"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599558"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnóstico de problemas después de la implementación con IntelliTrace (C# y Visual Basic)
 
@@ -153,7 +153,7 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
  **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a> Paso 2: Lanzar la aplicación
- Si usa el [paquete Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) creado por el proceso de compilación para implementar la aplicación, el nombre del manifiesto de compilación se cambiará automáticamente de “*NombreDelProyecto*.BuildInfo.config” a “BuildInfo.config” y se copiará en la misma carpeta que el archivo Web.config de la aplicación en el servidor web.
+ Si usa el [paquete Web.Deploy](/previous-versions/aspnet/dd394698(v=vs.110)) creado por el proceso de compilación para implementar la aplicación, el nombre del manifiesto de compilación se cambiará automáticamente de “*NombreDelProyecto*.BuildInfo.config” a “BuildInfo.config” y se copiará en la misma carpeta que el archivo Web.config de la aplicación en el servidor web.
 
  Si usa otros métodos para implementar la aplicación, asegúrese de cambiar el nombre del manifiesto de compilación de “*NombreDelProyecto*.BuildInfo.config” a “BuildInfo.config” y que se copie en la misma carpeta que el archivo Web.config de la aplicación en el servidor web.
 

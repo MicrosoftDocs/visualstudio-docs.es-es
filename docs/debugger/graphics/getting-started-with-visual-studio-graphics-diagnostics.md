@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350464"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600092"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introducción al Diagnóstico de gráficos de Visual Studio
 En esta sección se explicará cómo usar el diagnóstico de gráficos por primera vez, se capturarán fotogramas en una aplicación de Direct3D y se examinarán esos fotogramas en el Analizador de gráficos.
@@ -56,7 +56,7 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
 Si ya tiene su propia aplicación de Direct3D para explorar Diagnóstico de gráficos, perfecto. Si no es así, puede usar cualquiera de los medios siguientes:
 
 ::: moniker range=">=vs-2019"
-Descargue un ejemplo desde [Ejemplo de juego de Direct3D](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/).
+Descargue un ejemplo desde [Ejemplo de juego de Direct3D](/samples/microsoft/windows-universal-samples/simple3dgamedx/).
 ::: moniker-end
 ::: moniker range="vs-2017"
 - Las plantillas de proyecto de las aplicaciones **DirectX 11 (Windows universal)** o **DirectX 12 (Windows universal)** para Windows 10.

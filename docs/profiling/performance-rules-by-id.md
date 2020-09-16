@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7ef6975fe5d9d19ebd2cbb0ed10951ca6f3219
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778445"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037333"
 ---
 # <a name="performance-rules-by-id"></a>Reglas de rendimiento por identificador
 
@@ -28,7 +28,7 @@ ms.locfileid: "74778445"
 | [DA0006: Invalidar Equals() para tipos de valor](../profiling/da0006-override-equals-parens-for-value-types.md) | Las llamadas al método Equals o los operadores de igualdad de un tipo de valor público constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de implementar un método más eficaz. |
 | [DA0007: Evite utilizar excepciones para el flujo de control](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | Se produjo una alta tasa de controladores de excepciones de .NET Framework en los datos de generación de perfiles. Puede utilizar otra lógica de flujo de control para reducir el número de excepciones que se producen. |
 | [DA0008: Pocos ejemplos recolectados](../profiling/da0008-few-samples-collected.md) | Solo se recopiló un número reducido de ejemplos en la ejecución de generación de perfiles. Considere una ejecución más prolongada o una frecuencia de muestreo más rápida para obtener resultados más significativos. |
-| [DA0009: % alto de tiempo de JIT](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd) | Un porcentaje considerable del tiempo de ejecución de la aplicación se ha empleado en el compilador Just In Time (JIT). |
+| [DA0009: % alto de tiempo de JIT](/previous-versions/dd264972(v=vs.100)) | Un porcentaje considerable del tiempo de ejecución de la aplicación se ha empleado en el compilador Just In Time (JIT). |
 | [DA0010: Función GetHashCode que consume muchos recursos](../profiling/da0010-expensive-gethashcode.md) | Las llamadas al método GetHashCode del tipo constituyen una proporción considerable de los datos de generación de perfiles o el método asigna memoria. |
 | [DA0011: Función CompareTo que consume muchos recursos](../profiling/da0011-expensive-compareto.md) | El método CompareTo del tipo consume muchos recursos o asigna memoria. |
 | [DA0012: Cantidad significativa de reflexión](../profiling/da0012-significant-amount-of-reflection.md) | Las llamadas a métodos System.Reflection, como InvokeMember y GetMember, o a métodos Type, como MemberInvoke, constituyen una proporción considerable de los datos de generación de perfiles. Cuando sea posible, considere la posibilidad de reemplazar estos métodos con enlace anticipado por los métodos de ensamblados dependientes. |

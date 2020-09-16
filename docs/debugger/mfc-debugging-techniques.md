@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731288"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600240"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.
@@ -80,7 +80,7 @@ Asegúrese de quitar las instrucciones `AfxDebugBreak` cuando genere una versió
 [En este tema](#BKMK_In_this_topic)
 
 ## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> La macro TRACE
-Para mostrar mensajes desde el programa en la [Ventana de salida](../ide/reference/output-window.md)del depurador, se puede utilizar la macro [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) o la macro [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) de MFC. Al igual que las [aserciones](../debugger/c-cpp-assertions.md), las macros de seguimiento sólo están activas en la versión de depuración del programa y desaparecen al compilarse en la versión de lanzamiento.
+Para mostrar mensajes desde el programa en la [Ventana de salida](../ide/reference/output-window.md)del depurador, se puede utilizar la macro [ATLTRACE](/previous-versions/6xkxyz08(v=vs.140)) o la macro [TRACE](/previous-versions/6w95a4ha(v=vs.140)) de MFC. Al igual que las [aserciones](../debugger/c-cpp-assertions.md), las macros de seguimiento sólo están activas en la versión de depuración del programa y desaparecen al compilarse en la versión de lanzamiento.
 
 Los siguientes ejemplos muestran algunas de las formas en las que se puede utilizar la macro **TRACE** . Al igual que `printf`, la macro **TRACE** puede utilizar varios argumentos.
 
@@ -115,7 +115,7 @@ Para obtener más información sobre la macro **TRACE** , vea [Servicios de diag
 MFC proporciona clases y funciones para detectar memoria asignada que no se desasigna nunca.
 
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Realizar un seguimiento de las asignaciones de memoria
-En MFC, se puede utilizar la macro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) en lugar del operador **new** para ayudar a localizar pérdidas de memoria. En la versión de depuración del programa, `DEBUG_NEW` registra el nombre de archivo y número de línea para cada objeto que asigna. Cuando se compila una versión de lanzamiento de programa, `DEBUG_NEW` se resuelve como una simple operación **new** sin la información de nombre de archivo y número de línea. De este modo, el rendimiento de la versión de lanzamiento no disminuye.
+En MFC, se puede utilizar la macro [DEBUG_NEW](/previous-versions/tz7sxz99(v=vs.140)) en lugar del operador **new** para ayudar a localizar pérdidas de memoria. En la versión de depuración del programa, `DEBUG_NEW` registra el nombre de archivo y número de línea para cada objeto que asigna. Cuando se compila una versión de lanzamiento de programa, `DEBUG_NEW` se resuelve como una simple operación **new** sin la información de nombre de archivo y número de línea. De este modo, el rendimiento de la versión de lanzamiento no disminuye.
 
 Si no desea volver a escribir todo el programa para utilizar `DEBUG_NEW` en lugar de **new**, puede definir esta macro en los archivos de código fuente:
 
@@ -134,11 +134,11 @@ Para poder utilizar los servicios de diagnóstico de memoria, se debe habilitar 
 
 **Para habilitar o deshabilitar los diagnósticos de memoria**
 
-- Llame a la función global [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) para habilitar o deshabilitar el asignador de memoria para diagnósticos. Como los diagnósticos de memoria se encuentran, de forma predeterminada, en la biblioteca de depuración, se utilizará normalmente esta función para desactivarlos temporalmente, lo cual incrementa la velocidad de ejecución del programa y reduce los resultados de diagnóstico.
+- Llame a la función global [AfxEnableMemoryTracking](/previous-versions/hzsxb6e8(v=vs.140)) para habilitar o deshabilitar el asignador de memoria para diagnósticos. Como los diagnósticos de memoria se encuentran, de forma predeterminada, en la biblioteca de depuración, se utilizará normalmente esta función para desactivarlos temporalmente, lo cual incrementa la velocidad de ejecución del programa y reduce los resultados de diagnóstico.
 
   **Para seleccionar características específicas de diagnóstico de memoria con afxMemDF**
 
-- Si desea un control más preciso sobre las características de diagnóstico de memoria, puede activar y desactivar selectivamente características individuales configurando el valor de la variable global de MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Esta variable puede tener los siguientes valores, según especifica el tipo enumerado **afxMemDF**.
+- Si desea un control más preciso sobre las características de diagnóstico de memoria, puede activar y desactivar selectivamente características individuales configurando el valor de la variable global de MFC [afxMemDF](/previous-versions/ahe4a83t(v=vs.140)). Esta variable puede tener los siguientes valores, según especifica el tipo enumerado **afxMemDF**.
 
   |Valor|Descripción|
   |-----------|-----------------|

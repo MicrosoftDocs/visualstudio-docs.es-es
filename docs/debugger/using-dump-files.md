@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386958"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599504"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Archivos de volcado de memoria en el depurador de Visual Studio.
 
@@ -74,7 +74,7 @@ Con la [depuración Just-in-Time](../debugger/just-in-time-debugging-in-visual-s
 1. Busque una ruta de acceso y seleccione un nombre para el archivo de volcado de memoria y, luego, seleccione **Guardar**.
 
 >[!NOTE]
->También puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows. Por ejemplo, la utilidad de línea de comandos **Procdump** de [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) puede crear archivos de volcado de memoria correspondientes a bloqueos de procesos basados en desencadenadores o a petición. Consulte los [requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) para información sobre el uso de otras herramientas para crear archivos de volcado de memoria.
+>También puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows. Por ejemplo, la utilidad de línea de comandos **Procdump** de [Windows Sysinternals](/sysinternals/) puede crear archivos de volcado de memoria correspondientes a bloqueos de procesos basados en desencadenadores o a petición. Consulte los [requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) para información sobre el uso de otras herramientas para crear archivos de volcado de memoria.
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> Abrir un archivo de volcado de memoria
 

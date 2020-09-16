@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916445"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599943"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Cuadros de diálogo de advertencias y errores de depuración
 A continuación, se muestran los cuadros de diálogo de advertencia y errores que se pueden encontrar mientras se depura una aplicación.
@@ -48,7 +48,7 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
 
  [Cuadro de diálogo No hay código fuente disponible para la ubicación actual](../debugger/no-source-available.md)
 
- [Cuadro de diálogo No hay información simbólica](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+ [Cuadro de diálogo No hay información simbólica](/previous-versions/d493t3ew(v=vs.100))
 
  [Cuadro de diálogo Resolver ambigüedad](../debugger/resolve-ambiguity-dialog-box.md)
 

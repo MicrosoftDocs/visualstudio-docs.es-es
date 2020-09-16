@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 663de229aa9d7d3dee22425347a3464c200b9d53
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a5447c21e3a1049bcb2cb86e3e0419e43fc4e953
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532098"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036813"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Máximo de bytes privados asignados para el proceso del que se está generando el perfil
 
@@ -46,4 +46,4 @@ ms.locfileid: "85532098"
 ## <a name="how-to-use-rule-data"></a>Cómo usar los datos de la regla
  Utilice el valor notificado para comparar el rendimiento de distintas versiones o compilaciones del programa o para entender el rendimiento de la aplicación en otros escenarios de generación de perfiles diferentes.
 
- Se pueden producir excepciones de memoria agotada si un valor máximo de bytes privados del proceso se aproxima al límite de la arquitectura establecido para el crecimiento máximo de un espacio de direcciones de proceso. Para obtener más información, consulte [Investigar los problemas de memoria](https://msdn.microsoft.com/magazine/cc163528.aspx) en MSDN Magazine.
+ Se pueden producir excepciones de memoria agotada si un valor máximo de bytes privados del proceso se aproxima al límite de la arquitectura establecido para el crecimiento máximo de un espacio de direcciones de proceso. Para obtener más información, consulte [Investigar los problemas de memoria](/archive/msdn-magazine/2006/november/clr-inside-out-investigating-memory-issues) en MSDN Magazine.

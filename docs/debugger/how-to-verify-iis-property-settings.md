@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 87fdd6064492c4043723ddff960685a50f8bcb2b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348475"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600264"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procedimiento Comprobar los valores de configuración de la propiedad IIS
 
@@ -59,7 +59,7 @@ Se pueden establecer las propiedades de una aplicación Web utilizando la herram
 
    3. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Métodos de autenticación**.
 
-5. Para una aplicación de servidor ATL, compruebe que el verbo DEBUG está asociado con la extensión ISAPI. Para obtener más información, vea [Cómo: para asociar el verbo DEBUG a la extensión](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Para una aplicación de servidor ATL, compruebe que el verbo DEBUG está asociado con la extensión ISAPI. Para obtener más información, vea [Cómo: para asociar el verbo DEBUG a la extensión](/previous-versions/ms165022(v=vs.100)).
 
 6. Para una aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], asegúrese de que la carpeta virtual de la aplicación tiene un nombre de aplicación configurado en **Administrador de Internet Information Services (IIS)** , **Administrador de servicios Internet** o **Internet Information Services**.
 

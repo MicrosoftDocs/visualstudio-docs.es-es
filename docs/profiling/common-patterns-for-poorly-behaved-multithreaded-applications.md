@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62788932"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038509"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
 
@@ -30,7 +30,7 @@ A veces, una aplicación en paralelo continúa ejecutándose en serie repetidame
 
 Como se muestra en la siguiente ilustración, el visualizador de simultaneidad también puede exponer este síntoma en la vista Uso de CPU, donde, a pesar de la presencia de varios subprocesos, la aplicación consume solo un núcleo lógico.
 
-Para obtener más información, consulte la sección "Start with the problem" (Empezar con el problema) del artículo de MSDN Magazine [Thread Performance - Resource Contention Concurrency Profiling in Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx) (Rendimiento de los subprocesos: generación de perfiles de simultaneidad para la contención de recursos de Visual Studio 2010).
+Para obtener más información, consulte la sección "Start with the problem" (Empezar con el problema) del artículo de MSDN Magazine [Thread Performance - Resource Contention Concurrency Profiling in Visual Studio 2010](/archive/msdn-magazine/2010/june/msdn-magazine-thread-performance-resource-contention-concurrency-profiling-in-visual-studio-2010) (Rendimiento de los subprocesos: generación de perfiles de simultaneidad para la contención de recursos de Visual Studio 2010).
 
 ![Contención de bloqueo](../profiling/media/lockcontention_2.png "LockContention_2")
 

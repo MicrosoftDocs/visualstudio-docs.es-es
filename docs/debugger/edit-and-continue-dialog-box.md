@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737941"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599538"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Cuadro de diálogo Editar y continuar
 (Solo nativo) Este cuadro de diálogo aparece cuando se ha editado código durante la depuración y **Editar y continuar** reconoce que puede aplicar cambios en el código. Para obtener más información, vea [Editar y continuar](../debugger/edit-and-continue.md).
@@ -31,4 +31,4 @@ ms.locfileid: "72737941"
 
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)
-- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](./edit-and-continue.md)

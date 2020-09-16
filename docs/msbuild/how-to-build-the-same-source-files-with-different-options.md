@@ -1,5 +1,6 @@
 ---
-title: Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones | Microsoft Docs
+title: Compilar los mismos archivos de código fuente con diferentes opciones
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c31da244e5c264bb81498c6091aefce7e6318bb2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633946"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037600"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones
 

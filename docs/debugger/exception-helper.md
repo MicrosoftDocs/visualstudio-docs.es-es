@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350503"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600310"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Inspeccionar una excepción mediante la Aplicación auxiliar de excepciones 
 
@@ -50,7 +50,7 @@ A partir de Visual Studio 2017, para el código de .Net y C/C++, cuando se alcan
 Puede configurar el depurador para que se interrumpa cuando se inicie una excepción del tipo actual desde la sección **Configuración de excepciones** de la Aplicación auxiliar de excepciones. Si el depurador está en pausa en una excepción iniciada, puede usar la casilla para deshabilitar la interrupción en ese tipo de excepción cuando se inicie en el futuro. Si no desea realizar la interrupción en esta excepción particular cuando se inicia en este módulo concreto, marque la casilla por el nombre del módulo en **Excepto si se produce en:** en la ventana **Configuración de excepciones**. 
 
 ## <a name="inspect-inner-exceptions"></a>Inspección de excepciones internas 
-Si la excepción tiene excepciones internas ([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception)), puede verlas en la Aplicación auxiliar de excepciones. Si hay varias excepciones presentes, puede desplazarse entre ellas mediante las flechas izquierda y derecha que se muestran encima de la pila de llamadas.
+Si la excepción tiene excepciones internas ([InnerException](/dotnet/api/system.exception.innerexception)), puede verlas en la Aplicación auxiliar de excepciones. Si hay varias excepciones presentes, puede desplazarse entre ellas mediante las flechas izquierda y derecha que se muestran encima de la pila de llamadas.
 
 ![Aplicación auxiliar de excepciones con excepción interna](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ En los casos en los que el estado de una excepción es `thrown`, la Aplicación 
 ![Aplicación auxiliar de excepciones con excepciones reiniciadas](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Uso compartido de una sesión de depuración con Live Share
-En la Aplicación auxiliar de excepciones, puede iniciar una sesión de [Live Share](https://docs.microsoft.com/visualstudio/liveshare/) mediante el vínculo **Iniciar sesión de Live Share...** . Cualquiera que se una a la sesión de Live Share puede ver la Aplicación auxiliar de excepciones junto con cualquier otra información de depuración.
+En la Aplicación auxiliar de excepciones, puede iniciar una sesión de [Live Share](/visualstudio/liveshare/) mediante el vínculo **Iniciar sesión de Live Share...** . Cualquiera que se una a la sesión de Live Share puede ver la Aplicación auxiliar de excepciones junto con cualquier otra información de depuración.

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350568"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600115"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generación de código fuente a partir de ensamblados .NET durante la depuración
 
@@ -27,7 +27,7 @@ Al depurar una aplicación .NET, es posible que desee ver el código fuente que 
 > [!NOTE]
 > * La generación de código fuente (descompilación) solo está disponible para aplicaciones de .NET y se basa en el proyecto de código abierto [ILSpy](https://github.com/icsharpcode/ILSpy).
 > * La descompilación solo está disponible en Visual Studio 2019 16.5 y versiones posteriores.
-> * La aplicación del atributo [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) a un ensamblado o un módulo impide que Visual Studio intente descompilar.
+> * La aplicación del atributo [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) a un ensamblado o un módulo impide que Visual Studio intente descompilar.
 
 ## <a name="generate-source-code"></a>Generación de código fuente
 
@@ -99,7 +99,7 @@ Se puede encontrar más información en el problema de GitHub: [Estado del gener
 
 ### <a name="just-my-code"></a>Solo mi código
 
-La configuración de [Solo mi código](https://docs.microsoft.com/visualstudio/debugger/just-my-code) permite que Visual Studio depure paso a paso por instrucciones el sistema, el marco, la biblioteca y otras llamadas que no son de usuario. Durante una sesión de depuración, la ventana **Módulos** muestra los módulos de código que el depurador trata como mi código (código de usuario).
+La configuración de [Solo mi código](./just-my-code.md) permite que Visual Studio depure paso a paso por instrucciones el sistema, el marco, la biblioteca y otras llamadas que no son de usuario. Durante una sesión de depuración, la ventana **Módulos** muestra los módulos de código que el depurador trata como mi código (código de usuario).
 
 La descompilación de módulos optimizados o de versión genera código que no es de usuario. Si el depurador interrumpe el código descompilado que no es de usuario, por ejemplo, aparecerá la ventana **No hay origen**. Para deshabilitar Solo mi código, vaya a **Herramientas** > **Opciones** (o **Depurar** > **Opciones**) > **Depuración** > **General** y, a continuación, anule la selección de **Habilitar Solo mi código**.
 

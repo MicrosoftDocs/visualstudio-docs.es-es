@@ -9,19 +9,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291065"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037535"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Análisis del rendimiento de bases de datos con la herramienta Base de datos
 
 Use la herramienta Base de datos para registrar las consultas de base de datos que la aplicación realiza durante una sesión de diagnóstico. Luego puede analizar la información sobre consultas individuales para buscar lugares con el fin de mejorar el rendimiento de la aplicación.
 
 > [!NOTE]
-> La herramienta Base de datos requiere la versión 16.3 de Visual Studio 2019 o posterior y un proyecto de .NET Core en Windows que use [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) o [Entity Framework Core](https://docs.microsoft.com/ef/core/).
+> La herramienta Base de datos requiere la versión 16.3 de Visual Studio 2019 o posterior y un proyecto de .NET Core en Windows que use [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) o [Entity Framework Core](/ef/core/).
 
 ## <a name="setup"></a>Programa de instalación
 
@@ -50,7 +50,7 @@ Después de que encuentre una consulta que quiera investigar, haga clic con el b
 
 ![Ir a archivo de origen seleccionado](./media/db-gotosource.png "Ir a archivo de origen seleccionado")
 
-Si selecciona un intervalo de tiempo en un gráfico, la tabla de consulta muestra solo las consultas que se produjeron durante ese intervalo de tiempo. Este comportamiento es especialmente útil cuando también se ejecuta la [herramienta Uso de CPU](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019).
+Si selecciona un intervalo de tiempo en un gráfico, la tabla de consulta muestra solo las consultas que se produjeron durante ese intervalo de tiempo. Este comportamiento es especialmente útil cuando también se ejecuta la [herramienta Uso de CPU](./cpu-usage.md?view=vs-2019).
 
 ## <a name="see-also"></a>Vea también
 

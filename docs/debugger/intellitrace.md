@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536518"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600247"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -68,7 +68,7 @@ Puede guardar datos de IntelliTrace de estos orígenes:
 
 - Sesiones de IntelliTrace en Visual Studio 2015 Enterprise o versiones anteriores, o bien versiones de Visual Studio Ultimate.
 
-- Aplicaciones web ASP.NET hospedadas en IIS, o aplicaciones de SharePoint 2010 y SharePoint 2013 que se ejecutan en la implementación cuando se usa Microsoft Monitoring Agent, solo o con System Center 2012. Consulte [Uso del recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) y [Supervisión con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
+- Aplicaciones web ASP.NET hospedadas en IIS, o aplicaciones de SharePoint 2010 y SharePoint 2013 que se ejecutan en la implementación cuando se usa Microsoft Monitoring Agent, solo o con System Center 2012. Consulte [Uso del recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) y [Supervisión con Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
 A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir de ayuda en la depuración:
 

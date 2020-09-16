@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f77fa9087673ff8e9a429caa27318a60f21d4a60
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285951"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075449"
 ---
 # <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 
@@ -35,6 +35,6 @@ Las herramientas de generación de perfiles se pueden usar sin el depurador en W
 
 ## <a name="see-also"></a>Vea también
 
+- [Análisis del uso de memoria sin el depurador](../profiling/memory-usage-without-debugging2.md)
 - [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)
-- [Análisis del uso de memoria sin el depurador](../profiling/memory-usage-without-debugging2.md)

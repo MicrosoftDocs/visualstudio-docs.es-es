@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901641"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599488"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Tutorial: Depurar un formulario web
 Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], también conocidas como formularios Web Forms. También muestra cómo iniciar y detener la ejecución, establecer puntos de interrupción y examinar variables en la ventana **Inspección**.
@@ -98,7 +98,7 @@ Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los
    textBox1.Text = "Button was clicked!";
    ```
 
-    Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla. Para obtener más información, vea [Puntos de interrupción](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+    Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla. Para obtener más información, vea [Puntos de interrupción](/previous-versions/ktf38f66(v=vs.100)).
 
 2. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 

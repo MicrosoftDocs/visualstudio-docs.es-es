@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431809"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600332"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicaciones multiproceso en Visual Studio
 Un subproceso es una secuencia de instrucciones a la que el sistema operativo concede tiempo de procesador. Cada proceso que se ejecuta en el sistema operativo contiene al menos un subproceso. Los procesos que tienen más de un subproceso se denominan multiproceso.
@@ -102,7 +102,7 @@ Asigne al subproceso uno de los nombres que aparecen en la ventana **Subprocesos
 
 - [Uso de puntos de interrupción](../debugger/using-breakpoints.md)
 - [Subprocesamiento](/dotnet/standard/threading/index)
-- [Multithreading en componentes](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
+- [Multithreading en componentes](/previous-versions/3es4b6yy(v=vs.140))
 - [Compatibilidad del código antiguo con multithreading](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [Depurar procesos y subprocesos](../debugger/debug-threads-and-processes.md)
 - [Depuración remota](../debugger/remote-debugging.md)

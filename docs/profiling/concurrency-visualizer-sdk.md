@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72911192"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037359"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del Visualizador de simultaneidad
-Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](https://blogs.msdn.microsoft.com/visualizeparallel/2011/10/17/introducing-the-concurrency-visualizer-sdk/).
+Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).
 
 ## <a name="properties"></a>Propiedades
  Las marcas, los intervalos y los mensajes tienen dos propiedades: categoría e importancia. En el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), puede utilizar estas propiedades para filtrar el conjunto de marcadores que se muestran. Además, estas propiedades afectan a la representación visual de los marcadores. Por ejemplo, el tamaño de las marcas se utiliza para representar la importancia. Además, el color se utiliza para indicar la categoría.

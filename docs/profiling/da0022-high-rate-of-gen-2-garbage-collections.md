@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c17c27c8827c8612f08298667f09eda89f90f8d9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: eb1834bf395d3a9c5d4f516a9fec1693d40ff378
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544682"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035695"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Alta frecuencia de recolección de elementos no utilizados de gen 2
 
@@ -51,4 +51,4 @@ ms.locfileid: "85544682"
 
  Para entender el patrón de uso de memoria administrada de la aplicación, vuelva a generar perfiles de la aplicación mediante una ejecución de generación de perfiles de asignación de memoria de .NET y seleccione la opción de generación de perfiles de la vigencia del objeto.
 
- Para obtener información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) en el sitio web de MSDN. Para obtener información sobre la sobrecarga de recolección de elementos no utilizados automática, consulte [Montón de objeto grande al descubierto](https://msdn.microsoft.com/magazine/cc534993.aspx).
+ Para obtener información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) en el sitio web de MSDN. Para obtener información sobre la sobrecarga de recolección de elementos no utilizados automática, consulte [Montón de objeto grande al descubierto](/archive/msdn-magazine/2008/june/clr-inside-out-large-object-heap-uncovered).

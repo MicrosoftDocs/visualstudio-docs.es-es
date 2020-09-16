@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880369"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035747"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usar pruebas automatizadas de IU para probar el código
 
@@ -446,7 +446,7 @@ Puede analizar pruebas automatizadas de IU mediante los registros de dichas prue
 
 - [Ejecutar pruebas en el proceso de compilación](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](/previous-versions/ee291332(v=vs.140))
 
 **Agregar compatibilidad con controles personalizados:**  El marco de pruebas automatizadas de IU no admite todas las IU posibles, así que puede que no sea compatible con la interfaz de usuario que quiere probar. Por ejemplo, no puede crear inmediatamente una prueba automatizada de IU de la interfaz de usuario para Microsoft Excel. Pero puede crear una extensión del marco de pruebas automatizadas de IU que admita un control personalizado.
 

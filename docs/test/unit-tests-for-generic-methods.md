@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2158c889aefc85c908aa9ee42d45858fd11d557e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 40255c4ab86d407da4e851bd84cb65e5b4a0f8c9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590818"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035682"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 
@@ -115,7 +115,7 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> Cada vez que se ejecuta la prueba SizeOfLinkedListTest, se llama dos veces a su método TestHelper. La instrucción Assert debe evaluarse como true todas las veces para que la prueba se supere. Si se produce un error en la prueba, es posible que no quede claro si fue la llamada que especificó `<int>` o la llamada que especificó `<char>` la que provocó el error. Para encontrar la respuesta, puede examinar la pila de llamadas o establecer puntos de interrupción en el método de prueba y luego depurar mientras se ejecuta la prueba. Para obtener más información, vea [Cómo: Depurar mientras se ejecuta una prueba en una solución ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Cada vez que se ejecuta la prueba SizeOfLinkedListTest, se llama dos veces a su método TestHelper. La instrucción Assert debe evaluarse como true todas las veces para que la prueba se supere. Si se produce un error en la prueba, es posible que no quede claro si fue la llamada que especificó `<int>` o la llamada que especificó `<char>` la que provocó el error. Para encontrar la respuesta, puede examinar la pila de llamadas o establecer puntos de interrupción en el método de prueba y luego depurar mientras se ejecuta la prueba. Para obtener más información, vea [Cómo: Depurar mientras se ejecuta una prueba en una solución ASP.NET](/previous-versions/ms243172(v=vs.140)).
 
 ### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> Ejemplo 2: Usar una restricción de tipo
 En este ejemplo se muestra una prueba unitaria para un método genérico que usa una restricción de tipo que no se cumple. La primera sección muestra código del proyecto de código en prueba. Se resalta la restricción de tipo.

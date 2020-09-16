@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348943"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600162"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Desencadenamiento de eventos de suspensión, reanudación y en segundo plano al depurar aplicaciones para UWP en Visual Studio
 
@@ -48,7 +48,7 @@ Para más información sobre la administración de la duración de los procesos 
      **Suspender y apagar** cierra la aplicación y finaliza la sesión de depuración.
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Desencadenar tareas en segundo plano
- Aunque no esté en ejecución, cualquier aplicación puede registrar una tarea en segundo plano para responder a determinados eventos del sistema. Las tareas en segundo plano no pueden ejecutar código que actualice directamente la interfaz de usuario. En cambio, muestran información al usuario con las actualizaciones de imágenes y distintivos, y las notificaciones. Para más información, consulte el artículo sobre cómo [admitir la aplicación con tareas en segundo plano](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).
+ Aunque no esté en ejecución, cualquier aplicación puede registrar una tarea en segundo plano para responder a determinados eventos del sistema. Las tareas en segundo plano no pueden ejecutar código que actualice directamente la interfaz de usuario. En cambio, muestran información al usuario con las actualizaciones de imágenes y distintivos, y las notificaciones. Para más información, consulte el artículo sobre cómo [admitir la aplicación con tareas en segundo plano](/previous-versions/windows/apps/hh977046(v=win.10)).
 
  Desde el depurador, puedes desencadenar eventos que inician tareas en segundo plano de tu aplicación.
 
@@ -110,7 +110,7 @@ Para más información sobre la administración de la duración de los procesos 
 4. Elige el registro **Diagnóstico** .
 
 ## <a name="see-also"></a>Vea también
-- [Prueba de aplicaciones para UWP con Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Prueba de aplicaciones para UWP con Visual Studio](../test/unit-test-your-code.md)
 - [Depurar aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Ciclo de vida de la aplicación](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

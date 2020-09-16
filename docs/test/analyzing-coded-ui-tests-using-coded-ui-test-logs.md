@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbb3e6599ef4ae26740eed0eb79047c49356374
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591221"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036150"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
 
@@ -90,4 +90,4 @@ Cuando ejecute una prueba automatizada de IU una vez realizadas las modificacion
 ## <a name="see-also"></a>Vea también
 
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Cómo: Ejecutar pruebas desde Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Cómo: Ejecutar pruebas desde Microsoft Visual Studio](/previous-versions/ms182470(v=vs.140))

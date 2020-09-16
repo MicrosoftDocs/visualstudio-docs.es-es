@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773973"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037522"
 ---
 # <a name="marks-view"></a>Vista Marcas
 En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la aplicación.
@@ -43,4 +43,4 @@ En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la
 ## <a name="see-also"></a>Vea también
 - [Información general sobre el informe de rendimiento](../profiling/performance-report-overview.md)
 - [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;NIB&#93; Control de recolección de datos (ventana)](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [&#91;NIB&#93; Control de recolección de datos (ventana)](/previous-versions/bb385767(v=vs.110))

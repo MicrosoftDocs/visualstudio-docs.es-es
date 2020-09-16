@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d68e26e8503fb450d6b163ecec31c0cb6485f6c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585566"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038626"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar el marco de trabajo MSTest en pruebas unitarias
 
@@ -43,7 +43,7 @@ Utilice los siguientes elementos para configurar pruebas unitarias controladas p
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos utilizados para establecer un orden de llamada
 
-Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, vea [Estructura de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, vea [Estructura de una prueba unitaria](/previous-versions/ms182517(v=vs.110)).
 
 ### <a name="attributes-for-assemblies"></a>Atributos para ensamblados
 
@@ -69,7 +69,7 @@ Se llaman a ClassInitialize y ClassCleanup inmediatamente después de que se car
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos utilizados para identificar clases y métodos de prueba
 
-Cada clase de prueba debe tener el atributo `TestClass` y todos los métodos de prueba deben tener el atributo `TestMethod`. Para obtener más información, vea [Estructura de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Cada clase de prueba debe tener el atributo `TestClass` y todos los métodos de prueba deben tener el atributo `TestMethod`. Para obtener más información, vea [Estructura de una prueba unitaria](/previous-versions/ms182517(v=vs.110)).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

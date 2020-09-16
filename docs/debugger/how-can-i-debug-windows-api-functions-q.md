@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350399"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599884"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Cómo depurar funciones de la API de Windows
 Si desea depurar una función de la API de Windows que tiene símbolos de NT cargados, deberá hacer lo siguiente.
@@ -40,7 +40,7 @@ Si desea depurar una función de la API de Windows que tiene símbolos de NT car
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     Para obtener el nombre representativo, vea [Ver nombres representativos](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+     Para obtener el nombre representativo, vea [Ver nombres representativos](/previous-versions/5x49w699(v=vs.140)).
 
      Puede probar el nombre representativo y verlo en el código del desensamblado. Mientras esté en pausa en la función en el depurador de Visual Studio, haga clic con el botón derecho en dicha función en el editor de código o en la ventana de la pila de llamadas y elija **Ir al desensamblado**.
 

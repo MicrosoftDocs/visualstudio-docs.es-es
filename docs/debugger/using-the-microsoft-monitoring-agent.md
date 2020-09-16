@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a06222c86ece31b18749394cf4590eedc4822f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536414"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600010"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Uso de Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -74,7 +74,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
 
      **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3. [Para obtener el contenido de Ayuda más reciente, visite TechNet](https://technet.microsoft.com/systemcenter/default) .
+3. [Para obtener el contenido de Ayuda más reciente, visite TechNet](/previous-versions/system-center/developer/cc817313(v=msdn.10)) .
 
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> P: ¿Cómo configuro permisos para el grupo de aplicaciones?
  **R:** Use el comando **icacls** de Windows o el Explorador de Windows (o Explorador de archivos). Por ejemplo:
@@ -108,7 +108,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   7. Asegúrese de que el grupo de aplicaciones tenga permisos de **lectura y ejecución**.
 
 ## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> Paso 2: Inicio de la supervisión de la aplicación
- Use el comando [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) de Windows PowerShell para iniciar la supervisión de la aplicación. Si usa System Center 2012, vea la página [Supervisión con el Agente de Microsoft Monitoring](https://technet.microsoft.com/library/dn465157.aspx).
+ Use el comando [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) de Windows PowerShell para iniciar la supervisión de la aplicación. Si usa System Center 2012, vea la página [Supervisión con el Agente de Microsoft Monitoring](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12)).
 
 1. En el servidor web, abra una ventana de símbolo del sistema de **Windows PowerShell** o **Windows PowerShell ISE** como administrador.
 
@@ -134,7 +134,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
 
     |NOMBRE|Descripción|
     |-|-|
-    |*"\<appName>"*|Especifique la ruta de acceso al sitio web y el nombre de la aplicación en IIS. Puede incluir también la ruta de acceso de IIS, si lo prefiere.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> o bien<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Puede encontrarla en el Administrador de IIS. Por ejemplo:<br /><br /> ![Ruta de acceso al sitio web y la aplicación web de IIS](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> También puede usar los comandos [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) y [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|
+    |*"\<appName>"*|Especifique la ruta de acceso al sitio web y el nombre de la aplicación en IIS. Puede incluir también la ruta de acceso de IIS, si lo prefiere.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> o bien<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Puede encontrarla en el Administrador de IIS. Por ejemplo:<br /><br /> ![Ruta de acceso al sitio web y la aplicación web de IIS](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> También puede usar los comandos [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) y [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) .|
     |*\<monitoringMode>*|Especifique el modo de supervisión:<br /><br /> <ul><li>**Supervisión**: registra detalles mínimos sobre eventos de excepción y de rendimiento. Este modo usa el plan de recolección predeterminado.</li><li>**Seguimiento**: registra detalles en el nivel de función o supervisa aplicaciones de SharePoint 2010 y SharePoint 2013 mediante el plan de recolección especificado. Este modo puede ralentizar la ejecución de la aplicación.<br /><br /> <ul><li>[P: ¿Cómo configuro permisos para el grupo de aplicaciones?](#FullPermissionsITLog)</li><li>[P: ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)</li></ul><br />     En este ejemplo se registran eventos para una aplicación de SharePoint hospedada en un sitio de SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Personalizada**: registra detalles personalizados mediante el plan de recolección personalizado especificado. Si edita el plan de recolección una vez iniciada la supervisión, tendrá que reiniciar esta.</li></ul>|
     |*"\<outputPath>"*|Especifique la ruta de acceso completa al directorio para almacenar los registros de IntelliTrace. Asegúrese de crear este directorio antes de iniciar la supervisión.|
     |*\<UInt32>*|Especifique el tamaño máximo del registro de IntelliTrace. El tamaño máximo predeterminado de registro de IntelliTrace es 250 MB.<br /><br /> Cuando el registro alcanza este límite, el agente sobrescribe las entradas más antiguas para conseguir espacio para más entradas. Para cambiar este límite, use la opción **-MaximumFileSizeInMegabytes** o modifique el atributo `MaximumLogFileSize` del plan de recolección.|
@@ -229,7 +229,7 @@ El tipo `Employee` tiene los atributos siguientes: `Id`, `Name`y `HomeAddress`. 
 El agente registra los valores de `id`, `Employee.Id`, `Employee.Name` y el objeto `Employee` devuelto del método `AlterEmployee` . Sin embargo, el agente únicamente registra información sobre si es null o no el objeto `Address` . El agente tampoco registra datos sobre variables locales del método `AlterEmployee` a menos que otros métodos utilicen esas variables locales como parámetros en el punto en el que se registran como parámetros de método.
 
 ## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a> Paso 3: Guardar los eventos registrados
- Si encuentra un error o un problema de rendimiento, guarde los eventos registrados en un registro de IntelliTrace. El agente crea el registro solo si se registró algún evento. Si usa System Center 2012, vea la página [Supervisión con el Agente de Microsoft Monitoring](https://technet.microsoft.com/library/dn465157.aspx).
+ Si encuentra un error o un problema de rendimiento, guarde los eventos registrados en un registro de IntelliTrace. El agente crea el registro solo si se registró algún evento. Si usa System Center 2012, vea la página [Supervisión con el Agente de Microsoft Monitoring](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12)).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Guardar los eventos registrados pero seguir supervisando
  Siga estos pasos si desea crear el registro de IntelliTrace pero no desea reiniciar la aplicación o detener la supervisión. El agente continúa supervisando aunque el servidor o la aplicación se reinicie.

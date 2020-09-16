@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 875af363cbd85f8667d56a33cf7646ac2a9da429
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869599"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037021"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -43,7 +43,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/UseVsixExtensions**|Esta opción hace que el proceso *vstest.console.exe* use u omita las extensiones VSIX instaladas (si procede) en la serie de pruebas.<br />Esta opción está en desuso. A partir de la siguiente versión principal de Visual Studio, esta opción puede desaparecer. Use extensiones disponibles como paquete NuGet.<br />Ejemplo: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*ruta*]**|Obliga al proceso *vstest.console.exe* a usar adaptadores de prueba personalizados de una ruta de acceso especificada (si los hubiera) en la serie de pruebas.<br />Ejemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo de plataforma*]**|Arquitectura de la plataforma de destino que se usará para la ejecución de pruebas.<br />Los valores válidos son x86, x64 y ARM.|
-|**/Framework: [*versión de Framework*]**|Establezca como destino la versión de .NET que se va a usar para la ejecución de pruebas.<br />Algunos valores de ejemplo son `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` o `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute se usa para detectar automáticamente esta opción desde el ensamblado y se establece de forma predeterminada en `Framework40` cuando el atributo no está presente. Debe especificar esta opción explícitamente si quita [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) de los ensamblados de .NET Core.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
+|**/Framework: [*versión de Framework*]**|Establezca como destino la versión de .NET que se va a usar para la ejecución de pruebas.<br />Algunos valores de ejemplo son `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` o `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute se usa para detectar automáticamente esta opción desde el ensamblado y se establece de forma predeterminada en `Framework40` cuando el atributo no está presente. Debe especificar esta opción explícitamente si quita [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) de los ensamblados de .NET Core.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expresión*]**|Ejecuta pruebas que coinciden con la expresión dada.<br /><Expression\> tiene el formato <property\>=<value\>[\|<Expression\>].<br />Ejemplo: `/TestCaseFilter:"Priority=1"`<br />Ejemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />La opción de línea de comandos **/TestCaseFilter** no se puede usar con la opción de línea de comandos **/Tests**. <br />Para obtener información sobre cómo crear y usar expresiones, vea [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) (Filtro TestCase).|
 |**/?**|Muestra información de uso.|
 |**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas. Especifique el parámetro varias veces para habilitar varios registradores.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas de Visual Studio (TRX), utilice<br />**/Logger:trx**<br />**[;LogFileName=\<Defaults to unique file name>]**|

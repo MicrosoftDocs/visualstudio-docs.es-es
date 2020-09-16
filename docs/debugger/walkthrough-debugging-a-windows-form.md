@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728328"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599478"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar un formulario Windows Form
 Un Windows Form es una de las aplicaciones administradas más comunes. Con un Windows Form se crean aplicaciones estándar de Windows. Puede completar este tutorial utilizando Visual Basic, C# o C++.
@@ -109,7 +109,7 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
     textBox1->Text = "Button was clicked!";
     ```
 
-     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Para obtener más información, vea [Puntos de interrupción](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla.
+     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Para obtener más información, vea [Puntos de interrupción](/previous-versions/ktf38f66(v=vs.100)). Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla.
 
     > [!NOTE]
     > También puede hacer clic con el botón derecho en cualquier línea de código, seleccionar **Punto de interrupción** y, a continuación, hacer clic en **Insertar punto de interrupción** para agregar un punto de interrupción en esa línea.

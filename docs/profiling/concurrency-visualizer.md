@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77192408"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037346"
 ---
 # <a name="concurrency-visualizer"></a>Visualizador de simultaneidad
 
@@ -49,7 +49,7 @@ El Visualizador de simultaneidad se basa en la funcionalidad [Seguimiento de eve
 |[Vista Subprocesos](../profiling/threads-view-parallel-performance.md)|Describe cómo analizar las interacciones entre los subprocesos del programa.|
 |[Vista Núcleos](../profiling/cores-view.md)|Describe cómo analizar la migración de subprocesos por los núcleos.|
 |[Modelos comunes para aplicaciones multiproceso con comportamiento deficiente](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Describe varios patrones comunes y muestra cómo aparecen en el Visualizador de simultaneidad.|
-|[Blog Parallel Development in Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Proporciona sugerencias y prácticas recomendadas para el Visualizador de simultaneidad.|
+|[Blog Parallel Development in Visual Studio](/archive/blogs/visualizeparallel/)|Proporciona sugerencias y prácticas recomendadas para el Visualizador de simultaneidad.|
 |[Vistas de informes de rendimiento](../profiling/performance-report-views.md)|Proporciona información de referencia para los informes y vistas de las Herramientas de generación de perfiles de Visual Studio.|
 |[SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)|Describe cómo instrumentar el código fuente para mostrar información adicional en el Visualizador de simultaneidad.|
 |[Utilidad de la línea de comandos del visualizador de simultaneidad (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Describe cómo utilizar el servicio de línea de comandos del Visualizador de simultaneidad (CVCollectionCmd.exe) para recopilar y procesar los seguimientos en los equipos que no tengan Visual Studio.|

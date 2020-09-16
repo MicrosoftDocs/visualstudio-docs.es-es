@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286366"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641671"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
@@ -140,7 +140,7 @@ Puede usar Azure Pipelines para habilitar la implementación continua de la apli
 | --- | --- | --- |
 | **Aplicación de Office** | Puede publicar un complemento de Office desde Visual Studio. | [Implementar y publicar un complemento de Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Servicio OData o WCF** | Otras aplicaciones pueden usar los servicios RIA de WCF que se implementen en un servidor web. | [Desarrollo e implementación de WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch ya no se admite a partir de Visual Studio 2017, pero todavía se puede implementar desde Visual Studio 2015 y versiones anteriores. | [Implementar aplicaciones LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | LightSwitch ya no se admite a partir de Visual Studio 2017, pero todavía se puede implementar desde Visual Studio 2015 y versiones anteriores. | [Implementar aplicaciones LightSwitch](/previous-versions/ff872288(v=vs.140)) |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

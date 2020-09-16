@@ -8,12 +8,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5897f4cbf06ad7c9dc7541a032f5b86e45d4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778432"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038613"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 
@@ -42,9 +42,9 @@ Para más información sobre cómo generar perfiles de aplicaciones para UWP, co
 - [Ejecución de aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Primer vistazo a la generación de perfiles](profiling-feature-tour.md)
 - [Memoria de JavaScript](../profiling/javascript-memory.md)
-- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un equipo local](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un dispositivo remoto](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un equipo local](/previous-versions/hh696631(v=vs.140))
+- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un dispositivo remoto](/previous-versions/hh972878(v=vs.140))
+- [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP](/previous-versions/hh780914(v=vs.140))
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Recopilar datos de aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio
 

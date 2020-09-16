@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180438"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743029"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir un proyecto desde un repositorio
 
@@ -180,8 +180,8 @@ Si está listo para codificar con Visual Studio, explore en profundidad cualquie
 - [Tutoriales de Visual Studio | **C#** ](./csharp/index.yml)
 - [Tutoriales de Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Tutoriales de Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
-- [Tutoriales de Visual Studio | **Python**](/visualstudio/python/)
-- [Tutoriales de Visual Studio | **JavaScript**, **TypeScript** y **Node.js**](/visualstudio/javascript/)
+- [Tutoriales de Visual Studio | **Python**](../python/index.yml)
+- [Tutoriales de Visual Studio | **JavaScript**, **TypeScript** y **Node.js**](../javascript/index.yml)
 
 ## <a name="see-also"></a>Vea también
 

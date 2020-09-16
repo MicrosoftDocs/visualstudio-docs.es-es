@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e6f690b77b7e573fdf1c54fdaeca6237c6bbc146
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291066"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037548"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>Análisis del rendimiento del código asincrónico de .NET
 
@@ -41,7 +41,7 @@ Use la herramienta .NET Async para analizar el rendimiento del código asincrón
 
 Los eventos asincrónicos se organizan en actividades de manera cronológica. Se muestra cada hora de inicio, hora de finalización y duración.
 
-Cada fila que corresponde a una [tarea](https://docs.microsoft.com/dotnet/api/system.threading.tasks) se etiqueta en la columna **Nombre**. En el caso de cualquier nombre de tarea que no se pueda resolver, aparecerá una etiqueta **Tarea en**. Después aparece el nombre del método donde ocurrió la tarea. Si no se completa una actividad asincrónica dentro de la sesión de recopilación, aparece una etiqueta **Incompleta** en la columna **Hora de finalización**.
+Cada fila que corresponde a una [tarea](/dotnet/api/system.threading.tasks) se etiqueta en la columna **Nombre**. En el caso de cualquier nombre de tarea que no se pueda resolver, aparecerá una etiqueta **Tarea en**. Después aparece el nombre del método donde ocurrió la tarea. Si no se completa una actividad asincrónica dentro de la sesión de recopilación, aparece una etiqueta **Incompleta** en la columna **Hora de finalización**.
 
 Para investigar más una tarea o actividad específica, haga clic con el botón derecho en la fila. Luego, seleccione **Ir al archivo de origen** para ver en qué parte del código ocurrió esa actividad.
 

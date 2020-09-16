@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527925"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600079"
 ---
 # <a name="debugger-security"></a>Seguridad del depurador
 La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra forma, no tendría, especialmente al depurar de forma remota. Un depurador malintencionado podría infligir daños generalizados en el equipo depurado.
@@ -57,7 +57,7 @@ La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra 
  Para obtener información sobre la configuración de msvsmon, vea [Configurar el depurador remoto](../debugger/remote-debugging.md#bkmk_setup).
 
 ### <a name="web-services-debugging-security"></a>Seguridad de la depuración de servicios Web
- La depuración local es más segura, pero como probablemente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no esté instalado en el servidor Web, quizás no pueda realizarla. Normalmente, los servicios Web se depuran de forma remota, excepto durante el desarrollo. Por tanto, las recomendaciones de seguridad para la depuración remota también se aplican a la depuración de servicios Web. A continuación se indican algunos procedimientos adicionales recomendados para la seguridad. Para obtener más información, consulta [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
+ La depuración local es más segura, pero como probablemente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no esté instalado en el servidor Web, quizás no pueda realizarla. Normalmente, los servicios Web se depuran de forma remota, excepto durante el desarrollo. Por tanto, las recomendaciones de seguridad para la depuración remota también se aplican a la depuración de servicios Web. A continuación se indican algunos procedimientos adicionales recomendados para la seguridad. Para obtener más información, consulta [Debugging XML Web Services](/previous-versions/ms241873(v=vs.100)).
 
 - No habilite la depuración en un servidor Web que esté en peligro.
 

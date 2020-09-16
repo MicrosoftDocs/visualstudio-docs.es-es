@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d708b4f74777fb40eccc2fef9b782689f830e092
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ba7b133594d016d1a80efae4d18d1fb55a96398d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737973"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599545"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Cuadro de diálogo Editar y continuar (C++)
 Editar y continuar no pudo aplicar los cambios realizados en el código nativo. Puede tratarse de una condición temporal. A veces, Editar y continuar no puede aplicar cambios en el código nativo inmediatamente, pero puede aplicarlos más tarde durante la sesión de depuración (por ejemplo, después de finalizar la llamada actual al procedimiento que se está ejecutando). Para obtener más información, vea [Editar y continuar](../debugger/edit-and-continue.md).
@@ -32,4 +32,4 @@ Editar y continuar no pudo aplicar los cambios realizados en el código nativo. 
  Puede editar el código para corregir el error durante la depuración, detener la depuración y corregir el código, o ignorar el error y continuar con la depuración. Si sigue sin realizar la corrección, los cambios de código no se aplicarán inmediatamente.
 
 ## <a name="see-also"></a>Vea también
-- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](./edit-and-continue.md)
