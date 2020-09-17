@@ -10,18 +10,18 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/10/2019
-  ms.openlocfilehash: 45f9459ff4778b58ae3d553a03b2e5c1773614b6
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: c515710fcaf45b726a80c9986d8785f8458ca59a
+  ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "74316414"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "90713534"
 landingContent:
 - title: Más información sobre XAML
   linkLists:
   - linkListType: overview
     links:
-    - text: Introducción a XAML
+    - text: Información general sobre XAML
       url: xaml-overview.md
 - title: Diseñador XAML
   linkLists:
@@ -50,7 +50,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: Información general sobre WPF
-      url: ../designers/introduction-to-wpf.md
+      url: /dotnet/desktop/wpf/introduction-to-wpf
   - linkListType: get-started
     links:
     - text: Introducción a WPF en Visual Studio
