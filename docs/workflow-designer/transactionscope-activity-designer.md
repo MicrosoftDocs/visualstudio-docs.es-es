@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114820"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713482"
 ---
 # <a name="transactionscope-activity-designer"></a>Diseñador de actividades TransactionScope
 
@@ -39,9 +39,9 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|Verdadero|Especifica la actividad que se va a ejecutar en una transacción única. Para agregar la <xref:System.Activities.Statements.TransactionScope.Body%2A> actividad, coloque una actividad del cuadro de **herramientas** en el cuadro **Body** del diseñador de actividades **TransactionScope** con el texto de la sugerencia "Coloque la actividad aquí".|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Verdadero|Especifica la enumeración <xref:System.Transactions.IsolationLevel> de este objeto <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Falso|Especifica el intervalo de tiempo (con formato 00:00:00, que indica horas:minutos:segundos) del que dispone la transacción para completarse. El valor predeterminado es 1 minuto (00:01:00).|
-|[System. Activities. Statements. TransactionScope. AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Verdadero|Especifica el valor que indica si se debe anular el flujo de trabajo si se anula la transacción.|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Verdadero|Especifica el valor que indica si se debe anular el flujo de trabajo si se anula la transacción.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Transacción](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
