@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762c2acb6774d7eb4949087fdd91e85c86acd6bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595428"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810046"
 ---
 # <a name="properties-of-diagrams"></a>Propiedades de los diagramas
 Puede establecer las propiedades que especifican cómo aparecerán los diagramas en el diseñador generado. Por ejemplo, puede especificar un color predeterminado para el texto del diagrama.
@@ -25,7 +25,7 @@ Puede establecer las propiedades que especifican cómo aparecerán los diagramas
 
  En la tabla siguiente se enumeran las propiedades de los diagramas.
 
-|Propiedad|Descripción|Valor predeterminado|
+|Propiedad.|Descripción|Default|
 |-|-|-|
 |Color de relleno|Color de relleno para el diagrama.|Blanco|
 |Color del texto|Color del texto que se muestra en el diagrama.|Negro|
@@ -35,7 +35,7 @@ Puede establecer las propiedades que especifican cómo aparecerán los diagramas
 |Tiene un constructor personalizado|Si `True` es, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir del diagrama ( `none` , `abstract` o `sealed` ).|Ninguno|
 |Diagrama base|La clase base de este diagrama.|(ninguno)|
-|Nombre|Nombre de este diagrama.|Nombre actual|
+|NOMBRE|Nombre de este diagrama.|Nombre actual|
 |Espacio de nombres|El espacio de nombres que está afiliado a este diagrama.|Espacio de nombres actual|
 |Clase representada|La clase de dominio raíz que este diagrama representa.|Clase raíz actual si es aplicable|
 |Notas|Notas informales asociadas a este elemento.|\<none>|
@@ -45,6 +45,6 @@ Puede establecer las propiedades que especifican cómo aparecerán los diagramas
 |Display Name (Nombre para mostrar)|El nombre que se mostrará en el diseñador generado para este diagrama.|\<none>|
 |Help Keyword|Palabra clave que se usa para indizar la ayuda de F1 para este diagrama.|\<none>|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Glosario de herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glosario de herramientas de lenguajes específicos de dominio](/previous-versions/bb126564(v=vs.100))

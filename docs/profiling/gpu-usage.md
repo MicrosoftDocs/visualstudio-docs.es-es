@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279890"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074974"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 
-Emplee la herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visual Studio para comprender mejor el uso de hardware de alto nivel de la aplicación Direct3D. Ayuda a ver si el rendimiento de la aplicación está enlazado a la CPU o a la GPU y a obtener más información sobre cómo usar el hardware de la plataforma con mayor eficacia. Uso de GPU admite aplicaciones que usan Direct3D 12, Direct3D 11 y Direct3D 10. No admite otras API de gráficos, como Direct2D u OpenGL.
+Utilice la herramienta Use de GPU del Generador de perfiles de rendimiento para comprender mejor el uso de hardware de alto nivel de la aplicación Direct3D. Ayuda a ver si el rendimiento de la aplicación está enlazado a la CPU o a la GPU y a obtener más información sobre cómo usar el hardware de la plataforma con mayor eficacia. Uso de GPU admite aplicaciones que usan Direct3D 12, Direct3D 11 y Direct3D 10. No admite otras API de gráficos, como Direct2D u OpenGL.
 
 La ventana de **informe de Uso de GPU** tiene el siguiente aspecto:
 
@@ -43,7 +43,7 @@ Para iniciar la herramienta Uso de GPU:
 
 2. En el concentrador de **rendimiento y diagnóstico**, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de manera simultánea para obtener una imagen más completa del rendimiento de la aplicación.
 
-    ![Captura de pantalla del concentrador de rendimiento y diagnóstico, con Uso de GPU seleccionado](media/gpuusageselected.png "Uso de GPU seleccionado")
+    ![Captura de pantalla del Generador de perfiles de rendimiento, con la opción Uso de GPU seleccionada](media/gpuusageselected.png "Uso de GPU seleccionado")
 
    > [!NOTE]
    > No todas las herramientas de rendimiento y diagnóstico pueden usarse al mismo tiempo.

@@ -11,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115370"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807851"
 ---
 # <a name="properties-of-swimlanes"></a>Propiedades de las calles
 Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas verticales u horizontales. Puede definir otras formas para que se muestren en calles. Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Las calles tienen las propiedades que se enumeran en la tabla siguiente.
 
-|Propiedad|Descripción|Valor predeterminado|
+|Propiedad.|Descripción|Default|
 |-|-|-|
 |Color de relleno del cuerpo|Color de relleno para el cuerpo de la calle.|Blanco|
 |Color de relleno del encabezado|Color de relleno para el encabezado de la calle.|Gris oscuro|
@@ -35,9 +35,9 @@ Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas ver
 |Atributos personalizados|Se usa para agregar atributos a la clase de código que se genera a partir de esta calle.|\<none>|
 |Genera Double derived|Si `True` es, se generarán una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Tiene un constructor personalizado|Si `True` es, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
-|Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la calle ( `none` , `abstract` o `sealed` ).|None|
+|Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la calle ( `none` , `abstract` o `sealed` ).|ninguno|
 |Calle base|La clase base de esta calle.|(ninguno)|
-|Nombre|El nombre de esta calle.|Nombre actual|
+|NOMBRE|El nombre de esta calle.|Nombre actual|
 |Espacio de nombres|El espacio de nombres que está afiliado a esta calle.|Espacio de nombres actual|
 |Tipo de información sobre herramientas|Cómo se define la información sobre herramientas ( `fixed` , `variable` o `none` ). Si `fixed` es, se usa el valor de la `Fixed Tooltip Text` propiedad; si es `variable` , la información sobre herramientas se define en código personalizado.|\<none>|
 |Notas|Notas informales asociadas a esta calle.|\<none>|
@@ -52,4 +52,4 @@ Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas ver
 
 ## <a name="see-also"></a>Consulte también
 
-- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

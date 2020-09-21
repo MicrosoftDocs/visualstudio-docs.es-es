@@ -1,5 +1,6 @@
 ---
-title: Problemas de seguridad, control de versiones y manifiestos en la implementación de ClickOnce
+title: Problemas de seguridad, control de versiones y manifiesto (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 881a0f9d5062e335fb7e03653bde11e032f89aca
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745606"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811252"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce
 

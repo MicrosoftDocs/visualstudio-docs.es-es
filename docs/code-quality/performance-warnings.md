@@ -1,29 +1,29 @@
 ---
-title: advertencias de rendimiento
+title: Reglas de rendimiento
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
-- warnings, performance
-- performance warnings
-- performance, warnings
-- managed code analysis warnings, performance warnings
+- rules, performance
+- performance rules
+- performance, rules
+- managed code analysis rules, performance rules
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e798b3a47d6a9d606e3c25768895096f752f53
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7ee44b74ca47de8059b68d95ea5e06c801842bc7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508995"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808576"
 ---
-# <a name="performance-warnings"></a>advertencias de rendimiento
-Las advertencias de rendimiento admiten aplicaciones y bibliotecas de alto rendimiento.
+# <a name="performance-rules"></a>Reglas de rendimiento
+Las reglas de rendimiento admiten aplicaciones y bibliotecas de alto rendimiento.
 
 ## <a name="in-this-section"></a>En esta sección
 

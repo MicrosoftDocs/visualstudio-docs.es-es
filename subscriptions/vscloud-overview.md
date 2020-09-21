@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
-ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248348"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641567"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
@@ -26,7 +26,7 @@ Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/
 Para facturar las compras que realice, necesita una [suscripción de Azure](https://azure.microsoft.com/pricing/purchase-options/). Puede [registrarse](https://portal.azure.com) antes de la primera compra o durante la primera compra en Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>¿Quién puede comprar suscripciones a la nube de Visual Studio?
-Cualquier persona con acceso de [propietario](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrador de servicio o coadministrador](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator) a la suscripción de Azure puede comprar suscripciones a la nube.
+Deberá ser colaborador o tener un rol superior en una suscripción de Azure que se creó para la suscripción de EA a fin de comprar suscripciones de nube.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Cómo adquirir suscripciones de nube
 
@@ -73,7 +73,7 @@ Para cancelar suscripciones, solo tiene que establecer el número de suscripcion
 1. Establezca la cantidad en cero (0). Las suscripciones seguirán existiendo hasta la fecha de facturación prevista, pero cuando se alcance esa fecha, no se renovarán.   
 
 > [!div class="mx-imgBorder"]
-> ![Cambiar suscripciones](_img/buy-vs-subscriptions/manage-subscriptions.png "Seleccione "Cambiar cantidad" para cancelar suscripciones.")
+> ![Cambiar suscripciones](_img/buy-vs-subscriptions/manage-subscriptions.png "Seleccione Cambiar cantidad para cancelar suscripciones.")
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

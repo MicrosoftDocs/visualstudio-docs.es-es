@@ -1,28 +1,28 @@
 ---
-title: Advertencias de documentación
+title: Reglas de documentación
 ms.date: 09/16/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.documentationrules
 helpviewer_keywords:
-- documentation warnings
-- managed code analysis warnings, documentation warnings
-- warnings, documentation
+- documentation rules
+- managed code analysis rules, documentation rules
+- rules, documentation
 author: mavasani
 ms.author: mavasani
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4946c69bbbe4bf1c240967ebd93ef58cfa79e333
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4ec6a0dd154dae89145add26c60a8b1322a444
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72807099"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808657"
 ---
-# <a name="documentation-warnings"></a>Advertencias de documentación
+# <a name="documentation-rules"></a>Reglas de documentación
 
-Las advertencias de documentación permiten escribir bibliotecas bien documentadas mediante el uso correcto de [comentarios de documentación XML](/dotnet/csharp/codedoc) para API visibles externamente.
+Las reglas de documentación permiten escribir bibliotecas bien documentadas mediante el uso correcto de [comentarios de documentación XML](/dotnet/csharp/codedoc) para API visibles externamente.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -32,4 +32,4 @@ Las advertencias de documentación permiten escribir bibliotecas bien documentad
 
 ## <a name="see-also"></a>Consulte también
 
-- [Advertencias de análisis de código](../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Reglas de análisis de código](../code-quality/code-analysis-for-managed-code-warnings.md)

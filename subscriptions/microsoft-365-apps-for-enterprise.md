@@ -1,5 +1,5 @@
 ---
-title: Ventaja Aplicaciones de Microsoft 365 para empresas en suscripciones de Visual Studio | Microsoft Docs
+title: Aplicaciones de Microsoft 365 para empresas en Suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Más información e instalación de Aplicaciones de Microsoft 365 para empresas
-ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800819"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561257"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Aplicaciones de Microsoft 365 para empresas en suscripciones de Visual Studio
 Aplicaciones de Microsoft 365 para empresas (anteriormente, Office 365 Pro Plus) está disponible en suscripciones concretas de Visual Studio. 
@@ -28,7 +28,7 @@ El proceso de activación de la suscripción de Aplicaciones de Microsoft 365 p
 1. Inicie sesión en la suscripción de Visual Studio en [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 1. Busque el icono de Aplicaciones de Microsoft 365 para empresas y seleccione **Activar**.
    > [!div class="mx-imgBorder"]
-   > ![Icono de Aplicaciones de Microsoft 365 para empresas](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Seleccione "Activar" para empezar con la suscripción.")
+   > ![Icono de Aplicaciones de Microsoft 365 para empresas](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Seleccione Activar para empezar con la suscripción.")
 
 1. En el cuadro de diálogo "Bienvenido, háblanos de ti", proporcione la información de contacto personal solicitada y seleccione **Siguiente**.
    > [!div class="mx-imgBorder"]
@@ -48,7 +48,7 @@ El proceso de activación de la suscripción de Aplicaciones de Microsoft 365 p
 
 1. Iniciará sesión automáticamente en el portal de Office y ya estará listo para instalar las aplicaciones.  Seleccione el botón **Instalar** para empezar.
    > [!div class="mx-imgBorder"]
-   > ![Instalación de Aplicaciones de Microsoft 365 para empresas](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Seleccione el botón "Instalar" para instalar las aplicaciones.")
+   > ![Instalación de Aplicaciones de Microsoft 365 para empresas](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Seleccione el botón Instalar para instalar las aplicaciones.")
 1. Siga las indicaciones para instalar las aplicaciones seleccionadas.  
 
 ## <a name="eligibility"></a>Elegibilidad

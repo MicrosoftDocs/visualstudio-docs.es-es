@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561330"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641436"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.
@@ -31,7 +31,7 @@ R: No, en absoluto. Si solamente quiere adquirir suscripciones de nube de Visual
 
 ## <a name="enterprise-agreement-ea-customers"></a>Clientes de Contrato Enterprise
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: ¿Puedo usar un Contrato Enterprise para adquirir suscripciones de nube de Visual Studio?
-R: Sí, puede hacerlo. Debe ser propietario o colaborador de una suscripción de Azure que se haya creado para su Contrato Enterprise. Asegúrese de realizar cualquier compra relacionada con las suscripciones de nube de Visual Studio directamente en Visual Studio Marketplace. No se pueden adquirir suscripciones de nube de Visual Studio con un pedido de compra.
+R: Sí, puede hacerlo. Deberá ser colaborador o tener un rol superior en una suscripción de Azure que se creó para EA. Asegúrese de realizar cualquier compra relacionada con las suscripciones de nube de Visual Studio directamente en Visual Studio Marketplace. No se pueden adquirir suscripciones de nube de Visual Studio con un pedido de compra.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>P: ¿Cómo puedo saber si poseo los privilegios necesarios para adquirir servicios en Visual Studio Marketplace por medio del Contrato Enterprise de mi empresa?
 R: La forma más sencilla de saber si tiene los privilegios adecuados consiste en hacer clic en el botón de **compra** de un servicio que se ofrezca en Visual Studio Marketplace.

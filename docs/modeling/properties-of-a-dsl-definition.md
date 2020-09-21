@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee23e15e6cc389ea5a8bdcdd793648365d08c30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 650e4db75b3896a04b2dd4ef9056191d4a83d46a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532307"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810098"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propiedades de las definiciones DSL
 Las propiedades de DslDefinition definen propiedades *de definición de lenguajes específicos del dominio* , como la numeración de versiones. Las propiedades DslDefinition aparecen en la ventana **propiedades** cuando se hace clic en un área abierta del diagrama en el *Diseñador de lenguaje específico de dominio*.
@@ -23,12 +23,12 @@ Las propiedades de DslDefinition definen propiedades *de definición de lenguaje
 
  DslDefinition tiene las propiedades de la tabla siguiente:
 
-|Propiedad|Descripción|Valor predeterminado|
+|Propiedad.|Descripción|Default|
 |-|-|-|
-|Modificador de acceso|Determina si el modificador de acceso de la clase de dominio es público o interno.|public|
+|Modificador de acceso|Determina si el modificador de acceso de la clase de dominio es público o interno.|público|
 |Atributos personalizados|Atributos personalizados definidos para la clase de dominio.<br /><br /> **Nota:** Use el botón Examinar para agregar un atributo.|\<none>|
 |Nombre de la empresa|Nombre del nombre de la compañía actual en el registro del sistema.|Nombre de la empresa actual|
-|Nombre|Nombre de esta clase de dominio.|Nombre actual|
+|NOMBRE|Nombre de esta clase de dominio.|Nombre actual|
 |Espacio de nombres|Espacio de nombres afiliado a esta clase de dominio.|Espacio de nombres actual|
 |GUID del paquete|GUID para el paquete de Visual Studio generado para este DSL.|\<none>|
 |Espacio de nombres del paquete|Espacio de nombres para el paquete de Visual Studio generado para este DSL.|\<none>|
@@ -44,4 +44,4 @@ Las propiedades de DslDefinition definen propiedades *de definición de lenguaje
 
 ## <a name="see-also"></a>Consulte también
 
-- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

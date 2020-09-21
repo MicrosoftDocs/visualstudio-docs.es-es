@@ -1,6 +1,7 @@
 ---
-title: Trabajar con cuentas que requieran la autenticación multifactor
+title: Uso de cuentas que requieren la autenticación multifactor
 ms.date: 05/27/2020
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 description: Aprenda a usar Visual Studio con cuentas que requieran la autenticación multifactor
 author: ornellaalt
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283551"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90093358"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Cómo usar Visual Studio con cuentas que requieran la autenticación multifactor
 
@@ -49,10 +50,11 @@ Una vez habilitado el flujo de trabajo del explorador web del sistema, puede ini
 
 Esta acción abrirá el explorador web predeterminado del sistema, le pedirá que inicie sesión en su cuenta y valide cualquier directiva de MFA necesaria.
 
-En función de las actividades de desarrollo y la configuración de recursos, es posible que se le pida que vuelva a escribir sus credenciales durante la sesión. Esto puede ocurrir cuando se agrega un recurso nuevo o se intenta acceder a un recurso sin haber cumplido previamente sus requisitos de autorización de CA o MFA.
+Durante el proceso de inicio de sesión, es posible que reciba una solicitud adicional que le pida no cerrar la sesión. Es probable que esta solicitud se muestre la segunda vez que se use una cuenta para iniciar sesión. Para minimizar la necesidad de volver a escribir las credenciales, se recomienda que elija **Sí**, ya que esto garantiza que las credenciales se mantienen entre las distintas sesiones del explorador.
 
-> [!NOTE] 
-> Para disfrutar de la mejor experiencia, mantenga el explorador abierto hasta que se validen todas las directivas de CA o MFA para los recursos. Si cierra el explorador, se puede perder el estado de MFA creado previamente y puede solicitar mensajes de autorización adicionales.
+:::image type="content" source="media/kmsi.png" alt-text="¿Mantener la sesión iniciada?":::
+
+En función de las actividades de desarrollo y la configuración de recursos, es posible que de todos modos se le pida que vuelva a escribir sus credenciales durante la sesión. Esto puede ocurrir cuando se agrega un recurso nuevo o se intenta acceder a un recurso sin haber cumplido previamente sus requisitos de autorización de CA o MFA.
 
 ## <a name="reauthenticating-an-account"></a>Reautenticación de una cuenta  
 Si hay algún problema con su cuenta, es posible que Visual Studio le pida que vuelva a escribir sus credenciales de cuenta.  

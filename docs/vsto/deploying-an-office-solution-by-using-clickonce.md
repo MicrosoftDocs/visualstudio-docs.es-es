@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4adbd08d13d26c717beeb454bd323185bb88640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416567"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809354"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implementar una solución de Office mediante ClickOnce
   Puede implementar su solución de Office en menos pasos si usa ClickOnce. Si publica actualizaciones, la solución las detectará e instalará automáticamente. Sin embargo, ClickOnce requiere que instale la solución por separado para cada usuario de un equipo. Por lo tanto, debería considerar la posibilidad de usar Windows Installer (*. msi*) si más de un usuario ejecuta la solución en el mismo equipo.
@@ -358,7 +358,7 @@ ms.locfileid: "79416567"
 |Código de error|Definición|
 |----------------|----------------|
 |0|La solución se instaló o desinstaló correctamente o se mostró la Ayuda de VSTOInstaller.|
-|-100|Una o más opciones de la línea de comandos no son válidas o se establecieron más de una vez. Para obtener más información, escriba "VSTOInstaller/?". o vea [crear un instalador personalizado para una solución de Office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-100|Una o más opciones de la línea de comandos no son válidas o se establecieron más de una vez. Para obtener más información, escriba "VSTOInstaller/?". o vea [crear un instalador personalizado para una solución de Office ClickOnce](/previous-versions/bb772078(v=vs.110)).|
 |-101|Una o más opciones de la línea de comandos no son válidas. Para obtener más información, escriba “vstoinstaller/?”.|
 |-200|El URI del manifiesto de implementación no es válido. Para obtener más información, escriba “vstoinstaller/?”.|
 |-201|No se pudo instalar la solución porque el manifiesto de implementación no es válido. Consulte [manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md).|
@@ -456,11 +456,11 @@ ms.locfileid: "79416567"
 > [!NOTE]
 > Los datos locales se guardan para una sola versión anterior de una solución. Si revierte dos versiones, no se conservan los datos locales. Para obtener más información sobre los datos locales, vea [acceso a datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
 - [Publicar soluciones de Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Cómo: publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Cómo: instalar una solución de Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
-- [Crear un instalador personalizado para una solución de Office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
+- [Cómo: publicar una solución de Office mediante ClickOnce](/previous-versions/bb386095(v=vs.110))
+- [Cómo: instalar una solución de Office ClickOnce](/previous-versions/bb608592(v=vs.110))
+- [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](/previous-versions/bb608595(v=vs.110))
+- [Crear un instalador personalizado para una solución de Office ClickOnce](/previous-versions/bb772078(v=vs.110))

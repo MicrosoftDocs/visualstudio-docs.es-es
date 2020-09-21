@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 772cdbaca67cc82fc6b7eb2c5ef5adb6508df34a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015260"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740076"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Cómo: incluir un ensamblado personalizado en una característica de BDC
   El proyecto puede hacer referencia a ensamblados de otros proyectos de la misma solución. Sin embargo, debe agregar estos ensamblados al archivo de características del proyecto mediante el cuadro de diálogo **asignar los ensamblados a los que se hace referencia a LobSystems** .
@@ -40,16 +40,16 @@ ms.locfileid: "86015260"
 4. En la lista **seleccionar un ensamblado** , elija el ensamblado personalizado.
 
     > [!NOTE]
-    > Los ensamblados solo aparecen en el cuadro de diálogo **asignar ensamblados de referencia a LobSystems** si ha agregado una referencia al proyecto que contiene el ensamblado. Para obtener más información, vea [Cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Los ensamblados solo aparecen en el cuadro de diálogo **asignar ensamblados de referencia a LobSystems** si ha agregado una referencia al proyecto que contiene el ensamblado. Para obtener más información, vea [Cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](/previous-versions/wkze6zky(v=vs.140)).
 
 5. En el grupo **propiedades de referencia** , abra la lista que aparece para la propiedad ámbito de **LobSystem** , elija el sistema de LOB de los métodos que usan el ensamblado personalizado y, a continuación, elija el botón **Aceptar** .
 
     > [!NOTE]
     > Para depurar el código del ensamblado personalizado, debe agregar el ensamblado al paquete de solución. Para obtener más información, consulte [Cómo: agregar y quitar ensamblados adicionales](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
-## <a name="see-also"></a>Consulte también
-- [Cómo: usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
-- [Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
-- [Crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Cómo: crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
+## <a name="see-also"></a>Vea también
+- [Cómo: para usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Cómo: para agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+- [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Cómo: para crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
 - [Integragte datos empresariales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

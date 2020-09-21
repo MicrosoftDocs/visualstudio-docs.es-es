@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f383b173e012a7836d67a916ad9c16132e984602
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402288"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741772"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 
@@ -43,6 +43,14 @@ Hay tres categorías de convención de codificación de .NET admitidas:
 - [Convenciones de nomenclatura](../ide/editorconfig-naming-conventions.md)
 
    Reglas relacionadas con los nombres de los elementos de código. Por ejemplo, puede especificar que los métodos `async` deben terminar en "Async".
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-coding-conventions-on-build"></a>Aplicación de convenciones de codificación en la compilación
+
+A partir de la versión 16.8 de Visual Studio 2019, que incluye el SDK de .NET 5.0 RC2, puede [aplicar las convenciones de codificación de .NET en la compilación](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) para todos los proyectos de .NET. En tiempo de compilación, las infracciones al estilo de código de .NET aparecerán como advertencias o errores con un prefijo "IDE". Esto le permite aplicar estrictamente estilos de código coherentes en el código base.
+
+::: moniker-end
 
 ## <a name="example-editorconfig-file"></a>Ejemplo del archivo EditorConfig
 

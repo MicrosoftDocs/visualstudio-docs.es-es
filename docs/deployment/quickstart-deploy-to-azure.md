@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 60b3d471191f58a5eb612d9942b72c9d5e90e8af
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800312"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036423"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publique una aplicación web en Azure App Service mediante Visual Studio
 
@@ -23,7 +23,7 @@ Para las aplicaciones ASP.NET, ASP.NET Core, Node.js y .NET Core, publique en Az
 
 * Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-* Para la implementación de un solo uso (o manual) de aplicaciones, use la herramienta de **publicación** de Visual Studio para implementar aplicaciones ASP.NET, ASP.NET Core, Node.js y .NET Core en Azure App Service o App Service para Linux (con contenedores). En el caso de las aplicaciones de Python, siga los pasos de [Publicación en Azure App Service (Python)](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+* Para la implementación de un solo uso (o manual) de aplicaciones, use la herramienta de **publicación** de Visual Studio para implementar aplicaciones ASP.NET, ASP.NET Core, Node.js y .NET Core en Azure App Service o [App Service para Linux](../deployment/quickstart-deploy-to-linux.md) (con contenedores). En el caso de las aplicaciones de Python, siga los pasos de [Publicación en Azure App Service (Python)](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 En este artículo se describe cómo usar la herramienta de **publicación** para la implementación de un solo uso.
 
@@ -35,7 +35,9 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
     ![Comando Publicar en el menú contextual del proyecto del Explorador de soluciones](../deployment/media/quickstart-publish.png "Elección de Publicar")
 
-1. En el cuadro de diálogo **Publicar**, seleccione **Azure**.
+1. Si previamente ha configurado algún perfil de publicación, aparece la ventana **Publicar**. Seleccione **Nuevo**.
+
+1. En la ventana **Publicar**, seleccione **Azure**.
 
     ![Elección del destino de publicación](../deployment/media/quickstart-publish-azure-new.png)
 
@@ -61,7 +63,7 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
 ## <a name="clean-up-resources"></a>Limpiar los recursos
 
-En los pasos anteriores, ha creado recursos de Azure en un grupo de recursos. Si no prevé necesitar estos recursos en el futuro, puede eliminarlos mediante la eliminación del grupo de recursos.
+En los pasos anteriores, creó recursos de Azure en un grupo de recursos. Si no prevé necesitar estos recursos en el futuro, puede eliminarlos mediante la eliminación del grupo de recursos.
 En el menú izquierdo de Azure Portal, seleccione **Grupos de recursos** y luego **myResourceGroup**.
 En la página del grupo de recursos, asegúrese de que los recursos que aparecen son los que quiere eliminar.
 Seleccione **Eliminar**, escriba **myResourceGroup** en el cuadro de texto y luego seleccione **Eliminar**.

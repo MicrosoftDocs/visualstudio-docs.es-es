@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfbda711c42e475af5f17c8799e53b13e26611a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd712eafb6061da89367c247475904886579d2de
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014613"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740089"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Cómo: agregar y quitar características y elementos de un paquete mediante el diseñador de paquetes
   Al crear una solución de SharePoint, Visual Studio agrega las características predeterminadas de SharePoint al paquete en la solución. Antes de la implementación final, puede Agregar y quitar características y elementos de proyecto de SharePoint para modificar el paquete de SharePoint.
@@ -56,7 +56,7 @@ ms.locfileid: "86014613"
 
      Los elementos de SharePoint aparecen en los **elementos de la lista de soluciones** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear paquetes de soluciones de SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [Cómo: crear un paquete](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)
+- [Cómo: crear un paquete](/previous-versions/ee231585(v=vs.110))

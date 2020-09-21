@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532372"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808082"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
 Las Herramientas del lenguaje específico de dominio (Herramientas DSL), que se hospedan en Visual Studio, permiten diseñar un lenguaje específico de dominio y, después, generar todo lo que los usuarios necesitan para crear modelos basados en el lenguaje.
@@ -77,4 +77,4 @@ Las Herramientas del lenguaje específico de dominio (Herramientas DSL), que se 
 ## <a name="see-also"></a>Vea también
 
 - [Instancia experimental](../extensibility/the-experimental-instance.md)
-- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

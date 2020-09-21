@@ -1,5 +1,6 @@
 ---
-title: Cómo especificar una ubicación alternativa para las actualizaciones de implementación | Microsoft Docs
+title: Especificar una ubicación alternativa para las actualizaciones de implementación
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381917"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808755"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Cómo: Especificar una ubicación alternativa para las actualizaciones de la implementación
 Puede instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación inicialmente desde un CD o un recurso compartido de archivos, pero la aplicación debe comprobar si hay actualizaciones periódicas en la Web. Puede especificar una ubicación alternativa para las actualizaciones en el manifiesto de implementación para que la aplicación pueda actualizarse desde la web después de la instalación inicial.
@@ -60,7 +61,7 @@ Puede instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
  Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones que usan `<deploymentProvider>` deben declarar explícitamente los permisos que necesitan en el manifiesto de aplicación, de modo que la aplicación no reciba distintos niveles de confianza en equipos diferentes.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

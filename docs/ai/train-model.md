@@ -1,6 +1,7 @@
 ---
-title: Enviar un trabajo para entrenar un modelo en Azure Batch AI
-description: entrenar modelo en la nube
+title: Envío de un trabajo para entrenar un modelo
+description: Envío de un trabajo para entrenar un modelo con Azure Batch AI
+ms.custom: SEO-VS-2020
 keywords: ai, visual studio, entrenar modelo, nube
 author: jillre
 ms.author: jillfra
@@ -10,12 +11,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 4d705cbff1ce4e25892dfc5df896418e6d58b632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 110468de264370b22d64dae40cf55e9766804c31
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371656"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036618"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Entrenar modelos de AI en Azure Batch AI
 

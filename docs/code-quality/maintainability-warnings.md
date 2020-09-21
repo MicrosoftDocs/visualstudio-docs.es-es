@@ -1,29 +1,29 @@
 ---
-title: advertencias de mantenimiento
+title: Reglas de mantenimiento
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
-- warnings, maintainability
-- managed code analysis warnings, maintainability warnings
-- maintainability warnings
+- rules, maintainability
+- managed code analysis rules, maintainability rules
+- maintainability rules
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 751cec177e066da1210997ef0f6f8d869ba7d0dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509905"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808589"
 ---
-# <a name="maintainability-warnings"></a>Advertencias de mantenimiento
+# <a name="maintainability-rules"></a>Reglas de mantenimiento
 
-Las advertencias de mantenimiento admiten el mantenimiento de bibliotecas y aplicaciones.
+Las reglas de mantenimiento admiten el mantenimiento de bibliotecas y aplicaciones.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -37,6 +37,6 @@ Las advertencias de mantenimiento admiten el mantenimiento de bibliotecas y apli
 | [CA1508: Evitar código de condición no alcanzado](../code-quality/ca1508.md) | Un método tiene código condicional que siempre se evalúa como `true` o `false` en tiempo de ejecución. Esto conduce a código muerto en la `false` rama de la condición. |
 | [CA1509: Entrada no válida en el archivo de configuración de métricas de código](../code-quality/ca1509.md) | Las reglas de métricas de código, como [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) y [CA1506](ca1506.md), proporcionan un archivo de configuración denominado `CodeMetricsConfig.txt` que tiene una entrada no válida. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)

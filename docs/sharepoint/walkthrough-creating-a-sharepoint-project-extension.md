@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015077"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739933"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Tutorial: crear una extensión de proyecto de SharePoint
   En este tutorial se muestra cómo crear una extensión para los proyectos de SharePoint. Puede usar una extensión de proyecto para responder a eventos de nivel de proyecto, como cuando se agrega, se elimina o se cambia el nombre de un proyecto. También puede Agregar propiedades personalizadas o responder cuando cambia el valor de una propiedad. A diferencia de las extensiones de elemento de proyecto, las extensiones de proyecto no se pueden asociar a un tipo de proyecto de SharePoint concreto. Cuando se crea una extensión de proyecto, la extensión se carga cuando se abre cualquier tipo de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -128,7 +128,7 @@ ms.locfileid: "86015077"
 
 1. En **Explorador de soluciones**, abra el menú contextual del archivo source. Extension. vsixmanifest y, a continuación, elija el botón **abrir** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el archivo en el diseñador de manifiestos. La información que aparece en la pestaña **metadatos** también aparece en las **extensiones y actualizaciones**. Todos los paquetes VSIX requieren el archivo Extension. vsixmanifest. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el archivo en el diseñador de manifiestos. La información que aparece en la pestaña **metadatos** también aparece en las **extensiones y actualizaciones**. Todos los paquetes VSIX requieren el archivo Extension. vsixmanifest. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. En el cuadro **Product Name** , escriba **Custom Project Property**.
 
@@ -200,7 +200,7 @@ ms.locfileid: "86015077"
 
 7. Cierre la instancia experimental de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extender proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Cómo: agregar una propiedad a proyectos de SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [Convertir entre tipos de sistema de proyectos de SharePoint y otros tipos de proyectos de Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

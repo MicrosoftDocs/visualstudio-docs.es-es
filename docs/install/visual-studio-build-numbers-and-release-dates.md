@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/31/2020
+ms.date: 09/08/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c836c101280da1884345dd5e95def383226942fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0d77b4a1a926376857886b9430c4d9fdcdb3a39
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89285741"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600055"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,9 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.3 | Release | 8 de septiembre de 2020 | 16.7.30503.244 |
+| 16.4.13 | Release | 8 de septiembre de 2020 | 16.4.30427.197 |
+| 16.0.18 | Release | 8 de septiembre de 2020 | 16.0.28803.826 |
 | 16.8.0 | Versión preliminar 2.1 | 31 de agosto de 2020 | 16.8.30428.66 |
 | 16.8.0 | Versión preliminar 2 | 25 de agosto de 2020 | 16.8.30420.98 |
 | 16.7.2 | Release | 18 de agosto de 2020 | 16.7.30413.136 |
@@ -172,6 +175,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.27 | Release | 8 de septiembre de 2020 | 15.9.28307.1259 |
 | 15.9.26 | Release | 11 de agosto de 2020 | 15.9.28307.1234 |
 | 15.9.25 | Release | 14 de julio de 2020 | 15.9.28307.1216 |
 | 15.9.24 | Release | 9 de junio de 2020 | 15.9.28307.1177 |
