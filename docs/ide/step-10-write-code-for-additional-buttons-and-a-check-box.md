@@ -1,6 +1,8 @@
 ---
-title: 'Paso 10: Escribir código para botones adicionales y una casilla'
+title: Escribir código para botones adicionales y una casilla
+description: Aprenda a escribir código para botones adicionales y una casilla en el tutorial Crear un visor de imágenes.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0dc7281b51d0efe0d19020df6a154e332ad9bb0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4d66f7705821025bd5e30ea0d0c7f2dd57d540e4
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579437"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036917"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Paso 10: Escribir código para botones adicionales y una casilla
 
@@ -27,7 +29,7 @@ Ahora, está listo para completar los otros cuatro métodos. Podría copiar y pe
 Este código agrega funcionalidad a los botones que agregó anteriormente. Sin este código, los botones no hacen nada. Los botones utilizan el código de sus eventos <xref:System.Windows.Forms.Control.Click> (y la casilla utiliza el evento <xref:System.Windows.Forms.CheckBox.CheckedChanged>) para realizar diferentes operaciones cuando se activan los controles. Por ejemplo, el evento `clearButton_Click` (o `ClearButton_Click`), que se activa al seleccionar el botón **Borrar la imagen**, borra la imagen actual y establece su propiedad **Image** en **null** (o **nothing**). Cada evento del código incluye comentarios que explican lo que hace el código.
 
 > [!TIP]
-> Como procedimiento recomendado: Comente siempre el código. Los comentarios son información que leerán otras personas y merece la pena dedicar tiempo a hacer que el código resulte fácil de entender. La aplicación pasa por alto todo lo que hay en una línea de comentario. En C#, para marcar una línea como comentario se escriben dos barras diagonales (//) al principio y en Visual Basic se usa una comilla sencilla (').
+> El procedimiento recomendado es comentar siempre el código. Los comentarios son información que leerán otras personas y merece la pena dedicar tiempo a hacer que el código resulte fácil de entender. La aplicación pasa por alto todo lo que hay en una línea de comentario. En C#, para marcar una línea como comentario se escriben dos barras diagonales (//) al principio y en Visual Basic se usa una comilla sencilla (').
 
 ## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>Procedimientos para escribir código para botones adicionales y una casilla
 

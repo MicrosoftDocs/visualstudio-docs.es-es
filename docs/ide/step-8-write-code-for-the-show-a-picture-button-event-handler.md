@@ -1,6 +1,8 @@
 ---
-title: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
+title: Escribir código para el controlador de eventos del botón Mostrar una imagen
+description: Escriba código para el controlador de eventos del botón Mostrar una imagen en el tutorial Crear un visor de imágenes.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 5718bd976952557d9ff5f92a0522a672757a54e8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579807"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038665"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 
@@ -66,7 +68,7 @@ A continuación, use IntelliSense para escribir más código y abrir un cuadro d
 
     Para obtener más información sobre el método `ShowDialog()`, vea [ShowDialog Method](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
- 1. Cuando se usa un método con un control o un componente (lo que se denomina *llamar a un método*), es preciso agregar paréntesis. Por tanto, escriba paréntesis de apertura y cierre inmediatamente después de la "g" en `ShowDialog`: `()` Ahora debería tener este aspecto: "openFileDialog1.ShowDialog()".
+ 1. Cuando se usa un método con un control o un componente (lo que se denomina *llamar a un método*), es preciso agregar paréntesis. Así pues, especifique los paréntesis de apertura y cierre inmediatamente después de la "g" en `ShowDialog`: `()` Debe tener la apariencia siguiente: "openFileDialog1.ShowDialog()".
 
     > [!NOTE]
     > Los métodos constituyen una parte importante de cualquier aplicación y en este tutorial se han mostrado varias maneras de usarlos. Se puede llamar al método de un componente para ordenarle que haga algo, por ejemplo, como cuando llamó al método `ShowDialog()` del componente **OpenFileDialog**. Puede crear métodos propios para que la aplicación realice acciones, como la que se va a compilar ahora, que se denomina método `showButton_Click()` y que abre un cuadro de diálogo y una imagen cuando un usuario elige en un botón.

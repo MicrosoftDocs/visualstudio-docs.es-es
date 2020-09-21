@@ -1,8 +1,8 @@
 ---
-title: Creación de una aplicación para Plataforma universal de Windows (UWP) con Visual Studio y C#
+title: Creación de una aplicación para UWP con Visual Studio y C#
 description: Creación de una aplicación para UWP en Visual Studio con XAML y C#
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249247"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037281"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Creación de la primera aplicación para la Plataforma universal de Windows en Visual Studio con XAML y C&#35;
 
@@ -114,7 +114,7 @@ Es hora de empezar a desarrollar. Deberá agregar un control de botón y una acc
 
    Si observa el código en el **Editor XAML**, verá que el botón también se ha agregado ahí:
 
-   ![Haga clic en el control Botón y arrástrelo al lienzo Diseño](media/uwp-xaml-control-code-window.png)
+   ![Mostrar Botón en el Editor XAML](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Agregar una etiqueta al botón
 
@@ -192,7 +192,7 @@ Es el momento de compilar, implementar y ejecutar la aplicación UWP "Hello Worl
 
 1. Vea la aplicación, que se muestra poco después de que desaparezca una pantalla de presentación. La aplicación debe tener un aspecto similar al siguiente:
 
-   ![Una aplicación "Hello World" UWP](media/vs-2019/uwp-hello-world-app.png)
+   ![Aplicación "Hola mundo" para UWP](media/vs-2019/uwp-hello-world-app.png)
 
 1. Haga clic en el botón **Hello World**.
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77558175"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810985"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (desarrollo de Office en Visual Studio)
   Use el **Asistente para publicación** para copiar archivos de solución en una ubicación especificada, crear los archivos de manifiesto y crear un programa de instalación.
@@ -49,7 +49,7 @@ ms.locfileid: "77558175"
 > Hay más consideraciones si el equipo de destino está ejecutando Windows Vista. Debe ser administrador en el equipo de Windows Vista para utilizar la opción de publicación local. Además, la ubicación predeterminada siempre es el directorio *de \\ publicación* , independientemente de si tiene IIS instalado.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>¿Cuál es la ruta de instalación predeterminada en los equipos de los usuarios finales?
- La ruta de instalación es opcional. Puede establecer la ruta de instalación más adelante si lo prefiere. Para obtener más información, consulte [Cómo: cambiar la ruta de instalación de una solución de Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+ La ruta de instalación es opcional. Puede establecer la ruta de instalación más adelante si lo prefiere. Para obtener más información, consulte [Cómo: cambiar la ruta de instalación de una solución de Office](/previous-versions/bb608626(v=vs.110)).
 
  La ruta de instalación es el directorio desde el que el usuario final instalará la personalización. También es la ruta de acceso que usará la solución para buscar actualizaciones. El **Asistente para publicación** no implementa la solución en esta ubicación, a menos que la ruta de acceso sea la misma que la especificada en el cuadro **especifique la ubicación para publicar esta aplicación** en la página anterior.
 

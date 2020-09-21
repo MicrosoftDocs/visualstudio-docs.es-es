@@ -8,30 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561593"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074961"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 
-Visual Studio ofrece varias herramientas de generación de perfiles y medición del rendimiento. Algunas herramientas, como Uso de CPU y Uso de memoria, pueden ejecutarse con o sin el depurador, y en las configuraciones de compilación de depuración o de versión. Las herramientas que aparecen en la [ventana Herramientas de diagnóstico](../profiling/profiling-feature-tour.md#view-performance-while-debugging) se ejecutan solo durante una sesión de depuración. Las herramientas que aparecen en el [Generador de perfiles de rendimiento](../profiling/profiling-feature-tour.md#post_mortem) se ejecutan sin el depurador, y los resultados se pueden analizar después de seleccionar la opción para detener y recopilar datos (para un análisis final).
+Visual Studio ofrece varias herramientas de generación de perfiles y medición del rendimiento. Algunas herramientas, como Uso de CPU y Uso de memoria, pueden ejecutarse con o sin el depurador, y en las configuraciones de compilación de depuración o de versión. Las herramientas que aparecen en la [ventana Herramientas de diagnóstico](../profiling/profiling-feature-tour.md#measure-performance-while-debugging) se ejecutan solo durante una sesión de depuración. Las herramientas que aparecen en el [Generador de perfiles de rendimiento](../profiling/profiling-feature-tour.md#post_mortem) se ejecutan sin el depurador, y los resultados se pueden analizar después de seleccionar la opción para detener y recopilar datos (para un análisis final).
 
 >[!NOTE]
 >Puede usar las herramientas de rendimiento sin depurador con Windows 7 y versiones posteriores. Se necesita Windows 8 o versiones posteriores para ejecutar las herramientas de generación de perfiles integradas del depurador.
 
-El Generador de perfiles de rendimiento sin depurador y las Herramientas de diagnóstico integradas en el depurador proporcionan información y experiencias diferentes. Las herramientas integradas del depurador muestran los puntos de interrupción y los valores de variable. Las herramientas sin depurador ofrecen resultados más cercanos a la experiencia del usuario final.
+El Generador de perfiles de rendimiento sin depurador y las Herramientas de diagnóstico integradas en el depurador proporcionan información y experiencias diferentes. Las herramientas integradas en el depurador muestra los valores de variables y le permiten usar puntos de interrupción. Las herramientas sin depurador ofrecen resultados más cercanos a la experiencia del usuario final.
 
 Para ayudarlo a decidir qué herramientas y resultados debe utilizar, tenga en cuenta lo siguiente:
 
-- Los problemas de rendimiento externo, como problemas de la capacidad de respuesta de la red o de E/S de archivos, no se diferenciarán demasiado en las herramientas con o sin depurador.
-- En el caso de problemas causados por llamadas con gran consumo de CPU, puede haber diferencias de rendimiento considerables entre las compilaciones de versión y de depuración. Compruebe si el problema existe en las compilaciones de versión.
-- Si el problema se produce solo durante las compilaciones de depuración, probablemente no necesitará ejecutar las herramientas sin depurador. En el caso de problemas de compilaciones de versión, deberá decidir si las herramientas del depurador le ayudarán en la investigación.
-- Las compilaciones de versión proporcionan optimizaciones como la inclusión de llamadas a funciones y constantes, la eliminación de rutas de acceso a código sin usar y el almacenamiento de variables de manera que no las pueda usar el depurador. Los números de rendimiento de las herramientas integradas del depurador son menos precisos, porque las compilaciones de depuración carecen de estas optimizaciones.
-- El propio depurador cambia los tiempos de rendimiento, ya que realiza operaciones de depurador necesarias como interceptar excepciones y modular eventos de carga.
-- Los números de rendimiento de la compilación de versión de las herramientas del Generador de perfiles de rendimiento son más precisos y exactos. Los resultados de la herramienta integrada del depurador son más útiles si se comparan con otras medidas relacionadas con la depuración.
+- Herramienta integrada en el depurador frente a herramienta que no es del depurador
+  - Los problemas de rendimiento externo, como problemas de la capacidad de respuesta de la red o de E/S de archivos, no se diferenciarán demasiado en las herramientas con o sin depurador.
+  - El propio depurador cambia los tiempos de rendimiento, ya que realiza operaciones de depurador necesarias como interceptar excepciones y modular eventos de carga.
+  - Los números de rendimiento de la compilación de versión de las herramientas del Generador de perfiles de rendimiento son más precisos y exactos. Los resultados de la herramienta integrada en el depurador son más útiles si se comparan con otras medidas relacionadas con la depuración o para usar las características del depurador.
+- Compilación de depuración frente a compilación de versión
+  - En el caso de problemas causados por llamadas con gran consumo de CPU, puede haber diferencias de rendimiento considerables entre las compilaciones de versión y de depuración. Compruebe si el problema existe en las compilaciones de versión.
+  - Si el problema se produce solo durante las compilaciones de depuración, probablemente no necesitará ejecutar las herramientas sin depurador. En el caso de problemas con la compilación de versión, decida si las características proporcionadas por las herramientas integradas del depurador ayudarán a identificar el problema.
+  - Las compilaciones de versión proporcionan optimizaciones como la inclusión de llamadas a funciones y constantes, la eliminación de rutas de acceso a código sin usar y el almacenamiento de variables de manera que no las pueda usar el depurador. Los números de rendimiento de las compilaciones de depuración son menos precisos, porque las compilaciones de depuración carecen de estas optimizaciones.
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración
 
@@ -82,7 +84,7 @@ Para recopilar datos de rendimiento sin depuración, puede ejecutar las herramie
 
    Mientras se ejecuta la sesión, algunas herramientas muestran gráficos de datos en tiempo real en la página de las herramientas de diagnóstico, así como controles para pausar y reanudar la recopilación de datos.
 
-    ![Captura de pantalla de la recopilación de datos en el centro de Rendimiento y diagnósticos](../profiling/media/diaghubcollectdata.png "Centro de recopilación de datos")
+    ![Captura de pantalla de la recopilación de datos en el Generador de perfiles de rendimiento](../profiling/media/diaghubcollectdata.png "Centro de recopilación de datos")
 
 1. Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación**.
 

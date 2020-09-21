@@ -1,5 +1,6 @@
 ---
-title: 'Inicio rápido: usar Visual Studio para crear una aplicación web de Python'
+title: 'Inicio rápido: Creación de una aplicación web de Python con Visual Studio'
+titleSuffix: ''
 description: En este inicio rápido, usará Visual Studio y el marco Flask para compilar una aplicación web simple en Python.
 ms.date: 03/07/2019
 ms.technology: vs-python
@@ -7,15 +8,16 @@ ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 4318cd98de166210a8e8744840967942006b8ea6
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444952"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100518"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
 

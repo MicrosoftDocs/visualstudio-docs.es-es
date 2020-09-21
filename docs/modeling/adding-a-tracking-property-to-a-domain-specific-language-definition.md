@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238249"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810827"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 
@@ -26,7 +26,7 @@ Una propiedad de *dominio de seguimiento* es una propiedad que el usuario puede 
 
 Por ejemplo, en el Herramientas del lenguaje específico de dominio (herramientas de DSL), la propiedad nombre para mostrar de una clase de dominio tiene un valor predeterminado que se calcula con el nombre de la clase de dominio, pero un usuario puede cambiar el valor en tiempo de diseño o restablecerlo en el valor calculado.
 
-En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una propiedad de seguimiento de espacio de nombres que tiene un valor predeterminado basado en la propiedad espacio de nombres predeterminado del modelo. Para obtener más información sobre las propiedades de seguimiento, vea [definir propiedades de seguimiento](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una propiedad de seguimiento de espacio de nombres que tiene un valor predeterminado basado en la propiedad espacio de nombres predeterminado del modelo. Para obtener más información sobre las propiedades de seguimiento, vea [definir propiedades de seguimiento](/previous-versions/cc825929(v=vs.100)).
 
 - Las herramientas de DSL admiten los descriptores de propiedad de seguimiento. Sin embargo, no se puede usar el diseñador DSL para agregar una propiedad de seguimiento a un idioma. Por lo tanto, debe agregar código personalizado para definir e implementar la propiedad de seguimiento.
 

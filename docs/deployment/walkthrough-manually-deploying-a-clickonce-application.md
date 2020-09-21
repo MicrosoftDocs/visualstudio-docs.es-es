@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: implementar manualmente una aplicación ClickOnce | Microsoft Docs'
+title: Implementación manual de una aplicación ClickOnce
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16f01b87a9d90f285ebefd70956ae3c6ccffedf5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249979"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809484"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Tutorial: Implementación manual de una aplicación ClickOnce
 Si no puede usar Visual Studio para implementar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, o si necesita usar características de implementación avanzadas, como la implementación de aplicaciones de confianza, debe usar la herramienta de línea de comandos *Mage.exe* para crear los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos. En este tutorial se describe cómo crear una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación mediante la versión de línea de comandos (*Mage.exe*) o la versión gráfica (*MageUI.exe*) de la herramienta de generación y edición de manifiestos.

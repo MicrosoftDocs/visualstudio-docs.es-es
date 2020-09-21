@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51b652adcc482d6e326c0b64eda3a9d32efab309
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27263e596c1e0e6e34f62e5125ffb070fc0f2fbb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532294"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810085"
 ---
 # <a name="properties-of-compartment-shapes"></a>Propiedades de las formas de compartimiento
 Las formas de compartimiento son una de las formas que puede usar para mostrar una clase de dominio en un lenguaje específico de dominio. Puede expandir y contraer los compartimientos.
@@ -25,14 +25,14 @@ Las formas de compartimiento son una de las formas que puede usar para mostrar u
 
  Las formas de compartimiento tienen las propiedades que se enumeran en la tabla siguiente.
 
-|Propiedad|Descripción|Valor predeterminado|
+|Propiedad.|Descripción|Default|
 |-|-|-|
 |Estado de contracción de expansión predeterminada|Si `Expanded` es, los compartimientos se muestran durante la creación. Si `Collapsed` es, no lo son.|Expandido|
 |Color de relleno|Color de relleno de esta forma.|Blanco|
 |Modo de degradado de relleno|Modo de degradado de relleno de esta forma.|Horizontal|
 |Geometría|Geometría de esta forma (rectángulo o rectángulo redondeado).|Rectángulo|
 |Tiene puntos de conexión predeterminados|Si es `True` , la forma usará los puntos de conexión superior, inferior, izquierdo y derecho en el diseñador generado.|Falso|
-|Es visible el encabezado de un único compartimiento|Si `False` , y la forma tiene un solo compartimiento, el encabezado del compartimiento no es visible.|Verdadero|
+|Es visible el encabezado de un único compartimiento|Si `False` , y la forma tiene un solo compartimiento, el encabezado del compartimiento no es visible.|True|
 |Color del contorno|Color del contorno de esta forma.|Negro|
 |Estilo de guión del contorno|El estilo de guión del contorno de esta forma (sólido, guión, punto, DashDot, DashDotDot, personalizado).|Sólido|
 |Grosor del contorno|Grosor del contorno de esta forma.|0,03125|
@@ -43,9 +43,9 @@ Las formas de compartimiento son una de las formas que puede usar para mostrar u
 |Tiene un constructor personalizado|Si `True` es, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la forma de compartimiento ( `none` , `abstract` o `sealed` ).|Ninguno|
 |Forma de compartimiento base|Clase base de esta forma.|(ninguno)|
-|Nombre|Nombre de esta forma.|Nombre actual|
+|NOMBRE|Nombre de esta forma.|Nombre actual|
 |Espacio de nombres|El espacio de nombres que está asociado con esta forma.|Espacio de nombres actual|
-|Tipo de información sobre herramientas|Cómo se define la información sobre herramientas (Fixed, variable o None). Si es Fixed, el valor de la `Fixed Tooltip Text` propiedad se usa como información sobre herramientas; si es variable, la información sobre herramientas se define en código personalizado.|None|
+|Tipo de información sobre herramientas|Cómo se define la información sobre herramientas (Fixed, variable o None). Si es Fixed, el valor de la `Fixed Tooltip Text` propiedad se usa como información sobre herramientas; si es variable, la información sobre herramientas se define en código personalizado.|ninguno|
 |Notas|Notas informales asociadas a esta forma.|\<none>|
 |Alto inicial|Alto inicial de esta forma, en pulgadas. En el caso de las formas de compartimiento, este es el alto de la sección de encabezado únicamente y no se puede cambiar de tamaño.|1|
 |Ancho inicial|Ancho inicial de esta forma, en pulgadas.|1.5|
@@ -55,6 +55,6 @@ Las formas de compartimiento son una de las formas que puede usar para mostrar u
 |Texto de información sobre herramientas corregido|Texto que se usa para una información sobre herramientas fija.|\<none>|
 |Help Keyword|Palabra clave que se usa para indizar la ayuda de F1 para esta forma.|\<none>|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

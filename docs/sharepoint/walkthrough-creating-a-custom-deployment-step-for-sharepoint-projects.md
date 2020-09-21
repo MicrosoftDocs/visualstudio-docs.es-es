@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015893"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740024"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint
   Al implementar un proyecto de SharePoint, Visual Studio ejecuta una serie de pasos de implementación en un orden específico. Visual Studio incluye muchos pasos de implementación integrados, pero también puede crear los suyos propios.
@@ -190,7 +190,7 @@ ms.locfileid: "86015893"
 
 1. En **Explorador de soluciones**, en el proyecto **UpgradeDeploymentStep** , abra el menú contextual del archivo **source. Extension. vsixmanifest** y, a continuación, elija **abrir**.
 
-     Visual Studio abre el archivo en el editor de manifiestos. El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio abre el archivo en el editor de manifiestos. El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. En el cuadro **nombre de producto** , escriba **paso de implementación de actualización para proyectos de SharePoint**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015893"
 10. En la lista **tipo** , escriba **SharePoint. Commands. V4**.
 
     > [!NOTE]
-    > Este elemento especifica una extensión personalizada que desea incluir en la extensión de Visual Studio. Para obtener más información, vea [elemento asset (esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Este elemento especifica una extensión personalizada que desea incluir en la extensión de Visual Studio. Para obtener más información, vea [elemento asset (esquema VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. En la lista **origen** , elija **un proyecto en la solución actual**.
 
@@ -483,5 +483,5 @@ ms.locfileid: "86015893"
 
 4. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en la que está abierta la solución UpgradeDeploymentStep).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247801"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075423"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Análisis del uso de memoria mediante la herramienta de asignación de objetos de .NET
 
@@ -24,7 +24,7 @@ Tras ejecutar la herramienta, podrá ver las rutas de acceso de ejecución de fu
 
 ## <a name="setup"></a>Programa de instalación
 
-1. Seleccione **Alt+F2** para abrir el generador de perfiles de rendimiento en Visual Studio.
+1. Seleccione **Alt + F2** para abrir el Generador de perfiles de rendimiento en Visual Studio.
 
 1. Active la casilla **Seguimiento de asignación de objetos de .NET**.
 

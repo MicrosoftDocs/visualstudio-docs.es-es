@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015831"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740063"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: crear una lista externa en SharePoint con datos económicos
 
@@ -80,7 +80,7 @@ Necesitará los componentes siguientes para completar este tutorial:
 
 2. Agregue una conexión a la base de datos de ejemplo AdventureWorks de SQL Server.
 
-     Para obtener más información, vea [Agregar o modificar conexión (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Para obtener más información, vea [Agregar o modificar conexión (Microsoft SQL Server)](/previous-versions/dxb6fxah(v=vs.140)).
 
 3. En el **Explorador de soluciones**, elija el nodo de proyecto.
 
@@ -184,8 +184,8 @@ Agregue un método Finder específico a la entidad Contact mediante la ventana *
 
     |Nombre|Nombre del tipo|
     |----------|---------------|
-    |Nombre|System.String|
-    |Apellidos|System.String|
+    |FirstName|System.String|
+    |LastName|System.String|
     |Teléfono|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
@@ -242,7 +242,7 @@ Para permitir que el servicio BDC muestre los contactos en una lista, debe agreg
 Al ejecutar el proyecto, se abre el sitio de SharePoint y Visual Studio agrega el modelo al servicio de conectividad a datos profesionales. Cree una lista externa en SharePoint que haga referencia a la entidad contact. Los datos para contactos en la base de datos AdventureWorks aparecen en la lista.
 
 > [!NOTE]
-> Es posible que tenga que modificar la configuración de seguridad en SharePoint antes de poder depurar la solución. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
+> Es posible que tenga que modificar la configuración de seguridad en SharePoint antes de poder depurar la solución. Para obtener más información, vea [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 1. Elija la tecla **F5**.
 
@@ -274,7 +274,7 @@ Puede obtener más información sobre cómo diseñar modelos para el servicio BD
 - [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Diseñar un modelo](../sharepoint/designing-a-business-data-connectivity-model.md) 
  de conectividad a datos profesionales [Crear un modelo](../sharepoint/creating-a-business-data-connectivity-model.md) 

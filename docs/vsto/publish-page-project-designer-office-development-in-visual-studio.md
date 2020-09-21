@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328997"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810998"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publicar (página), diseñador de proyectos (desarrollo de Office en Visual Studio)
   La página **Publicar** del **Diseñador de proyectos** se usa para configurar las propiedades de la implementación.
@@ -29,7 +29,7 @@ ms.locfileid: "67328997"
  Para acceder a esta página, seleccione el proyecto en el **Explorador de soluciones**y luego, en el menú **Proyecto** , elija *Propiedades de* **nombreDelProyecto**. Si no se muestra la página **Publicar** , elija la pestaña **Publicar** .
 
 > [!NOTE]
-> También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, consulte [Cómo: publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, consulte [Cómo: publicar una solución de Office mediante ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
 ## <a name="uielement-list"></a>Lista de UIElement
  **Ubicación de la carpeta de publicación (sitio web, servidor FTP o ruta de acceso de archivo)** Obligatorio.
@@ -50,7 +50,7 @@ ms.locfileid: "67328997"
 
  Si los archivos de instalación están en una ubicación relativa al documento o al programa de instalación, como sucede con la opción de CD, deje este cuadro en blanco.
 
- Un administrador puede asignar este valor más adelante. Para obtener más información, consulte [Cómo: cambiar la ruta de instalación de una solución de Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+ Un administrador puede asignar este valor más adelante. Para obtener más información, consulte [Cómo: cambiar la ruta de instalación de una solución de Office](/previous-versions/bb608626(v=vs.110)).
 
  **Requisitos previos** Los requisitos previos se pueden incluir con el programa de instalación o descargar a petición durante la instalación.
 
@@ -102,4 +102,4 @@ ms.locfileid: "67328997"
 
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
 - [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Requisitos previos de la solución de Office para la implementación](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Requisitos previos de la solución de Office para la implementación](/previous-versions/bb608617(v=vs.110))

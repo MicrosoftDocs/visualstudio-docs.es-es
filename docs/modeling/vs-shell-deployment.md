@@ -7,16 +7,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8793312e0ed022fc7210508efdf20a81b293f0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f3729c09198b331728e2cc67299ffc3ad6c3d26
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535855"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809653"
 ---
 # <a name="vs-shell-deployment"></a>Implementación de VS Shell
 
-Un shell aislado le permite determinar qué funcionalidad de Visual Studio necesita para interactuar con el lenguaje específico del dominio y cómo debe aparecer esa solución. Para obtener más información sobre el shell aislado de Visual Studio, vea [personalizar el shell aislado](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
+Un shell aislado le permite determinar qué funcionalidad de Visual Studio necesita para interactuar con el lenguaje específico del dominio y cómo debe aparecer esa solución. Para obtener más información sobre el shell aislado de Visual Studio, vea [personalizar el shell aislado](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).
 
 Para establecer un shell de Visual Studio como destino de implementación:
 

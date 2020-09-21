@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485446"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739985"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Compilación y ejecución de la aplicación de tareas pendientes de ejemplo
 
@@ -28,7 +28,7 @@ En este momento, el equipo de desarrollo es bastante pequeño y simplemente va a
 
 Antes de poder ejecutar la aplicación, debe disponer de su código fuente en el equipo. En el caso de proyectos reales, normalmente se clona el repositorio. Pero, para este tutorial, ha creado un archivo ZIP que contiene la aplicación.
 
-1. [Descargue el archivo ZIP](/assets/app.zip). Abra el archivo ZIP y asegúrese de extraer el contenido.
+1. [Descargue el archivo ZIP](http://localhost/assets/app.zip). Abra el archivo ZIP y asegúrese de extraer el contenido.
 
 1. Una vez que lo haya extraído, use el editor de código que prefiera para abrir el proyecto. Si necesita un editor, puede usar [Visual Studio Code](https://code.visualstudio.com/). Debería ver `package.json` y dos subdirectorios (`src` y `spec`).
 

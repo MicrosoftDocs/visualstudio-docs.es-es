@@ -1,29 +1,29 @@
 ---
-title: advertencias de nomenclatura
+title: Reglas de nomenclatura
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.namingrules
 helpviewer_keywords:
-- managed code analysis warnings, naming warnings
-- naming warnings
-- warnings, naming
+- managed code analysis rules, naming rules
+- naming rules
+- rules, naming
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45eb7442278d783b2663da2ba8587bea38632fa1
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 2032a66837ef790ce37ef178805a13841f203342
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509008"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810199"
 ---
-# <a name="naming-warnings"></a>advertencias de nomenclatura
+# <a name="naming-rules"></a>Reglas de nomenclatura
 
-Las advertencias de nomenclatura admiten el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET.
+Las reglas de nomenclatura admiten el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET.
 
 ## <a name="in-this-section"></a>En esta sección
 
