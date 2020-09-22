@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9743fa7defbbf3321636d2ba4799454713a647db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432777"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843345"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Cómo: Recopilar datos de contadores de Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Los contadores de Windows son contadores de rendimiento del sistema que se puede
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
-> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ### <a name="to-collect-windows-counter-data"></a>Para recopilar datos de contadores de Windows  
   
@@ -43,7 +43,7 @@ Los contadores de Windows son contadores de rendimiento del sistema que se puede
   
 3. Seleccione la casilla **Recopilar contadores de Windows**.  
   
-4. En el cuadro de texto **Intervalo de recolección (ms)**, escriba un intervalo de tiempo.  
+4. En el cuadro de texto **Intervalo de recolección (ms)** , escriba un intervalo de tiempo.  
   
 5. Seleccione una categoría de la lista desplegable **Categoría de contador**.  
   
@@ -53,7 +53,7 @@ Los contadores de Windows son contadores de rendimiento del sistema que se puede
   
 8. Haga clic en **Aplicar.**  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)   
- [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+ [Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)   
+ [Contadores de Windows y CPU](../profiling/cpu-and-windows-counters.md)

@@ -1,5 +1,5 @@
 ---
-title: Escribir en el Store de la configuración de usuario | Documentos de Microsoft
+title: Escribiendo en el almacén de configuración de usuario | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,43 +9,43 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 764d9b81297c6bbefd1f5fdf7c77e4d514bb5045
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408497"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843050"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Escritura en el almacén de configuración de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Configuración de usuario son valores grabables como las de la **herramientas / opciones** cuadro de diálogo, ventanas de propiedades y algunos otros cuadros de diálogo. Extensiones de Visual Studio pueden usarlas para almacenar pequeñas cantidades de datos. Este tutorial muestra cómo agregar el Bloc de notas para Visual Studio como una herramienta externa al leer y escribir en el almacén de configuración de usuario.  
+La configuración de usuario se pueden escribir como las del cuadro de diálogo **herramientas/opciones** , las ventanas de propiedades y otros cuadros de diálogo. Las extensiones de Visual Studio pueden usarlas para almacenar pequeñas cantidades de datos. En este tutorial se muestra cómo agregar el Bloc de notas a Visual Studio como una herramienta externa mediante la lectura y la escritura en el almacén de configuración de usuario.  
   
-### <a name="backing-up-your-user-settings"></a>La copia de seguridad de la configuración de usuario  
+### <a name="backing-up-your-user-settings"></a>Copia de seguridad de la configuración de usuario  
   
-1. Debe poder restablecer la configuración de herramientas externas para que pueda depurar y repita el procedimiento. Para ello, debe guardar la configuración original de forma que puede restaurar según sea necesario.  
+1. Debe poder restablecer la configuración de herramientas externas para que pueda depurar y repetir el procedimiento. Para ello, debe guardar la configuración original para poder restaurarla según sea necesario.  
   
 2. Abra Regedit.exe.  
   
-3. Vaya a herramientas HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
+3. Vaya a HKEY_CURRENT_USER herramientas de \Software\Microsoft\VisualStudio\14.0Exp\External \\ .  
   
     > [!NOTE]
-    > Asegúrese de que está mirando la clave que contiene \14.0Exp\ y no \14.0\\. Cuando se ejecuta la instancia experimental de Visual Studio, la configuración de usuario está en el subárbol del registro "14.0Exp".  
+    > Asegúrese de que está examinando la clave que contiene \14.0Exp\ y no \ 14,0 \\ . Al ejecutar la instancia experimental de Visual Studio, la configuración de usuario está en el subárbol del registro "14.0 exp".  
   
-4. Haga clic en la subclave \External Tools\ y, a continuación, haga clic en **exportar**. Asegúrese de que **rama seleccionada** está seleccionada.  
+4. Haga clic con el botón secundario en la subclave \External Tools \ y, a continuación, haga clic en **exportar**. Asegúrese de que la **rama seleccionada** está seleccionada.  
   
-5. Guarde el archivo externo Tools.reg resultante.  
+5. Guarde el archivo. reg de herramientas externas resultante.  
   
-6. Más adelante, cuando desea restablecer la configuración de herramientas externas, seleccione la clave del registro HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ y haga clic en **eliminar** en el menú contextual.  
+6. Más adelante, si desea restablecer la configuración de herramientas externas, seleccione la clave del registro HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp\External Tools \ y haga clic en **eliminar** en el menú contextual.  
   
-7. Cuando el **Confirmar eliminación de clave** aparece el cuadro de diálogo, haga clic en **Sí**.  
+7. Cuando aparezca el cuadro de diálogo **Confirmar eliminación de clave** , haga clic en **sí**.  
   
-8. Haga clic en el archivo externo Tools.reg que guardó anteriormente, haga clic en **abrir con**y, a continuación, haga clic en **Editor del registro**.  
+8. Haga clic con el botón secundario en el archivo external Tools. reg que ha guardado anteriormente, haga clic en **abrir con**y, a continuación, haga clic en **Editor del registro**.  
   
 ## <a name="writing-to-the-user-settings-store"></a>Escritura en el almacén de configuración de usuario  
   
-1. Cree un proyecto VSIX denominado UserSettingsStoreExtension y, a continuación, agregue un comando personalizado denominado UserSettingsStoreCommand. Para obtener más información sobre cómo crear un comando personalizado, consulte [creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. Cree un proyecto VSIX denominado UserSettingsStoreExtension y, a continuación, agregue un comando personalizado denominado UserSettingsStoreCommand. Para obtener más información sobre cómo crear un comando personalizado, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md) .  
   
-2. En UserSettingsStoreCommand.cs, agregue las siguientes instrucciones using:  
+2. En UserSettingsStoreCommand.cs, agregue las siguientes instrucciones Using:  
   
     ```csharp  
     using System.Collections.Generic;  
@@ -53,7 +53,7 @@ Configuración de usuario son valores grabables como las de la **herramientas / 
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3. En MenuItemCallback, elimine el cuerpo del método y obtener el usuario del almacén de configuración, como se indica a continuación:  
+3. En MenuItemCallback, elimine el cuerpo del método y obtenga el almacén de configuración de usuario, como se indica a continuación:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -63,7 +63,7 @@ Configuración de usuario son valores grabables como las de la **herramientas / 
     }  
     ```  
   
-4. Ahora, averigüe si ya está establecido el Bloc de notas como una herramienta externa. Deberá recorrer en iteración todas las herramientas externas para determinar si la configuración de ToolCmd es "Notepad", como se indica a continuación:  
+4. Ahora, averigüe si el Bloc de notas ya está configurado como una herramienta externa. Debe recorrer en iteración todas las herramientas externas para determinar si el valor de ToolCmd es "Notepad", como se indica a continuación:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -87,7 +87,7 @@ Configuración de usuario son valores grabables como las de la **herramientas / 
   
     ```  
   
-5. Si no se ha establecido el Bloc de notas como una herramienta externa, establézcalo como sigue:  
+5. Si el Bloc de notas no se ha establecido como una herramienta externa, establézcalo de la siguiente manera:  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -123,10 +123,10 @@ Configuración de usuario son valores grabables como las de la **herramientas / 
     }  
     ```  
   
-6. Probar el código. Recuerde que agrega el Bloc de notas como una herramienta externa, por lo que debe revertir el registro antes de ejecutarlo una segunda vez.  
+6. Prueba del código Recuerde que agrega el Bloc de notas como una herramienta externa, por lo que debe revertir el registro antes de ejecutarlo una segunda vez.  
   
-7. Compilar el código e iniciar la depuración.  
+7. Compile el código e inicie la depuración.  
   
-8. En el **herramientas** menú, haga clic en **UserSettingsStoreCommand invocar**. Esto agregará el Bloc de notas para el **herramientas** menú.  
+8. En el menú **herramientas** , haga clic en **invocar UserSettingsStoreCommand**. Esto agregará el Bloc de notas al menú **herramientas** .  
   
-9. Ahora debería ver el Bloc de notas en las herramientas / opciones de menú y haga clic en **el Bloc de notas** debería abrirse una instancia del Bloc de notas.
+9. Ahora debería ver el Bloc de notas en el menú Herramientas/Opciones y, al hacer clic en **Bloc** de notas, debe aparecer una instancia del Bloc de notas.

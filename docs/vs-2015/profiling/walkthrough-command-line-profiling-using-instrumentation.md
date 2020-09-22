@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Generación de perfiles de línea de comandos utilizando la instrumentación | Documentos de Microsoft'
+title: 'Tutorial: Generar perfiles utilizando la instrumentación en la línea de comandos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439697"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842986"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Tutorial: Línea de comandos de generación de perfiles mediante instrumentación
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Tutorial: Generar perfiles utilizando la instrumentación en la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial le guiará a través de la generación de perfiles de una aplicación independiente de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] para recopilar información de tiempo detallada y llamar a datos del contador mediante el método de instrumentación de las herramientas de generación de perfiles. En este tutorial, se realizarán las siguientes tareas:  
@@ -41,9 +41,9 @@ Este tutorial le guiará a través de la generación de perfiles de una aplicaci
   
 - Conocimientos intermedios del uso de herramientas de la línea de comandos  
   
-- Una copia de la [muestra PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Una copia del [ejemplo PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
-- Para trabajar con la información proporcionada por la generación de perfiles, es preferible disponer de la información de símbolos de depuración. Para obtener más información, vea [Cómo: Información de símbolos de referencia Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+- Para trabajar con la información proporcionada por la generación de perfiles, es preferible disponer de la información de símbolos de depuración. Para obtener más información, vea [Cómo: hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Generación de perfiles de la línea de comandos mediante el método de instrumentación  
  La instrumentación es un método de generación de perfiles mediante el cual versiones de los binarios de los que se generan perfiles creadas especialmente contienen funciones de sondeo que recopilan información de tiempo en la entrada y salida de funciones en un módulo instrumentado. Dado que este método de generación de perfiles es más invasor que el muestreo, conlleva una mayor cantidad de sobrecarga. Los binarios instrumentados también son más grandes que los binarios de depuración o lanzamiento, y no están pensados para su implementación.  
@@ -59,7 +59,7 @@ Este tutorial le guiará a través de la generación de perfiles de una aplicaci
   
 3. Cambie el directorio de trabajo por el directorio que contiene los binarios de PeopleTrax.  
   
-4. Cree un directorio para que contenga los informes basados en archivos. Escriba el comando siguiente:  
+4. Cree un directorio para que contenga los informes basados en archivos. Escriba el siguiente comando:  
   
     ```  
     md Reports  
@@ -103,7 +103,7 @@ Este tutorial le guiará a través de la generación de perfiles de una aplicaci
   
 11. Cierre el Bloc de notas y después cierre la aplicación **PeopleTrax**.  
   
-12. Cierre el generador de perfiles. Escriba el comando siguiente:  
+12. Cierre el generador de perfiles. Escriba el siguiente comando:  
   
     ```  
     VSPerfCmd /shutdown  
@@ -115,7 +115,7 @@ Este tutorial le guiará a través de la generación de perfiles de una aplicaci
     VSPerfCLREnv /off  
     ```  
   
-14. Use la herramienta VSPerfReport para generar o separar por comas archivos de informes de valores (.csv). Tipo:  
+14. Use la herramienta VSPerfReport para generar o separar por comas archivos de informes de valores (.csv). Escriba:  
   
     ```  
     VSPerfReport Reports\Report.vsp /output:Reports /summary:all  
@@ -123,9 +123,9 @@ Este tutorial le guiará a través de la generación de perfiles de una aplicaci
   
      Puede analizar los informes generados en un programa de hoja de cálculo, o bien puede usar el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para analizar los datos de generación de perfiles en el archivo Report.vsp. Para obtener más información, consulte [Analizar datos de las herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md).  
   
-## <a name="see-also"></a>Vea también  
- [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)   
+## <a name="see-also"></a>Consulte también  
+ [Introducción a la sesión de rendimiento](../profiling/performance-session-overview.md)   
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
+ [Descripción de los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
  [Vistas de informes de rendimiento](../profiling/performance-report-views.md)

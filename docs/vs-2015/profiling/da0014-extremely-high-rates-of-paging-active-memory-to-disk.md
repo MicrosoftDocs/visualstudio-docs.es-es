@@ -15,20 +15,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dbf391f96cd21f0c473589d4992083963ff65d55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440915"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842907"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id. de regla | DA0014 |  
+Identificador de regla | DA0014 |  
 | Categoría | Memoria y paginación |  
-| Método de generación de perfiles | Todos los |  
+| Método de generación de perfiles | Todo |  
 | Mensaje | Se está produciendo una frecuencia extremadamente alta de paginación de memoria activa en el disco. Puede que la aplicación esté enlazada a memoria.|  
-| Tipo de regla | Advertencia |  
+| Tipo de regla | ADVERTENCIA |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 25 ejemplos para activar esta regla.  
   

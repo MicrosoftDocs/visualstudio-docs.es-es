@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Crear un arranque personalizado con un aviso de privacidad | Documentos de Microsoft'
+title: Creación de un arranque personalizado con un mensaje de privacidad
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,150 +20,150 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00c5266d57ae5633313465796c718d989f783ea6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8fbb05fcfdb1a639855ca31e9574d3037559610
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406864"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809281"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Tutorial: Creación de un arranque personalizado con un mensaje de privacidad
-Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuando estén disponibles los ensamblados con versiones más recientes de los archivos y las versiones de ensamblado. Para asegurarse de que los clientes dar su consentimiento a este comportamiento, puede mostrar un aviso de privacidad a ellos. A continuación, puede elegir si se debe conceder permiso a la aplicación se actualice automáticamente. Si la aplicación no tiene permiso para actualizar automáticamente, no se instala.
+Puede configurar las aplicaciones ClickOnce para que se actualicen automáticamente cuando estén disponibles los ensamblados con versiones de archivos y versiones de ensamblado más recientes. Para asegurarse de que los clientes tienen el consentimiento de este comportamiento, puede mostrarles un aviso de privacidad. A continuación, pueden elegir si se debe conceder permiso a la aplicación para que se actualice automáticamente. Si no se permite que la aplicación se actualice automáticamente, no se instala.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - Visual Studio 2010.
 
-## <a name="create-an-update-consent-dialog-box"></a>Crear un cuadro de diálogo de consentimiento de actualización
- Para mostrar un aviso de privacidad, cree una aplicación que solicita el lector dé su consentimiento a las actualizaciones automáticas para la aplicación.
+## <a name="create-an-update-consent-dialog-box"></a>Cuadro de diálogo crear un consentimiento de actualización
+ Para mostrar un aviso de privacidad, cree una aplicación que pida al lector que dé su consentimiento a las actualizaciones automáticas de la aplicación.
 
 #### <a name="to-create-a-consent-dialog-box"></a>Para crear un cuadro de diálogo de consentimiento
 
-1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
+1. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
 
-2. En el **nuevo proyecto** cuadro de diálogo, haga clic en **Windows**y, a continuación, haga clic en **WindowsFormsApplication**.
+2. En el cuadro de diálogo **nuevo proyecto** , haga clic en **ventanas**y, a continuación, haga clic en **WindowsFormsApplication**.
 
-3. Para el **nombre**, tipo **ConsentDialog**y, a continuación, haga clic en **Aceptar**.
+3. En el **nombre**, escriba **ConsentDialog**y, a continuación, haga clic en **Aceptar**.
 
 4. En el diseñador, haga clic en el formulario.
 
-5. En el **propiedades** ventana, cambie el **texto** propiedad **cuadro de diálogo de consentimiento para actualizaciones**.
+5. En la ventana **propiedades** , cambie la propiedad **texto** a **cuadro de diálogo Actualizar consentimiento**.
 
-6. En el **cuadro de herramientas**, expanda **todos los formularios de Windows**y arrastre un **etiqueta** control al formulario.
+6. En el **cuadro de herramientas**, expanda **todos los Windows Forms**y arrastre un control **etiqueta** al formulario.
 
-7. En el diseñador, haga clic en el control de etiqueta.
+7. En el diseñador, haga clic en el control etiqueta.
 
-8. En el **propiedades** ventana, cambie el **texto** propiedad bajo **apariencia** al siguiente:
+8. En la ventana **propiedades** , cambie la propiedad **texto** en **apariencia** a lo siguiente:
 
-    Comprueba la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en "Acepto", autorizar a la aplicación para buscar e instalar actualizaciones automáticamente desde Internet.
+    La aplicación que va a instalar comprueba las actualizaciones más recientes en la Web. Al hacer clic en "Acepto", autoriza a la aplicación a buscar e instalar actualizaciones automáticamente desde Internet.
 
-9. En el **cuadro de herramientas**, arrastre un **casilla** control a la mitad del formulario.
+9. En el **cuadro de herramientas**, arrastre un control **CheckBox** hasta el centro del formulario.
 
-10. En el **propiedades** ventana, cambie el **texto** propiedad bajo **diseño** a **acepto**.
+10. En la ventana **propiedades** , cambie la propiedad **texto** en **diseño** a **acepto**.
 
-11. En el **cuadro de herramientas**, arrastre un **botón** control a la parte inferior izquierda del formulario.
+11. En el **cuadro de herramientas**, arrastre un control de **botón** a la parte inferior izquierda del formulario.
 
-12. En el **propiedades** ventana, cambie el **texto** propiedad bajo **diseño** a **continuar**.
+12. En la ventana **propiedades** , cambie la propiedad **texto** en **diseño** para **continuar**.
 
-13. En el **propiedades** ventana, cambie el **(nombre)** propiedad bajo **diseño** a **por ProceedButton**.
+13. En la ventana **propiedades** , cambie la propiedad **(Name)** en **diseño** a **ProceedButton**.
 
-14. En el **cuadro de herramientas**, arrastre un **botón** control a la parte inferior derecha del formulario.
+14. En el **cuadro de herramientas**, arrastre un control de **botón** hasta la parte inferior derecha del formulario.
 
-15. En el **propiedades** ventana, cambie el **texto** propiedad bajo **diseño** a **cancelar**.
+15. En la ventana **propiedades** , cambie la propiedad **texto** en **diseño** a **Cancelar**.
 
-16. En el **propiedades** ventana, cambie el **(nombre)** propiedad bajo **diseño** a **CancelButton**.
+16. En la ventana **propiedades** , cambie la propiedad **(Name)** en **diseño** a **CancelButton**.
 
-17. En el diseñador, haga doble clic en el **acepto** checkbox que genere el controlador de eventos CheckedChanged.
+17. En el diseñador, haga doble clic en la casilla **acepto** para generar el controlador de eventos CheckedChanged.
 
 18. En el archivo de código Form1, agregue el código siguiente para el controlador de eventos CheckedChanged.
 
      [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
      [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]
 
-19. Actualizar el constructor de clase para deshabilitar el **continuar** botón de forma predeterminada.
+19. Actualice el constructor de clase para deshabilitar el botón **continuar** de forma predeterminada.
 
      [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
      [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]
 
-20. En el archivo de código Form1, agregue el siguiente código para una variable booleana para realizar un seguimiento si el usuario final ha dado su consentimiento para actualizaciones en línea.
+20. En el archivo de código Form1, agregue el siguiente código para que una variable booleana realice el seguimiento si el usuario final ha dado su consentimiento a las actualizaciones en línea.
 
      [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
      [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]
 
-21. En el diseñador, haga doble clic en el **continuar** botón para generar el controlador de eventos Click.
+21. En el diseñador, haga doble clic en el botón **continuar** para generar el controlador de eventos Click.
 
-22. En el archivo de código Form1, agregue el código siguiente al controlador de eventos Click para el **continuar** botón.
+22. En el archivo de código Form1, agregue el código siguiente al controlador de eventos click para el botón **continuar** .
 
      [!code-csharp[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
      [!code-vb[ConsentDialog#2](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.vb)]
 
-23. En el diseñador, haga doble clic en el **cancelar** botón para generar el controlador de eventos Click.
+23. En el diseñador, haga doble clic en el botón **Cancelar** para generar el controlador de eventos Click.
 
-24. En el archivo de código Form1, agregue el código siguiente para el controlador de eventos Click para el **cancelar** botón.
+24. En el archivo de código Form1, agregue el código siguiente para el controlador de eventos click para el botón **Cancelar** .
 
      [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
      [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]
 
-25. Actualizar la aplicación para devolver un error si el usuario final no dar su consentimiento para actualizaciones en línea.
+25. Actualice la aplicación para que devuelva un error si el usuario final no da su consentimiento para las actualizaciones en línea.
 
-     Para desarrolladores de Visual Basic:
+     Solo para desarrolladores de Visual Basic:
 
-    1. En **el Explorador de soluciones**, haga clic en **ConsentDialog**.
+    1. En **Explorador de soluciones**, haga clic en **ConsentDialog**.
 
-    2. En el **proyecto** menú, haga clic en **Agregar módulo**y, a continuación, haga clic en **agregar**.
+    2. En el menú **proyecto** , haga clic en **Agregar módulo**y, a continuación, haga clic en **Agregar**.
 
-    3. En el *Module1.vb* archivo de código, agregue el código siguiente.
+    3. En el archivo de código *Module1. VB* , agregue el código siguiente.
 
         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
 
-    4. En el **proyecto** menú, haga clic en **ConsentDialog propiedades**y, a continuación, haga clic en el **aplicación** ficha.
+    4. En el menú **proyecto** , haga clic en **propiedades de ConsentDialog**y, a continuación, haga clic en la pestaña **aplicación** .
 
-    5. Desactive la opción **Habilitar marco de trabajo de aplicación**.
+    5. Desactive **Habilitar marco de trabajo**de la aplicación.
 
-    6. En el **objeto Startup** menú desplegable, seleccione **Module1**.
+    6. En el menú desplegable **objeto de inicio** , seleccione **Module1**.
 
        > [!NOTE]
-       > Al deshabilitar el marco de aplicación, deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+       > Al deshabilitar el marco de trabajo de la aplicación, se deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, la pantalla de presentación, la aplicación de instancia única, etc. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
-       Visual C# sólo para programadores:
+       Solo para desarrolladores de Visual C#:
 
-       Abra el *Program.cs* archivo de código y agregue el código siguiente.
+       Abra el archivo de código *Program.CS* y agregue el código siguiente.
 
        [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]
 
-26. En el **compilar** menú, haga clic en **BuildSolution**.
+26. En el menú **compilar** , haga clic en **BuildSolution**.
 
 ## <a name="create-the-custom-bootstrapper-package"></a>Crear el paquete de programa previo personalizado
- Para mostrar el aviso de privacidad a los usuarios finales, puede crear un paquete de arranque personalizado para la aplicación del cuadro de diálogo de consentimiento para actualizaciones e incluirlo como requisito previo en todas las aplicaciones ClickOnce.
+ Para mostrar el aviso de privacidad a los usuarios finales, puede crear un paquete de programa previo personalizado para la aplicación de cuadro de diálogo de consentimiento de actualización e incluirlo como requisito previo en todas las aplicaciones ClickOnce.
 
- Este procedimiento muestra cómo crear un paquete de programa previo personalizado mediante la creación de los siguientes documentos:
+ En este procedimiento se muestra cómo crear un paquete de programa previo personalizado mediante la creación de los siguientes documentos:
 
-- Un *product.xml* archivo de manifiesto para describir el contenido del programa previo.
+- Un archivo de manifiesto de *product.xml* para describir el contenido del programa previo.
 
-- Un *package.xml* archivo de manifiesto para enumerar los aspectos específicos de la localización de su paquete, como cadenas y los términos de licencia del software.
+- Un archivo de manifiesto de *package.xml* para enumerar los aspectos específicos de la localización del paquete, como las cadenas y los términos de licencia del software.
 
-- Un documento para los términos de licencia del software.
+- Documento para los términos de la licencia de software.
 
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Paso 1: Para crear el directorio de arranque
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Paso 1: para crear el directorio de arranque
 
-1. Cree un directorio denominado **UpdateConsentDialog** en el *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.
-
-    > [!NOTE]
-    > Necesita privilegios administrativos para crear esta carpeta.
-
-2. En el *UpdateConsentDialog* directorio, cree un subdirectorio denominado *en*.
+1. Cree un directorio denominado **UpdateConsentDialog** en *%ProgramFiles%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.
 
     > [!NOTE]
-    > Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.
+    > Es posible que necesite privilegios de administrador para crear esta carpeta.
 
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Paso 2: Para crear el archivo de manifiesto product.xml
+2. En el directorio *UpdateConsentDialog* , cree un subdirectorio denominado *en*.
 
-1. Cree un archivo de texto llamado *product.xml*.
+    > [!NOTE]
+    > Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede Agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendrán las cadenas y los paquetes de idioma en francés y alemán, si es necesario.
 
-2. En el *product.xml* , agregue el siguiente código XML. Asegúrese de que no se sobrescriba el código XML existente.
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Paso 2: para crear el archivo de manifiesto de product.xml
+
+1. Cree un archivo de texto denominado *product.xml*.
+
+2. En el archivo de *product.xml* , agregue el siguiente código XML. Asegúrese de que no sobrescribe el código XML existente.
 
     ```xml
     <Product
@@ -188,13 +189,13 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
     </Product>
     ```
 
-3. Guarde el archivo en el directorio de arranque UpdateConsentDialog.
+3. Guarde el archivo en el directorio de arranque de UpdateConsentDialog.
 
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Paso 3: Para crear el archivo de manifiesto package.xml y los términos de licencia de software
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Paso 3: para crear el archivo de manifiesto de package.xml y los términos de licencia de software
 
-1. Cree un archivo de texto llamado *package.xml*.
+1. Cree un archivo de texto denominado *package.xml*.
 
-2. En el *package.xml* , agregue el siguiente código XML para definir la configuración regional e incluir los términos de licencia del software. Asegúrese de que no se sobrescriba el código XML existente.
+2. En el archivo de *package.xml* , agregue el siguiente código XML para definir la configuración regional e incluya los términos de la licencia de software. Asegúrese de que no sobrescribe el código XML existente.
 
     ```xml
     <Package
@@ -216,91 +217,91 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
     </Package>
     ```
 
-3. Guarde el archivo en el subdirectorio en el directorio de arranque UpdateConsentDialog.
+3. Guarde el archivo en el subdirectorio en el directorio de arranque de UpdateConsentDialog.
 
-4. Crear un documento denominado *eula.rtf* para los términos de licencia del software.
-
-    > [!NOTE]
-    > Los términos de licencia de software deben incluir información sobre licencias, garantía, responsabilidades y las leyes locales. Estos archivos deben ser específicos de la configuración regional, así que asegúrese de que el archivo se guarda en un formato que admita caracteres MBCS o UNICODE. Consulte su asesoría jurídica sobre el contenido de los términos de licencia del software.
-
-5. Guarde el documento en el subdirectorio en el *UpdateConsentDialog* directorio de arranque.
-
-6. Si es necesario, cree un nuevo *package.xml* manifiesto archivo y un nuevo *eula.rtf* documento para los términos de licencia de software para cada configuración regional. Por ejemplo, si ha creado subdirectorios para las configuraciones regionales fr y de, crear archivos de manifiesto independiente package.xml y términos de licencia del software y guardarlos en los subdirectorios fr y de.
-
-## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Establecer la actualización de consentimiento de la aplicación como un requisito previo
- En Visual Studio, puede establecer la aplicación de aceptación de actualizaciones como requisito previo.
-
-#### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para establecer la actualización de consentimiento de la aplicación como un requisito previo
-
-1. En **el Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
-
-2. En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.
-
-3. Haga clic en el **publicar** página y, a continuación, haga clic en **requisitos previos**.
-
-4. Seleccione **actualizar cuadro de diálogo de consentimiento**.
+4. Cree un documento denominado *EULA. rtf* para los términos de la licencia de software.
 
     > [!NOTE]
-    > Es posible que deba cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento Update en el cuadro de diálogo requisitos previos.
+    > Los términos de la licencia de software deben incluir información sobre licencias, garantías, responsabilidades y leyes locales. Estos archivos deben ser específicos de la configuración regional, por lo que debe asegurarse de que el archivo se guarda en un formato que admita caracteres MBCS o Unicode. Consulte al departamento legal el contenido de los términos de licencia del software.
+
+5. Guarde el documento en el subdirectorio en el directorio de arranque de *UpdateConsentDialog* .
+
+6. Si es necesario, cree un nuevo archivo de manifiesto de *package.xml* y un nuevo documento *EULA. rtf* para los términos de licencia de software de cada configuración regional. Por ejemplo, si creó subdirectorios para las configuraciones regionales fr y de, cree archivos de manifiesto de package.xml independientes y términos de licencia de software y guárdelos en los subdirectorios fr y de.
+
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Establecer la aplicación de consentimiento de actualización como requisito previo
+ En Visual Studio, puede establecer la aplicación de consentimiento de actualización como requisito previo.
+
+#### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para establecer la aplicación de consentimiento de actualización como requisito previo
+
+1. En **Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
+
+2. En el menú **proyecto** , haga clic en **propiedades**de *projectname* .
+
+3. Haga clic en la página **publicar** y, a continuación, haga clic en **requisitos previos**.
+
+4. Seleccione el **cuadro de diálogo Actualizar consentimiento**.
+
+    > [!NOTE]
+    > Es posible que tenga que cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento de la actualización en el cuadro de diálogo requisitos previos.
 
 5. Haga clic en **Aceptar**.
 
 ## <a name="create-and-test-the-setup-program"></a>Crear y probar el programa de instalación
- Después de configurar la aplicación de aceptación de la actualización como un requisito previo, puede generar el instalador y el programa previo para la aplicación.
+ Después de establecer la aplicación de consentimiento de actualización como requisito previo, puede generar el instalador y el programa previo para la aplicación.
 
-#### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Para crear y probar el programa de instalación, no haga clic en acepto
+#### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Para crear y probar el programa de instalación sin hacer clic en Acepto
 
-1. En **el Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
+1. En **Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
 
-2. En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.
+2. En el menú **proyecto** , haga clic en **propiedades**de *projectname* .
 
-3. Haga clic en el **publicar** página y, a continuación, haga clic en **publicar ahora**.
+3. Haga clic en la página **publicar** y, a continuación, haga clic en **publicar ahora**.
 
-4. Si el resultado de la publicación no se abre automáticamente, navegue hasta el resultado de la publicación.
+4. Si el resultado de la publicación no se abre automáticamente, vaya a la salida de publicación.
 
-5. Ejecute el *Setup.exe* programa.
+5. Ejecute el programa *Setup.exe* .
 
-     El programa de instalación muestra el contrato de licencia del software de cuadro de diálogo de consentimiento de actualización.
+     El programa de instalación muestra el contrato de licencia de software del cuadro de diálogo de consentimiento de actualización.
 
-6. Lea el contrato de licencia de software y, a continuación, haga clic en **Accept**.
+6. Lea el contrato de licencia de software y, a continuación, haga clic en **Aceptar**.
 
-     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el texto siguiente: Comprueba la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar a la aplicación para buscar actualizaciones automáticamente en Internet.
+     Aparece la aplicación actualizar cuadro de diálogo de consentimiento y muestra el texto siguiente: la aplicación que va a instalar comprueba las actualizaciones más recientes en la Web. Al hacer clic en Acepto, autoriza a la aplicación a buscar actualizaciones automáticamente en Internet.
 
 7. Cierre la aplicación o haga clic en Cancelar.
 
-     La aplicación muestra un error: Se produjo un error durante la instalación de componentes del sistema para *ApplicationName*. El programa de instalación no puede continuar hasta que se hayan instalado correctamente todos los componentes del sistema.
+     La aplicación muestra un error: error al instalar componentes del sistema para *applicationName*. El programa de instalación no puede continuar hasta que todos los componentes del sistema se hayan instalado correctamente.
 
-8. Haga clic en detalles para mostrar el mensaje de error siguiente: Cuadro de diálogo de componente actualización consentimiento no se pudo instalar con el mensaje de error siguiente: "No se acepta el contrato de actualización automática". No se pudo instalar los componentes siguientes:-cuadro de diálogo de consentimiento de actualización
+8. Haga clic en detalles para mostrar el mensaje de error siguiente: no se pudo instalar el cuadro de diálogo de consentimiento de actualización de componentes con el mensaje de error siguiente: "no se aceptó el acuerdo de actualización automática". No se pudieron instalar los siguientes componentes:-cuadro de diálogo de consentimiento de actualización
 
 9. Haga clic en **Cerrar**.
 
-#### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Para crear y probar el programa de instalación, haga clic en acepto
+#### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Para crear y probar el programa de instalación, haga clic en Acepto
 
-1. En **el Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
+1. En **Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.
 
-2. En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.
+2. En el menú **proyecto** , haga clic en **propiedades**de *projectname* .
 
-3. Haga clic en el **publicar** página y, a continuación, haga clic en **publicar ahora**.
+3. Haga clic en la página **publicar** y, a continuación, haga clic en **publicar ahora**.
 
-4. Si el resultado de la publicación no se abre automáticamente, navegue hasta el resultado de la publicación.
+4. Si el resultado de la publicación no se abre automáticamente, vaya a la salida de publicación.
 
-5. Ejecute el *Setup.exe* programa.
+5. Ejecute el programa *Setup.exe* .
 
-     El programa de instalación muestra el contrato de licencia del software de cuadro de diálogo de consentimiento de actualización.
+     El programa de instalación muestra el contrato de licencia de software del cuadro de diálogo de consentimiento de actualización.
 
-6. Lea el contrato de licencia de software y, a continuación, haga clic en **Accept**.
+6. Lea el contrato de licencia de software y, a continuación, haga clic en **Aceptar**.
 
-     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el texto siguiente: Comprueba la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar a la aplicación para buscar actualizaciones automáticamente en Internet.
+     Aparece la aplicación actualizar cuadro de diálogo de consentimiento y muestra el texto siguiente: la aplicación que va a instalar comprueba las actualizaciones más recientes en la Web. Al hacer clic en Acepto, autoriza a la aplicación a buscar actualizaciones automáticamente en Internet.
 
-7. Haga clic en **acepto**y, a continuación, haga clic en **continuar**.
+7. Haga **clic en Acepto y**, a continuación, haga clic en **continuar**.
 
-     La aplicación comienza a instalar.
+     Se inicia la instalación de la aplicación.
 
-8. Si aparece el cuadro de diálogo de instalación de la aplicación, haga clic en **instalar**.
+8. Si aparece el cuadro de diálogo instalación de la aplicación, haga clic en **instalar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)
-- [Crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md)
+- [Crear paquetes de programa previo](../deployment/creating-bootstrapper-packages.md)
 - [Cómo: Crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md)
-- [Cómo: Creación de un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md)
+- [Cómo: Crear un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md)
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

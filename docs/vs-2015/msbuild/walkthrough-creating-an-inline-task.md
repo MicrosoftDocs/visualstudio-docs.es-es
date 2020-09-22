@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445623"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843191"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Tutorial: Crear una tarea insertada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Para obtener más información, vea [Tareas insertadas](../msbuild/msbuild-inline-tasks.md).  
+Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Para obtener más información, vea [tareas en línea](../msbuild/msbuild-inline-tasks.md).  
   
  En este tutorial se muestra la forma de crear y ejecutar estas tareas insertadas:  
   
@@ -47,7 +47,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   
 #### <a name="to-create-and-modify-a-project-file"></a>Para crear y modificar un archivo de proyecto  
   
-1. En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.  
+1. En Visual Studio, en el menú **archivo** , haga clic en **nuevo** y, a continuación, haga clic en **proyecto**.  
   
 2. En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea `InlineTasks`.  
   
@@ -95,9 +95,9 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   
 1. Haga clic en **Inicio** y en **Todos los programas** y, a continuación, busque la carpeta **Visual Studio Tools** y haga clic en **Símbolo del sistema de Visual Studio**.  
   
-2. En la **ventana del símbolo del sistema**, busque la carpeta que contiene el archivo del proyecto; en este caso, D:\InlineTasks\InlineTasks\\.  
+2. En la **ventana del símbolo del sistema**, busque la carpeta que contiene el archivo del proyecto; en este caso, D:\InlineTasks\InlineTasks\\ .  
   
-3. Escriba **msbuild** sin modificadores de comando y, a continuación, presione ENTRAR. De forma predeterminada, esto compila el archivo InlineTasks.csproj y procesa el destino TestBuild predeterminado, que llama a la tarea Hello.  
+3. Escriba **msbuild** sin modificadores de comando y, a continuación, presione Entrar. De forma predeterminada, esto compila el archivo InlineTasks.csproj y procesa el destino TestBuild predeterminado, que llama a la tarea Hello.  
   
 4. Examine la salida en la **ventana del símbolo del sistema**. Debe ver esta línea:  
   
@@ -131,7 +131,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
    </Target>  
    ```  
   
-2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione ENTRAR. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea Echo.  
+2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione Entrar. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea Echo.  
   
 3. Examine la salida en la **ventana del símbolo del sistema**. Debe ver esta línea:  
   
@@ -167,7 +167,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
    </Target>  
    ```  
   
-2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione ENTRAR. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea Echo.  
+2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione Entrar. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea Echo.  
   
 3. Examine la salida en la **ventana del símbolo del sistema**. Debe ver esta línea:  
   
@@ -222,7 +222,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
    </Target>  
    ```  
   
-2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione ENTRAR. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea RegX.  
+2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione Entrar. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea RegX.  
   
 3. Examine la salida en la **ventana del símbolo del sistema**. Debe ver las siguientes líneas:  
   
@@ -241,7 +241,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   El valor de los parámetros de entrada se establece cuando el destino TestBuild llama a la tarea RegX. La tarea RegX lee todos los archivos y devuelve la lista de archivos que coincide con la expresión regular. Esta lista se devuelve como el parámetro de salida `Result`, que se emite como el elemento `MatchedFiles` de MSBuild.  
   
 ### <a name="handling-reserved-characters"></a>Control de los caracteres reservados  
- El analizador de MSBuild procesa las tareas insertadas como XML. Los caracteres que tienen significado reservado en XML, por ejemplo "\<" y ">", se detectan y controlan como si fueran XML, y no código fuente de .NET. Para incluir los caracteres reservados en expresiones de código como `Files.Length > 0`, escriba el elemento `Code` para que su contenido se incluya en una expresión CDATA, del modo siguiente:  
+ El analizador de MSBuild procesa las tareas insertadas como XML. Los caracteres que tienen significado reservado en XML, por ejemplo "\<" and ">", se detectan y controlan como si fueran XML, y no código fuente de .NET. Para incluir los caracteres reservados en expresiones de código como `Files.Length > 0`, escriba el elemento `Code` para que su contenido se incluya en una expresión CDATA, del modo siguiente:  
   
  `<Code Type="Fragment" Language="cs">`  
   
@@ -253,7 +253,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   
  `</Code>`  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Tareas insertadas](../msbuild/msbuild-inline-tasks.md)   
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Destinos](../msbuild/msbuild-targets.md)

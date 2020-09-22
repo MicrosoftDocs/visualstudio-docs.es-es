@@ -1,5 +1,5 @@
 ---
-title: Configuración de destinos y tareas | Microsoft Docs
+title: Procedimiento Configurar destinos y tareas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8ef52638858160822fcc271a53513b130afc3f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440051"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842783"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,5 +110,5 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
 > [!NOTE]
 > Los parámetros de tarea se evalúan en el contexto del nodo primario, no en el contexto del host de la tarea. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación de Archivos de programa) se evaluarán como el valor que coincide con el nodo primario.  Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)

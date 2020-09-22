@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b1aa0eafe321f41d5f9dcf9622e44f9079fc946
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64801718"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842711"
 ---
-# <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
+# <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una marca que especifica si el símbolo de datos se ha dividido en una agregación o una colección de otros símbolos; el compilador trata los símbolos como entidades independientes, incluso aunque realmente forman parte de un símbolo de mayor tamaño.  
+Recupera una marca que especifica si el símbolo de datos se ha dividido en una agregación o colección de otros símbolos; el compilador trata los símbolos como entidades independientes, aunque realmente formen parte de un símbolo más grande.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,24 +35,24 @@ HRESULT get_isSplitted(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Devuelve `TRUE` si el símbolo se ha dividido en un agregado de símbolos; de lo contrario, devuelve `FALSE`.  
+ enuncia Devuelve `TRUE` si el símbolo se ha dividido en un agregado de símbolos; de lo contrario, devuelve `FALSE` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="remarks"></a>Comentarios  
- El [Get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) devuelve del método `TRUE` para todos los símbolos que forman parte de un símbolo de división.  
+## <a name="remarks"></a>Notas  
+ El método [IDiaSymbol:: get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) devuelve `TRUE` para todos los símbolos que forman parte de un símbolo de división.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v8.0|  
+|Versión:|SDK de DIA v 8.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Escribir un visualizador | Documentos de Microsoft
+title: 'Cómo: escribir un visualizador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,19 +22,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce50276e4e83a1a055294c8e2b6e09cd0f93d54d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440161"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843266"
 ---
-# <a name="how-to-write-a-visualizer"></a>Procedimiento Escribir un visualizador
+# <a name="how-to-write-a-visualizer"></a>Cómo: Escribir un visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede escribir un visualizador personalizado para un objeto de cualquier clase administrada, excepto <xref:System.Object> o <xref:System.Array>.  
   
 > [!NOTE]
-> En **Store** aplicaciones, sólo el texto estándar, se admiten los visualizadores HTML, XML y JSON. No se admiten los visualizadores personalizados (creados por el usuario).  
+> En las aplicaciones de la **tienda** , solo se admiten los visualizadores estándar de texto, HTML, XML y JSON. No se admiten los visualizadores personalizados (creados por el usuario).  
   
  La arquitectura de un visualizador del depurador tiene dos partes:  
   
@@ -44,7 +44,7 @@ Puede escribir un visualizador personalizado para un objeto de cualquier clase a
   
   El objeto de datos que desea visualizar (un objeto String, por ejemplo) existe en el proceso depurado. Por lo tanto, el lado depurado tiene que enviar el objeto de datos al lado depurador, que después puede mostrarlo mediante la interfaz de usuario creada.  
   
-  El lado depurador recibe este objeto de datos que se visualizará desde un *proveedor de objetos* que implementa el <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaz. El lado depurado envía el objeto de datos a través de la *origen del objeto*, que se deriva de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. El proveedor de objetos también puede devolver los datos al origen del objeto, lo que permite escribir un visualizador que edite datos, además de mostrarlos. El proveedor de objetos puede ser reemplazado para comunicarse con el evaluador de expresiones y, por consiguiente, con el origen del objeto.  
+  El lado depurador recibe este objeto de datos que se visualizará a partir de un *proveedor de objetos* que implementa la <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaz. El lado depurado envía el objeto de datos a través del *origen del objeto*, que se deriva de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> . El proveedor de objetos también puede devolver los datos al origen del objeto, lo que permite escribir un visualizador que edite datos, además de mostrarlos. El proveedor de objetos puede ser reemplazado para comunicarse con el evaluador de expresiones y, por consiguiente, con el origen del objeto.  
   
   El lado depurado y el lado depurador se comunican entre sí a través de <xref:System.IO.Stream>. Se proporcionan métodos para serializar un objeto de datos en <xref:System.IO.Stream> y deserializar <xref:System.IO.Stream> en un objeto de datos.  
   
@@ -54,11 +54,11 @@ Puede escribir un visualizador personalizado para un objeto de cualquier clase a
   
   Puede utilizar <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> para mostrar formularios Windows Forms, cuadros de diálogo y controles desde el visualizador.  
   
-  La compatibilidad con los tipos genéricos es limitada. Puede escribir un visualizador para un destino que sólo es un tipo genérico si el tipo genérico es un tipo abierto. Esta restricción es igual que la restricción de uso del atributo `DebuggerTypeProxy`. Para obtener más información, consulte [utilizando el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
+  La compatibilidad con los tipos genéricos es limitada. Puede escribir un visualizador para un destino que sólo es un tipo genérico si el tipo genérico es un tipo abierto. Esta restricción es igual que la restricción de uso del atributo `DebuggerTypeProxy`. Para obtener más información, vea [usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
   
   Los visualizadores personalizados pueden tener consideraciones de seguridad. Consulte [consideraciones de seguridad del visualizador](../debugger/visualizer-security-considerations.md).  
   
-  Los siguientes procedimientos proporcionan una visión de alto nivel de los pasos necesarios para crear un visualizador. Para obtener una explicación más detallada, consulte [Tutorial: Escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Los siguientes procedimientos proporcionan una visión de alto nivel de los pasos necesarios para crear un visualizador. Para obtener una explicación más detallada, vea [Tutorial: escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Para crear el lado depurador  
   
@@ -76,8 +76,8 @@ Puede escribir un visualizador personalizado para un objeto de cualquier clase a
   
 2. Si desea que el visualizador pueda editar y mostrar objetos de datos, además de mostrarlos, será necesario invalidar los métodos `TransferData` o `CreateReplacementObject` de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.  
   
-## <a name="see-also"></a>Vea también  
- [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)   
- [Cómo: Probar y depurar un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)   
+## <a name="see-also"></a>Consulte también  
+ [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md)   
+ [Cómo: probar y depurar un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [Consideraciones de seguridad del visualizador](../debugger/visualizer-security-considerations.md)

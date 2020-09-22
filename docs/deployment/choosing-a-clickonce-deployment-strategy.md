@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406681"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842395"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Selección de una estrategia de implementación de ClickOnce
 Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; la estrategia que elija depende principalmente del tipo de aplicación que vaya a implementar. Las tres estrategias de implementación son las siguientes:
@@ -32,14 +32,14 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
 - Iniciar la aplicación desde el Web o desde un recurso compartido de red
 
     > [!NOTE]
-    > Además de seleccionar una estrategia de implementación, también seleccionará una estrategia para proporcionar actualizaciones de la aplicación. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+    > Además de seleccionar una estrategia de implementación, también seleccionará una estrategia para proporcionar actualizaciones de la aplicación. Para obtener más información, vea [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="install-from-the-web-or-a-network-share"></a>Instalación desde Internet o un recurso compartido de red
  Con esta estrategia, su aplicación se implementa en un servidor web o en un recurso compartido de archivos de red. Cuando un usuario final desea instalar la aplicación, hace clic en un icono de una página Web o hace doble clic en un icono del recurso compartido de archivos de red. A continuación se descarga la aplicación, se instala y se inicia en el equipo del usuario final. Se agregan elementos al menú **Inicio** y a **Agregar o quitar programas** en el **Panel de control**.
 
  Puesto que esta estrategia depende de la conectividad de la red, funciona mejor para las aplicaciones que se implementarán en usuarios con acceso a una red de área local o a una conexión a Internet de alta velocidad.
 
- Si implementa la aplicación del Web, puede pasar los argumentos a la aplicación cuando se activa a través de la dirección URL. Para obtener más información, vea [Cómo: Recuperación de información de la cadena de consulta de una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). No puede pasar argumentos a una aplicación que se activa mediante alguno de los demás métodos que se describen en este documento.
+ Si implementa la aplicación del Web, puede pasar los argumentos a la aplicación cuando se activa a través de la dirección URL. Para obtener más información, vea [Cómo: recuperar información de la cadena de consulta en una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). No puede pasar argumentos a una aplicación que se activa mediante alguno de los demás métodos que se describen en este documento.
 
  Para habilitar esta estrategia de implementación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], haga clic en **Del Web** o en **Desde una ruta de acceso UNC o un recurso compartido de archivos** en la página **Instalación** del Asistente para publicación.
 
@@ -72,7 +72,7 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
  Las aplicaciones orientadas a .NET Framework 2.0 requieren Internet Explorer.
 
 ## <a name="see-also"></a>Vea también
-- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Selección de una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Cómo: Publicar una aplicación ClickOnce con el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
+- [Cómo: publicar una aplicación ClickOnce con el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

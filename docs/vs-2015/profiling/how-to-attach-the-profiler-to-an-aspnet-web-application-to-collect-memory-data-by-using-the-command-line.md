@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Adjuntar el Profiler a una aplicación Web ASP.NET para recopilar datos de memoria mediante la línea de comandos | Documentos de Microsoft
+title: 'Cómo: Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de memoria mediante la línea de comandos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 454bcc4fe8e17530d71927d373a05f5f12beae61
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432849"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843043"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a una aplicación Web ASP.NET para recopilar datos de memoria mediante la línea de comandos
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de memoria mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo utilizar las herramientas de la línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para adjuntar el generador de perfiles a una aplicación web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] y recopilar datos sobre el número y tamaño de asignaciones de memoria de .NET Framework. También puede recopilar datos sobre la duración de los objetos de memoria de .NET Framework.  
@@ -57,11 +57,11 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
 5. Inicie el generador de perfiles. Tipo:  
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+    **VSPerfCmd**  [/Start](../profiling/start.md) **: sample**  [/Output](../profiling/output.md) **:** `OutputFile` [ `Options` ]  
 
    - La opción **/start:sample** inicializa el generador de perfiles.  
 
-   - La opción **/output:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).  
+   - La opción **/output:** `OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).  
 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:sample**.  
 
@@ -70,22 +70,22 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
    |                                 Opción                                  |                                                                                                                                                        Descripción                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                   Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso de trabajo de ASP.NET. Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.                    |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` |                   Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso de trabajo de ASP.NET. Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.                    |
    |              [/crosssession](../profiling/crosssession.md)              | Habilita la generación de perfiles de procesos en otros inicios de sesión. Esta opción es necesaria si la aplicación ASP.NET se ejecuta en otra sesión. El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**. |
-   |        [/waitstart](../profiling/waitstart.md) [**:**`Interval`]        |                                                      Especifica el número de segundos de espera para que el generador de perfiles se inicialice antes de que devuelva un error. Si no se especifica `Interval`, el generador de perfiles esperará indefinidamente. De manera predeterminada, **/start** termina inmediatamente.                                                      |
+   |        [/WaitStart](../profiling/waitstart.md) [**:** `Interval` ]        |                                                      Especifica el número de segundos de espera para que el generador de perfiles se inicialice antes de que devuelva un error. Si no se especifica `Interval`, el generador de perfiles esperará indefinidamente. De manera predeterminada, **/start** termina inmediatamente.                                                      |
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                         Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles.                                                                                                                         |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.                                                                                          |
 
 6. Inicie la aplicación web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] de la manera habitual.  
 
-7. Adjunte el generador de perfiles al proceso de trabajo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Tipo:  
+7. Adjunte el generador de perfiles al proceso de trabajo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Escriba:  
 
-    **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+    **VSPerfCmd**[/Attach](../profiling/attach.md) **:**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**:** `Version` ]    
 
    - El Id. de proceso `(PID)` especifica el identificador de proceso o el nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
 
-   - **/targetclr:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación.  
+   - **/targetclr:** `Version` Especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del Runtime en una aplicación.  
 
 ## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
  Durante la ejecución de la aplicación, puede controlar la recopilación de datos iniciando o deteniendo la escritura de los datos en el archivo de datos del generador de perfiles mediante el uso de las opciones de **VSPerfCmd.exe**. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
@@ -96,12 +96,12 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
     |Opción|Descripción|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recopilación de datos para el proceso especificado por el `PID`.|  
-    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;:`ProcName`}]|**/attach** inicia la recopilación de datos para el proceso especificado por el identificador o nombre de proceso. **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
+    |**/Attach:**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**:**{ `PID`&#124;: `ProcName` }]|**/attach** inicia la recopilación de datos para el proceso especificado por el identificador o nombre de proceso. **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
 
 ## <a name="ending-the-profiling-session"></a>Finalizar la sesión de generación de perfiles  
- Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar de la aplicación web. Puede detener la recopilación de datos de una aplicación para la que se ha realizado la generación de perfiles con el método de muestreo reiniciando el proceso de trabajo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] o llamando a la opción **VSPerfCmd /detach**. Después, llame a la opción [/shutdown](../profiling/shutdown.md) de **VSPerfCmd** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /globaloff** borra las variables de entorno de generación de perfiles, pero la configuración del sistema no se restablece hasta que se reinicia el equipo.  
+ Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar de la aplicación web. Puede detener la recopilación de datos de una aplicación para la que se ha realizado la generación de perfiles con el método de muestreo reiniciando el proceso de trabajo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] o llamando a la opción **VSPerfCmd /detach**. Después, llame a la opción de **VSPerfCmd** [/Shutdown](../profiling/shutdown.md) para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /globaloff** borra las variables de entorno de generación de perfiles, pero la configuración del sistema no se restablece hasta que se reinicia el equipo.  
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
@@ -109,7 +109,7 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
    - Escriba **VSPerfCmd** [/detach](../profiling/detach.md)  
 
-      -o bien-  
+      o bien  
 
    - Cierre el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Tipo:  
 
@@ -127,6 +127,6 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
     **IISReset /start**  
 
-## <a name="see-also"></a>Vea también  
- [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>Consulte también  
+ [Generar perfiles de aplicaciones Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)

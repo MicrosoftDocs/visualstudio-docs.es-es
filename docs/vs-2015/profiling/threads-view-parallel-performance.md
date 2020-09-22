@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441656"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843063"
 ---
 # <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Vista de subprocesos es la vista más detallada y con más características del 
   
   Puede ocultar los subprocesos que no están realizando trabajo seleccionando sus nombres en la columna de la izquierda y después eligiendo el botón **Ocultar subprocesos seleccionados** en la barra de herramientas. Se recomienda que oculte los subprocesos completamente bloqueados porque sus estadísticas son irrelevantes y pueden bloquear los informes.  
   
-  Para identificar los subprocesos adicionales que se deben ocultar, en la leyenda activa, elija el informe **Resumen por subproceso** en la pestaña **Informe de perfil**. Esto muestra el gráfico de desglose de ejecución, que muestra el estado de los subprocesos para el intervalo de tiempo seleccionado. En algunos niveles de zoom, podrían no mostrarse algunos subprocesos. Cuando esto ocurre, se muestran puntos suspensivos situados a la derecha.  
+  Para identificar los subprocesos adicionales que se van a ocultar, en la leyenda activa, elija el informe de **Resumen por subproceso** en la pestaña **Informe de perfil** . Esto muestra el gráfico de desglose de ejecución, que muestra el estado de los subprocesos para el intervalo de tiempo seleccionado actualmente. En algunos niveles de zoom, podrían no mostrarse algunos subprocesos. Cuando esto ocurre, se muestran puntos suspensivos situados a la derecha.  
   
   Cuando haya seleccionado un intervalo de tiempo y algunos subprocesos en él, puede iniciar el análisis de rendimiento.  
   
@@ -94,7 +94,7 @@ Vista de subprocesos es la vista más detallada y con más características del 
 ### <a name="thread-execution-details"></a>Detalles de ejecución de subprocesos  
  En el gráfico de escala de tiempo de un subproceso, los segmentos verdes muestran cuando se ejecuta código. Puede obtener información más detallada sobre un segmento de ejecución.  
   
- Cuando se selecciona un punto en un segmento de ejecución, el visualizador de simultaneidad busca ese punto en el tiempo en la pila de llamadas correspondiente y después muestra un símbolo de intercalación negro sobre el punto seleccionado en el segmento de ejecución y muestra la propia pila de llamadas en la pestaña **Pila actual**. Puede seleccionar varios puntos en el segmento de ejecución.  
+ Cuando se selecciona un punto en un segmento de ejecución, el visualizador de simultaneidad busca ese punto en el tiempo en la pila de llamadas correspondiente y, a continuación, muestra un símbolo de intercalación negro sobre el punto seleccionado en el segmento de ejecución y muestra la pila de llamadas en la pestaña **pila actual** . Puede seleccionar varios puntos en el segmento de ejecución.  
   
 > [!NOTE]
 > Es posible que el visualizador de simultaneidad no pueda resolver una selección en un segmento de ejecución. Normalmente, esto ocurre cuando la duración del segmento es inferior a un milisegundo.  
@@ -120,34 +120,34 @@ Vista de subprocesos es la vista más detallada y con más características del 
 #### <a name="unblocking-stack"></a>Pila de desbloqueo  
  Para ver qué subproceso desbloqueó el subproceso seleccionado, y en qué línea de código lo hizo, elija la pestaña **Pila de desbloqueo**.  
   
-#### <a name="execution"></a>Execution  
+#### <a name="execution"></a>Ejecución  
  El informe de ejecución muestra el desglose del tiempo que la aplicación estuvo ejecutándose.  
   
- Para buscar la línea de código donde transcurre el tiempo de ejecución, expanda el árbol de llamadas y después, en el menú de función para la entrada del árbol de llamadas, elija **Ver código fuente** o **Ver sitios de llamada**. **Ver código fuente** localiza la línea de código ejecutada. **Ver sitios de llamada** localiza la línea de código que llamó a la línea de código ejecutada. Si solo existe un sitio de llamada, se resalta su línea de código. Si existen varios sitios de llamada, puede seleccionar la que desee en el cuadro de diálogo que aparece y después elija el botón **Ir a código fuente** para resaltar el código del sitio de llamada. A menudo resulta más útil buscar el sitio de llamada que tiene el mayor número de instancias, más tiempo o ambos valores. Para obtener más información, consulte [Informe de perfil de ejecución](../profiling/execution-profile-report.md).  
+ Para buscar la línea de código donde transcurre el tiempo de ejecución, expanda el árbol de llamadas y después, en el menú de función para la entrada del árbol de llamadas, elija **Ver código fuente** o **Ver sitios de llamada**. **Ver código fuente** localiza la línea de código ejecutada. **Ver sitios de llamada** localiza la línea de código que llamó a la línea de código ejecutada. Si solo existe un sitio de llamada, se resalta su línea de código. Si existen varios sitios de llamada, puede seleccionar la que desee en el cuadro de diálogo que aparece y después elija el botón **Ir a código fuente** para resaltar el código del sitio de llamada. A menudo resulta más útil buscar el sitio de llamada que tiene el mayor número de instancias, más tiempo o ambos valores. Para obtener más información, consulte [Informe de Perfil de ejecución](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Sincronización  
- El informe de sincronización muestra las llamadas responsables de los bloqueos de sincronización, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, consulte [Tiempo de sincronización](../profiling/synchronization-time.md).  
+ El informe de sincronización muestra las llamadas responsables de los bloqueos de sincronización, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, consulte [hora de sincronización](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>E/S  
- El informe de E/S muestra las llamadas responsables de los bloqueos de E/S, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, Consulte [Tiempo de E/S (Vista de subprocesos)](../profiling/i-o-time-threads-view.md).  
+ El informe de E/S muestra las llamadas responsables de los bloqueos de E/S, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, consulte [tiempo de e/s (vista de subprocesos)](../profiling/i-o-time-threads-view.md).  
   
-#### <a name="sleep"></a>Sleep  
- El informe de reposo muestra las llamadas responsables de los bloqueos de reposo, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, consulte [Tiempo de reposo](../profiling/sleep-time.md).  
+#### <a name="sleep"></a>En reposo  
+ El informe de reposo muestra las llamadas responsables de los bloqueos de reposo, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, consulte [tiempo de espera](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Administración de memoria  
  El informe de administración de memoria muestra las llamadas en las que se produjeron bloqueos de la administración de memoria, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Puede utilizar esta información para identificar las áreas que tienen problemas de recolección de elementos no utilizados o de paginación excesiva.  Para obtener más información, consulte [Tiempo de administración de memoria](../profiling/memory-management-time.md).  
   
 #### <a name="preemption"></a>Adelantamiento  
- El informe de adelantamiento muestra las instancias donde los procesos del sistema se adelantaron al proceso actual y los subprocesos individuales que reemplazaron subprocesos del proceso actual. Puede utilizar esta información para identificar los procesos y subprocesos más responsables del adelantamiento. Para obtener más información, consulte [Duración del adelantamiento](../profiling/preemption-time.md).  
+ El informe de adelantamiento muestra las instancias donde los procesos del sistema se adelantaron al proceso actual y los subprocesos individuales que reemplazaron subprocesos del proceso actual. Puede utilizar esta información para identificar los procesos y subprocesos más responsables del adelantamiento. Para obtener más información, consulte [tiempo de adelantamiento](../profiling/preemption-time.md).  
   
 #### <a name="ui-processing"></a>Procesamiento de IU  
- El informe de procesamiento de IU muestra las llamadas responsables de los bloqueos de procesamiento de IU, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, consulte [Duración de procesamiento de IU](../profiling/ui-processing-time.md).  
+ El informe de procesamiento de IU muestra las llamadas responsables de los bloqueos de procesamiento de IU, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, vea tiempo de procesamiento de la [interfaz de usuario](../profiling/ui-processing-time.md).  
   
 #### <a name="per-thread-summary"></a>Resumen por subproceso  
- Esta pestaña muestra una vista de columna codificada por colores del tiempo total que cada subproceso ha estado en ejecución, bloqueado, en E/S y en otros estados. Las columnas se etiquetan en la parte inferior. Al ajustar el nivel de zoom en el gráfico de escala de tiempo, esta ficha se actualiza automáticamente. En algunos niveles de zoom, podrían no mostrarse algunos subprocesos. Cuando esto ocurre, se muestran puntos suspensivos situados a la derecha. Si el subproceso que desea no aparece, puede ocultar otros subprocesos. Para obtener más información, consulte [Informe de resumen por subproceso](../profiling/per-thread-summary-report.md).  
+ Esta pestaña muestra una vista de columna codificada por colores del tiempo total que cada subproceso ha estado en ejecución, bloqueado, en E/S y en otros estados. Las columnas se etiquetan en la parte inferior. Al ajustar el nivel de zoom en el gráfico de escala de tiempo, esta ficha se actualiza automáticamente. En algunos niveles de zoom, podrían no mostrarse algunos subprocesos. Cuando esto ocurre, se muestran puntos suspensivos situados a la derecha. Si el subproceso que desea no aparece, puede ocultar otros subprocesos. Para obtener más información, vea [Informe de resumen por subproceso](../profiling/per-thread-summary-report.md).  
   
-#### <a name="disk-operations"></a>Operaciones en disco  
- Esta pestaña muestra los procesos y subprocesos implicados en E/S de disco en nombre del proceso actual, los archivos que modifican (por ejemplo, archivos DLL cargados), cuántos bytes se leyeron y otra información. Este informe puede usarse para evaluar el tiempo invertido en obtener acceso a archivos durante la ejecución, especialmente si el proceso parece estar enlazado a E/S. Para obtener más información, consulte [Informe de operaciones en disco](../profiling/disk-operations-report-threads-view.md).  
+#### <a name="disk-operations"></a>Disk Operations (Operaciones de disco)  
+ Esta pestaña muestra los procesos y subprocesos implicados en E/S de disco en nombre del proceso actual, los archivos que modifican (por ejemplo, archivos DLL cargados), cuántos bytes se leyeron y otra información. Este informe puede usarse para evaluar el tiempo invertido en obtener acceso a archivos durante la ejecución, especialmente si el proceso parece estar enlazado a E/S. Para obtener más información, consulte [Informe de operaciones de disco](../profiling/disk-operations-report-threads-view.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)

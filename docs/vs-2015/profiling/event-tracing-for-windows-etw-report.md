@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bc0e139644a0b3df29109c1543140e57c5378f31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444014"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842590"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Informe Seguimiento de eventos para Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ El informe Seguimiento de eventos para Windows (ETW) muestra los eventos ETW reg
 > [!NOTE]
 > No se puede mostrar informes ETW en la interfaz de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- Para obtener información sobre cómo recopilar datos ETW mediante las Herramientas de generación de perfiles desde la interfaz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vea [Cómo: Recopilar el seguimiento de eventos para Windows (ETW) datos](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Para obtener información sobre cómo recopilar datos ETW mediante las Herramientas de generación de perfiles desde la interfaz de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vea [Cómo: Recopilar datos de Seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
 - Para obtener información sobre cómo recopilar datos ETW mediante las herramientas de la línea de comandos [VSPerfCmd](../profiling/vsperfcmd.md), vea [Eventos](../profiling/events-vsperfcmd.md).  
   
 - Genere el informe ETW mediante el comando **VSReport/Summary:ETW**. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Marca de tiempo**|Identifica la hora en la que se ha producido el evento.|  
 |**Identificador del proceso**|Identifica el proceso que ha generado el evento.|  
 |**Identificador de subproceso**|Identifica el subproceso que ha generado el evento.|  
 |**Descripción**|Identifica el proveedor del evento.|  
-|**Type**|Identifica el tipo de evento.|  
+|**ype**|Identifica el tipo de evento.|  
 |**Propiedades**|Propiedades del evento. Cada evento es un par nombre-valor separado por comas e incluido entre corchetes.|

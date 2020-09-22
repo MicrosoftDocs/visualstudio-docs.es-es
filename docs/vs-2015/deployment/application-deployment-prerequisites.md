@@ -21,36 +21,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4945efddb91142ce04f5b117129428ec4a054fc3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427258"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843107"
 ---
 # <a name="application-deployment-prerequisites"></a>Requisitos previos para la implementación de aplicaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para asegurarse de que su aplicación se instalará y se ejecutará correctamente, primero debe asegurarse de que todos los componentes de los que depende su aplicación ya estén instalados en el equipo de destino. Por ejemplo, la mayoría de las aplicaciones creadas con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tienen una dependencia de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]; antes de instalar la aplicación, el equipo de destino debe tener la versión correcta de Common Language Runtime.  
   
- Puede seleccionar estos requisitos previos en el **Prerequisites Dialog Box** e instalar .NET Framework y otros redistribuibles como parte de la instalación. Este procedimiento se conoce como *arranque*. A continuación, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera un programa ejecutable de Windows llamado Setup.exe, también conocido como un *arranque*. El programa previo es responsable de la instalación de estos requisitos previos antes de que se ejecute la aplicación. Para obtener más información acerca de cómo seleccionar estos requisitos previos, consulte [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
+ Puede seleccionar estos requisitos previos en el **cuadro de diálogo requisitos previos** e instalar el .NET Framework y otros redistribuibles como parte de la instalación de. Este procedimiento se conoce como *arranque*. A continuación, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera un programa ejecutable de Windows denominado Setup.exe, también conocido como *arranque*. El programa previo es responsable de la instalación de estos requisitos previos antes de que se ejecute la aplicación. Para obtener más información acerca de cómo seleccionar estos requisitos previos, consulte el [cuadro de diálogo requisitos previos](../ide/reference/prerequisites-dialog-box.md).  
   
- Cada requisito previo es un paquete de programa previo. Un paquete de programa previo es un grupo de directorios y archivos que contienen archivos de manifiesto que describen cómo se debe instalar el requisito previo. Si los requisitos previos de su aplicación no están en la lista del **cuadro de diálogo Requisitos previos**, puede crear paquetes de programa previo personalizados y agregarlos a Visual Studio. Después, puede seleccionar los requisitos previos en el **cuadro de diálogo Requisitos previos**. Para obtener más información, consulte [crear paquetes de programa previo](../deployment/creating-bootstrapper-packages.md).  
+ Cada requisito previo es un paquete de programa previo. Un paquete de programa previo es un grupo de directorios y archivos que contienen archivos de manifiesto que describen cómo se debe instalar el requisito previo. Si los requisitos previos de su aplicación no están en la lista del **cuadro de diálogo Requisitos previos**, puede crear paquetes de programa previo personalizados y agregarlos a Visual Studio. Después, puede seleccionar los requisitos previos en el **cuadro de diálogo Requisitos previos**. Para obtener más información, vea [crear paquetes de programa previo](../deployment/creating-bootstrapper-packages.md).  
   
  De forma predeterminada, el arranque está habilitado para la implementación ClickOnce. El programa previo generado por la implementación ClickOnce está firmado. Puede deshabilitar el arranque para un componente, pero hágalo solo si está seguro de que la versión correcta del componente ya está instalada en todos los equipos de destino.  
   
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Arranque e implementación ClickOnce  
- Antes de instalar una aplicación en un equipo cliente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] examinará el cliente para asegurarse de que cumple determinados requisitos especificados en el manifiesto de la aplicación. Entre ellas se incluyen las siguientes:  
+ Antes de instalar una aplicación en un equipo cliente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] examinará el cliente para asegurarse de que cumple determinados requisitos especificados en el manifiesto de la aplicación. Entre ellas, se incluyen las siguientes:  
   
 - La versión mínima necesaria de Common Language Runtime, que se especifica como una dependencia de ensamblado en el manifiesto de la aplicación.  
   
-- La versión mínima del sistema operativo Windows requerida por la aplicación, tal y como se especifica en el manifiesto de la aplicación mediante el elemento `<osVersionInfo>`. (Consulte [ \<dependencia > elemento](../deployment/dependency-element-clickonce-application.md))  
+- La versión mínima del sistema operativo Windows requerida por la aplicación, tal y como se especifica en el manifiesto de la aplicación mediante el elemento `<osVersionInfo>`. (Vea el [ \<dependency> elemento](../deployment/dependency-element-clickonce-application.md))  
   
 - La versión mínima de todos y cada uno de los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC), tal y como se especifica en las declaraciones de dependencias de ensamblados en el manifiesto del ensamblado.  
   
-  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede detectar requisitos previos que falten, y puede instalar los requisitos previos mediante el uso de un programa previo. Para obtener más información, vea [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede detectar los requisitos previos que faltan y puede instalar los requisitos previos mediante un programa previo. Para obtener más información, consulte [Cómo: instalar requisitos previos con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
-> Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y MageUI.exe, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, vea [Cómo: Volver a firmar aplicaciones y manifiestos de implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+> Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y MageUI.exe, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, consulta [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Si usa Visual Studio y ClickOnce para implementar su aplicación, los paquetes de programa previo se seleccionan de forma predeterminada según la versión de .NET Framework en la solución. Sin embargo, si cambia la versión de .NET Framework de destino, debe actualizar manualmente las opciones en el **cuadro de diálogo Requisitos previos**.  
   
@@ -64,7 +64,7 @@ Para asegurarse de que su aplicación se instalará y se ejecutará correctament
  Si genera el programa previo con el Asistente para publicación de ClickOnce o la página Publicar en Visual Studio, el archivo Setup.exe se firma automáticamente. Sin embargo, si quiere usar el certificado de cliente para firmar el programa previo, puede firmar el archivo más adelante.  
   
 ## <a name="bootstrapping-and-msbuild"></a>Arranque y MSBuild  
- Si no usa [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pero compila sus aplicaciones en la línea de comandos, puede crear la aplicación de arranque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]usando una tarea de Microsoft Build Engine (MSBuild). Para obtener más información, consulte [GenerateBootstrapper (tarea)](../msbuild/generatebootstrapper-task.md).  
+ Si no usa [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pero compila sus aplicaciones en la línea de comandos, puede crear la aplicación de arranque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]usando una tarea de Microsoft Build Engine (MSBuild). Para obtener más información, vea [tarea GenerateBootstrapper (](../msbuild/generatebootstrapper-task.md).  
   
  Como alternativa al arranque, puede realizar una implementación previa de los componentes usando un sistema electrónico de distribución de software, como Microsoft Systems Management Server (SMS).  
   
@@ -77,13 +77,13 @@ Para asegurarse de que su aplicación se instalará y se ejecutará correctament
 |---------------------------|-----------------|  
 |**-?, -h, -help**|Muestra el cuadro de diálogo Ayuda.|  
 |**-url, -componentsurl**|Muestra la dirección URL almacenada y la dirección URL de los componentes para esta instalación.|  
-|**-url=** `location`|Establece la dirección URL donde Setup.exe buscará la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].|  
+|**-URL =**`location`|Establece la dirección URL donde Setup.exe buscará la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].|  
 |**-componentsurl=** `location`|Establece la dirección URL donde Setup.exe buscará las dependencias, como [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
-|**-homesite=** `true` **&#124;** `false`|Cuando `true`, descarga las dependencias de la ubicación preferida en el sitio del proveedor. Esto invalida el **- componentsurl** configuración. Cuando `false`, descarga las dependencias de la dirección URL especificada por **- componentsurl**.|  
+|**-homesite=** `true` **&#124;** `false`|Cuando `true` es, descarga las dependencias de la ubicación preferida en el sitio del proveedor. Esto invalida el valor **-componentsurl** . Cuando es `false` , descarga las dependencias de la dirección URL especificada por **-componentsurl**.|  
   
-## <a name="operating-system-support"></a>Compatibilidad con sistemas operativos  
+## <a name="operating-system-support"></a>Sistemas operativos admitidos  
  El programa previo de Visual Studio no se admite en Windows Server 2008 Server Core ni Windows Server 2008 R2 Server Core, que proporcionan un entorno de servidor de bajo mantenimiento con una funcionalidad limitada. Por ejemplo, la opción de instalación Server Core solo admite el perfil .NET Framework 3.5 Server Core, por lo que las características de Visual Studio que dependen de la versión completa de .NET Framework no se pueden ejecutar.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
