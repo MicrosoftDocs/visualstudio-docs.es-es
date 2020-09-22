@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c740e543b7417a1c9daa7bb610cb74645520c0ab
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64814965"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90842935"
 ---
-# <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
+# <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera la posición de bit de ubicación. Se usa cuando el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) es `LocIsBitField`.  
+Recupera la posición de bit de la ubicación. Se usa cuando la [enumeración LocationType (](../../debugger/debug-interface-access/locationtype.md) es `LocIsBitField` .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,21 +35,21 @@ HRESULT get_bitPosition ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve la posición del bit de la ubicación.  
+ enuncia Devuelve la posición de bit de la ubicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
+|Versión:|SDK de DIA v 7.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)

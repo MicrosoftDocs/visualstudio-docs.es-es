@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdab8fdff421da751f3813789a6dee8b5b640771
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64810810"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842875"
 ---
-# <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
+# <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el nombre de archivo del archivo de biblioteca u objeto desde el que se cargó el objeto.  
+Recupera el nombre de archivo de la biblioteca o del archivo objeto desde el que se cargó el objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,13 +35,13 @@ HRESULT get_libraryName ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el nombre de archivo del archivo de biblioteca u objeto desde el que se cargó el objeto.  
+ enuncia Devuelve el nombre de archivo de la biblioteca o el archivo objeto desde el que se cargó el objeto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

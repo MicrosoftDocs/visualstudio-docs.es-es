@@ -1,5 +1,5 @@
 ---
-title: La sesión de depuración | Microsoft Docs
+title: Sesión de depuración | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,22 +10,22 @@ ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 81867f413a5e631d1831fdb342487acb13cb75a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eeacd639dff8b22e23711702d1b113a49b8e5b9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987800"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843417"
 ---
 # <a name="debug-session"></a>Sesión de depuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En cuanto a la arquitectura de depurador, un **sesión**:  
+En cuanto a la arquitectura del depurador, una **sesión**:  
   
--   Es el conjunto de todos los procesos, relacionados o no, que se han iniciado o conectadas a una única instancia del IDE.  
+- Es el conjunto de todos los procesos, relacionados o no relacionados, que se han iniciado o adjuntado desde una única instancia del IDE.  
   
--   Se implementa mediante un administrador de depuración de la sesión (SDM). Para obtener más información, consulte [Administrador de sesión de depuración](../../extensibility/debugger/session-debug-manager.md).  
+- Está implementado por un administrador de depuración de sesión (SDM). Para obtener más información, vea [Session Debug Manager](../../extensibility/debugger/session-debug-manager.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Administrador de depuración de sesión](../../extensibility/debugger/session-debug-manager.md)   
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)

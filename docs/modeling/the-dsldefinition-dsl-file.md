@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114920"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808960"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>El archivo DslDefinition.dsl
 
@@ -62,7 +62,7 @@ En esta sección se define el modo en que aparece la ventana **Explorador de DSL
 
 En esta sección se define un generador de conexiones para cada herramienta de conector (la herramienta que se usa para crear vínculos entre dos clases cualquiera que se puedan conectar). En esta sección se determina si se puede conectar una clase de origen y una de destino.
 
-### <a name="diagram"></a>Diagrama
+### <a name="diagram"></a>Diagram
 
 En esta sección se define un diagrama y se usa para especificar propiedades, como el color de fondo, y la clase raíz. (La clase raíz es la clase de dominio representada por el diagrama en conjunto). La sección Diagram también contiene elementos ShapeMap y ConnectorMap, que especifican la forma o el conector que representa cada clase o relación de dominio.
 
@@ -579,6 +579,6 @@ Las asignaciones de conectores también pueden contener asignaciones de elemento
 
 ## <a name="see-also"></a>Consulte también
 
-- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)

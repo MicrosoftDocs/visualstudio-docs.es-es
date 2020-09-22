@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Configurar la reducción de ruido en las vistas de informes | Microsoft Docs
+title: 'Cómo: Configurar la reducción de ruido en las vistas de informes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5871473eaba749833714d6382beb487702ebe02d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432768"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843210"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedimiento Configurar la reducción de ruido en las vistas de informes
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Cómo: Configurar la reducción de ruido en las vistas de informes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los informes de rendimiento pueden configurarse para la reducción de ruido limitando la cantidad de datos que se presentan en la vistas Árbol de llamadas y Asignación. Gracias a la reducción de ruido, los problemas de rendimiento destacan más. Esto es útil a la hora de analizar informes de rendimiento.  
@@ -79,8 +79,8 @@ Los informes de rendimiento pueden configurarse para la reducción de ruido limi
   
 4. Haga clic en **Aceptar**.  
   
-## <a name="see-also"></a>Vea también  
- [Personalizar las vistas de Informes de las Herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)   
- [Cómo: Excluir o incluir funciones cortas en la instrumentación](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
- [Vista Árbol de llamadas](../profiling/call-tree-view.md)   
+## <a name="see-also"></a>Consulte también  
+ [Personalizar las vistas de informes de las herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)   
+ [Cómo: excluir o incluir funciones cortas de la instrumentación](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [Vista árbol de llamadas](../profiling/call-tree-view.md)   
  [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)

@@ -1,5 +1,5 @@
 ---
-title: Cómo configurar el comportamiento del mensaje de confianza de ClickOnce | Microsoft Docs
+title: Configurar el comportamiento del mensaje de confianza de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382554"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852236"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedimientos para configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
 Puede configurar el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar aplicaciones ClickOnce, como Windows Forms aplicaciones, Windows Presentation Foundation aplicaciones, aplicaciones de consola, aplicaciones de explorador WPF y soluciones de Office. Configure el mensaje de confianza mediante la configuración de las claves del registro en el equipo de cada usuario final.
@@ -38,7 +38,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
  En la tabla siguiente se muestra el comportamiento predeterminado de cada zona. La columna aplicaciones hace referencia a Windows Forms aplicaciones, Windows Presentation Foundation aplicaciones, aplicaciones de explorador WPF y aplicaciones de consola.
 
-|Zona|APLICACIONES|soluciones de Office|
+|Zona|Aplicaciones|soluciones de Office|
 |----------|------------------|----------------------|
 |`MyComputer`|`Enabled`|`Enabled`|
 |`LocalIntranet`|`Enabled`|`Enabled`|
@@ -67,7 +67,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
-    |Subclave de valor de cadena|Value|
+    |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -126,7 +126,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
-    |Subclave de valor de cadena|Value|
+    |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -183,7 +183,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
 3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
-    |Subclave de valor de cadena|Value|
+    |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|

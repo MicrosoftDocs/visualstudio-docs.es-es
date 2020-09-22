@@ -13,24 +13,24 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440139"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842851"
 ---
 # <a name="adding-and-removing-property-pages"></a>Adición y eliminación de páginas de propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El Diseñador de proyectos proporciona una ubicación centralizada para administrar las propiedades del proyecto, la configuración y los recursos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aparece como una sola ventana en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integra el entorno de desarrollo (IDE) y contiene un número de paneles de la derecha que se accede a través de las pestañas de la izquierda. Los paneles (a menudo denominados páginas de propiedades) en el Diseñador de proyectos varían según el idioma y el tipo de proyecto. El Diseñador de proyectos puede obtenerse con el **propiedades** comando el **proyecto** menú.  
+El diseñador de proyectos proporciona una ubicación centralizada para administrar las propiedades, la configuración y los recursos del proyecto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Aparece como una sola ventana en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entorno de desarrollo integrado (IDE) y contiene un número de paneles a la derecha a los que se tiene acceso a través de las pestañas de la izquierda. Los paneles (a menudo denominados páginas de propiedades) en el diseñador de proyectos varían según el tipo de proyecto y el lenguaje. Se puede tener acceso al diseñador de proyectos con el comando **propiedades** en el menú **proyecto** .  
   
- Con frecuencia necesita un subtipo de proyecto para mostrar páginas de propiedades adicionales en el Diseñador de proyectos. Del mismo modo, algunos subtipos de proyecto pueden requerir que se quitarán las páginas de propiedades integradas. Para realizar una, el subtipo de proyecto debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz e invalidar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método. Al reemplazar este método y usar `propId` parámetro que contiene uno de los valores de la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumeración, puede filtrar, agregar o quitar propiedades del proyecto. Por ejemplo, es posible que deba agregar una página a las páginas de propiedades dependientes de la configuración. Para ello, deberá filtrar páginas de propiedades dependientes de la configuración y, a continuación, agregue una nueva página a la lista existente.  
+ Un subtipo de proyecto suele necesitar mostrar páginas de propiedades adicionales en el diseñador de proyectos. Del mismo modo, algunos subtipos de proyecto podrían requerir que se quiten las páginas de propiedades integradas. Para ello, el subtipo de proyecto debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz e invalidar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método. Al invalidar este método y usar `propId` un parámetro que contenga uno de los valores de la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumeración, puede filtrar, agregar o quitar propiedades del proyecto. Por ejemplo, puede que necesite agregar una página a las páginas de propiedades dependientes de la configuración. Para ello, debe filtrar las páginas de propiedades dependientes de la configuración y, a continuación, agregar una nueva página a la lista existente.  
   
-## <a name="adding-and-removing-property-pages-in-project-designer"></a>Agregar y quitar páginas de propiedades en el Diseñador de proyectos  
+## <a name="adding-and-removing-property-pages-in-project-designer"></a>Agregar y quitar páginas de propiedades en el diseñador de proyectos  
   
-#### <a name="to-remove-a-property-page-in-project-designer"></a>Para quitar una página de propiedades en el Diseñador de proyectos  
+#### <a name="to-remove-a-property-page-in-project-designer"></a>Para quitar una página de propiedades en el diseñador de proyectos  
   
-1. Invalidar el `GetProperty(uint itemId, int propId, out object property)` método para filtrar las páginas de propiedades y obtener un `clsids` lista.  
+1. Invalide el `GetProperty(uint itemId, int propId, out object property)` método para filtrar las páginas de propiedades y obtener una `clsids` lista.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ El Diseñador de proyectos proporciona una ubicación centralizada para administ
     }  
     ```  
   
-2. Quitar el **eventos de compilación** obtenido de la página de `clsids` lista.  
+2. Quite la página **eventos de compilación** de la lista de obtención `clsids` .  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -109,9 +109,9 @@ El Diseñador de proyectos proporciona una ubicación centralizada para administ
     property = propertyPagesList;  
     ```  
   
-#### <a name="to-add-a-property-page-in-project-designer"></a>Para agregar una página de propiedades en el Diseñador de proyectos  
+#### <a name="to-add-a-property-page-in-project-designer"></a>Para agregar una página de propiedades en el diseñador de proyectos  
   
-1. Crear una página de propiedades que desea agregar.  
+1. Cree una página de propiedades que desee agregar.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ El Diseñador de proyectos proporciona una ubicación centralizada para administ
     }  
     ```  
   
-2. Registrar la nueva página de propiedades.  
+2. Registre la nueva página de propiedades.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ El Diseñador de proyectos proporciona una ubicación centralizada para administ
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3. Invalidar el `GetProperty(uint itemId, int propId, out object property)` método para filtrar las páginas de propiedades, obtener un `clsids` lista y agregue una nueva página de propiedades.  
+3. Invalide el `GetProperty(uint itemId, int propId, out object property)` método para filtrar las páginas de propiedades, obtener una `clsids` lista y agregar una nueva página de propiedades.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
@@ -205,7 +205,7 @@ El Diseñador de proyectos proporciona una ubicación centralizada para administ
     ```  
   
 > [!NOTE]
-> Todos los ejemplos de código proporcionados en este tema forman parte de un ejemplo más extenso, [muestras de VSSDK](../misc/vssdk-samples.md).  
+> Todos los ejemplos de código que se proporcionan en este tema son partes de un ejemplo más extenso, [ejemplos de VSSDK](../misc/vssdk-samples.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Subtipos de proyecto](../extensibility/internals/project-subtypes.md)

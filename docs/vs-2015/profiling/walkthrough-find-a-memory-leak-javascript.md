@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Buscar pérdidas de memoria (JavaScript) | Documentos de Microsoft'
+title: 'Tutorial: Buscar fugas de memoria (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439663"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842446"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar pérdidas de memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Ejecutar la aplicación de prueba del analizador de memoria de JavaScript  
   
-1. En Visual Studio, elige **Archivo**, **Nuevo**, **Proyecto**.  
+1. En Visual Studio, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
 2. Elija **JavaScript** en el panel izquierdo. A continuación, elija **Windows**, **Windows 8**y luego **Universal** o **Aplicaciones Windows Phone**.  
   
@@ -45,7 +45,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 4. En el cuadro **Nombre** , especifique un nombre como `JS_Mem_Tester`y elija **Aceptar**.  
   
-5. En el **Explorador de soluciones**, abre default.html y pega el siguiente código entre las etiquetas \<body>:  
+5. En **Explorador de soluciones**, abra default.html y pegue el código siguiente entre las \<body> Etiquetas:  
   
     ```html  
     <div class="wrapper">  
@@ -139,7 +139,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
    > [!TIP]
    > Para una aplicación de la Tienda Windows, también puedes elegir **Equipo local** o **Equipo remoto** en esta lista. Sin embargo, la ventaja de utilizar el emulador o simulador es que puede colocarlo junto a Visual Studio y cambiar fácilmente entre la aplicación en ejecución y el analizador de memoria de JavaScript. Para obtener más información, consulte [Ejecutar aplicaciones de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) y [Ejecutar aplicaciones de la Tienta Windows en una máquina remota](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2. En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
+2. En el menú **depurar** , elija **generador de perfiles de rendimiento..**..  
   
 3. En **Herramientas disponibles**, elige **Memoria de JavaScript**e **Iniciar**.  
   
@@ -219,14 +219,14 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
     - Este es un objeto sobrante de la instantánea 2 y representa una posible pérdida de memoria.  
   
-      Cierto conocimiento de la aplicación Ayuda en este momento: Elegir el **Leak Memory** botón debería quitar un elemento DIV y agregarse un elemento, por lo que el código no parece estar trabajando directamente (es decir, pierde memoria). En la sección siguiente se explica cómo solucionar esto.  
+      En este punto puede ser útil conocer algo de la aplicación: al elegir el botón **Leak Memory** , se debería quitar un elemento DIV y agregarse un elemento, por lo que el código parece que no funciona bien, es decir, hay una pérdida de memoria. En la sección siguiente se explica cómo solucionar esto.  
   
     > [!TIP]
     > A veces, la ubicación de un objeto con respecto al objeto `Global` puede ayudar a identificar ese objeto. Para ello, abre el menú contextual del identificador y elige **Mostrar en vista de raíces**.  
   
-## <a name="FixingMemory"></a> Corregir el problema de memoria  
+## <a name="fixing-the-memory-issue"></a><a name="FixingMemory"></a> Corregir el problema de memoria  
   
-1. Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()`.  
+1. Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()` .  
   
    ```javascript  
    function initialize() {  
@@ -284,7 +284,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
       En la ilustración siguiente se muestra la instantánea 2 y la instantánea 3.  
   
-      ![Instantáneas que muestran la fuga de memoria corregida](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![Instantáneas que muestran la pérdida de memoria corregida](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Memoria de JavaScript](../profiling/javascript-memory.md)

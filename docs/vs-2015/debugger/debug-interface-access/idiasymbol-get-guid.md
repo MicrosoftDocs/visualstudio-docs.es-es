@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1dddb9035a73a7d7da281a77760eafb066c4ddd5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64780468"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842366"
 ---
-# <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
+# <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el identificador único global (GUID) del símbolo.  
@@ -35,20 +35,20 @@ HRESULT get_guid ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el GUID del símbolo.  
+ enuncia Devuelve el GUID del símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
+|Versión:|SDK de DIA v 7.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Cómo crear un manifiesto de producto | Microsoft Docs
+title: Crear un manifiesto de producto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382515"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852223"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
 Para implementar los requisitos previos de la aplicación, puede crear un paquete de programa previo. Un paquete de programa previo contiene un solo archivo de manifiesto de producto, pero un manifiesto de paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye las cadenas, los contratos de licencia para el usuario final y los paquetes de idioma.
@@ -158,5 +158,5 @@ Para implementar los requisitos previos de la aplicación, puede crear un paquet
 </Product>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

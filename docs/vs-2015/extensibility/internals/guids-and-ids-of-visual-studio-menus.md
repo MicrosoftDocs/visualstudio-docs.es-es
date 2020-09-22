@@ -16,130 +16,130 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d10549867c355018e301afa14cf2ba3a8f113e4d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436304"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842799"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID e identificadores de menús de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En este tema enumera los valores GUID y el Id. de los menús y los grupos en la barra de menús de Visual Studio. Estos valores se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos de IDE-Defined](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
+En este tema se enumeran los valores de GUID y de identificador de los menús y grupos en la barra de menús de Visual Studio. Estos valores se definen en los archivos. Vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, vea [comandos, menús y grupos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
- Para obtener más información sobre cómo trabajar con objetos de entorno (IDE) de desarrollo integrado que se definen en archivos .vsct, vea [ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md).
+ Para obtener más información sobre cómo trabajar con objetos del entorno de desarrollo integrado (IDE) que se definen en archivos. Vsct, vea [extender menús y comandos](../../extensibility/extending-menus-and-commands.md).
 
- Los menús y los grupos en la barra de menús de Visual Studio usan el GUID `guidSHLMainMenu`. El menú de la propia barra tiene un Id. de `IDM_VS_TOOL_MAINMENU`.
+ Los menús y grupos en la barra de menús de Visual Studio usan el GUID `guidSHLMainMenu` . La barra de menús tiene un identificador de `IDM_VS_TOOL_MAINMENU` .
 
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Grupos en la barra de menús de Visual Studio
  Para agregar un menú a la barra de menús, establezca uno de estos grupos como su elemento primario.
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
-|Archivo/Editar/ver|IDG_VS_MM_FILEEDITVIEW|
-|Refactorización|IDG_VS_MM_REFACTORING:|
-|Proyecto|IDG_VS_MM_PROJECT|
+|Archivo/edición/ver|IDG_VS_MM_FILEEDITVIEW|
+|Refactoring|IDG_VS_MM_REFACTORING:|
+|Project|IDG_VS_MM_PROJECT|
 |Compilar|IDG_VS_MM_BUILDDEBUGRUN|
-|Formato/Tools|IDG_VS_MM_TOOLSADDINS|
-|Ventana, ayuda y Comunidad|IDG_VS_MM_WINDOWHELP|
-|AddIns|IDG_VS_MM_MACROS|
+|Formato/herramientas|IDG_VS_MM_TOOLSADDINS|
+|Ventana/ayuda/comunidad|IDG_VS_MM_WINDOWHELP|
+|Complementos|IDG_VS_MM_MACROS|
 |FullScreenBar|IDG_VS_MM_FULLSCREENBAR|
 
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>Menús en la barra de menús de Visual Studio
- Para agregar un grupo a un menú existente de Visual Studio, establezca uno de los siguientes menús como su elemento primario. No se incluyen submenús en esta lista.
+ Para agregar un grupo a un menú existente de Visual Studio, establezca uno de los siguientes menús como su elemento primario. Los submenús no se incluyen en esta lista.
 
 |Menú|ID|
 |----------|--------|
 |Archivo|IDM_VS_MENU_FILE|
 |Editar|IDM_VS_MENU_EDIT|
 |Ver|IDM_VS_MENU_VIEW|
-|Refactorizar|IDM_VS_MENU_REFACTORING|
-|Proyecto|IDM_VS_MENU_PROJECT|
+|Refactorización|IDM_VS_MENU_REFACTORING|
+|Project|IDM_VS_MENU_PROJECT|
 |Compilar|IDM_VS_MENU_BUILD|
 |Formato|IDM_VS_MENU_FORMAT|
 |Herramientas|IDM_VS_MENU_TOOLS|
-|Ventana|IDM_VS_MENU_WINDOW|
-|AddIns|IDM_VS_MENU_ADDINS|
-|comunidad|IDM_VS_MENU_COMMUNITY|
-|Help|IDM_VS_MENU_HELP|
+|Periodo|IDM_VS_MENU_WINDOW|
+|Complementos|IDM_VS_MENU_ADDINS|
+|Comunidad|IDM_VS_MENU_COMMUNITY|
+|Ayuda|IDM_VS_MENU_HELP|
 
-## <a name="groups-on-visual-studio-menus"></a>Grupos de menús de Visual Studio
- Las listas siguientes muestran los grupos que descienden directamente desde los menús en la barra de menús de Visual Studio. Es la forma más rápida para agregar un comando a un menú de Visual Studio establecer uno de estos grupos como elemento primario. Los grupos que descienden de submenús no aparecen en esta sección.
+## <a name="groups-on-visual-studio-menus"></a>Grupos en los menús de Visual Studio
+ En las listas siguientes se muestran los grupos que descienden directamente de los menús de la barra de menús de Visual Studio. La forma más rápida de agregar un comando a un menú de Visual Studio es establecer uno de estos grupos como elemento primario. Los grupos que descienden de los submenús no aparecen en esta sección.
 
-### <a name="file-menu-groups"></a>Grupos de menús de archivo
+### <a name="file-menu-groups"></a>Grupos de menús de archivos
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
-|Nuevo o abrir|IDG_VS_FILE_FILE|
-|Agregar|IDG_VS_FILE_ADD|
-|Soluciones|IDG_VS_FILE_SOLUTION|
+|Nuevo/abrir|IDG_VS_FILE_FILE|
+|Sumar|IDG_VS_FILE_ADD|
+|Solución|IDG_VS_FILE_SOLUTION|
 |Varios|IDG_VS_FILE_MISC|
 |Guardar|IDG_VS_FILE_SAVE|
 |Cambiar nombre|IDG_VS_FILE_RENAME|
-|Explorador|IDG_VS_FILE_BROWSER|
-|Imprimir|IDG_VS_FILE_PRINT|
+|Browser|IDG_VS_FILE_BROWSER|
+|Impresión|IDG_VS_FILE_PRINT|
 |Usados más recientemente|IDG_VS_FILE_MRU|
 |Mover|IDG_VS_FILE_MOVE|
 |Salir|IDG_VS_FILE_EXIT|
 
 ### <a name="edit-menu-groups"></a>Editar grupos de menús
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
 |Deshacer/rehacer|IDG_VS_EDIT_UNDOREDO|
-|Cortar/Copiar/Pegar|IDG_VS_EDIT_CUTCOPY|
+|Cortar/copiar/pegar|IDG_VS_EDIT_CUTCOPY|
 |Seleccionar|IDG_VS_EDIT_SELECT|
 |GoTo|IDG_VS_EDIT_GOTO|
-|Find|IDG_VS_EDIT_FIND|
-|de la empresa|IDG_VS_EDIT_OBJECTS|
+|Buscar|IDG_VS_EDIT_FIND|
+|Objetos|IDG_VS_EDIT_OBJECTS|
 |Verbos OLE|IDG_VS_EDIT_OLEVERBS|
-|Comando bien|IDG_VS_EDIT_COMMANDWELL|
+|Cuadro de comandos|IDG_VS_EDIT_COMMANDWELL|
 
-### <a name="refactor-menu-groups"></a>Refactorizar los grupos de menús
+### <a name="refactor-menu-groups"></a>Refactorizar grupos de menús
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
-|Común|IDG_REFACTORING_COMMON|
-|Avanzadas|IDG_REFACTORING_ADVANCED|
+|Comunes|IDG_REFACTORING_COMMON|
+|Avanzado|IDG_REFACTORING_ADVANCED|
 
-### <a name="view-menu-groups"></a>Grupos de menús de vista
+### <a name="view-menu-groups"></a>Ver grupos de menús
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
-|Código del formulario|IDG_VS_VIEW_FORMCODE|
-|Explorador|IDG_VS_VIEW_BROWSER|
+|Código de formulario|IDG_VS_VIEW_FORMCODE|
+|Browser|IDG_VS_VIEW_BROWSER|
 |Definir vistas|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
-|Diseñar la arquitectura de Windows|IDG_VS_VIEW_ARCH_WINDOWS|
-|Windows de la organización|IDG_VS_VIEW_ORG_WINDOWS|
+|Arquitectura de Windows|IDG_VS_VIEW_ARCH_WINDOWS|
+|Ventanas de la organización|IDG_VS_VIEW_ORG_WINDOWS|
 |Explorador de código|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|
-|Windows dev|IDG_VS_VIEW_DEV_WINDOWS|
+|Ventanas de desarrollo|IDG_VS_VIEW_DEV_WINDOWS|
 |Barras de herramientas|IDG_VS_VIEW_TOOLBARS|
 |Símbolos|IDG_VS_VIEW_SYMBOLNAVIGATE|
 |Navegar|IDG_VS_VIEW_NAVIGATE|
-|Navegue pequeño|IDG_VS_VIEW_SMALLNAVIGATE|
+|Desplazamiento pequeño|IDG_VS_VIEW_SMALLNAVIGATE|
 |Examinador de objetos|IDG_VS_VIEW_OBJBRWSR|
-|Comando bien|IDG_VS_VIEW_COMMANDWELL|
+|Cuadro de comandos|IDG_VS_VIEW_COMMANDWELL|
 |Páginas de propiedades|IDG_VS_VIEW_PROPPAGES|
-|Refresh|IDG_VS_VIEW_REFRESH|
+|Actualizar|IDG_VS_VIEW_REFRESH|
 
 ### <a name="project-menu-groups"></a>Grupos de menús del proyecto
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
-|Varios agregar|IDG_VS_PROJ_MISCADD|
-|Agregar|IDG_VS_PROJ_ADD|
+|Agregar varios|IDG_VS_PROJ_MISCADD|
+|Sumar|IDG_VS_PROJ_ADD|
 |Carpeta|IDG_VS_PROJ_FOLDER|
-|Descarga o recarga|IDG_VS_PROJ_UNLOADRELOAD|
+|Descargar/volver a cargar|IDG_VS_PROJ_UNLOADRELOAD|
 |Referencia|IDG_VS_PROJ_REFERENCE|
 |Opciones|IDG_VS_PROJ_OPTIONS|
 |Configuración|IDG_VS_PROJ_SETTINGS|
 
-### <a name="build-menu-groups"></a>Crear grupos de menús
+### <a name="build-menu-groups"></a>Grupos de menús de compilación
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
-|Soluciones|IDG_VS_BUILD_SOLUTION|
+|Solución|IDG_VS_BUILD_SOLUTION|
 |Selección|IDG_VS_BUILD_SELECTION|
 |Optimización guiada por perfiles|IDG_VS_PGO_SELECTION|
 |Varios|IDG_VS_BUILD_MISC|
@@ -147,40 +147,40 @@ En este tema enumera los valores GUID y el Id. de los menús y los grupos en la 
 
 ### <a name="tools-menu-groups"></a>Grupos de menús de herramientas
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
 |Línea de comandos|IDG_VS_TOOLS_CMDLINE|
 |Fragmentos de código|IDG_VS_TOOLS_SNIPPETS|
-|Subconjunto del objeto|IDG_VS_TOOLS_OBJSUBSET|
+|Subconjunto de objetos|IDG_VS_TOOLS_OBJSUBSET|
 |Opciones|IDG_VS_TOOLS_OPTIONS|
 |Otros 2|IDG_VS_TOOLS_OTHER2|
 |Herramientas externas|IDG_VS_TOOLS_EXT_TOOLS|
 |Personalizaciones externas|IDG_VS_TOOLS_EXT_CUST|
 
-### <a name="window-menu-groups"></a>Grupos de menús de la ventana
+### <a name="window-menu-groups"></a>Grupos de menús de ventana
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
 |Nuevo|IDG_VS_WINDOW_NEW|
-|Acoplar o cerrar|IDG_VS_DOCKCLOSE|
-|Acoplar u ocultar|IDG_VS_DOCKHIDE|
+|Acoplar/cerrar|IDG_VS_DOCKCLOSE|
+|Acoplar/ocultar|IDG_VS_DOCKHIDE|
 |Organizar|IDG_VS_WINDOW_ARRANGE|
 |Navegación|IDG_VS_WINDOW_NAVIGATION|
-|Lista|IDG_VS_WINDOW_LIST|
+|List|IDG_VS_WINDOW_LIST|
 
-### <a name="help-menu-groups"></a>Ayudar a los grupos de menús
+### <a name="help-menu-groups"></a>Grupos de menús de ayuda
 
-|Agrupar|ID|
+|Group (Grupo)|ID|
 |-----------|--------|
-|Muestras|IDG_VS_HELP_SAMPLES|
+|Ejemplos|IDG_VS_HELP_SAMPLES|
 |Soporte técnico|IDG_VS_HELP_SUPPORT|
 |Acerca de|IDG_VS_HELP_ABOUT|
 
 ## <a name="submenus-of-visual-studio-menus"></a>Submenús de menús de Visual Studio
- La jerarquía siguiente muestra los submenús que están asociados con los menús en la barra de menús de Visual Studio. Dado que sólo un grupo puede tener un menú como su elemento primario, cada submenú debe descienden de un grupo en un menú, en lugar de directamente desde el menú. Para obtener más información sobre la relación entre los menús, grupos y submenús, consulte [agregar un submenú a un menú](../../extensibility/adding-a-submenu-to-a-menu.md).
+ En la jerarquía siguiente se muestran los submenús que están asociados a los menús de la barra de menús de Visual Studio. Dado que solo un grupo puede tener un menú como elemento primario, cada submenú debe ser descendente de un grupo en un menú, en lugar de hacerlo directamente desde el menú. Para obtener más información sobre la relación entre los menús, los grupos y los submenús, vea [Agregar un submenú a un menú](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
-> Los nombres de los menús en la barra de menús de Visual Studio no se muestran por separado en esta jerarquía ya que se puede deducir de la convención de nomenclatura para los grupos en el IDE, como se indica a continuación: IDG_VS_*nombre en el menú*_*nombre de grupo*.
+> Los nombres de los menús de la barra de menús de Visual Studio no se muestran por separado en esta jerarquía porque se pueden inferir de la Convención de nomenclatura para los grupos en el IDE, como se indica a continuación: IDG_VS_*nombre de menú*_*nombre de grupo*.
 
 |Grupo primario|Submenú|Grupos secundarios|
 |------------------|-------------|------------------|
@@ -195,7 +195,7 @@ En este tema enumera los valores GUID y el Id. de los menús y los grupos en la 
 |||IDG_VS_FILE_MOVE_PICKER|
 |IDG_VS_VIEW_DEV_WINDOWS|IDM_VS_CSCD_FINDRESULTS|IDG_VS_WNDO_FINDRESULTS|
 ||IDM_VS_CSCD_WINDOWS|IDG_VS_VIEW_CALLBROWSER|
-|||IDG_VS_WNDO_OTRWNDWS1…6|
+|||IDG_VS_WNDO_OTRWNDWS1... 1,8|
 |||IDG_VS_WNDO_WINDOWS2|
 |IDG_VS_VIEW_TOOLBARS|IDM_VS_CSCD_COMMANDBARS||
 |IDG_VS_EDIT_GOTO|IDM_VS_EDITOR_FIND_MENU||
@@ -214,5 +214,5 @@ En este tema enumera los valores GUID y el Id. de los menús y los grupos en la 
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>Vea también
- [GUID e identificadores de barras de herramientas de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md) [GUID e identificadores de comandos de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md) [tabla de comandos de Visual Studio (. Archivos Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte también
+ [GUID e identificadores de](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md) los [GUID e identificadores](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md) de las barras de herramientas de Visual Studio de los comandos de Visual Studio [tabla de comandos de Visual Studio (. Archivos de Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

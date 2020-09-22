@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439328"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842343"
 ---
 # <a name="call-tree-view"></a>Vista Árbol de llamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
   
  La vista Árbol de llamadas se puede personalizar para agregar o quitar columnas. Haga clic con el botón derecho en la **barra de título del nombre de columna** y seleccione **Agregar o quitar columnas**.  
   
- La vista Árbol de llamadas puede configurarse para la reducción de ruido si se limita la cantidad de datos que se presentan. Gracias a la reducción de ruido, los problemas de rendimiento destacan más en la vista. Cuando los problemas de rendimiento son fáciles de distinguir, el análisis resulta más sencillo. Para obtener más información, vea [Cómo: Configurar la reducción de ruido en las vistas de informe](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
+ La vista Árbol de llamadas puede configurarse para la reducción de ruido si se limita la cantidad de datos que se presentan. Gracias a la reducción de ruido, los problemas de rendimiento destacan más en la vista. Cuando los problemas de rendimiento son fáciles de distinguir, el análisis resulta más sencillo. Para obtener más información, consulte [Cómo: configurar la reducción de ruido en las vistas de informe](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
 > Si la reducción de ruido está configurada para mostrar una advertencia cuando se habilita, se mostrará una barra de información en el informe.  
@@ -51,7 +51,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
   
  [Vista Árbol de llamadas](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Vistas de informes de rendimiento](../profiling/performance-report-views.md)   
- [Introducción a los valores de datos de instrumentación en las herramientas de generación de perfiles](../profiling/understanding-instrumentation-data-values.md)   
- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)
+ [Descripción de los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)   
+ [Descripción de los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)

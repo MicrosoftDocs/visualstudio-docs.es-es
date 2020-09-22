@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Utilizar marcadores de texto | Documentos de Microsoft
+title: 'Cómo: usar marcadores de texto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,51 +11,51 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25c3c4f3a3d9a253b9ec671892d0d44ccf9ca3ab
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430959"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842687"
 ---
-# <a name="how-to-use-text-markers"></a>Procedimiento Utilizar marcadores de texto
+# <a name="how-to-use-text-markers"></a>Cómo: Usar marcadores de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se pueden aplicar los marcadores de texto para editar un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto.  
+Los marcadores de texto se pueden aplicar para editar un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto.  
   
 ## <a name="procedures"></a>Procedimientos  
   
-#### <a name="to-apply-text-markers"></a>Para aplicar los marcadores de texto  
+#### <a name="to-apply-text-markers"></a>Para aplicar marcadores de texto  
   
-1. Obtener una instancia de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> clase.  
-  
-    > [!NOTE]
-    > El editor básico aplica automáticamente los marcadores de texto estándar a cualquier documento que está editando, y no debería ser necesario aplicar de forma explícita los marcadores de texto estándar.  
-  
-2. Obtener un identificador de tipo de marcador de los marcadores están interesados en mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> método con el `GUID` del marcador de texto que desea trabajar con.  
+1. Obtenga una instancia de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> clase.  
   
     > [!NOTE]
-    > No utilice el `GUID` de VSPackage o del servicio que proporciona el marcador de texto.  
+    > El editor principal aplica automáticamente los marcadores de texto estándar a cualquier documento que está editando, y no debe ser necesario aplicar marcadores de texto estándar explícitamente.  
   
-3. Use el identificador de tipo de marcador obtenido mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> método como parámetro al llamar a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método o la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método para aplicar un marcador de texto a una región determinada de texto.  
+2. Obtenga un identificador de tipo de marcador del marcador que le interese llamando al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> método con el `GUID` del marcador de texto con el que desea trabajar.  
+  
+    > [!NOTE]
+    > No utilice el `GUID` del VSPackage ni del servicio que proporciona el marcador de texto.  
+  
+3. Use el identificador de tipo de marcador obtenido llamando al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> método como un parámetro para llamar al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método o al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método para aplicar un marcador de texto a una región de texto determinada.  
   
 #### <a name="to-add-features-to-text-markers"></a>Para agregar características a marcadores de texto  
   
-1. Puede ser deseable para agregar características adicionales a un marcador de texto, como información sobre herramientas, un menú contextual especial o un controlador para circunstancias especiales. Para ello:  
+1. Puede ser deseable agregar características adicionales a un marcador de texto, como información sobre herramientas, un menú contextual especial o un controlador para circunstancias especiales. Para ello:  
   
-2. Crear un objeto que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz.  
+2. Cree un objeto que implemente la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz.  
   
-3. Si se desea una funcionalidad adicional, implementar el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>y el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> interfaces en el mismo objeto que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz.  
+3. Si se desea una funcionalidad adicional, implemente las <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> interfaces y en el mismo objeto que implementa la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz.  
   
-4. Pase el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz que cree, a la llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método o la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método utilizado para aplicar el marcador de texto a una región determinada de texto.  
+4. Pase la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz que cree, a la llamada al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método o al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método utilizado para aplicar el marcador de texto a una región de texto determinada.  
   
-5. Al agregar compatibilidad de menú contextual a una región de marcador de texto es necesario crear el menú.  
+5. Al agregar compatibilidad con el menú contextual a una región de marcador de texto, es necesario crear el menú.  
   
      Para obtener más información sobre cómo crear un menú contextual, vea [menús contextuales](../extensibility/context-menus.md).  
   
-6. El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entorno llama a los métodos de las interfaces suministrados, como el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> método, o la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> método según sea necesario.  
+6. El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entorno llama a los métodos de las interfaces proporcionadas, como el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> método, o el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> método según sea necesario.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Uso de marcadores de texto con la API heredada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Cómo: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)   
- [Cómo: Crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
+ [Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)   
+ [Cómo: crear marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)   
  [Cómo: Implementar marcadores de error](../extensibility/how-to-implement-error-markers.md)

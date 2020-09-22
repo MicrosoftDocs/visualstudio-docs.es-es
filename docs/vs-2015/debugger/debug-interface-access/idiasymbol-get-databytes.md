@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bb0946c586c7b9ac3bb8907a9b5eb907d8f3ae70
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858495"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843158"
 ---
-# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
+# <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera los bytes de datos de un símbolo de OEM.  
@@ -37,26 +37,26 @@ HRESULT get_dataBytes ( 
   
 #### <a name="parameters"></a>Parámetros  
  `cbData`  
- [in] Tamaño del búfer para almacenar los datos.  
+ de Tamaño del búfer que va a contener los datos.  
   
  `pcbData`  
- [out] Devuelve el número de bytes escritos, o bien, si la `data` parámetro es `NULL`, devuelve el número de bytes disponibles.  
+ enuncia Devuelve el número de bytes escritos, o bien, si el `data` parámetro es `NULL` , devuelve el número de bytes disponibles.  
   
  `data[]`  
- [out] Un búfer que se rellena con los bytes de datos.  
+ [out,] Búfer que se rellena con los bytes de datos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
+|Versión:|SDK de DIA v 7.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436792"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843135"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436792"
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
 ## <a name="batching-one-item-at-a-time"></a>Procesar por lotes un elemento cada vez  
- El procesamiento por lotes también se puede realizar en metadatos de elementos conocidos que se asignan a cada elemento durante su creación. De este modo se garantiza que cada elemento de una colección disponga de metadatos que utilizar para el procesamiento por lotes. El valor de metadatos `Identity` es único para cada elemento y resulta de gran utilidad para dividir cada elemento de una lista de elementos en un lote independiente. Para obtener una lista completa de metadatos de elementos conocidos, vea [Metadatos de los elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md).  
+ El procesamiento por lotes también se puede realizar en metadatos de elementos conocidos que se asignan a cada elemento durante su creación. De este modo se garantiza que cada elemento de una colección disponga de metadatos que utilizar para el procesamiento por lotes. El valor de metadatos `Identity` es único para cada elemento y resulta de gran utilidad para dividir cada elemento de una lista de elementos en un lote independiente. Para obtener una lista completa de metadatos de elementos conocidos, vea [metadatos de elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md).  
   
  En el ejemplo siguiente se muestra cómo procesar por lotes cada uno de los elementos de una lista, de uno en uno. Dado que el valor de metadatos `Identity` de cada elemento es único, la lista de elementos `ExampColl` se divide en seis lotes, cada uno de los cuales contiene un elemento de la lista. La presencia de `%(Identity)` en el atributo `Text` indica a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se debe realizar un procesamiento por lotes.  
   
@@ -220,8 +220,8 @@ Identity: "Item6" -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Metadatos de los elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md)   
+## <a name="see-also"></a>Consulte también  
+ [Metadatos de elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md)   
  [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)   
  [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Procesamiento por lotes](../msbuild/msbuild-batching.md)   

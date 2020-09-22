@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Recopilar datos de seguimiento de eventos para Windows (ETW) | Microsoft Docs
+title: 'Cómo: Recopilar datos de Seguimiento de eventos para Windows (ETW) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d113a32622c40c68a030fdbc670ec19c6038de2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432818"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842863"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Procedimiento Recopilar el seguimiento de eventos para Windows (ETW) datos
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Cómo: Recopilar datos de Seguimiento de eventos para Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Seguimiento de eventos para Windows (ETW) es una eficaz utilidad de seguimiento de nivel de kernel que activa el kernel de registro del generador de perfiles o eventos definidos por la aplicación. Los datos recopilados del proveedor de eventos se pueden ver utilizando la opción /**Summary: ETW** de la herramienta de línea de comandos [VSPerfReport](../profiling/vsperfreport.md). Utilice este informe para determinar dónde se producen problemas de rendimiento en la aplicación.  
@@ -42,5 +42,5 @@ Seguimiento de eventos para Windows (ETW) es una eficaz utilidad de seguimiento 
   
 3. En la lista **Seleccionar proveedor de seguimiento de eventos del que recopilar datos**, seleccione los proveedores de eventos que desea utilizar para generar perfiles de la aplicación.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)

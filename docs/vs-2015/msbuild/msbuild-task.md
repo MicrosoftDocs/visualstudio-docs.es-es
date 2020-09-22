@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426108"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843175"
 ---
 # <a name="msbuild-task"></a>MSBuild (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de
 |---------------|-----------------|  
 |`BuildInParallel`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, los proyectos especificados en el parámetro `Projects` se compilan en paralelo, si es posible. El valor predeterminado es `false`.|  
 |`Projects`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos del proyecto que se van a compilar.|  
-|`Properties`|Parámetro `String` opcional.<br /><br /> Lista delimitada por caracteres de punto y coma de pares de nombre/valor de propiedad que se aplicarán como propiedades globales al proyecto secundario. Cuando se especifica este parámetro, es funcionalmente equivalente a establecer las propiedades que tiene el modificador **/property** cuando se compila con [MSBuild.exe](../msbuild/msbuild-command-line-reference.md). Por ejemplo:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Al pasar propiedades al proyecto mediante el parámetro `Properties`, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] crea una nueva instancia del proyecto, incluso si ya se ha cargado el archivo del proyecto. Cuando se ha creado una nueva instancia del proyecto, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] lo trata como un proyecto diferente con propiedades globales diferentes y que se puede compilar en paralelo con otras instancias del proyecto. Por ejemplo, podría compilar una configuración de versión al mismo tiempo que una configuración de depuración.|  
+|`Properties`|Parámetro `String` opcional.<br /><br /> Lista delimitada por caracteres de punto y coma de pares de nombre/valor de propiedad que se aplicarán como propiedades globales al proyecto secundario. Cuando se especifica este parámetro, es funcionalmente equivalente a establecer las propiedades que tienen el modificador **/Property** al compilar con [MSBuild.exe](../msbuild/msbuild-command-line-reference.md). Por ejemplo:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Al pasar propiedades al proyecto mediante el parámetro `Properties`, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] crea una nueva instancia del proyecto, incluso si ya se ha cargado el archivo del proyecto. Cuando se ha creado una nueva instancia del proyecto, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] lo trata como un proyecto diferente con propiedades globales diferentes y que se puede compilar en paralelo con otras instancias del proyecto. Por ejemplo, podría compilar una configuración de versión al mismo tiempo que una configuración de depuración.|  
 |`RebaseOutputs`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, las rutas de acceso relativas de los elementos de salida de destino de los proyectos compilados tienen sus rutas de acceso ajustadas para ser relativas al proyecto que realiza la llamada. El valor predeterminado es `false`.|  
 |`RemoveProperties`|Parámetro `String` opcional.<br /><br /> Especifica el conjunto de propiedades globales que se va a quitar.|  
 |`RunEachTargetSeparately`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, la tarea [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] invoca cada destino de la lista que se pasa a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] uno a uno, en lugar de todos al mismo tiempo. Establecer este parámetro en `true` garantiza que los destinos subsiguientes se invocan incluso si se ha producido un error en los destinos previamente invocados. De lo contrario, un error de compilación detendría la invocación de todos los destinos subsiguientes. El valor predeterminado es `false`.|  
 |`SkipNonexistentProjects`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, se omitirán los archivos del proyecto que no existen en el disco. De lo contrario, estos proyectos producirán un error.|  
 |`StopOnFirstFailure`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, cuando uno de los proyectos no se puede compilar, no se compilarán más proyectos. Actualmente esto no se admite cuando se compila en paralelo (con varios procesadores).|  
 |`TargetAndPropertyListSeparators`|Parámetro `String[]` opcional.<br /><br /> Especifica una lista de destinos y propiedades como metadatos de elemento de `Project`. Los separadores no tendrán escape antes del procesamiento. Por ejemplo, %3B (el carácter de escape ';') se tratará como si fuese un carácter sin escape ';'.|  
-|`TargetOutputs`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Devuelve los resultados de los destinos compilados de todos los archivos de proyecto. Solo se devuelven los resultados de los destinos especificados; no se devuelven los resultados que puedan existir en los destinos de los que dependen esos destinos.<br /><br /> El parámetro `TargetOutputs` también contiene los metadatos siguientes:<br /><br /> -   `MSBuildSourceProjectFile`: el archivo del proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que contiene el destino que establece los resultados.<br />-   `MSBuildSourceTargetName`: el destino que establece los resultados. **Nota:** Si quiere identificar los resultados de cada archivo del proyecto o destino por separado, ejecute la tarea `MSBuild` por separado para cada archivo del proyecto o destino. Si ejecuta la tarea `MSBuild` solo una vez para compilar todos los archivos del proyecto, los resultados de todos los destinos se recogen en una matriz.|  
-|`Targets`|Parámetro `String` opcional.<br /><br /> Especifica los destinos que se compilarán en los archivos del proyecto. Use un punto y coma para separar una lista de nombres de destino. Si no se especifica ningún destino en la tarea `MSBuild`, se compilan los destinos predeterminados especificados en los archivos del proyecto. **Nota:** Los destinos deben existir en todos los archivos del proyecto. Si no es así, se produce un error de compilación.|  
+|`TargetOutputs`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Devuelve los resultados de los destinos compilados de todos los archivos de proyecto. Solo se devuelven los resultados de los destinos especificados; no se devuelven los resultados que puedan existir en los destinos de los que dependen esos destinos.<br /><br /> El parámetro `TargetOutputs` también contiene los metadatos siguientes:<br /><br /> -   `MSBuildSourceProjectFile`: el archivo del proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que contiene el destino que establece los resultados.<br />-   `MSBuildSourceTargetName`: Destino que establece los resultados. **Nota:**  Si quiere identificar los resultados de cada archivo de proyecto o destino por separado, ejecute la tarea `MSBuild` por separado para cada archivo de proyecto o destino. Si ejecuta la tarea `MSBuild` solo una vez para compilar todos los archivos del proyecto, los resultados de todos los destinos se recogen en una matriz.|  
+|`Targets`|Parámetro `String` opcional.<br /><br /> Especifica los destinos que se compilarán en los archivos del proyecto. Use un punto y coma para separar una lista de nombres de destino. Si no se especifica ningún destino en la tarea `MSBuild`, se compilan los destinos predeterminados especificados en los archivos del proyecto. **Nota:**  Los destinos deben existir en todos los archivos de proyecto. Si no es así, se produce un error de compilación.|  
 |`ToolsVersion`|Parámetro `String` opcional.<br /><br /> Especifica el `ToolsVersion` que se va a usar al compilar proyectos pasados a esta tarea.<br /><br /> Permite que una tarea [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] compile un proyecto que tiene como destino una versión diferente de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que la especificada en el proyecto. Los valores válidos son `2.0`, `3.0` y `3.5`. El valor predeterminado es `3.5`.|  
 |`UnloadProjectsOnCompletion`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, se descargará el proyecto una vez completada la operación.|  
 |`UseResultsCache`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, se devolverá el resultado almacenado en caché, si está presente. Si se ejecuta la tarea MSBuild, su resultado se almacenará en caché en un ámbito (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> como una lista de elementos de compilación|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [clase base TaskExtension](../msbuild/taskextension-base-class.md).  
   
  A diferencia de utilizar la [tarea Exec](../msbuild/exec-task.md) para iniciar MSBuild.exe, esta tarea utiliza el mismo proceso [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para compilar los proyectos secundarios. La lista de destinos ya generados que se pueden omitir se comparte entre las compilaciones primarias y secundarias. Esta tarea también es más rápida porque no se crea ningún proceso [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nuevo.  
   
@@ -63,18 +63,18 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de
  A partir de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, los proyectos de soluciones emergen de TargetOutputs desde todos los subproyectos que compila.  
   
 ## <a name="passing-properties-to-projects"></a>Pasar propiedades a los proyectos  
- En las versiones de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] anteriores a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, pasar distintos conjuntos de propiedades a diferentes proyectos enumerados en el elemento [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] era una tarea ardua. Si se utilizaba el atributo de propiedades de la [tarea MSBuild](../msbuild/msbuild-task.md), su configuración se aplicaba a todos los proyectos que se estaban compilando, a menos que procesara por lotes la [tarea MSBuild](../msbuild/msbuild-task.md) y proporcionara condicionalmente diferentes propiedades para cada proyecto de la lista de elementos.  
+ En las versiones de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] anteriores a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, pasar distintos conjuntos de propiedades a diferentes proyectos enumerados en el elemento [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] era una tarea ardua. Si ha usado el atributo Properties de la [tarea MSBuild](../msbuild/msbuild-task.md), su configuración se aplicó a todos los proyectos que se están compilando a menos que haya procesado por lotes la [tarea MSBuild](../msbuild/msbuild-task.md) y proporcione de forma condicional diferentes propiedades para cada proyecto en la lista de elementos.  
   
  Sin embargo, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 ofrece dos nuevos elementos de metadatos reservados, Properties y AdditionalProperties, que proporcionan una manera flexible de pasar propiedades diferentes para distintos proyectos que se están compilando mediante la [tarea MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
-> Estos nuevos elementos de metadatos solo son aplicables a elementos que se pasan en el atributo Projects de la [tarea MSBuild](../msbuild/msbuild-task.md).  
+> Estos nuevos elementos de metadatos solo son aplicables a los elementos que se pasan en el atributo Projects de la [tarea MSBuild](../msbuild/msbuild-task.md).  
   
 ## <a name="multi-processor-build-benefits"></a>Ventajas de la compilación de varios procesadores  
- Una de las principales ventajas de utilizar estos nuevos metadatos se produce cuando se compilan los proyectos en paralelo en un sistema de varios procesadores. Los metadatos permiten consolidar todos los proyectos en una sola llamada de la [tarea MSBuild](../msbuild/msbuild-task.md) sin tener que realizar ningún procesamiento por lotes ni tareas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] condicionales. Y cuando se llama únicamente a una sola [tarea MSBuild](../msbuild/msbuild-task.md), todos los proyectos que aparecen en el atributo Projects se compilarán en paralelo. (Solo, sin embargo, si el atributo `BuildInParallel=true` está presente en la [tarea MSBuild](../msbuild/msbuild-task.md).) Para obtener más información, consulte [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
+ Una de las principales ventajas de utilizar estos nuevos metadatos se produce cuando se compilan los proyectos en paralelo en un sistema de varios procesadores. Los metadatos permiten consolidar todos los proyectos en una sola llamada de la [tarea MSBuild](../msbuild/msbuild-task.md) sin tener que realizar ningún procesamiento por lotes ni tareas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] condicionales. Y cuando se llama a una sola [tarea de MSBuild](../msbuild/msbuild-task.md), todos los proyectos que aparecen en el atributo Projects se compilarán en paralelo. (Solo, sin embargo, si el `BuildInParallel=true` atributo está presente en la [tarea de MSBuild](../msbuild/msbuild-task.md)). Para obtener más información, vea [compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
   
 ## <a name="properties-metadata"></a>Metadatos Properties  
- Un escenario común es cuando se compilan varios archivos de solución mediante la [tarea MSBuild](../msbuild/msbuild-task.md), solo con diferentes configuraciones de compilación. Otra opción es compilar la solución a1 con la configuración de depuración y la solución a2 con la configuración de versión. En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0, este archivo del proyecto tendría el aspecto siguiente:  
+ Un escenario común es cuando se compilan varios archivos de solución mediante la [tarea MSBuild](../msbuild/msbuild-task.md), solo mediante configuraciones de compilación diferentes. Otra opción es compilar la solución a1 con la configuración de depuración y la solución a2 con la configuración de versión. En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0, este archivo del proyecto tendría el aspecto siguiente:  
   
 > [!NOTE]
 > En el ejemplo siguiente, "..." representa los archivos de solución adicionales.  
@@ -90,7 +90,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de
 </Project>  
 ```  
   
- Sin embargo, mediante el uso de los metadatos de propiedades, puede simplificar este proceso para utilizar una sola [tarea MSBuild](../msbuild/msbuild-task.md), como se muestra a continuación:  
+ Sin embargo, mediante el uso de los metadatos de propiedades, puede simplificar esta tarea para usar una única [tarea de MSBuild](../msbuild/msbuild-task.md), como se muestra a continuación:  
   
 ### <a name="aproj"></a>a.proj  
   
@@ -128,7 +128,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de
 ```  
   
 ## <a name="additionalproperties-metadata"></a>Metadatos AdditionalProperties  
- Considere un escenario en que se están compilando dos archivos de solución mediante la [tarea MSBuild](../msbuild/msbuild-task.md), ambos con la configuración de versión, pero uno mediante la arquitectura x86 y otro con la arquitectura ia64. En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0, habría que crear varias instancias de la [tarea MSBuild](../msbuild/msbuild-task.md): una para compilar el proyecto mediante la configuración de versión con la arquitectura x86, la otra mediante la configuración de versión con la arquitectura ia64. El archivo del proyecto tendría el aspecto siguiente:  
+ Considere el siguiente escenario en el que va a compilar dos archivos de solución mediante la [tarea MSBuild](../msbuild/msbuild-task.md), ambos mediante la configuración release, pero uno que use la arquitectura x86 y el otro con la arquitectura IA64. En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0, habría que crear varias instancias de la [tarea MSBuild](../msbuild/msbuild-task.md): una para compilar el proyecto mediante la configuración de versión con la arquitectura x86, la otra mediante la configuración de versión con la arquitectura ia64. El archivo del proyecto tendría el aspecto siguiente:  
   
 ### <a name="aproj"></a>a.proj  
   
@@ -143,7 +143,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de
 </Project>  
 ```  
   
- Mediante el uso de los metadatos AdditionalProperties, puede simplificar este proceso para utilizar una sola [tarea MSBuild](../msbuild/msbuild-task.md) mediante lo siguiente:  
+ Mediante el uso de los metadatos de AdditionalProperties, puede simplificar este procedimiento para usar una única [tarea de MSBuild](../msbuild/msbuild-task.md) mediante el uso de lo siguiente:  
   
 ### <a name="aproj"></a>a.proj  
   
@@ -189,6 +189,6 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

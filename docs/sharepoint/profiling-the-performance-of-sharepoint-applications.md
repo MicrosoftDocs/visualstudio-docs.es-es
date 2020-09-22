@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2037842e57b6152990144d9ea652936e65517e13
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189202"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739959"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Generar perfiles del rendimiento de las aplicaciones de SharePoint
 
@@ -55,7 +55,7 @@ Las pruebas de rendimiento web simulan el modo en que un usuario final puede int
 
 ## <a name="test-user-interfaces"></a>Probar interfaces de usuario
 
-Las pruebas de IU codificadas controlan automáticamente la aplicación de SharePoint a través de su interfaz de usuario (IU). Estas pruebas cubren los controles de interfaz de usuario, como botones y menús, para comprobar que funcionan correctamente. Este tipo de pruebas es especialmente útil si la validación u otra lógica se realiza en la interfaz de usuario, como en una página web. También puede usar pruebas de IU codificadas para automatizar las pruebas manuales. Cree pruebas de IU codificadas para las aplicaciones de SharePoint del mismo modo que crea pruebas para otros tipos de aplicaciones. Para obtener más información, vea [probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015).
+Las pruebas de IU codificadas controlan automáticamente la aplicación de SharePoint a través de su interfaz de usuario (IU). Estas pruebas cubren los controles de interfaz de usuario, como botones y menús, para comprobar que funcionan correctamente. Este tipo de pruebas es especialmente útil si la validación u otra lógica se realiza en la interfaz de usuario, como en una página web. También puede usar pruebas de IU codificadas para automatizar las pruebas manuales. Cree pruebas de IU codificadas para las aplicaciones de SharePoint del mismo modo que crea pruebas para otros tipos de aplicaciones. Para obtener más información, vea [probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -64,7 +64,7 @@ Las pruebas de IU codificadas controlan automáticamente la aplicación de Share
 |[Tutorial: generar perfiles de una aplicación de SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Muestra cómo realizar un análisis de Perfil de muestreo en una aplicación de SharePoint.|
 |[Ejecutar pruebas de rendimiento en la aplicación antes del lanzamiento](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Describe cómo crear pruebas de carga, que le ayudarán a realizar pruebas de esfuerzo de las aplicaciones de SharePoint.|
 |[Prueba unitaria del código](../test/unit-test-your-code.md)|Describe cómo buscar errores lógicos en el código mediante pruebas unitarias.|
-|[Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Describe cómo probar la interfaz de usuario de las aplicaciones de SharePoint.|
+|[Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015)|Describe cómo probar la interfaz de usuario de las aplicaciones de SharePoint.|
 
 ## <a name="see-also"></a>Vea también
 

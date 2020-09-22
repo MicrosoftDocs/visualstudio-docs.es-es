@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Aplicar tareas de edición en modo de interrupción con Editar y continuar | Microsoft Docs
+title: 'Cómo: aplicar ediciones en modo de interrupción con editar y continuar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,13 +25,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c04dc0ae6e5272d2544ad7436fa7ca516c9a022
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437357"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842595"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedimiento Aplicar tareas de edición en modo de interrupción con Editar y continuar
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Cómo: Aplicar tareas de edición en modo de interrupción con Editar y continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede utilizar la opción Editar y continuar para modificar el código en modo de interrupción y, posteriormente, continuar sin detener ni reiniciar la ejecución.  
@@ -48,11 +48,11 @@ Puede utilizar la opción Editar y continuar para modificar el código en modo d
   
 - Depuración de una aplicación incrustada en tiempo de ejecución.  
   
-- Depurar una aplicación con **adjuntar a** en lugar de ejecutar la aplicación con **iniciar** desde el **depurar** menú.  
+- Depurar una aplicación con **adjuntar a** en lugar de ejecutar la aplicación con **Start** en el menú **depurar** .  
   
 - Depuración de código optimizado.  
   
-- Depuración de código administrado cuando el destino es una aplicación de 64 bits. Si desea utilizar la opción Editar y continuar, deberá establecer el destino en x86. (_Proyecto_**propiedades**, **compilar** ficha, **compilador avanzada** configuración.).  
+- Depuración de código administrado cuando el destino es una aplicación de 64 bits. Si desea utilizar la opción Editar y continuar, deberá establecer el destino en x86. (_Project_**Propiedades**del proyecto, pestaña **compilar** , configuración de **compilador avanzada** ).  
   
 - Depuración de una versión anterior del código cuando no se haya podido generar una nueva versión debido a errores de compilación.  
   
@@ -62,13 +62,13 @@ Puede utilizar la opción Editar y continuar para modificar el código en modo d
   
     - Establezca un punto de interrupción en el código y, a continuación, elija **Iniciar depuración** en el menú **Depurar**. Luego, espere a que la aplicación llegue al punto de interrupción.  
   
-         -O bien-  
+         -o bien-  
   
     - Inicie la depuración y, a continuación, seleccione **Interrumpir todo** en el menú **Depurar**.  
   
-         -O bien-  
+         -o bien-  
   
-    - Si se produce una excepción, elija **Habilitar edición** en el**Asistente de excepciones**.  
+    - Cuando se produzca una excepción, elija **Habilitar edición** en el**Asistente de excepciones**.  
   
 2. Realice todos los cambios que desee en el código, siempre y cuando sean válidos.  
   
@@ -81,6 +81,6 @@ Puede utilizar la opción Editar y continuar para modificar el código en modo d
   
      El código se ejecutará con los cambios aplicados incorporados al proyecto.  
   
-## <a name="see-also"></a>Vea también  
- [Ediciones no compatibles en Visual Basic, edición y continuar](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
+## <a name="see-also"></a>Consulte también  
+ [Ediciones no compatibles en Visual Basic editar y continuar](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [Editar y continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
