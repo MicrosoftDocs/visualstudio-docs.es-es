@@ -1,5 +1,5 @@
 ---
-title: Cómo administrar las actualizaciones de una aplicación ClickOnce | Microsoft Docs
+title: Administrar actualizaciones para una aplicación ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382359"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851611"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedimientos para administrar actualizaciones de aplicaciones ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como desarrollador, tiene mucha flexibilidad a la hora de especificar Cuándo y cómo se realizan las comprobaciones de actualización, si las actualizaciones son obligatorias y dónde debe buscar actualizaciones la aplicación.
@@ -105,7 +105,7 @@ ms.locfileid: "85382359"
 
 7. Compile la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [Cuadro de diálogo Actualizaciones de la aplicación](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Selección de una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

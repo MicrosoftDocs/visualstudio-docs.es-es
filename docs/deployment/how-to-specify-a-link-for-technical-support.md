@@ -1,5 +1,5 @@
 ---
-title: Cómo especificar un vínculo para soporte técnico | Microsoft Docs
+title: Especifique un vínculo para obtener soporte técnico | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e64ef97b8b51f8a943e216bad67ec300026d5654
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4474845d4a3f13a404773a6c8b572ff5194e033
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382060"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851754"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Cómo: Especificar un vínculo para soporte técnico
 Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, la propiedad de la **dirección URL de soporte** identifica una página web o un recurso compartido de archivos en el que los usuarios pueden ir para obtener información acerca de la aplicación. Esta propiedad es opcional; Si se proporciona, la dirección URL se mostrará en el cuadro de diálogo **Agregar o quitar programas** de entrada de la aplicación.

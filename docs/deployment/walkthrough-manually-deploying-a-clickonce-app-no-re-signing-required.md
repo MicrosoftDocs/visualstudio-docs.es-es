@@ -1,5 +1,6 @@
 ---
-title: Implementar manualmente aplicaciones ClickOnce manteniendo la personalización de marca
+title: Implementar manualmente la aplicación ClickOnce & mantener la marca
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263427"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809229"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Tutorial: implementar manualmente una aplicación ClickOnce que no requiera volver a firmar y que conserve la información de personalización de marca
 Cuando se crea una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, se le asigna a un cliente para que la publique e implemente, el cliente tradicionalmente ha tenido que actualizar el manifiesto de implementación y volver a firmarlo. Aunque todavía es el método preferido en la mayoría de los casos, el .NET Framework 3,5 le permite crear [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones que los clientes pueden implementar sin tener que volver a generar un nuevo manifiesto de implementación. Para obtener más información, consulte [deploy ClickOnce Applications for Testing and Production Servers sin tener que volver a firmar](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).

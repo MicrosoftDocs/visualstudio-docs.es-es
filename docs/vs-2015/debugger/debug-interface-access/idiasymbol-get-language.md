@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd9adeba1b3ac84fa6a09d6c6f25b77e35cd429f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64819196"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843019"
 ---
-# <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
+# <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el idioma de origen.  
+Recupera el idioma del origen.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,14 +35,14 @@ HRESULT get_language ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve un valor de la [CV_CFL_LANG (enumeración)](../../debugger/debug-interface-access/cv-cfl-lang.md) enumeración que especifica el idioma de origen.  
+ enuncia Devuelve un valor de la enumeración de [enumeración CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) que especifica el lenguaje del origen.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeración CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)

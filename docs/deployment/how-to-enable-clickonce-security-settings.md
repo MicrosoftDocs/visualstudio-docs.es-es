@@ -1,5 +1,5 @@
 ---
-title: Cómo habilitar la configuración de seguridad de ClickOnce | Microsoft Docs
+title: Habilitar la configuración de seguridad de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f407ac42dc9997215bfe6682bb8b974b78c7847
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382437"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850935"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Cómo: Habilitar la configuración de seguridad para aplicaciones ClickOnce
 La seguridad de acceso del código de las aplicaciones ClickOnce debe estar habilitada para poder publicar la aplicación. Esto se hace automáticamente al publicar una aplicación mediante el Asistente para publicación.
@@ -56,6 +56,6 @@ La seguridad de acceso del código de las aplicaciones ClickOnce debe estar habi
     > [!NOTE]
     > Cada vez que se publica la aplicación con el Asistente para publicación, esta casilla se activará; debe borrarlo de nuevo después de cada publicación correcta.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

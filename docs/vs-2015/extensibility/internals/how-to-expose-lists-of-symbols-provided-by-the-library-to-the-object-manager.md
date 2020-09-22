@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Exposición de listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos | Documentos de Microsoft
+title: 'Cómo: exponer listas de símbolos proporcionados por la biblioteca al administrador de objetos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,29 +15,29 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431653"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842918"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedimiento Exponer listas de símbolos proporcionadas por la biblioteca al Administrador de objetos
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Exposición de listas de símbolos proporcionadas por la biblioteca al Administrador de objetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Las herramientas de exploración de símbolos, **vista de clases**, **Examinador de objetos**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos**, pasa las solicitudes de nuevos datos el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el Administrador de objetos. El Administrador de objetos busca las bibliotecas adecuadas y las solicitudes nuevas listas de símbolos. Las bibliotecas de responden, ya que proporciona los datos solicitados para la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el Administrador de objetos a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el Administrador de objetos llama a los métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> para obtener los datos de la interfaz y se utiliza para rellenar o actualizar las vistas de las herramientas de exploración de símbolos.  
+Las herramientas de exploración de símbolos, **vista de clases**, **Examinador de objetos**, **Explorador de llamadas** y **Buscar los resultados de símbolos**, pasan solicitudes de datos nuevos al [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Administrador de objetos. El administrador de objetos busca las bibliotecas apropiadas y solicita nuevas listas de símbolos. Las bibliotecas responden proporcionando datos solicitados al [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Administrador de objetos a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Administrador de objetos llama a los métodos de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz para obtener los datos y los usa para rellenar o actualizar las vistas de las herramientas de exploración de símbolos.  
   
- Una biblioteca puede obtener las solicitudes de datos cuando se invoca la herramienta, el nodo está expandido, o se actualice la vista. Cuando se invoca una herramienta de exploración de símbolos por primera vez, el Administrador de objetos solicita la biblioteca para proporcionar la lista de nivel superior. Cuando el usuario expande un nodo de lista, la biblioteca proporciona una lista de elementos secundarios bajo ese nodo. Cada consulta de objeto manager contiene el índice del elemento de interés. Para mostrar una lista nueva, el Administrador de objetos debe determinar cuántos elementos están en la lista, el tipo de los elementos, sus nombres, accesibilidad y otras propiedades.  
+ Una biblioteca puede recibir solicitudes de datos cuando se invoca la herramienta, se expande el nodo o se actualiza la vista. Cuando se invoca una herramienta de exploración de símbolos por primera vez, el administrador de objetos solicita a la biblioteca que proporcione la lista de nivel superior. Cuando el usuario expande un nodo de lista, la biblioteca proporciona una lista de elementos secundarios bajo ese nodo. Cada consulta del administrador de objetos contiene un índice del elemento de interés. Para mostrar una lista nueva, el administrador de objetos debe determinar cuántos elementos hay en la lista, el tipo de los elementos, sus nombres, accesibilidad y otras propiedades.  
   
 > [!NOTE]
-> Los ejemplos de código administrado siguientes muestran cómo proporcionar listas de símbolos en la implementación el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El Administrador de objetos llama a los métodos en esta interfaz y usa los datos obtenidos para rellenar o actualizar las herramientas de exploración de símbolos.  
+> En los siguientes ejemplos de código administrado se muestra cómo proporcionar listas de símbolos a través de la implementación de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El administrador de objetos llama a los métodos en esta interfaz y usa los datos obtenidos para rellenar o actualizar las herramientas de exploración de símbolos.  
 >   
-> Para la implementación del proveedor de símbolos de código nativo, use el <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaz.  
+> Para la implementación del proveedor de símbolos de código nativo, use la <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaz.  
   
-## <a name="providing-lists-of-symbols-to-the-object-manager"></a>Proporcionar listas de símbolos para el Administrador de objetos  
+## <a name="providing-lists-of-symbols-to-the-object-manager"></a>Proporcionar listas de símbolos al administrador de objetos  
   
-#### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Para proporcionar listas de símbolos para el Administrador de objetos  
+#### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Para proporcionar listas de símbolos al administrador de objetos  
   
-1. Obtiene el número de elementos en la lista de símbolos al implementar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> método. El ejemplo siguiente muestra cómo el Administrador de objetos Obtiene la información sobre el número de elementos de la lista.  
+1. Obtiene el número de elementos de la lista de símbolos implementando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> método. En el ejemplo siguiente se muestra cómo el administrador de objetos obtiene la información sobre el número de elementos de la lista.  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -59,7 +59,7 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
   
     ```  
   
-2. Obtenga información sobre las categorías y los atributos de un elemento de lista determinado mediante la implementación de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> método. Se especifican las categorías de elemento en el <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> enumeración. El ejemplo siguiente muestra cómo el Administrador de objetos obtiene los atributos de los elementos para una categoría determinada.  
+2. Obtener información sobre las categorías y los atributos de un elemento de lista determinado implementando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> método. Las categorías de elementos se especifican en la <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> enumeración. En el ejemplo siguiente se muestra cómo el administrador de objetos obtiene los atributos de los elementos de una categoría determinada.  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -154,7 +154,7 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
   
     ```  
   
-3. Obtiene la representación de texto de un elemento de lista determinado al implementar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> método. El ejemplo siguiente muestra cómo obtener un nombre completo de un elemento determinado.  
+3. Obtiene la representación de texto de un elemento de lista determinado implementando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> método. En el ejemplo siguiente se muestra cómo obtener un nombre completo de un elemento determinado.  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -172,7 +172,7 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
   
     ```  
   
-4. Obtener la información de icono para un elemento de lista determinado mediante la implementación de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> método. El icono representa el tipo (clase, método etc.) y accesibilidad (privado, público etc.) de un elemento de lista. El ejemplo siguiente muestra cómo obtener la información del icono en función de atributos de un elemento determinado.  
+4. Obtener la información de icono de un elemento de lista determinado implementando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> método. El icono representa el tipo (clase, método, etc.) y accesibilidad (privada, pública, etc.) de un elemento de lista. En el ejemplo siguiente se muestra cómo obtener la información de icono basándose en los atributos de un elemento determinado.  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -254,7 +254,7 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
   
     ```  
   
-5. Obtenga la información sobre un elemento de lista determinado es expansible implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> método. El ejemplo siguiente muestra cómo obtener la información sobre si se puede expandir un elemento determinado.  
+5. Obtiene la información sobre si un determinado elemento de lista se expande implementando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> método. En el ejemplo siguiente se muestra cómo obtener la información sobre si un elemento determinado se puede expandir.  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -281,7 +281,7 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
   
     ```  
   
-6. Obtener una lista secundaria de símbolos de un elemento de lista determinado mediante la implementación de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> método. En el ejemplo siguiente se muestra cómo obtener una lista secundaria de símbolos de un elemento determinado de **llamar** o **llamadores** gráficos.  
+6. Obtiene una lista secundaria de símbolos de un elemento de lista determinado implementando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> método. En el ejemplo siguiente se muestra cómo obtener una lista secundaria de símbolos de un elemento determinado para los gráficos de **llamadas** o **llamadores** .  
   
     ```vb  
     ' Call graph list.  
@@ -468,8 +468,8 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
   
     ```  
   
-## <a name="see-also"></a>Vea también  
- [Herramientas de exploración de símbolos de compatibilidad](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Cómo: Registrar una biblioteca con el Administrador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Cómo: Identificación de símbolos en una biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+## <a name="see-also"></a>Consulte también  
+ [Compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [Cómo: registrar una biblioteca con el administrador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Cómo: identificar símbolos en una biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)

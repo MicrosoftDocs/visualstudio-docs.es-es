@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Recopilación de datos mediante un formulario de Windows'
+title: 'Tutorial: recopilar datos con Windows Forms'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438592"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842519"
 ---
-# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Tutorial: Recopilar datos mediante un formulario de Windows
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Tutorial: recopilar datos mediante Windows Forms
   En este tutorial se muestra cómo abrir un formulario de Windows Forms desde una personalización de nivel de documento de Microsoft Office Excel, cómo recopilar la información del usuario y cómo escribir dicha información en una celda de la hoja de cálculo.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "63438592"
  Aunque en este tutorial usaremos específicamente un proyecto de nivel de documento para Excel, los conceptos que se muestran en el mismo se pueden aplicar a otros proyectos de Office.
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
-> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
  En primer lugar, es necesario crear un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1. Cree un proyecto de libro de Excel con el nombre **WinFormInput**y seleccione **Crear un nuevo documento** en el asistente. Para obtener más información, consulte [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Cree un proyecto de libro de Excel con el nombre **WinFormInput**y seleccione **Crear un nuevo documento** en el asistente. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el proyecto **WinFormInput** al **Explorador de soluciones**.
 
@@ -62,7 +62,7 @@ ms.locfileid: "63438592"
 
      Se agrega un control <xref:Microsoft.Office.Tools.Excel.NamedRange> a la celda **A1**. No hay ninguna indicación visible en la hoja de cálculo, pero **formInput** aparece en el cuadro **Nombre** (justo encima de la hoja de cálculo, en el lado izquierdo) y en la ventana **Propiedades** cuando se selecciona la celda **A1** .
 
-## <a name="add-a-windows-form-to-the-project"></a>Agregue un formulario de Windows para el proyecto
+## <a name="add-a-windows-form-to-the-project"></a>Agregar un Windows Form al proyecto
  Cree un formulario de Windows Forms para solicitar la información al usuario.
 
 ### <a name="to-add-a-windows-form"></a>Agregar un formulario de Windows Forms
@@ -81,7 +81,7 @@ ms.locfileid: "63438592"
 
    A continuación, agregue el código a `ThisWorkbook.vb` o a `ThisWorkbook.cs` para recopilar la información del usuario.
 
-## <a name="display-the-windows-form-and-collecting-information"></a>Mostrar el formulario de Windows y la recopilación de la información
+## <a name="display-the-windows-form-and-collecting-information"></a>Mostrar el formulario de Windows Forms y recopilar información
  Cree una instancia del formulario de Windows Forms `GetInputString` y ábrala; a continuación, escriba la información del usuario en una celda de la hoja de cálculo.
 
 #### <a name="to-display-the-form-and-collect-information"></a>Mostrar el formulario y recopilar la información
@@ -91,7 +91,7 @@ ms.locfileid: "63438592"
 2. En el controlador de eventos <xref:Microsoft.Office.Tools.Excel.Workbook.Open> de `ThisWorkbook`, agregue el siguiente código para declarar una variable del formulario `GetInputString` y hacer que se este se muestre.
 
    > [!NOTE]
-   > En C#, debe agregar un controlador de eventos tal como se muestra en el evento <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> que tiene a continuación. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+   > En C#, debe agregar un controlador de eventos tal como se muestra en el evento <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> que tiene a continuación. Para obtener información sobre cómo crear controladores de eventos, consulte [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]
@@ -132,14 +132,14 @@ ms.locfileid: "63438592"
 ## <a name="next-steps"></a>Pasos siguientes
  En este tutorial se muestran los aspectos básicos para mostrar un formulario de Windows Forms y pasar datos a una hoja de cálculo. Entre otras tareas que puede realizar se incluyen las siguientes:
 
-- Usar los controles de formularios de Windows Forms en un libro de Excel o en un documento de Word. Para obtener más información, consulte [Windows Forms a los controles de información general sobre documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+- Usar los controles de formularios de Windows Forms en un libro de Excel o en un documento de Word. Para obtener más información, vea [información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
-- Modificar la interfaz de usuario de una aplicación de Microsoft Office desde una personalización de nivel de documento o un complemento de VSTO. Para obtener más información, consulte [personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).
+- Modificar la interfaz de usuario de una aplicación Microsoft Office a partir de una personalización de nivel de documento o un complemento de VSTO. Para obtener más información, consulte [Personalización](../vsto/office-ui-customization.md)de la interfaz de usuario de Office.
 
 ## <a name="see-also"></a>Vea también
-- [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)
+- [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)
-- [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)
-- [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)
-- [Tutoriales para Word](../vsto/walkthroughs-using-word.md)
-- [Tutoriales para Excel](../vsto/walkthroughs-using-excel.md)
+- [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
+- [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
+- [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
+- [Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)

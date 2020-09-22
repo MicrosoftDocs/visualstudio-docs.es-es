@@ -1,5 +1,5 @@
 ---
-title: Cómo crear un manifiesto de paquete | Microsoft Docs
+title: Crear un manifiesto de paquete | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3a1263136fe4c50b2c7020e1557a7a693691b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382528"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851715"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Cómo: Crear un manifiesto de paquete
 Para implementar los requisitos previos de la aplicación, puede usar un paquete de programa previo. Un paquete de programa previo contiene un solo archivo de manifiesto de producto, pero un manifiesto de paquete para cada configuración regional. La funcionalidad compartida entre diferentes versiones localizadas debe incluirse en el manifiesto del producto.

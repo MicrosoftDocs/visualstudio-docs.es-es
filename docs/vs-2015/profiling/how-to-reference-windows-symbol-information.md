@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Hacer referencia a información de símbolos de Windows | Microsoft Docs
+title: 'Cómo: Hacer referencia a información de símbolos de Windows | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443456"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843090"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Procedimiento Información de símbolos de Windows de referencia
+# <a name="how-to-reference-windows-symbol-information"></a>Cómo: Hacer referencia a información de símbolos de Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las herramientas de generación de perfiles de Visual Studio utilizan archivos de símbolos (.pdb) para resolver nombres simbólicos como los nombres de función en binarios del programa. Puede seguir estos pasos para descargar y actualizar automáticamente los archivos .pdb correctos para la versión de Windows en el equipo local.  
@@ -41,14 +41,14 @@ Las herramientas de generación de perfiles de Visual Studio utilizan archivos d
   
 3. Expanda el árbol **Depuración** y después haga clic en **Símbolos**.  
   
-4. En **Ubicaciones de archivos de símbolos (.pdb)**, seleccione **Servidores de símbolos de Microsoft**  
+4. En **Ubicaciones de archivos de símbolos (.pdb)** , seleccione **Servidores de símbolos de Microsoft**  
   
 5. En **Almacenar símbolos en caché desde los servidores de símbolos a este directorio**, escriba la ruta de acceso de la carpeta que creó en el paso 1, por ejemplo:  
   
      **C:\SymbolCache**  
   
-     También puede hacer clic en el botón de puntos suspensivos (**...**) y después seleccionar un directorio en el cuadro de diálogo **Buscar carpeta**.  
+     También puede hacer clic en el botón de puntos suspensivos ( **...** ) y después seleccionar un directorio en el cuadro de diálogo **Buscar carpeta**.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Cómo: Serialización de la información de símbolos](../profiling/how-to-serialize-symbol-information.md)
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+ [Cómo: serializar la información de símbolos](../profiling/how-to-serialize-symbol-information.md)

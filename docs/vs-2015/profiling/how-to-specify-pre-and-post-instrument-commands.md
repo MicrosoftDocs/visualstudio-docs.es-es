@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar comandos anteriores y posteriores a la instrumentación | Microsoft Docs
+title: 'Cómo: Especificar comandos anteriores y posteriores a la instrumentación | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ab7ecbe97ba0b174a1cc4c0f0d169834ce25e8d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439705"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842499"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedimiento Especificar comandos anteriores y posteriores a la instrumentación
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Cómo: Especificar comandos anteriores y posteriores a la instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede especificar los comandos que se ejecutan antes o después de que los archivos binarios en una sesión de rendimiento se instrumenten. Cualquier comando que se puede emitir desde la línea de comandos puede especificarse como un evento anterior o posterior a la instrumentación. Por ejemplo, puede especificar comandos que automaticen la nueva firma de un ensamblado con una clave de nombre seguro en un archivo por lotes que se ejecuta después de que se instrumenten los binarios.  
@@ -45,11 +45,11 @@ Puede especificar los comandos que se ejecutan antes o después de que los archi
   
 - En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
   
-   *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *Unidad*\Archivos de programa (x86) \Microsoft Visual Studio 10.0 \ Team Tools\Performance Tools  
   
 - En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
   
-   *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *Unidad*\Archivos de programa (x86) \Microsoft Visual Studio 10.0 \ Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>Para especificar comandos anteriores a la instrumentación  
   
@@ -64,7 +64,7 @@ Puede especificar los comandos que se ejecutan antes o después de que los archi
 3. Escriba el comando en el cuadro de texto **Línea de comandos** en **Eventos anteriores a la instrumentación**.  
   
     > [!NOTE]
-    > Puede hacer clic en el botón de puntos suspensivos **(...)** que se muestra junto al cuadro **Línea de comandos** para buscar y seleccionar el archivo .exe, .cmd o .bat apropiado.  
+    > Puede hacer clic en el botón de puntos suspensivos **(...)** que se encuentra junto al cuadro **línea de comandos** para buscar y seleccionar el archivo. exe,. cmd o. bat adecuado.  
   
 4. Haga clic en **Aceptar**.  
   
@@ -83,11 +83,11 @@ Puede especificar los comandos que se ejecutan antes o después de que los archi
 3. Escriba el comando en el cuadro de texto **Línea de comandos** en **Eventos posteriores a la instrumentación**.  
   
     > [!NOTE]
-    > Puede hacer clic en el botón de puntos suspensivos **(...)** que se muestra junto al cuadro **Línea de comandos** para buscar y seleccionar el archivo .exe, .cmd o .bat apropiado.  
+    > Puede hacer clic en el botón de puntos suspensivos **(...)** que se encuentra junto al cuadro **línea de comandos** para buscar y seleccionar el archivo. exe,. cmd o. bat adecuado.  
   
 4. Haga clic en **Aceptar**.  
   
      Para deshabilitar la ejecución del comando sin quitarlo, seleccione la casilla **Excluir de la instrumentación**. Para modificar la configuración de vinculador o compilador, utilice las páginas de propiedades de proyecto.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)

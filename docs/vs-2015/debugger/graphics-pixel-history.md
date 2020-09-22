@@ -1,5 +1,5 @@
 ---
-title: Historial de píxeles | Documentos de Microsoft
+title: Historial de píxeles de gráfico | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420085"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843226"
 ---
 # <a name="graphics-pixel-history"></a>Historial de píxeles de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
   
  Esta es la ventana Historial de píxeles:  
   
- ![Un píxel con tres eventos Direct3D en su historial. ](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Un píxel con tres eventos Direct3D en su historial.](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Descripción de la ventana Historial de píxeles  
  Con Historial de píxeles, puede analizar cómo afectan los eventos de Direct3D a un píxel determinado del destino de representación durante un fotograma. Puede relacionar un problema de representación con un evento concreto de Direct3D, incluso cuando los eventos posteriores (o las primitivas posteriores del mismo evento) siguen cambiando el valor de color final del píxel. Por ejemplo, es posible que un píxel se represente de forma incorrecta y, luego, quede ocultado por un píxel semitransparente, de modo que sus colores se fusionen en el búfer de fotogramas. Este tipo de problema sería difícil de diagnosticar si solo pudiera guiarse por el contenido final del destino de representación.  
@@ -38,14 +38,14 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
   
  Puede expandir cada primitiva para examinar cómo se combinó la salida del sombreador de píxeles con el color de píxel existente para producir el color resultante. Desde aquí, también puede examinar o depurar el código del sombreador de píxeles asociado a la primitiva, y puede expandir aún más el nodo del sombreador de vértices para examinar la entrada del sombreador de vértices.  
   
-### <a name="exclusion"></a> Exclusión de primitivas  
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Exclusión de primitivas  
  Si una primitiva se excluye de modo que no afecte al color del píxel, la exclusión puede producirse por varios motivos. Cada motivo está representado por un icono de los que se describen en esta tabla:  
   
 |Iconos|Motivo de exclusión|  
 |----------|--------------------------|  
-|![Icono de error de prueba de profundidad. ](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|El píxel se excluyó porque no superó la prueba de profundidad.|  
-|![Icono de error de prueba de tijera. ](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|El píxel se excluyó porque no superó la prueba de tijera.|  
-|![Icono de error de prueba de galería de símbolos. ](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|El píxel se excluyó porque no superó la prueba de galería de símbolos.|  
+|![Icono de error de prueba de profundidad.](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|El píxel se excluyó porque no superó la prueba de profundidad.|  
+|![Icono de error de prueba de tijera.](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|El píxel se excluyó porque no superó la prueba de tijera.|  
+|![Icono de error de prueba de galería de símbolos.](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|El píxel se excluyó porque no superó la prueba de galería de símbolos.|  
   
 ### <a name="draw-call-exclusion"></a>Exclusión de llamadas a draw  
  Si todas las primitivas de una llamada a draw se excluyen de modo que no afecten al destino de representación por no superar una prueba, la llamada a draw no se podrá expandir y se mostrará junto a ella un icono correspondiente al motivo de la exclusión. Los motivos de exclusión de las llamadas a draw se asemejan a los motivos de exclusión de las primitivas y sus iconos son similares.  
@@ -77,6 +77,6 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
 ### <a name="links-to-graphics-objects"></a>Vínculos a objetos gráficos  
  Para comprender los eventos de gráficos del historial de píxeles, puede que necesite información sobre el estado que tenía el dispositivo en el momento del evento o los objetos de Direct3D a los que hace referencia el evento. De cada evento del historial de píxeles, el **Historial de píxeles de gráfico** proporciona vínculos al estado que tenía el dispositivo en ese momento y a los objetos relacionados.  
   
-## <a name="see-also"></a>Vea también  
- [Tutorial: Objetos ausentes debido al estado del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
+## <a name="see-also"></a>Consulte también  
+ [Tutorial: objetos ausentes debido al estado del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
  [Tutorial: Depuración de errores de representación debidos al sombreado](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

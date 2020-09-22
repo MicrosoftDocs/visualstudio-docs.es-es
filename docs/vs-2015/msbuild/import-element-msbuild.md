@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433555"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843278"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
- Ninguna  
+ Ninguno  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
@@ -61,7 +61,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 |[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
 |[ImportGroup](../msbuild/importgroup-element.md)|Contiene una colección de elementos `Import` agrupados en una condición opcional.|  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  Mediante el elemento `Import` , puede reutilizar código común a muchos archivos de proyecto. Esto facilita el mantenimiento del código, ya que las actualizaciones que realice en el código compartido se propagan a todos los proyectos que lo importen.  
   
  Por convención, los archivos compartidos del proyecto importado se guardan como archivos .targets, pero son archivos de proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] estándares. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] no impide importar un proyecto que tenga una extensión de nombre de archivo diferente, pero se recomienda usar la extensión .targets para mantener la coherencia.  
@@ -75,7 +75,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
  El esquema de un proyecto importado es idéntico al de un proyecto estándar. Aunque [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] puede compilar un proyecto importado, es poco probable que lo haga porque un proyecto importado no suele contener información sobre las propiedades que se establecen o el orden en el que se ejecutan los destinos. El proyecto importado depende del proyecto en el que se importa para obtener esa información.  
   
 > [!NOTE]
-> Mientras que las instrucciones de importación condicional funcionan en compilaciones de MSBuild de línea de comandos, no funcionan con MSBuild en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Las importaciones condicionales se evalúan usando los valores de configuración y de la plataforma que se establecen cuando se carga el proyecto. Si posteriormente se realizan cambios que requieren una reevaluación de los condicionales del archivo de proyecto (por ejemplo, si cambia la plataforma), [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vuelve a evaluar las condiciones de las propiedades y los elementos, pero no de las importaciones. Dado que no se reevalúa el condicional de importación, se omitirá la importación.  
+> Mientras que las instrucciones de importación condicional funcionan en compilaciones de MSBuild de línea de comandos, no funcionan con MSBuild en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Las importaciones condicionales se evalúan usando los valores de configuración y de la plataforma que se establecen cuando se carga el proyecto. Si posteriormente se realizan cambios que requieren una reevaluación de los condicionales del archivo de proyecto (por ejemplo, si cambia la plataforma), [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vuelve a evaluar las condiciones de las propiedades y los elementos, pero no de las importaciones. Dado que no se reevalúa el condicional de importación, se omitirá la importación.  
 >   
 > Para solucionar este problema, coloque las importaciones condicionales en los archivos .targets o coloque código en un bloque condicional, como un bloque [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
   
@@ -114,6 +114,6 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
- [Cómo: Usar el mismo destino en varios archivos del proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+## <a name="see-also"></a>Consulte también  
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Cómo: usar el mismo destino en varios archivos de proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

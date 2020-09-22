@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5aace03631cd768566dca8e314f280e20d9de77f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432937"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842839"
 ---
 # <a name="functions-view---sampling-data"></a>Vista Funciones: datos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,8 @@ La vista de informe de funciones para el método de perfiles de muestreo enumera
 |**Muestras exclusivas**|El número total de muestras recopiladas cuando se estaba ejecutando código en el cuerpo de esta función; es decir, cuando esta función estaba en la parte superior de la pila de llamadas. Las muestras recopiladas en funciones a las que llamó esta función no se incluyen.|  
 |**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que fueron muestras exclusivas de esta función.|  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
- [Vista Funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Vista Funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Vista funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Vista funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Vista Funciones](../profiling/functions-view-instrumentation-data.md)

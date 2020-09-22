@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Limitar la instrumentación a funciones específicas | Microsoft Docs
+title: 'Cómo: Limitar la instrumentación a funciones específicas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432651"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842482"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedimiento Límite de instrumentación a funciones específicas
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Cómo: Limitar la instrumentación a funciones específicas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La instrumentación y recopilación de datos se pueden limitar a una o más funciones. Basta con establecer las opciones de la página **Avanzado** de la **Sesión de rendimiento** o las páginas de propiedades del binario de destino:  
@@ -44,7 +44,7 @@ La instrumentación y recopilación de datos se pueden limitar a una o más func
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace`**::**`FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\*** especifica todas las funciones en el espacio de nombres MyNS.  
+    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace` **::** `FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\** * especifica todas las funciones en el espacio de nombres MyNS.  
   
    > [!NOTE]
    > Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de herramientas de generación de perfiles (normalmente, el directorio \Team Tools\Performance Tools en el directorio de instalación de [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]) y después escriba **vsinstr /DumpFuncs**  
@@ -63,12 +63,12 @@ La instrumentación y recopilación de datos se pueden limitar a una o más func
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace`**::**`FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\*** especifica todas las funciones en el espacio de nombres MyNS.  
+    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace` **::** `FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\** * especifica todas las funciones en el espacio de nombres MyNS.  
   
    > [!NOTE]
    > Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de herramientas de generación de perfiles (normalmente, el directorio \Team Tools\Performance Tools en el directorio de instalación de [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]) y después escriba **vsinstr /DumpFuncs**  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)   
- [Cómo: Límite de instrumentación a archivos DLL específicos](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Cómo: Especificación de opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Cómo: limitar la instrumentación a archivos dll específicos](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [Cómo: especificar opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)

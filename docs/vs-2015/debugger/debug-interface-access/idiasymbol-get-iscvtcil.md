@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 34868f48cf330670c3c14b3979897d80b5525f40
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64799828"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842666"
 ---
-# <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
+# <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una marca que indica si el módulo se convirtió desde un módulo de Common Intermediate Language (CIL) en un módulo nativo.  
+Recupera una marca que indica si el módulo se ha convertido desde un módulo de lenguaje intermedio común (CIL) a un módulo nativo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,24 +35,24 @@ HRESULT get_isCVTCIL(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Devuelve `TRUE` si el módulo se convirtió de CIL en código nativo; de lo contrario, devuelve `FALSE`.  
+ enuncia Devuelve `TRUE` si el módulo se convirtió de CIL a código nativo; de lo contrario, devuelve `FALSE` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="remarks"></a>Comentarios  
- Esta propiedad está disponible desde el `SymTagCompilandDetails` tipo de símbolos (consulte [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
+## <a name="remarks"></a>Notas  
+ Esta propiedad está disponible en el `SymTagCompilandDetails` tipo de símbolo (vea [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v8.0|  
+|Versión:|SDK de DIA v 8.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

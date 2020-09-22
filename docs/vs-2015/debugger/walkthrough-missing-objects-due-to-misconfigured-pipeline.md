@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Documentos de Microsoft'
+title: 'Tutorial: objetos que faltan debido a una canalización mal configurada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444284"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90843315"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
    Para solucionar el problema, asigne el sombreador de píxeles correcto mediante el primer parámetro de la llamada de API `ID3D11DeviceContext::PSSetShader` .  
   
-   ![La C corregido&#43; &#43; código fuente](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![Código fuente de C&#43;&#43; corregido](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
    Después de corregir el código, puede volver a compilarlo y ejecutar la aplicación de nuevo para comprobar que se resuelve el problema de representación:  
   

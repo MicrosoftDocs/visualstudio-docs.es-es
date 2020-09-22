@@ -10,11 +10,11 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443360"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842867"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ En esta sección aprenderá a utilizar las características de productividad e i
   
 ##### <a name="to-access-unity-documentation"></a>Para acceder a la documentación de Unity  
   
-- En Visual Studio, resalte o coloque el cursor sobre la API de Unity sobre la que quiere obtener información y, después, presione **Ctrl+Alt+M, Ctrl+H**  
+- En Visual Studio, resalte o coloque el cursor sobre la API de Unity sobre la que desea obtener información y, a continuación, presione **Ctrl + Alt + M, Ctrl + H** .  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Asistente de scripting de MonoBehavior de Unity  
  En Unity la mayoría de los scripts se implementan derivando a partir de la clase MonoBehavior y reemplazando algunos de sus métodos. Puede utilizar al Asistente de MonoBehavior para crear rápidamente definiciones vacías de los métodos de MonoBehavior que desee sobrecargar. Con este asistente puede especificar uno o varios métodos que desee sobrecargar de la lista de métodos disponibles, elegir dónde se insertará en el código y decidir si desea incluir comentarios acerca de cómo se utilizan.  
   
- ![El cuadro de diálogo del asistente de MonoBehavior.](../cross-platform/media/vstu-monobehavior-wizard-full.png "vstu_monobehavior_wizard_full")  
+ ![Cuadro de diálogo del asistente de Monobehavior.](../cross-platform/media/vstu-monobehavior-wizard-full.png "vstu_monobehavior_wizard_full")  
   
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>Para crear definiciones de métodos MonoBehavior vacíos con el asistente de MonoBehavior  
   
@@ -55,7 +55,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
 #### <a name="quick-monobehavior-scripting-wizard"></a>Asistente rápido de scripting de MonoBehavior  
  Cuando ya esté familiarizado con la API de Unity, puede implementar los métodos de sobrecarga aún más rápidamente mediante el asistente rápido de MonoBehavior. Con este asistente puede especificar solo un método que se inserte sin comentarios en la ubicación del cursor.  
   
- ![El cuadro de diálogo del asistente rápido de MonoBehavior.](../cross-platform/media/vstu-monobehavior-wizard-quick.png "vstu_monobehavior_wizard_quick")  
+ ![Cuadro de diálogo del asistente rápido de Monobehavior.](../cross-platform/media/vstu-monobehavior-wizard-quick.png "vstu_monobehavior_wizard_quick")  
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Para crear una definición vacía de método MonoBehavior con el asistente rápido de MonoBehavior  
   
@@ -70,13 +70,13 @@ En esta sección aprenderá a utilizar las características de productividad e i
 ### <a name="unity-project-explorer"></a>Explorador de proyectos de Unity  
  Puede utilizar el Explorador de proyectos de Unity para navegar por el proyecto de Unity dentro de Visual Studio.  
   
- ![La ventana del Explorador de proyectos de Unity.](../cross-platform/media/vstu-unity-project-explorer.png "vstu_unity_project_explorer")  
+ ![Ventana Explorador de proyectos de Unity.](../cross-platform/media/vstu-unity-project-explorer.png "vstu_unity_project_explorer")  
   
 ##### <a name="to-view-the-unity-project-explorer"></a>Para ver el Explorador de proyectos de Unity  
   
 - En el menú principal de Visual Studio, seleccione **Vista**, **Explorador de proyectos de Unity**. Teclado: **Alt+Mayús+E**  
   
-   ![Ver la ventana del Explorador de proyectos de Unity.](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
+   ![Ver la ventana Explorador de proyectos de Unity.](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
   El Explorador de proyectos de Unity muestra todos los archivos y directorios del proyecto de Unity de la misma manera que el Editor de Unity (no es lo mismo que navegar por los scripts de Unity con el Explorador de soluciones, que solo contiene sus archivos de script y los muestra como los proyectos, mientras que la solución generada por Visual Studio Tools para Unity los organiza). Especialmente en proyectos grandes, a menudo resulta más fácil encontrar el script que desee modificar mediante el Explorador del proyectos de Unity. También facilita la modificación de otros tipos de archivos (como, por ejemplo, archivos de configuración basados en texto) en Visual studio sin agregarlos a uno de los proyectos de la solución de Visual Studio.  
   
@@ -94,8 +94,8 @@ En esta sección aprenderá a utilizar las características de productividad e i
 |-------------|--------------|---------------------------|  
 |Abrir el asistente de MonoBehavior|**Ctrl+Mayús+M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|  
 |Abrir el asistente rápido de MonoBehavior|**Ctrl+Mayús+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
-|Abrir el Explorador de proyectos de Unity|**Alt+Mayús+E**|**View.UnityProjectExplorer**|  
-|Acceder a la documentación de Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|  
+|Abrir el Explorador de proyectos de Unity|**Alt + Mayús + E**|**View.UnityProjectExplorer**|  
+|Acceder a la documentación de Unity|**Ctrl + Alt + M, Ctrl + H**|**Help.UnityAPIReference**|  
 |Adjuntar a depurador de Unity (reproductor o editor)|**_sin valor predeterminado_**|**Debug.AttachUnityDebugger**|  
   
  Si no le gusta el valor predeterminado, puede cambiar las combinaciones de teclas de método abreviado. Para obtener información sobre cómo cambiarlo, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx).  
@@ -103,14 +103,14 @@ En esta sección aprenderá a utilizar las características de productividad e i
 ## <a name="unity-debugging"></a>Depuración de Unity  
  Visual Studio Tools para Unity permite depurar scripts de editor y juego del proyecto de Unity mediante el potente depurador de Visual Studio.  
   
-### <a name="connecting-visual-studio-to-unity"></a> Conectar Visual Studio a Unity  
+### <a name="connecting-visual-studio-to-unity"></a><a name="connecting-visual-studio-to-unity"></a> Conectar Visual Studio a Unity  
  Visual Studio Tools para Unity se comunica con Unity a través de una conexión UDP. Esto significa que puede conectarse a una instancia de Unity que se ejecute de forma local o en cualquier parte de la red exactamente de la misma manera. Puede conectarse a cualquiera de las instancias de Unity que puede ver en la red mediante el cuadro de diálogo **Seleccionar instancia de Unity**.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Para abrir el diálogo Seleccionar instancia de Unity  
   
 - En el menú principal de Visual Studio seleccione **Depurar**, **Adjuntar depurador de Unity**.  
   
-     ![Asociar el depurador de Unity.](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
+     ![Asocie el depurador de Unity.](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
 - *O* en la barra de estado en Visual Studio seleccione el icono con forma de enchufe que se muestra en la esquina inferior derecha de Visual Studio.  
   
@@ -121,15 +121,15 @@ En esta sección aprenderá a utilizar las características de productividad e i
   
  En el cuadro de diálogo **Seleccionar instancia de Unity** se muestra información sobre cada instancia de Unity a la que puede conectarse.  
   
- ![Seleccione una instancia de Unity a la que conectarse.](../cross-platform/media/vstu-connection-to-unity.png "vstu_connection_to_unity")  
+ ![Elija una instancia de Unity a la que conectarse.](../cross-platform/media/vstu-connection-to-unity.png "vstu_connection_to_unity")  
   
  **Proyecto**  
  El nombre del proyecto de Unity que se está ejecutando en esta instancia de Unity.  
   
- **Machine**  
+ **Máquina**  
  El nombre del equipo o dispositivo en el que se está ejecutando esta instancia de Unity.  
   
- **Type**  
+ **Tipo**  
  **Editor** si esta instancia de Unity se está ejecutando como parte del Editor de Unity; **Reproductor** si esta instancia de Unity es un reproductor independiente.  
   
  **Puerto**  
@@ -138,7 +138,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
 > [!IMPORTANT]
 > Puesto que Visual Studio Tools para de Unity y la instancia de Unity se están comunicando a través de un socket de red UDP, el firewall podría preguntarle al respecto. Si esto sucede, tendrá que autorizar la conexión para que VSTU y Unity puedan comunicarse.  
   
-### <a name="debugging-your-project-in-a-unity-player"></a> Depuración del proyecto en un Reproductor de Unity  
+### <a name="debugging-your-project-in-a-unity-player"></a><a name="debugging-your-project-in-a-unity-player"></a> Depuración del proyecto en un Reproductor de Unity  
  Puede conectar Visual Studio Tools para Unity directamente a la aplicación de Unity que se está ejecutando en un reproductor independiente si no está ejecutando el Editor de Unity o para depurar problemas específicos de la plataforma.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Para habilitar la depuración de scripts en un reproductor de Unity  
@@ -176,7 +176,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
   
 2. Haga referencia al perfil de .NET Framework de Unity correcto en el proyecto DLL. En Visual Studio, en las propiedades del proyecto DLL, establezca la propiedad **Framework de destino** en la versión de .NET Framework de Unity que esté usando. Esta es la Biblioteca de clases base de Unity que coincide con la compatibilidad con la API que su proyecto tiene definido como destino, como las bibliotecas de clases base completas, micro o web de Unity. Esto impide que el archivo DLL llame a métodos de .NET Framework que existan en otros niveles de compatibilidad o marcos de trabajo, pero que podrían no existir en la versión de .NET Framework de Unity que esté utilizando.  
   
-    ![Establecer el marco de destino del DLL en el marco de Unity.](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
+    ![Establezca como plataforma de destino de DLL la plataforma Unity.](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
   
 3. Copie el archivo DLL en la carpeta Activos del proyecto de Unity. En Unity, son activos los archivos que se empaquetan e implementan junto con la aplicación de Unity para que se puedan cargar en tiempo de ejecución. Puesto que los archivos DLL se vinculan en tiempo de ejecución, se deben implementar como activos. Para que los archivos DLL se implementen como activos, el Editor de Unity necesita que se coloquen en la carpeta Activos del proyecto Unity. Puede hacer esto de dos formas:  
   
