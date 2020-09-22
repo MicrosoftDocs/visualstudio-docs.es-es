@@ -1,5 +1,5 @@
 ---
-title: Información general sobre soluciones | Documentos de Microsoft
+title: Información general sobre soluciones | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432078"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843231"
 ---
 # <a name="solutions-overview"></a>Información general sobre soluciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Una solución es una agrupación de uno o varios proyectos que funcionan conjuntamente para crear una aplicación. La información de proyecto y el estado correspondiente a la solución se almacenan en dos archivos de solución diferente. El archivo de solución (.sln) está basado en texto y puede ponerse bajo el control de código fuente y comparten los usuarios. El archivo de opción (.suo) de usuario de solución es binario. Como resultado, el archivo .suo no puede colocarse bajo control de código fuente y contiene información específica del usuario.  
+Una solución es una agrupación de uno o varios proyectos que funcionan conjuntamente para crear una aplicación. El proyecto y la información de estado relativa a la solución se almacenan en dos archivos de solución diferentes. El archivo de solución (. sln) está basado en texto y puede colocarse bajo control de código fuente y compartirse entre usuarios. El archivo de la opción de usuario de la solución (. suo) es binario. Como resultado, no se puede colocar el archivo. suo bajo control de código fuente y contiene información específica del usuario.  
   
- Cualquier VSPackage puede escribir en cualquier tipo de archivo de solución. Dada la naturaleza de los archivos, hay dos interfaces diferentes implementadas para escribir en ellos. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interfaz escribe información de texto en el archivo .sln y <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfaz escribe secuencias binarias en el archivo .suo.  
+ Cualquier VSPackage puede escribir en cualquier tipo de archivo de solución. Debido a la naturaleza de los archivos, hay dos interfaces diferentes implementadas para escribir en ellas. La <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interfaz escribe información de texto en el archivo. sln y la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfaz escribe secuencias binarias en el archivo. suo.  
   
 > [!NOTE]
-> Un proyecto no tiene que escribir explícitamente una entrada para sí mismo en el archivo de solución el entorno encarga del proyecto. Por lo tanto, a menos que desee agregar contenido adicional específicamente para el archivo de solución, no es necesario registrar el VSPackage en este modo.  
+> Un proyecto no tiene que escribir explícitamente una entrada en el archivo de solución; el entorno se encarga del proyecto. Por lo tanto, a menos que desee agregar contenido adicional específicamente al archivo de solución, no es necesario registrar el VSPackage de esta manera.  
   
- Cada paquete VSPackage que admiten la persistencia de la solución usa tres interfaces, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfaz, que es implementado por el entorno y lo llama el VSPackage, y `IVsPersistSolutionProps` y `IVsPersistSolutionOpts`, que son ambos implementados por el VSPackage. El `IVsPersistSolutionOpts` interfaz sólo debe implementarse si se se escritos por el VSPackage en el archivo .suo información privada.  
+ Cada VSPackage que admite la persistencia de la solución usa tres interfaces, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfaz, que implementa el entorno y a las que llama el VSPackage, y `IVsPersistSolutionProps` y `IVsPersistSolutionOpts` , que ambos implementa el VSPackage. La `IVsPersistSolutionOpts` interfaz solo debe implementarse si el VSPackage va a escribir información privada en el archivo. suo.  
   
- Cuando se abre una solución, el proceso siguiente tiene lugar.  
+ Cuando se abre una solución, se produce el siguiente proceso.  
   
 1. El entorno lee la solución.  
   
-2. Si el entorno se encuentra un `CLSID`, carga el VSPackage correspondiente.  
+2. Si el entorno encuentra un `CLSID` , carga el VSPackage correspondiente.  
   
-3. Si se carga un paquete VSPackage, el entorno llama a `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfaz para la interfaz que requiere el VSPackage.  
+3. Si se carga un VSPackage, el entorno llama `QueryInterface` a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> la interfaz para la interfaz que el VSPackage requiere.  
   
-   1. Al leer desde un archivo .sln, el entorno llama a `QueryInterface` para `IVsPersistSolutionProps`.  
+   1. Al leer desde un archivo. sln, el entorno llama a `QueryInterface` para `IVsPersistSolutionProps` .  
   
-   2. Al leer desde un archivo .suo, el entorno llama a `QueryInterface` para `IVsPersistSolutionOpts`.  
+   2. Al leer desde un archivo. suo, el entorno de llama a `QueryInterface` para `IVsPersistSolutionOpts` .  
   
-   Información específica sobre el uso de estos archivos puede encontrarse en [solución (. Los archivos sln)](../../extensibility/internals/solution-dot-sln-file.md) y [opciones de usuario de la solución (. Archivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
+   Puede encontrar información específica relacionada con el uso de estos archivos en la [solución (. Sln)](../../extensibility/internals/solution-dot-sln-file.md) opciones de usuario de archivos y [soluciones (. Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
-> Si desea crear una nueva configuración de solución que consta de las configuraciones de dos de los proyectos y exclusión de un tercio de la compilación, deberá usar la interfaz de usuario de páginas de propiedad o la automatización. No se puede cambiar las configuraciones de administrador de compilación de soluciones y sus propiedades directamente, pero se puede manipular mediante el Administrador de compilación de soluciones el `SolutionBuild` clase a partir de DTE del modelo de automatización. Para obtener más información sobre la configuración de soluciones, consulte [configuración de la solución](../../extensibility/internals/solution-configuration.md).  
+> Si desea crear una nueva configuración de soluciones formada por dos configuraciones de proyectos y excluida una tercera de la compilación, debe usar la interfaz de usuario de las páginas de propiedades o la automatización. No puede cambiar las configuraciones del administrador de compilación de soluciones y sus propiedades directamente, pero puede manipular el administrador de compilación de soluciones mediante la `SolutionBuild` clase de dte en el modelo de automatización. Para obtener más información sobre la configuración de soluciones, vea [configuración de soluciones](../../extensibility/internals/solution-configuration.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un paquete de arranque localizado | Documentos de Microsoft
+title: 'Cómo: crear un paquete de programa previo localizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -14,20 +14,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440654"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843320"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedimiento Crear un paquete de arranque localizado
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Cómo: Crear un paquete de arranque localizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Después de crear un paquete de arranque, puede crear versiones localizadas del paquete de programa previo creando dos archivos más para cada configuración regional: archivo (como CLUF.rtf) y un manifiesto del paquete (package.xml) de los términos de una licencia de software.  
+Después de crear un paquete de programa previo, puede crear versiones localizadas del paquete de programa previo creando dos archivos más para cada configuración regional: un archivo de términos de licencia de software (por ejemplo, un archivo EULA. rtf) y un manifiesto del paquete (package.xml).  
   
  De forma predeterminada, Visual Studio 2010 incluye paquetes de programa previo localizados solo para .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 y F# Runtime 4.0. Siga tres pasos para crear paquetes localizados para otros programas previos.  
   
-1. Cree una carpeta que se denomina después del nombre de la configuración regional en \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nombrepaqueteprogramaprevio*.  
+1. Cree una carpeta con el nombre de la configuración regional en \Archivos de Programa\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *nombrepaqueteprogramaprevio*.  
   
 2. Cree un archivo que contenga los términos de licencia de software para el paquete de programa previo y colóquelo en la nueva carpeta.  
   
@@ -42,13 +42,13 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
   
 1. Cree una carpeta con el nombre de la configuración regional.  
   
-     En los equipos de 32 bits, cree la carpeta en la \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nombrepaqueteprogramaprevio*\ carpeta.  
+     En equipos de 32 bits, cree la carpeta en la carpeta \Archivos de Programa\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *nombrepaqueteprogramaprevio*\.  
   
-     En los equipos de 64 bits, cree la carpeta en la \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages archivos (86) \Program\\*Nombrepaqueteprogramaprevio*\ carpeta.  
+     En equipos de 64 bits, cree la carpeta en la carpeta \Archivos de programa (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *nombrepaqueteprogramaprevio*\.  
   
      La tabla siguiente muestra los nombres de carpeta que puede usar para cada configuración regional.  
   
-    |Configuración regional|Nombre de carpeta|  
+    |Configuración regional|Nombre de la carpeta|  
     |------------|-----------------|  
     |Chino (simplificado)|zh-Hans|  
     |Chino (tradicional)|zh-Hant|  
@@ -67,7 +67,7 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
   
 2. Cree un archivo que contenga los términos de licencia de software para el paquete de programa previo y colóquelo en la nueva carpeta.  
   
-3. Cree un manifiesto del paquete con el nombre package.xml y colóquelo en la nueva carpeta. Para obtener más información, vea [Cómo: Crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).  
+3. Cree un manifiesto del paquete con el nombre package.xml y colóquelo en la nueva carpeta. Para obtener más información, consulte [Cómo: crear un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md).  
   
 4. Actualice la sección `<Strings>` del manifiesto del paquete para que las cadenas estén en el idioma correcto de la configuración regional.  
   
@@ -93,7 +93,7 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
   
 6. Guarde el archivo package.xml.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md)   
- [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)   
- [Cómo: Creación de un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md)
+ [Requisitos previos de la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)   
+ [Cómo: crear un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md)

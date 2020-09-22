@@ -1,5 +1,5 @@
 ---
-title: Etapas de canalización de gráficos | Documentos de Microsoft
+title: Etapas de canalización de gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eee83ba90248c15387771f355919e345375ff05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420159"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843123"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapas de canalización de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
   
  Esta es la ventana Etapas de canalización:  
   
- ![Un 3&#45;objeto D pasa por las fases de canalización. ](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
+ ![Un objeto 3&#45;D pasa por las fases de canalización.](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
   
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>Descripción de la ventana Etapas de canalización de gráficos  
  La ventana Etapas de canalización visualiza el resultado de cada etapa de la canalización de gráficos por separado, para cada llamada a draw. Normalmente, los resultados de las etapas en medio de la canalización están ocultos, lo que dificulta saber en qué momento comenzó un problema de representación. Al visualizar cada etapa por separado, la ventana Etapas de canalización hace que sea más fácil ver dónde comienza el problema. Por ejemplo, puede ver fácilmente si la etapa del sombreador de vértices hace inesperadamente que un objeto se dibuje fuera de la pantalla.  
@@ -118,14 +118,14 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
  En la ventana Etapas de canalización, la salida de la fusión de salida se muestra como una imagen de trama a todo color. Para examinar en detalle los resultados, seleccione **Fusión de salida** en la ventana **Etapas de canalización de gráficos** para ver el búfer de fotogramas combinado.  
   
 ### <a name="vertex-shader-preview"></a>Vista previa del sombreador de vértices  
- Al seleccionar la etapa del sombreador de vértices en el **etapas de canalización de gráficos** ventana, el **búferes de entrada** se muestra el panel. Aquí encontrará detalles sobre la lista de vértices proporcionada al sombreador de vértices después de que se ensamblen en la etapa del ensamblador de entrada.  
+ Al seleccionar la fase sombreador de vértices en la ventana **etapas de canalización de gráficos** , se muestra el panel **búferes de entrada** . Aquí encontrará detalles sobre la lista de vértices proporcionada al sombreador de vértices después de que se ensamblen en la etapa del ensamblador de entrada.  
   
- ![El Visor de búfer de entrada de fase de sombreador vértice](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
+ ![El visor de búfer de entrada de la fase de sombreador de vértices](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
   
  Para ver el resultado de la etapa del sombreador de vértices, seleccione la miniatura de la etapa del sombreador de vértices para ver una trama de alambres rasterizada a tamaño completo de la malla después de que la transforme el sombreador de vértices.  
   
- ![La vista previa del resultado de fase de vértice del sombreador](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
+ ![La vista previa de resultados de la fase de sombreador de vértices](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
   
-## <a name="see-also"></a>Vea también  
- [Tutorial: Objetos ausentes debido al sombreado de vértices](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+## <a name="see-also"></a>Consulte también  
+ [Tutorial: objetos ausentes debido al sombreado de vértices](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Tutorial: Depuración de errores de representación debidos al sombreado](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

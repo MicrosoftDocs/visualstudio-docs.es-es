@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2cca35fb1369214672b8740d41f65a2a725517e3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64826532"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843179"
 ---
-# <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
+# <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el identificador de símbolo de límite superior de una dimensión de matriz de FORTRAN.  
+Recupera el identificador de símbolo del límite superior de una dimensión de matriz FORTRAN.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,16 +35,16 @@ HRESULT get_upperBoundId ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el identificador del símbolo que representa el límite superior de una dimensión de matriz de FORTRAN.  
+ [out,] Devuelve el identificador del símbolo que representa el límite superior de una dimensión de matriz FORTRAN.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="remarks"></a>Comentarios  
- El identificador es un valor único creado mediante el SDK de DIA para marcar todos los símbolos como único.  
+## <a name="remarks"></a>Notas  
+ El identificador es un valor único creado por el SDK de DIA para marcar todos los símbolos como únicos.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442336"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843393"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Elegir una estrategia de actualización de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63442336"
 > Las actualizaciones de aplicaciones requieren conectividad de red. Si no hay conexión de red, la aplicación se ejecutará sin comprobar si hay actualizaciones, independientemente de la estrategia de actualización elegida.  
   
 > [!NOTE]
-> En .NET Framework 2.0 y .NET Framework 3.0, cada vez que la aplicación comprueba si hay actualizaciones, antes o después del inicio, o mediante las API de <xref:System.Deployment.Application>, debe establecer `deploymentProvider` en el manifiesto de implementación. El elemento `deploymentProvider` corresponde, en Visual Studio, al campo **Ubicación de actualizaciones** del cuadro de diálogo **Actualizaciones** de la ficha **Publicar**. Esta regla es más flexible en .NET Framework 3.5. Para obtener más información, consulte [implementación ClickOnce aplicaciones para las pruebas y los servidores de producción sin Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+> En .NET Framework 2.0 y .NET Framework 3.0, cada vez que la aplicación comprueba si hay actualizaciones, antes o después del inicio, o mediante las API de <xref:System.Deployment.Application>, debe establecer `deploymentProvider` en el manifiesto de implementación. El `deploymentProvider` elemento corresponde a Visual Studio en el campo **Ubicación de actualización** del cuadro de diálogo **actualizaciones** de la pestaña **publicar** . Esta regla se relaja en .NET Framework 3,5. Para obtener más información, vea [implementar aplicaciones ClickOnce para pruebas y servidores de producción sin refirmarlas](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Comprobar si hay actualizaciones después del inicio de la aplicación  
  Con esta estrategia, la aplicación intentará buscar y leer en segundo plano el archivo de manifiesto de implementación mientras la aplicación se está ejecutando. Si hay una actualización disponible, la próxima vez que el usuario ejecute la aplicación, se le pedirá que descargue e instale la actualización.  
@@ -117,12 +117,12 @@ ms.locfileid: "63442336"
 ## <a name="permission-elevation-and-updates"></a>Elevación de permisos y actualizaciones  
  Si una nueva versión de una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] exige un mayor nivel de confianza para ejecutarse que en la versión anterior, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] preguntará al usuario si desea que se conceda a la aplicación este nivel de confianza superior. Si el usuario lo declina, la actualización no se instalará. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] preguntará al usuario si desea volver a instalar la aplicación la próxima vez que se reinicie. Si, en esta ocasión, el usuario vuelve a declinar que se conceda un mayor nivel de confianza y la actualización no está marcada como obligatoria, se ejecutará la versión anterior de la aplicación. Sin embargo, si la actualización es obligatoria, la aplicación no se ejecutará de nuevo hasta que el usuario acepte el nivel de confianza superior.  
   
- Si utiliza la implementación de aplicaciones de confianza, no se realizará ninguna pregunta sobre los niveles de confianza. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Si utiliza la implementación de aplicaciones de confianza, no se realizará ninguna pregunta sobre los niveles de confianza. Para obtener más información, vea [información general sobre la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:System.Deployment.Application>   
- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Cómo realiza ClickOnce actualizaciones de aplicaciones](../deployment/how-clickonce-performs-application-updates.md)   
+ [Cómo realiza ClickOnce las actualizaciones de la aplicación](../deployment/how-clickonce-performs-application-updates.md)   
  [Cómo: Administración de actualizaciones de aplicaciones ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

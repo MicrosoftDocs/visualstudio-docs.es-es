@@ -1,5 +1,5 @@
 ---
-title: Implementación de visualizadores de tipo y visores personalizados | Microsoft Docs
+title: Implementar visualizadores de tipos y visores personalizados | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,30 +12,30 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b780f2115400fd43e8915a5109c960cab99bf131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430222"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843327"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>Implementación de visualizadores de tipo y visores personalizados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> En Visual Studio 2015, esta manera de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte [evaluadores](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) de expresiones CLR y [ejemplo de evaluador de expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Los visualizadores de tipo y visores personalizados permiten al usuario ver datos de un tipo determinado de forma que sea más significativa que un simple volcado hexadecimal de números. Un evaluador de expresiones (EE) puede asociar los visores personalizados con determinados tipos de datos o variables. Estos visores personalizados se implementan mediante lo EE. EE también admiten los visualizadores de tipo externo, que pueden proceder de otro proveedor de terceros o incluso el usuario final.  
+ Los visualizadores de tipos y los visores personalizados permiten a un usuario ver los datos de un tipo determinado de una manera más significativa que un volcado hexadecimal simple de números. Un evaluador de expresiones (EE) puede asociar visores personalizados a tipos específicos de datos o variables. Estos visores personalizados se implementan en EE. EE también admite visualizadores de tipos externos, que pueden provienen de otro proveedor de terceros o incluso del usuario final.  
   
-## <a name="discussion"></a>Discusión  
+## <a name="discussion"></a>Debate  
   
-### <a name="type-visualizers"></a>Visualizadores de tipo  
- Visual Studio solicita una lista de visualizadores de tipo y visores personalizados para todos los objetos que se mostrarán en una ventana Inspección. Un evaluador de expresiones (EE) proporciona una lista de estas características para cada tipo para el que desea admitir visualizadores de tipo y visores personalizados. Las llamadas a [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) y [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) iniciar todo el proceso de obtener acceso a los visualizadores de tipo y visores personalizados (consulte [visualización y ver datos](../../extensibility/debugger/visualizing-and-viewing-data.md)para obtener más información sobre la secuencia de llamada).  
+### <a name="type-visualizers"></a>Visualizadores de tipos  
+ Visual Studio solicita una lista de visualizadores de tipo y visores personalizados para cada objeto que se va a mostrar en una ventana Inspección. Un evaluador de expresiones (EE) proporciona una lista de este tipo para todos los tipos para los que desea admitir visualizadores de tipos y visores personalizados. Las llamadas a [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) y [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) inician todo el proceso de acceso a los visualizadores de tipo y a los visores personalizados (vea [visualizar y ver datos](../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener detalles sobre la secuencia de llamada).  
   
 ### <a name="custom-viewers"></a>Visores personalizados  
- Visores personalizados se implementan en lo EE para un tipo de datos específico y se representan mediante el [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) interfaz. Un visor personalizado no es tan flexible como un visualizador de tipo, porque está disponible solo cuando se está ejecutando el EE que implementa dicho visor personalizado determinado. Implementar un visor personalizado es más sencillo que implementar la compatibilidad de visualizadores de tipo. Sin embargo, que admiten visualizadores de tipo proporciona flexibilidad máxima para el usuario final para visualizar sus datos. El resto de este artículo refiere a solo los visualizadores de tipo.  
+ Los visores personalizados se implementan en EE para un tipo de datos específico y se representan mediante la interfaz [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) . Un visor personalizado no es tan flexible como un visualizador de tipos, ya que solo está disponible cuando es el de EE que implementa que se está ejecutando un visor personalizado determinado. Implementar un visor personalizado es más sencillo que implementar la compatibilidad con los visualizadores de tipos. Sin embargo, los visualizadores de tipos auxiliares proporcionan la máxima flexibilidad al usuario final para visualizar sus datos. El resto de este debate solo se refiere a los visualizadores de tipos.  
   
 ## <a name="interfaces"></a>Interfaces  
- EE implementa las interfaces siguientes para admitir los visualizadores de tipo, que será consumido por Visual Studio:  
+ El EE implementa las siguientes interfaces para admitir los visualizadores de tipos que se van a usar en Visual Studio:  
   
 - [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
@@ -49,7 +49,7 @@ ms.locfileid: "63430222"
   
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
-  EE consume las interfaces para admitir los visualizadores de tipo siguientes:  
+  EE usa las siguientes interfaces para admitir los visualizadores de tipos:  
   
 - [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
   
@@ -57,7 +57,7 @@ ms.locfileid: "63430222"
   
 - [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [Visualización de datos](../../extensibility/debugger/visualizing-and-viewing-data.md)   
+ [Visualizar y ver datos](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

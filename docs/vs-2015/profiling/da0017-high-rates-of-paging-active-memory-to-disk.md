@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435863"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843339"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Alta frecuencia de paginación de memoria activa en el disco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id. de regla | DA0017 |  
+Identificador de regla | DA0017 |  
 | Categoría | Memoria y paginación |  
-| Método de generación de perfiles | Todos los |  
-| Mensaje | Se está produciendo una tasa alta de paginación de memoria activa en el disco. Puede que la aplicación esté enlazada a memoria.|  
+| Método de generación de perfiles | Todo |  
+| Mensaje | Se está produciendo una alta frecuencia de paginación de memoria activa en el disco. Puede que la aplicación esté enlazada a memoria.|  
 | Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

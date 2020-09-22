@@ -15,80 +15,80 @@ ms.author: johnhart
 manager: jillfra
 ms.workload: office
 ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422915"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843131"
 ---
 # <a name="replaceable-parameters"></a>Parámetros reemplazables
-  Parámetros reemplazables, o *tokens*, puede usar dentro de los archivos de proyecto para proporcionar valores para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño. Son una función similar a la norma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de la plantilla. Para obtener más información, consulte [parámetros de plantilla](../ide/template-parameters.md).
+  Los parámetros reemplazables, o *tokens*, se pueden usar dentro de los archivos de proyecto para proporcionar valores para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño. Son similares en función de los [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de plantilla estándar. Para obtener más información, vea [parámetros de plantilla](../ide/template-parameters.md).
 
 ## <a name="token-format"></a>Formato de token
- Los tokens comienzan y terminan con un carácter de signo de dólar ($). En la implementación, cualquier token utilizado se reemplaza por valores reales cuando un proyecto se empaqueta en un paquete de solución de SharePoint (*.wsp* archivo). Por ejemplo, el token **$SharePoint.Package.Name$** pueda resolver con la cadena "Paquete de prueba de SharePoint".
+ Los tokens comienzan y terminan con un carácter de signo de dólar ($). En la implementación, los tokens utilizados se reemplazan por valores reales cuando un proyecto se empaqueta en un paquete de solución de SharePoint (archivo *. wsp* ). Por ejemplo, el token **$SharePoint. Package.Name $** podría resolverse como la cadena "paquete de SharePoint de prueba".
 
-## <a name="token-rules"></a>Reglas de los tokens
+## <a name="token-rules"></a>Reglas de token
  Las siguientes reglas se aplican a los tokens:
 
-- Los tokens se pueden especificar en cualquier parte en una línea.
+- Los tokens se pueden especificar en cualquier parte de una línea.
 
 - Los tokens no pueden abarcar varias líneas.
 
 - El mismo token se puede especificar más de una vez en la misma línea y en el mismo archivo.
 
-- En la misma línea, se pueden especificar diferentes tokens.
+- Pueden especificarse tokens diferentes en la misma línea.
 
-  Los tokens que no siguen estas reglas se omiten y no dan lugar a una advertencia o error.
+  Los tokens que no siguen estas reglas se omiten y no dan como resultado una advertencia o un error.
 
-  El reemplazo de tokens por los valores de cadena se realiza inmediatamente después de la transformación de los manifiestos. Este reemplazo permite al usuario editar las plantillas con tokens de manifiesto.
+  La sustitución de tokens por valores de cadena se realiza inmediatamente después de la transformación del manifiesto. Este reemplazo permite al usuario editar las plantillas de manifiesto con tokens.
 
 ### <a name="token-name-resolution"></a>Resolución de nombres de token
- En la mayoría de los casos, un token se resuelve en un valor específico, independientemente de se encuentra. Sin embargo, si el token está relacionado con un paquete o una característica, valor del token depende de se encuentra. Por ejemplo, si es una característica de empaquetar una, entonces el token `$SharePoint.Package.Name$` se resuelve como el valor "Paquete de r." Si la función misma está en el paquete B, a continuación, `$SharePoint.Package.Name$` se resuelve como "Paquete b".
+ En la mayoría de los casos, un token se resuelve en un valor específico, independientemente de dónde se encuentre. Sin embargo, si el token está relacionado con un paquete o característica, el valor del token depende de dónde se encuentre. Por ejemplo, si una característica está en el paquete A, el token se `$SharePoint.Package.Name$` resuelve en el valor "paquete a". Si la misma característica está en el paquete B, se `$SharePoint.Package.Name$` resuelve como "paquete b".
 
 ## <a name="tokens-list"></a>Lista de tokens
- En la tabla siguiente se enumera los tokens disponibles.
+ En la tabla siguiente se enumeran los tokens disponibles.
 
-|Name|Descripción|
+|Nombre|Descripción|
 |----------|-----------------|
-|$SharePoint.Project.FileName$|El nombre de la que contiene, como archivo de proyecto *contenedor*.|
-|$SharePoint.Project.FileNameWithoutExtension$|El nombre del archivo del proyecto que contiene sin la extensión de nombre de archivo. Por ejemplo, "NuevoProy".|
-|$SharePoint.Project.AssemblyFullName$|El nombre para mostrar del proyecto contenedor (nombre seguro) del ensamblado de salida.|
-|$SharePoint.Project.AssemblyFileName$|Nombre del proyecto contenedor de salida del ensamblado.|
-|$SharePoint.Project.AssemblyFileNameWithoutExtension$|Nombre del proyecto contenedor de salida del ensamblado sin la extensión de nombre de archivo.|
-|$SharePoint.Project.AssemblyPublicKeyToken$|Del proyecto que contiene el token de clave pública del ensamblado de salida, puede convertida en una cadena. (16 caracteres en "x2" formato hexadecimal.)|
-|$SharePoint.Package.Name$|El nombre del paquete que lo contiene.|
-|$SharePoint.Package.FileName$|El nombre del archivo de definición del paquete contenedor.|
-|$SharePoint.Package.FileNameWithoutExtension$|El nombre del archivo de definición del paquete contenedor (sin extensión).|
-|$SharePoint.Package.Id$|Id. de SharePoint para el paquete contenedor. Si se usa una característica en más de un paquete, este valor cambiará.|
-|$SharePoint.Feature.FileName$|El nombre del archivo de definición de la que contiene la característica, como *Feature1.feature*.|
-|$SharePoint.Feature.FileNameWithoutExtension$|El nombre del archivo de definición de función, sin la extensión de nombre de archivo.|
-|$SharePoint.Feature.DeploymentPath$|El nombre de la carpeta que contiene la característica en el paquete. Este token equivale a la propiedad "Ruta de acceso de implementación" en el Diseñador de características. Un valor de ejemplo es, "Project1_Feature1".|
-|$SharePoint.Feature.Id$|Id. de SharePoint de la característica. Este token, como con todos los tokens de nivel de característica, se pueden usar únicamente por los archivos incluidos en un paquete a través de una característica, no agrega directamente a un paquete fuera de una característica.|
-|$SharePoint.ProjectItem.Name$|El nombre del elemento de proyecto (no su nombre de archivo), obtenido de **ISharePointProjectItem.Name**.|
-|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|El nombre completo del ensamblado de la coincidencia de tipo el [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] del token. El formato de la [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] está en minúsculas y se corresponde con el formato de GUID.ToString (es decir, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
-|$SharePoint.Type.\<GUID>.FullName$|El nombre completo del tipo de coincidencia de GUID en el token. El formato del GUID en minúsculas y se corresponde con el formato de GUID.ToString (es decir, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
+|$SharePoint. Project. FileName $|Nombre del archivo de proyecto que lo contiene, como, por ejemplo, *NewProj. csproj*.|
+|$SharePoint. Project. Nombredearchivosinextensión $|Nombre del archivo de proyecto contenedor sin la extensión de nombre de archivo. Por ejemplo, "NewProj".|
+|$SharePoint. Project. AssemblyFullName $|Nombre para mostrar (nombre seguro) del ensamblado de salida del proyecto contenedor.|
+|$SharePoint. Project. AssemblyFileName $|Nombre del ensamblado de salida del proyecto contenedor.|
+|$SharePoint. Project. AssemblyFileNameWithoutExtension $|Nombre del ensamblado de salida del proyecto contenedor, sin la extensión de nombre de archivo.|
+|$SharePoint. Project. AssemblyPublicKeyToken $|Token de clave pública del ensamblado de salida del proyecto contenedor, convertido en una cadena. (16 caracteres en formato hexadecimal "x2").|
+|$SharePoint. Package.Name $|Nombre del paquete contenedor.|
+|$SharePoint. Package. FileName $|Nombre del archivo de definición del paquete contenedor.|
+|$SharePoint. Package. Nombredearchivosinextensión $|Nombre (sin extensión) del archivo de definición del paquete contenedor.|
+|$SharePoint. Package.Id $|El identificador de SharePoint para el paquete contenedor. Si una característica se utiliza en más de un paquete, este valor cambiará.|
+|$SharePoint. Feature. FileName $|Nombre del archivo de definición de la característica que lo contiene, como *Feature1. Feature*.|
+|$SharePoint. Feature. Nombredearchivosinextensión $|Nombre del archivo de definición de características, sin la extensión de nombre de archivo.|
+|$SharePoint. Feature. DeploymentPath $|El nombre de la carpeta que contiene la característica en el paquete. Este token equivale a la propiedad "ruta de acceso de implementación" en el diseñador de características. Un valor de ejemplo es, "Project1_Feature1".|
+|$SharePoint. Feature.Id $|El identificador de SharePoint de la característica que lo contiene. Este token, al igual que con todos los tokens de nivel de característica, solo se puede usar en los archivos incluidos en un paquete a través de una característica, no se agrega directamente a un paquete fuera de una característica.|
+|$SharePoint. ProjectItem.Name $|Nombre del elemento de proyecto (no su nombre de archivo), tal y como se obtiene de **ISharePointProjectItem.Name**.|
+|$SharePoint. Type. \<GUID> . AssemblyQualifiedName $|Nombre calificado con el ensamblado del tipo que coincide con el [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] del token. El formato de [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] es en minúsculas y corresponde al formato GUID. ToString ("D") (es decir, xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX).|
+|$SharePoint. Type. \<GUID> . FullName $|Nombre completo del tipo que coincide con el GUID en el token. El formato del GUID es en minúsculas y corresponde al formato GUID. ToString ("D") (es decir, xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX).|
 
-## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Agregar extensiones a la lista de extensiones de archivo de reemplazo de tokens
- Aunque, en teoría, se pueden usar tokens en cualquier archivo que pertenece a un proyecto de SharePoint incluido elementos en el paquete, de forma predeterminada, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] busca tokens solo en los archivos de paquete, los archivos de manifiesto y los archivos que tienen las siguientes extensiones:
+## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Agregar extensiones a la lista de extensiones de archivo de reemplazo de token
+ Aunque los tokens pueden ser utilizados teóricamente por cualquier archivo que pertenezca a un elemento de proyecto de SharePoint incluido en el paquete, de forma predeterminada [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] busca tokens únicamente en archivos de paquete, archivos de manifiesto y archivos con las siguientes extensiones:
 
 - [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]
 
 - ASCX
 
-- ASPX
+- ASCX
 
-- Elemento Web
+- WebPart
 
 - DWP
 
-  Estas extensiones se definen mediante la `<TokenReplacementFileExtensions>` elemento en el archivo Microsoft.VisualStudio.SharePoint.targets, ubicado en el... \\< archivos de programa\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools carpeta.
+  Estas extensiones se definen mediante el `<TokenReplacementFileExtensions>` elemento en el archivo Microsoft. VisualStudio. SharePoint. targets, que se encuentra en la carpeta... \\<archivos de programa \> \MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools.
 
-  Sin embargo, puede agregar extensiones de archivo adicionales a la lista. Agregar un `<TokenReplacementFileExtensions>` elemento a cualquier elemento PropertyGroup en el archivo de proyecto de SharePoint que se define antes de la \<Import > del archivo de destinos de SharePoint.
+  Sin embargo, puede Agregar extensiones de archivo adicionales a la lista. Agregue un `<TokenReplacementFileExtensions>` elemento a cualquier propertyGroup en el archivo de proyecto de SharePoint que se define antes del \<Import> archivo de destinos de SharePoint.
 
 > [!NOTE]
-> Como reemplazo de tokens se produce una vez compilado un proyecto, no debe agregar extensiones de archivo para tipos de archivo que se compilan, tales como *.cs*, *.vb* o *.resx*. Los tokens se reemplazan sólo en los archivos que no se compilan.
+> Dado que el reemplazo de tokens se produce después de la compilación de un proyecto, no debe agregar extensiones de archivo para los tipos de archivo que se compilan, como *. CS*, *. VB* o *. resx*. Los tokens solo se reemplazan en archivos que no están compilados.
 
- Por ejemplo, para agregar las extensiones de nombre de archivo (*.myextension* y *.yourextension*) a la lista de extensiones de nombre de archivo de reemplazo de tokens, se debe agregar lo siguiente a un proyecto (*.csproj* ) archivo:
+ Por ejemplo, para agregar las extensiones de nombre de archivo (*.* *yourextension*) a la lista de extensiones de nombre de archivo de reemplazo de token, debe agregar lo siguiente a un archivo de proyecto (*. csproj*):
 
 ```xml
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -103,7 +103,7 @@ ms.locfileid: "63422915"
 </PropertyGroup>
 ```
 
- Puede agregar la extensión directamente a los destinos (*.targets*) archivo. Sin embargo, agregar la extensión modifica la lista de extensiones para todos los proyectos de SharePoint que se empaquetan en el sistema local, no solo su propia. Esta extensión puede ser conveniente cuando usted es el único desarrollador en el sistema o si así lo requiere la mayoría de los proyectos. Sin embargo, dado que es específica del sistema, este enfoque no es portable y, por lo tanto, se recomienda que se agregar todas las extensiones al archivo de proyecto en su lugar.
+ Puede Agregar la extensión directamente al archivo de destinos (*. targets*). Sin embargo, al agregar la extensión, se modifica la lista de extensiones para todos los proyectos de SharePoint empaquetados en el sistema local, no solo en el suyo propio. Esta extensión puede ser útil cuando usted es el único desarrollador del sistema o si la mayoría de los proyectos lo requieren. Sin embargo, dado que es específico del sistema, este enfoque no es portátil y, por lo tanto, se recomienda que agregue las extensiones al archivo de proyecto en su lugar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
