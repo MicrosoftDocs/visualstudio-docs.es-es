@@ -12,47 +12,47 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441476"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90842782"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referencia del esquema XML de VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Proporciona una tabla de elementos de esquema del compilador de tabla de comandos, con el elemento secundario permitido elementos y atributos para cada uno.  
+Proporciona una tabla de elementos de esquema de compilador de tabla de comandos, con los atributos y elementos secundarios permitidos para cada uno.  
   
- Un archivo de configuración (.vsct) de la tabla de comandos basado en XML define los elementos de comando que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE). Estos elementos incluyen elementos de menú, barras de herramientas, menús y cuadros combinados.  
+ Un archivo de configuración de tabla de comandos basado en XML (. Vsct) define los elementos de comando que un VSPackage proporciona al entorno de desarrollo integrado (IDE). Estos elementos incluyen elementos de menú, menús, barras de herramientas y cuadros combinados.  
   
 > [!NOTE]
-> El compilador VSCT puede ejecutar un preprocesador en el archivo .vsct. Dado que normalmente es el preprocesador, que puede definir C++ incluye y macros que tienen la misma sintaxis que se usa en los archivos de C++. En el archivo .vsct se proporcionan ejemplos de este archivo que el **nuevo proyecto** asistente crea para un proyecto de VSPackage.  
+> El compilador VSCT puede ejecutar un preprocesador en el archivo. VSCT. Dado que suele ser el preprocesador de C++, puede definir inclusiones y macros que tengan la misma sintaxis que se utiliza en los archivos de C++. Se proporcionan ejemplos de esto en el archivo. Vsct que el Asistente para **nuevo proyecto** crea para un proyecto de VSPackage.  
   
 ## <a name="optional-elements"></a>Elementos opcionales  
- Algunos elementos VSCT son opcionales. Si un `Parent` no se especifica el argumento, Group_Undefined:0 se pueden implícita. Si un `Icon` argumento no se especifica, se implicarse guidOfficeIcon:msotcidNoIcon. Cuando se define una tecla de método abreviado, la emulación, que no se utiliza normalmente, es opcional.  
+ Algunos elementos VSCT son opcionales. Si `Parent` no se especifica un argumento, Group_Undefined: 0 estará implícita. Si `Icon` no se especifica un argumento, guidOfficeIcon: msotcidNoIcon estará implícito. Cuando se define una tecla de método abreviado, la emulación, que normalmente no se utiliza, es opcional.  
   
- Se puede incrustar elementos de mapa de bits en tiempo de compilación especificando la ubicación de la franja de mapa de bits en el `href` argumento. La Tira de mapa de bits se copian durante la combinación en lugar de extraídos de los recursos del archivo DLL. Cuando un `href` se proporciona un argumento, el `usedList` argumento se convierte en opcional y se consideran todas las ranuras en la Tira de mapa de bits utilizado.  
+ Los elementos de mapa de bits pueden incrustarse en tiempo de compilación especificando la ubicación de la franja de mapa de bits en el `href` argumento. La franja de mapa de bits se copia durante la combinación en lugar de extraerse de los recursos del archivo DLL. Cuando `href` se proporciona un argumento, el `usedList` argumento se convierte en opcional y se consideran todas las ranuras de la franja de mapa de bits.  
   
- Todos los valores GUID y el identificador deben definirse mediante el uso de nombres simbólicos. Estos nombres pueden definirse en archivos de encabezado o en VSCT \<símbolos > secciones. Los nombres simbólicos deben ser locales, incluidos a través de \<Include > elementos, o que se hace referencia por \<Extern > elementos. Un nombre simbólico se importa desde un archivo de encabezado especificado en un \<Extern > elemento si sigue el patrón simple de #define el valor de símbolo. El valor puede ser otro símbolo siempre que ese símbolo se ha definido previamente. Definiciones de GUID deben seguir el formato OLE o C++. Los valores de identificador pueden ser dígitos decimales o hexadecimales dígitos que van precedidos de 0 x, tal como se muestra en las siguientes líneas:  
+ Todos los valores de identificador y GUID deben definirse mediante nombres simbólicos. Estos nombres pueden definirse en archivos de encabezado o en \<Symbols> secciones VSCT. Los nombres simbólicos deben ser locales, incluirse a través de \<Include> elementos o ser referenciados por \<Extern> elementos. Un nombre simbólico se importa de un archivo de encabezado especificado en un \<Extern> elemento si sigue el patrón simple de #define valor de símbolo. El valor puede ser otro símbolo, siempre y cuando ese símbolo se haya definido previamente. Las definiciones de GUID deben seguir el formato de OLE o C++. Los valores de identificador pueden ser dígitos decimales o dígitos hexadecimales precedidos por 0x, tal como se muestra en las líneas siguientes:  
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
-- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }  
+- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
   
-  Se pueden usar los comentarios XML, pero las herramientas de ida y vuelta gráfica de usuario (GUI) de la interfaz podrían descartarlos. El contenido de \<anotación > se garantiza que los elementos se mantiene independientemente del formato.  
+  Se pueden usar comentarios XML, pero las herramientas de interfaz gráfica de usuario (GUI) de ida y vuelta podrían descartarlos. \<Annotation>Se garantiza que el contenido de los elementos se mantiene independientemente del formato.  
   
 ## <a name="schema-hierarchy"></a>Jerarquía del esquema  
- Un archivo .vsct tiene los siguientes elementos principales.  
+ Un archivo. Vsct tiene los siguientes elementos principales.  
   
  [CommandTable (Elemento)](../extensibility/commandtable-element.md)  
   
  [Extern (Elemento)](../extensibility/extern-element.md)  
   
- [Include (Elemento)](../extensibility/include-element.md)  
+ [Elemento include](../extensibility/include-element.md)  
   
  [Define (Elemento)](../extensibility/define-element.md)  
   
- [Commands (Elemento)](../extensibility/commands-element.md)  
+ [Commands, elemento](../extensibility/commands-element.md)  
   
  [CommandPlacements (Elemento)](../extensibility/commandplacements-element.md)  
   
@@ -62,11 +62,11 @@ Proporciona una tabla de elementos de esquema del compilador de tabla de comando
   
  [UsedCommands (Elemento)](../extensibility/usedcommands-element.md)  
   
- [Parent (Elemento)](../extensibility/parent-element.md)  
+ [Elemento primario](../extensibility/parent-element.md)  
   
  [Icon (Elemento)](../extensibility/icon-element.md)  
   
- [Strings (Elemento)](../extensibility/strings-element.md)  
+ [Elemento Strings](../extensibility/strings-element.md)  
   
  [Command Flag (Elemento)](../extensibility/command-flag-element.md)  
   
@@ -74,6 +74,6 @@ Proporciona una tabla de elementos de esquema del compilador de tabla de comando
   
  [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md)  
   
-## <a name="see-also"></a>Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo agrega VSPackages los elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Enrutamiento de comandos en VSPackages](../extensibility/internals/command-routing-in-vspackages.md)
