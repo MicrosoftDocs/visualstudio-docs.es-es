@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b759c8fc65130c37f24e8ec03bbcebf3a52241d0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64810677"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842871"
 ---
-# <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
+# <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Esta función recupera un puntero a un símbolo que representa el elemento primario o el contenedor de este símbolo.  
+Esta función recupera un puntero a un símbolo que representa el elemento primario o contenedor de este símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,20 +35,20 @@ HRESULT get_container(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve un puntero a un `IDiaSymbol` que contiene información sobre el contenedor de este símbolo.  
+ enuncia Devuelve un puntero a un objeto `IDiaSymbol` que contiene información sobre el contenedor de este símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve S_FALSE o un código de error.  
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve S_FALSE o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de S_FALSE significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v8.0|  
+|Versión:|SDK de DIA v 8.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

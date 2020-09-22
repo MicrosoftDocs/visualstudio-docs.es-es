@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Recopilar datos de contadores de CPU | Microsoft Docs
+title: 'Cómo: Recopilar datos de contadores de CPU | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432810"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843094"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Procedimiento Recopilar datos de contadores de CPU
+# <a name="how-to-collect-cpu-counter-data"></a>Cómo: Recopilar datos de contadores de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento específicos de hardware. En este tema se muestra cómo recopilar datos de contador de eventos cuando se utiliza el método de generación de perfiles de instrumentación.  
@@ -50,7 +50,7 @@ Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento esp
   
 - Recopilar datos de uno o más contadores al generar perfiles mediante la instrumentación.  
   
-- Especificar un evento de contador como el intervalo de muestreo al generar perfiles mediante el muestreo. Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).  
+- Especificar un evento de contador como el intervalo de muestreo al generar perfiles mediante el muestreo. Para obtener más información, vea [Cómo: elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Para recopilar datos del contador de rendimiento de CPU al generar perfiles mediante la instrumentación  
   
@@ -65,8 +65,8 @@ Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento esp
     > [!NOTE]
     > **Contadores de rendimiento disponibles** está habilitado solo si selecciona la casilla **Recopilar contadores de CPU**.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)   
- [Contadores de CPU y de Windows](../profiling/cpu-and-windows-counters.md)   
- [Cómo: Elección de eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+ [Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)   
+ [Contadores de Windows y CPU](../profiling/cpu-and-windows-counters.md)   
+ [Cómo: elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)

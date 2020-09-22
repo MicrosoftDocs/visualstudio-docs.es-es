@@ -10,33 +10,33 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431609"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842950"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Solucionar problemas de herramientas de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede experimentar uno de los siguientes problemas al utilizar las herramientas de generación de perfiles:  
   
-- [No se recopilan datos con las herramientas de generación de perfiles](#NoDataCollected)  
+- [Los Herramientas de generación de perfiles no recopilan datos](#NoDataCollected)  
   
-- [Las vistas de rendimiento y los informes muestran números para los nombres de función](#NoSymbols)  
+- [Vistas de rendimiento e informes muestran números para los nombres de función](#NoSymbols)  
   
-## <a name="NoDataCollected"></a> No se recopilan datos con las herramientas de generación de perfiles  
+## <a name="no-data-is-collected-by-the-profiling-tools"></a><a name="NoDataCollected"></a> Los Herramientas de generación de perfiles no recopilan datos  
  Después de generar perfiles de una aplicación, no se crea un archivo de datos de generación de perfiles (.vsp) y recibe la siguiente advertencia en la ventana de salida o en la ventana Comandos:  
   
- PRF0025: No se ha recopilado ningún dato.  
+ PRF0025: No se recopiló ningún dato.  
   
  Este problema puede tener varias causas:  
   
 - Un proceso cuyo perfil se generó usando el método de muestreo o de memoria de .NET inicia un proceso secundario que se convierte en el proceso que realiza el trabajo de la aplicación. Por ejemplo, algunas aplicaciones leen la línea de comandos para determinar si se han iniciado como una aplicación de Windows o como una aplicación de línea de comandos. Si se solicitó una aplicación Windows, el proceso original inicia un nuevo proceso configurado como una aplicación de Windows y después se cierra el proceso original. Dado que las herramientas de generación de perfiles no recopilan automáticamente datos de procesos secundarios, no se recopilan datos.  
   
-     Para recopilar datos de generación de perfiles en esta situación, adjunte el generador de perfiles al proceso secundario en lugar de iniciar la aplicación con el generador de perfiles. Para obtener más información, vea [Cómo: Adjuntar y separar herramientas de rendimiento de los procesos en ejecución](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) y [adjuntar (VSPerfCmd)](../profiling/attach.md)  
+     Para recopilar datos de generación de perfiles en esta situación, adjunte el generador de perfiles al proceso secundario en lugar de iniciar la aplicación con el generador de perfiles. Para obtener más información, consulte [Cómo: adjuntar y separar herramientas de rendimiento para ejecutar procesos](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) y [adjuntar (VSPerfCmd)](../profiling/attach.md) .  
   
-## <a name="NoSymbols"></a> Las vistas de rendimiento y los informes muestran números para los nombres de función  
+## <a name="performance-views-and-reports-display-numbers-for-function-names"></a><a name="NoSymbols"></a> Vistas de rendimiento e informes muestran números para los nombres de función  
  Después de generar perfiles de una aplicación, se muestran números en lugar de los nombres de función en las vistas e informes.  
   
  La causa de este problema es que el motor de análisis de las herramientas de generación de perfiles no puede encontrar los archivos .pdb que contienen la información de símbolos que asigna la información de código fuente, como los nombres de función y los números de línea del archivo compilado. De forma predeterminada, el compilador crea el archivo .pdb cuando se compila el archivo de aplicación. Se almacena una referencia al directorio local del archivo .pdb en la aplicación compilada. El motor de análisis busca el archivo .pdb en el directorio al que se hace referencia y después en el archivo que contiene actualmente el archivo de aplicación. Si no se encuentra el archivo .pdb, el motor de análisis usa los desplazamientos de función en lugar de los nombres de función.  

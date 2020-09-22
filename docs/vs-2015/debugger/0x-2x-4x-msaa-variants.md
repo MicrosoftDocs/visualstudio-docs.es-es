@@ -1,5 +1,5 @@
 ---
-title: 0 MSAA de x-4 x-2 (variantes) | Microsoft Docs
+title: 0x-2x-4x MSAA (Variantes) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439988"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842622"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA (Variantes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Carga de VSPackages | Microsoft Docs
+title: Cargando VSPackages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439780"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842703"
 ---
 # <a name="loading-vspackages"></a>Carga de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad es necesaria. Por ejemplo, un VSPackage se carga cuando Visual Studio utiliza un generador de proyectos o un servicio que implementa el VSPackage. Esta característica se denomina la carga diferida, que se usa siempre que sea posible mejorar el rendimiento.  
+Los VSPackages se cargan en Visual Studio solo cuando se requiere su funcionalidad. Por ejemplo, un VSPackage se carga cuando Visual Studio usa un generador de proyectos o un servicio que implementa el VSPackage. Esta característica se denomina carga retrasada, que se usa siempre que sea posible para mejorar el rendimiento.  
   
 > [!NOTE]
-> Visual Studio puede determinar cierta información de VSPackage, como los comandos que ofrece un paquete VSPackage, sin tener que cargar el VSPackage.  
+> Visual Studio puede determinar determinada información de VSPackage, como los comandos que ofrece un VSPackage, sin cargar el VSPackage.  
   
- VSPackages puede establecerse para cargar automáticamente en un contexto de interfaz (IU) de usuario determinado, por ejemplo, cuando se abre una solución. El <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atributo establece este contexto.  
+ Los VSPackages se pueden configurar para que se carguen en un contexto de interfaz de usuario determinado, por ejemplo, cuando se abre una solución. El <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atributo establece este contexto.  
   
-### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Un VSPackage en un contexto específico de carga automática  
+### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Cargar autocarga de un VSPackage en un contexto específico  
   
-- Agregar el `ProvideAutoLoad` atributo a los atributos de VSPackage:  
+- Agregue el `ProvideAutoLoad` atributo a los atributos de VSPackage:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -41,22 +41,22 @@ Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad e
     {. . .}  
     ```  
   
-     Ver los campos enumerados de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> para obtener una lista de los contextos de interfaz de usuario y sus valores GUID.  
+     Vea los campos enumerados de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> para obtener una lista de los contextos de la interfaz de usuario y sus valores GUID.  
   
-- Establecer un punto de interrupción en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
+- Establezca un punto de interrupción en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
   
-- Crear el VSPackage e iniciar la depuración.  
+- Compile el VSPackage e inicie la depuración.  
   
-- Cargue una solución o cree uno.  
+- Cargue una solución o cree una.  
   
-     El VSPackage carga y se detiene en el punto de interrupción.  
+     El VSPackage se carga y se detiene en el punto de interrupción.  
   
-## <a name="forcing-a-vspackage-to-load"></a>Forzar un VSPackage para cargar  
- En algunas circunstancias puede tener un VSPackage forzar que se puede cargar otro paquete VSPackage. Por ejemplo, un VSPackage ligero podría cargar un VSPackage en un contexto que no está disponible como un CMDUIContext más grande.  
+## <a name="forcing-a-vspackage-to-load"></a>Forzar la carga de un VSPackage  
+ En algunas circunstancias, es posible que un VSPackage tenga que forzar la carga de otro VSPackage. Por ejemplo, un VSPackage ligero podría cargar un VSPackage mayor en un contexto que no está disponible como CMDUIContext.  
   
- Puede usar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> método para forzar la carga de un paquete VSPackage.  
+ Puede usar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> método para forzar la carga de un VSPackage.  
   
-- Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método del VSPackage que obliga a otro VSPackage para cargar:  
+- Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método del VSPackage que fuerza la carga de otro VSPackage:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -69,15 +69,15 @@ Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad e
   
     ```  
   
-     Cuando se inicializa el VSPackage, forzará `PackageToBeLoaded` para cargar.  
+     Cuando se inicializa el VSPackage, se forzará la `PackageToBeLoaded` carga.  
   
-     Carga de fuerza no debe usarse para la comunicación de VSPackage. Use [Using y proporcionar servicios](../extensibility/using-and-providing-services.md) en su lugar.  
+     La carga forzada no debe usarse para la comunicación de VSPackage. Use [y proporcione servicios](../extensibility/using-and-providing-services.md) en su lugar.  
   
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Uso de un atributo personalizado para registrar un VSPackage  
- En algunos casos es posible que deberá crear un nuevo atributo de registro para la extensión. Puede usar los atributos de registro para agregar nuevas claves del registro o para agregar nuevos valores a las claves existentes. El nuevo atributo debe derivar de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, y debe invalidar el <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> y <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> métodos.  
+## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Usar un atributo personalizado para registrar un VSPackage  
+ En algunos casos, puede que tenga que crear un nuevo atributo de registro para la extensión. Puede utilizar atributos de registro para agregar nuevas claves del registro o para agregar nuevos valores a las claves existentes. El nuevo atributo debe derivar de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> y debe reemplazar los <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> métodos y <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> .  
   
-## <a name="creating-a-registry-key"></a>Creación de una clave del registro  
- En el código siguiente, se crea el atributo personalizado un **personalizado** subclave bajo la clave para el VSPackage que se va a registrar.  
+## <a name="creating-a-registry-key"></a>Crear una clave del registro  
+ En el código siguiente, el atributo personalizado crea una subclave **personalizada** en la clave para el VSPackage que se está registrando.  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -103,7 +103,7 @@ public override void Unregister(RegistrationContext context)
 ```  
   
 ## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Crear un nuevo valor en una clave del registro existente  
- Puede agregar valores personalizados para una clave existente. El código siguiente muestra cómo agregar un nuevo valor a una clave de registro de VSPackage.  
+ Puede agregar valores personalizados a una clave existente. En el código siguiente se muestra cómo agregar un nuevo valor a una clave de registro de VSPackage.  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -127,5 +127,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [VSPackages](../extensibility/internals/vspackages.md)

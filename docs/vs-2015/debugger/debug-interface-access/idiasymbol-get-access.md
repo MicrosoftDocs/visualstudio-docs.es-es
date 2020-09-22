@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 806e9fd06611e2cb30829b294222870b9252c35b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808101"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842834"
 ---
-# <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
+# <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el modificador de acceso de un miembro de clase.  
@@ -35,21 +35,21 @@ HRESULT get_access ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve un valor de la [CV_access_e (enumeración)](../../debugger/debug-interface-access/cv-access-e.md) enumeración que especifica el modificador de acceso de un miembro de clase.  
+ enuncia Devuelve un valor de la enumeración de [enumeración CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) que especifica el modificador de acceso de un miembro de clase.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
+|Versión:|SDK de DIA v 7.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeración CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 502ab8dbafd12f3b00949b5b52609c4c8c8ddce9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433927"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843030"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Vista Punteros de instrucción (IP): Datos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,15 +24,15 @@ ms.locfileid: "63433927"
 La vista Punteros de instrucción de datos de muestreo muestra los datos de rendimiento de las instrucciones de ensamblado que se estaban ejecutando directamente cuando se recopilaron las muestras en la ejecución de generación de perfiles.  
   
 > [!NOTE]
-> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre de proceso**|Nombre del proceso.|  
+|**Nombre del proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|El nombre del módulo que contiene la instrucción.|  
 |**Ruta de acceso del módulo**|La ruta de acceso del módulo que contiene la instrucción.|  
-|**Archivo de código fuente**|El archivo de origen que contiene el nombre de la instrucción.|  
+|**Archivo de origen**|El archivo de origen que contiene el nombre de la instrucción.|  
 |**Nombre de la función**|El nombre de la función que contiene la instrucción.|  
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
 |**Dirección de función**|La dirección de memoria inicial de la función en el binario cargado.|  
@@ -44,5 +44,5 @@ La vista Punteros de instrucción de datos de muestreo muestra los datos de rend
 |**Muestras exclusivas**|El número total de muestras recopiladas cuando la instrucción se estaba ejecutando.|  
 |**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras que se recopilaron durante la generación de perfiles mientras se ejecutaba la instrucción.|  
   
-## <a name="see-also"></a>Vea también  
- [Vista Punteros de instrucción (IP): Muestreo](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+## <a name="see-also"></a>Consulte también  
+ [Vista Punteros de instrucción (IP): muestreo](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

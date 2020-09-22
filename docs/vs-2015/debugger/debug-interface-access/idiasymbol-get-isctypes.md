@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2a4ebe70d8cf26907446494009838e9ba2f795e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64819135"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843014"
 ---
-# <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
+# <a name="idiasymbolget_isctypes"></a>IDiaSymbol::get_isCTypes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una marca que indica si el archivo de símbolos contiene tipos C.  
+Recupera una marca que indica si el archivo de símbolos contiene tipos de C.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,24 +35,24 @@ HRESULT get_isCTypes(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Devuelve `TRUE` si el archivo de símbolos contiene tipos de C; en caso contrario, devuelve `FALSE`.  
+ enuncia Devuelve `TRUE` si el archivo de símbolos contiene tipos de C; de lo contrario, devuelve `FALSE` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="remarks"></a>Comentarios  
- Esta propiedad está disponible desde el `SymTagExe` tipo de símbolos (consulte [Exe](../../debugger/debug-interface-access/exe.md)).  
+## <a name="remarks"></a>Notas  
+ Esta propiedad está disponible en el `SymTagExe` tipo de símbolo (vea [exe](../../debugger/debug-interface-access/exe.md)).  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v8.0|  
+|Versión:|SDK de DIA v 8.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Exe](../../debugger/debug-interface-access/exe.md)

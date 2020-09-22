@@ -1,8 +1,8 @@
 ---
-title: Medición del rendimiento con herramientas de generación de perfiles
+title: Introducción a las herramientas de generación de perfiles
 description: Eche un vistazo breve a las distintas herramientas de diagnóstico disponibles en Visual Studio.
-ms.custom: mvc
-ms.date: 06/03/2020
+ms.custom: ''
+ms.date: 09/08/2020
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,18 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507994"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100779"
 ---
 # <a name="first-look-at-profiling-tools"></a>Un primer vistazo a las herramientas de generación de perfiles
 
 Visual Studio proporciona una variedad de herramientas de generación de perfiles que le ayudarán a diagnosticar diferentes tipos de problemas de rendimiento según el tipo de aplicación. En este artículo, echamos un vistazo rápido a las herramientas de generación de perfiles más habituales.
 
-## <a name="view-performance-while-debugging"></a>Visualización del rendimiento durante la depuración
+Para ver la compatibilidad de la herramienta de generación de perfiles con los distintos tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#which-tool-should-i-use)
+
+## <a name="measure-performance-while-debugging"></a>Medición del rendimiento durante la depuración
 
 Las herramientas de generación de perfiles a las que puede obtener acceso durante una sesión de depuración están disponibles en la ventana Herramientas de diagnóstico. La ventana Herramientas de diagnóstico aparece automáticamente a menos que la desactive. Para mostrar la ventana, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**. Con la ventana abierta, puede seleccionar las herramientas para las que se van a recopilar datos.
 
@@ -37,10 +39,38 @@ Durante la depuración, puede usar la ventana **Herramientas de diagnóstico** p
 
 ![Vista de resumen de Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Resumen de Herramientas de diagnóstico")
 
-La ventana **Herramientas de diagnóstico** es una manera habitual de generar perfiles de aplicaciones, pero en el caso de las compilaciones de versión, también puede hacer un análisis posterior de la aplicación. Para más información sobre los diferentes enfoques, consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Para ver la compatibilidad de la herramienta de generación de perfiles con los diferentes tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#which-tool-should-i-use)
+La ventana **Herramientas de diagnóstico** es una manera habitual de generar perfiles de aplicaciones, pero en el caso de las compilaciones de versión, también puede hacer un análisis posterior de la aplicación. Para más información sobre los diferentes enfoques, consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Para ver la compatibilidad de la herramienta de generación de perfiles con los distintos tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#which-tool-should-i-use)
+
+Las herramientas disponibles en la ventana Herramientas de diagnóstico o durante una sesión de depuración incluyen:
+- [Uso de CPU](../profiling/beginners-guide-to-performance-profiling.md)
+- [Uso de memoria](../profiling/memory-usage.md)
+- [Sugerencias de rendimiento](../profiling/perftips.md)
 
 > [!NOTE]
-> Puede usar las herramientas de análisis post-mortem con Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
+> Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**). Puede usar las herramientas de análisis [final](#post_mortem) con Windows 7 y versiones posteriores. 
+
+## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> Medición del rendimiento en compilaciones de versión
+
+Las herramientas del Generador de perfiles de rendimiento están diseñadas para proporcionar análisis de las compilaciones de **versión**. En el Generador de perfiles de rendimiento, puede recopilar información de diagnóstico mientras se ejecuta la aplicación y, después, examinar la información recopilada cuando la aplicación se haya detenido (un análisis final).
+
+Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento** (o **Alt + F2**).
+
+![Generador de perfiles de rendimiento](../profiling/media/prof-tour-performance-profiler.png "Generador de perfiles de rendimiento")
+
+Para más información sobre el uso de la herramienta Uso de CPU o Uso de memoria en el Generador de perfiles de rendimiento frente a las herramientas integradas en el depurador, consulte [Ejecución de herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
+
+Las herramientas disponibles en el Generador de perfiles de rendimiento incluyen:
+
+- [Uso de CPU](../profiling/cpu-usage.md)
+- [Uso de memoria para código .NET](../profiling/dotnet-alloc-tool.md)
+- [Uso de memoria](#analyze-memory-usage)
+- [Herramienta asincrónica de .NET](../profiling/analyze-async.md)
+- [Herramienta de base de datos](../profiling/analyze-database.md)
+- [Uso de GPU](../profiling/gpu-usage.md)
+
+Para ver la compatibilidad de la herramienta de generación de perfiles con los distintos tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#which-tool-should-i-use)
+
+En algunos escenarios, la ventana le permite seleccionar [varias herramientas de generación de perfiles](../profiling/use-multiple-profiler-tools-simultaneously.md). Las herramientas como Uso de CPU proporcionan datos complementarios que le pueden ayudar en el análisis. También puede usar el [generador de perfiles de la línea de comandos](../profiling/profile-apps-from-command-line.md) para habilitar escenarios con varias herramientas de generación de perfiles.
 
 ## <a name="examine-performance-using-perftips"></a>Examen del rendimiento mediante PerfTips
 
@@ -59,9 +89,9 @@ PerfTips muestra los mismos eventos que también se muestran en la vista **Event
 
 ## <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
-La herramienta Uso de CPU es un buen lugar para empezar a analizar el rendimiento de la aplicación. Le proporcionará más información sobre los recursos de CPU que consume la aplicación. Para ver un tutorial más detallado de la herramienta Uso de CPU, consulte [Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU](../profiling/beginners-guide-to-performance-profiling.md).
+La herramienta Uso de CPU es un buen lugar para empezar a analizar el rendimiento de la aplicación. Le proporcionará más información sobre los recursos de CPU que consume la aplicación. Puede usar la [herramienta Uso de CPU integrada en el depurador](../profiling/beginners-guide-to-performance-profiling.md) o la [herramienta Uso de CPU de análisis final](../profiling/cpu-usage.md).
 
-En la vista **Resumen** de Herramientas de diagnóstico, seleccione **Habilitar generación de perfiles de CPU** (debe estar en una sesión de depuración).
+Al usar la herramienta Uso de CPU integrada en el depurador, abra la ventana Herramientas de diagnóstico (si está cerrada, elija **Depurar / Ventanas / Mostrar Herramientas de diagnóstico**). Durante la depuración, abra la vista **Resumen** y seleccione **Registrar perfil CPU**.
 
 ![Habilitar el uso de CPU en Herramientas de diagnóstico](../profiling/media/prof-tour-enable-cpu-profiling.png "Habilitar el uso de CPU en Herramientas de diagnóstico")
 
@@ -77,9 +107,9 @@ Si hace doble clic en una función que le interese, verá una vista de "mariposa
 
 ## <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 
-La ventana **Herramientas de diagnóstico** permite evaluar el uso de memoria en la aplicación mediante la herramienta **Uso de memoria**. Por ejemplo, puede buscar el número y el tamaño de los objetos del montón. Para instrucciones más detalladas sobre el análisis de la memoria, vea [Analyze Memory Usage](../profiling/memory-usage.md) (Análisis del uso de memoria). Otra herramienta de análisis de memoria, la [herramienta Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md), ayuda a identificar los patrones de asignación y las anomalías en el código de .NET.
+La ventana **Herramientas de diagnóstico** permite evaluar el uso de memoria en la aplicación mediante la herramienta **Uso de memoria**. Por ejemplo, puede buscar el número y el tamaño de los objetos del montón. Puede usar la [herramienta Uso de memoria integrada en el depurador](../profiling/memory-usage.md) o la herramienta Uso de memoria de análisis final en el [Generador de perfiles de rendimiento](#post_mortem). Otra herramienta de análisis de memoria, la [herramienta Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md), ayuda a identificar los patrones de asignación y las anomalías en el código de .NET.
 
-Para analizar el uso de memoria también con la herramienta Uso de memoria integrada del depurador, se debe tomar al menos una instantánea de memoria. A menudo, la mejor manera de analizar la memoria consiste en tomar dos instantáneas: la primera justo antes de que se produzca un problema que sospecha que existe en la memoria y la segunda después de que se produzca el problema en cuestión. Después, puede ver las diferencias que existen entre las dos instantáneas y constatar qué es lo que ha cambiado exactamente.
+Para analizar el uso de memoria, se debe tomar al menos una instantánea de memoria. A menudo, la mejor manera de analizar la memoria consiste en tomar dos instantáneas: la primera justo antes de que se produzca un problema que sospecha que existe en la memoria y la segunda después de que se produzca el problema en cuestión. Después, puede ver las diferencias que existen entre las dos instantáneas y constatar qué es lo que ha cambiado exactamente. En la ilustración siguiente se muestra cómo tomar una instantánea con la herramienta integrada en el depurador.
 
 ![Toma de una instantánea en Herramientas de diagnóstico](../profiling/media/prof-tour-take-snapshots.gif "Tomar instantáneas en Herramientas de diagnóstico")
 
@@ -88,16 +118,6 @@ Al seleccionar uno de los vínculos de flecha, aparece una vista diferencial del
 ![Vista de diferencias del montón en Herramientas de diagnóstico](../profiling/media/prof-tour-mem-usage-diff-heap.png "Vista de diferencias del montón en Herramientas de diagnóstico")
 
 En cambio, si hace clic en el vínculo de la izquierda en la vista **Uso de memoria**, la vista del montón se organiza por número de objetos y se muestran los objetos de un tipo determinado que más han aumentado en número en la parte superior (ordenados por la columna **Dif. de recuento**).
-
-## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Generar perfiles de compilaciones de versión sin el depurador
-
-Las herramientas de generación de perfiles como Uso de CPU y Uso de memoria pueden usarse con el depurador (vea las secciones anteriores) o bien se pueden ejecutar herramientas de generación d perfiles pos-mortem mediante el Generador de perfiles de rendimiento, que está diseñado para proporcionar el análisis de compilaciones de **Versión**. En el Generador de perfiles de rendimiento, puede recopilar información de diagnóstico mientras se ejecuta la aplicación y, después, examinar la información recopilada cuando la aplicación se haya detenido. Para más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador). En el Generador de perfiles de rendimiento también hay disponibles otras herramientas, como la [herramienta Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
-
-![Generador de perfiles de rendimiento](../profiling/media/prof-tour-performance-profiler.png "Generador de perfiles de rendimiento")
-
-Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento** (o **Alt + F2**).
-
-La ventana le permitirá seleccionar [varias herramientas de generación de perfiles](../profiling/use-multiple-profiler-tools-simultaneously.md) en algunos escenarios. Las herramientas como Uso de CPU proporcionan datos complementarios que le pueden ayudar en el análisis. También puede usar el [generador de perfiles de la línea de comandos](../profiling/profile-apps-from-command-line.md) para habilitar escenarios con varias herramientas de generación de perfiles.
 
 ## <a name="analyze-resource-consumption-xaml"></a>Análisis del consumo de recursos (XAML)
 
@@ -147,7 +167,7 @@ En las aplicaciones de UWP, puede habilitar **Análisis de UI** en la ventana **
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Análisis del uso de la GPU (Direct3D)
 
-En las aplicaciones Direct3D (los componentes Direct3D deben estar en C++), puede examinar la actividad de la GPU y analizar problemas de rendimiento. Para obtener más información, vea [GPU Usage](/visualstudio/debugger/graphics/gpu-usage) (Uso de GPU). Para usar la herramienta, seleccione **Uso de GPU** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario del que le interesa generar un perfil y, después, seleccione **Detener recolección** para generar un informe.
+En las aplicaciones Direct3D (los componentes Direct3D deben estar en C++), puede examinar la actividad de la GPU y analizar problemas de rendimiento. Para obtener más información, vea [GPU Usage](./gpu-usage.md) (Uso de GPU). Para usar la herramienta, seleccione **Uso de GPU** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario del que le interesa generar un perfil y, después, seleccione **Detener recolección** para generar un informe.
 
 Si elige un período de tiempo en los gráficos y selecciona **Ver detalles**, aparece una vista detallada en el panel inferior. En la vista detallada, puede examinar cuántas actividades se producen en cada CPU y GPU. Seleccione los eventos en el panel inferior para que aparezcan elementos emergentes en la escala de tiempo. Por ejemplo, seleccione el evento **Presente** para ver elementos emergentes de llamada **Presente**. (Las líneas de sincronización vertical de color gris claro se pueden usar como referencia para entender si alguna llamada **Presente** se ha perdido la sincronización vertical. Debe haber una llamada **Presente** entre cada dos sincronizaciones verticales para que la aplicación alcance constantemente los 60 FPS).
 
@@ -202,28 +222,28 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 ::: moniker range=">=vs-2019"
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí|Sí|
-|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|Sí|
-|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|Sí|
-|[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|Sí|
-|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|Sí|no|
-|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|Sí|No|
-|[Visor de eventos](../profiling/events-viewer.md)|sí|sí|Sí|
+|[Sugerencias de rendimiento](../profiling/perftips.md)|Sí|sí|sí|
+|[Uso de CPU](../profiling/beginners-guide-to-performance-profiling.md)|sí|sí|sí|
+|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
+|[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|sí|
+|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
+|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí (XAML)|sí|No|
+|[Visor de eventos](../profiling/events-viewer.md)|sí|sí|sí|
 |[.NET Async](../profiling/analyze-async.md)|sí (solo .NET)|sí|sí|
 |[Base de datos](../profiling/analyze-database.md)|sí (solo .NET Core)|No|sí (solo ASP.NET Core)|
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|No|No|No|
+|[Explorador de rendimiento](#analyze-performance-legacy-tools)|No|no|No|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|Sí|
-|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|Sí|
-|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|Sí|no|
-|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|Sí|No|
+|[Uso de CPU](../profiling/beginners-guide-to-performance-profiling.md)|sí|sí|sí|
+|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
+|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
+|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí (XAML)|sí|No|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí|
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|no|sí|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 |[Uso de red](../profiling/network-usage.md)|No|sí|No|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|sí para HTML, no para XAML|No|

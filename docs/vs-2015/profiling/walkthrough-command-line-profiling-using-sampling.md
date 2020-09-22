@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439680"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843042"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Tutorial: Línea de comandos de generación de perfiles mediante muestreo
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Tutorial: Generar perfiles utilizando el método de muestreo en la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial se muestra cómo generar perfiles para una aplicación utilizando las herramientas de la línea de comandos y el muestreo para identificar problemas de rendimiento.  
@@ -41,7 +41,7 @@ En este tutorial se muestra cómo generar perfiles para una aplicación utilizan
   
 - Conocimientos intermedios del uso de herramientas de la línea de comandos  
   
-- Una copia de la [muestra PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Una copia del [ejemplo PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
 - Para trabajar con la información proporcionada por la generación de perfiles, es preferible disponer de la información de símbolos de depuración.  
   
@@ -81,7 +81,7 @@ En este tutorial se muestra cómo generar perfiles para una aplicación utilizan
   
 8. Cierre el Bloc de notas y después cierre la aplicación **PeopleTrax**.  
   
-9. Cierre el generador de perfiles. Escriba el comando siguiente:  
+9. Cierre el generador de perfiles. Escriba el siguiente comando:  
   
     ```  
     VSPerfCmd /shutdown  
@@ -105,9 +105,9 @@ En este tutorial se muestra cómo generar perfiles para una aplicación utilizan
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  
         ```  
   
-## <a name="see-also"></a>Vea también  
- [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)   
+## <a name="see-also"></a>Consulte también  
+ [Introducción a la sesión de rendimiento](../profiling/performance-session-overview.md)   
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
+ [Descripción de los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
  [Vistas de informes de rendimiento](../profiling/performance-report-views.md)

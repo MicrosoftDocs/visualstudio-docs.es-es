@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML) | Documentos de Microsoft'
+title: 'Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433171"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842555"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Crear y ejecutar la aplicación de prueba de rendimiento  
   
-1. En Visual Studio, cree un nuevo proyecto de JavaScript para Windows Universal. (Seleccione **Archivo / Nuevo / Proyecto**. Seleccione **JavaScript** en el panel izquierdo y seleccione **Windows**, **Windows 10**, y después **Universal** o **Windows Phone**.  
+1. En Visual Studio, cree un nuevo proyecto de JavaScript para Windows Universal. (Seleccione **archivo/nuevo/proyecto**. Seleccione **JavaScript** en el panel izquierdo y seleccione **Windows**, **Windows 10**, y después **Universal** o **Windows Phone**.  
   
 2. > [!IMPORTANT]
     > Los resultados de diagnóstico que se muestran en este tema son para una aplicación de Windows 8.  
   
 3. Seleccione una de las plantillas de proyecto vacías del panel central, como **Aplicación vacía**.  
   
-4. En el cuadro **Nombre**, especifique un nombre como `JS_Perf_Tester` y elija **Aceptar**.  
+4. En el cuadro **Nombre** , especifique un nombre como `JS_Perf_Tester`y elija **Aceptar**.  
   
-5. En el **Explorador de soluciones**, abre default.html y pega el siguiente código entre las etiquetas \<body>:  
+5. En **Explorador de soluciones**, abra default.html y pegue el código siguiente entre las \<body> Etiquetas:  
   
     ```html  
     <div class="wrapper">  
@@ -150,13 +150,13 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
 8. Elija la tecla F5 para iniciar la depuración. Compruebe que el botón **En espera de valores** aparece en la página.  
   
-9. Seleccione **En espera de valores** y compruebe que el texto y el color del botón se actualizan aproximadamente una vez por segundo. Esto es intencionado.  
+9. Seleccione **En espera de valores** y compruebe que el texto y el color del botón se actualizan aproximadamente una vez por segundo. es así por diseño.  
   
 10. Vuelve a Visual Studio (Alt+Tab) y presiona Mayús+F5 para detener la depuración.  
   
      Ahora que has comprobado que la aplicación funciona, puedes examinar el rendimiento utilizando el generador de perfiles.  
   
-### <a name="analyzing-performance-data"></a>Analizar los datos de rendimiento  
+### <a name="analyzing-performance-data"></a>Análisis de los datos de rendimiento  
   
 1. En la barra de herramientas **Depurar**, en la lista **Iniciar depuración**, elija uno de los emuladores de Windows Phone o **Simulator**.  
   
@@ -184,7 +184,7 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
 7. Selecciona una sección de uno o dos segundos en el centro del gráfico de utilización de CPU (haz clic en la sección y arrástrala o usa las teclas de tabulación y de dirección). En la siguiente ilustración se muestra el gráfico de utilización de CPU después de hacer la selección. El área no compartida es la selección.  
   
-    ![Gráfico de utilización de CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Gráfico de uso de CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
 8. Elija **Acercar**.  
   
@@ -225,7 +225,7 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
 ### <a name="fixing-the-performance-issue"></a>Corregir el problema de rendimiento  
   
-1. Reemplaza la función `update()` por el código siguiente:  
+1. Reemplace la función `update()` por el siguiente código:  
   
     ```javascript  
     function update() {  
@@ -242,5 +242,5 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
 2. Ejecuta de nuevo el generador de perfiles de capacidad de respuesta de la IU de HTML y consulta el gráfico de utilización de CPU. Verás que los eventos que se producían con demasiada frecuencia han desaparecido y que la utilización de la CPU ha disminuido a un nivel próximo al cero. ¡Arreglado!  
   
-## <a name="see-also"></a>Vea también  
- [Capacidad de respuesta de la IU HTML](../profiling/html-ui-responsiveness.md)
+## <a name="see-also"></a>Consulte también  
+ [HTML UI responsiveness](../profiling/html-ui-responsiveness.md)

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0147f291518438e812be01dbf9d6858eb72eaf3f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64789868"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842515"
 ---
-# <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
+# <a name="idiasymbolget_timestamp"></a>IDiaSymbol::get_timeStamp
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera la marca de tiempo del archivo ejecutable subyacente.  
@@ -35,13 +35,13 @@ HRESULT get_timeStamp ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve la marca de tiempo del archivo ejecutable subyacente.  
+ enuncia Devuelve la marca de tiempo del archivo ejecutable subyacente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

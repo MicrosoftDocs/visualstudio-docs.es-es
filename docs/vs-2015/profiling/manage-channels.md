@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443727"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843422"
 ---
 # <a name="manage-channels"></a>Administrar canales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
 ## <a name="sort-by"></a>Ordenar por  
  Puede utilizar el control de ordenación para ordenar los subprocesos según criterios diferentes, según el nivel de zoom actual. Esto es especialmente útil cuando se busca un patrón determinado. Puede ordenar por estos criterios:  
   
-|Criterios|Definición|  
+|Criterios|de esquema JSON|  
 |--------------|----------------|  
 |Hora de inicio|Ordena los subprocesos por sus horas de inicio. Este es el orden predeterminado.|  
 |Hora de finalización|Ordena los subprocesos por sus horas de finalización.|  
@@ -61,7 +61,7 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
 ## <a name="group-markers-by-thread"></a>Agrupar marcadores por subproceso  
  Si un seguimiento contiene eventos de marcador, puede usar este comando para agrupar canales de marcador en el subproceso que generó los eventos de marcador.  Los canales de disco se mueven a la parte superior de la lista de canales y los canales GPU se mueven a la parte inferior.  
   
-## <a name="see-also"></a>Vea también  
- [Control de zoom (Vista Subprocesos)](../profiling/zoom-control-threads-view.md)   
- [Activar o desactivar el modo de medición](../profiling/measure-mode-on-off.md)   
+## <a name="see-also"></a>Consulte también  
+ [Control de zoom (vista de subprocesos)](../profiling/zoom-control-threads-view.md)   
+ [Modo de medida activado/desactivado](../profiling/measure-mode-on-off.md)   
  [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

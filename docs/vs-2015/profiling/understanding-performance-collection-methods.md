@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e398d7e5e297daa68663902efb8a9fa0775c86fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431639"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842470"
 ---
 # <a name="understanding-performance-collection-methods"></a>Descripción de los métodos de recopilación de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
   
  Con algunos de los métodos de generación de perfiles también es posible recopilar datos adicionales, como contadores de rendimiento del software y el hardware. Para obtener más información, consulte [Recopilar datos de rendimiento adicionales](../profiling/collecting-additional-performance-data.md).  
   
-## <a name="sampling"></a> Muestreo  
+## <a name="sampling"></a><a name="sampling"></a>Muestreo  
  El método de generación de perfiles de muestreo recopila datos estadísticos sobre el trabajo realizado por una aplicación durante una generación de perfiles. El método de muestreo consume pocos recursos y afecta poco a la ejecución de los métodos de la aplicación.  
   
  El muestreo es el método predeterminado de las Herramientas de generación de perfiles de Visual Studio. Es útil para lo siguiente:  
@@ -53,11 +53,11 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
   
   [Recopilar estadísticas de rendimiento mediante el muestreo](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
-  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)  
+  [Descripción de los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)  
   
   [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)  
   
-## <a name="instrumentation"></a> Instrumentación  
+## <a name="instrumentation"></a><a name="instrumentation"></a> Instrumentación  
  El método de generación de perfiles de instrumentación recopila información de tiempo detallada de las llamadas a funciones en una aplicación cuyos perfiles se están generando. La generación de perfiles de instrumentación es útil para:  
   
 - Investigación de cuellos de botella de entrada o salida, como E/S de disco.  
@@ -76,13 +76,13 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
   
   Con el método de instrumentación también puede recopilar contadores de rendimiento de la CPU y el software.  
   
-  [Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)  
+  [Descripción de los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)  
   
-  [Recopilación de datos de control de tiempo detallados utilizando instrumentación](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
+  [Recopilar datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
   
   [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)  
   
-## <a name="concurrency"></a> Simultaneidad  
+## <a name="concurrency"></a><a name="concurrency"></a> Simultaneidad  
  La generación de perfiles de simultaneidad recopila información sobre las aplicaciones multiproceso. La generación de perfiles de contención de recursos recopila información detallada de la pila de llamadas cada vez que subprocesos competidores se ven a obligados a esperar para obtener acceso a un recurso compartido. La visualización de simultaneidad también recopila información más general sobre la interacción de su aplicación multiproceso consigo misma, el hardware, el sistema operativo y otros procesos del equipo host.  
   
 - Los informes de contención de recursos muestran el número total de contenciones y el tiempo total invertido esperando a un recurso por los módulos, funciones, líneas del código fuente e instrucciones en los que se produjo la espera. Los gráficos de escala de tiempo también muestran las contenciones a medida que se produjeron.  
@@ -91,13 +91,13 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
   
   [Descripción de los valores de datos de contención de recursos](../profiling/understanding-resource-contention-data-values.md)  
   
-  [Recopilar datos de simultaneidad de subprocesos y procesos](../profiling/collecting-thread-and-process-concurrency-data.md)  
+  [Recopilar datos de simultaneidad de procesos y subprocesos](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
   [Vistas de datos de contención de recursos](../profiling/resource-contention-data-views.md)  
   
   [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)  
   
-## <a name="net_memory"></a> Memoria de .NET  
+## <a name="net-memory"></a><a name="net_memory"></a> Memoria de .NET  
  El método de generación de perfiles de asignación de memoria de .NET interrumpe el procesador del equipo en cada asignación de un objeto de .NET Framework en una aplicación cuyos perfiles se están generando. Cuando también se recopilan datos de duración de objetos, el generador de perfiles interrumpe el procesador después de cada recolección de elementos no utilizados de .NET Framework.  
   
  El generador de perfiles recopila información sobre el tipo, tamaño y número de objetos que se crearon en una asignación o se destruyeron en una recolección de elementos no utilizados.  
@@ -118,7 +118,7 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
   
   [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)  
   
-## <a name="tier_interaction"></a> Interacción de capas  
+## <a name="tier-interaction"></a><a name="tier_interaction"></a> Interacción de capas  
  La generación de perfiles de interacción de capas agrega información a un archivo de datos de generación de perfiles sobre llamadas [!INCLUDE[vstecado](../includes/vstecado-md.md)] sincrónicas entre una página de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] u otra aplicación y una base de datos de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Los datos incluyen el número y tiempo de llamadas y los tiempos máximo y mínimo. Los datos de interacción de capas se pueden agregar a los datos de generación de perfiles recopilados con los métodos de muestreo, instrumentación, memoria de .NET o simultaneidad.  
   
  ![Datos de generación de perfiles de interacción de capas](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
@@ -128,6 +128,6 @@ Datos de interacción de capas recopilados por las Herramientas de generación d
   
  [Vistas de interacción de capas](../profiling/tier-interaction-views.md)  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Recopilar datos de rendimiento para un sitio Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)

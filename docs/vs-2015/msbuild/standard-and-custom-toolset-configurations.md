@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444380"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842714"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
 | ToolsVersion | Ruta de acceso del conjunto de herramientas (como se especifica en la propiedad de compilación MSBuildToolsPath o MSBuildBinPath) |
 |--------------|--------------------------------------------------------------------------------------|
 |     2.0      |           *Ruta de instalación de Windows*\Microsoft.Net\Framework\v2.0.50727\            |
-|     3.5      |              *Ruta de instalación de Windows*\Microsoft.Net\Framework\v3.5\               |
-|     4.0      |           *Ruta de instalación de Windows*\Microsoft.Net\Framework\v4.0.30319\            |
+|     3.5      |              *Ruta de instalación de Windows*\Microsoft.NET\Framework\v3.5\               |
+|     4.0      |           *Ruta de instalación de Windows*\Microsoft.NET\Framework\v4.0.30319\            |
 |     12.0     |                          *%ProgramFiles%* \MSBuild\12.0\bin                           |
 
- El valor de `ToolsVersion` determina qué conjunto de herramientas usará un proyecto generado por Visual Studio. En [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] el valor predeterminado es "12.0" (con independencia de la versión especificada en el archivo del proyecto), pero es posible reemplazar ese atributo mediante el modificador **/toolsversion** en un símbolo del sistema. Para obtener información sobre este atributo y otras maneras de especificar el valor de `ToolsVersion`, consulte [Reemplazar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ El valor de `ToolsVersion` determina qué conjunto de herramientas usará un proyecto generado por Visual Studio. En [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] el valor predeterminado es "12.0" (con independencia de la versión especificada en el archivo del proyecto), pero es posible reemplazar ese atributo mediante el modificador **/toolsversion** en un símbolo del sistema. Para obtener información sobre este atributo y otras maneras de especificar `ToolsVersion` , vea [invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
 
  Si el valor de `ToolsVersion` no se especifica, la clave del Registro **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<Version Number\>\DefaultToolsVersion** define `ToolsVersion`, que siempre es 2.0.  
 
@@ -97,9 +97,9 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
 
 - **$(MSBuildBinPath)** se establece en el valor de `ToolsPath` especificado en el Registro o en el archivo de configuración donde se define `ToolsVersion`. El valor de `$(MSBuildToolsPath)` en el Registro o en el archivo de configuración especifica la ubicación de las tareas y los destinos básicos. En el archivo de proyecto, se asigna a la propiedad $(MSBuildBinPath) y también a la propiedad $(MSBuildToolsPath).  
 
-- `$(MSBuildToolsPath)` es una propiedad reservada que proporciona la propiedad MSBuildToolsPath especificada en el archivo de configuración. (Esta propiedad reemplaza a `$(MSBuildBinPath)`. Sin embargo, `$(MSBuildBinPath)` se mantiene por motivos de compatibilidad). Un conjunto de herramientas personalizado debe definir `$(MSBuildToolsPath)` o `$(MSBuildBinPath)` pero no ambos, a no ser que ambos tengan el mismo valor.  
+- `$(MSBuildToolsPath)` es una propiedad reservada que proporciona la propiedad MSBuildToolsPath especificada en el archivo de configuración. (Esta propiedad reemplaza a `$(MSBuildBinPath)`. Sin embargo, `$(MSBuildBinPath)` se mantiene por compatibilidad). Un conjunto de herramientas personalizado debe definir `$(MSBuildToolsPath)` o `$(MSBuildBinPath)` pero no ambos, a menos que ambos tengan el mismo valor.  
 
   También puede agregar propiedades personalizadas específicas de ToolsVersion al archivo de configuración con la misma sintaxis utilizada para agregar la propiedad MSBuildToolsPath. Para que estas propiedades personalizadas están disponibles para el archivo de proyecto, use el mismo nombre que el del valor especificado en el archivo de configuración. En el archivo de configuración se pueden definir conjuntos de herramientas, pero no subconjuntos de herramientas.  
 
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

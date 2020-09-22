@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar qué archivos se publican mediante ClickOnce | Documentos de Microsoft
+title: 'Cómo: especificar los archivos que se van a publicar mediante ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,70 +19,70 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441584"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842903"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedimiento Especificar los archivos que se van a publicar mediante ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Cómo: Especificar los archivos que se van a publicar mediante ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos de aplicación, que no son código en el proyecto se implementan junto con la aplicación. En algunos casos, es posible que no desea o necesita publicar determinados archivos, o desea instalar determinados archivos según las condiciones. Visual Studio proporciona las capacidades para excluir archivos, marcar archivos como archivos de datos o los requisitos previos y crear grupos de archivos para la instalación condicional.  
+Al publicar una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, todos los archivos que no son de código del proyecto se implementan junto con la aplicación. En algunos casos, es posible que no desee o necesite publicar determinados archivos, o puede que desee instalar determinados archivos en función de las condiciones. Visual Studio proporciona las capacidades para excluir archivos, marcar archivos como archivos de datos o requisitos previos, y crear grupos de archivos para la instalación condicional.  
   
- Los archivos de un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación se administran en el **archivos de la aplicación** cuadro de diálogo, accesible desde el **publicar** página de la **Diseñador de proyectos**.  
+ Los archivos de una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación se administran en el cuadro de diálogo **archivos de aplicación** , accesible desde la página **publicar** del **Diseñador de proyectos**.  
   
- Inicialmente, hay un solo grupo de archivos denominado **(obligatorio)** . Puede crear grupos de archivos adicionales y asignarles archivos. No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación. Por ejemplo, .exe de la aplicación o los archivos marcan como archivos de datos deben pertenecer a la **(obligatorio)** grupo.  
+ Inicialmente, hay un único grupo de archivos denominado **(obligatorio)**. Puede crear grupos de archivos adicionales y asignarles archivos. No se puede cambiar el **grupo de descarga** de los archivos necesarios para que se ejecute la aplicación. Por ejemplo, el archivo. exe de la aplicación o los archivos marcados como archivos de datos deben pertenecer al grupo **(obligatorio)** .  
   
- El valor predeterminado de estado de publicación tiene una etiqueta con el valor de un archivo **(Auto)** . Por ejemplo, .exe de la aplicación tiene un estado de publicación de **incluir (automático)** de forma predeterminada.  
+ El valor predeterminado de estado de publicación de un archivo se etiqueta con **(auto)**. Por ejemplo, el archivo. exe de la aplicación tiene un estado de publicación de **incluir (auto)** de forma predeterminada.  
   
- Los archivos con la **acción de compilación** propiedad establecida en **contenido** se designan como archivos de aplicación y se marcará como incluye de forma predeterminada. Pueden incluidos, excluidos o marcados como archivos de datos. Las excepciones son los siguientes:  
+ Los archivos con la propiedad **acción de compilación** establecida en **contenido** se designan como archivos de aplicación y se marcarán como incluidos de forma predeterminada. Se pueden incluir, excluir o marcar como archivos de datos. Las excepciones son las siguientes:  
   
-- Archivos de datos como archivos de base de datos de SQL (.mdf y .mdb) y archivos XML se marcará como archivos de datos de forma predeterminada.  
+- De forma predeterminada, los archivos de datos, como los archivos de SQL Database (. MDF y. mdb) y los archivos XML, se marcarán como archivos de datos.  
   
-- Referencias a ensamblados (archivos .dll) se designan como se indica a continuación al agregar la referencia: Si **Copy Local** es **False**, está marcada de forma predeterminada como un ensamblado de requisito previo (**requisito previo (Auto)** ) que debe estar presente en la GAC antes de instalar la aplicación. Si **Copy Local** es **True**, el ensamblado está marcado como un ensamblado de aplicación de forma predeterminada (**incluir (automático)** ) y se copiará en la carpeta de la aplicación durante la instalación. Una referencia COM aparecerá en el **archivos de la aplicación** de diálogo cuadro (como un archivo .ocx) solo si su **aislado** propiedad está establecida en **True**. De forma predeterminada, se incluirá.  
+- Las referencias a los ensamblados (archivos. dll) se designan como se indica a continuación al agregar la referencia: Si **Copy local** es **false**, se marca de forma predeterminada como un ensamblado de requisito previo (**requisito previo (auto)**) que debe estar presente en la GAC antes de que se instale la aplicación. Si **Copy local** es **true**, el ensamblado está marcado de forma predeterminada como un ensamblado de aplicación (**include (auto)**) y se copiará en la carpeta de la aplicación durante la instalación. Aparecerá una referencia COM en el cuadro de diálogo **archivos de aplicación** (como un archivo. ocx) solo si su propiedad **aislada** está establecida en **true**. De forma predeterminada, se incluirá.  
   
-### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para agregar archivos al cuadro de diálogo de archivos de aplicación  
+### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para agregar archivos al cuadro de diálogo archivos de aplicación  
   
-1. Seleccione un archivo de datos en **el Explorador de soluciones**.  
+1. Seleccione un archivo de datos en **Explorador de soluciones**.  
   
-2. En la ventana Propiedades, cambie la **acción de compilación** propiedad a la **contenido** valor.  
+2. En el ventana Propiedades, cambie la propiedad **acción de compilación** al valor **contenido** .  
   
-### <a name="to-exclude-files-from-clickonce-publishing"></a>Para excluir archivos de publicación de ClickOnce  
-  
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
-  
-2. Haga clic en la pestaña **Publicar**.  
-  
-3. Haga clic en el **archivos de la aplicación** botón para abrir el **archivos de la aplicación** cuadro de diálogo.  
-  
-4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el archivo que desea excluir.  
-  
-5. En el **estado de la publicación** campos, seleccione **excluir** en la lista desplegable.  
-  
-### <a name="to-mark-files-as-data-files"></a>Para marcar los archivos como archivos de datos  
+### <a name="to-exclude-files-from-clickonce-publishing"></a>Para excluir archivos de la publicación ClickOnce  
   
 1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
 2. Haga clic en la pestaña **Publicar**.  
   
-3. Haga clic en el **archivos de la aplicación** botón para abrir el **archivos de la aplicación** cuadro de diálogo.  
+3. Haga clic en el botón **archivos de aplicación** para abrir el cuadro de diálogo **archivos de aplicación** .  
   
-4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el archivo que desea marcar como datos.  
+4. En el cuadro de diálogo **archivos de aplicación** , seleccione el archivo que desea excluir.  
   
-5. En el **estado de la publicación** campos, seleccione **archivo de datos** en la lista desplegable.  
+5. En el campo **Estado de publicación** , seleccione **excluir** en la lista desplegable.  
   
-### <a name="to-mark-files-as-prerequisites"></a>Para marcar los archivos como requisitos previos  
+### <a name="to-mark-files-as-data-files"></a>Para marcar archivos como archivos de datos  
   
 1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
 2. Haga clic en la pestaña **Publicar**.  
   
-3. Haga clic en el **archivos de la aplicación** botón para abrir el **archivos de la aplicación** cuadro de diálogo.  
+3. Haga clic en el botón **archivos de aplicación** para abrir el cuadro de diálogo **archivos de aplicación** .  
   
-4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el ensamblado de aplicación (archivo .dll) que desea marcar como requisito previo. Tenga en cuenta que la aplicación debe tener una referencia al ensamblado de la aplicación en orden para que aparezca en la lista.  
+4. En el cuadro de diálogo **archivos de aplicación** , seleccione el archivo que desea marcar como datos.  
   
-5. En el **estado de la publicación** campos, seleccione **requisitos previos** en la lista desplegable.  
+5. En el campo **Estado de publicación** , seleccione Archivo de **datos** en la lista desplegable.  
+  
+### <a name="to-mark-files-as-prerequisites"></a>Para marcar archivos como requisitos previos  
+  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+  
+2. Haga clic en la pestaña **Publicar**.  
+  
+3. Haga clic en el botón **archivos de aplicación** para abrir el cuadro de diálogo **archivos de aplicación** .  
+  
+4. En el cuadro de diálogo **archivos de aplicación** , seleccione el ensamblado de la aplicación (archivo. dll) que desea marcar como requisito previo. Tenga en cuenta que la aplicación debe tener una referencia al ensamblado de la aplicación para que aparezca en la lista.  
+  
+5. En el campo **Estado de publicación** , seleccione **requisito previo** en la lista desplegable.  
   
 ### <a name="to-add-a-new-file-group"></a>Para agregar un nuevo grupo de archivos  
   
@@ -90,16 +90,16 @@ Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos d
   
 2. Haga clic en la pestaña **Publicar**.  
   
-3. Haga clic en el **archivos de la aplicación** botón para abrir el **archivos de la aplicación** cuadro de diálogo.  
+3. Haga clic en el botón **archivos de aplicación** para abrir el cuadro de diálogo **archivos de aplicación** .  
   
-4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el **grupo** field para un archivo que desea incluir en el nuevo grupo.  
+4. En el cuadro de diálogo **archivos de aplicación** , seleccione el campo de **Grupo** de un archivo que desea incluir en el nuevo grupo.  
   
     > [!NOTE]
-    > Los archivos deben tener la **acción de compilación** propiedad establecida en **contenido** antes de que aparezcan los nombres de archivo en el **archivos de la aplicación** cuadro de diálogo.  
+    > Los archivos deben tener la propiedad **acción de compilación** establecida en **contenido** antes de que aparezcan los nombres de archivo en el cuadro de diálogo **archivos de aplicación** .  
   
-5. En el **grupo de descarga** campos, seleccione  **\<nuevo... >** en la lista desplegable.  
+5. En el campo **grupo de descarga** , seleccione **\<New...>** en la lista desplegable.  
   
-6. En el **nuevo grupo** cuadro de diálogo, escriba un nombre para el grupo y, a continuación, haga clic en **Aceptar**.  
+6. En el cuadro de diálogo **nuevo grupo** , escriba un nombre para el grupo y, a continuación, haga clic en **Aceptar**.  
   
 ### <a name="to-add-a-file-to-a-group"></a>Para agregar un archivo a un grupo  
   
@@ -107,15 +107,15 @@ Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos d
   
 2. Haga clic en la pestaña **Publicar**.  
   
-3. Haga clic en el **archivos de la aplicación** botón para abrir el **archivos de la aplicación** cuadro de diálogo.  
+3. Haga clic en el botón **archivos de aplicación** para abrir el cuadro de diálogo **archivos de aplicación** .  
   
-4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el **grupo** field para un archivo que desea incluir en el nuevo grupo.  
+4. En el cuadro de diálogo **archivos de aplicación** , seleccione el campo de **Grupo** de un archivo que desea incluir en el nuevo grupo.  
   
-5. En el **grupo de descarga** , seleccione un grupo en la lista desplegable.  
+5. En el campo **grupo de descarga** , seleccione un grupo de la lista desplegable.  
   
     > [!NOTE]
-    > No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación.  
+    > No se puede cambiar el **grupo de descarga** de los archivos necesarios para que se ejecute la aplicación.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

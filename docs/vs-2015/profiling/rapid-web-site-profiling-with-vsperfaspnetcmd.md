@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438903"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843321"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Generación rápida de perfiles de sitio web con VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perfiles fácilmente de aplicaciones web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. En comparación con la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd.md), tiene menos opciones, no debe establecerse ninguna variable de entorno y no es necesario reiniciar el equipo. **VSPerfASPNETCmd** es el método preferido para la generación de perfiles con el generador de perfiles independiente. Para obtener más información, vea [Cómo: Instalar el Profiler independiente](../profiling/how-to-install-the-stand-alone-profiler.md).  
+La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perfiles fácilmente de aplicaciones web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. En comparación con la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd.md), tiene menos opciones, no debe establecerse ninguna variable de entorno y no es necesario reiniciar el equipo. **VSPerfASPNETCmd** es el método preferido para la generación de perfiles con el generador de perfiles independiente. Para obtener más información, consulte [Cómo: Instalar el generador de perfiles independiente](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
 > Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -61,14 +61,14 @@ La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perf
   
  También puede utilizar la opción **/Trace** para incluir información de tiempo detallada con los datos de memoria de .NET:  
   
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Para recopilar datos de interacción de capas  
   
 > [!WARNING]
 > Los datos de generación de perfiles de interacción de capas (TIP) se pueden recopilar usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] y [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Para recopilar datos de TIP en Windows 8 o Windows Server 2012, debe usar la opción de instrumentación ( **/trace**).  
+> Para recopilar datos de TIP en Windows 8 o Windows Server 2012, debe usar la opción de instrumentación (**/trace**).  
   
  Para recopilar datos de interacción de capas con datos de muestreo:  
   
@@ -80,14 +80,14 @@ La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perf
   
  Para recopilar datos de interacción de capas con datos de memoria de .NET:  
   
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
   
-## <a name="UsingNoWait"></a> Utilizar la opción /NoWait  
+## <a name="using-the-nowait-option"></a><a name="UsingNoWait"></a> Utilizar la opción /NoWait  
  De forma predeterminada, el símbolo del sistema no se devuelve valores después de un comando **vsperfaspnetcmd**. Puede usar la siguiente opción de sintaxis para forzar el símbolo del sistema a devolver valores. Después, puede realizar otras operaciones en la ventana de símbolo del sistema. Para finalizar la generación de perfiles, use la opción **/shutdown** en un comando **vsperfaspnetcmd** separado.  
   
  Para iniciar la generación de perfiles:  
   
- **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
   
  Para finalizar la generación de perfiles:  
   
@@ -98,5 +98,5 @@ La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perf
   
 |Opción|Descripción|  
 |------------|-----------------|  
-|**/Output:** `VspFile`|De forma predeterminada, el archivo de datos de generación de perfiles (.vsp) se crea en el directorio actual con el nombre de archivo **PerformanceReport.vsp**. Utilice la opción /output para cambiar la ubicación, el nombre de archivo o ambos.|  
+|**/Output:**`VspFile`|De forma predeterminada, el archivo de datos de generación de perfiles (.vsp) se crea en el directorio actual con el nombre de archivo **PerformanceReport.vsp**. Utilice la opción /output para cambiar la ubicación, el nombre de archivo o ambos.|  
 |**/PackSymbols:Off**|De forma predeterminada, VsPerfASPNETCmd incrusta símbolos (nombres de función y parámetro, etcétera) en el archivo .vsp. Incrustar los símbolos puede hacer que el archivo de datos de generación de perfiles sea muy grande. Si tiene acceso a los archivos .pdb que contienen los símbolos al analizar los datos, utilice la opción /packsymbols:off para deshabilitar la incrustación de los símbolos.|

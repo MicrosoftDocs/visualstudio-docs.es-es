@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs
+title: 'IDebugSymbolSearchEvent2:: Getsymbolsearchinfo (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8ef097ed02ae90b03289e3a2f3a1ad3f0ad8618
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446042"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842487"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Llama a un controlador de eventos para recuperar los resultados de un proceso de carga de símbolos.  
+Lo llama un controlador de eventos para recuperar los resultados de un proceso de carga de símbolos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,24 +45,24 @@ int GetSymbolSearchInfo(
   
 #### <a name="parameters"></a>Parámetros  
  `pModule`  
- [out] Un objeto IDebugModule3 que representa el módulo para el que se han cargado los símbolos.  
+ enuncia Un objeto IDebugModule3 que representa el módulo para el que se cargaron los símbolos.  
   
  `pbstrDebugMessage`  
- [in, out] Devuelve una cadena que contiene los mensajes de error del módulo. Si no hay ningún error, a continuación, esta cadena solo contendrá el nombre del módulo, pero nunca está vacía.  
+ [in, out] Devuelve una cadena que contiene los mensajes de error del módulo. Si no hay ningún error, esta cadena solo contendrá el nombre del módulo, pero nunca estará vacío.  
   
 > [!NOTE]
-> [C++] `pbstrDebugMessage` no puede ser `NULL` y debe liberarse con `SysFreeString`.  
+> [C++] `pbstrDebugMessage` no puede ser `NULL` y se debe liberar con `SysFreeString` .  
   
  `pdwModuleInfoFlags`  
- [out] Una combinación de marcas de la [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeración que indica si se han cargado los símbolos.  
+ enuncia Combinación de marcas de la enumeración [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) que indica si se cargaron símbolos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Comentarios  
- Cuando se recibe un controlador de la [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) evento después de que se intenta cargar símbolos de depuración para un módulo, el controlador puede llamar a este método para determinar los resultados de la carga.  
+## <a name="remarks"></a>Notas  
+ Cuando un controlador recibe el evento [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) después de realizar un intento de cargar símbolos de depuración para un módulo, el controlador puede llamar a thismethod para determinar los resultados de esa carga.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   
  [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

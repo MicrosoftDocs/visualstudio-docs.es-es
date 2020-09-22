@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 99a92f134390e5d3215b1609234e643b71d93d3d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793665"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842563"
 ---
-# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
+# <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Esta función recupera una marca que indica si la función se ha marcado como en línea (con uno de los [inline, __inline, \__forceinline](../../misc/inline-inline-forceinline.md) atributos).  
+Esta función recupera una marca que indica si la función se marcó como alineada (mediante uno de los atributos [Inline, __inline \_ _forceinline](../../misc/inline-inline-forceinline.md) ).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,21 +35,21 @@ HRESULT get_inlSpec(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si la función se ha marcado como en línea; en caso contrario, devuelve `FALSE`.  
+ enuncia Devuelve `TRUE` si la función se marcó como insertada; de lo contrario, devuelve `FALSE` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v8.0|  
+|Versión:|SDK de DIA v 8.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [inline, __inline, \__forceinline](../../misc/inline-inline-forceinline.md)

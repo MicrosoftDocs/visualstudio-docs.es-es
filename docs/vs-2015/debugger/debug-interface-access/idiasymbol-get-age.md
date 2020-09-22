@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82a15703fdb1738d92b6b7bbeda053625bb5fdda
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806670"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842791"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el valor de edad de un archivo. pdb.  
@@ -35,23 +35,23 @@ HRESULT get_age ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el valor de edad de un archivo. pdb.  
+ enuncia Devuelve el valor de edad de un archivo. pdb.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="remarks"></a>Comentarios  
- La antigüedad no corresponden necesariamente a cualquier valor de tiempo conocido; Normalmente se usa para determinar si un archivo .pdb no está sincronizado con un archivo .exe correspondiente.  
+## <a name="remarks"></a>Notas  
+ La edad no se corresponde necesariamente con ningún valor de hora conocido; normalmente se utiliza para determinar si un archivo. pdb no está sincronizado con un archivo. exe correspondiente.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
+|Versión:|SDK de DIA v 7.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

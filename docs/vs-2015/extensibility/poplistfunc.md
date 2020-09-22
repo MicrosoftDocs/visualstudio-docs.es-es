@@ -13,21 +13,21 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c3ae2ce451f076c33ea5613b71c6d262c1d7a0e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430834"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90842883"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta devolución de llamada se proporciona a la [SccPopulateList](../extensibility/sccpopulatelist-function.md) por el IDE y se usa el complemento de control de origen para actualizar una lista de archivos o directorios (también proporciona a los `SccPopulateList` función).  
+El IDE proporciona esta devolución de llamada al [SccPopulateList](../extensibility/sccpopulatelist-function.md) y la usa el complemento de control de código fuente para actualizar una lista de archivos o directorios (también proporcionados a la `SccPopulateList` función).  
   
- Cuando un usuario elige el **obtener** comando en el IDE, el IDE muestra un cuadro de lista de todos los archivos que se puede obtener el usuario. Lamentablemente, el IDE no conoce la lista exacta de todos los archivos que podría obtener el usuario; solo el complemento tiene esta lista. Si otros usuarios han agregado archivos al proyecto de control de código fuente, estos archivos deben aparecer en la lista, pero el IDE no informara de ello. El IDE compila una lista de los archivos que cree que puede obtener el usuario. Antes de esta lista muestra al usuario, llama a la [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` que proporciona el complemento de control de código fuente una oportunidad de agregar y eliminar archivos en la lista.  
+ Cuando un usuario elige el comando **Get** en el IDE, el IDE muestra un cuadro de lista de todos los archivos que el usuario puede obtener. Desafortunadamente, el IDE no conoce la lista exacta de todos los archivos que el usuario podría obtener; solo el complemento tiene esta lista. Si otros usuarios han agregado archivos al proyecto de control de código fuente, estos archivos deben aparecer en la lista, pero el IDE no los conoce. El IDE crea una lista de los archivos que considera que el usuario puede obtener. Antes de que muestre esta lista al usuario, llama a [SccPopulateList](../extensibility/sccpopulatelist-function.md) , lo que `,` le permite agregar y eliminar archivos de la lista.  
   
-## <a name="signature"></a>Signatura  
- El complemento de control de origen modifica la lista mediante una llamada a una función implementada por el IDE con el prototipo siguiente:  
+## <a name="signature"></a>Firma  
+ El complemento de control de código fuente modifica la lista mediante una llamada a una función implementada por el IDE con el siguiente prototipo:  
   
 ```cpp#  
 typedef BOOL (*POPLISTFUNC) (  
@@ -40,32 +40,32 @@ typedef BOOL (*POPLISTFUNC) (
   
 ## <a name="parameters"></a>Parámetros  
  pvCallerData  
- El `pvCallerData` parámetro pasado por el llamador (IDE) a la [SccPopulateList](../extensibility/sccpopulatelist-function.md). El complemento de control de origen debe asumir nada sobre el contenido de este parámetro.  
+ `pvCallerData`Parámetro pasado por el llamador (el IDE) al [SccPopulateList](../extensibility/sccpopulatelist-function.md). El complemento de control de código fuente no debe suponer nada sobre el contenido de este parámetro.  
   
  fAddRemove  
- Si `TRUE`, `lpFileName` es un archivo que se debe agregar a la lista de archivos. Si `FALSE`, `lpFileName` es un archivo que se debe eliminar de la lista de archivos.  
+ Si `TRUE` `lpFileName` es, es un archivo que se debe agregar a la lista de archivos. Si `FALSE` `lpFileName` es, es un archivo que se debe eliminar de la lista de archivos.  
   
  nStatus  
- Estado de `lpFileName` (una combinación de la `SCC_STATUS` bits; vea [código de estado de archivo](../extensibility/file-status-code-enumerator.md) para obtener más información).  
+ Estado de `lpFileName` (una combinación de `SCC_STATUS` bits; consulte el [código de estado de archivo](../extensibility/file-status-code-enumerator.md) para obtener detalles).  
   
  lpFileName  
- Ruta de acceso completa del directorio del nombre de archivo para agregar o eliminar de la lista.  
+ Ruta de acceso completa al directorio del nombre de archivo que se va a agregar o eliminar de la lista.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
-|Valor|Descripción|  
+|Value|Descripción|  
 |-----------|-----------------|  
 |`TRUE`|El complemento puede seguir llamando a esta función.|  
-|`FALSE`|Ha habido un problema en el lado IDE (por ejemplo, de la situación de memoria insuficiente). El complemento debe detenerse la operación.|  
+|`FALSE`|Se ha producido un problema en el lado del IDE (por ejemplo, una situación de memoria insuficiente). El complemento debe detener la operación.|  
   
-## <a name="remarks"></a>Comentarios  
- Para cada archivo que desea que el complemento de control de código fuente para agregar o eliminar de la lista de archivos, llama a esta función, pasando el `lpFileName`. El `fAddRemove` marca indica un archivo nuevo para agregar a la lista o un archivo antiguo para eliminar. El `nStatus` parámetro proporciona el estado del archivo. Cuando haya terminado el complemento de SCC adición y eliminación de archivos, devuelve desde el [SccPopulateList](../extensibility/sccpopulatelist-function.md) llamar.  
+## <a name="remarks"></a>Notas  
+ Para cada archivo que el complemento de control de código fuente desea agregar o eliminar de la lista de archivos, llama a esta función, pasando el `lpFileName` . La `fAddRemove` marca indica un nuevo archivo que se va a agregar a la lista o a un archivo anterior que se va a eliminar. El `nStatus` parámetro proporciona el estado del archivo. Cuando el complemento SCC ha terminado de agregar y eliminar archivos, vuelve de la llamada a [SccPopulateList](../extensibility/sccpopulatelist-function.md) .  
   
 > [!NOTE]
-> El `SCC_CAP_POPULATELIST` bit de capacidad es necesaria para Visual Studio.  
+> El `SCC_CAP_POPULATELIST` bit de capacidad es necesario para Visual Studio.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
- [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   
+ [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)   
  [Código de estado de archivo](../extensibility/file-status-code-enumerator.md)

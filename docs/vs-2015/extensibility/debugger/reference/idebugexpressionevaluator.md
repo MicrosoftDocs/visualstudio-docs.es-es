@@ -13,17 +13,17 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ceffebf10838fe147475dcda54b385b844676de4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426460"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843162"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> En Visual Studio 2015, esta manera de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte [evaluadores](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) de expresiones CLR y [ejemplo de evaluador de expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Esta interfaz representa el evaluador de expresiones.  
   
@@ -34,36 +34,36 @@ IDebugExpressionEvaluator : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El evaluador debe implementar esta interfaz.  
+ El evaluador de expresiones debe implementar esta interfaz.  
   
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Para obtener esta interfaz, cree una instancia el evaluador de expresiones a través de la `CoCreateInstance` método utilizando el identificador de clase (CLSID) del evaluador de. Vea el ejemplo.  
+## <a name="notes-for-callers"></a>Notas para llamadores  
+ Para obtener esta interfaz, cree una instancia del evaluador de expresiones a través del `CoCreateInstance` método utilizando el ID. de clase (CLSID) del evaluador. Vea el ejemplo.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- La tabla siguiente muestran los métodos de `IDebugExpressionEvaluator`.  
+ En la tabla siguiente se muestran los métodos de `IDebugExpressionEvaluator` .  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[Analizar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Convierte una cadena de expresión en una expresión analizada.|  
-|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Obtiene las variables locales, argumentos y otras propiedades de un método.|  
+|[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Convierte una cadena de expresión en una expresión analizada.|  
+|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Obtiene las variables locales, los argumentos y otras propiedades de un método.|  
 |[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Convierte una ubicación de método y el desplazamiento en una dirección de memoria.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Determina el idioma que desea usar para crear resultados imprimibles.|  
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Establece la raíz del registro. Se utiliza para la depuración en paralelo.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Determina el idioma que se va a usar para crear resultados imprimibles.|  
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Establece la raíz del registro. Se usa para la depuración en paralelo.|  
   
-## <a name="remarks"></a>Comentarios  
- En una situación típica, el motor de depuración (DE), crea una instancia el evaluador de expresiones (EE) como resultado de una llamada a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Ya sabe que la del idioma y el proveedor de lo EE desea usar, la DE obtiene CLSID del EE del registro (el [aplicaciones auxiliares de SDK para depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) función, `GetEEMetric`, ayuda con esta recuperación).  
+## <a name="remarks"></a>Notas  
+ En una situación típica, el motor DE depuración (DE) crea instancias del evaluador de expresiones (EE) como resultado de una llamada a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Dado que el DE conoce el lenguaje y el proveedor de EE que quiere usar, el obtiene el CLSID de EE del registro (las [aplicaciones auxiliares de SDK para la función de depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , `GetEEMetric` , ayuda con esta recuperación).  
   
- Una vez que se crea una instancia de lo EE, llama la DE [analizar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para analizar la expresión y almacenarlo en una [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objeto. Más adelante, una llamada a [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) evalúa la expresión.  
+ Una vez creada la instancia de EE, el DE llama a [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para analizar la expresión y almacenarla en un objeto [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) . Más adelante, una llamada a [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) evalúa la expresión.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: ee.h  
+ Encabezado: EE. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra cómo crear una instancia el evaluador de expresiones proporcionado un proveedor de símbolos y la dirección en el código fuente. En este ejemplo utiliza una función, `GetEEMetric`, desde el [aplicaciones auxiliares de SDK para depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) library, dbgmetric.lib.  
+ En este ejemplo se muestra cómo crear una instancia del evaluador de expresiones a partir de un proveedor de símbolos y una dirección del código fuente. En este ejemplo se usa una función, `GetEEMetric` , de las [aplicaciones auxiliares de SDK para la biblioteca de depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , dbgmetric. lib.  
   
 ```cpp#  
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,  
@@ -104,8 +104,8 @@ IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolPro
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Interfaces de evaluación de expresión](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>Consulte también  
+ [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
  [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   

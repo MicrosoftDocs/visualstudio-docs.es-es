@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 720f37afbeea3c7440ad2ced9649039d671b1f1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383403"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842786"
 ---
 # <a name="call-tree-view---sampling-data"></a>Vista Árbol de llamadas: datos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,9 +55,9 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 |**Muestras inclusivas**|El número de muestras que se recopilaron en esta función cuando la llamó la función primaria en el árbol de llamadas. Este número incluye aquellas muestras recopiladas en funciones a las que llamó la función.|  
 |**Porcentaje de muestras inclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que eran muestras inclusivas de esta función cuando la llamó la función primaria en el árbol de llamadas.|  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
- [Vista Árbol de llamadas: datos de muestreo del generador de perfiles](../profiling/call-tree-view-sampling-data.md)   
- [Vista Árbol de llamadas: muestreo](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [Vista Árbol de llamadas: instrumentación](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Vista árbol de llamadas: datos de muestreo del generador de perfiles](../profiling/call-tree-view-sampling-data.md)   
+ [Vista árbol de llamadas: muestreo](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Vista árbol de llamadas: instrumentación](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view-instrumentation-data.md)

@@ -11,32 +11,32 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 457e2daf3e52c23ba9733d09d3aeb94750b5fab9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446244"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90843222"
 ---
 # <a name="sending-the-required-events"></a>Envío de los eventos necesarios
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Utilice este procedimiento para enviar los eventos necesarios.  
+Utilice este procedimiento para enviar eventos necesarios.  
   
-## <a name="process-for-sending-required-events"></a>Proceso para el envío de eventos necesarios  
- Los eventos siguientes son necesarios, en este orden, cuando el motor de creación de una depuración (DE) y conectarlo a un programa:  
+## <a name="process-for-sending-required-events"></a>Proceso para enviar eventos necesarios  
+ Los eventos siguientes son necesarios, en este orden, al crear un motor DE depuración (DE) y asociarlo a un programa:  
   
-1. Enviar una [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objeto event para el Administrador de depuración de la sesión (SDM) cuando se inicializa la DE uno o más programas en un proceso de depuración.  
+1. Envíe un objeto de evento [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) al administrador de depuración de la sesión (SDM) cuando el de se inicializa para depurar uno o varios programas en un proceso.  
   
-2. Cuando el programa que se desea depurar se adjunta a, enviar un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objeto event para el SDM. Este evento puede ser un evento de detención, dependiendo del diseño del motor.  
+2. Cuando el programa que se va a depurar está asociado a, envíe un objeto de evento [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) al SDM. Este evento puede ser un evento de detención, dependiendo del diseño del motor.  
   
-3. Si el programa está asociado a cuando se inicia el proceso, envíe un [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) objeto event para el SDM para notificar el IDE del nuevo subproceso. Este evento puede ser un evento de detención, dependiendo del diseño del motor.  
+3. Si el programa está asociado a cuando se inicia el proceso, envíe un objeto de evento [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) al SDM para notificar al IDE del nuevo subproceso. Este evento puede ser un evento de detención, dependiendo del diseño del motor.  
   
-4. Enviar una [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) objeto event para el SDM cuando el programa que se está depurando se termina de cargar o cuando se completa la asociación al programa. Este evento debe ser un evento de detención.  
+4. Envíe un objeto de evento [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) al SDM cuando el programa que se está depurando termine de cargarse o cuando se complete la asociación con el programa. Este evento debe ser un evento de detención.  
   
-5. Si se inicia la aplicación que se desea depurar, envíe un [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) objeto event para el SDM cuando la primera instrucción de código en la arquitectura en tiempo de ejecución que se va a ejecutar. Este evento siempre es un evento de detención. Cuando a la sesión de depuración, el IDE se detiene en este evento.  
+5. Si se inicia la aplicación que se va a depurar, envíe un objeto de evento [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) al SDM cuando la primera instrucción del código de la arquitectura en tiempo de ejecución esté a punto de ejecutarse. Este evento siempre es un evento de detención. Al entrar en la sesión de depuración, el IDE se detiene en este evento.  
   
 > [!NOTE]
-> Muchos lenguajes usan inicializadores globales o funciones externas precompiladas (desde la biblioteca de CRT o _Main) al principio de su código. Si el idioma del programa que está depurando contiene cualquiera de estos tipos de elementos antes del punto de entrada inicial, a continuación, se ejecuta este código y se envía el evento de punto de entrada cuando el usuario punto de entrada, tales como **principal** o `WinMain`, se ha alcanzado.  
+> Muchos lenguajes utilizan inicializadores globales o funciones externas precompiladas (de la biblioteca CRT o _Main) al principio de su código. Si el idioma del programa que se está depurando contiene cualquiera de estos tipos de elementos antes del punto de entrada inicial, se ejecuta este código y se envía el evento de punto de entrada cuando se alcanza el punto de entrada del usuario, como **Main** o `WinMain` ,.  
   
-## <a name="see-also"></a>Vea también  
- [Habilitación de un programa que se desea depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>Consulte también  
+ [Habilitación de un programa que se va a depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

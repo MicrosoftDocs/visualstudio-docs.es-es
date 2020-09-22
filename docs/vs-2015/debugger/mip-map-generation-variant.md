@@ -1,5 +1,5 @@
 ---
-title: Variante de generación MIP-map | Microsoft Docs
+title: Variante de generación de asignación de MIP | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383958"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843055"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map (Variante de generación)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,12 +65,12 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- Para crear una textura que tenga una cadena de MIP completa, establezca `D3D11_TEXTURE2D_DESC::MipLevels` en 0. El número de niveles de mip en una cadena de mip completa es floor(log2(n) + 1), donde n es la mayor dimensión de la textura.  
+ Para crear una textura que tenga una cadena de MIP completa, establezca `D3D11_TEXTURE2D_DESC::MipLevels` en 0. El número de niveles de MIP en una cadena de MIP completa es floor(log2(n) + 1), donde n es la dimensión más grande de la textura.  
   
  Recuerde que cuando proporciona datos iniciales de `CreateTexture2D`, debe proporcionar un objeto D3D11_SUBRESOURCE_DATA para cada nivel de MIP.  
   
 > [!NOTE]
 > Si desea proporcionar sus propios contenidos de nivel de MIP en lugar de generarlos automáticamente, debe crear sus texturas utilizando un editor de imágenes que sea compatible con las texturas con asignación de MIP, cargar el archivo y pasar los niveles de MIP a `CreateTexture2D`.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Variante de dimensiones de textura Mitad/cuarto](../debugger/half-quarter-texture-dimensions-variant.md)

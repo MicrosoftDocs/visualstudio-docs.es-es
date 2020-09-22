@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+title: IDebugProgramNode2::D etachDebugger_V7 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25c60bc42895a0527f1638dada5a28a1631314e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417882"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842790"
 ---
-# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+# <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-EN DESUSO. NO USE.  
+En desuso. NO USE.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,14 +38,14 @@ int DetachDebugger_V7 ();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Siempre debe devolver una implementación `E_NOTIMPL`.  
+ Una implementación siempre debe devolver `E_NOTIMPL` .  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Notas  
   
 > [!WARNING]
-> Como de [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], este método ya no se usa y siempre debe devolver `E_NOTIMPL`.  
+> A partir de [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] , este método ya no se utiliza y siempre debe devolver `E_NOTIMPL` .  
   
- Este método se llama cuando el depurador se cierra inesperadamente. Cuando se llama a este método, la DE debe reanudarse el programa como si el usuario separa de él. No hay más eventos de depuración se deben enviar. El programa debe estar en un estado donde adjuntable desde otra instancia del depurador.  
+ Se llama a este método cuando el depurador se cierra inesperadamente. Cuando se llama a este método, el DE debe reanudar el programa como si el usuario lo desasociara. No se deben enviar más eventos de depuración. El programa debe estar en un estado en el que se pueda adjuntar desde otra instancia del depurador.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

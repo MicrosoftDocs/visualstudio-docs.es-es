@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9000a4d0a65fd450e3ef655e6b646990f682ba9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837920"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843381"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el valor de una constante.  
@@ -35,16 +35,16 @@ HRESULT get_value ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [in, out] Un `VARIANT` objeto que se rellena con el valor de una constante.  
+ [in, out] `VARIANT` Objeto que se rellena con el valor de una constante.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="remarks"></a>Comentarios  
- La variante proporcionada debe inicializarse antes de pasarla a este método. Para obtener más información, vea el ejemplo.  
+## <a name="remarks"></a>Notas  
+ La variante proporcionada debe inicializarse antes de pasarse a este método. Para obtener más información, vea el ejemplo.  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -71,5 +71,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

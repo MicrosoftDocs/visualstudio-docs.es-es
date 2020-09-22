@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Adjuntar el Profiler a un servicio .NET para recopilar datos de memoria mediante la línea de comandos | Documentos de Microsoft
+title: 'Cómo: Adjuntar el generador de perfiles a un servicio .NET para recopilar datos de memoria mediante la línea de comandos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a1601b855cfc895aa01c6b72cbbe36b59980bd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432900"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842902"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a un servicio .NET para recopilar datos de memoria mediante la línea de comandos
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a un servicio .NET para recopilar datos de memoria utilizando la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo usar las herramientas de la línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para adjuntar el generador de perfiles a un servicio de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y recopilar datos de memoria. Puede recopilar datos sobre el número y tamaño de asignaciones de memoria, así como recopilar datos sobre la duración de objetos de memoria.  
@@ -53,7 +53,7 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
      **/globalsamplegclife**  
      Habilita la recopilación tanto de datos de asignación de memoria como de datos de duración de objetos.  
 
-   - La opción **/samplelineoff** deshabilita la recopilación de datos de número de línea de código fuente.  
+   - La opción **/samplelineoff** deshabilita la recolección de datos de número de línea de código fuente.  
 
 4. Reinicie el equipo para establecer la nueva configuración de entorno.  
 
@@ -63,11 +63,11 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
 7. Inicie el generador de perfiles. Tipo:  
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+    **VSPerfCmd**  [/Start](../profiling/start.md) **: sample**  [/Output](../profiling/output.md) **:** `OutputFile` [ `Options` ]  
 
    - La opción **/start:sample** inicializa el generador de perfiles.  
 
-   - La opción **/output:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).  
+   - La opción **/output:** `OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).  
 
      Puede usar una o varias de las opciones siguientes con la opción **/start:sample**.  
 
@@ -76,21 +76,21 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
    |                                 Opción                                  |                                                                                                                                                   Descripción                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                      Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso. Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.                       |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` |                      Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso. Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.                       |
    |              [/crosssession](../profiling/crosssession.md)              | Habilita la generación de perfiles de procesos en otros inicios de sesión. Esta opción es necesaria si la aplicación ASP.NET se ejecuta en otra sesión. El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**. |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                                                    Especifica el dominio opcional y nombre de usuario de la cuenta de inicio de sesión bajo la que se ejecuta el servicio. La cuenta de inicio de sesión se muestra en la columna Iniciar sesión como del Administrador de control de servicios de Windows.                                                     |
-   |          [/crosssession&#124;cs](../profiling/crosssession.md)          |                                                                                                                             Habilita la generación de perfiles de procesos en otros inicios de sesión.                                                                                                                              |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` |                                                    Especifica el dominio opcional y nombre de usuario de la cuenta de inicio de sesión bajo la que se ejecuta el servicio. La cuenta de inicio de sesión se muestra en la columna Iniciar sesión como del Administrador de control de servicios de Windows.                                                     |
+   |          [/CrossSession&#124;CS](../profiling/crosssession.md)          |                                                                                                                             Habilita la generación de perfiles de procesos en otros inicios de sesión.                                                                                                                              |
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                    Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles.                                                                                                                     |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms.                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.                                                                                     |
 
 8. Adjunte el generador de perfiles al servicio. Tipo:  
 
-    **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+    **VSPerfCmd**[/Attach](../profiling/attach.md) **:**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**:** `Version` ]    
 
    - Especifique el identificador del proceso o el nombre del proceso del servicio. Puede ver los nombres e identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
 
-   - **targetclr:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Opcional.  
+   - **targetclr:** `Version` Especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del Runtime en una aplicación. Opcional.  
 
 ## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
  Mientras se está ejecutando el servicio, puede usar las opciones de **VSPerfCmd.exe** para detener e iniciar la escritura de datos en el archivo de datos del generador de perfiles. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución del programa, como por ejemplo el inicio o el cierre de una aplicación.  
@@ -101,12 +101,12 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
     |Opción|Descripción|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|  
-    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por el identificador de proceso o por el nombre de proceso. **/detach** detiene la recopilación de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|  
+    |**/Attach:**{ `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[: { `PID`&#124;`ProcName` }]|**/attach** inicia la recolección de datos para el proceso especificado por el identificador de proceso o por el nombre de proceso. **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica un proceso específico.|  
 
 ## <a name="ending-the-profiling-session"></a>Finalizar la sesión de generación de perfiles  
- Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Puede detener la recopilación de datos de una aplicación de generación de perfiles con el método de muestreo deteniendo el servicio o llamando a la opción **VSPerfCmd /detach**. Después, llame a la opción [/shutdown](../profiling/shutdown.md) de **VSPerfCmd** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /globaloff** borra las variables de entorno de generación de perfiles, pero la configuración del sistema no se restablece hasta que se reinicia el equipo.  
+ Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Puede detener la recopilación de datos de una aplicación de generación de perfiles con el método de muestreo deteniendo el servicio o llamando a la opción **VSPerfCmd /detach**. Después, llame a la opción **VSPerfCmd** [/shutdown](../profiling/shutdown.md) para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /globaloff** borra las variables de entorno de generación de perfiles, pero la configuración del sistema no se restablece hasta que se reinicia el equipo.  
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
@@ -114,7 +114,7 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
     - Detenga el servicio.  
 
-         -o bien-  
+         o bien  
 
     - Escriba **VSPerfCmd /detach**  
 
@@ -128,6 +128,6 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
 4. Reinicie el equipo.  
 
-## <a name="see-also"></a>Vea también  
- [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
+## <a name="see-also"></a>Consulte también  
+ [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
  [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)

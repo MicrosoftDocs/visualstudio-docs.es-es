@@ -1,5 +1,5 @@
 ---
-title: Configuración para la compilación de proyecto | Microsoft Docs
+title: Configuración del proyecto para compilar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,54 +12,54 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 953a02c27f40e92c41d2e43bc818727118eb0a27
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434849"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842642"
 ---
 # <a name="project-configuration-for-building"></a>Configuración del proyecto para la compilación
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La lista de configuraciones de soluciones para una solución determinada se administra mediante el cuadro de diálogo de configuraciones de soluciones.  
+La lista de configuraciones de soluciones de una solución determinada se administra mediante el cuadro de diálogo Configuraciones de soluciones.  
   
- Un usuario puede crear configuraciones de solución adicionales, cada uno con su propio nombre único. Cuando el usuario crea una nueva configuración de soluciones, el IDE tiene como valor predeterminado el nombre de configuración correspondiente en los proyectos o depuración si no existe ningún nombre correspondiente. El usuario puede cambiar la selección para satisfacer necesidades específicas, si es necesario. La única excepción a este comportamiento es cuando el proyecto admite una configuración que coincida con el nombre de la nueva configuración de solución. Por ejemplo, suponga que una solución contiene Proyecto1 y Proyecto2. Project1 tiene configuraciones de proyecto MyConfig1, comercial y depuración. Project2 tiene configuraciones de proyecto MyConfig2, comercial y depuración.  
+ Un usuario puede crear configuraciones de soluciones adicionales, cada una con su propio nombre único. Cuando el usuario crea una nueva configuración de soluciones, el IDE tiene como valor predeterminado el nombre de configuración correspondiente en los proyectos o Debug si no existe ningún nombre correspondiente. Si es necesario, el usuario puede cambiar la selección para cumplir requisitos específicos. La única excepción a este comportamiento es cuando el proyecto admite una configuración que coincida con el nombre de la nueva configuración de soluciones. Por ejemplo, suponga que una solución contiene Project1 y Proyecto2. Project1 tiene configuraciones de proyecto debug, Retail y MyConfig1. Proyecto2 tiene configuraciones de proyecto debug, Retail y MyConfig2.  
   
- Si el usuario crea una nueva configuración de solución denominada MyConfig2, Proyecto1 enlaza su configuración de depuración para la configuración de soluciones de forma predeterminada. Project2 también enlaza su configuración MyConfig2 a la configuración de soluciones de forma predeterminada.  
+ Si el usuario crea una nueva configuración de soluciones denominada MyConfig2, Project1 enlaza la configuración de depuración a la configuración de la solución de forma predeterminada. Proyecto2 también enlaza su configuración de MyConfig2 a la configuración de la solución de forma predeterminada.  
   
 > [!NOTE]
-> Enlace distingue mayúsculas de minúsculas.  
+> El enlace no distingue mayúsculas de minúsculas.  
   
- Cuando el usuario selecciona el **selección múltiple** elemento en la lista desplegable de configuración, el entorno muestra un cuadro de diálogo que proporciona la lista de configuraciones disponibles.  
+ Cuando el usuario selecciona el elemento de **selección múltiple** en la lista desplegable configuración, el entorno muestra un cuadro de diálogo que proporciona la lista de configuraciones disponibles.  
   
  ![Varias configuraciones](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
 Varias configuraciones  
   
- En este cuadro de diálogo, el usuario puede seleccionar una o varias configuraciones. Una vez seleccionado, los valores de propiedad que se muestra en el cuadro de diálogo páginas de propiedades reflejan la intersección de los valores de las configuraciones seleccionadas.  
+ Dentro de este cuadro de diálogo, el usuario puede seleccionar una o varias configuraciones. Una vez seleccionados, los valores de propiedad mostrados en el cuadro de diálogo páginas de propiedades reflejan la intersección de los valores de las configuraciones seleccionadas.  
   
- Consulte [configuración de la solución](../../extensibility/internals/solution-configuration.md) para obtener información relativa a la adición y cambiar el nombre de las configuraciones de soluciones y proyectos.  
+ Vea [configuración de soluciones](../../extensibility/internals/solution-configuration.md) para obtener información sobre cómo agregar y cambiar el nombre de configuraciones para soluciones y proyectos.  
   
- Dependencias del proyecto y el orden de compilación sean independientes de la configuración de solución: es decir, solo puede establecer árbol una dependencia para todos los proyectos de la solución. Con el botón secundario en la solución o proyecto y seleccionando el **dependencias del proyecto** o **orden de compilación de proyecto** opción abre el **dependencias del proyecto** cuadro de diálogo. También se puede abrir desde el **proyecto** menú.  
+ Las dependencias del proyecto y el orden de compilación son independientes de la configuración de la solución: es decir, solo se puede configurar un árbol de dependencia para todos los proyectos de la solución. Al hacer clic con el botón derecho en la solución o proyecto y seleccionar la opción **dependencias del proyecto** o **orden de compilación del proyecto** , se abre el cuadro de diálogo **dependencias del proyecto** . También se puede abrir desde el menú **proyecto** .  
   
- ![Project Dependencies](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Dependencias del proyecto](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Dependencias del proyecto  
   
- Dependencias del proyecto determinan el orden en que se generan los proyectos. Utilice la pestaña de orden de compilación en el cuadro de diálogo para ver el orden exacto en el que compilar proyectos dentro de una solución y use la ficha dependencias para modificar el orden de compilación.  
+ Las dependencias del proyecto determinan el orden en el que se compilan los proyectos. Use la pestaña orden de compilación del cuadro de diálogo para ver el orden exacto en que se compilarán los proyectos de una solución y use la pestaña dependencias para modificar el orden de compilación.  
   
 > [!NOTE]
-> En la lista de los proyectos que tienen sus casillas activadas pero atenuadas se han agregado por el entorno debido a dependencias explícitas, especificado por el <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> e interfaces, no se puede cambiar. Por ejemplo, agregando una referencia de proyecto desde un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] proyecto a otro proyecto agrega automáticamente una dependencia de compilación que solo se puede quitar mediante la eliminación de la referencia. No se puede seleccionar proyectos cuyas casillas de verificación están desactivadas y aparecen atenuadas porque si lo hace, crearía un bucle de dependencia (por ejemplo, sería depende Project2 Project1 y Project2 sería depende Project1), que se detendría la generación.  
+> Los proyectos de la lista que tienen las casillas de verificación seleccionadas pero que aparecen atenuados se han agregado en el entorno debido a las dependencias explícitas especificadas por las <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces o, y no se pueden cambiar. Por ejemplo, al agregar una referencia de proyecto de un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] proyecto a otro proyecto, se agrega automáticamente una dependencia de compilación que solo se puede quitar eliminando la referencia. Los proyectos cuyas casillas están desactivadas y aparecen atenuadas no se pueden seleccionar porque al hacerlo se crearía un bucle de dependencia (por ejemplo, Project1 dependería de Proyecto2 y Proyecto2 dependería de Project1), lo que paralizaría la compilación.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] los procesos de compilación incluyen las compilación típico y operaciones de vínculo que se invocan con un solo comando de compilación. También se admiten otros dos procesos de compilación: una operación de limpieza para eliminar todos los elementos de salida de una compilación anterior y una comprobación para determinar si ha cambiado un elemento de salida en una configuración actualizada.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] los procesos de compilación incluyen las operaciones de compilación y vinculación típicas que se invocan con un solo comando de compilación. También se pueden admitir otros dos procesos de compilación: una operación de limpieza para eliminar todos los elementos de salida de una compilación anterior y una comprobación actualizada para determinar si un elemento de salida de una configuración ha cambiado.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> los objetos devuelven correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (devuelto desde <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) para administrar sus procesos de compilación. Para informar del estado de una operación de compilación mientras se lleva a cabo, las configuraciones de realizan llamadas a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, una interfaz implementada por el entorno y cualquier otro objeto que está interesado en eventos de estado de compilación.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> los objetos devuelven un correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (devuelto de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> ) para administrar sus procesos de compilación. Para notificar el estado de una operación de compilación mientras se está produciendo, las configuraciones realizan llamadas a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> , una interfaz implementada por el entorno y cualquier otro objeto interesado en los eventos de estado de la compilación.  
   
- Una vez compilada, opciones de configuración pueden utilizarse para determinar si se puede ejecutar bajo el control del depurador. Implementan configuraciones <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> para admitir la depuración.  
+ Una vez creado, se pueden usar los valores de configuración para determinar si se pueden ejecutar o no bajo el control del depurador. Las configuraciones implementan <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> para admitir la depuración.  
   
- Después de implementar las dependencias del proyecto, puede manipular mediante programación las dependencias a través del modelo de automatización. Se llama a <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> en el modelo de automatización. No hay ninguna interfaz de nivel de API de VSIP disponible que permiten la manipulación directa de las configuraciones de administrador de compilación de soluciones y sus propiedades.  
+ Después de implementar las dependencias del proyecto, puede manipular mediante programación las dependencias a través del modelo de automatización. Se llama a <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> en el modelo de automatización. No hay ninguna interfaz de nivel de API de VSIP disponible que permita la manipulación directa de las configuraciones del administrador de compilación de soluciones y sus propiedades.  
   
- Además, puede proporcionar una cuadrícula en la ventana de las dependencias del proyecto. Para obtener más información, consulte [Mostrar cuadrícula de propiedades](../../extensibility/internals/properties-display-grid.md).  
+ Además, puede proporcionar una cuadrícula en la ventana dependencias del proyecto. Para obtener más información, consulte [propiedades Mostrar cuadrícula](../../extensibility/internals/properties-display-grid.md).  
   
-## <a name="see-also"></a>Vea también  
- [Administración de las opciones de configuración](../../extensibility/internals/managing-configuration-options.md)   
- [Configuración del proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
+## <a name="see-also"></a>Consulte también  
+ [Administrar opciones de configuración](../../extensibility/internals/managing-configuration-options.md)   
+ [Configuración de proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [Configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md)

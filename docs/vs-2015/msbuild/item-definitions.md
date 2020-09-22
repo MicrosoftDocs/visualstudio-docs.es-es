@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433589"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842338"
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "63433589"
   
 - Metadatos conocidos en un elemento de un ItemDefinitionGroup  
   
-- Sección CDATA\<\!\[CDATA\[no se analiza nada de lo que se escriba aquí\]\]\>  
+- Sección CDATA \<\!\[CDATA\[anything here is not parsed\]\]\>  
   
 > [!NOTE]
 > Los metadatos de elemento de un ItemGroup no son útiles en una declaración de metadatos de ItemDefinitionGroup porque los elementos de ItemDefinitionGroup se procesan antes que los elementos de ItemGroup.  
@@ -239,5 +239,5 @@ ms.locfileid: "63433589"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Procesamiento por lotes](../msbuild/msbuild-batching.md)

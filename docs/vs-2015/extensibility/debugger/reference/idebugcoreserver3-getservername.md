@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerName | Microsoft Docs
+title: 'IDebugCoreServer3:: GetServerName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 886cfbf95216064764e9f5b3e48d092d3fecc047
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445265"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843411"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ int GetServerName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrName`  
- [out] Devuelve el nombre del servidor.  
+ enuncia Devuelve el nombre del servidor.  
   
 > [!NOTE]
-> El llamador es responsable de liberar la cadena.  
+> El autor de la llamada es responsable de liberar la cadena.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve el código de error.  
   
-## <a name="remarks"></a>Comentarios  
- Para un nombre descriptivo del servidor, llame a la [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) método.  
+## <a name="remarks"></a>Notas  
+ Para un nombre descriptivo del servidor, llame al método [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) .  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)

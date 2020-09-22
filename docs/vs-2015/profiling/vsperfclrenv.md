@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446689"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843199"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ VSPerfCmd /Attach:MyService.exe
   
  En la siguiente tabla se describen las opciones de VSPerfCLREnv para la generación de perfiles de instrumentación:  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**TraceOn**|Permite generar perfiles mediante el método de instrumentación. No permite la generación de perfiles de asignación de memoria o recopilar datos de duración de objetos.|  
 |**TraceGC**|Permite generar perfiles de asignación de memoria mediante el método de instrumentación. No permite recopilar datos de duración de objetos.|  
@@ -77,7 +77,7 @@ VSPerfCmd /Attach:MyService.exe
   
  En la siguiente tabla se describen las opciones de VSPerfCLREnv para la generación de perfiles de muestreo:  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**SampleOn**|Permite generar perfiles mediante el método de muestreo. No permite la generación de perfiles de asignación de memoria o recopilar datos de duración de objetos.|  
 |**SampleGC**|Permite generar perfiles de asignación de memoria mediante el método de muestreo. No permite recopilar datos de duración de objetos.|  
@@ -88,7 +88,7 @@ VSPerfCmd /Attach:MyService.exe
   
  Para generar perfiles de un servicio administrado como una aplicación web ASP.NET que inicia el sistema operativo en lugar del usuario, utilice las opciones de generación de perfiles global de las opciones de VSPerfCLREnv. En la siguiente tabla se describen las versiones globales de las opciones de VSPerfCLREnv. Estas opciones establecen las variables de entorno adecuadas en el registro.  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**GlobalTraceOn**|Permite generar perfiles globales mediante el método de instrumentación. No recopila eventos de asignación de memoria ni datos de duración de objetos.|  
 |**GlobalTraceGC**|Permite generar perfiles de asignación de memoria globales mediante el método de instrumentación. No permite recopilar datos de duración de objetos.|  
@@ -101,15 +101,15 @@ VSPerfCmd /Attach:MyService.exe
   
  Cuando haya terminado de generar perfiles de la aplicación administrada, utilice una de las siguientes opciones para eliminar las variables de entorno que agregó VSPerfCLREnv. En la siguiente tabla se describe cómo eliminar las variables de entorno estándar y globales:  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**Off**|Elimina las variables de entorno de generación de perfiles de .NET estándar. Utilice esta opción cuando se hayan utilizado las opciones de VSPerfClrEnv que no sean globales para establecer las variables de entorno del generador de perfiles.|  
 |**GlobalOff**|Elimina las variables de entorno de generación de perfiles de .NET global. Utilice esta opción cuando el sistema operativo, y no el generador de perfiles, haya iniciado la aplicación.|  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  Estas opciones no son necesarias para la generación de perfiles de una aplicación administrada si la aplicación se inicia mediante el explorador de rendimiento en el IDE. El explorador de rendimiento establece toda la configuración de entorno necesaria en su lugar.  
   
  Si no se estableció el entorno correcto durante el proceso de generación de perfiles, se emite una advertencia durante el análisis y los nombres de la función administrada no se resolverán correctamente.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Establecer permisos | Microsoft Docs
+title: 'Cómo: Establecer permisos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440592"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843404"
 ---
-# <a name="how-to-set-permissions"></a>Procedimiento Establecer permisos
+# <a name="how-to-set-permissions"></a>Cómo: Establecer permisos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tema describe cómo un administrador de un equipo concede los permisos de seguridad necesarios para la generación de perfiles a un usuario o grupo que no tiene permisos de administrador en ese equipo.  
@@ -70,13 +70,13 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
   
 2. Haga clic con el botón derecho en la carpeta y después haga clic en **Propiedades**.  
   
-     Aparece el cuadro de diálogo **\<Nombre de carpeta > Propiedades**.  
+     Aparecerá el cuadro de diálogo **Propiedades de \<folder name>** .  
   
 3. Haga clic en la pestaña **Seguridad** .  
   
 4. Haga clic en el nombre de la cuenta de usuario en el cuadro **Grupo o nombres de usuario**.  
   
-5. En el cuadro **Permisos para \<nombre de usuario >**, seleccione la casilla **Control total**.  
+5. En el cuadro **Permisos para \<user name>** , active la casilla **Control total**.  
   
 6. Haga clic en **Aceptar**.  
   
@@ -110,7 +110,7 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
    ```  
   
-    Este comando concede a la cuenta de \<nombre de usuario > o \<nombre del grupo> acceso a las herramientas de generación de perfiles. La opción \<right> determina la funcionalidad de generación de perfiles a la que el usuario puede tener acceso. La opción \<right> puede ser uno o varios de los siguientes valores:  
+    Este comando concede a la cuenta de \<user name> o \<group name> acceso a las herramientas de generación de perfiles. La opción \<right> determina la funcionalidad de generación de perfiles a la que el usuario puede acceder. La opción \<right> puede ser uno o varios de los valores siguientes:  
   
    - FullAccess: permite el acceso a todos los métodos de generación de perfiles, incluyendo la recopilación de datos de rendimiento de servicios, muestreo y generación de perfiles entre sesiones.  
   
@@ -126,7 +126,7 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
   
    Después de iniciar sesión, los usuarios especificados podrán usar las herramientas de generación de perfiles sin permisos de administrador.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+ [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md)

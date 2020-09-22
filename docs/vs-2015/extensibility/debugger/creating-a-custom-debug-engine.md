@@ -1,5 +1,5 @@
 ---
-title: Creación de un archivo de motor de depuración | Microsoft Docs
+title: Crear un motor de depuración personalizado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,55 +13,55 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b2a73dfae7772d8edec076238704aa1b52c9b028
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383440"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843166"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Creación de un motor de depuración personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un motor de depuración (DE) es un componente que permite la depuración de las arquitecturas de tiempo de ejecución determinadas. Normalmente hay solo una implementación DE cada entorno de tiempo de ejecución.  
+Un motor de depuración (DE) es un componente que permite depurar determinadas arquitecturas en tiempo de ejecución. Normalmente solo hay una implementación DE para cada entorno en tiempo de ejecución.  
   
 > [!NOTE]
-> Aunque hay otras implementaciones DE para Transact-SQL y JScript, VBScript y JScript comparten una única DE.  
+> Aunque hay implementaciones independientes de para Transact-SQL y JScript, VBScript y JScript comparten un único DE.  
   
- A DE funciona con el sistema de operación o intérprete para proporcionar servicios depuración como la evaluación de expresión, los puntos de interrupción y control de ejecución. Estos servicios se implementan a través de las interfaces DE y pueden hacer que al depurador en la transición entre distintos modos de funcionamiento. Para obtener más información, consulte [modos operativos](../../extensibility/debugger/operational-modes.md).  
+ Una DE funciona con el intérprete o el sistema operativo para proporcionar servicios de depuración como control de la ejecución, puntos de interrupción y evaluación de expresiones. Estos servicios se implementan a través DE las interfaces DE y pueden hacer que el depurador pase de un modo operativo a otro. Para obtener más información, vea [modos operativos](../../extensibility/debugger/operational-modes.md).  
   
- Creación de una DE consta de los pasos siguientes:  
+ La creación de un DE consta de los siguientes pasos:  
   
 1. Registrar un DE con Visual Studio  
   
-2. Habilitación de un programa que se desea depurar  
+2. Habilitar la depuración de un programa  
   
-3. Evaluación de control y el estado de ejecución  
+3. Control de ejecución y evaluación del estado  
   
 4. Envío de eventos  
   
-5. Terminación y separado  
+5. Terminación y desasociación  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Registro de un motor de depuración personalizado](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
- Explica los pasos necesarios para registrar un motor de depuración con Visual Studio para que se puede usar.  
+ Explica los pasos necesarios para registrar un motor de depuración con Visual Studio para que se pueda usar.  
   
- [Habilitación de un programa que se desea depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
- Se explica que antes de que la DE poder depurar un programa, primero debe iniciar la DE o adjuntarlo a un programa existente.  
+ [Habilitación de un programa que se va a depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
+ Explica que antes DE que el DE pueda depurar un programa, primero debe iniciar el DE o adjuntarlo a un programa existente.  
   
  [Control de ejecución y evaluación de estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
- Describe por qué depurar una aplicación requiere la implementación de características de control de ejecución.  
+ Describe por qué la depuración de una aplicación requiere la implementación de características de control de ejecución.  
   
- [Envío de eventos](../../extensibility/debugger/sending-events.md)  
- Se describe la comunicación entre el depurador y la DE como un modelo de eventos en función de DCOM.  
+ [Enviar eventos](../../extensibility/debugger/sending-events.md)  
+ Describe la comunicación entre el depurador y el DE como un modelo de eventos basado en DCOM.  
   
- [Terminación y separado](../../extensibility/debugger/termination-and-detaching.md)  
- Explica cómo lograr la terminación normal, lo que significa que no hay ningún puntos de interrupción, excepciones, errores de tiempo de ejecución o bucles infinitos en la aplicación que se desea depurar.  
+ [Terminación y desasociación](../../extensibility/debugger/termination-and-detaching.md)  
+ Explica cómo lograr la terminación normal, lo que significa que no hay puntos de interrupción, excepciones, errores en tiempo de ejecución ni bucles infinitos en la aplicación que se va a depurar.  
   
  [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)  
  Documenta el orden de llamada de los eventos que se producen en una sesión de depuración.  
   
  [Cómo: Depurar un motor de depuración personalizado](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
- Explica cómo depurar una personalizada DE.  
+ Explica cómo depurar un personalizado DE.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

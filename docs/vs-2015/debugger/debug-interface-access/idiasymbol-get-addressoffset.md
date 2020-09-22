@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dfa54e09baa3cec238eb892599a8e1bd5910e17
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64787021"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842455"
 ---
-# <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
+# <a name="idiasymbolget_addressoffset"></a>IDiaSymbol::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera la parte del ajuste de una dirección de ubicación. Cuando utilice el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) está establecido en `LocIsStatic`.  
+Recupera la parte de desplazamiento de una ubicación de direcciones. Se usa cuando la [enumeración LocationType (](../../debugger/debug-interface-access/locationtype.md) se establece en `LocIsStatic` .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,29 +35,29 @@ HRESULT get_addressOffset ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve la parte del ajuste de una dirección de ubicación.  
+ enuncia Devuelve la parte de desplazamiento de una ubicación de dirección.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="remarks"></a>Comentarios  
- Los miembros estáticos ubicados en un archivo DLL externo, el desplazamiento devuelto por este método puede ser 0 como este método se basa en obtener la dirección virtual del miembro. Las direcciones virtuales son válidas solo si el [Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método en el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaz se ha llamado con un parámetro distinto de cero que especifica la dirección de carga del archivo DLL.  
+## <a name="remarks"></a>Notas  
+ En el caso de los miembros estáticos que se encuentran en un archivo DLL externo, el desplazamiento devuelto por este método puede ser 0, ya que este método se basa en obtener la dirección virtual del miembro. Las direcciones virtuales solo son válidas si se ha llamado al método [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) de la interfaz [IDiaSession](../../debugger/debug-interface-access/idiasession.md) con un parámetro distinto de cero que especifica la dirección de carga del archivo dll.  
   
- Para obtener la parte de la sección de una dirección, llame a la [Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) método.  
+ Para obtener la parte de la sección de una dirección, llame al método [IDiaSymbol:: get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) .  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
+|Versión:|SDK de DIA v 7.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)   
- [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
+ [Enumeración LocationType (](../../debugger/debug-interface-access/locationtype.md)   
+ [IDiaSymbol:: get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
+ [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

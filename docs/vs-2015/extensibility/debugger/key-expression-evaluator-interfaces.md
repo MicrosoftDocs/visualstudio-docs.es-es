@@ -1,5 +1,5 @@
 ---
-title: La clave de las Interfaces de evaluador de expresiones | Microsoft Docs
+title: Interfaces del evaluador de expresiones clave | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,51 +12,51 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b9c01c59e732b777967cf49a61f17305f666325f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430186"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842775"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Interfaces de evaluador de expresiones de clave
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> En Visual Studio 2015, esta manera de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte [evaluadores](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) de expresiones CLR y [ejemplo de evaluador de expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Al escribir un evaluador de expresiones (EE), junto con el contexto de evaluación, debe estar familiarizado con las interfaces siguientes.  
+ Al escribir un evaluador de expresiones (EE), junto con el contexto de evaluación, debería estar familiarizado con las interfaces siguientes.  
   
 ## <a name="interface-descriptions"></a>Descripciones de interfaz  
   
 - [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
-     Tiene un único método, [GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md), que obtiene una estructura de datos que representa el punto de ejecución actual. Esta estructura de datos es uno de los tres argumentos que pasa el motor de depuración (DE) a la [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) método para evaluar una expresión. Esta interfaz se implementa normalmente por el proveedor de símbolos.  
+     Tiene un único método, [GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md), que obtiene una estructura de datos que representa el punto de ejecución actual. Esta estructura de datos es uno de los tres argumentos que el motor DE depuración (DE) pasa al método [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) para evaluar una expresión. Normalmente, el proveedor de símbolos implementa esta interfaz.  
   
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
-     Tiene la [enlazar](../../extensibility/debugger/reference/idebugbinder-bind.md) método, que obtiene el área de memoria que contiene el valor actual de un símbolo. Proporciona tanto el método que lo contiene, representado por un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto y el símbolo, representado por un [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objeto, `IDebugBinder::Bind` devuelve el valor del símbolo. `IDebugBinder` Normalmente se implementa por la DE.  
+     Tiene el método [BIND](../../extensibility/debugger/reference/idebugbinder-bind.md) , que obtiene el área de memoria que contiene el valor actual de un símbolo. Dado el método contenedor, representado por un objeto [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) , y el propio símbolo, representado por un objeto [IDebugField](../../extensibility/debugger/reference/idebugfield.md) , `IDebugBinder::Bind` devuelve el valor del símbolo. `IDebugBinder` se implementa normalmente por parte DE.  
   
 - [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
-     Representa un tipo de datos simple. Para los tipos más complejos, como matrices y métodos, use la clase derivada [IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md) y [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) interfaces, respectivamente. [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) es otra interfaz derivada importante que representa los símbolos que contiene otros símbolos, como métodos o clases. El `IDebugField` interfaz (y sus derivados) normalmente se implementan mediante el proveedor de símbolos.  
+     Representa un tipo de datos simple. Para tipos más complejos, como matrices y métodos, use las interfaces derivadas [IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md) y [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) , respectivamente. [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) es otra interfaz derivada importante que representa símbolos que contienen otros símbolos, como métodos o clases. Normalmente, el `IDebugField` proveedor de símbolos implementa la interfaz (y sus derivados).  
   
-     Un `IDebugField` objeto se puede utilizar para buscar el nombre y tipo de un símbolo de y, junto con un [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) de objetos, se puede usar para encontrar su valor.  
+     Un `IDebugField` objeto se puede usar para buscar el nombre y el tipo de un símbolo y, junto con un objeto [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) , se puede usar para buscar su valor.  
   
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
-     Representa los bits reales del valor de tiempo de ejecución de un símbolo. [Enlazar](../../extensibility/debugger/reference/idebugbinder-bind.md) toma un [IDebugField](../../extensibility/debugger/reference/idebugfield.md) object, que representa un símbolo y devuelve un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto. El [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md) método devuelve el valor del símbolo en un búfer de memoria. A DE normalmente implementa esta interfaz para representar el valor de una propiedad en la memoria.  
+     Representa los bits reales del valor en tiempo de ejecución de un símbolo. [BIND](../../extensibility/debugger/reference/idebugbinder-bind.md) toma un objeto [IDebugField](../../extensibility/debugger/reference/idebugfield.md) , que representa un símbolo, y devuelve un objeto [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) . El método [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md) devuelve el valor del símbolo en un búfer de memoria. Un DE normalmente implementa esta interfaz para representar el valor de una propiedad en la memoria.  
   
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
-     Esta interfaz representa el evaluador de expresiones de sí mismo. El método clave es [analizar](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md), que devuelve un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) interfaz.  
+     Esta interfaz representa el evaluador de expresiones. El método clave es [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md), que devuelve una interfaz [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) .  
   
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
-     Esta interfaz representa una expresión analizada lista para ser evaluada. El método clave es [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) que devuelve un IDebugProperty2 que representa el valor y tipo de la expresión.  
+     Esta interfaz representa una expresión analizada lista para su evaluación. El método clave es [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , que devuelve un IDebugProperty2 que representa el valor y el tipo de la expresión.  
   
 - [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)  
   
-     Esta interfaz representa un valor y su tipo y es el resultado de evaluación de una expresión.  
+     Esta interfaz representa un valor y su tipo y es el resultado de una evaluación de expresión.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)

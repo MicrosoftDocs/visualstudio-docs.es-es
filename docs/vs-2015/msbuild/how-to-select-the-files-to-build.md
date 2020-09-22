@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437899"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842359"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
+# <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.  
@@ -172,6 +172,6 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Elementos](../msbuild/msbuild-items.md)

@@ -12,22 +12,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42cd353c216c21d14c4f6592da809c72acdba664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409404"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842803"
 ---
 # <a name="deleting-a-breakpoint"></a>Eliminación de un punto de interrupción
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-El siguiente describe el proceso al eliminar un punto de interrupción pendiente:  
+A continuación se describe el proceso al eliminar un punto de interrupción pendiente:  
   
 ## <a name="deletion-process"></a>Proceso de eliminación  
- El Administrador de depuración de la sesión (SDM) llama a la [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) método para quitar el punto de interrupción pendiente y enlazados todos los puntos de interrupción enlazado de él.  
+ El administrador de depuración de sesión (SDM) llama al método [IDebugPendingBreakpoint2::D iminar](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) para quitar el punto de interrupción pendiente y todos los puntos de interrupción enlazados enlazados a él.  
   
 > [!NOTE]
-> También se puede eliminar un punto de interrupción enlazado mediante una llamada a [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
+> Un solo punto de interrupción enlazado también puede eliminarse mediante una llamada a [IDebugBoundBreakpoint2::D iminar](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

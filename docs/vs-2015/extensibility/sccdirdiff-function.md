@@ -1,5 +1,5 @@
 ---
-title: SccDirDiff (función) | Microsoft Docs
+title: Función SccDirDiff | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432454"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842371"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta función muestra las diferencias entre el directorio local actual en el disco de cliente y el proyecto bajo control de código fuente correspondiente.  
+Esta función muestra las diferencias entre el directorio local actual en el disco del cliente y el proyecto correspondiente bajo control de código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,49 +38,49 @@ SCCRTN SccDirDiff(
   
 #### <a name="parameters"></a>Parámetros  
  pContext  
- [in] La estructura de contexto de complemento de control de origen.  
+ de Estructura de contexto del complemento de control de código fuente.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
+ de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.  
   
  lpDirName  
- [in] Ruta de acceso completa al directorio local para que se va a mostrar una diferencia visual.  
+ de Ruta de acceso completa al directorio local para el que se va a mostrar una diferencia visual.  
   
  dwFlags  
- [in] Marcas de comando (vea la sección Comentarios sección).  
+ de Marcas de comandos (vea la sección comentarios).  
   
  pvOptions  
- [in] Opciones de específicas del complemento de control de código fuente.  
+ de Opciones específicas del complemento de control de código fuente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:  
   
-|Valor|Descripción|  
+|Value|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|El directorio en el disco es el mismo que el proyecto en el control de código fuente.|  
-|SCC_I_FILESDIFFER|El directorio en el disco es diferente al proyecto de control de código fuente.|  
-|SCC_I_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
-|SCC_E_FILENOTCONTROLLED|El directorio no está bajo control de código fuente.|  
-|SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
+|SCC_OK|El directorio del disco es el mismo que el del proyecto en el control de código fuente.|  
+|SCC_I_FILESDIFFER|El directorio del disco es diferente del proyecto en el control de código fuente.|  
+|SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|  
+|SCC_E_FILENOTCONTROLLED|El directorio no está bajo el control de código fuente.|  
+|SCC_E_NOTAUTHORIZED|El usuario no tiene permiso para realizar esta operación.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|  
 |SCC_E_FILENOTEXIST|No se encontró el directorio local.|  
   
-## <a name="remarks"></a>Comentarios  
- Esta función se utiliza para indicar el control de código fuente para mostrar al usuario una lista de los cambios realizados en un directorio especificado. El complemento, su propia ventana, abre en un formato de su elección, para mostrar las diferencias entre el directorio del usuario en el disco y el proyecto bajo control de versiones correspondiente.  
+## <a name="remarks"></a>Notas  
+ Esta función se usa para indicar al complemento de control de código fuente que muestre al usuario una lista de cambios en un directorio especificado. El complemento abre su propia ventana, en el formato que elija, para mostrar las diferencias entre el directorio del usuario en el disco y el proyecto correspondiente bajo control de versiones.  
   
- Si el complemento admite ver una comparación de directorios en absoluto, debe admitir la comparación de directorios según el nombre de archivo incluso si no se admiten las opciones de "comparación de rápida".  
+ Si un complemento admite la comparación de directorios, debe admitir la comparación de directorios en función del nombre de archivo, incluso si no se admiten las opciones de "comparación rápida".  
   
 |`dwFlags`|Interpretación|  
 |---------------|--------------------|  
-|SCC_DIFF_IGNORECASE|Comparación entre mayúsculas y minúsculas (se puede usar para la comparación rápida o visual).|  
-|SCC_DIFF_IGNORESPACE|Omite los espacios en blanco (se puede usar para rápido diff u objeto visual).|  
-|SCC_DIFF_QD_CONTENTS|Si se admite el complemento de control de código fuente, en modo silencioso compara el directorio, byte a byte.|  
-|SCC_DIFF_QD_CHECKSUM|Si compatibles con el complemento, en modo silencioso compara el directorio a través de una suma de comprobación o, si no se admite, recurre a SCC_DIFF_QD_CONTENTS.|  
-|SCC_DIFF_QD_TIME|Si compatibles con el complemento, en modo silencioso compara el directorio a través de su marca de tiempo o, si no se admite, recurre a SCC_DIFF_QD_CHECKSUM o SCC_DIFF_QD_CONTENTS.|  
+|SCC_DIFF_IGNORECASE|Comparación sin distinción entre mayúsculas y minúsculas (se puede usar para diferencias rápidas u objetos visuales).|  
+|SCC_DIFF_IGNORESPACE|Omite el espacio en blanco (se puede usar para las diferencias rápidas o visuales).|  
+|SCC_DIFF_QD_CONTENTS|Si es compatible con el complemento de control de código fuente, compara de forma silenciosa el directorio, byte por byte.|  
+|SCC_DIFF_QD_CHECKSUM|Si es compatible con el complemento, compara de forma silenciosa el directorio a través de una suma de comprobación o, si no se admite, recurre a SCC_DIFF_QD_CONTENTS.|  
+|SCC_DIFF_QD_TIME|Si es compatible con el complemento, compara de forma silenciosa el directorio a través de su marca de tiempo, o bien, si no se admite, recurre a SCC_DIFF_QD_CHECKSUM o SCC_DIFF_QD_CONTENTS.|  
   
 > [!NOTE]
-> Esta función utiliza los mismos marcadores de comando como el [SccDiff](../extensibility/sccdiff-function.md). Sin embargo, puede elegir un complemento de control de origen no admite la operación de "diff-rápido" para los directorios.  
+> Esta función utiliza las mismas marcas de comando que [SccDiff](../extensibility/sccdiff-function.md). Sin embargo, un complemento de control de código fuente puede optar por no admitir la operación "comparación rápida" para los directorios.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

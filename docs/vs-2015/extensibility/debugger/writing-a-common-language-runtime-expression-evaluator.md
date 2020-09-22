@@ -13,46 +13,46 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 961a4d646a61fedda381f9451902b3bcdcc956d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435277"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843010"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Escritura de un evaluador de expresiones de Common Language Runtime
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> En Visual Studio 2015, esta manera de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte [evaluadores](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) de expresiones CLR y [ejemplo de evaluador de expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- El evaluador de expresiones (EE) es la parte de un motor de depuración (DE) que controla la sintaxis y semántica del lenguaje de programación que generó el código que se está depurando. Las expresiones deben evaluarse en el contexto de un lenguaje de programación. Por ejemplo, en algunos idiomas, la expresión "A + B" significa "la suma de A y B." En otros lenguajes, la misma expresión podría significar "A o b". Por lo tanto, otro EE debe estar escrita para cada lenguaje de programación que genera el código de objeto que se desea depurar en el IDE de Visual Studio.  
+ El evaluador de expresiones (EE) es la parte de un motor de depuración (DE) que controla la sintaxis y la semántica del lenguaje de programación que generó el código que se está depurando. Las expresiones deben evaluarse en el contexto de un lenguaje de programación. Por ejemplo, en algunos lenguajes, la expresión "A + B" significa "la suma de A y B". En otros lenguajes, la misma expresión podría significar "A o B". Por lo tanto, se debe escribir un EE independiente para cada lenguaje de programación que genera código de objeto que se va a depurar en el IDE de Visual Studio.  
   
- Algunos aspectos del paquete de depuración de Visual Studio deben interpretar el código en el contexto del lenguaje de programación. Por ejemplo, cuando la ejecución se detiene en un punto de interrupción, las expresiones que el usuario ha escrito en un **inspección** debe se evalúa y muestra la ventana. Además, el usuario puede cambiar el valor de una variable local para ello, escriba una expresión en un **inspección** ventana o en el **inmediato** ventana.  
+ Algunos aspectos del paquete de depuración de Visual Studio deben interpretar el código en el contexto del lenguaje de programación. Por ejemplo, cuando la ejecución se detiene en un punto de interrupción, las expresiones que el usuario ha escrito en una ventana de **inspección** deben evaluarse y mostrarse. Además, el usuario puede cambiar el valor de una variable local escribiendo una expresión en una ventana **inspección** o en la ventana **inmediato** .  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Common Language Runtime y la evaluación de expresiones](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
- Se explica que al lenguaje de programación patentado que integra en el IDE de Visual Studio, escribir un EE capaz de evaluación de expresiones dentro del contexto del lenguaje propietario le permite compilar en un lenguaje intermedio de Microsoft (MSIL) sin necesidad de escribir un motor de depuración.  
+ [Common Language Runtime y evaluación de expresiones](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
+ Explica que cuando se está integrando el lenguaje de programación de propiedad en el IDE de Visual Studio, escribir una capaz de evaluar las expresiones en el contexto del lenguaje de propiedad le permite compilar en un lenguaje intermedio de Microsoft (MSIL) sin necesidad de escribir un motor de depuración.  
   
  [Arquitectura del evaluador de expresiones](../../extensibility/debugger/expression-evaluator-architecture.md)  
- Describe cómo implementar las interfaces necesarias de EE y llamar al proveedor de símbolos de tiempo de ejecución de lenguaje común (SP) y las interfaces del cuaderno.  
+ Describe cómo implementar las interfaces de EE necesarias y llamar a las interfaces del proveedor de símbolos Common Language Runtime (SP) y del enlazador.  
   
  [Registro de un evaluador de expresiones](../../extensibility/debugger/registering-an-expression-evaluator.md)  
- Notas de la que el EE se debe registrar como un generador de clases con el common language runtime y el entornos en tiempo de ejecución de Visual Studio.  
+ Notas que el EE debe registrarse como un generador de clases con los entornos de tiempo de ejecución de Common Language Runtime y Visual Studio.  
   
  [Implementación de un evaluador de expresiones](../../extensibility/debugger/implementing-an-expression-evaluator.md)  
- Describe cómo el proceso de evaluar una expresión incluye en el motor de depuración (DE), el proveedor de símbolos (SP), el objeto de enlazador y el evaluador de expresiones (EE).  
+ Describe cómo el proceso de evaluación de una expresión incluye el motor de depuración (DE), el proveedor de símbolos (SP), el objeto de enlazador y el evaluador de expresiones (EE).  
   
  [Visualización de variables locales](../../extensibility/debugger/displaying-locals.md)  
- Describe cómo, cuando la ejecución se detiene, el paquete de depuración llama a la DE para obtener una lista de argumentos y variables locales.  
+ Describe cómo, cuando la ejecución se pausa, el paquete DE depuración llama a DE para obtener una lista de variables locales y argumentos.  
   
  [Evaluación de una expresión de la ventana Inspección](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
- Documenta cómo el paquete de depuración de Visual Studio llama a la DE para determinar el valor actual de cada expresión en su lista de supervisión.  
+ Documenta cómo llama el paquete DE depuración DE Visual Studio al DE para determinar el valor actual de cada expresión en su lista de inspección.  
   
  [Cambio del valor de una variable local](../../extensibility/debugger/changing-the-value-of-a-local.md)  
- Explica que cambiar el valor de una variable local, cada línea de la ventana variables locales tiene asociado un objeto que proporciona el nombre, el tipo y el valor actual de una variable local.  
+ Explica que, al cambiar el valor de una variable local, cada línea de la ventana variables locales tiene un objeto asociado que proporciona el nombre, el tipo y el valor actual de un local.  
   
  [Implementación de visualizadores de tipo y visores personalizados](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
- Explica qué interfaz debe implementarse mediante los componentes que admiten visualizadores de tipo y visores personalizados.  
+ Explica qué interfaz debe implementar cada componente para admitir visualizadores de tipo y visores personalizados.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
