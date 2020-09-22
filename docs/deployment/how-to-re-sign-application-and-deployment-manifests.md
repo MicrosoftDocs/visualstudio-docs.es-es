@@ -1,5 +1,5 @@
 ---
-title: Cómo volver a firmar los manifiestos de aplicación e implementación | Microsoft Docs
+title: Volver a firmar los manifiestos de aplicación e implementación | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641610"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851689"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Cómo: Volver a firmar manifiestos de aplicación e implementación
 Después de realizar cambios en las propiedades de implementación en el manifiesto de aplicación para las aplicaciones de Windows Forms, las aplicaciones Windows Presentation Foundation (XBAP) o las soluciones de Office, debe volver a firmar los manifiestos de aplicación e implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.
@@ -112,7 +112,7 @@ Después de realizar cambios en las propiedades de implementación en el manifie
 
 7. Opcionalmente, copie el manifiesto de implementación principal (*Publish \\ \<appname> . Application*) en el directorio de implementación de la versión (*publish\Application files \\ \<appname> _ \<version> *).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)
