@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436766"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842954"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Recopilar datos referentes a la asignación y duración de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs
 ## <a name="common-tasks"></a>Tareas comunes  
  Puede especificar opciones adicionales en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** de la sesión de rendimiento. Para abrir este cuadro de diálogo:  
   
-- En el **Explorador de rendimiento**, haga clic con el botón secundario del mouse en el nombre de la sesión y, a continuación, haga clic en **Propiedades**.  
+- En **Explorador de rendimiento**, haga clic con el botón secundario en el nombre de la sesión de rendimiento y, a continuación, haga clic en **propiedades**.  
   
   Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** cuando recopile datos de memoria de .NET.  
   
@@ -68,21 +68,21 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs
 |En la página **General** , especifique los detalles de nomenclatura del archivo de datos de generación de perfiles generado (.vsp).|-   [Recopilar datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Cómo: Establecimiento de opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|  
 |En la página **Iniciar**, elija la aplicación que quiere iniciar si tiene varios proyectos .exe en la solución de código.|-   [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|  
 |En la página **Interacción de capas** , agregue los datos de la llamada ADO.NET a la ejecución de la generación de perfiles.|-   [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|  
-|En la página **Eventos de Windows**, especifique uno o varios eventos de seguimiento de eventos para Windows (ETW) para recopilar con los datos de muestreo.|-   [Cómo: Recopilación de datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
-|En la página **Contadores de Windows** , especifique uno o varios contadores de rendimiento de sistema operativo para agregar a los datos de generación de perfiles como marcas.|-   [Cómo: Recopilación de datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)|  
-|En la página **Avanzado**, especifique la versión del runtime de .NET Framework de la cual quiere generar el perfil si los módulos de aplicación utilizan varias versiones. De forma predeterminada, se genera el perfil de la primera versión cargada.|-   [Cómo: Especificación del entorno de ejecución de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|  
+|En la página **Eventos de Windows**, especifique uno o varios eventos de seguimiento de eventos para Windows (ETW) para recopilar con los datos de muestreo.|-   [Cómo: recopilar datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
+|En la página **Contadores de Windows** , especifique uno o varios contadores de rendimiento de sistema operativo para agregar a los datos de generación de perfiles como marcas.|-   [Cómo: recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)|  
+|En la página **Avanzado**, especifique la versión del runtime de .NET Framework de la cual quiere generar el perfil si los módulos de aplicación utilizan varias versiones. De forma predeterminada, se genera el perfil de la primera versión cargada.|-   [Cómo: especificar el tiempo de ejecución de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|  
   
 ## <a name="instrumentation-tasks"></a>Tareas de instrumentación  
  Las tareas de la tabla siguiente son opciones del cuadro de diálogo **Páginas de propiedades** que son específicas de la generación de perfiles con el método de instrumentación.  
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|En la página **Binarios** , especifique una ubicación para las copias instrumentadas de los módulos. De forma predeterminada, los binarios originales se mueven a una carpeta de copia de seguridad.|-   [Cómo: Reubicación de archivos binarios instrumentados](../profiling/how-to-relocate-instrumented-binaries.md)|  
-|En la página **Instrumentación** , excluya las funciones pequeñas de la generación de perfiles para reducir la sobrecarga de generación de perfiles, el código JavaScript de perfiles en páginas web ASP.NET y especifique comandos para ejecutarse en el símbolo del sistema antes y después del proceso de instrumentación.|-   [Cómo: Exclusión o inclusión de funciones cortas en la instrumentación](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [Cómo: Generación de perfiles de código de JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Cómo: Especificación de comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
-|En la página **Contadores de CPU** , especifique uno o varios contadores de rendimiento de procesador para agregar a los datos de generación de perfiles.|-   [Cómo: Recopilación de datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)|  
-|En la página **Avanzado**, especifique las opciones adicionales de VSInstr que quiera, como, por ejemplo, las opciones para incluir o excluir funciones específicas. Para obtener más información sobre las opciones de VSInstr, consulte [VSInstr](../profiling/vsinstr.md)|-   [Cómo: Especificación de opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [Cómo: Limitación de la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
+|En la página **Binarios** , especifique una ubicación para las copias instrumentadas de los módulos. De forma predeterminada, los binarios originales se mueven a una carpeta de copia de seguridad.|-   [Cómo: reubicar archivos binarios instrumentados](../profiling/how-to-relocate-instrumented-binaries.md)|  
+|En la página **Instrumentación** , excluya las funciones pequeñas de la generación de perfiles para reducir la sobrecarga de generación de perfiles, el código JavaScript de perfiles en páginas web ASP.NET y especifique comandos para ejecutarse en el símbolo del sistema antes y después del proceso de instrumentación.|-   [Cómo: excluir o incluir funciones cortas de la instrumentación](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [Cómo: generar perfiles de código JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Cómo: especificar comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
+|En la página **Contadores de CPU** , especifique uno o varios contadores de rendimiento de procesador para agregar a los datos de generación de perfiles.|-   [Cómo: recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)|  
+|En la página **Avanzado**, especifique las opciones adicionales de VSInstr que quiera, como, por ejemplo, las opciones para incluir o excluir funciones específicas. Para obtener más información sobre las opciones de VSInstr, consulte [VSInstr](../profiling/vsinstr.md)|-   [Cómo: especificar opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [Cómo: limitar la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Cómo: Elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)   
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+ [Cómo: elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)   
  [Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)

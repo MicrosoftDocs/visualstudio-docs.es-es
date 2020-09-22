@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f7b51d70fd7c30878c73ce32a467f367f28a1b85
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64815463"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842943"
 ---
-# <a name="idiasymbolgetsignature"></a>IDiaSymbol::get_signature
+# <a name="idiasymbolget_signature"></a>IDiaSymbol::get_signature
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el valor de la firma del símbolo.  
+Recupera el valor de firma del símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,13 +35,13 @@ HRESULT get_signature ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el valor de la firma del símbolo.  
+ enuncia Devuelve el valor de firma del símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,6 @@
 ---
-title: Cómo crear asociaciones de archivo para una aplicación ClickOnce | Microsoft Docs
+title: Crear asociaciones de archivo (aplicación ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ecc41a852d80319f8a171ed590eb73680d92cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382502"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809786"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Cómo: Crear asociaciones de archivo para una aplicación ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden estar asociadas a una o varias extensiones de nombre de archivo, de modo que la aplicación se iniciará automáticamente cuando el usuario abra un archivo de esos tipos. Agregar compatibilidad con la extensión de nombre de archivo a una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es sencillo.

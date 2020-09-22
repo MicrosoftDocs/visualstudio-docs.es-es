@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434300"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842846"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
   
       **Nota** Haga clic en **Cancelar** para volver a la configuración de muestreo anterior.  
   
-     -o bien-  
+     o bien  
   
    - Seleccione **Contadores de CPU** y, a continuación, seleccione **Recopilar contadores de CPU**. Los contadores de CPU se enumeran en **Contadores disponibles**.  
   
@@ -125,12 +125,12 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
-     donde **\<Visual Studio Performance Tools Directory>** es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio, normalmente  
+     donde **\<Visual Studio Performance Tools Directory>** es la ruta de acceso al directorio de las herramientas de rendimiento de la instalación de Visual Studio, normalmente  
   
      C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
-## <a name="see-also"></a>Vea también  
- [Temas de introducción](../profiling/overviews-performance-tools.md)   
- [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)   
- [Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
- [Cómo: Recopilación de datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)
+## <a name="see-also"></a>Consulte también  
+ [Información general](../profiling/overviews-performance-tools.md)   
+ [Cómo: elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)   
+ [Cómo: recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Cómo: recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)

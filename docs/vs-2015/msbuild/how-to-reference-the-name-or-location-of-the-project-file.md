@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Hacer referencia al nombre o la ubicación del archivo de proyecto | Microsoft Docs'
+title: Procedimiento Hacer referencia al nombre o la ubicación del archivo de proyecto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae8a32d4587b71f238c023d08a1328ce83ba37d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431390"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843006"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Cómo: Hacer referencia al nombre o ubicación del archivo de proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto sin tener que crear su propia propiedad. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proporciona propiedades reservadas que hacen referencia al nombre de archivo del proyecto y a otras propiedades relacionadas con el proyecto. Para obtener más información sobre las propiedades reservadas, consulte [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto sin tener que crear su propia propiedad. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proporciona propiedades reservadas que hacen referencia al nombre de archivo del proyecto y a otras propiedades relacionadas con el proyecto. Para obtener más información acerca de las propiedades reservadas, consulte [propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="using-the-msbuildprojectname-property"></a>Utilizar la propiedad MSBuildProjectName  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proporciona unas propiedades reservadas que puede utilizar en los archivos del proyecto sin tener que definirlas cada vez. Por ejemplo, la propiedad reservada `MSBuildProjectName` proporciona una referencia al nombre del archivo del proyecto.  
@@ -75,6 +75,6 @@ Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
 [MSBuild](msbuild.md)  
  [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

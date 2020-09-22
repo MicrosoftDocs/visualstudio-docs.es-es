@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580649"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740149"
 ---
-# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implementar extensiones para las herramientas de SharePoint en Visual Studio
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implementación de extensiones para las herramientas de SharePoint en Visual Studio
 
 Para implementar una extensión de herramientas de SharePoint, cree un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) que contenga el ensamblado de extensión y cualquier otro archivo que desee distribuir con la extensión. Un paquete VSIX es un archivo comprimido que sigue el estándar de convenciones de empaquetado abierto (OPC). Los paquetes VSIX tienen la extensión *. vsix* .
 
@@ -234,11 +234,11 @@ Si desea crear manualmente el paquete VSIX para la extensión de herramientas de
 
     - Agregue un `Microsoft.VisualStudio.MefComponent` elemento bajo el `Assets` elemento y, a continuación, establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado que implementa la extensión en el paquete VSIX. Para obtener más información, vea [elemento MEFComponent (esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    - Si la extensión incluye un comando de SharePoint que llama al modelo de objetos de servidor para SharePoint, agregue un `Microsoft.VisualStudio.Assembly` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado que implementa el comando de SharePoint en el paquete VSIX. Para obtener más información, vea [elemento asset (esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    - Si la extensión incluye un comando de SharePoint que llama al modelo de objetos de servidor para SharePoint, agregue un `Microsoft.VisualStudio.Assembly` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado que implementa el comando de SharePoint en el paquete VSIX. Para obtener más información, vea [elemento asset (esquema VSX)](/previous-versions/dd393737(v=vs.110)).
 
     - Si la extensión incluye una plantilla de proyecto o una plantilla de elemento, agregue un `ProjectTemplate` `ItemTemplate` elemento o bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa de la carpeta que contiene la plantilla en el paquete VSIX. Para obtener más información, vea [elemento ProjectTemplate (esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) y [elemento ITEMTEMPLATE (esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    - Si la extensión incluye un asistente personalizado para una plantilla de proyecto o una plantilla de elemento, agregue un `Assembly` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado en el paquete VSIX y, a continuación, establezca el `AssemblyName` atributo en el nombre completo del ensamblado (incluida la versión, la referencia cultural y el token de clave pública). Para obtener más información, vea [Dependency (elemento) (esquema VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    - Si la extensión incluye un asistente personalizado para una plantilla de proyecto o una plantilla de elemento, agregue un `Assembly` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado en el paquete VSIX y, a continuación, establezca el `AssemblyName` atributo en el nombre completo del ensamblado (incluida la versión, la referencia cultural y el token de clave pública). Para obtener más información, vea [Dependency (elemento) (esquema VSX)](/previous-versions/dd393682(v=vs.110)).
 
 ### <a name="example"></a>Ejemplo
 
@@ -264,9 +264,9 @@ En el ejemplo siguiente se muestra el contenido de un archivo Extension. vsixman
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Extender el nodo conexiones de SharePoint en Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Depurar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Depuración de extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

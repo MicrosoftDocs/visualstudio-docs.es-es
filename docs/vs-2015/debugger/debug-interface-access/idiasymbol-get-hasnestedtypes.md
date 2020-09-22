@@ -1,5 +1,5 @@
 ---
-title: Get_hasnestedtypes | Microsoft Docs
+title: 'IDiaSymbol:: get_hasNestedTypes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc50ea9121ad974f27b670c3f01d5ff28398d211
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64811703"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842886"
 ---
-# <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
+# <a name="idiasymbolget_hasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una marca que especifica si el tipo de datos definido por el usuario ha anidar las definiciones de tipo.  
+Recupera una marca que especifica si el tipo de datos definido por el usuario tiene definiciones de tipos anidadas.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,20 +35,20 @@ HRESULT get_hasNestedTypes ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si el tipo de datos definido por el usuario tiene anidados en definiciones de tipo; en caso contrario, devuelve `FALSE`.  
+ enuncia Devuelve `TRUE` si el tipo de datos definido por el usuario tiene definiciones de tipos anidadas; de lo contrario, devuelve `FALSE` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
+|Versión:|SDK de DIA v 7.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

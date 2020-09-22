@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986148"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807968"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
 
@@ -333,11 +333,11 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
 7. Repita este proceso para crear los valores siguientes.
 
-|Tipo de valor<br /><br />|Nombre<br /><br />|
+|Tipo de valor<br /><br />|NOMBRE<br /><br />|
 |--------------|--------|
 |Valor de cadena<br /><br />|**FriendlyName**<br /><br />|
 |Valor DWORD<br /><br />|**LoadBehavior**<br /><br />|
-|Valor de cadena<br /><br />|**de manifiesto**<br /><br />|
+|Valor de cadena<br /><br />|**Manifiesto**<br /><br />|
 
 8. Abra el menú contextual del valor **Description** y, a continuación, elija **Modificar**.
 
@@ -504,7 +504,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 ## <a name="see-also"></a>Consulte también
 
-- [Requisitos previos de la solución de Office para la implementación](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Requisitos previos de la solución de Office para la implementación](/previous-versions/bb608617(v=vs.110))
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
 - [Entradas del registro para complementos de VSTO](../vsto/registry-entries-for-vsto-add-ins.md)
 - [Información general sobre propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md)

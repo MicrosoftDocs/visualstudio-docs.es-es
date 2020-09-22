@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015637"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739998"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Tutorial: extender Explorador de servidores para mostrar elementos Web
   En Visual Studio, puede usar el nodo **conexiones de SharePoint** de **Explorador de servidores** para ver los componentes de los sitios de SharePoint. Sin embargo, **Explorador de servidores** no muestra algunos componentes de forma predeterminada. En este tutorial, extenderá **Explorador de servidores** para que muestre la galería de elementos Web en cada sitio de SharePoint conectado.
@@ -275,7 +275,7 @@ ms.locfileid: "86015637"
 
 1. En **Explorador de soluciones**, en el proyecto WebPartNode, abra el archivo **source. Extension. vsixmanifest** en el editor de manifiestos.
 
-     El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. En el cuadro **nombre de producto** , escriba **nodo de la galería de elementos Web para explorador de servidores**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015637"
 10. En el cuadro **tipo** , escriba **SharePoint. Commands. V4**.
 
     > [!NOTE]
-    > Este elemento especifica una extensión personalizada que desea incluir en la extensión de Visual Studio. Para obtener más información, vea [elemento asset (esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Este elemento especifica una extensión personalizada que desea incluir en la extensión de Visual Studio. Para obtener más información, vea [elemento asset (esquema VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. En la lista **origen** , elija el elemento de la lista **un proyecto en la solución actual** .
 
@@ -369,8 +369,8 @@ ms.locfileid: "86015637"
 
 4. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en la que está abierta la solución WebPartNode).
 
-## <a name="see-also"></a>Consulte también
-- [Extender el nodo conexiones de SharePoint en Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+## <a name="see-also"></a>Vea también
+- [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Tutorial: llamar al modelo de objetos de cliente de SharePoint en una extensión de Explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons)
 - [Crear un icono u otra imagen &#40;editor de imágenes para iconos&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

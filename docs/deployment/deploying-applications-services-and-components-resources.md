@@ -14,39 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800843"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036705"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implementación de la aplicación en una carpeta, IIS, Azure u otro destino
 
 Al implementar una aplicación, servicio o componente, se distribuye para su instalación en otros equipos, dispositivos, servidores o en la nube. Elija el método apropiado en Visual Studio para el tipo de implementación que necesita.
 
-La mayoría de los tipos comunes de aplicaciones se pueden implementar directamente desde el Explorador de soluciones de Visual Studio. Para un paseo rápido por esta funcionalidad, vea [Primer vistazo a la implementación](../deployment/deploying-applications-services-and-components.md).
+Obtenga ayuda para la tarea de implementación:
 
-![Elección de una opción de publicación](../deployment/media/quickstart-publish-dialog.png)
+- ¿No está seguro de qué opción de implementación elegir? Consulte [¿Qué opciones de publicación son las adecuadas para mí?](#what-publishing-options-are-right-for-me)
+- Para ayuda con los problemas de implementación de Azure App Service o IIS, consulte [Solución de problemas de ASP.NET Core en Azure App Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
+- Para ayuda con la configuración de la implementación de .NET, consulte [Configuración de la implementación de .NET](#configure-net-deployment-settings).
+- Para implementar un destino nuevo, si creó previamente un perfil de publicación, seleccione **Nuevo** en la ventana **Publicar** de un perfil configurado.
+
+   ![Creación de un perfil de publicación nuevo](../deployment/media/create-a-new-publish-profile.png)
+
+   Luego, elija una opción de implementación en la ventana Publicar. Para información sobre las opciones de publicación, consulte las secciones siguientes.
 
 ## <a name="what-publishing-options-are-right-for-me"></a>¿Qué opciones de publicación son las adecuadas para mí?
 
 Desde Visual Studio, las aplicaciones pueden publicarse directamente en los destinos siguientes:
 
+::: moniker range=">=vs-2019"
 - [Azure](#azure)
 - [Container Registry para Docker](#docker-container-registry)
 - [Carpeta](#folder)
 - [Servidor FTP/FTPS](#ftpftps-server)
 - [Servidor web (IIS)](#web-server-iis)
 - [Perfil de importación](#import-profile)
+::: moniker-end
+::: moniker range="vs-2017"
+- [App Service](#azure-app-service)
+- [App Service en Linux](#azure-app-service)
+- [IIS (elección de IIS, FTP, etc.)](#web-server-iis)
+- [FTP/FTPS (elección de IIS, FTP, etc.)](#ftpftps-server)
+- [Carpeta](#folder)
+- [Perfil de importación](#import-profile)
+::: moniker-end
+
+Las opciones anteriores aparecen tal como se muestra en la ilustración siguiente cuando se crea un perfil de publicación nuevo.
+
+::: moniker range=">=vs-2019"
+![Elección de una opción de publicación](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![Elección de una opción de publicación](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+Para un paseo rápido por más opciones generales de implementación de aplicaciones, consulte [Primer vistazo a la implementación](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="azure"></a>Azure 
 
 Cuando elige Azure, puede elegir entre:
 
-- Azure App Service que se ejecuta en Windows, Linux o como una imagen de Docker
-- Una imagen de Docker implementada en Azure Container Registry
-- Una máquina virtual de Azure
+- [Azure App Service](#azure-app-service) que se ejecuta en Windows, Linux o como una imagen de Docker
+- Una imagen de Docker implementada en [Azure Container Registry](#azure-container-registry)
+- Una [máquina virtual de Azure](#azure-virtual-machine)
 
 ![Elección de un servicio de Azure](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +94,9 @@ El usuario determina la potencia de computación de una instancia de App Service
 > Si quiere usar Azure App Service en su propio centro de datos o en otros equipos locales, puede hacerlo con [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 Para más información sobre cómo publicar en App Service, consulte:
-- [Inicio rápido: Publicar una aplicación web en Azure App Service mediante Visual Studio](quickstart-deploy-to-azure.md) e [Inicio rápido: Publicar una aplicación de ASP.NET Core en App Service en Linux con Visual Studio](quickstart-deploy-to-linux.md).
+- [Inicio rápido: Publicar una aplicación web en Azure App Service mediante Visual Studio](quickstart-deploy-to-azure.md)
+- [Inicio rápido: Publicar una aplicación de ASP.NET Core en App Service en Linux con Visual Studio](quickstart-deploy-to-linux.md)
+- [Publicar una aplicación de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - [Solución de problemas de ASP.NET Core en Azure App Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ### <a name="azure-container-registry"></a>Azure Container Registry
@@ -78,13 +108,17 @@ Para más información sobre cómo publicar en App Service, consulte:
 - Cuando tenga una canalización de implementación y desarrollo de contenedores de Docker existente.
 - Cuando quiera compilar imágenes de contenedor de Docker en Azure.
 
-### <a name="azure-virtual-machines"></a>Azure Virtual Machines
+Para obtener más información:
+
+- [Implementación de un contenedor ASP.NET en un registro de contenedor con Visual Studio](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Máquina virtual de Azure
 
 [Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) le permite crear y administrar cualquier cantidad de recursos informáticos en la nube. Al asumir la responsabilidad de todo el software y las actualizaciones de las máquinas virtuales, puede personalizarlas todo lo que quiera según necesite la aplicación. Puede tener acceso a las máquinas virtuales directamente mediante Escritorio remoto, y cada una mantendrá su dirección IP asignada durante el tiempo que se quiera.
 
 El escalado de una aplicación hospedada en máquinas virtuales implica activar otras máquinas virtuales en función de la demanda y luego implementar el software necesario. Este nivel de control adicional le permite escalar de manera diferente en diferentes regiones del mundo. Por ejemplo, si su aplicación está atendiendo a empleados en una variedad de oficinas regionales, puede escalar sus máquinas virtuales en función del número de empleados de esas regiones, reduciendo potencialmente los costos.
 
-Para obtener información adicional, vea la [comparación detallada](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) entre Azure App Service, Azure Virtual Machines y otros servicios de Azure que puede usar como un destino de implementación mediante la opción Personalizar de Visual Studio.
+Para obtener información adicional, vea la [comparación detallada](/azure/architecture/guide/technology-choices/compute-decision-tree) entre Azure App Service, Azure Virtual Machines y otros servicios de Azure que puede usar como un destino de implementación mediante la opción Personalizar de Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Cuándo elegir Azure Virtual Machines
 
@@ -95,13 +129,18 @@ Para obtener información adicional, vea la [comparación detallada](https://azu
 
 > Si quiere usar Azure Virtual Machines en su propio centro de datos o en otros equipos locales, puede hacerlo con [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-## <a name="docker-container-registry"></a>Container Registry para Docker
+## <a name="docker-container-registry"></a>Registro de contenedor de Docker
 
-Si la aplicación usa Docker, puede publicar la aplicación en contenedores en una instancia de Container Registry para Docker.
+Si la aplicación usa Docker, puede publicar la aplicación en contenedores en un registro de contenedor de Docker.
 
 ### <a name="when-to-choose-docker-container-registry"></a>Cuándo elegir Container Registry para Docker
 
 - Quiere implementar una aplicación en contenedores.
+
+Para obtener más información, vea lo siguiente:
+
+- [Implementación de un contenedor ASP.NET en un registro de contenedor con Visual Studio](../containers/hosting-web-apps-in-docker.md)
+- [Implementación en Docker Hub](../containers/deploy-docker-hub.md)
 
 ## <a name="folder"></a>Carpeta
 
@@ -117,7 +156,13 @@ Tenga en cuenta que si por cualquier razón (como el acceso a la máquina) no pu
 - Si solo necesita una implementación de pruebas locales.
 - Si quiere examinar y modificar potencialmente los archivos de aplicación independientemente antes de enviarlos a otro destino de implementación.
 
-Para obtener más información, vea [Implementar una aplicación en una carpeta local con Visual Studio](quickstart-deploy-to-local-folder.md)
+Para más información, consulte [Inicio rápido: Implementar una aplicación en una carpeta local con Visual Studio](quickstart-deploy-to-local-folder.md).
+
+Para más ayuda sobre cómo elegir la configuración, consulte los recursos siguientes:
+
+- [Implementación dependiente del marco frente a la implementación independiente](/dotnet/core/deploying/)
+- [Identificadores de entorno de ejecución de destino (RID portátil, etc.)](/dotnet/core/rid-catalog)
+- [Configuraciones Debug y Release](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>Servidor FTP/FTPS
 
@@ -157,7 +202,9 @@ Puede crear cualquier número de perfiles de implementación de servidor web IIS
 - Si quiere implementar con credenciales que no sean las que usa con Visual Studio ni las que están asociadas directamente a las cuentas de Azure.
 - Si quiere eliminar archivos del destino cada vez que implementa.
 
-Para más información, consulte [Inicio rápido: Publicar una aplicación web en un sitio web mediante Visual Studio](quickstart-deploy-to-a-web-site.md). Para ayuda con la solución de problemas de ASP.NET Core en IIS, consulte [Solución de problemas de ASP.NET Core en Azure App Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Para más información, consulte [Inicio rápido: Publicar una aplicación web en un sitio web mediante Visual Studio](quickstart-deploy-to-a-web-site.md).
+
+Para ayuda con la solución de problemas de ASP.NET Core en IIS, consulte [Solución de problemas de ASP.NET Core en Azure App Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Perfil de importación
 
@@ -174,6 +221,14 @@ Para obtener más información, vea lo siguiente:
 
 - [Importar una configuración de publicación e implementar en IIS](tutorial-import-publish-settings-iis.md)
 - [Importar una configuración de publicación e implementar en Azure](tutorial-import-publish-settings-azure.md)
+
+## <a name="configure-net-deployment-settings"></a>Configuración de la implementación de .NET
+
+Para más ayuda sobre cómo elegir la configuración, consulte los recursos siguientes:
+
+- [Implementación dependiente del marco frente a la implementación independiente](/dotnet/core/deploying/)
+- [Identificadores de entorno de ejecución de destino (RID portátil, etc.)](/dotnet/core/rid-catalog)
+- [Configuraciones Debug y Release](../ide/understanding-build-configurations.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

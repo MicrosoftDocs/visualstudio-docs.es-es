@@ -1,5 +1,6 @@
 ---
 title: Crear o actualizar directivas de protección de análisis de código estándar
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7167368128cb5946118a7692c50c15109feb79a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad889ba106c288c07111857be965ef8d6c8295df
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371903"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808631"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
 
@@ -67,6 +68,6 @@ En la lista **ejecutar este conjunto de reglas** , use uno de los métodos sigui
 
 Para obtener más información sobre cómo crear e implementar un conjunto de reglas de directivas de protección personalizadas, vea [implementar directivas de protección personalizadas para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Implementar directivas de inserción en el repositorio de análisis de código personalizadas para el código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

@@ -1,5 +1,5 @@
 ---
-title: Actualizar una aplicación (JavaScript) | Documentos de Microsoft
+title: Actualizar una aplicación (JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,18 +20,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8be97212f4510002a78e6565fc9884930db89
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446089"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842827"
 ---
 # <a name="refresh-an-app-javascript"></a>Actualizar una aplicación (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Puede realizar cambios en el código mientras está depurando y, a continuación, actualice una aplicación de Store con JavaScript eligiendo el **actualizar Windows app** situado en la **depurar** barra de herramientas. Al elegir este botón, se recarga la aplicación sin detener y reiniciar el depurador. La característica Actualizar te permite modificar código de HTML, CSS y JavaScript, y ver el resultado rápidamente. Esta función es compatible para las aplicaciones de la Tienda Windows y de la Tienda de Windows Phone.  
+ Puede realizar cambios en el código durante la depuración y, después, actualizar una aplicación de la tienda con JavaScript eligiendo el botón **Actualizar aplicación de Windows** en la barra de herramientas **depurar** . Al elegir este botón, se recarga la aplicación sin detener y reiniciar el depurador. La característica Actualizar te permite modificar código de HTML, CSS y JavaScript, y ver el resultado rápidamente. Esta función es compatible para las aplicaciones de la Tienda Windows y de la Tienda de Windows Phone.  
   
  La actualización no conserva el estado de la aplicación ni refleja los siguientes cambios en la aplicación:  
   
@@ -56,15 +56,15 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 2. Seleccione un dispositivo de depuración con la plantilla abierta en Visual Studio.  
   
-     Si el proyecto de inicio actual es un proyecto de Windows Phone, seleccione un emulador de Windows Phone para el dispositivo de depuración. En caso contrario, seleccione **simulador** o **máquina Local**.  
+     Si el proyecto de inicio actual es un proyecto de Windows Phone, seleccione un emulador de Windows Phone para el dispositivo de depuración. En caso contrario, seleccione **simulador** o **equipo local**.  
   
-     ![Lista de destinos de depuración seleccione](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Selección de lista de destino de depuración](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 3. Presiona F5 para ejecutar la aplicación en modo de depuración.  
   
 4. Cambia a Visual Studio. (Presiona F12).  
   
-5. En **el Explorador de soluciones**, en el **páginas** > **principal** carpeta y abra home.html.  
+5. En **Explorador de soluciones**, en la **pages**  >  carpeta**principal** de páginas, abra home.html.  
   
 6. Cambia el texto del título de la página de  
   
@@ -78,9 +78,9 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     Hello!  
     ```  
   
-7. Haga clic en el **actualizar Windows app** button, que tiene el siguiente aspecto: ![Botón de la aplicación de Windows actualizar](../debugger/media/js-refresh.png "JS_Refresh"). (O bien, presiona F4).  
+7. Haz clic en el botón **Actualizar aplicación de Windows**, que tiene este aspecto: ![Botón Actualizar aplicación de Windows](../debugger/media/js-refresh.png "JS_Refresh"). (O bien, presiona F4).  
   
 8. Cambia a la aplicación. La aplicación se recarga sin que se reinicie el depurador y aparece el nuevo título de página.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

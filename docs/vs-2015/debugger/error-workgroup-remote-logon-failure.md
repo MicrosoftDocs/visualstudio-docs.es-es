@@ -1,5 +1,5 @@
 ---
-title: 'Error: Error de inicio de sesión remoto del grupo de trabajo | Documentos de Microsoft'
+title: 'Error: Error de inicio de sesión del grupo de trabajo de forma remota | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438350"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842646"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Error: Error de inicio de sesión del grupo de trabajo de forma remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Este error reza como sigue:
   
 5. En la columna **Directiva**, haga doble clic en **Depurar programas** para ver las asignaciones actuales de la directiva de grupo local en el cuadro de diálogo **Configuración de directiva de seguridad local**.  
   
-     ![Derechos de usuario de directiva de seguridad local](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
+     ![Directiva de seguridad local, Derechos de usuario](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
 6. Para agregar nuevos usuarios, haga clic en el botón **Agregar usuario o grupo**.  
   
@@ -76,12 +76,12 @@ Este error reza como sigue:
   
 3. Haga clic en **Opciones de seguridad**.  
   
-4. En el **directiva** columna, haga doble clic en **acceso de red: Modelo de seguridad y recursos compartidos para cuentas locales**.  
+4. En la columna **Directiva**, haga doble clic en **Acceso de red: modelo de seguridad y recursos compartidos para cuentas locales**.  
   
-5. En el **acceso de red: Modelo de seguridad y recursos compartidos para cuentas locales** diálogo cuadro, cambie el valor a **clásico: usuarios locales autenticados como ellos mismos** y haga clic en el **aplicar** botón.  
+5. En el cuadro de diálogo **Acceso de red: modelo de seguridad y recursos compartidos para cuentas locales**, cambie el valor a **Clásico: usuarios locales autenticados como ellos mismos** y haga clic en el botón **Aplicar**.  
   
-     ![Opciones de seguridad de directiva de seguridad local](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
+     ![Directiva de seguridad local, Opciones de seguridad](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
-## <a name="see-also"></a>Vea también  
- [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Consulte también  
+ [Errores y solución de problemas de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424129"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842962"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,17 +60,17 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
 |`Publisher`|Parámetro `String` opcional.<br /><br /> Especifica el publicador de la aplicación. Si no se especifica este parámetro, el nombre se deduce del usuario registrado o de la identidad del manifiesto generado. Este nombre se utiliza para el nombre de la carpeta del menú Inicio y forma parte del nombre que aparece en el cuadro de diálogo Agregar o quitar programas.|  
 |`RequiresMinimumFramework35SP1`|Parámetro `Boolean` opcional.<br /><br /> Si es true, la aplicación requiere .NET Framework 3.5 SP1 o una versión más reciente.|  
 |`TargetCulture`|Parámetro `String` opcional.<br /><br /> Identifica la referencia cultural de la aplicación y especifica el campo `Language` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, se supone que la aplicación es invariable en cuanto a la referencia cultural.|  
-|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el moniker de la plataforma de destino.|  
-|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el perfil de la plataforma de destino.|  
-|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el nombre del subconjunto de .NET Framework de destino.|  
-|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica la versión de .NET Framework de destino del proyecto.|  
+|`TargetFrameworkMoniker`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el moniker de la plataforma de destino.|  
+|`TargetFrameworkProfile`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el perfil de la plataforma de destino.|  
+|`TargetFrameworkSubset`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el nombre del subconjunto de .NET Framework de destino.|  
+|`TargetFrameworkVersion`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica la versión de .NET Framework de destino del proyecto.|  
 |`TrustInfoFile`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica un documento XML que especifica la seguridad de la aplicación. El elemento raíz en el documento XML debe ser un nodo trustInfo en el espacio de nombres asmv2. Si la tarea va a generar un manifiesto nativo, este parámetro se omite.|  
-|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Si es true, las propiedades `Product`, `Publisher` y `SupportUrl` se escriben en el manifiesto de aplicación.|  
+|`UseApplicationTrust`|Opcional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Si es true, las propiedades `Product`, `Publisher` y `SupportUrl` se escriben en el manifiesto de aplicación.|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de los parámetros de la clase Task, vea [Task Base (Clase)](../msbuild/task-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de los parámetros de la clase Task, vea [Task base class](../msbuild/task-base-class.md).  
   
- Para obtener información sobre cómo usar la tarea `GenerateDeploymentManifest`, vea [GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md).  
+ Para obtener información sobre cómo usar la `GenerateDeploymentManifest` tarea, vea [GenerateApplicationManifest (tarea](../msbuild/generateapplicationmanifest-task.md)).  
   
  Las entradas para las dependencias y archivos se pueden ampliar aún más con metadatos del elemento para especificar el estado de implementación adicional para cada elemento.  
   
@@ -93,7 +93,7 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
 > En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
-> Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
+> Para obtener más información sobre la `Thumbprint` propiedad usada en la `SignFile` tarea en este ejemplo, vea la [tarea Signfile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -146,7 +146,7 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
 > En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
-> Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
+> Para obtener más información sobre la `Thumbprint` propiedad usada en la `SignFile` tarea en este ejemplo, vea la [tarea Signfile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -204,7 +204,7 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
 > En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
-> Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
+> Para obtener más información sobre la `Thumbprint` propiedad usada en la `SignFile` tarea en este ejemplo, vea la [tarea Signfile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -352,8 +352,8 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Tareas](../msbuild/msbuild-tasks.md)   
- [GenerateDeploymentManifest (Tarea)](../msbuild/generatedeploymentmanifest-task.md)   
- [SignFile (Tarea)](../msbuild/signfile-task.md)   
+ [GenerateDeploymentManifest (tarea)](../msbuild/generatedeploymentmanifest-task.md)   
+ [SignFile (tarea)](../msbuild/signfile-task.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

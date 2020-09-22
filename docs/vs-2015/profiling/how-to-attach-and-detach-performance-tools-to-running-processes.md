@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Adjuntar y separar herramientas de rendimiento de los procesos en ejecución | Documentos de Microsoft
+title: 'Cómo: Asociar y desasociar las herramientas de rendimiento de los procesos en ejecución | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443708"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842763"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedimiento Adjuntar y separar herramientas de rendimiento de los procesos en ejecución
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Cómo: Asociar y desasociar las herramientas de rendimiento de los procesos en ejecución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El generador de perfiles puede utilizarse para asociar o desasociar un proceso en ejecución a fin de facilitar el muestreo y la recolección de los datos de rendimiento. Puede utilizar este método para generar perfiles de un proceso cuando quiera evitar que se recopilen datos sobre el tiempo de carga de la aplicación o supervisar el rendimiento de un proceso después de que alcance un estado determinado.  
@@ -40,7 +40,7 @@ El generador de perfiles puede utilizarse para asociar o desasociar un proceso e
   
 - Denegar el acceso a la generación de perfiles a todo el mundo.  
   
-  Para obtener más información, consulte [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md) y las opciones de administración de [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Para obtener más información, vea [generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md) y las opciones de administración en [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Para asociar a un proceso en ejecución  
   
@@ -54,7 +54,7 @@ El generador de perfiles puede utilizarse para asociar o desasociar un proceso e
   
 2. Haga clic en el nombre del proceso al que quiera asociar.  
   
-3. Haga clic en **Asociar**.  
+3. Haga clic en **Adjuntar**.  
   
 ### <a name="to-detach-from-a-running-process"></a>Desasociar de un proceso en ejecución  
   
@@ -70,9 +70,9 @@ El generador de perfiles puede utilizarse para asociar o desasociar un proceso e
   
 3. Haga clic en **Desasociar**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)   
- [Información general sobre la sesión de rendimiento](../profiling/performance-session-overview.md)   
- [Cómo: Iniciar y finalizar la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Introducción a la sesión de rendimiento](../profiling/performance-session-overview.md)   
+ [Cómo: iniciar y finalizar la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

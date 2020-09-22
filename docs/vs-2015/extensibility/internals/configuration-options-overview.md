@@ -1,5 +1,5 @@
 ---
-title: Información general sobre las opciones de configuración | Microsoft Docs
+title: Información general de las opciones de configuración | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,66 +12,66 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441520"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842526"
 ---
 # <a name="configuration-options-overview"></a>Información general de opciones de configuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Los proyectos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] puede admitir varias configuraciones que pueden compilarse depurado, ejecución o implementadas. Una configuración es un tipo de compilación que se describe con un conjunto de propiedades, normalmente modificadores de compilador y las ubicaciones de archivo. De forma predeterminada, las nuevas soluciones contienen dos configuraciones, Debug y Release. Estas configuraciones se pueden aplicar utilizando su configuración predeterminada, o puede modificar para cumplir sus requisitos específicos de la solución o proyecto. Algunos paquetes pueden compilarse de dos maneras: como un editor de ActiveX o como un componente en contexto. Los proyectos no es necesario admitir varias configuraciones, sin embargo. Si hay solo una configuración, dicha configuración se asigna a todas las configuraciones de soluciones.  
+Los proyectos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pueden admitir varias configuraciones que se pueden compilar, depurar, ejecutar o implementar. Una configuración es un tipo de compilación que se describe con un conjunto de propiedades con nombre, normalmente modificadores de compilador y ubicaciones de archivos. De forma predeterminada, las nuevas soluciones contienen dos configuraciones, Debug y Release. Estas configuraciones se pueden aplicar con su configuración predeterminada o modificarse para satisfacer los requisitos específicos de la solución o el proyecto. Algunos paquetes se pueden crear de dos maneras: como un editor ActiveX o como un componente en contexto. No obstante, no es necesario que los proyectos admitan varias configuraciones. Si solo hay una configuración disponible, esa configuración se asigna a todas las configuraciones de soluciones.  
   
- Las configuraciones que suelen constan de dos partes: el nombre de configuración (por ejemplo Debug o Release) y la configuración de plataforma. Nombre de la configuración de la plataforma identifica el entorno que establecen los destinos de configuración, como una API o la plataforma del sistema operativo. Los usuarios de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] no se puede crear una plataforma; debe elegir entre las selecciones un proyecto de VSPackage permite. Cuando un instalaciones de usuario un VSPackage, la plataforma de entrega creado durante el desarrollo del paquete pueden exponer cualquier nombre de la plataforma deseada según los criterios establecidos por el creador del paquete. El usuario puede seleccionar a continuación, en la lista de plataformas disponible a través de VSPackage cuando se crean instancias de las páginas de propiedades.  
+ Las configuraciones suelen constar de dos partes: el nombre de la configuración (como depuración o versión) y la configuración de la plataforma. El nombre de la plataforma de una configuración identifica el entorno de destino de la configuración, como un conjunto de API o una plataforma de sistema operativo. Los usuarios de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] no pueden crear una plataforma; deben elegir entre las selecciones que permite un VSPackage del proyecto. Cuando un usuario instala un VSPackage, la plataforma de entrega que se crea durante el desarrollo del paquete puede mostrar cualquier nombre de plataforma deseado en función de los criterios establecidos por el creador del paquete. Después, el usuario puede seleccionar en la lista de plataformas disponibles a través del VSPackage cuando se crean instancias de las páginas de propiedades.  
   
- Nombres de plataforma son opcionales, ya que no todos los proyectos admiten el concepto de plataformas. Cuando una configuración no tiene un nombre de la plataforma, se muestra la cadena "N/A" en la interfaz de usuario.  
+ Los nombres de plataforma son opcionales, ya que no todos los proyectos admiten el concepto de plataformas. Cuando una configuración no tiene un nombre de plataforma, se muestra la cadena "N/A" en la interfaz de usuario.  
   
- Cada solución tiene su propio conjunto de configuraciones, solo uno de los cuales puede estar activa simultáneamente. Una configuración de soluciones es un conjunto de no más de una configuración de cada proyecto. Es "no más de" es debido a la opción para excluir un proyecto de una configuración de soluciones. Los usuarios pueden crear sus propias configuraciones de solución personalizada.  
+ Cada solución tiene su propio conjunto de configuraciones, solo una de las cuales puede estar activa a la vez. Una configuración de soluciones es un conjunto de no más de una configuración de cada proyecto. La estipulación "no más que" se debe a la opción de excluir un proyecto de una configuración de solución. Los usuarios pueden crear sus propias configuraciones de soluciones personalizadas.  
   
- En la tabla siguiente se muestra la configuración de las configuraciones típicas para un proyecto. Las filas se etiquetan con nombres de configuración y las columnas con nombres de plataforma.  
+ En la tabla siguiente se muestra la configuración de configuraciones típicas para un proyecto de. Las filas se etiquetan con los nombres de configuración y las columnas con nombres de plataforma.  
   
-|Nombre de configuración|Plataforma: Win32|Plataforma: Win64|  
+|Nombre de la configuración|Plataforma: Win32|Plataforma: Win64|  
 |------------------------|----------------------|----------------------|  
-|Depuración|\<Configuración de Win32 de depuración >|\<Depurar opciones Win64 >|  
-|Release|\<Configuración de Win32 de versión >|\<Configuración de Win64 versión >|  
-|MyConfig|N/D|\<Configuración de MyConfig Win64 >|  
+|Depuración|\<Debug Win32 settings>|\<Debug Win64 settings>|  
+|Release|\<Release Win32 settings>|\<Release Win64 settings>|  
+|MyConfig|N/D|\<MyConfig Win64 settings>|  
   
 > [!NOTE]
-> No se puede crear una configuración de soluciones "MyConfig" que excluye una plataforma "Win32", a menos que el proyecto tiene como destino no es compatible con Win32.  
+> No se puede crear una configuración de solución "mi config" que excluya una plataforma "Win32" a menos que el proyecto al que se destina no sea compatible con Win32.  
   
- Cambiar la configuración activa para una solución, selecciona el conjunto de configuraciones de proyecto que se generan, ejecutar, depurar o implementar en esa solución. Por ejemplo, si cambia la configuración de soluciones activas de versión a depuración, todos los proyectos de esa solución se crean automáticamente con la configuración de los proyectos indicado en la configuración de depuración de la solución. Las configuraciones de los proyectos suelen ser también la depuración con nombre, a menos que el usuario ha realizado cambios manuales en el Administrador de configuración del entorno.  
+ Al cambiar la configuración activa de una solución, se selecciona el conjunto de configuraciones de proyecto que se compilan, ejecutan, depuran o implementan en esa solución. Por ejemplo, si cambia la configuración de soluciones activa de Release a Debug, todos los proyectos de esa solución se compilan automáticamente con la configuración de los proyectos indicada en la configuración de depuración de la solución. Las configuraciones de los proyectos normalmente también se denominan depurar, a menos que el usuario haya realizado cambios manuales en el Configuration Manager del entorno.  
   
- Las propiedades de configuración de solución almacenadas para cada proyecto incluyen el nombre del proyecto, nombre de la configuración de proyecto, las marcas para indicar si o no para compilar o implementar y nombre de la plataforma. Para obtener más información, consulte [configuración de la solución](../../extensibility/internals/solution-configuration.md).  
+ Las propiedades de configuración de soluciones almacenadas para cada proyecto incluyen el nombre del proyecto, el nombre de la configuración del proyecto, las marcas para indicar si se debe compilar o implementar, y el nombre de plataforma. Para obtener más información, vea [configuración de soluciones](../../extensibility/internals/solution-configuration.md).  
   
- El usuario puede ver y establecer los parámetros de configuración de soluciones, seleccione la solución en la jerarquía (Explorador de soluciones) y abrir las páginas de propiedades. De forma similar, puede ver y establecer los parámetros de configuración de proyecto, seleccione un proyecto en el Explorador de soluciones y abrir las páginas de propiedades para ese proyecto.  
+ El usuario puede ver y establecer los parámetros de configuración de soluciones seleccionando la solución en la jerarquía (Explorador de soluciones) y abriendo las páginas de propiedades. Del mismo modo, puede ver y establecer los parámetros de configuración del proyecto seleccionando un proyecto en Explorador de soluciones y abriendo las páginas de propiedades de ese proyecto.  
   
- El usuario también puede crear un proyecto con valores de configuración de la versión y el resto con los valores de configuración de depuración si es necesario. Para obtener más información, consulte [configuración del proyecto para compilar](../../extensibility/internals/project-configuration-for-building.md).  
+ El usuario también puede compilar un proyecto con la configuración de lanzamiento y todo el resto con valores de configuración de depuración si es necesario. Para obtener más información, vea [configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md).  
   
- El diagrama siguiente muestra cómo se implementan las interfaces que admiten las configuraciones de solución y proyecto:  
+ En el diagrama siguiente se muestra cómo se implementan las interfaces que admiten las configuraciones de soluciones y proyectos:  
   
- ![Gráfico de Interfaces de configuración](../../extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
+ ![Gráfico de interfaces de configuración](../../extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
 Interfaces de configuración  
   
  Algunas notas relacionadas con el diagrama anterior:  
   
-- `IDispatch` está marcado como opcionales en el objeto de configuración. En concreto, es opcional para que las interfaces de configuración en el objeto de exploración.  
+- `IDispatch` está marcado como opcional en el objeto de configuración. En concreto, es opcional tener las interfaces de configuración en el objeto de exploración.  
   
 - `IVsDebuggableProjectCfg` está marcado como opcional en el objeto de configuración, pero es necesario para la compatibilidad con la depuración.  
   
-- `IVsProjectCfg2` está marcado como opcional en el objeto de configuración, pero es necesario para la salida de soporte técnico de agrupación.  
+- `IVsProjectCfg2` está marcado como opcional en el objeto de configuración, pero es necesario para la compatibilidad con la agrupación de salida.  
   
-- La `Config Provider` objeto está marcado como un objeto opcional, pero la opción es dónde implementarla. Puede implementar el objeto en el objeto de proyecto o en un objeto independiente.  
+- El `Config Provider` objeto se marca como un objeto opcional, pero la opción es donde se implementa. Puede implementar el objeto en el objeto de proyecto o en un objeto independiente.  
   
-- `IVsCfgProvider2` es necesario para la compatibilidad con la plataforma y la edición de la configuración. `IVsCfgProvider` es suficiente si no implementa esa funcionalidad.  
+- `IVsCfgProvider2` se necesita para la compatibilidad de la plataforma y la edición de la configuración. `IVsCfgProvider` es suficiente si no implementa esa funcionalidad.  
   
-- Algunos de estos objetos que se muestra en el diagrama como objetos independientes se pueden combinar en la misma clase cuando sea conveniente según los requisitos de diseño específico. En otros temas de esta sección, sin embargo, los objetos e interfaces asociadas con esos objetos se tratarán según el escenario presentado en el diagrama.  
+- Algunos de estos objetos mostrados en el diagrama como objetos independientes se pueden combinar en la misma clase, siempre que sea práctico según sus requisitos de diseño específicos. En otros temas de esta sección, sin embargo, los objetos y las interfaces asociadas a esos objetos se tratarán según el escenario presentado en el diagrama.  
   
-- Algunos objetos se implementan por separado. Por ejemplo, proyecto y solución compilación se producen en subprocesos independientes y el objeto para administrar la vida de la compilación por separado desde el objeto que describe la configuración de la compilación.  
+- Ciertos objetos se implementan por separado. Por ejemplo, la creación de proyectos y soluciones tiene lugar en subprocesos independientes y el objeto para administrar la compilación reside por separado del objeto que describe la configuración de la compilación.  
   
-  Para obtener más información sobre las interfaces de objeto de configuración y las interfaces del objeto de proveedor de configuración en el diagrama anterior, consulte [objeto de configuración de proyecto](../../extensibility/internals/project-configuration-object.md). Además, [configuración del proyecto para compilar](../../extensibility/internals/project-configuration-for-building.md) proporciona más información sobre las interfaces de generador de configuración y el objeto de dependencia de compilación, y [configuración del proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md) aún más describe las interfaces conectadas al implementador de la configuración y los objetos de dependencia de implementación. Por último, [configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md) describe las interfaces de objeto de salida y de grupo de resultados y el uso de páginas de propiedades para ver y establecer las propiedades dependientes de la configuración.  
+  Para obtener más información sobre las interfaces del objeto de configuración y las interfaces de objeto del proveedor de configuración del diagrama anterior, vea [objeto de configuración del proyecto](../../extensibility/internals/project-configuration-object.md). Además, la [configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md) proporciona más información sobre el generador de configuración y las interfaces del objeto de dependencia de compilación, y la [configuración de proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md) describe aún más las interfaces conectadas al implementador de configuración y los objetos de dependencia de implementación. Por último, la [configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md) describe las interfaces del grupo de salida y del objeto de salida, y el uso de páginas de propiedades para ver y establecer las propiedades dependientes de la configuración.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)   
  [Configuración de soluciones](../../extensibility/internals/solution-configuration.md)

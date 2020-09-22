@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432996"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842919"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Paquetes de interfaz de idioma (LIP) de Microsoft y Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Con un paquete de interfaz de idiomas (LIP) de Windows, puede instalar una versi
 
 - Los caracteres definidos por el usuario final (zona de uso privado) no se pueden utilizar como tokens ni identificadores.
 
-- Los caracteres de Latín extendido-B no se pueden mostrar en algunas ventanas de herramientas de Visual Studio cuando la página de códigos de Windows está establecida en un idioma de Asia Oriental.
+- Los caracteres de Latín extendido-B no se pueden mostrar en algunas ventanas de herramientas de Visual Studio cuando la página de códigos de Windows está establecida en un idioma de Este de Asia.
 
 - Las ejecuciones de texto que constan de caracteres de scripts de varios lenguajes pueden mostrar el glifo predeterminado para algunos caracteres.
 
@@ -102,5 +102,5 @@ Con un paquete de interfaz de idiomas (LIP) de Windows, puede instalar una versi
 
    También puede usar el comando devenv para establecer el idioma que se usa para la interfaz de usuario. Para obtener más información, vea [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).
 
-## <a name="see-also"></a>Vea también
- [Configuración internacional, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/international-settings-environment-options-dialog-box.md)
+## <a name="see-also"></a>Consulte también
+ [Configuración internacional, Entorno, Cuadro de diálogo Opciones](../ide/reference/international-settings-environment-options-dialog-box.md)

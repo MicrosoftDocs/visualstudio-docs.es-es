@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Uso de IntelliTrace | Documentos de Microsoft'
+title: 'Tutorial: usar IntelliTrace | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444264"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842678"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Tutorial: Uso de IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,12 +23,12 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
   
  Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).  
   
-## <a name="GettingStarted"></a> Uso de IntelliTrace solo con eventos  
- Puede intentar depurar con solo los eventos de IntelliTrace. Los eventos de IntelliTrace son eventos del depurador, excepciones, eventos de .NET Framework y otros eventos del sistema. Antes de iniciar la depuración debe activar o desactivar eventos específicos para controlar los eventos que IntelliTrace registra. Para obtener más información, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+## <a name="using-intellitrace-with-events-only"></a><a name="GettingStarted"></a> Usar IntelliTrace solo con eventos  
+ Puede intentar depurar con solo los eventos de IntelliTrace. Los eventos de IntelliTrace son eventos del depurador, excepciones, eventos de .NET Framework y otros eventos del sistema. Antes de iniciar la depuración debe activar o desactivar eventos específicos para controlar los eventos que IntelliTrace registra. Para más información, consulte [Características de IntelliTrace](../debugger/intellitrace-features.md).  
   
  Los pasos siguientes muestran cómo depurar solo con eventos de IntelliTrace:  
   
-1. Active el evento de IntelliTrace para el acceso de archivo. Vaya a la página **Herramientas / Opciones / IntelliTrace / Eventos de IntelliTrace** y expanda la categoría **Archivo** . Compruebe la categoría de eventos **Archivo** . Esto hace que se comprueben todos los eventos de archivo (acceso, cierre y eliminación).  
+1. Active el evento de IntelliTrace para el acceso de archivo. Vaya a la página **herramientas/opciones/IntelliTrace/eventos de IntelliTrace** y expanda la categoría **archivo** . Compruebe la categoría de eventos **Archivo** . Esto hace que se comprueben todos los eventos de archivo (acceso, cierre y eliminación).  
   
 2. Cree una aplicación de consola de C#. En el archivo Program.cs, agregue la siguiente declaración de `using` :  
   
@@ -52,12 +52,12 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
   
 4. Establecer un punto de interrupción en `Console.WriteLine("done");`  
   
-5. Inicie la depuración como de costumbre. (Presione **F5** o haga clic en **Depurar / Iniciar depuración**.  
+5. Inicie la depuración como de costumbre. (Presione **F5** o haga clic en depurar **/iniciar depuración**.  
   
     > [!TIP]
-    > Mantenga abiertas las ventanas **Locales** y **Automático** mientras depura para ver y registrar los valores en estas ventanas.  
+    > Mantenga abiertas las ventanas **variables locales** y **automático** mientras realiza la depuración para ver y registrar los valores en esas ventanas.  
   
-6. La ejecución se detiene en el punto de interrupción. Si no ve la ventana **Herramientas de diagnóstico** , haga clic en **Depurar / Ventanas / Eventos de IntelliTrace**.  
+6. La ejecución se detiene en el punto de interrupción. Si no ve la ventana **herramientas de diagnóstico** , haga clic en **depurar/ventanas/eventos de IntelliTrace**.  
   
      En la ventana **Herramientas de diagnóstico** , busque la pestaña **Eventos** (verá 3 pestañas: **Eventos**, **Uso de memoria**y **Uso de CPU**). La pestaña **Eventos** muestra una lista cronológica que termina con el último evento antes de que el depurador interrumpiera la ejecución. Debería ver un evento denominado **Acceso WordSearchInputs.txt**.  
   
@@ -73,7 +73,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
   
      Puede elegir el vínculo de la ruta de acceso para abrirlo. Si la ruta de acceso completa no está disponible, aparece el cuadro de diálogo **Abrir archivo** .  
   
-     Haga clic en **Activar depuración histórica**, que establece el contexto del depurador en la hora en que se recopiló el evento seleccionado y muestra datos históricos sobre **Pila de llamadas**, **Locales** y las demás ventanas que participan en el depurador. Si el código fuente está disponible, Visual Studio mueve el puntero al código correspondiente en la ventana de código fuente para que pueda examinarlo.  
+     Haga clic en **Activar depuración histórica**, que establece el contexto del depurador en la hora en que se recopiló el evento seleccionado, mostrando los datos históricos en la **pila de llamadas**, **locales** y las demás ventanas del depurador participantes. Si el código fuente está disponible, Visual Studio mueve el puntero al código correspondiente en la ventana de código fuente para que pueda examinarlo.  
   
      La siguiente captura de pantalla es de Visual Studio 2015 Update 1.  
   
@@ -82,14 +82,14 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
 8. Si no encontró el error, intente examinar otros eventos que conduzcan al error. También puede hacer que IntelliTrace registre la información de llamadas de forma que pueda examinar las llamadas a función una por una.  
   
 ## <a name="using-intellitrace-with-events-and-function-calls"></a>Uso de IntelliTrace solo con eventos y llamadas de función  
- IntelliTrace puede registrar las llamadas de función, además de los eventos. Esto le permite ver el historial de la pila de llamadas y retroceder o avanzar a través de las llamadas de código. IntelliTrace registra los datos como nombres de función, puntos de entrada y salida de la función, y ciertos valores de parámetros y valores devueltos. Consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+ IntelliTrace puede registrar las llamadas de función, además de los eventos. Esto le permite ver el historial de la pila de llamadas y retroceder o avanzar a través de las llamadas de código. IntelliTrace registra los datos como nombres de función, puntos de entrada y salida de la función, y ciertos valores de parámetros y valores devueltos. Vea [Características de IntelliTrace](../debugger/intellitrace-features.md).  
   
 1. Active la colección de llamadas. (En **Herramientas / Opciones / IntelliTrace / General**, elija **Eventos de IntelliTrace e información de llamadas**. IntelliTrace comenzará a recopilar esta información cuando se inicie la siguiente sesión de depuración.  
   
     > [!TIP]
     > Esto puede ralentizar la aplicación y aumentar el tamaño de los archivos de registro de IntelliTrace (archivos .iTrace) que guarde en el disco. Para obtener la mayoría de los datos de llamadas, pero minimizar los efectos, registre solo los datos de los módulos que le interesen. Para cambiar el tamaño máximo de los archivos .iTrace, vaya a **Herramientas / Opciones / IntelliTrace / Avanzadas**y especifique la cantidad máxima de espacio en disco. El valor predeterminado es 250 MB.  
   
-2. Empiece a depurar la aplicación de consola de C# creada en la sección anterior. La ejecución se detiene en el punto de interrupción. Si no ve la ventana **Herramientas de diagnóstico** , haga clic en **Depurar / Ventanas / Eventos de IntelliTrace**.  
+2. Empiece a depurar la aplicación de consola de C# creada en la sección anterior. La ejecución se detiene en el punto de interrupción. Si no ve la ventana **herramientas de diagnóstico** , haga clic en **depurar/ventanas/eventos de IntelliTrace**.  
   
 3. Cambie a la pestaña **Llamadas** .  
   
@@ -98,6 +98,6 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
      Seleccione una de las llamadas de función y haga doble clic en ella. Debería ver los puntos de entrada y salida de función, así como las llamadas que la llamada actual realizó a otras funciones y los eventos de IntelliTrace generados por la llamada. Si no tiene la depuración histórica activada, esta acción la activa. Para obtener más información sobre la depuración histórica, vea [Historical Debugging](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    > Algunas llamadas pueden mostrarse atenuadas. Se debe a que IntelliTrace no registró datos de los módulos correspondientes. Para ver estos datos, haga que IntelliTrace recopile datos de esos módulos. Para obtener información sobre cómo especificar módulos, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+    > Algunas llamadas pueden mostrarse atenuadas. Se debe a que IntelliTrace no registró datos de los módulos correspondientes. Para ver estos datos, haga que IntelliTrace recopile datos de esos módulos. Para obtener información sobre cómo especificar módulos, consulte [características de IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Pasos siguientes

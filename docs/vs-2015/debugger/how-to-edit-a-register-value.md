@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Editar un valor del registro | Documentos de Microsoft
+title: Procedimiento Edición de un valor del registro | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7f0cd04b054d51119f6f6c1b0275c4f781656bff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438303"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842890"
 ---
-# <a name="how-to-edit-a-register-value"></a>Procedimiento Editar un valor del registro
+# <a name="how-to-edit-a-register-value"></a>Cómo: Editar un valor de registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La ventana Registros solo está disponible si está habilitada la depuración de nivel de dirección en el cuadro de diálogo **Opciones**, nodo **Depuración**.  
@@ -47,5 +47,5 @@ La ventana Registros solo está disponible si está habilitada la depuración de
     > [!CAUTION]
     > La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inocua puede causar cambios en alguno de los bits menos significativos de un registro de punto flotante.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)

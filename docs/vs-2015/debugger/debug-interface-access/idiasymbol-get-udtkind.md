@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fb58bec19460a78839ded86c9b7d194e838cb09
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809627"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842858"
 ---
-# <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
+# <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera la variedad de un tipo definido por el usuario (UDT).  
@@ -35,14 +35,14 @@ HRESULT get_udtKind ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve un valor de la [UdtKind (enumeración)](../../debugger/debug-interface-access/udtkind.md) enumeración que especifica el tipo de un UDT: estructura, clase o unión.  
+ enuncia Devuelve un valor de la enumeración de [enumeración udtkind (](../../debugger/debug-interface-access/udtkind.md) que especifica el tipo de un UDT: estructura, clase o Unión.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeración UdtKind](../../debugger/debug-interface-access/udtkind.md)

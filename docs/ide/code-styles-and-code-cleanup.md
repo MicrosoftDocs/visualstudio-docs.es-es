@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312592"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743338"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
@@ -59,6 +59,14 @@ Las opciones que se establecen en esta ventana se aplican a la cuenta de persona
 ### <a name="preference-and-severity"></a>Preferencia y gravedad
 
 Para cada configuración de estilo de código de esta página, puede establecer los valores de **Preferencia** y **Gravedad** con las listas desplegables de cada línea. La gravedad se puede establecer en **Solo refactorización**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Solo refactorización**. El icono de bombilla ![Bombilla](media/light-bulb-dropdown.png), de bombilla de error ![Bombilla de error](media/error-bulb.png) o de destornillador ![Destornillador](media/screwdriver.png) de **Acciones rápidas** aparece cuando se usa un estilo no preferido, y puede elegir una opción en la lista **Acciones rápidas** para volver a escribir código de forma automática para el estilo preferido.
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>Aplicación de estilos de código en la compilación
+
+A partir de la versión 16.8 de Visual Studio 2019, que incluye el SDK de .NET 5.0 RC2, puede [aplicar las convenciones de codificación de .NET en la compilación](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) para todos los proyectos de .NET. En tiempo de compilación, las infracciones al estilo de código de .NET aparecerán como advertencias o errores con un prefijo "IDE". Esto le permite aplicar estrictamente estilos de código coherentes en el código base.
+
+::: moniker-end
 
 ## <a name="apply-code-styles"></a>Aplicación de estilos de código
 

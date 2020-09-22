@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c838eddea5b3118c28fb33411a8c58a19d7b4a2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978384"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810959"
 ---
 # <a name="secure-deployment"></a>Implementación segura
   Al crear una solución de Office, el equipo de desarrollo se actualiza automáticamente para permitir que se ejecute el código del proyecto. Sin embargo, al implementar la solución, debe proporcionar una prueba en la que basar una decisión de confianza mediante la firma de la solución con un certificado o mediante la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clave de mensaje de confianza. Para obtener más información, vea [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md).
@@ -46,5 +46,5 @@ ms.locfileid: "62978384"
 
 ## <a name="see-also"></a>Consulte también
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
-- [Preparar los equipos para ejecutar o hospedar soluciones de Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
+- [Preparar los equipos para ejecutar o hospedar soluciones de Office](/previous-versions/bb772092(v=vs.110))
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

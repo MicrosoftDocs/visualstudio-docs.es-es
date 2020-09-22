@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f99a9cef4266be9a3373d20f09fca8c64e5a33b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809662"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842854"
 ---
-# <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
+# <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el desplazamiento de la posición del símbolo. Cuando utilice el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) es `LocIsRegRel` o `LocIsBitField`.  
+Recupera el desplazamiento de la ubicación del símbolo. Se usa cuando la [enumeración LocationType (](../../debugger/debug-interface-access/locationtype.md) es `LocIsRegRel` o `LocIsBitField` .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,24 +35,24 @@ HRESULT get_offset ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el desplazamiento en bytes de la posición del símbolo.  
+ enuncia Devuelve el desplazamiento en bytes de la ubicación del símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="remarks"></a>Comentarios  
- El desplazamiento es desde algún punto conocido determinado previamente. Por ejemplo, el desplazamiento para un `LocIsBitField` tipo de ubicación es normalmente desde el principio de la clase contenedora.  
+## <a name="remarks"></a>Notas  
+ El desplazamiento procede de algún punto conocido previamente determinado. Por ejemplo, el desplazamiento para un `LocIsBitField` tipo de ubicación suele ser desde el inicio de la clase contenedora.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|DESCRIPCIÓN|  
+|Requisito|Descripción|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
+|Versión:|SDK de DIA v 7.0|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)

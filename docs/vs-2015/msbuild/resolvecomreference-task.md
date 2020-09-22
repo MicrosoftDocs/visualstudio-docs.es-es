@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439344"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842946"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +47,14 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos .tlb y 
 |`ResolvedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los archivos completos en disco que corresponden a las ubicaciones físicas de las bibliotecas de tipos que se proporcionaron como entrada para esta tarea.|  
 |`ResolvedModules`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.|  
 |`SdkToolsPath`|Parámetro opcional [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Si `ExecuteAsTool` es `true`, este parámetro debe establecerse en la ruta de acceso de las herramientas de SDK para la versión del marco que se tiene como destino.|  
-|`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el archivo de caché para las marcas de tiempo del componente COM. Si no está presente, cada ejecución volverá a generar todos los contenedores.|  
-|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica la versión de la plataforma de destino del proyecto.<br /><br /> De manera predeterminada, es `String.Empty`. Significa que no existe filtrado para una referencia basándose en la plataforma de destino.|  
-|`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica la arquitectura del procesador de destino preferida. Se ha pasado a la marca de equipo tlbimp.exe después de la traducción.<br /><br /> El valor del parámetro debe ser un miembro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`StateFile`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el archivo de caché para las marcas de tiempo del componente COM. Si no está presente, cada ejecución volverá a generar todos los contenedores.|  
+|`TargetFrameworkVersion`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica la versión de la plataforma de destino del proyecto.<br /><br /> De manera predeterminada, es `String.Empty`. Significa que no existe filtrado para una referencia basándose en la plataforma de destino.|  
+|`TargetProcessorArchitecture`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica la arquitectura del procesador de destino preferida. Se ha pasado a la marca de equipo tlbimp.exe después de la traducción.<br /><br /> El valor del parámetro debe ser un miembro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica la ruta de acceso del archivo de biblioteca de tipos a las referencias COM. Los elementos incluidos en este parámetro pueden contener metadatos de elementos. Para obtener más información, vea la sección "Metadatos de elementos TypeLibFiles" a continuación.|  
 |`TypeLibNames`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los nombres de las bibliotecas de tipos que se resolverán. Los elementos incluidos en este parámetro deben contener algunos metadatos de elementos. Para obtener más información, vea la sección "Metadatos de elementos TypeLibNames" a continuación.|  
 |`WrapperOutputDirectory`|Parámetro `String` opcional.<br /><br /> Ubicación en el disco donde se coloca el ensamblado de interoperabilidad generado. Si estos metadatos de elementos no se especifican, la tarea usa la ruta de acceso absoluta del directorio donde se encuentra el archivo del proyecto.|  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Notas  
   
 ## <a name="typelibnames-item-metadata"></a>Metadatos de elementos TypeLibNames  
  En la tabla siguiente se describen los metadatos de elementos disponibles para los elementos que se han pasado al parámetro `TypeLibNames`.  
@@ -78,8 +78,8 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos .tlb y 
 > Cuanta más información proporcione para identificar de manera exclusiva una biblioteca de tipos, mayor será la posibilidad de que la tarea resuelva el archivo correcto en el disco.  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [Task Base (Clase)](../msbuild/task-base-class.md).  
+ Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [clase base de tarea](../msbuild/task-base-class.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

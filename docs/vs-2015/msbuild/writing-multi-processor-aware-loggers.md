@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425880"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842707"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Escribir registradores que reconocen varios procesadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ public interface INodeLogger: ILogger
   
   Puede modificar ConfigurableForwardingLogger para que se ajuste a sus necesidades. Para ello, llame al registrador en la línea de comandos mediante MSBuild.exe y enumere los eventos de compilación que desea que el registrador reenvíe al nodo central.  
   
-  Otra opción es crear un registrador de reenvío personalizado. Creando un registrador de reenvío personalizado puede afinar el comportamiento del registrador. Sin embargo, crear un registrador de reenvío personalizado es más complejo que simplemente personalizar ConfigurableForwardingLogger. Para obtener más información, vea [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
+  Otra opción es crear un registrador de reenvío personalizado. Creando un registrador de reenvío personalizado puede afinar el comportamiento del registrador. Sin embargo, crear un registrador de reenvío personalizado es más complejo que simplemente personalizar ConfigurableForwardingLogger. Para obtener más información, consulte [crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Utilizar ConfigurableForwardingLogger para el registro distribuido simple  
  Para asociar ConfigurableForwardingLogger o un registrador de reenvío personalizado, use el modificador `/distributedlogger` (`/dl` abreviado) en una compilación de línea de comandos de MSBuild.exe. El formato para especificar los nombres de los tipos y clases del registrador es igual que el del modificador `/logger`, sólo que un registrador distribuido siempre tiene dos clases de registro en lugar de una: el registrador de reenvío y el registrador central. A continuación, se muestra un ejemplo de cómo asociar un registrador de reenvío personalizado denominado XMLForwardingLogger.  
@@ -114,5 +114,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md)

@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537246"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075462"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 
@@ -91,7 +91,7 @@ if (performance && performance.mark) {
 
 1. En el menú **Depurar** , elija **Iniciar diagnóstico sin depurar**.
 
-     ![Elección de Consumo de energía en el concentrador de diagnósticos](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Elegir Consumo de energía en el Generador de perfiles de rendimiento](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Elija **Consumo de energía** y, a continuación, **Iniciar**.
 
@@ -113,7 +113,7 @@ if (performance && performance.mark) {
 
 2. En la lista **Seleccionar paquete de aplicaciones instalado** , elija el destino.
 
-3. Elija **Consumo de energía** en la página del concentrador de diagnósticos.
+3. Elija **Consumo de energía** en la página Generador de perfiles de rendimiento.
 
 4. Elija **Iniciar** para dar comienzo a la generación de perfiles.
 

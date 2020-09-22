@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fae39270cfbbbb93b106de65b3b01210ffc61d29
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440811"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842562"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Enumera los símbolos distintos contenidos en el origen de datos.  
+Enumera los distintos símbolos incluidos en el origen de datos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,23 +32,23 @@ IDiaEnumSymbols : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- La tabla siguiente muestran los métodos de `IDiaEnumSymbols`.  
+ En la tabla siguiente se muestran los métodos de `IDiaEnumSymbols` .  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Recupera el `IEnumVARIANT Interface` versión de este enumerador.|  
+|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Recupera la `IEnumVARIANT Interface` versión de este enumerador.|  
 |[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|Recupera el número de símbolos.|  
-|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Recupera un símbolo de por medio de un índice.|  
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Recupera un símbolo por medio de un índice.|  
 |[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Recupera un número especificado de símbolos en la secuencia de enumeración.|  
 |[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Omite un número especificado de símbolos en una secuencia de enumeración.|  
 |[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Restablece una secuencia de enumeración al principio.|  
 |[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|  
   
-## <a name="remarks"></a>Comentarios  
- Esta interfaz proporciona símbolos agrupados por un tipo específico de símbolos, por ejemplo, `SymTagUDT` (tipos definidos por el usuario) o `SymTagBaseClass`. Para trabajar con símbolos agrupados por dirección, use el [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) interfaz.  
+## <a name="remarks"></a>Notas  
+ Esta interfaz proporciona símbolos agrupados por un tipo específico de símbolo, por ejemplo, `SymTagUDT` (tipos definidos por el usuario) o `SymTagBaseClass` . Para trabajar con símbolos agrupados por dirección, use la interfaz [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) .  
   
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Esta interfaz se obtiene mediante una llamada a los métodos siguientes:  
+## <a name="notes-for-callers"></a>Notas para llamadores  
+ Obtenga esta interfaz mediante una llamada a los métodos siguientes:  
   
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
@@ -57,10 +57,10 @@ IDiaEnumSymbols : IUnknown
 - [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra cómo obtener el `IDiaEnumSymbols` interfaz y, a continuación, usar esa enumeración para los tipos de lista definido por el usuario (UDT).  
+ En este ejemplo se muestra cómo obtener la `IDiaEnumSymbols` interfaz y, a continuación, utilizar esa enumeración para enumerar los tipos definidos por el usuario (UDT).  
   
 > [!NOTE]
-> `CDiaBSTR` es una clase que encapsula un `BSTR` y controla automáticamente la liberación de la cadena de la creación de instancias se sale del ámbito.  
+> `CDiaBSTR` es una clase que ajusta un `BSTR` y controla automáticamente la liberación de la cadena cuando la creación de instancias sale del ámbito.  
   
 ```cpp#  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -89,14 +89,14 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: Dia2. h  
   
- Biblioteca: diaguids.lib  
+ Biblioteca: diaguids. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>Vea también  
- [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
+## <a name="see-also"></a>Consulte también  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession:: Findchildren (](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSourceFile:: get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
