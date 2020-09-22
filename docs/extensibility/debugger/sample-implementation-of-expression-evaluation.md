@@ -107,6 +107,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Evaluar una expresión de ventana Inspección](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [Evaluación de una expresión de inspección](../../extensibility/debugger/evaluating-a-watch-expression.md)
