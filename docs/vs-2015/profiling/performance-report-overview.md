@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434271"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842442"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
  La vista Punteros de instrucción permite ver instrucciones concretas que se ejecutaron durante la generación de perfiles de muestreo. Para obtener más información, consulte [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Vista Asignación  
- La vista Asignación está disponible si **Recopilar asignación de objetos .NET** se seleccionó en la página **General** del cuadro de diálogo de propiedades de la **Sesión de rendimiento**. Consulte [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md). La vista Asignación enumera los objetos .NET asignados por la aplicación o el componente. Cuando se expande una fila de objetos, se muestra un árbol de llamadas. El árbol de llamadas muestra las rutas de acceso de ejecución que dieron lugar a la creación del objeto. También se muestra información sobre el número de asignaciones inclusivas y exclusivas para cada función en el árbol de llamadas. La vista Asignación también puede expandir y resaltar la ruta de acceso de ejecución de una función que asignó el mayor número de objetos. Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en la función y después haga clic en **Expandir ruta de acceso activa**. Para obtener más información, consulte [Recopilación de datos de asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) y [Vista Asignación](../profiling/dotnet-memory-allocations-view.md).  
+ La vista Asignación está disponible si **Recopilar asignación de objetos .NET** se seleccionó en la página **General** del cuadro de diálogo de propiedades de la **Sesión de rendimiento**. Consulte [información general sobre la sesión de rendimiento](../profiling/performance-session-overview.md). La vista Asignación enumera los objetos .NET asignados por la aplicación o el componente. Cuando se expande una fila de objetos, se muestra un árbol de llamadas. El árbol de llamadas muestra las rutas de acceso de ejecución que dieron lugar a la creación del objeto. También se muestra información sobre el número de asignaciones inclusivas y exclusivas para cada función en el árbol de llamadas. La vista Asignación también puede expandir y resaltar la ruta de acceso de ejecución de una función que asignó el mayor número de objetos. Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en la función y después haga clic en **Expandir ruta de acceso activa**. Para obtener más información, consulte [Recopilación de datos de asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) y [Vista Asignación](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Vista Duración del objeto  
  La vista Duración del objeto está disponible si se ha seleccionado **Recopilar información de asignación de objetos .NET** y **Recopilar también la información de duración de los objetos .NET** en la página **General** del cuadro de diálogo de propiedades de la **Sesión de rendimiento**.  
@@ -96,6 +96,6 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
   
 - **Exportar**: guarda el informe actual en un archivo con formato .CSV o .XML, con opciones para guardar las diferentes vistas.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)   
  [Vistas de informes de rendimiento](../profiling/performance-report-views.md)

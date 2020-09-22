@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b69748ef44ce0ca2e16f431c0d13d99bfa449411
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548374"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807877"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 Puede cambiar la apariencia y el comportamiento del explorador para el diseñador de lenguaje específico de dominio como se indica a continuación:
@@ -111,6 +111,6 @@ Puede cambiar la apariencia y el comportamiento del explorador para el diseñado
 
      El explorador debe mostrar solo un nodo **actores** y no debe mostrar el nodo **comentarios** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](/previous-versions/bb126564(v=vs.100))

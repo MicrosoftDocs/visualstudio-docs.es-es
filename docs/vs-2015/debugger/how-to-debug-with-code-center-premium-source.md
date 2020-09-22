@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar con código fuente de Code Center Premium | Documentos de Microsoft
+title: 'Cómo: depurar con el origen de Code Center Premium | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438331"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842422"
 ---
-# <a name="how-to-debug-with-code-center-premium-source"></a>Procedimiento Depurar con código fuente de Code Center Premium
+# <a name="how-to-debug-with-code-center-premium-source"></a>Cómo: Depurar código fuente con Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], puede depurar código fuente compartido seguro de Microsoft MSDN Code Center Premium.  
@@ -39,36 +39,36 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], 
   
 3. En el menú **Herramientas** , haga clic en **Opciones**.  
   
-4. En el **opciones** cuadro de diálogo, abra el **depuración** nodo y haga clic en **General**.  
+4. En el cuadro de diálogo **Opciones** , abra el nodo **depuración** y haga clic en **General**.  
   
-5. Desactive el **habilitar solo mi código (solo administrado)** casilla de verificación.  
+5. Desactive la casilla **habilitar solo mi código (solo administrado)** .  
   
 6. Seleccione **Habilitar compatibilidad de servidor de origen**.  
   
-7. Borrar **requieren archivos de origen para ajustarse exactamente a la versión original**.  
+7. Desactive **requerir que los archivos de código fuente coincidan exactamente con la versión original**.  
   
-8. En el **depuración** nodo, haga clic en **símbolos**.  
+8. En el nodo **depuración** , haga clic en **símbolos**.  
   
-9. En el **archivo de símbolos (.pdb) ubicaciones** cuadro, desactive la **servidores de símbolos de Microsoft** casilla de verificación y agregue las siguientes ubicaciones:  
+9. En el cuadro **ubicaciones del archivo de símbolos (. pdb)** , desactive la casilla **símbolos de Microsoft Server** y agregue las siguientes ubicaciones:  
   
      `https://codepremium.msdn.microsoft.com/symbols`  
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   > No olvide incluir la barra diagonal final<strong>/</strong> al final de la ruta de acceso.  
+   > Asegúrese de incluir la barra diagonal final <strong>/</strong> al final de la ruta de acceso.  
   
      Mueva estas ubicaciones a la parte superior de la lista para asegurarse de que estos símbolos se cargan en primer lugar.  
   
    > [!NOTE]
-   > Estas ubicaciones de Code Center Premium deben enumerarse primero de modo que sean las primeras ubicaciones que se cargan. En Visual Studio 2010, no se puede mover ningún servidor situado encima del **servidores de símbolos de Microsoft** entrada, lo que debe desactivar la casilla de verificación.  
+   > Estas ubicaciones de Code Center Premium deben enumerarse primero de modo que sean las primeras ubicaciones que se cargan. En Visual Studio 2010, no puede trasladar ningún servidor por encima de la entrada **servidores de símbolos de Microsoft** , por lo que debe desactivar la casilla.  
    > 
    >  Para cargar símbolos de Microsoft durante una sesión de depuración, haga lo siguiente:  
    > 
-   > 1. En el **depurar** menú, elija **Windows** y, a continuación, elija **módulos**.  
-   >    2.  Seleccione el módulo del que desee símbolos y, a continuación, abra el menú contextual. Elija **cargar símbolos desde** y, a continuación, elija **servidores de símbolos de Microsoft**.  
+   > 1. En el menú **depurar** , elija **ventanas** y, a continuación, elija **módulos**.  
+   >    2.  Seleccione el módulo del que desee símbolos y, a continuación, abra el menú contextual. Elija **cargar símbolos desde** y, a continuación, seleccione **servidores de símbolos de Microsoft**.  
   
-10. En el **almacenar en caché los símbolos de los servidores de símbolos en este directorio** cuadro, escriba una ubicación como `C:\symbols` donde Code Center Premium puede almacenar en caché los símbolos. Almacenar en caché los símbolos puede mejorar significativamente el rendimiento durante la depuración.  
+10. En el cuadro **almacenar en caché los símbolos de los servidores de símbolos en este directorio** , escriba una ubicación como, por ejemplo, `C:\symbols` donde Code Center Premium puede almacenar en caché los símbolos. Almacenar en caché los símbolos puede mejorar significativamente el rendimiento durante la depuración.  
   
      Si tiene dificultades para depurar el código fuente con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] después de completar este procedimiento, compruebe la ubicación de los archivos almacenados en caché previamente y los archivos de símbolos anticuados. Quite los archivos de símbolos anticuados.  
   
@@ -84,15 +84,15 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], 
   
 3. Abra el proyecto de Visual Studio.  
   
-4. En el **herramientas** menú, haga clic en **asociar al proceso**.  
+4. En el menú **herramientas** , haga clic en **asociar al proceso**.  
   
-5. En el **asociar al proceso** cuadro de diálogo, haga clic en **seleccione**.  
+5. En el cuadro de diálogo **asociar al proceso** , haga clic en **seleccionar**.  
   
-6. En el **Seleccionar tipo de código** cuadro de diálogo **detectar estos tipos de código**, seleccione **nativo**, **administrada**, y **administrados () v4.0)**.  
+6. En el cuadro de diálogo **Seleccionar tipo de código** , en **detectar estos tipos de código**, seleccione **nativo**, **administrado**y **administrado (v 4.0)**.  
   
-7. Haga clic en **Aceptar** para descartar el **Seleccionar tipo de código** cuadro de diálogo.  
+7. Haga clic en **Aceptar** para descartar el cuadro de diálogo **Seleccionar tipo de código** .  
   
-8. En el **procesos disponibles** , seleccione el proceso que desea depurar.  
+8. En el cuadro **procesos disponibles** , seleccione el proceso que desea depurar.  
   
 9. Haga clic en **Adjuntar**.  
   
@@ -104,30 +104,30 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], 
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>Para depurar el código fuente de una solución existente  
   
-1. En **el Explorador de soluciones**, abra el menú contextual de la solución y, a continuación, elija **propiedades**.  
+1. En **Explorador de soluciones**, abra el menú contextual de la solución y, a continuación, elija **propiedades**.  
   
-2. En el cuadro de diálogo páginas de propiedades de la solución, elija **depurar archivos de código fuente** en el **propiedades comunes** nodo.  
+2. En el cuadro de diálogo páginas de propiedades de la solución, elija **depurar archivos de origen** en el nodo **propiedades comunes** .  
   
-3. Agregue la siguiente ubicación a la **directorios que contienen archivos de código fuente** lista:  
+3. Agregue la siguiente ubicación a la lista **directorios que contienen archivos de código fuente** :  
   
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   > No olvide incluir la barra diagonal final<strong>/</strong> al final de la ruta de acceso.  
+   > Asegúrese de incluir la barra diagonal final <strong>/</strong> al final de la ruta de acceso.  
   
 4. Para cada proyecto administrado de la solución, haga lo siguiente  
   
-   1. En el Explorador de soluciones, abra el menú contextual para el proyecto y, a continuación, elija **propiedades**.  
+   1. En Explorador de soluciones, abra el menú contextual del proyecto y, a continuación, elija **propiedades**.  
   
-   2. Seleccione **depurar** y, a continuación, elija **Habilitar depuración de código no administrado**.  
+   2. Seleccione **depurar** y, a continuación, elija **Habilitar depuración de código no alterada**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Para depurar la solución con el código fuente de Code Center Premium  
   
 1. En la clase `Package`, establezca un punto de interrupción en el constructor del paquete.  
   
-2. En el `Debug` menú, haga clic en **Iniciar depuración**.  
+2. En el `Debug` menú, haga clic en **iniciar depuración**.  
   
-3. Cuando se alcance el punto de interrupción en el constructor del paquete, vaya a la **pila de llamadas** ventana y haga clic con el marco de pila del ensamblado que desea cargar símbolos y, a continuación, **cargar símbolos**.  
+3. Cuando alcance el punto de interrupción en el constructor de paquetes, vaya a la ventana **pila de llamadas** y haga clic con el botón secundario en el marco de pila del ensamblado del que desea cargar los símbolos y, a continuación, haga clic en **cargar símbolos**.  
   
      Haga doble clic en el marco de la llamada para cargar el código fuente.  
   
@@ -139,7 +139,7 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], 
   
 3. Busque el código fuente que desea.  
   
-## <a name="see-also"></a>Vea también  
- [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
+## <a name="see-also"></a>Consulte también  
+ [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Code Center Premium](https://www.microsoft.com/en-us/sharedsource/code-center-premium.aspx)

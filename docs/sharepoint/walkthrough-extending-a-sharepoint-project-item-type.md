@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015673"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740011"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: extender un tipo de elemento de proyecto de SharePoint
   Puede utilizar el elemento de proyecto **modelo de conectividad a datos profesionales** para crear un modelo para el servicio de conectividad a datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.
@@ -161,7 +161,7 @@ ms.locfileid: "86015673"
 
 1. En **Explorador de soluciones**, abra el menú contextual del archivo source. Extension. vsixmanifest en el proyecto GenerateExternalDataLists y, a continuación, elija **abrir**.
 
-     Visual Studio abre el archivo en el editor de manifiestos. El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio abre el archivo en el editor de manifiestos. El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. En el cuadro **Product Name** , escriba **external Data List generator**.
 
@@ -292,7 +292,7 @@ ms.locfileid: "86015673"
 
 5. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia en la que se abre la solución GenerateExternalDataLists).
 
-## <a name="see-also"></a>Consulte también
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+## <a name="see-also"></a>Vea también
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Diseño de un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)

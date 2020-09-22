@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 602a185b598410de47dc9d3c98ca2b0ae3c45633
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: 6e721a424cc1c8b7202764fdc9b23eae737d22a4
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80412010"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074883"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Inicio rápido: Analizar datos de uso de CPU en Visual Studio (C++)
 
 Visual Studio proporciona muchas características eficaces para ayudarle a analizar problemas de rendimiento de la aplicación. En este tema se proporciona una forma rápida de obtener información sobre las características básicas. A continuación, veremos la herramienta para identificar los cuellos de botella de rendimiento debido al uso elevado de la CPU. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
-El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si la herramienta **Uso de CPU** que se describe aquí no proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/profiling-feature-tour.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos. [PerfTips](../profiling/perftips.md), otra herramienta de generación de perfiles integrada del depurador, también permite revisar paso a paso el código e identificar cuánto tiempo tardan en completarse determinadas funciones o bloques de código.
+El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si la herramienta **Uso de CPU** que se describe aquí no proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/profiling-feature-tour.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El Generador de perfiles de rendimiento le ofrece muchas más opciones para registrar y analizar este tipo de datos. [PerfTips](../profiling/perftips.md), otra herramienta de generación de perfiles integrada del depurador, también permite revisar paso a paso el código e identificar cuánto tiempo tardan en completarse determinadas funciones o bloques de código.
 
 Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**). En Windows 7 y versiones posteriores, puede usar la herramienta de análisis post mortem [Performance Profiler](../profiling/profiling-feature-tour.md).
 

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ed70a2263cea9c6988149dacdf7269606fcdfe3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785536"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842447"
 ---
-# <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
+# <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera el tipo de la CPU de destino.  
@@ -35,14 +35,14 @@ HRESULT get_machineType ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve un valor de la [CV_CPU_TYPE_e (enumeración)](../../debugger/debug-interface-access/cv-cpu-type-e.md) enumeración que especifica el tipo de CPU de destino.  
+ enuncia Devuelve un valor de la enumeración de [enumeración CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) que especifica el tipo de CPU de destino.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeración CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

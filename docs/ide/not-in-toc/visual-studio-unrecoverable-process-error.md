@@ -1,6 +1,6 @@
 ---
 title: Un proceso ha detectado un error irrecuperable
-ms.date: 06/22/2018
+ms.date: 09/10/2020
 ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: e1c9dc5053e2168482f4463f805bdc5e724ef6b0
+ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544346"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90025570"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Error irrecuperable del proceso de Visual Studio
 
@@ -51,3 +51,6 @@ A continuación encontrará una lista de procesos fuera de proceso usados por Vi
 - WindowsAzureTelemetryService.exe
 
 Si alguno de estos procesos finaliza inesperadamente, alguna funcionalidad de Visual Studio deja de funcionar. En algunos procesos, la pérdida de funcionalidad puede ser insignificante. En otros casos, afecta a la estabilidad de Visual Studio y se muestra un mensaje de error.
+
+> [!NOTE]
+> Si experimenta un problema que no se menciona en esta página, infórmenos a través de la herramienta [Notificar un problema](../../ide/how-to-report-a-problem-with-visual-studio.md) que aparece tanto en el Instalador de Visual Studio como en el IDE de Visual Studio.

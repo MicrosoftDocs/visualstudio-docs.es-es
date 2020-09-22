@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015930"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739946"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 1
   Puede extender el sistema de proyectos de SharePoint en Visual Studio creando sus propios tipos de elemento de proyecto. En este tutorial, creará un elemento de proyecto que se puede agregar a un proyecto de SharePoint para crear una acción personalizada en un sitio de SharePoint. La acción personalizada agrega un elemento de menú al menú **acciones del sitio** del sitio de SharePoint.
@@ -295,7 +295,7 @@ ms.locfileid: "86015930"
 
 1. En **Explorador de soluciones**, abra el menú contextual del archivo **source. Extension. vsixmanifest** en el proyecto CustomActionProjectItem y, a continuación, elija **abrir**.
 
-     Visual Studio abre el archivo en el editor de manifiestos. El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio abre el archivo en el editor de manifiestos. El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, vea [referencia de esquema de extensión VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. En el cuadro **nombre de producto** , escriba **acción personalizada elemento de proyecto**.
 
@@ -449,7 +449,7 @@ ms.locfileid: "86015930"
 ## <a name="next-steps"></a>Pasos siguientes
  Después de completar este tutorial, puede agregar un asistente a la plantilla de elemento. Cuando un usuario agrega un elemento de proyecto de acción personalizado a un proyecto de SharePoint, el asistente recopila información sobre la acción (como su ubicación y la dirección URL a la que navegar cuando se elige la acción) y agrega esta información al archivo *Elements.xml* del nuevo elemento de proyecto. Para obtener más información, vea [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

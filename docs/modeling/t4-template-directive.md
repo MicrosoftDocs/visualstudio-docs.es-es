@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2763ca540a6b0518eed8bf757412716616d3ae3e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591845"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808069"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 
@@ -156,7 +156,7 @@ Puede especificar que el código de programa de su plantilla puede heredar de ot
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Herencia en una plantilla de texto (preprocesada) en tiempo de ejecución
 
-Puede utilizar la herencia entre plantillas de texto en tiempo de ejecución para crear una plantilla básica con algunas variantes derivadas. Las plantillas en tiempo de ejecución son aquellas que tienen la propiedad **herramienta personalizada** establecida en **TextTemplatingFilePreprocessor**. Una plantilla en tiempo de ejecución genera el código al que puede llamar en la aplicación para crear el texto definido en la plantilla. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Puede utilizar la herencia entre plantillas de texto en tiempo de ejecución para crear una plantilla básica con algunas variantes derivadas. Las plantillas en tiempo de ejecución son aquellas que tienen la propiedad **herramienta personalizada** establecida en **TextTemplatingFilePreprocessor**. Una plantilla en tiempo de ejecución genera el código al que puede llamar en la aplicación para crear el texto definido en la plantilla. Para obtener más información, vea [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Si no especifica un atributo `inherits`, se generan una clase base y una clase derivada en la plantilla de texto. Al especificar un atributo `inherits`, únicamente se genera la clase derivada. Puede escribir una clase base a mano, pero debe proporcionar los métodos que utiliza la clase derivada.
 
@@ -235,7 +235,7 @@ Una plantilla de texto en tiempo de diseño es un archivo para el que la **herra
 
 Para una plantilla de texto en tiempo de diseño, puede especificar cualquier clase base que se derive de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilice la directiva `<#@assembly#>` para cargar el ensamblado o proyecto que contiene la clase base.
 
-Para obtener más información, vea ["herencia en las plantillas de texto" en el blog de Gareth Jones](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
+Para obtener más información, vea ["herencia en las plantillas de texto" en el blog de Gareth Jones](/archive/blogs/garethj/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata).
 
 ## <a name="linepragmas-attribute"></a>atributo linePragmas
 

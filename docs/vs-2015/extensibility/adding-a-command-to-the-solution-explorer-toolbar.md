@@ -1,5 +1,5 @@
 ---
-title: Agregar un comando a la barra de herramientas del explorador de soluciones | Microsoft Docs
+title: Agregar un comando a la barra de herramientas Explorador de soluciones | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,40 +13,40 @@ caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403240"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842406"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Adición de un comando a la barra de herramientas del Explorador de soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tutorial se muestra cómo agregar un botón a la **el Explorador de soluciones** barra de herramientas.  
+En este tutorial se muestra cómo agregar un botón a la barra de herramientas **Explorador de soluciones** .  
   
- Cualquier comando en un menú o barra de herramientas se denomina un botón en Visual Studio. Cuando se hace clic en el botón, se ejecuta el código en el controlador de comandos. Normalmente, los comandos relacionados se agrupan para formar un grupo. Los menús o barras de herramientas actúan como contenedores para los grupos. La prioridad determina el orden en que los comandos individuales en un grupo aparecen en el menú o en la barra de herramientas. Puede impedir que un botón que se muestra en la barra de herramientas o en el menú controlando su visibilidad. Un comando que aparece en un `<VisibilityConstraints>` sección del archivo .vsct sólo aparece en el contexto asociado. La visibilidad no se puede aplicar a grupos.  
+ Cualquier comando de una barra de herramientas o un menú se denomina botón en Visual Studio. Al hacer clic en el botón, se ejecuta el código del controlador de comandos. Normalmente, los comandos relacionados se agrupan para formar un grupo. Los menús o las barras de herramientas actúan como contenedores para los grupos. Prioridad determina el orden en que aparecen los comandos individuales en un grupo en el menú o en la barra de herramientas. Puede evitar que se muestre un botón en la barra de herramientas o en el menú controlando su visibilidad. Un comando que aparece en una `<VisibilityConstraints>` sección del archivo. Vsct solo aparece en el contexto asociado. No se puede aplicar la visibilidad a los grupos.  
   
- Para obtener más información acerca de los menús, comandos de la barra de herramientas y los archivos .vsct, vea [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Para obtener más información sobre los menús, los comandos de la barra de herramientas y los archivos. Vsct, vea [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 > [!NOTE]
-> Usar archivos de tabla de comandos XML (.vsct) en lugar de archivos de configuración (.ctc) de tabla de comandos para definir cómo los menús y comandos que aparecen en los VSPackages. Para obtener más información, consulta [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+> Use archivos de tabla de comandos XML (. Vsct) en lugar de archivos de configuración de tabla de comandos (. CTC) para definir el modo en que los menús y comandos aparecen en los VSPackages. Para obtener más información, consulta [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
- A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS después. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>Creación de una extensión con un comando de menú  
- Cree un proyecto VSIX denominado `SolutionToolbar`. Agregar una plantilla de elemento de comando de menú denominada **ToolbarButton**. Para obtener información acerca de cómo hacerlo, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Cree un proyecto VSIX denominado `SolutionToolbar` . Agregue una plantilla de elemento de comando de menú denominada **ToolbarButton**. Para obtener información sobre cómo hacerlo, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Agregar un botón a la barra de herramientas del explorador de soluciones  
- En esta sección del tutorial se muestra cómo agregar un botón a la **el Explorador de soluciones** barra de herramientas. Cuando se hace clic en el botón, se ejecuta el código en el método de devolución de llamada.  
+## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Agregar un botón a la barra de herramientas Explorador de soluciones  
+ En esta sección del tutorial se muestra cómo agregar un botón a la barra de herramientas **Explorador de soluciones** . Al hacer clic en el botón, se ejecuta el código del método de devolución de llamada.  
   
-1. En el archivo ToolbarButtonPackage.vsct, vaya a la `<Symbols>` sección. El `<GuidSymbol>` nodo contiene el grupo de menús y el comando generado por la plantilla de paquete. Agregar un `<IDSymbol>` elemento a este nodo para declarar el grupo que contenga el comando.  
+1. En el archivo ToolbarButtonPackage. Vsct, vaya a la  `<Symbols>` sección. El `<GuidSymbol>`  nodo contiene el grupo de menús y el comando generado por la plantilla de paquete. Agregue un `<IDSymbol>` elemento a este nodo para declarar el grupo que va a contener el comando.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2. En la `<Groups>` sección, después de la entrada de grupo existente, definir el nuevo grupo que declaró en el paso anterior.  
+2. En la `<Groups>` sección, después de la entrada de grupo existente, defina el nuevo grupo que declaró en el paso anterior.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -55,9 +55,9 @@ En este tutorial se muestra cómo agregar un botón a la **el Explorador de solu
           </Group>  
     ```  
   
-     Defina el elemento primario par GUID: ID `guidSHLMainMenu` y `IDM_VS_TOOL_PROJWIN` coloca este grupo en el **el Explorador de soluciones** barra de herramientas y establecer un valor de prioridad alta se coloca después de los otros grupos de comandos.  
+     Al establecer el par GUID: ID en `guidSHLMainMenu` y se `IDM_VS_TOOL_PROJWIN` coloca este grupo en la barra de herramientas **Explorador de soluciones** , y al establecer un valor de prioridad alta, se coloca después de los otros grupos de comandos.  
   
-3. En el `<Buttons>` sección, cambie el identificador principal de generado `<Button>` entrada para reflejar el grupo que ha definido en el paso anterior. Modificado `<Button>` elemento debe tener este aspecto:  
+3. En la `<Buttons>` sección, cambie el identificador primario de la entrada generada `<Button>` para que refleje el grupo que definió en el paso anterior. El `<Button>` elemento modificado debería tener el siguiente aspecto:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -71,27 +71,27 @@ En este tutorial se muestra cómo agregar un botón a la **el Explorador de solu
   
 4. Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
-     El **el Explorador de soluciones** barra de herramientas debe mostrar el nuevo botón de comando a la derecha de los botones existentes. El icono del botón es el tachado.  
+     En la barra de herramientas **Explorador de soluciones** debe mostrarse el botón nuevo comando a la derecha de los botones existentes. El icono del botón es el tachado.  
   
 5. Haga clic en el botón nuevo.  
   
-     Un cuadro de diálogo que tiene el mensaje **ToolbarButtonPackage dentro SolutionToolbar.ToolbarButton.MenuItemCallback()** debe mostrarse.  
+     Se debe mostrar un cuadro de diálogo que tenga el mensaje **ToolbarButtonPackage dentro de SolutionToolbar. ToolbarButton. MenuItemCallback ()** .  
   
 ## <a name="controlling-the-visibility-of-a-button"></a>Controlar la visibilidad de un botón  
- Esta sección del tutorial muestra cómo controlar la visibilidad de un botón en una barra de herramientas. Al establecer un contexto en uno o varios proyectos en la `<VisibilityConstraints>` sección del archivo SolutionToolbar.vsct, restringe un botón para que aparezca solo cuando un proyecto o proyectos están abiertos.  
+ En esta sección del tutorial se muestra cómo controlar la visibilidad de un botón en una barra de herramientas. Al establecer un contexto en uno o varios proyectos de la `<VisibilityConstraints>` sección del archivo SolutionToolbar. Vsct, se restringe un botón para que aparezca solo cuando se abra un proyecto o proyectos.  
   
-#### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Para mostrar un botón cuando se abren uno o varios proyectos  
+#### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Para mostrar un botón cuando uno o varios proyectos están abiertos  
   
-1. En el `<Buttons>` sección de ToolbarButtonPackage.vsct, agregue dos marcadores de comando existente `<Button>` elemento, entre el `<Strings>` y `<Icons>` etiquetas.  
+1. En la `<Buttons>` sección de ToolbarButtonPackage. Vsct, agregue dos marcadores de comando al `<Button>` elemento existente, entre las `<Strings>` `<Icons>` etiquetas y.  
   
    ```xml  
    <CommandFlag>DefaultInvisible</CommandFlag>  
    <CommandFlag>DynamicVisibility</CommandFlag>  
    ```  
   
-    El `DefaultInvisible` y `DynamicVisibility` marcas se deben establecerlo que las entradas de la `<VisibilityConstraints>` sección surta efecto.  
+    `DefaultInvisible` `DynamicVisibility` Se deben establecer las marcas y para que las entradas de la `<VisibilityConstraints>` sección surtan efecto.  
   
-2. Crear un `<VisibilityConstraints>` sección que tiene dos `<VisibilityItem>` entradas. Colocar la nueva sección justo después del cierre `</Commands>` etiqueta.  
+2. Cree una `<VisibilityConstraints>` sección que tenga dos `<VisibilityItem>` entradas. Coloque la nueva sección justo después de la `</Commands>` etiqueta de cierre.  
   
    ```xml  
    <VisibilityConstraints>  
@@ -108,15 +108,15 @@ En este tutorial se muestra cómo agregar un botón a la **el Explorador de solu
   
 3. Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
-    El **el Explorador de soluciones** barra de herramientas no contiene el botón tachado.  
+    La barra de herramientas **Explorador de soluciones** no contiene el botón tachado.  
   
 4. Abra cualquier solución que contenga un proyecto.  
   
-    El botón tachado aparece en la barra de herramientas a la derecha de los botones existentes.  
+    El botón tachado aparece en la barra de herramientas situada a la derecha de los botones existentes.  
   
-5. En el **archivo** menú, haga clic en **Cerrar solución**. El botón desaparece de la barra de herramientas.  
+5. En el menú **Archivo** , haga clic en **Cerrar solución**. El botón desaparece de la barra de herramientas.  
   
-   Controla la visibilidad del botón [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hasta que se carga el VSPackage. Una vez cargado el VSPackage, la visibilidad del botón se controla mediante el VSPackage.  Para obtener más información, consulte [MenuCommands frente a. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
+   Controla la visibilidad del botón [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hasta que se carga el VSPackage. Una vez cargado el VSPackage, el VSPackage controla la visibilidad del botón.  Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

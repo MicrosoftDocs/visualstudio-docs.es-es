@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508514"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740050"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -24,7 +24,7 @@ La información para su servicio en la nube se almacena en los siguientes archiv
 - **ServiceDefinition. csdef** : el archivo de definición de servicio define la configuración en tiempo de ejecución para el servicio en la nube, incluidos los roles necesarios, los puntos de conexión y el tamaño de la máquina virtual. Ninguno de los datos almacenados en `ServiceDefinition.csdef` se puede cambiar cuando se ejecuta el rol.
 - **ServiceConfiguration.cscfg**: el archivo de configuración de servicio configura el número de instancias de un rol que se ejecutan y los valores de la configuración definida para un rol. Los datos almacenados en `ServiceConfiguration.cscfg` se pueden cambiar mientras se ejecuta el rol.
 
-Para almacenar diferentes valores de la configuración que controlan el funcionamiento de su rol, puede tener varias configuraciones del servicio. Puede usar una configuración de servicio diferente para cada entorno de implementación. Por ejemplo, puede establecer su cadena de conexión de la cuenta de almacenamiento para usar el Emulador de Azure Storage local en una configuración de servicio local y crear otra configuración del servicio para usar Azure Storage en la nube.
+Para almacenar diferentes valores de la configuración que controlan el funcionamiento de su rol, puede tener varias configuraciones del servicio. Puede usar una configuración de servicio diferente para cada entorno de implementación. Por ejemplo, puede establecer la cadena de conexión de la cuenta de almacenamiento para usar el emulador de Azure Storage local en una configuración de servicio local y crear otra configuración del servicio para usar Azure Storage en la nube.
 
 Al crear un servicio en la nube de Azure en Visual Studio, se crean y se agregan al proyecto de Azure dos configuraciones de servicio automáticamente:
 

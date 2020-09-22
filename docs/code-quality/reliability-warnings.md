@@ -1,29 +1,29 @@
 ---
-title: advertencias de confiabilidad
+title: Reglas de confiabilidad
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
-- warnings, reliability
-- reliability warnings
-- managed code analysis warnings, reliability warnings
+- rules, reliability
+- reliability rules
+- managed code analysis rules, reliability rules
 ms.assetid: 77886846-10a2-4585-968a-7eb60ebe07e8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6350c98f5fb4bfab5cfd7d70a5d509d3098b15f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: e0a35b9c49f2eb5655eeb67721b0fafdbbe1e087
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508540"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808277"
 ---
-# <a name="reliability-warnings"></a>Advertencias de confiabilidad
+# <a name="reliability-rules"></a>Reglas de confiabilidad
 
-Las advertencias de confiabilidad admiten la confiabilidad de bibliotecas y aplicaciones, como la memoria y el uso de subprocesos correctos. Las reglas de confiabilidad incluyen:
+Las reglas de confiabilidad admiten la confiabilidad de bibliotecas y aplicaciones, como la correcta utilización de la memoria y el subproceso.
 
 |Regla|Descripción|
 |----------|-----------------|

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Elegir eventos de muestreo | Microsoft Docs
+title: 'Cómo: Elegir eventos de muestreo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432832"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842346"
 ---
-# <a name="how-to-choose-sampling-events"></a>Procedimiento Elegir eventos de muestreo
+# <a name="how-to-choose-sampling-events"></a>Cómo: Elegir eventos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] recopilan datos de rendimiento en un intervalo especificado como un número de ciclos de procesador que utiliza el proceso del que se genera el perfil. El número predeterminado de ciclos en un intervalo es de 10 000 000, que es aproximadamente 0,01 segundos en un equipo de 1 GH. Puede cambiar el número de ciclos en un intervalo, así como el evento de muestras. Los siguientes eventos de muestras están disponibles:  
@@ -61,9 +61,9 @@ De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[v
   
 5. Al seleccionar un evento de muestras, el valor del intervalo de muestreo predeterminado se muestra en el cuadro de texto **Intervalo de muestreo**. Si es necesario, puede escribir el valor que quiera en el cuadro de texto.  
   
-## <a name="see-also"></a>Vea también  
- [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Cómo: Elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)   
- [Contadores de CPU y de Windows](../profiling/cpu-and-windows-counters.md)   
- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
+## <a name="see-also"></a>Consulte también  
+ [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
+ [Cómo: elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)   
+ [Contadores de Windows y CPU](../profiling/cpu-and-windows-counters.md)   
+ [Descripción de los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)

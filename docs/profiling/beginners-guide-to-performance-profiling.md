@@ -17,33 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537376"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075436"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU
 
-Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. En este artículo se muestra cómo utilizar la pestaña **Uso de CPU** de las Herramientas de diagnóstico con el fin de obtener datos de rendimiento de la aplicación.
+Busque problemas de rendimiento al realizar la depuración con la herramienta de diagnóstico **Uso de CPU** integrada en el depurador.  También puede analizar el uso de CPU sin un depurador asociado o si establece como destino una aplicación en ejecución. Para obtener más información, vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Cuando el depurador se detiene, la herramienta **Uso de CPU** recopila información sobre las funciones que se ejecutan en la aplicación. La herramienta enumera las funciones que realizaron trabajo y proporciona un gráfico de escala de tiempo que se puede utilizar para centrarse en segmentos específicos de la sesión de muestreo.
-
-El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si **Uso de CPU** no le proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/profiling-feature-tour.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
+Cuando el depurador se pausa, la herramienta **Uso de CPU** de la ventana Herramientas de diagnóstico recopila información sobre las funciones que se ejecutan en la aplicación. La herramienta enumera las funciones que realizaron trabajo y proporciona un gráfico de escala de tiempo que se puede utilizar para centrarse en segmentos específicos de la sesión de muestreo.
 
 > [!Important]
-> Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
-
-En este artículo, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador asociado o si establece como destino una aplicación en ejecución. Para obtener más información, vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). También se puede usar otra herramienta de generación de perfiles, [PerfTips](../profiling/perftips.md), para revisar paso a paso el código e identificar cuánto tiempo tardan en completarse determinadas funciones o bloques de código.
-
-Las herramientas de generación de perfiles se pueden usar sin el depurador en Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
+> Las Herramientas de diagnóstico integradas en el depurador se admiten para el desarrollo de .NET en Visual Studio, incluido ASP.NET, ASP.NET Core y para el desarrollo nativo o de C++. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
 
 En este tutorial va a:
 
 > [!div class="checklist"]
 > * Recopilar datos de Uso de CPU
 > * Analizar datos de uso de CPU
+
+Si **Uso de CPU** no le proporciona los datos que necesita, las demás herramientas de generación de perfiles del [Generador de perfiles de rendimiento](../profiling/profiling-feature-tour.md#post_mortem) proporcionan distintos tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red.
 
 ## <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
 

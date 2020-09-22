@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537285"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038353"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 
@@ -100,7 +100,7 @@ En la vista de detalles es donde se invierte la mayor parte del tiempo en el an�
 
 Se admiten los siguientes eventos:
 
-|Nombre|Descripción|
+|NOMBRE|Descripción|
 |-|-|
 |**Análisis**|Tiempo invertido en analizar archivos XAML y crear objetos.<br /><br /> Si se expande un nodo **Análisis** de **Detalles de la escala de tiempo**, se muestra la cadena de dependencia de todos los archivos XAML que se han analizado como resultado del evento raíz. Esta sugerencia permite identificar análisis de archivos y creación de objetos innecesarios en escenarios sensibles al rendimiento y optimizarlos.|
 |**Diseño**|En aplicaciones grandes, pueden mostrarse miles de elementos en la pantalla al mismo tiempo. Esta pantalla podría dar lugar a una baja velocidad de fotogramas de la UI y, por tanto, una mala capacidad de respuesta de la aplicación. El evento de diseño determina con precisión el costo de implementar cada elemento (es decir, el tiempo invertido en Arrange, Measure, ApplyTemplate, ArrangeOverride y MeasureOverride). También compila los árboles visuales que han participado en un cálculo de diseño. Puede usar esta visualización para determinar qué árboles lógicos debe eliminar o para evaluar otros mecanismos de aplazamiento a fin de optimizar el cálculo de diseño.|
@@ -116,7 +116,7 @@ Se admiten los siguientes eventos:
 
 Utilice la barra de herramientas **Detalles de la escala de tiempo** para ordenar, filtrar y especificar las anotaciones de las entradas de la vista **Detalles de la escala de tiempo** .
 
-|Nombre|Descripción|
+|NOMBRE|Descripción|
 |-|-|
 |**Ordenar por**|Ordenar por hora de inicio o longitud de los eventos.|
 |![Agrupación de eventos por marco](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Agrega o quita una categoría **Marco** de nivel superior que agrupa eventos por marco.|
@@ -125,7 +125,7 @@ Utilice la barra de herramientas **Detalles de la escala de tiempo** para ordena
 
 ## <a name="see-also"></a>Vea también
 
-- [WPF team blog: New UI Performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/) (Blog del equipo de WPF: Nueva herramienta de análisis de rendimiento de interfaz de usuario para aplicaciones para WPF)
+- [WPF team blog: New UI Performance analysis tool for WPF applications](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications) (Blog del equipo de WPF: Nueva herramienta de análisis de rendimiento de interfaz de usuario para aplicaciones para WPF)
 - [Procedimientos recomendados de rendimiento para aplicaciones para UWP con C++, C# y Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Optimizar el rendimiento de las aplicaciones WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Generación de perfiles en Visual Studio](../profiling/index.yml)

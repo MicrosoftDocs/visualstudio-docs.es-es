@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b067526fb8305c3c2dc4a74ddd75c8541c0fef05
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64779305"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842339"
 ---
-# <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
+# <a name="idiasymbolget_virtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el índice del símbolo en la tabla de desplazamiento de base virtual.  
+Recupera el índice del símbolo en la tabla de desplazamiento base virtual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,13 +35,13 @@ HRESULT get_virtualBaseDispIndex (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el índice en la tabla de desplazamiento de base virtual.  
+ enuncia Devuelve el índice en la tabla de desplazamiento base virtual.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
