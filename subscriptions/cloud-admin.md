@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Configuración de los administradores de suscripciones mensuales
-ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434307"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006116"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configuración de los administradores de suscripciones mensuales de Visual Studio
 
@@ -60,10 +60,10 @@ Ahora, el administrador nuevo puede iniciar sesión en el [portal de administrac
 Para obtener información sobre las suscripciones mensuales de Visual Studio, vea [Introducción](vscloud-overview.md) en Compra de suscripciones. Para comprar suscripciones mensuales de Visual Studio, visite Visual Studio Marketplace en [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription).
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre la administración de suscripciones de Visual Studio.
@@ -71,6 +71,3 @@ Obtenga más información sobre la administración de suscripciones de Visual S
 - [Asignación de varias suscripciones](assign-license-bulk.md)
 - [Editar suscripciones](edit-license.md)
 - [Determinación del uso máximo](maximum-usage.md)
-
-
-

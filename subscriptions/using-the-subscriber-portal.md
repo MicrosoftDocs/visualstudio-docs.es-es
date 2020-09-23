@@ -7,18 +7,18 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: overview
 description: Obtenga información sobre toda la gama de ventajas disponibles en el portal de suscripciones de Visual Studio
-ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2b79a1f4bedb9c6e04e7f764befd478e37222e3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902885"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005204"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del Portal de suscriptor: my.visualstudio.com
 
 El Portal de suscripciones de Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), es el recurso que incluye todas las opciones para sacar partido del amplio abanico de ventajas que ofrece su suscripción a Visual Studio.
 
-El uso del portal requiere el inicio de sesión con la identidad asociada a su suscripción.  Puede ser una cuenta de Microsoft (MSA) o una dirección de correo electrónico que le haya proporcionado una organización, como su empresa o institución educativa.  Obtenga información acerca del [inicio de sesión](signing-in.md).
+El uso del portal requiere el inicio de sesión con la identidad asociada a su suscripción.  Puede ser una cuenta de Microsoft (MSA) o una dirección de correo electrónico que le haya proporcionado una organización, como su empresa o institución educativa.  Obtenga información acerca del [inicio de sesión](./index.yml).
 
 El portal está organizado en seis páginas.  Cada una de ellas proporciona acceso a los diferentes productos o servicios incluidos con su suscripción.  Las seis páginas son Beneficios, Descargas, Claves de producto, Suscripciones, Soporte técnico y Marketplace.
 
@@ -54,10 +54,10 @@ Además de las ventajas particulares que se encuentran en la categoría Soporte 
 ¿Tiene que renovar una suscripción a la nube de Visual Studio?  ¿Desea descargar las extensiones más recientes para la familia de productos de Visual Studio?  Marketplace ayuda a los usuarios a encontrar extensiones, herramientas y servicios que hacen de Azure DevOps, Azure DevOps Server y Visual Studio Code productos aún mejores. Puede incluso convertirse en publicador y publicar sus propias extensiones en Marketplace.
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
-Inicie sesión en el portal en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) y vea las ventajas.  También puede obtener más información sobre cómo iniciar sesión en el portal con la [cuenta Microsoft](sign-in-msa.md) (MSA), la [cuenta profesional o educativa](sign-in-work.md) e incluso la [cuenta de GitHub](sign-in-github.md). 
+Inicie sesión en el portal en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) y vea las ventajas.  También puede obtener más información sobre cómo iniciar sesión en el portal con la [cuenta Microsoft](sign-in-msa.md) (MSA), la [cuenta profesional o educativa](sign-in-work.md) e incluso la [cuenta de GitHub](sign-in-github.md).

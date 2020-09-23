@@ -7,12 +7,12 @@ ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de administrar las suscripciones de equipos grandes y de contratistas externos.
-ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232320"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005566"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipos grandes y contratistas externos
 Los administradores de suscripciones de Visual Studio se encargan de garantizar que cada usuario que interactúa con el software con licencia de Visual Studio tenga una licencia acorde a su propia suscripción de Visual Studio.
@@ -35,10 +35,10 @@ Los contratistas externos pueden traer licencias para interaccionar con el entor
 - [Términos de las licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Consulte también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:

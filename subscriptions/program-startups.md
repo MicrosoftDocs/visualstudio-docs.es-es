@@ -7,12 +7,12 @@ ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalles sobre qué suscripciones se ofrecen a través del programa Microsoft for Startups.
-ms.openlocfilehash: 600f2e92843ee734766ea5e2d797620cd622892b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 8e46924d0980eed4eca27eef7766e12c8733d851
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561460"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005825"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Suscripciones de Visual Studio ofrecidas a startups
 Las empresas emergentes que reúnan los requisitos necesarios y que participen en el programa de Microsoft for Startups pueden ganar cinco [suscripciones de nube mensuales](https://visualstudio.microsoft.com/vs/pricing/) de Visual Studio Enterprise. 
@@ -41,10 +41,10 @@ En las suscripciones de nube mensuales, las cancelaciones surten efecto el prime
 En el caso de las suscripciones de nube anuales, las cancelaciones surten efecto el primer día del mes siguiente a los 12 meses desde la compra original, o 12 meses a partir del último cargo de renovación anual. Por ejemplo, si se ha adquirido una suscripción de nube anual de Visual Studio Professional el 3 de enero de 2018, permanecerá activa hasta el 1 de febrero de 2019, momento en el que se renueva automáticamente otro año. Si se cancela en cualquier momento desde entonces hasta el 1 de febrero de 2020, la suscripción caducará el 1 de febrero de 2020. No existe derecho de reembolso si una suscripción de nube anual se cancela en algún momento durante el año de vigencia de la suscripción.
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Más información sobre Microsoft for Startups](https://startups.microsoft.com)

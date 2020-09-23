@@ -7,12 +7,12 @@ ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Aprenda a iniciar sesión en las suscripciones de Visual Studio con la cuenta de GitHub.
-ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dcbe5a908a2d149de7c254ec6ac6f3ec1eb6e72
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233229"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005269"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta de GitHub 
 
@@ -65,10 +65,10 @@ R:  Vaya a la [pestaña Seguridad](https://account.microsoft.com/security) de ac
 R:  Si tiene una dirección de correo electrónico de Azure Active Directory en la cuenta de GitHub, esto significa que ya tiene una identidad de Microsoft que puede acceder a Azure y ejecutar canalizaciones de CI con el código de GitHub. El empleo de esa cuenta garantiza que los recursos de Azure y las canalizaciones de compilación permanezcan dentro de los límites organizativos. Pero si está realizando trabajo personal, se recomienda usar una dirección de correo electrónico personal en la cuenta de GitHub para tener siempre acceso a ella. Una vez hecho esto, intente volver a iniciar sesión y seleccione **Usar otra dirección de correo electrónico** cuando se le pida iniciar sesión en la cuenta profesional o educativa. Esto le permite crear una nueva cuenta Microsoft con esa dirección de correo electrónico personal.
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
-Una vez que haya iniciado sesión correctamente en el portal de suscripciones, se recomienda visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, los servicios y las ofertas disponibles.  
+Una vez que haya iniciado sesión correctamente en el portal de suscripciones, se recomienda visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, los servicios y las ofertas disponibles.

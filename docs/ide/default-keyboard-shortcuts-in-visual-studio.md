@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533645"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022222"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
@@ -35,7 +35,7 @@ Para obtener más información sobre la accesibilidad en Visual Studio, consulte
 - [Analizar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Editar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [Proyecto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [Prueba](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [Prueba](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [Arquitectura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [Menús contextuales del editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
 - [Menús contextuales de proyectos y soluciones](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)

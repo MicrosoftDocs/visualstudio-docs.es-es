@@ -1,18 +1,18 @@
 ---
 title: Administración de licencias sobreasignadas| Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 03/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Conozca cómo los administradores pueden resolver suscripciones sobreasignadas
-ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 452363d09c6036d7edae5dab94e5d71ef87fb8b5
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453722"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022595"
 ---
 # <a name="over-allocated-subscriptions"></a>Suscripciones con exceso de asignación
 A veces los pedidos se cambian después de haber agregado a los suscriptores, lo que puede causar que en su empresa haya más suscriptores asignados que licencias en propiedad. Este hecho se conoce como "sobreasignación".  
@@ -36,16 +36,12 @@ Hay varias maneras de resolver las sobreasignaciones:
 ## <a name="billing-and-true-up"></a>Facturación y "true-up"
 Si su organización tiene un contrato Enterprise (EA), los administradores pueden asignar suscripciones sin necesidad de adquirirlas y pagarlas más adelante a través de un proceso de reconciliación conocido como "true-up".  Cuando se produce un exceso de asignación, se facturará a su organización el número máximo de suscripciones asignadas a los usuarios durante el "true-up".  Esto se realiza incluso aunque ya no tenga el número máximo de suscripciones asignadas en el momento en que se lleve a cabo el "true-up".  Para obtener más información sobre cómo supervisar el uso máximo, visite el tema [Uso máximo](maximum-usage.md).
 
-> [!Important]
-> Si las suscripciones de Visual Studio con GitHub Enterprise son asignadas por administradores de suscripciones de Visual Studio y nunca se han comprado estas suscripciones, no serán visibles para los administradores de GitHub Enterprise de la organización. Para asegurarse de que las suscripciones de GitHub Enterprise sean visibles, debe realizarse una compra que incluya **como mínimo una** suscripción de Visual Studio Professional con GitHub Enterprise o de Visual Studio Enterprise con GitHub Enterprise la primera vez que se asignen las suscripciones.
->
-> Es responsabilidad del cliente asegurarse de que para cada suscripción de GitHub que se asigne haya una suscripción de Visual Studio con GitHub correspondiente asignada en el portal de administración para seguir cumpliendo los requisitos de licencia para esta suscripción.
 
-## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+## <a name="see-also"></a>Consulte también
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Obtenga más información sobre cómo administrar [suscripciones de Visual Studio con GitHub Enterprise](assign-github.md).

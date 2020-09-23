@@ -260,9 +260,21 @@
         - name: Personalizar las tareas de compilación y depuración
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Desarrollo con Codespaces (versión preliminar)
+      items:
+        - name: Información general
+          href: ide/codespaces/codespaces-overview.md
+        - name: "Uso de Visual\_Studio con un codespace"
+          href: ide/codespaces/use-visual-studio-with-codespaces.md
+        - name: Personalización de un codespace
+          href: ide/codespaces/customize-codespaces.md
+        - name: "Características de Visual\_Studio compatibles"
+          href: ide/codespaces/supported-features-codespaces.md
     - name: Conexión a un proyecto o repositorio
       displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
+    - name: "Nueva experiencia de Git en Visual\_Studio (versión preliminar)"
+      href: ide/git-with-visual-studio.md
     - name: Editor
       items:
         - name: Usar el editor

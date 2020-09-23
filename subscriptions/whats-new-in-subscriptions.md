@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649653"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005295"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novedades de las suscripciones de Visual Studio
 
@@ -33,7 +33,7 @@ También hemos combinado las opciones para agregar suscriptores individuales y r
 Hemos facilitado la coincidencia de los suscriptores que usan cuentas de Microsoft (MSA) con Azure Active Directory (Azure AD), de modo que se puedan vincular rápidamente las dos identidades.  El uso de las identidades de Azure AD proporciona una mayor seguridad y una administración de suscripciones más sencilla.  Consulte el [artículo sobre inicios de sesión personales](personal-email-sign-ins.md) para obtener más detalles. 
 
 #### <a name="add-subscribers-using-azure-active-directory-groups"></a>Incorporación de suscriptores mediante grupos de Azure Active Directory
-Si su organización usa Azure Active Directory (Azure AD), ahora se pueden administrar las suscripciones mediante grupos de Azure AD.  La asignación de suscripciones a grupos ofrece la capacidad de proporcionar rápidamente suscripciones del mismo tipo a varios usuarios.  Cuando se agregan nuevos usuarios al grupo de Azure AD, se les asigna automáticamente una suscripción.  Si se quita un usuario del grupo de Azure AD, la suscripción también se quita.  Esto ayuda a su organización a automatizar la administración de suscripciones, lo que ahorra tiempo y esfuerzo a los administradores.  Consulte el artículo [Incorporación de varios usuarios](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) en nuestra documentación para obtener información detallada. 
+Si su organización usa Azure Active Directory (Azure AD), ahora se pueden administrar las suscripciones mediante grupos de Azure AD.  La asignación de suscripciones a grupos ofrece la capacidad de proporcionar rápidamente suscripciones del mismo tipo a varios usuarios.  Cuando se agregan nuevos usuarios al grupo de Azure AD, se les asigna automáticamente una suscripción.  Si se quita un usuario del grupo de Azure AD, la suscripción también se quita.  Esto ayuda a su organización a automatizar la administración de suscripciones, lo que ahorra tiempo y esfuerzo a los administradores.  Consulte el artículo [Incorporación de varios usuarios](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) en nuestra documentación para obtener información detallada. 
 
 ### <a name="cast-highlight"></a>Resaltado de CAST
 Nos complace anunciar una expansión de las ventajas que ofrece nuestro socio comercial,CAST Highlight. 

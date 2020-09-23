@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo puede aprovechar Microsoft Windows Virtual Desktop a través de la suscripción de Visual Studio
-ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561369"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005051"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acceso a Windows Virtual Desktop en las suscripciones 
 Ahora los suscriptores de Visual Studio pueden usar sus créditos individuales de desarrollo y pruebas de Azure para los servicios de Microsoft Windows Virtual Desktop.  
@@ -23,7 +23,7 @@ A continuación se indica lo que se puede hacer al ejecutar Windows Virtual Desk
 - Proporcionar escritorios virtuales de Windows 7 con actualizaciones gratuitas de seguridad ampliada
 - Llevar sus aplicaciones y escritorios existentes de Servicios de Escritorio remoto (RDS) y Windows Server a cualquier equipo
 - Virtualizar escritorios y aplicaciones
-- Administre aplicaciones y escritorios de Windows 10, Windows Server y Windows 7 con una experiencia de administración unificada. Para obtener más información sobre lo que puede hacer con Windows Virtual Desktop, vea el [vídeo de introducción](https://docs.microsoft.com/azure/virtual-desktop/overview).
+- Administre aplicaciones y escritorios de Windows 10, Windows Server y Windows 7 con una experiencia de administración unificada. Para obtener más información sobre lo que puede hacer con Windows Virtual Desktop, vea el [vídeo de introducción](/azure/virtual-desktop/overview).
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>Uso de Windows Virtual Desktop con Azure 
 Ahora, los suscriptores de Visual Studio tienen varias formas de usar las suscripciones de Azure para pagar los servicios de Windows Virtual Desktop:
@@ -35,13 +35,13 @@ Ahora, los suscriptores de Visual Studio tienen varias formas de usar las suscr
 Windows Virtual Desktop requiere una instancia de Azure Active Directory (Azure AD) a la que unir las máquinas virtuales.  Los usuarios deben ser miembros de esta instancia de Azure AD.  Hay dos opciones para implementar Azure AD:
 - Servicios de Azure AD Directory.  Para la mayoría de los usuarios, esta es la opción más sencilla de implementar.
 - Promoción de una máquina virtual en la que se ejecute un controlador de dominio.  Esta opción requiere más trabajo de configuración, pero ofrece a la mayoría de los usuarios un menor costo operativo.
-Para ver una lista completa de los requisitos previos para usar Windows Virtual Desktop, visite la [página de información general](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements) de Windows Virtual Desktop. 
+Para ver una lista completa de los requisitos previos para usar Windows Virtual Desktop, visite la [página de información general](/azure/virtual-desktop/overview#requirements) de Windows Virtual Desktop. 
 
 ## <a name="get-started"></a>Primeros pasos 
 Cuando estén implementados todos los requisitos previos, le interesará completar varias acciones para que se realice la implementación.  Consulte estos tutoriales para empezar:
-- [Creación de un inquilino de Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
-- [Creación de un grupo de host](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace) con Azure Portal
-- [Administración de grupos de aplicaciones](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups) para Windows Virtual Desktop
+- [Creación de un inquilino de Windows Virtual Desktop](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
+- [Creación de un grupo de host](/azure/virtual-desktop/create-host-pools-azure-marketplace) con Azure Portal
+- [Administración de grupos de aplicaciones](/azure/virtual-desktop/manage-app-groups) para Windows Virtual Desktop
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
@@ -63,11 +63,11 @@ Cuando estén implementados todos los requisitos previos, le interesará complet
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación sobre Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Documentación de Azure](/azure/)
+- [Documentación sobre Windows Virtual Desktop](/azure/virtual-desktop/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 -   Si tiene que comprar suscripciones de Visual Studio, consulte lo siguiente:
      - [Precios para compras al por menor](https://visualstudio.microsoft.com/vs/pricing/) a través de Microsoft Store
      - [Programas de licencias por volumen](https://www.microsoft.com/licensing/default)
--   Más información sobre [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) 
+-   Más información sobre [Windows Virtual Desktop](/azure/virtual-desktop/overview)

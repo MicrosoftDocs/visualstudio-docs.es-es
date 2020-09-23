@@ -1,5 +1,5 @@
 ---
-title: Recopilar estadísticas para aplicaciones web ASP.NET | Microsoft Docs
+title: Recopilar estadísticas para aplicaciones web ASP.NET
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8f353f551b3b524cfa49fb2cb638c261dcde660d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 017195cc86e958c70204a588de7678a5f15e6e09
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331927"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808934"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Recopilar estadísticas para aplicaciones web ASP.NET
 

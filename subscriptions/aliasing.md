@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234645"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006220"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias".
@@ -86,16 +86,16 @@ Ambas opciones se configuran en el portal de administración completando los pas
 
 0. Si va a modificar un solo usuario, selecciónelo en la tabla y haga clic con el botón derecho para editarlo. De este modo, se abrirá un panel en el que podrá modificar la dirección de correo electrónico de inicio de sesión. Realice los cambios necesarios en el campo de dirección de correo electrónico de inicio de sesión. Haga clic en Guardar y se aplicarán los cambios.  
 
-0. Si necesita realizar estos cambios para una gran cantidad de usuarios, puede usar la característica de edición en masa. Lea el artículo [Edición en masa de varios suscriptores](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) para obtener más información.
+0. Si necesita realizar estos cambios para una gran cantidad de usuarios, puede usar la característica de edición en masa. Lea el artículo [Edición en masa de varios suscriptores](./edit-license.md#edit-multiple-subscribers-using-bulk-edit) para obtener más información.
 
 > [!NOTE]
 > Tanto para los cambios individuales como para los masivos, los suscriptores recibirán un correo electrónico con instrucciones informando de que su dirección de correo electrónico de inicio de sesión ha cambiado y tendrán que iniciar sesión con la dirección de correo electrónico actualizada. También es importante tener en cuenta que, si el suscriptor activó previamente los beneficios en la otra dirección de inicio de sesión, tendrá que seguir usando la otra dirección de inicio de sesión para acceder a ellos.  
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Pasos siguientes
@@ -104,5 +104,3 @@ Obtenga más información sobre la administración de suscripciones de Visual S
 - [Asignación de varias suscripciones](assign-license-bulk.md)
 - [Editar suscripciones](edit-license.md)
 - [Determinación del uso máximo](maximum-usage.md)
-
-

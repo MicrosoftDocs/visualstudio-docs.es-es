@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247334"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91003851"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
@@ -48,21 +48,21 @@ Si su suscripción de Visual Studio expira o se elimina, todos los beneficios d
 > [!IMPORTANT]
 > Debe transferir los recursos a otra suscripción de Azure antes de que se deshabilite la actual o perderá el acceso a los datos.  
 
-Hay varias maneras de seguir usando un crédito mensual de Azure.  Para guardar los recursos de Azure, tendrá que [transferirlos](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) a otra suscripción de Azure, independientemente de la acción que elija a continuación. 
+Hay varias maneras de seguir usando un crédito mensual de Azure.  Para guardar los recursos de Azure, tendrá que [transferirlos](/azure/azure-resource-manager/management/move-resource-group-and-subscription) a otra suscripción de Azure, independientemente de la acción que elija a continuación. 
 
 - **Si compra una suscripción de Visual Studio directamente**, compre una nueva o renueve la actual a través de Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Si alguien de la organización se encarga de comprar las suscripciones**, [póngase en contacto con el administrador de suscripciones de Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) y solicite una que proporcione el crédito mensual que necesita.  
-- **Si tiene otra suscripción activa de Visual Studio** en el mismo nivel de suscripción que esté asociada a otra cuenta de Microsoft, puede transferirle la ventaja de Azure si [agrega una cuenta alternativa](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) en el [portal de suscripciones](https://my.visualstudio.com/subscriptions) de Visual Studio.  
+- **Si alguien de la organización se encarga de comprar las suscripciones**, [póngase en contacto con el administrador de suscripciones de Visual Studio](./contact-my-admin.md) y solicite una que proporcione el crédito mensual que necesita.  
+- **Si tiene otra suscripción activa de Visual Studio** en el mismo nivel de suscripción que esté asociada a otra cuenta de Microsoft, puede transferirle la ventaja de Azure si [agrega una cuenta alternativa](./manage-vs-subscriptions.md#managing-my-profile) en el [portal de suscripciones](https://my.visualstudio.com/subscriptions) de Visual Studio.  
 
 En la tabla siguiente encontrará los criterios de idoneidad para determinar los créditos incluidos en cada tipo de suscripción.  
 
 
 ## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Conversión de su suscripción de Azure a Pago por uso
 
-Si ya no necesita una suscripción de Visual Studio o un crédito, pero quiere seguir usando los recursos de Azure, [transfiéralos](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) a otra suscripción de Azure, o bien [quite el límite de gasto](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal) para convertir la suscripción de Azure a los precios de pago por uso. 
+Si ya no necesita una suscripción de Visual Studio o un crédito, pero quiere seguir usando los recursos de Azure, [transfiéralos](/azure/azure-resource-manager/management/move-resource-group-and-subscription) a otra suscripción de Azure, o bien [quite el límite de gasto](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal) para convertir la suscripción de Azure a los precios de pago por uso. 
 
 Si no realiza una de estas acciones, la suscripción de Azure se deshabilitará y se eliminará 30 días después de recibir la notificación de correo electrónico.  
 
@@ -117,10 +117,10 @@ R:  La propiedad intelectual producida por un empleado que se crea sobre los rec
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para más información sobre las herramientas y los servicios de Microsoft, revise la documentación para:
