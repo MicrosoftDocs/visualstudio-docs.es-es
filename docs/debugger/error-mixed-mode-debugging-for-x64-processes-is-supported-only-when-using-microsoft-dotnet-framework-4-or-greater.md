@@ -1,5 +1,5 @@
 ---
-title: 'Error: El modo de depuración mixto para procesos x64 se admite solo cuando se usa Microsoft .NET Framework 4 o posterior | Microsoft Docs'
+title: El modo de depuración mixto para procesos x64 se admite solo cuando se usa Microsoft .NET Framework 4 o posterior | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9f30fe9b729df84506f6717e5fd895297390dea6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: e8cfc3ac5cb606637fe5c2818750168a239a46fa
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460642"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852620"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Error: El modo de depuración mixto para procesos x64 se admite solo cuando se usa Microsoft .NET Framework 4 o posterior
 Para depurar código nativo y administrado mixto en un proceso de 64 bits, debe tener .NET Framework versión 4. No se admite la depuración en modo mixto de procesos de 64 bits con versiones anteriores a la 4 de .NET Framework.

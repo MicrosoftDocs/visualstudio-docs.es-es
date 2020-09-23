@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para actualizar la vista | Microsoft Docs
+title: Actualización de la vista | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c42da3994d75329ced1eaa5b89c7aa6de360c6
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d964f0a33b1944255fee2f9fdb7658b04aaedebb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349398"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852040"
 ---
 # <a name="how-to-refresh-the-view"></a>Procedimiento Actualización de la vista
 Spy++ toma una "instantánea" de las tablas del sistema y actualiza una vista basada en esta información. Es importante que actualice periódicamente las vistas del sistema. Si tiene una vista de Spy++ abierta y no ha actualizado la vista, no verá los procesos, subprocesos y ventanas que se crean posteriormente. También es posible que vea elementos que ya no existen. El comando **Actualizar** está disponible para todas las vistas excepto la vista Mensajes.

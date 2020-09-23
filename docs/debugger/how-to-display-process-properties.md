@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para presentar las propiedades de los procesos| Microsoft Docs
+title: Presentación de las propiedades de los procesos| Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e36baf8d44aab6904362e25ba4706fc7fb1417
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6dee3bf419470a41ce31b1f1a1ea9164acdbe5bd
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349840"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852340"
 ---
 # <a name="how-to-display-process-properties"></a>Procedimiento Presentación de las propiedades de los procesos
 Para más información sobre un proceso enumerado en la [vista Procesos](../debugger/processes-view.md), use el [cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md).

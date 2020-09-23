@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para controlar la vista Mensajes | Microsoft Docs
+title: para controlar la vista Mensajes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a95e257950a93ff61c27f7ea599b0de12e09677d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350256"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850974"
 ---
 # <a name="how-to-control-messages-view"></a>Procedimiento Controlar la vista Mensajes
 Con Spy++, tiene un control considerable sobre el contenido de una ventana [Vista Mensajes](../debugger/messages-view.md). Puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) la representación de los mensajes en cualquier momento, y puede especificar lo siguiente:

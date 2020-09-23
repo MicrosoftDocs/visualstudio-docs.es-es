@@ -1,5 +1,5 @@
 ---
-title: 'Error: Error de una comprobación de seguridad debido a la falta de respuesta del servicio de administración de IIS | Microsoft Docs'
+title: Error de una comprobación de seguridad debido a la falta de respuesta del servicio de administración de IIS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9620edf10d2d3cab8da8231e561fc77d7e6af5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 015a159f8d4910a2cc9bfbd97a50ebe01253d011
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460883"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852815"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Error: Error de una comprobación de seguridad debido a la falta de respuesta del servicio de administración de IIS
 Este error se produce cuando el servicio de administración de IIS no responde. En general, esto indica que hay un problema relacionado con la instalación de IIS. Lo primero que debe hacer es comprobar que el servicio se está ejecutando mediante la herramienta **Servicios** de **Herramientas administrativas**.

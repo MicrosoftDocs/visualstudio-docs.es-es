@@ -1,5 +1,5 @@
 ---
-title: 'Error: IIS ha interrumpido el proceso de trabajo del sitio web | Microsoft Docs'
+title: IIS ha interrumpido el proceso de trabajo del sitio web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460005"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852418"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Error: IIS ha interrumpido el proceso de trabajo del sitio web
 El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Internet Information Services (IIS) creyera que el proceso de trabajo había dejado de responder. Por consiguiente, IIS finalizaron el proceso de trabajo.

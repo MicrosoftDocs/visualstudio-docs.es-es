@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para presentar y ocultar grupos de registros | Microsoft Docs
+title: Presentación y ocultación de grupos de registros | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f08e31f67f9626c15dee0b6b4b8202a0370c976b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 0a75af7d7ef279fdd3ca82ea9dced941106f0275
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349905"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852366"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedimiento Presentación y ocultación de grupos de registros (C#, C++, Visual Basic, F#)
 

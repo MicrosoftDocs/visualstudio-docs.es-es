@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para usar la herramienta de búsqueda | Microsoft Docs
+title: Uso de la Herramienta de búsqueda | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348735"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851845"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedimiento Uso de la herramienta de búsqueda
 Puede usar la Herramienta de búsqueda del cuadro de diálogo **Buscar ventana** para mostrar las propiedades o los mensajes de una ventana. La Herramienta de búsqueda también puede buscar ventanas secundarias deshabilitadas y decidir qué ventana se va a resaltar si las ventanas secundarias deshabilitadas se superponen.

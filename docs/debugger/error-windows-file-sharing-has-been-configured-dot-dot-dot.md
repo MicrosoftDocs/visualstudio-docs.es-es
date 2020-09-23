@@ -1,5 +1,5 @@
 ---
-title: 'Error: Se ha configurado el uso compartido de archivos de Windows... | Microsoft Docs'
+title: Se ha configurado el uso compartido de archivos de Windows... | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af92ff07958656d350f30fb6b7f8f2a2ea5898f1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 17dbb1f3493ead985ac946331fdbff7933b6d604
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460057"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851676"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Error: Se ha configurado el uso compartido de archivos de Windows…
 Se ha configurado el uso compartido de archivos de Windows para que se conecte al equipo remoto mediante un nombre de usuario distinto. Este proceso no es compatible con la depuración remota

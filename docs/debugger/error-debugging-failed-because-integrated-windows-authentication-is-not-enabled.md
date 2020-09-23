@@ -1,5 +1,5 @@
 ---
-title: 'Error: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows | Microsoft Docs'
+title: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599628"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852789"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Error: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows
 La autenticación del usuario que solicita la depuración no pudo realizarse debido a un error de autenticación. Esto problema puede producirse cuando intenta desplazarse a un aplicación web o a un servicio Web XML. Una causa de este error es que la autenticación de Windows integrada no esté habilitada. Para habilitarla, siga los pasos descritos en "Para habilitar la autenticación de Windows integrada".

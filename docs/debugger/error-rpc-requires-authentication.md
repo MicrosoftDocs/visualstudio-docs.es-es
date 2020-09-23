@@ -1,5 +1,5 @@
 ---
-title: 'Error: RPC requiere autenticación | Microsoft Docs'
+title: RPC requiere autenticación | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e98daf3697c86eec7767135c9ad85d67cd6e958a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 9bb172455226ab290a74da07e97fc40deb30b6ba
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460590"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852555"
 ---
 # <a name="error-rpc-requires-authentication"></a>Error: RPC requiere autenticación
 El depurador de Visual Studio no se puede conectar al equipo remoto. Hay una directiva de RPC habilitada en el equipo local que evita la depuración remota.

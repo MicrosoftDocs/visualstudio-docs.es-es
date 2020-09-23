@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para restablecer comandos ocultos del depurador | Microsoft Docs
+title: Restablecimiento de comandos ocultos del depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b4db03a75decd41430c282a67276caa60182d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 295d04aa33f7f6602d536a69baafae9105a51fe5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349385"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852027"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Procedimiento Restablecer comandos ocultos del depurador
 Cuando se configura Visual Studio, se solicita la elección de un conjunto de configuraciones IDE predeterminadas para el lenguaje de programación principal. Las configuraciones IDE predeterminadas para algunos lenguajes pueden ocultar ciertos comandos del depurador.

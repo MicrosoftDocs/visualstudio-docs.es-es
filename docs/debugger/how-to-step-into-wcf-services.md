@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para depurar paso a paso por instrucciones servicios WCF | Microsoft Docs
+title: para depurar paso a paso por instrucciones servicios WCF | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4097280ae388a9a941c017697e0a5e3daa44cd
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 25ca1e4d2b7e0349ea5a41c6fc66726226ecab4f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349125"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851897"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Procedimiento Depuración paso a paso por instrucciones de servicios WCF
 En [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], puede entrar en un servicio WCF. Si el servicio WCF está en la misma solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que el cliente, puede establecer puntos de interrupción dentro del servicio WCF.

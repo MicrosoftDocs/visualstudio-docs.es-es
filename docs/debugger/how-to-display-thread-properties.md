@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para presentar las propiedades del subproceso | Microsoft Docs
+title: Presentación de las propiedades del subproceso | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab3f98b5a47c6d950f2d95e732e05e5734c783b5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: acc57df5258675be42473c502a8d31d1a73e8c00
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349879"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852314"
 ---
 # <a name="how-to-display-thread-properties"></a>Procedimiento Presentación de las propiedades del subproceso
 Para obtener más información sobre un subproceso mostrado en [Vista de subprocesos](../debugger/threads-view.md), utilice el cuadro de diálogo [Propiedades del subproceso](../debugger/thread-properties-dialog-box.md).

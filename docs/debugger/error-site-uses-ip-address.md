@@ -1,5 +1,5 @@
 ---
-title: 'Error: Uso de dirección IP por parte del sitio | Microsoft Docs'
+title: Uso de dirección IP por parte del sitio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58db12ba9dbbc9526ac86262a6be5b2c0a7f765e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: b869a536ca3445069d9caf84eb862e407dfbe6dc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460551"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852542"
 ---
 # <a name="error-site-uses-ip-address"></a>Error: Uso de dirección IP por parte del sitio
 Este error se produce cuando el depurador intenta asociarse automáticamente a una aplicación Web que utilice una dirección IP. Esto ocurre si se cambia **Identificación del sitio Web** a **Usar una dirección IP específica** en IIS.

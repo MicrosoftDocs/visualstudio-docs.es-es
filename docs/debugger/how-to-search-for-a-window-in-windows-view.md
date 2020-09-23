@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para buscar una ventana en la vista Ventanas | Microsoft Docs
+title: Búsqueda de una ventana en la vista Ventanas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb5fb871ebf03595c0baca0336e8449fe39029f3
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 880f6ec3ea0882d92f5376859ed629e23781f5f9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349242"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851975"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Procedimiento Buscar una ventana en la vista Ventanas
 Puede buscar una ventana específica en la vista Ventanas mediante su identificador, título o clase, o una combinación de su título y clase, como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. En los campos del cuadro de diálogo se mostrarán los atributos de la ventana seleccionada en el árbol de ventanas.

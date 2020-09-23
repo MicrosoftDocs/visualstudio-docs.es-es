@@ -1,5 +1,5 @@
 ---
-title: 'Error: No se puede iniciar la comunicación con DCOM | Microsoft Docs'
+title: No se puede iniciar la comunicación con DCOM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd8b30fcba11d89e11227861c4582ff67f3a7e7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 00846f0ef0593ec7d12c657a40079ff1cdfb0bb5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460031"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851442"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Error: No se puede iniciar la comunicación con DCOM
 Se ha producido un error de DCOM cuando el equipo local ha intentado comunicarse con el equipo remoto. Esto se debe a la presencia de un firewall en el servidor remoto o a un incumplimiento de la autenticación de Windows en el equipo remoto.

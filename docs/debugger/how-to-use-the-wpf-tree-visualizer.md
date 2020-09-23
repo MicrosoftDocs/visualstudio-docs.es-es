@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para usar el visualizador de árboles de WPF | Microsoft Docs
+title: Uso del visualizador de árboles de WPF | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e210d41541ef2fe0f7f8da149c23dc17645e44f
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 1ebe49365d5854a363b49ba0bde6431ae2121ebd
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348501"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851065"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedimiento Usar el visualizador de árboles de WPF
 Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. Para obtener más información sobre los árboles visuales, vea [Árboles en WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Para obtener más información sobre las propiedades de dependencia, vea [Introducción a las propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview).
