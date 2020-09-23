@@ -1,7 +1,8 @@
 ---
 title: Dibujar formas y trazados
+description: Usar Blend para Visual Studio para agregar más detalles a formas y trazados
 titleSuffix: Blend for Visual Studio
-ms.date: 07/31/2019
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350828"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022518"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
 
@@ -26,7 +27,7 @@ Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien
 
 Busque formas en la ventana **Recursos**.
 
-![Categoría Formas en la ventana Recursos](media/blend-shapes.png)
+:::image type="content" source="media/blend-shapes.png" alt-text="Captura de pantalla de la categoría formas de la ventana activos en Blend para Visual Studio":::
 
 Arrastre la forma que desee a la mesa de trabajo. Después, use los controladores de la forma para escalar, girar, mover o sesgar la forma.
 
