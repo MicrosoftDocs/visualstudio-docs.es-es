@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para especificar opciones de instrumentación adicional | Microsoft Docs
+title: Especificar opciones de instrumentación adicionales | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8390c4aab0624aa59f62397e0b41bcbcc1c80cdd
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 42c5500d03e815bad1666da7b52918479715e861
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331984"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851819"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Procedimiento Especificar opciones de instrumentación adicionales
 

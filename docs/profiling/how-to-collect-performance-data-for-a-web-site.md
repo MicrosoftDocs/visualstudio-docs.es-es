@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para recopilar datos de rendimiento de un sitio web | Microsoft Docs
+title: para recopilar datos de rendimiento de un sitio web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f8169716bda09e3c4d89ce06dc907c726adee2
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330955"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851481"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento para recopilar datos de rendimiento de un sitio web
 

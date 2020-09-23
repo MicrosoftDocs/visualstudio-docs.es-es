@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801326"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810381"
 ---
 # <a name="add-file-header"></a>Agregar encabezado de archivo
 
@@ -22,7 +22,7 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Adición de encabezados de archivo a archivos, proyectos y soluciones existentes con un archivo [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
+**Qué:** Adición de encabezados de archivo a archivos, proyectos y soluciones existentes con un archivo [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 **Cuándo:** quiere agregar fácilmente un encabezado de archivo a archivos, proyectos y soluciones.
 
@@ -30,7 +30,7 @@ Esta generación de código se aplica a:
 
 ## <a name="how-to"></a>Procedimiento
 
-1. Agregue un archivo [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project) a un proyecto o a una solución si aún no tiene uno.
+1. Agregue un archivo [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) a un proyecto o a una solución si aún no tiene uno.
 
 2. Agregue la regla siguiente al archivo EditorConfig: *file_header_template*.
 

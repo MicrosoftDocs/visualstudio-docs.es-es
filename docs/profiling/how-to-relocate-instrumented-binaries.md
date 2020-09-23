@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para cambiar la ubicación de binarios instrumentados | Microsoft Docs
+title: Cambiar la ubicación de binarios instrumentados | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92ec3bb107c5921c6ac0113e18f1dc35ec3dd07a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 13fa5c3413e620e43a695e205a0523dce23e90b4
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328809"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851351"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Procedimiento Reubicar archivos binarios instrumentados
 

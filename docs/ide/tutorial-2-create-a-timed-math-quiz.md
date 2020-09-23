@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579305"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810853"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Crear una prueba matemática cronometrada
 
@@ -58,6 +58,6 @@ Para comenzar el tutorial, empiece por el **[Paso 1: Crear un proyecto y agregar
 
 ## <a name="see-also"></a>Vea también
 
-* [Más tutoriales de C#](/visualstudio/get-started/csharp/)
-* [Tutoriales de Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Más tutoriales de C#](../get-started/csharp/index.yml)
+* [Tutoriales de Visual Basic](../get-started/visual-basic/index.yml)
 * [Tutoriales de C++](/cpp/get-started/tutorial-console-cpp)

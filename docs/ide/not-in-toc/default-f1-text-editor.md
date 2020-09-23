@@ -10,12 +10,12 @@ f1_keywords:
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 726d0daed76212e9bda498a5afca0c84cd84281e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 7a26e102ad71025edf92a499a1439022d9735eab
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88802302"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808251"
 ---
 # <a name="f1-help-for-the-text-editor"></a>Ayuda F1 para el editor de texto
 
@@ -37,7 +37,7 @@ Si está buscando ayuda de F1 sobre una palabra clave o el nombre de una API, as
 ## <a name="search-for-help-on-a-keyword-or-api-name"></a>Búsqueda de ayuda sobre un nombre de API o una palabra clave
 
 Si busca ayuda F1 sobre un nombre de API o una palabra clave:
-- Intente buscar en [docs.microsoft.com](https://docs.microsoft.com)
+- Intente buscar en [docs.microsoft.com](/)
 - Intente buscar con un motor de búsqueda.
 - Busque documentación de referencia en el [Explorador de API de .NET](/dotnet/api/).
 

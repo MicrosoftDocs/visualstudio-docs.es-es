@@ -1,5 +1,5 @@
 ---
-title: Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C | Microsoft Docs
+title: Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e55ec521de098a7ae0339c4460502dde3d482d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745797"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851624"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C
 Una restricción muy importante en las funciones de enlace de asignación es que deben omitir explícitamente los bloques `_CRT_BLOCK`. Estos bloques son las asignaciones de memoria realizadas internamente por las funciones de la biblioteca en tiempo de ejecución de C si realizan alguna llamada a dichas funciones que asignan memoria interna. Pueden omitirse los bloques `_CRT_BLOCK` si se incluye código como el siguiente al inicio de la función de enlace de asignación:

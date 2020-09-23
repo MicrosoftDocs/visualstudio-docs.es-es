@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para generar perfiles de código de JavaScript en páginas web | Microsoft Docs
+title: Generar perfiles de código de JavaScript en páginas web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c0af520502a0d6bb67d17786ab18fba920fcbbb
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 42355316c33ab9970b07001323502d9337558edc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328897"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851377"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedimiento Generar perfiles de código de JavaScript en páginas web
 

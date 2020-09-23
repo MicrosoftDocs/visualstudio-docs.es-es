@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770001"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807890"
 ---
 # <a name="visual-studio-feedback-options"></a>Opciones de comentarios de Visual Studio
 
@@ -71,7 +71,7 @@ A continuación, Visual Studio abre la página [Developer Community](https://dev
 Existen dos formas de ayudarnos a mejorar la documentación:
 
 * Use la herramienta de respuesta **¿Le ha resultado útil esta página?** que se encuentra en la parte superior derecha de cualquier página de documentación.
-* Use su cuenta de GitHub para proporcionar comentarios sobre cualquier página de Visual Studio en [docs.microsoft.com](/visualstudio/). Para ello, elija el botón **Envíe sus comentarios sobre** > **Esta página**, que también está situado en la parte inferior de cualquier página de documentación.
+* Use su cuenta de GitHub para proporcionar comentarios sobre cualquier página de Visual Studio en [docs.microsoft.com](../index.yml). Para ello, elija el botón **Envíe sus comentarios sobre** > **Esta página**, que también está situado en la parte inferior de cualquier página de documentación.
 
 ## <a name="contact-microsoft-support"></a>Ponerse en contacto con el soporte técnico de Microsoft
 

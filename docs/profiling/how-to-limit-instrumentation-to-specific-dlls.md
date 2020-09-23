@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para limitar la instrumentación a archivos DLL específicos | Microsoft Docs
+title: Limitar la instrumentación a archivos DLL específicos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 391aeb0b1686d58116d6aaa52ad0a3defe15fb00
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327797"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851026"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedimiento Limitar la instrumentación a archivos DLL específicos
 

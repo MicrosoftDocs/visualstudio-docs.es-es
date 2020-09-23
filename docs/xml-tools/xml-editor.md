@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f36255a03939c649a91b4a91d15958475be3b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 550dcb0cc3299a4a1b884d3141761c39977ce088
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815024"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713547"
 ---
 # <a name="xml-editor"></a>Editor XML
 
@@ -59,5 +59,5 @@ La [herramienta Jerarquía XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.m
 - [Opciones del Editor XML: formato](../ide/reference/options-text-editor-xml-formatting.md)
 - [Opciones del Editor XML: varios](../ide/reference/options-text-editor-xml-miscellaneous.md)
 - [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Referencia de los estándares XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
+- [Referencia de los estándares XML](/previous-versions/dotnet/netframework-4.0/ms256177(v=vs.100))
 - [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

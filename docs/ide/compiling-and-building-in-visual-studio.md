@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76269102"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809038"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
@@ -55,6 +55,6 @@ De ahí en adelante, puede explorar otras tareas:
 
 ## <a name="see-also"></a>Vea también
 
-- [Compilar proyectos de sitios web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Compilar proyectos de sitios web](/previous-versions/hwxa5aha(v=vs.140))
 - [Compilar y generar (Visual Studio para Mac)](/visualstudio/mac/compiling-and-building)
 - [Proyectos de CMake en Visual Studio](/cpp/build/cmake-projects-in-visual-studio)

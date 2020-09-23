@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801573"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811050"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Usar la ventana interactiva de REPL
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801573"
 La ventana **interactiva** de Visual Studio para Python proporciona una experiencia de lectura-evaluación-impresión-repetición (REPL) que reduce considerablemente el ciclo habitual de edición-compilación-depuración. La ventana **interactiva** proporciona todas las funciones de la experiencia de REPL de la línea de comandos de Python. También resulta muy fácil intercambiar el código con archivos de código fuente en el editor de Visual Studio, que en otros casos es complicado con la línea de comandos.
 
 > [!NOTE]
-> Si tiene problemas con REPL, asegúrese de tener instalados los paquetes `ipython` y `ipykernel`. Si necesita instalar paquetes, consulte la [pestaña de los paquetes de los entornos de Python](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Si tiene problemas con REPL, asegúrese de tener instalados los paquetes `ipython` y `ipykernel`. Si necesita instalar paquetes, consulte la [pestaña de los paquetes de los entornos de Python](./python-environments-window-tab-reference.md#packages-tab).
 
 1. Abra la ventana **interactiva** haciendo clic con el botón derecho en el entorno de Python del proyecto en el **Explorador de soluciones** (por ejemplo, **Python 3.6 (32 bits)** como se muestra en un gráfico anterior) y seleccione **Abrir ventana interactiva**. Como alternativa, puede seleccionar **Ver** > **Otras ventanas** > **Ventanas interactivas de Python** en el menú principal de Visual Studio.
 

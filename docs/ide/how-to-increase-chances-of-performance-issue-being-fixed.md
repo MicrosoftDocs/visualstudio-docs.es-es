@@ -6,16 +6,16 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038600"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810866"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Cómo aumentar la probabilidad de resolución de un problema de rendimiento
 
-La herramienta "[Notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" es muy usada entre los usuarios de Visual Studio para notificar una serie de problemas. El equipo de Visual Studio detecta las tendencias de bloqueo y lentitud en los comentarios de los usuarios y soluciona los problemas que afectan a un amplio conjunto de usuarios. Cuanto más accionable sea una incidencia de soporte técnico concreta, más probable es que sea diagnosticada y resuelta rápidamente por el equipo del producto. En este documento se describen los procedimientos recomendados para notificar problemas de bloqueo o lentitud a fin de hacerlos más accionables.
+La herramienta "[Notificar un problema](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)" es muy usada entre los usuarios de Visual Studio para notificar una serie de problemas. El equipo de Visual Studio detecta las tendencias de bloqueo y lentitud en los comentarios de los usuarios y soluciona los problemas que afectan a un amplio conjunto de usuarios. Cuanto más accionable sea una incidencia de soporte técnico concreta, más probable es que sea diagnosticada y resuelta rápidamente por el equipo del producto. En este documento se describen los procedimientos recomendados para notificar problemas de bloqueo o lentitud a fin de hacerlos más accionables.
 
 ## <a name="general-best-practices"></a>Procedimientos recomendados generales
 
@@ -56,7 +56,7 @@ Los bloqueos reproducibles directamente son casos que tienen todas las caracter�
 
 - Se pueden reproducir en código de ejemplo o en un proyecto que se puede asociar a los comentarios o proporcionarse como parte de estos (si los pasos implican abrir un proyecto o un documento)
 
-En el caso de estos problemas, siga los pasos de "[Cómo notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" y asegúrese de incluir:
+En el caso de estos problemas, siga los pasos de "[Cómo notificar un problema](./how-to-report-a-problem-with-visual-studio.md)" y asegúrese de incluir:
 
 - Los pasos para reproducir el problema
 
@@ -103,7 +103,7 @@ Luego use la característica "Notificar un problema..." de Visual Studio. Esta 
 
 2. Si es posible, comprima el archivo (\*.zip) para reducir su tamaño antes de enviar los comentarios.
 
-3. Siga los pasos de "[Cómo notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" y adjunte el volcado del montón a un nuevo elemento de comentarios.
+3. Siga los pasos de "[Cómo notificar un problema](./how-to-report-a-problem-with-visual-studio.md)" y adjunte el volcado del montón a un nuevo elemento de comentarios.
 
 > [!NOTE] 
 > **Comentarios más valiosos:** en este caso, la información más valiosa es el volcado del montón capturado en el momento del bloqueo.
@@ -118,7 +118,7 @@ Como se ha descrito en la sección correspondiente sobre bloqueos, en el caso de
 **Falta de respuesta desconocida**
 
 Si una falta de respuesta se manifiesta de un modo imprevisible, en la siguiente repetición inicie una nueva instancia de Visual Studio y notifique un problema desde esa instancia.
-En la [pantalla "Grabar"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), asegúrese de seleccionar la sesión de Visual Studio que no responde.
+En la [pantalla "Grabar"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro), asegúrese de seleccionar la sesión de Visual Studio que no responde.
 
 Si la instancia de Visual Studio que no responde se ha iniciado en modo de administrador, la segunda instancia también debe iniciarse en este modo.
 
@@ -145,7 +145,7 @@ Para obtener los mejores resultados posibles al capturar el rendimiento, siga es
 
 3. En la nueva copia de Visual Studio, abra la herramienta **Notificar un problema**.
 
-4. Siga los pasos de [Cómo notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) hasta que llegue al paso "Proporcionar un seguimiento y un volcado del montón (opcional)".
+4. Siga los pasos de [Cómo notificar un problema](./how-to-report-a-problem-with-visual-studio.md) hasta que llegue al paso "Proporcionar un seguimiento y un volcado del montón (opcional)".
 
 5. Elija grabar la primera copia de Visual Studio (la del problema de rendimiento) e inicie la grabación.
 
@@ -165,7 +165,7 @@ Para obtener los mejores resultados posibles al capturar el rendimiento, siga es
 
 Al grabar un seguimiento de rendimiento, si la operación lenta o el uso de CPU elevado que notifica termina, detenga inmediatamente la grabación. Si se recopila demasiada información, se sobrescribe la información más antigua. Si el seguimiento no se detiene pronto (en unos segundos) tras la operación interesante, se sobrescriben datos de seguimiento de utilidad.
 
-No adjunte directamente seguimientos de rendimiento a elementos de comentarios existentes en el sitio web Developer Community. La solicitud o entrega de información adicional es un flujo de trabajo admitido en la herramienta Notificar un problema integrada de Visual Studio. Si se requiere un seguimiento de rendimiento para resolver un elemento de comentarios anterior, se establece el estado del elemento de comentarios en "Se necesita más información", y se puede responder de la misma manera que al notificar un problema nuevo. Para obtener instrucciones detalladas, vea la sección ["Se necesita más información"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) del documento de la herramienta Notificar un problema.
+No adjunte directamente seguimientos de rendimiento a elementos de comentarios existentes en el sitio web Developer Community. La solicitud o entrega de información adicional es un flujo de trabajo admitido en la herramienta Notificar un problema integrada de Visual Studio. Si se requiere un seguimiento de rendimiento para resolver un elemento de comentarios anterior, se establece el estado del elemento de comentarios en "Se necesita más información", y se puede responder de la misma manera que al notificar un problema nuevo. Para obtener instrucciones detalladas, vea la sección ["Se necesita más información"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) del documento de la herramienta Notificar un problema.
 
 > [!NOTE] 
 > **Comentarios más valiosos:** en casi todos los problemas de uso de CPU elevado y lentitud, los comentarios más valiosos son una descripción general de lo que se intentaba hacer, junto con el seguimiento de rendimiento (\*.etl.zip) que captura el comportamiento durante ese momento.

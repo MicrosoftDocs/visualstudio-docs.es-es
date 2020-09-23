@@ -10,12 +10,12 @@ f1_keywords:
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 0ab7f2d9fac02cf370e7b3803adc7fd3016d22ad
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 2c62a10e87b3a866956e4818a3b279eb0d4b833e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800455"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808238"
 ---
 # <a name="f1-help"></a>Ayuda de F1
 
@@ -25,7 +25,7 @@ Parece que no pudimos encontrar lo que buscaba y lo sentimos. Para ayudarnos a m
 
 Si busca ayuda F1 sobre una ventana, una palabra clave o un nombre de API:
 
-- Intente buscar en [docs.microsoft.com](https://docs.microsoft.com)
+- Intente buscar en [docs.microsoft.com](/)
 - Intente buscar con un motor de búsqueda.
 
 ## <a name="find-help-on-a-keyword-or-api"></a>Búsqueda de ayuda sobre una palabra clave o API

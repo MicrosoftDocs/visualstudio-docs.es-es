@@ -9,14 +9,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 042f01bcc53f12c240276374bdce5fb965c67be4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330129"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809614"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar un servicio de .NET Framework y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
+
 En este artículo se explica cómo usar las herramientas de línea de comandos de Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un servicio de .NET Framework y recopilar datos de uso de memoria. Puede recopilar datos de asignación de memoria o recopilar tanto datos de asignación de memoria como de duración de objetos.
 
 > [!NOTE]

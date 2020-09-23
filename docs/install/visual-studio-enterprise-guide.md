@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247646"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713443"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Guía de Visual Studio Enterprise
 Si desea ahorrar tiempo mientras su empresa se ejecuta en Visual Studio, comience aquí. En esta guía empresarial se incluyen sugerencias que pueden ayudarle a instalar y actualizar Visual Studio en escenarios empresariales comunes, desbloquearle si tiene problemas y obtener información sobre cómo informar de un problema si necesita más ayuda. 
@@ -63,7 +63,7 @@ Obtenga información sobre cómo actualizar Visual Studio correctamente y correg
 
 - **[Reparar Visual Studio](repair-visual-studio.md) para corregir problemas de actualización**. En ocasiones, una instalación de Visual Studio resulta dañada. Una reparación es útil para corregir los problemas de tiempo de instalación en todas las operaciones de instalación, incluidas las actualizaciones. 
 
-- **Seguir las [bases de referencia de seguridad de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)** . Microsoft está dedicado a proporcionar a sus clientes sistemas operativos seguros, como Windows 10 y Windows Server, y aplicaciones seguras, como Microsoft Edge. Además del control de seguridad de sus productos, Microsoft también le permite tener un control preciso sobre los entornos, ya que proporciona diversas funciones de configuración. 
+- **Seguir las [bases de referencia de seguridad de Windows](/windows/security/threat-protection/windows-security-baselines)** . Microsoft está dedicado a proporcionar a sus clientes sistemas operativos seguros, como Windows 10 y Windows Server, y aplicaciones seguras, como Microsoft Edge. Además del control de seguridad de sus productos, Microsoft también le permite tener un control preciso sobre los entornos, ya que proporciona diversas funciones de configuración. 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

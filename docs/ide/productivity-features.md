@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219769"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808147"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guía de productividad para Visual Studio
 
@@ -32,9 +32,9 @@ Ahorre tiempo indagando en los menús mediante búsquedas rápidas de todo lo qu
 
 - **Aumentar la accesibilidad en Visual Studio**. Visual Studio tiene características de accesibilidad integradas que son compatibles con los lectores de pantalla y otras tecnologías de asistencia. Consulte [Sugerencias y trucos de accesibilidad de Visual Studio](../ide/reference/accessibility-tips-and-tricks.md) para ver la lista completa de características disponibles. 
 
-- **Comprobar el ciclo de vida y mantenimiento del producto de Visual Studio** Para más información sobre cómo obtener actualizaciones de Visual Studio, opciones de soporte técnico para clientes empresariales y profesionales, compatibilidad con versiones anteriores de Visual Studio y componentes no cubiertos por el mantenimiento de Visual Studio, consulte [Ciclo de vida y mantenimiento del producto de Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/servicing). 
+- **Comprobar el ciclo de vida y mantenimiento del producto de Visual Studio** Para más información sobre cómo obtener actualizaciones de Visual Studio, opciones de soporte técnico para clientes empresariales y profesionales, compatibilidad con versiones anteriores de Visual Studio y componentes no cubiertos por el mantenimiento de Visual Studio, consulte [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing). 
 
-- **Instalar y administrar paquetes NuGet en Visual Studio**. La interfaz de usuario del Administrador de paquetes NuGet en Visual Studio de Windows le permite instalar, desinstalar y actualizar fácilmente paquetes NuGet en proyectos y soluciones. Para más información, consulte [Instalar y administrar paquetes en Visual Studio con el Administrador de paquetes NuGet](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
+- **Instalar y administrar paquetes NuGet en Visual Studio**. La interfaz de usuario del Administrador de paquetes NuGet en Visual Studio de Windows le permite instalar, desinstalar y actualizar fácilmente paquetes NuGet en proyectos y soluciones. Para más información, consulte [Instalar y administrar paquetes en Visual Studio con el Administrador de paquetes NuGet](/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## <a name="write-code"></a>Escribir código
 
@@ -60,7 +60,7 @@ Escriba código más rápidamente con las características siguientes.
 
 - **Usar aplicaciones de ejemplo**. Puede acelerar el desarrollo de aplicaciones si descarga e instala aplicaciones de ejemplo desde [Microsoft Developer Network](https://code.msdn.microsoft.com/). También puede obtener información sobre una tecnología o un concepto de programación determinado si descarga y explora un Sample Pack para esa área.
 
-- **Cambiar el formato de llaves con Formato/Nuevas líneas**. Use la página de opciones **Formato** para establecer opciones de formato de código en el editor de código, incluidas nuevas líneas. Para más información sobre cómo usar esta configuración en C#, consulte [Cuadro de diálogo Opciones: Editor de texto > C# > Estilo de código > Formato](../ide/reference/options-text-editor-csharp-formatting.md) Para C++, consulte el artículo sobre [establecimiento de preferencias de codificación de C++ en Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Para Python, consulte el artículo sobre [formato de código de Python](../python/formatting-python-code.md).
+- **Cambiar el formato de llaves con Formato/Nuevas líneas**. Use la página de opciones **Formato** para establecer opciones de formato de código en el editor de código, incluidas nuevas líneas. Para más información sobre cómo usar esta configuración en C#, consulte [Cuadro de diálogo Opciones: Editor de texto > C# > Estilo de código > Formato](../ide/reference/options-text-editor-csharp-formatting.md) Para C++, consulte el artículo sobre [establecimiento de preferencias de codificación de C++ en Visual Studio](/cpp/ide/how-to-set-preferences). Para Python, consulte el artículo sobre [formato de código de Python](../python/formatting-python-code.md).
 
 - **Cambiar la sangría por pestañas**. Utilice la configuración personalizada del editor, adaptada a cada código base, para aplicar estilos de codificación coherentes para varios desarrolladores que trabajan en un mismo proyecto en distintos editores y entornos de desarrollo integrado (IDE). Asegúrese de que todo el equipo sigue las mismas convenciones de lenguaje, convenciones de nomenclatura y reglas de formato. Dado que esta configuración personalizada es portátil y viaja con el código, puede aplicar estilos de codificación incluso fuera de Visual Studio. Para más información, consulte el artículo sobre [opciones, editor de texto, todos los lenguajes, pestañas](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
 
@@ -118,7 +118,7 @@ La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pued
 
 - **Usar las herramientas del depurador de Visual Studio**. En el contexto de Visual Studio, *depurar la aplicación* normalmente significa ejecutar la aplicación en modo del depurador. El depurador ofrece muchas formas de ver lo que hace el código durante su ejecución. Consulte el artículo sobre [primer vistazo al depurador de Visual Studio](../debugger/debugger-feature-tour.md) para obtener una guía de introducción. 
 
-- **Probar la misma página, aplicación o sitio en exploradores diferentes**. Cuando depura código, puede cambiar fácilmente entre los exploradores web instalados, incluido [Inspector de página (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sin tener que abrir el cuadro de diálogo **Explorar con**. Puede usar la lista **Depurar destino**, que se encuentra en la barra de herramientas **Estándar** junto al botón **Iniciar depuración**, para comprobar rápidamente qué explorador está usando mientras depura o ve páginas.
+- **Probar la misma página, aplicación o sitio en exploradores diferentes**. Cuando depura código, puede cambiar fácilmente entre los exploradores web instalados, incluido [Inspector de página (Visual Studio)](/previous-versions/hh974728(v=vs.140)), sin tener que abrir el cuadro de diálogo **Explorar con**. Puede usar la lista **Depurar destino**, que se encuentra en la barra de herramientas **Estándar** junto al botón **Iniciar depuración**, para comprobar rápidamente qué explorador está usando mientras depura o ve páginas.
 
     ![Selección de opciones de depuración del explorador web](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -140,7 +140,7 @@ La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pued
 
 - **[Buscar cambios en el código y otro historial con CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)** . CodeLens le permite averiguar qué ocurrió con el código mientras sigue centrado en su trabajo sin dejar el editor. Puede buscar referencias de una parte del código, cambios de código, errores vinculados, elementos de trabajo, revisiones de código y pruebas unitarias.
 
-- **Usar Live Share para depurar en tiempo real con otros usuarios**. Live Share le permite editar y depurar en colaboración con otros usuarios en tiempo real, con independencia de los lenguajes de programación que use o los tipos de aplicaciones que compile. Para más información, consulte [¿Qué es Visual Studio Live Share?](https://docs.microsoft.com/visualstudio/liveshare/)
+- **Usar Live Share para depurar en tiempo real con otros usuarios**. Live Share le permite editar y depurar en colaboración con otros usuarios en tiempo real, con independencia de los lenguajes de programación que use o los tipos de aplicaciones que compile. Para más información, consulte [¿Qué es Visual Studio Live Share?](/visualstudio/liveshare/)
 
 - **Usar la ventana interactiva para escribir y probar código pequeño**. Visual Studio ofrece una ventana interactiva de read–eval–print loop (REPL) que le permite escribir código arbitrario y ver resultados inmediatos. Esta forma de codificación le ayuda a aprender y experimentar con las API y las bibliotecas, así como a desarrollar de manera interactiva código de trabajo para incluirlo en sus proyectos. Para Python, consulte [Uso de la ventana interactiva de Python](../python/python-interactive-repl-in-visual-studio.md). La característica de ventana interactiva también está disponible para C#. 
 

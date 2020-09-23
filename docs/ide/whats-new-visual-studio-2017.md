@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386854"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809523"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -131,7 +131,7 @@ Para más información, vea [Introducción Live Unit Testing](../test/live-unit-
 
 Las pruebas automatizadas son una parte fundamental de cualquier canalización de DevOps. Le permiten probar y presentar su solución de manera coherente y confiable en ciclos mucho más cortos. Los flujos de CI/CD (integración continua y entrega continua) pueden ayudarle a hacer que el proceso sea más eficaz.
 
-Para más información sobre las pruebas automatizadas, vea la publicación del blog [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Canalización de CI/CD para pruebas automatizadas en DevOps).
+Para más información sobre las pruebas automatizadas, vea la publicación del blog [CI/CD pipeline for automated tests in DevOps](/archive/blogs/visualstudioalmrangers/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently) (Canalización de CI/CD para pruebas automatizadas en DevOps).
 
 Para obtener más información sobre las novedades de la extensión de DevLabs de [Herramientas de entrega continua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), vea la entrada de blog [Commit with Confidence: Commit Time Code Quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) (Confirmar con confianza: calidad del código en tiempo de confirmación).
 

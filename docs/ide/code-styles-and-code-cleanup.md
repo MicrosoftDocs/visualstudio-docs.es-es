@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743338"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682690"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
@@ -64,7 +64,7 @@ Para cada configuración de estilo de código de esta página, puede establecer 
 
 ## <a name="enforce-code-styles-on-build"></a>Aplicación de estilos de código en la compilación
 
-A partir de la versión 16.8 de Visual Studio 2019, que incluye el SDK de .NET 5.0 RC2, puede [aplicar las convenciones de codificación de .NET en la compilación](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) para todos los proyectos de .NET. En tiempo de compilación, las infracciones al estilo de código de .NET aparecerán como advertencias o errores con un prefijo "IDE". Esto le permite aplicar estrictamente estilos de código coherentes en el código base.
+A partir de la versión 16.8 de Visual Studio 2019, que incluye el SDK de .NET 5.0 RC2, puede [aplicar las convenciones de codificación de .NET en la compilación](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) para todos los proyectos de .NET. En tiempo de compilación, las infracciones al estilo de código de .NET aparecerán como advertencias o errores con un prefijo "IDE". Esto le permite aplicar estrictamente estilos de código coherentes en el código base.
 
 ::: moniker-end
 

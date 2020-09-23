@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 611df048d4ce569c10ae933be9053acf1174c06f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291032"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810394"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>Agregar atributo DebuggerDisplay
 
@@ -20,9 +20,9 @@ Esta generación de código se aplica a:
 
 - C#
 
-**Qué:** el [atributo DebuggerDisplay](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute) controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador.
+**Qué:** el [atributo DebuggerDisplay](../../debugger/using-the-debuggerdisplay-attribute.md) controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador.
 
-**Cuándo:** si desea [anclar propiedades](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor#pin-properties-in-datatips) del depurador mediante programación en el código.
+**Cuándo:** si desea [anclar propiedades](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips) del depurador mediante programación en el código.
 
 **Por qué:** anclar propiedades permite inspeccionar rápidamente los objetos por sus propiedades mediante la propagación de esa propiedad en la parte superior de la lista de propiedades del objeto en el depurador. 
 

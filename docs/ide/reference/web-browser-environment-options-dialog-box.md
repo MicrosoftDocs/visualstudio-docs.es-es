@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596507"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808683"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Cuadro de diálogo Opciones: Entorno \> Explorador web
 
@@ -52,7 +52,7 @@ Establece el editor que se usa para abrir una página web cuando se elige **Ver 
 
 - **Editor de código fuente** Seleccione esta opción para ver código fuente en el [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de entre dos vistas: Vista de diseño o vista estándar de código fuente basada en texto.
+- **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](/previous-versions/ex0hkwbx(v=vs.140)). Use esta selección para editar la página web en una de entre dos vistas: Vista de diseño o vista estándar de código fuente basada en texto.
 
 - **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.
 
@@ -66,4 +66,4 @@ Haga clic para cambiar las opciones de Internet Explorer en el cuadro de diálog
 ## <a name="see-also"></a>Vea también
 
 - [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)
-- [Diseñador HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [Diseñador HTML](/previous-versions/ex0hkwbx(v=vs.140))

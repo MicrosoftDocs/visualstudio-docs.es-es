@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87972478"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810124"
 ---
 # <a name="developer-community-guidelines"></a>Guía sobre la Comunidad de desarrolladores
 
@@ -57,7 +57,7 @@ Incluso en el caso de que una incidencia contenga una descripción detallada, es
 
 La evaluación de prioridades de las incidencias es un proceso de varios pasos que se realiza de forma colaborativa en el equipo de características. La evaluación de prioridades normalmente tarda una semana en completarse, pero puede tardar más tiempo. El objetivo de la evaluación de prioridades es proporcionarle información clara de lo que ocurrirá con su incidencia. Después de esto, por ejemplo, sabrá si planeamos corregir el problema o esperar más comentarios de la comunidad.
 
-Después de notificar un problema, los estados indican en qué punto de su ciclo de vida están sus envíos. Cuando los equipos de producto de Visual Studio revisen sus comentarios, les asignarán un estado. Realice un seguimiento del progreso de los informes de problemas consultando los [estados de problemas y preguntas más frecuentes](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Después de notificar un problema, los estados indican en qué punto de su ciclo de vida están sus envíos. Cuando los equipos de producto de Visual Studio revisen sus comentarios, les asignarán un estado. Realice un seguimiento del progreso de los informes de problemas consultando los [estados de problemas y preguntas más frecuentes](./report-a-problem.md).
 
 En el caso de que a una incidencia le falte información importante, le asignaremos el estado pertinente para indicar que _se requiere más información_. Agregaremos un comentario en la incidencia con la información específica que necesitamos y recibirá una notificación por correo electrónico. Si no recibimos la información en un plazo de siete días, le enviaremos un recordatorio. Tras ese recordatorio, cerraremos la solicitud después de 14 días de inactividad.
 
@@ -78,8 +78,8 @@ Cuando esto suceda, se cerrará la incidencia y se le pedirá que la abra con el
 
 #### <a name="additional-information"></a>Información adicional
 
-- [Cómo aumentar la probabilidad de resolución de una incidencia de rendimiento](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [Solución de problemas y creación de registros para problemas de MSBuild](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [Cómo aumentar la probabilidad de resolución de una incidencia de rendimiento](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [Solución de problemas y creación de registros para problemas de MSBuild](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>Administración de sugerencias de características
 
@@ -91,7 +91,7 @@ En nuestro proceso de toma de decisiones, tenemos en cuenta los siguientes aspec
 
 - ¿Coincide con nuestra dirección general del producto?
 - ¿Nos podemos permitir crearla y mantenerla?
-- ¿Se alinea con la estrategia general de nuestra [hoja de ruta](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap)?
+- ¿Se alinea con la estrategia general de nuestra [hoja de ruta](/visualstudio/productinfo/vs-roadmap)?
 - ¿Cuenta con el apoyo de la comunidad según los votos y los comentarios?
 - ¿Nos encanta a pesar de que no haya tenido mucho éxito en la comunidad?
 
@@ -99,7 +99,7 @@ Si no respondemos afirmativamente a alguna de estas preguntas, la sugerencia se 
 
 Si una sugerencia no coincide con nuestra dirección general del producto, la cerraremos como *Fuera de ámbito*. Por ejemplo, es posible que podamos tener inversiones similares en otros miembros de la familia de productos de Visual Studio. O bien la característica sugerida puede ser pertinente solo para algunas personas, lo que hace que para una extensión sea más sencillo proporcionarla.
 
-Realice un seguimiento del progreso de su sugerencia de característica consultando los [estados de las sugerencias y las preguntas más frecuentes](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Realice un seguimiento del progreso de su sugerencia de característica consultando los [estados de las sugerencias y las preguntas más frecuentes](./report-a-problem.md).
 
 ## <a name="discussion-etiquette"></a>Protocolo de debate
 
@@ -111,7 +111,7 @@ Cualquier infracción del protocolo de debate puede conllevar la eliminación de
 
 ## <a name="data-privacy"></a>Privacidad de datos
 
-Los comentarios y las respuestas son visibles públicamente, pero los archivos adjuntos se comparten de forma privada con Microsoft únicamente. Esto es una ventaja, ya que permite que toda la comunidad pueda ver las incidencias y las soluciones que han encontrado otros usuarios. Pero, si le preocupa la privacidad de sus datos o su identidad, tiene distintas opciones. Obtenga más información sobre la [privacidad de datos de Developer Community](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy).
+Los comentarios y las respuestas son visibles públicamente, pero los archivos adjuntos se comparten de forma privada con Microsoft únicamente. Esto es una ventaja, ya que permite que toda la comunidad pueda ver las incidencias y las soluciones que han encontrado otros usuarios. Pero, si le preocupa la privacidad de sus datos o su identidad, tiene distintas opciones. Obtenga más información sobre la [privacidad de datos de Developer Community](./developer-community-privacy.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

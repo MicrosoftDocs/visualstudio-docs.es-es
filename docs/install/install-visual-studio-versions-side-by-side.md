@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250255"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713469"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalación de distintas versiones de Visual Studio en paralelo
 
@@ -50,7 +50,7 @@ Antes de instalar versiones en paralelo, debe tener en cuenta los siguientes pun
 
 Al actualizar de una versión secundaria de Visual Studio a la siguiente, el instalador de Visual Studio actualizará la instalación actual a la siguiente versión de ese canal de forma predeterminada. Por ejemplo, al instalar la versión preliminar de 16.6.4, el instalador intentará reemplazar la instalación actual de la versión preliminar de 16.6.3, ya que ambas están en el canal de versión preliminar de 16.6. Esto ayuda a garantizar que las versiones anteriores de Visual Studio no ocupen espacio en el equipo. En algunos casos concretos, puede resultar útil instalar versiones secundarias en paralelo. En nuestro ejemplo, esto conllevaría tener tanto la versión 16.6.3 como la 16.6.4 en el mismo equipo.
 
-1. Descargue el [archivo de programa previo de Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) para la versión secundaria que quiere instalar en paralelo con las versiones existentes de Visual Studio.
+1. Descargue el [archivo de programa previo de Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) para la versión secundaria que quiere instalar en paralelo con las versiones existentes de Visual Studio.
 2. Abra el símbolo del sistema en modo de administrador. Para ello, abra el menú Inicio de Windows, escriba "cmd", haga clic con el botón derecho en el resultado de la búsqueda del símbolo del sistema y seleccione **Ejecutar como administrador**. En el símbolo del sistema, cambie el directorio a la carpeta donde se encuentra el archivo de programa previo de Visual Studio.
 3. Ejecute el siguiente comando, pero especifique una nueva ruta de acceso para la carpeta de la ubicación de la instalación y reemplace el nombre del archivo .exe por el nombre del programa previo correspondiente a la versión de Visual Studio que está instalando. El nombre del archivo .exe debe ser igual o ser parecido a uno de los siguientes nombres de archivo:
    * vs_community.exe para Visual Studio Community

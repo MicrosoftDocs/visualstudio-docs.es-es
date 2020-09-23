@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 67a9a6f7ec63686003f6e6535b213e9c6fa606f0
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741772"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682654"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 
@@ -48,7 +48,7 @@ Hay tres categorías de convención de codificación de .NET admitidas:
 
 ## <a name="enforce-coding-conventions-on-build"></a>Aplicación de convenciones de codificación en la compilación
 
-A partir de la versión 16.8 de Visual Studio 2019, que incluye el SDK de .NET 5.0 RC2, puede [aplicar las convenciones de codificación de .NET en la compilación](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) para todos los proyectos de .NET. En tiempo de compilación, las infracciones al estilo de código de .NET aparecerán como advertencias o errores con un prefijo "IDE". Esto le permite aplicar estrictamente estilos de código coherentes en el código base.
+A partir de la versión 16.8 de Visual Studio 2019, que incluye el SDK de .NET 5.0 RC2, puede [aplicar las convenciones de codificación de .NET en la compilación](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) para todos los proyectos de .NET. En tiempo de compilación, las infracciones al estilo de código de .NET aparecerán como advertencias o errores con un prefijo "IDE". Esto le permite aplicar estrictamente estilos de código coherentes en el código base.
 
 ::: moniker-end
 

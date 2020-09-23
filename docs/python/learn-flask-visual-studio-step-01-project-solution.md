@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 018b9a6707ea46a9b1c46f820faf7bd47dac1ff9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315309"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809903"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Flask en Visual Studio
 
@@ -106,7 +106,7 @@ Como seleccionó **Crear nuevo repositorio Git** en el cuadro de diálogo **Nuev
 
 Respuesta: En primer lugar, usar el control de código fuente desde el principio, especialmente si también utiliza un repositorio remoto, genera una copia de seguridad periódica externa del proyecto. A diferencia de mantener un proyecto solo en un sistema de archivos local, el control de código fuente también proporciona un historial de cambios completo y la capacidad de revertir con facilidad un único archivo o todo el proyecto a un estado anterior. Ese historial de cambios ayuda a determinar la causa de regresiones (errores de prueba). Además, el control de código fuente es esencial si varias personas trabajan en un proyecto, ya que administra las sobrescrituras y ofrece solución para los conflictos. Por último, el control de código fuente, que es básicamente una forma de automatización, facilita la automatización de las compilaciones, las pruebas y la administración de versiones. Es realmente el primer paso para utilizar DevOps para un proyecto, y dado que las barreras de entrada son tan bajas, realmente no hay ninguna razón que impida usar el control de código fuente desde el principio.
 
-Para obtener más información sobre el control de código fuente como automatización, consulte [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232) (El origen de la verdad, el rol de los repositorios en DevOps), un artículo de MSDN Magazine escrito para aplicaciones móviles que se aplica también a las aplicaciones web.
+Para obtener más información sobre el control de código fuente como automatización, consulte [The Source of Truth: The Role of Repositories in DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops) (El origen de la verdad, el rol de los repositorios en DevOps), un artículo de MSDN Magazine escrito para aplicaciones móviles que se aplica también a las aplicaciones web.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pregunta: ¿Puedo evitar que Visual Studio confirme automáticamente un nuevo proyecto?
 

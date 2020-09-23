@@ -1,5 +1,5 @@
 ---
-title: No se admite la depuración en modo mixto para procesos IA64. | Microsoft Docs
+title: No se admite la depuración en modo mixto de procesos IA64
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 63a083bd9299570ba2b04a0879d5c9acde24ec4e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731103"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810684"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>No se admite la depuración en modo mixto para procesos IA64.
 Visual Studio no admite la depuración en modo mixto de código nativo y administrado en procesos IA64. Esto significa que no puede pasar de código administrado a código nativo, o de código nativo a código administrado, mientras está depurando.

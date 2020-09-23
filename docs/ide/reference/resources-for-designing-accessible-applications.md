@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70107844"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808999"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para diseñar aplicaciones accesibles
 
@@ -48,9 +48,9 @@ Más información sobre las tecnologías que admiten diseño accesible. También
 
 ## <a name="websites"></a>Sitios web
 
-- [Tutorial: Directrices de accesibilidad para usar controles Image, Menu y AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) En este artículo se proporcionan instrucciones paso a paso para incluir controles accesibles en una página web de ejemplo. También se proporcionan algunas sugerencias de diseño de accesibilidad para Internet.
+- [Tutorial: Directrices de accesibilidad para usar controles Image, Menu y AutoPostBack](/previous-versions/3has1x30(v=vs.140)) En este artículo se proporcionan instrucciones paso a paso para incluir controles accesibles en una página web de ejemplo. También se proporcionan algunas sugerencias de diseño de accesibilidad para Internet.
 
-- **Creación de páginas web accesibles con DHTML** En este artículo técnico se enumeran los elementos de HTML 4.0 que son accesibles, así como sugerencias para un diseño web accesible. Para obtener más información, vea [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Creación de páginas web accesibles con DHTML).
+- **Creación de páginas web accesibles con DHTML** En este artículo técnico se enumeran los elementos de HTML 4.0 que son accesibles, así como sugerencias para un diseño web accesible. Para obtener más información, vea [Create accessible web pages with DHTML](/previous-versions//ms528445(v=vs.85)) (Creación de páginas web accesibles con DHTML).
 
 ### <a name="third-party-resources"></a>Recursos de terceros
 

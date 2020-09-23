@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para usar el SDK de marcadores del Visualizador de simultaneidad | Microsoft Docs
+title: Usar el SDK de marcadores del Visualizador de simultaneidad | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0782744236777fb84a6d87f93f59697275df1c11
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331391"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851585"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo Usar el SDK de marcadores del Visualizador de simultaneidad
 Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear intervalos y escribir marcas, mensajes y alertas.

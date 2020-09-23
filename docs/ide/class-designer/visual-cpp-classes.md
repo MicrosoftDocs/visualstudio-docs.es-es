@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590740"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808134"
 ---
 # <a name="c-classes-in-class-designer"></a>Clases de C++ en el Diseñador de clases
 
@@ -54,7 +54,7 @@ Si hace clic con el botón derecho en una forma de clase y, después, hace clic 
 > [!NOTE]
 > No se admite el comando **Mostrar clases derivadas** para el código de C++. Para mostrar las clases derivadas, vaya a la **Vista de clases**, expanda el nodo de tipo, expanda la subcarpeta **Tipos derivados** y arrastre esos tipos al diagrama de clases.
 
-Para obtener más información sobre la herencia de varias clases, vea [Herencia múltiple](https://msdn.microsoft.com/library/6td5yws2.aspx) y [Multiple Base Classes](/cpp/cpp/multiple-base-classes) (Varias clases base).
+Para obtener más información sobre la herencia de varias clases, vea [Herencia múltiple](/previous-versions/6td5yws2(v=vs.140)) y [Multiple Base Classes](/cpp/cpp/multiple-base-classes) (Varias clases base).
 
 ## <a name="abstract-classes"></a>Clases abstractas
 
@@ -177,6 +177,6 @@ En la tabla siguiente se muestran algunos ejemplos de conexión de clases especi
 - [Trabajo con código de C++](working-with-visual-cpp-code.md)
 - [Clases y structs](/cpp/cpp/classes-and-structs-cpp)
 - [Tipos de clase anónima](/cpp/cpp/anonymous-class-types)
-- [Herencia múltiple](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Herencia múltiple](/previous-versions/6td5yws2(v=vs.140))
 - [Varias clases base](/cpp/cpp/multiple-base-classes)
 - [Templates](/cpp/cpp/templates-cpp) (Plantillas [C++])

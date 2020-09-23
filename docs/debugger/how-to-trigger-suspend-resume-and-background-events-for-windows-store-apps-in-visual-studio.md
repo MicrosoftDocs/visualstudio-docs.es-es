@@ -1,6 +1,5 @@
 ---
 title: Desencadenamiento de eventos de suspensión, reanudación y en segundo plano al depurar UWP
-ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5cbdfb443d07b01f4de6f43fb98103339566cde2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600162"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808199"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Desencadenamiento de eventos de suspensión, reanudación y en segundo plano al depurar aplicaciones para UWP en Visual Studio
 

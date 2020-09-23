@@ -32,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588803"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808095"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opciones, Editor de texto, Todos los idiomas, Barras de desplazamiento
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado de la barra de desplazamiento del Editor de código. Para mostrar estas opciones, seleccione **Opciones** desde el menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los idiomas** y después seleccione **Barras de desplazamiento**.
@@ -69,7 +69,7 @@ Seleccione si la barra de desplazamiento vertical muestra las siguientes anotaci
 
 Para probarla, abra un archivo de código largo y reemplace texto que aparezca en distintos lugares del archivo. La barra de desplazamiento muestra el efecto de los reemplazos, por lo que puede revertir los cambios si ha reemplazado algo que no debería haber reemplazado.
 
-Consulte la entrada de blog [Barra de desplazamiento mejorada](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) sobre qué significan los distintos colores y símbolos que se muestran al editar el código.
+Consulte la entrada de blog [Barra de desplazamiento mejorada](/archive/blogs/cdnstudents/visual-studio-tips-and-tricks-enhanced-scroll-bar) sobre qué significan los distintos colores y símbolos que se muestran al editar el código.
 
 ## <a name="behavior"></a>Comportamiento
 

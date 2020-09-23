@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para serializar la información de símbolos | Microsoft Docs
+title: Serializar la información de símbolos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d28df6d36b1b91974483ae793e6e57f064974183
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d644960153a8e342f6442f3750420ea68a61b38f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328532"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851598"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Procedimiento Serializar la información de símbolos
 Puede serializar símbolos que debe tener para analizar la aplicación. La serialización de símbolos agrega símbolos al archivo .*vsp*. Al agregar información de símbolos al archivo .*vsp*, otros usuarios pueden analizar un informe de rendimiento sin tener acceso a los símbolos originales. Si no se serializan los símbolos, debe tener archivos .*exe* y .*pdb* originales instrumentados para analizar el archivo .*vsp*.
