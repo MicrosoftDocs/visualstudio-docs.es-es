@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear menús contextuales para marcadores'
+title: 'Tutorial: crear menús contextuales para marcadores'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,98 +16,98 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438539"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91146909"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Tutorial: Crear menús contextuales para marcadores
-  En este tutorial se muestra cómo crear menús contextuales para <xref:Microsoft.Office.Tools.Word.Bookmark> controles en una personalización de nivel de documento para Word. Cuando un usuario seleccione el texto de un marcador, un menú contextual aparece y proporciona las opciones de usuario para dar formato al texto.
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Tutorial: crear menús contextuales para marcadores
+  En este tutorial se muestra cómo crear menús contextuales para <xref:Microsoft.Office.Tools.Word.Bookmark> los controles de una personalización de nivel de documento para Word. Cuando un usuario hace clic con el botón secundario en el texto de un marcador, aparece un menú contextual que proporciona las opciones de usuario para dar formato al texto.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
  En este tutorial se muestran las tareas siguientes:
 
-- [Crear el proyecto](#BKMK_CreateProject).
+- [Cree el proyecto](#BKMK_CreateProject).
 
-- [Agregar texto y marcadores al documento](#BKMK_addtextandbookmarks).
+- [Agregue texto y marcadores al documento](#BKMK_addtextandbookmarks).
 
 - [Agregar comandos a un menú contextual](#BKMK_AddCmndsShortMenu).
 
-- [Dar formato al texto del marcador](#BKMK_formattextbkmk).
+- [Dé formato al texto del marcador](#BKMK_formattextbkmk).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
-## <a name="BKMK_CreateProject"></a> Crear el proyecto
+## <a name="create-the-project"></a><a name="BKMK_CreateProject"></a> Crear el proyecto
  El primer paso es crear un proyecto de documento de Word en Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-- Crear un proyecto de documento de Word con el nombre **mi menú contextual de marcador**. En el asistente, seleccione **crear un nuevo documento**. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Cree un proyecto de documento de Word que tenga el nombre del **menú contextual mi marcador**. En el asistente, seleccione **crear un nuevo documento**. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **mi menú contextual de marcador** proyecto a **el Explorador de soluciones**.
+     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el proyecto de **menú contextual mi marcador** a **Explorador de soluciones**.
 
-## <a name="BKMK_addtextandbookmarks"></a> Agregar texto y marcadores al documento
+## <a name="add-text-and-bookmarks-to-the-document"></a><a name="BKMK_addtextandbookmarks"></a> Agregar texto y marcadores al documento
  Agregue texto al documento y, a continuación, agregue dos marcadores superpuestos.
 
 ### <a name="to-add-text-to-your-document"></a>Para agregar texto al documento
 
 - En el documento que aparece en el diseñador del proyecto, escriba el texto siguiente.
 
-     **Esto es un ejemplo de creación de un menú contextual cuando hace clic en el texto de un marcador.**
+     **Este es un ejemplo de cómo crear un menú contextual al hacer clic con el botón secundario en el texto de un marcador.**
 
-### <a name="to-add-a-bookmark-control-to-your-document"></a>Para agregar un control Bookmark al documento
+### <a name="to-add-a-bookmark-control-to-your-document"></a>Para agregar un control Bookmark a un documento
 
-1. En el **cuadro de herramientas**, desde el **controles de Word** pestaña, arrastre un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento.
+1. En el **cuadro de herramientas**, en la pestaña **controles de Word** , arrastre un <xref:Microsoft.Office.Tools.Word.Bookmark> control hasta el documento.
 
-    El **agregar Control de marcador** aparece el cuadro de diálogo.
+    Aparece el cuadro de diálogo **Agregar control de marcador** .
 
-2. Seleccione las palabras "creación de un menú contextual cuando hace clic en el texto" y, a continuación, haga clic en **Aceptar**.
+2. Seleccione las palabras "crear un menú contextual al hacer clic con el botón secundario en el texto" y, a continuación, haga clic en **Aceptar**.
 
     `bookmark1` se agrega al documento.
 
-3. Agregue otro <xref:Microsoft.Office.Tools.Word.Bookmark> el control a las palabras "haga clic en el texto de un marcador".
+3. Agregue otro <xref:Microsoft.Office.Tools.Word.Bookmark> control a las palabras "haga clic con el botón derecho en el texto de un marcador".
 
     `bookmark2` se agrega al documento.
 
    > [!NOTE]
-   > Las palabras "haga clic en el texto" están en ambos `bookmark1` y `bookmark2`.
+   > Las palabras "hacer clic con el botón secundario en el texto" están en `bookmark1` y `bookmark2` .
 
-   Cuando se agrega un marcador a un documento en tiempo de diseño, un <xref:Microsoft.Office.Tools.Word.Bookmark> se crea el control. Puede programar varios eventos del marcador. Puede escribir código en el <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> eventos del marcador para que cuando el usuario seleccione el texto del marcador, aparece un menú contextual.
+   Al agregar un marcador a un documento en tiempo de diseño, <xref:Microsoft.Office.Tools.Word.Bookmark> se crea un control. Puede programar con varios eventos del marcador. Puede escribir código en el <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> evento del marcador para que, cuando el usuario haga clic con el botón secundario en el texto del marcador, aparezca un menú contextual.
 
-## <a name="BKMK_AddCmndsShortMenu"></a> Agregar comandos a un menú contextual
- Agregar botones al menú contextual que aparece cuando hace clic en el documento.
+## <a name="add-commands-to-a-shortcut-menu"></a><a name="BKMK_AddCmndsShortMenu"></a> Agregar comandos a un menú contextual
+ Agregue botones al menú contextual que aparece cuando hace clic con el botón secundario en el documento.
 
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>Para agregar comandos a un menú contextual
 
-1. Agregar un **Ribbon XML** al proyecto. Para obtener más información, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).
+1. Agregue un elemento XML de la **cinta** de opciones al proyecto. Para obtener más información, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. En **el Explorador de soluciones**, seleccione **ThisDocument.cs** o **ThisDocument.vb**.
+2. En **Explorador de soluciones**, seleccione **ThisDocument.CS** o **ThisDocument. VB**.
 
-3. En la barra de menús, elija **Ver** > **Código**.
+3. En la barra de menús, elija **Ver**  >  **código**.
 
-     El **ThisDocument** en el Editor de código se abre el archivo de clase.
+     El archivo de clase **ThisDocument** se abre en el editor de código.
 
-4. Agregue el código siguiente a la **ThisDocument** clase. Este código invalida el método CreateRibbonExtensibilityObject y devuelve la clase XML Ribbon a la aplicación de Office.
+4. Agregue el código siguiente a la clase **ThisDocument** . Este código invalida el método CreateRibbonExtensibilityObject y devuelve la clase XML Ribbon a la aplicación de Office.
 
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
 5. En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de cinta se denomina Ribbon1.xml.
 
-6. En la barra de menús, elija **Ver** > **Código**.
+6. En la barra de menús, elija **Ver**  >  **código**.
 
      Se abrirá el archivo de código XML de cinta de opciones en el Editor de código.
 
-7. En el Editor de código, reemplace el contenido del archivo XML de cinta de opciones con el código siguiente.
+7. En el editor de código, reemplace el contenido del archivo XML de la cinta de opciones por el código siguiente.
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -123,27 +123,27 @@ ms.locfileid: "63438539"
     </customUI>
     ```
 
-     Este código agrega dos botones en el menú contextual que aparece cuando hace clic en el documento.
+     Este código agrega dos botones al menú contextual que aparece al hacer clic con el botón secundario en el documento.
 
-8. En **el Explorador de soluciones**, haga clic en `ThisDocument`y, a continuación, haga clic en **ver código**.
+8. En **Explorador de soluciones**, haga clic con el botón secundario `ThisDocument` y, a continuación, haga clic en **Ver código**.
 
-9. Declare una variable de marcador en el nivel de clase y de las siguientes variables.
+9. Declare las siguientes variables y una variable de marcador en el nivel de clase.
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. En **el Explorador de soluciones**, seleccione el archivo de código de la cinta de opciones. De forma predeterminada, el archivo de código de cinta de opciones se denomina **Ribbon1.cs** o **Ribbon1.vb**.
+10. En **Explorador de soluciones**, seleccione el archivo de código de la cinta de opciones. De forma predeterminada, el archivo de código de la cinta de opciones se denomina **Ribbon1.CS** o **Ribbon1. VB**.
 
-11. En la barra de menús, elija **Ver** > **Código**.
+11. En la barra de menús, elija **Ver**  >  **código**.
 
      Se abre el archivo de código de la cinta de opciones en el editor de código.
 
-12. En el archivo de código de la cinta de opciones, agregue el siguiente método. Se trata de un método de devolución de llamada para los dos botones que agregó al menú contextual del documento. Este método determina si estos botones aparecen en el menú contextual. Los botones de negrita y cursiva solo aparecen si hace doble clic en el texto del marcador.
+12. En el archivo de código de la cinta de opciones, agregue el siguiente método. Se trata de un método de devolución de llamada para los dos botones que ha agregado al menú contextual del documento. Este método determina si estos botones aparecen en el menú contextual. Los botones de negrita y cursiva solo aparecen si hace clic con el botón secundario en texto dentro del marcador.
 
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
 
-## <a name="BKMK_formattextbkmk"></a> Dar formato al texto del marcador
+## <a name="format-the-text-in-the-bookmark"></a><a name="BKMK_formattextbkmk"></a> Dar formato al texto del marcador
 
 ### <a name="to-format-the-text-in-the-bookmark"></a>Para dar formato al texto del marcador
 
@@ -152,49 +152,49 @@ ms.locfileid: "63438539"
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2. **El Explorador de soluciones**, seleccione **ThisDocument.cs** o **ThisDocument.vb**.
+2. **Explorador de soluciones**, seleccione **ThisDocument.CS** o **ThisDocument. VB**.
 
-3. En la barra de menús, elija **Ver** > **Código**.
+3. En la barra de menús, elija **Ver**  >  **código**.
 
-     El **ThisDocument** en el Editor de código se abre el archivo de clase.
+     El archivo de clase **ThisDocument** se abre en el editor de código.
 
-4. Agregue el código siguiente a la **ThisDocument** clase.
+4. Agregue el código siguiente a la clase **ThisDocument** .
 
      [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
      [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
 
     > [!NOTE]
-    > Debe escribir código para controlar el caso de que se superponen a marcadores. Si no lo hace, de forma predeterminada, el código se llamará para todos los marcadores de la selección.
+    > Debe escribir código para controlar el caso en el que los marcadores se superponen. Si no lo hace, de forma predeterminada, se llamará al código para todos los marcadores de la selección.
 
-5. En C#, debe agregar controladores de eventos para los controles de marcador para el <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. En C#, debe agregar controladores de eventos para los controles Bookmark al <xref:Microsoft.Office.Tools.Word.Document.Startup> evento. Para obtener información sobre cómo crear controladores de eventos, consulte [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
 
-## <a name="test-the-application"></a>Probar la aplicación
- Probar el documento para comprobar que los elementos de menú en negrita y cursiva aparecen en el menú contextual cuando hace clic en el texto de un marcador y que el texto es el formato correcto.
+## <a name="test-the-application"></a>Prueba de la aplicación
+ Pruebe el documento para comprobar que los elementos de menú en negrita y cursiva aparecen en el menú contextual al hacer clic con el botón secundario en el texto de un marcador y que el texto tiene el formato correcto.
 
 ### <a name="to-test-your-document"></a>Para probar el documento
 
 1. Presione **F5** para ejecutar el proyecto.
 
-2. Haga clic en el primer marcador y, a continuación, haga clic en **negrita**.
+2. Haga clic con el botón secundario en el primer marcador y, a continuación, haga clic en **negrita**.
 
-3. Compruebe que todo el texto en `bookmark1` está en negrita.
+3. Compruebe que todo el texto de `bookmark1` tiene el formato de negrita.
 
-4. Haga clic en el texto que se superponen a los marcadores, y, a continuación, haga clic en **cursiva**.
+4. Haga clic con el botón secundario en el texto donde se superponen los marcadores y, a continuación, haga clic en **cursiva**.
 
-5. Compruebe que todo el texto en `bookmark2` es cursiva y solo la parte del texto en `bookmark1` que se superpone `bookmark2` está en cursiva.
+5. Compruebe que todo el texto de `bookmark2` está en cursiva y solo la parte del texto de `bookmark1` que se superpone está en `bookmark2` cursiva.
 
 ## <a name="next-steps"></a>Pasos siguientes
  A continuación, podría realizar las siguientes tareas:
 
-- Escribir código para responder a eventos de los controles host en Excel. Para obtener más información, vea [Tutorial: Programar basándose en eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
+- Escribir código para responder a los eventos de los controles host en Excel. Para obtener más información, vea [Tutorial: programar contra eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
-- Utilice una casilla de verificación para cambiar el formato de un marcador. Para obtener más información, vea [Tutorial: Cambiar formato de documento utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Use una casilla para cambiar el formato de un marcador. Para obtener más información, vea [Tutorial: cambiar el formato de un documento mediante controles de casilla](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Vea también
-- [Tutoriales para Word](../vsto/walkthroughs-using-word.md)
+- [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
-- [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
+- [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Bookmark (control)](../vsto/bookmark-control.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

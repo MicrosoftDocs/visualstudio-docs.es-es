@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 410f8afdac24139791c19c3936049c855a51d4f9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798165"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91146908"
 ---
-# <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
+# <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una matriz de valores de identificador de tipo específico del compilador para este símbolo.  
+Recupera una matriz de valores de identificador de tipo específicos del compilador para este símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,19 +37,19 @@ HRESULT get_typeIds ( 
   
 #### <a name="parameters"></a>Parámetros  
  `cTypeIds`  
- [in] Tamaño del búfer para almacenar los datos.  
+ de Tamaño del búfer que va a contener los datos.  
   
  `pcTypeIds`  
- [out] Devuelve el número de `typeIds` escrito, o bien, si `typeIds` es `NULL`, a continuación, el número total de identificadores de tipo disponibles.  
+ enuncia Devuelve el número de `typeIds` tipos escritos, o, si `typeIds` es `NULL` , el número total de identificadores de tipo disponibles.  
   
  `typeIds[]`  
- [out] Una matriz que se va a rellenar con los identificadores de tipo.  
+ enuncia Matriz que se va a rellenar con los identificadores de tipo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
