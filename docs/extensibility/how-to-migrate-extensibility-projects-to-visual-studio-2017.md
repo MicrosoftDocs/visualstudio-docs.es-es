@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038561"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352288"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad a Visual Studio 2017
 
@@ -172,7 +172,7 @@ Al buscar las dependencias, verá que una dependencia podría asignarse a varios
 
 Para proporcionar más instrucciones, hemos identificado algunos tipos de extensión comunes y sus requisitos previos sugeridos:
 
-Tipo de extensión | Display Name (Nombre para mostrar) | ID
+Tipo de extensión | Display Name (Nombre para mostrar) | Id.
 --- | --- | ---
 Editor | Editor de núcleo de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# y Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -181,7 +181,7 @@ instantáneas | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugg
 
 ## <a name="find-component-ids"></a>Buscar identificadores de componente
 
-La lista de componentes ordenados por producto de Visual Studio se encuentra en [identificadores de componente y carga de trabajo de Visual studio 2017](../install/workload-and-component-ids.md?view=vs-2019). Use estos identificadores de componente para los identificadores de requisitos previos en el manifiesto.
+La lista de componentes ordenados por producto de Visual Studio se encuentra en [identificadores de componente y carga de trabajo de Visual studio 2017](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true). Use estos identificadores de componente para los identificadores de requisitos previos en el manifiesto.
 
 Si no está seguro de qué componente contiene un archivo binario específico, descargue la [hoja de cálculo de asignación binaria de componentes >](https://aka.ms/vs2017componentid-binaries).
 
