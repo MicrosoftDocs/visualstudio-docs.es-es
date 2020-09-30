@@ -1,5 +1,6 @@
 ---
-title: 'Soluciones de SharePoint: creación de características personalizadas, reglas de validación de paquetes'
+title: Crear validaciones de características y paquetes para soluciones de SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f731b6af2ada8caddb84be5561d7f6dc304e7bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016914"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585828"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint
+# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>Crear validaciones de características y paquetes para soluciones de SharePoint
+
   Puede crear reglas de validación personalizadas para comprobar el paquete de soluciones generado por Visual Studio. Puede realizar la validación completa de una característica o paquete completo seleccionando **validar** en el menú contextual de un paquete o característica en el **PackagingExplorer**. La validación parcial se realiza al agregar nuevas características o elementos de proyecto de SharePoint al proyecto para determinar si el paquete o la característica se encontrarían en un estado válido.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>Para crear una regla de validación de paquetes personalizada
@@ -57,5 +59,5 @@ ms.locfileid: "86016914"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

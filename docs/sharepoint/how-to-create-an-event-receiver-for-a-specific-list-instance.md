@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: crear un receptor de eventos para una instancia de lista específica | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016962"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585841"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Cómo: crear un receptor de eventos para una instancia de lista específica
   Un receptor de eventos de instancia de lista responde a los eventos que se producen en cualquier instancia de una definición de lista. Aunque la plantilla de receptor de eventos no habilita el destino de una instancia de lista específica, puede modificar un receptor de eventos cuyo ámbito es una definición de lista para responder a los eventos de una instancia de lista específica.
@@ -85,6 +86,6 @@ ms.locfileid: "86016962"
 
      Tenga en cuenta que el receptor de eventos no se activa en el anuncio nuevo porque el receptor está configurado para responder solo a los eventos de la instancia de lista de anuncios personalizada, **TestAnnouncements**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

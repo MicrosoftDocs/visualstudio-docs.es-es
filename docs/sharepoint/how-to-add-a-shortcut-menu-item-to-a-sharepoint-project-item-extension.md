@@ -1,5 +1,6 @@
 ---
 title: Agregar elemento de menú contextual a la extensión de elemento de proyecto de SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c0515fddc106418902cd2cca9fcba4c0e365da1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3c0627849df12b98ddc16f54317faf952cb41f6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014852"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585867"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Cómo: agregar un elemento de menú contextual a una extensión de elemento de proyecto de SharePoint
   Puede Agregar un elemento de menú contextual a un elemento de proyecto de SharePoint existente mediante una extensión de elemento de proyecto. El elemento de menú aparece cuando un usuario hace clic con el botón secundario en el elemento de proyecto en **Explorador de soluciones**.
@@ -52,7 +53,7 @@ ms.locfileid: "86014852"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Cómo: agregar una propiedad a una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
 - [Extender elementos de proyecto de SharePoint](../sharepoint/extending-sharepoint-project-items.md)
