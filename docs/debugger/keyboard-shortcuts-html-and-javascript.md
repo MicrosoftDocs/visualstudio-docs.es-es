@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 32a3dcc48e34cc3ecc429f7f2b4ca62221263fe0
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731494"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211344"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Métodos abreviados de teclado (HTML y JavaScript)
 
@@ -59,6 +59,6 @@ Métodos abreviados de teclado de Visual Studio para depurar aplicaciones para 
 |Reducir en 1 el valor CSS seleccionado|Flecha abajo|
 
 ## <a name="see-also"></a>Vea también
-- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
-- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
+- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)
+- [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)

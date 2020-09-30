@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348111"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211081"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depuración de JavaScript con la consola en Visual Studio
 
-Puede usar la ventana Consola JavaScript para interactuar con ella y depurar las aplicaciones para UWP compiladas con JavaScript. Estas características son compatibles con las aplicaciones para UWP y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+Puede usar la ventana Consola JavaScript para interactuar con ella y depurar las aplicaciones para UWP compiladas con JavaScript. Estas características son compatibles con las aplicaciones para UWP y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
 La ventana Consola JavaScript le permite:
 
@@ -39,7 +39,7 @@ La ventana Consola JavaScript le permite:
 
 - Ver los errores y las excepciones de JavaScript, además de las excepciones de Document Object Model (DOM) y de Windows en tiempo de ejecución.
 
-- Realizar otras tareas, como borrar la pantalla. Consulta [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) para ver la lista completa de comandos.
+- Realizar otras tareas, como borrar la pantalla. Consulta [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) para ver la lista completa de comandos.
 
 > [!TIP]
 > Si la ventana Consola JavaScript está cerrada, elija **Depurar**> **Ventanas** > **Consola de JavaScript** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.
@@ -251,9 +251,9 @@ Puede cambiar el contexto de ejecución mediante el comando `cd` , pero debe sab
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
-- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
 - [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Depurar un control WebView](../debugger/debug-a-webview-control.md)

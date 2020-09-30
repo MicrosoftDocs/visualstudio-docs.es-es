@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809916"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352354"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
@@ -124,7 +124,7 @@ Por este motivo, los desarrolladores suelen crear un *entorno virtual* para un p
 
 Visual Studio permite crear directamente un entorno virtual para un proyecto. Por ejemplo, si abre un proyecto que contiene un archivo *requirements.txt* o crea un proyecto a partir de una plantilla que incluye ese archivo, Visual Studio le pide que cree automáticamente un entorno virtual e instale esas dependencias.
 
-En un proyecto abierto puede crear un nuevo entorno virtual en cualquier momento. En el **Explorador de soluciones**, expanda el nodo del proyecto, haga clic con el botón derecho en **Entornos de Python** y seleccione "Agregar entorno virtual". Para obtener más información, vea [Creación de un entorno virtual](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
+En un proyecto abierto puede crear un nuevo entorno virtual en cualquier momento. En el **Explorador de soluciones**, expanda el nodo del proyecto, haga clic con el botón derecho en **Entornos de Python** y seleccione "Agregar entorno virtual". Para obtener más información, vea [Creación de un entorno virtual](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1).
 
 Visual Studio además proporciona un comando para generar un archivo *requirements.txt* desde un entorno virtual, con lo que resulta sencillo volver a crear el entorno en otros equipos. Para obtener más información, vea [Use virtual environments](selecting-a-python-environment-for-a-project.md#use-virtual-environments) (Usar entornos virtuales).
 
@@ -239,7 +239,7 @@ Use los pasos siguientes para identificar un entorno instalado en una ubicación
 
     ![Opción de entorno personalizado en el cuadro de diálogo Agregar entorno](media/environments/environments-custom-2-2019.png)
 
-1. En los campos que se proporcionan en el cuadro de diálogo, escriba o busque (con **...** ) la ruta de acceso del intérprete en **Ruta de acceso del prefijo**, que se rellena en la mayoría de los otros campos. Después de revisar esos valores y modificarlos según sea necesario, seleccione **Agregar**. 
+1. En los campos que se proporcionan en el cuadro de diálogo, escriba o busque (con **...** ) la ruta de acceso del intérprete en **Ruta de acceso del prefijo**, que se rellena en la mayoría de los otros campos. Después de revisar esos valores y modificarlos según sea necesario, seleccione **Agregar**.
 
     ![Campos para especificar detalles de la opción de un entorno personalizado en el cuadro de diálogo Agregar entorno](media/environments/environments-custom-3-2019.png)
 
@@ -271,7 +271,7 @@ Para corregir un entorno sin opción de reparación o quitar un entorno no váli
     - Si el entorno todavía figura en el equipo, cambie el valor de **ExecutablePath** a la ubicación adecuada. Corrija también los valores **(Predeterminado)** y **WindowedExecutablePath** según sea necesario.
     - Si el entorno ya no figura en el equipo y quiere eliminarlo de la ventana **Entornos de Python**, elimine el nodo primario de **InstallPath**, como, por ejemplo, **3.6** en la imagen anterior.
     - La configuración no válida en **HKEY_CURRENT_USER\SOFTWARE\Python** reemplaza la configuración en **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
-    
+
 ## <a name="see-also"></a>Vea también
 
 - [Instalación de intérpretes de Python](installing-python-interpreters.md)

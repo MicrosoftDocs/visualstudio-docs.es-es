@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74239454"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713508"
 ---
 # <a name="remote-debugger-port-assignments"></a>Asignaciones de puertos del depurador remoto
 El depurador remoto de Visual Studio se puede ejecutar como una aplicación o como un servicio en segundo plano. Cuando se ejecuta como una aplicación, usa un puerto asignado de forma predeterminada como se muestra a continuación:
@@ -29,7 +29,7 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
 
 - Visual Studio 2012: 4016
 
-En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer un número de puerto distinto según desee. Explicaremos cómo establecer números de puerto en una sección posterior.
+En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer otro número de puerto si quiere. Explicaremos cómo establecer números de puerto en una sección posterior.
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 32 bits
 

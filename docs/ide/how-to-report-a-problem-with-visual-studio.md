@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810879"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211180"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Cómo notificar un problema con Visual Studio o con el Instalador de Visual Studio
 
@@ -51,11 +51,11 @@ Puede notificar un problema desde Visual Studio o desde su instalador. Con la h
 
     Puede incluso recortar la captura de pantalla directamente en el explorador para quitar cualquier elemento que sea confidencial o no esté relacionado.
 
-4. Una de las mejores formas de ayudar al equipo de ingeniería de Visual Studio a resolver el problema es proporcionar un seguimiento y archivos de volcado de memoria del montón para que los examinen. Una manera fácil de hacerlo es grabar los pasos que han provocado el error. 
+4. Una de las mejores formas de ayudar al equipo de ingeniería de Visual Studio a resolver el problema es proporcionar un seguimiento y archivos de volcado de memoria del montón para que los examinen. Una manera fácil de hacerlo es grabar los pasos que han provocado el error.
 
     ![Grabe sus acciones](../ide/media/feedback-recording.png) *Solo los ingenieros de Microsoft pueden ver la grabación*
 
-5. Revise los archivos adjuntos y cargue archivos adicionales si cree que servirá para diagnosticar el problema.   
+5. Revise los archivos adjuntos y cargue archivos adicionales si cree que servirá para diagnosticar el problema.
 
     ![Archivos adjuntos](../ide/media/feedback-attachments.png) *Solo los ingenieros de Microsoft pueden ver los archivos adjuntos*
 

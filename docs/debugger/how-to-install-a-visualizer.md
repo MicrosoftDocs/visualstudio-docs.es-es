@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851416"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211370"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedimiento Instalación de un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.
@@ -32,7 +32,7 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Para instalar un visualizador para Visual Studio 2019
-  
+
 1. Busque el archivo DLL que contiene el visualizador que ha compilado.
 
    Normalmente, es mejor que tanto el archivo DLL del depurador como el archivo DLL del elemento depurado especifiquen **Cualquier CPU** como plataforma de destino. El archivo DLL del depurador debe ser **Cualquier CPU** o **32 bits**. La plataforma de destino para el archivo DLL del elemento depurado debe corresponderse con el proceso del elemento depurado.
@@ -42,7 +42,7 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
-    
+
 3. Copie el archivo DLL del [lado depurado](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) en cualquiera de las ubicaciones siguientes:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
@@ -61,7 +61,7 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 4. Reinicie la sesión de depuración.
 
 > [!NOTE]
-> El procedimiento es diferente en Visual Studio 2017 y versiones posteriores. Consulte la [versión anterior](how-to-install-a-visualizer.md?view=vs-2017) de este artículo.
+> El procedimiento es diferente en Visual Studio 2017 y versiones posteriores. Consulte la [versión anterior](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) de este artículo.
 ::: moniker-end
 
 ::: moniker range="vs-2017"

@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600186"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211094"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depuración de HTML y CSS en aplicaciones para UWP en Visual Studio
 
@@ -237,7 +237,7 @@ Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
 
 - Utilizando el botón **Seleccionar elemento** (Ctrl + B).
 
-- Utilizando el botón `select` , que es uno de los [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+- Utilizando el botón `select` , que es uno de los [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
   Cuando utilices la ventana del Explorador DOM para seleccionar elementos y sitúes el puntero del mouse sobre un elemento, el elemento correspondiente se resaltará en la aplicación que se ejecuta. Haz clic en el elemento en DOM Explorer para seleccionarlo, o puedes utilizar las teclas de dirección para resaltar y seleccionar elementos. También puedes seleccionar elementos del Explorador DOM mediante el botón **Seleccionar elemento** . En la ilustración siguiente se muestra el botón **Seleccionar elemento** .
 
@@ -259,7 +259,7 @@ Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
 - [Depurar aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Depurar un control WebView](../debugger/debug-a-webview-control.md)
-- [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
+- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Compatibilidad de productos y accesibilidad](/previous-versions/tzbxw1af(v=vs.120))

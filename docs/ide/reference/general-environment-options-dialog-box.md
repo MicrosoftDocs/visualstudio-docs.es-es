@@ -20,16 +20,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569444"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135097"
 ---
 # <a name="options-dialog-box-environment--general"></a>Cuadro de diálogo Opciones: Entorno \> General
 
-Use esta página para cambiar, entre otras opciones, los temas de color, la configuración de la barra de estado y las asociaciones de las extensiones de archivo del entorno de desarrollo integrado (IDE). Para acceder al cuadro de diálogo **Opciones**, abra el menú **Herramientas**, pulse **Opciones**, abra la carpeta **Entorno** y pulse la página **General**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione la casilla **Mostrar todas las configuraciones**.
+Use esta página para cambiar, entre otras opciones, los temas de color, la configuración de la barra de estado y las asociaciones de las extensiones de archivo del entorno de desarrollo integrado (IDE). Para acceder al cuadro de diálogo **Opciones**, abra el menú **Herramientas**, pulse **Opciones**, abra la carpeta **Entorno** y pulse la página **General**.
 
 ## <a name="visual-experience"></a>Experiencia visual
 
@@ -90,12 +90,12 @@ Muestra la barra de estado. La barra de estado se encuentra en la parte inferior
 
 **El botón Cerrar afecta solo a la ventana de herramientas activa**
 
-Especifica que, cuando se hace clic en el botón **Cerrar**, solo se cierra la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. Esta opción se encuentra activada de forma predeterminada.
+Especifica que, cuando se hace clic en el botón **Cerrar**, solo se cierra la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. Esta opción está seleccionada de forma predeterminada.
 
-**Ocultar automáticamente solo afecta a la ventana de la herramienta activa**
+**El botón Ocultar automáticamente afecta solo a la ventana de herramientas activa**
 
 Especifica que, cuando se hace clic en el botón **Ocultar automáticamente**, solo se oculta automáticamente la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. De forma predeterminada, esta opción no está seleccionada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -1,21 +1,23 @@
 ---
 title: Asignación de GUID específicos a suscriptores de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores pueden asignar GUID de suscripción específicos a los suscriptores.
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235191"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022491"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de suscripciones específicas en el Portal de administración de suscripciones de Visual Studio
 
 Ahora, los administradores pueden usar el Portal de administración de suscripciones de Visual Studio para asignar suscripciones específicas a suscriptores individuales.  Esto puede ser útil si una organización tiene personal o proveedores temporales que necesitan acceder a una suscripción durante un breve período.  Los administradores pueden asignar una suscripción que ya se haya utilizado parcialmente y dejar las nuevas para un uso más prolongado.  
+
+Vea el vídeo o siga leyendo para saber cómo asignar identificadores únicos de suscripciones específicas a los usuarios. 
 
 <br>
 
@@ -57,7 +59,7 @@ El paso final es descargar la plantilla **Agregar en masa**, rellenar la informa
 > - El GUID no se ha asignado ya a otro usuario de la lista exportada. 
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>P: ¿Cómo puedo cambiar la suscripción que está asignada actualmente a un usuario individual?
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>P: ¿Cómo puedo cambiar la suscripción que está asignada actualmente a un usuario individual?
 R: Si quiere cambiar el GUID asignado a un usuario, primero deberá eliminar la suscripción para ese usuario.  Para más información, consulte el artículo [Eliminar suscripciones](delete-license.md).  Después de eliminar la suscripción para ese usuario, siga el proceso descrito anteriormente para exportar la lista y cargar la información de la nueva suscripción.  
 
 ## <a name="see-also"></a>Vea también

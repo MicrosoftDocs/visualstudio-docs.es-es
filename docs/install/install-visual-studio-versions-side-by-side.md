@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713469"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211318"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalación de distintas versiones de Visual Studio en paralelo
 
@@ -28,7 +28,7 @@ Antes de instalar versiones en paralelo, debe tener en cuenta los siguientes pun
 
 * Si usa Visual Studio 2017 para abrir una solución creada en Visual Studio 2015, puede volver a abrir y modificar después la solución en la versión anterior, siempre y cuando no haya implementado ninguna de las características que son específicas de Visual Studio 2017.
 
-* Si intenta usar Visual Studio 2017 para abrir una solución creada en Visual Studio 2015 o en una versión anterior, es posible que necesite modificar los proyectos y los archivos para que sean compatibles con Visual Studio 2017. Para obtener más información, consulte la página [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017).
+* Si intenta usar Visual Studio 2017 para abrir una solución creada en Visual Studio 2015 o en una versión anterior, es posible que necesite modificar los proyectos y los archivos para que sean compatibles con Visual Studio 2017. Para obtener más información, consulte la página [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true).
 
 ::: moniker-end
 
@@ -75,17 +75,17 @@ Para obtener información específica del lenguaje, vea el tema correspondiente 
 
 | Lenguaje | Tema |
 |--------------|-----------|
-| Visual Basic | [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
-| Visual F# | [Desarrollo con Visual F# en Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
+| Visual Basic | [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017&preserve-view=true) |
+| Visual C# | [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017&preserve-view=true) |
+| Visual F# | [Desarrollo con Visual F# en Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017&preserve-view=true) |
 |C++ | [Cómo: Modificación de la plataforma de destino y el conjunto de herramientas de la plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalar Visual Studio](install-visual-studio.md?view=vs-2017)
-* [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
+* [Instalar Visual Studio](install-visual-studio.md?view=vs-2017&preserve-view=true)
+* [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true)
 * [Compilación de aplicaciones aisladas y ensamblados simultáneos de C/C++](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

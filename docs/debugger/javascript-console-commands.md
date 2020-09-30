@@ -14,16 +14,16 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731697"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211279"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola JavaScript de Visual Studio
 
-La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para ver ejemplos del uso de esa ventana, vea [Guía de inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). La información de este tema se aplica a las aplicaciones de Node.js, las aplicaciones para UWP y las aplicaciones creadas con las Herramientas de Visual Studio para Apache Cordova.
+La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para ver ejemplos del uso de esa ventana, vea [Guía de inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true). La información de este tema se aplica a las aplicaciones de Node.js, las aplicaciones para UWP y las aplicaciones creadas con las Herramientas de Visual Studio para Apache Cordova.
 
 Si la ventana Consola JavaScript está cerrada, puedes abrirla durante la depuración en Visual Studio si eliges **Depurar** > **Ventanas** > **Consola JavaScript**.
 
@@ -127,5 +127,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)
+- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)

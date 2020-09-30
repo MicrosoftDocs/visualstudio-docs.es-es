@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 068c80221a572747ab99e41e78945fe55c57c451
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591507"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211266"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opciones (Cuadro de diálogo) (Visual Studio)
 
@@ -33,16 +33,12 @@ El cuadro de diálogo **Opciones** está dividido en dos partes: un panel de nav
 Las opciones de una característica del IDE no aparecen en el panel de navegación hasta que la característica se carga en la memoria. Por lo tanto, las mismas opciones pueden no mostrarse cuando empieza una sesión que se han mostrado cuando ha finalizado la última. Cuando crea un proyecto o ejecuta un comando que usa una aplicación determinada, los nodos de las opciones relevantes se agregan al cuadro de diálogo Opciones. Estas opciones agregadas seguirán estando disponibles mientras que la característica del IDE siga estando en la memoria.
 
 > [!NOTE]
-> Algunas colecciones de configuraciones definen el número de páginas que aparecen en el panel de navegación del cuadro de diálogo Opciones. Puede elegir ver todas las páginas posibles seleccionando **Mostrar todas las configuraciones**.
+> Algunas colecciones de configuraciones definen el número de páginas que aparecen en el panel de navegación del cuadro de diálogo Opciones.
 
 ## <a name="how-options-are-applied"></a>Cómo se aplican las opciones
 
 Al hacer clic en Aceptar en el cuadro de diálogo **Opciones** se guardan todas las opciones en todas las páginas. Al hacer clic en Cancelar en cualquier página se cancelan todas las solicitudes de cambio, incluidas las que se acaban de realizar en otras páginas de **opciones**. Algunos cambios en la configuración de opciones, como los que se realizan en el [cuadro de diálogo Fuentes y colores, Entorno, Opciones](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) solo surtirán efecto después de que cierre y vuelva a abrir Visual Studio.
 
-### <a name="show-all-settings"></a>Mostrar todas las configuraciones
-
-Al seleccionar o anular la selección de **Mostrar todas las configuraciones** se aplican todos los cambios que ha realizado en el cuadro de diálogo **Opciones**, incluso cuando todavía no ha hecho clic en **Aceptar**.
-
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar el editor](../how-to-change-text-case-in-the-editor.md)

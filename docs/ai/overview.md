@@ -8,12 +8,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f4d04e64589ca8db9c53d5c4128391974b297d0
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: b4f2f9b1e827bc7bcb53f37693b811dcaecf1d09
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485390"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211055"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Información general de Visual Studio Tools for AI
 
@@ -23,7 +23,7 @@ Visual Studio Tools for AI es un entorno de desarrollo integrado (IDE) que pued
 
 Vea la página [Instalación de Visual Studio Tools for AI](installation.md) para obtener información sobre cómo descargar e instalar la extensión.
 
-## <a name="5-minute-quickstart"></a>Inicio rápido en 5 minutos 
+## <a name="5-minute-quickstart"></a>Inicio rápido en 5 minutos
 
 Obtenga información sobre cómo ejecutar la solución de aprendizaje profundo con [TensorFlow y Python](tensorflow-local.md)
 
@@ -40,4 +40,4 @@ Examine ejemplos en el [repositorio de ejemplos](https://github.com/Microsoft/sa
 Para obtener más información sobre Visual Studio Tools for AI, incluidos los requisitos del sistema y las opciones de soporte técnico, vea la página [Acerca de Visual Studio Tools for AI](about-ai-tools.md).
 
 ## <a name="see-also"></a>Vea también
-[Extensibilidad de Visual Studio](../extensibility/index.yml?view=vs-2017)
+[Extensibilidad de Visual Studio](../extensibility/index.yml?view=vs-2017&preserve-view=true)

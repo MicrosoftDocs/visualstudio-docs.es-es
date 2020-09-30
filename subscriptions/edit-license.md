@@ -1,18 +1,18 @@
 ---
 title: Edición de suscripciones en el Portal de administración | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 07/30/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Obtenga más información sobre cómo los administradores pueden editar asignaciones de suscripción.
-ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453738"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022565"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edición de asignaciones de suscripciones de Visual Studio
 Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios.
@@ -34,6 +34,7 @@ Puede actualizar el nombre del suscriptor, el apellido, el nivel de suscripción
 
 Puede editar varios suscriptores a la vez mediante el proceso de edición en masa. Esta característica se usa principalmente en organizaciones que están efectuando cambios en la dirección de correo electrónico corporativa o cuando una organización ha decidido restringir el acceso a las descargas.
 
+Vea este vídeo o siga leyendo saber cómo editar varios suscriptores mediante la edición en masa. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
@@ -56,10 +57,10 @@ Puede editar varios suscriptores a la vez mediante el proceso de edición en mas
 5. Cuando haya cargado el archivo, verá una notificación en la que se le indicará que se ha realizado correctamente. En este momento, los cambios se reflejarán en la información del suscriptor.
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 - ¿Necesita asignar un identificador de suscripción específico? Consulte la asignación de un identificador de suscripción. 

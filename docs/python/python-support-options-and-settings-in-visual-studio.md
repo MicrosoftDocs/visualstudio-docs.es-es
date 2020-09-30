@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315140"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211133"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -51,7 +51,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 | **Mostrar barra de notificaciones para crear entornos** | Activado | *Solo Visual Studio 2019.* Cuando se establece esta opción y el usuario abre un proyecto que contiene un archivo *requirements.txt* o *environment.yml*, Visual Studio muestra una barra de información con sugerencias para crear un entorno virtual o un entorno de Conda, respectivamente, en lugar de usar el entorno global predeterminado. |
 | **Mostrar barra de notificaciones para instalar paquetes** | Activado | *Solo Visual Studio 2019.* Cuando se establece esta opción y el usuario abre un proyecto que contiene un archivo *requirements.txt* (y no usa el entorno global predeterminado), Visual Studio compara esos requisitos con los paquetes instalados en el entorno actual. Si falta algún paquete, Visual Studio pide instalar esas dependencias. |
 | **Ejecutar siempre los administradores de paquetes como administrador** | Desactivado | Siempre eleva `pip install` y operaciones de administrador de paquetes similares de todos los entornos. Al instalar paquetes, Visual Studio solicita privilegios de administrador si el entorno está situado en un área protegida del sistema de archivos como *c:\Program Files*. En esa solicitud, puede elegir elevar siempre el comando de instalación solo para ese entorno. Consulte la [pestaña Paquetes](python-environments-window-tab-reference.md#packages-tab). |
-| **Generar automáticamente la base de datos de finalización en el primer uso** | Activado | *Se aplica a Visual Studio 2017, versión 15.5 y anteriores, y a versiones posteriores cuando se utiliza una base de datos de IntelliSense.* Prioriza la finalización de la base de datos de una biblioteca cuando escribe código que la usa. Para más información, consulte la [pestaña IntelliSense](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab). |
+| **Generar automáticamente la base de datos de finalización en el primer uso** | Activado | *Se aplica a Visual Studio 2017, versión 15.5 y anteriores, y a versiones posteriores cuando se utiliza una base de datos de IntelliSense.* Prioriza la finalización de la base de datos de una biblioteca cuando escribe código que la usa. Para más información, consulte la [pestaña IntelliSense](python-environments-window-tab-reference.md?view=vs-2017&preserve-view=true#intellisense-tab). |
 | **Omitir las variables PYTHONPATH de todo el sistema** | Activado | PYTHONPATH se omite de manera predeterminada porque Visual Studio proporciona un medio más directo para especificar rutas de búsqueda en entornos y proyectos. Consulte [Rutas de acceso de búsqueda](search-paths.md) para más detalles. |
 | **Actualizar rutas de búsqueda al agregar archivos vinculados** | Activado | Cuando se establece, agregar un [archivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a un proyecto actualiza las [rutas de búsqueda](search-paths.md) de manera que IntelliSense pueda incluir el contenido de la carpeta del archivo vinculado en su base de datos de finalización. Desactive esta opción para excluir dicho contenido de la base de datos de finalización. |
 | **Mostrar advertencia si no se encuentra el módulo importado** | Activado | Desactive esta opción para suprimir las advertencias cuando sepa que un módulo importado no está disponible actualmente pero, de otro modo, no afecta a la operación de código. |

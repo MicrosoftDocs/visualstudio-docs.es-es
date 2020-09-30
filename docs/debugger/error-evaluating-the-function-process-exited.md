@@ -1,5 +1,5 @@
 ---
-title: 'Error: El proceso de destino terminó con el código &apos;code&apos; al evaluar la función &apos;function&apos; | Microsoft Docs'
+title: El proceso de destino terminó con el código &apos;code&apos; al evaluar la función &apos;function&apos; | Microsoft Docs
 ms.date: 4/06/2018
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94effc8a5f75e7b38fb7275d175eb324c479a7a9
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711643"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852737"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Error: El proceso de destino terminó con el código &#39;code&#39; al evaluar la función &#39;function&#39;
 

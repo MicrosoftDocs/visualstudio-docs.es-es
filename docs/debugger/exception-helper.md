@@ -1,5 +1,6 @@
 ---
-title: Inspección de una excepción - Visual Studio | Microsoft Docs
+title: Inspección de una excepción
+titleSuffix: ''
 ms.date: 1/18/2020
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9d0084abff760ff227b20137cd55d905b57e1a18
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600310"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852503"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Inspeccionar una excepción mediante la Aplicación auxiliar de excepciones 
 

@@ -1,5 +1,6 @@
 ---
-title: 'Línea de comandos del generador de perfiles: Instrumentación para obtener los detalles de intervalos de servicio'
+title: 'Línea de comandos del generador de perfiles: obtención de datos de tiempo para un servicio'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 502ae620dc8641fabc8a5f6225b5673d5530c7f0
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 9fa021ea7602b2268c720bf3e02bab0ed93af775
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331794"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810762"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Recopilación de datos detallados de tiempo para servicios mediante el método de instrumentación desde la línea de comandos del generador de perfiles
 En esta sección, se describen los procedimientos y las opciones para recopilar datos de rendimiento detallados para servicios de Windows mediante el método de instrumentación desde la línea de comandos.

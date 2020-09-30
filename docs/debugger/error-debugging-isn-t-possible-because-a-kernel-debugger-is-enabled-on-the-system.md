@@ -1,5 +1,5 @@
 ---
-title: 'Error: No se puede depurar porque un depurador del kernel está habilitado en el sistema | Microsoft Docs'
+title: No se puede depurar porque un depurador del kernel está habilitado en el sistema | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 569d3d0baf98f5c13d0ccb182df6e51160db93d6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706638"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852776"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: No se puede depurar porque un depurador del kernel está habilitado en el sistema
 Al depurar código administrado, podría aparecer el siguiente mensaje de error:

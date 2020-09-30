@@ -1,18 +1,18 @@
 ---
 title: Uso de claves de producto | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183930"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005851"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -52,12 +52,12 @@ Debe iniciar sesión en su suscripción de Visual Studio para ver las claves de 
 A veces se unen varias ediciones del producto en una sola descarga. En estos casos, la clave del producto que se introduce determina la edición del producto que se instalará.
 Algunas claves se proporcionan de manera automática, como las claves "estáticas", que puede usar todas las veces necesarias, ya que la activación no es obligatoria. Para reclamar otras claves, seleccione el vínculo **Obtener clave** del producto en cuestión.
 > [!div class="mx-imgBorder"]
-> ![Obtención de la clave desde la página Descargas](_img/product-keys/download-get-key.png)
+> ![Obtención de la clave desde la página Descargas](_img/product-keys/download-get-key.png "Haga clic en Obtener clave para solicitar una clave para el producto que está descargando.")
 
 Todas las claves también se encuentran disponibles en la página [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). En esta página puede encontrar claves estáticas que sirven para todos los usuarios de un producto, obtener claves personalizadas solo para uso propio, ver el estado de los límites de reclamación de claves y exportar todas las claves de producto. 
 
 > [!div class="mx-imgBorder"]
-> ![Página Claves de producto](_img/product-keys/product-keys-page.png)
+> ![Página Claves de producto](_img/product-keys/product-keys-page.png "La página Claves de producto proporciona información completa sobre la clave del producto para su suscripción específica.")
 
 Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
@@ -80,10 +80,10 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 Puede reclamar una clave en la página de descarga del producto, o bien buscar la clave que necesita en la página [Claves de producto](https://my.visualstudio.com/productkeys).
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para reclamar claves, visite https://my.visualstudio.com/productkeys.  

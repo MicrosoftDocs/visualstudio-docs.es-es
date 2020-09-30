@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c84978501e5c5bc6f21e8005023c3ae2fe931cce
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ee729a0dfe27bf54a64b42ff64b23bf851c14d06
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038574"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135123"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
 
@@ -35,12 +35,9 @@ De manera predeterminada, las opciones del desarrollador de Visual Basic ocultan
 
 2. Expanda **Proyectos y soluciones** y haga clic en **General**.
 
-    > [!NOTE]
-    > El nodo **General** es visible incluso si la opción **Mostrar todas las configuraciones** no está activada. Si quiere ver cada opción disponible, haga clic en **Mostrar todas las configuraciones**.
-
 3. Haga clic en **Mostrar configuraciones de compilación avanzadas**.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
      **Configuration Manager** ya está disponible en el menú **Compilar** y las listas **Configuración** y **Plataforma** están visibles en el **Diseñador de proyectos**.
 
