@@ -1,5 +1,6 @@
 ---
-title: El libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar
+title: El libro contiene controles ActiveX que no se pueden cargar
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,15 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4485489b48c4d1b03b608c6072cfc859e8bc8f59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537350"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584456"
 ---
-# <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>El libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar
-  Este error aparece cuando se agrega un control a un documento de Word o a una hoja de cálculo de Excel, se guarda el documento o libro mediante programación y, a continuación, se crea una nueva solución en el nivel del documento basada en el documento o libro.
+# <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>El libro contiene controles ActiveX que no se pueden cargar
+
+  El error "el libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar" aparece cuando se agrega un control a un documento de Word o una hoja de cálculo de Excel mediante programación, se guarda el documento o el libro y, a continuación, se crea una nueva solución de nivel de documento basada en el documento o libro.
 
  La información que describe el tipo administrado del control no se guarda con el documento ni con el libro. Al crear una nueva solución basada en ese documento o libro, Visual Studio no tiene bastante información para cargar el control en el diseñador del elemento host.
 
@@ -32,6 +34,6 @@ ms.locfileid: "85537350"
 
 3. Cree una solución en el nivel del documento basada en el documento o en el libro.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71a38d6718c22419a0a61ffbab4fe2bf6fe6c552
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43048ee57e51b80becc12b282f86c971f65bef16
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012443"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584586"
 ---
 # <a name="editor-and-language-service-extensions"></a>Extensiones del editor y del servicio de lenguaje
 Puede extender la mayoría de las características del editor de código de Visual Studio. El editor se basa en el Windows Presentation Foundation (WPF) y se escribe en código administrado. Aunque este diseño difiere de los diseños de versiones anteriores de Visual Studio, proporciona la mayoría de las mismas características. Para extender el editor, use el Managed Extensibility Framework (MEF).
@@ -28,7 +28,7 @@ Puede extender la mayoría de las características del editor de código de Visu
 |-----------|-----------------|
 |[Crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)|Introducción al uso de las plantillas de elementos del editor.|
 |[Extender el editor y los servicios de lenguaje](../extensibility/extending-the-editor-and-language-services.md)|Vínculos a documentos que presentan el diseño y las características del editor básico y muestran cómo extenderlo.|
-|[Interfaces heredadas en el editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)|Vínculos a documentos que explican cómo tener acceso al editor principal desde el código existente.|
+|[Interfaces heredadas en el editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)|Vínculos a documentos que explican cómo tener acceso al editor principal desde el código existente.|
 |[Crear editores y diseñadores personalizados](../extensibility/creating-custom-editors-and-designers.md)|Vínculos a documentos que explican cómo crear editores personalizados.|
 |[Extensibilidad del servicio de lenguaje heredado](../extensibility/internals/legacy-language-service-extensibility.md)|Vínculos a documentos que describen cómo integrar los lenguajes de programación en Visual Studio.|
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Presenta el Managed Extensibility Framework (MEF).|

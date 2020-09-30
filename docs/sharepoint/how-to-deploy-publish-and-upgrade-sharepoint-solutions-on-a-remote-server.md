@@ -1,5 +1,6 @@
 ---
 title: Implementar, publicar, & actualizar soluciones de SharePoint de forma remota
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016808"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585789"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto
   Además de implementar soluciones de SharePoint en el sistema local, puede publicar soluciones de SharePoint en espacio aislado en sitios remotos o sitios locales de SharePoint. El proceso de publicación remota copia el archivo *. wsp* en el servidor de SharePoint, instala la solución y, a continuación, le permite activar la solución. También puede actualizar una instalación de una solución de SharePoint remota después de que se realicen cambios en ella.
@@ -74,7 +75,7 @@ ms.locfileid: "86016808"
 
      La versión anterior de la solución está desactivada, la nueva versión de la solución se actualiza con los datos que se mantienen de la solución anterior y la nueva solución se activa en SharePoint.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: implementar y publicar una solución de SharePoint en un sitio de SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Crear paquetes de soluciones de SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

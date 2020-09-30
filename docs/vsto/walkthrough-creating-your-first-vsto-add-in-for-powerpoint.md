@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: crear el primer complemento de VSTO para PowerPoint'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871963"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584313"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Tutorial: crear el primer complemento de VSTO para PowerPoint
   En este tutorial se muestra cómo crear un complemento de VSTO para Microsoft Office PowerPoint. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de qué presentaciones están abiertas. Para obtener más información, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -62,7 +63,7 @@ ms.locfileid: "68871963"
 
 6. En el cuadro **nombre** , escriba **FirstPowerPointAddIn**.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el proyecto **FirstPowerPointAddIn** y abre el archivo de código **ThisAddIn** en el editor.
 

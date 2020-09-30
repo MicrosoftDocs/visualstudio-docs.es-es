@@ -1,5 +1,6 @@
 ---
-title: '&lt;&gt;elemento postActionData (desarrollo de Office en Visual Studio)'
+title: '&lt;postActionData &gt; (elemento, desarrollo de Office)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85e1a02dbb85094cf84e1bba05e900d0e3f2c641
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541874"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583728"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento postActionData (desarrollo de Office en Visual Studio)
+# <a name="ltpostactiondatagt-element-office-development"></a>&lt;postActionData &gt; (elemento, desarrollo de Office)
   El elemento `postActionData` del espacio de nombres `vstav3` especifica los datos asociados a cualquier acción posterior a la implementación que se ejecuta tras la instalación de soluciones de Office.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <postActionData>

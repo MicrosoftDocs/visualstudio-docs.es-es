@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: usar cuadros de diálogo integrados en Word mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6edba0b1fe9f06dbf7dba8dd1a3d01c4041ba8fe
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537623"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585659"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Cómo: usar cuadros de diálogo integrados en Word mediante programación
   Cuando se trabaja con Microsoft Office Word, hay ocasiones en las que es necesario mostrar cuadros de diálogo para los datos proporcionados por el usuario. Aunque puede crear el suyo propio, es posible que también desee tomar el enfoque de usar los cuadros de diálogo integrados en Word, que se exponen en la <xref:Microsoft.Office.Interop.Word.Dialogs> colección del <xref:Microsoft.Office.Interop.Word.Application> objeto. Esto le permite tener acceso a más de 200 de los cuadros de diálogo integrados, que se representan como enumeraciones.
@@ -45,7 +46,7 @@ ms.locfileid: "85537623"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: usar cuadros de diálogo de Word en modo oculto mediante programación](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

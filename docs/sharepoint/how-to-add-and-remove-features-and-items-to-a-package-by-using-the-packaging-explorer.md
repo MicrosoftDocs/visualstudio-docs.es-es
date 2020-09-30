@@ -1,5 +1,6 @@
 ---
 title: 'Explorador de empaquetado: agregar & quitar características & elementos para empaquetar'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014561"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585594"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Cómo: agregar y quitar características y elementos de un paquete mediante el explorador de empaquetado
   Para configurar un paquete para implementar elementos y características de SharePoint, puede usar el explorador de empaquetado. Puede ajustar los elementos y las características del proyecto de SharePoint dentro del archivo. wsp.
@@ -62,5 +63,5 @@ ms.locfileid: "86014561"
 
 2. Abra un menú contextual de una característica o un paquete y, a continuación, elija **validar**.
 
-## <a name="see-also"></a>Consulte también
-- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>Vea también
+- [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

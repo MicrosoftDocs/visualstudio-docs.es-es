@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255526"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585020"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones
   El diseñador de la cinta de opciones permite crear una pestaña personalizada y, a continuación, agregar y colocar controles en ella.
@@ -158,10 +159,10 @@ ms.locfileid: "71255526"
 
 - Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, vea [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
-- [Diseñador de la cinta](../vsto/ribbon-designer.md)
+- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)
 - [Personalización de una cinta para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
 - [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Cómo cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)

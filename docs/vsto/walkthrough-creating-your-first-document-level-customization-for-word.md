@@ -1,5 +1,6 @@
 ---
 title: Crear la primera personalización de nivel de documento para Word
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74567005"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584994"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Tutorial: crear la primera personalización de nivel de documento para Word
 
@@ -65,7 +66,7 @@ ms.locfileid: "74567005"
 
 6. En el cuadro **nombre** , escriba **FirstDocumentCustomization**.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
 8. Seleccione **crear un nuevo documento** en el **Asistente para proyectos de Visual Studio Tools de Office**y haga clic en **Aceptar**.
 ::: moniker-end
@@ -74,7 +75,7 @@ ms.locfileid: "74567005"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Haga clic en **Next**.
+4. Haga clic en **Siguiente**.
 
 5. Escriba **FirstWorkbookCustomization** en el cuadro **nombre** del cuadro de diálogo **configurar el nuevo proyecto** y haga clic en **crear**.
 
@@ -170,10 +171,10 @@ ms.locfileid: "74567005"
 
 - Implementar personalizaciones de nivel de documento para Word: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [soluciones para Word](../vsto/word-solutions.md)
+- [Soluciones de Word](../vsto/word-solutions.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)

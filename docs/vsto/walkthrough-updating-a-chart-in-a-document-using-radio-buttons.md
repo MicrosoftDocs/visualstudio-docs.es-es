@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: actualizar un gráfico en un documento mediante botones de radio'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981054"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584300"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Tutorial: actualizar un gráfico en un documento mediante botones de radio
   En este tutorial se demuestra cómo usar los botones de radio en una personalización de nivel de documento para Microsoft Office Word a fin de ofrecer a los usuarios la opción de seleccionar estilos de gráfico en el documento.
@@ -212,7 +213,7 @@ ms.locfileid: "62981054"
 
 - Cambiar el formato por medio de la selección de un estilo de un cuadro combinado. Para obtener más información, vea [Tutorial: cambiar el formato de un documento mediante controles de casilla](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)
 - [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

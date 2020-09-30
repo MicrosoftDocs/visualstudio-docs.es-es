@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: enlazar datos a controles en un panel de acciones de Excel'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1543f872961d556674dd5ad6b3f5b8071d2d404b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253880"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585059"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Tutorial: enlazar datos a controles en un panel de acciones de Excel
   En este tutorial se muestra cómo enlazar datos a controles en un panel de acciones en Microsoft Office Excel. Los controles muestran una relación principal-detalle entre las tablas de una base de datos de SQL Server.
@@ -74,7 +75,7 @@ ms.locfileid: "71253880"
 
 4. Seleccione una conexión de datos a la base de datos de ejemplo Northwind SQL Server o agregue una nueva conexión mediante el botón **nueva conexión** .
 
-5. Haga clic en **Next**.
+5. Haga clic en **Siguiente**.
 
 6. Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.
 
@@ -183,7 +184,7 @@ ms.locfileid: "71253880"
 
 - Implementar el proyecto. Para obtener más información, vea [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general del panel de acciones](../vsto/actions-pane-overview.md)
 - [Cómo: administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

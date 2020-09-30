@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: usar cuadros de diálogo de Word en modo oculto mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 923fc7ddec0350f254968fe17494ecbe27f76b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537584"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583767"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Cómo: usar cuadros de diálogo de Word en modo oculto mediante programación
   Puede realizar operaciones complejas con una llamada al método invocando los cuadros de diálogo integrados en Microsoft Office Word sin mostrarlos al usuario. Puede hacerlo mediante el <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> método del <xref:Microsoft.Office.Interop.Word.Dialog> objeto sin llamar al <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> método.
@@ -38,7 +39,7 @@ ms.locfileid: "85537584"
 
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: usar cuadros de diálogo integrados en Word mediante programación](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
 - [Enlace en tiempo de ejecución en las soluciones de Office](../vsto/late-binding-in-office-solutions.md)

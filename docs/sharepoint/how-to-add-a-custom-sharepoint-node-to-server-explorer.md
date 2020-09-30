@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: agregar un nodo de SharePoint personalizado a Explorador de servidores | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017049"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584890"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Cómo: agregar un nodo de SharePoint personalizado a Explorador de servidores
-  Puede agregar nodos personalizados en el nodo **conexiones de SharePoint** en **Explorador de servidores**. Esto resulta útil si desea mostrar componentes de SharePoint adicionales que no se muestran en **Explorador de servidores** de forma predeterminada. Para obtener más información, vea [extender el nodo conexiones de SharePoint en explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Puede agregar nodos personalizados en el nodo **conexiones de SharePoint** en **Explorador de servidores**. Esto resulta útil si desea mostrar componentes de SharePoint adicionales que no se muestran en **Explorador de servidores** de forma predeterminada. Para obtener más información, vea [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
  Para agregar un nodo personalizado, primero cree una clase que defina el nuevo nodo. A continuación, cree una extensión que agregue el nodo como elemento secundario de un nodo existente.
 
@@ -95,7 +96,7 @@ ms.locfileid: "86017049"
 ## <a name="deploy-the-extension"></a>Implementar la extensión
  Para implementar la extensión de **Explorador de servidores** , cree un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte también
-- [Extender el nodo conexiones de SharePoint en Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+## <a name="see-also"></a>Vea también
+- [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Cómo: extender un nodo de SharePoint en Explorador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Tutorial: extender Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

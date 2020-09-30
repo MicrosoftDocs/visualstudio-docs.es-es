@@ -1,5 +1,6 @@
 ---
-title: Teclado de Office Word, configuración de teclado, opciones (cuadro de diálogo)
+title: Teclado de Office Word, configuración, opciones (cuadro de diálogo)
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83cfe2e6061f82d48a00354b610955c698a9a11f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66835980"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584508"
 ---
-# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office teclado de Word, Microsoft Office configuración del teclado, opciones (cuadro de diálogo)
+# <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office teclado de Word, configuración, opciones (cuadro de diálogo)
   Microsoft Office Word y Visual Studio controlan las teclas de método abreviado. La misma combinación de teclas de método abreviado puede tener distintos comandos en Word y en Visual Studio. Cuando Word está abierto en un proyecto de nivel de documento en Visual Studio, solo una aplicación a la vez recibe los comandos de tecla de método abreviado. De forma predeterminada, Visual Studio recibe todos los comandos de teclas de método abreviado, pero puede hacer que Word los reciba cuando el documento tenga el foco seleccionando **esquema de teclado dinámico**.
 
  Si usa una tecla de método abreviado que no está asignada a un comando en la aplicación que está controlando las teclas de método abreviado, la tecla de método abreviado se pasa a la otra aplicación.
@@ -35,5 +36,5 @@ ms.locfileid: "66835980"
 
  **Esquema de teclado dinámico** Visual Studio recibe comandos de tecla de método abreviado solo cuando tiene el foco. Cuando el documento de Word tiene el foco, Word recibe todos los comandos de tecla de método abreviado. Por ejemplo, si presiona la tecla de función **F5** mientras el documento de Word tiene el foco, Word abre el cuadro de diálogo **Buscar y reemplazar** con la ficha **ir a** seleccionada. Si presiona **F5** mientras Visual Studio tiene el foco, Visual Studio inicia la depuración de la solución.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Microsoft Office teclado de Excel, Microsoft Office configuración del teclado, opciones (cuadro de diálogo)](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

@@ -1,5 +1,6 @@
 ---
 title: Crear columnas de sitio, tipos de contenido y listas para SharePoint | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984516"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585111"
 ---
-# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Crear columnas de sitio, tipos de contenido y listas para SharePoint
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Creación de listas, tipos de contenido y columnas de sitio para SharePoint
   Visual Studio proporciona plantillas de elementos de proyecto para muchos elementos fundamentales de SharePoint diferentes, como *listas* y *tipos de contenido*, que pueden incorporar columnas de sitio (o *campos*). Los nuevos diseñadores de tipos de contenido y listas hacen que la creación de estos elementos sea más fácil que nunca.
 
 ## <a name="site-columns"></a>Columnas del sitio
@@ -46,7 +47,7 @@ ms.locfileid: "72984516"
 
 |Title|Descripción|
 |-----------|-----------------|
-|[Tutorial: crear una columna de sitio, un tipo de contenido y una lista para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Muestra cómo crear columnas de sitio que se usan en un tipo de contenido personalizado. A continuación, se usa el tipo de contenido en una lista personalizada.|
+|[Tutorial: Creación de una columna, un tipo de contenido y una lista de sitios para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Muestra cómo crear columnas de sitio que se usan en un tipo de contenido personalizado. A continuación, se usa el tipo de contenido en una lista personalizada.|
 
 ## <a name="see-also"></a>Vea también
 - [Introducción al desarrollo en SharePoint 2010](/sharepoint/dev/)

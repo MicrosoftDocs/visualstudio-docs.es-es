@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: enlace de datos complejo en un proyecto de nivel de documento'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692343"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584326"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Tutorial: enlace de datos complejo en un proyecto de nivel de documento
   En este tutorial se muestran los conceptos básicos del enlace de datos complejo en un proyecto de nivel de documento. Puede enlazar varias celdas de una Microsoft Office hoja de cálculo de Excel a los campos de la base de datos Northwind SQL Server.
@@ -48,7 +49,7 @@ ms.locfileid: "67692343"
 
 - Permisos para leer y escribir en la base de datos de SQL Server.
 
-## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
  El primer paso es crear un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -178,7 +179,7 @@ ms.locfileid: "67692343"
 
 2. Agregue la siguiente información en la fila vacía.
 
-   |EmployeeID (Id. de empleado)|Apellidos|Nombre|Título|
+   |EmployeeID|Apellidos|Nombre|Título|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Jefe de ventas|
 
@@ -223,7 +224,7 @@ ms.locfileid: "67692343"
 
 - Cree una relación principal-detalle entre un campo y una tabla. Para obtener más información, vea [Tutorial: crear una relación maestra de detalles mediante un conjunto de datos almacenado en memoria caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)
 - [Tutorial: enlace de datos simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

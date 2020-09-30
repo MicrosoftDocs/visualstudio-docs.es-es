@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: buscar texto en rangos de hojas de cálculo mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f69a0b2c7191f608e4d18c6c3990c1ce19f1ed7e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547035"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584760"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Cómo: buscar texto en rangos de hojas de cálculo mediante programación
   El <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método del <xref:Microsoft.Office.Interop.Excel.Range> objeto permite buscar texto dentro del intervalo. Este texto también puede ser cualquiera de las cadenas de error que pueden aparecer en una celda de la hoja de cálculo, como `#NULL!` o `#VALUE!` . Para obtener más información acerca de las cadenas de error, consulte [valores de error de celda](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).

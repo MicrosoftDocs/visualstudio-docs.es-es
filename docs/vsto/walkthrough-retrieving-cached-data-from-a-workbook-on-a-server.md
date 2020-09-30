@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: recuperar datos almacenados en caché de un libro en un servidor'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b70283e63a2f71c0c85bf26a24f2e6f4a3492880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985419"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584955"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Tutorial: recuperar datos almacenados en caché de un libro en un servidor
   En este tutorial se muestra cómo recuperar datos de un conjunto de datos almacenado en la memoria caché de un libro de Microsoft Office Excel sin iniciar Excel mediante la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.
@@ -77,7 +78,7 @@ ms.locfileid: "72985419"
 
 7. En el cuadro de diálogo **nuevo proyecto** , asegúrese de que la casilla **Crear directorio para la solución** no esté activada.
 
-8. Haga clic en **Aceptar**.
+8. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **AdventureWorksDataSet** a **Explorador de soluciones** y abre el archivo de código *Class1.CS* o *Class1. VB* .
 
@@ -135,7 +136,7 @@ ms.locfileid: "72985419"
 
 5. En el cuadro **nombre** , escriba **AdventureWorksReport**. No modifique la ubicación.
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
      Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .
 
@@ -224,7 +225,7 @@ ms.locfileid: "72985419"
 
 4. En el cuadro **nombre** , escriba **DataReader**. No modifique la ubicación.
 
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **DataReader** a **Explorador de soluciones** y abre el archivo de código *Program.CS* o *Module1. VB* .
 
@@ -237,7 +238,7 @@ ms.locfileid: "72985419"
 
 2. En la pestaña **.net** , seleccione **Microsoft. VisualStudio. Tools. Applications. ServerDocument**.
 
-3. Haga clic en **Aceptar**.
+3. Haga clic en **OK**.
 
 4. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **DataReader** y haga clic en **Agregar referencia**.
 
@@ -250,7 +251,7 @@ ms.locfileid: "72985419"
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8. Agregue el código siguiente al método `Main` . Este código declara los objetos siguientes:
+8. Agregue el siguiente código al método `Main`. Este código declara los objetos siguientes:
 
    - Instancia del `AdventureWorksLTDataSet` tipo que se define en el proyecto **AdventureWorksDataSet** .
 
@@ -293,7 +294,7 @@ ms.locfileid: "72985419"
 
 - Cambiar los datos de un conjunto de datos almacenado en memoria caché sin iniciar Excel. Para obtener más información, vea [Tutorial: cambiar los datos almacenados en caché de un libro en un servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Tutorial: insertar datos en un libro en un servidor](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
 - [Tutorial: cambiar los datos almacenados en caché de un libro en un servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: enlace de datos simple en un proyecto de complemento de VSTO'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985404"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584916"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: enlace de datos simple en un proyecto de complemento de VSTO
 
@@ -51,7 +52,7 @@ Necesitará los componentes siguientes para completar este tutorial:
 
   - Para adjuntar una base de datos mediante la línea de comandos, vea [Cómo: adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
 El primer paso es crear un proyecto de complemento de VSTO de Word.
 
@@ -113,7 +114,7 @@ Para obtener más información sobre cómo enlazar controles a datos, vea [enlaz
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3. Agregue el código siguiente al método `ThisAddIn_Startup` . Esto genera un elemento host que extiende el documento. Para obtener más información, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Agregue el siguiente código al método `ThisAddIn_Startup`. Esto genera un elemento host que extiende el documento. Para obtener más información, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
@@ -150,7 +151,7 @@ Cuando abre Word, el control de contenido muestra los datos del conjunto de dato
 
 2. Haga clic en los botones **Siguiente** y **Anterior** para desplazarse por los registros de la base de datos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

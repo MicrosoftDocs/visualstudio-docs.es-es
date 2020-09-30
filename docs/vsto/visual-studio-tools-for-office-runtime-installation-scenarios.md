@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools para escenarios de instalación en tiempo de ejecución de Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54ca03e0af1b492b09b4c06c2fe0fc0b7e107443
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810933"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584378"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools para escenarios de instalación en tiempo de ejecución de Office
   Puede instalar el tiempo de ejecución de Visual Studio 2010 Tools para Office de tres maneras:
@@ -66,6 +67,6 @@ ms.locfileid: "90810933"
 
  Para obtener más información sobre cómo incluir requisitos previos en una solución ClickOnce, consulte [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](/previous-versions/bb608608(v=vs.110)). Para obtener más información sobre cómo instalar manualmente el tiempo de ejecución del paquete redistribuible, vea [Cómo: instalar el Visual Studio Tools para Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre el tiempo de ejecución de Visual Studio Tools para Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Ensamblados en el Visual Studio Tools para Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)

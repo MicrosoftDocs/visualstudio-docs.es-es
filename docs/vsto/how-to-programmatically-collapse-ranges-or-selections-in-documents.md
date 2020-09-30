@@ -1,5 +1,6 @@
 ---
 title: Contraer intervalos o selecciones en documentos mediante programación
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1575a130a525c169553598fd15acfa8ba8fc397a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb22f97b6a876029ff5d984abf9bda32cfd3fbc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546125"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585293"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Cómo: contraer intervalos o selecciones en documentos mediante programación
   Si está trabajando con un objeto <xref:Microsoft.Office.Interop.Word.Range> o <xref:Microsoft.Office.Interop.Word.Selection> , puede que desee cambiar la selección a un punto de inserción antes de insertar el texto, para no sobrescribir el texto existente. Los <xref:Microsoft.Office.Interop.Word.Range> objetos y <xref:Microsoft.Office.Interop.Word.Selection> tienen un método de contracción, que hace uso de los <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valores de enumeración:
@@ -86,7 +87,7 @@ ms.locfileid: "85546125"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: insertar texto en documentos de Word mediante programación](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Cómo: definir y seleccionar intervalos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Cómo: recuperar los caracteres inicial y final de los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)

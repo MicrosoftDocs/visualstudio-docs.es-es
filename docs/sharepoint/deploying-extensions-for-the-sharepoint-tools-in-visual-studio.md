@@ -1,5 +1,6 @@
 ---
 title: Implementar extensiones para las herramientas de SharePoint en Visual Studio | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740149"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584708"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implementación de extensiones para las herramientas de SharePoint en Visual Studio
 

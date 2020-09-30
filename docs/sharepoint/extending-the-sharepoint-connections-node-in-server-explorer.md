@@ -1,5 +1,6 @@
 ---
 title: Extender el nodo conexiones de SharePoint en Explorador de servidores | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967362"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584612"
 ---
-# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Extender el nodo conexiones de SharePoint en Explorador de servidores
+# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Extensión del nodo Conexiones de SharePoint en el Explorador de servidores
   En Visual Studio, puede conectarse a los sitios locales de SharePoint en el equipo de desarrollo mediante el nodo **conexiones de SharePoint** de la ventana de **Explorador de servidores** . Este nodo muestra muchos de los componentes de los sitios locales de SharePoint en una vista de árbol jerárquica. Por ejemplo, puede ver las listas, las bibliotecas de documentos y los tipos de contenido en los sitios locales. Para obtener más información acerca del uso de **Explorador de servidores** para conectarse a sitios locales de SharePoint, consulte [examinar conexiones de SharePoint mediante explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
 
  Puede extender el nodo **conexiones de SharePoint** mediante la creación de extensiones para nodos existentes o mediante la creación de un tipo de nodo personalizado y su adición a la jerarquía de nodos.
@@ -58,7 +59,7 @@ ms.locfileid: "62967362"
 |Tipo de contenido|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
 |Característica|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
 |Campo|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|
-|Lista|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
+|List|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
 |Lista de plantillas|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|
 |Vista de lista (Microsoft. SharePoint. SPView)|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListViewNodeInfo>|
 |Asociación de flujo de trabajo|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowAssociationNodeInfo>|
@@ -66,11 +67,11 @@ ms.locfileid: "62967362"
 
  Para obtener más información sobre el uso de la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propiedad, vea [asociar datos personalizados con extensiones de herramientas de SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: extender Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Cómo: extender un nodo de SharePoint en Explorador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Cómo: agregar un nodo de SharePoint personalizado a Explorador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
 - [Cómo: obtener datos para un nodo integrado de SharePoint en Explorador de servidores](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)
 - [Asociar datos personalizados con las extensiones de herramientas de SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
-- [Examinar las conexiones de SharePoint mediante Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
-- [Extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Examen de las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [Extensión de las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

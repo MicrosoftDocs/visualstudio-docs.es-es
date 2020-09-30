@@ -1,5 +1,6 @@
 ---
 title: Diseñar cambios en los proyectos de Office destinados a .NET Framework
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 334344a2ffec5e084cb2e199a128b4583266af9f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: be681bb930e22b3e4cdd4597eb4d265c27b08139
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810515"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583832"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Cambios en el diseño de los proyectos de Office que tienen como destino el .NET Framework 4 o el .NET Framework 4,5
   A partir de [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio introdujo algunos cambios en el diseño de los proyectos de Office destinados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores. Si está familiarizado con los proyectos de Office en versiones anteriores de Visual Studio, debe tener en cuenta estos cambios a la hora de desarrollar proyectos de Office destinados a esas versiones de .NET Framework 4.0 o versiones posteriores. De forma predeterminada, todos los proyectos creados con Visual Studio 2013 o versiones posteriores van destinados a .NET Framework 4.0 o versiones posteriores.
@@ -56,7 +57,7 @@ ms.locfileid: "90810515"
 |Se ha cambiado el nombre de las clases `OLEObject` y `OLEControl`.|Tiene que modificar cualquier código que use instancias de estas clases para utilizar los objetos <xref:Microsoft.Office.Tools.Excel.ControlSite> o <xref:Microsoft.Office.Tools.Word.ControlSite> en su lugar. Para obtener más información, vea [actualizar proyectos de Excel y Word que se migran al .NET Framework 4 o al .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |Las clases de elemento host, como `ThisWorkbook` , `Sheet` *n*, `ThisDocument` y `ThisAddIn` , ya no proporcionan un `Dispose` método que se puede invalidar.|Tiene que migrar cualquier código del reemplazo del método `Dispose` al controlador de eventos `Shutdown` de la clase de elemento host, por ejemplo, `ThisAddIn_Shutdown`, y quitar el reemplazo del método `Dispose` de la clase de elemento host.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Migrar soluciones de Office al .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Novedades en el desarrollo de Office](/previous-versions/86bkz018(v=vs.110))
 - [Información general sobre el tiempo de ejecución de Visual Studio Tools para Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)

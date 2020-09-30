@@ -1,5 +1,6 @@
 ---
 title: Crear un elemento de proyecto de acción personalizada con la plantilla de elemento, parte 2
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016109"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585476"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de elemento en Visual Studio, es posible que también desee proporcionar un asistente para la plantilla. Puede usar el Asistente para recopilar información de los usuarios cuando usen la plantilla para agregar una nueva instancia del elemento de proyecto a un proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.
@@ -213,7 +214,7 @@ ms.locfileid: "86016109"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Agregar parámetros reemplazables al archivo *Elements.xml* en la plantilla de elemento
  Agregue varios parámetros reemplazables al archivo *Elements.xml* en el proyecto ItemTemplate. Estos parámetros se inicializan en el método `PopulateReplacementDictionary` de la clase `CustomActionWizard` que definió anteriormente. Cuando un usuario agrega un elemento de proyecto de acción personalizado a un proyecto, Visual Studio reemplaza automáticamente estos parámetros en el archivo *Elements.xml* del nuevo elemento de proyecto con los valores especificados en el asistente.
 
- Un parámetro reemplazable es un token que empieza y termina por el carácter del signo de dólar ($). Además de definir sus propios parámetros reemplazables, puede usar parámetros integrados que el sistema de proyectos de SharePoint define e inicializa. Para obtener más información, vea [parámetros reemplazables](../sharepoint/replaceable-parameters.md).
+ Un parámetro reemplazable es un token que empieza y termina por el carácter del signo de dólar ($). Además de definir sus propios parámetros reemplazables, puede usar parámetros integrados que el sistema de proyectos de SharePoint define e inicializa. Para obtener más información, vea [Parámetros reemplazables](../sharepoint/replaceable-parameters.md).
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Para agregar parámetros reemplazables al archivo de *Elements.xml*
 
@@ -341,7 +342,7 @@ ms.locfileid: "86016109"
 
 4. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en la que está abierta la solución CustomActionProjectItem).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

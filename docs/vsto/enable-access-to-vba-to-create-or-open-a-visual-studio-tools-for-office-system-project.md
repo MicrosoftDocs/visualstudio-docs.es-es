@@ -1,7 +1,7 @@
 ---
 title: Acceso VBA para crear o abrir un proyecto de sistema de VSTO
+titleSuffix: ''
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-titleSuffix: Visual Studio Tools for Microsoft Office
 ms.custom: seodec18
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551545"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584864"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un Visual Studio Tools para el proyecto de sistema de Microsoft Office
 
@@ -59,7 +59,7 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 5. Active o desactive **el acceso de confianza al modelo de objetos de proyecto de VBA** para habilitar o deshabilitar el acceso a proyectos de Visual Basic.
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Para habilitar o deshabilitar el acceso a Visual Basic proyectos con el sistema Microsoft Office 2007
 
@@ -69,7 +69,7 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 3. Seleccione esta casilla para habilitar o deshabilitar el **acceso de confianza a Visual Basic proyecto**.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
 ## <a name="to-set-your-office-macro-security-level"></a>Para establecer el nivel de seguridad de las macros de Office
 
@@ -83,7 +83,7 @@ Debe habilitar explícitamente el acceso al sistema de proyectos de Visual Basic
 
 5. En la sección **configuración de macro** , seleccione el valor deseado.
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Para establecer el nivel de seguridad de macros de Office con el sistema Microsoft Office 2007
 

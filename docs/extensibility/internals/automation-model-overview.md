@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f953add14c617d54d44cf8d6bf873c28eea8651
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 83df8926be9cd7217c514a2ed3f242bf8e121913
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012170"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584573"
 ---
 # <a name="automation-model-overview"></a>Información general del modelo de automatización
 El modelo de automatización se compone de un conjunto de objetos en el que se puede escribir una extensión o un complemento de Visual Studio. Un complemento es una aplicación que puede manipular el entorno de Visual Studio y automatizar las tareas comunes. Una extensión de Visual Studio puede crear componentes personalizados de Visual Studio o agregar a la funcionalidad de componentes estándar como el editor de texto.
@@ -38,9 +38,9 @@ El modelo de automatización se compone de un conjunto de objetos en el que se p
 
 - Código
 
-- Build
+- Compilar
 
-Para obtener más información sobre automatización, vea [automatización y extensibilidad para Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015). Este documento y los documentos a los que proporciona vínculos le ayudarán a tomar decisiones sobre cómo debe proporcionar automatización para el VSPackage.
+Para obtener más información sobre automatización, vea [automatización y extensibilidad para Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015&preserve-view=true). Este documento y los documentos a los que proporciona vínculos le ayudarán a tomar decisiones sobre cómo debe proporcionar automatización para el VSPackage.
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: crear un complemento](/previous-versions/80493a3w(v=vs.140))

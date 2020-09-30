@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: extender Explorador de servidores para mostrar elementos web | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739998"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583858"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Tutorial: extender Explorador de servidores para mostrar elementos Web
   En Visual Studio, puede usar el nodo **conexiones de SharePoint** de **Explorador de servidores** para ver los componentes de los sitios de SharePoint. Sin embargo, **Explorador de servidores** no muestra algunos componentes de forma predeterminada. En este tutorial, extenderá **Explorador de servidores** para que muestre la galería de elementos Web en cada sitio de SharePoint conectado.

@@ -1,5 +1,6 @@
 ---
 title: Información general sobre el modelo de programación de extensiones de herramientas de SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160751e7f580ede458232f98dc753a1145094f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985147"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585737"
 ---
-# <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Información general sobre el modelo de programación de extensiones de herramientas de SharePoint
+# <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Información general del modelo de programación de extensiones de SharePoint
   Al crear una extensión para las herramientas de SharePoint en Visual Studio, comience por implementar una o varias de las interfaces de extensibilidad que exponen las herramientas de SharePoint. En la mayoría de los casos, usará también otros tipos proporcionados por las herramientas de SharePoint para implementar características en la extensión. En algunos escenarios, también se pueden usar tipos de otros modelos de objetos proporcionados por Visual Studio y SharePoint. Debe comprender el propósito de cada uno de estos modelos de objetos y saber cómo usarlos entre sí para crear extensiones para las herramientas de SharePoint.
 
 ## <a name="extend-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Extender las herramientas de SharePoint implementando interfaces de extensibilidad
@@ -61,12 +62,12 @@ ms.locfileid: "72985147"
 
 |Espacio de nombres|Descripción|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint>|Contiene los tipos que se usan para extender el sistema de proyectos de SharePoint. Por ejemplo, puede extender elementos de proyecto y proyectos SharePoint integrados, o puede crear sus propios elementos de proyecto. Para obtener más información, vea [extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|
+|<xref:Microsoft.VisualStudio.SharePoint>|Contiene los tipos que se usan para extender el sistema de proyectos de SharePoint. Por ejemplo, puede extender elementos de proyecto y proyectos SharePoint integrados, o puede crear sus propios elementos de proyecto. Para obtener más información, vea [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment>|Contiene los tipos que se usan para extender el proceso de implementación de los proyectos de SharePoint, por ejemplo, para crear sus propios pasos y configuraciones de implementación. Para obtener más información, vea [extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Contiene los tipos que se usan para extender los nodos en el nodo **conexiones de SharePoint** de la ventana de **Explorador de servidores** , o para definir nuevos tipos de nodos. Para obtener más información, vea [extender el nodo conexiones de SharePoint en explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Contiene los tipos que se usan para extender los nodos en el nodo **conexiones de SharePoint** de la ventana de **Explorador de servidores** , o para definir nuevos tipos de nodos. Para obtener más información, vea [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.Features>|Contiene los tipos que se usan para acceder a la definición de una característica en un proyecto de SharePoint.|
 |<xref:Microsoft.VisualStudio.SharePoint.Packages>|Contiene los tipos que se usan para acceder a la definición del paquete de una solución de SharePoint.|
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Contiene los tipos que se usan para personalizar el comportamiento de validación de paquetes y características de los proyectos de SharePoint. Para obtener más información, vea [Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Contiene los tipos que se usan para personalizar el comportamiento de validación de paquetes y características de los proyectos de SharePoint. Para obtener más información, vea [Cómo: para crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 
@@ -78,7 +79,7 @@ ms.locfileid: "72985147"
 
 |Espacio de nombres|Descripción|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Contiene tipos que se pueden usar para obtener información sobre los nodos **Explorador de servidores** integrados que representan los componentes individuales en un sitio de SharePoint, como un nodo que representa una lista, un campo o un tipo de contenido. Para obtener más información, vea [extender el nodo conexiones de SharePoint en explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Contiene tipos que se pueden usar para obtener información sobre los nodos **Explorador de servidores** integrados que representan los componentes individuales en un sitio de SharePoint, como un nodo que representa una lista, un campo o un tipo de contenido. Para obtener más información, vea [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 
 ### <a name="visual-studio-automation-object-model"></a>Modelo de objetos de automatización de Visual Studio
  El modelo de objetos de automatización de Visual Studio proporciona las API que se pueden usar para automatizar proyectos de Visual Studio y el IDE. Use el modelo de objetos de Visual Studio para llevar a cabo tareas relacionadas con el proyecto que no son específicas de proyectos de SharePoint u otras tareas de automatización generales de Visual Studio. Tradicionalmente, este modelo de objetos se suele usar en las macros y complementos de Visual Studio, pero también se puede usar en las extensiones de herramientas de SharePoint.
@@ -107,6 +108,6 @@ ms.locfileid: "72985147"
 |Modelo de objetos de cliente|El modelo de objetos de cliente es un subconjunto del modelo de objetos de servidor que puede usarse para interoperar con datos de SharePoint de un servidor o cliente remoto. Está diseñado para minimizar el número de recorridos de ida y vuelta que se deben ejecutar para realizar tareas comunes. La mayoría del modelo de objetos de cliente se define en los ensamblados *Microsoft.SharePoint.Client.dll* y *Microsoft.SharePoint.Client.Runtime.dll* . Para obtener más información sobre el modelo de objetos de cliente, vea [modelo de objetos de cliente administrado](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
 ## <a name="see-also"></a>Vea también
-- [Extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Extensión de las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Usar el servicio de proyecto de SharePoint](../sharepoint/using-the-sharepoint-project-service.md)

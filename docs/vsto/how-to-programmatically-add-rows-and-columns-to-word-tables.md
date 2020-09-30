@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: Agregar filas y columnas a tablas de Word mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0097692c77d0b472c808876e9017b514b6416fc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3887f80a5c2a0cb775059f58876135d91350133c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538078"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585384"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Cómo: Agregar filas y columnas a tablas de Word mediante programación
   En una tabla de Microsoft Office Word, las celdas se organizan en filas y columnas. Puede usar el método <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> del objeto <xref:Microsoft.Office.Interop.Word.Rows> para agregar filas a la tabla y el método <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> del objeto <xref:Microsoft.Office.Interop.Word.Columns> para agregar columnas.
@@ -75,7 +76,7 @@ ms.locfileid: "85538078"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear tablas de Word mediante programación](how-to-programmatically-create-word-tables.md)
 - [Cómo: agregar texto y formato a celdas de tablas de Word mediante programación](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [Cómo: rellenar tablas de Word con propiedades de documento mediante programación](how-to-programmatically-populate-word-tables-with-document-properties.md)

@@ -1,5 +1,6 @@
 ---
 title: Características disponibles por aplicación y tipo de proyecto de Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24344a643e9ec2b4a7bb90dc62df67209b3eb183
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ba24bdeac9ad51d0173e765c8cb793be2473baf6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808186"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585437"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Características disponibles por aplicación y tipo de proyecto de Office
   Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para las aplicaciones de Microsoft Office, incluyendo los siguientes tipos:
@@ -65,7 +66,7 @@ ms.locfileid: "90808186"
 |Personalizaciones de la Cinta.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para las siguientes aplicaciones:<br /><br /> -Excel<br />-InfoPath (solo InfoPath 2013 y InfoPath 2010)<br />-Outlook<br />-PowerPoint<br />-Proyecto<br />-Visio<br />-Word|[Información general sobre la cinta](../vsto/ribbon-overview.md)|
 |Diseñador de documentos de Visual.|Proyectos de nivel del documento.|[Proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Información general del panel de acciones](../vsto/actions-pane-overview.md)

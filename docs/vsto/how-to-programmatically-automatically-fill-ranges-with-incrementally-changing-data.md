@@ -1,5 +1,6 @@
 ---
 title: Autorrellenar cambiar intervalos de datos incrementalmente mediante programación
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547477"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585319"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Cómo: rellenar rangos automáticamente con datos que cambian de forma incremental
   El <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método del <xref:Microsoft.Office.Interop.Excel.Range> objeto le permite rellenar automáticamente un intervalo en una hoja de cálculo con valores. La mayoría de las veces, el <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método se usa para almacenar valores que aumentan o disminuyen de forma incremental en un intervalo. Puede especificar el comportamiento proporcionando una constante opcional de la <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumeración.

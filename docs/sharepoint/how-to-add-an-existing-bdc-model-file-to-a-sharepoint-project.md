@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92063b5aeaf4f86919b9eabf783b102a9f5b8f34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016518"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584625"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint
-  Puede personalizar, empaquetar y volver a implementar un modelo de conectividad a datos profesionales (BDC) mediante Visual Studio para agregar el archivo de modelo (*. bdcm*) a cualquier proyecto de granja de SharePoint. Para obtener más información, vea [crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md).
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Cómo: para agregar un archivo de modelo BDC existente a un proyecto de SharePoint
+  Puede personalizar, empaquetar y volver a implementar un modelo de conectividad a datos profesionales (BDC) mediante Visual Studio para agregar el archivo de modelo (*. bdcm*) a cualquier proyecto de granja de SharePoint. Para obtener más información, vea [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Para agregar un archivo de modelo BDC a un proyecto de SharePoint
 
@@ -45,9 +46,9 @@ ms.locfileid: "86016518"
 
      El elemento de **modelo de conectividad a datos profesionales** se agrega al proyecto.
 
-## <a name="see-also"></a>Consulte también
-- [Crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Cómo: crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
-- [Cómo: usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+## <a name="see-also"></a>Vea también
+- [Creación de un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Cómo: para crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Cómo: para usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
 - [Cómo: incluir un ensamblado personalizado en una característica de BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
 - [Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

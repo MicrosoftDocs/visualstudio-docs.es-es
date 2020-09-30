@@ -1,5 +1,6 @@
 ---
-title: Actualizar las áreas de formulario de Outlook en los proyectos migrados a .NET Framework 4, 4,5
+title: Actualizar las áreas de formulario de Outlook cuando se migran a .NET Framework 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836044"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584404"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualice las áreas de formulario en los proyectos de Outlook que migre al .NET Framework 4 o al .NET Framework 4,5
+# <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Actualizar las áreas de formulario de Outlook cuando se migran a .NET Framework 4,5
+
   Si el marco de trabajo de destino de un proyecto de complemento de VSTO de Outlook con un área de formulario se cambia a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe realizar algunos cambios en el código de área del formulario generado y en cualquier código que cree instancias de determinadas clases de área del formulario en tiempo de ejecución.
 
 ## <a name="update-the-generated-form-region-code"></a>Actualizar el código de área del formulario generado
@@ -196,6 +198,6 @@ ms.locfileid: "66836044"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Migrar soluciones de Office al .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)

@@ -1,5 +1,6 @@
 ---
 title: Implementar & publicar una solución de SharePoint en el sitio de SharePoint local
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016821"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585802"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Cómo: implementar y publicar una solución de SharePoint en un sitio de SharePoint local
   Puede implementar o publicar soluciones de SharePoint en un servidor de SharePoint local en el equipo de desarrollo. El proceso de implementación copia el archivo *. wsp* en el servidor de SharePoint, instala la solución y, a continuación, activa las características. El proceso de publicación solo copia el archivo *. wsp* en el servidor de SharePoint y lo instala. Debe activarla manualmente para habilitarla en SharePoint.
@@ -41,7 +42,7 @@ ms.locfileid: "86016821"
 
      El progreso de la publicación aparece en la ventana **resultados** de Visual Studio. Una vez finalizado el proceso, el archivo de solución (*. wsp*) se instala en el servidor local de SharePoint. Sin embargo, todavía se debe activar para su uso en SharePoint. Si el archivo de solución ya existe, se produce un error que le pregunta si desea sobrescribir el archivo existente. Para obtener información sobre cómo actualizar el paquete, vea la sección sobre cómo actualizar paquetes remotos en [Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [Crear paquetes de soluciones de SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

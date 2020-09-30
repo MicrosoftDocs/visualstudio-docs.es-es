@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: agregar formas a un documento de Visio mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adde20bff07b54a7fb5777bd9e03a995b4fbd7df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8eb3ad837f699a1bb0bbc327b6e892a20866e0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538065"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584235"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Cómo: agregar formas a un documento de Visio mediante programación
   Puede agregar formas a un documento de Microsoft Office Visio recuperando los patrones de una galería de símbolos y colocando las formas en la página activa.
@@ -36,7 +37,7 @@ ms.locfileid: "85538065"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Soluciones de Visio](../vsto/visio-solutions.md)
 - [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)
 - [Trabajar con formas de Visio](../vsto/working-with-visio-shapes.md)

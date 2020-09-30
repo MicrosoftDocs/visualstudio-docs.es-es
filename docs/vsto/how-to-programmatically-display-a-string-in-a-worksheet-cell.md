@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: mostrar una cadena en una celda de una hoja de cálculo mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb3dbaec2efd95f63428e8494598720953f791e7
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545930"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585228"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Cómo: mostrar una cadena en una celda de una hoja de cálculo mediante programación
   En este ejemplo se muestra cómo mostrar texto en una celda mediante programación. Para mostrar texto en la celda, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto de intervalo de Excel nativo.

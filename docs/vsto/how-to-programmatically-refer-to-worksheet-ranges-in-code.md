@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: hacer referencia a rangos de hojas de cálculo en el código mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93673fcc270ce2f1ac43804cb1d794281f28c702
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 319be5ad6c878e08a862d1e20e826c2800c33512
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547399"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584838"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Cómo: hacer referencia a rangos de hojas de cálculo en el código mediante programación
   Se usa un proceso similar para hacer referencia al contenido de un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto de intervalo de Excel nativo.
@@ -47,7 +48,7 @@ ms.locfileid: "85547399"
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con rangos](../vsto/working-with-ranges.md)
 - [Cómo: comprobar la ortografía en hojas de cálculo mediante programación](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Cómo: aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

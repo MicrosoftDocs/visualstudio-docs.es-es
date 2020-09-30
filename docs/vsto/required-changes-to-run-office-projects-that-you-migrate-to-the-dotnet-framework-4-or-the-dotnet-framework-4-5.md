@@ -1,5 +1,6 @@
 ---
-title: Cambios necesarios para los proyectos de Office migrados a .NET Framework 4, 4,5
+title: Cambios necesarios para los proyectos de Office migrados a .NET 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810972"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584469"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Cambios necesarios para ejecutar proyectos de Office que se migran al .NET Framework 4 o al .NET Framework 4,5
+# <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Cambios necesarios para los proyectos de Office migrados a .NET 4,5
+
   Si el marco de trabajo de destino de un proyecto de Office se cambia a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores de una versión anterior de la .NET Framework, debe realizar las siguientes tareas para asegurarse de que la solución se puede ejecutar en el equipo de desarrollo y en los equipos de los usuarios finales:
 
 - Quite <xref:System.Security.SecurityTransparentAttribute> del proyecto si lo actualizó desde Visual Studio 2008.
@@ -69,5 +71,5 @@ ms.locfileid: "90810972"
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Reinstalar soluciones en los equipos de los usuarios finales
  Si usa ClickOnce para implementar una solución de Office que tiene como destino .NET Framework 3.5 y redestina el proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior, los usuarios finales deberán desinstalar la solución y volver a instalarla después de volver a publicarla. Si vuelve a publicar la solución redestinada y la solución se actualiza en los equipos de los usuarios finales, los usuarios finales recibirán una <xref:System.Runtime.InteropServices.COMException> cuando ejecuten la solución actualizada.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Migrar soluciones de Office al .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

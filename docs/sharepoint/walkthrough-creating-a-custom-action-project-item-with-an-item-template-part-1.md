@@ -1,5 +1,6 @@
 ---
 title: Crear un elemento de proyecto de acción personalizada con la plantilla de elemento, parte 1
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739946"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585568"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 1
   Puede extender el sistema de proyectos de SharePoint en Visual Studio creando sus propios tipos de elemento de proyecto. En este tutorial, creará un elemento de proyecto que se puede agregar a un proyecto de SharePoint para crear una acción personalizada en un sitio de SharePoint. La acción personalizada agrega un elemento de menú al menú **acciones del sitio** del sitio de SharePoint.

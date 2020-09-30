@@ -1,5 +1,6 @@
 ---
 title: Referencia administrada (desarrollo de Office en Visual Studio)
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20ae614ceef76a0ab5789c04212a3facfa571662
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519865"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583754"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Referencia administrada (desarrollo de Office en Visual Studio)
   Esta sección contiene documentación de referencia de API para los espacios de nombres y los tipos que se utilizan en los proyectos de Office que abordan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y los tipos que se usan en los proyectos de Office destinados a la .NET Framework 3,5, vea la siguiente sección de referencia en la documentación de Visual Studio: [referencia administrada (desarrollo de Office en Visual Studio)](managed-reference-office-development-in-visual-studio.md).

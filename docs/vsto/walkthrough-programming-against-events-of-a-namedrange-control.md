@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: programar contra eventos de un control NamedRange'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843134"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584942"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Tutorial: programar contra eventos de un control NamedRange
   En este tutorial se muestra cómo agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a una hoja de cálculo de Excel Microsoft Office y programar con sus eventos mediante las herramientas de desarrollo de Office en Visual Studio.
@@ -70,7 +71,7 @@ ms.locfileid: "90843134"
 
 3. Compruebe que aparezca **$A $1** en el cuadro de texto editable y que la celda **a1** esté seleccionada. Si no es así, haga clic en la celda **a1** para seleccionarla.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
      La celda **a1** se convierte en un intervalo denominado `namedRange1` . No hay ninguna indicación visible en la hoja de cálculo, pero `namedRange1` aparece en el cuadro **nombre** (situado justo encima de la hoja de cálculo en el lado izquierdo) cuando se selecciona la celda **a1** .
 
@@ -78,7 +79,7 @@ ms.locfileid: "90843134"
 
 6. Compruebe que aparezca **$B $3** en el cuadro de texto editable y que la celda **B3** esté seleccionada. Si no es así, haga clic en la celda **B3** para seleccionarla.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
      La celda **B3** se convierte en un rango denominado `namedRange2` .
 

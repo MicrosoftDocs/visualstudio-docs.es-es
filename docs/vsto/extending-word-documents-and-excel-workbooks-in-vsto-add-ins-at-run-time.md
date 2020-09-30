@@ -1,5 +1,6 @@
 ---
 title: Extender documentos de Word & libros de Excel en complementos de VSTO en tiempo de ejecución
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80fc10690691e8bd923f9c98270b162e7063ffb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253666"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585450"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución
   Puede utilizar un complemento de VSTO para personalizar documentos de Word y libros de Excel de las maneras siguientes:
@@ -120,7 +121,7 @@ ms.locfileid: "71253666"
 
  El método `HasVstoObject` resulta útil si desea ejecutar código solamente cuando un objeto de Office especificado tiene un objeto extendido. Por ejemplo, si tiene un complemento de VSTO de Word que controla el <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> evento para quitar controles administrados de un documento antes de guardarlo, utilice el `HasVstoObject` método para determinar si se ha extendido el documento. Si el documento no se ha extendido, no puede tener controles administrados y el controlador de eventos puede devolver sin intentar limpiar los controles del documento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

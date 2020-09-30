@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: automatizar una aplicación desde un panel de tareas personalizado'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871937"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585085"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Tutorial: automatizar una aplicación desde un panel de tareas personalizado
   En este tutorial se muestra cómo crear un panel de tareas personalizado que automatiza PowerPoint. El panel de tareas personalizado inserta fechas en una diapositiva cuando el usuario hace clic en un control <xref:System.Windows.Forms.MonthCalendar> que se encuentra en el panel de tareas personalizado.

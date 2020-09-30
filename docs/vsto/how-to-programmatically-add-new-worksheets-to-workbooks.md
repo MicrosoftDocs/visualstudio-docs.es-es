@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: agregar nuevas hojas de cálculo a libros mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fc6706879bf1d567f6a0ae7127d06a2442b98e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c014d8ea1701dde4e83e6849cce337656579f5d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538105"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585410"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Cómo: agregar nuevas hojas de cálculo a libros mediante programación
   Puede crear una hoja de cálculo mediante programación y, a continuación, agregarla a la colección de hojas de cálculo del libro.
@@ -45,7 +46,7 @@ ms.locfileid: "85538105"
 
      La nueva hoja de cálculo es un objeto <xref:Microsoft.Office.Interop.Excel.Worksheet> nativo y no un elemento host. También puede generar un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> desde el objeto <xref:Microsoft.Office.Interop.Excel.Worksheet> nativo. Para obtener más información, consulta [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Cómo: eliminar hojas de cálculo de libros mediante programación](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)

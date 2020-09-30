@@ -1,5 +1,6 @@
 ---
 title: Conceptos de programación & características de las extensiones de herramientas de SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 215beaf21d704927792ae316df9b4c0ef3f98c44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 607f4841ea66a01d64a6c0c2b93b07e3cd0a5a43
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66401739"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585711"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Conceptos y características de programación para las extensiones de herramientas de SharePoint
   Hay varios conceptos y características de programación importantes que se relacionan con las herramientas de SharePoint en Visual Studio. Estos conceptos y características desempeñan un papel importante en la mayoría de las extensiones de herramientas de SharePoint.
@@ -35,9 +36,9 @@ ms.locfileid: "66401739"
 
  Describe cómo asociar datos personalizados a determinados tipos de objetos en las extensiones de herramientas de SharePoint.
 
-## <a name="see-also"></a>Consulte también
-- [Extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Extender el nodo conexiones de SharePoint en Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Depurar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
-- [Implementar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+## <a name="see-also"></a>Vea también
+- [Extensión de las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Extensión del nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Depuración de extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Implementación de extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

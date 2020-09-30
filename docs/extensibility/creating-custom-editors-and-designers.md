@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012274"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584734"
 ---
 # <a name="create-custom-editors-and-designers"></a>Crear editores y diseñadores personalizados
 
@@ -59,7 +59,7 @@ Para obtener información sobre el editor principal de Visual Studio, vea [exten
 
 - ¿El editor necesita hospedar controles ActiveX?
 
-   Si el editor hospeda controles ActiveX, implemente un editor de activación en contexto, como se describe en [activación en contexto](../vs-2015/misc/in-place-activation.md?view=vs-2015). Si no hospeda controles ActiveX, use un editor de inserción simplificado o personalice el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predeterminado.
+   Si el editor hospeda controles ActiveX, implemente un editor de activación en contexto, como se describe en [activación en contexto](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true). Si no hospeda controles ActiveX, use un editor de inserción simplificado o personalice el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predeterminado.
 
 - ¿El editor admite varias vistas? Debe admitir varias vistas si desea que las vistas del editor sean visibles al mismo tiempo que el editor predeterminado.
 
@@ -93,7 +93,7 @@ Explica cómo implementar datos de documento y vistas de documento en editores p
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-[Interfaces heredadas en el editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
+[Interfaces heredadas en el editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
 Explica cómo obtener acceso al editor principal por medio de la API heredada.
 
 [Desarrollo de un servicio de lenguaje heredado](../extensibility/internals/developing-a-legacy-language-service.md)\

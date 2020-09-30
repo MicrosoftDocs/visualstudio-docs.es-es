@@ -1,5 +1,6 @@
 ---
-title: Teclado de Office Excel, configuración de teclado, opciones (cuadro de diálogo)
+title: Teclado de Office Excel, configuración, opciones (cuadro de diálogo)
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836033"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584521"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office teclado de Excel, Microsoft Office configuración del teclado, opciones (cuadro de diálogo)
+# <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office teclado, configuración, opciones (cuadro de diálogo) de Excel
   Microsoft Office Excel y Visual Studio controlan las teclas de método abreviado. La misma combinación de teclas de método abreviado puede tener distintos comandos en Excel y en Visual Studio. Cuando Excel está abierto en un proyecto de nivel de documento en Visual Studio, solo una aplicación a la vez recibe los comandos de tecla de método abreviado. De forma predeterminada, Visual Studio recibe todos los comandos de teclas de método abreviado, pero puede hacer que Excel los reciba cuando el documento tenga el foco seleccionando **esquema de teclado dinámico**.
 
  Si usa una tecla de método abreviado que no está asignada a un comando en la aplicación que está controlando las teclas de método abreviado, la tecla de método abreviado se pasa a la otra aplicación.
@@ -35,5 +36,5 @@ ms.locfileid: "66836033"
 
  **Esquema de teclado dinámico** Visual Studio recibe comandos de tecla de método abreviado solo cuando tiene el foco. Cuando Excel tiene el foco, Excel recibe todos los comandos de tecla de método abreviado. Por ejemplo, si presiona la tecla de función **F5** mientras Excel tiene el foco, Excel abre el cuadro de diálogo **ir a** . Si presiona **F5** mientras Visual Studio tiene el foco, Visual Studio inicia la depuración de la solución.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Microsoft Office teclado de Word, Microsoft Office configuración del teclado, opciones (cuadro de diálogo)](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

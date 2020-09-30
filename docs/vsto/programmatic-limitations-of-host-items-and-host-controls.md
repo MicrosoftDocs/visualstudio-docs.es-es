@@ -1,5 +1,6 @@
 ---
 title: Limitaciones de programación de elementos y controles host
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +31,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97b94291a3fd057e82bd79aa4f6c3220020bc24a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 098145ca901b1f16974058513d3781fc4621f217
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255815"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584482"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitaciones de programación de elementos y controles host
   Los elementos y controles host están diseñados para comportarse como los objetos de Microsoft Office Word o Microsoft Office Excel nativos correspondientes, pero con funcionalidad adicional. Sin embargo, hay algunas diferencias fundamentales entre el comportamiento de los elementos y los controles host y los objetos nativos de Office en tiempo de ejecución.

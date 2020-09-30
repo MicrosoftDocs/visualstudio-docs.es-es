@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: agregar comentarios al texto en documentos mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04d4ffdc747823a3df9a884b054b39ad484e09a4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538118"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583793"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Cómo: agregar comentarios al texto en documentos mediante programación
   La propiedad comentarios de la clase de documento agrega un comentario a un intervalo de texto en un documento de Microsoft Office Word.
@@ -46,6 +47,6 @@ ms.locfileid: "85538118"
 ## <a name="robust-programming"></a>Programación sólida
  Para cambiar las iniciales del usuario que Word agrega a los comentarios, use la propiedad <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: quitar todos los comentarios de documentos mediante programación](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Elemento host de documento](../vsto/document-host-item.md)

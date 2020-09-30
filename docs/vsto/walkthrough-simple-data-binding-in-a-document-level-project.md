@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: enlace de datos simple en un proyecto de nivel de documento'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981067"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584929"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Tutorial: enlace de datos simple en un proyecto de nivel de documento
   En este tutorial se muestran los aspectos básicos del enlace de datos en un proyecto de nivel de documento. Un único campo de datos en una base de datos de SQL Server se enlaza a un rango con nombre en Microsoft Office Excel. En el tutorial también se muestra cómo agregar controles que le permiten desplazarse por todos los registros de la tabla.
@@ -49,7 +50,7 @@ ms.locfileid: "62981067"
 
 - Permisos para leer y escribir en la base de datos de SQL Server.
 
-## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
  En este paso, creará un proyecto de libro de Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -191,7 +192,7 @@ ms.locfileid: "62981067"
 
 - Use un <xref:System.Windows.Forms.BindingNavigator> control para desplazarse por los registros. Para obtener más información, vea [Cómo: navegar por los datos con el control BindingNavigator de Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)
 - [Tutorial: enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

@@ -1,5 +1,6 @@
 ---
 title: Depurar extensiones para las herramientas de SharePoint en Visual Studio | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64785338"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584638"
 ---
-# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depurar extensiones para las herramientas de SharePoint en Visual Studio
+# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depuración de extensiones para las herramientas de SharePoint en Visual Studio
   Puede depurar las extensiones de las herramientas de SharePoint en la instancia experimental o en la instancia normal de Visual Studio. Si necesita solucionar problemas relacionados con el comportamiento de una extensión, también puede modificar los valores del Registro para mostrar información adicional sobre los errores y configurar el modo en que Visual Studio ejecuta los comandos de SharePoint.
 
 ## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Depurar extensiones en la instancia experimental de Visual Studio
@@ -127,7 +128,7 @@ ms.locfileid: "64785338"
 |MaxReceivedMessageSize|REG_DWORD que especifica el tamaño máximo permitido, en bytes, de los mensajes de WCF que se pasan entre Visual Studio y *vssphost4.exe*.<br /><br /> El valor predeterminado es 1.048.576 (1 MB).|
 |MaxStringContentLength|REG_DWORD que especifica el tamaño máximo permitido, en bytes, de las cadenas que se pasan entre Visual Studio y *vssphost4.exe*.<br /><br /> El valor predeterminado es 1.048.576 (1 MB).|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Implementar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Extensión de las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Implementación de extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

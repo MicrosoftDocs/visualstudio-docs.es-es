@@ -1,5 +1,6 @@
 ---
 title: Guardar datos en extensiones del sistema de proyectos de SharePoint | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62827250"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583871"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Guardar datos en extensiones del sistema de proyectos de SharePoint
   Al extender el sistema de proyectos de SharePoint, puede guardar los datos de cadena que se conservan después de cerrar un proyecto de SharePoint. Los datos suelen estar asociados a un elemento de proyecto concreto o al propio proyecto.
@@ -53,7 +54,7 @@ ms.locfileid: "62827250"
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
 
-## <a name="see-also"></a>Consulte también
-- [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+## <a name="see-also"></a>Vea también
+- [Extensión del sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Asociar datos personalizados con las extensiones de herramientas de SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
 - [Convertir entre tipos de sistema de proyectos de SharePoint y otros tipos de proyectos de Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

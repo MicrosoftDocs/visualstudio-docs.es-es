@@ -1,5 +1,6 @@
 ---
 title: Crear la primera personalización de nivel de documento para Excel
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74566980"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585007"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Tutorial: crear la primera personalización de nivel de documento para Excel
 
@@ -65,7 +66,7 @@ ms.locfileid: "74566980"
 
 6. En el cuadro **nombre** , escriba **FirstWorkbookCustomization**.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
 8. Seleccione **crear un nuevo documento** en el **Asistente para proyectos de Visual Studio Tools de Office**y haga clic en **Aceptar**.
 ::: moniker-end
@@ -74,7 +75,7 @@ ms.locfileid: "74566980"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Haga clic en **Next**.
+4. Haga clic en **Siguiente**.
 
 5. Escriba **FirstWorkbookCustomization** en el cuadro **nombre** del cuadro de diálogo **configurar el nuevo proyecto** y haga clic en **crear**.
 
@@ -182,7 +183,7 @@ ms.locfileid: "74566980"
 
 - Implementar personalizaciones de nivel de documento para Excel: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluciones de Excel](../vsto/excel-solutions.md)

@@ -1,5 +1,6 @@
 ---
 title: Personalizar el paquete de soluciones de SharePoint mediante destinos de MSBuild
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016889"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585815"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Cómo: personalizar un paquete de solución de SharePoint mediante destinos de MSBuild
   Mediante el uso de destinos de MSBuild en un símbolo del sistema, puede personalizar el modo en que Visual Studio crea los archivos de paquete de SharePoint (*. wsp*). Por ejemplo, puede personalizar las propiedades de MSBuild para cambiar el directorio intermedio de empaquetado y los grupos de elementos de MSBuild que especifican los archivos enumerados.
@@ -79,5 +80,5 @@ ms.locfileid: "86016889"
 
    Al publicar el proyecto, el mensaje BeforeLayout aparece antes de que se inicie el empaquetado y el mensaje AfterLayout aparece después de que finalice el empaquetado.
 
-## <a name="see-also"></a>Consulte también
-- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>Vea también
+- [Empaquetado e implementación de soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

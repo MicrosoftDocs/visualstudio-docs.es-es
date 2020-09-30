@@ -1,5 +1,6 @@
 ---
 title: Plantillas de elementos/plantillas de proyecto para los elementos de proyecto de SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65bbd58bf9b3e0b399603a083615daccc382a98f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec97eb2dfab7ab92c1e324c89fd044c1a50c2173
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981173"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585620"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint
 
@@ -81,7 +82,7 @@ Las plantillas de elementos y las plantillas de proyecto son archivos *zip* que 
 
  Para ver tutoriales que muestran cómo crear asistentes para plantillas de elementos y plantillas de proyecto, vea [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) y [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Excel: Introducción a la programación de personalizaciones de nivel de documento'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb3b27a4020e2b8947ca0868bb46b5945b5d89de
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66402160"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585685"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Introducción a la programación de personalizaciones de nivel de documento para Excel
   Si acaba de empezar a crear personalizaciones de nivel de documento para Microsoft Office Excel con Visual Studio, aquí tiene todo lo que necesita saber.
@@ -63,7 +64,7 @@ ms.locfileid: "66402160"
 
  Para obtener una lista de temas que le guiarán a través de algunas de las tareas comunes de los proyectos de Excel, vea [tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Soluciones de Excel](../vsto/excel-solutions.md)

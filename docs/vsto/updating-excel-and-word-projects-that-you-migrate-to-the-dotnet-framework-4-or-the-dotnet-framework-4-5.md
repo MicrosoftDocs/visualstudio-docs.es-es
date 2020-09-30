@@ -1,5 +1,6 @@
 ---
-title: Actualizar proyecto de Excel o Word migrado a .NET Framework 4/4,5
+title: Actualizar proyecto de Excel o Word migrado a .NET Framework 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bc211f4d30359c885b22a45910363bbadca236f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253717"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584417"
 ---
-# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar proyectos de Excel y Word que migre al .NET Framework 4 o al .NET Framework 4,5
+# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>Actualizar proyectos de Excel y Word que se migran al .NET Framework 4,5
   Si tiene un proyecto de Word o Excel que use cualquiera de las siguientes características, debe modificar el código si se cambia el marco de trabajo de destino a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior:
 
 - [Métodos GetVstoObject y HasVstoObject](#GetVstoObject)
@@ -229,7 +230,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  Ahora, en los proyectos que tienen como destino la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, estos tipos de colección son interfaces que no se derivan de <xref:System.Collections.CollectionBase>. Algunos miembros ya no están disponibles en estos tipos de colección, como <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>y <xref:System.Collections.CollectionBase.InnerList%2A>.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Migrar soluciones de Office al .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Controles de contenido](../vsto/content-controls.md)
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

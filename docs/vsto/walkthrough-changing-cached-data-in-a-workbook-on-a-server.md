@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: cambiar los datos almacenados en caché de un libro en un servidor'
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985515"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584339"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Tutorial: cambiar los datos almacenados en caché de un libro en un servidor
   En este tutorial se muestra cómo modificar un conjunto de DataSet almacenado en la memoria caché de un libro de Microsoft Office Excel sin iniciar Excel mediante la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.
@@ -79,7 +80,7 @@ ms.locfileid: "72985515"
 
 7. En el cuadro de diálogo **nuevo proyecto** , asegúrese de que la casilla **Crear directorio para la solución** no esté activada.
 
-8. Haga clic en **Aceptar**.
+8. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **AdventureWorksDataSet** a **Explorador de soluciones** y abre el archivo de código **Class1.CS** o **Class1. VB** .
 
@@ -137,7 +138,7 @@ ms.locfileid: "72985515"
 
 5. En el cuadro **nombre** , escriba **AdventureWorksReport**. No modifique la ubicación.
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
      Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .
 
@@ -236,7 +237,7 @@ ms.locfileid: "72985515"
 
 4. En el cuadro **nombre** **, escriba DataType**. No modifique la ubicación.
 
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto de Program.cs de archivos **Explorador de soluciones** de **configuración** de y abre el archivo de código **Program.cs** o **Module1. VB** .
 
@@ -249,7 +250,7 @@ ms.locfileid: "72985515"
 
 2. En la pestaña **.net** , seleccione **Microsoft. VisualStudio. Tools. Applications**.
 
-3. Haga clic en **Aceptar**.
+3. Haga clic en **OK**.
 
 4. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de **inscritor** y haga clic en **Agregar referencia**.
 
@@ -262,7 +263,7 @@ ms.locfileid: "72985515"
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8. Agregue el código siguiente al método `Main` . Este código declara los objetos siguientes:
+8. Agregue el siguiente código al método `Main`. Este código declara los objetos siguientes:
 
    - Instancia del `AdventureWorksLTDataSet` tipo que se define en el proyecto **AdventureWorksDataSet** .
 

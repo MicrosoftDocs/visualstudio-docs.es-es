@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: enlace de datos complejo en un proyecto de complemento de VSTO'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985492"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585046"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Tutorial: enlace de datos complejo en un proyecto de complemento de VSTO
   Puede enlazar datos a controles host y controles de Windows Forms en proyectos de complemento de VSTO. En este tutorial se muestra cómo agregar controles a una hoja de cálculo de Microsoft Office Excel y enlazar los controles a datos en tiempo de ejecución.
@@ -47,7 +48,7 @@ ms.locfileid: "72985492"
 
   - Para adjuntar una base de datos mediante la línea de comandos, vea [Cómo: adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
  En primer lugar, es necesario crear un proyecto de complemento de VSTO para Excel.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -104,7 +105,7 @@ ms.locfileid: "72985492"
      [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]
      [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]
 
-3. Agregue el código siguiente al método `ThisAddIn_Startup` . Esto genera un elemento host que extiende la hoja de cálculo. Para obtener más información, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Agregue el siguiente código al método `ThisAddIn_Startup`. Esto genera un elemento host que extiende la hoja de cálculo. Para obtener más información, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]
      [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]

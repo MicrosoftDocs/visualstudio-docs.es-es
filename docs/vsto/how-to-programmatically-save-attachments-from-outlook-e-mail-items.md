@@ -1,5 +1,6 @@
 ---
 title: Guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ade05e936397f72a0b370cb69d8be3310c3aee8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545891"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584773"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Cómo: guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación
 
@@ -35,7 +36,7 @@ En este ejemplo se guardan los datos adjuntos al correo electrónico en una carp
 
 [!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)
 - [Cómo: recuperar una carpeta por nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

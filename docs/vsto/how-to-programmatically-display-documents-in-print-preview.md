@@ -1,5 +1,6 @@
 ---
 title: 'Cómo: mostrar documentos en vista previa de impresión mediante programación'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17671ab5d544341cbd3a02713a8b29b55863f5ac
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545917"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585215"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Cómo: mostrar documentos en vista previa de impresión mediante programación
   Si una solución genera un informe, tal vez sea conveniente presentarlo al usuario en el modo Vista previa de impresión.
@@ -57,7 +58,7 @@ ms.locfileid: "85545917"
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: imprimir documentos mediante programación](../vsto/how-to-programmatically-print-documents.md)
 - [Cómo: abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Cómo: crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md)

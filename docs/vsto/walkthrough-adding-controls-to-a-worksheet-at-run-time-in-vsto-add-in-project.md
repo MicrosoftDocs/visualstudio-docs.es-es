@@ -1,5 +1,6 @@
 ---
 title: Agregar controles a la hoja de cálculo en tiempo de ejecución en un proyecto de complemento de VSTO
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253892"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584352"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Tutorial: agregar controles a una hoja de cálculo en tiempo de ejecución en el proyecto de complemento de VSTO
   Puede agregar controles a cualquier hoja de cálculo abierta mediante el uso de un complemento de VSTO de Excel. Este tutorial muestra cómo usar la cinta para permitir a los usuarios agregar un <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo. Para obtener más información, vea [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -186,7 +187,7 @@ ms.locfileid: "71253892"
 
 - Para obtener información sobre cómo guardar controles en una hoja de cálculo, vea el ejemplo de controles dinámicos de complemento de VSTO de Excel en [ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Soluciones de Excel](../vsto/excel-solutions.md)
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)

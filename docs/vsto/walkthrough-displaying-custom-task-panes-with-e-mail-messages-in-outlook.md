@@ -1,5 +1,6 @@
 ---
 title: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985454"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584287"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook
   En este tutorial se muestra cómo mostrar una instancia única de un panel de tareas personalizado con cada mensaje de correo electrónico que se crea o se abre. Los usuarios pueden mostrar u ocultar el panel de tareas personalizado mediante un botón de la cinta de opciones de cada mensaje de correo.
