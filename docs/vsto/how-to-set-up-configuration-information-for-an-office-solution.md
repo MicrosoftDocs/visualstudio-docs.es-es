@@ -1,5 +1,6 @@
 ---
 title: Configurar la información de configuración para una solución de Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545813"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91581044"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Cómo: configurar la información de configuración de una solución de Office
   Puede usar archivos de configuración para configurar opciones específicas para las soluciones de Office. Puede especificar valores como la Directiva de enlace de ensamblados, objetos de comunicación remota, depuración y configuración de seguimiento.
