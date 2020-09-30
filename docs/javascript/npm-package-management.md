@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285054"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739907"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Administrar paquetes de npm en Visual Studio
 
@@ -42,7 +42,7 @@ Estas características funcionan conjuntamente y se sincronizan con el sistema d
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Para agregar compatibilidad con npm al proyecto, necesita tener instalados el entorno de ejecución de Node.js y la carga de trabajo **Desarrollo de Node.js**. Para conocer los pasos detallados, consulte [Crear un proyecto de Node.js](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
+Para agregar compatibilidad con npm al proyecto, necesita tener instalados el entorno de ejecución de Node.js y la carga de trabajo **Desarrollo de Node.js**. Para conocer los pasos detallados, consulte [Crear un proyecto de Node.js](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json).
 
 > [!NOTE]
 > Para los proyectos de Node.js existentes, use la plantilla de solución **A partir del código existente de Node.js** o el tipo de proyecto [Abrir carpeta (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) a fin de permitir npm en el proyecto.
@@ -86,12 +86,12 @@ Haga clic con el botón derecho en el nodo **npm** para realizar una de las sigu
 
 * **Instalar nuevos paquetes de npm**: abre la interfaz de usuario para instalar nuevos paquetes.
 * **Instalar los paquetes de npm**: ejecuta el comando de instalación de npm para instalar todos los paquetes enumerados en *package.json* (ejecuta `npm install`).
-* **Actualizar los paquetes de npm**: actualiza los paquetes a las versiones más recientes, según el rango de SemVer que se haya especificado en *package.json* (ejecuta `npm update --save`). Los rangos de SemVer se especifican normalmente mediante "~" o "^". Para obtener más información, consulte [Configuración de package.json](../javascript/configure-packages-with-package-json.md).
+* **Actualizar los paquetes de npm**: actualiza los paquetes a las versiones más recientes, según el rango de Versionamiento Semántico (SemVer) que se haya especificado en *package.json*. (ejecuta `npm update --save`). Los rangos de SemVer se especifican normalmente mediante "~" o "^". Para obtener más información, consulte [Configuración de package.json](../javascript/configure-packages-with-package-json.md).
 
 Haga clic con el botón derecho en el nodo de un paquete para realizar una de las siguientes acciones:
 
 * **Instalar los paquetes de npm**: ejecuta el comando de instalación de npm para instalar la versión del paquete enumerada en *package.json* (ejecuta `npm install`).
-* **Actualizar los paquetes de npm**: actualiza los paquetes a la versión más reciente, según el rango de SemVer que se haya especificado en *package.json* (ejecuta `npm update --save`). Los rangos de SemVer se especifican normalmente mediante "~" o "^".
+* **Actualizar los paquetes de npm**: actualiza los paquetes a la versión más reciente, según el rango de SemVer que se haya especificado en *package.json*. (ejecuta `npm update --save`). Los rangos de SemVer se especifican normalmente mediante "~" o "^".
 * **Desinstalar los paquetes de npm**: desinstala el paquete y lo quita de *package.json* (ejecuta `npm uninstall --save`).
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -126,7 +126,7 @@ En el caso de proyectos como los de ASP.NET Core, se puede integrar la compatibi
 * [Instalación de paquetes mediante package.json](#npmInstallPackage)
 
 >[!NOTE]
-> En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
+> En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a>Incorporación de compatibilidad con npm a un proyecto (ASP.NET Core)
 
@@ -164,7 +164,7 @@ En el caso de los proyectos con npm incluido, se pueden configurar paquetes de n
 
 IntelliSense en *package.json* ayuda a seleccionar una versión determinada de un paquete de npm.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Selección de la versión del paquete de npm" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Instalación del nuevo paquete de npm desde el Explorador de soluciones" border="true":::
 
 Cuando se guarda el archivo, Visual Studio agrega el paquete en el nodo **Dependencias/npm** del Explorador de soluciones. Si no se ve el nodo, haga clic con el botón derecho en **package.json** y elija **Restaurar paquetes**.
 
@@ -181,4 +181,3 @@ La instalación de un paquete puede tardar varios minutos. Para comprobar el pro
 * En algunos escenarios, es posible que el Explorador de soluciones no muestre el estado correcto de los paquetes de npm instalados. Esto se debe a un error conocido que se describe [aquí](https://github.com/aspnet/Tooling/issues/479). Por ejemplo, es posible que el paquete aparezca como no instalado cuando sí que lo está. En la mayoría de los casos, se puede actualizar el Explorador de soluciones eliminando *package.json*, reiniciando Visual Studio y agregando de nuevo el archivo *package.json*, tal como se ha descrito anteriormente en este artículo. También puede usar la ventana de salida de npm para comprobar el estado de instalación al instalar paquetes.
 
 * Si ve algún error al compilar la aplicación o al transpilar el código TypeScript, compruebe las incompatibilidades del paquete de npm como posible fuente de errores. Para poder identificar los errores, compruebe la ventana de salida de npm al instalar los paquetes, tal y como se describe anteriormente en este artículo. Por ejemplo, si una o varias de las versiones del paquete de npm están en desuso y generan un error, deberá instalar una versión más reciente para corregir los errores. Para obtener información sobre cómo usar *package.json* para controlar las versiones del paquete de npm, consulte [package.json configuration](../javascript/configure-packages-with-package-json.md) (Configuración de package.json).
-

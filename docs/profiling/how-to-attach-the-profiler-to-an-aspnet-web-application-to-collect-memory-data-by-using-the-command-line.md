@@ -1,6 +1,6 @@
 ---
-title: Asociación del generador de perfiles a una aplicación ASP.NET para recopilar datos de memoria
-ms.custom: seodec18
+title: Asociación del generador de perfiles a ASP.NET para recopilar datos de memoria
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: edf9fec93b8fed4e89e5e7cf0525d4f11ed326fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22a3f7d20b02839ae677b12e5ce8454e63358914
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329351"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807981"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento para adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de memoria mediante la línea de comandos
 En este artículo se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y recopilar datos sobre el número y tamaño de asignaciones de memoria de .NET Framework. También puede recopilar datos sobre la duración de los objetos de memoria de .NET Framework.

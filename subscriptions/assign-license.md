@@ -1,18 +1,18 @@
 ---
 title: Asignación de licencias a suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 03/02/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249470"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022207"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de licencias en el Portal de administración de suscripciones de Visual Studio
 Como administrador de suscripciones de Visual Studio, puede usar el Portal de administración para asignar suscripciones a usuarios y grupos de usuarios.
@@ -20,11 +20,11 @@ Como administrador de suscripciones de Visual Studio, puede usar el Portal de a
 En el caso de grupos de usuarios, dispone de opciones para asignar suscripciones.  
 - Puede asignar suscripciones de una en una.
 - También puede cargar de forma rápida y sencilla listas de suscriptores y su información de suscripción mediante la característica para[agregar en masa](assign-license-bulk.md).
-- Si su organización usa Microsoft Azure Active Directory (Azure AD), puede [usar grupos de Azure AD para asignar suscripciones](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) a grupos de usuarios.  
+- Si su organización usa Microsoft Azure Active Directory (Azure AD), puede [usar grupos de Azure AD para asignar suscripciones](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) a grupos de usuarios.  
 
 
 ## <a name="add-a-single-subscriber"></a>Adición de un solo suscriptor
-Aquí se muestra cómo asignar una suscripción de Visual Studio a un nuevo usuario para que pueda acceder a los beneficios de la suscripción.
+Vea el vídeo o siga leyendo para saber cómo asignar una suscripción de Visual Studio a un nuevo usuario para que pueda acceder a las ventajas de la suscripción.
 
 <br>
 
@@ -59,14 +59,12 @@ Aquí se muestra cómo asignar una suscripción de Visual Studio a un nuevo usu
 Después de agregar un suscriptor, se envía automáticamente un correo electrónico de asignación al nuevo suscriptor con más instrucciones. Puede volver a enviar el correo electrónico de asignación en cualquier momento. Para ello, seleccione el suscriptor y el botón **Reenviar** en el menú superior.  Para reenviar correos electrónicos a varios usuarios, mantenga presionada la tecla **Ctrl** mientras selecciona los suscriptores.  Al seleccionar **Reenviar**, verá un cuadro de diálogo que le pedirá que confirme que quiere volver a enviar a los suscriptores.  
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Pasos siguientes
 - ¿Tiene que agregar muchos usuarios?  Aprenda a asignar suscripciones a [varios suscriptores](assign-license-bulk.md).
 - ¿Necesita ayuda?  Póngase en contacto con el [soporte técnico de administración y suscripciones de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

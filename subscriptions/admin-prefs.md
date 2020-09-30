@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Aprenda a establecer las preferencias de idioma, contactos, nivel de suscripción y demás en el portal de administración.
-ms.openlocfilehash: 7f562e6ca0087a92fcc02550165aa32d23321955
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426812"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022621"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Establecimiento de las preferencias de los contratos en el portal de administración
 Los superadministradores pueden establecer determinadas preferencias en el portal de administración que se aplicarán globalmente para cada contrato.  Estas preferencias rellenarán automáticamente los detalles de suscripción para los administradores al agregar suscriptores. Solo las pueden modificar de forma global los propios superadministradores.  
@@ -47,7 +47,7 @@ Esta preferencia proporciona un método para que los suscriptores se pongan en c
 > La dirección de correo electrónico que indique aquí NO se proporcionará a los suscriptores.  Cuando un suscriptor envía una solicitud de tipo **Contact my Admin** (Contacto con el administrador) en el portal de suscriptor, el mensaje se reenvía al alias sin exponerlo al suscriptor. 
 
 ### <a name="default-subscription-level"></a>Nivel de suscripción predeterminado
-Puede usar esta opción para determinar cuál de los niveles de suscripción incluidos en el contrato se selecciona de forma predeterminada cuando se asigna una suscripción a un usuario.  Los administradores pueden cambiar la configuración a cualquier nivel de suscripción en el contrato; esto solo evita tener que seleccionar repetidamente la elección más frecuente. 
+Puede usar esta opción para determinar cuál de los niveles de suscripción incluidos en el contrato se selecciona de forma predeterminada cuando se asigna una suscripción a un usuario.  Los administradores pueden cambiar la configuración a cualquier nivel de suscripción en el contrato; evita tener que hacer repetidamente su elección más frecuente. 
 
 ### <a name="default-communication-preferences"></a>Preferencias de comunicación predeterminadas
 Si establece una configuración regional y un idioma de comunicación predeterminados, puede simplificar el proceso de asignación de suscripciones.  Por ejemplo, si el equipo de desarrollo se encuentra en un país diferente al del equipo de administración, puede establecer las preferencias que mejor se adapten a la ubicación de los suscriptores. Todos los administradores de suscriptores individuales pueden cambiar esta configuración. 
@@ -76,10 +76,10 @@ R:  Si no se establece ninguna dirección de correo electrónico específica en 
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre la administración de suscripciones de Visual Studio.

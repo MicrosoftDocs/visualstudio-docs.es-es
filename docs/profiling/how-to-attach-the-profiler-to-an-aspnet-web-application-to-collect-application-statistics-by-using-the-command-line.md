@@ -1,6 +1,6 @@
 ---
-title: Asociación del generador de perfiles a la aplicación web ASP.NET para obtener estadísticas de aplicación
-ms.custom: seodec18
+title: Asociación del generador de perfiles a ASP.NET para obtener estadísticas de aplicación
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2944a6b84a7262c44b92584a41b25e8c7a751e17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 753213060ea3aaf1269509e65de8c70a71aec3a2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329418"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807864"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Procedimiento para adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar estadísticas de aplicación mediante la línea de comandos
 En este artículo se describe cómo usar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación web ASP.NET y recopilar estadísticas de rendimiento con el método de muestreo.

@@ -1,5 +1,6 @@
 ---
-title: Recopilar datos de referentes a la asignación y duración de memoria de .NET | Microsoft Docs
+title: Recopilación de datos referentes a la asignación y duración de memoria de .NET
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331708"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809432"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Recopilar datos de asignación y duración de memoria de .NET
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Recopilación de datos referentes a la asignación y duración de memoria de .NET Framework
 
-Las Herramientas de generación de perfiles de Visual Studio admiten la recopilación de datos de duración de objetos y de asignación de memoria de .NET, lo cual lo ayuda a detectar problemas de rendimiento relacionados con la memoria de la aplicación.
+Las Herramientas de generación de perfiles de Visual Studio admiten la recopilación de datos de duración de objetos y de asignación de memoria de .NET Framework, lo que ayuda a detectar problemas de rendimiento relacionados con la memoria de la aplicación.
 
 - Los datos sobre la asignación de memoria de .NET incluyen el tamaño y el número de los objetos de memoria de .NET Framework que se asignaron.
 

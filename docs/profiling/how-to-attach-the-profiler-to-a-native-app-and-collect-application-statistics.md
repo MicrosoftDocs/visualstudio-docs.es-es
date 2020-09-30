@@ -1,6 +1,6 @@
 ---
-title: Asociación del generador de perfiles a una aplicación nativa y recopilación de estadísticas de aplicación
-ms.custom: seodec18
+title: Asociación del generador de perfiles a una aplicación nativa y recopilación de estadísticas de la aplicación
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: df44fe42-281b-4398-b3fc-277b62ae41f1
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d463413833ad476b8d6ad90369f53267e3f7cff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b696a9bddeee4dc7b309945aab66c1d9c801307
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328671"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811089"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a una aplicación independiente nativa y recopilar estadísticas de la aplicación mediante la línea de comandos
 En este artículo se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación independiente (cliente) nativa en ejecución y recopilar estadísticas de rendimiento mediante el método de muestreo.

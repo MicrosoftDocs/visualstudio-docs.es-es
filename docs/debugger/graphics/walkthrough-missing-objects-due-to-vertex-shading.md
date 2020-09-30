@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Objetos ausentes debido al sombreado de vértices | Documentos de Microsoft'
+title: 'Tutorial: Objetos ausentes debido al sombreado de vértices | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388602"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843434"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Tutorial: Objetos ausentes debido al sombreado de vértices
 En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un error que se ha producido durante la etapa del sombreador de vértices.
@@ -33,7 +33,7 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
 
  En este escenario, cuando se ejecute la aplicación para probarla, el fondo se representará de la manera prevista, pero no aparecerá uno de los objetos. Con el Diagnóstico de gráficos puede capturar el problema en un registro de gráficos para poder depurar la aplicación. El problema tiene este aspecto en la aplicación:
 
- ![No se puede ver el objeto. ](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
+ ![No se puede ver el objeto.](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
 
 ## <a name="investigation"></a>Investigación
  Mediante las herramientas de Diagnóstico de gráficos, puede cargar el archivo de registro de gráficos para inspeccionar los fotogramas que se capturaron durante la prueba.
@@ -44,7 +44,7 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
 
 2. En la **Lista de fotogramas**, seleccione un fotograma que muestre que no aparece el objeto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la pestaña de registro de gráficos tiene el aspecto siguiente:
 
-    ![Documento de registro de gráficos en Visual Studio](media/gfx_diag_demo_missing_object_shader_step_1.png "gfx_diag_demo_missing_object_shader_step_1")
+    ![Documento de registro de gráficos en Visual Studio](media/gfx_diag_demo_missing_object_shader_step_1.png "gfx_diag_demo_missing_object_shader_step_1")
 
    Cuando haya seleccionado un fotograma en el que se muestre el problema, puede comenzar a diagnosticarlo con la **Lista de eventos gráficos**. La **Lista de eventos gráficos** contiene cada una de las llamadas a la API de Direct3D que se realizaron para representar el fotograma activo; por ejemplo, las llamadas a la API para configurar el estado del dispositivo, para crear y actualizar búferes, y para dibujar los objetos que aparecen en el fotograma. Muchos tipos de llamadas son interesantes porque, a menudo (aunque no siempre), hay un cambio correspondiente en el destino de representación cuando la aplicación funciona según lo esperado; por ejemplo, llamadas a Draw, Dispatch, Copy o Clear. Las llamadas a Draw son especialmente interesantes porque cada una de ellas representa la geometría que representaba la aplicación (las llamadas a Dispatch también pueden representar geometría).
 
@@ -101,7 +101,7 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
 
 2. Suba por la pila de llamadas hasta llegar al código fuente de la aplicación. En la ventana **Pila de llamadas de eventos de gráficos** , elija la llamada superior para ver si el búfer de constantes se llena ahí. Si no es así, siga subiendo por la pila de llamadas hasta que encuentre dónde se llena. En este escenario, detectará que el búfer de constantes se llena (mediante la API de Direct3D `UpdateSubresource` ) más arriba en la pila de llamadas, en una función que se denomina `MarbleMaze::Render`y cuyo valor procede de un objeto de búfer de constantes que se denomina `m_marbleConstantBufferData`:
 
-    ![El código que establece el búfer de constantes del objeto](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
+    ![Código que establece el búfer de constantes del objeto](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
    > Si está depurando la aplicación al mismo tiempo, puede establecer un punto de interrupción en esta ubicación, al que se llegará al representar el siguiente fotograma. Después, puede examinar los miembros de `m_marbleConstantBufferData` para confirmar que el valor del miembro `projection` está establecido en todo ceros cuando se llena el búfer de constantes.
@@ -116,12 +116,12 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
 
    Después de encontrar la ubicación donde se establece `m_marbleConstantBufferData.projection` , puede examinar el código fuente de alrededor para determinar el origen del valor incorrecto. En este escenario, detectará que el valor de `m_marbleConstantBufferData.projection` se establece en una variable local denominada `projection` antes de que se haya inicializado en un valor que proporciona el código `m_camera->GetProjection(&projection);` en la línea siguiente.
 
-   ![La proyección de marble se establece antes de la inicialización](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")
+   ![La proyección de Marble se establece antes de la inicialización](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")
 
    Para corregir el problema, mueva la línea de código que establece el valor de `m_marbleConstantBufferData.projection` después de la línea que inicializa el valor de la variable local `projection`.
 
-   ![La C corregido&#43; &#43; código fuente](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
+   ![Código fuente de C++ corregido](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
 
    Después de corregir el código, puede volver a compilarlo y ejecutar la aplicación de nuevo para comprobar que se ha resuelto el problema de representación:
 
-   ![Muestra el objeto ahora. ](media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")
+   ![Ahora se muestra el objeto.](media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")

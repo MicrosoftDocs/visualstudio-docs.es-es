@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911406"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851104"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Preguntas frecuentes sobre depuración de instantáneas en Visual Studio
 
@@ -103,7 +103,7 @@ En Virtual Machine/Virtual Machine Scale Sets, quite la extensión de Remote Deb
 
 2. Eliminación de certificados y Azure KeyVault
 
-   Al instalar la extensión de Remote Debugger para Virtual Machine/Virtual Machine Scale Sets, se crean certificados de cliente y servidor para autenticar el cliente de VS con los recursos de Azure Virtual Machine/Virtual Machine Scale Sets.
+   Al instalar la extensión de Remote Debugger para Virtual Machine/Virtual Machine Scale Sets, se crean certificados de cliente y servidor para autenticar el cliente de Visual Studio con los recursos de Azure Virtual Machine/Virtual Machine Scale Sets.
 
    - El certificado de cliente
 
@@ -124,7 +124,7 @@ En Virtual Machine/Virtual Machine Scale Sets, quite la extensión de Remote Deb
       ```
 
    - El certificado de servidor
-      - La huella digital del certificado de servidor correspondiente se implementa como un secreto en Azure KeyVault. VS intentará encontrar o crear una instancia de KeyVault con el prefijo MSVSAZ* en la región correspondiente al recurso de Virtual Machine/Virtual Machine Scale Sets. Por lo tanto, todos los recursos de Virtual Machine/Virtual Machine Scale Sets implementados en esa región compartirán la misma instancia de KeyVault.
+      - La huella digital del certificado de servidor correspondiente se implementa como un secreto en Azure KeyVault. Visual Studio intentará encontrar o crear una instancia de KeyVault con el prefijo MSVSAZ* en la región correspondiente al recurso de Virtual Machine/Virtual Machine Scale Sets. Por lo tanto, todos los recursos de Virtual Machine/Virtual Machine Scale Sets implementados en esa región compartirán la misma instancia de KeyVault.
       - Para eliminar el secreto de la huella digital del certificado de servidor, vaya a Azure Portal y busque la instancia de KeyVault MSVSAZ* en la misma región donde se hospeda el recurso. Elimine el secreto que debe tener la etiqueta `remotedebugcert<<ResourceName>>`
       - También deberá eliminar el secreto de servidor del recurso a través de PowerShell.
 

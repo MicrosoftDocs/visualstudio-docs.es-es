@@ -1,5 +1,6 @@
 ---
-title: Procedimiento para especificar ubicaciones del archivo de símbolos desde la línea de comandos | Microsoft Docs
+title: Especificación de ubicaciones del archivo de símbolos desde la línea de comandos
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f9238c922b8adda3ce7d99571182d4b5ce91f35f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 66f06bf9482bf719eb2025a8ee6c496b6b679046
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329028"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809588"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedimiento Especificar ubicaciones de archivos de símbolos desde la línea de comandos
 Para mostrar información de símbolos como nombres de función y números de línea, la herramienta de línea de comandos VSPerfReport requiere acceso a los archivos de símbolos (.*pdb*) de los componentes para los que se generan perfiles y los archivos de sistema de Windows. Los archivos de símbolos se crean cuando se compila un componente. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport busca archivos de símbolos automáticamente en las siguientes ubicaciones:
