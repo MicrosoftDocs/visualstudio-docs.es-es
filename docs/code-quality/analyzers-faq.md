@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037255"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604596"
 ---
 # <a name="code-analysis-faq"></a>Preguntas más frecuentes sobre análisis de código
 
@@ -34,7 +34,7 @@ Esta página contiene respuestas a algunas preguntas frecuentes sobre el anális
 
 Sin embargo, los archivos EditorConfig ofrecen maneras adicionales de configurar reglas también:
 
-- En el caso de los analizadores de calidad de código de .NET, los archivos EditorConfig permiten [definir los tipos de código que se van a analizar](fxcop-analyzer-options.md).
+- En el caso de los analizadores de calidad de código de .NET, los archivos EditorConfig permiten [definir los tipos de código que se van a analizar](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 - En el caso de los analizadores de estilo de código .NET integrados en Visual Studio, los archivos EditorConfig permiten [definir los estilos de código preferidos](../ide/editorconfig-code-style-settings-reference.md) para un código base.
 
 Además de los conjuntos de reglas y los archivos EditorConfig, algunos analizadores se configuran mediante el uso de archivos de texto marcados como [archivos adicionales](../ide/build-actions.md#build-action-values) para los compiladores de C# y VB.
@@ -94,7 +94,7 @@ Los [analizadores de StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyz
 
 **R**: la página de propiedades análisis de código en el nivel de solución se quitó en favor del grupo de propiedades compartidas más confiables. Para administrar el análisis de código en el nivel de proyecto, la página de propiedades análisis de código sigue estando disponible. (En el caso de los proyectos administrados, también se recomienda migrar de conjuntos de reglas a EditorConfig para la configuración de la regla).  Para compartir conjuntos de archivos entre varios proyectos de una solución o un repositorio, se recomienda definir un grupo de propiedades con la propiedad CodeAnalysisRuleSet en un archivo de propiedades compartidas/destinos o directorio. props/Directory. targets. Si no tiene ninguna propiedad o destino común que se importen todos los proyectos, considere la posibilidad de [Agregar un grupo de propiedades de este tipo a un directorio. props o un directorio. targets en un directorio de soluciones de nivel superior, que se importa automáticamente en todos los archivos de proyecto definidos en el directorio o en sus](../msbuild/customize-your-build.md)subdirectorios.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general de los analizadores](roslyn-analyzers-overview.md)
 - [Configuración de la convención de codificación de .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
