@@ -185,7 +185,7 @@
         - name: Registro de cambios
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: Aplicaciones móviles con Xamarin
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: Accesibilidad
   items:
     - name: Información general
