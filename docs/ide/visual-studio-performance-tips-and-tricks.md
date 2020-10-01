@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5531a85bcdff90db816e942d196e0bab3b66139
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810329"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352367"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -63,7 +63,7 @@ Si es habitual que se quede sin memoria durante las sesiones de depuración, pue
 
     Establezca las opciones en **Solo los módulos especificados** en lugar de **Todos los módulos** y luego especifique qué módulos quiere cargar. Durante la depuración, también puede hacer clic con el botón derecho en módulos concretos de la ventana **Módulos** para incluir explícitamente un módulo en la carga de símbolos. (Para abrir la ventana durante la depuración, elija **Depurar** > **Ventanas** > **Módulos**).
 
-    Para obtener más información, vea [Understanding symbol files](?view=vs-2019) (Introducción a los archivos de símbolos).
+    Para obtener más información, vea [Understanding symbol files](?view=vs-2019&preserve-view=true) (Introducción a los archivos de símbolos).
 
 - **Deshabilite las herramientas de diagnóstico**
 
