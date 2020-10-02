@@ -10,13 +10,43 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: c954c2bdf5b202da96cffc4dfa22e94b75a7d93a
-  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+  ms.openlocfilehash: 1da6ea6d88e15aaa400eb61509dc26a2a6355b58
+  ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "89599596"
+  ms.lasthandoff: 09/30/2020
+  ms.locfileid: "91604612"
 landingContent:
+- title: Análisis del código .NET
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Análisis del código .NET
+      url: roslyn-analyzers-overview.md
+    - text: Análisis de calidad del código .NET
+      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
+    - text: Análisis del estilo del código .NET
+      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
+  - linkListType: concept
+    links:
+    - text: Preguntas más frecuentes
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configuración del análisis del código
+      url: use-roslyn-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Reglas de calidad del código .NET
+      url: /dotnet/fundamentals/productivity/code-analysis/quality-rules/index
+    - text: Reglas de estilo del código .NET
+      url: /dotnet/fundamentals/productivity/code-analysis/style-rules/index
+- title: Medición de la complejidad del código
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Métrica de código
+      url: code-metrics-values.md
 - title: Análisis del código de C y C++
   linkLists:
   - linkListType: overview
@@ -27,35 +57,3 @@ landingContent:
     links:
     - text: Advertencias de análisis de código de C++
       url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
-- title: Análisis de calidad del código .NET
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Análisis de código fuente
-      url: roslyn-analyzers-overview.md
-    - text: Análisis heredado
-      url: static-code-analysis-for-managed-code-overview.md
-  - linkListType: concept
-    links:
-    - text: Preguntas más frecuentes
-      url: analyzers-faq.md
-  - linkListType: how-to-guide
-    links:
-    - text: Configuración del análisis de calidad del código
-      url: install-fxcop-analyzers.md
-  - linkListType: reference
-    links:
-    - text: Reglas de calidad del código .NET
-      url: code-analysis-for-managed-code-warnings.md
-- title: Análisis del estilo del código .NET
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Configuración del análisis del estilo del código
-      url: ../ide/create-portable-custom-editor-options.md
-- title: Medición de la complejidad del código
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Métrica de código
-      url: code-metrics-values.md
