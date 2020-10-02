@@ -1,6 +1,6 @@
 ---
-title: Asociación del generador de perfiles a una aplicación de .NET para recopilar datos de memoria
-ms.custom: seodec18
+title: Asociación del generador de perfiles a .NET para recopilar datos de memoria
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: dbe8f0cdb976dfb687071b231b2907b6b7124b3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88b3eedf8989b4c7421ecb7504b18997058a0204
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328732"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811115"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento para adjuntar el generador de perfiles a una aplicación de .NET Framework independiente para recopilar datos de memoria mediante la línea de comandos
 

@@ -1,18 +1,18 @@
 ---
 title: Aparición de correos electrónicos personales en Microsoft Business Center
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 04/10/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 description: 'Suscripciones de Visual Studio: ¿por qué aparecen direcciones de Hotmail o Gmail para mis suscriptores?'
-ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223689"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022676"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Suscripciones de Visual Studio: ¿por qué mis suscriptores tienen cuentas personales?
 A medida que las empresas se migran del Centro de servicios de licencias por volumen (VLSC) al nuevo [Portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio, los administradores pueden sorprenderse de ver que la "dirección de correo electrónico de inicio de sesión" de algunos suscriptores es una dirección de correo electrónico personal, como Hotmail o Outlook.  
@@ -28,33 +28,34 @@ Durante el proceso de activación del suscriptor: Se requería una cuenta Micros
 > La experiencia moderna de suscriptor en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) admite los tipos de identidad profesional/educativa y de cuenta Microsoft (MSA).
 
 ## <a name="solution"></a>Soluciones
+Para corregir el problema, simplemente seleccione el botón **Connect Emails** (Conectar correos electrónicos) y el sistema intentará correlacionar las cuentas de Microsoft y los usuarios existentes de la instancia de Azure Active Directory (Azure AD) de la organización en función del nombre y el apellido. Si se produce un error en una asociación, puede hacer clic en la **X** situada a la derecha de la asociación para quitarla.  
+
+Vea este vídeo o siga leyendo para saber cómo solucionarlo. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
 
-Para corregir el problema, simplemente seleccione el botón **Connect Emails** (Conectar correos electrónicos) y el sistema intentará correlacionar las cuentas de Microsoft y los usuarios existentes de la instancia de Azure Active Directory (Azure AD) de la organización en función del nombre y el apellido. Si se produce un error en una asociación, puede hacer clic en la **X** situada a la derecha de la asociación para quitarla.  
+> [!div class="mx-imgBorder"]
+> ![Botón Conectar correos electrónicos](_img/connect-emails/connect-emails-button.png "Haga clic en Connect Emails (Conectar correos electrónicos) para que sus usuarios con cuentas de Microsoft coincidan con los de Azure Active Directory.")
+
+También puede **buscar en el directorio** para corregir los errores o rellenar la información que falta de su Azure AD. Si todas las coincidencias son correctas, puede elegir el botón **Current identity** (Identidad actual) para seleccionar todas las entradas coincidentes en lugar de seleccionarlas de una en una.  
 
 > [!div class="mx-imgBorder"]
-> ![Botón Conectar correos electrónicos](_img/connect-emails/connect-emails-button.png)
+> ![Ventana Conectar correos electrónicos](_img/connect-emails/connect-emails-flyout.png "Seleccione los suscriptores que quiere que coincidan con sus identidades de Azure AD y haga clic en Continue (Continuar).")
 
-También puede **buscar en el directorio** para corregir los errores o rellenar la información que falta de su Azure AD. Si todas las asociaciones son correctas, puede elegir "Select all matched subscribers" (Seleccionar todos los suscriptores coincidentes), en lugar de seleccionarlos de uno en uno.  
-
-> [!div class="mx-imgBorder"]
-> ![Ventana Conectar correos electrónicos](_img/connect-emails/connect-emails-flyout.png)
-
-A continuación, haga clic en "Continue" (Continuar) para ir a una pantalla en la que se describen los cambios que van a realizarse. Si está de acuerdo, haga clic en "Save" (Guardar) y se aplicarán los cambios. El suscriptor también recibirá un mensaje que le informa del cambio la próxima vez que inicie sesión en su suscripción.   
+A continuación, haga clic en **Continue** (Continuar) para ir a una lista de los cambios que van a realizarse. Si está de acuerdo, haga clic en **Save** (Guardar) y se aplicarán los cambios. El suscriptor también recibirá un mensaje que le informa del cambio la próxima vez que inicie sesión en su suscripción.  Observe que en esta lista solo aparecen los dos suscriptores que coincidían en Azure Active Directory.  En nuestro ejemplo, como Frederick no tenía una dirección correspondiente en Azure AD, su cuenta de Microsoft (MSA) no coincidía con una cuenta profesional. 
 
 > [!div class="mx-imgBorder"]
-> ![Confirmación de conexión de correos electrónicos](_img/connect-emails/connect-emails-confirm.png) 
+> ![Confirmación de conexión de correos electrónicos](_img/connect-emails/connect-emails-confirm.png "Haga clic en Continue (Continuar) para implementar los cambios propuestos y, luego, en Save (Guardar).") 
 
 > [!NOTE]
 > Al editar la dirección de correo electrónico de inicio de sesión, solo se actualiza la dirección que usa el suscriptor para iniciar sesión en su suscripción en https://my.visualstudio.com. Si el suscriptor ha usado las otras direcciones de correo electrónico para activar beneficios como Azure o Pluralsight, deberá seguir usando esas direcciones de correo electrónico para acceder a ellos. Si acceden a nuevas ventajas, deberán usar la nueva dirección de correo electrónico. 
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ##  <a name="next-steps"></a>Pasos siguientes
 - Si ha actualizado las direcciones de correo electrónico de los suscriptores, debería informarles de que ha cambiado su información de inicio de sesión.  También recibirán un correo electrónico con esa información actualizada.
-- Puede ser útil [filtrar la lista de suscriptores](search-license.md) de su organización para buscar cualquier dirección de correo electrónico de inicio de sesión que deba cambiar.  
+- Puede ser útil [filtrar la lista de suscriptores](search-license.md) de su organización para buscar cualquier dirección de correo electrónico de inicio de sesión que deba cambiar.

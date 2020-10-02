@@ -1,23 +1,23 @@
 ---
 title: Asignación de licencias a grupos de usuarios para suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Obtenga información acerca de cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249615"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022444"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
 
-Para agregar grandes grupos de usuarios, puede usar la característica Agregar en masa, o bien, si su organización usa Microsoft Azure Active Directory (Azure AD), puede usar grupos de Azure AD. En este artículo se explica el proceso de ambas opciones. 
+Para agregar grandes grupos de usuarios, puede usar la característica Agregar en masa, o bien, si su organización usa Microsoft Azure Active Directory (Azure AD), puede usar grupos de Azure AD. En este artículo se explica el proceso de ambas opciones.  Vea este vídeo o siga leyendo para saber más sobre la característica de adición en masa. 
 
 <br>
 
@@ -64,7 +64,8 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
 
    Si se produce un error, siga estos pasos:
    1. Abra el archivo de Excel que ha creado, corrija los problemas y guarde el archivo.
-   0. Vuelva al Portal de administración y elija **Agregar**.
+   0. Vuelva al portal de administración y descarte el mensaje de error.
+   0. Haga clic en **Agregar**.
    0. Seleccione **Agregar en masa**.
    0. Como ya se ha guardado el archivo de Excel, no es necesario descargar la plantilla.  Seleccione **Examinar**, busque el archivo que acaba de guardar y seleccione **Abrir**.
    0. Seleccione **Aceptar**.
@@ -89,6 +90,7 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 > - Todos los miembros del grupo deben tener una dirección de correo electrónico asociada a su cuenta de Azure AD.
 > - Las notificaciones de suscripciones agregadas con grupos de Azure AD no se pueden enviar a direcciones de correo electrónico independientes.  
 
+Vea este vídeo o siga leyendo para saber cómo agregar suscriptores mediante la característica de grupo de Azure Active Directory. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
@@ -130,10 +132,10 @@ R: No, para modificar la información de un suscriptor individual, deberá quita
 R: En función de cómo haya configurado la organización Azure AD, pueden producirse retrasos de hasta 24 horas antes de que se agregue el usuario. Si han pasado más de 24 horas, [póngase en contacto con el servicio de soporte técnico](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 ## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentación de Azure](https://docs.microsoft.com/azure/)
-- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 - ¿Tiene solo que agregar uno o dos suscriptores?  Consulte [Agregar usuarios individuales](assign-license.md).

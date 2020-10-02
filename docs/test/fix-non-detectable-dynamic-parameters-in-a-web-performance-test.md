@@ -1,5 +1,6 @@
 ---
-title: Corrección de parámetros dinámicos no detectables en una prueba de rendimiento web
+title: Corrección de parámetros dinámicos no detectables (prueba de rendimiento web)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 25df1c0d0d3165ba8afb068fc416a872af737a82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cad94040997d8cead6be799bee6b2bc17aab699c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288759"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810645"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corregir parámetros dinámicos no detectables en una prueba de rendimiento web
 

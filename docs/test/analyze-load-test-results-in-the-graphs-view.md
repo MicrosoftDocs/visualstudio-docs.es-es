@@ -1,5 +1,6 @@
 ---
-title: Análisis de los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
+title: 'Análisis de resultados de pruebas de carga: vista Gráficos (Analizador de pruebas de carga)'
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b48162da7a753516ce0c1ae0dba4cfe1f94387e4
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591273"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810658"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
 

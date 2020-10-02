@@ -1,5 +1,6 @@
 ---
-title: Requisitos del agente de prueba y del controlador de pruebas para pruebas de carga
+title: Requisitos del controlador de pruebas y el agente de pruebas (pruebas de carga)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5d4e0562ed15aa44beba858f46870bf672d46ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588647"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810554"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos del controlador de pruebas y el agente de pruebas para las pruebas de carga
 

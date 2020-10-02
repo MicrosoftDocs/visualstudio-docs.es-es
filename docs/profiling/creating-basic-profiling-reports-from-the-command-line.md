@@ -1,5 +1,6 @@
 ---
-title: Creación de informes básicos de generación de perfiles desde la línea de comandos | Microsoft Docs
+title: 'Línea de comandos de generación de perfiles: creación de informes básicos'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bca944b67b19fdbb4138c479acf5693994d1c717
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329044"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808856"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Creación de informes básicos de generación de perfiles desde la línea de comandos
 En este artículo se describen los comandos básicos de VSPerfReport que generan informes de valores separados por comas (.*csv*) a partir de un archivo de datos de generación de perfiles .*vsp* o .*vsps*. Para una descripción de todas las opciones de informes, vea [VSPerfReport](../profiling/vsperfreport.md).

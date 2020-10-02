@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284807"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739972"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -68,6 +68,8 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
 - Registros del centro de servicio y registros de errores de MEF, si existen
 
 - Registros de Python, si existen
+
+- Registros del editor de LSP de Razor, si existen
 
 - Registros de Windows Forms, si existen
 

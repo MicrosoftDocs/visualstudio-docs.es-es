@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Documentos de Microsoft'
+title: Objetos ausentes debido a una canalización mal configurada
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388578"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809177"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un sombreador de píxeles sin establecer.
@@ -44,7 +45,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
 
 2. En la **Lista de fotogramas**, seleccione un fotograma que muestre que no aparece el objeto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la pestaña de registro de gráficos tiene el aspecto siguiente:
 
-    ![Documento de registro de gráficos en Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")
+    ![Documento de registro de gráficos en Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")
 
    Después de seleccionar un fotograma en el que se muestre el problema, puede comenzar a diagnosticarlo con la **Lista de eventos gráficos**. La **Lista de eventos gráficos** contiene cada llamada API de Direct3D que se realizó para representar el fotograma activo, como, por ejemplo, para configurar el estado del dispositivo, para crear y actualizar búferes, y para dibujar los objetos que aparecen en el fotograma. Muchos tipos de llamadas (por ejemplo, las llamadas a Draw, Dispatch, Copy o Clear) son interesantes, porque a menudo hay (aunque no siempre) un cambio correspondiente en el destino de representación cuando la aplicación funciona según lo esperado. Las llamadas a draw son especialmente interesantes porque cada una de ellas representa la geometría que representaba la aplicación.
 
@@ -97,7 +98,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
 
    Para solucionar el problema, asigne el sombreador de píxeles correcto mediante el primer parámetro de la llamada de API `ID3D11DeviceContext::PSSetShader` .
 
-   ![La C corregido&#43; &#43; código fuente](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")
+   ![Código fuente de C++ corregido](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")
 
    Después de corregir el código, puede volver a compilarlo y ejecutar la aplicación de nuevo para comprobar que se resuelve el problema de representación:
 

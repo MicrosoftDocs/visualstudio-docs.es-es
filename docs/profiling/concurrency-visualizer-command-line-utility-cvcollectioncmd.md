@@ -1,5 +1,6 @@
 ---
-title: Utilidad de la línea de comandos Visualizador de simultaneidad (CVCollectionCmd) | Microsoft Docs
+title: Utilidad de línea de comandos del Visualizador de simultaneidad
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 762a3563e64a3437c34b9e12e372f5d578e0c7ac
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72911202"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808908"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de la línea de comandos del visualizador de simultaneidad (CVCollectionCmd)
 Se puede usar la utilidad de la línea de comandos (*CVCollectionCmd.exe*) del Visualizador de simultaneidad para recopilar seguimientos desde la línea de comandos de manera que los pueda ver en el Visualizador de simultaneidad para Visual Studio. Las herramientas se pueden usar en equipos que no tengan instalado Visual Studio.

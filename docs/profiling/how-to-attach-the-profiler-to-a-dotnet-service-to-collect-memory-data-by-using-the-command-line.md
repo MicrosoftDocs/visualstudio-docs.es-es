@@ -1,6 +1,6 @@
 ---
-title: Asociación del generador de perfiles a un servicio de .NET Framework para recopilar datos de memoria
-ms.custom: seodec18
+title: Asociación del generador de perfiles a un servicio .NET para recopilar datos de memoria
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
@@ -10,14 +10,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6552ca62be6de2e99b4e650daaa117e4025746cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a77d3cc8d2bb3df73542b273ec3697e0a9ccd9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328679"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811076"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a un servicio .NET para recopilar datos de memoria mediante la línea de comandos
+# <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Asociación del generador de perfiles a un servicio .NET Framework para recopilar datos de memoria mediante la línea de comandos
 En este artículo se explica cómo usar las herramientas de línea de comandos de Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio de .NET Framework y recopilar datos de memoria. Puede recopilar datos sobre el número y tamaño de asignaciones de memoria, así como recopilar datos sobre la duración de objetos de memoria.
 
 > [!NOTE]

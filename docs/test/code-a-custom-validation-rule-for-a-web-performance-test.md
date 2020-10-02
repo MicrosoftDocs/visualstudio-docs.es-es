@@ -1,5 +1,6 @@
 ---
-title: Codificación de una regla de validación personalizada para una prueba de rendimiento web
+title: Creación de una regla de validación personalizada para una prueba de rendimiento web
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8bdf7f7f8f5bfcc7f8403740bea924c967bf3964
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6222aaf6b6aeace595e12c797ead1dfb86b4931
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288876"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810619"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificar una regla de validación personalizada para una prueba de rendimiento web
 
