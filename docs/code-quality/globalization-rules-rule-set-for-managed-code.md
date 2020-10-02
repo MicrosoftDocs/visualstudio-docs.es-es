@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 0c3b899ec8e19160d9ee4a307a86c576d217004c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509866"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658547"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de globalización para código administrado
 
@@ -21,11 +21,11 @@ Utilice el conjunto de reglas reglas de globalización de Microsoft para centrar
 
 |Regla|Descripción|
 |----------|-----------------|
-|[CA1303](../code-quality/ca1303.md)|No pasar literales como parámetros localizados|
-|[CA1304](../code-quality/ca1304.md)|Especificar CultureInfo|
-|[CA1305](../code-quality/ca1305.md)|Especificar IFormatProvider|
-|[CA1307](../code-quality/ca1307.md)|Especificar StringComparison para mayor claridad|
-|[CA1308](../code-quality/ca1308.md)|Normalizar cadenas en mayúsculas|
-|[CA1309](../code-quality/ca1309.md)|Utilizar StringComparison ordinal|
-|[CA1310](../code-quality/ca1310.md)|Especificar StringComparison para la corrección|
-|[CA2101](../code-quality/ca2101.md)|Especificar serialización en argumentos de cadena P/Invoke|
+|[CA1303](/dotnet/fundamentals/code-analysis/quality-rules/ca1303)|No pasar literales como parámetros localizados|
+|[CA1304](/dotnet/fundamentals/code-analysis/quality-rules/ca1304)|Especificar CultureInfo|
+|[CA1305](/dotnet/fundamentals/code-analysis/quality-rules/ca1305)|Especificar IFormatProvider|
+|[CA1307](/dotnet/fundamentals/code-analysis/quality-rules/ca1307)|Especificar StringComparison para mayor claridad|
+|[CA1308](/dotnet/fundamentals/code-analysis/quality-rules/ca1308)|Normalizar cadenas en mayúsculas|
+|[CA1309](/dotnet/fundamentals/code-analysis/quality-rules/ca1309)|Utilizar StringComparison ordinal|
+|[CA1310](/dotnet/fundamentals/code-analysis/quality-rules/ca1310)|Especificar StringComparison para la corrección|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Especificar serialización en argumentos de cadena P/Invoke|

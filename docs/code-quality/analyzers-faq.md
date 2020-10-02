@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604596"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659171"
 ---
 # <a name="code-analysis-faq"></a>Preguntas más frecuentes sobre análisis de código
 
@@ -24,7 +24,7 @@ Esta página contiene respuestas a algunas preguntas frecuentes sobre el anális
 
 **P**: ¿debo usar el análisis de código o EditorConfig para comprobar el estilo de código?
 
-**R: el**análisis de código y los archivos EditorConfig funcionan en mano. Al definir estilos de código [en un archivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md) o en la página de [Opciones editor de texto](../ide/code-styles-and-code-cleanup.md) , en realidad está configurando los analizadores de código integrados en Visual Studio. Los archivos EditorConfig se pueden usar para habilitar o deshabilitar las reglas del analizador y también para configurar paquetes del analizador de NuGet.
+**R: el**análisis de código y los archivos EditorConfig funcionan en mano. Al definir estilos de código [en un archivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) o en la página de [Opciones editor de texto](../ide/code-styles-and-code-cleanup.md) , en realidad está configurando los analizadores de código integrados en Visual Studio. Los archivos EditorConfig se pueden usar para habilitar o deshabilitar las reglas del analizador y también para configurar paquetes del analizador de NuGet.
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig frente a conjuntos de reglas
 
@@ -35,7 +35,7 @@ Esta página contiene respuestas a algunas preguntas frecuentes sobre el anális
 Sin embargo, los archivos EditorConfig ofrecen maneras adicionales de configurar reglas también:
 
 - En el caso de los analizadores de calidad de código de .NET, los archivos EditorConfig permiten [definir los tipos de código que se van a analizar](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
-- En el caso de los analizadores de estilo de código .NET integrados en Visual Studio, los archivos EditorConfig permiten [definir los estilos de código preferidos](../ide/editorconfig-code-style-settings-reference.md) para un código base.
+- En el caso de los analizadores de estilo de código .NET integrados en Visual Studio, los archivos EditorConfig permiten [definir los estilos de código preferidos](/dotnet/fundamentals/code-analysis/code-style-rule-options) para un código base.
 
 Además de los conjuntos de reglas y los archivos EditorConfig, algunos analizadores se configuran mediante el uso de archivos de texto marcados como [archivos adicionales](../ide/build-actions.md#build-action-values) para los compiladores de C# y VB.
 
@@ -94,7 +94,7 @@ Los [analizadores de StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyz
 
 **R**: la página de propiedades análisis de código en el nivel de solución se quitó en favor del grupo de propiedades compartidas más confiables. Para administrar el análisis de código en el nivel de proyecto, la página de propiedades análisis de código sigue estando disponible. (En el caso de los proyectos administrados, también se recomienda migrar de conjuntos de reglas a EditorConfig para la configuración de la regla).  Para compartir conjuntos de archivos entre varios proyectos de una solución o un repositorio, se recomienda definir un grupo de propiedades con la propiedad CodeAnalysisRuleSet en un archivo de propiedades compartidas/destinos o directorio. props/Directory. targets. Si no tiene ninguna propiedad o destino común que se importen todos los proyectos, considere la posibilidad de [Agregar un grupo de propiedades de este tipo a un directorio. props o un directorio. targets en un directorio de soluciones de nivel superior, que se importa automáticamente en todos los archivos de proyecto definidos en el directorio o en sus](../msbuild/customize-your-build.md)subdirectorios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de los analizadores](roslyn-analyzers-overview.md)
-- [Configuración de la convención de codificación de .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Configuración de la convención de codificación de .NET para EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6f8ceada30f66967de1a0c792d59275a851938e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00295a8485fa80d2aa6cf1977e014b191b28ba7e
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587659"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658612"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección extendidas para código administrado
 
@@ -25,29 +25,29 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 
 |Regla|Descripción|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001.md)|Los tipos que poseen campos descartables deben ser descartables|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009.md)|Declarar los controladores de evento correctamente|
-|[CA1016](../code-quality/ca1016.md)|Marcar los ensamblados con AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033.md)|Los tipos secundarios deben poder llamar a los métodos de interfaz|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|Marcar los ensamblados con AssemblyVersionAttribute|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|Los tipos secundarios deben poder llamar a los métodos de interfaz|
 |[CA1049](../code-quality/ca1049.md)|Los tipos que poseen recursos nativos deben ser descartables|
-|[CA1060](../code-quality/ca1060.md)|Mover P/Invokes a la clase NativeMethods|
-|[CA1061](../code-quality/ca1061.md)|No ocultar métodos de clase base|
-|[CA1063](../code-quality/ca1063.md)|Implementar IDisposable correctamente|
-|[CA1065](../code-quality/ca1065.md)|No producir excepciones en ubicaciones inesperadas|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|Mover P/Invokes a la clase NativeMethods|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|No ocultar métodos de clase base|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|Implementar IDisposable correctamente|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|No producir excepciones en ubicaciones inesperadas|
 |[CA1301](../code-quality/ca1301.md)|Evitar los aceleradores duplicados|
 |[CA1400](../code-quality/ca1400.md)|Debe haber puntos de entrada P/Invoke|
-|[CA1401](../code-quality/ca1401.md)|Los elementos P/Invoke no deben estar visibles|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|Los elementos P/Invoke no deben estar visibles|
 |[CA1403](../code-quality/ca1403.md)|Los tipos de diseño automático no deben ser visibles a través de COM|
 |[CA1404](../code-quality/ca1404.md)|Llamar a GetLastError inmediatamente después de P/Invoke|
 |[CA1405](../code-quality/ca1405.md)|Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM|
 |[CA1410](../code-quality/ca1410.md)|Los métodos de registro COM deben coincidir|
 |[CA1415](../code-quality/ca1415.md)|Declarar elementos P/Invoke correctamente|
-|[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Quitar finalizadores vacíos|
 |[CA1900](../code-quality/ca1900.md)|Los campos de tipo de valor deben ser portátiles|
 |[CA1901](../code-quality/ca1901.md)|Las declaraciones P/Invoke deben ser portátiles|
-|[CA2002](../code-quality/ca2002.md)|No bloquear objetos con identidad débil|
-|[CA2100](../code-quality/ca2100.md)|Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad|
-|[CA2101](../code-quality/ca2101.md)|Especificar serialización en argumentos de cadena P/Invoke|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|No bloquear objetos con identidad débil|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Especificar serialización en argumentos de cadena P/Invoke|
 |[CA2108](../code-quality/ca2108.md)|Revisar la seguridad declarativa en los tipos de valores|
 |[CA2111](../code-quality/ca2111.md)|Los punteros no deben estar visibles|
 |[CA2112](../code-quality/ca2112.md)|Los tipos seguros no deben exponer campos|
@@ -69,32 +69,32 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA2146](../code-quality/ca2146.md)|Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base|
 |[CA2147](../code-quality/ca2147.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
 |[CA2149](../code-quality/ca2149.md)|Los métodos transparentes no deben llamar a código nativo|
-|[CA2200](../code-quality/ca2200.md)|Reiniciar para mantener los detalles de la pila|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|Reiniciar para mantener los detalles de la pila|
 |[CA2202](../code-quality/ca2202.md)|No usar Dispose varias veces en objetos|
-|[CA2207](../code-quality/ca2207.md)|Inicializar campos estáticos de tipo de valor insertados|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|Inicializar campos estáticos de tipo de valor insertados|
 |[CA2212](../code-quality/ca2212.md)|No marcar los componentes con servicio como WebMethod|
-|[CA2213](../code-quality/ca2213.md)|Los campos descartables deben ser descartables|
-|[CA2214](../code-quality/ca2214.md)|No llamar a métodos reemplazables en constructores|
-|[CA2216](../code-quality/ca2216.md)|Los tipos descartables deben declarar el finalizador|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Los campos descartables deben ser descartables|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|No llamar a métodos reemplazables en constructores|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|Los tipos descartables deben declarar el finalizador|
 |[CA2220](../code-quality/ca2220.md)|Los finalizadores deben llamar al finalizador de la clase base|
-|[CA2229](../code-quality/ca2229.md)|Implementar constructores de serialización|
-|[CA2231](../code-quality/ca2231.md)|Sobrecargar el operador equals al invalidar ValueType.Equals|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|Implementar constructores de serialización|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Sobrecargar el operador equals al invalidar ValueType.Equals|
 |[CA2232](../code-quality/ca2232.md)|Marcar puntos de entrada de Windows Forms con STAThread|
-|[CA2235](../code-quality/ca2235.md)|Marcar todos los campos no serializables|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|Marcar todos los campos no serializables|
 |[CA2236](../code-quality/ca2236.md)|Llamar a métodos de clase base en tipos ISerializable|
-|[CA2237](../code-quality/ca2237.md)|Marcar los tipos ISerializable con SerializableAttribute|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|Marcar los tipos ISerializable con SerializableAttribute|
 |[CA2238](../code-quality/ca2238.md)|Implementar métodos de serialización correctamente|
 |[CA2240](../code-quality/ca2240.md)|Implementar ISerializable correctamente|
-|[CA2241](../code-quality/ca2241.md)|Proporcionar argumentos correctos a los métodos de formato|
-|[CA2242](../code-quality/ca2242.md)|Comprobar NaN correctamente|
-|[CA1008](../code-quality/ca1008.md)|Las enumeraciones deben tener un valor igual a cero|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|Proporcionar argumentos correctos a los métodos de formato|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|Comprobar NaN correctamente|
+|[CA1008](/dotnet/fundamentals/code-analysis/quality-rules/ca1008)|Las enumeraciones deben tener un valor igual a cero|
 |[CA1013](../code-quality/ca1013.md)|El operador de sobrecarga es igual que la suma y resta de sobrecarga|
-|[CA1303](../code-quality/ca1303.md)|No pasar literales como parámetros localizados|
-|[CA1308](../code-quality/ca1308.md)|Normalizar cadenas en mayúsculas|
-|[CA1806](../code-quality/ca1806.md)|No omitir resultados del método|
-|[CA1816](../code-quality/ca1816.md)|Llamar a GC.SuppressFinalize correctamente|
-|[CA1819](../code-quality/ca1819.md)|Las propiedades no deben devolver matrices|
-|[CA1820](../code-quality/ca1820.md)|Comprobar si las cadenas están vacías mediante la longitud de cadena|
+|[CA1303](/dotnet/fundamentals/code-analysis/quality-rules/ca1303)|No pasar literales como parámetros localizados|
+|[CA1308](/dotnet/fundamentals/code-analysis/quality-rules/ca1308)|Normalizar cadenas en mayúsculas|
+|[CA1806](/dotnet/fundamentals/code-analysis/quality-rules/ca1806)|No omitir resultados del método|
+|[CA1816](/dotnet/fundamentals/code-analysis/quality-rules/ca1816)|Llamar a GC.SuppressFinalize correctamente|
+|[CA1819](/dotnet/fundamentals/code-analysis/quality-rules/ca1819)|Las propiedades no deben devolver matrices|
+|[CA1820](/dotnet/fundamentals/code-analysis/quality-rules/ca1820)|Comprobar si las cadenas están vacías mediante la longitud de cadena|
 |[CA1903](../code-quality/ca1903.md)|Usar solo API de la versión de .NET Framework de destino|
 |[CA2004](../code-quality/ca2004.md)|Quitar las llamadas a GC.KeepAlive|
 |[CA2006](../code-quality/ca2006.md)|Utilizar SafeHandle para encapsular recursos nativos|
@@ -103,23 +103,23 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA2105](../code-quality/ca2105.md)|Los campos de matrices no deben ser de solo lectura|
 |[CA2106](../code-quality/ca2106.md)|Proteger las aserciones|
 |[CA2115](../code-quality/ca2115.md)|Llamar a Call GC.KeepAlive cuando se utilicen recursos nativos|
-|[CA2119](../code-quality/ca2119.md)|Sellar los métodos que satisfacen las interfaces privadas|
+|[CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119)|Sellar los métodos que satisfacen las interfaces privadas|
 |[CA2120](../code-quality/ca2120.md)|Proteger los constructores de serializaciones|
 |[CA2121](../code-quality/ca2121.md)|Los constructores estáticos deben ser privados|
 |[CA2130](../code-quality/ca2130.md)|Las constantes críticas para la seguridad deben ser transparentes|
 |[CA2205](../code-quality/ca2205.md)|Utilizar equivalentes administrados de la API Win32|
-|[CA2215](../code-quality/ca2215.md)|Los métodos Dispose deben llamar al método Dispose de la clase base|
+|[CA2215](/dotnet/fundamentals/code-analysis/quality-rules/ca2215)|Los métodos Dispose deben llamar al método Dispose de la clase base|
 |[CA2221](../code-quality/ca2221.md)|Los finalizadores deben estar protegidos|
 |[CA2222](../code-quality/ca2222.md)|No disminuir la visibilidad del miembro heredado|
 |[CA2223](../code-quality/ca2223.md)|Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto|
 |[CA2224](../code-quality/ca2224.md)|Invalidar Equals al sobrecargar operadores de igualdad|
-|[CA2226](../code-quality/ca2226.md)|Los operadores deben tener sobrecargas simétricas|
-|[CA2227](../code-quality/ca2227.md)|Las propiedades de la colección deben ser de solo lectura|
+|[CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226)|Los operadores deben tener sobrecargas simétricas|
+|[CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227)|Las propiedades de la colección deben ser de solo lectura|
 |[CA2239](../code-quality/ca2239.md)|Proporcionar métodos de deserialización para campos opcionales|
-|[CA1032](../code-quality/ca1032.md)|Implementar constructores de excepción estándar|
-|[CA1054](../code-quality/ca1054.md)|Los parámetros de URI no deben ser cadenas|
-|[CA1055](../code-quality/ca1055.md)|Los valores devueltos URI no deben ser cadenas|
-|[CA1056](../code-quality/ca1056.md)|Las propiedades URI no deben ser cadenas|
+|[CA1032](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)|Implementar constructores de excepción estándar|
+|[CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054)|Los parámetros de URI no deben ser cadenas|
+|[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055)|Los valores devueltos URI no deben ser cadenas|
+|[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056)|Las propiedades URI no deben ser cadenas|
 |[CA1057](../code-quality/ca1057.md)|Las sobrecargas URI de cadena llaman a sobrecargas System.Uri|
 |[CA1402](../code-quality/ca1402.md)|Evitar las sobrecargas en interfaces visibles a través de COM|
 |[CA1406](../code-quality/ca1406.md)|Evitar los argumentos Int64 en clientes Visual Basic 6|
@@ -132,7 +132,7 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA1414](../code-quality/ca1414.md)|Marcar los argumentos P/Invoke booleanos con MarshalAs|
 |[CA1600](../code-quality/ca1600.md)|No utilizar la prioridad del proceso inactiva|
 |[CA1601](../code-quality/ca1601.md)|No utilizar temporizadores que impidan los cambios de estado de energía|
-|[CA1824](../code-quality/ca1824.md)|Marcar los ensamblados con NeutralResourcesLanguageAttribute|
+|[CA1824](/dotnet/fundamentals/code-analysis/quality-rules/ca1824)|Marcar los ensamblados con NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001.md)|Evitar llamar a métodos problemáticos|
 |[CA2003](../code-quality/ca2003.md)|No tratar fibras como subprocesos|
 |[CA2135](../code-quality/ca2135.md)|Los ensamblados de nivel 2 no deben contener LinkDemands|
@@ -143,13 +143,13 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA2144](../code-quality/ca2144.md)|El código transparente no debe cargar ensamblados desde matrices de bytes|
 |[CA2145](../code-quality/ca2145.md)|Los métodos transparentes no deben ser representativos con el atributo SuppressUnmanagedCodeSecurityAttribute|
 |[CA2204](../code-quality/ca2204.md)|Los literales deben estar escritos correctamente|
-|[CA2211](../code-quality/ca2211.md)|Los campos no constantes no deben ser visibles|
-|[CA2217](../code-quality/ca2217.md)|No marcar enumeraciones con FlagsAttribute|
+|[CA2211](/dotnet/fundamentals/code-analysis/quality-rules/ca2211)|Los campos no constantes no deben ser visibles|
+|[CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217)|No marcar enumeraciones con FlagsAttribute|
 |[CA2218](../code-quality/ca2218.md)|Invalidar el método GetHashCode al invalidar el método Equals|
-|[CA2219](../code-quality/ca2219.md)|No producir excepciones en cláusulas de excepción|
-|[CA2225](../code-quality/ca2225.md)|Las sobrecargas del operador tienen alternativas con nombre|
+|[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219)|No producir excepciones en cláusulas de excepción|
+|[CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225)|Las sobrecargas del operador tienen alternativas con nombre|
 |[CA2228](../code-quality/ca2228.md)|No enviar formatos de recursos no lanzados|
 |[CA2230](../code-quality/ca2230.md)|Usar parámetros en argumentos de variable|
 |[CA2233](../code-quality/ca2233.md)|Las operaciones no deben desbordarse|
-|[CA2234](../code-quality/ca2234.md)|Pasar objetos System.Uri en lugar de cadenas|
-|[CA2243](../code-quality/ca2243.md)|Los literales de cadena de atributo se deben analizar correctamente|
+|[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234)|Pasar objetos System.Uri en lugar de cadenas|
+|[CA2243](/dotnet/fundamentals/code-analysis/quality-rules/ca2243)|Los literales de cadena de atributo se deben analizar correctamente|

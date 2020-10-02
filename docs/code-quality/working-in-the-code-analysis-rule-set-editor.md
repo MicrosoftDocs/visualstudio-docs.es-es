@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893312"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659184"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjuntos de reglas de análisis de código
 
@@ -29,7 +29,7 @@ En la tabla siguiente se muestran las opciones de gravedad:
 |Error|Genera un error en el **lista de errores** y también en el momento de la compilación.|
 |Información|Genera un mensaje en el **lista de errores**.|
 |Hidden|La infracción no es visible para el usuario. No obstante, el IDE recibe una notificación de la infracción.|
-|Ninguno|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
+|None|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
 
 El editor muestra las reglas en una estructura de árbol que agrupa las reglas por un campo de conjunto de reglas que especifique. Para agregar o quitar reglas de un conjunto de reglas, realice uno o varios de los pasos siguientes:
 
@@ -53,7 +53,7 @@ En la tabla siguiente se describen los controles de la barra de herramientas del
 |**Expandir todo**|Muestra las reglas de todos los grupos.|
 |**Contraer todo**|Oculta las reglas de todos los grupos.|
 |**Agrupar por**|Especifica el campo por el que se agrupan las reglas. Haga clic **\<None>** para mostrar las reglas sin grupos.|
-|**Opciones de Column**|Especifica los campos de regla que se van a mostrar.|
+|**Opciones de columna**|Especifica los campos de regla que se van a mostrar.|
 |**Ocultar reglas que no se aplican a la solución actual**|Muestra u oculta reglas que no son del mismo tipo de destino que la solución.|
 |**Mostrar reglas que pueden generar errores de análisis de código**|Muestra u oculta las reglas a las que se ha asignado la acción de error.|
 |**Mostrar reglas que pueden generar advertencias de análisis de código**|Muestra u oculta las reglas a las que se ha asignado la acción de advertencia.|
@@ -70,8 +70,8 @@ En la tabla siguiente se describen los campos de un conjunto de reglas:
 |Campo|Descripción|
 |-----------|-----------------|
 |**Id**|El identificador de la regla.|
-|**Categoría**|Además de su pertenencia en conjuntos de reglas, las reglas de análisis de código también se agrupan por categoría. Para obtener más información, vea [advertencias de análisis de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Name**|Título de la regla.|
+|**Categoría**|Además de su pertenencia en conjuntos de reglas, las reglas de análisis de código también se agrupan por categoría. Para obtener más información, vea [advertencias de análisis de código](/dotnet/fundamentals/code-analysis/quality-rules/index).|
+|**Nombre**|Título de la regla.|
 |**Espacio de nombres**|Espacio de nombres de la regla.|
 |**Tipo de destino**|Indica si la regla es para el código nativo, administrado o de base de datos.|
 |**Acción**|Acción que se realiza cuando se infringe la regla en una ejecución de análisis de código. Puede editar el campo de **acción** .|

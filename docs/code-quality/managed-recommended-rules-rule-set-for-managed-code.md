@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 875f6b3aba88fa3786e4c303f23072e586c4848d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4b82bdd63cd8a32ad38ddf949dfbc3dd5bdc193
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587347"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658495"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas recomendadas administradas para código administrado
 
@@ -23,29 +23,29 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 
 |Regla|Descripción|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001.md)|Los tipos que poseen campos descartables deben ser descartables|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009.md)|Declarar los controladores de evento correctamente|
-|[CA1016](../code-quality/ca1016.md)|Marcar los ensamblados con AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033.md)|Los tipos secundarios deben poder llamar a los métodos de interfaz|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|Marcar los ensamblados con AssemblyVersionAttribute|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|Los tipos secundarios deben poder llamar a los métodos de interfaz|
 |[CA1049](../code-quality/ca1049.md)|Los tipos que poseen recursos nativos deben ser descartables|
-|[CA1060](../code-quality/ca1060.md)|Mover P/Invokes a la clase NativeMethods|
-|[CA1061](../code-quality/ca1061.md)|No ocultar métodos de clase base|
-|[CA1063](../code-quality/ca1063.md)|Implementar IDisposable correctamente|
-|[CA1065](../code-quality/ca1065.md)|No producir excepciones en ubicaciones inesperadas|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|Mover P/Invokes a la clase NativeMethods|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|No ocultar métodos de clase base|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|Implementar IDisposable correctamente|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|No producir excepciones en ubicaciones inesperadas|
 |[CA1301](../code-quality/ca1301.md)|Evitar los aceleradores duplicados|
 |[CA1400](../code-quality/ca1400.md)|Debe haber puntos de entrada P/Invoke|
-|[CA1401](../code-quality/ca1401.md)|Los elementos P/Invoke no deben estar visibles|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|Los elementos P/Invoke no deben estar visibles|
 |[CA1403](../code-quality/ca1403.md)|Los tipos de diseño automático no deben ser visibles a través de COM|
 |[CA1404](../code-quality/ca1404.md)|Llamar a GetLastError inmediatamente después de P/Invoke|
 |[CA1405](../code-quality/ca1405.md)|Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM|
 |[CA1410](../code-quality/ca1410.md)|Los métodos de registro COM deben coincidir|
 |[CA1415](../code-quality/ca1415.md)|Declarar elementos P/Invoke correctamente|
-|[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Quitar finalizadores vacíos|
 |[CA1900](../code-quality/ca1900.md)|Los campos de tipo de valor deben ser portátiles|
 |[CA1901](../code-quality/ca1901.md)|Las declaraciones P/Invoke deben ser portátiles|
-|[CA2002](../code-quality/ca2002.md)|No bloquear objetos con identidad débil|
-|[CA2100](../code-quality/ca2100.md)|Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad|
-|[CA2101](../code-quality/ca2101.md)|Especificar serialización en argumentos de cadena P/Invoke|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|No bloquear objetos con identidad débil|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Especificar serialización en argumentos de cadena P/Invoke|
 |[CA2108](../code-quality/ca2108.md)|Revisar la seguridad declarativa en los tipos de valores|
 |[CA2111](../code-quality/ca2111.md)|Los punteros no deben estar visibles|
 |[CA2112](../code-quality/ca2112.md)|Los tipos seguros no deben exponer campos|
@@ -67,21 +67,21 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[CA2146](../code-quality/ca2146.md)|Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base|
 |[CA2147](../code-quality/ca2147.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
 |[CA2149](../code-quality/ca2149.md)|Los métodos transparentes no deben llamar a código nativo|
-|[CA2200](../code-quality/ca2200.md)|Reiniciar para mantener los detalles de la pila|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|Reiniciar para mantener los detalles de la pila|
 |[CA2202](../code-quality/ca2202.md)|No usar Dispose varias veces en objetos|
-|[CA2207](../code-quality/ca2207.md)|Inicializar campos estáticos de tipo de valor insertados|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|Inicializar campos estáticos de tipo de valor insertados|
 |[CA2212](../code-quality/ca2212.md)|No marcar los componentes con servicio como WebMethod|
-|[CA2213](../code-quality/ca2213.md)|Los campos descartables deben ser descartables|
-|[CA2214](../code-quality/ca2214.md)|No llamar a métodos reemplazables en constructores|
-|[CA2216](../code-quality/ca2216.md)|Los tipos descartables deben declarar el finalizador|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Los campos descartables deben ser descartables|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|No llamar a métodos reemplazables en constructores|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|Los tipos descartables deben declarar el finalizador|
 |[CA2220](../code-quality/ca2220.md)|Los finalizadores deben llamar al finalizador de la clase base|
-|[CA2229](../code-quality/ca2229.md)|Implementar constructores de serialización|
-|[CA2231](../code-quality/ca2231.md)|Sobrecargar el operador equals al invalidar ValueType.Equals|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|Implementar constructores de serialización|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Sobrecargar el operador equals al invalidar ValueType.Equals|
 |[CA2232](../code-quality/ca2232.md)|Marcar puntos de entrada de Windows Forms con STAThread|
-|[CA2235](../code-quality/ca2235.md)|Marcar todos los campos no serializables|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|Marcar todos los campos no serializables|
 |[CA2236](../code-quality/ca2236.md)|Llamar a métodos de clase base en tipos ISerializable|
-|[CA2237](../code-quality/ca2237.md)|Marcar los tipos ISerializable con SerializableAttribute|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|Marcar los tipos ISerializable con SerializableAttribute|
 |[CA2238](../code-quality/ca2238.md)|Implementar métodos de serialización correctamente|
 |[CA2240](../code-quality/ca2240.md)|Implementar ISerializable correctamente|
-|[CA2241](../code-quality/ca2241.md)|Proporcionar argumentos correctos a los métodos de formato|
-|[CA2242](../code-quality/ca2242.md)|Comprobar NaN correctamente|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|Proporcionar argumentos correctos a los métodos de formato|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|Comprobar NaN correctamente|

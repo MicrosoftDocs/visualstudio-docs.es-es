@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47019ecd01a4ad432a853a7f1a4f7d7112be163c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77506468"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659210"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usar conjuntos de reglas para agrupar reglas de análisis de código
 
@@ -24,7 +24,7 @@ Al configurar el análisis de código en Visual Studio, puede elegir en una list
 
 Puede personalizar un conjunto de reglas agregando o eliminando reglas o cambiando el gravedad de la regla para que aparezca como advertencias o errores en el **lista de errores**. Los conjuntos de reglas personalizados pueden satisfacer una necesidad de su entorno de desarrollo determinado. Al personalizar un conjunto de reglas, el editor de conjuntos de reglas proporciona herramientas de búsqueda y filtrado que le ayudarán en el proceso.
 
-Los conjuntos de reglas están disponibles para el [análisis de código administrado](analyzer-rule-sets.md), el [análisis heredado de código administrado](how-to-configure-code-analysis-for-a-managed-code-project.md)y el [análisis de código de C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
+Los conjuntos de reglas están disponibles para el [análisis de código administrado](/dotnet/fundamentals/code-analysis/code-quality-rule-options), el [análisis heredado de código administrado](how-to-configure-code-analysis-for-a-managed-code-project.md)y el [análisis de código de C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Formato del conjunto de reglas
 
@@ -67,6 +67,6 @@ La propiedad **CodeAnalysisRuleSet** del archivo de proyecto de Visual Studio es
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)

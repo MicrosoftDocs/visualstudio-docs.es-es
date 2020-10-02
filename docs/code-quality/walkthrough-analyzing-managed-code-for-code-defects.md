@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535693"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659197"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Tutorial: usar el análisis de código estático para buscar defectos de código
 
@@ -93,15 +93,15 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
 1. Use las siguientes sugerencias para corregir las advertencias:
 
-   [CA1014: Marque los ensamblados con CLSCompliantAttribute](../code-quality/ca1014.md): agregue el código `[assembly: CLSCompliant(true)]` al final del archivo AssemblyInfo.cs.
+   [CA1014: Marque los ensamblados con CLSCompliantAttribute](/dotnet/fundamentals/code-analysis/quality-rules/ca1014): agregue el código `[assembly: CLSCompliant(true)]` al final del archivo AssemblyInfo.cs.
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo` .
+   [CA1032: implementar constructores de excepción estándar](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo` .
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo` .
+   [CA1032: implementar constructores de excepción estándar](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo` .
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` a la clase demo. También deberá agregar una `using` instrucción para <xref:System.Runtime.Serialization?displayProperty=fullName> .
+   [CA1032: implementar constructores de excepción estándar](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` a la clase demo. También deberá agregar una `using` instrucción para <xref:System.Runtime.Serialization?displayProperty=fullName> .
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo () : base() { }` a la clase `demo` .
+   [CA1032: implementar constructores de excepción estándar](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): agregue el constructor `public demo () : base() { }` a la clase `demo` .
 
    [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el uso de mayúsculas y minúsculas del espacio de nombres `testCode` a `TestCode` .
 
@@ -109,9 +109,9 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
    [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el nombre del miembro a `Item` .
 
-   [CA1710: los identificadores deberían tener el sufijo correcto](../code-quality/ca1710.md): cambie el nombre de la clase y sus constructores a `DemoException` .
+   [CA1710: los identificadores deberían tener el sufijo correcto](/dotnet/fundamentals/code-analysis/quality-rules/ca1710): cambie el nombre de la clase y sus constructores a `DemoException` .
 
-   [CA2237: Marque los tipos ISerializable con SerializableAttribute](../code-quality/ca2237.md): agregue el `[Serializable ()]` atributo a la clase `demo` .
+   [CA2237: Marque los tipos ISerializable con SerializableAttribute](/dotnet/fundamentals/code-analysis/quality-rules/ca2237): agregue el `[Serializable ()]` atributo a la clase `demo` .
 
    [CA2210: los ensamblados deben tener nombres seguros válidos](../code-quality/ca2210.md): signo ' CodeAnalysisManagedDemo ' con una clave de nombre seguro:
 

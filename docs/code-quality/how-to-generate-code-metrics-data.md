@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600224"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658534"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Cómo: generar datos de métricas de código
 
@@ -32,10 +32,10 @@ Puede generar datos de métricas de código de tres maneras:
 
 Los analizadores de calidad de código de .NET incluyen varias reglas del [analizador](roslyn-analyzers-overview.md) de métricas de código:
 
-- [CA1501](./ca1501.md)
-- [CA1502](ca1502.md)
-- [CA1505](ca1505.md)
-- [CA1506](ca1506.md)
+- [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)
+- [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502)
+- [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
+- [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
 Estas reglas están deshabilitadas de forma predeterminada, pero se pueden habilitar desde [**Explorador de soluciones**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) o en un archivo de [conjunto de reglas](using-rule-sets-to-group-code-analysis-rules.md) . Por ejemplo, para habilitar la regla CA1502 como advertencia, el archivo. ruleset incluiría la entrada siguiente:
 
@@ -60,7 +60,7 @@ Puede configurar los umbrales en los que se activan las reglas de métricas de c
    CA1502: 10
    ```
 
-   En este ejemplo, la regla [CA1502](ca1502.md) está configurada para activarse cuando la complejidad ciclomática de un método es mayor que 10.
+   En este ejemplo, la regla [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) está configurada para activarse cuando la complejidad ciclomática de un método es mayor que 10.
 
 3. En la ventana **propiedades** de Visual Studio, o en el archivo de proyecto, marque la acción de compilación del archivo de configuración como [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Por ejemplo:
 

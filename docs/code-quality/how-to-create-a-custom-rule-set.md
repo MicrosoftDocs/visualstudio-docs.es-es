@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893273"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658560"
 ---
 # <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
 
@@ -51,7 +51,7 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 4. Seleccione **abrir** para mostrar las reglas en el editor de conjuntos de reglas.
 
 > [!NOTE]
-> Si tiene un proyecto de .NET Core o .NET Standard, el proceso es un poco diferente porque no hay ninguna pestaña de propiedades de **análisis de código** . Siga los pasos para [copiar un conjunto de reglas predefinido en el proyecto y establézcalo como conjunto de reglas activo](analyzer-rule-sets.md). Después de copiar un conjunto de reglas, puede [editarlo en el editor de conjuntos de reglas de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abriéndolo desde **Explorador de soluciones**.
+> Si tiene un proyecto de .NET Core o .NET Standard, el proceso es un poco diferente porque no hay ninguna pestaña de propiedades de **análisis de código** . Siga los pasos para [copiar un conjunto de reglas predefinido en el proyecto y establézcalo como conjunto de reglas activo](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Después de copiar un conjunto de reglas, puede [editarlo en el editor de conjuntos de reglas de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abriéndolo desde **Explorador de soluciones**.
 
 ## <a name="create-a-new-rule-set"></a>Crear un nuevo conjunto de reglas
 

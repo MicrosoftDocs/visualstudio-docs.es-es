@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604630"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658521"
 ---
 # <a name="suppress-code-analysis-violations"></a>Supresión de infracciones de análisis de código
 
@@ -68,7 +68,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 Las propiedades del atributo incluyen:
 
-- **Categoría** : la categoría en la que se define la regla. Para obtener más información sobre las categorías de reglas de análisis de código, vea [advertencias de código administrado](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Categoría** : la categoría en la que se define la regla. Para obtener más información sobre las categorías de reglas de análisis de código, vea [advertencias de código administrado](/dotnet/fundamentals/code-analysis/quality-rules/index).
 
 - **CheckId** : el identificador de la regla. La compatibilidad incluye un nombre corto y largo para el identificador de regla. El nombre corto es CAXXXX; el nombre largo es CAXXXX: FriendlyTypeName.
 
@@ -190,7 +190,7 @@ En el análisis de código heredado, puede elegir si desea suprimir los errores 
 > [!NOTE]
 > El análisis de código `GeneratedCodeAttribute` se omite cuando se aplica a un ensamblado completo o a un solo parámetro.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

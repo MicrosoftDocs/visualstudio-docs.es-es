@@ -11,12 +11,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560754"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659223"
 ---
 # <a name="overview"></a>Información general
 
@@ -38,18 +38,18 @@ Puede configurar la gravedad de las reglas del analizador, o *diagnósticos*, si
 
 En la tabla siguiente se muestran las diferentes opciones de gravedad:
 
-| Gravedad (Explorador de soluciones) | Gravedad (archivo EditorConfig) | Comportamiento en tiempo de compilación | Comportamiento del editor |
+| Gravedad (Explorador de soluciones) | Gravedad (archivo .editorconfig) | Comportamiento en tiempo de compilación | Comportamiento del editor |
 |-|-|-|
-| Error | `error` | Las infracciones aparecen como *errores* en el lista de errores y en la salida de la compilación de línea de comandos y provocan un error en las compilaciones.| El código infractor se subraya con un subrayado ondulado de color rojo y se marca con un pequeño cuadro rojo en la barra de desplazamiento. |
-| Advertencia | `warning` | Las infracciones aparecen como *advertencias* en el lista de errores y en la salida de la compilación de línea de comandos, pero no provocan errores en las compilaciones. | El código infractor se subraya con un subrayado ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento. |
-| Información | `suggestion` | Las infracciones aparecen como *mensajes* en el lista de errores y no en todos los resultados de la compilación de línea de comandos. | El código infractor se subraya con un subrayado ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento. |
-| Hidden | `silent` | No es visible para el usuario. | No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE. |
-| None | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
-| Default | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
+| Error | `error` | Las infracciones aparecen como *Errores* en la Lista de errores y en la salida de compilación de la línea de comandos, e impiden que las compilaciones se lleven a cabo.| El código infractor se subraya con un subrayado ondulado de color rojo y se marca con un pequeño cuadro rojo en la barra de desplazamiento. |
+| Advertencia | `warning` | Las infracciones aparecen como *Advertencias* en la Lista de errores y en la salida de compilación de la línea de comandos, pero no impiden que las compilaciones se lleven a cabo. | El código infractor se subraya con un subrayado ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento. |
+| Información | `suggestion` | Las infracciones aparecen como *Mensajes* en la Lista de errores, pero no se incluyen en la salida de compilación de la línea de comandos. | El código infractor se subraya con un subrayado ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento. |
+| Hidden | `silent` | No es visible para el usuario. | No es visible para el usuario, pero el diagnóstico se notifica al motor de diagnóstico del IDE. |
+| Ninguno | `none` | Se suprime por completo. | Se suprime por completo. |
+| Default | `default` | Corresponde a la gravedad predeterminada de la regla. Para averiguar cuál es el valor predeterminado de una regla, consulte la ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
 
 Si un analizador detecta infracciones de reglas, se notifican en el editor de código (como un *subrayado ondulado* bajo el código infractor) y en la ventana Lista de errores.
 
-Las infracciones del analizador que se indican en la lista de errores coinciden con la [configuración de nivel de gravedad](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) de la regla. Las infracciones del analizador también se muestran en el editor de código como líneas onduladas bajo el código infractor. En la imagen siguiente se muestran tres infracciones &mdash; un error (rojo ondulado), una advertencia (línea ondulada verde) y una sugerencia (tres puntos grises):
+Las infracciones de analizadores informadas en la lista de errores coincide con el [valor del nivel de gravedad](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) de la regla. Las infracciones de analizadores también se muestran en el editor de código como subrayados ondulados debajo del código infractor. En la imagen siguiente se muestran tres infracciones&mdash;un error (subrayado ondulado rojo), una advertencia (subrayado ondulado verde) y una sugerencia (tres puntos grises):
 
 ![Subrayados ondulados en el editor de código en Visual Studio](media/diagnostics-severity-colors.png)
 
@@ -57,7 +57,7 @@ En la captura de pantalla siguiente se muestran las tres infracciones que aparec
 
 ![Infracción de error, advertencia e información en Lista de errores](media/diagnostics-severities-in-error-list.png)
 
-Muchas reglas del analizador, o *diagnósticos*, tienen una o varias *correcciones de código* asociadas que se pueden aplicar para corregir la infracción de la regla. Las correcciones de código se muestran en el menú del icono de bombilla junto con otros tipos de [Acciones rápidas](../ide/quick-actions.md). Para obtener información sobre estas correcciones de código, vea [Acciones rápidas comunes](../ide/quick-actions.md).
+Muchas reglas de los analizadores, o *diagnósticos*, tienen una o más *correcciones de código* asociadas que se pueden aplicar para corregir la infracción de la regla. Las correcciones de código se muestran en el menú del icono de bombilla junto con otros tipos de [Acciones rápidas](../ide/quick-actions.md). Para obtener información sobre estas correcciones de código, vea [Acciones rápidas comunes](../ide/quick-actions.md).
 
 ![Infracción de analizador y corrección de código de Acción rápida](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -102,7 +102,7 @@ Si tiene varias entradas que son aplicables a un ID. de regla específico, el or
 - La entrada de gravedad de una regla individual por identificador tiene prioridad sobre la entrada de gravedad de una categoría.
 - La entrada de gravedad de una categoría tiene prioridad sobre la entrada de gravedad para todas las reglas del analizador.
 
-Considere el siguiente ejemplo de EditorConfig, donde [CA1822](./ca1822.md) tiene la categoría "performance":
+Considere el siguiente ejemplo de EditorConfig, donde [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) tiene la categoría "performance":
 
    ```ini
    [*.cs]
@@ -117,7 +117,7 @@ En el ejemplo anterior, las tres entradas se aplican a CA1822. Sin embargo, con 
 
 1. Si aún no tiene un archivo EditorConfig para el proyecto, [agregue uno](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Agregue una entrada para cada regla que desee configurar en la extensión de archivo correspondiente. Por ejemplo, para establecer la gravedad de [CA1822](ca1822.md) en `error` para los archivos de C#, la entrada tiene el siguiente aspecto:
+2. Agregue una entrada para cada regla que desee configurar en la extensión de archivo correspondiente. Por ejemplo, para establecer la gravedad de [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) en `error` para los archivos de C#, la entrada tiene el siguiente aspecto:
 
    ```ini
    [*.cs]
@@ -125,7 +125,7 @@ En el ejemplo anterior, las tres entradas se aplican a CA1822. Sin embargo, con 
    ```
 
 > [!NOTE]
-> En el caso de los analizadores de estilo de código IDE, también puede configurarlos en un archivo EditorConfig con una sintaxis diferente, por ejemplo, `dotnet_style_qualification_for_field = false:suggestion` . Sin embargo, si establece una gravedad mediante la `dotnet_diagnostic` sintaxis, tendrá prioridad. Para obtener más información, vea [convenciones de lenguaje para EditorConfig](../ide/editorconfig-language-conventions.md).
+> En el caso de los analizadores de estilo de código IDE, también puede configurarlos en un archivo EditorConfig con una sintaxis diferente, por ejemplo, `dotnet_style_qualification_for_field = false:suggestion` . Sin embargo, si establece una gravedad mediante la `dotnet_diagnostic` sintaxis, tendrá prioridad. Para obtener más información, vea [convenciones de lenguaje para EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules).
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>Establecer la gravedad de la regla desde el menú de bombilla
 
