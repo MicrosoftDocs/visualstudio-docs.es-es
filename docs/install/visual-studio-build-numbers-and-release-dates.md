@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/22/2020
+ms.date: 09/29/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6e7298a920a970205d336e1db792c7becbf89aec
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
+ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005256"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91544805"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,8 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Versión preliminar 3.2 | 29 de septiembre de 2020 | 16.8.30524.135 |
+| 16.7.5 | Release | 29 de septiembre de 2020 |  16.7.30523.141 |
 | 16.8.0 | Versión preliminar 3.1 | 22 de septiembre de 2020 | 16.8.30516.212 |
 | 16.7.4 | Release | 21 de septiembre de 2020 | 16.7.30517.126 |
 | 16.8.0 | Versión preliminar 3 | 14 de septiembre de 2020 | 16.8.30509.190 |
@@ -166,7 +168,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 | 16.0.0 | Versión preliminar 1 | 4 de diciembre de 2018 | 16.0.28329.73 |
 
 > [!NOTE]
-> Para obtener una lista de los números de compilación y las fechas de publicación de la versión anterior, consulte [Números de compilación y fechas de lanzamiento de Visual Studio 2017](visual-studio-build-numbers-and-release-dates.md?view=vs-2017).
+> Para obtener una lista de los números de compilación y las fechas de publicación de la versión anterior, consulte [Números de compilación y fechas de lanzamiento de Visual Studio 2017](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true).
 
 ::: moniker-end
 
@@ -350,7 +352,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.0.0 | Release | 7 de marzo de 2017 | 15.0.26228.4 |
 
 > [!NOTE]
-> Para más información sobre los números de compilación y las fechas de lanzamiento de la versión siguiente de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019).
+> Para más información sobre los números de compilación y las fechas de lanzamiento de la versión siguiente de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true).
 
 ::: moniker-end
 

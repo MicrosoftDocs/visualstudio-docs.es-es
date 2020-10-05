@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114989"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135136"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 
@@ -92,11 +92,27 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
 ::: moniker-end
 
-## <a name="error-the-underlying-connection-was-closed"></a>Error: "La conexión subyacente está cerrada"
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>Error: "Desconectado de Visual Studio" al intentar notificar un problema
+
+Por lo general, este error se produce cuando un usuario está conectado a Internet a través de un servidor proxy y este bloquea las llamadas que hace Visual Studio a algunos recursos de red.
+
+### <a name="to-fix-this-proxy-error"></a>Para corregir este error de proxy
+
+1. Busque **feedback.exe.config** (el archivo de configuración feedback.exe) en: **%ProgramFiles(x86)%\Microsoft Visual Studio\Installer** o **%ProgramFiles%\Microsoft Visual Studio\Installer**.
+
+2. En el archivo de configuración, compruebe si el siguiente código está presente; si el código no está presente, agréguelo antes de la última línea de `</configuration>`.
+
+   ```xml
+   <system.net>
+       <defaultProxy useDefaultCredentials="true" />
+   </system.net>
+   ```
+
+## <a name="error-the-underlying-connection-was-closed"></a>Error: La conexión subyacente está cerrada
 
 Si usa Visual Studio en una red privada que tiene un firewall, es posible que Visual Studio no pueda conectarse a algunos recursos de red. Estos recursos pueden incluir Azure DevOps Services para el inicio de sesión y la concesión de licencias, NuGet y los servicios de Azure. Si se produce un error en Visual Studio al conectarse a uno de estos recursos, verá el mensaje de error siguiente:
 
-  **La conexión subyacente está cerrada: se ha producido un error inesperado en el envío**
+  **Se ha terminado la conexión: An unexpected error occurred on send** (Se ha producido un error inesperado en el envío)
 
 Visual Studio usa el protocolo de Seguridad de la capa de transporte (TLS) 1.2 para conectarse a recursos de red. Los dispositivos de seguridad de algunas redes privadas bloquean ciertas conexiones de servidor cuando Visual Studio usa TLS 1.2.
 
@@ -148,8 +164,8 @@ Puede usar el comando `net use` o cambiar la configuración de directiva de grup
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-* [Instalación y uso de Visual Studio detrás de un firewall o servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+* [Instalar y usar Visual Studio detrás de un firewall o servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
-* [Instalar Visual Studio](install-visual-studio.md)
+* [Instalación de Visual Studio](install-visual-studio.md)

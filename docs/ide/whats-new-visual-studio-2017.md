@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809523"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352182"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -104,7 +104,7 @@ Para ver una lista de las extensiones de Visual Studio, haga clic en **Herramien
 
 Roaming Extension Manager realiza un seguimiento de todas las extensiones que instale, pero puede decidir las que quiere agregar a la lista de itinerancia.
 
-![Visual Studio 2017: Cuadro de diálogo Extensiones y actualizaciones](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017: Roaming Extensions Manager](media/vs2017ide-RoamingExtensionManager.png)
 
 Cuando use Roaming Extension Manager, verá tres tipos de icono en la lista:
 
@@ -222,7 +222,7 @@ Para obtener más información, vea la publicación del blog [Use the New Except
 
 Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de **depuración**. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
 
-![Cuadro de diálogo Nuevo asistente de excepciones en Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
+![Ejemplo de step-back de IntelliTrace en Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
 
 Para más información, consulte la página [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/view-historical-application-state.md).
 

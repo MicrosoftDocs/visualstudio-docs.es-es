@@ -1,17 +1,17 @@
 ---
 title: Deshabilitación del reconocimiento de PPP en Visual Studio
 description: Aquí se describen las limitaciones del Diseñador de Windows Forms en monitores HDPI y el procedimiento para ejecutar Visual Studio como un proceso sin reconocimiento de PPP.
-ms.date: 04/05/2019
+ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
+ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249972"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91493314"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Deshabilitación del reconocimiento de PPP en Visual Studio
 
@@ -43,6 +43,9 @@ Existen tres opciones para resolver el problema de visualización:
 - [Reiniciar Visual Studio como un proceso sin reconocimiento de PPP](#restart-visual-studio-as-a-dpi-unaware-process)
 - [Agregar una entrada del Registro](#add-a-registry-entry)
 - [Establecer la configuración de ajuste de pantalla en el 100 %](#set-your-display-scaling-setting-to-100)
+
+> [!TIP]
+> Si prefiere administrar la configuración desde la línea de comandos, [`devenv.exe`](../ide/reference/devenv-command-line-switches.md) toma `/noscale` como parámetro de la línea de comandos para ejecutarse en el modo de escala del 100 %.
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>Reiniciar Visual Studio como un proceso sin reconocimiento de PPP
 
