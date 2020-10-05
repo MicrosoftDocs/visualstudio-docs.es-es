@@ -20,6 +20,8 @@
       href: walkthrough-binding-to-data-in-xaml-designer.md
     - name: Depuración o desactivación del código de proyecto
       href: debugging-or-disabling-project-code-in-xaml-designer.md
+    - name: Datos en tiempo de diseño de XAML
+      href: xaml-designtime-data.md
     - name: Blend para Visual Studio
       items:
         - name: Información general
