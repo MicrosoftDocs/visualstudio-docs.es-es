@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509944"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658417"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guía de productividad de Visual Studio para desarrolladores de C#
 
@@ -101,7 +101,7 @@ Puede usar un archivo Editorconfig para codificar las convenciones de codificaci
 
    ![Configuración del nivel de gravedad de una regla de estilo de código directamente en el editor](../ide/media/configure-severity-level.png)
 
-Consulte las documentación de las [opciones de convención de codificación de .NET](editorconfig-code-style-settings-reference.md), que también contiene un ejemplo de un archivo EditorConfig completo.
+Consulte las documentación de las [opciones de convención de codificación de .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options), que también contiene un ejemplo de un archivo EditorConfig completo.
 
 ::: moniker range=">=vs-2019"
 

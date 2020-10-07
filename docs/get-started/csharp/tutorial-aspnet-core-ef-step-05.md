@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248667"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780956"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Paso 5: Implementación de la aplicación de ASP.NET Core en Azure
 
@@ -111,4 +111,4 @@ Obtenga más información sobre cómo diseñar aplicaciones de ASP.NET Core con 
 
 ## <a name="see-also"></a>Consulte también
 
-- [Publicar una aplicación de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)
+- [Publicar una aplicación de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2&preserve-view=true)

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739907"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781032"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Administrar paquetes de npm en Visual Studio
 
@@ -126,7 +126,7 @@ En el caso de proyectos como los de ASP.NET Core, se puede integrar la compatibi
 * [Instalación de paquetes mediante package.json](#npmInstallPackage)
 
 >[!NOTE]
-> En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
+> En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a>Incorporación de compatibilidad con npm a un proyecto (ASP.NET Core)
 

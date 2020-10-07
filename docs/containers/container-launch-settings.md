@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247980"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780868"
 ---
 # <a name="container-tools-launch-settings"></a>Configuración de inicio de las herramientas de contenedor
 
-En la carpeta *Properties* de un proyecto de ASP.NET Core, encontrará el archivo launchSettings.json, que contiene la configuración que controla el modo en que se inicia la aplicación web en el equipo de desarrollo. Para obtener información detallada sobre cómo se usa este archivo en el desarrollo de ASP.NET, vea [Usar varios entornos en ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). En *launchSettings.json*, los valores de la sección **Docker** están relacionados con la forma en que Visual Studio controla las aplicaciones en contenedores.
+En la carpeta *Properties* de un proyecto de ASP.NET Core, encontrará el archivo launchSettings.json, que contiene la configuración que controla el modo en que se inicia la aplicación web en el equipo de desarrollo. Para obtener información detallada sobre cómo se usa este archivo en el desarrollo de ASP.NET, vea [Usar varios entornos en ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true). En *launchSettings.json*, los valores de la sección **Docker** están relacionados con la forma en que Visual Studio controla las aplicaciones en contenedores.
 
 ::: moniker range="vs-2017"
 

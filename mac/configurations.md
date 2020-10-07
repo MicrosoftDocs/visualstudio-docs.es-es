@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128399"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584027"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 
 Se pueden almacenar diferentes configuraciones de propiedades de solución y de proyecto para usar en distintos tipos de compilaciones durante el proceso de desarrollo. Los proyectos que se crean con Visual Studio para Mac mediante una plantilla suelen incluir configuraciones de depuración y lanzamiento que admiten la depuración y la implementación de una aplicación, respectivamente. 
 
-Si quiere crear configuraciones personalizadas, consulte [Creación y edición de configuraciones de compilación](/visualstudio/mac/create-and-edit-configurations).
+Si quiere crear configuraciones personalizadas, consulte [Creación y edición de configuraciones de compilación](./create-and-edit-configurations.md).
 
 >[!NOTE]
 >Este tema se aplica a Visual Studio para Mac. Para Visual Studio en Windows, consulte [Descripción de las configuraciones de compilación](/visualstudio/ide/understanding-build-configurations).

@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453698"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781055"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Crear una aplicación ASP.NET Core con TypeScript en Visual Studio
 
-En este tutorial para TypeScript y ASP.NET Core de desarrollo de Visual Studio, creará una aplicación web sencilla, agregará código de TypeScript y, a continuación, ejecutará la aplicación. 
+En este tutorial para TypeScript y ASP.NET Core de desarrollo de Visual Studio, creará una aplicación web sencilla, agregará código de TypeScript y, a continuación, ejecutará la aplicación.
 
 ::: moniker range="vs-2017"
 
@@ -219,7 +219,7 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
 1. Siga las instrucciones de la [administración de paquetes de npm](../javascript/npm-package-management.md#aspnet-core-projects) para agregar un archivo `package.json` al proyecto. Esto agrega compatibilidad con npm al proyecto.
 
    >[!NOTE]
-   > En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
+   > En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
 
 1. En este ejemplo, agregue un archivo de definición de TypeScript para jQuery al proyecto. Incluya lo siguiente en el archivo *package.json*.
 

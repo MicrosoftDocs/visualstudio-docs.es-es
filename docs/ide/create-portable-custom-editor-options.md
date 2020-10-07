@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402262"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659256"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
@@ -68,7 +68,7 @@ El editor de Visual Studio admite el conjunto principal de [propiedades de Edito
 - insert\_final_newline
 - raíz
 
-La configuración del editor EditorConfig se admiten en todos los lenguajes compatibles con Visual Studio excepto XML. Además, EditorConfig admite convenciones de [estilo de código](../ide/editorconfig-code-style-settings-reference.md), como [lenguaje](../ide/editorconfig-language-conventions.md) y [formato](../ide/editorconfig-formatting-conventions.md) y convenciones de [nomenclatura](../ide/editorconfig-naming-conventions.md) para C# y Visual Basic.
+La configuración del editor EditorConfig se admiten en todos los lenguajes compatibles con Visual Studio excepto XML. Además, EditorConfig admite convenciones de [estilo de código](/dotnet/fundamentals/code-analysis/code-style-rule-options), como [lenguaje](/dotnet/fundamentals/code-analysis/style-rules/language-rules) y [formato](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules) y convenciones de [nomenclatura](/dotnet/fundamentals/code-analysis/style-rules/naming-rules) para C# y Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Incorporación y eliminación de los archivos EditorConfig
 
@@ -90,7 +90,7 @@ Si quita un archivo EditorConfig del proyecto o código base y quiere dar format
 
    ![Plantillas de elemento Archivo EditorConfig en Visual Studio](media/editorconfig-item-templates.png)
 
-1. Seleccione la plantilla **Archivo editorconfig (predeterminado)** para agregar un archivo EditorConfig rellenado previamente con dos opciones principales de EditorConfig para el estilo y el tamaño de sangría. O bien, seleccione la plantilla **Archivo editorconfig (.NET)** para agregar un archivo EditorConfig rellenado previamente con los valores predeterminados de [estilo de código. NET, formato y convenciones de nomenclatura](../ide/editorconfig-code-style-settings-reference.md).
+1. Seleccione la plantilla **Archivo editorconfig (predeterminado)** para agregar un archivo EditorConfig rellenado previamente con dos opciones principales de EditorConfig para el estilo y el tamaño de sangría. O bien, seleccione la plantilla **Archivo editorconfig (.NET)** para agregar un archivo EditorConfig rellenado previamente con los valores predeterminados de [estilo de código. NET, formato y convenciones de nomenclatura](/dotnet/fundamentals/code-analysis/code-style-rule-options).
 
    Aparecerá un archivo *.editorconfig* en el Explorador de soluciones y se abrirá en el editor.
 
@@ -180,7 +180,7 @@ Para controlar el ámbito de las convenciones de EditorConfig, establezca la pro
 
 ## <a name="see-also"></a>Vea también
 
-- [Convenciones de estilo de código de .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Convenciones de estilo de código de .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Compatibilidad de EditorConfig con un servicio de lenguaje](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [Características del editor de código](writing-code-in-the-code-and-text-editor.md)

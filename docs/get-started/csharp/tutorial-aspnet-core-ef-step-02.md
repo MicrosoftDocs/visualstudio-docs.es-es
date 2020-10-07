@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580075"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780985"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Paso 2: Creación de la primera aplicación web de ASP.NET Core
 
@@ -100,7 +100,7 @@ Vuelva a ejecutar la aplicación. Debería ver que ahora la página muestra la h
 
 Agregue un punto de interrupción al método `OnGet` donde asignamos un valor a `Time` que es la hora de inicio de la depuración de la aplicación.
 
-La ejecución se detiene en la línea y puede verse que `DateTime.Today` incluye la fecha pero la hora es siempre medianoche porque no incluye datos de hora. 
+La ejecución se detiene en la línea y puede verse que `DateTime.Today` incluye la fecha pero la hora es siempre medianoche porque no incluye datos de hora.
 
 ![Proyecto de ASP.NET Core en Visual Studio 2019 en el explorador](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ En el vídeo siguiente, aprenderá a agregar compatibilidad con datos a la aplic
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Creación de una aplicación web de páginas de Razor con ASP.NETCore](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutorial: Creación de una aplicación web de páginas de Razor con ASP.NETCore](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
