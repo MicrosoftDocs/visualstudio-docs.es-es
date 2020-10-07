@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768616"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781004"
 ---
 # <a name="use-the-task-list"></a>Uso de la lista de tareas
 
@@ -65,7 +65,7 @@ También aparece un comentario en el código precedido de un marcador de comenta
 Dado que `TODO` es un token predefinido, este comentario aparece como una tarea `TODO` en la lista.
 
 > [!NOTE]
-> Los tokens predeterminados solo están disponibles para los lenguajes C/C++, C# y VB. Para otros lenguajes, consulte la sección **Tokens personalizados**.
+> Los tokens predeterminados solo están disponibles para los lenguajes C/C++, C# y VB.
 
 ### <a name="custom-tokens"></a>Tokens personalizados
 
@@ -94,7 +94,7 @@ Para crear un token personalizado:
 
 De manera predeterminada, los comentarios TODO en C++ se muestran en la ventana **Lista de tareas**.
 
-Para desactivar los comentarios TODO en C++, en el menú **Herramientas**, elija **Opciones** > **Editor de texto** > **C/C++**  > **Vista** > **Enumerar tareas de comentario** y establezca el valor en **false**.
+Para desactivar los comentarios TODO en C++, en el menú **Herramientas**, elija **Opciones** > **Editor de texto** > **C/C++** > **Vista** > **Enumerar tareas de comentario** y establezca el valor en **false**.
 
 ## <a name="shortcuts"></a>Accesos directos
 
@@ -108,7 +108,7 @@ Para crear un acceso directo, inserte el puntero donde quiera colocar un acceso 
 
 Para navegar por los accesos directos en el código, elija un acceso directo de la lista y, después, elija **Tarea siguiente** o **Tarea anterior** en el menú contextual.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Comentarios de tareas (Visual Studio para Mac)](/visualstudio/mac/task-comments)
