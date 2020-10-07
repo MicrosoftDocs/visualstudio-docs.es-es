@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113772"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659360"
 ---
 # <a name="code-analysis-project-designer"></a>Análisis de código, Diseñador de proyectos
 
@@ -64,6 +64,6 @@ Habilita o deshabilita las reglas de uso. También puede expandir esta entrada p
 
 ## <a name="see-also"></a>Vea también
 
-- [Análisis de código de las advertencias de código administrado](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Análisis de código de las advertencias de código administrado](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [Introducción al análisis de código para código administrado](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [Tutorial: Analizar código administrado en previsión de defectos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
