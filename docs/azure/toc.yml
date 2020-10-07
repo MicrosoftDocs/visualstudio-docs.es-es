@@ -5,13 +5,13 @@
   expanded: true
   items:
     - name: Implementación de una aplicación ASP.NET Core en Azure
-      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
+      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1&preserve-view=true
     - name: Implementación de una aplicación web de lista de tareas .NET en Azure
-      href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet
+      href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet&preserve-view=true
     - name: Implementación continua en Azure con Visual Studio y Git con ASP.NET Core
-      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
+      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1&preserve-view=true
     - name: Implementación continua en Azure con Azure Pipelines
-      href: /azure/devops/pipelines/get-started-yaml?view=vsts
+      href: /azure/devops/pipelines/get-started-yaml?view=vsts&preserve-view=true
     - name: Implementación de una aplicación web ASP.NET en una máquina virtual de Azure
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Conexión a los servicios de Azure
