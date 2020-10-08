@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a0a5664b4c22aa8a31ab4f0f620c14b4aeadc50
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442515"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838484"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vistas de datos del método de muestreo del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63442515"
 Esta sección contiene información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de muestreo.  
   
 > [!NOTE]
-> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Vista Resumen](../profiling/summary-view-sampling-data.md)  
@@ -37,7 +37,7 @@ Esta sección contiene información de referencia para las vistas y los informes
  [Vista Módulos](../profiling/modules-view-sampling-data.md)  
  Organiza los datos de generación de perfiles por módulo y enumera las funciones, líneas de código fuente e instrucciones que se estaban ejecutando cuando se recopilaron las muestras.  
   
- [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)  
+ [Vista llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)  
  Muestra datos de generación de perfiles de una función seleccionada y de las funciones a las que llamó y que llamaron a la función seleccionada.  
   
  [Vista Funciones](../profiling/functions-view-sampling-data.md)  
@@ -66,5 +66,5 @@ Esta sección contiene información de referencia para las vistas y los informes
  [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)  
  Información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que incluyen datos de memoria de .NET.  
   
-## <a name="see-also"></a>Vea también  
- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)
+## <a name="see-also"></a>Consulte también  
+ [Descripción de los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)

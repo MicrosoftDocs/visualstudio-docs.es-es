@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Buscar un subproceso en la vista subprocesos | Documentos de Microsoft
+title: Procedimiento Búsqueda de un subproceso en la vista Subprocesos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,34 +12,34 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64827355"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838481"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Procedimiento Búsqueda de un subproceso en la vista Subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede buscar un subproceso concreto en la vista de subprocesos mediante el uso de su cadena de identificador o el módulo del subproceso como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo mostrará los atributos del subproceso seleccionado en el árbol de subproceso.  
+Para buscar un subproceso específico en la vista Subprocesos, utilice su id. de subproceso o cadena de módulo como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. En los campos del cuadro de diálogo se mostrarán los atributos del subproceso seleccionado en el árbol de subprocesos.  
   
-### <a name="to-search-for-a-thread-in-threads-view"></a>Para buscar un subproceso en la vista de subprocesos  
+### <a name="to-search-for-a-thread-in-threads-view"></a>Para buscar un subproceso en la vista Subprocesos  
   
-1. Organizar las ventanas por lo que ese Spy ++ y un activo [vista de subprocesos](../debugger/threads-view.md) ventana están visibles.  
+1. Organice las ventanas para que se vean la ventana de Spy++ y una ventana activa de la [vista Subprocesos](../debugger/threads-view.md).  
   
-2. Desde el **búsqueda** menú, elija **Buscar subproceso**.  
+2. En el menú **Buscar**, seleccione **Buscar subproceso**.  
   
-    El [cuadro de diálogo Buscar subproceso](../debugger/thread-search-dialog-box.md) se abre.  
+    Se abrirá el [cuadro de diálogo Buscar subproceso](../debugger/thread-search-dialog-box.md).  
   
-3. Escriba el identificador de subproceso o una cadena de módulo como criterios de búsqueda.  
+3. Escriba el id. de subproceso o una cadena de módulo como criterios de búsqueda.  
   
-4. Borrar todos los campos que no desea especificar los valores.  
+4. Borre los campos en los que no quiera especificar ningún valor.  
   
    > [!TIP]
-   > Para buscar todos los subprocesos que pertenecen a un módulo, desactive la **subprocesos** nombre de cuadro de texto y el tipo del módulo en el **módulo** cuadro. A continuación, usar **Buscar siguiente** para continuar la búsqueda de subprocesos.  
+   > Para buscar todos los subprocesos que pertenecen a un módulo, desactive el cuadro de texto **Subproceso** y escriba el nombre del módulo en el cuadro **Módulo**. A continuación, use **Buscar siguiente** para seguir buscando subprocesos.  
   
-5. Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.  
+5. Seleccione **Arriba** o **Abajo** para determinar la dirección inicial de la búsqueda.  
   
-6. Haga clic en **OK**.  
+6. Haga clic en **Aceptar**.  
   
-   Si se encuentra un subproceso coincidente, éste se resalta en la ventana de vista de subprocesos.
+   Si se encuentra un subproceso coincidente, se resaltará en la ventana de la vista Ventanas.
