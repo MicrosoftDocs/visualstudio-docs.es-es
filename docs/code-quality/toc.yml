@@ -14,7 +14,20 @@
             - name: Información general
               href: use-roslyn-analyzers.md
             - name: Calidad del código
-              href: /dotnet/fundamentals/code-analysis/code-quality-rule-options
+              items:
+                - name: Opciones de calidad del código
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Uso de archivos EditorConfig para la calidad del código
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+            - name: Estilo del código
+              items:
+                - name: Preferencias de estilo del código
+                  href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Usar archivos EditorConfig para el estilo de código
+                  displayName: Configure code style analyzers
+                  href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Opciones de la regla
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
             - name: Configuración del análisis de código dinámico
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Ejecutar análisis de código manualmente
@@ -434,3 +447,11 @@
           href: how-to-generate-code-metrics-data.md
         - name: Trabajo con datos de las métricas de código
           href: working-with-code-metrics-data.md
+- name: Análisis de código de C++
+  items:
+    - name: Análisis del código de C y C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - name: Convenciones de formato de EditorConfig
+      href: ../ide/cpp-editorconfig-properties.md
+    - name: Advertencias de análisis de código de C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-warnings

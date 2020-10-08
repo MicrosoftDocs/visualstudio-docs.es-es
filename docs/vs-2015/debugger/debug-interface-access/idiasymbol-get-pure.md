@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a7b95816ac594025b43487aecca8ca9ffe7a6e41
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803584"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838201"
 ---
-# <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
+# <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una marca que especifica si la función es pura virtual.  
+Recupera una marca que especifica si la función es virtual pura.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,13 +35,13 @@ HRESULT get_pure ( 
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si la función pura virtual; en caso contrario, devuelve `FALSE`.  
+ enuncia Devuelve `TRUE` si la función es virtual pura; de lo contrario, devuelve `FALSE` .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
