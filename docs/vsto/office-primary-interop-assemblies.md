@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985711"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830763"
 ---
 # <a name="office-primary-interop-assemblies"></a>ensamblados de interoperabilidad primarios de Office
 
@@ -100,15 +100,15 @@ En la tabla siguiente se enumeran los ensamblados de interoperabilidad primarios
 |-------------------------------------|-----------------------------------|
 |Biblioteca de objetos de Microsoft Access 14.0<br /><br /> Biblioteca de objetos de Microsoft Access 15.0|Microsoft.Office.Interop.Access.dll|
 |Biblioteca de objetos del motor de base de datos de Access de Microsoft Office 14.0<br /><br /> Biblioteca de objetos del motor de base de datos de Access de Microsoft Office 15.0|Microsoft.Office.Interop.Access.Dao.dll|
-|Biblioteca de objetos de Microsoft Excel 14.0<br /><br /> Biblioteca de objetos de Microsoft Excel 15.0|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Biblioteca de objetos de Microsoft Excel 14.0<br /><br /> Biblioteca de objetos de Microsoft Excel 15.0|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia&preserve-view=true)|
 |Biblioteca de objetos de Microsoft Graph 14.0 (usada por PowerPoint, Access y Word para gráficos)<br /><br /> Biblioteca de objetos de Microsoft Graph 15.0|Microsoft.Office.Interop.Graph.dll|
-|Biblioteca de tipos de Microsoft InfoPath 2.0 (solo para InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Biblioteca de tipos de Microsoft InfoPath 2.0 (solo para InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form&preserve-view=true)|
 |Ensamblado de interoperabilidad XML de Microsoft InfoPath (solo para InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Biblioteca de objetos de Microsoft Office 14.0 (funcionalidad compartida de Office)<br /><br /> Biblioteca de objetos de Microsoft Office 15.0 (funcionalidad compartida de Office)|office.dll|
 |Control de vistas de Microsoft Office Outlook (se puede usar en páginas web y aplicaciones para tener acceso a la Bandeja de entrada)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Biblioteca de objetos de Microsoft Outlook 14.0<br /><br /> Biblioteca de objetos de Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Biblioteca de objetos de Microsoft Outlook 14.0<br /><br /> Biblioteca de objetos de Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia&preserve-view=true)|
 |Biblioteca de objetos de Microsoft PowerPoint 14.0<br /><br /> Biblioteca de objetos de Microsoft PowerPoint 15.0|Microsoft.Office.Interop.PowerPoint.dll|
-|Biblioteca de objetos de Microsoft Project 14.0<br /><br /> Biblioteca de objetos de Microsoft Project 15.0|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Biblioteca de objetos de Microsoft Project 14.0<br /><br /> Biblioteca de objetos de Microsoft Project 15.0|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server&preserve-view=true)|
 |Biblioteca de objetos de Microsoft Publisher 14.0<br /><br /> Biblioteca de objetos de Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|
 |Biblioteca de referencia de objetos web de Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Biblioteca de referencia de objetos de página de Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
@@ -116,7 +116,7 @@ En la tabla siguiente se enumeran los ensamblados de interoperabilidad primarios
 |Biblioteca de tipos de Microsoft Visio 14.0<br /><br /> Biblioteca de tipos de Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|
 |Biblioteca de tipos Guardar como web de Microsoft Visio 14.0<br /><br /> Biblioteca de tipos Guardar como web de Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Biblioteca de tipos de control de dibujo de Microsoft Visio 14.0<br /><br /> Biblioteca de tipos de control de dibujo de Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|
-|Biblioteca de objetos de Microsoft Word 14.0<br /><br /> Biblioteca de objetos de Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Biblioteca de objetos de Microsoft Word 14.0<br /><br /> Biblioteca de objetos de Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia&preserve-view=true)|
 |Extensibilidad de Microsoft Visual Basic para Aplicaciones 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>Enlazar ensamblados de redirección
@@ -127,11 +127,11 @@ Por ejemplo, cuando una solución que hace referencia a un ensamblado de [!INCLU
 
 Para obtener más información, vea [Cómo: habilitar y deshabilitar la redirección de enlace automática](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: dirigirse a aplicaciones de Office a través de ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Información general del modelo de objetos de Excel](../vsto/excel-object-model-overview.md)
-- [soluciones de InfoPath](../vsto/infopath-solutions.md)
+- [Soluciones de InfoPath](../vsto/infopath-solutions.md)
 - [Información general del modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)
 - [Soluciones de PowerPoint](../vsto/powerpoint-solutions.md)
 - [Soluciones de proyecto](../vsto/project-solutions.md)
