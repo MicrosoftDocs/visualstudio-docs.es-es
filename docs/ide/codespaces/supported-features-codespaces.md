@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862488"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749510"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Características de Visual Studio compatibles (Preview)
 
@@ -42,15 +42,15 @@ Observará poca diferencia en la edición de código fuente en un codespace a me
 * Resalte de sintaxis
 * Información rápida*
 * Editores de HTML, CSS, Razor*: compatibilidad parcial.
-* Editor de JavaScript*: compatibilidad parcial.
+* Editor de JavaScript y TypeScript*: compatibilidad parcial.
 
 No disponible aún:
 
 * IntelliSense*: algunos de los filtros de finalización automática/lista de miembros no están disponibles. La finalización de tipos no importados e IntelliSense en la ventana de inspección todavía no está disponible.
-* Navegación por el código*: se admite la mayoría de los comandos, en concreto, Ir a base y Buscar en archivos con una especificación de ruta de acceso que todavía no se admite.
+* Navegación de código*: compatibilidad con la mayoría de los comandos. Ir a base y Buscar en archivos con la especificación de ruta de acceso todavía no son compatibles.
 * Información rápida*: no se admite la coloración de información rápida.
 * Editores de HTML, CSS, Razor*: diagnósticos, finalización de IntelliSense, información rápida, sangría inteligente. Actualmente no se admite coloración semántica, comandos de navegación, etc.
-* Editor de JavaScript*: aún no se admiten bloques de scripts (por ejemplo, contenido de JavaScript en archivos HTML y CSHTML) ni resaltado semántico. Problemas conocidos de características de bombilla y linting.
+* Editor de JavaScript y TypeScript*: aún no se admiten bloques de scripts (por ejemplo, contenido de JavaScript en archivos HTML y CSHTML) ni resaltado semántico. Problemas conocidos de características de bombilla y linting.
 * Vista de destinos de CMake
 * Editor de configuración del proyecto de CMake
 * Ctrl+F7 (compilar archivo)
@@ -72,7 +72,7 @@ Se admite la mayoría de los tipos de aplicación y las configuraciones de proye
 
 No disponible aún:
 
-* Diseñadores de UI: diseñadores de WinForms y WPF
+* Diseñadores de interfaz de usuario: WinForms, WPF y diseñadores de recursos.
 * Proyectos de Visual Basic y F#
 * Proyectos destinados a .NET Framework
 * Proyectos de Docker Compose

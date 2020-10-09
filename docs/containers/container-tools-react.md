@@ -3,17 +3,17 @@ title: Herramientas de contenedor de Visual Studio con ASP.NET Core y React.js
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 author: ghogen
-description: Obtenga información sobre cómo usar las herramientas de contenedor de Visual Studio y Docker para Windows
+description: Aprenda a crear una aplicación de React SPA en contenedor con herramientas de contenedor de Visual Studio y Docker
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 45dc1f16f1655c5c738804a1c4e0093dd9c8b1f8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 783d7a116dbdf530008c3271d38d15f7db3c3c98
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036332"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91750763"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Inicio rápido: Uso de Docker con una aplicación de página única de React en Visual Studio
 
@@ -31,7 +31,7 @@ Con Visual Studio, es muy fácil compilar, depurar y ejecutar aplicaciones ASP.
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
-* [Herramientas de desarrollo de .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para el desarrollo con .NET Core 2.2
+* [Herramientas de desarrollo de .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) para el desarrollo con .NET Core 3.1.
 * Para publicar en Azure Container Registry, una suscripción de Azure. [Regístrese para obtener una evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
 * Para los contenedores de Windows, Windows 10 versión 1903 o posterior, para usar las imágenes de Docker a las que se hace referencia en este artículo.
@@ -47,11 +47,11 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 1. Cree un nuevo proyecto con la plantilla **Aplicación web ASP.NET Core**.
 1. Seleccione **React.js**. No puede seleccionar **Habilitar compatibilidad con Docker**, pero no se preocupe, puede agregar esa compatibilidad después de crear el proyecto.
 
-   ![Captura de pantalla del nuevo proyecto React.js](media/container-tools-react/vs2017/new-react-project.png)
+   ![Captura de pantalla del nuevo proyecto React.js](media/container-tools-react/vs-2017/new-react-project.png)
 
 1. Haga clic con el botón derecho en el nodo del proyecto y elija **Agregar**>**Compatibilidad con Docker** para agregar un archivo Dockerfile al proyecto.
 
-   ![Adición de compatibilidad con Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Adición de compatibilidad con Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
 1. Seleccione el tipo de contenedor y haga clic en **Aceptar**.
 ::: moniker-end
@@ -59,11 +59,11 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 1. Cree un nuevo proyecto con la plantilla **Aplicación web ASP.NET Core**.
 1. Seleccione **React.js**y haga clic en **Crear**. No puede seleccionar **Habilitar compatibilidad con Docker**, pero no se preocupe, puede agregar esa compatibilidad más adelante.
 
-   ![Captura de pantalla del nuevo proyecto React.js](media/container-tools-react/vs2019/new-react-project.png)
+   ![Captura de pantalla del nuevo proyecto React.js](media/container-tools-react/vs-2019/new-react-project.png)
 
 1. Haga clic con el botón derecho en el nodo del proyecto y elija **Agregar**>**Compatibilidad con Docker** para agregar un archivo Dockerfile al proyecto.
 
-   ![Adición de compatibilidad con Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Adición de compatibilidad con Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
 1. Seleccione el tipo de contenedor.
 ::: moniker-end
@@ -84,30 +84,32 @@ RUN apt-get install -y nodejs
 El archivo *Dockerfile* debería tener ahora un aspecto similar al siguiente:
 
 ```Dockerfile
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
-EXPOSE 80 
+EXPOSE 80
 EXPOSE 443
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
-FROM microsoft/dotnet:2.2-sdk-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
-COPY ["WebApplication37/WebApplication37.csproj", "WebApplication37/"]
-RUN dotnet restore "WebApplication37/WebApplication37.csproj"
+COPY ["WebApplication-ReactSPA/WebApplication-ReactSPA.csproj", "WebApplication-ReactSPA/"]
+RUN dotnet restore "WebApplication-ReactSPA/WebApplication-ReactSPA.csproj"
 COPY . .
-WORKDIR "/src/WebApplication37"
-RUN dotnet build "WebApplication37.csproj" -c Release -o /app
+WORKDIR "/src/WebApplication-ReactSPA"
+RUN dotnet build "WebApplication-ReactSPA.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WebApplication37.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication-ReactSPA.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 ```
 
 El elemento *Dockerfile* anterior se basa en la imagen [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e incluye instrucciones para modificar la imagen base mediante la creación del proyecto y la adición al contenedor.
@@ -155,13 +157,13 @@ Actualice Dockerfile agregando las líneas siguientes. Esta acción copiará nod
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
-      FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
+      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
       WORKDIR /app
       EXPOSE 80
       EXPOSE 443
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
 
-      FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1903 AS build
+      FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
       COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
@@ -190,10 +192,10 @@ La opción **Herramientas de contenedor** de la ventana **Salida** muestra las a
 El explorador muestra la página principal de la aplicación.
 
 ::: moniker range="vs-2017"
-   ![Captura de pantalla de la aplicación en ejecución](media/container-tools-react/vs2017/running-app.png)
+   ![Captura de pantalla de la aplicación en ejecución](media/container-tools-react/vs-2017/running-app.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-   ![Captura de pantalla de la aplicación en ejecución](media/container-tools-react/vs2019/running-app.png)
+   ![Captura de pantalla de la aplicación en ejecución](media/container-tools-react/vs-2019/running-app.png)
 ::: moniker-end
 
 Intente navegar a la página *Contador* y pruebe el código del lado cliente para el contador haciendo clic en el botón **Incremento**.
@@ -222,9 +224,11 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 
 Una vez completado el ciclo de desarrollo y depuración de la aplicación, puede crear una imagen de producción de la aplicación.
 
+:::moniker range="vs-2017"
+
 1. Cambie la lista desplegable de configuración a **Versión** y compile la aplicación.
 1. Haga clic con el botón derecho en el **Explorador de soluciones** y elija **Publicar**.
-1. En el cuadro de diálogo de destino de publicación, seleccione la pestaña **Container Registry**.
+1. En el cuadro de diálogo de destino de publicación, seleccione **Container Registry**.
 1. Elija **Crear una instancia de Azure Container Registry** y haga clic en **Publicar**.
 1. Rellene los valores deseados en el **Create a new Azure Container Registry** (Crear una nueva instancia de Azure Container Registry).
 
@@ -236,11 +240,48 @@ Una vez completado el ciclo de desarrollo y depuración de la aplicación, puede
     | **[SKU](/azure/container-registry/container-registry-skus)** | Estándar | Nivel de servicio del registro de contenedor  |
     | **Ubicación del registro** | Una ubicación cercana a usted | Elija una ubicación en una [región](https://azure.microsoft.com/regions/) cercana a usted o a otros servicios que usarán el registro de contenedor. |
 
-    ![Cuadro de diálogo Crear Azure Container Registry de Visual Studio][0]
+    ![Cuadro de diálogo Crear Azure Container Registry de Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
-1. Haga clic en **Crear**.
+1. Seleccione **Crear**.
 
    ![Captura de pantalla que muestra la publicación correcta](media/container-tools/publish-succeeded.png)
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+1. Cambie la lista desplegable de configuración a **Versión** y compile la aplicación.
+1. Haga clic con el botón derecho en el **Explorador de soluciones** y elija **Publicar**.
+1. En el cuadro de diálogo de destino de publicación, seleccione **Container Registry para Docker**.
+
+   ![Elija Container Registry para Docker.](media/container-tools-react/vs-2019/publish-dialog1.png)
+
+1. Después, elija **Azure Container Registry**.
+
+   ![Elija Azure Container Registry.](media/container-tools-react/vs-2019/publish-dialog-acr.png)
+
+1. Elija **Crear una instancia de Azure Container Registry**.
+1. Rellene los valores deseados en la pantalla **Crear una instancia de Azure Container Registry**.
+
+    | Parámetro      | Valor sugerido  | Descripción                                |
+    | ------------ |  ------- | -------------------------------------------------- |
+    | **Prefijo de DNS** | Nombre único globalmente | Nombre que identifica de forma única el nuevo registro de contenedor. |
+    | **Suscripción** | Elija una suscripción | La suscripción de Azure que se va a usar. |
+    | **[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nombre del grupo de recursos en el que se va a crear el registro de contenedor. Elija **Nuevo** para crear un grupo de recursos nuevo.|
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Estándar | Nivel de servicio del registro de contenedor  |
+    | **Ubicación del registro** | Una ubicación cercana a usted | Elija una ubicación en una [región](https://azure.microsoft.com/regions/) cercana a usted o a otros servicios que usarán el registro de contenedor. |
+
+    ![Cuadro de diálogo Crear Azure Container Registry de Visual Studio](media/container-tools-react/vs-2019/azure-container-registry-details.png)
+
+1. Seleccione **Crear** y, después, **Finalizar**.
+
+   ![Seleccionar o crear una nueva instancia de ACR](media/container-tools-react/vs-2019/publish-dialog2.png)
+
+   Una vez finalizado el proceso de publicación, puede revisar la configuración de publicación y editarla, si es necesario, o bien volver a publicar la imagen con el botón **Publicar**.
+
+   ![Captura de pantalla que muestra la publicación correcta](media/container-tools-react/vs-2019/publish-finished.png)
+
+   Para volver a empezar mediante el cuadro de diálogo **Publicar**, elimine el perfil de publicación mediante el vínculo **Eliminar** de esta página y, después, vuelva a seleccionar **Publicar**.
+:::moniker-end
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -252,9 +293,3 @@ Ahora puede extraer el contenedor del registro a cualquier host capaz de ejecuta
 * [Troubleshoot Visual Studio development with Docker](troubleshooting-docker-errors.md) (Solución de problemas de desarrollo de Visual Studio con Docker)
 * [Visual Studio Container Tools GitHub repository](https://github.com/Microsoft/DockerTools) (Repositorio de GitHub de herramientas de contenedor de Visual Studio)
 
-::: moniker range="vs-2017"
-[0]:media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png
-::: moniker-end
-::: moniker range=">=vs-2019"
-[0]:media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png
-::: moniker-end

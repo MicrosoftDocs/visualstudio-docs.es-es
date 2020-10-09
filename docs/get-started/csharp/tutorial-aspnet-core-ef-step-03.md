@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250795"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780969"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Paso 3: Trabajo con datos mediante Entity Framework
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 También verá que la cadena de conexión `AppDbContext` se ha agregado al archivo *appsettings.json* del proyecto.
 
-Si ejecuta la aplicación ahora, se puede producir un error porque todavía no se ha creado ninguna base de datos. Puede configurar la aplicación para crear automáticamente la base de datos si es necesario con la [adición del mismo código a Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main):
+Si ejecuta la aplicación ahora, se puede producir un error porque todavía no se ha creado ninguna base de datos. Puede configurar la aplicación para crear automáticamente la base de datos si es necesario con la [adición del mismo código a Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main):
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ En el vídeo siguiente, obtendrá información sobre cómo agregar compatibilida
 
 ## <a name="see-also"></a>Vea también
 
-- [Razor Pages con Entity Framework Core en ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [Razor Pages en ASP.NET Core con EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages con Entity Framework Core en ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [Razor Pages en ASP.NET Core con EF Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

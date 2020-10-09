@@ -1,5 +1,6 @@
 ---
 title: Diagnóstico de gráficos | Microsoft Docs
+description: Introducción al Diagnóstico de gráficos de Visual Studio.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,15 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 829c51c0e2020a154dc485dbfc4db25e0b399e57
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187734"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671384"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos de Visual Studio
-El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de las aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.
+>[!NOTE]
+> Visual Studio recomienda PIX en Windows para juegos de DirectX 12. [PIX en Windows](https://aka.ms/PIXonWindows) es una herramienta de optimización y depuración del rendimiento que es totalmente compatible con DirectX 12. [Obtenga más información](visual-studio-graphics-diagnostics-directx-12.md) o [descárguelo aquí](https://aka.ms/downloadPIX).
+
+El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de las aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.
 
  El flujo de trabajo de Diagnóstico de gráficos comienza capturando un registro de cómo la aplicación usa Direct3D (en directo, mientras se ejecuta) por lo que el comportamiento se puede analizar inmediatamente, compartir o guardar para más tarde. Se pueden iniciar sesiones de captura y controlarlas manualmente desde Visual Studio o con la herramienta de captura de línea de comandos **dxcap.exe**. También se pueden iniciar sesiones de captura y controlarlas mediante programación con las API de captura de Diagnóstico de gráficos.
 
@@ -68,3 +72,4 @@ El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas 
 | - | - |
 | [Guía de características del depurador](../debugger-feature-tour.md) | Introduce la función de depuración en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Gráficos y juegos de DirectX](/windows/win32/directx) | Ofrece artículos sobre las tecnologías de gráficos DirectX. |
+| [Compatibilidad de DirectX 12 con Visual Studio](visual-studio-graphics-diagnostics-directx-12.md) | Más información sobre la compatibilidad de DirectX 12 con Visual Studio |
