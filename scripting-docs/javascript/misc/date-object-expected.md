@@ -14,12 +14,12 @@ ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 969f2bcb578d74ac02a7bdaa6984de5948e49e27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28531c1ac1dc73ca2bf309d412b08d23dd17bfb8
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817611"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862641"
 ---
 # <a name="date-object-expected"></a>Se esperaba un objeto de fecha
 Intentó invocar el método **Date. prototype. ToString** o **Date. prototype. valueto** en un objeto de un tipo distinto de `Date` . El objeto de este tipo de invocación debe ser de tipo `Date` . Por ejemplo:  
@@ -35,6 +35,6 @@ o.f();
 - Solo se invocan los métodos **Date. prototype. ToString** o **Date. prototype. valueto** en objetos de tipo `Date` .  
   
 ## <a name="see-also"></a>Vea también  
- [Date (objeto)](../../javascript/reference/date-object-javascript.md)   
- [getDate (método, Date)](../../javascript/reference/getdate-method-date-javascript.md)   
- [Objetos intrínsecos](../../javascript/intrinsic-objects-javascript.md)
+ [Date (objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date)   
+ [getDate (método, Date)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getdate)   
+ [Objetos intrínsecos](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

@@ -14,12 +14,12 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4978e272017b990501a953062df3a77750f4a837
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816948"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862623"
 ---
 # <a name="invalid-character-javascript"></a>Carácter no válido (JavaScript)
 Ha compuesto un identificador con un carácter (o caracteres) que el compilador no reconoce como válido [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] . Los caracteres válidos usan las siguientes reglas:  
@@ -34,7 +34,7 @@ Ha compuesto un identificador con un carácter (o caracteres) que el compilador 
   
 - Evite el uso de caracteres que no formen parte de la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definición de idioma.  
   
-## <a name="see-also"></a>Consulte también  
- [Variable](../../javascript/variables-javascript.md)   
- [Caracteres especiales](../../javascript/advanced/special-characters-javascript.md)   
- [Tipo de datos](../../javascript/data-types-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Variable](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables)   
+ [Caracteres especiales](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Grammar_and_types)   
+ [Tipo de datos](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)

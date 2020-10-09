@@ -14,12 +14,12 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3af2451efdea5ac3f71ae17fc5919e9f443e86db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f43181affb8048bc9c39c0ee3e844193cd2247c8
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815765"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862546"
 ---
 # <a name="label-not-found"></a>No se encuentra la etiqueta
 Hizo referencia a una etiqueta que no existe. Las etiquetas se pueden usar para marcar bloques de código, pero dentro de un ámbito especificado, deben ser únicos.  
@@ -30,8 +30,8 @@ Hizo referencia a una etiqueta que no existe. Las etiquetas se pueden usar para 
   
 - Asegúrese de que todas las referencias de etiqueta se realicen en las etiquetas definidas en el ámbito actual (esto incluye las definiciones hacia delante).  
   
-## <a name="see-also"></a>Consulte también  
- [Instrucción con etiqueta](../../javascript/reference/labeled-statement-javascript.md)   
- [Switch (instrucción)](../../javascript/reference/switch-statement-javascript.md)   
- [Break (instrucción)](../../javascript/reference/break-statement-javascript.md)   
- [continue (Instrucción)](../../javascript/reference/continue-statement-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Instrucción con etiqueta](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label)   
+ [Switch (instrucción)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [Break (instrucción)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [continue (Instrucción)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue)

@@ -14,12 +14,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dbb7e55f6afe6d3edfe4e98749807732ffa05ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6d88815a33187e209bcba248d3c363afdd91227
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817676"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862657"
 ---
 # <a name="boolean-expected"></a>Se esperaba un booleano
 Intentó invocar el método **Boolean. prototype. ToString** o **Boolean. prototype. valueto** en un objeto de un tipo distinto de `Boolean` . El objeto de este tipo de invocación debe ser de tipo `Boolean` . Por ejemplo:
@@ -36,7 +36,7 @@ o.f();
 
 ## <a name="see-also"></a>Vea también
 
-- [Boolean (Objeto)](../../javascript/reference/boolean-object-javascript.md)
-- [Tipo de datos](../../javascript/data-types-javascript.md)
-- [Control del flujo del programa](../../javascript/controlling-program-flow-javascript.md)
-- [Copia, pase y comparación de datos](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)
+- [Boolean (Objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+- [Tipo de datos](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)
+- [Control del flujo del programa](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [Copia, pase y comparación de datos](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Functions)

@@ -14,12 +14,12 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30e02f4f90300e2c05076553419cda5f8c353ab0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e0016c7a0a6acb3f08121d8636ccdf848dcf201
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817689"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862817"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Se debe asignar un valor entero positivo finito a la longitud de la matriz
 Al establecer la propiedad **longitud** de un objeto de **matriz** existente, se especificó una longitud de matriz que no era un número positivo o cero. Este error se produce cuando se asigna un valor a la propiedad **length** de un `Array` objeto que es negativo o no es un número ( `NaN` ). Tenga en cuenta que [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] convierte automáticamente los números fraccionarios en enteros completos.  
@@ -34,4 +34,4 @@ Al establecer la propiedad **longitud** de un objeto de **matriz** existente, se
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)
+ [Usar matrices](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)
