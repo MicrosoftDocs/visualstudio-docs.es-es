@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 633ed9c37e8ccde0844205910a8fa2dc12d91414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa753a4ba3e0254ed7de026653759bbdcfce0631
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817624"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862316"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Referencia circular en el argumento de valor no admitida
 Se ha intentado invocar `JSON.stringify` con un valor que no es válido. El `value` argumento, una matriz o un objeto, contiene una referencia circular.  
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON. Parse (función)](../../javascript/reference/json-parse-function-javascript.md)   
- [Errores en tiempo de ejecución de JavaScript](../../javascript/reference/javascript-run-time-errors.md)
+ [Objeto JSON](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
+ [JSON. Parse (función)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
+ [Errores en tiempo de ejecución de JavaScript](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)

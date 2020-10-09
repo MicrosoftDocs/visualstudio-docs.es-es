@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254389"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862363"
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.
@@ -122,7 +122,7 @@ ms.locfileid: "71254389"
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>Limpiar los recursos que usa el panel de tareas
  Después de crear un panel de tareas personalizado, el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> permanece en memoria mientras se ejecuta el complemento de VSTO. El objeto permanece en memoria incluso después de que el usuario haga clic en el botón **cerrar** (X) situado en la esquina del panel de tareas.
 
- Para limpiar los recursos que usa el panel de tareas mientras el complemento de VSTO se está ejecutando, use los métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Estos métodos quitan el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> especificado de la colección `CustomTaskPanes` y llaman al método <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> del objeto.
+ Para limpiar los recursos que usa el panel de tareas mientras el complemento de VSTO se está ejecutando, use los métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Estos métodos quitan el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> especificado de la colección `CustomTaskPanes` y llaman al método `Dispose` del objeto.
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia automáticamente los recursos que usa el panel de tareas personalizado cuando se descarga el complemento de VSTO. No llame a los <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> métodos o en el `ThisAddIn_Shutdown` controlador de eventos del proyecto. Estos métodos producirán <xref:System.ObjectDisposedException>, ya que [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia los recursos que usa el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> antes de llamar a `ThisAddIn_Shutdown`. Para obtener más información sobre `ThisAddIn_Shutdown` , vea [eventos en proyectos de Office](../vsto/events-in-office-projects.md).
 
@@ -203,19 +203,19 @@ ms.locfileid: "71254389"
 ### <a name="powerpoint-events"></a>Eventos de PowerPoint
  Para supervisar el estado de las ventanas de documento en PowerPoint, puede administrar los eventos siguientes:
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Tutorial: automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
 - [Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

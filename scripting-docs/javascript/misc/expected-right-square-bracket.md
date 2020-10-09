@@ -14,12 +14,12 @@ ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5ecc9f1129aff02c6c8e32e42f7e9babffab429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64f03c48b2db8b91d368e5de6e8d24a2330ccf1b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817572"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861514"
 ---
 # <a name="expected-"></a>Se esperaba ']'
 Hizo referencia a un elemento de matriz, pero no incluía el corchete de cierre. Cualquier expresión que haga referencia a un elemento de matriz debe incluir corchetes de apertura y cierre.  
@@ -28,6 +28,6 @@ Hizo referencia a un elemento de matriz, pero no incluía el corchete de cierre.
   
 - Agregue el corchete de cierre a la expresión que hace referencia al elemento de la matriz.  
   
-## <a name="see-also"></a>Consulte también  
- [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)   
- [Array (objeto)](../../javascript/reference/array-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Usar matrices](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
+ [Array (objeto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)

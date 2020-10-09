@@ -14,12 +14,12 @@ ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21cba6c63323775bbe7b0bcb49bfffd44d7be065
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d68cfc2d23dc4cfe207793d0b4c4004856b04303
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817299"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862532"
 ---
 # <a name="label-redefined"></a>Etiqueta redefinida
 Ha creado una nueva etiqueta, pero le ha asignado el nombre de una etiqueta existente. Las etiquetas se pueden usar para marcar bloques de código, pero dentro de un ámbito especificado, deben ser únicos.  
@@ -28,8 +28,8 @@ Ha creado una nueva etiqueta, pero le ha asignado el nombre de una etiqueta exis
   
 - Asegúrese de que todas las etiquetas que utiliza en los programas son únicas dentro de sus respectivos ámbitos.  
   
-## <a name="see-also"></a>Consulte también  
- [Instrucción con etiqueta](../../javascript/reference/labeled-statement-javascript.md)   
- [Switch (instrucción)](../../javascript/reference/switch-statement-javascript.md)   
- [Break (instrucción)](../../javascript/reference/break-statement-javascript.md)   
- [continue (Instrucción)](../../javascript/reference/continue-statement-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Instrucción con etiqueta](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label)   
+ [Switch (instrucción)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [Break (instrucción)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [continue (Instrucción)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue)

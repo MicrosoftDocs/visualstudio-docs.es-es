@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28eec125914f0207fbdf79a39ea2140dd74d6d0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a3b8510c92e15a5b1bf5e15bb774ba031f7181f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816233"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862117"
 ---
 # <a name="object-expected"></a>Se esperaba un objeto
 Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `Object`, o se pasó un argumento de un tipo distinto de `Object` cuando se requería `Object`.  
@@ -46,6 +46,6 @@ Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `
     }  
     ```  
   
-## <a name="see-also"></a>Consulte también  
- [Objeto de objeto](../../javascript/reference/object-object-javascript.md)   
- [Objetos y matrices](../../javascript/objects-and-arrays-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Objeto de objeto](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [Objetos y matrices](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f67f9a2fc81b0bd950e171e4274eb09eacd88bbc
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815336"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861857"
 ---
 # <a name="unexpected-quantifier-javascript"></a>No se esperaba un cuantificador (JavaScript)
 Al redactar el patrón de búsqueda de expresiones regulares, se creó un elemento de patrón con un factor de repetición no válido. Por ejemplo, el patrón  
@@ -48,5 +48,5 @@ Al redactar el patrón de búsqueda de expresiones regulares, se creó un elemen
 - Asegúrese de que el elemento de patrón de búsqueda solo contiene factores de repetición legales.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de expresión regular](../../javascript/reference/regular-expression-object-javascript.md)   
- [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ [Objeto de expresión regular](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [Sintaxis de expresiones regulares (JavaScript)](/previous-versions/1400241x(v=vs.100))

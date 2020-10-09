@@ -14,12 +14,12 @@ ms.assetid: 3af95632-80e1-47c4-8e4b-81c5f2be8017
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d83c6ce2c7173054aa6ea31681ad1baa6e0cbc70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 791395d1fff89708e96a6dbe61fd73d954faac3b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815596"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862068"
 ---
 # <a name="object-member-expected"></a>Se esperaba un objeto miembro
 Ha intentado realizar una operación en un miembro de datos de un objeto, pero el miembro no existe.  
@@ -28,6 +28,6 @@ Ha intentado realizar una operación en un miembro de datos de un objeto, pero e
   
 - Asegúrese de que escribió correctamente el nombre del miembro de datos.  
   
-## <a name="see-also"></a>Consulte también  
- [Objeto de objeto](../../javascript/reference/object-object-javascript.md)   
- [Objetos y matrices](../../javascript/objects-and-arrays-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Objeto de objeto](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [Objetos y matrices](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

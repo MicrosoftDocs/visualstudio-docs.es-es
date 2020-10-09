@@ -14,12 +14,12 @@ ms.assetid: c2608995-944e-4d35-8b7e-1cfe264d2458
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ff759681ca3e4f48f264e00f9e376487dfe4d24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 761e940ae6f88040bf5e24cd3a622a14261fa68e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817312"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861629"
 ---
 # <a name="expected-end"></a>Se esperaba ' \@ End '
 Ha intentado crear un bloque de código compilado condicionalmente, pero no incluyó la <strong>@end</strong> instrucción al final. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] las instrucciones se pueden compilar condicionalmente mediante su inclusión en un <strong>@if/@end</strong> bloque.  
@@ -29,5 +29,5 @@ Ha intentado crear un bloque de código compilado condicionalmente, pero no incl
 - Agregue la <strong>@end</strong> instrucción correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Compilación condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Variables de compilación condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [Compilación condicional](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [Variables de compilación condicional](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

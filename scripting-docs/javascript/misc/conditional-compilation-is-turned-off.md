@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91e32971013d2dfcf0ee2dc901d84681522c7e89
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816129"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861649"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>La compilación condicional está desactiva
 Intentó usar una variable de compilación condicional sin activar primero la compilación condicional. Al activar la compilación condicional [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] , se indica al compilador que interprete identificadores que empiezan por @ como variables de compilación condicionales. Para ello, inicie el código condicional con la instrucción:  
@@ -37,8 +37,8 @@ Intentó usar una variable de compilación condicional sin activar primero la co
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Compilación condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Variables de compilación condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on Privacidad](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if Privacidad](../../javascript/reference/at-if-statement-javascript.md)   
- [@set Privacidad](../../javascript/reference/at-set-statement-javascript.md)
+ [Compilación condicional](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [Variables de compilación condicional](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))   
+ [@cc_on Privacidad](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-cc-on)   
+ [@if Privacidad](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-if)   
+ [@set Privacidad](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-set)

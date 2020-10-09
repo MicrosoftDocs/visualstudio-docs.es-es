@@ -14,12 +14,12 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84ec3426c80da0578dda7cb99e9160b81e31ab87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aab43ec6a547982cf670d64c8ad8b752160839f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817637"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862339"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>No se puede asignar al resultado de una función
 Ha intentado asignar un valor a un resultado de la función. El resultado de una función se puede asignar a una variable, pero no se puede usar como una variable. Si desea asignar un nuevo valor a la propia función, omita los paréntesis (el operador de llamada de función). En el ejemplo siguiente se muestra una situación en la que se genera este error.  
@@ -43,6 +43,6 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de función](../../javascript/reference/function-object-javascript.md)   
- [Escribir código JavaScript](../../javascript/writing-javascript-code.md)   
- [Funciones](../../javascript/functions-javascript.md)
+ [Objeto de función](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Escribir código JavaScript](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics)   
+ [Funciones](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)

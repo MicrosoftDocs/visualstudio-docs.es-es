@@ -14,12 +14,12 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f177bf81a43c45dcff4cef3040c64425ed544057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2028d8923c2f81d1d99fec752d7ac0ce2fb32f65
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816974"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862171"
 ---
 # <a name="function-expected"></a>Se esperaba una función
 Intentó invocar uno de los métodos de **prototipo de función** en un objeto que no era un `Function` objeto o usó un objeto en un contexto de llamada de función. Por ejemplo, el código siguiente genera este error porque el **ejemplo** no es una función.  
@@ -35,6 +35,6 @@ var x = example();           // Try and call example as if it were a function.
   
 - Asegúrese de usar el operador de llamada de función `()` para llamar solo a funciones.  
   
-## <a name="see-also"></a>Consulte también  
- [Objeto de función](../../javascript/reference/function-object-javascript.md)   
- [prototype (Propiedad, Object)](../../javascript/reference/prototype-property-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Objeto de función](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [prototype (Propiedad, Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)

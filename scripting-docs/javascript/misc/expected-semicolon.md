@@ -14,12 +14,12 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 741f347a5b5d9f9268604d76afac2ace051faefa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2898a007e07dea326bbcd7b8d19f1a623941605d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817390"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862415"
 ---
 # <a name="expected-"></a>Se esperaba ';'
 Se intentó colocar más de una instrucción en una línea, pero no se separan con punto y coma. Los puntos y comas se usan para finalizar las instrucciones. Aunque puede colocar varias instrucciones en una sola línea, cada una debe estar delimitada de la siguiente con un punto y coma.  
@@ -33,4 +33,4 @@ Se intentó colocar más de una instrucción en una línea, pero no se separan c
 - Asegúrese de que no olvidó el punto y coma dentro del encabezado de un bucle **for** .  
   
 ## <a name="see-also"></a>Vea también  
- [Escribir código JavaScript](../../javascript/writing-javascript-code.md)
+ [Escribir código JavaScript](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
