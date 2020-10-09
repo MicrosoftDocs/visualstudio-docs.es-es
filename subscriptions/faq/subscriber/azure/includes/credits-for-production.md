@@ -8,12 +8,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_4
-ms.openlocfilehash: 54e5754d84b402b75ed9a64185e0f815529d9117
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3c8bb23e5a37aeef0580fa478495ccbe1ad63cc1
+ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386084"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91828913"
 ---
 ## <a name="can-i-use-my-monthly-azure-credits-to-run-production-applications"></a>¿Puedo usar mis créditos mensuales de Azure para ejecutar aplicaciones de producción?
 
