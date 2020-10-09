@@ -8,12 +8,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_1
-ms.openlocfilehash: e8e7d1f5667b5acd183017ce6e17818b73cade2c
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 73aa7ede968d221b49942dad4e2a8cbf5284cf15
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385894"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838235"
 ---
 ## <a name="what-software-downloads-are-available"></a>¿Qué descargas de software están disponibles?
 
@@ -21,5 +21,5 @@ Las descargas de software disponibles dependen de la suscripción que tenga. Si 
 
 Consulte esta [lista de las descargas disponibles por nivel de suscripción](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx). Para obtener más información sobre las descargas, vea los artículos siguientes:
 
-- [Disponibilidad de productos](https://docs.microsoft.com/visualstudio/subscriptions/product-availability)
-- [Descarga de software](https://docs.microsoft.com/visualstudio/subscriptions/download-software)
+- [Disponibilidad de productos](../../../../product-availability.md)
+- [Descarga de software](../../../../download-software.md)

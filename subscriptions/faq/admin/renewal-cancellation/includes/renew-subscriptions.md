@@ -7,12 +7,12 @@ ms.assetid: 754c7033-72db-49ea-b99b-cea892261834
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e0fb2462e392e2672ccf347103afe4a56b07abb
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3707dc584eb9aa7c200526efbe7815d19b4d1451
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386144"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838364"
 ---
 ## <a name="how-do-i-renew-my-subscriptions"></a>¿Cómo renuevo mis suscripciones?
 
@@ -22,6 +22,6 @@ Comercial: En el caso de las suscripciones adquiridas a través de Microsoft St
 
 Suscripciones de nube: Si usa suscripciones de nube, no es necesario renovarlas. Se renuevan de forma automática hasta que las cancele.
 
-Obtenga más información sobre la [compra de suscripciones de nube](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
+Obtenga más información sobre la [compra de suscripciones de nube](../../../../vscloud-overview.md).
 
 Licencias por volumen: Para renovar las suscripciones compradas a través de licencias por volumen, póngase en contacto con el revendedor. [Busque un revendedor](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) en su área.

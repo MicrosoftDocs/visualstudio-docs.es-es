@@ -1,150 +1,150 @@
 - name: Visual Studio para Mac
-  href: /visualstudio/mac/
+  href: ./index.yml
 - name: Paseo por el IDE
   href: ide-tour.md
 - name: Instalación
   href: installation.md
   items:
     - name: Instalación y uso detrás de un firewall o proxy
-      href: /visualstudio/mac/install-behind-a-firewall-or-proxy-server
+      href: ./install-behind-a-firewall-or-proxy-server.md
     - name: Instalación de una versión preliminar
-      href: /visualstudio/mac/install-preview
+      href: ./install-preview.md
     - name: Actualizar
-      href: /visualstudio/mac/update
+      href: ./update.md
     - name: Actualización a Visual Studio 2019 para Mac
-      href: /visualstudio/mac/update-vsmac-8.0
+      href: ./update-vsmac-8.0.md
     - name: Desinstalar
-      href: /visualstudio/mac/uninstall
+      href: ./uninstall.md
 - name: Cuentas de usuario
-  href: /visualstudio/mac/user-accounts
+  href: ./user-accounts.md
   items:
     - name: Inicio de sesión
-      href: /visualstudio/mac/signing-in
+      href: ./signing-in.md
     - name: Habilitación de la suscripción
-      href: /visualstudio/mac/enable-subscription
+      href: ./enable-subscription.md
 - name: Personalización del IDE
-  href: /visualstudio/mac/customizing-the-ide
+  href: ./customizing-the-ide.md
   items:
     - name: Extender Visual Studio para Mac
-      href: /visualstudio/mac/extending-visual-studio-mac
+      href: ./extending-visual-studio-mac.md
 - name: Proyectos y soluciones
-  href: /visualstudio/mac/projects-and-solutions
+  href: ./projects-and-solutions.md
   items:
     - name: Creación de proyectos
-      href: /visualstudio/mac/create-new-projects
+      href: ./create-new-projects.md
     - name: Adición y eliminación de elementos del proyecto
-      href: /visualstudio/mac/add-and-remove-project-items
+      href: ./add-and-remove-project-items.md
     - name: Administración de propiedades de soluciones y de proyectos
-      href: /visualstudio/mac/managing-solutions-and-project-properties
+      href: ./managing-solutions-and-project-properties.md
     - name: Administrar referencias en un proyecto
-      href: /visualstudio/mac/managing-references-in-a-project
+      href: ./managing-references-in-a-project.md
       items:
         - name: 'Tutorial: Incluir un paquete NuGet en el proyecto'
-          href: /visualstudio/mac/nuget-walkthrough
+          href: ./nuget-walkthrough.md
     - name: Administración de recursos de aplicación
-      href: /visualstudio/mac/managing-app-resources
+      href: ./managing-app-resources.md
     - name: Procedimiento Abrir varias soluciones o instancias
-      href: /visualstudio/mac/open-multiple-solutions
+      href: ./open-multiple-solutions.md
 - name: Editor de código fuente
-  href: /visualstudio/mac/source-editor
+  href: ./source-editor.md
   items:
-    - name: Refactorización
-      href: /visualstudio/mac/refactoring
+    - name: Refactoring
+      href: ./refactoring.md
     - name: Comentarios
-      href: /visualstudio/mac/comments
+      href: ./comments.md
     - name: Comportamiento del editor
-      href: /visualstudio/mac/editor-behavior
+      href: ./editor-behavior.md
     - name: Comentarios de tareas
-      href: /visualstudio/mac/task-comments
+      href: ./task-comments.md
     - name: Fragmentos de código
-      href: /visualstudio/mac/snippets
+      href: ./snippets.md
     - name: Selección de bloques
-      href: /visualstudio/mac/block-selection
+      href: ./block-selection.md
     - name: Temas del editor
-      href: /visualstudio/mac/editor-themes
+      href: ./editor-themes.md
     - name: EditorConfig
-      href: /visualstudio/mac/editorconfig
+      href: ./editorconfig.md
     - name: Accesos directos comunes del teclado
-      href: /visualstudio/mac/keyboard-shortcuts
+      href: ./keyboard-shortcuts.md
 - name: Depuración
-  href: /visualstudio/mac/debugging
+  href: ./debugging.md
   items:
     - name: Visualización de datos
-      href: /visualstudio/mac/data-visualizations
+      href: ./data-visualizations.md
 - name: Compilar y generar
-  href: /visualstudio/mac/compiling-and-building
+  href: ./compiling-and-building.md
   items:
     - name: Compilar y limpiar proyectos y soluciones
-      href: /visualstudio/mac/building-and-cleaning-projects-and-solutions
+      href: ./building-and-cleaning-projects-and-solutions.md
     - name: Acciones de compilación
-      href: /visualstudio/mac/build-actions
+      href: ./build-actions.md
     - name: Personalización del sistema de compilación
-      href: /visualstudio/mac/customizing-build-system
+      href: ./customizing-build-system.md
     - name: Configuraciones
-      href: /visualstudio/mac/configurations
+      href: ./configurations.md
       items:
         - name: Creación y edición de configuraciones
-          href: /visualstudio/mac/create-and-edit-configurations
+          href: ./create-and-edit-configurations.md
 - name: Control de versiones
-  href: /visualstudio/mac/version-control
+  href: ./version-control.md
   items:
     - name: Control de versiones TF
-      href: /visualstudio/mac/tf-version-control
+      href: ./tf-version-control.md
     - name: Configuración de un repositorio Git
-      href: /visualstudio/mac/set-up-git-repository
+      href: ./set-up-git-repository.md
     - name: Trabajo con Git
-      href: /visualstudio/mac/working-with-git
+      href: ./working-with-git.md
     - name: Configuración de un repositorio de Subversion
-      href: /visualstudio/mac/set-up-subversion-repository
+      href: ./set-up-subversion-repository.md
     - name: Trabajar con Subversion
-      href: /visualstudio/mac/working-with-subversion
+      href: ./working-with-subversion.md
 - name: Implementación de aplicaciones web
-  href: /visualstudio/mac/web-app-deployment
+  href: ./web-app-deployment.md
   items:
     - name: Publicación en Azure App Service
-      href: /visualstudio/mac/publish-app-svc
+      href: ./publish-app-svc.md
     - name: Publicación en carpeta
-      href: /visualstudio/mac/publish-folder
+      href: ./publish-folder.md
 - name: Cargas de trabajo
-  href: /visualstudio/mac/workloads
+  href: ./workloads.md
   items:
     - name: ASP.NET Core
-      href: /visualstudio/mac/asp-net-core
+      href: ./asp-net-core.md
       items:
         - name: Razor
-          href: /visualstudio/mac/razor
+          href: ./razor.md
         - name: JavaScript
-          href: /visualstudio/mac/javascript
+          href: ./javascript.md
     - name: Azure
-      href: /visualstudio/mac/azure-workload
+      href: ./azure-workload.md
       items:
         - name: Introducción a Azure Functions
-          href: /visualstudio/mac/azure-functions
+          href: ./azure-functions.md
         - name: 'Tutorial: Comprobación de'
-          href: /visualstudio/mac/azure-functions-lab
+          href: ./azure-functions-lab.md
         - name: Servicios conectados
-          href: /visualstudio/mac/connected-services
+          href: ./connected-services.md
     - name: Desarrollo de juegos de Unity
-      href: /visualstudio/mac/unity-tools
+      href: ./unity-tools.md
       items:
         - name: Programa de instalación
-          href: /visualstudio/mac/setup-vsmac-tools-unity
+          href: ./setup-vsmac-tools-unity.md
         - name: Uso de herramientas de Unity
-          href: /visualstudio/mac/using-vsmac-tools-unity
+          href: ./using-vsmac-tools-unity.md
         - name: Uso de .NET 4.x en Unity
           href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
         - name: Registro de cambios
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
     - name: Aplicaciones móviles con Xamarin
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: Accesibilidad
-  href: /visualstudio/mac/accessibility
+  href: ./accessibility.md
 - name: Solución de problemas
-  href: /visualstudio/mac/troubleshooting
+  href: ./troubleshooting.md
   items:
     - name: Programa para la mejora de la experiencia del usuario de Visual Studio
-      href: /visualstudio/mac/visual-studio-experience-improvement-program
+      href: ./visual-studio-experience-improvement-program.md
     - name: Notificar un problema
-      href: /visualstudio/mac/report-a-problem
+      href: ./report-a-problem.md
     - name: 'Solución del problema: El actualizador presenta errores al recuperar información'
       href: updater-troubleshooting.md

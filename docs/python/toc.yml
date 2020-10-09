@@ -86,7 +86,7 @@
         - name: Plantilla de servicio en la nube de Azure
           href: python-azure-cloud-service-project-template.md
     - name: SDK de Azure para Python
-      href: /python/azure/?view=azure-python
+      href: /python/azure/?view=azure-python&preserve-view=true
 - name: Guías de procedimientos
   items:
     - name: Administración de entornos de Python

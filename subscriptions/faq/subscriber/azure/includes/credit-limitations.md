@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_8
-ms.openlocfilehash: ba477ecb7e204a395cbe4b2e550beb82ec208479
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 34094e2a89c2a9808d4f0ba921d97e434be3b66a
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386264"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838281"
 ---
 ## <a name="are-there-any-other-limitations-i-should-be-aware-of"></a>¿Hay alguna otra limitación que deba tener en cuenta?
 
@@ -29,4 +29,4 @@ El crédito mensual no se aplica a la compra de los siguientes servicios:
 - Productos que se venden a través de [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 - Productos que se venden de forma independiente a Azure (por ejemplo, Azure Active Directory Premium)
 
-Para comprar estos servicios, tendrá que quitar el [límite de gasto](https://docs.microsoft.com/azure/billing/billing-spending-limit) y proporcionar una tarjeta de crédito para la facturación.
+Para comprar estos servicios, tendrá que quitar el [límite de gasto](/azure/billing/billing-spending-limit) y proporcionar una tarjeta de crédito para la facturación.

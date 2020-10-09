@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91640568"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838370"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>¿Cómo puedo usar mis ventajas?
 
@@ -20,7 +20,7 @@ Al igual que los tipos de ventajas, los métodos para activarlas y usarlas tambi
 
 Para cada ventaja disponible en el Portal del suscriptor, hemos proporcionado artículos con información como las suscripciones en las que se incluyen, así como los pasos para activar las ventajas.
 
-Consulte nuestra documentación para [obtener más información](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (haga clic en "Suscripciones" en el panel de navegación de la izquierda y elija "Ventajas").
+Consulte nuestra documentación para [obtener más información](../../../../whats-new-in-subscriptions.md) (haga clic en "Suscripciones" en el panel de navegación de la izquierda y elija "Ventajas").
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>¿Qué es el proceso de configuración de Visual Studio con GitHub Enterprise? 
 
@@ -36,4 +36,4 @@ Cuando el administrador de la organización de GitHub le envíe una invitación,
 
 Una vez que acepte la invitación de la organización de GitHub, la apariencia del icono de la ventaja en <https://my.visualstudio.com/benefits> cambiará de "Pendiente" a "Activado" y ya podrá empezar a usar GitHub Enterprise. 
 
-[Obtenga más información](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md) sobre el proceso de configuración de GitHub Enterprise. 
+[Obtenga más información](../../../../access-github.md) sobre el proceso de configuración de GitHub Enterprise. 
