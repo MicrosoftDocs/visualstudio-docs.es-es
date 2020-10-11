@@ -1,5 +1,6 @@
 ---
 title: Operadores lógicos en expresiones de búsqueda (visor de ayuda)
+description: Aprenda a usar operadores lógicos y operadores de búsqueda avanzada para refinar expresiones de búsqueda en Visor de Ayuda de Microsoft.
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038639"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878935"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos y avanzados en expresiones de búsqueda
 
@@ -67,7 +68,7 @@ Puede usar el operador `code:` para buscar contenido sobre cualquiera de los dis
 > [!NOTE]
 > El operador `code:` solamente busca contenido que esté marcado con una etiqueta de lenguaje de programación, en lugar de contenido marcado genéricamente como código.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Cómo: buscar temas](../help-viewer/find-topics.md)
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)

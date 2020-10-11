@@ -1,5 +1,6 @@
 ---
 title: Invalidaciones de Help Content Manager
+description: Obtenga información sobre las invalidaciones de Help Content Manager, que cambian el comportamiento predeterminado del visor de ayuda y las características relacionadas con la ayuda en el IDE de Visual Studio.
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825096"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879065"
 ---
 # <a name="help-content-manager-overrides"></a>Invalidaciones de Help Content Manager
 
@@ -61,7 +62,7 @@ Los dos comportamientos siguientes pueden controlarse mediante el establecimient
 |Invalidar la prioridad de trabajos del servicio BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (en un equipo de 64 bits)\Microsoft\Help\v2.3|BITSPriority|**foreground**, **high**, **normal** o **low**|
 |Apuntar al almacén de contenido local en un recurso compartido de red|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Guía del administrador del visor de ayuda](../help-viewer/administrator-guide.md)
 - [Argumentos de la línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md)

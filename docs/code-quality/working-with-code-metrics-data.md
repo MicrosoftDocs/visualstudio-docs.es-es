@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587087"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927983"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usar la ventana Resultados de métricas de código
 
@@ -82,9 +82,9 @@ Puede seleccionar y copiar una fila seleccionada de datos de métricas de códig
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>Crear un elemento de trabajo basado en resultados de métricas de código
 
-Puede crear un elemento de trabajo de [Azure Boards](/azure/devops/boards/index?view=vsts) basado en resultados en la ventana **resultados de métricas de código** . Cuando se crea el elemento de trabajo, Visual Studio escribe automáticamente un título en el campo **título** y datos de métricas de código en la pestaña **historial** .
+Puede crear un elemento de trabajo de [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true) basado en resultados en la ventana **resultados de métricas de código** . Cuando se crea el elemento de trabajo, Visual Studio escribe automáticamente un título en el campo **título** y datos de métricas de código en la pestaña **historial** .
 
-Para obtener más información sobre los elementos de trabajo de Azure Boards, vea [elementos de trabajo](/azure/devops/boards/work-items/index?view=vsts).
+Para obtener más información sobre los elementos de trabajo de Azure Boards, vea [elementos de trabajo](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Para crear un elemento de trabajo basado en un resultado
 

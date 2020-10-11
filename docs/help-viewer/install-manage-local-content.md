@@ -1,5 +1,6 @@
 ---
 title: Instalación de la documentación de ayuda local
+description: Instalar y administrar la documentación de la ayuda local mediante el Visor de Ayuda de Microsoft. Agregar, quitar, actualizar y trasladar el contenido de la ayuda instalado en el equipo.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3401c12e35308b07a3c1bb1884af5acda221e71d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284911"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879104"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 
@@ -129,6 +130,6 @@ Puede ahorrar espacio en disco moviendo contenido instalado en el equipo local a
 
 3. Pulse el botón **Cerrar** cuando el contenido se termine de mover.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)

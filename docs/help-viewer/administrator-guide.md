@@ -1,5 +1,6 @@
 ---
 title: Guía del administrador del Visor de Ayuda
+description: Lea la guía del administrador de Visor de Ayuda de Microsoft. Implementar contenido de ayuda local desde Internet o implementar contenido de ayuda local preinstalado en los equipos cliente.
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825122"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878896"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 
@@ -142,7 +143,7 @@ A continuación, debe empaquetar el contenido para poder implementarlo en los eq
 
 3. Ejecute el archivo *. bat* en los equipos locales en los que desea instalar el contenido de la ayuda.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Argumentos de la línea de comandos para Help Content Manager](../help-viewer/command-line-arguments.md)
 - [Invalidaciones de Help Content Manager](../help-viewer/behavior-overrides.md)

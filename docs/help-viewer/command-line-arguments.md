@@ -1,5 +1,6 @@
 ---
 title: Argumentos de línea de comandos para Help Content Manager
+description: Use los argumentos de la línea de comandos para Help Content Manager (HlpCtntMgr.exe) para especificar cómo implementar y administrar el contenido de la ayuda local.
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631977"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879052"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 
@@ -46,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 En la tabla siguiente se definen los modificadores y los argumentos que puede utilizar para la herramienta de la línea de comandos de Help Content Manager:
 
-|Conmutador|¿Necesario?|Argumentos|
+|Modificador|¿Necesario?|Argumentos|
 |------------|---------------|---------------|
 |/operation|Sí|-   **Instalar**: agrega los libros del origen de instalación especificado al almacén de contenido local.<br />     Este modificador requiere el argumento /booklist, el argumento /sourceURI o ambos. Si no se especifica el argumento /sourceURI, el URI de Visual Studio predeterminado se usa como origen de la instalación. Si no se especifica el argumento /booklist, se instalarán todos los libros de /sourceUri.<br />-   **Desinstalar**: quita los libros que especifique del almacén de contenido local.<br />     Este modificador requiere el argumento /booklist o el argumento /sourceURI.  Si se especifica el argumento /sourceURI, se quitan todos los libros y se omite el argumento /booklist.<br />-   **Mover**: mueve el almacén local a la ruta de acceso especificada. La ruta de acceso predeterminada del almacén local se establece como un directorio en *%ProgramData%*.<br />     Este modificador requiere los argumentos /locationPath y /catalogName. Los mensajes de error se registran en el registro de eventos si especifica una ruta de acceso no válida o si la unidad no contiene suficiente espacio disponible para incluir el contenido.<br />-   **Actualizar**: actualiza los temas que han cambiado desde que se instalaron o actualizaron recientemente.<br />     Este modificador requiere el argumento /sourceURI.|
 |/catalogName|Sí|Especifica el nombre del catálogo de contenido. Para Visual Studio 2017 y Visual Studio 2019, es VisualStudio15.|
@@ -90,7 +91,7 @@ OnlineHelpPreferenceDisabled = 1201
 UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because another was in progress.)
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Guía del administrador del visor de ayuda](../help-viewer/administrator-guide.md)
 - [Invalidaciones de Help Content Manager](../help-viewer/behavior-overrides.md)

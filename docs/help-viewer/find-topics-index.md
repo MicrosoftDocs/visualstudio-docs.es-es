@@ -1,5 +1,6 @@
 ---
 title: Uso del índice del Visor de ayuda
+description: Busque temas mediante el Visor de Ayuda de Microsoft índice, que contiene una lista de palabras clave asociadas a temas del contenido instalado.
 ms.date: 11/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284963"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879026"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Búsqueda de temas con el índice del visor de la Ayuda
 
@@ -77,7 +78,7 @@ Si no encuentra una entrada para la palabra o frase que escribió, pruebe lo sig
 
     Por ejemplo, si introdujo el término "compilación", pruebe "creación" en su lugar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Búsqueda de temas en la TDC](../help-viewer/find-topics-toc.md)
 - [Cómo: buscar temas](../help-viewer/find-topics.md)

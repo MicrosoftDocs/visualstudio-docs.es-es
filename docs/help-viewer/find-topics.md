@@ -1,5 +1,6 @@
 ---
 title: Búsqueda de temas (Visor de Ayuda)
+description: Obtenga información sobre cómo buscar temas en el Visor de Ayuda de Microsoft. Personalice las búsquedas mediante expresiones comodín, operadores lógicos y operadores de búsqueda avanzada.
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284924"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879000"
 ---
 # <a name="how-to-search-for-topics"></a>Búsqueda de temas
 
@@ -76,7 +77,7 @@ El algoritmo de búsqueda aplica ciertos criterios para ayudar a situar los resu
 
 Las palabras o números que aparecen más habitualmente, a veces llamadas palabras irrelevantes, se omiten automáticamente durante una búsqueda de texto completo. Por ejemplo, si busca la frase "pasar por", los resultados de la búsqueda mostrarán los temas que contienen la palabra "pasar", pero no "por".
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Operadores lógicos y avanzados](../help-viewer/logical-operators-search-expressions.md)
 - [Cómo: buscar temas en el índice](../help-viewer/find-topics-index.md)

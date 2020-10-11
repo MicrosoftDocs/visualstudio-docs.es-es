@@ -878,7 +878,7 @@
       href: msbuild/msbuild.md
     - name: Azure Pipelines y TFS >>
       displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
-      href: /azure/devops/pipelines/index?view=vsts
+      href: /azure/devops/pipelines/index?view=vsts&preserve-view=true
     - name: Especificación de eventos de compilación (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
     - name: Especificación de eventos de compilación (C#)

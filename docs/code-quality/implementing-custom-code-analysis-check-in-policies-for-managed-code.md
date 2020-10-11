@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9eec66ec24c30b6e0df835d16805ea00eb08ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1404386445d24284a2231ed557a65568fdb1ba2b
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371773"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928022"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de inserción en el repositorio de análisis de código personalizadas para el código administrado
 
@@ -58,7 +58,7 @@ Para crear un conjunto de reglas personalizado para un proyecto de DevOps de Azu
 
 1. En **Explorador de control de código fuente**, haga clic con el botón secundario en la nueva carpeta y, a continuación, haga clic en **Agregar elementos a la carpeta**.
 
-     Para obtener más información, vea [git y Azure Repos](/azure/devops/repos/git/overview?view=vsts).
+     Para obtener más información, vea [git y Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true).
 
 2. Haga clic en el archivo de conjunto de reglas que creó y, a continuación, haga clic en **Finalizar**.
 

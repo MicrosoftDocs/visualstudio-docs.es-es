@@ -1,5 +1,6 @@
 ---
 title: Accesibilidad del Visor de ayuda
+description: Revise la lista de características de accesibilidad en el Visor de Ayuda de Microsoft, cubriendo el acceso al teclado, el tamaño de fuente, el tamaño de la ventana y la posición del visor de ayuda.
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825131"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879078"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Características de accesibilidad del Visor de Ayuda
 Microsoft tiene el compromiso de que todas las personas puedan utilizar fácilmente sus productos y servicios. Este tema incluye información sobre las características, productos y servicios que permiten que el Visor de Ayuda de Microsoft sea accesible para los usuarios con una amplia gama de opciones.
@@ -33,7 +34,7 @@ Puede cambiar el ancho de las ventanas de exploración o de documento poniendo e
 ## <a name="help-viewer-position"></a>Posición del Visor de Ayuda
 Puede mover el Visor de Ayuda arrastrando su barra de título a un lugar diferente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)
 - [Teclas de método abreviado (Visor de Ayuda)](../help-viewer/shortcut-keys.md)

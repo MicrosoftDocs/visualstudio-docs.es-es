@@ -1,5 +1,6 @@
 ---
 title: Documentación de la ayuda sin conexión
+description: Instalar y ver la documentación de ayuda sin conexión para varios productos y tecnologías, como Visual Studio y .NET, con Visor de Ayuda de Microsoft.
 ms.date: 11/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824877"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878974"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 
@@ -58,7 +59,7 @@ Puede encontrar información en el contenido instalado mediante las pestañas de
 |Contenido|Muestra el contenido instalado como una jerarquía (tabla de contenido). Puede especificar criterios para filtrar los títulos que aparecen.|
 |Índice|Muestra una lista alfabética de términos indexados. Puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.|
 |Favoritos|Puede "favoritos" eligiendo el botón **Agregar a favoritos** y los temas aparecen en esta pestaña. En la sección **historial** se muestra una lista de los temas que ha visto recientemente.|
-|Search|Proporciona un cuadro de búsqueda en el que puede buscar términos en cualquier lugar del contenido, incluidos los títulos de temas y el código.|
+|Buscar|Proporciona un cuadro de búsqueda en el que puede buscar términos en cualquier lugar del contenido, incluidos los títulos de temas y el código.|
 
 ### <a name="view-topics"></a>Ver temas
 
@@ -91,7 +92,7 @@ La barra de herramientas de la ventana **Visor de Ayuda** contiene los siguiente
 
 - El triángulo pequeño del lado derecho abre una lista de pestañas, incluidas las pestañas de tema y la pestaña **administrar contenido** . Puede elegir un nombre de pestaña para que sea la pestaña activa.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Visor de Ayuda de Microsoft instalación](../help-viewer/installation.md)
 - [Guía del administrador del visor de ayuda](../help-viewer/administrator-guide.md)

@@ -1,5 +1,6 @@
 ---
 title: Uso de la tabla de contenido del Visor de Ayuda
+description: Utilice Visor de Ayuda de Microsoft para buscar temas en la tabla de contenido (TDC). La TDC es una lista expansible que contiene todos los temas de los libros instalados.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a678b669ca0f389a79438185ffce605143ec71d0
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284937"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879013"
 ---
 # Cómo: Buscar temas en la tabla de contenido
 
@@ -50,7 +51,7 @@ Si abrió un tema mediante el índice o las características de búsqueda de tex
 
      Se abre la pestaña **Contenido** y se muestra la ubicación del tema en la TDC.
 
-## Vea también
+## Consulta también
 
 - [Cómo: buscar temas en el índice](../help-viewer/find-topics-index.md)
 - [Cómo: buscar temas](../help-viewer/find-topics.md)

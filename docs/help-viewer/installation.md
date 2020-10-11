@@ -1,5 +1,6 @@
 ---
 title: Instalación de ayuda sin conexión
+description: Vea cómo instalar Visor de Ayuda de Microsoft para leer la ayuda sin conexión. Varios productos, como Visual Studio y SQL Server, usan el visor de ayuda para proporcionar el contenido de la ayuda.
 ms.date: 11/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0161cafe9f9c09f11774da7d6e3e449a9ac4d068
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284950"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878987"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 
@@ -43,7 +44,7 @@ Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través 
 
    ![botón Instalar](media/installation/install.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)
 - [Visor de ayuda y contenido sin conexión para SQL Server](/sql/sql-server/sql-server-help-installation)
