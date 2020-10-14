@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658443"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860489"
 ---
 # <a name="overview-of-source-code-analysis"></a>Información general sobre el análisis de código fuente
 
@@ -77,7 +77,7 @@ Si instala analizadores como una extensión de Visual Studio, se aplican en el n
 
 Para aplicar las reglas en tiempo de compilación, lo que incluye por medio de la línea de comandos o como parte de una compilación de integración continua (CI), puede elegir una de las opciones siguientes:
 
-- Cree un proyecto de .NET 5.0 que incluya analizadores de manera predeterminada en el SDK de .NET. De forma predeterminada, el análisis de código está habilitado para los proyectos que tienen como destino .NET 5.0 o una versión posterior. Puede habilitar el análisis de código en los proyectos que tengan como destino versiones anteriores de .NET estableciendo la propiedad [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) en true.
+- Cree un proyecto de .NET 5.0 que incluya analizadores de manera predeterminada en el SDK de .NET. De forma predeterminada, el análisis de código está habilitado para los proyectos que tienen como destino .NET 5.0 o una versión posterior. Puede habilitar el análisis de código en los proyectos que tengan como destino versiones anteriores de .NET estableciendo la propiedad [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) en true.
 
 - Instale los analizadores como paquete NuGet. Los errores y las advertencias del analizador no se muestran en el informe de compilación si instala los analizadores como una extensión.
 

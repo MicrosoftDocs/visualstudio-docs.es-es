@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543759"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830687"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Configuración de un entorno de Python en Azure App Service (Windows)
 
@@ -211,4 +211,4 @@ En lugar de usar la consola de Kudu mediante Azure Portal, puede ejecutar comand
 
 Para obtener información sobre los comandos y la autenticación, vea la [documentación de Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-También puede ver las credenciales usando el comando `az webapp deployment list-publishing-profiles` por medio de la CLI de Azure. Vea [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles). En [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) hay disponible una biblioteca del asistente para registrar comandos de Kudu.
+También puede ver las credenciales usando el comando `az webapp deployment list-publishing-profiles` por medio de la CLI de Azure. Vea [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest&preserve-view=true#az-webapp-deployment-list-publishing-profiles). En [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) hay disponible una biblioteca del asistente para registrar comandos de Kudu.

@@ -11,12 +11,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585605"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959780"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -272,7 +272,7 @@ Se puede tener más control sobre qué ensamblados y elementos están selecciona
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analizar la cobertura de código en Azure Pipelines
 
-Al insertar el código en el repositorio, las pruebas se ejecutan en el servidor de compilación junto con las pruebas de otros miembros del equipo. Es útil analizar la cobertura de código en Azure Pipelines para obtener la imagen más actualizada y completa de cobertura de todo el proyecto. También se incluyen las pruebas del sistema automatizadas y otras pruebas codificadas que no se ejecutan normalmente en los equipos de desarrollo. Para más información, consulte [Ejecutar pruebas unitarias con las compilaciones](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
+Al insertar el código en el repositorio, las pruebas se ejecutan en el servidor de compilación junto con las pruebas de otros miembros del equipo. Es útil analizar la cobertura de código en Azure Pipelines para obtener la imagen más actualizada y completa de cobertura de todo el proyecto. También se incluyen las pruebas del sistema automatizadas y otras pruebas codificadas que no se ejecutan normalmente en los equipos de desarrollo. Para más información, consulte [Ejecutar pruebas unitarias con las compilaciones](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analizar la cobertura del código desde una línea de comandos
 

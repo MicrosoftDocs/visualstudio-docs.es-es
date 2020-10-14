@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599558"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928061"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnóstico de problemas después de la implementación con IntelliTrace (C# y Visual Basic)
 
@@ -49,7 +49,7 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  Configure la canalización de compilación para agregar las ubicaciones del código fuente, la compilación y los símbolos al manifiesto de compilación (archivo BuildInfo.config). Team Foundation Build crea automáticamente el archivo y lo copia en la carpeta de salida del proyecto.
 
-1. [Edite la canalización de compilación o cree una nueva.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1. [Edite la canalización de compilación o cree una nueva.](/azure/devops/pipelines/get-started-designer?view=vsts&preserve-view=true)
 
      ![Vista de la canalización de compilación en TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
@@ -63,7 +63,7 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
 
      ![Configuración de la ruta de acceso de los símbolos en la canalización de compilación de TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     Para obtener más información sobre los símbolos, vea [Publicar datos de símbolos](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
+     Para obtener más información sobre los símbolos, vea [Publicar datos de símbolos](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts&preserve-view=true).
 
 4. Agregue este argumento de MSBuild para incluir el TFS y las ubicaciones de símbolos al archivo de manifiesto de compilación:
 
@@ -319,7 +319,7 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
 
    Información sobre el sistema de compilación, ya sea `"TeamBuild"` o `"MSBuild"`, y las siguientes propiedades obligatorias:
 
-  - **EtiquetaDeCompilación** (para TeamBuild): nombre y número de la compilación. Esta etiqueta también se usa como nombre del evento de implementación. Para más información sobre los números de compilación, vea [Usar números de compilación para dar nombres significativos a las compilaciones completadas](/azure/devops/pipelines/build/options?view=vsts).
+  - **EtiquetaDeCompilación** (para TeamBuild): nombre y número de la compilación. Esta etiqueta también se usa como nombre del evento de implementación. Para más información sobre los números de compilación, vea [Usar números de compilación para dar nombres significativos a las compilaciones completadas](/azure/devops/pipelines/build/options?view=vsts&preserve-view=true).
 
   - **RutaDeAccesoASímbolos** (recomendado): lista de URI de ubicaciones de los símbolos (archivo PDB) separadas por caracteres de punto y coma. Estas URI pueden ser URL o UNC. Esto permite a Visual Studio buscar los símbolos que coinciden para ayudarle con la depuración.
 
@@ -379,7 +379,7 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
      ![Abrir desde el control de código fuente &#45; Migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> P: ¿Qué es un área de trabajo?
- **R:** El [área de trabajo almacena una copia del código fuente](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) para poder desarrollarlo y probarlo por separado antes de proteger el trabajo. Si aún no tiene un área de trabajo asignada específicamente a la solución o proyecto encontrados, Visual Studio le pedirá que elija un área de trabajo disponible o que cree una nueva área de trabajo con el nombre del equipo como nombre predeterminado del área.
+ **R:** El [área de trabajo almacena una copia del código fuente](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true) para poder desarrollarlo y probarlo por separado antes de proteger el trabajo. Si aún no tiene un área de trabajo asignada específicamente a la solución o proyecto encontrados, Visual Studio le pedirá que elija un área de trabajo disponible o que cree una nueva área de trabajo con el nombre del equipo como nombre predeterminado del área.
 
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> P: ¿Por qué aparece este mensaje sobre símbolos que no son de confianza?
  ![¿Depurar con la ruta de acceso de símbolos que no es de confianza?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

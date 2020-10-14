@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286901"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928611"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
@@ -83,7 +83,7 @@ En la tabla siguiente se muestran los escenarios que se admiten en Agentes para 
 
 | Escenarios admitidos en Agentes para Visual Studio 2013 | Alternativa en TFS y Azure Test Plans |
 | - | - |
-| Flujos de trabajo de compilación-implementación-prueba en Visual Studio | Los usuarios pueden usar una [canalización de compilación](/azure/devops/pipelines/index?view=vsts) (no una compilación XAML) para compilar, implementar y probar escenarios en TFS. |
+| Flujos de trabajo de compilación-implementación-prueba en Visual Studio | Los usuarios pueden usar una [canalización de compilación](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (no una compilación XAML) para compilar, implementar y probar escenarios en TFS. |
 | Pruebas de carga (pruebas de rendimiento) con máquinas remotas locales | Use Test Controller y Test Agents 2013 Update 5 para ejecutar pruebas de carga locales. |
 | Ejecución remota de pruebas automatizadas desde Microsoft Test Manager (en desuso en Visual Studio 2017) con un entorno de laboratorio | Actualmente no existe alternativa para este escenario. Le recomendamos que use la tarea Ejecutar pruebas funcionales en definiciones de versión y compilación (no en una compilación XAML) para ejecutar pruebas de manera remota. |
 | Desarrolladores ejecutando pruebas remotas en Visual Studio | Ya no se admite. |

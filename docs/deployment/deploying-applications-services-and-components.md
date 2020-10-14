@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641671"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830776"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
@@ -50,7 +50,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
 - **ASP.NET**, **ASP.NET Core**, **Python** y **Node.js**: Publique en Azure App Service o Azure App Service para Linux (con contenedores) mediante uno de los métodos siguientes.
 
-  - Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
   - Para la implementación de un solo uso (o manual) de aplicaciones, use la herramienta de **publicación** de Visual Studio.
 
@@ -107,7 +107,7 @@ Si necesita una instalación más compleja de una aplicación de escritorio de l
 
 - Se puede crear un paquete de instalador basado en MSI mediante la [extensión WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Se trata de un conjunto de herramientas de línea de comandos.
 
-- Se puede crear un paquete de instalador EXE o MSI mediante [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) de Flexera Software. InstallShield se puede usar con Visual Studio 2017 y versiones posteriores (no se admite Community Edition). 
+- Se puede crear un paquete de instalador EXE o MSI mediante [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) de Flexera Software. InstallShield se puede usar con Visual Studio 2017 y versiones posteriores (no se admite Community Edition).
 
   > [!NOTE]
   > InstallShield Limited Edition ya no se incluye con Visual Studio y no se admite en Visual Studio 2017 y versiones posteriores; póngase en contacto con [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) para consultar sobre su disponibilidad futura.
@@ -122,7 +122,7 @@ Puede habilitar un desarrollo y pruebas más sofisticados si implementa las apli
 
 ## <a name="continuous-deployment"></a>Implementación continua
 
-Puede usar Azure Pipelines para habilitar la implementación continua de la aplicación. Para obtener más información, vea [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) e [Implementar en Azure](/azure/devops/deploy-azure/index?view=vsts).
+Puede usar Azure Pipelines para habilitar la implementación continua de la aplicación. Para obtener más información, vea [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) e [Implementar en Azure](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true).
 
 ## <a name="deploy-a-sql-database"></a>Implementación de una base de datos SQL
 

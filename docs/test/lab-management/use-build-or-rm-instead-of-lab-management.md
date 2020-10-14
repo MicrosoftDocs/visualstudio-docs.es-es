@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286848"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928598"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Uso de Azure Test Plans en lugar de Lab Management para las pruebas automatizadas
 
-Si usa Microsoft Test Manager y Lab Management para las pruebas automatizadas o para la automatización de compilación-implementación-prueba, en este tema se explica cómo puede obtener los mismos objetivos con las características de [compilación y versión](/azure/devops/pipelines/index?view=vsts) en Team Foundation Server (TFS) y Azure Pipelines.
+Si usa Microsoft Test Manager y Lab Management para las pruebas automatizadas o para la automatización de compilación-implementación-prueba, en este tema se explica cómo puede obtener los mismos objetivos con las características de [compilación y versión](/azure/devops/pipelines/index?view=vsts&preserve-view=true) en Team Foundation Server (TFS) y Azure Pipelines.
 
 > [!NOTE]
 > Microsoft Test Manager está en desuso en Visual Studio 2017 y se ha quitado en Visual Studio 2019.
@@ -31,7 +31,7 @@ Microsoft Test Manager y Lab Management se basan en una definición de compilaci
 |-------|----------------------|-----------------|
 | Identificar las máquinas donde se implementará la compilación y se ejecutarán las pruebas. | Cree un entorno de laboratorio estándar en Microsoft Test Manager con esas máquinas. | N/D |
 | Identificar las pruebas que se van a ejecutar. | Cree un conjunto de pruebas en Microsoft Test Manager, cree casos de pruebas y asocie la automatización con cada caso de prueba. Cree una configuración de pruebas en Microsoft Test Manager identificando el rol de las máquinas del entorno de laboratorio donde deben ejecutarse las pruebas. | Cree un conjunto de pruebas automatizado en Microsoft Test Manager de la misma manera que si planea administrar sus pruebas mediante planes de pruebas. De manera alternativa, puede omitir esto si quiere ejecutar pruebas directamente desde archivos binarios de prueba creados mediante sus compilaciones. No hay necesidad de crear configuraciones de pruebas en ningún caso. |
-| Automatizar la implementación y las pruebas. | Cree una definición de compilación XAML con LabDefaultTemplate.*.xaml. Especifique la compilación, conjuntos de pruebas y entorno de laboratorio en la definición de compilación. | Cree una [canalización de compilación o versión](/azure/devops/pipelines/index?view=vsts) con un solo entorno. Ejecute el mismo script de implementación (desde la definición de compilación XAML) con la tarea de línea de comandos y ejecute pruebas automatizadas con las tareas Implementación del agente de pruebas y Ejecutar pruebas funcionales. Especifique la lista de máquinas y sus credenciales como entradas para estas tareas. |
+| Automatizar la implementación y las pruebas. | Cree una definición de compilación XAML con LabDefaultTemplate.*.xaml. Especifique la compilación, conjuntos de pruebas y entorno de laboratorio en la definición de compilación. | Cree una [canalización de compilación o versión](/azure/devops/pipelines/index?view=vsts&preserve-view=true) con un solo entorno. Ejecute el mismo script de implementación (desde la definición de compilación XAML) con la tarea de línea de comandos y ejecute pruebas automatizadas con las tareas Implementación del agente de pruebas y Ejecutar pruebas funcionales. Especifique la lista de máquinas y sus credenciales como entradas para estas tareas. |
 
 Algunas de las ventajas del uso de canalizaciones de Azure Pipelines o TFS para este escenario son:
 
@@ -46,7 +46,7 @@ Algunas de las ventajas del uso de canalizaciones de Azure Pipelines o TFS para 
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Administración de autoservicio de entornos de SCVMM
 
-El [Centro de pruebas en Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts) admite la capacidad de administrar una biblioteca de plantillas de entorno así como aprovisionar entornos bajo petición mediante un [servidor de SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+El [Centro de pruebas en Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts&preserve-view=true) admite la capacidad de administrar una biblioteca de plantillas de entorno así como aprovisionar entornos bajo petición mediante un [servidor de SCVMM](/system-center/vmm/overview?view=sc-vmm-1801&preserve-view=true).
 
 Las características de aprovisionamiento de autoservicio del Centro de laboratorio tienen dos objetivos distintos:
 
@@ -76,4 +76,4 @@ Con todo, el uso combinado de Azure Pipelines y TFS con la tarea de compilación
 * Iniciar y detener máquinas virtuales
 * Ejecutar scripts de PowerShell personalizados para SCVMM
 
-Para más información, vea [Create a virtual network isolated environment for build-deploy-test scenarios](/azure/devops/pipelines/targets/create-virtual-network?view=vsts) (Creación de un entorno con aislamiento de red virtual para escenarios de compilación-implementación-prueba).
+Para más información, vea [Create a virtual network isolated environment for build-deploy-test scenarios](/azure/devops/pipelines/targets/create-virtual-network?view=vsts&preserve-view=true) (Creación de un entorno con aislamiento de red virtual para escenarios de compilación-implementación-prueba).

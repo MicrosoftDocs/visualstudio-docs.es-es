@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: ff2e78698bb9180a50a4c2c8014b88dfd07b0b77
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181058"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829909"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Conexión a proyectos en Team Explorer
 
@@ -45,4 +45,4 @@ Para conectarse a un proyecto:
 - [Tutorial: Abrir un proyecto desde un repositorio](../get-started/tutorial-open-project-from-repo.md)
 - [Referencia de Team Explorer](reference/team-explorer-reference.md)
 - [Conexión a un proyecto (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
-- [Solución de problemas de conexión a un proyecto](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
+- [Solución de problemas de conexión a un proyecto](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops&preserve-view=true)

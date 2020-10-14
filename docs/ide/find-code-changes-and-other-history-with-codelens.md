@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588660"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928507"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 
@@ -217,7 +217,7 @@ Puede buscar qué pruebas unitarias existen para el código de C# o Visual Basic
 
 1. Vaya al código de la aplicación que tenga [código pruebas unitarias](../test/unit-test-your-code.md) asociado.
 
-2. Si todavía no lo ha hecho, compile la aplicación para que cargue los indicadores de prueba de CodeLens. 
+2. Si todavía no lo ha hecho, compile la aplicación para que cargue los indicadores de prueba de CodeLens.
 
 3. Revise las pruebas para el código presionando **Alt**+**3**.
 
@@ -268,7 +268,7 @@ Active o desactive los indicadores de nivel de archivo de CodeLens con los icono
 
 - Si el código está almacenado en TFS, asegúrese de que la indización de código esté activada. Para ello, use el [comando CodeIndex](../ide/codeindex-command.md) con el [comando TSF Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
-- Los indicadores relacionados con DevOps aparecen solo cuando los elementos de trabajo se vinculan al código y cuando tiene permisos para abrir los elementos de trabajo vinculados. Confirme que tiene [permisos de miembro del equipo](/azure/devops/organizations/security/view-permissions?view=vsts).
+- Los indicadores relacionados con DevOps aparecen solo cuando los elementos de trabajo se vinculan al código y cuando tiene permisos para abrir los elementos de trabajo vinculados. Confirme que tiene [permisos de miembro del equipo](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true).
 
 - Los indicadores de pruebas unitarias no aparecen cuando el código de la aplicación no tiene pruebas unitarias. Dichos indicadores aparecen automáticamente en los proyectos de prueba. Si sabe que el código de la aplicación tiene pruebas unitarias, pero los indicadores de prueba no aparecen, pruebe a compilar la solución (**CTRL**+**Mayús**+**B**).
 

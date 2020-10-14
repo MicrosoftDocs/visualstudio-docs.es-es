@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288083"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928624"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedimiento Crear un adaptador de datos de diagnóstico
 
@@ -245,7 +245,7 @@ Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo comple
     >
     > Hay otros ejemplos de archivos de configuración en la ruta de acceso siguiente en función del directorio de la instalación: *Archivos de programa\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     Para obtener más información sobre cómo establecer la configuración de pruebas para que use un entorno al ejecutar las pruebas, vea [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)].
+     Para obtener más información sobre cómo establecer la configuración de pruebas para que use un entorno al ejecutar las pruebas, vea [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)].
 
      Para obtener más información sobre la instalación del archivo de configuración, vea [Cómo: Instalar un adaptador de datos de diagnóstico personalizado](../test/quickstart-create-a-load-test-project.md)
 
@@ -253,7 +253,7 @@ Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo comple
 
 13. Para obtener información sobre cómo instalar el editor personalizado, vea [Cómo: Instalar un adaptador de datos de diagnóstico personalizado](../test/quickstart-create-a-load-test-project.md).
 
-14. Para obtener más información sobre cómo establecer la configuración de pruebas para que use un entorno al ejecutar las pruebas, vea [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)].
+14. Para obtener más información sobre cómo establecer la configuración de pruebas para que use un entorno al ejecutar las pruebas, vea [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)].
 
 15. Para seleccionar el adaptador de datos de diagnóstico, antes debe seleccionar una configuración de pruebas existente o crear una en Visual Studio o Microsoft Test Manager (en desuso en Visual Studio 2017). El adaptador se muestra en la pestaña **Datos y diagnósticos** de la configuración de pruebas con el nombre descriptivo que se ha asignado a la clase.
 
@@ -273,6 +273,6 @@ Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo comple
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md)
-- [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]
-- [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]
+- [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]
+- [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]
 - [Cómo: Crear un editor personalizado para los datos del adaptador de datos de diagnóstico](../test/quickstart-create-a-load-test-project.md)

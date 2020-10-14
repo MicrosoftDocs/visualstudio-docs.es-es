@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809038"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928546"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
@@ -32,7 +32,7 @@ Puede usar cualquiera de los siguientes métodos para compilar una aplicación: 
 | Línea de comandos de MSBuild| - Compilar proyectos sin instalar Visual Studio.<br />- Ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Personalizar la mayoría de las áreas del sistema de compilación.|
 | Azure Pipelines | - Automatizar el proceso de compilación como parte de una canalización de integración continua o entrega continua.<br />- Aplicar pruebas automatizadas con cada compilación.<br />- Emplear recursos basados en la nube prácticamente ilimitados para los procesos de compilación.<br />- Modificar el flujo de trabajo de compilación y crear actividades de compilación para realizar tareas muy personalizadas.|
 
-La documentación de esta sección analiza en detalle el proceso de compilación basado en el IDE. Para obtener más información sobre los otros métodos, vea [MSBuild](../msbuild/msbuild.md) y [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) respectivamente.
+La documentación de esta sección analiza en detalle el proceso de compilación basado en el IDE. Para obtener más información sobre los otros métodos, vea [MSBuild](../msbuild/msbuild.md) y [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) respectivamente.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Compilar y generar en Visual Studio para Mac](/visualstudio/mac/compiling-and-building).

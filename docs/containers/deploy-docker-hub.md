@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485143"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829902"
 ---
 # <a name="deploy-to-docker-hub"></a>Implementación en Docker Hub
 
@@ -40,7 +40,7 @@ Si no tiene un repositorio de Docker Hub, cree uno en [Docker Hub](https://hub.d
 
    ![Captura de pantalla del cuadro de diálogo Docker Hub](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. Si se conecta a su propio repositorio (que no es parte de una organización), deje activada la casilla **Publicar en un repositorio personal**. Si el repositorio es propiedad de una organización, desactive la casilla y escriba el nombre de la organización. Escriba su nombre de usuario y contraseña de la cuenta de Docker que tenga permisos para acceder al repositorio al que se está conectando y, a continuación, seleccione **Guardar**.  
+1. Si se conecta a su propio repositorio (que no es parte de una organización), deje activada la casilla **Publicar en un repositorio personal**. Si el repositorio es propiedad de una organización, desactive la casilla y escriba el nombre de la organización. Escriba su nombre de usuario y contraseña de la cuenta de Docker que tenga permisos para acceder al repositorio al que se está conectando y, a continuación, seleccione **Guardar**.
 
    Visual Studio intenta implementar la imagen en Docker Hub.  Si se realiza correctamente, aparece la pantalla **Publicar** con la dirección URL de la imagen del repositorio, la etiqueta de la imagen, el repositorio y la configuración de compilación (por ejemplo, **Versión**).
 
@@ -52,7 +52,7 @@ Si no tiene un repositorio de Docker Hub, cree uno en [Docker Hub](https://hub.d
 
 Publique en [Azure Container Registry](/azure/container-registry/) siguiendo los pasos que se describen en [Implementación en Azure Container Registry](hosting-web-apps-in-docker.md).
 
-Configure la integración y entrega continuas (CI/CD) con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
+Configure la integración y entrega continuas (CI/CD) con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
 
 ## <a name="see-also"></a>Vea también
 

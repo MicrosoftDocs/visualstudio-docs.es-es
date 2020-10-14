@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4fb186c97126d843cc47c16fa16a836914ed2e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2366e77b0b66e2a31ce17e1aefb9240e4f45df2d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287771"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928650"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedimiento Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas
 
@@ -28,7 +28,7 @@ La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizada
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Para configurar la grabación de pantalla y voz para la configuración de pruebas
 
-1. Abra la configuración de pruebas para la que va a configurar grabaciones de pantalla y voz. Para obtener más información, vea [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)] o [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
+1. Abra la configuración de pruebas para la que va a configurar grabaciones de pantalla y voz. Para obtener más información, vea [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)] o [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
 
 2. En la configuración de pruebas, seleccione el **Rol** que se usará para grabar la pantalla y la voz.
 
@@ -69,7 +69,7 @@ La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizada
 
 ## <a name="see-also"></a>Vea también
 
-- [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]
-- [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]
+- [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]
+- [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]
 - [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md)
-- [Run manual tests (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts) [Ejecutar pruebas manuales (Azure Test Plans)]
+- [Run manual tests (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts&preserve-view=true) [Ejecutar pruebas manuales (Azure Test Plans)]

@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: fbb3cfe6453c68079cb4b4cc6b57f8494f45c0cc
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845948"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829882"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funcionamiento del Puente a Kubernetes
 
@@ -40,7 +40,7 @@ Cuando Puente a Kubernetes establece una conexión con el clúster, hace lo sigu
 * Reemplaza el contenedor del pod en el clúster por un contenedor de agente remoto que redirige el tráfico al equipo de desarrollo.
 * Ejecuta [kubectl port-forward][kubectl-port-forward] en el equipo de desarrollo para reenviar el tráfico desde el equipo de desarrollo al agente remoto que se ejecuta en el clúster.
 * Recopila información de entorno del clúster mediante el agente remoto. Esta información de entorno incluye variables de entorno, servicios visibles, montajes de volúmenes y montajes de secretos.
-* Configura el entorno en Visual Studio de modo que el servicio del equipo de desarrollo pueda acceder a las mismas variables como si se estuviera ejecutando en el clúster.  
+* Configura el entorno en Visual Studio de modo que el servicio del equipo de desarrollo pueda acceder a las mismas variables como si se estuviera ejecutando en el clúster.
 * Actualiza el archivo de hosts para asignar servicios en el clúster a direcciones IP locales en el equipo de desarrollo. Estas entradas de archivo de host permiten que el código que se ejecuta en el equipo de desarrollo realice solicitudes a otros servicios que se ejecutan en el clúster. Para actualizar el archivo hosts, Puente a Kubernetes solicitará acceso de administrador en el equipo de desarrollo al conectarse al clúster.
 * Comienza a ejecutar y depurar el código en el equipo de desarrollo. Si es necesario, Puente a Kubernetes liberará los puertos necesarios en el equipo de desarrollo mediante la detención de los servicios o procesos que usan actualmente esos puertos.
 
@@ -72,7 +72,7 @@ Cuando se habilita el trabajo de forma aislada, además de conectarse al clúste
 Si Puente a Kubernetes detecta que Azure Dev Spaces está habilitado en el clúster de Kubernetes, se le pedirá que deshabilite Azure Dev Spaces para poder usar Puente a Kubernetes.
 
 El administrador de enrutamiento hace lo siguiente cuando se inicia:
-* Duplica todas las entradas que se encuentran en el espacio de nombres, para lo que usa *GENERATED_NAME* para el subdominio. 
+* Duplica todas las entradas que se encuentran en el espacio de nombres, para lo que usa *GENERATED_NAME* para el subdominio.
 * Crea un pod de envío para cada servicio asociado a las entradas duplicadas con el subdominio *GENERATED_NAME*.
 * Crea un pod de envío adicional para el servicio en el que se trabaja de forma aislada. Esto permite que las solicitudes con el subdominio se enruten al equipo de desarrollo.
 * Configura reglas de enrutamiento para que cada pod de envío controle el enrutamiento de servicios con el subdominio.
@@ -92,7 +92,7 @@ Cuando se recibe en el clúster una solicitud sin el subdominio *GENERATED_NAME*
 > [!IMPORTANT]
 > Cada servicio del clúster debe reenviar el encabezado *kubernetes-route-as=GENERATED_NAME* al realizar solicitudes adicionales. Por ejemplo, cuando *serviceA* recibe una solicitud, realiza una solicitud a *serviceB* antes de devolver una respuesta. En este ejemplo, *serviceA* tiene que reenviar el encabezado *kubernetes-route-as=GENERATED_NAME* de su solicitud a *serviceB*. Algunos lenguajes, como [ASP.NET][asp-net-header], pueden tener métodos para controlar la propagación de encabezados.
 
-Cuando se desconecta del clúster, de forma predeterminada, Puente a Kubernetes quitará todos los pods de envío y el servicio duplicado. 
+Cuando se desconecta del clúster, de forma predeterminada, Puente a Kubernetes quitará todos los pods de envío y el servicio duplicado.
 
 > [!NOTE]
 > La implementación y el servicio del administrador de enrutamiento seguirán ejecutándose en el espacio de nombres. Para quitar la implementación y el servicio, ejecute los siguientes comandos para el espacio de nombres.
@@ -126,7 +126,7 @@ Para empezar a usar Puente a Kubernetes para conectarse al equipo de desarrollo 
 [asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
-[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest
+[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true
 [bridge-to-kubernetes-vs]: bridge-to-kubernetes.md
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/

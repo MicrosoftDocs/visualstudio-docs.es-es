@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: d17675f5babcdade8e6f96982f175553482920a9
-ms.sourcegitcommit: 036b0dfa651f7218ed33e6a19425613599ee58fa
+ms.openlocfilehash: 5881e1dfb1842e2a6d85efe73534f8db2e2f734e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91636834"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830744"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publique una aplicación web en Azure App Service mediante Visual Studio
 
 Para las aplicaciones ASP.NET, ASP.NET Core, Node.js y .NET Core, publique en Azure App Service o Azure App Service para Linux (con contenedores) mediante uno de los métodos siguientes.
 
-* Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
 * Para la implementación de un solo uso (o manual) de aplicaciones, use la herramienta de **publicación** de Visual Studio para implementar aplicaciones ASP.NET, ASP.NET Core, Node.js y .NET Core en Azure App Service o [App Service para Linux](../deployment/quickstart-deploy-to-linux.md) (con contenedores). En el caso de las aplicaciones de Python, siga los pasos de [Publicación en Azure App Service (Python)](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
