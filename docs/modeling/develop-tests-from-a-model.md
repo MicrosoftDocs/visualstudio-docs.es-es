@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22c18fd457d4827d3abf3a3494ad622873eb5c7b
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596663"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099302"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.
@@ -59,7 +59,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 
 1. En [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], cree un requisito y base en él un conjunto de pruebas.
 
-    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que use el proyecto con Team Foundation. Para obtener más información, vea [acerca de las herramientas ágiles y la administración de proyectos de Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que use el proyecto con Team Foundation. Para obtener más información, vea [acerca de las herramientas ágiles y la administración de proyectos de Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true).
 
 2. Vincule el elemento de trabajo de requisito a uno o varios casos de uso del modelo.
 
@@ -131,7 +131,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Adjuntar casos de prueba a elementos del modelo
  Si el proyecto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], puede vincular las pruebas a los elementos del modelo. Esto le permite buscar rápidamente las pruebas afectadas por un cambio en los requisitos y le ayuda a controlar en qué medida se ha completado un requisito.
 
- Puede vincular las pruebas a todos los tipos de elemento. Estos son algunos ejemplos:
+ Puede vincular las pruebas a todos los tipos de elemento. A continuación se muestran algunos ejemplos:
 
 - Vincule un caso de uso a las pruebas que lo verifican.
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. En [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], cree un requisito y base en él un conjunto de pruebas.
 
-    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que use el proyecto con Team Foundation. Para obtener más información, vea [acerca de las herramientas ágiles y la administración de proyectos de Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que use el proyecto con Team Foundation. Para obtener más información, vea [acerca de las herramientas ágiles y la administración de proyectos de Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true).
 
 2. Vincule el elemento de trabajo de requisito a uno o varios elementos del modelo.
 
@@ -155,7 +155,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Agregue al conjunto de pruebas casos de prueba que verifiquen el requisito expresado en el elemento de modelo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
 - [Requisitos del usuario de modelos](../modeling/model-user-requirements.md)
