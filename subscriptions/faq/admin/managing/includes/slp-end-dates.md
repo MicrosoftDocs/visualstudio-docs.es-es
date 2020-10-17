@@ -1,18 +1,18 @@
 ---
 title: ¿Por qué mi contrato de SLP tiene una fecha de finalización y por qué a veces es diferente para los suscriptores?
 description: Los contratos de SLP y MPSA no expiran, pero actualmente en el portal se necesita una fecha de finalización al aprovisionar el contrato. Actualmente...
-ms.faqid: group1_8
+ms.faqid: group1_9
 ms.topic: include
 ms.assetid: 9e5fac98-676a-4187-9323-ff5e113be282
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 0a78623c3bec97a579f1d071afd376e40827f563
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 8a1692e9739a3cfe68f25cc61596a001732c6f7c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386374"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157987"
 ---
 ## <a name="why-does-my-slp-agreement-have-an-end-date-and-why-is-it-sometimes-different-for-my-subscribers"></a>¿Por qué mi contrato de SLP tiene una fecha de finalización y por qué a veces es diferente para los suscriptores?
 

@@ -1,18 +1,18 @@
 ---
 title: ¿Cuál es la diferencia entre una dirección de correo electrónico de inicio de sesión y una dirección de correo electrónico de notificación?
 description: Los usuarios que tengan asignada una suscripción recibirán comunicaciones periódicas del equipo de Visual Studio, incluido un correo electrónico...
-ms.faqid: group1_4
+ms.faqid: group1_5
 ms.topic: include
 ms.assetid: 3b7b2932-3274-4275-9d80-b28406bcefc4
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 9231a46a0cc4266406c2690426f5921786d47461
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: dd2c7de8ad2c96c148857b2c11960fba190a5939
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386164"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157829"
 ---
 ## <a name="what-is-the-difference-between-a-sign-in-email-address-and-a-notification-email-address"></a>¿Cuál es la diferencia entre una dirección de correo electrónico de inicio de sesión y una dirección de correo electrónico de notificación?
 
