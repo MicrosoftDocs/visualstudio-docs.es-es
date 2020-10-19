@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350737"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Depuración de un paquete de aplicaciones para UWP instalado en Visual Studio
