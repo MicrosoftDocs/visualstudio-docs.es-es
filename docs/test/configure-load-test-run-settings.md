@@ -8,12 +8,12 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8002373b7ad34796df557686c1aff6a417d49ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a485b3648f69276c0d1cc472dda70524a00d9c1c
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288837"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099419"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurar los parámetros de ejecución de pruebas de carga
 
@@ -37,6 +37,6 @@ Los parámetros de ejecución iniciales se crean al generar una prueba de carga 
 |**Especificar el número de iteraciones de pruebas en los parámetros de ejecución de pruebas de carga:** puede especificar el número de veces que se ejecutan todas las pruebas unitarias y de rendimiento web en todos los escenarios de prueba de carga configurando la propiedad **Iteraciones de prueba**.|-   [Cómo: Especificar el número de iteraciones de prueba del parámetro de ejecución](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Especificar la frecuencia de muestreo para un parámetro de ejecución de la prueba de carga:** puede especificar con qué frecuencia la prueba de carga recopila los datos del contador de rendimiento configurando la propiedad **Frecuencia de muestreo**.|-   [Cómo: Especificar la frecuencia de muestreo](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Especificar la opción de almacenamiento de detalles de tiempo:** puede especificar cómo desea que se guarden los detalles de la prueba de carga configurando la propiedad **Almacenamiento de detalles de tiempo**.|-   [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**Especificar el período de retención de recursos de prueba:** puede acelerar el ciclo de prueba > corrección > nueva prueba si conserva los recursos de la prueba durante un período concreto. Para ello, especifique la propiedad **Tiempo de retención de recursos**.|-   [Conservar los recursos necesarios para acelerar las pruebas de carga](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**Especificar el período de retención de recursos de prueba:** puede acelerar el ciclo de prueba > corrección > nueva prueba si conserva los recursos de la prueba durante un período concreto. Para ello, especifique la propiedad **Tiempo de retención de recursos**.|-   [Conservar los recursos necesarios para acelerar las pruebas de carga](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts&preserve-view=true)|
 |**Utilizar los parámetros de contexto:** puede utilizar los parámetros de contexto para parametrizar una cadena. Por ejemplo, si la prueba de carga contiene una prueba de rendimiento web que usa un servidor web parametrizado, puede agregar un parámetro de contexto a los parámetros de ejecución que se asigne a un servidor diferente.|-   [Cómo: Agregar parámetros de contexto a parámetros de ejecución](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**Configurar las propiedades de registro de pruebas:** puede configurar con qué frecuencia se escriben los datos en el registro que está asociado con los parámetros de ejecución de pruebas de carga. Esto es importante cuando se ejecuta una prueba de carga grande o compleja porque el registro puede alcanzar varios gigabytes.<br /><br /> También puede configurar el archivo de registro para que se guarde automáticamente cuando la prueba de carga no pueda depurar y analizar la aplicación.|-   [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)|

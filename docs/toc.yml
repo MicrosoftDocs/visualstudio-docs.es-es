@@ -1,7 +1,7 @@
 - name: Documentación del IDE de Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
-- name: Información general
+- name: Introducción
   expanded: true
   items:
     - name: Acerca de Visual Studio
@@ -178,6 +178,8 @@
       href: ide/index-writing-code.yml
     - name: Moverse por el IDE
       href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: "Uso de la búsqueda de Visual\_Studio"
+      href: ide/visual-studio-search.md
     - name: Soluciones y proyectos
       items:
         - name: Trabajar con soluciones y proyectos

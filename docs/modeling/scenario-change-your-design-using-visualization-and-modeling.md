@@ -1,5 +1,6 @@
 ---
-title: 'Escenario: Cambiar el diseño usando modelado y visualización'
+title: Cambiar el diseño mediante herramientas de visualización y modelado
+description: Información general sobre las herramientas de visualización y modelado de Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238899"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298586"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 
@@ -214,9 +216,9 @@ A medida que avanza su trabajo, los equipos actualizan los elementos de trabajo 
 
 Consulte:
 
-- [Sobre herramientas y gestión de proyectos de Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [Sobre herramientas y gestión de proyectos de Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [Gráficos, paneles y widgets (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
+- [Gráficos, paneles y widgets (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [Crear un registro de trabajo pendiente y tareas mediante Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ Para asegurarse de que el código se ajusta al diseño, los equipos configuran s
 
 Consulte:
 
-- [Probar la aplicación](/azure/devops/test/overview?view=vsts)
+- [Probar la aplicación](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
 
-- [Uso del control de versiones](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [Uso del control de versiones](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Actualización del sistema mediante visualización y modelado
 
@@ -484,5 +486,5 @@ Los diagramas de dependencia le ayudan a:
 
 - [Visualizar el código](../modeling/visualize-code.md)
 - [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)
-- [Usar modelos en Agile Development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usar modelos en Agile Development](/previous-versions/ff398061(v=vs.140))
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)

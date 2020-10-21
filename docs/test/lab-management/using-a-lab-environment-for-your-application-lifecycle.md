@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037229"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928113"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
 
@@ -45,7 +45,7 @@ Estos son algunos ejemplos de topologías comunes de entornos de laboratorio:
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Uso de la nube con Azure Pipelines o Compilación y versión de Team Foundation Server
 
-Puede realizar pruebas automatizadas y una automatización de compilación-implementación-prueba con las características de [compilación y versión](/azure/devops/pipelines/index?view=vsts) de Team Foundation Server (TFS) y Azure Test Plans. Estas son algunas de las ventajas:
+Puede realizar pruebas automatizadas y una automatización de compilación-implementación-prueba con las características de [compilación y versión](/azure/devops/pipelines/index?view=vsts&preserve-view=true) de Team Foundation Server (TFS) y Azure Test Plans. Estas son algunas de las ventajas:
 
 * No necesita un controlador de compilación o Test Controller.
 * Test Agent se instala mediante una tarea como parte de la compilación o versión.
@@ -94,7 +94,7 @@ Los **entornos de SCVMM** solo pueden contener máquinas virtuales administradas
 > [!NOTE]
 > Lab Management no admite SCVMM 2016.
 
-Para obtener información sobre SCVMM, vea [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
+Para obtener información sobre SCVMM, vea [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts&preserve-view=true).
 
 Los entornos estándar y los entornos de SCVMM admiten un gran número de características similares. Pero es importante conocer algunas diferencias importantes. En la tabla siguiente se comparan las características que están disponibles para entornos estándar y para entornos de SCVMM.
 
