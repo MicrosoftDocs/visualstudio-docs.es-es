@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661896"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298394"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluciones de SharePoint
-  Los siguientes problemas o alertas pueden producirse al depurar las soluciones de SharePoint mediante el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, vea [depurar soluciones de flujo de trabajo de SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Los siguientes problemas o alertas pueden producirse al depurar las soluciones de SharePoint mediante el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, vea [depurar soluciones de flujo de trabajo de SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restricciones de token en elementos Web visuales en espacio aislado
  Los elementos web visuales en soluciones en espacio aislado no pueden procesar tokens estándar, como $SPUrl, que admite el runtime de SharePoint. Como resultado, la dirección URL no se soluciona y no se puede obtener una vista previa del contenido en la vista Diseño del diseñador del elemento web visual, si se hace referencia directamente en un elemento script, como en el ejemplo siguiente:
@@ -277,7 +277,7 @@ ms.locfileid: "73661896"
 ### <a name="resolution"></a>Resolución
  Para resolver este problema, asegúrese de que el valor de propiedad URL del sitio del proyecto de SharePoint en Visual Studio coincide con la dirección URL que está asignada a la zona predeterminada para las asignaciones de acceso alternativas de la aplicación web. No se resuelve el error si se usa otra zona, como la intranet, para la dirección URL. La dirección URL del sitio del proyecto y la dirección URL de la zona predeterminada deben coincidir. Para acceder a las asignaciones de acceso alternativas, abra la utilidad de administración central de SharePoint 2010, elija el vínculo **Administración de aplicaciones** y, a continuación, en **aplicaciones web**, elija el vínculo **configurar asignaciones de acceso alternativas** . Para obtener más información, vea [crear zonas para aplicaciones web](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12)).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Solucionar problemas de empaquetado e implementación de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)

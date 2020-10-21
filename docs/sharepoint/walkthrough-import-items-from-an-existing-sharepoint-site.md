@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: importar elementos de un sitio de SharePoint existente | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bc2ceacfde599a70b4e84bba134c4a4d5f9757
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017111"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298640"
 ---
-# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Tutorial: importar elementos de un sitio de SharePoint existente
+# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Tutorial: Importación de elementos desde un sitio de SharePoint existente
   En este tutorial se muestra cómo importar elementos de un sitio de SharePoint existente en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.
 
  En este tutorial se muestran las siguientes tareas:
@@ -141,6 +142,6 @@ ms.locfileid: "86017111"
      Observe que en la lista aparece la columna de sitio personalizado que importó desde el primer sitio de SharePoint.
 
 ## <a name="see-also"></a>Consulte también
-- [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
+- [Importación de elementos desde un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Crear controles reutilizables para elementos Web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Creación de controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

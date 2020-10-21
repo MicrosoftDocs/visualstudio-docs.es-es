@@ -1,5 +1,6 @@
 ---
 title: Crear columna de sitio, tipo de contenido y lista para SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -19,14 +20,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015266"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298375"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: crear una columna de sitio, un tipo de contenido y una lista para SharePoint
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Creación de una columna, un tipo de contenido y una lista de sitios para SharePoint
   Los procedimientos siguientes muestran cómo crear columnas de sitio de SharePoint personalizadas, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También se muestra cómo crear una lista que usa el nuevo tipo de contenido.
 
  En este tutorial se incluyen las tareas siguientes:
@@ -239,7 +240,7 @@ ms.locfileid: "86015266"
      El nuevo registro aparece en la lista.
 
 ## <a name="see-also"></a>Consulte también
-- [Crear columnas de sitio, tipos de contenido y listas para SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
+- [Creación de listas, tipos de contenido y columnas de sitio para SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Cómo: crear un tipo de campo personalizado](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
 - [Tipos de contenido](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))

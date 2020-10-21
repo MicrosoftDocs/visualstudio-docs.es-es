@@ -1,5 +1,6 @@
 ---
 title: 'Tutorial: llamar a código desde VBA en un proyecto de Visual Basic'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843203"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298259"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Tutorial: llamar a código desde VBA en un proyecto de Visual Basic
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Word desde el código de Visual Basic para Aplicaciones (VBA) del documento. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `ThisDocument` , exponer el método a código VBA y llamar al método desde código VBA del documento.
@@ -88,7 +89,7 @@ ms.locfileid: "90843203"
 
 7. Guarde el documento y salga de Word.
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
  Ahora puede crear un proyecto de nivel de documento para Word que use el documento habilitado para macros creado anteriormente.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
@@ -105,7 +106,7 @@ ms.locfileid: "90843203"
 
 6. En el cuadro **Nombre** , escriba **CallingCodeFromVBA**.
 
-7. Haga clic en **Aceptar**.
+7. Haga clic en **OK**.
 
      Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .
 
@@ -215,7 +216,7 @@ ms.locfileid: "90843203"
 
 - Llamar a código en un complemento de VSTO desde VBA. Para obtener más información, vea [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
 - [Cómo: exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

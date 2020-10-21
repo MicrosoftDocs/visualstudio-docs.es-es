@@ -1,5 +1,6 @@
 ---
 title: Crear un elemento Web de Silverlight que muestre OData para SharePoint
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017175"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298503"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Tutorial: crear un elemento Web de Silverlight que muestre OData para SharePoint
   SharePoint 2010 expone sus datos de lista por medio de OData. En SharePoint, el servicio de OData se implementa mediante el servicio RESTful ListData. SVC. En este tutorial se muestra cómo crear un elemento Web de SharePoint que hospeda una aplicación de Silverlight. La aplicación de Silverlight muestra información de la lista de anuncios de SharePoint mediante ListData. SVC. Para obtener más información, vea [interfaz de REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) y [Open Data Protocol](https://www.odata.org/).
@@ -68,7 +69,7 @@ ms.locfileid: "86017175"
 
 #### <a name="to-customize-the-silverlight-application"></a>Para personalizar la aplicación de Silverlight
 
-1. Agregue una referencia de ensamblado a System. Windows. Data en la aplicación de Silverlight. Para obtener más información, vea [Cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Agregue una referencia de ensamblado a System. Windows. Data en la aplicación de Silverlight. Para obtener más información, vea [Cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](/previous-versions/wkze6zky(v=vs.140)).
 
 2. En **Explorador de soluciones**, abra el menú contextual para **referencias**y, a continuación, elija **Agregar referencia de servicio**.
 
@@ -231,5 +232,5 @@ ms.locfileid: "86017175"
     > Al tener acceso a los datos de Silverlight entre dominios, Silverlight protege frente a las vulnerabilidades de seguridad que se pueden usar para aprovechar las aplicaciones Web. Si tiene problemas al obtener acceso a datos remotos en Silverlight, consulte [hacer que un servicio esté disponible a través](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))de los límites del dominio.
 
 ## <a name="see-also"></a>Consulte también
-- [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Creación de elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Implementar, publicar y actualizar paquetes de soluciones de SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
+ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546723"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92298203"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar la transformación de texto en el proceso de compilación
 
@@ -153,13 +153,13 @@ La transformación de texto se realiza antes que otras tareas del proceso de com
 <PropertyGroup>
     <BeforeTransform>CustomPreTransform</BeforeTransform>
     <AfterTransform>CustomPostTransform</AfterTransform>
-  </PropertyGroup>
-  <Target Name="CustomPreTransform">
+</PropertyGroup>
+<Target Name="CustomPreTransform">
     <Message Text="In CustomPreTransform..." Importance="High" />
-  </Target>
-  <Target Name="CustomPostTransform">
+</Target>
+<Target Name="CustomPostTransform">
     <Message Text="In CustomPostTransform..." Importance="High" />
-  </Target>
+</Target>
 ```
 
 En `AfterTransform`, se puede hacer referencia a listas de archivos:
@@ -283,7 +283,7 @@ Ahora puede usar la propiedad del proyecto en directivas de ensamblado e inclusi
 
 Estas directivas obtienen valores de T4parameterValues tanto en hosts de MSBuild y como en hosts de Visual Studio.
 
-## <a name="q--a"></a>Preguntas y respuestas
+## <a name="q--a"></a>Q & A
 
 **¿Por qué sería conveniente transformar las plantillas en el servidor de compilación? Ya he transformado plantillas en Visual Studio antes de proteger el código.**
 
@@ -299,7 +299,7 @@ Si actualiza un archivo incluido u otro archivo leído por la plantilla, Visual 
 
 - [Las plantillas de texto en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md) se transforman en tiempo de ejecución en la aplicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 ::: moniker range="vs-2017"
 

@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4a15a6cd0d38ca06b1a0ae25be69a24d42ba8cb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115057"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298105"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 
@@ -138,7 +138,7 @@ Los distintos tipos de diagramas resultan útiles para describir el diseño con 
 
 ## <a name="see-also"></a>Consulte también
 
-- [Usar modelos en Agile Development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usar modelos en Agile Development](/previous-versions/ff398061(v=vs.140))
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
 - [Requisitos del usuario de modelos](../modeling/model-user-requirements.md)
 - [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)

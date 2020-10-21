@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio | Microsoft Docs'
+title: 'Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015706"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298031"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer
+
   En este tutorial se muestra cómo importar un flujo de trabajo reutilizable creado en SharePoint Designer 2010 en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de flujo de trabajo de SharePoint.
 
  Los flujos de trabajo creados en SharePoint Designer, o *flujos de trabajo declarativos*, se componen de [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrucciones en lugar de código. SharePoint Designer 2010 presenta *flujos de trabajo reutilizables*, que son flujos de trabajo declarativos y portátiles que se pueden usar en distintas listas de sitios de SharePoint.
@@ -186,7 +188,7 @@ ms.locfileid: "86015706"
 
      Esto muestra la lista inmediatamente al depurar el proyecto.
 
-11. Dado que la plantilla de **flujo de trabajo importar reutilizable de SharePoint 2010** no importa los valores de propiedad de Asociación para el flujo de trabajo importado, debe escribirlos. Para realizar esta tarea:
+11. Dado que la plantilla de **flujo de trabajo importar reutilizable de SharePoint 2010** no importa los valores de propiedad de Asociación para el flujo de trabajo importado, debe escribirlos. Para ello, siga estos pasos:
 
     1. En **Explorador de soluciones**, elija el nodo **SPD_Workflow_TestFT** .
 
@@ -261,6 +263,6 @@ ms.locfileid: "86015706"
      Observe que el flujo de trabajo realiza dos acciones: su nombre aparece en la columna **asignado a** de la tarea y aparece un anuncio en la lista **anuncios** .
 
 ## <a name="see-also"></a>Consulte también
-- [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
+- [Importación de elementos desde un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Crear controles reutilizables para elementos Web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Creación de controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

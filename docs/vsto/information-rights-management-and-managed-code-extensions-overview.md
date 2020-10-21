@@ -1,5 +1,6 @@
 ---
 title: Information Rights Management & extensiones de código administrado
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b55855184aaef57ec0a3425abed7d235ec837b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68872060"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298065"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Información general sobre Information Rights Management y extensiones de código administrado
   Microsoft Office Word y Microsoft Office Excel proporcionan información Rights Management (IRM), una característica que puede ayudarle a evitar que personas no autorizadas vean o modifiquen información confidencial. Para obtener más información sobre cómo funciona la información Rights Management, vea la ayuda de en la aplicación de Office específica.
@@ -39,7 +40,7 @@ ms.locfileid: "68872060"
 
  Para solucionar el problema, alguien con acceso de control total al documento o libro debe cambiar la configuración de permisos predeterminada para permitir el acceso mediante programación al modelo de objetos. Para obtener más información, vea [Cómo: permitir que el código se ejecute detrás de documentos con permisos restringidos](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Protección de documentos en soluciones de nivel de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Protección mediante contraseña en documentos de Office](../vsto/password-protection-on-office-documents.md)
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

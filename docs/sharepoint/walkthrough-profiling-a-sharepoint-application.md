@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017103"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298630"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite localizar y eliminar la parte más costosa (rendimiento más lento) del proyecto, también conocida como la *ruta de acceso activa*.
@@ -275,4 +275,4 @@ ms.locfileid: "86017103"
 ## <a name="see-also"></a>Consulte también
 - [Introducción a la sesión de rendimiento](../profiling/performance-session-overview.md)
 - [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
-- [Find Application Bottlenecks with Visual Studio Profiler (Detección de cuellos de botella de las aplicaciones con el generador de perfiles de Visual Studio)](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Find Application Bottlenecks with Visual Studio Profiler (Detección de cuellos de botella de las aplicaciones con el generador de perfiles de Visual Studio)](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)
