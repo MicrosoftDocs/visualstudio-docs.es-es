@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184411"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467653"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Patrones de interacción para Visual Studio
 ## <a name="overview"></a>Información general
  En general, un modelo de diseño es el núcleo de un diseño que se puede aplicar en situaciones específicas para solucionar problemas con conjuntos de restricciones similares. Los diseñadores de características y sistemas usan estos patrones de diseño como puntos de partida, que después se pueden adaptar a su situación específica.
 
- Visual Studio tiene una biblioteca de patrones de interacción comunes que se deben tener en cuenta al crear nuevas características. Hay dos contextos principales para nuestros patrones de diseño: Visual Studio Client (devenv) y Visual Studio Codespaces (anteriormente Visual Studio online). En el caso de algunos problemas de diseño, hay un patrón omnipresente que funciona bien en todas las situaciones. En muchos casos, sin embargo, la solución puede ser diferente para la interfaz de usuario que se presenta en un explorador y que se hospeda en una aplicación cliente.
+ Visual Studio tiene una biblioteca de patrones de interacción comunes que se deben tener en cuenta al crear nuevas características. Hay dos contextos principales para nuestros patrones de diseño: Visual Studio Client (devenv) y GitHub Codespaces (anteriormente Visual Studio online). En el caso de algunos problemas de diseño, hay un patrón omnipresente que funciona bien en todas las situaciones. En muchos casos, sin embargo, la solución puede ser diferente para la interfaz de usuario que se presenta en un explorador y que se hospeda en una aplicación cliente.
 
 ### <a name="visual-studio-client-pattern-types"></a>Tipos de patrón de cliente de Visual Studio
 
