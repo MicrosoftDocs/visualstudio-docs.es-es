@@ -1,6 +1,7 @@
 ---
 title: Solución de problemas del emulador de Visual Studio para Android | Microsoft Docs
-ms.custom: ''
+description: Obtenga información que le ayude a resolver problemas que puede experimentar al usar el emulador de Visual Studio para Android.
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -12,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfcae9ac15292a52a79c97b5b67e758b9dc0dcde
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386308"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878922"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Solución de problemas del emulador de Visual Studio para Android
 Este tema contiene información para ayudarle a resolver problemas que puede experimentar cuando usa el Emulador de Visual Studio para Android.
@@ -181,7 +182,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
   6. Asegúrese de que está ejecutando Windows 8 Professional o superior (Windows Server 2008 no es compatible). Windows Server 2012 sí es compatible, pero debe habilitar la Experiencia de escritorio.
 
-     Puede inspeccionar el Visor de eventos para ver si hay algún error de hipervisor. Para ello, abra el Visor de eventos (**tecla Inicio**+**R** y luego escriba `eventvwr`) y elija **Registros de Windows**, **Sistema**. Después, filtre el registro por origen de eventos y establezca el origen en **Hipervisor de Hyper-V**. Compruebe si hay errores para ayudar a identificar la causa.
+     Puede inspeccionar el Visor de eventos para ver si hay algún error de hipervisor. Para ello, abra el Visor de eventos ( **tecla Inicio**+**R** y luego escriba `eventvwr`) y elija **Registros de Windows** , **Sistema** . Después, filtre el registro por origen de eventos y establezca el origen en **Hipervisor de Hyper-V** . Compruebe si hay errores para ayudar a identificar la causa.
 
      Si el procesador cumple los requisitos mínimos pero el hipervisor sigue fallando, considere la posibilidad de buscar si hay disponible una actualización de la BIOS de su equipo. Si la hay y decide actualizarla, cumpla durante este proceso todas las precauciones indicadas por el fabricante (como asegurarse de que la actualización del firmware de la BIOS no se interrumpa por una pérdida de corriente, lo que podría dañar la BIOS de forma permanente).
 
@@ -195,7 +196,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
    Los siguientes productos pueden requerir una actualización de compatibilidad con Windows 8: VirtualBox, Virtual PC 7, VMWare, algunos clientes VPN, firewalls de software, algunas versiones de los clientes VPN de Cisco y otros sistemas de virtualización. Póngase en contacto con los desarrolladores del software de virtualización de funcionamiento dudoso para animarlos a actualizarlo, de modo que sea compatible con Windows 8 e Hyper-V.
 
-   Como *solución alternativa*, puede deshabilitar todos los controladores y aplicaciones de terceros que puedan interferir con la red virtual usada por el emulador para comunicarse con Visual Studio. Entre estas aplicaciones pueden estar:
+   Como *solución alternativa* , puede deshabilitar todos los controladores y aplicaciones de terceros que puedan interferir con la red virtual usada por el emulador para comunicarse con Visual Studio. Entre estas aplicaciones pueden estar:
 
   - Aplicaciones antivirus (que se conectan con la pila de red)
 
@@ -241,7 +242,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
      Después de desinstalar productos de terceros, es posible que necesite restaurar el conmutador interno del emulador de Windows Phone. Siga estos pasos:
 
-  - Abra Hyper V y vaya al Administrador de conmutadores virtuales. Crear un conmutador virtual denominado "Conmutador interno del emulador de Windows Phone" y establezca su tipo de conexión en **Red interna**.
+  - Abra Hyper V y vaya al Administrador de conmutadores virtuales. Crear un conmutador virtual denominado "Conmutador interno del emulador de Windows Phone" y establezca su tipo de conexión en **Red interna** .
 
      ![Administrador de conmutadores virtuales](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")
 
@@ -261,7 +262,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 ## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE.
  Si el emulador se está ejecutando, pero no parece estar conectado a ADB (Android Debug Bridge) o no aparece en las herramientas de Android que usan ADB (por ejemplo, Android Studio o Eclipse), puede que necesite ajustar la ubicación en la que el emulador busca ADB. El emulador usa una clave de registro para identificar la ubicación base del SDK de Android y busca el archivo \platform-tools\adb.exe en ese directorio. Para modificar la ruta de acceso del SDK de Android usada por el emulador:
 
-- Abra el Editor del registro seleccionando **Ejecutar** en el menú contextual de los botones de Inicio. Luego, escriba `regedit` en el cuadro de diálogo y elija **Aceptar**.
+- Abra el Editor del registro seleccionando **Ejecutar** en el menú contextual de los botones de Inicio. Luego, escriba `regedit` en el cuadro de diálogo y elija **Aceptar** .
 
 - Vaya a *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* en el árbol de carpetas de la izquierda.
 
@@ -289,11 +290,11 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 3. Seleccione **Configuración...**
 
-4. Expanda el nodo del procesador y elija **Compatibilidad**.
+4. Expanda el nodo del procesador y elija **Compatibilidad** .
 
-5. Habilite **Migrar a un equipo físico con una versión de procesador distinta**.
+5. Habilite **Migrar a un equipo físico con una versión de procesador distinta** .
 
-6. Reinicie el servicio (en **Acciones**) e inténtelo de nuevo.
+6. Reinicie el servicio (en **Acciones** ) e inténtelo de nuevo.
 
 ## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa Google Play Services
  El emulador no se distribuye con las bibliotecas de los servicios de Google Play. Sin embargo, el emulador no admite la instalación de archivos zip con memoria Flash mediante arrastrar y soltar.
@@ -302,7 +303,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
  El emulador utiliza ADB.exe para facilitar la transferencia de archivos cuando arrastra y coloca un archivo en la pantalla. Si se produce un error al intentar arrastrar y colocar un archivo, probablemente se debe a que el emulador no está conectado a ADB.exe. Para resolverlo, siga los pasos descritos en [Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE](#ADB).
 
 ## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> La resolución de captura de pantalla es incorrecta
- Si realiza una captura mediante la pestaña Captura de pantalla de la ventana **Herramientas adicionales** y la imagen resultante tiene un tamaño inesperado, puede que necesite ajustar el nivel de zoom de la pantalla antes de elegir **Capturar**. El emulador realiza capturas de pantalla con la resolución del monitor de su equipo host.
+ Si realiza una captura mediante la pestaña Captura de pantalla de la ventana **Herramientas adicionales** y la imagen resultante tiene un tamaño inesperado, puede que necesite ajustar el nivel de zoom de la pantalla antes de elegir **Capturar** . El emulador realiza capturas de pantalla con la resolución del monitor de su equipo host.
 
 ## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> El emulador no representa el contenido OpenGL
  El emulador representa el contenido OpenGL con la GPU de su equipo host y usa el proyecto ANGLE para convertir estas llamadas a y desde DirectX. Si la aplicación se representa correctamente en un dispositivo pero de forma incorrecta en el emulador, es probable que el dispositivo esté realizando una llamada OpenGL incorrecta (por ejemplo, usando variables de sombreador que no coincidan).

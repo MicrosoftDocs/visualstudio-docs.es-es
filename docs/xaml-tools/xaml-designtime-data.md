@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659484"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298471"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Uso de datos de tiempo de diseño con el Diseñador XAML en Visual Studio
 
@@ -135,6 +135,43 @@ xmlns:models="clr-namespace:Cities.Models"
 [![Modelo real de datos en tiempo de diseño con un control ListView](media\xaml-design-time-listview-models.png "Modelo real de datos en tiempo de diseño con un control ListView")](media\xaml-design-time-listview-models.png#lightbox)
 
 La ventaja es que puede enlazar los controles a una versión estática en tiempo de diseño del modelo.
+
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>Uso de datos en tiempo de diseño con tipos y propiedades personalizados
+
+De forma predeterminada, esta característica solo funciona con controles y propiedades de plataforma. En esta sección se habla de los pasos necesarios para que pueda usar sus propios controles personalizados como controles en tiempo de diseño, una nueva capacidad disponible para los clientes que usan Visual Studio 2019 versión preliminar [16.8](/visualstudio/releases/2019/preview-notes) o posterior. Hay tres requisitos para habilitarla:
+
+- Un espacio de nombres xmlns personalizado. 
+
+    ```xml
+    xmlns:myControls="http://MyCustomControls"
+    ```
+
+- Una versión en tiempo de diseño del espacio de nombres. Para conseguirlo, basta con anexar /design al final.
+
+     ```xml
+    xmlns:myDesignTimeControls="http://MyCustomControls/design"
+    ```
+
+- Incorporación del prefijo en tiempo de diseño a mc:Ignorable
+
+    ```xml
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d myDesignTimeControls"
+    ```
+
+Una vez realizados todos estos pasos, puede usar el prefijo `myDesignTimeControls` para crear los controles en tiempo de diseño.
+
+```xml
+<myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
+```
+
+### <a name="creating-a-custom-xmlns-namespace"></a>Creación de un espacio de nombres xmlns personalizado
+
+Para crear un espacio de nombres xmlns personalizado en WPF para .NET Core, debe asignar el espacio de nombres XML personalizado al espacio de nombres CLR en el que se encuentran los controles. Para ello, agregue el atributo de nivel de ensamblado `XmlnsDefinition` al archivo `AssemblyInfo.cs`. El archivo se encuentra en la jerarquía raíz del proyecto.
+
+   ```C#
+[assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
+   ```
 
 ## <a name="troubleshooting"></a>Solución de problemas
 

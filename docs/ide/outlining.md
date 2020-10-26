@@ -1,6 +1,8 @@
 ---
 title: Contracción y expansión de regiones de código
-ms.date: 11/04/2016
+description: Aprenda a usar los comandos Expandir y Contraer para trabajar en modo de esquema en Visual Studio
+ms.custom: SEO-VS-2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545449"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136672"
 ---
 # <a name="outlining"></a>esquematizar
 
@@ -29,25 +31,25 @@ Se puede ocultar algún código de la vista si se contrae una región de código
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor).
 
-Las regiones en el margen de esquematización también se resaltan cuando se mantiene el mouse sobre el margen. El color de resaltado predeterminado puede parecer bastante pálido en algunas configuraciones de color. Se puede cambiar en **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Región contraíble**.
+Las regiones en el margen de esquematización también se resaltan cuando se mantiene el mouse sobre el margen. El color de resaltado predeterminado puede parecer bastante pálido en algunas configuraciones de color. Se puede cambiar en **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Región contraíble** .
 
 Al trabajar en código esquematizado, se pueden expandir las secciones en las que se desea trabajar, contraerlas cuando se haya terminado y desplazarse a otras secciones. Cuando no quiere que se muestre la esquematización, se puede usar el comando **Detener esquematización** para quitar la información de esquematización sin alterar el código subyacente.
 
-Los comandos **Deshacer** y **Rehacer** del menú **Edición** afectan a estas acciones. **Copiar**, **Cortar**, **Pegar** y las operaciones de arrastrar y colocar conservan la información de esquematización, pero no el estado de la región contraíble. Por ejemplo, cuando copia una región que se contrae, la operación **Pegar** pegará el texto copiado como región expandida.
+Los comandos **Deshacer** y **Rehacer** del menú **Edición** afectan a estas acciones. **Copiar** , **Cortar** , **Pegar** y las operaciones de arrastrar y colocar conservan la información de esquematización, pero no el estado de la región contraíble. Por ejemplo, cuando copia una región que se contrae, la operación **Pegar** pegará el texto copiado como región expandida.
 
 > [!CAUTION]
-> Si se cambia una región esquematizada, se puede perder la esquematización. Por ejemplo, las eliminaciones o las operaciones Buscar y reemplazar pueden borrar el final de la región.
+> Si se cambia una región esquematizada, se puede perder la esquematización. Por ejemplo, las eliminaciones o las operaciones **Buscar y reemplazar** pueden borrar el final de la región.
 
 El submenú **Edición** > **Esquematización** contiene los siguientes comandos.
 
 |NOMBRE|Descripción|
 |-|-|
-|Ocultar selección|(**Ctrl**+**M**, **Ctrl**+**H**): contrae un bloque de código seleccionado que normalmente no estaría disponible para la esquematización, por ejemplo un bloque `if`. Para quitar la región personalizada, use **Detener ocultar actual** (o **Ctrl**+**M**, **Ctrl**+**U**). No está disponible en Visual Basic.|
-|Alternar expansión de esquematización|: invierte el estado oculto o expandido actual de la sección de esquematización más interna cuando el cursor se encuentra en una sección contraída anidada.|
-|Alternar toda la esquematización|(**Ctrl**+**M**, **Ctrl**+**L**): establece todas las regiones en el mismo estado contraído o expandido. Si algunas regiones están expandidas y otras están contraídas, las regiones contraídas se expanden.|
-|Detener esquematización|(**Ctrl**+**M**, **Ctrl**+**P**): quita toda la información de esquematización del documento completo.|
-|Detener ocultar actual|(**Ctrl**+**M**, **Ctrl**+**U**): quita la información de esquematización de la región definida por el usuario que está seleccionada actualmente. No está disponible en Visual Basic.|
-|Contraer a definiciones|(**Ctrl**+**M**, **Ctrl**+**O**): contrae los miembros de todos los tipos.|
+|Ocultar selección|( **Ctrl**+**M** , **Ctrl**+**H** ): contrae un bloque de código seleccionado que normalmente no estaría disponible para la esquematización, por ejemplo un bloque `if`. Para quitar la región personalizada, use **Detener ocultar actual** (o **Ctrl**+**M** , **Ctrl**+**U** ). No está disponible en Visual Basic.|
+|Alternar expansión de esquematización| ( **Ctrl**+**M** , **Ctrl**+**M** ): invierte el estado oculto o expandido actual de la sección de esquematización más interna cuando el cursor se encuentra en una sección contraída anidada.|
+|Alternar toda la esquematización|( **Ctrl**+**M** , **Ctrl**+**L** ): establece todas las regiones en el mismo estado contraído o expandido. Si algunas regiones están expandidas y otras están contraídas, las regiones contraídas se expanden.|
+|Detener esquematización|( **Ctrl**+**M** , **Ctrl**+**P** ): quita toda la información de esquematización del documento completo.|
+|Detener ocultar actual|( **Ctrl**+**M** , **Ctrl**+**U** ): quita la información de esquematización de la región definida por el usuario que está seleccionada actualmente. No está disponible en Visual Basic.|
+|Contraer a definiciones|( **Ctrl**+**M** , **Ctrl**+**O** ): contrae los miembros de todos los tipos.|
 |Contraer bloque:\<logical boundary>|(C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
 |Contraer todo en: \<logical structures>|(C++) Contrae todas las estructuras dentro de la función.|
 

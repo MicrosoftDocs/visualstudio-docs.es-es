@@ -1,5 +1,6 @@
 ---
 title: Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
+description: Aprenda a compilar previa o posteriormente eventos directamente en el cuadro de edición o a seleccionar macros anteriores o posteriores a la compilación en una lista de macros disponibles.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -35,12 +36,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9ec2acb6802c19b48ba6254fb0a8812935d400
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 538b6c0dc3a163936e04a85b374a239d43e46e8e
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038366"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136815"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
 

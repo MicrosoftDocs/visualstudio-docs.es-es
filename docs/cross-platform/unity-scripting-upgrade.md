@@ -1,5 +1,6 @@
 ---
 title: Uso de .NET 4.x en Unity
+description: Entienda cómo se usa .NET 4.x en Unity. Habilite el entorno de ejecución de scripting de .NET 4.x. Aproveche la compatibilidad de .NET. Revise las nuevas características de lenguaje y sintaxis.
 author: therealjohn
 ms.author: johmil
 ms.date: 08/29/2018
@@ -8,12 +9,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 06efbe9d346cbbe8b9e81d95be257742b659cf8f
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508982"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039851"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso de .NET 4.x en Unity
 
@@ -30,19 +31,19 @@ Con el lanzamiento de Unity 2017.1, Unity introdujo una versión experimental de
 
 Para habilitar el runtime de scripting de .NET 4.x, siga estos pasos:
 
-1. Abra Configuración del reproductor en el Inspector de Unity. Para ello, seleccione **Editar > Configuración del proyecto > Reproductor**.
+1. Abra Configuración del reproductor en el Inspector de Unity. Para ello, seleccione **Editar > Configuración del proyecto > Reproductor** .
 
-1. En el encabezado **Configuración**, haga clic en el menú desplegable **Scripting Runtime Version** (Versión de runtime de scripting) y seleccione **.NET 4 Equivalent** (Equivalente a .NET 4.x). Se le solicitará que reinicie Unity.
+1. En el encabezado **Configuración** , haga clic en el menú desplegable **Scripting Runtime Version** (Versión de runtime de scripting) y seleccione **.NET 4 Equivalent** (Equivalente a .NET 4.x). Se le solicitará que reinicie Unity.
 
 ![Seleccionar el equivalente de .NET 4.x](media/vstu_scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Elegir entre los perfiles .NET 4.x y .NET Standard 2.0
 
-Una vez que haya cambiado al runtime de scripting equivalente a .NET 4.x, puede especificar **Api Compatibility Level** (Nivel de compatibilidad de API) mediante el menú desplegable en Configuración del reproductor (**Editar > Configuración del proyecto > Reproductor**). Tenemos dos opciones:
+Una vez que haya cambiado al runtime de scripting equivalente a .NET 4.x, puede especificar **Api Compatibility Level** (Nivel de compatibilidad de API) mediante el menú desplegable en Configuración del reproductor ( **Editar > Configuración del proyecto > Reproductor** ). Hay dos opciones:
 
-* **.NET Standard 2.0**. Este perfil coincide con el [perfil de .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publicado por .NET Foundation. Unity recomienda .NET Standard 2.0 para los nuevos proyectos. Es menor que .NET 4.x, lo que supone una ventaja para plataformas de tamaño limitado. Además, Unity se ha comprometido a admitir este perfil en todas las plataformas compatibles con Unity.
+* **.NET Standard 2.0** . Este perfil coincide con el [perfil de .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publicado por .NET Foundation. Unity recomienda .NET Standard 2.0 para los nuevos proyectos. Es menor que .NET 4.x, lo que supone una ventaja para plataformas de tamaño limitado. Además, Unity se ha comprometido a admitir este perfil en todas las plataformas compatibles con Unity.
 
-* **.NET 4.x**. Este perfil proporciona acceso a la API de .NET 4 más reciente. Incluye todo el código disponible en las bibliotecas de clases de .NET Framework y admite también los perfiles de .NET Standard 2.0. Si el proyecto necesita parte de la API que no está incluida en el perfil de .NET Standard 2.0, use el perfil de .NET 4.x. Pero tenga en cuenta que algunas partes de esta API no se admiten en todas las plataformas de Unity.
+* **.NET 4.x** . Este perfil proporciona acceso a la API de .NET 4 más reciente. Incluye todo el código disponible en las bibliotecas de clases de .NET Framework y admite también los perfiles de .NET Standard 2.0. Si el proyecto necesita parte de la API que no está incluida en el perfil de .NET Standard 2.0, use el perfil de .NET 4.x. Pero tenga en cuenta que algunas partes de esta API no se admiten en todas las plataformas de Unity.
 
 Encontrará más información sobre estas opciones en esta [entrada del blog](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/) de Unity.
 
@@ -56,7 +57,7 @@ Por ejemplo, si está usando el perfil de .NET 4.x y quiere usar `HttpClient`, d
 
 ![falta referencia de ensamblado](media/vstu_missing-reference.png)
 
-Visual Studio vuelve a generar los archivos .csproj y .sln para proyectos de Unity cada vez que se abren. Como resultado, no se pueden agregar referencias de ensamblado directamente en Visual Studio porque se perderán al volver a abrir el proyecto. En su lugar, debe usarse un archivo de texto especial denominado **mcs.rsp**:
+Visual Studio vuelve a generar los archivos .csproj y .sln para proyectos de Unity cada vez que se abren. Como resultado, no se pueden agregar referencias de ensamblado directamente en Visual Studio porque se perderán al volver a abrir el proyecto. En su lugar, debe usarse un archivo de texto especial denominado **mcs.rsp** :
 
 1. Cree un nuevo archivo de texto denominado **mcs.rsp** en el directorio raíz **Assets** del proyecto de Unity.
 
@@ -74,15 +75,15 @@ Además de la nueva sintaxis de C# y las características de idioma, el runtime 
 
 1. Examine NuGet para encontrar un paquete compatible que quiera agregar (.NET Standard 2.0 o .NET 4.x). En este ejemplo se muestra la adición de [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/), un conocido paquete para trabajar con JSON, a un proyecto de .NET Standard 2.0.
 
-1. Haga clic en el botón **Descargar**:
+1. Haga clic en el botón **Descargar** :
 
     ![botón descargar](media/vstu_nuget-download.png)
 
-1. Busque el archivo descargado y cambie la extensión de **.nupkg** a **.zip**.
+1. Busque el archivo descargado y cambie la extensión de **.nupkg** a **.zip** .
 
-1. En el archivo zip, vaya al directorio **lib/netstandard2.0** y copie el archivo **Newtonsoft.Json.dll**.
+1. En el archivo zip, vaya al directorio **lib/netstandard2.0** y copie el archivo **Newtonsoft.Json.dll** .
 
-1. En la carpeta raíz **Assets** del proyecto de Unity, cree una carpeta nueva denominada **Plugins**. Plugins es un nombre de carpeta especial en Unity. Eche un vistazo a la [documentación de Unity](https://docs.unity3d.com/Manual/Plugins.html) para más información.
+1. En la carpeta raíz **Assets** del proyecto de Unity, cree una carpeta nueva denominada **Plugins** . Plugins es un nombre de carpeta especial en Unity. Eche un vistazo a la [documentación de Unity](https://docs.unity3d.com/Manual/Plugins.html) para más información.
 
 1. Pegue el archivo **Newtonsoft.Json.dll** en el directorio **Plugins** del proyecto de Unity.
 

@@ -1,5 +1,6 @@
 ---
 title: Ejecución de herramientas de generación de perfiles con o sin el depurador | Microsoft Docs
+description: Obtenga información sobre las diferencias entre los distintos modos disponibles para las herramientas de generación de perfiles
 ms.date: 5/26/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074961"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007164"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 
@@ -29,7 +30,7 @@ Para ayudarlo a decidir qué herramientas y resultados debe utilizar, tenga en c
 - Herramienta integrada en el depurador frente a herramienta que no es del depurador
   - Los problemas de rendimiento externo, como problemas de la capacidad de respuesta de la red o de E/S de archivos, no se diferenciarán demasiado en las herramientas con o sin depurador.
   - El propio depurador cambia los tiempos de rendimiento, ya que realiza operaciones de depurador necesarias como interceptar excepciones y modular eventos de carga.
-  - Los números de rendimiento de la compilación de versión de las herramientas del Generador de perfiles de rendimiento son más precisos y exactos. Los resultados de la herramienta integrada en el depurador son más útiles si se comparan con otras medidas relacionadas con la depuración o para usar las características del depurador.
+  - Los números de rendimiento de la compilación de versión del Generador de perfiles de rendimiento son los más precisos y exactos. Los resultados de la herramienta integrada en el depurador son más útiles si se comparan con otras medidas relacionadas con la depuración o para usar las características del depurador.
 - Compilación de depuración frente a compilación de versión
   - En el caso de problemas causados por llamadas con gran consumo de CPU, puede haber diferencias de rendimiento considerables entre las compilaciones de versión y de depuración. Compruebe si el problema existe en las compilaciones de versión.
   - Si el problema se produce solo durante las compilaciones de depuración, probablemente no necesitará ejecutar las herramientas sin depurador. En el caso de problemas con la compilación de versión, decida si las características proporcionadas por las herramientas integradas del depurador ayudarán a identificar el problema.
@@ -37,15 +38,15 @@ Para ayudarlo a decidir qué herramientas y resultados debe utilizar, tenga en c
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración
 
-Al comenzar la depuración en Visual Studio seleccionando **Depurar** > **Iniciar depuración** o presionando **F5**, la ventana **Herramientas de diagnóstico** aparece de forma predeterminada. Para abrirla manualmente, seleccione **Depurar** > **Ventanas** > **Mostrar herramientas de diagnóstico**. En la ventana **Herramientas de diagnóstico** se muestra información sobre el uso de CPU, la memoria de proceso y los eventos.
+Al comenzar la depuración en Visual Studio seleccionando **Depurar** > **Iniciar depuración** o presionando **F5** , la ventana **Herramientas de diagnóstico** aparece de forma predeterminada. Para abrirla manualmente, seleccione **Depurar** > **Ventanas** > **Mostrar herramientas de diagnóstico** . En la ventana **Herramientas de diagnóstico** se muestra información sobre el uso de CPU, la memoria de proceso y los eventos.
 
 ![Instantánea de la ventana Herramientas de diagnóstico](../profiling/media/diagnostictoolswindow.png "Ventana Herramientas de diagnóstico")
 
-- Use el icono **Configuración** en la barra de herramientas para seleccionar si quiere ver el **Uso de memoria**, el **Análisis de UI**, y el **Uso de CPU**.
+- Use el icono **Configuración** en la barra de herramientas para seleccionar si quiere ver el **Uso de memoria** , el **Análisis de UI** , y el **Uso de CPU** .
 
 - Seleccione **Configuración** en la lista desplegable **Configuración** para abrir las **páginas de propiedades de las Herramientas de diagnóstico** con más opciones.
 
-- Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace**.
+- Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace** .
 
 La sesión de diagnóstico termina cuando se detiene la depuración.
 
@@ -56,7 +57,7 @@ Para obtener más información, consulte:
 
 ### <a name="the-events-tab"></a>La pestaña Eventos
 
-Durante una sesión de depuración, en la pestaña Eventos de la ventana Herramientas de diagnóstico se enumeran los eventos de diagnóstico que se producen. Los prefijos de categoría: *Punto de interrupción*, *Archivo* y otros, le permiten examinar rápidamente la lista en busca de una categoría u omitir las categorías que no le interesan.
+Durante una sesión de depuración, en la pestaña Eventos de la ventana Herramientas de diagnóstico se enumeran los eventos de diagnóstico que se producen. Los prefijos de categoría: *Punto de interrupción* , *Archivo* y otros, le permiten examinar rápidamente la lista en busca de una categoría u omitir las categorías que no le interesan.
 
 Use la lista desplegable **Filtro** para filtrar los eventos dentro y fuera de la vista activando o desactivando categorías de eventos concretas.
 
@@ -72,23 +73,23 @@ Para más información, consulte [Búsqueda y filtrado de la pestaña Eventos de
 
 Para recopilar datos de rendimiento sin depuración, puede ejecutar las herramientas del Generador de perfiles de rendimiento.
 
-1. Con un proyecto abierto en Visual Studio, establezca la configuración de la solución en  **Versión** y seleccione  **Depurador local de Windows**  (o  **Máquina local**) como destino de la implementación.
+1. Con un proyecto abierto en Visual Studio, establezca la configuración de la solución en  **Versión** y seleccione  **Depurador local de Windows**  (o  **Máquina local** ) como destino de la implementación.
 
-1. Seleccione **Depurar** > **Generador de perfiles de rendimiento**, o bien presione **Alt**+**F2**.
+1. Seleccione **Depurar** > **Generador de perfiles de rendimiento** , o bien presione **Alt**+**F2** .
 
 1. En la página de inicio de las herramientas de diagnóstico, elija una o varias herramientas para ejecutar. Solo se muestran las herramientas que se pueden aplicar para el tipo de proyecto, el sistema operativo y el lenguaje de programación. Haga clic en **Mostrar todas las herramientas** para ver también herramientas que están deshabilitadas para esta sesión de diagnóstico.
 
    ![Captura de pantalla de las herramientas de diagnóstico](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
-1. Para iniciar la sesión de diagnóstico, haga clic en **Iniciar**.
+1. Para iniciar la sesión de diagnóstico, haga clic en **Iniciar** .
 
    Mientras se ejecuta la sesión, algunas herramientas muestran gráficos de datos en tiempo real en la página de las herramientas de diagnóstico, así como controles para pausar y reanudar la recopilación de datos.
 
     ![Captura de pantalla de la recopilación de datos en el Generador de perfiles de rendimiento](../profiling/media/diaghubcollectdata.png "Centro de recopilación de datos")
 
-1. Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación**.
+1. Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación** .
 
-   Los datos analizados se muestran en la página **Informe**.
+   Los datos analizados se muestran en la página **Informe** .
 
 Puede guardar los informes y abrirlos desde la lista **Sesiones abiertas recientemente** de la página de inicio de Herramientas de diagnóstico.
 
@@ -98,7 +99,7 @@ Para obtener más información, consulte:
 
 - [Análisis del uso de la CPU](../profiling/cpu-usage.md)
 - [Análisis del uso de memoria para código .NET](../profiling/dotnet-alloc-tool.md)
-- [Analizar el uso de memoria](../profiling/analyze-memory-usage.md)
+- [Analizar el uso de memoria](../profiling/memory-usage-without-debugging2.md)
 - [Análisis del rendimiento del código asincrónico de .NET](../profiling/analyze-async.md)
 - [Análisis del rendimiento de bases de datos](../profiling/analyze-database.md)
 - [Analizar el uso de la GPU](../profiling/gpu-usage.md)

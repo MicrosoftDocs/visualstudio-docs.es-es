@@ -1,5 +1,5 @@
 ---
-title: Análisis del uso de memoria sin depuración | Microsoft Docs
+title: Análisis del uso de memoria en el Generador de perfiles de rendimiento
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543356"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007198"
 ---
-# <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador
+# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Análisis del uso de memoria sin depurar en el Generador de perfiles de rendimiento
 
-La herramienta **Uso de memoria** supervisa el uso de memoria de la aplicación. Puede usar la herramienta para estudiar los efectos en la memoria en tiempo real de los escenarios que esté desarrollando en Visual Studio. Puede tomar instantáneas detalladas de los estados de memoria de la aplicación y compararlas para determinar las causas de los problemas de memoria.
+La herramienta **Uso de memoria** supervisa el uso de memoria de la aplicación. Puede usar la herramienta para estudiar los efectos en la memoria en tiempo real de los escenarios que esté desarrollando en Visual Studio. Puede tomar instantáneas detalladas de los estados de memoria de la aplicación y compararlas para determinar las causas de los problemas de memoria. La herramienta Uso de memoria es compatible con aplicaciones .NET, ASP.NET, C++ o de modo mixto (.NET y nativas).
 
-La herramienta **Uso de memoria** se puede ejecutar [con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). En este artículo, se muestra cómo usar la herramienta **Uso de memoria** sin el depurador en el **Generador de perfiles de rendimiento** de Visual Studio.
+La herramienta Uso de memoria se puede ejecutar [con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). En este artículo, se muestra cómo usar la herramienta Uso de memoria sin el depurador en el **Generador de perfiles de rendimiento** de Visual Studio.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sesiones de diagnóstico de uso de memoria
 
@@ -32,13 +32,13 @@ La herramienta **Uso de memoria** se puede ejecutar [con o sin el depurador](../
 
 1. Abra un proyecto en Visual Studio.
 
-   La herramienta Uso de memoria es compatible con aplicaciones .NET, ASP.NET, nativas o de modo mixto (.NET y nativas).
+   La herramienta Uso de memoria es compatible con aplicaciones .NET, ASP.NET, C++ o de modo mixto (.NET y nativas).
 
-1. En el menú Depurar, establezca la configuración de la solución en **Versión** y seleccione **Depurador local de Windows** (o **Equipo local**) como el destino de implementación.
+1. En el menú Depurar, establezca la configuración de la solución en **Versión** y seleccione **Depurador local de Windows** (o **Equipo local** ) como el destino de implementación.
 
-1. En la barra de menús, elija **Depurar** > **Generador de perfiles de rendimiento**.
+1. En la barra de menús, elija **Depurar** > **Generador de perfiles de rendimiento** .
 
-1. En **Herramientas disponibles**, seleccione **Uso de memoria** y después **Iniciar**.
+1. En **Herramientas disponibles** , seleccione **Uso de memoria** y después **Iniciar** .
 
    ![Iniciar una sesión de diagnóstico de Uso de memoria](../profiling/media/memuse_start_diagnosticssession.png "Iniciar una sesión de diagnóstico de Uso de memoria")
 
@@ -58,13 +58,13 @@ Para recopilar instantáneas, elija **Tomar instantánea** cuando quiera captura
 
 ### <a name="close-the-diagnostic-session"></a><a name="BKMK_Close_a_monitoring_session"></a> Cerrar la sesión de diagnóstico
 
-Para detener una sesión de supervisión sin crear un informe, simplemente cierre la ventana de diagnóstico. Para generar un informe cuando haya terminado de recopilar o haya tomado instantáneas, haga clic en **Detener recopilación**.
+Para detener una sesión de supervisión sin crear un informe, simplemente cierre la ventana de diagnóstico. Para generar un informe cuando haya terminado de recopilar o haya tomado instantáneas, haga clic en **Detener recopilación** .
 
 ![Detener recopilación](../profiling/media/memuse__stopcollection.png "Detener colección")
 
 ## <a name="memory-usage-reports"></a>Informes de uso de memoria
 
-Una vez detenida la recopilación de datos, la herramienta **Uso de memoria** detiene la aplicación y muestra la página de información general **Uso de memoria**.
+Una vez detenida la recopilación de datos, la herramienta **Uso de memoria** detiene la aplicación y muestra la página de información general **Uso de memoria** .
 
 ![Página de información general de Uso de memoria](../profiling/media/memuse__reportoverview1.png "Página de información general de Uso de memoria")
 
@@ -85,7 +85,7 @@ Los números son vínculos que abren vistas de informes de **Uso de memoria** de
 
 ## <a name="memory-usage-snapshot-reports"></a>Informes de instantáneas de Uso de memoria
 
-<a name="BKMK_Snapshot_report_trees"></a> Cuando hace clic en uno de los vínculos de instantánea en la página de información general **Uso de memoria**, se abre un informe de instantáneas en una página nueva.
+<a name="BKMK_Snapshot_report_trees"></a> Cuando hace clic en uno de los vínculos de instantánea en la página de información general **Uso de memoria** , se abre un informe de instantáneas en una página nueva.
 
 ![Informe de instantánea Uso de memoria](../profiling/media/memuse_snapshotreport_all.png "Informe de instantánea Uso de memoria")
 
@@ -105,11 +105,11 @@ En el informe de instantáneas:
 
 ### <a name="report-tree-filters"></a><a name="BKMK_Report_tree_filters_"></a> Filtros de árbol de informes
 
-Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de aplicaciones. Los filtros de informe de instantáneas pueden ocultar la mayoría de estos tipos en los árboles **Montón administrado** y **Rutas de acceso a la raíz**.
+Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de aplicaciones. Los filtros de informe de instantáneas pueden ocultar la mayoría de estos tipos en los árboles **Montón administrado** y **Rutas de acceso a la raíz** .
 
 ![Ordenar y filtrar opciones](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
 
-- <a name="BKMK_Filter"></a> Para filtrar un árbol por nombre de tipo, escriba el nombre en el cuadro **Filtro**. El filtro no distingue mayúsculas de minúsculas y reconoce la cadena especificada en cualquier parte de los nombres de tipo.
+- <a name="BKMK_Filter"></a> Para filtrar un árbol por nombre de tipo, escriba el nombre en el cuadro **Filtro** . El filtro no distingue mayúsculas de minúsculas y reconoce la cadena especificada en cualquier parte de los nombres de tipo.
 
 - <a name="BKMK_Collapse_Small_Objects"></a> Seleccione **Contraer pequeños objetos** en la lista desplegable **Filtro** para ocultar aquellos tipos cuyo **Tamaño (Bytes)** es inferior al 0,5 por ciento de la memoria total.
 
@@ -121,7 +121,7 @@ Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de
 
  ![Vínculos a informe de instantánea en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Vínculos a informe de instantánea en un panel de instantánea")
 
-Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado**. El vínculo de tamaño ordena el informe por la columna **Tamaño inclusivo (bytes)** . El vínculo Objetos ordena el informe por la columna **Recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
+Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado** . El vínculo de tamaño ordena el informe por la columna **Tamaño inclusivo (bytes)** . El vínculo Objetos ordena el informe por la columna **Recuento** . Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
 
 ### <a name="managed-heap-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árbol Montón administrado (informes de detalles de instantánea)
  El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Expanda un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Haga clic en un tipo o una instancia para mostrar los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.
@@ -141,7 +141,7 @@ El árbol **Montón administrado** en un informe de detalles de instantánea tie
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Rutas de acceso al árbol raíz (informes de detalles de instantánea)
 El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET limpia la memoria de un objeto únicamente si todas las referencias a este se han liberado.
 
-Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**.
+Para un tipo en el árbol **Rutas de acceso al nodo raíz** , el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias** .
 
 ![Árbol Rutas de acceso al nodo raíz para tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Árbol Rutas de acceso al nodo raíz para tipos")
 
@@ -150,7 +150,7 @@ En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hac
 
 ![Árbol Objetos a los que se hacer referencia para instancias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Árbol Objetos a los que se hace referencia para instancias")
 
-El árbol **Tipos a los que se hace referencia** en un informe de detalles de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hace referencia** no tiene la columna **Recuento de referencias**.
+El árbol **Tipos a los que se hace referencia** en un informe de detalles de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hace referencia** no tiene la columna **Recuento de referencias** .
 
 |NOMBRE|Descripción|
 |-|-|
@@ -164,7 +164,7 @@ El árbol **Tipos a los que se hace referencia** en un informe de detalles de in
 
 Un informe de diferencias de instantánea muestra los cambios entre una instantánea principal y la anterior. Para abrir un informe de diferencias, haga clic en uno de los vínculos de diferencia en un panel de la instantánea.
 
-Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. El vínculo de tamaño ordena el informe por la columna **Diferencias de tamaño inclusivo (bytes)** . El vínculo Objetos ordena el informe por la columna **Diferencias de recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
+Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. El vínculo de tamaño ordena el informe por la columna **Diferencias de tamaño inclusivo (bytes)** . El vínculo Objetos ordena el informe por la columna **Diferencias de recuento** . Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
 
  ![Vínculos a informe de diferencias en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Vínculos a informe de diferencias en un panel de instantánea")
 
@@ -191,7 +191,7 @@ El árbol **Montón administrado** en un informe de diferencias de instantánea 
 
 El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET limpia la memoria de un objeto únicamente si todas las referencias a este se han liberado.
 
-Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**. La diferencia de recuento con respecto a la instantánea anterior está en la columna **Diferencia de referencia**.
+Para un tipo en el árbol **Rutas de acceso al nodo raíz** , el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias** . La diferencia de recuento con respecto a la instantánea anterior está en la columna **Diferencia de referencia** .
 
  ![Árbol Rutas de acceso al nodo raíz en un informe de diferencias](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Árbol Rutas de acceso al nodo raíz en un informe de diferencias")
 
@@ -201,7 +201,7 @@ En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hac
 
 ![Tipos a los que se hace referencia en un informe de diferencias](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipos a los que se hace referencia en un informe de diferencias")
 
-El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia**, **Tamaño (Bytes)** , **Tamaño inclusivo (Bytes)** y **Módulo**.
+El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia** , **Tamaño (Bytes)** , **Tamaño inclusivo (Bytes)** y **Módulo** .
 
 |NOMBRE|Descripción|
 |-|-|

@@ -1,5 +1,7 @@
 ---
 title: Opciones, editor de texto, JavaScript, IntelliSense
+description: Aprenda a usar la página IntelliSense del cuadro de diálogo Opciones para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605983"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947731"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Cuadro de diálogo Opciones: Editor de texto \> JavaScript \> IntelliSense
 
-Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede acceder a la página **IntelliSense** si elige **Herramientas** > **Opciones**, en la barra de menús y, luego, expande **Editor de texto** > **JavaScript/TypeScript** > **IntelliSense**.
+Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede acceder a la página **IntelliSense** si elige **Herramientas** > **Opciones** , en la barra de menús y, luego, expande **Editor de texto** > **JavaScript/TypeScript** > **IntelliSense** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,7 +38,7 @@ Puede utilizar estas opciones para cambiar el comportamiento de la finalización
 
 **Usar solo Tab o Entrar para confirmar**
 
-Cuando se activa esta casilla, el editor de código de JavaScript anexa instrucciones con elementos seleccionados en la lista de finalización únicamente después de elegir la tecla **Tab** o **Entrar**. Cuando se desactiva esta casilla, otros caracteres, como un punto, una coma, dos puntos, un paréntesis de apertura y una llave de apertura ({), también puede anexar instrucciones con los elementos seleccionados.
+Cuando se activa esta casilla, el editor de código de JavaScript anexa instrucciones con elementos seleccionados en la lista de finalización únicamente después de elegir la tecla **Tab** o **Entrar** . Cuando se desactiva esta casilla, otros caracteres, como un punto, una coma, dos puntos, un paréntesis de apertura y una llave de apertura ({), también puede anexar instrucciones con los elementos seleccionados.
 
 ## <a name="references"></a>Referencias
 
@@ -50,7 +52,7 @@ Esta opción especifica el tipo de grupo de referencias. Se admiten tres grupos 
 
 Puede usar los grupos de referencias predefinidos para especificar qué archivos concretos de IntelliSense .js se incluyen en el ámbito para proyectos diferentes de JavaScript. Hay cuatro grupos de referencias disponibles:
 
-- Implícito ( *versión*de Windows), para aplicaciones de la [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript. Los archivos incluidos en este grupo pertenecen al ámbito de cada archivo .js abierto en el editor de código para las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript.
+- Implícito ( *versión* de Windows), para aplicaciones de la [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript. Los archivos incluidos en este grupo pertenecen al ámbito de cada archivo .js abierto en el editor de código para las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript.
 
 - Implícito (Web), para proyectos HTML5. Los archivos incluidos en este grupo están en el ámbito de cada archivo .js abierto en el Editor de código para estos tipos de proyecto.
 
@@ -60,7 +62,7 @@ Puede usar los grupos de referencias predefinidos para especificar qué archivos
 
 **Archivos incluidos**
 
-Esta opción especifica el orden en que los archivos se cargan en el contexto del servicio de lenguaje. Puede configurar el orden utilizando los botones **Quitar**, **Subir**y **Bajar** . Para que IntelliSense funcione correctamente, un archivo que depende de otro se debe cargar después del otro archivo.
+Esta opción especifica el orden en que los archivos se cargan en el contexto del servicio de lenguaje. Puede configurar el orden utilizando los botones **Quitar** , **Subir** y **Bajar** . Para que IntelliSense funcione correctamente, un archivo que depende de otro se debe cargar después del otro archivo.
 
 > [!CAUTION]
 > Si un objeto se define incondicionalmente en dos o más referencias implícitas, la última referencia de esta lista se utilizará para definir el objeto.
@@ -76,6 +78,6 @@ Cuando se activa esta casilla, y si tiene un archivo de JavaScript abierto fuera
 > [!NOTE]
 > En los proyectos web, los archivos remotos a los que se hace referencia en el proyecto se descargan de forma predeterminada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [IntelliSense para JavaScript](../../ide/javascript-intellisense.md)

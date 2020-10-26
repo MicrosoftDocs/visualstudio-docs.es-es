@@ -1,5 +1,7 @@
 ---
 title: Página de propiedades, JavaScript
+description: Conozca cómo Páginas de propiedades proporciona acceso a la configuración del proyecto y sepa cómo usar las páginas que aparecen en Páginas de propiedades para cambiar las propiedades del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -17,22 +19,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf6c984715f5cd35f08bb75526346b68c11dbeb9
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68926191"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947809"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 
 Las **Páginas de propiedades** proporcionan acceso a la configuración del proyecto. Puede usar las páginas que aparecen en las **páginas Propiedades** para cambiar las propiedades del proyecto.
 
-Para obtener acceso a las propiedades del proyecto, seleccione un nodo de proyecto en el **Explorador de soluciones**. En el menú **Proyecto**, haga clic en **Propiedades**.
+Para obtener acceso a las propiedades del proyecto, seleccione un nodo de proyecto en el **Explorador de soluciones** . En el menú **Proyecto** , haga clic en **Propiedades** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-Las siguientes páginas y opciones aparecen en las **páginas Propiedades**.
+Las siguientes páginas y opciones aparecen en las **páginas Propiedades** .
 
 ## <a name="configuration-and-platform-page"></a>Página de configuración y plataforma
 
@@ -40,11 +42,11 @@ Utilice las siguientes opciones para seleccionar la configuración y la platafor
 
  **Configuración**
 
-Especifica las opciones de configuración para mostrar o modificar. Los valores son **Depurar** (valor predeterminado), **Liberar**, **Todas las configuraciones** o una configuración definida por el usuario. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Especifica las opciones de configuración para mostrar o modificar. Los valores son **Depurar** (valor predeterminado), **Liberar** , **Todas las configuraciones** o una configuración definida por el usuario. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plataforma**
 
-Especifica la configuración de plataforma para mostrar o modificar. Los valores son **Cualquier CPU** (valor predeterminado para aplicaciones [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** o una plataforma definida por el usuario. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Especifica la configuración de plataforma para mostrar o modificar. Los valores son **Cualquier CPU** (valor predeterminado para aplicaciones [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64** , **ARM** , **x86** o una plataforma definida por el usuario. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Página General
 
@@ -57,7 +59,7 @@ Utilice las siguientes opciones para establecer las propiedades generales del pr
 
 Especifica la ubicación de los archivos de salida para la configuración del proyecto. La ruta de acceso es relativa. Si escribe una ruta de acceso absoluta, se guarda la ruta de acceso absoluta en el proyecto. La ruta de acceso predeterminada es bin\Debug.
 
-Cuando utiliza las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe generar una depuración o versión de lanzamiento. Al hacer clic en **Depurar**,  > **Iniciar depuración** (o presionar **F5**), la compilación se coloca en la ubicación de depuración sin tener en cuenta la **ruta de acceso de salida** que especifique. En cambio, el comando **Compilar solución** en el menú **Compilar** la coloca en la ubicación que especifique. Para habilitar configuraciones de compilación avanzadas, en la barra de menús, elija **Herramientas** > **Opciones**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, seleccione **General** y, después, desactive la casilla **Mostrar configuraciones de compilación avanzadas**. Esta opción permite controlar manualmente todos los valores de configuración y si se crea una versión de depuración o lanzamiento.
+Cuando utiliza las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe generar una depuración o versión de lanzamiento. Al hacer clic en **Depurar** ,  > **Iniciar depuración** (o presionar **F5** ), la compilación se coloca en la ubicación de depuración sin tener en cuenta la **ruta de acceso de salida** que especifique. En cambio, el comando **Compilar solución** en el menú **Compilar** la coloca en la ubicación que especifique. Para habilitar configuraciones de compilación avanzadas, en la barra de menús, elija **Herramientas** > **Opciones** . En el cuadro de diálogo **Opciones** , expanda **Proyectos y soluciones** , seleccione **General** y, después, desactive la casilla **Mostrar configuraciones de compilación avanzadas** . Esta opción permite controlar manualmente todos los valores de configuración y si se crea una versión de depuración o lanzamiento.
 
  **Idioma predeterminado**
 
@@ -82,7 +84,7 @@ Especifica el host predeterminado para el depurador.
 
 **Iniciar aplicación**
 
-Especifica si se debe iniciar la aplicación cuando presiona **F5** o hace clic en **Depurar** > **Iniciar depuración**. Seleccione **Sí** para iniciar la aplicación. En caso contrario, seleccione **No**. Si selecciona **No**, aún puede depurar la aplicación si usa un método diferente para iniciarla.
+Especifica si se debe iniciar la aplicación cuando presiona **F5** o hace clic en **Depurar** > **Iniciar depuración** . Seleccione **Sí** para iniciar la aplicación. En caso contrario, seleccione **No** . Si selecciona **No** , aún puede depurar la aplicación si usa un método diferente para iniciarla.
 
 **Tipo de depurador**
 
@@ -90,12 +92,12 @@ Especifica los tipos de código para depurar. Seleccione **Solo scripts** para d
 
 **Permitir bucle invertido de la red local**
 
-Especifica si se permite el acceso a la dirección IP de bucle invertido para probar aplicaciones. Seleccione **Sí** para permitir el uso de la dirección de bucle invertido si la aplicación cliente se encuentra en el mismo equipo en el que se está ejecutando la aplicación de servidor. En caso contrario, seleccione **No**. Esta propiedad está disponible solo si la propiedad **Depurador para iniciar** está establecida en **Equipo remoto**.
+Especifica si se permite el acceso a la dirección IP de bucle invertido para probar aplicaciones. Seleccione **Sí** para permitir el uso de la dirección de bucle invertido si la aplicación cliente se encuentra en el mismo equipo en el que se está ejecutando la aplicación de servidor. En caso contrario, seleccione **No** . Esta propiedad está disponible solo si la propiedad **Depurador para iniciar** está establecida en **Equipo remoto** .
 
 **Nombre de equipo**
 
-Especifica el nombre del equipo remoto para hospedar al depurador. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.
+Especifica el nombre del equipo remoto para hospedar al depurador. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto** .
 
 **Requerir autenticación**
 
-Especifica si el equipo remoto requiere autenticación. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.
+Especifica si el equipo remoto requiere autenticación. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto** .

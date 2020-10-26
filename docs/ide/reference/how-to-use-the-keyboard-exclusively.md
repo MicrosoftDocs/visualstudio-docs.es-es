@@ -2,7 +2,7 @@
 title: Uso de Visual Studio sin un mouse
 titleSuffix: ''
 description: Obtenga información sobre cómo navegar y escribir código en el entorno de desarrollo integrado (IDE) de Visual Studio usando únicamente el teclado.
-ms.date: 05/10/2019
+ms.date: 10/16/2020
 ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
+ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770234"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92156566"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Uso del teclado exclusivamente
 
@@ -37,15 +37,15 @@ Para obtener un listado completo de las teclas de método abreviado de comandos 
 ::: moniker-end
 
 > [!NOTE]
-> En función de los ajustes que haya establecido o la edición de Visual Studio que use, los cuadros de diálogo y comandos de menú que verá pueden diferir de los descritos en la Ayuda. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../environment-settings.md#reset-settings).
+> En función de los ajustes que haya establecido o la edición de Visual Studio que use, los cuadros de diálogo y comandos de menú que verá pueden diferir de los descritos en la Ayuda. Para cambiar la configuración, seleccione **Importar y exportar configuraciones** en el menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Controles del cuadro de herramientas
 
 Para agregar un control en el cuadro de herramientas a un formulario o diseñador sin el mouse, siga estos pasos:
 
-1. En la barra de menús, elija **Ver** > **Cuadro de herramientas**.
+1. En la barra de menús, seleccione **Ver** > **Cuadro de herramientas** .
 
-2. Use las teclas **Ctrl**+**Flecha arriba** o **Ctrl**+**Flecha abajo** para moverse por las secciones de la pestaña **Cuadro de herramientas**.
+2. Use las teclas **Ctrl**+**Flecha arriba** o **Ctrl**+**Flecha abajo** para moverse por las secciones de la pestaña **Cuadro de herramientas** .
 
 3. Use la tecla **Flecha arriba** o **Flecha abajo** para moverse por los controles de una sección.
 
@@ -71,17 +71,17 @@ Para moverse entre las opciones de un cuadro de diálogo y cambiar la configurac
 
 ## <a name="navigate-between-windows-and-files"></a>Navegar entre ventanas y archivos
 
-- Para moverse entre archivos en un editor o diseñador, seleccione el método abreviado de teclado **Ctrl**+**Tab** para mostrar el navegador del IDE con la opción **Archivos activos** seleccionada. Pulse la tecla **Entrar** para ir al archivo resaltado.
+- Para moverse entre archivos en un editor o diseñador, use el método abreviado de teclado **Ctrl**+**Tab** para mostrar el navegador del IDE con la opción **Archivos activos** seleccionada. Pulse la tecla **Entrar** para ir al archivo resaltado.
 
-- Para moverse entre ventanas de herramientas acopladas, seleccione el método abreviado de teclado **Alt**+**F7** para mostrar el navegador del IDE con la opción **Ventanas de herramientas activas** seleccionada. Presione la tecla **Entrar** para ir a la ventana resaltada.
+- Para moverse entre ventanas de herramientas acopladas, use el método abreviado de teclado **Alt**+**F7** para mostrar el navegador del IDE con la opción **Ventanas de herramientas activas** seleccionada. Presione la tecla **Entrar** para ir a la ventana resaltada.
 
 ## <a name="move-and-dock-tool-windows"></a>Mover y acoplar ventanas de herramientas
 
 1. Vaya a la ventana de herramientas que quiere mover y asígnele el foco.
 
-2. En el menú **Ventana**, seleccione la opción **Acoplable**.
+2. En el menú **Ventana** , seleccione la opción **Acoplable** .
 
-3. Presione **Alt**+**Barra espaciadora** y luego seleccione **Mover**.
+3. Presione **Alt**+**Barra espaciadora** y seleccione **Mover** .
 
    Aparece el diamante de guía de acoplamiento.
 
@@ -93,7 +93,7 @@ Para moverse entre las opciones de un cuadro de diálogo y cambiar la configurac
 
    Aparece un esquema de la ventana de herramientas en la nueva ubicación de acoplamiento.
 
-6. Presione **ENTRAR**.
+6. Presione **ENTRAR** .
 
    La ventana de herramientas se ajusta en la nueva ubicación de acoplamiento.
 

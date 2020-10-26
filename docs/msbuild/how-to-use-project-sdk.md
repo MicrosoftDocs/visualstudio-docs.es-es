@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76826476"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136841"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Cómo: Usar SDK de proyecto de MSBuild
 
@@ -66,9 +66,6 @@ Hay tres maneras de hacer referencia a un SDK de proyecto:
     </Project>
     ```
 
-    > [!NOTE]
-    > Actualmente es la única manera admitida para hacer referencia al SDK de un proyecto en Visual Studio para Mac.
-
 - Use el elemento `<Sdk/>` de nivel superior:
 
     ```xml
@@ -107,7 +104,7 @@ Al evaluar la importación, MSBuild resuelve de forma dinámica la ruta de acces
 
    Este solucionador solo está activo si ha especificado una versión opcional. Se puede usar para cualquier SDK de proyecto personalizado.
    
-- Un solucionador de la CLI de .NET que resuelve los SDK que se instalan con la [CLI de .NET](/dotnet/core/tools/).
+- Un solucionador del SDK de .NET que resuelve los SDK de MSBuild que se instalan con el [SDK de .NET](/dotnet/core/sdk/).
 
    Este solucionador busca SDK de proyecto como `Microsoft.NET.Sdk` y `Microsoft.NET.Sdk.Web` que forman parte del producto.
    
@@ -124,7 +121,7 @@ El solucionador del SDK basado en NuGet admite la especificación de una versió
 }
 ```
 
-Durante una compilación, solo se puede usar una versión de cada SDK de proyecto. Si hace referencia a dos versiones diferentes del mismo SDK de proyecto, MSBuild emite una advertencia. Se recomienda **no** especificar una versión en los proyectos si se ha especificado una versión en el archivo *global.json*.
+Durante una compilación, solo se puede usar una versión de cada SDK de proyecto. Si hace referencia a dos versiones diferentes del mismo SDK de proyecto, MSBuild emite una advertencia. Se recomienda **no** especificar una versión en los proyectos si se ha especificado una versión en el archivo *global.json* .
 
 ## <a name="see-also"></a>Vea también
 

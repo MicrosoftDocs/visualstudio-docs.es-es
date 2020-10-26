@@ -1,5 +1,6 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Mac) | Microsoft Docs
+description: Vea el registro de cambios de Visual Studio Tools para Unity, Mac. Vea los cambios de la versión 1.0.0.0 a la 2.7.0.0 y más allá.
 ms.custom: ''
 ms.date: 5/19/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.openlocfilehash: 50462d4464bd55376e1aceda3f4f5e8e3cbe1f87
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87471537"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039903"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
 
@@ -101,7 +102,7 @@ Fecha de publicación: 14 de abril de 2020
 
 - **Integración:**
 
-  - Se agregó el diagnóstico [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md). Detecte y ajuste las llamadas a las corrutinas en `StartCoroutine()`.
+  - Se ha agregado el diagnóstico [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md). Detecte y ajuste las llamadas a las corrutinas en `StartCoroutine()`.
 
   - Se ha agregado el diagnóstico [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md). Detecte y quite el atributo `SerializeField` no válido o redundante.
 
@@ -187,7 +188,7 @@ Fecha de publicación: 22 de enero de 2020
   
   - Se ha implementado una cuadrícula de propiedades nueva y accesible para la configuración.
 
-  - Se agregó el supresor [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) para `IDE0051`. Los campos privados con el atributo `SerializeField` no deben marcarse como sin usar.
+  - Se ha agregado el supresor [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) para `IDE0051`. Los campos privados con el atributo `SerializeField` no deben marcarse como sin usar.
 
   - Se ha agregado el supresor [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) para `CS0649`. Los campos con el atributo `SerializeField` no deben marcarse como sin asignar.  
 

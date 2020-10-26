@@ -1,5 +1,7 @@
 ---
 title: Solución de problemas y creación de registros para MSBuild
+description: Aprenda a diagnosticar problemas de compilación en el proyecto de Visual Studio y, en caso necesario, a crear un registro para enviarlo a Microsoft para su investigación.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
@@ -15,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235074"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136581"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Solución de problemas y creación de registros para MSBuild
 
@@ -116,8 +118,8 @@ Se creará un archivo Msbuild.binlog en el directorio desde el que ejecutó MSBu
 
 ## <a name="create-a-detailed-log"></a>Creación de un registro detallado
 
-1. En el menú principal de Visual Studio, vaya a **Herramientas** > **Opciones** > **Proyectos y soluciones** >**Compilar y ejecutar**.
-1. Establezca el **nivel de detalle de la compilación del proyecto de Msbuild** en **Detallado** en los dos cuadros combinados. El primero controla el nivel de detalle de la compilación en la **Ventana de salida**, mientras que el segundo controla el nivel de detalle de la compilación en el archivo \<projectname\>.log que se crea en el directorio intermedio de cada proyecto durante la compilación.
+1. En el menú principal de Visual Studio, vaya a **Herramientas** > **Opciones** > **Proyectos y soluciones** >**Compilar y ejecutar** .
+1. Establezca el **nivel de detalle de la compilación del proyecto de Msbuild** en **Detallado** en los dos cuadros combinados. El primero controla el nivel de detalle de la compilación en la **Ventana de salida** , mientras que el segundo controla el nivel de detalle de la compilación en el archivo \<projectname\>.log que se crea en el directorio intermedio de cada proyecto durante la compilación.
 2. Desde un símbolo del sistema para desarrolladores de Visual Studio, escriba uno de estos comandos, sustituyendo sus valores reales de ruta de acceso y configuración:
 
     ```cmd
@@ -134,4 +136,4 @@ Se creará un archivo Msbuild.binlog en el directorio desde el que ejecutó MSBu
 
 ## <a name="see-also"></a>Consulte también
 
-- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

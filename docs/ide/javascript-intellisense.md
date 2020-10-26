@@ -1,5 +1,7 @@
 ---
 title: IntelliSense para JavaScript
+description: Entérese de que Visual Studio ofrece una compatibilidad de IntelliSense más completa con características modernas de JavaScript y características de productividad mejoradas.
+ms.custom: SEO-VS-2020
 ms.date: 06/28/2017
 ms.topic: conceptual
 ms.technology: vs-javascript
@@ -25,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b4f86d904d98235ee98c54045789751c829b28c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593725"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947835"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 
@@ -132,16 +134,16 @@ A continuación, se muestra un ejemplo sencillo de un archivo de definición de 
 
 En el mundo de TypeScript, las bibliotecas más populares de JavaScript tienen sus API descritas mediante archivos *.d.ts* y el repositorio más común para esas definiciones se encuentra en [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-De manera predeterminada, el servicio de lenguaje Salsa intenta detectar qué bibliotecas de JavaScript están en uso. Además, descarga y hace referencia de forma automática al archivo *.d.ts* correspondiente que describe la biblioteca para proporcionar IntelliSense con más funcionalidades. Los archivos se descargan en una caché ubicada en la carpeta de usuario en *%LOCALAPPDATA%\Microsoft\TypeScript*.
+De manera predeterminada, el servicio de lenguaje Salsa intenta detectar qué bibliotecas de JavaScript están en uso. Además, descarga y hace referencia de forma automática al archivo *.d.ts* correspondiente que describe la biblioteca para proporcionar IntelliSense con más funcionalidades. Los archivos se descargan en una caché ubicada en la carpeta de usuario en *%LOCALAPPDATA%\Microsoft\TypeScript* .
 
 > [!NOTE]
-> Esta característica está **deshabilitada** de forma predeterminada si se usa un archivo de configuración *tsconfig.json*, pero se puede habilitar, como se describe más adelante.
+> Esta característica está **deshabilitada** de forma predeterminada si se usa un archivo de configuración *tsconfig.json* , pero se puede habilitar, como se describe más adelante.
 
-Actualmente, la detección automática funciona para las dependencias descargadas desde npm (al leer el archivo *package.json*), Bower (al leer el archivo *bower.json*) y para archivos separados del proyecto que coinciden con una lista de aproximadamente las 400 bibliotecas de JavaScript más populares. Por ejemplo, si tiene *jquery-1.10.min.js* en el proyecto, el archivo *jquery.d.ts* se captura y carga para proporcionar una mejor experiencia de edición. Este archivo *.d.ts* no tiene ningún impacto en el proyecto.
+Actualmente, la detección automática funciona para las dependencias descargadas desde npm (al leer el archivo *package.json* ), Bower (al leer el archivo *bower.json* ) y para archivos separados del proyecto que coinciden con una lista de aproximadamente las 400 bibliotecas de JavaScript más populares. Por ejemplo, si tiene *jquery-1.10.min.js* en el proyecto, el archivo *jquery.d.ts* se captura y carga para proporcionar una mejor experiencia de edición. Este archivo *.d.ts* no tiene ningún impacto en el proyecto.
 
 Si no quiere usar la adquisición automática, puede deshabilitarla mediante la adición de un archivo de configuración como se describe a continuación. Aún puede colocar archivos de definición de forma manual para usarlos directamente en el proyecto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Usar IntelliSense](../ide/using-intellisense.md)
 - [Compatibilidad con JavaScript (Visual Studio para Mac)](/visualstudio/mac/javascript)

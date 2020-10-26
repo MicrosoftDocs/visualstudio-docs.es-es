@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Cambiar el directorio de salida de compilación'
+description: Sepa cómo especificar la ubicación de salida generada por el proyecto según una configuración (para depuración, versión o ambos).
+ms.custom: SEO-VS-2020
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c2f2445bc7139c5bbc80a35905e24c319c9dfa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2512836781b0bf8c269f296066b25722b58be1fb
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284651"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136893"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Cómo: Cambiar el directorio de salida de compilación
 
@@ -24,15 +26,15 @@ Puede especificar la ubicación de salida generada por el proyecto según la con
 
 ## <a name="change-the-build-output-directory"></a>Cambiar el directorio de salida de compilación
 
-1. Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**.
+1. Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades** .
 
 2. Seleccione la pestaña adecuada según el tipo de proyecto:
 
-   - Para C#, seleccione la pestaña **Compilar**.
-   - Para Visual Basic, seleccione la pestaña **Compilar**.
-   - Para C++ o JavaScript, seleccione la pestaña **General**.
+   - Para C#, seleccione la pestaña **Compilar** .
+   - Para Visual Basic, seleccione la pestaña **Compilar** .
+   - Para C++ o JavaScript, seleccione la pestaña **General** .
 
-3. En la lista desplegable de configuración de la parte superior, seleccione la configuración cuya ubicación del archivo de salida quiera cambiar (**Depuración**, **Versión** o **Todas las configuraciones**).
+3. En la lista desplegable de configuración de la parte superior, seleccione la configuración cuya ubicación del archivo de salida quiera cambiar ( **Depuración** , **Versión** o **Todas las configuraciones** ).
 
 4. Busque la entrada de la ruta de acceso de salida en la página: varía según el tipo de proyecto:
 
@@ -45,7 +47,7 @@ Puede especificar la ubicación de salida generada por el proyecto según la con
    ![Propiedad de ruta de acceso de salida de un proyecto de C# de Visual Studio](media/output-path.png)
    
    > [!NOTE]
-   > Algunos proyectos incluirán de forma predeterminada el marco y el tiempo de ejecución en la ruta de acceso de compilación. Para cambiar esto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones**, seleccione **Editar archivo de proyecto** y agregue lo siguiente:
+   > Algunos proyectos incluirán de forma predeterminada el marco y el tiempo de ejecución en la ruta de acceso de compilación. Para cambiar esto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** , seleccione **Editar archivo de proyecto** y agregue lo siguiente:
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -54,11 +56,11 @@ Puede especificar la ubicación de salida generada por el proyecto según la con
    > ```
 
 > [!TIP]
-> Si la salida no se genera en la ubicación especificada, asegúrese de que va a crear la configuración correspondiente (por ejemplo, **Depuración** o **Versión**) al seleccionarla en la barra de menús de Visual Studio.
+> Si la salida no se genera en la ubicación especificada, asegúrese de que va a crear la configuración correspondiente (por ejemplo, **Depuración** o **Versión** ) al seleccionarla en la barra de menús de Visual Studio.
 >
 > ![Selector de configuración de compilación en Visual Studio 2019](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Página Compilar, Diseñador de proyectos (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [Página Propiedad general (Proyecto)](/cpp/build/reference/general-property-page-project)

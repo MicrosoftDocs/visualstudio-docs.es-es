@@ -1,5 +1,6 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
+description: Vea el registro de cambios de Visual Studio Tools para Unity, Windows. Vea los cambios de la versión 1.0.0.0 a la 4.7.0.0 y más allá.
 ms.custom: ''
 ms.date: 7/30/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.openlocfilehash: f745cca14202c87386dc276b00e89fb70b399404
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87471524"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039443"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 
@@ -103,7 +104,7 @@ Fecha de publicación: 14 de abril de 2020
 
   - Se ha agregado compatibilidad con CodeLens (scripts y mensajes de Unity).
   
-  - Se agregó el diagnóstico [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md). Detecte y ajuste las llamadas a las corrutinas en `StartCoroutine()`.
+  - Se ha agregado el diagnóstico [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md). Detecte y ajuste las llamadas a las corrutinas en `StartCoroutine()`.
 
   - Se ha agregado el diagnóstico [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md). Detecte y quite el atributo `SerializeField` no válido o redundante.
 
@@ -568,7 +569,7 @@ Publicado el 13 de noviembre de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se revirtió la solución a un error de rendimiento de Unity que se ha corregido en Unity.
 
@@ -626,7 +627,7 @@ Publicado el 24 de julio de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - (Trasladado de la versión 3.9.0.0) Se ha revertido la solución alternativa para un error de rendimiento de Unity que se había corregido en Unity.
 
@@ -636,7 +637,7 @@ Publicado el 7 de julio de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Solución alternativa temporal de un error de rendimiento de Unity: MonoIslands en caché al generar proyectos.
 
@@ -676,7 +677,7 @@ Publicado el 30 de mayo de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - No convierta más archivos PDB portátiles a MDB con el nuevo entorno de ejecución de Unity.
 
@@ -746,7 +747,7 @@ Publicado el 5 de marzo de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido la detección de la versión de Mono.
 
@@ -766,7 +767,7 @@ Publicado el 23 de febrero de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido la detección de la plataforma de destino de Unity.
 
@@ -826,7 +827,7 @@ Publicado el 10 de enero de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido el cálculo del GUID de proyectos para los proyectos de jugador.
 
@@ -1668,7 +1669,7 @@ Publicado el 25 de marzo de 2013
 
 - Se simplifica la depuración remota eliminando la necesidad de configurar una carpeta compartida para Unity. Ahora solo necesita tener acceso a su proyecto de Unity desde Windows.
 
-- Se instala un perfil de Unity personalizado como perfil de destino .net estándar. Esto corrige todos los falsos positivos que podía mostrar ReSharper.
+- Instale un perfil de Unity personalizado como perfil de destino .NET estándar. Esto corrige todos los falsos positivos que podía mostrar ReSharper.
 
 - Se ha encontrado una solución alternativa a un error del motor de scripting de Unity para que el depurador no se interrumpa al encontrar subprocesos que no se hayan registrado debidamente.
 
@@ -1678,7 +1679,7 @@ Publicado el 25 de marzo de 2013
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- Se ha corregido nuestro perfil de .net personalizado
+- Se ha corregido el perfil .NET personalizado.
 
 - Se ha corregido la integración de temas, lo que termina con los problemas relacionados con el tema oscuro de VS 2012.
 
@@ -1751,7 +1752,7 @@ Publicado el 3 de enero de 2013
 
 - Se ha corregido una excepción que podía generarse al evaluar expresiones de UnityScript y Boo.
 
-- Se ha corregido una regresión en la que el cambio de nivel de API .net en Unity no activaba una actualización de los archivos de proyecto.
+- Se ha corregido una regresión en la que el cambio de nivel de API de .NET en Unity no desencadenaría una actualización de los archivos de proyecto.
 
 - Se ha corregido un problema de la API por el que el código de usuario no podía participar en el controlador de devolución de llamada de registro.
 
@@ -1776,7 +1777,7 @@ Publicado el 28 de noviembre de 2012
 
 - Se ha corregido la regresión en segundo plano del Explorador de proyectos de Unity en Visual Studio 2012.
 
-- Se ha corregido la generación de proyectos de usuarios del perfil de .net completo.
+- Se ha corregido la generación de proyectos de usuarios del perfil .NET completo.
 
 - Se ha corregido la generación de proyectos para usuarios del destino web.
 

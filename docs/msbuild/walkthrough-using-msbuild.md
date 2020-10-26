@@ -1,6 +1,7 @@
 ---
-title: 'Tutorial: Usar MSBuild | Microsoft Docs'
-ms.date: 03/20/2019
+title: Usar MSBuild
+description: Obtenga información sobre las distintas partes de un archivo de proyecto de MSBuild, incluidos los elementos, los metadatos de elementos, las propiedades, los destinos y las tareas.
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.custom: contperfq2
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91134823"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298543"
 ---
 # <a name="walkthrough-use-msbuild"></a>Tutorial: Usar MSBuild
 
@@ -28,7 +29,25 @@ MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tu
 
 - Cómo usar los elementos de compilación
 
-Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos**. En este tutorial, creará un archivo del proyecto de MSBuild con Visual Studio. Editará el archivo del proyecto en Visual Studio y utilizará una **ventana de comandos** para compilar el proyecto y examinar los resultados.
+Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos** . En este tutorial, creará un archivo del proyecto de MSBuild con Visual Studio. Editará el archivo del proyecto en Visual Studio y utilizará una **ventana de comandos** para compilar el proyecto y examinar los resultados.
+
+## <a name="install-msbuild"></a>Instalación de MSBuild
+
+::: moniker range="vs-2017"
+
+Si tiene Visual Studio, ya tiene MSBuild instalado. Para instalar MSBuild 15 en un sistema que no tiene Visual Studio, vaya a [Descargas anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/), expanda **Visual Studio 2017** y seleccione el botón **Descargar** . Si tiene una suscripción de Visual Studio, inicie sesión y busque el vínculo para descargar la versión más reciente de **Herramientas de compilación para Visual Studio 2017** . Si no tiene una suscripción de Visual Studio, todavía puede instalar la versión más reciente de las herramientas de compilación. En esta página, use el selector de versión para ir a la versión 2019 de la página y siga las instrucciones de instalación.
+::: moniker-end
+
+::: moniker range="vs-2019"
+Si tiene Visual Studio, ya tiene MSBuild instalado. Con Visual Studio 2019, se instala en la carpeta de instalación de Visual Studio. En el caso de una instalación predeterminada típica en Windows 10, MSBuild.exe se encuentra en la carpeta de instalación en *MSBuild\Current\Bin* .
+
+Para instalar MSBuild en un sistema que no tiene Visual Studio, vaya a [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/), desplácese a **Todas las descargas** y expanda **Herramientas para Visual Studio 2019** . Instale **Herramientas de compilación para Visual Studio 2019** , que incluye MSBuild, o instale el [SDK de .NET Core](/dotnet/core/sdk#acquiring-the-net-core-sdk).
+
+En el instalador, asegúrese de que las herramientas de MSBuild para las cargas de trabajo que usa estén seleccionadas y seleccione **Instalar** .
+
+![Instalación de MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
+
+::: moniker-end
 
 ## <a name="create-an-msbuild-project"></a>Creación de un proyecto de MSBuild
 
@@ -39,14 +58,14 @@ Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos**. En e
 1. Abra Visual Studio y cree un proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **winforms** y, después, elija **Crear una nueva aplicación de Windows Forms (.NET Framework)** . En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **winforms** y, después, elija **Crear una nueva aplicación de Windows Forms (.NET Framework)** . En el cuadro de diálogo que se abre, elija **Crear** .
 
-    En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Acepte los valores predeterminados de **Solución**, **Nombre de la solución** (**BuildApp**) y **Marco**.
+    En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Acepte los valores predeterminados de **Solución** , **Nombre de la solución** ( **BuildApp** ) y **Marco** .
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**  > **Escritorio de Windows** y, a continuación, elija **Aplicación de Windows Forms (.NET Framework)** . Después, elija **Aceptar**.
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto** . En el panel izquierdo del cuadro de diálogo **Nuevo proyecto** , expanda **Visual C#**  > **Escritorio de Windows** y, a continuación, elija **Aplicación de Windows Forms (.NET Framework)** . Después, elija **Aceptar** .
 
-    En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Acepte los valores predeterminados de **Create directory for solution** (Crear directorio para la solución) (seleccionado), **Agregar al control de código fuente** (no seleccionado) y **Nombre de la solución** (**BuildApp**).
+    En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Acepte los valores predeterminados de **Create directory for solution** (Crear directorio para la solución) (seleccionado), **Agregar al control de código fuente** (no seleccionado) y **Nombre de la solución** ( **BuildApp** ).
     ::: moniker-end
 
 1. Haga clic en **Aceptar** o **Crear** para crear el archivo del proyecto.
@@ -57,16 +76,16 @@ Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos**. En e
 
 **Para examinar el archivo de proyecto**
 
-1. En el **Explorador de soluciones**, haga clic en el nodo de proyecto **BuildApp**.
+1. En el **Explorador de soluciones** , haga clic en el nodo de proyecto **BuildApp** .
 
-1. En el navegador de **Propiedades**, observe que la propiedad **Project File** es *BuildApp.csproj*. Todos los nombres de los archivos de proyecto llevan el sufijo *proj*. Si hubiera creado un proyecto de Visual Basic, el nombre del archivo del proyecto sería *BuildApp.vbproj*.
+1. En el navegador de **Propiedades** , observe que la propiedad **Project File** es *BuildApp.csproj* . Todos los nombres de los archivos de proyecto llevan el sufijo *proj* . Si hubiera creado un proyecto de Visual Basic, el nombre del archivo del proyecto sería *BuildApp.vbproj* .
 
-1. Haga clic con el botón secundario de nuevo en el nodo del proyecto y, a continuación, haga clic en **Editar BuildApp.csproj**. 
+1. Haga clic con el botón secundario de nuevo en el nodo del proyecto y, a continuación, haga clic en **Editar BuildApp.csproj** . 
 
      El archivo del proyecto aparece en el editor de código.
 
 >[!NOTE]
-> Para algunos tipos de proyecto, como C++, debe descargar el proyecto (haga clic con el botón derecho en el archivo del proyecto y elija **Descargar el proyecto**) para poder abrir y editar el archivo del proyecto.
+> Para algunos tipos de proyecto, como C++, debe descargar el proyecto (haga clic con el botón derecho en el archivo del proyecto y elija **Descargar el proyecto** ) para poder abrir y editar el archivo del proyecto.
 
 ## <a name="targets-and-tasks"></a>Destinos y tareas
 
@@ -92,7 +111,7 @@ El trabajo de compilar una aplicación se realiza con los elementos [Target](../
 - Un destino es una secuencia con nombre de tareas. Para obtener más información, consulte el tema [Destinos](../msbuild/msbuild-targets.md).
 - Podría tratarse de una secuencia de tareas con nombre, pero, de forma crítica, representa algo que se va a compilar o hacer, por lo que debe definirse de forma orientada a objetivos.
 
-El destino predeterminado no se define en el archivo del proyecto, sino que se especifica en los proyectos importados. El elemento [Import](../msbuild/import-element-msbuild.md) indica los proyectos importados. Por ejemplo, en un proyecto de C#, el destino predeterminado se importa del archivo *Microsoft.CSharp.targets*.
+El destino predeterminado no se define en el archivo del proyecto, sino que se especifica en los proyectos importados. El elemento [Import](../msbuild/import-element-msbuild.md) indica los proyectos importados. Por ejemplo, en un proyecto de C#, el destino predeterminado se importa del archivo *Microsoft.CSharp.targets* .
 
 ```xml
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -100,7 +119,7 @@ El destino predeterminado no se define en el archivo del proyecto, sino que se e
 
 Los archivos importados se insertan realmente en el archivo del proyecto, dondequiera que se les haga referencia.
 
-En proyectos de estilo SDK, no verá este elemento de importación porque el atributo de SDK hace que el archivo se importe de forma implícita.
+En proyectos de estilo SDK no se ve este elemento de importación porque el atributo de SDK hace que este archivo se importe de forma implícita.
 
 MSBuild realiza el seguimiento de los destinos de una compilación y garantiza que cada destino se compile solamente una vez.
 
@@ -144,13 +163,13 @@ Ejecute MSBuild desde el **Símbolo del sistema para desarrolladores** de Visual
 
 **Para compilar el destino:**
 
-1. Abra la **ventana Comandos**.
+1. Abra la **ventana Comandos** .
 
    (Windows 10) En el cuadro de búsqueda de la barra de tareas, comience a escribir el nombre de la herramienta, como `dev` o `developer command prompt`. Esto muestra una lista de las aplicaciones instaladas que coinciden con el patrón de búsqueda.
 
-   Si tiene que buscarlo manualmente, es el archivo *LaunchDevCmd.bat* de la carpeta *<carpeta de instalación de Visual Studio\>\<version>\Common7\Tools*.
+   Si tiene que buscarlo manualmente, es el archivo *LaunchDevCmd.bat* de la carpeta *<carpeta de instalación de Visual Studio\>\<version>\Common7\Tools* .
 
-2. En la ventana de comandos, navegue hasta la carpeta que contiene el archivo de proyecto, en este caso, *D:\BuildApp\BuildApp*.
+2. En la ventana de comandos, navegue hasta la carpeta que contiene el archivo de proyecto, en este caso, *D:\BuildApp\BuildApp* .
 
 3. Ejecute msbuild con el modificador de comando `-t:HelloWorld`. Esto selecciona y compila el destino HelloWorld:
 
@@ -158,7 +177,7 @@ Ejecute MSBuild desde el **Símbolo del sistema para desarrolladores** de Visual
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Examine la salida en la **ventana Comandos**. Debe ver las dos líneas "Hello" y "World":
+4. Examine la salida en la **ventana Comandos** . Debe ver las dos líneas "Hello" y "World":
 
     ```output
     Hello
@@ -224,7 +243,7 @@ Utilice esta sintaxis para examinar algunas de las propiedades en el archivo del
 
 1. Guarde el archivo de proyecto.
 
-1. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+1. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -275,7 +294,7 @@ Las propiedades se pueden definir en la línea de comandos utilizando el modific
 
 **Para establecer el valor de una propiedad desde la línea de comandos:**
 
-1. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+1. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
@@ -305,7 +324,7 @@ Cambie la tarea Message para mostrar el valor de la propiedad Configuration con 
 
 1. Guarde el archivo de proyecto.
 
-1. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+1. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -332,7 +351,7 @@ Todos los elementos son elementos secundarios de elementos ItemGroup. El nombre 
 </ItemGroup>
 ```
 
-define un grupo de elementos que contiene dos elementos. El tipo de elemento Compile tiene dos valores: *Program.cs* y *Properties\AssemblyInfo.cs*.
+define un grupo de elementos que contiene dos elementos. El tipo de elemento Compile tiene dos valores: *Program.cs* y *Properties\AssemblyInfo.cs* .
 
 El código siguiente crea el mismo tipo de elemento declarando ambos archivos en un atributo Include, separados por punto y coma.
 
@@ -369,7 +388,7 @@ Utilice esta sintaxis para examinar el tipo de elemento Compile en el archivo de
 
 1. Guarde el archivo de proyecto.
 
-1. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+1. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -401,7 +420,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
 
 2. Guarde el archivo de proyecto.
 
-3. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+3. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -432,7 +451,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
 <Photos Include="images\**\*.jpeg" />
 ```
 
- agrega todos los archivos con la extensión *.jpeg* de la carpeta *images*, y todas sus subcarpetas, al tipo de elemento Photos. Para obtener más ejemplos, vea [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).
+ agrega todos los archivos con la extensión *.jpeg* de la carpeta *images* , y todas sus subcarpetas, al tipo de elemento Photos. Para obtener más ejemplos, vea [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).
 
  Observe que según se declaran elementos se agregan al tipo de elemento. Por ejemplo,
 
@@ -441,7 +460,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
 <Photos Include="images\*.gif" />
 ```
 
- crea un tipo de elemento denominado Photo que contiene todos los archivos de la carpeta *images* con una extensión *.jpeg* o *.gif*. Esto es equivalente a la línea siguiente:
+ crea un tipo de elemento denominado Photo que contiene todos los archivos de la carpeta *images* con una extensión *.jpeg* o *.gif* . Esto es equivalente a la línea siguiente:
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
@@ -453,7 +472,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- agrega todos los archivos con la extensión *.cs* al tipo de elemento Compile, salvo los archivos cuyos nombres contienen la cadena *Designer*. Para obtener más ejemplos, vea [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).
+ agrega todos los archivos con la extensión *.cs* al tipo de elemento Compile, salvo los archivos cuyos nombres contienen la cadena *Designer* . Para obtener más ejemplos, vea [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).
 
 El atributo Exclude solamente afecta a los elementos agregados por el atributo Include en el elemento que contiene ambos. Por ejemplo,
 
@@ -462,7 +481,7 @@ El atributo Exclude solamente afecta a los elementos agregados por el atributo I
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
-no excluiría el archivo *Form1.cs*, que se agregó en el elemento anterior.
+no excluiría el archivo *Form1.cs* , que se agregó en el elemento anterior.
 
 **Para incluir y excluir elementos**
 
@@ -482,7 +501,7 @@ no excluiría el archivo *Form1.cs*, que se agregó en el elemento anterior.
 
 3. Guarde el archivo de proyecto.
 
-4. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+4. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -524,7 +543,7 @@ no excluiría el archivo *Form1.cs*, que se agregó en el elemento anterior.
 
 2. Guarde el archivo de proyecto.
 
-3. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+3. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -555,7 +574,7 @@ Observe cómo la frase "Compile.DependentUpon" aparece varias veces. El uso de m
 
 2. Guarde el archivo de proyecto.
 
-3. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+3. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -594,7 +613,7 @@ Por ejemplo, una lista de elementos de archivos de origen se puede transformar e
 
 2. Guarde el archivo de proyecto.
 
-3. Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
+3. Desde la **ventana Comandos** , escriba y ejecute la siguiente línea:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld

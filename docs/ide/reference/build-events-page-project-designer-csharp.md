@@ -1,5 +1,7 @@
 ---
 title: Eventos de compilación (Página, Diseñador de proyectos) (C#)
+description: Aprenda a especificar instrucciones de configuración de compilación. También puede especificar las condiciones en las que se ejecutan los eventos posteriores a la compilación.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419060"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136854"
 ---
 # <a name="build-events-page-project-designer-c"></a>Eventos de compilación (Página, Diseñador de proyectos) (C#)
 
@@ -46,7 +48,7 @@ Especifica los comandos que se van a ejecutar antes de que empiece la compilaci�
 
 **Línea de comandos del evento posterior a la compilación**
 
-Especifica los comandos que se van a ejecutar después de que finalice la compilación. Para escribir comandos largos, haga clic en **Edición posterior a la compilación** para mostrar el cuadro de diálogo **Línea de comandos del evento anterior a la compilación/Línea de comandos del evento posterior a la compilación**.
+Especifica los comandos que se van a ejecutar después de que finalice la compilación. Para escribir comandos largos, haga clic en **Edición posterior a la compilación** para mostrar el cuadro de diálogo **Línea de comandos del evento anterior a la compilación/Línea de comandos del evento posterior a la compilación** .
 
 > [!NOTE]
 > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -77,7 +79,7 @@ entonces la configuración del archivo del proyecto es:
 </PropertyGroup>
 ```
 
-Para los proyectos de .NET Core, Visual Studio 2019 (y Visual Studio 2017 en las actualizaciones más recientes), agrega un destino de MSBuild denominado `PreBuild` o `PostBuild` para las configuraciones de **PreBuildEvent** y **PostBuildEvent**. Estos destinos usan los atributos **BeforeTargets** y **AfterTargets**, que MSBuild reconoce. Por ejemplo, en el ejemplo anterior, Visual Studio genera ahora el siguiente código:
+Para los proyectos de .NET Core, Visual Studio 2019 (y Visual Studio 2017 en las actualizaciones más recientes), agrega un destino de MSBuild denominado `PreBuild` o `PostBuild` para las configuraciones de **PreBuildEvent** y **PostBuildEvent** . Estos destinos usan los atributos **BeforeTargets** y **AfterTargets** , que MSBuild reconoce. Por ejemplo, en el ejemplo anterior, Visual Studio genera ahora el siguiente código:
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
@@ -96,7 +98,7 @@ Para un evento posterior a la compilación, use el nombre `PostBuild` y establez
 > [!NOTE]
 > Estos cambios en el archivo del proyecto se realizaron para admitir proyectos de estilo SDK. Si va a migrar manualmente un archivo del proyecto del formato anterior al formato de estilo SDK, debe eliminar las propiedades `PreBuildEvent` y `PostBuildEvent` y reemplazarlas por los destinos `PreBuild` y `PostBuild`, tal como se muestra en el código anterior. Para saber si el proyecto es un proyecto de estilo SDK, vea [Identificación del formato del proyecto](/nuget/resources/check-project-format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)

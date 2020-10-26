@@ -1,5 +1,7 @@
 ---
 title: Descripción de las plataformas de compilación
+description: Aprenda a almacenar versiones diferentes de las propiedades de solución y de proyecto que se aplican a distintas plataformas de destino en Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115065"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136659"
 ---
 # <a name="understand-build-platforms"></a>Descripción de las plataformas de compilación
 
@@ -30,10 +32,10 @@ Puede almacenar versiones diferentes de las propiedades de solución y de proyec
 
 ## <a name="in-this-section"></a>En esta sección
 
-[Cómo: Configuración de proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Procedimiento: Configuración de proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)\
 Explica cómo configurar un proyecto destinado a una plataforma específica.
 
-[Cómo: Configuración de proyectos para destinarlos a varias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Procedimiento: Configuración de proyectos para destinarlos a varias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Explica cómo configurar un proyecto destinado a varias plataformas.
 
 ## <a name="see-also"></a>Vea también

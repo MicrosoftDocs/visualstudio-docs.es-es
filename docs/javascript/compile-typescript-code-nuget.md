@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454630"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927931"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compilar código TypeScript (ASP.NET Core)
 
@@ -31,7 +31,7 @@ Si se instala Visual Studio, Visual Studio seleccionará automáticamente el pro
 
 1. Abra el proyecto de ASP.NET Core en Visual Studio.
 
-1. en el Explorador de soluciones (panel derecho). Haga clic con el botón derecho en el nodo de proyecto y elija **Administrar paquetes NuGet**. En la pestaña **Examinar**, busque **Microsoft.TypeScript.MSBuild** y, a continuación, haga clic en **Instalar** a la derecha para instalar el paquete.
+1. en el Explorador de soluciones (panel derecho). Haga clic con el botón derecho en el nodo de proyecto y elija **Administrar paquetes NuGet** . En la pestaña **Examinar** , busque **Microsoft.TypeScript.MSBuild** y, a continuación, haga clic en **Instalar** a la derecha para instalar el paquete.
 
    ![Adición del paquete NuGet](../javascript/media/aspnet-core-ts-nuget.png)
 
@@ -44,7 +44,7 @@ Si se instala Visual Studio, Visual Studio seleccionará automáticamente el pro
    </PackageReference>
    ```
 
-1. Haga clic con el botón derecho en el nodo de proyecto y elija **Agregar > Nuevo elemento**. Elija el **archivo de configuración JSON de TypeScript** y, a continuación, haga clic en **Agregar**.
+1. Haga clic con el botón derecho en el nodo de proyecto y elija **Agregar > Nuevo elemento** . Elija el **archivo de configuración JSON de TypeScript** y, a continuación, haga clic en **Agregar** .
 
    Visual Studio agrega el archivo *tsconfig.json* a la raíz del proyecto. Puede usar este archivo para [configurar opciones](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) para el compilador de TypeScript.
 
@@ -71,13 +71,13 @@ Si se instala Visual Studio, Visual Studio seleccionará automáticamente el pro
    En este ejemplo:
    - *include* indica al compilador dónde encontrar archivos de TypeScript (*.ts).
    - La opción *outDir* especifica la carpeta de salida para los archivos JavaScript sin formato que el compilador de TypeScript transpila.
-   - La opción *sourceMap* indica si el compilador genera archivos *sourceMap*.
+   - La opción *sourceMap* indica si el compilador genera archivos *sourceMap* .
 
    La configuración anterior proporciona solo una introducción básica a la configuración de TypeScript. Para obtener información sobre otras opciones, consulte [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 ### <a name="build-the-application"></a>Compilar la aplicación
 
-1. Agregue archivos TypeScript ( *.ts*) o TypeScript JSX ( *.tsx*) al proyecto y, a continuación, agregue código de TypeScript. Para obtener un ejemplo sencillo de TypeScript, use lo siguiente:
+1. Agregue archivos TypeScript ( *.ts* ) o TypeScript JSX ( *.tsx* ) al proyecto y, a continuación, agregue código de TypeScript. Para obtener un ejemplo sencillo de TypeScript, use lo siguiente:
 
    ```typescript
    let message: string = 'Hello World';
@@ -86,7 +86,7 @@ Si se instala Visual Studio, Visual Studio seleccionará automáticamente el pro
 
 1. Si usa un proyecto anterior de estilo que no es de SDK, siga las instrucciones incluidas en [Eliminación de importaciones predeterminadas](#remove-default-imports) antes de la compilación.
 
-1. Elija **Compilar > Compilar solución**.
+1. Elija **Compilar > Compilar solución** .
 
    Aunque la aplicación se compila automáticamente cuando la ejecuta, queremos fijarnos en algo que ocurre durante el proceso de compilación:
 
@@ -106,7 +106,11 @@ Si se instala Visual Studio, Visual Studio seleccionará automáticamente el pro
 
 Para ver un ejemplo del uso de gulp con el ejecutor de tareas para compilar la aplicación, consulte [ASP.NET Core y TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html).
 
-Si experimenta algún problema que provoque que Visual Studio use una versión de Node.js o una herramienta de terceros distinta de la versión esperada, puede que tenga que establecer la ruta de acceso para que Visual Studio la use. Elija **Herramientas** > **Opciones**. En **Proyectos y soluciones**, elija **Administración de paquetes web** > **Herramientas web externas**.
+Si experimenta algún problema que provoque que Visual Studio use una versión de Node.js o una herramienta de terceros distinta de la versión esperada, puede que tenga que establecer la ruta de acceso para que Visual Studio la use. Elija **Herramientas** > **Opciones** . En **Proyectos y soluciones** , elija **Administración de paquetes web** > **Herramientas web externas** .
+
+### <a name="run-the-application"></a>Ejecutar la aplicación
+
+Para obtener instrucciones para ejecutar la aplicación después de compilarla, vea [Creación de la primera aplicación Node.js](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 
 ### <a name="nuget-package-structure-details"></a>Detalles de la estructura de paquetes NuGet
 
@@ -119,7 +123,7 @@ Si experimenta algún problema que provoque que Visual Studio use una versión d
 
     1. *Microsoft.TypeScript.MSBuild.targets*
 
-        Este archivo establece variables que especifican la plataforma en tiempo de ejecución, como una ruta de acceso a *TypeScript.Tasks.dll*, antes de importar *Microsoft.TypeScript.targets* desde la carpeta *tools*.
+        Este archivo establece variables que especifican la plataforma en tiempo de ejecución, como una ruta de acceso a *TypeScript.Tasks.dll* , antes de importar *Microsoft.TypeScript.targets* desde la carpeta *tools* .
 
     2. *Microsoft.TypeScript.MSBuild.props*
 
@@ -157,7 +161,7 @@ En proyectos de ASP.NET Core anteriores que usan el [formato de estilo que no es
 
 Si se usa el paquete NuGet para la compatibilidad con MSBuild de un proyecto, el archivo del proyecto no debe importar `Microsoft.TypeScript.Default.props` ni `Microsoft.TypeScript.targets`. Los archivos los importa el paquete NuGet, por lo que incluirlos por separado podría provocar un comportamiento no intencionado.
 
-1. Haga clic con el botón derecho en el proyecto y elija **Descargar proyecto**.
+1. Haga clic con el botón derecho en el proyecto y elija **Descargar proyecto** .
 
 1. Haga clic con el botón derecho en el proyecto y elija **Editar \<*project file name*\>** .
 

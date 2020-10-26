@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740037"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927905"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compilar código TypeScript (Node.js)
 
@@ -35,11 +35,11 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
 
    En el Explorador de soluciones (panel derecho), abra *package.json* en la raíz del proyecto. Los paquetes enumerados corresponden a los paquetes del nodo npm del Explorador de soluciones. Para más información, vea [Administrar paquetes de npm](../javascript/npm-package-management.md).
 
-   En el caso de un proyecto de Node.js, puede instalar el paquete de npm de TypeScript mediante la línea de comandos o el IDE. Para realizar la instalación mediante el IDE, haga clic con el botón derecho en el nodo npm del Explorador de soluciones, elija **Instalar nuevos paquetes de npm**, busque **TypeScript** e instale el paquete.
+   En el caso de un proyecto de Node.js, puede instalar el paquete de npm de TypeScript mediante la línea de comandos o el IDE. Para realizar la instalación mediante el IDE, haga clic con el botón derecho en el nodo npm del Explorador de soluciones, elija **Instalar nuevos paquetes de npm** , busque **TypeScript** e instale el paquete.
 
    Active la opción **npm** de la ventana **Resultados** para ver el progreso de la instalación del paquete. El paquete instalado se muestra en el nodo **npm** del Explorador de soluciones.
 
-1. Si el proyecto aún no lo incluye, agregue un archivo *.tsconfig* a la raíz del proyecto. Para agregar el archivo, haga clic con el botón derecho en el nodo de proyecto y elija **Agregar > Nuevo elemento**. Elija el **archivo de configuración JSON de TypeScript** y, a continuación, haga clic en **Agregar**.
+1. Si el proyecto aún no lo incluye, agregue un archivo *.tsconfig* a la raíz del proyecto. Para agregar el archivo, haga clic con el botón derecho en el nodo de proyecto y elija **Agregar > Nuevo elemento** . Elija el **archivo de configuración JSON de TypeScript** y, a continuación, haga clic en **Agregar** .
 
    Visual Studio agrega el archivo *tsconfig.json* a la raíz del proyecto. Puede usar este archivo para [configurar opciones](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) para el compilador de TypeScript.
 
@@ -66,20 +66,20 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
    En este ejemplo:
    - *include* indica al compilador dónde encontrar archivos de TypeScript (*.ts).
    - La opción *outDir* especifica la carpeta de salida para los archivos JavaScript sin formato que el compilador de TypeScript transpila.
-   - La opción *sourceMap* indica si el compilador genera archivos *sourceMap*.
+   - La opción *sourceMap* indica si el compilador genera archivos *sourceMap* .
 
    La configuración anterior proporciona solo una introducción básica a la configuración de TypeScript. Para obtener información sobre otras opciones, consulte [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 ## <a name="build-the-application"></a>Compilar la aplicación
 
-1. Agregue archivos TypeScript ( *.ts*) o TypeScript JSX ( *.tsx*) al proyecto y, a continuación, agregue código de TypeScript. Para obtener un ejemplo sencillo de TypeScript, use lo siguiente:
+1. Agregue archivos TypeScript ( *.ts* ) o TypeScript JSX ( *.tsx* ) al proyecto y, a continuación, agregue código de TypeScript. Para obtener un ejemplo sencillo de TypeScript, use lo siguiente:
 
    ```typescript
    let message: string = 'Hello World';
    console.log(message);
    ```
 
-1. En *package.json*, agregue compatibilidad con los comandos de limpieza y compilación de Visual Studio mediante los siguientes scripts.
+1. En *package.json* , agregue compatibilidad con los comandos de limpieza y compilación de Visual Studio mediante los siguientes scripts.
 
    ```json
    "scripts": {
@@ -88,7 +88,7 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
    },
    ```
 
-   Si debe realizar la compilación mediante una herramienta de terceros como webpack, puede agregar un script de compilación de línea de comandos al archivo *package.json*:
+   Si debe realizar la compilación mediante una herramienta de terceros como webpack, puede agregar un script de compilación de línea de comandos al archivo *package.json* :
 
    ```json
    "scripts": {
@@ -100,12 +100,12 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
 
    Para ver un ejemplo de cómo usar Vue.js con TypeScript, consulte [Crear una aplicación Vue.js](/javascript/create-application-with-vuejs).
 
-1. Si debe configurar opciones como la página de inicio, la ruta de acceso al runtime de Node.js, el puerto de la aplicación o los argumentos de tiempo de ejecución, haga clic con el botón derecho en el nodo de proyecto del Explorador de soluciones y elija **Propiedades**.
+1. Si debe configurar opciones como la página de inicio, la ruta de acceso al runtime de Node.js, el puerto de la aplicación o los argumentos de tiempo de ejecución, haga clic con el botón derecho en el nodo de proyecto del Explorador de soluciones y elija **Propiedades** .
 
    >[!NOTE]
-   > Al configurar herramientas de terceros, los proyectos de Node.js no usan las rutas de acceso configuradas en **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Administración de paquetes web** > **Herramientas web externas**. Esta configuración se utiliza para otros tipos de proyectos.
+   > Al configurar herramientas de terceros, los proyectos de Node.js no usan las rutas de acceso configuradas en **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Administración de paquetes web** > **Herramientas web externas** . Esta configuración se utiliza para otros tipos de proyectos.
 
-1. Elija **Compilar > Compilar solución**.
+1. Elija **Compilar > Compilar solución** .
 
    Aunque la aplicación se compila automáticamente cuando la ejecuta, queremos fijarnos en algo que ocurre durante el proceso de compilación:
 
@@ -113,9 +113,13 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
 
    Los archivos de asignación de origen son necesarios para la [depuración](../javascript/debug-nodejs.md).
 
+### <a name="run-the-application"></a>Ejecutar la aplicación
+
+Para obtener instrucciones para ejecutar la aplicación después de compilarla, vea [Creación de la primera aplicación Node.js](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
+
 ## <a name="automate-build-tasks"></a>Automatizar las tareas de compilación
 
 Puede usar el Explorador del ejecutor de tareas en Visual Studio para ayudar a automatizar las tareas para herramientas de terceros como npm y webpack.
 
-- [Ejecutor de tareas de NPM](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner): agrega compatibilidad con los scripts npm definidos en *package.json*. Admite yarn.
+- [Ejecutor de tareas de NPM](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner): agrega compatibilidad con los scripts npm definidos en *package.json* . Admite yarn.
 - [Ejecutor de tareas de webpack](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebPackTaskRunner): agrega compatibilidad con webpack.

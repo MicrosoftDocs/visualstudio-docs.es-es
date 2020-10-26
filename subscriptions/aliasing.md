@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006220"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298181"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias".
@@ -33,10 +33,10 @@ Un error de coincidencia de nombre principal de usuario (UPN) puede producirse c
 
 1. Inicie sesión en https://my.visualstudio.com/subscriptions con la dirección de inicio de sesión mencionada en su correo electrónico de asignación de la suscripción.
 
-2. Compruebe que la dirección de correo electrónico de inicio de sesión que aparece en la parte superior derecha de la página coincide con la que usó para iniciar sesión.  Si no es así, el UPN no coincide y no podrá ver la suscripción. 
+2. Haga clic en su nombre en la esquina superior derecha de la página.  De este modo se abre el perfil.  Compruebe que la dirección de correo electrónico de inicio de sesión que aparece en el perfil coincide con la empleada para iniciar sesión.  Si no es así, el UPN no coincide y no podrá ver la suscripción. 
 
 > [!div class="mx-imgBorder"]
-> ![Dirección de correo electrónico de inicio de sesión](_img//aliasing/sign-in-email.png "Asegúrese de que la dirección de correo electrónico que se muestra en la parte superior derecha coincide con la que usa para iniciar sesión.")
+> ![Dirección de correo electrónico de inicio de sesión](_img//aliasing/sign-in-email.png "Asegúrese de que la dirección de correo electrónico que aparece en el perfil coincide con la que usa para iniciar sesión.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Corrección de un error de coincidencia de UPN
 
@@ -64,7 +64,7 @@ Las cuentas de suscripción personal también pueden experimentar problemas si l
 
 La plataforma de Visual Studio da prioridad al alias principal para mostrar los detalles de la suscripción. 
 
-1. Vaya a **Administrar el modo de iniciar sesión en Microsoft**. Inicie sesión en su cuenta Microsoft si se le solicita que lo haga. 
+1. Vaya a **Administrar el modo de iniciar sesión en Microsoft** . Inicie sesión en su cuenta Microsoft si se le solicita que lo haga. 
 
 2. En Alias de cuenta, seleccione **Convertir en principal** junto a la dirección de correo electrónico utilizada para asignar la suscripción. 
 

@@ -1,5 +1,6 @@
 ---
 title: Uso de Visual Studio Tools para Unity | Microsoft Docs
+description: Aprenda a usar las características de productividad e integración de Visual Studio Tools para Unity. Use también el depurador de Visual Studio para el desarrollo de Unity.
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d8a0db05788682bf08f9899cebb517370a1627b6
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: d6bf19060d029ee20b4c5c06d594e3b16cb391a3
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508969"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039864"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 
@@ -33,7 +34,7 @@ También puede abrir Visual Studio sin ningún script abierto en el editor de c�
 
 Puede acceder rápidamente a la documentación de creación de scripts de Unity desde Visual Studio. Si Visual Studio Tools para Unity no encuentra localmente la documentación de la API, intentará encontrarla en línea.
 
-- En Visual Studio, resalte o coloque el cursor sobre la API de Unity sobre la que quiere obtener información y, después, presione **Ctrl**+**Alt**+**M**, **Ctrl**+**H**
+- En Visual Studio, resalte o coloque el cursor sobre la API de Unity sobre la que quiere obtener información y, después, presione **Ctrl**+**Alt**+**M** , **Ctrl**+**H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>IntelliSense para mensajes de API de Unity
 
@@ -43,13 +44,13 @@ La integridad del código de IntelliSense facilita la implementación de mensaje
 
 2. Comience a escribir el nombre de un mensaje de Unity, como `OnTriggerEnter`.
 
-3. Una vez que haya escrito las letras "**ontri**", aparece una lista de sugerencias de IntelliSense.
+3. Una vez que haya escrito las letras " **ontri** ", aparece una lista de sugerencias de IntelliSense.
 
    ![Using IntelliSense](media/vstu_intellisense1.png)
 
 4. La selección de la lista se puede cambiar de tres maneras:
 
-    - Con las teclas de flecha **arriba** y **abajo**.
+    - Con las teclas de flecha **arriba** y **abajo** .
 
     - Al hacer clic con el mouse en el elemento deseado.
 
@@ -57,9 +58,9 @@ La integridad del código de IntelliSense facilita la implementación de mensaje
 
 5. IntelliSense puede insertar el mensaje de Unity seleccionado, incluidos todos los parámetros necesarios:
 
-    - Al presionar **Tab**.
+    - Al presionar **Tab** .
 
-    - Al presionar **Entrar**.
+    - Al presionar **Entrar** .
 
     - Al hacer doble clic en el elemento seleccionado.
 
@@ -73,13 +74,13 @@ Para crear definiciones vacías de método MonoBehavior con el asistente de Mono
 
 1. En Visual Studio, coloque el cursor donde quiera que se inserten los métodos y, después, presione **Ctrl**+**Mayús**+**M** para iniciar el asistente de MonoBehavior.
 
-2. En la ventana **Crear métodos de script**, marque la casilla junto al nombre de cada método que quiere agregar.
+2. En la ventana **Crear métodos de script** , marque la casilla junto al nombre de cada método que quiere agregar.
 
 3. Use la lista desplegable **Versión de marco de trabajo** para seleccionar la versión que desee.
 
 4. De forma predeterminada, los métodos se insertan en la posición del cursor. Como alternativa, puede elegir insertarlos después de cualquier método que esté ya implementado en la clase si cambia el valor de la lista desplegable **Punto de inserción** por la ubicación que desee.
 
-5. Si quiere que el asistente genere los comentarios de los métodos que ha seleccionado, marque la casilla **Generar comentarios de métodos**. Estos comentarios están diseñados para ayudarlo a entender cuando se llama al método y cuáles son sus responsabilidades generales.
+5. Si quiere que el asistente genere los comentarios de los métodos que ha seleccionado, marque la casilla **Generar comentarios de métodos** . Estos comentarios están diseñados para ayudarlo a entender cuando se llama al método y cuáles son sus responsabilidades generales.
 
 6. Seleccione el botón **Aceptar** para salir del asistente e insertar los métodos en el código.
 
@@ -91,7 +92,7 @@ Para crear definiciones vacías de método MonoBehavior con el asistente de Mono
 
 El Explorador de proyectos de Unity muestra todos los archivos de proyecto y directorios de Unity de la misma manera que el Editor de Unity. La experiencia es diferente a navegar por los scripts de Unity con el Explorador de soluciones de Visual Studio normal, que los organiza en proyectos y una solución generada por Visual Studio.
 
-- En el menú principal de Visual Studio, seleccione **Ver > Explorador de proyectos de Unity**. Método abreviado de teclado: **Alt**+**Mayús**+**E**
+- En el menú principal de Visual Studio, seleccione **Ver > Explorador de proyectos de Unity** . Método abreviado de teclado: **Alt**+**Mayús**+**E**
 
    ![Ver la ventana Explorador de proyectos de Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -103,7 +104,7 @@ Visual Studio Tools para Unity permite depurar scripts de editor y juego del pro
 
 #### <a name="start-debugging"></a>Iniciar depuración
 
-1. Conecte Visual Studio a Unity haciendo clic en el botón **Reproducir** llamado **Attach to Unity** (Asociar a Unity), o use el método abreviado de teclado **F5**.
+1. Conecte Visual Studio a Unity haciendo clic en el botón **Reproducir** llamado **Attach to Unity** (Asociar a Unity), o use el método abreviado de teclado **F5** .
 
    ![Haga clic en Reproducir en Visual Studio](media/vstu_play-button.png)
 
@@ -115,7 +116,7 @@ Visual Studio Tools para Unity permite depurar scripts de editor y juego del pro
 
 #### <a name="stop-debugging"></a>Detener depuración
 
-- Haga clic en el botón **Detener** en Visual Studio o use el método abreviado de teclado **MAYÚS+F5**.
+- Haga clic en el botón **Detener** en Visual Studio o use el método abreviado de teclado **MAYÚS+F5** .
 
   ![Haga clic en Detener en Visual Studio](media/vstu_stop-debugger.png)
 
@@ -149,7 +150,7 @@ Puede depurar las compilaciones de desarrollo de varios reproductores de Unity c
 
 #### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>Selección de una instancia de Unity a la que asociar el depurador
 
-- En el menú principal de Visual Studio, elija **Depurar > Asociar depurador de Unity**.
+- En el menú principal de Visual Studio, elija **Depurar > Asociar depurador de Unity** .
 
    ![Asocie el depurador de Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
@@ -198,7 +199,7 @@ Tenga en cuenta que el escenario descrito aquí supone que tiene el código fuen
 
    - Modificar la configuración de compilación del proyecto DLL para que incluya una tarea integrada a posteriori que copie los archivos DLL y PDB de salida de la carpeta de salida en la carpeta **Activos** del proyecto de Unity.
 
-   - Modificar la configuración de compilación del proyecto DLL para establecer la carpeta de salida como la carpeta **Activos** del proyecto de Unity. Tanto los archivos DLL como PDB se colocarán en la carpeta **Activos**.
+   - Modificar la configuración de compilación del proyecto DLL para establecer la carpeta de salida como la carpeta **Activos** del proyecto de Unity. Tanto los archivos DLL como PDB se colocarán en la carpeta **Activos** .
 
    Los archivos PDB son necesarios para la depuración porque contienen símbolos de depuración de los archivos DLL y asignan el código del archivo DLL a su forma de código fuente. Si tiene como destino el entorno de ejecución heredado, Visual Studio Tools para Unity usará información de los archivos DLL y PDB para crear un archivo DLL.MDB, que es el formato de símbolo de depuración utilizado por el motor de scripting heredado de Unity. Si tiene como destino el entorno de ejecución nuevo y usa archivos PDB portátiles, Visual Studio Tools para Unity no intentará realizar ninguna conversión de símbolo, porque el entorno de ejecución de Unity nuevo puede consumir archivos PDB portátiles de manera nativa.
 

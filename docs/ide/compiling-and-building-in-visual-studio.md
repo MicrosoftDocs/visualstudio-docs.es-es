@@ -1,5 +1,7 @@
 ---
 title: Compilación y generación
+description: Aprenda a usar el método de compilación del IDE de Visual Studio, el método de compilación de las herramientas de línea de comandos de MSBuild o el método de compilación de Azure Pipelines para compilar una aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,16 +14,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ac65fa9eaaf8e318e99e134957b335141f07577c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928546"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136594"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
-Para obtener una primera introducción a la compilación dentro del IDE, vea [Tutorial: Compilar una aplicación](walkthrough-building-an-application.md).
+Para obtener una primera introducción a la compilación dentro del IDE, vea [Tutorial: Compilación de una aplicación](walkthrough-building-an-application.md).
 
 Puede usar cualquiera de los siguientes métodos para compilar una aplicación: el IDE de Visual Studio, las herramienta de línea de comandos de MSBuild y Azure Pipelines:
 
@@ -41,7 +43,7 @@ La documentación de esta sección analiza en detalle el proceso de compilación
 
 Cuando crea un proyecto, Visual Studio crea las configuraciones de compilación predeterminadas para el proyecto y la solución que contiene el proyecto.  Estas configuraciones definen cómo se compilan y se implementan las soluciones y los proyectos. Las configuraciones de proyecto, en concreto, son únicas para una plataforma de destino (por ejemplo, Windows o Linux) y para un tipo de compilación (por ejemplo, depuración o publicación). Puede editar estas configuraciones como quiera y también puede crear sus propias configuraciones según sea necesario.
 
-Para obtener una primera introducción a la compilación dentro del IDE, vea [Tutorial: Compilar una aplicación](walkthrough-building-an-application.md).
+Para obtener una primera introducción a la compilación dentro del IDE, vea [Tutorial: Compilación de una aplicación](walkthrough-building-an-application.md).
 
 Después, vea [Compilar y limpiar proyectos y soluciones en Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) para obtener información sobre las diversas personalizaciones de aspectos que puede llevar a cabo en el proceso. Entre las personalizaciones se incluyen [cambiar los directorios de salida](how-to-change-the-build-output-directory.md), [especificar eventos de compilación personalizados](specifying-custom-build-events-in-visual-studio.md), [administrar dependencias del proyecto](how-to-create-and-remove-project-dependencies.md), [administrar archivos del registro de compilación](how-to-view-save-and-configure-build-log-files.md) y [suprimir las advertencias del compilador](how-to-suppress-compiler-warnings.md).
 
@@ -53,8 +55,8 @@ De ahí en adelante, puede explorar otras tareas:
 - [Establecer las opciones de compilación](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Compilar proyectos de sitios web](/previous-versions/hwxa5aha(v=vs.140))
 - [Compilar y generar (Visual Studio para Mac)](/visualstudio/mac/compiling-and-building)
-- [Proyectos de CMake en Visual Studio](/cpp/build/cmake-projects-in-visual-studio)
+- [Proyectos de CMake en Visual Studio](/cpp/build/cmake-projects-in-visual-studio)

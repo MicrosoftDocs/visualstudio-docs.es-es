@@ -1,5 +1,6 @@
 ---
 title: Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Unity | Microsoft Docs
+description: Entienda la administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Unity. Revise las herramientas de Agile, modele, programe, compile, pruebe y mejore la calidad del código.
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 17cfe2dd0a1ba25eeab6b0bb31ad849303207a02
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509047"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039929"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con aplicaciones de Unity
 
@@ -26,7 +27,7 @@ En estas tablas se recogen cómo las características de DevOps en Visual Studio
 
 ## <a name="agile-tools"></a>Herramientas de Agile
 
-Vínculo de referencia: [About Agile tools and Agile project management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (Información sobre las herramientas y la administración de proyectos en Agile) con Azure Boards o TFS, incluido Team Explorer Everywhere
+Vínculo de referencia: [About Agile tools and Agile project management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true) (Información sobre las herramientas y la administración de proyectos en Agile) con Azure Boards o TFS, incluido Team Explorer Everywhere
 
 Comentario general: todas las características de planeación y seguimiento son independientes del tipo de proyecto y de los lenguajes de codificación.
 
@@ -59,8 +60,8 @@ Comentario general: Aunque estas características de diseño son independientes 
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
-|[Uso del control de versiones de Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) o Azure Repos.|Sí|Los proyectos de Unity son simplemente una colección de archivos que se pueden colocar en sistemas de control de versiones como cualquier otro proyecto, pero después de esta tabla se describen algunas consideraciones especiales.|
-|[Introducción a Git en Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Sí|Vea las notas después de la tabla.|
+|[Uso del control de versiones de Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) o Azure Repos.|Sí|Los proyectos de Unity son simplemente una colección de archivos que se pueden colocar en sistemas de control de versiones como cualquier otro proyecto, pero después de esta tabla se describen algunas consideraciones especiales.|
+|[Introducción a Git en Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|Sí|Vea las notas después de la tabla.|
 |[Mejorar la calidad del código](../test/improve-code-quality.md)|Sí||
 |[Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)|Sí||
 |[Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)|Sí||
@@ -75,12 +76,12 @@ Consideraciones especiales para el control de versiones con Unity:
 
 ## <a name="build"></a>Compilar
 
-Vínculo de referencia: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+Vínculo de referencia: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
 |Team Foundation Server (TFS) local|Posibilidad|Los proyectos de Unity se compilan a través del entorno de Unity y no a través del sistema de compilación de Visual Studio (la compilación de Visual Studio Tools para Unity compilará los scripts, pero no generará un archivo ejecutable). Es posible [compilar proyectos de Unity desde la línea de comandos](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentación de Unity), por lo que se puede configurar un proceso de MSBuild en un servidor TFS para ejecutar los comandos de Unity correspondientes siempre que Unity esté instalado en el equipo.<br /><br /> Unity también ofrece [Unity Cloud Build (Compilación en la nube de Unity)](https://build.cloud.unity3d.com/landing/), que supervisa un repositorio Git o SVN, y ejecuta compilaciones de forma periódica. Actualmente, no funciona con TFVC ni Azure DevOps Services.|
-|Servidor de compilación local vinculado a Azure DevOps Services|Posibilidad|En las mismas condiciones anteriores, también es posible dirigir compilaciones desencadenadas a través de Azure DevOps Services para usar un equipo TFS local. Vea [Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts) (Agentes de compilación y versiones) para obtener instrucciones.|
+|Servidor de compilación local vinculado a Azure DevOps Services|Posibilidad|En las mismas condiciones anteriores, también es posible dirigir compilaciones desencadenadas a través de Azure DevOps Services para usar un equipo TFS local. Vea [Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true) (Agentes de compilación y versiones) para obtener instrucciones.|
 |Servicio de controlador hospedado de Azure DevOps Services|No|Actualmente no se admiten las compilaciones de Unity.|
 |Compilar definiciones con scripts anteriores y posteriores|Sí|También se puede configurar una definición de compilación personalizada que use la línea de comandos de Unity para ejecutar una compilación en el caso de los scripts previos y posteriores a la compilación.|
 |Integración continua, incluidas entradas validadas|Sí|Entradas validadas para TFVC solo cuando GIT funciona en un modelo de solicitud de extracción en lugar de entradas.|
@@ -110,7 +111,7 @@ Vínculo de referencia: **[Mejorar la calidad del código](../test/improve-code-
 
 ## <a name="release-management"></a>Administración de versiones
 
-Vínculo de referencia: [Compilación y versiones en Azure Pipelines y TFS](/azure/devops/pipelines/overview?view=vsts)
+Vínculo de referencia: [Compilación y versiones en Azure Pipelines y TFS](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|

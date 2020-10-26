@@ -1,6 +1,7 @@
 ---
 title: Emulador de Visual Studio para Android | Microsoft Docs
-ms.custom: ''
+description: El emulador de Visual Studio para Android es una aplicación de escritorio que emula un dispositivo Android.
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 03/09/2020
 ms.technology: vs-ide-mobile
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 36836d8e65f6ef8b5d31b5d2fa3d3a27ba8fecda
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 26e14cb0f87956d67111f953b148f78dee38b3c5
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79023527"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878909"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador de Visual Studio para Android
 

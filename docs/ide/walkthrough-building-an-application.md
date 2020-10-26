@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Creación de una aplicación'
+description: Familiarícese con varias opciones que se pueden configurar al compilar aplicaciones con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76a281b90b3dabe2b1d91c43a27ee5f9c858f96c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115400"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136620"
 ---
 # <a name="walkthrough-build-an-application"></a>Tutorial: Creación de una aplicación
 
@@ -21,29 +23,29 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
 
 ## <a name="install-the-sample-application"></a>Instalar la aplicación de ejemplo
 
-Descargue el ejemplo [Introducción a la compilación de aplicaciones de WPF](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419). Elija C# o Visual Basic. Una vez descargado el archivo *.zip*, extráigalo y abra el archivo *ExpenseItIntro.sln* con Visual Studio.
+Descargue el ejemplo [Introducción a la compilación de aplicaciones de WPF](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419). Elija C# o Visual Basic. Una vez descargado el archivo *.zip* , extráigalo y abra el archivo *ExpenseItIntro.sln* con Visual Studio.
 
 ## <a name="create-a-custom-build-configuration"></a>Crear una configuración de compilación personalizada
 
 Cuando se crea una solución, se definen automáticamente configuraciones de compilación de depuración y de versión y sus destinos de plataforma predeterminados para la solución. Es posible personalizar estas configuraciones o crear sus propias configuraciones. Las configuraciones de compilación especifican el tipo de compilación. Las plataformas de compilación especifican el sistema operativo de destino de una aplicación para esa configuración. Para más información, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md), [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) y [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md).
 
-Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadro de diálogo **Administrador de configuración**. En este procedimiento, creará una configuración de compilación para probar.
+Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadro de diálogo **Administrador de configuración** . En este procedimiento, creará una configuración de compilación para probar.
 
 ### <a name="create-a-build-configuration"></a>Crear una configuración de compilación
 
-1. Abra el cuadro de diálogo **Administrador de configuración**.
+1. Abra el cuadro de diálogo **Administrador de configuración** .
 
    ![Menú Compilar, comando Administrador de configuración](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. En la lista **Configuración de soluciones activas**, elija **\<New...\>** .
+1. En la lista **Configuración de soluciones activas** , elija **\<New...\>** .
 
-1. En el cuadro de diálogo **Nueva configuración de la solución**, asigne a la nueva configuración el nombre `Test`, copie valores de la configuración de **depuración** existente y luego elija el botón **Aceptar**.
+1. En el cuadro de diálogo **Nueva configuración de la solución** , asigne a la nueva configuración el nombre `Test`, copie valores de la configuración de **depuración** existente y luego elija el botón **Aceptar** .
 
    ![Cuadro de diálogo Nueva configuración de la solución](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. En la lista **Plataforma de soluciones activas**, elija **\<New...\>** .
+1. En la lista **Plataforma de soluciones activas** , elija **\<New...\>** .
 
-1. En el cuadro de diálogo **Nueva plataforma de soluciones**, elija **x64** y no copie valores de la plataforma x86.
+1. En el cuadro de diálogo **Nueva plataforma de soluciones** , elija **x64** y no copie valores de la plataforma x86.
 
    ![Cuadro de diálogo Nueva plataforma de solución](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -53,9 +55,9 @@ Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadr
 
    ![Administrador de configuración con una configuración de prueba](../ide/media/buildwalk_configmanagertestconfig.png)
 
-1. Elija **Cerrar**.
+1. Elija **Cerrar** .
 
-Puede comprobar o cambiar rápidamente la configuración de soluciones activas mediante la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar**.
+Puede comprobar o cambiar rápidamente la configuración de soluciones activas mediante la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar** .
 
 ![Opción Configuración de soluciones de la barra de herramientas estándar](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
@@ -65,7 +67,7 @@ Después, compilará la solución con la configuración de compilación personal
 
 ### <a name="build-the-solution"></a>Compilar la solución
 
-- En la barra de menús, elija **Compilar** > **Compilar solución**, o presione **Ctrl**+**Mayús**+**B**.
+- En la barra de menús, elija **Compilar** > **Compilar solución** , o presione **Ctrl**+**Mayús**+**B** .
 
     La ventana **Salida** muestra los resultados de la compilación. La compilación se ha realizado correctamente.
 
@@ -73,11 +75,11 @@ Después, compilará la solución con la configuración de compilación personal
 
 A continuación presentamos determinado código que causa que el compilador genere una advertencia.
 
-1. En el proyecto de C#, abra el archivo *ExpenseReportPage.xaml.cs*. En el método **ExpenseReportPage**, agregue el código siguiente: `int i;`.
+1. En el proyecto de C#, abra el archivo *ExpenseReportPage.xaml.cs* . En el método **ExpenseReportPage** , agregue el código siguiente: `int i;`.
 
     O
 
-    En el proyecto de Visual Basic, abra el archivo *ExpenseReportPage.xaml.vb*. En el constructor personalizado **Public Sub New...** , agregue el código siguiente: `Dim i`.
+    En el proyecto de Visual Basic, abra el archivo *ExpenseReportPage.xaml.vb* . En el constructor personalizado **Public Sub New...** , agregue el código siguiente: `Dim i`.
 
 1. Compile la solución.
 
@@ -91,13 +93,13 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 ### <a name="hide-a-specific-c-warning"></a>Ocultar una advertencia específica de C#
 
-1. En el **Explorador de soluciones**, elija el nodo de proyecto de nivel superior.
+1. En el **Explorador de soluciones** , elija el nodo de proyecto de nivel superior.
 
-1. En la barra de menús, elija **Ver** > **Páginas de propiedades**.
+1. En la barra de menús, elija **Ver** > **Páginas de propiedades** .
 
-     Se abrirá el **Diseñador de proyectos**.
+     Se abrirá el **Diseñador de proyectos** .
 
-1. Elija la página **Compilación** y, después, en el cuadro **Suprimir advertencias**, especifique el número de advertencia **0168**.
+1. Elija la página **Compilación** y, después, en el cuadro **Suprimir advertencias** , especifique el número de advertencia **0168** .
 
      ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
@@ -111,13 +113,13 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Suprimir todas las advertencias de compilación de Visual Basic
 
-1. En el **Explorador de soluciones**, elija el nodo de proyecto de nivel superior.
+1. En el **Explorador de soluciones** , elija el nodo de proyecto de nivel superior.
 
-2. En la barra de menús, elija **Ver** > **Páginas de propiedades**.
+2. En la barra de menús, elija **Ver** > **Páginas de propiedades** .
 
-     Se abrirá el **Diseñador de proyectos**.
+     Se abrirá el **Diseñador de proyectos** .
 
-3. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
+3. En la página **Compilación** , active la casilla **Deshabilitar todas las advertencias** .
 
      ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsuppresswarnings.png)
 
@@ -133,33 +135,33 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Mostrar detalles de compilación adicionales en la ventana de salida
 
-Se puede cambiar la cantidad de información sobre el proceso de compilación que aparece en la ventana **Salida**. El nivel de detalle de la compilación se establece normalmente en **Mínimo**, lo que significa que la ventana **Salida** solo muestra un resumen del proceso de compilación, junto con las advertencias y los errores de alta prioridad. Puede mostrar más información sobre la compilación mediante el [cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).
+Se puede cambiar la cantidad de información sobre el proceso de compilación que aparece en la ventana **Salida** . El nivel de detalle de la compilación se establece normalmente en **Mínimo** , lo que significa que la ventana **Salida** solo muestra un resumen del proceso de compilación, junto con las advertencias y los errores de alta prioridad. Puede mostrar más información sobre la compilación mediante el [cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).
 
 > [!IMPORTANT]
 > Si se muestra más información, la compilación tardará más tiempo en completarse.
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>Cambiar la cantidad de información que se muestra en la ventana Salida
 
-1. Abra el cuadro de diálogo **Opciones**.
+1. Abra el cuadro de diálogo **Opciones** .
 
      ![Comando Opciones del menú Herramientas](../ide/media/exploreide-toolsoptionsmenu.png)
 
-1. Elija la categoría **Proyectos y soluciones** y luego elija la página **Compilar y ejecutar**.
+1. Elija la categoría **Proyectos y soluciones** y luego elija la página **Compilar y ejecutar** .
 
-1. En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, elija **Normal** y después elija el botón **Aceptar**.
+1. En la lista **Detalles de la salida de la compilación del proyecto de MSBuild** , elija **Normal** y después elija el botón **Aceptar** .
 
-1. En la barra de menús, elija **Compilar** > **Limpiar solución**.
+1. En la barra de menús, elija **Compilar** > **Limpiar solución** .
 
-1. Compile la solución y después revise la información de la ventana **Salida**.
+1. Compile la solución y después revise la información de la ventana **Salida** .
 
      La información de compilación incluye la hora a la que se inició la compilación (situada al principio) y el orden en el que se procesaron los archivos. Esta información también incluye la sintaxis real del compilador que Visual Studio ejecuta durante la compilación.
 
-     Por ejemplo, en la compilación de C#, la opción [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) muestra el código de advertencia, **0168**, que ha especificado anteriormente en este tema, junto con otras tres advertencias.
+     Por ejemplo, en la compilación de C#, la opción [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) muestra el código de advertencia, **0168** , que ha especificado anteriormente en este tema, junto con otras tres advertencias.
 
      En la compilación de Visual Basic, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) no contiene advertencias concretas para excluir, por lo que no aparece ninguna advertencia.
 
     > [!TIP]
-    > Puede buscar en el contenido de la ventana **Salida** si pulsa las teclas **CTRL**+**F** para mostrar el cuadro de diálogo **Buscar**.
+    > Puede buscar en el contenido de la ventana **Salida** si pulsa las teclas **CTRL**+**F** para mostrar el cuadro de diálogo **Buscar** .
 
 Para obtener más información, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 
@@ -171,17 +173,17 @@ Para obtener más información, vea [Cómo: Cambiar el directorio de resultados 
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Especificar una compilación de versión para Visual Basic
 
-1. Abra el **Diseñador de proyectos**.
+1. Abra el **Diseñador de proyectos** .
 
      ![Menú Ver, comando Páginas de propiedades](../ide/media/buildwalk_viewpropertypages.png)
 
-1. Elija la página **Compilación**.
+1. Elija la página **Compilación** .
 
-1. En la lista **Configuración**, elija **Versión**.
+1. En la lista **Configuración** , elija **Versión** .
 
-1. En la lista **Plataforma**, elija **x86**.
+1. En la lista **Plataforma** , elija **x86** .
 
-1. En el cuadro **Ruta de acceso de los resultados de la compilación**, especifique una ruta de acceso de red.
+1. En el cuadro **Ruta de acceso de los resultados de la compilación** , especifique una ruta de acceso de red.
 
      Por ejemplo, puede especificar `\\myserver\builds`.
 
@@ -194,24 +196,24 @@ Para obtener más información, vea [Cómo: Cambiar el directorio de resultados 
 
 ### <a name="specify-a-release-build-for-c"></a>Especificar una compilación de versión para C\#
 
-1. Abra el **Diseñador de proyectos**.
+1. Abra el **Diseñador de proyectos** .
 
      ![Menú Ver, comando Páginas de propiedades](../ide/media/buildwalk_viewpropertypages.png)
 
-1. Seleccione la página **Compilación**.
+1. Seleccione la página **Compilación** .
 
-1. En la lista **Configuración**, elija **Versión**.
+1. En la lista **Configuración** , elija **Versión** .
 
-1. En la lista **Plataforma**, elija **x86**.
+1. En la lista **Plataforma** , elija **x86** .
 
-1. En el cuadro **Ruta de acceso de salida**, especifique una ruta de acceso de red.
+1. En el cuadro **Ruta de acceso de salida** , especifique una ruta de acceso de red.
 
      Por ejemplo, podría especificar `\\myserver\builds`.
 
     > [!IMPORTANT]
     > Puede aparecer un cuadro de mensaje advirtiéndole que el recurso compartido de red que ha especificado puede no ser una ubicación de confianza. Si confía en la ubicación que ha especificado, pulse el botón **Aceptar** en el cuadro de mensaje.
 
-1. En la **barra de herramientas estándar**, establezca las configuraciones de soluciones en **Versión** y las plataformas de soluciones en **x86**.
+1. En la **barra de herramientas estándar** , establezca las configuraciones de soluciones en **Versión** y las plataformas de soluciones en **x86** .
 
 1. Compile la aplicación.
 

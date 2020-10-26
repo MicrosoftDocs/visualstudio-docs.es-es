@@ -1,5 +1,6 @@
 ---
 title: Creación de un entorno de compilación para varios equipos
+description: Cree un entorno de compilación dentro de la organización mediante la instalación de Visual Studio en un equipo host y luego copie diversos archivos y configuraciones en otro equipo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595317be1c3f24c9759bc5bb574a758795066659
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038431"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136958"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Tutorial: Creación de un entorno de compilación para varios equipos
 
@@ -64,7 +65,7 @@ En esta sección se explica cómo copiar los archivos, compiladores, herramienta
 - En un equipo x86, la ubicación predeterminada es *C:\Archivos de programa\Microsoft Visual Studio*
 - En un equipo x64, la ubicación predeterminada es *C:\Archivos de programa (x86)\Microsoft Visual Studio*
 
-Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del sistema operativo instalado. En un equipo x86, el nombre es *Archivos de programa*, mientras que en un equipo x64 es *Archivos de programa (x86)* . Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta *Archivos de programa* como *%ProgramFiles%* .
+Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del sistema operativo instalado. En un equipo x86, el nombre es *Archivos de programa* , mientras que en un equipo x64 es *Archivos de programa (x86)* . Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta *Archivos de programa* como *%ProgramFiles%* .
 
 > [!NOTE]
 > En el equipo de compilación, todos los archivos relevantes deben estar en la misma unidad, aunque la letra de esa unidad puede ser diferente a la de la unidad donde está instalado Visual Studio en el equipo host. En cualquier caso, debe tener en cuenta la ubicación de los archivos cuando cree entradas del Registro como se describe más adelante en este documento.
@@ -131,7 +132,7 @@ Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del s
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. Las siguientes bibliotecas en tiempo de ejecución de Visual C++ solo se requieren si ejecuta resultados de la compilación en el equipo de compilación, por ejemplo, como parte de pruebas automatizadas. Los archivos suelen encontrarse en subcarpetas bajo la carpeta *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* or *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64*, según la arquitectura del sistema. En los sistemas x86, copie los archivos binarios x86 a la carpeta *Windows\System32*. En los sistemas x64, copie los archivos binarios x86 a la carpeta *Windows\SysWOW64* y los archivos binarios x64 a la carpeta *Windows\System32*.
+4. Las siguientes bibliotecas en tiempo de ejecución de Visual C++ solo se requieren si ejecuta resultados de la compilación en el equipo de compilación, por ejemplo, como parte de pruebas automatizadas. Los archivos suelen encontrarse en subcarpetas bajo la carpeta *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* or *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64* , según la arquitectura del sistema. En los sistemas x86, copie los archivos binarios x86 a la carpeta *Windows\System32* . En los sistemas x64, copie los archivos binarios x86 a la carpeta *Windows\SysWOW64* y los archivos binarios x64 a la carpeta *Windows\System32* .
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -193,7 +194,7 @@ Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del s
 
 Debe crear entradas del Registro para configurar los valores de MSBuild.
 
-1. Identifique la carpeta primaria para las entradas del Registro. Todas las entradas del Registro se crean bajo la misma clave primaria. En un equipo x86, la clave primaria es **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. En un equipo x64, la clave primaria es **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Con independencia de la arquitectura del sistema, en este tutorial se hace referencia a la clave primaria como %RegistryRoot%.
+1. Identifique la carpeta primaria para las entradas del Registro. Todas las entradas del Registro se crean bajo la misma clave primaria. En un equipo x86, la clave primaria es **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft** . En un equipo x64, la clave primaria es **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft** . Con independencia de la arquitectura del sistema, en este tutorial se hace referencia a la clave primaria como %RegistryRoot%.
 
     > [!NOTE]
     > Si la arquitectura del equipo host es distinta de la del equipo de compilación, asegúrese de utilizar la clave primaria adecuada en cada equipo. Esto es especialmente importante si desea automatizar el proceso de exportación.
@@ -256,9 +257,9 @@ Para utilizar MSBuild en el equipo de compilación, debe establecer las variable
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Utilizar vcvarsall.bat con el fin de establecer variables de entorno
 
-Abra una ventana de **símbolo del sistema** en el equipo de compilación y ejecute *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat*. Puede usar un argumento de línea de comandos para especificar el conjunto de herramientas que desea usar: x86, x64 nativo o compilador cruzado de x64. Si no especifica ningún argumento de la línea de comandos, se utiliza el conjunto de herramientas de x86.
+Abra una ventana de **símbolo del sistema** en el equipo de compilación y ejecute *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat* . Puede usar un argumento de línea de comandos para especificar el conjunto de herramientas que desea usar: x86, x64 nativo o compilador cruzado de x64. Si no especifica ningún argumento de la línea de comandos, se utiliza el conjunto de herramientas de x86.
 
-En esta tabla se describen los argumentos admitidos para *vcvarsall.bat*:
+En esta tabla se describen los argumentos admitidos para *vcvarsall.bat* :
 
 |Argumento de vcvarsall.bat|Compilador|Arquitectura del equipo de compilación|Arquitectura de salida de compilación|
 | - |--------------| - | - |
@@ -332,7 +333,7 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
      En estos pasos se hace referencia al directorio como %Depot%.
 
-2. Copie los directorios y los archivos como se describe en la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) de este tutorial, pero péguelos en el directorio *%Depot%* recién creado. Por ejemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* a *%Depot%\Windows Kits\8.0\bin*.
+2. Copie los directorios y los archivos como se describe en la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) de este tutorial, pero péguelos en el directorio *%Depot%* recién creado. Por ejemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* a *%Depot%\Windows Kits\8.0\bin* .
 
 3. Cuando los archivos se hayan pegado en *%Depot%* , realice estos cambios:
 
@@ -354,7 +355,7 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
-4. Cree un archivo *.props* (por ejemplo, *Partner.AutoImports.props*) y póngalo en la raíz de la carpeta que contiene los proyectos. Este archivo se usa para establecer las variables utilizadas por MSBuild para buscar diversos recursos. Si las variables no se establecen con este archivo, se establecen mediante otros archivos *.props* y *.targets* que dependen de las configuraciones del Registro. Puesto que no vamos a establecer ninguna configuración del Registro, estas variables estarán vacías y se produciría un error de compilación. En su lugar, agregue esto a *Partner.AutoImports.props*:
+4. Cree un archivo *.props* (por ejemplo, *Partner.AutoImports.props* ) y póngalo en la raíz de la carpeta que contiene los proyectos. Este archivo se usa para establecer las variables utilizadas por MSBuild para buscar diversos recursos. Si las variables no se establecen con este archivo, se establecen mediante otros archivos *.props* y *.targets* que dependen de las configuraciones del Registro. Puesto que no vamos a establecer ninguna configuración del Registro, estas variables estarán vacías y se produciría un error de compilación. En su lugar, agregue esto a *Partner.AutoImports.props* :
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -387,9 +388,9 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
 6. Cambie el entorno de la línea de comandos de la manera siguiente:
 
-    - Establezca Depot =*ubicación del directorio Depot creado en el paso 1*
+    - Establezca Depot = *ubicación del directorio Depot creado en el paso 1*
 
-    - Establezca path=%path%;*ubicación de MSBuild en el equipo*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
+    - Establezca path=%path%; *ubicación de MSBuild en el equipo* ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
        En una compilación nativa de 64 bits, elija la versión de 64 bits de MSBuild.
 
@@ -399,9 +400,9 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
 6. Cambie el entorno de la línea de comandos de la manera siguiente:
 
-    - Establezca Depot =*ubicación del directorio Depot creado en el paso 1*
+    - Establezca Depot = *ubicación del directorio Depot creado en el paso 1*
 
-    - Establezca path=%path%;*ubicación de MSBuild en el equipo*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+    - Establezca path=%path%; *ubicación de MSBuild en el equipo* ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
 
        En una compilación nativa de 64 bits, elija la versión de 64 bits de MSBuild.
 

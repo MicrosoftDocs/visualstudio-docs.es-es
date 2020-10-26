@@ -1,5 +1,7 @@
 ---
 title: Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
+description: Aprenda a usar el cuadro de diálogo Configuración de compilación avanzada para especificar las propiedades de configuración de compilación avanzada del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0e6e9d41bb1d4bd7446bb77306ca5a4551906f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0335ee8ef1c385da13c2043ffcfa94c264a5934a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419112"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137043"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 
@@ -26,13 +28,13 @@ Use el cuadro de diálogo **Configuración de compilación avanzada** del **Dise
 
 ## <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo
 
-1. En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).
+1. En el **Explorador de soluciones** , elija el nodo de proyecto (no el nodo **Solución** ).
 
-2. En el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Compilar**.
+2. En el menú **Proyecto** , haga clic en **Propiedades** . Cuando se muestre el **Diseñador de proyectos** , haga clic en la pestaña **Compilar** .
 
-3. En la [página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), seleccione **Configuración** y **Plataforma**. En las configuraciones de compilación simplificadas, no se muestran las listas **Configuración** y **Plataforma**. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. En la [página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), seleccione **Configuración** y **Plataforma** . En las configuraciones de compilación simplificadas, no se muestran las listas **Configuración** y **Plataforma** . Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4. Haga clic en **Opciones de compilación avanzadas**.
+4. Haga clic en **Opciones de compilación avanzadas** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -56,7 +58,7 @@ En este cuadro de texto se muestra la dirección base predeterminada del archivo
 
  **Generar información de depuración**
 
-Seleccione **Ninguna**, **Completa** o **Solo PDB** en la lista. **Ninguna** especifica que no se genera ninguna información de depuración. **Completa** especifica que se genera información de depuración completa y **Solo PDB** especifica que solo se debe generar información de depuración PDB. El valor predeterminado de esta opción es **Completa**.
+Seleccione **Ninguna** , **Completa** o **Solo PDB** en la lista. **Ninguna** especifica que no se genera ninguna información de depuración. **Completa** especifica que se genera información de depuración completa y **Solo PDB** especifica que solo se debe generar información de depuración PDB. El valor predeterminado de esta opción es **Completa** .
 
 ## <a name="compilation-constants"></a>Constantes de compilación
 
@@ -72,14 +74,14 @@ De manera predeterminada, esta casilla está activada, lo que indica que se esta
 
  **Constantes personalizadas**
 
-Escriba una de estas constantes personalizada para su aplicación en este cuadro de texto. Las entradas deben delimitarse mediante comas, con este formato: **Name1="Value1",Name2="Value2",Name3="Value3"** .
+Escriba una de estas constantes personalizada para su aplicación en este cuadro de texto. Las entradas deben estar delimitadas por comas, con este formato: **Nombre1="Valor1",Nombre2="Valor2",Nombre3="Valor3"** .
 
 ## <a name="other-settings"></a>Otras configuraciones
 
 **Generar ensamblados de serialización**
 
-Esta configuración especifica si el compilador creará ensamblados de serialización XML. Los ensamblados de serialización pueden mejorar el rendimiento de inicio de <xref:System.Xml.Serialization.XmlSerializer> si ha usado esa clase para serializar los tipos del código. El valor predeterminado de esta opción es **Automático**. **Automático** especifica que los ensamblados de serialización se generan solo si ha usado <xref:System.Xml.Serialization.XmlSerializer> para codificar los tipos del código en XML. **Desactivado** especifica que los ensamblados de serialización no se generan nunca, independientemente de si el código usa <xref:System.Xml.Serialization.XmlSerializer>. **Activado** especifica que siempre se generan ensamblados de serialización. Los ensamblados de serialización se denominan `TypeName`.XmlSerializers.dll.
+Esta configuración especifica si el compilador creará ensamblados de serialización XML. Los ensamblados de serialización pueden mejorar el rendimiento de inicio de <xref:System.Xml.Serialization.XmlSerializer> si ha usado esa clase para serializar los tipos del código. El valor predeterminado de esta opción es **Automático** . **Automático** especifica que los ensamblados de serialización se generan solo si ha usado <xref:System.Xml.Serialization.XmlSerializer> para codificar los tipos del código en XML. **Desactivado** especifica que los ensamblados de serialización no se generan nunca, independientemente de si el código usa <xref:System.Xml.Serialization.XmlSerializer>. **Activado** especifica que siempre se generan ensamblados de serialización. Los ensamblados de serialización se denominan `TypeName`.XmlSerializers.dll.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

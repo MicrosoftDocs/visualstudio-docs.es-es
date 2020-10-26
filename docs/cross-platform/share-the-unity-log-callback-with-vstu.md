@@ -1,5 +1,6 @@
 ---
 title: Uso compartido de la devolución de llamada de registro de Unity con VSTU | Microsoft Docs
+description: Comparta la devolución de llamada de registro de Unity con la registrada con Visual Studio Tools para Unity (VSTU) para transmitir su consola a Visual Studio.
 ms.custom: ''
 ms.date: 07/26/2018
 ms.technology: vs-unity-tools
@@ -10,17 +11,17 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dc54c51f078e5b800a9cc9f2de687db7b1fa0387
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88abc27ad757487ae8f65b8bbb66d4dfee9791cc
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815049"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039877"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Compartir la devolución de llamada de registro de Unity con VSTU
 Visual Studio Tools para Unity registra una devolución de llamada de registro con Unity para poder transmitir su consola a Visual Studio. Si las secuencias de comandos del editor también registran una devolución de llamada de registro con Unity, la devolución de llamada de VSTU puede interferir con la devolución de llamada. Para evitar esta posibilidad, use el evento `VisualStudioIntegration.LogCallback` para cooperar con VSTU.
 
-## <a name="demonstrates"></a>Demostraciones
+## <a name="demonstrates"></a>Muestra
  Cómo compartir la devolución de llamada de registro de Unity creada por Visual Studio Tools para Unity.
 
 ## <a name="example"></a>Ejemplo
@@ -48,5 +49,5 @@ public class LogCallbackHook
 #endif
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Ejemplo: Generación de archivo de proyecto](../cross-platform/customize-project-files-created-by-vstu.md)

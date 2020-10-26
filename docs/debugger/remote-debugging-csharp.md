@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301078"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92298725"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuración remota de un proyecto de C# o Visual Basic en Visual Studio
 Para depurar una aplicación de Visual Studio que se ha implementado en otro equipo, instale y ejecute las herramientas remotas en el equipo en el que haya implementado la aplicación, configure el proyecto para que se conecte al equipo remoto desde Visual Studio y, después, ejecute la aplicación.
@@ -55,17 +55,17 @@ El depurador remoto es compatible con Windows 7 y versiones posteriores (no par
 > Si tiene que agregar permisos para usuarios adicionales, cambiar el modo de autenticación o el número de puerto para el depurador remoto, vea [Configuración del depurador remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
 ## <a name="remote-debug-the-project"></a><a name="remote_csharp"></a> Depuración remota del proyecto
-El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visual Basic en un equipo remoto, pero se pueden depurar de manera remota como se describe a continuación. En el procedimiento siguiente se supone que quiere depurarlo en un equipo denominado **MJO-DL**, como se muestra en la ilustración siguiente.
+El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visual Basic en un equipo remoto, pero se pueden depurar de manera remota como se describe a continuación. En el procedimiento siguiente se supone que quiere depurarlo en un equipo denominado **MJO-DL** , como se muestra en la ilustración siguiente.
 
-1. Cree un proyecto WPF denominado **MyWpf**.
+1. Cree un proyecto WPF denominado **MyWpf** .
 
 2. Establezca un punto de interrupción en alguna parte del código fácilmente accesible.
 
     Por ejemplo, puede establecer un punto de interrupción en un controlador de botón. Para ello, abra MainWindow.xaml y agregue un control de botón desde el Cuadro de herramientas; luego, haga doble clic en el botón para abrir su controlador.
 
-3. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y, luego, elija **Propiedades**.
+3. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y, luego, elija **Propiedades** .
 
-4. En la página **Propiedades**, elija la pestaña **Depurar**.
+4. En la página **Propiedades** , elija la pestaña **Depurar** .
 
     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")
 
@@ -85,7 +85,7 @@ El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visu
 
 8. Compile el proyecto.
 
-9. Cree una carpeta en el equipo remoto en la misma ruta de acceso que la carpeta **Depurar** del equipo de Visual Studio: **\<ruta de acceso de origen>\MyWPF\MyWPF\bin\Debug**.
+9. Cree una carpeta en el equipo remoto que tenga la misma ruta de acceso que la carpeta **Debug** en el equipo de Visual Studio: **\<source path>\MyWPF\MyWPF\bin\Debug** .
 
 10. Copie el archivo ejecutable que acaba de compilar desde el equipo de Visual Studio a la carpeta recién creada en el equipo remoto.
 
@@ -94,11 +94,11 @@ El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visu
 
     Puede copiar el proyecto manualmente, usar Xcopy, Robocopy, PowerShell u otras opciones.
 
-11. Asegúrese de que el depurador remoto se ejecuta en el equipo de destino (si no es así, busque **Depurador remoto** en el menú **Inicio**). La ventana del depurador remoto tiene este aspecto.
+11. Asegúrese de que el depurador remoto se ejecuta en el equipo de destino (si no es así, busque **Depurador remoto** en el menú **Inicio** ). La ventana del depurador remoto tiene este aspecto.
 
      ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
 
-12. En Visual Studio, inicie la depuración (**Depurar > Iniciar depuración** o presione **F5**).
+12. En Visual Studio, inicie la depuración ( **Depurar > Iniciar depuración** o presione **F5** ).
 
 13. Si se le solicita, escriba las credenciales de red para conectarse al equipo remoto.
 
@@ -110,7 +110,7 @@ El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visu
 
 15. En la máquina de Visual Studio, verá que la ejecución se detiene en el punto de interrupción.
 
-    Si tiene archivos que no son de código que la aplicación debe usar, tendrá que incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **Explorador de soluciones**, haga clic en **Agregar > Nueva carpeta**). A continuación, agregue los archivos a la carpeta (en el **Explorador de soluciones**, haga clic en **Agregar > Elemento existente** y, a continuación, seleccione los archivos). En la página **Propiedades** de cada archivo, establezca **Copiar en el directorio de resultado** en **Copiar siempre**.
+    Si tiene archivos que no son de código que la aplicación debe usar, tendrá que incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **Explorador de soluciones** , haga clic en **Agregar > Nueva carpeta** ). A continuación, agregue los archivos a la carpeta (en el **Explorador de soluciones** , haga clic en **Agregar > Elemento existente** y, a continuación, seleccione los archivos). En la página **Propiedades** de cada archivo, establezca **Copiar en el directorio de resultado** en **Copiar siempre** .
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar la depuración con símbolos remotos
 

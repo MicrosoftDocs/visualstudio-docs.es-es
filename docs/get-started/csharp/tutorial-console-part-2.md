@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88507961"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197483"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: Extensión de una aplicación de consola de C# sencilla
 
@@ -32,33 +32,33 @@ Si acaba de completar la [primera parte](tutorial-console.md) de esta serie, ya 
 
 El código real está formado por numerosos proyectos que funcionan conjuntamente para dar lugar a una solución. Ahora, vamos a agregar otro proyecto a la aplicación de calculadora. Consiste en una biblioteca de clases que proporciona algunas de las funciones de la calculadora.
 
-1. En Visual Studio, puede usar el comando del menú de nivel superior **Archivo** > **Agregar** > **Nuevo proyecto** para agregar un proyecto nuevo. También puede hacer clic con el botón derecho en el nombre del proyecto existente (denominado "nodo del proyecto") y abrir el menú contextual del proyecto. Este menú contextual contiene muchas maneras de agregar funcionalidad a los proyectos. Así pues, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo proyecto**.
+1. En Visual Studio, puede usar el comando del menú de nivel superior **Archivo** > **Agregar** > **Nuevo proyecto** para agregar un proyecto nuevo. También puede hacer clic con el botón derecho en el nombre del proyecto existente (denominado "nodo del proyecto") y abrir el menú contextual del proyecto. Este menú contextual contiene muchas maneras de agregar funcionalidad a los proyectos. Así pues, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo proyecto** .
 
 1. Seleccione la plantilla de proyecto de C# **Biblioteca de clases (.NET Standard)** .
 
    ![Captura de pantalla de la selección de la plantilla de proyecto Biblioteca de clases](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Escriba el nombre del proyecto **CalculatorLibrary** y seleccione **Crear**. Visual Studio crea el proyecto y lo agrega a la solución.
+1. Escriba el nombre del proyecto **CalculatorLibrary** y seleccione **Crear** . Visual Studio crea el proyecto y lo agrega a la solución.
 
    ![Captura de pantalla del Explorador de soluciones con el proyecto de biblioteca de clases CalculatorLibrary agregado](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. En lugar de dejar el nombre de archivo *Class1.cs*, cámbielo a **CalculatorLibrary.cs**. Puede hacer clic en el nombre en el **Explorador de soluciones** para cambiarlo, o bien hacer clic con el botón derecho y seleccionar **Cambiar nombre**. Otra opción es presionar la tecla **F2**.
+1. En lugar de dejar el nombre de archivo *Class1.cs* , cámbielo a **CalculatorLibrary.cs** . Puede hacer clic en el nombre en el **Explorador de soluciones** para cambiarlo, o bien hacer clic con el botón derecho y seleccionar **Cambiar nombre** . Otra opción es presionar la tecla **F2** .
 
    Es posible que se le pregunte si quiere cambiar el nombre de las referencias a `Class1` en el archivo. No importa qué responda en este momento, ya que reemplazará el código en un paso posterior.
 
-1. Ahora debemos agregar una referencia de proyecto para que el primer proyecto pueda usar las API que expone la nueva biblioteca de clases.  Haga clic con el botón derecho en el nodo **Referencias** del primer proyecto y seleccione **Agregar referencia de proyecto**.
+1. Ahora debemos agregar una referencia de proyecto para que el primer proyecto pueda usar las API que expone la nueva biblioteca de clases.  Haga clic con el botón derecho en el nodo **Referencias** del primer proyecto y seleccione **Agregar referencia de proyecto** .
 
    ![Captura de pantalla del elemento de menú Agregar referencia de proyecto](media/vs-2019/calculator2-add-project-reference-dark.png)
 
-   Aparecerá el cuadro de diálogo **Administrador de referencias**. Este cuadro de diálogo permite agregar referencias a otros proyectos, así como los ensamblados y las DLL COM que los proyectos necesiten.
+   Aparecerá el cuadro de diálogo **Administrador de referencias** . Este cuadro de diálogo permite agregar referencias a otros proyectos, así como los ensamblados y las DLL COM que los proyectos necesiten.
 
    ![Captura de pantalla del cuadro de diálogo Administrador de referencias](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. En el cuadro de diálogo **Administrador de referencias**, active la casilla correspondiente al proyecto **CalculatorLibrary** y seleccione **Aceptar**.  La referencia del proyecto aparece en un nodo **Proyectos** en el **Explorador de soluciones**.
+1. En el cuadro de diálogo **Administrador de referencias** , active la casilla correspondiente al proyecto **CalculatorLibrary** y seleccione **Aceptar** .  La referencia del proyecto aparece en un nodo **Proyectos** en el **Explorador de soluciones** .
 
    ![Captura de pantalla del Explorador de soluciones con una referencia de proyecto](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. En *Program.cs*, seleccione la clase `Calculator` y todo su código, y presione **CTRL+X** para cortarla de Program.cs. Después, en **CalculatorLibrary**, en *CalculatorLibrary.cs*, pegue el código en el espacio de nombres `CalculatorLibrary`. Posteriormente, haga que la clase Calculator `public` lo exponga fuera de la biblioteca. El código de *CalculatorLibrary.cs* ahora debería ser similar al siguiente:
+1. En *Program.cs* , seleccione la clase `Calculator` y todo su código, y presione **CTRL+X** para cortarla de Program.cs. Después, en **CalculatorLibrary** , en *CalculatorLibrary.cs* , pegue el código en el espacio de nombres `CalculatorLibrary`. Posteriormente, haga que la clase Calculator `public` lo exponga fuera de la biblioteca. El código de *CalculatorLibrary.cs* ahora debería ser similar al siguiente:
 
    ```csharp
    using System;
@@ -120,9 +120,10 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Referencia a bibliotecas de .NET: escritura en un registro
 
-1. Supongamos que ahora quiere agregar un registro de todas las operaciones y escribirlo en un archivo de texto. La clase `Trace` de .NET proporciona esta funcionalidad. (También es útil para las técnicas básicas de impresión de la depuración).  La clase Trace se encuentra en System.Diagnostics, por lo que para empezar debe agregar una directiva using:
+1. Supongamos que ahora quiere agregar un registro de todas las operaciones y escribirlo en un archivo de texto. La clase `Trace` de .NET proporciona esta funcionalidad. (También es útil para las técnicas básicas de impresión de la depuración).  La clase Trace se encuentra en System.Diagnostics, y se necesitan clases System.IO como `StreamWriter`, así que empiece por agregar las directivas Using:
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -192,7 +193,7 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-1. Vuelva a ejecutar el programa y, cuando haya terminado, haga clic con el botón derecho en el nodo del proyecto y elija **Abrir la carpeta en el Explorador de archivos**. Luego, desplácese hacia abajo en el Explorador de archivos a la carpeta de salida. Podría ser *bin/Debug/netcoreapp3.1*. Abra el archivo *calculator.log*.
+1. Vuelva a ejecutar el programa y, cuando haya terminado, haga clic con el botón derecho en el nodo del proyecto y elija **Abrir la carpeta en el Explorador de archivos** . Luego, desplácese hacia abajo en el Explorador de archivos a la carpeta de salida. Podría ser *bin/Debug/netcoreapp3.1* . Abra el archivo *calculator.log* .
 
     ```output
     Starting Calculator Log
@@ -203,7 +204,7 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>Incorporación de paquete NuGet: escritura en un archivo JSON
 
-1. Supongamos ahora que queremos generar las operaciones en JSON, un formato popular y portable para almacenar datos de objeto. Para implementar esta funcionalidad, es necesario hacer referencia al paquete NuGet Newtonsoft.Json. Los paquetes NuGet son el vehículo principal para la distribución de bibliotecas de clases .NET. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** del proyecto CalculatorLibrary y seleccione **Administrar paquetes NuGet**.
+1. Supongamos ahora que queremos generar las operaciones en JSON, un formato popular y portable para almacenar datos de objeto. Para implementar esta funcionalidad, es necesario hacer referencia al paquete NuGet Newtonsoft.Json. Los paquetes NuGet son el vehículo principal para la distribución de bibliotecas de clases .NET. En el **Explorador de soluciones** , haga clic con el botón derecho en el nodo **Referencias** del proyecto CalculatorLibrary y seleccione **Administrar paquetes NuGet** .
 
    ![Captura de pantalla del menú contextual Administrar paquetes NuGet](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -211,13 +212,13 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
 
    ![Captura de pantalla del Administrador de paquetes NuGet](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. Busque el paquete Newtonsoft.Json y seleccione **Instalar**.
+1. Busque el paquete Newtonsoft.Json y seleccione **Instalar** .
 
    ![Captura de pantalla de la información del paquete NuGet Newtonsoft](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
-   El paquete se descarga, se agrega al proyecto y aparece una nueva entrada en el nodo Referencias del **Explorador de soluciones**.
+   El paquete se descarga, se agrega al proyecto y aparece una nueva entrada en el nodo Referencias del **Explorador de soluciones** .
 
-1. Agregue una directiva using para el paquete Newtonsoft.Json al principio de *CalculatorLibrary.cs*.
+1. Agregue una directiva Using del paquete System.IO y Newtonsoft.Json al principio de *CalculatorLibrary.cs* .
 
    ```csharp
    using Newtonsoft.Json;
@@ -298,7 +299,7 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
     }
    ```
 
-1. En *Program.cs*, agregue una llamada a Finish al final.
+1. En *Program.cs* , agregue una llamada a Finish al final.
 
    ```csharp
             // And call to close the JSON writer before return
@@ -307,7 +308,7 @@ El código real está formado por numerosos proyectos que funcionan conjuntament
         }
    ```
 
-1. Compile y ejecute la aplicación y, cuando acabe de escribir algunas operaciones, cierre la aplicación correctamente con el comando "n".  Abra ahora el archivo consolelog.json. Debería ver algo parecido a lo siguiente:
+1. Compile y ejecute la aplicación y, cuando acabe de escribir algunas operaciones, cierre la aplicación correctamente con el comando "n".  Ahora abra el archivo calculatorlog.json. Debería ver algo parecido a lo siguiente:
 
    ```json
    {

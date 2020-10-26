@@ -1,5 +1,7 @@
 ---
 title: Página Compilación, Diseñador de proyectos (Visual Basic)
+description: Aprenda a especificar instrucciones de compilación en Visual Studio. En esta página también puede especificar opciones avanzadas del compilador o eventos anteriores o posteriores a la compilación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -19,18 +21,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284322"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136633"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página Compilación, Diseñador de proyectos (Visual Basic)
 
 Use la página **Compilación** del Diseñador de proyectos para especificar las instrucciones de compilación. En esta página también puede especificar opciones avanzadas del compilador o eventos anteriores o posteriores a la compilación.
 
-Para acceder a la página **Compilación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Compilar**.
+Para acceder a la página **Compilación** , seleccione un nodo de proyecto (no el nodo **Solución** ) en el **Explorador de soluciones** . Después, pulse **Proyecto** , **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Compilar** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -39,15 +41,15 @@ Para acceder a la página **Compilación**, seleccione un nodo de proyecto (no e
 Los valores siguientes le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.
 
 > [!NOTE]
-> Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, no se muestran las listas **Configuración** y **Plataforma**.
+> Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, no se muestran las listas **Configuración** y **Plataforma** .
 
 **Configuración**
 
-Especifica qué opciones de configuración se mostrarán o modificarán. Los valores son **Depurar** (el valor predeterminado), **Versión** o **Todas las configuraciones**. Para más información, vea [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md) y [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
+Especifica qué opciones de configuración se mostrarán o modificarán. Los valores son **Depurar** (el valor predeterminado), **Versión** o **Todas las configuraciones** . Para más información, vea [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md) y [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
 
 **Plataforma**
 
-Especifica qué configuración de plataforma se mostrará o modificará. Puede especificar **Cualquier CPU** (el valor predeterminado), **x64** o **x86**.
+Especifica qué configuración de plataforma se mostrará o modificará. Puede especificar **Cualquier CPU** (el valor predeterminado), **x64** o **x86** .
 
 ## <a name="compiler-configuration-options"></a>Opciones de configuración del compilador
 
@@ -65,15 +67,15 @@ Especifica si se permite la declaración implícita de variables. Seleccione **O
 
 Esta opción corresponde a la opción del compilador [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
-Si un archivo de código fuente contiene una [instrucción Option Explicit](/dotnet/visual-basic/language-reference/statements/option-explicit-statement), el valor `On` u `Off` de la instrucción invalida el valor de **Option Explicit** en la **página Compilar**.
+Si un archivo de código fuente contiene una [instrucción Option Explicit](/dotnet/visual-basic/language-reference/statements/option-explicit-statement), el valor `On` u `Off` de la instrucción invalida el valor de **Option Explicit** en la **página Compilar** .
 
-Cuando se crea un proyecto, el valor **Option Explicit** de la **página Compilar** se establece en el valor de la opción **Option Explicit** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Explicit** en **Valores predeterminados de VB** es **On**.
+Cuando se crea un proyecto, el valor **Option Explicit** de la **página Compilar** se establece en el valor de la opción **Option Explicit** del cuadro de diálogo **Opciones** . Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas** . En el cuadro de diálogo **Opciones** , expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB** . El valor predeterminado inicial de **Option Explicit** en **Valores predeterminados de VB** es **On** .
 
 Establecer **Option Explicit** en `Off` no suele ser una buena práctica. Podría escribir mal un nombre de variable en una o varias ubicaciones, lo que provocaría resultados inesperados cuando se ejecuta el programa.
 
 **Option Strict**
 
-Especifica si se debe aplicar la semántica estricta de tipos. Cuando **Option Strict** es **On**, las condiciones siguientes producen un error en tiempo de compilación:
+Especifica si se debe aplicar la semántica estricta de tipos. Cuando **Option Strict** es **On** , las condiciones siguientes producen un error en tiempo de compilación:
 
 - Conversiones de restricción implícitas
 
@@ -89,9 +91,9 @@ Los errores de tipo de objeto implícito se producen cuando no se puede inferir 
 
 La opción **Option Strict** corresponde a la opción del compilador [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
-Si un archivo de código fuente contiene una [instrucción Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement), el valor `On` u `Off` de la instrucción invalida el valor de **Option Strict** en la **página Compilar**.
+Si un archivo de código fuente contiene una [instrucción Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement), el valor `On` u `Off` de la instrucción invalida el valor de **Option Strict** en la **página Compilar** .
 
-Cuando se crea un proyecto, el valor **Option Strict** de la **página Compilar** se establece en el valor de la opción **Option Strict** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Strict** en **Valores predeterminados de VB** es **Off**.
+Cuando se crea un proyecto, el valor **Option Strict** de la **página Compilar** se establece en el valor de la opción **Option Strict** del cuadro de diálogo **Opciones** . Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas** . En el cuadro de diálogo **Opciones** , expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB** . El valor predeterminado inicial de **Option Strict** en **Valores predeterminados de VB** es **Off** .
 
 **Advertencias individuales de Option Strict**
 
@@ -103,9 +105,9 @@ En la sección **Configuraciones de advertencias** de la **página Compilar** se
 
 - **Tipo implícito; se supone el objeto**
 
-Al establecer **Option Strict** en **On**, estos tres valores de configuración de advertencias se establecen en **Error**. Al establecer **Option Strict** en **Off**, las tres opciones se establecen en **None**.
+Al establecer **Option Strict** en **On** , estos tres valores de configuración de advertencias se establecen en **Error** . Al establecer **Option Strict** en **Off** , las tres opciones se establecen en **None** .
 
-Puede cambiar individualmente cada valor de configuración de advertencia por **None**, **Warning** o **Error**. Si se establecen las tres opciones de configuración de advertencia en **Error**, `On` aparece en el cuadro `Option strict`. Si se establecen las tres en **None**, `Off` aparece en este cuadro. Para cualquier otra combinación de estas opciones, aparece **(personalizado)** .
+Puede cambiar individualmente cada valor de configuración de advertencia por **None** , **Warning** o **Error** . Si se establecen las tres opciones de configuración de advertencia en **Error** , `On` aparece en el cuadro `Option strict`. Si se establecen las tres en **None** , `Off` aparece en este cuadro. Para cualquier otra combinación de estas opciones, aparece **(personalizado)** .
 
 **Option Compare**
 
@@ -113,9 +115,9 @@ Especifica el tipo de comparación de cadena que se va a usar. Seleccione **Bina
 
 Esta opción corresponde a la opción del compilador [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
-Si un archivo de código fuente contiene una [instrucción Option Compare](/dotnet/visual-basic/language-reference/statements/option-compare-statement), el valor `Binary` u `Text` de la instrucción invalida el valor de **Option Compare** en la **página Compilar**.
+Si un archivo de código fuente contiene una [instrucción Option Compare](/dotnet/visual-basic/language-reference/statements/option-compare-statement), el valor `Binary` u `Text` de la instrucción invalida el valor de **Option Compare** en la **página Compilar** .
 
-Cuando se crea un proyecto, el valor **Option Compare** de la **página Compilar** se establece en el valor de la opción **Option Compare** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Compare** en **Valores predeterminados de VB** es **Binario**.
+Cuando se crea un proyecto, el valor **Option Compare** de la **página Compilar** se establece en el valor de la opción **Option Compare** del cuadro de diálogo **Opciones** . Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas** . En el cuadro de diálogo **Opciones** , expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB** . El valor predeterminado inicial de **Option Compare** en **Valores predeterminados de VB** es **Binario** .
 
 **Option Infer**
 
@@ -123,9 +125,9 @@ Especifica si se permite la inferencia de tipo de variable local en las declarac
 
 Esta opción corresponde a la opción del compilador [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
-Si un archivo de código fuente contiene una [instrucción Option Infer](/dotnet/visual-basic/language-reference/statements/option-infer-statement), el valor `On` u `Off` de la instrucción invalida el valor de **Option Infer** en la **página Compilar**.
+Si un archivo de código fuente contiene una [instrucción Option Infer](/dotnet/visual-basic/language-reference/statements/option-infer-statement), el valor `On` u `Off` de la instrucción invalida el valor de **Option Infer** en la **página Compilar** .
 
-Cuando se crea un proyecto, el valor **Option Infer** de la **página Compilar** se establece en el valor de la opción **Option Infer** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Infer** en **Valores predeterminados de VB** es **On**.
+Cuando se crea un proyecto, el valor **Option Infer** de la **página Compilar** se establece en el valor de la opción **Option Infer** del cuadro de diálogo **Opciones** . Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas** . En el cuadro de diálogo **Opciones** , expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB** . El valor predeterminado inicial de **Option Infer** en **Valores predeterminados de VB** es **On** .
 
 **CPU de destino**
 
@@ -135,33 +137,33 @@ Para más información, vea [/platform (Visual Basic)](/dotnet/visual-basic/refe
 
 **Preferencia de 32 bits**
 
-Si está seleccionada la casilla **Preferencia de 32 bits**, la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits y 64 bits de Windows. En caso contrario, la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits de Windows, y como una aplicación de 64 bits en versiones de 64 bits de Windows.
+Si está seleccionada la casilla **Preferencia de 32 bits** , la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits y 64 bits de Windows. En caso contrario, la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits de Windows, y como una aplicación de 64 bits en versiones de 64 bits de Windows.
 
 Ejecutar una aplicación como de 64 bits duplica el tamaño de puntero, y puede provocar problemas de compatibilidad con las bibliotecas que son exclusivamente de 32 bits. Tiene sentido ejecutar una aplicación como de 64 bits solo si se ejecuta significativamente más rápido o necesita más de 4 GB de memoria.
 
 Esta casilla solo está disponible si se cumplen todas las condiciones siguientes:
 
-- En la **página Compilar**, la lista **CPU de destino** se establece en **Cualquier CPU**.
+- En la **página Compilar** , la lista **CPU de destino** se establece en **Cualquier CPU** .
 
-- En la **Página de aplicación**, la lista **Tipo de aplicación** especifica que el proyecto es una aplicación.
+- En la **Página de aplicación** , la lista **Tipo de aplicación** especifica que el proyecto es una aplicación.
 
-- En la **Página de aplicación**, la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.
+- En la **Página de aplicación** , la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.
 
 **Configuraciones de advertencias**
 
-En esta tabla se enumeran las condiciones de compilación y el correspondiente nivel de notificación de **Ninguno**, **Advertencia** o **Error** para cada una.
+En esta tabla se enumeran las condiciones de compilación y el correspondiente nivel de notificación de **Ninguno** , **Advertencia** o **Error** para cada una.
 
 De forma predeterminada, todas las advertencias del compilador se agregan a la lista de tareas durante la compilación. Seleccione **Deshabilitar todas las advertencias** para indicar al compilador que no emita advertencias ni errores. Seleccione **Tratar todas las advertencias como errores** si quiere que el compilador trate las advertencias como errores que se deben corregir.
 
 **Deshabilitar todas las advertencias**
 
-Especifica si se debe permitir que el compilador emita notificaciones como se especifica en la tabla **Condición y notificación** descrita anteriormente en este documento. Esta casilla se encuentra desactivada de forma predeterminada. Active esta casilla para indicar al compilador que no emita advertencias ni errores.
+Especifica si se debe permitir que el compilador emita notificaciones como se especifica en la tabla **Condición y notificación** descrita anteriormente en este documento. De forma predeterminada, esta casilla de verificación está desactivada. Active esta casilla para indicar al compilador que no emita advertencias ni errores.
 
 Esta opción corresponde a la opción del compilador [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn).
 
-**Tratar todas las advertencias como errores**
+**Se tratan todas las advertencias como errores.**
 
-Especifica cómo tratar las advertencias. De forma predeterminada, esta casilla está desactivada, por lo que todas las notificaciones de advertencias permanecen establecidas en **Advertencia**. Active esta casilla para cambiar todas las notificaciones de advertencia a **Error**.
+Especifica cómo tratar las advertencias. De forma predeterminada, esta casilla está desactivada, por lo que todas las notificaciones de advertencias permanecen establecidas en **Advertencia** . Active esta casilla para cambiar todas las notificaciones de advertencia a **Error** .
 
 Esta opción solo está disponible si **Deshabilitar todas las advertencias** está desactivada.
 
@@ -181,13 +183,13 @@ Esta opción no está disponible para los proyectos de aplicación Windows o de 
 
 **Eventos de compilación**
 
-Haga clic en este botón para tener acceso al cuadro de diálogo **Eventos de compilación**. Use este cuadro de diálogo para especificar las instrucciones de configuración anteriores y posteriores a la compilación para el proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Eventos de compilación (Cuadro de diálogo) (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
+Haga clic en este botón para tener acceso al cuadro de diálogo **Eventos de compilación** . Use este cuadro de diálogo para especificar las instrucciones de configuración anteriores y posteriores a la compilación para el proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Eventos de compilación (Cuadro de diálogo) (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
 **Opciones de compilación avanzadas**
 
-Haga clic en este botón para tener acceso al cuadro de diálogo **Configuración de compilador avanzada**. Use el cuadro de diálogo **Configuración de compilador avanzada** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
+Haga clic en este botón para tener acceso al cuadro de diálogo **Configuración de compilador avanzada** . Use el cuadro de diálogo **Configuración de compilador avanzada** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)

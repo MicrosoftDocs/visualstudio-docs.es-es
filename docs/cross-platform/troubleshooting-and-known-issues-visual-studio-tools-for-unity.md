@@ -1,5 +1,6 @@
 ---
 title: Solución de problemas y problemas conocidos (VS Tools for Unity)
+description: Lea sobre la solución de problemas de Visual Studio Tools para Unity. Vea descripciones de problemas conocidos y obtenga información sobre las soluciones de esos problemas.
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: d096a431b7a345d2218c46969dc1a1a21af1f45a
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235087"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039838"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 
@@ -128,19 +129,19 @@ Intente actualizar Visual Studio 2015 a Update 3.
 
 1. Abra una nueva instancia de Visual Studio.
 
-1. Abra el diálogo Asociar al proceso. En la nueva instancia de Visual Studio, en el menú principal, elija **Depurar**, **Asociar al proceso**.
+1. Abra el diálogo Asociar al proceso. En la nueva instancia de Visual Studio, en el menú principal, elija **Depurar** , **Asociar al proceso** .
 
 1. Asocie el depurador a la instancia inmovilizada de Visual Studio. En el diálogo **Asociar al proceso** , seleccione la instancia inmovilizada de Visual Studio en la tabla **Procesos disponibles** y, a continuación, elija el botón **Asociar** .
 
-1. Pause el Depurador. En el menú principal de la nueva instancia de Visual Studio, elija **Depurar**, **Interrumpir todo** o simplemente presione **Ctrl+Alt+Interrumpir**.
+1. Pause el Depurador. En el menú principal de la nueva instancia de Visual Studio, elija **Depurar** , **Interrumpir todo** o simplemente presione **Ctrl+Alt+Interrumpir** .
 
-1. Cree un volcado del subproceso. En la ventana Comandos, escriba el siguiente comando y presione **Entrar**:
+1. Cree un volcado del subproceso. En la ventana Comandos, escriba el siguiente comando y presione **Entrar** :
 
     ```powershell
     Debug.ListCallStack /AllThreads /ShowExternalCode
     ```
 
-    Puede que primero tenga que hacer visible la ventana **Comando** . En el menú principal de Visual Studio elija **Vista**, **Otras ventanas**, **Ventana Comandos**.
+    Puede que primero tenga que hacer visible la ventana **Comando** . En el menú principal de Visual Studio elija **Vista** , **Otras ventanas** , **Ventana Comandos** .
 
 *En Mac:*
 

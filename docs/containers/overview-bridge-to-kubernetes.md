@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829882"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116108"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funcionamiento del Puente a Kubernetes
 
@@ -66,14 +66,14 @@ En la siguiente animación se muestran dos desarrolladores que trabajan en el mi
 Cuando se habilita el trabajo de forma aislada, además de conectarse al clúster de Kubernetes, Puente a Kubernetes hace lo siguiente:
 
 * Comprueba que el clúster de Kubernetes no tiene habilitado Azure Dev Spaces.
-* Replica el servicio seleccionado en el clúster en el mismo espacio de nombres y agrega una etiqueta *routing.visualstudio.io/route-from=SERVICE_NAME* y una anotación *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME*.
+* Replica el servicio seleccionado en el clúster en el mismo espacio de nombres y agrega una etiqueta *routing.visualstudio.io/route-from=SERVICE_NAME* y una anotación *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* .
 * Configura e inicia el administrador de enrutamiento en el mismo espacio de nombres en el clúster de Kubernetes. El administrador de enrutamiento usa un selector de etiquetas para buscar la etiqueta *routing.visualstudio.io/route-from=SERVICE_NAME* y la anotación *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* al configurar el enrutamiento en el espacio de nombres.
 
 Si Puente a Kubernetes detecta que Azure Dev Spaces está habilitado en el clúster de Kubernetes, se le pedirá que deshabilite Azure Dev Spaces para poder usar Puente a Kubernetes.
 
 El administrador de enrutamiento hace lo siguiente cuando se inicia:
 * Duplica todas las entradas que se encuentran en el espacio de nombres, para lo que usa *GENERATED_NAME* para el subdominio.
-* Crea un pod de envío para cada servicio asociado a las entradas duplicadas con el subdominio *GENERATED_NAME*.
+* Crea un pod de envío para cada servicio asociado a las entradas duplicadas con el subdominio *GENERATED_NAME* .
 * Crea un pod de envío adicional para el servicio en el que se trabaja de forma aislada. Esto permite que las solicitudes con el subdominio se enruten al equipo de desarrollo.
 * Configura reglas de enrutamiento para que cada pod de envío controle el enrutamiento de servicios con el subdominio.
 
@@ -85,12 +85,12 @@ En el diagrama siguiente se muestra el mismo clúster con Puente a Kubernetes ha
 
 ![Diagrama del clúster con Puente a Kubernetes habilitado](media/bridge-to-kubernetes/kubr-cluster-devcomputer.svg)
 
-Cuando se recibe en el clúster una solicitud con el subdominio *GENERATED_NAME*, se agrega un encabezado *kubernetes-route-as=GENERATED_NAME* a la solicitud. Los pods de envío controlan el enrutamiento de la solicitud al servicio adecuado en el clúster. Si la solicitud se enruta al servicio en el que se trabaja de forma aislada, el agente remoto redirige esa solicitud al equipo de desarrollo.
+Cuando se recibe en el clúster una solicitud con el subdominio *GENERATED_NAME* , se agrega un encabezado *kubernetes-route-as=GENERATED_NAME* a la solicitud. Los pods de envío controlan el enrutamiento de la solicitud al servicio adecuado en el clúster. Si la solicitud se enruta al servicio en el que se trabaja de forma aislada, el agente remoto redirige esa solicitud al equipo de desarrollo.
 
-Cuando se recibe en el clúster una solicitud sin el subdominio *GENERATED_NAME*, no se agrega ningún encabezado a la solicitud. Los pods de envío controlan el enrutamiento de la solicitud al servicio adecuado en el clúster. Si la solicitud se enruta al servicio que se va a reemplazar, se enrutará al servicio original en lugar de al agente remoto.
+Cuando se recibe en el clúster una solicitud sin el subdominio *GENERATED_NAME* , no se agrega ningún encabezado a la solicitud. Los pods de envío controlan el enrutamiento de la solicitud al servicio adecuado en el clúster. Si la solicitud se enruta al servicio que se va a reemplazar, se enrutará al servicio original en lugar de al agente remoto.
 
 > [!IMPORTANT]
-> Cada servicio del clúster debe reenviar el encabezado *kubernetes-route-as=GENERATED_NAME* al realizar solicitudes adicionales. Por ejemplo, cuando *serviceA* recibe una solicitud, realiza una solicitud a *serviceB* antes de devolver una respuesta. En este ejemplo, *serviceA* tiene que reenviar el encabezado *kubernetes-route-as=GENERATED_NAME* de su solicitud a *serviceB*. Algunos lenguajes, como [ASP.NET][asp-net-header], pueden tener métodos para controlar la propagación de encabezados.
+> Cada servicio del clúster debe reenviar el encabezado *kubernetes-route-as=GENERATED_NAME* al realizar solicitudes adicionales. Por ejemplo, cuando *serviceA* recibe una solicitud, realiza una solicitud a *serviceB* antes de devolver una respuesta. En este ejemplo, *serviceA* tiene que reenviar el encabezado *kubernetes-route-as=GENERATED_NAME* de su solicitud a *serviceB* . Algunos lenguajes, como [ASP.NET][asp-net-header], pueden tener métodos para controlar la propagación de encabezados.
 
 Cuando se desconecta del clúster, de forma predeterminada, Puente a Kubernetes quitará todos los pods de envío y el servicio duplicado.
 
@@ -104,7 +104,7 @@ Cuando se desconecta del clúster, de forma predeterminada, Puente a Kubernetes 
 
 ## <a name="diagnostics-and-logging"></a>Diagnósticos y registro
 
-Al usar Puente a Kubernetes para conectarse al clúster, los registros de diagnóstico del clúster se registran en el directorio *TEMP* del equipo de desarrollo en la carpeta *Puente a Kubernetes*.
+Al usar Puente a Kubernetes para conectarse al clúster, los registros de diagnóstico del clúster se registran en el directorio *TEMP* del equipo de desarrollo en la carpeta *Puente a Kubernetes* .
 
 ## <a name="limitations"></a>Limitaciones
 
@@ -112,6 +112,8 @@ Puente a Kubernetes tiene las siguientes limitaciones:
 
 * Un servicio debe estar respaldado por un único pod para poder conectarse a ese servicio. No se puede conectar a un servicio con varios pods, como un servicio con réplicas.
 * Un pod solo puede tener un único contenedor en ejecución en ese pod para que el Puente a Kubernetes se conecte correctamente. Puente a Kubernetes no se puede conectar a los servicios con pods que tienen contenedores adicionales, como los contenedores sidecar inyectados por las mallas de servicios.
+* Actualmente, los pods de Bridge to Kubernetes deben ser contenedores de Linux. No se admiten los contenedores de Windows.
+* El aislamiento no se puede usar con HTTPS.
 * Puente a Kubernetes necesita permisos elevados para ejecutarse en el equipo de desarrollo con el fin de editar el archivo hosts.
 * Puente a Kubernetes no se puede usar en clústeres que tengan habilitado Azure Dev Spaces.
 

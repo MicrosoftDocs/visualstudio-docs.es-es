@@ -1,5 +1,7 @@
 ---
 title: Configuración de compilación avanzada (Cuadro de diálogo, C#)
+description: Aprenda a usar Visual Studio para especificar las propiedades de configuración de compilación avanzada del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418852"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136750"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Cuadro de diálogo Configuración de compilación avanzada (C#)
 
@@ -46,7 +48,7 @@ El valor predeterminado es C# 7.0.
 
 **Informe de errores internos del compilador**
 
-Especifica si se deben notificar los errores del compilador a Microsoft. Si se establece en **aviso** (valor predeterminado), recibirá un aviso si se produce un error interno del compilador, lo que le ofrece la opción de enviar electrónicamente un informe de errores a Microsoft. Si se establece en **enviar**, se enviará automáticamente un informe de errores. Si se establece en **cola**, se pondrán en cola los informes de errores. Si se establece en **ninguno**, el error se notificará solo en la salida de texto del compilador. Para obtener más información, consulte [/errorreport (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
+Especifica si se deben notificar los errores del compilador a Microsoft. Si se establece en **aviso** (valor predeterminado), recibirá un aviso si se produce un error interno del compilador, lo que le ofrece la opción de enviar electrónicamente un informe de errores a Microsoft. Si se establece en **enviar** , se enviará automáticamente un informe de errores. Si se establece en **cola** , se pondrán en cola los informes de errores. Si se establece en **ninguno** , el error se notificará solo en la salida de texto del compilador. Para obtener más información, consulte [/errorreport (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
 
 **Comprobar el desbordamiento y subdesbordamiento aritmético**
 
@@ -56,7 +58,7 @@ Especifica si una instrucción aritmética de enteros que no está en el ámbito
 
 Especifica si se importará mscorlib.dll al programa, definiendo la totalidad del espacio de nombres <xref:System>. Active esta casilla si quiere definir o crear sus propios objetos y espacios de nombres <xref:System>. Para obtener más información, consulte [/nostdlib (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
-## <a name="output"></a>Resultado
+## <a name="output"></a>Resultados
 
 Las opciones siguientes le permiten especificar opciones de salida avanzadas.
 
@@ -64,7 +66,7 @@ Las opciones siguientes le permiten especificar opciones de salida avanzadas.
 
 Especifica el tipo de información de depuración generado por el compilador. Para obtener información sobre cómo configurar el rendimiento de depuración de una aplicación, consulte [Facilitar la depuración de una imagen](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Esta configuración tiene las siguientes opciones:
 
-- **none**
+- **Ninguna**
 
    Especifica que no se generará ninguna información de depuración.
 
@@ -88,13 +90,13 @@ Para obtener más información, consulte [/debug (Opciones del compilador de C#)
 
 **Alineación de archivo**
 
-Especifica el tamaño de las secciones del archivo de salida. Los valores válidos son **512**, **1024**, **2048**, **4096** y **8192**. Estos valores se miden en bytes. Cada sección se alineará en un límite que es un múltiplo de este valor, lo que afecta al tamaño del archivo de salida. Para obtener más información, consulte [/filealign (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Especifica el tamaño de las secciones del archivo de salida. Los valores válidos son **512** , **1024** , **2048** , **4096** y **8192** . Estos valores se miden en bytes. Cada sección se alineará en un límite que es un múltiplo de este valor, lo que afecta al tamaño del archivo de salida. Para obtener más información, consulte [/filealign (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Dirección base de biblioteca**
 
 Especifica la dirección base preferida para cargar una DLL. La dirección base predeterminada para un archivo DLL se establece mediante Common Language Runtime de .NET Framework. Para obtener más información, consulte [/baseaddress (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Opciones del compilador de C#, por orden alfabético](/dotnet/csharp/language-reference/compiler-options/index)
 - [Página Compilar, Diseñador de proyectos (C#)](../../ide/reference/build-page-project-designer-csharp.md)

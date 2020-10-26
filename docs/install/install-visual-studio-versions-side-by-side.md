@@ -1,5 +1,7 @@
 ---
 title: Instalación de distintas versiones de Visual Studio en paralelo
+description: Aprenda a instalar Visual Studio en un equipo que ya tenga instalada una versión anterior o posterior.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211318"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928637"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalación de distintas versiones de Visual Studio en paralelo
 
@@ -48,11 +50,11 @@ Antes de instalar versiones en paralelo, debe tener en cuenta los siguientes pun
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>Instalación de distintas versiones secundarias de Visual Studio en paralelo
 
-Al actualizar de una versión secundaria de Visual Studio a la siguiente, el instalador de Visual Studio actualizará la instalación actual a la siguiente versión de ese canal de forma predeterminada. Por ejemplo, al instalar la versión preliminar de 16.6.4, el instalador intentará reemplazar la instalación actual de la versión preliminar de 16.6.3, ya que ambas están en el canal de versión preliminar de 16.6. Esto ayuda a garantizar que las versiones anteriores de Visual Studio no ocupen espacio en el equipo. En algunos casos concretos, puede resultar útil instalar versiones secundarias en paralelo. En nuestro ejemplo, esto conllevaría tener tanto la versión 16.6.3 como la 16.6.4 en el mismo equipo.
+Al actualizar de una versión secundaria de Visual Studio a la siguiente, el instalador de Visual Studio actualizará la instalación actual a la siguiente versión de ese canal de forma predeterminada. Por ejemplo, al instalar la versión preliminar de 16.6.4, el instalador intentará reemplazar la instalación actual de la versión preliminar de 16.6.3, ya que ambas están en el canal de versión preliminar de 16.6. Esto ayuda a garantizar que las versiones anteriores de Visual Studio no ocupen espacio en la máquina. En algunos casos concretos, puede resultar útil instalar versiones secundarias en paralelo. En nuestro ejemplo, esto conllevaría tener tanto la versión 16.6.3 como la 16.6.4 en el mismo equipo.
 
 1. Descargue el [archivo de programa previo de Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) para la versión secundaria que quiere instalar en paralelo con las versiones existentes de Visual Studio.
-2. Abra el símbolo del sistema en modo de administrador. Para ello, abra el menú Inicio de Windows, escriba "cmd", haga clic con el botón derecho en el resultado de la búsqueda del símbolo del sistema y seleccione **Ejecutar como administrador**. En el símbolo del sistema, cambie el directorio a la carpeta donde se encuentra el archivo de programa previo de Visual Studio.
-3. Ejecute el siguiente comando, pero especifique una nueva ruta de acceso para la carpeta de la ubicación de la instalación y reemplace el nombre del archivo .exe por el nombre del programa previo correspondiente a la versión de Visual Studio que está instalando. El nombre del archivo .exe debe ser igual o ser parecido a uno de los siguientes nombres de archivo:
+2. Abra el símbolo del sistema en modo de administrador. Para ello, abra el menú Inicio de Windows, escriba "cmd", haga clic con el botón derecho en el resultado de la búsqueda del símbolo del sistema y seleccione **Ejecutar como administrador** . En el símbolo del sistema, cambie el directorio a la carpeta donde se encuentra el archivo de programa previo de Visual Studio.
+3. Ejecute el siguiente comando, pero especifique una nueva ruta de acceso para la ubicación de instalación y reemplace el nombre del archivo .exe por el nombre del programa de arranque adecuado para la versión de Visual Studio que está instalando. El nombre del archivo .exe debe ser igual o ser parecido a uno de los siguientes nombres de archivo:
    * vs_community.exe para Visual Studio Community
    * vs_professional.exe para Visual Studio Professional
    * vs_enterprise.exe para Visual Studio Enterprise

@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Especificación de eventos de compilación (Visual Basic)
+description: Aprenda a usar los eventos de compilación de Visual Basic para ejecutar scripts, macros u otras acciones como parte del proceso de compilación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283975"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136932"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificación de eventos de compilación (Visual Basic)
 
 Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts, macros u otras acciones como parte del proceso de compilación. Los eventos anteriores a la compilación se producen antes de la compilación; los eventos posteriores a la compilación se producen después de la compilación.
 
-Los eventos de compilación se especifican en el cuadro de diálogo **Eventos de compilación**, disponible en la página **Compilar** del **Diseñador de proyectos**.
+Los eventos de compilación se especifican en el cuadro de diálogo **Eventos de compilación** , disponible en la página **Compilar** del **Diseñador de proyectos** .
 
 > [!NOTE]
 > Visual Basic Express no admite la entrada de eventos de compilación. Solo se admite en el producto completo de Visual Studio.
@@ -35,16 +37,16 @@ Los eventos de compilación se especifican en el cuadro de diálogo **Eventos de
 
 ### <a name="to-specify-a-build-event"></a>Para especificar un evento de compilación
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades** .
 
-2. Haga clic en la pestaña **Compilar**.
+2. Haga clic en la pestaña **Compilar** .
 
-3. Haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.
+3. Haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación** .
 
-4. Escriba los argumentos de línea de comandos para la acción anterior o posterior a la compilación y después haga clic en **Aceptar**.
+4. Escriba los argumentos de línea de comandos para la acción anterior o posterior a la compilación y después haga clic en **Aceptar** .
 
     > [!NOTE]
-    > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat*. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat* . Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Si su evento anterior o posterior a la compilación no se completa correctamente, puede finalizar la compilación haciendo que la acción del evento salga con un código distinto de cero (0), que indica que la acción se ha realizado correctamente.
@@ -63,11 +65,11 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Para crear un comando .exe para cambiar el manifiesto de aplicación
 
-1. Cree una aplicación de consola para el comando. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.
+1. Cree una aplicación de consola para el comando. En el menú **Archivo** , haga clic en **Nuevo** y después haga clic en **Proyecto** .
 
-2. En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Windows** y, después, la plantilla **Aplicación de consola**. Dé un nombre al proyecto `ChangeOSVersionVB`.
+2. En el cuadro de diálogo **Nuevo proyecto** , en el nodo **Visual Basic** , seleccione **Windows** y, después, la plantilla **Aplicación de consola** . Dé un nombre al proyecto `ChangeOSVersionVB`.
 
-3. En *Module1.vb*, agregue la línea siguiente a las demás instrucciones `Imports` de la parte superior del archivo:
+3. En *Module1.vb* , agregue la línea siguiente a las demás instrucciones `Imports` de la parte superior del archivo:
 
    ```vb
    Imports System.Xml
@@ -116,26 +118,26 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
    End Sub
    ```
 
-   El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *\<ProjectName>.publish*). El segundo es la nueva versión del sistema operativo.
+   El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *\<ProjectName>.publish* ). El segundo es la nueva versión del sistema operativo.
 
-5. En el menú **Compilar** , haga clic en **Compilar solución**.
+5. En el menú **Compilar** , haga clic en **Compilar solución** .
 
-6. Copie el archivo *.exe* en un directorio, por ejemplo, *C:\TEMP\ChangeOSVersionVB.exe*.
+6. Copie el archivo *.exe* en un directorio, por ejemplo, *C:\TEMP\ChangeOSVersionVB.exe* .
 
    Después, invoque este comando en un evento posterior a la compilación para cambiar el manifiesto de aplicación.
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar un evento posterior a la compilación para cambiar el manifiesto de aplicación
 
-1. Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.
+1. Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo** , haga clic en **Nuevo** y después haga clic en **Proyecto** .
 
-2. En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Escritorio de Windows** y, después, la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `VBWinApp`.
-3. Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.
+2. En el cuadro de diálogo **Nuevo proyecto** , en el nodo **Visual Basic** , seleccione **Escritorio de Windows** y, después, la plantilla **Aplicación de Windows Forms** . Dé un nombre al proyecto `VBWinApp`.
+3. Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades** .
 
-4. En el **Diseñador de proyectos**, vaya a la página **Publicar** y establezca **Ubicación de publicación** en *C:\TEMP*.
+4. En el **Diseñador de proyectos** , vaya a la página **Publicar** y establezca **Ubicación de publicación** en *C:\TEMP* .
 
-5. Publique el proyecto haciendo clic en **Publicar ahora**.
+5. Publique el proyecto haciendo clic en **Publicar ahora** .
 
-     El archivo de manifiesto se compilará y se ubicará en *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Para ver el manifiesto, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Select the program from a list** (Seleccionar el programa de la lista) y, después, haga clic en **Bloc de notas**.
+     El archivo de manifiesto se compilará y se ubicará en *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest* . Para ver el manifiesto, haga clic con el botón derecho en el archivo, haga clic en **Abrir con** , seleccione **Select the program from a list** (Seleccionar el programa de la lista) y, después, haga clic en **Bloc de notas** .
 
      Busque el archivo para el elemento `<osVersionInfo>`. Por ejemplo, la versión puede ser:
 
@@ -143,19 +145,19 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. En el **Diseñador de proyectos**, vaya a la pestaña **Compilar** y haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.
+6. En el **Diseñador de proyectos** , vaya a la pestaña **Compilar** y haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación** .
 
-7. En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:
+7. En el cuadro **Línea de comandos del evento posterior a la compilación** , escriba el comando siguiente:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
      Cuando compile el proyecto, este comando cambiará la versión mínima del sistema operativo en el manifiesto de aplicación a 5.1.2600.0.
 
-     La macro `$(TargetPath)` expresa la ruta de acceso completa del ejecutable que se está creando. Por tanto, *$(TargetPath).manifest* especificará el manifiesto de aplicación creado en el directorio *bin*. La publicación copiará este manifiesto en la ubicación de publicación que ha establecido anteriormente.
+     La macro `$(TargetPath)` expresa la ruta de acceso completa del ejecutable que se está creando. Por tanto, *$(TargetPath).manifest* especificará el manifiesto de aplicación creado en el directorio *bin* . La publicación copiará este manifiesto en la ubicación de publicación que ha establecido anteriormente.
 
-8. Vuelva a publicar el proyecto. Vaya a la página **Publicar** y haga clic en **Publicar ahora**.
+8. Vuelva a publicar el proyecto. Vaya a la página **Publicar** y haga clic en **Publicar ahora** .
 
-     Vea el manifiesto de nuevo. Para ver el manifiesto, vaya al directorio de publicación, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Select the program from a list** (Seleccionar el programa de la lista) y, después, haga clic en **Bloc de notas**.
+     Vea el manifiesto de nuevo. Para ver el manifiesto, vaya al directorio de publicación, haga clic con el botón derecho en el archivo, haga clic en **Abrir con** , seleccione **Select the program from a list** (Seleccionar el programa de la lista) y, después, haga clic en **Bloc de notas** .
 
      La versión ahora debe leerse:
 

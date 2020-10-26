@@ -15,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425399"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136919"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 
-En MSBuild, un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de Visual Studio tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd*.
+En MSBuild, un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de Visual Studio tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd* .
 
 ## <a name="common-items"></a>Elementos comunes
 
@@ -81,9 +81,15 @@ Representa una referencia a otro proyecto. Los elementos `ProjectReference` se t
 |Nombre de metadatos de elementos|Descripción|
 |---------------|-----------------|
 |NOMBRE|Cadena opcional. Nombre para mostrar de la referencia.|
+|GlobalPropertiesToRemove|Objeto `string[]` opcional. Nombres de las propiedades que se van a quitar al compilar el proyecto al que se hace referencia, por ejemplo, `RuntimeIdentifier;PackOnBuild`. El valor predeterminado es vacío.|
 |Proyecto|Cadena opcional. GUID de la referencia, con el formato {12345678-1234-1234-1234-1234567891234}.|
-|Package|Cadena opcional. Ruta de acceso del archivo de proyecto al que se hace referencia.|
+|OutputItemType|Cadena opcional. Tipo de elemento al que se van a emitir salidas de destino. El valor predeterminado es en blanco. Si los metadatos de referencia se establecen en "true" (valor predeterminado), las salidas de destino se convierten en referencias del compilador.|
 |ReferenceOutputAssembly|Booleano opcional. Si se establece en `false`, no incluye la salida del proyecto al que se hace referencia como una [Referencia](#reference) de este proyecto, pero garantiza que el otro proyecto realice compilaciones antes que este. Tiene como valor predeterminado `true`.|
+|SetConfiguration|Cadena opcional. Establece la propiedad global `Configuration` del proyecto al que se hace referencia, por ejemplo, `Configuration=Release`.|
+|SetPlatform|Cadena opcional. Establece la propiedad global `Platform` del proyecto al que se hace referencia, por ejemplo, `Platform=AnyCPU`.|
+|SetTargetFramework|Cadena opcional. Establece la propiedad global `TargetFramework` del proyecto al que se hace referencia, por ejemplo, `TargetFramework=netstandard2.0`.|
+|SkipGetTargetFrameworkProperties|Booleano opcional. Si es `true`, compila el proyecto al que se hace referencia sin negociar el valor `TargetFramework` más compatible. Tiene como valor predeterminado `false`.|
+|Destinos|Objeto `string[]` opcional. Lista separada por puntos y coma de destinos de los proyectos a los que se hace referencia que deben compilarse. El valor predeterminado de `$(ProjectReferenceBuildTargets)` es en blanco, que indica los destinos predeterminados.|
 
 ### <a name="compile"></a>Compile
 

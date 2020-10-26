@@ -2,17 +2,17 @@
 title: Beneficio de LinkedIn Learning en suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 04/17/2020
+ms.date: 10/06/2020
 ms.topic: how-to
 description: Obtenga información sobre el beneficio de LinkedIn Learning incluido como parte de una suscripción a LinkedIn Premium incluida en suscripciones seleccionadas de Visual Studio.
-ms.openlocfilehash: 6f0f500d092bb17e1bb81f0d35f2b12dc5c18183
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
+ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006298"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805895"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Beneficio de LinkedIn Learning en suscripciones de Visual Studio
 
@@ -25,32 +25,32 @@ Debe tener una cuenta de LinkedIn para poder sacar partido de la prestación Lin
 Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de LinkedIn Learning en la categoría de educación y haga clic en el vínculo **Obtener código**.
+2. Busque el icono de LinkedIn Learning en la categoría de educación y haga clic en el vínculo **Obtener código** .
    > [!div class="mx-imgBorder"]
    > ![Icono de la ventaja de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
 
-3. Si ya tiene una cuenta de LinkedIn y ha iniciado sesión automáticamente, se le dirigirá inmediatamente a la página de activación de la prestación LinkedIn Learning.  Si tiene una cuenta de LinkedIn, pero no ha iniciado sesión automáticamente, solo tiene que escribir su nombre de usuario y contraseña y, después, hacer clic en **Iniciar sesión**.  Vaya a [este paso](#activate-your-offer) para activar la oferta.
+3. Si ya tiene una cuenta de LinkedIn y ha iniciado sesión automáticamente, se le dirigirá inmediatamente a la página de activación de la prestación LinkedIn Learning.  Si tiene una cuenta de LinkedIn, pero no ha iniciado sesión automáticamente, solo tiene que escribir su nombre de usuario y contraseña y, después, hacer clic en **Iniciar sesión** .  Vaya a [este paso](#activate-your-offer) para activar la oferta.
 
 ### <a name="create-a-linkedin-account"></a>Creación de una cuenta de LinkedIn
-4. Si aún no tiene una cuenta de LinkedIn, haga clic en **Unirse ahora**.
+4. Si aún no tiene una cuenta de LinkedIn, haga clic en **Unirse ahora** .
 
-5. Escriba su información personal, elija un nombre de usuario y una contraseña y haga clic en **Unirse ahora**.
+5. Escriba su información personal, elija un nombre de usuario y una contraseña y haga clic en **Unirse ahora** .
 
-6. Especifique el país o la región y el código postal y haga clic en **Siguiente**.
+6. Especifique el país o la región y el código postal y haga clic en **Siguiente** .
 
 7. Tras ello, deberá rellenar alguna información de carácter personal en su perfil.  Especifique si es un estudiante e indique cuál ha sido el cargo más reciente, la empresa y el sector.
 
 8. En este paso, podrá dejar constancia de sus áreas de interés.  Para acelerar el proceso de creación de la cuenta, haga clic en **No lo sé aún.  Estoy abierto a opciones.**  (Puede dejar constancia de las áreas de interés más adelante).
 
-9. Cuando proporcionó la dirección de correo electrónico, recibió un mensaje con un código de confirmación.  El mensaje es de "Mensajes de LinkedIn".  Si no lo encuentra en la bandeja de entrada, compruebe las carpetas de correo no deseado.  Escriba el código del mensaje y haga clic en **Verificar**.
+9. Cuando proporcionó la dirección de correo electrónico, recibió un mensaje con un código de confirmación.  El mensaje es de "Mensajes de LinkedIn".  Si no lo encuentra en la bandeja de entrada, compruebe las carpetas de correo no deseado.  Escriba el código del mensaje y haga clic en **Verificar** .
 
-10. Si quiere importar los contactos de la cuenta de correo electrónico que indicó anteriormente, puede hacerlo ahora.  Si no, haga clic en **Omitir**. Si decide omitir este paso, se le pedirá que confirme su elección.  Haga clic en **Sí**.
+10. Si quiere importar los contactos de la cuenta de correo electrónico que indicó anteriormente, puede hacerlo ahora.  Si no, haga clic en **Omitir** . Si decide omitir este paso, se le pedirá que confirme su elección.  Haga clic en **Sí** .
 
 11. Con las alertas de trabajo estará al tanto de los trabajos en su zona que pueden ser de su interés.  Puede establecer una alerta de trabajo ahora u omitir este paso para seguir creando la cuenta.
 
 12. Según cuáles sean las preferencias y la información personal que haya proporcionado hasta el momento, verá una selección de conexiones recomendadas con las que podrá empezar a crear su red.  Puede optar por agregar conexiones u omita este paso.
 
-13. Para agregar una foto a su perfil, haga clic en **Cargar foto**.  Omita este paso si prefiere no hacerlo  (siempre podrá agregarla más adelante).
+13. Para agregar una foto a su perfil, haga clic en **Cargar foto** .  Omita este paso si prefiere no hacerlo  (siempre podrá agregarla más adelante).
 
 14. Puede descargar la aplicación LinkedIn al teléfono para tener acceso a la red en cualquier lugar.  Puede enviar un vínculo al teléfono o descargar la aplicación directamente desde App Store o Google Play.  También puede hacer clic en **Siguiente** para omitir este paso en este momento y descargar la aplicación más adelante.
 
@@ -71,7 +71,7 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | 6 meses       |  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa<sup>1</sup> | 6 meses       |  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Enterprise con GitHub Enterprise   | VL | 6 meses       |  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |No.  Disponible solo para nuevos suscriptores         |
 | Visual Studio Professional con GitHub Enterprise | VL | 3 meses      | No.  Disponible solo para nuevos suscriptores         |
@@ -79,7 +79,7 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              | NA         |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP).  Excluye:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
+<sup>1</sup> *Excluye:  NFR, Visual Studio Industry Partner, Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.

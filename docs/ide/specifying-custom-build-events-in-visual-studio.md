@@ -1,5 +1,7 @@
 ---
 title: Especificación de eventos de compilación personalizados
+description: Aprenda a ejecutar comandos de forma automática en Visual Studio antes de que se inicie una compilación o después de que termine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f1d339f9bbf170d2df545e69c698f786198695ad
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115335"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136789"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
 
@@ -26,7 +28,7 @@ Para obtener información específica sobre el lenguaje de programación que est
 
 - Visual Basic: [Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C# y F#: [Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++: [Especificar eventos de compilación](/cpp/build/specifying-build-events).
 
@@ -36,7 +38,7 @@ Los eventos de compilación siguen la misma sintaxis que los comandos de DOS, pe
 
 Para obtener mejores resultados, siga estas sugerencias de formato:
 
-- Agregue una instrucción `call` delante de todos los eventos de compilación que ejecutan archivos *.bat*.
+- Agregue una instrucción `call` delante de todos los eventos de compilación que ejecutan archivos *.bat* .
 
    Ejemplo: `call C:\MyFile.bat`
 
@@ -55,9 +57,9 @@ Para obtener mejores resultados, siga estas sugerencias de formato:
   > [!NOTE]
   > `%I` en el código anterior debe ser `%%I` en scripts por lotes.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)
 - [Pre-build Event/Post-build Event command line dialog box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) (Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo))
 - [Caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md)
-- [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)
+- [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md)

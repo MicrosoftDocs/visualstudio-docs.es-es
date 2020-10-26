@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810124"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116155"
 ---
 # <a name="developer-community-guidelines"></a>Guía sobre la Comunidad de desarrolladores
 
@@ -27,7 +27,7 @@ Developer Community realiza un seguimiento de las incidencias y las sugerencias 
 
 Busque su incidencia en Visual Studio Developer Community para asegurarse de que aún no exista. Si ya existe, indique los comentarios pertinentes y registre su voto.
 
-Si para resolver su incidencia necesita realizar una pregunta, formúlela a la comunidad en [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) mediante la etiqueta _visual-studio_. Contamos con personal de soporte técnico que supervisa esa etiqueta y que le ayudará a solventar las dudas.
+Si para resolver su incidencia necesita realizar una pregunta, formúlela a la comunidad en [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) mediante la etiqueta _visual-studio_ . Contamos con personal de soporte técnico que supervisa esa etiqueta y que le ayudará a solventar las dudas.
 
 Si no encuentra ninguna incidencia que describa el error o la característica que le ocupa, envíe una incidencia siguiendo las directrices que se indican a continuación.
 
@@ -59,11 +59,13 @@ La evaluación de prioridades de las incidencias es un proceso de varios pasos q
 
 Después de notificar un problema, los estados indican en qué punto de su ciclo de vida están sus envíos. Cuando los equipos de producto de Visual Studio revisen sus comentarios, les asignarán un estado. Realice un seguimiento del progreso de los informes de problemas consultando los [estados de problemas y preguntas más frecuentes](./report-a-problem.md).
 
-En el caso de que a una incidencia le falte información importante, le asignaremos el estado pertinente para indicar que _se requiere más información_. Agregaremos un comentario en la incidencia con la información específica que necesitamos y recibirá una notificación por correo electrónico. Si no recibimos la información en un plazo de siete días, le enviaremos un recordatorio. Tras ese recordatorio, cerraremos la solicitud después de 14 días de inactividad.
+### <a name="prioritizing-which-issues-to-fix"></a>Prioridad de los problemas que se van a solucionar
 
-### <a name="wont-fix-bugs"></a>No se corregirán los errores
+No podemos solucionar todos los problemas que se nos comunican. La solución de algunos tiene un costo demasiado alto, la de otros podría retrasar otras áreas de características y la de otros puede tener un impacto demasiado bajo. Sabemos que esto puede desilusionar cuando se ha dedicado tiempo a enviar un informe de problema. Todos nos hemos visto en la misma situación, ya sea en este proyecto o en otros en los que hemos colaborado. Si un problema se ha cerrado y cree que el motivo que hemos dado no es satisfactorio, puede aclarar el caso de uso y solicitar que el problema se vuelva a activar para otra revisión. En este punto, es posible que le pidamos más información.
 
-Cerramos algunos errores cuando el balance de costos y beneficios es negativo. Por ejemplo, si la corrección es tan compleja que implica el riesgo de que haya regresiones para muchos usuarios, es posible que sea más sensato no corregir el problema. Cuando cerremos un error, explicaremos por qué lo hacemos.
+### <a name="missing-important-information"></a>Información importante que falta
+
+En el caso de que a una incidencia le falte información importante, le asignaremos el estado pertinente para indicar que _se requiere más información_ . Agregaremos un comentario en la incidencia con la información específica que necesitamos y recibirá una notificación por correo electrónico. Si no recibimos la información en un plazo de siete días, le enviaremos un recordatorio. Tras ese recordatorio, cerraremos la solicitud después de 14 días de inactividad.
 
 ### <a name="other-product"></a>Otro producto
 
@@ -83,9 +85,9 @@ Cuando esto suceda, se cerrará la incidencia y se le pedirá que la abra con el
 
 ## <a name="managing-feature-suggestions"></a>Administración de sugerencias de características
 
-Las sugerencias de características son un medio de comunicación entre nosotros y los miembros de la comunidad de desarrolladores. Técnicamente, podríamos mantener todas las solicitudes de características abiertas para siempre. Pero mantener abiertas las incidencias reduciría la visibilidad de la comunidad del estado real de una característica. Por lo tanto, cerramos las solicitudes de características que no abordaremos y asignamos las características que podríamos abordar a la etiqueta _En revisión_.
+Las sugerencias de características son un medio de comunicación entre nosotros y los miembros de la comunidad de desarrolladores. Técnicamente, podríamos mantener todas las solicitudes de características abiertas para siempre. Pero mantener abiertas las incidencias reduciría la visibilidad de la comunidad del estado real de una característica. Por lo tanto, cerramos las solicitudes de características que no abordaremos y asignamos las características que podríamos abordar a la etiqueta _En revisión_ .
 
-Si ha sugerido una característica, es posible que le decepcione que no tengamos previsto abordar su solicitud. Lo comprendemos. Todos nos hemos visto en la misma situación (en este proyecto o en otros en los que hayamos contribuido). Así que no se preocupe, valoramos mucho todos sus comentarios. Si cerramos su sugerencia o le asignamos la etiqueta _En revisión_, no se lo tome como algo personal. Si cree que su sugerencia de característica merece estar abierta, aclare el caso de uso y póngase en contacto con nosotros o recopile más votos positivos.
+Si ha sugerido una característica, es posible que le decepcione que no tengamos previsto abordar su solicitud. Lo comprendemos. Todos nos hemos visto en la misma situación (en este proyecto o en otros en los que hayamos contribuido). Así que no se preocupe, valoramos mucho todos sus comentarios. Si cerramos su sugerencia o le asignamos la etiqueta _En revisión_ , no se lo tome como algo personal. Si cree que su sugerencia de característica merece estar abierta, aclare el caso de uso y póngase en contacto con nosotros o recopile más votos positivos.
 
 En nuestro proceso de toma de decisiones, tenemos en cuenta los siguientes aspectos en lo que respecta a las sugerencias de características:
 
@@ -97,7 +99,7 @@ En nuestro proceso de toma de decisiones, tenemos en cuenta los siguientes aspec
 
 Si no respondemos afirmativamente a alguna de estas preguntas, la sugerencia se cerrará. No obstante, las sugerencias suelen permanecer abiertas como _En revisión_ para recopilar más comentarios de la comunidad.
 
-Si una sugerencia no coincide con nuestra dirección general del producto, la cerraremos como *Fuera de ámbito*. Por ejemplo, es posible que podamos tener inversiones similares en otros miembros de la familia de productos de Visual Studio. O bien la característica sugerida puede ser pertinente solo para algunas personas, lo que hace que para una extensión sea más sencillo proporcionarla.
+Si una sugerencia no coincide con nuestra dirección general del producto, la cerraremos como *Fuera de ámbito* . Por ejemplo, es posible que podamos tener inversiones similares en otros miembros de la familia de productos de Visual Studio. O bien la característica sugerida puede ser pertinente solo para algunas personas, lo que hace que para una extensión sea más sencillo proporcionarla.
 
 Realice un seguimiento del progreso de su sugerencia de característica consultando los [estados de las sugerencias y las preguntas más frecuentes](./report-a-problem.md).
 

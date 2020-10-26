@@ -1,5 +1,6 @@
 ---
 title: Administración de configuraciones de compilación con opciones de desarrollador de Visual Basic
+description: Obtenga información sobre las opciones de configuración de compilación avanzada que están ocultas al aplicar la configuración de desarrollador de Visual Basic y cómo habilitarlas manualmente.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee729a0dfe27bf54a64b42ff64b23bf851c14d06
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: bd13c0a9f64ce484d9ba4e3193f7da94d0b1e446
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135123"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136724"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
 
@@ -31,15 +32,15 @@ De manera predeterminada, todas las opciones de configuración de compilación a
 
 De manera predeterminada, las opciones del desarrollador de Visual Basic ocultan la opción para abrir el cuadro de diálogo **Administrador de configuración** y las listas **Configuración** y **Plataforma** en el [Diseñador de proyectos](../ide/reference/application-page-project-designer-visual-basic.md).
 
-1. En el menú **Herramientas** , haga clic en **Opciones**.
+1. En el menú **Herramientas** , haga clic en **Opciones** .
 
-2. Expanda **Proyectos y soluciones** y haga clic en **General**.
+2. Expanda **Proyectos y soluciones** y haga clic en **General** .
 
-3. Haga clic en **Mostrar configuraciones de compilación avanzadas**.
+3. Haga clic en **Mostrar configuraciones de compilación avanzadas** .
 
-4. Haga clic en **OK**.
+4. Haga clic en **OK** .
 
-     **Configuration Manager** ya está disponible en el menú **Compilar** y las listas **Configuración** y **Plataforma** están visibles en el **Diseñador de proyectos**.
+     **Configuration Manager** ya está disponible en el menú **Compilar** y las listas **Configuración** y **Plataforma** están visibles en el **Diseñador de proyectos** .
 
 ## <a name="see-also"></a>Vea también
 
