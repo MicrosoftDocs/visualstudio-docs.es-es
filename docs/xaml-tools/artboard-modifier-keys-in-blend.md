@@ -1,5 +1,7 @@
 ---
 title: Teclas modificadoras de la mesa de trabajo en Blend
+description: Obtenga información sobre los métodos abreviados de teclado que usan teclas modificadoras en Blend para Visual Studio para modificar las acciones de la mesa de actividades, como la ampliación, el cambio de tamaño y el movimiento panorámico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4b801713e6fdccf65bb580b017f011e65e0b84e
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329587"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796285"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de la mesa de trabajo en Blend
 Algunos métodos abreviados de teclado no tienen elementos de menú asociados, lo que significa que no puede usar la interfaz de usuario de [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] para descubrirlos. La siguiente tabla contiene los métodos abreviados que modifican una acción, por ejemplo, cambiar el tamaño de un objeto.
@@ -24,7 +26,7 @@ Algunos métodos abreviados de teclado no tienen elementos de menú asociados, l
 |Desplazar objetos seleccionados mientras está seleccionada la herramienta **Selección**|Presionar las teclas de dirección|
 |Desplazar la mesa de trabajo|Mantener presionada la **barra espaciadora** y arrastrar la mesa de la mesa|
 |Acercar y alejar en la mesa de trabajo|Girar la rueda del mouse|
-|Acercar en la mesa de trabajo|Mantener **presionada** + la**barra espaciadora** mientras hace clic en cualquier parte de la mesa de la mesa|
+|Acercar en la mesa de trabajo|Mantener **presionada** + la **barra espaciadora** mientras hace clic en cualquier parte de la mesa de la mesa|
 |Alejar en la mesa de trabajo|Mantener presionada la **tecla Ctrl** + **Alt** + **Spacebar** mientras se hace clic en cualquier parte de la mesa de la mesa|
 |Mover la mesa de trabajo hacia la izquierda o hacia la derecha|Mantener presionada la **tecla Mayús** y girar la rueda del mouse|
 |Mover la mesa de trabajo hacia arriba o hacia abajo|Mantener presionada la **tecla Ctrl** y girar la rueda del mouse|
@@ -39,7 +41,7 @@ Algunos métodos abreviados de teclado no tienen elementos de menú asociados, l
 |Cambiar entre los documentos abiertos|Presione la **tecla Ctrl** + **Tab**|
 |Abrir el panel **Activos**|Presione **Ctrl** + **period**|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Métodos abreviados de teclado](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [Teclas modificadoras de la herramienta Pluma](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

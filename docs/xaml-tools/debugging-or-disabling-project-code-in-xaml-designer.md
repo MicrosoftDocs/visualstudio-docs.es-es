@@ -1,17 +1,19 @@
 ---
 title: Depuración o deshabilitación de código de proyecto en el Diseñador XAML
+description: Obtenga información sobre cómo depurar o deshabilitar el código de proyecto en el Diseñador XAML, incluida la forma de depurar código de proyecto en ejecución en otra instancia de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331062"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796750"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 
@@ -53,15 +55,15 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
 5. Establezca un punto de interrupción en el código del proyecto.
 
-6. En la nueva instancia de Visual Studio, en la barra de menús, elija **depurar**  >  **asociar al proceso**.
+6. En la nueva instancia de Visual Studio, en la barra de menús, elija **depurar**  >  **asociar al proceso** .
 
-7. En el cuadro de diálogo **Asociar al proceso** , en la lista **Procesos disponibles** , elija **XDesProc.exe**y luego seleccione el botón **Asociar** .
+7. En el cuadro de diálogo **Asociar al proceso** , en la lista **Procesos disponibles** , elija **XDesProc.exe** y luego seleccione el botón **Asociar** .
 
      ![El proceso del diseñador de XAML](media/xaml_attach.png)
 
      Este es el proceso para el Diseñador XAML en la primera instancia de Visual Studio.
 
-8. En la primera instancia de Visual Studio, en la barra de menús, elija **depurar**  >  **iniciar depuración**.
+8. En la primera instancia de Visual Studio, en la barra de menús, elija **depurar**  >  **iniciar depuración** .
 
      Ahora puede entrar en el código que se ejecuta en el diseñador.
 
@@ -69,7 +71,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
 - En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para deshabilitar la ejecución de código del proyecto y volver a cargar el diseñador** .
 
-- Como alternativa, en la barra de herramientas en el **Diseñador XAML**, haga clic en el botón **Deshabilitar código de proyecto**.
+- Como alternativa, en la barra de herramientas en el **Diseñador XAML** , haga clic en el botón **Deshabilitar código de proyecto** .
 
      ![Botón para deshabilitar el código de proyecto](media/xaml_disablecode.png)
 
@@ -90,12 +92,12 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
 En el diseñador XAML, puede cambiar las opciones de visualización de controles para que solo se muestren los controles de plataforma desde Windows SDK. Esto puede mejorar la confiabilidad del diseñador XAML.
 
-Para cambiar las opciones de visualización de controles, haga clic en el icono que se encuentra en la parte inferior izquierda de la ventana del diseñador y, luego, seleccione una opción en **Opciones de visualización de controles**:
+Para cambiar las opciones de visualización de controles, haga clic en el icono que se encuentra en la parte inferior izquierda de la ventana del diseñador y, luego, seleccione una opción en **Opciones de visualización de controles** :
 
 ![Opciones de visualización de controles](media/control_display_options.png)
 
-Cuando selecciona **Mostrar solo los controles de la plataforma**, todos los controles personalizados que provienen de los SDK, controles de usuario de cliente, etc. no se representarán por completo. En su lugar, los reemplazan controles de reserva para mostrar el tamaño y la posición del control.
+Cuando selecciona **Mostrar solo los controles de la plataforma** , todos los controles personalizados que provienen de los SDK, controles de usuario de cliente, etc. no se representarán por completo. En su lugar, los reemplazan controles de reserva para mostrar el tamaño y la posición del control.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Diseño de XAML en Visual Studio y Blend para Visual Studio](designing-xaml-in-visual-studio.md)
