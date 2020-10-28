@@ -1,6 +1,8 @@
 ---
 title: Paseo por las características de Blend para Visual Studio
 titleSuffix: ''
+description: Obtenga información sobre la UI y las características del área de trabajo de Blend para Visual Studio, un componente que sirve para diseñar aplicaciones web y aplicaciones de Windows basadas en XAML.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2019
 ms.topic: overview
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332086"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796347"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Introducción de Blend para Visual Studio
 
 Blend para Visual Studio le ayuda a diseñar aplicaciones web y de Windows basadas en XAML. Proporciona la misma experiencia de diseño XAML básica que Visual Studio y agrega diseñadores visuales para tareas avanzadas como animaciones y comportamientos. Para ver una comparación entre Blend y Visual Studio, vea [Diseño de XAML en Visual Studio y Blend para Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md).
 
-Blend para Visual Studio es un componente de Visual Studio. Para instalar Blend, en el **instalador de Visual Studio** elija la carga de trabajo **Desarrollo de la plataforma universal de Windows** o **Desarrollo de escritorio de .NET**. Ambas cargas de trabajo incluyen el componente Blend para Visual Studio.
+Blend para Visual Studio es un componente de Visual Studio. Para instalar Blend, en el **instalador de Visual Studio** elija la carga de trabajo **Desarrollo de la plataforma universal de Windows** o **Desarrollo de escritorio de .NET** . Ambas cargas de trabajo incluyen el componente Blend para Visual Studio.
 
 ![Componentes de carga de trabajo de UWP](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![Componentes de carga de trabajo de desarrollo de escritorio de .NET](media/installer-dotnet-desktop.png)
 
@@ -62,7 +64,7 @@ Acceda a la ventana Recursos y muestre el recurso usado más recientemente de la
 
 ## <a name="assets-window"></a>Ventana Activos
 
-La ventana **Activos** contiene todos los objetos visuales disponibles y es similar al **cuadro de herramientas** de Visual Studio. Además de los objetos visuales, encontrará todo lo que puede agregar a la mesa de trabajo en la ventana **Activos**, como, por ejemplo, estilos, elementos multimedia, comportamientos y efectos. Para abrir la ventana **Activos**, elija **Ver** > **Ventana Activos** o presione **Ctrl**+**Alt**+**X**.
+La ventana **Activos** contiene todos los objetos visuales disponibles y es similar al **cuadro de herramientas** de Visual Studio. Además de los objetos visuales, encontrará todo lo que puede agregar a la mesa de trabajo en la ventana **Activos** , como, por ejemplo, estilos, elementos multimedia, comportamientos y efectos. Para abrir la ventana **Activos** , elija **Ver** > **Ventana Activos** o presione **Ctrl**+**Alt**+**X** .
 
 ![Ventana Activos en Blend para Visual Studio](media/blend-assets-window.png)
 
@@ -71,7 +73,7 @@ La ventana **Activos** contiene todos los objetos visuales disponibles y es simi
 
 ## <a name="objects-and-timeline-window"></a>Ventana Objetos y escala de tiempo
 
-Utilice esta ventana para organizar los objetos en la mesa de trabajo y, si quiere, para animarlos. Para abrir la ventana **Objetos y escala de tiempo**, elija **Ver** > **Esquema del documento**. Además de la funcionalidad proporcionada en la [ventana Esquema del documento](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) en Visual Studio, la ventana Objetos y escala de tiempo de Blend para Visual Studio tiene un área de composición de la escala de tiempo a la derecha. Use la escala de tiempo al crear y editar animaciones.
+Utilice esta ventana para organizar los objetos en la mesa de trabajo y, si quiere, para animarlos. Para abrir la ventana **Objetos y escala de tiempo** , elija **Ver** > **Esquema del documento** . Además de la funcionalidad proporcionada en la [ventana Esquema del documento](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) en Visual Studio, la ventana Objetos y escala de tiempo de Blend para Visual Studio tiene un área de composición de la escala de tiempo a la derecha. Use la escala de tiempo al crear y editar animaciones.
 
 ![Ventana Objetos y escala de tiempo en modo de animación](media/storyboard-timeline.png)
 
@@ -79,7 +81,7 @@ Use los botones de guion gráfico ![Botones de guion gráfico de Blend para Visu
 
 Mantenga el puntero sobre cada botón de la ventana para obtener más información sobre la funcionalidad disponible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Animar objetos](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Dibujar formas y trazados](../xaml-tools/draw-shapes-and-paths.md)
