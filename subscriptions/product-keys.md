@@ -8,10 +8,10 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
 ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005851"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio

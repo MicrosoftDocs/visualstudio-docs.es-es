@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: conceptual
 description: Más información sobre cómo consultar el número máximo de suscripciones asignadas en el portal de administración
 ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022181"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Empleo de la característica Uso máximo para realizar un seguimiento del número de suscripciones asignadas
@@ -24,7 +24,7 @@ Vea el vídeo o siga leyendo para saber cómo usar la característica de uso má
 ## <a name="view-your-maximum-usage"></a>Ver el uso máximo
 Para consultar el número máximo de suscripciones asignadas a cualquier contrato y nivel de suscripción:
 1. Seleccione el contrato que quiera consultar en la lista desplegable de la parte superior izquierda del portal. (Si solo tiene un contrato, ya estará seleccionado).
-2. Haga clic en el icono de **máximo uso**, que es el tercer icono de la parte superior del lado izquierdo de la cuadrícula de suscriptores.  
+2. Haga clic en el icono de **máximo uso** , que es el tercer icono de la parte superior del lado izquierdo de la cuadrícula de suscriptores.  
 
     > [!div class="mx-imgBorder"]
     > ![Ventana flotante Uso máximo](_img/maximum-usage/maximum-usage-menu.png "Haga clic en el botón Uso máximo para ver el número máximo de cada tipo de suscripción que ha asignado.")

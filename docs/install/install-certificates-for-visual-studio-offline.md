@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbc68d232816899d84cc2aead14208b009c933b2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037307"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750183"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
@@ -38,7 +38,7 @@ Hay tres opciones para instalar o actualizar los certificados en un entorno sin 
 
 Al crear un diseño de red, los certificados necesarios se descargan en la carpeta Certificados. Después, puede instalar manualmente los certificados haciendo doble clic en todos los archivos de certificado y recorriendo el asistente del Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
 
-**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, puede instalar manualmente los certificados haciendo clic con el botón derecho en cada uno de los archivos de certificado, seleccionando Instalar certificado y, por último, haciendo clic en los sucesivos pasos del asistente Administrador de certificados.
+**Actualización** : para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, puede instalar manualmente los certificados haciendo clic con el botón derecho en cada uno de los archivos de certificado, seleccionando Instalar certificado y, por último, haciendo clic en los sucesivos pasos del asistente Administrador de certificados.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los siguientes comandos:
+   **Actualización** : para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los siguientes comandos:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -117,9 +117,9 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
    Como alternativa, cree un archivo por lotes que utilice certutil.exe, distribuido con Windows, con los siguientes comandos:
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -150,7 +150,7 @@ Los tres archivos .P12 de esta carpeta contienen un certificado intermedio y un 
   * Certificado raíz: **Entidad de certificación raíz de Microsoft**
     * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
 
-**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere los certificados raíz para instalarse en el sistema. Estos certificados se almacenan en archivos .cer en lugar de .p12.
+**Actualización** : para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere los certificados raíz para instalarse en el sistema. Estos certificados se almacenan en archivos .cer en lugar de .p12.
 
 ::: moniker-end
 
@@ -178,24 +178,24 @@ Cuando se comprueba una firma en un entorno en línea, se usan las API de Window
 
 Una manera de comprobar el sistema de instalación es seguir estos pasos:
 
-1. Ejecute **mmc.exe**.<br/>
-  a. Haga clic en **Archivo** y seleccione **Agregar o quitar complemento**.<br/>
-  b. Haga doble clic en **Certificados**, seleccione **Cuenta de equipo** y, después, haga clic en **Siguiente**.<br/>
-  c. Seleccione **Equipo local**, haga clic en **Finalizar** y, después, en **Aceptar**.<br/>
+1. Ejecute **mmc.exe** .<br/>
+  a. Haga clic en **Archivo** y seleccione **Agregar o quitar complemento** .<br/>
+  b. Haga doble clic en **Certificados** , seleccione **Cuenta de equipo** y, después, haga clic en **Siguiente** .<br/>
+  c. Seleccione **Equipo local** , haga clic en **Finalizar** y, después, en **Aceptar** .<br/>
   d. Expanda **Certificados (equipo local)** .<br/>
-  e. Expanda **Entidades de certificación raíz de confianza** y, después, seleccione **Certificados**.<br/>
+  e. Expanda **Entidades de certificación raíz de confianza** y, después, seleccione **Certificados** .<br/>
     * Compruebe esta lista para ver los certificados raíz necesarios.<br/>
 
-   f. Expanda **Entidades de certificación intermedias** y, después, seleccione **Certificados**.<br/>
+   f. Expanda **Entidades de certificación intermedias** y, después, seleccione **Certificados** .<br/>
     * Compruebe esta lista para ver los certificados intermedios necesarios.<br/>
 
-2. Haga clic en **Archivo** y seleccione **Agregar o quitar complemento**.<br/>
-  a. Haga doble clic en **Certificados**, seleccione **Mi cuenta de usuario**, haga clic en **Finalizar** y, después, en **Aceptar**.<br/>
-  b. Expanda **Certificados: usuario actual**.<br/>
-  c. Expanda **Entidades de certificación intermedias** y, después, seleccione **Certificados**.<br/>
+2. Haga clic en **Archivo** y seleccione **Agregar o quitar complemento** .<br/>
+  a. Haga doble clic en **Certificados** , seleccione **Mi cuenta de usuario** , haga clic en **Finalizar** y, después, en **Aceptar** .<br/>
+  b. Expanda **Certificados: usuario actual** .<br/>
+  c. Expanda **Entidades de certificación intermedias** y, después, seleccione **Certificados** .<br/>
     * Compruebe esta lista para ver los certificados intermedios necesarios.<br/>
 
-Si los nombres de los certificados no estaban en las columnas **Emitido para**, deben instalarse.  Si un certificado intermedio solo estaba en el almacén de certificados intermedios del **usuario actual**, solo estará disponible para el usuario que inició la sesión. Es posible que deba instalarlo para otros usuarios.
+Si los nombres de los certificados no estaban en las columnas **Emitido para** , deben instalarse.  Si un certificado intermedio solo estaba en el almacén de certificados intermedios del **usuario actual** , solo estará disponible para el usuario que inició la sesión. Es posible que deba instalarlo para otros usuarios.
 
 ## <a name="install-visual-studio"></a>Instalar Visual Studio
 

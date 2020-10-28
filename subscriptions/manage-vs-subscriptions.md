@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
 ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005903"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
@@ -69,9 +69,9 @@ El portal de suscripciones le permite crear y administrar un perfil, lo que faci
 Puede cambiar fácilmente la información de contacto y las preferencias en el perfil.
 
 1. Seleccione su nombre en la esquina superior derecha del portal de suscriptores.
-2. Seleccione el botón **Editar perfil**.
-3. En la pestaña **Acerca de**, puede cambiar su nombre, correo electrónico, país o región, imagen de perfil y preferencias de contacto. En la pestaña **Preferencias**, puede seleccionar el idioma preferido, el formato de fecha y hora, la zona horaria y el tema de la interfaz de usuario.
-4. Cuando haya acabado de realizar los cambios, seleccione **Guardar**.
+2. Seleccione el botón **Editar perfil** .
+3. En la pestaña **Acerca de** , puede cambiar su nombre, correo electrónico, país o región, imagen de perfil y preferencias de contacto. En la pestaña **Preferencias** , puede seleccionar el idioma preferido, el formato de fecha y hora, la zona horaria y el tema de la interfaz de usuario.
+4. Cuando haya acabado de realizar los cambios, seleccione **Guardar** .
 5. Seleccione el botón **Atrás** del explorador para volver a la página de beneficios.
 
 ### <a name="setting-communications-preferences"></a>Establecimiento de preferencias de comunicaciones
@@ -89,10 +89,10 @@ Para agregar una cuenta alternativa:
 
 1. Inicie sesión en el [portal de suscriptores](https://my.visualstudio.com?wt.mc_id=o~msft~docs) con su cuenta de Microsoft (MSA).
 2. Seleccione la pestaña **Suscripciones** .
-3. En **Vínculos relacionados**, seleccione **Add alternate account** (Agregar cuenta alternativa).
-4. Escriba la dirección de correo electrónico de la cuenta profesional o educativa y seleccione **Agregar**.
+3. En **Vínculos relacionados** , seleccione **Add alternate account** (Agregar cuenta alternativa).
+4. Escriba la dirección de correo electrónico de la cuenta profesional o educativa y seleccione **Agregar** .
 
-Una vez que haya agregado una cuenta alternativa, puede actualizarla o quitarla en cualquier momento. Para ello, seleccione la pestaña **Suscripciones** y elija la opción adecuada en la sección **Vínculos relacionados**.
+Una vez que haya agregado una cuenta alternativa, puede actualizarla o quitarla en cualquier momento. Para ello, seleccione la pestaña **Suscripciones** y elija la opción adecuada en la sección **Vínculos relacionados** .
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

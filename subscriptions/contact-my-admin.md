@@ -8,10 +8,10 @@ ms.date: 09/08/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo ponerse en contacto con el administrador de suscripciones para obtener ayuda con preguntas o problemas.
 ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005693"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtención de ayuda del administrador de suscripciones
@@ -27,7 +27,7 @@ Dados el tamaño y la complejidad de muchas organizaciones, es posible que desco
    > ![Contacto con el administrador](_img/contact-my-admin/contact-my-admin-button.png "Seleccione el botón Contacto con el administrador, escriba su mensaje y seleccione Enviar.")
 4. Escriba el mensaje para el administrador.
 5. Si quiere recibir una copia del mensaje enviado al administrador, elija la casilla **Send me a copy** (Enviarme una copia). 
-6. Por último, seleccione **Enviar**.
+6. Por último, seleccione **Enviar** .
 
 > [!NOTE]
 > **Superadministradores:**  Para establecer la dirección de correo electrónico a la que se envían las solicitudes "Contacto con el administrador", especifíquela en las [Preferencias del contrato](admin-prefs.md#contact-email-address).

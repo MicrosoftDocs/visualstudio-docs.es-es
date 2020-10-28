@@ -8,10 +8,10 @@ ms.date: 07/29/2020
 ms.topic: conceptual
 description: Aprenda a encontrar y descargar títulos de software de Microsoft en suscripciones de Visual Studio
 ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005605"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Descarga de títulos de software en suscripciones de Visual Studio
@@ -39,7 +39,7 @@ Con los menús desplegables disponibles, selecciona fácilmente su arquitectura,
 > No todos los títulos están disponibles en todas las arquitecturas, lenguajes o formatos de archivo.  
 
 ### <a name="displaying-download-details"></a>Visualización de los detalles de la descarga
-Si selecciona el nombre del producto o el vínculo **Información**, aparecerán los detalles de esa descarga y se proporcionará acceso a las notas de la versión del producto.
+Si selecciona el nombre del producto o el vínculo **Información** , aparecerán los detalles de esa descarga y se proporcionará acceso a las notas de la versión del producto.
 > [!div class="mx-imgBorder"]
 > ![Detalles de la descarga de Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png "La pestaña Información muestra información sobre la descarga y proporciona acceso a las notas de la versión.")
 
@@ -48,7 +48,7 @@ En el panel de detalles, también puede seleccionar la pestaña **Claves** para 
 > ![Claves de producto de Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png "La pestaña Claves muestra el número de claves que quedan y permite reclamar las claves disponibles.")
 
 ### <a name="obtaining-product-keys"></a>Obtención de las claves de producto
-Para obtener una clave de producto para la descarga, puede seleccionar la llave de color azul con la etiqueta **Obtener clave** o bien, si ya está viendo el panel de detalles, seleccione **Reclamar clave** en la pestaña **Claves**.
+Para obtener una clave de producto para la descarga, puede seleccionar la llave de color azul con la etiqueta **Obtener clave** o bien, si ya está viendo el panel de detalles, seleccione **Reclamar clave** en la pestaña **Claves** .
 > [!div class="mx-imgBorder"]
 > ![Claves de producto reclamadas de Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Seleccione Reclamar clave para reclamar las claves restantes.")
 
