@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Configurar destinos y tareas | Microsoft Docs
+description: Obtenga información sobre cómo establecer tareas de MSBuild seleccionadas a fin de ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 31537ea44e5c49a4fd98229a5886ca99a1464409
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288902"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435772"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procedimiento Configurar destinos y tareas
 
@@ -110,7 +112,7 @@ A diferencia de otros parámetros de tarea, `MSBuildRuntime` y `MSBuildArchitect
 Los parámetros `MSBuildRuntime` y `MSBuildArchitecture` proporcionan la manera más flexible de establecer el contexto de destino, pero también la manera más limitada en cuanto al ámbito. Por un lado, dado que se establecen en la propia instancia de tarea y no se evalúan hasta que la tarea está a punto de ejecutarse, pueden derivar su valor del ámbito completo de propiedades disponibles en tiempo de evaluación y tiempo de compilación. Por otro lado, estos parámetros solo se aplican a una instancia determinada de una tarea en un destino determinado.
 
 > [!NOTE]
-> Los parámetros de tareas se evalúan en el contexto del nodo primario, no en el del host de tareas. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación *Archivos de programa*) se evalúan como el valor que coincide con el nodo primario. Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.
+> Los parámetros de tareas se evalúan en el contexto del nodo primario, no en el del host de tareas. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación *Archivos de programa* ) se evalúan como el valor que coincide con el nodo primario. Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.
 
 ## <a name="see-also"></a>Vea también
 

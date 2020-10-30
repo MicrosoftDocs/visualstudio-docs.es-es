@@ -1,20 +1,20 @@
 ---
-title: Roles de administrador y superadministrador en el portal de administración
+title: Roles de administrador y superadministrador para las suscripciones de Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: Obtenga información sobre los roles de administrador y superadministrador y sobre la asignación de administradores.
-ms.openlocfilehash: fc44845ed403e9bf942761203b75c2277fd1aff2
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: Obtenga información sobre los roles de administrador y superadministrador y sobre cómo asignar los administradores.
+ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022717"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467380"
 ---
-# <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Administradores y superadministradores para contratos de suscripción de Visual Studio
+# <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Administradores y superadministradores para contratos de suscripción de Visual Studio
 
 En el nuevo portal de administración de suscripciones de Visual Studio para clientes del programa de licencias por volumen hay dos roles distintos. Estos roles se asemejan al rol de contacto principal o para notificaciones y al rol de administrador de suscripciones que existían en VLSC.
 
@@ -25,19 +25,19 @@ En el nuevo portal de administración de suscripciones de Visual Studio para cli
 Vea una demostración sobre cómo administrar administradores. 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
-## <a name="assigning-administrators"></a>Asignación de administradores
-Para asignar nuevos administradores:
+## <a name="assigning-admins"></a>Asignación de administradores
+Para asignar administradores nuevos (administradores):
 1. Inicie sesión en https://manage.visualstudio.com con una dirección de correo electrónico asignada como superadministrador en el contrato a través del cual se adquirieron las suscripciones.
-2. Haga clic en la pestaña etiquetada como **Administrar administradores**.
-3. Haga clic en **Agregar**.
+2. Haga clic en la pestaña etiquetada como **Administrar administradores** .
+3. Haga clic en **Agregar** .
    > [!div class="mx-imgBorder"]
-   > ![Adición de administradores](_img/admin-roles/add-admins.png "Haga clic en la hoja Administrar administradores y en Agregar para asignar nuevos administradores.")
+   > ![Agregar administradores](_img/admin-roles/add-admins.png "Haga clic en la hoja Administrar administradores y en Agregar para asignar nuevos administradores.")
 4. Rellene el formulario con la información del nuevo administrador.  
    > [!div class="mx-imgBorder"]
-   > ![Formulario para agregar un administrador](_img/admin-roles/add-form.png "Especifique la información de inicio de sesión del nuevo administrador y decida si quiere convertirlo en superadministrador.  Luego, haga clic en Agregar.")
+   > ![Formulario Agregar administrador](_img/admin-roles/add-form.png "Especifique la información de inicio de sesión del nuevo administrador y decida si quiere convertirlo en superadministrador.  Luego, haga clic en Agregar.")
 
    > [!NOTE]
-   > Si quiere que este administrador pueda asignar otros administradores, recuerde activar la casilla **Superadministrador**.
+   > Si quiere que este administrador pueda asignar otros administradores, recuerde activar la casilla **Superadministrador** .
 
 5. Cuando haga clic en **Agregar** para asignar el nuevo administrador, este recibirá un correo electrónico en el que se le invitará a iniciar sesión en el portal.  
 

@@ -2,18 +2,18 @@
 title: Nueva experiencia de Git en Visual Studio (versión preliminar)
 titleSuffix: ''
 description: Más información sobre la nueva experiencia integrada de Git en Visual Studio 2019
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082062"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334212"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nueva experiencia de Git en Visual Studio (versión preliminar)
 
@@ -95,7 +95,7 @@ También puede optar por no almacenar provisionalmente los archivos modificados 
 
 Visual Studio también facilita la confirmación y sincronización con un solo clic mediante los métodos abreviados **Confirmar todo e insertar** y **Confirmar todo y sincronizar** . Al hacer doble clic en cualquier archivo de las secciones sección **Cambios** y **Cambios almacenados provisionalmente** , puede ver una comparación línea a línea con la versión no modificada del archivo.
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Captura de pantalla de la sección Características en versión preliminar del cuadro de diálogo Opciones de Visual Studio" si está conectado al repositorio de Azure DevOps. Puede conectar el repositorio de Azure DevOps mediante Team Explorer > Administrar conexiones.
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Captura de pantalla de la sección Características en versión preliminar del cuadro de diálogo Opciones de Visual Studio" si está conectado al repositorio de Azure DevOps. Puede conectar el repositorio de Azure DevOps mediante **Team Explorer** > **Administrar conexiones** .
 
 ### <a name="select-an-existing-branch"></a>Seleccione una rama existente:
 

@@ -1,5 +1,7 @@
 ---
 title: Tarea GetFrameworkSdkPath | Microsoft Docs
+description: Obtenga información sobre cómo usar la tarea GetFrameworkSdkPath de MSBuild para recuperar la ruta de acceso al Windows SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4061dbe96c84648aacf136c0d59b92a2af037e2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633998"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436810"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (tarea)
 

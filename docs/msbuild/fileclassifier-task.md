@@ -1,5 +1,7 @@
 ---
 title: FileClassifier (Tarea) | Microsoft Docs
+description: Use la tarea FileClassifier de MSBuild para clasificar un conjunto de recursos de origen que se insertarán en un ensamblado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634193"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436907"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier (Tarea)
 
@@ -30,20 +32,20 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.FileClassifier> clasifica un conjun
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`CLREmbeddedResource`|Sin usar.|
 |`CLRResourceFiles`|Sin usar.|
 |`CLRSatelliteEmbeddedResource`|Sin usar.|
-|`Culture`|Parámetro **String** opcional.<br /><br /> Especifica la referencia cultural de la compilación. Este valor puede ser **null** si la compilación no es localizable. Sies **null**, se usa de forma predeterminada el valor en minúscula que devuelve **CultureInfo.InvariantCulture**.|
+|`Culture`|Parámetro **String** opcional.<br /><br /> Especifica la referencia cultural de la compilación. Este valor puede ser **null** si la compilación no es localizable. Sies **null** , se usa de forma predeterminada el valor en minúscula que devuelve **CultureInfo.InvariantCulture** .|
 |`MainEmbeddedFiles`|Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Especifica los recursos no localizables que se insertan en el ensamblado principal.|
-|`OutputType`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el tipo de archivo en el que se van a insertar los archivos de origen especificados. Los valores válidos son **exe**, **winexe** o **library**.|
-|`SatelliteEmbeddedFiles`|Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Especifica los archivos localizables que se insertan en el ensamblado satélite para la referencia cultural especificada en el parámetro **Culture**.|
+|`OutputType`|Parámetro obligatorio de tipo **String** .<br /><br /> Especifica el tipo de archivo en el que se van a insertar los archivos de origen especificados. Los valores válidos son **exe** , **winexe** o **library** .|
+|`SatelliteEmbeddedFiles`|Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Especifica los archivos localizables que se insertan en el ensamblado satélite para la referencia cultural especificada en el parámetro **Culture** .|
 |`SourceFiles`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de archivos que se van a clasificar.|
 
 ## <a name="remarks"></a>Observaciones
 
-Si no se establece el valor del parámetro **Culture**, todos los recursos que especifica el parámetro **SourceFiles** no son localizables; de lo contrario, son localizables, a menos que se asocien a un atributo **Localizable** cuyo valor se establezca en **false**.
+Si no se establece el valor del parámetro **Culture** , todos los recursos que especifica el parámetro **SourceFiles** no son localizables; de lo contrario, son localizables, a menos que se asocien a un atributo **Localizable** cuyo valor se establezca en **false** .
 
 ## <a name="example"></a>Ejemplo
 

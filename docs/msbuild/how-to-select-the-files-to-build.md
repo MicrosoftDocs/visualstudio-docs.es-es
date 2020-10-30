@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Seleccionar los archivos que se van a compilar | Microsoft Docs
+description: Obtenga información sobre cómo seleccionar los archivos que se van a compilar en el archivo del proyecto de MSBuild mediante la enumeración de cada archivo de manera independiente o con caracteres comodín.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +14,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633816"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436200"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
+# <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
 
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.
 
@@ -35,7 +37,7 @@ Para incluir archivos para una compilación, deben estar incluidos en una lista 
 
     `<CSFile Include="form1.cs"/>`
 
-    o
+    or
 
     `<VBFile Include="form1.vb"/>`
 
@@ -48,7 +50,7 @@ Para incluir archivos para una compilación, deben estar incluidos en una lista 
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
-    o
+    or
 
     `<VBFile Include="form1.vb;form2.vb"/>`
 
@@ -56,7 +58,7 @@ Para incluir archivos para una compilación, deben estar incluidos en una lista 
 
 También se pueden usar comodines para incluir recursivamente todos los archivos o solo archivos concretos de subdirectorios como entradas para una compilación. Para obtener más información sobre los caracteres comodín, vea [Elementos](../msbuild/msbuild-items.md).
 
-Los ejemplos siguientes están basados en un proyecto que contiene archivos gráficos en los directorios y subdirectorios siguientes, con el archivo de proyecto ubicado en el directorio *Project*:
+Los ejemplos siguientes están basados en un proyecto que contiene archivos gráficos en los directorios y subdirectorios siguientes, con el archivo de proyecto ubicado en el directorio *Project* :
 
 *Project\Images\BestJpgs*
 
@@ -82,7 +84,7 @@ Los ejemplos siguientes están basados en un proyecto que contiene archivos grá
 
     `Include="Images\**\*jpgs\*.*"`
 
-    o
+    or
 
     `Include="Images\**\*jpgs\*"`
 
@@ -96,7 +98,7 @@ En un archivo de proyecto, se puede usar la notación @() en las tareas para esp
 
     `<CSC Sources="@(CSFile)">...</CSC>`
 
-    o
+    or
 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
@@ -105,7 +107,7 @@ En un archivo de proyecto, se puede usar la notación @() en las tareas para esp
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
 En el ejemplo de código siguiente se muestra un proyecto que incluye todos los archivos de entrada de forma independiente.
 
@@ -140,9 +142,9 @@ En el ejemplo de código siguiente se muestra un proyecto que incluye todos los 
 </Project>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
-En el ejemplo de código siguiente se usa un comodín para incluir todos los archivos *.cs*.
+En el ejemplo de código siguiente se usa un comodín para incluir todos los archivos *.cs* .
 
 ```xml
 <Project DefaultTargets="Compile"
@@ -175,7 +177,7 @@ En el ejemplo de código siguiente se usa un comodín para incluir todos los arc
 </Project>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Elementos](../msbuild/msbuild-items.md)

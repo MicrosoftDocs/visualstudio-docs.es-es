@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Soporte técnico de la Comunidad de Azure incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006246"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353218"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Foro de soporte técnico de la Comunidad de Azure en las suscripciones de Visual Studio
 Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccionados a través de la Comunidad Azure.  El beneficio de la Comunidad Azure proporciona acceso a una colección de foros que se centran en los temas relacionados con Azure.
@@ -21,12 +21,12 @@ Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccion
 
 :::row:::
     :::column:::
-        - [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
+        - [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
         - [Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
         - [Azure App Service - Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
-        - [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
+        - [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
         - [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)  
-        - [HDInsight de Azure](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)  
+        - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)  
         - [Portal de administración de Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
@@ -41,7 +41,7 @@ Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccion
     :::column:::
         - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
         - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
-        - [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
+        - [Almacenamiento de Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
         - [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
         - [Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Cloud Services (funciones de trabajo y web)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)  
@@ -53,17 +53,17 @@ Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccion
 Empezar a usar la Comunidad Azure es un proceso sencillo.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de la Comunidad Azure en la sección Soporte técnico y haga clic en el vínculo **Obtener ayuda**.
+2. Busque el icono de la Comunidad Azure en la sección Soporte técnico y haga clic en el vínculo **Obtener ayuda** .
     > [!div class="mx-imgBorder"]
-    >![Icono de Comunidad Azure](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![Icono de Comunidad Azure](_img/vs-azure-community/vs-azure-community-tile.png "Haga clic en el botón "Obtener ayuda" en el icono de Comunidad Azure para comenzar.")
 
 3. Verá una lista de los foros disponibles.  Simplemente haga clic en el foro que quiera consultar.
     > [!div class="mx-imgBorder"]
-    > ![Foros de la Comunidad Azure](_img/vs-azure-community/vs-azure-community-forums.png)
+    > ![Foros de la Comunidad Azure](_img/vs-azure-community/vs-azure-community-forums.png "En la página de soporte técnico de la Comunidad Azure, seleccione los foros que prefiera.")
 
 4. En el foro, puede ver los temas y las respuestas, buscar respuestas a su pregunta o plantear una pregunta nueva.
     > [!div class="mx-imgBorder"]
-    > ![Ejemplo de la Comunidad Azure](_img/vs-azure-community/vs-azure-community-example.png)
+    > ![Ejemplo de la Comunidad Azure](_img/vs-azure-community/vs-azure-community-example.png "En el foro, puede consultar temas, buscar respuestas o publicar preguntas nuevas.")
 
 ## <a name="eligibility"></a>Elegibilidad
 La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripción, como se muestra a continuación:

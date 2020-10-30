@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 09/28/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Obtenga información sobre el acceso a GitHub Enterprise como parte de las suscripciones de Visual Studio
-ms.openlocfilehash: 4c3943c9a6229e865bf90a24d12ecbc8b91d2fd5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584188"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467523"
 ---
 # <a name="visual-studio-with-github-enterprise-subscriptions"></a>Suscripciones de Visual Studio con GitHub Enterprise
 

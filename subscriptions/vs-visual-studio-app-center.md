@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Obtenga información sobre la ventaja Visual Studio App Center incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005732"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435730"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center en suscripciones de Visual Studio
 
@@ -26,17 +26,17 @@ App Center es fundamental para el control de las aplicaciones.
 Es sencillo empezar a utilizar Visual Studio App Center.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de Visual Studio App Center y haga clic en **Comience ahora**.
+2. Busque el icono de Visual Studio App Center y haga clic en **Comience ahora** .
     > [!div class="mx-imgBorder"]
-    > ![Icono de Visual Studio App Center](_img/vs-app-center/vs-app-center-tile.png)
+    > ![Icono de Visual Studio App Center](_img/vs-app-center/vs-app-center-tile.png "Haga clic en "Comenzar" en el icono de Visual Studio App Center.")
 
 3. A continuación, cree una cuenta.  Puede utilizar las cuentas existentes de Microsoft, Google, GitHub o Facebook para iniciar sesión, o bien crear una cuenta nueva proporcionando su nombre de usuario, correo electrónico y contraseña.  Haga clic en **Crear cuenta** para continuar.
     > [!div class="mx-imgBorder"]
-    > ![Crear cuenta en Visual Studio App Center](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![Crear cuenta en Visual Studio App Center](_img/vs-app-center/vs-app-center-create-account.png "Elija cómo quiere iniciar sesión.")
 
 4. Así de simple.  Simplemente haga clic en **Agregar nueva organización** o **Agregar nueva aplicación** para empezar a trabajar.
     > [!div class="mx-imgBorder"]
-    > ![Portal de Visual Studio App Center](_img/vs-app-center/vs-app-center-portal.png)
+    > ![Portal de Visual Studio App Center](_img/vs-app-center/vs-app-center-portal.png "Ya está listo.  Haga clic en "Agregar nueva organización" o "Agregar nueva aplicación" para comenzar.")
 
 ## <a name="eligibility"></a>Elegibilidad
 

@@ -1,18 +1,18 @@
 ---
 title: Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/20/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298181"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467614"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias".
@@ -77,7 +77,7 @@ La plataforma de Visual Studio da prioridad al alias principal para mostrar los
 
 ## <a name="preventing-aliasing-issues"></a>Evitación de problemas de alias
 
-Como administrador, dispone de dos opciones para asegurarse de que los suscriptores pueden iniciar sesión correctamente en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+Como administrador, dispone de dos opciones para asegurarse de que los suscriptores puedan iniciar sesión correctamente en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - La primera opción (recomendada) es aprovechar la cuenta de directorio como dirección de inicio de sesión para el portal de suscripciones de Visual Studio en https://my.visualstudio.com.  
 - La segunda opción, que es menos segura, consiste en permitir a sus suscriptores iniciar sesión con una dirección de correo electrónico distinta a la del directorio.
 

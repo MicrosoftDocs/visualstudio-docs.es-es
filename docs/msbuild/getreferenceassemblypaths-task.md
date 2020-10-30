@@ -1,5 +1,7 @@
 ---
 title: GetReferenceAssemblyPaths (Tarea) | Microsoft Docs
+description: Use la tarea GetReferenceAssemblyPaths de MSBuild para devolver las rutas de acceso de ensamblado de referencia de los distintos marcos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8bbe9366e9b4b2c795b21ba46bd8320599c9e572
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633985"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436801"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths (Tarea)
 
@@ -26,9 +28,9 @@ Devuelve las rutas de acceso al ensamblado de referencia de las diversas platafo
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea `GetReferenceAssemblyPaths`.
+ En la siguiente tabla se describen los parámetros de la tarea `GetReferenceAssemblyPaths` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`ReferenceAssemblyPaths`|Parámetro de salida `String[]` opcional.<br /><br /> Devuelve la ruta, basándose en el parámetro `TargetFrameworkMoniker`. Si `TargetFrameworkMoniker` es NULL o está vacío, esta ruta será `String.Empty`.|
 |`FullFrameworkReferenceAssemblyPaths`|Parámetro de salida `String[]` opcional.<br /><br /> Devuelve la ruta, basándose en el parámetro `TargetFrameworkMoniker`, sin tener en cuenta la parte del perfil del moniker. Si `TargetFrameworkMoniker` es NULL o está vacío, esta ruta será `String.Empty`.|

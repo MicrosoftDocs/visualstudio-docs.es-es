@@ -1,5 +1,7 @@
 ---
 title: GenerateDeploymentManifest (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo usar la tarea GenerateDeploymentManifest de MSBuild para generar un manifiesto de implementación de ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca55f3eeb9b3119b27e67dcb0255f8386c521af6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68a35804a1523b3387061b4666cd483a9c3b0476
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634076"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436466"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (tarea)
 
@@ -39,18 +41,18 @@ En la tabla siguiente se describen los parámetros de la tarea `GenerateDeployme
 | `CreateDesktopShortcut` | Parámetro `Boolean` opcional.<br /><br /> Si es true, se crea un icono en el escritorio durante la instalación de la aplicación ClickOnce. |
 | `DeploymentUrl` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación de actualización para la aplicación. Si no se especifica este parámetro, no se definirá ninguna ubicación de actualización para la aplicación. Sin embargo, si el parámetro `UpdateEnabled` es `true`, se debe especificar la ubicación de actualización. El valor especificado debe ser una dirección URL o ruta de acceso UNC completa. |
 | `Description` | Parámetro `String` opcional.<br /><br /> Especifica una descripción opcional para la aplicación. |
-| `DisallowUrlActivation` | Parámetro `Boolean` opcional.<br /><br /> Especifica si la aplicación debe ejecutarse automáticamente cuando se abre mediante una dirección URL. Si este parámetro es `true`, la aplicación solo se puede iniciar desde el menú **Inicio**. El valor predeterminado de este parámetro es `false`. Este valor solo se aplica cuando el valor del parámetro `Install` es `true`. |
+| `DisallowUrlActivation` | Parámetro `Boolean` opcional.<br /><br /> Especifica si la aplicación debe ejecutarse automáticamente cuando se abre mediante una dirección URL. Si este parámetro es `true`, la aplicación solo se puede iniciar desde el menú **Inicio** . El valor predeterminado de este parámetro es `false`. Este valor solo se aplica cuando el valor del parámetro `Install` es `true`. |
 | `EntryPoint` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Indica el punto de entrada para el manifiesto del ensamblado generado. En un manifiesto de implementación de ClickOnce, este valor especifica el manifiesto de aplicación de ClickOnce.<br /><br />Si no se especifica el parámetro de tarea `EntryPoint`, la etiqueta `<customHostSpecified>` se inserta como un elemento secundario de la etiqueta `<entryPoint>`, por ejemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Puede agregar dependencias de DLL al manifiesto de aplicación siguiendo estos pasos:<br /><br /> 1.  Resuelva las referencias del ensamblado con una llamada a <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Pase el resultado de la tarea anterior y el propio ensamblado a <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Pase las dependencias a través del parámetro `Dependencies` a <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
 | `ErrorReportUrl` | Parámetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica la dirección URL de la página web que se muestra en los cuadros de diálogo durante las instalaciones ClickOnce. |
 | `InputManifest` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica un documento XML de entrada que sirve de base para el generador de manifiestos. De este modo, los datos estructurados, como las definiciones personalizadas del manifiesto, pueden reflejarse en el manifiesto de salida. El elemento raíz del documento XML debe ser un nodo de ensamblado en el espacio de nombres asmv1. |
-| `Install` | Parámetro `Boolean` opcional.<br /><br /> Especifica si la aplicación es una aplicación instalada o se trata de una aplicación que únicamente está disponible en línea. Si este parámetro es `true`, la aplicación se instala en el menú **Inicio** del usuario y se puede eliminar mediante el cuadro de diálogo **Agregar o quitar programas**. Si este parámetro es `false`, la aplicación está destinada a uso en línea desde una página web. El valor predeterminado de este parámetro es `true`. |
-| `MapFileExtensions` | Parámetro `Boolean` opcional.<br /><br /> Especifica si se usa la asignación de extensión de nombre de archivo *.deploy*. Si este parámetro es `true`, todos los archivos de programa se publican con una extensión de nombre de archivo *.deploy*. Esta opción es útil para la seguridad de los servidores web, ya que limita el número de extensiones de nombre de archivo que deben desbloquearse para habilitar la implementación de la aplicación ClickOnce. El valor predeterminado de este parámetro es `false`. |
+| `Install` | Parámetro `Boolean` opcional.<br /><br /> Especifica si la aplicación es una aplicación instalada o se trata de una aplicación que únicamente está disponible en línea. Si este parámetro es `true`, la aplicación se instala en el menú **Inicio** del usuario y se puede eliminar mediante el cuadro de diálogo **Agregar o quitar programas** . Si este parámetro es `false`, la aplicación está destinada a uso en línea desde una página web. El valor predeterminado de este parámetro es `true`. |
+| `MapFileExtensions` | Parámetro `Boolean` opcional.<br /><br /> Especifica si se usa la asignación de extensión de nombre de archivo *.deploy* . Si este parámetro es `true`, todos los archivos de programa se publican con una extensión de nombre de archivo *.deploy* . Esta opción es útil para la seguridad de los servidores web, ya que limita el número de extensiones de nombre de archivo que deben desbloquearse para habilitar la implementación de la aplicación ClickOnce. El valor predeterminado de este parámetro es `false`. |
 | `MaxTargetPath` | Parámetro `String` opcional.<br /><br /> Especifica la longitud máxima permitida de la ruta de acceso de un archivo en una implementación de aplicación de ClickOnce. Si se especifica este parámetro, se comprobará si la longitud de cada ruta de archivo de la aplicación rebasa este límite. Cualquier elemento que supere el límite provocará una advertencia de compilación. Si no se especifica esta entrada o es cero, no se realiza ninguna comprobación. |
 | `MinimumRequiredVersion` | Parámetro `String` opcional.<br /><br /> Especifica si el usuario puede omitir la actualización. Si el usuario tiene una versión anterior a la versión mínima requerida, no podrá omitir la actualización. Este valor solo se aplica cuando el valor del parámetro `Install` es `true`. |
 | `OutputManifest` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el nombre del archivo de manifiesto de salida generado. Si no se especifica este parámetro, el nombre del archivo de salida se deduce de la identidad del manifiesto generado. |
 | `Platform` | Parámetro `String` opcional.<br /><br /> Especifica la plataforma de destino de la aplicación. Este parámetro puede tener los valores siguientes:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> El valor predeterminado es `AnyCPU`. |
-| `Product` | Parámetro `String` opcional.<br /><br /> Especifica el nombre de la aplicación. Si no se especifica este parámetro, el nombre se deduce de la identidad del manifiesto generado. Este nombre se usa para el nombre del acceso directo del menú **Inicio** y forma parte del nombre que aparece en el cuadro de diálogo **Agregar o quitar programas**. |
-| `Publisher` | Parámetro `String` opcional.<br /><br /> Especifica el publicador de la aplicación. Si no se especifica este parámetro, el nombre se deduce del usuario registrado o de la identidad del manifiesto generado. Este nombre se usa para el nombre de la carpeta del menú **Inicio** y forma parte del nombre que aparece en el cuadro de diálogo **Agregar o quitar programas**. |
+| `Product` | Parámetro `String` opcional.<br /><br /> Especifica el nombre de la aplicación. Si no se especifica este parámetro, el nombre se deduce de la identidad del manifiesto generado. Este nombre se usa para el nombre del acceso directo del menú **Inicio** y forma parte del nombre que aparece en el cuadro de diálogo **Agregar o quitar programas** . |
+| `Publisher` | Parámetro `String` opcional.<br /><br /> Especifica el publicador de la aplicación. Si no se especifica este parámetro, el nombre se deduce del usuario registrado o de la identidad del manifiesto generado. Este nombre se usa para el nombre de la carpeta del menú **Inicio** y forma parte del nombre que aparece en el cuadro de diálogo **Agregar o quitar programas** . |
 | `SuiteNamel` | Parámetro `String` opcional.<br /><br /> Especifica el nombre de la carpeta del menú **Inicio** donde se ubica la aplicación después de la implementación ClickOnce. |
 | `SupportUrl` | Parámetro `String` opcional.<br /><br /> Especifica el vínculo que aparece en el cuadro de diálogo **Agregar o quitar programas** para la aplicación. El valor especificado debe ser una dirección URL o ruta de acceso UNC completa. |
 | `TargetCulture` | Parámetro `String` opcional.<br /><br /> Identifica la referencia cultural de la aplicación y especifica el campo `Language` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, se supone que la aplicación es invariable en cuanto a la referencia cultural. |
@@ -67,6 +69,6 @@ Además de los parámetros mencionados anteriormente, esta tarea hereda los par�
 ## <a name="see-also"></a>Vea también
 
 - [Tareas](../msbuild/msbuild-tasks.md)
-- [GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md)
-- [SignFile (Tarea)](../msbuild/signfile-task.md)
+- [GenerateApplicationManifest (tarea)](../msbuild/generateapplicationmanifest-task.md)
+- [SignFile (tarea)](../msbuild/signfile-task.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

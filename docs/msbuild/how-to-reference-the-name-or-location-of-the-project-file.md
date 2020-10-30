@@ -1,5 +1,6 @@
 ---
 title: Hacer referencia al nombre o la ubicación del archivo de proyecto
+description: Obtenga información sobre cómo usar las propiedades reservadas de MSBuild para hacer referencia a la ubicación o al nombre del archivo del proyecto sin que sea necesario crear sus propias propiedades.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,14 +18,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036462"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436342"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedimiento Hacer referencia al nombre o la ubicación del archivo de proyecto
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Cómo: Hacer referencia al nombre o la ubicación del archivo de proyecto
 
 Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto sin tener que crear su propia propiedad. MSBuild proporciona propiedades reservadas que hacen referencia al nombre de archivo del proyecto y a otras propiedades relacionadas con el proyecto. Para obtener más información sobre las propiedades reservadas, vea [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
@@ -49,7 +50,7 @@ Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto
 > [!NOTE]
 > Las propiedades reservadas no se pueden volver a definir en el archivo del proyecto.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
  El siguiente archivo del proyecto de ejemplo hace referencia al nombre del proyecto como una propiedad reservada para especificar el nombre de salida.
 
@@ -78,7 +79,7 @@ Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto
 </Project>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
  El siguiente archivo de proyecto de ejemplo usa la propiedad reservada `MSBuildProjectDirectory` para crear la ruta de acceso completa a un archivo en la ubicación del archivo de proyecto.
 

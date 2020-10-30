@@ -1,5 +1,7 @@
 ---
 title: DownloadFile (Tarea) | Microsoft Docs
+description: Obtenga información sobre los parámetros de la tarea DownloadFile de MSBuild que descarga los archivos especificados mediante HTTP.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fda3edcd1c8bf173e1b70d8bf2d76d58f6e10d8d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634258"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436651"
 ---
 # <a name="downloadfile-task"></a>DownloadFile (Tarea)
 
@@ -38,9 +40,9 @@ Descarga los archivos especificados mediante el Protocolo de transferencia de hi
 
 ## <a name="parameters"></a>Parámetros
 
-En la siguiente tabla se describen los parámetros de la tarea `DownloadFile`.
+En la siguiente tabla se describen los parámetros de la tarea `DownloadFile` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`DestinationFileName`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Nombre que se va a usar para el archivo descargado.  De forma predeterminada, el nombre de archivo deriva de `SourceUrl` o el servidor remoto.|
 |`DestinationFolder`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica la carpeta de destino en la que se va a descargar el archivo.  Si no existe ninguna, se crea una carpeta.|
@@ -50,7 +52,7 @@ En la siguiente tabla se describen los parámetros de la tarea `DownloadFile`.
 |`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, omite la descarga de archivos sin modificar. Tiene como valor predeterminado `true`. La tarea `DownloadFile` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación según el servidor remoto. <br /><br />**Nota:** No todos los servidores HTTP indican la fecha de última modificación de los archivos, lo que hace que el archivo se vuelva a descargar.|
 |`SourceUrl`|Parámetro `String` requerido.<br /><br /> Especifica la dirección URL que se va a descargar.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

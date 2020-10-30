@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: how-to
-description: Obtenga información acerca de cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: Obtenga información sobre cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
+ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022444"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467549"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
@@ -26,7 +26,7 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Uso de la adición en masa para asignar suscripciones
 1. Inicie sesión en el Portal de administración de suscripciones de Visual Studio en <https://manage.visualstudio.com>.
 
-1. Para agregar varios suscriptores a la vez, vaya a la pestaña **Administrar suscriptores**. Elija la pestaña **Agregar** y, a continuación, elija **Agregar en masa** en el menú desplegable.  
+1. Para agregar varios suscriptores a la vez, vaya a la pestaña **Administrar suscriptores** . Elija la pestaña **Agregar** y, a continuación, elija **Agregar en masa** en el menú desplegable.  
 
 1. En la adición en masa se usa una plantilla de Microsoft Excel para cargar información de los suscriptores. En el cuadro de diálogo Upload Multiple Subscribers (Cargar varios suscriptores), seleccione **Descargar** para descargar la plantilla.
    > [!div class="mx-imgBorder"]
@@ -46,13 +46,13 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
     - Quite los espacios de delante y detrás de los campos del formulario.
     - Asegúrese de que los nombres de los usuarios no contienen espacios adicionales entre las dos partes de los nombres compuestos (por ejemplo, el nombre compuesto "Maggie May" se debe escribir como "MaggieMay", ya que el sistema no elimina el espacio adicional).
     - Asegúrese de que se han completado todos los campos obligatorios. 
-    - Compruebe la columna **Mensaje de error**.  Si aparece algún error, resuélvalo antes de intentar cargar el archivo. 
+    - Compruebe la columna **Mensaje de error** .  Si aparece algún error, resuélvalo antes de intentar cargar el archivo. 
 
-1. Vuelva al portal de administración de suscripciones de Visual Studio. En el cuadro de diálogo **Upload Multiple Subscribers** (Cargar varios suscriptores), haga clic en **Examinar**.
+1. Vuelva al portal de administración de suscripciones de Visual Studio. En el cuadro de diálogo **Upload Multiple Subscribers** (Cargar varios suscriptores), haga clic en **Examinar** .
    > [!div class="mx-imgBorder"]
    > ![Examen de la plantilla guardada para cargar varios suscriptores](media/bulk-add-browse-saved-template.png "Puede desplazarse hasta la ubicación del archivo, o bien arrastrarlo y colocarlo en este cuadro de diálogo.")
 
-1. Vaya al archivo de Excel que ha guardado y seleccione **Aceptar**.
+1. Vaya al archivo de Excel que ha guardado y seleccione **Aceptar** .
    > [!div class="mx-imgBorder"]
    > ![Carga de la plantilla de Excel para cargar varios suscriptores](media/bulk-upload-subscribers.png "La plantilla con los datos aparecerá aquí.  Seleccione Aceptar para iniciar la carga.")
 
@@ -65,10 +65,10 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
    Si se produce un error, siga estos pasos:
    1. Abra el archivo de Excel que ha creado, corrija los problemas y guarde el archivo.
    0. Vuelva al portal de administración y descarte el mensaje de error.
-   0. Haga clic en **Agregar**.
-   0. Seleccione **Agregar en masa**.
-   0. Como ya se ha guardado el archivo de Excel, no es necesario descargar la plantilla.  Seleccione **Examinar**, busque el archivo que acaba de guardar y seleccione **Abrir**.
-   0. Seleccione **Aceptar**.
+   0. Haga clic en **Agregar** .
+   0. Seleccione **Agregar en masa** .
+   0. Como ya se ha guardado el archivo de Excel, no es necesario descargar la plantilla.  Seleccione **Examinar** , busque el archivo que acaba de guardar y seleccione **Abrir** .
+   0. Seleccione **Aceptar** .
 
 
     Cuando la carga se realice correctamente, verá la lista de suscriptores y un mensaje de confirmación.
@@ -82,7 +82,7 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 > [!IMPORTANT]
 >
 > Se aplican las siguientes limitaciones al uso de grupos de Azure AD para agregar suscriptores:
-> - El administrador debe ser miembro del inquilino de AAD al agregar inicialmente un grupo al portal de administración.  Una vez agregado el grupo, los cambios en la pertenencia de los grupos no requieren la intervención del administrador. 
+> - El administrador debe ser miembro del inquilino de AAD al agregar inicialmente un grupo al portal de administradores.  Una vez agregado el grupo, los cambios en la pertenencia de los grupos no requieren la intervención del administrador. 
 > - Los grupos deben contener al menos un miembro.  No se admiten grupos vacíos.
 > - Los grupos deben tener menos de 1000 usuarios. 
 > - Todos los usuarios deben estar en el nivel superior del grupo.  No se admiten grupos anidados.
@@ -97,7 +97,7 @@ Vea este vídeo o siga leyendo para saber cómo agregar suscriptores mediante la
 
 1. Inicie sesión en el Portal de administración de suscripciones de Visual Studio en [https://manage.visualstudio.com](https://manage.visualstudio.com).
 
-2. Para agregar varios suscriptores a la vez, vaya a la pestaña **Administrar suscriptores**.
+2. Para agregar varios suscriptores a la vez, vaya a la pestaña **Administrar suscriptores** .
 
 3. Elija la pestaña **Agregar** y, después, seleccione **Grupo de Azure Active Directory** en el menú desplegable.  
 
@@ -111,7 +111,7 @@ Vea este vídeo o siga leyendo para saber cómo agregar suscriptores mediante la
    > [!div class="mx-imgBorder"]
    > ![Selección del grupo de Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Elija el nombre del grupo de Azure AD para agregar suscriptores de ese grupo.")
 
-6. Seleccione **Agregar** y, luego, **Confirmar**. 
+6. Seleccione **Agregar** y, luego, **Confirmar** . 
 
 7. Para ver el grupo agregado, desplácese a la parte inferior de la lista de usuarios.  
 
@@ -119,6 +119,8 @@ Vea este vídeo o siga leyendo para saber cómo agregar suscriptores mediante la
 
 > [!NOTE]
 > Si ya se han asignado las suscripciones individualmente a los usuarios que se agregan posteriormente como parte de un grupo de Azure AD, se agregarán como parte del grupo y ya no se mostrarán individualmente. Sin embargo, si la suscripción individual es para un nivel de suscripción distinto, tendrá dos suscripciones.  Ejemplo:  si un usuario tiene una suscripción individual de Visual Studio Professional y es miembro de un grupo al que se asignan suscripciones de Visual Studio Enterprise, este usuario tendrá ambas.  
+>
+> Si quita un suscriptor de un grupo de Azure Active Directory que tiene suscripciones asignadas, la actualización puede tardar hasta 24 horas en reflejarse en el portal de administradores. 
 
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes

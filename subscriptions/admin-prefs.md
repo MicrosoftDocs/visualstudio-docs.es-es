@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Aprenda a establecer las preferencias de idioma, contactos, nivel de suscripción y demás en el portal de administración.
-ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022621"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467445"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Establecimiento de las preferencias de los contratos en el portal de administración
 Los superadministradores pueden establecer determinadas preferencias en el portal de administración que se aplicarán globalmente para cada contrato.  Estas preferencias rellenarán automáticamente los detalles de suscripción para los administradores al agregar suscriptores. Solo las pueden modificar de forma global los propios superadministradores.  
@@ -60,7 +60,7 @@ Si se habilita esta opción, que está activada de forma predeterminada, los sus
 
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>P:  ¿Puedo deshabilitar la **dirección de correo electrónico de contacto** para que los suscriptores no puedan ponerse en contacto con los administradores?
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>P:  ¿Puedo deshabilitar la **dirección de correo electrónico de contacto** para que los suscriptores no puedan ponerse en contacto con los administradores?
 R:  No. La característica no se puede deshabilitar, pero puede determinar los administradores con los que ponerse en contacto mediante un grupo de seguridad, un alias de correo electrónico de grupo o una dirección de correo electrónico individual.
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>P: Si respondo al correo electrónico de un suscriptor, ¿dispondrá de mi dirección de correo electrónico?
@@ -70,7 +70,7 @@ R:  Dado que la respuesta procederá del cliente de correo electrónico que empl
 R:  Consulte nuestro artículo sobre [cómo ponerse en contacto con el administrador](contact-my-admin.md). 
 
 ### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>P: Si no completamos la **dirección de correo electrónico de contacto** y un suscriptor usa la característica **Contact my Admin** (Contacto con el administrador), ¿quién recibe la solicitud?
-R:  Si no se establece ninguna dirección de correo electrónico específica en la preferencia **Dirección de correo electrónico de contacto**, todos los administradores del contrato recibirán la solicitud. 
+R:  Si no se establece ninguna dirección de correo electrónico específica en la preferencia **Dirección de correo electrónico de contacto** , todos los administradores del contrato recibirán la solicitud. 
 
 ## <a name="resources"></a>Recursos
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

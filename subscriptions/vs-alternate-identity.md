@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 07/19/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 description: Cómo agregar una identidad alternativa a la suscripción de Visual Studio para usar Azure DevOps y Azure
-ms.openlocfilehash: 5eee6c1d59141c1975a6039f2ab9256b4c9dc735
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d7820707758cd06209a412b2a860de81cb08c054
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005719"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353187"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades de los suscriptores de Visual Studio
 Cuando activa una suscripción de Visual Studio, vinculamos la identidad (o inicio de sesión) que ha usado durante la activación con la suscripción de Visual Studio. De esta manera, podremos reconocerle en el [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), en Azure DevOps y en Azure.
@@ -22,7 +22,7 @@ Dado que estas características se incluyen como una ventaja de suscriptor, no s
 
 En Azure, comprobamos el estado de la suscripción de Visual Studio cuando se activa su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/), que es una ventaja de suscriptor.
 
-En el [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), puede agregar una **identidad alternativa**, además de la identidad que ha usado durante la activación. Se permite agregar una identidad alternativa si se ha usado una cuenta de Microsoft para activar la suscripción. De este modo, puede agregar también una cuenta profesional o educativa (que use para iniciar sesión en Visual Studio, en Microsoft 365 o en la red de la empresa o del centro educativo), lo que le permitirá tener acceso a Azure DevOps tanto a través de su cuenta personal como de su cuenta profesional o educativa.
+En el [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), puede agregar una **identidad alternativa** , además de la identidad que ha usado durante la activación. Se permite agregar una identidad alternativa si se ha usado una cuenta de Microsoft para activar la suscripción. De este modo, puede agregar también una cuenta profesional o educativa (que use para iniciar sesión en Visual Studio, en Microsoft 365 o en la red de la empresa o del centro educativo), lo que le permitirá tener acceso a Azure DevOps tanto a través de su cuenta personal como de su cuenta profesional o educativa.
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Agregar una cuenta alternativa a la suscripción
 La adición de una cuenta alternativa a la suscripción de Visual Studio permite acceder a las ventajas de la suscripción, como Azure DevOps y Azure, con una identidad diferente a la que se asigna la suscripción. En el pasado, esta funcionalidad solo estaba disponible si la suscripción de Visual Studio (VS) se había asignado a una cuenta Microsoft (MSA). Se ha ampliado esta funcionalidad para cuentas profesionales o educativas de Azure Active Directory (Azure AD).
@@ -34,10 +34,10 @@ En todas las suscripciones puede agregar una "cuenta profesional o educativa" pa
 ### <a name="add-the-alternate-account"></a>Agregar la cuenta alternativa
 1. Inicie sesión en el portal de suscriptores de Visual Studio con la cuenta de Microsoft (https://my.visualstudio.com).
 2. Seleccione la pestaña **Suscripciones** .
-3. Elija **Agregar cuenta alternativa**.
+3. Elija **Agregar cuenta alternativa** .
 4. Agregue la cuenta profesional o educativa.
     > [!div class="mx-imgBorder"]
-    > ![Agregar cuenta profesional o educativa](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+    > ![Agregar cuenta profesional o educativa](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png "Incorporación de una cuenta profesional o educativa como una cuenta alternativa en su suscripción.")
 
 5. Use su cuenta profesional o educativa para iniciar sesión en Azure DevOps (https://{suCuenta}.visualstudio.com).
 

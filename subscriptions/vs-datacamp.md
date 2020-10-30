@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006337"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435892"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones a DataCamp.  Con DataCamp, puede obtener información sobre todas las aptitudes ciencia de datos que necesita cómodamente desde el explorador. Puede elegir cuándo y qué aprender. Al no tener que instalar ningún software ni cumplir ningún requisito de hardware en particular, ahora el aprendizaje de ciencia de datos es más fácil que nunca.
@@ -20,9 +20,9 @@ Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones 
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de la prestación DataCamp en la categoría "Desarrollo profesional" y haga clic en **Activar**.
+2. Busque el icono de la prestación DataCamp en la categoría "Desarrollo profesional" y haga clic en **Activar** .
    > [!div class="mx-imgBorder"]
-   > ![Icono de la prestación DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![Icono de la prestación DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png "Haga clic en "Activar" para comenzar.")
 
 3. En la página de DataCamp, puede crear una cuenta.  Puede especificar una dirección de correo electrónico y una contraseña o iniciar sesión con cuentas de Facebook, LinkedIn o Google existentes.  Una vez que haya proporcionado su información de inicio de sesión, haga clic en **Get Started** (Comenzar).
 
@@ -36,25 +36,25 @@ Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones 
 
    Solo tiene que hacer clic en la ruta que quiera para empezar.
    > [!div class="mx-imgBorder"]
-   > ![Elegir ruta de DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![Elegir ruta de DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png "Elija una ruta de aprendizaje que le interese.")
 
 5. Después de haber seleccionado la ruta de aprendizaje, puede delimitarla aún más seleccionando un objetivo.  Por ejemplo, si optó por desarrollar sus aptitudes de ciencia de datos, verá las siguientes opciones. Elija una opción o haga clic en **I am not sure.  Show me all career paths** (No estoy seguro. Mostrar todas las rutas profesionales) para confeccionar una ruta más amplia.
    > [!div class="mx-imgBorder"]
-   > ![Conjunto de aptitudes de ciencia de datos de DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![Conjunto de aptitudes de ciencia de datos de DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png "Haga clic en "No estoy seguro.  Mostrar todas las rutas profesionales" para mostrar la lista completa.")
 
 6. En función de la ruta y las opciones escogidas, verá una selección de pistas profesionales.  Haga clic en el botón **Enroll** (Inscribirse) de la pista que quiera.
    > [!div class="mx-imgBorder"]
-   > ![Pista profesional de DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![Pista profesional de DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png "Haga clic en el botón "Inscribir" en la ruta seleccionada para empezar.")
 
 7. Una vez que se haya inscrito en la pista, se abrirá el primer curso de esa pista.  Podrá ver un tutorial en el que se explica cómo interactuar con el curso, cómo navegar por él y cómo completar los ejercicios que contiene.
 
    > [!div class="mx-imgBorder"]
-   > ![Introducción a DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![Introducción a DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png "Consulte el tutorial para aprender a navegar por los cursos.")
 
 Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  Solo tiene que ir a [https://www.datacamp.com](https://www.datacamp.com) e iniciar sesión.  Aparecerá su panel y podrá reanudar el curso justo donde lo dejó. Bastará con que haga clic en **Continue Track** (Continuar pista).
 
 > [!div class="mx-imgBorder"]
-> ![Continuar con la formación de DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![Continuar con la formación de DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png "Haga clic en "Continue Track" (Continuar pista) para reanudar el aprendizaje en cualquier momento.")
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |

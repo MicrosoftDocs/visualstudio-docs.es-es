@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
-ms.openlocfilehash: e955cc0c9e2437da07e48fc7db1c1b4df9e168e7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006311"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435759"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>La ventaja de Visual Studio 2019
 
@@ -26,36 +26,36 @@ Para descargar el IDE:
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Busque el icono del IDE de Visual Studio en la sección Herramientas y haga clic en el vínculo **Descargar** en la parte inferior del icono del beneficio.  También puede descargarlo desde la página [Descargas](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
-   > ![Icono de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
+   > ![Icono de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png "Haga clic en "Descargar" en el icono de Visual Studio para instalar Visual Studio".)
 
-3. Se le redirigirá a la página Descargar resultados de Visual Studio, en la que tendrá la oportunidad de descargar el IDE y obtener una clave de producto para activarlo. También puede solicitar una clave de producto haciendo clic en el vínculo azul **Obtener clave**, o puede solicitar una clave más adelante en la página [Claves de producto](https://my.visualstudio.com/productkeys).
+3. Se le redirigirá a la página Descargar resultados de Visual Studio, en la que tendrá la oportunidad de descargar el IDE y obtener una clave de producto para activarlo. También puede solicitar una clave de producto haciendo clic en el vínculo azul **Obtener clave** , o puede solicitar una clave más adelante en la página [Claves de producto](https://my.visualstudio.com/productkeys).
 4. En la pestaña Detalles de la página Descargar resultados:
    - Seleccione la arquitectura que quiera (x86, x64).
    - Seleccione su preferencia de idioma.
 5. Haga clic en el botón de descarga.
    > [!div class="mx-imgBorder"]
-   > ![Detalles de descarga de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
-6. Haga clic en el paquete del instalador que se descargó.  Si se le pide realizar la instalación ahora, haga clic en **Ejecutar**.
-7. En el cuadro de diálogo Control de cuentas de usuario, haga clic en **Sí**.
+   > ![Detalles de descarga de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png "Haga clic en el botón "Descargar" para iniciar la descarga.")
+6. Haga clic en el paquete del instalador que se descargó.  Si se le pide realizar la instalación ahora, haga clic en **Ejecutar** .
+7. En el cuadro de diálogo Control de cuentas de usuario, haga clic en **Sí** .
 8. Haga clic en **Continuar** para aceptar los términos de licencia.
 9. Cuando se inicie el instalador, elija las cargas de trabajo, los componentes individuales y los paquetes de idioma que quiera en las pestañas correspondientes.
    > [!div class="mx-imgBorder"]
-   > ![Personalización de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
+   > ![Personalización de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png "Elija las cargas de trabajo y otros componentes.")
 
-10. Haga clic en **Instalar**.
+10. Haga clic en **Instalar** .
 
 11. Una vez completada la instalación, tendrá la opción de modificarla o iniciar Visual Studio.  Haga clic en **Iniciar** para empezar.  Si tiene varias versiones instaladas, se muestran aquí.
     > [!div class="mx-imgBorder"]
-    > ![Inicio de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
+    > ![Inicio de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png "Haga clic en "Iniciar" para iniciar Visual Studio.")
 
 12. Inicie sesión con la cuenta asociada a la suscripción de Visual Studio.
 
-13. Elija el tema preferido y haga clic en **Iniciar Visual Studio**.
+13. Elija el tema preferido y haga clic en **Iniciar Visual Studio** .
 
 14. Se abre Visual Studio. Ya puede empezar a utilizar Visual Studio.
 
     > [!div class="mx-imgBorder"]
-    > ![Comenzar a utilizar Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    > ![Comenzar a utilizar Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png "Le damos la bienvenida a Visual Studio.")
 
 
 ## <a name="eligibility"></a>Elegibilidad

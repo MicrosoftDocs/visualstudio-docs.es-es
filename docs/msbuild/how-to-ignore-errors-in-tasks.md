@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Pasar errores por alto en las tareas | Microsoft Docs'
+description: Obtenga información sobre cómo pasar por alto los errores en las tareas de MSBuild y controle si una compilación se detiene o continúa cuando se produce un error en la tarea.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97a2666b32ad7e6bc93865fa36529377652b6453
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633829"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436254"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Cómo: Pasar errores por alto en las tareas
 
@@ -26,9 +28,9 @@ El atributo `ContinueOnError` del elemento `Task` controla si una compilación s
 
 El atributo `ContinueOnError` puede contener uno de los siguientes valores:
 
-- **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.
+- **WarnAndContinue** o **true** . Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.
 
-- **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.
+- **ErrorAndContinue** . Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.
 
 - **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.
 

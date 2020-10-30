@@ -2,17 +2,17 @@
 title: Anonimización de datos de suscriptor de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo se anonimizan los datos del suscriptor cuando se pierde el acceso a las suscripciones.
-ms.openlocfilehash: 1b3cbd56123c80a96f36925ae98c171e84860798
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 34059c20a65c41f7998efe344e2d8d4ac63cf7af
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006194"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467497"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimización de información de suscriptor de Visual Studio
 Cuando se produce un evento que bloquea el uso que realiza un suscriptor de una suscripción, como la expiración de una suscripción o la eliminación de la cuenta de inicio de sesión del suscriptor, la información personal del usuario como su nombre y la cuenta de inicio de sesión se desordenan para volverlos inutilizables.  Esto se hace para proteger la información personal del suscriptor.
@@ -34,7 +34,7 @@ Los eventos que inutilizan una suscripción para un suscriptor desencadenarán l
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>P:  ¿La anonimización de datos personales del suscriptor causa que pierda el acceso a la suscripción?
 R:  No.  La anonimización se produce en respuesta a un evento que provoca la pérdida de acceso a la suscripción, pero no provoca la pérdida de acceso.
 
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P:  Soy administrador de suscripciones de mi organización.  ¿Si se anonimiza la información de uno de mis suscriptores, esa suscripción puede reasignarse a otro usuario?
+### <a name="q--im-an-admin-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P:  Soy administrador de las suscripciones de mi organización.  ¿Si se anonimiza la información de uno de mis suscriptores, esa suscripción puede reasignarse a otro usuario?
 R:  Sí, siempre y cuando la suscripción no haya expirado, pueden reasignarse a otro suscriptor.
 
 ### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>P: ¿Cómo se puede evitar la anonimización que provoca la eliminación de una dirección de correo electrónico de inicio de sesión?

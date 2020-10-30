@@ -1,5 +1,6 @@
 ---
 title: Compilar los mismos archivos de código fuente con diferentes opciones
+description: Obtenga información sobre cómo crear diferentes configuraciones de compilación de MSBuild para compilar los mismos archivos de origen con distintas opciones.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037600"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436916"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Cómo: Compilar los mismos archivos de código fuente con diferentes opciones
 
 Al compilar proyectos, con frecuencia se compilan los mismos componentes con distintas opciones de compilación. Por ejemplo, puede crear una compilación de depuración con información de símbolos o una compilación de versión sin información de símbolos, pero con optimizaciones habilitadas. También puede compilar un proyecto que se ejecute en una plataforma concreta, como x86 o x64. En todos estos casos, la mayoría de las opciones de compilación permanecen iguales; solo unas cuantas opciones cambian para controlar la configuración de compilación. Con MSBuild, se utilizan propiedades y condiciones para crear configuraciones de compilación diferentes.
 
@@ -33,7 +34,7 @@ Puede usar las propiedades para cambiar la configuración de la compilación sin
 
 ### <a name="to-set-a-group-of-properties-that-depends-on-another-property"></a>Para establecer un grupo de propiedades que depende de otra propiedad
 
-- Use un atributo `Condition` en un elemento `PropertyGroup` similar al siguiente:
+- Utilice un atributo `Condition` en un elemento `PropertyGroup` similar al siguiente:
 
   ```xml
   <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
@@ -44,7 +45,7 @@ Puede usar las propiedades para cambiar la configuración de la compilación sin
 
 ### <a name="to-define-a-property-that-depends-on-another-property"></a>Para definir una propiedad que depende de otra propiedad
 
-- Use un atributo `Condition` en un elemento `Property` similar al siguiente:
+- Utilice un atributo `Condition` en un elemento `Property` similar al siguiente:
 
   ```xml
   <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>
@@ -52,7 +53,7 @@ Puede usar las propiedades para cambiar la configuración de la compilación sin
 
 ## <a name="specify-properties-on-the-command-line"></a>Especificar propiedades en la línea de comandos
 
-Una vez que el archivo de proyecto está escrito para aceptar varias configuraciones, debe tener la capacidad de cambiar dichas configuraciones siempre que compile el proyecto. MSBuild proporciona esta capacidad al permitir especificar propiedades en la línea de comandos mediante los modificadores **-property** o **-p**.
+Una vez que el archivo de proyecto está escrito para aceptar varias configuraciones, debe tener la capacidad de cambiar dichas configuraciones siempre que compile el proyecto. MSBuild proporciona esta capacidad al permitir especificar propiedades en la línea de comandos mediante los modificadores **-property** o **-p** .
 
 ### <a name="to-set-a-project-property-at-the-command-line"></a>Para establecer una propiedad de proyecto en la línea de comandos
 
@@ -62,7 +63,7 @@ Una vez que el archivo de proyecto está escrito para aceptar varias configuraci
   msbuild file.proj -property:Flavor=Debug
   ```
 
-  o
+  or
 
   ```cmd
   Msbuild file.proj -p:Flavor=Debug
@@ -76,7 +77,7 @@ Una vez que el archivo de proyecto está escrito para aceptar varias configuraci
   msbuild file.proj -p:Flavor=Debug;Platform=x86
   ```
 
-  o
+  or
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86
@@ -88,7 +89,7 @@ Una vez que el archivo de proyecto está escrito para aceptar varias configuraci
 
   Puede cambiar este comportamiento mediante el atributo `TreatAsLocalProperty` en una etiqueta de proyecto. Para los nombres de propiedad que se muestran con ese atributo, el valor de propiedad que se especifica en la línea de comandos no tiene prioridad sobre el valor en el archivo de proyecto. Más adelante en este tema encontrará un ejemplo.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
 El ejemplo de código siguiente, el proyecto "Hello World", contiene dos grupos de propiedades nuevas que se pueden utilizar para crear una compilación de depuración y una compilación de versión.
 
@@ -156,7 +157,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 </Project>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
 En el ejemplo siguiente se muestra cómo utilizar el atributo `TreatAsLocalProperty`. La propiedad `Color` tiene un valor de `Blue` en el archivo de proyecto y de `Green` en la línea de comandos. Con `TreatAsLocalProperty="Color"` en la etiqueta del proyecto, la propiedad en la línea de comandos (`Green`) no invalida la propiedad que se define en el archivo del proyecto (`Blue`).
 

@@ -3,19 +3,19 @@ title: Asignación de GUID específicos a suscriptores de Visual Studio | Micro
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores pueden asignar GUID de suscripción específicos a los suscriptores.
-ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022491"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467484"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de suscripciones específicas en el Portal de administración de suscripciones de Visual Studio
 
-Ahora, los administradores pueden usar el Portal de administración de suscripciones de Visual Studio para asignar suscripciones específicas a suscriptores individuales.  Esto puede ser útil si una organización tiene personal o proveedores temporales que necesitan acceder a una suscripción durante un breve período.  Los administradores pueden asignar una suscripción que ya se haya utilizado parcialmente y dejar las nuevas para un uso más prolongado.  
+Ahora, los administradores pueden usar el Portal de administración de Suscripciones de Visual Studio para asignar suscripciones específicas a suscriptores individuales.  Esto puede ser útil si una organización tiene personal o proveedores temporales que necesitan acceder a una suscripción durante un breve período.  Los administradores pueden asignar una suscripción que ya se haya utilizado parcialmente y dejar las nuevas para un uso más prolongado.  
 
 Vea el vídeo o siga leyendo para saber cómo asignar identificadores únicos de suscripciones específicas a los usuarios. 
 
@@ -40,20 +40,20 @@ Para realizar la exportación, siga estos pasos:
 
 Si ha usado la herramienta de exportación anteriormente, verá que se han agregado nuevos campos a la hoja de cálculo que se genera.  Esto le ayudará a determinar el estado de cada suscripción y cuáles de ellas quiere asignar a los usuarios.  
 
-- **Estado de la suscripción**: en este campo se mostrarán los valores "asignado" o "sin asignar".  Si una suscripción tiene el estado "asignado", también tendrá información de usuario asociada, como el nombre, el correo electrónico, etc. 
-- **Estado de uso**: en el estado de uso, se indicará "nuevo", lo que significa que la suscripción nunca se ha asignado a un usuario, o bien "usado", lo que indica que se ha asignado a un usuario en algún momento.  
+- **Estado de la suscripción** : en este campo se mostrarán los valores "asignado" o "sin asignar".  Si una suscripción tiene el estado "asignado", también tendrá información de usuario asociada, como el nombre, el correo electrónico, etc. 
+- **Estado de uso** : en el estado de uso, se indicará "nuevo", lo que significa que la suscripción nunca se ha asignado a un usuario, o bien "usado", lo que indica que se ha asignado a un usuario en algún momento.  
 
 Puede usar los valores de estos campos, junto con otra información de la hoja de cálculo, para determinar qué suscripciones quiere asignar a usuarios individuales. Puede aplicar un filtro en Excel para restringir la lista por estado, nivel de suscripción, fecha de expiración, etc. 
 
 ### <a name="upload-your-new-assignments"></a>Carga de las nuevas asignaciones
 
-El paso final es descargar la plantilla **Agregar en masa**, rellenar la información necesaria para las suscripciones que quiera asignar y cargar la plantilla.  Para obtener una descripción completa de este proceso, consulte el artículo [Incorporación de varios usuarios](assign-license-bulk.md).  
+El paso final es descargar la plantilla **Agregar en masa** , rellenar la información necesaria para las suscripciones que quiera asignar y cargar la plantilla.  Para obtener una descripción completa de este proceso, consulte el artículo [Incorporación de varios usuarios](assign-license-bulk.md).  
 
 > [!IMPORTANT]
 > Para garantizar una carga correcta, compruebe que se cumplan los siguientes requisitos:
-> - Está utilizando la plantilla vinculada en el cuadro de diálogo al seleccionar **Agregar en masa**.  No use una copia almacenada localmente de la plantilla, ya que puede que no contenga todos los campos obligatorios.  El uso de una plantilla antigua provocará un error de carga. 
+> - Está utilizando la plantilla vinculada en el cuadro de diálogo al seleccionar **Agregar en masa** .  No use una copia almacenada localmente de la plantilla, ya que puede que no contenga todos los campos obligatorios.  El uso de una plantilla antigua provocará un error de carga. 
 > - Todos los campos mostrados como **necesarios** en la plantilla están completados.
-> - No se muestran errores en la columna **Mensaje de error**.
+> - No se muestran errores en la columna **Mensaje de error** .
 > - Cada GUID se usa solo una vez en la plantilla. 
 > - El nivel de suscripción de la plantilla coincide con la suscripción del GUID de la lista exportada. 
 > - El GUID no se ha asignado ya a otro usuario de la lista exportada. 

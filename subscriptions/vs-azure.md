@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/28/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91003851"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353101"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
@@ -22,23 +22,23 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 
 2. Busque el icono de Azure en la sección Herramientas de la página Beneficios y seleccione el vínculo **Activar** en la parte inferior del icono del beneficio.
    > [!div class="mx-imgBorder"]
-   > ![Icono de Azure](_img/vs-azure/vs-azure-tile.png)
+   > ![Icono de Azure](_img/vs-azure/vs-azure-tile.png "Haga clic en el botón "Activar" en el icono de Azure para empezar.")
 
-3. Si no tiene una suscripción de Azure, se le pedirá rellenar la información necesaria para crear una.  El primer paso es proporcionar la información personal y, después, seleccionar **Siguiente**.
+3. Si no tiene una suscripción de Azure, se le pedirá rellenar la información necesaria para crear una.  El primer paso es proporcionar la información personal y, después, seleccionar **Siguiente** .
    > [!div class="mx-imgBorder"]
-   > ![Suscripción a Azure](_img/vs-azure/vs-azure-about-you.png)
+   > ![Suscripción a Azure](_img/vs-azure/vs-azure-about-you.png "Agregue su información de contacto personal a la suscripción de Azure.")
 
-4. A continuación, tendrá que comprobar su identidad con un código de verificación simple. Proporcione el número de teléfono y elija si desea recibir el código por texto o por teléfono.  Escriba el código que reciba y seleccione **Verificar código**.   
+4. A continuación, tendrá que comprobar su identidad con un código de verificación simple. Proporcione el número de teléfono y elija si desea recibir el código por texto o por teléfono.  Escriba el código que reciba y seleccione **Verificar código** .   
    > [!div class="mx-imgBorder"]
-   > ![Preparación de Azure](_img/vs-azure/vs-azure-identity.png)
+   > ![Preparación de Azure](_img/vs-azure/vs-azure-identity.png "Solicite un código de verificación y escríbalo para continuar.")
 
-5. En el último paso, seleccione la casilla para aceptar los términos y, después, **Registrarse**.  Así de simple.
+5. En el último paso, seleccione la casilla para aceptar los términos y, después, **Registrarse** .  Así de simple.
    > [!div class="mx-imgBorder"]
-   > ![Preparación de Azure](_img/vs-azure/vs-azure-agreement.png)
+   > ![Suscripción a Azure](_img/vs-azure/vs-azure-agreement.png "Haga clic en el botón "Suscribirse" para completar la creación de la suscripción de Azure.")
 
 0. Se cargará el Centro de inicio rápido del panel de Azure.  
    > [!div class="mx-imgBorder"]
-   > ![Panel de Azure](_img/vs-azure/vs-azure-quick-start.png) 
+   > ![Panel de Azure](_img/vs-azure/vs-azure-quick-start.png "Una vez creada la suscripción de Azure, se le redirigirá a Azure Portal.") 
 
 0. Agregue [Azure Portal](https://portal.azure.com) a los marcadores para poder tener acceso fácilmente en el futuro.
 
@@ -50,11 +50,11 @@ Si su suscripción de Visual Studio expira o se elimina, todos los beneficios d
 
 Hay varias maneras de seguir usando un crédito mensual de Azure.  Para guardar los recursos de Azure, tendrá que [transferirlos](/azure/azure-resource-manager/management/move-resource-group-and-subscription) a otra suscripción de Azure, independientemente de la acción que elija a continuación. 
 
-- **Si compra una suscripción de Visual Studio directamente**, compre una nueva o renueve la actual a través de Microsoft Store.  
+- **Si compra una suscripción de Visual Studio directamente** , compre una nueva o renueve la actual a través de Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Si alguien de la organización se encarga de comprar las suscripciones**, [póngase en contacto con el administrador de suscripciones de Visual Studio](./contact-my-admin.md) y solicite una que proporcione el crédito mensual que necesita.  
+- **Si alguien de la organización se encarga de comprar las suscripciones** , [póngase en contacto con el administrador de suscripciones de Visual Studio](./contact-my-admin.md) y solicite una que proporcione el crédito mensual que necesita.  
 - **Si tiene otra suscripción activa de Visual Studio** en el mismo nivel de suscripción que esté asociada a otra cuenta de Microsoft, puede transferirle la ventaja de Azure si [agrega una cuenta alternativa](./manage-vs-subscriptions.md#managing-my-profile) en el [portal de suscripciones](https://my.visualstudio.com/subscriptions) de Visual Studio.  
 
 En la tabla siguiente encontrará los criterios de idoneidad para determinar los créditos incluidos en cada tipo de suscripción.  

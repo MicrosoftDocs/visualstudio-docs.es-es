@@ -1,5 +1,7 @@
 ---
 title: Tarea ConvertToAbsolutePath | Microsoft Docs
+description: Use la tarea ConvertToAbsolutePath de MSBuild para convertir una ruta de acceso relativa o una referencia en una ruta de acceso absoluta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ce6fcad3897443f178c45d84e16f4cff44ab03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecf9695b36f341fa350abf53062e70095c03c374
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634388"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796165"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath (tarea)
 
@@ -31,14 +33,14 @@ Convierte una ruta de acceso relativa o una referencia en una ruta de acceso abs
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
- En la siguiente tabla se describen los parámetros de la tarea `ConvertToAbsolutePath`.
+ En la siguiente tabla se describen los parámetros de la tarea `ConvertToAbsolutePath` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`Paths`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Lista de rutas de acceso relativas que se convertirán en rutas de acceso absolutas.|
 |`AbsolutePaths`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Lista de rutas de acceso absolutas de los elementos que se han pasado.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

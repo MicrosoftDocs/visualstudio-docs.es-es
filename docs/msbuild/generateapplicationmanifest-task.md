@@ -1,5 +1,7 @@
 ---
 title: GenerateApplicationManifest (Tarea) | Microsoft Docs
+description: Use la tarea de GenerateApplicationManifest de MSBuild para generar un manifiesto de aplicación de ClickOnce o un manifiesto nativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634102"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436548"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (tarea)
 
@@ -47,7 +49,7 @@ En la tabla siguiente se describen los parámetros de la tarea `GenerateApplicat
 | `FileAssociations` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica una lista de uno o varios tipos de archivo asociados al manifiesto de implementación de ClickOnce.<br /><br /> Las asociaciones de archivo son válidas únicamente cuando el destino es .NET Framework 3.5 o posterior. |
 | `Files` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Los archivos que se incluirán en el manifiesto. Especifique la ruta de acceso completa para cada archivo. |
 | `HostInBrowser` | Parámetro <xref:System.Boolean> opcional.<br /><br /> Si es `true`, la aplicación se aloja en un explorador (como las aplicaciones de explorador web de WPF). |
-| `IconFile` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Indica el archivo de icono de la aplicación. El icono de la aplicación se expresa en el manifiesto de aplicación generado y se usa para el menú **Inicio** y el cuadro de diálogo **Agregar o quitar programas**. Si no se especifica esta entrada, se usa un icono predeterminado. Si la tarea va a generar un manifiesto nativo, este parámetro se omite. |
+| `IconFile` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Indica el archivo de icono de la aplicación. El icono de la aplicación se expresa en el manifiesto de aplicación generado y se usa para el menú **Inicio** y el cuadro de diálogo **Agregar o quitar programas** . Si no se especifica esta entrada, se usa un icono predeterminado. Si la tarea va a generar un manifiesto nativo, este parámetro se omite. |
 | `InputManifest` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica un documento XML de entrada que sirve de base para el generador de manifiestos. De este modo, los datos estructurados como la seguridad de la aplicación o las definiciones personalizadas del manifiesto pueden reflejarse en el manifiesto de salida. El elemento raíz del documento XML debe ser un nodo de ensamblado en el espacio de nombres asmv1. |
 | `IsolatedComReferences` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los componentes COM que se aislarán en el manifiesto generado. Este parámetro permite aislar los componentes COM para la implementación de "COM sin registro". Funciona generando automáticamente un manifiesto con definiciones estándar de registro de COM. Sin embargo, los componentes COM se deben registrar en el equipo de compilación para que funcione correctamente. |
 | `ManifestType` | Parámetro `String` opcional.<br /><br /> Especifica el tipo de manifiesto que se va a generar. Este parámetro puede tener los valores siguientes:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Si no se especifica este parámetro, la tarea tiene como valor predefinido `ClickOnce`. |
@@ -55,8 +57,8 @@ En la tabla siguiente se describen los parámetros de la tarea `GenerateApplicat
 | `OSVersion` | Parámetro `String` opcional.<br /><br /> Especifica la versión mínima del sistema operativo (SO) necesaria para la aplicación. Por ejemplo, el valor "5.1.2600.0" indica que el sistema operativo es Windows XP. Si no se especifica este parámetro, se utiliza el valor "4.10.0.0" que indica Windows 98 Segunda edición, sistema operativo mínimo admitido por .NET Framework. Si la tarea va a generar un manifiesto nativo, este dato se omite. |
 | `OutputManifest` | Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el nombre del archivo de manifiesto de salida generado. Si no se especifica este parámetro, el nombre del archivo de salida se deduce de la identidad del manifiesto generado. |
 | `Platform` | Parámetro `String` opcional.<br /><br /> Especifica la plataforma de destino de la aplicación. Este parámetro puede tener los valores siguientes:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Si no se especifica este parámetro, la tarea tiene como valor predefinido `AnyCPU`. |
-| `Product` | Parámetro `String` opcional.<br /><br /> Especifica el nombre de la aplicación. Si no se especifica este parámetro, el nombre se deduce de la identidad del manifiesto generado. Este nombre se usa para el nombre del acceso directo del menú **Inicio** y forma parte del nombre que aparece en el cuadro de diálogo **Agregar o quitar programas**. |
-| `Publisher` | Parámetro `String` opcional.<br /><br /> Especifica el publicador de la aplicación. Si no se especifica este parámetro, el nombre se deduce del usuario registrado o de la identidad del manifiesto generado. Este nombre se usa para el nombre de la carpeta del menú **Inicio** y forma parte del nombre que aparece en el cuadro de diálogo **Agregar o quitar programas**. |
+| `Product` | Parámetro `String` opcional.<br /><br /> Especifica el nombre de la aplicación. Si no se especifica este parámetro, el nombre se deduce de la identidad del manifiesto generado. Este nombre se usa para el nombre del acceso directo del menú **Inicio** y forma parte del nombre que aparece en el cuadro de diálogo **Agregar o quitar programas** . |
+| `Publisher` | Parámetro `String` opcional.<br /><br /> Especifica el publicador de la aplicación. Si no se especifica este parámetro, el nombre se deduce del usuario registrado o de la identidad del manifiesto generado. Este nombre se usa para el nombre de la carpeta del menú **Inicio** y forma parte del nombre que aparece en el cuadro de diálogo **Agregar o quitar programas** . |
 | `RequiresMinimumFramework35SP1` | Parámetro `Boolean` opcional.<br /><br /> Si es true, la aplicación requiere .NET Framework 3.5 SP1 o una versión más reciente. |
 | `TargetCulture` | Parámetro `String` opcional.<br /><br /> Identifica la referencia cultural de la aplicación y especifica el campo `Language` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, se supone que la aplicación es invariable en cuanto a la referencia cultural. |
 | `TargetFrameworkMoniker` | Parámetro `String` opcional.<br /><br /> Especifica el moniker de la plataforma de destino. |
@@ -84,7 +86,7 @@ Las entradas para las dependencias y archivos se pueden ampliar aún más con me
 |`TargetPath`|Especifica cómo debería definirse la ruta de acceso en el manifiesto generado. Este atributo es válido para todos los archivos. Si no se especifica este atributo, se usa la especificación del elemento. Este atributo es válido para todos los archivos y dependencias con un valor `DependencyType` de `Install`.|
 |`IsDataFile`|Un valor de metadatos `Boolean` que indica si el archivo es un archivo de datos. Un archivo de datos es especial en cuanto a que migra entre las actualizaciones de la aplicación. Estos metadatos solo son válidos para los archivos. El valor predeterminado es `False`.|
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
 En este ejemplo se utiliza la tarea `GenerateApplicationManifest` para generar un manifiesto de aplicación de ClickOnce y la tarea `GenerateDeploymentManifest` para generar un manifiesto de implementación para una aplicación con un único ensamblado. A continuación, utiliza la tarea `SignFile` para firmar los manifiestos.
 
@@ -138,7 +140,7 @@ Esto ilustra el escenario de generación de manifiestos más sencillo posible do
 </Project>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
 En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDeploymentManifest` para generar los manifiestos de aplicación e implementación de ClickOnce para una aplicación con un único ensamblado, especificando el nombre y la identidad de los manifiestos.
 
@@ -199,7 +201,7 @@ Este ejemplo es similar al ejemplo anterior, excepto que el nombre y la identida
 </Project>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-3"></a>Ejemplo 3
 
 En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDeploymentManifest` para generar los manifiestos de aplicación e implementación de ClickOnce para una aplicación con varios archivos y ensamblados.
 
@@ -318,11 +320,11 @@ En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDepl
 </Project>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-4"></a>Ejemplo 4
 
-En este ejemplo se usa la tarea `GenerateApplicationManifest` para generar un manifiesto nativo para la aplicación *Test.exe*, que hace referencia al componente *Alpha.dll* nativo y a un componente COM aislado *Bravo.dll*.
+En este ejemplo se usa la tarea `GenerateApplicationManifest` para generar un manifiesto nativo para la aplicación *Test.exe* , que hace referencia al componente *Alpha.dll* nativo y a un componente COM aislado *Bravo.dll* .
 
-En este ejemplo se genera *Test.exe.manifest*, que hace que la aplicación XCOPY se pueda implementar y aprovecha el COM sin registro.
+En este ejemplo se genera *Test.exe.manifest* , que hace que la aplicación XCOPY se pueda implementar y aprovecha el COM sin registro.
 
 > [!NOTE]
 > En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de ClickOnce totalmente funcional.
@@ -359,6 +361,6 @@ En este ejemplo se genera *Test.exe.manifest*, que hace que la aplicación XCOPY
 ## <a name="see-also"></a>Vea también
 
 - [Tareas](../msbuild/msbuild-tasks.md)
-- [Tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
-- [SignFile (Tarea)](../msbuild/signfile-task.md)
+- [GenerateDeploymentManifest (tarea)](../msbuild/generatedeploymentmanifest-task.md)
+- [SignFile (tarea)](../msbuild/signfile-task.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Compilar de forma incremental | Microsoft Docs
+description: Aprenda a usar MSBuild para compilar de manera incremental de modo que los componentes compilados que todavía están actualizados no se vuelvan a compilar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +14,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b7d54db50b4f28277a81d149b4c0c5140b002b0
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634167"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436007"
 ---
-# <a name="how-to-build-incrementally"></a>Procedimiento Compilación de forma incremental
+# <a name="how-to-build-incrementally"></a>Cómo: Compilar de forma incremental
 
 Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), Microsoft Build Engine (MSBuild) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).
 
@@ -37,7 +39,7 @@ Es posible compilar un destino de forma incremental si se han especificado las e
       Outputs="hello.exe">
   ```
 
-MSBuild compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En el ejemplo siguiente, si algún archivo de la lista de elementos `@(CSFile)` es más reciente que el archivo *hello.exe*, MSBuild ejecuta el destino; de lo contrario, se omite:
+MSBuild compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En el ejemplo siguiente, si algún archivo de la lista de elementos `@(CSFile)` es más reciente que el archivo *hello.exe* , MSBuild ejecuta el destino; de lo contrario, se omite:
 
 ```xml
 <Target Name="Build"
@@ -61,9 +63,9 @@ Las tareas en las que se puede identificar una asignación directa entre salidas
 
 En el ejemplo siguiente se usa un proyecto que compila archivos de Ayuda para un sistema de Ayuda hipotético. El proyecto convierte archivos *.txt* de origen en archivos *.content* intermedios que, después, se combinan con archivos XML de metadatos para generar el archivo *.help* definitivo que usa el sistema de ayuda. El proyecto usa las tareas hipotéticas siguientes:
 
-- `GenerateContentFiles`: Convierte archivos *.txt* en archivos *.content*.
+- `GenerateContentFiles`: convierte archivos *.txt* en archivos *.content* .
 
-- `BuildHelp`: Combina archivos *.content* y archivos XML de metadatos para compilar el archivo *.help* definitivo.
+- `BuildHelp`: combina archivos *.content* y archivos XML de metadatos para compilar el archivo *.help* definitivo.
 
 El proyecto usa transformaciones para crear una asignación unívoca entre las entradas y los resultados en la tarea `GenerateContentFiles`. Para obtener más información, consulte [Transformaciones](../msbuild/msbuild-transforms.md). Además, el elemento `Output` se establece para que use automáticamente los resultados de la tarea `GenerateContentFiles` como entradas para la tarea `BuildHelp`.
 

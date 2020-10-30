@@ -1,5 +1,7 @@
 ---
 title: CPPClean (Tarea) | Microsoft Docs
+description: En este artículo se describe la tarea CPPClean, que se usa para eliminar los archivos temporales que MSBuild crea cuando se compila un proyecto de C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,22 +21,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b8f59b66ab1fc117a29d7ed8db2d380b4b11b437
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634349"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796113"
 ---
 # <a name="cppclean-task"></a>CPPClean (Tarea)
 
-Elimina los archivos temporales que MSBuild crea cuando se compila un proyecto de C++. El proceso que consiste en eliminar archivos de compilación se conoce como *limpieza*.
+Elimina los archivos temporales que MSBuild crea cuando se compila un proyecto de C++. El proceso que consiste en eliminar archivos de compilación se conoce como *limpieza* .
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea **CPPClean**.
+ En la siguiente tabla se describen los parámetros de la tarea **CPPClean** .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |**DeletedFiles**|Parámetro de salida `ITaskItem[]` opcional.<br /><br /> Define una matriz de elementos de archivos de salida de MSBuild que las tareas pueden consumir y emitir.|
 |**DoDelete**|Parámetro **Boolean** opcional.<br /><br /> Si `true`, limpie los archivos de compilación temporales.|

@@ -1,5 +1,7 @@
 ---
 title: AssignProjectConfiguration (Tarea) | Microsoft Docs
+description: Use la tarea AssignProjectConfiguration de MSBuild para aceptar una lista de cadenas de configuración y asignarlas a proyectos especificados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b543af39cbcd0301da7d0d353f8f7b6fa006f7ac
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508527"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353400"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration (Tarea)
 
@@ -26,13 +28,13 @@ Esta tarea acepta cadenas de configuración de lista y las asigna a los proyecto
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
- En la siguiente tabla se describen los parámetros de la tarea `AssignProjectConfiguration`.
+ En la siguiente tabla se describen los parámetros de la tarea `AssignProjectConfiguration` .
 
 |Parámetro|Description|
 |---------------|-----------------|
 |`ProjectReferences`|Parámetro de entrada <xref:Microsoft.Build.Framework.ITaskItem>`[]` necesario.<br /><br /> Proyectos que se van a configurar.|
 |`SolutionConfigurationContents`|Parámetro de salida `string` opcional.<br /><br /> Contiene una cadena XML que incluye una configuración de proyecto para cada proyecto. Las configuraciones se asignan a los proyectos con nombre.|
-|`DefaultToVcxPlatformMapping`|Parámetro de salida `string` opcional.<br /><br /> Contiene una lista delimitada por puntos y coma de asignaciones de los nombres de plataforma usados por la mayoría de los tipos a los usados por archivos *.vcxproj*.<br /><br /> Por ejemplo:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
+|`DefaultToVcxPlatformMapping`|Parámetro de salida `string` opcional.<br /><br /> Contiene una lista delimitada por puntos y coma de asignaciones de los nombres de plataforma usados por la mayoría de los tipos a los usados por archivos *.vcxproj* .<br /><br /> Por ejemplo:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
 |`VcxToDefaultPlatformMapping`|Opcional<br /><br /> Parámetro de salida `string`.<br /><br /> Contiene una lista delimitada por puntos y coma de asignaciones de los nombres de plataforma de *.vcxproj* a los nombres de plataforma usados por la mayoría de los tipos.<br /><br /> Por ejemplo:<br /><br /> `"Win32=AnyCPU;X64=X64"`|
 |`CurrentProjectConfiguration`|Parámetro de salida `string` opcional.<br /><br /> Contiene la configuración del proyecto actual.|
 |`CurrentProjectPlatform`|Parámetro de salida `string` opcional.<br /><br /> Contiene la plataforma del proyecto actual.|

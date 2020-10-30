@@ -1,5 +1,7 @@
 ---
 title: Delete (Tarea) | Microsoft Docs
+description: Obtenga información sobre los parámetros y las consideraciones sobre el uso de la tarea Delete de MSBuild para eliminar los archivos especificados.
+ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288915"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796490"
 ---
 # <a name="delete-task"></a>Delete (tarea)
 

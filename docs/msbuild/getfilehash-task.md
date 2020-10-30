@@ -1,5 +1,7 @@
 ---
 title: Tarea GetFileHash | Microsoft Docs
+description: Obtenga información sobre cómo usar la tarea GetFileHash de MSBuild para calcular las sumas de comprobación del contenido de un archivo o conjunto de archivos.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e9e6e30cf8a224bfdfbde2c728545092bd1494b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578649"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436845"
 ---
 # <a name="getfilehash-task"></a>Tarea GetFileHash
 
@@ -30,9 +32,9 @@ Esta tarea se agregó en la versión 15.8, pero requiere una [solución alternat
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
- En la siguiente tabla se describen los parámetros de la tarea `GetFileHash`.
+ En la siguiente tabla se describen los parámetros de la tarea `GetFileHash` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`Files`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br />Archivos a los que se va a aplicar un algoritmo hash.|
 |`Items`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />Entrada `Files` con metadatos adicionales establecidos en el hash del archivo.|

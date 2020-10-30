@@ -1,5 +1,7 @@
 ---
 title: GetAssemblyIdentity (Tarea) | Microsoft Docs
+description: Use la tarea GetAssemblyIdentity de MSBuild para recuperar las identidades de ensamblado de los archivos especificados y generar la información de identidad.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a09bd4955cee6e50368f7155fb2e03c2c1758bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8e242864ca68e0d84ace5f8ebeefd02881a394f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634024"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436866"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (tarea)
 
@@ -31,9 +33,9 @@ Recupera las identidades de ensamblado de los archivos especificados y genera la
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
-En la siguiente tabla se describen los parámetros de la tarea `GetAssemblyIdentity`.
+En la siguiente tabla se describen los parámetros de la tarea `GetAssemblyIdentity` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`Assemblies`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las identidades de ensamblado recuperadas.|
 |`AssemblyFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos de los que se recuperarán las identidades.|

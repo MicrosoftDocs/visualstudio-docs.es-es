@@ -1,5 +1,7 @@
 ---
 title: Compilación de varios proyectos en paralelo con MSBuild | Microsoft Docs
+description: Obtenga información sobre la configuración de MSBuild que puede usar para compilar varios proyectos más rápidamente si los ejecuta en paralelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634505"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353244"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Compilar varios proyectos en paralelo con MSBuild
 
@@ -28,11 +30,11 @@ Puede usar MSBuild para compilar varios proyectos más rápidamente si los ejecu
 - El parámetro de tarea <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> en una tarea de MSBuild.
 
 > [!NOTE]
-> El modificador **-verbosity** ( **-v**) en una línea de comandos también puede afectar al rendimiento de la compilación. Es posible que disminuya el rendimiento de la compilación si el nivel de detalle de la información del registro de compilación se establece en "detailed" o "diagnostic", que se usan para solucionar problemas. Para obtener más información, vea [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) y [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
+> El modificador **-verbosity** ( **-v** ) en una línea de comandos también puede afectar al rendimiento de la compilación. Es posible que disminuya el rendimiento de la compilación si el nivel de detalle de la información del registro de compilación se establece en "detailed" o "diagnostic", que se usan para solucionar problemas. Para obtener más información, vea [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) y [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="-maxcpucount-switch"></a>Modificador -maxcpucount
 
-Si usa el modificador `-maxcpucount`, o `-m` para abreviar, MSBuild puede crear el número especificado de procesos de *MSBuild.exe*, que se pueden ejecutar en paralelo. Estos procesos también se denominan "procesos de trabajo". Cada proceso de trabajo utiliza un núcleo o procesador independiente, si hay alguno disponible, para compilar un proyecto al mismo tiempo ya que los demás procesadores disponibles pueden estar compilando otros proyectos. Por ejemplo, si se establece este modificador en un valor "4", MSBuild creará cuatro procesos de trabajo para compilar el proyecto.
+Si usa el modificador `-maxcpucount`, o `-m` para abreviar, MSBuild puede crear el número especificado de procesos de *MSBuild.exe* , que se pueden ejecutar en paralelo. Estos procesos también se denominan "procesos de trabajo". Cada proceso de trabajo utiliza un núcleo o procesador independiente, si hay alguno disponible, para compilar un proyecto al mismo tiempo ya que los demás procesadores disponibles pueden estar compilando otros proyectos. Por ejemplo, si se establece este modificador en un valor "4", MSBuild creará cuatro procesos de trabajo para compilar el proyecto.
 
 Si incluye el modificador `-maxcpucount` sin especificar un valor, MSBuild podrá usar todos los procesadores de que disponga el equipo.
 
@@ -72,7 +74,7 @@ A continuación se muestra un ejemplo tomado de *microsoft.common.targets* sobre
 </MSBuild>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso de varios procesadores para compilar proyectos](../msbuild/using-multiple-processors-to-build-projects.md)
 - [Escribir registradores que reconocen varios procesadores](../msbuild/writing-multi-processor-aware-loggers.md)

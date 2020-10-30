@@ -1,5 +1,7 @@
 ---
 title: Tarea AssignTargetPath| Microsoft Docs
+description: Use la tarea AssignTargetPath de MSBuild para aceptar una lista de archivos y agregar atributos TargetPath si todavía no se especifican.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e56bb8817551e24d1b5aceef2f571e35f1db43e
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634544"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353335"
 ---
 # <a name="assigntargetpath-task"></a>Tarea AssignTargetPath
 
@@ -26,15 +28,15 @@ Esta tarea acepta una lista de archivos y agrega atributos `<TargetPath>` si aú
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
-En la siguiente tabla se describen los parámetros de la tarea `AssignTargetPath`.
+En la siguiente tabla se describen los parámetros de la tarea `AssignTargetPath` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`RootFolder`|Parámetro de entrada `string` opcional.<br /><br /> Contiene la ruta de acceso a la carpeta que contiene los vínculos de destino.|
 |`Files`|Parámetro de entrada <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene la lista de entrada de archivos.|
 |`AssignedFiles`|Opcional<br /><br /> Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br /> Contiene la lista de archivos resultante.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

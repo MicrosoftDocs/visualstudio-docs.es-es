@@ -1,5 +1,7 @@
 ---
 title: Comparar propiedades y elementos | Microsoft Docs
+description: Obtenga información sobre cómo las propiedades y los elementos de MSBuild pasan información a las tareas, evalúan las condiciones y almacenan los valores a los que puede hacer referencia el archivo del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634414"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796776"
 ---
 # <a name="compare-properties-and-items"></a>Comparación de propiedades y elementos
 
@@ -27,7 +29,7 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
 
 ## <a name="scalars-and-vectors"></a>Escalares y vectores
 
-Dado que las propiedades de MSBuild son pares de nombre-valor que tienen un solo valor de cadena, a menudo se describen como *escalares*. Puesto que los tipos de elemento de MSBuild son listas de elementos, a menudo se describen como *vector*. Sin embargo, en la práctica, las propiedades pueden representar varios valores y los tipos de elemento pueden tener un elemento o ninguno.
+Dado que las propiedades de MSBuild son pares de nombre-valor que tienen un solo valor de cadena, a menudo se describen como *escalares* . Puesto que los tipos de elemento de MSBuild son listas de elementos, a menudo se describen como *vector* . Sin embargo, en la práctica, las propiedades pueden representar varios valores y los tipos de elemento pueden tener un elemento o ninguno.
 
 ### <a name="target-dependency-injection"></a>Inserción de dependencias de destino
 

@@ -1,5 +1,7 @@
 ---
 title: Exec (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo usar la tarea Exec de MSBuild para ejecutar un programa o un comando especificado mediante los argumentos especificados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288928"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436730"
 ---
 # <a name="exec-task"></a>Exec (tarea)
 
@@ -35,7 +37,7 @@ En la tabla siguiente se describen los parámetros de la tarea `Exec`.
 
 |Parámetro|Descripción|
 |---------------|-----------------|
-|`Command`|Parámetro `String` requerido.<br /><br /> Comandos que se van a ejecutar. Pueden ser comandos del sistema, como attrib, o un ejecutable, como *program.exe*, *runprogram.bat* o *setup.msi*.<br /><br /> Este parámetro puede contener varias líneas de comandos. Alternativamente, puede colocar varios comandos en un archivo por lotes y ejecutarlo utilizando este parámetro.|
+|`Command`|Parámetro `String` requerido.<br /><br /> Comandos que se van a ejecutar. Pueden ser comandos del sistema, como attrib, o un ejecutable, como *program.exe* , *runprogram.bat* o *setup.msi* .<br /><br /> Este parámetro puede contener varias líneas de comandos. Alternativamente, puede colocar varios comandos en un archivo por lotes y ejecutarlo utilizando este parámetro.|
 |`ConsoleOutput`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> La salida de cada elemento es una línea de la salida estándar o de la secuencia de errores estándar que emite la herramienta. Solo se captura si `ConsoleToMsBuild` está establecido en `true`.|
 |`ConsoleToMsBuild`|Parámetro `Boolean` opcional.<br /><br /> Si se establece en `true`, la tarea capturará el error estándar y la salida estándar de la herramienta y hará que estén disponibles en el parámetro de salida `ConsoleOutput`.<br /><br />Predeterminado: `false`.|
 |`CustomErrorRegularExpression`|Parámetro `String` opcional.<br /><br /> Especifica una expresión regular que se utiliza para identificar líneas de error en los resultados de la herramienta. Esto resulta útil para las herramientas que generan resultados con un formato poco común.<br /><br />Predeterminado: `null` (sin procesamiento personalizado).|

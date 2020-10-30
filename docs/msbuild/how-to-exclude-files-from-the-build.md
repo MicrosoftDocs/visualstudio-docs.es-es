@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Excluir archivos de la compilación | Microsoft Docs'
+description: Obtenga información sobre cómo excluir explícitamente o incluir de manera condicional archivos de las compilaciones en los archivos de proyecto de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633868"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436366"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Cómo: Excluir archivos de la compilación
 
@@ -44,7 +46,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
     ```
 
-    o
+    or
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
@@ -58,13 +60,13 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
     ```
 
-    o
+    or
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos los archivos *.jpg* de los subdirectorios del directorio *Images*, excepto los del directorio *Version2*
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos los archivos *.jpg* de los subdirectorios del directorio *Images* , excepto los del directorio *Version2*
 
 - Utilice los siguientes atributos `Include` y `Exclude`:
 
@@ -93,7 +95,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
 
 ## <a name="example"></a>Ejemplo
 
- En el ejemplo de código siguiente se compila un proyecto con todos los archivos *.cs* del directorio, excepto *Form2.cs*.
+ En el ejemplo de código siguiente se compila un proyecto con todos los archivos *.cs* del directorio, excepto *Form2.cs* .
 
 ```xml
 <Project DefaultTargets="Compile"

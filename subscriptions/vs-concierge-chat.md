@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Obtenga información sobre la ventaja Chat de soporte técnico incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006324"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353387"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Chat de soporte técnico en las suscripciones de Visual Studio.
 El servicio Chat de soporte técnico proporciona asistencia en la búsqueda de información de productos y documentación técnica, y además le ayuda a utilizar las ventajas de la suscripción de Visual Studio.
@@ -23,17 +23,17 @@ El servicio está disponible 24 horas al día los 7 días de la semana, y actual
 Obtener ayuda a través del servicio de chat de soporte técnico es un proceso muy sencillo.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de chat de soporte técnico en la sección Soporte técnico de la página Beneficios y haga clic en **Chatear ahora**.
+2. Busque el icono de chat de soporte técnico en la sección Soporte técnico de la página Beneficios y haga clic en **Chatear ahora** .
     > [!div class="mx-imgBorder"]
-    > ![Icono de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Icono de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Haga clic en "Chatear ahora" para iniciar una sesión de chat nueva.")
 
-3. Haga clic en **Continuar**.
+3. Haga clic en **Continuar** .
 
 4. Se abrirá una ventana de chat y verá un contador que muestra la posición que ocupa en la cola.
 
 5. Cuando haya un agente disponible, el chat dará comienzo.
     > [!div class="mx-imgBorder"]
-    > ![Sesión de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Sesión de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-session.png "La ventana de sesión de chat aparecerá cuando un agente se una a la sesión.")
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |

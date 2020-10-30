@@ -1,5 +1,7 @@
 ---
 title: Tarea FindAppConfigFile | Microsoft Docs
+description: Obtenga información sobre cómo usar la tarea FindAppConfigFile de MSBuild para buscar el archivo app.config, si hay alguno, en las listas proporcionadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,22 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c54f3c222588cd13711c832d12f7598f0cc5e223
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d186a72bcc7af18671c279ff392de066b6fd9fee
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634180"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435675"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile (tarea)
 
-Busca el archivo *app.config*, si hay alguno, en las listas proporcionadas.
+Busca el archivo *app.config* , si hay alguno, en las listas proporcionadas.
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea `FindAppConfigFile`.
+ En la siguiente tabla se describen los parámetros de la tarea `FindAppConfigFile` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`AppConfigFile`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica el primer elemento coincidente que se encuentra en la lista, si existe.|
 |`PrimaryList`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica la lista principal en la que se va a buscar.|

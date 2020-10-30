@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/06/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Obtenga información sobre el beneficio de LinkedIn Learning incluido como parte de una suscripción a LinkedIn Premium incluida en suscripciones seleccionadas de Visual Studio.
-ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805895"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435854"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Beneficio de LinkedIn Learning en suscripciones de Visual Studio
 
@@ -27,7 +27,7 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 
 2. Busque el icono de LinkedIn Learning en la categoría de educación y haga clic en el vínculo **Obtener código** .
    > [!div class="mx-imgBorder"]
-   > ![Icono de la ventaja de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
+   > ![Icono de la ventaja de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png "Haga clic en "Obtener código" para solicitar el código y poder comenzar.")
 
 3. Si ya tiene una cuenta de LinkedIn y ha iniciado sesión automáticamente, se le dirigirá inmediatamente a la página de activación de la prestación LinkedIn Learning.  Si tiene una cuenta de LinkedIn, pero no ha iniciado sesión automáticamente, solo tiene que escribir su nombre de usuario y contraseña y, después, hacer clic en **Iniciar sesión** .  Vaya a [este paso](#activate-your-offer) para activar la oferta.
 
@@ -57,15 +57,15 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 ### <a name="activate-your-offer"></a>Activar la oferta
 15. Ahora que ya ha iniciado sesión en la cuenta de LinkedIn o ha creado una desde cero, estará listo para activar la suscripción Premium y empezar a disfrutar de LinkedIn Learning.  Haga clic en **Activate your offer** (Activar la oferta).
    > [!div class="mx-imgBorder"]
-   > ![Activación de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![Activación de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png "Haga clic en "Activar la oferta" para empezar el aprendizaje.")
 
 16. Puede empezar a explorar las aptitudes que le interesen.  Realice selecciones en la lista de recomendaciones, busque otras aptitudes o haga clic en **Omitir** para continuar sin elegir aptitudes.
    > [!div class="mx-imgBorder"]
-   > ![Aptitudes en LinkedIn Learning](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![Aptitudes en LinkedIn Learning](_img/vs-linkedin/vs-linkedin-skills.png "Elija las aptitudes que quiere explorar.")
 
 17. Ha activado correctamente su oferta de suscripción Premium y ya puede empezar a usar LinkedIn Learning y todas las ventajas de Premium.
    > [!div class="mx-imgBorder"]
-   > ![Inicio de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![Inicio de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png "Le damos la bienvenida a LinkedIn Premium con LinkedIn Learning.")
 
 ## <a name="eligibility"></a>Elegibilidad
 

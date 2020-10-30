@@ -1,21 +1,21 @@
 ---
-title: Responsabilidades del administrador | Visual Studio Marketplace
+title: Responsabilidades del administrador en las suscripciones de Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 09/03/2019
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
-ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006142"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467471"
 ---
-# <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
-Como administrador, puede administrar suscripciones de la organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
+# <a name="overview-of-admin-responsibilities"></a>Introducción a las responsabilidades del administrador
+Como administrador, puede administrar las suscripciones de la organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
 
 ## <a name="roles--responsibilities"></a>Roles y responsabilidades
 Un administrador de Suscripciones de Visual Studio tiene cuatro responsabilidades esenciales:

@@ -1,7 +1,6 @@
 ---
 title: Buscar y reemplazar texto, y selección de varios símbolos de inserción
-description: Aprenda a usar la característica Buscar y reemplazar del editor de código de Visual Studio.
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298564"
+ms.locfileid: "92334199"
 ---
 # <a name="find-and-replace-text"></a>Buscar y reemplazar texto
 
@@ -123,9 +122,9 @@ Para los comportamientos de selección de varios símbolos de inserción, use la
 |**Ctrl**+**Alt** + doble clic|Agregar una selección de palabra secundaria|
 |**Ctrl**+**Alt** + clic + arrastrar|Agregar una selección secundaria|
 |**Mayús**+**Alt**+ **.**|Agregar el siguiente texto coincidente como una selección|
-|**Ctrl**+**Mayús**+**Alt**+ **,**|Agregar todo el texto coincidente como una selección|
+|**Mayús**+**Alt**+ **;**|Agregar todo el texto coincidente como una selección|
 |**Mayús**+**Alt**+ **,**|Quitar la última repetición seleccionada|
-|**Ctrl**+**Mayús**+**Alt**+ **.**|Omitir la siguiente repetición coincidente|
+|**Mayús**+**Alt**+ **/**|Omitir la siguiente repetición coincidente|
 |**Alt** + clic|Agregar una selección de cuadro|
 |**Esc** o clic|Borrar todas las selecciones|
 

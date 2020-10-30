@@ -1,5 +1,7 @@
 ---
 title: Copy (tarea) | Microsoft Docs
+description: Obtenga información sobre cómo usar la tarea Copy de MSBuild para copiar archivos en una ubicación de archivo o carpeta nueva del sistema de archivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508046"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796234"
 ---
 # <a name="copy-task"></a>Copy (tarea)
 
@@ -34,9 +36,9 @@ Copia los archivos en una nueva ubicación del sistema de archivos.
 
 ## <a name="parameters"></a>Parámetros
 
-En la siguiente tabla se describen los parámetros de la tarea `Copy`.
+En la siguiente tabla se describen los parámetros de la tarea `Copy` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`CopiedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los elementos que se han copiado correctamente, *incluidos* aquellos que no se han copiado realmente, sino que se han omitido porque ya estaban actualizados y `SkipUnchangedFiles` era `true`.|
 |`DestinationFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica la lista de archivos en la que se copiarán los archivos de código fuente. Se espera que esta lista sea una asignación unívoca con la lista especificada en el parámetro `SourceFiles`. Es decir, el primer archivo especificado en `SourceFiles` se copiará en la primera ubicación especificada en `DestinationFiles`, etc.|
@@ -74,9 +76,9 @@ Se debe especificar el parámetro `DestinationFolder` o `DestinationFiles`, pero
 
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
-En el ejemplo siguiente se copian los elementos de la colección de elementos `MySourceFiles` en la carpeta *c:\MyProject\Destination*.
+En el ejemplo siguiente se copian los elementos de la colección de elementos `MySourceFiles` en la carpeta *c:\MyProject\Destination* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -95,9 +97,9 @@ En el ejemplo siguiente se copian los elementos de la colección de elementos `M
 </Project>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
-En el ejemplo siguiente se muestra cómo hacer una copia recursiva. Este proyecto copia de forma recursiva todos los archivos de *c:\MySourceTree* en *c:\MyDestinationTree*, manteniendo la estructura de directorios.
+En el ejemplo siguiente se muestra cómo hacer una copia recursiva. Este proyecto copia de forma recursiva todos los archivos de *c:\MySourceTree* en *c:\MyDestinationTree* , manteniendo la estructura de directorios.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

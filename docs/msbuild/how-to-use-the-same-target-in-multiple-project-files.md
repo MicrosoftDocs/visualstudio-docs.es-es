@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Usar el mismo destino en varios archivos de proyecto | Microsoft Docs
+description: Obtenga información sobre cómo guardar un destino en un archivo del proyecto de MSBuild e importarlo a cualquier otro proyecto que necesite usar el destino.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255572"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436062"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedimiento Usar el mismo destino en varios archivos de proyecto
 
@@ -40,7 +42,7 @@ El elemento `Import` se utiliza para insertar un archivo de proyecto en otro arc
 
  Cuando MSBuild alcanza un elemento `Import`, el proyecto importado se inserta de manera efectiva en el proyecto de importación en la ubicación del elemento `Import`. Por tanto, la ubicación del elemento `Import` puede afectar a los valores de propiedades y elementos. Es importante comprender las propiedades y elementos que especifica el proyecto importado, así como las propiedades y los elementos que utiliza dicho proyecto.
 
- Cuando se compila el proyecto, primero se evalúan todas las propiedades y después, los elementos. Por ejemplo, en el código XML siguiente se define el archivo de proyecto importado *MyCommon.targets*:
+ Cuando se compila el proyecto, primero se evalúan todas las propiedades y después, los elementos. Por ejemplo, en el código XML siguiente se define el archivo de proyecto importado *MyCommon.targets* :
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -54,7 +56,7 @@ El elemento `Import` se utiliza para insertar un archivo de proyecto en otro arc
 </Project>
 ```
 
- En el código XML siguiente se define *MyApp.proj*, que importa *MyCommon.targets*:
+ En el código XML siguiente se define *MyApp.proj* , que importa *MyCommon.targets* :
 
 ```xml
 <Project
@@ -71,7 +73,7 @@ El elemento `Import` se utiliza para insertar un archivo de proyecto en otro arc
 
  `Name="MyCommon"`
 
- Dado que el proyecto se importa una vez definida la propiedad `Name` en *MyApp.proj*, la definición de `Name` en *MyCommon.targets* reemplaza la definición en *MyApp.proj*. Si se importara el proyecto antes de definir la propiedad Name, la compilación mostraría el siguiente mensaje:
+ Dado que el proyecto se importa una vez definida la propiedad `Name` en *MyApp.proj* , la definición de `Name` en *MyCommon.targets* reemplaza la definición en *MyApp.proj* . Si se importara el proyecto antes de definir la propiedad Name, la compilación mostraría el siguiente mensaje:
 
  `Name="MyApp"`
 
@@ -83,7 +85,7 @@ El elemento `Import` se utiliza para insertar un archivo de proyecto en otro arc
 
 3. En el archivo de proyecto, defina todas las propiedades y los elementos que deben reemplazar las definiciones predeterminadas de propiedades y elementos del proyecto importado.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
  En el ejemplo de código siguiente se muestra el archivo *MyCommon.targets* importado por el segundo ejemplo de código. El archivo *.targets* evalúa las propiedades del proyecto de importación para configurar la compilación.
 
@@ -102,9 +104,9 @@ El elemento `Import` se utiliza para insertar un archivo de proyecto en otro arc
 </Project>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
- En el ejemplo de código siguiente se importa el archivo *MyCommon.targets*.
+ En el ejemplo de código siguiente se importa el archivo *MyCommon.targets* .
 
 ```xml
 <Project DefaultTargets="Build"

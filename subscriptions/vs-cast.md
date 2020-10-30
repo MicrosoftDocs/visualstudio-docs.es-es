@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 03/02/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
-ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005955"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353374"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
 Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.
@@ -23,17 +23,17 @@ Los desarrolladores necesitan información clave sobre su software al realizar l
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Busque el icono de la ventaja de CAST Highlight en la categoría "Herramientas" y haga clic en **Obtener código**.
+2. Busque el icono de la ventaja de CAST Highlight en la categoría "Herramientas" y haga clic en **Obtener código** .
 
    > [!div class="mx-imgBorder"]
-   > ![Icono de la ventaja de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![Icono de la ventaja de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Haga clic en "Obtener código" en el icono de la ventaja de CAST Highlight para comenzar.")
 
-0. Verá un mensaje que le informará de que el código se ha recuperado correctamente.  Haga clic en **Activar**. (Si decide no efectuar la activación en este momento, siempre puede volver al icono de CAST Highlight en el portal de suscripción.  El vínculo "Obtener código" cambiará a "Activar" y, si hace clic en él, se reanudará el proceso de activación).
+0. Verá un mensaje que le informará de que el código se ha recuperado correctamente.  Haga clic en **Activar** . (Si decide no efectuar la activación en este momento, siempre puede volver al icono de CAST Highlight en el portal de suscripción.  El vínculo "Obtener código" cambiará a "Activar" y, si hace clic en él, se reanudará el proceso de activación).
 
-0. Se le redirigirá a la página de CAST Highlight, donde podrá explorar las características de su suscripción.  Cuando esté a punto para crear la cuenta, solo tendrá que proporcionar su información de contacto en el formulario web y hacer clic en **Enviar**.
+0. Se le redirigirá a la página de CAST Highlight, donde podrá explorar las características de su suscripción.  Cuando esté a punto para crear la cuenta, solo tendrá que proporcionar su información de contacto en el formulario web y hacer clic en **Enviar** .
 
     > [!div class="mx-imgBorder"]
-    > ![Página de aterrizaje de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![Página de aterrizaje de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png "Proporcione su información personal para activar la suscripción de CAST.")
 
    > [!NOTE]
    > Las activaciones de la ventaja de CAST Highlight se limitan a diez por organización.  Si ya se han consumido las diez activaciones de su organización, no podrá activar la ventaja de CAST Highlight y recibirá un correo electrónico con información más detallada.

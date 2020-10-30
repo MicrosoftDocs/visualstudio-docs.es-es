@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 783d7a116dbdf530008c3271d38d15f7db3c3c98
-ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
+ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
+ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91750763"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92502193"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Inicio rápido: Uso de Docker con una aplicación de página única de React en Visual Studio
 
@@ -23,14 +23,14 @@ Con Visual Studio, es muy fácil compilar, depurar y ejecutar aplicaciones ASP.
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) con las cargas de trabajo **Desarrollo web** , **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
 * Para publicar en Azure Container Registry, una suscripción de Azure. [Regístrese para obtener una evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
 * Para los contenedores de Windows, Windows 10 versión 1903 o posterior, para usar las imágenes de Docker a las que se hace referencia en este artículo.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web** , **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
 * [Herramientas de desarrollo de .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) para el desarrollo con .NET Core 3.1.
 * Para publicar en Azure Container Registry, una suscripción de Azure. [Regístrese para obtener una evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
@@ -44,8 +44,8 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 ## <a name="create-a-project-and-add-docker-support"></a>Creación de un proyecto y adición de compatibilidad con Docker
 
 ::: moniker range="vs-2017"
-1. Cree un nuevo proyecto con la plantilla **Aplicación web ASP.NET Core**.
-1. Seleccione **React.js**. No puede seleccionar **Habilitar compatibilidad con Docker**, pero no se preocupe, puede agregar esa compatibilidad después de crear el proyecto.
+1. Cree un nuevo proyecto con la plantilla **Aplicación web ASP.NET Core** .
+1. Seleccione **React.js** . No puede seleccionar **Habilitar compatibilidad con Docker** , pero no se preocupe, puede agregar esa compatibilidad después de crear el proyecto.
 
    ![Captura de pantalla del nuevo proyecto React.js](media/container-tools-react/vs-2017/new-react-project.png)
 
@@ -53,11 +53,11 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 
    ![Adición de compatibilidad con Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
-1. Seleccione el tipo de contenedor y haga clic en **Aceptar**.
+1. Seleccione el tipo de contenedor y haga clic en **Aceptar** .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. Cree un nuevo proyecto con la plantilla **Aplicación web ASP.NET Core**.
-1. Seleccione **React.js**y haga clic en **Crear**. No puede seleccionar **Habilitar compatibilidad con Docker**, pero no se preocupe, puede agregar esa compatibilidad más adelante.
+1. Cree un nuevo proyecto con la plantilla **Aplicación web ASP.NET Core** .
+1. Seleccione **React.js** y haga clic en **Crear** . No puede seleccionar **Habilitar compatibilidad con Docker** , pero no se preocupe, puede agregar esa compatibilidad más adelante.
 
    ![Captura de pantalla del nuevo proyecto React.js](media/container-tools-react/vs-2019/new-react-project.png)
 
@@ -72,7 +72,7 @@ El siguiente paso es diferente en función de si usa contenedores de Linux o con
 
 ## <a name="modify-the-dockerfile-linux-containers"></a>Modificación de Dockerfile (contenedores de Linux)
 
-Se agrega al proyecto un *Dockerfile*, la receta para crear una imagen de Docker final. Vea [Dockerfile reference (Referencia de Dockerfile)](https://docs.docker.com/engine/reference/builder/) para obtener una descripción de los comandos que contiene.
+Se agrega al proyecto un *Dockerfile* , la receta para crear una imagen de Docker final. Vea [Dockerfile reference (Referencia de Dockerfile)](https://docs.docker.com/engine/reference/builder/) para obtener una descripción de los comandos que contiene.
 
 Abra el archivo *Dockerfile* en el proyecto y agregue las líneas siguientes para instalar Node.js 10.x en el contenedor. Asegúrese de agregar estas dos líneas en la primera sección, para agregar la instalación del administrador de paquetes de Node *npm.exe* a la imagen base, así como a la sección `build`.
 
@@ -112,7 +112,7 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 ```
 
-El elemento *Dockerfile* anterior se basa en la imagen [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e incluye instrucciones para modificar la imagen base mediante la creación del proyecto y la adición al contenedor.
+El elemento *Dockerfile* anterior se basa en la imagen [mcr.microsoft.com/dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) e incluye instrucciones para modificar la imagen base mediante la creación del proyecto y su incorporación al contenedor.
 
 Si la casilla **Configurar para HTTPS** del cuadro de diálogo del nuevo proyecto está marcada, el *Dockerfile* expondrá dos puertos. Uno se utiliza para el tráfico HTTP, mientras que el otro se emplea para HTTPS. Si la casilla no está marcada, se expondrá un único puerto (80) para el tráfico HTTP.
 
@@ -166,19 +166,19 @@ Actualice Dockerfile agregando las líneas siguientes. Esta acción copiará nod
       FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
-      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
-      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
+      RUN dotnet restore "WebApplicationReact1/WebApplicationReact1.csproj"
       COPY . .
-      WORKDIR "/src/WebApplication37"
-      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+      WORKDIR "/src/WebApplicationReact1"
+      RUN dotnet build "WebApplicationReact1.csproj" -c Release -o /app/build
 
       FROM build AS publish
-      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+      RUN dotnet publish "WebApplicationReact1.csproj" -c Release -o /app/publish
 
       FROM base AS final
       WORKDIR /app
       COPY --from=publish /app/publish .
-      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
    1. Actualice el archivo .dockerignore quitando `**/bin`.
@@ -187,7 +187,7 @@ Actualice Dockerfile agregando las líneas siguientes. Esta acción copiará nod
 
 Seleccione **Docker** en la lista desplegable de depuración de la barra de herramientas y empiece a depurar la aplicación. Es posible que vea un mensaje que pregunte sobre cómo confiar en un certificado; elija la opción de confiar en el certificado para continuar.  La primera vez que compila, Docker descarga las imágenes base, por lo que puede tardar un poco más.
 
-La opción **Herramientas de contenedor** de la ventana **Salida** muestra las acciones que están teniendo lugar. Debería ver los pasos de instalación asociados con *npm.exe*.
+La opción **Herramientas de contenedor** de la ventana **Salida** muestra las acciones que están teniendo lugar. Debería ver los pasos de instalación asociados con *npm.exe* .
 
 El explorador muestra la página principal de la aplicación.
 
@@ -198,26 +198,26 @@ El explorador muestra la página principal de la aplicación.
    ![Captura de pantalla de la aplicación en ejecución](media/container-tools-react/vs-2019/running-app.png)
 ::: moniker-end
 
-Intente navegar a la página *Contador* y pruebe el código del lado cliente para el contador haciendo clic en el botón **Incremento**.
+Intente navegar a la página *Contador* y pruebe el código del lado cliente para el contador haciendo clic en el botón **Incremento** .
 
-Abra la **Consola del Administrador de paquetes** (PMC) desde el menú **Herramientas** > Administrador de paquetes NuGet, **Consola del Administrador de paquetes**.
+Abra la **Consola del Administrador de paquetes** (PMC) desde el menú **Herramientas** > Administrador de paquetes NuGet, **Consola del Administrador de paquetes** .
 
-Seguidamente, se aplica la etiqueta *dev* a la imagen de Docker resultante de la aplicación. La imagen se basa en la etiqueta *2.2-aspnetcore-runtime* de la imagen base *microsoft/dotnet*. Ejecute el comando `docker images` en la ventana **Consola del Administrador de paquetes** (PMC). Se muestran las imágenes en la máquina:
+Seguidamente, se aplica la etiqueta *dev* a la imagen de Docker resultante de la aplicación. La imagen se basa en la etiqueta *3.1-nanoserver-1903* de la imagen base *dotnet/core/aspnet* . Ejecute el comando `docker images` en la ventana **Consola del Administrador de paquetes** (PMC). Se muestran las imágenes en la máquina:
 
 ```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-webapplication37  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
+REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
+webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]
-> La imagen **dev** no contiene los archivos binarios de la aplicación ni otro contenido, ya que las configuraciones de **Depurar** usan el montaje de volumen para proporcionar la experiencia de depuración y edición iterativa. Para crear una imagen de producción que contenga todo el contenido, use la configuración de **Liberar**.
+> La imagen **dev** no contiene los archivos binarios de la aplicación ni otro contenido, ya que las configuraciones de **Depurar** usan el montaje de volumen para proporcionar la experiencia de depuración y edición iterativa. Para crear una imagen de producción que contenga todo el contenido, use la configuración de **Liberar** .
 
 Ejecute el comando `docker ps` en la PMC. Tenga en cuenta que la aplicación se ejecuta mediante el contenedor:
 
 ```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
+CONTAINER ID        IMAGE                      COMMAND               CREATED             STATUS              PORTS                                           NAMES
+56d1b1008c89        webapplicationreact1:dev   "tail -f /dev/null"   2 hours ago         Up 2 hours          0.0.0.0:32771->80/tcp, 0.0.0.0:32770->443/tcp   WebApplication-React1
 ```
 
 ## <a name="publish-docker-images"></a>Publicar imágenes de Docker
@@ -227,9 +227,9 @@ Una vez completado el ciclo de desarrollo y depuración de la aplicación, puede
 :::moniker range="vs-2017"
 
 1. Cambie la lista desplegable de configuración a **Versión** y compile la aplicación.
-1. Haga clic con el botón derecho en el **Explorador de soluciones** y elija **Publicar**.
-1. En el cuadro de diálogo de destino de publicación, seleccione **Container Registry**.
-1. Elija **Crear una instancia de Azure Container Registry** y haga clic en **Publicar**.
+1. Haga clic con el botón derecho en el **Explorador de soluciones** y elija **Publicar** .
+1. En el cuadro de diálogo de destino de publicación, seleccione **Container Registry** .
+1. Elija **Crear una instancia de Azure Container Registry** y haga clic en **Publicar** .
 1. Rellene los valores deseados en el **Create a new Azure Container Registry** (Crear una nueva instancia de Azure Container Registry).
 
     | Parámetro      | Valor sugerido  | Descripción                                |
@@ -242,7 +242,7 @@ Una vez completado el ciclo de desarrollo y depuración de la aplicación, puede
 
     ![Cuadro de diálogo Crear Azure Container Registry de Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
-1. Seleccione **Crear**.
+1. Seleccione **Crear** .
 
    ![Captura de pantalla que muestra la publicación correcta](media/container-tools/publish-succeeded.png)
 :::moniker-end
@@ -250,17 +250,17 @@ Una vez completado el ciclo de desarrollo y depuración de la aplicación, puede
 :::moniker range=">=vs-2019"
 
 1. Cambie la lista desplegable de configuración a **Versión** y compile la aplicación.
-1. Haga clic con el botón derecho en el **Explorador de soluciones** y elija **Publicar**.
-1. En el cuadro de diálogo de destino de publicación, seleccione **Container Registry para Docker**.
+1. Haga clic con el botón derecho en el **Explorador de soluciones** y elija **Publicar** .
+1. En el cuadro de diálogo de destino de publicación, seleccione **Container Registry para Docker** .
 
    ![Elija Container Registry para Docker.](media/container-tools-react/vs-2019/publish-dialog1.png)
 
-1. Después, elija **Azure Container Registry**.
+1. Después, elija **Azure Container Registry** .
 
    ![Elija Azure Container Registry.](media/container-tools-react/vs-2019/publish-dialog-acr.png)
 
-1. Elija **Crear una instancia de Azure Container Registry**.
-1. Rellene los valores deseados en la pantalla **Crear una instancia de Azure Container Registry**.
+1. Elija **Crear una instancia de Azure Container Registry** .
+1. Rellene los valores deseados en la pantalla **Crear una instancia de Azure Container Registry** .
 
     | Parámetro      | Valor sugerido  | Descripción                                |
     | ------------ |  ------- | -------------------------------------------------- |
@@ -272,15 +272,15 @@ Una vez completado el ciclo de desarrollo y depuración de la aplicación, puede
 
     ![Cuadro de diálogo Crear Azure Container Registry de Visual Studio](media/container-tools-react/vs-2019/azure-container-registry-details.png)
 
-1. Seleccione **Crear** y, después, **Finalizar**.
+1. Seleccione **Crear** y, después, **Finalizar** .
 
    ![Seleccionar o crear una nueva instancia de ACR](media/container-tools-react/vs-2019/publish-dialog2.png)
 
-   Una vez finalizado el proceso de publicación, puede revisar la configuración de publicación y editarla, si es necesario, o bien volver a publicar la imagen con el botón **Publicar**.
+   Una vez finalizado el proceso de publicación, puede revisar la configuración de publicación y editarla, si es necesario, o bien volver a publicar la imagen con el botón **Publicar** .
 
    ![Captura de pantalla que muestra la publicación correcta](media/container-tools-react/vs-2019/publish-finished.png)
 
-   Para volver a empezar mediante el cuadro de diálogo **Publicar**, elimine el perfil de publicación mediante el vínculo **Eliminar** de esta página y, después, vuelva a seleccionar **Publicar**.
+   Para volver a empezar mediante el cuadro de diálogo **Publicar** , elimine el perfil de publicación mediante el vínculo **Eliminar** de esta página y, después, vuelva a seleccionar **Publicar** .
 :::moniker-end
 
 ## <a name="next-steps"></a>Pasos siguientes

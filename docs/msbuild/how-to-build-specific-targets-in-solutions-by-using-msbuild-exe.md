@@ -1,5 +1,7 @@
 ---
 title: Uso de MSBuild.exe para compilar destinos específicos en soluciones
+description: Obtenga información sobre cómo usar la línea de comandos de MSBuild.exe para compilar destinos específicos de proyectos específicos en soluciones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 178dfcaf0bdf8296fd271cb7c4e5dd0bbd251d7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633933"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436434"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Cómo: Compilar destinos específicos en soluciones mediante MSBuild.exe
 
@@ -31,7 +33,7 @@ Puede usar *MSBuild.exe* para compilar destinos concretos de proyectos específi
 
 ## <a name="example"></a>Ejemplo
 
- En el ejemplo siguiente se ejecuta el destino `Rebuild` del proyecto `NotInSlnFolder` y luego se ejecuta el destino `Clean` del proyecto `InSolutionFolder`, que se encuentra en la carpeta de la solución *NewFolder*.
+ En el ejemplo siguiente se ejecuta el destino `Rebuild` del proyecto `NotInSlnFolder` y luego se ejecuta el destino `Clean` del proyecto `InSolutionFolder`, que se encuentra en la carpeta de la solución *NewFolder* .
 
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean

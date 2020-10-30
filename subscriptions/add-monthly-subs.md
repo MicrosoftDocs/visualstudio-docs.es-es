@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo agregar suscripciones mensuales de Visual Studio recién compradas al Portal de administración de suscripciones
-ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005104"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467601"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Incorporación de suscripciones mensuales nuevas a Visual Studio en el Portal de administración de suscripciones
 Al comprar suscripciones mensuales nuevas de Visual Studio con una suscripción de Azure, es posible que deba agregarlas al Portal de administración de suscripciones para asignarlas a los usuarios.  
@@ -25,7 +25,7 @@ Los pasos para agregar suscripciones mensuales dependen de qué tipos de suscrip
 
 ## <a name="how-to-add-monthly-subscriptions"></a>Incorporación de suscripciones mensuales
 1. Inicie sesión en el Portal de administración de suscripciones en <https://manage.visualstudio.com>
-1. En la pestaña **Administrar suscriptores**, elija el menú desplegable **Add agreement** (Agregar contrato). 
+1. En la pestaña **Administrar suscriptores** , elija el menú desplegable **Add agreement** (Agregar contrato). 
 1. Elija **New monthly subscriptions** (Suscripciones mensuales nuevas) en el menú desplegable
    > [!div class="mx-imgBorder"]
    > ![Menú desplegable para agregar suscripciones mensuales nuevas](_img/add-monthly-subs/add-subs-drop-down.png "Elija "Add agreement" (Agregar contrato) y luego "New monthly subscriptions" (Suscripciones mensuales nuevas).")

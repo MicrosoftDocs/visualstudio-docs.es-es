@@ -1,5 +1,7 @@
 ---
 title: Error (tarea) | Microsoft Docs
+description: Use la tarea Error de MSBuild para detener una compilación y registrar un error en función de una instrucción condicional evaluada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634232"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436643"
 ---
 # <a name="error-task"></a>Error (tarea)
 
@@ -40,7 +42,7 @@ En la siguiente tabla se describen los parámetros de la tarea `Error` .
 | `HelpKeyword` | Parámetro `String` opcional.<br /><br /> Palabra clave Ayuda que se debe asociar con el error. |
 | `Text` | Parámetro `String` opcional.<br /><br /> Texto de error que registra MSBuild si el parámetro `Condition` se evalúa como `true`. |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La tarea `Error` permite que los proyectos de MSBuild emitan el texto de error a los registradores y detengan la ejecución de la compilación.
 

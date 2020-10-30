@@ -1,5 +1,7 @@
 ---
 title: EndTrackingContext | Microsoft Docs
+description: Conozca la sintaxis, el valor devuelto y los requisitos para usar EndTrackingContext de MSBuild para finalizar el contexto de seguimiento actual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf982200b8e65e404325bdbd189ff3b0f2daebac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da1ef921106732a7787f68a979bc88f3ac012b6d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634245"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436669"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 
@@ -38,8 +40,8 @@ Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el contexto de 
 
 ## <a name="requirements"></a>Requisitos
 
-**Encabezado**: *FileTracker.h*
+**Encabezado:** *FileTracker.h*
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Utilizar caracteres XML reservados en archivos de proyecto | Microsoft Docs'
+description: Obtenga información sobre cómo reemplazar caracteres XML reservados con las entidades con nombre correspondientes en archivos de proyecto de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f98044378b717536c42f25f5033b072ac3680675
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633777"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436078"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Cómo: Usar caracteres XML reservados en archivos de proyecto
 

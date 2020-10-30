@@ -1,23 +1,23 @@
 ---
-title: Inventario de entornos de preproducción | Visual Studio Marketplace
+title: Inventario de preproducción en la suscripción de Visual Studio | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 03/06/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar inventarios de preproducción
-ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004162"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467432"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario de entorno de preproducción
 Las suscripciones de Visual Studio simplifican la administración de activos realizando un recuento de los usuarios en lugar de los dispositivos.
 
-Los administradores de Visual Studio deben asignar suscripciones de Visual Studio a **usuarios con nombre específicos**. **No se permiten** las convenciones de nomenclatura como Dev1 o Dev2 ni el uso de nombres de equipo como "FeatureTeam".
+Los administradores de Visual Studio deben asignar Suscripciones de Visual Studio a **usuarios con nombre específicos** . **No se permiten** las convenciones de nomenclatura como Dev1 o Dev2 ni el uso de nombres de equipo como "FeatureTeam".
 
 Estas son algunas maneras de simplificar el inventariado del entorno de preproducción:
 - Revise las asignaciones de usuario. Microsoft proporciona un sitio web denominado [Portal de administración de Visual Studio](https://manage.visualstudio.com/) que le permite realizar un seguimiento de las asignaciones de suscripciones de Visual Studio.

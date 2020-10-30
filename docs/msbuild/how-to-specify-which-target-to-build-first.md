@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Especificar qué destino usar primero al compilar | Microsoft Docs
+description: Obtenga información sobre cómo especificar destinos iniciales o destinos predeterminados donde compilar primero en archivos de proyecto de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: a9ce8f17e70344445f95e8b4742838e40a92fe88
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072533"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436190"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procedimiento Especificar qué destino usar primero al compilar
 
-Un archivo del proyecto puede contener uno o vario elementos `Target` que definen cómo se compila el proyecto. El motor Microsoft Build Engine (MSBuild) compila el primer destino que encuentra, así como las dependencias, a menos que el archivo del proyecto contenga un atributo `DefaultTargets` o un atributo `InitialTargets`, o bien que un destino se especifique en la línea de comandos mediante el modificador **-target**.
+Un archivo del proyecto puede contener uno o vario elementos `Target` que definen cómo se compila el proyecto. El motor Microsoft Build Engine (MSBuild) compila el primer destino que encuentra, así como las dependencias, a menos que el archivo del proyecto contenga un atributo `DefaultTargets` o un atributo `InitialTargets`, o bien que un destino se especifique en la línea de comandos mediante el modificador **-target** .
 ## <a name="use-the-initialtargets-attribute"></a>Usar el atributo InitialTargets
 
 El atributo `InitialTargets` del elemento `Project` especifica un destino que se ejecutará en primer lugar, incluso si los destinos se especifican en la línea de comandos o en el atributo `DefaultTargets`.
@@ -64,13 +66,13 @@ El atributo `InitialTargets` del elemento `Project` especifica un destino que se
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Para utilizar primero un destino distinto del destino predeterminado
 
-- Especifique el destino como el primer destino mediante el modificador de línea de comandos **-target**. Por ejemplo:
+- Especifique el destino como el primer destino mediante el modificador de línea de comandos **-target** . Por ejemplo:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Para utilizar primero varios destinos distintos de los destinos predeterminados
 
-- Enumere los destinos, separados por punto y coma o comas, mediante el conmutador de línea de comandos **-target**. Por ejemplo:
+- Enumere los destinos, separados por punto y coma o comas, mediante el conmutador de línea de comandos **-target** . Por ejemplo:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

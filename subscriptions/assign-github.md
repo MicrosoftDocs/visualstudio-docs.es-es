@@ -1,18 +1,18 @@
 ---
 title: Oferta de Visual Studio + GitHub Enterprise | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 09/29/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Administración de suscripciones en la oferta de Visual Studio + GitHub Enterprise
-ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584131"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467588"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Administración de suscripciones de Visual Studio con GitHub Enterprise
 Los clientes que tengan contratos Enterprise (EA) con Microsoft pueden comprar una nueva oferta de suscripciones que junta las suscripciones estándar de Visual Studio y GitHub Enterprise. Es la forma fácil y económica para los suscriptores de Visual Studio de adquirir GitHub Enterprise. 
@@ -40,7 +40,7 @@ Una vez que la empresa ha configurado una cuenta de GitHub Enterprise, los suscr
 Para obtener más detalles sobre la configuración de GitHub Enterprise, vea la [documentación del suscriptor](access-github.md).   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>Administración de suscripciones de GitHub Enterprise
-Cuando se compran suscripciones de GitHub Enterprise, GitHub se asocia con los clientes para ayudarlos a crear y configurar las organizaciones que accederán a GitHub y a identificar a los administradores.  A continuación, estos administradores reciben una notificación en que se les comunica que se han configurado como administradores.  
+Cuando se compran suscripciones de GitHub Enterprise, GitHub se asocia con los clientes para ayudarlos a crear y configurar las organizaciones que accederán a GitHub y a identificar a los administradores.  A continuación, esos administradores reciben una notificación en que se les comunica que se han configurado como administradores.  
 
 Puesto que este proceso es más complejo, pueden pasar varios días tras la compra de las suscripciones antes de que las organizaciones y los administradores estén completamente configurados.
 

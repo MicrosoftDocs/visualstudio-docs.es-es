@@ -1,5 +1,7 @@
 ---
 title: GenerateBootstrapper (Tarea) | Microsoft Docs
+description: Use la tarea GenerateBootstrapper de MSBuild para obtener una forma automatizada de detectar, descargar e instalar una aplicación y sus requisitos previos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 83bb6b44713ba61d14c508c0db2a51391a350015
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634089"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436469"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (tarea)
 
@@ -86,7 +88,7 @@ A continuación se describen los parámetros de la tarea `GenerateBootstrapper`.
 
    Parámetro de salida `String` opcional.
 
-   Especifica la ubicación de compilación de *setup.exe*.
+   Especifica la ubicación de compilación de *setup.exe* .
 
 - `ComponentsLocation`
 
@@ -94,11 +96,11 @@ A continuación se describen los parámetros de la tarea `GenerateBootstrapper`.
 
    Especifica una ubicación en que el programa previo va a buscar los requisitos previos de instalación que se deben instalar. Este parámetro puede tener los valores siguientes:
 
-  - `HomeSite`: Indica que el proveedor del componente hospeda el requisito previo.
+  - `HomeSite`: indica que el proveedor del componente hospeda el requisito previo.
 
-  - `Relative`: Indica que el requisito previo está en la misma ubicación que la aplicación.
+  - `Relative`: indica que el requisito previo está en la misma ubicación que la aplicación.
 
-  - `Absolute`: Indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.
+  - `Absolute`: indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.
 
     Si `ComponentsLocation` no se especifica, `HomeSite` se utiliza de forma predeterminada.
 

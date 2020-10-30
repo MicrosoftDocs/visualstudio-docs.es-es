@@ -1,18 +1,18 @@
 ---
-title: Beneficio de WhiteSource Bolt | Microsoft Docs
+title: WhiteSource Bolt en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Obtenga más información sobre cómo activar la suscripción de WhiteSource Bolt que se incluye con la suscripción a Visual Studio.
-ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005706"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435987"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt en las suscripciones de Visual Studio
 
@@ -24,17 +24,17 @@ Descubra y corrija vulnerabilidades del código abierto y genere informes comple
 
 2. Busque el icono de WhiteSource Bolt en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.
    > [!div class="mx-imgBorder"]
-   > ![Icono de la ventaja WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![Icono de la ventaja WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png "Haga clic en "Obtener código" en el icono de WhiteSource Bolt para comenzar.")
 
-3. Recibirá una notificación con el código de activación.  **Copie el código en el Portapapeles** y haga clic en **Activar**.
+3. Recibirá una notificación con el código de activación.  **Copie el código en el Portapapeles** y haga clic en **Activar** .
    > [!div class="mx-imgBorder"]
-   > ![Código de la ventaja WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![Código de la ventaja WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-code.png "Copie el código en el Portapapeles y, luego, haga clic en "Activar".")
 
 4. En la página **Activate your account** (Activar su cuenta), haga clic en el vínculo de **instalación** que aparece en el paso 1.
 5. Haga clic en **Consígalo gratis** en Visual Studio Marketplace.
-6. Luego, seleccione la organización de Azure DevOps que desea usar y haga clic en **Instalar**.  (Si todavía no configuró Azure DevOps Services, visite la página [Ventajas](https://my.visualstudio.com/benefits) y active su ventaja de Azure DevOps Services).
+6. Luego, seleccione la organización de Azure DevOps que desea usar y haga clic en **Instalar** .  (Si todavía no configuró Azure DevOps Services, visite la página [Ventajas](https://my.visualstudio.com/benefits) y active su ventaja de Azure DevOps Services).
 
-7. Haga clic en **Continuar con la organización**.
+7. Haga clic en **Continuar con la organización** .
 8. Una vez que haya instalado correctamente WhiteSource Bolt, vuelva a la [página de activación](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate) y vea el vídeo para saber cómo configurarlo. 
 9. Para más información, visite la [página de preguntas más frecuentes](https://bolt.whitesourcesoftware.com/azure/faq/) sobre WhiteSource Bolt. 
 

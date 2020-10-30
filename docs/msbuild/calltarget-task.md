@@ -1,5 +1,7 @@
 ---
 title: Tarea CallTarget | Microsoft Docs
+description: Obtenga información sobre cómo usar la tarea CallTarget de MSBuild para invitar los destinos especificados dentro del archivo del proyecto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094562"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353296"
 ---
 # <a name="calltarget-task"></a>CallTarget (tarea)
 
@@ -38,7 +40,7 @@ Invoca los destinos especificados en el archivo del proyecto.
 | `Targets` | Parámetro `String[]` opcional.<br /><br /> Especifica los destinos que se compilarán. |
 | `UseResultsCache` | Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se devuelve el resultado almacenado en caché, si está presente.<br /><br /> **Nota** Cuando se ejecuta una tarea MSBuild, su salida se almacena en caché en un ámbito (ProjectFileName, GlobalProperties)[TargetNames] como una lista de elementos de compilación. |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
  Si se produce un error en un destino especificado en `Targets` y `RunEachTargetSeparately` es `true`, la tarea sigue compilando los destinos restantes.
 
