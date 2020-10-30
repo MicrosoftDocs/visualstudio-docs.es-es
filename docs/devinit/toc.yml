@@ -80,3 +80,5 @@
           href: sample-opencv.md
         - name: Versión preliminar privada de Codespaces
           href: sample-private-preview.md
+        - name: Aplicación .NET core
+          href: sample-dotnet-core.md

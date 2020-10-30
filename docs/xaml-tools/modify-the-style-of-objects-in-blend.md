@@ -1,6 +1,8 @@
 ---
 title: Modificación del estilo de objetos
 titleSuffix: Blend for Visual Studio
+description: Obtenga información sobre cómo modificar el estilo de los objetos en Blend para Visual Studio aplicando pinceles, estableciendo Estados visuales y aplicando estilos y plantillas reutilizables.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfe54db27a16d95904412b5e1181d589ed2fcde8
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82921128"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046785"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificación del estilo de los objetos en Blend para Visual Studio
 
-La manera más fácil de personalizar un objeto es establecer propiedades en el panel **Propiedades**.
+La manera más fácil de personalizar un objeto es establecer propiedades en el panel **Propiedades** .
 
-Si desea volver a utilizar la configuración o un conjunto de configuraciones, cree un recurso reutilizable. Podría tratarse de un *estilo*, una *plantilla* o algo simple como un color personalizado. También puede hacer la apariencia de un control sea distinta en función de su estado. Por ejemplo, que un botón se vuelva verde cuando el usuario haga clic en él.
+Si desea volver a utilizar la configuración o un conjunto de configuraciones, cree un recurso reutilizable. Podría tratarse de un *estilo* , una *plantilla* o algo simple como un color personalizado. También puede hacer la apariencia de un control sea distinta en función de su estado. Por ejemplo, que un botón se vuelva verde cuando el usuario haga clic en él.
 
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinceles: modificar la apariencia de un objeto
 
@@ -27,9 +29,9 @@ Aplique un pincel a un objeto si desea cambiar su apariencia.
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Pintar una imagen o patrón repetitivos en un objeto
 
-Pinte una imagen o patrón repetitivos en un objeto con un *pincel de diseño en mosaico*.
+Pinte una imagen o patrón repetitivos en un objeto con un *pincel de diseño en mosaico* .
 
-Para crear un pincel de diseño en mosaico, empiece por crear un recurso de *pincel de imagen*, *pincel con dibujo* o *pincel visual*.
+Para crear un pincel de diseño en mosaico, empiece por crear un recurso de *pincel de imagen* , *pincel con dibujo* o *pincel visual* .
 
 Cree un pincel de imagen con una imagen. Las ilustraciones siguientes muestran el pincel de imagen, el pincel de imagen en mosaico y el pincel de imagen volteado.
 
@@ -47,21 +49,21 @@ Cree un pincel visual a partir de un control como un botón. Las ilustraciones s
 
 Puede diseñar la apariencia y el comportamiento de un control una vez y aplicar ese diseño a otros controles para no tener que hacerlo de manera individual.
 
-**¿Debe usar un estilo?**: Si quiere establecer las propiedades predeterminadas (como el color de un botón), use un *estilo*. Puede modificar un control incluso después de aplicarle un estilo.
+**¿Debe usar un estilo?** : Si quiere establecer las propiedades predeterminadas (como el color de un botón), use un *estilo* . Puede modificar un control incluso después de aplicarle un estilo.
 
-**¿Debe usar una plantilla?**: Si quiere cambiar la estructura de un control, use una *plantilla*. Imagine que convierte un gráfico o un logotipo en un botón. El control no se puede modificar después de aplicarle una plantilla.
+**¿Debe usar una plantilla?** : Si quiere cambiar la estructura de un control, use una *plantilla* . Imagine que convierte un gráfico o un logotipo en un botón. El control no se puede modificar después de aplicarle una plantilla.
 
 ### <a name="create-a-template-or-style"></a>Crear una plantilla o un estilo
 
 Hay dos maneras de crear una plantilla. puede convertir cualquier objeto de la mesa de trabajo en un control o puede basar la plantilla en un control existente.
 
-Para convertir cualquier objeto en una plantilla de control, seleccione el objeto y, después, en el menú **Herramientas**, pulse **Crear en control**.
+Para convertir cualquier objeto en una plantilla de control, seleccione el objeto y, después, en el menú **Herramientas** , pulse **Crear en control** .
 
-Si desea basar la plantilla en un control existente, seleccione un objeto en la mesa de trabajo. Después, en la parte superior de la mesa de trabajo, pulse el botón de ruta de navegación, pulse **Editar plantilla** y, después, seleccione **Editar una copia** o **Crear vacío**.
+Si desea basar la plantilla en un control existente, seleccione un objeto en la mesa de trabajo. Después, en la parte superior de la mesa de trabajo, pulse el botón de ruta de navegación, pulse **Editar plantilla** y, después, seleccione **Editar una copia** o **Crear vacío** .
 
 ![Menú Editar plantilla](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
 
-Para crear un estilo, seleccione el objeto y, después, en el menú **Objeto**, pulse **Editar estilo** y, después, pulse **Editar una copia** o **Crear vacío**.
+Para crear un estilo, seleccione el objeto y, después, en el menú **Objeto** , pulse **Editar estilo** y, después, pulse **Editar una copia** o **Crear vacío** .
 
 - Seleccione **Editar una copia** para empezar con el estilo o la plantilla predeterminados del control.
 
@@ -69,23 +71,23 @@ Para crear un estilo, seleccione el objeto y, después, en el menú **Objeto**, 
 
 La opción **Editar actual** solo aparece si edita un estilo o plantilla que ya ha creado, pero no aparecerá para un control que sigue usando una plantilla predeterminada del sistema.
 
-En el cuadro de diálogo **Crear recurso de estilo**, puede ponerle un nombre al estilo o a la plantilla para poder usarlo más adelante, o puede aplicar el estilo o la plantilla a todos los controles de ese tipo.
+En el cuadro de diálogo **Crear recurso de estilo** , puede ponerle un nombre al estilo o a la plantilla para poder usarlo más adelante, o puede aplicar el estilo o la plantilla a todos los controles de ese tipo.
 
 ![Cuadro de diálogo Crear recurso de estilo](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png)
 
 > [!NOTE]
 > No es posible crear estilos o plantillas para todos los tipos control. Si un control no los admite, el botón de ruta de navegación no aparecerá sobre la mesa de trabajo.
-> Para volver al ámbito de edición del documento principal, haga clic en **Devolver ámbito a ** ![Icono de Devolver ámbito a](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Para volver al ámbito de edición del documento principal, haga clic en **Devolver ámbito a** ![Icono de Devolver ámbito a](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar un estilo o una plantilla a un control
 
-Haga clic con el botón derecho en un objeto en la ventana [Objetos y escala de tiempo](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), elija **Editar plantilla** y, luego, **Aplicar recurso**.
+Haga clic con el botón derecho en un objeto en la ventana [Objetos y escala de tiempo](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), elija **Editar plantilla** y, luego, **Aplicar recurso** .
 
 ![Menú Aplicar recurso](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar el estilo o la plantilla predeterminados de un control
 
-Seleccione el control y, en la ventana **Propiedades** **, busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
+Seleccione el control y, en la ventana **Propiedades** **, busque la propiedad **Estilo** o **Plantilla** . Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
 
 ## <a name="visual-states"></a>Estados visuales
 

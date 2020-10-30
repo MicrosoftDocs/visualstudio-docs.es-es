@@ -1,17 +1,19 @@
 ---
 title: Organizar objetos en contenedores de diseño en el Diseñador XAML
+description: Obtenga información sobre los paneles y controles de diseño en Diseñador XAML que se usan para organizar objetos en una página, como Grid, Canvas, Border y Viewbox.
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6df200c5adb4993d13e896eaa6d2041e0e9db044
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86459299"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047345"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos en contenedores de diseño en el Diseñador XAML
 
@@ -19,13 +21,13 @@ En este artículo se describen los paneles y controles de diseño del Diseñador
 
 Piense en qué parte de la página desea que aparezcan los objetos&mdash;como imágenes, botones y vídeos. Tal vez desee que aparezcan en filas y columnas, en una sola línea vertical u horizontal, o en posiciones fijas.
 
-Después de que haya considerado el aspecto que tendría la página, seleccione un panel de diseño. Todas las páginas tienen uno como punto de partida, ya que se necesita algo donde agregar los objetos. De manera predeterminada, es una **Cuadrícula**, pero puede cambiar esta configuración.
+Después de que haya considerado el aspecto que tendría la página, seleccione un panel de diseño. Todas las páginas tienen uno como punto de partida, ya que se necesita algo donde agregar los objetos. De manera predeterminada, es una **Cuadrícula** , pero puede cambiar esta configuración.
 
 Los paneles de diseño le ayudarán a organizar los objetos en una página, pero no solo sirven para eso. Además, facilitan el diseño en diferentes tamaños y resoluciones de pantalla. Cuando los usuarios ejecutan la aplicación, todo lo que contiene el panel de diseño cambia de tamaño para coincidir con el espacio real en pantalla de sus dispositivos. Por supuesto, si no desea que el diseño actúe de ese modo, puede invalidar este comportamiento en todo o parte del diseño. Para controlarlo, puede utilizar propiedades de alto y ancho.
 
 ## <a name="layout-panels"></a>Paneles de diseño
 
-Para empezar su página, elija uno de estos paneles de diseño. La página puede tener más de uno. Por ejemplo, puede comenzar con un panel de diseño de **Cuadrícula** y, después, agregar un elemento **StackPanel** a un área de la **Cuadrícula**; así, podrá organizar los controles verticalmente en ese elemento.
+Para empezar su página, elija uno de estos paneles de diseño. La página puede tener más de uno. Por ejemplo, puede comenzar con un panel de diseño de **Cuadrícula** y, después, agregar un elemento **StackPanel** a un área de la **Cuadrícula** ; así, podrá organizar los controles verticalmente en ese elemento.
 
 Los siguientes paneles de diseño son los usados más habitualmente, pero hay otros. Puede encontrarlos todos en **Cuadro de herramientas** en Visual Studio o en el panel **Activos** en Blend para Visual Studio.
 
@@ -65,7 +67,7 @@ Organice los objetos en secuencia de izquierda a derecha. Cuando el panel se que
 
 ### <a name="dockpanel"></a>DockPanel
 
-Organice los objetos para que permanezcan, o se *acoplen*, en uno de los bordes del panel.
+Organice los objetos para que permanezcan, o se *acoplen* , en uno de los bordes del panel.
 
 (Disponible solo para proyectos de WPF).
 
@@ -81,23 +83,23 @@ Los siguientes controles de diseño son los más populares, pero hay otros. Pued
 
 ### <a name="border"></a>Borde
 
-Cree un borde, un fondo o ambos alrededor de un objeto. Solo puede agregar un objeto a un elemento **Border**. Si quiere aplicar un borde o un fondo a más de un objeto, agregue un panel de diseño al elemento **Border**. A continuación, agregue objetos a ese panel o control.
+Cree un borde, un fondo o ambos alrededor de un objeto. Solo puede agregar un objeto a un elemento **Border** . Si quiere aplicar un borde o un fondo a más de un objeto, agregue un panel de diseño al elemento **Border** . A continuación, agregue objetos a ese panel o control.
 
 ![Control de diseño de borde](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
 
 ### <a name="popup"></a>Popup
 
-Muestre información u opciones a los usuarios en una ventana. Solo puede agregar un objeto a un elemento **Popup**. De manera predeterminada, un elemento **Popup** contiene una **Cuadrícula**, pero se puede cambiar esta configuración.
+Muestre información u opciones a los usuarios en una ventana. Solo puede agregar un objeto a un elemento **Popup** . De manera predeterminada, un elemento **Popup** contiene una **Cuadrícula** , pero se puede cambiar esta configuración.
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Permita que los usuarios se desplacen hacia abajo en una página o parte de una página. Puede agregar un solo objeto a un control **ScrollViewer** así que resulta adecuado agregar un panel de diseño como una **Cuadrícula** o **StackPanel**.
+Permita que los usuarios se desplacen hacia abajo en una página o parte de una página. Puede agregar un solo objeto a un control **ScrollViewer** así que resulta adecuado agregar un panel de diseño como una **Cuadrícula** o **StackPanel** .
 
 ![Control de diseño ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 
 ### <a name="viewbox"></a>Cuadro de vídeo
 
-Escale objetos igual que haría con un control de zoom. Solo puede agregar un objeto a un elemento **Viewbox**. Si quiere aplicar ese efecto a más de un objeto, agregue un panel de diseño al control **ViewBox** y, después, agregue los controles a dicho panel de diseño.
+Escale objetos igual que haría con un control de zoom. Solo puede agregar un objeto a un elemento **Viewbox** . Si quiere aplicar ese efecto a más de un objeto, agregue un panel de diseño al control **ViewBox** y, después, agregue los controles a dicho panel de diseño.
 
 ![Control de diseño ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 

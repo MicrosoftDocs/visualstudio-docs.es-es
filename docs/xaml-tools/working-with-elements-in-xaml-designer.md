@@ -1,17 +1,19 @@
 ---
 title: Trabajar con elementos en el Diseñador XAML
+description: Obtenga información sobre cómo trabajar con elementos en el Diseñador XAML en Visual Studio o Blend para Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1af793ec7ecd741de1fc1b4bb1cb48dbf2ef32f3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82921098"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047133"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 
@@ -25,11 +27,11 @@ De forma predeterminada, un panel `Grid` sirve como contenedor de diseño de niv
 
 Para agregar un elemento a un diseño en el Diseñador XAML, realice una de estas acciones:
 
-- Haga doble clic en un elemento del **Cuadro de herramientas** (o seleccione un elemento del Cuadro de herramientas y presione **Entrar**).
+- Haga doble clic en un elemento del **Cuadro de herramientas** (o seleccione un elemento del Cuadro de herramientas y presione **Entrar** ).
 
 - Arrastre un elemento del **Cuadro de herramientas** a la mesa de trabajo.
 
-- En el **Cuadro de herramientas**, seleccione una de las herramientas de dibujo (como [Elipse](xref:Windows.UI.Xaml.Shapes.Ellipse) o [Rectángulo](xref:Windows.UI.Xaml.Shapes.Rectangle)) y después dibuje un elemento en el panel activo.
+- En el **Cuadro de herramientas** , seleccione una de las herramientas de dibujo (como [Elipse](xref:Windows.UI.Xaml.Shapes.Ellipse) o [Rectángulo](xref:Windows.UI.Xaml.Shapes.Rectangle)) y después dibuje un elemento en el panel activo.
 
 ## <a name="change-the-layering-order-of-elements"></a>Cambio del orden de distribución en capas de los elementos
 
@@ -37,7 +39,7 @@ Cuando haya dos elementos en la mesa de trabajo en XAML Designer, aparecerá un 
 
 Para cambiar el orden de distribución en capas, realice una de estas acciones:
 
-- En la ventana **Esquema del documento**, arrastre los elementos hacia arriba o hacia abajo para crear el orden de distribución en capas deseado.
+- En la ventana **Esquema del documento** , arrastre los elementos hacia arriba o hacia abajo para crear el orden de distribución en capas deseado.
 
 - En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento cuyo orden de distribución en capas quiere cambiar, elija **Orden** y, después, haga clic en una de las opciones siguientes:
 
@@ -61,9 +63,9 @@ Para alinear dos o más elementos mediante los comandos de menú:
 
 1. Selecciona los elementos que desees alinear. Puede seleccionar varios elementos si mantiene presionada la tecla **Ctrl** mientras los selecciona.
 
-2. Seleccione una de las propiedades siguientes en **HorizontalAlignment** en la sección **Diseño** de la ventana Propiedades: **Izquierda**, **Centro**, **Derecha** o **Ajustar**.
+2. Seleccione una de las propiedades siguientes en **HorizontalAlignment** en la sección **Diseño** de la ventana Propiedades: **Izquierda** , **Centro** , **Derecha** o **Ajustar** .
 
-3. Seleccione una de las propiedades siguientes en **VerticalAlignment** en la sección **Diseño** de la ventana Propiedades: **Superior**, **Centro**, **Inferior** o **Ajustar**.
+3. Seleccione una de las propiedades siguientes en **VerticalAlignment** en la sección **Diseño** de la ventana Propiedades: **Superior** , **Centro** , **Inferior** o **Ajustar** .
 
 Para alinear dos o más elementos mediante guías de alineación, en el Diseñador XAML, en un diseño que contenga al menos dos elementos, arrastre o cambie el tamaño de uno de los elementos de modo que el borde se alinee con otro elemento.
 
@@ -77,13 +79,13 @@ Para cambiar los márgenes de un elemento en la ventana Propiedades:
 
 1. Selecciona el elemento cuyos márgenes deseas cambiar.
 
-2. En **Diseño**, en la ventana Propiedades, cambie el valor (en píxeles o unidades independientes del dispositivo, que tienen un tamaño aproximado de 1/96 de pulgada) de cualquiera de las propiedades de **Margen** (**Superior**, **Izquierdo**, **Derecho** o **Inferior**).
+2. En **Diseño** , en la ventana Propiedades, cambie el valor (en píxeles o unidades independientes del dispositivo, que tienen un tamaño aproximado de 1/96 de pulgada) de cualquiera de las propiedades de **Margen** ( **Superior** , **Izquierdo** , **Derecho** o **Inferior** ).
 
 En la mesa de trabajo, para cambiar los márgenes de un elemento con respecto a su contenedor de diseño, haga clic en los *adornos de margen* que aparecen alrededor del elemento cuando el elemento esté seleccionado y se encuentre dentro de un contenedor de diseño. Para obtener una ilustración que muestra los adornos de margen, vea [Crear una IU con el Diseñador XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
 Si el adorno del margen está abierto, ya sea vertical u horizontalmente, el margen no está establecido. Si el adorno del margen está cerrado, ese margen está establecido.
 
-Cuando se abre el control Adorner de margen y el margen opuesto no está establecido, el margen opuesto se establece en el valor correcto de acuerdo con la ubicación del elemento en la mesa de trabajo. Para los márgenes opuestos, como **Izquierdo** y **Derecho**, siempre se establece al menos una propiedad.
+Cuando se abre el control Adorner de margen y el margen opuesto no está establecido, el margen opuesto se establece en el valor correcto de acuerdo con la ubicación del elemento en la mesa de trabajo. Para los márgenes opuestos, como **Izquierdo** y **Derecho** , siempre se establece al menos una propiedad.
 
 > [!IMPORTANT]
 > Los elementos incluidos dentro de algunos contenedores de distribución, como [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), no tienen adornos del margen. Los elementos incluidos dentro de [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) tienen adornos del margen para los márgenes izquierdo y derecho o para los márgenes superior e inferior, en función de la orientación de `StackPanel`.
@@ -101,13 +103,13 @@ Para agrupar elementos en un nuevo contenedor de diseño:
     > [!TIP]
     > Si selecciona [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) o [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) para agrupar los elementos, estos se colocarán en un panel de [cuadrícula](xref:Windows.UI.Xaml.Controls.Grid) nuevo dentro del elemento [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) o [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer). Si desagrupa los elementos en uno de estos contenedores de diseño, solo se eliminan los elementos [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) o [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) y el panel de [cuadrícula](xref:Windows.UI.Xaml.Controls.Grid) se conservará. Para eliminar el panel `Grid`, vuelve a desagrupar los elementos.
 
-Para desagrupar elementos y eliminar el diseño, haga clic con el botón derecho en el grupo que quiere desagrupar y elija **Desagrupar**. También puede agrupar o desagrupar elementos haciendo clic con el botón derecho en los elementos seleccionados en la ventana Esquema del documento y haciendo clic en **Agrupar en** o **Desagrupar**.
+Para desagrupar elementos y eliminar el diseño, haga clic con el botón derecho en el grupo que quiere desagrupar y elija **Desagrupar** . También puede agrupar o desagrupar elementos haciendo clic con el botón derecho en los elementos seleccionados en la ventana Esquema del documento y haciendo clic en **Agrupar en** o **Desagrupar** .
 
 ## <a name="reset-the-element-layout"></a>Restablecimiento del diseño de un elemento
 
 Puede restaurar los valores predeterminados de las propiedades de diseño específicas de un elemento mediante el comando Restablecer diseño. Con este comando puedes restablecer el margen, la alineación, el ancho, el alto y el tamaño de un elemento, ya sea de forma individual o colectiva.
 
-Para restablecer el diseño de los elementos, haga clic con el botón secundario en el elemento en la ventana esquema del documento o en la mesa de presentación y, a continuación, seleccione **diseño**  >  **restablecer** *PropertyName*, donde *PropertyName* es la propiedad que desea restablecer (o elija **diseño**  >  **restablecer todo** para restablecer todas las propiedades de diseño del elemento).
+Para restablecer el diseño de los elementos, haga clic con el botón secundario en el elemento en la ventana esquema del documento o en la mesa de presentación y, a continuación, seleccione **diseño**  >  **restablecer** *PropertyName* , donde *PropertyName* es la propiedad que desea restablecer (o elija **diseño**  >  **restablecer todo** para restablecer todas las propiedades de diseño del elemento).
 
 ## <a name="see-also"></a>Consulte también
 
