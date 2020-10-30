@@ -1,5 +1,7 @@
 ---
 title: Errores y advertencias de XAML
+description: Obtenga información sobre errores y advertencias de XAML en Visual Studio, incluido cómo se clasifican los errores, cómo obtener información de errores y cómo buscar opciones para corregirlos.
+ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: error-reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467562"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049219"
 ---
 # <a name="xaml-errors-and-warnings"></a>Errores y advertencias de XAML
 
@@ -37,7 +39,7 @@ Para obtener más información sobre cómo cambiar la personalización de marca 
 
 ## <a name="suppress-xaml-designer-errors"></a>Supresión de los errores del Diseñador XAML
 
-Abra el cuadro de diálogo **Opciones** seleccionando **Herramientas > Opciones** y luego seleccione **Editor de texto > XAML > Varios**.
+Abra el cuadro de diálogo **Opciones** seleccionando **Herramientas > Opciones** y luego seleccione **Editor de texto > XAML > Varios** .
 
 Desactive la casilla **Show errors detected by the XAML designer** (Mostrar errores detectados por el Diseñador XAML).
 

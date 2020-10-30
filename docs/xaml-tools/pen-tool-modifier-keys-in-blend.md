@@ -1,6 +1,8 @@
 ---
 title: Teclas modificadoras de la herramienta Pluma
 titleSuffix: Blend for Visual Studio
+description: Obtenga información sobre las teclas modificadoras de la herramienta pluma en Blend para Visual Studio que tengan acceso a los comandos para modificar un trazado mientras se crea con la herramienta pluma.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 104e52619a34f1f2fd5b7aedbac98eafd7fdc189
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328371"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049258"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras de la herramienta Pluma en Blend para Visual Studio
 
@@ -32,11 +34,11 @@ En la tabla siguiente se enumeran los métodos abreviados que se pueden usar par
 |Quitar un punto de un trazado|Mantenga el mouse sobre un punto existente y haga clic|![Quitar punto de trazado](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Puntero de pluma para eliminar|
 |Cerrar un trazado con un vértice agudo|Haga clic en el extremo inicial|![Cerrar trazado con vértice agudo](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Puntero de pluma para cerrar|
 |Cerrar un trazado con una curva suave en el vértice|Haga clic en el punto inicial y arrastre para modificar el manipulador de tangente antes de soltar el botón del mouse|![Cerrar un trazado con una curva suave en el vértice](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Puntero de pluma para cerrar|
-|Crear un vértice agudo al unir dos trazados|Seleccione dos trazados, haga clic en la herramienta **Pluma**, haga clic en un extremo de uno de los trazados y después en un extremo del otro trazado|![Crear un vértice agudo al unir dos trazados](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntero de unión de la pluma|
-|Crear un vértice suavizado al unir dos trazados|Seleccione dos trazados, haga clic en la herramienta **Pluma**, haga clic en un extremo de uno de los trazados y, después, arrastre un extremo del otro trazado|![Crear un vértice suavizado al unir dos trazados](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntero de unión de la pluma|
+|Crear un vértice agudo al unir dos trazados|Seleccione dos trazados, haga clic en la herramienta **Pluma** , haga clic en un extremo de uno de los trazados y después en un extremo del otro trazado|![Crear un vértice agudo al unir dos trazados](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntero de unión de la pluma|
+|Crear un vértice suavizado al unir dos trazados|Seleccione dos trazados, haga clic en la herramienta **Pluma** , haga clic en un extremo de uno de los trazados y, después, arrastre un extremo del otro trazado|![Crear un vértice suavizado al unir dos trazados](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntero de unión de la pluma|
 |Crea un trazado nuevo|Mantener presionada la tecla **Ctrl** y hacer clic fuera del trazado anterior para que no se agreguen más puntos a dicho trazado; después, hacer clic en el punto donde quiere que empiece el nuevo trazado (o arrastrar)|![Crea un trazado nuevo](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Puntero de inicio de la pluma|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Teclas modificadoras de la mesa de trabajo](artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras de la herramienta Selección directa](direct-selection-tool-modifier-keys-in-blend.md)
