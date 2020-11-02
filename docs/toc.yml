@@ -1,7 +1,7 @@
 - name: Documentación del IDE de Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
-- name: Introducción
+- name: Información general
   expanded: true
   items:
     - name: Acerca de Visual Studio
@@ -1492,3 +1492,8 @@
       href: ide/developer-community-guidelines.md
     - name: Privacidad de datos de la Comunidad de desarrolladores
       href: ide/developer-community-privacy.md
+- name: Visual Studio 2015
+  expanded: true
+  items:
+    - name: "Documentación de Visual\_Studio\_2015"
+      href: vs-2015-archive.md
