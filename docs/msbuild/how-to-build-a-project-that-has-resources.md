@@ -1,5 +1,7 @@
 ---
 title: Procedimiento Compilar un proyecto que tiene recursos | Microsoft Docs
+description: Obtenga información sobre cómo compilar un proyecto que tiene recursos y cómo compilar recursos mediante MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633959"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436682"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Procedimiento Compilar un proyecto que tiene recursos
+# <a name="how-to-build-a-project-that-has-resources"></a>Cómo: Compilar un proyecto que tiene recursos
 
 Si está compilando versiones adaptadas de un proyecto, todos los elementos de la interfaz de usuario deben estar separados en archivos de recursos para los distintos idiomas. Si el proyecto utiliza solo cadenas, los archivos de recursos pueden utilizar archivos de texto. Como alternativa, puede usar archivos *.resx* como los archivos de recursos.
 
@@ -38,7 +40,7 @@ La biblioteca de tareas comunes que se proporciona con MSBuild incluye una tarea
 
 4. Utilice el elemento creado a partir del elemento `Output` como una entrada en otra tarea.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
 En el siguiente ejemplo de código se muestra cómo el elemento `Output` especifica que el atributo `OutputResources` de la tarea `GenerateResource` va a contener los archivos de recursos compilados *alpha.resources* y *beta.resources* y que estos dos archivos se van a colocar dentro de la lista de elementos `Resources`. Al identificar estos archivos *.resources* como una colección de elementos del mismo nombre, puede usarlos fácilmente como entradas para otra tarea, como la tarea [Csc](../msbuild/csc-task.md).
 
@@ -55,7 +57,7 @@ Esta tarea es equivalente a utilizar el modificador **/compile** para [Resgen.ex
 </GenerateResource>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
 El siguiente proyecto de ejemplo contiene dos tareas: la tarea `GenerateResource` para compilar recursos y la tarea `Csc` para compilar los archivos de código fuente y los archivos de recursos compilados. Los archivos de recursos compilados por la tarea `GenerateResource` se almacenan en el elemento `Resources` y se pasan a la tarea `Csc`.
 
@@ -83,6 +85,6 @@ El siguiente proyecto de ejemplo contiene dos tareas: la tarea `GenerateResource
 ## <a name="see-also"></a>Vea también
 
 - [MSBuild](../msbuild/msbuild.md)
-- [Tarea GenerateResource](../msbuild/generateresource-task.md)
+- [GenerateResource (tarea)](../msbuild/generateresource-task.md)
 - [Tarea Csc](../msbuild/csc-task.md)
 - [Resgen.exe (generador de archivos de recursos)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

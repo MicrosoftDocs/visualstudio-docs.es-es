@@ -1,5 +1,7 @@
 ---
 title: Crear registradores de reenvío | Microsoft Docs
+description: Cree registradores de reenvío de MSBuild para mejorar la eficacia del registro, ya que le permiten elegir los eventos que quiere supervisar al compilar proyectos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634310"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796581"
 ---
 # <a name="create-forwarding-loggers"></a>Crear registradores de reenvío
 
@@ -36,13 +38,13 @@ Los registradores de reenvío mejoran la eficacia del registro, ya que le permit
 
 ## <a name="specify-a-forwarding-logger"></a>Especificar un registrador de reenvío
 
- Una vez que el registrador de reenvío se ha compilado en un ensamblado, debe indicarle a MSBuild que lo use durante las compilaciones. Para ello, use los modificadores `-FileLogger`, `-FileLoggerParameters` y `-DistributedFileLogger` junto con *MSBuild.exe*. El modificador `-FileLogger` le indica a *MSBuild.exe* que el registrador se adjunta directamente. El modificador `-DistributedFileLogger` significa que hay un archivo de registro por nodo. Para establecer parámetros en el registrador de reenvío, use el modificador `-FileLoggerParameters`. Para obtener más información sobre estos y otros modificadores de *MSBuild.exe*, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
+ Una vez que el registrador de reenvío se ha compilado en un ensamblado, debe indicarle a MSBuild que lo use durante las compilaciones. Para ello, use los modificadores `-FileLogger`, `-FileLoggerParameters` y `-DistributedFileLogger` junto con *MSBuild.exe*. El modificador `-FileLogger` le indica a *MSBuild.exe* que el registrador se adjunta directamente. El modificador `-DistributedFileLogger` significa que hay un archivo de registro por nodo. Para establecer parámetros en el registrador de reenvío, use el modificador `-FileLoggerParameters`. Para obtener más información sobre estos y otros modificadores de *MSBuild.exe* , vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Registradores que reconocen varios procesadores
 
  Cuando se compila un proyecto en un sistema de varios procesadores, los mensajes de compilación de cada procesador no se intercalan automáticamente en una secuencia unificada. Por ello, debe establecer una prioridad de agrupación de mensajes mediante el uso de la clase <xref:Microsoft.Build.Framework.BuildEventContext> adjuntada a cada mensaje. Para obtener más información sobre la compilación con varios procesadores, vea [Registrar en un entorno de varios procesadores](../msbuild/logging-in-a-multi-processor-environment.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Registradores de compilación](../msbuild/build-loggers.md)
