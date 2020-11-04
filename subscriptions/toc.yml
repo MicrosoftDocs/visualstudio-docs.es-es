@@ -44,7 +44,9 @@
       href: using-the-subscriber-portal.md
     - name: Administración de suscripciones
       href: manage-vs-subscriptions.md
-    - name: Contactar con el administrador de suscripciones
+    - name: Cuándo expiran las suscripciones
+      href: subscription-expiration.md
+    - name: Contacto con el administrador de suscripciones
       href: contact-my-admin.md
     - name: Ventajas
       items:
