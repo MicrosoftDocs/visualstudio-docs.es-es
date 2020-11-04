@@ -8,10 +8,10 @@ ms.date: 10/22/2020
 ms.topic: conceptual
 description: Obtenga información sobre los roles de administrador y superadministrador y sobre cómo asignar los administradores.
 ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92467380"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Administradores y superadministradores para contratos de suscripción de Visual Studio
@@ -28,8 +28,8 @@ Vea una demostración sobre cómo administrar administradores.
 ## <a name="assigning-admins"></a>Asignación de administradores
 Para asignar administradores nuevos (administradores):
 1. Inicie sesión en https://manage.visualstudio.com con una dirección de correo electrónico asignada como superadministrador en el contrato a través del cual se adquirieron las suscripciones.
-2. Haga clic en la pestaña etiquetada como **Administrar administradores** .
-3. Haga clic en **Agregar** .
+2. Haga clic en la pestaña etiquetada como **Administrar administradores**.
+3. Haga clic en **Agregar**.
    > [!div class="mx-imgBorder"]
    > ![Agregar administradores](_img/admin-roles/add-admins.png "Haga clic en la hoja Administrar administradores y en Agregar para asignar nuevos administradores.")
 4. Rellene el formulario con la información del nuevo administrador.  
@@ -37,7 +37,7 @@ Para asignar administradores nuevos (administradores):
    > ![Formulario Agregar administrador](_img/admin-roles/add-form.png "Especifique la información de inicio de sesión del nuevo administrador y decida si quiere convertirlo en superadministrador.  Luego, haga clic en Agregar.")
 
    > [!NOTE]
-   > Si quiere que este administrador pueda asignar otros administradores, recuerde activar la casilla **Superadministrador** .
+   > Si quiere que este administrador pueda asignar otros administradores, recuerde activar la casilla **Superadministrador**.
 
 5. Cuando haga clic en **Agregar** para asignar el nuevo administrador, este recibirá un correo electrónico en el que se le invitará a iniciar sesión en el portal.  
 

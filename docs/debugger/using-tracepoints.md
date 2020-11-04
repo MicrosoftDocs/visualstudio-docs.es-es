@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89561343"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Registro de información en la ventana de salida mediante puntos de seguimiento en Visual Studio
@@ -28,18 +28,18 @@ El programa de ejemplo siguiente es un bucle `for` sencillo con una variable de 
 
 ## <a name="set-tracepoints-in-source-code"></a>Establecimiento de puntos de seguimiento en el código fuente
 
-Para establecer puntos de seguimiento, especifique una cadena de salida en la casilla **Acciones** de la ventana **Configuración del punto de interrupción** .
+Para establecer puntos de seguimiento, especifique una cadena de salida en la casilla **Acciones** de la ventana **Configuración del punto de interrupción**.
 
 1. Para inicializar un punto de seguimiento, primero haga clic en el medianil que se encuentra a la izquierda del número de línea donde quiere establecer el punto de seguimiento.
 
    ![Inicialización del punto de interrupción](../debugger/media/breakpointinitialization.png "Inicialización del punto de interrupción")
 
 2. Mantenga el mouse sobre el círculo rojo y haga clic en el icono de engranaje.
-3. Se abrirá la ventana **Configuración del punto de interrupción** .
+3. Se abrirá la ventana **Configuración del punto de interrupción**.
 
    ![Ventana Punto de interrupción](../debugger/media/breakpointwindow.png "Ventana Punto de interrupción")
 
-4. Active la casilla **Acciones** .
+4. Active la casilla **Acciones**.
 
    ![Casilla Acciones activada](../debugger/media/checkedactionsbox.png "Casilla Acciones activada")
 
@@ -49,11 +49,11 @@ Para establecer puntos de seguimiento, especifique una cadena de salida en la ca
 
    El punto de seguimiento ya se estableció. Presione el botón &quot;Cerrar&quot; si solo quiere registrar información en la ventana de salida.
 
-6. Si quiere agregar condiciones que determinen si se muestra el mensaje, active la casilla **Condiciones** .
+6. Si quiere agregar condiciones que determinen si se muestra el mensaje, active la casilla **Condiciones**.
 
    ![Casilla Condiciones activada](../debugger/media/checkedconditionsbox.png "Casilla Condiciones activada")
 
-   Tiene tres opciones para las condiciones: **Expresión condicional** , **Filtro** y **Número de llamadas** .
+   Tiene tres opciones para las condiciones: **Expresión condicional** , **Filtro** y **Número de llamadas**.
 
 ## <a name="actions-menu"></a>Menú Acciones
 
@@ -99,7 +99,7 @@ Si quiere imprimir el valor del contador cuando la interación del bucle `for` c
 El comportamiento de la opción **When changed** es distinto según el lenguaje de programación.
 
 - El depurador no considerará la primera evaluación de la condición como cambio, por lo que no se llega al punto de seguimiento en la primera evaluación.
-- En el código administrado, el depurador visita el punto de seguimiento en la primera evaluación después de que se selecciona **When changed** .
+- En el código administrado, el depurador visita el punto de seguimiento en la primera evaluación después de que se selecciona **When changed**.
 
 Para una visión más completa de las expresiones válidas que se pueden usar al establecer las condiciones, consulte [Expresiones en el depurador](expressions-in-the-debugger.md).
 

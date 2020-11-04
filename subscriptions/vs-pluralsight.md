@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91005347"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
@@ -31,7 +31,7 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 1. Se le redirigirá a la página de Pluralsight correspondiente a la ventaja que se incluye en la suscripción de Visual Studio.
    - Proporcione la información de contacto solicitada en el formulario
    - Active la casilla para aceptar las condiciones de uso.
-   - Haga clic en **CANJEAR** .
+   - Haga clic en **CANJEAR**.
    > [!div class="mx-imgBorder"]
    > ![Registro en Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Complete el formulario de registro, active la casilla para aceptar las condiciones y haga clic en Canjear.")
 
@@ -43,9 +43,9 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
    > [!NOTE]
    > Si su cuenta no es apta para canjear las ofertas nuevas, en el correo electrónico que recibirá se explicará que hubo un problema al crear la cuenta porque no cumple con los requisitos.  También incluirá información que le permitirá ponerse en contacto con el equipo de soporte técnico de Pluralsight, el que podrá responder las preguntas que quizás tiene sobre la cuenta.
 
-1. Haga clic en **ESTABLECER CONTRASEÑA** .
+1. Haga clic en **ESTABLECER CONTRASEÑA**.
 
-1. Escriba la contraseña deseada en el campo **Nueva contraseña** , vuelva a escribirla en el campo **Confirmar contraseña** y haga clic en **Guardar** .
+1. Escriba la contraseña deseada en el campo **Nueva contraseña** , vuelva a escribirla en el campo **Confirmar contraseña** y haga clic en **Guardar**.
 
 1. Ya está.  Ya está listo para comenzar el aprendizaje con miles de cursos de Pluralsight.
 
