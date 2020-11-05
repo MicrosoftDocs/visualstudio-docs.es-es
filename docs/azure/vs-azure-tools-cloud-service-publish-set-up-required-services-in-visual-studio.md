@@ -4,17 +4,16 @@ description: Obtenga más información sobre los procedimientos para configurar 
 author: ghogen
 manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 5cd458cca0a0b387ce816f2e7f5dde8153e08410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a09b8f5c6efacab0f02a445ed78f8a3769031fa0
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280809"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399013"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Preparación para publicar o implementar un servicio en la nube desde Visual Studio
 
@@ -31,7 +30,7 @@ Un servicio en la nube ejecuta los roles en el entorno de Azure. Puede crear un 
 
 1. Con un proyecto de servicio en la nube creado anteriormente, haga clic con el botón derecho y seleccione **Publicar**.
 1. Si es necesario, inicie sesión con la cuenta Microsoft o la cuenta de organización asociada con la suscripción de Azure y después seleccione **Siguiente** para avanzar a la página **Configuración**.
-1. Se abre el cuadro de diálogo **Crear servicio en la nube y cuenta de almacenamiento** (si no aparece, seleccione **Crear nuevo** en la lista **Servicio en la nube**).
+1. Se abre el cuadro de diálogo **Crear servicio en la nube y cuenta de almacenamiento** (si no aparece, seleccione **Crear nuevo** en la lista **Servicio en la nube** ).
 1. Escriba un nombre que no distinga mayúsculas y minúsculas para el servicio en la nube, que forma parte de la dirección URL y debe ser exclusivo. Elija también una región o un grupo de afinidad y seleccione una opción de replicación.
 
 ### <a name="create-a-cloud-service-through-the-azure-portal"></a>Creación de un servicio en la nube en Azure Portal
@@ -47,7 +46,7 @@ Una cuenta de almacenamiento proporciona acceso a los servicios Blob, Queue y Ta
 
 ### <a name="create-a-storage-account-from-visual-studio"></a>Creación de una cuenta de almacenamiento en Visual Studio
 
-1. En el **Explorador de soluciones** con un proyecto de servicio en la nube creado anteriormente, localice el nodo **Servicios conectados** en un proyecto de rol, haga clic con el botón derecho y seleccione **Agregar servicio conectado**. (En Visual Studio 2015, haga clic con el botón derecho en el nodo **Storage** y seleccione **Crear cuenta de almacenamiento**).
+1. En el **Explorador de soluciones** con un proyecto de servicio en la nube creado anteriormente, localice el nodo **Servicios conectados** en un proyecto de rol, haga clic con el botón derecho y seleccione **Agregar servicio conectado**. (En Visual Studio 2015, haga clic con el botón derecho en el nodo **Storage** y seleccione **Crear cuenta de almacenamiento** ).
 1. En la lista de **Servicios conectados** que aparece, seleccione **Almacenamiento en la nube con Azure Storage**.
 1. En el cuadro de diálogo de Azure Storage que aparece, seleccione **+Crear nueva cuenta de almacenamiento** para que se abra un cuadro de diálogo en el que debe especificar la suscripción, el nombre de la cuenta, un plan de tarifa, el grupo de recursos y la ubicación.
 1. Seleccione **Crear** cuando haya terminado. La nueva cuenta de almacenamiento aparece en la lista de cuentas de almacenamiento disponibles en su suscripción.
@@ -65,11 +64,11 @@ Una cuenta de almacenamiento proporciona acceso a los servicios Blob, Queue y Ta
 
 Después de crear una cuenta de almacenamiento, si se conecta a ella desde Visual Studio, se actualizan automáticamente las configuraciones del servicio relacionadas con el proyecto, incluidas las direcciones URL y las claves de acceso.
 
-Si creó un servicio en la nube en Visual Studio con la opción **Agregar servicio conectado**, puede comprobar las conexiones si abre `ServiceConfiguration.Cloud.cscfg` y `ServiceConfiguration.Local.cscfg`.
+Si creó un servicio en la nube en Visual Studio con la opción **Agregar servicio conectado** , puede comprobar las conexiones si abre `ServiceConfiguration.Cloud.cscfg` y `ServiceConfiguration.Local.cscfg`.
 
 Si creó un servicio en la nube en Azure Portal, siga los mismos pasos descritos en [Creación de una cuenta de almacenamiento en Visual Studio](#create-a-storage-account-from-visual-studio), pero seleccione la cuenta existente en lugar de crear otra. Visual Studio se encarga de actualizar la configuración.
 
-Para realizar la configuración manualmente, use las páginas de propiedades de Visual Studio para el rol aplicable del proyecto de servicio en la nube (haga clic con el botón derecho en el rol y seleccione **Propiedades**). Para más información, vea [Configuración de una cadena de conexión para una cuenta de almacenamiento](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
+Para realizar la configuración manualmente, use las páginas de propiedades de Visual Studio para el rol aplicable del proyecto de servicio en la nube (haga clic con el botón derecho en el rol y seleccione **Propiedades** ). Para más información, vea [Configuración de una cadena de conexión para una cuenta de almacenamiento](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
 
 ### <a name="about-access-keys"></a>Acerca de las claves de acceso
 

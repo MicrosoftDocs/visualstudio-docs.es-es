@@ -4,17 +4,16 @@ description: Obtenga información sobre cómo agregar y quitar roles en los serv
 author: ghogen
 manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 72aba423567f0b23f09e002073fdca89c99e6f4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 897cb36ee2afa650e042b92243c6044684468a6e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280842"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398844"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Administración de roles en servicios en la nube de Azure con Visual Studio
 Una vez creado el servicio en la nube de Azure, puede agregarle nuevos roles o quitarle roles existentes. También puede importar un proyecto existente y convertirlo en un rol. Por ejemplo, puede importar una aplicación web ASP.NET y designarla como rol web.
@@ -24,7 +23,7 @@ Los pasos siguientes le explican cómo agregar un rol web o un rol de trabajo a 
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto
+1. En el **Explorador de soluciones** , expanda el nodo del proyecto
 
 1. Haga clic con el botón derecho en el nodo **Roles** para ver el menú contextual. En el menú contextual, seleccione **Agregar** y, luego, seleccione un rol web o un rol de trabajo existente en la solución actual o cree un proyecto de rol web o de trabajo. También puede seleccionar un proyecto adecuado, por ejemplo, un proyecto de aplicación web ASP.NET, y asociarlo a un proyecto de rol.
 
@@ -35,7 +34,7 @@ Los pasos siguientes le explican cómo quitar un rol web o un rol de trabajo de 
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto
+1. En el **Explorador de soluciones** , expanda el nodo del proyecto
 
 1. Expanda el nodo **Roles**.
 

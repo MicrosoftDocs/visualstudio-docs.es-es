@@ -5,16 +5,15 @@ author: ghogen
 manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 3ee226aac0d705da29333260966781d5b9b627ed
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 853b51fb5990d74a79f76cc55743ff9ba50f282e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508462"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399784"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimización del código de Azure
 Al programar aplicaciones que usan Microsoft Azure, debe seguir algunas prácticas de codificación para evitar problemas en la escalabilidad, el comportamiento y el rendimiento de la aplicación en un entorno en la nube. Microsoft proporciona una herramienta de análisis de código de Azure que reconoce e identifica varios de los problemas que se suelen encontrar y ayuda a resolverlos. Puede descargar la herramienta en Visual Studio a través de NuGet.
@@ -23,7 +22,7 @@ Al programar aplicaciones que usan Microsoft Azure, debe seguir algunas práctic
 La herramienta de análisis de código de Azure usa la siguientes reglas para marcar automáticamente su código de Azure cuando encuentra problemas conocidos que influyen en el rendimiento. Los problemas detectados aparecen como advertencias o errores del compilador. Con frecuencia, las correcciones de código o sugerencias para resolver la advertencia o el error se proporcionan con un icono de bombilla.
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>Evite usar el modo de estado de sesión predeterminado (en proceso)
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP0000
 
 ### <a name="description"></a>Descripción
@@ -40,7 +39,7 @@ El estado de sesión ASP.NET es compatible con distintas opciones de almacenamie
 Una solución recomendada es almacenar el estado de sesión en un servicio de caché administrado. Aprenda a usar el [Proveedor de estado de sesión de Azure para Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) para almacenar el estado de sesión. También puede almacenar el estado de sesión en otros lugares para garantizar que su aplicación sea escalable en la nube. Para obtener más información acerca de soluciones alternativas, lea [Modos de estado de sesión](/previous-versions/ms178586(v=vs.140)).
 
 ## <a name="run-method-should-not-be-async"></a>El método de ejecución no debe ser asincrónico
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP1000
 
 ### <a name="description"></a>Descripción
@@ -85,7 +84,7 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>Use la autenticación con firma de acceso compartido de Service Bus
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP2000
 
 ### <a name="description"></a>Descripción
@@ -111,7 +110,7 @@ Para más información, consulte los temas siguientes.
 * [Usar la autenticación con firma de acceso compartido con Service Bus](/azure/service-bus-messaging/service-bus-sas)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Considere usar el método OnMessage para evitar un "bucle de recepción"
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP2002
 
 ### <a name="description"></a>Descripción
@@ -120,7 +119,7 @@ Para evitar entrar en un "bucle de recepción", la mejor solución para recibir 
 Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Al llamar a **OnMessage**, el cliente inicia un suministro de mensajes interno que sondea constantemente la cola o la suscripción. Este suministro de mensajes contiene un bucle infinito que emite una llamada para recibir mensajes. Si la llamada agota el tiempo de espera, emite una llamada nueva. El intervalo de tiempo de espera está determinado por el valor de la propiedad [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) de [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) que se usa.
+Al llamar a **OnMessage** , el cliente inicia un suministro de mensajes interno que sondea constantemente la cola o la suscripción. Este suministro de mensajes contiene un bucle infinito que emite una llamada para recibir mensajes. Si la llamada agota el tiempo de espera, emite una llamada nueva. El intervalo de tiempo de espera está determinado por el valor de la propiedad [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) de [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) que se usa.
 
 La ventaja de usar **OnMessage** en comparación con **Receive** es que los usuarios no tienen que sondear en busca de mensajes, controlar excepciones, procesar varios mensajes en paralelo ni completar los mensajes manualmente.
 
@@ -215,7 +214,7 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Considere usar los métodos asincrónicos de Service Bus
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP2003
 
 ### <a name="description"></a>Descripción
@@ -232,7 +231,7 @@ Consulte [Clase QueueClient (Microsoft.ServiceBus.Messaging)](/dotnet/api/micros
 Para mejorar el rendimiento de la infraestructura de mensajería de Azure, consulte el modelo de diseño [Manual de mensajería asincrónica](/previous-versions/msp-n-p/dn589781(v=pandp.10)).
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Considere crear particiones de temas y colas de Service Bus
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP2004
 
 ### <a name="description"></a>Descripción
@@ -257,7 +256,7 @@ ns.CreateTopic(td);
 Para más información, consulte [Partitioned Service Bus Queues and Topics](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/) (Temas y colas de Service Bus con particiones) del blog de Microsoft Azure y consulte el ejemplo de [Microsoft Azure Service Bus Partitioned Queue](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f) (Cola con particiones de Microsoft Azure Service Bus).
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>No establezca SharedAccessStartTime
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP3001
 
 ### <a name="description"></a>Descripción
@@ -289,7 +288,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ```
 
 ## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>El tiempo de expiración de la directiva de acceso compartido debe ser superior a cinco minutos.
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP3002
 
 ### <a name="description"></a>Descripción
@@ -339,7 +338,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Para más información, consulte [Configuración del acceso de lectura público anónimo a contenedores y blobs](/azure/storage/blobs/anonymous-read-access-configure?tabs=portal).
 
 ## <a name="use-cloudconfigurationmanager"></a>Use CloudConfigurationManager
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP4000
 
 ### <a name="description"></a>Descripción
@@ -376,7 +375,7 @@ Este es un ejemplo de cómo almacenar la configuración en un archivo App.config
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Evite usar cadenas de conexión codificadas de forma rígida
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP4001
 
 ### <a name="description"></a>Descripción
@@ -397,7 +396,7 @@ Almacene las cadenas de conexión en los archivos de configuración o entornos d
 Para obtener información sobre el uso de archivos de configuración como web.config o app.config, consulte [Directrices de configuración web de ASP.NET](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations). Para obtener información sobre cómo funcionan las variables de entorno de Azure, consulte [Sitios web Microsoft Azure: cómo funcionan las cadenas de aplicaciones y las cadenas de conexión](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Para obtener información sobre cómo almacenar la cadena de conexión en el control de código fuente, consulte [Evitar colocar información confidencial, como cadenas de conexión, en archivos que se almacenan en el repositorio de código fuente.](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)
 
 ## <a name="use-diagnostics-configuration-file"></a>Uso del archivo de configuración de diagnóstico
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP5000
 
 ### <a name="description"></a>Descripción
@@ -414,7 +413,7 @@ A partir de WAD 1.3 (incluido con Azure SDK 2.5), ya no es posible usar código 
 Use el diseñador de configuración de diagnósticos para mover la configuración de diagnóstico al archivo de configuración de diagnósticos (diagnostics.wadcfg o diagnostics.wadcfgx para SDK 2.5 y versiones posteriores). También se recomienda que instale [Azure SDK 2.5](https://social.msdn.microsoft.com/Forums/en-US/home) y use la característica de diagnóstico más reciente.
 
 1. En el menú contextual del rol que quiere configurar, elija Propiedades, y luego elija la pestaña Configuración.
-2. En la sección **Diagnósticos**, asegúrese de que la casilla **Habilitar diagnósticos** está seleccionada.
+2. En la sección **Diagnósticos** , asegúrese de que la casilla **Habilitar diagnósticos** está seleccionada.
 3. Elija el botón **Configurar**.
 
    ![Acceso a la opción de habilitar diagnósticos](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
@@ -422,7 +421,7 @@ Use el diseñador de configuración de diagnósticos para mover la configuració
    Consulte [Configuración de los diagnósticos para Azure Cloud Services y Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) para obtener más información.
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>Evite declarar objetos DbContext como estáticos
-### <a name="id"></a>Id.
+### <a name="id"></a>ID
 AP6000
 
 ### <a name="description"></a>Descripción

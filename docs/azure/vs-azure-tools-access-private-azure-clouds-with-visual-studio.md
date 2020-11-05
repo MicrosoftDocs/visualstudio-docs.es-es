@@ -4,17 +4,16 @@ description: Obtenga información sobre cómo tener acceso a recursos de nube pr
 author: ghogen
 manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 6c1b46e34c688f232ee1f774ff2d19fdad7ff6bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 136c7f4f497c21de24e34c4c426707de94151ddf
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280393"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398740"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Acceso a nubes privadas de Azure con Visual Studio
 
@@ -26,19 +25,19 @@ De forma predeterminada, Visual Studio admite los puntos de conexión REST de la
 
     ![Comando Administrar suscripciones](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 
-1. En el cuadro de diálogo **Administrar suscripciones de Microsoft Azure**, seleccione la pestaña **Certificados** y, luego, seleccione **Importar**.
+1. En el cuadro de diálogo **Administrar suscripciones de Microsoft Azure** , seleccione la pestaña **Certificados** y, luego, seleccione **Importar**.
 
     ![Importación de certificados de Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790779.png)
 
-1. En el cuadro de diálogo **Importar suscripciones de Microsoft Azure**, seleccione **Examinar**.
+1. En el cuadro de diálogo **Importar suscripciones de Microsoft Azure** , seleccione **Examinar**.
 
     ![Botón Examinar del cuadro de diálogo Importar suscripciones de Microsoft Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
 
-1. En el cuadro de diálogo **Abrir**, vaya al directorio donde guardó el archivo de configuración de publicación, seleccione el archivo y, luego, elija **Abrir**.
+1. En el cuadro de diálogo **Abrir** , vaya al directorio donde guardó el archivo de configuración de publicación, seleccione el archivo y, luego, elija **Abrir**.
 
     ![Selección del archivo de configuración de publicación](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
 
-1. Al volver al cuadro de diálogo **Importar suscripciones de Microsoft Azure**, seleccione **Importar**.
+1. Al volver al cuadro de diálogo **Importar suscripciones de Microsoft Azure** , seleccione **Importar**.
 
     ![Importación del archivo de configuración de publicación](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
 

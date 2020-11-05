@@ -1,7 +1,7 @@
 ---
 title: Configurar el servicio en la nube con varias configuraciones
 description: Cambie los archivos ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg y ServiceConfiguration.Cloud.cscfg para saber cómo configurar un proyecto de servicio en la nube de Azure.
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 76dec6a238090fac6a5094221e1a1c2bb953789d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a811c30114f9a45119eaccc666d6eb39be80a562
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036553"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399811"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración de su proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
 
@@ -23,7 +23,7 @@ Un proyecto de servicio en la nube de Azure en Visual Studio incluye tres archiv
 - `ServiceDefinition.csdef` se implementa en Azure para describir los requisitos del servicio en la nube y sus roles y para proporcionar la configuración que se aplica a todas las instancias. La configuración se puede leer en tiempo de ejecución mediante la API de tiempo de ejecución de hospedaje del servicio de Azure. Este archivo puede actualizarse en Azure solo cuando se detiene el servicio en la nube.
 - `ServiceConfiguration.Local.cscfg` y `ServiceConfiguration.Cloud.cscfg` proporcionan valores de configuración del archivo de definición y especifican el número de instancias que se van a ejecutar en cada rol. El archivo "Local" contiene valores que se utilizan en la depuración local; el archivo "Nube" se implementa en Azure como `ServiceConfiguration.cscfg` y proporciona la configuración para el entorno de servidor. Este archivo se puede actualizar mientras el servicio en la nube se ejecuta en Azure.
 
-Las opciones de configuración se administran y modifican en Visual Studio con las páginas de propiedades del rol aplicable (haga clic con el botón derecho en el rol y seleccione **Propiedades**, o bien haga doble clic en el rol). Los cambios pueden limitarse a cualquier configuración elegida en el menú desplegable **Configuración de servicio**. Las propiedades de los roles de web y de trabajo son similares, excepto en los casos descritos en las siguientes secciones.
+Las opciones de configuración se administran y modifican en Visual Studio con las páginas de propiedades del rol aplicable (haga clic con el botón derecho en el rol y seleccione **Propiedades** , o bien haga doble clic en el rol). Los cambios pueden limitarse a cualquier configuración elegida en el menú desplegable **Configuración de servicio**. Las propiedades de los roles de web y de trabajo son similares, excepto en los casos descritos en las siguientes secciones.
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
@@ -39,7 +39,7 @@ Seleccione a qué archivo `ServiceConfiguration.*.cscfg` afectan los cambios. De
 
 Establezca la propiedad **Número de instancias** en el número de instancias que el servicio debe ejecutar para este rol
 
-Establezca la propiedad **Tamaño de VM** en **Extra pequeño**, **Pequeño**, **Mediano**, **Grande** o **Extra grande**.  Para obtener más información, vea [tamaños de Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
+Establezca la propiedad **Tamaño de VM** en **Extra pequeño** , **Pequeño** , **Mediano** , **Grande** o **Extra grande**.  Para obtener más información, vea [tamaños de Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Acción de inicio (solo para el rol web)
 
@@ -51,11 +51,11 @@ Si ya se ha agregado un extremo HTTPS, la opción de extremo HTTPS se habilita d
 
 ### <a name="diagnostics"></a>Diagnóstico
 
-De manera predeterminada, la funcionalidad de diagnóstico está habilitada para el rol web. El proyecto de servicio en la nube de Azure y la cuenta de almacenamiento se establecen para usar el emulador de almacenamiento local. Cuando esté listo para realizar la implementación en Azure, puede seleccionar el botón del generador (**…**) para usar Azure Storage en su lugar. Los datos de diagnóstico se pueden transferir a la cuenta de almacenamiento a petición o a intervalos programados automáticamente. Para obtener más información sobre los diagnósticos de Azure, consulte [Habilitación de Diagnósticos en Azure Cloud Services y Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+De manera predeterminada, la funcionalidad de diagnóstico está habilitada para el rol web. El proyecto de servicio en la nube de Azure y la cuenta de almacenamiento se establecen para usar el emulador de almacenamiento local. Cuando esté listo para realizar la implementación en Azure, puede seleccionar el botón del generador ( **…** ) para usar Azure Storage en su lugar. Los datos de diagnóstico se pueden transferir a la cuenta de almacenamiento a petición o a intervalos programados automáticamente. Para obtener más información sobre los diagnósticos de Azure, consulte [Habilitación de Diagnósticos en Azure Cloud Services y Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Página Configuración
+## <a name="settings-page"></a>Página de configuración
 
-En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de las opciones de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](/previous-versions/azure/dn602775(v=azure.11)), en concreto, el método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
+En la página **Configuración** , puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de las opciones de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](/previous-versions/azure/dn602775(v=azure.11)), en concreto, el método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuración de una cadena de conexión para una cuenta de almacenamiento
 
@@ -68,14 +68,14 @@ Puede establecer la cadena de conexión para usar el almacenamiento local según
 
 Para crear una cadena de conexión, seleccione **Agregar configuración** y establezca el **Tipo** en "Cadena de conexión".
 
-Para cadenas de conexión nuevas o existentes, seleccione **...*** a la derecha del campo **Valor** para abrir el cuadro de diálogo **Crear cadena de conexión de almacenamiento**:
+En el caso de las cadenas de conexión nuevas o existentes, seleccione **...** _ a la derecha del campo _ *Value* * para abrir el cuadro de diálogo **crear cadena de conexión de almacenamiento** :
 
-1. En **Conectar mediante**, elija la opción **Su suscripción** para seleccionar una cuenta de almacenamiento de una suscripción. Después, Visual Studio obtiene las credenciales de la cuenta de almacenamiento automáticamente del archivo `.publishsettings`.
-1. Si selecciona **Credenciales escritas manualmente**, puede especificar el nombre de la cuenta y la clave directamente con la información de Azure Portal. Para copiar la clave de cuenta:
+1. En **Conectar mediante** , elija la opción **Su suscripción** para seleccionar una cuenta de almacenamiento de una suscripción. Después, Visual Studio obtiene las credenciales de la cuenta de almacenamiento automáticamente del archivo `.publishsettings`.
+1. Si selecciona **Credenciales escritas manualmente** , puede especificar el nombre de la cuenta y la clave directamente con la información de Azure Portal. Para copiar la clave de cuenta:
     1. Vaya a la cuenta de almacenamiento en Azure Portal y seleccione **Administrar claves**.
     1. Para copiar la clave de cuenta, vaya a la cuenta de almacenamiento en Azure Portal, seleccione **Configuración > Claves de acceso** y use el botón Copiar para copiar la clave de acceso principal en el Portapapeles.
 1. Seleccione una de las opciones de conexión. En **Especificar extremos personalizados** se le pide que especifique direcciones URL específicas para los blobs, las tablas y las colas. Los puntos de conexión personalizados permiten usar [dominios personalizados](/azure/storage/blobs/storage-custom-domain-name) y controlar el acceso con mayor precisión. Consulte [Configuración de las cadenas de conexión de Azure Storage](/azure/storage/common/storage-configure-connection-string).
-1. Seleccione **Aceptar** y, después, **Archivo > Guardar**, para actualizar la configuración con la nueva cadena de conexión.
+1. Seleccione **Aceptar** y, después, **Archivo > Guardar** , para actualizar la configuración con la nueva cadena de conexión.
 
 Una vez más, al publicar su aplicación en Azure, elija la configuración del servicio que contiene la cuenta de Azure Storage para la cadena de conexión. Una vez publicada la aplicación, compruebe que funciona según lo previsto con los servicios de almacenamiento de Azure.
 
@@ -86,7 +86,7 @@ Para más información acerca de cómo actualizar configuraciones del servicio, 
 Un rol web suele tener un único punto de conexión HTTP en el puerto 80. En cambio, un rol de trabajo puede tener cualquier número de puntos de conexión HTTP, HTTPS o TCP. Los extremos pueden ser extremos de entrada (que están disponibles para los clientes externos) o extremos internos (que están disponibles para otros roles que se ejecuten dentro del servicio).
 
 - Para hacer que un extremo HTTP esté disponible para clientes externos y exploradores web, cambie el tipo del extremo para que sea de entrada, y especifique un nombre y un número de puerto público.
-- Para hacer que un extremo HTTPS esté disponible para clientes externos y exploradores web, cambie el tipo del extremo para que sea de **entrada**, y especifique un nombre, un número de puerto público y un nombre de certificado de administración. También debe definir el certificado en la página de propiedades **Certificados** para poder especificar un certificado de administración.
+- Para hacer que un extremo HTTPS esté disponible para clientes externos y exploradores web, cambie el tipo del extremo para que sea de **entrada** , y especifique un nombre, un número de puerto público y un nombre de certificado de administración. También debe definir el certificado en la página de propiedades **Certificados** para poder especificar un certificado de administración.
 - Para hacer que un extremo esté disponible para el acceso interno de otros roles del servicio en la nube, cambie el tipo del extremo para que sea interno, y especifique un nombre y los puertos privados posibles para el extremo.
 
 ## <a name="local-storage-page"></a>Pagina Almacenamiento local
@@ -99,7 +99,7 @@ La página de propiedades **Certificados** agrega información sobre los certifi
 
 Si incorpora un certificado aquí, se agrega información sobre los certificados a la configuración del servicio. Los certificados no se incluyen con el servicio; debe cargarlos por separado mediante Azure Portal.
 
-Para asociar un certificado a su rol, proporcione un nombre para el certificado. Use este nombre para hacer referencia al certificado cuando configure un punto de conexión HTTPS en la página **Puntos de conexión**. A continuación, especifique si el almacén de certificados es **Equipo local** o **Usuario actual**, así como el nombre del almacén. Por último, especifique la huella digital del certificado. Si el certificado está en el almacén Current User\Personal (My), para especificar la huella digital del certificado selecciónelo en una lista rellenada. Si se encuentra en otra ubicación, especifique el valor de la huella digital manualmente.
+Para asociar un certificado a su rol, proporcione un nombre para el certificado. Use este nombre para hacer referencia al certificado cuando configure un punto de conexión HTTPS en la página **Puntos de conexión**. A continuación, especifique si el almacén de certificados es **Equipo local** o **Usuario actual** , así como el nombre del almacén. Por último, especifique la huella digital del certificado. Si el certificado está en el almacén Current User\Personal (My), para especificar la huella digital del certificado selecciónelo en una lista rellenada. Si se encuentra en otra ubicación, especifique el valor de la huella digital manualmente.
 
 Al agregar un certificado del almacén de certificados, cualquier certificado intermedio se agrega automáticamente a la configuración. Además, estos certificados intermedios deben cargarse en Azure para configurar el servicio correctamente para SSL.
 

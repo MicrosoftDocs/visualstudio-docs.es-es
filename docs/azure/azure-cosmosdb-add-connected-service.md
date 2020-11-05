@@ -3,18 +3,17 @@ title: Agregue Azure CosmosDB mediante Servicios conectados | Microsoft Docs
 description: Adición de compatibilidad con CosmosDB de Azure a la aplicación mediante Visual Studio para agregar un servicio conectado
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2d23081f541fbc12581450c60c6eb4b09f20c64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bdf07824c7a06a692a81a93eaa5a0fd0536705d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643274"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398376"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>Agregue Azure Cosmos DB a la aplicación mediante Visual Studio Servicios conectados
 
@@ -43,7 +42,7 @@ La funcionalidad del servicio conectado agrega todo el código de conexión y la
 
 1. Abra el proyecto en Visual Studio.
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el nodo **servicios conectados** y, en el menú contextual, seleccione **Agregar servicio conectado**.
+1. En **Explorador de soluciones** , haga clic con el botón secundario en el nodo **servicios conectados** y, en el menú contextual, seleccione **Agregar servicio conectado**.
 
 1. En la pestaña **servicios conectados** , seleccione el icono + para las **dependencias de servicio**.
 

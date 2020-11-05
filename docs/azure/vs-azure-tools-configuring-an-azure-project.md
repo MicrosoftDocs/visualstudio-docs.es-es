@@ -4,29 +4,28 @@ description: Aprenda a configurar un proyecto de servicio en la nube de Azure en
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 7f207afc600402924969e4d2eee6df229c3d6f09
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 388cd20468624c6441342267f6545dfaf0e21901
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426725"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399151"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Configuración de un proyecto de servicio en la nube de Azure con Visual Studio
 Es posible configurar un proyecto de servicio en la nube de Azure dependiendo de los requisitos para dicho proyecto. Puede establecer las propiedades del proyecto para las siguientes categorías:
 
-- **Publicar un servicio en la nube en Azure**: Puede establecer una propiedad para asegurarse de que no se elimina accidentalmente un servicio en la nube existente implementado en Azure.
+- **Publicar un servicio en la nube en Azure** : Puede establecer una propiedad para asegurarse de que no se elimina accidentalmente un servicio en la nube existente implementado en Azure.
 - **Ejecutar o depurar un servicio en la nube en el equipo local** : puede seleccionar una configuración del servicio para usarla e indicar si desea iniciar el emulador de Azure Storage.
-- **Validar un paquete de servicio en la nube cuando se crea**: Puede decidir si desea tratar las advertencias como errores para asegurarse de que el paquete de servicio en la nube se implementa sin ningún problema.
+- **Validar un paquete de servicio en la nube cuando se crea** : Puede decidir si desea tratar las advertencias como errores para asegurarse de que el paquete de servicio en la nube se implementa sin ningún problema.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Pasos para configurar un proyecto de servicio en la nube de Azure
 1. Abra o cree un proyecto de servicio en la nube en Visual Studio.
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y, en el menú contextual, seleccione **Propiedades**.
+1. En el **Explorador de soluciones** , haga clic con el botón derecho en el proyecto y, en el menú contextual, seleccione **Propiedades**.
 
 1. En la página de propiedades del proyecto, seleccione la pestaña **Desarrollo**.
 

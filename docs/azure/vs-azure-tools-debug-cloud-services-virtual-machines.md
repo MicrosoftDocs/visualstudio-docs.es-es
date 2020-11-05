@@ -5,17 +5,16 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: how-to
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: cd55ebd9171a7f9cd2157194da8876f47aa22ece
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508488"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398701"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depuración de una máquina virtual o un servicio en la nube de Azure en Visual Studio
 
@@ -33,7 +32,7 @@ El emulador simula el servicio Azure Compute y se ejecuta en el entorno local pa
 
     ![Emulador de Azure en la bandeja del sistema](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
-2. Visualice la interfaz de usuario del emulador de proceso; para ello, abra el menú contextual del icono de Azure en el área de notificación y haga clic en **Show Compute Emulator UI**(Mostrar la UI del emulador de proceso).
+2. Visualice la interfaz de usuario del emulador de proceso; para ello, abra el menú contextual del icono de Azure en el área de notificación y haga clic en **Show Compute Emulator UI** (Mostrar la UI del emulador de proceso).
 
     El panel izquierdo de la interfaz de usuario muestra los servicios implementados actualmente en el emulador de proceso y las instancias de rol que cada servicio ejecuta. Puede elegir el servicio o los roles para mostrar información sobre el ciclo de vida, el registro y el diagnóstico en el panel derecho. Si coloca el foco en el margen superior de una ventana incluida, se expande para rellenar el recuadro derecho.
 
@@ -49,7 +48,7 @@ Para depurar un servicio en la nube desde un equipo remoto, debe habilitar esta 
 Si habilita la depuración remota para un servicio en la nube, este no mostrará un rendimiento inferior ni incurrirá en cargos adicionales. No use la depuración remota en un servicio de producción, porque podría perjudicar a los clientes que usan el servicio.
 
 > [!NOTE]
-> Al publicar un servicio en la nube en Visual Studio, puede habilitar **IntelliTrace** para los roles de ese servicio cuyo destino sea .NET Framework 4 o .NET Framework 4.5. Con **IntelliTrace**, puede examinar eventos que se produjeron en una instancia de rol en el pasado y reproducir el contexto a partir de ese momento. Consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) y [Uso de IntelliTrace](../debugger/intellitrace.md).
+> Al publicar un servicio en la nube en Visual Studio, puede habilitar **IntelliTrace** para los roles de ese servicio cuyo destino sea .NET Framework 4 o .NET Framework 4.5. Con **IntelliTrace** , puede examinar eventos que se produjeron en una instancia de rol en el pasado y reproducir el contexto a partir de ese momento. Consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) y [Uso de IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Para habilitar la depuración remota para un servicio en la nube
 
@@ -79,7 +78,7 @@ Si habilita la depuración remota para un servicio en la nube, este no mostrará
 
     ![Seleccionar el cuadro de diálogo de tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Para identificar los procesos a los que está asociado el depurador, en la barra de menús, seleccione **depurar**  >  **Windows**  >  **procesos**de Windows y abra el cuadro de diálogo **procesos** . (Teclado: Ctrl + Alt + Z) Para desasociar un proceso específico, abra su menú contextual y, a continuación, seleccione **Desasociar proceso**. También puede localizar el nodo de la instancia en el Explorador de servidores, buscar el proceso, abrir su menú contextual y seleccione **Desasociar proceso**.
+4. Para identificar los procesos a los que está asociado el depurador, en la barra de menús, seleccione **depurar**  >  **Windows**  >  **procesos** de Windows y abra el cuadro de diálogo **procesos** . (Teclado: Ctrl + Alt + Z) Para desasociar un proceso específico, abra su menú contextual y, a continuación, seleccione **Desasociar proceso**. También puede localizar el nodo de la instancia en el Explorador de servidores, buscar el proceso, abrir su menú contextual y seleccione **Desasociar proceso**.
 
     ![Depurar procesos](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -124,7 +123,7 @@ Puede depurar programas que se ejecuten en máquinas virtuales de Azure usando e
 
     ![Comando Asociar depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-4. En el cuadro de diálogo **Asociar al proceso**, elija **Seleccionar** para limitar la lista de resultados de forma que solo se muestren los tipos de código que quiere depurar. Puede depurar código administrado de 32 o 64 bits, código nativo o ambos.
+4. En el cuadro de diálogo **Asociar al proceso** , elija **Seleccionar** para limitar la lista de resultados de forma que solo se muestren los tipos de código que quiere depurar. Puede depurar código administrado de 32 o 64 bits, código nativo o ambos.
 
     ![Seleccionar el cuadro de diálogo de tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -167,11 +166,11 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
 
     ![Registro de actividades de Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publique su proyecto tal y como se describe en [Implementación de un proyecto web utilizando publicación con un solo clic en Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Dado que desea realizar la depuración en la máquina virtual, en la página **Configuración** del asistente de **Publicación web**, seleccione **Depurar** como la configuración. Esto garantiza la disponibilidad de los símbolos de código durante la depuración.
+6. Publique su proyecto tal y como se describe en [Implementación de un proyecto web utilizando publicación con un solo clic en Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Dado que desea realizar la depuración en la máquina virtual, en la página **Configuración** del asistente de **Publicación web** , seleccione **Depurar** como la configuración. Esto garantiza la disponibilidad de los símbolos de código durante la depuración.
 
     ![Configuración Publicar](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. En **File Publish Options**, seleccione **Remove additional files at destination** si el proyecto ya se había implementado anteriormente.
+7. En **File Publish Options** , seleccione **Remove additional files at destination** si el proyecto ya se había implementado anteriormente.
 
 8. Después de publicar el proyecto, en el menú contextual de la máquina virtual en el Explorador de servidores, seleccione **Asociar depurador...**
 
@@ -179,7 +178,7 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
 
     ![Comando Asociar depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-9. En el cuadro de diálogo **Asociar al proceso**, elija **Seleccionar** para limitar la lista de resultados de forma que solo se muestren los tipos de código que quiere depurar. Puede depurar código administrado de 32 o 64 bits, código nativo o ambos.
+9. En el cuadro de diálogo **Asociar al proceso** , elija **Seleccionar** para limitar la lista de resultados de forma que solo se muestren los tipos de código que quiere depurar. Puede depurar código administrado de 32 o 64 bits, código nativo o ambos.
 
     ![Seleccionar el cuadro de diálogo de tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 

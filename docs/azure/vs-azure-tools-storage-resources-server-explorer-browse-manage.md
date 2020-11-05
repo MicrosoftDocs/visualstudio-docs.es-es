@@ -1,7 +1,7 @@
 ---
 title: Examinar y administrar recursos de almacenamiento
 description: Exploración y administración de recursos de almacenamiento mediante el Explorador de servidores
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 059145dbce95ade9f628f26afe4f70e1d6a065e9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036449"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398870"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Examen y administración de los recursos de almacenamiento mediante el Explorador de servidores
 
@@ -32,9 +32,9 @@ A partir del SDK de Azure 2.7, también puede usar Cloud Explorer para ver y adm
 
 El Explorador de servidores muestra automáticamente una lista de blobs, colas y tablas en la cuenta del emulador de almacenamiento. La cuenta del emulador de almacenamiento aparece en Explorador de servidores en el nodo **almacenamiento** como el nodo **desarrollo** .
 
-Para ver los recursos de la cuenta del emulador de almacenamiento, expanda el nodo **Desarrollo** . Si el emulador de almacenamiento aún no está iniciado cuando expanda el nodo **Desarrollo**, se inicia automáticamente. Este proceso puede tardar varios segundos. Puede continuar trabajando en otras zonas de Visual Studio mientras se inicia el emulador de almacenamiento.
+Para ver los recursos de la cuenta del emulador de almacenamiento, expanda el nodo **Desarrollo** . Si el emulador de almacenamiento aún no está iniciado cuando expanda el nodo **Desarrollo** , se inicia automáticamente. Este proceso puede tardar varios segundos. Puede continuar trabajando en otras zonas de Visual Studio mientras se inicia el emulador de almacenamiento.
 
-Para ver los recursos en una cuenta de almacenamiento, expanda el nodo de la cuenta de almacenamiento en el Explorador de servidores, donde puede ver los nodos de **blobs**, **colas** y **tablas**.
+Para ver los recursos en una cuenta de almacenamiento, expanda el nodo de la cuenta de almacenamiento en el Explorador de servidores, donde puede ver los nodos de **blobs** , **colas** y **tablas**.
 
 ## <a name="work-with-blob-resources"></a>Uso de recursos de blob
 
@@ -74,7 +74,7 @@ Puede realizar las siguientes operaciones en blobs mediante los botones de la es
 
 1. Elija el contenedor de blobs en **Cloud Explorer**. En la ventana del contenedor, seleccione el botón **Cargar blob**.
 
-1. En el cuadro de diálogo **Cargar nuevo archivo**, seleccione el botón **Examinar** para especificar el archivo que quiere cargar y escriba luego un nombre de carpeta en el cuadro **Carpeta (opcional)**.
+1. En el cuadro de diálogo **Cargar nuevo archivo** , seleccione el botón **Examinar** para especificar el archivo que quiere cargar y escriba luego un nombre de carpeta en el cuadro **Carpeta (opcional)**.
 
    ![Cargar un archivo en una carpeta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ Dado que las carpetas de los contenedores de blobs son carpetas virtuales, no se
 
 Puede filtrar los blobs que se muestran especificando un prefijo común.
 
-Por ejemplo, si escribe el prefijo **hello** en el cuadro de texto del filtro y hace clic en el botón **Ejecutar** (**!**), solo aparecen los blobs que comienzan con "hello".
+Por ejemplo, si escribe el prefijo **hello** en el cuadro de texto del filtro y hace clic en el botón **Ejecutar** ( **!** ), solo aparecen los blobs que comienzan con "hello".
 
 ![Cuadro de texto de filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,7 +102,7 @@ El cuadro de texto de filtro distingue mayúsculas de minúsculas y no admite el
 
 ### <a name="to-download-blob-data"></a>Para descargar datos de blob
 
-En **Cloud Explorer**, use cualquiera de los métodos siguientes:
+En **Cloud Explorer** , use cualquiera de los métodos siguientes:
 
 * Abra el menú contextual de uno o varios blobs y, luego, seleccione **Abrir**.
 * Elija el nombre del blob y luego seleccione el botón **Abrir**.
@@ -166,12 +166,12 @@ Azure Table Storage permite almacenar una gran cantidad de datos estructurados. 
 
 ### <a name="to-create-a-table"></a>Para crear una tabla
 
-1. En **Cloud Explorer**, seleccione el nodo **tablas** de la cuenta de almacenamiento y, a continuación, seleccione **crear tabla**.
+1. En **Cloud Explorer** , seleccione el nodo **tablas** de la cuenta de almacenamiento y, a continuación, seleccione **crear tabla**.
 1. En el cuadro de diálogo **Crear tabla** , escriba un nombre para la tabla.
 
 ### <a name="to-view-table-data"></a>Para ver los datos de tabla
 
-1. En **Cloud Explorer**, abra el nodo **Azure** y, a continuación, abra el nodo **almacenamiento** .
+1. En **Cloud Explorer** , abra el nodo **Azure** y, a continuación, abra el nodo **almacenamiento** .
 1. Abra el nodo de la cuenta de almacenamiento que le interese y después abra el nodo **Tablas** para ver una lista de tablas para la cuenta de almacenamiento.
 1. Abra el menú contextual de una tabla y después elija **Ver tabla**.
 
@@ -181,7 +181,7 @@ La tabla se organiza por entidades (mostradas en filas) y propiedades (mostradas
 
 ### <a name="to-edit-table-data"></a>Para editar los datos de tabla
 
-En **Diseñador de tablas**, abra el menú contextual de una entidad (una sola fila) o una propiedad (una sola celda) y, a continuación, seleccione **Editar**.
+En **Diseñador de tablas** , abra el menú contextual de una entidad (una sola fila) o una propiedad (una sola celda) y, a continuación, seleccione **Editar**.
 
 ![Adición o edición de una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
@@ -194,11 +194,11 @@ No es necesario que las entidades de una sola tabla compartan el mismo conjunto 
 
 ### <a name="to-add-entities"></a>Para agregar entidades
 
-1. En **Diseñador de tablas**, seleccione el botón **Agregar entidad** .
+1. En **Diseñador de tablas** , seleccione el botón **Agregar entidad** .
 
     ![Botón Agregar entidad](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. En el cuadro de diálogo **Agregar entidad**, introduzca los valores de las propiedades **PartitionKey** y **RowKey**.
+1. En el cuadro de diálogo **Agregar entidad** , introduzca los valores de las propiedades **PartitionKey** y **RowKey**.
 
     ![Cuadro de diálogo Agregar entidad](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -235,7 +235,7 @@ Cuando el Explorador de servidores se conecta a una cuenta de almacenamiento u o
 ### <a name="to-refresh-table-data"></a>Para actualizar los datos de tabla
 
 * Seleccione el nodo **Blobs** bajo **Storage** y luego seleccione el botón **Actualizar** en la barra de herramientas del Explorador de servidores.
-* Para actualizar la lista de entidades que se muestra en **Diseñador de tablas**, seleccione el botón **Ejecutar** en diseñador de tablas.
+* Para actualizar la lista de entidades que se muestra en **Diseñador de tablas** , seleccione el botón **Ejecutar** en diseñador de tablas.
 
 ### <a name="to-refresh-queue-data"></a>Para actualizar los datos de cola
 
@@ -253,7 +253,7 @@ Existen dos formas de agregar cuentas de almacenamiento mediante el Explorador d
 
 1. En el Explorador de servidores, abra el menú contextual del nodo **Storage** y después elija **Crear cuenta de almacenamiento**.
 
-1. En el cuadro de diálogo **Crear cuenta de almacenamiento**, seleccione o escriba la información siguiente:
+1. En el cuadro de diálogo **Crear cuenta de almacenamiento** , seleccione o escriba la información siguiente:
 
    * Suscripción de Azure a la que desee agregar la cuenta de almacenamiento.
    * Nombre que quiere usar para la nueva cuenta de almacenamiento.
@@ -271,7 +271,7 @@ La nueva cuenta de almacenamiento aparecerá en la lista **Almacenamiento** del 
 1. En el Explorador de servidores, abra el menú contextual del nodo **Storage** de Azure y después seleccione **Asociar almacenamiento externo**.
 
     ![Agregar una cuenta de almacenamiento existente](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
-1. En el cuadro de diálogo **Crear cuenta de almacenamiento**, seleccione o escriba la información siguiente:
+1. En el cuadro de diálogo **Crear cuenta de almacenamiento** , seleccione o escriba la información siguiente:
 
    * El nombre de la cuenta de almacenamiento existente que quiere asociar.
    * La clave para la cuenta de almacenamiento seleccionada. Este valor normalmente se proporciona automáticamente cuando se selecciona una cuenta de almacenamiento. Si desea que Visual Studio recuerde la clave de la cuenta de almacenamiento, active la casilla **Recordar clave de cuenta**.
@@ -279,7 +279,7 @@ La nueva cuenta de almacenamiento aparecerá en la lista **Almacenamiento** del 
 
 ### <a name="to-view-the-secondary-endpoints"></a>Para ver los extremos secundarios
 
-Si ha creado una cuenta de almacenamiento con la opción de replicación **Redundancia geográfica con acceso de lectura**, puede ver sus puntos de conexión secundarios si abre el menú contextual del nombre de la cuenta y después selecciona **Propiedades**.
+Si ha creado una cuenta de almacenamiento con la opción de replicación **Redundancia geográfica con acceso de lectura** , puede ver sus puntos de conexión secundarios si abre el menú contextual del nombre de la cuenta y después selecciona **Propiedades**.
 
 ![Extremos secundarios de almacenamiento](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 
