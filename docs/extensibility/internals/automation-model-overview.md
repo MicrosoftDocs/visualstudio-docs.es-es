@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83df8926be9cd7217c514a2ed3f242bf8e121913
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: aa06b58ccd8d4cba8e16b17bc725798ae02d7e8f
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584573"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414443"
 ---
 # <a name="automation-model-overview"></a>Información general del modelo de automatización
 El modelo de automatización se compone de un conjunto de objetos en el que se puede escribir una extensión o un complemento de Visual Studio. Un complemento es una aplicación que puede manipular el entorno de Visual Studio y automatizar las tareas comunes. Una extensión de Visual Studio puede crear componentes personalizados de Visual Studio o agregar a la funcionalidad de componentes estándar como el editor de texto.
@@ -38,9 +38,9 @@ El modelo de automatización se compone de un conjunto de objetos en el que se p
 
 - Código
 
-- Compilar
+- Build
 
-Para obtener más información sobre automatización, vea [automatización y extensibilidad para Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015&preserve-view=true). Este documento y los documentos a los que proporciona vínculos le ayudarán a tomar decisiones sobre cómo debe proporcionar automatización para el VSPackage.
+Para obtener más información sobre automatización, vea [automatización y extensibilidad para Visual Studio](/previous-versions/visualstudio/visual-studio-2015/extensibility/extensibility-in-visual-studio?preserve-view=true&view=vs-2015). Este documento y los documentos a los que proporciona vínculos le ayudarán a tomar decisiones sobre cómo debe proporcionar automatización para el VSPackage.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: crear un complemento](/previous-versions/80493a3w(v=vs.140))

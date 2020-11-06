@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9177e6f431eb24a337822dd7de0a0b9586e1de0e
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584734"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414261"
 ---
 # <a name="create-custom-editors-and-designers"></a>Crear editores y diseñadores personalizados
 
@@ -59,7 +59,7 @@ Para obtener información sobre el editor principal de Visual Studio, vea [exten
 
 - ¿El editor necesita hospedar controles ActiveX?
 
-   Si el editor hospeda controles ActiveX, implemente un editor de activación en contexto, como se describe en [activación en contexto](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true). Si no hospeda controles ActiveX, use un editor de inserción simplificado o personalice el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predeterminado.
+   Si el editor hospeda controles ActiveX, implemente un editor de activación en contexto, como se describe en [activación en contexto](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015). Si no hospeda controles ActiveX, use un editor de inserción simplificado o personalice el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predeterminado.
 
 - ¿El editor admite varias vistas? Debe admitir varias vistas si desea que las vistas del editor sean visibles al mismo tiempo que el editor predeterminado.
 
@@ -93,7 +93,7 @@ Explica cómo implementar datos de documento y vistas de documento en editores p
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-[Interfaces heredadas en el editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
+[Interfaces heredadas en el editor](/previous-versions/visualstudio/visual-studio-2015/extensibility/legacy-interfaces-in-the-editor?preserve-view=true&view=vs-2015)\
 Explica cómo obtener acceso al editor principal por medio de la API heredada.
 
 [Desarrollo de un servicio de lenguaje heredado](../extensibility/internals/developing-a-legacy-language-service.md)\
@@ -102,6 +102,6 @@ Explica cómo implementar un servicio de lenguaje.
 [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Explica cómo crear elementos de interfaz de usuario que coincidan con el resto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

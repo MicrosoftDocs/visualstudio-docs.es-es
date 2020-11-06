@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9668336c565b4a3be332509d1c960b067a486785
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e88885d339e55b7c3df1312b4a72c59d2959bbcc
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583637"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414353"
 ---
 # <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
 
-El servicio de lenguaje implementa el administrador de ventanas de código y es responsable de administrar los elementos gráficos (por ejemplo, la barra desplegable). Para obtener más información, vea [personalizar ventanas de código mediante la API heredada](../vs-2015/extensibility/customizing-code-windows-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
+El servicio de lenguaje implementa el administrador de ventanas de código y es responsable de administrar los elementos gráficos (por ejemplo, la barra desplegable). Para obtener más información, vea [personalizar ventanas de código mediante la API heredada](/previous-versions/visualstudio/visual-studio-2015/extensibility/customizing-code-windows-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
 En la tabla siguiente se muestran las interfaces en el `VSCodeWindowManager` objeto.
 

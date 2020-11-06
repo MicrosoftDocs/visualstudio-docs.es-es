@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87312b5db9357462c822f876220cc239b79106aa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585724"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414417"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Generar perfiles del rendimiento de las aplicaciones de SharePoint
 
@@ -39,9 +39,9 @@ Después de crear y ejecutar un análisis de perfil en la aplicación, un inform
 
 ## <a name="performance-session-process"></a>Proceso de sesión de rendimiento
 
-Para generar perfiles de una aplicación, empiece usando el Asistente de Herramientas de generación de perfiles rendimiento para crear una sesión de rendimiento. En la barra de menús, elija **analizar**, **iniciar Asistente de rendimiento**. Cuando complete el asistente, escriba la información necesaria para la sesión de rendimiento, como el método de perfil que desee y la aplicación de la que desea generar perfiles. Para obtener más información, consulte [Cómo: generar perfiles de un sitio web o una aplicación Web mediante el Asistente de rendimiento](../profiling/how-to-collect-performance-data-for-a-web-site.md). Como alternativa, puede usar las opciones de línea de comandos para configurar y ejecutar una sesión de rendimiento. Para obtener más información, vea [usar el herramientas de generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md). Si desea configurar manualmente cada aspecto de una sesión de rendimiento, consulte [Cómo: crear manualmente sesiones de rendimiento con el herramientas de generación de perfiles](../profiling/how-to-manually-create-performance-sessions.md). También puede crear una sesión de rendimiento a partir de una prueba unitaria de; en la ventana de **resultados de pruebas** , abra el menú contextual de la prueba unitaria y, a continuación, elija **crear sesión de rendimiento**.
+Para generar perfiles de una aplicación, empiece usando el Asistente de Herramientas de generación de perfiles rendimiento para crear una sesión de rendimiento. En la barra de menús, elija **analizar** , **iniciar Asistente de rendimiento**. Cuando complete el asistente, escriba la información necesaria para la sesión de rendimiento, como el método de perfil que desee y la aplicación de la que desea generar perfiles. Para obtener más información, consulte [Cómo: generar perfiles de un sitio web o una aplicación Web mediante el Asistente de rendimiento](../profiling/how-to-collect-performance-data-for-a-web-site.md). Como alternativa, puede usar las opciones de línea de comandos para configurar y ejecutar una sesión de rendimiento. Para obtener más información, vea [usar el herramientas de generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md). Si desea configurar manualmente cada aspecto de una sesión de rendimiento, consulte [Cómo: crear manualmente sesiones de rendimiento con el herramientas de generación de perfiles](../profiling/how-to-manually-create-performance-sessions.md). También puede crear una sesión de rendimiento a partir de una prueba unitaria de; en la ventana de **resultados de pruebas** , abra el menú contextual de la prueba unitaria y, a continuación, elija **crear sesión de rendimiento**.
 
-Después de configurar una sesión de rendimiento, se guarda la configuración de sesión, el servidor se configura para proporcionar datos de generación de perfiles y la aplicación se ejecuta. A medida que se utiliza la aplicación, los datos de rendimiento se escriben en un archivo de registro. Las sesiones de rendimiento se muestran en **Explorador de rendimiento** en la carpeta **destinos** . Una vez finalizada la sesión de rendimiento, el informe aparece en la carpeta **informes** de **Explorador de rendimiento**. Para mostrar el informe, ábralo en **Explorador de rendimiento**. Para ver o configurar las propiedades de una sesión de rendimiento, abra el menú contextual en **Explorador de rendimiento**y, a continuación, elija **propiedades**. Para obtener más información acerca de las propiedades específicas de una sesión de rendimiento, consulte [configuración de sesiones de rendimiento para herramientas de generación de perfiles](../profiling/configuring-performance-sessions.md). Para obtener información sobre cómo interpretar los resultados de una sesión de rendimiento, consulte [analizar datos de herramientas de generación de perfiles](../profiling/analyzing-performance-tools-data.md).
+Después de configurar una sesión de rendimiento, se guarda la configuración de sesión, el servidor se configura para proporcionar datos de generación de perfiles y la aplicación se ejecuta. A medida que se utiliza la aplicación, los datos de rendimiento se escriben en un archivo de registro. Las sesiones de rendimiento se muestran en **Explorador de rendimiento** en la carpeta **destinos** . Una vez finalizada la sesión de rendimiento, el informe aparece en la carpeta **informes** de **Explorador de rendimiento**. Para mostrar el informe, ábralo en **Explorador de rendimiento**. Para ver o configurar las propiedades de una sesión de rendimiento, abra el menú contextual en **Explorador de rendimiento** y, a continuación, elija **propiedades**. Para obtener más información acerca de las propiedades específicas de una sesión de rendimiento, consulte [configuración de sesiones de rendimiento para herramientas de generación de perfiles](../profiling/configuring-performance-sessions.md). Para obtener información sobre cómo interpretar los resultados de una sesión de rendimiento, consulte [analizar datos de herramientas de generación de perfiles](../profiling/analyzing-performance-tools-data.md).
 
 ## <a name="stress-test"></a>Prueba de esfuerzo
 
@@ -55,7 +55,7 @@ Las pruebas de rendimiento web simulan el modo en que un usuario final puede int
 
 ## <a name="test-user-interfaces"></a>Probar interfaces de usuario
 
-Las pruebas de IU codificadas controlan automáticamente la aplicación de SharePoint a través de su interfaz de usuario (IU). Estas pruebas cubren los controles de interfaz de usuario, como botones y menús, para comprobar que funcionan correctamente. Este tipo de pruebas es especialmente útil si la validación u otra lógica se realiza en la interfaz de usuario, como en una página web. También puede usar pruebas de IU codificadas para automatizar las pruebas manuales. Cree pruebas de IU codificadas para las aplicaciones de SharePoint del mismo modo que crea pruebas para otros tipos de aplicaciones. Para obtener más información, vea [probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true).
+Las pruebas de IU codificadas controlan automáticamente la aplicación de SharePoint a través de su interfaz de usuario (IU). Estas pruebas cubren los controles de interfaz de usuario, como botones y menús, para comprobar que funcionan correctamente. Este tipo de pruebas es especialmente útil si la validación u otra lógica se realiza en la interfaz de usuario, como en una página web. También puede usar pruebas de IU codificadas para automatizar las pruebas manuales. Cree pruebas de IU codificadas para las aplicaciones de SharePoint del mismo modo que crea pruebas para otros tipos de aplicaciones. Para obtener más información, vea [probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -64,9 +64,9 @@ Las pruebas de IU codificadas controlan automáticamente la aplicación de Share
 |[Tutorial: generar perfiles de una aplicación de SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Muestra cómo realizar un análisis de Perfil de muestreo en una aplicación de SharePoint.|
 |[Ejecutar pruebas de rendimiento en la aplicación antes del lanzamiento](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|Describe cómo crear pruebas de carga, que le ayudarán a realizar pruebas de esfuerzo de las aplicaciones de SharePoint.|
 |[Prueba unitaria del código](../test/unit-test-your-code.md)|Describe cómo buscar errores lógicos en el código mediante pruebas unitarias.|
-|[Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true)|Describe cómo probar la interfaz de usuario de las aplicaciones de SharePoint.|
+|[Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)|Describe cómo probar la interfaz de usuario de las aplicaciones de SharePoint.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
 - [Mejorar la calidad del código](../test/improve-code-quality.md)

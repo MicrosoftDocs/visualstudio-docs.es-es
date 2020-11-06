@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049219"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414482"
 ---
 # <a name="xaml-errors-and-warnings"></a>Errores y advertencias de XAML
 
@@ -32,14 +32,14 @@ En segundo plano, varias herramientas analizan el código XAML en paralelo. Los 
 |Editar XAML y continuar|XECxxxx| Visual Studio 2019 versión 16,1 o anterior |
 |Recarga activa de XAML | XHRxxxx | Visual Studio 2019 versión 16,2 o posterior |
 
-Para obtener más información sobre cómo cambiar la personalización de marca de la edición XAML & continúe como la recarga en caliente de XAML, consulte las notas de la [versión](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
+Para obtener más información sobre cómo cambiar la personalización de marca de la edición XAML & continúe como la recarga en caliente de XAML, consulte las notas de la [versión](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
 
 > [!Note]
 > No todos los errores o advertencias tienen un código correspondiente. Tales errores suelen ser errores del Diseñador XAML.
 
 ## <a name="suppress-xaml-designer-errors"></a>Supresión de los errores del Diseñador XAML
 
-Abra el cuadro de diálogo **Opciones** seleccionando **Herramientas > Opciones** y luego seleccione **Editor de texto > XAML > Varios** .
+Abra el cuadro de diálogo **Opciones** seleccionando **Herramientas > Opciones** y luego seleccione **Editor de texto > XAML > Varios**.
 
 Desactive la casilla **Show errors detected by the XAML designer** (Mostrar errores detectados por el Diseñador XAML).
 

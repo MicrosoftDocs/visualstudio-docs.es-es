@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96342abce736f18d79f89b9441d9b53c068cbecf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7c51aeea4a1637e5b1b9d2de0d8b92920334e2fc
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583897"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414521"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Responder a los cambios y propagarlos
 
@@ -32,7 +32,7 @@ Como norma general, tenga en cuenta estas técnicas en el orden siguiente:
 |Reglas|Puede definir reglas que se ponen en cola para su ejecución justo antes del final de una transacción en la que se ha producido un cambio. No se ejecutan en las acciones de deshacer o rehacer. Úselos para mantener una parte del almacén sincronizada con otra.|[Las reglas propagan los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md)|
 |Almacenar eventos|El almacén de modelado proporciona notificaciones de eventos como agregar o eliminar un elemento o vínculo, o cambiar el valor de una propiedad. El evento también se ejecuta en las acciones de deshacer y rehacer. Utilice eventos de almacén para actualizar los valores que no están en el almacén.|[Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |Eventos .NET|Las formas tienen controladores de eventos que responden a los clics del mouse y otros gestos. Debe registrarse para estos eventos para cada objeto. El registro se realiza normalmente en una invalidación de InitializeInstanceResources y se debe hacer para cada elemento.<br /><br /> Normalmente, estos eventos se producen fuera de una transacción.|[Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|Reglas de límites|Una regla de límites se usa específicamente para restringir los límites de una forma.|[Ubicación y tamaño de las reglas de restricción de formas BoundsRules](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015&preserve-view=true)|
+|Reglas de límites|Una regla de límites se usa específicamente para restringir los límites de una forma.|[Ubicación y tamaño de las reglas de restricción de formas BoundsRules](/previous-versions/visualstudio/visual-studio-2015/modeling/boundsrules-constrain-shape-location-and-size?preserve-view=true&view=vs-2015)|
 |Reglas de selección|Las reglas de selección restringen específicamente lo que el usuario puede seleccionar.|[Cómo: Tener acceso y restringir una selección](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indicar los Estados de los elementos de modelo mediante características de formas y conectores, como sombra, puntas de flecha, color y ancho de línea y estilo.|[Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
@@ -52,7 +52,7 @@ Utilice eventos de almacén para sincronizar el modelo con objetos fuera del alm
 
 - **Pasar argumentos de evento a reglas y eventos** A los eventos y las reglas se les pasa un `EventArgs` parámetro con información sobre cómo cambió el modelo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
-- [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Escribir código para personalizar un lenguaje Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)

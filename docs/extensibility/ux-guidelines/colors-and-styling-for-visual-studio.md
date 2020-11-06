@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584274"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414274"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -49,7 +49,7 @@ Elija el método que mejor se adapte a los elementos de la interfaz de usuario.
 | Tiene cuadros de diálogo incrustados o independientes. | **Colores del sistema** | Nombres del sistema que permiten al sistema operativo definir el color y la apariencia de los elementos de la interfaz de usuario, como los controles de cuadro de diálogo comunes. |
 | Tiene una interfaz de usuario personalizada que quiere que sea coherente con el entorno general de VS y tiene elementos de interfaz de usuario que coinciden con la categoría y el significado semántico de los tokens compartidos. | **Colores comunes compartidos** | Nombres de token de color predefinidos existentes para elementos específicos de la interfaz de usuario |
 | Tiene una característica o un grupo de características individual y no hay ningún color compartido para elementos similares. | **Colores personalizados** | Nombres de tokens de color que son específicos de un área y no están diseñados para compartirse con otra interfaz de usuario |
-| Desea permitir que el usuario final Personalice la interfaz de usuario o el contenido (por ejemplo, para editores de texto o ventanas de diseñador especializadas). | **Personalización del usuario final**<br /><br />**(Herramientas &gt; de Cuadro de diálogo Opciones)** | Configuración definida en la página "fuentes y colores" del cuadro de diálogo ** &gt; Opciones de herramientas** o una página especializada específica de una característica de la interfaz de usuario. |
+| Desea permitir que el usuario final Personalice la interfaz de usuario o el contenido (por ejemplo, para editores de texto o ventanas de diseñador especializadas). | **Personalización del usuario final**<br /><br />**(Herramientas &gt; de Cuadro de diálogo Opciones)** | Configuración definida en la página "fuentes y colores" del cuadro de diálogo **&gt; Opciones de herramientas** o una página especializada específica de una característica de la interfaz de usuario. |
 
 ### <a name="visual-studio-themes"></a>Temas de Visual Studio
 
@@ -81,7 +81,7 @@ Antes de usar los colores compartidos comunes, asegúrese de que sabe cómo usar
 
 Vea: [exponer colores para usuarios finales](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-A veces, querrá permitir que el usuario final Personalice la interfaz de usuario, como cuando se crea un editor de código o una superficie de diseño. Los componentes de interfaz de usuario personalizables se encuentran en la sección **fuentes y colores** del cuadro de diálogo ** &gt; Opciones de herramientas** , donde los usuarios pueden elegir cambiar el color de primer plano, el color de fondo o ambos.
+A veces, querrá permitir que el usuario final Personalice la interfaz de usuario, como cuando se crea un editor de código o una superficie de diseño. Los componentes de interfaz de usuario personalizables se encuentran en la sección **fuentes y colores** del cuadro de diálogo **&gt; Opciones de herramientas** , donde los usuarios pueden elegir cambiar el color de primer plano, el color de fondo o ambos.
 
 ![&gt;Cuadro de diálogo Opciones de herramientas](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />&gt;Cuadro de diálogo Opciones de herramientas
 
@@ -340,7 +340,7 @@ A veces querrá permitir que el usuario final Personalice la interfaz de usuario
 
 Un VSPackage puede controlar las fuentes y los colores a través de las categorías personalizadas y mostrar los elementos en la página de propiedades fuentes y colores. Al utilizar este mecanismo, los VSPackages deben implementar la interfaz [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) y sus interfaces asociadas.
 
-En principio, este mecanismo se puede usar para modificar todos los elementos de presentación existentes y las categorías que los contienen. Sin embargo, no debe usarse para modificar la categoría editor de texto o sus elementos para mostrar. Para obtener más información sobre la categoría editor de texto, consulte [información general sobre fuentes y colores](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true).
+En principio, este mecanismo se puede usar para modificar todos los elementos de presentación existentes y las categorías que los contienen. Sin embargo, no debe usarse para modificar la categoría editor de texto o sus elementos para mostrar. Para obtener más información sobre la categoría editor de texto, consulte [información general sobre fuentes y colores](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015).
 
 Para implementar categorías personalizadas o mostrar los elementos, un VSPackage debe:
 
@@ -358,7 +358,7 @@ Construya un tipo especial de entrada de registro de categoría en `[HKLM\SOFTWA
 
 Rellene el registro con dos valores:
 
-| Nombre | Tipo | Datos | Descripción |
+| Nombre | Tipo | data | Descripción |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creado para identificar la categoría |
 | Paquete | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
@@ -371,7 +371,7 @@ Construya un tipo especial de entrada de registro de categoría en `[HKLM\SOFTWA
 
 Rellene el registro con dos valores:
 
-| Nombre | Tipo | Datos | Descripción |
+| Nombre | Tipo | data | Descripción |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creado para identificar la categoría |
 | Paquete | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
@@ -421,9 +421,9 @@ Para ello, un VSPackage debe:
 
 - **controlar los eventos generados** por el IDE implementando la interfaz [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) . El IDE llama al método adecuado después de las modificaciones del usuario de la página fuentes y colores. Por ejemplo, llama al método [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) si se selecciona una nueva fuente.
 
-  **O**
+  **OR**
 
-- **sondee los cambios en el IDE**. Esto puede realizarse a través de la interfaz [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementada por el sistema. Aunque principalmente para la compatibilidad con la persistencia, el método [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) puede obtener información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo de MSDN [acceso a la configuración de fuente y color almacenados](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true).
+- **sondee los cambios en el IDE**. Esto puede realizarse a través de la interfaz [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementada por el sistema. Aunque principalmente para la compatibilidad con la persistencia, el método [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) puede obtener información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo de MSDN [acceso a la configuración de fuente y color almacenados](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015).
 
 > [!NOTE]
 > Para asegurarse de que los resultados del sondeo son correctos, use la interfaz [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) para determinar si es necesario un vaciado de caché y una actualización antes de llamar a los métodos de recuperación de la interfaz [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .

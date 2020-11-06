@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aceed2833d0083beccf197c4c681f92270a1f9a4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583663"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414391"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio o a integrar las nuevas características en Visual Studio. Puede distribuir sus extensiones a otros usuarios, así como al Visual Studio Marketplace. Estas son algunas de las formas en que se puede ampliar Visual Studio:
@@ -73,11 +73,11 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
 
 - [Extender Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Cómo: migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Preguntas más frecuentes: convertir complementos en extensiones de VSPackage](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015&preserve-view=true)
+- [Preguntas más frecuentes: convertir complementos en extensiones de VSPackage](/previous-versions/visualstudio/visual-studio-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions?preserve-view=true&view=vs-2015)
 - [Administrar varios subprocesos en código administrado](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Extender menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Agregar comandos a las barras de herramientas](../extensibility/adding-commands-to-toolbars.md)

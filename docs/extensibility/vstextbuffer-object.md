@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b117aace6b9b74455b09d4d0c61a82a9c84bf19
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583624"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413923"
 ---
 # <a name="vstextbuffer-object"></a>Objeto objeto vstextbuffer
 El objeto de búfer de texto representa una secuencia de texto Unicode, que generalmente está asociada a un archivo. Un <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto se puede utilizar fuera del contexto del editor principal, como en, un asistente.
@@ -40,10 +40,10 @@ El objeto de búfer de texto representa una secuencia de texto Unicode, que gene
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Proporciona acceso a una colección genérica de propiedades. La propiedad más importante es el nombre, o moniker, del búfer. Puede almacenar sus propios datos aleatorios en el búfer con esta interfaz mediante la creación de un GUID y su uso como clave.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Admite puntos de conexión para eventos.|
 
-## <a name="remarks"></a>Comentarios
- `VSTextBuffer`Normalmente, se encuentra en una `QueryInterface` llamada en `IVsTextBuffer` . Para obtener más información, vea [búfer de texto](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
+## <a name="remarks"></a>Observaciones
+ `VSTextBuffer`Normalmente, se encuentra en una `QueryInterface` llamada en `IVsTextBuffer` . Para obtener más información, vea [búfer de texto](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
 - [Edición de figuras](https://www.microsoft.com/download/details.aspx?id=55984)

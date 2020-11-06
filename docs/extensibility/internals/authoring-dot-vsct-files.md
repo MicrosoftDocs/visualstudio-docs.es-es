@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583689"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413921"
 ---
 # <a name="author-vsct-files"></a>Archivos Author. Vsct
 En este documento se muestra cómo crear un archivo *. Vsct* para agregar elementos de menú, barras de herramientas y otros elementos de la interfaz de usuario (IU) al entorno de desarrollo integrado (IDE) de Visual Studio. Siga estos pasos al agregar elementos de interfaz de usuario a un paquete de Visual Studio (VSPackage) que todavía no tiene un archivo *. Vsct* .
@@ -51,9 +51,9 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
 
 1. En la parte superior del `CommandTable` elemento, agregue un `Extern` elemento para cada archivo externo al que se va a hacer referencia y establezca el `href` atributo en el nombre del archivo. Puede hacer referencia a los siguientes archivos de encabezado para tener acceso a los recursos de Visual Studio:
 
-   - *Stdidcmd. h*: define los identificadores de todos los comandos expuestos por Visual Studio.
+   - *Stdidcmd. h* : define los identificadores de todos los comandos expuestos por Visual Studio.
 
-   - *Vsshlids. h*: contiene los identificadores de comando de los menús de Visual Studio.
+   - *Vsshlids. h* : contiene los identificadores de comando de los menús de Visual Studio.
 
 2. Si el paquete llama a cualquier comando definido por Visual Studio u otros paquetes, agregue un `UsedCommands` elemento después del `Commands` elemento. Rellene este elemento con un elemento [UsedCommand](../../extensibility/usedcommand-element.md) para cada comando al que llame y que no forme parte del paquete. Establezca los `guid` `id` atributos y de los `UsedCommand` elementos en los valores GUID y ID de los comandos a los que se va a llamar.
 
@@ -64,7 +64,7 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
 
 #### <a name="to-declare-ui-elements"></a>Para declarar elementos de la interfaz de usuario
 
-1. En el `Symbols` elemento, agregue tres elementos [GuidSymbol](../../extensibility/guidsymbol-element.md) . Cada `GuidSymbol` elemento tiene un `name` atributo y un `value` atributo. Establezca el `name` atributo para que refleje el propósito del elemento. El `value` atributo toma un GUID. (Para generar un GUID, en el menú **herramientas** , seleccione **crear GUID**y, a continuación, seleccione **formato del registro**).
+1. En el `Symbols` elemento, agregue tres elementos [GuidSymbol](../../extensibility/guidsymbol-element.md) . Cada `GuidSymbol` elemento tiene un `name` atributo y un `value` atributo. Establezca el `name` atributo para que refleje el propósito del elemento. El `value` atributo toma un GUID. (Para generar un GUID, en el menú **herramientas** , seleccione **crear GUID** y, a continuación, seleccione **formato del registro** ).
 
      El primer `GuidSymbol` elemento representa el paquete y normalmente no tiene elementos secundarios. El segundo `GuidSymbol` elemento representa el conjunto de comandos y contendrá todos los símbolos que definen los menús, los grupos y los comandos. El tercer `GuidSymbol` elemento representa el almacén de imágenes y contiene símbolos para todos los iconos de los comandos. Si no tiene comandos que usen iconos, puede omitir el tercer `GuidSymbol` elemento.
 
@@ -108,7 +108,7 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
        > [!NOTE]
        > Los botones de la barra de herramientas deben tener iconos.
 
-   Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 4. Si alguno de los comandos requiere iconos, agregue un elemento [bitmaps](../../extensibility/bitmaps-element.md) al `Commands` elemento. A continuación, para cada icono, agregue un elemento [Bitmap](../../extensibility/bitmap-element.md) al `Bitmaps` elemento. Aquí es donde se especifica la ubicación del recurso de mapa de bits. Para obtener más información, vea [Agregar iconos a comandos de menú](../../extensibility/adding-icons-to-menu-commands.md).
 
@@ -233,7 +233,7 @@ En este documento se muestra cómo crear un archivo *. Vsct* para agregar elemen
 
    - Controlador de menú: un controlador de menú es un botón que tiene una flecha al lado. Al hacer clic en la flecha, se abre una lista. Para agregar un controlador de menú a la interfaz de usuario, cree un `Menu` elemento y establezca su `type` atributo en `MenuController` o `MenuControllerLatched` , según el comportamiento que desee. Para rellenar un controlador de menú, establézcalo como elemento primario de un `Group` elemento. El controlador de menú mostrará todos los elementos secundarios de ese grupo en la lista desplegable.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extender menús y comandos](../../extensibility/extending-menus-and-commands.md)
 - [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

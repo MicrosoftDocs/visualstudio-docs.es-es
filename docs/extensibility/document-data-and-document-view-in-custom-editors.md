@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8b5ff72ff72d53556d14ce2c4b6f309aa0836a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584599"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414469"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Datos de documento y vista de documento en editores personalizados
 Un editor personalizado consta de dos partes: un objeto de datos de documento y un objeto de vista de documento. Como sugieren los nombres, el objeto de datos del documento representa los datos de texto que se van a mostrar. Del mismo modo, el objeto de vista de documento (o "vista") representa una o más ventanas en las que se va a mostrar el objeto de datos del documento.
@@ -34,9 +34,9 @@ Un editor personalizado consta de dos partes: un objeto de datos de documento y 
 
  El IDE notifica a las vistas acerca de los eventos (por ejemplo, cuando se cierra una solución que contiene un documento) haciendo coincidir un identificador de elemento (ItemID) con cada entrada de la tabla de documentos en ejecución. Para obtener más información sobre esto, vea [ejecutar la tabla de documentos](../extensibility/internals/running-document-table.md).
 
- Hay dos opciones para crear una vista para un editor personalizado. Uno es el modelo de activación en contexto, donde la vista se hospeda en una ventana con un control ActiveX o un objeto de datos de documento. El segundo es el modelo de incrustación simplificado, donde la vista se hospeda en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> se implementa para controlar los comandos de la ventana. Para obtener información sobre el modelo de activación en contexto, consulte [activación en contexto](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true). Para obtener información sobre el modelo de incrustación simplificado, vea [incrustación simplificada](../extensibility/simplified-embedding.md).
+ Hay dos opciones para crear una vista para un editor personalizado. Uno es el modelo de activación en contexto, donde la vista se hospeda en una ventana con un control ActiveX o un objeto de datos de documento. El segundo es el modelo de incrustación simplificado, donde la vista se hospeda en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> se implementa para controlar los comandos de la ventana. Para obtener información sobre el modelo de activación en contexto, consulte [activación en contexto](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015). Para obtener información sobre el modelo de incrustación simplificado, vea [incrustación simplificada](../extensibility/simplified-embedding.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Compatibilidad con varias vistas de documento](../extensibility/supporting-multiple-document-views.md)
 - [Incrustación simplificada](../extensibility/simplified-embedding.md)
