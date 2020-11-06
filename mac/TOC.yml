@@ -36,7 +36,7 @@
       href: extending-visual-studio-mac.md
 - name: Proyectos y soluciones
   items:
-    - name: Información general
+    - name: Introducción
       href: projects-and-solutions.md
     - name: Creación de proyectos
       href: create-new-projects.md
@@ -171,19 +171,7 @@
         - name: "Creación de una aplicación de varios contenedores con Docker\_Compose"
           href: docker-multi-container.md
     - name: Desarrollo de juegos de Unity
-      items:
-        - name: Desarrollo de juegos de Unity
-          href: unity-tools.md
-        - name: Programa de instalación
-          href: setup-vsmac-tools-unity.md
-        - name: Introducción a Unity
-          href: unity-walkthrough.md
-        - name: Uso de herramientas de Unity
-          href: using-vsmac-tools-unity.md
-        - name: Uso de .NET 4.x en Unity
-          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
-        - name: Registro de cambios
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: Aplicaciones móviles con Xamarin
       href: ./xamarin.md
 - name: Accesibilidad
