@@ -1,18 +1,18 @@
 ---
-title: Beneficio de Microsoft Azure | Microsoft Docs
+title: Ventaja de Microsoft Azure en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353101"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903641"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
@@ -24,15 +24,15 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
    > [!div class="mx-imgBorder"]
    > ![Icono de Azure](_img/vs-azure/vs-azure-tile.png "Haga clic en el botón "Activar" en el icono de Azure para empezar.")
 
-3. Si no tiene una suscripción de Azure, se le pedirá rellenar la información necesaria para crear una.  El primer paso es proporcionar la información personal y, después, seleccionar **Siguiente** .
+3. Si no tiene una suscripción de Azure, se le pedirá rellenar la información necesaria para crear una.  El primer paso es proporcionar la información personal y, después, seleccionar **Siguiente**.
    > [!div class="mx-imgBorder"]
    > ![Suscripción a Azure](_img/vs-azure/vs-azure-about-you.png "Agregue su información de contacto personal a la suscripción de Azure.")
 
-4. A continuación, tendrá que comprobar su identidad con un código de verificación simple. Proporcione el número de teléfono y elija si desea recibir el código por texto o por teléfono.  Escriba el código que reciba y seleccione **Verificar código** .   
+4. A continuación, tendrá que comprobar su identidad con un código de verificación simple. Proporcione el número de teléfono y elija si desea recibir el código por texto o por teléfono.  Escriba el código que reciba y seleccione **Verificar código**.   
    > [!div class="mx-imgBorder"]
    > ![Preparación de Azure](_img/vs-azure/vs-azure-identity.png "Solicite un código de verificación y escríbalo para continuar.")
 
-5. En el último paso, seleccione la casilla para aceptar los términos y, después, **Registrarse** .  Así de simple.
+5. En el último paso, seleccione la casilla para aceptar los términos y, después, **Registrarse**.  Así de simple.
    > [!div class="mx-imgBorder"]
    > ![Suscripción a Azure](_img/vs-azure/vs-azure-agreement.png "Haga clic en el botón "Suscribirse" para completar la creación de la suscripción de Azure.")
 

@@ -1,18 +1,18 @@
 ---
 title: Oferta de Contrato Enterprise de Azure DevTest
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/23/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 description: Conozca cómo para aprovechar los precios especiales de Azure DevTest disponibles para los clientes con Contrato Enterprise.
-ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005745"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904469"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta de Contrato Enterprise de Azure DevTest
 
@@ -32,7 +32,7 @@ Para habilitar las ofertas:
 0. Mantenga el puntero sobre el nombre de la cuenta. 
 0. Haga clic en el icono **Editar** (lápiz) situado en el extremo derecho. 
 0. Haga clic en la casilla **Desarrollo/pruebas**.
-0. Haga clic en **Save**(Guardar).
+0. Haga clic en **Save** (Guardar).
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Creación de suscripciones individuales en la cuenta
 Cada suscriptor de la cuenta puede crear una suscripción siguiendo estos pasos:
