@@ -1,6 +1,8 @@
 ---
 title: FxCopCmd (errores)
 ms.date: 10/19/2016
+description: Obtenga información sobre los códigos de error que devuelve el comando FxCopCmd. Vea qué tipo de error representa cada código y descubra cómo reconocer errores irrecuperables.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -10,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78167616"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348937"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Errores de la herramienta FxCopCmd
 

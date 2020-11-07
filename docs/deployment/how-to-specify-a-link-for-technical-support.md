@@ -1,5 +1,7 @@
 ---
 title: Especifique un vínculo para obtener soporte técnico | Microsoft Docs
+description: Obtenga información sobre la propiedad de dirección URL de soporte técnico para publicar una aplicación ClickOnce, que identifica una página web o un recurso compartido de archivos donde los usuarios obtienen información.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4474845d4a3f13a404773a6c8b572ff5194e033
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0c0f0a1c6bda564367497306a572f7e9f4012031
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851754"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349768"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Cómo: Especificar un vínculo para soporte técnico
 Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, la propiedad de la **dirección URL de soporte** identifica una página web o un recurso compartido de archivos en el que los usuarios pueden ir para obtener información acerca de la aplicación. Esta propiedad es opcional; Si se proporciona, la dirección URL se mostrará en el cuadro de diálogo **Agregar o quitar programas** de entrada de la aplicación.
@@ -34,7 +36,7 @@ Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
 ### <a name="to-specify-a-support-url"></a>Para especificar una dirección URL de soporte técnico
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 

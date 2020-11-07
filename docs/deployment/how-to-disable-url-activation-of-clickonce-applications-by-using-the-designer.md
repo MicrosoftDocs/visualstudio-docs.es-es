@@ -1,5 +1,7 @@
 ---
 title: Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador
+description: Obtenga información sobre cómo deshabilitar el inicio automático al instalar para una aplicación ClickOnce con Visual Studio, de modo que los usuarios deben iniciar la aplicación desde el menú Inicio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 818ab634d48fb666ecab5d89464ea017040bd250
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382489"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350015"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Cómo: Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador
 Normalmente, una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se iniciará automáticamente inmediatamente después de instalarla desde un servidor Web. Por motivos de seguridad, puede decidir deshabilitar este comportamiento e indicar a los usuarios que inicien la aplicación desde el menú **Inicio** en su lugar. En el procedimiento siguiente, se describe cómo deshabilitar la activación de URL.
@@ -34,7 +36,7 @@ Normalmente, una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Deshabilitar la activación de direcciones URL para la aplicación
 
-1. Haga clic con el botón secundario en el nombre del proyecto en **Explorador de soluciones**y haga clic en **propiedades**.
+1. Haga clic con el botón secundario en el nombre del proyecto en **Explorador de soluciones** y haga clic en **propiedades**.
 
 2. En la página **propiedades** , haga clic en la pestaña **publicar** .
 
@@ -46,5 +48,5 @@ Normalmente, una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
 
 6. Implementación de aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

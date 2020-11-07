@@ -1,5 +1,6 @@
 ---
 title: Descargar ensamblados satélite a petición (API de ClickOnce)
+description: Obtenga información acerca de cómo marcar los ensamblados satélite como opcionales y descargar únicamente el ensamblado que necesita un equipo cliente para su configuración de referencia cultural actual.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809242"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349300"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.
@@ -55,7 +56,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 4. Haga clic en la ficha **Archivos** .
 
-5. Haga clic en el botón **puntos suspensivos** (**...**) y seleccione el directorio que contenga todos los ensamblados y archivos de la aplicación, incluidos los ensamblados satélite generados mediante *Resgen.exe* (Un ensamblado satélite tendrá un nombre con el formato * \<isoCode>\ApplicationName.resources.dll*, donde \<isoCode> es un identificador de idioma en formato RFC 1766).
+5. Haga clic en el botón **puntos suspensivos** ( **...** ) y seleccione el directorio que contenga todos los ensamblados y archivos de la aplicación, incluidos los ensamblados satélite generados mediante *Resgen.exe* (Un ensamblado satélite tendrá un nombre con el formato *\<isoCode>\ApplicationName.resources.dll* , donde \<isoCode> es un identificador de idioma en formato RFC 1766).
 
 6. Haga clic en **Rellenar** para agregar los archivos a la implementación.
 
@@ -66,5 +67,5 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 ## <a name="next-steps"></a>Pasos siguientes
  En un entorno de producción, probablemente tenga que quitar la línea en el ejemplo de código que establece <xref:System.Threading.Thread.CurrentUICulture%2A> en un valor específico porque los equipos cliente tendrán establecido el valor correcto de forma predeterminada. Cuando la aplicación se ejecute en un equipo cliente japonés, por ejemplo, <xref:System.Threading.Thread.CurrentUICulture%2A> será `ja-JP` de forma predeterminada. Establecer este valor mediante programación es una buena manera de probar los ensamblados satélite antes de implementar la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Localización de aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md)

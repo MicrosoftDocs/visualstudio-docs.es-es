@@ -1,5 +1,6 @@
 ---
 title: Problemas de seguridad, control de versiones y manifiesto (ClickOnce)
+description: Obtenga información sobre los problemas relacionados con la seguridad de ClickOnce, las versiones de las aplicaciones y la sintaxis y la semántica del manifiesto que pueden hacer que una implementación ClickOnce no se realice correctamente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a0f9d5062e335fb7e03653bde11e032f89aca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811252"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349378"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce
 
@@ -95,7 +96,7 @@ Si desea trasladar o copiar una aplicación, también debe actualizar la ruta de
 > [!NOTE]
 > Cada vez que actualice el manifiesto, también debe volver a iniciarla.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Solucionar problemas de las implementaciones ClickOnce](../deployment/troubleshooting-clickonce-deployments.md) 
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md) 

@@ -1,5 +1,7 @@
 ---
 title: Configurar el comportamiento del mensaje de confianza de ClickOnce | Microsoft Docs
+description: Obtenga información sobre cómo configurar el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar aplicaciones ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852236"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350067"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedimientos para configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
 Puede configurar el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar aplicaciones ClickOnce, como Windows Forms aplicaciones, Windows Presentation Foundation aplicaciones, aplicaciones de consola, aplicaciones de explorador WPF y soluciones de Office. Configure el mensaje de confianza mediante la configuración de las claves del registro en el equipo de cada usuario final.
@@ -38,7 +40,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
  En la tabla siguiente se muestra el comportamiento predeterminado de cada zona. La columna aplicaciones hace referencia a Windows Forms aplicaciones, Windows Presentation Foundation aplicaciones, aplicaciones de explorador WPF y aplicaciones de consola.
 
-|Zona|Aplicaciones|soluciones de Office|
+|Zona|APLICACIONES|soluciones de Office|
 |----------|------------------|----------------------|
 |`MyComputer`|`Enabled`|`Enabled`|
 |`LocalIntranet`|`Enabled`|`Enabled`|
@@ -55,7 +57,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
 1. Abra el Editor del Registro:
 
-    1. Haga clic en **Inicio**y, a continuación, haga clic en **Ejecutar**.
+    1. Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.
 
     2. En el cuadro **abrir** , escriba `regedit` y, a continuación, haga clic en **Aceptar**.
 
@@ -65,7 +67,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
      Si la clave no existe, créela.
 
-3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
+3. Agregue las siguientes subclaves como **valor de cadena** , si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
     |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|
@@ -114,7 +116,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
 1. Abra el Editor del Registro:
 
-    1. Haga clic en **Inicio**y, a continuación, haga clic en **Ejecutar**.
+    1. Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.
 
     2. En el cuadro **abrir** , escriba `regedit` y, a continuación, haga clic en **Aceptar**.
 
@@ -124,7 +126,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
      Si la clave no existe, créela.
 
-3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
+3. Agregue las siguientes subclaves como **valor de cadena** , si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
     |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|
@@ -171,7 +173,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
 1. Abra el Editor del Registro:
 
-    1. Haga clic en **Inicio**y, a continuación, haga clic en **Ejecutar**.
+    1. Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.
 
     2. En el cuadro **abrir** , escriba `regedit` y, a continuación, haga clic en **Aceptar**.
 
@@ -181,7 +183,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 
      Si la clave no existe, créela.
 
-3. Agregue las siguientes subclaves como **valor de cadena**, si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
+3. Agregue las siguientes subclaves como **valor de cadena** , si aún no existen, con los valores asociados que se muestran en la tabla siguiente.
 
     |Subclave de valor de cadena|Valor|
     |-------------------------|-----------|

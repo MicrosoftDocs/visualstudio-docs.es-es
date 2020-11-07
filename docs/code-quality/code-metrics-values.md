@@ -1,6 +1,8 @@
 ---
 title: Calcular métricas de código
 ms.date: 11/02/2018
+description: Obtenga información sobre la complejidad ciclomática, el acoplamiento de clases y otras métricas de Visual Studio Code. Vea cómo las métricas pueden realizar el seguimiento del progreso del desarrollo e identificar los riesgos.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599453"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348650"
 ---
 # <a name="code-metrics-values"></a>Valores de las métricas de código
 
@@ -46,7 +48,7 @@ En la siguiente lista se muestran los resultados de las métricas de código que
 
 - **Líneas de código fuente** : indica el número exacto de líneas de código fuente que se encuentran en el archivo de código fuente, incluidas las líneas en blanco. Esta métrica está disponible a partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Líneas de código ejecutable** : indica el número aproximado de operaciones o líneas de código ejecutable. Se trata de un recuento del número de operaciones en el código ejecutable. Esta métrica está disponible a partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. Metrics (2.9.5). Normalmente, el valor es una coincidencia aproximada con la métrica anterior, **líneas de código**, que es la métrica basada en instrucciones de MSIL utilizada en el modo heredado.
+- **Líneas de código ejecutable** : indica el número aproximado de operaciones o líneas de código ejecutable. Se trata de un recuento del número de operaciones en el código ejecutable. Esta métrica está disponible a partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. Metrics (2.9.5). Normalmente, el valor es una coincidencia aproximada con la métrica anterior, **líneas de código** , que es la métrica basada en instrucciones de MSIL utilizada en el modo heredado.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

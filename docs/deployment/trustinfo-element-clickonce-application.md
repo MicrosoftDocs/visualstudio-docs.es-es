@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento trustInfo (aplicación ClickOnce) | Microsoft Docs'
+description: El elemento trustInfo describe los permisos de seguridad mínimos necesarios para que la aplicación se ejecute en el equipo cliente. El elemento trustInfo es obligatorio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,17 +24,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184437"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349222"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Elemento &lt;trustInfo&gt; (aplicación ClickOnce)
 Describe los permisos de seguridad mínimos necesarios para que la aplicación se ejecute en el equipo cliente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -156,7 +158,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 
    Opcional. Indica si la aplicación requiere acceso a elementos de la interfaz de usuario protegidos. Los valores son `true` o `false`y el predeterminado es false. Solo las aplicaciones firmadas deben tener un valor true.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Si una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solicita más permisos que los que concede el equipo cliente de forma predeterminada, el Administrador de confianza de Common Language Runtime preguntará al usuario si quiere conceder a la aplicación este nivel elevado de confianza. Si responde que no, no se ejecutará la aplicación; de lo contrario, se ejecutará con los permisos solicitados.
 
  Todos los permisos solicitados con `defaultAssemblyRequest` y `assemblyRequest` se concederán sin preguntar al usuario si el manifiesto de implementación tiene una licencia de confianza válida.

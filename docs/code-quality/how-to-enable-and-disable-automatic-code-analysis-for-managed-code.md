@@ -1,16 +1,18 @@
 ---
 title: Deshabilitar análisis de código heredado
 ms.date: 10/04/2019
+description: Obtenga información sobre cómo activar y desactivar el análisis de código binario en Visual Studio. Vea cómo configurar esta característica en proyectos de código administrado.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801027"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348754"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de código binario para código administrado
 
@@ -21,7 +23,7 @@ Puede configurar el análisis de código heredado (análisis binario) para que s
 
 Para habilitar o deshabilitar el análisis de código heredado:
 
-1. En **Explorador de soluciones**, seleccione y mantenga presionado (o haga clic con el botón derecho) en el proyecto y, a continuación, seleccione **propiedades**.
+1. En **Explorador de soluciones** , seleccione y mantenga presionado (o haga clic con el botón derecho) en el proyecto y, a continuación, seleccione **propiedades**.
 
 2. En el cuadro de diálogo Propiedades del proyecto, vaya a la pestaña **análisis de código** .
 

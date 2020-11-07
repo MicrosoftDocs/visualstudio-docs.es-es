@@ -1,6 +1,8 @@
 ---
 title: Desactivar el análisis de código
 ms.date: 09/01/2020
+description: Obtenga información sobre cómo desactivar el análisis de código fuente de Visual Studio en proyectos de .NET Core, .NET Standard y .NET Framework.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037151"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348559"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Deshabilitar análisis de código fuente para .NET
 
@@ -67,7 +69,7 @@ Ejemplos:
 
 ## <a name="source-analysis"></a>Análisis de código fuente
 
-No se puede desactivar el [análisis de código fuente](roslyn-analyzers-overview.md) en Visual Studio 2017. Si desea borrar los errores del analizador del **lista de errores**, puede suprimir todas las infracciones actuales seleccionando **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús. Para obtener más información, vea [suprimir infracciones](use-roslyn-analyzers.md#suppress-violations).
+No se puede desactivar el [análisis de código fuente](roslyn-analyzers-overview.md) en Visual Studio 2017. Si desea borrar los errores del analizador del **lista de errores** , puede suprimir todas las infracciones actuales seleccionando **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús. Para obtener más información, vea [suprimir infracciones](use-roslyn-analyzers.md#suppress-violations).
 
 A partir de la versión 16,3 de Visual Studio 2019, puede desactivar el análisis de código fuente o ejecutarlo a petición. Considere la posibilidad de actualizar a Visual Studio 2019.
 
@@ -77,7 +79,7 @@ Puede deshabilitar el análisis heredado en tiempo de compilación en la página
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Suprimir infracciones](use-roslyn-analyzers.md#suppress-violations)
 - [Cómo: habilitar y deshabilitar el análisis de código heredado](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

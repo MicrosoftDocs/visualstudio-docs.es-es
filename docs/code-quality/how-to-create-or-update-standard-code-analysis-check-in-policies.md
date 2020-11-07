@@ -1,5 +1,6 @@
 ---
 title: Crear o actualizar directivas de protección de análisis de código estándar
+description: Obtenga información sobre cómo asegurarse de que el análisis de código se ejecuta en todos los proyectos de código en un proyecto de Azure DevOps. Vea cómo configurar una directiva de protección de análisis de código de proyecto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad889ba106c288c07111857be965ef8d6c8295df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808631"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348767"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
 
@@ -36,7 +37,7 @@ Después de especificar una directiva de inserción en el repositorio para el c�
 
 ## <a name="to-open-the-check-in-policy-editor"></a>Para abrir el editor de directivas de inserción en el repositorio
 
-1. En Team Explorer, haga clic con el botón secundario en el nombre del proyecto, seleccione **configuración del proyecto**y, a continuación, haga clic en **control de código fuente**.
+1. En Team Explorer, haga clic con el botón secundario en el nombre del proyecto, seleccione **configuración del proyecto** y, a continuación, haga clic en **control de código fuente**.
 
 1. En el cuadro de diálogo **control de código fuente** , seleccione la pestaña **Directiva de inserción en el repositorio** .
 
@@ -68,6 +69,6 @@ En la lista **ejecutar este conjunto de reglas** , use uno de los métodos sigui
 
 Para obtener más información sobre cómo crear e implementar un conjunto de reglas de directivas de protección personalizadas, vea [implementar directivas de protección personalizadas para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Implementar directivas de inserción en el repositorio de análisis de código personalizadas para el código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

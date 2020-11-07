@@ -1,6 +1,8 @@
 ---
 title: Conjunto de reglas Reglas de globalización para código administrado
 ms.date: 11/04/2016
+description: Obtenga información sobre el conjunto de reglas reglas de globalización en Visual Studio, que se centra en los problemas relacionados con idiomas, configuraciones regionales y referencias culturales. Vea las descripciones de las reglas.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c3b899ec8e19160d9ee4a307a86c576d217004c
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 0bf96c8e4140e5b491624d6750b498a26726761c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658547"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348884"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de globalización para código administrado
 

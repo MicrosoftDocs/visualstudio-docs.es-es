@@ -1,6 +1,8 @@
 ---
 title: Análisis heredado para código administrado
 ms.date: 06/12/2019
+description: Obtenga información sobre el análisis heredado en Visual Studio. Vea Cómo suprimir advertencias y cómo ejecutar los análisis manualmente, automáticamente y durante las protecciones y compilaciones.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927996"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348663"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Información general sobre el análisis heredado para código administrado en Visual Studio
 
@@ -26,7 +28,7 @@ El análisis de código para código administrado analiza los ensamblados admini
 La herramienta de análisis representa las comprobaciones que realiza durante un análisis como mensajes de advertencias. Los mensajes de advertencia identifican cualquier problema pertinente de programación y diseño y, cuando es posible, proporcionan información sobre la solución del problema.
 
 > [!NOTE]
-> Los proyectos de .NET Core y .NET Standard de Visual Studio no admiten el análisis heredado (análisis de código estático). Si ejecuta el análisis de código en un proyecto de .NET Core o .NET Standard como parte de MSBuild, verá un error similar al **siguiente: CA0055: no se pudo identificar la \<your.dll> plataforma para **. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de código](../code-quality/roslyn-analyzers-overview.md) en su lugar.
+> Los proyectos de .NET Core y .NET Standard de Visual Studio no admiten el análisis heredado (análisis de código estático). Si ejecuta el análisis de código en un proyecto de .NET Core o .NET Standard como parte de MSBuild, verá un error similar al **siguiente: CA0055: no se pudo identificar la \<your.dll> plataforma para**. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de código](../code-quality/roslyn-analyzers-overview.md) en su lugar.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integración del IDE (entorno de desarrollo integrado)
 
@@ -34,7 +36,7 @@ Puede ejecutar el análisis de código en el proyecto de forma manual o automát
 
 Para ejecutar el análisis de código cada vez que compile un proyecto, seleccione la opción en la página de propiedades **análisis de código** del proyecto. Para obtener más información, vea [Cómo: habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Para ejecutar el análisis de código manualmente en un proyecto, en la barra de menús, elija **analizar**  >  **Ejecutar**análisis  >  **de \<project> código ejecutar análisis de código en **.
+Para ejecutar el análisis de código manualmente en un proyecto, en la barra de menús, elija **analizar**  >  **Ejecutar** análisis  >  **de \<project> código ejecutar análisis de código en**.
 
 ## <a name="rule-sets"></a>Conjuntos de reglas
 
@@ -54,7 +56,7 @@ Public class MyClass
 }
 ```
 
-Para obtener más información, vea [suprimir advertencias](../code-quality/in-source-suppression-overview.md).
+Para obtener más información, vea [Suprimir advertencias](../code-quality/in-source-suppression-overview.md).
 
 ::: moniker range="vs-2017"
 
@@ -86,7 +88,7 @@ Para conseguirlo, se especifican las directivas de protección. Para obtener má
 
 Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general de los analizadores basados en .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md)
 - [Usar conjuntos de reglas para agrupar reglas de análisis de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

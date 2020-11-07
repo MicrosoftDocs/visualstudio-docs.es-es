@@ -1,5 +1,6 @@
 ---
 title: Crear asociaciones de archivo (aplicación ClickOnce)
+description: Obtenga información sobre cómo asociar una aplicación ClickOnce con una o varias extensiones de nombre de archivo, de modo que la aplicación se inicie cuando el usuario abra este tipo de archivo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809786"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350041"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Cómo: Crear asociaciones de archivo para una aplicación ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden estar asociadas a una o varias extensiones de nombre de archivo, de modo que la aplicación se iniciará automáticamente cuando el usuario abra un archivo de esos tipos. Agregar compatibilidad con la extensión de nombre de archivo a una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es sencillo.
@@ -32,7 +33,7 @@ ms.locfileid: "90809786"
 
 2. Abra el manifiesto de aplicación con un editor de texto o XML, como el Bloc de notas.
 
-3. Busque el elemento `assembly` . Para obtener más información, consulte el [manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).
+3. Busque el elemento `assembly`. Para obtener más información, consulte el [manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).
 
 4. Como elemento secundario del `assembly` elemento, agregue un `fileAssociation` elemento. El `fileAssociation` elemento tiene cuatro atributos:
 
@@ -54,7 +55,7 @@ ms.locfileid: "90809786"
 
     Para más información, consulte [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [\<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md)
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

@@ -1,6 +1,8 @@
 ---
 title: Conjunto de reglas Reglas de corrección extendidas para código administrado
 ms.date: 11/04/2016
+description: Obtenga información sobre el conjunto de reglas reglas de corrección extendidas en Visual Studio, que es útil para la interoperabilidad COM y las aplicaciones móviles. Vea las descripciones de las reglas.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00295a8485fa80d2aa6cf1977e014b191b28ba7e
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 6aa97d246ac767cc3c88c845298e2db61edcd35f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658612"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349001"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección extendidas para código administrado
 

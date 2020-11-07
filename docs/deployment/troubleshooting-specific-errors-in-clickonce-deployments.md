@@ -1,5 +1,6 @@
 ---
 title: Solución de problemas de errores (implementaciones ClickOnce)
+description: En este artículo se describen los errores comunes que pueden producirse al implementar una aplicación ClickOnce y se proporcionan los pasos necesarios para resolver cada problema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809458"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349274"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solución de problemas de errores específicos de implementaciones de ClickOnce
 En este artículo se enumeran los siguientes errores comunes que pueden producirse al implementar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y se proporcionan los pasos necesarios para resolver cada problema.
@@ -90,7 +91,7 @@ En este artículo se enumeran los siguientes errores comunes que pueden producir
  Para usar PrivatePath (las rutas de acceso de sondeo de fusión), la aplicación debe solicitar el permiso plena confianza. Intente cambiar el manifiesto de aplicación para solicitar plena confianza e inténtelo de nuevo.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante la desinstalación, aparece un mensaje que indica que se ha producido un error al desinstalar la aplicación
- Este mensaje suele indicar que la aplicación ya se ha quitado o que el almacén está dañado. Después de hacer clic en **Aceptar**, se quitará la entrada **Agregar o quitar programa** .
+ Este mensaje suele indicar que la aplicación ya se ha quitado o que el almacén está dañado. Después de hacer clic en **Aceptar** , se quitará la entrada **Agregar o quitar programa** .
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante la instalación, aparece un mensaje que indica que las dependencias de la plataforma no están instaladas
  Falta un requisito previo en la GAC (caché global de ensamblados) que la aplicación necesita para ejecutarse.
@@ -103,7 +104,7 @@ En este artículo se enumeran los siguientes errores comunes que pueden producir
  Si está publicando con una dirección URL, asegúrese de que el equipo de destino tiene Extensiones de servidor de FrontPage habilitado.
 
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensaje de error: no se puede crear el sitio web ' \<site> '. Los componentes para comunicarse con Extensiones de servidor de FrontPage no están instalados.
- Asegúrese de que tiene instalado el componente de creación Web Microsoft Visual Studio en el equipo desde el que se va a publicar. En el caso de los usuarios de Express, este componente no se instala de forma predeterminada. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358).
+ Asegúrese de que tiene instalado el componente de creación Web Microsoft Visual Studio en el equipo desde el que se va a publicar. En el caso de los usuarios de Express, este componente no se instala de forma predeterminada. Para más información, consulte [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358).
 
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: no se encontró el archivo ' Microsoft. Windows. Common-Controls, version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture = \* , Type = Win32 '
  Este mensaje de error aparece al intentar publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: publicar una aplicación WPF con estilos visuales habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
@@ -113,7 +114,7 @@ En este artículo se enumeran los siguientes errores comunes que pueden producir
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Ha intentado firmar con un certificado en el almacén de certificados y un cuadro de mensaje en blanco recibido
  En el cuadro de diálogo **firma** , debe:
 
-- Seleccione **firmar con un certificado almacenado**y
+- Seleccione **firmar con un certificado almacenado** y
 
 - Seleccione un certificado de la lista. el primer certificado no es la selección predeterminada.
 
@@ -137,7 +138,7 @@ En este artículo se enumeran los siguientes errores comunes que pueden producir
 | Los accesos directos no se pueden activar a través de la red. | Los accesos directos a una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación solo se pueden iniciar en el disco duro local. No se pueden iniciar abriendo una dirección URL que apunte a un archivo de acceso directo en un servidor remoto. |
 | La aplicación es demasiado grande para ejecutarse en línea en confianza parcial. Póngase en contacto con el proveedor de la aplicación o con el administrador del sistema para obtener ayuda. | Una aplicación que se ejecuta en confianza parcial no puede ser mayor que la mitad del tamaño de la cuota de aplicación en línea, que de forma predeterminada es 250 MB. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

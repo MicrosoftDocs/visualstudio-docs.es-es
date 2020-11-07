@@ -1,6 +1,8 @@
 ---
 title: Code Analysis Policy Errors
 ms.date: 11/04/2016
+description: Obtenga información sobre los errores de la Directiva de análisis de código en Visual Studio. Vea las descripciones de los errores que se producen si no se cumple la Directiva cuando se protege el código.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587750"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349105"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -73,6 +75,6 @@ Este error se aplica a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
 
 Este error se aplica a los proyectos no administrados. La directiva de análisis de código requiere análisis de código para C/C++, pero no está habilitada en el proyecto actual en el cliente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Errores de la aplicación de análisis de código](../code-quality/code-analysis-application-errors.md)

@@ -1,5 +1,6 @@
 ---
 title: Especificar una ubicación alternativa para las actualizaciones de implementación
+description: Obtenga información sobre cómo especificar una ubicación alternativa para las actualizaciones de la aplicación ClickOnce en el manifiesto de implementación.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808755"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349651"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Cómo: Especificar una ubicación alternativa para las actualizaciones de la implementación
 Puede instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación inicialmente desde un CD o un recurso compartido de archivos, pero la aplicación debe comprobar si hay actualizaciones periódicas en la Web. Puede especificar una ubicación alternativa para las actualizaciones en el manifiesto de implementación para que la aplicación pueda actualizarse desde la web después de la instalación inicial.
@@ -39,7 +40,7 @@ Puede instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
 3. Seleccione la pestaña **Opciones de implementación**.
 
-4. En el cuadro de texto denominado **Ubicación de inicio**, escriba la dirección URL del directorio que contendrá el manifiesto de implementación para las actualizaciones de la aplicación.
+4. En el cuadro de texto denominado **Ubicación de inicio** , escriba la dirección URL del directorio que contendrá el manifiesto de implementación para las actualizaciones de la aplicación.
 
 5. Guarde el manifiesto de implementación.
 
@@ -61,7 +62,7 @@ Puede instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
  Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones que usan `<deploymentProvider>` deben declarar explícitamente los permisos que necesitan en el manifiesto de aplicación, de modo que la aplicación no reciba distintos niveles de confianza en equipos diferentes.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

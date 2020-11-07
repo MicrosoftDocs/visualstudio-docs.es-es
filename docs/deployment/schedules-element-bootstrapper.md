@@ -1,5 +1,7 @@
 ---
 title: '&lt;Elemento schedules &gt; (programa previo) | Microsoft Docs'
+description: El elemento schedules contiene elementos Schedule, que definen las horas específicas en las que se deben ejecutar los comandos definidos por el elemento Command.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927337"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349365"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Elemento schedules &gt; (programa previo)
 El `Schedules` elemento contiene `Schedule` elementos, que definen las horas específicas en las que se deben ejecutar los comandos definidos por el `Command` elemento.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Schedules>
@@ -62,6 +64,6 @@ El `Schedules` elemento contiene `Schedule` elementos, que definen las horas esp
 ## <a name="afterpackage"></a>AfterPackage
  El `AfterPackage` elemento indica al instalador que ejecute un comando después de instalar el paquete especificado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [\<Product> Element](../deployment/product-element-bootstrapper.md)
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

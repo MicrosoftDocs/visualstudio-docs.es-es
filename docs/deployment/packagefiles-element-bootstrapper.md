@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento PackageFiles (arranque) | Microsoft Docs'
+description: Obtenga información sobre el elemento PackageFiles, que contiene elementos PackageFile que definen los paquetes de instalación que se ejecutan como resultado del elemento Command.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747510"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349547"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;&gt;Elemento PackageFiles (arranque)
 El `PackageFiles` elemento contiene `PackageFile` elementos, que definen los paquetes de instalación que se ejecutan como resultado del `Command` elemento.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <PackageFiles
@@ -46,7 +48,7 @@ El `PackageFiles` elemento contiene `PackageFile` elementos, que definen los paq
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|Opcional. Si se establece en `false` , el instalador solo descargará los archivos a los que se hace referencia desde el `Command` elemento. Si se establece en `true` , se descargarán todos los archivos.<br /><br /> Si se establece en `IfNotHomesite` , el instalador se comportará igual que si `False` `ComponentsLocation` está establecido en `HomeSite` y, de lo contrario, se comportará igual que si `True` . Esta configuración puede ser útil para permitir que los paquetes que se programas previosn a sí mismos ejecuten su propio comportamiento en un escenario de HomeSite.<br /><br /> El valor predeterminado es `true`.|
+|`CopyAllPackageFiles`|Opcional. Si se establece en `false` , el instalador solo descargará los archivos a los que se hace referencia desde el `Command` elemento. Si se establece en `true` , se descargarán todos los archivos.<br /><br /> Si se establece en `IfNotHomesite` , el instalador se comportará igual que si `False` `ComponentsLocation` está establecido en `HomeSite` y, de lo contrario, se comportará igual que si `True` . Esta configuración puede ser útil para permitir que los paquetes que se programas previosn a sí mismos ejecuten su propio comportamiento en un escenario de HomeSite.<br /><br /> De manera predeterminada, es `true`.|
 
 ## <a name="packagefile"></a>PackageFile
  El `PackageFile` elemento es un elemento secundario del `PackageFiles` elemento. Un `PackageFiles` elemento debe tener al menos un `PackageFile` elemento.
@@ -73,7 +75,7 @@ El `PackageFiles` elemento contiene `PackageFile` elementos, que definen los paq
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [\<Product> Element](../deployment/product-element-bootstrapper.md)
 - [\<Package> Element](../deployment/package-element-bootstrapper.md)
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

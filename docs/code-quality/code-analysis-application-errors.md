@@ -1,6 +1,8 @@
 ---
 title: Errores de la aplicación de análisis de código
 ms.date: 11/04/2016
+description: Obtenga información sobre los mensajes de error generados por la herramienta de análisis de código administrado en Visual Studio. Ver los códigos de error y las descripciones correspondientes.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85521321"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348507"
 ---
 # <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
 
@@ -39,12 +41,12 @@ Esta sección es una referencia de los mensajes de error generados por la herram
 |[CA0058](ca0058.md)|No se pueden cargar los ensamblados a los que se hace referencia.|
 |[CA0059](ca0059.md)|Error del modificador de la línea de comandos.|
 |[CA0060](ca0060.md)|No se pueden cargar los ensamblados a los que se hace referencia indirectamente.|
-|[CA0061](ca0061.md)|No se encontró la*regla ' ID '.*|
-|[CA0062](ca0062.md)|No se encontró la*regla "ID." a*la que se hace referencia en el conjunto de reglas "*RuleSetName*".|
+|[CA0061](ca0061.md)|No se encontró la *regla ' ID '.*|
+|[CA0062](ca0062.md)|No se encontró la *regla "ID." a* la que se hace referencia en el conjunto de reglas " *RuleSetName* ".|
 |[CA0063](ca0063.md)|No se pudo cargar el archivo de conjunto de reglas o uno de sus archivos de conjunto de reglas dependientes.|
 |[CA0064](ca0064.md)|No se realizó ningún análisis porque el conjunto de reglas especificado no contenía ninguna regla de FxCop.|
-|[CA0065](ca0065.md)|Construcción de metadatos no admitida: el tipo '*TypeName*' contiene una propiedad y un campo con el mismo nombre '*PropertyFieldName*'|
-|[CA0066](ca0066.md)|El valor '*VersionID*' proporcionado a **/TargetFrameworkVersion** no es una versión reconocida.|
+|[CA0065](ca0065.md)|Construcción de metadatos no admitida: el tipo ' *TypeName* ' contiene una propiedad y un campo con el mismo nombre ' *PropertyFieldName* '|
+|[CA0066](ca0066.md)|El valor ' *VersionID* ' proporcionado a **/TargetFrameworkVersion** no es una versión reconocida.|
 |[CA0067](ca0067.md)|No se encontró el directorio.|
 |[CA0068](ca0068.md)|No se encontró la información de depuración para el ensamblado de destino *' AssemblyName '*.|
 |[CA0069](ca0069.md)|Usar una plataforma alternativa. No se encontró *FrameworkVersion1* . Usar *FrameworkVersion2* en su lugar. Para obtener los mejores resultados del análisis, asegúrese de que está instalada la versión correcta de Framework.|

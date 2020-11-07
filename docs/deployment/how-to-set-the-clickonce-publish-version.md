@@ -1,5 +1,7 @@
 ---
 title: Establecer la versión de publicación de ClickOnce | Microsoft Docs
+description: Obtenga información sobre cómo establecer la propiedad versión de publicación de ClickOnce, que determina si la aplicación es una actualización.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf99590bb78c425f570128ff7fae03c61d644b47
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 100c3cd12a3011d35445ac885333802e28b4a92f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851780"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349794"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Cómo: Establecer la versión de publicación de ClickOnce
 La [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` propiedad determina si la aplicación que se está publicando se tratará como una actualización. Cada vez que se incrementa la versión, la aplicación se publica como una actualización.
@@ -33,11 +35,11 @@ La [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Ve
 
 ### <a name="to-change-the-publish-version"></a>Para cambiar la versión de publicación
 
-1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 
-3. En el campo **versión de publicación** , incremente los números de versión **principal**, **secundaria**, de **compilación**o de **revisión** .
+3. En el campo **versión de publicación** , incremente los números de versión **principal** , **secundaria** , de **compilación** o de **revisión** .
 
     > [!NOTE]
     > Nunca debe disminuir un número de versión; Si lo hace, podría producirse un comportamiento de actualización impredecible.

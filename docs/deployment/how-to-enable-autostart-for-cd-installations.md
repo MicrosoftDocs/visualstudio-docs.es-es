@@ -1,5 +1,7 @@
 ---
 title: Habilitar AutoStart para instalaciones con CD | Microsoft Docs
+description: Obtenga información acerca de cómo habilitar el inicio automático al implementar una aplicación ClickOnce mediante el uso de medios extraíbles, como un CD-ROM o DVD-ROM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28fa4830c3ea5ff840e0d58f6d31f718c28ec3fb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f6ed3df72b98454c4669e7d9bcd21c0612a6fef3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850948"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349963"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Cómo: Habilitar AutoStart para instalaciones con CD
 Al implementar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante medios extraíbles, como un CD-ROM o un DVD-ROM, puede habilitar `AutoStart` para que la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se inicie automáticamente cuando se inserte el medio.
@@ -30,7 +32,7 @@ Al implementar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
 ### <a name="to-enable-autostart"></a>Para habilitar AutoStart
 
-1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 

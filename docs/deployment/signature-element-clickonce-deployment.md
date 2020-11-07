@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento Signature (implementación ClickOnce) | Microsoft Docs'
+description: El elemento Signature contiene la información necesaria para firmar digitalmente este manifiesto de implementación. La firma de un manifiesto de implementación es opcional, pero se recomienda.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7a86236087bdbff8cf82ca4821573f9f799d019
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85835425"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349287"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;Elemento Signature (implementación ClickOnce)
 Contiene la información necesaria para firmar digitalmente este manifiesto de implementación.
@@ -28,12 +30,12 @@ Contiene la información necesaria para firmar digitalmente este manifiesto de i
 
 ```xml
 
-<Signature> 
-   XML signature information 
+<Signature> 
+   XML signature information 
 </Signature>
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  La firma de un manifiesto de implementación mediante una firma de sobre es opcional, pero se recomienda. Para obtener más información sobre la firma de archivos XML, vea la recomendación World Wide Web Consortium, "XML-Signature Syntax and Processing", que se describe en [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .
 
  Si desea firmar el manifiesto, se deben proporcionar los valores hash para todos los archivos. No se puede firmar un manifiesto con archivos a los que no se ha aplicado un algoritmo hash, ya que los usuarios no pueden comprobar el contenido de los archivos sin hash.

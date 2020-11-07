@@ -1,5 +1,7 @@
 ---
 title: Crear un manifiesto de paquete | Microsoft Docs
+description: Obtenga información sobre cómo usar un paquete de programa previo para implementar los requisitos previos de la aplicación ClickOnce, que contiene un manifiesto del paquete para cada configuración regional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851715"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350054"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Cómo: Crear un manifiesto de paquete
 Para implementar los requisitos previos de la aplicación, puede usar un paquete de programa previo. Un paquete de programa previo contiene un solo archivo de manifiesto de producto, pero un manifiesto de paquete para cada configuración regional. La funcionalidad compartida entre diferentes versiones localizadas debe incluirse en el manifiesto del producto.
@@ -38,7 +40,7 @@ Para implementar los requisitos previos de la aplicación, puede usar un paquete
 
 2. Cree un subdirectorio con el nombre de la configuración regional, como *en* para inglés.
 
-3. En Visual Studio, cree un archivo XML denominado *package.xml*y guárdelo en la carpeta *C:\package\en* .
+3. En Visual Studio, cree un archivo XML denominado *package.xml* y guárdelo en la carpeta *C:\package\en* .
 
 4. Agregue XML para mostrar el nombre del paquete de programa previo, la referencia cultural para este manifiesto de paquete localizado y el contrato de licencia opcional. En el código XML siguiente se usan las variables `DisplayName` y `Culture` , que se definen en un elemento posterior.
 

@@ -1,6 +1,8 @@
 ---
 title: Supresión de infracciones de análisis de código
 ms.date: 08/27/2020
+description: Obtenga información sobre cómo suprimir las infracciones de análisis de código en Visual Studio. Aprenda a usar el atributo SuppressMessageAttribute para la supresión en el código fuente.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -14,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658521"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348702"
 ---
 # <a name="suppress-code-analysis-violations"></a>Supresión de infracciones de análisis de código
 
@@ -50,7 +52,7 @@ En C++/CLI, use el SUPPRESS_MESSAGE de macros CA \_ Suppress \_ Message o CA \_ 
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (atributo)
 
-Al seleccionar **suprimir** en el menú contextual o de clic con el botón derecho de una advertencia de análisis de código en el **lista de errores**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> se agrega un atributo en el código o en el archivo de supresión global del proyecto.
+Al seleccionar **suprimir** en el menú contextual o de clic con el botón derecho de una advertencia de análisis de código en el **lista de errores** , <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> se agrega un atributo en el código o en el archivo de supresión global del proyecto.
 
 El <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo tiene el formato siguiente:
 
@@ -190,7 +192,7 @@ En el análisis de código heredado, puede elegir si desea suprimir los errores 
 > [!NOTE]
 > El análisis de código `GeneratedCodeAttribute` se omite cuando se aplica a un ensamblado completo o a un solo parámetro.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

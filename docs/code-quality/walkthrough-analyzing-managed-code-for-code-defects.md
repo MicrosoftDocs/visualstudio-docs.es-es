@@ -1,6 +1,8 @@
 ---
 title: Tutorial análisis del código administrado para defectos de código | Microsoft Docs
 ms.date: 01/29/2018
+description: Aprenda a usar el análisis de código heredado para analizar los ensamblados de código administrado de .NET. Consulte Comprobación de defectos y cumplimiento de las directrices de diseño de .NET.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659197"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349027"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Tutorial: usar el análisis de código estático para buscar defectos de código
 
@@ -63,7 +65,7 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
 4. Asegúrese de que está seleccionada la opción **Habilitar análisis de código al compilar** .
 
-5. En la lista desplegable **ejecutar este conjunto de reglas** , seleccione **Microsoft All Rules (todas las reglas**).
+5. En la lista desplegable **ejecutar este conjunto de reglas** , seleccione **Microsoft All Rules (todas las reglas** ).
 
 ::: moniker-end
 
@@ -71,11 +73,11 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
 4. Asegúrese de que la opción **ejecutar al compilar** está seleccionada en la sección **analizadores binarios** .
 
-5. En la lista desplegable **reglas activas** , seleccione **Microsoft All Rules (todas las reglas**).
+5. En la lista desplegable **reglas activas** , seleccione **Microsoft All Rules (todas las reglas** ).
 
 ::: moniker-end
 
-6. En el menú **archivo** , haga clic en **guardar los elementos seleccionados**y, a continuación, cierre las páginas de propiedades.
+6. En el menú **archivo** , haga clic en **guardar los elementos seleccionados** y, a continuación, cierre las páginas de propiedades.
 
 7. En el menú **compilar** , haga clic en **generar CodeAnalysisManagedDemo**.
 
@@ -87,7 +89,7 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
     Según el perfil de desarrollador que elija, puede que tenga que señalar a **otras ventanas** en el menú **Ver** y, a continuación, elegir **lista de errores**.
 
-1. En el **Explorador de soluciones**, elija **Mostrar todos los archivos**.
+1. En el **Explorador de soluciones** , elija **Mostrar todos los archivos**.
 
 1. Expanda el nodo propiedades y, a continuación, abra el archivo *AssemblyInfo.CS* .
 
@@ -127,11 +129,11 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
       Aparecerá el cuadro de diálogo **Crear clave de nombre seguro**.
 
-   1. En **nombre de archivo de clave**, escriba **TestKey**.
+   1. En **nombre de archivo de clave** , escriba **TestKey**.
 
    1. Escriba una contraseña y, después, elija **Aceptar**.
 
-   1. En el menú **archivo** , elija **Guardar elementos seleccionados**y, a continuación, cierre las páginas de propiedades.
+   1. En el menú **archivo** , elija **Guardar elementos seleccionados** y, a continuación, cierre las páginas de propiedades.
 
    Después de completar todos los cambios, el archivo Class1.cs debe tener un aspecto similar al siguiente:
 
@@ -170,6 +172,6 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
      El proyecto se compila sin advertencias ni errores.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Análisis de código para código administrado](../code-quality/code-analysis-for-managed-code-overview.md)

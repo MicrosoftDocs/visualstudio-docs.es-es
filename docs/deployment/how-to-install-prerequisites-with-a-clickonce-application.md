@@ -1,5 +1,6 @@
 ---
 title: Instalación de requisitos previos con una aplicación ClickOnce
+description: Obtenga información acerca de cómo seleccionar los componentes de requisitos previos que se van a empaquetar junto con la aplicación ClickOnce cuando se instala.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809125"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349937"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Cómo: Instalar requisitos previos mediante una aplicación ClickOnce
 Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones requieren que se instale la versión correcta del .NET Framework en un equipo antes de poder ejecutarse; muchas aplicaciones tienen también otros requisitos previos. Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, puede elegir un conjunto de componentes de requisitos previos que se van a empaquetar junto con la aplicación. En el momento de la instalación, se realizará una comprobación para cada requisito previo para determinar si ya existe; Si no se instalará antes de instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
@@ -39,7 +40,7 @@ Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las apli
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Para especificar los requisitos previos para instalar con una aplicación ClickOnce
 
-1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Seleccione el panel **publicar** .
 
@@ -53,7 +54,7 @@ Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las apli
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Para especificar una ubicación de descarga diferente para los requisitos previos
 
-1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones** , en el menú **proyecto** , haga clic en **propiedades**.
 
 2. Seleccione el panel **publicar** .
 
@@ -68,6 +69,6 @@ Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las apli
     > [!NOTE]
     > Debe asegurarse de que los instaladores de los componentes especificados existen en la ubicación especificada.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

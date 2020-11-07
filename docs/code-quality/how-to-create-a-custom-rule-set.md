@@ -1,6 +1,8 @@
 ---
 title: Crear un conjunto de reglas de análisis de código personalizado
 ms.date: 11/02/2018
+description: Obtenga información sobre cómo personalizar conjuntos de reglas de análisis de código en Visual Studio. Vea cómo crear nuevos conjuntos desde cero o a partir de conjuntos existentes. Comprender la prioridad de las reglas.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860508"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348819"
 ---
 # <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
 
@@ -26,7 +28,7 @@ Puede crear un conjunto de reglas personalizado para satisfacer las necesidades 
 
 Para crear un conjunto de reglas personalizado, puede abrir un conjunto de reglas integrado en el **Editor de conjuntos de reglas**. Desde allí, puede Agregar o quitar reglas específicas, y puede cambiar la acción que se produce cuando se infringe una regla; &mdash; por ejemplo, mostrar una advertencia o un error.
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
+1. En **Explorador de soluciones** , haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
 
 2. En las páginas de **propiedades** , seleccione la pestaña **análisis de código** .
 
@@ -57,7 +59,7 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 
 Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo **nuevo archivo** :
 
-1. Seleccione **archivo**  >  **nuevo**  >  **archivo**o presione **Ctrl** + **N**.
+1. Seleccione **archivo**  >  **nuevo**  >  **archivo** o presione **Ctrl** + **N**.
 
 2. En el cuadro de diálogo **nuevo archivo** , seleccione la categoría **General** de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
@@ -70,7 +72,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 > [!NOTE]
 > El procedimiento siguiente no se aplica a los proyectos de .NET Core, que no tienen una pestaña de propiedades de **análisis de código** .
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
+1. En **Explorador de soluciones** , haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
 
 2. En las páginas de **propiedades** , seleccione la pestaña **análisis de código** .
 
@@ -90,7 +92,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
    ![Cuadro de diálogo Agregar o quitar conjuntos de reglas](media/add-remove-rule-sets.png)
 
-5. Seleccione **Guardar como**, escriba un nombre para el archivo *. ruleset* y, a continuación, seleccione **Guardar**.
+5. Seleccione **Guardar como** , escriba un nombre para el archivo *. ruleset* y, a continuación, seleccione **Guardar**.
 
    El nuevo conjunto de reglas se selecciona en la lista **ejecutar este conjunto de reglas** .
 
@@ -109,7 +111,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
    </RuleSet>
    ```
 
-- Si se muestra la misma regla dos o más veces en un conjunto de reglas con la *misma* gravedad, puede ver la siguiente advertencia en el **lista de errores**:
+- Si se muestra la misma regla dos o más veces en un conjunto de reglas con la *misma* gravedad, puede ver la siguiente advertencia en el **lista de errores** :
 
    **CA0063: no se pudo cargar el archivo de conjunto de reglas ' \[ Your]. ruleset ' o uno de sus archivos de conjunto de reglas dependientes. El archivo no se ajusta al esquema del conjunto de reglas.**
 

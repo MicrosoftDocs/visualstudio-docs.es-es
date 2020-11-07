@@ -1,5 +1,6 @@
 ---
 title: Incluir un archivo de datos en una aplicación ClickOnce
+description: Obtenga información acerca de cómo agregar un archivo de datos de cualquier tipo en la aplicación ClickOnce para almacenarlo en un directorio de datos en el disco local del equipo de destino.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809151"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349950"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Cómo: Incluir un archivo de datos en una aplicación ClickOnce
-A cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que se instala se le asigna un directorio de datos en el disco local del equipo de destino, donde la aplicación puede administrar sus propios datos. Los archivos de datos pueden incluir archivos de cualquier tipo: archivos de texto, archivos XML o incluso archivos de base de datos de Microsoft Access (*. mdb*). En los procedimientos siguientes se muestra cómo agregar un archivo de datos de cualquier tipo a la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
+A cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que se instala se le asigna un directorio de datos en el disco local del equipo de destino, donde la aplicación puede administrar sus propios datos. Los archivos de datos pueden incluir archivos de cualquier tipo: archivos de texto, archivos XML o incluso archivos de base de datos de Microsoft Access ( *. mdb* ). En los procedimientos siguientes se muestra cómo agregar un archivo de datos de cualquier tipo a la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Para incluir un archivo de datos mediante Mage.exe
 
@@ -83,5 +84,5 @@ A cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicac
 
      Debe volver a firmar el manifiesto de implementación porque el hash del manifiesto de aplicación ha cambiado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Acceso a datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

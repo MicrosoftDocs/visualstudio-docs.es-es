@@ -1,5 +1,7 @@
 ---
 title: Usar ClickOnce para implementar aplicaciones de múltiples destinos
+description: Obtenga información sobre cómo implementar una aplicación destinada a varias versiones del .NET Framework mediante la tecnología de implementación ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67dcee1fac0b5ec082a7f92285c6c0ac2523800a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381709"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349521"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedimientos para usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
 Puede implementar una aplicación destinada a varias versiones del .NET Framework mediante la tecnología de implementación ClickOnce. Esto requiere que se generen y actualicen los manifiestos de aplicación y de implementación.

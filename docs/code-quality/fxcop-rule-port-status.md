@@ -1,6 +1,8 @@
 ---
 title: Estado del puerto de la regla de FxCop
 ms.date: 05/21/2019
+description: Obtenga información sobre las reglas de análisis de código estático que se han trasladado a los analizadores de FxCop en Visual Studio. Ver las reglas y los recursos trasladados en las actualizaciones de portabilidad.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 945b26158da4c4c7788570db0c565ebbcfc2b460
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658586"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348950"
 ---
 # <a name="fxcop-rule-port-status"></a>Estado del puerto de la regla de FxCop
 
@@ -23,7 +25,7 @@ Si anteriormente usó el análisis de código estático en Visual Studio, es pos
 
 ## <a name="ported-rules"></a>Reglas migradas
 
-La [Página de documentación autogenerada](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) del repositorio Roslyn-analizadores tiene la lista más actualizada de reglas que se han trasladado a los analizadores de FxCop. Esa página también tiene información adicional, por ejemplo, si la regla está habilitada de forma predeterminada y si tiene una *corrección de código*asociada. (Las[correcciones de código](../ide/quick-actions.md) son correcciones con un solo clic disponibles en el menú del icono de bombilla de Visual Studio).
+La [Página de documentación autogenerada](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) del repositorio Roslyn-analizadores tiene la lista más actualizada de reglas que se han trasladado a los analizadores de FxCop. Esa página también tiene información adicional, por ejemplo, si la regla está habilitada de forma predeterminada y si tiene una *corrección de código* asociada. (Las[correcciones de código](../ide/quick-actions.md) son correcciones con un solo clic disponibles en el menú del icono de bombilla de Visual Studio).
 
 A partir de la fecha de esta página, la lista de reglas de FxCop que se han trasladado a los [analizadores de FxCop](install-fxcop-analyzers.md) incluye:
 
@@ -200,6 +202,6 @@ CA5377 | Usar la Directiva de acceso de nivel de contenedor
 CA5379 | No usar algoritmo de función de derivación de clave débil
 CA9999 | Versión de analizador no coincidente
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Reglas de Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
