@@ -1,5 +1,7 @@
 ---
 title: Volver a firmar los manifiestos de aplicación e implementación | Microsoft Docs
+description: Obtenga información sobre cómo volver a firmar los manifiestos de aplicación e implementación con un certificado después de realizar cambios en las propiedades de implementación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851689"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351133"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Cómo: Volver a firmar manifiestos de aplicación e implementación
 Después de realizar cambios en las propiedades de implementación en el manifiesto de aplicación para las aplicaciones de Windows Forms, las aplicaciones Windows Presentation Foundation (XBAP) o las soluciones de Office, debe volver a firmar los manifiestos de aplicación e implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.
@@ -31,7 +33,7 @@ Después de realizar cambios en las propiedades de implementación en el manifie
  Otro escenario en el que podría volver a firmar los manifiestos es cuando los clientes quieren firmar los manifiestos de aplicación e implementación con su propio certificado.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Repetición de la firma de manifiestos de implementación y aplicación
- En este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de la aplicación (*. manifest*). Para obtener más información, vea [Cómo: cambiar las propiedades de implementación](/previous-versions/cc442869(v=vs.110)).
+ En este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de la aplicación ( *. manifest* ). Para obtener más información, vea [Cómo: cambiar las propiedades de implementación](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para volver a firmar la aplicación y los manifiestos de implementación con Mage.exe
 
@@ -67,10 +69,10 @@ Después de realizar cambios en las propiedades de implementación en el manifie
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Opcionalmente, copie el manifiesto de implementación principal (*Publish \\ \<appname> . Application*) en el directorio de implementación de la versión (*publish\Application files \\ \<appname> _ \<version> *).
+5. Opcionalmente, copie el manifiesto de implementación principal ( *Publish \\ \<appname> . Application* ) en el directorio de implementación de la versión ( *publish\Application files \\ \<appname> _ \<version>* ).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Actualizar y volver a firmar los manifiestos de aplicación e implementación
- En este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de la aplicación (*. manifest*), pero que hay otros archivos que se han actualizado. Cuando se actualizan los archivos, también debe actualizarse el hash que representa el archivo.
+ En este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de la aplicación ( *. manifest* ), pero que hay otros archivos que se han actualizado. Cuando se actualizan los archivos, también debe actualizarse el hash que representa el archivo.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para actualizar y volver a firmar los manifiestos de aplicación e implementación con Mage.exe
 
@@ -110,7 +112,7 @@ Después de realizar cambios en las propiedades de implementación en el manifie
 
 6. Vuelva a agregar la extensión de archivo *. deploy* a los archivos, excepto los archivos de manifiesto de aplicación y de implementación.
 
-7. Opcionalmente, copie el manifiesto de implementación principal (*Publish \\ \<appname> . Application*) en el directorio de implementación de la versión (*publish\Application files \\ \<appname> _ \<version> *).
+7. Opcionalmente, copie el manifiesto de implementación principal ( *Publish \\ \<appname> . Application* ) en el directorio de implementación de la versión ( *publish\Application files \\ \<appname> _ \<version>* ).
 
 ## <a name="see-also"></a>Vea también
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

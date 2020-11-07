@@ -1,5 +1,7 @@
 ---
 title: Protección de aplicaciones ClickOnce | Microsoft Docs
+description: Obtenga información sobre las implicaciones de las restricciones de seguridad de acceso del código en el .NET Framework que pueden limitar el acceso al código de las aplicaciones ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cb992355378e6e124cadef3383633a52a9111c2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286324"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350558"
 ---
 # <a name="secure-clickonce-applications"></a>Protección de las aplicaciones ClickOnce
 Las aplicaciones[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] están sujetas a las restricciones en materia de seguridad de acceso del código de .NET Framework para ayudar a limitar el acceso del código a los recursos y operaciones protegidos. Por esta razón, es importante que comprenda las implicaciones de la seguridad de acceso del código para que pueda escribir las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en consecuencia. Las aplicaciones pueden utilizar Plena confianza o zonas parciales, como las zonas de Internet o intranet, para limitar el acceso.
@@ -76,6 +78,6 @@ Las aplicaciones[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 ## <a name="deploying-obfuscated-assemblies"></a>Implementar ensamblados protegidos
  Visual Studio incluye [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md) de forma gratuita, que puede usar para proteger las aplicaciones ClickOnce mediante ofuscación de código y medidas de protección activas.  Para obtener más información, vea [la sección de ClickOnce de la guía del usuario de Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

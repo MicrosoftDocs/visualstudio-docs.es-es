@@ -1,5 +1,7 @@
 ---
 title: Crear un manifiesto de producto | Microsoft Docs
+description: Obtenga información sobre cómo implementar los requisitos previos para la aplicación ClickOnce con un paquete que contenga un único manifiesto de producto y un manifiesto del paquete para cada configuración regional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852223"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351224"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
 Para implementar los requisitos previos de la aplicación, puede crear un paquete de programa previo. Un paquete de programa previo contiene un solo archivo de manifiesto de producto, pero un manifiesto de paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye las cadenas, los contratos de licencia para el usuario final y los paquetes de idioma.
@@ -36,7 +38,7 @@ Para implementar los requisitos previos de la aplicación, puede crear un paquet
 
 1. Cree un directorio para el paquete de programa previo. En este ejemplo se usa C:\package.
 
-2. En Visual Studio, cree un nuevo archivo XML denominado *product.xml*y guárdelo en la carpeta *C:\package* .
+2. En Visual Studio, cree un nuevo archivo XML denominado *product.xml* y guárdelo en la carpeta *C:\package* .
 
 3. Agregue el siguiente código XML para describir el espacio de nombres XML y el código de producto del paquete. Reemplace el código de producto por un identificador único para el paquete.
 
@@ -64,7 +66,7 @@ Para implementar los requisitos previos de la aplicación, puede crear un paquet
 
 6. Copie o mueva el archivo de *CorePackage.msi* a la carpeta *C:\package* .
 
-7. Agregue XML para instalar el paquete mediante los comandos de arranque. El programa previo agrega automáticamente la marca **/QN** al archivo *. msi* , que se instalará de forma silenciosa. Si el archivo es un archivo *. exe*, el programa previo ejecuta el archivo *. exe* mediante el shell. El siguiente XML no muestra ningún argumento para *CorePackage.msi*, pero puede colocar el argumento de la línea de comandos en el `Arguments` atributo.
+7. Agregue XML para instalar el paquete mediante los comandos de arranque. El programa previo agrega automáticamente la marca **/QN** al archivo *. msi* , que se instalará de forma silenciosa. Si el archivo es un archivo *. exe* , el programa previo ejecuta el archivo *. exe* mediante el shell. El siguiente XML no muestra ningún argumento para *CorePackage.msi* , pero puede colocar el argumento de la línea de comandos en el `Arguments` atributo.
 
     ```xml
     <Commands>

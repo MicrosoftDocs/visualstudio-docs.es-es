@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento Strings (arranque) | Microsoft Docs'
+description: El elemento Strings define las cadenas localizadas para los nombres de producto, los nombres de paquete y los mensajes de error de instalación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747411"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350483"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;&gt;Elemento Strings (arranque)
 Define las cadenas localizadas para los nombres de producto, los nombres de paquete y los mensajes de error de instalación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Strings>
@@ -73,5 +75,5 @@ Define las cadenas localizadas para los nombres de producto, los nombres de paqu
 </Strings>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [\<Package> Element](../deployment/package-element-bootstrapper.md)

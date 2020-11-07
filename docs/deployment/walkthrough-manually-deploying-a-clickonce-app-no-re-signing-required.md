@@ -1,5 +1,6 @@
 ---
 title: Implementar manualmente la aplicación ClickOnce & mantener la marca
+description: Aprenda a crear aplicaciones ClickOnce para que las implementen los clientes sin generar un nuevo manifiesto de implementación y que puedan usar la personalización de marca del cliente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29bdd080e87e8fad44c7b8943d0d017749b8c30b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809229"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350314"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Tutorial: implementar manualmente una aplicación ClickOnce que no requiera volver a firmar y que conserve la información de personalización de marca
 Cuando se crea una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, se le asigna a un cliente para que la publique e implemente, el cliente tradicionalmente ha tenido que actualizar el manifiesto de implementación y volver a firmarlo. Aunque todavía es el método preferido en la mayoría de los casos, el .NET Framework 3,5 le permite crear [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones que los clientes pueden implementar sin tener que volver a generar un nuevo manifiesto de implementación. Para obtener más información, consulte [deploy ClickOnce Applications for Testing and Production Servers sin tener que volver a firmar](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -112,9 +113,9 @@ Cuando se crea una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
    MageUI.exe
    ```
 
-6. Cree un nuevo manifiesto de aplicación seleccionando **archivo**, **nuevo**, **manifiesto de aplicación** en el menú.
+6. Cree un nuevo manifiesto de aplicación seleccionando **archivo** , **nuevo** , **manifiesto de aplicación** en el menú.
 
-7. En la pestaña **nombre** predeterminado, escriba el nombre y el número de versión de esta implementación. Además, proporcione un valor para **publicador**, que se usará como nombre de carpeta para el vínculo de acceso directo de la aplicación en el menú Inicio cuando se implemente.
+7. En la pestaña **nombre** predeterminado, escriba el nombre y el número de versión de esta implementación. Además, proporcione un valor para **publicador** , que se usará como nombre de carpeta para el vínculo de acceso directo de la aplicación en el menú Inicio cuando se implemente.
 
 8. Seleccione la pestaña Opciones de la **aplicación** y haga clic en **usar el manifiesto de aplicación para obtener información de confianza**. Esto habilitará la personalización de marca de terceros para esta [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
 
@@ -124,17 +125,17 @@ Cuando se crea una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
 11. Haga clic en el botón **rellenar** para agregar todos los archivos de aplicación a la lista de archivos. Si la aplicación contiene más de un archivo ejecutable, marque el archivo ejecutable principal para esta implementación como aplicación de inicio; para ello, seleccione **punto de entrada** en la lista desplegable tipo de **archivo** . (Si la aplicación solo contiene un archivo ejecutable, *MageUI.exe* lo marcará automáticamente).
 
-12. Seleccione la pestaña **permisos necesarios** y seleccione el nivel de confianza que necesita para la aplicación. El valor predeterminado es **plena confianza**, que será adecuado para la mayoría de las aplicaciones.
+12. Seleccione la pestaña **permisos necesarios** y seleccione el nivel de confianza que necesita para la aplicación. El valor predeterminado es **plena confianza** , que será adecuado para la mayoría de las aplicaciones.
 
-13. Seleccione **archivo**, **Guardar** en el menú y guarde el manifiesto de aplicación. Cuando lo guarde, se le pedirá que firme el manifiesto de aplicación.
+13. Seleccione **archivo** , **Guardar** en el menú y guarde el manifiesto de aplicación. Cuando lo guarde, se le pedirá que firme el manifiesto de aplicación.
 
-14. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use la opción **firmar como archivo de certificado** y seleccione el certificado en el sistema de archivos mediante el botón de puntos suspensivos (**...**).
+14. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use la opción **firmar como archivo de certificado** y seleccione el certificado en el sistema de archivos mediante el botón de puntos suspensivos ( **...** ).
 
      o bien
 
-     Si el certificado se mantiene en un almacén de certificados al que se puede tener acceso desde el equipo, seleccione la **opción firmar con certificado almacenado**y seleccione el certificado en la lista que se proporciona.
+     Si el certificado se mantiene en un almacén de certificados al que se puede tener acceso desde el equipo, seleccione la **opción firmar con certificado almacenado** y seleccione el certificado en la lista que se proporciona.
 
-15. Seleccione **archivo**, **nuevo**, **manifiesto de implementación** en el menú para crear el manifiesto de implementación y, a continuación, en la pestaña **nombre** , proporcione un nombre y un número de versión (**1.0.0.0** en este ejemplo).
+15. Seleccione **archivo** , **nuevo** , **manifiesto de implementación** en el menú para crear el manifiesto de implementación y, a continuación, en la pestaña **nombre** , proporcione un nombre y un número de versión ( **1.0.0.0** en este ejemplo).
 
 16. Cambie a la pestaña **Actualizar** y especifique la frecuencia con la que desea que se actualice la aplicación. Si la aplicación usa la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API de implementación para buscar actualizaciones, desactive la casilla **esta aplicación debe buscar actualizaciones**.
 
@@ -151,11 +152,11 @@ Cuando se crea una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
     pvk2pfx.exe -pvk MyCert.pvk -spc MyCert.cer -pfx MyCert.pfx
     ```
 
-21. Con el certificado generado, el cliente ahora firma el manifiesto de implementación al abrir el manifiesto de implementación en *MageUI.exe*y, a continuación, guardarlo. Cuando aparece el cuadro de diálogo firma, el cliente selecciona la opción **firmar como archivo de certificado** y elige el archivo PFX que ha guardado en el disco.
+21. Con el certificado generado, el cliente ahora firma el manifiesto de implementación al abrir el manifiesto de implementación en *MageUI.exe* y, a continuación, guardarlo. Cuando aparece el cuadro de diálogo firma, el cliente selecciona la opción **firmar como archivo de certificado** y elige el archivo PFX que ha guardado en el disco.
 
 22. El cliente implementa la aplicación en sus usuarios.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [MakeCert](/windows/desktop/SecCrypto/makecert)

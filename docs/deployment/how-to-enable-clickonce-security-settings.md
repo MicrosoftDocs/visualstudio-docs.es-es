@@ -1,5 +1,7 @@
 ---
 title: Habilitar la configuración de seguridad de ClickOnce | Microsoft Docs
+description: Obtenga información sobre cómo el Asistente para publicación habilita automáticamente la seguridad de acceso del código para que las aplicaciones ClickOnce publiquen la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f407ac42dc9997215bfe6682bb8b974b78c7847
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: db31d0182c598b32933cf2d4260706a2252a9b6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850935"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351172"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Cómo: Habilitar la configuración de seguridad para aplicaciones ClickOnce
 La seguridad de acceso del código de las aplicaciones ClickOnce debe estar habilitada para poder publicar la aplicación. Esto se hace automáticamente al publicar una aplicación mediante el Asistente para publicación.
@@ -32,7 +34,7 @@ La seguridad de acceso del código de las aplicaciones ClickOnce debe estar habi
 
 ### <a name="to-enable-clickonce-security-settings"></a>Para habilitar la configuración de seguridad de ClickOnce
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Security** (Seguridad).
 
@@ -45,7 +47,7 @@ La seguridad de acceso del código de las aplicaciones ClickOnce debe estar habi
 
 ### <a name="to-disable-clickonce-security-settings"></a>Para deshabilitar la configuración de seguridad de ClickOnce
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Security** (Seguridad).
 

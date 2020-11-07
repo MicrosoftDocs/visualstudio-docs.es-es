@@ -1,5 +1,7 @@
 ---
 title: Solución de problemas de implementaciones de ClickOnce | Microsoft Docs
+description: Use este artículo para ayudarle a diagnosticar y resolver los problemas más comunes con las implementaciones de ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -18,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae6f4098edf246a4f84533b37e4f9a684d932456
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235178"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350506"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solución de problemas de implementaciones de ClickOnce
 Este tema le ayuda a diagnosticar y resolver los problemas más comunes con las [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones.
 
  En la mayoría de los casos, una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se descargará en el equipo de un usuario y se ejecutará sin problemas. Sin embargo, hay algunos casos en los que los problemas de configuración del servidor web o de la aplicación pueden provocar problemas imprevistos.
 
-## <a name="deployment-considerations"></a>Consideraciones sobre las implementaciones
+## <a name="deployment-considerations"></a>Consideraciones de la implementación
 
  [Cómo: establecer una ubicación de archivo de registro personalizada para los errores de implementación de ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
 
@@ -56,7 +58,7 @@ Este tema le ayuda a diagnosticar y resolver los problemas más comunes con las 
 
  Describe una técnica para depurar aplicaciones ClickOnce que usan System. Deployment. Application.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)

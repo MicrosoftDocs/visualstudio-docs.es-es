@@ -1,5 +1,6 @@
 ---
 title: Descargar ensamblados a petición mediante el diseñador (API de ClickOnce)
+description: Obtenga información sobre cómo marcar determinados ensamblados en la aplicación ClickOnce como opcionales mediante el diseñador y descargarlos cuando el Common Language Runtime los necesite.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4451f5f4075d512c76119faceb02d2a92fff120c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 597f633c1f92b09add06909b8cb626262de1156f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809268"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350353"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: descargar ensamblados a petición con la API de implementación de ClickOnce mediante el diseñador
 De forma predeterminada, todos los ensamblados incluidos en una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se descargan la primera vez que se ejecuta la aplicación, aunque podría haber partes de la aplicación usadas por un pequeño sector de los usuarios. En tal caso, es probable que quiera descargar un ensamblado solo cuando cree uno de sus tipos. En el siguiente tutorial se muestra cómo marcar determinados ensamblados en la aplicación como “opcionales” y cómo descargarlos usando clases en el espacio de nombres <xref:System.Deployment.Application> cuando los solicita Common Language Runtime.
@@ -38,7 +39,7 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
 
 ### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Para crear un proyecto que use un ensamblado a petición con Visual Studio
 
-1. Cree un proyecto de Windows Forms en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Archivo** , seleccione **Agregar**y haga clic en **Nuevo proyecto**. Elija un proyecto **Biblioteca de clases** en el cuadro de diálogo y asígnele el nombre `ClickOnceLibrary`.
+1. Cree un proyecto de Windows Forms en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Archivo** , seleccione **Agregar** y haga clic en **Nuevo proyecto**. Elija un proyecto **Biblioteca de clases** en el cuadro de diálogo y asígnele el nombre `ClickOnceLibrary`.
 
    > [!NOTE]
    > En Visual Basic, se recomienda modificar las propiedades del proyecto para cambiar el espacio de nombres raíz de este proyecto a `Microsoft.Samples.ClickOnceOnDemand` o al espacio de nombres que quiera. Para que resulte más sencillo, los dos proyectos de este tutorial están en el mismo espacio de nombres.
@@ -98,6 +99,6 @@ Para probar el ensamblado a petición:
 
 2. Cuando aparezca el formulario principal, pulse el <xref:System.Windows.Forms.Button>. Debería ver una cadena en una ventana de cuadro de mensaje que dice “Hello, World!”.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:System.Deployment.Application.ApplicationDeployment>

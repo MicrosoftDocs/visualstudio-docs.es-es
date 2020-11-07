@@ -1,5 +1,7 @@
 ---
 title: Actualizaciones automáticas de aplicaciones mediante la API de implementación de ClickOnce
+description: Obtenga información sobre cómo escribir código en ClickOnce que use la clase ApplicationDeployment para buscar actualizaciones en función de un evento, como una solicitud de usuario.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382580"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351263"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Como: buscar actualizaciones de aplicaciones mediante programación con la API de implementación ClickOnce
 ClickOnce proporciona dos maneras de actualizar una aplicación una vez que se implementa. En el primer método, puede configurar la implementación ClickOnce para comprobar automáticamente si hay actualizaciones en determinados intervalos. En el segundo método, puede escribir código que use la <xref:System.Deployment.Application.ApplicationDeployment> clase para buscar actualizaciones en función de un evento, como una solicitud de usuario.
@@ -60,6 +62,6 @@ ClickOnce proporciona dos maneras de actualizar una aplicación una vez que se i
  La aplicación debe tener permisos de plena confianza para usar la actualización mediante programación.
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Especificar una ubicación alternativa para las actualizaciones de la implementación](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
+- [Cómo: especificar una ubicación alternativa para las actualizaciones de implementación](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [Selección de una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

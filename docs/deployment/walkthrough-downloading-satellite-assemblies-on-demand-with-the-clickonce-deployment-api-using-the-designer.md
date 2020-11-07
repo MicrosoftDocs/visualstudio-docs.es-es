@@ -1,5 +1,7 @@
 ---
 title: Descargar ensamblados satélite a petición mediante el diseñador ClickOnce
+description: Obtenga información acerca de cómo marcar los ensamblados satélite como opcionales mediante el uso del diseñador y descargar únicamente el ensamblado que necesita un equipo cliente para la configuración de la referencia cultural actual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263412"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350340"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.
@@ -47,7 +49,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 4. Seleccione la casilla **Mostrar todos los archivos** para que se muestren los ensamblados satélite. De forma predeterminada, todos los ensamblados satélite se incluirán en la implementación y estarán visibles en este cuadro de diálogo.
 
-     Un ensamblado satélite tendrá un nombre con el formato * \<isoCode>\ApplicationName.resources.dll*, donde \<isoCode> es un identificador de idioma en formato RFC 1766.
+     Un ensamblado satélite tendrá un nombre con el formato *\<isoCode>\ApplicationName.resources.dll* , donde \<isoCode> es un identificador de idioma en formato RFC 1766.
 
 5. Haga clic en **Nuevo** en la lista **Grupo de descarga** para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite en japonés, debe especificar el nombre del grupo de descarga `ja-JP` .
 
@@ -78,6 +80,6 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 ## <a name="next-steps"></a>Pasos siguientes
  En un entorno de producción, probablemente tenga que quitar la línea en los ejemplos de código que establece <xref:System.Threading.Thread.CurrentUICulture%2A> en un valor específico, porque los equipos cliente tendrán el valor correcto establecido de forma predeterminada. Cuando la aplicación se ejecute en un equipo cliente japonés, por ejemplo, <xref:System.Threading.Thread.CurrentUICulture%2A> será `ja-JP` de forma predeterminada. Establecerlo mediante programación es una buena manera de probar los ensamblados satélite antes de implementar la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [Localización de aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md)

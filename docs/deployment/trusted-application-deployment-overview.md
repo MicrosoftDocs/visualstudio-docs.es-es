@@ -1,5 +1,7 @@
 ---
 title: Información general sobre la implementación de aplicaciones de confianza | Microsoft Docs
+description: Obtenga información sobre cómo implementar aplicaciones ClickOnce con permisos elevados mediante la tecnología de implementación de aplicaciones de confianza.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72806833"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350509"
 ---
 # <a name="trusted-application-deployment-overview"></a>Introducción a la implementación de aplicaciones de confianza
 En este tema se proporciona información general sobre cómo implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que disponen de permisos elevados usando la tecnología de implementación de aplicaciones de confianza.
@@ -77,7 +79,7 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
 
 - El espacio de nombres <xref:System.Security.Cryptography?displayProperty=fullName> .
 
-- *CertMgr.exe*, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, vea [Certmgr.exe (herramienta de administración de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe* , que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, vea [Certmgr.exe (herramienta de administración de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Crear una aplicación ClickOnce
  Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es una aplicación cliente de .NET Framework combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
@@ -101,6 +103,6 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
 ## <a name="limitations-of-trusted-application-deployment"></a>Limitaciones de la implementación de aplicaciones de confianza
  Puede usar la implementación de aplicaciones de confianza para conceder una confianza elevada a las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementadas en la Web o en un recurso compartido de archivos de la empresa. No es necesario que use la implementación de aplicaciones de confianza para las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que se distribuyen en un CD porque, de forma predeterminada, estas aplicaciones gozan de plena confianza.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

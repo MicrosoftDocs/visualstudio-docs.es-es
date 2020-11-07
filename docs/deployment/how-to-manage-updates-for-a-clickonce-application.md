@@ -1,5 +1,7 @@
 ---
 title: Administrar actualizaciones para una aplicación ClickOnce | Microsoft Docs
+description: Obtenga información sobre las opciones para buscar actualizaciones automáticamente o mediante programación para las aplicaciones ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: bc2fd7b9e58cac0b013c511e17a6a9744e87ca39
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851611"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351185"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedimientos para administrar actualizaciones de aplicaciones ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como desarrollador, tiene mucha flexibilidad a la hora de especificar Cuándo y cómo se realizan las comprobaciones de actualización, si las actualizaciones son obligatorias y dónde debe buscar actualizaciones la aplicación.
@@ -41,7 +43,7 @@ ms.locfileid: "90851611"
 
 ### <a name="to-check-for-updates-before-the-application-starts"></a>Para buscar actualizaciones antes de que se inicie la aplicación
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 
@@ -53,7 +55,7 @@ ms.locfileid: "90851611"
 
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Buscar actualizaciones en segundo plano después de iniciar la aplicación
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 
@@ -61,13 +63,13 @@ ms.locfileid: "90851611"
 
 4. En el cuadro de diálogo actualizaciones de la **aplicación** , asegúrese de que la casilla **la aplicación debe buscar actualizaciones** está activada.
 
-5. En la **sección elija cuándo debe buscar actualizaciones la aplicación**, seleccione **después de que se inicie la aplicación**. La aplicación se iniciará más rápidamente de esta manera y, a continuación, comprobará si hay actualizaciones en segundo plano y solo notificará al usuario cuando haya una actualización disponible. Una vez instaladas, las actualizaciones no surtirán efecto hasta que se reinicie la aplicación.
+5. En la **sección elija cuándo debe buscar actualizaciones la aplicación** , seleccione **después de que se inicie la aplicación**. La aplicación se iniciará más rápidamente de esta manera y, a continuación, comprobará si hay actualizaciones en segundo plano y solo notificará al usuario cuando haya una actualización disponible. Una vez instaladas, las actualizaciones no surtirán efecto hasta que se reinicie la aplicación.
 
 6. En la sección **especificación de la frecuencia con la que la aplicación debe buscar actualizaciones** , seleccione **comprobar cada vez que se ejecute la aplicación** (valor predeterminado) o **Compruebe cada** y escriba un número y un intervalo de tiempo.
 
 ### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Para especificar una versión mínima necesaria para la aplicación
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 
@@ -75,11 +77,11 @@ ms.locfileid: "90851611"
 
 4. En el cuadro de diálogo actualizaciones de la **aplicación** , asegúrese de que la casilla de **verificación la aplicación debe buscar actualizaciones** está activada.
 
-5. Active la casilla **especificar una versión mínima requerida para esta aplicación** y, a continuación, escriba los números **principal**, **secundario**, de **compilación**y de **revisión** de la aplicación.
+5. Active la casilla **especificar una versión mínima requerida para esta aplicación** y, a continuación, escriba los números **principal** , **secundario** , de **compilación** y de **revisión** de la aplicación.
 
 ### <a name="to-specify-a-different-update-location"></a>Para especificar una ubicación de actualización diferente
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 
@@ -87,11 +89,11 @@ ms.locfileid: "90851611"
 
 4. En el cuadro de diálogo actualizaciones de la **aplicación** , asegúrese de que la casilla de **verificación la aplicación debe buscar actualizaciones** está activada.
 
-5. En el campo **Ubicación de actualización** , escriba la ubicación de actualización con una dirección URL completa, con el formato *http://Hostname/ApplicationName* o una ruta de acceso UNC con el formato * \\ \Server\ApplicationName*, o haga clic en el botón **examinar** para buscar la ubicación de actualización.
+5. En el campo **Ubicación de actualización** , escriba la ubicación de actualización con una dirección URL completa, con el formato *http://Hostname/ApplicationName* o una ruta de acceso UNC con el formato *\\ \Server\ApplicationName* , o haga clic en el botón **examinar** para buscar la ubicación de actualización.
 
 ### <a name="to-check-for-updates-programmatically"></a>Para buscar actualizaciones mediante programación
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 
@@ -99,7 +101,7 @@ ms.locfileid: "90851611"
 
 4. En el cuadro de diálogo actualizaciones de la **aplicación** , asegúrese de que la casilla de **verificación la aplicación debe buscar actualizaciones** está desactivada. (Opcionalmente, puede activar esta casilla para buscar actualizaciones mediante programación y también permitir que el tiempo de ejecución de ClickOnce Compruebe las actualizaciones automáticamente).
 
-5. En el campo **Ubicación de actualización** , escriba la ubicación de actualización con una dirección URL completa, con el formato *http://Hostname/ApplicationName* o una ruta de acceso UNC con el formato * \\ \Server\ApplicationName*, o haga clic en el botón **examinar** para buscar la ubicación de actualización. La ubicación de la actualización es donde la aplicación buscará una versión actualizada de sí mismo.
+5. En el campo **Ubicación de actualización** , escriba la ubicación de actualización con una dirección URL completa, con el formato *http://Hostname/ApplicationName* o una ruta de acceso UNC con el formato *\\ \Server\ApplicationName* , o haga clic en el botón **examinar** para buscar la ubicación de actualización. La ubicación de la actualización es donde la aplicación buscará una versión actualizada de sí mismo.
 
 6. Cree un botón, un elemento de menú u otro elemento de la interfaz de usuario en un Windows Form que los usuarios seleccionarán para buscar actualizaciones. En el controlador de eventos de ese elemento, llame a un método para buscar e instalar actualizaciones. Puede encontrar un ejemplo de código de Visual Basic y Visual C# para este método en [Cómo: buscar actualizaciones de aplicaciones mediante programación con la API de implementación de ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
 

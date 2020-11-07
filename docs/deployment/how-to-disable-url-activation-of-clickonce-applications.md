@@ -1,5 +1,6 @@
 ---
 title: Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce
+description: Obtenga información sobre cómo deshabilitar el inicio automático en la instalación de la aplicación ClickOnce, en caso de que desee que los usuarios inicien la aplicación desde el menú Inicio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f13921044e188d659ba8cd5b776a006f7af5b1a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809768"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351237"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Cómo: Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce
 
@@ -44,6 +45,6 @@ Este procedimiento usa la herramienta del kit de desarrollo de software (SDK) de
 
 4. Guarde y firme el manifiesto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

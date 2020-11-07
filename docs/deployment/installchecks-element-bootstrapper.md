@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento InstallChecks (arranque) | Microsoft Docs'
+description: El elemento InstallChecks permite iniciar una serie de pruebas en el equipo local para asegurarse de que se han instalado todos los requisitos previos para una aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536310"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350873"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;&gt;Elemento InstallChecks (arranque)
 El `InstallChecks` elemento permite iniciar una serie de pruebas en el equipo local para asegurarse de que se han instalado todos los requisitos previos adecuados para una aplicación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <InstallChecks>
@@ -140,7 +142,7 @@ El `InstallChecks` elemento permite iniciar una serie de pruebas en el equipo lo
 |`FileName`|Opcional. Nombre de un archivo. Si se especifica, se supone que el valor obtenido de la clave del registro es una ruta de acceso de directorio y se le anexa este nombre. Si no se especifica, se supone que el valor devuelto del registro es la ruta de acceso completa a un archivo.|
 |`SearchDepth`|Opcional. La profundidad con la que se van a buscar en las subcarpetas del archivo con nombre. La búsqueda se realiza con prioridad a la profundidad. El valor predeterminado es 0, que restringe la búsqueda a la carpeta de nivel superior especificada por el valor de la clave del registro.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Mientras que los elementos `InstallChecks` que hay debajo definen las pruebas que se van a ejecutar, no las ejecutan. Para ejecutar las pruebas, debe crear `Command` elementos debajo del `Commands` elemento.
 
 ## <a name="example"></a>Ejemplo
@@ -179,6 +181,6 @@ El `InstallChecks` elemento permite iniciar una serie de pruebas en el equipo lo
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [\<Commands> Element](../deployment/commands-element-bootstrapper.md)
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

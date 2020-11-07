@@ -1,5 +1,7 @@
 ---
 title: Dirección URL de soporte para requisitos previos en la implementación ClickOnce
+description: Obtenga información sobre cómo una implementación ClickOnce comprueba los requisitos previos para la ejecución de la aplicación ClickOnce y cómo la implementación trata los requisitos previos que faltan.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381735"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350951"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Cómo: Especificar una dirección URL de soporte para requisitos previos individuales en una implementación de ClickOnce
 Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación puede probar una serie de requisitos previos que deben estar disponibles en el equipo cliente para que la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecute. Estas dependencias incluyen la versión mínima necesaria del .NET Framework, la versión del sistema operativo y los ensamblados que deben preinstalarse en la caché de ensamblados global (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]sin embargo, no puede instalar ninguno de estos requisitos previos. Si no se encuentra un requisito previo, simplemente detiene la instalación y muestra un cuadro de diálogo que explica por qué se produjo un error en la instalación.
 
  Existen dos métodos para instalar los requisitos previos. Puede instalarlos con una aplicación de programa previo. También puede especificar una dirección URL de soporte técnico para los requisitos previos individuales, que se muestra a los usuarios en el cuadro de diálogo si no se encuentra el requisito previo. La página a la que se hace referencia en esa dirección URL puede contener vínculos a instrucciones para instalar el requisito previo necesario. Si una aplicación no especifica una dirección URL de soporte técnico para un requisito previo individual, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] muestra la dirección URL de soporte especificada en el manifiesto de implementación para la aplicación en su conjunto, si se ha definido.
 
- Aunque [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se pueden usar *Mage.exe*y *MageUI.exe* para generar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones, ninguna de estas herramientas admite directamente la especificación de una dirección URL de soporte técnico para los requisitos previos individuales. En este documento se describe cómo modificar el manifiesto de aplicación de la implementación y el manifiesto de implementación para incluir estas direcciones URL de soporte técnico.
+ Aunque [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se pueden usar *Mage.exe* y *MageUI.exe* para generar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones, ninguna de estas herramientas admite directamente la especificación de una dirección URL de soporte técnico para los requisitos previos individuales. En este documento se describe cómo modificar el manifiesto de aplicación de la implementación y el manifiesto de implementación para incluir estas direcciones URL de soporte técnico.
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Especifique una dirección URL de soporte técnico para un requisito previo individual
 
