@@ -1,5 +1,7 @@
 ---
 title: Escribir tareas | Microsoft Docs
+description: Obtenga información sobre cómo puede crear sus propias tareas para proporcionar el código que se ejecuta durante el proceso de compilación de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631843"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047923"
 ---
 # <a name="task-writing"></a>Escribir tareas
 
@@ -170,7 +172,7 @@ Una tarea no debe depender de ningún orden relativo de invocación del establec
 
 MSBuild controla de forma nativa las propiedades de tipo `string`, `bool`, `ITaskItem` y `ITaskItem[]`. Si una tarea acepta un parámetro de un tipo diferente, MSBuild invoca a <xref:System.Convert.ChangeType%2A> para realizar la conversión de `string` (con todas las referencias de propiedades y elementos expandidas) al tipo de destino. Si se produce un error en la conversión de cualquier parámetro de entrada, MSBuild emite un error y no llama al método `Execute()` de la tarea.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
 ### <a name="description"></a>Descripción
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
 ### <a name="description"></a>Descripción
 
@@ -231,9 +233,9 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-3"></a>Ejemplo 3
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 Esta clase C# muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Tiene una propiedad de cadena necesaria y genera un evento que todos los registradores registrados muestran.
 
@@ -241,9 +243,9 @@ Esta clase C# muestra una tarea que deriva de la clase del asistente <xref:Micro
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>Ejemplo
+## <a name="example-4"></a>Ejemplo 4
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra un archivo del proyecto que invoca la tarea del ejemplo anterior, SimpleTask3.
 
@@ -260,6 +262,6 @@ En el ejemplo siguiente se muestra un archivo del proyecto que invoca la tarea d
 </Project>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

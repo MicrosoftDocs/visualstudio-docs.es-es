@@ -1,5 +1,7 @@
 ---
 title: Archivos de respuesta de MSBuild | Microsoft Docs
+description: Obtenga información sobre los archivos de respuesta de MSBuild o .rsp, archivos de texto que contienen modificadores de la línea de comandos de MSBuild.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,20 +20,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b18ad00c3be8c3684551f28bc170dbd4a8428533
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315153"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049144"
 ---
 # <a name="msbuild-response-files"></a>Archivos de respuesta de MSBuild
 
-Los archivos de respuesta ( *.rsp*) son archivos de texto que contienen modificadores de línea de comandos de *MSBuild.exe*. Cada modificador puede estar en una línea independiente o todos los modificadores pueden aparecen en una sola línea. Las líneas de comentario van precedidas del símbolo **#** . El modificador **@** se usa para pasar otro archivo de respuesta a *MSBuild.exe*.
+Los archivos de respuesta ( *.rsp* ) son archivos de texto que contienen modificadores de línea de comandos de *MSBuild.exe*. Cada modificador puede estar en una línea independiente o todos los modificadores pueden aparecen en una sola línea. Las líneas de comentario van precedidas del símbolo **#** . El modificador **@** se usa para pasar otro archivo de respuesta a *MSBuild.exe*.
 
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 
-El archivo de respuesta automática es un archivo *.rsp* especial que *MSBuild.exe* usa automáticamente al compilar un proyecto. Este archivo, *MSBuild.rsp*, debe estar en el mismo directorio que *MSBuild.exe*, de lo contrario, no se encuentra. Puede editar este archivo para especificar los modificadores de línea de comandos predeterminados para *MSBuild.exe*. Por ejemplo, si usa el mismo registrador cada vez que compila un proyecto, puede agregar el modificador **-logger** a *MSBuild.rsp* y *MSBuild.exe* usará el registrador cada vez que se compile un proyecto.
+El archivo de respuesta automática es un archivo *.rsp* especial que *MSBuild.exe* usa automáticamente al compilar un proyecto. Este archivo, *MSBuild.rsp* , debe estar en el mismo directorio que *MSBuild.exe* , de lo contrario, no se encuentra. Puede editar este archivo para especificar los modificadores de línea de comandos predeterminados para *MSBuild.exe*. Por ejemplo, si usa el mismo registrador cada vez que compila un proyecto, puede agregar el modificador **-logger** a *MSBuild.rsp* y *MSBuild.exe* usará el registrador cada vez que se compile un proyecto.
 
 ## <a name="directorybuildrsp"></a>Directory.Build.rsp
 

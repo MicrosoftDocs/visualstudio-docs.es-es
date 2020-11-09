@@ -1,5 +1,7 @@
 ---
 title: Nodos del Diseñador de sombras
+description: Use los artículos de esta sección de la documentación para obtener información sobre los distintos nodos del Diseñador de sombras que puede usar para crear efectos gráficos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d13aaf5d5b4257ff6ec7c2efc52adbdca7df92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bac48316e60422b9561535d67c14aeadbd416f4
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768792"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134235"
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
 Los artículos de esta sección de la documentación contienen información sobre los distintos nodos del Diseñador de sombras que puede usar para crear efectos gráficos.
@@ -41,10 +43,10 @@ Dado que en última instancia el Diseñador de sombras debe generar código fuen
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Título|Description|
+|Title|Descripción|
 |-----------|-----------------|
 |[Nodos de constante](../designers/constant-nodes.md)|Describe los nodos que se pueden usar para representar valores literales y la información de estado de vértice interpolada en los cálculos del sombreador. Como el estado de los vértices se interpola, y por tanto es diferente para cada píxel, cada instancia de sombreador de píxeles recibe una versión diferente de la constante.|
-|[Nodos de parámetros](../designers/parameter-nodes.md)|Describe los nodos que se pueden usar para representar la posición de la cámara, propiedades de los materiales, parámetros de iluminación, hora y otra información de estado de la aplicación en los cálculos del sombreador.|
+|[Nodos de parámetro](../designers/parameter-nodes.md)|Describe los nodos que se pueden usar para representar la posición de la cámara, propiedades de los materiales, parámetros de iluminación, hora y otra información de estado de la aplicación en los cálculos del sombreador.|
 |[Nodos de textura](../designers/texture-nodes.md)|Describe los nodos que se pueden usar para muestrear diversos tipos de textura y geometrías, y formas habituales de generar o transformar las coordenadas de textura.|
 |[Nodos matemáticos](../designers/math-nodes.md)|Describe los nodos que se pueden usar para realizar operaciones algebraicas, lógicas, trigonométricas y otras operaciones matemáticas que se asignan directamente a las instrucciones de HLSL.|
 |[Nodos de utilidad](../designers/utility-nodes.md)|Describe los nodos que se pueden usar para realizar operaciones de iluminación y otras operaciones comunes que no se asignan directamente a las instrucciones de HLSL.|

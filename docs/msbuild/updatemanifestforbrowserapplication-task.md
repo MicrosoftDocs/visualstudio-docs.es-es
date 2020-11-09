@@ -1,5 +1,7 @@
 ---
 title: UpdateManifestForBrowserApplication (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild ejecuta la tarea UpdateManifestForBrowserApplication para agregar el elemento hostInBrowser al manifiesto de aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,23 +20,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43e8fc7b9b09af51ea3be73409e2dcde9a718cee
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631333"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046815"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication (Tarea)
 
-La tarea <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> se ejecuta para agregar el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<projectname>.exe.manifest*) cuando se compila un proyecto de aplicación de explorador XAML (XBAP).
+La tarea <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> se ejecuta para agregar el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<projectname>.exe.manifest* ) cuando se compila un proyecto de aplicación de explorador XAML (XBAP).
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
 |Parámetro|Descripción|
 |---------------|-----------------|
 |`ApplicationManifest`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la ruta de acceso y el nombre del archivo de manifiesto de aplicación al que se quiere agregar el elemento `<hostInBrowser />`.|
-|`HostInBrowser`|Parámetro obligatorio de tipo **Boolean**.<br /><br /> Especifica si se debe modificar el manifiesto de aplicación para incluir el elemento **\<hostInBrowser />** . Si es **true**, se incluye un nuevo elemento **\<hostInBrowser />** en el elemento **\<entryPoint />** . La inclusión de elementos es acumulativa: si ya existe un elemento **\<hostInBrowser />** , no se quita ni se sobrescribe. En su lugar, se crea otro elemento **\<hostInBrowser />** . Si es **false**, el manifiesto de aplicación no se modifica.|
+|`HostInBrowser`|Parámetro obligatorio de tipo **Boolean**.<br /><br /> Especifica si se debe modificar el manifiesto de aplicación para incluir el elemento **\<hostInBrowser />** . Si es **true** , se incluye un nuevo elemento **\<hostInBrowser />** en el elemento **\<entryPoint />** . La inclusión de elementos es acumulativa: si ya existe un elemento **\<hostInBrowser />** , no se quita ni se sobrescribe. En su lugar, se crea otro elemento **\<hostInBrowser />** . Si es **false** , el manifiesto de aplicación no se modifica.|
 
 ## <a name="remarks"></a>Comentarios
 

@@ -1,5 +1,7 @@
 ---
 title: Objetivos de MSBuild | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa destinos para agrupar tareas y permitir que el proceso de compilación se factorice en unidades más pequeñas.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfdbbf0f585ea02bfdb32f47728ab0cd26e9af3e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 2a257299d22b5ba5050ee9027e6bbb97bbaf3a75
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250674"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049096"
 ---
 # <a name="msbuild-targets"></a>Destinos de MSBuild
 

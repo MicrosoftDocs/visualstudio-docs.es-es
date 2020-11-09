@@ -1,5 +1,7 @@
 ---
 title: Referencia de MSBuild | Microsoft Docs
+description: Vínculos de acceso a artículos que contienen información de referencia de MSBuild, el sistema de compilación de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633270"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046570"
 ---
 # <a name="msbuild-reference"></a>Referencia de MSBuild
 
-MSBuild es el sistema de compilación de Visual Studio. Los siguientes vínculos conducen a temas que contienen información de referencia de MSBuild.
+MSBuild es el sistema de compilación de Visual Studio. Los siguientes vínculos conducen a temas que contienen información de referencia de MSBuild.
 
 ## <a name="in-this-section"></a>En esta sección
 

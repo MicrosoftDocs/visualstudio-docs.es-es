@@ -1,5 +1,7 @@
 ---
 title: Editar hojas de estilos XSLT
+description: Obtenga información sobre las características del editor XML para editar hojas de estilos XSLT, incluidos el color de la sintaxis, los subrayados y el inicio del depurador de XSLT desde el editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31d961de62822bf036a898601ba0125db5a0dafc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592846"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045881"
 ---
 # <a name="edit-xslt-style-sheets"></a>Editar hojas de estilos XSLT
 

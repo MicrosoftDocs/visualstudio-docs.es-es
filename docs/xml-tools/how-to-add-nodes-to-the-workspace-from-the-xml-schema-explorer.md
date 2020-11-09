@@ -1,5 +1,7 @@
 ---
 title: Incorporación de nodos al área de trabajo desde el Explorador de esquemas XML
+description: Obtenga información sobre cómo agregar nodos al área de trabajo del diseñador de esquemas XML desde el explorador de esquemas XML mediante el menú contextual o arrastrando y colocando nodos en una vista.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 751e291188e6357343936d61d56f07bd86f97eaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baa4d32d14a85e27bb0bb453c8c81f0bab486379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816402"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045718"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedimiento Adición de nodos al área de trabajo desde el Explorador de esquemas XML
 

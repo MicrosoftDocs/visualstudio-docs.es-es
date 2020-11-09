@@ -1,5 +1,7 @@
 ---
 title: Elemento OnError (MSBuild) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa el elemento OnError para que se ejecuten uno o varios destinos, si el atributo ContinueOnError es false para una tarea con errores.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c3793dddf62f67d1c2ff75d8df863dadfdadb7a1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633088"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048946"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 
 Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es `false` para una tarea con error.
 
- \<Project> \<Target> \<OnError>
+ \<Project> \<Target>
  \<OnError>
 
 ## <a name="syntax"></a>Sintaxis
@@ -58,7 +60,7 @@ Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es 
 
 | Elemento | Descripción |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | Elemento contenedor para tareas de MSBuild. |
+| [Destino](../msbuild/target-element-msbuild.md) | Elemento contenedor para tareas de MSBuild. |
 
 ## <a name="remarks"></a>Comentarios
 

@@ -1,5 +1,7 @@
 ---
 title: Menús contextuales en el Explorador de esquemas XML
+description: Obtenga información sobre los menús contextuales del Explorador de esquemas XML que contiene elementos para realizar búsquedas específicas del esquema y otras operaciones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592898"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049174"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (Explorador de esquemas XML)
 

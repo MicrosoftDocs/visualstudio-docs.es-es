@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007164"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918115"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 
@@ -31,6 +31,7 @@ Para ayudarlo a decidir qué herramientas y resultados debe utilizar, tenga en c
   - Los problemas de rendimiento externo, como problemas de la capacidad de respuesta de la red o de E/S de archivos, no se diferenciarán demasiado en las herramientas con o sin depurador.
   - El propio depurador cambia los tiempos de rendimiento, ya que realiza operaciones de depurador necesarias como interceptar excepciones y modular eventos de carga.
   - Los números de rendimiento de la compilación de versión del Generador de perfiles de rendimiento son los más precisos y exactos. Los resultados de la herramienta integrada en el depurador son más útiles si se comparan con otras medidas relacionadas con la depuración o para usar las características del depurador.
+  - Algunas herramientas, como la herramienta de asignación de objetos .NET, solo están disponibles para escenarios que no son de depurador.
 - Compilación de depuración frente a compilación de versión
   - En el caso de problemas causados por llamadas con gran consumo de CPU, puede haber diferencias de rendimiento considerables entre las compilaciones de versión y de depuración. Compruebe si el problema existe en las compilaciones de versión.
   - Si el problema se produce solo durante las compilaciones de depuración, probablemente no necesitará ejecutar las herramientas sin depurador. En el caso de problemas con la compilación de versión, decida si las características proporcionadas por las herramientas integradas del depurador ayudarán a identificar el problema.
@@ -38,15 +39,15 @@ Para ayudarlo a decidir qué herramientas y resultados debe utilizar, tenga en c
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración
 
-Al comenzar la depuración en Visual Studio seleccionando **Depurar** > **Iniciar depuración** o presionando **F5** , la ventana **Herramientas de diagnóstico** aparece de forma predeterminada. Para abrirla manualmente, seleccione **Depurar** > **Ventanas** > **Mostrar herramientas de diagnóstico** . En la ventana **Herramientas de diagnóstico** se muestra información sobre el uso de CPU, la memoria de proceso y los eventos.
+Al comenzar la depuración en Visual Studio seleccionando **Depurar** > **Iniciar depuración** o presionando **F5** , la ventana **Herramientas de diagnóstico** aparece de forma predeterminada. Para abrirla manualmente, seleccione **Depurar** > **Ventanas** > **Mostrar herramientas de diagnóstico**. En la ventana **Herramientas de diagnóstico** se muestra información sobre el uso de CPU, la memoria de proceso y los eventos.
 
 ![Instantánea de la ventana Herramientas de diagnóstico](../profiling/media/diagnostictoolswindow.png "Ventana Herramientas de diagnóstico")
 
-- Use el icono **Configuración** en la barra de herramientas para seleccionar si quiere ver el **Uso de memoria** , el **Análisis de UI** , y el **Uso de CPU** .
+- Use el icono **Configuración** en la barra de herramientas para seleccionar si quiere ver el **Uso de memoria** , el **Análisis de UI** , y el **Uso de CPU**.
 
 - Seleccione **Configuración** en la lista desplegable **Configuración** para abrir las **páginas de propiedades de las Herramientas de diagnóstico** con más opciones.
 
-- Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace** .
+- Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace**.
 
 La sesión de diagnóstico termina cuando se detiene la depuración.
 
@@ -73,23 +74,23 @@ Para más información, consulte [Búsqueda y filtrado de la pestaña Eventos de
 
 Para recopilar datos de rendimiento sin depuración, puede ejecutar las herramientas del Generador de perfiles de rendimiento.
 
-1. Con un proyecto abierto en Visual Studio, establezca la configuración de la solución en  **Versión** y seleccione  **Depurador local de Windows**  (o  **Máquina local** ) como destino de la implementación.
+1. Con un proyecto abierto en Visual Studio, establezca la configuración de la solución en **Versión** y seleccione **Depurador local de Windows** (o **Equipo local** ) como el destino de implementación.
 
-1. Seleccione **Depurar** > **Generador de perfiles de rendimiento** , o bien presione **Alt**+**F2** .
+1. Seleccione **Depurar** > **Generador de perfiles de rendimiento** , o bien presione **Alt**+**F2**.
 
 1. En la página de inicio de las herramientas de diagnóstico, elija una o varias herramientas para ejecutar. Solo se muestran las herramientas que se pueden aplicar para el tipo de proyecto, el sistema operativo y el lenguaje de programación. Haga clic en **Mostrar todas las herramientas** para ver también herramientas que están deshabilitadas para esta sesión de diagnóstico.
 
    ![Captura de pantalla de las herramientas de diagnóstico](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
-1. Para iniciar la sesión de diagnóstico, haga clic en **Iniciar** .
+1. Para iniciar la sesión de diagnóstico, haga clic en **Iniciar**.
 
    Mientras se ejecuta la sesión, algunas herramientas muestran gráficos de datos en tiempo real en la página de las herramientas de diagnóstico, así como controles para pausar y reanudar la recopilación de datos.
 
     ![Captura de pantalla de la recopilación de datos en el Generador de perfiles de rendimiento](../profiling/media/diaghubcollectdata.png "Centro de recopilación de datos")
 
-1. Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación** .
+1. Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación**.
 
-   Los datos analizados se muestran en la página **Informe** .
+   Los datos analizados se muestran en la página **Informe**.
 
 Puede guardar los informes y abrirlos desde la lista **Sesiones abiertas recientemente** de la página de inicio de Herramientas de diagnóstico.
 

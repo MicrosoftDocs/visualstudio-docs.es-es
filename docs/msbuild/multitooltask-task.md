@@ -1,5 +1,7 @@
 ---
 title: Tarea MultiToolTask | Microsoft Docs
+description: Acceda a una tabla que describe los parámetros obligatorios y opcionales de la tarea MultiToolTask de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e8b23492f23d39977b4eb26f8ee633b8463f27
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6d76aa3762b254ee35ada1e4e81fe857f509a4e5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565219"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048975"
 ---
 # <a name="multitooltask-task"></a>Tarea MultiToolTask
 

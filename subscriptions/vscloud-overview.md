@@ -2,17 +2,17 @@
 title: Compra de suscripciones a la nube de Visual Studio
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
-ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353452"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92918089"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
@@ -42,7 +42,7 @@ Deberá ser colaborador o tener un rol superior en una suscripción de Azure que
     > [!div class="mx-imgBorder"]
     > ![Seleccionar número de suscripciones](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Seleccione del número de suscripciones que comprar.")
 
-    Si no quiere que se le asignen las suscripciones, desactive **Asignarme esta suscripción** .
+    Si no quiere que se le asignen las suscripciones, desactive **Asignarme esta suscripción**.
 
 5. Confirme y finalice la compra. Si se ha asignado una suscripción a sí mismo, puede visitar el [portal de suscriptores de Visual Studio](https://my.visualstudio.com) para descargar software y empezar a disfrutar de otras ventajas de suscriptor.
 
@@ -72,7 +72,7 @@ Para cancelar suscripciones, solo tiene que establecer el número de suscripcion
 > [!div class="mx-imgBorder"]
 > ![Visualización de la información general de la suscripción](_img/buy-vs-subscriptions/overview-button.png "Seleccione el botón de información general para ver los detalles de la suscripción.")
 
-4. Busque la entrada de las suscripciones que quiera cancelar y seleccione **Cambiar cantidad** .
+4. Busque la entrada de las suscripciones que quiera cancelar y seleccione **Cambiar cantidad**.
 1. Establezca la cantidad en cero (0). Las suscripciones seguirán existiendo hasta la fecha de facturación prevista, pero cuando se alcance esa fecha, no se renovarán.   
 
 > [!div class="mx-imgBorder"]

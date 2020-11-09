@@ -1,5 +1,7 @@
 ---
 title: Tarea ResolveKeySource | Microsoft Docs
+description: Obtenga información sobre los parámetros de la tarea ResolveKeySource de MSBuild, que determina el origen de la clave de nombre seguro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa4e2454a0216e697ed12404091eb0ef16416cb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2ed7bf0e831153d1120789d97b2a27aa77822a6b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632711"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048583"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource (tarea)
 
@@ -31,7 +33,7 @@ Determina el origen de la clave de nombre seguro.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
- En la siguiente tabla se describen los parámetros de la tarea `ResolveKeySource`.
+ En la siguiente tabla se describen los parámetros de la tarea `ResolveKeySource` .
 
 |Parámetro|Description|
 |---------------|-----------------|
@@ -46,7 +48,7 @@ Determina el origen de la clave de nombre seguro.
 |`ShowImportDialogDespitePreviousFailures`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se muestra el cuadro de diálogo de importación a pesar de los errores anteriores.|
 |`SuppressAutoClosePasswordPrompt`|Parámetro `Boolean` opcional.<br /><br /> Obtiene o establece un valor booleano que especifica si el cuadro de diálogo de contraseña no se debe cerrar automáticamente.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

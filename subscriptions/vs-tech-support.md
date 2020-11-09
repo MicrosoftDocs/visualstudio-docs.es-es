@@ -1,18 +1,18 @@
 ---
-title: Ventaja de soporte técnico
+title: Ventaja de soporte técnico en suscripciones de Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 09/02/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 30b47646c26e5bc9fbf9045e2acf59a670aa5e9d
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004551"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918128"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio
 La ventaja de soporte técnico en suscripciones de Visual Studio sirve para resolver problemas break-fix en **entornos de no producción** para productos que siguen en la fase de soporte técnico general del [ciclo de vida de soporte](https://support.microsoft.com/lifecycle/search). Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos, con validez de un año a partir de la activación de la ventaja. La activación de la ventaja debe producirse mientras la suscripción está activa.
@@ -75,7 +75,7 @@ Al enviar un incidente en línea, primero se le pide que inicie sesión. Inicie 
 ### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Uso del identificador de contrato y el identificador de acceso al enviar un incidente (uso inicial)
 
 #### <a name="submitting-an-incident-online"></a>Envío de un incidente en línea
-Al enviar un incidente en línea, primero se le pide que inicie sesión. En la lista desplegable, seleccione el producto para el que necesita ayuda. Por ejemplo, para enviar un incidente de Visual Studio Enterprise 2019, seleccione la familia **Herramientas de desarrollo**, luego seleccione **Visual Studio 2019** como producto y, por último, elija **Visual Studio Enterprise 2019** como versión.
+Al enviar un incidente en línea, primero se le pide que inicie sesión. En la lista desplegable, seleccione el producto para el que necesita ayuda. Por ejemplo, para enviar un incidente de Visual Studio Enterprise 2019, seleccione la familia **Herramientas de desarrollo** , luego seleccione **Visual Studio 2019** como producto y, por último, elija **Visual Studio Enterprise 2019** como versión.
 
 1. Después de elegir el producto para el que necesita soporte técnico, haga clic en **Siguiente**.
 
@@ -87,7 +87,7 @@ Al enviar un incidente en línea, primero se le pide que inicie sesión. En la l
    > [!div class="mx-imgBorder"]
    > ![Paso 2 del envío de incidentes mediante la ventaja de soporte técnico: problema](_img/vs-tech-support/vs-tech-support-step2.png)
 
-3. En la página "Plan de soporte técnico", vaya a **Agregar o comprar un plan de soporte técnico**, expanda mediante la flecha situada a la derecha y haga clic en **Agregar contrato**.
+3. En la página "Plan de soporte técnico", vaya a **Agregar o comprar un plan de soporte técnico** , expanda mediante la flecha situada a la derecha y haga clic en **Agregar contrato**.
 
    > [!div class="mx-imgBorder"]
    > ![Envío de incidentes mediante la ventaja de soporte técnico: agregar contrato](_img/vs-tech-support/vs-tech-support-add-contract.png)
@@ -97,7 +97,7 @@ Al enviar un incidente en línea, primero se le pide que inicie sesión. En la l
    > [!div class="mx-imgBorder"]
    > ![Envío de incidentes mediante la ventaja de soporte técnico: agregar identificador de contrato](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
-5. Una vez agregado el contrato, aparece en **Seleccionar un plan de soporte técnico**, en la parte superior. El plan contiene el término "MSDN" en el título. Elíjalo, desplácese hacia abajo y haga clic en **Siguiente**.
+5. Una vez agregado el contrato, aparece en **Seleccionar un plan de soporte técnico** , en la parte superior. El plan contiene el término "MSDN" en el título. Elíjalo, desplácese hacia abajo y haga clic en **Siguiente**.
 
    > [!div class="mx-imgBorder"]
    > ![Envío de incidentes mediante la ventaja de soporte técnico: elegir plan](_img/vs-tech-support/vs-tech-support-choose-plan.png)

@@ -1,5 +1,7 @@
 ---
 title: Tareas insertadas de MSBuild con RoslynCodeTaskFactory | Microsoft Docs
+description: Obtenga información sobre RoslynCodeTaskFactory de MSBuild, que usa los compiladores de Roslyn multiplataforma para generar ensamblados de la tarea en memoria para su uso como tareas insertadas.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289214"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049130"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tareas insertadas de MSBuild con RoslynCodeTaskFactory
 

@@ -1,5 +1,7 @@
 ---
 title: Touch (Tarea) | Microsoft Docs
+description: Obtenga información sobre los parámetros y el uso de la tarea Touch de MSBuild, que establece las horas de acceso y modificación de los archivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 82dbd31edfa72368a85361032e9875b234585a07
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631658"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047016"
 ---
 # <a name="touch-task"></a>Touch (tarea)
 
@@ -31,7 +33,7 @@ Establece la hora de acceso y de modificación de los archivos.
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea `Touch`.
+ En la siguiente tabla se describen los parámetros de la tarea `Touch` .
 
 |Parámetro|Description|
 |---------------|-----------------|
@@ -41,7 +43,7 @@ Establece la hora de acceso y de modificación de los archivos.
 |`Time`|Parámetro `String` opcional.<br /><br /> Especifica una hora distinta a la hora actual. El formato debe ser aceptable para el método <xref:System.DateTime.Parse%2A>.|
 |`TouchedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene la colección de elementos que se han modificado correctamente.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

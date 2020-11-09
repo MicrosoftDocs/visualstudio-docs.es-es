@@ -1,5 +1,6 @@
 ---
-title: Solución de problemas de carga de plantillas de proyecto y de elemento
+title: Solución de problemas de plantillas de proyecto y plantillas de elemento
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ddb164dbd43d1d2276fce66641ba6e647b49143e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591390"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045715"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedimiento Solucionar problemas de plantillas
 
@@ -42,10 +43,10 @@ Si el archivo *vstemplate* de una plantilla no cumple el esquema de plantilla de
 
 1. Seleccione el archivo *vstemplate* para la plantilla y seleccione **Abrir**.
 
-1. Compruebe que el XML del archivo *vstemplate* cumple el esquema de plantilla. Para más información sobre el esquema *vstemplate*, vea [Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas).
+1. Compruebe que el XML del archivo *vstemplate* cumple el esquema de plantilla. Para más información sobre el esquema *vstemplate* , vea [Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas).
 
     > [!NOTE]
-    > Para obtener compatibilidad con IntelliSense mientras se crea el archivo *vstemplate*, agregue un atributo `xmlns` al elemento `VSTemplate` y asígnele un valor de `http://schemas.microsoft.com/developer/vstemplate/2005`.
+    > Para obtener compatibilidad con IntelliSense mientras se crea el archivo *vstemplate* , agregue un atributo `xmlns` al elemento `VSTemplate` y asígnele un valor de `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
 1. Guarde y cierre el archivo *vstemplate*.
 

@@ -1,5 +1,7 @@
 ---
 title: SGen (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea SGen para crear un ensamblado de serialización XML para los tipos, encapsulando la herramienta Generador de serializador XML, Sgen.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf18c4477a164ec2e25a5ed4b2105f6fdad9130
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: de2437306dba50a1f93b0b94d86af6351b17c0b6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167441"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048353"
 ---
 # <a name="sgen-task"></a>SGen (tarea)
 
-Crea un ensamblado de serialización XML para los tipos del ensamblado especificado. Esta tarea ajusta la herramienta Generador de serializador XML (*Sgen.exe*). Para más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Crea un ensamblado de serialización XML para los tipos del ensamblado especificado. Esta tarea ajusta la herramienta Generador de serializador XML ( *Sgen.exe* ). Para más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,7 +49,7 @@ Crea un ensamblado de serialización XML para los tipos del ensamblado especific
 | `SerializationAssemblyName` | Parámetro `String` opcional.<br /><br /> Especifica el nombre del ensamblado de serialización generado. |
 | `ShouldGenerateSerializer` | Parámetro `Boolean` requerido.<br /><br /> Si es `true`, la tarea SGen debe generar un ensamblado de serialización. |
 | `Timeout` | Parámetro `Int32` opcional.<br /><br /> Especifica el tiempo en milisegundos después del cual se termina la tarea ejecutable. El valor predeterminado es `Int.MaxValue`, que indica que no hay período de tiempo de espera. |
-| `ToolPath` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación desde donde la tarea cargará el archivo ejecutable subyacente (*sgen.exe*). Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión de la plataforma que está ejecutando MSBuild. |
+| `ToolPath` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación desde donde la tarea cargará el archivo ejecutable subyacente ( *sgen.exe* ). Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión de la plataforma que está ejecutando MSBuild. |
 | `Types` | Parámetro `String[]` opcional.<br /><br /> Obtiene o establece una lista de tipos específicos para los que generar código de serialización. SGen generará el código de serialización solo para esos tipos. |
 | `UseProxyTypes` | Parámetro `Boolean` requerido.<br /><br /> Si es `true`, la tarea SGen genera código de serialización únicamente para los tipos de proxy de servicios web XML. |
 

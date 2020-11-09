@@ -1,5 +1,7 @@
 ---
 title: Elemento Property (MSBuild) | Microsoft Docs
+description: Obtenga información sobre el elemento Property de MSBuild, que contiene un nombre de propiedad definido por el usuario y un valor que se debe especificar como elemento secundario de un elemento PropertyGroup.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632958"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048835"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 

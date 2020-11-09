@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588595"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045591"
 ---
 # <a name="encodings-and-line-endings"></a>Codificaciones y finales de línea
 
@@ -49,9 +49,14 @@ Puede usar el cuadro de diálogo **Archivo** > **Opciones avanzadas para guardar
 ![Cuadro de diálogo Opciones avanzadas para guardar](media/line_endings.png)
 
 > [!NOTE]
-> Si no ve el cuadro de diálogo **Opciones avanzadas para guardar** en el menú **Archivo**, puede agregarlo. Elija **Herramientas**, **Personalizar** y, después, elija la pestaña **Comandos**. En la lista desplegable **Barra de menús**, elija **Archivo** y haga clic en el botón **Agregar comando**. En el cuadro de diálogo **Agregar comando**, en **Categorías**, elija **Archivo** y, en la lista **Comandos**, seleccione **Opciones avanzadas para guardar**. Seleccione **Aceptar** y después elija el botón **Bajar** para mover el comando a cualquier lugar del menú. Seleccione **Cerrar** para cerrar el cuadro de diálogo **Personalizar**. Para obtener más información, vea [Personalizar un menú o una barra de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Si no ve el cuadro de diálogo **Opciones avanzadas para guardar** en el menú **Archivo** , puede agregarlo. 
+> 1. Elija **Herramientas** , **Personalizar**. 
+> 1. Elija la pestaña **Comandos** , seleccione el botón de radio **Barra de menús** y, en la lista desplegable correspondiente, elija **Archivo**. Elija el botón **Agregar comando**. 
+> 1. En el cuadro de diálogo **Agregar comando** , en **Categorías** , elija **Archivo** y, en la lista **Comandos** , seleccione **Opciones avanzadas para guardar**. Elija el botón **Aceptar**.
+> 1. Use los botones **Subir** y **Bajar** para mover el comando a cualquier lugar del menú. Seleccione **Cerrar** para cerrar el cuadro de diálogo **Personalizar**. 
+> Para obtener más información, vea [Personalizar un menú o una barra de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Para acceder al cuadro de diálogo **Opciones avanzadas para guardar**, también puede elegir **Archivo** > **Guardar \<file\> como** . En el cuadro de diálogo **Guardar archivo como**, seleccione el triángulo de lista desplegable junto al botón **Guardar** y elija **Guardar con codificación**.
+> Para acceder al cuadro de diálogo **Opciones avanzadas para guardar** , también puede elegir **Archivo** > **Guardar \<file\> como** . En el cuadro de diálogo **Guardar archivo como** , seleccione el triángulo de lista desplegable junto al botón **Guardar** y luego elija **Guardar con codificación**.
 
 ## <a name="see-also"></a>Vea también
 

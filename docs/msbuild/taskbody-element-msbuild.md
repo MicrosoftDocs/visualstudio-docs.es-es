@@ -1,5 +1,7 @@
 ---
 title: Elemento Task de UsingTask (MSBuild) | Microsoft Docs
+description: Obtenga información sobre el elemento Task de UsingTask de MSBuild, que contiene los datos que se pasan a un elemento TaskFactory de UsingTask.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263193"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047889"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>Elemento Task de UsingTask (MSBuild)
 
 Contiene los datos que se pasen a `UsingTask` `TaskFactory`. Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<Task>
+ \<Project> \<UsingTask>
  \<Task>
 
 ## <a name="syntax"></a>Sintaxis
@@ -50,7 +52,7 @@ Contiene los datos que se pasen a `UsingTask` `TaskFactory`. Para más informaci
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|Datos|El texto entre las etiquetas `Task` se envía textual a `TaskFactory`.|
+|data|El texto entre las etiquetas `Task` se envía textual a `TaskFactory`.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 

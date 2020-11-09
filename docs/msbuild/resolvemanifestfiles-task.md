@@ -1,5 +1,7 @@
 ---
 title: ResolveManifestFiles (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea ResolveManifestFiles para resolver elementos del proceso de compilación en archivos para la generación de manifiestos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2628f06ac4eafc7d57123460771793005597b039
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca5b74b32faba4937a821503af3665d1ec1d72c9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632698"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048552"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles (tarea)
 
@@ -29,7 +31,7 @@ Resuelve los siguientes elementos en el proceso de compilación de los archivos 
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea `ResolveManifestFiles`.
+ En la siguiente tabla se describen los parámetros de la tarea `ResolveManifestFiles` .
 
 |Parámetro|Description|
 |---------------|-----------------|
@@ -48,7 +50,7 @@ Resuelve los siguientes elementos en el proceso de compilación de los archivos 
 |`TargetCulture`|Parámetro `String` opcional.<br /><br /> Especifica la referencia cultural de destino para los ensamblados satélite.|
 |`TargetFrameworkVersion`|Parámetro `String` opcional.<br /><br /> Especifica la versión de .NET Framework de destino.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Además de tener los parámetros que se enumeran en la tabla, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

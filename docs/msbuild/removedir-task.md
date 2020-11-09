@@ -1,5 +1,7 @@
 ---
 title: RemoveDir (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea RemoveDir para quitar el directorio especificado y todos sus archivos y subdirectorios.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 925e583582acad2492e9dbe9f4470924ac41d379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632802"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048745"
 ---
 # <a name="removedir-task"></a>RemoveDir (tarea)
 
@@ -31,14 +33,14 @@ Quita los directorios especificados y todos sus archivos y subdirectorios.
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea `RemoveDir`.
+ En la siguiente tabla se describen los parámetros de la tarea `RemoveDir` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`Directories`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los directorios que se van a eliminar.|
 |`RemovedDirectories`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los directorios que se han eliminado correctamente.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

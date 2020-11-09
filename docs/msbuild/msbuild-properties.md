@@ -1,5 +1,7 @@
 ---
 title: Propiedades de MSBuild | Microsoft Docs
+description: Obtenga información sobre cómo los pares de propiedades nombre-valor de MSBuild pueden pasar valores a tareas, evaluar condiciones y almacenar valores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633296"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046132"
 ---
 # <a name="msbuild-properties"></a>propiedades de MSBuild
 
@@ -64,7 +66,7 @@ Las propiedades son pares nombre-valor que se pueden utilizar para configurar co
 
 ## <a name="registry-properties"></a>Propiedades del Registro
 
- Para leer los valores del Registro del sistema, use la sintaxis siguiente, donde `Hive` es el subárbol del Registro (por ejemplo, **HKEY_LOCAL_MACHINE**), `MyKey` es el nombre de clave, `MySubKey` es el nombre de subclave y `Value` es el valor de la subclave.
+ Para leer los valores del Registro del sistema, use la sintaxis siguiente, donde `Hive` es el subárbol del Registro (por ejemplo, **HKEY_LOCAL_MACHINE** ), `MyKey` es el nombre de clave, `MySubKey` es el nombre de subclave y `Value` es el valor de la subclave.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -88,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Propiedades globales
 
- MSBuild permite establecer propiedades en la línea de comandos mediante el modificador **-property** (o **-p**). Los valores de estas propiedades globales reemplazan los valores de propiedad establecidos en el archivo del proyecto. Esto incluye las propiedades de entorno pero no las propiedades reservadas ya que estas no se pueden cambiar.
+ MSBuild permite establecer propiedades en la línea de comandos mediante el modificador **-property** (o **-p** ). Los valores de estas propiedades globales reemplazan los valores de propiedad establecidos en el archivo del proyecto. Esto incluye las propiedades de entorno pero no las propiedades reservadas ya que estas no se pueden cambiar.
 
  En el siguiente ejemplo, se establece la propiedad global `Configuration` en `DEBUG`.
 

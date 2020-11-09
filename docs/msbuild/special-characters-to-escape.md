@@ -1,5 +1,7 @@
 ---
 title: Caracteres especiales de escape | Microsoft Docs
+description: Obtenga información sobre los caracteres especiales que se deben escapar únicamente si tienen un significado especial en el contexto en que se utilicen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184047"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048275"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiales de escape
 

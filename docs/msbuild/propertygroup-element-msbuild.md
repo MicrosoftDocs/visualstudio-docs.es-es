@@ -1,5 +1,7 @@
 ---
 title: Elemento PropertyGroup (MSBuild) | Microsoft Docs
+description: Obtenga información sobre el elemento PropertyGroup de MSBuild, que contiene un conjunto de elementos de propiedad definidos por el usuario.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632932"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048809"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 
@@ -54,7 +56,7 @@ Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Property](../msbuild/property-element-msbuild.md)|Elemento opcional.<br /><br /> Un nombre de propiedad definido por el usuario, que contiene el valor de propiedad. Puede haber cero o más elementos *Property* en un elemento `PropertyGroup`.|
+|[Propiedad](../msbuild/property-element-msbuild.md)|Elemento opcional.<br /><br /> Un nombre de propiedad definido por el usuario, que contiene el valor de propiedad. Puede haber cero o más elementos *Property* en un elemento `PropertyGroup`.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 

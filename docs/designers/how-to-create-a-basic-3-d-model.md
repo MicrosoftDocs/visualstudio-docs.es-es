@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear un modelo en 3D básico'
+description: Obtenga información sobre cómo usar el Editor de modelos para crear un modelo 3D básico, incluida la adición de objetos a una escena, la traslación de selecciones y otras actividades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd0b2a092e47eab053d4150fd2139fb0dbdf6ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 924b990e1626842778c0b3577ddb25a53a4eb910
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769269"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134608"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Cómo: Crear un modelo en 3D básico
 
@@ -23,7 +25,7 @@ En este artículo se muestra cómo usar el Editor de modelos para crear un model
 
 - Selección de caras y bordes
 
-- Trasladar selecciones
+- Traducir selecciones
 
 - Uso de las herramientas **Subdividir cara** y **Extruir cara**
 
@@ -42,7 +44,7 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 1. Cree un modelo 3D con el que va a trabajar. Para obtener información sobre cómo agregar un modelo al proyecto, vea la sección Introducción de [Editor de modelos](../designers/model-editor.md).
 
-2. Agregue un cubo a la escena. En la ventana **Herramientas**, en **Formas**, seleccione **Cubo** y después muévalo a la superficie de diseño.
+2. Agregue un cubo a la escena. En la ventana **Herramientas** , en **Formas** , seleccione **Cubo** y después muévalo a la superficie de diseño.
 
 3. Cambie a selección de cara. En la barra de herramientas del Editor de modelos, elija **Seleccionar cara**.
 
@@ -50,7 +52,7 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
     ![La parte superior del cubo se ha subdividido](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5. Extruya dos lados adyacentes del cubo, por ejemplo, la parte frontal y derecha del cubo. En el modo de selección de cara, elija el cubo una vez para activarlo para la selección y, después, elija un lado del cubo. Mantenga presionada la tecla **Ctrl**, elija otro lado del cubo que sea adyacente al primero que seleccionó y, después, en la barra de herramientas del Editor de modelos, haga clic en **Extruir cara**.
+5. Extruya dos lados adyacentes del cubo, por ejemplo, la parte frontal y derecha del cubo. En el modo de selección de cara, elija el cubo una vez para activarlo para la selección y, después, elija un lado del cubo. Mantenga presionada la tecla **Ctrl** , elija otro lado del cubo que sea adyacente al primero que seleccionó y, después, en la barra de herramientas del Editor de modelos, haga clic en **Extruir cara**.
 
     ![Los lados del cubo se han extruido.](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -70,10 +72,10 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
    ![El modelo completado de la casa simplificada](../designers/media/gfx_model_demo_house_final.png)
 
-   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para obtener más información, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para obtener información, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo: modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)
+- [Procedimiento: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)
 - [Editor de modelos](../designers/model-editor.md)
 - [Diseñador de sombras](../designers/shader-designer.md)

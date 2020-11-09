@@ -1,5 +1,7 @@
 ---
 title: ResourcesGenerator (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea ResourcesGenerator para insertar uno o varios recursos en un archivo .resources.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,23 +19,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 288d83cd16b9faebc9c6826a08da7c11811663d5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632516"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048477"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator (Tarea)
 
-La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o varios recursos ( *.jpg*, *.ico*, *.bmp*, XAML en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
+La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o varios recursos ( *.jpg* , *.ico* , *.bmp* , XAML en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
 |Parámetro|Descripción|
 |---------------|-----------------|
 |`OutputPath`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso del directorio de salida. Si la ruta de acceso no es una ruta de acceso absoluta, se trata como si fuese una ruta de acceso relativa al directorio raíz del proyecto.|
-|`OutputResourcesFile`|Parámetro de salida obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la ruta de acceso y el nombre del archivo *.resources* generado. Si la ruta de acceso no es una ruta absoluta, el archivo *.resources* se genera respecto al directorio raíz del proyecto.|
+|`OutputResourcesFile`|Parámetro de salida obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica la ruta de acceso y el nombre del archivo *.resources* generado. Si la ruta de acceso no es una ruta absoluta, el archivo *.resources* se genera respecto al directorio raíz del proyecto.|
 |`ResourcesFiles`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica uno o más recursos que se van a insertar en el archivo *.resources* generado.|
 
 ## <a name="example"></a>Ejemplo

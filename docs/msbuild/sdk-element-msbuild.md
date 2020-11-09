@@ -1,5 +1,7 @@
 ---
 title: Elemento Sdk (MSBuild) | Microsoft Docs
+description: Obtenga información sobre la sintaxis, los atributos y los elementos del elemento Sdk de MSBuild, que hace referencia a un SDK de proyecto de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632477"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048361"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
 
@@ -58,8 +60,8 @@ Hace referencia a un SDK de un proyecto de MSBuild.
 | - | - |
 | [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo: Hacer referencia a un SDK de un proyecto de MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Procedimiento: Hacer referencia a un SDK de un proyecto de MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

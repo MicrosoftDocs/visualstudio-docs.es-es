@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear una textura básica'
+description: Aprenda a usar el Editor de imágenes para crear una textura básica, incluida la configuración del tamaño de la textura, el establecimiento de las propiedades de la herramienta y otras actividades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b356d8596581b1c289d9b9aa13a3d5b362e39e58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb4a0a66855351e9edbb1b06dbf2aee452cd150
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769101"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134150"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Cómo: Crear una textura básica
 
@@ -43,28 +45,28 @@ Antes de empezar, asegúrese de que se muestra la ventana **Propiedades**. Se us
 
 1. Cree una textura con la que va a trabajar. Para información sobre cómo agregar una textura al proyecto, consulte [Editor de imágenes](../designers/image-editor.md#get-started).
 
-2. Establezca el tamaño de imagen en 512 x 512 píxeles. En la ventana **Propiedades**, establezca los valores de las propiedades **Ancho** y **Alto** en `512`.
+2. Establezca el tamaño de imagen en 512 x 512 píxeles. En la ventana **Propiedades** , establezca los valores de las propiedades **Ancho** y **Alto** en `512`.
 
 3. En la barra de herramientas del Editor de imágenes, elija la herramienta **Relleno**. La ventana **Propiedades** muestra ahora las propiedades de la herramienta **Relleno** junto con las propiedades de la imagen.
 
-4. Establezca el color de primer plano en negro totalmente transparente. En la ventana **Propiedades**, en el grupo de propiedades **Colores**, seleccione **Primer plano**. Establezca los valores de las propiedades **R**, **G**, **B** y **A** junto al selector de colores en `0`.
+4. Establezca el color de primer plano en negro totalmente transparente. En la ventana **Propiedades** , en el grupo de propiedades **Colores** , seleccione **Primer plano**. Establezca los valores de las propiedades **R** , **G** , **B** y **A** junto al selector de colores en `0`.
 
-5. En la barra de herramientas del Editor de imágenes, seleccione la herramienta **Relleno** y, después, mantenga presionada la tecla **Mayús** y elija cualquier punto de la imagen. Al usar la tecla **Mayús**, el valor alfa del color de relleno reemplaza el color de la imagen. De lo contrario, se usa el valor alfa para mezclar el color de relleno junto con el color de la imagen.
+5. En la barra de herramientas del Editor de imágenes, seleccione la herramienta **Relleno** y, después, mantenga presionada la tecla **Mayús** y elija cualquier punto de la imagen. Al usar la tecla **Mayús** , el valor alfa del color de relleno reemplaza el color de la imagen. De lo contrario, se usa el valor alfa para mezclar el color de relleno junto con el color de la imagen.
 
     > [!IMPORTANT]
     > Este paso, junto con la selección de color en el paso anterior, garantiza que la imagen base está preparada para la textura de destino de "diana" que se va a dibujar. Cuando la imagen se rellena con negro transparente, y dado que el borde del destino es negro, no habrá ningún artefacto de suavizado alrededor del destino.
 
 6. En la barra de herramientas del Editor de imágenes, elija la herramienta **Elipse**.
 
-7. Establezca el color de primer plano en negro totalmente opaco. Establezca los valores de las propiedades **R**, **G** y **B** en `0` y el valor de la propiedad **A** en `255`.
+7. Establezca el color de primer plano en negro totalmente opaco. Establezca los valores de las propiedades **R** , **G** y **B** en `0` y el valor de la propiedad **A** en `255`.
 
-8. Establezca el color de fondo en blanco totalmente opaco. En la ventana **Propiedades**, en el grupo de propiedades **Colores**, seleccione **Fondo**. Establezca los valores de las propiedades **R**, **G**, **B** y **A** en `255`.
+8. Establezca el color de fondo en blanco totalmente opaco. En la ventana **Propiedades** , en el grupo de propiedades **Colores** , seleccione **Fondo**. Establezca los valores de las propiedades **R** , **G** , **B** y **A** en `255`.
 
-9. Establezca el ancho del contorno de la elipse. En la ventana **Propiedades**, en el grupo de propiedades **Apariencia**, establezca el valor de la propiedad **Ancho** en `8`.
+9. Establezca el ancho del contorno de la elipse. En la ventana **Propiedades** , en el grupo de propiedades **Apariencia** , establezca el valor de la propiedad **Ancho** en `8`.
 
-10. Asegúrese de que esté habilitado el suavizado de contorno. En la ventana **Propiedades**, en el grupo de propiedades **Apariencia**, asegúrese de que esté habilitada la propiedad **Suavizado de contorno**.
+10. Asegúrese de que esté habilitado el suavizado de contorno. En la ventana **Propiedades** , en el grupo de propiedades **Apariencia** , asegúrese de que esté habilitada la propiedad **Suavizado de contorno**.
 
-11. Con la herramienta **Elipse**, dibuje un círculo desde la coordenada de píxel `(3, 3)` a la coordenada de píxel `(508, 508)`. Para dibujar el círculo más fácilmente, puede presionar y mantener presionada la tecla **Mayús** mientras dibuja.
+11. Con la herramienta **Elipse** , dibuje un círculo desde la coordenada de píxel `(3, 3)` a la coordenada de píxel `(508, 508)`. Para dibujar el círculo más fácilmente, puede presionar y mantener presionada la tecla **Mayús** mientras dibuja.
 
     > [!NOTE]
     > Las coordenadas de píxel de la ubicación actual del puntero se muestran en la barra de estado de Visual Studio.
@@ -73,7 +75,7 @@ Antes de empezar, asegúrese de que se muestra la ventana **Propiedades**. Se us
 
 13. Dibuje otro círculo desde la coordenada de píxel `(64, 64)` a la coordenada de píxel `(448, 448)`.
 
-14. Cambie el color de fondo a blanco totalmente opaco. Establezca **R**, **G**, **B** y **A** en `255`.
+14. Cambie el color de fondo a blanco totalmente opaco. Establezca **R** , **G** , **B** y **A** en `255`.
 
 15. Dibuje otro círculo desde la coordenada de píxel `(128, 128)` a la coordenada de píxel `(384, 384)`.
 
@@ -87,6 +89,6 @@ La textura de destino de "diana" está completa. Aquí está la imagen final, mo
 
 Como paso siguiente, puede generar niveles de MIP para esta textura. Para obtener información, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Editor de imágenes](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)

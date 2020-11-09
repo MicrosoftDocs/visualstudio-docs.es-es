@@ -1,5 +1,6 @@
 ---
-title: Refactorización del código para convertir un bucle for en una instrucción foreach
+title: Refactorización para convertir un bucle for en una instrucción foreach
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47aa5a328f158d890908bf1ddcb69a838ad1ed66
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 68ed736a1e3a07c7cd3f67ea9c936821cf4ac78c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659386"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045920"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorización para convertir un bucle for en una instrucción foreach y viceversa
 
@@ -83,7 +84,7 @@ Estos son algunos de los motivos por los que le puede convenir convertir una ins
 1. Dado que la refactorización introduce una nueva variable de recuento de iteraciones, en la esquina superior derecha del editor aparecerá el cuadro **Cambiar nombre**. Si quiere elegir otro nombre para la variable, escríbalo y presione **Entrar** o seleccione **Aplicar** en el cuadro **Cambiar nombre**. Si no quiere elegir un nombre nuevo, presione **Esc** o seleccione **Aplicar** para descartar el cuadro **Cambiar nombre**.
 
 > [!NOTE]
-> En C#, el código generado por estas refactorizaciones usa un tipo explícito o [var](/dotnet/csharp/language-reference/keywords/var) como tipo de los elementos de la colección. El tipo en el código generado, explícito o implícito, depende de la configuración de estilo de código que queda dentro del ámbito. Estas opciones de estilo de código concretas se configuran en el nivel de máquina en **Herramientas** > **Opciones** > **Editor de texto** > **C#**  > **Estilo de código** > **General** > **Preferencias de \'var'** o en el nivel de solución en un archivo [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types). Si cambia una configuración de estilo de código en **Opciones**, vuelva a abrir el archivo de código para que los cambios surtan efecto.
+> En C#, el código generado por estas refactorizaciones usa un tipo explícito o [var](/dotnet/csharp/language-reference/keywords/var) como tipo de los elementos de la colección. El tipo en el código generado, explícito o implícito, depende de la configuración de estilo de código que queda dentro del ámbito. Estas opciones de estilo de código concretas se configuran en el nivel de máquina en **Herramientas** > **Opciones** > **Editor de texto** > **C#**  > **Estilo de código** > **General** > **Preferencias de \'var'** o en el nivel de solución en un archivo [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types). Si cambia una configuración de estilo de código en **Opciones** , vuelva a abrir el archivo de código para que los cambios surtan efecto.
 
 ## <a name="see-also"></a>Vea también
 

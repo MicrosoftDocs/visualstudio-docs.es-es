@@ -1,5 +1,7 @@
 ---
 title: Elemento Task de Target (MSBuild) | Microsoft Docs
+description: Obtenga información sobre el elemento Task de Target de MSBuild, que crea y ejecuta una instancia de una tarea de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58ac6b02424da40ba1130d8a1b549886c9efd718
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263180"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047962"
 ---
 # <a name="task-element-of-target-msbuild"></a>Elemento Task de Target (MSBuild)
 
@@ -61,7 +63,7 @@ Crea y ejecuta una instancia de una tarea de MSBuild. El nombre del elemento se 
 
 | Elemento | Descripción |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | Elemento contenedor para tareas de MSBuild. |
+| [Destino](../msbuild/target-element-msbuild.md) | Elemento contenedor para tareas de MSBuild. |
 
 ## <a name="remarks"></a>Comentarios
 

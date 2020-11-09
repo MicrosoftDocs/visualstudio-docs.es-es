@@ -1,5 +1,7 @@
 ---
 title: 'Tutorial: Creación de una tarea insertada | Microsoft Docs'
+description: Recorra el tutorial sobre la creación de una tarea de MSBuild insertada en el archivo de proyecto, sin tener que crear un ensamblado independiente para hospedar la tarea.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289149"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046633"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Tutorial: Creación de una tarea insertada
 
@@ -32,7 +34,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
 
 - Una tarea que tiene dos parámetros de entrada y un parámetro de salida que devuelve un elemento de MSBuild.
 
-Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símbolo del sistema de Visual Studio**, del modo siguiente:
+Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símbolo del sistema de Visual Studio** , del modo siguiente:
 
 1. Cree un archivo del proyecto de MSBuild utilizando Visual Studio.
 
@@ -50,7 +52,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
 
 3. Haga clic en **Aceptar** para crear el archivo del proyecto.
 
-3. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto **InlineTasks** y, a continuación, haga clic en **Descargar el proyecto**.
+3. En el **Explorador de soluciones** , haga clic con el botón derecho en el nodo de proyecto **InlineTasks** y, a continuación, haga clic en **Descargar el proyecto**.
 
 4. Haga clic con el botón derecho de nuevo en el nodo del proyecto y, a continuación, haga clic en **Edit InlineTasks.csproj** (Editar InlineTasks.csproj).
 
@@ -96,7 +98,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
 
 1. Haga clic en **Inicio** y en **Todos los programas** y, a continuación, busque la carpeta **Visual Studio Tools** y haga clic en **Símbolo del sistema de Visual Studio**.
 
-2. En la **ventana del símbolo del sistema**, busque la carpeta que contiene el archivo del proyecto; en este caso, *D:\InlineTasks\InlineTasks\\* .
+2. En la **ventana del símbolo del sistema** , busque la carpeta que contiene el archivo del proyecto; en este caso, *D:\InlineTasks\InlineTasks\\* .
 
 3. Escriba **msbuild** sin modificadores de comando y, a continuación, presione **ENTRAR**. De forma predeterminada, esto compila el archivo *InlineTasks.csproj* y procesa el destino TestBuild predeterminado, que llama a la tarea Hello.
 
@@ -133,7 +135,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
    </Target>
    ```
 
-2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione **ENTRAR**. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea Echo.
+2. En la **ventana del símbolo del sistema** , escriba **msbuild** sin modificadores de comando y, a continuación, presione **ENTRAR**. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea Echo.
 
 3. Examine la salida en la **ventana del símbolo del sistema**. Debe ver esta línea:
 
@@ -170,7 +172,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
    </Target>
    ```
 
-2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione **ENTRAR**. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea Echo.
+2. En la **ventana del símbolo del sistema** , escriba **msbuild** sin modificadores de comando y, a continuación, presione **ENTRAR**. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea Echo.
 
 3. Examine la salida en la **ventana del símbolo del sistema**. Debe ver esta línea:
 
@@ -226,7 +228,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
    </Target>
    ```
 
-2. En la **ventana del símbolo del sistema**, escriba **msbuild** sin modificadores de comando y, a continuación, presione **ENTRAR**. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea RegX.
+2. En la **ventana del símbolo del sistema** , escriba **msbuild** sin modificadores de comando y, a continuación, presione **ENTRAR**. De forma predeterminada, esto procesa el destino TestBuild predeterminado, que llama a la tarea RegX.
 
 3. Examine la salida en la **ventana del símbolo del sistema**. Debe ver las siguientes líneas:
 

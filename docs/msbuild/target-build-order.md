@@ -1,5 +1,7 @@
 ---
 title: Orden de compilación de destinos | Microsoft Docs
+description: Obtenga información sobre cómo especificar el orden en el que se ejecutan los destinos de MSBuild, si la entrada a un destino depende de la salida de otro destino.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585462"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048059"
 ---
 # <a name="target-build-order"></a>Orden de compilación de destinos
 
 Los destinos se deben ordenar si la entrada a un destino depende de la salida de otro destino. Puede usar estos atributos para especificar el orden en el que se ejecutan los destinos:
 
-- `InitialTargets`Operador Este atributo `Project` especifica los destinos que se ejecutarán en primer lugar, incluso si los destinos se especifican en la línea de comandos o en el atributo `DefaultTargets`.
+- `InitialTargets`. Este atributo `Project` especifica los destinos que se ejecutarán en primer lugar, incluso si los destinos se especifican en la línea de comandos o en el atributo `DefaultTargets`.
 
-- `DefaultTargets`Operador Este atributo `Project` especifica qué destinos se ejecutan si un destino no se especifica explícitamente en la línea de comandos.
+- `DefaultTargets`. Este atributo `Project` especifica qué destinos se ejecutan si un destino no se especifica explícitamente en la línea de comandos.
 
-- `DependsOnTargets`Operador Este atributo `Target` especifica los destinos que se deben ejecutar antes de poder ejecutar este destino.
+- `DependsOnTargets`. Este atributo `Target` especifica los destinos que se deben ejecutar antes de poder ejecutar este destino.
 
 - `BeforeTargets` y `AfterTargets`. Estos atributos `Target` especifican que este destino se debe ejecutar antes o después de los destinos especificados (MSBuild 4.0).
 

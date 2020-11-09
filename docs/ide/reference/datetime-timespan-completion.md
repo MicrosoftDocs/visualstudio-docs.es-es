@@ -1,5 +1,7 @@
 ---
-title: Finalización de DateTime y TimeSpan mediante el menú de IntelliSense
+title: Finalización de DateTime y TimeSpan con IntelliSense
+description: Use el menú IntelliSense para finalizar una cadena de formato y un literal de cadena DateTime y TimeSpan.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: reference
 author: mikadumont
@@ -9,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36b6d5440e532653845638f87f7f1d7066af6ba3
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.openlocfilehash: cd77f2b6b491dd49365cea10b22828815c13d8d9
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87471562"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102524"
 ---
-# <a name="datetime-and-timespan-completion-through-intellisense-menu"></a>Finalización de DateTime y TimeSpan mediante el menú de IntelliSense
+# <a name="datetime-and-timespan-completion-by-using-the-intellisense-menu"></a>Finalización de DateTime y TimeSpan con el menú de IntelliSense
 
 Esta refactorización se aplica a lo siguiente:
 
@@ -24,7 +26,7 @@ Esta refactorización se aplica a lo siguiente:
 
 **Qué:** finalización de las cadenas de formato y los literales de cadena DateTime y TimeSpan mediante el menú de IntelliSense.
 
-**Cuándo:** quiere escribir las cadenas de formato y los literales de cadena DateTime y TimeSpan. IntelliSense proporciona una finalización básica y una explicación de cada uno de los caracteres. 
+**Cuándo:** quiere escribir las cadenas de formato y los literales de cadena DateTime y TimeSpan. IntelliSense proporciona una finalización básica y una explicación de cada uno de los caracteres.
 
 **Por qué:** recordar los formatos de fecha y hora es difícil e IntelliSense puede ayudarlo a escribirlos.
 

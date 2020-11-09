@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589336"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325945"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
@@ -22,9 +22,9 @@ En este artículo se explican las opciones y los problemas de generación y comp
 
 - Visual Studio Enterprise
 - Un proyecto de .NET Framework
-
-> [!NOTE]
-> No se admiten los proyectos de .NET Standard.
+::: moniker range=">=vs-2019"
+- La compatibilidad con proyectos de estilo SDK y .NET Core, que se encontraba en versión preliminar en Visual Studio 2019 Update 6, ya está habilitada de forma predeterminada en Update 8. Para obtener más información, vea [Microsoft Fakes para .NET Core y proyectos de tipo SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Generación y compilación de código
 
@@ -32,7 +32,7 @@ En este artículo se explican las opciones y los problemas de generación y comp
 
 La generación de tipos de stub se configura en un archivo XML que tiene la extensión de archivo *.fakes*. El marco de trabajo de Fakes se integra en el proceso de compilación mediante tareas de MSBuild personalizadas y detecta los archivos en tiempo de compilación. El generador de código de Fakes compila los tipos de stub en un ensamblado y agrega la referencia al proyecto.
 
-En el ejemplo siguiente se muestran los tipos de stub definidos en *FileSystem.dll*:
+En el ejemplo siguiente se muestran los tipos de stub definidos en *FileSystem.dll* :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -84,7 +84,7 @@ Las cadenas de filtro usan una gramática simple para definir cómo deben identi
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Procesamiento con stubs de clases concretas y métodos virtuales
 
-De forma predeterminada, se generan tipos de stub para todas las clases no selladas. Es posible restringir los tipos de stub a clases abstractas a través del archivo de configuración *.fakes*:
+De forma predeterminada, se generan tipos de stub para todas las clases no selladas. Es posible restringir los tipos de stub a clases abstractas a través del archivo de configuración *.fakes* :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -102,7 +102,7 @@ De forma predeterminada, se generan tipos de stub para todas las clases no sella
 
 ### <a name="internal-types"></a>Tipos internos
 
-El generador de código de Fakes genera tipos de correcciones de compatibilidad (shim) y tipos de stub para los tipos que son visibles para el ensamblado de Fakes generado. Para que los tipos internos de un ensamblado corregido para compatibilidad sean visibles para Fakes y para el ensamblado de prueba, agregue atributos <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> al código de ensamblado corregido para compatibilidad que da visibilidad al ensamblado de Fakes generado y al ensamblado de prueba. Por ejemplo:
+El generador de código de Fakes genera tipos de correcciones de compatibilidad (shim) y tipos de stub para los tipos que son visibles para el ensamblado de Fakes generado. Para que los tipos internos de un ensamblado corregido para compatibilidad sean visibles para Fakes y para el ensamblado de prueba, agregue atributos <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> al código de ensamblado corregido para compatibilidad que da visibilidad al ensamblado de Fakes generado y al ensamblado de prueba. Este es un ejemplo:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -183,7 +183,7 @@ Para evitar este problema, Fakes debe crear automáticamente nombres de ensambla
 
 Dado un ensamblado MyAssembly y una versión 1.2.3.4, el nombre del ensamblado de Fakes es MyAssembly.1.2.3.4.Fakes.
 
-Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes*:
+Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes* :
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -229,22 +229,22 @@ attribute of the Assembly element in the .fakes:
 
 - Si el nombre del método es una implementación de interfaz explícita, se quitan los puntos.
 
-- Si el método es genérico, se anexa `Of`*n*, donde *n* es el número de argumentos de método genérico.
+- Si el método es genérico, se anexa `Of`*n* , donde *n* es el número de argumentos de método genérico.
 
-  Los **nombres de métodos especiales**, como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente:
+  Los **nombres de métodos especiales** , como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente:
 
 |Si el método es...|Ejemplo|Nombre de método anexado|
 |-|-|-|
 |Un **constructor**|`.ctor`|`Constructor`|
 |Un **constructor** estático|`.cctor`|`StaticConstructor`|
-|Un **descriptor de acceso** con el nombre de método compuesto por dos partes separadas por "_" (por ejemplo, captadores de propiedades)|*kind_name* (caso común, pero no impuesto por ECMA)|*NameKind*, donde ambas partes se pusieron en mayúscula y se intercambiaron|
+|Un **descriptor de acceso** con el nombre de método compuesto por dos partes separadas por "_" (por ejemplo, captadores de propiedades)|*kind_name* (caso común, pero no impuesto por ECMA)|*NameKind* , donde ambas partes se pusieron en mayúscula y se intercambiaron|
 ||Captador de propiedad `Prop`|`PropGet`|
 ||Establecedor de propiedad `Prop`|`PropSet`|
 ||Agregador de evento|`Add`|
 ||Eliminador de evento|`Remove`|
 |Un **operador** compuesto por dos partes|`op_name`|`NameOp`|
 |Por ejemplo: operador +|`op_Add`|`AddOp`|
-|Para un **operador de conversión**, se anexa el tipo de valor devuelto.|`T op_Implicit`|`ImplicitOpT`|
+|Para un **operador de conversión** , se anexa el tipo de valor devuelto.|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
 > - Los **captadores y establecedores de indizadores** se tratan de forma similar a la propiedad. El nombre predeterminado de un indizador es `Item`.
@@ -274,6 +274,6 @@ Las siguientes reglas se aplican de forma recursiva:
 
 - Si un nombre resultante entra en conflicto con algún miembro del tipo declarativo, se usa un esquema de numeración anexando un contador de dos dígitos que empieza en 01.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

@@ -1,5 +1,7 @@
 ---
 title: Actualización de una aplicación existente a MSBuild 15 | Microsoft Docs
+description: Obtenga información sobre cómo asegurarse de que las compilaciones mediante programación de la aplicación coincidan con las compilaciones realizadas dentro de Visual Studio o MSBuild.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184034"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047645"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Actualización de una aplicación existente a MSBuild 15
 
@@ -22,7 +24,7 @@ Para permitir una instalación más rápida, reducida y en paralelo, Visual Stud
 
 ## <a name="use-msbuild-from-visual-studio"></a>Uso de MSBuild desde Visual Studio
 
-Para garantizar que las compilaciones mediante programación de la aplicación coincidan con las realizadas en Visual Studio o *MSBuild.exe*, cargue los ensamblados de MSBuild desde Visual Studio y use los SDK disponibles en Visual Studio. El paquete NuGet Microsoft.Build.Locator simplifica este proceso.
+Para garantizar que las compilaciones mediante programación de la aplicación coincidan con las realizadas en Visual Studio o *MSBuild.exe* , cargue los ensamblados de MSBuild desde Visual Studio y use los SDK disponibles en Visual Studio. El paquete NuGet Microsoft.Build.Locator simplifica este proceso.
 
 ## <a name="use-microsoftbuildlocator"></a>Uso de Microsoft.Build.Locator
 
@@ -69,7 +71,7 @@ Haga referencia al paquete de Microsoft.Build.Locator para asegurarse de que la 
 
 ### <a name="ensure-output-is-clean"></a>Asegurarse de que la salida sea limpia
 
-Compile el proyecto e inspeccione el directorio de salida para asegurarse de que no contiene ningún ensamblado *Microsoft.Build.\*.dll* que no sea *Microsoft.Build.Locator.dll*, agregado en el paso siguiente.
+Compile el proyecto e inspeccione el directorio de salida para asegurarse de que no contiene ningún ensamblado *Microsoft.Build.\*.dll* que no sea *Microsoft.Build.Locator.dll* , agregado en el paso siguiente.
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Adición de una referencia de paquete a Microsoft.Build.Locator
 

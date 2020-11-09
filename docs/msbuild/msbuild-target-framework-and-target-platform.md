@@ -1,5 +1,7 @@
 ---
 title: Versión de .NET Framework de destino y plataforma de destino de MSBuild | Microsoft Docs
+description: Obtenga información sobre cómo crear un proyecto de MSBuild para que se ejecute en una versión de .NET Framework de destino, y una arquitectura de software o plataforma de destino.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
@@ -8,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350841"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049102"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Versión de .NET Framework de destino y plataforma de destino de MSBuild
 
-Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 80x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.
+Un proyecto se puede compilar para su ejecución en una *plataforma de destino* , que es una versión determinada de .NET Framework, y en una *plataforma de destino* , que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 80x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.
 
 > [!IMPORTANT]
 > En este artículo se muestra la forma antigua de especificar una plataforma de destino. Los proyectos de estilo SDK permiten diferentes plataformas de destino, como netstandard. Para más información, consulte [Plataformas de destino](/dotnet/standard/frameworks).

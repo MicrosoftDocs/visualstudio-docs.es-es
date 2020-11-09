@@ -1,5 +1,7 @@
 ---
 title: Funciones de propiedad | Microsoft Docs
+description: Obtenga información sobre las funciones de propiedad, que son llamadas a métodos de .NET Framework que aparecen en las definiciones de propiedad de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183657"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048821"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
@@ -248,9 +250,9 @@ La función de propiedad `GetRegistryValue` de MSBuild devuelve el valor de una 
 En los ejemplos siguientes se muestra cómo usar esta función:
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>GetRegistryValueFromView de MSBuild
@@ -281,7 +283,7 @@ A continuación se muestra un ejemplo.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-obtiene los datos de **SLRuntimeInstallPath** de la clave **ReferenceAssemblies**, y busca primero en la vista del Registro de 64 bits y, después, en la vista del Registro de 32 bits.
+obtiene los datos de **SLRuntimeInstallPath** de la clave **ReferenceAssemblies** , y busca primero en la vista del Registro de 64 bits y, después, en la vista del Registro de 32 bits.
 
 ## <a name="msbuild-makerelative"></a>MakeRelative de MSBuild
 

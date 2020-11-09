@@ -1,5 +1,7 @@
 ---
 title: Tarea VerifyFileHash | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea VerifyFileHash para comprobar que un archivo coincide con el hash de archivo esperado y produce un error si no coincide.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d76c7de1fcf6857cbc32709490e54d5bdf3b8988
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77579527"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046101"
 ---
 # <a name="verifyfilehash-task"></a>Tarea VerifyFileHash
 
@@ -30,9 +32,9 @@ Esta tarea se agregó en la versión 15.8, pero requiere una [solución alternat
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
- En la siguiente tabla se describen los parámetros de la tarea `VerifyFileHash`.
+ En la siguiente tabla se describen los parámetros de la tarea `VerifyFileHash` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`File`|Parámetro `String` requerido.<br /><br />Archivo al que se va a aplicar el algoritmo hash y se va a validar.|
 |`Hash`|Parámetro `String` requerido.<br /><br />Hash esperado del archivo.|

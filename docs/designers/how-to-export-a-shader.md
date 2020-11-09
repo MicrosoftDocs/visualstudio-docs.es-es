@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Exportar un sombreador'
+description: Aprenda a usar el Diseñador de sombras para exportar un sombreador del lenguaje DGSL (Directed Graph Shader Language) para poder usarlo en la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9495e5aac16821927f5f61005cd16bd20e82687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768996"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134307"
 ---
 # <a name="how-to-export-a-shader"></a>Cómo: Exportar un sombreador
 
@@ -23,13 +25,13 @@ En este artículo se muestra cómo usar el **Diseñador de sombras** para export
 
 Después de crear a un sombreador mediante el Diseñador de sombras y antes de poder usarlo en la aplicación, tendrá que exportarlo en un formato compatible con la API de gráficos. Puede exportar un sombreador de maneras diferentes para satisfacer distintas necesidades.
 
-1. En Visual Studio, abra un archivo **Gráfico de sombreador visual (.dgsl)** .
+1. En Visual Studio, abra un archivo **Gráfico de sombreador visual (.dgsl)**.
 
      Si no tiene un archivo **Gráfico de sombreador visual (.dgsl)** para abrir, cree uno como se describe en [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md).
 
-2. En la barra de herramientas del **Diseñador de sombras**, seleccione **Avanzadas** > **Exportar** > **Exportar como**. Se muestra el cuadro de diálogo **Exportar sombreador**.
+2. En la barra de herramientas del **Diseñador de sombras** , seleccione **Avanzadas** > **Exportar** > **Exportar como**. Se muestra el cuadro de diálogo **Exportar sombreador**.
 
-3. En la lista desplegable **Guardar como tipo**, elija el formato que quiere exportar.
+3. En la lista desplegable **Guardar como tipo** , elija el formato que quiere exportar.
 
      Estos son los formatos que puede elegir:
 
@@ -39,9 +41,9 @@ Después de crear a un sombreador mediante el Diseñador de sombras y antes de p
 
      **Encabezado de C++ (\*.h)** Exporta el sombreador como un encabezado de estilo C que define una matriz de bytes que contiene el código de bytes HLSL. Esta opción puede ralentizar la depuración y la revisión del código en función de los problemas del usuario final, dado que es necesario volver a compilar la aplicación para probar la corrección. Pero como esta opción hace que sea difícil, aunque no imposible, modificar el sombreador después de implementarse en una aplicación, presenta la mayor dificultad para un usuario que quiere modificar el sombreador de formas no deseadas.
 
-4. En el cuadro combinado **Nombre de archivo**, especifique un nombre para el sombreador exportado y, después, pulse el botón **Guardar**.
+4. En el cuadro combinado **Nombre de archivo** , especifique un nombre para el sombreador exportado y, después, pulse el botón **Guardar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo: crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)
+- [Procedimiento: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)

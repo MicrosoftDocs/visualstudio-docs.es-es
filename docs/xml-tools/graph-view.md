@@ -1,5 +1,7 @@
 ---
 title: Vista Gráfico del Diseñador de esquemas XML
+description: Obtenga información sobre la vista Gráfico del diseñador de esquemas XML que proporciona una representación gráfica de los nodos de esquema globales y de las relaciones entre ellos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb71196dfbaf371e66131bf1e4b22584d3dbf0c3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ee6abff7accf5e1990792b52f1fdf6a013edd0f9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592872"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045993"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 

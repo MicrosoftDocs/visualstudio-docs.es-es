@@ -1,5 +1,7 @@
 ---
 title: Archivos .Targets de WPF | Microsoft Docs
+description: Obtenga información sobre cómo Windows Presentation Foundation (WPF) extiende MSBuild mediante la incorporación de un conjunto de tareas específicas de WPF en un archivo .targets especial, Microsoft.WinFX.targets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,18 +19,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a81caf88798f1b02c212b6ee5a802e6ea824758
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630956"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047530"
 ---
 # <a name="wpf-targets-files"></a>Archivos .targets de WPF
 
 Windows Presentation Foundation (WPF) extiende MSBuild mediante la incorporación de un conjunto de tareas específicas de WPF que se combinan en un archivo *.targets* especial, *Microsoft.WinFX.targets*. Este archivo combina el conjunto de tareas de MSBuild que se necesitan para compilar un proyecto de MSBuild en WPF.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Archivos .targets de MSBuild](../msbuild/msbuild-dot-targets-files.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

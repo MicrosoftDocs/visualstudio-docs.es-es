@@ -1,5 +1,6 @@
 ---
-title: Personalización de tareas de depuración de compilación con tasks.vs.json y launch.vs.json
+title: Personalización de las tareas de depuración de compilación con archivos JSON
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 795fbb099654c8b947c1c8e2941fad015a574717
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533724"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046226"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
 Visual Studio sabe cómo ejecutar varios lenguajes y bases de datos diferentes, pero no sabe cómo ejecutarlo todo. Si [abrió una carpeta de código](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) en Visual Studio y Visual Studio sabe cómo ejecutar el código, puede ejecutarlo de inmediato sin ninguna configuración adicional.
 
-Si el código base usa herramientas de compilación personalizadas que Visual Studio no reconoce, debe proporcionar algunos detalles de configuración para ejecutar y depurar el código en Visual Studio. Mediante la definición de *tareas de compilación*, le indica a Visual Studio cómo compilar el código. Puede crear una o varias tareas de compilación para especificar todos los elementos que un lenguaje necesita para compilar y ejecutar su código. También puede crear tareas arbitrarias que pueden hacer casi todo lo que desee. Por ejemplo, puede crear una tarea para mostrar el contenido de una carpeta o cambiar el nombre de un archivo.
+Si el código base usa herramientas de compilación personalizadas que Visual Studio no reconoce, debe proporcionar algunos detalles de configuración para ejecutar y depurar el código en Visual Studio. Mediante la definición de *tareas de compilación* , le indica a Visual Studio cómo compilar el código. Puede crear una o varias tareas de compilación para especificar todos los elementos que un lenguaje necesita para compilar y ejecutar su código. También puede crear tareas arbitrarias que pueden hacer casi todo lo que desee. Por ejemplo, puede crear una tarea para mostrar el contenido de una carpeta o cambiar el nombre de un archivo.
 
 Use estos archivos *.json* para personalizar el código base sin proyecto:
 
@@ -117,7 +118,7 @@ Para este tipo de *archivo Make* que contiene destinos de compilación, limpieza
 }
 ```
 
-Después de definir las tareas de compilación en *tasks.vs.json*, se agregan elementos de menú contextual adicionales a los archivos correspondientes en el **Explorador de soluciones**. En este ejemplo, las opciones "compilar", "recompilar" y "limpiar" se agregan al menú contextual de cualquier *archivo Make*.
+Después de definir las tareas de compilación en *tasks.vs.json* , se agregan elementos de menú contextual adicionales a los archivos correspondientes en el **Explorador de soluciones**. En este ejemplo, las opciones "compilar", "recompilar" y "limpiar" se agregan al menú contextual de cualquier *archivo Make*.
 
 ![menú contextual de archivo MAKE con opción de compilar, recompilar y limpiar](media/customize-build-rebuild-clean.png)
 
@@ -153,10 +154,10 @@ En el ejemplo siguiente se muestra un archivo *tasks.vs.json* que define una sol
 - La propiedad `args` especifica los argumentos que se pasarán al comando invocado.
 - La macro `${file}` recupera el archivo seleccionado en el **Explorador de soluciones**.
 
-Después de guardar *tasks.vs.json*, puede hacer clic con el botón derecho en algún archivo *.js* de la carpeta y elegir **Echo filename** (Nombre de archivo de echo). El nombre de archivo se muestra en la ventana **Salida**.
+Después de guardar *tasks.vs.json* , puede hacer clic con el botón derecho en algún archivo *.js* de la carpeta y elegir **Echo filename** (Nombre de archivo de echo). El nombre de archivo se muestra en la ventana **Salida**.
 
 > [!NOTE]
-> Si el código base no contiene un archivo *tasks.vs.json*, puede crear uno si elige **Configurar tareas** con el botón derecho o en el menú contextual de un archivo en el **Explorador de soluciones**.
+> Si el código base no contiene un archivo *tasks.vs.json* , puede crear uno si elige **Configurar tareas** con el botón derecho o en el menú contextual de un archivo en el **Explorador de soluciones**.
 
 En el ejemplo siguiente se define una tarea que muestra los archivos y las subcarpetas del directorio *bin*.
 
@@ -178,7 +179,7 @@ En el ejemplo siguiente se define una tarea que muestra los archivos y las subca
 
 - `${outDir}` es una macro personalizada que se define en primer lugar, antes del bloque `tasks`. Luego se llama en la propiedad `args`.
 
-Esta tarea se aplica a todos los archivos. Cuando abre el menú contextual de algún archivo en el **Explorador de soluciones**, **Enumerar salidas** del nombre de la tarea aparece en la parte inferior del menú. Cuando elige **Enumerar salidas**, el contenido del directorio *bin* aparece en la ventana **Salida** de Visual Studio.
+Esta tarea se aplica a todos los archivos. Cuando abre el menú contextual de algún archivo en el **Explorador de soluciones** , **Enumerar salidas** del nombre de la tarea aparece en la parte inferior del menú. Cuando elige **Enumerar salidas** , el contenido del directorio *bin* aparece en la ventana **Salida** de Visual Studio.
 
 ![Tarea arbitraria en el menú contextual](../ide/media/customize-arbitrary-task-menu.png)
 
@@ -216,22 +217,22 @@ Puede crear tareas para cualquier archivo o carpeta si especifica su nombre en e
 |Macro|Descripción|
 |-|-|
 |`${env.<VARIABLE>}`| Especifica cualquier variable de entorno (por ejemplo, ${env.PATH}, ${env.COMSPEC}, etc.) que esté establecida para el símbolo del sistema para desarrolladores. Para obtener más información, vea [Símbolo del sistema para desarrolladores de Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| La ruta de acceso completa a la carpeta del área de trabajo (por ejemplo, *C:\sources\hello*)|
-|`${file}`| La ruta de acceso completa del archivo o la carpeta seleccionados para la ejecución de esta tarea (por ejemplo, *C:\sources\hello\src\hello.js*)|
-|`${relativeFile}`| La ruta de acceso relativa al archivo o la carpeta (por ejemplo, *src\hello.js*)|
-|`${fileBasename}`| El nombre del archivo sin ruta de acceso ni extensión (por ejemplo, *hello*)|
-|`${fileDirname}`| La ruta de acceso completa al archivo, sin el nombre de archivo (por ejemplo, *C:\sources\hello\src*)|
-|`${fileExtname}`| La extensión del archivo seleccionado (por ejemplo, *.js*)|
+|`${workspaceRoot}`| La ruta de acceso completa a la carpeta del área de trabajo (por ejemplo, *C:\sources\hello* )|
+|`${file}`| La ruta de acceso completa del archivo o la carpeta seleccionados para la ejecución de esta tarea (por ejemplo, *C:\sources\hello\src\hello.js* )|
+|`${relativeFile}`| La ruta de acceso relativa al archivo o la carpeta (por ejemplo, *src\hello.js* )|
+|`${fileBasename}`| El nombre del archivo sin ruta de acceso ni extensión (por ejemplo, *hello* )|
+|`${fileDirname}`| La ruta de acceso completa al archivo, sin el nombre de archivo (por ejemplo, *C:\sources\hello\src* )|
+|`${fileExtname}`| La extensión del archivo seleccionado (por ejemplo, *.js* )|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configuración de la depuración con launch.vs.json
 
 Para configurar proyectos de CMake para la depuración, vea [Configuración de sesiones de depuración de CMake](/cpp/build/configure-cmake-debugging-sessions).
 
-1. Para configurar el código base para realizar la depuración, en el **Explorador de soluciones**, elija el elemento de menú **Configuración de depuración e inicio** con un clic con el botón derecho o con el menú contextual del archivo ejecutable.
+1. Para configurar el código base para realizar la depuración, en el **Explorador de soluciones** , elija el elemento de menú **Configuración de depuración e inicio** con un clic con el botón derecho o con el menú contextual del archivo ejecutable.
 
    ![Menú contextual Configuración de depuración e inicio](media/customize-debug-launch-menu.png)
 
-1. En el cuadro de diálogo **Seleccionar un depurador**, elija una opción y, luego, elija el botón **Seleccionar**.
+1. En el cuadro de diálogo **Seleccionar un depurador** , elija una opción y, luego, elija el botón **Seleccionar**.
 
    ![Cuadro de diálogo Seleccionar un depurador](media/customize-select-a-debugger.png)
 
@@ -251,13 +252,13 @@ Para configurar proyectos de CMake para la depuración, vea [Configuración de s
    }
    ```
 
-1. A continuación, haga clic con el botón derecho en el archivo ejecutable en el **Explorador de soluciones**y elija **Establecer como elemento de inicio**.
+1. A continuación, haga clic con el botón derecho en el archivo ejecutable en el **Explorador de soluciones** y elija **Establecer como elemento de inicio**.
 
    El archivo ejecutable se designa como el elemento de inicio del código base y el título del botón **Iniciar** de la depuración cambia para reflejar el nombre del archivo ejecutable.
 
    ![Botón Iniciar personalizado](media/customize-start-button.png)
 
-   Cuando presiona **F5**, el depurador se inicia y se detiene en cualquier punto de interrupción que se pueda haber establecido. Todas las ventanas familiares del depurador están disponibles y en funcionamiento.
+   Cuando presiona **F5** , el depurador se inicia y se detiene en cualquier punto de interrupción que se pueda haber establecido. Todas las ventanas familiares del depurador están disponibles y en funcionamiento.
 
    > [!IMPORTANT]
    > Para más información sobre las tareas de compilación y depuración personalizadas en proyectos de abrir carpeta de C++, consulte [Compatibilidad de la acción Abrir carpeta con sistemas de compilación de C++ en Visual Studio](/cpp/build/open-folder-projects-cpp).
@@ -299,7 +300,7 @@ Además de los tres archivos *.json* que se describen en este tema, Visual Studi
 
 ### <a name="vscodesettingsjson"></a>.vscode\settings.json
 
-Visual Studio lee la configuración limitada de un archivo denominado *settings.json*, si se encuentra en un directorio llamado *.vscode*. Esta funcionalidad se proporciona para los códigos base que se desarrollaron anteriormente en Visual Studio Code. Actualmente, la única configuración que se lee de *.vscode\settings.json* es `files.exclude`, que filtra los archivos de manera visual en el Explorador de soluciones y desde algunas herramientas de búsqueda.
+Visual Studio lee la configuración limitada de un archivo denominado *settings.json* , si se encuentra en un directorio llamado *.vscode*. Esta funcionalidad se proporciona para los códigos base que se desarrollaron anteriormente en Visual Studio Code. Actualmente, la única configuración que se lee de *.vscode\settings.json* es `files.exclude`, que filtra los archivos de manera visual en el Explorador de soluciones y desde algunas herramientas de búsqueda.
 
 Puede tener cualquier número de archivos *.vscode\settings.json* en el código base. La configuración que se lee de este archivo se aplica al directorio principal de *.vscode* y a todos los subdirectorios.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear un sombreador Lambert básico'
+description: Aprenda a usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación de Lambert clásico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f9e5cf95b3766b6c6ceb93c740870a91cfc6af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1677de15006dcf3bbe2f7a6b925be247518f752
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769198"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134529"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Cómo: Crear un sombreador Lambert básico
 
@@ -29,9 +31,9 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 2. Desconecte el nodo **Color de punto** del nodo **Color final**. Elija el terminal **RGB** del nodo **Color de punto** y, después, elija **Romper vínculos**. Deje el terminal **Alfa** conectado.
 
-3. Agregue un nodo **Lambert** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Lambert** y muévalo a la superficie de diseño. El nodo Lambert calcula la contribución de color difuso total del píxel, en función de parámetros de iluminación ambiente y difusa.
+3. Agregue un nodo **Lambert** al gráfico. En el **Cuadro de herramientas** , en **Utilidad** , seleccione **Lambert** y muévalo a la superficie de diseño. El nodo Lambert calcula la contribución de color difuso total del píxel, en función de parámetros de iluminación ambiente y difusa.
 
-4. Conecte el nodo **Color de punto** al nodo **Lambert**. En modo **Seleccionar**, mueva el terminal **RGB** del nodo **Color de punto** al terminal **Color difuso** del nodo **Lambert**. Esta conexión proporciona al nodo Lambert el color difuso interpolado del píxel.
+4. Conecte el nodo **Color de punto** al nodo **Lambert**. En modo **Seleccionar** , mueva el terminal **RGB** del nodo **Color de punto** al terminal **Color difuso** del nodo **Lambert**. Esta conexión proporciona al nodo Lambert el color difuso interpolado del píxel.
 
 5. Conecte el valor de color calculado al color final. Mueva el terminal **Salida** del nodo **Lambert** al terminal **RGB** del nodo **Color final**.
 
@@ -48,12 +50,12 @@ La siguiente ilustración muestra el sombreador descrito en este documento aplic
 
 ![Iluminación Lambert aplicada a un modelo.](../designers/media/digit-lambert-effect-result.png)
 
-Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Cómo: Crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)
+- [Procedimiento: Crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

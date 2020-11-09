@@ -1,7 +1,8 @@
 ---
 title: Integración de Visual Studio (MSBuild)
 titleSuffix: ''
-ms.custom: seodec18
+description: Obtenga información sobre cómo Visual Studio puede hospedar proyectos en formato MSBuild, incluso si se crearon con herramientas diferentes y tenían procesos de compilación personalizados.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631203"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046687"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 
@@ -39,7 +40,7 @@ Visual Studio hospeda MSBuild para cargar y compilar proyectos administrados. P
 
  *MSBuild.exe* reconoce cualquier extensión de nombre de archivo de proyecto que coincida con el patrón *.\*proj*. Sin embargo, Visual Studio solamente reconoce un subconjunto de estas extensiones de nombre de archivo de proyecto, que determinan el sistema de proyectos específico del lenguaje que cargará el proyecto. Visual Studio no dispone de ningún sistema de proyectos independiente del lenguaje basado en MSBuild.
 
- Por ejemplo, el sistema de proyectos de C# carga archivos *.csproj*, pero Visual Studio no puede cargar ningún archivo *.xxproj*. Un archivo de proyecto para archivos de origen en un lenguaje arbitrario debe utilizar la misma extensión que los archivos de proyecto de Visual Basic o C# que se van a cargar en Visual Studio.
+ Por ejemplo, el sistema de proyectos de C# carga archivos *.csproj* , pero Visual Studio no puede cargar ningún archivo *.xxproj*. Un archivo de proyecto para archivos de origen en un lenguaje arbitrario debe utilizar la misma extensión que los archivos de proyecto de Visual Basic o C# que se van a cargar en Visual Studio.
 
 ## <a name="well-known-target-names"></a>Nombres de destino conocidos
 
@@ -51,7 +52,7 @@ Visual Studio hospeda MSBuild para cargar y compilar proyectos administrados. P
 
 ```xml
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "
-Condition=" '$(Configuration)' == 'Release' " 
+Condition=" '$(Configuration)' == 'Release' " 
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "
 ```
 
@@ -59,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>Acciones de compilación adicionales
 
- Visual Studio permite cambiar el nombre de los tipos de elemento de un archivo de un proyecto con la propiedad **Acción de compilación** de la ventana **Propiedades de archivo**. Los nombres de tipos de elementos **Compile**, **EmbeddedResource**, **Content** y **None** siempre se muestran en este menú, junto con otros nombres de tipos de elementos que ya tenga en su proyecto. Para garantizar que los nombres de los tipos de elemento personalizados siempre estén disponibles en este menú, puede agregarlos a un tipo de elemento denominado `AvailableItemName`. Por ejemplo, al agregar lo siguiente al archivo de proyecto, se agrega el tipo personalizado **JScript** a este menú para todos los proyectos que lo importen:
+ Visual Studio permite cambiar el nombre de los tipos de elemento de un archivo de un proyecto con la propiedad **Acción de compilación** de la ventana **Propiedades de archivo**. Los nombres de tipos de elementos **Compile** , **EmbeddedResource** , **Content** y **None** siempre se muestran en este menú, junto con otros nombres de tipos de elementos que ya tenga en su proyecto. Para garantizar que los nombres de los tipos de elemento personalizados siempre estén disponibles en este menú, puede agregarlos a un tipo de elemento denominado `AvailableItemName`. Por ejemplo, al agregar lo siguiente al archivo de proyecto, se agrega el tipo personalizado **JScript** a este menú para todos los proyectos que lo importen:
 
 ```xml
 <ItemGroup>
@@ -92,7 +93,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="build-solutions"></a>Soluciones de compilación
 
- En Visual Studio, la propia aplicación de Visual Studio controla el archivo de solución y el orden de compilación de los proyectos. Al compilar una solución con *msbuild.exe* en la línea de comandos, MSBuild analiza el archivo de solución y ordena las compilaciones del proyecto. En ambos casos, los proyectos se compilan individualmente en orden de dependencia y no se recorren las referencias entre proyectos. Por el contrario, cuando los proyectos individuales se compilan con *msbuild.exe*, se recorren las referencias entre proyectos.
+ En Visual Studio, la propia aplicación de Visual Studio controla el archivo de solución y el orden de compilación de los proyectos. Al compilar una solución con *msbuild.exe* en la línea de comandos, MSBuild analiza el archivo de solución y ordena las compilaciones del proyecto. En ambos casos, los proyectos se compilan individualmente en orden de dependencia y no se recorren las referencias entre proyectos. Por el contrario, cuando los proyectos individuales se compilan con *msbuild.exe* , se recorren las referencias entre proyectos.
 
  Para compilar en Visual Studio, la propiedad `$(BuildingInsideVisualStudio)` se establece en `true`. Esto se puede utilizar en el proyecto o en archivos *.targets* para que la compilación se comporte de manera diferente.
 
@@ -147,17 +148,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Para descargar y editar un archivo de proyecto en Visual Studio
 
-1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Descargar el proyecto**.
+1. En el **Explorador de soluciones** , abra el menú contextual del proyecto y, a continuación, elija **Descargar el proyecto**.
 
      El proyecto aparecerá marcado como **(no disponible)** .
 
-2. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y luego elija **Editar \<Project File>** .
+2. En el **Explorador de soluciones** , abra el menú contextual del proyecto no disponible y luego elija **Editar \<Project File>** .
 
      El archivo de proyecto se abrirá en el Editor XML de Visual Studio.
 
 3. Edite, guarde y, a continuación, cierre el archivo de proyecto.
 
-4. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y, a continuación, elija **Volver a cargar el proyecto**.
+4. En el **Explorador de soluciones** , abra el menú contextual del proyecto no disponible y, a continuación, elija **Volver a cargar el proyecto**.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense y validación
 
@@ -197,7 +198,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="performance-shortcuts"></a>Métodos abreviados de rendimiento
 
- Si usa el IDE de Visual Studio para iniciar la depuración (con la tecla F5 o la opción **Depurar** > **Iniciar depuración** en la barra de menús), o para compilar el proyecto (por ejemplo, **Compilar** > **Compilar solución**), el proceso de compilación utiliza una comprobación de actualización rápida para mejorar el rendimiento. En algunos casos en los que las compilaciones personalizadas crean archivos que, a su vez, se compilan, la comprobación de actualización rápida no identifica correctamente los archivos modificados. Los proyectos que necesitan otras comprobaciones de actualización más completas pueden desactivar la comprobación rápida estableciendo la variable de entorno `DISABLEFASTUPTODATECHECK=1`. O bien, los proyectos pueden establecerla como una propiedad de MSBuild en el proyecto o en un archivo que el proyecto importe.
+ Si usa el IDE de Visual Studio para iniciar la depuración (con la tecla F5 o la opción **Depurar** > **Iniciar depuración** en la barra de menús), o para compilar el proyecto (por ejemplo, **Compilar** > **Compilar solución** ), el proceso de compilación utiliza una comprobación de actualización rápida para mejorar el rendimiento. En algunos casos en los que las compilaciones personalizadas crean archivos que, a su vez, se compilan, la comprobación de actualización rápida no identifica correctamente los archivos modificados. Los proyectos que necesitan otras comprobaciones de actualización más completas pueden desactivar la comprobación rápida estableciendo la variable de entorno `DISABLEFASTUPTODATECHECK=1`. O bien, los proyectos pueden establecerla como una propiedad de MSBuild en el proyecto o en un archivo que el proyecto importe.
 
  Para las compilaciones periódicas en Visual Studio, no se aplica la comprobación de actualización rápida y el proyecto se compilará como si se invocara la compilación en un símbolo del sistema.
 

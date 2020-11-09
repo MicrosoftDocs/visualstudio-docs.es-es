@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739881"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325957"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Aislar el código en pruebas con Microsoft Fakes
 
@@ -33,16 +33,17 @@ Fakes tiene dos versiones:
 
 - Visual Studio Enterprise
 - Un proyecto de .NET Framework
-- La compatibilidad con proyectos de estilo SDK y .NET Core se encuentra actualmente en versión preliminar. [Más información](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+::: moniker range=">=vs-2019"
+- La compatibilidad con proyectos de estilo SDK y .NET Core, que se encontraba en versión preliminar en Visual Studio 2019 Update 6, ya está habilitada de forma predeterminada en Update 8. Para obtener más información, vea [Microsoft Fakes para .NET Core y proyectos de tipo SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 > [!NOTE]
-> - No se admiten los proyectos de .NET Standard.
 > - La generación de perfiles con Visual Studio no está disponible para las pruebas que usan Microsoft Fakes.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Elegir entre código auxiliar y corrección de compatibilidad (shim)
 Normalmente, un proyecto de Visual Studio se consideraría un componente, porque esas clases se desarrollan y actualizan al mismo tiempo. Puede considerar el uso de código auxiliar y correcciones de compatibilidad (shims) para las llamadas que el proyecto realice a otros proyectos de la solución o a otros ensamblados a los que el proyecto haga referencia.
 
-Como directriz general, utilice código auxiliar para las llamadas dentro de la solución de Visual Studio y correcciones de compatibilidad (shims) para las llamadas a otros ensamblados a los que se hace referencia. El motivo es que, en su propia solución, es recomendable desacoplar los componentes definiendo las interfaces de la manera que el procesamiento con stub requiere. Pero los ensamblados externos, como *System.dll*, no se proporcionan normalmente con definiciones de interfaz independientes, por lo que en su lugar se deben utilizar correcciones de compatibilidad (shims).
+Como directriz general, utilice código auxiliar para las llamadas dentro de la solución de Visual Studio y correcciones de compatibilidad (shims) para las llamadas a otros ensamblados a los que se hace referencia. El motivo es que, en su propia solución, es recomendable desacoplar los componentes definiendo las interfaces de la manera que el procesamiento con stub requiere. Pero los ensamblados externos, como *System.dll* , no se proporcionan normalmente con definiciones de interfaz independientes, por lo que en su lugar se deben utilizar correcciones de compatibilidad (shims).
 
 Otras consideraciones son:
 
@@ -82,11 +83,15 @@ Para obtener una descripción más detallada, vea [Usar stubs para aislar las pa
 
 2. **Agregar un ensamblado de Fakes**
 
-    1. En el **Explorador de soluciones**, expanda la lista de referencia del proyecto de prueba. Si está trabajando en Visual Basic, debe seleccionar **Mostrar todos los archivos** para ver la lista de referencia.
+   1. En el **Explorador de soluciones** : 
+       - Para un proyecto de .NET Framework anterior (que no sea de estilo SDK), expanda el nodo **Referencias** del proyecto de pruebas unitarias.
+       ::: moniker range=">=vs-2019"
+       - Para un proyecto de estilo SDK que tenga como destino .NET Framework o .NET Core, expanda el nodo **Dependencias** para buscar el ensamblado que desea imitar en **Ensamblados** , **Proyectos** o **Paquetes**.
+       ::: moniker-end
+       - Si está trabajando en Visual Basic, seleccione **Mostrar todos los archivos** en la barra de herramientas del **Explorador de soluciones** para ver el nodo **Referencias**.
+   2. Seleccione el ensamblado que contiene las definiciones de clases para las que desea crear las correcciones de compatibilidad (shim). Por ejemplo, si quiere realizar una corrección de compatibilidad para **DateTime** , seleccione **System.dll**.
 
-    2. Seleccione la referencia al ensamblado donde se define la interfaz (por ejemplo IStockFeed). En el menú contextual de esta referencia, seleccione **Agregar ensamblado de Fakes**.
-
-    3. Recompilar la solución.
+   3. En el menú contextual, seleccione **Agregar ensamblado de Fakes**.
 
 3. En las pruebas, cree instancias de código auxiliar y proporcione código para sus métodos:
 
@@ -169,7 +174,7 @@ Para usar correcciones de compatibilidad (shims) no tiene que modificar el códi
 
 1. **Agregar un ensamblado de Fakes**
 
-     En el **Explorador de soluciones**, abra las referencias del proyecto de prueba unitaria y seleccione la referencia al ensamblado que contiene el método que quiera imitar. En este ejemplo, la clase `DateTime` está en *System.dll*.  Para ver las referencias en un proyecto de Visual Basic, seleccione **Mostrar todos los archivos**.
+     En el **Explorador de soluciones** , abra las referencias del proyecto de prueba unitaria y seleccione la referencia al ensamblado que contiene el método que quiera imitar. En este ejemplo, la clase `DateTime` está en *System.dll*.  Para ver las referencias en un proyecto de Visual Basic, seleccione **Mostrar todos los archivos**.
 
      Seleccione **Agregar ensamblado de Fakes**.
 
@@ -244,6 +249,61 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 (No hay ningún ensamblado "System.IO.Fakes" al que hacer referencia. El espacio de nombres lo genera el proceso de creación de correcciones de compatibilidad (shim), pero puede usar "using" o "Import" de la manera habitual).
 
 También puede crear correcciones de compatibilidad (shims) para instancias concretas, para constructores y para propiedades. Para obtener más información, vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+
+## <a name="using-microsoft-fakes-in-the-ci"></a>Uso de Microsoft Fakes en la canalización de CI
+
+### <a name="microsoft-fakes-assembly-generation"></a>Generación de ensamblados de Microsoft Fakes
+Dado que Microsoft Fakes requiere Visual Studio Enterprise, para generar ensamblados de Fakes, hay que compilar el proyecto con una [tarea de compilación de Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops).
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> También se pueden comprobar los ensamblados de Fakes en la canalización de CI y usar una [tarea de MSBuild](../msbuild/msbuild-task.md?view=vs-2019). Al hacerlo, debe asegurarse de que tiene una referencia de ensamblado al ensamblado de Fakes generado en el proyecto de prueba, que es similar al siguiente fragmento de código:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <Reference Include="FakesAssemblies\System.Fakes.dll">
+    </ItemGroup>
+</Project>
+```
+
+Esta referencia debe agregarse de forma manual y específica en proyectos de estilo SDK (.NET Core y .NET Framework), ya que ahora las referencias de ensamblado se tienen que agregar implícitamente al proyecto de prueba. Si sigue este método, debe asegurarse de que el ensamblado de Fakes se actualice cuando cambia el ensamblado primario.
+::: moniker-end
+
+### <a name="running-microsoft-fakes-tests"></a>Ejecución de pruebas de Microsoft Fakes
+Siempre que los ensamblados de Microsoft Fakes estén presentes en el directorio configurado `FakesAssemblies` (el valor predeterminado es `$(ProjectDir)FakesAssemblies`), puede ejecutar las pruebas mediante la [tarea VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops).
+
+::: moniker range=">=vs-2019"
+Para realizar pruebas distribuidas con la [tarea VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) en proyectos de .NET Core que usan Microsoft Fakes, se requiere Visual Studio 2019 Update 9 Preview `20201020-06` y versiones posteriores.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Transición de los proyectos de prueba de .NET Framework que usan Microsoft Fakes a proyectos de .NET Core o .NET Framework de estilo SDK
+Solo necesitará realizar unos pocos cambios en el entorno de .NET Framework configurado para Microsoft Fakes para llevar a cabo la transición a .NET Core. Debe tener en cuenta los siguientes casos:
+- Si usa una plantilla de proyecto personalizada, debe asegurarse de que sea de estilo SDK y de que se compile para una plataforma de destino compatible.
+- Hay algunos tipos que ya se encuentran en diferentes ensamblados de .NET Framework y .NET Core (por ejemplo, `System.DateTime` existe en `System`/`mscorlib`, en .NET Framework, y en `System.Runtime`, en .NET Core); en estos escenarios debe cambiar el ensamblado que se va a imitar.
+- Si tiene una referencia de ensamblado a un ensamblado de Fakes y al proyecto de prueba, es posible que vea una advertencia de compilación que indica que falta una referencia similar a la siguiente:
+  ```
+  (ResolveAssemblyReferences target) ->
+  warning MSB3245: Could not resolve this reference. Could not locate the assembly "AssemblyName.Fakes". Check to make sure the assembly exists on disk.
+  If this reference is required by your code, you may get compilation errors.
+  ```
+  Esta advertencia se produce porque pueden omitirse los cambios necesarios realizados en la generación de ensamblados de Fakes. Para evitarla, se puede quitar la referencia de ensamblado del archivo de proyecto, ya que ahora se agrega implícitamente durante la compilación.
+::: moniker-end
+
+## <a name="microsoft-fakes-support"></a>Compatibilidad de Microsoft Fakes 
+### <a name="microsoft-fakes-in-older-projects-targeting-net-framework-non-sdk-style"></a>Microsoft Fakes en proyectos antiguos que tienen como destino .NET Framework (estilo que no sea de SDK).
+- La generación de ensamblados de Microsoft Fakes es compatible con Visual Studio Enterprise 2015 y versiones posteriores.
+- Las pruebas de Microsoft Fakes se pueden ejecutar con todos los paquetes de NuGet Microsoft.TestPlatform disponibles.
+- La cobertura de código es compatible con los proyectos de prueba que usan Microsoft Fakes en Visual Studio Enterprise 2015 y versiones posteriores.
+
+### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>Microsoft Fakes en proyectos de .NET Core y .NET Framework de estilo SDK
+- La generación de ensamblados de Microsoft Fakes, en versión preliminar en Visual Studio Enterprise 2019 Update 6, ya está habilitada de forma predeterminada en Update 8.
+- Las pruebas de Microsoft Fakes para los proyectos que tienen como destino .NET Framework pueden ejecutarse con todos los paquetes de NuGet Microsoft.TestPlatform disponibles.
+- Las pruebas de Microsoft Fakes para los proyectos que tienen como destino .NET Core pueden ejecutarse con los paquetes de NuGet Microsoft.TestPlatform en las versiones [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) y posteriores.
+- La cobertura de código es compatible con los proyectos de prueba que tienen como destino .NET Framework y que usan Microsoft Fakes en Visual Studio Enterprise 2015 y versiones posteriores.
+- La compatibilidad con la cobertura de código en los proyectos de prueba que tienen como destino .NET Core y que usan Microsoft Fakes está en desarrollo.
+
 
 ## <a name="in-this-section"></a>En esta sección
 [Usar código auxiliar para aislar partes de la aplicación entre sí para las pruebas unitarias](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)

@@ -1,5 +1,7 @@
 ---
 title: ResumeTracking | Microsoft Docs
+description: Obtenga información sobre la sintaxis, los requisitos y el valor devuelto para MSBuild ResumeTracking, que reanuda el seguimiento en el contexto actual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9af7c90342638fb0c154e7de21fa111d560905d0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632503"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048428"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 
@@ -38,8 +40,8 @@ HRESULT WINAPI ResumeTracking();
 
 ## <a name="requirements"></a>Requisitos
 
- **Encabezado**: *FileTracker.h*
+ **Encabezado:** *FileTracker.h*
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [SuspendTracking](../msbuild/suspendtracking.md)

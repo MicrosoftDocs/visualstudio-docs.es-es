@@ -1,5 +1,7 @@
 ---
 title: Uso de varios procesadores para compilar proyectos | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild aprovecha los sistemas que tienen varios procesadores o núcleos mediante la creación de un proceso de compilación independiente para cada procesador disponible.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc62112324f7ad19c47b346ac8c1e3f86570b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631307"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047584"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Uso de varios procesadores para compilar proyectos
 
@@ -36,7 +38,7 @@ MSBuild puede aprovechar las ventajas de los sistemas que tienen varios procesad
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>Archivos de proyecto (.vcxproj) y solución (.sln) de C++
 
- Los archivos de proyecto ( *.vcxproj*) y los archivos de solución ( *.sln*) de C++ se pueden pasar a la [tarea de MSBuild](../msbuild/msbuild-task.md). Para los proyectos de C++, se llama a VCWrapperProject y, a continuación, se crea el proyecto de MSBuild interno. Para las soluciones de C++, se crea un elemento SolutionWrapperProject y, a continuación, se crea el proyecto de MSBuild interno. En ambos casos, el proyecto resultante se trata igual que cualquier otro proyecto de MSBuild.
+ Los archivos de proyecto ( *.vcxproj* ) y los archivos de solución ( *.sln* ) de C++ se pueden pasar a la [tarea de MSBuild](../msbuild/msbuild-task.md). Para los proyectos de C++, se llama a VCWrapperProject y, a continuación, se crea el proyecto de MSBuild interno. Para las soluciones de C++, se crea un elemento SolutionWrapperProject y, a continuación, se crea el proyecto de MSBuild interno. En ambos casos, el proyecto resultante se trata igual que cualquier otro proyecto de MSBuild.
 
 ## <a name="multi-process-execution"></a>Ejecución con varios procesos
 
@@ -44,7 +46,7 @@ MSBuild puede aprovechar las ventajas de los sistemas que tienen varios procesad
 
  Para evitar este problema y habilitar al mismo tiempo las compilaciones para varios procesadores, MSBuild utiliza el "aislamiento de procesos". Mediante el aislamiento de procesos, MSBuild puede crear un máximo de `n` procesos, donde `n` es el número de procesadores disponibles en el sistema. Por ejemplo, si MSBuild compila una solución en un sistema que tiene dos procesadores de impresión, solo se crean dos procesos de compilación. Estos procesos se reutilizan para compilar todos los proyectos de la solución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 - [Tareas](../msbuild/msbuild-tasks.md)

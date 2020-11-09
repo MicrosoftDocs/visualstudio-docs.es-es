@@ -1,5 +1,7 @@
 ---
 title: ResolveNativeReference (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea ResolveNativeReference para resolver las referencias nativas implementando la clase Microsoft.Build.Tasks.ResolveNativeReference.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b76b31e96947914c9a641ed4ceb23c7761eb85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad9f5c85a3a295971a5f80fcb994c382346d9af3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632685"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048544"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference (tarea)
 
@@ -31,9 +33,9 @@ Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Task
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
- En la siguiente tabla se describen los parámetros de la tarea `ResolveNativeReference`.
+ En la siguiente tabla se describen los parámetros de la tarea `ResolveNativeReference` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`AdditionalSearchPaths`|Parámetro <xref:System.String?displayProperty=fullName>`[]` requerido.<br /><br /> Obtiene o establece las rutas de acceso de búsqueda para resolver identidades de ensamblado de las referencias nativas.|
 |`ContainedComComponents`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene o establece los componentes COM del ensamblado nativo.|
@@ -44,7 +46,7 @@ Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Task
 |`ContainingReferenceFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene o establece los archivos de referencia.|
 |`NativeReferences`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Obtiene o establece las referencias de ensamblado nativas Win32.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

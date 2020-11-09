@@ -1,5 +1,7 @@
 ---
 title: Resolución de ensamblados en tiempo de diseño | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild resuelve las referencias a ensamblados en tiempo de diseño mediante el uso de ensamblados de referencia en el paquete de destino.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632568"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048487"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Resolución de ensamblados en tiempo de diseño
 
-Cuando se agrega una referencia a un ensamblado mediante la pestaña **.NET** del cuadro de diálogo **Agregar referencia**, la referencia señala a un ensamblado de referencia intermedio, es decir, un ensamblado que contiene toda la información de firma y de tipos, pero que no contiene código necesariamente. La pestaña **.NET** enumera los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución en .NET Framework. Además, enumera los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución de las carpetas AssemblyFoldersEx que utilizan otros fabricantes.
+Cuando se agrega una referencia a un ensamblado mediante la pestaña **.NET** del cuadro de diálogo **Agregar referencia** , la referencia señala a un ensamblado de referencia intermedio, es decir, un ensamblado que contiene toda la información de firma y de tipos, pero que no contiene código necesariamente. La pestaña **.NET** enumera los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución en .NET Framework. Además, enumera los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución de las carpetas AssemblyFoldersEx que utilizan otros fabricantes.
 
 ## <a name="multi-targeting"></a>Compatibilidad con múltiples versiones
 

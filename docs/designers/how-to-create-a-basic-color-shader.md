@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear un sombreador de color básico'
+description: Aprenda a usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de color plano que establezca el color final en un valor de color RGB constante.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe0fc31f3be758e16042de6133399b2df6b65c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d966a8fdc565eae5254d21dba4ab9dfaa440de94
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769159"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134111"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Cómo: Crear un sombreador de color básico
 
@@ -29,9 +31,9 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 2. Elimine el nodo **Color de punto**. Use la herramienta **Seleccionar** para seleccionar el nodo **Color de punto** y, después, en la barra de menús, elija **Editar** > **Eliminar**.
 
-3. Agregue un nodo **Constante de color** al gráfico. En el **Cuadro de herramientas**, en **Constantes**, seleccione **Constante de color** y muévala a la superficie de diseño.
+3. Agregue un nodo **Constante de color** al gráfico. En el **Cuadro de herramientas** , en **Constantes** , seleccione **Constante de color** y muévala a la superficie de diseño.
 
-4. Especifique un valor de color para el nodo **Constante de color**. Use la herramienta **Seleccionar** para seleccionar el nodo **Constante de color** y, después, en la ventana **Propiedades**, en la propiedad **Salida**, especifique un valor de color. Para el color naranja, especifique un valor de (1,0, 0,5, 0,2, 1,0).
+4. Especifique un valor de color para el nodo **Constante de color**. Use la herramienta **Seleccionar** para seleccionar el nodo **Constante de color** y, después, en la ventana **Propiedades** , en la propiedad **Salida** , especifique un valor de color. Para el color naranja, especifique un valor de (1,0, 0,5, 0,2, 1,0).
 
 5. Conecte la constante de color al color final. Para crear las conexiones, mueva el terminal **RGB** del nodo **Constante de color** al terminal **RGB** del nodo **Color final** y, después, mueva el terminal **Alfa** del nodo **Constante de color** al terminal **Alfa** del nodo **Color final**. Estas conexiones establecen el color final en la constante de color definida en el paso anterior.
 
@@ -44,9 +46,9 @@ La ilustración siguiente muestra el gráfico de sombreador completo y una vista
 
 Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea [Diseñador de sombras](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Procedimiento: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedimiento: Exportar un sombreador](../designers/how-to-export-a-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

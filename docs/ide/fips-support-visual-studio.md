@@ -1,5 +1,7 @@
 ---
-title: Compatibilidad de Visual Studio con el modo de funcionamiento aprobado 140-2 de FIPS
+title: Compatibilidad de Visual Studio con FIPS
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 04/14/2020
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56fe4fa2381502f01a952977fe2d506dc7792231
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84180498"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045521"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Compatibilidad de Visual Studio con el modo de funcionamiento aprobado 140-2 de FIPS
 

@@ -1,5 +1,7 @@
 ---
 title: Procesamiento por lotes de MSBuild | Microsoft Docs
+description: Obtenga información sobre MSBuild divide listas de elementos en distintas categorías, o lotes, según los metadatos de esos elementos y, luego, ejecuta un destino o una tarea una vez con cada lote.
+ms.custom: SEO-VS-2020
 ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289279"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047703"
 ---
 # <a name="msbuild-batching"></a>Procesamiento por lotes de MSBuild
 

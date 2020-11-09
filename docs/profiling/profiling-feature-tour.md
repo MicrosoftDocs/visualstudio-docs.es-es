@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9de05b7e57e4ebc4e7ea76c688a7203774404a
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 849b9d7bd6aca3fa56cb0106bea844ce1fa56b73
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007190"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918245"
 ---
 # <a name="first-look-at-profiling-tools"></a>Un primer vistazo a las herramientas de generación de perfiles
 
@@ -31,7 +31,7 @@ Para ver la compatibilidad de la herramienta de generación de perfiles con los 
 
 ## <a name="measure-performance-while-debugging"></a>Medición del rendimiento durante la depuración
 
-Las herramientas de generación de perfiles a las que puede obtener acceso durante una sesión de depuración están disponibles en la ventana Herramientas de diagnóstico. La ventana Herramientas de diagnóstico aparece automáticamente a menos que la desactive. Para mostrar la ventana, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico** . Con la ventana abierta, puede seleccionar las herramientas para las que se van a recopilar datos.
+Las herramientas de generación de perfiles a las que puede obtener acceso durante una sesión de depuración están disponibles en la ventana Herramientas de diagnóstico. La ventana Herramientas de diagnóstico aparece automáticamente a menos que la desactive. Para mostrar la ventana, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**. Con la ventana abierta, puede seleccionar las herramientas para las que se van a recopilar datos.
 
 ![Ventana Herramientas de diagnóstico](../profiling/media/prof-tour-diagnostic-tools.png "Herramientas de diagnóstico")
 
@@ -51,7 +51,7 @@ Las herramientas disponibles en la ventana Herramientas de diagnóstico o durant
 
 ## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> Medición del rendimiento en compilaciones de versión
 
-Las herramientas del Generador de perfiles de rendimiento están diseñadas para proporcionar análisis de las compilaciones de **versión** . En el Generador de perfiles de rendimiento, puede recopilar información de diagnóstico mientras se ejecuta la aplicación y, después, examinar la información recopilada cuando la aplicación se haya detenido (un análisis final).
+Las herramientas del Generador de perfiles de rendimiento están diseñadas para proporcionar análisis de las compilaciones de **versión**. En el Generador de perfiles de rendimiento, puede recopilar información de diagnóstico mientras se ejecuta la aplicación y, después, examinar la información recopilada cuando la aplicación se haya detenido (un análisis final).
 
 Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento** (o **Alt + F2** ).
 
@@ -62,8 +62,8 @@ Para más información sobre el uso de la herramienta Uso de CPU o Uso de memori
 Las herramientas disponibles en el Generador de perfiles de rendimiento incluyen:
 
 - [Uso de CPU](../profiling/cpu-usage.md)
-- [Uso de memoria para código .NET](../profiling/dotnet-alloc-tool.md)
-- [Uso de memoria](#analyze-memory-usage)
+- [Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)
+- [Uso de memoria](../profiling/memory-usage-without-debugging2.md)
 - [Herramienta asincrónica de .NET](../profiling/analyze-async.md)
 - [Herramienta de base de datos](../profiling/analyze-database.md)
 - [Uso de GPU](../profiling/gpu-usage.md)
@@ -91,7 +91,7 @@ PerfTips muestra los mismos eventos que también se muestran en la vista **Event
 
 La herramienta Uso de CPU es un buen lugar para empezar a analizar el rendimiento de la aplicación. Le proporcionará más información sobre los recursos de CPU que consume la aplicación. Puede usar la [herramienta Uso de CPU integrada en el depurador](../profiling/beginners-guide-to-performance-profiling.md) o la [herramienta Uso de CPU de análisis final](../profiling/cpu-usage.md).
 
-Al usar la herramienta Uso de CPU integrada en el depurador, abra la ventana Herramientas de diagnóstico (si está cerrada, elija **Depurar / Ventanas / Mostrar Herramientas de diagnóstico** ). Durante la depuración, abra la vista **Resumen** y seleccione **Registrar perfil CPU** .
+Al usar la herramienta Uso de CPU integrada en el depurador, abra la ventana Herramientas de diagnóstico (si está cerrada, elija **Depurar / Ventanas / Mostrar Herramientas de diagnóstico** ). Durante la depuración, abra la vista **Resumen** y seleccione **Registrar perfil CPU**.
 
 ![Habilitar el uso de CPU en Herramientas de diagnóstico](../profiling/media/prof-tour-enable-cpu-profiling.png "Habilitar el uso de CPU en Herramientas de diagnóstico")
 
@@ -107,7 +107,12 @@ Si hace doble clic en una función que le interese, verá una vista de "mariposa
 
 ## <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 
-La ventana **Herramientas de diagnóstico** permite evaluar el uso de memoria en la aplicación mediante la herramienta **Uso de memoria** . Por ejemplo, puede buscar el número y el tamaño de los objetos del montón. Puede usar la [herramienta Uso de memoria integrada en el depurador](../profiling/memory-usage.md) o la [herramienta Uso de memoria de análisis final](../profiling/memory-usage-without-debugging2.md) del Generador de perfiles de rendimiento. Otra herramienta de análisis de memoria, la [herramienta Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md), ayuda a identificar los patrones de asignación y las anomalías en el código de .NET.
+La ventana **Herramientas de diagnóstico** permite evaluar el uso de memoria en la aplicación mediante la herramienta **Uso de memoria**. Por ejemplo, puede buscar el número y el tamaño de los objetos del montón. Puede usar la [herramienta Uso de memoria integrada en el depurador](../profiling/memory-usage.md) o la [herramienta Uso de memoria de análisis final](../profiling/memory-usage-without-debugging2.md) del Generador de perfiles de rendimiento.
+
+Los desarrolladores de .NET pueden elegir entre la [herramienta de asignación de objetos .NET](../profiling/dotnet-alloc-tool.md) o la herramienta [Uso de memoria](../profiling/memory-usage.md).
+
+- La **herramienta de asignación de objetos .NET** ayuda a identificar patrones de asignación y anomalías en el código de .NET, además de problemas habituales en la recolección de elementos no utilizados. Esta herramienta solo se ejecuta a modo de análisis post mortem. Puede ejecutar esta herramienta en máquinas locales o remotas.
+- La herramienta **Uso de memoria** es útil para identificar fugas de memoria, que no suelen ser habituales en aplicaciones .NET. Si necesita usar características del depurador mientras comprueba la memoria, como ejecutar paso a paso el código, se recomienda la herramienta [Uso de memoria integrada en el depurador](../profiling/beginners-guide-to-performance-profiling.md).
 
 Para analizar el uso de memoria con la herramienta **Uso de memoria** , se debe tomar al menos una instantánea de memoria. A menudo, la mejor manera de analizar la memoria consiste en tomar dos instantáneas: la primera justo antes de que se produzca un problema que sospecha que existe en la memoria y la segunda después de que se produzca el problema en cuestión. Después, puede ver las diferencias que existen entre las dos instantáneas y constatar qué es lo que ha cambiado exactamente. En la ilustración siguiente se muestra cómo tomar una instantánea con la herramienta integrada en el depurador.
 
@@ -121,7 +126,7 @@ En cambio, si hace clic en el vínculo de la izquierda en la vista **Uso de memo
 
 ## <a name="analyze-resource-consumption-xaml"></a>Análisis del consumo de recursos (XAML)
 
-En las aplicaciones XAML (como las aplicaciones de WPF de escritorio de Windows y las aplicaciones para UWP), puede analizar el consumo de recursos mediante la herramienta Escala de tiempo de la aplicación. Por ejemplo, puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz de usuario (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas. Para usar la herramienta, seleccione **Escala de tiempo de la aplicación** en el Generador de perfiles de rendimiento y, después, elija **Iniciar** . En la aplicación, recorra el escenario en el que sospecha que se produce un problema de consumo de recursos y, después, seleccione **Detener recolección** para generar el informe.
+En las aplicaciones XAML (como las aplicaciones de WPF de escritorio de Windows y las aplicaciones para UWP), puede analizar el consumo de recursos mediante la herramienta Escala de tiempo de la aplicación. Por ejemplo, puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz de usuario (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas. Para usar la herramienta, seleccione **Escala de tiempo de la aplicación** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario en el que sospecha que se produce un problema de consumo de recursos y, después, seleccione **Detener recolección** para generar el informe.
 
 Los valores de framerate bajos en el gráfico **Rendimiento visual** podrían corresponderse con los problemas visuales que ve cuando se ejecuta la aplicación. De forma similar, los números elevados en el gráfico **Uso del subproceso de UI** podrían corresponderse con problemas en la capacidad de respuesta de la interfaz de usuario. En el informe, puede seleccionar un período de tiempo en el que sospecha que se produce un problema de rendimiento y, después, examinar las actividades detalladas del subproceso de interfaz de usuario en la vista Detalles de la escala de tiempo (panel inferior).
 
@@ -161,15 +166,15 @@ La herramienta muestra cada consulta en una vista de lista. Puede ver informaci�
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examinar eventos de accesibilidad y rendimiento de la interfaz de usuario (UWP)
 
-En las aplicaciones de UWP, puede habilitar **Análisis de UI** en la ventana **Herramientas de diagnóstico** . La herramienta busca problemas comunes de rendimiento o de accesibilidad y los muestra en la vista **Eventos** durante la depuración. Las descripciones de los eventos proporcionan información que puede ayudar a resolver problemas.
+En las aplicaciones de UWP, puede habilitar **Análisis de UI** en la ventana **Herramientas de diagnóstico**. La herramienta busca problemas comunes de rendimiento o de accesibilidad y los muestra en la vista **Eventos** durante la depuración. Las descripciones de los eventos proporcionan información que puede ayudar a resolver problemas.
 
 ![Vista de eventos de análisis de la interfaz de usuario en las herramientas de diagnóstico](../profiling/media/prof-tour-ui-analysis.png "Vista de eventos de análisis de la interfaz de usuario en Herramientas de diagnóstico")
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Análisis del uso de la GPU (Direct3D)
 
-En las aplicaciones Direct3D (los componentes Direct3D deben estar en C++), puede examinar la actividad de la GPU y analizar problemas de rendimiento. Para obtener más información, vea [GPU Usage](./gpu-usage.md) (Uso de GPU). Para usar la herramienta, seleccione **Uso de GPU** en el Generador de perfiles de rendimiento y, después, elija **Iniciar** . En la aplicación, recorra el escenario del que le interesa generar un perfil y, después, seleccione **Detener recolección** para generar un informe.
+En las aplicaciones Direct3D (los componentes Direct3D deben estar en C++), puede examinar la actividad de la GPU y analizar problemas de rendimiento. Para obtener más información, vea [GPU Usage](./gpu-usage.md) (Uso de GPU). Para usar la herramienta, seleccione **Uso de GPU** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario del que le interesa generar un perfil y, después, seleccione **Detener recolección** para generar un informe.
 
-Si elige un período de tiempo en los gráficos y selecciona **Ver detalles** , aparece una vista detallada en el panel inferior. En la vista detallada, puede examinar cuántas actividades se producen en cada CPU y GPU. Seleccione los eventos en el panel inferior para que aparezcan elementos emergentes en la escala de tiempo. Por ejemplo, seleccione el evento **Presente** para ver elementos emergentes de llamada **Presente** . (Las líneas de sincronización vertical de color gris claro se pueden usar como referencia para entender si alguna llamada **Presente** se ha perdido la sincronización vertical. Debe haber una llamada **Presente** entre cada dos sincronizaciones verticales para que la aplicación alcance constantemente los 60 FPS).
+Si elige un período de tiempo en los gráficos y selecciona **Ver detalles** , aparece una vista detallada en el panel inferior. En la vista detallada, puede examinar cuántas actividades se producen en cada CPU y GPU. Seleccione los eventos en el panel inferior para que aparezcan elementos emergentes en la escala de tiempo. Por ejemplo, seleccione el evento **Presente** para ver elementos emergentes de llamada **Presente**. (Las líneas de sincronización vertical de color gris claro se pueden usar como referencia para entender si alguna llamada **Presente** ha perdido la sincronización vertical. Debe haber una llamada **Presente** entre cada dos sincronizaciones verticales para que la aplicación alcance constantemente los 60 fps).
 
 ![Herramienta de generación de perfiles de uso de GPU](../profiling/media/prof-tour-gpu-usage.png "Diagrama de uso de GPU")
 
@@ -192,7 +197,7 @@ Para diagnosticar la capacidad de respuesta de la interfaz de usuario, el tiempo
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Análisis del uso de la red (UWP)
 
-En las aplicaciones para UWP, puede analizar las operaciones de red realizadas mediante la API `Windows.Web.Http`. Esta herramienta puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga. Para usar la herramienta, seleccione **Red** en el Generador de perfiles de rendimiento y, después, elija **Iniciar** . En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
+En las aplicaciones para UWP, puede analizar las operaciones de red realizadas mediante la API `Windows.Web.Http`. Esta herramienta puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga. Para usar la herramienta, seleccione **Red** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
 
 ![Herramienta de generación de perfiles de uso de red](../profiling/media/prof-tour-network-usage.png "Diagrama de Uso de red")
 
@@ -210,7 +215,7 @@ Si necesita características que no están actualmente presentes en las herramie
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-En Visual Studio 2019, el Explorador de rendimiento heredado y las herramientas de generación de perfiles relacionadas, como el Asistente de rendimiento, se han incorporado al Generador de perfiles de rendimiento, que se puede abrir mediante **Depurar** > **Generador de perfiles de rendimiento** . En el Generador de perfiles de rendimiento, las herramientas de diagnóstico disponibles dependen del destino elegido y del proyecto de inicio abierto actual. La herramienta Uso de CPU proporciona la capacidad de muestreo anteriormente admitida en el Asistente de rendimiento. La herramienta Instrumentación proporciona la capacidad de generación de perfiles instrumentada (para recuentos y duraciones de llamadas precisos) que se encontraba en el Asistente de rendimiento. En el Generador de perfiles de rendimiento, además, aparecen otras herramientas de memoria.
+En Visual Studio 2019, el Explorador de rendimiento heredado y las herramientas de generación de perfiles relacionadas, como el Asistente de rendimiento, se han incorporado al Generador de perfiles de rendimiento, que se puede abrir mediante **Depurar** > **Generador de perfiles de rendimiento**. En el Generador de perfiles de rendimiento, las herramientas de diagnóstico disponibles dependen del destino elegido y del proyecto de inicio abierto actual. La herramienta Uso de CPU proporciona la capacidad de muestreo anteriormente admitida en el Asistente de rendimiento. La herramienta Instrumentación proporciona la capacidad de generación de perfiles instrumentada (para recuentos y duraciones de llamadas precisos) que se encontraba en el Asistente de rendimiento. En el Generador de perfiles de rendimiento, además, aparecen otras herramientas de memoria.
 ::: moniker-end
 
 ![Herramienta Explorador de rendimiento](../profiling/media/prof-tour-performance-explorer.png "Explorador de rendimiento")
@@ -222,7 +227,7 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 ::: moniker range=">=vs-2019"
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Sugerencias de rendimiento](../profiling/perftips.md)|Sí|sí|sí|
+|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí|sí|
 |[Uso de CPU](../profiling/beginners-guide-to-performance-profiling.md)|sí|sí|sí|
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
 |[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|sí|

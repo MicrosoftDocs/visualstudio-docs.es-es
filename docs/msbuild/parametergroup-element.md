@@ -1,5 +1,7 @@
 ---
 title: ParameterGroup (Elemento) | Microsoft Docs
+description: Obtenga información sobre el elemento ParameterGroup de MSBuild, que contiene una lista opcional de parámetros presentes en la tarea generada por TaskFactory de UsingTask.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 104a7313104e194a85d9eb4fee00e84a8facb5b5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263093"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048870"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup (Elemento)
 
 Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask` `TaskFactory`. Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<ParameterGroup>
+ \<Project> \<UsingTask>
  \<ParameterGroup>
 
 ## <a name="syntax"></a>Sintaxis
@@ -48,7 +50,7 @@ Contiene una lista opcional de parámetros que estarán presentes en la tarea ge
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Parameter](../msbuild/parameter-element.md)|Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask` `TaskFactory`. El nombre del elemento es el nombre del parámetro.|
+|[Parámetro](../msbuild/parameter-element.md)|Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask` `TaskFactory`. El nombre del elemento es el nombre del parámetro.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear un sombreador Phong básico'
+description: En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación Phong clásico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 718607d74be1a74a799f8de9f4883e1df9fb7ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c158453421d9e4f899a7cfed7118be8e5871356c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769187"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134137"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Cómo: Crear un sombreador Phong básico
 
@@ -31,9 +33,9 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 2. Desconecte el nodo **Lambert** del nodo **Color final**. Elija el terminal **RGB** del nodo **Lambert** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
-3. Agregue un nodo **Agregar** al gráfico. En el **Cuadro de herramientas**, en **Matemáticas**, seleccione **Agregar** y muévalo a la superficie de diseño.
+3. Agregue un nodo **Agregar** al gráfico. En el **Cuadro de herramientas** , en **Matemáticas** , seleccione **Agregar** y muévalo a la superficie de diseño.
 
-4. Agregue un nodo **Especular** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Especular** y muévalo a la superficie de diseño.
+4. Agregue un nodo **Especular** al gráfico. En el **Cuadro de herramientas** , en **Utilidad** , seleccione **Especular** y muévalo a la superficie de diseño.
 
 5. Agregue la contribución especular. Mueva el terminal **Salida** del nodo **Especular** al terminal **X** del nodo **Agregar** y, después, mueva el terminal **Salida** del nodo **Lambert** al terminal **Y** del nodo **Agregar**. Estas conexiones combinan las contribuciones de color difuso y especular totales para el píxel.
 
@@ -57,12 +59,12 @@ La siguiente ilustración muestra el sombreador descrito en este documento aplic
 
 ![Iluminación Phong aplicada a un modelo](../designers/media/digit-lighting-model.png)
 
-Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Cómo: crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)
+- [Procedimiento: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedimiento: Exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Procedimiento: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

@@ -1,5 +1,7 @@
 ---
 title: Elemento When (MSBuild) | Microsoft Docs
+description: Obtenga información sobre el elemento When de MSBuild, que especifica un posible bloque de código para el elemento Choose que se va a seleccionar.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630930"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046036"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 

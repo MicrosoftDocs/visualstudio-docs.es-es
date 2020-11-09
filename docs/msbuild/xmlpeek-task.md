@@ -1,5 +1,7 @@
 ---
 title: Tarea XmlPeek | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea XmlPeek para devolver valores según lo especificado por la consulta XPath de un archivo XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5d9a3c03e1301bddf4cc26c76dac9e0381ec726b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286126"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047262"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek (tarea)
 
@@ -31,7 +33,7 @@ Devuelve valores conforme a lo que especifica una consulta XPath de un archivo X
 
  En la siguiente tabla se describen los parámetros de la tarea `XmlPeek` .
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |`Namespaces`|Parámetro `String` opcional.<br /><br /> Especifica los espacios de nombres para los prefijos de la consulta XPath.|
 |`Query`|Parámetro `String` opcional.<br /><br /> Especifica la consulta XPath.|

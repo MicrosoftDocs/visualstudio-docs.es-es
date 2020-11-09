@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: Crear un sombreador de gradiente basado en geometría'
+description: Aprenda a usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language)s para crear un sombreador de degradado basado en geometría que escale un valor de color RGB constante.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e10fd5266ba39febe6261f41437c10c19b5c82f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01d712365cc296c54f0e5d1a58660df1051e2f20
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769114"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134477"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Cómo: Crear un sombreador de gradiente basado en geometría
 
@@ -29,15 +31,15 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 2. Desconecte el nodo **Color de punto** del nodo **Color final**. Elija el terminal **RGB** del nodo **Color de punto** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
-3. Agregue un nodo **Multiplicar** al gráfico. En el **Cuadro de herramientas**, en **Matemáticas**, seleccione **Multiplicar** y muévalo a la superficie de diseño.
+3. Agregue un nodo **Multiplicar** al gráfico. En el **Cuadro de herramientas** , en **Matemáticas** , seleccione **Multiplicar** y muévalo a la superficie de diseño.
 
-4. Agregue un nodo **Vector de máscara** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Vector de máscara** y muévalo a la superficie de diseño.
+4. Agregue un nodo **Vector de máscara** al gráfico. En el **Cuadro de herramientas** , en **Utilidad** , seleccione **Vector de máscara** y muévalo a la superficie de diseño.
 
-5. Especifique los valores de máscara para el nodo **Vector de máscara**. En el modo **Seleccionar**, seleccione el nodo **Vector de máscara** y, después, en la ventana **Propiedades**, establezca la propiedad **Verde / Y** en **True** y las propiedades **Rojo / X**, **Azul / Z** y **Alfa / W** en **False**. En este ejemplo, las propiedades **Rojo / X**, **Verde / Y** y **Azul / Z** se corresponden a los componentes X, Y y Z del nodo **Posición global** y **Alfa / W** no se usa. Dado que solo **Verde / Y** está establecido en **True**, solo el componente Y del vector de entrada permanece después de que se enmascare.
+5. Especifique los valores de máscara para el nodo **Vector de máscara**. En el modo **Seleccionar** , seleccione el nodo **Vector de máscara** y, después, en la ventana **Propiedades** , establezca la propiedad **Verde / Y** en **True** y las propiedades **Rojo / X** , **Azul / Z** y **Alfa / W** en **False**. En este ejemplo, las propiedades **Rojo / X** , **Verde / Y** y **Azul / Z** se corresponden a los componentes X, Y y Z del nodo **Posición global** y **Alfa / W** no se usa. Dado que solo **Verde / Y** está establecido en **True** , solo el componente Y del vector de entrada permanece después de que se enmascare.
 
-6. Agregue un nodo **Posición global** al gráfico. En el **Cuadro de herramientas**, en **Constantes**, seleccione **Posición global** y muévala a la superficie de diseño.
+6. Agregue un nodo **Posición global** al gráfico. En el **Cuadro de herramientas** , en **Constantes** , seleccione **Posición global** y muévala a la superficie de diseño.
 
-7. Enmascare la posición de espacio global del fragmento. En el modo **Seleccionar**, mueva el terminal **Salida** del nodo **Posición global** al terminal **Vector** del nodo **Vector de máscara**. Esta conexión enmascara la posición del fragmento para ignorar los componentes X y Z.
+7. Enmascare la posición de espacio global del fragmento. En el modo **Seleccionar** , mueva el terminal **Salida** del nodo **Posición global** al terminal **Vector** del nodo **Vector de máscara**. Esta conexión enmascara la posición del fragmento para ignorar los componentes X y Z.
 
 8. Multiplique la constante de color RGB por la posición del espacio de global enmascarada. Mueva el terminal **RGB** del nodo **Color de punto** al terminal **Y** del nodo **Multiplicar** y, después, mueva el terminal **Salida** del nodo **Vector de máscara** al terminal **X** del nodo **Multiplicar**. Esta conexión escala el valor de color según el alto de píxel en el espacio global.
 
@@ -56,13 +58,13 @@ En la siguiente ilustración se muestra el sombreador descrito en este documento
 
 ![Efecto de degradado aplicado a un modelo de terreno 3D](../designers/media/digit-gradient-effect-result.png)
 
-Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Cómo: modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)
-- [Cómo: crear un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [Procedimiento: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedimiento: Exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Procedimiento: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)
+- [Cómo: Crear un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

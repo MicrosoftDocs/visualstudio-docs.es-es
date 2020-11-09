@@ -1,5 +1,7 @@
 ---
 title: Glosario de MSBuild
+description: Obtenga información sobre los términos del glosario de Microsoft Build Engine (MSBuild) que describen el motor de compilación y sus componentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f42d7945656a3f0e3cfbe11f80db26b7e5c124d3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633348"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046324"
 ---
 # <a name="msbuild-glossary"></a>Glosario de MSBuild
 
@@ -25,7 +27,7 @@ AssemblyFoldersEx\
 Es una ubicación del Registro donde otros proveedores almacenan las rutas de acceso para cada versión de .NET Framework que admiten y donde la resolución en tiempo de diseño puede buscar para encontrar los ensamblados de referencia.
 
 batching\
-El procesamiento por lotes significa la división de elementos en categorías diferentes conocidas como *lotes*, basada en metadatos de elementos, seguida de la ejecución de un destino o de una tarea una vez utilizando cada lote. El procesamiento por lotes es el equivalente en MSBuild de la construcción de bucle for. Para obtener más información, consulte [Procesamiento por lotes](../msbuild/msbuild-batching.md).
+El procesamiento por lotes significa la división de elementos en categorías diferentes conocidas como *lotes* , basada en metadatos de elementos, seguida de la ejecución de un destino o de una tarea una vez utilizando cada lote. El procesamiento por lotes es el equivalente en MSBuild de la construcción de bucle for. Para obtener más información, consulte [Procesamiento por lotes](../msbuild/msbuild-batching.md).
 
 build-scope\
 El ámbito de compilación describe un objeto de MSBuild, por ejemplo una propiedad global, que se puede ver en un proyecto y en los proyectos secundarios creados en una compilación de varios proyectos.
@@ -85,7 +87,7 @@ profile\
 Es un subconjunto del marco completo. Se utiliza para minimizar la cantidad que hay que descargar en un equipo.
 
 project file\
-Un archivo del proyecto contiene el script de MSBuild que controla la compilación. Los archivos de proyecto tienen normalmente una extensión que finaliza con *proj*, como *.csproj* o *.vbproj*. Los archivos del proyecto pueden importar archivos de propiedad y archivos de destino.
+Un archivo del proyecto contiene el script de MSBuild que controla la compilación. Los archivos de proyecto tienen normalmente una extensión que finaliza con *proj* , como *.csproj* o *.vbproj*. Los archivos del proyecto pueden importar archivos de propiedad y archivos de destino.
 
 property\
 Una propiedad es un par clave-valor que se utiliza para controlar el proceso de compilación. Para más información, vea [Propiedades de MSBuild](../msbuild/msbuild-properties.md).

@@ -1,5 +1,7 @@
 ---
 title: Clase base ToolTaskExtension | Microsoft Docs
+description: Obtenga información sobre los parámetros que la clase base Microsoft.Build.Tasks.ToolTaskExtension agrega a las tareas que se heredan de ella.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4b0148a7c42b359906cd316b45dfdf2898e6313
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631697"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047823"
 ---
 # <a name="tooltaskextension-base-class"></a>Clase base ToolTaskExtension
 
@@ -28,7 +30,7 @@ Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>
 
  En la siguiente tabla se describen los parámetros de las clases base.
 
-| Parámetro | Descripción |
+| Parámetro | Description |
 | - | - |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A> | Parámetro <xref:Microsoft.Build.Framework.IBuildEngine> opcional.<br /><br /> Especifica la interfaz del motor de compilación disponible para las tareas. El motor de compilación establece automáticamente este parámetro para permitir que las tareas vuelvan a llamarlo. |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A> | Parámetro <xref:Microsoft.Build.Framework.IBuildEngine2> opcional.<br /><br /> Especifica la interfaz del motor de compilación disponible para las tareas. El motor de compilación establece automáticamente este parámetro para permitir que las tareas vuelvan a llamarlo.<br /><br /> Esta es una propiedad que permite que los autores de las tareas que heredan de esta clase no tengan que convertir el valor de `IBuildEngine` a `IBuildEngine2`. |

@@ -1,5 +1,7 @@
 ---
 title: 'Cómo: modelar un terreno en 3D'
+description: Aprenda a usar el Editor de modelos para crear un modelo de terreno en 3D dividiendo un plano para crear más caras y manipulando sus vértices.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f19363d9024f8e7e2deb69a8038b8854eb50e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54010c46d121fd4221500afb3038013626939a1b
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768969"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134810"
 ---
 # <a name="how-to-model-3d-terrain"></a>Cómo: Modelar un terreno en 3D
 
@@ -31,10 +33,10 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 1. Cree un modelo 3D con el que va a trabajar. Para obtener información sobre cómo agregar un modelo al proyecto, vea la sección Introducción de [Editor de modelos](../designers/model-editor.md).
 
-2. Agregue un plano a la escena. En el **Cuadro de herramientas**, en **Formas**, seleccione **Plano** y muévalo a la superficie de diseño.
+2. Agregue un plano a la escena. En el **Cuadro de herramientas** , en **Formas** , seleccione **Plano** y muévalo a la superficie de diseño.
 
     > [!TIP]
-    > Para facilitar el trabajo con el objeto de plano, también puede enmarcarlo en la superficie de diseño. En el modo **Seleccionar**, seleccione el objeto de plano y, después, en la barra de herramientas del Editor de modelos, pulse el botón **Objeto de marco**.
+    > Para facilitar el trabajo con el objeto de plano, también puede enmarcarlo en la superficie de diseño. En el modo **Seleccionar** , seleccione el objeto de plano y, después, en la barra de herramientas del Editor de modelos, pulse el botón **Objeto de marco**.
 
 3. Cambie al modo de selección de caras. En la barra de herramientas del Editor de modelos, elija **Seleccionar cara**.
 
@@ -53,8 +55,8 @@ El modelo de terreno está completado. Este es el modelo final de nuevo, con som
 
 ![Escena 3D en la que se muestra un modelo de terreno](../designers/media/digit-terrain-model.png)
 
-Puede usar este modelo de terreno para mostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de degradado basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Puede usar este modelo de terreno para mostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de gradiente basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Editor de modelos](../designers/model-editor.md)

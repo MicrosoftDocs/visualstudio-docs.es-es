@@ -1,5 +1,7 @@
 ---
 title: UidManager (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo la tarea UidManager de MSBuild comprueba, actualiza o quita identificadores únicos (UID) para buscar todos los elementos XAML en los archivos XAML de origen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631528"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046934"
 ---
 # <a name="uidmanager-task"></a>UidManager (Tarea)
 
@@ -32,11 +34,11 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.UidManager> comprueba, actualiza o 
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
-| Parámetro | Descripción |
+| Parámetro | Description |
 |-------------------------| - |
 | `IntermediateDirectory` | Parámetro **String** opcional.<br /><br /> Especifica el directorio que se utiliza para hacer una copia de seguridad de los archivos XAML de origen que especifica el parámetro **MarkupFiles**. |
 | `MarkupFiles` | Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica los archivos XAML de origen que se van a incluir para los procesos de comprobación, actualización o eliminación del UID. |
-| `Task` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la tarea de administración del UID que desea realizar. Las opciones válidas son **Activar**, **Actualizar** o **Quitar**. |
+| `Task` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la tarea de administración del UID que desea realizar. Las opciones válidas son **Activar** , **Actualizar** o **Quitar**. |
 
 ## <a name="example"></a>Ejemplo
 
@@ -63,4 +65,4 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.UidManager> comprueba, actualiza o 
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
-- [Cómo: Localizar una aplicación](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+- [Procedimiento: Localizar una aplicación](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

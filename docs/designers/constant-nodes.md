@@ -1,5 +1,7 @@
 ---
 title: Nodos de constante
+description: Obtenga información sobre los nodos de constante, que representan valores literales y atributos de vértice interpolados en los cálculos de sombreador de píxeles en el Diseñador de sombras.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb7297a5486764127efda72ea37c5c97acc05245
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769310"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134222"
 ---
 # <a name="constant-nodes"></a>Nodos de constante
 
@@ -29,19 +31,19 @@ Aunque cada instancia de sombreador de píxeles recibe solo un conjunto de valor
 
 |Nodo|Detalles|Propiedades|
 |----------|-------------|----------------|
-|**Vector de cámara**|El vector que se extiende desde el píxel actual a la cámara en el espacio global.<br /><br /> Puede usarlo para calcular los reflejos en el espacio global.<br /><br /> **Resultado**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a la cámara.|Ninguna|
-|**Constante de color**|Un valor de color constante.<br /><br /> **Resultado**<br /><br /> `Output`: `float4`<br /> Valor del color.|**Resultado**<br /> Valor del color.|
-|**Constante**|Un valor escalar constante.<br /><br /> **Resultado**<br /><br /> `Output`: `float`<br /> Valor escalar.|**Resultado**<br /> Valor escalar.|
-|**Constante 2D**|Una constante de vector de dos componentes.<br /><br /> **Resultado**<br /><br /> `Output`: `float2`<br /> Valor del vector.|**Resultado**<br /> Valor del vector.|
-|**Constante 3D**|Una constante de vector de tres componentes.<br /><br /> **Resultado**<br /><br /> `Output`: `float3`<br /> Valor del vector.|**Resultado**<br /> Valor del vector.|
-|**Constante 4D**|Una constante de vector de cuatro componentes.<br /><br /> **Resultado**<br /><br /> `Output`: `float4`<br /> Valor del color.|**Resultado**<br /> Valor del vector.|
-|**Posición normalizada**|La posición del píxel actual, expresada en coordenadas de dispositivo normalizadas.<br /><br /> Las coordenadas X e Y tienen valores en el intervalo de [-1, 1], la coordenada Z tiene un valor en el intervalo de [0, 1] y el componente W contiene el valor de profundidad de punto en el espacio de vista y no está normalizado.<br /><br /> **Resultado**<br /><br /> `Output`: `float4`<br /> La posición del píxel actual.|Ninguna|
-|**Color de punto**|El color difuso del píxel actual, que es una combinación de los atributos de color difuso de material y de color de vértice.<br /><br /> **Resultado**<br /><br /> `Output`: `float4`<br /> El color difuso del píxel actual.|Ninguna|
-|**Profundidad de punto**|La profundidad del píxel actual en el espacio de la vista.<br /><br /> **Resultado**<br /><br /> `Output`: `float`<br /> La profundidad del píxel actual.|Ninguna|
-|**Profundidad de punto normalizada**|La profundidad del píxel actual, expresada en coordenadas de dispositivo normalizadas.<br /><br /> El resultado tiene un valor en el intervalo de [0, 1].<br /><br /> **Resultado**<br /><br /> `Output`: `float`<br /> La profundidad del píxel actual.|Ninguna|
-|**Posición de pantalla**|La posición del píxel actual, expresada en coordenadas de pantalla.<br /><br /> Las coordenadas de pantalla se basan en la ventanilla actual. Los componentes X e Y contienen las coordenadas de pantalla, el componente Z contiene la profundidad normalizada en un intervalo de [0, 1] y el componente W contiene el valor de profundidad en el espacio de vista.<br /><br /> **Resultado**<br /><br /> `Output`: `float4`<br /> La posición del píxel actual.|Ninguna|
-|**Normal a la superficie**|El valor normal a la superficie del píxel actual en el espacio de objeto.<br /><br /> Se puede usar para calcular las reflexiones y las contribuciones de la iluminación en el espacio de objeto.<br /><br /> **Resultado**<br /><br /> `Output`: `float3`<br /> El valor normal a la superficie del píxel actual.|Ninguna|
-|**Vector de cámara de espacio tangente**|El vector que se extiende desde el píxel actual a la cámara en el espacio tangente.<br /><br /> Se puede usar para calcular las reflexiones en el espacio tangente.<br /><br /> **Resultado**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a la cámara.|Ninguna|
-|**Dirección de la luz de espacio tangente**|El vector que define la dirección en la que se proyecta la luz desde una fuente de luz en el espacio tangente del píxel actual.<br /><br /> Se puede usar para calcular las contribuciones de reflexión especular y de iluminación en el espacio tangente.<br /><br /> **Resultado:**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a una fuente de luz.|Ninguna|
-|**Normal global**|El valor normal a la superficie del píxel actual en el espacio global.<br /><br /> Se puede usar para calcular las reflexiones y las contribuciones de la iluminación en el espacio global.<br /><br /> **Resultado**<br /><br /> `Output`: `float3`<br /> El valor normal a la superficie del píxel actual.|Ninguna|
-|**Posición global**|Posición del píxel actual en el espacio global.<br /><br /> **Resultado**<br /><br /> `Output`: `float4`<br /> La posición del píxel actual.|Ninguna|
+|**Vector de cámara**|El vector que se extiende desde el píxel actual a la cámara en el espacio global.<br /><br /> Puede usarlo para calcular los reflejos en el espacio global.<br /><br /> **Salida**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a la cámara.|None|
+|**Constante de color**|Un valor de color constante.<br /><br /> **Salida**<br /><br /> `Output`: `float4`<br /> Valor del color.|**Salida**<br /> Valor del color.|
+|**Constante**|Un valor escalar constante.<br /><br /> **Salida**<br /><br /> `Output`: `float`<br /> Valor escalar.|**Salida**<br /> Valor escalar.|
+|**Constante 2D**|Una constante de vector de dos componentes.<br /><br /> **Salida**<br /><br /> `Output`: `float2`<br /> Valor del vector.|**Salida**<br /> Valor del vector.|
+|**Constante 3D**|Una constante de vector de tres componentes.<br /><br /> **Salida**<br /><br /> `Output`: `float3`<br /> Valor del vector.|**Salida**<br /> Valor del vector.|
+|**Constante 4D**|Una constante de vector de cuatro componentes.<br /><br /> **Salida**<br /><br /> `Output`: `float4`<br /> Valor del color.|**Salida**<br /> Valor del vector.|
+|**Posición normalizada**|La posición del píxel actual, expresada en coordenadas de dispositivo normalizadas.<br /><br /> Las coordenadas X e Y tienen valores en el intervalo de [-1, 1], la coordenada Z tiene un valor en el intervalo de [0, 1] y el componente W contiene el valor de profundidad de punto en el espacio de vista y no está normalizado.<br /><br /> **Salida**<br /><br /> `Output`: `float4`<br /> La posición del píxel actual.|None|
+|**Color de punto**|El color difuso del píxel actual, que es una combinación de los atributos de color difuso de material y de color de vértice.<br /><br /> **Salida**<br /><br /> `Output`: `float4`<br /> El color difuso del píxel actual.|None|
+|**Profundidad de punto**|La profundidad del píxel actual en el espacio de la vista.<br /><br /> **Salida**<br /><br /> `Output`: `float`<br /> La profundidad del píxel actual.|None|
+|**Profundidad de punto normalizada**|La profundidad del píxel actual, expresada en coordenadas de dispositivo normalizadas.<br /><br /> El resultado tiene un valor en el intervalo de [0, 1].<br /><br /> **Salida**<br /><br /> `Output`: `float`<br /> La profundidad del píxel actual.|None|
+|**Posición de pantalla**|La posición del píxel actual, expresada en coordenadas de pantalla.<br /><br /> Las coordenadas de pantalla se basan en la ventanilla actual. Los componentes X e Y contienen las coordenadas de pantalla, el componente Z contiene la profundidad normalizada en un intervalo de [0, 1] y el componente W contiene el valor de profundidad en el espacio de vista.<br /><br /> **Salida**<br /><br /> `Output`: `float4`<br /> La posición del píxel actual.|None|
+|**Normal a la superficie**|El valor normal a la superficie del píxel actual en el espacio de objeto.<br /><br /> Se puede usar para calcular las reflexiones y las contribuciones de la iluminación en el espacio de objeto.<br /><br /> **Salida**<br /><br /> `Output`: `float3`<br /> El valor normal a la superficie del píxel actual.|None|
+|**Vector de cámara de espacio tangente**|El vector que se extiende desde el píxel actual a la cámara en el espacio tangente.<br /><br /> Se puede usar para calcular las reflexiones en el espacio tangente.<br /><br /> **Salida**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a la cámara.|None|
+|**Dirección de la luz de espacio tangente**|El vector que define la dirección en la que se proyecta la luz desde una fuente de luz en el espacio tangente del píxel actual.<br /><br /> Se puede usar para calcular las contribuciones de reflexión especular y de iluminación en el espacio tangente.<br /><br /> **Salida:**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a una fuente de luz.|None|
+|**Normal global**|El valor normal a la superficie del píxel actual en el espacio global.<br /><br /> Se puede usar para calcular las reflexiones y las contribuciones de la iluminación en el espacio global.<br /><br /> **Salida**<br /><br /> `Output`: `float3`<br /> El valor normal a la superficie del píxel actual.|None|
+|**Posición global**|Posición del píxel actual en el espacio global.<br /><br /> **Salida**<br /><br /> `Output`: `float4`<br /> La posición del píxel actual.|None|

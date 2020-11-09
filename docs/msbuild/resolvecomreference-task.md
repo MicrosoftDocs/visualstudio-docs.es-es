@@ -1,5 +1,7 @@
 ---
 title: ResolveComReference (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea ResolveComReference para obtener una lista de uno o más nombres de biblioteca de tipos o archivos. tlb y resolverlos en ubicaciones en el disco.
+ms.custom: SEO-VS-2020
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286185"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048616"
 ---
 # <a name="resolvecomreference-task"></a>Tarea ResolveComReference
 
@@ -33,7 +35,7 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* 
 
  En la siguiente tabla se describen los parámetros de la tarea `ResolveCOMReference` .
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |`DelaySign`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, coloca la clave pública en el ensamblado. Si `false`, firma completamente el ensamblado.|
 |`EnvironmentVariables`|Parámetro `String[]` opcional.<br /><br /> Matriz de pares de variables de entorno, separados por signos igual. Estas variables se pasan a spawned *tlbimp.exe* y *aximp.exe* y, además, pasan el bloque de entorno normal o lo invalidan de manera selectiva.|

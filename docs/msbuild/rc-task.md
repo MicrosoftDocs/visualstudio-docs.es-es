@@ -1,5 +1,7 @@
 ---
 title: RC (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea RC para encapsular la herramienta de compilador de recursos de Microsoft Windows, rc.exe, que compila los recursos en un archivo .res.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,16 +24,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94a1babf518a3579246903f6479f999d8912dfe5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632919"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048786"
 ---
 # <a name="rc-task"></a>RC (tarea)
 
-Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La tarea **RC** compila recursos, como cursores, iconos, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos ( *.res*). Para más información, consulte [Compilador de recursos](/windows/desktop/menurc/resource-compiler).
+Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La tarea **RC** compila recursos, como cursores, iconos, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos ( *.res* ). Para más información, consulte [Compilador de recursos](/windows/desktop/menurc/resource-compiler).
 
 ## <a name="parameters"></a>Parámetros
 

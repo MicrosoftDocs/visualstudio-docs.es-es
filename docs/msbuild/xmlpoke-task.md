@@ -1,5 +1,7 @@
 ---
 title: XmlPoke (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea XmlPoke para establecer los valores especificados por una consulta XPath en un archivo XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: 35e29004116807092452a08d3835ba3e5e1dabcd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072517"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047234"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (tarea)
 
@@ -31,7 +33,7 @@ Establece los valores especificados por una consulta XPath en un archivo XML.
 
  En la siguiente tabla se describen los parámetros de la tarea `XmlPoke` .
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |`Namespaces`|Parámetro `String` opcional.<br /><br /> Especifica los espacios de nombres para los prefijos de la consulta XPath. `Namespaces` es un fragmento XML que consta de elementos `Namespace` con los atributos `Prefix` y `Uri`. El atributo `Prefix` especifica el prefijo para asociar con el espacio de nombres especificado en el atributo `Uri`. No use un valor `Prefix` vacío.|
 |`Query`|Parámetro `String` opcional.<br /><br /> Especifica la consulta XPath.|

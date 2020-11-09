@@ -1,5 +1,7 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
+description: Obtenga información sobre el elemento Target de MSBuild, que contiene un conjunto de tareas para que MSBuild se ejecute secuencialmente.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
+ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375550"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048051"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 

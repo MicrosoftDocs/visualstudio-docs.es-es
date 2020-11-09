@@ -1,5 +1,6 @@
 ---
-title: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
+title: Desarrollo basado en pruebas previas con la generación a partir del uso
+ms.custom: SEO-VS-2020
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceed19ab052584ea47629244372af4402835beb5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d12801f4397cbca1e9d4c0334f18908f93aecd
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770804"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102615"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
 
 En este tema se muestra cómo usar la característica [Generar a partir del uso](../ide/visual-csharp-intellisense.md#generate-from-usage) que admite el desarrollo de prueba previa.
 
- El*desarrollo de prueba previa* es un enfoque de diseño de software en el que primero se escriben pruebas unitarias basadas en las especificaciones del producto y, a continuación, se escribe el código fuente que se necesita para que las pruebas se realicen correctamente. Visual Studio admite el desarrollo de prueba previa mediante la generación de nuevos tipos y miembros en el código fuente al hacerles referencia en los casos de prueba, antes de que se definan.
+ El *desarrollo de prueba previa* es un enfoque de diseño de software en el que primero se escriben pruebas unitarias basadas en las especificaciones del producto y, a continuación, se escribe el código fuente que se necesita para que las pruebas se realicen correctamente. Visual Studio admite el desarrollo de prueba previa mediante la generación de nuevos tipos y miembros en el código fuente al hacerles referencia en los casos de prueba, antes de que se definan.
 
 Visual Studio genera los nuevos tipos y miembros con una interrupción mínima del flujo de trabajo. Puede crear códigos auxiliares para tipos, métodos, propiedades, campos o constructores sin abandonar su ubicación actual en el código. Al abrir un cuadro de diálogo para especificar opciones para la generación de tipos, el foco vuelve inmediatamente al archivo abierto actual cuando se cierra el cuadro de diálogo.
 
@@ -36,7 +37,7 @@ La característica **Generar a partir del uso** puede usarse con marcos de prueb
 
 1. En C# o Visual Basic, cree un proyecto de **biblioteca de clases de Windows**. Asígnele el nombre `GFUDemo_VB` o `GFUDemo_CS`, en función de qué lenguaje use.
 
-2. En el **Explorador de soluciones**, haga clic con el botón derecho en el icono de la solución de la parte superior y haga clic en **Agregar** > **Nuevo proyecto**.
+2. En el **Explorador de soluciones** , haga clic con el botón derecho en el icono de la solución de la parte superior y haga clic en **Agregar** > **Nuevo proyecto**.
 
 3. Cree un proyecto **Proyecto de prueba unitaria (.NET Framework)** .
 
@@ -50,9 +51,9 @@ La característica **Generar a partir del uso** puede usarse con marcos de prueb
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Agregar una referencia al proyecto de biblioteca de clases
 
-1. En el **Explorador de soluciones**, en el proyecto de prueba unitaria, haga clic con el botón derecho en la entrada **Referencias** y elija **Agregar referencia**.
+1. En el **Explorador de soluciones** , en el proyecto de prueba unitaria, haga clic con el botón derecho en la entrada **Referencias** y elija **Agregar referencia**.
 
-2. En el cuadro de diálogo **Administrador de referencias**, seleccione **Proyectos** y, después, seleccione el proyecto de biblioteca de clases.
+2. En el cuadro de diálogo **Administrador de referencias** , seleccione **Proyectos** y, después, seleccione el proyecto de biblioteca de clases.
 
 3. Elija **Aceptar** para cerrar el cuadro de diálogo **Administrador de referencias**.
 
@@ -65,7 +66,7 @@ La característica **Generar a partir del uso** puede usarse con marcos de prueb
 2. Busque la declaración de la clase `UnitTest1` y cambie su nombre a `AutomobileTest`.
 
    > [!NOTE]
-   > IntelliSense proporciona ahora dos alternativas para la finalización de instrucciones de IntelliSense: el *modo de finalización* y el *modo de sugerencia*. Use el modo de sugerencia para situaciones en que se usan clases y miembros antes de definirlos. Cuando se abre una ventana de **IntelliSense**, puede presionar **CTRL**+**Alt**+**Barra espaciadora** para alternar entre el modo de finalización y el modo de sugerencia. Vea [Usar IntelliSense](../ide/using-intellisense.md) para obtener más información. El modo de sugerencia le ayudará cuando escriba `Automobile` en el paso siguiente.
+   > IntelliSense proporciona ahora dos alternativas para la finalización de instrucciones de IntelliSense: el *modo de finalización* y el *modo de sugerencia*. Use el modo de sugerencia para situaciones en que se usan clases y miembros antes de definirlos. Cuando se abre una ventana de **IntelliSense** , puede presionar **CTRL**+**Alt**+**Barra espaciadora** para alternar entre el modo de finalización y el modo de sugerencia. Vea [Usar IntelliSense](../ide/using-intellisense.md) para obtener más información. El modo de sugerencia le ayudará cuando escriba `Automobile` en el paso siguiente.
 
 3. Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una instancia de una clase denominada `Automobile`, como se muestra en las siguientes capturas de pantalla. Aparece un subrayado ondulado, que indica un error en tiempo de compilación, y una bombilla de error de [Acciones rápidas](../ide/quick-actions.md) en el margen izquierdo o directamente debajo de la línea ondulada si se sitúa el cursor encima.
 
@@ -77,13 +78,13 @@ La característica **Generar a partir del uso** puede usarse con marcos de prueb
 
 5. Haga clic en **Generar nuevo tipo** para abrir el cuadro de diálogo **Generar tipo**. Este cuadro de diálogo proporciona opciones que incluyen la generación del tipo en otro proyecto.
 
-6. En la lista **Proyecto**, haga clic en **GFUDemo\_VB** o en **GFUDemo_CS** para indicar a Visual Studio que agregue el archivo al proyecto de biblioteca de clases en lugar de agregarlo al proyecto de prueba. Si aún no está seleccionado, elija **Crear nuevo archivo** y asígnele el nombre *Automobile.cs* o *Automobile.vb*.
+6. En la lista **Proyecto** , haga clic en **GFUDemo\_VB** o en **GFUDemo_CS** para indicar a Visual Studio que agregue el archivo al proyecto de biblioteca de clases en lugar de agregarlo al proyecto de prueba. Si aún no está seleccionado, elija **Crear nuevo archivo** y asígnele el nombre *Automobile.cs* o *Automobile.vb*.
 
      ![Cuadro de diálogo Generar nuevo tipo](../ide/media/genotherdialog.png)
 
 7. Haga clic en **Aceptar** para cerrar el cuadro de diálogo y crear el nuevo archivo.
 
-8. En el **Explorador de soluciones**, busque el nuevo archivo *Automobile.vb* o *Automobile.cs* para comprobar que se encuentra en el nodo del proyecto **GFUDemo_VB** o **GFUDemo_CS**. En el editor de código, el foco aún está en `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, lo que le permite continuar escribiendo la prueba con una interrupción mínima.
+8. En el **Explorador de soluciones** , busque el nuevo archivo *Automobile.vb* o *Automobile.cs* para comprobar que se encuentra en el nodo del proyecto **GFUDemo_VB** o **GFUDemo_CS**. En el editor de código, el foco aún está en `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, lo que le permite continuar escribiendo la prueba con una interrupción mínima.
 
 ### <a name="generate-a-property-stub"></a>Generar código auxiliar de propiedad
 Supongamos que la especificación del producto indica que la clase `Automobile` tiene dos propiedades públicas denominadas `Model` y `TopSpeed`. El constructor predeterminado debe inicializar estas propiedades con los valores predeterminados `"Not specified"` y `-1` . La siguiente prueba unitaria comprobará que el constructor predeterminado establece las propiedades en sus valores predeterminados correctos.
@@ -129,7 +130,7 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
 
 ### <a name="run-the-tests"></a>Ejecutar las pruebas
 
-1. En el menú **Prueba**, elija **Ejecutar** > **Todas las pruebas**.
+1. En el menú **Prueba** , elija **Ejecutar** > **Todas las pruebas**.
 
      Los comandos **Ejecutar** > **Todas las pruebas** ejecutan todas las pruebas en todos los marcos de pruebas escritos para la solución actual. En este caso, hay dos pruebas y ambas finalizan con errores, como se esperaba. La prueba `DefaultAutomobileIsInitializedCorrectly` produce un error porque la condición `Assert.IsTrue` devuelve `False`. La prueba `AutomobileWithModelNameCanStart` produce un error porque el método `Start` de la clase `Automobile` emite una excepción.
 
@@ -137,7 +138,7 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
 
      ![Resultados de pruebas no superados](../ide/media/testsfailed.png)
 
-2. En la ventana **Resultados de pruebas**, haga doble clic en cada fila de resultados de pruebas para ir a la ubicación de cada prueba.
+2. En la ventana **Resultados de pruebas** , haga doble clic en cada fila de resultados de pruebas para ir a la ubicación de cada prueba.
 
 ### <a name="implement-the-source-code"></a>Implementar el código fuente
 
@@ -153,7 +154,7 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
 
 ### <a name="run-the-tests-again"></a>Vuelva a ejecutar las pruebas
 
-- En el menú **Probar**, elija **Ejecutar** y haga clic en **Todas las pruebas**.
+- En el menú **Probar** , elija **Ejecutar** y haga clic en **Todas las pruebas**.
 
      Esta vez las pruebas son correctas. La ventana **Navegar a** se muestra en la siguiente ilustración.
 

@@ -1,5 +1,7 @@
 ---
 title: Novedades de MSBuild 15 | Microsoft Docs
+description: Vea la características cambiadas, actualizadas y nuevas de MSBuild 15, disponibles para el SDK de .NET Core y para compilar proyectos de .NET Core en Windows, macOS y Linux.
+ms.custom: SEO-VS-2020
 ms.date: 03/01/2017
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 733c3253245e293a6e52953bc93fc35a1281a616
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 3ab22ac92cdf995c56d8244225a45fc350e9d360
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711682"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047804"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novedades de MSBuild 15
 
@@ -42,7 +44,7 @@ MSBuild ahora está disponible como parte del [SDK de .NET Core](https://www.mic
 
 - El [elemento Project](../msbuild/project-element-msbuild.md) tiene un nuevo atributo `SDK`. También el atributo `Xmlns` es opcional ahora. Para más información sobre el atributo `SDK`, consulte [Uso de los SDK de proyecto de MSBuild](../msbuild/how-to-use-project-sdk.md), [Paquetes, metapaquetes y marcos de trabajo](/dotnet/core/packages) y [Adiciones al formato csproj para .NET Core](/dotnet/core/tools/csproj).
 - El [elemento Item](../msbuild/item-element-msbuild.md) tiene un nuevo atributo `Update`. Además, la restricción en el atributo `Remove` se ha eliminado.
-- *Directory.Build.props* es un archivo definido por el usuario que proporciona personalizaciones a los proyectos de un directorio. Este archivo se importa automáticamente desde *Microsoft.Common.props*, a menos que la propiedad `ImportDirectoryBuildTargets` esté establecida en **false**. *Directory.Build.targets* lo importa *Microsoft.Common.targets*.
+- *Directory.Build.props* es un archivo definido por el usuario que proporciona personalizaciones a los proyectos de un directorio. Este archivo se importa automáticamente desde *Microsoft.Common.props* , a menos que la propiedad `ImportDirectoryBuildTargets` esté establecida en **false**. *Directory.Build.targets* lo importa *Microsoft.Common.targets*.
 - Los metadatos con un nombre que no entre en conflicto con la lista actual de atributos pueden expresarse opcionalmente como un atributo. Para más información, consulte [Elemento Item](../msbuild/item-element-msbuild.md).
 
 ## <a name="new-property-functions"></a>Nuevas funciones de propiedad

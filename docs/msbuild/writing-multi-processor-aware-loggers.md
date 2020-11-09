@@ -1,5 +1,7 @@
 ---
 title: Escribir registradores que reconocen varios procesadores | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild proporciona un registrador que reconoce varios procesadores y un modelo de registro, y permite crear "registradores de reenvío" personalizados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886e012b026ef17b512a7e134d080382744783ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630752"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047311"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Escribir registradores que reconocen varios procesadores
 
@@ -118,6 +120,6 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|
 |SHOWCOMMANDLINE|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md)

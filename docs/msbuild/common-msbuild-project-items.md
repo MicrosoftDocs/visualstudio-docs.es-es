@@ -2,7 +2,7 @@
 title: Elementos comunes de proyectos de MSBuild | Microsoft Docs
 description: Conozca los elementos comunes de proyectos de MSBuild. Los elementos son referencias con nombre a uno o varios archivos y tienen metadatos como nombres de archivo, rutas de acceso y números de versión.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796399"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238628"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 
-En MSBuild, un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de Visual Studio tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd* .
+En MSBuild, un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de Visual Studio tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd*.
 
 ## <a name="common-items"></a>Elementos comunes
 
@@ -160,7 +160,19 @@ Representa los atributos de ensamblado que se van a generar como `[AssemblyMetad
 | Valor | Cadena necesaria. Se convierte en el segundo parámetro (el valor) del constructor de atributo `AssemblyMetadataAttribute`. |
 
 > [!NOTE]
-> Esto solo se aplica a los proyectos que usan el SDK de .NET Core.
+> Este elemento se aplica a los proyectos que usan el SDK para .NET 5 (y .NET Core) y versiones posteriores.
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+Especifica los ensamblados que se van a emitir como atributos de ensamblado `[InternalsVisibleTo(..)]`.
+
+| Nombre de metadatos de elementos | Descripción |
+|-----------------------| - |
+| Incluir | Nombre del ensamblado. |
+| Clave | Cadena opcional. La clave pública del ensamblado. |
+
+> [!NOTE]
+> Este elemento se aplica a los proyectos que usan el SDK para .NET 5 (y .NET Core) y versiones posteriores.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 

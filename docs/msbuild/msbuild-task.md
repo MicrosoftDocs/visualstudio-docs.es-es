@@ -1,5 +1,7 @@
 ---
 title: MSBuild (tarea) | Microsoft Docs
+description: Obtenga información sobre cómo la tarea MSBuild usa el mismo proceso de MSBuild para compilar proyectos secundarios desde otro proyecto de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072585"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049067"
 ---
 # <a name="msbuild-task"></a>tareas de MSBuild
 
@@ -33,11 +35,11 @@ Compila proyectos de MSBuild desde otro proyecto de MSBuild.
 
  En la siguiente tabla se describen los parámetros de la tarea `MSBuild` .
 
-| Parámetro | Descripción |
+| Parámetro | Description |
 |-----------------------------------| - |
 | `BuildInParallel` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, los proyectos especificados en el parámetro `Projects` se compilan en paralelo, si es posible. El valor predeterminado es `false`. |
 | `Projects` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos del proyecto que se van a compilar. |
-| `Properties` | Parámetro `String` opcional.<br /><br /> Lista delimitada por caracteres de punto y coma de pares de nombre/valor de propiedad que se aplicarán como propiedades globales al proyecto secundario. Cuando se especifica este parámetro, es funcionalmente equivalente a establecer las propiedades que tiene el modificador **-property** cuando se compila con [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Por ejemplo:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Al pasar propiedades al proyecto mediante el parámetro `Properties`, MSBuild podría crear una nueva instancia del proyecto, incluso si ya se ha cargado el archivo del proyecto. MSBuild crea una instancia de proyecto única para una ruta de acceso de proyecto determinada y un conjunto único de propiedades globales. Por ejemplo, este comportamiento permite crear varias tareas de MSBuild que llaman a *myproject.proj*, con Configuration=Release, y se recibe una instancia única de *myproject.proj* (si no se especifica ninguna propiedad única en la tarea). Si especifica una propiedad todavía no descubierta por MSBuild, MSBuild crea una instancia nueva del proyecto, la que se puede construir en paralelo con otras instancias del proyecto. Por ejemplo, una configuración de versión se podría compilar al mismo tiempo que una configuración de depuración.|
+| `Properties` | Parámetro `String` opcional.<br /><br /> Lista delimitada por caracteres de punto y coma de pares de nombre/valor de propiedad que se aplicarán como propiedades globales al proyecto secundario. Cuando se especifica este parámetro, es funcionalmente equivalente a establecer las propiedades que tiene el modificador **-property** cuando se compila con [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Por ejemplo:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Al pasar propiedades al proyecto mediante el parámetro `Properties`, MSBuild podría crear una nueva instancia del proyecto, incluso si ya se ha cargado el archivo del proyecto. MSBuild crea una instancia de proyecto única para una ruta de acceso de proyecto determinada y un conjunto único de propiedades globales. Por ejemplo, este comportamiento permite crear varias tareas de MSBuild que llaman a *myproject.proj* , con Configuration=Release, y se recibe una instancia única de *myproject.proj* (si no se especifica ninguna propiedad única en la tarea). Si especifica una propiedad todavía no descubierta por MSBuild, MSBuild crea una instancia nueva del proyecto, la que se puede construir en paralelo con otras instancias del proyecto. Por ejemplo, una configuración de versión se podría compilar al mismo tiempo que una configuración de depuración.|
 | `RebaseOutputs` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, las rutas de acceso relativas de los elementos de salida de destino de los proyectos compilados tienen sus rutas de acceso ajustadas para ser relativas al proyecto que realiza la llamada. El valor predeterminado es `false`. |
 | `RemoveProperties` | Parámetro `String` opcional.<br /><br /> Especifica el conjunto de propiedades globales que se va a quitar. |
 | `RunEachTargetSeparately` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, la tarea MSBuild invoca cada destino de la lista que se pasa a MSBuild uno a uno, en lugar de todos al mismo tiempo. Establecer este parámetro en `true` garantiza que los destinos subsiguientes se invocan incluso si se ha producido un error en los destinos previamente invocados. De lo contrario, un error de compilación detendría la invocación de todos los destinos subsiguientes. El valor predeterminado es `false`. |
@@ -53,7 +55,7 @@ Compila proyectos de MSBuild desde otro proyecto de MSBuild.
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
- A diferencia de utilizar la [tarea Exec](../msbuild/exec-task.md) para iniciar *MSBuild.exe*, esta tarea utiliza el mismo proceso MSBuild para compilar los proyectos secundarios. La lista de destinos ya generados que se pueden omitir se comparte entre las compilaciones primarias y secundarias. Esta tarea también es más rápida porque no se crea ningún proceso MSBuild nuevo.
+ A diferencia de utilizar la [tarea Exec](../msbuild/exec-task.md) para iniciar *MSBuild.exe* , esta tarea utiliza el mismo proceso MSBuild para compilar los proyectos secundarios. La lista de destinos ya generados que se pueden omitir se comparte entre las compilaciones primarias y secundarias. Esta tarea también es más rápida porque no se crea ningún proceso MSBuild nuevo.
 
  Esta tarea puede procesar no solo los archivos del proyecto, sino también los archivos de solución.
 

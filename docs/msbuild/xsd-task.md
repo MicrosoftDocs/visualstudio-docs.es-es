@@ -1,5 +1,7 @@
 ---
 title: XSD (tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea XSD para encapsular la herramienta de definición de esquema XML xsd.exe, que genera archivos de esquema o clase desde un origen.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -20,16 +22,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630787"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047203"
 ---
 # <a name="xsd-task"></a>XSD (tarea)
 
-Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera archivos de esquema o clase desde un origen.
+Encapsula la herramienta de definición de esquema XML ( *xsd.exe* ), que genera archivos de esquema o clase desde un origen.
 
 > [!NOTE]
 > A partir de Visual Studio 2017, el proyecto C++ ya no es compatible con *xsd.exe*. Puede seguir usando la API **Microsoft.VisualC.CppCodeProvider** agregando manualmente *CppCodeProvider.dll* a la GAC.

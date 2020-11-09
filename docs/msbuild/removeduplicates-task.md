@@ -1,5 +1,7 @@
 ---
 title: RemoveDuplicates (Tarea) | Microsoft Docs
+description: Obtenga información sobre cómo MSBuild usa la tarea RemoveDuplicates para quitar elementos duplicados de la colección de elementos especificada.
+ms.custom: SEO-VS-2020
 ms.date: 03/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632789"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048680"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (tarea)
 
@@ -31,14 +33,14 @@ Quita los elementos duplicados de la colección de elementos especificada.
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea `RemoveDuplicates`.
+ En la siguiente tabla se describen los parámetros de la tarea `RemoveDuplicates` .
 
 |Parámetro|Description|
 |---------------|-----------------|
 |`Filtered`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene una colección de elementos sin elementos duplicados. Se conserva el orden de los elementos de entrada, manteniendo la primera instancia de cada elemento duplicado.|
 |`Inputs`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Colección de elementos de la que se van a quitar los elementos duplicados.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Esta tarea no distingue mayúsculas de minúsculas y no compara los metadatos de los elementos al determinar los duplicados.
 
@@ -70,7 +72,7 @@ Quita los elementos duplicados de la colección de elementos especificada.
 </Project>
 ```
 
- En el ejemplo siguiente se muestra que la tarea `RemoveDuplicates` conserva su orden de entrada. Cuando la tarea está completa, la colección de elementos `FilteredItems` contiene los elementos *MyFile2.cs*, *MyFile1.cs* y *MyFile3.cs*, en ese orden.
+ En el ejemplo siguiente se muestra que la tarea `RemoveDuplicates` conserva su orden de entrada. Cuando la tarea está completa, la colección de elementos `FilteredItems` contiene los elementos *MyFile2.cs* , *MyFile1.cs* y *MyFile3.cs* , en ese orden.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

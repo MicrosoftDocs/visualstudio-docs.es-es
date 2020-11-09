@@ -1,5 +1,7 @@
 ---
 title: Ventanas del depurador de XSLT
+description: Obtenga información sobre las partes de la UI del depurador de XSLT que controlan el comportamiento de depuración específico de XSLT, incluidas las ventanas Variables locales, Salida, Puntos de interrupción, Pila de llamadas e Inspección.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592885"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045800"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 

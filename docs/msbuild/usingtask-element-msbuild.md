@@ -1,5 +1,7 @@
 ---
 title: Elemento UsingTask (MSBuild) | Microsoft Docs
+description: Obtenga información sobre el elemento UsingTask de MSBuild, que asigna la tarea a la que se hace referencia en un elemento de tarea al ensamblado que contiene la implementación de la tarea.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289162"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046119"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -83,7 +85,7 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 
 El ensamblado que contiene la tarea personalizada se carga cuando se usa `Task` por primera vez.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
 
  En el ejemplo siguiente se muestra cómo usar el elemento `UsingTask` con un atributo `AssemblyName`.
 
@@ -100,7 +102,7 @@ El ensamblado que contiene la tarea personalizada se carga cuando se usa `Task` 
 </UsingTask>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
 
  En el ejemplo siguiente se muestra cómo usar el elemento `UsingTask` con un atributo `AssemblyFile`.
 

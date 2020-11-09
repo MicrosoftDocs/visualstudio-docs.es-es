@@ -1,5 +1,7 @@
 ---
 title: Incorporación de nodos al área de trabajo desde la vista Inicio del Diseñador de esquemas XML
+description: Obtenga información sobre cómo agregar nodos al área de trabajo del diseñador de esquemas XML mediante los comandos de la vista Inicio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7bf5b2006afa8efc6a6560d99e62244909628f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c456220ecf8fbe17ce65372c4f7904f54181fe2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815232"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049276"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedimiento Adición de nodos al área de trabajo desde la vista Inicio
 
@@ -27,7 +29,7 @@ En este tema se describe cómo agregar nodos globales al [área de trabajo del D
 
      Aparecerá la vista Inicio.
 
-     En la sección **Detalles del conjunto de esquemas**, observe que hay dos (**2**) **Tipos complejos globales**.
+     En la sección **Detalles del conjunto de esquemas** , observe que hay dos ( **2** ) **Tipos complejos globales**.
 
 3. Haga clic en el vínculo **agregar** situado a la derecha del título **Tipos complejos globales**.
 
