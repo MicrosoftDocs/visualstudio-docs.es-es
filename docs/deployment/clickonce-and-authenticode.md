@@ -1,5 +1,7 @@
 ---
 title: ClickOnce y Authenticode | Microsoft Docs
+description: Obtenga información sobre los certificados que Authenticode usa para comprobar la autenticidad de las aplicaciones. Obtenga información acerca de cómo se validan y almacenan los certificados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed7945dac94527df51dcdd601113f8874cd36142
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 07b40cb9c4e1d79390bb4a0541e1cb5bd8862d3a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641632"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383149"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce y Authenticode
 *Authenticode* es una tecnología de Microsoft que usa una criptografía estándar del sector para firmar el código de una aplicación con certificados digitales que comprueban la autenticidad del publicador de la aplicación. Gracias al uso de Authenticode para la implementación de aplicaciones, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] reduce el riesgo de recibir un caballo de Troya. Un caballo de Troya es un virus u otro programa dañino creado por un tercero malintencionado y que aparenta ser un programa legítimo procedente de una fuente verificada y de confianza. La firma de implementaciones de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un certificado digital es un paso opcional para comprobar que los ensamblados y los archivos no se han alterado.
@@ -41,7 +43,7 @@ ms.locfileid: "89641632"
 
 - Recibir un certificado de un grupo de su organización que se encargue de crear certificados digitales.
 
-- Genere su propio certificado con el cmdlet New-SelfSignedCertificate de PowerShell o mediante *MakeCert.exe*, que se incluye con [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
+- Genere su propio certificado con el cmdlet de PowerShell de New-SelfSignedCertificate o mediante *MakeCert.exe* , que se incluye con [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>Cómo ayuda a los usuarios el uso de entidades de certificación
  Un certificado generado mediante New-SelfSignedCertificate o *MakeCert.exe* utilidad se suele denominar una *SelfCert* o un *certificado de prueba*. Este tipo de certificado funciona igual que un archivo *.snk* en .NET Framework. Consta solo de un par de claves criptográficas pública y privada y no contiene información comprobable del publicador. Puede usar los certificados SelfCert para implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de gran confianza en una intranet. Pero cuando estas aplicaciones se ejecutan en un equipo cliente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las identificará como procedentes de un editor desconocido. De forma predeterminada, las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmadas con SelfCert e implementadas a través de Internet no pueden usar la implementación de aplicaciones de confianza.
@@ -64,9 +66,9 @@ ms.locfileid: "89641632"
 
 ### <a name="store-certificates"></a>Almacenar certificados
 
-- Puede almacenar los certificados como un archivo *. pfx* en el sistema de archivos, o puede almacenarlos dentro de un contenedor de claves. Un usuario de un dominio de Windows puede tener un determinado número de contenedores de claves. De forma predeterminada, *MakeCert.exe* almacenará los certificados en el contenedor de claves personales, a menos que especifique que debe guardarlos en un archivo *. pfx* . *Mage.exe* y *MageUI.exe*, las herramientas de [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] que sirven para crear implementaciones de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], le permiten usar certificados almacenados en cualquier modo.
+- Puede almacenar los certificados como un archivo *. pfx* en el sistema de archivos, o puede almacenarlos dentro de un contenedor de claves. Un usuario de un dominio de Windows puede tener un determinado número de contenedores de claves. De forma predeterminada, *MakeCert.exe* almacenará los certificados en el contenedor de claves personales, a menos que especifique que debe guardarlos en un archivo *. pfx* . *Mage.exe* y *MageUI.exe* , las herramientas de [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] que sirven para crear implementaciones de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], le permiten usar certificados almacenados en cualquier modo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Seguridad e implementación de ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)

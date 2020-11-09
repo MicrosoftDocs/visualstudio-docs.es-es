@@ -1,5 +1,6 @@
 ---
 title: Agregar controles personalizados a la ventana de orígenes de datos
+description: Agregue controles personalizados a la ventana orígenes de datos en Visual Studio. Personalizar la lista de controles enlazables. Agregar controles asociados.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283078"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382070"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
 
@@ -39,7 +40,7 @@ Para agregar o quitar controles de la lista de controles disponibles para los el
 2. En la ventana **orígenes de datos** , haga clic en un elemento que forme parte de un origen de datos que haya agregado a la ventana y, a continuación, haga clic en el menú desplegable del elemento.
 
    > [!TIP]
-   > Si la ventana orígenes de datos no está abierta, ábrala seleccionando **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+   > Si la ventana orígenes de datos no está abierta, ábrala seleccionando **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
 3. En el menú desplegable, haga clic en **personalizar**. Se abre uno de los cuadros de diálogo siguientes:
 
@@ -60,7 +61,7 @@ Para agregar o quitar controles de la lista de controles disponibles para los el
     > [!NOTE]
     > Si el control que desea seleccionar no aparece en el cuadro **controles asociados** , debe agregar el control a la lista. Para obtener más información, vea [Agregar controles asociados](#add-associated-controls).
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
 7. En la ventana **orígenes de datos** , haga clic en un elemento del tipo de datos al que acaba de asociar uno o varios controles y, a continuación, haga clic en el menú desplegable del elemento.
 

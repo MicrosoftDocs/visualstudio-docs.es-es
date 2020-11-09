@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento compatibleFrameworks (implementación ClickOnce) | Microsoft Docs'
+description: El elemento compatibleFrameworks identifica las versiones del .NET Framework donde se puede instalar y ejecutar esta aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746040"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383071"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;elemento compatibleFrameworks (implementación ClickOnce)
 Identifica las versiones de .NET Framework en las que se puede instalar y ejecutar esta aplicación.
@@ -27,16 +29,16 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 > [!NOTE]
 > [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) no admite el `compatibleFrameworks` elemento cuando se guarda un manifiesto de aplicación que ya se ha firmado con un certificado mediante [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). En su lugar, debe usar [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <compatibleFrameworks
-      SupportUrl> 
+      SupportUrl> 
    <framework
       targetVersion
       profile
       supportedRuntime
-   /> 
+   /> 
 </ compatibleFrameworks>
 ```
 
@@ -58,7 +60,7 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 |`profile`|Necesario. Especifica el perfil de la .NET Framework de destino.|
 |`supportedRuntime`|Necesario. Especifica el número de versión del tiempo de ejecución asociado a la .NET Framework de destino.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se muestra un `compatibleFrameworks` elemento en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. Esta implementación se puede ejecutar en el [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] . También se puede ejecutar en el .NET Framework 4 porque es un superconjunto de [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] .
@@ -72,5 +74,5 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)

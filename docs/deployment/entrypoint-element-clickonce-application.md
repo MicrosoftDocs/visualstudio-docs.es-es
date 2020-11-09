@@ -1,5 +1,7 @@
 ---
 title: '&lt;entryPoint &gt; (elemento, aplicación ClickOnce) | Microsoft Docs'
+description: El elemento entryPoint identifica el ensamblado que se debe ejecutar cuando se ejecuta esta aplicación ClickOnce en un equipo cliente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928608"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382817"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint &gt; (elemento, aplicación ClickOnce)
 Identifica el ensamblado que se debe ejecutar cuando esta [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecuta en un equipo cliente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <entryPoint
@@ -110,5 +112,5 @@ Identifica el ensamblado que se debe ejecutar cuando esta [!INCLUDE[ndptecclick]
   </entryPoint>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)

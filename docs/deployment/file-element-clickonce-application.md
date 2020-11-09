@@ -1,5 +1,7 @@
 ---
 title: '&lt;file &gt; (elemento, aplicación ClickOnce) | Microsoft Docs'
+description: El elemento File identifica todos los archivos no ensamblados descargados y utilizados por la aplicación. El elemento file es opcional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,17 +24,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900286"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382746"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file &gt; (elemento, aplicación ClickOnce)
 Identifica todos los archivos no ensamblados descargados y utilizados por la aplicación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <file
@@ -151,7 +153,7 @@ Identifica todos los archivos no ensamblados descargados y utilizados por la apl
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`versioned`|Opcional. Controla si el nombre de la clase de ventana interna utilizada en el registro contiene la versión del ensamblado que contiene la clase de ventana. El valor de este atributo puede ser `yes` o `no` . El valor predeterminado es `yes`. El valor `no` solo se debe usar si la misma clase de ventana está definida por un componente en paralelo y un componente no en paralelo equivalente y desea tratarlos como la misma clase de ventana... Tenga en cuenta que se aplican las reglas habituales sobre el registro de clases de ventana, solo el primer componente que registra la clase de ventana podrá registrarla, ya que no tiene aplicada una versión.|
+|`versioned`|Opcional. Controla si el nombre de la clase de ventana interna utilizada en el registro contiene la versión del ensamblado que contiene la clase de ventana. El valor de este atributo puede ser `yes` o `no` . De manera predeterminada, es `yes`. El valor `no` solo se debe usar si la misma clase de ventana está definida por un componente en paralelo y un componente no en paralelo equivalente y desea tratarlos como la misma clase de ventana... Tenga en cuenta que se aplican las reglas habituales sobre el registro de clases de ventana, solo el primer componente que registra la clase de ventana podrá registrarla, ya que no tiene aplicada una versión.|
 
 ## <a name="hash"></a>hash
  El `hash` elemento es un elemento secundario opcional del `file` elemento. El elemento `hash` no tiene atributos.
@@ -198,5 +200,5 @@ Identifica todos los archivos no ensamblados descargados y utilizados por la apl
 </file>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)

@@ -1,5 +1,7 @@
 ---
 title: '&lt;Assembly &gt; (elemento, implementación ClickOnce) | Microsoft Docs'
+description: El elemento Assembly es el elemento raíz y es necesario en la implementación ClickOnce. Su primer elemento contenido debe ser un elemento assemblyIdentity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929075"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383240"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly &gt; (elemento, implementación ClickOnce)
 El elemento de nivel superior para el manifiesto de implementación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```
@@ -62,6 +64,6 @@ El elemento de nivel superior para el manifiesto de implementación.
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [\<assembly> Element](../deployment/assembly-element-clickonce-application.md)

@@ -1,5 +1,7 @@
 ---
 title: Referencia de la API no administrada de ClickOnce | Microsoft Docs
+description: Obtenga información sobre las API públicas no administradas de ClickOnce desde dfshim.dll, incluidas CleanOnlineAppCache, GetDeploymentDataFromManifest y LaunchApplication.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900285"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382616"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referencia de la API no administrada de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API públicas no administradas de dfshim.dll.
@@ -89,5 +91,5 @@ ms.locfileid: "62900285"
 ### <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un valor HRESULT que representa el error. Si se produce una excepción administrada, devuelve 0x80020009 (DISP_E_EXCEPTION).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

@@ -1,5 +1,7 @@
 ---
 title: '&lt;Deployment &gt; (elemento, implementación ClickOnce) | Microsoft Docs'
+description: El elemento de implementación identifica los atributos que se usan para la implementación de actualizaciones y la exposición al sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988ce0859ab24377395cc4077f9e6fa42e0487a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70887857"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382863"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Deployment &gt; (elemento, implementación de ClickOnce)
 Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -100,7 +102,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
 |------------| - |
 | `codebase` | Necesario. Identifica la ubicación, como un identificador uniforme de recursos (URI), del manifiesto de implementación que se utiliza para actualizar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este elemento también permite el reenvío de ubicaciones de actualización para instalaciones basadas en CD. Debe ser un URI válido. |
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Puede configurar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación para que busque actualizaciones en el inicio, busque actualizaciones después del inicio o no compruebe nunca si hay actualizaciones. Para buscar actualizaciones en el inicio, asegúrese de que el `beforeApplicationStartup` elemento existe en el `update` elemento. Para buscar actualizaciones después del inicio, asegúrese de que el `expiration` elemento existe en el `update` elemento y que se proporcionan intervalos de actualización.
 
  Para deshabilitar la comprobación de actualizaciones, quite el `subscription` elemento. Cuando se especifica en el manifiesto de implementación para no buscar nunca actualizaciones, todavía puede comprobar manualmente si hay actualizaciones mediante el <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> método.
@@ -121,5 +123,5 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
   </deployment>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)

@@ -1,5 +1,6 @@
 ---
 title: Enlazar controles de WPF a un servicio de datos de WCF
+description: Enlazar controles de WPF a un servicio de datos de WCF en Visual Studio. Los controles se enlazan a los registros de clientes que se encapsulan en un servicio de datos de WCF.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7371e08925ad9227cf15a93a339e6e0ed36d11db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c627a9f09d5400e321bcc8a141c36ec46cad7958
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282857"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382213"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 
@@ -62,7 +63,7 @@ El conocimiento previo de los siguientes conceptos es útil, aunque no necesario
 
 1. Para iniciar este tutorial, cree un proyecto de **aplicación web** de C# o Visual Basic ASP.net. Asigne al proyecto el nombre **AdventureWorksService**.
 
-2. En el **Explorador de soluciones**, haga clic con el botón derecho en **Default.aspx** y seleccione **Eliminar**. Este archivo no es necesario para el tutorial.
+2. En el **Explorador de soluciones** , haga clic con el botón derecho en **Default.aspx** y seleccione **Eliminar**. Este archivo no es necesario para el tutorial.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Crear un Entity Data Model para el servicio
 
@@ -76,9 +77,9 @@ Para exponer datos a una aplicación mediante un servicio de datos de WCF, debe 
 
      Se abre el **Asistente para Entity Data Model**.
 
-4. En la página **Elegir contenido del modelo**, haga clic en **Generar desde la base de datos** y después en **Siguiente**.
+4. En la página **Elegir contenido del modelo** , haga clic en **Generar desde la base de datos** y después en **Siguiente**.
 
-5. En la página **Elegir la conexión de datos**, seleccione una de estas opciones:
+5. En la página **Elegir la conexión de datos** , seleccione una de estas opciones:
 
     - Si una conexión de datos a la base de datos de ejemplo AdventureWorksLT está disponible en la lista desplegable, selecciónela.
 
@@ -86,7 +87,7 @@ Para exponer datos a una aplicación mediante un servicio de datos de WCF, debe 
 
 6. En la página **Elegir la conexión de datos** asegúrese de que la opción **Guardar configuración de conexión de la entidad en App.Config como** está seleccionada y haga clic en **Siguiente**.
 
-7. En la página **Elija los objetos de base de datos**, expanda el nodo **Tablas** y seleccione la tabla **SalesOrderHeader**.
+7. En la página **Elija los objetos de base de datos** , expanda el nodo **Tablas** y seleccione la tabla **SalesOrderHeader**.
 
 8. Haga clic en **Finalizar**
 
@@ -94,9 +95,9 @@ Para exponer datos a una aplicación mediante un servicio de datos de WCF, debe 
 
 Cree un servicio de datos de WCF para exponer los datos de la Entity Data Model a una aplicación de WPF:
 
-1. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
+1. En el menú **Proyecto** , seleccione **Agregar nuevo elemento**.
 
-2. En la lista **Plantillas instaladas**, haga clic en **Web** y seleccione el elemento de proyecto **Servicio de datos de WCF**.
+2. En la lista **Plantillas instaladas** , haga clic en **Web** y seleccione el elemento de proyecto **Servicio de datos de WCF**.
 
 3. En el cuadro **nombre** , escriba `AdventureWorksService.svc` y haga clic en **Agregar**.
 
@@ -119,13 +120,13 @@ Debe configurar el servicio para trabajar con el Entity Data Model que ha creado
 
 Para mostrar los datos del servicio de datos de WCF, cree una nueva aplicación WPF con un origen de datos basado en el servicio. Más adelante en este procedimiento, agregará controles enlazados a datos a la aplicación.
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de la solución, haga clic en **Agregar** y seleccione **Nuevo proyecto**.
+1. En el **Explorador de soluciones** , haga clic con el botón derecho en el nodo de la solución, haga clic en **Agregar** y seleccione **Nuevo proyecto**.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** o **Visual C#** y después expanda **Windows**.
+2. En el cuadro de diálogo **Nuevo proyecto** , expanda **Visual Basic** o **Visual C#** y después expanda **Windows**.
 
 3. Seleccione la plantilla de proyecto **Aplicación WPF**.
 
-4. En el cuadro **Nombre**, escriba `AdventureWorksSalesEditor` y haga clic en **Aceptar**.
+4. En el cuadro **Nombre** , escriba `AdventureWorksSalesEditor` y haga clic en **Aceptar**.
 
    Visual Studio agrega el `AdventureWorksSalesEditor` proyecto a la solución.
 
@@ -139,17 +140,17 @@ Para mostrar los datos del servicio de datos de WCF, cree una nueva aplicación 
 
 7. En la página **Elija un tipo de origen de datos** del asistente, seleccione **Servicio** y haga clic en **Siguiente**.
 
-8. En el cuadro de diálogo **Agregar referencia de servicio**, haga clic en **Detectar**.
+8. En el cuadro de diálogo **Agregar referencia de servicio** , haga clic en **Detectar**.
 
    Visual Studio busca los servicios disponibles en la solución actual y agrega `AdventureWorksService.svc` a la lista de servicios disponibles en el cuadro **servicios** .
 
-9. En el cuadro **Espacio de nombres**, escriba **AdventureWorksService**.
+9. En el cuadro **Espacio de nombres** , escriba **AdventureWorksService**.
 
-10. En el cuadro **Servicios**, haga clic en **AdventureWorksService.svc** y haga clic en **Aceptar**.
+10. En el cuadro **Servicios** , haga clic en **AdventureWorksService.svc** y haga clic en **Aceptar**.
 
     Visual Studio descarga la información del servicio y después vuelve al **Asistente para configuración de orígenes de datos**.
 
-11. En la página **Agregar referencia de servicio**, haga clic en **Finalizar**.
+11. En la página **Agregar referencia de servicio** , haga clic en **Finalizar**.
 
     Visual Studio agrega los nodos que representan los datos devueltos por el servicio a la ventana **Orígenes de datos**.
 
@@ -157,7 +158,7 @@ Para mostrar los datos del servicio de datos de WCF, cree una nueva aplicación 
 
 Agregue varios botones a la ventana modificando el código XAML en WPF Designer. Más adelante en este tutorial, agregará código que permite a los usuarios ver y actualizar los registros de ventas usando estos botones.
 
-1. En el **Explorador de soluciones**, haga doble clic en **MainWindow.xaml**.
+1. En el **Explorador de soluciones** , haga doble clic en **MainWindow.xaml**.
 
    La ventana se abre en WPF Designer.
 
@@ -179,11 +180,11 @@ Agregue varios botones a la ventana modificando el código XAML en WPF Designer.
 
 Cree controles que muestren los registros de clientes arrastrando el `SalesOrderHeaders` nodo desde la ventana **orígenes de datos** hasta el diseñador.
 
-1. En la ventana **Orígenes de datos**, haga clic en el menú desplegable del nodo **SalesOrderHeaders** y seleccione **Detalles**.
+1. En la ventana **Orígenes de datos** , haga clic en el menú desplegable del nodo **SalesOrderHeaders** y seleccione **Detalles**.
 
 2. Expanda el nodo **SalesOrderHeaders**.
 
-3. En este ejemplo no se mostrarán algunos campos; por lo tanto, haga clic en el menú desplegable junto a los siguientes nodos y seleccione **Ninguno**:
+3. En este ejemplo no se mostrarán algunos campos; por lo tanto, haga clic en el menú desplegable junto a los siguientes nodos y seleccione **Ninguno** :
 
     - **CreditCardApprovalCode**
 
@@ -197,13 +198,13 @@ Cree controles que muestren los registros de clientes arrastrando el `SalesOrder
 
     Esta acción impide que Visual Studio cree controles enlazados a datos para estos nodos en el paso siguiente. En este tutorial, supongamos que el usuario final no necesita ver estos datos.
 
-4. Desde la ventana **Orígenes de datos**, arrastre el nodo **SalesOrderHeaders** a la fila de la cuadrícula situada debajo de la fila que contiene los botones.
+4. Desde la ventana **Orígenes de datos** , arrastre el nodo **SalesOrderHeaders** a la fila de la cuadrícula situada debajo de la fila que contiene los botones.
 
      Visual Studio genera el código XAML que crea un conjunto de controles que están enlazados a los datos de la tabla **Producto**. Para obtener más información sobre el código XAML y el código generado, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 5. En el diseñador, haga clic en el cuadro de texto junto a la etiqueta **Customer ID**.
 
-6. En la ventana **Propiedades**, active la casilla junto a la propiedad **IsReadOnly**.
+6. En la ventana **Propiedades** , active la casilla junto a la propiedad **IsReadOnly**.
 
 7. Establezca la propiedad **IsReadOnly** de cada uno de los cuadros de texto siguientes:
 
@@ -248,7 +249,7 @@ Agregue código que permita a los usuarios desplazarse por los registros de vent
 
 ## <a name="save-changes-to-sales-records"></a>Guardar cambios en los registros de ventas
 
-Agregue código que permita a los usuarios ver y guardar cambios en los registros de ventas usando el botón **Guardar cambios**:
+Agregue código que permita a los usuarios ver y guardar cambios en los registros de ventas usando el botón **Guardar cambios** :
 
 1. En el diseñador, haga doble clic en el botón **Guardar cambios** .
 
@@ -269,9 +270,9 @@ Compile y ejecute la aplicación para comprobar que puede ver y actualizar los r
 
      Visual Studio inicia el proyecto **AdventureWorksService** sin depurarlo.
 
-3. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **AdventureWorksSalesEditor**.
+3. En el **Explorador de soluciones** , haga clic con el botón derecho en el proyecto **AdventureWorksSalesEditor**.
 
-4. En el menú contextual, en **depurar**, haga clic en **Iniciar nueva instancia**.
+4. En el menú contextual, en **depurar** , haga clic en **Iniciar nueva instancia**.
 
      La aplicación se ejecuta. Verifique lo siguiente:
 
@@ -295,10 +296,10 @@ Una vez completado este tutorial, puede realizar las siguientes tareas relaciona
 
 - Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, vea [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [Enlazar controles WPF a un conjunto de DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md)
+- [Enlazar controles de WPF a un conjunto de datos](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [Información general de WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Información general sobre Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
 - [Información general sobre el enlace de datos (.NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)

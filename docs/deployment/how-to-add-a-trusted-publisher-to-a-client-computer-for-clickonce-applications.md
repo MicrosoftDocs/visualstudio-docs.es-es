@@ -1,5 +1,6 @@
 ---
 title: Agregar publicador de confianza al cuadro cliente (ClickOnce)
+description: Obtenga información acerca de cómo agregar un certificado a un equipo cliente para que las aplicaciones ClickOnce se ejecuten en un nivel de confianza superior sin preguntar al usuario.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809812"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382707"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedimientos para agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce
 Con la implementación de aplicaciones de confianza, puede configurar equipos cliente para que las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se ejecuten con un nivel superior de confianza sin preguntar al usuario. En los procedimientos siguientes se muestra cómo usar la herramienta de línea de comandos CertMgr.exe para agregar el certificado de un publicador al almacén de publicadores de confianza de un equipo cliente.
@@ -39,7 +40,7 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
 1. Obtenga un certificado digital de una CA.
 
-2. Exporte el certificado en el formato Base64 X.509 (*.cer*). Para obtener más información sobre los formatos de certificado, vea [Exportar un certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exporte el certificado en el formato Base64 X.509 ( *.cer* ). Para obtener más información sobre los formatos de certificado, vea [Exportar un certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:
 
@@ -49,7 +50,7 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
 1. Obtenga un certificado digital de una CA.
 
-2. Exporte el certificado en el formato Base64 X.509 (*.cer*). Para obtener más información acerca de los formatos de certificado, consulte [exportar un certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exporte el certificado en el formato Base64 X.509 ( *.cer* ). Para obtener más información acerca de los formatos de certificado, consulte [exportar un certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:
 
@@ -57,7 +58,7 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

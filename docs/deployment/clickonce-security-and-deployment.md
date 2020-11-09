@@ -1,5 +1,7 @@
 ---
 title: Seguridad e implementación de ClickOnce | Microsoft Docs
+description: Obtenga información sobre la compatibilidad de Visual Studio con ClickOnce, una tecnología de implementación que le permite crear aplicaciones basadas en Windows de actualización automática.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d33e99d11007ca4684f3d875620e2baeb7ddc1e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285514"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382682"
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una tecnología de implementación que permite crear aplicaciones basadas en Windows de actualización automática que se pueden instalar y ejecutar con una interacción mínima del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con la tecnología ClickOnce si ha desarrollado sus proyectos con Visual Basic y Visual C#. Para obtener información sobre la implementación de aplicaciones Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
@@ -38,7 +40,7 @@ ms.locfileid: "85285514"
   En el pasado, estos problemas a veces hacían que los desarrolladores decidieran crear aplicaciones web en lugar de aplicaciones basadas en Windows, con lo que se sacrificaba una interfaz de usuario enriquecida para facilitar la instalación. Mediante el uso de aplicaciones implementadas con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , puede tener las mejores tecnologías.
 
 ## <a name="what-is-a-clickonce-application"></a>¿Qué es una aplicación ClickOnce?
- Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es cualquier Windows Presentation Foundation (*. XBAP*), Windows Forms (*. exe*), una aplicación de consola (*. exe*) o una solución de Office (*. dll*) publicada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología. Puede publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación de tres maneras diferentes: desde una página web, desde un recurso compartido de archivos de red o desde un medio, como un CD-ROM. Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se puede instalar en el equipo de un usuario final y ejecutarse localmente incluso cuando el equipo está sin conexión, o bien se puede ejecutar en modo de solo conexión sin tener que instalar nada permanentemente en el equipo del usuario final. Para obtener más información, vea [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es cualquier Windows Presentation Foundation ( *. XBAP* ), Windows Forms ( *. exe* ), una aplicación de consola ( *. exe* ) o una solución de Office ( *. dll* ) publicada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología. Puede publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación de tres maneras diferentes: desde una página web, desde un recurso compartido de archivos de red o desde un medio, como un CD-ROM. Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se puede instalar en el equipo de un usuario final y ejecutarse localmente incluso cuando el equipo está sin conexión, o bien se puede ejecutar en modo de solo conexión sin tener que instalar nada permanentemente en el equipo del usuario final. Para obtener más información, vea [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden actualizarse automáticamente. pueden comprobar si hay versiones más recientes a medida que estén disponibles y reemplazar automáticamente los archivos actualizados. El desarrollador puede especificar el comportamiento de actualización, y un administrador de red puede igualmente controlar las estrategias del proceso, por ejemplo, al marcar actualizaciones como obligatorias. El usuario final o un administrador también pueden revertir las actualizaciones a una versión anterior. Para obtener más información, vea [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -60,7 +62,7 @@ ms.locfileid: "85285514"
  La [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquitectura de implementación principal se basa en dos archivos de manifiesto XML: un manifiesto de aplicación y un manifiesto de implementación. Los archivos se usan para describir el lugar desde el que se instalan las aplicaciones ClickOnce, cómo se actualizan y cuándo se actualizan.
 
 ### <a name="publish-clickonce-applications"></a>Publicación de aplicaciones ClickOnce
- El manifiesto de aplicación describe la propia aplicación. Esto incluye los ensamblados, las dependencias y los archivos que componen la aplicación, los permisos necesarios y la ubicación en la que estarán disponibles las actualizaciones. El desarrollador de aplicaciones crea el manifiesto de aplicación mediante el Asistente para publicación de Visual Studio o el Herramienta de generación y edición de manifiestos (*Mage.exe*) en [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ El manifiesto de aplicación describe la propia aplicación. Esto incluye los ensamblados, las dependencias y los archivos que componen la aplicación, los permisos necesarios y la ubicación en la que estarán disponibles las actualizaciones. El desarrollador de aplicaciones crea el manifiesto de aplicación mediante el Asistente para publicación de Visual Studio o el Herramienta de generación y edición de manifiestos ( *Mage.exe* ) en [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  El manifiesto de implementación describe cómo se implementa la aplicación. Esto incluye la ubicación del manifiesto de aplicación y la versión de la aplicación que deben ejecutar los clientes.
 
@@ -104,17 +106,17 @@ ms.locfileid: "85285514"
 
  En la tabla siguiente se muestra la versión .NET Framework necesaria para admitir aplicaciones ClickOnce en estos exploradores.
 
-|Explorador|Versión de .NET Framework|
+|Browser|Versión de .NET Framework|
 |-------------|----------------------------|
 |Internet Explorer|2.0, 3.0, 3.5, 3.5 SP1, 4|
 |Firefox|2.0 SP1, 3.5 SP1, 4|
-|Chrome|3,5|
-|Microsoft Edge|3,5|
+|Chrome|3.5|
+|Microsoft Edge|3.5|
 
 ## <a name="see-also"></a>Vea también
 - [Implementación de ClickOnce en Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)
 - [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Implementar componentes COM con ClickOnce](../deployment/deploying-com-components-with-clickonce.md)
-- [Compilar aplicaciones ClickOnce desde la línea de comandos](../deployment/building-clickonce-applications-from-the-command-line.md)
+- [Compilación de aplicaciones ClickOnce desde la línea de comandos](../deployment/building-clickonce-applications-from-the-command-line.md)
 - [Depurar aplicaciones ClickOnce que usan System. Deployment. Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)

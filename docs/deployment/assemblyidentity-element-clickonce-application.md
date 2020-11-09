@@ -1,5 +1,7 @@
 ---
 title: '&lt;assemblyIdentity &gt; (elemento, aplicación ClickOnce) | Microsoft Docs'
+description: El elemento assemblyIdentity es necesario en la aplicación ClickOnce. No contiene ningún elemento secundario y tiene atributos que se describen en este artículo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900672"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383214"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity &gt; (elemento, aplicación ClickOnce)
 Identifica la aplicación implementada en una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 

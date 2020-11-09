@@ -1,5 +1,7 @@
 ---
 title: Elegir una estrategia de actualización de ClickOnce | Microsoft Docs
+description: Obtenga información sobre cómo una aplicación ClickOnce admite las actualizaciones automáticas y las estrategias de actualización que puede usar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842670"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383162"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Selección de una estrategia de actualización de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proporcionar actualizaciones automáticas de aplicaciones. Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lee periódicamente su archivo de manifiesto de implementación para ver si hay actualizaciones disponibles para la aplicación. En caso afirmativo, la nueva versión de la aplicación se descarga y se ejecuta. Para una mayor eficiencia, se descargan sólo los archivos que han cambiado.
@@ -78,7 +80,7 @@ ms.locfileid: "90842670"
 > [!NOTE]
 > Aunque es posible obligar a que se efectúen las actualizaciones utilizando las otras estrategias de actualización, comprobar su existencia **Antes de que se inicie la aplicación** es la única manera de garantizar que no se pueda ejecutar una versión antigua. Si la actualización obligatoria se detecta al inicio, el usuario deberá aceptarla o cerrar la aplicación.
 
- Para marcar una actualización como obligatoria, haga clic en **Especifique la versión mínima requerida para esta aplicación** en el cuadro de diálogo **Actualizaciones de la aplicación** y después especifique la versión de publicación (**Principal**, **Secundaria**, **Compilación**, **Revisión**), que indica el número más bajo de versión de la aplicación que se puede instalar.
+ Para marcar una actualización como obligatoria, haga clic en **Especifique la versión mínima requerida para esta aplicación** en el cuadro de diálogo **Actualizaciones de la aplicación** y después especifique la versión de publicación ( **Principal** , **Secundaria** , **Compilación** , **Revisión** ), que indica el número más bajo de versión de la aplicación que se puede instalar.
 
  Es lo mismo que establecer el atributo **minimumRequiredVersion** del elemento **Deployment** del manifiesto de implementación; por ejemplo:
 

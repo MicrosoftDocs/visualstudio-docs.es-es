@@ -1,5 +1,7 @@
 ---
 title: '&lt;Description &gt; (elemento, implementación de ClickOnce) | Microsoft Docs'
+description: El elemento Description identifica la información de la aplicación que se usa para crear una presencia de Shell y un elemento agregar o quitar programas en el panel de control.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,22 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928800"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382837"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description &gt; (elemento, implementación de ClickOnce)
 Identifica la información de la aplicación que se usa para crear una presencia de Shell y un elemento **Agregar o quitar programas** en el panel de control.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 
-      <description 
-   publisher 
+      <description 
+   publisher 
    product
    suiteName
    supportUrl
@@ -61,5 +63,5 @@ Identifica la información de la aplicación que se usa para crear una presencia
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)

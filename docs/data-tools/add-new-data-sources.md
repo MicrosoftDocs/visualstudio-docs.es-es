@@ -1,5 +1,6 @@
 ---
 title: Agregar nuevos orígenes de datos
+description: Agregar nuevos orígenes de datos en Visual Studio. Un origen de datos es un objeto .NET que se conecta a un almacén de datos y pone los datos a disposición de una aplicación .NET.
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283052"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382122"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 
@@ -51,7 +52,7 @@ Los orígenes de datos se crean y editan mediante el **Asistente para la configu
 Después de crear un origen de datos, este aparece en la ventana de herramientas **orígenes de datos** .
 
 > [!TIP]
-> Para abrir la ventana **orígenes de datos** , asegúrese de que el proyecto está abierto y, a continuación, presione **MAYÚS** + **Alt** + **D** o elija **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
+> Para abrir la ventana **orígenes de datos** , asegúrese de que el proyecto está abierto y, a continuación, presione **MAYÚS** + **Alt** + **D** o elija **Ver**  >  **otros**  >  **orígenes de datos** de Windows.
 
 Puede arrastrar un origen de datos desde la ventana **orígenes de datos** hasta una superficie de diseño de formulario o un control. Esto hace que se genere código reutilizable que muestra los datos del almacén de datos.
 
@@ -95,7 +96,7 @@ Puede crear un origen de datos a partir de los siguientes tipos de servicios:
 
 - [Servicios WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- servicios Web
+- SERVICIOS WEB
 
     > [!NOTE]
     > Los elementos que aparecen en la ventana **orígenes de datos** dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, en la ventana **orígenes de datos** no aparece ningún elemento cuando se completa el asistente. Esto se debe a que los conjuntos de datos sin tipo no proporcionan un esquema y, por lo tanto, el asistente no tiene suficiente información para crear el origen de datos.

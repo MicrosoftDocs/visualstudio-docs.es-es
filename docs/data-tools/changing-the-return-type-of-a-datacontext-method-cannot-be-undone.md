@@ -1,6 +1,6 @@
 ---
 title: No se puede deshacer el cambio de tipo de valor devuelto
-description: El cambio del tipo devuelto de un método DataContext no se puede deshacer
+description: El cambio del tipo devuelto de un método DataContext no se puede deshacer. Vea información sobre este mensaje de Object Relational Designer de Visual Studio (Object Relational Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc0c3d6c1ddeab3ee92414e1264912f8b9d24b22
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c0f3728056f2703dc1c9553a4a165f9654ce5112
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036475"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381823"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>El cambio del tipo devuelto de un método DataContext no se puede deshacer
 
@@ -39,6 +39,6 @@ El tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> d
 
     Se crea un método de <xref:System.Data.Linq.DataContext> con el tipo de valor devuelto predeterminado original.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

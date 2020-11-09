@@ -1,5 +1,7 @@
 ---
 title: Depurar aplicaciones ClickOnce que usan System. Deployment. Application
+description: Obtenga información sobre cómo usar y personalizar las características de implementación avanzadas de ClickOnce mediante el acceso al modelo de objetos de implementación proporcionado por System. Deployment. Application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382658"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382993"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Depuración de aplicaciones ClickOnce que usan System.Deployment.Application
 En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la implementación le permite configurar el modo en que se actualiza una aplicación. Sin embargo, si necesita usar y personalizar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las características de implementación avanzada, deberá tener acceso al modelo de objetos de implementación que proporciona <xref:System.Deployment.Application> . Puede usar las <xref:System.Deployment.Application> API para tareas avanzadas como:
@@ -43,11 +45,11 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 2. Implemente la versión 1 de la aplicación.
 
-3. Cree una nueva solución en blanco. En el menú **Archivo**, haga clic en **Nuevo** y, a continuación,en **Proyecto**. En el cuadro de diálogo **nuevo proyecto** , abra el nodo **otros tipos de proyectos** y, a continuación, seleccione la carpeta **soluciones de Visual Studio** . En el panel **plantillas** , seleccione **solución en blanco**.
+3. Cree una nueva solución en blanco. En el menú **Archivo** , haga clic en **Nuevo** y, a continuación,en **Proyecto**. En el cuadro de diálogo **nuevo proyecto** , abra el nodo **otros tipos de proyectos** y, a continuación, seleccione la carpeta **soluciones de Visual Studio** . En el panel **plantillas** , seleccione **solución en blanco**.
 
-4. Agregue la ubicación de origen archivada a las propiedades de esta nueva solución. En **Explorador de soluciones**, haga clic con el botón secundario en el nodo de la solución y luego haga clic en **propiedades**. En el cuadro de diálogo **páginas de propiedades** , seleccione **depurar archivos de código fuente**y, a continuación, agregue el directorio del código fuente archivado. De lo contrario, el depurador encontrará los archivos de código fuente desactualizados, ya que las rutas de acceso del archivo de origen se registran en el archivo. pdb. Si el depurador utiliza archivos de código fuente obsoletos, verá un mensaje que indica que el origen no coincide.
+4. Agregue la ubicación de origen archivada a las propiedades de esta nueva solución. En **Explorador de soluciones** , haga clic con el botón secundario en el nodo de la solución y luego haga clic en **propiedades**. En el cuadro de diálogo **páginas de propiedades** , seleccione **depurar archivos de código fuente** y, a continuación, agregue el directorio del código fuente archivado. De lo contrario, el depurador encontrará los archivos de código fuente desactualizados, ya que las rutas de acceso del archivo de origen se registran en el archivo. pdb. Si el depurador utiliza archivos de código fuente obsoletos, verá un mensaje que indica que el origen no coincide.
 
-5. Asegúrese de que el depurador puede encontrar los archivos *. pdb* . Si los ha implementado con su aplicación, el depurador los busca automáticamente. Siempre busca primero en el ensamblado en cuestión. De lo contrario, deberá agregar la ruta de acceso de archivo a las **ubicaciones del archivo de símbolos (. pdb)** (para obtener acceso a esta opción, en el menú **herramientas** , haga clic en **Opciones**, abra el nodo **depuración** y haga clic en **símbolos**).
+5. Asegúrese de que el depurador puede encontrar los archivos *. pdb* . Si los ha implementado con su aplicación, el depurador los busca automáticamente. Siempre busca primero en el ensamblado en cuestión. De lo contrario, deberá agregar la ruta de acceso de archivo a las **ubicaciones del archivo de símbolos (. pdb)** (para obtener acceso a esta opción, en el menú **herramientas** , haga clic en **Opciones** , abra el nodo **depuración** y haga clic en **símbolos** ).
 
 6. Depure lo que ocurre entre las `CheckForUpdate` `Download` / `Update` llamadas al método y.
 

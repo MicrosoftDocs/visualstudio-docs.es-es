@@ -1,5 +1,6 @@
 ---
 title: Enlazar controles de Windows Forms a datos
+description: Enlace Windows Forms controles a los datos de Visual Studio para que pueda mostrar los datos a los usuarios de la aplicación.
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508553"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382382"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Enlazar controles de Windows Forms a datos en Visual Studio
 
@@ -31,7 +32,7 @@ Para mostrar datos a los usuarios de la aplicación, puede enlazarlos a Windows 
 ![Operación de arrastre de origen de datos](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Si la ventana **orígenes de datos** no está visible, puede abrirla eligiendo **Ver**  >  **otros**  >  **orígenes de datos**de Windows o presionando **MAYÚS** + **Alt** + **D**. Debe tener un proyecto abierto en Visual Studio para ver la ventana **orígenes de datos** .
+> Si la ventana **orígenes de datos** no está visible, puede abrirla eligiendo **Ver**  >  **otros**  >  **orígenes de datos** de Windows o presionando **MAYÚS** + **Alt** + **D**. Debe tener un proyecto abierto en Visual Studio para ver la ventana **orígenes de datos** .
 
 Antes de arrastrar elementos, puede establecer el tipo de control al que desea enlazar. Aparecen valores diferentes en función de si se elige la propia tabla o una columna individual.  También puede establecer valores personalizados. En el caso de una tabla, **detalles** significa que cada columna está enlazada a un control independiente.
 
@@ -67,7 +68,7 @@ También puede arrastrar elementos desde la ventana **orígenes de datos** hasta
 
 ## <a name="bind-to-data-in-individual-controls"></a>Enlazar a datos en controles individuales
 
-Al enlazar un origen de datos a los **detalles**, cada columna del conjunto de datos se enlaza a un control independiente.
+Al enlazar un origen de datos a los **detalles** , cada columna del conjunto de datos se enlaza a un control independiente.
 
 ![Enlazar el origen de datos a los detalles](../data-tools/media/raddata-bind-data-source-to-details.png)
 

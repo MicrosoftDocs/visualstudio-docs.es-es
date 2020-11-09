@@ -1,5 +1,7 @@
 ---
 title: '&lt;Elemento Commands &gt; (arranque) | Microsoft Docs'
+description: El elemento Commands implementa las pruebas en los elementos bajo InstallChecks y declara el paquete que se va a instalar si se produce un error en la prueba del programa previo ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900349"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383058"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Elemento Commands &gt; (arranque)
 El `Commands` elemento implementa las pruebas descritas por los elementos situados debajo del `InstallChecks` elemento y declara qué paquete [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] debe instalar el programa previo si se produce un error en la prueba.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Commands
@@ -70,7 +72,7 @@ El `Commands` elemento implementa las pruebas descritas por los elementos situad
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`Reboot`|Opcional. Determina si el sistema debe reiniciarse si alguno de los paquetes devuelve un código de salida de reinicio. En la lista siguiente se muestran los valores válidos:<br /><br /> `Defer`. El reinicio se aplaza hasta un momento posterior.<br /><br /> `Immediate`. Provoca un reinicio inmediato si uno de los paquetes devuelve un código de salida de reinicio.<br /><br /> `None`. Hace que se omitan las solicitudes de reinicio.<br /><br /> El valor predeterminado es `Immediate`.|
+|`Reboot`|Opcional. Determina si el sistema debe reiniciarse si alguno de los paquetes devuelve un código de salida de reinicio. En la lista siguiente se muestran los valores válidos:<br /><br /> `Defer`. El reinicio se aplaza hasta un momento posterior.<br /><br /> `Immediate`. Provoca un reinicio inmediato si uno de los paquetes devuelve un código de salida de reinicio.<br /><br /> `None`. Hace que se omitan las solicitudes de reinicio.<br /><br /> De manera predeterminada, es `Immediate`.|
 
 ## <a name="command"></a>Get-Help
  El elemento `Command` es un elemento secundario del elemento `Commands`. Un `Commands` elemento puede tener uno o más `Command` elementos. El elemento tiene los atributos siguientes.
@@ -123,7 +125,7 @@ El `Commands` elemento implementa las pruebas descritas por los elementos situad
 |`Value`|Necesario. Valor del código de salida al que `ExitCode` se aplica este elemento.|
 |`Result`|Necesario. Cómo debe responder la instalación a este código de salida. En la lista siguiente se muestran los valores válidos:<br /><br /> `Success`. Marca el paquete como instalado correctamente.<br /><br /> `SuccessReboot`. Marca el paquete como instalado correctamente e indica al sistema que se reinicie.<br /><br /> `Fail`. Marca el paquete como erróneo.<br /><br /> `FailReboot`. Marca el paquete como con errores y indica al sistema que se reinicie.|
 |`String`|Opcional. Valor que se va a mostrar al usuario en respuesta a este código de salida.|
-|`FormatMessageFromSystem`|Opcional. Determina si se debe usar el mensaje de error proporcionado por el sistema correspondiente al código de salida o el valor proporcionado en `String` . Los valores válidos son `true` , lo que significa que se debe usar el error proporcionado por el sistema, y `false` , que significa usar la cadena proporcionada por `String` . El valor predeterminado es `false`. Si esta propiedad es `false` , pero `String` no se establece, se usará el error proporcionado por el sistema.|
+|`FormatMessageFromSystem`|Opcional. Determina si se debe usar el mensaje de error proporcionado por el sistema correspondiente al código de salida o el valor proporcionado en `String` . Los valores válidos son `true` , lo que significa que se debe usar el error proporcionado por el sistema, y `false` , que significa usar la cadena proporcionada por `String` . De manera predeterminada, es `false`. Si esta propiedad es `false` , pero `String` no se establece, se usará el error proporcionado por el sistema.|
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se definen comandos para instalar el .NET Framework 2,0.
@@ -203,6 +205,6 @@ El `Commands` elemento implementa las pruebas descritas por los elementos situad
 </Commands>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
 - [\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)

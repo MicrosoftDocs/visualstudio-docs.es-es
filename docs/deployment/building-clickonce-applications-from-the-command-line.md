@@ -1,5 +1,7 @@
 ---
 title: Compilar aplicaciones ClickOnce desde la línea de comandos | Microsoft Docs
+description: Obtenga información sobre cómo compilar proyectos de Visual Studio desde la línea de comandos, lo que permite reproducir una compilación mediante un proceso automatizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065eea058ffa78c84428e031832e24837eb81d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74797200"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383201"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilación de aplicaciones ClickOnce desde la línea de comandos
 En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , puede compilar proyectos desde la línea de comandos, incluso si se crean en el entorno de desarrollo integrado (IDE) de. De hecho, puede volver a generar un proyecto creado con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en otro equipo que tenga solo el .NET Framework instalado. Esto le permite reproducir una compilación mediante un proceso automatizado, por ejemplo, en un laboratorio de compilación central o mediante técnicas de scripting avanzadas más allá del ámbito de la creación del proyecto.
@@ -29,7 +31,7 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Usar MSBuild para reproducir implementaciones de aplicaciones ClickOnce
  Al invocar MSBuild/target: Publish en la línea de comandos, indica al sistema MSBuild que compile el proyecto y cree una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación en la carpeta Publish. Esto es equivalente a seleccionar el comando **publicar** en el IDE.
 
- Este comando ejecuta *msbuild.exe*, que se encuentra en la ruta de acceso del entorno del símbolo del sistema de Visual Studio.
+ Este comando ejecuta *msbuild.exe* , que se encuentra en la ruta de acceso del entorno del símbolo del sistema de Visual Studio.
 
  Un "destino" es un indicador de MSBuild sobre cómo procesar el comando. Los destinos clave son el destino "Build" y el destino "Publish". El destino de compilación es el equivalente a seleccionar el comando de compilación (o presionar F5) en el IDE. Si solo desea compilar el proyecto, puede hacerlo escribiendo `msbuild` . Este comando funciona porque el destino de compilación es el destino predeterminado para todos los proyectos generados por [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Esto significa que no es necesario especificar explícitamente el destino de compilación. Por lo tanto, escribir `msbuild` es la misma operación que escribir `msbuild /target:build` .
 
@@ -63,9 +65,9 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 1. Salga de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. En el menú **Inicio** de Windows, haga clic en **todos los programas**, **Microsoft Visual Studio**, **Visual Studio Tools**y, a continuación, en **símbolo del sistema de Visual Studio**. Debe abrir un símbolo del sistema en la carpeta raíz del usuario actual.
+2. En el menú **Inicio** de Windows, haga clic en **todos los programas** , **Microsoft Visual Studio** , **Visual Studio Tools** y, a continuación, en **símbolo del sistema de Visual Studio**. Debe abrir un símbolo del sistema en la carpeta raíz del usuario actual.
 
-3. En el **símbolo del sistema de Visual Studio**, cambie el directorio actual a la ubicación del proyecto que acaba de crear. Por ejemplo, escriba `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. En el **símbolo del sistema de Visual Studio** , cambie el directorio actual a la ubicación del proyecto que acaba de crear. Por ejemplo, escriba `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Para quitar los archivos existentes generados en "para crear y publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] proyecto", escriba `rmdir /s publish` .
 
@@ -73,7 +75,7 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 5. Escriba `msbuild /target:publish`.
 
-   En los pasos anteriores se generará una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de aplicación completa en una subcarpeta del proyecto denominada **Publish**. *CmdLineDemo. Application* es el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. La carpeta *CmdLineDemo_1.0.0.0* contiene los archivos *CmdLineDemo.exe* y *CmdLineDemo.exe. manifest*, el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. *Setup.exe* es el arranque, que, de forma predeterminada, está configurado para instalar la .NET Framework. La carpeta DotNetFX contiene los redistribuibles para el .NET Framework. Este es el conjunto completo de archivos que necesita para implementar la aplicación a través de Internet o mediante UNC o CD/DVD.
+   En los pasos anteriores se generará una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de aplicación completa en una subcarpeta del proyecto denominada **Publish**. *CmdLineDemo. Application* es el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. La carpeta *CmdLineDemo_1.0.0.0* contiene los archivos *CmdLineDemo.exe* y *CmdLineDemo.exe. manifest* , el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. *Setup.exe* es el arranque, que, de forma predeterminada, está configurado para instalar la .NET Framework. La carpeta DotNetFX contiene los redistribuibles para el .NET Framework. Este es el conjunto completo de archivos que necesita para implementar la aplicación a través de Internet o mediante UNC o CD/DVD.
    
 > [!NOTE]
 > El sistema MSBuild usa la opción **PublishDir** para especificar la ubicación de salida, por ejemplo `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -81,7 +83,7 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="publish-properties"></a>Publicación de propiedades
  Al publicar la aplicación en los procedimientos anteriores, el Asistente para publicación inserta las siguientes propiedades en el archivo del proyecto. Estas propiedades influyen directamente en cómo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se produce la aplicación.
 
- En *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
+ En *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -109,7 +111,7 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- Las propiedades de publicación se controlan en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde las páginas de propiedades **publicar**, **seguridad**y **firma** del **Diseñador de proyectos**. A continuación se muestra una descripción de las propiedades de publicación, junto con una indicación de cómo se establece cada una en las distintas páginas de propiedades del diseñador de aplicaciones:
+ Las propiedades de publicación se controlan en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde las páginas de propiedades **publicar** , **seguridad** y **firma** del **Diseñador de proyectos**. A continuación se muestra una descripción de las propiedades de publicación, junto con una indicación de cómo se establece cada una en las distintas páginas de propiedades del diseñador de aplicaciones:
 
 - `AssemblyOriginatorKeyFile` determina el archivo de clave que se usa para firmar los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos de aplicación. Esta misma clave también se puede usar para asignar un nombre seguro a los ensamblados. Esta propiedad se establece en la página **firma** del **Diseñador de proyectos**.
 
@@ -167,7 +169,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |`SupportURL`|Opcional. Establezca esta opción de dirección URL si el sitio de soporte técnico es diferente del `PublishURL` . Por ejemplo, puede establecer el `SupportURL` en el sitio web de soporte al cliente de su compañía.|
 |`UpdateURL`|Opcional. Establezca esta opción de dirección URL si la ubicación de actualización es diferente de `InstallURL` . Por ejemplo, puede establecer `PublishURL` en una ruta de acceso FTP y establecer el `UpdateURL` en una dirección URL Web.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>

@@ -1,5 +1,6 @@
 ---
 title: Acceder a datos remotos & locales (aplicaciones ClickOnce)
+description: Obtenga información sobre la variedad de opciones que ClickOnce ofrece para leer y escribir datos, tanto de forma local como remota.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810476"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383266"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Acceso a datos locales y remotos en aplicaciones ClickOnce
 La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ofrece diversas opciones para leer y escribir datos, tanto local como remotamente.
@@ -38,7 +39,7 @@ La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecc
 ### <a name="clickonce-data-directory"></a>Directorio de datos de ClickOnce
  Cada aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalada en un equipo local dispone de un directorio de datos almacenado en la carpeta Documents and Settings del usuario. Todos los archivos incluidos en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] y marcados como archivos de «datos» se copian en este directorio cuando se instala una aplicación. Los archivos de datos pueden ser de cualquier tipo de archivo; los que se usan con más frecuencia son los archivos de texto, XML y de base de datos, como los archivos .mdb de Microsoft Access.
 
- El directorio de datos está pensado para los datos administrados de la aplicación, que son datos que la aplicación almacena y mantiene explícitamente. En cambio, todos los archivos estáticos y que no son de dependencia que no estén marcados como «datos» en el manifiesto de aplicación residirán en el directorio de la aplicación. Este directorio es donde residen los archivos ejecutables (*.exe*) y los ensamblados de la aplicación.
+ El directorio de datos está pensado para los datos administrados de la aplicación, que son datos que la aplicación almacena y mantiene explícitamente. En cambio, todos los archivos estáticos y que no son de dependencia que no estén marcados como «datos» en el manifiesto de aplicación residirán en el directorio de la aplicación. Este directorio es donde residen los archivos ejecutables ( *.exe* ) y los ensamblados de la aplicación.
 
 > [!NOTE]
 > Cuando se desinstala una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , también se quita su directorio de datos. No use nunca el directorio de datos para almacenar datos administrados del usuario final, como documentos.
@@ -61,7 +62,7 @@ La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecc
 
  También puede obtener la ruta de acceso del directorio de datos usando las variables correspondientes de la clase <xref:System.Windows.Forms.Application> , como <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- La manipulación de otros tipos de archivos puede requerir permisos adicionales. Por ejemplo, si desea utilizar un archivo de base de datos de Access (*. mdb*), la aplicación debe imponer plena confianza para poder usar las \<xref:System.Data> clases correspondientes.
+ La manipulación de otros tipos de archivos puede requerir permisos adicionales. Por ejemplo, si desea utilizar un archivo de base de datos de Access ( *. mdb* ), la aplicación debe imponer plena confianza para poder usar las \<xref:System.Data> clases correspondientes.
 
 #### <a name="data-directory-and-application-versions"></a>Directorio de datos y versiones de la aplicación
  Cada versión de una aplicación tiene su propio directorio de datos, que está aislado de otras versiones. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea este directorio independientemente de si se incluyen archivos de datos en la implementación, de modo que la aplicación tenga una ubicación donde crear nuevos archivos de datos en tiempo de ejecución. Cuando se instala una versión nueva de una aplicación, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] copiará todos los archivos de datos existentes del directorio de datos de la versión anterior en el directorio de datos de la versión nueva, tanto si estaban incluidos en la implementación original como si los creó por la aplicación.
@@ -108,6 +109,6 @@ La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecc
 
  La mayoría de las veces, no tendrá que acceder a la base de datos directamente, sino que lo hará a través de una aplicación de servidor web escrita en [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o un servicio web XML. Esta forma de acceder a la base de datos suele ser el mejor método si la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se implementó desde un servidor web. Puede acceder al servidor de confianza parcial sin tener que elevar los permisos de la aplicación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

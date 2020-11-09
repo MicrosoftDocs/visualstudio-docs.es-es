@@ -1,5 +1,6 @@
 ---
 title: Configurar referencia de servicio (cuadro de diálogo)
+description: Use el cuadro de diálogo Configurar referencia de servicio en Visual Studio para configurar el comportamiento de los servicios de Windows Communication Foundation (WCF).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70faee4277625621074b1bd1bfdf667c818e1f46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586931"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382356"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
 
 El cuadro de diálogo **configurar referencia de servicio** le permite configurar el comportamiento de los servicios de Windows Communication Foundation (WCF).
 
-Para acceder al cuadro de diálogo **Configurar referencia de servicio**, haga clic con el botón derecho en una referencia de servicio en el **Explorador de soluciones** y elija **Configurar referencia de servicio**. También puede acceder al cuadro de diálogo haciendo clic en el botón **Avanzadas** en el **cuadro de diálogo Agregar referencia de servicio**.
+Para acceder al cuadro de diálogo **Configurar referencia de servicio** , haga clic con el botón derecho en una referencia de servicio en el **Explorador de soluciones** y elija **Configurar referencia de servicio**. También puede acceder al cuadro de diálogo haciendo clic en el botón **Avanzadas** en el **cuadro de diálogo Agregar referencia de servicio**.
 
 ## <a name="task-list"></a>Lista de tareas
 
@@ -39,7 +40,7 @@ Para acceder al cuadro de diálogo **Configurar referencia de servicio**, haga c
 
 - Para especificar tipos de colección de lista o diccionario para un cliente de WCF, seleccione los tipos en las listas **Tipo de colección** y **Tipo de colección de diccionario**.
 
-- Para deshabilitar el uso compartido de tipos, desactive la casilla **Volver a usar tipos en ensamblados a los que se hace referencia**. Para habilitar el uso compartido de tipos para un subconjunto de ensamblados a los que se hace referencia, active la casilla **Volver a usar tipos en ensamblados a los que se hace referencia**, seleccione **Volver a usar tipos en los ensamblados especificados** y seleccione las referencias deseadas en la lista **Ensamblados a los que se hace referencia**.
+- Para deshabilitar el uso compartido de tipos, desactive la casilla **Volver a usar tipos en ensamblados a los que se hace referencia**. Para habilitar el uso compartido de tipos para un subconjunto de ensamblados a los que se hace referencia, active la casilla **Volver a usar tipos en ensamblados a los que se hace referencia** , seleccione **Volver a usar tipos en los ensamblados especificados** y seleccione las referencias deseadas en la lista **Ensamblados a los que se hace referencia**.
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
@@ -91,7 +92,7 @@ Cuando se selecciona, solo se reutilizan los tipos seleccionados en la **lista e
 
 **Ensamblados a los que se hace referencia**
 
-Contiene una lista de ensamblados a los que se hace referencia para el proyecto o el sitio Web. Cuando selecciona **volver a usar tipos en ensamblados de referencia especificados**, puede seleccionar o borrar ensamblados individuales.
+Contiene una lista de ensamblados a los que se hace referencia para el proyecto o el sitio Web. Cuando selecciona **volver a usar tipos en ensamblados de referencia especificados** , puede seleccionar o borrar ensamblados individuales.
 
 **Agregar referencia web**
 

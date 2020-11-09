@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento fileAssociation (aplicación ClickOnce) | Microsoft Docs'
+description: El elemento fileAssociation identifica una extensión de archivo que se va a asociar a la aplicación. El elemento fileAssociation es opcional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928526"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382733"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;&gt;elemento fileAssociation (aplicación ClickOnce)
 Identifica una extensión de archivo que se va a asociar a la aplicación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 <fileAssociation
@@ -78,5 +80,5 @@ Identifica una extensión de archivo que se va a asociar a la aplicación.
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)

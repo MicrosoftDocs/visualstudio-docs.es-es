@@ -1,5 +1,7 @@
 ---
 title: '&lt;Dependency &gt; (elemento, implementación ClickOnce) | Microsoft Docs'
+description: El elemento de dependencia identifica la versión de la aplicación que se va a instalar y la ubicación del manifiesto de aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,17 +27,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928949"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382980"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Dependency &gt; (elemento, implementación ClickOnce)
 Identifica la versión de la aplicación que se va a instalar y la ubicación del manifiesto de aplicación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -95,7 +97,7 @@ Identifica la versión de la aplicación que se va a instalar y la ubicación de
 |`Version`|Necesario. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|
 |`publicKeyToken`|Necesario. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública que se usa para firmar debe ser de 2048 bits o superior.|
 |`processorArchitecture`|Necesario. Especifica el microprocesador. Los valores válidos son `x86` para Windows de 32 bits y `IA64` para windows de 64 bits.|
-|`Language`|Opcional. Identifica los códigos de idioma de dos partes del ensamblado. Por ejemplo, EN-US, lo que significa inglés (EE. UU.). El valor predeterminado es `neutral`. Este elemento está en el `asmv2` espacio de nombres.|
+|`Language`|Opcional. Identifica los códigos de idioma de dos partes del ensamblado. Por ejemplo, EN-US, lo que significa inglés (EE. UU.). De manera predeterminada, es `neutral`. Este elemento está en el `asmv2` espacio de nombres.|
 |`type`|Opcional. Para la compatibilidad con versiones anteriores con la tecnología de instalación en paralelo de Windows. El único valor permitido es `win32` .|
 
 ## <a name="hash"></a>hash
@@ -180,6 +182,6 @@ Identifica la versión de la aplicación que se va a instalar y la ubicación de
 </dependency>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [\<dependency> Element](../deployment/dependency-element-clickonce-application.md)

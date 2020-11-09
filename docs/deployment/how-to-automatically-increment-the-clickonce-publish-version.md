@@ -1,5 +1,6 @@
 ---
 title: Incrementar automáticamente la versión de publicación de ClickOnce
+description: Obtenga información sobre cómo deshabilitar el incremento automático del número de revisión de la aplicación ClickOnce mediante Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6267e75db2e2a23d01368cdaa822d835cb8b844
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b4d39654134177f3936bd2fbe72b6786ca9cf03c
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809799"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382629"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Cómo: Incrementar automáticamente la versión de publicación de ClickOnce
 
@@ -36,13 +37,13 @@ Puede deshabilitar este comportamiento en la página **publicar** del **Diseñad
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Para deshabilitar la incrementación automática de la versión de publicación
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones** y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
 2. Haga clic en la pestaña **Publicar**.
 
 3. En la sección **versión de publicación** , desactive la casilla **incrementar automáticamente la revisión con cada versión** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo: Establecer la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

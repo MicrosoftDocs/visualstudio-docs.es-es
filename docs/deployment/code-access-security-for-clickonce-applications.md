@@ -1,5 +1,7 @@
 ---
 title: Seguridad de acceso del código para aplicaciones ClickOnce | Microsoft Docs
+description: Obtenga información sobre la seguridad de acceso del código para aplicaciones ClickOnce y cómo configurar los permisos de seguridad de acceso del código.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd2d9b6792cae002967c9000474a825bd3a0651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256a41138a3918dd61d8fd496465bb0230fb9362
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649276"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382577"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Seguridad de acceso del código para aplicaciones ClickOnce
 Las aplicaciones ClickOnce se basan en .NET Framework y están sujetas a restricciones de seguridad de acceso del código. Por esta razón, es importante que comprenda las implicaciones de la seguridad de acceso del código y escriba las aplicaciones ClickOnce en consecuencia.
@@ -90,7 +92,7 @@ Las aplicaciones ClickOnce se basan en .NET Framework y están sujetas a restric
 
   En el cuadro de diálogo **Configuración de seguridad avanzada** , la casilla **Depurar esta aplicación con el conjunto de permisos seleccionados** está activada y deshabilitada. Esto se debe a que no se puede desactivar Depurar en zona para aplicaciones hospedadas en explorador.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Cómo: habilitar la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Cómo: establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)

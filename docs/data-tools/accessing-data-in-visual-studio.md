@@ -1,5 +1,6 @@
 ---
 title: Trabajo con datos en Visual Studio
+description: Trabajar con datos en Visual Studio. Cree aplicaciones que se conecten a datos de otros productos o servicios de base de datos a través de máquinas locales, LAN o nubes públicas o privadas.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959827"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382096"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Trabajo con datos en Visual Studio
 
@@ -70,13 +71,13 @@ La mayoría de los demás productos de base de datos SQL y NoSQL que se enumeran
 
 ::: moniker range="vs-2017"
 
-Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en Nuget.org o a través del administrador de paquetes Nuget en Visual Studio (**herramientas**administrador de paquetes Nuget  >  **NuGet Package Manager**  >  **administrar paquetes Nuget para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o desplazándose hasta **herramientas**  >  **extensiones y actualizaciones** y, a continuación, seleccionando en **línea** en el panel izquierdo del cuadro de diálogo. Para obtener más información, vea [sistemas de base de datos compatibles para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en Nuget.org o a través del administrador de paquetes Nuget en Visual Studio ( **herramientas** administrador de paquetes Nuget  >  **NuGet Package Manager**  >  **administrar paquetes Nuget para la solución** ). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o desplazándose hasta **herramientas**  >  **extensiones y actualizaciones** y, a continuación, seleccionando en **línea** en el panel izquierdo del cuadro de diálogo. Para obtener más información, vea [sistemas de base de datos compatibles para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en Nuget.org o a través del administrador de paquetes Nuget en Visual Studio (**herramientas**administrador de paquetes Nuget  >  **NuGet Package Manager**  >  **administrar paquetes Nuget para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o yendo a **extensiones**  >  **administrar extensiones** y seleccionando en **línea** en el panel izquierdo del cuadro de diálogo. Para obtener más información, vea [sistemas de base de datos compatibles para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en Nuget.org o a través del administrador de paquetes Nuget en Visual Studio ( **herramientas** administrador de paquetes Nuget  >  **NuGet Package Manager**  >  **administrar paquetes Nuget para la solución** ). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o yendo a **extensiones**  >  **administrar extensiones** y seleccionando en **línea** en el panel izquierdo del cuadro de diálogo. Para obtener más información, vea [sistemas de base de datos compatibles para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 

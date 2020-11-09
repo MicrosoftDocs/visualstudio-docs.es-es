@@ -1,5 +1,7 @@
 ---
 title: '&lt;Dependency &gt; (elemento, aplicación ClickOnce) | Microsoft Docs'
+description: El elemento de dependencia identifica una dependencia de plataforma o ensamblado necesaria para la aplicación.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,17 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa949aa2f8e718ab0209c54a0ea2160c042a4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7896fa2d39bafc793c5fd74f66f4991cf5e8461
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71252493"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382954"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;Dependency &gt; (elemento, aplicación ClickOnce)
 Identifica una dependencia de plataforma o ensamblado necesaria para la aplicación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -166,7 +168,7 @@ Identifica una dependencia de plataforma o ensamblado necesaria para la aplicaci
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue
  El `dsig:DigestValue` elemento es un elemento secundario necesario del `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  Todos los ensamblados utilizados por la aplicación deben tener un `dependency` elemento correspondiente. Los ensamblados dependientes no incluyen ensamblados que deben preinstalarse en la caché global de ensamblados como ensamblados de plataforma.
 
 ## <a name="example"></a>Ejemplo
@@ -216,6 +218,6 @@ Identifica una dependencia de plataforma o ensamblado necesaria para la aplicaci
 </dependency>
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
 - [\<dependency> Element](../deployment/dependency-element-clickonce-deployment.md)
