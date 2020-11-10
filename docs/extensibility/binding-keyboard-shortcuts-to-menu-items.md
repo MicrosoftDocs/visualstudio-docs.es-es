@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94feafbc614be61aaa4eef9e26669c0fbe901ed5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740022"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407723"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Enlazar métodos abreviados de teclado a elementos de menú
 Para enlazar un método abreviado de teclado a un comando de menú personalizado, solo tiene que agregar una entrada al archivo *. Vsct* para el paquete. En este tema se explica cómo asignar un método abreviado de teclado a un botón personalizado, un elemento de menú o un comando de barra de herramientas, y cómo aplicar la asignación de teclado en el editor predeterminado o limitarlo a un editor personalizado.
@@ -31,7 +31,7 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
 
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Para comprobar la disponibilidad de un método abreviado de teclado
 
-1. En la **Tools**  >  ventana de entorno**Opciones**de herramientas  >  **Environment** , seleccione **teclado**.
+1. En la **Tools**  >  ventana de entorno **Opciones** de herramientas  >  **Environment** , seleccione **teclado**.
 
 2. Asegúrese de que **usar nuevo acceso directo en** está establecido en **global**.
 
@@ -59,7 +59,7 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
 
     Establezca los `guid`  `id` atributos y en los del comando que desea invocar.
 
-    Establezca el `mod1` atributo en **control**, **Alt**o **Shift**.
+    Establezca el `mod1` atributo en **control** , **Alt** o **Shift**.
 
     La sección KeyBindings debe tener un aspecto similar al siguiente:
 
@@ -81,7 +81,7 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
 
    Para que el comando esté disponible solo en un editor personalizado, establezca el `editor` atributo en el nombre del editor personalizado generado por la plantilla de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] paquete al crear el VSPackage que incluye el editor personalizado. Para buscar el valor del nombre, busque en la `<Symbols>` sección un `<GuidSymbol>` nodo cuyo `name` atributo termine en " `editorfactory` ." Este es el nombre del editor personalizado.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
  En este ejemplo se enlaza el método abreviado de teclado **Ctrl** + **Alt** + **C** a un comando denominado `cmdidMyCommand` en un paquete denominado `MyPackage` .
 
 ```
@@ -98,12 +98,12 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
 </CommandTable>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
  En este ejemplo se enlaza el método abreviado de teclado **Ctrl** + **B** a un comando denominado `cmdidBold` en un proyecto denominado `TestEditor` . El comando solo está disponible en el editor personalizado y no en otros editores.
 
 ```xml
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Extensión de menús y comandos](../extensibility/extending-menus-and-commands.md)

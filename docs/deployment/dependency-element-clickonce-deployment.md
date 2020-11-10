@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382980"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407684"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Dependency &gt; (elemento, implementación ClickOnce)
 Identifica la versión de la aplicación que se va a instalar y la ubicación del manifiesto de aplicación.
@@ -128,7 +128,7 @@ Identifica la versión de la aplicación que se va a instalar y la ubicación de
 ## <a name="remarks"></a>Comentarios
  Los manifiestos de implementación suelen tener un único `assemblyIdentity` elemento que identifica el nombre y la versión del manifiesto de aplicación.
 
-## <a name="example"></a>Ejemplo
+## <a name="example-1"></a>Ejemplo 1
  En el ejemplo de código siguiente se muestra un `dependency` elemento en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación.
 
 ```xml
@@ -147,7 +147,7 @@ Identifica la versión de la aplicación que se va a instalar y la ubicación de
 </dependency>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-2"></a>Ejemplo 2
  En el ejemplo de código siguiente se especifica una dependencia de un ensamblado que ya está instalado en la GAC.
 
 ```xml
@@ -158,7 +158,7 @@ Identifica la versión de la aplicación que se va a instalar y la ubicación de
 </dependency>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-3"></a>Ejemplo 3
  En el ejemplo de código siguiente se especifica una dependencia en una versión específica de la Common Language Runtime.
 
 ```xml
@@ -169,7 +169,7 @@ Identifica la versión de la aplicación que se va a instalar y la ubicación de
 </dependency>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="example-4"></a>Ejemplo 4
  En el ejemplo de código siguiente se especifica una dependencia del sistema operativo.
 
 ```xml
